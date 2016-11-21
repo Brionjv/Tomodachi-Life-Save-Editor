@@ -42,6 +42,16 @@ Public Class Form1
     Dim interieur1 As String
     Dim Sfoods As String
     Dim objdiv As String
+    Dim appart As String
+    Dim mair As String
+    Dim info As String
+    Dim classem As String
+    Dim vet As String
+    Dim chap As String
+    Dim epicer As String
+    Dim deco As String
+    Dim broc As String
+
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox11.Text = "EN"
@@ -79,6 +89,7 @@ Public Class Form1
             Label9.Text = "Surnom"
             Label2.Text = "Créateur"
             Button3.Text = "Enreg. change. Mii"
+            Button7.Text = "Enreg. change. Mii"
             Label5.Text = "Expression favorite"
             ComboBox2.Items.Item(0) = "Aucune parenté"
             ComboBox2.Items.Item(1) = "Moi-même"
@@ -100,8 +111,8 @@ Public Class Form1
             CheckBox11.Text = "Si ''US tous les produits spéciaux débloqués'' a été utilisé"
             CheckBox13.Text = "Si ''EU tous les chapeaux débloqués'' a été utilisé"
             CheckBox12.Text = "Si ''EU tous les produits spéciaux débloqués'' a été utilisé"
-            GroupBox10.Text = "Réparation sauvegarde EU"
-            GroupBox11.Text = "Réparation sauvegarde US"
+            GroupBox10.Text = "Réparation sauvegarde EU/JP"
+            GroupBox11.Text = "Réparation sauvegarde US/JP"
             CheckBox14.Text = "Retirer pénalité de voyage dans le temps"
             Label3.Location = New Point(335, 13)
             Label13.Text = "Estomac"
@@ -113,6 +124,7 @@ Public Class Form1
             TabPage6.Text = "Débloquer par nombres"
             TabPage7.Text = "Débloquer par catalogue magasin"
             TabPage8.Text = "Supprimer des éléments"
+            TabPage9.Text = "Batiments île"
             CheckBox20.Text = "Tous les vêtements Streetpass/Spotpass débloqués"
             CheckBox19.Text = "Tous les chapeaux Streetpass/Spotpass débloqués"
             CheckBox18.Text = "Tous les chapeaux débloqués"
@@ -128,6 +140,8 @@ Public Class Form1
             CheckBox27.Text = "Tous les trésors supprimés"
             CheckBox28.Text = "Tous les nourritures supprimés"
             CheckBox29.Text = "Tous les vêtements supprimés"
+            CheckBox30.Text = "Réinitialiser StreetPass/Spotpass de Tomodachi Life"
+            Label27.Location = New Point(396, 11)
         End If
         If ComboBox11.Text = "EN" Then
             Button1.Text = "Open"
@@ -153,6 +167,7 @@ Public Class Form1
             Label9.Text = "Nickname"
             Label2.Text = "Creator"
             Button3.Text = "Changes Mii save"
+            Button7.Text = "Changes Mii save"
             Label5.Text = "Catchphrase"
             ComboBox2.Items.Item(0) = "Not related"
             ComboBox2.Items.Item(1) = "Self"
@@ -174,8 +189,8 @@ Public Class Form1
             CheckBox11.Text = "IF ''US All Special Foods Unlocked'' was used"
             CheckBox13.Text = "IF ''EU All Headgears and Colors Unlocked'' was used"
             CheckBox12.Text = "IF ''EU All Special Foods Unlocked'' was used"
-            GroupBox10.Text = "Repair EU Save File"
-            GroupBox11.Text = "Repair US Save File"
+            GroupBox10.Text = "Repair EU/JP Save File"
+            GroupBox11.Text = "Repair US/JP Save File"
             CheckBox14.Text = "Remove Time travel penality"
             Label3.Location = New Point(286, 13)
             Label13.Text = "Fullness"
@@ -187,6 +202,7 @@ Public Class Form1
             TabPage6.Text = "Unlock by numbers"
             TabPage7.Text = "Unlock by shop catalog"
             TabPage8.Text = "Delete items"
+            TabPage9.Text = "Island's buildings"
             CheckBox20.Text = "All Streetpass/Spotpass Clothing and colors Unlocked"
             CheckBox19.Text = "All Streetpass/Spotpass Headgears Unlocked"
             CheckBox18.Text = "All Headgears and colors Unlocked"
@@ -202,6 +218,8 @@ Public Class Form1
             CheckBox27.Text = "All Treasures deleted"
             CheckBox28.Text = "All Foods deleted"
             CheckBox29.Text = "All Clothing and colors deleted"
+            CheckBox30.Text = "Reset Tomodachi Life StreetPass/SpotPass"
+            Label27.Location = New Point(362, 11)
         End If
     End Sub
 
@@ -452,10 +470,10 @@ Public Class Form1
 
     Private Sub GroupBox10_MouseMove(sender As Object, e As EventArgs) Handles GroupBox10.MouseMove, CheckBox10.MouseMove, CheckBox11.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Check for repair EU save file"
+            Label17.Text = "Check for repair EU/JP save file"
         End If
         If ComboBox11.Text = "FR" Then
-            Label17.Text = "Cochez pour réparer une sauvegarde EU"
+            Label17.Text = "Cochez pour réparer une sauvegarde EU/JP"
         End If
         Label17.Visible = True
     End Sub
@@ -466,15 +484,29 @@ Public Class Form1
 
     Private Sub GroupBox11_MouseMove(sender As Object, e As EventArgs) Handles GroupBox11.MouseMove, CheckBox12.MouseMove, CheckBox13.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Check for repair US save file"
+            Label17.Text = "Check for repair US/JP save file"
         End If
         If ComboBox11.Text = "FR" Then
-            Label17.Text = "Cochez pour réparer une sauvegarde US"
+            Label17.Text = "Cochez pour réparer une sauvegarde US/JP"
         End If
         Label17.Visible = True
     End Sub
 
     Private Sub GroupeBox11_MouseLeave(sender As Object, e As EventArgs) Handles GroupBox11.MouseLeave, CheckBox12.MouseLeave, CheckBox13.MouseLeave
+        Label17.Visible = False
+    End Sub
+
+    Private Sub Label27_MouseMove(sender As Object, e As EventArgs) Handles Label27.MouseMove
+        If ComboBox11.Text = "EN" Then
+            Label17.Text = "How to use ''Reset Tomodachi Life StreetPass/Spotpass''"
+        End If
+        If ComboBox11.Text = "FR" Then
+            Label17.Text = "Comment utiliser ''Réinitialiser StreetPass/Spotpass de Tomodachi Life''"
+        End If
+        Label17.Visible = True
+    End Sub
+
+    Private Sub Label27_MouseLeave(sender As Object, e As EventArgs) Handles Label27.MouseLeave
         Label17.Visible = False
     End Sub
 
@@ -529,6 +561,33 @@ Public Class Form1
             stpass = Reader.Position
             NumericUpDown3.Value = Reader.ReadInt16
 
+            Reader.Position = &H1E4C20
+            appart = Reader.Position
+            NumericUpDown27.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C21
+            mair = Reader.Position
+            NumericUpDown28.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C22
+            info = Reader.Position
+            NumericUpDown25.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C23
+            classem = Reader.Position
+            NumericUpDown34.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C24
+            vet = Reader.Position
+            NumericUpDown10.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C25
+            chap = Reader.Position
+            NumericUpDown31.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C26
+            epicer = Reader.Position
+            NumericUpDown38.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C27
+            deco = Reader.Position
+            NumericUpDown22.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C28
+            broc = Reader.Position
+            NumericUpDown26.Value = Reader.ReadInt8
             ComboBox12.Enabled = False
         Catch ex As Exception
             If ComboBox11.Text = "EN" Then
@@ -589,6 +648,8 @@ Public Class Form1
             Reader.Position = &H14BCAC
             stpass = Reader.Position
             NumericUpDown3.Value = Reader.ReadInt16
+
+            
             ComboBox12.Enabled = False
         Catch ex As Exception
             If ComboBox11.Text = "EN" Then
@@ -597,7 +658,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "         L'ouverture de savedataArc.txt a échoué," & vbNewLine & "               La sauvegarde est corrompu ou" & vbNewLine & "        n'est pas une sauvegarde de Tomodachi Life"
+                fdialog.Label1.Text = "         L'ouverture de savedataArc.txt a échoué," & vbNewLine & "              La sauvegarde est corrompue ou" & vbNewLine & "        n'est pas une sauvegarde de Tomodachi Life"
                 fdialog.Label1.Location = New Point(3, 22)
                 fdialog.ShowDialog()
             End If
@@ -3141,161 +3202,52 @@ Public Class Form1
     Private Sub CheckBox14_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox14.CheckedChanged
         If CheckBox14.Checked = True Then
             If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
-                Dim Reader As New PackageIO.Reader(filepath, PackageIO.Endian.Little)
-                Reader.Position = &H1E4C70
-                antiTT = Reader.Position
-                NumericUpDown10.Value = Reader.ReadUInt16
-                If NumericUpDown10.Value = 832 Then
-
-                    If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "      Time travel penality has already been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                    If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "  La pénalité de voyage dans le temps a déjà été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                Writer.Position = &H1E4C70
+                Writer.WriteInt8(64)
+                If ComboBox11.Text = "EN" Then
+                    fdialog.Label1.Text = "           Time travel penality has been removed"
+                    fdialog.Label1.Location = New Point(3, 35)
+                    fdialog.ShowDialog()
                 End If
-                If NumericUpDown10.Value < 832 Then
-                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                    Writer.Position = &H1E4C70
-                    Writer.WriteUInt16(832)
-
-                    If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "           Time travel penality has been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
                     If ComboBox11.Text = "FR" Then
                         fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
                         fdialog.Label1.Location = New Point(3, 35)
                         fdialog.ShowDialog()
                     End If
                 End If
-                If NumericUpDown10.Value > 832 Then
-                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                    Writer.Position = &H1E4C70
-                    Writer.WriteUInt16(832)
-
-                    If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "           Time travel penality has been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                    If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                End If
-            End If
 
             If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
-                Dim Reader As New PackageIO.Reader(filepath, PackageIO.Endian.Little)
-                Reader.Position = &H1E4C70
-                antiTT = Reader.Position
-                NumericUpDown10.Value = Reader.ReadUInt16
-                If NumericUpDown10.Value = 832 Then
-
-                    If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "      Time travel penality has already been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                    If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "  La pénalité de voyage dans le temps a déjà été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                Writer.Position = &H1E4C70
+                Writer.WriteInt8(64)
+                If ComboBox11.Text = "EN" Then
+                    fdialog.Label1.Text = "           Time travel penality has been removed"
+                    fdialog.Label1.Location = New Point(3, 35)
+                    fdialog.ShowDialog()
                 End If
-                If NumericUpDown10.Value < 832 Then
-                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                    Writer.Position = &H1E4C70
-                    Writer.WriteUInt16(832)
-
-                    If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "           Time travel penality has been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                    If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                End If
-                If NumericUpDown10.Value > 832 Then
-                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                    Writer.Position = &H1E4C70
-                    Writer.WriteUInt16(832)
-
-                    If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "           Time travel penality has been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                    If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
+                If ComboBox11.Text = "FR" Then
+                    fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
+                    fdialog.Label1.Location = New Point(3, 35)
+                    fdialog.ShowDialog()
                 End If
             End If
 
             If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
-                Dim Reader As New PackageIO.Reader(filepath, PackageIO.Endian.Little)
-                Reader.Position = &H14BD40
-                antiTT = Reader.Position
-                NumericUpDown10.Value = Reader.ReadUInt16
-                If NumericUpDown10.Value = 832 Then
-
-                    If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "      Time travel penality has already been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                    If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "  La pénalité de voyage dans le temps a déjà été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                Writer.Position = &H14BD40
+                Writer.WriteInt8(64)
+                If ComboBox11.Text = "EN" Then
+                    fdialog.Label1.Text = "           Time travel penality has been removed"
+                    fdialog.Label1.Location = New Point(3, 35)
+                    fdialog.ShowDialog()
                 End If
-                If NumericUpDown10.Value < 832 Then
-                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                    Writer.Position = &H14BD40
-                    Writer.WriteUInt16(832)
-
-                    If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "           Time travel penality has been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                    If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                End If
-                If NumericUpDown10.Value > 832 Then
-                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                    Writer.Position = &H14BD40
-                    Writer.WriteUInt16(832)
-
-                    If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "           Time travel penality has been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
-                    If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
-                        fdialog.ShowDialog()
-                    End If
+                If ComboBox11.Text = "FR" Then
+                    fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
+                    fdialog.Label1.Location = New Point(3, 35)
+                    fdialog.ShowDialog()
                 End If
             End If
-
         End If
     End Sub
 
@@ -3348,101 +3300,103 @@ Public Class Form1
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        Try
         Dim Reader As New PackageIO.Reader(filepath, PackageIO.Endian.Little)
+        If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
         If ComboBox1.Text = "Mii 1" Then
-                Reader.Position = &H1CD0
-                Mii1P = Reader.Position
-                TextBox3.Text = Reader.ReadUnicodeString(15)
-                Reader.Position = &H1CF0
-                Mii1N = Reader.Position
-                TextBox4.Text = Reader.ReadUnicodeString(15)
-                Reader.Position = &H1C8A
-                Mii1S = Reader.Position
-                TextBox5.Text = Reader.ReadUnicodeString(10)
-                Reader.Position = &H1F23
-                Mii1L = Reader.Position
-                NumericUpDown102.Value = Reader.ReadInt8
-                Reader.Position = &H1E92
-                Mii1PP = Reader.Position
-                Label18.Text = Reader.ReadUnicodeString(30)
-                Reader.Position = &H1ED4
-                Mii1NP = Reader.Position
-                Label19.Text = Reader.ReadUnicodeString(30)
-                Reader.Position = &H1E50
-                Mii1SP = Reader.Position
-                Label16.Text = Reader.ReadUnicodeString(20)
-                Reader.Position = &H1F2D
-                Mii1R = Reader.Position
-                NumericUpDown9.Value = Reader.ReadInt8
-                Reader.Position = &H1CB8
-                Mii1C = Reader.Position
-                TextBox9.Text = Reader.ReadUnicodeString(10)
+            Reader.Position = &H1CD0
+            Mii1P = Reader.Position
+            TextBox3.Text = Reader.ReadUnicodeString(15)
+            Reader.Position = &H1CF0
+            Mii1N = Reader.Position
+            TextBox4.Text = Reader.ReadUnicodeString(15)
+            Reader.Position = &H1C8A
+            Mii1S = Reader.Position
+            TextBox5.Text = Reader.ReadUnicodeString(10)
+            Reader.Position = &H1F23
+            Mii1L = Reader.Position
+            NumericUpDown102.Value = Reader.ReadInt8
+            Reader.Position = &H1E92
+            Mii1PP = Reader.Position
+            Label18.Text = Reader.ReadUnicodeString(30)
+            Reader.Position = &H1ED4
+            Mii1NP = Reader.Position
+            Label19.Text = Reader.ReadUnicodeString(30)
+            Reader.Position = &H1E50
+            Mii1SP = Reader.Position
+            Label16.Text = Reader.ReadUnicodeString(20)
+            Reader.Position = &H1F2D
+            Mii1R = Reader.Position
+            NumericUpDown9.Value = Reader.ReadInt8
+            Reader.Position = &H1CB8
+            Mii1C = Reader.Position
+            TextBox9.Text = Reader.ReadUnicodeString(10)
 
-                Reader.Position = &H1D20
-                bull1 = Reader.Position
-                Label20.Text = Reader.ReadUnicodeString(16)
-                Reader.Position = &H1DC4
-                bull2 = Reader.Position
-                Label21.Text = Reader.ReadUnicodeString(16)
-                Reader.Position = &H1DE6
-                bull3 = Reader.Position
-                Label22.Text = Reader.ReadUnicodeString(16)
-                Reader.Position = &H1E08
-                bull4 = Reader.Position
-                Label23.Text = Reader.ReadUnicodeString(16)
-                Reader.Position = &H1E2A
-                bull5 = Reader.Position
-                Label24.Text = Reader.ReadUnicodeString(16)
+            Reader.Position = &H1D20
+            bull1 = Reader.Position
+            Label20.Text = Reader.ReadUnicodeString(16)
+            Reader.Position = &H1DC4
+            bull2 = Reader.Position
+            Label21.Text = Reader.ReadUnicodeString(16)
+            Reader.Position = &H1DE6
+            bull3 = Reader.Position
+            Label22.Text = Reader.ReadUnicodeString(16)
+            Reader.Position = &H1E08
+            bull4 = Reader.Position
+            Label23.Text = Reader.ReadUnicodeString(16)
+            Reader.Position = &H1E2A
+            bull5 = Reader.Position
+            Label24.Text = Reader.ReadUnicodeString(16)
 
-                Reader.Position = &H2258
-                objet1 = Reader.Position
-                NumericUpDown11.Value = Reader.ReadUInt16
-                Reader.Position = &H225A
-                objet2 = Reader.Position
-                NumericUpDown12.Value = Reader.ReadUInt16
-                Reader.Position = &H225C
-                objet3 = Reader.Position
-                NumericUpDown13.Value = Reader.ReadUInt16
-                Reader.Position = &H225E
-                objet4 = Reader.Position
-                NumericUpDown14.Value = Reader.ReadUInt16
-                Reader.Position = &H2260
-                objet5 = Reader.Position
-                NumericUpDown18.Value = Reader.ReadUInt16
-                Reader.Position = &H2262
-                objet6 = Reader.Position
-                NumericUpDown17.Value = Reader.ReadUInt16
-                Reader.Position = &H2264
-                objet7 = Reader.Position
-                NumericUpDown16.Value = Reader.ReadUInt16
-                Reader.Position = &H2266
-                objet8 = Reader.Position
-                NumericUpDown15.Value = Reader.ReadUInt16
+            Reader.Position = &H2258
+            objet1 = Reader.Position
+            NumericUpDown11.Value = Reader.ReadUInt16
+            Reader.Position = &H225A
+            objet2 = Reader.Position
+            NumericUpDown12.Value = Reader.ReadUInt16
+            Reader.Position = &H225C
+            objet3 = Reader.Position
+            NumericUpDown13.Value = Reader.ReadUInt16
+            Reader.Position = &H225E
+            objet4 = Reader.Position
+            NumericUpDown14.Value = Reader.ReadUInt16
+            Reader.Position = &H2260
+            objet5 = Reader.Position
+            NumericUpDown18.Value = Reader.ReadUInt16
+            Reader.Position = &H2262
+            objet6 = Reader.Position
+            NumericUpDown17.Value = Reader.ReadUInt16
+            Reader.Position = &H2264
+            objet7 = Reader.Position
+            NumericUpDown16.Value = Reader.ReadUInt16
+            Reader.Position = &H2266
+            objet8 = Reader.Position
+            NumericUpDown15.Value = Reader.ReadUInt16
 
-                Reader.Position = &H1F22
-                exp = Reader.Position
-                NumericUpDown20.Value = Reader.ReadInt8
-                Reader.Position = &H1F28
-                econom = Reader.Position
-                NumericUpDown19.Value = Reader.ReadInt32
+            Reader.Position = &H1F22
+            exp = Reader.Position
+            NumericUpDown20.Value = Reader.ReadInt8
+            Reader.Position = &H1F28
+            econom = Reader.Position
+            NumericUpDown19.Value = Reader.ReadInt32
 
-                Reader.Position = &H2272
-                eat = Reader.Position
-                Reader.Position = &H2293
-                fullness = Reader.Position
-                NumericUpDown21.Value = Reader.ReadInt8
-                Reader.Position = &H1F59
-                interieur = Reader.Position
-                Reader.Position = &H1F64
-                interieur1 = Reader.Position
-                Reader.Position = &H1F68
-                Sfoods = Reader.Position
-                Label7.Text = "Label7"
+            Reader.Position = &H2272
+            eat = Reader.Position
+            Reader.Position = &H2293
+            fullness = Reader.Position
+            NumericUpDown21.Value = Reader.ReadInt8
+            Reader.Position = &H1F59
+            interieur = Reader.Position
+            Reader.Position = &H1F64
+            interieur1 = Reader.Position
+            Reader.Position = &H1F68
+            Sfoods = Reader.Position
+            Label7.Text = "Label7"
             Label25.Text = "Label25"
             Reader.Position = &H1F50
             objdiv = Reader.Position
             Label26.Text = "Label26"
-            End If
+        End If
 
             If ComboBox1.Text = "Mii 2" Then
                 Reader.Position = &H2330
@@ -12947,6 +12901,5221 @@ Public Class Form1
             objdiv = Reader.Position
             Label26.Text = "Label26"
             End If
+        End If
+        If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+            If ComboBox1.Text = "Mii 1" Then
+                Reader.Position = &H1CA0
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 2" Then
+                Reader.Position = &H1CA0 + &H590
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + &H590
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + &H590
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + &H590
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + &H590
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + &H590
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + &H590
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + &H590
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + &H590
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + &H590
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + &H590
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + &H590
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + &H590
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + &H590
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + &H590
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + &H590
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 3" Then
+                Reader.Position = &H1CA0 + (&H590 * 2)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 2)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 2)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 2)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 2)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 2)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 2)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 2)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 2)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 2)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 2)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 2)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 2)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 2)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 2)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 2)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 4" Then
+                Reader.Position = &H1CA0 + (&H590 * 3)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 3)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 3)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 3)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 3)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 3)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 3)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 3)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 3)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 3)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 3)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 3)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 3)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 3)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 3)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 3)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 5" Then
+                Reader.Position = &H1CA0 + (&H590 * 4)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 4)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 4)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 4)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 4)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 4)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 4)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 4)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 4)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 4)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 4)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 4)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 4)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 4)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 4)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 4)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 6" Then
+                Reader.Position = &H1CA0 + (&H590 * 5)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 5)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 5)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 5)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 5)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 5)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 5)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 5)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 5)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 5)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 5)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 5)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 5)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 5)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 5)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 5)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 7" Then
+                Reader.Position = &H1CA0 + (&H590 * 6)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 6)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 6)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 6)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 6)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 6)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 6)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 6)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 6)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 6)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 6)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 6)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 6)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 6)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 6)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 6)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 8" Then
+                Reader.Position = &H1CA0 + (&H590 * 7)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 7)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 7)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 7)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 7)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 7)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 7)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 7)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 7)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 7)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 7)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 7)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 7)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 7)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 7)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 7)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 9" Then
+                Reader.Position = &H1CA0 + (&H590 * 8)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 8)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 8)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 8)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 8)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 8)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 8)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 8)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 8)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 8)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 8)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 8)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 8)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 8)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 8)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 8)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 10" Then
+                Reader.Position = &H1CA0 + (&H590 * 9)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 9)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 9)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 9)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 9)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 9)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 9)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 9)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 9)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 9)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 9)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 9)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 9)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 9)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 9)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 9)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 11" Then
+                Reader.Position = &H1CA0 + (&H590 * 10)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 10)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 10)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 10)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 10)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 10)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 10)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 10)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 10)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 10)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 10)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 10)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 10)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 10)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 10)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 10)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 12" Then
+                Reader.Position = &H1CA0 + (&H590 * 11)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 11)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 11)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 11)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 11)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 11)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 11)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 11)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 11)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 11)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 11)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 11)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 11)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 11)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 11)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 11)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 13" Then
+                Reader.Position = &H1CA0 + (&H590 * 12)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 12)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 12)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 12)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 12)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 12)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 12)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 12)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 12)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 12)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 12)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 12)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 12)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 12)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 12)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 12)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 14" Then
+                Reader.Position = &H1CA0 + (&H590 * 13)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 13)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 13)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 13)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 13)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 13)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 13)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 13)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 13)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 13)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 13)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 13)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 13)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 13)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 13)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 13)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 15" Then
+                Reader.Position = &H1CA0 + (&H590 * 14)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 14)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 14)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 14)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 14)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 14)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 14)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 14)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 14)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 14)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 14)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 14)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 14)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 14)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 14)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 14)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 16" Then
+                Reader.Position = &H1CA0 + (&H590 * 15)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 15)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 15)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 15)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 15)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 15)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 15)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 15)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 15)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 15)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 15)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 15)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 15)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 15)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 15)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 15)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 17" Then
+                Reader.Position = &H1CA0 + (&H590 * 16)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 16)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 16)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 16)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 16)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 16)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 16)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 16)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 16)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 16)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 16)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 16)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 16)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 16)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 16)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 16)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 18" Then
+                Reader.Position = &H1CA0 + (&H590 * 17)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 17)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 17)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 17)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 17)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 17)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 17)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 17)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 17)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 17)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 17)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 17)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 17)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 17)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 17)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 17)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 19" Then
+                Reader.Position = &H1CA0 + (&H590 * 18)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 18)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 18)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 18)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 18)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 18)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 18)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 18)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 18)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 18)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 18)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 18)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 18)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 18)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 18)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 18)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 20" Then
+                Reader.Position = &H1CA0 + (&H590 * 19)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 19)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 19)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 19)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 19)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 19)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 19)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 19)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 19)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 19)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 19)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 19)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 19)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 19)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 19)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 19)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 21" Then
+                Reader.Position = &H1CA0 + (&H590 * 20)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 20)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 20)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 20)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 20)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 20)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 20)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 20)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 20)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 20)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 20)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 20)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 20)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 20)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 20)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 20)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 22" Then
+                Reader.Position = &H1CA0 + (&H590 * 21)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 21)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 21)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 21)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 21)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 21)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 21)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 21)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 21)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 21)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 21)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 21)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 21)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 21)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 21)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 21)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 23" Then
+                Reader.Position = &H1CA0 + (&H590 * 22)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 22)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 22)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 22)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 22)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 22)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 22)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 22)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 22)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 22)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 22)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 22)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 22)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 22)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 22)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 22)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 24" Then
+                Reader.Position = &H1CA0 + (&H590 * 23)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 23)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 23)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 23)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 23)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 23)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 23)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 23)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 23)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 23)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 23)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 23)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 23)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 23)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 23)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 23)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 25" Then
+                Reader.Position = &H1CA0 + (&H590 * 24)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 24)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 24)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 24)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 24)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 24)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 24)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 24)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 24)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 24)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 24)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 24)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 24)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 24)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 24)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 24)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 26" Then
+                Reader.Position = &H1CA0 + (&H590 * 25)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 25)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 25)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 25)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 25)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 25)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 25)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 25)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 25)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 25)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 25)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 25)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 25)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 25)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 25)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 25)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 27" Then
+                Reader.Position = &H1CA0 + (&H590 * 26)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 26)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 26)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 26)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 26)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 26)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 26)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 26)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 26)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 26)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 26)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 26)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 26)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 26)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 26)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 26)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 28" Then
+                Reader.Position = &H1CA0 + (&H590 * 27)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 27)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 27)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 27)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 27)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 27)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 27)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 27)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 27)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 27)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 27)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 27)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 27)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 27)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 27)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 27)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 29" Then
+                Reader.Position = &H1CA0 + (&H590 * 28)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 28)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 28)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 28)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 28)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 28)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 28)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 28)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 28)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 28)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 28)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 28)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 28)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 28)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 28)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 28)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 30" Then
+                Reader.Position = &H1CA0 + (&H590 * 29)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 29)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 29)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 29)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 29)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 29)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 29)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 29)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 29)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 29)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 29)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 29)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 29)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 29)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 29)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 29)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 31" Then
+                Reader.Position = &H1CA0 + (&H590 * 30)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 30)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 30)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 30)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 30)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 30)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 30)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 30)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 30)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 30)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 30)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 30)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 30)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 30)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 30)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 30)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 32" Then
+                Reader.Position = &H1CA0 + (&H590 * 31)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 31)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 31)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 31)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 31)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 31)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 31)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 31)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 31)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 31)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 31)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 31)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 31)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 31)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 31)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 31)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 33" Then
+                Reader.Position = &H1CA0 + (&H590 * 32)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 32)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 32)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 32)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 32)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 32)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 32)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 32)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 32)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 32)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 32)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 32)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 32)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 32)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 32)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 32)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 34" Then
+                Reader.Position = &H1CA0 + (&H590 * 33)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 33)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 33)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 33)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 33)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 33)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 33)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 33)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 33)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 33)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 33)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 33)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 33)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 33)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 33)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 33)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 35" Then
+                Reader.Position = &H1CA0 + (&H590 * 34)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 34)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 34)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 34)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 34)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 34)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 34)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 34)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 34)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 34)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 34)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 34)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 34)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 34)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 34)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 34)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 36" Then
+                Reader.Position = &H1CA0 + (&H590 * 35)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 35)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 35)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 35)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 35)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 35)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 35)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 35)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 35)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 35)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 35)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 35)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 35)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 35)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 35)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 35)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 37" Then
+                Reader.Position = &H1CA0 + (&H590 * 36)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 36)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 36)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 36)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 36)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 36)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 36)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 36)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 36)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 36)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 36)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 36)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 36)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 36)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 36)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 36)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 38" Then
+                Reader.Position = &H1CA0 + (&H590 * 37)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 37)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 37)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 37)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 37)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 37)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 37)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 37)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 37)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 37)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 37)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 37)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 37)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 37)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 37)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 37)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 39" Then
+                Reader.Position = &H1CA0 + (&H590 * 38)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 38)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 38)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 38)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 38)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 38)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 38)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 38)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 38)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 38)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 38)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 38)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 38)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 38)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 38)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 38)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 40" Then
+                Reader.Position = &H1CA0 + (&H590 * 39)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 39)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 39)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 39)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 39)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 39)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 39)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 39)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 39)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 39)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 39)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 39)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 39)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 39)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 39)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 39)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 41" Then
+                Reader.Position = &H1CA0 + (&H590 * 40)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 40)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 40)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 40)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 40)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 40)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 40)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 40)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 40)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 40)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 40)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 40)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 40)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 40)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 40)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 40)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 42" Then
+                Reader.Position = &H1CA0 + (&H590 * 41)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 41)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 41)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 41)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 41)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 41)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 41)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 41)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 41)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 41)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 41)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 41)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 41)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 41)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 41)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 41)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 43" Then
+                Reader.Position = &H1CA0 + (&H590 * 42)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 42)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 42)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 42)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 42)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 42)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 42)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 42)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 42)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 42)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 42)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 42)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 42)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 42)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 42)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 42)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 44" Then
+                Reader.Position = &H1CA0 + (&H590 * 43)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 43)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 43)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 43)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 43)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 43)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 43)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 43)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 43)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 43)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 43)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 43)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 43)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 43)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 43)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 43)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 45" Then
+                Reader.Position = &H1CA0 + (&H590 * 44)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 44)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 44)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 44)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 44)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 44)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 44)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 44)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 44)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 44)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 44)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 44)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 44)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 44)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 44)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 44)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 46" Then
+                Reader.Position = &H1CA0 + (&H590 * 45)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 45)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 45)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 45)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 45)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 45)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 45)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 45)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 45)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 45)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 45)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 45)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 45)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 45)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 45)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 45)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 47" Then
+                Reader.Position = &H1CA0 + (&H590 * 46)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 46)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 46)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 46)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 46)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 46)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 46)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 46)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 46)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 46)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 46)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 46)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 46)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 46)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 46)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 46)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 48" Then
+                Reader.Position = &H1CA0 + (&H590 * 47)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 47)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 47)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 47)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 47)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 47)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 47)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 47)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 47)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 47)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 47)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 47)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 47)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 47)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 47)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 47)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 49" Then
+                Reader.Position = &H1CA0 + (&H590 * 48)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 48)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 48)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 48)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 48)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 48)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 48)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 48)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 48)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 48)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 48)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 48)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 48)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 48)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 48)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 48)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 50" Then
+                Reader.Position = &H1CA0 + (&H590 * 49)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 49)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 49)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 49)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 49)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 49)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 49)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 49)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 49)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 49)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 49)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 49)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 49)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 49)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 49)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 49)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 51" Then
+                Reader.Position = &H1CA0 + (&H590 * 50)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 50)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 50)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 50)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 50)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 50)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 50)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 50)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 50)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 50)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 50)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 50)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 50)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 50)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 50)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 50)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 52" Then
+                Reader.Position = &H1CA0 + (&H590 * 51)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 51)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 51)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 51)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 51)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 51)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 51)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 51)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 51)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 51)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 51)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 51)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 51)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 51)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 51)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 51)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 53" Then
+                Reader.Position = &H1CA0 + (&H590 * 52)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 52)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 52)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 52)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 52)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 52)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 52)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 52)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 52)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 52)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 52)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 52)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 52)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 52)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 52)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 52)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 54" Then
+                Reader.Position = &H1CA0 + (&H590 * 53)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 53)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 53)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 53)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 53)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 53)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 53)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 53)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 53)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 53)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 53)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 53)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 53)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 53)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 53)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 53)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 55" Then
+                Reader.Position = &H1CA0 + (&H590 * 54)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 54)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 54)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 54)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 54)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 54)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 54)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 54)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 54)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 54)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 54)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 54)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 54)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 54)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 54)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 54)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 56" Then
+                Reader.Position = &H1CA0 + (&H590 * 55)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 55)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 55)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 55)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 55)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 55)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 55)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 55)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 55)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 55)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 55)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 55)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 55)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 55)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 55)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 55)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 57" Then
+                Reader.Position = &H1CA0 + (&H590 * 56)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 56)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 56)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 56)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 56)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 56)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 56)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 56)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 56)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 56)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 56)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 56)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 56)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 56)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 56)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 56)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 58" Then
+                Reader.Position = &H1CA0 + (&H590 * 57)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 57)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 57)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 57)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 57)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 57)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 57)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 57)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 57)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 57)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 57)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 57)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 57)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 57)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 57)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 57)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 59" Then
+                Reader.Position = &H1CA0 + (&H590 * 58)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 58)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 58)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 58)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 58)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 58)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 58)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 58)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 58)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 58)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 58)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 58)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 58)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 58)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 58)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 58)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 60" Then
+                Reader.Position = &H1CA0 + (&H590 * 59)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 59)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 59)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 59)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 59)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 59)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 59)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 59)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 59)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 59)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 59)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 59)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 59)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 59)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 59)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 59)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 61" Then
+                Reader.Position = &H1CA0 + (&H590 * 60)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 60)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 60)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 60)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 60)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 60)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 60)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 60)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 60)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 60)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 60)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 60)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 60)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 60)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 60)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 60)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 62" Then
+                Reader.Position = &H1CA0 + (&H590 * 61)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 61)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 61)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 61)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 61)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 61)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 61)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 61)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 61)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 61)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 61)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 61)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 61)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 61)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 61)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 61)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 63" Then
+                Reader.Position = &H1CA0 + (&H590 * 62)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 62)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 62)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 62)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 62)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 62)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 62)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 62)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 62)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 62)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 62)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 62)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 62)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 62)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 62)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 62)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 64" Then
+                Reader.Position = &H1CA0 + (&H590 * 63)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 63)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 63)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 63)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 63)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 63)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 63)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 63)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 63)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 63)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 63)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 63)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 63)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 63)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 63)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 63)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 65" Then
+                Reader.Position = &H1CA0 + (&H590 * 64)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 64)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 64)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 64)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 64)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 64)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 64)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 64)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 64)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 64)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 64)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 64)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 64)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 64)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 64)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 64)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 66" Then
+                Reader.Position = &H1CA0 + (&H590 * 65)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 65)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 65)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 65)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 65)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 65)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 65)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 65)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 65)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 65)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 65)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 65)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 65)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 65)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 65)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 65)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 67" Then
+                Reader.Position = &H1CA0 + (&H590 * 66)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 66)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 66)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 66)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 66)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 66)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 66)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 66)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 66)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 66)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 66)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 66)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 66)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 66)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 66)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 66)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 68" Then
+                Reader.Position = &H1CA0 + (&H590 * 67)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 67)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 67)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 67)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 67)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 67)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 67)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 67)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 67)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 67)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 67)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 67)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 67)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 67)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 67)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 67)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 69" Then
+                Reader.Position = &H1CA0 + (&H590 * 68)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 68)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 68)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 68)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 68)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 68)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 68)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 68)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 68)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 68)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 68)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 68)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 68)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 68)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 68)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 68)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 70" Then
+                Reader.Position = &H1CA0 + (&H590 * 69)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 69)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 69)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 69)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 69)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 69)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 69)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 69)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 69)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 69)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 69)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 69)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 69)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 69)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 69)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 69)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 71" Then
+                Reader.Position = &H1CA0 + (&H590 * 70)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 70)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 70)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 70)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 70)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 70)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 70)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 70)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 70)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 70)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 70)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 70)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 70)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 70)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 70)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 70)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 72" Then
+                Reader.Position = &H1CA0 + (&H590 * 71)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 71)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 71)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 71)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 71)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 71)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 71)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 71)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 71)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 71)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 71)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 71)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 71)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 71)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 71)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 71)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 73" Then
+                Reader.Position = &H1CA0 + (&H590 * 72)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 72)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 72)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 72)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 72)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 72)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 72)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 72)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 72)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 72)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 72)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 72)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 72)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 72)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 72)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 72)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 74" Then
+                Reader.Position = &H1CA0 + (&H590 * 73)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 73)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 73)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 73)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 73)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 73)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 73)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 73)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 73)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 73)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 73)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 73)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 73)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 73)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 73)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 73)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 75" Then
+                Reader.Position = &H1CA0 + (&H590 * 74)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 74)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 74)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 74)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 74)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 74)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 74)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 74)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 74)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 74)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 74)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 74)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 74)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 74)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 74)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 74)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 76" Then
+                Reader.Position = &H1CA0 + (&H590 * 75)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 75)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 75)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 75)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 75)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 75)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 75)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 75)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 75)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 75)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 75)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 75)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 75)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 75)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 75)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 75)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 77" Then
+                Reader.Position = &H1CA0 + (&H590 * 76)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 76)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 76)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 76)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 76)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 76)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 76)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 76)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 76)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 76)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 76)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 76)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 76)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 76)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 76)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 76)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 78" Then
+                Reader.Position = &H1CA0 + (&H590 * 77)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 77)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 77)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 77)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 77)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 77)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 77)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 77)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 77)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 77)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 77)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 77)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 77)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 77)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 77)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 77)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 79" Then
+                Reader.Position = &H1CA0 + (&H590 * 78)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 78)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 78)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 78)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 78)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 78)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 78)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 78)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 78)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 78)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 78)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 78)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 78)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 78)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 78)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 78)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 80" Then
+                Reader.Position = &H1CA0 + (&H590 * 79)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 79)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 79)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 79)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 79)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 79)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 79)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 79)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 79)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 79)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 79)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 79)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 79)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 79)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 79)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 79)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 81" Then
+                Reader.Position = &H1CA0 + (&H590 * 80)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 80)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 80)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 80)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 80)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 80)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 80)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 80)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 80)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 80)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 80)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 80)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 80)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 80)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 80)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 80)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 82" Then
+                Reader.Position = &H1CA0 + (&H590 * 81)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 81)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 81)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 81)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 81)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 81)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 81)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 81)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 81)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 81)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 81)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 81)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 81)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 81)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 81)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 81)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 83" Then
+                Reader.Position = &H1CA0 + (&H590 * 82)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 82)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 82)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 82)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 82)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 82)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 82)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 82)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 82)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 82)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 82)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 82)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 82)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 82)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 82)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 82)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 84" Then
+                Reader.Position = &H1CA0 + (&H590 * 83)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 83)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 83)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 83)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 83)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 83)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 83)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 83)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 83)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 83)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 83)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 83)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 83)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 83)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 83)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 83)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 85" Then
+                Reader.Position = &H1CA0 + (&H590 * 84)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 84)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 84)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 84)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 84)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 84)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 84)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 84)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 84)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 84)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 84)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 84)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 84)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 84)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 84)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 84)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 86" Then
+                Reader.Position = &H1CA0 + (&H590 * 85)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 85)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 85)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 85)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 85)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 85)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 85)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 85)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 85)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 85)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 85)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 85)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 85)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 85)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 85)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 85)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 87" Then
+                Reader.Position = &H1CA0 + (&H590 * 86)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 86)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 86)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 86)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 86)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 86)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 86)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 86)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 86)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 86)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 86)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 86)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 86)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 86)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 86)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 86)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 88" Then
+                Reader.Position = &H1CA0 + (&H590 * 87)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 87)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 87)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 87)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 87)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 87)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 87)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 87)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 87)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 87)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 87)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 87)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 87)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 87)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 87)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 87)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 89" Then
+                Reader.Position = &H1CA0 + (&H590 * 88)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 88)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 88)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 88)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 88)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 88)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 88)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 88)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 88)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 88)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 88)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 88)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 88)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 88)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 88)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 88)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 90" Then
+                Reader.Position = &H1CA0 + (&H590 * 89)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 89)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 89)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 89)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 89)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 89)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 89)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 89)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 89)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 89)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 89)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 89)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 89)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 89)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 89)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 89)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 91" Then
+                Reader.Position = &H1CA0 + (&H590 * 90)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 90)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 90)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 90)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 90)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 90)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 90)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 90)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 90)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 90)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 90)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 90)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 90)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 90)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 90)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 90)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 92" Then
+                Reader.Position = &H1CA0 + (&H590 * 91)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 91)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 91)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 91)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 91)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 91)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 91)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 91)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 91)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 91)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 91)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 91)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 91)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 91)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 91)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 91)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 93" Then
+                Reader.Position = &H1CA0 + (&H590 * 92)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 92)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 92)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 92)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 92)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 92)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 92)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 92)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 92)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 92)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 92)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 92)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 92)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 92)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 92)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 92)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 94" Then
+                Reader.Position = &H1CA0 + (&H590 * 93)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 93)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 93)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 93)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 93)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 93)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 93)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 93)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 93)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 93)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 93)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 93)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 93)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 93)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 93)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 93)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 95" Then
+                Reader.Position = &H1CA0 + (&H590 * 94)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 94)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 94)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 94)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 94)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 94)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 94)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 94)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 94)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 94)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 94)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 94)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 94)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 94)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 94)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 94)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 96" Then
+                Reader.Position = &H1CA0 + (&H590 * 95)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 95)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 95)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 95)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 95)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 95)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 95)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 95)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 95)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 95)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 95)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 95)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 95)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 95)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 95)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 95)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 97" Then
+                Reader.Position = &H1CA0 + (&H590 * 96)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 96)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 96)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 96)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 96)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 96)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 96)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 96)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 96)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 96)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 96)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 96)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 96)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 96)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 96)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 96)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 98" Then
+                Reader.Position = &H1CA0 + (&H590 * 97)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 97)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 97)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 97)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 97)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 97)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 97)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 97)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 97)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 97)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 97)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 97)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 97)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 97)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 97)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 97)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 99" Then
+                Reader.Position = &H1CA0 + (&H590 * 98)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 98)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 98)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 98)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 98)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 98)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 98)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 98)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 98)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 98)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 98)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 98)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 98)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 98)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 98)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 98)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            If ComboBox1.Text = "Mii 100" Then
+                Reader.Position = &H1CA0 + (&H590 * 99)
+                Mii1P = Reader.Position
+                TextBox3.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + (&H590 * 99)
+                Mii1N = Reader.Position
+                TextBox4.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + (&H590 * 99)
+                Mii1S = Reader.Position
+                TextBox5.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C88 + (&H590 * 99)
+                Mii1C = Reader.Position
+                TextBox9.Text = Reader.ReadUnicodeString(10)
+
+                Reader.Position = &H1E22 + (&H590 * 99)
+                exp = Reader.Position
+                NumericUpDown20.Value = Reader.ReadInt8
+                Reader.Position = &H1E23 + (&H590 * 99)
+                Mii1L = Reader.Position
+                NumericUpDown102.Value = Reader.ReadInt8
+                Reader.Position = &H1E28 + (&H590 * 99)
+                econom = Reader.Position
+                NumericUpDown19.Value = Reader.ReadInt32
+                Reader.Position = &H1E2D + (&H590 * 99)
+                Mii1R = Reader.Position
+                NumericUpDown9.Value = Reader.ReadInt8
+
+                Reader.Position = &H2158 + (&H590 * 99)
+                objet1 = Reader.Position
+                NumericUpDown11.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + (&H590 * 99)
+                objet2 = Reader.Position
+                NumericUpDown12.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + (&H590 * 99)
+                objet3 = Reader.Position
+                NumericUpDown13.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + (&H590 * 99)
+                objet4 = Reader.Position
+                NumericUpDown14.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + (&H590 * 99)
+                objet5 = Reader.Position
+                NumericUpDown18.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + (&H590 * 99)
+                objet6 = Reader.Position
+                NumericUpDown17.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + (&H590 * 99)
+                objet7 = Reader.Position
+                NumericUpDown16.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + (&H590 * 99)
+                objet8 = Reader.Position
+                NumericUpDown15.Value = Reader.ReadUInt16
+            End If
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.ShowDialog()
+            End If
+        End Try
     End Sub
 
     Private Sub PictureBox35_Click(sender As Object, e As EventArgs) Handles PictureBox35.Click
@@ -13111,9 +18280,8 @@ Public Class Form1
             PictureBox5.Visible = True
             PictureBox4.Visible = True
             PictureBox6.Visible = True
-            ComboBox1.Enabled = True
-            Button3.Enabled = True
             Button1.Visible = True
+            Button4.Enabled = True
             Button2.Visible = True
             Button5.Visible = False
             Button6.Visible = False
@@ -13128,8 +18296,15 @@ Public Class Form1
             CheckBox22.Enabled = True
             CheckBox23.Enabled = True
             CheckBox24.Enabled = True
-
-
+            RadioButton2.Enabled = True
+            PictureBox33.Enabled = True
+            PictureBox35.Enabled = True
+            Button3.Visible = True
+            Button7.Visible = False
+            PictureBox55.Image = Nothing
+            PictureBox55.Enabled = True
+            PictureBox54.Image = Nothing
+            PictureBox54.Enabled = True
         End If
         If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
             PictureBox30.Image = My.Resources.tomoF
@@ -13137,10 +18312,9 @@ Public Class Form1
             PictureBox5.Visible = True
             PictureBox4.Visible = True
             PictureBox6.Visible = True
-            ComboBox1.Enabled = True
-            Button3.Enabled = True
             Button1.Visible = True
             Button2.Visible = True
+            Button4.Enabled = True
             Button5.Visible = False
             Button6.Visible = False
             CheckBox17.Enabled = True
@@ -13154,7 +18328,15 @@ Public Class Form1
             CheckBox22.Enabled = True
             CheckBox23.Enabled = True
             CheckBox24.Enabled = True
-
+            RadioButton2.Enabled = True
+            PictureBox33.Enabled = True
+            PictureBox35.Enabled = True
+            Button3.Visible = True
+            Button7.Visible = False
+            PictureBox55.Image = Nothing
+            PictureBox55.Enabled = True
+            PictureBox54.Image = Nothing
+            PictureBox54.Enabled = True
         End If
         If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
             PictureBox30.Image = My.Resources.tomoJ
@@ -13162,10 +18344,9 @@ Public Class Form1
             PictureBox5.Visible = False
             PictureBox4.Visible = False
             PictureBox6.Visible = False
-            ComboBox1.Enabled = False
-            Button3.Enabled = False
             Button1.Visible = False
             Button2.Visible = False
+            Button4.Enabled = False
             Button5.Visible = True
             Button6.Visible = True
             CheckBox17.Enabled = False
@@ -13179,7 +18360,15 @@ Public Class Form1
             CheckBox22.Enabled = False
             CheckBox23.Enabled = False
             CheckBox24.Enabled = False
-
+            RadioButton2.Enabled = False
+            PictureBox33.Enabled = False
+            PictureBox35.Enabled = False
+            Button3.Visible = False
+            Button7.Visible = True
+            PictureBox55.Image = My.Resources.touri
+            PictureBox55.Enabled = False
+            PictureBox54.Image = My.Resources.parti
+            PictureBox54.Enabled = False
         End If
     End Sub
 
@@ -17213,6 +22402,613 @@ Public Class Form1
                     Writer.WriteUInt16(65021)
                 Next
             End If
+        End If
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        WriteFileJP1()
+    End Sub
+    Private Sub WriteFileJP1()
+        Try
+            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+            Writer.Position = Mii1L
+            Writer.WriteInt8(NumericUpDown102.Value)
+            For i As Integer = 0 To 29
+                Writer.Position = Mii1P + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = Mii1P
+            Writer.WriteUnicodeString(TextBox3.Text)
+            For i As Integer = 0 To 29
+                Writer.Position = Mii1N + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = Mii1N
+            Writer.WriteUnicodeString(TextBox4.Text)
+            Writer.Position = Mii1R
+            Writer.WriteInt8(NumericUpDown9.Value)
+            Writer.Position = objet1
+            Writer.WriteUInt16(NumericUpDown11.Value)
+            Writer.Position = objet2
+            Writer.WriteUInt16(NumericUpDown12.Value)
+            Writer.Position = objet3
+            Writer.WriteUInt16(NumericUpDown13.Value)
+            Writer.Position = objet4
+            Writer.WriteUInt16(NumericUpDown14.Value)
+            Writer.Position = objet5
+            Writer.WriteUInt16(NumericUpDown18.Value)
+            Writer.Position = objet6
+            Writer.WriteUInt16(NumericUpDown17.Value)
+            Writer.Position = objet7
+            Writer.WriteUInt16(NumericUpDown16.Value)
+            Writer.Position = objet8
+            Writer.WriteUInt16(NumericUpDown15.Value)
+            Writer.Position = exp
+            Writer.WriteInt8(NumericUpDown20.Value)
+            Writer.Position = econom
+            Writer.WriteInt32(NumericUpDown19.Value)
+
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "                        Changes Mii Save"
+                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.ShowDialog()
+            End If
+
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "                Changements Mii Sauvegardé"
+                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.ShowDialog()
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "                  Une erreur est survenue"
+                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "                   An error has occurred"
+                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.ShowDialog()
+            End If
+        End Try
+    End Sub
+
+    Private Sub CheckBox30_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox30.CheckedChanged
+        If CheckBox30.Checked = True Then
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                Writer.Position = &H1E4C71
+                Writer.WriteInt8(0)
+            End If
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                Writer.Position = &H1E4C71
+                Writer.WriteInt8(0)
+            End If
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                Writer.Position = &H14BD41
+                Writer.WriteInt8(0)
+            End If
+        End If
+    End Sub
+
+    Private Sub Label27_Click(sender As Object, e As EventArgs) Handles Label27.Click
+        If ComboBox11.Text = "EN" Then
+            fdialog.Label1.Text = "If ''Reset Tomodachi Life StreetPass/Spotpass''" & vbNewLine & "                         is used  " & vbNewLine & "You will be able to set up StreetPass/SpotPass" & vbNewLine & "         And change item sent to StreetPass"
+            fdialog.Label1.Location = New Point(17, 11)
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "FR" Then
+            fdialog.Label1.Text = "        Si ''Réinitialiser StreetPass/Spotpass de" & vbNewLine & "               Tomodachi Life'' est utilisé" & vbNewLine & "Vous devrez paramétrer de nouveau SteetPass/SpotPass" & vbNewLine & "     Et ainsi changer d'objet envoyé par StreetPass"
+            fdialog.Label1.Location = New Point(4, 11)
+            fdialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub PictureBox56_Click(sender As Object, e As EventArgs) Handles PictureBox56.Click
+        If NumericUpDown10.Value = 0 Then
+            NumericUpDown10.Value = 2
+        ElseIf NumericUpDown10.Value = 2 Then
+            NumericUpDown10.Value = 1
+        ElseIf NumericUpDown10.Value = 1 Then
+            NumericUpDown10.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox40_Click(sender As Object, e As EventArgs) Handles PictureBox40.Click
+        If NumericUpDown22.Value = 0 Then
+            NumericUpDown22.Value = 2
+        ElseIf NumericUpDown22.Value = 2 Then
+            NumericUpDown22.Value = 1
+        ElseIf NumericUpDown22.Value = 1 Then
+            NumericUpDown22.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox55_Click(sender As Object, e As EventArgs) Handles PictureBox55.Click
+        If NumericUpDown23.Value = 0 Then
+            NumericUpDown23.Value = 2
+        ElseIf NumericUpDown23.Value = 2 Then
+            NumericUpDown23.Value = 1
+        ElseIf NumericUpDown23.Value = 1 Then
+            NumericUpDown23.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox47_Click(sender As Object, e As EventArgs) Handles PictureBox47.Click
+        If NumericUpDown24.Value = 0 Then
+            NumericUpDown24.Value = 2
+        ElseIf NumericUpDown24.Value = 2 Then
+            NumericUpDown24.Value = 1
+        ElseIf NumericUpDown24.Value = 1 Then
+            NumericUpDown24.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox43_Click(sender As Object, e As EventArgs) Handles PictureBox43.Click
+        If NumericUpDown25.Value = 0 Then
+            NumericUpDown25.Value = 2
+        ElseIf NumericUpDown25.Value = 2 Then
+            NumericUpDown25.Value = 1
+        ElseIf NumericUpDown25.Value = 1 Then
+            NumericUpDown25.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox21_Click(sender As Object, e As EventArgs) Handles PictureBox21.Click
+        If NumericUpDown26.Value = 0 Then
+            NumericUpDown26.Value = 2
+        ElseIf NumericUpDown26.Value = 2 Then
+            NumericUpDown26.Value = 1
+        ElseIf NumericUpDown26.Value = 1 Then
+            NumericUpDown26.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox20_Click(sender As Object, e As EventArgs) Handles PictureBox20.Click
+        If NumericUpDown27.Value = 0 Then
+            NumericUpDown27.Value = 2
+        ElseIf NumericUpDown27.Value = 2 Then
+            NumericUpDown27.Value = 1
+        ElseIf NumericUpDown27.Value = 1 Then
+            NumericUpDown27.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox45_Click(sender As Object, e As EventArgs) Handles PictureBox45.Click
+        If NumericUpDown28.Value = 0 Then
+            NumericUpDown28.Value = 2
+        ElseIf NumericUpDown28.Value = 2 Then
+            NumericUpDown28.Value = 1
+        ElseIf NumericUpDown28.Value = 1 Then
+            NumericUpDown28.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox46_Click(sender As Object, e As EventArgs) Handles PictureBox46.Click
+        If NumericUpDown29.Value = 0 Then
+            NumericUpDown29.Value = 2
+        ElseIf NumericUpDown29.Value = 2 Then
+            NumericUpDown29.Value = 1
+        ElseIf NumericUpDown29.Value = 1 Then
+            NumericUpDown29.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox48_Click(sender As Object, e As EventArgs) Handles PictureBox48.Click
+        If NumericUpDown30.Value = 0 Then
+            NumericUpDown30.Value = 2
+        ElseIf NumericUpDown30.Value = 2 Then
+            NumericUpDown30.Value = 1
+        ElseIf NumericUpDown30.Value = 1 Then
+            NumericUpDown30.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox37_Click(sender As Object, e As EventArgs) Handles PictureBox37.Click
+        If NumericUpDown31.Value = 0 Then
+            NumericUpDown31.Value = 2
+        ElseIf NumericUpDown31.Value = 2 Then
+            NumericUpDown31.Value = 1
+        ElseIf NumericUpDown31.Value = 1 Then
+            NumericUpDown31.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox42_Click(sender As Object, e As EventArgs) Handles PictureBox42.Click
+        If NumericUpDown32.Value = 0 Then
+            NumericUpDown32.Value = 2
+        ElseIf NumericUpDown32.Value = 2 Then
+            NumericUpDown32.Value = 1
+        ElseIf NumericUpDown32.Value = 1 Then
+            NumericUpDown32.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox39_Click(sender As Object, e As EventArgs) Handles PictureBox39.Click
+        If NumericUpDown33.Value = 0 Then
+            NumericUpDown33.Value = 2
+        ElseIf NumericUpDown33.Value = 2 Then
+            NumericUpDown33.Value = 1
+        ElseIf NumericUpDown33.Value = 1 Then
+            NumericUpDown33.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox38_Click(sender As Object, e As EventArgs) Handles PictureBox38.Click
+        If NumericUpDown34.Value = 0 Then
+            NumericUpDown34.Value = 2
+        ElseIf NumericUpDown34.Value = 2 Then
+            NumericUpDown34.Value = 1
+        ElseIf NumericUpDown34.Value = 1 Then
+            NumericUpDown34.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox53_Click(sender As Object, e As EventArgs) Handles PictureBox53.Click
+        If NumericUpDown35.Value = 0 Then
+            NumericUpDown35.Value = 2
+        ElseIf NumericUpDown35.Value = 2 Then
+            NumericUpDown35.Value = 1
+        ElseIf NumericUpDown35.Value = 1 Then
+            NumericUpDown35.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox51_Click(sender As Object, e As EventArgs) Handles PictureBox51.Click
+        If NumericUpDown36.Value = 0 Then
+            NumericUpDown36.Value = 2
+        ElseIf NumericUpDown36.Value = 2 Then
+            NumericUpDown36.Value = 1
+        ElseIf NumericUpDown36.Value = 1 Then
+            NumericUpDown36.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox22_Click(sender As Object, e As EventArgs) Handles PictureBox22.Click
+        If NumericUpDown37.Value = 0 Then
+            NumericUpDown37.Value = 2
+        ElseIf NumericUpDown37.Value = 2 Then
+            NumericUpDown37.Value = 1
+        ElseIf NumericUpDown37.Value = 1 Then
+            NumericUpDown37.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox41_Click(sender As Object, e As EventArgs) Handles PictureBox41.Click
+        If NumericUpDown38.Value = 0 Then
+            NumericUpDown38.Value = 2
+        ElseIf NumericUpDown38.Value = 2 Then
+            NumericUpDown38.Value = 1
+        ElseIf NumericUpDown38.Value = 1 Then
+            NumericUpDown38.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox44_Click(sender As Object, e As EventArgs) Handles PictureBox44.Click
+        If NumericUpDown39.Value = 0 Then
+            NumericUpDown39.Value = 2
+        ElseIf NumericUpDown39.Value = 2 Then
+            NumericUpDown39.Value = 1
+        ElseIf NumericUpDown39.Value = 1 Then
+            NumericUpDown39.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox49_Click(sender As Object, e As EventArgs) Handles PictureBox49.Click
+        If NumericUpDown40.Value = 0 Then
+            NumericUpDown40.Value = 2
+        ElseIf NumericUpDown40.Value = 2 Then
+            NumericUpDown40.Value = 1
+        ElseIf NumericUpDown40.Value = 1 Then
+            NumericUpDown40.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox52_Click(sender As Object, e As EventArgs) Handles PictureBox52.Click
+        If NumericUpDown41.Value = 0 Then
+            NumericUpDown41.Value = 2
+        ElseIf NumericUpDown41.Value = 2 Then
+            NumericUpDown41.Value = 1
+        ElseIf NumericUpDown41.Value = 1 Then
+            NumericUpDown41.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox50_Click(sender As Object, e As EventArgs) Handles PictureBox50.Click
+        If NumericUpDown42.Value = 0 Then
+            NumericUpDown42.Value = 2
+        ElseIf NumericUpDown42.Value = 2 Then
+            NumericUpDown42.Value = 1
+        ElseIf NumericUpDown42.Value = 1 Then
+            NumericUpDown42.Value = 0
+        End If
+    End Sub
+
+    Private Sub PictureBox54_Click(sender As Object, e As EventArgs) Handles PictureBox54.Click
+        If NumericUpDown43.Value = 0 Then
+            NumericUpDown43.Value = 2
+        ElseIf NumericUpDown43.Value = 2 Then
+            NumericUpDown43.Value = 1
+        ElseIf NumericUpDown43.Value = 1 Then
+            NumericUpDown43.Value = 0
+        End If
+    End Sub
+
+    Private Sub NumericUpDown10_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown10.ValueChanged
+        If NumericUpDown10.Value = 0 Then
+            PictureBox56.Image = Nothing
+        End If
+        If NumericUpDown10.Value = 1 Then
+            PictureBox56.Image = My.Resources.vet
+        End If
+        If NumericUpDown10.Value = 2 Then
+            PictureBox56.Image = My.Resources.vetn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown22_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown22.ValueChanged
+        If NumericUpDown22.Value = 0 Then
+            PictureBox40.Image = Nothing
+        End If
+        If NumericUpDown22.Value = 1 Then
+            PictureBox40.Image = My.Resources.deco
+        End If
+        If NumericUpDown22.Value = 2 Then
+            PictureBox40.Image = My.Resources.decon
+        End If
+    End Sub
+
+    Private Sub NumericUpDown23_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown23.ValueChanged
+        If NumericUpDown23.Value = 0 Then
+            PictureBox55.Image = Nothing
+        End If
+        If NumericUpDown23.Value = 1 Then
+            PictureBox55.Image = My.Resources.tour
+        End If
+        If NumericUpDown23.Value = 2 Then
+            PictureBox55.Image = My.Resources.tourn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown24_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown24.ValueChanged
+        If NumericUpDown24.Value = 0 Then
+            PictureBox47.Image = Nothing
+        End If
+        If NumericUpDown24.Value = 1 Then
+            PictureBox47.Image = My.Resources.parc1
+        End If
+        If NumericUpDown24.Value = 2 Then
+            PictureBox47.Image = My.Resources.parc1n
+        End If
+    End Sub
+
+    Private Sub NumericUpDown25_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown25.ValueChanged
+        If NumericUpDown25.Value = 0 Then
+            PictureBox43.Image = Nothing
+        End If
+        If NumericUpDown25.Value = 1 Then
+            PictureBox43.Image = My.Resources.info
+        End If
+        If NumericUpDown25.Value = 2 Then
+            PictureBox43.Image = My.Resources.infon
+        End If
+    End Sub
+
+    Private Sub NumericUpDown26_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown26.ValueChanged
+        If NumericUpDown26.Value = 0 Then
+            PictureBox21.Image = Nothing
+        End If
+        If NumericUpDown26.Value = 1 Then
+            PictureBox21.Image = My.Resources.broc
+        End If
+        If NumericUpDown26.Value = 2 Then
+            PictureBox21.Image = My.Resources.brocn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown27_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown27.ValueChanged
+        If NumericUpDown27.Value = 0 Then
+            PictureBox20.Image = Nothing
+        End If
+        If NumericUpDown27.Value = 1 Then
+            PictureBox20.Image = My.Resources.appart
+        End If
+        If NumericUpDown27.Value = 2 Then
+            PictureBox20.Image = My.Resources.appartn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown28_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown28.ValueChanged
+        If NumericUpDown28.Value = 0 Then
+            PictureBox45.Image = Nothing
+        End If
+        If NumericUpDown28.Value = 1 Then
+            PictureBox45.Image = My.Resources.mair
+        End If
+        If NumericUpDown28.Value = 2 Then
+            PictureBox45.Image = My.Resources.mairn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown29_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown29.ValueChanged
+        If NumericUpDown29.Value = 0 Then
+            PictureBox46.Image = Nothing
+        End If
+        If NumericUpDown29.Value = 1 Then
+            PictureBox46.Image = My.Resources.mais
+        End If
+        If NumericUpDown29.Value = 2 Then
+            PictureBox46.Image = My.Resources.maisn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown30_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown30.ValueChanged
+        If NumericUpDown30.Value = 0 Then
+            PictureBox48.Image = Nothing
+        End If
+        If NumericUpDown30.Value = 1 Then
+            PictureBox48.Image = My.Resources.parc
+        End If
+        If NumericUpDown30.Value = 2 Then
+            PictureBox48.Image = My.Resources.parcn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown31_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown31.ValueChanged
+        If NumericUpDown31.Value = 0 Then
+            PictureBox37.Image = Nothing
+        End If
+        If NumericUpDown31.Value = 1 Then
+            PictureBox37.Image = My.Resources.chap
+        End If
+        If NumericUpDown31.Value = 2 Then
+            PictureBox37.Image = My.Resources.chapn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown32_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown32.ValueChanged
+        If NumericUpDown32.Value = 0 Then
+            PictureBox42.Image = Nothing
+        End If
+        If NumericUpDown32.Value = 1 Then
+            PictureBox42.Image = My.Resources.font
+        End If
+        If NumericUpDown32.Value = 2 Then
+            PictureBox42.Image = My.Resources.fontn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown33_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown33.ValueChanged
+        If NumericUpDown33.Value = 0 Then
+            PictureBox39.Image = Nothing
+        End If
+        If NumericUpDown33.Value = 1 Then
+            PictureBox39.Image = My.Resources.conc
+        End If
+        If NumericUpDown33.Value = 2 Then
+            PictureBox39.Image = My.Resources.concn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown34_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown34.ValueChanged
+        If NumericUpDown34.Value = 0 Then
+            PictureBox38.Image = Nothing
+        End If
+        If NumericUpDown34.Value = 1 Then
+            PictureBox38.Image = My.Resources.classem
+        End If
+        If NumericUpDown34.Value = 2 Then
+            PictureBox38.Image = My.Resources.classn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown35_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown35.ValueChanged
+        If NumericUpDown35.Value = 0 Then
+            PictureBox53.Image = Nothing
+        End If
+        If NumericUpDown35.Value = 1 Then
+            PictureBox53.Image = My.Resources.test
+        End If
+        If NumericUpDown35.Value = 2 Then
+            PictureBox53.Image = My.Resources.testn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown36_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown36.ValueChanged
+        If NumericUpDown36.Value = 0 Then
+            PictureBox51.Image = Nothing
+        End If
+        If NumericUpDown36.Value = 1 Then
+            PictureBox51.Image = My.Resources.stud
+        End If
+        If NumericUpDown36.Value = 2 Then
+            PictureBox51.Image = My.Resources.studn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown37_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown37.ValueChanged
+        If NumericUpDown37.Value = 0 Then
+            PictureBox22.Image = Nothing
+        End If
+        If NumericUpDown37.Value = 1 Then
+            PictureBox22.Image = My.Resources.cafe
+        End If
+        If NumericUpDown37.Value = 2 Then
+            PictureBox22.Image = My.Resources.cafen
+        End If
+    End Sub
+
+    Private Sub NumericUpDown38_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown38.ValueChanged
+        If NumericUpDown38.Value = 0 Then
+            PictureBox41.Image = Nothing
+        End If
+        If NumericUpDown38.Value = 1 Then
+            PictureBox41.Image = My.Resources.epicer
+        End If
+        If NumericUpDown38.Value = 2 Then
+            PictureBox41.Image = My.Resources.epicern
+        End If
+    End Sub
+
+    Private Sub NumericUpDown39_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown39.ValueChanged
+        If NumericUpDown39.Value = 0 Then
+            PictureBox44.Image = Nothing
+        End If
+        If NumericUpDown39.Value = 1 Then
+            PictureBox44.Image = My.Resources.magimport
+        End If
+        If NumericUpDown39.Value = 2 Then
+            PictureBox44.Image = My.Resources.magimportn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown40_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown40.ValueChanged
+        If NumericUpDown40.Value = 0 Then
+            PictureBox49.Image = Nothing
+        End If
+        If NumericUpDown40.Value = 1 Then
+            PictureBox49.Image = My.Resources.plage
+        End If
+        If NumericUpDown40.Value = 2 Then
+            PictureBox49.Image = My.Resources.plagen
+        End If
+    End Sub
+
+    Private Sub NumericUpDown41_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown41.ValueChanged
+        If NumericUpDown41.Value = 0 Then
+            PictureBox52.Image = Nothing
+        End If
+        If NumericUpDown41.Value = 1 Then
+            PictureBox52.Image = My.Resources.tervague
+        End If
+        If NumericUpDown41.Value = 2 Then
+            PictureBox52.Image = My.Resources.tervaguen
+        End If
+    End Sub
+
+    Private Sub NumericUpDown42_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown42.ValueChanged
+        If NumericUpDown42.Value = 0 Then
+            PictureBox50.Image = Nothing
+        End If
+        If NumericUpDown42.Value = 1 Then
+            PictureBox50.Image = My.Resources.port
+        End If
+        If NumericUpDown42.Value = 2 Then
+            PictureBox50.Image = My.Resources.portn
+        End If
+    End Sub
+
+    Private Sub NumericUpDown43_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown43.ValueChanged
+        If NumericUpDown43.Value = 0 Then
+            PictureBox54.Image = Nothing
+        End If
+        If NumericUpDown43.Value = 1 Then
+            PictureBox54.Image = My.Resources.part
+        End If
+        If NumericUpDown43.Value = 2 Then
+            PictureBox54.Image = My.Resources.partn
         End If
     End Sub
 End Class
