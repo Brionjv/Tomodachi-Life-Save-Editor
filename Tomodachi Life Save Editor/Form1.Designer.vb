@@ -190,7 +190,10 @@ Partial Class Form1
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.TabPage9 = New System.Windows.Forms.TabPage()
+<<<<<<< HEAD
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+=======
+>>>>>>> origin/master
         Me.Panel29 = New System.Windows.Forms.Panel()
         Me.NumericUpDown43 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown42 = New System.Windows.Forms.NumericUpDown()
@@ -346,7 +349,10 @@ Partial Class Form1
         CType(Me.NumericUpDown102, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage9.SuspendLayout()
+<<<<<<< HEAD
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
+=======
+>>>>>>> origin/master
         Me.Panel29.SuspendLayout()
         CType(Me.NumericUpDown43, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown42, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2270,7 +2276,10 @@ Partial Class Form1
         '
         Me.TabPage9.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage9.BackgroundImage = CType(resources.GetObject("TabPage9.BackgroundImage"), System.Drawing.Image)
+<<<<<<< HEAD
         Me.TabPage9.Controls.Add(Me.PictureBox19)
+=======
+>>>>>>> origin/master
         Me.TabPage9.Controls.Add(Me.Panel29)
         Me.TabPage9.Location = New System.Drawing.Point(4, 22)
         Me.TabPage9.Name = "TabPage9"
@@ -2278,6 +2287,7 @@ Partial Class Form1
         Me.TabPage9.TabIndex = 6
         Me.TabPage9.Text = "Island's buildings"
         '
+<<<<<<< HEAD
         'PictureBox19
         '
         Me.PictureBox19.BackColor = System.Drawing.Color.Transparent
@@ -2289,6 +2299,8 @@ Partial Class Form1
         Me.PictureBox19.TabIndex = 1
         Me.PictureBox19.TabStop = False
         '
+=======
+>>>>>>> origin/master
         'Panel29
         '
         Me.Panel29.BackColor = System.Drawing.Color.DarkOrange
@@ -2353,7 +2365,10 @@ Partial Class Form1
         Me.NumericUpDown43.Name = "NumericUpDown43"
         Me.NumericUpDown43.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown43.TabIndex = 44
+<<<<<<< HEAD
         Me.NumericUpDown43.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown42
         '
@@ -2362,7 +2377,10 @@ Partial Class Form1
         Me.NumericUpDown42.Name = "NumericUpDown42"
         Me.NumericUpDown42.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown42.TabIndex = 43
+<<<<<<< HEAD
         Me.NumericUpDown42.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown41
         '
@@ -2371,7 +2389,10 @@ Partial Class Form1
         Me.NumericUpDown41.Name = "NumericUpDown41"
         Me.NumericUpDown41.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown41.TabIndex = 42
+<<<<<<< HEAD
         Me.NumericUpDown41.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown40
         '
@@ -2380,7 +2401,10 @@ Partial Class Form1
         Me.NumericUpDown40.Name = "NumericUpDown40"
         Me.NumericUpDown40.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown40.TabIndex = 41
+<<<<<<< HEAD
         Me.NumericUpDown40.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown39
         '
@@ -2389,7 +2413,10 @@ Partial Class Form1
         Me.NumericUpDown39.Name = "NumericUpDown39"
         Me.NumericUpDown39.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown39.TabIndex = 40
+<<<<<<< HEAD
         Me.NumericUpDown39.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown38
         '
@@ -2398,7 +2425,10 @@ Partial Class Form1
         Me.NumericUpDown38.Name = "NumericUpDown38"
         Me.NumericUpDown38.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown38.TabIndex = 39
+<<<<<<< HEAD
         Me.NumericUpDown38.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown37
         '
@@ -2407,7 +2437,10 @@ Partial Class Form1
         Me.NumericUpDown37.Name = "NumericUpDown37"
         Me.NumericUpDown37.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown37.TabIndex = 38
+<<<<<<< HEAD
         Me.NumericUpDown37.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown36
         '
@@ -2416,7 +2449,10 @@ Partial Class Form1
         Me.NumericUpDown36.Name = "NumericUpDown36"
         Me.NumericUpDown36.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown36.TabIndex = 37
+<<<<<<< HEAD
         Me.NumericUpDown36.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown35
         '
@@ -2425,7 +2461,10 @@ Partial Class Form1
         Me.NumericUpDown35.Name = "NumericUpDown35"
         Me.NumericUpDown35.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown35.TabIndex = 36
+<<<<<<< HEAD
         Me.NumericUpDown35.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown34
         '
@@ -2434,7 +2473,10 @@ Partial Class Form1
         Me.NumericUpDown34.Name = "NumericUpDown34"
         Me.NumericUpDown34.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown34.TabIndex = 35
+<<<<<<< HEAD
         Me.NumericUpDown34.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown33
         '
@@ -2443,7 +2485,10 @@ Partial Class Form1
         Me.NumericUpDown33.Name = "NumericUpDown33"
         Me.NumericUpDown33.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown33.TabIndex = 34
+<<<<<<< HEAD
         Me.NumericUpDown33.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown32
         '
@@ -2452,7 +2497,10 @@ Partial Class Form1
         Me.NumericUpDown32.Name = "NumericUpDown32"
         Me.NumericUpDown32.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown32.TabIndex = 33
+<<<<<<< HEAD
         Me.NumericUpDown32.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown31
         '
@@ -2461,7 +2509,10 @@ Partial Class Form1
         Me.NumericUpDown31.Name = "NumericUpDown31"
         Me.NumericUpDown31.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown31.TabIndex = 32
+<<<<<<< HEAD
         Me.NumericUpDown31.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown30
         '
@@ -2470,7 +2521,10 @@ Partial Class Form1
         Me.NumericUpDown30.Name = "NumericUpDown30"
         Me.NumericUpDown30.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown30.TabIndex = 31
+<<<<<<< HEAD
         Me.NumericUpDown30.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown29
         '
@@ -2479,7 +2533,10 @@ Partial Class Form1
         Me.NumericUpDown29.Name = "NumericUpDown29"
         Me.NumericUpDown29.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown29.TabIndex = 30
+<<<<<<< HEAD
         Me.NumericUpDown29.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown28
         '
@@ -2488,7 +2545,10 @@ Partial Class Form1
         Me.NumericUpDown28.Name = "NumericUpDown28"
         Me.NumericUpDown28.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown28.TabIndex = 29
+<<<<<<< HEAD
         Me.NumericUpDown28.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown27
         '
@@ -2497,7 +2557,10 @@ Partial Class Form1
         Me.NumericUpDown27.Name = "NumericUpDown27"
         Me.NumericUpDown27.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown27.TabIndex = 28
+<<<<<<< HEAD
         Me.NumericUpDown27.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown26
         '
@@ -2506,7 +2569,10 @@ Partial Class Form1
         Me.NumericUpDown26.Name = "NumericUpDown26"
         Me.NumericUpDown26.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown26.TabIndex = 27
+<<<<<<< HEAD
         Me.NumericUpDown26.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown25
         '
@@ -2515,7 +2581,10 @@ Partial Class Form1
         Me.NumericUpDown25.Name = "NumericUpDown25"
         Me.NumericUpDown25.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown25.TabIndex = 26
+<<<<<<< HEAD
         Me.NumericUpDown25.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown24
         '
@@ -2524,7 +2593,10 @@ Partial Class Form1
         Me.NumericUpDown24.Name = "NumericUpDown24"
         Me.NumericUpDown24.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown24.TabIndex = 25
+<<<<<<< HEAD
         Me.NumericUpDown24.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown23
         '
@@ -2533,7 +2605,10 @@ Partial Class Form1
         Me.NumericUpDown23.Name = "NumericUpDown23"
         Me.NumericUpDown23.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown23.TabIndex = 24
+<<<<<<< HEAD
         Me.NumericUpDown23.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown22
         '
@@ -2542,7 +2617,10 @@ Partial Class Form1
         Me.NumericUpDown22.Name = "NumericUpDown22"
         Me.NumericUpDown22.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown22.TabIndex = 2
+<<<<<<< HEAD
         Me.NumericUpDown22.Visible = False
+=======
+>>>>>>> origin/master
         '
         'NumericUpDown10
         '
@@ -2551,7 +2629,10 @@ Partial Class Form1
         Me.NumericUpDown10.Name = "NumericUpDown10"
         Me.NumericUpDown10.Size = New System.Drawing.Size(33, 20)
         Me.NumericUpDown10.TabIndex = 1
+<<<<<<< HEAD
         Me.NumericUpDown10.Visible = False
+=======
+>>>>>>> origin/master
         '
         'PictureBox56
         '
@@ -3048,7 +3129,10 @@ Partial Class Form1
         CType(Me.NumericUpDown102, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage9.ResumeLayout(False)
+<<<<<<< HEAD
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
+=======
+>>>>>>> origin/master
         Me.Panel29.ResumeLayout(False)
         CType(Me.NumericUpDown43, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown42, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3328,6 +3412,9 @@ Partial Class Form1
     Friend WithEvents NumericUpDown23 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown22 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown10 As System.Windows.Forms.NumericUpDown
+<<<<<<< HEAD
     Friend WithEvents PictureBox19 As System.Windows.Forms.PictureBox
+=======
+>>>>>>> origin/master
 
 End Class
