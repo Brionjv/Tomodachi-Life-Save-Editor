@@ -51,7 +51,20 @@ Public Class Form1
     Dim epicer As String
     Dim deco As String
     Dim broc As String
-
+    Dim magimport As String
+    Dim fontai As String
+    Dim mais As String
+    Dim port As String
+    Dim tervague As String
+    Dim conc As String
+    Dim test As String
+    Dim stud As String
+    Dim plage As String
+    Dim parc1 As String
+    Dim cafe As String
+    Dim parc As String
+    Dim tour As String
+    Dim part As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox11.Text = "EN"
@@ -588,6 +601,48 @@ Public Class Form1
             Reader.Position = &H1E4C28
             broc = Reader.Position
             NumericUpDown26.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C29
+            magimport = Reader.Position
+            NumericUpDown39.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C2A
+            Fontai = Reader.Position
+            NumericUpDown32.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C2B
+            mais = Reader.Position
+            NumericUpDown29.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C2C
+            port = Reader.Position
+            NumericUpDown42.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C2D
+            tervague = Reader.Position
+            NumericUpDown41.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C2E
+            conc = Reader.Position
+            NumericUpDown33.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C2F
+            test = Reader.Position
+            NumericUpDown35.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C30
+            stud = Reader.Position
+            NumericUpDown36.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C31
+            plage = Reader.Position
+            NumericUpDown40.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C32
+            parc1 = Reader.Position
+            NumericUpDown24.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C33
+            cafe = Reader.Position
+            NumericUpDown37.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C34
+            parc = Reader.Position
+            NumericUpDown30.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C35
+            tour = Reader.Position
+            NumericUpDown23.Value = Reader.ReadInt8
+            Reader.Position = &H1E4C36
+            part = Reader.Position
+            NumericUpDown43.Value = Reader.ReadInt8
             ComboBox12.Enabled = False
         Catch ex As Exception
             If ComboBox11.Text = "EN" Then
@@ -698,9 +753,55 @@ Public Class Form1
             Writer.WriteInt16(NumericUpDown7.Value)
             Writer.Position = stpass
             Writer.WriteInt16(NumericUpDown3.Value)
+            Writer.Position = appart
+            Writer.WriteInt8(NumericUpDown27.Value)
+            Writer.Position = mair
+            Writer.WriteInt8(NumericUpDown28.Value)
+            Writer.Position = info
+            Writer.WriteInt8(NumericUpDown25.Value)
+            Writer.Position = classem
+            Writer.WriteInt8(NumericUpDown34.Value)
+            Writer.Position = vet
+            Writer.WriteInt8(NumericUpDown10.Value)
+            Writer.Position = chap
+            Writer.WriteInt8(NumericUpDown31.Value)
+            Writer.Position = epicer
+            Writer.WriteInt8(NumericUpDown38.Value)
+            Writer.Position = deco
+            Writer.WriteInt8(NumericUpDown22.Value)
+            Writer.Position = broc
+            Writer.WriteInt8(NumericUpDown26.Value)
+            Writer.Position = magimport
+            Writer.WriteInt8(NumericUpDown39.Value)
+            Writer.Position = fontai
+            Writer.WriteInt8(NumericUpDown32.Value)
+            Writer.Position = mais
+            Writer.WriteInt8(NumericUpDown29.Value)
+            Writer.Position = port
+            Writer.WriteInt8(NumericUpDown42.Value)
+            Writer.Position = tervague
+            Writer.WriteInt8(NumericUpDown41.Value)
+            Writer.Position = conc
+            Writer.WriteInt8(NumericUpDown33.Value)
+            Writer.Position = test
+            Writer.WriteInt8(NumericUpDown35.Value)
+            Writer.Position = stud
+            Writer.WriteInt8(NumericUpDown36.Value)
+            Writer.Position = plage
+            Writer.WriteInt8(NumericUpDown40.Value)
+            Writer.Position = parc1
+            Writer.WriteInt8(NumericUpDown24.Value)
+            Writer.Position = cafe
+            Writer.WriteInt8(NumericUpDown37.Value)
+            Writer.Position = parc
+            Writer.WriteInt8(NumericUpDown30.Value)
+            Writer.Position = tour
+            Writer.WriteInt8(NumericUpDown23.Value)
+            Writer.Position = part
+            Writer.WriteInt8(NumericUpDown43.Value)
+
             Writer.Position = &H0
             Writer.WriteInt8(17)
-
             If ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "                   Sauvegarde enregistré"
                 fdialog.Label1.Location = New Point(3, 35)
