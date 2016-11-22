@@ -127,6 +127,70 @@ TomodachiLifeSaveEditor
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.appart">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.appartn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.broc">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.brocn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.cafe">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.cafen">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.chap">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.chapn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.classem">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.classn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.conc">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.concn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.deco">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.decon">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.epicer">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.epicern">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.exp0">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -527,6 +591,14 @@ TomodachiLifeSaveEditor
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.font">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.fontn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.fullness_estomac">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -551,6 +623,106 @@ TomodachiLifeSaveEditor
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.info">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.infon">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.magimport">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.magimportn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.mair">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.mairn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.mais">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.maisn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.parc">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.parc1">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.parc1n">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.parcn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.part">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.parti">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.partn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.plage">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.plagen">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.port">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.portn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.stud">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.studn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.tervague">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.tervaguen">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.test">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.testn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.tomoF">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -560,6 +732,26 @@ TomodachiLifeSaveEditor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.tomoJ">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.tour">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.touri">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.tourn">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.vet">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.vetn">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>

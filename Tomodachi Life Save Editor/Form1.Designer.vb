@@ -43,9 +43,12 @@ Partial Class Form1
         Me.CheckBox11 = New System.Windows.Forms.CheckBox()
         Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Panel28 = New System.Windows.Forms.Panel()
+        Me.CheckBox30 = New System.Windows.Forms.CheckBox()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.Label27 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
@@ -174,7 +177,6 @@ Partial Class Form1
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -185,6 +187,57 @@ Partial Class Form1
         Me.NumericUpDown102 = New System.Windows.Forms.NumericUpDown()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.TabPage9 = New System.Windows.Forms.TabPage()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.Panel29 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown43 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown42 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown41 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown40 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown39 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown38 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown37 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown36 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown35 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown34 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown33 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown32 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown31 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown30 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown29 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown28 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown27 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown26 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown25 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown24 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown23 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown22 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox56 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox55 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox54 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox53 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox52 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox51 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox50 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox49 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox48 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox47 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox46 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox45 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox44 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox43 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox42 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox41 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox40 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox39 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox38 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox37 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox31 = New System.Windows.Forms.PictureBox()
         Me.ComboBox11 = New System.Windows.Forms.ComboBox()
@@ -207,8 +260,9 @@ Partial Class Form1
         Me.GroupBox11.SuspendLayout()
         Me.GroupBox10.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
+        Me.Panel28.SuspendLayout()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabControl2.SuspendLayout()
@@ -291,6 +345,55 @@ Partial Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown102, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage9.SuspendLayout()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel29.SuspendLayout()
+        CType(Me.NumericUpDown43, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown42, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown41, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown40, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown39, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown38, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown37, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox56, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox55, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox54, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox53, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox52, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox51, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox50, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox49, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox48, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox47, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox46, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox45, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox44, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -318,7 +421,7 @@ Partial Class Form1
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(69, 13)
         Me.Label4.TabIndex = 28
-        Me.Label4.Text = "Version 2.0.8"
+        Me.Label4.Text = "Version 2.0.9"
         '
         'LinkLabel1
         '
@@ -448,7 +551,7 @@ Partial Class Form1
         Me.GroupBox11.Size = New System.Drawing.Size(441, 63)
         Me.GroupBox11.TabIndex = 1
         Me.GroupBox11.TabStop = False
-        Me.GroupBox11.Text = "Repair US Save File"
+        Me.GroupBox11.Text = "Repair US/JP Save File"
         '
         'CheckBox12
         '
@@ -483,7 +586,7 @@ Partial Class Form1
         Me.GroupBox10.Size = New System.Drawing.Size(441, 63)
         Me.GroupBox10.TabIndex = 0
         Me.GroupBox10.TabStop = False
-        Me.GroupBox10.Text = "Repair EU Save File"
+        Me.GroupBox10.Text = "Repair EU/JP Save File"
         '
         'CheckBox11
         '
@@ -518,15 +621,6 @@ Partial Class Form1
         Me.PictureBox17.TabIndex = 44
         Me.PictureBox17.TabStop = False
         '
-        'NumericUpDown10
-        '
-        Me.NumericUpDown10.Location = New System.Drawing.Point(301, 9)
-        Me.NumericUpDown10.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.NumericUpDown10.Name = "NumericUpDown10"
-        Me.NumericUpDown10.Size = New System.Drawing.Size(59, 20)
-        Me.NumericUpDown10.TabIndex = 3
-        Me.NumericUpDown10.Visible = False
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -545,6 +639,7 @@ Partial Class Form1
         '
         Me.TabPage5.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage5.BackgroundImage = CType(resources.GetObject("TabPage5.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage5.Controls.Add(Me.Panel28)
         Me.TabPage5.Controls.Add(Me.Panel1)
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
         Me.TabPage5.Name = "TabPage5"
@@ -552,12 +647,58 @@ Partial Class Form1
         Me.TabPage5.TabIndex = 5
         Me.TabPage5.Text = "Extras"
         '
+        'Panel28
+        '
+        Me.Panel28.BackgroundImage = CType(resources.GetObject("Panel28.BackgroundImage"), System.Drawing.Image)
+        Me.Panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel28.Controls.Add(Me.CheckBox30)
+        Me.Panel28.Controls.Add(Me.PictureBox18)
+        Me.Panel28.Controls.Add(Me.Label27)
+        Me.Panel28.Location = New System.Drawing.Point(8, 106)
+        Me.Panel28.Name = "Panel28"
+        Me.Panel28.Size = New System.Drawing.Size(446, 33)
+        Me.Panel28.TabIndex = 5
+        '
+        'CheckBox30
+        '
+        Me.CheckBox30.AutoSize = True
+        Me.CheckBox30.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox30.Location = New System.Drawing.Point(122, 8)
+        Me.CheckBox30.Name = "CheckBox30"
+        Me.CheckBox30.Size = New System.Drawing.Size(234, 17)
+        Me.CheckBox30.TabIndex = 0
+        Me.CheckBox30.Text = "Reset Tomodachi Life StreetPass/SpotPass"
+        Me.CheckBox30.UseVisualStyleBackColor = False
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), System.Drawing.Image)
+        Me.PictureBox18.Location = New System.Drawing.Point(77, 3)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(39, 24)
+        Me.PictureBox18.TabIndex = 1
+        Me.PictureBox18.TabStop = False
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.BackColor = System.Drawing.Color.Transparent
+        Me.Label27.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label27.Font = New System.Drawing.Font("Homodachi", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.ForeColor = System.Drawing.SystemColors.HotTrack
+        Me.Label27.Location = New System.Drawing.Point(362, 11)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(7, 16)
+        Me.Label27.TabIndex = 2
+        Me.Label27.Text = "i"
+        Me.Label27.UseCompatibleTextRendering = True
+        '
         'Panel1
         '
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Controls.Add(Me.CheckBox14)
-        Me.Panel1.Controls.Add(Me.NumericUpDown10)
         Me.Panel1.Controls.Add(Me.PictureBox16)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Location = New System.Drawing.Point(8, 41)
@@ -1523,6 +1664,7 @@ Partial Class Form1
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage9)
         Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Location = New System.Drawing.Point(-1, 99)
         Me.TabControl1.Name = "TabControl1"
@@ -1567,7 +1709,6 @@ Partial Class Form1
         Me.TabPage4.Controls.Add(Me.PictureBox5)
         Me.TabPage4.Controls.Add(Me.PictureBox4)
         Me.TabPage4.Controls.Add(Me.PictureBox3)
-        Me.TabPage4.Controls.Add(Me.Button3)
         Me.TabPage4.Controls.Add(Me.Label10)
         Me.TabPage4.Controls.Add(Me.Label9)
         Me.TabPage4.Controls.Add(Me.Label8)
@@ -1578,6 +1719,8 @@ Partial Class Form1
         Me.TabPage4.Controls.Add(Me.NumericUpDown102)
         Me.TabPage4.Controls.Add(Me.ComboBox1)
         Me.TabPage4.Controls.Add(Me.PictureBox2)
+        Me.TabPage4.Controls.Add(Me.Button7)
+        Me.TabPage4.Controls.Add(Me.Button3)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Size = New System.Drawing.Size(463, 245)
@@ -1997,17 +2140,6 @@ Partial Class Form1
         Me.PictureBox3.TabIndex = 14
         Me.PictureBox3.TabStop = False
         '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.SystemColors.Control
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Location = New System.Drawing.Point(6, 139)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(110, 31)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "Save Mii changes"
-        Me.Button3.UseVisualStyleBackColor = False
-        '
         'Label10
         '
         Me.Label10.AutoSize = True
@@ -2111,6 +2243,545 @@ Partial Class Form1
         Me.PictureBox2.Size = New System.Drawing.Size(37, 67)
         Me.PictureBox2.TabIndex = 2
         Me.PictureBox2.TabStop = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.SystemColors.Control
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button7.Location = New System.Drawing.Point(6, 139)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(110, 31)
+        Me.Button7.TabIndex = 85
+        Me.Button7.Text = "Save Mii changes"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.SystemColors.Control
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.Location = New System.Drawing.Point(6, 139)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(110, 31)
+        Me.Button3.TabIndex = 10
+        Me.Button3.Text = "Save Mii changes"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'TabPage9
+        '
+        Me.TabPage9.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TabPage9.BackgroundImage = CType(resources.GetObject("TabPage9.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage9.Controls.Add(Me.PictureBox19)
+        Me.TabPage9.Controls.Add(Me.Panel29)
+        Me.TabPage9.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage9.Name = "TabPage9"
+        Me.TabPage9.Size = New System.Drawing.Size(463, 245)
+        Me.TabPage9.TabIndex = 6
+        Me.TabPage9.Text = "Island's buildings"
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox19.BackgroundImage = CType(resources.GetObject("PictureBox19.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox19.Location = New System.Drawing.Point(5, 91)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(58, 62)
+        Me.PictureBox19.TabIndex = 1
+        Me.PictureBox19.TabStop = False
+        '
+        'Panel29
+        '
+        Me.Panel29.BackColor = System.Drawing.Color.DarkOrange
+        Me.Panel29.BackgroundImage = CType(resources.GetObject("Panel29.BackgroundImage"), System.Drawing.Image)
+        Me.Panel29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel29.Controls.Add(Me.NumericUpDown43)
+        Me.Panel29.Controls.Add(Me.NumericUpDown42)
+        Me.Panel29.Controls.Add(Me.NumericUpDown41)
+        Me.Panel29.Controls.Add(Me.NumericUpDown40)
+        Me.Panel29.Controls.Add(Me.NumericUpDown39)
+        Me.Panel29.Controls.Add(Me.NumericUpDown38)
+        Me.Panel29.Controls.Add(Me.NumericUpDown37)
+        Me.Panel29.Controls.Add(Me.NumericUpDown36)
+        Me.Panel29.Controls.Add(Me.NumericUpDown35)
+        Me.Panel29.Controls.Add(Me.NumericUpDown34)
+        Me.Panel29.Controls.Add(Me.NumericUpDown33)
+        Me.Panel29.Controls.Add(Me.NumericUpDown32)
+        Me.Panel29.Controls.Add(Me.NumericUpDown31)
+        Me.Panel29.Controls.Add(Me.NumericUpDown30)
+        Me.Panel29.Controls.Add(Me.NumericUpDown29)
+        Me.Panel29.Controls.Add(Me.NumericUpDown28)
+        Me.Panel29.Controls.Add(Me.NumericUpDown27)
+        Me.Panel29.Controls.Add(Me.NumericUpDown26)
+        Me.Panel29.Controls.Add(Me.NumericUpDown25)
+        Me.Panel29.Controls.Add(Me.NumericUpDown24)
+        Me.Panel29.Controls.Add(Me.NumericUpDown23)
+        Me.Panel29.Controls.Add(Me.NumericUpDown22)
+        Me.Panel29.Controls.Add(Me.NumericUpDown10)
+        Me.Panel29.Controls.Add(Me.PictureBox56)
+        Me.Panel29.Controls.Add(Me.PictureBox55)
+        Me.Panel29.Controls.Add(Me.PictureBox54)
+        Me.Panel29.Controls.Add(Me.PictureBox53)
+        Me.Panel29.Controls.Add(Me.PictureBox52)
+        Me.Panel29.Controls.Add(Me.PictureBox51)
+        Me.Panel29.Controls.Add(Me.PictureBox50)
+        Me.Panel29.Controls.Add(Me.PictureBox49)
+        Me.Panel29.Controls.Add(Me.PictureBox48)
+        Me.Panel29.Controls.Add(Me.PictureBox47)
+        Me.Panel29.Controls.Add(Me.PictureBox46)
+        Me.Panel29.Controls.Add(Me.PictureBox45)
+        Me.Panel29.Controls.Add(Me.PictureBox44)
+        Me.Panel29.Controls.Add(Me.PictureBox43)
+        Me.Panel29.Controls.Add(Me.PictureBox42)
+        Me.Panel29.Controls.Add(Me.PictureBox41)
+        Me.Panel29.Controls.Add(Me.PictureBox40)
+        Me.Panel29.Controls.Add(Me.PictureBox39)
+        Me.Panel29.Controls.Add(Me.PictureBox38)
+        Me.Panel29.Controls.Add(Me.PictureBox37)
+        Me.Panel29.Controls.Add(Me.PictureBox22)
+        Me.Panel29.Controls.Add(Me.PictureBox21)
+        Me.Panel29.Controls.Add(Me.PictureBox20)
+        Me.Panel29.Location = New System.Drawing.Point(66, 15)
+        Me.Panel29.Name = "Panel29"
+        Me.Panel29.Size = New System.Drawing.Size(330, 214)
+        Me.Panel29.TabIndex = 0
+        '
+        'NumericUpDown43
+        '
+        Me.NumericUpDown43.Cursor = System.Windows.Forms.Cursors.Default
+        Me.NumericUpDown43.Location = New System.Drawing.Point(269, 184)
+        Me.NumericUpDown43.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown43.Name = "NumericUpDown43"
+        Me.NumericUpDown43.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown43.TabIndex = 44
+        Me.NumericUpDown43.Visible = False
+        '
+        'NumericUpDown42
+        '
+        Me.NumericUpDown42.Location = New System.Drawing.Point(216, 186)
+        Me.NumericUpDown42.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown42.Name = "NumericUpDown42"
+        Me.NumericUpDown42.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown42.TabIndex = 43
+        Me.NumericUpDown42.Visible = False
+        '
+        'NumericUpDown41
+        '
+        Me.NumericUpDown41.Location = New System.Drawing.Point(148, 173)
+        Me.NumericUpDown41.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown41.Name = "NumericUpDown41"
+        Me.NumericUpDown41.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown41.TabIndex = 42
+        Me.NumericUpDown41.Visible = False
+        '
+        'NumericUpDown40
+        '
+        Me.NumericUpDown40.Location = New System.Drawing.Point(104, 191)
+        Me.NumericUpDown40.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown40.Name = "NumericUpDown40"
+        Me.NumericUpDown40.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown40.TabIndex = 41
+        Me.NumericUpDown40.Visible = False
+        '
+        'NumericUpDown39
+        '
+        Me.NumericUpDown39.Location = New System.Drawing.Point(59, 173)
+        Me.NumericUpDown39.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown39.Name = "NumericUpDown39"
+        Me.NumericUpDown39.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown39.TabIndex = 40
+        Me.NumericUpDown39.Visible = False
+        '
+        'NumericUpDown38
+        '
+        Me.NumericUpDown38.Location = New System.Drawing.Point(20, 175)
+        Me.NumericUpDown38.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown38.Name = "NumericUpDown38"
+        Me.NumericUpDown38.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown38.TabIndex = 39
+        Me.NumericUpDown38.Visible = False
+        '
+        'NumericUpDown37
+        '
+        Me.NumericUpDown37.Location = New System.Drawing.Point(284, 135)
+        Me.NumericUpDown37.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown37.Name = "NumericUpDown37"
+        Me.NumericUpDown37.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown37.TabIndex = 38
+        Me.NumericUpDown37.Visible = False
+        '
+        'NumericUpDown36
+        '
+        Me.NumericUpDown36.Location = New System.Drawing.Point(240, 130)
+        Me.NumericUpDown36.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown36.Name = "NumericUpDown36"
+        Me.NumericUpDown36.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown36.TabIndex = 37
+        Me.NumericUpDown36.Visible = False
+        '
+        'NumericUpDown35
+        '
+        Me.NumericUpDown35.Location = New System.Drawing.Point(193, 130)
+        Me.NumericUpDown35.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown35.Name = "NumericUpDown35"
+        Me.NumericUpDown35.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown35.TabIndex = 36
+        Me.NumericUpDown35.Visible = False
+        '
+        'NumericUpDown34
+        '
+        Me.NumericUpDown34.Location = New System.Drawing.Point(148, 130)
+        Me.NumericUpDown34.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown34.Name = "NumericUpDown34"
+        Me.NumericUpDown34.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown34.TabIndex = 35
+        Me.NumericUpDown34.Visible = False
+        '
+        'NumericUpDown33
+        '
+        Me.NumericUpDown33.Location = New System.Drawing.Point(109, 130)
+        Me.NumericUpDown33.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown33.Name = "NumericUpDown33"
+        Me.NumericUpDown33.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown33.TabIndex = 34
+        Me.NumericUpDown33.Visible = False
+        '
+        'NumericUpDown32
+        '
+        Me.NumericUpDown32.Location = New System.Drawing.Point(67, 130)
+        Me.NumericUpDown32.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown32.Name = "NumericUpDown32"
+        Me.NumericUpDown32.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown32.TabIndex = 33
+        Me.NumericUpDown32.Visible = False
+        '
+        'NumericUpDown31
+        '
+        Me.NumericUpDown31.Location = New System.Drawing.Point(24, 130)
+        Me.NumericUpDown31.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown31.Name = "NumericUpDown31"
+        Me.NumericUpDown31.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown31.TabIndex = 32
+        Me.NumericUpDown31.Visible = False
+        '
+        'NumericUpDown30
+        '
+        Me.NumericUpDown30.Location = New System.Drawing.Point(284, 96)
+        Me.NumericUpDown30.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown30.Name = "NumericUpDown30"
+        Me.NumericUpDown30.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown30.TabIndex = 31
+        Me.NumericUpDown30.Visible = False
+        '
+        'NumericUpDown29
+        '
+        Me.NumericUpDown29.Location = New System.Drawing.Point(205, 84)
+        Me.NumericUpDown29.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown29.Name = "NumericUpDown29"
+        Me.NumericUpDown29.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown29.TabIndex = 30
+        Me.NumericUpDown29.Visible = False
+        '
+        'NumericUpDown28
+        '
+        Me.NumericUpDown28.Location = New System.Drawing.Point(156, 84)
+        Me.NumericUpDown28.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown28.Name = "NumericUpDown28"
+        Me.NumericUpDown28.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown28.TabIndex = 29
+        Me.NumericUpDown28.Visible = False
+        '
+        'NumericUpDown27
+        '
+        Me.NumericUpDown27.Location = New System.Drawing.Point(101, 86)
+        Me.NumericUpDown27.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown27.Name = "NumericUpDown27"
+        Me.NumericUpDown27.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown27.TabIndex = 28
+        Me.NumericUpDown27.Visible = False
+        '
+        'NumericUpDown26
+        '
+        Me.NumericUpDown26.Location = New System.Drawing.Point(15, 79)
+        Me.NumericUpDown26.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown26.Name = "NumericUpDown26"
+        Me.NumericUpDown26.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown26.TabIndex = 27
+        Me.NumericUpDown26.Visible = False
+        '
+        'NumericUpDown25
+        '
+        Me.NumericUpDown25.Location = New System.Drawing.Point(285, 54)
+        Me.NumericUpDown25.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown25.Name = "NumericUpDown25"
+        Me.NumericUpDown25.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown25.TabIndex = 26
+        Me.NumericUpDown25.Visible = False
+        '
+        'NumericUpDown24
+        '
+        Me.NumericUpDown24.Location = New System.Drawing.Point(241, 36)
+        Me.NumericUpDown24.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown24.Name = "NumericUpDown24"
+        Me.NumericUpDown24.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown24.TabIndex = 25
+        Me.NumericUpDown24.Visible = False
+        '
+        'NumericUpDown23
+        '
+        Me.NumericUpDown23.Location = New System.Drawing.Point(199, 36)
+        Me.NumericUpDown23.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown23.Name = "NumericUpDown23"
+        Me.NumericUpDown23.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown23.TabIndex = 24
+        Me.NumericUpDown23.Visible = False
+        '
+        'NumericUpDown22
+        '
+        Me.NumericUpDown22.Location = New System.Drawing.Point(156, 36)
+        Me.NumericUpDown22.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown22.Name = "NumericUpDown22"
+        Me.NumericUpDown22.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown22.TabIndex = 2
+        Me.NumericUpDown22.Visible = False
+        '
+        'NumericUpDown10
+        '
+        Me.NumericUpDown10.Location = New System.Drawing.Point(46, 36)
+        Me.NumericUpDown10.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown10.Name = "NumericUpDown10"
+        Me.NumericUpDown10.Size = New System.Drawing.Size(33, 20)
+        Me.NumericUpDown10.TabIndex = 1
+        Me.NumericUpDown10.Visible = False
+        '
+        'PictureBox56
+        '
+        Me.PictureBox56.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox56.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox56.Location = New System.Drawing.Point(42, 15)
+        Me.PictureBox56.Name = "PictureBox56"
+        Me.PictureBox56.Size = New System.Drawing.Size(41, 41)
+        Me.PictureBox56.TabIndex = 23
+        Me.PictureBox56.TabStop = False
+        '
+        'PictureBox55
+        '
+        Me.PictureBox55.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox55.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox55.Location = New System.Drawing.Point(193, 15)
+        Me.PictureBox55.Name = "PictureBox55"
+        Me.PictureBox55.Size = New System.Drawing.Size(42, 41)
+        Me.PictureBox55.TabIndex = 22
+        Me.PictureBox55.TabStop = False
+        '
+        'PictureBox54
+        '
+        Me.PictureBox54.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox54.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox54.Location = New System.Drawing.Point(269, 163)
+        Me.PictureBox54.Name = "PictureBox54"
+        Me.PictureBox54.Size = New System.Drawing.Size(42, 41)
+        Me.PictureBox54.TabIndex = 21
+        Me.PictureBox54.TabStop = False
+        '
+        'PictureBox53
+        '
+        Me.PictureBox53.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox53.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox53.Location = New System.Drawing.Point(190, 115)
+        Me.PictureBox53.Name = "PictureBox53"
+        Me.PictureBox53.Size = New System.Drawing.Size(41, 40)
+        Me.PictureBox53.TabIndex = 20
+        Me.PictureBox53.TabStop = False
+        '
+        'PictureBox52
+        '
+        Me.PictureBox52.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox52.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox52.Location = New System.Drawing.Point(144, 153)
+        Me.PictureBox52.Name = "PictureBox52"
+        Me.PictureBox52.Size = New System.Drawing.Size(41, 40)
+        Me.PictureBox52.TabIndex = 19
+        Me.PictureBox52.TabStop = False
+        '
+        'PictureBox51
+        '
+        Me.PictureBox51.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox51.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox51.Location = New System.Drawing.Point(237, 110)
+        Me.PictureBox51.Name = "PictureBox51"
+        Me.PictureBox51.Size = New System.Drawing.Size(41, 40)
+        Me.PictureBox51.TabIndex = 18
+        Me.PictureBox51.TabStop = False
+        '
+        'PictureBox50
+        '
+        Me.PictureBox50.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox50.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox50.Location = New System.Drawing.Point(213, 165)
+        Me.PictureBox50.Name = "PictureBox50"
+        Me.PictureBox50.Size = New System.Drawing.Size(42, 41)
+        Me.PictureBox50.TabIndex = 17
+        Me.PictureBox50.TabStop = False
+        '
+        'PictureBox49
+        '
+        Me.PictureBox49.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox49.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox49.Location = New System.Drawing.Point(101, 169)
+        Me.PictureBox49.Name = "PictureBox49"
+        Me.PictureBox49.Size = New System.Drawing.Size(41, 40)
+        Me.PictureBox49.TabIndex = 16
+        Me.PictureBox49.TabStop = False
+        '
+        'PictureBox48
+        '
+        Me.PictureBox48.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox48.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox48.Location = New System.Drawing.Point(280, 76)
+        Me.PictureBox48.Name = "PictureBox48"
+        Me.PictureBox48.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox48.TabIndex = 15
+        Me.PictureBox48.TabStop = False
+        '
+        'PictureBox47
+        '
+        Me.PictureBox47.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox47.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox47.Location = New System.Drawing.Point(239, 17)
+        Me.PictureBox47.Name = "PictureBox47"
+        Me.PictureBox47.Size = New System.Drawing.Size(40, 39)
+        Me.PictureBox47.TabIndex = 14
+        Me.PictureBox47.TabStop = False
+        '
+        'PictureBox46
+        '
+        Me.PictureBox46.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox46.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox46.Location = New System.Drawing.Point(201, 57)
+        Me.PictureBox46.Name = "PictureBox46"
+        Me.PictureBox46.Size = New System.Drawing.Size(48, 48)
+        Me.PictureBox46.TabIndex = 13
+        Me.PictureBox46.TabStop = False
+        '
+        'PictureBox45
+        '
+        Me.PictureBox45.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox45.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox45.Location = New System.Drawing.Point(150, 57)
+        Me.PictureBox45.Name = "PictureBox45"
+        Me.PictureBox45.Size = New System.Drawing.Size(49, 48)
+        Me.PictureBox45.TabIndex = 12
+        Me.PictureBox45.TabStop = False
+        '
+        'PictureBox44
+        '
+        Me.PictureBox44.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox44.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox44.Location = New System.Drawing.Point(59, 155)
+        Me.PictureBox44.Name = "PictureBox44"
+        Me.PictureBox44.Size = New System.Drawing.Size(41, 40)
+        Me.PictureBox44.TabIndex = 11
+        Me.PictureBox44.TabStop = False
+        '
+        'PictureBox43
+        '
+        Me.PictureBox43.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox43.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox43.Location = New System.Drawing.Point(279, 16)
+        Me.PictureBox43.Name = "PictureBox43"
+        Me.PictureBox43.Size = New System.Drawing.Size(44, 58)
+        Me.PictureBox43.TabIndex = 10
+        Me.PictureBox43.TabStop = False
+        '
+        'PictureBox42
+        '
+        Me.PictureBox42.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox42.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox42.Location = New System.Drawing.Point(63, 110)
+        Me.PictureBox42.Name = "PictureBox42"
+        Me.PictureBox42.Size = New System.Drawing.Size(41, 40)
+        Me.PictureBox42.TabIndex = 9
+        Me.PictureBox42.TabStop = False
+        '
+        'PictureBox41
+        '
+        Me.PictureBox41.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox41.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox41.Location = New System.Drawing.Point(15, 155)
+        Me.PictureBox41.Name = "PictureBox41"
+        Me.PictureBox41.Size = New System.Drawing.Size(41, 40)
+        Me.PictureBox41.TabIndex = 8
+        Me.PictureBox41.TabStop = False
+        '
+        'PictureBox40
+        '
+        Me.PictureBox40.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox40.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox40.Location = New System.Drawing.Point(153, 16)
+        Me.PictureBox40.Name = "PictureBox40"
+        Me.PictureBox40.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox40.TabIndex = 7
+        Me.PictureBox40.TabStop = False
+        '
+        'PictureBox39
+        '
+        Me.PictureBox39.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox39.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox39.Location = New System.Drawing.Point(104, 110)
+        Me.PictureBox39.Name = "PictureBox39"
+        Me.PictureBox39.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox39.TabIndex = 6
+        Me.PictureBox39.TabStop = False
+        '
+        'PictureBox38
+        '
+        Me.PictureBox38.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox38.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox38.Location = New System.Drawing.Point(145, 110)
+        Me.PictureBox38.Name = "PictureBox38"
+        Me.PictureBox38.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox38.TabIndex = 5
+        Me.PictureBox38.TabStop = False
+        '
+        'PictureBox37
+        '
+        Me.PictureBox37.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox37.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox37.Location = New System.Drawing.Point(22, 110)
+        Me.PictureBox37.Name = "PictureBox37"
+        Me.PictureBox37.Size = New System.Drawing.Size(41, 40)
+        Me.PictureBox37.TabIndex = 4
+        Me.PictureBox37.TabStop = False
+        '
+        'PictureBox22
+        '
+        Me.PictureBox22.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox22.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox22.Location = New System.Drawing.Point(279, 117)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(41, 40)
+        Me.PictureBox22.TabIndex = 3
+        Me.PictureBox22.TabStop = False
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox21.Location = New System.Drawing.Point(14, 58)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(41, 41)
+        Me.PictureBox21.TabIndex = 2
+        Me.PictureBox21.TabStop = False
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox20.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox20.Location = New System.Drawing.Point(85, 47)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(65, 59)
+        Me.PictureBox20.TabIndex = 1
+        Me.PictureBox20.TabStop = False
         '
         'Button2
         '
@@ -2262,8 +2933,10 @@ Partial Class Form1
         Me.GroupBox10.ResumeLayout(False)
         Me.GroupBox10.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
+        Me.Panel28.ResumeLayout(False)
+        Me.Panel28.PerformLayout()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
@@ -2374,6 +3047,55 @@ Partial Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown102, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage9.ResumeLayout(False)
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel29.ResumeLayout(False)
+        CType(Me.NumericUpDown43, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown42, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown41, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown40, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown39, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown38, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown37, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown36, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown35, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown34, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown33, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown32, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown31, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown30, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown29, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox56, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox55, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox54, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox53, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox52, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox51, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox50, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox49, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox48, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox47, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox46, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox45, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox44, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2402,7 +3124,6 @@ Partial Class Form1
     Friend WithEvents CheckBox11 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox10 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown10 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents TabPage5 As System.Windows.Forms.TabPage
     Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
@@ -2554,5 +3275,59 @@ Partial Class Form1
     Friend WithEvents CheckBox28 As System.Windows.Forms.CheckBox
     Friend WithEvents Panel27 As System.Windows.Forms.Panel
     Friend WithEvents CheckBox29 As System.Windows.Forms.CheckBox
+    Friend WithEvents Button7 As System.Windows.Forms.Button
+    Friend WithEvents Panel28 As System.Windows.Forms.Panel
+    Friend WithEvents CheckBox30 As System.Windows.Forms.CheckBox
+    Friend WithEvents PictureBox18 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label27 As System.Windows.Forms.Label
+    Friend WithEvents TabPage9 As System.Windows.Forms.TabPage
+    Friend WithEvents Panel29 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox22 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox21 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox37 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox42 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox41 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox40 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox39 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox38 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox43 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox56 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox55 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox54 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox53 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox52 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox51 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox50 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox49 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox48 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox47 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox46 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox45 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox44 As System.Windows.Forms.PictureBox
+    Friend WithEvents NumericUpDown43 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown42 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown41 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown40 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown39 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown38 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown37 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown36 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown35 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown34 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown33 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown32 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown31 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown30 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown29 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown28 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown27 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown26 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown25 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown24 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown23 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown22 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown10 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents PictureBox19 As System.Windows.Forms.PictureBox
 
 End Class
