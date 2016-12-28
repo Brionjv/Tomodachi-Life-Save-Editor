@@ -36,6 +36,9 @@ Partial Class Form1
         Me.PictureBox24 = New System.Windows.Forms.PictureBox()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.CheckBox31 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox32 = New System.Windows.Forms.CheckBox()
         Me.GroupBox11 = New System.Windows.Forms.GroupBox()
         Me.CheckBox12 = New System.Windows.Forms.CheckBox()
         Me.CheckBox13 = New System.Windows.Forms.CheckBox()
@@ -187,8 +190,8 @@ Partial Class Form1
         Me.NumericUpDown102 = New System.Windows.Forms.NumericUpDown()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.TabPage9 = New System.Windows.Forms.TabPage()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.Panel29 = New System.Windows.Forms.Panel()
@@ -257,6 +260,7 @@ Partial Class Form1
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
+        Me.GroupBox8.SuspendLayout()
         Me.GroupBox11.SuspendLayout()
         Me.GroupBox10.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -419,9 +423,9 @@ Partial Class Form1
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label4.Location = New System.Drawing.Point(6, 374)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(77, 13)
+        Me.Label4.Size = New System.Drawing.Size(69, 13)
         Me.Label4.TabIndex = 28
-        Me.Label4.Text = "Version 2.0.9R"
+        Me.Label4.Text = "Version 2.1.0"
         '
         'LinkLabel1
         '
@@ -531,6 +535,7 @@ Partial Class Form1
         '
         Me.TabPage2.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage2.BackgroundImage = CType(resources.GetObject("TabPage2.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage2.Controls.Add(Me.GroupBox8)
         Me.TabPage2.Controls.Add(Me.GroupBox11)
         Me.TabPage2.Controls.Add(Me.GroupBox10)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
@@ -539,6 +544,41 @@ Partial Class Form1
         Me.TabPage2.TabIndex = 4
         Me.TabPage2.Text = "Repair Save File"
         '
+        'GroupBox8
+        '
+        Me.GroupBox8.BackgroundImage = CType(resources.GetObject("GroupBox8.BackgroundImage"), System.Drawing.Image)
+        Me.GroupBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.GroupBox8.Controls.Add(Me.CheckBox31)
+        Me.GroupBox8.Controls.Add(Me.CheckBox32)
+        Me.GroupBox8.Location = New System.Drawing.Point(11, 16)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Size = New System.Drawing.Size(441, 63)
+        Me.GroupBox8.TabIndex = 2
+        Me.GroupBox8.TabStop = False
+        Me.GroupBox8.Text = "Repair EU/US Save File"
+        '
+        'CheckBox31
+        '
+        Me.CheckBox31.AutoSize = True
+        Me.CheckBox31.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox31.Location = New System.Drawing.Point(102, 38)
+        Me.CheckBox31.Name = "CheckBox31"
+        Me.CheckBox31.Size = New System.Drawing.Size(241, 17)
+        Me.CheckBox31.TabIndex = 1
+        Me.CheckBox31.Text = "IF ""JP All Special Foods Unlocked"" was used"
+        Me.CheckBox31.UseVisualStyleBackColor = False
+        '
+        'CheckBox32
+        '
+        Me.CheckBox32.AutoSize = True
+        Me.CheckBox32.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox32.Location = New System.Drawing.Point(30, 18)
+        Me.CheckBox32.Name = "CheckBox32"
+        Me.CheckBox32.Size = New System.Drawing.Size(381, 17)
+        Me.CheckBox32.TabIndex = 0
+        Me.CheckBox32.Text = "IF ""JP All Streetpass/Spotpass Headgears and Colors Unlocked"" was used"
+        Me.CheckBox32.UseVisualStyleBackColor = False
+        '
         'GroupBox11
         '
         Me.GroupBox11.BackgroundImage = CType(resources.GetObject("GroupBox11.BackgroundImage"), System.Drawing.Image)
@@ -546,7 +586,7 @@ Partial Class Form1
         Me.GroupBox11.Controls.Add(Me.CheckBox12)
         Me.GroupBox11.Controls.Add(Me.CheckBox13)
         Me.GroupBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox11.Location = New System.Drawing.Point(9, 137)
+        Me.GroupBox11.Location = New System.Drawing.Point(11, 165)
         Me.GroupBox11.Name = "GroupBox11"
         Me.GroupBox11.Size = New System.Drawing.Size(441, 63)
         Me.GroupBox11.TabIndex = 1
@@ -581,7 +621,7 @@ Partial Class Form1
         Me.GroupBox10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.GroupBox10.Controls.Add(Me.CheckBox11)
         Me.GroupBox10.Controls.Add(Me.CheckBox10)
-        Me.GroupBox10.Location = New System.Drawing.Point(9, 45)
+        Me.GroupBox10.Location = New System.Drawing.Point(11, 91)
         Me.GroupBox10.Name = "GroupBox10"
         Me.GroupBox10.Size = New System.Drawing.Size(441, 63)
         Me.GroupBox10.TabIndex = 0
@@ -1719,8 +1759,8 @@ Partial Class Form1
         Me.TabPage4.Controls.Add(Me.NumericUpDown102)
         Me.TabPage4.Controls.Add(Me.ComboBox1)
         Me.TabPage4.Controls.Add(Me.PictureBox2)
-        Me.TabPage4.Controls.Add(Me.Button3)
         Me.TabPage4.Controls.Add(Me.Button7)
+        Me.TabPage4.Controls.Add(Me.Button3)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Size = New System.Drawing.Size(463, 245)
@@ -2244,17 +2284,6 @@ Partial Class Form1
         Me.PictureBox2.TabIndex = 2
         Me.PictureBox2.TabStop = False
         '
-        'Button7
-        '
-        Me.Button7.BackColor = System.Drawing.SystemColors.Control
-        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button7.Location = New System.Drawing.Point(6, 139)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(110, 31)
-        Me.Button7.TabIndex = 85
-        Me.Button7.Text = "Save Mii changes"
-        Me.Button7.UseVisualStyleBackColor = False
-        '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.Control
@@ -2265,6 +2294,17 @@ Partial Class Form1
         Me.Button3.TabIndex = 10
         Me.Button3.Text = "Save Mii changes"
         Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.SystemColors.Control
+        Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button7.Location = New System.Drawing.Point(6, 139)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(110, 31)
+        Me.Button7.TabIndex = 85
+        Me.Button7.Text = "Save Mii changes"
+        Me.Button7.UseVisualStyleBackColor = False
         '
         'TabPage9
         '
@@ -2928,6 +2968,8 @@ Partial Class Form1
         CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
+        Me.GroupBox8.ResumeLayout(False)
+        Me.GroupBox8.PerformLayout()
         Me.GroupBox11.ResumeLayout(False)
         Me.GroupBox11.PerformLayout()
         Me.GroupBox10.ResumeLayout(False)
@@ -3329,5 +3371,8 @@ Partial Class Form1
     Friend WithEvents NumericUpDown22 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown10 As System.Windows.Forms.NumericUpDown
     Friend WithEvents PictureBox19 As System.Windows.Forms.PictureBox
+    Friend WithEvents GroupBox8 As System.Windows.Forms.GroupBox
+    Friend WithEvents CheckBox31 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox32 As System.Windows.Forms.CheckBox
 
 End Class
