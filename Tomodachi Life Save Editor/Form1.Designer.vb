@@ -141,6 +141,9 @@ Partial Class Form1
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.NumericUpDown45 = New System.Windows.Forms.NumericUpDown()
+        Me.NumericUpDown44 = New System.Windows.Forms.NumericUpDown()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -251,6 +254,7 @@ Partial Class Form1
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Label29 = New System.Windows.Forms.Label()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -327,6 +331,8 @@ Partial Class Form1
         Me.GroupBox5.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage4.SuspendLayout()
+        CType(Me.NumericUpDown45, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown44, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown20, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1717,6 +1723,10 @@ Partial Class Form1
         Me.TabPage4.AutoScroll = True
         Me.TabPage4.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage4.BackgroundImage = CType(resources.GetObject("TabPage4.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage4.Controls.Add(Me.Label29)
+        Me.TabPage4.Controls.Add(Me.Label28)
+        Me.TabPage4.Controls.Add(Me.NumericUpDown45)
+        Me.TabPage4.Controls.Add(Me.NumericUpDown44)
         Me.TabPage4.Controls.Add(Me.Label26)
         Me.TabPage4.Controls.Add(Me.Label25)
         Me.TabPage4.Controls.Add(Me.Label7)
@@ -1759,13 +1769,36 @@ Partial Class Form1
         Me.TabPage4.Controls.Add(Me.NumericUpDown102)
         Me.TabPage4.Controls.Add(Me.ComboBox1)
         Me.TabPage4.Controls.Add(Me.PictureBox2)
-        Me.TabPage4.Controls.Add(Me.Button7)
         Me.TabPage4.Controls.Add(Me.Button3)
+        Me.TabPage4.Controls.Add(Me.Button7)
         Me.TabPage4.Location = New System.Drawing.Point(4, 22)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Size = New System.Drawing.Size(463, 245)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Mii Edit"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.Location = New System.Drawing.Point(385, 113)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(74, 13)
+        Me.Label28.TabIndex = 88
+        Me.Label28.Text = "friends or not?"
+        '
+        'NumericUpDown45
+        '
+        Me.NumericUpDown45.Location = New System.Drawing.Point(409, 93)
+        Me.NumericUpDown45.Name = "NumericUpDown45"
+        Me.NumericUpDown45.Size = New System.Drawing.Size(48, 20)
+        Me.NumericUpDown45.TabIndex = 87
+        '
+        'NumericUpDown44
+        '
+        Me.NumericUpDown44.Location = New System.Drawing.Point(409, 72)
+        Me.NumericUpDown44.Name = "NumericUpDown44"
+        Me.NumericUpDown44.Size = New System.Drawing.Size(48, 20)
+        Me.NumericUpDown44.TabIndex = 86
         '
         'Label26
         '
@@ -2934,6 +2967,15 @@ Partial Class Form1
         Me.Button6.Text = "Save"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'Label29
+        '
+        Me.Label29.AutoSize = True
+        Me.Label29.Location = New System.Drawing.Point(344, 77)
+        Me.Label29.Name = "Label29"
+        Me.Label29.Size = New System.Drawing.Size(64, 13)
+        Me.Label29.TabIndex = 89
+        Me.Label29.Text = "friends relat."
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3067,6 +3109,8 @@ Partial Class Form1
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
         Me.TabPage4.PerformLayout()
+        CType(Me.NumericUpDown45, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown44, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown20, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3374,5 +3418,9 @@ Partial Class Form1
     Friend WithEvents GroupBox8 As System.Windows.Forms.GroupBox
     Friend WithEvents CheckBox31 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox32 As System.Windows.Forms.CheckBox
+    Friend WithEvents Label28 As System.Windows.Forms.Label
+    Friend WithEvents NumericUpDown45 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown44 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Label29 As System.Windows.Forms.Label
 
 End Class

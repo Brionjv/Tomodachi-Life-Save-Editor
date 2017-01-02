@@ -65,6 +65,8 @@ Public Class Form1
     Dim parc As String
     Dim tour As String
     Dim part As String
+    Dim frie1 As String
+    Dim frie2 As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox11.Text = "EN"
@@ -3754,7 +3756,14 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1F50
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+
+                    Reader.Position = &H22B0 '(friend relation?) 1:??? 2:??? 3:really nice
+                    frie1 = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadInt8 'big problem : can't read Uint8 with this packageIO (last version not write text correctly :/)
+                    Reader.Position = &H22B1 '(friend or not?) 1:nothing 2:friend 3:???
+                    frie2 = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadInt8 'big problem : can't read Uint8 with this packageIO (last version not write text correctly :/)
         End If
 
             If ComboBox1.Text = "Mii 2" Then
@@ -13317,7 +13326,6 @@ Public Class Form1
                     eat = Reader.Position
                     Reader.Position = &H2193
                     fullness = Reader.Position
-                    NumericUpDown21.Value = Reader.ReadInt8
                 End If
                 If ComboBox1.Text = "Mii 2" Then
                     Reader.Position = &H1CA0 + &H590
@@ -19157,6 +19165,10 @@ Public Class Form1
                 Writer.Position = objdiv
                 Writer.WriteUInt24(0)
             End If
+            Writer.Position = frie1
+            Writer.WriteInt8(NumericUpDown44.Value)
+            Writer.Position = frie2
+            Writer.WriteInt8(NumericUpDown45.Value)
 
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "                        Changes Mii Save"
