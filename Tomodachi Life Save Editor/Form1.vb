@@ -19295,10 +19295,6 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Panel2_click(sender As Object, e As EventArgs) Handles Panel2.Click
-        Form7.Show()
-    End Sub
-
     Private Sub NumericUpDown11_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown11.ValueChanged
         If NumericUpDown11.Value = 65535 Then
             PictureBox17.Image = Nothing
@@ -23982,7 +23978,7 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub CheckBox32_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox32.CheckedChanged
-
+    Private Sub Panel2_click(sender As Object, e As EventArgs) Handles Panel2.Click
+        Form7.Show()
     End Sub
 End Class
