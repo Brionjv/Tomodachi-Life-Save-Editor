@@ -67,6 +67,18 @@ Public Class Form1
     Dim part As String
     Dim frie1 As String
     Dim frie2 As String
+    Dim alltime As String
+    Dim alltime2 As String
+    Dim fav As String
+    Dim fav2 As String
+    Dim fav3 As String
+    Dim worst As String
+    Dim worst2 As String
+    Dim copy As String
+    Dim sharing As String
+    Dim couleur As String
+    Dim grow As String
+
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox11.Text = "EN"
@@ -3758,13 +3770,40 @@ Public Class Form1
             objdiv = Reader.Position
                     Label26.Text = "Label26"
 
-                    Reader.Position = &H22B0 '(friend relation?) 1:??? 2:??? 3:really nice
-                    frie1 = Reader.Position
-                    NumericUpDown44.Value = Reader.ReadInt8 'big problem : can't read Uint8 with this packageIO (last version not write text correctly :/)
-                    Reader.Position = &H22B1 '(friend or not?) 1:nothing 2:friend 3:???
-                    frie2 = Reader.Position
-                    NumericUpDown45.Value = Reader.ReadInt8 'big problem : can't read Uint8 with this packageIO (last version not write text correctly :/)
-        End If
+                    Reader.Position = &H2298
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C71
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                End If
 
             If ComboBox1.Text = "Mii 2" Then
                 Reader.Position = &H2330
@@ -3859,7 +3898,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H25B0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+
+                    Reader.Position = &H2298 + &H660
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + &H660
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + &H660
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + &H660
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + &H660
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + &H660
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + &H660
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + &H660
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + &H660
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + &H660
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + &H660
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 3" Then
 
@@ -19165,10 +19239,6 @@ Public Class Form1
                 Writer.Position = objdiv
                 Writer.WriteUInt24(0)
             End If
-            Writer.Position = frie1
-            Writer.WriteInt8(NumericUpDown44.Value)
-            Writer.Position = frie2
-            Writer.WriteInt8(NumericUpDown45.Value)
 
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "                        Changes Mii Save"
@@ -23958,14 +24028,6 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub GroupBox10_MouseMove(sender As Object, e As MouseEventArgs) Handles GroupBox10.MouseMove, CheckBox11.MouseMove, CheckBox10.MouseMove
-
-    End Sub
-
-    Private Sub GroupBox11_MouseMove(sender As Object, e As MouseEventArgs) Handles GroupBox11.MouseMove, CheckBox13.MouseMove, CheckBox12.MouseMove
-
-    End Sub
-
     Private Sub CheckBox31_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox31.CheckedChanged
         If CheckBox31.Checked = True Then
             Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
@@ -23980,5 +24042,47 @@ Public Class Form1
 
     Private Sub Panel2_click(sender As Object, e As EventArgs) Handles Panel2.Click
         Form7.Show()
+    End Sub
+
+    Private Sub NumericUpDown54_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown54.ValueChanged
+        If NumericUpDown54.Value Mod 2 = 0 Then
+            TextBox1.Text = "On"
+        End If
+        If NumericUpDown54.Value Mod 2 = 1 Then
+            TextBox1.Text = "Off"
+        End If
+    End Sub
+
+    Private Sub NumericUpDown55_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown55.ValueChanged
+        If NumericUpDown55.Value = 0 Then
+            TextBox6.Text = "Don't Allow"
+        End If
+        If NumericUpDown55.Value = 1 Then
+            TextBox6.Text = "Allow"
+        End If
+    End Sub
+
+    Private Sub NumericUpDown56_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown56.ValueChanged
+        If NumericUpDown56.Value = 0 Then
+            ComboBox3.SelectedItem = ComboBox3.Items.Item(0)
+        End If
+        If NumericUpDown56.Value = 1 Then
+            ComboBox3.SelectedItem = ComboBox3.Items.Item(1)
+        End If
+        If NumericUpDown56.Value = 2 Then
+            ComboBox3.SelectedItem = ComboBox3.Items.Item(2)
+        End If
+    End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(0) Then
+            NumericUpDown56.Value = 0
+        End If
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(1) Then
+            NumericUpDown56.Value = 1
+        End If
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(2) Then
+            NumericUpDown56.Value = 2
+        End If
     End Sub
 End Class
