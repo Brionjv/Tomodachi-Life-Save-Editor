@@ -189,6 +189,7 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TabPage11 = New System.Windows.Forms.TabPage()
+        Me.PictureBox58 = New System.Windows.Forms.PictureBox()
         Me.NumericUpDown52 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown51 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown50 = New System.Windows.Forms.NumericUpDown()
@@ -371,6 +372,7 @@ Partial Class Form1
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage11.SuspendLayout()
+        CType(Me.PictureBox58, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown52, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown51, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown50, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1972,7 +1974,7 @@ Partial Class Form1
         'NumericUpDown56
         '
         Me.NumericUpDown56.Location = New System.Drawing.Point(375, 163)
-        Me.NumericUpDown56.Maximum = New Decimal(New Integer() {70000, 0, 0, 0})
+        Me.NumericUpDown56.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.NumericUpDown56.Name = "NumericUpDown56"
         Me.NumericUpDown56.Size = New System.Drawing.Size(40, 20)
         Me.NumericUpDown56.TabIndex = 97
@@ -1992,7 +1994,7 @@ Partial Class Form1
         'NumericUpDown54
         '
         Me.NumericUpDown54.Location = New System.Drawing.Point(252, 28)
-        Me.NumericUpDown54.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.NumericUpDown54.Maximum = New Decimal(New Integer() {70000, 0, 0, 0})
         Me.NumericUpDown54.Name = "NumericUpDown54"
         Me.NumericUpDown54.Size = New System.Drawing.Size(38, 20)
         Me.NumericUpDown54.TabIndex = 95
@@ -2011,7 +2013,7 @@ Partial Class Form1
         '
         'NumericUpDown53
         '
-        Me.NumericUpDown53.Location = New System.Drawing.Point(192, 169)
+        Me.NumericUpDown53.Location = New System.Drawing.Point(205, 167)
         Me.NumericUpDown53.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.NumericUpDown53.Name = "NumericUpDown53"
         Me.NumericUpDown53.Size = New System.Drawing.Size(37, 20)
@@ -2048,9 +2050,10 @@ Partial Class Form1
         '
         'PictureBox57
         '
-        Me.PictureBox57.Location = New System.Drawing.Point(152, 160)
+        Me.PictureBox57.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.couleur
+        Me.PictureBox57.Location = New System.Drawing.Point(145, 161)
         Me.PictureBox57.Name = "PictureBox57"
-        Me.PictureBox57.Size = New System.Drawing.Size(34, 29)
+        Me.PictureBox57.Size = New System.Drawing.Size(54, 26)
         Me.PictureBox57.TabIndex = 89
         Me.PictureBox57.TabStop = False
         '
@@ -2304,6 +2307,7 @@ Partial Class Form1
         'TabPage11
         '
         Me.TabPage11.BackgroundImage = CType(resources.GetObject("TabPage11.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage11.Controls.Add(Me.PictureBox58)
         Me.TabPage11.Controls.Add(Me.NumericUpDown52)
         Me.TabPage11.Controls.Add(Me.NumericUpDown51)
         Me.TabPage11.Controls.Add(Me.NumericUpDown50)
@@ -2336,6 +2340,15 @@ Partial Class Form1
         Me.TabPage11.TabIndex = 1
         Me.TabPage11.Text = "Status"
         Me.TabPage11.UseVisualStyleBackColor = True
+        '
+        'PictureBox58
+        '
+        Me.PictureBox58.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.kid
+        Me.PictureBox58.Location = New System.Drawing.Point(115, 1)
+        Me.PictureBox58.Name = "PictureBox58"
+        Me.PictureBox58.Size = New System.Drawing.Size(28, 22)
+        Me.PictureBox58.TabIndex = 100
+        Me.PictureBox58.TabStop = False
         '
         'NumericUpDown52
         '
@@ -3451,6 +3464,7 @@ Partial Class Form1
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage11.ResumeLayout(False)
         Me.TabPage11.PerformLayout()
+        CType(Me.PictureBox58, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown52, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown51, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown50, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3791,5 +3805,6 @@ Partial Class Form1
     Friend WithEvents NumericUpDown56 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown55 As System.Windows.Forms.NumericUpDown
     Friend WithEvents NumericUpDown54 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents PictureBox58 As System.Windows.Forms.PictureBox
 
 End Class
