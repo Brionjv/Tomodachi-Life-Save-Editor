@@ -65,6 +65,20 @@ Public Class Form1
     Dim parc As String
     Dim tour As String
     Dim part As String
+    Dim frie1 As String
+    Dim frie2 As String
+    Dim alltime As String
+    Dim alltime2 As String
+    Dim fav As String
+    Dim fav2 As String
+    Dim fav3 As String
+    Dim worst As String
+    Dim worst2 As String
+    Dim copy As String
+    Dim sharing As String
+    Dim couleur As String
+    Dim grow As String
+
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox11.Text = "EN"
@@ -3754,8 +3768,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1F50
             objdiv = Reader.Position
-            Label26.Text = "Label26"
-        End If
+                    Label26.Text = "Label26"
+
+                    Reader.Position = &H2298
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C71
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                End If
 
             If ComboBox1.Text = "Mii 2" Then
                 Reader.Position = &H2330
@@ -3850,7 +3898,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H25B0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+
+                    Reader.Position = &H2298 + &H660
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + &H660
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + &H660
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + &H660
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + &H660
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + &H660
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + &H660
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + &H660
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + &H660
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + &H660
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + &H660
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 3" Then
 
@@ -3946,7 +4029,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H2C10
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+
+                    Reader.Position = &H2298 + (&H660 * 2)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 2)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 2)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 2)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 2)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 2)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 2)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 2)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 2)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 2)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 2)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 4" Then
 
@@ -4042,7 +4160,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H3270
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 3)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 3)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 3)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 3)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 3)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 3)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 3)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 3)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 3)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 3)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 3)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 5" Then
 
@@ -4138,7 +4291,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H38D0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 4)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 4)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 4)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 4)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 4)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 4)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 4)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 4)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 4)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 4)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 4)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 6" Then
 
@@ -4234,7 +4422,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H3F30
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 5)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 5)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 5)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 5)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 5)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 5)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 5)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 5)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 5)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 5)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 5)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 7" Then
 
@@ -4330,7 +4553,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H4590
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 6)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 6)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 6)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 6)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 6)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 6)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 6)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 6)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 6)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 6)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 6)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 8" Then
 
@@ -4426,7 +4684,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H4BF0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 7)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 7)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 7)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 7)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 7)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 7)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 7)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 7)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 7)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 7)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 7)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 9" Then
 
@@ -4522,7 +4815,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H5250
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 8)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 8)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 8)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 8)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 8)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 8)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 8)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 8)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 8)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 8)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 8)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 10" Then
 
@@ -4618,7 +4946,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H58B0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 9)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 9)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 9)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 9)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 9)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 9)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 9)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 9)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 9)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 9)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 9)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 11" Then
 
@@ -4714,7 +5077,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H5F10
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 10)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 10)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 10)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 10)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 10)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 10)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 10)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 10)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 10)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 10)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 10)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 12" Then
 
@@ -4810,7 +5208,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H6570
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 11)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 11)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 11)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 11)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 11)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 11)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 11)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 11)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 11)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 11)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 11)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 13" Then
 
@@ -4906,7 +5339,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H6BD0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 12)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 12)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 12)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 12)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 12)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 12)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 12)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 12)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 12)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 12)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 12)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 14" Then
 
@@ -5002,7 +5470,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H7220
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 13)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 13)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 13)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 13)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 13)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 13)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 13)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 13)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 13)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 13)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 13)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 15" Then
 
@@ -5098,7 +5601,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H7890
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 14)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 14)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 14)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 14)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 14)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 14)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 14)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 14)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 14)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 14)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 14)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 16" Then
 
@@ -5194,7 +5732,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H7EF0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 15)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 15)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 15)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 15)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 15)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 15)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 15)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 15)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 15)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 15)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 15)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 17" Then
 
@@ -5290,7 +5863,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H8550
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 16)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 16)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 16)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 16)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 16)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 16)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 16)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 16)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 16)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 16)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 16)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 18" Then
 
@@ -5386,7 +5994,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H8BB0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 17)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 17)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 17)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 17)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 17)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 17)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 17)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 17)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 17)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 17)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 17)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 19" Then
 
@@ -5482,7 +6125,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H9210
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 18)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 18)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 18)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 18)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 18)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 18)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 18)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 18)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 18)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 18)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 18)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 20" Then
 
@@ -5578,7 +6256,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H9870
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 19)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 19)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 19)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 19)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 19)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 19)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 19)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 19)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 19)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 19)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 19)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 21" Then
 
@@ -5674,7 +6387,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H9ED0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 20)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 20)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 20)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 20)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 20)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 20)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 20)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 20)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 20)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 20)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 20)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 22" Then
 
@@ -5770,7 +6518,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HA530
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 21)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 21)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 21)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 21)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 21)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 21)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 21)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 21)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 21)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 21)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 21)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 23" Then
 
@@ -5866,7 +6649,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HAB90
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 22)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 22)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 22)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 22)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 22)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 22)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 22)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 22)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 22)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 22)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 22)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 24" Then
 
@@ -5962,7 +6780,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HB1F0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 23)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 23)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 23)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 23)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 23)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 23)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 23)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 23)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 23)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 23)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 23)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 25" Then
 
@@ -6058,7 +6911,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HB850
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 24)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 24)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 24)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 24)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 24)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 24)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 24)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 24)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 24)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 24)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 24)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 26" Then
 
@@ -6154,7 +7042,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HBEB0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 25)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 25)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 25)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 25)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 25)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 25)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 25)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 25)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 25)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 25)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 25)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 27" Then
 
@@ -6250,7 +7173,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HC510
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 26)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 26)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 26)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 26)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 26)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 26)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 26)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 26)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 26)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 26)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 26)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 28" Then
 
@@ -6346,7 +7304,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HCB70
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 27)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 27)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 27)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 27)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 27)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 27)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 27)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 27)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 27)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 27)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 27)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 29" Then
 
@@ -6442,7 +7435,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HD1D0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 28)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 28)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 28)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 28)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 28)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 28)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 28)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 28)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 28)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 28)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 28)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 30" Then
 
@@ -6538,7 +7566,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HD830
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 29)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 29)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 29)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 29)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 29)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 29)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 29)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 29)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 29)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 29)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 29)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 31" Then
 
@@ -6634,7 +7697,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HDE90
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 30)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 30)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 30)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 30)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 30)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 30)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 30)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 30)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 30)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 30)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 30)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 32" Then
 
@@ -6730,7 +7828,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HE4F0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 31)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 31)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 31)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 31)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 31)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 31)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 31)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 31)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 31)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 31)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 31)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 33" Then
 
@@ -6826,7 +7959,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HEB50
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 32)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 32)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 32)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 32)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 32)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 32)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 32)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 32)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 32)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 32)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 32)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 34" Then
 
@@ -6922,7 +8090,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HF1B0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 33)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 33)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 33)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 33)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 33)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 33)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 33)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 33)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 33)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 33)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 33)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 35" Then
 
@@ -7018,7 +8221,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HF810
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 34)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 34)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 34)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 34)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 34)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 34)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 34)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 34)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 34)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 34)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 34)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 36" Then
 
@@ -7114,7 +8352,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &HFE70
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 35)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 35)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 35)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 35)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 35)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 35)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 35)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 35)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 35)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 35)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 35)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 37" Then
 
@@ -7210,7 +8483,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H104D0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 36)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 36)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 36)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 36)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 36)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 36)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 36)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 36)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 36)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 36)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 36)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 38" Then
 
@@ -7306,7 +8614,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H10B30
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 37)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 37)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 37)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 37)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 37)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 37)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 37)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 37)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 37)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 37)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 37)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 39" Then
 
@@ -7402,7 +8745,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H11190
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 38)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 38)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 38)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 38)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 38)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 38)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 38)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 38)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 38)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 38)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 38)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 40" Then
 
@@ -7498,7 +8876,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H117F0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 39)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 39)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 39)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 39)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 39)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 39)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 39)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 39)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 39)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 39)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 39)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 41" Then
 
@@ -7594,7 +9007,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H11E50
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 40)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 40)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 40)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 40)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 40)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 40)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 40)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 40)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 40)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 40)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 40)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 42" Then
 
@@ -7690,7 +9138,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H124B0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 41)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 41)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 41)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 41)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 41)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 41)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 41)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 41)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 41)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 41)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 41)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 43" Then
 
@@ -7786,7 +9269,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H12B10
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 42)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 42)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 42)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 42)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 42)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 42)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 42)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 42)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 42)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 42)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 42)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 44" Then
 
@@ -7882,7 +9400,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H13170
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 43)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 43)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 43)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 43)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 43)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 43)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 43)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 43)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 43)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 43)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 43)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 45" Then
 
@@ -7978,7 +9531,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H137D0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 44)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 44)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 44)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 44)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 44)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 44)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 44)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 44)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 44)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 44)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 44)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 46" Then
 
@@ -8074,7 +9662,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H13E30
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 45)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 45)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 45)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 45)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 45)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 45)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 45)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 45)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 45)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 45)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 45)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 47" Then
 
@@ -8170,7 +9793,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H14490
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 46)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 46)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 46)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 46)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 46)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 46)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 46)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 46)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 46)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 46)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 46)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 48" Then
 
@@ -8266,7 +9924,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H14AF0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 47)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 47)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 47)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 47)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 47)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 47)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 47)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 47)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 47)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 47)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 47)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 49" Then
 
@@ -8362,7 +10055,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H15150
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 48)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 48)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 48)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 48)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 48)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 48)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 48)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 48)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 48)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 48)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 48)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 50" Then
 
@@ -8458,7 +10186,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H157B0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 49)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 49)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 49)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 49)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 49)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 49)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 49)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 49)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 49)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 49)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 49)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 51" Then
 
@@ -8554,7 +10317,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H15E10
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 50)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 50)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 50)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 50)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 50)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 50)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 50)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 50)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 50)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 50)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 50)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 52" Then
 
@@ -8650,7 +10448,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H16470
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 51)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 51)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 51)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 51)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 51)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 51)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 51)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 51)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 51)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 51)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 51)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 53" Then
 
@@ -8746,7 +10579,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H16AD0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 52)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 52)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 52)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 52)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 52)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 52)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 52)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 52)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 52)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 52)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 52)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 54" Then
 
@@ -8842,7 +10710,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H17130
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 53)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 53)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 53)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 53)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 53)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 53)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 53)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 53)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 53)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 53)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 53)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 55" Then
 
@@ -8938,7 +10841,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H17790
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 54)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 54)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 54)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 54)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 54)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 54)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 54)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 54)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 54)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 54)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 54)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 56" Then
 
@@ -9034,7 +10972,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H17DF0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 55)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 55)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 55)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 55)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 55)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 55)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 55)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 55)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 55)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 55)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 55)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 57" Then
 
@@ -9130,7 +11103,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H18450
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 56)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 56)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 56)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 56)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 56)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 56)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 56)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 56)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 56)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 56)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 56)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 58" Then
 
@@ -9226,7 +11234,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H18AB0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 57)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 57)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 57)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 57)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 57)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 57)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 57)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 57)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 57)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 57)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 57)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 59" Then
 
@@ -9322,7 +11365,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H19110
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 58)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 58)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 58)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 58)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 58)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 58)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 58)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 58)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 58)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 58)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 58)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 60" Then
 
@@ -9418,7 +11496,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H19770
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 59)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 59)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 59)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 59)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 59)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 59)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 59)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 59)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 59)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 59)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 59)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 61" Then
 
@@ -9514,7 +11627,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H19DD0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 60)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 60)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 60)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 60)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 60)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 60)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 60)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 60)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 60)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 60)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 60)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 62" Then
 
@@ -9610,7 +11758,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1A430
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 61)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 61)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 61)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 61)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 61)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 61)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 61)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 61)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 61)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 61)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 61)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 63" Then
 
@@ -9706,7 +11889,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1AA90
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 62)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 62)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 62)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 62)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 62)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 62)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 62)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 62)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 62)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 62)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 62)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 64" Then
 
@@ -9802,7 +12020,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1B0F0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 63)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 63)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 63)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 63)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 63)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 63)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 63)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 63)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 63)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 63)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 63)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 65" Then
 
@@ -9898,7 +12151,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1B750
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 64)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 64)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 64)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 64)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 64)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 64)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 64)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 64)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 64)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 64)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 64)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 66" Then
 
@@ -9994,7 +12282,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1BDB0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 65)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 65)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 65)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 65)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 65)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 65)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 65)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 65)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 65)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 65)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 65)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 67" Then
 
@@ -10090,7 +12413,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1C410
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 66)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 66)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 66)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 66)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 66)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 66)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 66)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 66)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 66)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 66)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 66)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 68" Then
 
@@ -10186,7 +12544,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1CA70
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 67)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 67)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 67)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 67)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 67)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 67)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 67)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 67)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 67)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 67)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 67)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 69" Then
 
@@ -10282,7 +12675,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1D0D0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 68)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 68)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 68)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 68)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 68)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 68)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 68)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 68)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 68)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 68)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 68)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 70" Then
 
@@ -10378,7 +12806,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1D730
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 69)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 69)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 69)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 69)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 69)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 69)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 69)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 69)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 69)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 69)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 69)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 71" Then
 
@@ -10474,7 +12937,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1DD90
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 70)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 70)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 70)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 70)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 70)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 70)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 70)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 70)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 70)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 70)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 70)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 72" Then
 
@@ -10570,7 +13068,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1E3F0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 71)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 71)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 71)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 71)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 71)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 71)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 71)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 71)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 71)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 71)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 71)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 73" Then
 
@@ -10666,7 +13199,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1EA50
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 72)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 72)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 72)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 72)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 72)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 72)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 72)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 72)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 72)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 72)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 72)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 74" Then
 
@@ -10762,7 +13330,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1F0B0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 73)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 73)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 73)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 73)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 73)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 73)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 73)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 73)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 73)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 73)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 73)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 75" Then
 
@@ -10858,7 +13461,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1F710
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 74)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 74)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 74)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 74)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 74)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 74)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 74)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 74)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 74)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 74)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 74)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 76" Then
 
@@ -10954,7 +13592,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H1FD70
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 75)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 75)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 75)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 75)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 75)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 75)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 75)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 75)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 75)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 75)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 75)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 77" Then
 
@@ -11050,7 +13723,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H203D0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 76)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 76)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 76)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 76)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 76)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 76)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 76)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 76)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 76)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 76)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 76)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 78" Then
 
@@ -11146,7 +13854,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H20A30
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 77)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 77)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 77)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 77)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 77)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 77)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 77)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 77)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 77)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 77)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 77)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 79" Then
 
@@ -11242,7 +13985,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H21090
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 78)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 78)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 78)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 78)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 78)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 78)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 78)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 78)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 78)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 78)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 78)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 80" Then
 
@@ -11338,7 +14116,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H216F0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 79)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 79)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 79)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 79)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 79)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 79)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 79)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 79)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 79)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 79)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 79)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 81" Then
 
@@ -11434,7 +14247,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H21D50
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 80)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 80)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 80)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 80)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 80)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 80)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 80)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 80)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 80)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 80)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 80)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 82" Then
 
@@ -11530,7 +14378,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H223B0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 81)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 81)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 81)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 81)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 81)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 81)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 81)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 81)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 81)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 81)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 81)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 83" Then
 
@@ -11626,7 +14509,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H22A10
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 82)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 82)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 82)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 82)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 82)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 82)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 82)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 82)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 82)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 82)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 82)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 84" Then
 
@@ -11722,7 +14640,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H23070
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 83)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 83)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 83)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 83)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 83)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 83)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 83)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 83)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 83)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 83)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 83)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 85" Then
 
@@ -11818,7 +14771,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H236D0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 84)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 84)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 84)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 84)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 84)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 84)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 84)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 84)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 84)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 84)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 84)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 86" Then
 
@@ -11914,7 +14902,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H23D30
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 85)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 85)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 85)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 85)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 85)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 85)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 85)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 85)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 85)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 85)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 85)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 87" Then
 
@@ -12010,7 +15033,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H24390
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 86)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 86)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 86)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 86)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 86)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 86)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 86)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 86)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 86)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 86)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 86)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 88" Then
 
@@ -12106,7 +15164,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H249F0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 87)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 87)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 87)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 87)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 87)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 87)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 87)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 87)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 87)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 87)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 87)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 89" Then
 
@@ -12202,7 +15295,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H25050
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 88)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 88)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 88)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 88)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 88)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 88)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 88)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 88)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 88)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 88)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 88)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 90" Then
 
@@ -12298,7 +15426,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H256B0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 89)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 89)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 89)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 89)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 89)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 89)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 89)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 89)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 89)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 89)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 89)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 91" Then
 
@@ -12394,7 +15557,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H25D10
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 90)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 90)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 90)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 90)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 90)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 90)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 90)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 90)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 90)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 90)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 90)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 92" Then
 
@@ -12490,7 +15688,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H26370
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 91)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 91)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 91)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 91)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 91)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 91)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 91)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 91)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 91)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 91)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 91)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 93" Then
 
@@ -12586,7 +15819,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H269D0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 92)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 92)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 92)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 92)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 92)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 92)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 92)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 92)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 92)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 92)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 92)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 94" Then
 
@@ -12682,7 +15950,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H27030
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 93)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 93)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 93)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 93)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 93)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 93)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 93)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 93)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 93)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 93)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 93)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 95" Then
 
@@ -12778,7 +16081,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H27690
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 94)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 94)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 94)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 94)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 94)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 94)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 94)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 94)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 94)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 94)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 94)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 96" Then
 
@@ -12874,7 +16212,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H27CF0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 95)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 95)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 95)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 95)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 95)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 95)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 95)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 95)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 95)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 95)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 95)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 97" Then
 
@@ -12970,7 +16343,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H28350
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 96)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 96)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 96)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 96)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 96)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 96)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 96)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 96)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 96)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 96)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 96)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 98" Then
 
@@ -13066,7 +16474,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H289B0
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 97)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 97)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 97)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 97)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 97)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 97)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 97)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 97)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 97)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 97)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 97)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 99" Then
 
@@ -13162,7 +16605,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H29010
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 98)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 98)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 98)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 98)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 98)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 98)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 98)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 98)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 98)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 98)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 98)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             If ComboBox1.Text = "Mii 100" Then
 
@@ -13258,7 +16736,42 @@ Public Class Form1
             Label25.Text = "Label25"
             Reader.Position = &H29670
             objdiv = Reader.Position
-            Label26.Text = "Label26"
+                    Label26.Text = "Label26"
+                    Reader.Position = &H2298 + (&H660 * 99)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C + (&H660 * 99)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0 + (&H660 * 99)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2 + (&H660 * 99)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4 + (&H660 * 99)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A8 + (&H660 * 99)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H22AC + (&H660 * 99)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+
+                    Reader.Position = &H1C71 + (&H660 * 99)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0 + (&H660 * 99)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89 + (&H660 * 99)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE + (&H660 * 99)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+
             End If
             End If
 
@@ -13317,7 +16830,6 @@ Public Class Form1
                     eat = Reader.Position
                     Reader.Position = &H2193
                     fullness = Reader.Position
-                    NumericUpDown21.Value = Reader.ReadInt8
                 End If
                 If ComboBox1.Text = "Mii 2" Then
                     Reader.Position = &H1CA0 + &H590
@@ -19283,10 +22795,6 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub Panel2_click(sender As Object, e As EventArgs) Handles Panel2.Click
-        Form7.Show()
-    End Sub
-
     Private Sub NumericUpDown11_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown11.ValueChanged
         If NumericUpDown11.Value = 65535 Then
             PictureBox17.Image = Nothing
@@ -23950,14 +27458,6 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub GroupBox10_MouseMove(sender As Object, e As MouseEventArgs) Handles GroupBox10.MouseMove, CheckBox11.MouseMove, CheckBox10.MouseMove
-
-    End Sub
-
-    Private Sub GroupBox11_MouseMove(sender As Object, e As MouseEventArgs) Handles GroupBox11.MouseMove, CheckBox13.MouseMove, CheckBox12.MouseMove
-
-    End Sub
-
     Private Sub CheckBox31_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox31.CheckedChanged
         If CheckBox31.Checked = True Then
             Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
@@ -23970,7 +27470,108 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub CheckBox32_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox32.CheckedChanged
+    Private Sub Panel2_click(sender As Object, e As EventArgs) Handles Panel2.Click
+        Form7.Show()
+    End Sub
 
+    Private Sub NumericUpDown54_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown54.ValueChanged
+        If NumericUpDown54.Value Mod 2 = 0 Then
+            TextBox1.Text = "On"
+        End If
+        If NumericUpDown54.Value Mod 2 = 1 Then
+            TextBox1.Text = "Off"
+        End If
+    End Sub
+
+    Private Sub NumericUpDown55_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown55.ValueChanged
+        If NumericUpDown55.Value = 0 Then
+            TextBox6.Text = "Don't Allow"
+        End If
+        If NumericUpDown55.Value = 1 Then
+            TextBox6.Text = "Allow"
+        End If
+    End Sub
+
+    Private Sub NumericUpDown56_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown56.ValueChanged
+        If NumericUpDown56.Value = 0 Then
+            ComboBox3.SelectedItem = ComboBox3.Items.Item(0)
+        End If
+        If NumericUpDown56.Value = 1 Then
+            ComboBox3.SelectedItem = ComboBox3.Items.Item(1)
+        End If
+        If NumericUpDown56.Value = 2 Then
+            ComboBox3.SelectedItem = ComboBox3.Items.Item(2)
+        End If
+    End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(0) Then
+            NumericUpDown56.Value = 0
+            PictureBox58.Image = My.Resources.grown_up
+        End If
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(1) Then
+            NumericUpDown56.Value = 1
+            PictureBox58.Image = My.Resources.grown_up
+        End If
+        If ComboBox3.SelectedItem = ComboBox3.Items.Item(2) Then
+            NumericUpDown56.Value = 2
+            PictureBox58.Image = My.Resources.kid
+        End If
+    End Sub
+
+    Private Sub NumericUpDown53_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown53.ValueChanged
+        Select Case NumericUpDown53.Value
+            Case Is <> 83, 17, 22, 23, 29, 30, 1, 67, 26, 7, 71, 10, 11, 12, 14, 32, 33, 38, 41, 45, 111
+                PictureBox57.Image = My.Resources.couleur
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 83, 17
+                PictureBox57.Image = My.Resources.vert
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 22, 23
+                PictureBox57.Image = My.Resources.bleu
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 29, 30
+                PictureBox57.Image = My.Resources.rose
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 1, 67
+                PictureBox57.Image = My.Resources.rouge
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 26
+                PictureBox57.Image = My.Resources.bleu_clair
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 7, 71
+                PictureBox57.Image = My.Resources.orange
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 10, 11
+                PictureBox57.Image = My.Resources.jaune
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 12, 14
+                PictureBox57.Image = My.Resources.vert_clair
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 32, 33
+                PictureBox57.Image = My.Resources.violet
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 38
+                PictureBox57.Image = My.Resources.marron
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 41
+                PictureBox57.Image = My.Resources.blanc
+        End Select
+        Select Case NumericUpDown53.Value
+            Case 45, 111
+                PictureBox57.Image = My.Resources.noir
+        End Select
+        
     End Sub
 End Class
