@@ -121,9 +121,6 @@
   <data name="exp40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp37" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="exp78" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp78.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -136,14 +133,14 @@
   <data name="0f00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0f00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bleu clair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bleu clair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exp45" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exp51" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp89" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp89.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +163,9 @@
   <data name="exp70" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="jaune" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaune.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exp10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,20 +175,17 @@
   <data name="exp1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rouge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rouge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exp75" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="parc1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\parc1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cafen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cafen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="mairn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mairn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exp77" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp77.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="blanc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blanc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="concn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\concn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,32 +193,32 @@
   <data name="0300" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1b00" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1b00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp87" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp87.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp76" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp76.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bleu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bleu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tourn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tourn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp98" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp98.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="appart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="plage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0d00" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0d00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp63.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="parti" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\parti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp69" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp69.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exp48" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp77" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp77.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fontn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fontn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -238,8 +235,11 @@
   <data name="0200" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="orange" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\orange.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exp96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,6 +250,9 @@
   <data name="chapn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chapn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exp53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exp42" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -259,11 +262,14 @@
   <data name="exp71" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp71.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exp12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exp13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="classem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\classem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="magimportn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\magimportn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -280,14 +286,20 @@
   <data name="exp34" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp23" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mairn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mairn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="parc1n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\parc1n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp60" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exp95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fullness estomac75" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fullness estomac75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,44 +310,35 @@
   <data name="exp22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exp81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exp97" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp97.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="exp14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp59" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp59.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="studn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\studn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp44" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="0700" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0700.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp83" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp83.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp93" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp93.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="0e00" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0e00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fullness estomac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fullness estomac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="couleur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\couleur.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="0500" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="0600" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp95" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1300" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1300.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -346,11 +349,14 @@
   <data name="0900" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0900.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="noir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1200.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="0800" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0800.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -358,35 +364,35 @@
   <data name="exp50" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tourn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tourn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="exp91" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp91.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp35" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0e00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0e00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp53" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp93" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp93.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp96" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="broc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\broc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -412,23 +418,17 @@
   <data name="exp39" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp87" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp87.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tomoF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tomoF1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0700" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\0700.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fullness estomacU" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fullness estomacU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="parc1n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\parc1n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="appartn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\appartn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp61" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="studn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\studn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="0400" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0400.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -436,11 +436,17 @@
   <data name="exp92" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp92.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp49" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp83.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marron" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\marron.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp94" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp94.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exp20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -457,6 +463,9 @@
   <data name="exp5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exp0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="exp79" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp79.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -469,6 +478,9 @@
   <data name="exp86" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp86.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="deco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\deco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -478,17 +490,20 @@
   <data name="plagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plagen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exp99" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp99.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tervague" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tervague.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp54" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp54.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp47" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vert" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vert.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="vetn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vetn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -502,14 +517,14 @@
   <data name="1a00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1a00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="exp84" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp84.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="epicern" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\epicern.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exp46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp52" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -517,14 +532,17 @@
   <data name="exp82" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp82.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tomoJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tomoJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="stud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="0d00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0d00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp46" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -535,11 +553,17 @@
   <data name="exp15" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exp49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="decon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\decon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp26" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exp7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="0b00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0b00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -550,8 +574,17 @@
   <data name="cafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cafe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp63" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp63.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exp44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exp74" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp74.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -559,8 +592,8 @@
   <data name="magimport" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\magimport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp99" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp99.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp69" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp69.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1900" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1900.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -577,8 +610,8 @@
   <data name="parc" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\parc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1b00" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1b00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1600" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1600.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -592,17 +625,23 @@
   <data name="exp80" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tomoJ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tomoJ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="fullness estomacU" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fullness estomacU.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp43" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tour" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tour.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exp76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp76.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp85" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp85.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -622,29 +661,29 @@
   <data name="exp67" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp67.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="0c00" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\0c00.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="plage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="vert clair" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vert clair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tervaguen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tervaguen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp90" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp81" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cafen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cafen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tomoF1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tomoF1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="violet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\violet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp74" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp74.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exp14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp8" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -654,6 +693,9 @@
   </data>
   <data name="mais" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mais.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fullness estomac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fullness estomac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="exp68" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\exp68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -670,7 +712,10 @@
   <data name="touri" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\touri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="classem" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\classem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="grown-up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\grown-up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
