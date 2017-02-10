@@ -308,21 +308,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
-    <None Include="Resources\kid.png" />
-    <None Include="Resources\grown-up.png" />
-    <None Include="Resources\couleur.png" />
-    <None Include="Resources\violet.png" />
-    <None Include="Resources\vert.png" />
-    <None Include="Resources\vert clair.png" />
-    <None Include="Resources\rouge.png" />
-    <None Include="Resources\rose.png" />
-    <None Include="Resources\orange.png" />
-    <None Include="Resources\noir.png" />
-    <None Include="Resources\marron.png" />
-    <None Include="Resources\jaune.png" />
-    <None Include="Resources\bleu.png" />
-    <None Include="Resources\bleu clair.png" />
-    <None Include="Resources\blanc.png" />
     <None Include="Resources\classem.png" />
     <None Include="Resources\vetn.png" />
     <None Include="Resources\vet.png" />
