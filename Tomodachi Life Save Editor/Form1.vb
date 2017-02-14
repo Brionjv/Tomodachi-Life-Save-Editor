@@ -111,7 +111,6 @@ Public Class Form1
             GroupBox1.Text = "Argent"
             Label6.Text = "Prénom"
             Label8.Text = "Nom"
-            Label8.Location = New Point(306, 42)
             Label10.Text = "Niv."
             Label9.Text = "Surnom"
             Label2.Text = "Créateur"
@@ -171,6 +170,21 @@ Public Class Form1
             CheckBox29.Text = "Tous les vêtements supprimés"
             CheckBox30.Text = "Réinitialiser StreetPass/Spotpass de Tomodachi Life"
             Label27.Location = New Point(396, 11)
+            Label33.Text = "Couleur favorite"
+            Label34.Text = "Adulte/enfant"
+            Label37.Text = "Relation ''vous réel''"
+            Label35.Text = "Partage"
+            Label36.Text = "Copie"
+            Label30.Text = "Adore / Aime beaucoup"
+            Label31.Text = "Aime bien"
+            Label32.Text = "N'aime pas / Déteste"
+            Label29.Text = "Amoureux(se)"
+            Label28.Text = "Meilleur(e) ami(e)"
+            CheckBox33.Text = "Supprimer"
+            CheckBox34.Text = "Supprimer"
+            ComboBox3.Items.Item(0) = "Adulte"
+            ComboBox3.Items.Item(1) = "Adulte (1)"
+            ComboBox3.Items.Item(2) = "Enfant"
         End If
         If ComboBox11.Text = "EN" Then
             Button1.Text = "Open"
@@ -191,7 +205,6 @@ Public Class Form1
             GroupBox1.Text = "Money"
             Label6.Text = "First Name"
             Label8.Text = "Last Name"
-            Label8.Location = New Point(296, 42)
             Label10.Text = "Lv."
             Label9.Text = "Nickname"
             Label2.Text = "Creator"
@@ -251,6 +264,21 @@ Public Class Form1
             CheckBox29.Text = "All Clothing and colors deleted"
             CheckBox30.Text = "Reset Tomodachi Life StreetPass/SpotPass"
             Label27.Location = New Point(362, 11)
+            Label33.Text = "Favorite color"
+            Label34.Text = "Grown-up/kid"
+            Label37.Text = "Relation to real You"
+            Label35.Text = "Sharing"
+            Label36.Text = "Copying"
+            Label30.Text = "Super All-Time Fav / All-Time Fav"
+            Label31.Text = "Favorite Foods"
+            Label32.Text = "Worst / Worst Ever"
+            Label29.Text = "Sweetheart"
+            Label28.Text = "Best friend"
+            CheckBox33.Text = "Delete"
+            CheckBox34.Text = "Delete"
+            ComboBox3.Items.Item(0) = "Grown-up"
+            ComboBox3.Items.Item(1) = "Grown-up (1)"
+            ComboBox3.Items.Item(2) = "Kid"
         End If
     End Sub
 
@@ -27680,20 +27708,40 @@ Public Class Form1
     End Sub
 
     Private Sub NumericUpDown54_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown54.ValueChanged
-        If NumericUpDown54.Value Mod 2 = 0 Then
-            TextBox1.Text = "On"
+        If ComboBox11.Text = "EN" Then
+            If NumericUpDown54.Value Mod 2 = 0 Then
+                TextBox1.Text = "On"
+            End If
+            If NumericUpDown54.Value Mod 2 = 1 Then
+                TextBox1.Text = "Off"
+            End If
         End If
-        If NumericUpDown54.Value Mod 2 = 1 Then
-            TextBox1.Text = "Off"
+        If ComboBox11.Text = "FR" Then
+            If NumericUpDown54.Value Mod 2 = 0 Then
+                TextBox1.Text = "Oui"
+            End If
+            If NumericUpDown54.Value Mod 2 = 1 Then
+                TextBox1.Text = "Non"
+            End If
         End If
     End Sub
 
     Private Sub NumericUpDown55_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown55.ValueChanged
-        If NumericUpDown55.Value = 0 Then
-            TextBox6.Text = "Don't Allow"
+        If ComboBox11.Text = "EN" Then
+            If NumericUpDown55.Value = 0 Then
+                TextBox6.Text = "Don't Allow"
+            End If
+            If NumericUpDown55.Value = 1 Then
+                TextBox6.Text = "Allow"
+            End If
         End If
-        If NumericUpDown55.Value = 1 Then
-            TextBox6.Text = "Allow"
+        If ComboBox11.Text = "FR" Then
+            If NumericUpDown55.Value = 0 Then
+                TextBox6.Text = "Interdire"
+            End If
+            If NumericUpDown55.Value = 1 Then
+                TextBox6.Text = "Autoriser"
+            End If
         End If
     End Sub
 
@@ -28186,6 +28234,23 @@ Public Class Form1
             ElseIf NumericUpDown57.Value = 99 Then
                 Label38.Text = "apt.1304"
             End If
+        End If
+    End Sub
+
+    Private Sub CheckBox35_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox35.CheckedChanged
+        If CheckBox35.Checked = True Then
+            NumericUpDown53.Visible = True
+            NumericUpDown54.Visible = True
+            NumericUpDown55.Visible = True
+            NumericUpDown56.Visible = True
+            NumericUpDown57.Visible = True
+        End If
+        If CheckBox35.Checked = False Then
+            NumericUpDown53.Visible = False
+            NumericUpDown54.Visible = False
+            NumericUpDown55.Visible = False
+            NumericUpDown56.Visible = False
+            NumericUpDown57.Visible = False
         End If
     End Sub
 End Class

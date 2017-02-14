@@ -285,6 +285,7 @@ Partial Class Form1
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.CheckBox35 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1979,7 +1980,7 @@ Partial Class Form1
         '
         'NumericUpDown57
         '
-        Me.NumericUpDown57.Location = New System.Drawing.Point(408, 138)
+        Me.NumericUpDown57.Location = New System.Drawing.Point(408, 139)
         Me.NumericUpDown57.Maximum = New Decimal(New Integer() {101, 0, 0, 0})
         Me.NumericUpDown57.Name = "NumericUpDown57"
         Me.NumericUpDown57.Size = New System.Drawing.Size(42, 20)
@@ -2007,7 +2008,7 @@ Partial Class Form1
         '
         'NumericUpDown56
         '
-        Me.NumericUpDown56.Location = New System.Drawing.Point(297, 188)
+        Me.NumericUpDown56.Location = New System.Drawing.Point(297, 183)
         Me.NumericUpDown56.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.NumericUpDown56.Name = "NumericUpDown56"
         Me.NumericUpDown56.Size = New System.Drawing.Size(40, 20)
@@ -2017,7 +2018,7 @@ Partial Class Form1
         '
         'NumericUpDown55
         '
-        Me.NumericUpDown55.Location = New System.Drawing.Point(362, 28)
+        Me.NumericUpDown55.Location = New System.Drawing.Point(362, 33)
         Me.NumericUpDown55.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.NumericUpDown55.Name = "NumericUpDown55"
         Me.NumericUpDown55.Size = New System.Drawing.Size(38, 20)
@@ -2027,7 +2028,7 @@ Partial Class Form1
         '
         'NumericUpDown54
         '
-        Me.NumericUpDown54.Location = New System.Drawing.Point(252, 28)
+        Me.NumericUpDown54.Location = New System.Drawing.Point(252, 33)
         Me.NumericUpDown54.Maximum = New Decimal(New Integer() {70000, 0, 0, 0})
         Me.NumericUpDown54.Name = "NumericUpDown54"
         Me.NumericUpDown54.Size = New System.Drawing.Size(38, 20)
@@ -2047,11 +2048,12 @@ Partial Class Form1
         '
         'NumericUpDown53
         '
-        Me.NumericUpDown53.Location = New System.Drawing.Point(205, 167)
+        Me.NumericUpDown53.Location = New System.Drawing.Point(199, 167)
         Me.NumericUpDown53.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.NumericUpDown53.Name = "NumericUpDown53"
         Me.NumericUpDown53.Size = New System.Drawing.Size(37, 20)
         Me.NumericUpDown53.TabIndex = 93
+        Me.NumericUpDown53.Visible = False
         '
         'TextBox6
         '
@@ -2112,7 +2114,7 @@ Partial Class Form1
         'Label34
         '
         Me.Label34.AutoSize = True
-        Me.Label34.Location = New System.Drawing.Point(294, 145)
+        Me.Label34.Location = New System.Drawing.Point(287, 145)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(69, 13)
         Me.Label34.TabIndex = 86
@@ -2121,7 +2123,7 @@ Partial Class Form1
         'Label33
         '
         Me.Label33.AutoSize = True
-        Me.Label33.Location = New System.Drawing.Point(137, 145)
+        Me.Label33.Location = New System.Drawing.Point(136, 145)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(72, 13)
         Me.Label33.TabIndex = 85
@@ -2679,11 +2681,11 @@ Partial Class Form1
         '
         'Label13
         '
-        Me.Label13.AutoSize = True
-        Me.Label13.BackColor = System.Drawing.Color.Transparent
-        Me.Label13.Location = New System.Drawing.Point(301, 30)
+        Me.Label13.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label13.ForeColor = System.Drawing.Color.White
+        Me.Label13.Location = New System.Drawing.Point(301, 25)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(45, 13)
+        Me.Label13.Size = New System.Drawing.Size(102, 13)
         Me.Label13.TabIndex = 61
         Me.Label13.Text = "Fullness"
         '
@@ -3357,6 +3359,19 @@ Partial Class Form1
         Me.Button6.Text = "Save"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'CheckBox35
+        '
+        Me.CheckBox35.AutoSize = True
+        Me.CheckBox35.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox35.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox35.ForeColor = System.Drawing.Color.White
+        Me.CheckBox35.Location = New System.Drawing.Point(211, 372)
+        Me.CheckBox35.Name = "CheckBox35"
+        Me.CheckBox35.Size = New System.Drawing.Size(49, 17)
+        Me.CheckBox35.TabIndex = 103
+        Me.CheckBox35.Text = "Dev"
+        Me.CheckBox35.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3376,6 +3391,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PictureBox30)
+        Me.Controls.Add(Me.CheckBox35)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
@@ -3851,5 +3867,6 @@ Partial Class Form1
     Friend WithEvents NumericUpDown57 As System.Windows.Forms.NumericUpDown
     Friend WithEvents CheckBox34 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox33 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox35 As System.Windows.Forms.CheckBox
 
 End Class
