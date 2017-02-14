@@ -192,6 +192,8 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TabPage11 = New System.Windows.Forms.TabPage()
+        Me.CheckBox34 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox33 = New System.Windows.Forms.CheckBox()
         Me.PictureBox58 = New System.Windows.Forms.PictureBox()
         Me.NumericUpDown52 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown51 = New System.Windows.Forms.NumericUpDown()
@@ -205,8 +207,6 @@ Partial Class Form1
         Me.Label30 = New System.Windows.Forms.Label()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.NumericUpDown20 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown44 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown45 = New System.Windows.Forms.NumericUpDown()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.PictureBox32 = New System.Windows.Forms.PictureBox()
@@ -386,8 +386,6 @@ Partial Class Form1
         CType(Me.NumericUpDown47, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown46, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown44, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown45, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown102, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -477,9 +475,9 @@ Partial Class Form1
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label4.Location = New System.Drawing.Point(6, 374)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(69, 13)
+        Me.Label4.Size = New System.Drawing.Size(76, 13)
         Me.Label4.TabIndex = 28
-        Me.Label4.Text = "Version 2.1.0"
+        Me.Label4.Text = "Version 2.1.0B"
         '
         'LinkLabel1
         '
@@ -1981,12 +1979,13 @@ Partial Class Form1
         '
         'NumericUpDown57
         '
-        Me.NumericUpDown57.Location = New System.Drawing.Point(401, 138)
+        Me.NumericUpDown57.Location = New System.Drawing.Point(408, 138)
         Me.NumericUpDown57.Maximum = New Decimal(New Integer() {101, 0, 0, 0})
         Me.NumericUpDown57.Name = "NumericUpDown57"
-        Me.NumericUpDown57.Size = New System.Drawing.Size(35, 20)
+        Me.NumericUpDown57.Size = New System.Drawing.Size(42, 20)
         Me.NumericUpDown57.TabIndex = 100
-        Me.NumericUpDown57.Value = New Decimal(New Integer() {101, 0, 0, 0})
+        Me.NumericUpDown57.Value = New Decimal(New Integer() {100, 0, 0, 0})
+        Me.NumericUpDown57.Visible = False
         '
         'Label38
         '
@@ -2342,6 +2341,8 @@ Partial Class Form1
         'TabPage11
         '
         Me.TabPage11.BackgroundImage = CType(resources.GetObject("TabPage11.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage11.Controls.Add(Me.CheckBox34)
+        Me.TabPage11.Controls.Add(Me.CheckBox33)
         Me.TabPage11.Controls.Add(Me.PictureBox58)
         Me.TabPage11.Controls.Add(Me.NumericUpDown52)
         Me.TabPage11.Controls.Add(Me.NumericUpDown51)
@@ -2355,8 +2356,6 @@ Partial Class Form1
         Me.TabPage11.Controls.Add(Me.Label30)
         Me.TabPage11.Controls.Add(Me.Label29)
         Me.TabPage11.Controls.Add(Me.NumericUpDown20)
-        Me.TabPage11.Controls.Add(Me.NumericUpDown44)
-        Me.TabPage11.Controls.Add(Me.NumericUpDown45)
         Me.TabPage11.Controls.Add(Me.Label28)
         Me.TabPage11.Controls.Add(Me.Label10)
         Me.TabPage11.Controls.Add(Me.PictureBox32)
@@ -2375,6 +2374,26 @@ Partial Class Form1
         Me.TabPage11.TabIndex = 1
         Me.TabPage11.Text = "Status"
         Me.TabPage11.UseVisualStyleBackColor = True
+        '
+        'CheckBox34
+        '
+        Me.CheckBox34.AutoSize = True
+        Me.CheckBox34.Location = New System.Drawing.Point(348, 130)
+        Me.CheckBox34.Name = "CheckBox34"
+        Me.CheckBox34.Size = New System.Drawing.Size(57, 17)
+        Me.CheckBox34.TabIndex = 102
+        Me.CheckBox34.Text = "Delete"
+        Me.CheckBox34.UseVisualStyleBackColor = True
+        '
+        'CheckBox33
+        '
+        Me.CheckBox33.AutoSize = True
+        Me.CheckBox33.Location = New System.Drawing.Point(348, 95)
+        Me.CheckBox33.Name = "CheckBox33"
+        Me.CheckBox33.Size = New System.Drawing.Size(57, 17)
+        Me.CheckBox33.TabIndex = 101
+        Me.CheckBox33.Text = "Delete"
+        Me.CheckBox33.UseVisualStyleBackColor = True
         '
         'PictureBox58
         '
@@ -2487,12 +2506,13 @@ Partial Class Form1
         '
         'Label29
         '
-        Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(316, 106)
+        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label29.ForeColor = System.Drawing.Color.White
+        Me.Label29.Location = New System.Drawing.Point(345, 79)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(64, 13)
+        Me.Label29.Size = New System.Drawing.Size(101, 13)
         Me.Label29.TabIndex = 89
-        Me.Label29.Text = "friends relat."
+        Me.Label29.Text = "Sweetheart"
         '
         'NumericUpDown20
         '
@@ -2503,28 +2523,15 @@ Partial Class Form1
         Me.NumericUpDown20.TabIndex = 79
         Me.NumericUpDown20.Visible = False
         '
-        'NumericUpDown44
-        '
-        Me.NumericUpDown44.Location = New System.Drawing.Point(386, 104)
-        Me.NumericUpDown44.Name = "NumericUpDown44"
-        Me.NumericUpDown44.Size = New System.Drawing.Size(48, 20)
-        Me.NumericUpDown44.TabIndex = 86
-        '
-        'NumericUpDown45
-        '
-        Me.NumericUpDown45.Location = New System.Drawing.Point(386, 124)
-        Me.NumericUpDown45.Name = "NumericUpDown45"
-        Me.NumericUpDown45.Size = New System.Drawing.Size(48, 20)
-        Me.NumericUpDown45.TabIndex = 87
-        '
         'Label28
         '
-        Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(306, 126)
+        Me.Label28.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label28.ForeColor = System.Drawing.Color.White
+        Me.Label28.Location = New System.Drawing.Point(345, 114)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(74, 13)
+        Me.Label28.Size = New System.Drawing.Size(101, 13)
         Me.Label28.TabIndex = 88
-        Me.Label28.Text = "friends or not?"
+        Me.Label28.Text = "Best Friend"
         '
         'Label10
         '
@@ -2664,7 +2671,7 @@ Partial Class Form1
         '
         'NumericUpDown21
         '
-        Me.NumericUpDown21.Location = New System.Drawing.Point(409, 60)
+        Me.NumericUpDown21.Location = New System.Drawing.Point(409, 58)
         Me.NumericUpDown21.Name = "NumericUpDown21"
         Me.NumericUpDown21.Size = New System.Drawing.Size(38, 20)
         Me.NumericUpDown21.TabIndex = 80
@@ -2716,7 +2723,7 @@ Partial Class Form1
         Me.PictureBox33.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox33.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox33.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.fullness_estomac
-        Me.PictureBox33.Location = New System.Drawing.Point(391, 30)
+        Me.PictureBox33.Location = New System.Drawing.Point(391, 28)
         Me.PictureBox33.Name = "PictureBox33"
         Me.PictureBox33.Size = New System.Drawing.Size(55, 50)
         Me.PictureBox33.TabIndex = 62
@@ -3510,8 +3517,6 @@ Partial Class Form1
         CType(Me.NumericUpDown47, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown46, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown44, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown45, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown102, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
@@ -3813,8 +3818,6 @@ Partial Class Form1
     Friend WithEvents CheckBox31 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox32 As System.Windows.Forms.CheckBox
     Friend WithEvents Label28 As System.Windows.Forms.Label
-    Friend WithEvents NumericUpDown45 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown44 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Label29 As System.Windows.Forms.Label
     Friend WithEvents TabControl3 As System.Windows.Forms.TabControl
     Friend WithEvents TabPage10 As System.Windows.Forms.TabPage
@@ -3846,5 +3849,7 @@ Partial Class Form1
     Friend WithEvents Label38 As System.Windows.Forms.Label
     Friend WithEvents PictureBox59 As System.Windows.Forms.PictureBox
     Friend WithEvents NumericUpDown57 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents CheckBox34 As System.Windows.Forms.CheckBox
+    Friend WithEvents CheckBox33 As System.Windows.Forms.CheckBox
 
 End Class

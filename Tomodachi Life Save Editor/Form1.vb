@@ -5135,7 +5135,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 10)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 10)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 12" Then
 
@@ -5266,6 +5268,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 11)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H22A8 + (&H660 * 11)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
 
             End If
             If ComboBox1.Text = "Mii 13" Then
@@ -5397,6 +5402,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 12)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H22A8 + (&H660 * 12)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
 
             End If
             If ComboBox1.Text = "Mii 14" Then
@@ -5528,7 +5536,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 13)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 13)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 15" Then
 
@@ -5659,7 +5669,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 14)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 14)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 16" Then
 
@@ -5790,7 +5802,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 15)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 15)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 17" Then
 
@@ -5921,7 +5935,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 16)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 16)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 18" Then
 
@@ -6052,7 +6068,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 17)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 17)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 19" Then
 
@@ -6183,7 +6201,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 18)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 18)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 20" Then
 
@@ -6314,7 +6334,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 19)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 19)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 21" Then
 
@@ -6445,7 +6467,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 20)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 20)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 22" Then
 
@@ -6576,7 +6600,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 21)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 21)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 23" Then
 
@@ -6707,7 +6733,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 22)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 22)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 24" Then
 
@@ -6838,7 +6866,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 23)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 23)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 25" Then
 
@@ -6969,7 +6999,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 24)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 24)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 26" Then
 
@@ -7100,7 +7132,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 25)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 25)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 27" Then
 
@@ -7231,7 +7265,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 26)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 26)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 28" Then
 
@@ -7362,7 +7398,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 27)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 27)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 29" Then
 
@@ -7493,7 +7531,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 28)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 28)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 30" Then
 
@@ -7624,7 +7664,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 29)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 29)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 31" Then
 
@@ -7755,7 +7797,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 30)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 30)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 32" Then
 
@@ -7886,7 +7930,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 31)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 31)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 33" Then
 
@@ -8017,7 +8063,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 32)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 32)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 34" Then
 
@@ -8148,7 +8196,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 33)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 33)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 35" Then
 
@@ -8279,7 +8329,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 34)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 34)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 36" Then
 
@@ -8410,7 +8462,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 35)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 35)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 37" Then
 
@@ -8541,7 +8595,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 36)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 36)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 38" Then
 
@@ -8672,7 +8728,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 37)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 37)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 39" Then
 
@@ -8803,7 +8861,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 38)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 38)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 40" Then
 
@@ -8934,7 +8994,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 39)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 39)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 41" Then
 
@@ -9065,7 +9127,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 40)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 40)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 42" Then
 
@@ -9196,7 +9260,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 41)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 41)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 43" Then
 
@@ -9327,7 +9393,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 42)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 42)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 44" Then
 
@@ -9458,7 +9526,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 43)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 43)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 45" Then
 
@@ -9589,7 +9659,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 44)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 44)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 46" Then
 
@@ -9720,7 +9792,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 45)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 45)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 47" Then
 
@@ -9851,7 +9925,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 46)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 46)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 48" Then
 
@@ -9982,7 +10058,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 47)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 47)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 49" Then
 
@@ -10113,7 +10191,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 48)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 48)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 50" Then
 
@@ -10244,7 +10324,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 49)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 49)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 51" Then
 
@@ -10375,7 +10457,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 50)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 50)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 52" Then
 
@@ -10506,7 +10590,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 51)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 51)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 53" Then
 
@@ -10637,7 +10723,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 52)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 52)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 54" Then
 
@@ -10768,7 +10856,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 53)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 53)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 55" Then
 
@@ -10899,7 +10989,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 54)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 54)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 56" Then
 
@@ -11030,7 +11122,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 55)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 55)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 57" Then
 
@@ -11161,7 +11255,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 56)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 56)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 58" Then
 
@@ -11292,7 +11388,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 57)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 57)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 59" Then
 
@@ -11423,7 +11521,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 58)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 58)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 60" Then
 
@@ -11554,7 +11654,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 59)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 59)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 61" Then
 
@@ -11685,7 +11787,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 60)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 60)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 62" Then
 
@@ -11816,7 +11920,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 61)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 61)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 63" Then
 
@@ -11947,7 +12053,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 62)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 62)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 64" Then
 
@@ -12078,7 +12186,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 63)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 63)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 65" Then
 
@@ -12209,7 +12319,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 64)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 64)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 66" Then
 
@@ -12340,7 +12452,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 65)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 65)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 67" Then
 
@@ -12471,7 +12585,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 66)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 66)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 68" Then
 
@@ -12602,7 +12718,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 67)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 67)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 69" Then
 
@@ -12733,7 +12851,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 68)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 68)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 70" Then
 
@@ -12864,7 +12984,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 69)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 69)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 71" Then
 
@@ -12995,7 +13117,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 70)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 70)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 72" Then
 
@@ -13126,7 +13250,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 71)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 71)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 73" Then
 
@@ -13257,7 +13383,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 72)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 72)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 74" Then
 
@@ -13388,7 +13516,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 73)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 73)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 75" Then
 
@@ -13519,7 +13649,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 74)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 74)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 76" Then
 
@@ -13650,7 +13782,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 75)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 75)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 77" Then
 
@@ -13781,7 +13915,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 76)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 76)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 78" Then
 
@@ -13912,7 +14048,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 77)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 77)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 79" Then
 
@@ -14043,7 +14181,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 78)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 78)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 80" Then
 
@@ -14174,7 +14314,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 79)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 79)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 81" Then
 
@@ -14305,7 +14447,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 80)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 80)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 82" Then
 
@@ -14436,7 +14580,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 81)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 81)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 83" Then
 
@@ -14567,7 +14713,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 82)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 82)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 84" Then
 
@@ -14698,7 +14846,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 83)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 83)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 85" Then
 
@@ -14829,7 +14979,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 84)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 84)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 86" Then
 
@@ -14960,7 +15112,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 85)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 85)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 87" Then
 
@@ -15091,7 +15245,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 86)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 86)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 88" Then
 
@@ -15222,7 +15378,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 87)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 87)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 89" Then
 
@@ -15353,7 +15511,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 88)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 88)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 90" Then
 
@@ -15484,7 +15644,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 89)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 89)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 91" Then
 
@@ -15615,7 +15777,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 90)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 90)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 92" Then
 
@@ -15746,7 +15910,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 91)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 91)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 93" Then
 
@@ -15877,7 +16043,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 92)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 92)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 94" Then
 
@@ -16008,7 +16176,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 93)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 93)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 95" Then
 
@@ -16139,7 +16309,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 94)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 94)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 96" Then
 
@@ -16270,7 +16442,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 95)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 95)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 97" Then
 
@@ -16401,7 +16575,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 96)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 96)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 98" Then
 
@@ -16532,7 +16708,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 97)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 97)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 99" Then
 
@@ -16663,7 +16841,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 98)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 98)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             If ComboBox1.Text = "Mii 100" Then
 
@@ -16794,7 +16974,9 @@ Public Class Form1
                     Reader.Position = &H22AE + (&H660 * 99)
                     grow = Reader.Position
                     NumericUpDown56.Value = Reader.ReadInt8
-
+                    Reader.Position = &H22A8 + (&H660 * 99)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
             End If
             End If
 
@@ -27544,263 +27726,466 @@ Public Class Form1
 
     Private Sub NumericUpDown53_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown53.ValueChanged
         Select Case NumericUpDown53.Value
-            Case Is <> 83, 17, 22, 23, 29, 30, 1, 67, 26, 7, 71, 10, 11, 12, 14, 32, 33, 38, 41, 45, 111
+            Case Is <> 83, 17, 19, 16, 18, 22, 23, 20, 21, 29, 30, 28, 31, 1, 67, 3, 2, 0, 26, 24, 89, 25, 7, 71, 4, 5, 6, 10, 11, 8, 9, 12, 14, 13, 15, 32, 33, 34, 35, 38, 37, 39, 41, 42, 40, 43, 45, 111, 47, 44, 46
                 PictureBox57.Image = My.Resources.couleur
         End Select
         Select Case NumericUpDown53.Value
-            Case 83, 17
+            Case 83, 17, 19, 16, 18
                 PictureBox57.Image = My.Resources.vert
         End Select
         Select Case NumericUpDown53.Value
-            Case 22, 23
+            Case 22, 23, 20, 21
                 PictureBox57.Image = My.Resources.bleu
         End Select
         Select Case NumericUpDown53.Value
-            Case 29, 30
+            Case 29, 30, 28, 31
                 PictureBox57.Image = My.Resources.rose
         End Select
         Select Case NumericUpDown53.Value
-            Case 1, 67
+            Case 1, 67, 3, 2, 0
                 PictureBox57.Image = My.Resources.rouge
         End Select
         Select Case NumericUpDown53.Value
-            Case 26
+            Case 26, 24, 89, 25
                 PictureBox57.Image = My.Resources.bleu_clair
         End Select
         Select Case NumericUpDown53.Value
-            Case 7, 71
+            Case 7, 71, 4, 5, 6
                 PictureBox57.Image = My.Resources.orange
         End Select
         Select Case NumericUpDown53.Value
-            Case 10, 11
+            Case 10, 11, 8, 9
                 PictureBox57.Image = My.Resources.jaune
         End Select
         Select Case NumericUpDown53.Value
-            Case 12, 14
+            Case 12, 14, 13, 15
                 PictureBox57.Image = My.Resources.vert_clair
         End Select
         Select Case NumericUpDown53.Value
-            Case 32, 33
+            Case 32, 33, 34, 35
                 PictureBox57.Image = My.Resources.violet
         End Select
         Select Case NumericUpDown53.Value
-            Case 38
+            Case 38, 37, 39
                 PictureBox57.Image = My.Resources.marron
         End Select
         Select Case NumericUpDown53.Value
-            Case 41
+            Case 41, 42, 40, 43
                 PictureBox57.Image = My.Resources.blanc
         End Select
         Select Case NumericUpDown53.Value
-            Case 45, 111
+            Case 45, 111, 47, 44, 46
                 PictureBox57.Image = My.Resources.noir
         End Select
         
     End Sub
 
     Private Sub NumericUpDown57_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown57.ValueChanged
-        If NumericUpDown57.Value = 0 Then
-            Label38.Text = "app.101"
-        ElseIf NumericUpDown57.Value = 1 Then
-            Label38.Text = "app.102"
-        ElseIf NumericUpDown57.Value = 2 Then
-            Label38.Text = "app.103"
-        ElseIf NumericUpDown57.Value = 3 Then
-            Label38.Text = "app.104"
-        ElseIf NumericUpDown57.Value = 4 Then
-            Label38.Text = "app.105"
-        ElseIf NumericUpDown57.Value = 5 Then
-            Label38.Text = "app.106"
-        ElseIf NumericUpDown57.Value = 6 Then
-            Label38.Text = "app.107"
-        ElseIf NumericUpDown57.Value = 7 Then
-            Label38.Text = "app.108"
-        ElseIf NumericUpDown57.Value = 8 Then
-            Label38.Text = "app.109"
-        ElseIf NumericUpDown57.Value = 9 Then
-            Label38.Text = "app.110"
-        ElseIf NumericUpDown57.Value = 10 Then
-            Label38.Text = "app.111"
-        ElseIf NumericUpDown57.Value = 11 Then
-            Label38.Text = "app.112"
-        ElseIf NumericUpDown57.Value = 12 Then
-            Label38.Text = "app.113"
-        ElseIf NumericUpDown57.Value = 13 Then
-            Label38.Text = "app.114"
-        ElseIf NumericUpDown57.Value = 14 Then
-            Label38.Text = "app.115"
-        ElseIf NumericUpDown57.Value = 15 Then
-            Label38.Text = "app.116"
-        ElseIf NumericUpDown57.Value = 16 Then
-            Label38.Text = "app.117"
-        ElseIf NumericUpDown57.Value = 17 Then
-            Label38.Text = "app.118"
-        ElseIf NumericUpDown57.Value = 18 Then
-            Label38.Text = "app.119"
-        ElseIf NumericUpDown57.Value = 19 Then
-            Label38.Text = "app.120"
-        ElseIf NumericUpDown57.Value = 20 Then
-            Label38.Text = "app.121"
-        ElseIf NumericUpDown57.Value = 21 Then
-            Label38.Text = "app.122"
-        ElseIf NumericUpDown57.Value = 22 Then
-            Label38.Text = "app.123"
-        ElseIf NumericUpDown57.Value = 23 Then
-            Label38.Text = "app.124"
-        ElseIf NumericUpDown57.Value = 24 Then
-            Label38.Text = "app.125"
-        ElseIf NumericUpDown57.Value = 25 Then
-            Label38.Text = "app.126"
-        ElseIf NumericUpDown57.Value = 26 Then
-            Label38.Text = "app.127"
-        ElseIf NumericUpDown57.Value = 27 Then
-            Label38.Text = "app.128"
-        ElseIf NumericUpDown57.Value = 28 Then
-            Label38.Text = "app.129"
-        ElseIf NumericUpDown57.Value = 29 Then
-            Label38.Text = "app.130"
-        ElseIf NumericUpDown57.Value = 30 Then
-            Label38.Text = "app.131"
-        ElseIf NumericUpDown57.Value = 31 Then
-            Label38.Text = "app.132"
-        ElseIf NumericUpDown57.Value = 32 Then
-            Label38.Text = "app.133"
-        ElseIf NumericUpDown57.Value = 33 Then
-            Label38.Text = "app.134"
-        ElseIf NumericUpDown57.Value = 34 Then
-            Label38.Text = "app.135"
-        ElseIf NumericUpDown57.Value = 35 Then
-            Label38.Text = "app.136"
-        ElseIf NumericUpDown57.Value = 36 Then
-            Label38.Text = "app.137"
-        ElseIf NumericUpDown57.Value = 37 Then
-            Label38.Text = "app.138"
-        ElseIf NumericUpDown57.Value = 38 Then
-            Label38.Text = "app.139"
-        ElseIf NumericUpDown57.Value = 39 Then
-            Label38.Text = "app.140"
-        ElseIf NumericUpDown57.Value = 40 Then
-            Label38.Text = "app.141"
-        ElseIf NumericUpDown57.Value = 41 Then
-            Label38.Text = "app.142"
-        ElseIf NumericUpDown57.Value = 42 Then
-            Label38.Text = "app.143"
-        ElseIf NumericUpDown57.Value = 43 Then
-            Label38.Text = "app.144"
-        ElseIf NumericUpDown57.Value = 44 Then
-            Label38.Text = "app.145"
-        ElseIf NumericUpDown57.Value = 45 Then
-            Label38.Text = "app.146"
-        ElseIf NumericUpDown57.Value = 46 Then
-            Label38.Text = "app.147"
-        ElseIf NumericUpDown57.Value = 47 Then
-            Label38.Text = "app.148"
-        ElseIf NumericUpDown57.Value = 48 Then
-            Label38.Text = "app.149"
-        ElseIf NumericUpDown57.Value = 49 Then
-            Label38.Text = "app.150"
-        ElseIf NumericUpDown57.Value = 50 Then
-            Label38.Text = "app.151"
-        ElseIf NumericUpDown57.Value = 51 Then
-            Label38.Text = "app.152"
-        ElseIf NumericUpDown57.Value = 52 Then
-            Label38.Text = "app.153"
-        ElseIf NumericUpDown57.Value = 53 Then
-            Label38.Text = "app.154"
-        ElseIf NumericUpDown57.Value = 54 Then
-            Label38.Text = "app.155"
-        ElseIf NumericUpDown57.Value = 55 Then
-            Label38.Text = "app.156"
-        ElseIf NumericUpDown57.Value = 56 Then
-            Label38.Text = "app.157"
-        ElseIf NumericUpDown57.Value = 57 Then
-            Label38.Text = "app.158"
-        ElseIf NumericUpDown57.Value = 58 Then
-            Label38.Text = "app.159"
-        ElseIf NumericUpDown57.Value = 59 Then
-            Label38.Text = "app.160"
-        ElseIf NumericUpDown57.Value = 60 Then
-            Label38.Text = "app.161"
-        ElseIf NumericUpDown57.Value = 61 Then
-            Label38.Text = "app.162"
-        ElseIf NumericUpDown57.Value = 62 Then
-            Label38.Text = "app.163"
-        ElseIf NumericUpDown57.Value = 63 Then
-            Label38.Text = "app.164"
-        ElseIf NumericUpDown57.Value = 64 Then
-            Label38.Text = "app.165"
-        ElseIf NumericUpDown57.Value = 65 Then
-            Label38.Text = "app.166"
-        ElseIf NumericUpDown57.Value = 66 Then
-            Label38.Text = "app.167"
-        ElseIf NumericUpDown57.Value = 67 Then
-            Label38.Text = "app.168"
-        ElseIf NumericUpDown57.Value = 68 Then
-            Label38.Text = "app.169"
-        ElseIf NumericUpDown57.Value = 69 Then
-            Label38.Text = "app.170"
-        ElseIf NumericUpDown57.Value = 70 Then
-            Label38.Text = "app.171"
-        ElseIf NumericUpDown57.Value = 71 Then
-            Label38.Text = "app.172"
-        ElseIf NumericUpDown57.Value = 72 Then
-            Label38.Text = "app.173"
-        ElseIf NumericUpDown57.Value = 73 Then
-            Label38.Text = "app.174"
-        ElseIf NumericUpDown57.Value = 74 Then
-            Label38.Text = "app.175"
-        ElseIf NumericUpDown57.Value = 75 Then
-            Label38.Text = "app.176"
-        ElseIf NumericUpDown57.Value = 76 Then
-            Label38.Text = "app.177"
-        ElseIf NumericUpDown57.Value = 77 Then
-            Label38.Text = "app.178"
-        ElseIf NumericUpDown57.Value = 78 Then
-            Label38.Text = "app.179"
-        ElseIf NumericUpDown57.Value = 79 Then
-            Label38.Text = "app.180"
-        ElseIf NumericUpDown57.Value = 80 Then
-            Label38.Text = "app.181"
-        ElseIf NumericUpDown57.Value = 81 Then
-            Label38.Text = "app.182"
-        ElseIf NumericUpDown57.Value = 82 Then
-            Label38.Text = "app.183"
-        ElseIf NumericUpDown57.Value = 83 Then
-            Label38.Text = "app.184"
-        ElseIf NumericUpDown57.Value = 84 Then
-            Label38.Text = "app.185"
-        ElseIf NumericUpDown57.Value = 85 Then
-            Label38.Text = "app.186"
-        ElseIf NumericUpDown57.Value = 86 Then
-            Label38.Text = "app.187"
-        ElseIf NumericUpDown57.Value = 87 Then
-            Label38.Text = "app.188"
-        ElseIf NumericUpDown57.Value = 88 Then
-            Label38.Text = "app.189"
-        ElseIf NumericUpDown57.Value = 89 Then
-            Label38.Text = "app.190"
-        ElseIf NumericUpDown57.Value = 90 Then
-            Label38.Text = "app.191"
-        ElseIf NumericUpDown57.Value = 91 Then
-            Label38.Text = "app.192"
-        ElseIf NumericUpDown57.Value = 92 Then
-            Label38.Text = "app.193"
-        ElseIf NumericUpDown57.Value = 93 Then
-            Label38.Text = "app.194"
-        ElseIf NumericUpDown57.Value = 94 Then
-            Label38.Text = "app.195"
-        ElseIf NumericUpDown57.Value = 95 Then
-            Label38.Text = "app.196"
-        ElseIf NumericUpDown57.Value = 96 Then
-            Label38.Text = "app.197"
-        ElseIf NumericUpDown57.Value = 97 Then
-            Label38.Text = "app.198"
-        ElseIf NumericUpDown57.Value = 98 Then
-            Label38.Text = "app.199"
-        ElseIf NumericUpDown57.Value = 99 Then
-            Label38.Text = "app.200"
-        ElseIf NumericUpDown57.Value = 100 Then
-            Label38.Text = "app.201"
+        If ComboBox11.Text = "FR" Then
+            If NumericUpDown57.Value = 0 Then
+                Label38.Text = "app.101"
+            ElseIf NumericUpDown57.Value = 1 Then
+                Label38.Text = "app.102"
+            ElseIf NumericUpDown57.Value = 2 Then
+                Label38.Text = "app.103"
+            ElseIf NumericUpDown57.Value = 3 Then
+                Label38.Text = "app.104"
+            ElseIf NumericUpDown57.Value = 4 Then
+                Label38.Text = "app.105"
+            ElseIf NumericUpDown57.Value = 5 Then
+                Label38.Text = "app.106"
+            ElseIf NumericUpDown57.Value = 6 Then
+                Label38.Text = "app.107"
+            ElseIf NumericUpDown57.Value = 7 Then
+                Label38.Text = "app.108"
+            ElseIf NumericUpDown57.Value = 8 Then
+                Label38.Text = "app.201"
+            ElseIf NumericUpDown57.Value = 9 Then
+                Label38.Text = "app.202"
+            ElseIf NumericUpDown57.Value = 10 Then
+                Label38.Text = "app.203"
+            ElseIf NumericUpDown57.Value = 11 Then
+                Label38.Text = "app.204"
+            ElseIf NumericUpDown57.Value = 12 Then
+                Label38.Text = "app.205"
+            ElseIf NumericUpDown57.Value = 13 Then
+                Label38.Text = "app.206"
+            ElseIf NumericUpDown57.Value = 14 Then
+                Label38.Text = "app.207"
+            ElseIf NumericUpDown57.Value = 15 Then
+                Label38.Text = "app.208"
+            ElseIf NumericUpDown57.Value = 16 Then
+                Label38.Text = "app.301"
+            ElseIf NumericUpDown57.Value = 17 Then
+                Label38.Text = "app.302"
+            ElseIf NumericUpDown57.Value = 18 Then
+                Label38.Text = "app.303"
+            ElseIf NumericUpDown57.Value = 19 Then
+                Label38.Text = "app.304"
+            ElseIf NumericUpDown57.Value = 20 Then
+                Label38.Text = "app.305"
+            ElseIf NumericUpDown57.Value = 21 Then
+                Label38.Text = "app.306"
+            ElseIf NumericUpDown57.Value = 22 Then
+                Label38.Text = "app.307"
+            ElseIf NumericUpDown57.Value = 23 Then
+                Label38.Text = "app.308"
+            ElseIf NumericUpDown57.Value = 24 Then
+                Label38.Text = "app.401"
+            ElseIf NumericUpDown57.Value = 25 Then
+                Label38.Text = "app.402"
+            ElseIf NumericUpDown57.Value = 26 Then
+                Label38.Text = "app.403"
+            ElseIf NumericUpDown57.Value = 27 Then
+                Label38.Text = "app.404"
+            ElseIf NumericUpDown57.Value = 28 Then
+                Label38.Text = "app.405"
+            ElseIf NumericUpDown57.Value = 29 Then
+                Label38.Text = "app.406"
+            ElseIf NumericUpDown57.Value = 30 Then
+                Label38.Text = "app.407"
+            ElseIf NumericUpDown57.Value = 31 Then
+                Label38.Text = "app.408"
+            ElseIf NumericUpDown57.Value = 32 Then
+                Label38.Text = "app.501"
+            ElseIf NumericUpDown57.Value = 33 Then
+                Label38.Text = "app.502"
+            ElseIf NumericUpDown57.Value = 34 Then
+                Label38.Text = "app.503"
+            ElseIf NumericUpDown57.Value = 35 Then
+                Label38.Text = "app.504"
+            ElseIf NumericUpDown57.Value = 36 Then
+                Label38.Text = "app.505"
+            ElseIf NumericUpDown57.Value = 37 Then
+                Label38.Text = "app.506"
+            ElseIf NumericUpDown57.Value = 38 Then
+                Label38.Text = "app.507"
+            ElseIf NumericUpDown57.Value = 39 Then
+                Label38.Text = "app.508"
+            ElseIf NumericUpDown57.Value = 40 Then
+                Label38.Text = "app.601"
+            ElseIf NumericUpDown57.Value = 41 Then
+                Label38.Text = "app.602"
+            ElseIf NumericUpDown57.Value = 42 Then
+                Label38.Text = "app.603"
+            ElseIf NumericUpDown57.Value = 43 Then
+                Label38.Text = "app.604"
+            ElseIf NumericUpDown57.Value = 44 Then
+                Label38.Text = "app.605"
+            ElseIf NumericUpDown57.Value = 45 Then
+                Label38.Text = "app.606"
+            ElseIf NumericUpDown57.Value = 46 Then
+                Label38.Text = "app.607"
+            ElseIf NumericUpDown57.Value = 47 Then
+                Label38.Text = "app.608"
+            ElseIf NumericUpDown57.Value = 48 Then
+                Label38.Text = "app.701"
+            ElseIf NumericUpDown57.Value = 49 Then
+                Label38.Text = "app.702"
+            ElseIf NumericUpDown57.Value = 50 Then
+                Label38.Text = "app.703"
+            ElseIf NumericUpDown57.Value = 51 Then
+                Label38.Text = "app.704"
+            ElseIf NumericUpDown57.Value = 52 Then
+                Label38.Text = "app.705"
+            ElseIf NumericUpDown57.Value = 53 Then
+                Label38.Text = "app.706"
+            ElseIf NumericUpDown57.Value = 54 Then
+                Label38.Text = "app.707"
+            ElseIf NumericUpDown57.Value = 55 Then
+                Label38.Text = "app.708"
+            ElseIf NumericUpDown57.Value = 56 Then
+                Label38.Text = "app.801"
+            ElseIf NumericUpDown57.Value = 57 Then
+                Label38.Text = "app.802"
+            ElseIf NumericUpDown57.Value = 58 Then
+                Label38.Text = "app.803"
+            ElseIf NumericUpDown57.Value = 59 Then
+                Label38.Text = "app.804"
+            ElseIf NumericUpDown57.Value = 60 Then
+                Label38.Text = "app.805"
+            ElseIf NumericUpDown57.Value = 61 Then
+                Label38.Text = "app.806"
+            ElseIf NumericUpDown57.Value = 62 Then
+                Label38.Text = "app.807"
+            ElseIf NumericUpDown57.Value = 63 Then
+                Label38.Text = "app.808"
+            ElseIf NumericUpDown57.Value = 64 Then
+                Label38.Text = "app.901"
+            ElseIf NumericUpDown57.Value = 65 Then
+                Label38.Text = "app.902"
+            ElseIf NumericUpDown57.Value = 66 Then
+                Label38.Text = "app.903"
+            ElseIf NumericUpDown57.Value = 67 Then
+                Label38.Text = "app.904"
+            ElseIf NumericUpDown57.Value = 68 Then
+                Label38.Text = "app.905"
+            ElseIf NumericUpDown57.Value = 69 Then
+                Label38.Text = "app.906"
+            ElseIf NumericUpDown57.Value = 70 Then
+                Label38.Text = "app.907"
+            ElseIf NumericUpDown57.Value = 71 Then
+                Label38.Text = "app.908"
+            ElseIf NumericUpDown57.Value = 72 Then
+                Label38.Text = "app.1001"
+            ElseIf NumericUpDown57.Value = 73 Then
+                Label38.Text = "app.1002"
+            ElseIf NumericUpDown57.Value = 74 Then
+                Label38.Text = "app.1003"
+            ElseIf NumericUpDown57.Value = 75 Then
+                Label38.Text = "app.1004"
+            ElseIf NumericUpDown57.Value = 76 Then
+                Label38.Text = "app.1005"
+            ElseIf NumericUpDown57.Value = 77 Then
+                Label38.Text = "app.1006"
+            ElseIf NumericUpDown57.Value = 78 Then
+                Label38.Text = "app.1007"
+            ElseIf NumericUpDown57.Value = 79 Then
+                Label38.Text = "app.1008"
+            ElseIf NumericUpDown57.Value = 80 Then
+                Label38.Text = "app.1101"
+            ElseIf NumericUpDown57.Value = 81 Then
+                Label38.Text = "app.1102"
+            ElseIf NumericUpDown57.Value = 82 Then
+                Label38.Text = "app.1103"
+            ElseIf NumericUpDown57.Value = 83 Then
+                Label38.Text = "app.1104"
+            ElseIf NumericUpDown57.Value = 84 Then
+                Label38.Text = "app.1105"
+            ElseIf NumericUpDown57.Value = 85 Then
+                Label38.Text = "app.1106"
+            ElseIf NumericUpDown57.Value = 86 Then
+                Label38.Text = "app.1107"
+            ElseIf NumericUpDown57.Value = 87 Then
+                Label38.Text = "app.1108"
+            ElseIf NumericUpDown57.Value = 88 Then
+                Label38.Text = "app.1201"
+            ElseIf NumericUpDown57.Value = 89 Then
+                Label38.Text = "app.1202"
+            ElseIf NumericUpDown57.Value = 90 Then
+                Label38.Text = "app.1203"
+            ElseIf NumericUpDown57.Value = 91 Then
+                Label38.Text = "app.1204"
+            ElseIf NumericUpDown57.Value = 92 Then
+                Label38.Text = "app.1205"
+            ElseIf NumericUpDown57.Value = 93 Then
+                Label38.Text = "app.1206"
+            ElseIf NumericUpDown57.Value = 94 Then
+                Label38.Text = "app.1207"
+            ElseIf NumericUpDown57.Value = 95 Then
+                Label38.Text = "app.1208"
+            ElseIf NumericUpDown57.Value = 96 Then
+                Label38.Text = "app.1301"
+            ElseIf NumericUpDown57.Value = 97 Then
+                Label38.Text = "app.1302"
+            ElseIf NumericUpDown57.Value = 98 Then
+                Label38.Text = "app.1303"
+            ElseIf NumericUpDown57.Value = 99 Then
+                Label38.Text = "app.1304"
+            End If
+        End If
+        If ComboBox11.Text = "EN" Then
+            If NumericUpDown57.Value = 0 Then
+                Label38.Text = "apt.101"
+            ElseIf NumericUpDown57.Value = 1 Then
+                Label38.Text = "apt.102"
+            ElseIf NumericUpDown57.Value = 2 Then
+                Label38.Text = "apt.103"
+            ElseIf NumericUpDown57.Value = 3 Then
+                Label38.Text = "apt.104"
+            ElseIf NumericUpDown57.Value = 4 Then
+                Label38.Text = "apt.105"
+            ElseIf NumericUpDown57.Value = 5 Then
+                Label38.Text = "apt.106"
+            ElseIf NumericUpDown57.Value = 6 Then
+                Label38.Text = "apt.107"
+            ElseIf NumericUpDown57.Value = 7 Then
+                Label38.Text = "apt.108"
+            ElseIf NumericUpDown57.Value = 8 Then
+                Label38.Text = "apt.201"
+            ElseIf NumericUpDown57.Value = 9 Then
+                Label38.Text = "apt.202"
+            ElseIf NumericUpDown57.Value = 10 Then
+                Label38.Text = "apt.203"
+            ElseIf NumericUpDown57.Value = 11 Then
+                Label38.Text = "apt.204"
+            ElseIf NumericUpDown57.Value = 12 Then
+                Label38.Text = "apt.205"
+            ElseIf NumericUpDown57.Value = 13 Then
+                Label38.Text = "apt.206"
+            ElseIf NumericUpDown57.Value = 14 Then
+                Label38.Text = "apt.207"
+            ElseIf NumericUpDown57.Value = 15 Then
+                Label38.Text = "apt.208"
+            ElseIf NumericUpDown57.Value = 16 Then
+                Label38.Text = "apt.301"
+            ElseIf NumericUpDown57.Value = 17 Then
+                Label38.Text = "apt.302"
+            ElseIf NumericUpDown57.Value = 18 Then
+                Label38.Text = "apt.303"
+            ElseIf NumericUpDown57.Value = 19 Then
+                Label38.Text = "apt.304"
+            ElseIf NumericUpDown57.Value = 20 Then
+                Label38.Text = "apt.305"
+            ElseIf NumericUpDown57.Value = 21 Then
+                Label38.Text = "apt.306"
+            ElseIf NumericUpDown57.Value = 22 Then
+                Label38.Text = "apt.307"
+            ElseIf NumericUpDown57.Value = 23 Then
+                Label38.Text = "apt.308"
+            ElseIf NumericUpDown57.Value = 24 Then
+                Label38.Text = "apt.401"
+            ElseIf NumericUpDown57.Value = 25 Then
+                Label38.Text = "apt.402"
+            ElseIf NumericUpDown57.Value = 26 Then
+                Label38.Text = "apt.403"
+            ElseIf NumericUpDown57.Value = 27 Then
+                Label38.Text = "apt.404"
+            ElseIf NumericUpDown57.Value = 28 Then
+                Label38.Text = "apt.405"
+            ElseIf NumericUpDown57.Value = 29 Then
+                Label38.Text = "apt.406"
+            ElseIf NumericUpDown57.Value = 30 Then
+                Label38.Text = "apt.407"
+            ElseIf NumericUpDown57.Value = 31 Then
+                Label38.Text = "apt.408"
+            ElseIf NumericUpDown57.Value = 32 Then
+                Label38.Text = "apt.501"
+            ElseIf NumericUpDown57.Value = 33 Then
+                Label38.Text = "apt.502"
+            ElseIf NumericUpDown57.Value = 34 Then
+                Label38.Text = "apt.503"
+            ElseIf NumericUpDown57.Value = 35 Then
+                Label38.Text = "apt.504"
+            ElseIf NumericUpDown57.Value = 36 Then
+                Label38.Text = "apt.505"
+            ElseIf NumericUpDown57.Value = 37 Then
+                Label38.Text = "apt.506"
+            ElseIf NumericUpDown57.Value = 38 Then
+                Label38.Text = "apt.507"
+            ElseIf NumericUpDown57.Value = 39 Then
+                Label38.Text = "apt.508"
+            ElseIf NumericUpDown57.Value = 40 Then
+                Label38.Text = "apt.601"
+            ElseIf NumericUpDown57.Value = 41 Then
+                Label38.Text = "apt.602"
+            ElseIf NumericUpDown57.Value = 42 Then
+                Label38.Text = "apt.603"
+            ElseIf NumericUpDown57.Value = 43 Then
+                Label38.Text = "apt.604"
+            ElseIf NumericUpDown57.Value = 44 Then
+                Label38.Text = "apt.605"
+            ElseIf NumericUpDown57.Value = 45 Then
+                Label38.Text = "apt.606"
+            ElseIf NumericUpDown57.Value = 46 Then
+                Label38.Text = "apt.607"
+            ElseIf NumericUpDown57.Value = 47 Then
+                Label38.Text = "apt.608"
+            ElseIf NumericUpDown57.Value = 48 Then
+                Label38.Text = "apt.701"
+            ElseIf NumericUpDown57.Value = 49 Then
+                Label38.Text = "apt.702"
+            ElseIf NumericUpDown57.Value = 50 Then
+                Label38.Text = "apt.703"
+            ElseIf NumericUpDown57.Value = 51 Then
+                Label38.Text = "apt.704"
+            ElseIf NumericUpDown57.Value = 52 Then
+                Label38.Text = "apt.705"
+            ElseIf NumericUpDown57.Value = 53 Then
+                Label38.Text = "apt.706"
+            ElseIf NumericUpDown57.Value = 54 Then
+                Label38.Text = "apt.707"
+            ElseIf NumericUpDown57.Value = 55 Then
+                Label38.Text = "apt.708"
+            ElseIf NumericUpDown57.Value = 56 Then
+                Label38.Text = "apt.801"
+            ElseIf NumericUpDown57.Value = 57 Then
+                Label38.Text = "apt.802"
+            ElseIf NumericUpDown57.Value = 58 Then
+                Label38.Text = "apt.803"
+            ElseIf NumericUpDown57.Value = 59 Then
+                Label38.Text = "apt.804"
+            ElseIf NumericUpDown57.Value = 60 Then
+                Label38.Text = "apt.805"
+            ElseIf NumericUpDown57.Value = 61 Then
+                Label38.Text = "apt.806"
+            ElseIf NumericUpDown57.Value = 62 Then
+                Label38.Text = "apt.807"
+            ElseIf NumericUpDown57.Value = 63 Then
+                Label38.Text = "apt.808"
+            ElseIf NumericUpDown57.Value = 64 Then
+                Label38.Text = "apt.901"
+            ElseIf NumericUpDown57.Value = 65 Then
+                Label38.Text = "apt.902"
+            ElseIf NumericUpDown57.Value = 66 Then
+                Label38.Text = "apt.903"
+            ElseIf NumericUpDown57.Value = 67 Then
+                Label38.Text = "apt.904"
+            ElseIf NumericUpDown57.Value = 68 Then
+                Label38.Text = "apt.905"
+            ElseIf NumericUpDown57.Value = 69 Then
+                Label38.Text = "apt.906"
+            ElseIf NumericUpDown57.Value = 70 Then
+                Label38.Text = "apt.907"
+            ElseIf NumericUpDown57.Value = 71 Then
+                Label38.Text = "apt.908"
+            ElseIf NumericUpDown57.Value = 72 Then
+                Label38.Text = "apt.1001"
+            ElseIf NumericUpDown57.Value = 73 Then
+                Label38.Text = "apt.1002"
+            ElseIf NumericUpDown57.Value = 74 Then
+                Label38.Text = "apt.1003"
+            ElseIf NumericUpDown57.Value = 75 Then
+                Label38.Text = "apt.1004"
+            ElseIf NumericUpDown57.Value = 76 Then
+                Label38.Text = "apt.1005"
+            ElseIf NumericUpDown57.Value = 77 Then
+                Label38.Text = "apt.1006"
+            ElseIf NumericUpDown57.Value = 78 Then
+                Label38.Text = "apt.1007"
+            ElseIf NumericUpDown57.Value = 79 Then
+                Label38.Text = "apt.1008"
+            ElseIf NumericUpDown57.Value = 80 Then
+                Label38.Text = "apt.1101"
+            ElseIf NumericUpDown57.Value = 81 Then
+                Label38.Text = "apt.1102"
+            ElseIf NumericUpDown57.Value = 82 Then
+                Label38.Text = "apt.1103"
+            ElseIf NumericUpDown57.Value = 83 Then
+                Label38.Text = "apt.1104"
+            ElseIf NumericUpDown57.Value = 84 Then
+                Label38.Text = "apt.1105"
+            ElseIf NumericUpDown57.Value = 85 Then
+                Label38.Text = "apt.1106"
+            ElseIf NumericUpDown57.Value = 86 Then
+                Label38.Text = "apt.1107"
+            ElseIf NumericUpDown57.Value = 87 Then
+                Label38.Text = "apt.1108"
+            ElseIf NumericUpDown57.Value = 88 Then
+                Label38.Text = "apt.1201"
+            ElseIf NumericUpDown57.Value = 89 Then
+                Label38.Text = "apt.1202"
+            ElseIf NumericUpDown57.Value = 90 Then
+                Label38.Text = "apt.1203"
+            ElseIf NumericUpDown57.Value = 91 Then
+                Label38.Text = "apt.1204"
+            ElseIf NumericUpDown57.Value = 92 Then
+                Label38.Text = "apt.1205"
+            ElseIf NumericUpDown57.Value = 93 Then
+                Label38.Text = "apt.1206"
+            ElseIf NumericUpDown57.Value = 94 Then
+                Label38.Text = "apt.1207"
+            ElseIf NumericUpDown57.Value = 95 Then
+                Label38.Text = "apt.1208"
+            ElseIf NumericUpDown57.Value = 96 Then
+                Label38.Text = "apt.1301"
+            ElseIf NumericUpDown57.Value = 97 Then
+                Label38.Text = "apt.1302"
+            ElseIf NumericUpDown57.Value = 98 Then
+                Label38.Text = "apt.1303"
+            ElseIf NumericUpDown57.Value = 99 Then
+                Label38.Text = "apt.1304"
+            End If
         End If
     End Sub
 End Class
