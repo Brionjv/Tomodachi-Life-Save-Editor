@@ -3813,10 +3813,10 @@ Public Class Form1
                     Reader.Position = &H22A4
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8
+                    Reader.Position = &H229E
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC
+                    Reader.Position = &H229A
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
                     Reader.Position = &H1C71
@@ -3946,10 +3946,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + &H660
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + &H660
+                    Reader.Position = &H229E + &H660
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + &H660
+                    Reader.Position = &H229A + &H660
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -4080,10 +4080,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 2)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 2)
+                    Reader.Position = &H229E + (&H660 * 2)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 2)
+                    Reader.Position = &H229A + (&H660 * 2)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -4213,10 +4213,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 3)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 3)
+                    Reader.Position = &H229E + (&H660 * 3)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 3)
+                    Reader.Position = &H229A + (&H660 * 3)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -4346,10 +4346,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 4)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 4)
+                    Reader.Position = &H229E + (&H660 * 4)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 4)
+                    Reader.Position = &H229A + (&H660 * 4)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -4479,10 +4479,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 5)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 5)
+                    Reader.Position = &H229E + (&H660 * 5)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 5)
+                    Reader.Position = &H229A + (&H660 * 5)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -4612,10 +4612,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 6)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 6)
+                    Reader.Position = &H229E + (&H660 * 6)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 6)
+                    Reader.Position = &H229A + (&H660 * 6)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -4745,10 +4745,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 7)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 7)
+                    Reader.Position = &H229E + (&H660 * 7)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 7)
+                    Reader.Position = &H229A + (&H660 * 7)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -4878,10 +4878,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 8)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 8)
+                    Reader.Position = &H229E + (&H660 * 8)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 8)
+                    Reader.Position = &H229A + (&H660 * 8)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -5011,10 +5011,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 9)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 9)
+                    Reader.Position = &H229E + (&H660 * 9)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 9)
+                    Reader.Position = &H229A + (&H660 * 9)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -5144,10 +5144,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 10)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 10)
+                    Reader.Position = &H229E + (&H660 * 10)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 10)
+                    Reader.Position = &H229A + (&H660 * 10)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -5277,10 +5277,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 11)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 11)
+                    Reader.Position = &H229E + (&H660 * 11)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 11)
+                    Reader.Position = &H229A + (&H660 * 11)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -5411,10 +5411,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 12)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 12)
+                    Reader.Position = &H229E + (&H660 * 12)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 12)
+                    Reader.Position = &H229A + (&H660 * 12)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -5545,10 +5545,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 13)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 13)
+                    Reader.Position = &H229E + (&H660 * 13)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 13)
+                    Reader.Position = &H229A + (&H660 * 13)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -5678,10 +5678,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 14)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 14)
+                    Reader.Position = &H229E + (&H660 * 14)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 14)
+                    Reader.Position = &H229A + (&H660 * 14)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -5811,10 +5811,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 15)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 15)
+                    Reader.Position = &H229E + (&H660 * 15)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 15)
+                    Reader.Position = &H229A + (&H660 * 15)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -5944,10 +5944,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 16)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 16)
+                    Reader.Position = &H229E + (&H660 * 16)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 16)
+                    Reader.Position = &H229A + (&H660 * 16)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -6077,10 +6077,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 17)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 17)
+                    Reader.Position = &H229E + (&H660 * 17)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 17)
+                    Reader.Position = &H229A + (&H660 * 17)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -6210,10 +6210,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 18)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 18)
+                    Reader.Position = &H229E + (&H660 * 18)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 18)
+                    Reader.Position = &H229A + (&H660 * 18)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -6343,10 +6343,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 19)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 19)
+                    Reader.Position = &H229E + (&H660 * 19)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 19)
+                    Reader.Position = &H229A + (&H660 * 19)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -6476,10 +6476,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 20)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 20)
+                    Reader.Position = &H229E + (&H660 * 20)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 20)
+                    Reader.Position = &H229A + (&H660 * 20)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -6609,10 +6609,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 21)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 21)
+                    Reader.Position = &H229E + (&H660 * 21)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 21)
+                    Reader.Position = &H229A + (&H660 * 21)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -6742,10 +6742,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 22)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 22)
+                    Reader.Position = &H229E + (&H660 * 22)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 22)
+                    Reader.Position = &H229A + (&H660 * 22)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -6875,10 +6875,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 23)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 23)
+                    Reader.Position = &H229E + (&H660 * 23)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 23)
+                    Reader.Position = &H229A + (&H660 * 23)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -7008,10 +7008,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 24)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 24)
+                    Reader.Position = &H229E + (&H660 * 24)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 24)
+                    Reader.Position = &H229A + (&H660 * 24)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -7141,10 +7141,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 25)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 25)
+                    Reader.Position = &H229E + (&H660 * 25)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 25)
+                    Reader.Position = &H229A + (&H660 * 25)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -7274,10 +7274,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 26)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 26)
+                    Reader.Position = &H229E + (&H660 * 26)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 26)
+                    Reader.Position = &H229A + (&H660 * 26)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -7407,10 +7407,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 27)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 27)
+                    Reader.Position = &H229E + (&H660 * 27)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 27)
+                    Reader.Position = &H229A + (&H660 * 27)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -7540,10 +7540,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 28)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 28)
+                    Reader.Position = &H229E + (&H660 * 28)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 28)
+                    Reader.Position = &H229A + (&H660 * 28)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -7673,10 +7673,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 29)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 29)
+                    Reader.Position = &H229E + (&H660 * 29)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 29)
+                    Reader.Position = &H229A + (&H660 * 29)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -7806,10 +7806,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 30)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 30)
+                    Reader.Position = &H229E + (&H660 * 30)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 30)
+                    Reader.Position = &H229A + (&H660 * 30)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -7939,10 +7939,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 31)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 31)
+                    Reader.Position = &H229E + (&H660 * 31)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 31)
+                    Reader.Position = &H229A + (&H660 * 31)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -8072,10 +8072,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 32)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 32)
+                    Reader.Position = &H229E + (&H660 * 32)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 32)
+                    Reader.Position = &H229A + (&H660 * 32)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -8205,10 +8205,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 33)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 33)
+                    Reader.Position = &H229E + (&H660 * 33)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 33)
+                    Reader.Position = &H229A + (&H660 * 33)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -8338,10 +8338,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 34)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 34)
+                    Reader.Position = &H229E + (&H660 * 34)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 34)
+                    Reader.Position = &H229A + (&H660 * 34)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -8471,10 +8471,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 35)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 35)
+                    Reader.Position = &H229E + (&H660 * 35)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 35)
+                    Reader.Position = &H229A + (&H660 * 35)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -8604,10 +8604,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 36)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 36)
+                    Reader.Position = &H229E + (&H660 * 36)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 36)
+                    Reader.Position = &H229A + (&H660 * 36)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -8737,10 +8737,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 37)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 37)
+                    Reader.Position = &H229E + (&H660 * 37)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 37)
+                    Reader.Position = &H229A + (&H660 * 37)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -8870,10 +8870,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 38)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 38)
+                    Reader.Position = &H229E + (&H660 * 38)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 38)
+                    Reader.Position = &H229A + (&H660 * 38)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -9003,10 +9003,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 39)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 39)
+                    Reader.Position = &H229E + (&H660 * 39)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 39)
+                    Reader.Position = &H229A + (&H660 * 39)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -9136,10 +9136,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 40)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 40)
+                    Reader.Position = &H229E + (&H660 * 40)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 40)
+                    Reader.Position = &H229A + (&H660 * 40)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -9269,10 +9269,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 41)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 41)
+                    Reader.Position = &H229E + (&H660 * 41)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 41)
+                    Reader.Position = &H229A + (&H660 * 41)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -9402,10 +9402,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 42)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 42)
+                    Reader.Position = &H229E + (&H660 * 42)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 42)
+                    Reader.Position = &H229A + (&H660 * 42)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -9535,10 +9535,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 43)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 43)
+                    Reader.Position = &H229E + (&H660 * 43)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 43)
+                    Reader.Position = &H229A + (&H660 * 43)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -9668,10 +9668,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 44)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 44)
+                    Reader.Position = &H229E + (&H660 * 44)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 44)
+                    Reader.Position = &H229A + (&H660 * 44)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -9801,10 +9801,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 45)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 45)
+                    Reader.Position = &H229E + (&H660 * 45)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 45)
+                    Reader.Position = &H229A + (&H660 * 45)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -9934,10 +9934,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 46)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 46)
+                    Reader.Position = &H229E + (&H660 * 46)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 46)
+                    Reader.Position = &H229A + (&H660 * 46)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -10067,10 +10067,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 47)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 47)
+                    Reader.Position = &H229E + (&H660 * 47)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 47)
+                    Reader.Position = &H229A + (&H660 * 47)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -10200,10 +10200,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 48)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 48)
+                    Reader.Position = &H229E + (&H660 * 48)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 48)
+                    Reader.Position = &H229A + (&H660 * 48)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -10333,10 +10333,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 49)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 49)
+                    Reader.Position = &H229E + (&H660 * 49)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 49)
+                    Reader.Position = &H229A + (&H660 * 49)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -10466,10 +10466,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 50)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 50)
+                    Reader.Position = &H229E + (&H660 * 50)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 50)
+                    Reader.Position = &H229A + (&H660 * 50)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -10599,10 +10599,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 51)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 51)
+                    Reader.Position = &H229E + (&H660 * 51)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 51)
+                    Reader.Position = &H229A + (&H660 * 51)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -10732,10 +10732,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 52)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 52)
+                    Reader.Position = &H229E + (&H660 * 52)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 52)
+                    Reader.Position = &H229A + (&H660 * 52)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -10865,10 +10865,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 53)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 53)
+                    Reader.Position = &H229E + (&H660 * 53)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 53)
+                    Reader.Position = &H229A + (&H660 * 53)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -10998,10 +10998,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 54)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 54)
+                    Reader.Position = &H229E + (&H660 * 54)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 54)
+                    Reader.Position = &H229A + (&H660 * 54)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -11131,10 +11131,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 55)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 55)
+                    Reader.Position = &H229E + (&H660 * 55)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 55)
+                    Reader.Position = &H229A + (&H660 * 55)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -11264,10 +11264,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 56)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 56)
+                    Reader.Position = &H229E + (&H660 * 56)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 56)
+                    Reader.Position = &H229A + (&H660 * 56)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -11397,10 +11397,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 57)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 57)
+                    Reader.Position = &H229E + (&H660 * 57)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 57)
+                    Reader.Position = &H229A + (&H660 * 57)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -11530,10 +11530,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 58)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 58)
+                    Reader.Position = &H229E + (&H660 * 58)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 58)
+                    Reader.Position = &H229A + (&H660 * 58)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -11663,10 +11663,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 59)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 59)
+                    Reader.Position = &H229E + (&H660 * 59)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 59)
+                    Reader.Position = &H229A + (&H660 * 59)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -11796,10 +11796,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 60)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 60)
+                    Reader.Position = &H229E + (&H660 * 60)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 60)
+                    Reader.Position = &H229A + (&H660 * 60)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -11929,10 +11929,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 61)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 61)
+                    Reader.Position = &H229E + (&H660 * 61)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 61)
+                    Reader.Position = &H229A + (&H660 * 61)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -12062,10 +12062,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 62)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 62)
+                    Reader.Position = &H229E + (&H660 * 62)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 62)
+                    Reader.Position = &H229A + (&H660 * 62)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -12195,10 +12195,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 63)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 63)
+                    Reader.Position = &H229E + (&H660 * 63)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 63)
+                    Reader.Position = &H229A + (&H660 * 63)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -12328,10 +12328,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 64)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 64)
+                    Reader.Position = &H229E + (&H660 * 64)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 64)
+                    Reader.Position = &H229A + (&H660 * 64)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -12461,10 +12461,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 65)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 65)
+                    Reader.Position = &H229E + (&H660 * 65)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 65)
+                    Reader.Position = &H229A + (&H660 * 65)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -12594,10 +12594,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 66)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 66)
+                    Reader.Position = &H229E + (&H660 * 66)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 66)
+                    Reader.Position = &H229A + (&H660 * 66)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -12727,10 +12727,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 67)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 67)
+                    Reader.Position = &H229E + (&H660 * 67)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 67)
+                    Reader.Position = &H229A + (&H660 * 67)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -12860,10 +12860,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 68)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 68)
+                    Reader.Position = &H229E + (&H660 * 68)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 68)
+                    Reader.Position = &H229A + (&H660 * 68)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -12993,10 +12993,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 69)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 69)
+                    Reader.Position = &H229E + (&H660 * 69)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 69)
+                    Reader.Position = &H229A + (&H660 * 69)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -13126,10 +13126,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 70)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 70)
+                    Reader.Position = &H229E + (&H660 * 70)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 70)
+                    Reader.Position = &H229A + (&H660 * 70)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -13259,10 +13259,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 71)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 71)
+                    Reader.Position = &H229E + (&H660 * 71)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 71)
+                    Reader.Position = &H229A + (&H660 * 71)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -13392,10 +13392,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 72)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 72)
+                    Reader.Position = &H229E + (&H660 * 72)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 72)
+                    Reader.Position = &H229A + (&H660 * 72)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -13525,10 +13525,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 73)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 73)
+                    Reader.Position = &H229E + (&H660 * 73)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 73)
+                    Reader.Position = &H229A + (&H660 * 73)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -13658,10 +13658,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 74)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 74)
+                    Reader.Position = &H229E + (&H660 * 74)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 74)
+                    Reader.Position = &H229A + (&H660 * 74)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -13791,10 +13791,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 75)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 75)
+                    Reader.Position = &H229E + (&H660 * 75)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 75)
+                    Reader.Position = &H229A + (&H660 * 75)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -13924,10 +13924,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 76)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 76)
+                    Reader.Position = &H229E + (&H660 * 76)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 76)
+                    Reader.Position = &H229A + (&H660 * 76)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -14057,10 +14057,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 77)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 77)
+                    Reader.Position = &H229E + (&H660 * 77)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 77)
+                    Reader.Position = &H229A + (&H660 * 77)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -14190,10 +14190,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 78)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 78)
+                    Reader.Position = &H229E + (&H660 * 78)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 78)
+                    Reader.Position = &H229A + (&H660 * 78)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -14323,10 +14323,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 79)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 79)
+                    Reader.Position = &H229E + (&H660 * 79)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 79)
+                    Reader.Position = &H229A + (&H660 * 79)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -14456,10 +14456,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 80)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 80)
+                    Reader.Position = &H229E + (&H660 * 80)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 80)
+                    Reader.Position = &H229A + (&H660 * 80)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -14589,10 +14589,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 81)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 81)
+                    Reader.Position = &H229E + (&H660 * 81)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 81)
+                    Reader.Position = &H229A + (&H660 * 81)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -14722,10 +14722,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 82)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 82)
+                    Reader.Position = &H229E + (&H660 * 82)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 82)
+                    Reader.Position = &H229A + (&H660 * 82)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -14855,10 +14855,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 83)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 83)
+                    Reader.Position = &H229E + (&H660 * 83)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 83)
+                    Reader.Position = &H229A + (&H660 * 83)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -14988,10 +14988,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 84)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 84)
+                    Reader.Position = &H229E + (&H660 * 84)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 84)
+                    Reader.Position = &H229A + (&H660 * 84)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -15121,10 +15121,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 85)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 85)
+                    Reader.Position = &H229E + (&H660 * 85)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 85)
+                    Reader.Position = &H229A + (&H660 * 85)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -15254,10 +15254,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 86)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 86)
+                    Reader.Position = &H229E + (&H660 * 86)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 86)
+                    Reader.Position = &H229A + (&H660 * 86)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -15387,10 +15387,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 87)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 87)
+                    Reader.Position = &H229E + (&H660 * 87)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 87)
+                    Reader.Position = &H229A + (&H660 * 87)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -15520,10 +15520,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 88)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 88)
+                    Reader.Position = &H229E + (&H660 * 88)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 88)
+                    Reader.Position = &H229A + (&H660 * 88)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -15653,10 +15653,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 89)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 89)
+                    Reader.Position = &H229E + (&H660 * 89)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 89)
+                    Reader.Position = &H229A + (&H660 * 89)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -15786,10 +15786,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 90)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 90)
+                    Reader.Position = &H229E + (&H660 * 90)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 90)
+                    Reader.Position = &H229A + (&H660 * 90)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -15919,10 +15919,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 91)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 91)
+                    Reader.Position = &H229E + (&H660 * 91)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 91)
+                    Reader.Position = &H229A + (&H660 * 91)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -16052,10 +16052,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 92)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 92)
+                    Reader.Position = &H229E + (&H660 * 92)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 92)
+                    Reader.Position = &H229A + (&H660 * 92)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -16185,10 +16185,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 93)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 93)
+                    Reader.Position = &H229E + (&H660 * 93)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 93)
+                    Reader.Position = &H229A + (&H660 * 93)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -16318,10 +16318,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 94)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 94)
+                    Reader.Position = &H229E + (&H660 * 94)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 94)
+                    Reader.Position = &H229A + (&H660 * 94)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -16451,10 +16451,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 95)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 95)
+                    Reader.Position = &H229E + (&H660 * 95)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 95)
+                    Reader.Position = &H229A + (&H660 * 95)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -16584,10 +16584,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 96)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 96)
+                    Reader.Position = &H229E + (&H660 * 96)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 96)
+                    Reader.Position = &H229A + (&H660 * 96)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -16717,10 +16717,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 97)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 97)
+                    Reader.Position = &H229E + (&H660 * 97)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 97)
+                    Reader.Position = &H229A + (&H660 * 97)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -16850,10 +16850,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 98)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 98)
+                    Reader.Position = &H229E + (&H660 * 98)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 98)
+                    Reader.Position = &H229A + (&H660 * 98)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -16983,10 +16983,10 @@ Public Class Form1
                     Reader.Position = &H22A4 + (&H660 * 99)
                     fav3 = Reader.Position
                     NumericUpDown50.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A8 + (&H660 * 99)
+                    Reader.Position = &H229E + (&H660 * 99)
                     worst = Reader.Position
                     NumericUpDown51.Value = Reader.ReadUInt16
-                    Reader.Position = &H22AC + (&H660 * 99)
+                    Reader.Position = &H229A + (&H660 * 99)
                     worst2 = Reader.Position
                     NumericUpDown52.Value = Reader.ReadUInt16
 
@@ -17058,11 +17058,47 @@ Public Class Form1
                     Reader.Position = &H2166
                     objet8 = Reader.Position
                     NumericUpDown15.Value = Reader.ReadUInt16
-
                     Reader.Position = &H2172
                     eat = Reader.Position
                     Reader.Position = &H2193
                     fullness = Reader.Position
+                    NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
                 End If
                 If ComboBox1.Text = "Mii 2" Then
                     Reader.Position = &H1CA0 + &H590
@@ -17121,6 +17157,42 @@ Public Class Form1
                     Reader.Position = &H2193 + &H590
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + &H590
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + &H590
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + &H590
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + &H590
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + &H590
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + &H590
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + &H590
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + &H590
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + &H590
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + &H590
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + &H590
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + &H590
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
                 End If
                 If ComboBox1.Text = "Mii 3" Then
                     Reader.Position = &H1CA0 + (&H590 * 2)
@@ -27774,7 +27846,7 @@ Public Class Form1
 
     Private Sub NumericUpDown53_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown53.ValueChanged
         Select Case NumericUpDown53.Value
-            Case Is <> 83, 17, 19, 16, 18, 22, 23, 20, 21, 29, 30, 28, 31, 1, 67, 3, 2, 0, 26, 24, 89, 25, 7, 71, 4, 5, 6, 10, 11, 8, 9, 12, 14, 13, 15, 32, 33, 34, 35, 38, 37, 39, 41, 42, 40, 43, 45, 111, 47, 44, 46
+            Case Is <> 83, 17, 19, 16, 18, 22, 23, 36, 20, 21, 29, 30, 28, 31, 1, 67, 3, 2, 0, 26, 24, 89, 25, 7, 71, 4, 5, 6, 10, 11, 8, 9, 12, 14, 13, 15, 32, 33, 34, 35, 38, 37, 39, 41, 42, 40, 43, 45, 111, 47, 44, 46, 86, 93, 27
                 PictureBox57.Image = My.Resources.couleur
         End Select
         Select Case NumericUpDown53.Value
@@ -27782,11 +27854,11 @@ Public Class Form1
                 PictureBox57.Image = My.Resources.vert
         End Select
         Select Case NumericUpDown53.Value
-            Case 22, 23, 20, 21
+            Case 22, 23, 20, 21, 86
                 PictureBox57.Image = My.Resources.bleu
         End Select
         Select Case NumericUpDown53.Value
-            Case 29, 30, 28, 31
+            Case 29, 30, 28, 31, 93
                 PictureBox57.Image = My.Resources.rose
         End Select
         Select Case NumericUpDown53.Value
@@ -27794,7 +27866,7 @@ Public Class Form1
                 PictureBox57.Image = My.Resources.rouge
         End Select
         Select Case NumericUpDown53.Value
-            Case 26, 24, 89, 25
+            Case 26, 24, 89, 25, 27
                 PictureBox57.Image = My.Resources.bleu_clair
         End Select
         Select Case NumericUpDown53.Value
@@ -27814,7 +27886,7 @@ Public Class Form1
                 PictureBox57.Image = My.Resources.violet
         End Select
         Select Case NumericUpDown53.Value
-            Case 38, 37, 39
+            Case 38, 37, 39, 36
                 PictureBox57.Image = My.Resources.marron
         End Select
         Select Case NumericUpDown53.Value

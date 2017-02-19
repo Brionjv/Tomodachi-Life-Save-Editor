@@ -474,11 +474,11 @@ Partial Class Form1
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(6, 374)
+        Me.Label4.Location = New System.Drawing.Point(2, 374)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(76, 13)
+        Me.Label4.Size = New System.Drawing.Size(77, 13)
         Me.Label4.TabIndex = 28
-        Me.Label4.Text = "Version 2.1.0B"
+        Me.Label4.Text = "Beta ver. 2.1.0"
         '
         'LinkLabel1
         '
@@ -486,7 +486,7 @@ Partial Class Form1
         Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
         Me.LinkLabel1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.LinkLabel1.LinkColor = System.Drawing.SystemColors.ControlLightLight
-        Me.LinkLabel1.Location = New System.Drawing.Point(419, 374)
+        Me.LinkLabel1.Location = New System.Drawing.Point(427, 374)
         Me.LinkLabel1.Name = "LinkLabel1"
         Me.LinkLabel1.Size = New System.Drawing.Size(39, 13)
         Me.LinkLabel1.TabIndex = 27
@@ -1946,6 +1946,7 @@ Partial Class Form1
         Me.TabPage10.Controls.Add(Me.Label37)
         Me.TabPage10.Controls.Add(Me.PictureBox57)
         Me.TabPage10.Controls.Add(Me.Label36)
+        Me.TabPage10.Controls.Add(Me.CheckBox35)
         Me.TabPage10.Controls.Add(Me.Label35)
         Me.TabPage10.Controls.Add(Me.Label34)
         Me.TabPage10.Controls.Add(Me.Label33)
@@ -2380,6 +2381,7 @@ Partial Class Form1
         'CheckBox34
         '
         Me.CheckBox34.AutoSize = True
+        Me.CheckBox34.Enabled = False
         Me.CheckBox34.Location = New System.Drawing.Point(348, 130)
         Me.CheckBox34.Name = "CheckBox34"
         Me.CheckBox34.Size = New System.Drawing.Size(57, 17)
@@ -2390,6 +2392,7 @@ Partial Class Form1
         'CheckBox33
         '
         Me.CheckBox33.AutoSize = True
+        Me.CheckBox33.Enabled = False
         Me.CheckBox33.Location = New System.Drawing.Point(348, 95)
         Me.CheckBox33.Name = "CheckBox33"
         Me.CheckBox33.Size = New System.Drawing.Size(57, 17)
@@ -3364,8 +3367,8 @@ Partial Class Form1
         Me.CheckBox35.AutoSize = True
         Me.CheckBox35.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox35.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox35.ForeColor = System.Drawing.Color.White
-        Me.CheckBox35.Location = New System.Drawing.Point(211, 372)
+        Me.CheckBox35.ForeColor = System.Drawing.Color.Black
+        Me.CheckBox35.Location = New System.Drawing.Point(203, 202)
         Me.CheckBox35.Name = "CheckBox35"
         Me.CheckBox35.Size = New System.Drawing.Size(49, 17)
         Me.CheckBox35.TabIndex = 103
@@ -3391,7 +3394,6 @@ Partial Class Form1
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PictureBox30)
-        Me.Controls.Add(Me.CheckBox35)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
