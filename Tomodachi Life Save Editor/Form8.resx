@@ -128,31 +128,6 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>Auteur : Brion
-
-Programmation du programme:
-xmojo20 (jeuxvideo.com)
-DaBlackDeath (gbatemp.net)
-
-Testeur du programme : 
-Noahkiq (gbatemp.net)
-tous les membres (gbatemp.net) qui ont trouvés des erreurs
-
-Fonctionnalités du programme :
-haunty (gbatemp.net)
-tous les membres (gbatemp.net) qui ont envoyés leur sauvegarde
-tous les membres (gbatemp.net) qui ont donnés des idées de mise à jour
-
-Langue Anglais : 
-Brion
-
-Langue Français : 
-Brion
-
-
-Visual Basic 2010 - Visual Studio 2012</value>
-  </data>
   <data name="Label2.Text" xml:space="preserve">
     <value>Author : Brion
 
@@ -171,8 +146,35 @@ all users (gbatemp.net) who gave idea for update
 
 English language : 
 Brion
+colt05 (gbatemp.net)
 
 French language : 
+Brion
+
+
+Visual Basic 2010 - Visual Studio 2012</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Auteur : Brion
+
+Programmation du programme:
+xmojo20 (jeuxvideo.com)
+DaBlackDeath (gbatemp.net)
+
+Testeur du programme : 
+Noahkiq (gbatemp.net)
+tous les membres (gbatemp.net) qui ont trouvés des erreurs
+
+Fonctionnalités du programme :
+haunty (gbatemp.net)
+tous les membres (gbatemp.net) qui ont envoyés leur sauvegarde
+tous les membres (gbatemp.net) qui ont donnés des idées de mise à jour
+
+Langue Anglais : 
+Brion
+colt05 (gbatemp.net)
+
+Langue Français : 
 Brion
 
 

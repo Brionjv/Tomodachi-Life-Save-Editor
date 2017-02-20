@@ -35,9 +35,9 @@ Partial Class Form3
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.Location = New System.Drawing.Point(99, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(136, 36)
+        Me.Label1.Size = New System.Drawing.Size(131, 36)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "An error has occurred" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Load a save before"
+        Me.Label1.Text = "An error has occured" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Load a save first"
         Me.Label1.UseCompatibleTextRendering = True
         '
         'Form3
@@ -46,7 +46,7 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(334, 84)
+        Me.ClientSize = New System.Drawing.Size(330, 80)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
         Me.Cursor = System.Windows.Forms.Cursors.Hand

@@ -290,7 +290,7 @@ Public Class Form1
         Label12.Visible = True
         Label12.Text = Label11.Text
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click for edit Island's name pronunciation"
+            Label17.Text = "Click to edit the island's name pronunciation"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer la prononciation du nom de l'île"
@@ -335,7 +335,7 @@ Public Class Form1
 
     Private Sub PictureBox32_MouseMove(sender As Object, e As EventArgs) Handles PictureBox32.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click for edit Mii's experience"
+            Label17.Text = "Click to edit the Mii's experience"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer l'expérience des Mii"
@@ -349,7 +349,7 @@ Public Class Form1
 
     Private Sub PictureBox35_MouseMove(sender As Object, e As EventArgs) Handles PictureBox35.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click for edit Mii's catchphrase"
+            Label17.Text = "Click to edit the Mii's catchphrase"
             Label5.Text = "Catchphrase"
         End If
         If ComboBox11.Text = "FR" Then
@@ -367,7 +367,7 @@ Public Class Form1
 
     Private Sub PictureBox3_MouseMove(sender As Object, e As EventArgs) Handles PictureBox3.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click for edit Mii's first name pronunciation"
+            Label17.Text = "Click to edit the Mii's first name pronunciation"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer la prononciation du prénom des Mii"
@@ -384,7 +384,7 @@ Public Class Form1
 
     Private Sub PictureBox5_MouseMove(sender As Object, e As EventArgs) Handles PictureBox5.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click for edit Mii's last name pronunciation"
+            Label17.Text = "Click to edit the Mii's last name pronunciation"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer la prononciation du nom des Mii"
@@ -417,7 +417,7 @@ Public Class Form1
 
     Private Sub Panel2_MouseMove(sender As Object, e As EventArgs) Handles Panel2.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click for edit Mii's gifts"
+            Label17.Text = "Click to edit the Mii's gifts"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer les objets des Mii"
@@ -431,7 +431,7 @@ Public Class Form1
 
     Private Sub PictureBox33_MouseMove(sender As Object, e As EventArgs) Handles PictureBox33.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click for edit Mii's fullness if they have already eaten"
+            Label17.Text = "Click to edit the Mii's fullness if they have already eaten"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer l'estomac des Mii si ils ont déjà mangé"
@@ -459,7 +459,7 @@ Public Class Form1
 
     Private Sub Button4_MouseMove(sender As Object, e As EventArgs) Handles Button4.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click for edit Mii's inventory"
+            Label17.Text = "Click to edit the Mii's inventory"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer l'inventaire des Mii"
@@ -515,7 +515,7 @@ Public Class Form1
 
     Private Sub LinkLabel1_MouseMove(sender As Object, e As EventArgs) Handles LinkLabel1.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click for see credits"
+            Label17.Text = "Click to see the credits"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour voir les crédits"
@@ -529,7 +529,7 @@ Public Class Form1
 
     Private Sub GroupBox10_MouseMove(sender As Object, e As EventArgs) Handles GroupBox10.MouseMove, CheckBox10.MouseMove, CheckBox11.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Check for repair EU/JP save file"
+            Label17.Text = "Select to repair the EU/JP save file"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cochez pour réparer une sauvegarde EU/JP"
@@ -543,7 +543,7 @@ Public Class Form1
 
     Private Sub GroupBox11_MouseMove(sender As Object, e As EventArgs) Handles GroupBox11.MouseMove, CheckBox12.MouseMove, CheckBox13.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Check for repair US/JP save file"
+            Label17.Text = "Select to repair the US/JP save file"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cochez pour réparer une sauvegarde US/JP"
@@ -572,7 +572,7 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim open As New OpenFileDialog
         If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "                    Open savedataArc.txt" & vbNewLine & "                Backup your save before use" & vbNewLine & "                 Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "                    Open savedataArc.txt" & vbNewLine & "               Backup your save before using" & vbNewLine & "                 Tomodachi Life Save Editor"
             fdialog.Label1.Location = New Point(3, 24)
             fdialog.ShowDialog()
         End If
@@ -707,7 +707,7 @@ Public Class Form1
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim open As New OpenFileDialog
         If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "                    Open savedataArc.txt" & vbNewLine & "                Backup your save before use" & vbNewLine & "                 Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "                    Open savedataArc.txt" & vbNewLine & "              Backup your save before use" & vbNewLine & "                 Tomodachi Life Save Editor"
             fdialog.Label1.Location = New Point(3, 24)
             fdialog.ShowDialog()
         End If
@@ -927,7 +927,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                   An error has occurred"
+                fdialog.Label1.Text = "                   An error has occured"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -1022,7 +1022,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                   An error has occurred"
+                fdialog.Label1.Text = "                   An error has occured"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -1053,7 +1053,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -1077,7 +1077,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -1101,7 +1101,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -1147,7 +1147,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -1171,7 +1171,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -1195,7 +1195,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -2084,7 +2084,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -2249,7 +2249,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -2658,7 +2658,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -3644,7 +3644,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -22838,7 +22838,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -22993,7 +22993,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                   An error has occurred"
+                fdialog.Label1.Text = "                   An error has occured"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -23089,7 +23089,7 @@ Public Class Form1
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
         If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "           For use Remove time travel penality," & vbNewLine & "Change time in Tomodachi life or in 3ds, play and save" & vbNewLine & "       Export your save with Time travel penality" & vbNewLine & "                 import your save file here" & vbNewLine & " Check and re-import your save in Tomodachi Life"
+            fdialog.Label1.Text = "           To use Remove time travel penality," & vbNewLine & "Change time in Tomodachi life or in 3ds, play and save" & vbNewLine & "       Export your save with Time travel penality" & vbNewLine & "                 import your save file here" & vbNewLine & " Check and re-import your save in Tomodachi Life"
             fdialog.Label1.Location = New Point(3, 3)
             fdialog.ShowDialog()
         End If
@@ -24156,7 +24156,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -27203,7 +27203,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                   An error has occurred"
+                fdialog.Label1.Text = "                   An error has occured"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
@@ -27236,7 +27236,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occurred, load a save before"
+                fdialog.Label1.Text = "       An error has occured, load a save first"
                 fdialog.Label1.Location = New Point(3, 35)
                 fdialog.ShowDialog()
             End If
