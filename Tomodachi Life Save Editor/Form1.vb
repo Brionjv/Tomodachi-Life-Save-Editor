@@ -572,13 +572,11 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim open As New OpenFileDialog
         If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "                    Open savedataArc.txt" & vbNewLine & "               Backup your save before using" & vbNewLine & "                 Tomodachi Life Save Editor"
-            fdialog.Label1.Location = New Point(3, 24)
+            fdialog.Label1.Text = "Open savedataArc.txt" & vbNewLine & "Backup your save before using" & vbNewLine & "Tomodachi Life Save Editor"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "FR" Then
-            fdialog.Label1.Text = "                 Ouvrir savedataArc.txt" & vbNewLine & " Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "               Tomodachi Life Save Editor"
-            fdialog.Label1.Location = New Point(3, 24)
+            fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "Tomodachi Life Save Editor"
             fdialog.ShowDialog()
         End If
         open.Title = "Open save savedataArc.txt"
@@ -692,13 +690,11 @@ Public Class Form1
             ComboBox12.Enabled = False
         Catch ex As Exception
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                  savedataArc.txt not load," & vbNewLine & "  Save game is corrupted or not a Tomodachi Life Save"
-                fdialog.Label1.Location = New Point(3, 30)
+                fdialog.Label1.Text = "savedataArc.txt not load," & vbNewLine & "Save game is corrupted or not a Tomodachi Life Save"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "         L'ouverture de savedataArc.txt a échoué," & vbNewLine & "               La sauvegarde est corrompu ou" & vbNewLine & "        n'est pas une sauvegarde de Tomodachi Life"
-                fdialog.Label1.Location = New Point(3, 22)
+                fdialog.Label1.Text = "L'ouverture de savedataArc.txt a échoué," & vbNewLine & "La sauvegarde est corrompu ou" & vbNewLine & "n'est pas une sauvegarde de Tomodachi Life"
                 fdialog.ShowDialog()
             End If
             ComboBox12.Enabled = True
@@ -707,13 +703,11 @@ Public Class Form1
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim open As New OpenFileDialog
         If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "                    Open savedataArc.txt" & vbNewLine & "              Backup your save before use" & vbNewLine & "                 Tomodachi Life Save Editor"
-            fdialog.Label1.Location = New Point(3, 24)
+            fdialog.Label1.Text = "Open savedataArc.txt" & vbNewLine & "Backup your save before use" & vbNewLine & "Tomodachi Life Save Editor"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "FR" Then
-            fdialog.Label1.Text = "                 Ouvrir savedataArc.txt" & vbNewLine & " Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "               Tomodachi Life Save Editor"
-            fdialog.Label1.Location = New Point(3, 24)
+            fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "Tomodachi Life Save Editor"
             fdialog.ShowDialog()
         End If
         open.Title = "Open save savedataArc.txt"
@@ -816,13 +810,11 @@ Public Class Form1
             ComboBox12.Enabled = False
         Catch ex As Exception
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                  savedataArc.txt not load," & vbNewLine & "  Save game is corrupted or not a Tomodachi Life Save"
-                fdialog.Label1.Location = New Point(3, 30)
+                fdialog.Label1.Text = "savedataArc.txt not load," & vbNewLine & "Save game is corrupted or not a Tomodachi Life Save"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "         L'ouverture de savedataArc.txt a échoué," & vbNewLine & "              La sauvegarde est corrompue ou" & vbNewLine & "        n'est pas une sauvegarde de Tomodachi Life"
-                fdialog.Label1.Location = New Point(3, 22)
+                fdialog.Label1.Text = "L'ouverture de savedataArc.txt a échoué," & vbNewLine & "La sauvegarde est corrompue ou" & vbNewLine & "n'est pas une sauvegarde de Tomodachi Life"
                 fdialog.ShowDialog()
             End If
             ComboBox12.Enabled = True
@@ -911,24 +903,20 @@ Public Class Form1
             Writer.Position = &H0
             Writer.WriteInt8(17)
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "                   Sauvegarde enregistré"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Sauvegarde enregistré"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                          File Save"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "File Save"
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "                  Une erreur est survenue"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                   An error has occured"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -1006,24 +994,20 @@ Public Class Form1
             Writer.WriteInt8(17)
 
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "                   Sauvegarde enregistré"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Sauvegarde enregistré"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                          File Save"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "File Save"
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "                  Une erreur est survenue"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                   An error has occured"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -1048,13 +1032,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox1.Checked = False
@@ -1072,13 +1054,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox2.Checked = False
@@ -1096,13 +1076,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox5.Checked = False
@@ -1142,13 +1120,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox8.Checked = False
@@ -1166,13 +1142,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox3.Checked = False
@@ -1190,13 +1164,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox6.Checked = False
@@ -2079,13 +2051,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox9.Checked = False
@@ -2244,13 +2214,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox17.Checked = False
@@ -2653,13 +2621,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox15.Checked = False
@@ -3092,13 +3058,11 @@ Public Class Form1
                 Writer.WriteUInt16(65021)
             Next
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                  Some headgears were lost" & vbNewLine & "       Try to unlock all with ''EU save file'' setting"
-                fdialog.Label1.Location = New Point(3, 30)
+                fdialog.Label1.Text = "Some headgears were lost" & vbNewLine & "Try to unlock all with ''EU save file'' setting"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "            Certains chapeaux ont été perdus" & vbNewLine & "             Essayez de tout débloquer avec" & vbNewLine & "             les paramètres ''Sauvegarde EU''"
-                fdialog.Label1.Location = New Point(3, 24)
+                fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde EU''"
                 fdialog.ShowDialog()
             End If
         End If
@@ -3562,13 +3526,11 @@ Public Class Form1
                 Writer.WriteUInt16(65021)
             Next
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                  Some headgears were lost" & vbNewLine & "       Try to unlock all with ''US save file'' setting"
-                fdialog.Label1.Location = New Point(3, 30)
+                fdialog.Label1.Text = "Some headgears were lost" & vbNewLine & "Try to unlock all with ''US save file'' setting"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "            Certains chapeaux ont été perdus" & vbNewLine & "             Essayez de tout débloquer avec" & vbNewLine & "             les paramètres ''Sauvegarde US''"
-                fdialog.Label1.Location = New Point(3, 24)
+                fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde US''"
                 fdialog.ShowDialog()
             End If
         End If
@@ -3594,13 +3556,11 @@ Public Class Form1
                     Writer.Position = &H1E4C70
                     Writer.WriteInt8(64)
                     If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "           Time travel penality has been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
+                        fdialog.Label1.Text = "Time travel penality has been removed"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
+                        fdialog.Label1.Text = "La pénalité de voyage dans le temps a été retiré"
                         fdialog.ShowDialog()
                     End If
                 End If
@@ -3610,13 +3570,11 @@ Public Class Form1
                     Writer.Position = &H1E4C70
                     Writer.WriteInt8(64)
                     If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "           Time travel penality has been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
+                        fdialog.Label1.Text = "Time travel penality has been removed"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
+                        fdialog.Label1.Text = "La pénalité de voyage dans le temps a été retiré"
                         fdialog.ShowDialog()
                     End If
                 End If
@@ -3626,26 +3584,22 @@ Public Class Form1
                     Writer.Position = &H14BD40
                     Writer.WriteInt8(64)
                     If ComboBox11.Text = "EN" Then
-                        fdialog.Label1.Text = "           Time travel penality has been removed"
-                        fdialog.Label1.Location = New Point(3, 35)
+                        fdialog.Label1.Text = "Time travel penality has been removed"
                         fdialog.ShowDialog()
                     End If
                     If ComboBox11.Text = "FR" Then
-                        fdialog.Label1.Text = "     La pénalité de voyage dans le temps a été retiré"
-                        fdialog.Label1.Location = New Point(3, 35)
+                        fdialog.Label1.Text = "La pénalité de voyage dans le temps a été retiré"
                         fdialog.ShowDialog()
                     End If
                 End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox14.Checked = False
@@ -17251,6 +17205,42 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 2)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 2)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 2)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 2)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 2)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 2)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 2)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 2)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 2)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 2)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 2)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 2)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 2)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
                 End If
                 If ComboBox1.Text = "Mii 4" Then
                     Reader.Position = &H1CA0 + (&H590 * 3)
@@ -17309,6 +17299,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 3)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 3)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 3)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 3)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 3)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 3)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 3)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 3)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 3)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 3)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 3)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 3)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 3)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 5" Then
                     Reader.Position = &H1CA0 + (&H590 * 4)
@@ -17367,6 +17394,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 4)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 4)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 4)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 4)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 4)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 4)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 4)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 4)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 4)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 4)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 4)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 4)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 4)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 6" Then
                     Reader.Position = &H1CA0 + (&H590 * 5)
@@ -17425,6 +17489,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 5)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 5)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 5)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 5)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 5)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 5)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 5)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 5)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 5)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 5)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 5)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 5)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 5)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 7" Then
                     Reader.Position = &H1CA0 + (&H590 * 6)
@@ -17483,6 +17584,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 6)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 6)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 6)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 6)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 6)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 6)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 6)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 6)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 6)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 6)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 6)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 6)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 6)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 8" Then
                     Reader.Position = &H1CA0 + (&H590 * 7)
@@ -17541,6 +17679,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 7)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 7)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 7)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 7)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 7)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 7)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 7)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 7)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 7)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 7)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 7)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 7)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 7)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 9" Then
                     Reader.Position = &H1CA0 + (&H590 * 8)
@@ -17599,6 +17774,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 8)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 8)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 8)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 8)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 8)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 8)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 8)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 8)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 8)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 8)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 8)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 8)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 8)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 10" Then
                     Reader.Position = &H1CA0 + (&H590 * 9)
@@ -17657,6 +17869,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 9)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 9)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 9)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 9)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 9)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 9)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 9)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 9)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 9)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 9)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 9)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 9)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 9)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 11" Then
                     Reader.Position = &H1CA0 + (&H590 * 10)
@@ -17715,6 +17964,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 10)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 10)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 10)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 10)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 10)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 10)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 10)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 10)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 10)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 10)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 10)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 10)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 10)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 12" Then
                     Reader.Position = &H1CA0 + (&H590 * 11)
@@ -17773,6 +18059,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 11)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 11)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 11)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 11)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 11)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 11)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 11)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 11)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 11)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 11)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 11)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 11)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 11)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 13" Then
                     Reader.Position = &H1CA0 + (&H590 * 12)
@@ -17831,6 +18154,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 12)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 12)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 12)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 12)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 12)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 12)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 12)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 12)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 12)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 12)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 12)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 12)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 12)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 14" Then
                     Reader.Position = &H1CA0 + (&H590 * 13)
@@ -17889,6 +18249,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 13)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 13)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 13)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 13)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 13)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 13)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 13)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 13)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 13)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 13)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 13)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 13)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 13)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 15" Then
                     Reader.Position = &H1CA0 + (&H590 * 14)
@@ -17947,6 +18344,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 14)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 14)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 14)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 14)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 14)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 14)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 14)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 14)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 14)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 14)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 14)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 14)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 14)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 16" Then
                     Reader.Position = &H1CA0 + (&H590 * 15)
@@ -18005,6 +18439,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 15)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 15)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 15)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 15)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 15)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 15)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 15)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 15)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 15)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 15)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 15)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 15)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 15)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 17" Then
                     Reader.Position = &H1CA0 + (&H590 * 16)
@@ -18063,6 +18534,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 16)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 16)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 16)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 16)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 16)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 16)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 16)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 16)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 16)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 16)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 16)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 16)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 16)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 18" Then
                     Reader.Position = &H1CA0 + (&H590 * 17)
@@ -18121,6 +18629,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 17)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 17)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 17)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 17)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 17)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 17)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 17)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 17)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 17)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 17)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 17)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 17)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 17)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 19" Then
                     Reader.Position = &H1CA0 + (&H590 * 18)
@@ -18179,6 +18724,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 18)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 18)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 18)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 18)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 18)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 18)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 18)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 18)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 18)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 18)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 18)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 18)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 18)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 20" Then
                     Reader.Position = &H1CA0 + (&H590 * 19)
@@ -18237,6 +18819,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 19)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 19)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 19)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 19)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 19)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 19)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 19)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 19)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 19)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 19)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 19)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 19)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 19)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 21" Then
                     Reader.Position = &H1CA0 + (&H590 * 20)
@@ -18295,6 +18914,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 20)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 20)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 20)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 20)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 20)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 20)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 20)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 20)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 20)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 20)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 20)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 20)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 20)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 22" Then
                     Reader.Position = &H1CA0 + (&H590 * 21)
@@ -18353,6 +19009,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 21)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 21)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 21)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 21)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 21)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 21)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 21)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 21)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 21)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 21)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 21)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 21)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 21)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 23" Then
                     Reader.Position = &H1CA0 + (&H590 * 22)
@@ -18411,6 +19104,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 22)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 22)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 22)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 22)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 22)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 22)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 22)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 22)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 22)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 22)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 22)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 22)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 22)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 24" Then
                     Reader.Position = &H1CA0 + (&H590 * 23)
@@ -18469,6 +19199,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 23)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 23)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 23)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 23)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 23)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 23)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 23)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 23)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 23)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 23)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 23)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 23)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 23)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 25" Then
                     Reader.Position = &H1CA0 + (&H590 * 24)
@@ -18527,6 +19294,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 24)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 24)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 24)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 24)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 24)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 24)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 24)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 24)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 24)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 24)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 24)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 24)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 24)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 26" Then
                     Reader.Position = &H1CA0 + (&H590 * 25)
@@ -18585,6 +19389,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 25)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 25)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 25)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 25)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 25)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 25)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 25)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 25)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 25)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 25)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 25)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 25)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 25)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 27" Then
                     Reader.Position = &H1CA0 + (&H590 * 26)
@@ -18643,6 +19484,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 26)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 26)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 26)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 26)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 26)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 26)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 26)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 26)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 26)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 26)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 26)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 26)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 26)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 28" Then
                     Reader.Position = &H1CA0 + (&H590 * 27)
@@ -18701,6 +19579,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 27)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 27)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 27)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 27)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 27)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 27)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 27)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 27)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 27)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 27)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 27)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 27)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 27)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 29" Then
                     Reader.Position = &H1CA0 + (&H590 * 28)
@@ -18759,6 +19674,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 28)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 28)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 28)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 28)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 28)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 28)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 28)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 28)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 28)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 28)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 28)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 28)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 28)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 30" Then
                     Reader.Position = &H1CA0 + (&H590 * 29)
@@ -18817,6 +19769,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 29)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 29)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 29)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 29)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 29)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 29)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 29)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 29)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 29)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 29)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 29)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 29)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 29)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 31" Then
                     Reader.Position = &H1CA0 + (&H590 * 30)
@@ -18875,6 +19864,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 30)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 30)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 30)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 30)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 30)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 30)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 30)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 30)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 30)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 30)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 30)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 30)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 30)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 32" Then
                     Reader.Position = &H1CA0 + (&H590 * 31)
@@ -18933,6 +19959,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 31)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 31)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 31)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 31)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 31)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 31)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 31)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 31)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 31)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 31)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 31)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 31)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 31)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 33" Then
                     Reader.Position = &H1CA0 + (&H590 * 32)
@@ -18991,6 +20054,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 32)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 32)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 32)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 32)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 32)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 32)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 32)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 32)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 32)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 32)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 32)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 32)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 32)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 34" Then
                     Reader.Position = &H1CA0 + (&H590 * 33)
@@ -19049,6 +20149,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 33)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 33)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 33)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 33)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 33)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 33)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 33)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 33)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 33)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 33)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 33)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 33)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 33)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 35" Then
                     Reader.Position = &H1CA0 + (&H590 * 34)
@@ -19107,6 +20244,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 34)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 34)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 34)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 34)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 34)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 34)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 34)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 34)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 34)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 34)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 34)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 34)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 34)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 36" Then
                     Reader.Position = &H1CA0 + (&H590 * 35)
@@ -19165,6 +20339,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 35)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 35)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 35)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 35)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 35)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 35)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 35)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 35)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 35)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 35)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 35)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 35)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 35)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 37" Then
                     Reader.Position = &H1CA0 + (&H590 * 36)
@@ -19223,6 +20434,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 36)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 36)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 36)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 36)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 36)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 36)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 36)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 36)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 36)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 36)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 36)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 36)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 36)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 38" Then
                     Reader.Position = &H1CA0 + (&H590 * 37)
@@ -19281,6 +20529,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 37)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 37)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 37)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 37)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 37)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 37)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 37)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 37)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 37)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 37)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 37)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 37)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 37)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 39" Then
                     Reader.Position = &H1CA0 + (&H590 * 38)
@@ -19339,6 +20624,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 38)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 38)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 38)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 38)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 38)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 38)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 38)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 38)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 38)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 38)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 38)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 38)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 38)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 40" Then
                     Reader.Position = &H1CA0 + (&H590 * 39)
@@ -19397,6 +20719,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 39)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 39)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 39)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 39)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 39)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 39)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 39)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 39)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 39)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 39)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 39)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 39)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 39)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 41" Then
                     Reader.Position = &H1CA0 + (&H590 * 40)
@@ -19455,6 +20814,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 40)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 40)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 40)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 40)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 40)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 40)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 40)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 40)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 40)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 40)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 40)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 40)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 40)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 42" Then
                     Reader.Position = &H1CA0 + (&H590 * 41)
@@ -19513,6 +20909,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 41)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 41)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 41)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 41)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 41)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 41)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 41)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 41)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 41)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 41)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 41)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 41)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 41)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 43" Then
                     Reader.Position = &H1CA0 + (&H590 * 42)
@@ -19571,6 +21004,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 42)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 42)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 42)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 42)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 42)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 42)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 42)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 42)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 42)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 42)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 42)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 42)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 42)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 44" Then
                     Reader.Position = &H1CA0 + (&H590 * 43)
@@ -19629,6 +21099,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 43)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 43)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 43)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 43)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 43)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 43)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 43)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 43)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 43)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 43)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 43)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 43)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 43)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 45" Then
                     Reader.Position = &H1CA0 + (&H590 * 44)
@@ -19687,6 +21194,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 44)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 44)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 44)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 44)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 44)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 44)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 44)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 44)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 44)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 44)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 44)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 44)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 44)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 46" Then
                     Reader.Position = &H1CA0 + (&H590 * 45)
@@ -19745,6 +21289,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 45)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 45)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 45)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 45)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 45)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 45)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 45)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 45)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 45)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 45)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 45)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 45)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 45)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 47" Then
                     Reader.Position = &H1CA0 + (&H590 * 46)
@@ -19803,6 +21384,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 46)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 46)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 46)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 46)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 46)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 46)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 46)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 46)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 46)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 46)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 46)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 46)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 46)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 48" Then
                     Reader.Position = &H1CA0 + (&H590 * 47)
@@ -19861,6 +21479,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 47)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 47)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 47)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 47)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 47)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 47)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 47)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 47)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 47)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 47)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 47)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 47)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 47)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 49" Then
                     Reader.Position = &H1CA0 + (&H590 * 48)
@@ -19919,6 +21574,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 48)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 48)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 48)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 48)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 48)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 48)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 48)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 48)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 48)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 48)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 48)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 48)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 48)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 50" Then
                     Reader.Position = &H1CA0 + (&H590 * 49)
@@ -19977,6 +21669,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 49)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 49)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 49)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 49)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 49)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 49)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 49)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 49)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 49)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 49)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 49)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 49)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 49)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 51" Then
                     Reader.Position = &H1CA0 + (&H590 * 50)
@@ -20035,6 +21764,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 50)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 50)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 50)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 50)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 50)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 50)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 50)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 50)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 50)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 50)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 50)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 50)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 50)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 52" Then
                     Reader.Position = &H1CA0 + (&H590 * 51)
@@ -20092,6 +21858,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 51)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 51)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 51)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 51)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 51)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 51)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 51)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 51)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 51)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 51)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 51)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 51)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 51)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 53" Then
                     Reader.Position = &H1CA0 + (&H590 * 52)
@@ -20149,6 +21952,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 52)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 52)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 52)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 52)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 52)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 52)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 52)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 52)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 52)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 52)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 52)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 52)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 52)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 54" Then
                     Reader.Position = &H1CA0 + (&H590 * 53)
@@ -20206,6 +22046,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 53)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 53)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 53)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 53)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 53)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 53)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 53)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 53)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 53)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 53)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 53)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 53)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 53)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 55" Then
                     Reader.Position = &H1CA0 + (&H590 * 54)
@@ -20263,6 +22140,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 54)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 54)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 54)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 54)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 54)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 54)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 54)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 54)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 54)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 54)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 54)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 54)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 54)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 56" Then
                     Reader.Position = &H1CA0 + (&H590 * 55)
@@ -20320,6 +22234,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 55)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 55)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 55)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 55)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 55)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 55)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 55)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 55)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 55)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 55)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 55)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 55)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 55)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 57" Then
                     Reader.Position = &H1CA0 + (&H590 * 56)
@@ -20377,6 +22328,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 56)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 56)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 56)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 56)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 56)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 56)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 56)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 56)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 56)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 56)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 56)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 56)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 56)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 58" Then
                     Reader.Position = &H1CA0 + (&H590 * 57)
@@ -20434,6 +22422,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 57)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 57)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 57)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 57)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 57)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 57)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 57)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 57)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 57)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 57)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 57)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 57)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 57)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 59" Then
                     Reader.Position = &H1CA0 + (&H590 * 58)
@@ -20491,6 +22516,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 58)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 58)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 58)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 58)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 58)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 58)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 58)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 58)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 58)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 58)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 58)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 58)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 58)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 60" Then
                     Reader.Position = &H1CA0 + (&H590 * 59)
@@ -20548,6 +22610,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 59)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 59)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 59)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 59)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 59)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 59)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 59)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 59)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 59)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 59)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 59)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 59)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 59)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 61" Then
                     Reader.Position = &H1CA0 + (&H590 * 60)
@@ -20605,6 +22704,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 60)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 60)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 60)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 60)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 60)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 60)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 60)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 60)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 60)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 60)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 60)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 60)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 60)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 62" Then
                     Reader.Position = &H1CA0 + (&H590 * 61)
@@ -20662,6 +22798,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 61)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 61)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 61)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 61)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 61)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 61)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 61)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 61)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 61)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 61)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 61)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 61)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 61)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 63" Then
                     Reader.Position = &H1CA0 + (&H590 * 62)
@@ -20719,6 +22892,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 62)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 62)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 62)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 62)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 62)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 62)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 62)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 62)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 62)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 62)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 62)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 62)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 62)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 64" Then
                     Reader.Position = &H1CA0 + (&H590 * 63)
@@ -20776,6 +22986,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 63)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 63)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 63)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 63)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 63)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 63)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 63)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 63)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 63)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 63)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 63)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 63)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 63)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 65" Then
                     Reader.Position = &H1CA0 + (&H590 * 64)
@@ -20833,6 +23080,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 64)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 64)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 64)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 64)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 64)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 64)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 64)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 64)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 64)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 64)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 64)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 64)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 64)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 66" Then
                     Reader.Position = &H1CA0 + (&H590 * 65)
@@ -20890,6 +23174,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 65)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 65)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 65)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 65)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 65)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 65)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 65)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 65)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 65)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 65)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 65)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 65)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 65)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 67" Then
                     Reader.Position = &H1CA0 + (&H590 * 66)
@@ -20947,6 +23268,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 66)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 66)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 66)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 66)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 66)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 66)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 66)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 66)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 66)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 66)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 66)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 66)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 66)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 68" Then
                     Reader.Position = &H1CA0 + (&H590 * 67)
@@ -21004,6 +23362,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 67)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 67)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 67)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 67)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 67)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 67)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 67)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 67)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 67)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 67)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 67)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 67)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 67)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 69" Then
                     Reader.Position = &H1CA0 + (&H590 * 68)
@@ -21061,6 +23456,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 68)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 68)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 68)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 68)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 68)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 68)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 68)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 68)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 68)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 68)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 68)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 68)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 68)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 70" Then
                     Reader.Position = &H1CA0 + (&H590 * 69)
@@ -21118,6 +23550,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 69)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 69)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 69)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 69)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 69)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 69)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 69)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 69)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 69)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 69)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 69)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 69)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 69)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 71" Then
                     Reader.Position = &H1CA0 + (&H590 * 70)
@@ -21175,6 +23644,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 70)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 70)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 70)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 70)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 70)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 70)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 70)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 70)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 70)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 70)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 70)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 70)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 70)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 72" Then
                     Reader.Position = &H1CA0 + (&H590 * 71)
@@ -21232,6 +23738,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 71)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 71)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 71)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 71)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 71)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 71)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 71)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 71)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 71)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 71)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 71)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 71)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 71)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 73" Then
                     Reader.Position = &H1CA0 + (&H590 * 72)
@@ -21289,6 +23832,42 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 72)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 72)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 72)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 72)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 72)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 72)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 72)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 72)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 72)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 72)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 72)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 72)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 72)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
 
                 End If
                 If ComboBox1.Text = "Mii 74" Then
@@ -21347,6 +23926,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 73)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 73)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 73)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 73)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 73)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 73)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 73)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 73)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 73)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 73)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 73)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 73)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 73)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 75" Then
                     Reader.Position = &H1CA0 + (&H590 * 74)
@@ -21404,6 +24020,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 74)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 74)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 74)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 74)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 74)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 74)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 74)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 74)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 74)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 74)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 74)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 74)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 74)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 76" Then
                     Reader.Position = &H1CA0 + (&H590 * 75)
@@ -21461,6 +24114,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 75)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 75)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 75)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 75)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 75)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 75)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 75)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 75)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 75)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 75)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 75)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 75)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 75)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 77" Then
                     Reader.Position = &H1CA0 + (&H590 * 76)
@@ -21518,6 +24208,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 76)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 76)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 76)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 76)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 76)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 76)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 76)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 76)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 76)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 76)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 76)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 76)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 76)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 78" Then
                     Reader.Position = &H1CA0 + (&H590 * 77)
@@ -21575,6 +24302,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 77)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 77)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 77)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 77)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 77)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 77)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 77)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 77)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 77)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 77)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 77)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 77)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 77)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 79" Then
                     Reader.Position = &H1CA0 + (&H590 * 78)
@@ -21632,6 +24396,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 78)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 78)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 78)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 78)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 78)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 78)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 78)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 78)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 78)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 78)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 78)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 78)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 78)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 80" Then
                     Reader.Position = &H1CA0 + (&H590 * 79)
@@ -21689,6 +24490,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 79)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 79)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 79)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 79)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 79)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 79)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 79)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 79)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 79)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 79)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 79)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 79)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 79)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 81" Then
                     Reader.Position = &H1CA0 + (&H590 * 80)
@@ -21746,6 +24584,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 80)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 80)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 80)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 80)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 80)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 80)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 80)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 80)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 80)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 80)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 80)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 80)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 80)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 82" Then
                     Reader.Position = &H1CA0 + (&H590 * 81)
@@ -21803,6 +24678,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 81)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 81)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 81)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 81)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 81)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 81)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 81)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 81)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 81)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 81)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 81)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 81)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 81)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 83" Then
                     Reader.Position = &H1CA0 + (&H590 * 82)
@@ -21860,6 +24772,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 82)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 82)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 82)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 82)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 82)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 82)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 82)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 82)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 82)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 82)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 82)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 82)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 82)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 84" Then
                     Reader.Position = &H1CA0 + (&H590 * 83)
@@ -21917,6 +24866,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 83)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 83)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 83)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 83)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 83)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 83)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 83)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 83)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 83)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 83)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 83)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 83)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 83)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 85" Then
                     Reader.Position = &H1CA0 + (&H590 * 84)
@@ -21974,6 +24960,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 84)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 84)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 84)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 84)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 84)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 84)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 84)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 84)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 84)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 84)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 84)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 84)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 84)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 86" Then
                     Reader.Position = &H1CA0 + (&H590 * 85)
@@ -22031,6 +25054,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 85)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 85)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 85)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 85)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 85)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 85)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 85)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 85)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 85)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 85)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 85)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 85)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 85)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 87" Then
                     Reader.Position = &H1CA0 + (&H590 * 86)
@@ -22088,6 +25148,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 86)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 86)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 86)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 86)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 86)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 86)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 86)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 86)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 86)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 86)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 86)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 86)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 86)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 88" Then
                     Reader.Position = &H1CA0 + (&H590 * 87)
@@ -22145,6 +25242,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 87)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 87)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 87)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 87)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 87)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 87)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 87)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 87)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 87)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 87)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 87)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 87)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 87)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 89" Then
                     Reader.Position = &H1CA0 + (&H590 * 88)
@@ -22202,6 +25336,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 88)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 88)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 88)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 88)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 88)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 88)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 88)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 88)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 88)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 88)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 88)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 88)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 88)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 90" Then
                     Reader.Position = &H1CA0 + (&H590 * 89)
@@ -22259,6 +25430,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 89)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 89)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 89)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 89)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 89)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 89)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 89)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 89)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 89)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 89)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 89)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 89)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 89)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 91" Then
                     Reader.Position = &H1CA0 + (&H590 * 90)
@@ -22316,6 +25524,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 90)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 90)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 90)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 90)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 90)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 90)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 90)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 90)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 90)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 90)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 90)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 90)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 90)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 92" Then
                     Reader.Position = &H1CA0 + (&H590 * 91)
@@ -22373,6 +25618,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 91)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 91)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 91)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 91)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 91)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 91)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 91)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 91)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 91)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 91)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 91)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 91)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 91)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 93" Then
                     Reader.Position = &H1CA0 + (&H590 * 92)
@@ -22430,6 +25712,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 92)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 92)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 92)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 92)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 92)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 92)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 92)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 92)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 92)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 92)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 92)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 92)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 92)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 94" Then
                     Reader.Position = &H1CA0 + (&H590 * 93)
@@ -22487,6 +25806,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 93)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 93)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 93)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 93)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 93)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 93)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 93)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 93)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 93)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 93)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 93)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 93)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 93)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 95" Then
                     Reader.Position = &H1CA0 + (&H590 * 94)
@@ -22544,6 +25900,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 94)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 94)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 94)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 94)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 94)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 94)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 94)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 94)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 94)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 94)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 94)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 94)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 94)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 96" Then
                     Reader.Position = &H1CA0 + (&H590 * 95)
@@ -22601,6 +25994,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 95)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 95)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 95)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 95)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 95)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 95)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 95)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 95)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 95)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 95)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 95)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 95)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 95)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 97" Then
                     Reader.Position = &H1CA0 + (&H590 * 96)
@@ -22658,6 +26088,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 96)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 96)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 96)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 96)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 96)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 96)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 96)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 96)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 96)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 96)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 96)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 96)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 96)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 98" Then
                     Reader.Position = &H1CA0 + (&H590 * 97)
@@ -22715,6 +26182,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 97)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 97)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 97)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 97)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 97)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 97)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 97)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 97)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 97)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 97)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 97)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 97)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 97)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 99" Then
                     Reader.Position = &H1CA0 + (&H590 * 98)
@@ -22772,6 +26276,43 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 98)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 98)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 98)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 98)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 98)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 98)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 98)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 98)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 98)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 98)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 98)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 98)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 98)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
                 If ComboBox1.Text = "Mii 100" Then
                     Reader.Position = &H1CA0 + (&H590 * 99)
@@ -22829,17 +26370,52 @@ Public Class Form1
                     Reader.Position = &H2193 + (&H590 * 99)
                     fullness = Reader.Position
                     NumericUpDown21.Value = Reader.ReadInt8
+                    Reader.Position = &H2198 + (&H590 * 99)
+                    alltime = Reader.Position
+                    NumericUpDown46.Value = Reader.ReadUInt16
+                    Reader.Position = &H219C + (&H590 * 99)
+                    alltime2 = Reader.Position
+                    NumericUpDown47.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A0 + (&H590 * 99)
+                    fav = Reader.Position
+                    NumericUpDown48.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A2 + (&H590 * 99)
+                    fav2 = Reader.Position
+                    NumericUpDown49.Value = Reader.ReadUInt16
+                    Reader.Position = &H21A4 + (&H590 * 99)
+                    fav3 = Reader.Position
+                    NumericUpDown50.Value = Reader.ReadUInt16
+                    Reader.Position = &H219E + (&H590 * 99)
+                    worst = Reader.Position
+                    NumericUpDown51.Value = Reader.ReadUInt16
+                    Reader.Position = &H219A + (&H590 * 99)
+                    worst2 = Reader.Position
+                    NumericUpDown52.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C41 + (&H590 * 99)
+                    copy = Reader.Position
+                    NumericUpDown55.Value = Reader.ReadInt8
+                    Reader.Position = &H1C70 + (&H590 * 99)
+                    sharing = Reader.Position
+                    NumericUpDown54.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C59 + (&H590 * 99)
+                    couleur = Reader.Position
+                    NumericUpDown53.Value = Reader.ReadInt8
+                    Reader.Position = &H21AE + (&H590 * 99)
+                    grow = Reader.Position
+                    NumericUpDown56.Value = Reader.ReadInt8
+                    Reader.Position = &H21A8 + (&H590 * 99)
+                    appartement = Reader.Position
+                    NumericUpDown57.Value = Reader.ReadInt8
+
                 End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -22976,25 +26552,21 @@ Public Class Form1
             End If
 
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                        Changes Mii Save"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Changes Mii Save"
                 fdialog.ShowDialog()
             End If
 
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "                Changements Mii Sauvegardé"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Changements Mii Sauvegardé"
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "                  Une erreur est survenue"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                   An error has occured"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -23089,13 +26661,11 @@ Public Class Form1
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
         If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "           To use Remove time travel penality," & vbNewLine & "Change time in Tomodachi life or in 3ds, play and save" & vbNewLine & "       Export your save with Time travel penality" & vbNewLine & "                 import your save file here" & vbNewLine & " Check and re-import your save in Tomodachi Life"
-            fdialog.Label1.Location = New Point(3, 3)
+            fdialog.Label1.Text = "To use Remove time travel penality," & vbNewLine & "Change time in Tomodachi life or in 3ds, play and save" & vbNewLine & "Export your save with Time travel penality" & vbNewLine & "import your save file here" & vbNewLine & "Check and re-import your save in Tomodachi Life"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "FR" Then
-            fdialog.Label1.Text = "    Pour retirer la pénalité de voyage dans le temps," & vbNewLine & "  Changer le temps dans Tomodachi life ou sur la 3ds" & vbNewLine & "   jouez, sauvegardez et exportez votre sauvegarde." & vbNewLine & "          Cochez et re-importez votre sauvegarde" & vbNewLine & "                     dans Tomodachi Life"
-            fdialog.Label1.Location = New Point(3, 5)
+            fdialog.Label1.Text = "Pour retirer la pénalité de voyage dans le temps," & vbNewLine & "Changer le temps dans Tomodachi life ou sur la 3ds" & vbNewLine & "jouez, sauvegardez et exportez votre sauvegarde." & vbNewLine & "Cochez et re-importez votre sauvegarde" & vbNewLine & "dans Tomodachi Life"
             fdialog.ShowDialog()
         End If
     End Sub
@@ -24151,13 +27721,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             RadioButton2.Checked = False
@@ -27186,25 +30754,21 @@ Public Class Form1
             Writer.Position = fullness
             Writer.WriteInt8(NumericUpDown21.Value)
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                        Changes Mii Save"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Changes Mii Save"
                 fdialog.ShowDialog()
             End If
 
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "                Changements Mii Sauvegardé"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Changements Mii Sauvegardé"
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "                  Une erreur est survenue"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "                   An error has occured"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -27231,13 +30795,11 @@ Public Class Form1
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = " Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "       An error has occured, load a save first"
-                fdialog.Label1.Location = New Point(3, 35)
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             CheckBox30.Checked = False
@@ -27246,13 +30808,11 @@ Public Class Form1
 
     Private Sub Label27_Click(sender As Object, e As EventArgs) Handles Label27.Click
         If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "If ''Reset Tomodachi Life StreetPass/Spotpass''" & vbNewLine & "                         is used  " & vbNewLine & "You will be able to set up StreetPass/SpotPass" & vbNewLine & "         And change item sent to StreetPass"
-            fdialog.Label1.Location = New Point(17, 11)
+            fdialog.Label1.Text = "If ''Reset Tomodachi Life StreetPass/Spotpass'' is used" & vbNewLine & "You will be able to set up StreetPass/SpotPass" & vbNewLine & "And change item sent to StreetPass"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "FR" Then
-            fdialog.Label1.Text = "        Si ''Réinitialiser StreetPass/Spotpass de" & vbNewLine & "               Tomodachi Life'' est utilisé" & vbNewLine & "Vous devrez paramétrer de nouveau SteetPass/SpotPass" & vbNewLine & "     Et ainsi changer d'objet envoyé par StreetPass"
-            fdialog.Label1.Location = New Point(4, 11)
+            fdialog.Label1.Text = "Si ''Réinitialiser StreetPass/Spotpass de" & vbNewLine & "Tomodachi Life'' est utilisé" & vbNewLine & "Vous devrez paramétrer de nouveau SteetPass/SpotPass" & vbNewLine & "Et ainsi changer d'objet envoyé par StreetPass"
             fdialog.ShowDialog()
         End If
     End Sub
