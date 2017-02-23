@@ -168,6 +168,7 @@ Partial Class Form1
         Me.Label37 = New System.Windows.Forms.Label()
         Me.PictureBox57 = New System.Windows.Forms.PictureBox()
         Me.Label36 = New System.Windows.Forms.Label()
+        Me.CheckBox35 = New System.Windows.Forms.CheckBox()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
@@ -285,7 +286,6 @@ Partial Class Form1
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.CheckBox35 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2103,6 +2103,19 @@ Partial Class Form1
         Me.Label36.TabIndex = 88
         Me.Label36.Text = "Copying"
         '
+        'CheckBox35
+        '
+        Me.CheckBox35.AutoSize = True
+        Me.CheckBox35.BackColor = System.Drawing.Color.Transparent
+        Me.CheckBox35.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CheckBox35.ForeColor = System.Drawing.Color.Black
+        Me.CheckBox35.Location = New System.Drawing.Point(203, 202)
+        Me.CheckBox35.Name = "CheckBox35"
+        Me.CheckBox35.Size = New System.Drawing.Size(49, 17)
+        Me.CheckBox35.TabIndex = 103
+        Me.CheckBox35.Text = "Dev"
+        Me.CheckBox35.UseVisualStyleBackColor = False
+        '
         'Label35
         '
         Me.Label35.AutoSize = True
@@ -3361,19 +3374,6 @@ Partial Class Form1
         Me.Button6.TabIndex = 38
         Me.Button6.Text = "Save"
         Me.Button6.UseVisualStyleBackColor = True
-        '
-        'CheckBox35
-        '
-        Me.CheckBox35.AutoSize = True
-        Me.CheckBox35.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox35.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox35.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox35.Location = New System.Drawing.Point(203, 202)
-        Me.CheckBox35.Name = "CheckBox35"
-        Me.CheckBox35.Size = New System.Drawing.Size(49, 17)
-        Me.CheckBox35.TabIndex = 103
-        Me.CheckBox35.Text = "Dev"
-        Me.CheckBox35.UseVisualStyleBackColor = False
         '
         'Form1
         '
