@@ -476,9 +476,9 @@ Partial Class Form1
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label4.Location = New System.Drawing.Point(2, 374)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(77, 13)
+        Me.Label4.Size = New System.Drawing.Size(69, 13)
         Me.Label4.TabIndex = 28
-        Me.Label4.Text = "Beta ver. 2.1.0"
+        Me.Label4.Text = "Version 2.1.0"
         '
         'LinkLabel1
         '

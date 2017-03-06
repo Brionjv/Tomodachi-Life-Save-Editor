@@ -2899,919 +2899,967 @@ Public Class Form1
     End Sub
 
     Private Sub CheckBox10_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox10.CheckedChanged
-        If CheckBox10.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 46
-                Writer.Position = &HFF8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 12
-                Writer.Position = &H1030 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1040 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1058 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1060 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1080 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 14
-                Writer.Position = &H10C0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H10F8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1108 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1128 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 28
-                Writer.Position = &H1138 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1158 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1160 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H1168 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1170 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 38
-                Writer.Position = &H1178 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 37
-                Writer.Position = &H11A8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 21
-                Writer.Position = &H11D0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H11E8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 11
-                Writer.Position = &H11F0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 13
-                Writer.Position = &H1200 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1210 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 30
-                Writer.Position = &H1218 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 28
-                Writer.Position = &H1240 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            Writer.Position = &H1260
-            Writer.WriteUInt16(65021)
-
-            For i As Integer = 0 To 45
-                Writer.Position = &H1268 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1298 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 13
-                Writer.Position = &H12A0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 69
-                Writer.Position = &H12B0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H12F8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 28
-                Writer.Position = &H1300 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1320 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 45
-                Writer.Position = &H1328 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1358 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 11
-                Writer.Position = &H1360 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 13
-                Writer.Position = &H1370 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1390 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 29
-                Writer.Position = &H1398 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 12
-                Writer.Position = &H13B8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 29
-                Writer.Position = &H13C8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H13E8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H13F0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 13
-                Writer.Position = &H13F8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1410 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1418 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1420 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 11
-                Writer.Position = &H1430 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H1440 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 10
-                Writer.Position = &H1448 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1458 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1460 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 7
-                Writer.Position = &H1468 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 46
-                Writer.Position = &H1490 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H14D0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 10
-                Writer.Position = &H14E0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H14F0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H14F8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1508 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1510 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1518 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 7
-                Writer.Position = &H1530 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 20
-                Writer.Position = &H1550 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1568 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 13
-                Writer.Position = &H1570 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H1580 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1588 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H1598 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H15B0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H15C0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H15C8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H15D8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H15E0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H15F8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1618 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1650 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1668 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1670 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1678 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1680 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1688 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1698 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H16A0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H16A8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H16B8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H16C8 + i
-                Writer.WriteUInt16(65021)
-            Next
-            If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "Some headgears were lost" & vbNewLine & "Try to unlock all with ''EU save file'' setting"
-                fdialog.ShowDialog()
+        Try
+            If CheckBox10.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 46
+                    Writer.Position = &HFF8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 12
+                    Writer.Position = &H1030 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1040 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1058 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1060 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1080 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 14
+                    Writer.Position = &H10C0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H10F8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1108 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1128 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 28
+                    Writer.Position = &H1138 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1158 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1160 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H1168 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1170 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 38
+                    Writer.Position = &H1178 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 37
+                    Writer.Position = &H11A8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 21
+                    Writer.Position = &H11D0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H11E8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 11
+                    Writer.Position = &H11F0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 13
+                    Writer.Position = &H1200 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1210 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 30
+                    Writer.Position = &H1218 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 28
+                    Writer.Position = &H1240 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                Writer.Position = &H1260
+                Writer.WriteUInt16(65021)
+
+                For i As Integer = 0 To 45
+                    Writer.Position = &H1268 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1298 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 13
+                    Writer.Position = &H12A0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 69
+                    Writer.Position = &H12B0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H12F8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 28
+                    Writer.Position = &H1300 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1320 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 45
+                    Writer.Position = &H1328 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1358 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 11
+                    Writer.Position = &H1360 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 13
+                    Writer.Position = &H1370 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1390 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 29
+                    Writer.Position = &H1398 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 12
+                    Writer.Position = &H13B8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 29
+                    Writer.Position = &H13C8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H13E8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H13F0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 13
+                    Writer.Position = &H13F8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1410 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1418 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1420 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 11
+                    Writer.Position = &H1430 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H1440 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 10
+                    Writer.Position = &H1448 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1458 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1460 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 7
+                    Writer.Position = &H1468 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 46
+                    Writer.Position = &H1490 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H14D0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 10
+                    Writer.Position = &H14E0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H14F0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H14F8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1508 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1510 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1518 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 7
+                    Writer.Position = &H1530 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 20
+                    Writer.Position = &H1550 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1568 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 13
+                    Writer.Position = &H1570 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H1580 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1588 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H1598 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H15B0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H15C0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H15C8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H15D8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H15E0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H15F8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1618 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1650 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1668 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1670 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1678 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1680 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1688 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1698 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H16A0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H16A8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H16B8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H16C8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                If ComboBox11.Text = "EN" Then
+                    fdialog.Label1.Text = "Some headgears were lost" & vbNewLine & "Try to unlock all with ''EU save file'' setting"
+                    fdialog.ShowDialog()
+                End If
+                If ComboBox11.Text = "FR" Then
+                    fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde EU''"
+                    fdialog.ShowDialog()
+                End If
             End If
+        Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde EU''"
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
-        End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox10.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox11_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox11.CheckedChanged
-        If CheckBox11.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            Writer.Position = &H19E2
-            Writer.WriteUInt16(65021)
-            For i As Integer = 0 To 45
-                Writer.Position = &H19E4 + i
+        Try
+            If CheckBox11.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                Writer.Position = &H19E2
                 Writer.WriteUInt16(65021)
-            Next
-        End If
+                For i As Integer = 0 To 45
+                    Writer.Position = &H19E4 + i
+                    Writer.WriteUInt16(65021)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox11.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox13_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox13.CheckedChanged
-        If CheckBox13.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 37
-                Writer.Position = &HFF8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1020 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 12
-                Writer.Position = &H1030 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1040 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1058 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1060 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1088 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 14
-                Writer.Position = &H10C8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H10F0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1100 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1120 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 28
-                Writer.Position = &H1130 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H1150 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1158 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 2
-                Writer.Position = &H1160 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1168 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 12
-                Writer.Position = &H1170 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 30
-                Writer.Position = &H1180 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 28
-                Writer.Position = &H1130 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 37
-                Writer.Position = &H11A8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 21
-                Writer.Position = &H11D0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H11E8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 11
-                Writer.Position = &H11F0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 13
-                Writer.Position = &H1200 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1210 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 30
-                Writer.Position = &H1218 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 28
-                Writer.Position = &H1240 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            Writer.Position = &H1260
-            Writer.WriteUInt16(65021)
-
-            For i As Integer = 0 To 45
-                Writer.Position = &H1268 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1298 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 13
-                Writer.Position = &H12A0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 69
-                Writer.Position = &H12B0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H12F8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 28
-                Writer.Position = &H1300 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1320 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 45
-                Writer.Position = &H1328 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1358 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 11
-                Writer.Position = &H1360 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 12
-                Writer.Position = &H1370 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1390 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 29
-                Writer.Position = &H1398 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 12
-                Writer.Position = &H13B8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 29
-                Writer.Position = &H13C8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H13E8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H13F0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 13
-                Writer.Position = &H13F8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H1410 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H1418 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1420 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 11
-                Writer.Position = &H1430 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 2
-                Writer.Position = &H1440 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 10
-                Writer.Position = &H1448 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1458 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1460 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H1468 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 46
-                Writer.Position = &H1490 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H14D0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 10
-                Writer.Position = &H14E0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H14F0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H14F8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1508 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1510 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1518 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 7
-                Writer.Position = &H1530 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 20
-                Writer.Position = &H1550 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1568 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H1570 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1578 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H1580 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1588 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H1598 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H15B0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H15C0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H15C8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 14
-                Writer.Position = &H15D8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H15F8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1618 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1618 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1650 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H1668 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1670 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1678 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1680 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1688 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 4
-                Writer.Position = &H1698 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H16A0 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 3
-                Writer.Position = &H16A8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 5
-                Writer.Position = &H16B8 + i
-                Writer.WriteUInt16(65021)
-            Next
-
-            For i As Integer = 0 To 6
-                Writer.Position = &H16C8 + i
-                Writer.WriteUInt16(65021)
-            Next
-            If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "Some headgears were lost" & vbNewLine & "Try to unlock all with ''US save file'' setting"
-                fdialog.ShowDialog()
+        Try
+            If CheckBox13.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 37
+                    Writer.Position = &HFF8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1020 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 12
+                    Writer.Position = &H1030 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1040 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1058 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1060 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1088 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 14
+                    Writer.Position = &H10C8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H10F0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1100 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1120 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 28
+                    Writer.Position = &H1130 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H1150 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1158 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 2
+                    Writer.Position = &H1160 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1168 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 12
+                    Writer.Position = &H1170 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 30
+                    Writer.Position = &H1180 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 28
+                    Writer.Position = &H1130 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 37
+                    Writer.Position = &H11A8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 21
+                    Writer.Position = &H11D0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H11E8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 11
+                    Writer.Position = &H11F0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 13
+                    Writer.Position = &H1200 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1210 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 30
+                    Writer.Position = &H1218 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 28
+                    Writer.Position = &H1240 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                Writer.Position = &H1260
+                Writer.WriteUInt16(65021)
+
+                For i As Integer = 0 To 45
+                    Writer.Position = &H1268 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1298 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 13
+                    Writer.Position = &H12A0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 69
+                    Writer.Position = &H12B0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H12F8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 28
+                    Writer.Position = &H1300 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1320 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 45
+                    Writer.Position = &H1328 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1358 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 11
+                    Writer.Position = &H1360 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 12
+                    Writer.Position = &H1370 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1390 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 29
+                    Writer.Position = &H1398 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 12
+                    Writer.Position = &H13B8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 29
+                    Writer.Position = &H13C8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H13E8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H13F0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 13
+                    Writer.Position = &H13F8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H1410 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H1418 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1420 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 11
+                    Writer.Position = &H1430 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 2
+                    Writer.Position = &H1440 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 10
+                    Writer.Position = &H1448 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1458 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1460 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1468 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 46
+                    Writer.Position = &H1490 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H14D0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 10
+                    Writer.Position = &H14E0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H14F0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H14F8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1508 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1510 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1518 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 7
+                    Writer.Position = &H1530 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 20
+                    Writer.Position = &H1550 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1568 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H1570 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1578 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H1580 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1588 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H1598 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H15B0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H15C0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H15C8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 14
+                    Writer.Position = &H15D8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H15F8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1618 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1618 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1650 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1668 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1670 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1678 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1680 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1688 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1698 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H16A0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 3
+                    Writer.Position = &H16A8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 5
+                    Writer.Position = &H16B8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+
+                For i As Integer = 0 To 6
+                    Writer.Position = &H16C8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                If ComboBox11.Text = "EN" Then
+                    fdialog.Label1.Text = "Some headgears were lost" & vbNewLine & "Try to unlock all with ''US save file'' setting"
+                    fdialog.ShowDialog()
+                End If
+                If ComboBox11.Text = "FR" Then
+                    fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde US''"
+                    fdialog.ShowDialog()
+                End If
             End If
+        Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde US''"
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
-        End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox13.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox12_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox12.CheckedChanged
-        If CheckBox12.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            Writer.Position = &H1A14
-            Writer.WriteUInt16(65021)
-            For i As Integer = 0 To 45
-                Writer.Position = &H1A16 + i
+        Try
+            If CheckBox12.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                Writer.Position = &H1A14
                 Writer.WriteUInt16(65021)
-            Next
-        End If
+                For i As Integer = 0 To 45
+                    Writer.Position = &H1A16 + i
+                    Writer.WriteUInt16(65021)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox12.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox14_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox14.CheckedChanged
@@ -28008,3485 +28056,3665 @@ Public Class Form1
     End Sub
 
     Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
-        If CheckBox4.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 3574
-                Writer.Position = &H30 + i
-                Writer.WriteUInt16(65278)
-            Next
-        End If
+        Try
+            If CheckBox4.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 3574
+                    Writer.Position = &H30 + i
+                    Writer.WriteUInt16(65278)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox4.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox7_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox7.CheckedChanged
-        If CheckBox7.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 229
-                Writer.Position = &H17F0 + i
-                Writer.WriteUInt16(65278)
-            Next
-        End If
+        Try
+            If CheckBox7.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 229
+                    Writer.Position = &H17F0 + i
+                    Writer.WriteUInt16(65278)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox7.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox16_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox16.CheckedChanged
-        If CheckBox16.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 101
-                Writer.Position = &H1778 + i
-                Writer.WriteUInt16(65278)
-            Next
-        End If
+        Try
+            If CheckBox16.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 101
+                    Writer.Position = &H1778 + i
+                    Writer.WriteUInt16(65278)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox16.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox18_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox18.CheckedChanged
-        If CheckBox18.Checked = True Then
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 37
-                    Writer.Position = &HFF8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1020 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H1030 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1040 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1058 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1060 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1088 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 14
-                    Writer.Position = &H10C8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H10F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1100 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1120 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1130 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1150 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1158 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1160 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1168 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H1170 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 30
-                    Writer.Position = &H1180 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1130 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 37
-                    Writer.Position = &H11A8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 21
-                    Writer.Position = &H11D0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H11E8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H11F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H1200 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1210 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 30
-                    Writer.Position = &H1218 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1240 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                Writer.Position = &H1260
-                Writer.WriteUInt16(65022)
-
-                For i As Integer = 0 To 45
-                    Writer.Position = &H1268 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1298 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H12A0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 69
-                    Writer.Position = &H12B0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1300 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1320 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 45
-                    Writer.Position = &H1328 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1358 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H1360 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H1370 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1390 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 29
-                    Writer.Position = &H1398 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H13B8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 29
-                    Writer.Position = &H13C8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H13E8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H13F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H13F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1410 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1418 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1420 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H1430 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1440 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 10
-                    Writer.Position = &H1448 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1458 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1460 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1468 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 46
-                    Writer.Position = &H1490 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H14D0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 10
-                    Writer.Position = &H14E0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H14F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H14F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1508 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1510 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1518 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 7
-                    Writer.Position = &H1530 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 20
-                    Writer.Position = &H1550 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1568 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1570 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1578 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1580 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1588 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1598 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15B0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H15C0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H15C8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 14
-                    Writer.Position = &H15D8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1618 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1618 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1650 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1668 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1670 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1678 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1680 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1688 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1698 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H16A0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H16A8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H16B8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H16C8 + i
-                    Writer.WriteUInt16(65278)
-                Next
+        Try
+            If CheckBox18.Checked = True Then
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 37
+                        Writer.Position = &HFF8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1020 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H1030 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1040 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1058 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1060 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1088 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H10C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H10F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1100 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1120 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1130 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1150 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1158 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1160 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1168 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H1170 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 30
+                        Writer.Position = &H1180 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1130 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 37
+                        Writer.Position = &H11A8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 21
+                        Writer.Position = &H11D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H11E8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H11F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H1200 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1210 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 30
+                        Writer.Position = &H1218 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1240 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    Writer.Position = &H1260
+                    Writer.WriteUInt16(65022)
+
+                    For i As Integer = 0 To 45
+                        Writer.Position = &H1268 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1298 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H12A0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 69
+                        Writer.Position = &H12B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1300 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1320 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 45
+                        Writer.Position = &H1328 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1358 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H1360 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H1370 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1390 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 29
+                        Writer.Position = &H1398 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H13B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 29
+                        Writer.Position = &H13C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H13E8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H13F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H13F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1410 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1418 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1420 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H1430 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1440 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 10
+                        Writer.Position = &H1448 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1458 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1460 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1468 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 46
+                        Writer.Position = &H1490 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H14D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 10
+                        Writer.Position = &H14E0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H14F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H14F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1508 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1510 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1518 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H1530 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 20
+                        Writer.Position = &H1550 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1568 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1570 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1578 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1580 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1588 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1598 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H15C0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H15C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H15D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1618 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1618 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1650 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1668 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1670 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1678 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1680 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1688 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1698 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H16A0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H16A8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H16B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H16C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 46
+                        Writer.Position = &HFF8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H1030 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1040 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1058 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1060 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1080 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H10C0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H10F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1108 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1128 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1138 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1158 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1160 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1168 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1170 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 38
+                        Writer.Position = &H1178 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 37
+                        Writer.Position = &H11A8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 21
+                        Writer.Position = &H11D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H11E8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H11F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H1200 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1210 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 30
+                        Writer.Position = &H1218 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1240 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    Writer.Position = &H1260
+                    Writer.WriteUInt16(65022)
+
+                    For i As Integer = 0 To 45
+                        Writer.Position = &H1268 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1298 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H12A0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 69
+                        Writer.Position = &H12B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1300 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1320 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 45
+                        Writer.Position = &H1328 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1358 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H1360 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H1370 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1390 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 29
+                        Writer.Position = &H1398 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H13B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 29
+                        Writer.Position = &H13C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H13E8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H13F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H13F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1410 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1418 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1420 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H1430 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1440 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 10
+                        Writer.Position = &H1448 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1458 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1460 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1468 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 46
+                        Writer.Position = &H1490 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H14D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 10
+                        Writer.Position = &H14E0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H14F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H14F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1508 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1510 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1518 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H1530 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 20
+                        Writer.Position = &H1550 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1568 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H1570 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1580 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1588 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1598 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H15C0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H15C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15E0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1618 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1650 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1668 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1670 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1678 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1680 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1688 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1698 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H16A0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H16A8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H16B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H16C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
             End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 46
-                    Writer.Position = &HFF8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H1030 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1040 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1058 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1060 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1080 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 14
-                    Writer.Position = &H10C0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H10F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1108 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1128 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1138 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1158 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1160 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1168 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1170 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 38
-                    Writer.Position = &H1178 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 37
-                    Writer.Position = &H11A8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 21
-                    Writer.Position = &H11D0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H11E8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H11F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H1200 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1210 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 30
-                    Writer.Position = &H1218 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1240 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                Writer.Position = &H1260
-                Writer.WriteUInt16(65022)
-
-                For i As Integer = 0 To 45
-                    Writer.Position = &H1268 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1298 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H12A0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 69
-                    Writer.Position = &H12B0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1300 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1320 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 45
-                    Writer.Position = &H1328 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1358 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H1360 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H1370 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1390 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 29
-                    Writer.Position = &H1398 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H13B8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 29
-                    Writer.Position = &H13C8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H13E8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H13F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H13F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1410 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1418 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1420 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H1430 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1440 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 10
-                    Writer.Position = &H1448 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1458 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1460 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1468 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 46
-                    Writer.Position = &H1490 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H14D0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 10
-                    Writer.Position = &H14E0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H14F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H14F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1508 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1510 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1518 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 7
-                    Writer.Position = &H1530 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 20
-                    Writer.Position = &H1550 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1568 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H1570 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1580 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1588 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1598 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15B0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H15C0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H15C8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15D8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15E0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1618 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1650 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1668 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1670 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1678 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1680 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1688 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1698 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H16A0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H16A8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H16B8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H16C8 + i
-                    Writer.WriteUInt16(65278)
-                Next
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
             End If
-        End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox18.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox19_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox19.CheckedChanged
-        If CheckBox19.Checked = True Then
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 6
-                    Writer.Position = &HFF8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1020 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1088 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1178 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H11B0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H11F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H1228 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1270 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12C8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12D8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1300 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1358 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1378 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1440 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1458 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1578 + i
-                    Writer.WriteUInt16(65278)
-                Next
+        Try
+            If CheckBox19.Checked = True Then
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HFF8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1020 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1088 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1178 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H11B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H11F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H1228 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1270 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1300 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1358 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1378 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1440 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1458 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1578 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1020 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1080 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1180 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H11F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1228 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1358 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1378 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H13C0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1440 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1468 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1578 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1588 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1668 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1020 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1088 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1168 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1190 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1208 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1240 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12E0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1308 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1310 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1330 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1390 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1458 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1580 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1598 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H15A0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H15F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
             End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1020 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1080 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1180 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H11F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1228 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12C8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12D8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1358 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1378 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H13C0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1440 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1468 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1578 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1588 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1668 + i
-                    Writer.WriteUInt16(65278)
-                Next
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
             End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1020 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1088 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1168 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1190 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1208 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1240 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12E0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1308 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1310 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1330 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1390 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1458 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1580 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1598 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H15A0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H15F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
             End If
-        End If
+            CheckBox19.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox20_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox20.CheckedChanged
-        If CheckBox20.Checked = True Then
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 6
-                    Writer.Position = &H60 + i
+        Try
+            If CheckBox20.Checked = True Then
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H60 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HC8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H100 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H138 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H160 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H180 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H190 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H250 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H280 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H2B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H328 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H60 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H460 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H478 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H490 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H500 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H518 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H5A0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H5B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H650 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H660 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H6E0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H720 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H7A0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H7B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H848 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H868 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8E0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H918 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H968 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H988 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9C0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA08 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA38 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 30
+                        Writer.Position = &HA70 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &HAF8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &HB08 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HB68 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &HCA0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HD28 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HE18 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H40 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H80 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    Writer.Position = &HC8
                     Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HC8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H100 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H138 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H160 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H180 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H190 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1D8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H250 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H280 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H2B8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H2F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H328 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H60 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H460 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H478 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H490 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H500 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H518 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H5A0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H5B8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H650 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H660 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H6E0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H720 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H7A0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H7B8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H848 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H868 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H8E0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H8F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H918 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H968 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H988 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9B0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9C0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA08 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA38 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 30
-                    Writer.Position = &HA70 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &HAF8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &HB08 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HB68 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &HCA0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HD28 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HE18 + i
-                    Writer.WriteUInt16(65278)
-                Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HD0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H108 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H168 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H188 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H198 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1E0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H258 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H288 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H308 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H480 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H498 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4C0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H508 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H520 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H538 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H568 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H5A0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H5B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H660 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H670 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H6F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H730 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H7B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H7B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H7D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H860 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H880 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H900 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H928 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H978 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H998 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9C0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA00 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA10 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA40 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 30
+                        Writer.Position = &HA78 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &HB00 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &HB10 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HB70 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &HD88 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &HDA8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HDD8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H80 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HE0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H120 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H180 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H270 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H2A0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2E8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H328 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4C0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H550 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H568 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H5B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H5D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H608 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H620 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H680 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H688 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H690 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H698 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H6D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H6E0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H760 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H7A0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H828 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H830 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H848 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H970 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H980 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H990 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA08 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA28 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA58 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA68 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HAA0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HAB0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HAE0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 30
+                        Writer.Position = &HB18 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &HBA0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &HBB0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HC10 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HC78 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
             End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 6
-                    Writer.Position = &H40 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H80 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                Writer.Position = &HC8
-                Writer.WriteUInt16(65278)
-                For i As Integer = 0 To 6
-                    Writer.Position = &HD0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H108 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H168 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H188 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H198 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1E0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H258 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H288 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H2C8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H2D8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H308 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H480 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H498 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H4C0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H4F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H508 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H520 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H538 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H568 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H5A0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H5B8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H660 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H670 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H6F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H730 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H7B0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H7B8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H7D0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H860 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H880 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H8F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H900 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H928 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H978 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H998 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9C0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9D0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA00 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA10 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA40 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 30
-                    Writer.Position = &HA78 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &HB00 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &HB10 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HB70 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &HD88 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &HDA8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HDD8 + i
-                    Writer.WriteUInt16(65278)
-                Next
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
             End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 14
-                    Writer.Position = &H80 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HE0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H120 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H180 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1B0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H270 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H2A0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H2E8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H2F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H328 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H4C0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H4D8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H550 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H568 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H5B0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H5D0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H608 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H620 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H680 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H688 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H690 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H698 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H6D0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H6E0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H760 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H7A0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H828 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H830 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H848 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H8D8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H8F8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H970 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H980 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H990 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9B8 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA08 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA28 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA58 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA68 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HAA0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HAB0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HAE0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 30
-                    Writer.Position = &HB18 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &HBA0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &HBB0 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HC10 + i
-                    Writer.WriteUInt16(65278)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HC78 + i
-                    Writer.WriteUInt16(65278)
-                Next
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
             End If
-        End If
+            CheckBox20.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox29_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox29.CheckedChanged
-        If CheckBox29.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 3574
-                Writer.Position = &H30 + i
-                Writer.WriteUInt16(65021)
-            Next
-        End If
+        Try
+            If CheckBox29.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 3574
+                    Writer.Position = &H30 + i
+                    Writer.WriteUInt16(65021)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox29.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox28_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox28.CheckedChanged
-        If CheckBox28.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 229
-                Writer.Position = &H17F0 + i
-                Writer.WriteUInt16(65021)
-            Next
-        End If
+        Try
+            If CheckBox28.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 229
+                    Writer.Position = &H17F0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox28.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox27_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox27.CheckedChanged
-        If CheckBox27.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 164
-                Writer.Position = &H1902 + i
-                Writer.WriteUInt16(65021)
-            Next
-        End If
+        Try
+            If CheckBox27.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 164
+                    Writer.Position = &H1902 + i
+                    Writer.WriteUInt16(65021)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox27.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox26_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox26.CheckedChanged
-        If CheckBox26.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 16
-                Writer.Position = &H18F0 + i
-                Writer.WriteUInt16(65021)
-            Next
-        End If
+        Try
+            If CheckBox26.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 16
+                    Writer.Position = &H18F0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox26.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox25_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox25.CheckedChanged
-        If CheckBox25.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 101
-                Writer.Position = &H1778 + i
-                Writer.WriteUInt16(65021)
-            Next
-        End If
+        Try
+            If CheckBox25.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 101
+                    Writer.Position = &H1778 + i
+                    Writer.WriteUInt16(65021)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox25.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox24_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox24.CheckedChanged
-        If CheckBox24.Checked = True Then
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 37
-                    Writer.Position = &HFF8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1020 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H1030 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1040 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1058 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1060 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1088 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 14
-                    Writer.Position = &H10C8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H10F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1100 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1120 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1130 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1150 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1158 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1160 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1168 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H1170 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 30
-                    Writer.Position = &H1180 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1130 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 37
-                    Writer.Position = &H11A8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 21
-                    Writer.Position = &H11D0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H11E8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H11F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H1200 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1210 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 30
-                    Writer.Position = &H1218 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1240 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                Writer.Position = &H1260
-                Writer.WriteUInt16(65021)
-
-                For i As Integer = 0 To 45
-                    Writer.Position = &H1268 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1298 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H12A0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 69
-                    Writer.Position = &H12B0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1300 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1320 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 45
-                    Writer.Position = &H1328 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1358 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H1360 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H1370 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1390 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 29
-                    Writer.Position = &H1398 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H13B8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 29
-                    Writer.Position = &H13C8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H13E8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H13F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H13F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1410 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1418 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1420 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H1430 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1440 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 10
-                    Writer.Position = &H1448 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1458 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1460 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1468 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 46
-                    Writer.Position = &H1490 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H14D0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 10
-                    Writer.Position = &H14E0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H14F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H14F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1508 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1510 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1518 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 7
-                    Writer.Position = &H1530 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 20
-                    Writer.Position = &H1550 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1568 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1570 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1578 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1580 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1588 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1598 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15B0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H15C0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H15C8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 14
-                    Writer.Position = &H15D8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1618 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1618 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1650 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1668 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1670 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1678 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1680 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1688 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1698 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H16A0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H16A8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H16B8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H16C8 + i
-                    Writer.WriteUInt16(65021)
-                Next
+        Try
+            If CheckBox24.Checked = True Then
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 37
+                        Writer.Position = &HFF8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1020 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H1030 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1040 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1058 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1060 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1088 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H10C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H10F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1100 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1120 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1130 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1150 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1158 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1160 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1168 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H1170 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 30
+                        Writer.Position = &H1180 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1130 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 37
+                        Writer.Position = &H11A8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 21
+                        Writer.Position = &H11D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H11E8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H11F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H1200 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1210 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 30
+                        Writer.Position = &H1218 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1240 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    Writer.Position = &H1260
+                    Writer.WriteUInt16(65021)
+
+                    For i As Integer = 0 To 45
+                        Writer.Position = &H1268 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1298 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H12A0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 69
+                        Writer.Position = &H12B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1300 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1320 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 45
+                        Writer.Position = &H1328 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1358 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H1360 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H1370 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1390 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 29
+                        Writer.Position = &H1398 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H13B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 29
+                        Writer.Position = &H13C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H13E8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H13F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H13F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1410 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1418 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1420 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H1430 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1440 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 10
+                        Writer.Position = &H1448 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1458 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1460 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1468 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 46
+                        Writer.Position = &H1490 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H14D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 10
+                        Writer.Position = &H14E0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H14F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H14F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1508 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1510 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1518 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H1530 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 20
+                        Writer.Position = &H1550 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1568 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1570 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1578 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1580 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1588 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1598 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H15C0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H15C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H15D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1618 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1618 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1650 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1668 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1670 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1678 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1680 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1688 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1698 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H16A0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H16A8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H16B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H16C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 46
+                        Writer.Position = &HFF8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H1030 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1040 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1058 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1060 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1080 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H10C0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H10F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1108 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1128 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1138 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1158 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1160 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1168 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1170 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 38
+                        Writer.Position = &H1178 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 37
+                        Writer.Position = &H11A8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 21
+                        Writer.Position = &H11D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H11E8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H11F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H1200 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1210 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 30
+                        Writer.Position = &H1218 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1240 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    Writer.Position = &H1260
+                    Writer.WriteUInt16(65021)
+
+                    For i As Integer = 0 To 45
+                        Writer.Position = &H1268 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1298 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H12A0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 69
+                        Writer.Position = &H12B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 28
+                        Writer.Position = &H1300 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1320 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 45
+                        Writer.Position = &H1328 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1358 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H1360 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H1370 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1390 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 29
+                        Writer.Position = &H1398 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 12
+                        Writer.Position = &H13B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 29
+                        Writer.Position = &H13C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H13E8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H13F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H13F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1410 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1418 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1420 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 11
+                        Writer.Position = &H1430 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1440 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 10
+                        Writer.Position = &H1448 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1458 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1460 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1468 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 46
+                        Writer.Position = &H1490 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H14D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 10
+                        Writer.Position = &H14E0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H14F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H14F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1508 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1510 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1518 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H1530 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 20
+                        Writer.Position = &H1550 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1568 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 13
+                        Writer.Position = &H1570 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1580 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1588 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1598 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H15C0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H15C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15E0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H15F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1618 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1650 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1668 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1670 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1678 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1680 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1688 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1698 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H16A0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H16A8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H16B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H16C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
             End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 46
-                    Writer.Position = &HFF8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H1030 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1040 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1058 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1060 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1080 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 14
-                    Writer.Position = &H10C0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H10F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1108 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1128 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1138 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1158 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1160 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1168 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1170 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 38
-                    Writer.Position = &H1178 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 37
-                    Writer.Position = &H11A8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 21
-                    Writer.Position = &H11D0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H11E8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H11F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H1200 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1210 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 30
-                    Writer.Position = &H1218 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1240 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                Writer.Position = &H1260
-                Writer.WriteUInt16(65021)
-
-                For i As Integer = 0 To 45
-                    Writer.Position = &H1268 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1298 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H12A0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 69
-                    Writer.Position = &H12B0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 28
-                    Writer.Position = &H1300 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1320 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 45
-                    Writer.Position = &H1328 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1358 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H1360 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H1370 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1390 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 29
-                    Writer.Position = &H1398 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 12
-                    Writer.Position = &H13B8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 29
-                    Writer.Position = &H13C8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H13E8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H13F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H13F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1410 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1418 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1420 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 11
-                    Writer.Position = &H1430 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1440 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 10
-                    Writer.Position = &H1448 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1458 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1460 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1468 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 46
-                    Writer.Position = &H1490 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H14D0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 10
-                    Writer.Position = &H14E0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H14F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H14F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1508 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1510 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1518 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 7
-                    Writer.Position = &H1530 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 20
-                    Writer.Position = &H1550 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1568 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 13
-                    Writer.Position = &H1570 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1580 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1588 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H1598 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15B0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H15C0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H15C8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15D8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15E0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H15F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1618 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1650 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1668 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1670 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1678 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1680 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1688 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1698 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H16A0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 3
-                    Writer.Position = &H16A8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 5
-                    Writer.Position = &H16B8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-
-                For i As Integer = 0 To 6
-                    Writer.Position = &H16C8 + i
-                    Writer.WriteUInt16(65021)
-                Next
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
             End If
-        End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox24.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox23_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox23.CheckedChanged
-        If CheckBox23.Checked = True Then
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                Writer.Position = &H1A14
-                Writer.WriteUInt16(65021)
-                For i As Integer = 0 To 46
-                    Writer.Position = &H1A16 + i
+        Try
+            If CheckBox23.Checked = True Then
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H1A14
                     Writer.WriteUInt16(65021)
-                Next
-            End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                Writer.Position = &H19E2
-                Writer.WriteUInt16(65021)
-                For i As Integer = 0 To 46
-                    Writer.Position = &H19E4 + i
+                    For i As Integer = 0 To 46
+                        Writer.Position = &H1A16 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H19E2
                     Writer.WriteUInt16(65021)
-                Next
-            End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                Writer.Position = &H19B0
-                Writer.WriteUInt16(65021)
-                For i As Integer = 0 To 46
-                    Writer.Position = &H19B2 + i
+                    For i As Integer = 0 To 46
+                        Writer.Position = &H19E4 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H19B0
                     Writer.WriteUInt16(65021)
-                Next
+                    For i As Integer = 0 To 46
+                        Writer.Position = &H19B2 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
             End If
-        End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox23.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox21_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox21.CheckedChanged
-        If CheckBox21.Checked = True Then
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 6
-                    Writer.Position = &HFF8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1020 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1088 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1178 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H11B0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H11F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H1228 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1270 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12C8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12D8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1300 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1358 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1378 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1440 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1458 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1578 + i
-                    Writer.WriteUInt16(65021)
-                Next
+        Try
+            If CheckBox21.Checked = True Then
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HFF8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1020 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1088 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1178 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H11B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H11F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H1228 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1270 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1300 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1358 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1378 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1440 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1458 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1578 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1020 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1080 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1180 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H11F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1228 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1358 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1378 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H13C0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1440 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1468 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1578 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1588 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1668 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1020 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1088 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1168 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1190 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1208 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1240 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12E0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1308 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1310 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1330 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1390 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H1458 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1580 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1598 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H15A0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H15F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
             End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1020 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1080 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1180 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H11F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1228 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12C8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12D8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H12F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1358 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1378 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H13C0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1440 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1468 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1578 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1588 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1668 + i
-                    Writer.WriteUInt16(65021)
-                Next
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
             End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1020 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1088 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1168 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1190 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1208 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1240 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12E0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H12F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1308 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1310 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1330 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1390 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 2
-                    Writer.Position = &H1458 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H1580 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &H1598 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H15A0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H15F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
             End If
-        End If
+            CheckBox21.Checked = False
+        End Try
     End Sub
 
     Private Sub CheckBox22_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox22.CheckedChanged
-        If CheckBox22.Checked = True Then
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 6
-                    Writer.Position = &H60 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HC8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H100 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H138 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H160 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H180 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H190 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1D8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H250 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H280 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H2B8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H2F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H328 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H60 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H460 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H478 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H490 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H500 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H518 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H5A0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H5B8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H650 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H660 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H6E0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H720 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H7A0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H7B8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H848 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H868 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H8E0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H8F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H918 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H968 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H988 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9B0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9C0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA08 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA38 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 30
-                    Writer.Position = &HA70 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &HAF8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &HB08 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HB68 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &HCA0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HD28 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HE18 + i
-                    Writer.WriteUInt16(65021)
-                Next
+        Try
+            If CheckBox22.Checked = True Then
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H60 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HC8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H100 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H138 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H160 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H180 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H190 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H250 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H280 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H2B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H328 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H60 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H460 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H478 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H490 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H500 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H518 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H5A0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H5B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H650 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H660 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H6E0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H720 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H7A0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H7B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H848 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H868 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8E0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H918 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H968 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H988 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9C0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA08 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA38 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 30
+                        Writer.Position = &HA70 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &HAF8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &HB08 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HB68 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &HCA0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HD28 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HE18 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H40 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H80 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    Writer.Position = &HC8
+                    Writer.WriteUInt16(65278)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HD0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H108 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H168 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H188 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H198 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1E0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H258 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H288 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H308 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H480 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H498 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4C0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H508 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H520 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H538 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H568 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H5A0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H5B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H660 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H670 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H6F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H730 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H7B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H7B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H7D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H860 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H880 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H900 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H928 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H978 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H998 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9C0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA00 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA10 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA40 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 30
+                        Writer.Position = &HA78 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &HB00 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &HB10 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HB70 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &HD88 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &HDA8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HDD8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H80 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HE0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H120 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H180 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H270 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H2A0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2E8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H328 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4C0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H550 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H568 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H5B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H5D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H608 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H620 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H680 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H688 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H690 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H698 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H6D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H6E0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H760 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H7A0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H828 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H830 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H848 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H970 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H980 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H990 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA08 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA28 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA58 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA68 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HAA0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HAB0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HAE0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 30
+                        Writer.Position = &HB18 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &HBA0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &HBB0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HC10 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HC78 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
             End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 6
-                    Writer.Position = &H40 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H80 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                Writer.Position = &HC8
-                Writer.WriteUInt16(65278)
-                For i As Integer = 0 To 6
-                    Writer.Position = &HD0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H108 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H168 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H188 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H198 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1E0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H258 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H288 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H2C8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H2D8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H308 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H480 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H498 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H4C0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H4F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H508 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H520 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H538 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H568 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H5A0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H5B8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H660 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H670 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H6F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H730 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H7B0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H7B8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H7D0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H860 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H880 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H8F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H900 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H928 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H978 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H998 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9C0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9D0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA00 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA10 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA40 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 30
-                    Writer.Position = &HA78 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &HB00 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &HB10 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HB70 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &HD88 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 5
-                    Writer.Position = &HDA8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HDD8 + i
-                    Writer.WriteUInt16(65021)
-                Next
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
             End If
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 14
-                    Writer.Position = &H80 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HE0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H120 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H180 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1B0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H1F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H270 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H2A0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H2E8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H2F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H328 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H4C0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H4D8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H550 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H568 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H5B0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H5D0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &H608 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H620 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H680 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H688 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H690 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H698 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H6D0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H6E0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H760 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &H7A0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 4
-                    Writer.Position = &H828 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H830 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H848 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H8D8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H8F8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H970 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H980 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H990 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &H9B8 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA08 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA28 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA58 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HA68 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HAA0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HAB0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HAE0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 30
-                    Writer.Position = &HB18 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 3
-                    Writer.Position = &HBA0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 14
-                    Writer.Position = &HBB0 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HC10 + i
-                    Writer.WriteUInt16(65021)
-                Next
-                For i As Integer = 0 To 6
-                    Writer.Position = &HC78 + i
-                    Writer.WriteUInt16(65021)
-                Next
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
             End If
-        End If
+            CheckBox22.Checked = False
+        End Try
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
@@ -32104,15 +32332,27 @@ Public Class Form1
     End Sub
 
     Private Sub CheckBox31_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox31.CheckedChanged
-        If CheckBox31.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            Writer.Position = &H19B0
-            Writer.WriteUInt16(65021)
-            For i As Integer = 0 To 46
-                Writer.Position = &H19B2 + i
+        Try
+            If CheckBox31.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                Writer.Position = &H19B0
                 Writer.WriteUInt16(65021)
-            Next
-        End If
+                For i As Integer = 0 To 46
+                    Writer.Position = &H19B2 + i
+                    Writer.WriteUInt16(65021)
+                Next
+            End If
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox31.Checked = False
+        End Try
     End Sub
 
     Private Sub Panel2_click(sender As Object, e As EventArgs) Handles Panel2.Click
@@ -32667,84 +32907,96 @@ Public Class Form1
     End Sub
 
     Private Sub CheckBox32_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox32.CheckedChanged
-        If CheckBox32.Checked = True Then
-            Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-            For i As Integer = 0 To 6
-                Writer.Position = &H1020 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 6
-                Writer.Position = &H1088 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 4
-                Writer.Position = &H1168 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 4
-                Writer.Position = &H1190 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 6
-                Writer.Position = &H1208 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 6
-                Writer.Position = &H1240 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 6
-                Writer.Position = &H12E0 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 6
-                Writer.Position = &H12F0 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 5
-                Writer.Position = &H1308 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 6
-                Writer.Position = &H1310 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 4
-                Writer.Position = &H1330 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 4
-                Writer.Position = &H1390 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 2
-                Writer.Position = &H1458 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 4
-                Writer.Position = &H1580 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 5
-                Writer.Position = &H1598 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 3
-                Writer.Position = &H15A0 + i
-                Writer.WriteUInt16(65021)
-            Next
-            For i As Integer = 0 To 14
-                Writer.Position = &H15F8 + i
-                Writer.WriteUInt16(65021)
-            Next
-            If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "Some headgears were lost" & vbNewLine & "Try to unlock all with ''EU save file'' setting"
-                fdialog.ShowDialog()
+        Try
+            If CheckBox32.Checked = True Then
+                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1020 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1088 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1168 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1190 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1208 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1240 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 6
+                    Writer.Position = &H12E0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 6
+                    Writer.Position = &H12F0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1308 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 6
+                    Writer.Position = &H1310 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1330 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1390 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 2
+                    Writer.Position = &H1458 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1580 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 5
+                    Writer.Position = &H1598 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 3
+                    Writer.Position = &H15A0 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                For i As Integer = 0 To 14
+                    Writer.Position = &H15F8 + i
+                    Writer.WriteUInt16(65021)
+                Next
+                If ComboBox11.Text = "EN" Then
+                    fdialog.Label1.Text = "Some headgears were lost" & vbNewLine & "Try to unlock all with ''EU save file'' setting"
+                    fdialog.ShowDialog()
+                End If
+                If ComboBox11.Text = "FR" Then
+                    fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde EU''"
+                    fdialog.ShowDialog()
+                End If
             End If
+        Catch ex As Exception
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde EU''"
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
-        End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            CheckBox32.Checked = False
+        End Try
     End Sub
 End Class
