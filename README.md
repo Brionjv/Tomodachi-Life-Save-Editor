@@ -9,11 +9,12 @@
 
 # Features :
 - Edit problems solved, StreetPass encounters, weddings, Island's name, money, and other things
-- Edit Mii ( Name, Laast name, level, experience, and other)
-- Unlock all items (Interiors, Special foods, clothes, ...)
+- Edit Mii ( Name, Last name, level, experience, and other)
+- Unlock all items (Interiors, Special foods, clothes, ...) by numbers or by shop catalog
 - Repair save file if something wrong is used
 - Remove time travel penality
 - Reset StreetPass/SpotPass
+- Edit island's buildings
 
 # Releases :
 https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases
