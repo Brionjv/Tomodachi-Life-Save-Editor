@@ -168,7 +168,6 @@ Partial Class Form1
         Me.Label37 = New System.Windows.Forms.Label()
         Me.PictureBox57 = New System.Windows.Forms.PictureBox()
         Me.Label36 = New System.Windows.Forms.Label()
-        Me.CheckBox35 = New System.Windows.Forms.CheckBox()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Label33 = New System.Windows.Forms.Label()
@@ -1946,7 +1945,6 @@ Partial Class Form1
         Me.TabPage10.Controls.Add(Me.Label37)
         Me.TabPage10.Controls.Add(Me.PictureBox57)
         Me.TabPage10.Controls.Add(Me.Label36)
-        Me.TabPage10.Controls.Add(Me.CheckBox35)
         Me.TabPage10.Controls.Add(Me.Label35)
         Me.TabPage10.Controls.Add(Me.Label34)
         Me.TabPage10.Controls.Add(Me.Label33)
@@ -2102,19 +2100,6 @@ Partial Class Form1
         Me.Label36.Size = New System.Drawing.Size(45, 13)
         Me.Label36.TabIndex = 88
         Me.Label36.Text = "Copying"
-        '
-        'CheckBox35
-        '
-        Me.CheckBox35.AutoSize = True
-        Me.CheckBox35.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox35.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox35.ForeColor = System.Drawing.Color.Black
-        Me.CheckBox35.Location = New System.Drawing.Point(203, 202)
-        Me.CheckBox35.Name = "CheckBox35"
-        Me.CheckBox35.Size = New System.Drawing.Size(49, 17)
-        Me.CheckBox35.TabIndex = 103
-        Me.CheckBox35.Text = "Dev"
-        Me.CheckBox35.UseVisualStyleBackColor = False
         '
         'Label35
         '
@@ -2394,12 +2379,11 @@ Partial Class Form1
         'CheckBox34
         '
         Me.CheckBox34.AutoSize = True
-        Me.CheckBox34.Enabled = False
         Me.CheckBox34.Location = New System.Drawing.Point(348, 130)
         Me.CheckBox34.Name = "CheckBox34"
-        Me.CheckBox34.Size = New System.Drawing.Size(57, 17)
+        Me.CheckBox34.Size = New System.Drawing.Size(54, 17)
         Me.CheckBox34.TabIndex = 102
-        Me.CheckBox34.Text = "Delete"
+        Me.CheckBox34.Text = "Break"
         Me.CheckBox34.UseVisualStyleBackColor = True
         '
         'CheckBox33
@@ -2408,9 +2392,9 @@ Partial Class Form1
         Me.CheckBox33.Enabled = False
         Me.CheckBox33.Location = New System.Drawing.Point(348, 95)
         Me.CheckBox33.Name = "CheckBox33"
-        Me.CheckBox33.Size = New System.Drawing.Size(57, 17)
+        Me.CheckBox33.Size = New System.Drawing.Size(54, 17)
         Me.CheckBox33.TabIndex = 101
-        Me.CheckBox33.Text = "Delete"
+        Me.CheckBox33.Text = "Break"
         Me.CheckBox33.UseVisualStyleBackColor = True
         '
         'PictureBox58
@@ -3335,7 +3319,7 @@ Partial Class Form1
         Me.ComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox12.FormattingEnabled = True
-        Me.ComboBox12.Items.AddRange(New Object() {"US Save file", "EU Save file", "JP Save file"})
+        Me.ComboBox12.Items.AddRange(New Object() {"US Save file", "EU Save file", "JP Save file", "KO Save file"})
         Me.ComboBox12.Location = New System.Drawing.Point(28, 68)
         Me.ComboBox12.Name = "ComboBox12"
         Me.ComboBox12.Size = New System.Drawing.Size(100, 21)
@@ -3869,6 +3853,5 @@ Partial Class Form1
     Friend WithEvents NumericUpDown57 As System.Windows.Forms.NumericUpDown
     Friend WithEvents CheckBox34 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox33 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox35 As System.Windows.Forms.CheckBox
 
 End Class
