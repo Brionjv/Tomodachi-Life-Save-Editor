@@ -308,6 +308,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\tomoK1.png" />
+    <None Include="Resources\tomoK.png" />
     <None Include="Resources\kid.png" />
     <None Include="Resources\grown-up.png" />
     <None Include="Resources\couleur.png" />

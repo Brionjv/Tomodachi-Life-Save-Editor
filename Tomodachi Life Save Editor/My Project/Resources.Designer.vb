@@ -1983,6 +1983,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property tomoK() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tomoK", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property tour() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("tour", resourceCulture)

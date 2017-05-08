@@ -285,6 +285,8 @@ Partial Class Form1
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -3319,7 +3321,7 @@ Partial Class Form1
         Me.ComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox12.FormattingEnabled = True
-        Me.ComboBox12.Items.AddRange(New Object() {"US Save file", "EU Save file", "JP Save file", "KO Save file"})
+        Me.ComboBox12.Items.AddRange(New Object() {"US Save file", "EU Save file", "JP Save file", "KR Save file"})
         Me.ComboBox12.Location = New System.Drawing.Point(28, 68)
         Me.ComboBox12.Name = "ComboBox12"
         Me.ComboBox12.Size = New System.Drawing.Size(100, 21)
@@ -3359,14 +3361,34 @@ Partial Class Form1
         Me.Button6.Text = "Save"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'Button8
+        '
+        Me.Button8.AutoSize = True
+        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button8.Location = New System.Drawing.Point(28, 12)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(81, 28)
+        Me.Button8.TabIndex = 39
+        Me.Button8.Text = "Open"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.AutoSize = True
+        Me.Button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button9.Location = New System.Drawing.Point(360, 12)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(81, 28)
+        Me.Button9.TabIndex = 40
+        Me.Button9.Text = "Save"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(469, 389)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.ComboBox12)
         Me.Controls.Add(Me.PictureBox36)
@@ -3376,8 +3398,12 @@ Partial Class Form1
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.TabControl1)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.PictureBox30)
+        Me.Controls.Add(Me.Button8)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button2)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
@@ -3853,5 +3879,7 @@ Partial Class Form1
     Friend WithEvents NumericUpDown57 As System.Windows.Forms.NumericUpDown
     Friend WithEvents CheckBox34 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox33 As System.Windows.Forms.CheckBox
+    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents Button9 As System.Windows.Forms.Button
 
 End Class
