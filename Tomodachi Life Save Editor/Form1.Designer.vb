@@ -2391,7 +2391,6 @@ Partial Class Form1
         'CheckBox33
         '
         Me.CheckBox33.AutoSize = True
-        Me.CheckBox33.Enabled = False
         Me.CheckBox33.Location = New System.Drawing.Point(348, 95)
         Me.CheckBox33.Name = "CheckBox33"
         Me.CheckBox33.Size = New System.Drawing.Size(54, 17)
