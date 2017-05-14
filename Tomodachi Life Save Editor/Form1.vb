@@ -1122,15 +1122,30 @@ Public Class Form1
             Writer.WriteInt8(NumericUpDown37.Value)
             Writer.Position = parc
             Writer.WriteInt8(NumericUpDown30.Value)
+            Writer.Position = alltime
+            Writer.WriteUInt16(NumericUpDown46.Value)
+            Writer.Position = alltime2
+            Writer.WriteUInt16(NumericUpDown47.Value)
+            Writer.Position = fav
+            Writer.WriteUInt16(NumericUpDown48.Value)
+            Writer.Position = fav2
+            Writer.WriteUInt16(NumericUpDown49.Value)
+            Writer.Position = fav3
+            Writer.WriteUInt16(NumericUpDown50.Value)
+            Writer.Position = worst
+            Writer.WriteUInt16(NumericUpDown51.Value)
+            Writer.Position = worst2
+            Writer.WriteUInt16(NumericUpDown52.Value)
+            Writer.Position = grow
+            Writer.WriteInt8(NumericUpDown56.Value)
             Writer.Position = &H0
             Writer.WriteInt8(17)
-
-            If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "Sauvegarde enregistré"
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "Changes Mii Save" & vbNewLine & "Warning : Edit favorite foods values with wrong ID corrupts your save file "
                 fdialog.ShowDialog()
             End If
-            If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "File Save"
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Changements Mii Sauvegardé" & vbNewLine & "Attention : Editer les valeurs de la nourriture favorite avec un mauvais ID corrompt la sauvegarde"
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
@@ -1156,11 +1171,34 @@ Public Class Form1
     Private Sub CheckBox1_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles CheckBox1.CheckedChanged
         Try
             If CheckBox1.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 102
-                    Writer.Position = &H1778 + i
-                    Writer.WriteInt8(NumericUpDown8.Value)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 102
+                        Writer.Position = &H1778 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 102
+                        Writer.Position = &H1778 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 102
+                        Writer.Position = &H1778 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 104
+                        Writer.Position = &H1778 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -1200,11 +1238,34 @@ Public Class Form1
     Private Sub CheckBox5_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles CheckBox5.CheckedChanged
         Try
             If CheckBox5.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 165
-                    Writer.Position = &H1902 + i
-                    Writer.WriteInt8(NumericUpDown8.Value)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 165
+                        Writer.Position = &H1902 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 165
+                        Writer.Position = &H1902 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 165
+                        Writer.Position = &H1902 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 152
+                        Writer.Position = &H1902 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -1249,6 +1310,15 @@ Public Class Form1
                         Writer.WriteInt8(NumericUpDown8.Value)
                     Next
                 End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H1A46
+                    Writer.WriteInt8(NumericUpDown8.Value)
+                    For i As Integer = 0 To 47
+                        Writer.Position = &H1A48 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -1266,11 +1336,34 @@ Public Class Form1
     Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
         Try
             If CheckBox3.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 230
-                    Writer.Position = &H17F0 + i
-                    Writer.WriteInt8(NumericUpDown8.Value)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 230
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 230
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 230
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 255
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -1288,11 +1381,34 @@ Public Class Form1
     Private Sub CheckBox6_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox6.CheckedChanged
         Try
             If CheckBox6.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 3575
-                    Writer.Position = &H30 + i
-                    Writer.WriteInt8(NumericUpDown8.Value)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3575
+                        Writer.Position = &H30 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3575
+                        Writer.Position = &H30 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3575
+                        Writer.Position = &H30 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3648
+                        Writer.Position = &H30 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -27711,14 +27827,29 @@ Public Class Form1
                 Writer.Position = objdiv
                 Writer.WriteUInt24(0)
             End If
-
+            Writer.Position = alltime
+            Writer.WriteUInt16(NumericUpDown46.Value)
+            Writer.Position = alltime2
+            Writer.WriteUInt16(NumericUpDown47.Value)
+            Writer.Position = fav
+            Writer.WriteUInt16(NumericUpDown48.Value)
+            Writer.Position = fav2
+            Writer.WriteUInt16(NumericUpDown49.Value)
+            Writer.Position = fav3
+            Writer.WriteUInt16(NumericUpDown50.Value)
+            Writer.Position = worst
+            Writer.WriteUInt16(NumericUpDown51.Value)
+            Writer.Position = worst2
+            Writer.WriteUInt16(NumericUpDown52.Value)
+            Writer.Position = grow
+            Writer.WriteInt8(NumericUpDown56.Value)
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "Changes Mii Save"
+                fdialog.Label1.Text = "Changes Mii Save" & vbNewLine & "Warning : Edit favorite foods values with wrong ID corrupts your save file "
                 fdialog.ShowDialog()
             End If
 
             If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "Changements Mii Sauvegardé"
+                fdialog.Label1.Text = "Changements Mii Sauvegardé" & vbNewLine & "Attention : Editer les valeurs de la nourriture favorite avec un mauvais ID corrompt la sauvegarde"
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
@@ -27828,6 +27959,9 @@ Public Class Form1
             ComboBox1.Enabled = False
             Button3.Visible = False
             Button7.Visible = False
+            CheckBox9.Enabled = False
+            CheckBox18.Enabled = False
+            CheckBox24.Enabled = False
         End If
     End Sub
 
