@@ -10,6 +10,9 @@
         If Form1.ComboBox12.SelectedItem = Form1.ComboBox12.Items.Item(2) Then
             PictureBox1.BackgroundImage = My.Resources.tomoJ
         End If
+        If Form1.ComboBox12.SelectedItem = Form1.ComboBox12.Items.Item(3) Then
+            PictureBox1.BackgroundImage = My.Resources.tomoK
+        End If
         RadioButton5.Checked = True
         RadioButton6.Checked = True
         RadioButton7.Checked = True

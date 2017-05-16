@@ -10,6 +10,9 @@
         If Form1.ComboBox12.SelectedItem = Form1.ComboBox12.Items.Item(2) Then
             PictureBox2.BackgroundImage = My.Resources.tomoJ
         End If
+        If Form1.ComboBox12.SelectedItem = Form1.ComboBox12.Items.Item(3) Then
+            PictureBox2.BackgroundImage = My.Resources.tomoK
+        End If
         If Form1.ComboBox11.Text = "EN" Then
             Label1.Text = "Done"
             Label1.Location = New Point(183, 268)

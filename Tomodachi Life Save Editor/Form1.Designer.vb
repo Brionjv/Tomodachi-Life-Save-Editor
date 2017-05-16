@@ -1902,6 +1902,7 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.SystemColors.Control
+        Me.Button3.Enabled = False
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.Location = New System.Drawing.Point(6, 156)
         Me.Button3.Name = "Button3"
@@ -1913,6 +1914,7 @@ Partial Class Form1
         'Button7
         '
         Me.Button7.BackColor = System.Drawing.SystemColors.Control
+        Me.Button7.Enabled = False
         Me.Button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button7.Location = New System.Drawing.Point(6, 156)
         Me.Button7.Name = "Button7"

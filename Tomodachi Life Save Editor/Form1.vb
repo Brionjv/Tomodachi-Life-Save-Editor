@@ -937,6 +937,13 @@ Public Class Form1
             Reader.Position = &H1EFFE4
             parc = Reader.Position
             NumericUpDown30.Value = Reader.ReadInt8
+            Reader.Position = &H1EFFE5
+            tour = Reader.Position
+            NumericUpDown23.Value = Reader.ReadInt8
+            Reader.Position = &H1EFFE6
+            part = Reader.Position
+            NumericUpDown43.Value = Reader.ReadInt8
+
             ComboBox12.Enabled = False
             ComboBox11.Enabled = False
         Catch ex As Exception
@@ -1261,7 +1268,7 @@ Public Class Form1
                 End If
                 If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
                     Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                    For i As Integer = 0 To 152
+                    For i As Integer = 0 To 165
                         Writer.Position = &H1902 + i
                         Writer.WriteInt8(NumericUpDown8.Value)
                     Next
@@ -2530,6 +2537,73 @@ Public Class Form1
                         Writer.WriteInt8(NumericUpDown8.Value)
                     Next
                 End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H1020 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H1070 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1158 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H11B0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H11E8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H1280 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H1290 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12A8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H12B0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12D0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12D8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1330 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1378 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H13F0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1528 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1530 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -3129,6 +3203,217 @@ Public Class Form1
                     Next
                     For i As Integer = 0 To 7
                         Writer.Position = &HC78 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 7
+                        Writer.Position = &HC8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H100 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H160 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H180 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H190 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H1D8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H250 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 15
+                        Writer.Position = &H280 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H2B8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H2C8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H2F8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H330 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H460 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H478 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H4E0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H4F8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H518 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H530 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H568 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H580 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H5C8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H5D0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H5D8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H5E0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H618 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H628 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 15
+                        Writer.Position = &H6A8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H6E8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H770 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H778 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H790 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H820 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H840 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H8C0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H8D0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H8F8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H948 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H968 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H998 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H9A8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H9D8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &H9E8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &HA18 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 31
+                        Writer.Position = &HA50 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &HAC0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &HAD8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 15
+                        Writer.Position = &HAE8 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &HB48 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &HB78 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &HBB0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &HDF0 + i
+                        Writer.WriteInt8(NumericUpDown8.Value)
+                    Next
+                    For i As Integer = 0 To 7
+                        Writer.Position = &HE50 + i
                         Writer.WriteInt8(NumericUpDown8.Value)
                     Next
                 End If
@@ -4232,8 +4517,10 @@ Public Class Form1
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         Try
             CheckBox34.Checked = False
+            Button3.Enabled = True
+            Button7.Enabled = True
         Dim Reader As New PackageIO.Reader(filepath, PackageIO.Endian.Little)
-            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Or ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Or ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Or ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
         If ComboBox1.Text = "Mii 1" Then
             Reader.Position = &H1CD0
             Mii1P = Reader.Position
@@ -27888,7 +28175,6 @@ Public Class Form1
             PictureBox55.Enabled = True
             PictureBox54.Image = Nothing
             PictureBox54.Enabled = True
-            ComboBox1.Enabled = True
         End If
         If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
             PictureBox30.Image = My.Resources.tomoF
@@ -27913,7 +28199,6 @@ Public Class Form1
             PictureBox55.Enabled = True
             PictureBox54.Image = Nothing
             PictureBox54.Enabled = True
-            ComboBox1.Enabled = True
         End If
         If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
             PictureBox30.Image = My.Resources.tomoJ
@@ -27938,7 +28223,6 @@ Public Class Form1
             PictureBox55.Enabled = False
             PictureBox54.Image = My.Resources.parti
             PictureBox54.Enabled = False
-            ComboBox1.Enabled = True
         End If
         If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
             PictureBox30.Image = My.Resources.tomoK
@@ -27956,12 +28240,13 @@ Public Class Form1
             PictureBox55.Enabled = True
             PictureBox54.Image = Nothing
             PictureBox54.Enabled = True
-            ComboBox1.Enabled = False
-            Button3.Visible = False
+            Button3.Visible = True
             Button7.Visible = False
             CheckBox9.Enabled = False
             CheckBox18.Enabled = False
             CheckBox24.Enabled = False
+            PictureBox35.Enabled = True
+            Button4.Enabled = True
         End If
     End Sub
 
@@ -29068,11 +29353,34 @@ Public Class Form1
     Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
         Try
             If CheckBox4.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 3574
-                    Writer.Position = &H30 + i
-                    Writer.WriteUInt16(65278)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3574
+                        Writer.Position = &H30 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3574
+                        Writer.Position = &H30 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3574
+                        Writer.Position = &H30 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3647
+                        Writer.Position = &H30 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -29090,11 +29398,34 @@ Public Class Form1
     Private Sub CheckBox7_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox7.CheckedChanged
         Try
             If CheckBox7.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 229
-                    Writer.Position = &H17F0 + i
-                    Writer.WriteUInt16(65278)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 229
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 229
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 229
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 254
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -29112,11 +29443,34 @@ Public Class Form1
     Private Sub CheckBox16_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox16.CheckedChanged
         Try
             If CheckBox16.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 101
-                    Writer.Position = &H1778 + i
-                    Writer.WriteUInt16(65278)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 101
+                        Writer.Position = &H1778 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 101
+                        Writer.Position = &H1778 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 101
+                        Writer.Position = &H1778 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 103
+                        Writer.Position = &H1778 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -30238,6 +30592,73 @@ Public Class Form1
                         Writer.WriteUInt16(65278)
                     Next
                 End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1020 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1070 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1158 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H11B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H11E8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1280 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1290 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12A8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12B0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H12D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1330 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1378 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H13F0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1528 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1530 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -30838,6 +31259,217 @@ Public Class Form1
                         Writer.WriteUInt16(65278)
                     Next
                 End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HC8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H100 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H160 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H180 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H190 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H250 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H280 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2B8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H330 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H460 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H478 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4E0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H518 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H530 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H568 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H580 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H5C8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H5D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H5D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H5E0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H618 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H628 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H6A8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H6E8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H770 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H778 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H790 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H820 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H840 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8C0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8D0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8F8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H948 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H968 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H998 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9A8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9D8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9E8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA18 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 30
+                        Writer.Position = &HA50 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HAC0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &HAD8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &HAE8 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HB48 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HB78 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HBB0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HDF0 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HE50 + i
+                        Writer.WriteUInt16(65278)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -30855,11 +31487,34 @@ Public Class Form1
     Private Sub CheckBox29_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox29.CheckedChanged
         Try
             If CheckBox29.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 3574
-                    Writer.Position = &H30 + i
-                    Writer.WriteUInt16(65021)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3574
+                        Writer.Position = &H30 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3574
+                        Writer.Position = &H30 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3574
+                        Writer.Position = &H30 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 3647
+                        Writer.Position = &H30 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -30877,11 +31532,34 @@ Public Class Form1
     Private Sub CheckBox28_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox28.CheckedChanged
         Try
             If CheckBox28.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 229
-                    Writer.Position = &H17F0 + i
-                    Writer.WriteUInt16(65021)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 229
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 229
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 229
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 254
+                        Writer.Position = &H17F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -30899,11 +31577,34 @@ Public Class Form1
     Private Sub CheckBox27_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox27.CheckedChanged
         Try
             If CheckBox27.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 164
-                    Writer.Position = &H1902 + i
-                    Writer.WriteUInt16(65021)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 164
+                        Writer.Position = &H1902 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 164
+                        Writer.Position = &H1902 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 164
+                        Writer.Position = &H1902 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 164
+                        Writer.Position = &H1902 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -30943,11 +31644,34 @@ Public Class Form1
     Private Sub CheckBox25_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox25.CheckedChanged
         Try
             If CheckBox25.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                For i As Integer = 0 To 101
-                    Writer.Position = &H1778 + i
-                    Writer.WriteUInt16(65021)
-                Next
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 101
+                        Writer.Position = &H1778 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 101
+                        Writer.Position = &H1778 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 101
+                        Writer.Position = &H1778 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 103
+                        Writer.Position = &H1778 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -31879,6 +32603,15 @@ Public Class Form1
                         Writer.WriteUInt16(65021)
                     Next
                 End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    Writer.Position = &H1A46
+                    Writer.WriteUInt16(65021)
+                    For i As Integer = 0 To 46
+                        Writer.Position = &H1A48 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -32110,6 +32843,73 @@ Public Class Form1
                     Next
                     For i As Integer = 0 To 14
                         Writer.Position = &H15F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1020 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1070 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1158 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H11B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H11E8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1280 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1290 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12A8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H12B0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H12D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H12D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1330 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1378 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 2
+                        Writer.Position = &H13F0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 5
+                        Writer.Position = &H1528 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H1530 + i
                         Writer.WriteUInt16(65021)
                     Next
                 End If
@@ -32710,6 +33510,217 @@ Public Class Form1
                     Next
                     For i As Integer = 0 To 6
                         Writer.Position = &HC78 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                End If
+                If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                    Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HC8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H100 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H160 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H180 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H190 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H1D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H250 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H280 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2B8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H2F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H330 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H460 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H478 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4E0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H4F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H518 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H530 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &H568 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H580 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H5C8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H5D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H5D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H5E0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H618 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H628 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &H6A8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H6E8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H770 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H778 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H790 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H820 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H840 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8C0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8D0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H8F8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H948 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H968 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H998 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9A8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9D8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &H9E8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HA18 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 30
+                        Writer.Position = &HA50 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HAC0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 3
+                        Writer.Position = &HAD8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 14
+                        Writer.Position = &HAE8 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HB48 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HB78 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HBB0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HDF0 + i
+                        Writer.WriteUInt16(65021)
+                    Next
+                    For i As Integer = 0 To 6
+                        Writer.Position = &HE50 + i
                         Writer.WriteUInt16(65021)
                     Next
                 End If
@@ -34127,6 +35138,10 @@ Public Class Form1
             Writer.WriteInt8(NumericUpDown37.Value)
             Writer.Position = parc
             Writer.WriteInt8(NumericUpDown30.Value)
+            Writer.Position = tour
+            Writer.WriteInt8(NumericUpDown23.Value)
+            Writer.Position = part
+            Writer.WriteInt8(NumericUpDown43.Value)
             Writer.Position = &H0
             Writer.WriteInt8(17)
             If ComboBox11.Text = "FR" Then
