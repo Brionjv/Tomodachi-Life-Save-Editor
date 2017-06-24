@@ -35191,4 +35191,30 @@ Public Class Form1
             CheckBox33.Checked = False
         End Try
     End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        If My.Computer.Network.IsAvailable = False Then
+            MsgBox("Connection a internet pas trouvee.")
+        Else
+            If My.Computer.FileSystem.FileExists("68uPUJaB.txt") = True Then
+                My.Computer.FileSystem.DeleteFile("68uPUJaB.txt")
+            End If
+
+            My.Computer.Network.DownloadFile("https://pastebin.com/raw/68uPUJaB", "68uPUJaB.txt")
+            MsgBox(My.Computer.FileSystem.ReadAllText("68uPUJaB.txt"))
+        End If
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        If My.Computer.Network.IsAvailable = False Then
+            MsgBox("No internet connection found.")
+        Else
+            If My.Computer.FileSystem.FileExists("vgKLJDKL.txt") = True Then
+                My.Computer.FileSystem.DeleteFile("vgKLJDKL.txt")
+            End If
+
+            My.Computer.Network.DownloadFile("https://pastebin.com/raw/vgKLJDKL", "vgKLJDKL.txt")
+            MsgBox(My.Computer.FileSystem.ReadAllText("vgKLJDKL.txt"))
+        End If
+    End Sub
 End Class

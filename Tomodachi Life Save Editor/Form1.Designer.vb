@@ -192,6 +192,8 @@ Partial Class Form1
         Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TabPage11 = New System.Windows.Forms.TabPage()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.CheckBox34 = New System.Windows.Forms.CheckBox()
         Me.CheckBox33 = New System.Windows.Forms.CheckBox()
         Me.PictureBox58 = New System.Windows.Forms.PictureBox()
@@ -728,11 +730,11 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label3.Font = New System.Drawing.Font("Homodachi", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.HotTrack
         Me.Label3.Location = New System.Drawing.Point(286, 13)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(7, 16)
+        Me.Label3.Size = New System.Drawing.Size(7, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "i"
         Me.Label3.UseCompatibleTextRendering = True
@@ -787,11 +789,11 @@ Partial Class Form1
         Me.Label27.AutoSize = True
         Me.Label27.BackColor = System.Drawing.Color.Transparent
         Me.Label27.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label27.Font = New System.Drawing.Font("Homodachi", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label27.ForeColor = System.Drawing.SystemColors.HotTrack
         Me.Label27.Location = New System.Drawing.Point(362, 11)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(7, 16)
+        Me.Label27.Size = New System.Drawing.Size(7, 17)
         Me.Label27.TabIndex = 2
         Me.Label27.Text = "i"
         Me.Label27.UseCompatibleTextRendering = True
@@ -1090,11 +1092,11 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Enabled = False
-        Me.Label1.Font = New System.Drawing.Font("Homodachi", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Label1.Location = New System.Drawing.Point(17, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(14, 18)
+        Me.Label1.Size = New System.Drawing.Size(14, 20)
         Me.Label1.TabIndex = 10
         Me.Label1.Text = "X"
         Me.Label1.UseCompatibleTextRendering = True
@@ -2346,6 +2348,8 @@ Partial Class Form1
         'TabPage11
         '
         Me.TabPage11.BackgroundImage = CType(resources.GetObject("TabPage11.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage11.Controls.Add(Me.Button11)
+        Me.TabPage11.Controls.Add(Me.Button10)
         Me.TabPage11.Controls.Add(Me.CheckBox34)
         Me.TabPage11.Controls.Add(Me.CheckBox33)
         Me.TabPage11.Controls.Add(Me.PictureBox58)
@@ -2379,6 +2383,24 @@ Partial Class Form1
         Me.TabPage11.TabIndex = 1
         Me.TabPage11.Text = "Status"
         Me.TabPage11.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(0, 42)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(112, 23)
+        Me.Button11.TabIndex = 104
+        Me.Button11.Text = "EUR EN Foods Id's"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(0, 23)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(112, 23)
+        Me.Button10.TabIndex = 103
+        Me.Button10.Text = "EUR FR Foods Id's"
+        Me.Button10.UseVisualStyleBackColor = False
         '
         'CheckBox34
         '
@@ -3882,5 +3904,6 @@ Partial Class Form1
     Friend WithEvents CheckBox33 As System.Windows.Forms.CheckBox
     Friend WithEvents Button8 As System.Windows.Forms.Button
     Friend WithEvents Button9 As System.Windows.Forms.Button
-
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button10 As Button
 End Class
