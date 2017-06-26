@@ -35194,27 +35194,38 @@ Public Class Form1
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         If My.Computer.Network.IsAvailable = False Then
-            MsgBox("Connection a internet pas trouvee.")
+            MsgBox("Connection a internet pas trouvee. en utilisant le fichier mis en caché")
+            If My.Computer.FileSystem.FileExists("vgKLJDKL.txt") = False Then
+                MsgBox("Pas de liste en caché!")
+            Else
+                Process.Start("68uPUJaB.txt")
+            End If
         Else
             If My.Computer.FileSystem.FileExists("68uPUJaB.txt") = True Then
                 My.Computer.FileSystem.DeleteFile("68uPUJaB.txt")
             End If
 
             My.Computer.Network.DownloadFile("https://pastebin.com/raw/68uPUJaB", "68uPUJaB.txt")
-            MsgBox(My.Computer.FileSystem.ReadAllText("68uPUJaB.txt"))
+            Process.Start("68uPUJaB.txt")
         End If
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         If My.Computer.Network.IsAvailable = False Then
-            MsgBox("No internet connection found.")
+            MsgBox("No internet connection found. using cached list.")
+            If My.Computer.FileSystem.FileExists("vgKLJDKL.txt") = False Then
+                MsgBox("No cached list!")
+            Else
+                Process.Start("vgKLJDKL.txt")
+            End If
+
         Else
-            If My.Computer.FileSystem.FileExists("vgKLJDKL.txt") = True Then
+                If My.Computer.FileSystem.FileExists("vgKLJDKL.txt") = True Then
                 My.Computer.FileSystem.DeleteFile("vgKLJDKL.txt")
             End If
 
             My.Computer.Network.DownloadFile("https://pastebin.com/raw/vgKLJDKL", "vgKLJDKL.txt")
-            MsgBox(My.Computer.FileSystem.ReadAllText("vgKLJDKL.txt"))
+            Process.Start("vgKLJDKL.txt")
         End If
     End Sub
 End Class
