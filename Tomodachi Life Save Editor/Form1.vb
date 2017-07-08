@@ -35195,37 +35195,37 @@ Public Class Form1
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         If My.Computer.Network.IsAvailable = False Then
             MsgBox("Connection a internet pas trouvee. en utilisant le fichier mis en caché")
-            If My.Computer.FileSystem.FileExists("vgKLJDKL.txt") = False Then
+            If My.Computer.FileSystem.FileExists("f25VytjW.txt") = False Then
                 MsgBox("Pas de liste en caché!")
             Else
-                Process.Start("68uPUJaB.txt")
+                Process.Start("f25VytjW.txt")
             End If
         Else
             If My.Computer.FileSystem.FileExists("68uPUJaB.txt") = True Then
                 My.Computer.FileSystem.DeleteFile("68uPUJaB.txt")
             End If
 
-            My.Computer.Network.DownloadFile("https://pastebin.com/raw/68uPUJaB", "68uPUJaB.txt")
-            Process.Start("68uPUJaB.txt")
+            My.Computer.Network.DownloadFile("https://pastebin.com/raw/f25VytjW", "f25VytjW.txt")
+            Process.Start("f25VytjW.txt")
         End If
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         If My.Computer.Network.IsAvailable = False Then
             MsgBox("No internet connection found. using cached list.")
-            If My.Computer.FileSystem.FileExists("vgKLJDKL.txt") = False Then
+            If My.Computer.FileSystem.FileExists("krSz0U4p.txt") = False Then
                 MsgBox("No cached list!")
             Else
-                Process.Start("vgKLJDKL.txt")
+                Process.Start("krSz0U4p.txt")
             End If
 
         Else
-                If My.Computer.FileSystem.FileExists("vgKLJDKL.txt") = True Then
-                My.Computer.FileSystem.DeleteFile("vgKLJDKL.txt")
+            If My.Computer.FileSystem.FileExists("krSz0U4p.txt") = True Then
+                My.Computer.FileSystem.DeleteFile("krSz0U4p.txt")
             End If
 
-            My.Computer.Network.DownloadFile("https://pastebin.com/raw/vgKLJDKL", "vgKLJDKL.txt")
-            Process.Start("vgKLJDKL.txt")
+            My.Computer.Network.DownloadFile("https://pastebin.com/raw/krSz0U4p", "krSz0U4p.txt")
+            Process.Start("krSz0U4p.txt")
         End If
     End Sub
 End Class
