@@ -35201,8 +35201,8 @@ Public Class Form1
                 Process.Start("f25VytjW.txt")
             End If
         Else
-            If My.Computer.FileSystem.FileExists("68uPUJaB.txt") = True Then
-                My.Computer.FileSystem.DeleteFile("68uPUJaB.txt")
+            If My.Computer.FileSystem.FileExists("f25VytjW.txt") = True Then
+                My.Computer.FileSystem.DeleteFile("f25VytjW.txt")
             End If
 
             My.Computer.Network.DownloadFile("https://pastebin.com/raw/f25VytjW", "f25VytjW.txt")
