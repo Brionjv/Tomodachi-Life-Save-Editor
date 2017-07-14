@@ -4519,6 +4519,7 @@ Public Class Form1
             CheckBox34.Checked = False
             Button3.Enabled = True
             Button7.Enabled = True
+            RadioButton2.Checked = False
         Dim Reader As New PackageIO.Reader(filepath, PackageIO.Endian.Little)
             If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Or ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Or ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
         If ComboBox1.Text = "Mii 1" Then
@@ -35194,9 +35195,23 @@ Public Class Form1
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
         If My.Computer.Network.IsAvailable = False Then
-            MsgBox("Connection a internet pas trouvee. en utilisant le fichier mis en caché")
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Aucune connexion internet, utilisation du fichier mis en cache"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "No internet connection, using cached file"
+                fdialog.ShowDialog()
+            End If
             If My.Computer.FileSystem.FileExists("f25VytjW.txt") = False Then
-                MsgBox("Pas de liste en caché!")
+                If ComboBox11.Text = "FR" Then
+                    fdialog.Label1.Text = "Aucune liste mise en cache n'a été trouvée"
+                    fdialog.ShowDialog()
+                End If
+                If ComboBox11.Text = "EN" Then
+                    fdialog.Label1.Text = "No cached list found"
+                    fdialog.ShowDialog()
+                End If
             Else
                 Process.Start("f25VytjW.txt")
             End If
@@ -35212,9 +35227,23 @@ Public Class Form1
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
         If My.Computer.Network.IsAvailable = False Then
-            MsgBox("No internet connection found. using cached list.")
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Aucune connexion internet, utilisation du fichier mis en cache"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "No internet connection, using cached file"
+                fdialog.ShowDialog()
+            End If
             If My.Computer.FileSystem.FileExists("krSz0U4p.txt") = False Then
-                MsgBox("No cached list!")
+                If ComboBox11.Text = "FR" Then
+                    fdialog.Label1.Text = "Aucune liste mise en cache n'a été trouvée"
+                    fdialog.ShowDialog()
+                End If
+                If ComboBox11.Text = "EN" Then
+                    fdialog.Label1.Text = "No cached list found"
+                    fdialog.ShowDialog()
+                End If
             Else
                 Process.Start("krSz0U4p.txt")
             End If
@@ -35227,5 +35256,51 @@ Public Class Form1
             My.Computer.Network.DownloadFile("https://pastebin.com/raw/krSz0U4p", "krSz0U4p.txt")
             Process.Start("krSz0U4p.txt")
         End If
+    End Sub
+
+    Private Sub Button11_MouseMove(sender As Object, e As EventArgs) Handles Button11.MouseMove, Button10.MouseMove
+        If ComboBox11.Text = "EN" Then
+            Label17.Text = "Click to see Food ID"
+        End If
+        If ComboBox11.Text = "FR" Then
+            Label17.Text = "Cliquez pour voir les ID de la nourriture"
+        End If
+        Label17.Visible = True
+    End Sub
+
+    Private Sub Button11_MouseLeave(sender As Object, e As EventArgs) Handles Button11.MouseLeave, Button10.MouseLeave
+        Label17.Visible = False
+    End Sub
+
+    Private Sub CheckBox33_MouseMove(sender As Object, e As EventArgs) Handles CheckBox33.MouseMove
+        If ComboBox11.Text = "EN" Then
+            Label17.Text = "This feature maybe be work or not according to Mii"
+        End If
+        If ComboBox11.Text = "FR" Then
+            Label17.Text = "Cette fonctionnalité peut être fonctionnelle ou pas selon le Mii"
+        End If
+        Label17.Visible = True
+    End Sub
+
+    Private Sub CheckBox33_MouseLeave(sender As Object, e As EventArgs) Handles CheckBox33.MouseLeave
+        Label17.Visible = False
+    End Sub
+
+    Private Sub Panel30_MouseMove(sender As Object, e As EventArgs) Handles Panel30.MouseMove
+        If ComboBox11.Text = "EN" Then
+            Label17.Text = "Click to edit Mii met via StreetPass"
+        End If
+        If ComboBox11.Text = "FR" Then
+            Label17.Text = "Cliquez pour éditer les Mii rencontré via StreetPass"
+        End If
+        Label17.Visible = True
+    End Sub
+
+    Private Sub Panel30_MouseLeave(sender As Object, e As EventArgs) Handles Panel30.MouseLeave
+        Label17.Visible = False
+    End Sub
+
+    Private Sub Panel30_Click(sender As Object, e As EventArgs) Handles Panel30.Click
+        Form12.Show()
     End Sub
 End Class

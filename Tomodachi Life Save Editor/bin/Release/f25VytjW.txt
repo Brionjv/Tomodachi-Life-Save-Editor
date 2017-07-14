@@ -1,0 +1,139 @@
+0 – Cornet de glace
+10 – Riz aux crevettes
+100 - Steak haché
+108 - Sucette
+114 - Spaghettis bolognaise
+137 - Bacon
+138 - Brocoli
+141 - Barbe à papa
+149 - Lasagnes
+174 - Cola
+185 - Boisson protéinée
+188 - Mangue
+199 - Ragoût de bœuf
+210 - Yakitoris
+229 - Smoothie
+230 - Expresso
+233 - Limonade
+237 - Escalope panée
+239 - Tortilla
+244 - Chocolat chaud
+245 - Forêt noire
+300 - Panini
+306 - Bûche de noël
+308 - Petit-déjeuner anglais
+32 - Pâtes à la carbonara
+320 - Magret de canard
+328 - Cannolo
+349 - Choucroute
+356 - Jambon espagnol
+363 - Ratatouille
+370 - Saltimbocca
+38 - Caviar
+46 - Blanquette de veau
+66 - Gâteau aux fraises
+67 - Pain de mie
+70 - Eau du robinet
+73 - Steak
+76 - Saucisse
+101 – Pizza
+102 – Biscuit sec
+105 – Flan
+106 – Roquefort
+110 – Cuisse de poulet
+119 – Pêche
+122 – Aubergine grillée
+123 – Œuf dur
+132 – Viande avec patates
+135 – Jus de tomate
+136 – Avocat
+140 – Marrons chauds
+141 – Barbe à papa
+142 – Cappuccino
+143 – Noix de coco
+144 – Corn flakes
+147 – Cheesecake
+148 – Kiwi
+149 – Lasagnes
+150 – Macaron
+155 – Huître
+156 – Paella
+161 – Risotto
+162 – Rôti de bœuf
+163 – Salami
+164 – Escargots
+165 – Spaghettis aux piments
+167 – Tiramisu
+169 – Truffe
+170 – Dinde
+178 – Nouilles instantanées
+182 – Ail
+183 – Chou farci
+185 – Boisson protéinée
+187 – Jus de pomme
+190 – Fromage
+191 – Jambon de Parme
+192 – Ananas
+193 – saumon à la meunière
+194 – Crevettes aux épices
+195 – Canard laqué
+197 – Poulpe
+198 – Poivron vert
+199 – Ragoût de bœuf
+2 – Tarte aux pommes
+205 – Viande grillé
+210 – Yakitoris
+229 – Smoothie
+23 – Jus d’orange
+231 – Miel
+233 – Limonade
+240 – Scone
+241 – Saumon fumé
+247 – Côtelette
+248 – Hareng
+253 – Bouillie d’avoine
+27 – Gâteau au chocolat
+302 – Croquette de poisson
+303 – Fruits de mer
+304 – Salade russe
+305 – Pain au chocolat
+307 – Agneau rôti
+312 – Tartine de haricots
+314 – Chérimole
+315 – Morue à la portugaise
+316 – Tourte de Cornouailles
+317 – Touron
+320 – Magret de canard
+322 – Natillas
+324 – Rollmops
+327 – bortsch
+330 – Poulet tikka masala
+332 – Crème brûlée
+333 – Fish and chips
+334 – Gaspacho
+340 – Bœuf bourguignon
+343 – Gnocchis
+345 – Houmous
+348 – Riz au lait
+350 – Pudding aux raisins secs
+36 – Champignon
+360 – Pâté en croute
+364 – Eau gazeuse
+366 – Tapas
+367 – Tartine de chocolat
+370 – Saltimbocca
+40 – Lait
+45 – Gratin
+46 – Blanquette de veau
+47 – Crêpe
+49 – Croissant
+50 – Thé
+51 – Café
+63 – Patates au beurre
+66 – Gâteau aux fraises
+73 – Steak
+76 – Saucisse
+77 – Glace italienne
+87 – Glace aux fruits
+99 – Cheeseburger
+65535 - Rien

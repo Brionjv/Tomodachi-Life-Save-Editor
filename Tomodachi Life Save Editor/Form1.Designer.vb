@@ -48,6 +48,8 @@ Partial Class Form1
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Panel30 = New System.Windows.Forms.Panel()
+        Me.PictureBox60 = New System.Windows.Forms.PictureBox()
         Me.Panel28 = New System.Windows.Forms.Panel()
         Me.CheckBox30 = New System.Windows.Forms.CheckBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
@@ -303,6 +305,8 @@ Partial Class Form1
         Me.GroupBox10.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
+        Me.Panel30.SuspendLayout()
+        CType(Me.PictureBox60, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel28.SuspendLayout()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -481,7 +485,7 @@ Partial Class Form1
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(69, 13)
         Me.Label4.TabIndex = 28
-        Me.Label4.Text = "Version 2.1.0"
+        Me.Label4.Text = "Version 2.1.1"
         '
         'LinkLabel1
         '
@@ -743,6 +747,7 @@ Partial Class Form1
         '
         Me.TabPage5.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage5.BackgroundImage = CType(resources.GetObject("TabPage5.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage5.Controls.Add(Me.Panel30)
         Me.TabPage5.Controls.Add(Me.Panel28)
         Me.TabPage5.Controls.Add(Me.Panel1)
         Me.TabPage5.Location = New System.Drawing.Point(4, 22)
@@ -751,6 +756,29 @@ Partial Class Form1
         Me.TabPage5.TabIndex = 5
         Me.TabPage5.Text = "Extras"
         '
+        'Panel30
+        '
+        Me.Panel30.BackgroundImage = CType(resources.GetObject("Panel30.BackgroundImage"), System.Drawing.Image)
+        Me.Panel30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel30.Controls.Add(Me.PictureBox60)
+        Me.Panel30.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel30.Location = New System.Drawing.Point(201, 135)
+        Me.Panel30.Name = "Panel30"
+        Me.Panel30.Size = New System.Drawing.Size(60, 60)
+        Me.Panel30.TabIndex = 6
+        '
+        'PictureBox60
+        '
+        Me.PictureBox60.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox60.BackgroundImage = CType(resources.GetObject("PictureBox60.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox60.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox60.Enabled = False
+        Me.PictureBox60.Location = New System.Drawing.Point(7, 3)
+        Me.PictureBox60.Name = "PictureBox60"
+        Me.PictureBox60.Size = New System.Drawing.Size(46, 54)
+        Me.PictureBox60.TabIndex = 0
+        Me.PictureBox60.TabStop = False
+        '
         'Panel28
         '
         Me.Panel28.BackgroundImage = CType(resources.GetObject("Panel28.BackgroundImage"), System.Drawing.Image)
@@ -758,7 +786,7 @@ Partial Class Form1
         Me.Panel28.Controls.Add(Me.CheckBox30)
         Me.Panel28.Controls.Add(Me.PictureBox18)
         Me.Panel28.Controls.Add(Me.Label27)
-        Me.Panel28.Location = New System.Drawing.Point(8, 106)
+        Me.Panel28.Location = New System.Drawing.Point(8, 92)
         Me.Panel28.Name = "Panel28"
         Me.Panel28.Size = New System.Drawing.Size(446, 33)
         Me.Panel28.TabIndex = 5
@@ -805,7 +833,7 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.CheckBox14)
         Me.Panel1.Controls.Add(Me.PictureBox16)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Location = New System.Drawing.Point(8, 41)
+        Me.Panel1.Location = New System.Drawing.Point(8, 49)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(446, 33)
         Me.Panel1.TabIndex = 4
@@ -2386,18 +2414,22 @@ Partial Class Form1
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(0, 42)
+        Me.Button11.BackColor = System.Drawing.SystemColors.Control
+        Me.Button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button11.Location = New System.Drawing.Point(1, 45)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(112, 23)
+        Me.Button11.Size = New System.Drawing.Size(112, 20)
         Me.Button11.TabIndex = 104
         Me.Button11.Text = "EUR EN Foods Id's"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.Button11.UseVisualStyleBackColor = False
         '
         'Button10
         '
-        Me.Button10.Location = New System.Drawing.Point(0, 23)
+        Me.Button10.BackColor = System.Drawing.SystemColors.Control
+        Me.Button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button10.Location = New System.Drawing.Point(1, 24)
         Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(112, 23)
+        Me.Button10.Size = New System.Drawing.Size(112, 20)
         Me.Button10.TabIndex = 103
         Me.Button10.Text = "EUR FR Foods Id's"
         Me.Button10.UseVisualStyleBackColor = False
@@ -2405,6 +2437,7 @@ Partial Class Form1
         'CheckBox34
         '
         Me.CheckBox34.AutoSize = True
+        Me.CheckBox34.Enabled = False
         Me.CheckBox34.Location = New System.Drawing.Point(348, 130)
         Me.CheckBox34.Name = "CheckBox34"
         Me.CheckBox34.Size = New System.Drawing.Size(54, 17)
@@ -3450,6 +3483,8 @@ Partial Class Form1
         Me.GroupBox10.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
+        Me.Panel30.ResumeLayout(False)
+        CType(Me.PictureBox60, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel28.ResumeLayout(False)
         Me.Panel28.PerformLayout()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3906,4 +3941,6 @@ Partial Class Form1
     Friend WithEvents Button9 As System.Windows.Forms.Button
     Friend WithEvents Button11 As Button
     Friend WithEvents Button10 As Button
+    Friend WithEvents Panel30 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox60 As System.Windows.Forms.PictureBox
 End Class
