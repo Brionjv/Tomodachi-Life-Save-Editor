@@ -35301,7 +35301,16 @@ Public Class Form1
     End Sub
 
     Private Sub Panel30_Click(sender As Object, e As EventArgs) Handles Panel30.Click
+        If ComboBox11.Text = "EN" Then
+            fdialog.Label1.Text = "Edit only if you have travelers, savedataArc.txt should be reopened"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "FR" Then
+            fdialog.Label1.Text = "Editez seulement si vous avez des voyageurs, savedataArc.txt devra être ouvert de nouveau"
+            fdialog.ShowDialog()
+        End If
         Form12.Show()
     End Sub
+
 End Class
 
