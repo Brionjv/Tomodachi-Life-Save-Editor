@@ -53,18 +53,7 @@ Public Class Form12
             Button1.Text = "Enregistrer"
             Button2.Text = "Fermer"
         End If
-        Dim open As New OpenFileDialog
-        If Form1.ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "Open savedataArc.txt" & vbNewLine & "Backup your save before using" & vbNewLine & "Tomodachi Life Save Editor"
-            fdialog.ShowDialog()
-        End If
-        If Form1.ComboBox11.Text = "FR" Then
-            fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "Tomodachi Life Save Editor"
-            fdialog.ShowDialog()
-        End If
-        open.Title = "Open save savedataArc.txt"
-        open.ShowDialog()
-        filepath = open.FileName
+        filepath = Form1.Label39.Text
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -233,11 +222,11 @@ Public Class Form12
             End If
         Catch ex As Exception
             If Form1.ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "savedataArc.txt not load," & vbNewLine & "Save game is corrupted or not a Tomodachi Life Save"
+                fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
             If Form1.ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "L'ouverture de savedataArc.txt a échoué," & vbNewLine & "La sauvegarde est corrompu ou" & vbNewLine & "n'est pas une sauvegarde de Tomodachi Life"
+                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
                 fdialog.ShowDialog()
             End If
         End Try

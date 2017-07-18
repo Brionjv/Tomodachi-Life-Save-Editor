@@ -291,6 +291,7 @@ Partial Class Form1
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
+        Me.Label39 = New System.Windows.Forms.Label()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -3439,12 +3440,23 @@ Partial Class Form1
         Me.Button9.Text = "Save"
         Me.Button9.UseVisualStyleBackColor = True
         '
+        'Label39
+        '
+        Me.Label39.AutoSize = True
+        Me.Label39.Location = New System.Drawing.Point(1, 43)
+        Me.Label39.Name = "Label39"
+        Me.Label39.Size = New System.Drawing.Size(45, 13)
+        Me.Label39.TabIndex = 41
+        Me.Label39.Text = "Label39"
+        Me.Label39.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(469, 389)
+        Me.Controls.Add(Me.Label39)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.ComboBox12)
         Me.Controls.Add(Me.PictureBox36)
@@ -3943,4 +3955,5 @@ Partial Class Form1
     Friend WithEvents Button10 As Button
     Friend WithEvents Panel30 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox60 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label39 As System.Windows.Forms.Label
 End Class
