@@ -141,8 +141,9 @@ Public Class Form1
             CheckBox12.Text = "Si ''EU tous les produits spéciaux débloqués'' a été utilisé"
             CheckBox31.Text = "Si ''JP tous les produits spéciaux débloqués'' a été utilisé"
             CheckBox32.Text = "Si ''JP tous les chapeaux Streetpass/Spotpass débloqués'' a été utilisé"
-            GroupBox10.Text = "Réparation sauvegarde EU/JP"
-            GroupBox11.Text = "Réparation sauvegarde US/JP"
+            GroupBox8.Text = "Réparation sauvegarde EU/US/KR"
+            GroupBox10.Text = "Réparation sauvegarde EU/JP/KR"
+            GroupBox11.Text = "Réparation sauvegarde US/JP/KR"
             CheckBox14.Text = "Retirer pénalité de voyage dans le temps"
             Label3.Location = New Point(335, 13)
             Label13.Text = "Estomac"
@@ -156,6 +157,8 @@ Public Class Form1
             TabPage7.Text = "Débloquer par catalogue magasin"
             TabPage8.Text = "Supprimer des éléments"
             TabPage9.Text = "Batiments île"
+            TabPage10.Text = "Édition"
+            TabPage12.Text = "Stats classements"
             CheckBox20.Text = "Tous les vêtements Streetpass/Spotpass débloqués"
             CheckBox19.Text = "Tous les chapeaux Streetpass/Spotpass débloqués"
             CheckBox18.Text = "Tous les chapeaux débloqués"
@@ -188,6 +191,8 @@ Public Class Form1
             ComboBox3.Items.Item(0) = "Adulte"
             ComboBox3.Items.Item(1) = "Adulte (1)"
             ComboBox3.Items.Item(2) = "Enfant"
+            Label40.Text = "Mii préférés"
+            Label41.Text = "Mii dépensiers"
         End If
         If ComboBox11.Text = "EN" Then
             Button1.Text = "Open"
@@ -236,8 +241,9 @@ Public Class Form1
             CheckBox12.Text = "IF ''EU All Special Foods Unlocked'' was used"
             CheckBox31.Text = "IF ''JP All Special Foods Unlocked'' was used"
             CheckBox32.Text = "IF ''JP All Streetpass/Spotpass Headgears and Colors Unlocked'' was used"
-            GroupBox10.Text = "Repair EU/JP Save File"
-            GroupBox11.Text = "Repair US/JP Save File"
+            GroupBox8.Text = "Repair EU/US/KR Save File"
+            GroupBox10.Text = "Repair EU/JP/KR Save File"
+            GroupBox11.Text = "Repair US/JP/KR Save File"
             CheckBox14.Text = "Remove Time travel penality"
             Label3.Location = New Point(286, 13)
             Label13.Text = "Fullness"
@@ -251,6 +257,8 @@ Public Class Form1
             TabPage7.Text = "Unlock by shop catalog"
             TabPage8.Text = "Delete items"
             TabPage9.Text = "Island's buildings"
+            TabPage10.Text = "Edit"
+            TabPage12.Text = "Ranking Board stats"
             CheckBox20.Text = "All Streetpass/Spotpass Clothing and colors Unlocked"
             CheckBox19.Text = "All Streetpass/Spotpass Headgears Unlocked"
             CheckBox18.Text = "All Headgears and colors Unlocked"
@@ -283,6 +291,8 @@ Public Class Form1
             ComboBox3.Items.Item(0) = "Grown-up"
             ComboBox3.Items.Item(1) = "Grown-up (1)"
             ComboBox3.Items.Item(2) = "Kid"
+            Label40.Text = "Pampered ranking"
+            Label41.Text = "Splurge ranking"
         End If
     End Sub
 
@@ -333,21 +343,6 @@ Public Class Form1
     End Sub
 
     Private Sub ComboBox11_MouseLeave(sender As Object, e As EventArgs) Handles ComboBox11.MouseLeave
-        Label17.Visible = False
-    End Sub
-
-
-    Private Sub PictureBox32_MouseMove(sender As Object, e As EventArgs) Handles PictureBox32.MouseMove
-        If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click to edit the Mii's experience"
-        End If
-        If ComboBox11.Text = "FR" Then
-            Label17.Text = "Cliquez pour éditer l'expérience des Mii"
-        End If
-        Label17.Visible = True
-    End Sub
-
-    Private Sub PictureBox32_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox32.MouseLeave
         Label17.Visible = False
     End Sub
 
@@ -533,10 +528,10 @@ Public Class Form1
 
     Private Sub GroupBox10_MouseMove(sender As Object, e As EventArgs) Handles GroupBox10.MouseMove, CheckBox10.MouseMove, CheckBox11.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Select to repair the EU/JP save file"
+            Label17.Text = "Select to repair the EU/JP/KR save file"
         End If
         If ComboBox11.Text = "FR" Then
-            Label17.Text = "Cochez pour réparer une sauvegarde EU/JP"
+            Label17.Text = "Cochez pour réparer une sauvegarde EU/JP/KR"
         End If
         Label17.Visible = True
     End Sub
@@ -547,15 +542,29 @@ Public Class Form1
 
     Private Sub GroupBox11_MouseMove(sender As Object, e As EventArgs) Handles GroupBox11.MouseMove, CheckBox12.MouseMove, CheckBox13.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Select to repair the US/JP save file"
+            Label17.Text = "Select to repair the US/JP/KR save file"
         End If
         If ComboBox11.Text = "FR" Then
-            Label17.Text = "Cochez pour réparer une sauvegarde US/JP"
+            Label17.Text = "Cochez pour réparer une sauvegarde US/JP/KR"
         End If
         Label17.Visible = True
     End Sub
 
     Private Sub GroupeBox11_MouseLeave(sender As Object, e As EventArgs) Handles GroupBox11.MouseLeave, CheckBox12.MouseLeave, CheckBox13.MouseLeave
+        Label17.Visible = False
+    End Sub
+
+    Private Sub GroupBox8_MouseMove(sender As Object, e As EventArgs) Handles GroupBox8.MouseMove, CheckBox31.MouseMove, CheckBox32.MouseMove
+        If ComboBox11.Text = "EN" Then
+            Label17.Text = "Select to repair the EU/US/KR save file"
+        End If
+        If ComboBox11.Text = "FR" Then
+            Label17.Text = "Cochez pour réparer une sauvegarde EU/US/KR"
+        End If
+        Label17.Visible = True
+    End Sub
+
+    Private Sub GroupeBox8_MouseLeave(sender As Object, e As EventArgs) Handles GroupBox8.MouseLeave, CheckBox31.MouseLeave, CheckBox32.MouseLeave
         Label17.Visible = False
     End Sub
 
@@ -29296,10 +29305,6 @@ Public Class Form1
         If NumericUpDown20.Value = 99 Then
             PictureBox32.Image = My.Resources.exp99
         End If
-    End Sub
-
-    Private Sub PictureBox32_Click(sender As Object, e As EventArgs) Handles PictureBox32.Click
-        Form9.Show()
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
