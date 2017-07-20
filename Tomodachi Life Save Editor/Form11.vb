@@ -1,18 +1,7 @@
 ﻿Public Class Form11
 
     Private Sub Form11_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If Form1.ComboBox12.SelectedItem = Form1.ComboBox12.Items.Item(0) Then
-            PictureBox1.BackgroundImage = My.Resources.tomoF1
-        End If
-        If Form1.ComboBox12.SelectedItem = Form1.ComboBox12.Items.Item(1) Then
-            PictureBox1.BackgroundImage = My.Resources.tomoF
-        End If
-        If Form1.ComboBox12.SelectedItem = Form1.ComboBox12.Items.Item(2) Then
-            PictureBox1.BackgroundImage = My.Resources.tomoJ
-        End If
-        If Form1.ComboBox12.SelectedItem = Form1.ComboBox12.Items.Item(3) Then
-            PictureBox1.BackgroundImage = My.Resources.tomoK
-        End If
+        PictureBox1.BackgroundImage = Form1.PictureBox30.Image
         RadioButton5.Checked = True
         RadioButton6.Checked = True
         RadioButton7.Checked = True
@@ -42,6 +31,19 @@
             GroupBox3.Text = "Goods items"
             RadioButton9.Text = "All"
             RadioButton8.Text = "None"
+        End If
+        If Form1.ComboBox11.Text = "DE" Then
+            RadioButton1.Text = "alle"
+            RadioButton2.Text = "nichts"
+            RadioButton3.Text = "nichts"
+            RadioButton4.Text = "alle"
+            GroupBox1.Text = "Innenräume"
+            GroupBox2.Text = "spezielle Gerichte"
+            Label1.Text = "schließen"
+            Label1.Location = New Point(166, 276)
+            GroupBox3.Text = "gute Items"
+            RadioButton9.Text = "alle"
+            RadioButton8.Text = "nichts"
         End If
         If Form1.Label7.Text = "All" Then
             RadioButton1.Checked = True

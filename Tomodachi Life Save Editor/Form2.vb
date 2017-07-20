@@ -27,5 +27,9 @@
             Label1.Text = "Done"
             Label1.Location = New Point(111, 60)
         End If
+        If Form1.ComboBox11.Text = "DE" Then
+            Label1.Text = "Fertig"
+            Label1.Location = New Point(109, 60)
+        End If
     End Sub
 End Class

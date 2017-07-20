@@ -243,13 +243,13 @@ Partial Class Form7
         '
         'Label8
         '
-        Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Location = New System.Drawing.Point(187, 58)
+        Me.Label8.Location = New System.Drawing.Point(-1, 58)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(25, 13)
+        Me.Label8.Size = New System.Drawing.Size(400, 13)
         Me.Label8.TabIndex = 64
         Me.Label8.Text = "Gifs"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'ComboBox6
         '

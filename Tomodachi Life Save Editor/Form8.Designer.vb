@@ -29,6 +29,7 @@ Partial Class Form8
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -38,6 +39,7 @@ Partial Class Form8
         '
         Me.Panel1.AutoScroll = True
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Location = New System.Drawing.Point(0, 44)
@@ -51,7 +53,7 @@ Partial Class Form8
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label2.Location = New System.Drawing.Point(6, 6)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(332, 366)
+        Me.Label2.Size = New System.Drawing.Size(332, 390)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = resources.GetString("Label2.Text")
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -62,7 +64,7 @@ Partial Class Form8
         Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label3.Location = New System.Drawing.Point(6, 6)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(332, 366)
+        Me.Label3.Size = New System.Drawing.Size(332, 390)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = resources.GetString("Label3.Text")
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -102,6 +104,17 @@ Partial Class Form8
         Me.PictureBox2.TabIndex = 24
         Me.PictureBox2.TabStop = False
         '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Location = New System.Drawing.Point(6, 6)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(332, 390)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = resources.GetString("Label4.Text")
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'Form8
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -129,4 +142,5 @@ Partial Class Form8
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class

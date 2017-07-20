@@ -25,6 +25,12 @@
             Label2.Text = "Expression favorite"
             Label2.Location = New Point(142, 56)
         End If
+        If Form1.ComboBox11.Text = "DE" Then
+            Label1.Text = "Fertig"
+            Label1.Location = New Point(109, 60)
+            Label2.Text = "Phrasen"
+            Label2.Location = New Point(160, 56)
+        End If
         TextBox10.Text = Form1.Label20.Text
         TextBox11.Text = Form1.Label21.Text
         TextBox12.Text = Form1.Label22.Text

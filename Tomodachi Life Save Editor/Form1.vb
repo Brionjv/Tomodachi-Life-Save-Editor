@@ -79,8 +79,9 @@ Public Class Form1
     Dim couleur As String
     Dim grow As String
     Dim appartement As String
-    Dim BSTF As String
+    Dim Splurge As String
     Dim sweetheart As String
+    Dim Pampered As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox11.Text = "EN"
@@ -99,6 +100,8 @@ Public Class Form1
             Button2.Text = "Enregistrer"
             Button5.Text = "Ouvrir"
             Button6.Text = "Enregistrer"
+            Button8.Text = "Ouvrir"
+            Button9.Text = "Enregistrer"
             TabPage1.Text = "Principale"
             TabPage4.Text = "Édition Mii"
             TabPage3.Text = "Trésors / Nourritures"
@@ -199,6 +202,8 @@ Public Class Form1
             Button2.Text = "Save"
             Button5.Text = "Open"
             Button6.Text = "Save"
+            Button8.Text = "Open"
+            Button9.Text = "Save"
             TabPage1.Text = "Main"
             TabPage4.Text = "Mii Edit"
             TabPage3.Text = "Treasures / Foods"
@@ -294,6 +299,108 @@ Public Class Form1
             Label40.Text = "Pampered ranking"
             Label41.Text = "Splurge ranking"
         End If
+        If ComboBox11.Text = "DE" Then
+            Button1.Text = "öffnen"
+            Button2.Text = "speichern"
+            Button5.Text = "öffnenr"
+            Button6.Text = "speichern"
+            Button8.Text = "öffnenr"
+            Button9.Text = "speichern"
+            TabPage1.Text = "Main"
+            TabPage4.Text = "Mii Bearbeitung"
+            TabPage3.Text = "Schätze / Essen"
+            TabPage2.Text = "repariere Speicherstand"
+            GroupBox2.Text = "gelöste Probleme"
+            GroupBox7.Text = "StreetPass Begegnungen"
+            GroupBox3.Text = "Hochzeiten"
+            GroupBox6.Text = "geborene Kinder"
+            GroupBox4.Text = "empfangene Reisende"
+            GroupBox5.Text = "geschickte Reisende"
+            GroupBox101.Text = "Insel Name"
+            GroupBox1.Text = "Geld"
+            Label6.Text = "Vorname"
+            Label8.Text = "Nachnahme"
+            Label10.Text = "Lv."
+            Label9.Text = "Spitzname"
+            Label2.Text = "Urheber"
+            Button3.Text = "Mii Änder. speich."
+            Button7.Text = "Mii Änder. speich."
+            Label5.Text = "Phrasen"
+            ComboBox2.Items.Item(0) = "nicht verwandt"
+            ComboBox2.Items.Item(1) = "selbst"
+            ComboBox2.Items.Item(2) = "Ehepartner"
+            ComboBox2.Items.Item(3) = "Elternteil"
+            ComboBox2.Items.Item(4) = "Kind"
+            ComboBox2.Items.Item(5) = "Geschwister"
+            ComboBox2.Items.Item(6) = "anderer Verwandter"
+            CheckBox15.Text = "alle StreetPass/SpotPass Kleidung und Farben freigeschaltet"
+            CheckBox8.Text = "alle speziellen Gerichte freigeschaltet"
+            CheckBox17.Text = "alle StreetPass/SpotPass Kopfbedeckungen freigeschaltet"
+            CheckBox9.Text = "alle Kopfbedeckungen und Farben freigeschaltet"
+            CheckBox1.Text = "alle Innenräume freigeschaltet"
+            CheckBox2.Text = "alle guten Items freigeschaltet"
+            CheckBox5.Text = "alle Schätze freigeschaltet"
+            CheckBox3.Text = "alle Gerichte freigeschaltet"
+            CheckBox6.Text = "alle Klamotten und Farben freigeschaltet"
+            CheckBox10.Text = "wenn ''US alle Kopfbedeckungen und Farben freigeschaltet'' benutzt wurde"
+            CheckBox11.Text = "wenn ''US alle speziellen Gerichte freigeschaltet'' benutzt wurde"
+            CheckBox13.Text = "wenn ''EU alle Kopfbedekungen und Farben freigeschaltet'' benutzt wurde"
+            CheckBox12.Text = "wenn ''EU alle speziellen Gerichte freigeschaltet'' benutzt wurde"
+            CheckBox31.Text = "wenn ''JP alle speziellen Gerichte freigeschaltet'' benutzt wurde"
+            CheckBox32.Text = "wenn ''JP alle Kopfbedekungen und Farben freigeschaltet'' benutzt wurde"
+            GroupBox8.Text = "repariere EU/US/KR Speicherstand"
+            GroupBox10.Text = "repariere EU/JP/KR Speicherstand"
+            GroupBox11.Text = "repariere US/JP/KR Speicherstand"
+            CheckBox14.Text = "entferne Zeitreisen Gleichheit"
+            Label3.Location = New Point(325, 13)
+            Label13.Text = "Sattheit"
+            RadioButton2.Text = "er aß nicht"
+            ComboBox12.Items.Item(0) = "US Speicherstand"
+            ComboBox12.Items.Item(1) = "EU Speicherstand"
+            ComboBox12.Items.Item(2) = "JP Speicherstand"
+            ComboBox12.Items.Item(3) = "KR Speicherstand"
+            Button4.Text = "Inventar"
+            TabPage6.Text = "Freischalten nach Zahlen"
+            TabPage7.Text = "Freischalten nach Laden Katalog"
+            TabPage8.Text = "löscht Items"
+            TabPage9.Text = "Insel Gebäude"
+            TabPage10.Text = "bearbeiten"
+            TabPage12.Text = "Ranglisten Status"
+            CheckBox20.Text = "alle StreetPass/SpotPass Kleidung und Farben freigeschaltet"
+            CheckBox19.Text = "alle StreetPass/SpotPass Kopfbedeckungen freigeschaltet"
+            CheckBox18.Text = "alle Kopfbedeckungen und Farben freigeschaltet"
+            CheckBox16.Text = "alle Innenräume freigeschaltet"
+            CheckBox7.Text = "alle Gerichte freigeschaltet"
+            CheckBox4.Text = "alle Klamotten und Farben freigeschaltet"
+            CheckBox22.Text = "alle StreetPass/SpotPass Kleidung und Farben gelöscht"
+            CheckBox21.Text = "alle StreetPass/SpotPass Kopfbedeckungen gelöscht"
+            CheckBox23.Text = "alle speziellen Gerichte gelöscht"
+            CheckBox24.Text = "alle Kopfbedeckungen und Farben gelöscht"
+            CheckBox25.Text = "alle Innenräume gelöscht"
+            CheckBox26.Text = "alle guten Items gelöscht"
+            CheckBox27.Text = "alle Schätze gelöscht"
+            CheckBox28.Text = "alle Gerichte gelöscht"
+            CheckBox29.Text = "alle Klamotten und Farben gelöscht"
+            CheckBox30.Text = "Tomodachi Life StreetPass/SpotPass zurücksetzen"
+            Label27.Location = New Point(390, 11)
+            Label33.Text = "Lieblingsfarbe"
+            Label34.Text = "aufgewachsen/Kind"
+            Label37.Text = "Bezieh. im echt. Leben"
+            Label35.Text = "Öffentlich"
+            Label36.Text = "Kopieren"
+            Label30.Text = "Lieblingsspeise/Lieblingsessen"
+            Label31.Text = "Mag gerne"
+            Label32.Text = "Mag gar nicht/verabscheut"
+            Label29.Text = "Partner"
+            Label28.Text = "beste Freunde"
+            CheckBox33.Text = "brechen"
+            CheckBox34.Text = "brechen"
+            ComboBox3.Items.Item(0) = "aufgewachsen"
+            ComboBox3.Items.Item(1) = "aufgewachsen (1)"
+            ComboBox3.Items.Item(2) = "Kind"
+            Label40.Text = "Spieler-Rang"
+            Label41.Text = "Luxus-Mii-Rang"
+        End If
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
@@ -308,6 +415,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer la prononciation du nom de l'île"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "klicke hier um die Aussprache deiner Insel zu bearbeiten"
         End If
         Label17.Visible = True
     End Sub
@@ -324,6 +434,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Changer la version de la sauvegarde"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "bearbeitet Speicherstand Version"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -338,6 +451,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Changer la langue de Tomodachi Life Save Editor"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "bearbeitet Tomodachi Life Speicherstand Editor Sprache"
         End If
         Label17.Visible = True
     End Sub
@@ -355,6 +471,10 @@ Public Class Form1
             Label17.Text = "Cliquez pour éditer l'expression favorite des Mii"
             Label5.Text = "Expression favorite"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "klicke um Mii's Phrase zu bearbeiten"
+            Label5.Text = "Phrase"
+        End If
         Label17.Visible = True
         Label5.Visible = True
     End Sub
@@ -370,6 +490,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer la prononciation du prénom des Mii"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "klicke um Mii's Aussprache vom Vornamen zu bearbeiten"
         End If
         Label14.Text = Label18.Text
         Label17.Visible = True
@@ -388,6 +511,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer la prononciation du nom des Mii"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "klicke um Mii's Aussprache vom Nachnamen zu bearbeiten"
+        End If
         Label15.Text = Label19.Text
         Label17.Visible = True
         Label15.Visible = True
@@ -405,6 +531,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "La prononciation du surnom ne peut être édité"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Aussprache vom Spitzname kann nicht geändert werden"
+        End If
         Label17.Visible = True
         Label16.Visible = True
     End Sub
@@ -421,6 +550,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer les objets des Mii"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "klicke um Mii's Geschenke zu bearbeiten"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -434,6 +566,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer l'estomac des Mii si ils ont déjà mangé"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "klicke um Mii's Sattheit zu bearbeiten, wenn er schon gegessen hat"
         End If
         Label17.Visible = True
     End Sub
@@ -449,6 +584,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Éditez pour changer le nombre d'objets à débloqués"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "editiere um Nummer der Items, die freigeschaltet wurden, zu bearbeiten"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -462,6 +600,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer l'inventaire des Mii"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Click to edit the Mii's inventory"
         End If
         Label17.Visible = True
     End Sub
@@ -477,6 +618,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cochez pour que le Mii sélectionné n'a pas mangé"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Überprüfe, ob der ausgewählte Mii nicht gegessen hat"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -490,6 +634,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Comment utiliser ''Retirer pénalité de voyage dans le temps''"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Wie man ''entferne Zeitreisen Gleichheit'' benutzt"
         End If
         Label17.Visible = True
     End Sub
@@ -505,6 +652,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Economie du Mii"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Mii's Taschengeld"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -518,6 +668,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour voir les crédits"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Klicken Sie hier, um Credits zu sehen"
         End If
         Label17.Visible = True
     End Sub
@@ -533,6 +686,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cochez pour réparer une sauvegarde EU/JP/KR"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Wählen Sie, um die EU/JP/KR Datei zu reparieren"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -546,6 +702,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cochez pour réparer une sauvegarde US/JP/KR"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Wählen Sie, um die US/JP/KR Datei zu reparieren"
         End If
         Label17.Visible = True
     End Sub
@@ -561,6 +720,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cochez pour réparer une sauvegarde EU/US/KR"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Wählen Sie, um die EU/US/KR Datei zu reparieren"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -574,6 +736,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Comment utiliser ''Réinitialiser StreetPass/Spotpass de Tomodachi Life''"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Wie man ''Tomodachi Life StreetPass/SpotPass zurücksetzen'' benutzt"
         End If
         Label17.Visible = True
     End Sub
@@ -590,6 +755,10 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "DE" Then
+            fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "sichere deinen Speicherstand bevor du ihn benutzt" & vbNewLine & "Tomodachi Life Save Editor"
             fdialog.ShowDialog()
         End If
         open.Title = "Open save savedataArc.txt"
@@ -712,6 +881,10 @@ Public Class Form1
                 fdialog.Label1.Text = "L'ouverture de savedataArc.txt a échoué," & vbNewLine & "La sauvegarde est corrompu ou" & vbNewLine & "n'est pas une sauvegarde de Tomodachi Life"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "savedataArc.txt nicht geladen" & vbNewLine & "Speicherstand ist korrupt oder kein Tomodachi Life Speicherstand"
+                fdialog.ShowDialog()
+            End If
             ComboBox12.Enabled = True
             ComboBox11.Enabled = True
         End Try
@@ -724,6 +897,10 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "DE" Then
+            fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "sichere deinen Speicherstand bevor du ihn benutzt" & vbNewLine & "Tomodachi Life Save Editor"
             fdialog.ShowDialog()
         End If
         open.Title = "Open save savedataArc.txt"
@@ -834,6 +1011,10 @@ Public Class Form1
                 fdialog.Label1.Text = "L'ouverture de savedataArc.txt a échoué," & vbNewLine & "La sauvegarde est corrompue ou" & vbNewLine & "n'est pas une sauvegarde de Tomodachi Life"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "savedataArc.txt nicht geladen" & vbNewLine & "Speicherstand ist korrupt oder kein Tomodachi Life Speicherstand"
+                fdialog.ShowDialog()
+            End If
             ComboBox12.Enabled = True
             ComboBox11.Enabled = True
         End Try
@@ -847,6 +1028,10 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "DE" Then
+            fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "sichere deinen Speicherstand bevor du ihn benutzt" & vbNewLine & "Tomodachi Life Save Editor"
             fdialog.ShowDialog()
         End If
         open.Title = "Open save savedataArc.txt"
@@ -965,6 +1150,10 @@ Public Class Form1
                 fdialog.Label1.Text = "L'ouverture de savedataArc.txt a échoué," & vbNewLine & "La sauvegarde est corrompue ou" & vbNewLine & "n'est pas une sauvegarde de Tomodachi Life"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "savedataArc.txt nicht geladen" & vbNewLine & "Speicherstand ist korrupt oder kein Tomodachi Life Speicherstand"
+                fdialog.ShowDialog()
+            End If
             ComboBox12.Enabled = True
             ComboBox11.Enabled = True
         End Try
@@ -1059,6 +1248,10 @@ Public Class Form1
                 fdialog.Label1.Text = "File Save"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Datei speichern"
+                fdialog.ShowDialog()
+            End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Une erreur est survenue"
@@ -1066,6 +1259,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -1165,6 +1362,10 @@ Public Class Form1
                 fdialog.Label1.Text = "Changements Mii Sauvegardé" & vbNewLine & "Attention : Editer les valeurs de la nourriture favorite avec un mauvais ID corrompt la sauvegarde"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Änderungen MII speichern" & vbNewLine & "Warnung: Bearbeiten von Lieblingsfutterwerten mit falscher ID korrumpiert Ihre Sicherungsdatei"
+                fdialog.ShowDialog()
+            End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Une erreur est survenue"
@@ -1172,6 +1373,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -1226,6 +1431,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox1.Checked = False
         End Try
     End Sub
@@ -1246,6 +1455,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox2.Checked = False
@@ -1291,6 +1504,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox5.Checked = False
@@ -1346,6 +1563,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox8.Checked = False
         End Try
     End Sub
@@ -1391,6 +1612,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox3.Checked = False
         End Try
     End Sub
@@ -1434,6 +1659,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox6.Checked = False
@@ -2323,6 +2552,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox9.Checked = False
         End Try
     End Sub
@@ -2622,6 +2855,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox17.Checked = False
@@ -3437,6 +3674,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox15.Checked = False
         End Try
     End Sub
@@ -3875,6 +4116,10 @@ Public Class Form1
                     fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde EU''"
                     fdialog.ShowDialog()
                 End If
+                If ComboBox11.Text = "DE" Then
+                    fdialog.Label1.Text = "einige Kopfbedeckungen waren verloren" & vbNewLine & "versuche alles freizuschalten mit ""EU Speicherstand"" Option"
+                    fdialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -3883,6 +4128,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox10.Checked = False
@@ -3907,6 +4156,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox11.Checked = False
@@ -4367,6 +4620,10 @@ Public Class Form1
                     fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde US''"
                     fdialog.ShowDialog()
                 End If
+                If ComboBox11.Text = "DE" Then
+                    fdialog.Label1.Text = "einige Kopfbedeckungen waren verloren" & vbNewLine & "versuche alles freizuschalten mit ""EU Speicherstand"" Option"
+                    fdialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -4375,6 +4632,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox13.Checked = False
@@ -4401,6 +4662,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox12.Checked = False
         End Try
     End Sub
@@ -4420,6 +4685,10 @@ Public Class Form1
                         fdialog.Label1.Text = "La pénalité de voyage dans le temps a été retiré"
                         fdialog.ShowDialog()
                     End If
+                    If ComboBox11.Text = "DE" Then
+                        fdialog.Label1.Text = "Zeitreisen Gleichheit wurde entfernt"
+                        fdialog.ShowDialog()
+                    End If
                 End If
 
                 If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
@@ -4432,6 +4701,10 @@ Public Class Form1
                     End If
                     If ComboBox11.Text = "FR" Then
                         fdialog.Label1.Text = "La pénalité de voyage dans le temps a été retiré"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox11.Text = "DE" Then
+                        fdialog.Label1.Text = "Zeitreisen Gleichheit wurde entfernt"
                         fdialog.ShowDialog()
                     End If
                 End If
@@ -4448,6 +4721,10 @@ Public Class Form1
                         fdialog.Label1.Text = "La pénalité de voyage dans le temps a été retiré"
                         fdialog.ShowDialog()
                     End If
+                    If ComboBox11.Text = "DE" Then
+                        fdialog.Label1.Text = "Zeitreisen Gleichheit wurde entfernt"
+                        fdialog.ShowDialog()
+                    End If
                 End If
                 If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
                     Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
@@ -4461,6 +4738,10 @@ Public Class Form1
                         fdialog.Label1.Text = "La pénalité de voyage dans le temps a été retiré"
                         fdialog.ShowDialog()
                     End If
+                    If ComboBox11.Text = "DE" Then
+                        fdialog.Label1.Text = "Zeitreisen Gleichheit wurde entfernt"
+                        fdialog.ShowDialog()
+                    End If
                 End If
             End If
         Catch ex As Exception
@@ -4470,6 +4751,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox14.Checked = False
@@ -4663,9 +4948,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
 
             If ComboBox1.Text = "Mii 2" Then
@@ -4801,9 +5090,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + &H660
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + &H660
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + &H660
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 3" Then
 
@@ -4939,9 +5232,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 2)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 2)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 2)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 4" Then
 
@@ -5076,9 +5373,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 3)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 3)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 3)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 5" Then
 
@@ -5213,9 +5514,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 4)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 4)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 4)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 6" Then
 
@@ -5350,9 +5655,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 5)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 5)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 5)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 7" Then
 
@@ -5487,9 +5796,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 6)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 6)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 6)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 8" Then
 
@@ -5624,9 +5937,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 7)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 7)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 7)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 9" Then
 
@@ -5761,9 +6078,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 8)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 8)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 8)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 10" Then
 
@@ -5898,9 +6219,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 9)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 9)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 9)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 11" Then
 
@@ -6035,9 +6360,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 10)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 10)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 10)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 12" Then
 
@@ -6172,9 +6501,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 11)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 11)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 11)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 13" Then
 
@@ -6309,9 +6642,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 12)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 12)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 12)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 14" Then
 
@@ -6446,9 +6783,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 13)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 13)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 13)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 15" Then
 
@@ -6583,9 +6924,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 14)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 14)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 14)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 16" Then
 
@@ -6720,9 +7065,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 15)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 15)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 15)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 17" Then
 
@@ -6857,9 +7206,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 16)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 16)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 16)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 18" Then
 
@@ -6994,9 +7347,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 17)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 17)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 17)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 19" Then
 
@@ -7131,9 +7488,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 18)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 18)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 18)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 20" Then
 
@@ -7268,9 +7629,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 19)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 19)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 19)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 21" Then
 
@@ -7405,9 +7770,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 20)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 20)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 20)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 22" Then
 
@@ -7542,9 +7911,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 21)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 21)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 21)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 23" Then
 
@@ -7679,9 +8052,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 22)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 22)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 22)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 24" Then
 
@@ -7816,9 +8193,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 23)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 23)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 23)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 25" Then
 
@@ -7953,9 +8334,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 24)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 24)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 24)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 26" Then
 
@@ -8090,9 +8475,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 25)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 25)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 25)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 27" Then
 
@@ -8227,9 +8616,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 26)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 26)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 26)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 28" Then
 
@@ -8364,9 +8757,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 27)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 27)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 27)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 29" Then
 
@@ -8501,9 +8898,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 28)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 28)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 28)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 30" Then
 
@@ -8638,9 +9039,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 29)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 29)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 29)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 31" Then
 
@@ -8775,9 +9180,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 30)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 30)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 30)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 32" Then
 
@@ -8912,9 +9321,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 31)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 31)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 31)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 33" Then
 
@@ -9049,9 +9462,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 32)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 32)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 32)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 34" Then
 
@@ -9186,9 +9603,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 33)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 33)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 33)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 35" Then
 
@@ -9323,9 +9744,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 34)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 34)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 34)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 36" Then
 
@@ -9460,9 +9885,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 35)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 35)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 35)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 37" Then
 
@@ -9597,9 +10026,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 36)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 36)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 36)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 38" Then
 
@@ -9734,9 +10167,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 37)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 37)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 37)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 39" Then
 
@@ -9871,9 +10308,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 38)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 38)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 38)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 40" Then
 
@@ -10008,9 +10449,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 39)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 39)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 39)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 41" Then
 
@@ -10145,9 +10590,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 40)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 40)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 40)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 42" Then
 
@@ -10282,9 +10731,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 41)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 41)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 41)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 43" Then
 
@@ -10419,9 +10872,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 42)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 42)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 42)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 44" Then
 
@@ -10556,9 +11013,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 43)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 43)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 43)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 45" Then
 
@@ -10693,9 +11154,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 44)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 44)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 44)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 46" Then
 
@@ -10830,9 +11295,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 45)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 45)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 45)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 47" Then
 
@@ -10967,9 +11436,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 46)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 46)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 46)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 48" Then
 
@@ -11104,9 +11577,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 47)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 47)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 47)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 49" Then
 
@@ -11241,9 +11718,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 48)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 48)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 48)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 50" Then
 
@@ -11378,9 +11859,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 49)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 49)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 49)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 51" Then
 
@@ -11515,9 +12000,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 50)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 50)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 50)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 52" Then
 
@@ -11652,9 +12141,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 51)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 51)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 51)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 53" Then
 
@@ -11789,9 +12282,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 52)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 52)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 52)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 54" Then
 
@@ -11926,9 +12423,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 53)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 53)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 53)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 55" Then
 
@@ -12063,9 +12564,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 54)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 54)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 54)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 56" Then
 
@@ -12200,9 +12705,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 55)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 55)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 55)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 57" Then
 
@@ -12337,9 +12846,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 56)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 56)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 56)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 58" Then
 
@@ -12474,9 +12987,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 57)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 57)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 57)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 59" Then
 
@@ -12611,9 +13128,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 58)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 58)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 58)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 60" Then
 
@@ -12748,9 +13269,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 59)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 59)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 59)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 61" Then
 
@@ -12885,9 +13410,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 60)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 60)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 60)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 62" Then
 
@@ -13022,9 +13551,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 61)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 61)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 61)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 63" Then
 
@@ -13159,9 +13692,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 62)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 62)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 62)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 64" Then
 
@@ -13296,9 +13833,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 63)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 63)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 63)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 65" Then
 
@@ -13433,9 +13974,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 64)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 64)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 64)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 66" Then
 
@@ -13570,9 +14115,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 65)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 65)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 65)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 67" Then
 
@@ -13707,9 +14256,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 66)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 66)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 66)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 68" Then
 
@@ -13844,9 +14397,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 67)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 67)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 67)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 69" Then
 
@@ -13981,9 +14538,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 68)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 68)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 68)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 70" Then
 
@@ -14118,9 +14679,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 69)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 69)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 69)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 71" Then
 
@@ -14255,9 +14820,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 70)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 70)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 70)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 72" Then
 
@@ -14392,9 +14961,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 71)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 71)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 71)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 73" Then
 
@@ -14529,9 +15102,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 72)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 72)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 72)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 74" Then
 
@@ -14666,9 +15243,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 73)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 73)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 73)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 75" Then
 
@@ -14803,9 +15384,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 74)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 74)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 74)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 76" Then
 
@@ -14940,9 +15525,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 75)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 75)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 75)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 77" Then
 
@@ -15077,9 +15666,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 76)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 76)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 76)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 78" Then
 
@@ -15214,9 +15807,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 77)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 77)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 77)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 79" Then
 
@@ -15351,9 +15948,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 78)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 78)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 78)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 80" Then
 
@@ -15488,9 +16089,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 79)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 79)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 79)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 81" Then
 
@@ -15625,9 +16230,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 80)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 80)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 80)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 82" Then
 
@@ -15762,9 +16371,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 81)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 81)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 81)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 83" Then
 
@@ -15899,9 +16512,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 82)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 82)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 82)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 84" Then
 
@@ -16036,9 +16653,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 83)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 83)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 83)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 85" Then
 
@@ -16173,9 +16794,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 84)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 84)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 84)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 86" Then
 
@@ -16310,9 +16935,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 85)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 85)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 85)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 87" Then
 
@@ -16447,9 +17076,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 86)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 86)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 86)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 88" Then
 
@@ -16584,9 +17217,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 87)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 87)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 87)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 89" Then
 
@@ -16721,9 +17358,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 88)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 88)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 88)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 90" Then
 
@@ -16858,9 +17499,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 89)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 89)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 89)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 91" Then
 
@@ -16995,9 +17640,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 90)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 90)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 90)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 92" Then
 
@@ -17132,9 +17781,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 91)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 91)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 91)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 93" Then
 
@@ -17269,9 +17922,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 92)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 92)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 92)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 94" Then
 
@@ -17406,9 +18063,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 93)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 93)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 93)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 95" Then
 
@@ -17543,9 +18204,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 94)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 94)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 94)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 96" Then
 
@@ -17680,9 +18345,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 95)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 95)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 95)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 97" Then
 
@@ -17817,9 +18486,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 96)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 96)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 96)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 98" Then
 
@@ -17954,9 +18627,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 97)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 97)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 97)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 99" Then
 
@@ -18091,9 +18768,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 98)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 98)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 98)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             If ComboBox1.Text = "Mii 100" Then
 
@@ -18228,9 +18909,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H22B0 + (&H660 * 99)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1F32 + (&H660 * 99)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1F24 + (&H660 * 99)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
             End If
             End If
 
@@ -18326,9 +19011,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 2" Then
                     Reader.Position = &H1CA0 + &H590
@@ -18424,9 +19113,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + &H590
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + &H590
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + &H590
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 3" Then
                     Reader.Position = &H1CA0 + (&H590 * 2)
@@ -18522,9 +19215,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 2)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 2)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 2)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 4" Then
                     Reader.Position = &H1CA0 + (&H590 * 3)
@@ -18620,9 +19317,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 3)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 3)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 3)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 5" Then
                     Reader.Position = &H1CA0 + (&H590 * 4)
@@ -18718,9 +19419,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 4)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 4)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 4)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 6" Then
                     Reader.Position = &H1CA0 + (&H590 * 5)
@@ -18816,9 +19521,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 5)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 5)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 5)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 7" Then
                     Reader.Position = &H1CA0 + (&H590 * 6)
@@ -18914,9 +19623,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 6)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 6)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 6)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 8" Then
                     Reader.Position = &H1CA0 + (&H590 * 7)
@@ -19012,9 +19725,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 7)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 7)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 7)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 9" Then
                     Reader.Position = &H1CA0 + (&H590 * 8)
@@ -19110,9 +19827,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 8)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 8)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 8)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 10" Then
                     Reader.Position = &H1CA0 + (&H590 * 9)
@@ -19208,9 +19929,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 9)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 9)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 9)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 11" Then
                     Reader.Position = &H1CA0 + (&H590 * 10)
@@ -19306,9 +20031,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 10)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 10)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 10)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 12" Then
                     Reader.Position = &H1CA0 + (&H590 * 11)
@@ -19404,9 +20133,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 11)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 11)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 11)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 13" Then
                     Reader.Position = &H1CA0 + (&H590 * 12)
@@ -19502,9 +20235,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 12)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 12)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 12)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 14" Then
                     Reader.Position = &H1CA0 + (&H590 * 13)
@@ -19600,9 +20337,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 13)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 13)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 13)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 15" Then
                     Reader.Position = &H1CA0 + (&H590 * 14)
@@ -19698,9 +20439,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 14)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 14)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 14)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 16" Then
                     Reader.Position = &H1CA0 + (&H590 * 15)
@@ -19796,9 +20541,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 15)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 15)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 15)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 17" Then
                     Reader.Position = &H1CA0 + (&H590 * 16)
@@ -19894,9 +20643,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 16)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 16)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 16)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 18" Then
                     Reader.Position = &H1CA0 + (&H590 * 17)
@@ -19992,9 +20745,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 17)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 17)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 17)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 19" Then
                     Reader.Position = &H1CA0 + (&H590 * 18)
@@ -20090,9 +20847,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 18)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 18)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 18)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 20" Then
                     Reader.Position = &H1CA0 + (&H590 * 19)
@@ -20188,9 +20949,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 19)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 19)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 19)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 21" Then
                     Reader.Position = &H1CA0 + (&H590 * 20)
@@ -20286,9 +21051,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 20)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 20)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 20)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 22" Then
                     Reader.Position = &H1CA0 + (&H590 * 21)
@@ -20384,9 +21153,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 21)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 21)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 21)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 23" Then
                     Reader.Position = &H1CA0 + (&H590 * 22)
@@ -20482,9 +21255,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 22)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 22)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 22)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 24" Then
                     Reader.Position = &H1CA0 + (&H590 * 23)
@@ -20580,9 +21357,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 23)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 23)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 23)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 25" Then
                     Reader.Position = &H1CA0 + (&H590 * 24)
@@ -20678,9 +21459,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 24)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 24)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 24)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 26" Then
                     Reader.Position = &H1CA0 + (&H590 * 25)
@@ -20776,9 +21561,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 25)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 25)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 25)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 27" Then
                     Reader.Position = &H1CA0 + (&H590 * 26)
@@ -20874,9 +21663,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 26)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 26)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 26)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 28" Then
                     Reader.Position = &H1CA0 + (&H590 * 27)
@@ -20972,9 +21765,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 27)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 27)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 27)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 29" Then
                     Reader.Position = &H1CA0 + (&H590 * 28)
@@ -21070,9 +21867,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 28)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 28)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 28)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 30" Then
                     Reader.Position = &H1CA0 + (&H590 * 29)
@@ -21168,9 +21969,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 29)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 29)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 29)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 31" Then
                     Reader.Position = &H1CA0 + (&H590 * 30)
@@ -21266,9 +22071,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 30)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 30)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 30)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 32" Then
                     Reader.Position = &H1CA0 + (&H590 * 31)
@@ -21364,9 +22173,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 31)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 31)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 31)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 33" Then
                     Reader.Position = &H1CA0 + (&H590 * 32)
@@ -21462,9 +22275,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 32)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 32)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 32)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 34" Then
                     Reader.Position = &H1CA0 + (&H590 * 33)
@@ -21560,9 +22377,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 33)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 33)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 33)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 35" Then
                     Reader.Position = &H1CA0 + (&H590 * 34)
@@ -21658,9 +22479,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 34)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 34)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 34)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 36" Then
                     Reader.Position = &H1CA0 + (&H590 * 35)
@@ -21756,9 +22581,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 35)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 35)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 35)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 37" Then
                     Reader.Position = &H1CA0 + (&H590 * 36)
@@ -21854,9 +22683,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 36)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 36)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 36)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 38" Then
                     Reader.Position = &H1CA0 + (&H590 * 37)
@@ -21952,9 +22785,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 37)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 37)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 37)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 39" Then
                     Reader.Position = &H1CA0 + (&H590 * 38)
@@ -22050,9 +22887,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 38)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 38)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 38)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 40" Then
                     Reader.Position = &H1CA0 + (&H590 * 39)
@@ -22148,9 +22989,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 39)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 39)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 39)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 41" Then
                     Reader.Position = &H1CA0 + (&H590 * 40)
@@ -22246,9 +23091,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 40)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 40)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 40)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 42" Then
                     Reader.Position = &H1CA0 + (&H590 * 41)
@@ -22344,9 +23193,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 41)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 41)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 41)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 43" Then
                     Reader.Position = &H1CA0 + (&H590 * 42)
@@ -22442,9 +23295,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 42)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 42)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 42)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 44" Then
                     Reader.Position = &H1CA0 + (&H590 * 43)
@@ -22540,9 +23397,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 43)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 43)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 43)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 45" Then
                     Reader.Position = &H1CA0 + (&H590 * 44)
@@ -22638,9 +23499,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 44)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 44)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 44)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 46" Then
                     Reader.Position = &H1CA0 + (&H590 * 45)
@@ -22736,9 +23601,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 45)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 45)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 45)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 47" Then
                     Reader.Position = &H1CA0 + (&H590 * 46)
@@ -22834,9 +23703,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 46)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 46)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 46)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 48" Then
                     Reader.Position = &H1CA0 + (&H590 * 47)
@@ -22932,9 +23805,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 47)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 47)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 47)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 49" Then
                     Reader.Position = &H1CA0 + (&H590 * 48)
@@ -23030,9 +23907,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 48)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 48)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 48)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 50" Then
                     Reader.Position = &H1CA0 + (&H590 * 49)
@@ -23128,9 +24009,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 49)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 49)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 49)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 51" Then
                     Reader.Position = &H1CA0 + (&H590 * 50)
@@ -23226,9 +24111,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 50)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 50)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 50)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 52" Then
                     Reader.Position = &H1CA0 + (&H590 * 51)
@@ -23323,9 +24212,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 51)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 51)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 51)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 53" Then
                     Reader.Position = &H1CA0 + (&H590 * 52)
@@ -23420,9 +24313,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 52)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 52)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 52)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 54" Then
                     Reader.Position = &H1CA0 + (&H590 * 53)
@@ -23517,9 +24414,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 53)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 53)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 53)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 55" Then
                     Reader.Position = &H1CA0 + (&H590 * 54)
@@ -23614,9 +24515,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 54)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 54)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 54)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 56" Then
                     Reader.Position = &H1CA0 + (&H590 * 55)
@@ -23711,9 +24616,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 55)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 55)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 55)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 57" Then
                     Reader.Position = &H1CA0 + (&H590 * 56)
@@ -23808,9 +24717,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 56)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 56)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 56)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 58" Then
                     Reader.Position = &H1CA0 + (&H590 * 57)
@@ -23905,9 +24818,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 57)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 57)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 57)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 59" Then
                     Reader.Position = &H1CA0 + (&H590 * 58)
@@ -24002,9 +24919,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 58)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 58)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 58)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 60" Then
                     Reader.Position = &H1CA0 + (&H590 * 59)
@@ -24099,9 +25020,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 59)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 59)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 59)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 61" Then
                     Reader.Position = &H1CA0 + (&H590 * 60)
@@ -24196,9 +25121,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 60)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 60)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 60)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 62" Then
                     Reader.Position = &H1CA0 + (&H590 * 61)
@@ -24293,9 +25222,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 61)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 61)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 61)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 63" Then
                     Reader.Position = &H1CA0 + (&H590 * 62)
@@ -24390,9 +25323,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 62)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 62)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 62)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 64" Then
                     Reader.Position = &H1CA0 + (&H590 * 63)
@@ -24487,9 +25424,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 63)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 63)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 63)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 65" Then
                     Reader.Position = &H1CA0 + (&H590 * 64)
@@ -24584,9 +25525,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 64)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 64)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 64)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 66" Then
                     Reader.Position = &H1CA0 + (&H590 * 65)
@@ -24681,9 +25626,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 65)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 65)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 65)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 67" Then
                     Reader.Position = &H1CA0 + (&H590 * 66)
@@ -24778,9 +25727,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 66)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 66)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 66)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 68" Then
                     Reader.Position = &H1CA0 + (&H590 * 67)
@@ -24875,9 +25828,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 67)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 67)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 67)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 69" Then
                     Reader.Position = &H1CA0 + (&H590 * 68)
@@ -24972,9 +25929,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 68)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 68)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 68)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 70" Then
                     Reader.Position = &H1CA0 + (&H590 * 69)
@@ -25069,9 +26030,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 69)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 69)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 69)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 71" Then
                     Reader.Position = &H1CA0 + (&H590 * 70)
@@ -25166,9 +26131,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 70)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 70)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 70)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 72" Then
                     Reader.Position = &H1CA0 + (&H590 * 71)
@@ -25263,9 +26232,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 71)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 71)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 71)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 73" Then
                     Reader.Position = &H1CA0 + (&H590 * 72)
@@ -25360,9 +26333,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 72)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 72)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 72)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 74" Then
                     Reader.Position = &H1CA0 + (&H590 * 73)
@@ -25457,9 +26434,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 73)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 73)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 73)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 75" Then
                     Reader.Position = &H1CA0 + (&H590 * 74)
@@ -25554,9 +26535,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 74)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 74)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 74)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 76" Then
                     Reader.Position = &H1CA0 + (&H590 * 75)
@@ -25651,9 +26636,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 75)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 75)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 75)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 77" Then
                     Reader.Position = &H1CA0 + (&H590 * 76)
@@ -25748,9 +26737,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 76)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 76)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 76)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 78" Then
                     Reader.Position = &H1CA0 + (&H590 * 77)
@@ -25845,9 +26838,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 77)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 77)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 77)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 79" Then
                     Reader.Position = &H1CA0 + (&H590 * 78)
@@ -25942,9 +26939,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 78)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 78)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 78)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 80" Then
                     Reader.Position = &H1CA0 + (&H590 * 79)
@@ -26039,9 +27040,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 79)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 79)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 79)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 81" Then
                     Reader.Position = &H1CA0 + (&H590 * 80)
@@ -26136,9 +27141,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 80)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 80)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 80)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 82" Then
                     Reader.Position = &H1CA0 + (&H590 * 81)
@@ -26233,9 +27242,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 81)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 81)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 81)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 83" Then
                     Reader.Position = &H1CA0 + (&H590 * 82)
@@ -26330,9 +27343,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 82)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 82)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 82)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 84" Then
                     Reader.Position = &H1CA0 + (&H590 * 83)
@@ -26427,9 +27444,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 83)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 83)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 83)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 85" Then
                     Reader.Position = &H1CA0 + (&H590 * 84)
@@ -26524,9 +27545,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 84)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 84)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 84)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 86" Then
                     Reader.Position = &H1CA0 + (&H590 * 85)
@@ -26621,9 +27646,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 85)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 85)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 85)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 87" Then
                     Reader.Position = &H1CA0 + (&H590 * 86)
@@ -26718,9 +27747,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 86)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 86)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 86)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 88" Then
                     Reader.Position = &H1CA0 + (&H590 * 87)
@@ -26815,9 +27848,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 87)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 87)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 87)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 89" Then
                     Reader.Position = &H1CA0 + (&H590 * 88)
@@ -26912,9 +27949,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 88)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 88)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 88)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 90" Then
                     Reader.Position = &H1CA0 + (&H590 * 89)
@@ -27009,9 +28050,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 89)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 89)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 89)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 91" Then
                     Reader.Position = &H1CA0 + (&H590 * 90)
@@ -27106,9 +28151,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 90)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 90)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 90)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 92" Then
                     Reader.Position = &H1CA0 + (&H590 * 91)
@@ -27203,9 +28252,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 91)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 91)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 91)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 93" Then
                     Reader.Position = &H1CA0 + (&H590 * 92)
@@ -27300,9 +28353,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 92)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 92)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 92)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 94" Then
                     Reader.Position = &H1CA0 + (&H590 * 93)
@@ -27397,9 +28454,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 93)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 93)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 93)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 95" Then
                     Reader.Position = &H1CA0 + (&H590 * 94)
@@ -27494,9 +28555,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 94)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 94)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 94)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 96" Then
                     Reader.Position = &H1CA0 + (&H590 * 95)
@@ -27591,9 +28656,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 95)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 95)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 95)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 97" Then
                     Reader.Position = &H1CA0 + (&H590 * 96)
@@ -27688,9 +28757,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 96)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 96)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 96)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 98" Then
                     Reader.Position = &H1CA0 + (&H590 * 97)
@@ -27785,9 +28858,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 97)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 97)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 97)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 99" Then
                     Reader.Position = &H1CA0 + (&H590 * 98)
@@ -27882,9 +28959,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 98)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 98)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 98)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
                 If ComboBox1.Text = "Mii 100" Then
                     Reader.Position = &H1CA0 + (&H590 * 99)
@@ -27979,9 +29060,13 @@ Public Class Form1
                     appartement = Reader.Position
                     NumericUpDown57.Value = Reader.ReadInt8
                     Reader.Position = &H21B0 + (&H590 * 99)
-                    BSTF = Reader.Position
+                    Splurge = Reader.Position
+                    NumericUpDown45.Value = Reader.ReadUInt32
                     Reader.Position = &H1E32 + (&H590 * 99)
                     sweetheart = Reader.Position
+                    Reader.Position = &H1E24 + (&H590 * 99)
+                    Pampered = Reader.Position
+                    NumericUpDown44.Value = Reader.ReadUInt32
                 End If
             End If
         Catch ex As Exception
@@ -27991,6 +29076,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -28141,15 +29230,23 @@ Public Class Form1
             Writer.WriteUInt16(NumericUpDown52.Value)
             Writer.Position = grow
             Writer.WriteInt8(NumericUpDown56.Value)
+            Writer.Position = Splurge
+            Writer.WriteUInt32(NumericUpDown45.Value)
+            Writer.Position = Pampered
+            Writer.WriteUInt32(NumericUpDown44.Value)
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "Changes Mii Save" & vbNewLine & "Warning : Edit favorite foods values with wrong ID corrupts your save file "
                 fdialog.ShowDialog()
             End If
-
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Änderungen MII speichern" & vbNewLine & "Warnung: Bearbeiten von Lieblingsfutterwerten mit falscher ID korrumpiert Ihre Sicherungsdatei"
+                fdialog.ShowDialog()
+            End If
             If ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Changements Mii Sauvegardé" & vbNewLine & "Attention : Editer les valeurs de la nourriture favorite avec un mauvais ID corrompt la sauvegarde"
                 fdialog.ShowDialog()
             End If
+
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Une erreur est survenue"
@@ -28157,6 +29254,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -28268,6 +29369,10 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             fdialog.Label1.Text = "Pour retirer la pénalité de voyage dans le temps," & vbNewLine & "Changer le temps dans Tomodachi life ou sur la 3ds" & vbNewLine & "jouez, sauvegardez et exportez votre sauvegarde." & vbNewLine & "Cochez et re-importez votre sauvegarde" & vbNewLine & "dans Tomodachi Life"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "DE" Then
+            fdialog.Label1.Text = "um Zeitreisen Gleichheit entfernen zu benutzen, ändere Zeit in Tomodachi Life oder im 3ds, spiele und speichere" & vbNewLine & "exportiere deinen Speicherstand mit Zeitreisen Gleichheit" & vbNewLine & "importiere deinen Speicherstand hier" & vbNewLine & "überprüfe und importiere deinen Speicherstand in Tomodachi Life"
             fdialog.ShowDialog()
         End If
     End Sub
@@ -29326,6 +30431,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             RadioButton2.Checked = False
         End Try
     End Sub
@@ -29398,6 +30507,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox4.Checked = False
         End Try
     End Sub
@@ -29443,6 +30556,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox7.Checked = False
         End Try
     End Sub
@@ -29486,6 +30603,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox16.Checked = False
@@ -30375,6 +31496,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox18.Checked = False
         End Try
     End Sub
@@ -30674,6 +31799,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox19.Checked = False
@@ -31487,6 +32616,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox20.Checked = False
         End Try
     End Sub
@@ -31530,6 +32663,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox29.Checked = False
@@ -31577,6 +32714,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox28.Checked = False
         End Try
     End Sub
@@ -31622,6 +32763,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox27.Checked = False
         End Try
     End Sub
@@ -31642,6 +32787,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox26.Checked = False
@@ -31687,6 +32836,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox25.Checked = False
@@ -32576,6 +33729,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox24.Checked = False
         End Try
     End Sub
@@ -32627,6 +33784,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox23.Checked = False
@@ -32928,6 +34089,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox21.Checked = False
@@ -33741,6 +34906,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox22.Checked = False
         End Try
     End Sub
@@ -33789,11 +34958,18 @@ Public Class Form1
             Writer.WriteInt32(NumericUpDown19.Value)
             Writer.Position = fullness
             Writer.WriteInt8(NumericUpDown21.Value)
+            Writer.Position = Splurge
+            Writer.WriteUInt32(NumericUpDown45.Value)
+            Writer.Position = Pampered
+            Writer.WriteUInt32(NumericUpDown44.Value)
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "Changes Mii Save"
                 fdialog.ShowDialog()
             End If
-
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Änderungen Mii Save"
+                fdialog.ShowDialog()
+            End If
             If ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Changements Mii Sauvegardé"
                 fdialog.ShowDialog()
@@ -33805,6 +34981,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -33837,7 +35017,10 @@ Public Class Form1
                     fdialog.Label1.Text = "StreetPass / SpotPass has been reset"
                     fdialog.ShowDialog()
                 End If
-
+                If ComboBox11.Text = "DE" Then
+                    fdialog.Label1.Text = "StreetPass/SpotPass wurde zurückgesetzt"
+                    fdialog.ShowDialog()
+                End If
                 If ComboBox11.Text = "FR" Then
                     fdialog.Label1.Text = "StreetPass / SpotPass ont été réinitialisé"
                     fdialog.ShowDialog()
@@ -33852,6 +35035,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox30.Checked = False
         End Try
     End Sub
@@ -33863,6 +35050,10 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             fdialog.Label1.Text = "Si ''Réinitialiser StreetPass/Spotpass de" & vbNewLine & "Tomodachi Life'' est utilisé" & vbNewLine & "Vous devrez paramétrer de nouveau SteetPass/SpotPass" & vbNewLine & "Et ainsi changer d'objet envoyé par StreetPass"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "DE" Then
+            fdialog.Label1.Text = "Wenn ""Tomodachi Life StreetPass/SpotPass zurücksetzen'' benutzt wird, wirst du in der Lage sein StreetPass/SpotPass zu konfigurieren und das Item zu ändern das zu StreetPass gesendet wird"
             fdialog.ShowDialog()
         End If
     End Sub
@@ -34393,6 +35584,10 @@ Public Class Form1
                 fdialog.Label1.Text = "An error has occured, load a save first"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
             CheckBox31.Checked = False
         End Try
     End Sub
@@ -34418,6 +35613,14 @@ Public Class Form1
                 TextBox1.Text = "Non"
             End If
         End If
+        If ComboBox11.Text = "DE" Then
+            If NumericUpDown54.Value Mod 2 = 0 Then
+                TextBox1.Text = "An"
+            End If
+            If NumericUpDown54.Value Mod 2 = 1 Then
+                TextBox1.Text = "Aus"
+            End If
+        End If
     End Sub
 
     Private Sub NumericUpDown55_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown55.ValueChanged
@@ -34435,6 +35638,14 @@ Public Class Form1
             End If
             If NumericUpDown55.Value = 1 Then
                 TextBox6.Text = "Autoriser"
+            End If
+        End If
+        If ComboBox11.Text = "DE" Then
+            If NumericUpDown55.Value = 0 Then
+                TextBox6.Text = "Nicht erlauben"
+            End If
+            If NumericUpDown55.Value = 1 Then
+                TextBox6.Text = "Erlauben"
             End If
         End If
     End Sub
@@ -34929,6 +36140,209 @@ Public Class Form1
                 Label38.Text = "apt.1304"
             End If
         End If
+        If ComboBox11.Text = "DE" Then
+            If NumericUpDown57.Value = 0 Then
+                Label38.Text = "apt.101"
+            ElseIf NumericUpDown57.Value = 1 Then
+                Label38.Text = "apt.102"
+            ElseIf NumericUpDown57.Value = 2 Then
+                Label38.Text = "apt.103"
+            ElseIf NumericUpDown57.Value = 3 Then
+                Label38.Text = "apt.104"
+            ElseIf NumericUpDown57.Value = 4 Then
+                Label38.Text = "apt.105"
+            ElseIf NumericUpDown57.Value = 5 Then
+                Label38.Text = "apt.106"
+            ElseIf NumericUpDown57.Value = 6 Then
+                Label38.Text = "apt.107"
+            ElseIf NumericUpDown57.Value = 7 Then
+                Label38.Text = "apt.108"
+            ElseIf NumericUpDown57.Value = 8 Then
+                Label38.Text = "apt.201"
+            ElseIf NumericUpDown57.Value = 9 Then
+                Label38.Text = "apt.202"
+            ElseIf NumericUpDown57.Value = 10 Then
+                Label38.Text = "apt.203"
+            ElseIf NumericUpDown57.Value = 11 Then
+                Label38.Text = "apt.204"
+            ElseIf NumericUpDown57.Value = 12 Then
+                Label38.Text = "apt.205"
+            ElseIf NumericUpDown57.Value = 13 Then
+                Label38.Text = "apt.206"
+            ElseIf NumericUpDown57.Value = 14 Then
+                Label38.Text = "apt.207"
+            ElseIf NumericUpDown57.Value = 15 Then
+                Label38.Text = "apt.208"
+            ElseIf NumericUpDown57.Value = 16 Then
+                Label38.Text = "apt.301"
+            ElseIf NumericUpDown57.Value = 17 Then
+                Label38.Text = "apt.302"
+            ElseIf NumericUpDown57.Value = 18 Then
+                Label38.Text = "apt.303"
+            ElseIf NumericUpDown57.Value = 19 Then
+                Label38.Text = "apt.304"
+            ElseIf NumericUpDown57.Value = 20 Then
+                Label38.Text = "apt.305"
+            ElseIf NumericUpDown57.Value = 21 Then
+                Label38.Text = "apt.306"
+            ElseIf NumericUpDown57.Value = 22 Then
+                Label38.Text = "apt.307"
+            ElseIf NumericUpDown57.Value = 23 Then
+                Label38.Text = "apt.308"
+            ElseIf NumericUpDown57.Value = 24 Then
+                Label38.Text = "apt.401"
+            ElseIf NumericUpDown57.Value = 25 Then
+                Label38.Text = "apt.402"
+            ElseIf NumericUpDown57.Value = 26 Then
+                Label38.Text = "apt.403"
+            ElseIf NumericUpDown57.Value = 27 Then
+                Label38.Text = "apt.404"
+            ElseIf NumericUpDown57.Value = 28 Then
+                Label38.Text = "apt.405"
+            ElseIf NumericUpDown57.Value = 29 Then
+                Label38.Text = "apt.406"
+            ElseIf NumericUpDown57.Value = 30 Then
+                Label38.Text = "apt.407"
+            ElseIf NumericUpDown57.Value = 31 Then
+                Label38.Text = "apt.408"
+            ElseIf NumericUpDown57.Value = 32 Then
+                Label38.Text = "apt.501"
+            ElseIf NumericUpDown57.Value = 33 Then
+                Label38.Text = "apt.502"
+            ElseIf NumericUpDown57.Value = 34 Then
+                Label38.Text = "apt.503"
+            ElseIf NumericUpDown57.Value = 35 Then
+                Label38.Text = "apt.504"
+            ElseIf NumericUpDown57.Value = 36 Then
+                Label38.Text = "apt.505"
+            ElseIf NumericUpDown57.Value = 37 Then
+                Label38.Text = "apt.506"
+            ElseIf NumericUpDown57.Value = 38 Then
+                Label38.Text = "apt.507"
+            ElseIf NumericUpDown57.Value = 39 Then
+                Label38.Text = "apt.508"
+            ElseIf NumericUpDown57.Value = 40 Then
+                Label38.Text = "apt.601"
+            ElseIf NumericUpDown57.Value = 41 Then
+                Label38.Text = "apt.602"
+            ElseIf NumericUpDown57.Value = 42 Then
+                Label38.Text = "apt.603"
+            ElseIf NumericUpDown57.Value = 43 Then
+                Label38.Text = "apt.604"
+            ElseIf NumericUpDown57.Value = 44 Then
+                Label38.Text = "apt.605"
+            ElseIf NumericUpDown57.Value = 45 Then
+                Label38.Text = "apt.606"
+            ElseIf NumericUpDown57.Value = 46 Then
+                Label38.Text = "apt.607"
+            ElseIf NumericUpDown57.Value = 47 Then
+                Label38.Text = "apt.608"
+            ElseIf NumericUpDown57.Value = 48 Then
+                Label38.Text = "apt.701"
+            ElseIf NumericUpDown57.Value = 49 Then
+                Label38.Text = "apt.702"
+            ElseIf NumericUpDown57.Value = 50 Then
+                Label38.Text = "apt.703"
+            ElseIf NumericUpDown57.Value = 51 Then
+                Label38.Text = "apt.704"
+            ElseIf NumericUpDown57.Value = 52 Then
+                Label38.Text = "apt.705"
+            ElseIf NumericUpDown57.Value = 53 Then
+                Label38.Text = "apt.706"
+            ElseIf NumericUpDown57.Value = 54 Then
+                Label38.Text = "apt.707"
+            ElseIf NumericUpDown57.Value = 55 Then
+                Label38.Text = "apt.708"
+            ElseIf NumericUpDown57.Value = 56 Then
+                Label38.Text = "apt.801"
+            ElseIf NumericUpDown57.Value = 57 Then
+                Label38.Text = "apt.802"
+            ElseIf NumericUpDown57.Value = 58 Then
+                Label38.Text = "apt.803"
+            ElseIf NumericUpDown57.Value = 59 Then
+                Label38.Text = "apt.804"
+            ElseIf NumericUpDown57.Value = 60 Then
+                Label38.Text = "apt.805"
+            ElseIf NumericUpDown57.Value = 61 Then
+                Label38.Text = "apt.806"
+            ElseIf NumericUpDown57.Value = 62 Then
+                Label38.Text = "apt.807"
+            ElseIf NumericUpDown57.Value = 63 Then
+                Label38.Text = "apt.808"
+            ElseIf NumericUpDown57.Value = 64 Then
+                Label38.Text = "apt.901"
+            ElseIf NumericUpDown57.Value = 65 Then
+                Label38.Text = "apt.902"
+            ElseIf NumericUpDown57.Value = 66 Then
+                Label38.Text = "apt.903"
+            ElseIf NumericUpDown57.Value = 67 Then
+                Label38.Text = "apt.904"
+            ElseIf NumericUpDown57.Value = 68 Then
+                Label38.Text = "apt.905"
+            ElseIf NumericUpDown57.Value = 69 Then
+                Label38.Text = "apt.906"
+            ElseIf NumericUpDown57.Value = 70 Then
+                Label38.Text = "apt.907"
+            ElseIf NumericUpDown57.Value = 71 Then
+                Label38.Text = "apt.908"
+            ElseIf NumericUpDown57.Value = 72 Then
+                Label38.Text = "apt.1001"
+            ElseIf NumericUpDown57.Value = 73 Then
+                Label38.Text = "apt.1002"
+            ElseIf NumericUpDown57.Value = 74 Then
+                Label38.Text = "apt.1003"
+            ElseIf NumericUpDown57.Value = 75 Then
+                Label38.Text = "apt.1004"
+            ElseIf NumericUpDown57.Value = 76 Then
+                Label38.Text = "apt.1005"
+            ElseIf NumericUpDown57.Value = 77 Then
+                Label38.Text = "apt.1006"
+            ElseIf NumericUpDown57.Value = 78 Then
+                Label38.Text = "apt.1007"
+            ElseIf NumericUpDown57.Value = 79 Then
+                Label38.Text = "apt.1008"
+            ElseIf NumericUpDown57.Value = 80 Then
+                Label38.Text = "apt.1101"
+            ElseIf NumericUpDown57.Value = 81 Then
+                Label38.Text = "apt.1102"
+            ElseIf NumericUpDown57.Value = 82 Then
+                Label38.Text = "apt.1103"
+            ElseIf NumericUpDown57.Value = 83 Then
+                Label38.Text = "apt.1104"
+            ElseIf NumericUpDown57.Value = 84 Then
+                Label38.Text = "apt.1105"
+            ElseIf NumericUpDown57.Value = 85 Then
+                Label38.Text = "apt.1106"
+            ElseIf NumericUpDown57.Value = 86 Then
+                Label38.Text = "apt.1107"
+            ElseIf NumericUpDown57.Value = 87 Then
+                Label38.Text = "apt.1108"
+            ElseIf NumericUpDown57.Value = 88 Then
+                Label38.Text = "apt.1201"
+            ElseIf NumericUpDown57.Value = 89 Then
+                Label38.Text = "apt.1202"
+            ElseIf NumericUpDown57.Value = 90 Then
+                Label38.Text = "apt.1203"
+            ElseIf NumericUpDown57.Value = 91 Then
+                Label38.Text = "apt.1204"
+            ElseIf NumericUpDown57.Value = 92 Then
+                Label38.Text = "apt.1205"
+            ElseIf NumericUpDown57.Value = 93 Then
+                Label38.Text = "apt.1206"
+            ElseIf NumericUpDown57.Value = 94 Then
+                Label38.Text = "apt.1207"
+            ElseIf NumericUpDown57.Value = 95 Then
+                Label38.Text = "apt.1208"
+            ElseIf NumericUpDown57.Value = 96 Then
+                Label38.Text = "apt.1301"
+            ElseIf NumericUpDown57.Value = 97 Then
+                Label38.Text = "apt.1302"
+            ElseIf NumericUpDown57.Value = 98 Then
+                Label38.Text = "apt.1303"
+            ElseIf NumericUpDown57.Value = 99 Then
+                Label38.Text = "apt.1304"
+            End If
+        End If
     End Sub
 
     Private Sub CheckBox32_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox32.CheckedChanged
@@ -35011,6 +36425,10 @@ Public Class Form1
                     fdialog.Label1.Text = "Certains chapeaux ont été perdus" & vbNewLine & "Essayez de tout débloquer avec" & vbNewLine & "les paramètres ''Sauvegarde EU''"
                     fdialog.ShowDialog()
                 End If
+                If ComboBox11.Text = "DE" Then
+                    fdialog.Label1.Text = "Ome Kopfbedeckungen waren verloren" & vbNewLine & "Versuchen Sie, alle mit '' EU speichern Datei '' Einstellung zu entsperren"
+                    fdialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -35019,37 +36437,13 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox32.Checked = False
-        End Try
-    End Sub
-
-    Private Sub CheckBox34_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox34.CheckedChanged
-        Try
-            If CheckBox34.Checked = True Then
-                Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
-                Writer.Position = BSTF
-                Writer.WriteUInt16(0)
-                If ComboBox11.Text = "FR" Then
-                    fdialog.Label1.Text = "Il se peut qu'ils ne soient immédiatement plus amis ou leur amitié se brisera dans le futur"
-                    fdialog.ShowDialog()
-                End If
-                If ComboBox11.Text = "EN" Then
-                    fdialog.Label1.Text = "They may are no longer friends immediately or their friendship will break in the future"
-                    fdialog.ShowDialog()
-                End If
-            End If
-        Catch ex As Exception
-            If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
-                fdialog.ShowDialog()
-            End If
-            If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "An error has occured, load a save first"
-                fdialog.ShowDialog()
-            End If
-            CheckBox34.Checked = False
         End Try
     End Sub
 
@@ -35159,6 +36553,10 @@ Public Class Form1
                 fdialog.Label1.Text = "File Save"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Datei speichern"
+                fdialog.ShowDialog()
+            End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Une erreur est survenue"
@@ -35166,6 +36564,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -35185,6 +36587,10 @@ Public Class Form1
                     fdialog.Label1.Text = "They may are no longer together immediately or their relation will break in the future"
                     fdialog.ShowDialog()
                 End If
+                If ComboBox11.Text = "DE" Then
+                    fdialog.Label1.Text = "Sie können nicht mehr zusammen sein oder ihre Beziehung wird in Zukunft brechen"
+                    fdialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -35193,6 +36599,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "An error has occured, load a save first"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
             CheckBox33.Checked = False
@@ -35209,6 +36619,10 @@ Public Class Form1
                 fdialog.Label1.Text = "No internet connection, using cached file"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Keine Internetverbindung, mit Cache-Datei"
+                fdialog.ShowDialog()
+            End If
             If My.Computer.FileSystem.FileExists("f25VytjW.txt") = False Then
                 If ComboBox11.Text = "FR" Then
                     fdialog.Label1.Text = "Aucune liste mise en cache n'a été trouvée"
@@ -35216,6 +36630,10 @@ Public Class Form1
                 End If
                 If ComboBox11.Text = "EN" Then
                     fdialog.Label1.Text = "No cached list found"
+                    fdialog.ShowDialog()
+                End If
+                If ComboBox11.Text = "DE" Then
+                    fdialog.Label1.Text = "Keine Cache-Liste gefunden"
                     fdialog.ShowDialog()
                 End If
             Else
@@ -35241,6 +36659,10 @@ Public Class Form1
                 fdialog.Label1.Text = "No internet connection, using cached file"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Keine Internetverbindung, mit Cache-Datei"
+                fdialog.ShowDialog()
+            End If
             If My.Computer.FileSystem.FileExists("krSz0U4p.txt") = False Then
                 If ComboBox11.Text = "FR" Then
                     fdialog.Label1.Text = "Aucune liste mise en cache n'a été trouvée"
@@ -35248,6 +36670,10 @@ Public Class Form1
                 End If
                 If ComboBox11.Text = "EN" Then
                     fdialog.Label1.Text = "No cached list found"
+                    fdialog.ShowDialog()
+                End If
+                If ComboBox11.Text = "DE" Then
+                    fdialog.Label1.Text = "Keine Cache-Liste gefunden"
                     fdialog.ShowDialog()
                 End If
             Else
@@ -35271,6 +36697,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour voir les ID de la nourriture"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Klicken Sie hier, um die Nahrungsmittel-ID zu sehen"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -35284,6 +36713,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cette fonctionnalité peut être fonctionnelle ou pas selon le Mii"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Diese Eigenschaft kann funktionieren oder nicht, kommt auf den Mii an"
         End If
         Label17.Visible = True
     End Sub
@@ -35299,6 +36731,9 @@ Public Class Form1
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cliquez pour éditer les Mii rencontré via StreetPass"
         End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Klicken Sie hier, um Mii über StreetPass zu bearbeiten"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -35313,6 +36748,10 @@ Public Class Form1
         End If
         If ComboBox11.Text = "FR" Then
             fdialog.Label1.Text = "Editez seulement si vous avez des voyageurs"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "DE" Then
+            fdialog.Label1.Text = "Bearbeite nur, wenn du Reisende hast"
             fdialog.ShowDialog()
         End If
         Form12.Show()

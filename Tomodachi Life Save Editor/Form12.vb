@@ -26,6 +26,10 @@ Public Class Form12
                 fdialog.Label1.Text = "File save"
                 fdialog.ShowDialog()
             End If
+            If Form1.ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Datei speichern"
+                fdialog.ShowDialog()
+            End If
         Catch ex As Exception
             If Form1.ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Une erreur est survenue"
@@ -35,6 +39,10 @@ Public Class Form12
                 fdialog.Label1.Text = "An error has occured"
                 fdialog.ShowDialog()
             End If
+            If Form1.ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten"
+                fdialog.ShowDialog()
+            End If
         End Try
     End Sub
 
@@ -42,16 +50,28 @@ Public Class Form12
         PictureBox1.BackgroundImage = Form1.PictureBox30.Image
         If Form1.ComboBox11.Text = "EN" Then
             Label1.Text = "Lv."
+            Label2.Text = "Region"
             Label3.Text = "Home"
             Label4.Text = "Happiness"
+            Label5.Text = "Gratitude"
             Button1.Text = "Save"
             Button2.Text = "Close"
         ElseIf Form1.ComboBox11.Text = "FR" Then
             Label1.Text = "Niv."
+            Label2.Text = "Région"
             Label3.Text = "Île d'origine"
             Label4.Text = "Détente"
+            Label5.Text = "Gratitude"
             Button1.Text = "Enregistrer"
             Button2.Text = "Fermer"
+        ElseIf Form1.ComboBox11.Text = "DE" Then
+            Label1.Text = "Lv."
+            Label2.Text = "Region"
+            Label3.Text = "Zuhause"
+            Label4.Text = "Zufriedenheit"
+            Label5.Text = "Dankbarkeit"
+            Button1.Text = "speichern"
+            Button2.Text = "schließen"
         End If
         filepath = Form1.Label39.Text
     End Sub
@@ -227,6 +247,10 @@ Public Class Form12
             End If
             If Form1.ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Une erreur est survenue, ouvrez une sauvegarde avant"
+                fdialog.ShowDialog()
+            End If
+            If Form1.ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
         End Try
