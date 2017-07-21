@@ -27,7 +27,7 @@
         End If
         If Form1.ComboBox11.Text = "DE" Then
             Label1.Text = "Fertig"
-            Label1.Location = New Point(109, 60)
+            Label1.Location = New Point(172, 170)
             Label2.Text = "Phrasen"
             Label2.Location = New Point(160, 56)
         End If

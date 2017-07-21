@@ -602,7 +602,7 @@ Public Class Form1
             Label17.Text = "Cliquez pour éditer l'inventaire des Mii"
         End If
         If ComboBox11.Text = "DE" Then
-            Label17.Text = "Click to edit the Mii's inventory"
+            Label17.Text = "Klicken Sie hier, um das Inventar der Mii zu bearbeiten"
         End If
         Label17.Visible = True
     End Sub
