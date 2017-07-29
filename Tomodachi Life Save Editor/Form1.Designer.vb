@@ -143,6 +143,7 @@ Partial Class Form1
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
@@ -236,7 +237,6 @@ Partial Class Form1
         Me.NumericUpDown44 = New System.Windows.Forms.NumericUpDown()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.PictureBox61 = New System.Windows.Forms.PictureBox()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.TabPage9 = New System.Windows.Forms.TabPage()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.Panel29 = New System.Windows.Forms.Panel()
@@ -1842,6 +1842,18 @@ Partial Class Form1
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Mii Edit"
         '
+        'Button3
+        '
+        Me.Button3.BackColor = System.Drawing.SystemColors.Control
+        Me.Button3.Enabled = False
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button3.Location = New System.Drawing.Point(6, 156)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(110, 31)
+        Me.Button3.TabIndex = 10
+        Me.Button3.Text = "Save Mii changes"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
         'Label24
         '
         Me.Label24.AutoSize = True
@@ -2423,7 +2435,7 @@ Partial Class Form1
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(112, 20)
         Me.Button11.TabIndex = 104
-        Me.Button11.Text = "EUR EN Foods Id's"
+        Me.Button11.Text = "E/U EN Foods Id's?"
         Me.Button11.UseVisualStyleBackColor = False
         '
         'Button10
@@ -2862,18 +2874,6 @@ Partial Class Form1
         Me.PictureBox61.Size = New System.Drawing.Size(50, 64)
         Me.PictureBox61.TabIndex = 0
         Me.PictureBox61.TabStop = False
-        '
-        'Button3
-        '
-        Me.Button3.BackColor = System.Drawing.SystemColors.Control
-        Me.Button3.Enabled = False
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Location = New System.Drawing.Point(6, 156)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(110, 31)
-        Me.Button3.TabIndex = 10
-        Me.Button3.Text = "Save Mii changes"
-        Me.Button3.UseVisualStyleBackColor = False
         '
         'TabPage9
         '
