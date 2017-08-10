@@ -23,7 +23,7 @@ Public Class Form12
                 fdialog.ShowDialog()
             End If
             If Form1.ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "File save"
+                fdialog.Label1.Text = "File saved"
                 fdialog.ShowDialog()
             End If
             If Form1.ComboBox11.Text = "DE" Then

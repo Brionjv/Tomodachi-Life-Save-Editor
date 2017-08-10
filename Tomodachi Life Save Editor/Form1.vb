@@ -82,6 +82,7 @@ Public Class Form1
     Dim Splurge As String
     Dim sweetheart As String
     Dim Pampered As String
+    Dim applicationpath = Application.StartupPath
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox11.Text = "EN"
@@ -221,8 +222,8 @@ Public Class Form1
             Label10.Text = "Lv."
             Label9.Text = "Nickname"
             Label2.Text = "Creator"
-            Button3.Text = "Changes Mii save"
-            Button7.Text = "Changes Mii save"
+            Button3.Text = "Save Mii Changes"
+            Button7.Text = "Save Mii Changes"
             Label5.Text = "Catchphrase"
             ComboBox2.Items.Item(0) = "Not related"
             ComboBox2.Items.Item(1) = "Self"
@@ -401,6 +402,108 @@ Public Class Form1
             Label40.Text = "Spieler-Rang"
             Label41.Text = "Luxus-Mii-Rang"
         End If
+        If ComboBox11.Text = "PT" Then
+            Button1.Text = "Abrir"
+            Button2.Text = "Salvar"
+            Button5.Text = "Abrir"
+            Button6.Text = "Salvar"
+            Button8.Text = "Abrir"
+            Button9.Text = "Salvar"
+            TabPage1.Text = "Principal"
+            TabPage4.Text = "Editor de Mii"
+            TabPage3.Text = "Tesouros / Comidas"
+            TabPage2.Text = "Reparar arquivo"
+            GroupBox2.Text = "Problemas resolvidos"
+            GroupBox7.Text = "Encontros StreetPass"
+            GroupBox3.Text = "Casamentos"
+            GroupBox6.Text = "Crianças nascidas"
+            GroupBox4.Text = "Viajantes recebidos"
+            GroupBox5.Text = "Viajantes enviados"
+            GroupBox101.Text = "Nome da ilha"
+            GroupBox1.Text = "Dinheiro"
+            Label6.Text = "Nome"
+            Label8.Text = "Sobrenome"
+            Label10.Text = "Nív."
+            Label9.Text = "Apelido"
+            Label2.Text = "Criador"
+            Button3.Text = "Salvar Mudanças do Mii"
+            Button7.Text = "Salvar Mudanças do Mii"
+            Label5.Text = "Bordão"
+            ComboBox2.Items.Item(0) = "Sem parentesco"
+            ComboBox2.Items.Item(1) = "Eu mesmo"
+            ComboBox2.Items.Item(2) = "Esposa"
+            ComboBox2.Items.Item(3) = "Pai ou Mãe"
+            ComboBox2.Items.Item(4) = "Filho(a)"
+            ComboBox2.Items.Item(5) = "Irmã(o)"
+            ComboBox2.Items.Item(6) = "Outro parentesco"
+            CheckBox15.Text = "Todas as Roupas do Streetpass/Spotpass Desbloqueadas"
+            CheckBox8.Text = "Todas as Comidas Especiais Desbloqueadas"
+            CheckBox17.Text = "Todos os Chapéus do Streetpass/Spotpass Desbloqueado"
+            CheckBox9.Text = "Todos os Chapéus e suas cores Desbloqueados"
+            CheckBox1.Text = "Todos os Interiores Desbloqueados"
+            CheckBox2.Text = "Todos os Artigos Desbloqueados"
+            CheckBox5.Text = "Todos os Tesouros Desbloqueados"
+            CheckBox3.Text = "Todas as Comidas Desbloqueadas"
+            CheckBox6.Text = "Todas as Roupas e suas cores Desbloqueadas"
+            CheckBox10.Text = "Caso ''Todos os Chapéus e suas cores Desbloqueadas'' da versão US foi usada"
+            CheckBox11.Text = "Caso ''Todas as Comidas Especiais Desbloqueadas'' da versão US foi usada"
+            CheckBox13.Text = "Caso ''Todos os Chapéus e suas cores Desbloqueadas'' da versão EU foi usada"
+            CheckBox12.Text = "Caso ''Todas as Comidas Especiais Desbloqueadas'' da versão EU foi usada"
+            CheckBox31.Text = "Caso ''Todas as Comidas Especiais Desbloqueadas'' da versão JP foi usada"
+            CheckBox32.Text = "Caso ''Todos os Chapéus e suas cores Desbloqueadas'' da versão JP foi usada"
+            GroupBox8.Text = "Reparar Arquivo EU/US/KR"
+            GroupBox10.Text = "Reparar Arquivo EU/JP/KR"
+            GroupBox11.Text = "Reparar Arquivo US/JP/KR"
+            CheckBox14.Text = "Remover Penalidade de Viagem no Tempo"
+            Label3.Location = New Point(286, 13)
+            Label13.Text = "Satisfação Alimentar"
+            RadioButton2.Text = "Ele(a) não comeu"
+            ComboBox12.Items.Item(0) = "Arquivo US"
+            ComboBox12.Items.Item(1) = "Arquivo EU"
+            ComboBox12.Items.Item(2) = "Arquivo JP"
+            ComboBox12.Items.Item(3) = "Arquivo KR"
+            Button4.Text = "Inventário"
+            TabPage6.Text = "Desbloquear por números"
+            TabPage7.Text = "Desbloquear por catálogo da loja"
+            TabPage8.Text = "Deletar itens"
+            TabPage9.Text = "Construções da ilha"
+            TabPage10.Text = "Editar"
+            TabPage12.Text = "Status do Quadro de Classificações"
+            CheckBox20.Text = "Todas as Roupas e suas Cores do Streetpass/Spotpass Desbloqueadas"
+            CheckBox19.Text = "Todos os Chapéus e suas Cores do Streetpass/Spotpass Desbloqueados"
+            CheckBox18.Text = "Todos os Chapéus e suas Cores Desbloqueados"
+            CheckBox16.Text = "Todos os Interiores Desbloqueados"
+            CheckBox7.Text = "Todas as Comidas Desbloqueadas"
+            CheckBox4.Text = "Todas as Roupas e suas Cores Desbloqueadas"
+            CheckBox22.Text = "Todas as Roupas e suas Cores do Streetpass/Spotpass deletadas"
+            CheckBox21.Text = "Todos os Chapéus do Streetpass/Spotpass deletados"
+            CheckBox23.Text = "Todas as Comidas Especiais deletadas"
+            CheckBox24.Text = "Todos os Chapéus e suas Cores deletados"
+            CheckBox25.Text = "Todos os Interiores deletados"
+            CheckBox26.Text = "Todos Artigos deletados"
+            CheckBox27.Text = "Todos os Tesouros deletados"
+            CheckBox28.Text = "Todas as Comidas deletadas"
+            CheckBox29.Text = "Todas as Roupas e suas Cores deletadas"
+            CheckBox30.Text = "Resetar o StreetPass/SpotPass de Tomodachi Life"
+            Label27.Location = New Point(362, 11)
+            Label33.Text = "Cor Favorita"
+            Label34.Text = "Adulto/criança"
+            Label37.Text = "Relação com o real Você"
+            Label35.Text = "Compartilhar"
+            Label36.Text = "Copiar"
+            Label30.Text = "Super Favorito de Todos / Favorito de Todos"
+            Label31.Text = "Comidas Favoritas"
+            Label32.Text = "Pior / Pior de Todos"
+            Label29.Text = "Namorado(a)"
+            Label28.Text = "Melhor Amigo"
+            CheckBox33.Text = "Romper"
+            CheckBox34.Text = "Romper"
+            ComboBox3.Items.Item(0) = "Adulto"
+            ComboBox3.Items.Item(1) = "Adulto (1)"
+            ComboBox3.Items.Item(2) = "Criança"
+            Label40.Text = "Ranking de Mimados"
+            Label41.Text = "Ranking de Extravagância"
+        End If
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
@@ -418,6 +521,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "klicke hier um die Aussprache deiner Insel zu bearbeiten"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para editar a pronunciação do nome da Ilha"
         End If
         Label17.Visible = True
     End Sub
@@ -437,6 +543,9 @@ Public Class Form1
         If ComboBox11.Text = "DE" Then
             Label17.Text = "bearbeitet Speicherstand Version"
         End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Mudar a versão do arquivo"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -454,6 +563,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "bearbeitet Tomodachi Life Speicherstand Editor Sprache"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Mudar a língua do Editor de Arquivo do Tomodachi Life"
         End If
         Label17.Visible = True
     End Sub
@@ -475,6 +587,10 @@ Public Class Form1
             Label17.Text = "klicke um Mii's Phrase zu bearbeiten"
             Label5.Text = "Phrase"
         End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para editar o bordão do Mii"
+            Label5.Text = "Bordão"
+        End If
         Label17.Visible = True
         Label5.Visible = True
     End Sub
@@ -493,6 +609,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "klicke um Mii's Aussprache vom Vornamen zu bearbeiten"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para editar a pronunciação do nome do Mii"
         End If
         Label14.Text = Label18.Text
         Label17.Visible = True
@@ -514,6 +633,9 @@ Public Class Form1
         If ComboBox11.Text = "DE" Then
             Label17.Text = "klicke um Mii's Aussprache vom Nachnamen zu bearbeiten"
         End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para editar a pronunciação do sobrenome do Mii"
+        End If
         Label15.Text = Label19.Text
         Label17.Visible = True
         Label15.Visible = True
@@ -526,13 +648,16 @@ Public Class Form1
 
     Private Sub PictureBox4_MouseMove(sender As Object, e As EventArgs) Handles PictureBox4.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "Nickname pronunciation can't be edit"
+            Label17.Text = "Nickname pronunciation can't be edited"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "La prononciation du surnom ne peut être édité"
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Aussprache vom Spitzname kann nicht geändert werden"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Pronunciação do apelido não pode ser editado"
         End If
         Label17.Visible = True
         Label16.Visible = True
@@ -553,6 +678,9 @@ Public Class Form1
         If ComboBox11.Text = "DE" Then
             Label17.Text = "klicke um Mii's Geschenke zu bearbeiten"
         End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para editar os presentes do Mii"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -569,6 +697,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "klicke um Mii's Sattheit zu bearbeiten, wenn er schon gegessen hat"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para editar a satisfação do Mii, se ele já comeu ou não"
         End If
         Label17.Visible = True
     End Sub
@@ -587,6 +718,9 @@ Public Class Form1
         If ComboBox11.Text = "DE" Then
             Label17.Text = "editiere um Nummer der Items, die freigeschaltet wurden, zu bearbeiten"
         End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Edite para mudar o número de itens a serem desbloqueados"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -603,6 +737,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Klicken Sie hier, um das Inventar der Mii zu bearbeiten"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para editar o inventário do Mii"
         End If
         Label17.Visible = True
     End Sub
@@ -621,6 +758,9 @@ Public Class Form1
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Überprüfe, ob der ausgewählte Mii nicht gegessen hat"
         End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Cheque para que o Mii selecionado não tenha comido ainda"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -637,6 +777,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Wie man ''entferne Zeitreisen Gleichheit'' benutzt"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Como utilizar ''Remover Penalidade de Viagem no Tempo''"
         End If
         Label17.Visible = True
     End Sub
@@ -655,6 +798,9 @@ Public Class Form1
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Mii's Taschengeld"
         End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Dinheiro do Mii"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -671,6 +817,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Klicken Sie hier, um Credits zu sehen"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para ver os créditos"
         End If
         Label17.Visible = True
     End Sub
@@ -689,6 +838,9 @@ Public Class Form1
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Wählen Sie, um die EU/JP/KR Datei zu reparieren"
         End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Selecione para reparar o arquivo EU/JP/KR"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -705,6 +857,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Wählen Sie, um die US/JP/KR Datei zu reparieren"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Selecione para reparar o arquivo US/JP/KR"
         End If
         Label17.Visible = True
     End Sub
@@ -723,6 +878,9 @@ Public Class Form1
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Wählen Sie, um die EU/US/KR Datei zu reparieren"
         End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Selecione para reparar o arquivo EU/US/KR"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -739,6 +897,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Wie man ''Tomodachi Life StreetPass/SpotPass zurücksetzen'' benutzt"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Como utilizar o ''Resetar o StreetPass/SpotPass de Tomodachi Life''"
         End If
         Label17.Visible = True
     End Sub
@@ -761,9 +922,15 @@ Public Class Form1
             fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "sichere deinen Speicherstand bevor du ihn benutzt" & vbNewLine & "Tomodachi Life Save Editor"
             fdialog.ShowDialog()
         End If
+        If ComboBox11.Text = "PT" Then
+            fdialog.Label1.Text = "Abrir savedataArc.txt" & vbNewLine & "Fazer backup do seu arquivo antes de usar o Editor de Arquivo do Tomodachi Life"
+            fdialog.ShowDialog()
+        End If
         open.Title = "Open save savedataArc.txt"
+        open.Filter = "savedataArc.txt|*savedataArc.txt"
         open.ShowDialog()
         filepath = open.FileName
+        copiebak()
         Readfile()
         Label39.Text = filepath
     End Sub
@@ -885,6 +1052,10 @@ Public Class Form1
                 fdialog.Label1.Text = "savedataArc.txt nicht geladen" & vbNewLine & "Speicherstand ist korrupt oder kein Tomodachi Life Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "savedataArc.txt não foi carregado," & vbNewLine & "Arquivo do jogo está corrompido ou não é um Arquivo Salvo do Tomodachi Life"
+                fdialog.ShowDialog()
+            End If
             ComboBox12.Enabled = True
             ComboBox11.Enabled = True
         End Try
@@ -903,11 +1074,19 @@ Public Class Form1
             fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "sichere deinen Speicherstand bevor du ihn benutzt" & vbNewLine & "Tomodachi Life Save Editor"
             fdialog.ShowDialog()
         End If
+        If ComboBox11.Text = "PT" Then
+            fdialog.Label1.Text = "Abrir savedataArc.txt" & vbNewLine & "Fazer backup do seu arquivo antes de usar o Editor de Arquivo do Tomodachi Life"
+            fdialog.ShowDialog()
+        End If
         open.Title = "Open save savedataArc.txt"
+        open.Filter = "savedataArc.txt|*savedataArc.txt"
         open.ShowDialog()
         filepath = open.FileName
+        copiebak()
         ReadfileJP()
+        Label39.Text = filepath
     End Sub
+
     Private Sub ReadfileJP()
         Try
             Dim Reader As New PackageIO.Reader(filepath, PackageIO.Endian.Little)
@@ -1015,6 +1194,10 @@ Public Class Form1
                 fdialog.Label1.Text = "savedataArc.txt nicht geladen" & vbNewLine & "Speicherstand ist korrupt oder kein Tomodachi Life Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "savedataArc.txt não foi carregado," & vbNewLine & "Arquivo do jogo está corrompido ou não é um Arquivo Salvo do Tomodachi Life"
+                fdialog.ShowDialog()
+            End If
             ComboBox12.Enabled = True
             ComboBox11.Enabled = True
         End Try
@@ -1034,10 +1217,17 @@ Public Class Form1
             fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "sichere deinen Speicherstand bevor du ihn benutzt" & vbNewLine & "Tomodachi Life Save Editor"
             fdialog.ShowDialog()
         End If
+        If ComboBox11.Text = "PT" Then
+            fdialog.Label1.Text = "Abrir savedataArc.txt" & vbNewLine & "Fazer backup do seu arquivo antes de usar o Editor de Arquivo do Tomodachi Life"
+            fdialog.ShowDialog()
+        End If
         open.Title = "Open save savedataArc.txt"
+        open.Filter = "savedataArc.txt|*savedataArc.txt"
         open.ShowDialog()
         filepath = open.FileName
+        copiebak()
         ReadfileKR()
+        Label39.Text = filepath
     End Sub
     Private Sub ReadfileKR()
         Try
@@ -1154,6 +1344,10 @@ Public Class Form1
                 fdialog.Label1.Text = "savedataArc.txt nicht geladen" & vbNewLine & "Speicherstand ist korrupt oder kein Tomodachi Life Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "savedataArc.txt não foi carregado," & vbNewLine & "Arquivo do jogo está corrompido ou não é um Arquivo Salvo do Tomodachi Life"
+                fdialog.ShowDialog()
+            End If
             ComboBox12.Enabled = True
             ComboBox11.Enabled = True
         End Try
@@ -1245,11 +1439,15 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "File Save"
+                fdialog.Label1.Text = "File Saved"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "Datei speichern"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Arquivo Salvo"
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
@@ -1263,6 +1461,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -1355,7 +1557,7 @@ Public Class Form1
             Writer.Position = &H0
             Writer.WriteInt8(17)
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "Changes Mii Save" & vbNewLine & "Warning : Edit favorite foods values with wrong ID corrupts your save file "
+                fdialog.Label1.Text = "Save Mii changes" & vbNewLine & "Warning : Edit favorite foods values with wrong ID corrupts your save file "
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "FR" Then
@@ -1364,6 +1566,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "Änderungen MII speichern" & vbNewLine & "Warnung: Bearbeiten von Lieblingsfutterwerten mit falscher ID korrumpiert Ihre Sicherungsdatei"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Salvar mudanças feitas no Mii" & vbNewLine & "Cuidado : Editar os valores das comidas favoritas com o ID incorreto corrompe seu jogo "
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
@@ -1377,6 +1583,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -1435,6 +1645,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox1.Checked = False
         End Try
     End Sub
@@ -1459,6 +1673,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox2.Checked = False
@@ -1508,6 +1726,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox5.Checked = False
@@ -1567,6 +1789,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox8.Checked = False
         End Try
     End Sub
@@ -1616,6 +1842,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox3.Checked = False
         End Try
     End Sub
@@ -1663,6 +1893,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox6.Checked = False
@@ -2556,6 +2790,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox9.Checked = False
         End Try
     End Sub
@@ -2859,6 +3097,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox17.Checked = False
@@ -3678,6 +3920,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox15.Checked = False
         End Try
     End Sub
@@ -4120,6 +4366,10 @@ Public Class Form1
                     fdialog.Label1.Text = "einige Kopfbedeckungen waren verloren" & vbNewLine & "versuche alles freizuschalten mit ""EU Speicherstand"" Option"
                     fdialog.ShowDialog()
                 End If
+                If ComboBox11.Text = "PT" Then
+                    fdialog.Label1.Text = "Alguns chapeus foram perdidos" & vbNewLine & "Tente desbloquear todos com a configuração ''Arquivo EU''"
+                    fdialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -4132,6 +4382,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox10.Checked = False
@@ -4160,6 +4414,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox11.Checked = False
@@ -4624,6 +4882,10 @@ Public Class Form1
                     fdialog.Label1.Text = "einige Kopfbedeckungen waren verloren" & vbNewLine & "versuche alles freizuschalten mit ""EU Speicherstand"" Option"
                     fdialog.ShowDialog()
                 End If
+                If ComboBox11.Text = "PT" Then
+                    fdialog.Label1.Text = "Alguns chapeus foram perdidos" & vbNewLine & "Tente desbloquear todos com a configuração ''Arquivo EU''"
+                    fdialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -4636,6 +4898,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox13.Checked = False
@@ -4666,6 +4932,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox12.Checked = False
         End Try
     End Sub
@@ -4689,6 +4959,10 @@ Public Class Form1
                         fdialog.Label1.Text = "Zeitreisen Gleichheit wurde entfernt"
                         fdialog.ShowDialog()
                     End If
+                    If ComboBox11.Text = "PT" Then
+                        fdialog.Label1.Text = "Penalidade de Viagem no Tempo foi removida"
+                        fdialog.ShowDialog()
+                    End If
                 End If
 
                 If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
@@ -4705,6 +4979,10 @@ Public Class Form1
                     End If
                     If ComboBox11.Text = "DE" Then
                         fdialog.Label1.Text = "Zeitreisen Gleichheit wurde entfernt"
+                        fdialog.ShowDialog()
+                    End If
+                    If ComboBox11.Text = "PT" Then
+                        fdialog.Label1.Text = "Penalidade de Viagem no Tempo foi removida"
                         fdialog.ShowDialog()
                     End If
                 End If
@@ -4725,6 +5003,10 @@ Public Class Form1
                         fdialog.Label1.Text = "Zeitreisen Gleichheit wurde entfernt"
                         fdialog.ShowDialog()
                     End If
+                    If ComboBox11.Text = "PT" Then
+                        fdialog.Label1.Text = "Penalidade de Viagem no Tempo foi removida"
+                        fdialog.ShowDialog()
+                    End If
                 End If
                 If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
                     Dim Writer As New PackageIO.Writer(filepath, PackageIO.Endian.Little)
@@ -4742,6 +5024,10 @@ Public Class Form1
                         fdialog.Label1.Text = "Zeitreisen Gleichheit wurde entfernt"
                         fdialog.ShowDialog()
                     End If
+                    If ComboBox11.Text = "PT" Then
+                        fdialog.Label1.Text = "Penalidade de Viagem no Tempo foi removida"
+                        fdialog.ShowDialog()
+                    End If
                 End If
             End If
         Catch ex As Exception
@@ -4755,6 +5041,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox14.Checked = False
@@ -29082,6 +29372,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
         End Try
     End Sub
 
@@ -29235,7 +29529,7 @@ Public Class Form1
             Writer.Position = Pampered
             Writer.WriteUInt32(NumericUpDown44.Value)
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "Changes Mii Save" & vbNewLine & "Warning : Edit favorite foods values with wrong ID corrupts your save file "
+                fdialog.Label1.Text = "Save Mii changes" & vbNewLine & "Warning : Edit favorite foods values with wrong ID corrupts your save file "
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "DE" Then
@@ -29246,7 +29540,10 @@ Public Class Form1
                 fdialog.Label1.Text = "Changements Mii Sauvegardé" & vbNewLine & "Attention : Editer les valeurs de la nourriture favorite avec un mauvais ID corrompt la sauvegarde"
                 fdialog.ShowDialog()
             End If
-
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Salvar mudanças feitas no Mii" & vbNewLine & "Cuidado : Editar os valores das comidas favoritas com o ID incorreto corrompe seu jogo "
+                fdialog.ShowDialog()
+            End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Une erreur est survenue"
@@ -29258,6 +29555,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -29373,6 +29674,10 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             fdialog.Label1.Text = "um Zeitreisen Gleichheit entfernen zu benutzen, ändere Zeit in Tomodachi Life oder im 3ds, spiele und speichere" & vbNewLine & "exportiere deinen Speicherstand mit Zeitreisen Gleichheit" & vbNewLine & "importiere deinen Speicherstand hier" & vbNewLine & "überprüfe und importiere deinen Speicherstand in Tomodachi Life"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "PT" Then
+            fdialog.Label1.Text = "Para utilizar o Remover Penalidade de Viagem no Tempo," & vbNewLine & "Mude o horário do Tomodachi Life ou do 3ds, jogue e salve" & vbNewLine & "Exporte seu arquivo salvo com a penalidade de Viagem no Tempo" & vbNewLine & "importe seu arquivo neste editor" & vbNewLine & "Cheque esse recurso e re importe seu arquivo salvo no Tomodachi Life"
             fdialog.ShowDialog()
         End If
     End Sub
@@ -30435,6 +30740,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             RadioButton2.Checked = False
         End Try
     End Sub
@@ -30511,6 +30820,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox4.Checked = False
         End Try
     End Sub
@@ -30560,6 +30873,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox7.Checked = False
         End Try
     End Sub
@@ -30607,6 +30924,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox16.Checked = False
@@ -31500,6 +31821,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox18.Checked = False
         End Try
     End Sub
@@ -31803,6 +32128,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox19.Checked = False
@@ -32620,6 +32949,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox20.Checked = False
         End Try
     End Sub
@@ -32667,6 +33000,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox29.Checked = False
@@ -32718,6 +33055,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox28.Checked = False
         End Try
     End Sub
@@ -32767,6 +33108,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox27.Checked = False
         End Try
     End Sub
@@ -32791,6 +33136,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox26.Checked = False
@@ -32840,6 +33189,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox25.Checked = False
@@ -33733,6 +34086,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox24.Checked = False
         End Try
     End Sub
@@ -33788,6 +34145,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox23.Checked = False
@@ -34093,6 +34454,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox21.Checked = False
@@ -34910,6 +35275,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox22.Checked = False
         End Try
     End Sub
@@ -34963,7 +35332,7 @@ Public Class Form1
             Writer.Position = Pampered
             Writer.WriteUInt32(NumericUpDown44.Value)
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "Changes Mii Save"
+                fdialog.Label1.Text = "Save Mii changes"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "DE" Then
@@ -34972,6 +35341,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Changements Mii Sauvegardé"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Salvar mudanças feitas no Mii"
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
@@ -35025,6 +35398,10 @@ Public Class Form1
                     fdialog.Label1.Text = "StreetPass / SpotPass ont été réinitialisé"
                     fdialog.ShowDialog()
                 End If
+                If ComboBox11.Text = "PT" Then
+                    fdialog.Label1.Text = "StreetPass / SpotPass foram resetados"
+                    fdialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -35037,6 +35414,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox30.Checked = False
@@ -35054,6 +35435,10 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             fdialog.Label1.Text = "Wenn ""Tomodachi Life StreetPass/SpotPass zurücksetzen'' benutzt wird, wirst du in der Lage sein StreetPass/SpotPass zu konfigurieren und das Item zu ändern das zu StreetPass gesendet wird"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "PT" Then
+            fdialog.Label1.Text = "Se ''Resetar StreetPass/Spotpass do Tomodachi Life'' for usado" & vbNewLine & "Você poderá configurar o StreetPass/SpotPass" & vbNewLine & "E poderá mudar o item que é enviado pelo StreetPass"
             fdialog.ShowDialog()
         End If
     End Sub
@@ -35588,6 +35973,10 @@ Public Class Form1
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
+                fdialog.ShowDialog()
+            End If
             CheckBox31.Checked = False
         End Try
     End Sub
@@ -35621,6 +36010,14 @@ Public Class Form1
                 TextBox1.Text = "Aus"
             End If
         End If
+        If ComboBox11.Text = "PT" Then
+            If NumericUpDown54.Value Mod 2 = 0 Then
+                TextBox1.Text = "Sim"
+            End If
+            If NumericUpDown54.Value Mod 2 = 1 Then
+                TextBox1.Text = "Não"
+            End If
+        End If
     End Sub
 
     Private Sub NumericUpDown55_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown55.ValueChanged
@@ -35646,6 +36043,14 @@ Public Class Form1
             End If
             If NumericUpDown55.Value = 1 Then
                 TextBox6.Text = "Erlauben"
+            End If
+        End If
+        If ComboBox11.Text = "PT" Then
+            If NumericUpDown55.Value = 0 Then
+                TextBox6.Text = "Proibir"
+            End If
+            If NumericUpDown55.Value = 1 Then
+                TextBox6.Text = "Autorizaçãon"
             End If
         End If
     End Sub
@@ -36343,6 +36748,209 @@ Public Class Form1
                 Label38.Text = "apt.1304"
             End If
         End If
+        If ComboBox11.Text = "PT" Then
+            If NumericUpDown57.Value = 0 Then
+                Label38.Text = "apt.101"
+            ElseIf NumericUpDown57.Value = 1 Then
+                Label38.Text = "apt.102"
+            ElseIf NumericUpDown57.Value = 2 Then
+                Label38.Text = "apt.103"
+            ElseIf NumericUpDown57.Value = 3 Then
+                Label38.Text = "apt.104"
+            ElseIf NumericUpDown57.Value = 4 Then
+                Label38.Text = "apt.105"
+            ElseIf NumericUpDown57.Value = 5 Then
+                Label38.Text = "apt.106"
+            ElseIf NumericUpDown57.Value = 6 Then
+                Label38.Text = "apt.107"
+            ElseIf NumericUpDown57.Value = 7 Then
+                Label38.Text = "apt.108"
+            ElseIf NumericUpDown57.Value = 8 Then
+                Label38.Text = "apt.201"
+            ElseIf NumericUpDown57.Value = 9 Then
+                Label38.Text = "apt.202"
+            ElseIf NumericUpDown57.Value = 10 Then
+                Label38.Text = "apt.203"
+            ElseIf NumericUpDown57.Value = 11 Then
+                Label38.Text = "apt.204"
+            ElseIf NumericUpDown57.Value = 12 Then
+                Label38.Text = "apt.205"
+            ElseIf NumericUpDown57.Value = 13 Then
+                Label38.Text = "apt.206"
+            ElseIf NumericUpDown57.Value = 14 Then
+                Label38.Text = "apt.207"
+            ElseIf NumericUpDown57.Value = 15 Then
+                Label38.Text = "apt.208"
+            ElseIf NumericUpDown57.Value = 16 Then
+                Label38.Text = "apt.301"
+            ElseIf NumericUpDown57.Value = 17 Then
+                Label38.Text = "apt.302"
+            ElseIf NumericUpDown57.Value = 18 Then
+                Label38.Text = "apt.303"
+            ElseIf NumericUpDown57.Value = 19 Then
+                Label38.Text = "apt.304"
+            ElseIf NumericUpDown57.Value = 20 Then
+                Label38.Text = "apt.305"
+            ElseIf NumericUpDown57.Value = 21 Then
+                Label38.Text = "apt.306"
+            ElseIf NumericUpDown57.Value = 22 Then
+                Label38.Text = "apt.307"
+            ElseIf NumericUpDown57.Value = 23 Then
+                Label38.Text = "apt.308"
+            ElseIf NumericUpDown57.Value = 24 Then
+                Label38.Text = "apt.401"
+            ElseIf NumericUpDown57.Value = 25 Then
+                Label38.Text = "apt.402"
+            ElseIf NumericUpDown57.Value = 26 Then
+                Label38.Text = "apt.403"
+            ElseIf NumericUpDown57.Value = 27 Then
+                Label38.Text = "apt.404"
+            ElseIf NumericUpDown57.Value = 28 Then
+                Label38.Text = "apt.405"
+            ElseIf NumericUpDown57.Value = 29 Then
+                Label38.Text = "apt.406"
+            ElseIf NumericUpDown57.Value = 30 Then
+                Label38.Text = "apt.407"
+            ElseIf NumericUpDown57.Value = 31 Then
+                Label38.Text = "apt.408"
+            ElseIf NumericUpDown57.Value = 32 Then
+                Label38.Text = "apt.501"
+            ElseIf NumericUpDown57.Value = 33 Then
+                Label38.Text = "apt.502"
+            ElseIf NumericUpDown57.Value = 34 Then
+                Label38.Text = "apt.503"
+            ElseIf NumericUpDown57.Value = 35 Then
+                Label38.Text = "apt.504"
+            ElseIf NumericUpDown57.Value = 36 Then
+                Label38.Text = "apt.505"
+            ElseIf NumericUpDown57.Value = 37 Then
+                Label38.Text = "apt.506"
+            ElseIf NumericUpDown57.Value = 38 Then
+                Label38.Text = "apt.507"
+            ElseIf NumericUpDown57.Value = 39 Then
+                Label38.Text = "apt.508"
+            ElseIf NumericUpDown57.Value = 40 Then
+                Label38.Text = "apt.601"
+            ElseIf NumericUpDown57.Value = 41 Then
+                Label38.Text = "apt.602"
+            ElseIf NumericUpDown57.Value = 42 Then
+                Label38.Text = "apt.603"
+            ElseIf NumericUpDown57.Value = 43 Then
+                Label38.Text = "apt.604"
+            ElseIf NumericUpDown57.Value = 44 Then
+                Label38.Text = "apt.605"
+            ElseIf NumericUpDown57.Value = 45 Then
+                Label38.Text = "apt.606"
+            ElseIf NumericUpDown57.Value = 46 Then
+                Label38.Text = "apt.607"
+            ElseIf NumericUpDown57.Value = 47 Then
+                Label38.Text = "apt.608"
+            ElseIf NumericUpDown57.Value = 48 Then
+                Label38.Text = "apt.701"
+            ElseIf NumericUpDown57.Value = 49 Then
+                Label38.Text = "apt.702"
+            ElseIf NumericUpDown57.Value = 50 Then
+                Label38.Text = "apt.703"
+            ElseIf NumericUpDown57.Value = 51 Then
+                Label38.Text = "apt.704"
+            ElseIf NumericUpDown57.Value = 52 Then
+                Label38.Text = "apt.705"
+            ElseIf NumericUpDown57.Value = 53 Then
+                Label38.Text = "apt.706"
+            ElseIf NumericUpDown57.Value = 54 Then
+                Label38.Text = "apt.707"
+            ElseIf NumericUpDown57.Value = 55 Then
+                Label38.Text = "apt.708"
+            ElseIf NumericUpDown57.Value = 56 Then
+                Label38.Text = "apt.801"
+            ElseIf NumericUpDown57.Value = 57 Then
+                Label38.Text = "apt.802"
+            ElseIf NumericUpDown57.Value = 58 Then
+                Label38.Text = "apt.803"
+            ElseIf NumericUpDown57.Value = 59 Then
+                Label38.Text = "apt.804"
+            ElseIf NumericUpDown57.Value = 60 Then
+                Label38.Text = "apt.805"
+            ElseIf NumericUpDown57.Value = 61 Then
+                Label38.Text = "apt.806"
+            ElseIf NumericUpDown57.Value = 62 Then
+                Label38.Text = "apt.807"
+            ElseIf NumericUpDown57.Value = 63 Then
+                Label38.Text = "apt.808"
+            ElseIf NumericUpDown57.Value = 64 Then
+                Label38.Text = "apt.901"
+            ElseIf NumericUpDown57.Value = 65 Then
+                Label38.Text = "apt.902"
+            ElseIf NumericUpDown57.Value = 66 Then
+                Label38.Text = "apt.903"
+            ElseIf NumericUpDown57.Value = 67 Then
+                Label38.Text = "apt.904"
+            ElseIf NumericUpDown57.Value = 68 Then
+                Label38.Text = "apt.905"
+            ElseIf NumericUpDown57.Value = 69 Then
+                Label38.Text = "apt.906"
+            ElseIf NumericUpDown57.Value = 70 Then
+                Label38.Text = "apt.907"
+            ElseIf NumericUpDown57.Value = 71 Then
+                Label38.Text = "apt.908"
+            ElseIf NumericUpDown57.Value = 72 Then
+                Label38.Text = "apt.1001"
+            ElseIf NumericUpDown57.Value = 73 Then
+                Label38.Text = "apt.1002"
+            ElseIf NumericUpDown57.Value = 74 Then
+                Label38.Text = "apt.1003"
+            ElseIf NumericUpDown57.Value = 75 Then
+                Label38.Text = "apt.1004"
+            ElseIf NumericUpDown57.Value = 76 Then
+                Label38.Text = "apt.1005"
+            ElseIf NumericUpDown57.Value = 77 Then
+                Label38.Text = "apt.1006"
+            ElseIf NumericUpDown57.Value = 78 Then
+                Label38.Text = "apt.1007"
+            ElseIf NumericUpDown57.Value = 79 Then
+                Label38.Text = "apt.1008"
+            ElseIf NumericUpDown57.Value = 80 Then
+                Label38.Text = "apt.1101"
+            ElseIf NumericUpDown57.Value = 81 Then
+                Label38.Text = "apt.1102"
+            ElseIf NumericUpDown57.Value = 82 Then
+                Label38.Text = "apt.1103"
+            ElseIf NumericUpDown57.Value = 83 Then
+                Label38.Text = "apt.1104"
+            ElseIf NumericUpDown57.Value = 84 Then
+                Label38.Text = "apt.1105"
+            ElseIf NumericUpDown57.Value = 85 Then
+                Label38.Text = "apt.1106"
+            ElseIf NumericUpDown57.Value = 86 Then
+                Label38.Text = "apt.1107"
+            ElseIf NumericUpDown57.Value = 87 Then
+                Label38.Text = "apt.1108"
+            ElseIf NumericUpDown57.Value = 88 Then
+                Label38.Text = "apt.1201"
+            ElseIf NumericUpDown57.Value = 89 Then
+                Label38.Text = "apt.1202"
+            ElseIf NumericUpDown57.Value = 90 Then
+                Label38.Text = "apt.1203"
+            ElseIf NumericUpDown57.Value = 91 Then
+                Label38.Text = "apt.1204"
+            ElseIf NumericUpDown57.Value = 92 Then
+                Label38.Text = "apt.1205"
+            ElseIf NumericUpDown57.Value = 93 Then
+                Label38.Text = "apt.1206"
+            ElseIf NumericUpDown57.Value = 94 Then
+                Label38.Text = "apt.1207"
+            ElseIf NumericUpDown57.Value = 95 Then
+                Label38.Text = "apt.1208"
+            ElseIf NumericUpDown57.Value = 96 Then
+                Label38.Text = "apt.1301"
+            ElseIf NumericUpDown57.Value = 97 Then
+                Label38.Text = "apt.1302"
+            ElseIf NumericUpDown57.Value = 98 Then
+                Label38.Text = "apt.1303"
+            ElseIf NumericUpDown57.Value = 99 Then
+                Label38.Text = "apt.1304"
+            End If
+        End If
     End Sub
 
     Private Sub CheckBox32_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox32.CheckedChanged
@@ -36429,6 +37037,10 @@ Public Class Form1
                     fdialog.Label1.Text = "Ome Kopfbedeckungen waren verloren" & vbNewLine & "Versuchen Sie, alle mit '' EU speichern Datei '' Einstellung zu entsperren"
                     fdialog.ShowDialog()
                 End If
+                If ComboBox11.Text = "PT" Then
+                    fdialog.Label1.Text = "Alguns chapeus foram perdidos" & vbNewLine & "Tente desbloquear todos com a configuração ''Arquivo EU''"
+                    fdialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -36441,6 +37053,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox32.Checked = False
@@ -36550,11 +37166,15 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "File Save"
+                fdialog.Label1.Text = "File Saved"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "Datei speichern"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Arquivo Salvo"
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
@@ -36568,6 +37188,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -36591,6 +37215,10 @@ Public Class Form1
                     fdialog.Label1.Text = "Sie können nicht mehr zusammen sein oder ihre Beziehung wird in Zukunft brechen"
                     fdialog.ShowDialog()
                 End If
+                If ComboBox11.Text = "PT" Then
+                    fdialog.Label1.Text = "Eles romperão a relação imediatamente ou no futuro"
+                    fdialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             If ComboBox11.Text = "FR" Then
@@ -36603,6 +37231,10 @@ Public Class Form1
             End If
             If ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten, lade vorher einen Speicherstand"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu, carregue um arquivo primeiro"
                 fdialog.ShowDialog()
             End If
             CheckBox33.Checked = False
@@ -36623,6 +37255,10 @@ Public Class Form1
                 fdialog.Label1.Text = "Keine Internetverbindung, mit Cache-Datei"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Sem conexão com a internet, utilizando arquivo em cache"
+                fdialog.ShowDialog()
+            End If
             If My.Computer.FileSystem.FileExists("f25VytjW.txt") = False Then
                 If ComboBox11.Text = "FR" Then
                     fdialog.Label1.Text = "Aucune liste mise en cache n'a été trouvée"
@@ -36634,6 +37270,10 @@ Public Class Form1
                 End If
                 If ComboBox11.Text = "DE" Then
                     fdialog.Label1.Text = "Keine Cache-Liste gefunden"
+                    fdialog.ShowDialog()
+                End If
+                If ComboBox11.Text = "PT" Then
+                    fdialog.Label1.Text = "Nenhuma lista em cache achada"
                     fdialog.ShowDialog()
                 End If
             Else
@@ -36663,6 +37303,10 @@ Public Class Form1
                 fdialog.Label1.Text = "Keine Internetverbindung, mit Cache-Datei"
                 fdialog.ShowDialog()
             End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Sem conexão com a internet, utilizando arquivo em cache"
+                fdialog.ShowDialog()
+            End If
             If My.Computer.FileSystem.FileExists("krSz0U4p.txt") = False Then
                 If ComboBox11.Text = "FR" Then
                     fdialog.Label1.Text = "Aucune liste mise en cache n'a été trouvée"
@@ -36674,6 +37318,10 @@ Public Class Form1
                 End If
                 If ComboBox11.Text = "DE" Then
                     fdialog.Label1.Text = "Keine Cache-Liste gefunden"
+                    fdialog.ShowDialog()
+                End If
+                If ComboBox11.Text = "PT" Then
+                    fdialog.Label1.Text = "Nenhuma lista em cache achada"
                     fdialog.ShowDialog()
                 End If
             Else
@@ -36700,6 +37348,9 @@ Public Class Form1
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Klicken Sie hier, um die Nahrungsmittel-ID zu sehen"
         End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para ver o ID da comida"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -36709,13 +37360,16 @@ Public Class Form1
 
     Private Sub CheckBox33_MouseMove(sender As Object, e As EventArgs) Handles CheckBox33.MouseMove
         If ComboBox11.Text = "EN" Then
-            Label17.Text = "This feature maybe be work or not according to Mii"
+            Label17.Text = "This feature may work or not according to the Mii"
         End If
         If ComboBox11.Text = "FR" Then
             Label17.Text = "Cette fonctionnalité peut être fonctionnelle ou pas selon le Mii"
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Diese Eigenschaft kann funktionieren oder nicht, kommt auf den Mii an"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Este recurso pode funcionar ou não de acordo com o Mii"
         End If
         Label17.Visible = True
     End Sub
@@ -36733,6 +37387,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "DE" Then
             Label17.Text = "Klicken Sie hier, um Mii über StreetPass zu bearbeiten"
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para editar o Mii encontrado através do StreetPass"
         End If
         Label17.Visible = True
     End Sub
@@ -36754,7 +37411,47 @@ Public Class Form1
             fdialog.Label1.Text = "Bearbeite nur, wenn du Reisende hast"
             fdialog.ShowDialog()
         End If
+        If ComboBox11.Text = "PT" Then
+            fdialog.Label1.Text = "Editar apenas se você tiver viajantes"
+            fdialog.ShowDialog()
+        End If
         Form12.Show()
     End Sub
+
+    Public Sub copiebak()
+        Try
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                My.Computer.FileSystem.CopyFile(
+                          filepath,
+                        applicationpath & "\bak\USA\savedataArc.txt")
+            End If
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                My.Computer.FileSystem.CopyFile(
+                          filepath,
+                        applicationpath & "\bak\EUR\savedataArc.txt")
+            End If
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                My.Computer.FileSystem.CopyFile(
+                          filepath,
+                        applicationpath & "\bak\JPN\savedataArc.txt")
+            End If
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                My.Computer.FileSystem.CopyFile(
+                          filepath,
+                        applicationpath & "\bak\KOR\savedataArc.txt")
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Dim SaveFileDialog1 As New SaveFileDialog
+        SaveFileDialog1.Filter = "Tomodachi Life Mii|*.tlmii"
+        If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+            Dim Writer As New PackageIO.Writer(SaveFileDialog1.FileName)
+            Writer.WriteUnicodeString(TextBox2.Text)
+        End If
+    End Sub
 End Class
+
 

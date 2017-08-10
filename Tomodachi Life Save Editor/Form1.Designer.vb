@@ -48,6 +48,7 @@ Partial Class Form1
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.Panel30 = New System.Windows.Forms.Panel()
         Me.PictureBox60 = New System.Windows.Forms.PictureBox()
         Me.Panel28 = New System.Windows.Forms.Panel()
@@ -642,7 +643,7 @@ Partial Class Form1
         '
         Me.CheckBox31.AutoSize = True
         Me.CheckBox31.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox31.Location = New System.Drawing.Point(102, 38)
+        Me.CheckBox31.Location = New System.Drawing.Point(52, 40)
         Me.CheckBox31.Name = "CheckBox31"
         Me.CheckBox31.Size = New System.Drawing.Size(241, 17)
         Me.CheckBox31.TabIndex = 1
@@ -678,7 +679,7 @@ Partial Class Form1
         '
         Me.CheckBox12.AutoSize = True
         Me.CheckBox12.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox12.Location = New System.Drawing.Point(102, 37)
+        Me.CheckBox12.Location = New System.Drawing.Point(52, 40)
         Me.CheckBox12.Name = "CheckBox12"
         Me.CheckBox12.Size = New System.Drawing.Size(244, 17)
         Me.CheckBox12.TabIndex = 3
@@ -713,7 +714,7 @@ Partial Class Form1
         '
         Me.CheckBox11.AutoSize = True
         Me.CheckBox11.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox11.Location = New System.Drawing.Point(102, 38)
+        Me.CheckBox11.Location = New System.Drawing.Point(52, 40)
         Me.CheckBox11.Name = "CheckBox11"
         Me.CheckBox11.Size = New System.Drawing.Size(244, 17)
         Me.CheckBox11.TabIndex = 1
@@ -761,6 +762,7 @@ Partial Class Form1
         '
         Me.TabPage5.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage5.BackgroundImage = CType(resources.GetObject("TabPage5.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage5.Controls.Add(Me.Button12)
         Me.TabPage5.Controls.Add(Me.Panel30)
         Me.TabPage5.Controls.Add(Me.Panel28)
         Me.TabPage5.Controls.Add(Me.Panel1)
@@ -769,6 +771,15 @@ Partial Class Form1
         Me.TabPage5.Size = New System.Drawing.Size(463, 245)
         Me.TabPage5.TabIndex = 5
         Me.TabPage5.Text = "Extras"
+        '
+        'Button12
+        '
+        Me.Button12.Location = New System.Drawing.Point(344, 172)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(75, 23)
+        Me.Button12.TabIndex = 7
+        Me.Button12.Text = "Button12"
+        Me.Button12.UseVisualStyleBackColor = True
         '
         'Panel30
         '
@@ -858,7 +869,7 @@ Partial Class Form1
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Not Related", "Self", "Spouse", "Parent", "Child", "Sibling", "Other Relative"})
+        Me.ComboBox2.Items.AddRange(New Object() {"Child", "Not Related", "Other Relative", "Parent", "Self", "Sibling", "Spouse"})
         Me.ComboBox2.Location = New System.Drawing.Point(117, 19)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(92, 21)
@@ -2028,7 +2039,7 @@ Partial Class Form1
         '
         'NumericUpDown57
         '
-        Me.NumericUpDown57.Location = New System.Drawing.Point(408, 139)
+        Me.NumericUpDown57.Location = New System.Drawing.Point(392, 138)
         Me.NumericUpDown57.Maximum = New Decimal(New Integer() {101, 0, 0, 0})
         Me.NumericUpDown57.Name = "NumericUpDown57"
         Me.NumericUpDown57.Size = New System.Drawing.Size(42, 20)
@@ -2435,7 +2446,7 @@ Partial Class Form1
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(112, 20)
         Me.Button11.TabIndex = 104
-        Me.Button11.Text = "E/U EN Foods Id's?"
+        Me.Button11.Text = "E/U EN Foods Id's"
         Me.Button11.UseVisualStyleBackColor = False
         '
         'Button10
@@ -2446,7 +2457,7 @@ Partial Class Form1
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(112, 20)
         Me.Button10.TabIndex = 103
-        Me.Button10.Text = "EUR FR Foods Id's"
+        Me.Button10.Text = "E/U FR Foods Id's"
         Me.Button10.UseVisualStyleBackColor = False
         '
         'CheckBox34
@@ -3421,7 +3432,7 @@ Partial Class Form1
         Me.ComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox11.FormattingEnabled = True
-        Me.ComboBox11.Items.AddRange(New Object() {"EN", "FR", "DE"})
+        Me.ComboBox11.Items.AddRange(New Object() {"EN", "FR", "DE", "ES", "PT"})
         Me.ComboBox11.Location = New System.Drawing.Point(400, 68)
         Me.ComboBox11.Name = "ComboBox11"
         Me.ComboBox11.Size = New System.Drawing.Size(43, 21)
@@ -3558,7 +3569,9 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button8)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tomodachi Life Save Editor"
@@ -4053,4 +4066,5 @@ Partial Class Form1
     Friend WithEvents NumericUpDown44 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Label40 As System.Windows.Forms.Label
     Friend WithEvents PictureBox61 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button12 As System.Windows.Forms.Button
 End Class
