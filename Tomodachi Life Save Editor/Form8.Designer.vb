@@ -24,9 +24,9 @@ Partial Class Form8
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form8))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -46,17 +46,6 @@ Partial Class Form8
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(361, 157)
         Me.Panel1.TabIndex = 0
-        '
-        'Label4
-        '
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label4.Location = New System.Drawing.Point(6, 6)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(332, 390)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = resources.GetString("Label4.Text")
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label2
         '
@@ -79,6 +68,17 @@ Partial Class Form8
         Me.Label3.TabIndex = 1
         Me.Label3.Text = resources.GetString("Label3.Text")
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label4
+        '
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Location = New System.Drawing.Point(6, 6)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(332, 390)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = resources.GetString("Label4.Text")
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label1
         '

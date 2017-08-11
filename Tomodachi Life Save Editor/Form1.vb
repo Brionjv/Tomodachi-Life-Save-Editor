@@ -83,6 +83,7 @@ Public Class Form1
     Dim sweetheart As String
     Dim Pampered As String
     Dim applicationpath = Application.StartupPath
+    Dim TLMii As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox11.Text = "EN"
@@ -507,7 +508,7 @@ Public Class Form1
     End Sub
 
     Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
-        Form2.Show()
+        Form2.ShowDialog()
     End Sub
 
     Private Sub PictureBox6_MouseMove(sender As Object, e As EventArgs) Handles PictureBox6.MouseMove
@@ -1593,11 +1594,11 @@ Public Class Form1
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
-        Form4.Show()
+        Form4.ShowDialog()
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
-        Form5.Show()
+        Form5.ShowDialog()
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As System.Object, e As System.EventArgs) Handles CheckBox1.CheckedChanged
@@ -5245,6 +5246,9 @@ Public Class Form1
                     Reader.Position = &H1F24
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
                 End If
 
             If ComboBox1.Text = "Mii 2" Then
@@ -29380,7 +29384,7 @@ Public Class Form1
     End Sub
 
     Private Sub PictureBox35_Click(sender As Object, e As EventArgs) Handles PictureBox35.Click
-        Form6.Show()
+        Form6.ShowDialog()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -30768,11 +30772,11 @@ Public Class Form1
     End Sub
 
     Private Sub PictureBox33_Click(sender As Object, e As EventArgs) Handles PictureBox33.Click
-        Form10.Show()
+        Form10.ShowDialog()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Form11.Show()
+        Form11.ShowDialog()
     End Sub
 
     Private Sub CheckBox4_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox4.CheckedChanged
@@ -35982,7 +35986,7 @@ Public Class Form1
     End Sub
 
     Private Sub Panel2_click(sender As Object, e As EventArgs) Handles Panel2.Click
-        Form7.Show()
+        Form7.ShowDialog()
     End Sub
 
     Private Sub NumericUpDown54_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown54.ValueChanged
@@ -37064,20 +37068,20 @@ Public Class Form1
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-        If NumericUpDown53.Visible = False Then
+        If Label42.Visible = False Then
+            Label42.Visible = True
             NumericUpDown53.Visible = True
             NumericUpDown54.Visible = True
             NumericUpDown55.Visible = True
             NumericUpDown56.Visible = True
             NumericUpDown57.Visible = True
-            NumericUpDown9.Visible = True
-        ElseIf NumericUpDown53.Visible = True Then
+        ElseIf Label42.Visible = True Then
+            Label42.Visible = False
             NumericUpDown53.Visible = False
             NumericUpDown54.Visible = False
             NumericUpDown55.Visible = False
             NumericUpDown56.Visible = False
             NumericUpDown57.Visible = False
-            NumericUpDown9.Visible = False
         End If
     End Sub
 
@@ -37415,7 +37419,7 @@ Public Class Form1
             fdialog.Label1.Text = "Editar apenas se você tiver viajantes"
             fdialog.ShowDialog()
         End If
-        Form12.Show()
+        Form12.ShowDialog()
     End Sub
 
     Public Sub copiebak()
@@ -37445,11 +37449,191 @@ Public Class Form1
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-        Dim SaveFileDialog1 As New SaveFileDialog
-        SaveFileDialog1.Filter = "Tomodachi Life Mii|*.tlmii"
-        If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
-            Dim Writer As New PackageIO.Writer(SaveFileDialog1.FileName)
-            Writer.WriteUnicodeString(TextBox2.Text)
+        Try
+            If ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
+                Dim SaveFileDialog1 As New SaveFileDialog
+                SaveFileDialog1.Filter = "Tomodachi Life Mii|*.tlmii"
+                SaveFileDialog1.ShowDialog()
+                Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                Writer.Close()
+                Dim Writer1 As New PackageIO.Writer(SaveFileDialog1.FileName)
+                Writer1.WriteHexString(TextBox7.Text)
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub NumericUpDown58_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown58.ValueChanged
+        Select Case NumericUpDown58.Value
+            Case 128, 129
+                PictureBox63.Image = My.Resources.HC80
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(1)
+            Case 130, 131
+                PictureBox63.Image = My.Resources.HC82
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(2)
+            Case 132, 133
+                PictureBox63.Image = My.Resources.HC84
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(3)
+            Case 134, 135
+                PictureBox63.Image = My.Resources.HC86
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(4)
+            Case 136, 137
+                PictureBox63.Image = My.Resources.HC88
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(5)
+            Case 138, 139
+                PictureBox63.Image = My.Resources.HC8A
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(6)
+            Case 140, 141
+                PictureBox63.Image = My.Resources.HC8C
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(7)
+            Case 142, 143
+                PictureBox63.Image = My.Resources.HC8E
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(8)
+            Case 144, 145
+                PictureBox63.Image = My.Resources.HC90
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(9)
+            Case 146, 147
+                PictureBox63.Image = My.Resources.HC92
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(10)
+            Case 148, 149
+                PictureBox63.Image = My.Resources.HC94
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(11)
+            Case 150, 151
+                PictureBox63.Image = My.Resources.HC96
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(12)
+            Case 152, 153
+                PictureBox63.Image = My.Resources.HC98
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(13)
+            Case 154, 155
+                PictureBox63.Image = My.Resources.HC9A
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(14)
+            Case 156, 157
+                PictureBox63.Image = My.Resources.HC9C
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(15)
+            Case 158, 159
+                PictureBox63.Image = My.Resources.HC9E
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(16)
+            Case 160, 161
+                PictureBox63.Image = My.Resources.HCA0
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(17)
+            Case 162, 163
+                PictureBox63.Image = My.Resources.HCA2
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(18)
+            Case 164, 165
+                PictureBox63.Image = My.Resources.HCA4
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(19)
+            Case 166, 167
+                PictureBox63.Image = My.Resources.HCA6
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(20)
+            Case 168, 169
+                PictureBox63.Image = My.Resources.HCA8
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(21)
+            Case 170, 171
+                PictureBox63.Image = My.Resources.HCAA
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(22)
+            Case 172, 173
+                PictureBox63.Image = My.Resources.HCAC
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(23)
+            Case 174, 175
+                PictureBox63.Image = My.Resources.HCAE
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(24)
+            Case 176, 177
+                PictureBox63.Image = My.Resources.HCB0
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(25)
+            Case 178, 179
+                PictureBox63.Image = My.Resources.HCB2
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(26)
+            Case 180, 181
+                PictureBox63.Image = My.Resources.HCB4
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(27)
+            Case 182, 183
+                PictureBox63.Image = My.Resources.HCB6
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(28)
+            Case 184, 185
+                PictureBox63.Image = My.Resources.HCB8
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(29)
+            Case 186, 187
+                PictureBox63.Image = My.Resources.HCBA
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(30)
+            Case 188, 189
+                PictureBox63.Image = My.Resources.HCBC
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(31)
+            Case 190, 191
+                PictureBox63.Image = My.Resources.HCBE
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(32)
+            Case Else
+                PictureBox63.Image = My.Resources.HCdefault
+                ComboBox4.SelectedItem = ComboBox4.Items.Item(0)
+        End Select
+    End Sub
+
+    Private Sub ComboBox4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox4.SelectedIndexChanged
+        If ComboBox4.SelectedItem = ComboBox4.Items.Item(0) Then
+            NumericUpDown58.Value = 1
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(1) Then
+            NumericUpDown58.Value = 128
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(2) Then
+            NumericUpDown58.Value = 130
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(3) Then
+            NumericUpDown58.Value = 132
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(4) Then
+            NumericUpDown58.Value = 134
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(5) Then
+            NumericUpDown58.Value = 136
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(6) Then
+            NumericUpDown58.Value = 138
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(7) Then
+            NumericUpDown58.Value = 140
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(8) Then
+            NumericUpDown58.Value = 142
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(9) Then
+            NumericUpDown58.Value = 144
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(10) Then
+            NumericUpDown58.Value = 146
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(11) Then
+            NumericUpDown58.Value = 148
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(12) Then
+            NumericUpDown58.Value = 150
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(13) Then
+            NumericUpDown58.Value = 152
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(14) Then
+            NumericUpDown58.Value = 154
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(15) Then
+            NumericUpDown58.Value = 156
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(16) Then
+            NumericUpDown58.Value = 158
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(17) Then
+            NumericUpDown58.Value = 160
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(18) Then
+            NumericUpDown58.Value = 162
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(19) Then
+            NumericUpDown58.Value = 164
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(20) Then
+            NumericUpDown58.Value = 166
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(21) Then
+            NumericUpDown58.Value = 168
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(22) Then
+            NumericUpDown58.Value = 170
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(23) Then
+            NumericUpDown58.Value = 172
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(24) Then
+            NumericUpDown58.Value = 174
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(25) Then
+            NumericUpDown58.Value = 176
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(26) Then
+            NumericUpDown58.Value = 178
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(27) Then
+            NumericUpDown58.Value = 180
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(28) Then
+            NumericUpDown58.Value = 182
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(29) Then
+            NumericUpDown58.Value = 184
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(30) Then
+            NumericUpDown58.Value = 186
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(31) Then
+            NumericUpDown58.Value = 188
+        ElseIf ComboBox4.SelectedItem = ComboBox4.Items.Item(32) Then
+            NumericUpDown58.Value = 190
         End If
     End Sub
 End Class

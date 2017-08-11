@@ -48,7 +48,6 @@ Partial Class Form1
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.Button12 = New System.Windows.Forms.Button()
         Me.Panel30 = New System.Windows.Forms.Panel()
         Me.PictureBox60 = New System.Windows.Forms.PictureBox()
         Me.Panel28 = New System.Windows.Forms.Panel()
@@ -56,6 +55,7 @@ Partial Class Form1
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.Label27 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabControl2 = New System.Windows.Forms.TabControl()
@@ -238,6 +238,12 @@ Partial Class Form1
         Me.NumericUpDown44 = New System.Windows.Forms.NumericUpDown()
         Me.Label40 = New System.Windows.Forms.Label()
         Me.PictureBox61 = New System.Windows.Forms.PictureBox()
+        Me.TabPage13 = New System.Windows.Forms.TabPage()
+        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox63 = New System.Windows.Forms.PictureBox()
+        Me.NumericUpDown58 = New System.Windows.Forms.NumericUpDown()
+        Me.Label43 = New System.Windows.Forms.Label()
         Me.TabPage9 = New System.Windows.Forms.TabPage()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.Panel29 = New System.Windows.Forms.Panel()
@@ -300,6 +306,8 @@ Partial Class Form1
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Label39 = New System.Windows.Forms.Label()
+        Me.Label42 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -423,6 +431,9 @@ Partial Class Form1
         CType(Me.PictureBox62, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown44, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage13.SuspendLayout()
+        CType(Me.PictureBox63, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown58, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage9.SuspendLayout()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel29.SuspendLayout()
@@ -762,7 +773,6 @@ Partial Class Form1
         '
         Me.TabPage5.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage5.BackgroundImage = CType(resources.GetObject("TabPage5.BackgroundImage"), System.Drawing.Image)
-        Me.TabPage5.Controls.Add(Me.Button12)
         Me.TabPage5.Controls.Add(Me.Panel30)
         Me.TabPage5.Controls.Add(Me.Panel28)
         Me.TabPage5.Controls.Add(Me.Panel1)
@@ -771,15 +781,6 @@ Partial Class Form1
         Me.TabPage5.Size = New System.Drawing.Size(463, 245)
         Me.TabPage5.TabIndex = 5
         Me.TabPage5.Text = "Extras"
-        '
-        'Button12
-        '
-        Me.Button12.Location = New System.Drawing.Point(344, 172)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(75, 23)
-        Me.Button12.TabIndex = 7
-        Me.Button12.Text = "Button12"
-        Me.Button12.UseVisualStyleBackColor = True
         '
         'Panel30
         '
@@ -862,6 +863,17 @@ Partial Class Form1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(446, 33)
         Me.Panel1.TabIndex = 4
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.SystemColors.Control
+        Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button12.Location = New System.Drawing.Point(12, 185)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(75, 23)
+        Me.Button12.TabIndex = 7
+        Me.Button12.Text = "Save as "
+        Me.Button12.UseVisualStyleBackColor = False
         '
         'ComboBox2
         '
@@ -1983,6 +1995,7 @@ Partial Class Form1
         Me.TabControl3.Controls.Add(Me.TabPage10)
         Me.TabControl3.Controls.Add(Me.TabPage11)
         Me.TabControl3.Controls.Add(Me.TabPage12)
+        Me.TabControl3.Controls.Add(Me.TabPage13)
         Me.TabControl3.Location = New System.Drawing.Point(0, 0)
         Me.TabControl3.Name = "TabControl3"
         Me.TabControl3.SelectedIndex = 0
@@ -2886,6 +2899,74 @@ Partial Class Form1
         Me.PictureBox61.TabIndex = 0
         Me.PictureBox61.TabStop = False
         '
+        'TabPage13
+        '
+        Me.TabPage13.BackgroundImage = CType(resources.GetObject("TabPage13.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage13.Controls.Add(Me.ComboBox5)
+        Me.TabPage13.Controls.Add(Me.Button12)
+        Me.TabPage13.Controls.Add(Me.TextBox7)
+        Me.TabPage13.Controls.Add(Me.ComboBox4)
+        Me.TabPage13.Controls.Add(Me.PictureBox63)
+        Me.TabPage13.Controls.Add(Me.NumericUpDown58)
+        Me.TabPage13.Controls.Add(Me.Label43)
+        Me.TabPage13.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage13.Name = "TabPage13"
+        Me.TabPage13.Size = New System.Drawing.Size(455, 219)
+        Me.TabPage13.TabIndex = 3
+        Me.TabPage13.Text = "Extras"
+        Me.TabPage13.UseVisualStyleBackColor = True
+        '
+        'ComboBox5
+        '
+        Me.ComboBox5.BackColor = System.Drawing.Color.White
+        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox5.FormattingEnabled = True
+        Me.ComboBox5.Items.AddRange(New Object() {"Tomodachi Life Mii", "StreetPass Traveler", "External Mii"})
+        Me.ComboBox5.Location = New System.Drawing.Point(93, 186)
+        Me.ComboBox5.Name = "ComboBox5"
+        Me.ComboBox5.Size = New System.Drawing.Size(154, 21)
+        Me.ComboBox5.TabIndex = 8
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.BackColor = System.Drawing.Color.White
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"---", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32"})
+        Me.ComboBox4.Location = New System.Drawing.Point(122, 29)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(39, 21)
+        Me.ComboBox4.TabIndex = 3
+        '
+        'PictureBox63
+        '
+        Me.PictureBox63.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.HCdefault
+        Me.PictureBox63.Location = New System.Drawing.Point(165, 25)
+        Me.PictureBox63.Name = "PictureBox63"
+        Me.PictureBox63.Size = New System.Drawing.Size(24, 24)
+        Me.PictureBox63.TabIndex = 1
+        Me.PictureBox63.TabStop = False
+        '
+        'NumericUpDown58
+        '
+        Me.NumericUpDown58.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown58.Location = New System.Drawing.Point(193, 33)
+        Me.NumericUpDown58.Maximum = New Decimal(New Integer() {191, 0, 0, 0})
+        Me.NumericUpDown58.Name = "NumericUpDown58"
+        Me.NumericUpDown58.Size = New System.Drawing.Size(35, 16)
+        Me.NumericUpDown58.TabIndex = 2
+        '
+        'Label43
+        '
+        Me.Label43.Location = New System.Drawing.Point(124, 9)
+        Me.Label43.Name = "Label43"
+        Me.Label43.Size = New System.Drawing.Size(104, 13)
+        Me.Label43.TabIndex = 0
+        Me.Label43.Text = "Hair color"
+        Me.Label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TabPage9
         '
         Me.TabPage9.BackColor = System.Drawing.Color.WhiteSmoke
@@ -3546,12 +3627,32 @@ Partial Class Form1
         Me.Label39.Text = "Label39"
         Me.Label39.Visible = False
         '
+        'Label42
+        '
+        Me.Label42.AutoSize = True
+        Me.Label42.BackColor = System.Drawing.Color.Transparent
+        Me.Label42.Location = New System.Drawing.Point(452, 2)
+        Me.Label42.Name = "Label42"
+        Me.Label42.Size = New System.Drawing.Size(15, 13)
+        Me.Label42.TabIndex = 42
+        Me.Label42.Text = "D"
+        Me.Label42.Visible = False
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(12, 171)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(197, 20)
+        Me.TextBox7.TabIndex = 9
+        Me.TextBox7.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(469, 389)
+        Me.Controls.Add(Me.Label42)
         Me.Controls.Add(Me.Label39)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.ComboBox12)
@@ -3733,6 +3834,10 @@ Partial Class Form1
         CType(Me.PictureBox62, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown44, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage13.ResumeLayout(False)
+        Me.TabPage13.PerformLayout()
+        CType(Me.PictureBox63, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown58, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage9.ResumeLayout(False)
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel29.ResumeLayout(False)
@@ -4067,4 +4172,12 @@ Partial Class Form1
     Friend WithEvents Label40 As System.Windows.Forms.Label
     Friend WithEvents PictureBox61 As System.Windows.Forms.PictureBox
     Friend WithEvents Button12 As System.Windows.Forms.Button
+    Friend WithEvents Label42 As System.Windows.Forms.Label
+    Friend WithEvents TabPage13 As System.Windows.Forms.TabPage
+    Friend WithEvents Label43 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox63 As System.Windows.Forms.PictureBox
+    Friend WithEvents NumericUpDown58 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents ComboBox4 As System.Windows.Forms.ComboBox
+    Friend WithEvents ComboBox5 As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
 End Class
