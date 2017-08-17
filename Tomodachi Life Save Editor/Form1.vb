@@ -19312,6 +19312,9 @@ Public Class Form1
                     Reader.Position = &H1E24
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C40
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H590)
                 End If
                 If ComboBox1.Text = "Mii 2" Then
                     Reader.Position = &H1CA0 + &H590
@@ -37450,14 +37453,49 @@ Public Class Form1
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
         Try
-            If ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
-                Dim SaveFileDialog1 As New SaveFileDialog
-                SaveFileDialog1.Filter = "Tomodachi Life Mii|*.tlmii"
-                SaveFileDialog1.ShowDialog()
-                Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
-                Writer.Close()
-                Dim Writer1 As New PackageIO.Writer(SaveFileDialog1.FileName)
-                Writer1.WriteHexString(TextBox7.Text)
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
+                If ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
+                    Dim SaveFileDialog1 As New SaveFileDialog
+                    SaveFileDialog1.Filter = "Tomodachi Life Mii (US)|*.ustlmii"
+                    SaveFileDialog1.ShowDialog()
+                    Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                    Writer.Close()
+                    Dim Writer1 As New PackageIO.Writer(SaveFileDialog1.FileName)
+                    Writer1.WriteHexString(TextBox7.Text)
+                End If
+            End If
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                If ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
+                    Dim SaveFileDialog1 As New SaveFileDialog
+                    SaveFileDialog1.Filter = "Tomodachi Life Mii (EU)|*.eutlmii"
+                    SaveFileDialog1.ShowDialog()
+                    Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                    Writer.Close()
+                    Dim Writer1 As New PackageIO.Writer(SaveFileDialog1.FileName)
+                    Writer1.WriteHexString(TextBox7.Text)
+                End If
+            End If
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
+                If ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
+                    Dim SaveFileDialog1 As New SaveFileDialog
+                    SaveFileDialog1.Filter = "Tomodachi Life Mii (JP)|*.jptlmii"
+                    SaveFileDialog1.ShowDialog()
+                    Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                    Writer.Close()
+                    Dim Writer1 As New PackageIO.Writer(SaveFileDialog1.FileName)
+                    Writer1.WriteHexString(TextBox7.Text)
+                End If
+            End If
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
+                If ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
+                    Dim SaveFileDialog1 As New SaveFileDialog
+                    SaveFileDialog1.Filter = "Tomodachi Life Mii (KR)|*.krtlmii"
+                    SaveFileDialog1.ShowDialog()
+                    Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                    Writer.Close()
+                    Dim Writer1 As New PackageIO.Writer(SaveFileDialog1.FileName)
+                    Writer1.WriteHexString(TextBox7.Text)
+                End If
             End If
         Catch ex As Exception
         End Try
