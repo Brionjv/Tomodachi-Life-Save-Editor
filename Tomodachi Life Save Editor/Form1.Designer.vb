@@ -240,6 +240,7 @@ Partial Class Form1
         Me.PictureBox61 = New System.Windows.Forms.PictureBox()
         Me.TabPage13 = New System.Windows.Forms.TabPage()
         Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.PictureBox63 = New System.Windows.Forms.PictureBox()
         Me.NumericUpDown58 = New System.Windows.Forms.NumericUpDown()
@@ -307,7 +308,6 @@ Partial Class Form1
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Label39 = New System.Windows.Forms.Label()
         Me.Label42 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2627,7 +2627,7 @@ Partial Class Form1
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Location = New System.Drawing.Point(201, 5)
+        Me.Label10.Location = New System.Drawing.Point(199, 5)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(22, 13)
         Me.Label10.TabIndex = 9
@@ -2761,7 +2761,7 @@ Partial Class Form1
         '
         'NumericUpDown21
         '
-        Me.NumericUpDown21.Location = New System.Drawing.Point(409, 58)
+        Me.NumericUpDown21.Location = New System.Drawing.Point(413, 58)
         Me.NumericUpDown21.Name = "NumericUpDown21"
         Me.NumericUpDown21.Size = New System.Drawing.Size(38, 20)
         Me.NumericUpDown21.TabIndex = 80
@@ -2781,7 +2781,7 @@ Partial Class Form1
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.BackColor = System.Drawing.Color.Transparent
-        Me.RadioButton2.Location = New System.Drawing.Point(289, 60)
+        Me.RadioButton2.Location = New System.Drawing.Point(286, 60)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(85, 17)
         Me.RadioButton2.TabIndex = 65
@@ -2813,7 +2813,7 @@ Partial Class Form1
         Me.PictureBox33.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox33.Cursor = System.Windows.Forms.Cursors.Hand
         Me.PictureBox33.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.fullness_estomac
-        Me.PictureBox33.Location = New System.Drawing.Point(391, 28)
+        Me.PictureBox33.Location = New System.Drawing.Point(395, 28)
         Me.PictureBox33.Name = "PictureBox33"
         Me.PictureBox33.Size = New System.Drawing.Size(55, 50)
         Me.PictureBox33.TabIndex = 62
@@ -2927,6 +2927,14 @@ Partial Class Form1
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(154, 21)
         Me.ComboBox5.TabIndex = 8
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(12, 171)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(197, 20)
+        Me.TextBox7.TabIndex = 9
+        Me.TextBox7.Visible = False
         '
         'ComboBox4
         '
@@ -3637,14 +3645,6 @@ Partial Class Form1
         Me.Label42.TabIndex = 42
         Me.Label42.Text = "D"
         Me.Label42.Visible = False
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(12, 171)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(197, 20)
-        Me.TextBox7.TabIndex = 9
-        Me.TextBox7.Visible = False
         '
         'Form1
         '

@@ -72,7 +72,16 @@ Public Class Form12
             Label5.Text = "Dankbarkeit"
             Button1.Text = "speichern"
             Button2.Text = "schließen"
+        ElseIf Form1.ComboBox11.Text = "PT" Then
+            Label1.Text = "Nív."
+            Label2.Text = "Região"
+            Label3.Text = "Casa"
+            Label4.Text = "Felicidade"
+            Label5.Text = "Gratitude"
+            Button1.Text = "Salvar"
+            Button2.Text = "Fechar"
         End If
+
         filepath = Form1.Label39.Text
     End Sub
 

@@ -31,5 +31,9 @@
             Label1.Text = "Fertig"
             Label1.Location = New Point(109, 60)
         End If
+        If Form1.ComboBox11.Text = "PT" Then
+            Label1.Text = "Fechar"
+            Label1.Location = New Point(109, 60)
+        End If
     End Sub
 End Class

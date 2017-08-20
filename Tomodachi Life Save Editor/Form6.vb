@@ -31,6 +31,12 @@
             Label2.Text = "Phrasen"
             Label2.Location = New Point(160, 56)
         End If
+        If Form1.ComboBox11.Text = "PT" Then
+            Label1.Text = "Fechar"
+            Label1.Location = New Point(172, 170)
+            Label2.Text = "Bordão"
+            Label2.Location = New Point(160, 56)
+        End If
         TextBox10.Text = Form1.Label20.Text
         TextBox11.Text = Form1.Label21.Text
         TextBox12.Text = Form1.Label22.Text

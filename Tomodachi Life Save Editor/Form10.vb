@@ -70,6 +70,12 @@
             ComboBox1.Items.Item(0) = "leer"
             ComboBox1.Items.Item(4) = "voll"
         End If
+        If Form1.ComboBox11.Text = "PT" Then
+            Label1.Text = "Feito"
+            Label1.Location = New Point(111, 98)
+            ComboBox1.Items.Item(0) = "Vazio"
+            ComboBox1.Items.Item(4) = "Cheio"
+        End If
         NumericUpDown1.Value = Form1.NumericUpDown21.Value
     End Sub
     Private Sub Form10_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
