@@ -24,13 +24,13 @@ Partial Class Form8
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form8))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,6 +48,17 @@ Partial Class Form8
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(361, 157)
         Me.Panel1.TabIndex = 0
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label5.Location = New System.Drawing.Point(6, 6)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(332, 437)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = resources.GetString("Label5.Text")
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label2
         '
@@ -116,17 +127,6 @@ Partial Class Form8
         Me.PictureBox2.Size = New System.Drawing.Size(100, 42)
         Me.PictureBox2.TabIndex = 24
         Me.PictureBox2.TabStop = False
-        '
-        'Label5
-        '
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label5.Location = New System.Drawing.Point(6, 6)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(332, 437)
-        Me.Label5.TabIndex = 3
-        Me.Label5.Text = resources.GetString("Label5.Text")
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Form8
         '

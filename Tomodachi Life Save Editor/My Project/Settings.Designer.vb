@@ -293,6 +293,30 @@ Namespace My
                 Me("estomac") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(), _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.Configuration.DefaultSettingValueAttribute("")> _
+        Public Property Settinghide() As String
+            Get
+                Return CType(Me("Settinghide"), String)
+            End Get
+            Set(value As String)
+                Me("Settinghide") = value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(), _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
+         Global.System.Configuration.DefaultSettingValueAttribute("")> _
+        Public Property Settingmusic() As String
+            Get
+                Return CType(Me("Settingmusic"), String)
+            End Get
+            Set(value As String)
+                Me("Settingmusic") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
