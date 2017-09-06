@@ -219,6 +219,9 @@ Public Class Form1
             ComboBox3.Items.Item(2) = "Enfant"
             Label40.Text = "Mii préférés"
             Label41.Text = "Mii dépensiers"
+            Label43.Text = "Couleur cheveux"
+            Button12.Text = "Enreg. sous"
+            TabPage14.Text = "Liste d'amis"
         End If
         If ComboBox11.Text = "EN" Then
             Button1.Text = "Open"
@@ -321,6 +324,9 @@ Public Class Form1
             ComboBox3.Items.Item(2) = "Kid"
             Label40.Text = "Pampered ranking"
             Label41.Text = "Splurge ranking"
+            Label43.Text = "Hair color"
+            Button12.Text = "Save as"
+            TabPage14.Text = "Friends list"
         End If
         If ComboBox11.Text = "DE" Then
             Button1.Text = "öffnen"
@@ -423,6 +429,9 @@ Public Class Form1
             ComboBox3.Items.Item(2) = "Kind"
             Label40.Text = "Spieler-Rang"
             Label41.Text = "Luxus-Mii-Rang"
+            Label43.Text = "Haarfarbe"
+            Button12.Text = "speichern als"
+            TabPage14.Text = "Freundesliste"
         End If
         If ComboBox11.Text = "PT" Then
             Button1.Text = "Abrir"
@@ -525,6 +534,114 @@ Public Class Form1
             ComboBox3.Items.Item(2) = "Criança"
             Label40.Text = "Ranking de Mimados"
             Label41.Text = "Ranking de Extravagância"
+            Label43.Text = "cor de cabelo"
+            Button12.Text = "salvar como"
+            TabPage14.Text = "lista de amigos"
+        End If
+        If ComboBox11.Text = "ES" Then
+            Button1.Text = "Abrir"
+            Button2.Text = "Guardar"
+            Button5.Text = "Abrir"
+            Button6.Text = "Guardar"
+            Button8.Text = "Abrir"
+            Button9.Text = "Guardar"
+            TabPage1.Text = "Principal"
+            TabPage4.Text = "Editar Mii"
+            TabPage3.Text = "Tesoros / Comidas"
+            TabPage2.Text = "Reparar partida"
+            GroupBox2.Text = "Problemas resueltos"
+            GroupBox7.Text = "Encuentros (StreetPass)"
+            GroupBox3.Text = "Matrimonios"
+            GroupBox6.Text = "Bebés"
+            GroupBox4.Text = "Viajeros recibidos"
+            GroupBox5.Text = "Viajeros enviados"
+            GroupBox101.Text = "Nombre de la isla"
+            GroupBox1.Text = "Dinero"
+            Label6.Text = "Nombre"
+            Label8.Text = "Apellido"
+            Label10.Text = "Niv."
+            Label9.Text = "Apodo"
+            Label2.Text = "Creador"
+            Button3.Text = "Guardar Mii"
+            Button7.Text = "Guardar Mii"
+            Label5.Text = "Muletilla"
+            ComboBox2.Items.Item(0) = "No relacionado"
+            ComboBox2.Items.Item(1) = "Uno mismo"
+            ComboBox2.Items.Item(2) = "Cónyuge"
+            ComboBox2.Items.Item(3) = "Padre o madre"
+            ComboBox2.Items.Item(4) = "Hijo o hija"
+            ComboBox2.Items.Item(5) = "Otro familiar"
+            ComboBox2.Items.Item(6) = "Otra relación"
+            CheckBox15.Text = "Toda la ropa y colores StreetPass/SpotPass desbloqueada"
+            CheckBox8.Text = "Todas las Especialidades desbloqueadas"
+            CheckBox17.Text = "Todos los sombreros StreetPass/SpotPass desbloqueados"
+            CheckBox9.Text = "Todos los Sombreros y colores desbloqueados"
+            CheckBox1.Text = "Todos los Interiores desbloqueados"
+            CheckBox2.Text = "Todos los Objetos desbloqueados"
+            CheckBox5.Text = "Todos los Tesoros desbloqueados"
+            CheckBox3.Text = "Toda la Comida desbloqueada"
+            CheckBox6.Text = "Toda la Ropa y colores desbloqueada"
+            CheckBox10.Text = "SI ''US Todos los Sombreros y Colores desbloqueados'' fue utilizado"
+            CheckBox11.Text = "SI ''US Todas las Especialidades desbloqueadas'' fue utilizado"
+            CheckBox13.Text = "SI ''EU Todos los Sombreros y Colores desbloqueados'' fue utilizado"
+            CheckBox12.Text = "SI ''EU Todas las Especialidades desbloqueadas'' fue utilizado"
+            CheckBox31.Text = "SI ''JP Todas las Especialidades desbloqueadas'' fue utilizado"
+            CheckBox32.Text = "SI ''jp Todos los Sombreros StreetPass/SpotPass desbloqueados'' fue utilizado"
+            GroupBox8.Text = "Reparar partida EU/US/KR"
+            GroupBox10.Text = "Reparar partida EU/JP/KR"
+            GroupBox11.Text = "Reparar partida US/JP/KR"
+            CheckBox14.Text = "Eliminar la pena de viaje en el tiempo"
+            Label3.Location = New Point(320, 13)
+            Label13.Text = "Estómago"
+            RadioButton2.Text = "No comió"
+            ComboBox12.Items.Item(0) = "Partida US"
+            ComboBox12.Items.Item(1) = "Partida EU"
+            ComboBox12.Items.Item(2) = "Partida JP"
+            ComboBox12.Items.Item(3) = "Partida KR"
+            Button4.Text = "Inventario"
+            TabPage6.Text = "Desbloquear por números"
+            TabPage7.Text = "Desbloquear por catálogo"
+            TabPage8.Text = "Borrar objetos"
+            TabPage9.Text = "Edificios de la isla"
+            TabPage10.Text = "Editar"
+            TabPage12.Text = "Tablón de clasificaciones"
+            CheckBox20.Text = "Toda la ropa y colores StreetPass/SpotPass desbloqueada"
+            CheckBox19.Text = "Todos los sombreros StreetPass/SpotPass desbloqueados"
+            CheckBox18.Text = "Todos los Sombreros y colores desbloqueados"
+            CheckBox16.Text = "Todos los Interiores desbloqueados"
+            CheckBox7.Text = "Toda la Comida desbloqueada"
+            CheckBox4.Text = "Toda la Ropa y colores desbloqueada"
+            CheckBox22.Text = "All Streetpass/Spotpass Clothing and colors deleted"
+            CheckBox21.Text = "All Streetpass/Spotpass Headgears deleted"
+            CheckBox23.Text = "All Special Foods deleted"
+            CheckBox24.Text = "All Headgears and colors deleted"
+            CheckBox25.Text = "All Interiors deleted"
+            CheckBox26.Text = "All Goods items deleted"
+            CheckBox27.Text = "All Treasures deleted"
+            CheckBox28.Text = "All Foods deleted"
+            CheckBox29.Text = "All Clothing and colors deleted"
+            CheckBox30.Text = "Reset Tomodachi Life StreetPass/SpotPass"
+            Label27.Location = New Point(362, 11)
+            Label33.Text = "Favorite color"
+            Label34.Text = "Grown-up/kid"
+            Label37.Text = "Relation to real You"
+            Label35.Text = "Sharing"
+            Label36.Text = "Copying"
+            Label30.Text = "Super All-Time Fav / All-Time Fav"
+            Label31.Text = "Favorite Foods"
+            Label32.Text = "Worst / Worst Ever"
+            Label29.Text = "Sweetheart"
+            Label28.Text = "Best friend"
+            CheckBox33.Text = "Break"
+            CheckBox34.Text = "Break"
+            ComboBox3.Items.Item(0) = "Grown-up"
+            ComboBox3.Items.Item(1) = "Grown-up (1)"
+            ComboBox3.Items.Item(2) = "Kid"
+            Label40.Text = "Pampered ranking"
+            Label41.Text = "Splurge ranking"
+            Label43.Text = "Hair color"
+            Button12.Text = "Save as"
+            TabPage14.Text = "Friends list"
         End If
     End Sub
 
@@ -827,26 +944,6 @@ Public Class Form1
     End Sub
 
     Private Sub PictureBox34_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox34.MouseLeave, NumericUpDown19.MouseLeave
-        Label17.Visible = False
-    End Sub
-
-    Private Sub LinkLabel1_MouseMove(sender As Object, e As EventArgs) Handles LinkLabel1.MouseMove
-        If ComboBox11.Text = "EN" Then
-            Label17.Text = "Click to see the credits"
-        End If
-        If ComboBox11.Text = "FR" Then
-            Label17.Text = "Cliquez pour voir les crédits"
-        End If
-        If ComboBox11.Text = "DE" Then
-            Label17.Text = "Klicken Sie hier, um Credits zu sehen"
-        End If
-        If ComboBox11.Text = "PT" Then
-            Label17.Text = "Clique para ver os créditos"
-        End If
-        Label17.Visible = True
-    End Sub
-
-    Private Sub LinkLabel1_MouseLeave(sender As Object, e As EventArgs) Handles LinkLabel1.MouseLeave
         Label17.Visible = False
     End Sub
 
@@ -5128,6 +5225,7 @@ Public Class Form1
             Button7.Enabled = True
             RadioButton2.Checked = False
             ComboBox6.Enabled = True
+            ComboBox6.SelectedItem = Nothing
             Dim Reader As New PackageIO.Reader(filepath, PackageIO.Endian.Little)
             If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Or ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Or ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
                 If ComboBox1.Text = "Mii 1" Then
@@ -5418,6 +5516,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + &H660
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + &H660
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + &H100
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + &H660
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 3" Then
 
@@ -5560,6 +5666,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 2)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 2)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 2)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 2)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 4" Then
 
@@ -5701,7 +5815,15 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 3)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
-            End If
+                    Reader.Position = &H1C70 + (&H660 * 3)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 3)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 3)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
+                End If
             If ComboBox1.Text = "Mii 5" Then
 
                 Reader.Position = &H3650
@@ -5842,7 +5964,15 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 4)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
-            End If
+                    Reader.Position = &H1C70 + (&H660 * 4)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 4)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 4)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
+                End If
             If ComboBox1.Text = "Mii 6" Then
 
                 Reader.Position = &H3CB0
@@ -5983,6 +6113,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 5)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 5)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 5)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 5)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 7" Then
 
@@ -6124,6 +6262,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 6)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 6)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 6)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 6)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 8" Then
 
@@ -6265,6 +6411,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 7)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 7)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 7)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 7)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 9" Then
 
@@ -6406,6 +6560,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 8)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 8)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 8)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 8)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 10" Then
 
@@ -6547,6 +6709,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 9)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 9)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 9)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 9)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 11" Then
 
@@ -6688,6 +6858,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 10)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 10)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 10)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 10)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 12" Then
 
@@ -6829,6 +7007,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 11)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 11)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 11)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 11)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 13" Then
 
@@ -6970,6 +7156,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 12)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 12)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 12)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 12)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 14" Then
 
@@ -7111,6 +7305,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 13)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 13)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 13)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 13)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 15" Then
 
@@ -7252,6 +7454,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 14)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 14)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 14)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 14)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 16" Then
 
@@ -7393,6 +7603,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 15)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 15)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 15)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 15)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 17" Then
 
@@ -7534,6 +7752,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 16)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 16)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 16)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 16)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 18" Then
 
@@ -7675,6 +7901,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 17)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 17)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 17)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 17)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 19" Then
 
@@ -7816,6 +8050,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 18)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 18)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 18)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 18)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 20" Then
 
@@ -7957,6 +8199,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 19)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 19)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 19)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 19)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 21" Then
 
@@ -8098,6 +8348,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 20)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 20)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 20)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 20)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 22" Then
 
@@ -8239,6 +8497,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 21)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 21)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 21)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 21)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 23" Then
 
@@ -8380,6 +8646,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 22)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 22)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 22)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 22)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 24" Then
 
@@ -8521,6 +8795,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 23)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 23)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 23)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 23)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 25" Then
 
@@ -8662,6 +8944,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 24)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 24)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 24)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 24)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 26" Then
 
@@ -8803,6 +9093,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 25)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 25)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 25)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 25)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 27" Then
 
@@ -8944,6 +9242,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 26)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 26)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 26)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 26)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 28" Then
 
@@ -9085,6 +9391,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 27)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 27)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 27)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 27)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 29" Then
 
@@ -9226,6 +9540,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 28)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 28)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 28)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 28)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 30" Then
 
@@ -9367,6 +9689,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 29)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 29)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 29)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 29)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 31" Then
 
@@ -9508,6 +9838,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 30)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 30)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 30)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 30)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 32" Then
 
@@ -9649,6 +9987,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 31)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 31)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 31)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 31)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 33" Then
 
@@ -9790,6 +10136,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 32)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 32)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 32)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 32)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 34" Then
 
@@ -9931,6 +10285,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 33)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 33)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 33)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 33)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 35" Then
 
@@ -10072,6 +10434,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 34)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 34)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 34)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 34)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 36" Then
 
@@ -10213,6 +10583,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 35)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 35)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 35)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 35)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 37" Then
 
@@ -10354,6 +10732,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 36)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 36)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 36)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 36)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 38" Then
 
@@ -10495,6 +10881,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 37)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 37)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 37)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 37)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 39" Then
 
@@ -10636,6 +11030,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 38)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 38)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 38)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 38)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 40" Then
 
@@ -10777,6 +11179,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 39)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 39)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 39)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 39)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 41" Then
 
@@ -10918,6 +11328,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 40)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 40)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 40)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 40)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 42" Then
 
@@ -11059,6 +11477,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 41)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 41)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 41)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 41)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 43" Then
 
@@ -11200,6 +11626,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 42)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 42)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 42)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 42)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 44" Then
 
@@ -11341,6 +11775,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 43)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 43)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 43)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 43)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 45" Then
 
@@ -11482,6 +11924,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 44)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 44)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 44)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 44)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 46" Then
 
@@ -11623,6 +12073,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 45)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 45)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 45)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 45)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 47" Then
 
@@ -11764,6 +12222,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 46)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 46)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 46)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 46)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 48" Then
 
@@ -11905,6 +12371,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 47)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 47)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 47)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 47)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 49" Then
 
@@ -12046,6 +12520,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 48)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 48)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 48)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 48)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 50" Then
 
@@ -12187,6 +12669,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 49)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 49)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 49)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 49)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 51" Then
 
@@ -12328,6 +12818,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 50)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 50)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 50)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 50)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 52" Then
 
@@ -12469,6 +12967,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 51)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 51)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 51)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 51)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 53" Then
 
@@ -12610,6 +13116,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 52)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 52)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 52)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 52)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 54" Then
 
@@ -12751,6 +13265,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 53)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 53)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 53)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 53)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 55" Then
 
@@ -12892,6 +13414,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 54)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 54)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 54)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 54)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 56" Then
 
@@ -13033,6 +13563,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 55)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 55)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 55)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 55)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 57" Then
 
@@ -13174,6 +13712,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 56)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 56)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 56)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 56)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 58" Then
 
@@ -13315,6 +13861,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 57)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 57)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 57)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 57)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 59" Then
 
@@ -13456,6 +14010,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 58)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 58)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 58)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 58)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 60" Then
 
@@ -13597,6 +14159,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 59)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 59)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 59)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 59)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 61" Then
 
@@ -13738,6 +14308,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 60)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 60)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 60)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 60)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 62" Then
 
@@ -13879,6 +14457,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 61)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 61)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 61)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 61)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 63" Then
 
@@ -14020,6 +14606,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 62)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 62)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 62)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 62)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 64" Then
 
@@ -14161,6 +14755,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 63)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 63)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 63)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 63)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 65" Then
 
@@ -14302,6 +14904,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 64)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 64)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 64)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 64)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 66" Then
 
@@ -14443,6 +15053,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 65)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 65)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 65)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 65)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 67" Then
 
@@ -14584,6 +15202,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 66)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 66)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 66)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 66)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 68" Then
 
@@ -14725,6 +15351,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 67)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 67)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 67)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 67)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 69" Then
 
@@ -14866,6 +15500,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 68)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 68)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 68)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 68)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 70" Then
 
@@ -15007,6 +15649,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 69)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 69)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 69)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 69)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 71" Then
 
@@ -15148,6 +15798,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 70)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 70)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 70)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 70)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 72" Then
 
@@ -15289,6 +15947,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 71)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 71)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 71)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 71)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 73" Then
 
@@ -15430,6 +16096,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 72)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 72)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 72)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 72)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 74" Then
 
@@ -15571,6 +16245,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 73)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 73)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 73)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 73)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 75" Then
 
@@ -15712,6 +16394,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 74)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 74)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 74)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 74)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 76" Then
 
@@ -15853,6 +16543,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 75)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 75)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 75)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 75)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 77" Then
 
@@ -15994,6 +16692,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 76)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 76)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 76)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 76)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 78" Then
 
@@ -16135,6 +16841,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 77)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 77)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 77)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 77)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 79" Then
 
@@ -16276,6 +16990,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 78)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 78)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 78)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 78)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 80" Then
 
@@ -16417,6 +17139,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 79)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 79)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 79)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 79)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 81" Then
 
@@ -16558,6 +17288,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 80)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 80)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 80)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 80)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 82" Then
 
@@ -16699,6 +17437,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 81)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 81)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 81)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 81)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 83" Then
 
@@ -16840,6 +17586,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 82)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 82)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 82)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 82)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 84" Then
 
@@ -16981,6 +17735,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 83)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 83)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 83)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 83)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 85" Then
 
@@ -17122,6 +17884,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 84)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 84)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 84)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 84)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 86" Then
 
@@ -17263,6 +18033,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 85)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 85)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 85)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 85)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 87" Then
 
@@ -17404,6 +18182,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 86)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 86)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 86)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 86)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 88" Then
 
@@ -17545,6 +18331,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 87)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 87)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 87)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 87)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 89" Then
 
@@ -17686,6 +18480,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 88)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 88)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 88)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 88)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 90" Then
 
@@ -17827,6 +18629,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 89)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 89)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 89)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 89)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 91" Then
 
@@ -17968,6 +18778,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 90)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 90)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 90)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 90)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 92" Then
 
@@ -18109,6 +18927,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 91)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 91)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 91)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 91)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 93" Then
 
@@ -18250,6 +19076,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 92)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 92)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 92)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 92)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 94" Then
 
@@ -18391,6 +19225,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 93)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 93)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 93)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 93)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 95" Then
 
@@ -18532,6 +19374,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 94)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 94)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 94)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 94)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 96" Then
 
@@ -18673,6 +19523,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 95)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 95)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 95)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 95)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 97" Then
 
@@ -18814,6 +19672,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 96)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 96)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 96)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 96)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 98" Then
 
@@ -18955,6 +19821,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 97)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 97)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 97)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 97)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 99" Then
 
@@ -19096,6 +19970,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 98)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 98)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 98)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 98)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             If ComboBox1.Text = "Mii 100" Then
 
@@ -19237,6 +20119,14 @@ Public Class Form1
                     Reader.Position = &H1F24 + (&H660 * 99)
                     Pampered = Reader.Position
                     NumericUpDown44.Value = Reader.ReadUInt32
+                    Reader.Position = &H1C70 + (&H660 * 99)
+                    TLMii = Reader.Position
+                    TextBox7.Text = Reader.ReadHexString(&H660)
+                    Reader.Position = &H299F0 + (&H100 * 99)
+                    Miifr = Reader.Position
+                    Reader.Position = &H1D13 + (&H660 * 99)
+                    MiiHC = Reader.Position
+                    NumericUpDown58.Value = Reader.ReadByte
             End If
             End If
 
@@ -29419,6 +30309,7 @@ Public Class Form1
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         WriteFile1()
+        Writefriendlist()
     End Sub
     Private Sub WriteFile1()
         Try
@@ -29562,12 +30453,13 @@ Public Class Form1
             Writer.WriteUInt32(NumericUpDown45.Value)
             Writer.Position = Pampered
             Writer.WriteUInt32(NumericUpDown44.Value)
+            Writer.Close()
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "Save Mii changes" & vbNewLine & "Warning : Edit favorite foods values with wrong ID corrupts your save file "
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "DE" Then
-                fdialog.Label1.Text = "Änderungen MII speichern" & vbNewLine & "Warnung: Bearbeiten von Lieblingsfutterwerten mit falscher ID korrumpiert Ihre Sicherungsdatei"
+                fdialog.Label1.Text = "Änderungen Mii speichern" & vbNewLine & "Warnung: Bearbeiten von Lieblingsfutterwerten mit falscher ID korrumpiert Ihre Sicherungsdatei"
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "FR" Then
@@ -29593,6 +30485,50 @@ Public Class Form1
             End If
             If ComboBox11.Text = "PT" Then
                 fdialog.Label1.Text = "Um erro ocorreu"
+                fdialog.ShowDialog()
+            End If
+        End Try
+    End Sub
+    Private Sub Writefriendlist()
+        Try
+            Dim fs As New FileStream(filepath, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            fs.Position = Miifr1
+            fs.WriteByte(NumericUpDown59.Value)
+            fs.Position = Miifr2
+            fs.WriteByte(NumericUpDown60.Value)
+            fs.Position = Miifr3
+            fs.WriteByte(NumericUpDown61.Value)
+            fs.Position = Miifr4
+            fs.WriteByte(NumericUpDown62.Value)
+            fs.Position = Miifr5
+            fs.WriteByte(NumericUpDown63.Value)
+            fs.Position = Miifr6
+            fs.WriteByte(NumericUpDown64.Value)
+            fs.Position = Miifr7
+            fs.WriteByte(NumericUpDown65.Value)
+            fs.Position = Miifr8
+            fs.WriteByte(NumericUpDown66.Value)
+            fs.Position = Miifr9
+            fs.WriteByte(NumericUpDown67.Value)
+            fs.Position = Miifr10
+            fs.WriteByte(NumericUpDown68.Value)
+            fs.Close()
+            fs.Dispose()
+        Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue lors de l'enregistrement de la liste d'amis"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured when registering the friends list"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "ein Fehler ist aufgetreten bei der Registrierung der Freundesliste"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu ao registrar a lista de amigos"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -30442,10 +31378,6 @@ Public Class Form1
             PictureBox26.Image = My.Resources._1b00
         End If
 
-    End Sub
-
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        Form8.Show()
     End Sub
 
     Private Sub NumericUpDown20_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown20.ValueChanged
@@ -38259,6 +39191,33 @@ Public Class Form1
         If CheckBox36.Checked = False Then
             My.Computer.Audio.Stop()
         End If
+    End Sub
+    Private Sub Panel31_MouseMove(sender As Object, e As EventArgs) Handles Panel31.MouseMove
+        Panel31.BorderStyle = BorderStyle.None
+        If ComboBox11.Text = "EN" Then
+            Label17.Text = "Click to access Tomodachi Life Save Editor's settings"
+        End If
+        If ComboBox11.Text = "FR" Then
+            Label17.Text = "Cliquez pour accéder aux paramètres de Tomodachi Life Save Editor"
+        End If
+        If ComboBox11.Text = "DE" Then
+            Label17.Text = "Klicken Sie hier, um auf die Einstellungen von Tomodachi Life Save Editor zuzugre."
+        End If
+        If ComboBox11.Text = "PT" Then
+            Label17.Text = "Clique para acessar as configurações do Tomodachi Life Save Editor"
+        End If
+        Label17.Visible = True
+    End Sub
+
+    Private Sub Panel31_MouseLeave(sender As Object, e As EventArgs) Handles Panel31.MouseLeave
+        Panel31.BorderStyle = BorderStyle.FixedSingle
+        Label17.Visible = False
+    End Sub
+    Public Sub Write(
+    buffer As Byte(),
+    offset As Integer,
+    count As Integer
+)
     End Sub
 End Class
 

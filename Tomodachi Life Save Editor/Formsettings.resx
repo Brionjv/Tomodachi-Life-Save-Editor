@@ -145,17 +145,17 @@
   </data>
   <data name="Panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIAAAAAtCAIAAADp3vSsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAImSURBVHhe7ZtNTxNRGEafIlAbqaI/k4S4IIEgibohMQRQ
-        KVakfKaSRlvU6C8gkbAwkfixUDeSGA0KWhTozLDyuTPTQrqlM+/mSU6bO/febs6Zj00HwfrlmBf9wcur
-        watrJyIxqNdJpuqmdvhPLpGglg+eXXELMRyHPBfnpiWzpZeqa/nIPLzHWb+ScwfVPr+a95/2RQsiEaiX
-        kqma40qO8uGt9HjlrL92kfDYW+11M8vdovNQLPXyjI9sl7OcQWOhy1sK17hj8UKjlGnMo/FIJADFljKU
-        HMdY6qZ8HD3kQoYjBwdtvxEdh5JLsW3KR30Gh8Xmwtl9IjlC1dRO+di/h4PZ8Dpo2ySShMKpnfLxaxr1
-        QvMiEGnhTv+Ckx8GaN2FRFpE9x8FMEMBjFEAYxTAGAUwRgGMUQBjFMAYBTBGAYxRAGMUwBgFMEYBjFEA
-        YxTAGAUwRgGMUQBjFMAYBTBGAYxRAGMUwBgFMEYBjDkN8HMaf2bwr4jjufZNIiGomsKpnfKxO4Xf9/H3
-        gQKkB1VTOLVTPr5PuA71gvvDtBqkACVTNe8/1E752BnHtzvuQG8JpEP0ZgCFUzvl4/MtfLmNr+PYnYyf
-        xroOEoJio2cvVVM4tVM+3o9iexjvRvHpppv9wTvSlHs6790VnYRKKZZ6KZmqKZzaKR9vh7F1HZuD7vvN
-        ELZH8OEGPo6JzkOx1EvJLeGU7z6vB7ExINKG2l2AtlmRKgP4D4TctTfMemj3AAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAIAAAAAtCAIAAADp3vSsAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAiZJREFUeF7tm01PE1EYRp8iUBupoj+ThLgggSCJuiExBFApVqR8ppJGW9ToLyCR
+        sDCR+LFQN5IYDQpaFOjMsPK5M9NCuqUz7+ZJTps7995uzpmPTQfB+uWYF/3By6vBq2snIjGo10mm6qZ2
+        +E8ukaCWD55dcQsxHIc8F+emJbOll6pr+cg8vMdZv5JzB9U+v5r3n/ZFCyIRqJeSqZrjSo7y4a30eOWs
+        v3aR8Nhb7XUzy92i81As9fKMj2yXs5xBY6HLWwrXuGPxQqOUacyj8UgkAMWWMpQcx1jqpnwcPeRChiMH
+        B22/ER2HkkuxbcpHfQaHxebC2X0iOULV1E752L+Hg9nwOmjbJJKEwqmd8vFrGvVC8yIQaeFO/4KTHwZo
+        3YVEWkT3HwUwQwGMUQBjFMAYBTBGAYxRAGMUwBgFMEYBjFEAYxTAGAUwRgGMUQBjFMAYBTBGAYxRAGMU
+        wBgFMEYBjFEAYxTAGAUwRgGMOQ3wcxp/ZvCviOO59k0iIaiawqmd8rE7hd/38feBAqQHVVM4tVM+vk+4
+        DvWC+8O0GqQAJVM17z/UTvnYGce3O+5AbwmkQ/RmAIVTO+Xj8y18uY2v49idjJ/Gug4SgmKjZy9VUzi1
+        Uz7ej2J7GO9G8emmm/3BO9KUezrv3RWdhEoplnopmaopnNopH2+HsXUdm4Pu+80Qtkfw4QY+jonOQ7HU
+        S8kt4ZTvPq8HsTEg0obaXYC2WZEqA/gPhNy1N8x6aPcAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="TabPage2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -167,6 +167,153 @@
         cEXBsh2FJqmBKwq+mT22MmgdSY0TugoCJ3KBt8n9H+yyb+a1e1xg5xlwv6gaQ5oAuKkipsIAMtcAAAAA
         SUVORK5CYII=
 </value>
+  </data>
+  <data name="TabPage3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABZ0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMDvo9WkAAAC0SURBVEhL7ZU7CoRA
+        EEQ9jiZGm2g29z/GCoJg4Am0UOyg2AZLbVdQeKDMNI+mP5qN3Wf85gwOh3ScjL1GX1GoTF/79rbkaJW2
+        9O1NwdEqTfEve2xlTuhqFT2ReCBN1AGFBng5nvXKbA/jtXs8zs4TXHPAim5Xtk+0I03yGr92ULSjDiQ1
+        cEXBsh2FJqmBKwq+mT22MmgdSY0TugoCJ3KBt8n9H+yyb+a1e1xg5xlwv6gaQ5oAuKkipsIAMtcAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="Label3.Text" xml:space="preserve">
+    <value>Author : Brion
+
+Program programmation :
+xmojo20 (jeuxvideo.com)
+DaBlackDeath (gbatemp.net)
+
+Program tester : 
+Noahkiq (gbatemp.net)
+all users (gbatemp.net) who found errors
+
+Program features :
+haunty (gbatemp.net)
+acnleditor2 (Github)
+all users (gbatemp.net) who sent their save file
+all users (gbatemp.net) who gave idea for update 
+
+English language : 
+Brion
+colt05 (gbatemp.net)
+
+French language : 
+Brion
+
+German language :
+Craftwoelfin (gbatemp.net)
+
+Portuguese language :
+BlueSmoke
+
+Visual Basic 2010 - Visual Studio 2012</value>
+  </data>
+  <data name="Label5.Text" xml:space="preserve">
+    <value>Autor : Brion
+
+Programação :
+xmojo20 (jeuxvideo.com)
+DaBlackDeath (gbatemp.net)
+
+Testador de Software : 
+Noahkiq (gbatemp.net)
+Todos os usuários (gbatemp.net) que encontraram erros
+
+Recursos do Programa :
+haunty (gbatemp.net)
+acnleditor2 (Github)
+todos os usuários (gbatemp.net) que mandaram seus arquivos salvos
+todos os usuários (gbatemp.net) que deram ideias para updates
+
+Língua Inglesa : 
+Brion
+colt05 (gbatemp.net)
+
+Língua Francesa : 
+Brion
+
+Língua Alemã :
+Craftwoelfin (gbatemp.net)
+
+Língua Portuguesa :
+BlueSmoke
+
+Visual Basic 2010 - Visual Studio 2012</value>
+  </data>
+  <data name="Label6.Text" xml:space="preserve">
+    <value>Auteur : Brion
+
+Programmation du programme:
+xmojo20 (jeuxvideo.com)
+DaBlackDeath (gbatemp.net)
+
+Testeur du programme : 
+Noahkiq (gbatemp.net)
+tous les membres (gbatemp.net) qui ont trouvés des erreurs
+
+Fonctionnalités du programme :
+haunty (gbatemp.net)
+acnleditor2 (Github)
+tous les membres (gbatemp.net) qui ont envoyés leur sauvegarde
+tous les membres (gbatemp.net) qui ont donnés des idées de mise à jour
+
+Langue Anglais : 
+Brion
+colt05 (gbatemp.net)
+
+Langue Français : 
+Brion
+
+Langue Allemand :
+Craftwoelfin (gbatemp.net)
+
+Langue Portugais : 
+BlueSmoke
+
+Visual Basic 2010 - Visual Studio 2012</value>
+  </data>
+  <data name="Label7.Text" xml:space="preserve">
+    <value>Urheber : Brion
+
+Programmierung :
+xmojo20 (jeuxvideo.com)
+DaBlackDeath (gbatemp.net)
+
+Program tester : 
+Noahkiq (gbatemp.net)
+alle Benutzer (gbatemp.net), die Fehler fanden
+
+Programm Eigenschaften :
+haunty (gbatemp.net)
+acnleditor2 (Github)
+alle Benutzer, die ihren Speicherstand gesendet hatten
+alle Benutzer, die Ideen für das Update hatten
+
+Englische Sprache : 
+Brion
+colt05 (gbatemp.net)
+
+Französische Sprache : 
+Brion
+
+Deutsche Sprache :
+Craftwoelfin (gbatemp.net)
+
+Portugiesische Sprache :
+BlueSmoke
+
+Visual Basic 2010 - Visual Studio 2012</value>
+  </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>- Add Spanish and Portuguese language
+- Tomodachi Life Save Editor makes a backup of your last save file open
+- Extract your Mii to .tlmii file (EU : .eutlmii ; US : .ustlmii ; JP : .jptlmii ; KR : .krtlmii) [Miis can be restored in later versions]
+- Edit Mii hair color
+- Lock sweetheart feature (edit with an other feature - work better)
+- Edit Miis friends list relationship (break best friends / break sweetheart later)
+- Add settings (background music player, other things...)</value>
   </data>
   <data name="Label1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

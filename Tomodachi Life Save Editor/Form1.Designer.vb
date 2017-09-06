@@ -24,7 +24,6 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.PictureBox26 = New System.Windows.Forms.PictureBox()
         Me.CheckBox14 = New System.Windows.Forms.CheckBox()
         Me.PictureBox27 = New System.Windows.Forms.PictureBox()
@@ -535,19 +534,6 @@ Partial Class Form1
         Me.Button1.Text = "Open"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.LinkLabel1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.LinkLabel1.LinkColor = System.Drawing.SystemColors.ControlLightLight
-        Me.LinkLabel1.Location = New System.Drawing.Point(427, 374)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(39, 13)
-        Me.LinkLabel1.TabIndex = 27
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Credits"
-        '
         'PictureBox26
         '
         Me.PictureBox26.BackColor = System.Drawing.Color.White
@@ -890,9 +876,9 @@ Partial Class Form1
         '
         Me.Button12.BackColor = System.Drawing.SystemColors.Control
         Me.Button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button12.Location = New System.Drawing.Point(12, 185)
+        Me.Button12.Location = New System.Drawing.Point(2, 185)
         Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(75, 23)
+        Me.Button12.Size = New System.Drawing.Size(85, 23)
         Me.Button12.TabIndex = 7
         Me.Button12.Text = "Save as "
         Me.Button12.UseVisualStyleBackColor = False
@@ -3932,7 +3918,6 @@ Partial Class Form1
         Me.Controls.Add(Me.PictureBox36)
         Me.Controls.Add(Me.ComboBox11)
         Me.Controls.Add(Me.PictureBox31)
-        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.PictureBox30)
         Me.Controls.Add(Me.Button5)
@@ -4179,7 +4164,6 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
     Friend WithEvents PictureBox26 As System.Windows.Forms.PictureBox
     Friend WithEvents CheckBox14 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox27 As System.Windows.Forms.PictureBox
