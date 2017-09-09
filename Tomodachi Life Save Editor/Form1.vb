@@ -222,6 +222,7 @@ Public Class Form1
             Label43.Text = "Couleur cheveux"
             Button12.Text = "Enreg. sous"
             TabPage14.Text = "Liste d'amis"
+            Button13.Text = "Mettre tout à"
         End If
         If ComboBox11.Text = "EN" Then
             Button1.Text = "Open"
@@ -327,6 +328,7 @@ Public Class Form1
             Label43.Text = "Hair color"
             Button12.Text = "Save as"
             TabPage14.Text = "Friends list"
+            Button13.Text = "Set all to"
         End If
         If ComboBox11.Text = "DE" Then
             Button1.Text = "öffnen"
@@ -432,6 +434,7 @@ Public Class Form1
             Label43.Text = "Haarfarbe"
             Button12.Text = "speichern als"
             TabPage14.Text = "Freundesliste"
+            Button13.Text = "Alles auf"
         End If
         If ComboBox11.Text = "PT" Then
             Button1.Text = "Abrir"
@@ -536,7 +539,8 @@ Public Class Form1
             Label41.Text = "Ranking de Extravagância"
             Label43.Text = "cor de cabelo"
             Button12.Text = "salvar como"
-            TabPage14.Text = "lista de amigos"
+            TabPage14.Text = "Lista de amigos"
+            Button13.Text = "Aefinir tudo para"
         End If
         If ComboBox11.Text = "ES" Then
             Button1.Text = "Abrir"
@@ -611,37 +615,38 @@ Public Class Form1
             CheckBox16.Text = "Todos los Interiores desbloqueados"
             CheckBox7.Text = "Toda la Comida desbloqueada"
             CheckBox4.Text = "Toda la Ropa y colores desbloqueada"
-            CheckBox22.Text = "All Streetpass/Spotpass Clothing and colors deleted"
-            CheckBox21.Text = "All Streetpass/Spotpass Headgears deleted"
-            CheckBox23.Text = "All Special Foods deleted"
-            CheckBox24.Text = "All Headgears and colors deleted"
-            CheckBox25.Text = "All Interiors deleted"
-            CheckBox26.Text = "All Goods items deleted"
-            CheckBox27.Text = "All Treasures deleted"
-            CheckBox28.Text = "All Foods deleted"
-            CheckBox29.Text = "All Clothing and colors deleted"
-            CheckBox30.Text = "Reset Tomodachi Life StreetPass/SpotPass"
-            Label27.Location = New Point(362, 11)
-            Label33.Text = "Favorite color"
-            Label34.Text = "Grown-up/kid"
-            Label37.Text = "Relation to real You"
-            Label35.Text = "Sharing"
-            Label36.Text = "Copying"
-            Label30.Text = "Super All-Time Fav / All-Time Fav"
-            Label31.Text = "Favorite Foods"
-            Label32.Text = "Worst / Worst Ever"
-            Label29.Text = "Sweetheart"
-            Label28.Text = "Best friend"
-            CheckBox33.Text = "Break"
-            CheckBox34.Text = "Break"
-            ComboBox3.Items.Item(0) = "Grown-up"
-            ComboBox3.Items.Item(1) = "Grown-up (1)"
-            ComboBox3.Items.Item(2) = "Kid"
-            Label40.Text = "Pampered ranking"
-            Label41.Text = "Splurge ranking"
-            Label43.Text = "Hair color"
-            Button12.Text = "Save as"
-            TabPage14.Text = "Friends list"
+            CheckBox22.Text = "Toda la ropa y colores StreetPass/SpotPass borradas"
+            CheckBox21.Text = "Todos los sombreros StreetPass/SpotPass borradas"
+            CheckBox23.Text = "Todas las Especialidades borradas"
+            CheckBox24.Text = "Todos los Sombreros y colores borradas"
+            CheckBox25.Text = "Todos los Interiores  borradas"
+            CheckBox26.Text = "Todos los Objetos borradas"
+            CheckBox27.Text = "Todos los Tesoros borradas"
+            CheckBox28.Text = "Toda la Comida borradas"
+            CheckBox29.Text = "Toda la Ropa y colores borradas"
+            CheckBox30.Text = "Restablecer StreetPass/SpotPass de Tomodachi Life"
+            Label27.Location = New Point(400, 11)
+            Label33.Text = "Color favorito"
+            Label34.Text = "Adulto / Niño"
+            Label37.Text = "Relación con el yo real"
+            Label35.Text = "Compartir"
+            Label36.Text = "Copia"
+            Label30.Text = "Super todo / todo el tiempo Fav"
+            Label31.Text = "Comidas favoritas"
+            Label32.Text = "Peor / peor nunca"
+            Label29.Text = "Novio"
+            Label28.Text = "Mejor amiga"
+            CheckBox33.Text = "Descanso"
+            CheckBox34.Text = "Descanso"
+            ComboBox3.Items.Item(0) = "Adulto"
+            ComboBox3.Items.Item(1) = "Adulto (1)"
+            ComboBox3.Items.Item(2) = "Niño"
+            Label40.Text = "Clasi. prefiere"
+            Label41.Text = "Clasi. gastador"
+            Label43.Text = "Color de pelo"
+            Button12.Text = "Guardar como"
+            TabPage14.Text = "Lista de amigos"
+            Button13.Text = "establecer todo a"
         End If
     End Sub
 
@@ -664,6 +669,9 @@ Public Class Form1
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Clique para editar a pronunciação do nome da Ilha"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Click para editar la pronunciación del nombre de la isla"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -685,6 +693,9 @@ Public Class Form1
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Mudar a versão do arquivo"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Cambiar región de la partida"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -705,6 +716,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Mudar a língua do Editor de Arquivo do Tomodachi Life"
+        End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Cambiar el idioma de Tomodachi Life Save Editor"
         End If
         Label17.Visible = True
     End Sub
@@ -730,6 +744,9 @@ Public Class Form1
             Label17.Text = "Clique para editar o bordão do Mii"
             Label5.Text = "Bordão"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Click para editar la Muletilla del Mii"
+        End If
         Label17.Visible = True
         Label5.Visible = True
     End Sub
@@ -751,6 +768,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Clique para editar a pronunciação do nome do Mii"
+        End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Click para editar la pronunciación del Nombre del Mii"
         End If
         Label14.Text = Label18.Text
         Label17.Visible = True
@@ -775,6 +795,9 @@ Public Class Form1
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Clique para editar a pronunciação do sobrenome do Mii"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Click para editar la pronunciación del Apellido del Mii"
+        End If
         Label15.Text = Label19.Text
         Label17.Visible = True
         Label15.Visible = True
@@ -798,6 +821,9 @@ Public Class Form1
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Pronunciação do apelido não pode ser editado"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "La pronunciación del apodo no se puede editar"
+        End If
         Label17.Visible = True
         Label16.Visible = True
     End Sub
@@ -820,6 +846,9 @@ Public Class Form1
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Clique para editar os presentes do Mii"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Click para editar Objetos del Mii"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -839,6 +868,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Clique para editar a satisfação do Mii, se ele já comeu ou não"
+        End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Click para editar el estómago del Mii si ya ha comido"
         End If
         Label17.Visible = True
     End Sub
@@ -860,6 +892,9 @@ Public Class Form1
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Edite para mudar o número de itens a serem desbloqueados"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Editar para cambiar el número de objetos a desbloquear"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -879,6 +914,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Clique para editar o inventário do Mii"
+        End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Click para editar el inventario del Mii"
         End If
         Label17.Visible = True
     End Sub
@@ -900,6 +938,9 @@ Public Class Form1
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Cheque para que o Mii selecionado não tenha comido ainda"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Selecciona por que el Mii no coma"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -919,6 +960,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Como utilizar ''Remover Penalidade de Viagem no Tempo''"
+        End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Cómo usar '' Eliminar la pena de viaje en el tiempo ''"
         End If
         Label17.Visible = True
     End Sub
@@ -940,6 +984,9 @@ Public Class Form1
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Dinheiro do Mii"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "ahorros del mii"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -959,6 +1006,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Selecione para reparar o arquivo EU/JP/KR"
+        End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Selecciona para reparar partida EU/JP/KR"
         End If
         Label17.Visible = True
     End Sub
@@ -980,6 +1030,9 @@ Public Class Form1
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Selecione para reparar o arquivo US/JP/KR"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Selecciona para reparar partida US/JP/KR"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -999,6 +1052,9 @@ Public Class Form1
         End If
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Selecione para reparar o arquivo EU/US/KR"
+        End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Selecciona para reparar partida EU/US/KR"
         End If
         Label17.Visible = True
     End Sub
@@ -1020,6 +1076,9 @@ Public Class Form1
         If ComboBox11.Text = "PT" Then
             Label17.Text = "Como utilizar o ''Resetar o StreetPass/SpotPass de Tomodachi Life''"
         End If
+        If ComboBox11.Text = "ES" Then
+            Label17.Text = "Cómo utilizar '' Restablecer StreetPass / Spotpass de Tomodachi Life ''"
+        End If
         Label17.Visible = True
     End Sub
 
@@ -1030,19 +1089,23 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim open As New OpenFileDialog
         If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "Open savedataArc.txt" & vbNewLine & "Backup your save before using" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a copy of your save file" & vbNewLine & "Check ''bak'' folder"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "FR" Then
-            fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde" & vbNewLine & "Vérifiez le dossier''bak''"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "DE" Then
-            fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "sichere deinen Speicherstand bevor du ihn benutzt" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor wird eine Kopie deines Backups erstellen" & vbNewLine & "Überprüfe den Ordner '' bak ''"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "PT" Then
-            fdialog.Label1.Text = "Abrir savedataArc.txt" & vbNewLine & "Fazer backup do seu arquivo antes de usar o Editor de Arquivo do Tomodachi Life"
+            fdialog.Label1.Text = "Abrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor fará uma cópia do seu arquivo" & vbNewLine & "verifique a pasta '' bak ''"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "ES" Then
+            fdialog.Label1.Text = "Abierto savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor hará una copia de tu partida" & vbNewLine & "compruebe la carpeta '' bak ''"
             fdialog.ShowDialog()
         End If
         open.Title = "Open save savedataArc.txt"
@@ -1182,19 +1245,23 @@ Public Class Form1
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Dim open As New OpenFileDialog
         If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "Open savedataArc.txt" & vbNewLine & "Backup your save before use" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a copy of your save file" & vbNewLine & "Check ''bak'' folder"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "FR" Then
-            fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde" & vbNewLine & "Vérifiez le dossier''bak''"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "DE" Then
-            fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "sichere deinen Speicherstand bevor du ihn benutzt" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor wird eine Kopie deines Backups erstellen" & vbNewLine & "Überprüfe den Ordner '' bak ''"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "PT" Then
-            fdialog.Label1.Text = "Abrir savedataArc.txt" & vbNewLine & "Fazer backup do seu arquivo antes de usar o Editor de Arquivo do Tomodachi Life"
+            fdialog.Label1.Text = "Abrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor fará uma cópia do seu arquivo" & vbNewLine & "verifique a pasta '' bak ''"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "ES" Then
+            fdialog.Label1.Text = "Abierto savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor hará una copia de tu partida" & vbNewLine & "compruebe la carpeta '' bak ''"
             fdialog.ShowDialog()
         End If
         open.Title = "Open save savedataArc.txt"
@@ -1325,19 +1392,23 @@ Public Class Form1
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
         Dim open As New OpenFileDialog
         If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "Open savedataArc.txt" & vbNewLine & "Backup your save before use" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a copy of your save file" & vbNewLine & "Check ''bak'' folder"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "FR" Then
-            fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Faites une copie de votre sauvegarde avant d'utiliser" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde" & vbNewLine & "Vérifiez le dossier''bak''"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "DE" Then
-            fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "sichere deinen Speicherstand bevor du ihn benutzt" & vbNewLine & "Tomodachi Life Save Editor"
+            fdialog.Label1.Text = "öffne savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor wird eine Kopie deines Backups erstellen" & vbNewLine & "Überprüfe den Ordner '' bak ''"
             fdialog.ShowDialog()
         End If
         If ComboBox11.Text = "PT" Then
-            fdialog.Label1.Text = "Abrir savedataArc.txt" & vbNewLine & "Fazer backup do seu arquivo antes de usar o Editor de Arquivo do Tomodachi Life"
+            fdialog.Label1.Text = "Abrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor fará uma cópia do seu arquivo" & vbNewLine & "verifique a pasta '' bak ''"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "ES" Then
+            fdialog.Label1.Text = "Abierto savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor hará una copia de tu partida" & vbNewLine & "compruebe la carpeta '' bak ''"
             fdialog.ShowDialog()
         End If
         open.Title = "Open save savedataArc.txt"
@@ -5226,6 +5297,7 @@ Public Class Form1
             RadioButton2.Checked = False
             ComboBox6.Enabled = True
             ComboBox6.SelectedItem = Nothing
+            Button12.Enabled = True
             Dim Reader As New PackageIO.Reader(filepath, PackageIO.Endian.Little)
             If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Or ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Or ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
                 If ComboBox1.Text = "Mii 1" Then
@@ -30512,6 +30584,8 @@ Public Class Form1
             fs.WriteByte(NumericUpDown67.Value)
             fs.Position = Miifr10
             fs.WriteByte(NumericUpDown68.Value)
+            fs.Position = MiiHC
+            fs.WriteByte(NumericUpDown58.Value)
             fs.Close()
             fs.Dispose()
         Catch ex As Exception
@@ -38398,6 +38472,7 @@ Public Class Form1
                 If ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
                     Dim SaveFileDialog1 As New SaveFileDialog
                     SaveFileDialog1.Filter = "Tomodachi Life Mii (US)|*.ustlmii"
+                    SaveFileDialog1.FileName = TextBox5.Text
                     SaveFileDialog1.ShowDialog()
                     Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
                     Writer.Close()
@@ -38409,6 +38484,7 @@ Public Class Form1
                 If ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
                     Dim SaveFileDialog1 As New SaveFileDialog
                     SaveFileDialog1.Filter = "Tomodachi Life Mii (EU)|*.eutlmii"
+                    SaveFileDialog1.FileName = TextBox5.Text
                     SaveFileDialog1.ShowDialog()
                     Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
                     Writer.Close()
@@ -38420,6 +38496,7 @@ Public Class Form1
                 If ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
                     Dim SaveFileDialog1 As New SaveFileDialog
                     SaveFileDialog1.Filter = "Tomodachi Life Mii (JP)|*.jptlmii"
+                    SaveFileDialog1.FileName = TextBox5.Text
                     SaveFileDialog1.ShowDialog()
                     Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
                     Writer.Close()
@@ -38431,6 +38508,7 @@ Public Class Form1
                 If ComboBox5.SelectedItem = ComboBox5.Items.Item(0) Then
                     Dim SaveFileDialog1 As New SaveFileDialog
                     SaveFileDialog1.Filter = "Tomodachi Life Mii (KR)|*.krtlmii"
+                    SaveFileDialog1.FileName = TextBox5.Text
                     SaveFileDialog1.ShowDialog()
                     Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
                     Writer.Close()
@@ -38438,7 +38516,47 @@ Public Class Form1
                     Writer1.WriteHexString(TextBox7.Text)
                 End If
             End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "Your Mii has been successfully exported"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Votre Mii a été exporté avec succès"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Ihr Mii wurde erfolgreich exportiert"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Seu Mii foi exportado com sucesso"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "ES" Then
+                fdialog.Label1.Text = "Tu Mii se ha exportado con éxito"
+                fdialog.ShowDialog()
+            End If
         Catch ex As Exception
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Une erreur est survenue"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "An error has occured"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Ein Fehler ist aufgetreten"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "ES" Then
+                fdialog.Label1.Text = "Se ha producido un error"
+                fdialog.ShowDialog()
+            End If
         End Try
     End Sub
 
@@ -39171,6 +39289,7 @@ Public Class Form1
             NumericUpDown55.Visible = True
             NumericUpDown56.Visible = True
             NumericUpDown57.Visible = True
+            NumericUpDown58.Visible = True
         End If
         If CheckBox35.Checked = False Then
             Label42.Visible = False
@@ -39179,6 +39298,7 @@ Public Class Form1
             NumericUpDown55.Visible = False
             NumericUpDown56.Visible = False
             NumericUpDown57.Visible = False
+            NumericUpDown58.Visible = False
         End If
     End Sub
 
@@ -39213,11 +39333,18 @@ Public Class Form1
         Panel31.BorderStyle = BorderStyle.FixedSingle
         Label17.Visible = False
     End Sub
-    Public Sub Write(
-    buffer As Byte(),
-    offset As Integer,
-    count As Integer
-)
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        NumericUpDown59.Value = NumericUpDown69.Value
+        NumericUpDown60.Value = NumericUpDown69.Value
+        NumericUpDown61.Value = NumericUpDown69.Value
+        NumericUpDown62.Value = NumericUpDown69.Value
+        NumericUpDown63.Value = NumericUpDown69.Value
+        NumericUpDown64.Value = NumericUpDown69.Value
+        NumericUpDown65.Value = NumericUpDown69.Value
+        NumericUpDown66.Value = NumericUpDown69.Value
+        NumericUpDown67.Value = NumericUpDown69.Value
+        NumericUpDown68.Value = NumericUpDown69.Value
     End Sub
 End Class
 
