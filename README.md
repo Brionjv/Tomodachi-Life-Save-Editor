@@ -1,6 +1,6 @@
 # Tomodachi-Life-Save-Editor
 
-![Tomodachi Llife SE main](https://i37.servimg.com/u/f37/19/11/94/79/tomoda10.png)
+![Tomodachi Llife SE main](https://i11.servimg.com/u/f11/19/11/94/79/tl_sav10.png)
 
 # How to use : 
 - Extract your save with a homebrew (JK's Save Manager or other)
