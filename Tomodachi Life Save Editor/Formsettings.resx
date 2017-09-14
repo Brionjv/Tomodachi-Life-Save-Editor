@@ -168,6 +168,15 @@
         SUVORK5CYII=
 </value>
   </data>
+  <data name="Label2.Text" xml:space="preserve">
+    <value>- Add Spanish and Portuguese language
+- Tomodachi Life Save Editor makes a backup of your last save file open
+- Extract your Mii to .tlmii file (EU : .eutlmii ; US : .ustlmii ; JP : .jptlmii ; KR : .krtlmii) [Miis can be restored in later versions]
+- Edit Mii hair color
+- Lock sweetheart feature (edit with an other feature - work better)
+- Edit Miis friends list relationship (break best friends / break sweetheart later)
+- Add settings (background music player, other things...)</value>
+  </data>
   <data name="TabPage3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -177,6 +186,42 @@
         cEXBsh2FJqmBKwq+mT22MmgdSY0TugoCJ3KBt8n9H+yyb+a1e1xg5xlwv6gaQ5oAuKkipsIAMtcAAAAA
         SUVORK5CYII=
 </value>
+  </data>
+  <data name="Label8.Text" xml:space="preserve">
+    <value>Autor : Brion
+
+Programación :
+xmojo20 (jeuxvideo.com)
+DaBlackDeath (gbatemp.net)
+
+Testers : 
+Noahkiq (gbatemp.net)
+todos los usuarios (gbatemp.net) que encontraron errores
+
+Características del programa :
+haunty (gbatemp.net)
+valentinvanelslande (gbatemp.net/Github)
+todos los usuarios (gbatemp.net) que enviaron su partida
+todos los usuarios (gbatemp.net) que dieron idea para la actualización
+
+Idioma Inglés : 
+Brion
+colt05 (gbatemp.net/Github)
+
+Idioma Francés : 
+Brion
+
+Idioma Alemán :
+Craftwoelfin (gbatemp.net)
+
+Idioma Portugués :
+BlueSmoke
+
+Idioma Español :
+valentinvanelslande (gbatemp.net/Github)
+
+
+Visual Basic 2010 - Visual Studio 2012</value>
   </data>
   <data name="Label3.Text" xml:space="preserve">
     <value>Author : Brion
@@ -191,13 +236,13 @@ all users (gbatemp.net) who found errors
 
 Program features :
 haunty (gbatemp.net)
-acnleditor2 (Github)
+valentinvanelslande (gbatemp.net/Github)
 all users (gbatemp.net) who sent their save file
 all users (gbatemp.net) who gave idea for update 
 
 English language : 
 Brion
-colt05 (gbatemp.net)
+colt05 (gbatemp.net/Github)
 
 French language : 
 Brion
@@ -207,6 +252,10 @@ Craftwoelfin (gbatemp.net)
 
 Portuguese language :
 BlueSmoke
+
+Spanish language :
+valentinvanelslande (gbatemp.net/Github)
+
 
 Visual Basic 2010 - Visual Studio 2012</value>
   </data>
@@ -223,13 +272,13 @@ alle Benutzer (gbatemp.net), die Fehler fanden
 
 Programm Eigenschaften :
 haunty (gbatemp.net)
-acnleditor2 (Github)
+valentinvanelslande (gbatemp.net/Github)
 alle Benutzer, die ihren Speicherstand gesendet hatten
 alle Benutzer, die Ideen für das Update hatten
 
 Englische Sprache : 
 Brion
-colt05 (gbatemp.net)
+colt05 (gbatemp.net/Github)
 
 Französische Sprache : 
 Brion
@@ -239,6 +288,10 @@ Craftwoelfin (gbatemp.net)
 
 Portugiesische Sprache :
 BlueSmoke
+
+Spanisch Sprache :
+valentinvanelslande (gbatemp.net/Github)
+
 
 Visual Basic 2010 - Visual Studio 2012</value>
   </data>
@@ -255,13 +308,13 @@ tous les membres (gbatemp.net) qui ont trouvés des erreurs
 
 Fonctionnalités du programme :
 haunty (gbatemp.net)
-acnleditor2 (Github)
+valentinvanelslande (gbatemp.net/Github)
 tous les membres (gbatemp.net) qui ont envoyés leur sauvegarde
 tous les membres (gbatemp.net) qui ont donnés des idées de mise à jour
 
 Langue Anglais : 
 Brion
-colt05 (gbatemp.net)
+colt05 (gbatemp.net/Github)
 
 Langue Français : 
 Brion
@@ -271,6 +324,10 @@ Craftwoelfin (gbatemp.net)
 
 Langue Portugais : 
 BlueSmoke
+
+Langue Espagnol :
+valentinvanelslande (gbatemp.net/Github)
+
 
 Visual Basic 2010 - Visual Studio 2012</value>
   </data>
@@ -287,13 +344,13 @@ Todos os usuários (gbatemp.net) que encontraram erros
 
 Recursos do Programa :
 haunty (gbatemp.net)
-acnleditor2 (Github)
+valentinvanelslande (gbatemp.net/Github)
 todos os usuários (gbatemp.net) que mandaram seus arquivos salvos
 todos os usuários (gbatemp.net) que deram ideias para updates
 
 Língua Inglesa : 
 Brion
-colt05 (gbatemp.net)
+colt05 (gbatemp.net/Github)
 
 Língua Francesa : 
 Brion
@@ -304,16 +361,11 @@ Craftwoelfin (gbatemp.net)
 Língua Portuguesa :
 BlueSmoke
 
+Língua Espanhol :
+valentinvanelslande (gbatemp.net/Github)
+
+
 Visual Basic 2010 - Visual Studio 2012</value>
-  </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>- Add Spanish and Portuguese language
-- Tomodachi Life Save Editor makes a backup of your last save file open
-- Extract your Mii to .tlmii file (EU : .eutlmii ; US : .ustlmii ; JP : .jptlmii ; KR : .krtlmii) [Miis can be restored in later versions]
-- Edit Mii hair color
-- Lock sweetheart feature (edit with an other feature - work better)
-- Edit Miis friends list relationship (break best friends / break sweetheart later)
-- Add settings (background music player, other things...)</value>
   </data>
   <data name="Label1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

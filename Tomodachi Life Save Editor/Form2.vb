@@ -35,5 +35,9 @@
             Label1.Text = "Fechar"
             Label1.Location = New Point(109, 60)
         End If
+        If Form1.ComboBox11.Text = "ES" Then
+            Label1.Text = "Hecho"
+            Label1.Location = New Point(109, 60)
+        End If
     End Sub
 End Class

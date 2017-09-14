@@ -36,14 +36,15 @@ Partial Class Formsettings
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -51,8 +52,8 @@ Partial Class Formsettings
         Me.Panel1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -197,38 +198,30 @@ Partial Class Formsettings
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Credits"
         '
+        'Panel3
+        '
+        Me.Panel3.AutoScroll = True
+        Me.Panel3.BackColor = System.Drawing.Color.Transparent
+        Me.Panel3.Controls.Add(Me.Label8)
+        Me.Panel3.Controls.Add(Me.Label3)
+        Me.Panel3.Controls.Add(Me.Label7)
+        Me.Panel3.Controls.Add(Me.Label6)
+        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Location = New System.Drawing.Point(2, 2)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(326, 255)
+        Me.Panel3.TabIndex = 8
+        '
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label3.Location = New System.Drawing.Point(5, 6)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(299, 437)
+        Me.Label3.Size = New System.Drawing.Size(299, 479)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = resources.GetString("Label3.Text")
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label5
-        '
-        Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label5.Location = New System.Drawing.Point(5, 6)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(299, 437)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = resources.GetString("Label5.Text")
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label6
-        '
-        Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label6.Location = New System.Drawing.Point(5, 6)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(299, 437)
-        Me.Label6.TabIndex = 6
-        Me.Label6.Text = resources.GetString("Label6.Text")
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label7
         '
@@ -236,10 +229,32 @@ Partial Class Formsettings
         Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Label7.Location = New System.Drawing.Point(5, 6)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(299, 437)
+        Me.Label7.Size = New System.Drawing.Size(299, 479)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = resources.GetString("Label7.Text")
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label6
+        '
+        Me.Label6.BackColor = System.Drawing.Color.Transparent
+        Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label6.Location = New System.Drawing.Point(5, 6)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(299, 479)
+        Me.Label6.TabIndex = 6
+        Me.Label6.Text = resources.GetString("Label6.Text")
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Label5
+        '
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label5.Location = New System.Drawing.Point(5, 6)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(299, 479)
+        Me.Label5.TabIndex = 4
+        Me.Label5.Text = resources.GetString("Label5.Text")
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label1
         '
@@ -278,18 +293,16 @@ Partial Class Formsettings
         Me.Label4.Text = "Version 2.1.2"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Panel3
+        'Label8
         '
-        Me.Panel3.AutoScroll = True
-        Me.Panel3.BackColor = System.Drawing.Color.Transparent
-        Me.Panel3.Controls.Add(Me.Label3)
-        Me.Panel3.Controls.Add(Me.Label7)
-        Me.Panel3.Controls.Add(Me.Label6)
-        Me.Panel3.Controls.Add(Me.Label5)
-        Me.Panel3.Location = New System.Drawing.Point(2, 2)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(326, 255)
-        Me.Panel3.TabIndex = 8
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label8.Location = New System.Drawing.Point(5, 6)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(299, 479)
+        Me.Label8.TabIndex = 8
+        Me.Label8.Text = resources.GetString("Label8.Text")
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Formsettings
         '
@@ -316,8 +329,8 @@ Partial Class Formsettings
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -343,4 +356,5 @@ Partial Class Formsettings
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
+    Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class

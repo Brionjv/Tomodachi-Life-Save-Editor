@@ -15,6 +15,7 @@
             Label6.Visible = True
             Label5.Visible = False
             Label3.Visible = False
+            Label8.Visible = False
         End If
         If Form1.ComboBox11.Text = "EN" Then
             Label1.Text = "Close"
@@ -28,6 +29,7 @@
             Label6.Visible = False
             Label5.Visible = False
             Label3.Visible = True
+            Label8.Visible = False
         End If
         If Form1.ComboBox11.Text = "DE" Then
             Label1.Text = "schließen"
@@ -41,6 +43,7 @@
             Label6.Visible = False
             Label5.Visible = False
             Label3.Visible = False
+            Label8.Visible = False
         End If
         If Form1.ComboBox11.Text = "ES" Then
             Label1.Text = "Cerrar"
@@ -54,6 +57,7 @@
             Label6.Visible = False
             Label5.Visible = False
             Label3.Visible = False
+            Label8.Visible = True
         End If
         If Form1.ComboBox11.Text = "PT" Then
             Label1.Text = "Fechar"
@@ -67,6 +71,7 @@
             Label6.Visible = False
             Label5.Visible = True
             Label3.Visible = False
+            Label8.Visible = False
         End If
     End Sub
 

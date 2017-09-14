@@ -58,6 +58,19 @@
             RadioButton9.Text = "Tudo"
             RadioButton8.Text = "Nenhum"
         End If
+        If Form1.ComboBox11.Text = "ES" Then
+            RadioButton1.Text = "Todos"
+            RadioButton2.Text = "No"
+            RadioButton3.Text = "No"
+            RadioButton4.Text = "Todos"
+            GroupBox1.Text = "interiores"
+            GroupBox2.Text = "Especialidades"
+            Label1.Text = "Cerrar"
+            Label1.Location = New Point(170, 276)
+            GroupBox3.Text = "Objetos"
+            RadioButton9.Text = "Todos"
+            RadioButton8.Text = "No"
+        End If
         If Form1.Label7.Text = "All" Then
             RadioButton1.Checked = True
         End If

@@ -30,6 +30,14 @@ Public Class Form12
                 fdialog.Label1.Text = "Datei speichern"
                 fdialog.ShowDialog()
             End If
+            If Form1.ComboBox11.Text = "ES" Then
+                fdialog.Label1.Text = "Archivo guardado"
+                fdialog.ShowDialog()
+            End If
+            If Form1.ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Arquivo Salvo"
+                fdialog.ShowDialog()
+            End If
         Catch ex As Exception
             If Form1.ComboBox11.Text = "FR" Then
                 fdialog.Label1.Text = "Une erreur est survenue"
@@ -41,6 +49,14 @@ Public Class Form12
             End If
             If Form1.ComboBox11.Text = "DE" Then
                 fdialog.Label1.Text = "ein Fehler ist aufgetreten"
+                fdialog.ShowDialog()
+            End If
+            If Form1.ComboBox11.Text = "ES" Then
+                fdialog.Label1.Text = "Ha ocurrido un error"
+                fdialog.ShowDialog()
+            End If
+            If Form1.ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Um erro ocorreu"
                 fdialog.ShowDialog()
             End If
         End Try
@@ -80,6 +96,14 @@ Public Class Form12
             Label5.Text = "Gratitude"
             Button1.Text = "Salvar"
             Button2.Text = "Fechar"
+        ElseIf Form1.ComboBox11.Text = "ES" Then
+            Label1.Text = "Niv."
+            Label2.Text = "Región"
+            Label3.Text = "Isla de origen"
+            Label4.Text = "Relajación"
+            Label5.Text = "Agradecimiento"
+            Button1.Text = "Guardar"
+            Button2.Text = "Cerrar"
         End If
 
         filepath = Form1.Label39.Text
