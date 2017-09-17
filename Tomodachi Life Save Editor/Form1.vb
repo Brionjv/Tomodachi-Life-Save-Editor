@@ -38932,7 +38932,7 @@ Public Class Form1
                 fdialog.Label1.Text = "No hay conexión a Internet, el uso de archivos en caché"
                 fdialog.ShowDialog()
             End If
-            If My.Computer.FileSystem.FileExists("f25VytjW.txt") = False Then
+            If My.Computer.FileSystem.FileExists("eur_fr_ids.txt") = False Then
                 If ComboBox11.Text = "FR" Then
                     fdialog.Label1.Text = "Aucune liste mise en cache n'a été trouvée"
                     fdialog.ShowDialog()
@@ -38954,15 +38954,15 @@ Public Class Form1
                     fdialog.ShowDialog()
                 End If
             Else
-                Process.Start("f25VytjW.txt")
+                Process.Start("eur_fr_ids.txt")
             End If
         Else
-            If My.Computer.FileSystem.FileExists("f25VytjW.txt") = True Then
-                My.Computer.FileSystem.DeleteFile("f25VytjW.txt")
+            If My.Computer.FileSystem.FileExists("eur_fr_ids.txt") = True Then
+                My.Computer.FileSystem.DeleteFile("eur_fr_ids.txt")
             End If
 
-            My.Computer.Network.DownloadFile("https://pastebin.com/raw/f25VytjW", "f25VytjW.txt")
-            Process.Start("f25VytjW.txt")
+            My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/eur_fr_ids.txt", "eur_fr_ids.txt")
+            Process.Start("eur_fr_ids.txt")
         End If
     End Sub
 
@@ -38988,7 +38988,7 @@ Public Class Form1
                 fdialog.Label1.Text = "No hay conexión a Internet, el uso de archivos en caché"
                 fdialog.ShowDialog()
             End If
-            If My.Computer.FileSystem.FileExists("krSz0U4p.txt") = False Then
+            If My.Computer.FileSystem.FileExists("all_en_ids.txt") = False Then
                 If ComboBox11.Text = "FR" Then
                     fdialog.Label1.Text = "Aucune liste mise en cache n'a été trouvée"
                     fdialog.ShowDialog()
@@ -39010,16 +39010,16 @@ Public Class Form1
                     fdialog.ShowDialog()
                 End If
             Else
-                Process.Start("krSz0U4p.txt")
+                Process.Start("all_en_ids.txt")
             End If
 
         Else
-            If My.Computer.FileSystem.FileExists("krSz0U4p.txt") = True Then
-                My.Computer.FileSystem.DeleteFile("krSz0U4p.txt")
+            If My.Computer.FileSystem.FileExists("all_en_ids.txt") = True Then
+                My.Computer.FileSystem.DeleteFile("all_en_ids.txt")
             End If
 
-            My.Computer.Network.DownloadFile("https://pastebin.com/raw/krSz0U4p", "krSz0U4p.txt")
-            Process.Start("krSz0U4p.txt")
+            My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/all_en_ids.txt", "all_en_ids.txt")
+            Process.Start("all_en_ids.txt")
         End If
     End Sub
 
