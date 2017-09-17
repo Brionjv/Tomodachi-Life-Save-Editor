@@ -631,22 +631,22 @@ Public Class Form1
             Label37.Text = "Relación con el yo real"
             Label35.Text = "Compartir"
             Label36.Text = "Copia"
-            Label30.Text = "Super todo / todo el tiempo Fav"
-            Label31.Text = "Comidas favoritas"
-            Label32.Text = "Peor / peor nunca"
-            Label29.Text = "Novio"
-            Label28.Text = "Mejor amiga"
+            Label30.Text = "Megafavorito y superfavorito"
+            Label31.Text = "Favoritos"
+            Label32.Text = "Odiado y superodiado"
+            Label29.Text = "Novio/a"
+            Label28.Text = "Mejor amigo/a"
             CheckBox33.Text = "Descanso"
             CheckBox34.Text = "Descanso"
             ComboBox3.Items.Item(0) = "Adulto"
             ComboBox3.Items.Item(1) = "Adulto (1)"
             ComboBox3.Items.Item(2) = "Niño"
-            Label40.Text = "Clasi. prefiere"
-            Label41.Text = "Clasi. gastador"
+            Label40.Text = "Mii preferidos"
+            Label41.Text = "Mii más mimados"
             Label43.Text = "Color de pelo"
             Button12.Text = "Guardar como"
             TabPage14.Text = "Lista de amigos"
-            Button13.Text = "establecer todo a"
+            Button13.Text = "Establecer todo a"
         End If
     End Sub
 
@@ -1653,7 +1653,7 @@ Public Class Form1
                 fdialog.ShowDialog()
             End If
             If ComboBox11.Text = "ES" Then
-                fdialog.Label1.Text = "Archivo grabado"
+                fdialog.Label1.Text = "Archivo guardado"
                 fdialog.ShowDialog()
             End If
         Catch ex As Exception
