@@ -39192,6 +39192,16 @@ Public Class Form1
                     Writer1.WriteHexString(TextBox7.Text)
                 End If
             End If
+            If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+                Dim SaveFileDialog1 As New SaveFileDialog
+                SaveFileDialog1.Filter = "Mii|*.mii"
+                SaveFileDialog1.FileName = TextBox5.Text
+                SaveFileDialog1.ShowDialog()
+                Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                Writer.Close()
+                Dim Writer1 As New PackageIO.Writer(SaveFileDialog1.FileName)
+                Writer1.WriteHexString(TextBox7.Text, &H5C)
+            End If
             If ComboBox11.Text = "EN" Then
                 fdialog.Label1.Text = "Your Mii has been successfully exported"
                 fdialog.ShowDialog()

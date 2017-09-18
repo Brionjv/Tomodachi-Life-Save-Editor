@@ -6,7 +6,7 @@
         If Form1.ComboBox11.Text = "FR" Then
             Label1.Text = "Fermer"
             Label1.Location = New Point(151, 381)
-            Label4.Text = "Version 2.1.2"
+            Label4.Text = "Version 2.1.3"
             TabPage1.Text = "Paramètres"
             TabPage2.Text = "Changelog"
             CheckBox1.Text = "Voir les choses cachées"
@@ -20,7 +20,7 @@
         If Form1.ComboBox11.Text = "EN" Then
             Label1.Text = "Close"
             Label1.Location = New Point(152, 381)
-            Label4.Text = "Version 2.1.2"
+            Label4.Text = "Version 2.1.3"
             TabPage1.Text = "Settings"
             TabPage2.Text = "Changelog"
             CheckBox1.Text = "See hidden things"
@@ -34,7 +34,7 @@
         If Form1.ComboBox11.Text = "DE" Then
             Label1.Text = "schließen"
             Label1.Location = New Point(147, 381)
-            Label4.Text = "Version 2.1.2"
+            Label4.Text = "Version 2.1.3"
             TabPage1.Text = "Einstellungen"
             TabPage2.Text = "Änderungsprotokoll"
             CheckBox1.Text = "Siehe versteckte Dinge"
@@ -48,7 +48,7 @@
         If Form1.ComboBox11.Text = "ES" Then
             Label1.Text = "Cerrar"
             Label1.Location = New Point(152, 381)
-            Label4.Text = "Versión 2.1.2"
+            Label4.Text = "Versión 2.1.3"
             TabPage1.Text = "Ajustes"
             TabPage2.Text = "Changelog"
             CheckBox1.Text = "Ver cosas ocultas"
@@ -62,7 +62,7 @@
         If Form1.ComboBox11.Text = "PT" Then
             Label1.Text = "Fechar"
             Label1.Location = New Point(150, 381)
-            Label4.Text = "Versão 2.1.2"
+            Label4.Text = "Versão 2.1.3"
             TabPage1.Text = "Configurações"
             TabPage2.Text = "Changelog"
             CheckBox1.Text = "Veja coisas escondidas"

@@ -37,6 +37,7 @@ Partial Class Formsettings
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -44,7 +45,6 @@ Partial Class Formsettings
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -212,6 +212,17 @@ Partial Class Formsettings
         Me.Panel3.Size = New System.Drawing.Size(326, 255)
         Me.Panel3.TabIndex = 8
         '
+        'Label8
+        '
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label8.Location = New System.Drawing.Point(5, 6)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(299, 479)
+        Me.Label8.TabIndex = 8
+        Me.Label8.Text = resources.GetString("Label8.Text")
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.Transparent
@@ -290,19 +301,8 @@ Partial Class Formsettings
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(338, 13)
         Me.Label4.TabIndex = 29
-        Me.Label4.Text = "Version 2.1.2"
+        Me.Label4.Text = "Version 2.1.3"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label8
-        '
-        Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Label8.Location = New System.Drawing.Point(5, 6)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(299, 479)
-        Me.Label8.TabIndex = 8
-        Me.Label8.Text = resources.GetString("Label8.Text")
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Formsettings
         '

@@ -237,6 +237,8 @@ Partial Class Form1
         Me.Label40 = New System.Windows.Forms.Label()
         Me.PictureBox61 = New System.Windows.Forms.PictureBox()
         Me.TabPage14 = New System.Windows.Forms.TabPage()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.NumericUpDown69 = New System.Windows.Forms.NumericUpDown()
         Me.ComboBox6 = New System.Windows.Forms.ComboBox()
         Me.Label53 = New System.Windows.Forms.Label()
         Me.Label52 = New System.Windows.Forms.Label()
@@ -331,8 +333,6 @@ Partial Class Form1
         Me.Panel31 = New System.Windows.Forms.Panel()
         Me.CheckBox35 = New System.Windows.Forms.CheckBox()
         Me.CheckBox36 = New System.Windows.Forms.CheckBox()
-        Me.NumericUpDown69 = New System.Windows.Forms.NumericUpDown()
-        Me.Button13 = New System.Windows.Forms.Button()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -457,6 +457,7 @@ Partial Class Form1
         CType(Me.NumericUpDown44, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage14.SuspendLayout()
+        CType(Me.NumericUpDown69, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown68, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown67, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown66, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -523,7 +524,6 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown69, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -2946,6 +2946,26 @@ Partial Class Form1
         Me.TabPage14.TabIndex = 4
         Me.TabPage14.Text = "Friends list"
         '
+        'Button13
+        '
+        Me.Button13.BackColor = System.Drawing.SystemColors.Control
+        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button13.Location = New System.Drawing.Point(2, 181)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(100, 23)
+        Me.Button13.TabIndex = 32
+        Me.Button13.Text = "Set all to"
+        Me.Button13.UseVisualStyleBackColor = False
+        '
+        'NumericUpDown69
+        '
+        Me.NumericUpDown69.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown69.Location = New System.Drawing.Point(108, 184)
+        Me.NumericUpDown69.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.NumericUpDown69.Name = "NumericUpDown69"
+        Me.NumericUpDown69.Size = New System.Drawing.Size(43, 16)
+        Me.NumericUpDown69.TabIndex = 31
+        '
         'ComboBox6
         '
         Me.ComboBox6.BackColor = System.Drawing.Color.White
@@ -3162,7 +3182,7 @@ Partial Class Form1
         Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"Tomodachi Life Mii", "StreetPass Traveler", "External Mii"})
+        Me.ComboBox5.Items.AddRange(New Object() {"Tomodachi Life Mii", "Mii"})
         Me.ComboBox5.Location = New System.Drawing.Point(93, 186)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(154, 21)
@@ -3919,26 +3939,6 @@ Partial Class Form1
         Me.CheckBox36.UseVisualStyleBackColor = True
         Me.CheckBox36.Visible = False
         '
-        'NumericUpDown69
-        '
-        Me.NumericUpDown69.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown69.Location = New System.Drawing.Point(108, 184)
-        Me.NumericUpDown69.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown69.Name = "NumericUpDown69"
-        Me.NumericUpDown69.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown69.TabIndex = 31
-        '
-        'Button13
-        '
-        Me.Button13.BackColor = System.Drawing.SystemColors.Control
-        Me.Button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button13.Location = New System.Drawing.Point(2, 181)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(100, 23)
-        Me.Button13.TabIndex = 32
-        Me.Button13.Text = "Set all to"
-        Me.Button13.UseVisualStyleBackColor = False
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -4129,6 +4129,7 @@ Partial Class Form1
         CType(Me.NumericUpDown44, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage14.ResumeLayout(False)
+        CType(Me.NumericUpDown69, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown68, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown67, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown66, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4196,7 +4197,6 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown69, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
