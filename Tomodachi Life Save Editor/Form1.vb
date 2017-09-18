@@ -1,5 +1,6 @@
 ﻿Imports PackageIO
 Imports System.IO
+Imports System.IO.Compression
 
 Public Class Form1
     Dim filepath As String
