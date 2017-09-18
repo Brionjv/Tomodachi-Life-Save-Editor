@@ -38911,116 +38911,13 @@ Public Class Form1
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-        If My.Computer.Network.IsAvailable = False Then
-            If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "Aucune connexion internet, utilisation du fichier mis en cache"
-                fdialog.ShowDialog()
-            End If
-            If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "No internet connection, using cached file"
-                fdialog.ShowDialog()
-            End If
-            If ComboBox11.Text = "DE" Then
-                fdialog.Label1.Text = "Keine Internetverbindung, mit Cache-Datei"
-                fdialog.ShowDialog()
-            End If
-            If ComboBox11.Text = "PT" Then
-                fdialog.Label1.Text = "Sem conexão com a internet, utilizando arquivo em cache"
-                fdialog.ShowDialog()
-            End If
-            If ComboBox11.Text = "ES" Then
-                fdialog.Label1.Text = "No hay conexión a Internet, el uso de archivos en caché"
-                fdialog.ShowDialog()
-            End If
-            If My.Computer.FileSystem.FileExists("eur_fr_ids.txt") = False Then
-                If ComboBox11.Text = "FR" Then
-                    fdialog.Label1.Text = "Aucune liste mise en cache n'a été trouvée"
-                    fdialog.ShowDialog()
-                End If
-                If ComboBox11.Text = "EN" Then
-                    fdialog.Label1.Text = "No cached list found"
-                    fdialog.ShowDialog()
-                End If
-                If ComboBox11.Text = "DE" Then
-                    fdialog.Label1.Text = "Keine Cache-Liste gefunden"
-                    fdialog.ShowDialog()
-                End If
-                If ComboBox11.Text = "PT" Then
-                    fdialog.Label1.Text = "Nenhuma lista em cache achada"
-                    fdialog.ShowDialog()
-                End If
-                If ComboBox11.Text = "ES" Then
-                    fdialog.Label1.Text = "No se encontró ninguna lista en caché"
-                    fdialog.ShowDialog()
-                End If
-            Else
-                Process.Start("eur_fr_ids.txt")
-            End If
-        Else
-            If My.Computer.FileSystem.FileExists("eur_fr_ids.txt") = True Then
-                My.Computer.FileSystem.DeleteFile("eur_fr_ids.txt")
-            End If
-
-            My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/eur_fr_ids.txt", "eur_fr_ids.txt")
-            Process.Start("eur_fr_ids.txt")
-        End If
+        Form8.TextBox1.Text = File.ReadAllText("all_fr_ids.txt")
+        Form8.Show()
     End Sub
 
     Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-        If My.Computer.Network.IsAvailable = False Then
-            If ComboBox11.Text = "FR" Then
-                fdialog.Label1.Text = "Aucune connexion internet, utilisation du fichier mis en cache"
-                fdialog.ShowDialog()
-            End If
-            If ComboBox11.Text = "EN" Then
-                fdialog.Label1.Text = "No internet connection, using cached file"
-                fdialog.ShowDialog()
-            End If
-            If ComboBox11.Text = "DE" Then
-                fdialog.Label1.Text = "Keine Internetverbindung, mit Cache-Datei"
-                fdialog.ShowDialog()
-            End If
-            If ComboBox11.Text = "PT" Then
-                fdialog.Label1.Text = "Sem conexão com a internet, utilizando arquivo em cache"
-                fdialog.ShowDialog()
-            End If
-            If ComboBox11.Text = "ES" Then
-                fdialog.Label1.Text = "No hay conexión a Internet, el uso de archivos en caché"
-                fdialog.ShowDialog()
-            End If
-            If My.Computer.FileSystem.FileExists("all_en_ids.txt") = False Then
-                If ComboBox11.Text = "FR" Then
-                    fdialog.Label1.Text = "Aucune liste mise en cache n'a été trouvée"
-                    fdialog.ShowDialog()
-                End If
-                If ComboBox11.Text = "EN" Then
-                    fdialog.Label1.Text = "No cached list found"
-                    fdialog.ShowDialog()
-                End If
-                If ComboBox11.Text = "DE" Then
-                    fdialog.Label1.Text = "Keine Cache-Liste gefunden"
-                    fdialog.ShowDialog()
-                End If
-                If ComboBox11.Text = "PT" Then
-                    fdialog.Label1.Text = "Nenhuma lista em cache achada"
-                    fdialog.ShowDialog()
-                End If
-                If ComboBox11.Text = "ES" Then
-                    fdialog.Label1.Text = "No se encontró ninguna lista en caché"
-                    fdialog.ShowDialog()
-                End If
-            Else
-                Process.Start("all_en_ids.txt")
-            End If
-
-        Else
-            If My.Computer.FileSystem.FileExists("all_en_ids.txt") = True Then
-                My.Computer.FileSystem.DeleteFile("all_en_ids.txt")
-            End If
-
-            My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/all_en_ids.txt", "all_en_ids.txt")
-            Process.Start("all_en_ids.txt")
-        End If
+        Form8.TextBox1.Text = File.ReadAllText("all_fr_ids.txt")
+        Form8.Show()
     End Sub
 
     Private Sub Button11_MouseMove(sender As Object, e As EventArgs) Handles Button11.MouseMove, Button10.MouseMove
@@ -40038,6 +39935,37 @@ Public Class Form1
         NumericUpDown66.Value = NumericUpDown69.Value
         NumericUpDown67.Value = NumericUpDown69.Value
         NumericUpDown68.Value = NumericUpDown69.Value
+    End Sub
+
+    Private Sub TabControl3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TabControl3.SelectedIndexChanged
+        If TabControl3.SelectedTab Is TabPage11 Then
+
+            If My.Computer.Network.IsAvailable = True Then
+                Button10.Visible = True
+                Button11.Visible = True
+
+                If My.Computer.FileSystem.FileExists("id.zip") = True Then
+                    My.Computer.FileSystem.DeleteFile("id.zip")
+                End If
+
+                If My.Computer.FileSystem.FileExists("all_en_ids.txt") = True Then
+                    My.Computer.FileSystem.DeleteFile("all_en_ids.txt")
+                End If
+
+                If My.Computer.FileSystem.FileExists("all_fr_ids.txt") = True Then
+                    My.Computer.FileSystem.DeleteFile("all_fr_ids.txt")
+                End If
+
+                My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/id.zip", "id.zip")
+
+                Compression.ZipFile.ExtractToDirectory("id.zip", Environment.CurrentDirectory)
+
+                My.Computer.FileSystem.DeleteFile("id.zip")
+            Else
+                Button10.Visible = False
+                Button11.Visible = False
+            End If
+        End If
     End Sub
 End Class
 
