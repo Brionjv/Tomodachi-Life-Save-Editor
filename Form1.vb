@@ -39956,7 +39956,7 @@ Public Class Form1
                     My.Computer.FileSystem.DeleteFile("all_fr_ids.txt")
                 End If
 
-                My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/acnleditor2/Tomodachi-Life-Save-Editor/master/id.zip", "id.zip")
+                My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/id.zip", "id.zip")
 
                 Compression.ZipFile.ExtractToDirectory("id.zip", Environment.CurrentDirectory)
 
