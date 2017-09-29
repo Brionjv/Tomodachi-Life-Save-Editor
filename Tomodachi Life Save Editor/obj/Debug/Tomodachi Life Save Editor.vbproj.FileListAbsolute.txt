@@ -47,3 +47,4 @@ C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save E
 C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form12.resources
 C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Formsettings.resources
 C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form8.resources
+C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form9.resources

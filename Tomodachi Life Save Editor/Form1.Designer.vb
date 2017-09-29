@@ -46,6 +46,8 @@ Partial Class Form1
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Panel32 = New System.Windows.Forms.Panel()
+        Me.PictureBox64 = New System.Windows.Forms.PictureBox()
         Me.Panel30 = New System.Windows.Forms.Panel()
         Me.PictureBox60 = New System.Windows.Forms.PictureBox()
         Me.Panel28 = New System.Windows.Forms.Panel()
@@ -347,6 +349,8 @@ Partial Class Form1
         Me.GroupBox10.SuspendLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage5.SuspendLayout()
+        Me.Panel32.SuspendLayout()
+        CType(Me.PictureBox64, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel30.SuspendLayout()
         CType(Me.PictureBox60, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel28.SuspendLayout()
@@ -784,6 +788,7 @@ Partial Class Form1
         '
         Me.TabPage5.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TabPage5.BackgroundImage = CType(resources.GetObject("TabPage5.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage5.Controls.Add(Me.Panel32)
         Me.TabPage5.Controls.Add(Me.Panel30)
         Me.TabPage5.Controls.Add(Me.Panel28)
         Me.TabPage5.Controls.Add(Me.Panel1)
@@ -793,13 +798,36 @@ Partial Class Form1
         Me.TabPage5.TabIndex = 5
         Me.TabPage5.Text = "Extras"
         '
+        'Panel32
+        '
+        Me.Panel32.BackgroundImage = CType(resources.GetObject("Panel32.BackgroundImage"), System.Drawing.Image)
+        Me.Panel32.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel32.Controls.Add(Me.PictureBox64)
+        Me.Panel32.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel32.Location = New System.Drawing.Point(221, 138)
+        Me.Panel32.Name = "Panel32"
+        Me.Panel32.Size = New System.Drawing.Size(137, 60)
+        Me.Panel32.TabIndex = 7
+        '
+        'PictureBox64
+        '
+        Me.PictureBox64.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox64.BackgroundImage = CType(resources.GetObject("PictureBox64.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox64.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.PictureBox64.Enabled = False
+        Me.PictureBox64.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox64.Name = "PictureBox64"
+        Me.PictureBox64.Size = New System.Drawing.Size(130, 54)
+        Me.PictureBox64.TabIndex = 0
+        Me.PictureBox64.TabStop = False
+        '
         'Panel30
         '
         Me.Panel30.BackgroundImage = CType(resources.GetObject("Panel30.BackgroundImage"), System.Drawing.Image)
         Me.Panel30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel30.Controls.Add(Me.PictureBox60)
         Me.Panel30.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel30.Location = New System.Drawing.Point(201, 135)
+        Me.Panel30.Location = New System.Drawing.Point(105, 138)
         Me.Panel30.Name = "Panel30"
         Me.Panel30.Size = New System.Drawing.Size(60, 60)
         Me.Panel30.TabIndex = 6
@@ -3988,6 +4016,8 @@ Partial Class Form1
         Me.GroupBox10.PerformLayout()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage5.ResumeLayout(False)
+        Me.Panel32.ResumeLayout(False)
+        CType(Me.PictureBox64, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel30.ResumeLayout(False)
         CType(Me.PictureBox60, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel28.ResumeLayout(False)
@@ -4511,4 +4541,6 @@ Partial Class Form1
     Friend WithEvents CheckBox36 As System.Windows.Forms.CheckBox
     Friend WithEvents Button13 As System.Windows.Forms.Button
     Friend WithEvents NumericUpDown69 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Panel32 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox64 As System.Windows.Forms.PictureBox
 End Class

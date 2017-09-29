@@ -39957,7 +39957,7 @@ Public Class Form1
                     My.Computer.FileSystem.DeleteFile("all_fr_ids.txt")
                 End If
 
-                My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/acnleditor2/Tomodachi-Life-Save-Editor/master/id.zip", "id.zip")
+                My.Computer.Network.DownloadFile("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/id.zip", "id.zip")
 
                 Compression.ZipFile.ExtractToDirectory("id.zip", Environment.CurrentDirectory)
 
@@ -39967,6 +39967,30 @@ Public Class Form1
                 Button11.Visible = False
             End If
         End If
+    End Sub
+
+    Private Sub Panel32_Click(sender As Object, e As EventArgs) Handles Panel32.Click
+        If ComboBox11.Text = "FR" Then
+            fdialog.Label1.Text = "Éditez seulement si vous avez déjà composé des musiques"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "EN" Then
+            fdialog.Label1.Text = "Edit only if you have already composed musics"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "DE" Then
+            fdialog.Label1.Text = "Bearbeiten Sie nur, wenn Sie bereits Musik komponiert haben"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "PT" Then
+            fdialog.Label1.Text = "Edite apenas se você já compôs musicas"
+            fdialog.ShowDialog()
+        End If
+        If ComboBox11.Text = "ES" Then
+            fdialog.Label1.Text = "Editar sólo si ya ha compuesto música"
+            fdialog.ShowDialog()
+        End If
+        Form9.ShowDialog()
     End Sub
 End Class
 
