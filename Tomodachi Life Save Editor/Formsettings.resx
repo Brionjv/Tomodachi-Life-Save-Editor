@@ -168,15 +168,6 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>- Add Spanish and Portuguese language
-- Tomodachi Life Save Editor makes a backup of your last save file open
-- Extract your Mii to .tlmii file (EU : .eutlmii ; US : .ustlmii ; JP : .jptlmii ; KR : .krtlmii) [Miis can be restored in later versions]
-- Edit Mii hair color
-- Lock sweetheart feature (edit with an other feature - work better)
-- Edit Miis friends list relationship (break best friends / break sweetheart later)
-- Add settings (background music player, other things...)</value>
-  </data>
   <data name="TabPage3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAIAAACQzIFuAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO

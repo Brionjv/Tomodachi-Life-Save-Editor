@@ -185,7 +185,7 @@ Partial Class Formsettings
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(324, 218)
         Me.Label2.TabIndex = 0
-        Me.Label2.Text = resources.GetString("Label2.Text")
+        Me.Label2.Text = "- Add concert editor" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "- Fix food id list"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TabPage3

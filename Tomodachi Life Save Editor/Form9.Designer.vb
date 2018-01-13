@@ -118,6 +118,7 @@ Partial Class Form9
         Me.NumericUpDown13.Name = "NumericUpDown13"
         Me.NumericUpDown13.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown13.TabIndex = 25
+        Me.NumericUpDown13.Visible = False
         '
         'NumericUpDown10
         '
@@ -126,6 +127,7 @@ Partial Class Form9
         Me.NumericUpDown10.Name = "NumericUpDown10"
         Me.NumericUpDown10.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown10.TabIndex = 24
+        Me.NumericUpDown10.Visible = False
         '
         'NumericUpDown11
         '
@@ -134,6 +136,7 @@ Partial Class Form9
         Me.NumericUpDown11.Name = "NumericUpDown11"
         Me.NumericUpDown11.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown11.TabIndex = 23
+        Me.NumericUpDown11.Visible = False
         '
         'NumericUpDown12
         '
@@ -142,6 +145,7 @@ Partial Class Form9
         Me.NumericUpDown12.Name = "NumericUpDown12"
         Me.NumericUpDown12.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown12.TabIndex = 22
+        Me.NumericUpDown12.Visible = False
         '
         'NumericUpDown7
         '
@@ -150,6 +154,7 @@ Partial Class Form9
         Me.NumericUpDown7.Name = "NumericUpDown7"
         Me.NumericUpDown7.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown7.TabIndex = 21
+        Me.NumericUpDown7.Visible = False
         '
         'NumericUpDown8
         '
@@ -158,6 +163,7 @@ Partial Class Form9
         Me.NumericUpDown8.Name = "NumericUpDown8"
         Me.NumericUpDown8.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown8.TabIndex = 20
+        Me.NumericUpDown8.Visible = False
         '
         'NumericUpDown9
         '
@@ -166,6 +172,7 @@ Partial Class Form9
         Me.NumericUpDown9.Name = "NumericUpDown9"
         Me.NumericUpDown9.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown9.TabIndex = 19
+        Me.NumericUpDown9.Visible = False
         '
         'NumericUpDown4
         '
@@ -174,6 +181,7 @@ Partial Class Form9
         Me.NumericUpDown4.Name = "NumericUpDown4"
         Me.NumericUpDown4.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown4.TabIndex = 18
+        Me.NumericUpDown4.Visible = False
         '
         'NumericUpDown5
         '
@@ -182,6 +190,7 @@ Partial Class Form9
         Me.NumericUpDown5.Name = "NumericUpDown5"
         Me.NumericUpDown5.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown5.TabIndex = 17
+        Me.NumericUpDown5.Visible = False
         '
         'NumericUpDown6
         '
@@ -190,6 +199,7 @@ Partial Class Form9
         Me.NumericUpDown6.Name = "NumericUpDown6"
         Me.NumericUpDown6.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown6.TabIndex = 16
+        Me.NumericUpDown6.Visible = False
         '
         'NumericUpDown3
         '
@@ -198,6 +208,7 @@ Partial Class Form9
         Me.NumericUpDown3.Name = "NumericUpDown3"
         Me.NumericUpDown3.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown3.TabIndex = 15
+        Me.NumericUpDown3.Visible = False
         '
         'NumericUpDown2
         '
@@ -206,6 +217,7 @@ Partial Class Form9
         Me.NumericUpDown2.Name = "NumericUpDown2"
         Me.NumericUpDown2.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown2.TabIndex = 14
+        Me.NumericUpDown2.Visible = False
         '
         'NumericUpDown1
         '
@@ -214,6 +226,7 @@ Partial Class Form9
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(36, 16)
         Me.NumericUpDown1.TabIndex = 13
+        Me.NumericUpDown1.Visible = False
         '
         'TextBox13
         '

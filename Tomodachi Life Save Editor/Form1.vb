@@ -39970,28 +39970,52 @@ Public Class Form1
     End Sub
 
     Private Sub Panel32_Click(sender As Object, e As EventArgs) Handles Panel32.Click
-        If ComboBox11.Text = "FR" Then
-            fdialog.Label1.Text = "Éditez seulement si vous avez déjà composé des musiques"
-            fdialog.ShowDialog()
+        If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Or ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Éditez seulement si vous avez déjà composé des musiques"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "Edit only if you have already composed musics"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Bearbeiten Sie nur, wenn Sie bereits Musik komponiert haben"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Edite apenas se você já compôs musicas"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "ES" Then
+                fdialog.Label1.Text = "Editar sólo si ya ha compuesto música"
+                fdialog.ShowDialog()
+            End If
+            Form9.ShowDialog()
+        Else
+            If ComboBox11.Text = "FR" Then
+                fdialog.Label1.Text = "Cette fonctionnalité n'est pas disponible dans votre région"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "EN" Then
+                fdialog.Label1.Text = "This feature is not available in your region"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "DE" Then
+                fdialog.Label1.Text = "Diese Funktion ist in Ihrer Region nicht verfügbar"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "PT" Then
+                fdialog.Label1.Text = "Este recurso não está disponível em sua região"
+                fdialog.ShowDialog()
+            End If
+            If ComboBox11.Text = "ES" Then
+                fdialog.Label1.Text = "Esta función no está disponible en su región"
+                fdialog.ShowDialog()
+            End If
         End If
-        If ComboBox11.Text = "EN" Then
-            fdialog.Label1.Text = "Edit only if you have already composed musics"
-            fdialog.ShowDialog()
-        End If
-        If ComboBox11.Text = "DE" Then
-            fdialog.Label1.Text = "Bearbeiten Sie nur, wenn Sie bereits Musik komponiert haben"
-            fdialog.ShowDialog()
-        End If
-        If ComboBox11.Text = "PT" Then
-            fdialog.Label1.Text = "Edite apenas se você já compôs musicas"
-            fdialog.ShowDialog()
-        End If
-        If ComboBox11.Text = "ES" Then
-            fdialog.Label1.Text = "Editar sólo si ya ha compuesto música"
-            fdialog.ShowDialog()
-        End If
-        Form9.ShowDialog()
     End Sub
+
 End Class
 
 
