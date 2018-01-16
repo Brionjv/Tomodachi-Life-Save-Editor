@@ -1,6 +1,7 @@
 ﻿Imports PackageIO
 Imports System.IO
 Imports System.IO.Compression
+Imports System.Net
 
 Public Class Form1
     Dim filepath As String
@@ -108,6 +109,7 @@ Public Class Form1
         Try
             CheckBox35.Checked = My.Settings.Settinghide
             CheckBox36.Checked = My.Settings.Settingmusic
+            Checkupdates()
         Catch ex As Exception
         End Try
     End Sub
@@ -118,6 +120,36 @@ Public Class Form1
         My.Settings.Settingmusic = CheckBox36.Checked
         My.Settings.Save()
     End Sub
+
+    Public Sub Checkupdates()
+        Try
+            Dim MAJ As New WebClient
+            Dim lastupdate As String = MAJ.DownloadString("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/Version.txt")
+            If Label4.Text = lastupdate Then
+                PictureBox30.Visible = True
+                PictureBox65.Visible = False
+            Else
+                PictureBox30.Visible = False
+                PictureBox65.Visible = True
+                If ComboBox11.SelectedItem = ComboBox11.Items.Item(0) Then
+                    fdialog.Label1.Text = "An update is avalible, click on Tomodachi Life Save Editor icon to download new version"
+                    fdialog.ShowDialog()
+                ElseIf ComboBox11.SelectedItem = ComboBox11.Items.Item(1) Then
+                    fdialog.Label1.Text = "Une mise à jour est disponible, cliquez sur l'icone de Tomodachi Life Save Editor pour télécharger la nouvelle version"
+                    fdialog.ShowDialog()
+                End If
+            End If
+        Catch ex As Exception
+            If ComboBox11.SelectedItem = ComboBox11.Items.Item(0) Then
+                fdialog.Label1.Text = "An error has occured when checking updates"
+                fdialog.ShowDialog()
+            ElseIf ComboBox11.SelectedItem = ComboBox11.Items.Item(1) Then
+                fdialog.Label1.Text = "Une erreur est survenue lors de la vérification de mises à jour"
+                fdialog.ShowDialog()
+            End If
+        End Try
+    End Sub
+
     Private Sub ComboBox11_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox11.SelectedIndexChanged
         If ComboBox11.Text = "FR" Then
             Button1.Text = "Ouvrir"
@@ -39019,22 +39051,22 @@ Public Class Form1
             If ComboBox12.SelectedItem = ComboBox12.Items.Item(0) Then
                 My.Computer.FileSystem.CopyFile(
                           filepath,
-                        applicationpath & "\bak\USA\savedataArc.txt")
+                        applicationpath & "\bak\USA\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
             End If
             If ComboBox12.SelectedItem = ComboBox12.Items.Item(1) Then
                 My.Computer.FileSystem.CopyFile(
                           filepath,
-                        applicationpath & "\bak\EUR\savedataArc.txt")
+                        applicationpath & "\bak\EUR\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
             End If
             If ComboBox12.SelectedItem = ComboBox12.Items.Item(2) Then
                 My.Computer.FileSystem.CopyFile(
                           filepath,
-                        applicationpath & "\bak\JPN\savedataArc.txt")
+                        applicationpath & "\bak\JPN\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
             End If
             If ComboBox12.SelectedItem = ComboBox12.Items.Item(3) Then
                 My.Computer.FileSystem.CopyFile(
                           filepath,
-                        applicationpath & "\bak\KOR\savedataArc.txt")
+                        applicationpath & "\bak\KOR\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
             End If
         Catch ex As Exception
         End Try
@@ -40016,6 +40048,9 @@ Public Class Form1
         End If
     End Sub
 
+    Private Sub PictureBox65_Click(sender As Object, e As EventArgs) Handles PictureBox65.Click
+        Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
+    End Sub
 End Class
 
 

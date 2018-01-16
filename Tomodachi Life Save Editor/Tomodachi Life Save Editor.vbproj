@@ -328,6 +328,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\tomo_update.png" />
     <None Include="Resources\HCdefault.png" />
     <None Include="Resources\HCBE.png" />
     <None Include="Resources\HCBC.png" />

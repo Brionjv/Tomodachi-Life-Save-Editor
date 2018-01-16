@@ -335,6 +335,8 @@ Partial Class Form1
         Me.Panel31 = New System.Windows.Forms.Panel()
         Me.CheckBox35 = New System.Windows.Forms.CheckBox()
         Me.CheckBox36 = New System.Windows.Forms.CheckBox()
+        Me.PictureBox65 = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -528,6 +530,7 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox65, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -3967,12 +3970,36 @@ Partial Class Form1
         Me.CheckBox36.UseVisualStyleBackColor = True
         Me.CheckBox36.Visible = False
         '
+        'PictureBox65
+        '
+        Me.PictureBox65.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox65.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox65.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_update
+        Me.PictureBox65.Location = New System.Drawing.Point(179, 0)
+        Me.PictureBox65.Name = "PictureBox65"
+        Me.PictureBox65.Size = New System.Drawing.Size(118, 101)
+        Me.PictureBox65.TabIndex = 46
+        Me.PictureBox65.TabStop = False
+        Me.PictureBox65.Visible = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(111, 27)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(69, 13)
+        Me.Label4.TabIndex = 47
+        Me.Label4.Text = "Version 2.1.4"
+        Me.Label4.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(469, 389)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.PictureBox65)
         Me.Controls.Add(Me.CheckBox36)
         Me.Controls.Add(Me.CheckBox35)
         Me.Controls.Add(Me.Panel31)
@@ -4227,6 +4254,7 @@ Partial Class Form1
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox65, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -4543,4 +4571,6 @@ Partial Class Form1
     Friend WithEvents NumericUpDown69 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Panel32 As System.Windows.Forms.Panel
     Friend WithEvents PictureBox64 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox65 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class
