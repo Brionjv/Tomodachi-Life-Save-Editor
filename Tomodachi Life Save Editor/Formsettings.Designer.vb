@@ -186,7 +186,8 @@ Partial Class Formsettings
         Me.Label2.Size = New System.Drawing.Size(324, 218)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "- Add concert editor" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "- Fix food id list" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "- Update backup save files feature" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "- A" & _
-    "dd check updates"
+    "dd check updates" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "- Fix export .mii" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "- Add all headgears unlocked (japanese and " & _
+    "korean version)"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TabPage3

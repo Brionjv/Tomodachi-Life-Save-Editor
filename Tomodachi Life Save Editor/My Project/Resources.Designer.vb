@@ -1963,6 +1963,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property import_mii() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("import mii", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property info() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("info", resourceCulture)
@@ -2067,6 +2077,15 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("marron", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property music() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("music", resourceCulture)
             End Get
         End Property
         

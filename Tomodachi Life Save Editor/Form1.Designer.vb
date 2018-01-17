@@ -2527,6 +2527,7 @@ Partial Class Form1
         Me.CheckBox34.TabIndex = 102
         Me.CheckBox34.Text = "Break"
         Me.CheckBox34.UseVisualStyleBackColor = True
+        Me.CheckBox34.Visible = False
         '
         'CheckBox33
         '
@@ -2538,6 +2539,7 @@ Partial Class Form1
         Me.CheckBox33.TabIndex = 101
         Me.CheckBox33.Text = "Break"
         Me.CheckBox33.UseVisualStyleBackColor = True
+        Me.CheckBox33.Visible = False
         '
         'PictureBox58
         '
@@ -2657,6 +2659,7 @@ Partial Class Form1
         Me.Label29.Size = New System.Drawing.Size(101, 13)
         Me.Label29.TabIndex = 89
         Me.Label29.Text = "Sweetheart"
+        Me.Label29.Visible = False
         '
         'Label28
         '
@@ -2667,6 +2670,7 @@ Partial Class Form1
         Me.Label28.Size = New System.Drawing.Size(101, 13)
         Me.Label28.TabIndex = 88
         Me.Label28.Text = "Best Friend"
+        Me.Label28.Visible = False
         '
         'Label10
         '

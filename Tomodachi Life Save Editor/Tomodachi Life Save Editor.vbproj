@@ -328,6 +328,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\music.wav" />
+    <None Include="Resources\import mii.png" />
     <None Include="Resources\tomo_update.png" />
     <None Include="Resources\HCdefault.png" />
     <None Include="Resources\HCBE.png" />
