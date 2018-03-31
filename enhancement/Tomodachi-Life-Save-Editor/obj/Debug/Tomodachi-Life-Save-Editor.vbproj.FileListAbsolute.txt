@@ -1,0 +1,12 @@
+c:\users\brion\documents\visual studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\bin\Debug\Tomodachi-Life-Save-Editor.exe.config
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\bin\Debug\Tomodachi-Life-Save-Editor.exe
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\bin\Debug\Tomodachi-Life-Save-Editor.pdb
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\bin\Debug\Tomodachi-Life-Save-Editor.xml
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.TL_SaveEditor.resources
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.Resources.resources
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbproj.GenerateResource.Cache
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.exe
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.xml
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.pdb
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form2.resources
+C:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.Items_edit.resources
