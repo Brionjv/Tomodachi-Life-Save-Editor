@@ -12,6 +12,73 @@ Public Class TL_SaveEditor
         Panel_miiedit.Visible = False
     End Sub
 
+    Private Sub unselectcolor()
+        color_1.BorderStyle = BorderStyle.None
+        color_2.BorderStyle = BorderStyle.None
+        color_2.BorderStyle = BorderStyle.None
+        color_3.BorderStyle = BorderStyle.None
+        color_3.BorderStyle = BorderStyle.None
+        color_4.BorderStyle = BorderStyle.None
+        color_4.BorderStyle = BorderStyle.None
+        color_5.BorderStyle = BorderStyle.None
+        color_5.BorderStyle = BorderStyle.None
+        color_6.BorderStyle = BorderStyle.None
+        color_6.BorderStyle = BorderStyle.None
+        color_7.BorderStyle = BorderStyle.None
+        color_7.BorderStyle = BorderStyle.None
+        color_8.BorderStyle = BorderStyle.None
+        color_8.BorderStyle = BorderStyle.None
+        color_9.BorderStyle = BorderStyle.None
+        color_9.BorderStyle = BorderStyle.None
+        color_10.BorderStyle = BorderStyle.None
+        color_10.BorderStyle = BorderStyle.None
+        color_11.BorderStyle = BorderStyle.None
+        color_11.BorderStyle = BorderStyle.None
+        color_12.BorderStyle = BorderStyle.None
+        color_12.BorderStyle = BorderStyle.None
+        color_13.BorderStyle = BorderStyle.None
+        color_13.BorderStyle = BorderStyle.None
+        color_14.BorderStyle = BorderStyle.None
+        color_14.BorderStyle = BorderStyle.None
+        color_15.BorderStyle = BorderStyle.None
+        color_15.BorderStyle = BorderStyle.None
+        color_16.BorderStyle = BorderStyle.None
+        color_16.BorderStyle = BorderStyle.None
+        color_17.BorderStyle = BorderStyle.None
+        color_17.BorderStyle = BorderStyle.None
+        color_18.BorderStyle = BorderStyle.None
+        color_18.BorderStyle = BorderStyle.None
+        color_19.BorderStyle = BorderStyle.None
+        color_19.BorderStyle = BorderStyle.None
+        color_20.BorderStyle = BorderStyle.None
+        color_20.BorderStyle = BorderStyle.None
+        color_21.BorderStyle = BorderStyle.None
+        color_21.BorderStyle = BorderStyle.None
+        color_22.BorderStyle = BorderStyle.None
+        color_22.BorderStyle = BorderStyle.None
+        color_23.BorderStyle = BorderStyle.None
+        color_23.BorderStyle = BorderStyle.None
+        color_24.BorderStyle = BorderStyle.None
+        color_24.BorderStyle = BorderStyle.None
+        color_25.BorderStyle = BorderStyle.None
+        color_25.BorderStyle = BorderStyle.None
+        color_26.BorderStyle = BorderStyle.None
+        color_26.BorderStyle = BorderStyle.None
+        color_27.BorderStyle = BorderStyle.None
+        color_27.BorderStyle = BorderStyle.None
+        color_28.BorderStyle = BorderStyle.None
+        color_28.BorderStyle = BorderStyle.None
+        color_29.BorderStyle = BorderStyle.None
+        color_29.BorderStyle = BorderStyle.None
+        color_30.BorderStyle = BorderStyle.None
+        color_30.BorderStyle = BorderStyle.None
+        color_31.BorderStyle = BorderStyle.None
+        color_31.BorderStyle = BorderStyle.None
+        color_32.BorderStyle = BorderStyle.None
+        color_32.BorderStyle = BorderStyle.None
+        color_empty.BorderStyle = BorderStyle.None
+    End Sub
+
     Public Sub Checkupdates()
         Try
             Dim MAJ As New WebClient
@@ -694,6 +761,10 @@ Public Class TL_SaveEditor
     Private Sub TL_SaveEditor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Select_language.SelectedItem = Select_language.Items.Item(0)
         Select_music.SelectedItem = Select_music.Items.Item(0)
+        Select_music.SelectedItem = Select_music.Items.Item(0)
+        Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(0)
+        Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
+        Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
     End Sub
 
     Private Sub Setting_hidden_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_hidden.CheckedChanged
@@ -724,6 +795,7 @@ Public Class TL_SaveEditor
             value_test.Visible = True
             value_tour.Visible = True
             value_vetem.Visible = True
+
         Else
             Hidden_things.Visible = False
             value_appartrenov.Visible = False
@@ -762,7 +834,378 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Info_islandbuild_MouseMove(sender As Object, e As MouseEventArgs) Handles Info_islandbuild.MouseMove
+    Private Sub Icon_miiedit_music_Click(sender As Object, e As EventArgs) Handles Icon_miiedit_music.Click
+        Panel_cathphrase.Visible = False
+        Panel_mii_musics.Visible = True
+        Panel_mii_inventory.Visible = False
+    End Sub
 
+    Private Sub Icon_cathphrase_Click(sender As Object, e As EventArgs) Handles Icon_cathphrase.Click
+        Panel_cathphrase.Visible = True
+        Panel_mii_musics.Visible = False
+        Panel_mii_inventory.Visible = False
+    End Sub
+
+    Private Sub Icon_inventory_Click(sender As Object, e As EventArgs) Handles Icon_inventory.Click
+        Panel_cathphrase.Visible = False
+        Panel_mii_musics.Visible = False
+        Panel_mii_inventory.Visible = True
+    End Sub
+
+    Private Sub Icon_pronun_firstname_Click(sender As Object, e As EventArgs) Handles Icon_pronun_firstname.Click
+        Text_edit_firstname.Text = Text_pronun_firstname.Text
+        Panel_edit_firstname.Visible = True
+    End Sub
+
+    Private Sub Icon_pronun_firstname_MouseMove(sender As Object, e As EventArgs) Handles Icon_pronun_firstname.MouseMove
+        Text_pronun_firstname.Visible = True
+    End Sub
+
+    Private Sub Icon_pronun_firstname_MouseLeave(sender As Object, e As EventArgs) Handles Icon_pronun_firstname.MouseLeave
+        Text_pronun_firstname.Visible = False
+    End Sub
+
+    Private Sub Icon_valid_firstname_Click(sender As Object, e As EventArgs) Handles Icon_valid_firstname.Click
+        Text_pronun_firstname.Text = Text_edit_firstname.Text
+        Panel_edit_firstname.Visible = False
+    End Sub
+
+    Private Sub Icon_pronun_lastname_Click(sender As Object, e As EventArgs) Handles Icon_pronun_lastname.Click
+        Text_edit_lastname.Text = Text_pronun_lastname.Text
+        Panel_edit_lastname.Visible = True
+    End Sub
+
+    Private Sub Icon_pronun_lastname_MouseMove(sender As Object, e As EventArgs) Handles Icon_pronun_lastname.MouseMove
+        Text_pronun_lastname.Visible = True
+    End Sub
+
+    Private Sub Icon_pronun_lastname_MouseLeave(sender As Object, e As EventArgs) Handles Icon_pronun_lastname.MouseLeave
+        Text_pronun_lastname.Visible = False
+    End Sub
+
+    Private Sub Icon_valid_lastname_Click(sender As Object, e As EventArgs) Handles Icon_valid_lastname.Click
+        Text_pronun_lastname.Text = Text_edit_lastname.Text
+        Panel_edit_lastname.Visible = False
+    End Sub
+
+    Private Sub Icon_pronun_nickname_MouseMove(sender As Object, e As EventArgs) Handles Icon_pronun_nickname.MouseMove
+        Text_pronun_nickname.Visible = True
+    End Sub
+
+    Private Sub Icon_pronun_nickname_MouseLeave(sender As Object, e As EventArgs) Handles Icon_pronun_nickname.MouseLeave
+        Text_pronun_nickname.Visible = False
+    End Sub
+
+    Private Sub Button_close_hcoloredit_Click(sender As Object, e As EventArgs) Handles Button_close_hcoloredit.Click
+        Panel_edit_haircolor.Visible = False
+    End Sub
+
+    Private Sub Icon_haircolor_Click(sender As Object, e As EventArgs) Handles Icon_haircolor.Click
+        Panel_edit_haircolor.Visible = True
+    End Sub
+
+    Private Sub color_1_Click(sender As Object, e As EventArgs) Handles color_1.Click
+        unselectcolor()
+        color_1.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 128
+    End Sub
+
+    Private Sub color_2_Click(sender As Object, e As EventArgs) Handles color_2.Click
+        unselectcolor()
+        color_2.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 130
+    End Sub
+
+    Private Sub color_3_Click(sender As Object, e As EventArgs) Handles color_3.Click
+        unselectcolor()
+        color_3.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 132
+    End Sub
+
+    Private Sub color_4_Click(sender As Object, e As EventArgs) Handles color_4.Click
+        unselectcolor()
+        color_4.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 134
+    End Sub
+
+    Private Sub color_5_Click(sender As Object, e As EventArgs) Handles color_5.Click
+        unselectcolor()
+        color_5.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 136
+    End Sub
+
+    Private Sub color_6_Click(sender As Object, e As EventArgs) Handles color_6.Click
+        unselectcolor()
+        color_6.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 138
+    End Sub
+
+    Private Sub color_7_Click(sender As Object, e As EventArgs) Handles color_7.Click
+        unselectcolor()
+        color_7.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 140
+    End Sub
+
+    Private Sub color_8_Click(sender As Object, e As EventArgs) Handles color_8.Click
+        unselectcolor()
+        color_8.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 142
+    End Sub
+
+    Private Sub color_9_Click(sender As Object, e As EventArgs) Handles color_9.Click
+        unselectcolor()
+        color_9.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 144
+    End Sub
+
+    Private Sub color_10_Click(sender As Object, e As EventArgs) Handles color_10.Click
+        unselectcolor()
+        color_10.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 146
+    End Sub
+
+    Private Sub color_11_Click(sender As Object, e As EventArgs) Handles color_11.Click
+        unselectcolor()
+        color_11.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 148
+    End Sub
+
+    Private Sub color_12_Click(sender As Object, e As EventArgs) Handles color_12.Click
+        unselectcolor()
+        color_12.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 150
+    End Sub
+
+    Private Sub color_13_Click(sender As Object, e As EventArgs) Handles color_13.Click
+        unselectcolor()
+        color_13.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 152
+    End Sub
+
+    Private Sub color_14_Click(sender As Object, e As EventArgs) Handles color_14.Click
+        unselectcolor()
+        color_14.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 154
+    End Sub
+
+    Private Sub color_15_Click(sender As Object, e As EventArgs) Handles color_15.Click
+        unselectcolor()
+        color_15.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 156
+    End Sub
+
+    Private Sub color_16_Click(sender As Object, e As EventArgs) Handles color_16.Click
+        unselectcolor()
+        color_16.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 158
+    End Sub
+
+    Private Sub color_17_Click(sender As Object, e As EventArgs) Handles color_17.Click
+        unselectcolor()
+        color_17.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 160
+    End Sub
+
+    Private Sub color_18_Click(sender As Object, e As EventArgs) Handles color_18.Click
+        unselectcolor()
+        color_18.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 162
+    End Sub
+
+    Private Sub color_19_Click(sender As Object, e As EventArgs) Handles color_19.Click
+        unselectcolor()
+        color_19.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 164
+    End Sub
+
+    Private Sub color_20_Click(sender As Object, e As EventArgs) Handles color_20.Click
+        unselectcolor()
+        color_20.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 166
+    End Sub
+
+    Private Sub color_21_Click(sender As Object, e As EventArgs) Handles color_21.Click
+        unselectcolor()
+        color_21.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 168
+    End Sub
+
+    Private Sub color_22_Click(sender As Object, e As EventArgs) Handles color_22.Click
+        unselectcolor()
+        color_22.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 170
+    End Sub
+
+    Private Sub color_23_Click(sender As Object, e As EventArgs) Handles color_23.Click
+        unselectcolor()
+        color_23.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 172
+    End Sub
+
+    Private Sub color_24_Click(sender As Object, e As EventArgs) Handles color_24.Click
+        unselectcolor()
+        color_24.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 174
+    End Sub
+
+    Private Sub color_25_Click(sender As Object, e As EventArgs) Handles color_25.Click
+        unselectcolor()
+        color_25.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 176
+    End Sub
+
+    Private Sub color_26_Click(sender As Object, e As EventArgs) Handles color_26.Click
+        unselectcolor()
+        color_26.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 178
+    End Sub
+
+    Private Sub color_27_Click(sender As Object, e As EventArgs) Handles color_27.Click
+        unselectcolor()
+        color_27.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 180
+    End Sub
+
+    Private Sub color_28_Click(sender As Object, e As EventArgs) Handles color_28.Click
+        unselectcolor()
+        color_28.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 182
+    End Sub
+
+    Private Sub color_29_Click(sender As Object, e As EventArgs) Handles color_29.Click
+        unselectcolor()
+        color_29.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 184
+    End Sub
+
+    Private Sub color_30_Click(sender As Object, e As EventArgs) Handles color_30.Click
+        unselectcolor()
+        color_30.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 186
+    End Sub
+
+    Private Sub color_31_Click(sender As Object, e As EventArgs) Handles color_31.Click
+        unselectcolor()
+        color_31.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 188
+    End Sub
+
+    Private Sub color_32_Click(sender As Object, e As EventArgs) Handles color_32.Click
+        unselectcolor()
+        color_32.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 190
+    End Sub
+
+    Private Sub color_empty_Click(sender As Object, e As EventArgs) Handles color_empty.Click
+        unselectcolor()
+        color_empty.BorderStyle = BorderStyle.FixedSingle
+        valu_haircolor.Value = 1
+    End Sub
+
+    Private Sub valu_haircolor_ValueChanged(sender As Object, e As EventArgs) Handles valu_haircolor.ValueChanged
+        Select Case valu_haircolor.Value
+            Case 128, 129
+                Icon_haircolor.Image = My.Resources.HC80
+            Case 130, 131
+                Icon_haircolor.Image = My.Resources.HC82
+            Case 132, 133
+                Icon_haircolor.Image = My.Resources.HC84
+            Case 134, 135
+                Icon_haircolor.Image = My.Resources.HC86
+            Case 136, 137
+                Icon_haircolor.Image = My.Resources.HC88
+            Case 138, 139
+                Icon_haircolor.Image = My.Resources.HC8A
+            Case 140, 141
+                Icon_haircolor.Image = My.Resources.HC8C
+            Case 142, 143
+                Icon_haircolor.Image = My.Resources.HC8E
+            Case 144, 145
+                Icon_haircolor.Image = My.Resources.HC90
+            Case 146, 147
+                Icon_haircolor.Image = My.Resources.HC92
+            Case 148, 149
+                Icon_haircolor.Image = My.Resources.HC94
+            Case 150, 151
+                Icon_haircolor.Image = My.Resources.HC96
+            Case 152, 153
+                Icon_haircolor.Image = My.Resources.HC98
+            Case 154, 155
+                Icon_haircolor.Image = My.Resources.HC9A
+            Case 156, 157
+                Icon_haircolor.Image = My.Resources.HC9C
+            Case 158, 159
+                Icon_haircolor.Image = My.Resources.HC9E
+            Case 160, 161
+                Icon_haircolor.Image = My.Resources.HCA0
+            Case 162, 163
+                Icon_haircolor.Image = My.Resources.HCA2
+            Case 164, 165
+                Icon_haircolor.Image = My.Resources.HCA4
+            Case 166, 167
+                Icon_haircolor.Image = My.Resources.HCA6
+            Case 168, 169
+                Icon_haircolor.Image = My.Resources.HCA8
+            Case 170, 171
+                Icon_haircolor.Image = My.Resources.HCAA
+            Case 172, 173
+                Icon_haircolor.Image = My.Resources.HCAC
+            Case 174, 175
+                Icon_haircolor.Image = My.Resources.HCAE
+            Case 176, 177
+                Icon_haircolor.Image = My.Resources.HCB0
+            Case 178, 179
+                Icon_haircolor.Image = My.Resources.HCB2
+            Case 180, 181
+                Icon_haircolor.Image = My.Resources.HCB4
+            Case 182, 183
+                Icon_haircolor.Image = My.Resources.HCB6
+            Case 184, 185
+                Icon_haircolor.Image = My.Resources.HCB8
+            Case 186, 187
+                Icon_haircolor.Image = My.Resources.HCBA
+            Case 188, 189
+                Icon_haircolor.Image = My.Resources.HCBC
+            Case 190, 191
+                Icon_haircolor.Image = My.Resources.HCBE
+            Case Else
+                Icon_haircolor.Image = My.Resources.HCdefault
+        End Select
+    End Sub
+
+    Private Sub Icon_fullness_Click(sender As Object, e As EventArgs) Handles Icon_fullness.Click
+        Panel_edit_fullness.Visible = True
+    End Sub
+
+    Private Sub Icon_edit_full_00_Click(sender As Object, e As EventArgs) Handles Icon_edit_full_00.Click
+        Panel_edit_fullness.Visible = False
+        valu_fullness.Value = 0
+    End Sub
+
+    Private Sub Icon_edit_full_25_Click(sender As Object, e As EventArgs) Handles Icon_edit_full_25.Click
+        Panel_edit_fullness.Visible = False
+        valu_fullness.Value = 25
+    End Sub
+
+    Private Sub Icon_edit_full_50_Click(sender As Object, e As EventArgs) Handles Icon_edit_full_50.Click
+        Panel_edit_fullness.Visible = False
+        valu_fullness.Value = 50
+    End Sub
+
+    Private Sub Icon_edit_full_100_Click(sender As Object, e As EventArgs) Handles Icon_edit_full_100.Click
+        Panel_edit_fullness.Visible = False
+        valu_fullness.Value = 100
+    End Sub
+
+    Private Sub valu_fullness_ValueChanged(sender As Object, e As EventArgs) Handles valu_fullness.ValueChanged
+        If valu_fullness.Value = 0 Then
+            Icon_fullness.Image = My.Resources.fullness_00
+        ElseIf valu_fullness.Value = 25 Then
+            Icon_fullness.Image = My.Resources.fullness_25
+        ElseIf valu_fullness.Value = 50 Then
+            Icon_fullness.Image = My.Resources.fullness_50
+        ElseIf valu_fullness.Value = 100 Then
+            Icon_fullness.Image = My.Resources.fullness_100
+        End If
     End Sub
 End Class
