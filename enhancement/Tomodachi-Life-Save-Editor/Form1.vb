@@ -4,6 +4,88 @@ Public Class TL_SaveEditor
     Private MousedwnX As Integer
     Private MousedwnY As Integer
     Dim fdialog As New Form2
+    Dim savedataArc As String
+    Dim money As String
+    Dim IslN As String
+    Dim Islp As String
+    Dim Mii1L As String
+    Dim Mii1P As String
+    Dim Mii1N As String
+    Dim Mii1S As String
+    Dim Mii1C As String
+    Dim Mii1PP As String
+    Dim Mii1NP As String
+    Dim Mii1SP As String
+    Dim Mii1R As String
+    Dim soucis As String
+    Dim vrecu As String
+    Dim weddi As String
+    Dim born As String
+    Dim vsent As String
+    Dim stpass As String
+    Dim bull1 As String
+    Dim bull2 As String
+    Dim bull3 As String
+    Dim bull4 As String
+    Dim bull5 As String
+    Dim antiTT As String
+    Dim objet1 As String
+    Dim objet2 As String
+    Dim objet3 As String
+    Dim objet4 As String
+    Dim objet5 As String
+    Dim objet6 As String
+    Dim objet7 As String
+    Dim objet8 As String
+    Dim exp As String
+    Dim econom As String
+    Dim fullness As String
+    Dim eat As String
+    Dim interieur As String
+    Dim interieur1 As String
+    Dim Sfoods As String
+    Dim objdiv As String
+    Dim appart As String
+    Dim mair As String
+    Dim info As String
+    Dim classem As String
+    Dim vetem As String
+    Dim chap As String
+    Dim epicer As String
+    Dim deco As String
+    Dim broc As String
+    Dim magimport As String
+    Dim fontai As String
+    Dim mais As String
+    Dim port As String
+    Dim tervague As String
+    Dim conc As String
+    Dim test As String
+    Dim stud As String
+    Dim plage As String
+    Dim parc1 As String
+    Dim cafe As String
+    Dim parc As String
+    Dim tour As String
+    Dim part As String
+    Dim frie1 As String
+    Dim frie2 As String
+    Dim alltime As String
+    Dim alltime2 As String
+    Dim fav As String
+    Dim fav2 As String
+    Dim fav3 As String
+    Dim worst As String
+    Dim worst2 As String
+    Dim copy As String
+    Dim sharing As String
+    Dim couleur As String
+    Dim grow As String
+    Dim appartement As String
+    Dim BSTF As String
+    Dim sweetheart As String
+    Dim eventfountain As String
+    Dim appartrenov As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -89,13 +171,355 @@ Public Class TL_SaveEditor
             Else
                 TLSE_logo.Visible = False
                 TLSE_logo_update.Visible = True
-                fdialog.Text_fdialog.Text = "An update is avalible, click on Tomodachi Life Save Editor icon to download new version"
-                fdialog.ShowDialog()
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    fdialog.Text_fdialog.Text = "An update is avalible, click on Tomodachi Life Save Editor icon to download new version"
+                    fdialog.ShowDialog()
+                End If
+                If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    fdialog.Text_fdialog.Text = "Une mise à jour est disponible, cliquez sur l'îcone de Tomodachi Life Save Editor pour télécharger la nouvelle version"
+                    fdialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
-            fdialog.Text_fdialog.Text = "An error has occured when checking updates"
-            fdialog.ShowDialog()
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                fdialog.Text_fdialog.Text = "An error has occured when checking updates"
+                fdialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                fdialog.Text_fdialog.Text = "Une erreur est survenue lors de la vérification des mises à jour"
+                fdialog.ShowDialog()
+            End If
         End Try
+    End Sub
+
+    Public Sub readsavedataArc()
+        Try
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
+                Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+                Reader.Position = &H1E4BB8
+                money = Reader.Position
+                value_money.Value = Reader.ReadInt32
+                Reader.Position = &H1E4BCC
+                IslN = Reader.Position
+                Text_islandname.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1E4BF6
+                Islp = Reader.Position
+                Text_pronun_islandname.Text = Reader.ReadUnicodeString(20)
+                Reader.Position = &H1E4BC6
+                soucis = Reader.Position
+                value_problemsolved.Value = Reader.ReadInt16
+                Reader.Position = &H1E4BBE
+                vrecu = Reader.Position
+                value_travelersreceived.Value = Reader.ReadInt16
+                Reader.Position = &H1E4BC0
+                weddi = Reader.Position
+                value_weddings.Value = Reader.ReadInt16
+                Reader.Position = &H1E4BC2
+                born = Reader.Position
+                value_childrenborn.Value = Reader.ReadInt16
+                Reader.Position = &H1E4BC4
+                vsent = Reader.Position
+                value_travelerssent.Value = Reader.ReadInt16
+                Reader.Position = &H1E4BBC
+                stpass = Reader.Position
+                value_streetpassencounters.Value = Reader.ReadInt16
+                Reader.Position = &H1E4C20
+                appart = Reader.Position
+                value_appart.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C21
+                mair = Reader.Position
+                value_mair.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C22
+                info = Reader.Position
+                value_info.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C23
+                classem = Reader.Position
+                value_classem.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C24
+                vetem = Reader.Position
+                value_vetem.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C25
+                chap = Reader.Position
+                value_chap.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C26
+                epicer = Reader.Position
+                value_epicer.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C27
+                deco = Reader.Position
+                value_deco.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C28
+                broc = Reader.Position
+                value_broc.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C29
+                magimport = Reader.Position
+                value_magimport.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C2A
+                Fontai = Reader.Position
+                value_font.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C2B
+                mais = Reader.Position
+                value_mais.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C2C
+                port = Reader.Position
+                value_port.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C2D
+                tervague = Reader.Position
+                value_tervague.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C2E
+                conc = Reader.Position
+                value_conc.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C2F
+                test = Reader.Position
+                value_test.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C30
+                stud = Reader.Position
+                value_stud.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C31
+                plage = Reader.Position
+                value_plage.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C32
+                parc1 = Reader.Position
+                value_parc1.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C33
+                cafe = Reader.Position
+                value_cafe.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C34
+                parc = Reader.Position
+                value_parc.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C35
+                tour = Reader.Position
+                value_tour.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C36
+                part = Reader.Position
+                value_part.Value = Reader.ReadInt8
+                Reader.Position = &H1E4AF8
+                eventfountain = Reader.Position
+                value_eventfountain.Value = Reader.ReadUInt32
+                Reader.Position = &H1E4C79
+                appartrenov = Reader.Position
+                value_appartrenov.Value = Reader.ReadInt8
+            End If
+            If Filever_text.Text = "JP" Then
+                Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+                Reader.Position = &H14BCA8
+                money = Reader.Position
+                value_money.Value = Reader.ReadInt32
+                Reader.Position = &H14BCBC
+                IslN = Reader.Position
+                Text_islandname.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H14BCB6
+                soucis = Reader.Position
+                value_problemsolved.Value = Reader.ReadInt16
+                Reader.Position = &H14BCAE
+                vrecu = Reader.Position
+                value_travelersreceived.Value = Reader.ReadInt16
+                Reader.Position = &H14BCB0
+                weddi = Reader.Position
+                value_weddings.Value = Reader.ReadInt16
+                Reader.Position = &H14BCB2
+                born = Reader.Position
+                value_childrenborn.Value = Reader.ReadInt16
+                Reader.Position = &H14BCB4
+                vsent = Reader.Position
+                value_travelerssent.Value = Reader.ReadInt16
+                Reader.Position = &H14BCAC
+                stpass = Reader.Position
+                value_streetpassencounters.Value = Reader.ReadInt16
+                Reader.Position = &H14BCF0
+                appart = Reader.Position
+                value_appart.Value = Reader.ReadInt8
+                Reader.Position = &H14BCF1
+                mair = Reader.Position
+                value_mair.Value = Reader.ReadInt8
+                Reader.Position = &H14BCF2
+                info = Reader.Position
+                value_info.Value = Reader.ReadInt8
+                Reader.Position = &H14BCF3
+                classem = Reader.Position
+                value_classem.Value = Reader.ReadInt8
+                Reader.Position = &H14BCF4
+                vetem = Reader.Position
+                value_vetem.Value = Reader.ReadInt8
+                Reader.Position = &H14BCF5
+                chap = Reader.Position
+                value_chap.Value = Reader.ReadInt8
+                Reader.Position = &H14BCF6
+                epicer = Reader.Position
+                value_epicer.Value = Reader.ReadInt8
+                Reader.Position = &H14BCF7
+                deco = Reader.Position
+                value_deco.Value = Reader.ReadInt8
+                Reader.Position = &H14BCF8
+                broc = Reader.Position
+                value_broc.Value = Reader.ReadInt8
+                Reader.Position = &H14BCF9
+                magimport = Reader.Position
+                value_magimport.Value = Reader.ReadInt8
+                Reader.Position = &H14BCFA
+                fontai = Reader.Position
+                value_font.Value = Reader.ReadInt8
+                Reader.Position = &H14BCFB
+                mais = Reader.Position
+                value_mais.Value = Reader.ReadInt8
+                Reader.Position = &H14BCFC
+                port = Reader.Position
+                value_port.Value = Reader.ReadInt8
+                Reader.Position = &H14BCFD
+                tervague = Reader.Position
+                value_tervague.Value = Reader.ReadInt8
+                Reader.Position = &H14BCFE
+                conc = Reader.Position
+                value_conc.Value = Reader.ReadInt8
+                Reader.Position = &H14BCFF
+                test = Reader.Position
+                value_test.Value = Reader.ReadInt8
+                Reader.Position = &H14BD00
+                stud = Reader.Position
+                value_stud.Value = Reader.ReadInt8
+                Reader.Position = &H14BD01
+                plage = Reader.Position
+                value_plage.Value = Reader.ReadInt8
+                Reader.Position = &H14BD02
+                parc1 = Reader.Position
+                value_parc1.Value = Reader.ReadInt8
+                Reader.Position = &H14BD03
+                cafe = Reader.Position
+                value_cafe.Value = Reader.ReadInt8
+                Reader.Position = &H14BD04
+                parc = Reader.Position
+                value_parc.Value = Reader.ReadInt8
+                Reader.Position = &H14BBE8
+                eventfountain = Reader.Position
+                value_eventfountain.Value = Reader.ReadUInt32
+                Reader.Position = &H14BD49
+                appartrenov = Reader.Position
+                value_appartrenov.Value = Reader.ReadInt8
+            End If
+            If Filever_text.Text = "KR" Then
+                Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+                Reader.Position = &H1EFF68
+                money = Reader.Position
+                value_money.Value = Reader.ReadInt32
+                Reader.Position = &H1EFF7C
+                IslN = Reader.Position
+                Text_islandname.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1EFFA6
+                Islp = Reader.Position
+                Text_pronun_islandname.Text = Reader.ReadUnicodeString(20)
+                Reader.Position = &H1EFF76
+                soucis = Reader.Position
+                value_problemsolved.Value = Reader.ReadInt16
+                Reader.Position = &H1EFF6E
+                vrecu = Reader.Position
+                value_travelersreceived.Value = Reader.ReadInt16
+                Reader.Position = &H1EFF70
+                weddi = Reader.Position
+                value_weddings.Value = Reader.ReadInt16
+                Reader.Position = &H1EFF72
+                born = Reader.Position
+                value_childrenborn.Value = Reader.ReadInt16
+                Reader.Position = &H1EFF74
+                vsent = Reader.Position
+                value_travelerssent.Value = Reader.ReadInt16
+                Reader.Position = &H1EFF6C
+                stpass = Reader.Position
+                value_streetpassencounters.Value = Reader.ReadInt16
+                Reader.Position = &H1EFFD0
+                appart = Reader.Position
+                value_appart.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFD1
+                mair = Reader.Position
+                value_mair.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFD2
+                info = Reader.Position
+                value_info.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFD3
+                classem = Reader.Position
+                value_classem.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFD4
+                vetem = Reader.Position
+                value_vetem.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFD5
+                chap = Reader.Position
+                value_chap.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFD6
+                epicer = Reader.Position
+                value_epicer.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFD7
+                deco = Reader.Position
+                value_deco.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFD8
+                broc = Reader.Position
+                value_broc.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFD9
+                magimport = Reader.Position
+                value_magimport.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFDA
+                fontai = Reader.Position
+                value_font.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFDB
+                mais = Reader.Position
+                value_mais.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFDC
+                port = Reader.Position
+                value_port.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFDD
+                tervague = Reader.Position
+                value_tervague.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFDE
+                conc = Reader.Position
+                value_conc.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFDF
+                test = Reader.Position
+                value_test.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFE0
+                stud = Reader.Position
+                value_stud.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFE1
+                plage = Reader.Position
+                value_plage.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFE2
+                parc1 = Reader.Position
+                value_parc1.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFE3
+                cafe = Reader.Position
+                value_cafe.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFE4
+                parc = Reader.Position
+                value_parc.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFE5
+                tour = Reader.Position
+                value_tour.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFE6
+                part = Reader.Position
+                value_part.Value = Reader.ReadInt8
+                Reader.Position = &H1EFEA8
+                eventfountain = Reader.Position
+                value_eventfountain.Value = Reader.ReadUInt32
+                Reader.Position = &H1F0029
+                appartrenov = Reader.Position
+                value_appartrenov.Value = Reader.ReadInt8
+            End If
+            Text_menu_open.Visible = False
+            Text_menu_save.Visible = True
+            Filever_text.Enabled = False
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                fdialog.Text_fdialog.Text = "Failed to read savedataArc.txt, make sure you choose right save file version and to have opened a file, or report this issue"
+                fdialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                fdialog.Text_fdialog.Text = "L'ouverture de savedataArc.txt a échoué, soyez sûr d'avoir choisi la bonne version de sauvegarde et d'avoir ouvert un fichier, ou signalez cet erreur"
+                fdialog.ShowDialog()
+            End If
+            Text_menu_open.Visible = True
+            Text_menu_save.Visible = False
+            Filever_text.Enabled = True
+        End Try
+    End Sub
+
+    Public Sub writesavedataArc()
+
     End Sub
 
     Private Sub Closebutton_Click(sender As Object, e As EventArgs) Handles Closebutton.Click
@@ -139,18 +563,50 @@ Public Class TL_SaveEditor
             Filever_text.Text = "EU"
             TLSE_logo.Image = My.Resources.logo_EU
             TLSE_logo_update.Image = My.Resources.logo_EU_update
+            Icon_pronun_islandname.Visible = True
+            Icon_tour.Image = Nothing
+            Icon_part.Image = Nothing
+            Icon_tour.Enabled = True
+            Icon_part.Enabled = True
+            Icon_pronun_firstname.Visible = True
+            Icon_pronun_lastname.Visible = True
+            Icon_pronun_nickname.Visible = True
         ElseIf Filever_text.Text = "EU" Then
             Filever_text.Text = "JP"
             TLSE_logo.Image = My.Resources.logo_JP
             TLSE_logo_update.Image = My.Resources.logo_JP_update
+            Icon_pronun_islandname.Visible = False
+            Icon_tour.Image = My.Resources.touri
+            Icon_part.Image = My.Resources.parti
+            Icon_tour.Enabled = False
+            Icon_part.Enabled = False
+            Icon_pronun_firstname.Visible = False
+            Icon_pronun_lastname.Visible = False
+            Icon_pronun_nickname.Visible = False
         ElseIf Filever_text.Text = "JP" Then
             Filever_text.Text = "KR"
             TLSE_logo.Image = My.Resources.logo_KR
             TLSE_logo_update.Image = My.Resources.logo_KR_update
+            Icon_pronun_islandname.Visible = True
+            Icon_tour.Image = Nothing
+            Icon_part.Image = Nothing
+            Icon_tour.Enabled = True
+            Icon_part.Enabled = True
+            Icon_pronun_firstname.Visible = True
+            Icon_pronun_lastname.Visible = True
+            Icon_pronun_nickname.Visible = True
         ElseIf Filever_text.Text = "KR" Then
             Filever_text.Text = "US"
             TLSE_logo.Image = My.Resources.logo_US
             TLSE_logo_update.Image = My.Resources.logo_US_update
+            Icon_pronun_islandname.Visible = True
+            Icon_tour.Image = Nothing
+            Icon_part.Image = Nothing
+            Icon_tour.Enabled = True
+            Icon_part.Enabled = True
+            Icon_pronun_firstname.Visible = True
+            Icon_pronun_lastname.Visible = True
+            Icon_pronun_nickname.Visible = True
         End If
     End Sub
 
@@ -293,7 +749,7 @@ Public Class TL_SaveEditor
     Private Sub Select_language_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_language.SelectedIndexChanged
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
             Text_menu_button.Text = "Menu"
-            Text_menu_opensave.Text = "Open"
+            Text_menu_open.Text = "Open"
             Menu_text_extras.Text = "Extras"
             Menu_text_islandedit.Text = "Island edit"
             Menu_text_miiedit.Text = "Mii edit"
@@ -311,9 +767,90 @@ Public Class TL_SaveEditor
             Title_weddings.Text = "Weddings"
             Check_resetstpspp.Text = "Reset Tomodachi Life Streetpass / Spotpass"
             Check_timetravel.Text = "Remove time travel penality"
+            Setting_music.Text = "Active background music"
+            Setting_hidden.Text = "Show hidden things"
+            Setting_filepath.Text = "Show file path"
+            Setting_ckupdate.Text = "Unactive check update"
+            Text_language.Text = "Language"
+            Tab_mii_edit.Text = "Edit"
+            Tab_mii_status.Text = "Status"
+            Tab_mii_friendlist.Text = "Friendlist"
+            Tab_mii_extras.Text = "Extras"
+            Title_sharing.Text = "Sharing"
+            Title_copying.Text = "Copying"
+            Title_firstname.Text = "First Name"
+            Title_lastname.Text = "Last Name"
+            Title_nickname.Text = "Nickname"
+            Title_favcolor.Text = "Favorite Color"
+            Title_relationyou.Text = "Relation to real You"
+            Title_growkid.Text = "Grown-up / Kid"
+            Title_haircolor.Text = "Hair Color"
+            Title_creator.Text = "Creator"
+            Text_save_mii.Text = "Save changes"
+            Select_unlock_gooditems.Items.Item(0) = "Do nothing"
+            Select_unlock_gooditems.Items.Item(1) = "Unlock all"
+            Select_unlock_gooditems.Items.Item(2) = "Delete all"
+            Select_unlock_interiors.Items.Item(0) = "Do nothing"
+            Select_unlock_interiors.Items.Item(1) = "Unlock all"
+            Select_unlock_interiors.Items.Item(2) = "Delete all"
+            Select_unlock_specialfoods.Items.Item(0) = "Do nothing"
+            Select_unlock_specialfoods.Items.Item(1) = "Unlock all"
+            Select_unlock_specialfoods.Items.Item(2) = "Delete all"
+            color_empty.Text = "normal"
+            Button_close_hcoloredit.Text = "OK"
+            Text_unlock_music.Text = "Unlock all"
+            Text_edit_metal.Text = "Metal"
+            Text_edit_pop.Text = "Pop"
+            Text_edit_rockroll.Text = "Rock' n' Roll"
+            Text_edit_rap.Text = "Rap"
+            Text_edit_ballad.Text = "Ballad"
+            Text_edit_opera.Text = "Opera"
+            Text_edit_techno.Text = "Techno"
+            Text_edit_musical.Text = "Musical"
+            Text_level.Text = "Lv."
+            Title_foods_allfav.Text = "Super All-Time Fav / All-Time Fav"
+            Title_foods_favorite.Text = "Favorite Foods"
+            Title_foods_worst.Text = "Worst / Worst Ever"
+            Text_fullness.Text = "Fullness"
+            Check_fullness.Text = "He didn't eat"
+            Title_interactionpattern.Text = "Interaction pattern"
+            Title_target1.Text = "Target 1"
+            Title_target2.Text = "Target 2"
+            Title_emotions.Text = "Emotions"
+            Select_growkid.Items.Item(0) = "Grown-up"
+            Select_growkid.Items.Item(1) = "Grown-up (1)"
+            Select_growkid.Items.Item(2) = "Kid"
+            Select_relationyou.Items.Item(0) = "Child"
+            Select_relationyou.Items.Item(1) = "Not Related"
+            Select_relationyou.Items.Item(2) = "Other Relative"
+            Select_relationyou.Items.Item(3) = "Parent"
+            Select_relationyou.Items.Item(4) = "Self"
+            Select_relationyou.Items.Item(5) = "Sibling"
+            Select_relationyou.Items.Item(6) = "Spouse"
+            Select_interaction.Items.Item(0) = "Nothing"
+            Select_interaction.Items.Item(1) = "I'm hungry"
+            Select_interaction.Items.Item(2) = "I'm hungry(1)"
+            Select_interaction.Items.Item(3) = "I'm hungry(2)"
+            Select_interaction.Items.Item(4) = "In love with"
+            Select_interaction.Items.Item(5) = "angry at"
+            Select_interaction.Items.Item(6) = "angry at(1)"
+            Select_interaction.Items.Item(7) = "In love with (undecided)"
+            Select_interaction.Items.Item(8) = "Dream"
+            Select_interaction.Items.Item(9) = "I need new clothes"
+            Select_interaction.Items.Item(10) = "I need new clothes (something classy)"
+            Select_interaction.Items.Item(11) = "I need new clothes (to do sports)"
+            Select_interaction.Items.Item(12) = "Can I tell you about my [love stories? / my wife?]"
+            Select_interaction.Items.Item(13) = "Sad : love rejected"
+            Select_interaction.Items.Item(14) = "Want to get married"
+            Select_emotions.Items.Item(0) = "Normal"
+            Select_emotions.Items.Item(1) = "Happy"
+            Select_emotions.Items.Item(2) = "Angry"
+            Select_emotions.Items.Item(3) = "Sad"
+            Select_emotions.Items.Item(4) = "In love"
+            Button_setallfriends.Text = "Set all to"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_menu_button.Text = "Menu"
-            Text_menu_opensave.Text = "Ouvrir"
+            Text_menu_open.Text = "Ouvrir"
             Menu_text_extras.Text = "Extras"
             Menu_text_islandedit.Text = "Édition île"
             Menu_text_miiedit.Text = "Édition Mii"
@@ -331,6 +868,87 @@ Public Class TL_SaveEditor
             Title_weddings.Text = "Mariages"
             Check_resetstpspp.Text = "Réinitialiser Streetpass / Spotpass de Tomodachi Life"
             Check_timetravel.Text = "Retirer la pénalité de voyage dans le temps"
+            Setting_music.Text = "Activer la musique de fond"
+            Setting_hidden.Text = "Afficher les choses cachés"
+            Setting_filepath.Text = "Afficher le chemin du fichier"
+            Setting_ckupdate.Text = "Désactiver la vérification des mises à jour"
+            Text_language.Text = "Langage"
+            Tab_mii_edit.Text = "Édition"
+            Tab_mii_status.Text = "Status"
+            Tab_mii_friendlist.Text = "Liste d'amis"
+            Tab_mii_extras.Text = "Extras"
+            Title_sharing.Text = "Partage"
+            Title_copying.Text = "Copie"
+            Title_firstname.Text = "Prénom"
+            Title_lastname.Text = "Nom"
+            Title_nickname.Text = "Surnom"
+            Title_favcolor.Text = "Couleur favorite"
+            Title_relationyou.Text = "Relation avec le ''vous'' réel"
+            Title_growkid.Text = "Adulte / Enfant"
+            Title_haircolor.Text = "Couleur cheveux"
+            Title_creator.Text = "Créateur"
+            Text_save_mii.Text = "Enregistrer changements"
+            Select_unlock_gooditems.Items.Item(0) = "Ne rien faire"
+            Select_unlock_gooditems.Items.Item(1) = "Tout débloquer"
+            Select_unlock_gooditems.Items.Item(2) = "Tout supprimer"
+            Select_unlock_interiors.Items.Item(0) = "Ne rien faire"
+            Select_unlock_interiors.Items.Item(1) = "Tout débloquer"
+            Select_unlock_interiors.Items.Item(2) = "Tout supprimer"
+            Select_unlock_specialfoods.Items.Item(0) = "Ne rien faire"
+            Select_unlock_specialfoods.Items.Item(1) = "Tout débloquer"
+            Select_unlock_specialfoods.Items.Item(2) = "Tout supprimer"
+            color_empty.Text = "normal"
+            Button_close_hcoloredit.Text = "OK"
+            Text_unlock_music.Text = "Tout débloquer"
+            Text_edit_metal.Text = "Métal"
+            Text_edit_pop.Text = "Pop"
+            Text_edit_rockroll.Text = "Rock' n' Roll"
+            Text_edit_rap.Text = "Rap"
+            Text_edit_ballad.Text = "Ballade"
+            Text_edit_opera.Text = "Opéra"
+            Text_edit_techno.Text = "Techno"
+            Text_edit_musical.Text = "Musicale"
+            Text_level.Text = "Niv."
+            Title_foods_allfav.Text = "Adore / Aime beaucoup"
+            Title_foods_favorite.Text = "Aime bien"
+            Title_foods_worst.Text = "N'aime pas / Déteste"
+            Text_fullness.Text = "Estomac"
+            Check_fullness.Text = "Il a pas mangé"
+            Title_interactionpattern.Text = "Interaction"
+            Title_target1.Text = "Cible 1"
+            Title_target2.Text = "Cible 2"
+            Title_emotions.Text = "Émotions"
+            Select_growkid.Items.Item(0) = "Adulte"
+            Select_growkid.Items.Item(1) = "Adulte (1)"
+            Select_growkid.Items.Item(2) = "Enfant"
+            Select_relationyou.Items.Item(0) = "Enfant"
+            Select_relationyou.Items.Item(1) = "Aucune parenté"
+            Select_relationyou.Items.Item(2) = "Famille"
+            Select_relationyou.Items.Item(3) = "Parent"
+            Select_relationyou.Items.Item(4) = "Moi-même"
+            Select_relationyou.Items.Item(5) = "Frère / Soeur"
+            Select_relationyou.Items.Item(6) = "Épouse"
+            Select_interaction.Items.Item(0) = "Rien"
+            Select_interaction.Items.Item(1) = "J'ai faim"
+            Select_interaction.Items.Item(2) = "J'ai faim (1)"
+            Select_interaction.Items.Item(3) = "J'ai faim (2)"
+            Select_interaction.Items.Item(4) = "Amoureux de"
+            Select_interaction.Items.Item(5) = "Faché contre"
+            Select_interaction.Items.Item(6) = "Faché contre (1)"
+            Select_interaction.Items.Item(7) = "Amoureux de (indécis)"
+            Select_interaction.Items.Item(8) = "Rêve"
+            Select_interaction.Items.Item(9) = "J'ai besoin de nouveaux vêtements"
+            Select_interaction.Items.Item(10) = "J'ai besoin de nouveaux vêtements (qq.chose de classe)"
+            Select_interaction.Items.Item(11) = "J'ai besoin de nouveaux vêtements (pr.faire du sports)"
+            Select_interaction.Items.Item(12) = "Puis-je vous parler de [mes histoires d'amour? / ma femme?]"
+            Select_interaction.Items.Item(13) = "Triste : amour rejeté"
+            Select_interaction.Items.Item(14) = "Veux se marrier"
+            Select_emotions.Items.Item(0) = "Normal"
+            Select_emotions.Items.Item(1) = "Heureux"
+            Select_emotions.Items.Item(2) = "En colère"
+            Select_emotions.Items.Item(3) = "Triste"
+            Select_emotions.Items.Item(4) = "Amoureux"
+            Button_setallfriends.Text = "Mettre tout à"
         End If
     End Sub
 
@@ -1207,5 +1825,361 @@ Public Class TL_SaveEditor
         ElseIf valu_fullness.Value = 100 Then
             Icon_fullness.Image = My.Resources.fullness_100
         End If
+    End Sub
+
+    Private Sub Text_menu_open_Click(sender As Object, e As EventArgs) Handles Text_menu_open.Click
+        Dim open As New OpenFileDialog
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            fdialog.Text_fdialog.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a backup of your save file, check ''bak'' folder"
+            fdialog.ShowDialog()
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            fdialog.Text_fdialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde, vérifiez le dossier ''bak''"
+            fdialog.ShowDialog()
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            open.Filter = "Text files|*.txt"
+            open.Title = "Open save savedataArc.txt"
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            open.Filter = "Fichiers texte|*.txt"
+            open.Title = "Ouvrir la sauvegarde savedataArc.txt"
+        End If
+        open.ShowDialog()
+        savedataArc = open.FileName
+        TextBox_fpath.Text = savedataArc
+        readsavedataArc()
+    End Sub
+
+    Private Sub valu_experience_ValueChanged(sender As Object, e As EventArgs) Handles valu_experience.ValueChanged
+        valu_exp.Value = valu_experience.Value
+        If valu_experience.Value = 0 Then
+            Icon_experience.Image = My.Resources.exp0
+        End If
+        If valu_experience.Value = 1 Then
+            Icon_experience.Image = My.Resources.exp1
+        End If
+        If valu_experience.Value = 2 Then
+            Icon_experience.Image = My.Resources.exp2
+        End If
+        If valu_experience.Value = 3 Then
+            Icon_experience.Image = My.Resources.exp3
+        End If
+        If valu_experience.Value = 4 Then
+            Icon_experience.Image = My.Resources.exp4
+        End If
+        If valu_experience.Value = 5 Then
+            Icon_experience.Image = My.Resources.exp5
+        End If
+        If valu_experience.Value = 6 Then
+            Icon_experience.Image = My.Resources.exp6
+        End If
+        If valu_experience.Value = 7 Then
+            Icon_experience.Image = My.Resources.exp7
+        End If
+        If valu_experience.Value = 8 Then
+            Icon_experience.Image = My.Resources.exp8
+        End If
+        If valu_experience.Value = 9 Then
+            Icon_experience.Image = My.Resources.exp9
+        End If
+        If valu_experience.Value = 10 Then
+            Icon_experience.Image = My.Resources.exp10
+        End If
+        If valu_experience.Value = 11 Then
+            Icon_experience.Image = My.Resources.exp11
+        End If
+        If valu_experience.Value = 12 Then
+            Icon_experience.Image = My.Resources.exp12
+        End If
+        If valu_experience.Value = 13 Then
+            Icon_experience.Image = My.Resources.exp13
+        End If
+        If valu_experience.Value = 14 Then
+            Icon_experience.Image = My.Resources.exp14
+        End If
+        If valu_experience.Value = 15 Then
+            Icon_experience.Image = My.Resources.exp15
+        End If
+        If valu_experience.Value = 16 Then
+            Icon_experience.Image = My.Resources.exp16
+        End If
+        If valu_experience.Value = 17 Then
+            Icon_experience.Image = My.Resources.exp17
+        End If
+        If valu_experience.Value = 18 Then
+            Icon_experience.Image = My.Resources.exp18
+        End If
+        If valu_experience.Value = 19 Then
+            Icon_experience.Image = My.Resources.exp19
+        End If
+        If valu_experience.Value = 20 Then
+            Icon_experience.Image = My.Resources.exp20
+        End If
+        If valu_experience.Value = 21 Then
+            Icon_experience.Image = My.Resources.exp21
+        End If
+        If valu_experience.Value = 22 Then
+            Icon_experience.Image = My.Resources.exp22
+        End If
+        If valu_experience.Value = 23 Then
+            Icon_experience.Image = My.Resources.exp23
+        End If
+        If valu_experience.Value = 24 Then
+            Icon_experience.Image = My.Resources.exp24
+        End If
+        If valu_experience.Value = 25 Then
+            Icon_experience.Image = My.Resources.exp25
+        End If
+        If valu_experience.Value = 26 Then
+            Icon_experience.Image = My.Resources.exp26
+        End If
+        If valu_experience.Value = 27 Then
+            Icon_experience.Image = My.Resources.exp27
+        End If
+        If valu_experience.Value = 28 Then
+            Icon_experience.Image = My.Resources.exp28
+        End If
+        If valu_experience.Value = 29 Then
+            Icon_experience.Image = My.Resources.exp29
+        End If
+        If valu_experience.Value = 30 Then
+            Icon_experience.Image = My.Resources.exp30
+        End If
+        If valu_experience.Value = 31 Then
+            Icon_experience.Image = My.Resources.exp31
+        End If
+        If valu_experience.Value = 32 Then
+            Icon_experience.Image = My.Resources.exp32
+        End If
+        If valu_experience.Value = 33 Then
+            Icon_experience.Image = My.Resources.exp33
+        End If
+        If valu_experience.Value = 34 Then
+            Icon_experience.Image = My.Resources.exp34
+        End If
+        If valu_experience.Value = 35 Then
+            Icon_experience.Image = My.Resources.exp35
+        End If
+        If valu_experience.Value = 36 Then
+            Icon_experience.Image = My.Resources.exp36
+        End If
+        If valu_experience.Value = 37 Then
+            Icon_experience.Image = My.Resources.exp37
+        End If
+        If valu_experience.Value = 38 Then
+            Icon_experience.Image = My.Resources.exp38
+        End If
+        If valu_experience.Value = 39 Then
+            Icon_experience.Image = My.Resources.exp39
+        End If
+        If valu_experience.Value = 40 Then
+            Icon_experience.Image = My.Resources.exp40
+        End If
+        If valu_experience.Value = 41 Then
+            Icon_experience.Image = My.Resources.exp41
+        End If
+        If valu_experience.Value = 42 Then
+            Icon_experience.Image = My.Resources.exp42
+        End If
+        If valu_experience.Value = 43 Then
+            Icon_experience.Image = My.Resources.exp43
+        End If
+        If valu_experience.Value = 44 Then
+            Icon_experience.Image = My.Resources.exp44
+        End If
+        If valu_experience.Value = 45 Then
+            Icon_experience.Image = My.Resources.exp45
+        End If
+        If valu_experience.Value = 46 Then
+            Icon_experience.Image = My.Resources.exp46
+        End If
+        If valu_experience.Value = 47 Then
+            Icon_experience.Image = My.Resources.exp47
+        End If
+        If valu_experience.Value = 48 Then
+            Icon_experience.Image = My.Resources.exp48
+        End If
+        If valu_experience.Value = 49 Then
+            Icon_experience.Image = My.Resources.exp49
+        End If
+        If valu_experience.Value = 50 Then
+            Icon_experience.Image = My.Resources.exp50
+        End If
+        If valu_experience.Value = 51 Then
+            Icon_experience.Image = My.Resources.exp51
+        End If
+        If valu_experience.Value = 52 Then
+            Icon_experience.Image = My.Resources.exp52
+        End If
+        If valu_experience.Value = 53 Then
+            Icon_experience.Image = My.Resources.exp53
+        End If
+        If valu_experience.Value = 54 Then
+            Icon_experience.Image = My.Resources.exp54
+        End If
+        If valu_experience.Value = 55 Then
+            Icon_experience.Image = My.Resources.exp55
+        End If
+        If valu_experience.Value = 56 Then
+            Icon_experience.Image = My.Resources.exp56
+        End If
+        If valu_experience.Value = 57 Then
+            Icon_experience.Image = My.Resources.exp57
+        End If
+        If valu_experience.Value = 58 Then
+            Icon_experience.Image = My.Resources.exp58
+        End If
+        If valu_experience.Value = 59 Then
+            Icon_experience.Image = My.Resources.exp59
+        End If
+        If valu_experience.Value = 60 Then
+            Icon_experience.Image = My.Resources.exp60
+        End If
+        If valu_experience.Value = 61 Then
+            Icon_experience.Image = My.Resources.exp61
+        End If
+        If valu_experience.Value = 62 Then
+            Icon_experience.Image = My.Resources.exp62
+        End If
+        If valu_experience.Value = 63 Then
+            Icon_experience.Image = My.Resources.exp63
+        End If
+        If valu_experience.Value = 64 Then
+            Icon_experience.Image = My.Resources.exp64
+        End If
+        If valu_experience.Value = 65 Then
+            Icon_experience.Image = My.Resources.exp65
+        End If
+        If valu_experience.Value = 66 Then
+            Icon_experience.Image = My.Resources.exp66
+        End If
+        If valu_experience.Value = 67 Then
+            Icon_experience.Image = My.Resources.exp67
+        End If
+        If valu_experience.Value = 68 Then
+            Icon_experience.Image = My.Resources.exp68
+        End If
+        If valu_experience.Value = 69 Then
+            Icon_experience.Image = My.Resources.exp69
+        End If
+        If valu_experience.Value = 70 Then
+            Icon_experience.Image = My.Resources.exp70
+        End If
+        If valu_experience.Value = 71 Then
+            Icon_experience.Image = My.Resources.exp71
+        End If
+        If valu_experience.Value = 72 Then
+            Icon_experience.Image = My.Resources.exp72
+        End If
+        If valu_experience.Value = 73 Then
+            Icon_experience.Image = My.Resources.exp73
+        End If
+        If valu_experience.Value = 74 Then
+            Icon_experience.Image = My.Resources.exp74
+        End If
+        If valu_experience.Value = 75 Then
+            Icon_experience.Image = My.Resources.exp75
+        End If
+        If valu_experience.Value = 76 Then
+            Icon_experience.Image = My.Resources.exp76
+        End If
+        If valu_experience.Value = 77 Then
+            Icon_experience.Image = My.Resources.exp77
+        End If
+        If valu_experience.Value = 78 Then
+            Icon_experience.Image = My.Resources.exp78
+        End If
+        If valu_experience.Value = 79 Then
+            Icon_experience.Image = My.Resources.exp79
+        End If
+        If valu_experience.Value = 80 Then
+            Icon_experience.Image = My.Resources.exp80
+        End If
+        If valu_experience.Value = 81 Then
+            Icon_experience.Image = My.Resources.exp81
+        End If
+        If valu_experience.Value = 82 Then
+            Icon_experience.Image = My.Resources.exp82
+        End If
+        If valu_experience.Value = 83 Then
+            Icon_experience.Image = My.Resources.exp83
+        End If
+        If valu_experience.Value = 84 Then
+            Icon_experience.Image = My.Resources.exp84
+        End If
+        If valu_experience.Value = 85 Then
+            Icon_experience.Image = My.Resources.exp85
+        End If
+        If valu_experience.Value = 86 Then
+            Icon_experience.Image = My.Resources.exp86
+        End If
+        If valu_experience.Value = 87 Then
+            Icon_experience.Image = My.Resources.exp87
+        End If
+        If valu_experience.Value = 88 Then
+            Icon_experience.Image = My.Resources.exp88
+        End If
+        If valu_experience.Value = 89 Then
+            Icon_experience.Image = My.Resources.exp89
+        End If
+        If valu_experience.Value = 90 Then
+            Icon_experience.Image = My.Resources.exp90
+        End If
+        If valu_experience.Value = 91 Then
+            Icon_experience.Image = My.Resources.exp91
+        End If
+        If valu_experience.Value = 92 Then
+            Icon_experience.Image = My.Resources.exp92
+        End If
+        If valu_experience.Value = 93 Then
+            Icon_experience.Image = My.Resources.exp93
+        End If
+        If valu_experience.Value = 94 Then
+            Icon_experience.Image = My.Resources.exp94
+        End If
+        If valu_experience.Value = 95 Then
+            Icon_experience.Image = My.Resources.exp95
+        End If
+        If valu_experience.Value = 96 Then
+            Icon_experience.Image = My.Resources.exp96
+        End If
+        If valu_experience.Value = 97 Then
+            Icon_experience.Image = My.Resources.exp97
+        End If
+        If valu_experience.Value = 98 Then
+            Icon_experience.Image = My.Resources.exp98
+        End If
+        If valu_experience.Value = 99 Then
+            Icon_experience.Image = My.Resources.exp99
+        End If
+    End Sub
+
+    Private Sub valu_exp_ValueChanged(sender As Object, e As EventArgs) Handles valu_exp.ValueChanged
+        valu_experience.Value = valu_exp.Value
+    End Sub
+
+    Private Sub Fea_edit_travelers_Click(sender As Object, e As EventArgs) Handles Fea_edit_travelers.Click
+
+    End Sub
+
+    Private Sub Fea_edit_travelers_MouseLeave(sender As Object, e As EventArgs) Handles Fea_edit_travelers.MouseLeave
+        Fea_edit_travelers.BackColor = Color.White
+    End Sub
+
+    Private Sub Fea_edit_travelers_MouseMove(sender As Object, e As MouseEventArgs) Handles Fea_edit_travelers.MouseMove
+        Fea_edit_travelers.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Fea_edit_concert_Click(sender As Object, e As EventArgs) Handles Fea_edit_concert.Click
+
+    End Sub
+
+    Private Sub Fea_edit_concert_MouseLeave(sender As Object, e As EventArgs) Handles Fea_edit_concert.MouseLeave
+        Fea_edit_concert.BackColor = Color.White
+    End Sub
+
+    Private Sub Fea_edit_concert_MouseMove(sender As Object, e As MouseEventArgs) Handles Fea_edit_concert.MouseMove
+        Fea_edit_concert.BackColor = Color.Orange
     End Sub
 End Class
