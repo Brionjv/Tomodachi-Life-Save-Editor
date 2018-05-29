@@ -48,3 +48,7 @@ C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save E
 C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.Formsettings.resources
 C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.Form8.resources
 C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.Form9.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\bin\Release\Tomodachi Life Save Editor.exe.config
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.exe
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.xml
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.pdb

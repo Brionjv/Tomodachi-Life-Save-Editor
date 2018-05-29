@@ -4,6 +4,7 @@ Public Class TL_SaveEditor
     Private MousedwnX As Integer
     Private MousedwnY As Integer
     Dim fdialog As New Form2
+    Dim applicationpath = Application.StartupPath
     Dim savedataArc As String
     Dim money As String
     Dim IslN As String
@@ -161,35 +162,63 @@ Public Class TL_SaveEditor
         color_empty.BorderStyle = BorderStyle.None
     End Sub
 
-    Public Sub Checkupdates()
+    Public Sub makebak()
         Try
-            Dim MAJ As New WebClient
-            Dim lastupdate As String = MAJ.DownloadString("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/Version.txt")
-            If Text_TLSE_version.Text = lastupdate Then
-                TLSE_logo.Visible = True
-                TLSE_logo_update.Visible = False
-            Else
-                TLSE_logo.Visible = False
-                TLSE_logo_update.Visible = True
+            If Filever_text.Text = "US" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\bak\USA\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+            If Filever_text.Text = "EU" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\bak\EUR\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+            If Filever_text.Text = "JP" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\bak\JPN\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+            If Filever_text.Text = "KR" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\bak\KOR\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Public Sub Checkupdates()
+        If Setting_ckupdate.Checked = False Then
+            Try
+                Dim MAJ As New WebClient
+                Dim lastupdate As String = MAJ.DownloadString("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/Version.txt")
+                If Text_TLSE_version.Text = lastupdate Then
+                    TLSE_logo.Visible = True
+                    TLSE_logo_update.Visible = False
+                Else
+                    TLSE_logo.Visible = False
+                    TLSE_logo_update.Visible = True
+                    If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                        fdialog.Text_fdialog.Text = "An update is avalible, click on Tomodachi Life Save Editor icon to download new version"
+                        fdialog.ShowDialog()
+                    End If
+                    If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                        fdialog.Text_fdialog.Text = "Une mise à jour est disponible, cliquez sur l'îcone de Tomodachi Life Save Editor pour télécharger la nouvelle version"
+                        fdialog.ShowDialog()
+                    End If
+                End If
+            Catch ex As Exception
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                    fdialog.Text_fdialog.Text = "An update is avalible, click on Tomodachi Life Save Editor icon to download new version"
+                    fdialog.Text_fdialog.Text = "An error has occured when checking updates"
                     fdialog.ShowDialog()
                 End If
                 If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                    fdialog.Text_fdialog.Text = "Une mise à jour est disponible, cliquez sur l'îcone de Tomodachi Life Save Editor pour télécharger la nouvelle version"
+                    fdialog.Text_fdialog.Text = "Une erreur est survenue lors de la vérification des mises à jour"
                     fdialog.ShowDialog()
                 End If
-            End If
-        Catch ex As Exception
-            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "An error has occured when checking updates"
-                fdialog.ShowDialog()
-            End If
-            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "Une erreur est survenue lors de la vérification des mises à jour"
-                fdialog.ShowDialog()
-            End If
-        End Try
+            End Try
+        End If
     End Sub
 
     Public Sub readsavedataArc()
@@ -198,7 +227,7 @@ Public Class TL_SaveEditor
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
                 Reader.Position = &H1E4BB8
                 money = Reader.Position
-                value_money.Value = Reader.ReadInt32
+                value_money.Value = Reader.ReadUInt32
                 Reader.Position = &H1E4BCC
                 IslN = Reader.Position
                 Text_islandname.Text = Reader.ReadUnicodeString(10)
@@ -207,22 +236,22 @@ Public Class TL_SaveEditor
                 Text_pronun_islandname.Text = Reader.ReadUnicodeString(20)
                 Reader.Position = &H1E4BC6
                 soucis = Reader.Position
-                value_problemsolved.Value = Reader.ReadInt16
+                value_problemsolved.Value = Reader.ReadUInt16
                 Reader.Position = &H1E4BBE
                 vrecu = Reader.Position
-                value_travelersreceived.Value = Reader.ReadInt16
+                value_travelersreceived.Value = Reader.ReadUInt16
                 Reader.Position = &H1E4BC0
                 weddi = Reader.Position
-                value_weddings.Value = Reader.ReadInt16
+                value_weddings.Value = Reader.ReadUInt16
                 Reader.Position = &H1E4BC2
                 born = Reader.Position
-                value_childrenborn.Value = Reader.ReadInt16
+                value_childrenborn.Value = Reader.ReadUInt16
                 Reader.Position = &H1E4BC4
                 vsent = Reader.Position
-                value_travelerssent.Value = Reader.ReadInt16
+                value_travelerssent.Value = Reader.ReadUInt16
                 Reader.Position = &H1E4BBC
                 stpass = Reader.Position
-                value_streetpassencounters.Value = Reader.ReadInt16
+                value_streetpassencounters.Value = Reader.ReadUInt16
                 Reader.Position = &H1E4C20
                 appart = Reader.Position
                 value_appart.Value = Reader.ReadInt8
@@ -303,28 +332,28 @@ Public Class TL_SaveEditor
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
                 Reader.Position = &H14BCA8
                 money = Reader.Position
-                value_money.Value = Reader.ReadInt32
+                value_money.Value = Reader.ReadUInt32
                 Reader.Position = &H14BCBC
                 IslN = Reader.Position
                 Text_islandname.Text = Reader.ReadUnicodeString(10)
                 Reader.Position = &H14BCB6
                 soucis = Reader.Position
-                value_problemsolved.Value = Reader.ReadInt16
+                value_problemsolved.Value = Reader.ReadUInt16
                 Reader.Position = &H14BCAE
                 vrecu = Reader.Position
-                value_travelersreceived.Value = Reader.ReadInt16
+                value_travelersreceived.Value = Reader.ReadUInt16
                 Reader.Position = &H14BCB0
                 weddi = Reader.Position
-                value_weddings.Value = Reader.ReadInt16
+                value_weddings.Value = Reader.ReadUInt16
                 Reader.Position = &H14BCB2
                 born = Reader.Position
-                value_childrenborn.Value = Reader.ReadInt16
+                value_childrenborn.Value = Reader.ReadUInt16
                 Reader.Position = &H14BCB4
                 vsent = Reader.Position
-                value_travelerssent.Value = Reader.ReadInt16
+                value_travelerssent.Value = Reader.ReadUInt16
                 Reader.Position = &H14BCAC
                 stpass = Reader.Position
-                value_streetpassencounters.Value = Reader.ReadInt16
+                value_streetpassencounters.Value = Reader.ReadUInt16
                 Reader.Position = &H14BCF0
                 appart = Reader.Position
                 value_appart.Value = Reader.ReadInt8
@@ -399,7 +428,7 @@ Public Class TL_SaveEditor
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
                 Reader.Position = &H1EFF68
                 money = Reader.Position
-                value_money.Value = Reader.ReadInt32
+                value_money.Value = Reader.ReadUInt32
                 Reader.Position = &H1EFF7C
                 IslN = Reader.Position
                 Text_islandname.Text = Reader.ReadUnicodeString(10)
@@ -408,22 +437,22 @@ Public Class TL_SaveEditor
                 Text_pronun_islandname.Text = Reader.ReadUnicodeString(20)
                 Reader.Position = &H1EFF76
                 soucis = Reader.Position
-                value_problemsolved.Value = Reader.ReadInt16
+                value_problemsolved.Value = Reader.ReadUInt16
                 Reader.Position = &H1EFF6E
                 vrecu = Reader.Position
-                value_travelersreceived.Value = Reader.ReadInt16
+                value_travelersreceived.Value = Reader.ReadUInt16
                 Reader.Position = &H1EFF70
                 weddi = Reader.Position
-                value_weddings.Value = Reader.ReadInt16
+                value_weddings.Value = Reader.ReadUInt16
                 Reader.Position = &H1EFF72
                 born = Reader.Position
-                value_childrenborn.Value = Reader.ReadInt16
+                value_childrenborn.Value = Reader.ReadUInt16
                 Reader.Position = &H1EFF74
                 vsent = Reader.Position
-                value_travelerssent.Value = Reader.ReadInt16
+                value_travelerssent.Value = Reader.ReadUInt16
                 Reader.Position = &H1EFF6C
                 stpass = Reader.Position
-                value_streetpassencounters.Value = Reader.ReadInt16
+                value_streetpassencounters.Value = Reader.ReadUInt16
                 Reader.Position = &H1EFFD0
                 appart = Reader.Position
                 value_appart.Value = Reader.ReadInt8
@@ -503,6 +532,7 @@ Public Class TL_SaveEditor
             Text_menu_open.Visible = False
             Text_menu_save.Visible = True
             Filever_text.Enabled = False
+            Select_language.Enabled = False
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Failed to read savedataArc.txt, make sure you choose right save file version and to have opened a file, or report this issue"
@@ -515,11 +545,190 @@ Public Class TL_SaveEditor
             Text_menu_open.Visible = True
             Text_menu_save.Visible = False
             Filever_text.Enabled = True
+            Select_language.Enabled = True
         End Try
     End Sub
 
     Public Sub writesavedataArc()
+        Try
+            Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+            Writer.Position = money
+            Writer.WriteUInt32(value_money.Value)
+            For i As Integer = 0 To 19
+                Writer.Position = IslN + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = IslN
+            Writer.WriteUnicodeString(Text_islandname.Text)
+            Writer.Position = soucis
+            Writer.WriteUInt16(value_problemsolved.Value)
+            Writer.Position = vrecu
+            Writer.WriteUInt16(value_travelersreceived.Value)
+            Writer.Position = weddi
+            Writer.WriteUInt16(value_weddings.Value)
+            Writer.Position = born
+            Writer.WriteUInt16(value_childrenborn.Value)
+            Writer.Position = vsent
+            Writer.WriteUInt16(value_travelerssent.Value)
+            Writer.Position = stpass
+            Writer.WriteUInt16(value_streetpassencounters.Value)
+            Writer.Position = appart
+            Writer.WriteInt8(value_appart.Value)
+            Writer.Position = mair
+            Writer.WriteInt8(value_mair.Value)
+            Writer.Position = info
+            Writer.WriteInt8(value_info.Value)
+            Writer.Position = classem
+            Writer.WriteInt8(value_classem.Value)
+            Writer.Position = vetem
+            Writer.WriteInt8(value_vetem.Value)
+            Writer.Position = chap
+            Writer.WriteInt8(value_chap.Value)
+            Writer.Position = epicer
+            Writer.WriteInt8(value_epicer.Value)
+            Writer.Position = deco
+            Writer.WriteInt8(value_deco.Value)
+            Writer.Position = broc
+            Writer.WriteInt8(value_broc.Value)
+            Writer.Position = magimport
+            Writer.WriteInt8(value_magimport.Value)
+            Writer.Position = fontai
+            Writer.WriteInt8(value_font.Value)
+            Writer.Position = mais
+            Writer.WriteInt8(value_mais.Value)
+            Writer.Position = port
+            Writer.WriteInt8(value_port.Value)
+            Writer.Position = tervague
+            Writer.WriteInt8(value_tervague.Value)
+            Writer.Position = conc
+            Writer.WriteInt8(value_conc.Value)
+            Writer.Position = test
+            Writer.WriteInt8(value_test.Value)
+            Writer.Position = stud
+            Writer.WriteInt8(value_stud.Value)
+            Writer.Position = plage
+            Writer.WriteInt8(value_plage.Value)
+            Writer.Position = parc1
+            Writer.WriteInt8(value_parc1.Value)
+            Writer.Position = cafe
+            Writer.WriteInt8(value_cafe.Value)
+            Writer.Position = parc
+            Writer.WriteInt8(value_parc.Value)
+            Writer.Position = eventfountain
+            Writer.WriteUInt32(value_eventfountain.Value)
+            Writer.Position = appartrenov
+            Writer.WriteInt8(value_appartrenov.Value)
+            If Filever_text.Text = "EU" Then
+                For i As Integer = 0 To 19
+                    Writer.Position = Islp + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = Islp
+                Writer.WriteUnicodeString(Text_pronun_islandname.Text)
+                Writer.Position = tour
+                Writer.WriteInt8(value_tour.Value)
+                Writer.Position = part
+                Writer.WriteInt8(value_part.Value)
+                If Check_timetravel.Checked = True Then
+                    Writer.Position = &H1E4C70
+                    Writer.WriteInt8(0)
+                End If
+                If Check_resetstpspp.Checked = True Then
+                    Writer.Position = &H1E4C71
+                    Writer.WriteInt8(0)
+                End If
+            End If
+            If Filever_text.Text = "US" Then
+                For i As Integer = 0 To 19
+                    Writer.Position = Islp + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = Islp
+                Writer.WriteUnicodeString(Text_pronun_islandname.Text)
+                Writer.Position = tour
+                Writer.WriteInt8(value_tour.Value)
+                Writer.Position = part
+                Writer.WriteInt8(value_part.Value)
+                If Check_timetravel.Checked = True Then
+                    Writer.Position = &H1E4C70
+                    Writer.WriteInt8(0)
+                End If
+                If Check_resetstpspp.Checked = True Then
+                    Writer.Position = &H1E4C71
+                    Writer.WriteInt8(0)
+                End If
+            End If
+            If Filever_text.Text = "JP" Then
+                If Check_timetravel.Checked = True Then
+                    Writer.Position = &H14BD40
+                    Writer.WriteInt8(0)
+                End If
+                If Check_resetstpspp.Checked = True Then
+                    Writer.Position = &H14BD41
+                    Writer.WriteInt8(0)
+                End If
+            End If
+            If Filever_text.Text = "KR" Then
+                For i As Integer = 0 To 19
+                    Writer.Position = Islp + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = Islp
+                Writer.WriteUnicodeString(Text_pronun_islandname.Text)
+                Writer.Position = tour
+                Writer.WriteInt8(value_tour.Value)
+                Writer.Position = part
+                Writer.WriteInt8(value_part.Value)
+                If Check_timetravel.Checked = True Then
+                    Writer.Position = &H1F0020
+                    Writer.WriteInt8(0)
+                End If
+                If Check_resetstpspp.Checked = True Then
+                    Writer.Position = &H1F0021
+                    Writer.WriteInt8(0)
+                End If
+            End If
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                fdialog.Text_fdialog.Text = "Failed to write savedataArc.txt, make sure you choose right save file version and to have opened a file, or report this issue"
+                fdialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                fdialog.Text_fdialog.Text = "L'écriture de savedataArc.txt a échoué, soyez sûr d'avoir choisi la bonne version de sauvegarde et d'avoir ouvert un fichier, ou signalez cet erreur"
+                fdialog.ShowDialog()
+            End If
+        End Try
+    End Sub
 
+    Public Sub readMii()
+        Try
+
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                fdialog.Text_fdialog.Text = "Failed to read informations of this Mii, make sure you have opened a file, or report this issue"
+                fdialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                fdialog.Text_fdialog.Text = "La lecture des informations de ce Mii a échoué, soyez sûr d'avoir ouvert un fichier, ou signalez cet erreur"
+                fdialog.ShowDialog()
+            End If
+            Select_mii.SelectedItem = Nothing
+        End Try
+    End Sub
+
+    Public Sub writeMii()
+        Try
+
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                fdialog.Text_fdialog.Text = "Failed to save changes on this Mii, make sure you have opened a save file, or report this issue"
+                fdialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                fdialog.Text_fdialog.Text = "L'enregistrement des changements sur ce Mii a échoué, soyez sûr d'avoir ouvert un fichier de sauvegarde, ou signalez cet erreur"
+                fdialog.ShowDialog()
+            End If
+        End Try
     End Sub
 
     Private Sub Closebutton_Click(sender As Object, e As EventArgs) Handles Closebutton.Click
@@ -571,6 +780,8 @@ Public Class TL_SaveEditor
             Icon_pronun_firstname.Visible = True
             Icon_pronun_lastname.Visible = True
             Icon_pronun_nickname.Visible = True
+            Text_islandname.MaxLength = 10
+            Text_pronun_island.MaxLength = 20
         ElseIf Filever_text.Text = "EU" Then
             Filever_text.Text = "JP"
             TLSE_logo.Image = My.Resources.logo_JP
@@ -583,6 +794,8 @@ Public Class TL_SaveEditor
             Icon_pronun_firstname.Visible = False
             Icon_pronun_lastname.Visible = False
             Icon_pronun_nickname.Visible = False
+            Text_islandname.MaxLength = 10
+            Text_pronun_island.MaxLength = 0
         ElseIf Filever_text.Text = "JP" Then
             Filever_text.Text = "KR"
             TLSE_logo.Image = My.Resources.logo_KR
@@ -595,6 +808,8 @@ Public Class TL_SaveEditor
             Icon_pronun_firstname.Visible = True
             Icon_pronun_lastname.Visible = True
             Icon_pronun_nickname.Visible = True
+            Text_islandname.MaxLength = 10
+            Text_pronun_island.MaxLength = 20
         ElseIf Filever_text.Text = "KR" Then
             Filever_text.Text = "US"
             TLSE_logo.Image = My.Resources.logo_US
@@ -607,7 +822,10 @@ Public Class TL_SaveEditor
             Icon_pronun_firstname.Visible = True
             Icon_pronun_lastname.Visible = True
             Icon_pronun_nickname.Visible = True
+            Text_islandname.MaxLength = 10
+            Text_pronun_island.MaxLength = 20
         End If
+        Icon_changelog.Image = TLSE_logo.Image
     End Sub
 
     Private Sub Info_islandbuild_MouseMove(sender As Object, e As EventArgs) Handles Info_islandbuild.MouseMove
@@ -848,6 +1066,312 @@ Public Class TL_SaveEditor
             Select_emotions.Items.Item(3) = "Sad"
             Select_emotions.Items.Item(4) = "In love"
             Button_setallfriends.Text = "Set all to"
+            Select_allfriends.Items.Item(0) = "Mii 1 to 30"
+            Select_allfriends.Items.Item(1) = "Mii 31 to 60"
+            Select_allfriends.Items.Item(2) = "Mii 61 to 90"
+            Select_allfriends.Items.Item(3) = "Mii 91 to 100"
+            Title_ranking_pampered.Text = "Pampered ranking"
+            Title_ranking_splurge.Text = "Splurge ranking"
+            Select_friend_rela_1.Items.Item(0) = "Unknow"
+            Select_friend_rela_1.Items.Item(1) = "Friend"
+            Select_friend_rela_1.Items.Item(2) = "Lover"
+            Select_friend_rela_1.Items.Item(3) = "Ex"
+            Select_friend_rela_1.Items.Item(4) = "Spouse"
+            Select_friend_rela_1.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_1.Items.Item(6) = "Parent"
+            Select_friend_rela_1.Items.Item(7) = "Sibling"
+            Select_friend_rela_1.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_1.Items.Item(9) = "Best friend"
+            Select_friend_rela_2.Items.Item(0) = "Unknow"
+            Select_friend_rela_2.Items.Item(1) = "Friend"
+            Select_friend_rela_2.Items.Item(2) = "Lover"
+            Select_friend_rela_2.Items.Item(3) = "Ex"
+            Select_friend_rela_2.Items.Item(4) = "Spouse"
+            Select_friend_rela_2.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_2.Items.Item(6) = "Parent"
+            Select_friend_rela_2.Items.Item(7) = "Sibling"
+            Select_friend_rela_2.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_2.Items.Item(9) = "Best friend"
+            Select_friend_rela_3.Items.Item(0) = "Unknow"
+            Select_friend_rela_3.Items.Item(1) = "Friend"
+            Select_friend_rela_3.Items.Item(2) = "Lover"
+            Select_friend_rela_3.Items.Item(3) = "Ex"
+            Select_friend_rela_3.Items.Item(4) = "Spouse"
+            Select_friend_rela_3.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_3.Items.Item(6) = "Parent"
+            Select_friend_rela_3.Items.Item(7) = "Sibling"
+            Select_friend_rela_3.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_3.Items.Item(9) = "Best friend"
+            Select_friend_rela_4.Items.Item(0) = "Unknow"
+            Select_friend_rela_4.Items.Item(1) = "Friend"
+            Select_friend_rela_4.Items.Item(2) = "Lover"
+            Select_friend_rela_4.Items.Item(3) = "Ex"
+            Select_friend_rela_4.Items.Item(4) = "Spouse"
+            Select_friend_rela_4.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_4.Items.Item(6) = "Parent"
+            Select_friend_rela_4.Items.Item(7) = "Sibling"
+            Select_friend_rela_4.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_4.Items.Item(9) = "Best friend"
+            Select_friend_rela_5.Items.Item(0) = "Unknow"
+            Select_friend_rela_5.Items.Item(1) = "Friend"
+            Select_friend_rela_5.Items.Item(2) = "Lover"
+            Select_friend_rela_5.Items.Item(3) = "Ex"
+            Select_friend_rela_5.Items.Item(4) = "Spouse"
+            Select_friend_rela_5.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_5.Items.Item(6) = "Parent"
+            Select_friend_rela_5.Items.Item(7) = "Sibling"
+            Select_friend_rela_5.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_5.Items.Item(9) = "Best friend"
+            Select_friend_rela_6.Items.Item(0) = "Unknow"
+            Select_friend_rela_6.Items.Item(1) = "Friend"
+            Select_friend_rela_6.Items.Item(2) = "Lover"
+            Select_friend_rela_6.Items.Item(3) = "Ex"
+            Select_friend_rela_6.Items.Item(4) = "Spouse"
+            Select_friend_rela_6.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_6.Items.Item(6) = "Parent"
+            Select_friend_rela_6.Items.Item(7) = "Sibling"
+            Select_friend_rela_6.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_6.Items.Item(9) = "Best friend"
+            Select_friend_rela_7.Items.Item(0) = "Unknow"
+            Select_friend_rela_7.Items.Item(1) = "Friend"
+            Select_friend_rela_7.Items.Item(2) = "Lover"
+            Select_friend_rela_7.Items.Item(3) = "Ex"
+            Select_friend_rela_7.Items.Item(4) = "Spouse"
+            Select_friend_rela_7.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_7.Items.Item(6) = "Parent"
+            Select_friend_rela_7.Items.Item(7) = "Sibling"
+            Select_friend_rela_7.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_7.Items.Item(9) = "Best friend"
+            Select_friend_rela_8.Items.Item(0) = "Unknow"
+            Select_friend_rela_8.Items.Item(1) = "Friend"
+            Select_friend_rela_8.Items.Item(2) = "Lover"
+            Select_friend_rela_8.Items.Item(3) = "Ex"
+            Select_friend_rela_8.Items.Item(4) = "Spouse"
+            Select_friend_rela_8.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_8.Items.Item(6) = "Parent"
+            Select_friend_rela_8.Items.Item(7) = "Sibling"
+            Select_friend_rela_8.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_8.Items.Item(9) = "Best friend"
+            Select_friend_rela_9.Items.Item(0) = "Unknow"
+            Select_friend_rela_9.Items.Item(1) = "Friend"
+            Select_friend_rela_9.Items.Item(2) = "Lover"
+            Select_friend_rela_9.Items.Item(3) = "Ex"
+            Select_friend_rela_9.Items.Item(4) = "Spouse"
+            Select_friend_rela_9.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_9.Items.Item(6) = "Parent"
+            Select_friend_rela_9.Items.Item(7) = "Sibling"
+            Select_friend_rela_9.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_9.Items.Item(9) = "Best friend"
+            Select_friend_rela_10.Items.Item(0) = "Unknow"
+            Select_friend_rela_10.Items.Item(1) = "Friend"
+            Select_friend_rela_10.Items.Item(2) = "Lover"
+            Select_friend_rela_10.Items.Item(3) = "Ex"
+            Select_friend_rela_10.Items.Item(4) = "Spouse"
+            Select_friend_rela_10.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_10.Items.Item(6) = "Parent"
+            Select_friend_rela_10.Items.Item(7) = "Sibling"
+            Select_friend_rela_10.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_10.Items.Item(9) = "Best friend"
+            Select_friend_rela_11.Items.Item(0) = "Unknow"
+            Select_friend_rela_11.Items.Item(1) = "Friend"
+            Select_friend_rela_11.Items.Item(2) = "Lover"
+            Select_friend_rela_11.Items.Item(3) = "Ex"
+            Select_friend_rela_11.Items.Item(4) = "Spouse"
+            Select_friend_rela_11.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_11.Items.Item(6) = "Parent"
+            Select_friend_rela_11.Items.Item(7) = "Sibling"
+            Select_friend_rela_11.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_11.Items.Item(9) = "Best friend"
+            Select_friend_rela_12.Items.Item(0) = "Unknow"
+            Select_friend_rela_12.Items.Item(1) = "Friend"
+            Select_friend_rela_12.Items.Item(2) = "Lover"
+            Select_friend_rela_12.Items.Item(3) = "Ex"
+            Select_friend_rela_12.Items.Item(4) = "Spouse"
+            Select_friend_rela_12.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_12.Items.Item(6) = "Parent"
+            Select_friend_rela_12.Items.Item(7) = "Sibling"
+            Select_friend_rela_12.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_12.Items.Item(9) = "Best friend"
+            Select_friend_rela_13.Items.Item(0) = "Unknow"
+            Select_friend_rela_13.Items.Item(1) = "Friend"
+            Select_friend_rela_13.Items.Item(2) = "Lover"
+            Select_friend_rela_13.Items.Item(3) = "Ex"
+            Select_friend_rela_13.Items.Item(4) = "Spouse"
+            Select_friend_rela_13.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_13.Items.Item(6) = "Parent"
+            Select_friend_rela_13.Items.Item(7) = "Sibling"
+            Select_friend_rela_13.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_13.Items.Item(9) = "Best friend"
+            Select_friend_rela_14.Items.Item(0) = "Unknow"
+            Select_friend_rela_14.Items.Item(1) = "Friend"
+            Select_friend_rela_14.Items.Item(2) = "Lover"
+            Select_friend_rela_14.Items.Item(3) = "Ex"
+            Select_friend_rela_14.Items.Item(4) = "Spouse"
+            Select_friend_rela_14.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_14.Items.Item(6) = "Parent"
+            Select_friend_rela_14.Items.Item(7) = "Sibling"
+            Select_friend_rela_14.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_14.Items.Item(9) = "Best friend"
+            Select_friend_rela_15.Items.Item(0) = "Unknow"
+            Select_friend_rela_15.Items.Item(1) = "Friend"
+            Select_friend_rela_15.Items.Item(2) = "Lover"
+            Select_friend_rela_15.Items.Item(3) = "Ex"
+            Select_friend_rela_15.Items.Item(4) = "Spouse"
+            Select_friend_rela_15.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_15.Items.Item(6) = "Parent"
+            Select_friend_rela_15.Items.Item(7) = "Sibling"
+            Select_friend_rela_15.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_15.Items.Item(9) = "Best friend"
+            Select_friend_rela_16.Items.Item(0) = "Unknow"
+            Select_friend_rela_16.Items.Item(1) = "Friend"
+            Select_friend_rela_16.Items.Item(2) = "Lover"
+            Select_friend_rela_16.Items.Item(3) = "Ex"
+            Select_friend_rela_16.Items.Item(4) = "Spouse"
+            Select_friend_rela_16.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_16.Items.Item(6) = "Parent"
+            Select_friend_rela_16.Items.Item(7) = "Sibling"
+            Select_friend_rela_16.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_16.Items.Item(9) = "Best friend"
+            Select_friend_rela_17.Items.Item(0) = "Unknow"
+            Select_friend_rela_17.Items.Item(1) = "Friend"
+            Select_friend_rela_17.Items.Item(2) = "Lover"
+            Select_friend_rela_17.Items.Item(3) = "Ex"
+            Select_friend_rela_17.Items.Item(4) = "Spouse"
+            Select_friend_rela_17.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_17.Items.Item(6) = "Parent"
+            Select_friend_rela_17.Items.Item(7) = "Sibling"
+            Select_friend_rela_17.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_17.Items.Item(9) = "Best friend"
+            Select_friend_rela_18.Items.Item(0) = "Unknow"
+            Select_friend_rela_18.Items.Item(1) = "Friend"
+            Select_friend_rela_18.Items.Item(2) = "Lover"
+            Select_friend_rela_18.Items.Item(3) = "Ex"
+            Select_friend_rela_18.Items.Item(4) = "Spouse"
+            Select_friend_rela_18.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_18.Items.Item(6) = "Parent"
+            Select_friend_rela_18.Items.Item(7) = "Sibling"
+            Select_friend_rela_18.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_18.Items.Item(9) = "Best friend"
+            Select_friend_rela_19.Items.Item(0) = "Unknow"
+            Select_friend_rela_19.Items.Item(1) = "Friend"
+            Select_friend_rela_19.Items.Item(2) = "Lover"
+            Select_friend_rela_19.Items.Item(3) = "Ex"
+            Select_friend_rela_19.Items.Item(4) = "Spouse"
+            Select_friend_rela_19.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_19.Items.Item(6) = "Parent"
+            Select_friend_rela_19.Items.Item(7) = "Sibling"
+            Select_friend_rela_19.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_19.Items.Item(9) = "Best friend"
+            Select_friend_rela_20.Items.Item(0) = "Unknow"
+            Select_friend_rela_20.Items.Item(1) = "Friend"
+            Select_friend_rela_20.Items.Item(2) = "Lover"
+            Select_friend_rela_20.Items.Item(3) = "Ex"
+            Select_friend_rela_20.Items.Item(4) = "Spouse"
+            Select_friend_rela_20.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_20.Items.Item(6) = "Parent"
+            Select_friend_rela_20.Items.Item(7) = "Sibling"
+            Select_friend_rela_20.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_20.Items.Item(9) = "Best friend"
+            Select_friend_rela_21.Items.Item(0) = "Unknow"
+            Select_friend_rela_21.Items.Item(1) = "Friend"
+            Select_friend_rela_21.Items.Item(2) = "Lover"
+            Select_friend_rela_21.Items.Item(3) = "Ex"
+            Select_friend_rela_21.Items.Item(4) = "Spouse"
+            Select_friend_rela_21.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_21.Items.Item(6) = "Parent"
+            Select_friend_rela_21.Items.Item(7) = "Sibling"
+            Select_friend_rela_21.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_21.Items.Item(9) = "Best friend"
+            Select_friend_rela_22.Items.Item(0) = "Unknow"
+            Select_friend_rela_22.Items.Item(1) = "Friend"
+            Select_friend_rela_22.Items.Item(2) = "Lover"
+            Select_friend_rela_22.Items.Item(3) = "Ex"
+            Select_friend_rela_22.Items.Item(4) = "Spouse"
+            Select_friend_rela_22.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_22.Items.Item(6) = "Parent"
+            Select_friend_rela_22.Items.Item(7) = "Sibling"
+            Select_friend_rela_22.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_22.Items.Item(9) = "Best friend"
+            Select_friend_rela_23.Items.Item(0) = "Unknow"
+            Select_friend_rela_23.Items.Item(1) = "Friend"
+            Select_friend_rela_23.Items.Item(2) = "Lover"
+            Select_friend_rela_23.Items.Item(3) = "Ex"
+            Select_friend_rela_23.Items.Item(4) = "Spouse"
+            Select_friend_rela_23.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_23.Items.Item(6) = "Parent"
+            Select_friend_rela_23.Items.Item(7) = "Sibling"
+            Select_friend_rela_23.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_23.Items.Item(9) = "Best friend"
+            Select_friend_rela_24.Items.Item(0) = "Unknow"
+            Select_friend_rela_24.Items.Item(1) = "Friend"
+            Select_friend_rela_24.Items.Item(2) = "Lover"
+            Select_friend_rela_24.Items.Item(3) = "Ex"
+            Select_friend_rela_24.Items.Item(4) = "Spouse"
+            Select_friend_rela_24.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_24.Items.Item(6) = "Parent"
+            Select_friend_rela_24.Items.Item(7) = "Sibling"
+            Select_friend_rela_24.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_24.Items.Item(9) = "Best friend"
+            Select_friend_rela_25.Items.Item(0) = "Unknow"
+            Select_friend_rela_25.Items.Item(1) = "Friend"
+            Select_friend_rela_25.Items.Item(2) = "Lover"
+            Select_friend_rela_25.Items.Item(3) = "Ex"
+            Select_friend_rela_25.Items.Item(4) = "Spouse"
+            Select_friend_rela_25.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_25.Items.Item(6) = "Parent"
+            Select_friend_rela_25.Items.Item(7) = "Sibling"
+            Select_friend_rela_25.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_25.Items.Item(9) = "Best friend"
+            Select_friend_rela_26.Items.Item(0) = "Unknow"
+            Select_friend_rela_26.Items.Item(1) = "Friend"
+            Select_friend_rela_26.Items.Item(2) = "Lover"
+            Select_friend_rela_26.Items.Item(3) = "Ex"
+            Select_friend_rela_26.Items.Item(4) = "Spouse"
+            Select_friend_rela_26.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_26.Items.Item(6) = "Parent"
+            Select_friend_rela_26.Items.Item(7) = "Sibling"
+            Select_friend_rela_26.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_26.Items.Item(9) = "Best friend"
+            Select_friend_rela_27.Items.Item(0) = "Unknow"
+            Select_friend_rela_27.Items.Item(1) = "Friend"
+            Select_friend_rela_27.Items.Item(2) = "Lover"
+            Select_friend_rela_27.Items.Item(3) = "Ex"
+            Select_friend_rela_27.Items.Item(4) = "Spouse"
+            Select_friend_rela_27.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_27.Items.Item(6) = "Parent"
+            Select_friend_rela_27.Items.Item(7) = "Sibling"
+            Select_friend_rela_27.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_27.Items.Item(9) = "Best friend"
+            Select_friend_rela_28.Items.Item(0) = "Unknow"
+            Select_friend_rela_28.Items.Item(1) = "Friend"
+            Select_friend_rela_28.Items.Item(2) = "Lover"
+            Select_friend_rela_28.Items.Item(3) = "Ex"
+            Select_friend_rela_28.Items.Item(4) = "Spouse"
+            Select_friend_rela_28.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_28.Items.Item(6) = "Parent"
+            Select_friend_rela_28.Items.Item(7) = "Sibling"
+            Select_friend_rela_28.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_28.Items.Item(9) = "Best friend"
+            Select_friend_rela_29.Items.Item(0) = "Unknow"
+            Select_friend_rela_29.Items.Item(1) = "Friend"
+            Select_friend_rela_29.Items.Item(2) = "Lover"
+            Select_friend_rela_29.Items.Item(3) = "Ex"
+            Select_friend_rela_29.Items.Item(4) = "Spouse"
+            Select_friend_rela_29.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_29.Items.Item(6) = "Parent"
+            Select_friend_rela_29.Items.Item(7) = "Sibling"
+            Select_friend_rela_29.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_29.Items.Item(9) = "Best friend"
+            Select_friend_rela_30.Items.Item(0) = "Unknow"
+            Select_friend_rela_30.Items.Item(1) = "Friend"
+            Select_friend_rela_30.Items.Item(2) = "Lover"
+            Select_friend_rela_30.Items.Item(3) = "Ex"
+            Select_friend_rela_30.Items.Item(4) = "Spouse"
+            Select_friend_rela_30.Items.Item(5) = "Ex-spouse"
+            Select_friend_rela_30.Items.Item(6) = "Parent"
+            Select_friend_rela_30.Items.Item(7) = "Sibling"
+            Select_friend_rela_30.Items.Item(8) = "Friend (in conflict)"
+            Select_friend_rela_30.Items.Item(9) = "Best friend"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_menu_button.Text = "Menu"
             Text_menu_open.Text = "Ouvrir"
@@ -949,6 +1473,312 @@ Public Class TL_SaveEditor
             Select_emotions.Items.Item(3) = "Triste"
             Select_emotions.Items.Item(4) = "Amoureux"
             Button_setallfriends.Text = "Mettre tout à"
+            Select_allfriends.Items.Item(0) = "Mii 1 à 30"
+            Select_allfriends.Items.Item(1) = "Mii 31 à 60"
+            Select_allfriends.Items.Item(2) = "Mii 61 à 90"
+            Select_allfriends.Items.Item(3) = "Mii 91 à 100"
+            Title_ranking_pampered.Text = "Mii préférés"
+            Title_ranking_splurge.Text = "Mii dépensiers"
+            Select_friend_rela_1.Items.Item(0) = "Inconnu"
+            Select_friend_rela_1.Items.Item(1) = "Ami"
+            Select_friend_rela_1.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_1.Items.Item(3) = "Ex"
+            Select_friend_rela_1.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_1.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_1.Items.Item(6) = "Parent"
+            Select_friend_rela_1.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_1.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_1.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_2.Items.Item(0) = "Inconnu"
+            Select_friend_rela_2.Items.Item(1) = "Ami"
+            Select_friend_rela_2.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_2.Items.Item(3) = "Ex"
+            Select_friend_rela_2.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_2.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_2.Items.Item(6) = "Parent"
+            Select_friend_rela_2.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_2.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_2.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_3.Items.Item(0) = "Inconnu"
+            Select_friend_rela_3.Items.Item(1) = "Ami"
+            Select_friend_rela_3.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_3.Items.Item(3) = "Ex"
+            Select_friend_rela_3.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_3.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_3.Items.Item(6) = "Parent"
+            Select_friend_rela_3.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_3.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_3.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_4.Items.Item(0) = "Inconnu"
+            Select_friend_rela_4.Items.Item(1) = "Ami"
+            Select_friend_rela_4.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_4.Items.Item(3) = "Ex"
+            Select_friend_rela_4.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_4.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_4.Items.Item(6) = "Parent"
+            Select_friend_rela_4.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_4.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_4.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_5.Items.Item(0) = "Inconnu"
+            Select_friend_rela_5.Items.Item(1) = "Ami"
+            Select_friend_rela_5.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_5.Items.Item(3) = "Ex"
+            Select_friend_rela_5.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_5.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_5.Items.Item(6) = "Parent"
+            Select_friend_rela_5.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_5.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_5.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_6.Items.Item(0) = "Inconnu"
+            Select_friend_rela_6.Items.Item(1) = "Ami"
+            Select_friend_rela_6.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_6.Items.Item(3) = "Ex"
+            Select_friend_rela_6.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_6.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_6.Items.Item(6) = "Parent"
+            Select_friend_rela_6.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_6.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_6.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_7.Items.Item(0) = "Inconnu"
+            Select_friend_rela_7.Items.Item(1) = "Ami"
+            Select_friend_rela_7.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_7.Items.Item(3) = "Ex"
+            Select_friend_rela_7.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_7.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_7.Items.Item(6) = "Parent"
+            Select_friend_rela_7.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_7.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_7.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_8.Items.Item(0) = "Inconnu"
+            Select_friend_rela_8.Items.Item(1) = "Ami"
+            Select_friend_rela_8.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_8.Items.Item(3) = "Ex"
+            Select_friend_rela_8.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_8.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_8.Items.Item(6) = "Parent"
+            Select_friend_rela_8.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_8.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_8.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_9.Items.Item(0) = "Inconnu"
+            Select_friend_rela_9.Items.Item(1) = "Ami"
+            Select_friend_rela_9.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_9.Items.Item(3) = "Ex"
+            Select_friend_rela_9.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_9.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_9.Items.Item(6) = "Parent"
+            Select_friend_rela_9.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_9.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_9.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_10.Items.Item(0) = "Inconnu"
+            Select_friend_rela_10.Items.Item(1) = "Ami"
+            Select_friend_rela_10.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_10.Items.Item(3) = "Ex"
+            Select_friend_rela_10.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_10.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_10.Items.Item(6) = "Parent"
+            Select_friend_rela_10.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_10.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_10.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_11.Items.Item(0) = "Inconnu"
+            Select_friend_rela_11.Items.Item(1) = "Ami"
+            Select_friend_rela_11.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_11.Items.Item(3) = "Ex"
+            Select_friend_rela_11.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_11.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_11.Items.Item(6) = "Parent"
+            Select_friend_rela_11.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_11.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_11.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_12.Items.Item(0) = "Inconnu"
+            Select_friend_rela_12.Items.Item(1) = "Ami"
+            Select_friend_rela_12.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_12.Items.Item(3) = "Ex"
+            Select_friend_rela_12.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_12.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_12.Items.Item(6) = "Parent"
+            Select_friend_rela_12.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_12.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_12.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_13.Items.Item(0) = "Inconnu"
+            Select_friend_rela_13.Items.Item(1) = "Ami"
+            Select_friend_rela_13.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_13.Items.Item(3) = "Ex"
+            Select_friend_rela_13.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_13.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_13.Items.Item(6) = "Parent"
+            Select_friend_rela_13.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_13.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_13.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_14.Items.Item(0) = "Inconnu"
+            Select_friend_rela_14.Items.Item(1) = "Ami"
+            Select_friend_rela_14.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_14.Items.Item(3) = "Ex"
+            Select_friend_rela_14.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_14.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_14.Items.Item(6) = "Parent"
+            Select_friend_rela_14.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_14.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_14.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_15.Items.Item(0) = "Inconnu"
+            Select_friend_rela_15.Items.Item(1) = "Ami"
+            Select_friend_rela_15.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_15.Items.Item(3) = "Ex"
+            Select_friend_rela_15.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_15.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_15.Items.Item(6) = "Parent"
+            Select_friend_rela_15.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_15.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_15.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_16.Items.Item(0) = "Inconnu"
+            Select_friend_rela_16.Items.Item(1) = "Ami"
+            Select_friend_rela_16.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_16.Items.Item(3) = "Ex"
+            Select_friend_rela_16.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_16.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_16.Items.Item(6) = "Parent"
+            Select_friend_rela_16.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_16.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_16.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_17.Items.Item(0) = "Inconnu"
+            Select_friend_rela_17.Items.Item(1) = "Ami"
+            Select_friend_rela_17.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_17.Items.Item(3) = "Ex"
+            Select_friend_rela_17.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_17.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_17.Items.Item(6) = "Parent"
+            Select_friend_rela_17.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_17.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_17.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_18.Items.Item(0) = "Inconnu"
+            Select_friend_rela_18.Items.Item(1) = "Ami"
+            Select_friend_rela_18.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_18.Items.Item(3) = "Ex"
+            Select_friend_rela_18.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_18.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_18.Items.Item(6) = "Parent"
+            Select_friend_rela_18.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_18.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_18.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_19.Items.Item(0) = "Inconnu"
+            Select_friend_rela_19.Items.Item(1) = "Ami"
+            Select_friend_rela_19.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_19.Items.Item(3) = "Ex"
+            Select_friend_rela_19.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_19.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_19.Items.Item(6) = "Parent"
+            Select_friend_rela_19.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_19.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_19.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_20.Items.Item(0) = "Inconnu"
+            Select_friend_rela_20.Items.Item(1) = "Ami"
+            Select_friend_rela_20.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_20.Items.Item(3) = "Ex"
+            Select_friend_rela_20.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_20.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_20.Items.Item(6) = "Parent"
+            Select_friend_rela_20.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_20.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_20.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_21.Items.Item(0) = "Inconnu"
+            Select_friend_rela_21.Items.Item(1) = "Ami"
+            Select_friend_rela_21.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_21.Items.Item(3) = "Ex"
+            Select_friend_rela_21.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_21.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_21.Items.Item(6) = "Parent"
+            Select_friend_rela_21.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_21.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_21.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_22.Items.Item(0) = "Inconnu"
+            Select_friend_rela_22.Items.Item(1) = "Ami"
+            Select_friend_rela_22.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_22.Items.Item(3) = "Ex"
+            Select_friend_rela_22.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_22.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_22.Items.Item(6) = "Parent"
+            Select_friend_rela_22.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_22.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_22.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_23.Items.Item(0) = "Inconnu"
+            Select_friend_rela_23.Items.Item(1) = "Ami"
+            Select_friend_rela_23.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_23.Items.Item(3) = "Ex"
+            Select_friend_rela_23.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_23.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_23.Items.Item(6) = "Parent"
+            Select_friend_rela_23.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_23.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_23.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_24.Items.Item(0) = "Inconnu"
+            Select_friend_rela_24.Items.Item(1) = "Ami"
+            Select_friend_rela_24.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_24.Items.Item(3) = "Ex"
+            Select_friend_rela_24.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_24.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_24.Items.Item(6) = "Parent"
+            Select_friend_rela_24.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_24.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_24.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_25.Items.Item(0) = "Inconnu"
+            Select_friend_rela_25.Items.Item(1) = "Ami"
+            Select_friend_rela_25.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_25.Items.Item(3) = "Ex"
+            Select_friend_rela_25.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_25.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_25.Items.Item(6) = "Parent"
+            Select_friend_rela_25.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_25.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_25.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_26.Items.Item(0) = "Inconnu"
+            Select_friend_rela_26.Items.Item(1) = "Ami"
+            Select_friend_rela_26.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_26.Items.Item(3) = "Ex"
+            Select_friend_rela_26.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_26.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_26.Items.Item(6) = "Parent"
+            Select_friend_rela_26.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_26.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_26.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_27.Items.Item(0) = "Inconnu"
+            Select_friend_rela_27.Items.Item(1) = "Ami"
+            Select_friend_rela_27.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_27.Items.Item(3) = "Ex"
+            Select_friend_rela_27.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_27.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_27.Items.Item(6) = "Parent"
+            Select_friend_rela_27.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_27.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_27.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_28.Items.Item(0) = "Inconnu"
+            Select_friend_rela_28.Items.Item(1) = "Ami"
+            Select_friend_rela_28.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_28.Items.Item(3) = "Ex"
+            Select_friend_rela_28.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_28.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_28.Items.Item(6) = "Parent"
+            Select_friend_rela_28.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_28.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_28.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_29.Items.Item(0) = "Inconnu"
+            Select_friend_rela_29.Items.Item(1) = "Ami"
+            Select_friend_rela_29.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_29.Items.Item(3) = "Ex"
+            Select_friend_rela_29.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_29.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_29.Items.Item(6) = "Parent"
+            Select_friend_rela_29.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_29.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_29.Items.Item(9) = "Meilleur(e) ami(e)"
+            Select_friend_rela_30.Items.Item(0) = "Inconnu"
+            Select_friend_rela_30.Items.Item(1) = "Ami"
+            Select_friend_rela_30.Items.Item(2) = "Amoureux(se)"
+            Select_friend_rela_30.Items.Item(3) = "Ex"
+            Select_friend_rela_30.Items.Item(4) = "Époux(se)"
+            Select_friend_rela_30.Items.Item(5) = "Ex-Époux(se)"
+            Select_friend_rela_30.Items.Item(6) = "Parent"
+            Select_friend_rela_30.Items.Item(7) = "Frère/Soeur"
+            Select_friend_rela_30.Items.Item(8) = "Ami (en conflit)"
+            Select_friend_rela_30.Items.Item(9) = "Meilleur(e) ami(e)"
         End If
     End Sub
 
@@ -1379,10 +2209,34 @@ Public Class TL_SaveEditor
     Private Sub TL_SaveEditor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Select_language.SelectedItem = Select_language.Items.Item(0)
         Select_music.SelectedItem = Select_music.Items.Item(0)
-        Select_music.SelectedItem = Select_music.Items.Item(0)
         Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(0)
         Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
         Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
+        Try
+            Setting_ckupdate.Checked = My.Settings.Parasetting_ckupdate
+            Setting_filepath.Checked = My.Settings.Parasetting_filepath
+            Setting_hidden.Checked = My.Settings.Parasetting_hidden
+            Select_language.SelectedItem = My.Settings.Parasetting_language
+            Menu_panel.Width = My.Settings.Parasetting_menu
+            Setting_music.Checked = My.Settings.Parasetting_music
+            Select_music.SelectedItem = My.Settings.Parasetting_musicsel
+        Catch ex As Exception
+        End Try
+        If Menu_panel.Width = 150 Then
+            Menu_width.Location = New Point(116, 0)
+        ElseIf Menu_panel.Width = 34 Then
+            Menu_width.Location = New Point(0, 0)
+        End If
+    End Sub
+
+    Private Sub TL_SaveEditor_FormClosing(sender As Object, e As EventArgs) Handles MyBase.FormClosing
+        My.Settings.Parasetting_ckupdate = Setting_ckupdate.Checked
+        My.Settings.Parasetting_filepath = Setting_filepath.Checked
+        My.Settings.Parasetting_hidden = Setting_hidden.Checked
+        My.Settings.Parasetting_language = Select_language.SelectedItem
+        My.Settings.Parasetting_menu = Menu_panel.Width
+        My.Settings.Parasetting_music = Setting_music.Checked
+        My.Settings.Parasetting_musicsel = Select_music.SelectedItem
     End Sub
 
     Private Sub Setting_hidden_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_hidden.CheckedChanged
@@ -1830,11 +2684,11 @@ Public Class TL_SaveEditor
     Private Sub Text_menu_open_Click(sender As Object, e As EventArgs) Handles Text_menu_open.Click
         Dim open As New OpenFileDialog
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            fdialog.Text_fdialog.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a backup of your save file, check ''bak'' folder"
+            fdialog.Text_fdialog.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a backup of your save file, check ''bak'' folder" & vbNewLine & vbNewLine & "Make sure you have choose right save file version"
             fdialog.ShowDialog()
         End If
         If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            fdialog.Text_fdialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde, vérifiez le dossier ''bak''"
+            fdialog.Text_fdialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde, vérifiez le dossier ''bak''" & vbNewLine & vbNewLine & "Soyez sûr d'avoir choisi la bonne version de sauvegarde"
             fdialog.ShowDialog()
         End If
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
@@ -1849,6 +2703,7 @@ Public Class TL_SaveEditor
         savedataArc = open.FileName
         TextBox_fpath.Text = savedataArc
         readsavedataArc()
+        makebak()
     End Sub
 
     Private Sub valu_experience_ValueChanged(sender As Object, e As EventArgs) Handles valu_experience.ValueChanged
@@ -2181,5 +3036,866 @@ Public Class TL_SaveEditor
 
     Private Sub Fea_edit_concert_MouseMove(sender As Object, e As MouseEventArgs) Handles Fea_edit_concert.MouseMove
         Fea_edit_concert.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
+        writesavedataArc()
+    End Sub
+
+    Private Sub Button_setallfriends_Click(sender As Object, e As EventArgs) Handles Button_setallfriends.Click
+        valu_friend_rela_1.Value = valu_setallfriends.Value
+        valu_friend_rela_2.Value = valu_setallfriends.Value
+        valu_friend_rela_3.Value = valu_setallfriends.Value
+        valu_friend_rela_4.Value = valu_setallfriends.Value
+        valu_friend_rela_5.Value = valu_setallfriends.Value
+        valu_friend_rela_6.Value = valu_setallfriends.Value
+        valu_friend_rela_7.Value = valu_setallfriends.Value
+        valu_friend_rela_8.Value = valu_setallfriends.Value
+        valu_friend_rela_9.Value = valu_setallfriends.Value
+        valu_friend_rela_10.Value = valu_setallfriends.Value
+        valu_friend_rela_11.Value = valu_setallfriends.Value
+        valu_friend_rela_12.Value = valu_setallfriends.Value
+        valu_friend_rela_13.Value = valu_setallfriends.Value
+        valu_friend_rela_14.Value = valu_setallfriends.Value
+        valu_friend_rela_15.Value = valu_setallfriends.Value
+        valu_friend_rela_16.Value = valu_setallfriends.Value
+        valu_friend_rela_17.Value = valu_setallfriends.Value
+        valu_friend_rela_18.Value = valu_setallfriends.Value
+        valu_friend_rela_19.Value = valu_setallfriends.Value
+        valu_friend_rela_20.Value = valu_setallfriends.Value
+        valu_friend_rela_21.Value = valu_setallfriends.Value
+        valu_friend_rela_22.Value = valu_setallfriends.Value
+        valu_friend_rela_23.Value = valu_setallfriends.Value
+        valu_friend_rela_24.Value = valu_setallfriends.Value
+        valu_friend_rela_25.Value = valu_setallfriends.Value
+        valu_friend_rela_26.Value = valu_setallfriends.Value
+        valu_friend_rela_27.Value = valu_setallfriends.Value
+        valu_friend_rela_28.Value = valu_setallfriends.Value
+        valu_friend_rela_29.Value = valu_setallfriends.Value
+        valu_friend_rela_30.Value = valu_setallfriends.Value
+    End Sub
+
+    Private Sub Check_fullness_CheckedChanged(sender As Object, e As EventArgs) Handles Check_fullness.CheckedChanged
+        valu_fullness.Value = 0
+        valu_chkfullness.value = 0
+    End Sub
+
+    Private Sub valu_chkfullness_ValueChanged(sender As Object, e As EventArgs) Handles valu_chkfullness.ValueChanged
+        If valu_chkfullness.Value > 0 Then
+            Check_fullness.Checked = False
+        End If
+    End Sub
+
+    Private Sub Icon_itemmii_1_Click(sender As Object, e As EventArgs) Handles Icon_itemmii_1.Click
+        If valu_itemmii_1.Value > 26 And valu_itemmii_1.Value < 65535 Then
+            valu_itemmii_1.Value = 65535
+        ElseIf valu_itemmii_1.Value = 65535 Then
+            valu_itemmii_1.Value = 0
+        Else
+            valu_itemmii_1.Value = valu_itemmii_1.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_itemmii_2_Click(sender As Object, e As EventArgs) Handles Icon_itemmii_2.Click
+        If valu_itemmii_2.Value > 26 And valu_itemmii_2.Value < 65535 Then
+            valu_itemmii_2.Value = 65535
+        ElseIf valu_itemmii_2.Value = 65535 Then
+            valu_itemmii_2.Value = 0
+        Else
+            valu_itemmii_2.Value = valu_itemmii_2.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_itemmii_3_Click(sender As Object, e As EventArgs) Handles Icon_itemmii_3.Click
+        If valu_itemmii_3.Value > 26 And valu_itemmii_3.Value < 65535 Then
+            valu_itemmii_3.Value = 65535
+        ElseIf valu_itemmii_3.Value = 65535 Then
+            valu_itemmii_3.Value = 0
+        Else
+            valu_itemmii_3.Value = valu_itemmii_3.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_itemmii_4_Click(sender As Object, e As EventArgs) Handles Icon_itemmii_4.Click
+        If valu_itemmii_4.Value > 26 And valu_itemmii_4.Value < 65535 Then
+            valu_itemmii_4.Value = 65535
+        ElseIf valu_itemmii_4.Value = 65535 Then
+            valu_itemmii_4.Value = 0
+        Else
+            valu_itemmii_4.Value = valu_itemmii_4.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_itemmii_5_Click(sender As Object, e As EventArgs) Handles Icon_itemmii_5.Click
+        If valu_itemmii_5.Value > 26 And valu_itemmii_5.Value < 65535 Then
+            valu_itemmii_5.Value = 65535
+        ElseIf valu_itemmii_5.Value = 65535 Then
+            valu_itemmii_5.Value = 0
+        Else
+            valu_itemmii_5.Value = valu_itemmii_5.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_itemmii_6_Click(sender As Object, e As EventArgs) Handles Icon_itemmii_6.Click
+        If valu_itemmii_6.Value > 26 And valu_itemmii_6.Value < 65535 Then
+            valu_itemmii_6.Value = 65535
+        ElseIf valu_itemmii_6.Value = 65535 Then
+            valu_itemmii_6.Value = 0
+        Else
+            valu_itemmii_6.Value = valu_itemmii_6.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_itemmii_7_Click(sender As Object, e As EventArgs) Handles Icon_itemmii_7.Click
+        If valu_itemmii_7.Value > 26 And valu_itemmii_7.Value < 65535 Then
+            valu_itemmii_7.Value = 65535
+        ElseIf valu_itemmii_7.Value = 65535 Then
+            valu_itemmii_7.Value = 0
+        Else
+            valu_itemmii_7.Value = valu_itemmii_7.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_itemmii_8_Click(sender As Object, e As EventArgs) Handles Icon_itemmii_8.Click
+        If valu_itemmii_8.Value > 26 And valu_itemmii_8.Value < 65535 Then
+            valu_itemmii_8.Value = 65535
+        ElseIf valu_itemmii_8.Value = 65535 Then
+            valu_itemmii_8.Value = 0
+        Else
+            valu_itemmii_8.Value = valu_itemmii_8.Value + 1
+        End If
+    End Sub
+
+    Private Sub valu_itemmii_1_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemmii_1.ValueChanged
+        If valu_itemmii_1.Value = 65535 Then
+            Icon_itemmii_1.Image = My.Resources.FFFF
+        End If
+        If valu_itemmii_1.Value = 0 Then
+            Icon_itemmii_1.Image = My.Resources._0000
+        End If
+        If valu_itemmii_1.Value = 1 Then
+            Icon_itemmii_1.Image = My.Resources._0100
+        End If
+        If valu_itemmii_1.Value = 2 Then
+            Icon_itemmii_1.Image = My.Resources._0200
+        End If
+        If valu_itemmii_1.Value = 3 Then
+            Icon_itemmii_1.Image = My.Resources._0300
+        End If
+        If valu_itemmii_1.Value = 4 Then
+            Icon_itemmii_1.Image = My.Resources._0400
+        End If
+        If valu_itemmii_1.Value = 5 Then
+            Icon_itemmii_1.Image = My.Resources._0500
+        End If
+        If valu_itemmii_1.Value = 6 Then
+            Icon_itemmii_1.Image = My.Resources._0600
+        End If
+        If valu_itemmii_1.Value = 7 Then
+            Icon_itemmii_1.Image = My.Resources._0700
+        End If
+        If valu_itemmii_1.Value = 8 Then
+            Icon_itemmii_1.Image = My.Resources._0800
+        End If
+        If valu_itemmii_1.Value = 9 Then
+            Icon_itemmii_1.Image = My.Resources._0900
+        End If
+        If valu_itemmii_1.Value = 10 Then
+            Icon_itemmii_1.Image = My.Resources._0a00
+        End If
+        If valu_itemmii_1.Value = 11 Then
+            Icon_itemmii_1.Image = My.Resources._0b00
+        End If
+        If valu_itemmii_1.Value = 12 Then
+            Icon_itemmii_1.Image = My.Resources._0c00
+        End If
+        If valu_itemmii_1.Value = 13 Then
+            Icon_itemmii_1.Image = My.Resources._0d00
+        End If
+        If valu_itemmii_1.Value = 14 Then
+            Icon_itemmii_1.Image = My.Resources._0e00
+        End If
+        If valu_itemmii_1.Value = 15 Then
+            Icon_itemmii_1.Image = My.Resources._0f00
+        End If
+        If valu_itemmii_1.Value = 16 Then
+            Icon_itemmii_1.Image = My.Resources._1000
+        End If
+        If valu_itemmii_1.Value = 17 Then
+            Icon_itemmii_1.Image = My.Resources._1100
+        End If
+        If valu_itemmii_1.Value = 18 Then
+            Icon_itemmii_1.Image = My.Resources._1200
+        End If
+        If valu_itemmii_1.Value = 19 Then
+            Icon_itemmii_1.Image = My.Resources._1300
+        End If
+        If valu_itemmii_1.Value = 20 Then
+            Icon_itemmii_1.Image = My.Resources._1400
+        End If
+        If valu_itemmii_1.Value = 21 Then
+            Icon_itemmii_1.Image = My.Resources._1500
+        End If
+        If valu_itemmii_1.Value = 22 Then
+            Icon_itemmii_1.Image = My.Resources._1600
+        End If
+        If valu_itemmii_1.Value = 23 Then
+            Icon_itemmii_1.Image = My.Resources._1700
+        End If
+        If valu_itemmii_1.Value = 24 Then
+            Icon_itemmii_1.Image = My.Resources._1800
+        End If
+        If valu_itemmii_1.Value = 25 Then
+            Icon_itemmii_1.Image = My.Resources._1900
+        End If
+        If valu_itemmii_1.Value = 26 Then
+            Icon_itemmii_1.Image = My.Resources._1a00
+        End If
+        If valu_itemmii_1.Value = 27 Then
+            Icon_itemmii_1.Image = My.Resources._1b00
+        End If
+    End Sub
+
+    Private Sub valu_itemmii_2_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemmii_2.ValueChanged
+        If valu_itemmii_2.Value = 65535 Then
+            Icon_itemmii_2.Image = My.Resources.FFFF
+        End If
+        If valu_itemmii_2.Value = 0 Then
+            Icon_itemmii_2.Image = My.Resources._0000
+        End If
+        If valu_itemmii_2.Value = 1 Then
+            Icon_itemmii_2.Image = My.Resources._0100
+        End If
+        If valu_itemmii_2.Value = 2 Then
+            Icon_itemmii_2.Image = My.Resources._0200
+        End If
+        If valu_itemmii_2.Value = 3 Then
+            Icon_itemmii_2.Image = My.Resources._0300
+        End If
+        If valu_itemmii_2.Value = 4 Then
+            Icon_itemmii_2.Image = My.Resources._0400
+        End If
+        If valu_itemmii_2.Value = 5 Then
+            Icon_itemmii_2.Image = My.Resources._0500
+        End If
+        If valu_itemmii_2.Value = 6 Then
+            Icon_itemmii_2.Image = My.Resources._0600
+        End If
+        If valu_itemmii_2.Value = 7 Then
+            Icon_itemmii_2.Image = My.Resources._0700
+        End If
+        If valu_itemmii_2.Value = 8 Then
+            Icon_itemmii_2.Image = My.Resources._0800
+        End If
+        If valu_itemmii_2.Value = 9 Then
+            Icon_itemmii_2.Image = My.Resources._0900
+        End If
+        If valu_itemmii_2.Value = 10 Then
+            Icon_itemmii_2.Image = My.Resources._0a00
+        End If
+        If valu_itemmii_2.Value = 11 Then
+            Icon_itemmii_2.Image = My.Resources._0b00
+        End If
+        If valu_itemmii_2.Value = 12 Then
+            Icon_itemmii_2.Image = My.Resources._0c00
+        End If
+        If valu_itemmii_2.Value = 13 Then
+            Icon_itemmii_2.Image = My.Resources._0d00
+        End If
+        If valu_itemmii_2.Value = 14 Then
+            Icon_itemmii_2.Image = My.Resources._0e00
+        End If
+        If valu_itemmii_2.Value = 15 Then
+            Icon_itemmii_2.Image = My.Resources._0f00
+        End If
+        If valu_itemmii_2.Value = 16 Then
+            Icon_itemmii_2.Image = My.Resources._1000
+        End If
+        If valu_itemmii_2.Value = 17 Then
+            Icon_itemmii_2.Image = My.Resources._1100
+        End If
+        If valu_itemmii_2.Value = 18 Then
+            Icon_itemmii_2.Image = My.Resources._1200
+        End If
+        If valu_itemmii_2.Value = 19 Then
+            Icon_itemmii_2.Image = My.Resources._1300
+        End If
+        If valu_itemmii_2.Value = 20 Then
+            Icon_itemmii_2.Image = My.Resources._1400
+        End If
+        If valu_itemmii_2.Value = 21 Then
+            Icon_itemmii_2.Image = My.Resources._1500
+        End If
+        If valu_itemmii_2.Value = 22 Then
+            Icon_itemmii_2.Image = My.Resources._1600
+        End If
+        If valu_itemmii_2.Value = 23 Then
+            Icon_itemmii_2.Image = My.Resources._1700
+        End If
+        If valu_itemmii_2.Value = 24 Then
+            Icon_itemmii_2.Image = My.Resources._1800
+        End If
+        If valu_itemmii_2.Value = 25 Then
+            Icon_itemmii_2.Image = My.Resources._1900
+        End If
+        If valu_itemmii_2.Value = 26 Then
+            Icon_itemmii_2.Image = My.Resources._1a00
+        End If
+        If valu_itemmii_2.Value = 27 Then
+            Icon_itemmii_2.Image = My.Resources._1b00
+        End If
+    End Sub
+
+    Private Sub valu_itemmii_3_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemmii_3.ValueChanged
+        If valu_itemmii_3.Value = 65535 Then
+            Icon_itemmii_3.Image = My.Resources.FFFF
+        End If
+        If valu_itemmii_3.Value = 0 Then
+            Icon_itemmii_3.Image = My.Resources._0000
+        End If
+        If valu_itemmii_3.Value = 1 Then
+            Icon_itemmii_3.Image = My.Resources._0100
+        End If
+        If valu_itemmii_3.Value = 2 Then
+            Icon_itemmii_3.Image = My.Resources._0200
+        End If
+        If valu_itemmii_3.Value = 3 Then
+            Icon_itemmii_3.Image = My.Resources._0300
+        End If
+        If valu_itemmii_3.Value = 4 Then
+            Icon_itemmii_3.Image = My.Resources._0400
+        End If
+        If valu_itemmii_3.Value = 5 Then
+            Icon_itemmii_3.Image = My.Resources._0500
+        End If
+        If valu_itemmii_3.Value = 6 Then
+            Icon_itemmii_3.Image = My.Resources._0600
+        End If
+        If valu_itemmii_3.Value = 7 Then
+            Icon_itemmii_3.Image = My.Resources._0700
+        End If
+        If valu_itemmii_3.Value = 8 Then
+            Icon_itemmii_3.Image = My.Resources._0800
+        End If
+        If valu_itemmii_3.Value = 9 Then
+            Icon_itemmii_3.Image = My.Resources._0900
+        End If
+        If valu_itemmii_3.Value = 10 Then
+            Icon_itemmii_3.Image = My.Resources._0a00
+        End If
+        If valu_itemmii_3.Value = 11 Then
+            Icon_itemmii_3.Image = My.Resources._0b00
+        End If
+        If valu_itemmii_3.Value = 12 Then
+            Icon_itemmii_3.Image = My.Resources._0c00
+        End If
+        If valu_itemmii_3.Value = 13 Then
+            Icon_itemmii_3.Image = My.Resources._0d00
+        End If
+        If valu_itemmii_3.Value = 14 Then
+            Icon_itemmii_3.Image = My.Resources._0e00
+        End If
+        If valu_itemmii_3.Value = 15 Then
+            Icon_itemmii_3.Image = My.Resources._0f00
+        End If
+        If valu_itemmii_3.Value = 16 Then
+            Icon_itemmii_3.Image = My.Resources._1000
+        End If
+        If valu_itemmii_3.Value = 17 Then
+            Icon_itemmii_3.Image = My.Resources._1100
+        End If
+        If valu_itemmii_3.Value = 18 Then
+            Icon_itemmii_3.Image = My.Resources._1200
+        End If
+        If valu_itemmii_3.Value = 19 Then
+            Icon_itemmii_3.Image = My.Resources._1300
+        End If
+        If valu_itemmii_3.Value = 20 Then
+            Icon_itemmii_3.Image = My.Resources._1400
+        End If
+        If valu_itemmii_3.Value = 21 Then
+            Icon_itemmii_3.Image = My.Resources._1500
+        End If
+        If valu_itemmii_3.Value = 22 Then
+            Icon_itemmii_3.Image = My.Resources._1600
+        End If
+        If valu_itemmii_3.Value = 23 Then
+            Icon_itemmii_3.Image = My.Resources._1700
+        End If
+        If valu_itemmii_3.Value = 24 Then
+            Icon_itemmii_3.Image = My.Resources._1800
+        End If
+        If valu_itemmii_3.Value = 25 Then
+            Icon_itemmii_3.Image = My.Resources._1900
+        End If
+        If valu_itemmii_3.Value = 26 Then
+            Icon_itemmii_3.Image = My.Resources._1a00
+        End If
+        If valu_itemmii_3.Value = 27 Then
+            Icon_itemmii_3.Image = My.Resources._1b00
+        End If
+    End Sub
+
+    Private Sub valu_itemmii_4_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemmii_4.ValueChanged
+        If valu_itemmii_4.Value = 65535 Then
+            Icon_itemmii_4.Image = My.Resources.FFFF
+        End If
+        If valu_itemmii_4.Value = 0 Then
+            Icon_itemmii_4.Image = My.Resources._0000
+        End If
+        If valu_itemmii_4.Value = 1 Then
+            Icon_itemmii_4.Image = My.Resources._0100
+        End If
+        If valu_itemmii_4.Value = 2 Then
+            Icon_itemmii_4.Image = My.Resources._0200
+        End If
+        If valu_itemmii_4.Value = 3 Then
+            Icon_itemmii_4.Image = My.Resources._0300
+        End If
+        If valu_itemmii_4.Value = 4 Then
+            Icon_itemmii_4.Image = My.Resources._0400
+        End If
+        If valu_itemmii_4.Value = 5 Then
+            Icon_itemmii_4.Image = My.Resources._0500
+        End If
+        If valu_itemmii_4.Value = 6 Then
+            Icon_itemmii_4.Image = My.Resources._0600
+        End If
+        If valu_itemmii_4.Value = 7 Then
+            Icon_itemmii_4.Image = My.Resources._0700
+        End If
+        If valu_itemmii_4.Value = 8 Then
+            Icon_itemmii_4.Image = My.Resources._0800
+        End If
+        If valu_itemmii_4.Value = 9 Then
+            Icon_itemmii_4.Image = My.Resources._0900
+        End If
+        If valu_itemmii_4.Value = 10 Then
+            Icon_itemmii_4.Image = My.Resources._0a00
+        End If
+        If valu_itemmii_4.Value = 11 Then
+            Icon_itemmii_4.Image = My.Resources._0b00
+        End If
+        If valu_itemmii_4.Value = 12 Then
+            Icon_itemmii_4.Image = My.Resources._0c00
+        End If
+        If valu_itemmii_4.Value = 13 Then
+            Icon_itemmii_4.Image = My.Resources._0d00
+        End If
+        If valu_itemmii_4.Value = 14 Then
+            Icon_itemmii_4.Image = My.Resources._0e00
+        End If
+        If valu_itemmii_4.Value = 15 Then
+            Icon_itemmii_4.Image = My.Resources._0f00
+        End If
+        If valu_itemmii_4.Value = 16 Then
+            Icon_itemmii_4.Image = My.Resources._1000
+        End If
+        If valu_itemmii_4.Value = 17 Then
+            Icon_itemmii_4.Image = My.Resources._1100
+        End If
+        If valu_itemmii_4.Value = 18 Then
+            Icon_itemmii_4.Image = My.Resources._1200
+        End If
+        If valu_itemmii_4.Value = 19 Then
+            Icon_itemmii_4.Image = My.Resources._1300
+        End If
+        If valu_itemmii_4.Value = 20 Then
+            Icon_itemmii_4.Image = My.Resources._1400
+        End If
+        If valu_itemmii_4.Value = 21 Then
+            Icon_itemmii_4.Image = My.Resources._1500
+        End If
+        If valu_itemmii_4.Value = 22 Then
+            Icon_itemmii_4.Image = My.Resources._1600
+        End If
+        If valu_itemmii_4.Value = 23 Then
+            Icon_itemmii_4.Image = My.Resources._1700
+        End If
+        If valu_itemmii_4.Value = 24 Then
+            Icon_itemmii_4.Image = My.Resources._1800
+        End If
+        If valu_itemmii_4.Value = 25 Then
+            Icon_itemmii_4.Image = My.Resources._1900
+        End If
+        If valu_itemmii_4.Value = 26 Then
+            Icon_itemmii_4.Image = My.Resources._1a00
+        End If
+        If valu_itemmii_4.Value = 27 Then
+            Icon_itemmii_4.Image = My.Resources._1b00
+        End If
+    End Sub
+
+    Private Sub valu_itemmii_5_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemmii_5.ValueChanged
+        If valu_itemmii_5.Value = 65535 Then
+            Icon_itemmii_5.Image = My.Resources.FFFF
+        End If
+        If valu_itemmii_5.Value = 0 Then
+            Icon_itemmii_5.Image = My.Resources._0000
+        End If
+        If valu_itemmii_5.Value = 1 Then
+            Icon_itemmii_5.Image = My.Resources._0100
+        End If
+        If valu_itemmii_5.Value = 2 Then
+            Icon_itemmii_5.Image = My.Resources._0200
+        End If
+        If valu_itemmii_5.Value = 3 Then
+            Icon_itemmii_5.Image = My.Resources._0300
+        End If
+        If valu_itemmii_5.Value = 4 Then
+            Icon_itemmii_5.Image = My.Resources._0400
+        End If
+        If valu_itemmii_5.Value = 5 Then
+            Icon_itemmii_5.Image = My.Resources._0500
+        End If
+        If valu_itemmii_5.Value = 6 Then
+            Icon_itemmii_5.Image = My.Resources._0600
+        End If
+        If valu_itemmii_5.Value = 7 Then
+            Icon_itemmii_5.Image = My.Resources._0700
+        End If
+        If valu_itemmii_5.Value = 8 Then
+            Icon_itemmii_5.Image = My.Resources._0800
+        End If
+        If valu_itemmii_5.Value = 9 Then
+            Icon_itemmii_5.Image = My.Resources._0900
+        End If
+        If valu_itemmii_5.Value = 10 Then
+            Icon_itemmii_5.Image = My.Resources._0a00
+        End If
+        If valu_itemmii_5.Value = 11 Then
+            Icon_itemmii_5.Image = My.Resources._0b00
+        End If
+        If valu_itemmii_5.Value = 12 Then
+            Icon_itemmii_5.Image = My.Resources._0c00
+        End If
+        If valu_itemmii_5.Value = 13 Then
+            Icon_itemmii_5.Image = My.Resources._0d00
+        End If
+        If valu_itemmii_5.Value = 14 Then
+            Icon_itemmii_5.Image = My.Resources._0e00
+        End If
+        If valu_itemmii_5.Value = 15 Then
+            Icon_itemmii_5.Image = My.Resources._0f00
+        End If
+        If valu_itemmii_5.Value = 16 Then
+            Icon_itemmii_5.Image = My.Resources._1000
+        End If
+        If valu_itemmii_5.Value = 17 Then
+            Icon_itemmii_5.Image = My.Resources._1100
+        End If
+        If valu_itemmii_5.Value = 18 Then
+            Icon_itemmii_5.Image = My.Resources._1200
+        End If
+        If valu_itemmii_5.Value = 19 Then
+            Icon_itemmii_5.Image = My.Resources._1300
+        End If
+        If valu_itemmii_5.Value = 20 Then
+            Icon_itemmii_5.Image = My.Resources._1400
+        End If
+        If valu_itemmii_5.Value = 21 Then
+            Icon_itemmii_5.Image = My.Resources._1500
+        End If
+        If valu_itemmii_5.Value = 22 Then
+            Icon_itemmii_5.Image = My.Resources._1600
+        End If
+        If valu_itemmii_5.Value = 23 Then
+            Icon_itemmii_5.Image = My.Resources._1700
+        End If
+        If valu_itemmii_5.Value = 24 Then
+            Icon_itemmii_5.Image = My.Resources._1800
+        End If
+        If valu_itemmii_5.Value = 25 Then
+            Icon_itemmii_5.Image = My.Resources._1900
+        End If
+        If valu_itemmii_5.Value = 26 Then
+            Icon_itemmii_5.Image = My.Resources._1a00
+        End If
+        If valu_itemmii_5.Value = 27 Then
+            Icon_itemmii_5.Image = My.Resources._1b00
+        End If
+    End Sub
+
+    Private Sub valu_itemmii_6_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemmii_6.ValueChanged
+        If valu_itemmii_6.Value = 65535 Then
+            Icon_itemmii_6.Image = My.Resources.FFFF
+        End If
+        If valu_itemmii_6.Value = 0 Then
+            Icon_itemmii_6.Image = My.Resources._0000
+        End If
+        If valu_itemmii_6.Value = 1 Then
+            Icon_itemmii_6.Image = My.Resources._0100
+        End If
+        If valu_itemmii_6.Value = 2 Then
+            Icon_itemmii_6.Image = My.Resources._0200
+        End If
+        If valu_itemmii_6.Value = 3 Then
+            Icon_itemmii_6.Image = My.Resources._0300
+        End If
+        If valu_itemmii_6.Value = 4 Then
+            Icon_itemmii_6.Image = My.Resources._0400
+        End If
+        If valu_itemmii_6.Value = 5 Then
+            Icon_itemmii_6.Image = My.Resources._0500
+        End If
+        If valu_itemmii_6.Value = 6 Then
+            Icon_itemmii_6.Image = My.Resources._0600
+        End If
+        If valu_itemmii_6.Value = 7 Then
+            Icon_itemmii_6.Image = My.Resources._0700
+        End If
+        If valu_itemmii_6.Value = 8 Then
+            Icon_itemmii_6.Image = My.Resources._0800
+        End If
+        If valu_itemmii_6.Value = 9 Then
+            Icon_itemmii_6.Image = My.Resources._0900
+        End If
+        If valu_itemmii_6.Value = 10 Then
+            Icon_itemmii_6.Image = My.Resources._0a00
+        End If
+        If valu_itemmii_6.Value = 11 Then
+            Icon_itemmii_6.Image = My.Resources._0b00
+        End If
+        If valu_itemmii_6.Value = 12 Then
+            Icon_itemmii_6.Image = My.Resources._0c00
+        End If
+        If valu_itemmii_6.Value = 13 Then
+            Icon_itemmii_6.Image = My.Resources._0d00
+        End If
+        If valu_itemmii_6.Value = 14 Then
+            Icon_itemmii_6.Image = My.Resources._0e00
+        End If
+        If valu_itemmii_6.Value = 15 Then
+            Icon_itemmii_6.Image = My.Resources._0f00
+        End If
+        If valu_itemmii_6.Value = 16 Then
+            Icon_itemmii_6.Image = My.Resources._1000
+        End If
+        If valu_itemmii_6.Value = 17 Then
+            Icon_itemmii_6.Image = My.Resources._1100
+        End If
+        If valu_itemmii_6.Value = 18 Then
+            Icon_itemmii_6.Image = My.Resources._1200
+        End If
+        If valu_itemmii_6.Value = 19 Then
+            Icon_itemmii_6.Image = My.Resources._1300
+        End If
+        If valu_itemmii_6.Value = 20 Then
+            Icon_itemmii_6.Image = My.Resources._1400
+        End If
+        If valu_itemmii_6.Value = 21 Then
+            Icon_itemmii_6.Image = My.Resources._1500
+        End If
+        If valu_itemmii_6.Value = 22 Then
+            Icon_itemmii_6.Image = My.Resources._1600
+        End If
+        If valu_itemmii_6.Value = 23 Then
+            Icon_itemmii_6.Image = My.Resources._1700
+        End If
+        If valu_itemmii_6.Value = 24 Then
+            Icon_itemmii_6.Image = My.Resources._1800
+        End If
+        If valu_itemmii_6.Value = 25 Then
+            Icon_itemmii_6.Image = My.Resources._1900
+        End If
+        If valu_itemmii_6.Value = 26 Then
+            Icon_itemmii_6.Image = My.Resources._1a00
+        End If
+        If valu_itemmii_6.Value = 27 Then
+            Icon_itemmii_6.Image = My.Resources._1b00
+        End If
+    End Sub
+
+    Private Sub valu_itemmii_7_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemmii_7.ValueChanged
+        If valu_itemmii_7.Value = 65535 Then
+            Icon_itemmii_7.Image = My.Resources.FFFF
+        End If
+        If valu_itemmii_7.Value = 0 Then
+            Icon_itemmii_7.Image = My.Resources._0000
+        End If
+        If valu_itemmii_7.Value = 1 Then
+            Icon_itemmii_7.Image = My.Resources._0100
+        End If
+        If valu_itemmii_7.Value = 2 Then
+            Icon_itemmii_7.Image = My.Resources._0200
+        End If
+        If valu_itemmii_7.Value = 3 Then
+            Icon_itemmii_7.Image = My.Resources._0300
+        End If
+        If valu_itemmii_7.Value = 4 Then
+            Icon_itemmii_7.Image = My.Resources._0400
+        End If
+        If valu_itemmii_7.Value = 5 Then
+            Icon_itemmii_7.Image = My.Resources._0500
+        End If
+        If valu_itemmii_7.Value = 6 Then
+            Icon_itemmii_7.Image = My.Resources._0600
+        End If
+        If valu_itemmii_7.Value = 7 Then
+            Icon_itemmii_7.Image = My.Resources._0700
+        End If
+        If valu_itemmii_7.Value = 8 Then
+            Icon_itemmii_7.Image = My.Resources._0800
+        End If
+        If valu_itemmii_7.Value = 9 Then
+            Icon_itemmii_7.Image = My.Resources._0900
+        End If
+        If valu_itemmii_7.Value = 10 Then
+            Icon_itemmii_7.Image = My.Resources._0a00
+        End If
+        If valu_itemmii_7.Value = 11 Then
+            Icon_itemmii_7.Image = My.Resources._0b00
+        End If
+        If valu_itemmii_7.Value = 12 Then
+            Icon_itemmii_7.Image = My.Resources._0c00
+        End If
+        If valu_itemmii_7.Value = 13 Then
+            Icon_itemmii_7.Image = My.Resources._0d00
+        End If
+        If valu_itemmii_7.Value = 14 Then
+            Icon_itemmii_7.Image = My.Resources._0e00
+        End If
+        If valu_itemmii_7.Value = 15 Then
+            Icon_itemmii_7.Image = My.Resources._0f00
+        End If
+        If valu_itemmii_7.Value = 16 Then
+            Icon_itemmii_7.Image = My.Resources._1000
+        End If
+        If valu_itemmii_7.Value = 17 Then
+            Icon_itemmii_7.Image = My.Resources._1100
+        End If
+        If valu_itemmii_7.Value = 18 Then
+            Icon_itemmii_7.Image = My.Resources._1200
+        End If
+        If valu_itemmii_7.Value = 19 Then
+            Icon_itemmii_7.Image = My.Resources._1300
+        End If
+        If valu_itemmii_7.Value = 20 Then
+            Icon_itemmii_7.Image = My.Resources._1400
+        End If
+        If valu_itemmii_7.Value = 21 Then
+            Icon_itemmii_7.Image = My.Resources._1500
+        End If
+        If valu_itemmii_7.Value = 22 Then
+            Icon_itemmii_7.Image = My.Resources._1600
+        End If
+        If valu_itemmii_7.Value = 23 Then
+            Icon_itemmii_7.Image = My.Resources._1700
+        End If
+        If valu_itemmii_7.Value = 24 Then
+            Icon_itemmii_7.Image = My.Resources._1800
+        End If
+        If valu_itemmii_7.Value = 25 Then
+            Icon_itemmii_7.Image = My.Resources._1900
+        End If
+        If valu_itemmii_7.Value = 26 Then
+            Icon_itemmii_7.Image = My.Resources._1a00
+        End If
+        If valu_itemmii_7.Value = 27 Then
+            Icon_itemmii_7.Image = My.Resources._1b00
+        End If
+    End Sub
+
+    Private Sub valu_itemmii_8_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemmii_8.ValueChanged
+        If valu_itemmii_8.Value = 65535 Then
+            Icon_itemmii_8.Image = My.Resources.FFFF
+        End If
+        If valu_itemmii_8.Value = 0 Then
+            Icon_itemmii_8.Image = My.Resources._0000
+        End If
+        If valu_itemmii_8.Value = 1 Then
+            Icon_itemmii_8.Image = My.Resources._0100
+        End If
+        If valu_itemmii_8.Value = 2 Then
+            Icon_itemmii_8.Image = My.Resources._0200
+        End If
+        If valu_itemmii_8.Value = 3 Then
+            Icon_itemmii_8.Image = My.Resources._0300
+        End If
+        If valu_itemmii_8.Value = 4 Then
+            Icon_itemmii_8.Image = My.Resources._0400
+        End If
+        If valu_itemmii_8.Value = 5 Then
+            Icon_itemmii_8.Image = My.Resources._0500
+        End If
+        If valu_itemmii_8.Value = 6 Then
+            Icon_itemmii_8.Image = My.Resources._0600
+        End If
+        If valu_itemmii_8.Value = 7 Then
+            Icon_itemmii_8.Image = My.Resources._0700
+        End If
+        If valu_itemmii_8.Value = 8 Then
+            Icon_itemmii_8.Image = My.Resources._0800
+        End If
+        If valu_itemmii_8.Value = 9 Then
+            Icon_itemmii_8.Image = My.Resources._0900
+        End If
+        If valu_itemmii_8.Value = 10 Then
+            Icon_itemmii_8.Image = My.Resources._0a00
+        End If
+        If valu_itemmii_8.Value = 11 Then
+            Icon_itemmii_8.Image = My.Resources._0b00
+        End If
+        If valu_itemmii_8.Value = 12 Then
+            Icon_itemmii_8.Image = My.Resources._0c00
+        End If
+        If valu_itemmii_8.Value = 13 Then
+            Icon_itemmii_8.Image = My.Resources._0d00
+        End If
+        If valu_itemmii_8.Value = 14 Then
+            Icon_itemmii_8.Image = My.Resources._0e00
+        End If
+        If valu_itemmii_8.Value = 15 Then
+            Icon_itemmii_8.Image = My.Resources._0f00
+        End If
+        If valu_itemmii_8.Value = 16 Then
+            Icon_itemmii_8.Image = My.Resources._1000
+        End If
+        If valu_itemmii_8.Value = 17 Then
+            Icon_itemmii_8.Image = My.Resources._1100
+        End If
+        If valu_itemmii_8.Value = 18 Then
+            Icon_itemmii_8.Image = My.Resources._1200
+        End If
+        If valu_itemmii_8.Value = 19 Then
+            Icon_itemmii_8.Image = My.Resources._1300
+        End If
+        If valu_itemmii_8.Value = 20 Then
+            Icon_itemmii_8.Image = My.Resources._1400
+        End If
+        If valu_itemmii_8.Value = 21 Then
+            Icon_itemmii_8.Image = My.Resources._1500
+        End If
+        If valu_itemmii_8.Value = 22 Then
+            Icon_itemmii_8.Image = My.Resources._1600
+        End If
+        If valu_itemmii_8.Value = 23 Then
+            Icon_itemmii_8.Image = My.Resources._1700
+        End If
+        If valu_itemmii_8.Value = 24 Then
+            Icon_itemmii_8.Image = My.Resources._1800
+        End If
+        If valu_itemmii_8.Value = 25 Then
+            Icon_itemmii_8.Image = My.Resources._1900
+        End If
+        If valu_itemmii_8.Value = 26 Then
+            Icon_itemmii_8.Image = My.Resources._1a00
+        End If
+        If valu_itemmii_8.Value = 27 Then
+            Icon_itemmii_8.Image = My.Resources._1b00
+        End If
+    End Sub
+
+    Private Sub Select_mii_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_mii.SelectedIndexChanged
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_editing_mii.Text = "editing " & Text_nickname.Text & " ..."
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_editing_mii.Text = "édition de " & Text_nickname.Text & " ..."
+        End If
+        Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(0)
+        Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
+        Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
+        Select_interaction.SelectedItem = Select_interaction.Items.Item(0)
+        readMii()
     End Sub
 End Class

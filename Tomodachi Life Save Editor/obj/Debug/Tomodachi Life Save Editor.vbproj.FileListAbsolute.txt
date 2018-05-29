@@ -48,3 +48,29 @@ C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save E
 C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Formsettings.resources
 C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form8.resources
 C:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form9.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\bin\Debug\Tomodachi Life Save Editor.exe.config
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi Life Save Editor.exe
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi Life Save Editor.xml
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi Life Save Editor.pdb
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\bin\Debug\Tomodachi Life Save Editor.exe
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\bin\Debug\Tomodachi Life Save Editor.pdb
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\bin\Debug\Tomodachi Life Save Editor.xml
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\bin\Debug\PackageIO.dll
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\bin\Debug\fr\Microsoft.VisualBasic.PowerPacks.Vs.resources.dll
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi Life Save Editor.vbprojResolveAssemblyReference.cache
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form1.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form10.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form11.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form12.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form2.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form3.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form4.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form5.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form6.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form7.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form8.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Form9.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Formsettings.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.Resources.resources
+D:\Users\Brion\Documents\GitHub\Tomodachi-Life-Save-Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi Life Save Editor.vbproj.GenerateResource.Cache

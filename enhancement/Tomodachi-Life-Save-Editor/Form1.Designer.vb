@@ -181,7 +181,7 @@ Partial Class TL_SaveEditor
         Me.Setting_music = New System.Windows.Forms.CheckBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Group_changelog = New System.Windows.Forms.GroupBox()
-        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
+        Me.Icon_changelog = New System.Windows.Forms.PictureBox()
         Me.Changelog = New System.Windows.Forms.Label()
         Me.Text_TLSE_version = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
@@ -189,6 +189,8 @@ Partial Class TL_SaveEditor
         Me.Text_editing_mii = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Tab_mii_edit = New System.Windows.Forms.TabPage()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel_edit_haircolor = New System.Windows.Forms.Panel()
         Me.color_empty = New System.Windows.Forms.Label()
         Me.Button_close_hcoloredit = New System.Windows.Forms.Label()
@@ -327,19 +329,20 @@ Partial Class TL_SaveEditor
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
         Me.Tab_mii_status = New System.Windows.Forms.TabPage()
-        Me.valu_experience = New System.Windows.Forms.NumericUpDown()
         Me.Panel_edit_fullness = New System.Windows.Forms.Panel()
         Me.Icon_edit_full_100 = New System.Windows.Forms.PictureBox()
         Me.Icon_edit_full_50 = New System.Windows.Forms.PictureBox()
         Me.Icon_edit_full_25 = New System.Windows.Forms.PictureBox()
         Me.Icon_edit_full_00 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown15 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_chkfullness = New System.Windows.Forms.NumericUpDown()
+        Me.valu_experience = New System.Windows.Forms.NumericUpDown()
+        Me.valu_itemmii_8 = New System.Windows.Forms.NumericUpDown()
         Me.PictureBox58 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown16 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_itemmii_7 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown52 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown17 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_itemmii_6 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown51 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown18 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_itemmii_5 = New System.Windows.Forms.NumericUpDown()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Text_interaction = New System.Windows.Forms.TextBox()
         Me.Title_emotions = New System.Windows.Forms.Label()
@@ -360,28 +363,28 @@ Partial Class TL_SaveEditor
         Me.Panel17 = New System.Windows.Forms.Panel()
         Me.Select_interaction = New System.Windows.Forms.ComboBox()
         Me.NumericUpDown50 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown11 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown14 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_itemmii_1 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_itemmii_4 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown49 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown12 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_itemmii_2 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown48 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown13 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_itemmii_3 = New System.Windows.Forms.NumericUpDown()
         Me.NumericUpDown47 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemmii_4 = New System.Windows.Forms.PictureBox()
         Me.NumericUpDown46 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemmii_5 = New System.Windows.Forms.PictureBox()
         Me.Title_foods_worst = New System.Windows.Forms.Label()
-        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemmii_6 = New System.Windows.Forms.PictureBox()
         Me.Title_foods_favorite = New System.Windows.Forms.Label()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemmii_7 = New System.Windows.Forms.PictureBox()
         Me.Title_foods_allfav = New System.Windows.Forms.Label()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemmii_8 = New System.Windows.Forms.PictureBox()
         Me.Label29 = New System.Windows.Forms.Label()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemmii_3 = New System.Windows.Forms.PictureBox()
         Me.Label28 = New System.Windows.Forms.Label()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemmii_2 = New System.Windows.Forms.PictureBox()
         Me.Text_level = New System.Windows.Forms.Label()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemmii_1 = New System.Windows.Forms.PictureBox()
         Me.Icon_experience = New System.Windows.Forms.PictureBox()
         Me.valu_level = New System.Windows.Forms.NumericUpDown()
         Me.valu_fullness = New System.Windows.Forms.NumericUpDown()
@@ -412,12 +415,12 @@ Partial Class TL_SaveEditor
         Me.Label33 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Label35 = New System.Windows.Forms.Label()
-        Me.NumericUpDown30 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown31 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown32 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown33 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown34 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown35 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_30 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_29 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_28 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_27 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_26 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_25 = New System.Windows.Forms.NumericUpDown()
         Me.Select_friend_rela_24 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_23 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_22 = New System.Windows.Forms.ComboBox()
@@ -430,12 +433,12 @@ Partial Class TL_SaveEditor
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.NumericUpDown7 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown8 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown9 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown22 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown23 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_24 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_23 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_22 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_21 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_20 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_19 = New System.Windows.Forms.NumericUpDown()
         Me.Select_friend_rela_18 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_17 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_16 = New System.Windows.Forms.ComboBox()
@@ -448,12 +451,12 @@ Partial Class TL_SaveEditor
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
-        Me.NumericUpDown24 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown25 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown26 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown27 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown28 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown29 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_18 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_17 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_16 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_15 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_14 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_13 = New System.Windows.Forms.NumericUpDown()
         Me.Select_friend_rela_12 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_11 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_10 = New System.Windows.Forms.ComboBox()
@@ -466,12 +469,12 @@ Partial Class TL_SaveEditor
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_12 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_11 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_10 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_9 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_8 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_7 = New System.Windows.Forms.NumericUpDown()
         Me.Select_friend_rela_6 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_5 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_4 = New System.Windows.Forms.ComboBox()
@@ -484,19 +487,19 @@ Partial Class TL_SaveEditor
         Me.Label46 = New System.Windows.Forms.Label()
         Me.Label45 = New System.Windows.Forms.Label()
         Me.Label44 = New System.Windows.Forms.Label()
-        Me.NumericUpDown64 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown63 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown62 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_6 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_5 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_friend_rela_4 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_3 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_2 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_1 = New System.Windows.Forms.NumericUpDown()
         Me.Tab_mii_extras = New System.Windows.Forms.TabPage()
-        Me.NumericUpDown45 = New System.Windows.Forms.NumericUpDown()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.PictureBox62 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown44 = New System.Windows.Forms.NumericUpDown()
-        Me.Label40 = New System.Windows.Forms.Label()
-        Me.PictureBox61 = New System.Windows.Forms.PictureBox()
+        Me.valu_ranking_splurge = New System.Windows.Forms.NumericUpDown()
+        Me.Title_ranking_splurge = New System.Windows.Forms.Label()
+        Me.Icon_ranking_splurge = New System.Windows.Forms.PictureBox()
+        Me.valu_ranking_pampered = New System.Windows.Forms.NumericUpDown()
+        Me.Title_ranking_pampered = New System.Windows.Forms.Label()
+        Me.Icon_ranking_pampered = New System.Windows.Forms.PictureBox()
         Me.Panel_save_mii = New System.Windows.Forms.Panel()
         Me.Text_save_mii = New System.Windows.Forms.Label()
         Me.Panel_select_mii = New System.Windows.Forms.Panel()
@@ -623,10 +626,12 @@ Partial Class TL_SaveEditor
         Me.Panel10.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.Group_changelog.SuspendLayout()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_miiedit.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.Tab_mii_edit.SuspendLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_edit_haircolor.SuspendLayout()
         CType(Me.color_32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.color_31, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -722,19 +727,20 @@ Partial Class TL_SaveEditor
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tab_mii_status.SuspendLayout()
-        CType(Me.valu_experience, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_edit_fullness.SuspendLayout()
         CType(Me.Icon_edit_full_100, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_edit_full_50, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_edit_full_25, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_edit_full_00, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_chkfullness, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_experience, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_itemmii_8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox58, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_itemmii_7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown52, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_itemmii_6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown51, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_itemmii_5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel25.SuspendLayout()
         CType(Me.valu_emotions, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -745,22 +751,22 @@ Partial Class TL_SaveEditor
         CType(Me.valu_target1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel17.SuspendLayout()
         CType(Me.NumericUpDown50, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_itemmii_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_itemmii_4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown49, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_itemmii_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown48, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_itemmii_3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown47, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemmii_4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown46, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemmii_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemmii_6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemmii_7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemmii_8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemmii_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemmii_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemmii_1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_experience, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_level, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_fullness, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -774,41 +780,41 @@ Partial Class TL_SaveEditor
         Me.Panel8.SuspendLayout()
         CType(Me.valu_setallfriends, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
-        CType(Me.NumericUpDown30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown31, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown32, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown33, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown34, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown35, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown27, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown64, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown63, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown62, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_friend_rela_4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_friend_rela_3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_friend_rela_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_friend_rela_1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tab_mii_extras.SuspendLayout()
-        CType(Me.NumericUpDown45, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox62, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown44, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_ranking_splurge, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_ranking_splurge, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_save_mii.SuspendLayout()
         Me.Panel_select_mii.SuspendLayout()
         Me.SuspendLayout()
@@ -1265,7 +1271,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_pronun_island.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Text_pronun_island.Location = New System.Drawing.Point(2, 2)
-        Me.Text_pronun_island.MaxLength = 10
+        Me.Text_pronun_island.MaxLength = 20
         Me.Text_pronun_island.Name = "Text_pronun_island"
         Me.Text_pronun_island.Size = New System.Drawing.Size(156, 13)
         Me.Text_pronun_island.TabIndex = 7
@@ -2617,7 +2623,7 @@ Partial Class TL_SaveEditor
         '
         Me.Group_changelog.BackColor = System.Drawing.Color.White
         Me.Group_changelog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Group_changelog.Controls.Add(Me.PictureBox27)
+        Me.Group_changelog.Controls.Add(Me.Icon_changelog)
         Me.Group_changelog.Controls.Add(Me.Changelog)
         Me.Group_changelog.Controls.Add(Me.Text_TLSE_version)
         Me.Group_changelog.Location = New System.Drawing.Point(55, 36)
@@ -2627,13 +2633,16 @@ Partial Class TL_SaveEditor
         Me.Group_changelog.TabStop = False
         Me.Group_changelog.Text = "Changelog"
         '
-        'PictureBox27
+        'Icon_changelog
         '
-        Me.PictureBox27.Location = New System.Drawing.Point(377, 11)
-        Me.PictureBox27.Name = "PictureBox27"
-        Me.PictureBox27.Size = New System.Drawing.Size(96, 59)
-        Me.PictureBox27.TabIndex = 2
-        Me.PictureBox27.TabStop = False
+        Me.Icon_changelog.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_changelog.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.logo_US
+        Me.Icon_changelog.Location = New System.Drawing.Point(360, 34)
+        Me.Icon_changelog.Name = "Icon_changelog"
+        Me.Icon_changelog.Size = New System.Drawing.Size(102, 90)
+        Me.Icon_changelog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Icon_changelog.TabIndex = 2
+        Me.Icon_changelog.TabStop = False
         '
         'Changelog
         '
@@ -2706,6 +2715,8 @@ Partial Class TL_SaveEditor
         '
         Me.Tab_mii_edit.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_edit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_edit.Controls.Add(Me.NumericUpDown1)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox3)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.valu_haircolor)
@@ -2761,6 +2772,24 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_edit.Size = New System.Drawing.Size(585, 429)
         Me.Tab_mii_edit.TabIndex = 0
         Me.Tab_mii_edit.Text = "Edit"
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown1.Location = New System.Drawing.Point(290, 381)
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(35, 16)
+        Me.NumericUpDown1.TabIndex = 187
+        Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_mii_houselov
+        Me.PictureBox3.Location = New System.Drawing.Point(287, 338)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(40, 43)
+        Me.PictureBox3.TabIndex = 186
+        Me.PictureBox3.TabStop = False
         '
         'Panel_edit_haircolor
         '
@@ -3284,6 +3313,7 @@ Partial Class TL_SaveEditor
         'Select_growkid
         '
         Me.Select_growkid.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_growkid.Enabled = False
         Me.Select_growkid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_growkid.FormattingEnabled = True
         Me.Select_growkid.Items.AddRange(New Object() {"Grown-up", "Grown-up (1)", "Kid"})
@@ -4193,39 +4223,40 @@ Partial Class TL_SaveEditor
         '
         Me.Tab_mii_status.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_status.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
-        Me.Tab_mii_status.Controls.Add(Me.valu_experience)
         Me.Tab_mii_status.Controls.Add(Me.Panel_edit_fullness)
-        Me.Tab_mii_status.Controls.Add(Me.NumericUpDown15)
+        Me.Tab_mii_status.Controls.Add(Me.valu_chkfullness)
+        Me.Tab_mii_status.Controls.Add(Me.valu_experience)
+        Me.Tab_mii_status.Controls.Add(Me.valu_itemmii_8)
         Me.Tab_mii_status.Controls.Add(Me.PictureBox58)
-        Me.Tab_mii_status.Controls.Add(Me.NumericUpDown16)
+        Me.Tab_mii_status.Controls.Add(Me.valu_itemmii_7)
         Me.Tab_mii_status.Controls.Add(Me.NumericUpDown52)
-        Me.Tab_mii_status.Controls.Add(Me.NumericUpDown17)
+        Me.Tab_mii_status.Controls.Add(Me.valu_itemmii_6)
         Me.Tab_mii_status.Controls.Add(Me.NumericUpDown51)
-        Me.Tab_mii_status.Controls.Add(Me.NumericUpDown18)
+        Me.Tab_mii_status.Controls.Add(Me.valu_itemmii_5)
         Me.Tab_mii_status.Controls.Add(Me.Panel3)
         Me.Tab_mii_status.Controls.Add(Me.NumericUpDown50)
-        Me.Tab_mii_status.Controls.Add(Me.NumericUpDown11)
-        Me.Tab_mii_status.Controls.Add(Me.NumericUpDown14)
+        Me.Tab_mii_status.Controls.Add(Me.valu_itemmii_1)
+        Me.Tab_mii_status.Controls.Add(Me.valu_itemmii_4)
         Me.Tab_mii_status.Controls.Add(Me.NumericUpDown49)
-        Me.Tab_mii_status.Controls.Add(Me.NumericUpDown12)
+        Me.Tab_mii_status.Controls.Add(Me.valu_itemmii_2)
         Me.Tab_mii_status.Controls.Add(Me.NumericUpDown48)
-        Me.Tab_mii_status.Controls.Add(Me.NumericUpDown13)
+        Me.Tab_mii_status.Controls.Add(Me.valu_itemmii_3)
         Me.Tab_mii_status.Controls.Add(Me.NumericUpDown47)
-        Me.Tab_mii_status.Controls.Add(Me.PictureBox25)
+        Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_4)
         Me.Tab_mii_status.Controls.Add(Me.NumericUpDown46)
-        Me.Tab_mii_status.Controls.Add(Me.PictureBox29)
+        Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_5)
         Me.Tab_mii_status.Controls.Add(Me.Title_foods_worst)
-        Me.Tab_mii_status.Controls.Add(Me.PictureBox28)
+        Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_6)
         Me.Tab_mii_status.Controls.Add(Me.Title_foods_favorite)
-        Me.Tab_mii_status.Controls.Add(Me.PictureBox14)
+        Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_7)
         Me.Tab_mii_status.Controls.Add(Me.Title_foods_allfav)
-        Me.Tab_mii_status.Controls.Add(Me.PictureBox26)
+        Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_8)
         Me.Tab_mii_status.Controls.Add(Me.Label29)
-        Me.Tab_mii_status.Controls.Add(Me.PictureBox24)
+        Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_3)
         Me.Tab_mii_status.Controls.Add(Me.Label28)
-        Me.Tab_mii_status.Controls.Add(Me.PictureBox23)
+        Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_2)
         Me.Tab_mii_status.Controls.Add(Me.Text_level)
-        Me.Tab_mii_status.Controls.Add(Me.PictureBox17)
+        Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_1)
         Me.Tab_mii_status.Controls.Add(Me.Icon_experience)
         Me.Tab_mii_status.Controls.Add(Me.valu_level)
         Me.Tab_mii_status.Controls.Add(Me.valu_fullness)
@@ -4242,16 +4273,6 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Size = New System.Drawing.Size(585, 429)
         Me.Tab_mii_status.TabIndex = 1
         Me.Tab_mii_status.Text = "Status"
-        '
-        'valu_experience
-        '
-        Me.valu_experience.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_experience.Location = New System.Drawing.Point(308, 19)
-        Me.valu_experience.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.valu_experience.Name = "valu_experience"
-        Me.valu_experience.Size = New System.Drawing.Size(40, 16)
-        Me.valu_experience.TabIndex = 178
-        Me.valu_experience.Visible = False
         '
         'Panel_edit_fullness
         '
@@ -4310,16 +4331,37 @@ Partial Class TL_SaveEditor
         Me.Icon_edit_full_00.TabIndex = 110
         Me.Icon_edit_full_00.TabStop = False
         '
-        'NumericUpDown15
+        'valu_chkfullness
         '
-        Me.NumericUpDown15.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown15.Location = New System.Drawing.Point(435, 214)
-        Me.NumericUpDown15.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.NumericUpDown15.Name = "NumericUpDown15"
-        Me.NumericUpDown15.Size = New System.Drawing.Size(40, 16)
-        Me.NumericUpDown15.TabIndex = 86
-        Me.NumericUpDown15.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown15.Visible = False
+        Me.valu_chkfullness.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_chkfullness.Location = New System.Drawing.Point(316, 97)
+        Me.valu_chkfullness.Name = "valu_chkfullness"
+        Me.valu_chkfullness.Size = New System.Drawing.Size(38, 16)
+        Me.valu_chkfullness.TabIndex = 179
+        Me.valu_chkfullness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_chkfullness.Visible = False
+        '
+        'valu_experience
+        '
+        Me.valu_experience.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_experience.Location = New System.Drawing.Point(308, 19)
+        Me.valu_experience.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_experience.Name = "valu_experience"
+        Me.valu_experience.Size = New System.Drawing.Size(40, 16)
+        Me.valu_experience.TabIndex = 178
+        Me.valu_experience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_experience.Visible = False
+        '
+        'valu_itemmii_8
+        '
+        Me.valu_itemmii_8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemmii_8.Location = New System.Drawing.Point(435, 214)
+        Me.valu_itemmii_8.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_8.Name = "valu_itemmii_8"
+        Me.valu_itemmii_8.Size = New System.Drawing.Size(40, 16)
+        Me.valu_itemmii_8.TabIndex = 86
+        Me.valu_itemmii_8.Value = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_8.Visible = False
         '
         'PictureBox58
         '
@@ -4329,16 +4371,16 @@ Partial Class TL_SaveEditor
         Me.PictureBox58.TabIndex = 128
         Me.PictureBox58.TabStop = False
         '
-        'NumericUpDown16
+        'valu_itemmii_7
         '
-        Me.NumericUpDown16.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown16.Location = New System.Drawing.Point(401, 214)
-        Me.NumericUpDown16.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.NumericUpDown16.Name = "NumericUpDown16"
-        Me.NumericUpDown16.Size = New System.Drawing.Size(40, 16)
-        Me.NumericUpDown16.TabIndex = 85
-        Me.NumericUpDown16.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown16.Visible = False
+        Me.valu_itemmii_7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemmii_7.Location = New System.Drawing.Point(401, 214)
+        Me.valu_itemmii_7.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_7.Name = "valu_itemmii_7"
+        Me.valu_itemmii_7.Size = New System.Drawing.Size(40, 16)
+        Me.valu_itemmii_7.TabIndex = 85
+        Me.valu_itemmii_7.Value = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_7.Visible = False
         '
         'NumericUpDown52
         '
@@ -4350,16 +4392,16 @@ Partial Class TL_SaveEditor
         Me.NumericUpDown52.Size = New System.Drawing.Size(120, 16)
         Me.NumericUpDown52.TabIndex = 127
         '
-        'NumericUpDown17
+        'valu_itemmii_6
         '
-        Me.NumericUpDown17.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown17.Location = New System.Drawing.Point(367, 214)
-        Me.NumericUpDown17.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.NumericUpDown17.Name = "NumericUpDown17"
-        Me.NumericUpDown17.Size = New System.Drawing.Size(40, 16)
-        Me.NumericUpDown17.TabIndex = 84
-        Me.NumericUpDown17.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown17.Visible = False
+        Me.valu_itemmii_6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemmii_6.Location = New System.Drawing.Point(367, 214)
+        Me.valu_itemmii_6.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_6.Name = "valu_itemmii_6"
+        Me.valu_itemmii_6.Size = New System.Drawing.Size(40, 16)
+        Me.valu_itemmii_6.TabIndex = 84
+        Me.valu_itemmii_6.Value = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_6.Visible = False
         '
         'NumericUpDown51
         '
@@ -4371,16 +4413,16 @@ Partial Class TL_SaveEditor
         Me.NumericUpDown51.Size = New System.Drawing.Size(120, 16)
         Me.NumericUpDown51.TabIndex = 126
         '
-        'NumericUpDown18
+        'valu_itemmii_5
         '
-        Me.NumericUpDown18.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown18.Location = New System.Drawing.Point(333, 214)
-        Me.NumericUpDown18.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.NumericUpDown18.Name = "NumericUpDown18"
-        Me.NumericUpDown18.Size = New System.Drawing.Size(40, 16)
-        Me.NumericUpDown18.TabIndex = 83
-        Me.NumericUpDown18.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown18.Visible = False
+        Me.valu_itemmii_5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemmii_5.Location = New System.Drawing.Point(333, 214)
+        Me.valu_itemmii_5.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_5.Name = "valu_itemmii_5"
+        Me.valu_itemmii_5.Size = New System.Drawing.Size(40, 16)
+        Me.valu_itemmii_5.TabIndex = 83
+        Me.valu_itemmii_5.Value = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_5.Visible = False
         '
         'Panel3
         '
@@ -4396,9 +4438,9 @@ Partial Class TL_SaveEditor
         Me.Panel3.Controls.Add(Me.Panel_target2)
         Me.Panel3.Controls.Add(Me.Panel_target1)
         Me.Panel3.Controls.Add(Me.Panel17)
-        Me.Panel3.Location = New System.Drawing.Point(55, 301)
+        Me.Panel3.Location = New System.Drawing.Point(41, 291)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(474, 100)
+        Me.Panel3.Size = New System.Drawing.Size(503, 100)
         Me.Panel3.TabIndex = 177
         '
         'Text_interaction
@@ -4406,7 +4448,7 @@ Partial Class TL_SaveEditor
         Me.Text_interaction.BackColor = System.Drawing.Color.White
         Me.Text_interaction.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Text_interaction.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Text_interaction.Location = New System.Drawing.Point(37, 47)
+        Me.Text_interaction.Location = New System.Drawing.Point(43, 47)
         Me.Text_interaction.Name = "Text_interaction"
         Me.Text_interaction.ReadOnly = True
         Me.Text_interaction.Size = New System.Drawing.Size(235, 13)
@@ -4418,7 +4460,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_emotions.BackColor = System.Drawing.Color.Transparent
         Me.Title_emotions.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_emotions.Location = New System.Drawing.Point(274, 54)
+        Me.Title_emotions.Location = New System.Drawing.Point(303, 54)
         Me.Title_emotions.Name = "Title_emotions"
         Me.Title_emotions.Size = New System.Drawing.Size(99, 13)
         Me.Title_emotions.TabIndex = 168
@@ -4429,7 +4471,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_target2.BackColor = System.Drawing.Color.Transparent
         Me.Title_target2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_target2.Location = New System.Drawing.Point(378, 5)
+        Me.Title_target2.Location = New System.Drawing.Point(399, 5)
         Me.Title_target2.Name = "Title_target2"
         Me.Title_target2.Size = New System.Drawing.Size(93, 13)
         Me.Title_target2.TabIndex = 167
@@ -4440,7 +4482,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_target1.BackColor = System.Drawing.Color.Transparent
         Me.Title_target1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_target1.Location = New System.Drawing.Point(283, 5)
+        Me.Title_target1.Location = New System.Drawing.Point(304, 5)
         Me.Title_target1.Name = "Title_target1"
         Me.Title_target1.Size = New System.Drawing.Size(93, 13)
         Me.Title_target1.TabIndex = 166
@@ -4451,9 +4493,9 @@ Partial Class TL_SaveEditor
         '
         Me.Title_interactionpattern.BackColor = System.Drawing.Color.Transparent
         Me.Title_interactionpattern.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_interactionpattern.Location = New System.Drawing.Point(8, 5)
+        Me.Title_interactionpattern.Location = New System.Drawing.Point(13, 5)
         Me.Title_interactionpattern.Name = "Title_interactionpattern"
-        Me.Title_interactionpattern.Size = New System.Drawing.Size(271, 13)
+        Me.Title_interactionpattern.Size = New System.Drawing.Size(290, 13)
         Me.Title_interactionpattern.TabIndex = 165
         Me.Title_interactionpattern.Text = "Interaction pattern"
         Me.Title_interactionpattern.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -4463,7 +4505,7 @@ Partial Class TL_SaveEditor
         Me.Panel25.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel25.Controls.Add(Me.valu_emotions)
         Me.Panel25.Controls.Add(Me.Select_emotions)
-        Me.Panel25.Location = New System.Drawing.Point(277, 70)
+        Me.Panel25.Location = New System.Drawing.Point(304, 70)
         Me.Panel25.Name = "Panel25"
         Me.Panel25.Size = New System.Drawing.Size(97, 25)
         Me.Panel25.TabIndex = 164
@@ -4494,7 +4536,7 @@ Partial Class TL_SaveEditor
         'Icon_interaction
         '
         Me.Icon_interaction.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.apartment_black
-        Me.Icon_interaction.Location = New System.Drawing.Point(5, 46)
+        Me.Icon_interaction.Location = New System.Drawing.Point(11, 46)
         Me.Icon_interaction.Name = "Icon_interaction"
         Me.Icon_interaction.Size = New System.Drawing.Size(30, 26)
         Me.Icon_interaction.TabIndex = 163
@@ -4507,7 +4549,7 @@ Partial Class TL_SaveEditor
         Me.Info_interaction.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_interaction.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_interaction.ForeColor = System.Drawing.Color.Blue
-        Me.Info_interaction.Location = New System.Drawing.Point(458, 78)
+        Me.Info_interaction.Location = New System.Drawing.Point(464, 78)
         Me.Info_interaction.Name = "Info_interaction"
         Me.Info_interaction.Size = New System.Drawing.Size(14, 20)
         Me.Info_interaction.TabIndex = 162
@@ -4518,7 +4560,7 @@ Partial Class TL_SaveEditor
         Me.Panel_target2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_target2.Controls.Add(Me.valu_target2)
         Me.Panel_target2.Controls.Add(Me.Select_target2)
-        Me.Panel_target2.Location = New System.Drawing.Point(381, 21)
+        Me.Panel_target2.Location = New System.Drawing.Point(402, 21)
         Me.Panel_target2.Name = "Panel_target2"
         Me.Panel_target2.Size = New System.Drawing.Size(90, 25)
         Me.Panel_target2.TabIndex = 161
@@ -4552,7 +4594,7 @@ Partial Class TL_SaveEditor
         Me.Panel_target1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_target1.Controls.Add(Me.valu_target1)
         Me.Panel_target1.Controls.Add(Me.Select_target1)
-        Me.Panel_target1.Location = New System.Drawing.Point(286, 21)
+        Me.Panel_target1.Location = New System.Drawing.Point(307, 21)
         Me.Panel_target1.Name = "Panel_target1"
         Me.Panel_target1.Size = New System.Drawing.Size(90, 25)
         Me.Panel_target1.TabIndex = 160
@@ -4585,9 +4627,9 @@ Partial Class TL_SaveEditor
         '
         Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel17.Controls.Add(Me.Select_interaction)
-        Me.Panel17.Location = New System.Drawing.Point(4, 21)
+        Me.Panel17.Location = New System.Drawing.Point(9, 21)
         Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(276, 25)
+        Me.Panel17.Size = New System.Drawing.Size(294, 25)
         Me.Panel17.TabIndex = 159
         '
         'Select_interaction
@@ -4599,7 +4641,7 @@ Partial Class TL_SaveEditor
         Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm hungry", "I'm hungry(1)", "I'm hungry(2)", "In love with", "angry at", "angry at(1)", "In love with (undecided)", "Dream", "I need new clothes", "I need new clothes (something classy)", "I need new clothes (to do sports)", "Can I tell you about my [love stories? / my wife?]", "Sad : love rejected", "Want to get married"})
         Me.Select_interaction.Location = New System.Drawing.Point(2, 2)
         Me.Select_interaction.Name = "Select_interaction"
-        Me.Select_interaction.Size = New System.Drawing.Size(272, 21)
+        Me.Select_interaction.Size = New System.Drawing.Size(290, 21)
         Me.Select_interaction.TabIndex = 112
         '
         'NumericUpDown50
@@ -4612,27 +4654,26 @@ Partial Class TL_SaveEditor
         Me.NumericUpDown50.Size = New System.Drawing.Size(120, 16)
         Me.NumericUpDown50.TabIndex = 125
         '
-        'NumericUpDown11
+        'valu_itemmii_1
         '
-        Me.NumericUpDown11.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown11.Location = New System.Drawing.Point(330, 180)
-        Me.NumericUpDown11.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.NumericUpDown11.Name = "NumericUpDown11"
-        Me.NumericUpDown11.Size = New System.Drawing.Size(40, 16)
-        Me.NumericUpDown11.TabIndex = 79
-        Me.NumericUpDown11.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown11.Visible = False
+        Me.valu_itemmii_1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemmii_1.Location = New System.Drawing.Point(330, 180)
+        Me.valu_itemmii_1.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_1.Name = "valu_itemmii_1"
+        Me.valu_itemmii_1.Size = New System.Drawing.Size(40, 16)
+        Me.valu_itemmii_1.TabIndex = 79
+        Me.valu_itemmii_1.Value = New Decimal(New Integer() {65535, 0, 0, 0})
         '
-        'NumericUpDown14
+        'valu_itemmii_4
         '
-        Me.NumericUpDown14.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown14.Location = New System.Drawing.Point(440, 180)
-        Me.NumericUpDown14.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.NumericUpDown14.Name = "NumericUpDown14"
-        Me.NumericUpDown14.Size = New System.Drawing.Size(40, 16)
-        Me.NumericUpDown14.TabIndex = 82
-        Me.NumericUpDown14.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown14.Visible = False
+        Me.valu_itemmii_4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemmii_4.Location = New System.Drawing.Point(440, 180)
+        Me.valu_itemmii_4.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_4.Name = "valu_itemmii_4"
+        Me.valu_itemmii_4.Size = New System.Drawing.Size(40, 16)
+        Me.valu_itemmii_4.TabIndex = 82
+        Me.valu_itemmii_4.Value = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_4.Visible = False
         '
         'NumericUpDown49
         '
@@ -4644,16 +4685,16 @@ Partial Class TL_SaveEditor
         Me.NumericUpDown49.Size = New System.Drawing.Size(120, 16)
         Me.NumericUpDown49.TabIndex = 124
         '
-        'NumericUpDown12
+        'valu_itemmii_2
         '
-        Me.NumericUpDown12.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown12.Location = New System.Drawing.Point(367, 180)
-        Me.NumericUpDown12.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.NumericUpDown12.Name = "NumericUpDown12"
-        Me.NumericUpDown12.Size = New System.Drawing.Size(40, 16)
-        Me.NumericUpDown12.TabIndex = 80
-        Me.NumericUpDown12.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown12.Visible = False
+        Me.valu_itemmii_2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemmii_2.Location = New System.Drawing.Point(367, 180)
+        Me.valu_itemmii_2.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_2.Name = "valu_itemmii_2"
+        Me.valu_itemmii_2.Size = New System.Drawing.Size(40, 16)
+        Me.valu_itemmii_2.TabIndex = 80
+        Me.valu_itemmii_2.Value = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_2.Visible = False
         '
         'NumericUpDown48
         '
@@ -4665,16 +4706,16 @@ Partial Class TL_SaveEditor
         Me.NumericUpDown48.Size = New System.Drawing.Size(120, 16)
         Me.NumericUpDown48.TabIndex = 123
         '
-        'NumericUpDown13
+        'valu_itemmii_3
         '
-        Me.NumericUpDown13.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown13.Location = New System.Drawing.Point(406, 180)
-        Me.NumericUpDown13.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.NumericUpDown13.Name = "NumericUpDown13"
-        Me.NumericUpDown13.Size = New System.Drawing.Size(40, 16)
-        Me.NumericUpDown13.TabIndex = 81
-        Me.NumericUpDown13.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.NumericUpDown13.Visible = False
+        Me.valu_itemmii_3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemmii_3.Location = New System.Drawing.Point(406, 180)
+        Me.valu_itemmii_3.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_3.Name = "valu_itemmii_3"
+        Me.valu_itemmii_3.Size = New System.Drawing.Size(40, 16)
+        Me.valu_itemmii_3.TabIndex = 81
+        Me.valu_itemmii_3.Value = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemmii_3.Visible = False
         '
         'NumericUpDown47
         '
@@ -4686,17 +4727,16 @@ Partial Class TL_SaveEditor
         Me.NumericUpDown47.Size = New System.Drawing.Size(120, 16)
         Me.NumericUpDown47.TabIndex = 122
         '
-        'PictureBox25
+        'Icon_itemmii_4
         '
-        Me.PictureBox25.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox25.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox25.Enabled = False
-        Me.PictureBox25.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.PictureBox25.Location = New System.Drawing.Point(444, 169)
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(31, 27)
-        Me.PictureBox25.TabIndex = 47
-        Me.PictureBox25.TabStop = False
+        Me.Icon_itemmii_4.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemmii_4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemmii_4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
+        Me.Icon_itemmii_4.Location = New System.Drawing.Point(444, 169)
+        Me.Icon_itemmii_4.Name = "Icon_itemmii_4"
+        Me.Icon_itemmii_4.Size = New System.Drawing.Size(31, 27)
+        Me.Icon_itemmii_4.TabIndex = 47
+        Me.Icon_itemmii_4.TabStop = False
         '
         'NumericUpDown46
         '
@@ -4708,17 +4748,16 @@ Partial Class TL_SaveEditor
         Me.NumericUpDown46.Size = New System.Drawing.Size(120, 16)
         Me.NumericUpDown46.TabIndex = 121
         '
-        'PictureBox29
+        'Icon_itemmii_5
         '
-        Me.PictureBox29.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox29.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox29.Enabled = False
-        Me.PictureBox29.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.PictureBox29.Location = New System.Drawing.Point(342, 203)
-        Me.PictureBox29.Name = "PictureBox29"
-        Me.PictureBox29.Size = New System.Drawing.Size(31, 27)
-        Me.PictureBox29.TabIndex = 48
-        Me.PictureBox29.TabStop = False
+        Me.Icon_itemmii_5.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemmii_5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemmii_5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
+        Me.Icon_itemmii_5.Location = New System.Drawing.Point(342, 203)
+        Me.Icon_itemmii_5.Name = "Icon_itemmii_5"
+        Me.Icon_itemmii_5.Size = New System.Drawing.Size(31, 27)
+        Me.Icon_itemmii_5.TabIndex = 48
+        Me.Icon_itemmii_5.TabStop = False
         '
         'Title_foods_worst
         '
@@ -4730,17 +4769,16 @@ Partial Class TL_SaveEditor
         Me.Title_foods_worst.TabIndex = 120
         Me.Title_foods_worst.Text = "Worst / Worst Ever"
         '
-        'PictureBox28
+        'Icon_itemmii_6
         '
-        Me.PictureBox28.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox28.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox28.Enabled = False
-        Me.PictureBox28.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.PictureBox28.Location = New System.Drawing.Point(376, 203)
-        Me.PictureBox28.Name = "PictureBox28"
-        Me.PictureBox28.Size = New System.Drawing.Size(31, 27)
-        Me.PictureBox28.TabIndex = 49
-        Me.PictureBox28.TabStop = False
+        Me.Icon_itemmii_6.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemmii_6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemmii_6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
+        Me.Icon_itemmii_6.Location = New System.Drawing.Point(376, 203)
+        Me.Icon_itemmii_6.Name = "Icon_itemmii_6"
+        Me.Icon_itemmii_6.Size = New System.Drawing.Size(31, 27)
+        Me.Icon_itemmii_6.TabIndex = 49
+        Me.Icon_itemmii_6.TabStop = False
         '
         'Title_foods_favorite
         '
@@ -4752,17 +4790,16 @@ Partial Class TL_SaveEditor
         Me.Title_foods_favorite.TabIndex = 119
         Me.Title_foods_favorite.Text = "Favorite Foods"
         '
-        'PictureBox14
+        'Icon_itemmii_7
         '
-        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox14.Enabled = False
-        Me.PictureBox14.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.PictureBox14.Location = New System.Drawing.Point(410, 203)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(31, 27)
-        Me.PictureBox14.TabIndex = 50
-        Me.PictureBox14.TabStop = False
+        Me.Icon_itemmii_7.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemmii_7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemmii_7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
+        Me.Icon_itemmii_7.Location = New System.Drawing.Point(410, 203)
+        Me.Icon_itemmii_7.Name = "Icon_itemmii_7"
+        Me.Icon_itemmii_7.Size = New System.Drawing.Size(31, 27)
+        Me.Icon_itemmii_7.TabIndex = 50
+        Me.Icon_itemmii_7.TabStop = False
         '
         'Title_foods_allfav
         '
@@ -4774,17 +4811,16 @@ Partial Class TL_SaveEditor
         Me.Title_foods_allfav.TabIndex = 118
         Me.Title_foods_allfav.Text = "Super All-Time Fav / All-Time Fav"
         '
-        'PictureBox26
+        'Icon_itemmii_8
         '
-        Me.PictureBox26.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox26.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox26.Enabled = False
-        Me.PictureBox26.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.PictureBox26.Location = New System.Drawing.Point(444, 203)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(31, 27)
-        Me.PictureBox26.TabIndex = 51
-        Me.PictureBox26.TabStop = False
+        Me.Icon_itemmii_8.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemmii_8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemmii_8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
+        Me.Icon_itemmii_8.Location = New System.Drawing.Point(444, 203)
+        Me.Icon_itemmii_8.Name = "Icon_itemmii_8"
+        Me.Icon_itemmii_8.Size = New System.Drawing.Size(31, 27)
+        Me.Icon_itemmii_8.TabIndex = 51
+        Me.Icon_itemmii_8.TabStop = False
         '
         'Label29
         '
@@ -4797,17 +4833,16 @@ Partial Class TL_SaveEditor
         Me.Label29.Text = "Sweetheart"
         Me.Label29.Visible = False
         '
-        'PictureBox24
+        'Icon_itemmii_3
         '
-        Me.PictureBox24.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox24.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox24.Enabled = False
-        Me.PictureBox24.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.PictureBox24.Location = New System.Drawing.Point(410, 169)
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(31, 27)
-        Me.PictureBox24.TabIndex = 46
-        Me.PictureBox24.TabStop = False
+        Me.Icon_itemmii_3.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemmii_3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemmii_3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
+        Me.Icon_itemmii_3.Location = New System.Drawing.Point(410, 169)
+        Me.Icon_itemmii_3.Name = "Icon_itemmii_3"
+        Me.Icon_itemmii_3.Size = New System.Drawing.Size(31, 27)
+        Me.Icon_itemmii_3.TabIndex = 46
+        Me.Icon_itemmii_3.TabStop = False
         '
         'Label28
         '
@@ -4820,17 +4855,16 @@ Partial Class TL_SaveEditor
         Me.Label28.Text = "Best Friend"
         Me.Label28.Visible = False
         '
-        'PictureBox23
+        'Icon_itemmii_2
         '
-        Me.PictureBox23.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox23.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox23.Enabled = False
-        Me.PictureBox23.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.PictureBox23.Location = New System.Drawing.Point(376, 169)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(31, 27)
-        Me.PictureBox23.TabIndex = 45
-        Me.PictureBox23.TabStop = False
+        Me.Icon_itemmii_2.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemmii_2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemmii_2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
+        Me.Icon_itemmii_2.Location = New System.Drawing.Point(376, 169)
+        Me.Icon_itemmii_2.Name = "Icon_itemmii_2"
+        Me.Icon_itemmii_2.Size = New System.Drawing.Size(31, 27)
+        Me.Icon_itemmii_2.TabIndex = 45
+        Me.Icon_itemmii_2.TabStop = False
         '
         'Text_level
         '
@@ -4842,17 +4876,16 @@ Partial Class TL_SaveEditor
         Me.Text_level.TabIndex = 106
         Me.Text_level.Text = "Lv."
         '
-        'PictureBox17
+        'Icon_itemmii_1
         '
-        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox17.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox17.Enabled = False
-        Me.PictureBox17.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.PictureBox17.Location = New System.Drawing.Point(342, 169)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(31, 27)
-        Me.PictureBox17.TabIndex = 44
-        Me.PictureBox17.TabStop = False
+        Me.Icon_itemmii_1.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemmii_1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemmii_1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
+        Me.Icon_itemmii_1.Location = New System.Drawing.Point(342, 169)
+        Me.Icon_itemmii_1.Name = "Icon_itemmii_1"
+        Me.Icon_itemmii_1.Size = New System.Drawing.Size(31, 27)
+        Me.Icon_itemmii_1.TabIndex = 44
+        Me.Icon_itemmii_1.TabStop = False
         '
         'Icon_experience
         '
@@ -4922,7 +4955,7 @@ Partial Class TL_SaveEditor
         Me.NumericUpDown19.Location = New System.Drawing.Point(93, 269)
         Me.NumericUpDown19.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
         Me.NumericUpDown19.Name = "NumericUpDown19"
-        Me.NumericUpDown19.Size = New System.Drawing.Size(62, 16)
+        Me.NumericUpDown19.Size = New System.Drawing.Size(72, 16)
         Me.NumericUpDown19.TabIndex = 112
         Me.NumericUpDown19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -4966,12 +4999,12 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.Label33)
         Me.Tab_mii_friendlist.Controls.Add(Me.Label34)
         Me.Tab_mii_friendlist.Controls.Add(Me.Label35)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown30)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown31)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown32)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown33)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown34)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown35)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_30)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_29)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_28)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_27)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_26)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_25)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_24)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_23)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_22)
@@ -4984,12 +5017,12 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.Label14)
         Me.Tab_mii_friendlist.Controls.Add(Me.Label15)
         Me.Tab_mii_friendlist.Controls.Add(Me.Label16)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown7)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown8)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown9)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown10)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown22)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown23)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_24)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_23)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_22)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_21)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_20)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_19)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_18)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_17)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_16)
@@ -5002,12 +5035,12 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.Label20)
         Me.Tab_mii_friendlist.Controls.Add(Me.Label23)
         Me.Tab_mii_friendlist.Controls.Add(Me.Label24)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown24)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown25)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown26)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown27)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown28)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown29)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_18)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_17)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_16)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_15)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_14)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_13)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_12)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_11)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_10)
@@ -5020,12 +5053,12 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.Label4)
         Me.Tab_mii_friendlist.Controls.Add(Me.Label5)
         Me.Tab_mii_friendlist.Controls.Add(Me.Label6)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown1)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown2)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown3)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown4)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown5)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown6)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_12)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_11)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_10)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_9)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_8)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_7)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_6)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_5)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_4)
@@ -5038,9 +5071,9 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.Label46)
         Me.Tab_mii_friendlist.Controls.Add(Me.Label45)
         Me.Tab_mii_friendlist.Controls.Add(Me.Label44)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown64)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown63)
-        Me.Tab_mii_friendlist.Controls.Add(Me.NumericUpDown62)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_6)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_5)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_4)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_3)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_2)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_1)
@@ -5271,65 +5304,65 @@ Partial Class TL_SaveEditor
         Me.Label35.Text = "Mii 25"
         Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'NumericUpDown30
+        'valu_friend_rela_30
         '
-        Me.NumericUpDown30.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown30.Location = New System.Drawing.Point(511, 335)
-        Me.NumericUpDown30.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown30.Name = "NumericUpDown30"
-        Me.NumericUpDown30.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown30.TabIndex = 178
-        Me.NumericUpDown30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_30.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_30.Location = New System.Drawing.Point(511, 335)
+        Me.valu_friend_rela_30.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_30.Name = "valu_friend_rela_30"
+        Me.valu_friend_rela_30.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_30.TabIndex = 178
+        Me.valu_friend_rela_30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown31
+        'valu_friend_rela_29
         '
-        Me.NumericUpDown31.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown31.Location = New System.Drawing.Point(417, 335)
-        Me.NumericUpDown31.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown31.Name = "NumericUpDown31"
-        Me.NumericUpDown31.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown31.TabIndex = 177
-        Me.NumericUpDown31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_29.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_29.Location = New System.Drawing.Point(417, 335)
+        Me.valu_friend_rela_29.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_29.Name = "valu_friend_rela_29"
+        Me.valu_friend_rela_29.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_29.TabIndex = 177
+        Me.valu_friend_rela_29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown32
+        'valu_friend_rela_28
         '
-        Me.NumericUpDown32.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown32.Location = New System.Drawing.Point(319, 335)
-        Me.NumericUpDown32.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown32.Name = "NumericUpDown32"
-        Me.NumericUpDown32.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown32.TabIndex = 176
-        Me.NumericUpDown32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_28.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_28.Location = New System.Drawing.Point(319, 335)
+        Me.valu_friend_rela_28.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_28.Name = "valu_friend_rela_28"
+        Me.valu_friend_rela_28.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_28.TabIndex = 176
+        Me.valu_friend_rela_28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown33
+        'valu_friend_rela_27
         '
-        Me.NumericUpDown33.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown33.Location = New System.Drawing.Point(223, 335)
-        Me.NumericUpDown33.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown33.Name = "NumericUpDown33"
-        Me.NumericUpDown33.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown33.TabIndex = 175
-        Me.NumericUpDown33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_27.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_27.Location = New System.Drawing.Point(223, 335)
+        Me.valu_friend_rela_27.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_27.Name = "valu_friend_rela_27"
+        Me.valu_friend_rela_27.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_27.TabIndex = 175
+        Me.valu_friend_rela_27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown34
+        'valu_friend_rela_26
         '
-        Me.NumericUpDown34.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown34.Location = New System.Drawing.Point(127, 335)
-        Me.NumericUpDown34.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown34.Name = "NumericUpDown34"
-        Me.NumericUpDown34.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown34.TabIndex = 174
-        Me.NumericUpDown34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_26.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_26.Location = New System.Drawing.Point(127, 335)
+        Me.valu_friend_rela_26.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_26.Name = "valu_friend_rela_26"
+        Me.valu_friend_rela_26.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_26.TabIndex = 174
+        Me.valu_friend_rela_26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown35
+        'valu_friend_rela_25
         '
-        Me.NumericUpDown35.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown35.Location = New System.Drawing.Point(31, 335)
-        Me.NumericUpDown35.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown35.Name = "NumericUpDown35"
-        Me.NumericUpDown35.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown35.TabIndex = 173
-        Me.NumericUpDown35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_25.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_25.Location = New System.Drawing.Point(31, 335)
+        Me.valu_friend_rela_25.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_25.Name = "valu_friend_rela_25"
+        Me.valu_friend_rela_25.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_25.TabIndex = 173
+        Me.valu_friend_rela_25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Select_friend_rela_24
         '
@@ -5457,65 +5490,65 @@ Partial Class TL_SaveEditor
         Me.Label16.Text = "Mii 19"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'NumericUpDown7
+        'valu_friend_rela_24
         '
-        Me.NumericUpDown7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown7.Location = New System.Drawing.Point(511, 259)
-        Me.NumericUpDown7.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown7.Name = "NumericUpDown7"
-        Me.NumericUpDown7.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown7.TabIndex = 160
-        Me.NumericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_24.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_24.Location = New System.Drawing.Point(511, 259)
+        Me.valu_friend_rela_24.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_24.Name = "valu_friend_rela_24"
+        Me.valu_friend_rela_24.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_24.TabIndex = 160
+        Me.valu_friend_rela_24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown8
+        'valu_friend_rela_23
         '
-        Me.NumericUpDown8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown8.Location = New System.Drawing.Point(417, 259)
-        Me.NumericUpDown8.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown8.Name = "NumericUpDown8"
-        Me.NumericUpDown8.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown8.TabIndex = 159
-        Me.NumericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_23.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_23.Location = New System.Drawing.Point(417, 259)
+        Me.valu_friend_rela_23.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_23.Name = "valu_friend_rela_23"
+        Me.valu_friend_rela_23.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_23.TabIndex = 159
+        Me.valu_friend_rela_23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown9
+        'valu_friend_rela_22
         '
-        Me.NumericUpDown9.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown9.Location = New System.Drawing.Point(319, 259)
-        Me.NumericUpDown9.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown9.Name = "NumericUpDown9"
-        Me.NumericUpDown9.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown9.TabIndex = 158
-        Me.NumericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_22.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_22.Location = New System.Drawing.Point(319, 259)
+        Me.valu_friend_rela_22.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_22.Name = "valu_friend_rela_22"
+        Me.valu_friend_rela_22.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_22.TabIndex = 158
+        Me.valu_friend_rela_22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown10
+        'valu_friend_rela_21
         '
-        Me.NumericUpDown10.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown10.Location = New System.Drawing.Point(223, 259)
-        Me.NumericUpDown10.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown10.Name = "NumericUpDown10"
-        Me.NumericUpDown10.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown10.TabIndex = 157
-        Me.NumericUpDown10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_21.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_21.Location = New System.Drawing.Point(223, 259)
+        Me.valu_friend_rela_21.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_21.Name = "valu_friend_rela_21"
+        Me.valu_friend_rela_21.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_21.TabIndex = 157
+        Me.valu_friend_rela_21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown22
+        'valu_friend_rela_20
         '
-        Me.NumericUpDown22.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown22.Location = New System.Drawing.Point(127, 259)
-        Me.NumericUpDown22.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown22.Name = "NumericUpDown22"
-        Me.NumericUpDown22.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown22.TabIndex = 156
-        Me.NumericUpDown22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_20.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_20.Location = New System.Drawing.Point(127, 259)
+        Me.valu_friend_rela_20.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_20.Name = "valu_friend_rela_20"
+        Me.valu_friend_rela_20.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_20.TabIndex = 156
+        Me.valu_friend_rela_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown23
+        'valu_friend_rela_19
         '
-        Me.NumericUpDown23.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown23.Location = New System.Drawing.Point(31, 259)
-        Me.NumericUpDown23.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown23.Name = "NumericUpDown23"
-        Me.NumericUpDown23.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown23.TabIndex = 155
-        Me.NumericUpDown23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_19.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_19.Location = New System.Drawing.Point(31, 259)
+        Me.valu_friend_rela_19.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_19.Name = "valu_friend_rela_19"
+        Me.valu_friend_rela_19.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_19.TabIndex = 155
+        Me.valu_friend_rela_19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Select_friend_rela_18
         '
@@ -5643,65 +5676,65 @@ Partial Class TL_SaveEditor
         Me.Label24.Text = "Mii 13"
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'NumericUpDown24
+        'valu_friend_rela_18
         '
-        Me.NumericUpDown24.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown24.Location = New System.Drawing.Point(511, 187)
-        Me.NumericUpDown24.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown24.Name = "NumericUpDown24"
-        Me.NumericUpDown24.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown24.TabIndex = 142
-        Me.NumericUpDown24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_18.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_18.Location = New System.Drawing.Point(511, 187)
+        Me.valu_friend_rela_18.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_18.Name = "valu_friend_rela_18"
+        Me.valu_friend_rela_18.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_18.TabIndex = 142
+        Me.valu_friend_rela_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown25
+        'valu_friend_rela_17
         '
-        Me.NumericUpDown25.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown25.Location = New System.Drawing.Point(417, 187)
-        Me.NumericUpDown25.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown25.Name = "NumericUpDown25"
-        Me.NumericUpDown25.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown25.TabIndex = 141
-        Me.NumericUpDown25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_17.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_17.Location = New System.Drawing.Point(417, 187)
+        Me.valu_friend_rela_17.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_17.Name = "valu_friend_rela_17"
+        Me.valu_friend_rela_17.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_17.TabIndex = 141
+        Me.valu_friend_rela_17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown26
+        'valu_friend_rela_16
         '
-        Me.NumericUpDown26.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown26.Location = New System.Drawing.Point(319, 187)
-        Me.NumericUpDown26.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown26.Name = "NumericUpDown26"
-        Me.NumericUpDown26.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown26.TabIndex = 140
-        Me.NumericUpDown26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_16.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_16.Location = New System.Drawing.Point(319, 187)
+        Me.valu_friend_rela_16.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_16.Name = "valu_friend_rela_16"
+        Me.valu_friend_rela_16.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_16.TabIndex = 140
+        Me.valu_friend_rela_16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown27
+        'valu_friend_rela_15
         '
-        Me.NumericUpDown27.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown27.Location = New System.Drawing.Point(223, 187)
-        Me.NumericUpDown27.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown27.Name = "NumericUpDown27"
-        Me.NumericUpDown27.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown27.TabIndex = 139
-        Me.NumericUpDown27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_15.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_15.Location = New System.Drawing.Point(223, 187)
+        Me.valu_friend_rela_15.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_15.Name = "valu_friend_rela_15"
+        Me.valu_friend_rela_15.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_15.TabIndex = 139
+        Me.valu_friend_rela_15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown28
+        'valu_friend_rela_14
         '
-        Me.NumericUpDown28.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown28.Location = New System.Drawing.Point(127, 187)
-        Me.NumericUpDown28.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown28.Name = "NumericUpDown28"
-        Me.NumericUpDown28.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown28.TabIndex = 138
-        Me.NumericUpDown28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_14.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_14.Location = New System.Drawing.Point(127, 187)
+        Me.valu_friend_rela_14.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_14.Name = "valu_friend_rela_14"
+        Me.valu_friend_rela_14.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_14.TabIndex = 138
+        Me.valu_friend_rela_14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown29
+        'valu_friend_rela_13
         '
-        Me.NumericUpDown29.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown29.Location = New System.Drawing.Point(31, 187)
-        Me.NumericUpDown29.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown29.Name = "NumericUpDown29"
-        Me.NumericUpDown29.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown29.TabIndex = 137
-        Me.NumericUpDown29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_13.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_13.Location = New System.Drawing.Point(31, 187)
+        Me.valu_friend_rela_13.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_13.Name = "valu_friend_rela_13"
+        Me.valu_friend_rela_13.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_13.TabIndex = 137
+        Me.valu_friend_rela_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Select_friend_rela_12
         '
@@ -5829,65 +5862,65 @@ Partial Class TL_SaveEditor
         Me.Label6.Text = "Mii 7"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'NumericUpDown1
+        'valu_friend_rela_12
         '
-        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown1.Location = New System.Drawing.Point(511, 113)
-        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown1.TabIndex = 124
-        Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_12.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_12.Location = New System.Drawing.Point(511, 113)
+        Me.valu_friend_rela_12.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_12.Name = "valu_friend_rela_12"
+        Me.valu_friend_rela_12.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_12.TabIndex = 124
+        Me.valu_friend_rela_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown2
+        'valu_friend_rela_11
         '
-        Me.NumericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown2.Location = New System.Drawing.Point(417, 113)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown2.TabIndex = 123
-        Me.NumericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_11.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_11.Location = New System.Drawing.Point(417, 113)
+        Me.valu_friend_rela_11.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_11.Name = "valu_friend_rela_11"
+        Me.valu_friend_rela_11.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_11.TabIndex = 123
+        Me.valu_friend_rela_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown3
+        'valu_friend_rela_10
         '
-        Me.NumericUpDown3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown3.Location = New System.Drawing.Point(319, 113)
-        Me.NumericUpDown3.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown3.TabIndex = 122
-        Me.NumericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_10.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_10.Location = New System.Drawing.Point(319, 113)
+        Me.valu_friend_rela_10.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_10.Name = "valu_friend_rela_10"
+        Me.valu_friend_rela_10.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_10.TabIndex = 122
+        Me.valu_friend_rela_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown4
+        'valu_friend_rela_9
         '
-        Me.NumericUpDown4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown4.Location = New System.Drawing.Point(223, 113)
-        Me.NumericUpDown4.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown4.TabIndex = 121
-        Me.NumericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_9.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_9.Location = New System.Drawing.Point(223, 113)
+        Me.valu_friend_rela_9.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_9.Name = "valu_friend_rela_9"
+        Me.valu_friend_rela_9.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_9.TabIndex = 121
+        Me.valu_friend_rela_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown5
+        'valu_friend_rela_8
         '
-        Me.NumericUpDown5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown5.Location = New System.Drawing.Point(127, 113)
-        Me.NumericUpDown5.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown5.Name = "NumericUpDown5"
-        Me.NumericUpDown5.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown5.TabIndex = 120
-        Me.NumericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_8.Location = New System.Drawing.Point(127, 113)
+        Me.valu_friend_rela_8.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_8.Name = "valu_friend_rela_8"
+        Me.valu_friend_rela_8.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_8.TabIndex = 120
+        Me.valu_friend_rela_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown6
+        'valu_friend_rela_7
         '
-        Me.NumericUpDown6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown6.Location = New System.Drawing.Point(31, 113)
-        Me.NumericUpDown6.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown6.Name = "NumericUpDown6"
-        Me.NumericUpDown6.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown6.TabIndex = 119
-        Me.NumericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_7.Location = New System.Drawing.Point(31, 113)
+        Me.valu_friend_rela_7.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_7.Name = "valu_friend_rela_7"
+        Me.valu_friend_rela_7.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_7.TabIndex = 119
+        Me.valu_friend_rela_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Select_friend_rela_6
         '
@@ -6015,35 +6048,35 @@ Partial Class TL_SaveEditor
         Me.Label44.Text = "Mii 1"
         Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'NumericUpDown64
+        'valu_friend_rela_6
         '
-        Me.NumericUpDown64.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown64.Location = New System.Drawing.Point(511, 41)
-        Me.NumericUpDown64.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown64.Name = "NumericUpDown64"
-        Me.NumericUpDown64.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown64.TabIndex = 34
-        Me.NumericUpDown64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_6.Location = New System.Drawing.Point(511, 41)
+        Me.valu_friend_rela_6.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_6.Name = "valu_friend_rela_6"
+        Me.valu_friend_rela_6.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_6.TabIndex = 34
+        Me.valu_friend_rela_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown63
+        'valu_friend_rela_5
         '
-        Me.NumericUpDown63.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown63.Location = New System.Drawing.Point(417, 41)
-        Me.NumericUpDown63.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown63.Name = "NumericUpDown63"
-        Me.NumericUpDown63.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown63.TabIndex = 33
-        Me.NumericUpDown63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_5.Location = New System.Drawing.Point(417, 41)
+        Me.valu_friend_rela_5.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_5.Name = "valu_friend_rela_5"
+        Me.valu_friend_rela_5.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_5.TabIndex = 33
+        Me.valu_friend_rela_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'NumericUpDown62
+        'valu_friend_rela_4
         '
-        Me.NumericUpDown62.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown62.Location = New System.Drawing.Point(319, 41)
-        Me.NumericUpDown62.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
-        Me.NumericUpDown62.Name = "NumericUpDown62"
-        Me.NumericUpDown62.Size = New System.Drawing.Size(43, 16)
-        Me.NumericUpDown62.TabIndex = 32
-        Me.NumericUpDown62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_friend_rela_4.Location = New System.Drawing.Point(319, 41)
+        Me.valu_friend_rela_4.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_friend_rela_4.Name = "valu_friend_rela_4"
+        Me.valu_friend_rela_4.Size = New System.Drawing.Size(43, 16)
+        Me.valu_friend_rela_4.TabIndex = 32
+        Me.valu_friend_rela_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'valu_friend_rela_3
         '
@@ -6078,12 +6111,12 @@ Partial Class TL_SaveEditor
         'Tab_mii_extras
         '
         Me.Tab_mii_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
-        Me.Tab_mii_extras.Controls.Add(Me.NumericUpDown45)
-        Me.Tab_mii_extras.Controls.Add(Me.Label41)
-        Me.Tab_mii_extras.Controls.Add(Me.PictureBox62)
-        Me.Tab_mii_extras.Controls.Add(Me.NumericUpDown44)
-        Me.Tab_mii_extras.Controls.Add(Me.Label40)
-        Me.Tab_mii_extras.Controls.Add(Me.PictureBox61)
+        Me.Tab_mii_extras.Controls.Add(Me.valu_ranking_splurge)
+        Me.Tab_mii_extras.Controls.Add(Me.Title_ranking_splurge)
+        Me.Tab_mii_extras.Controls.Add(Me.Icon_ranking_splurge)
+        Me.Tab_mii_extras.Controls.Add(Me.valu_ranking_pampered)
+        Me.Tab_mii_extras.Controls.Add(Me.Title_ranking_pampered)
+        Me.Tab_mii_extras.Controls.Add(Me.Icon_ranking_pampered)
         Me.Tab_mii_extras.ImageIndex = 5
         Me.Tab_mii_extras.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_extras.Name = "Tab_mii_extras"
@@ -6092,61 +6125,61 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_extras.Text = "Extras"
         Me.Tab_mii_extras.UseVisualStyleBackColor = True
         '
-        'NumericUpDown45
+        'valu_ranking_splurge
         '
-        Me.NumericUpDown45.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown45.Location = New System.Drawing.Point(274, 267)
-        Me.NumericUpDown45.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
-        Me.NumericUpDown45.Name = "NumericUpDown45"
-        Me.NumericUpDown45.Size = New System.Drawing.Size(93, 16)
-        Me.NumericUpDown45.TabIndex = 11
+        Me.valu_ranking_splurge.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_ranking_splurge.Location = New System.Drawing.Point(274, 267)
+        Me.valu_ranking_splurge.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
+        Me.valu_ranking_splurge.Name = "valu_ranking_splurge"
+        Me.valu_ranking_splurge.Size = New System.Drawing.Size(93, 16)
+        Me.valu_ranking_splurge.TabIndex = 11
         '
-        'Label41
+        'Title_ranking_splurge
         '
-        Me.Label41.BackColor = System.Drawing.Color.Transparent
-        Me.Label41.Location = New System.Drawing.Point(274, 236)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(93, 13)
-        Me.Label41.TabIndex = 10
-        Me.Label41.Text = "Splurge ranking"
-        Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Title_ranking_splurge.BackColor = System.Drawing.Color.Transparent
+        Me.Title_ranking_splurge.Location = New System.Drawing.Point(274, 236)
+        Me.Title_ranking_splurge.Name = "Title_ranking_splurge"
+        Me.Title_ranking_splurge.Size = New System.Drawing.Size(93, 13)
+        Me.Title_ranking_splurge.TabIndex = 10
+        Me.Title_ranking_splurge.Text = "Splurge ranking"
+        Me.Title_ranking_splurge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox62
+        'Icon_ranking_splurge
         '
-        Me.PictureBox62.Image = CType(resources.GetObject("PictureBox62.Image"), System.Drawing.Image)
-        Me.PictureBox62.Location = New System.Drawing.Point(218, 227)
-        Me.PictureBox62.Name = "PictureBox62"
-        Me.PictureBox62.Size = New System.Drawing.Size(50, 64)
-        Me.PictureBox62.TabIndex = 9
-        Me.PictureBox62.TabStop = False
+        Me.Icon_ranking_splurge.Image = CType(resources.GetObject("Icon_ranking_splurge.Image"), System.Drawing.Image)
+        Me.Icon_ranking_splurge.Location = New System.Drawing.Point(218, 227)
+        Me.Icon_ranking_splurge.Name = "Icon_ranking_splurge"
+        Me.Icon_ranking_splurge.Size = New System.Drawing.Size(50, 64)
+        Me.Icon_ranking_splurge.TabIndex = 9
+        Me.Icon_ranking_splurge.TabStop = False
         '
-        'NumericUpDown44
+        'valu_ranking_pampered
         '
-        Me.NumericUpDown44.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown44.Location = New System.Drawing.Point(274, 177)
-        Me.NumericUpDown44.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
-        Me.NumericUpDown44.Name = "NumericUpDown44"
-        Me.NumericUpDown44.Size = New System.Drawing.Size(93, 16)
-        Me.NumericUpDown44.TabIndex = 8
+        Me.valu_ranking_pampered.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_ranking_pampered.Location = New System.Drawing.Point(274, 177)
+        Me.valu_ranking_pampered.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
+        Me.valu_ranking_pampered.Name = "valu_ranking_pampered"
+        Me.valu_ranking_pampered.Size = New System.Drawing.Size(93, 16)
+        Me.valu_ranking_pampered.TabIndex = 8
         '
-        'Label40
+        'Title_ranking_pampered
         '
-        Me.Label40.BackColor = System.Drawing.Color.Transparent
-        Me.Label40.Location = New System.Drawing.Point(274, 146)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(93, 13)
-        Me.Label40.TabIndex = 7
-        Me.Label40.Text = "Pampered ranking"
-        Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Title_ranking_pampered.BackColor = System.Drawing.Color.Transparent
+        Me.Title_ranking_pampered.Location = New System.Drawing.Point(274, 146)
+        Me.Title_ranking_pampered.Name = "Title_ranking_pampered"
+        Me.Title_ranking_pampered.Size = New System.Drawing.Size(93, 13)
+        Me.Title_ranking_pampered.TabIndex = 7
+        Me.Title_ranking_pampered.Text = "Pampered ranking"
+        Me.Title_ranking_pampered.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox61
+        'Icon_ranking_pampered
         '
-        Me.PictureBox61.Image = CType(resources.GetObject("PictureBox61.Image"), System.Drawing.Image)
-        Me.PictureBox61.Location = New System.Drawing.Point(218, 137)
-        Me.PictureBox61.Name = "PictureBox61"
-        Me.PictureBox61.Size = New System.Drawing.Size(50, 64)
-        Me.PictureBox61.TabIndex = 6
-        Me.PictureBox61.TabStop = False
+        Me.Icon_ranking_pampered.Image = CType(resources.GetObject("Icon_ranking_pampered.Image"), System.Drawing.Image)
+        Me.Icon_ranking_pampered.Location = New System.Drawing.Point(218, 137)
+        Me.Icon_ranking_pampered.Name = "Icon_ranking_pampered"
+        Me.Icon_ranking_pampered.Size = New System.Drawing.Size(50, 64)
+        Me.Icon_ranking_pampered.TabIndex = 6
+        Me.Icon_ranking_pampered.TabStop = False
         '
         'Panel_save_mii
         '
@@ -6213,9 +6246,9 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Menu_button)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.Panel_settings)
-        Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_miiedit)
+        Me.Controls.Add(Me.Panel_islandedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -6353,11 +6386,13 @@ Partial Class TL_SaveEditor
         Me.Panel10.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.Group_changelog.ResumeLayout(False)
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_miiedit.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.Tab_mii_edit.ResumeLayout(False)
         Me.Tab_mii_edit.PerformLayout()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_edit_haircolor.ResumeLayout(False)
         Me.Panel_edit_haircolor.PerformLayout()
         CType(Me.color_32, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6468,19 +6503,20 @@ Partial Class TL_SaveEditor
         CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Tab_mii_status.ResumeLayout(False)
         Me.Tab_mii_status.PerformLayout()
-        CType(Me.valu_experience, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_edit_fullness.ResumeLayout(False)
         CType(Me.Icon_edit_full_100, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_edit_full_50, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_edit_full_25, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_edit_full_00, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_chkfullness, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_experience, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_itemmii_8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox58, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_itemmii_7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown52, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_itemmii_6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown51, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_itemmii_5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.Panel25.ResumeLayout(False)
@@ -6492,22 +6528,22 @@ Partial Class TL_SaveEditor
         CType(Me.valu_target1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel17.ResumeLayout(False)
         CType(Me.NumericUpDown50, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_itemmii_1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_itemmii_4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown49, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_itemmii_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown48, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_itemmii_3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown47, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemmii_4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown46, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemmii_5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemmii_6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemmii_7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemmii_8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemmii_3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemmii_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemmii_1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_experience, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_level, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_fullness, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6522,41 +6558,41 @@ Partial Class TL_SaveEditor
         Me.Panel8.ResumeLayout(False)
         CType(Me.valu_setallfriends, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
-        CType(Me.NumericUpDown30, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown31, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown32, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown33, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown34, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown35, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown27, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown29, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown64, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown63, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown62, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_30, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_29, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_friend_rela_4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_friend_rela_3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_friend_rela_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_friend_rela_1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Tab_mii_extras.ResumeLayout(False)
-        CType(Me.NumericUpDown45, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox62, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown44, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_ranking_splurge, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_ranking_splurge, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_save_mii.ResumeLayout(False)
         Me.Panel_select_mii.ResumeLayout(False)
         Me.ResumeLayout(False)
@@ -6713,7 +6749,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents Select_music As System.Windows.Forms.ComboBox
     Friend WithEvents Setting_music As System.Windows.Forms.CheckBox
     Friend WithEvents Group_changelog As System.Windows.Forms.GroupBox
-    Friend WithEvents PictureBox27 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_changelog As System.Windows.Forms.PictureBox
     Friend WithEvents Changelog As System.Windows.Forms.Label
     Friend WithEvents Text_TLSE_version As System.Windows.Forms.Label
     Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
@@ -6857,22 +6893,22 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_level As System.Windows.Forms.Label
     Friend WithEvents Icon_experience As System.Windows.Forms.PictureBox
     Friend WithEvents valu_level As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown15 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown16 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown17 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown18 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown11 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown14 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown12 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown13 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents PictureBox25 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox29 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox28 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox14 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox26 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox24 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox23 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
+    Friend WithEvents valu_itemmii_8 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_itemmii_7 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_itemmii_6 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_itemmii_5 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_itemmii_1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_itemmii_4 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_itemmii_2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_itemmii_3 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Icon_itemmii_4 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_itemmii_5 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_itemmii_6 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_itemmii_7 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_itemmii_8 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_itemmii_3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_itemmii_2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_itemmii_1 As System.Windows.Forms.PictureBox
     Friend WithEvents valu_fullness As System.Windows.Forms.NumericUpDown
     Friend WithEvents Text_fullness As System.Windows.Forms.Label
     Friend WithEvents Check_fullness As System.Windows.Forms.RadioButton
@@ -6929,9 +6965,9 @@ Partial Class TL_SaveEditor
     Friend WithEvents Label46 As System.Windows.Forms.Label
     Friend WithEvents Label45 As System.Windows.Forms.Label
     Friend WithEvents Label44 As System.Windows.Forms.Label
-    Friend WithEvents NumericUpDown64 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown63 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown62 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_6 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_5 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_4 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_3 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_1 As System.Windows.Forms.NumericUpDown
@@ -6947,12 +6983,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents Label33 As System.Windows.Forms.Label
     Friend WithEvents Label34 As System.Windows.Forms.Label
     Friend WithEvents Label35 As System.Windows.Forms.Label
-    Friend WithEvents NumericUpDown30 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown31 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown32 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown33 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown34 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown35 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_30 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_29 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_28 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_27 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_26 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_25 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Select_friend_rela_24 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_23 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_22 As System.Windows.Forms.ComboBox
@@ -6965,12 +7001,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Label16 As System.Windows.Forms.Label
-    Friend WithEvents NumericUpDown7 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown8 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown9 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown10 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown22 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown23 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_24 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_23 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_22 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_21 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_20 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_19 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Select_friend_rela_18 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_17 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_16 As System.Windows.Forms.ComboBox
@@ -6983,12 +7019,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents Label24 As System.Windows.Forms.Label
-    Friend WithEvents NumericUpDown24 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown25 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown26 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown27 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown28 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown29 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_18 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_17 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_16 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_15 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_14 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_13 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Select_friend_rela_12 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_11 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_10 As System.Windows.Forms.ComboBox
@@ -7001,12 +7037,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown2 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown3 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown4 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown5 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents NumericUpDown6 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_12 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_11 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_10 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_9 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_8 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_friend_rela_7 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Select_friend_rela_6 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_5 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_4 As System.Windows.Forms.ComboBox
@@ -7027,17 +7063,20 @@ Partial Class TL_SaveEditor
     Friend WithEvents Icon_edit_full_25 As System.Windows.Forms.PictureBox
     Friend WithEvents Icon_edit_full_00 As System.Windows.Forms.PictureBox
     Friend WithEvents Tab_mii_extras As System.Windows.Forms.TabPage
-    Friend WithEvents NumericUpDown45 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Label41 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox62 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown44 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents Label40 As System.Windows.Forms.Label
-    Friend WithEvents PictureBox61 As System.Windows.Forms.PictureBox
+    Friend WithEvents valu_ranking_splurge As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Title_ranking_splurge As System.Windows.Forms.Label
+    Friend WithEvents Icon_ranking_splurge As System.Windows.Forms.PictureBox
+    Friend WithEvents valu_ranking_pampered As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Title_ranking_pampered As System.Windows.Forms.Label
+    Friend WithEvents Icon_ranking_pampered As System.Windows.Forms.PictureBox
     Friend WithEvents Fea_edit_concert As System.Windows.Forms.Panel
     Friend WithEvents Icon_edit_concert As System.Windows.Forms.PictureBox
     Friend WithEvents Fea_edit_travelers As System.Windows.Forms.Panel
     Friend WithEvents Icon_edit_travelers As System.Windows.Forms.PictureBox
     Friend WithEvents Text_menu_save As System.Windows.Forms.Label
     Friend WithEvents valu_experience As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_chkfullness As System.Windows.Forms.NumericUpDown
+    Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
 
 End Class
