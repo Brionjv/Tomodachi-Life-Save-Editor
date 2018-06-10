@@ -951,6 +951,10 @@ Tomodachi-Life-Save-Editor
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.grown_up">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.HC80">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -1259,6 +1263,10 @@ Tomodachi-Life-Save-Editor
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.kid">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.logo_EU">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -1370,6 +1378,18 @@ Tomodachi-Life-Save-Editor
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.settings">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.sound1">
+	<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.sound2">
+	<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.sound3">
+	<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
 </summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.stud">
 	<summary>

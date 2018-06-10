@@ -92,6 +92,12 @@
     <Compile Include="Items_edit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Loading.Designer.vb">
+      <DependentUpon>Loading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -117,6 +123,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Items_edit.resx">
       <DependentUpon>Items_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -1204,6 +1213,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_mii_houselov.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grown-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kid.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -59,4 +59,8 @@
         Me.Close()
         TL_SaveEditor.Show()
     End Sub
+
+    Private Sub Items_edit_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        Loading.Close()
+    End Sub
 End Class

@@ -2403,6 +2403,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property grown_up() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("grown-up", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property HC80() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("HC80", resourceCulture)
@@ -3173,6 +3183,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property kid() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("kid", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property logo_EU() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("logo_EU", resourceCulture)
@@ -3447,6 +3467,33 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("settings", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property sound1() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("sound1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property sound2() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("sound2", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property sound3() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("sound3", resourceCulture)
             End Get
         End Property
         

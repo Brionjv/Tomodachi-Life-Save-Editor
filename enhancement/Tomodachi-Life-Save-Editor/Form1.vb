@@ -5,6 +5,7 @@ Public Class TL_SaveEditor
     Private MousedwnY As Integer
     Dim fdialog As New Form2
     Dim applicationpath = Application.StartupPath
+    Dim AudioTomodachi As System.IO.UnmanagedMemoryStream
     Dim savedataArc As String
     Dim money As String
     Dim IslN As String
@@ -83,10 +84,18 @@ Public Class TL_SaveEditor
     Dim couleur As String
     Dim grow As String
     Dim appartement As String
-    Dim BSTF As String
-    Dim sweetheart As String
     Dim eventfountain As String
     Dim appartrenov As String
+    Dim Splurge As String
+    Dim Pampered As String
+    Dim Miifriendr As String
+    Dim MiiHC As String
+    Dim House As String
+    Dim Mhouse As String
+    Dim Miimusic As String
+    Dim Miiinteraction As String
+    Dim Miitarget1 As String
+    Dim Miitarget2 As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -186,6 +195,23 @@ Public Class TL_SaveEditor
             End If
         Catch ex As Exception
         End Try
+    End Sub
+
+    Public Sub startmusic()
+        Panel_music.Visible = True
+        If Select_music.SelectedItem = Select_music.Items.Item(0) Then
+            AudioTomodachi = My.Resources.sound1
+        ElseIf Select_music.SelectedItem = Select_music.Items.Item(1) Then
+            AudioTomodachi = My.Resources.sound2
+        ElseIf Select_music.SelectedItem = Select_music.Items.Item(2) Then
+            AudioTomodachi = My.Resources.sound3
+        End If
+        If Setting_music.Checked = True Then
+            My.Computer.Audio.Play(AudioTomodachi, AudioPlayMode.BackgroundLoop)
+        Else
+            My.Computer.Audio.Stop()
+            Panel_music.Visible = False
+        End If
     End Sub
 
     Public Sub Checkupdates()
@@ -702,7 +728,162 @@ Public Class TL_SaveEditor
 
     Public Sub readMii()
         Try
-
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
+                Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+                If Select_mii.Text = "Mii 1" Then
+                    Reader.Position = &H1CD0
+                    Mii1P = Reader.Position
+                    Text_firstname.Text = Reader.ReadUnicodeString(15)
+                    Reader.Position = &H1CF0
+                    Mii1N = Reader.Position
+                    Text_lastname.Text = Reader.ReadUnicodeString(15)
+                    Reader.Position = &H1C8A
+                    Mii1S = Reader.Position
+                    Text_nickname.Text = Reader.ReadUnicodeString(10)
+                    Reader.Position = &H1F23
+                    Mii1L = Reader.Position
+                    valu_level.Value = Reader.ReadByte
+                    Reader.Position = &H1E92
+                    Mii1PP = Reader.Position
+                    Text_pronun_firstname.Text = Reader.ReadUnicodeString(30)
+                    Reader.Position = &H1ED4
+                    Mii1NP = Reader.Position
+                    Text_pronun_lastname.Text = Reader.ReadUnicodeString(30)
+                    Reader.Position = &H1E50
+                    Mii1SP = Reader.Position
+                    Text_pronun_nickname.Text = Reader.ReadUnicodeString(20)
+                    Reader.Position = &H1F2D
+                    Mii1R = Reader.Position
+                    valu_relationyou.Value = Reader.ReadInt8
+                    Reader.Position = &H1CB8
+                    Mii1C = Reader.Position
+                    Text_creator.Text = Reader.ReadUnicodeString(10)
+                    Reader.Position = &H1D20
+                    bull1 = Reader.Position
+                    Text_cathph_01.Text = Reader.ReadUnicodeString(16)
+                    Reader.Position = &H1DC4
+                    bull2 = Reader.Position
+                    Text_cathph_02.Text = Reader.ReadUnicodeString(16)
+                    Reader.Position = &H1DE6
+                    bull3 = Reader.Position
+                    Text_cathph_03.Text = Reader.ReadUnicodeString(16)
+                    Reader.Position = &H1E08
+                    bull4 = Reader.Position
+                    Text_cathph_04.Text = Reader.ReadUnicodeString(16)
+                    Reader.Position = &H1E2A
+                    bull5 = Reader.Position
+                    Text_cathph_05.Text = Reader.ReadUnicodeString(16)
+                    Reader.Position = &H2258
+                    objet1 = Reader.Position
+                    valu_itemmii_1.Value = Reader.ReadUInt16
+                    Reader.Position = &H225A
+                    objet2 = Reader.Position
+                    valu_itemmii_2.Value = Reader.ReadUInt16
+                    Reader.Position = &H225C
+                    objet3 = Reader.Position
+                    valu_itemmii_3.Value = Reader.ReadUInt16
+                    Reader.Position = &H225E
+                    objet4 = Reader.Position
+                    valu_itemmii_4.Value = Reader.ReadUInt16
+                    Reader.Position = &H2260
+                    objet5 = Reader.Position
+                    valu_itemmii_5.Value = Reader.ReadUInt16
+                    Reader.Position = &H2262
+                    objet6 = Reader.Position
+                    valu_itemmii_6.Value = Reader.ReadUInt16
+                    Reader.Position = &H2264
+                    objet7 = Reader.Position
+                    valu_itemmii_7.Value = Reader.ReadUInt16
+                    Reader.Position = &H2266
+                    objet8 = Reader.Position
+                    valu_itemmii_8.Value = Reader.ReadUInt16
+                    Reader.Position = &H1F22
+                    exp = Reader.Position
+                    valu_experience.Value = Reader.ReadByte
+                    Reader.Position = &H1F28
+                    econom = Reader.Position
+                    valu_economy.Value = Reader.ReadInt32
+                    Reader.Position = &H2272
+                    eat = Reader.Position
+                    valu_chkfullness.Value = Reader.ReadByte
+                    Reader.Position = &H2293
+                    fullness = Reader.Position
+                    valu_fullness.Value = Reader.ReadInt8
+                    Reader.Position = &H1F59
+                    interieur = Reader.Position 'tout intérieur inventaire
+                    Reader.Position = &H1F64
+                    interieur1 = Reader.Position 'tout intérieur inventaire
+                    Reader.Position = &H1F68
+                    Sfoods = Reader.Position 'tout spécial nourriture inventaire
+                    Reader.Position = &H1F50
+                    objdiv = Reader.Position 'tout objet divers inventaire
+                    Reader.Position = &H2298
+                    alltime = Reader.Position
+                    valu_allfav_1.Value = Reader.ReadUInt16
+                    Reader.Position = &H229C
+                    alltime2 = Reader.Position
+                    valu_allfav_2.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A0
+                    fav = Reader.Position
+                    valu_fav_1.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A2
+                    fav2 = Reader.Position
+                    valu_fav_2.Value = Reader.ReadUInt16
+                    Reader.Position = &H22A4
+                    fav3 = Reader.Position
+                    valu_fav_3.Value = Reader.ReadUInt16
+                    Reader.Position = &H229E
+                    worst = Reader.Position
+                    valu_worst_1.Value = Reader.ReadUInt16
+                    Reader.Position = &H229A
+                    worst2 = Reader.Position
+                    valu_worst_2.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C71
+                    copy = Reader.Position
+                    valu_copying.Value = Reader.ReadInt8
+                    Reader.Position = &H1CA0
+                    sharing = Reader.Position
+                    valu_sharing.Value = Reader.ReadUInt16
+                    Reader.Position = &H1C89
+                    couleur = Reader.Position
+                    valu_favcolor.Value = Reader.ReadInt8
+                    Reader.Position = &H22AE
+                    grow = Reader.Position
+                    valu_growkid.Value = Reader.ReadInt8
+                    Reader.Position = &H22A8
+                    appartement = Reader.Position
+                    valu_miiapart.Value = Reader.ReadInt8
+                    Reader.Position = &H22B0
+                    Splurge = Reader.Position
+                    valu_ranking_splurge.Value = Reader.ReadUInt32
+                    Reader.Position = &H1F24
+                    Pampered = Reader.Position
+                    valu_ranking_pampered.Value = Reader.ReadUInt32
+                    Reader.Position = &H299F0
+                    Miifriendr = Reader.Position
+                    Reader.Position = &H1D13
+                    MiiHC = Reader.Position
+                    valu_haircolor.Value = Reader.ReadByte
+                    Reader.Position = &H22A9
+                    House = Reader.Position
+                    valu_miihouse.Value = Reader.ReadByte
+                    Reader.Position = &H22A6
+                    Miimusic = Reader.Position
+                    valu_allmusic.Value = Reader.ReadByte
+                    Reader.Position = &H29AB8 'Mii friendlist
+                    Miiinteraction = Reader.Position
+                    Text_interaction.Text = Reader.ReadHexString(16)
+                    Reader.Position = &H29AC4 'Mii friendlist
+                    Miitarget1 = Reader.Position
+                    valu_target1.Value = Reader.ReadUInt16
+                    Reader.Position = &H29AC6 'Mii friendlist
+                    Miitarget2 = Reader.Position
+                    valu_target2.Value = Reader.ReadUInt16
+                    Reader.Position = &H29AE6 'Mii friendlist
+                    Mhouse = Reader.Position
+                    valu_miiMhouse.Value = Reader.ReadByte
+                End If
+            End If
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Failed to read informations of this Mii, make sure you have opened a file, or report this issue"
@@ -782,6 +963,7 @@ Public Class TL_SaveEditor
             Icon_pronun_nickname.Visible = True
             Text_islandname.MaxLength = 10
             Text_pronun_island.MaxLength = 20
+            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
         ElseIf Filever_text.Text = "EU" Then
             Filever_text.Text = "JP"
             TLSE_logo.Image = My.Resources.logo_JP
@@ -796,6 +978,7 @@ Public Class TL_SaveEditor
             Icon_pronun_nickname.Visible = False
             Text_islandname.MaxLength = 10
             Text_pronun_island.MaxLength = 0
+            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase_j
         ElseIf Filever_text.Text = "JP" Then
             Filever_text.Text = "KR"
             TLSE_logo.Image = My.Resources.logo_KR
@@ -810,6 +993,7 @@ Public Class TL_SaveEditor
             Icon_pronun_nickname.Visible = True
             Text_islandname.MaxLength = 10
             Text_pronun_island.MaxLength = 20
+            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
         ElseIf Filever_text.Text = "KR" Then
             Filever_text.Text = "US"
             TLSE_logo.Image = My.Resources.logo_US
@@ -824,6 +1008,7 @@ Public Class TL_SaveEditor
             Icon_pronun_nickname.Visible = True
             Text_islandname.MaxLength = 10
             Text_pronun_island.MaxLength = 20
+            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
         End If
         Icon_changelog.Image = TLSE_logo.Image
     End Sub
@@ -939,7 +1124,8 @@ Public Class TL_SaveEditor
         Menu_panel.Visible = False
         Me.Hide()
         'mettre un ecran de chargement (trop de ressources vont être utilisés)
-        Items_edit.ShowDialog()
+        Loading.Show()
+        Items_edit.Show()
     End Sub
 
     Private Sub Menu_itemsedit_MouseMove(sender As Object, e As EventArgs) Handles Menu_itemsedit.MouseMove, Menu_text_itemsedit.MouseMove
@@ -2267,7 +2453,28 @@ Public Class TL_SaveEditor
             value_test.Visible = True
             value_tour.Visible = True
             value_vetem.Visible = True
-
+            valu_allmusic.Visible = True
+            valu_sharing.Visible = True
+            valu_copying.Visible = True
+            valu_favcolor.Visible = True
+            valu_growkid.Visible = True
+            valu_haircolor.Visible = True
+            valu_miiapart.Visible = True
+            valu_experience.Visible = True
+            valu_chkfullness.Visible = True
+            valu_fullness.Visible = True
+            valu_itemmii_1.Visible = True
+            valu_itemmii_2.Visible = True
+            valu_itemmii_3.Visible = True
+            valu_itemmii_4.Visible = True
+            valu_itemmii_5.Visible = True
+            valu_itemmii_6.Visible = True
+            valu_itemmii_7.Visible = True
+            valu_itemmii_8.Visible = True
+            valu_target1.Visible = True
+            valu_target2.Visible = True
+            Text_interaction.Visible = True
+            valu_emotions.Visible = True
         Else
             Hidden_things.Visible = False
             value_appartrenov.Visible = False
@@ -2295,6 +2502,28 @@ Public Class TL_SaveEditor
             value_test.Visible = False
             value_tour.Visible = False
             value_vetem.Visible = False
+            valu_allmusic.Visible = False
+            valu_sharing.Visible = False
+            valu_copying.Visible = False
+            valu_favcolor.Visible = False
+            valu_growkid.Visible = False
+            valu_haircolor.Visible = False
+            valu_miiapart.Visible = False
+            valu_experience.Visible = False
+            valu_chkfullness.Visible = False
+            valu_fullness.Visible = False
+            valu_itemmii_1.Visible = False
+            valu_itemmii_2.Visible = False
+            valu_itemmii_3.Visible = False
+            valu_itemmii_4.Visible = False
+            valu_itemmii_5.Visible = False
+            valu_itemmii_6.Visible = False
+            valu_itemmii_7.Visible = False
+            valu_itemmii_8.Visible = False
+            valu_target1.Visible = False
+            valu_target2.Visible = False
+            Text_interaction.Visible = False
+            valu_emotions.Visible = False
         End If
     End Sub
 
@@ -3083,6 +3312,8 @@ Public Class TL_SaveEditor
     Private Sub valu_chkfullness_ValueChanged(sender As Object, e As EventArgs) Handles valu_chkfullness.ValueChanged
         If valu_chkfullness.Value > 0 Then
             Check_fullness.Checked = False
+        ElseIf valu_chkfullness.Value = 0 Then
+            Check_fullness.Checked = True
         End If
     End Sub
 
@@ -3887,15 +4118,763 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Select_mii_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_mii.SelectedIndexChanged
+        Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(0)
+        Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
+        Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
+        Select_interaction.SelectedItem = Select_interaction.Items.Item(0)
+        Select_emotions.SelectedItem = Select_emotions.Items.Item(0)
+        Check_fullness.Checked = False
+        readMii()
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
             Text_editing_mii.Text = "editing " & Text_nickname.Text & " ..."
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_editing_mii.Text = "édition de " & Text_nickname.Text & " ..."
         End If
-        Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(0)
-        Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
-        Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
-        Select_interaction.SelectedItem = Select_interaction.Items.Item(0)
-        readMii()
+    End Sub
+
+    Private Sub Setting_music_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_music.CheckedChanged
+        startmusic()
+    End Sub
+
+    Private Sub Select_music_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_music.SelectedIndexChanged
+        startmusic()
+    End Sub
+
+    Private Sub Select_relationyou_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_relationyou.SelectedIndexChanged
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(0) Then
+            valu_relationyou.Value = 4
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(1) Then
+            valu_relationyou.Value = 0
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(2) Then
+            valu_relationyou.Value = 6
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(3) Then
+            valu_relationyou.Value = 3
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(4) Then
+            valu_relationyou.Value = 1
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(5) Then
+            valu_relationyou.Value = 5
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(6) Then
+            valu_relationyou.Value = 2
+        End If
+    End Sub
+
+    Private Sub valu_relationyou_ValueChanged(sender As Object, e As EventArgs) Handles valu_relationyou.ValueChanged
+        If valu_relationyou.Value = 0 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(1)
+        End If
+        If valu_relationyou.Value = 1 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(4)
+        End If
+        If valu_relationyou.Value = 2 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(6)
+        End If
+        If valu_relationyou.Value = 3 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(3)
+        End If
+        If valu_relationyou.Value = 4 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(0)
+        End If
+        If valu_relationyou.Value = 5 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(5)
+        End If
+        If valu_relationyou.Value = 6 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(2)
+        End If
+    End Sub
+
+    Private Sub valu_favcolor_ValueChanged(sender As Object, e As EventArgs) Handles valu_favcolor.ValueChanged
+        Select Case valu_favcolor.Value
+            Case Is <> 83, 17, 19, 16, 18, 22, 23, 36, 20, 21, 29, 30, 28, 31, 1, 67, 3, 2, 0, 26, 24, 89, 25, 7, 71, 4, 5, 6, 10, 11, 8, 9, 12, 14, 13, 15, 32, 33, 34, 35, 38, 37, 39, 41, 42, 40, 43, 45, 111, 47, 44, 46, 86, 93, 27
+                Icon_favcolor.Image = My.Resources.color
+        End Select
+        Select Case valu_favcolor.Value
+            Case 83, 17, 19, 16, 18
+                Icon_favcolor.Image = My.Resources.color_vert
+        End Select
+        Select Case valu_favcolor.Value
+            Case 22, 23, 20, 21, 86, 85
+                Icon_favcolor.Image = My.Resources.color_bleu
+        End Select
+        Select Case valu_favcolor.Value
+            Case 29, 30, 28, 31, 93
+                Icon_favcolor.Image = My.Resources.color_rose
+        End Select
+        Select Case valu_favcolor.Value
+            Case 1, 67, 3, 2, 0
+                Icon_favcolor.Image = My.Resources.color_rouge
+        End Select
+        Select Case valu_favcolor.Value
+            Case 26, 24, 89, 25, 27
+                Icon_favcolor.Image = My.Resources.color_bleuclair
+        End Select
+        Select Case valu_favcolor.Value
+            Case 7, 71, 4, 5, 6
+                Icon_favcolor.Image = My.Resources.color_orange
+        End Select
+        Select Case valu_favcolor.Value
+            Case 10, 11, 8, 9
+                Icon_favcolor.Image = My.Resources.color_jaune
+        End Select
+        Select Case valu_favcolor.Value
+            Case 12, 14, 13, 15
+                Icon_favcolor.Image = My.Resources.color_vertclair
+        End Select
+        Select Case valu_favcolor.Value
+            Case 32, 33, 34, 35
+                Icon_favcolor.Image = My.Resources.color_violet
+        End Select
+        Select Case valu_favcolor.Value
+            Case 38, 37, 39, 36
+                Icon_favcolor.Image = My.Resources.color_marron
+        End Select
+        Select Case valu_favcolor.Value
+            Case 41, 42, 40, 43
+                Icon_favcolor.Image = My.Resources.color_blanc
+        End Select
+        Select Case valu_favcolor.Value
+            Case 45, 111, 47, 44, 46
+                Icon_favcolor.Image = My.Resources.color_noir
+        End Select
+    End Sub
+
+    Private Sub valu_growkid_ValueChanged(sender As Object, e As EventArgs) Handles valu_growkid.ValueChanged
+        If valu_growkid.Value = 0 Then
+            Select_growkid.SelectedItem = Select_growkid.Items.Item(0)
+        End If
+        If valu_growkid.Value = 1 Then
+            Select_growkid.SelectedItem = Select_growkid.Items.Item(1)
+        End If
+        If valu_growkid.Value = 2 Then
+            Select_growkid.SelectedItem = Select_growkid.Items.Item(2)
+        End If
+    End Sub
+
+    Private Sub Select_growkid_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_growkid.SelectedIndexChanged
+        If Select_growkid.SelectedItem = Select_growkid.Items.Item(0) Then
+            valu_growkid.Value = 0
+            Icon_growkid.Image = My.Resources.grown_up
+        End If
+        If Select_growkid.SelectedItem = Select_growkid.Items.Item(1) Then
+            valu_growkid.Value = 1
+            Icon_growkid.Image = My.Resources.grown_up
+        End If
+        If Select_growkid.SelectedItem = Select_growkid.Items.Item(2) Then
+            valu_growkid.Value = 2
+            Icon_growkid.Image = My.Resources.kid
+        End If
+    End Sub
+
+    Private Sub valu_copying_ValueChanged(sender As Object, e As EventArgs) Handles valu_copying.ValueChanged
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            If valu_copying.Value = 0 Then
+                Text_copying.Text = "Don't Allow"
+            End If
+            If valu_copying.Value = 1 Then
+                Text_copying.Text = "Allow"
+            End If
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            If valu_copying.Value = 0 Then
+                Text_copying.Text = "Interdire"
+            End If
+            If valu_copying.Value = 1 Then
+                Text_copying.Text = "Autoriser"
+            End If
+        End If
+    End Sub
+
+    Private Sub valu_sharing_ValueChanged(sender As Object, e As EventArgs) Handles valu_sharing.ValueChanged
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            If valu_sharing.Value Mod 2 = 0 Then
+                Text_sharing.Text = "On"
+            End If
+            If valu_sharing.Value Mod 2 = 1 Then
+                Text_sharing.Text = "Off"
+            End If
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            If valu_sharing.Value Mod 2 = 0 Then
+                Text_sharing.Text = "Oui"
+            End If
+            If valu_sharing.Value Mod 2 = 1 Then
+                Text_sharing.Text = "Non"
+            End If
+        End If
+    End Sub
+
+    Private Sub valu_miiapart_ValueChanged(sender As Object, e As EventArgs) Handles valu_miiapart.ValueChanged
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            If valu_miiapart.Value = 0 Then
+                Text_miiapart.Text = "app.101"
+            ElseIf valu_miiapart.Value = 1 Then
+                Text_miiapart.Text = "app.102"
+            ElseIf valu_miiapart.Value = 2 Then
+                Text_miiapart.Text = "app.103"
+            ElseIf valu_miiapart.Value = 3 Then
+                Text_miiapart.Text = "app.104"
+            ElseIf valu_miiapart.Value = 4 Then
+                Text_miiapart.Text = "app.105"
+            ElseIf valu_miiapart.Value = 5 Then
+                Text_miiapart.Text = "app.106"
+            ElseIf valu_miiapart.Value = 6 Then
+                Text_miiapart.Text = "app.107"
+            ElseIf valu_miiapart.Value = 7 Then
+                Text_miiapart.Text = "app.108"
+            ElseIf valu_miiapart.Value = 8 Then
+                Text_miiapart.Text = "app.201"
+            ElseIf valu_miiapart.Value = 9 Then
+                Text_miiapart.Text = "app.202"
+            ElseIf valu_miiapart.Value = 10 Then
+                Text_miiapart.Text = "app.203"
+            ElseIf valu_miiapart.Value = 11 Then
+                Text_miiapart.Text = "app.204"
+            ElseIf valu_miiapart.Value = 12 Then
+                Text_miiapart.Text = "app.205"
+            ElseIf valu_miiapart.Value = 13 Then
+                Text_miiapart.Text = "app.206"
+            ElseIf valu_miiapart.Value = 14 Then
+                Text_miiapart.Text = "app.207"
+            ElseIf valu_miiapart.Value = 15 Then
+                Text_miiapart.Text = "app.208"
+            ElseIf valu_miiapart.Value = 16 Then
+                Text_miiapart.Text = "app.301"
+            ElseIf valu_miiapart.Value = 17 Then
+                Text_miiapart.Text = "app.302"
+            ElseIf valu_miiapart.Value = 18 Then
+                Text_miiapart.Text = "app.303"
+            ElseIf valu_miiapart.Value = 19 Then
+                Text_miiapart.Text = "app.304"
+            ElseIf valu_miiapart.Value = 20 Then
+                Text_miiapart.Text = "app.305"
+            ElseIf valu_miiapart.Value = 21 Then
+                Text_miiapart.Text = "app.306"
+            ElseIf valu_miiapart.Value = 22 Then
+                Text_miiapart.Text = "app.307"
+            ElseIf valu_miiapart.Value = 23 Then
+                Text_miiapart.Text = "app.308"
+            ElseIf valu_miiapart.Value = 24 Then
+                Text_miiapart.Text = "app.401"
+            ElseIf valu_miiapart.Value = 25 Then
+                Text_miiapart.Text = "app.402"
+            ElseIf valu_miiapart.Value = 26 Then
+                Text_miiapart.Text = "app.403"
+            ElseIf valu_miiapart.Value = 27 Then
+                Text_miiapart.Text = "app.404"
+            ElseIf valu_miiapart.Value = 28 Then
+                Text_miiapart.Text = "app.405"
+            ElseIf valu_miiapart.Value = 29 Then
+                Text_miiapart.Text = "app.406"
+            ElseIf valu_miiapart.Value = 30 Then
+                Text_miiapart.Text = "app.407"
+            ElseIf valu_miiapart.Value = 31 Then
+                Text_miiapart.Text = "app.408"
+            ElseIf valu_miiapart.Value = 32 Then
+                Text_miiapart.Text = "app.501"
+            ElseIf valu_miiapart.Value = 33 Then
+                Text_miiapart.Text = "app.502"
+            ElseIf valu_miiapart.Value = 34 Then
+                Text_miiapart.Text = "app.503"
+            ElseIf valu_miiapart.Value = 35 Then
+                Text_miiapart.Text = "app.504"
+            ElseIf valu_miiapart.Value = 36 Then
+                Text_miiapart.Text = "app.505"
+            ElseIf valu_miiapart.Value = 37 Then
+                Text_miiapart.Text = "app.506"
+            ElseIf valu_miiapart.Value = 38 Then
+                Text_miiapart.Text = "app.507"
+            ElseIf valu_miiapart.Value = 39 Then
+                Text_miiapart.Text = "app.508"
+            ElseIf valu_miiapart.Value = 40 Then
+                Text_miiapart.Text = "app.601"
+            ElseIf valu_miiapart.Value = 41 Then
+                Text_miiapart.Text = "app.602"
+            ElseIf valu_miiapart.Value = 42 Then
+                Text_miiapart.Text = "app.603"
+            ElseIf valu_miiapart.Value = 43 Then
+                Text_miiapart.Text = "app.604"
+            ElseIf valu_miiapart.Value = 44 Then
+                Text_miiapart.Text = "app.605"
+            ElseIf valu_miiapart.Value = 45 Then
+                Text_miiapart.Text = "app.606"
+            ElseIf valu_miiapart.Value = 46 Then
+                Text_miiapart.Text = "app.607"
+            ElseIf valu_miiapart.Value = 47 Then
+                Text_miiapart.Text = "app.608"
+            ElseIf valu_miiapart.Value = 48 Then
+                Text_miiapart.Text = "app.701"
+            ElseIf valu_miiapart.Value = 49 Then
+                Text_miiapart.Text = "app.702"
+            ElseIf valu_miiapart.Value = 50 Then
+                Text_miiapart.Text = "app.703"
+            ElseIf valu_miiapart.Value = 51 Then
+                Text_miiapart.Text = "app.704"
+            ElseIf valu_miiapart.Value = 52 Then
+                Text_miiapart.Text = "app.705"
+            ElseIf valu_miiapart.Value = 53 Then
+                Text_miiapart.Text = "app.706"
+            ElseIf valu_miiapart.Value = 54 Then
+                Text_miiapart.Text = "app.707"
+            ElseIf valu_miiapart.Value = 55 Then
+                Text_miiapart.Text = "app.708"
+            ElseIf valu_miiapart.Value = 56 Then
+                Text_miiapart.Text = "app.801"
+            ElseIf valu_miiapart.Value = 57 Then
+                Text_miiapart.Text = "app.802"
+            ElseIf valu_miiapart.Value = 58 Then
+                Text_miiapart.Text = "app.803"
+            ElseIf valu_miiapart.Value = 59 Then
+                Text_miiapart.Text = "app.804"
+            ElseIf valu_miiapart.Value = 60 Then
+                Text_miiapart.Text = "app.805"
+            ElseIf valu_miiapart.Value = 61 Then
+                Text_miiapart.Text = "app.806"
+            ElseIf valu_miiapart.Value = 62 Then
+                Text_miiapart.Text = "app.807"
+            ElseIf valu_miiapart.Value = 63 Then
+                Text_miiapart.Text = "app.808"
+            ElseIf valu_miiapart.Value = 64 Then
+                Text_miiapart.Text = "app.901"
+            ElseIf valu_miiapart.Value = 65 Then
+                Text_miiapart.Text = "app.902"
+            ElseIf valu_miiapart.Value = 66 Then
+                Text_miiapart.Text = "app.903"
+            ElseIf valu_miiapart.Value = 67 Then
+                Text_miiapart.Text = "app.904"
+            ElseIf valu_miiapart.Value = 68 Then
+                Text_miiapart.Text = "app.905"
+            ElseIf valu_miiapart.Value = 69 Then
+                Text_miiapart.Text = "app.906"
+            ElseIf valu_miiapart.Value = 70 Then
+                Text_miiapart.Text = "app.907"
+            ElseIf valu_miiapart.Value = 71 Then
+                Text_miiapart.Text = "app.908"
+            ElseIf valu_miiapart.Value = 72 Then
+                Text_miiapart.Text = "app.1001"
+            ElseIf valu_miiapart.Value = 73 Then
+                Text_miiapart.Text = "app.1002"
+            ElseIf valu_miiapart.Value = 74 Then
+                Text_miiapart.Text = "app.1003"
+            ElseIf valu_miiapart.Value = 75 Then
+                Text_miiapart.Text = "app.1004"
+            ElseIf valu_miiapart.Value = 76 Then
+                Text_miiapart.Text = "app.1005"
+            ElseIf valu_miiapart.Value = 77 Then
+                Text_miiapart.Text = "app.1006"
+            ElseIf valu_miiapart.Value = 78 Then
+                Text_miiapart.Text = "app.1007"
+            ElseIf valu_miiapart.Value = 79 Then
+                Text_miiapart.Text = "app.1008"
+            ElseIf valu_miiapart.Value = 80 Then
+                Text_miiapart.Text = "app.1101"
+            ElseIf valu_miiapart.Value = 81 Then
+                Text_miiapart.Text = "app.1102"
+            ElseIf valu_miiapart.Value = 82 Then
+                Text_miiapart.Text = "app.1103"
+            ElseIf valu_miiapart.Value = 83 Then
+                Text_miiapart.Text = "app.1104"
+            ElseIf valu_miiapart.Value = 84 Then
+                Text_miiapart.Text = "app.1105"
+            ElseIf valu_miiapart.Value = 85 Then
+                Text_miiapart.Text = "app.1106"
+            ElseIf valu_miiapart.Value = 86 Then
+                Text_miiapart.Text = "app.1107"
+            ElseIf valu_miiapart.Value = 87 Then
+                Text_miiapart.Text = "app.1108"
+            ElseIf valu_miiapart.Value = 88 Then
+                Text_miiapart.Text = "app.1201"
+            ElseIf valu_miiapart.Value = 89 Then
+                Text_miiapart.Text = "app.1202"
+            ElseIf valu_miiapart.Value = 90 Then
+                Text_miiapart.Text = "app.1203"
+            ElseIf valu_miiapart.Value = 91 Then
+                Text_miiapart.Text = "app.1204"
+            ElseIf valu_miiapart.Value = 92 Then
+                Text_miiapart.Text = "app.1205"
+            ElseIf valu_miiapart.Value = 93 Then
+                Text_miiapart.Text = "app.1206"
+            ElseIf valu_miiapart.Value = 94 Then
+                Text_miiapart.Text = "app.1207"
+            ElseIf valu_miiapart.Value = 95 Then
+                Text_miiapart.Text = "app.1208"
+            ElseIf valu_miiapart.Value = 96 Then
+                Text_miiapart.Text = "app.1301"
+            ElseIf valu_miiapart.Value = 97 Then
+                Text_miiapart.Text = "app.1302"
+            ElseIf valu_miiapart.Value = 98 Then
+                Text_miiapart.Text = "app.1303"
+            ElseIf valu_miiapart.Value = 99 Then
+                Text_miiapart.Text = "app.1304"
+            End If
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            If valu_miiapart.Value = 0 Then
+                Text_miiapart.Text = "apt.101"
+            ElseIf valu_miiapart.Value = 1 Then
+                Text_miiapart.Text = "apt.102"
+            ElseIf valu_miiapart.Value = 2 Then
+                Text_miiapart.Text = "apt.103"
+            ElseIf valu_miiapart.Value = 3 Then
+                Text_miiapart.Text = "apt.104"
+            ElseIf valu_miiapart.Value = 4 Then
+                Text_miiapart.Text = "apt.105"
+            ElseIf valu_miiapart.Value = 5 Then
+                Text_miiapart.Text = "apt.106"
+            ElseIf valu_miiapart.Value = 6 Then
+                Text_miiapart.Text = "apt.107"
+            ElseIf valu_miiapart.Value = 7 Then
+                Text_miiapart.Text = "apt.108"
+            ElseIf valu_miiapart.Value = 8 Then
+                Text_miiapart.Text = "apt.201"
+            ElseIf valu_miiapart.Value = 9 Then
+                Text_miiapart.Text = "apt.202"
+            ElseIf valu_miiapart.Value = 10 Then
+                Text_miiapart.Text = "apt.203"
+            ElseIf valu_miiapart.Value = 11 Then
+                Text_miiapart.Text = "apt.204"
+            ElseIf valu_miiapart.Value = 12 Then
+                Text_miiapart.Text = "apt.205"
+            ElseIf valu_miiapart.Value = 13 Then
+                Text_miiapart.Text = "apt.206"
+            ElseIf valu_miiapart.Value = 14 Then
+                Text_miiapart.Text = "apt.207"
+            ElseIf valu_miiapart.Value = 15 Then
+                Text_miiapart.Text = "apt.208"
+            ElseIf valu_miiapart.Value = 16 Then
+                Text_miiapart.Text = "apt.301"
+            ElseIf valu_miiapart.Value = 17 Then
+                Text_miiapart.Text = "apt.302"
+            ElseIf valu_miiapart.Value = 18 Then
+                Text_miiapart.Text = "apt.303"
+            ElseIf valu_miiapart.Value = 19 Then
+                Text_miiapart.Text = "apt.304"
+            ElseIf valu_miiapart.Value = 20 Then
+                Text_miiapart.Text = "apt.305"
+            ElseIf valu_miiapart.Value = 21 Then
+                Text_miiapart.Text = "apt.306"
+            ElseIf valu_miiapart.Value = 22 Then
+                Text_miiapart.Text = "apt.307"
+            ElseIf valu_miiapart.Value = 23 Then
+                Text_miiapart.Text = "apt.308"
+            ElseIf valu_miiapart.Value = 24 Then
+                Text_miiapart.Text = "apt.401"
+            ElseIf valu_miiapart.Value = 25 Then
+                Text_miiapart.Text = "apt.402"
+            ElseIf valu_miiapart.Value = 26 Then
+                Text_miiapart.Text = "apt.403"
+            ElseIf valu_miiapart.Value = 27 Then
+                Text_miiapart.Text = "apt.404"
+            ElseIf valu_miiapart.Value = 28 Then
+                Text_miiapart.Text = "apt.405"
+            ElseIf valu_miiapart.Value = 29 Then
+                Text_miiapart.Text = "apt.406"
+            ElseIf valu_miiapart.Value = 30 Then
+                Text_miiapart.Text = "apt.407"
+            ElseIf valu_miiapart.Value = 31 Then
+                Text_miiapart.Text = "apt.408"
+            ElseIf valu_miiapart.Value = 32 Then
+                Text_miiapart.Text = "apt.501"
+            ElseIf valu_miiapart.Value = 33 Then
+                Text_miiapart.Text = "apt.502"
+            ElseIf valu_miiapart.Value = 34 Then
+                Text_miiapart.Text = "apt.503"
+            ElseIf valu_miiapart.Value = 35 Then
+                Text_miiapart.Text = "apt.504"
+            ElseIf valu_miiapart.Value = 36 Then
+                Text_miiapart.Text = "apt.505"
+            ElseIf valu_miiapart.Value = 37 Then
+                Text_miiapart.Text = "apt.506"
+            ElseIf valu_miiapart.Value = 38 Then
+                Text_miiapart.Text = "apt.507"
+            ElseIf valu_miiapart.Value = 39 Then
+                Text_miiapart.Text = "apt.508"
+            ElseIf valu_miiapart.Value = 40 Then
+                Text_miiapart.Text = "apt.601"
+            ElseIf valu_miiapart.Value = 41 Then
+                Text_miiapart.Text = "apt.602"
+            ElseIf valu_miiapart.Value = 42 Then
+                Text_miiapart.Text = "apt.603"
+            ElseIf valu_miiapart.Value = 43 Then
+                Text_miiapart.Text = "apt.604"
+            ElseIf valu_miiapart.Value = 44 Then
+                Text_miiapart.Text = "apt.605"
+            ElseIf valu_miiapart.Value = 45 Then
+                Text_miiapart.Text = "apt.606"
+            ElseIf valu_miiapart.Value = 46 Then
+                Text_miiapart.Text = "apt.607"
+            ElseIf valu_miiapart.Value = 47 Then
+                Text_miiapart.Text = "apt.608"
+            ElseIf valu_miiapart.Value = 48 Then
+                Text_miiapart.Text = "apt.701"
+            ElseIf valu_miiapart.Value = 49 Then
+                Text_miiapart.Text = "apt.702"
+            ElseIf valu_miiapart.Value = 50 Then
+                Text_miiapart.Text = "apt.703"
+            ElseIf valu_miiapart.Value = 51 Then
+                Text_miiapart.Text = "apt.704"
+            ElseIf valu_miiapart.Value = 52 Then
+                Text_miiapart.Text = "apt.705"
+            ElseIf valu_miiapart.Value = 53 Then
+                Text_miiapart.Text = "apt.706"
+            ElseIf valu_miiapart.Value = 54 Then
+                Text_miiapart.Text = "apt.707"
+            ElseIf valu_miiapart.Value = 55 Then
+                Text_miiapart.Text = "apt.708"
+            ElseIf valu_miiapart.Value = 56 Then
+                Text_miiapart.Text = "apt.801"
+            ElseIf valu_miiapart.Value = 57 Then
+                Text_miiapart.Text = "apt.802"
+            ElseIf valu_miiapart.Value = 58 Then
+                Text_miiapart.Text = "apt.803"
+            ElseIf valu_miiapart.Value = 59 Then
+                Text_miiapart.Text = "apt.804"
+            ElseIf valu_miiapart.Value = 60 Then
+                Text_miiapart.Text = "apt.805"
+            ElseIf valu_miiapart.Value = 61 Then
+                Text_miiapart.Text = "apt.806"
+            ElseIf valu_miiapart.Value = 62 Then
+                Text_miiapart.Text = "apt.807"
+            ElseIf valu_miiapart.Value = 63 Then
+                Text_miiapart.Text = "apt.808"
+            ElseIf valu_miiapart.Value = 64 Then
+                Text_miiapart.Text = "apt.901"
+            ElseIf valu_miiapart.Value = 65 Then
+                Text_miiapart.Text = "apt.902"
+            ElseIf valu_miiapart.Value = 66 Then
+                Text_miiapart.Text = "apt.903"
+            ElseIf valu_miiapart.Value = 67 Then
+                Text_miiapart.Text = "apt.904"
+            ElseIf valu_miiapart.Value = 68 Then
+                Text_miiapart.Text = "apt.905"
+            ElseIf valu_miiapart.Value = 69 Then
+                Text_miiapart.Text = "apt.906"
+            ElseIf valu_miiapart.Value = 70 Then
+                Text_miiapart.Text = "apt.907"
+            ElseIf valu_miiapart.Value = 71 Then
+                Text_miiapart.Text = "apt.908"
+            ElseIf valu_miiapart.Value = 72 Then
+                Text_miiapart.Text = "apt.1001"
+            ElseIf valu_miiapart.Value = 73 Then
+                Text_miiapart.Text = "apt.1002"
+            ElseIf valu_miiapart.Value = 74 Then
+                Text_miiapart.Text = "apt.1003"
+            ElseIf valu_miiapart.Value = 75 Then
+                Text_miiapart.Text = "apt.1004"
+            ElseIf valu_miiapart.Value = 76 Then
+                Text_miiapart.Text = "apt.1005"
+            ElseIf valu_miiapart.Value = 77 Then
+                Text_miiapart.Text = "apt.1006"
+            ElseIf valu_miiapart.Value = 78 Then
+                Text_miiapart.Text = "apt.1007"
+            ElseIf valu_miiapart.Value = 79 Then
+                Text_miiapart.Text = "apt.1008"
+            ElseIf valu_miiapart.Value = 80 Then
+                Text_miiapart.Text = "apt.1101"
+            ElseIf valu_miiapart.Value = 81 Then
+                Text_miiapart.Text = "apt.1102"
+            ElseIf valu_miiapart.Value = 82 Then
+                Text_miiapart.Text = "apt.1103"
+            ElseIf valu_miiapart.Value = 83 Then
+                Text_miiapart.Text = "apt.1104"
+            ElseIf valu_miiapart.Value = 84 Then
+                Text_miiapart.Text = "apt.1105"
+            ElseIf valu_miiapart.Value = 85 Then
+                Text_miiapart.Text = "apt.1106"
+            ElseIf valu_miiapart.Value = 86 Then
+                Text_miiapart.Text = "apt.1107"
+            ElseIf valu_miiapart.Value = 87 Then
+                Text_miiapart.Text = "apt.1108"
+            ElseIf valu_miiapart.Value = 88 Then
+                Text_miiapart.Text = "apt.1201"
+            ElseIf valu_miiapart.Value = 89 Then
+                Text_miiapart.Text = "apt.1202"
+            ElseIf valu_miiapart.Value = 90 Then
+                Text_miiapart.Text = "apt.1203"
+            ElseIf valu_miiapart.Value = 91 Then
+                Text_miiapart.Text = "apt.1204"
+            ElseIf valu_miiapart.Value = 92 Then
+                Text_miiapart.Text = "apt.1205"
+            ElseIf valu_miiapart.Value = 93 Then
+                Text_miiapart.Text = "apt.1206"
+            ElseIf valu_miiapart.Value = 94 Then
+                Text_miiapart.Text = "apt.1207"
+            ElseIf valu_miiapart.Value = 95 Then
+                Text_miiapart.Text = "apt.1208"
+            ElseIf valu_miiapart.Value = 96 Then
+                Text_miiapart.Text = "apt.1301"
+            ElseIf valu_miiapart.Value = 97 Then
+                Text_miiapart.Text = "apt.1302"
+            ElseIf valu_miiapart.Value = 98 Then
+                Text_miiapart.Text = "apt.1303"
+            ElseIf valu_miiapart.Value = 99 Then
+                Text_miiapart.Text = "apt.1304"
+            End If
+        End If
+    End Sub
+
+    Private Sub Text_unlock_music_Click(sender As Object, e As EventArgs) Handles Text_unlock_music.Click
+        valu_allmusic.Value = 255
+    End Sub
+
+    Private Sub valu_emotions_ValueChanged(sender As Object, e As EventArgs) Handles valu_emotions.ValueChanged
+        If valu_emotions.Value = 0 Then
+            Select_emotions.SelectedItem = Select_emotions.Items.Item(0)
+        ElseIf valu_emotions.Value = 1 Then
+            Select_emotions.SelectedItem = Select_emotions.Items.Item(1)
+        ElseIf valu_emotions.Value = 2 Then
+            Select_emotions.SelectedItem = Select_emotions.Items.Item(2)
+        ElseIf valu_emotions.Value = 3 Then
+            Select_emotions.SelectedItem = Select_emotions.Items.Item(3)
+        ElseIf valu_emotions.Value = 4 Then
+            Select_emotions.SelectedItem = Select_emotions.Items.Item(4)
+        End If
+    End Sub
+
+    Private Sub Select_emotions_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_emotions.SelectedIndexChanged
+        If Select_emotions.SelectedItem = Select_emotions.Items.Item(0) Then
+            valu_emotions.Value = 0
+        ElseIf Select_emotions.SelectedItem = Select_emotions.Items.Item(1) Then
+            valu_emotions.Value = 1
+        ElseIf Select_emotions.SelectedItem = Select_emotions.Items.Item(2) Then
+            valu_emotions.Value = 2
+        ElseIf Select_emotions.SelectedItem = Select_emotions.Items.Item(3) Then
+            valu_emotions.Value = 3
+        ElseIf Select_emotions.SelectedItem = Select_emotions.Items.Item(4) Then
+            valu_emotions.Value = 4
+        End If
+    End Sub
+
+    Private Sub Select_interaction_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_interaction.SelectedIndexChanged
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(0) Then
+            Icon_interaction.Visible = False
+            Text_interaction.Text = "00000000000000000000000CFFFFFFFF"
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Visible = True
+            valu_target2.Visible = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(1) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_black
+            Text_interaction.Text = "3EC1EF21000000000001010CFFFFFFFF"
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Visible = True
+            valu_target2.Visible = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(2) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_black
+            Text_interaction.Text = "002AF521000000000001000CFFFFFFFF"
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Visible = True
+            valu_target2.Visible = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(3) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_black
+            Text_interaction.Text = "74DEF521000000000001000CFFFFFFFF"
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Visible = True
+            valu_target2.Visible = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(4) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_pink
+            Text_interaction.Text = "86F5FF21000000004C01000C0000FFFF"
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Visible = False
+            valu_target2.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(5) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_orange
+            Text_interaction.Text = "0906F421000000005801000C0000FFFF"
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Visible = False
+            valu_target2.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(6) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_orange
+            Text_interaction.Text = "7E0AF621000000005801000C0000FFFF"
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Visible = False
+            valu_target2.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(7) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_pink
+            Text_interaction.Text = "2F430022000000005001000C0000FFFF"
+            valu_target1.Value = 0
+            valu_target2.Value = 0
+            valu_target1.Visible = False
+            valu_target2.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(8) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_black
+            Text_interaction.Text = "1600F621000000005801000C0000FFFF"
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Visible = True
+            valu_target2.Visible = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(9) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_black
+            Text_interaction.Text = "59D6F521000000002501000CFFFFFFFF"
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Visible = True
+            valu_target2.Visible = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(10) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_black
+            Text_interaction.Text = "8ED5F521000000002F01000CFFFFFFFF"
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Visible = True
+            valu_target2.Visible = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(11) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_black
+            Text_interaction.Text = "9E5CF621000000003501010CFFFFFFFF"
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Visible = True
+            valu_target2.Visible = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(12) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_black
+            Text_interaction.Text = "8E5FF621000000008E01000CFFFFFFFF"
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Visible = True
+            valu_target2.Visible = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(13) Then
+            Icon_interaction.Visible = True
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue
+            ElseIf Filever_text.Text = "JP" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            Text_interaction.Text = "78FAF821000000005F01000C0000FFFF"
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Visible = False
+            valu_target2.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(14) Then
+            Icon_interaction.Visible = True
+            Icon_interaction.Image = My.Resources.apartment_pink
+            Text_interaction.Text = "C69E0822000000005401000C0000FFFF"
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Visible = False
+            valu_target2.Visible = False
+        Else
+            Icon_interaction.Visible = False
+        End If
     End Sub
 End Class
