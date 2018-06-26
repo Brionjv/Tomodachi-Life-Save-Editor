@@ -1,4 +1,6 @@
 ﻿Imports System.Net
+Imports System.IO
+
 Public Class TL_SaveEditor
     Private IsFormBeingDragged As Boolean = False
     Private MousedwnX As Integer
@@ -25,6 +27,8 @@ Public Class TL_SaveEditor
     Dim born As String
     Dim vsent As String
     Dim stpass As String
+    Dim bullj1 As String
+    Dim bullj2 As String
     Dim bull1 As String
     Dim bull2 As String
     Dim bull3 As String
@@ -96,6 +100,8 @@ Public Class TL_SaveEditor
     Dim Miiinteraction As String
     Dim Miitarget1 As String
     Dim Miitarget2 As String
+    Dim Accessmii As String
+    Dim Accessfriends As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -309,7 +315,7 @@ Public Class TL_SaveEditor
                 magimport = Reader.Position
                 value_magimport.Value = Reader.ReadInt8
                 Reader.Position = &H1E4C2A
-                Fontai = Reader.Position
+                fontai = Reader.Position
                 value_font.Value = Reader.ReadInt8
                 Reader.Position = &H1E4C2B
                 mais = Reader.Position
@@ -730,159 +736,309 @@ Public Class TL_SaveEditor
         Try
             If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
-                If Select_mii.Text = "Mii 1" Then
-                    Reader.Position = &H1CD0
-                    Mii1P = Reader.Position
-                    Text_firstname.Text = Reader.ReadUnicodeString(15)
-                    Reader.Position = &H1CF0
-                    Mii1N = Reader.Position
-                    Text_lastname.Text = Reader.ReadUnicodeString(15)
-                    Reader.Position = &H1C8A
-                    Mii1S = Reader.Position
-                    Text_nickname.Text = Reader.ReadUnicodeString(10)
-                    Reader.Position = &H1F23
-                    Mii1L = Reader.Position
-                    valu_level.Value = Reader.ReadByte
-                    Reader.Position = &H1E92
-                    Mii1PP = Reader.Position
-                    Text_pronun_firstname.Text = Reader.ReadUnicodeString(30)
-                    Reader.Position = &H1ED4
-                    Mii1NP = Reader.Position
-                    Text_pronun_lastname.Text = Reader.ReadUnicodeString(30)
-                    Reader.Position = &H1E50
-                    Mii1SP = Reader.Position
-                    Text_pronun_nickname.Text = Reader.ReadUnicodeString(20)
-                    Reader.Position = &H1F2D
-                    Mii1R = Reader.Position
-                    valu_relationyou.Value = Reader.ReadInt8
-                    Reader.Position = &H1CB8
-                    Mii1C = Reader.Position
-                    Text_creator.Text = Reader.ReadUnicodeString(10)
-                    Reader.Position = &H1D20
-                    bull1 = Reader.Position
-                    Text_cathph_01.Text = Reader.ReadUnicodeString(16)
-                    Reader.Position = &H1DC4
-                    bull2 = Reader.Position
-                    Text_cathph_02.Text = Reader.ReadUnicodeString(16)
-                    Reader.Position = &H1DE6
-                    bull3 = Reader.Position
-                    Text_cathph_03.Text = Reader.ReadUnicodeString(16)
-                    Reader.Position = &H1E08
-                    bull4 = Reader.Position
-                    Text_cathph_04.Text = Reader.ReadUnicodeString(16)
-                    Reader.Position = &H1E2A
-                    bull5 = Reader.Position
-                    Text_cathph_05.Text = Reader.ReadUnicodeString(16)
-                    Reader.Position = &H2258
-                    objet1 = Reader.Position
-                    valu_itemmii_1.Value = Reader.ReadUInt16
-                    Reader.Position = &H225A
-                    objet2 = Reader.Position
-                    valu_itemmii_2.Value = Reader.ReadUInt16
-                    Reader.Position = &H225C
-                    objet3 = Reader.Position
-                    valu_itemmii_3.Value = Reader.ReadUInt16
-                    Reader.Position = &H225E
-                    objet4 = Reader.Position
-                    valu_itemmii_4.Value = Reader.ReadUInt16
-                    Reader.Position = &H2260
-                    objet5 = Reader.Position
-                    valu_itemmii_5.Value = Reader.ReadUInt16
-                    Reader.Position = &H2262
-                    objet6 = Reader.Position
-                    valu_itemmii_6.Value = Reader.ReadUInt16
-                    Reader.Position = &H2264
-                    objet7 = Reader.Position
-                    valu_itemmii_7.Value = Reader.ReadUInt16
-                    Reader.Position = &H2266
-                    objet8 = Reader.Position
-                    valu_itemmii_8.Value = Reader.ReadUInt16
-                    Reader.Position = &H1F22
-                    exp = Reader.Position
-                    valu_experience.Value = Reader.ReadByte
-                    Reader.Position = &H1F28
-                    econom = Reader.Position
-                    valu_economy.Value = Reader.ReadInt32
-                    Reader.Position = &H2272
-                    eat = Reader.Position
-                    valu_chkfullness.Value = Reader.ReadByte
-                    Reader.Position = &H2293
-                    fullness = Reader.Position
-                    valu_fullness.Value = Reader.ReadInt8
-                    Reader.Position = &H1F59
-                    interieur = Reader.Position 'tout intérieur inventaire
-                    Reader.Position = &H1F64
-                    interieur1 = Reader.Position 'tout intérieur inventaire
-                    Reader.Position = &H1F68
-                    Sfoods = Reader.Position 'tout spécial nourriture inventaire
-                    Reader.Position = &H1F50
-                    objdiv = Reader.Position 'tout objet divers inventaire
-                    Reader.Position = &H2298
-                    alltime = Reader.Position
-                    valu_allfav_1.Value = Reader.ReadUInt16
-                    Reader.Position = &H229C
-                    alltime2 = Reader.Position
-                    valu_allfav_2.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A0
-                    fav = Reader.Position
-                    valu_fav_1.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A2
-                    fav2 = Reader.Position
-                    valu_fav_2.Value = Reader.ReadUInt16
-                    Reader.Position = &H22A4
-                    fav3 = Reader.Position
-                    valu_fav_3.Value = Reader.ReadUInt16
-                    Reader.Position = &H229E
-                    worst = Reader.Position
-                    valu_worst_1.Value = Reader.ReadUInt16
-                    Reader.Position = &H229A
-                    worst2 = Reader.Position
-                    valu_worst_2.Value = Reader.ReadUInt16
-                    Reader.Position = &H1C71
-                    copy = Reader.Position
-                    valu_copying.Value = Reader.ReadInt8
-                    Reader.Position = &H1CA0
-                    sharing = Reader.Position
-                    valu_sharing.Value = Reader.ReadUInt16
-                    Reader.Position = &H1C89
-                    couleur = Reader.Position
-                    valu_favcolor.Value = Reader.ReadInt8
-                    Reader.Position = &H22AE
-                    grow = Reader.Position
-                    valu_growkid.Value = Reader.ReadInt8
-                    Reader.Position = &H22A8
-                    appartement = Reader.Position
-                    valu_miiapart.Value = Reader.ReadInt8
-                    Reader.Position = &H22B0
-                    Splurge = Reader.Position
-                    valu_ranking_splurge.Value = Reader.ReadUInt32
-                    Reader.Position = &H1F24
-                    Pampered = Reader.Position
-                    valu_ranking_pampered.Value = Reader.ReadUInt32
-                    Reader.Position = &H299F0
-                    Miifriendr = Reader.Position
-                    Reader.Position = &H1D13
-                    MiiHC = Reader.Position
-                    valu_haircolor.Value = Reader.ReadByte
-                    Reader.Position = &H22A9
-                    House = Reader.Position
-                    valu_miihouse.Value = Reader.ReadByte
-                    Reader.Position = &H22A6
-                    Miimusic = Reader.Position
-                    valu_allmusic.Value = Reader.ReadByte
-                    Reader.Position = &H29AB8 'Mii friendlist
-                    Miiinteraction = Reader.Position
-                    Text_interaction.Text = Reader.ReadHexString(16)
-                    Reader.Position = &H29AC4 'Mii friendlist
-                    Miitarget1 = Reader.Position
-                    valu_target1.Value = Reader.ReadUInt16
-                    Reader.Position = &H29AC6 'Mii friendlist
-                    Miitarget2 = Reader.Position
-                    valu_target2.Value = Reader.ReadUInt16
-                    Reader.Position = &H29AE6 'Mii friendlist
-                    Mhouse = Reader.Position
-                    valu_miiMhouse.Value = Reader.ReadByte
-                End If
+                Reader.Position = &H1CD0 + Accessmii
+                Mii1P = Reader.Position
+                Text_firstname.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CF0 + Accessmii
+                Mii1N = Reader.Position
+                Text_lastname.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C8A + Accessmii
+                Mii1S = Reader.Position
+                Text_nickname.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1F23 + Accessmii
+                Mii1L = Reader.Position
+                valu_level.Value = Reader.ReadByte
+                Reader.Position = &H1E92 + Accessmii
+                Mii1PP = Reader.Position
+                Text_pronun_firstname.Text = Reader.ReadUnicodeString(30)
+                Reader.Position = &H1ED4 + Accessmii
+                Mii1NP = Reader.Position
+                Text_pronun_lastname.Text = Reader.ReadUnicodeString(30)
+                Reader.Position = &H1E50 + Accessmii
+                Mii1SP = Reader.Position
+                Text_pronun_nickname.Text = Reader.ReadUnicodeString(20)
+                Reader.Position = &H1F2D + Accessmii
+                Mii1R = Reader.Position
+                valu_relationyou.Value = Reader.ReadByte
+                Reader.Position = &H1CB8 + Accessmii
+                Mii1C = Reader.Position
+                Text_creator.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1D20 + Accessmii
+                bull1 = Reader.Position
+                Text_cathph_01.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1DC4 + Accessmii
+                bull2 = Reader.Position
+                Text_cathph_02.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1DE6 + Accessmii
+                bull3 = Reader.Position
+                Text_cathph_03.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1E08 + Accessmii
+                bull4 = Reader.Position
+                Text_cathph_04.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1E2A + Accessmii
+                bull5 = Reader.Position
+                Text_cathph_05.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H2258 + Accessmii
+                objet1 = Reader.Position
+                valu_itemmii_1.Value = Reader.ReadUInt16
+                Reader.Position = &H225A + Accessmii
+                objet2 = Reader.Position
+                valu_itemmii_2.Value = Reader.ReadUInt16
+                Reader.Position = &H225C + Accessmii
+                objet3 = Reader.Position
+                valu_itemmii_3.Value = Reader.ReadUInt16
+                Reader.Position = &H225E + Accessmii
+                objet4 = Reader.Position
+                valu_itemmii_4.Value = Reader.ReadUInt16
+                Reader.Position = &H2260 + Accessmii
+                objet5 = Reader.Position
+                valu_itemmii_5.Value = Reader.ReadUInt16
+                Reader.Position = &H2262 + Accessmii
+                objet6 = Reader.Position
+                valu_itemmii_6.Value = Reader.ReadUInt16
+                Reader.Position = &H2264 + Accessmii
+                objet7 = Reader.Position
+                valu_itemmii_7.Value = Reader.ReadUInt16
+                Reader.Position = &H2266 + Accessmii
+                objet8 = Reader.Position
+                valu_itemmii_8.Value = Reader.ReadUInt16
+                Reader.Position = &H1F22 + Accessmii
+                exp = Reader.Position
+                valu_experience.Value = Reader.ReadByte
+                Reader.Position = &H1F28 + Accessmii
+                econom = Reader.Position
+                valu_economy.Value = Reader.ReadInt32
+                Reader.Position = &H2272 + Accessmii
+                eat = Reader.Position
+                valu_chkfullness.Value = Reader.ReadByte
+                Reader.Position = &H2293 + Accessmii
+                fullness = Reader.Position
+                valu_fullness.Value = Reader.ReadInt8
+                Reader.Position = &H1F59 + Accessmii
+                interieur = Reader.Position 'tout intérieur inventaire
+                Reader.Position = &H1F64 + Accessmii
+                interieur1 = Reader.Position 'tout intérieur inventaire
+                Reader.Position = &H1F68 + Accessmii
+                Sfoods = Reader.Position 'tout spécial nourriture inventaire
+                Reader.Position = &H1F50 + Accessmii
+                objdiv = Reader.Position 'tout objet divers inventaire
+                Reader.Position = &H2298 + Accessmii
+                alltime = Reader.Position
+                valu_allfav_1.Value = Reader.ReadUInt16
+                Reader.Position = &H229C + Accessmii
+                alltime2 = Reader.Position
+                valu_allfav_2.Value = Reader.ReadUInt16
+                Reader.Position = &H22A0 + Accessmii
+                fav = Reader.Position
+                valu_fav_1.Value = Reader.ReadUInt16
+                Reader.Position = &H22A2 + Accessmii
+                fav2 = Reader.Position
+                valu_fav_2.Value = Reader.ReadUInt16
+                Reader.Position = &H22A4 + Accessmii
+                fav3 = Reader.Position
+                valu_fav_3.Value = Reader.ReadUInt16
+                Reader.Position = &H229E + Accessmii
+                worst = Reader.Position
+                valu_worst_1.Value = Reader.ReadUInt16
+                Reader.Position = &H229A + Accessmii
+                worst2 = Reader.Position
+                valu_worst_2.Value = Reader.ReadUInt16
+                Reader.Position = &H1C71 + Accessmii
+                copy = Reader.Position
+                valu_copying.Value = Reader.ReadInt8
+                Reader.Position = &H1CA0 + Accessmii
+                sharing = Reader.Position
+                valu_sharing.Value = Reader.ReadUInt16
+                Reader.Position = &H1C89 + Accessmii
+                couleur = Reader.Position
+                valu_favcolor.Value = Reader.ReadInt8
+                Reader.Position = &H22AE + Accessmii
+                grow = Reader.Position
+                valu_growkid.Value = Reader.ReadInt8
+                Reader.Position = &H22A8 + Accessmii
+                appartement = Reader.Position
+                valu_miiapart.Value = Reader.ReadInt8
+                Reader.Position = &H22B0 + Accessmii
+                Splurge = Reader.Position
+                valu_ranking_splurge.Value = Reader.ReadUInt32
+                Reader.Position = &H1F24 + Accessmii
+                Pampered = Reader.Position
+                valu_ranking_pampered.Value = Reader.ReadUInt32
+                Reader.Position = &H299F0 + Accessfriends 'Mii friendlist
+                Miifriendr = Reader.Position
+                Reader.Position = &H1D13 + Accessmii
+                MiiHC = Reader.Position
+                valu_haircolor.Value = Reader.ReadByte
+                Reader.Position = &H22A9 + Accessmii
+                House = Reader.Position
+                valu_miihouse.Value = Reader.ReadByte
+                Reader.Position = &H22A6 + Accessmii
+                Miimusic = Reader.Position
+                valu_allmusic.Value = Reader.ReadByte
+                Reader.Position = &H29AB8 + Accessfriends 'Mii friendlist
+                Miiinteraction = Reader.Position
+                Text_interaction.Text = Reader.ReadHexString(16)
+                Reader.Position = &H29AC4 + Accessfriends  'Mii friendlist
+                Miitarget1 = Reader.Position
+                valu_target1.Value = Reader.ReadUInt16
+                Reader.Position = &H29AC6 + Accessfriends  'Mii friendlist
+                Miitarget2 = Reader.Position
+                valu_target2.Value = Reader.ReadUInt16
+                Reader.Position = &H29AE6 + Accessfriends  'Mii friendlist
+                Mhouse = Reader.Position
+                valu_miiMhouse.Value = Reader.ReadByte
+            End If
+            If Filever_text.Text = "JP" Then
+                Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+                Reader.Position = &H1CA0 + Accessmii
+                Mii1P = Reader.Position
+                Text_firstname.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1CC0 + Accessmii
+                Mii1N = Reader.Position
+                Text_lastname.Text = Reader.ReadUnicodeString(15)
+                Reader.Position = &H1C5A + Accessmii
+                Mii1S = Reader.Position
+                Text_nickname.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1E23 + Accessmii
+                Mii1L = Reader.Position
+                valu_level.Value = Reader.ReadByte
+                Reader.Position = &H1E2D + Accessmii
+                Mii1R = Reader.Position
+                valu_relationyou.Value = Reader.ReadByte
+                Reader.Position = &H1C88 + Accessmii
+                Mii1C = Reader.Position
+                Text_creator.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1CE4 + Accessmii
+                bullj1 = Reader.Position
+                Text_cathph_J1.Text = Reader.ReadUnicodeString(4)
+                Reader.Position = &H1CF0 + Accessmii
+                bullj2 = Reader.Position
+                Text_cathph_J2.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1D94 + Accessmii
+                bull2 = Reader.Position
+                Text_cathph_02.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1DB6 + Accessmii
+                bull3 = Reader.Position
+                Text_cathph_03.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1DD8 + Accessmii
+                bull4 = Reader.Position
+                Text_cathph_04.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1DFA + Accessmii
+                bull5 = Reader.Position
+                Text_cathph_05.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H2158 + Accessmii
+                objet1 = Reader.Position
+                valu_itemmii_1.Value = Reader.ReadUInt16
+                Reader.Position = &H215A + Accessmii
+                objet2 = Reader.Position
+                valu_itemmii_2.Value = Reader.ReadUInt16
+                Reader.Position = &H215C + Accessmii
+                objet3 = Reader.Position
+                valu_itemmii_3.Value = Reader.ReadUInt16
+                Reader.Position = &H215E + Accessmii
+                objet4 = Reader.Position
+                valu_itemmii_4.Value = Reader.ReadUInt16
+                Reader.Position = &H2160 + Accessmii
+                objet5 = Reader.Position
+                valu_itemmii_5.Value = Reader.ReadUInt16
+                Reader.Position = &H2162 + Accessmii
+                objet6 = Reader.Position
+                valu_itemmii_6.Value = Reader.ReadUInt16
+                Reader.Position = &H2164 + Accessmii
+                objet7 = Reader.Position
+                valu_itemmii_7.Value = Reader.ReadUInt16
+                Reader.Position = &H2166 + Accessmii
+                objet8 = Reader.Position
+                valu_itemmii_8.Value = Reader.ReadUInt16
+                Reader.Position = &H1E22 + Accessmii
+                exp = Reader.Position
+                valu_experience.Value = Reader.ReadByte
+                Reader.Position = &H1E28 + Accessmii
+                econom = Reader.Position
+                valu_economy.Value = Reader.ReadInt32
+                Reader.Position = &H2172 + Accessmii
+                eat = Reader.Position
+                valu_chkfullness.Value = Reader.ReadByte
+                Reader.Position = &H2193 + Accessmii
+                fullness = Reader.Position
+                valu_fullness.Value = Reader.ReadInt8
+                Reader.Position = &H1E59 + Accessmii
+                interieur = Reader.Position 'tout intérieur inventaire
+                Reader.Position = &H1E64 + Accessmii
+                interieur1 = Reader.Position 'tout intérieur inventaire
+                Reader.Position = &H1E68 + Accessmii
+                Sfoods = Reader.Position 'tout spécial nourriture inventaire
+                Reader.Position = &H1E50 + Accessmii
+                objdiv = Reader.Position 'tout objet divers inventaire
+                Reader.Position = &H2198 + Accessmii
+                alltime = Reader.Position
+                valu_allfav_1.Value = Reader.ReadUInt16
+                Reader.Position = &H219C + Accessmii
+                alltime2 = Reader.Position
+                valu_allfav_2.Value = Reader.ReadUInt16
+                Reader.Position = &H21A0 + Accessmii
+                fav = Reader.Position
+                valu_fav_1.Value = Reader.ReadUInt16
+                Reader.Position = &H21A2 + Accessmii
+                fav2 = Reader.Position
+                valu_fav_2.Value = Reader.ReadUInt16
+                Reader.Position = &H21A4 + Accessmii
+                fav3 = Reader.Position
+                valu_fav_3.Value = Reader.ReadUInt16
+                Reader.Position = &H219E + Accessmii
+                worst = Reader.Position
+                valu_worst_1.Value = Reader.ReadUInt16
+                Reader.Position = &H219A + Accessmii
+                worst2 = Reader.Position
+                valu_worst_2.Value = Reader.ReadUInt16
+                Reader.Position = &H1C41 + Accessmii
+                copy = Reader.Position
+                valu_copying.Value = Reader.ReadInt8
+                Reader.Position = &H1C70 + Accessmii
+                sharing = Reader.Position
+                valu_sharing.Value = Reader.ReadUInt16
+                Reader.Position = &H1C59 + Accessmii
+                couleur = Reader.Position
+                valu_favcolor.Value = Reader.ReadInt8
+                Reader.Position = &H21AE + Accessmii
+                grow = Reader.Position
+                valu_growkid.Value = Reader.ReadInt8
+                Reader.Position = &H21A8 + Accessmii
+                appartement = Reader.Position
+                valu_miiapart.Value = Reader.ReadInt8
+                Reader.Position = &H21B0 + Accessmii
+                Splurge = Reader.Position
+                valu_ranking_splurge.Value = Reader.ReadUInt32
+                Reader.Position = &H1E24 + Accessmii
+                Pampered = Reader.Position
+                valu_ranking_pampered.Value = Reader.ReadUInt32
+                '------
+                Reader.Position = &H299F0 + Accessfriends 'Mii friendlist
+                Miifriendr = Reader.Position
+                '------
+                Reader.Position = &H1C13 + Accessmii
+                MiiHC = Reader.Position
+                valu_haircolor.Value = Reader.ReadByte
+                Reader.Position = &H21A9 + Accessmii
+                House = Reader.Position
+                valu_miihouse.Value = Reader.ReadByte
+                Reader.Position = &H21A6 + Accessmii
+                Miimusic = Reader.Position
+                valu_allmusic.Value = Reader.ReadByte
+                '------
+                Reader.Position = &H29AB8 + Accessfriends 'Mii friendlist
+                Miiinteraction = Reader.Position
+                Text_interaction.Text = Reader.ReadHexString(16)
+                Reader.Position = &H29AC4 + Accessfriends  'Mii friendlist
+                Miitarget1 = Reader.Position
+                valu_target1.Value = Reader.ReadUInt16
+                Reader.Position = &H29AC6 + Accessfriends  'Mii friendlist
+                Miitarget2 = Reader.Position
+                valu_target2.Value = Reader.ReadUInt16
+                Reader.Position = &H29AE6 + Accessfriends  'Mii friendlist
+                Mhouse = Reader.Position
+                valu_miiMhouse.Value = Reader.ReadByte
+                '------
             End If
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
@@ -899,7 +1055,90 @@ Public Class TL_SaveEditor
 
     Public Sub writeMii()
         Try
+            Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+            For i As Integer = 0 To 29
+                Writer.Position = Mii1P + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = Mii1P
+            Writer.WriteUnicodeString(Text_firstname.Text)
+            For i As Integer = 0 To 29
+                Writer.Position = Mii1N + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = Mii1N
+            Writer.WriteUnicodeString(Text_lastname.Text)
+            Writer.Position = objet1
+            Writer.WriteUInt16(valu_itemmii_1.Value)
+            Writer.Position = objet2
+            Writer.WriteUInt16(valu_itemmii_2.Value)
+            Writer.Position = objet3
+            Writer.WriteUInt16(valu_itemmii_3.Value)
+            Writer.Position = objet4
+            Writer.WriteUInt16(valu_itemmii_4.Value)
+            Writer.Position = objet5
+            Writer.WriteUInt16(valu_itemmii_5.Value)
+            Writer.Position = objet6
+            Writer.WriteUInt16(valu_itemmii_6.Value)
+            Writer.Position = objet7
+            Writer.WriteUInt16(valu_itemmii_7.Value)
+            Writer.Position = objet8
+            Writer.WriteUInt16(valu_itemmii_8.Value)
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                For i As Integer = 0 To 59
+                    Writer.Position = Mii1PP + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = Mii1PP
+                Writer.WriteUnicodeString(Text_pronun_firstname.Text)
+                For i As Integer = 0 To 59
+                    Writer.Position = Mii1NP + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = Mii1NP
+                Writer.WriteUnicodeString(Text_pronun_lastname.Text)
+                For i As Integer = 0 To 31
+                    Writer.Position = bull1 + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = bull1
+                Writer.WriteUnicodeString(Text_cathph_01.Text)
+                For i As Integer = 0 To 31
+                    Writer.Position = bull2 + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = bull2
+                Writer.WriteUnicodeString(Text_cathph_02.Text)
+                For i As Integer = 0 To 31
+                    Writer.Position = bull3 + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = bull3
+                Writer.WriteUnicodeString(Text_cathph_03.Text)
+                For i As Integer = 0 To 31
+                    Writer.Position = bull4 + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = bull4
+                Writer.WriteUnicodeString(Text_cathph_04.Text)
+                For i As Integer = 0 To 31
+                    Writer.Position = bull5 + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = bull5
+                Writer.WriteUnicodeString(Text_cathph_05.Text)
+            End If
+            If Filever_text.Text = "JP" Then
 
+            End If
+
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            fs.Position = Mii1L
+            fs.WriteByte(valu_level.Value)
+            fs.Position = Mii1R
+            fs.WriteByte(valu_relationyou.Value)
+            fs.Position = exp
+            fs.WriteByte(valu_experience.Value)
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Failed to save changes on this Mii, make sure you have opened a save file, or report this issue"
@@ -963,6 +1202,10 @@ Public Class TL_SaveEditor
             Icon_pronun_nickname.Visible = True
             Text_islandname.MaxLength = 10
             Text_pronun_island.MaxLength = 20
+            Panel_cathph_01.Visible = True
+            Icon_cathph_01.Visible = True
+            Panel_cathph_J1.Visible = False
+            Panel_cathph_J2.Visible = False
             Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
         ElseIf Filever_text.Text = "EU" Then
             Filever_text.Text = "JP"
@@ -978,6 +1221,10 @@ Public Class TL_SaveEditor
             Icon_pronun_nickname.Visible = False
             Text_islandname.MaxLength = 10
             Text_pronun_island.MaxLength = 0
+            Panel_cathph_01.Visible = False
+            Icon_cathph_01.Visible = False
+            Panel_cathph_J1.Visible = True
+            Panel_cathph_J2.Visible = True
             Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase_j
         ElseIf Filever_text.Text = "JP" Then
             Filever_text.Text = "KR"
@@ -993,6 +1240,10 @@ Public Class TL_SaveEditor
             Icon_pronun_nickname.Visible = True
             Text_islandname.MaxLength = 10
             Text_pronun_island.MaxLength = 20
+            Panel_cathph_01.Visible = True
+            Icon_cathph_01.Visible = True
+            Panel_cathph_J1.Visible = False
+            Panel_cathph_J2.Visible = False
             Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
         ElseIf Filever_text.Text = "KR" Then
             Filever_text.Text = "US"
@@ -1008,6 +1259,10 @@ Public Class TL_SaveEditor
             Icon_pronun_nickname.Visible = True
             Text_islandname.MaxLength = 10
             Text_pronun_island.MaxLength = 20
+            Panel_cathph_01.Visible = True
+            Icon_cathph_01.Visible = True
+            Panel_cathph_J1.Visible = False
+            Panel_cathph_J2.Visible = False
             Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
         End If
         Icon_changelog.Image = TLSE_logo.Image
@@ -2406,6 +2661,7 @@ Public Class TL_SaveEditor
             Menu_panel.Width = My.Settings.Parasetting_menu
             Setting_music.Checked = My.Settings.Parasetting_music
             Select_music.SelectedItem = My.Settings.Parasetting_musicsel
+            Filever_text.Text = My.Settings.Parasetting_filever
         Catch ex As Exception
         End Try
         If Menu_panel.Width = 150 Then
@@ -2423,6 +2679,7 @@ Public Class TL_SaveEditor
         My.Settings.Parasetting_menu = Menu_panel.Width
         My.Settings.Parasetting_music = Setting_music.Checked
         My.Settings.Parasetting_musicsel = Select_music.SelectedItem
+        My.Settings.Parasetting_filever = Filever_text.Text
     End Sub
 
     Private Sub Setting_hidden_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_hidden.CheckedChanged
@@ -3306,7 +3563,7 @@ Public Class TL_SaveEditor
 
     Private Sub Check_fullness_CheckedChanged(sender As Object, e As EventArgs) Handles Check_fullness.CheckedChanged
         valu_fullness.Value = 0
-        valu_chkfullness.value = 0
+        valu_chkfullness.Value = 0
     End Sub
 
     Private Sub valu_chkfullness_ValueChanged(sender As Object, e As EventArgs) Handles valu_chkfullness.ValueChanged
@@ -4124,6 +4381,412 @@ Public Class TL_SaveEditor
         Select_interaction.SelectedItem = Select_interaction.Items.Item(0)
         Select_emotions.SelectedItem = Select_emotions.Items.Item(0)
         Check_fullness.Checked = False
+        If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+            If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
+                Accessmii = &H0
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
+                Accessmii = &H660
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
+                Accessmii = &H660 * 2
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
+                Accessmii = &H660 * 3
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
+                Accessmii = &H660 * 4
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
+                Accessmii = &H660 * 5
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
+                Accessmii = &H660 * 6
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
+                Accessmii = &H660 * 7
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
+                Accessmii = &H660 * 8
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
+                Accessmii = &H660 * 9
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
+                Accessmii = &H660 * 10
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
+                Accessmii = &H660 * 11
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
+                Accessmii = &H660 * 12
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
+                Accessmii = &H660 * 13
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
+                Accessmii = &H660 * 14
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
+                Accessmii = &H660 * 15
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
+                Accessmii = &H660 * 16
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
+                Accessmii = &H660 * 17
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
+                Accessmii = &H660 * 18
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
+                Accessmii = &H660 * 19
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
+                Accessmii = &H660 * 20
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
+                Accessmii = &H660 * 21
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
+                Accessmii = &H660 * 22
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
+                Accessmii = &H660 * 23
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
+                Accessmii = &H660 * 24
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
+                Accessmii = &H660 * 25
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
+                Accessmii = &H660 * 26
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
+                Accessmii = &H660 * 27
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
+                Accessmii = &H660 * 28
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
+                Accessmii = &H660 * 29
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
+                Accessmii = &H660 * 30
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
+                Accessmii = &H660 * 31
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
+                Accessmii = &H660 * 32
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
+                Accessmii = &H660 * 33
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
+                Accessmii = &H660 * 34
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
+                Accessmii = &H660 * 35
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
+                Accessmii = &H660 * 36
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
+                Accessmii = &H660 * 37
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
+                Accessmii = &H660 * 38
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
+                Accessmii = &H660 * 39
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
+                Accessmii = &H660 * 40
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
+                Accessmii = &H660 * 41
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
+                Accessmii = &H660 * 42
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
+                Accessmii = &H660 * 43
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
+                Accessmii = &H660 * 44
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
+                Accessmii = &H660 * 45
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
+                Accessmii = &H660 * 46
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
+                Accessmii = &H660 * 47
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
+                Accessmii = &H660 * 48
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
+                Accessmii = &H660 * 49
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(50) Then
+                Accessmii = &H660 * 50
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(51) Then
+                Accessmii = &H660 * 51
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(52) Then
+                Accessmii = &H660 * 52
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(53) Then
+                Accessmii = &H660 * 53
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(54) Then
+                Accessmii = &H660 * 54
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(55) Then
+                Accessmii = &H660 * 55
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(56) Then
+                Accessmii = &H660 * 56
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(57) Then
+                Accessmii = &H660 * 57
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(58) Then
+                Accessmii = &H660 * 58
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(59) Then
+                Accessmii = &H660 * 59
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(60) Then
+                Accessmii = &H660 * 60
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(61) Then
+                Accessmii = &H660 * 61
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(62) Then
+                Accessmii = &H660 * 62
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(63) Then
+                Accessmii = &H660 * 63
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(64) Then
+                Accessmii = &H660 * 64
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(65) Then
+                Accessmii = &H660 * 65
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(66) Then
+                Accessmii = &H660 * 66
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(67) Then
+                Accessmii = &H660 * 67
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(68) Then
+                Accessmii = &H660 * 68
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(69) Then
+                Accessmii = &H660 * 69
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(70) Then
+                Accessmii = &H660 * 70
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(71) Then
+                Accessmii = &H660 * 71
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(72) Then
+                Accessmii = &H660 * 72
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(73) Then
+                Accessmii = &H660 * 73
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(74) Then
+                Accessmii = &H660 * 74
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(75) Then
+                Accessmii = &H660 * 75
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(76) Then
+                Accessmii = &H660 * 76
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(77) Then
+                Accessmii = &H660 * 77
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(78) Then
+                Accessmii = &H660 * 78
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(79) Then
+                Accessmii = &H660 * 79
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(80) Then
+                Accessmii = &H660 * 80
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(81) Then
+                Accessmii = &H660 * 81
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(82) Then
+                Accessmii = &H660 * 82
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(83) Then
+                Accessmii = &H660 * 83
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(84) Then
+                Accessmii = &H660 * 84
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(85) Then
+                Accessmii = &H660 * 85
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(86) Then
+                Accessmii = &H660 * 86
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(87) Then
+                Accessmii = &H660 * 87
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(88) Then
+                Accessmii = &H660 * 88
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(89) Then
+                Accessmii = &H660 * 89
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(90) Then
+                Accessmii = &H660 * 90
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(91) Then
+                Accessmii = &H660 * 91
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(92) Then
+                Accessmii = &H660 * 92
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(93) Then
+                Accessmii = &H660 * 93
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(94) Then
+                Accessmii = &H660 * 94
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(95) Then
+                Accessmii = &H660 * 95
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(96) Then
+                Accessmii = &H660 * 96
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(97) Then
+                Accessmii = &H660 * 97
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(98) Then
+                Accessmii = &H660 * 98
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(99) Then
+                Accessmii = &H660 * 99
+            End If
+        End If
+        If Filever_text.Text = "JP" Then
+            If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
+                Accessmii = &H0
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
+                Accessmii = &H590
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
+                Accessmii = &H590 * 2
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
+                Accessmii = &H590 * 3
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
+                Accessmii = &H590 * 4
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
+                Accessmii = &H590 * 5
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
+                Accessmii = &H590 * 6
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
+                Accessmii = &H590 * 7
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
+                Accessmii = &H590 * 8
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
+                Accessmii = &H590 * 9
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
+                Accessmii = &H590 * 10
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
+                Accessmii = &H590 * 11
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
+                Accessmii = &H590 * 12
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
+                Accessmii = &H590 * 13
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
+                Accessmii = &H590 * 14
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
+                Accessmii = &H590 * 15
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
+                Accessmii = &H590 * 16
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
+                Accessmii = &H590 * 17
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
+                Accessmii = &H590 * 18
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
+                Accessmii = &H590 * 19
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
+                Accessmii = &H590 * 20
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
+                Accessmii = &H590 * 21
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
+                Accessmii = &H590 * 22
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
+                Accessmii = &H590 * 23
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
+                Accessmii = &H590 * 24
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
+                Accessmii = &H590 * 25
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
+                Accessmii = &H590 * 26
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
+                Accessmii = &H590 * 27
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
+                Accessmii = &H590 * 28
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
+                Accessmii = &H590 * 29
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
+                Accessmii = &H590 * 30
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
+                Accessmii = &H590 * 31
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
+                Accessmii = &H590 * 32
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
+                Accessmii = &H590 * 33
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
+                Accessmii = &H590 * 34
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
+                Accessmii = &H590 * 35
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
+                Accessmii = &H590 * 36
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
+                Accessmii = &H590 * 37
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
+                Accessmii = &H590 * 38
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
+                Accessmii = &H590 * 39
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
+                Accessmii = &H590 * 40
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
+                Accessmii = &H590 * 41
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
+                Accessmii = &H590 * 42
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
+                Accessmii = &H590 * 43
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
+                Accessmii = &H590 * 44
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
+                Accessmii = &H590 * 45
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
+                Accessmii = &H590 * 46
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
+                Accessmii = &H590 * 47
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
+                Accessmii = &H590 * 48
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
+                Accessmii = &H590 * 49
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(50) Then
+                Accessmii = &H590 * 50
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(51) Then
+                Accessmii = &H590 * 51
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(52) Then
+                Accessmii = &H590 * 52
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(53) Then
+                Accessmii = &H590 * 53
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(54) Then
+                Accessmii = &H590 * 54
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(55) Then
+                Accessmii = &H590 * 55
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(56) Then
+                Accessmii = &H590 * 56
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(57) Then
+                Accessmii = &H590 * 57
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(58) Then
+                Accessmii = &H590 * 58
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(59) Then
+                Accessmii = &H590 * 59
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(60) Then
+                Accessmii = &H590 * 60
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(61) Then
+                Accessmii = &H590 * 61
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(62) Then
+                Accessmii = &H590 * 62
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(63) Then
+                Accessmii = &H590 * 63
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(64) Then
+                Accessmii = &H590 * 64
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(65) Then
+                Accessmii = &H590 * 65
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(66) Then
+                Accessmii = &H590 * 66
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(67) Then
+                Accessmii = &H590 * 67
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(68) Then
+                Accessmii = &H590 * 68
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(69) Then
+                Accessmii = &H590 * 69
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(70) Then
+                Accessmii = &H590 * 70
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(71) Then
+                Accessmii = &H590 * 71
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(72) Then
+                Accessmii = &H590 * 72
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(73) Then
+                Accessmii = &H590 * 73
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(74) Then
+                Accessmii = &H590 * 74
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(75) Then
+                Accessmii = &H590 * 75
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(76) Then
+                Accessmii = &H590 * 76
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(77) Then
+                Accessmii = &H590 * 77
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(78) Then
+                Accessmii = &H590 * 78
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(79) Then
+                Accessmii = &H590 * 79
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(80) Then
+                Accessmii = &H590 * 80
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(81) Then
+                Accessmii = &H590 * 81
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(82) Then
+                Accessmii = &H590 * 82
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(83) Then
+                Accessmii = &H590 * 83
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(84) Then
+                Accessmii = &H590 * 84
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(85) Then
+                Accessmii = &H590 * 85
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(86) Then
+                Accessmii = &H590 * 86
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(87) Then
+                Accessmii = &H590 * 87
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(88) Then
+                Accessmii = &H590 * 88
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(89) Then
+                Accessmii = &H590 * 89
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(90) Then
+                Accessmii = &H590 * 90
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(91) Then
+                Accessmii = &H590 * 91
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(92) Then
+                Accessmii = &H590 * 92
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(93) Then
+                Accessmii = &H590 * 93
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(94) Then
+                Accessmii = &H590 * 94
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(95) Then
+                Accessmii = &H590 * 95
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(96) Then
+                Accessmii = &H590 * 96
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(97) Then
+                Accessmii = &H590 * 97
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(98) Then
+                Accessmii = &H590 * 98
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(99) Then
+                Accessmii = &H590 * 99
+            End If
+        End If
         readMii()
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
             Text_editing_mii.Text = "editing " & Text_nickname.Text & " ..."

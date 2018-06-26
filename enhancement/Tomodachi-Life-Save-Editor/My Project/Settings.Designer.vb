@@ -78,63 +78,75 @@ Namespace My
             End Set
         End Property
         
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("")> _
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property Parasetting_hidden() As String
             Get
-                Return CType(Me("Parasetting_hidden"), String)
+                Return CType(Me("Parasetting_hidden"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("Parasetting_hidden") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property Parasetting_filepath() As String
             Get
-                Return CType(Me("Parasetting_filepath"), String)
+                Return CType(Me("Parasetting_filepath"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("Parasetting_filepath") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property Parasetting_ckupdate() As String
             Get
-                Return CType(Me("Parasetting_ckupdate"), String)
+                Return CType(Me("Parasetting_ckupdate"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("Parasetting_ckupdate") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property Parasetting_language() As String
             Get
-                Return CType(Me("Parasetting_language"), String)
+                Return CType(Me("Parasetting_language"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("Parasetting_language") = value
             End Set
         End Property
-
-        <Global.System.Configuration.UserScopedSettingAttribute(), _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(), _
-         Global.System.Configuration.DefaultSettingValueAttribute("")> _
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
         Public Property Parasetting_musicsel() As String
             Get
-                Return CType(Me("Parasetting_musicsel"), String)
+                Return CType(Me("Parasetting_musicsel"),String)
             End Get
-            Set(value As String)
+            Set
                 Me("Parasetting_musicsel") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Parasetting_filever() As String
+            Get
+                Return CType(Me("Parasetting_filever"),String)
+            End Get
+            Set
+                Me("Parasetting_filever") = value
             End Set
         End Property
     End Class

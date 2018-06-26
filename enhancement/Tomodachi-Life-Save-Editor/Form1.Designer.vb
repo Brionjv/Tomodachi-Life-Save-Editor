@@ -314,21 +314,21 @@ Partial Class TL_SaveEditor
         Me.valu_allmusic = New System.Windows.Forms.NumericUpDown()
         Me.Text_unlock_music = New System.Windows.Forms.Label()
         Me.Panel_cathphrase = New System.Windows.Forms.Panel()
-        Me.Panel22 = New System.Windows.Forms.Panel()
+        Me.Panel_cathph_05 = New System.Windows.Forms.Panel()
         Me.Text_cathph_05 = New System.Windows.Forms.TextBox()
-        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.Panel_cathph_04 = New System.Windows.Forms.Panel()
         Me.Text_cathph_04 = New System.Windows.Forms.TextBox()
-        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.Panel_cathph_03 = New System.Windows.Forms.Panel()
         Me.Text_cathph_03 = New System.Windows.Forms.TextBox()
-        Me.Panel19 = New System.Windows.Forms.Panel()
+        Me.Panel_cathph_02 = New System.Windows.Forms.Panel()
         Me.Text_cathph_02 = New System.Windows.Forms.TextBox()
-        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.Panel_cathph_01 = New System.Windows.Forms.Panel()
         Me.Text_cathph_01 = New System.Windows.Forms.TextBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.Icon_cathph_05 = New System.Windows.Forms.PictureBox()
+        Me.Icon_cathph_04 = New System.Windows.Forms.PictureBox()
+        Me.Icon_cathph_03 = New System.Windows.Forms.PictureBox()
+        Me.Icon_cathph_02 = New System.Windows.Forms.PictureBox()
+        Me.Icon_cathph_01 = New System.Windows.Forms.PictureBox()
         Me.Tab_mii_status = New System.Windows.Forms.TabPage()
         Me.Panel_edit_fullness = New System.Windows.Forms.Panel()
         Me.Icon_edit_full_100 = New System.Windows.Forms.PictureBox()
@@ -505,6 +505,10 @@ Partial Class TL_SaveEditor
         Me.Text_save_mii = New System.Windows.Forms.Label()
         Me.Panel_select_mii = New System.Windows.Forms.Panel()
         Me.Select_mii = New System.Windows.Forms.ComboBox()
+        Me.Panel_cathph_J2 = New System.Windows.Forms.Panel()
+        Me.Text_cathph_J2 = New System.Windows.Forms.TextBox()
+        Me.Panel_cathph_J1 = New System.Windows.Forms.Panel()
+        Me.Text_cathph_J1 = New System.Windows.Forms.TextBox()
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -718,16 +722,16 @@ Partial Class TL_SaveEditor
         Me.Fea_unlock_music.SuspendLayout()
         CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_cathphrase.SuspendLayout()
-        Me.Panel22.SuspendLayout()
-        Me.Panel21.SuspendLayout()
-        Me.Panel20.SuspendLayout()
-        Me.Panel19.SuspendLayout()
-        Me.Panel18.SuspendLayout()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_cathph_05.SuspendLayout()
+        Me.Panel_cathph_04.SuspendLayout()
+        Me.Panel_cathph_03.SuspendLayout()
+        Me.Panel_cathph_02.SuspendLayout()
+        Me.Panel_cathph_01.SuspendLayout()
+        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tab_mii_status.SuspendLayout()
         Me.Panel_edit_fullness.SuspendLayout()
         CType(Me.Icon_edit_full_100, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -819,6 +823,8 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_save_mii.SuspendLayout()
         Me.Panel_select_mii.SuspendLayout()
+        Me.Panel_cathph_J2.SuspendLayout()
+        Me.Panel_cathph_J1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_header
@@ -2716,8 +2722,9 @@ Partial Class TL_SaveEditor
         '
         Me.Tab_mii_edit.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_edit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_musics)
+        Me.Tab_mii_edit.Controls.Add(Me.Panel_cathphrase)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
-        Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_inventory)
         Me.Tab_mii_edit.Controls.Add(Me.valu_miiMhouse)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_miiMhouse)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_haircolor)
@@ -2763,8 +2770,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_edit.Controls.Add(Me.Title_favcolor)
         Me.Tab_mii_edit.Controls.Add(Me.Title_firstname)
         Me.Tab_mii_edit.Controls.Add(Me.Text_pronun_firstname)
-        Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_musics)
-        Me.Tab_mii_edit.Controls.Add(Me.Panel_cathphrase)
+        Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_inventory)
         Me.Tab_mii_edit.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Tab_mii_edit.ImageIndex = 0
         Me.Tab_mii_edit.Location = New System.Drawing.Point(4, 23)
@@ -4072,30 +4078,32 @@ Partial Class TL_SaveEditor
         'Panel_cathphrase
         '
         Me.Panel_cathphrase.BackColor = System.Drawing.Color.Azure
-        Me.Panel_cathphrase.Controls.Add(Me.Panel22)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel21)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel20)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel19)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel18)
-        Me.Panel_cathphrase.Controls.Add(Me.PictureBox22)
-        Me.Panel_cathphrase.Controls.Add(Me.PictureBox21)
-        Me.Panel_cathphrase.Controls.Add(Me.PictureBox20)
-        Me.Panel_cathphrase.Controls.Add(Me.PictureBox19)
-        Me.Panel_cathphrase.Controls.Add(Me.PictureBox18)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J1)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J2)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_05)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_04)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_03)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_02)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_01)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_05)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_04)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_03)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_02)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_01)
         Me.Panel_cathphrase.Location = New System.Drawing.Point(16, 52)
         Me.Panel_cathphrase.Name = "Panel_cathphrase"
         Me.Panel_cathphrase.Size = New System.Drawing.Size(190, 224)
         Me.Panel_cathphrase.TabIndex = 176
         Me.Panel_cathphrase.Visible = False
         '
-        'Panel22
+        'Panel_cathph_05
         '
-        Me.Panel22.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel22.Controls.Add(Me.Text_cathph_05)
-        Me.Panel22.Location = New System.Drawing.Point(50, 175)
-        Me.Panel22.Name = "Panel22"
-        Me.Panel22.Size = New System.Drawing.Size(134, 17)
-        Me.Panel22.TabIndex = 182
+        Me.Panel_cathph_05.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_05.Controls.Add(Me.Text_cathph_05)
+        Me.Panel_cathph_05.Location = New System.Drawing.Point(50, 189)
+        Me.Panel_cathph_05.Name = "Panel_cathph_05"
+        Me.Panel_cathph_05.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_05.TabIndex = 182
         '
         'Text_cathph_05
         '
@@ -4107,14 +4115,14 @@ Partial Class TL_SaveEditor
         Me.Text_cathph_05.TabIndex = 166
         Me.Text_cathph_05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Panel21
+        'Panel_cathph_04
         '
-        Me.Panel21.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel21.Controls.Add(Me.Text_cathph_04)
-        Me.Panel21.Location = New System.Drawing.Point(50, 138)
-        Me.Panel21.Name = "Panel21"
-        Me.Panel21.Size = New System.Drawing.Size(134, 17)
-        Me.Panel21.TabIndex = 181
+        Me.Panel_cathph_04.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_04.Controls.Add(Me.Text_cathph_04)
+        Me.Panel_cathph_04.Location = New System.Drawing.Point(50, 152)
+        Me.Panel_cathph_04.Name = "Panel_cathph_04"
+        Me.Panel_cathph_04.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_04.TabIndex = 181
         '
         'Text_cathph_04
         '
@@ -4126,14 +4134,14 @@ Partial Class TL_SaveEditor
         Me.Text_cathph_04.TabIndex = 166
         Me.Text_cathph_04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Panel20
+        'Panel_cathph_03
         '
-        Me.Panel20.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel20.Controls.Add(Me.Text_cathph_03)
-        Me.Panel20.Location = New System.Drawing.Point(50, 100)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(134, 17)
-        Me.Panel20.TabIndex = 180
+        Me.Panel_cathph_03.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_03.Controls.Add(Me.Text_cathph_03)
+        Me.Panel_cathph_03.Location = New System.Drawing.Point(50, 114)
+        Me.Panel_cathph_03.Name = "Panel_cathph_03"
+        Me.Panel_cathph_03.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_03.TabIndex = 180
         '
         'Text_cathph_03
         '
@@ -4145,14 +4153,14 @@ Partial Class TL_SaveEditor
         Me.Text_cathph_03.TabIndex = 166
         Me.Text_cathph_03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Panel19
+        'Panel_cathph_02
         '
-        Me.Panel19.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel19.Controls.Add(Me.Text_cathph_02)
-        Me.Panel19.Location = New System.Drawing.Point(50, 64)
-        Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(134, 17)
-        Me.Panel19.TabIndex = 179
+        Me.Panel_cathph_02.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_02.Controls.Add(Me.Text_cathph_02)
+        Me.Panel_cathph_02.Location = New System.Drawing.Point(50, 78)
+        Me.Panel_cathph_02.Name = "Panel_cathph_02"
+        Me.Panel_cathph_02.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_02.TabIndex = 179
         '
         'Text_cathph_02
         '
@@ -4164,14 +4172,14 @@ Partial Class TL_SaveEditor
         Me.Text_cathph_02.TabIndex = 166
         Me.Text_cathph_02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Panel18
+        'Panel_cathph_01
         '
-        Me.Panel18.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel18.Controls.Add(Me.Text_cathph_01)
-        Me.Panel18.Location = New System.Drawing.Point(50, 27)
-        Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(134, 17)
-        Me.Panel18.TabIndex = 178
+        Me.Panel_cathph_01.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_01.Controls.Add(Me.Text_cathph_01)
+        Me.Panel_cathph_01.Location = New System.Drawing.Point(50, 27)
+        Me.Panel_cathph_01.Name = "Panel_cathph_01"
+        Me.Panel_cathph_01.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_01.TabIndex = 178
         '
         'Text_cathph_01
         '
@@ -4183,55 +4191,55 @@ Partial Class TL_SaveEditor
         Me.Text_cathph_01.TabIndex = 166
         Me.Text_cathph_01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'PictureBox22
+        'Icon_cathph_05
         '
-        Me.PictureBox22.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), System.Drawing.Image)
-        Me.PictureBox22.Location = New System.Drawing.Point(17, 168)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(33, 34)
-        Me.PictureBox22.TabIndex = 175
-        Me.PictureBox22.TabStop = False
+        Me.Icon_cathph_05.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_05.Image = CType(resources.GetObject("Icon_cathph_05.Image"), System.Drawing.Image)
+        Me.Icon_cathph_05.Location = New System.Drawing.Point(17, 182)
+        Me.Icon_cathph_05.Name = "Icon_cathph_05"
+        Me.Icon_cathph_05.Size = New System.Drawing.Size(33, 34)
+        Me.Icon_cathph_05.TabIndex = 175
+        Me.Icon_cathph_05.TabStop = False
         '
-        'PictureBox21
+        'Icon_cathph_04
         '
-        Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox21.Image = CType(resources.GetObject("PictureBox21.Image"), System.Drawing.Image)
-        Me.PictureBox21.Location = New System.Drawing.Point(26, 135)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(24, 24)
-        Me.PictureBox21.TabIndex = 174
-        Me.PictureBox21.TabStop = False
+        Me.Icon_cathph_04.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_04.Image = CType(resources.GetObject("Icon_cathph_04.Image"), System.Drawing.Image)
+        Me.Icon_cathph_04.Location = New System.Drawing.Point(26, 149)
+        Me.Icon_cathph_04.Name = "Icon_cathph_04"
+        Me.Icon_cathph_04.Size = New System.Drawing.Size(24, 24)
+        Me.Icon_cathph_04.TabIndex = 174
+        Me.Icon_cathph_04.TabStop = False
         '
-        'PictureBox20
+        'Icon_cathph_03
         '
-        Me.PictureBox20.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox20.Image = CType(resources.GetObject("PictureBox20.Image"), System.Drawing.Image)
-        Me.PictureBox20.Location = New System.Drawing.Point(26, 96)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(24, 24)
-        Me.PictureBox20.TabIndex = 173
-        Me.PictureBox20.TabStop = False
+        Me.Icon_cathph_03.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_03.Image = CType(resources.GetObject("Icon_cathph_03.Image"), System.Drawing.Image)
+        Me.Icon_cathph_03.Location = New System.Drawing.Point(26, 110)
+        Me.Icon_cathph_03.Name = "Icon_cathph_03"
+        Me.Icon_cathph_03.Size = New System.Drawing.Size(24, 24)
+        Me.Icon_cathph_03.TabIndex = 173
+        Me.Icon_cathph_03.TabStop = False
         '
-        'PictureBox19
+        'Icon_cathph_02
         '
-        Me.PictureBox19.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox19.Image = CType(resources.GetObject("PictureBox19.Image"), System.Drawing.Image)
-        Me.PictureBox19.Location = New System.Drawing.Point(26, 60)
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(24, 24)
-        Me.PictureBox19.TabIndex = 172
-        Me.PictureBox19.TabStop = False
+        Me.Icon_cathph_02.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_02.Image = CType(resources.GetObject("Icon_cathph_02.Image"), System.Drawing.Image)
+        Me.Icon_cathph_02.Location = New System.Drawing.Point(26, 74)
+        Me.Icon_cathph_02.Name = "Icon_cathph_02"
+        Me.Icon_cathph_02.Size = New System.Drawing.Size(24, 24)
+        Me.Icon_cathph_02.TabIndex = 172
+        Me.Icon_cathph_02.TabStop = False
         '
-        'PictureBox18
+        'Icon_cathph_01
         '
-        Me.PictureBox18.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox18.Image = CType(resources.GetObject("PictureBox18.Image"), System.Drawing.Image)
-        Me.PictureBox18.Location = New System.Drawing.Point(11, 22)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(39, 25)
-        Me.PictureBox18.TabIndex = 171
-        Me.PictureBox18.TabStop = False
+        Me.Icon_cathph_01.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_01.Image = CType(resources.GetObject("Icon_cathph_01.Image"), System.Drawing.Image)
+        Me.Icon_cathph_01.Location = New System.Drawing.Point(11, 22)
+        Me.Icon_cathph_01.Name = "Icon_cathph_01"
+        Me.Icon_cathph_01.Size = New System.Drawing.Size(39, 25)
+        Me.Icon_cathph_01.TabIndex = 171
+        Me.Icon_cathph_01.TabStop = False
         '
         'Tab_mii_status
         '
@@ -6249,6 +6257,46 @@ Partial Class TL_SaveEditor
         Me.Select_mii.Size = New System.Drawing.Size(84, 21)
         Me.Select_mii.TabIndex = 0
         '
+        'Panel_cathph_J2
+        '
+        Me.Panel_cathph_J2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_J2.Controls.Add(Me.Text_cathph_J2)
+        Me.Panel_cathph_J2.Location = New System.Drawing.Point(50, 44)
+        Me.Panel_cathph_J2.Name = "Panel_cathph_J2"
+        Me.Panel_cathph_J2.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_J2.TabIndex = 183
+        Me.Panel_cathph_J2.Visible = False
+        '
+        'Text_cathph_J2
+        '
+        Me.Text_cathph_J2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_J2.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_J2.MaxLength = 16
+        Me.Text_cathph_J2.Name = "Text_cathph_J2"
+        Me.Text_cathph_J2.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_J2.TabIndex = 166
+        Me.Text_cathph_J2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_J1
+        '
+        Me.Panel_cathph_J1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_J1.Controls.Add(Me.Text_cathph_J1)
+        Me.Panel_cathph_J1.Location = New System.Drawing.Point(50, 10)
+        Me.Panel_cathph_J1.Name = "Panel_cathph_J1"
+        Me.Panel_cathph_J1.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_J1.TabIndex = 184
+        Me.Panel_cathph_J1.Visible = False
+        '
+        'Text_cathph_J1
+        '
+        Me.Text_cathph_J1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_J1.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_J1.MaxLength = 4
+        Me.Text_cathph_J1.Name = "Text_cathph_J1"
+        Me.Text_cathph_J1.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_J1.TabIndex = 166
+        Me.Text_cathph_J1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -6256,6 +6304,7 @@ Partial Class TL_SaveEditor
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(600, 550)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.Panel_menu_opensave)
         Me.Controls.Add(Me.Panel_music)
@@ -6269,7 +6318,6 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -6508,21 +6556,21 @@ Partial Class TL_SaveEditor
         Me.Fea_unlock_music.ResumeLayout(False)
         CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_cathphrase.ResumeLayout(False)
-        Me.Panel22.ResumeLayout(False)
-        Me.Panel22.PerformLayout()
-        Me.Panel21.ResumeLayout(False)
-        Me.Panel21.PerformLayout()
-        Me.Panel20.ResumeLayout(False)
-        Me.Panel20.PerformLayout()
-        Me.Panel19.ResumeLayout(False)
-        Me.Panel19.PerformLayout()
-        Me.Panel18.ResumeLayout(False)
-        Me.Panel18.PerformLayout()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_cathph_05.ResumeLayout(False)
+        Me.Panel_cathph_05.PerformLayout()
+        Me.Panel_cathph_04.ResumeLayout(False)
+        Me.Panel_cathph_04.PerformLayout()
+        Me.Panel_cathph_03.ResumeLayout(False)
+        Me.Panel_cathph_03.PerformLayout()
+        Me.Panel_cathph_02.ResumeLayout(False)
+        Me.Panel_cathph_02.PerformLayout()
+        Me.Panel_cathph_01.ResumeLayout(False)
+        Me.Panel_cathph_01.PerformLayout()
+        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Tab_mii_status.ResumeLayout(False)
         Me.Tab_mii_status.PerformLayout()
         Me.Panel_edit_fullness.ResumeLayout(False)
@@ -6617,6 +6665,10 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_save_mii.ResumeLayout(False)
         Me.Panel_select_mii.ResumeLayout(False)
+        Me.Panel_cathph_J2.ResumeLayout(False)
+        Me.Panel_cathph_J2.PerformLayout()
+        Me.Panel_cathph_J1.ResumeLayout(False)
+        Me.Panel_cathph_J1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -6836,21 +6888,21 @@ Partial Class TL_SaveEditor
     Friend WithEvents Icon_inventory As System.Windows.Forms.PictureBox
     Friend WithEvents Mii As System.Windows.Forms.PictureBox
     Friend WithEvents Panel_cathphrase As System.Windows.Forms.Panel
-    Friend WithEvents Panel22 As System.Windows.Forms.Panel
+    Friend WithEvents Panel_cathph_05 As System.Windows.Forms.Panel
     Friend WithEvents Text_cathph_05 As System.Windows.Forms.TextBox
-    Friend WithEvents Panel21 As System.Windows.Forms.Panel
+    Friend WithEvents Panel_cathph_04 As System.Windows.Forms.Panel
     Friend WithEvents Text_cathph_04 As System.Windows.Forms.TextBox
-    Friend WithEvents Panel20 As System.Windows.Forms.Panel
+    Friend WithEvents Panel_cathph_03 As System.Windows.Forms.Panel
     Friend WithEvents Text_cathph_03 As System.Windows.Forms.TextBox
-    Friend WithEvents Panel19 As System.Windows.Forms.Panel
+    Friend WithEvents Panel_cathph_02 As System.Windows.Forms.Panel
     Friend WithEvents Text_cathph_02 As System.Windows.Forms.TextBox
-    Friend WithEvents Panel18 As System.Windows.Forms.Panel
+    Friend WithEvents Panel_cathph_01 As System.Windows.Forms.Panel
     Friend WithEvents Text_cathph_01 As System.Windows.Forms.TextBox
-    Friend WithEvents PictureBox22 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox21 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox19 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox18 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_cathph_05 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_cathph_04 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_cathph_03 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_cathph_02 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_cathph_01 As System.Windows.Forms.PictureBox
     Friend WithEvents Panel3 As System.Windows.Forms.Panel
     Friend WithEvents Panel_target2 As System.Windows.Forms.Panel
     Friend WithEvents Panel_target1 As System.Windows.Forms.Panel
@@ -7101,5 +7153,9 @@ Partial Class TL_SaveEditor
     Friend WithEvents valu_miiMhouse As System.Windows.Forms.NumericUpDown
     Friend WithEvents Icon_miiMhouse As System.Windows.Forms.PictureBox
     Friend WithEvents valu_allmusic As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Panel_cathph_J1 As System.Windows.Forms.Panel
+    Friend WithEvents Text_cathph_J1 As System.Windows.Forms.TextBox
+    Friend WithEvents Panel_cathph_J2 As System.Windows.Forms.Panel
+    Friend WithEvents Text_cathph_J2 As System.Windows.Forms.TextBox
 
 End Class
