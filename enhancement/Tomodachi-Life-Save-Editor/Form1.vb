@@ -203,6 +203,87 @@ Public Class TL_SaveEditor
         End Try
     End Sub
 
+    Public Sub switchfilever()
+        If Filever_text.Text = "US" Then
+            Filever_text.Text = "EU"
+            TLSE_logo.Image = My.Resources.logo_EU
+            TLSE_logo_update.Image = My.Resources.logo_EU_update
+            Icon_pronun_islandname.Visible = True
+            Icon_tour.Image = Nothing
+            Icon_part.Image = Nothing
+            Icon_tour.Enabled = True
+            Icon_part.Enabled = True
+            Icon_pronun_firstname.Visible = True
+            Icon_pronun_lastname.Visible = True
+            Icon_pronun_nickname.Visible = True
+            Text_islandname.MaxLength = 10
+            Text_pronun_island.MaxLength = 20
+            Panel_cathph_01.Visible = True
+            Icon_cathph_01.Visible = True
+            Panel_cathph_J1.Visible = False
+            Panel_cathph_J2.Visible = False
+            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
+        ElseIf Filever_text.Text = "EU" Then
+            Filever_text.Text = "JP"
+            TLSE_logo.Image = My.Resources.logo_JP
+            TLSE_logo_update.Image = My.Resources.logo_JP_update
+            Icon_pronun_islandname.Visible = False
+            Icon_tour.Image = My.Resources.touri
+            Icon_part.Image = My.Resources.parti
+            Icon_tour.Enabled = False
+            Icon_part.Enabled = False
+            Icon_pronun_firstname.Visible = False
+            Icon_pronun_lastname.Visible = False
+            Icon_pronun_nickname.Visible = False
+            Text_islandname.MaxLength = 10
+            Text_pronun_island.MaxLength = 0
+            Panel_cathph_01.Visible = False
+            Icon_cathph_01.Visible = False
+            Panel_cathph_J1.Visible = True
+            Panel_cathph_J2.Visible = True
+            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase_j
+        ElseIf Filever_text.Text = "JP" Then
+            Filever_text.Text = "KR"
+            TLSE_logo.Image = My.Resources.logo_KR
+            TLSE_logo_update.Image = My.Resources.logo_KR_update
+            Icon_pronun_islandname.Visible = True
+            Icon_tour.Image = Nothing
+            Icon_part.Image = Nothing
+            Icon_tour.Enabled = True
+            Icon_part.Enabled = True
+            Icon_pronun_firstname.Visible = True
+            Icon_pronun_lastname.Visible = True
+            Icon_pronun_nickname.Visible = True
+            Text_islandname.MaxLength = 10
+            Text_pronun_island.MaxLength = 20
+            Panel_cathph_01.Visible = True
+            Icon_cathph_01.Visible = True
+            Panel_cathph_J1.Visible = False
+            Panel_cathph_J2.Visible = False
+            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
+        ElseIf Filever_text.Text = "KR" Then
+            Filever_text.Text = "US"
+            TLSE_logo.Image = My.Resources.logo_US
+            TLSE_logo_update.Image = My.Resources.logo_US_update
+            Icon_pronun_islandname.Visible = True
+            Icon_tour.Image = Nothing
+            Icon_part.Image = Nothing
+            Icon_tour.Enabled = True
+            Icon_part.Enabled = True
+            Icon_pronun_firstname.Visible = True
+            Icon_pronun_lastname.Visible = True
+            Icon_pronun_nickname.Visible = True
+            Text_islandname.MaxLength = 10
+            Text_pronun_island.MaxLength = 20
+            Panel_cathph_01.Visible = True
+            Icon_cathph_01.Visible = True
+            Panel_cathph_J1.Visible = False
+            Panel_cathph_J2.Visible = False
+            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
+        End If
+        Icon_changelog.Image = TLSE_logo.Image
+    End Sub
+
     Public Sub startmusic()
         Panel_music.Visible = True
         If Select_music.SelectedItem = Select_music.Items.Item(0) Then
@@ -1012,11 +1093,9 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1E24 + Accessmii
                 Pampered = Reader.Position
                 valu_ranking_pampered.Value = Reader.ReadUInt32
-                '------
-                Reader.Position = &H299F0 + Accessfriends 'Mii friendlist
+                Reader.Position = &H24880 + Accessfriends 'Mii friendlist
                 Miifriendr = Reader.Position
-                '------
-                Reader.Position = &H1C13 + Accessmii
+                Reader.Position = &H1CE3 + Accessmii
                 MiiHC = Reader.Position
                 valu_haircolor.Value = Reader.ReadByte
                 Reader.Position = &H21A9 + Accessmii
@@ -1025,20 +1104,18 @@ Public Class TL_SaveEditor
                 Reader.Position = &H21A6 + Accessmii
                 Miimusic = Reader.Position
                 valu_allmusic.Value = Reader.ReadByte
-                '------
-                Reader.Position = &H29AB8 + Accessfriends 'Mii friendlist
+                Reader.Position = &H24948 + Accessfriends 'Mii friendlist
                 Miiinteraction = Reader.Position
                 Text_interaction.Text = Reader.ReadHexString(16)
-                Reader.Position = &H29AC4 + Accessfriends  'Mii friendlist
+                Reader.Position = &H24954 + Accessfriends  'Mii friendlist
                 Miitarget1 = Reader.Position
                 valu_target1.Value = Reader.ReadUInt16
-                Reader.Position = &H29AC6 + Accessfriends  'Mii friendlist
+                Reader.Position = &H24956 + Accessfriends  'Mii friendlist
                 Miitarget2 = Reader.Position
                 valu_target2.Value = Reader.ReadUInt16
-                Reader.Position = &H29AE6 + Accessfriends  'Mii friendlist
+                Reader.Position = &H24976 + Accessfriends  'Mii friendlist
                 Mhouse = Reader.Position
                 valu_miiMhouse.Value = Reader.ReadByte
-                '------
             End If
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
@@ -1084,6 +1161,30 @@ Public Class TL_SaveEditor
             Writer.WriteUInt16(valu_itemmii_7.Value)
             Writer.Position = objet8
             Writer.WriteUInt16(valu_itemmii_8.Value)
+            For i As Integer = 0 To 31
+                Writer.Position = bull2 + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = bull2
+            Writer.WriteUnicodeString(Text_cathph_02.Text)
+            For i As Integer = 0 To 31
+                Writer.Position = bull3 + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = bull3
+            Writer.WriteUnicodeString(Text_cathph_03.Text)
+            For i As Integer = 0 To 31
+                Writer.Position = bull4 + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = bull4
+            Writer.WriteUnicodeString(Text_cathph_04.Text)
+            For i As Integer = 0 To 31
+                Writer.Position = bull5 + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = bull5
+            Writer.WriteUnicodeString(Text_cathph_05.Text)
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 For i As Integer = 0 To 59
                     Writer.Position = Mii1PP + i
@@ -1103,33 +1204,20 @@ Public Class TL_SaveEditor
                 Next
                 Writer.Position = bull1
                 Writer.WriteUnicodeString(Text_cathph_01.Text)
-                For i As Integer = 0 To 31
-                    Writer.Position = bull2 + i
-                    Writer.WriteInt8(0)
-                Next
-                Writer.Position = bull2
-                Writer.WriteUnicodeString(Text_cathph_02.Text)
-                For i As Integer = 0 To 31
-                    Writer.Position = bull3 + i
-                    Writer.WriteInt8(0)
-                Next
-                Writer.Position = bull3
-                Writer.WriteUnicodeString(Text_cathph_03.Text)
-                For i As Integer = 0 To 31
-                    Writer.Position = bull4 + i
-                    Writer.WriteInt8(0)
-                Next
-                Writer.Position = bull4
-                Writer.WriteUnicodeString(Text_cathph_04.Text)
-                For i As Integer = 0 To 31
-                    Writer.Position = bull5 + i
-                    Writer.WriteInt8(0)
-                Next
-                Writer.Position = bull5
-                Writer.WriteUnicodeString(Text_cathph_05.Text)
             End If
             If Filever_text.Text = "JP" Then
-
+                For i As Integer = 0 To 3
+                    Writer.Position = bullj1 + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = bullj1
+                Writer.WriteUnicodeString(Text_cathph_J1.Text)
+                For i As Integer = 0 To 31
+                    Writer.Position = bullj2 + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = bullj2
+                Writer.WriteUnicodeString(Text_cathph_J2.Text)
             End If
 
             Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
@@ -1188,84 +1276,7 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Filever_text_Click(sender As Object, e As EventArgs) Handles Filever_text.Click
-        If Filever_text.Text = "US" Then
-            Filever_text.Text = "EU"
-            TLSE_logo.Image = My.Resources.logo_EU
-            TLSE_logo_update.Image = My.Resources.logo_EU_update
-            Icon_pronun_islandname.Visible = True
-            Icon_tour.Image = Nothing
-            Icon_part.Image = Nothing
-            Icon_tour.Enabled = True
-            Icon_part.Enabled = True
-            Icon_pronun_firstname.Visible = True
-            Icon_pronun_lastname.Visible = True
-            Icon_pronun_nickname.Visible = True
-            Text_islandname.MaxLength = 10
-            Text_pronun_island.MaxLength = 20
-            Panel_cathph_01.Visible = True
-            Icon_cathph_01.Visible = True
-            Panel_cathph_J1.Visible = False
-            Panel_cathph_J2.Visible = False
-            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
-        ElseIf Filever_text.Text = "EU" Then
-            Filever_text.Text = "JP"
-            TLSE_logo.Image = My.Resources.logo_JP
-            TLSE_logo_update.Image = My.Resources.logo_JP_update
-            Icon_pronun_islandname.Visible = False
-            Icon_tour.Image = My.Resources.touri
-            Icon_part.Image = My.Resources.parti
-            Icon_tour.Enabled = False
-            Icon_part.Enabled = False
-            Icon_pronun_firstname.Visible = False
-            Icon_pronun_lastname.Visible = False
-            Icon_pronun_nickname.Visible = False
-            Text_islandname.MaxLength = 10
-            Text_pronun_island.MaxLength = 0
-            Panel_cathph_01.Visible = False
-            Icon_cathph_01.Visible = False
-            Panel_cathph_J1.Visible = True
-            Panel_cathph_J2.Visible = True
-            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase_j
-        ElseIf Filever_text.Text = "JP" Then
-            Filever_text.Text = "KR"
-            TLSE_logo.Image = My.Resources.logo_KR
-            TLSE_logo_update.Image = My.Resources.logo_KR_update
-            Icon_pronun_islandname.Visible = True
-            Icon_tour.Image = Nothing
-            Icon_part.Image = Nothing
-            Icon_tour.Enabled = True
-            Icon_part.Enabled = True
-            Icon_pronun_firstname.Visible = True
-            Icon_pronun_lastname.Visible = True
-            Icon_pronun_nickname.Visible = True
-            Text_islandname.MaxLength = 10
-            Text_pronun_island.MaxLength = 20
-            Panel_cathph_01.Visible = True
-            Icon_cathph_01.Visible = True
-            Panel_cathph_J1.Visible = False
-            Panel_cathph_J2.Visible = False
-            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
-        ElseIf Filever_text.Text = "KR" Then
-            Filever_text.Text = "US"
-            TLSE_logo.Image = My.Resources.logo_US
-            TLSE_logo_update.Image = My.Resources.logo_US_update
-            Icon_pronun_islandname.Visible = True
-            Icon_tour.Image = Nothing
-            Icon_part.Image = Nothing
-            Icon_tour.Enabled = True
-            Icon_part.Enabled = True
-            Icon_pronun_firstname.Visible = True
-            Icon_pronun_lastname.Visible = True
-            Icon_pronun_nickname.Visible = True
-            Text_islandname.MaxLength = 10
-            Text_pronun_island.MaxLength = 20
-            Panel_cathph_01.Visible = True
-            Icon_cathph_01.Visible = True
-            Panel_cathph_J1.Visible = False
-            Panel_cathph_J2.Visible = False
-            Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
-        End If
-        Icon_changelog.Image = TLSE_logo.Image
+        switchfilever()
     End Sub
 
     Private Sub Info_islandbuild_MouseMove(sender As Object, e As EventArgs) Handles Info_islandbuild.MouseMove
@@ -2662,6 +2673,16 @@ Public Class TL_SaveEditor
             Setting_music.Checked = My.Settings.Parasetting_music
             Select_music.SelectedItem = My.Settings.Parasetting_musicsel
             Filever_text.Text = My.Settings.Parasetting_filever
+            If Filever_text.Text = "US" Then
+                Filever_text.Text = "KR"
+            ElseIf Filever_text.Text = "EU" Then
+                Filever_text.Text = "US"
+            ElseIf Filever_text.Text = "JP" Then
+                Filever_text.Text = "EU"
+            ElseIf Filever_text.Text = "KR" Then
+                Filever_text.Text = "JP"
+            End If
+            switchfilever()
         Catch ex As Exception
         End Try
         If Menu_panel.Width = 150 Then

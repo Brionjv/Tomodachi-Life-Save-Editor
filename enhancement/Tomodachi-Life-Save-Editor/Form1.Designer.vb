@@ -189,6 +189,46 @@ Partial Class TL_SaveEditor
         Me.Text_editing_mii = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Tab_mii_edit = New System.Windows.Forms.TabPage()
+        Me.Panel_mii_musics = New System.Windows.Forms.Panel()
+        Me.Fea_musics_musical = New System.Windows.Forms.Panel()
+        Me.Text_edit_musical = New System.Windows.Forms.Label()
+        Me.Fea_musics_techno = New System.Windows.Forms.Panel()
+        Me.Text_edit_techno = New System.Windows.Forms.Label()
+        Me.Fea_musics_opera = New System.Windows.Forms.Panel()
+        Me.Text_edit_opera = New System.Windows.Forms.Label()
+        Me.Fea_musics_ballad = New System.Windows.Forms.Panel()
+        Me.Text_edit_ballad = New System.Windows.Forms.Label()
+        Me.Fea_musics_rap = New System.Windows.Forms.Panel()
+        Me.Text_edit_rap = New System.Windows.Forms.Label()
+        Me.Fea_musics_rockroll = New System.Windows.Forms.Panel()
+        Me.Text_edit_rockroll = New System.Windows.Forms.Label()
+        Me.Fea_musics_pop = New System.Windows.Forms.Panel()
+        Me.Text_edit_pop = New System.Windows.Forms.Label()
+        Me.Fea_musics_metal = New System.Windows.Forms.Panel()
+        Me.Text_edit_metal = New System.Windows.Forms.Label()
+        Me.Fea_unlock_music = New System.Windows.Forms.Panel()
+        Me.valu_allmusic = New System.Windows.Forms.NumericUpDown()
+        Me.Text_unlock_music = New System.Windows.Forms.Label()
+        Me.Panel_cathphrase = New System.Windows.Forms.Panel()
+        Me.Panel_cathph_J1 = New System.Windows.Forms.Panel()
+        Me.Text_cathph_J1 = New System.Windows.Forms.TextBox()
+        Me.Panel_cathph_J2 = New System.Windows.Forms.Panel()
+        Me.Text_cathph_J2 = New System.Windows.Forms.TextBox()
+        Me.Panel_cathph_05 = New System.Windows.Forms.Panel()
+        Me.Text_cathph_05 = New System.Windows.Forms.TextBox()
+        Me.Panel_cathph_04 = New System.Windows.Forms.Panel()
+        Me.Text_cathph_04 = New System.Windows.Forms.TextBox()
+        Me.Panel_cathph_03 = New System.Windows.Forms.Panel()
+        Me.Text_cathph_03 = New System.Windows.Forms.TextBox()
+        Me.Panel_cathph_02 = New System.Windows.Forms.Panel()
+        Me.Text_cathph_02 = New System.Windows.Forms.TextBox()
+        Me.Panel_cathph_01 = New System.Windows.Forms.Panel()
+        Me.Text_cathph_01 = New System.Windows.Forms.TextBox()
+        Me.Icon_cathph_05 = New System.Windows.Forms.PictureBox()
+        Me.Icon_cathph_04 = New System.Windows.Forms.PictureBox()
+        Me.Icon_cathph_03 = New System.Windows.Forms.PictureBox()
+        Me.Icon_cathph_02 = New System.Windows.Forms.PictureBox()
+        Me.Icon_cathph_01 = New System.Windows.Forms.PictureBox()
         Me.Panel_edit_haircolor = New System.Windows.Forms.Panel()
         Me.color_empty = New System.Windows.Forms.Label()
         Me.Button_close_hcoloredit = New System.Windows.Forms.Label()
@@ -224,16 +264,6 @@ Partial Class TL_SaveEditor
         Me.color_3 = New System.Windows.Forms.PictureBox()
         Me.color_2 = New System.Windows.Forms.PictureBox()
         Me.color_1 = New System.Windows.Forms.PictureBox()
-        Me.Panel_mii_inventory = New System.Windows.Forms.Panel()
-        Me.Icon_unlock_gooditems = New System.Windows.Forms.PictureBox()
-        Me.Icon_unlock_specialfoods = New System.Windows.Forms.PictureBox()
-        Me.Icon_unlock_interiors = New System.Windows.Forms.PictureBox()
-        Me.Panel27 = New System.Windows.Forms.Panel()
-        Me.Select_unlock_gooditems = New System.Windows.Forms.ComboBox()
-        Me.Panel26 = New System.Windows.Forms.Panel()
-        Me.Select_unlock_specialfoods = New System.Windows.Forms.ComboBox()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.Select_unlock_interiors = New System.Windows.Forms.ComboBox()
         Me.valu_miiMhouse = New System.Windows.Forms.NumericUpDown()
         Me.Icon_miiMhouse = New System.Windows.Forms.PictureBox()
         Me.Icon_haircolor = New System.Windows.Forms.PictureBox()
@@ -293,42 +323,16 @@ Partial Class TL_SaveEditor
         Me.Title_favcolor = New System.Windows.Forms.Label()
         Me.Title_firstname = New System.Windows.Forms.Label()
         Me.Text_pronun_firstname = New System.Windows.Forms.Label()
-        Me.Panel_mii_musics = New System.Windows.Forms.Panel()
-        Me.Fea_musics_musical = New System.Windows.Forms.Panel()
-        Me.Text_edit_musical = New System.Windows.Forms.Label()
-        Me.Fea_musics_techno = New System.Windows.Forms.Panel()
-        Me.Text_edit_techno = New System.Windows.Forms.Label()
-        Me.Fea_musics_opera = New System.Windows.Forms.Panel()
-        Me.Text_edit_opera = New System.Windows.Forms.Label()
-        Me.Fea_musics_ballad = New System.Windows.Forms.Panel()
-        Me.Text_edit_ballad = New System.Windows.Forms.Label()
-        Me.Fea_musics_rap = New System.Windows.Forms.Panel()
-        Me.Text_edit_rap = New System.Windows.Forms.Label()
-        Me.Fea_musics_rockroll = New System.Windows.Forms.Panel()
-        Me.Text_edit_rockroll = New System.Windows.Forms.Label()
-        Me.Fea_musics_pop = New System.Windows.Forms.Panel()
-        Me.Text_edit_pop = New System.Windows.Forms.Label()
-        Me.Fea_musics_metal = New System.Windows.Forms.Panel()
-        Me.Text_edit_metal = New System.Windows.Forms.Label()
-        Me.Fea_unlock_music = New System.Windows.Forms.Panel()
-        Me.valu_allmusic = New System.Windows.Forms.NumericUpDown()
-        Me.Text_unlock_music = New System.Windows.Forms.Label()
-        Me.Panel_cathphrase = New System.Windows.Forms.Panel()
-        Me.Panel_cathph_05 = New System.Windows.Forms.Panel()
-        Me.Text_cathph_05 = New System.Windows.Forms.TextBox()
-        Me.Panel_cathph_04 = New System.Windows.Forms.Panel()
-        Me.Text_cathph_04 = New System.Windows.Forms.TextBox()
-        Me.Panel_cathph_03 = New System.Windows.Forms.Panel()
-        Me.Text_cathph_03 = New System.Windows.Forms.TextBox()
-        Me.Panel_cathph_02 = New System.Windows.Forms.Panel()
-        Me.Text_cathph_02 = New System.Windows.Forms.TextBox()
-        Me.Panel_cathph_01 = New System.Windows.Forms.Panel()
-        Me.Text_cathph_01 = New System.Windows.Forms.TextBox()
-        Me.Icon_cathph_05 = New System.Windows.Forms.PictureBox()
-        Me.Icon_cathph_04 = New System.Windows.Forms.PictureBox()
-        Me.Icon_cathph_03 = New System.Windows.Forms.PictureBox()
-        Me.Icon_cathph_02 = New System.Windows.Forms.PictureBox()
-        Me.Icon_cathph_01 = New System.Windows.Forms.PictureBox()
+        Me.Panel_mii_inventory = New System.Windows.Forms.Panel()
+        Me.Icon_unlock_gooditems = New System.Windows.Forms.PictureBox()
+        Me.Icon_unlock_specialfoods = New System.Windows.Forms.PictureBox()
+        Me.Icon_unlock_interiors = New System.Windows.Forms.PictureBox()
+        Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.Select_unlock_gooditems = New System.Windows.Forms.ComboBox()
+        Me.Panel26 = New System.Windows.Forms.Panel()
+        Me.Select_unlock_specialfoods = New System.Windows.Forms.ComboBox()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.Select_unlock_interiors = New System.Windows.Forms.ComboBox()
         Me.Tab_mii_status = New System.Windows.Forms.TabPage()
         Me.Panel_edit_fullness = New System.Windows.Forms.Panel()
         Me.Icon_edit_full_100 = New System.Windows.Forms.PictureBox()
@@ -505,10 +509,6 @@ Partial Class TL_SaveEditor
         Me.Text_save_mii = New System.Windows.Forms.Label()
         Me.Panel_select_mii = New System.Windows.Forms.Panel()
         Me.Select_mii = New System.Windows.Forms.ComboBox()
-        Me.Panel_cathph_J2 = New System.Windows.Forms.Panel()
-        Me.Text_cathph_J2 = New System.Windows.Forms.TextBox()
-        Me.Panel_cathph_J1 = New System.Windows.Forms.Panel()
-        Me.Text_cathph_J1 = New System.Windows.Forms.TextBox()
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -635,6 +635,30 @@ Partial Class TL_SaveEditor
         Me.Panel_miiedit.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.Tab_mii_edit.SuspendLayout()
+        Me.Panel_mii_musics.SuspendLayout()
+        Me.Fea_musics_musical.SuspendLayout()
+        Me.Fea_musics_techno.SuspendLayout()
+        Me.Fea_musics_opera.SuspendLayout()
+        Me.Fea_musics_ballad.SuspendLayout()
+        Me.Fea_musics_rap.SuspendLayout()
+        Me.Fea_musics_rockroll.SuspendLayout()
+        Me.Fea_musics_pop.SuspendLayout()
+        Me.Fea_musics_metal.SuspendLayout()
+        Me.Fea_unlock_music.SuspendLayout()
+        CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_cathphrase.SuspendLayout()
+        Me.Panel_cathph_J1.SuspendLayout()
+        Me.Panel_cathph_J2.SuspendLayout()
+        Me.Panel_cathph_05.SuspendLayout()
+        Me.Panel_cathph_04.SuspendLayout()
+        Me.Panel_cathph_03.SuspendLayout()
+        Me.Panel_cathph_02.SuspendLayout()
+        Me.Panel_cathph_01.SuspendLayout()
+        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_edit_haircolor.SuspendLayout()
         CType(Me.color_32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.color_31, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -668,13 +692,6 @@ Partial Class TL_SaveEditor
         CType(Me.color_3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.color_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.color_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_mii_inventory.SuspendLayout()
-        CType(Me.Icon_unlock_gooditems, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_unlock_specialfoods, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_unlock_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel27.SuspendLayout()
-        Me.Panel26.SuspendLayout()
-        Me.Panel13.SuspendLayout()
         CType(Me.valu_miiMhouse, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_miiMhouse, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_haircolor, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -710,28 +727,13 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_miiapart, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_copying, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_sharing, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_mii_musics.SuspendLayout()
-        Me.Fea_musics_musical.SuspendLayout()
-        Me.Fea_musics_techno.SuspendLayout()
-        Me.Fea_musics_opera.SuspendLayout()
-        Me.Fea_musics_ballad.SuspendLayout()
-        Me.Fea_musics_rap.SuspendLayout()
-        Me.Fea_musics_rockroll.SuspendLayout()
-        Me.Fea_musics_pop.SuspendLayout()
-        Me.Fea_musics_metal.SuspendLayout()
-        Me.Fea_unlock_music.SuspendLayout()
-        CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_cathphrase.SuspendLayout()
-        Me.Panel_cathph_05.SuspendLayout()
-        Me.Panel_cathph_04.SuspendLayout()
-        Me.Panel_cathph_03.SuspendLayout()
-        Me.Panel_cathph_02.SuspendLayout()
-        Me.Panel_cathph_01.SuspendLayout()
-        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_mii_inventory.SuspendLayout()
+        CType(Me.Icon_unlock_gooditems, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_unlock_specialfoods, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_unlock_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel27.SuspendLayout()
+        Me.Panel26.SuspendLayout()
+        Me.Panel13.SuspendLayout()
         Me.Tab_mii_status.SuspendLayout()
         Me.Panel_edit_fullness.SuspendLayout()
         CType(Me.Icon_edit_full_100, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -823,8 +825,6 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_save_mii.SuspendLayout()
         Me.Panel_select_mii.SuspendLayout()
-        Me.Panel_cathph_J2.SuspendLayout()
-        Me.Panel_cathph_J1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_header
@@ -2712,7 +2712,7 @@ Partial Class TL_SaveEditor
         Me.TabControl1.Controls.Add(Me.Tab_mii_friendlist)
         Me.TabControl1.Controls.Add(Me.Tab_mii_extras)
         Me.TabControl1.ImageList = Me.ImageList1
-        Me.TabControl1.Location = New System.Drawing.Point(3, 3)
+        Me.TabControl1.Location = New System.Drawing.Point(4, 3)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
         Me.TabControl1.Size = New System.Drawing.Size(593, 456)
@@ -2779,6 +2779,440 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_edit.Size = New System.Drawing.Size(585, 429)
         Me.Tab_mii_edit.TabIndex = 0
         Me.Tab_mii_edit.Text = "Edit"
+        '
+        'Panel_mii_musics
+        '
+        Me.Panel_mii_musics.BackColor = System.Drawing.Color.Azure
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_musical)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_techno)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_opera)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_ballad)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_rap)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_rockroll)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_pop)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_metal)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_unlock_music)
+        Me.Panel_mii_musics.Location = New System.Drawing.Point(4, 52)
+        Me.Panel_mii_musics.Name = "Panel_mii_musics"
+        Me.Panel_mii_musics.Size = New System.Drawing.Size(210, 202)
+        Me.Panel_mii_musics.TabIndex = 180
+        Me.Panel_mii_musics.Visible = False
+        '
+        'Fea_musics_musical
+        '
+        Me.Fea_musics_musical.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
+        Me.Fea_musics_musical.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_musical.Controls.Add(Me.Text_edit_musical)
+        Me.Fea_musics_musical.Location = New System.Drawing.Point(107, 149)
+        Me.Fea_musics_musical.Name = "Fea_musics_musical"
+        Me.Fea_musics_musical.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_musical.TabIndex = 188
+        '
+        'Text_edit_musical
+        '
+        Me.Text_edit_musical.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_musical.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_musical.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_musical.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_musical.Name = "Text_edit_musical"
+        Me.Text_edit_musical.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_musical.TabIndex = 1
+        Me.Text_edit_musical.Text = "Musical"
+        Me.Text_edit_musical.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_techno
+        '
+        Me.Fea_musics_techno.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
+        Me.Fea_musics_techno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_techno.Controls.Add(Me.Text_edit_techno)
+        Me.Fea_musics_techno.Location = New System.Drawing.Point(3, 149)
+        Me.Fea_musics_techno.Name = "Fea_musics_techno"
+        Me.Fea_musics_techno.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_techno.TabIndex = 187
+        '
+        'Text_edit_techno
+        '
+        Me.Text_edit_techno.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_techno.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_techno.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_techno.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_techno.Name = "Text_edit_techno"
+        Me.Text_edit_techno.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_techno.TabIndex = 1
+        Me.Text_edit_techno.Text = "Techno"
+        Me.Text_edit_techno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_opera
+        '
+        Me.Fea_musics_opera.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
+        Me.Fea_musics_opera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_opera.Controls.Add(Me.Text_edit_opera)
+        Me.Fea_musics_opera.Location = New System.Drawing.Point(107, 118)
+        Me.Fea_musics_opera.Name = "Fea_musics_opera"
+        Me.Fea_musics_opera.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_opera.TabIndex = 186
+        '
+        'Text_edit_opera
+        '
+        Me.Text_edit_opera.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_opera.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_opera.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_opera.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_opera.Name = "Text_edit_opera"
+        Me.Text_edit_opera.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_opera.TabIndex = 1
+        Me.Text_edit_opera.Text = "Opera"
+        Me.Text_edit_opera.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_ballad
+        '
+        Me.Fea_musics_ballad.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
+        Me.Fea_musics_ballad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_ballad.Controls.Add(Me.Text_edit_ballad)
+        Me.Fea_musics_ballad.Location = New System.Drawing.Point(3, 118)
+        Me.Fea_musics_ballad.Name = "Fea_musics_ballad"
+        Me.Fea_musics_ballad.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_ballad.TabIndex = 185
+        '
+        'Text_edit_ballad
+        '
+        Me.Text_edit_ballad.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_ballad.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_ballad.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_ballad.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_ballad.Name = "Text_edit_ballad"
+        Me.Text_edit_ballad.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_ballad.TabIndex = 1
+        Me.Text_edit_ballad.Text = "Ballad"
+        Me.Text_edit_ballad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_rap
+        '
+        Me.Fea_musics_rap.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
+        Me.Fea_musics_rap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_rap.Controls.Add(Me.Text_edit_rap)
+        Me.Fea_musics_rap.Location = New System.Drawing.Point(107, 87)
+        Me.Fea_musics_rap.Name = "Fea_musics_rap"
+        Me.Fea_musics_rap.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_rap.TabIndex = 184
+        '
+        'Text_edit_rap
+        '
+        Me.Text_edit_rap.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_rap.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_rap.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_rap.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_rap.Name = "Text_edit_rap"
+        Me.Text_edit_rap.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_rap.TabIndex = 1
+        Me.Text_edit_rap.Text = "Rap"
+        Me.Text_edit_rap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_rockroll
+        '
+        Me.Fea_musics_rockroll.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
+        Me.Fea_musics_rockroll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_rockroll.Controls.Add(Me.Text_edit_rockroll)
+        Me.Fea_musics_rockroll.Location = New System.Drawing.Point(3, 87)
+        Me.Fea_musics_rockroll.Name = "Fea_musics_rockroll"
+        Me.Fea_musics_rockroll.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_rockroll.TabIndex = 183
+        '
+        'Text_edit_rockroll
+        '
+        Me.Text_edit_rockroll.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_rockroll.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_rockroll.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_rockroll.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_rockroll.Name = "Text_edit_rockroll"
+        Me.Text_edit_rockroll.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_rockroll.TabIndex = 1
+        Me.Text_edit_rockroll.Text = "Rock' n' Roll"
+        Me.Text_edit_rockroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_pop
+        '
+        Me.Fea_musics_pop.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
+        Me.Fea_musics_pop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_pop.Controls.Add(Me.Text_edit_pop)
+        Me.Fea_musics_pop.Location = New System.Drawing.Point(107, 56)
+        Me.Fea_musics_pop.Name = "Fea_musics_pop"
+        Me.Fea_musics_pop.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_pop.TabIndex = 182
+        '
+        'Text_edit_pop
+        '
+        Me.Text_edit_pop.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_pop.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_pop.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_pop.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_pop.Name = "Text_edit_pop"
+        Me.Text_edit_pop.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_pop.TabIndex = 1
+        Me.Text_edit_pop.Text = "Pop"
+        Me.Text_edit_pop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_metal
+        '
+        Me.Fea_musics_metal.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
+        Me.Fea_musics_metal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_metal.Controls.Add(Me.Text_edit_metal)
+        Me.Fea_musics_metal.Location = New System.Drawing.Point(3, 56)
+        Me.Fea_musics_metal.Name = "Fea_musics_metal"
+        Me.Fea_musics_metal.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_metal.TabIndex = 181
+        '
+        'Text_edit_metal
+        '
+        Me.Text_edit_metal.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_metal.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_metal.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_metal.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_metal.Name = "Text_edit_metal"
+        Me.Text_edit_metal.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_metal.TabIndex = 0
+        Me.Text_edit_metal.Text = "Metal"
+        Me.Text_edit_metal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_unlock_music
+        '
+        Me.Fea_unlock_music.BackColor = System.Drawing.Color.Transparent
+        Me.Fea_unlock_music.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Fea_unlock_music.Controls.Add(Me.valu_allmusic)
+        Me.Fea_unlock_music.Controls.Add(Me.Text_unlock_music)
+        Me.Fea_unlock_music.Location = New System.Drawing.Point(30, 4)
+        Me.Fea_unlock_music.Name = "Fea_unlock_music"
+        Me.Fea_unlock_music.Size = New System.Drawing.Size(150, 32)
+        Me.Fea_unlock_music.TabIndex = 0
+        '
+        'valu_allmusic
+        '
+        Me.valu_allmusic.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_allmusic.Location = New System.Drawing.Point(112, 14)
+        Me.valu_allmusic.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_allmusic.Name = "valu_allmusic"
+        Me.valu_allmusic.Size = New System.Drawing.Size(35, 16)
+        Me.valu_allmusic.TabIndex = 189
+        Me.valu_allmusic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_unlock_music
+        '
+        Me.Text_unlock_music.BackColor = System.Drawing.Color.Transparent
+        Me.Text_unlock_music.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_unlock_music.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_unlock_music.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_unlock_music.Location = New System.Drawing.Point(0, 0)
+        Me.Text_unlock_music.Name = "Text_unlock_music"
+        Me.Text_unlock_music.Size = New System.Drawing.Size(150, 32)
+        Me.Text_unlock_music.TabIndex = 0
+        Me.Text_unlock_music.Text = "Unlock all"
+        Me.Text_unlock_music.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_cathphrase
+        '
+        Me.Panel_cathphrase.BackColor = System.Drawing.Color.Azure
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J1)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J2)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_05)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_04)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_03)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_02)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_01)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_05)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_04)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_03)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_02)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_01)
+        Me.Panel_cathphrase.Location = New System.Drawing.Point(16, 52)
+        Me.Panel_cathphrase.Name = "Panel_cathphrase"
+        Me.Panel_cathphrase.Size = New System.Drawing.Size(190, 224)
+        Me.Panel_cathphrase.TabIndex = 176
+        Me.Panel_cathphrase.Visible = False
+        '
+        'Panel_cathph_J1
+        '
+        Me.Panel_cathph_J1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_J1.Controls.Add(Me.Text_cathph_J1)
+        Me.Panel_cathph_J1.Location = New System.Drawing.Point(50, 10)
+        Me.Panel_cathph_J1.Name = "Panel_cathph_J1"
+        Me.Panel_cathph_J1.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_J1.TabIndex = 184
+        Me.Panel_cathph_J1.Visible = False
+        '
+        'Text_cathph_J1
+        '
+        Me.Text_cathph_J1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_J1.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_J1.MaxLength = 4
+        Me.Text_cathph_J1.Name = "Text_cathph_J1"
+        Me.Text_cathph_J1.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_J1.TabIndex = 166
+        Me.Text_cathph_J1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_J2
+        '
+        Me.Panel_cathph_J2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_J2.Controls.Add(Me.Text_cathph_J2)
+        Me.Panel_cathph_J2.Location = New System.Drawing.Point(50, 44)
+        Me.Panel_cathph_J2.Name = "Panel_cathph_J2"
+        Me.Panel_cathph_J2.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_J2.TabIndex = 183
+        Me.Panel_cathph_J2.Visible = False
+        '
+        'Text_cathph_J2
+        '
+        Me.Text_cathph_J2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_J2.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_J2.MaxLength = 16
+        Me.Text_cathph_J2.Name = "Text_cathph_J2"
+        Me.Text_cathph_J2.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_J2.TabIndex = 166
+        Me.Text_cathph_J2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_05
+        '
+        Me.Panel_cathph_05.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_05.Controls.Add(Me.Text_cathph_05)
+        Me.Panel_cathph_05.Location = New System.Drawing.Point(50, 189)
+        Me.Panel_cathph_05.Name = "Panel_cathph_05"
+        Me.Panel_cathph_05.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_05.TabIndex = 182
+        '
+        'Text_cathph_05
+        '
+        Me.Text_cathph_05.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_05.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_05.MaxLength = 16
+        Me.Text_cathph_05.Name = "Text_cathph_05"
+        Me.Text_cathph_05.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_05.TabIndex = 166
+        Me.Text_cathph_05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_04
+        '
+        Me.Panel_cathph_04.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_04.Controls.Add(Me.Text_cathph_04)
+        Me.Panel_cathph_04.Location = New System.Drawing.Point(50, 152)
+        Me.Panel_cathph_04.Name = "Panel_cathph_04"
+        Me.Panel_cathph_04.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_04.TabIndex = 181
+        '
+        'Text_cathph_04
+        '
+        Me.Text_cathph_04.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_04.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_04.MaxLength = 16
+        Me.Text_cathph_04.Name = "Text_cathph_04"
+        Me.Text_cathph_04.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_04.TabIndex = 166
+        Me.Text_cathph_04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_03
+        '
+        Me.Panel_cathph_03.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_03.Controls.Add(Me.Text_cathph_03)
+        Me.Panel_cathph_03.Location = New System.Drawing.Point(50, 114)
+        Me.Panel_cathph_03.Name = "Panel_cathph_03"
+        Me.Panel_cathph_03.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_03.TabIndex = 180
+        '
+        'Text_cathph_03
+        '
+        Me.Text_cathph_03.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_03.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_03.MaxLength = 16
+        Me.Text_cathph_03.Name = "Text_cathph_03"
+        Me.Text_cathph_03.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_03.TabIndex = 166
+        Me.Text_cathph_03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_02
+        '
+        Me.Panel_cathph_02.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_02.Controls.Add(Me.Text_cathph_02)
+        Me.Panel_cathph_02.Location = New System.Drawing.Point(50, 78)
+        Me.Panel_cathph_02.Name = "Panel_cathph_02"
+        Me.Panel_cathph_02.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_02.TabIndex = 179
+        '
+        'Text_cathph_02
+        '
+        Me.Text_cathph_02.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_02.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_02.MaxLength = 16
+        Me.Text_cathph_02.Name = "Text_cathph_02"
+        Me.Text_cathph_02.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_02.TabIndex = 166
+        Me.Text_cathph_02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_01
+        '
+        Me.Panel_cathph_01.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_01.Controls.Add(Me.Text_cathph_01)
+        Me.Panel_cathph_01.Location = New System.Drawing.Point(50, 27)
+        Me.Panel_cathph_01.Name = "Panel_cathph_01"
+        Me.Panel_cathph_01.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_01.TabIndex = 178
+        '
+        'Text_cathph_01
+        '
+        Me.Text_cathph_01.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_01.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_01.MaxLength = 16
+        Me.Text_cathph_01.Name = "Text_cathph_01"
+        Me.Text_cathph_01.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_01.TabIndex = 166
+        Me.Text_cathph_01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_cathph_05
+        '
+        Me.Icon_cathph_05.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_05.Image = CType(resources.GetObject("Icon_cathph_05.Image"), System.Drawing.Image)
+        Me.Icon_cathph_05.Location = New System.Drawing.Point(17, 182)
+        Me.Icon_cathph_05.Name = "Icon_cathph_05"
+        Me.Icon_cathph_05.Size = New System.Drawing.Size(33, 34)
+        Me.Icon_cathph_05.TabIndex = 175
+        Me.Icon_cathph_05.TabStop = False
+        '
+        'Icon_cathph_04
+        '
+        Me.Icon_cathph_04.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_04.Image = CType(resources.GetObject("Icon_cathph_04.Image"), System.Drawing.Image)
+        Me.Icon_cathph_04.Location = New System.Drawing.Point(26, 149)
+        Me.Icon_cathph_04.Name = "Icon_cathph_04"
+        Me.Icon_cathph_04.Size = New System.Drawing.Size(24, 24)
+        Me.Icon_cathph_04.TabIndex = 174
+        Me.Icon_cathph_04.TabStop = False
+        '
+        'Icon_cathph_03
+        '
+        Me.Icon_cathph_03.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_03.Image = CType(resources.GetObject("Icon_cathph_03.Image"), System.Drawing.Image)
+        Me.Icon_cathph_03.Location = New System.Drawing.Point(26, 110)
+        Me.Icon_cathph_03.Name = "Icon_cathph_03"
+        Me.Icon_cathph_03.Size = New System.Drawing.Size(24, 24)
+        Me.Icon_cathph_03.TabIndex = 173
+        Me.Icon_cathph_03.TabStop = False
+        '
+        'Icon_cathph_02
+        '
+        Me.Icon_cathph_02.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_02.Image = CType(resources.GetObject("Icon_cathph_02.Image"), System.Drawing.Image)
+        Me.Icon_cathph_02.Location = New System.Drawing.Point(26, 74)
+        Me.Icon_cathph_02.Name = "Icon_cathph_02"
+        Me.Icon_cathph_02.Size = New System.Drawing.Size(24, 24)
+        Me.Icon_cathph_02.TabIndex = 172
+        Me.Icon_cathph_02.TabStop = False
+        '
+        'Icon_cathph_01
+        '
+        Me.Icon_cathph_01.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_01.Image = CType(resources.GetObject("Icon_cathph_01.Image"), System.Drawing.Image)
+        Me.Icon_cathph_01.Location = New System.Drawing.Point(11, 22)
+        Me.Icon_cathph_01.Name = "Icon_cathph_01"
+        Me.Icon_cathph_01.Size = New System.Drawing.Size(39, 25)
+        Me.Icon_cathph_01.TabIndex = 171
+        Me.Icon_cathph_01.TabStop = False
         '
         'Panel_edit_haircolor
         '
@@ -3132,112 +3566,6 @@ Partial Class TL_SaveEditor
         Me.color_1.Size = New System.Drawing.Size(17, 17)
         Me.color_1.TabIndex = 0
         Me.color_1.TabStop = False
-        '
-        'Panel_mii_inventory
-        '
-        Me.Panel_mii_inventory.BackColor = System.Drawing.Color.Azure
-        Me.Panel_mii_inventory.Controls.Add(Me.Icon_unlock_gooditems)
-        Me.Panel_mii_inventory.Controls.Add(Me.Icon_unlock_specialfoods)
-        Me.Panel_mii_inventory.Controls.Add(Me.Icon_unlock_interiors)
-        Me.Panel_mii_inventory.Controls.Add(Me.Panel27)
-        Me.Panel_mii_inventory.Controls.Add(Me.Panel26)
-        Me.Panel_mii_inventory.Controls.Add(Me.Panel13)
-        Me.Panel_mii_inventory.Location = New System.Drawing.Point(4, 48)
-        Me.Panel_mii_inventory.Name = "Panel_mii_inventory"
-        Me.Panel_mii_inventory.Size = New System.Drawing.Size(210, 271)
-        Me.Panel_mii_inventory.TabIndex = 181
-        '
-        'Icon_unlock_gooditems
-        '
-        Me.Icon_unlock_gooditems.Image = CType(resources.GetObject("Icon_unlock_gooditems.Image"), System.Drawing.Image)
-        Me.Icon_unlock_gooditems.Location = New System.Drawing.Point(28, 171)
-        Me.Icon_unlock_gooditems.Name = "Icon_unlock_gooditems"
-        Me.Icon_unlock_gooditems.Size = New System.Drawing.Size(46, 31)
-        Me.Icon_unlock_gooditems.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.Icon_unlock_gooditems.TabIndex = 164
-        Me.Icon_unlock_gooditems.TabStop = False
-        '
-        'Icon_unlock_specialfoods
-        '
-        Me.Icon_unlock_specialfoods.Image = CType(resources.GetObject("Icon_unlock_specialfoods.Image"), System.Drawing.Image)
-        Me.Icon_unlock_specialfoods.Location = New System.Drawing.Point(28, 120)
-        Me.Icon_unlock_specialfoods.Name = "Icon_unlock_specialfoods"
-        Me.Icon_unlock_specialfoods.Size = New System.Drawing.Size(46, 31)
-        Me.Icon_unlock_specialfoods.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Icon_unlock_specialfoods.TabIndex = 163
-        Me.Icon_unlock_specialfoods.TabStop = False
-        '
-        'Icon_unlock_interiors
-        '
-        Me.Icon_unlock_interiors.Image = CType(resources.GetObject("Icon_unlock_interiors.Image"), System.Drawing.Image)
-        Me.Icon_unlock_interiors.Location = New System.Drawing.Point(28, 69)
-        Me.Icon_unlock_interiors.Name = "Icon_unlock_interiors"
-        Me.Icon_unlock_interiors.Size = New System.Drawing.Size(46, 31)
-        Me.Icon_unlock_interiors.TabIndex = 162
-        Me.Icon_unlock_interiors.TabStop = False
-        '
-        'Panel27
-        '
-        Me.Panel27.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel27.Controls.Add(Me.Select_unlock_gooditems)
-        Me.Panel27.Location = New System.Drawing.Point(74, 174)
-        Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(108, 25)
-        Me.Panel27.TabIndex = 161
-        '
-        'Select_unlock_gooditems
-        '
-        Me.Select_unlock_gooditems.BackColor = System.Drawing.SystemColors.Window
-        Me.Select_unlock_gooditems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_unlock_gooditems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_unlock_gooditems.FormattingEnabled = True
-        Me.Select_unlock_gooditems.Items.AddRange(New Object() {"Do nothing", "Unlock all", "Delete all"})
-        Me.Select_unlock_gooditems.Location = New System.Drawing.Point(2, 2)
-        Me.Select_unlock_gooditems.Name = "Select_unlock_gooditems"
-        Me.Select_unlock_gooditems.Size = New System.Drawing.Size(104, 21)
-        Me.Select_unlock_gooditems.TabIndex = 112
-        '
-        'Panel26
-        '
-        Me.Panel26.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel26.Controls.Add(Me.Select_unlock_specialfoods)
-        Me.Panel26.Location = New System.Drawing.Point(74, 123)
-        Me.Panel26.Name = "Panel26"
-        Me.Panel26.Size = New System.Drawing.Size(108, 25)
-        Me.Panel26.TabIndex = 160
-        '
-        'Select_unlock_specialfoods
-        '
-        Me.Select_unlock_specialfoods.BackColor = System.Drawing.SystemColors.Window
-        Me.Select_unlock_specialfoods.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_unlock_specialfoods.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_unlock_specialfoods.FormattingEnabled = True
-        Me.Select_unlock_specialfoods.Items.AddRange(New Object() {"Do nothing", "Unlock all", "Delete all"})
-        Me.Select_unlock_specialfoods.Location = New System.Drawing.Point(2, 2)
-        Me.Select_unlock_specialfoods.Name = "Select_unlock_specialfoods"
-        Me.Select_unlock_specialfoods.Size = New System.Drawing.Size(104, 21)
-        Me.Select_unlock_specialfoods.TabIndex = 112
-        '
-        'Panel13
-        '
-        Me.Panel13.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel13.Controls.Add(Me.Select_unlock_interiors)
-        Me.Panel13.Location = New System.Drawing.Point(74, 72)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(108, 25)
-        Me.Panel13.TabIndex = 159
-        '
-        'Select_unlock_interiors
-        '
-        Me.Select_unlock_interiors.BackColor = System.Drawing.SystemColors.Window
-        Me.Select_unlock_interiors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_unlock_interiors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_unlock_interiors.FormattingEnabled = True
-        Me.Select_unlock_interiors.Items.AddRange(New Object() {"Do nothing", "Unlock all", "Delete all"})
-        Me.Select_unlock_interiors.Location = New System.Drawing.Point(2, 2)
-        Me.Select_unlock_interiors.Name = "Select_unlock_interiors"
-        Me.Select_unlock_interiors.Size = New System.Drawing.Size(104, 21)
-        Me.Select_unlock_interiors.TabIndex = 112
         '
         'valu_miiMhouse
         '
@@ -3847,399 +4175,111 @@ Partial Class TL_SaveEditor
         Me.Text_pronun_firstname.TabIndex = 113
         Me.Text_pronun_firstname.Visible = False
         '
-        'Panel_mii_musics
-        '
-        Me.Panel_mii_musics.BackColor = System.Drawing.Color.Azure
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_musical)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_techno)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_opera)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_ballad)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_rap)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_rockroll)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_pop)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_metal)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_unlock_music)
-        Me.Panel_mii_musics.Location = New System.Drawing.Point(4, 52)
-        Me.Panel_mii_musics.Name = "Panel_mii_musics"
-        Me.Panel_mii_musics.Size = New System.Drawing.Size(210, 202)
-        Me.Panel_mii_musics.TabIndex = 180
-        Me.Panel_mii_musics.Visible = False
-        '
-        'Fea_musics_musical
-        '
-        Me.Fea_musics_musical.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
-        Me.Fea_musics_musical.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_musical.Controls.Add(Me.Text_edit_musical)
-        Me.Fea_musics_musical.Location = New System.Drawing.Point(107, 149)
-        Me.Fea_musics_musical.Name = "Fea_musics_musical"
-        Me.Fea_musics_musical.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_musical.TabIndex = 188
-        '
-        'Text_edit_musical
-        '
-        Me.Text_edit_musical.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_musical.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_musical.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_musical.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_musical.Name = "Text_edit_musical"
-        Me.Text_edit_musical.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_musical.TabIndex = 1
-        Me.Text_edit_musical.Text = "Musical"
-        Me.Text_edit_musical.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_techno
-        '
-        Me.Fea_musics_techno.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
-        Me.Fea_musics_techno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_techno.Controls.Add(Me.Text_edit_techno)
-        Me.Fea_musics_techno.Location = New System.Drawing.Point(3, 149)
-        Me.Fea_musics_techno.Name = "Fea_musics_techno"
-        Me.Fea_musics_techno.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_techno.TabIndex = 187
-        '
-        'Text_edit_techno
-        '
-        Me.Text_edit_techno.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_techno.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_techno.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_techno.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_techno.Name = "Text_edit_techno"
-        Me.Text_edit_techno.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_techno.TabIndex = 1
-        Me.Text_edit_techno.Text = "Techno"
-        Me.Text_edit_techno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_opera
-        '
-        Me.Fea_musics_opera.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
-        Me.Fea_musics_opera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_opera.Controls.Add(Me.Text_edit_opera)
-        Me.Fea_musics_opera.Location = New System.Drawing.Point(107, 118)
-        Me.Fea_musics_opera.Name = "Fea_musics_opera"
-        Me.Fea_musics_opera.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_opera.TabIndex = 186
-        '
-        'Text_edit_opera
-        '
-        Me.Text_edit_opera.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_opera.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_opera.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_opera.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_opera.Name = "Text_edit_opera"
-        Me.Text_edit_opera.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_opera.TabIndex = 1
-        Me.Text_edit_opera.Text = "Opera"
-        Me.Text_edit_opera.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_ballad
-        '
-        Me.Fea_musics_ballad.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
-        Me.Fea_musics_ballad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_ballad.Controls.Add(Me.Text_edit_ballad)
-        Me.Fea_musics_ballad.Location = New System.Drawing.Point(3, 118)
-        Me.Fea_musics_ballad.Name = "Fea_musics_ballad"
-        Me.Fea_musics_ballad.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_ballad.TabIndex = 185
-        '
-        'Text_edit_ballad
-        '
-        Me.Text_edit_ballad.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_ballad.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_ballad.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_ballad.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_ballad.Name = "Text_edit_ballad"
-        Me.Text_edit_ballad.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_ballad.TabIndex = 1
-        Me.Text_edit_ballad.Text = "Ballad"
-        Me.Text_edit_ballad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_rap
-        '
-        Me.Fea_musics_rap.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
-        Me.Fea_musics_rap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_rap.Controls.Add(Me.Text_edit_rap)
-        Me.Fea_musics_rap.Location = New System.Drawing.Point(107, 87)
-        Me.Fea_musics_rap.Name = "Fea_musics_rap"
-        Me.Fea_musics_rap.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_rap.TabIndex = 184
-        '
-        'Text_edit_rap
-        '
-        Me.Text_edit_rap.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_rap.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_rap.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_rap.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_rap.Name = "Text_edit_rap"
-        Me.Text_edit_rap.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_rap.TabIndex = 1
-        Me.Text_edit_rap.Text = "Rap"
-        Me.Text_edit_rap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_rockroll
-        '
-        Me.Fea_musics_rockroll.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
-        Me.Fea_musics_rockroll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_rockroll.Controls.Add(Me.Text_edit_rockroll)
-        Me.Fea_musics_rockroll.Location = New System.Drawing.Point(3, 87)
-        Me.Fea_musics_rockroll.Name = "Fea_musics_rockroll"
-        Me.Fea_musics_rockroll.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_rockroll.TabIndex = 183
-        '
-        'Text_edit_rockroll
-        '
-        Me.Text_edit_rockroll.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_rockroll.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_rockroll.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_rockroll.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_rockroll.Name = "Text_edit_rockroll"
-        Me.Text_edit_rockroll.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_rockroll.TabIndex = 1
-        Me.Text_edit_rockroll.Text = "Rock' n' Roll"
-        Me.Text_edit_rockroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_pop
-        '
-        Me.Fea_musics_pop.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
-        Me.Fea_musics_pop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_pop.Controls.Add(Me.Text_edit_pop)
-        Me.Fea_musics_pop.Location = New System.Drawing.Point(107, 56)
-        Me.Fea_musics_pop.Name = "Fea_musics_pop"
-        Me.Fea_musics_pop.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_pop.TabIndex = 182
-        '
-        'Text_edit_pop
-        '
-        Me.Text_edit_pop.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_pop.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_pop.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_pop.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_pop.Name = "Text_edit_pop"
-        Me.Text_edit_pop.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_pop.TabIndex = 1
-        Me.Text_edit_pop.Text = "Pop"
-        Me.Text_edit_pop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_metal
-        '
-        Me.Fea_musics_metal.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
-        Me.Fea_musics_metal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_metal.Controls.Add(Me.Text_edit_metal)
-        Me.Fea_musics_metal.Location = New System.Drawing.Point(3, 56)
-        Me.Fea_musics_metal.Name = "Fea_musics_metal"
-        Me.Fea_musics_metal.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_metal.TabIndex = 181
-        '
-        'Text_edit_metal
-        '
-        Me.Text_edit_metal.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_metal.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_metal.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_metal.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_metal.Name = "Text_edit_metal"
-        Me.Text_edit_metal.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_metal.TabIndex = 0
-        Me.Text_edit_metal.Text = "Metal"
-        Me.Text_edit_metal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_unlock_music
-        '
-        Me.Fea_unlock_music.BackColor = System.Drawing.Color.Transparent
-        Me.Fea_unlock_music.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
-        Me.Fea_unlock_music.Controls.Add(Me.valu_allmusic)
-        Me.Fea_unlock_music.Controls.Add(Me.Text_unlock_music)
-        Me.Fea_unlock_music.Location = New System.Drawing.Point(30, 4)
-        Me.Fea_unlock_music.Name = "Fea_unlock_music"
-        Me.Fea_unlock_music.Size = New System.Drawing.Size(150, 32)
-        Me.Fea_unlock_music.TabIndex = 0
-        '
-        'valu_allmusic
-        '
-        Me.valu_allmusic.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_allmusic.Location = New System.Drawing.Point(112, 14)
-        Me.valu_allmusic.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_allmusic.Name = "valu_allmusic"
-        Me.valu_allmusic.Size = New System.Drawing.Size(35, 16)
-        Me.valu_allmusic.TabIndex = 189
-        Me.valu_allmusic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Text_unlock_music
-        '
-        Me.Text_unlock_music.BackColor = System.Drawing.Color.Transparent
-        Me.Text_unlock_music.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_unlock_music.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_unlock_music.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_unlock_music.Location = New System.Drawing.Point(0, 0)
-        Me.Text_unlock_music.Name = "Text_unlock_music"
-        Me.Text_unlock_music.Size = New System.Drawing.Size(150, 32)
-        Me.Text_unlock_music.TabIndex = 0
-        Me.Text_unlock_music.Text = "Unlock all"
-        Me.Text_unlock_music.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel_cathphrase
-        '
-        Me.Panel_cathphrase.BackColor = System.Drawing.Color.Azure
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J1)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J2)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_05)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_04)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_03)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_02)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_01)
-        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_05)
-        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_04)
-        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_03)
-        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_02)
-        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_01)
-        Me.Panel_cathphrase.Location = New System.Drawing.Point(16, 52)
-        Me.Panel_cathphrase.Name = "Panel_cathphrase"
-        Me.Panel_cathphrase.Size = New System.Drawing.Size(190, 224)
-        Me.Panel_cathphrase.TabIndex = 176
-        Me.Panel_cathphrase.Visible = False
-        '
-        'Panel_cathph_05
-        '
-        Me.Panel_cathph_05.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_05.Controls.Add(Me.Text_cathph_05)
-        Me.Panel_cathph_05.Location = New System.Drawing.Point(50, 189)
-        Me.Panel_cathph_05.Name = "Panel_cathph_05"
-        Me.Panel_cathph_05.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_05.TabIndex = 182
-        '
-        'Text_cathph_05
-        '
-        Me.Text_cathph_05.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_05.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_05.MaxLength = 16
-        Me.Text_cathph_05.Name = "Text_cathph_05"
-        Me.Text_cathph_05.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_05.TabIndex = 166
-        Me.Text_cathph_05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_04
-        '
-        Me.Panel_cathph_04.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_04.Controls.Add(Me.Text_cathph_04)
-        Me.Panel_cathph_04.Location = New System.Drawing.Point(50, 152)
-        Me.Panel_cathph_04.Name = "Panel_cathph_04"
-        Me.Panel_cathph_04.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_04.TabIndex = 181
-        '
-        'Text_cathph_04
-        '
-        Me.Text_cathph_04.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_04.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_04.MaxLength = 16
-        Me.Text_cathph_04.Name = "Text_cathph_04"
-        Me.Text_cathph_04.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_04.TabIndex = 166
-        Me.Text_cathph_04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_03
-        '
-        Me.Panel_cathph_03.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_03.Controls.Add(Me.Text_cathph_03)
-        Me.Panel_cathph_03.Location = New System.Drawing.Point(50, 114)
-        Me.Panel_cathph_03.Name = "Panel_cathph_03"
-        Me.Panel_cathph_03.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_03.TabIndex = 180
-        '
-        'Text_cathph_03
-        '
-        Me.Text_cathph_03.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_03.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_03.MaxLength = 16
-        Me.Text_cathph_03.Name = "Text_cathph_03"
-        Me.Text_cathph_03.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_03.TabIndex = 166
-        Me.Text_cathph_03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_02
-        '
-        Me.Panel_cathph_02.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_02.Controls.Add(Me.Text_cathph_02)
-        Me.Panel_cathph_02.Location = New System.Drawing.Point(50, 78)
-        Me.Panel_cathph_02.Name = "Panel_cathph_02"
-        Me.Panel_cathph_02.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_02.TabIndex = 179
-        '
-        'Text_cathph_02
-        '
-        Me.Text_cathph_02.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_02.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_02.MaxLength = 16
-        Me.Text_cathph_02.Name = "Text_cathph_02"
-        Me.Text_cathph_02.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_02.TabIndex = 166
-        Me.Text_cathph_02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_01
-        '
-        Me.Panel_cathph_01.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_01.Controls.Add(Me.Text_cathph_01)
-        Me.Panel_cathph_01.Location = New System.Drawing.Point(50, 27)
-        Me.Panel_cathph_01.Name = "Panel_cathph_01"
-        Me.Panel_cathph_01.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_01.TabIndex = 178
-        '
-        'Text_cathph_01
-        '
-        Me.Text_cathph_01.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_01.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_01.MaxLength = 16
-        Me.Text_cathph_01.Name = "Text_cathph_01"
-        Me.Text_cathph_01.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_01.TabIndex = 166
-        Me.Text_cathph_01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Icon_cathph_05
-        '
-        Me.Icon_cathph_05.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_05.Image = CType(resources.GetObject("Icon_cathph_05.Image"), System.Drawing.Image)
-        Me.Icon_cathph_05.Location = New System.Drawing.Point(17, 182)
-        Me.Icon_cathph_05.Name = "Icon_cathph_05"
-        Me.Icon_cathph_05.Size = New System.Drawing.Size(33, 34)
-        Me.Icon_cathph_05.TabIndex = 175
-        Me.Icon_cathph_05.TabStop = False
-        '
-        'Icon_cathph_04
-        '
-        Me.Icon_cathph_04.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_04.Image = CType(resources.GetObject("Icon_cathph_04.Image"), System.Drawing.Image)
-        Me.Icon_cathph_04.Location = New System.Drawing.Point(26, 149)
-        Me.Icon_cathph_04.Name = "Icon_cathph_04"
-        Me.Icon_cathph_04.Size = New System.Drawing.Size(24, 24)
-        Me.Icon_cathph_04.TabIndex = 174
-        Me.Icon_cathph_04.TabStop = False
-        '
-        'Icon_cathph_03
-        '
-        Me.Icon_cathph_03.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_03.Image = CType(resources.GetObject("Icon_cathph_03.Image"), System.Drawing.Image)
-        Me.Icon_cathph_03.Location = New System.Drawing.Point(26, 110)
-        Me.Icon_cathph_03.Name = "Icon_cathph_03"
-        Me.Icon_cathph_03.Size = New System.Drawing.Size(24, 24)
-        Me.Icon_cathph_03.TabIndex = 173
-        Me.Icon_cathph_03.TabStop = False
-        '
-        'Icon_cathph_02
-        '
-        Me.Icon_cathph_02.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_02.Image = CType(resources.GetObject("Icon_cathph_02.Image"), System.Drawing.Image)
-        Me.Icon_cathph_02.Location = New System.Drawing.Point(26, 74)
-        Me.Icon_cathph_02.Name = "Icon_cathph_02"
-        Me.Icon_cathph_02.Size = New System.Drawing.Size(24, 24)
-        Me.Icon_cathph_02.TabIndex = 172
-        Me.Icon_cathph_02.TabStop = False
-        '
-        'Icon_cathph_01
-        '
-        Me.Icon_cathph_01.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_01.Image = CType(resources.GetObject("Icon_cathph_01.Image"), System.Drawing.Image)
-        Me.Icon_cathph_01.Location = New System.Drawing.Point(11, 22)
-        Me.Icon_cathph_01.Name = "Icon_cathph_01"
-        Me.Icon_cathph_01.Size = New System.Drawing.Size(39, 25)
-        Me.Icon_cathph_01.TabIndex = 171
-        Me.Icon_cathph_01.TabStop = False
+        'Panel_mii_inventory
+        '
+        Me.Panel_mii_inventory.BackColor = System.Drawing.Color.Azure
+        Me.Panel_mii_inventory.Controls.Add(Me.Icon_unlock_gooditems)
+        Me.Panel_mii_inventory.Controls.Add(Me.Icon_unlock_specialfoods)
+        Me.Panel_mii_inventory.Controls.Add(Me.Icon_unlock_interiors)
+        Me.Panel_mii_inventory.Controls.Add(Me.Panel27)
+        Me.Panel_mii_inventory.Controls.Add(Me.Panel26)
+        Me.Panel_mii_inventory.Controls.Add(Me.Panel13)
+        Me.Panel_mii_inventory.Location = New System.Drawing.Point(4, 48)
+        Me.Panel_mii_inventory.Name = "Panel_mii_inventory"
+        Me.Panel_mii_inventory.Size = New System.Drawing.Size(210, 271)
+        Me.Panel_mii_inventory.TabIndex = 181
+        '
+        'Icon_unlock_gooditems
+        '
+        Me.Icon_unlock_gooditems.Image = CType(resources.GetObject("Icon_unlock_gooditems.Image"), System.Drawing.Image)
+        Me.Icon_unlock_gooditems.Location = New System.Drawing.Point(28, 171)
+        Me.Icon_unlock_gooditems.Name = "Icon_unlock_gooditems"
+        Me.Icon_unlock_gooditems.Size = New System.Drawing.Size(46, 31)
+        Me.Icon_unlock_gooditems.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_unlock_gooditems.TabIndex = 164
+        Me.Icon_unlock_gooditems.TabStop = False
+        '
+        'Icon_unlock_specialfoods
+        '
+        Me.Icon_unlock_specialfoods.Image = CType(resources.GetObject("Icon_unlock_specialfoods.Image"), System.Drawing.Image)
+        Me.Icon_unlock_specialfoods.Location = New System.Drawing.Point(28, 120)
+        Me.Icon_unlock_specialfoods.Name = "Icon_unlock_specialfoods"
+        Me.Icon_unlock_specialfoods.Size = New System.Drawing.Size(46, 31)
+        Me.Icon_unlock_specialfoods.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_unlock_specialfoods.TabIndex = 163
+        Me.Icon_unlock_specialfoods.TabStop = False
+        '
+        'Icon_unlock_interiors
+        '
+        Me.Icon_unlock_interiors.Image = CType(resources.GetObject("Icon_unlock_interiors.Image"), System.Drawing.Image)
+        Me.Icon_unlock_interiors.Location = New System.Drawing.Point(28, 69)
+        Me.Icon_unlock_interiors.Name = "Icon_unlock_interiors"
+        Me.Icon_unlock_interiors.Size = New System.Drawing.Size(46, 31)
+        Me.Icon_unlock_interiors.TabIndex = 162
+        Me.Icon_unlock_interiors.TabStop = False
+        '
+        'Panel27
+        '
+        Me.Panel27.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel27.Controls.Add(Me.Select_unlock_gooditems)
+        Me.Panel27.Location = New System.Drawing.Point(74, 174)
+        Me.Panel27.Name = "Panel27"
+        Me.Panel27.Size = New System.Drawing.Size(108, 25)
+        Me.Panel27.TabIndex = 161
+        '
+        'Select_unlock_gooditems
+        '
+        Me.Select_unlock_gooditems.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_unlock_gooditems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_unlock_gooditems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_unlock_gooditems.FormattingEnabled = True
+        Me.Select_unlock_gooditems.Items.AddRange(New Object() {"Do nothing", "Unlock all", "Delete all"})
+        Me.Select_unlock_gooditems.Location = New System.Drawing.Point(2, 2)
+        Me.Select_unlock_gooditems.Name = "Select_unlock_gooditems"
+        Me.Select_unlock_gooditems.Size = New System.Drawing.Size(104, 21)
+        Me.Select_unlock_gooditems.TabIndex = 112
+        '
+        'Panel26
+        '
+        Me.Panel26.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel26.Controls.Add(Me.Select_unlock_specialfoods)
+        Me.Panel26.Location = New System.Drawing.Point(74, 123)
+        Me.Panel26.Name = "Panel26"
+        Me.Panel26.Size = New System.Drawing.Size(108, 25)
+        Me.Panel26.TabIndex = 160
+        '
+        'Select_unlock_specialfoods
+        '
+        Me.Select_unlock_specialfoods.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_unlock_specialfoods.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_unlock_specialfoods.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_unlock_specialfoods.FormattingEnabled = True
+        Me.Select_unlock_specialfoods.Items.AddRange(New Object() {"Do nothing", "Unlock all", "Delete all"})
+        Me.Select_unlock_specialfoods.Location = New System.Drawing.Point(2, 2)
+        Me.Select_unlock_specialfoods.Name = "Select_unlock_specialfoods"
+        Me.Select_unlock_specialfoods.Size = New System.Drawing.Size(104, 21)
+        Me.Select_unlock_specialfoods.TabIndex = 112
+        '
+        'Panel13
+        '
+        Me.Panel13.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel13.Controls.Add(Me.Select_unlock_interiors)
+        Me.Panel13.Location = New System.Drawing.Point(74, 72)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(108, 25)
+        Me.Panel13.TabIndex = 159
+        '
+        'Select_unlock_interiors
+        '
+        Me.Select_unlock_interiors.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_unlock_interiors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_unlock_interiors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_unlock_interiors.FormattingEnabled = True
+        Me.Select_unlock_interiors.Items.AddRange(New Object() {"Do nothing", "Unlock all", "Delete all"})
+        Me.Select_unlock_interiors.Location = New System.Drawing.Point(2, 2)
+        Me.Select_unlock_interiors.Name = "Select_unlock_interiors"
+        Me.Select_unlock_interiors.Size = New System.Drawing.Size(104, 21)
+        Me.Select_unlock_interiors.TabIndex = 112
         '
         'Tab_mii_status
         '
@@ -4292,7 +4332,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_status.Name = "Tab_mii_status"
         Me.Tab_mii_status.Padding = New System.Windows.Forms.Padding(3)
-        Me.Tab_mii_status.Size = New System.Drawing.Size(585, 429)
+        Me.Tab_mii_status.Size = New System.Drawing.Size(589, 429)
         Me.Tab_mii_status.TabIndex = 1
         Me.Tab_mii_status.Text = "Status"
         '
@@ -5106,7 +5146,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.ImageIndex = 1
         Me.Tab_mii_friendlist.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_friendlist.Name = "Tab_mii_friendlist"
-        Me.Tab_mii_friendlist.Size = New System.Drawing.Size(585, 429)
+        Me.Tab_mii_friendlist.Size = New System.Drawing.Size(589, 429)
         Me.Tab_mii_friendlist.TabIndex = 2
         Me.Tab_mii_friendlist.Text = "Friends list"
         Me.Tab_mii_friendlist.UseVisualStyleBackColor = True
@@ -6146,7 +6186,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_extras.ImageIndex = 5
         Me.Tab_mii_extras.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_extras.Name = "Tab_mii_extras"
-        Me.Tab_mii_extras.Size = New System.Drawing.Size(585, 429)
+        Me.Tab_mii_extras.Size = New System.Drawing.Size(589, 429)
         Me.Tab_mii_extras.TabIndex = 3
         Me.Tab_mii_extras.Text = "Extras"
         Me.Tab_mii_extras.UseVisualStyleBackColor = True
@@ -6257,46 +6297,6 @@ Partial Class TL_SaveEditor
         Me.Select_mii.Size = New System.Drawing.Size(84, 21)
         Me.Select_mii.TabIndex = 0
         '
-        'Panel_cathph_J2
-        '
-        Me.Panel_cathph_J2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_J2.Controls.Add(Me.Text_cathph_J2)
-        Me.Panel_cathph_J2.Location = New System.Drawing.Point(50, 44)
-        Me.Panel_cathph_J2.Name = "Panel_cathph_J2"
-        Me.Panel_cathph_J2.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_J2.TabIndex = 183
-        Me.Panel_cathph_J2.Visible = False
-        '
-        'Text_cathph_J2
-        '
-        Me.Text_cathph_J2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_J2.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_J2.MaxLength = 16
-        Me.Text_cathph_J2.Name = "Text_cathph_J2"
-        Me.Text_cathph_J2.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_J2.TabIndex = 166
-        Me.Text_cathph_J2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_J1
-        '
-        Me.Panel_cathph_J1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_J1.Controls.Add(Me.Text_cathph_J1)
-        Me.Panel_cathph_J1.Location = New System.Drawing.Point(50, 10)
-        Me.Panel_cathph_J1.Name = "Panel_cathph_J1"
-        Me.Panel_cathph_J1.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_J1.TabIndex = 184
-        Me.Panel_cathph_J1.Visible = False
-        '
-        'Text_cathph_J1
-        '
-        Me.Text_cathph_J1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_J1.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_J1.MaxLength = 4
-        Me.Text_cathph_J1.Name = "Text_cathph_J1"
-        Me.Text_cathph_J1.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_J1.TabIndex = 166
-        Me.Text_cathph_J1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -6304,7 +6304,6 @@ Partial Class TL_SaveEditor
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(600, 550)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.Panel_menu_opensave)
         Me.Controls.Add(Me.Panel_music)
@@ -6318,6 +6317,7 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -6460,6 +6460,37 @@ Partial Class TL_SaveEditor
         Me.TabControl1.ResumeLayout(False)
         Me.Tab_mii_edit.ResumeLayout(False)
         Me.Tab_mii_edit.PerformLayout()
+        Me.Panel_mii_musics.ResumeLayout(False)
+        Me.Fea_musics_musical.ResumeLayout(False)
+        Me.Fea_musics_techno.ResumeLayout(False)
+        Me.Fea_musics_opera.ResumeLayout(False)
+        Me.Fea_musics_ballad.ResumeLayout(False)
+        Me.Fea_musics_rap.ResumeLayout(False)
+        Me.Fea_musics_rockroll.ResumeLayout(False)
+        Me.Fea_musics_pop.ResumeLayout(False)
+        Me.Fea_musics_metal.ResumeLayout(False)
+        Me.Fea_unlock_music.ResumeLayout(False)
+        CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_cathphrase.ResumeLayout(False)
+        Me.Panel_cathph_J1.ResumeLayout(False)
+        Me.Panel_cathph_J1.PerformLayout()
+        Me.Panel_cathph_J2.ResumeLayout(False)
+        Me.Panel_cathph_J2.PerformLayout()
+        Me.Panel_cathph_05.ResumeLayout(False)
+        Me.Panel_cathph_05.PerformLayout()
+        Me.Panel_cathph_04.ResumeLayout(False)
+        Me.Panel_cathph_04.PerformLayout()
+        Me.Panel_cathph_03.ResumeLayout(False)
+        Me.Panel_cathph_03.PerformLayout()
+        Me.Panel_cathph_02.ResumeLayout(False)
+        Me.Panel_cathph_02.PerformLayout()
+        Me.Panel_cathph_01.ResumeLayout(False)
+        Me.Panel_cathph_01.PerformLayout()
+        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_edit_haircolor.ResumeLayout(False)
         Me.Panel_edit_haircolor.PerformLayout()
         CType(Me.color_32, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6494,13 +6525,6 @@ Partial Class TL_SaveEditor
         CType(Me.color_3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.color_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.color_1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_mii_inventory.ResumeLayout(False)
-        CType(Me.Icon_unlock_gooditems, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_unlock_specialfoods, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_unlock_interiors, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel27.ResumeLayout(False)
-        Me.Panel26.ResumeLayout(False)
-        Me.Panel13.ResumeLayout(False)
         CType(Me.valu_miiMhouse, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_miiMhouse, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_haircolor, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6544,33 +6568,13 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_miiapart, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_copying, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_sharing, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_mii_musics.ResumeLayout(False)
-        Me.Fea_musics_musical.ResumeLayout(False)
-        Me.Fea_musics_techno.ResumeLayout(False)
-        Me.Fea_musics_opera.ResumeLayout(False)
-        Me.Fea_musics_ballad.ResumeLayout(False)
-        Me.Fea_musics_rap.ResumeLayout(False)
-        Me.Fea_musics_rockroll.ResumeLayout(False)
-        Me.Fea_musics_pop.ResumeLayout(False)
-        Me.Fea_musics_metal.ResumeLayout(False)
-        Me.Fea_unlock_music.ResumeLayout(False)
-        CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_cathphrase.ResumeLayout(False)
-        Me.Panel_cathph_05.ResumeLayout(False)
-        Me.Panel_cathph_05.PerformLayout()
-        Me.Panel_cathph_04.ResumeLayout(False)
-        Me.Panel_cathph_04.PerformLayout()
-        Me.Panel_cathph_03.ResumeLayout(False)
-        Me.Panel_cathph_03.PerformLayout()
-        Me.Panel_cathph_02.ResumeLayout(False)
-        Me.Panel_cathph_02.PerformLayout()
-        Me.Panel_cathph_01.ResumeLayout(False)
-        Me.Panel_cathph_01.PerformLayout()
-        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_mii_inventory.ResumeLayout(False)
+        CType(Me.Icon_unlock_gooditems, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_unlock_specialfoods, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_unlock_interiors, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel27.ResumeLayout(False)
+        Me.Panel26.ResumeLayout(False)
+        Me.Panel13.ResumeLayout(False)
         Me.Tab_mii_status.ResumeLayout(False)
         Me.Tab_mii_status.PerformLayout()
         Me.Panel_edit_fullness.ResumeLayout(False)
@@ -6665,10 +6669,6 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_save_mii.ResumeLayout(False)
         Me.Panel_select_mii.ResumeLayout(False)
-        Me.Panel_cathph_J2.ResumeLayout(False)
-        Me.Panel_cathph_J2.PerformLayout()
-        Me.Panel_cathph_J1.ResumeLayout(False)
-        Me.Panel_cathph_J1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
