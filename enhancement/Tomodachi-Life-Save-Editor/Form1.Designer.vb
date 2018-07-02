@@ -189,6 +189,41 @@ Partial Class TL_SaveEditor
         Me.Text_editing_mii = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Tab_mii_edit = New System.Windows.Forms.TabPage()
+        Me.Panel_edit_haircolor = New System.Windows.Forms.Panel()
+        Me.color_empty = New System.Windows.Forms.Label()
+        Me.Button_close_hcoloredit = New System.Windows.Forms.Label()
+        Me.color_32 = New System.Windows.Forms.PictureBox()
+        Me.color_31 = New System.Windows.Forms.PictureBox()
+        Me.color_30 = New System.Windows.Forms.PictureBox()
+        Me.color_29 = New System.Windows.Forms.PictureBox()
+        Me.color_28 = New System.Windows.Forms.PictureBox()
+        Me.color_27 = New System.Windows.Forms.PictureBox()
+        Me.color_26 = New System.Windows.Forms.PictureBox()
+        Me.color_25 = New System.Windows.Forms.PictureBox()
+        Me.color_24 = New System.Windows.Forms.PictureBox()
+        Me.color_23 = New System.Windows.Forms.PictureBox()
+        Me.color_22 = New System.Windows.Forms.PictureBox()
+        Me.color_21 = New System.Windows.Forms.PictureBox()
+        Me.color_20 = New System.Windows.Forms.PictureBox()
+        Me.color_19 = New System.Windows.Forms.PictureBox()
+        Me.color_18 = New System.Windows.Forms.PictureBox()
+        Me.color_17 = New System.Windows.Forms.PictureBox()
+        Me.color_16 = New System.Windows.Forms.PictureBox()
+        Me.color_15 = New System.Windows.Forms.PictureBox()
+        Me.color_14 = New System.Windows.Forms.PictureBox()
+        Me.color_13 = New System.Windows.Forms.PictureBox()
+        Me.color_12 = New System.Windows.Forms.PictureBox()
+        Me.color_11 = New System.Windows.Forms.PictureBox()
+        Me.color_10 = New System.Windows.Forms.PictureBox()
+        Me.color_9 = New System.Windows.Forms.PictureBox()
+        Me.color_8 = New System.Windows.Forms.PictureBox()
+        Me.color_7 = New System.Windows.Forms.PictureBox()
+        Me.color_6 = New System.Windows.Forms.PictureBox()
+        Me.color_5 = New System.Windows.Forms.PictureBox()
+        Me.color_4 = New System.Windows.Forms.PictureBox()
+        Me.color_3 = New System.Windows.Forms.PictureBox()
+        Me.color_2 = New System.Windows.Forms.PictureBox()
+        Me.color_1 = New System.Windows.Forms.PictureBox()
         Me.Panel_mii_musics = New System.Windows.Forms.Panel()
         Me.Fea_musics_musical = New System.Windows.Forms.Panel()
         Me.Text_edit_musical = New System.Windows.Forms.Label()
@@ -229,41 +264,6 @@ Partial Class TL_SaveEditor
         Me.Icon_cathph_03 = New System.Windows.Forms.PictureBox()
         Me.Icon_cathph_02 = New System.Windows.Forms.PictureBox()
         Me.Icon_cathph_01 = New System.Windows.Forms.PictureBox()
-        Me.Panel_edit_haircolor = New System.Windows.Forms.Panel()
-        Me.color_empty = New System.Windows.Forms.Label()
-        Me.Button_close_hcoloredit = New System.Windows.Forms.Label()
-        Me.color_32 = New System.Windows.Forms.PictureBox()
-        Me.color_31 = New System.Windows.Forms.PictureBox()
-        Me.color_30 = New System.Windows.Forms.PictureBox()
-        Me.color_29 = New System.Windows.Forms.PictureBox()
-        Me.color_28 = New System.Windows.Forms.PictureBox()
-        Me.color_27 = New System.Windows.Forms.PictureBox()
-        Me.color_26 = New System.Windows.Forms.PictureBox()
-        Me.color_25 = New System.Windows.Forms.PictureBox()
-        Me.color_24 = New System.Windows.Forms.PictureBox()
-        Me.color_23 = New System.Windows.Forms.PictureBox()
-        Me.color_22 = New System.Windows.Forms.PictureBox()
-        Me.color_21 = New System.Windows.Forms.PictureBox()
-        Me.color_20 = New System.Windows.Forms.PictureBox()
-        Me.color_19 = New System.Windows.Forms.PictureBox()
-        Me.color_18 = New System.Windows.Forms.PictureBox()
-        Me.color_17 = New System.Windows.Forms.PictureBox()
-        Me.color_16 = New System.Windows.Forms.PictureBox()
-        Me.color_15 = New System.Windows.Forms.PictureBox()
-        Me.color_14 = New System.Windows.Forms.PictureBox()
-        Me.color_13 = New System.Windows.Forms.PictureBox()
-        Me.color_12 = New System.Windows.Forms.PictureBox()
-        Me.color_11 = New System.Windows.Forms.PictureBox()
-        Me.color_10 = New System.Windows.Forms.PictureBox()
-        Me.color_9 = New System.Windows.Forms.PictureBox()
-        Me.color_8 = New System.Windows.Forms.PictureBox()
-        Me.color_7 = New System.Windows.Forms.PictureBox()
-        Me.color_6 = New System.Windows.Forms.PictureBox()
-        Me.color_5 = New System.Windows.Forms.PictureBox()
-        Me.color_4 = New System.Windows.Forms.PictureBox()
-        Me.color_3 = New System.Windows.Forms.PictureBox()
-        Me.color_2 = New System.Windows.Forms.PictureBox()
-        Me.color_1 = New System.Windows.Forms.PictureBox()
         Me.valu_miiMhouse = New System.Windows.Forms.NumericUpDown()
         Me.Icon_miiMhouse = New System.Windows.Forms.PictureBox()
         Me.Icon_haircolor = New System.Windows.Forms.PictureBox()
@@ -400,6 +400,36 @@ Partial Class TL_SaveEditor
         Me.Icon_fullness = New System.Windows.Forms.PictureBox()
         Me.valu_exp = New System.Windows.Forms.NumericUpDown()
         Me.Tab_mii_friendlist = New System.Windows.Forms.TabPage()
+        Me.valu_selfriend_rela_30 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_29 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_28 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_27 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_26 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_25 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_24 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_23 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_22 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_21 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_20 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_19 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_18 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_17 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_16 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_15 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_14 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_13 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_12 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_11 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_10 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_9 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_8 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_7 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_6 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_5 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_4 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_3 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_2 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_selfriend_rela_1 = New System.Windows.Forms.NumericUpDown()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel8 = New System.Windows.Forms.Panel()
@@ -414,12 +444,12 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_27 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_26 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_25 = New System.Windows.Forms.ComboBox()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_30 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_29 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_28 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_27 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_26 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_25 = New System.Windows.Forms.Label()
         Me.valu_friend_rela_30 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_29 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_28 = New System.Windows.Forms.NumericUpDown()
@@ -432,12 +462,12 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_21 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_20 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_19 = New System.Windows.Forms.ComboBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_24 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_23 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_22 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_21 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_20 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_19 = New System.Windows.Forms.Label()
         Me.valu_friend_rela_24 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_23 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_22 = New System.Windows.Forms.NumericUpDown()
@@ -450,12 +480,12 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_15 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_14 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_13 = New System.Windows.Forms.ComboBox()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_18 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_17 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_16 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_15 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_14 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_13 = New System.Windows.Forms.Label()
         Me.valu_friend_rela_18 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_17 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_16 = New System.Windows.Forms.NumericUpDown()
@@ -468,12 +498,12 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_9 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_8 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_7 = New System.Windows.Forms.ComboBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_12 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_11 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_10 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_9 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_8 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_7 = New System.Windows.Forms.Label()
         Me.valu_friend_rela_12 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_11 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_10 = New System.Windows.Forms.NumericUpDown()
@@ -486,12 +516,12 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_3 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_2 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_1 = New System.Windows.Forms.ComboBox()
-        Me.Label49 = New System.Windows.Forms.Label()
-        Me.Label48 = New System.Windows.Forms.Label()
-        Me.Label47 = New System.Windows.Forms.Label()
-        Me.Label46 = New System.Windows.Forms.Label()
-        Me.Label45 = New System.Windows.Forms.Label()
-        Me.Label44 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_6 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_5 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_4 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_3 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_2 = New System.Windows.Forms.Label()
+        Me.Text_friendmii_1 = New System.Windows.Forms.Label()
         Me.valu_friend_rela_6 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_5 = New System.Windows.Forms.NumericUpDown()
         Me.valu_friend_rela_4 = New System.Windows.Forms.NumericUpDown()
@@ -635,30 +665,6 @@ Partial Class TL_SaveEditor
         Me.Panel_miiedit.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.Tab_mii_edit.SuspendLayout()
-        Me.Panel_mii_musics.SuspendLayout()
-        Me.Fea_musics_musical.SuspendLayout()
-        Me.Fea_musics_techno.SuspendLayout()
-        Me.Fea_musics_opera.SuspendLayout()
-        Me.Fea_musics_ballad.SuspendLayout()
-        Me.Fea_musics_rap.SuspendLayout()
-        Me.Fea_musics_rockroll.SuspendLayout()
-        Me.Fea_musics_pop.SuspendLayout()
-        Me.Fea_musics_metal.SuspendLayout()
-        Me.Fea_unlock_music.SuspendLayout()
-        CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_cathphrase.SuspendLayout()
-        Me.Panel_cathph_J1.SuspendLayout()
-        Me.Panel_cathph_J2.SuspendLayout()
-        Me.Panel_cathph_05.SuspendLayout()
-        Me.Panel_cathph_04.SuspendLayout()
-        Me.Panel_cathph_03.SuspendLayout()
-        Me.Panel_cathph_02.SuspendLayout()
-        Me.Panel_cathph_01.SuspendLayout()
-        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_edit_haircolor.SuspendLayout()
         CType(Me.color_32, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.color_31, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -692,6 +698,30 @@ Partial Class TL_SaveEditor
         CType(Me.color_3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.color_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.color_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_mii_musics.SuspendLayout()
+        Me.Fea_musics_musical.SuspendLayout()
+        Me.Fea_musics_techno.SuspendLayout()
+        Me.Fea_musics_opera.SuspendLayout()
+        Me.Fea_musics_ballad.SuspendLayout()
+        Me.Fea_musics_rap.SuspendLayout()
+        Me.Fea_musics_rockroll.SuspendLayout()
+        Me.Fea_musics_pop.SuspendLayout()
+        Me.Fea_musics_metal.SuspendLayout()
+        Me.Fea_unlock_music.SuspendLayout()
+        CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_cathphrase.SuspendLayout()
+        Me.Panel_cathph_J1.SuspendLayout()
+        Me.Panel_cathph_J2.SuspendLayout()
+        Me.Panel_cathph_05.SuspendLayout()
+        Me.Panel_cathph_04.SuspendLayout()
+        Me.Panel_cathph_03.SuspendLayout()
+        Me.Panel_cathph_02.SuspendLayout()
+        Me.Panel_cathph_01.SuspendLayout()
+        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_miiMhouse, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_miiMhouse, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_haircolor, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -783,6 +813,36 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_fullness, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_exp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tab_mii_friendlist.SuspendLayout()
+        CType(Me.valu_selfriend_rela_30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_selfriend_rela_1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -2722,9 +2782,9 @@ Partial Class TL_SaveEditor
         '
         Me.Tab_mii_edit.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_edit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_musics)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_cathphrase)
-        Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.valu_miiMhouse)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_miiMhouse)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_haircolor)
@@ -2779,6 +2839,359 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_edit.Size = New System.Drawing.Size(585, 429)
         Me.Tab_mii_edit.TabIndex = 0
         Me.Tab_mii_edit.Text = "Edit"
+        '
+        'Panel_edit_haircolor
+        '
+        Me.Panel_edit_haircolor.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_haircolor
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_empty)
+        Me.Panel_edit_haircolor.Controls.Add(Me.Button_close_hcoloredit)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_32)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_31)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_30)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_29)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_28)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_27)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_26)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_25)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_24)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_23)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_22)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_21)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_20)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_19)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_18)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_17)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_16)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_15)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_14)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_13)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_12)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_11)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_10)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_9)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_8)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_7)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_6)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_5)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_4)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_3)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_2)
+        Me.Panel_edit_haircolor.Controls.Add(Me.color_1)
+        Me.Panel_edit_haircolor.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Panel_edit_haircolor.Location = New System.Drawing.Point(220, 169)
+        Me.Panel_edit_haircolor.Name = "Panel_edit_haircolor"
+        Me.Panel_edit_haircolor.Size = New System.Drawing.Size(201, 150)
+        Me.Panel_edit_haircolor.TabIndex = 185
+        Me.Panel_edit_haircolor.Visible = False
+        '
+        'color_empty
+        '
+        Me.color_empty.AutoSize = True
+        Me.color_empty.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_empty.Location = New System.Drawing.Point(140, 10)
+        Me.color_empty.Name = "color_empty"
+        Me.color_empty.Size = New System.Drawing.Size(40, 13)
+        Me.color_empty.TabIndex = 33
+        Me.color_empty.Text = "Normal"
+        '
+        'Button_close_hcoloredit
+        '
+        Me.Button_close_hcoloredit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button_close_hcoloredit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_close_hcoloredit.Location = New System.Drawing.Point(3, 121)
+        Me.Button_close_hcoloredit.Name = "Button_close_hcoloredit"
+        Me.Button_close_hcoloredit.Size = New System.Drawing.Size(195, 25)
+        Me.Button_close_hcoloredit.TabIndex = 32
+        Me.Button_close_hcoloredit.Text = "OK"
+        Me.Button_close_hcoloredit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'color_32
+        '
+        Me.color_32.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_32.Location = New System.Drawing.Point(163, 90)
+        Me.color_32.Name = "color_32"
+        Me.color_32.Size = New System.Drawing.Size(17, 17)
+        Me.color_32.TabIndex = 31
+        Me.color_32.TabStop = False
+        '
+        'color_31
+        '
+        Me.color_31.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_31.Location = New System.Drawing.Point(143, 90)
+        Me.color_31.Name = "color_31"
+        Me.color_31.Size = New System.Drawing.Size(17, 17)
+        Me.color_31.TabIndex = 30
+        Me.color_31.TabStop = False
+        '
+        'color_30
+        '
+        Me.color_30.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_30.Location = New System.Drawing.Point(122, 90)
+        Me.color_30.Name = "color_30"
+        Me.color_30.Size = New System.Drawing.Size(17, 17)
+        Me.color_30.TabIndex = 29
+        Me.color_30.TabStop = False
+        '
+        'color_29
+        '
+        Me.color_29.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_29.Location = New System.Drawing.Point(102, 90)
+        Me.color_29.Name = "color_29"
+        Me.color_29.Size = New System.Drawing.Size(17, 17)
+        Me.color_29.TabIndex = 28
+        Me.color_29.TabStop = False
+        '
+        'color_28
+        '
+        Me.color_28.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_28.Location = New System.Drawing.Point(82, 90)
+        Me.color_28.Name = "color_28"
+        Me.color_28.Size = New System.Drawing.Size(17, 17)
+        Me.color_28.TabIndex = 27
+        Me.color_28.TabStop = False
+        '
+        'color_27
+        '
+        Me.color_27.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_27.Location = New System.Drawing.Point(62, 90)
+        Me.color_27.Name = "color_27"
+        Me.color_27.Size = New System.Drawing.Size(17, 17)
+        Me.color_27.TabIndex = 26
+        Me.color_27.TabStop = False
+        '
+        'color_26
+        '
+        Me.color_26.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_26.Location = New System.Drawing.Point(41, 90)
+        Me.color_26.Name = "color_26"
+        Me.color_26.Size = New System.Drawing.Size(17, 17)
+        Me.color_26.TabIndex = 25
+        Me.color_26.TabStop = False
+        '
+        'color_25
+        '
+        Me.color_25.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_25.Location = New System.Drawing.Point(21, 90)
+        Me.color_25.Name = "color_25"
+        Me.color_25.Size = New System.Drawing.Size(17, 17)
+        Me.color_25.TabIndex = 24
+        Me.color_25.TabStop = False
+        '
+        'color_24
+        '
+        Me.color_24.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_24.Location = New System.Drawing.Point(163, 70)
+        Me.color_24.Name = "color_24"
+        Me.color_24.Size = New System.Drawing.Size(17, 17)
+        Me.color_24.TabIndex = 23
+        Me.color_24.TabStop = False
+        '
+        'color_23
+        '
+        Me.color_23.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_23.Location = New System.Drawing.Point(143, 70)
+        Me.color_23.Name = "color_23"
+        Me.color_23.Size = New System.Drawing.Size(17, 17)
+        Me.color_23.TabIndex = 22
+        Me.color_23.TabStop = False
+        '
+        'color_22
+        '
+        Me.color_22.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_22.Location = New System.Drawing.Point(122, 70)
+        Me.color_22.Name = "color_22"
+        Me.color_22.Size = New System.Drawing.Size(17, 17)
+        Me.color_22.TabIndex = 21
+        Me.color_22.TabStop = False
+        '
+        'color_21
+        '
+        Me.color_21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_21.Location = New System.Drawing.Point(102, 70)
+        Me.color_21.Name = "color_21"
+        Me.color_21.Size = New System.Drawing.Size(17, 17)
+        Me.color_21.TabIndex = 20
+        Me.color_21.TabStop = False
+        '
+        'color_20
+        '
+        Me.color_20.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_20.Location = New System.Drawing.Point(82, 70)
+        Me.color_20.Name = "color_20"
+        Me.color_20.Size = New System.Drawing.Size(17, 17)
+        Me.color_20.TabIndex = 19
+        Me.color_20.TabStop = False
+        '
+        'color_19
+        '
+        Me.color_19.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_19.Location = New System.Drawing.Point(62, 70)
+        Me.color_19.Name = "color_19"
+        Me.color_19.Size = New System.Drawing.Size(17, 17)
+        Me.color_19.TabIndex = 18
+        Me.color_19.TabStop = False
+        '
+        'color_18
+        '
+        Me.color_18.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_18.Location = New System.Drawing.Point(41, 70)
+        Me.color_18.Name = "color_18"
+        Me.color_18.Size = New System.Drawing.Size(17, 17)
+        Me.color_18.TabIndex = 17
+        Me.color_18.TabStop = False
+        '
+        'color_17
+        '
+        Me.color_17.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_17.Location = New System.Drawing.Point(21, 70)
+        Me.color_17.Name = "color_17"
+        Me.color_17.Size = New System.Drawing.Size(17, 17)
+        Me.color_17.TabIndex = 16
+        Me.color_17.TabStop = False
+        '
+        'color_16
+        '
+        Me.color_16.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_16.Location = New System.Drawing.Point(163, 49)
+        Me.color_16.Name = "color_16"
+        Me.color_16.Size = New System.Drawing.Size(17, 17)
+        Me.color_16.TabIndex = 15
+        Me.color_16.TabStop = False
+        '
+        'color_15
+        '
+        Me.color_15.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_15.Location = New System.Drawing.Point(143, 49)
+        Me.color_15.Name = "color_15"
+        Me.color_15.Size = New System.Drawing.Size(17, 17)
+        Me.color_15.TabIndex = 14
+        Me.color_15.TabStop = False
+        '
+        'color_14
+        '
+        Me.color_14.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_14.Location = New System.Drawing.Point(122, 49)
+        Me.color_14.Name = "color_14"
+        Me.color_14.Size = New System.Drawing.Size(17, 17)
+        Me.color_14.TabIndex = 13
+        Me.color_14.TabStop = False
+        '
+        'color_13
+        '
+        Me.color_13.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_13.Location = New System.Drawing.Point(102, 49)
+        Me.color_13.Name = "color_13"
+        Me.color_13.Size = New System.Drawing.Size(17, 17)
+        Me.color_13.TabIndex = 12
+        Me.color_13.TabStop = False
+        '
+        'color_12
+        '
+        Me.color_12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_12.Location = New System.Drawing.Point(82, 49)
+        Me.color_12.Name = "color_12"
+        Me.color_12.Size = New System.Drawing.Size(17, 17)
+        Me.color_12.TabIndex = 11
+        Me.color_12.TabStop = False
+        '
+        'color_11
+        '
+        Me.color_11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_11.Location = New System.Drawing.Point(62, 49)
+        Me.color_11.Name = "color_11"
+        Me.color_11.Size = New System.Drawing.Size(17, 17)
+        Me.color_11.TabIndex = 10
+        Me.color_11.TabStop = False
+        '
+        'color_10
+        '
+        Me.color_10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_10.Location = New System.Drawing.Point(41, 49)
+        Me.color_10.Name = "color_10"
+        Me.color_10.Size = New System.Drawing.Size(17, 17)
+        Me.color_10.TabIndex = 9
+        Me.color_10.TabStop = False
+        '
+        'color_9
+        '
+        Me.color_9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_9.Location = New System.Drawing.Point(21, 49)
+        Me.color_9.Name = "color_9"
+        Me.color_9.Size = New System.Drawing.Size(17, 17)
+        Me.color_9.TabIndex = 8
+        Me.color_9.TabStop = False
+        '
+        'color_8
+        '
+        Me.color_8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_8.Location = New System.Drawing.Point(163, 29)
+        Me.color_8.Name = "color_8"
+        Me.color_8.Size = New System.Drawing.Size(17, 17)
+        Me.color_8.TabIndex = 7
+        Me.color_8.TabStop = False
+        '
+        'color_7
+        '
+        Me.color_7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_7.Location = New System.Drawing.Point(143, 29)
+        Me.color_7.Name = "color_7"
+        Me.color_7.Size = New System.Drawing.Size(17, 17)
+        Me.color_7.TabIndex = 6
+        Me.color_7.TabStop = False
+        '
+        'color_6
+        '
+        Me.color_6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_6.Location = New System.Drawing.Point(122, 29)
+        Me.color_6.Name = "color_6"
+        Me.color_6.Size = New System.Drawing.Size(17, 17)
+        Me.color_6.TabIndex = 5
+        Me.color_6.TabStop = False
+        '
+        'color_5
+        '
+        Me.color_5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_5.Location = New System.Drawing.Point(102, 29)
+        Me.color_5.Name = "color_5"
+        Me.color_5.Size = New System.Drawing.Size(17, 17)
+        Me.color_5.TabIndex = 4
+        Me.color_5.TabStop = False
+        '
+        'color_4
+        '
+        Me.color_4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_4.Location = New System.Drawing.Point(82, 29)
+        Me.color_4.Name = "color_4"
+        Me.color_4.Size = New System.Drawing.Size(17, 17)
+        Me.color_4.TabIndex = 3
+        Me.color_4.TabStop = False
+        '
+        'color_3
+        '
+        Me.color_3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_3.Location = New System.Drawing.Point(62, 29)
+        Me.color_3.Name = "color_3"
+        Me.color_3.Size = New System.Drawing.Size(17, 17)
+        Me.color_3.TabIndex = 2
+        Me.color_3.TabStop = False
+        '
+        'color_2
+        '
+        Me.color_2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_2.Location = New System.Drawing.Point(41, 29)
+        Me.color_2.Name = "color_2"
+        Me.color_2.Size = New System.Drawing.Size(17, 17)
+        Me.color_2.TabIndex = 1
+        Me.color_2.TabStop = False
+        '
+        'color_1
+        '
+        Me.color_1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.color_1.Location = New System.Drawing.Point(21, 29)
+        Me.color_1.Name = "color_1"
+        Me.color_1.Size = New System.Drawing.Size(17, 17)
+        Me.color_1.TabIndex = 0
+        Me.color_1.TabStop = False
         '
         'Panel_mii_musics
         '
@@ -3214,359 +3627,6 @@ Partial Class TL_SaveEditor
         Me.Icon_cathph_01.TabIndex = 171
         Me.Icon_cathph_01.TabStop = False
         '
-        'Panel_edit_haircolor
-        '
-        Me.Panel_edit_haircolor.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_haircolor
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_empty)
-        Me.Panel_edit_haircolor.Controls.Add(Me.Button_close_hcoloredit)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_32)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_31)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_30)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_29)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_28)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_27)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_26)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_25)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_24)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_23)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_22)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_21)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_20)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_19)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_18)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_17)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_16)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_15)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_14)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_13)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_12)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_11)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_10)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_9)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_8)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_7)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_6)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_5)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_4)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_3)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_2)
-        Me.Panel_edit_haircolor.Controls.Add(Me.color_1)
-        Me.Panel_edit_haircolor.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel_edit_haircolor.Location = New System.Drawing.Point(220, 169)
-        Me.Panel_edit_haircolor.Name = "Panel_edit_haircolor"
-        Me.Panel_edit_haircolor.Size = New System.Drawing.Size(201, 150)
-        Me.Panel_edit_haircolor.TabIndex = 185
-        Me.Panel_edit_haircolor.Visible = False
-        '
-        'color_empty
-        '
-        Me.color_empty.AutoSize = True
-        Me.color_empty.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_empty.Location = New System.Drawing.Point(140, 10)
-        Me.color_empty.Name = "color_empty"
-        Me.color_empty.Size = New System.Drawing.Size(40, 13)
-        Me.color_empty.TabIndex = 33
-        Me.color_empty.Text = "Normal"
-        '
-        'Button_close_hcoloredit
-        '
-        Me.Button_close_hcoloredit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button_close_hcoloredit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button_close_hcoloredit.Location = New System.Drawing.Point(3, 121)
-        Me.Button_close_hcoloredit.Name = "Button_close_hcoloredit"
-        Me.Button_close_hcoloredit.Size = New System.Drawing.Size(195, 25)
-        Me.Button_close_hcoloredit.TabIndex = 32
-        Me.Button_close_hcoloredit.Text = "OK"
-        Me.Button_close_hcoloredit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'color_32
-        '
-        Me.color_32.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_32.Location = New System.Drawing.Point(163, 90)
-        Me.color_32.Name = "color_32"
-        Me.color_32.Size = New System.Drawing.Size(17, 17)
-        Me.color_32.TabIndex = 31
-        Me.color_32.TabStop = False
-        '
-        'color_31
-        '
-        Me.color_31.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_31.Location = New System.Drawing.Point(143, 90)
-        Me.color_31.Name = "color_31"
-        Me.color_31.Size = New System.Drawing.Size(17, 17)
-        Me.color_31.TabIndex = 30
-        Me.color_31.TabStop = False
-        '
-        'color_30
-        '
-        Me.color_30.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_30.Location = New System.Drawing.Point(122, 90)
-        Me.color_30.Name = "color_30"
-        Me.color_30.Size = New System.Drawing.Size(17, 17)
-        Me.color_30.TabIndex = 29
-        Me.color_30.TabStop = False
-        '
-        'color_29
-        '
-        Me.color_29.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_29.Location = New System.Drawing.Point(102, 90)
-        Me.color_29.Name = "color_29"
-        Me.color_29.Size = New System.Drawing.Size(17, 17)
-        Me.color_29.TabIndex = 28
-        Me.color_29.TabStop = False
-        '
-        'color_28
-        '
-        Me.color_28.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_28.Location = New System.Drawing.Point(82, 90)
-        Me.color_28.Name = "color_28"
-        Me.color_28.Size = New System.Drawing.Size(17, 17)
-        Me.color_28.TabIndex = 27
-        Me.color_28.TabStop = False
-        '
-        'color_27
-        '
-        Me.color_27.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_27.Location = New System.Drawing.Point(62, 90)
-        Me.color_27.Name = "color_27"
-        Me.color_27.Size = New System.Drawing.Size(17, 17)
-        Me.color_27.TabIndex = 26
-        Me.color_27.TabStop = False
-        '
-        'color_26
-        '
-        Me.color_26.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_26.Location = New System.Drawing.Point(41, 90)
-        Me.color_26.Name = "color_26"
-        Me.color_26.Size = New System.Drawing.Size(17, 17)
-        Me.color_26.TabIndex = 25
-        Me.color_26.TabStop = False
-        '
-        'color_25
-        '
-        Me.color_25.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_25.Location = New System.Drawing.Point(21, 90)
-        Me.color_25.Name = "color_25"
-        Me.color_25.Size = New System.Drawing.Size(17, 17)
-        Me.color_25.TabIndex = 24
-        Me.color_25.TabStop = False
-        '
-        'color_24
-        '
-        Me.color_24.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_24.Location = New System.Drawing.Point(163, 70)
-        Me.color_24.Name = "color_24"
-        Me.color_24.Size = New System.Drawing.Size(17, 17)
-        Me.color_24.TabIndex = 23
-        Me.color_24.TabStop = False
-        '
-        'color_23
-        '
-        Me.color_23.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_23.Location = New System.Drawing.Point(143, 70)
-        Me.color_23.Name = "color_23"
-        Me.color_23.Size = New System.Drawing.Size(17, 17)
-        Me.color_23.TabIndex = 22
-        Me.color_23.TabStop = False
-        '
-        'color_22
-        '
-        Me.color_22.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_22.Location = New System.Drawing.Point(122, 70)
-        Me.color_22.Name = "color_22"
-        Me.color_22.Size = New System.Drawing.Size(17, 17)
-        Me.color_22.TabIndex = 21
-        Me.color_22.TabStop = False
-        '
-        'color_21
-        '
-        Me.color_21.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_21.Location = New System.Drawing.Point(102, 70)
-        Me.color_21.Name = "color_21"
-        Me.color_21.Size = New System.Drawing.Size(17, 17)
-        Me.color_21.TabIndex = 20
-        Me.color_21.TabStop = False
-        '
-        'color_20
-        '
-        Me.color_20.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_20.Location = New System.Drawing.Point(82, 70)
-        Me.color_20.Name = "color_20"
-        Me.color_20.Size = New System.Drawing.Size(17, 17)
-        Me.color_20.TabIndex = 19
-        Me.color_20.TabStop = False
-        '
-        'color_19
-        '
-        Me.color_19.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_19.Location = New System.Drawing.Point(62, 70)
-        Me.color_19.Name = "color_19"
-        Me.color_19.Size = New System.Drawing.Size(17, 17)
-        Me.color_19.TabIndex = 18
-        Me.color_19.TabStop = False
-        '
-        'color_18
-        '
-        Me.color_18.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_18.Location = New System.Drawing.Point(41, 70)
-        Me.color_18.Name = "color_18"
-        Me.color_18.Size = New System.Drawing.Size(17, 17)
-        Me.color_18.TabIndex = 17
-        Me.color_18.TabStop = False
-        '
-        'color_17
-        '
-        Me.color_17.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_17.Location = New System.Drawing.Point(21, 70)
-        Me.color_17.Name = "color_17"
-        Me.color_17.Size = New System.Drawing.Size(17, 17)
-        Me.color_17.TabIndex = 16
-        Me.color_17.TabStop = False
-        '
-        'color_16
-        '
-        Me.color_16.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_16.Location = New System.Drawing.Point(163, 49)
-        Me.color_16.Name = "color_16"
-        Me.color_16.Size = New System.Drawing.Size(17, 17)
-        Me.color_16.TabIndex = 15
-        Me.color_16.TabStop = False
-        '
-        'color_15
-        '
-        Me.color_15.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_15.Location = New System.Drawing.Point(143, 49)
-        Me.color_15.Name = "color_15"
-        Me.color_15.Size = New System.Drawing.Size(17, 17)
-        Me.color_15.TabIndex = 14
-        Me.color_15.TabStop = False
-        '
-        'color_14
-        '
-        Me.color_14.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_14.Location = New System.Drawing.Point(122, 49)
-        Me.color_14.Name = "color_14"
-        Me.color_14.Size = New System.Drawing.Size(17, 17)
-        Me.color_14.TabIndex = 13
-        Me.color_14.TabStop = False
-        '
-        'color_13
-        '
-        Me.color_13.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_13.Location = New System.Drawing.Point(102, 49)
-        Me.color_13.Name = "color_13"
-        Me.color_13.Size = New System.Drawing.Size(17, 17)
-        Me.color_13.TabIndex = 12
-        Me.color_13.TabStop = False
-        '
-        'color_12
-        '
-        Me.color_12.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_12.Location = New System.Drawing.Point(82, 49)
-        Me.color_12.Name = "color_12"
-        Me.color_12.Size = New System.Drawing.Size(17, 17)
-        Me.color_12.TabIndex = 11
-        Me.color_12.TabStop = False
-        '
-        'color_11
-        '
-        Me.color_11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_11.Location = New System.Drawing.Point(62, 49)
-        Me.color_11.Name = "color_11"
-        Me.color_11.Size = New System.Drawing.Size(17, 17)
-        Me.color_11.TabIndex = 10
-        Me.color_11.TabStop = False
-        '
-        'color_10
-        '
-        Me.color_10.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_10.Location = New System.Drawing.Point(41, 49)
-        Me.color_10.Name = "color_10"
-        Me.color_10.Size = New System.Drawing.Size(17, 17)
-        Me.color_10.TabIndex = 9
-        Me.color_10.TabStop = False
-        '
-        'color_9
-        '
-        Me.color_9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_9.Location = New System.Drawing.Point(21, 49)
-        Me.color_9.Name = "color_9"
-        Me.color_9.Size = New System.Drawing.Size(17, 17)
-        Me.color_9.TabIndex = 8
-        Me.color_9.TabStop = False
-        '
-        'color_8
-        '
-        Me.color_8.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_8.Location = New System.Drawing.Point(163, 29)
-        Me.color_8.Name = "color_8"
-        Me.color_8.Size = New System.Drawing.Size(17, 17)
-        Me.color_8.TabIndex = 7
-        Me.color_8.TabStop = False
-        '
-        'color_7
-        '
-        Me.color_7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_7.Location = New System.Drawing.Point(143, 29)
-        Me.color_7.Name = "color_7"
-        Me.color_7.Size = New System.Drawing.Size(17, 17)
-        Me.color_7.TabIndex = 6
-        Me.color_7.TabStop = False
-        '
-        'color_6
-        '
-        Me.color_6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_6.Location = New System.Drawing.Point(122, 29)
-        Me.color_6.Name = "color_6"
-        Me.color_6.Size = New System.Drawing.Size(17, 17)
-        Me.color_6.TabIndex = 5
-        Me.color_6.TabStop = False
-        '
-        'color_5
-        '
-        Me.color_5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_5.Location = New System.Drawing.Point(102, 29)
-        Me.color_5.Name = "color_5"
-        Me.color_5.Size = New System.Drawing.Size(17, 17)
-        Me.color_5.TabIndex = 4
-        Me.color_5.TabStop = False
-        '
-        'color_4
-        '
-        Me.color_4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_4.Location = New System.Drawing.Point(82, 29)
-        Me.color_4.Name = "color_4"
-        Me.color_4.Size = New System.Drawing.Size(17, 17)
-        Me.color_4.TabIndex = 3
-        Me.color_4.TabStop = False
-        '
-        'color_3
-        '
-        Me.color_3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_3.Location = New System.Drawing.Point(62, 29)
-        Me.color_3.Name = "color_3"
-        Me.color_3.Size = New System.Drawing.Size(17, 17)
-        Me.color_3.TabIndex = 2
-        Me.color_3.TabStop = False
-        '
-        'color_2
-        '
-        Me.color_2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_2.Location = New System.Drawing.Point(41, 29)
-        Me.color_2.Name = "color_2"
-        Me.color_2.Size = New System.Drawing.Size(17, 17)
-        Me.color_2.TabIndex = 1
-        Me.color_2.TabStop = False
-        '
-        'color_1
-        '
-        Me.color_1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.color_1.Location = New System.Drawing.Point(21, 29)
-        Me.color_1.Name = "color_1"
-        Me.color_1.Size = New System.Drawing.Size(17, 17)
-        Me.color_1.TabIndex = 0
-        Me.color_1.TabStop = False
-        '
         'valu_miiMhouse
         '
         Me.valu_miiMhouse.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -3750,13 +3810,11 @@ Partial Class TL_SaveEditor
         Me.valu_growkid.Size = New System.Drawing.Size(40, 16)
         Me.valu_growkid.TabIndex = 131
         Me.valu_growkid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_growkid.Value = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_growkid.Visible = False
         '
         'Select_growkid
         '
         Me.Select_growkid.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_growkid.Enabled = False
         Me.Select_growkid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_growkid.FormattingEnabled = True
         Me.Select_growkid.Items.AddRange(New Object() {"Grown-up", "Grown-up (1)", "Kid"})
@@ -4332,7 +4390,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_status.Name = "Tab_mii_status"
         Me.Tab_mii_status.Padding = New System.Windows.Forms.Padding(3)
-        Me.Tab_mii_status.Size = New System.Drawing.Size(589, 429)
+        Me.Tab_mii_status.Size = New System.Drawing.Size(585, 429)
         Me.Tab_mii_status.TabIndex = 1
         Me.Tab_mii_status.Text = "Status"
         '
@@ -5048,6 +5106,36 @@ Partial Class TL_SaveEditor
         'Tab_mii_friendlist
         '
         Me.Tab_mii_friendlist.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_30)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_29)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_28)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_27)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_26)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_25)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_24)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_23)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_22)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_21)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_20)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_19)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_18)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_17)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_16)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_15)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_14)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_13)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_12)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_11)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_10)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_9)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_8)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_7)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_6)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_5)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_4)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_3)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_2)
+        Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_1)
         Me.Tab_mii_friendlist.Controls.Add(Me.PictureBox2)
         Me.Tab_mii_friendlist.Controls.Add(Me.PictureBox1)
         Me.Tab_mii_friendlist.Controls.Add(Me.Panel8)
@@ -5059,12 +5147,12 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_27)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_26)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_25)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label25)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label26)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label27)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label33)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label34)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label35)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_30)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_29)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_28)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_27)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_26)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_25)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_30)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_29)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_28)
@@ -5077,12 +5165,12 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_21)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_20)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_19)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label8)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label12)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label13)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label14)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label15)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label16)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_24)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_23)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_22)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_21)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_20)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_19)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_24)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_23)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_22)
@@ -5095,12 +5183,12 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_15)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_14)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_13)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label17)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label18)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label19)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label20)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label23)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label24)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_18)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_17)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_16)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_15)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_14)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_13)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_18)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_17)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_16)
@@ -5113,12 +5201,12 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_9)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_8)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_7)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label1)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label2)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label3)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label4)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label5)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label6)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_12)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_11)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_10)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_9)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_8)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_7)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_12)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_11)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_10)
@@ -5131,12 +5219,12 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_3)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_2)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_1)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label49)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label48)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label47)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label46)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label45)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label44)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_6)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_5)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_4)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_3)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_2)
+        Me.Tab_mii_friendlist.Controls.Add(Me.Text_friendmii_1)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_6)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_5)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_friend_rela_4)
@@ -5146,10 +5234,310 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.ImageIndex = 1
         Me.Tab_mii_friendlist.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_friendlist.Name = "Tab_mii_friendlist"
-        Me.Tab_mii_friendlist.Size = New System.Drawing.Size(589, 429)
+        Me.Tab_mii_friendlist.Size = New System.Drawing.Size(585, 429)
         Me.Tab_mii_friendlist.TabIndex = 2
         Me.Tab_mii_friendlist.Text = "Friends list"
         Me.Tab_mii_friendlist.UseVisualStyleBackColor = True
+        '
+        'valu_selfriend_rela_30
+        '
+        Me.valu_selfriend_rela_30.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_30.Location = New System.Drawing.Point(490, 356)
+        Me.valu_selfriend_rela_30.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_30.Name = "valu_selfriend_rela_30"
+        Me.valu_selfriend_rela_30.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_30.TabIndex = 225
+        Me.valu_selfriend_rela_30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_29
+        '
+        Me.valu_selfriend_rela_29.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_29.Location = New System.Drawing.Point(394, 356)
+        Me.valu_selfriend_rela_29.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_29.Name = "valu_selfriend_rela_29"
+        Me.valu_selfriend_rela_29.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_29.TabIndex = 224
+        Me.valu_selfriend_rela_29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_28
+        '
+        Me.valu_selfriend_rela_28.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_28.Location = New System.Drawing.Point(298, 356)
+        Me.valu_selfriend_rela_28.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_28.Name = "valu_selfriend_rela_28"
+        Me.valu_selfriend_rela_28.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_28.TabIndex = 223
+        Me.valu_selfriend_rela_28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_27
+        '
+        Me.valu_selfriend_rela_27.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_27.Location = New System.Drawing.Point(202, 356)
+        Me.valu_selfriend_rela_27.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_27.Name = "valu_selfriend_rela_27"
+        Me.valu_selfriend_rela_27.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_27.TabIndex = 222
+        Me.valu_selfriend_rela_27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_26
+        '
+        Me.valu_selfriend_rela_26.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_26.Location = New System.Drawing.Point(106, 356)
+        Me.valu_selfriend_rela_26.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_26.Name = "valu_selfriend_rela_26"
+        Me.valu_selfriend_rela_26.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_26.TabIndex = 221
+        Me.valu_selfriend_rela_26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_25
+        '
+        Me.valu_selfriend_rela_25.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_25.Location = New System.Drawing.Point(10, 356)
+        Me.valu_selfriend_rela_25.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_25.Name = "valu_selfriend_rela_25"
+        Me.valu_selfriend_rela_25.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_25.TabIndex = 220
+        Me.valu_selfriend_rela_25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_24
+        '
+        Me.valu_selfriend_rela_24.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_24.Location = New System.Drawing.Point(490, 280)
+        Me.valu_selfriend_rela_24.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_24.Name = "valu_selfriend_rela_24"
+        Me.valu_selfriend_rela_24.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_24.TabIndex = 219
+        Me.valu_selfriend_rela_24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_23
+        '
+        Me.valu_selfriend_rela_23.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_23.Location = New System.Drawing.Point(394, 280)
+        Me.valu_selfriend_rela_23.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_23.Name = "valu_selfriend_rela_23"
+        Me.valu_selfriend_rela_23.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_23.TabIndex = 218
+        Me.valu_selfriend_rela_23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_22
+        '
+        Me.valu_selfriend_rela_22.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_22.Location = New System.Drawing.Point(298, 280)
+        Me.valu_selfriend_rela_22.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_22.Name = "valu_selfriend_rela_22"
+        Me.valu_selfriend_rela_22.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_22.TabIndex = 217
+        Me.valu_selfriend_rela_22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_21
+        '
+        Me.valu_selfriend_rela_21.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_21.Location = New System.Drawing.Point(202, 280)
+        Me.valu_selfriend_rela_21.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_21.Name = "valu_selfriend_rela_21"
+        Me.valu_selfriend_rela_21.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_21.TabIndex = 216
+        Me.valu_selfriend_rela_21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_20
+        '
+        Me.valu_selfriend_rela_20.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_20.Location = New System.Drawing.Point(106, 280)
+        Me.valu_selfriend_rela_20.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_20.Name = "valu_selfriend_rela_20"
+        Me.valu_selfriend_rela_20.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_20.TabIndex = 215
+        Me.valu_selfriend_rela_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_19
+        '
+        Me.valu_selfriend_rela_19.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_19.Location = New System.Drawing.Point(10, 280)
+        Me.valu_selfriend_rela_19.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_19.Name = "valu_selfriend_rela_19"
+        Me.valu_selfriend_rela_19.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_19.TabIndex = 214
+        Me.valu_selfriend_rela_19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_18
+        '
+        Me.valu_selfriend_rela_18.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_18.Location = New System.Drawing.Point(490, 207)
+        Me.valu_selfriend_rela_18.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_18.Name = "valu_selfriend_rela_18"
+        Me.valu_selfriend_rela_18.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_18.TabIndex = 213
+        Me.valu_selfriend_rela_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_17
+        '
+        Me.valu_selfriend_rela_17.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_17.Location = New System.Drawing.Point(394, 207)
+        Me.valu_selfriend_rela_17.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_17.Name = "valu_selfriend_rela_17"
+        Me.valu_selfriend_rela_17.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_17.TabIndex = 212
+        Me.valu_selfriend_rela_17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_16
+        '
+        Me.valu_selfriend_rela_16.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_16.Location = New System.Drawing.Point(298, 207)
+        Me.valu_selfriend_rela_16.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_16.Name = "valu_selfriend_rela_16"
+        Me.valu_selfriend_rela_16.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_16.TabIndex = 211
+        Me.valu_selfriend_rela_16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_15
+        '
+        Me.valu_selfriend_rela_15.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_15.Location = New System.Drawing.Point(202, 207)
+        Me.valu_selfriend_rela_15.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_15.Name = "valu_selfriend_rela_15"
+        Me.valu_selfriend_rela_15.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_15.TabIndex = 210
+        Me.valu_selfriend_rela_15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_14
+        '
+        Me.valu_selfriend_rela_14.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_14.Location = New System.Drawing.Point(106, 207)
+        Me.valu_selfriend_rela_14.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_14.Name = "valu_selfriend_rela_14"
+        Me.valu_selfriend_rela_14.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_14.TabIndex = 209
+        Me.valu_selfriend_rela_14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_13
+        '
+        Me.valu_selfriend_rela_13.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_13.Location = New System.Drawing.Point(10, 207)
+        Me.valu_selfriend_rela_13.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_13.Name = "valu_selfriend_rela_13"
+        Me.valu_selfriend_rela_13.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_13.TabIndex = 208
+        Me.valu_selfriend_rela_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_12
+        '
+        Me.valu_selfriend_rela_12.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_12.Location = New System.Drawing.Point(490, 133)
+        Me.valu_selfriend_rela_12.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_12.Name = "valu_selfriend_rela_12"
+        Me.valu_selfriend_rela_12.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_12.TabIndex = 207
+        Me.valu_selfriend_rela_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_11
+        '
+        Me.valu_selfriend_rela_11.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_11.Location = New System.Drawing.Point(394, 133)
+        Me.valu_selfriend_rela_11.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_11.Name = "valu_selfriend_rela_11"
+        Me.valu_selfriend_rela_11.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_11.TabIndex = 206
+        Me.valu_selfriend_rela_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_10
+        '
+        Me.valu_selfriend_rela_10.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_10.Location = New System.Drawing.Point(298, 133)
+        Me.valu_selfriend_rela_10.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_10.Name = "valu_selfriend_rela_10"
+        Me.valu_selfriend_rela_10.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_10.TabIndex = 205
+        Me.valu_selfriend_rela_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_9
+        '
+        Me.valu_selfriend_rela_9.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_9.Location = New System.Drawing.Point(202, 133)
+        Me.valu_selfriend_rela_9.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_9.Name = "valu_selfriend_rela_9"
+        Me.valu_selfriend_rela_9.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_9.TabIndex = 204
+        Me.valu_selfriend_rela_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_8
+        '
+        Me.valu_selfriend_rela_8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_8.Location = New System.Drawing.Point(106, 133)
+        Me.valu_selfriend_rela_8.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_8.Name = "valu_selfriend_rela_8"
+        Me.valu_selfriend_rela_8.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_8.TabIndex = 203
+        Me.valu_selfriend_rela_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_7
+        '
+        Me.valu_selfriend_rela_7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_7.Location = New System.Drawing.Point(10, 133)
+        Me.valu_selfriend_rela_7.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_7.Name = "valu_selfriend_rela_7"
+        Me.valu_selfriend_rela_7.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_7.TabIndex = 202
+        Me.valu_selfriend_rela_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_6
+        '
+        Me.valu_selfriend_rela_6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_6.Location = New System.Drawing.Point(490, 60)
+        Me.valu_selfriend_rela_6.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_6.Name = "valu_selfriend_rela_6"
+        Me.valu_selfriend_rela_6.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_6.TabIndex = 201
+        Me.valu_selfriend_rela_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_5
+        '
+        Me.valu_selfriend_rela_5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_5.Location = New System.Drawing.Point(394, 60)
+        Me.valu_selfriend_rela_5.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_5.Name = "valu_selfriend_rela_5"
+        Me.valu_selfriend_rela_5.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_5.TabIndex = 200
+        Me.valu_selfriend_rela_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_4
+        '
+        Me.valu_selfriend_rela_4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_4.Location = New System.Drawing.Point(298, 60)
+        Me.valu_selfriend_rela_4.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_4.Name = "valu_selfriend_rela_4"
+        Me.valu_selfriend_rela_4.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_4.TabIndex = 199
+        Me.valu_selfriend_rela_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_3
+        '
+        Me.valu_selfriend_rela_3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_3.Location = New System.Drawing.Point(202, 60)
+        Me.valu_selfriend_rela_3.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_3.Name = "valu_selfriend_rela_3"
+        Me.valu_selfriend_rela_3.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_3.TabIndex = 198
+        Me.valu_selfriend_rela_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_2
+        '
+        Me.valu_selfriend_rela_2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_2.Location = New System.Drawing.Point(106, 60)
+        Me.valu_selfriend_rela_2.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_2.Name = "valu_selfriend_rela_2"
+        Me.valu_selfriend_rela_2.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_2.TabIndex = 197
+        Me.valu_selfriend_rela_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'valu_selfriend_rela_1
+        '
+        Me.valu_selfriend_rela_1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selfriend_rela_1.Location = New System.Drawing.Point(10, 60)
+        Me.valu_selfriend_rela_1.Maximum = New Decimal(New Integer() {200, 0, 0, 0})
+        Me.valu_selfriend_rela_1.Name = "valu_selfriend_rela_1"
+        Me.valu_selfriend_rela_1.Size = New System.Drawing.Size(43, 16)
+        Me.valu_selfriend_rela_1.TabIndex = 196
+        Me.valu_selfriend_rela_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'PictureBox2
         '
@@ -5223,6 +5611,7 @@ Partial Class TL_SaveEditor
         Me.Select_allfriends.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Select_allfriends.DisplayMember = "0"
         Me.Select_allfriends.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_allfriends.Enabled = False
         Me.Select_allfriends.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_allfriends.FormattingEnabled = True
         Me.Select_allfriends.Items.AddRange(New Object() {"Mii 1 to 30", "Mii 31 to 60", "Mii 61 to 90", "Mii 91 to 100"})
@@ -5316,59 +5705,59 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_25.Size = New System.Drawing.Size(87, 21)
         Me.Select_friend_rela_25.TabIndex = 185
         '
-        'Label25
+        'Text_friendmii_30
         '
-        Me.Label25.Location = New System.Drawing.Point(487, 319)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(90, 13)
-        Me.Label25.TabIndex = 184
-        Me.Label25.Text = "Mii 30"
-        Me.Label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_30.Location = New System.Drawing.Point(487, 319)
+        Me.Text_friendmii_30.Name = "Text_friendmii_30"
+        Me.Text_friendmii_30.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_30.TabIndex = 184
+        Me.Text_friendmii_30.Text = "Mii 30"
+        Me.Text_friendmii_30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label26
+        'Text_friendmii_29
         '
-        Me.Label26.Location = New System.Drawing.Point(391, 319)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(90, 13)
-        Me.Label26.TabIndex = 183
-        Me.Label26.Text = "Mii 29"
-        Me.Label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_29.Location = New System.Drawing.Point(391, 319)
+        Me.Text_friendmii_29.Name = "Text_friendmii_29"
+        Me.Text_friendmii_29.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_29.TabIndex = 183
+        Me.Text_friendmii_29.Text = "Mii 29"
+        Me.Text_friendmii_29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label27
+        'Text_friendmii_28
         '
-        Me.Label27.Location = New System.Drawing.Point(295, 319)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(90, 13)
-        Me.Label27.TabIndex = 182
-        Me.Label27.Text = "Mii 28"
-        Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_28.Location = New System.Drawing.Point(295, 319)
+        Me.Text_friendmii_28.Name = "Text_friendmii_28"
+        Me.Text_friendmii_28.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_28.TabIndex = 182
+        Me.Text_friendmii_28.Text = "Mii 28"
+        Me.Text_friendmii_28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label33
+        'Text_friendmii_27
         '
-        Me.Label33.Location = New System.Drawing.Point(199, 319)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(90, 13)
-        Me.Label33.TabIndex = 181
-        Me.Label33.Text = "Mii 27"
-        Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_27.Location = New System.Drawing.Point(199, 319)
+        Me.Text_friendmii_27.Name = "Text_friendmii_27"
+        Me.Text_friendmii_27.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_27.TabIndex = 181
+        Me.Text_friendmii_27.Text = "Mii 27"
+        Me.Text_friendmii_27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label34
+        'Text_friendmii_26
         '
-        Me.Label34.Location = New System.Drawing.Point(103, 319)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(90, 13)
-        Me.Label34.TabIndex = 180
-        Me.Label34.Text = "Mii 26"
-        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_26.Location = New System.Drawing.Point(103, 319)
+        Me.Text_friendmii_26.Name = "Text_friendmii_26"
+        Me.Text_friendmii_26.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_26.TabIndex = 180
+        Me.Text_friendmii_26.Text = "Mii 26"
+        Me.Text_friendmii_26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label35
+        'Text_friendmii_25
         '
-        Me.Label35.Location = New System.Drawing.Point(7, 319)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(90, 13)
-        Me.Label35.TabIndex = 179
-        Me.Label35.Text = "Mii 25"
-        Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_25.Location = New System.Drawing.Point(7, 319)
+        Me.Text_friendmii_25.Name = "Text_friendmii_25"
+        Me.Text_friendmii_25.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_25.TabIndex = 179
+        Me.Text_friendmii_25.Text = "Mii 25"
+        Me.Text_friendmii_25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'valu_friend_rela_30
         '
@@ -5502,59 +5891,59 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_19.Size = New System.Drawing.Size(87, 21)
         Me.Select_friend_rela_19.TabIndex = 167
         '
-        'Label8
+        'Text_friendmii_24
         '
-        Me.Label8.Location = New System.Drawing.Point(487, 243)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(90, 13)
-        Me.Label8.TabIndex = 166
-        Me.Label8.Text = "Mii 24"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_24.Location = New System.Drawing.Point(487, 243)
+        Me.Text_friendmii_24.Name = "Text_friendmii_24"
+        Me.Text_friendmii_24.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_24.TabIndex = 166
+        Me.Text_friendmii_24.Text = "Mii 24"
+        Me.Text_friendmii_24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label12
+        'Text_friendmii_23
         '
-        Me.Label12.Location = New System.Drawing.Point(391, 243)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(90, 13)
-        Me.Label12.TabIndex = 165
-        Me.Label12.Text = "Mii 23"
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_23.Location = New System.Drawing.Point(391, 243)
+        Me.Text_friendmii_23.Name = "Text_friendmii_23"
+        Me.Text_friendmii_23.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_23.TabIndex = 165
+        Me.Text_friendmii_23.Text = "Mii 23"
+        Me.Text_friendmii_23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label13
+        'Text_friendmii_22
         '
-        Me.Label13.Location = New System.Drawing.Point(295, 243)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(90, 13)
-        Me.Label13.TabIndex = 164
-        Me.Label13.Text = "Mii 22"
-        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_22.Location = New System.Drawing.Point(295, 243)
+        Me.Text_friendmii_22.Name = "Text_friendmii_22"
+        Me.Text_friendmii_22.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_22.TabIndex = 164
+        Me.Text_friendmii_22.Text = "Mii 22"
+        Me.Text_friendmii_22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label14
+        'Text_friendmii_21
         '
-        Me.Label14.Location = New System.Drawing.Point(199, 243)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(90, 13)
-        Me.Label14.TabIndex = 163
-        Me.Label14.Text = "Mii 21"
-        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_21.Location = New System.Drawing.Point(199, 243)
+        Me.Text_friendmii_21.Name = "Text_friendmii_21"
+        Me.Text_friendmii_21.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_21.TabIndex = 163
+        Me.Text_friendmii_21.Text = "Mii 21"
+        Me.Text_friendmii_21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label15
+        'Text_friendmii_20
         '
-        Me.Label15.Location = New System.Drawing.Point(103, 243)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(90, 13)
-        Me.Label15.TabIndex = 162
-        Me.Label15.Text = "Mii 20"
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_20.Location = New System.Drawing.Point(103, 243)
+        Me.Text_friendmii_20.Name = "Text_friendmii_20"
+        Me.Text_friendmii_20.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_20.TabIndex = 162
+        Me.Text_friendmii_20.Text = "Mii 20"
+        Me.Text_friendmii_20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label16
+        'Text_friendmii_19
         '
-        Me.Label16.Location = New System.Drawing.Point(7, 243)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(90, 13)
-        Me.Label16.TabIndex = 161
-        Me.Label16.Text = "Mii 19"
-        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_19.Location = New System.Drawing.Point(7, 243)
+        Me.Text_friendmii_19.Name = "Text_friendmii_19"
+        Me.Text_friendmii_19.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_19.TabIndex = 161
+        Me.Text_friendmii_19.Text = "Mii 19"
+        Me.Text_friendmii_19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'valu_friend_rela_24
         '
@@ -5688,59 +6077,59 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_13.Size = New System.Drawing.Size(87, 21)
         Me.Select_friend_rela_13.TabIndex = 149
         '
-        'Label17
+        'Text_friendmii_18
         '
-        Me.Label17.Location = New System.Drawing.Point(487, 171)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(90, 13)
-        Me.Label17.TabIndex = 148
-        Me.Label17.Text = "Mii 18"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_18.Location = New System.Drawing.Point(487, 171)
+        Me.Text_friendmii_18.Name = "Text_friendmii_18"
+        Me.Text_friendmii_18.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_18.TabIndex = 148
+        Me.Text_friendmii_18.Text = "Mii 18"
+        Me.Text_friendmii_18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label18
+        'Text_friendmii_17
         '
-        Me.Label18.Location = New System.Drawing.Point(391, 171)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(90, 13)
-        Me.Label18.TabIndex = 147
-        Me.Label18.Text = "Mii 17"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_17.Location = New System.Drawing.Point(391, 171)
+        Me.Text_friendmii_17.Name = "Text_friendmii_17"
+        Me.Text_friendmii_17.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_17.TabIndex = 147
+        Me.Text_friendmii_17.Text = "Mii 17"
+        Me.Text_friendmii_17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label19
+        'Text_friendmii_16
         '
-        Me.Label19.Location = New System.Drawing.Point(295, 171)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(90, 13)
-        Me.Label19.TabIndex = 146
-        Me.Label19.Text = "Mii 16"
-        Me.Label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_16.Location = New System.Drawing.Point(295, 171)
+        Me.Text_friendmii_16.Name = "Text_friendmii_16"
+        Me.Text_friendmii_16.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_16.TabIndex = 146
+        Me.Text_friendmii_16.Text = "Mii 16"
+        Me.Text_friendmii_16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label20
+        'Text_friendmii_15
         '
-        Me.Label20.Location = New System.Drawing.Point(199, 171)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(90, 13)
-        Me.Label20.TabIndex = 145
-        Me.Label20.Text = "Mii 15"
-        Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_15.Location = New System.Drawing.Point(199, 171)
+        Me.Text_friendmii_15.Name = "Text_friendmii_15"
+        Me.Text_friendmii_15.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_15.TabIndex = 145
+        Me.Text_friendmii_15.Text = "Mii 15"
+        Me.Text_friendmii_15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label23
+        'Text_friendmii_14
         '
-        Me.Label23.Location = New System.Drawing.Point(103, 171)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(90, 13)
-        Me.Label23.TabIndex = 144
-        Me.Label23.Text = "Mii 14"
-        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_14.Location = New System.Drawing.Point(103, 171)
+        Me.Text_friendmii_14.Name = "Text_friendmii_14"
+        Me.Text_friendmii_14.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_14.TabIndex = 144
+        Me.Text_friendmii_14.Text = "Mii 14"
+        Me.Text_friendmii_14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label24
+        'Text_friendmii_13
         '
-        Me.Label24.Location = New System.Drawing.Point(7, 171)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(90, 13)
-        Me.Label24.TabIndex = 143
-        Me.Label24.Text = "Mii 13"
-        Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_13.Location = New System.Drawing.Point(7, 171)
+        Me.Text_friendmii_13.Name = "Text_friendmii_13"
+        Me.Text_friendmii_13.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_13.TabIndex = 143
+        Me.Text_friendmii_13.Text = "Mii 13"
+        Me.Text_friendmii_13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'valu_friend_rela_18
         '
@@ -5874,59 +6263,59 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_7.Size = New System.Drawing.Size(87, 21)
         Me.Select_friend_rela_7.TabIndex = 131
         '
-        'Label1
+        'Text_friendmii_12
         '
-        Me.Label1.Location = New System.Drawing.Point(487, 97)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 13)
-        Me.Label1.TabIndex = 130
-        Me.Label1.Text = "Mii 12"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_12.Location = New System.Drawing.Point(487, 97)
+        Me.Text_friendmii_12.Name = "Text_friendmii_12"
+        Me.Text_friendmii_12.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_12.TabIndex = 130
+        Me.Text_friendmii_12.Text = "Mii 12"
+        Me.Text_friendmii_12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label2
+        'Text_friendmii_11
         '
-        Me.Label2.Location = New System.Drawing.Point(391, 97)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(90, 13)
-        Me.Label2.TabIndex = 129
-        Me.Label2.Text = "Mii 11"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_11.Location = New System.Drawing.Point(391, 97)
+        Me.Text_friendmii_11.Name = "Text_friendmii_11"
+        Me.Text_friendmii_11.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_11.TabIndex = 129
+        Me.Text_friendmii_11.Text = "Mii 11"
+        Me.Text_friendmii_11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label3
+        'Text_friendmii_10
         '
-        Me.Label3.Location = New System.Drawing.Point(295, 97)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 13)
-        Me.Label3.TabIndex = 128
-        Me.Label3.Text = "Mii 10"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_10.Location = New System.Drawing.Point(295, 97)
+        Me.Text_friendmii_10.Name = "Text_friendmii_10"
+        Me.Text_friendmii_10.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_10.TabIndex = 128
+        Me.Text_friendmii_10.Text = "Mii 10"
+        Me.Text_friendmii_10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label4
+        'Text_friendmii_9
         '
-        Me.Label4.Location = New System.Drawing.Point(199, 97)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(90, 13)
-        Me.Label4.TabIndex = 127
-        Me.Label4.Text = "Mii 9"
-        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_9.Location = New System.Drawing.Point(199, 97)
+        Me.Text_friendmii_9.Name = "Text_friendmii_9"
+        Me.Text_friendmii_9.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_9.TabIndex = 127
+        Me.Text_friendmii_9.Text = "Mii 9"
+        Me.Text_friendmii_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label5
+        'Text_friendmii_8
         '
-        Me.Label5.Location = New System.Drawing.Point(103, 97)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(90, 13)
-        Me.Label5.TabIndex = 126
-        Me.Label5.Text = "Mii 8"
-        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_8.Location = New System.Drawing.Point(103, 97)
+        Me.Text_friendmii_8.Name = "Text_friendmii_8"
+        Me.Text_friendmii_8.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_8.TabIndex = 126
+        Me.Text_friendmii_8.Text = "Mii 8"
+        Me.Text_friendmii_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label6
+        'Text_friendmii_7
         '
-        Me.Label6.Location = New System.Drawing.Point(7, 97)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(90, 13)
-        Me.Label6.TabIndex = 125
-        Me.Label6.Text = "Mii 7"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_7.Location = New System.Drawing.Point(7, 97)
+        Me.Text_friendmii_7.Name = "Text_friendmii_7"
+        Me.Text_friendmii_7.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_7.TabIndex = 125
+        Me.Text_friendmii_7.Text = "Mii 7"
+        Me.Text_friendmii_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'valu_friend_rela_12
         '
@@ -6060,59 +6449,59 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_1.Size = New System.Drawing.Size(87, 21)
         Me.Select_friend_rela_1.TabIndex = 113
         '
-        'Label49
+        'Text_friendmii_6
         '
-        Me.Label49.Location = New System.Drawing.Point(487, 25)
-        Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(90, 13)
-        Me.Label49.TabIndex = 43
-        Me.Label49.Text = "Mii 6"
-        Me.Label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_6.Location = New System.Drawing.Point(487, 25)
+        Me.Text_friendmii_6.Name = "Text_friendmii_6"
+        Me.Text_friendmii_6.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_6.TabIndex = 43
+        Me.Text_friendmii_6.Text = "Mii 6"
+        Me.Text_friendmii_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label48
+        'Text_friendmii_5
         '
-        Me.Label48.Location = New System.Drawing.Point(391, 25)
-        Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(90, 13)
-        Me.Label48.TabIndex = 42
-        Me.Label48.Text = "Mii 5"
-        Me.Label48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_5.Location = New System.Drawing.Point(391, 25)
+        Me.Text_friendmii_5.Name = "Text_friendmii_5"
+        Me.Text_friendmii_5.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_5.TabIndex = 42
+        Me.Text_friendmii_5.Text = "Mii 5"
+        Me.Text_friendmii_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label47
+        'Text_friendmii_4
         '
-        Me.Label47.Location = New System.Drawing.Point(295, 25)
-        Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(90, 13)
-        Me.Label47.TabIndex = 41
-        Me.Label47.Text = "Mii 4"
-        Me.Label47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_4.Location = New System.Drawing.Point(295, 25)
+        Me.Text_friendmii_4.Name = "Text_friendmii_4"
+        Me.Text_friendmii_4.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_4.TabIndex = 41
+        Me.Text_friendmii_4.Text = "Mii 4"
+        Me.Text_friendmii_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label46
+        'Text_friendmii_3
         '
-        Me.Label46.Location = New System.Drawing.Point(199, 25)
-        Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(90, 13)
-        Me.Label46.TabIndex = 40
-        Me.Label46.Text = "Mii 3"
-        Me.Label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_3.Location = New System.Drawing.Point(199, 25)
+        Me.Text_friendmii_3.Name = "Text_friendmii_3"
+        Me.Text_friendmii_3.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_3.TabIndex = 40
+        Me.Text_friendmii_3.Text = "Mii 3"
+        Me.Text_friendmii_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label45
+        'Text_friendmii_2
         '
-        Me.Label45.Location = New System.Drawing.Point(103, 25)
-        Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(90, 13)
-        Me.Label45.TabIndex = 39
-        Me.Label45.Text = "Mii 2"
-        Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_2.Location = New System.Drawing.Point(103, 25)
+        Me.Text_friendmii_2.Name = "Text_friendmii_2"
+        Me.Text_friendmii_2.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_2.TabIndex = 39
+        Me.Text_friendmii_2.Text = "Mii 2"
+        Me.Text_friendmii_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label44
+        'Text_friendmii_1
         '
-        Me.Label44.Location = New System.Drawing.Point(7, 25)
-        Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(90, 13)
-        Me.Label44.TabIndex = 38
-        Me.Label44.Text = "Mii 1"
-        Me.Label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_friendmii_1.Location = New System.Drawing.Point(7, 25)
+        Me.Text_friendmii_1.Name = "Text_friendmii_1"
+        Me.Text_friendmii_1.Size = New System.Drawing.Size(90, 13)
+        Me.Text_friendmii_1.TabIndex = 38
+        Me.Text_friendmii_1.Text = "Mii 1"
+        Me.Text_friendmii_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'valu_friend_rela_6
         '
@@ -6186,7 +6575,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_extras.ImageIndex = 5
         Me.Tab_mii_extras.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_extras.Name = "Tab_mii_extras"
-        Me.Tab_mii_extras.Size = New System.Drawing.Size(589, 429)
+        Me.Tab_mii_extras.Size = New System.Drawing.Size(585, 429)
         Me.Tab_mii_extras.TabIndex = 3
         Me.Tab_mii_extras.Text = "Extras"
         Me.Tab_mii_extras.UseVisualStyleBackColor = True
@@ -6230,6 +6619,7 @@ Partial Class TL_SaveEditor
         Me.valu_ranking_pampered.Size = New System.Drawing.Size(93, 16)
         Me.valu_ranking_pampered.TabIndex = 8
         Me.valu_ranking_pampered.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_ranking_pampered.ThousandsSeparator = True
         '
         'Title_ranking_pampered
         '
@@ -6265,6 +6655,7 @@ Partial Class TL_SaveEditor
         Me.Text_save_mii.BackColor = System.Drawing.Color.Transparent
         Me.Text_save_mii.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_save_mii.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_save_mii.Enabled = False
         Me.Text_save_mii.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Text_save_mii.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_save_mii.Location = New System.Drawing.Point(0, 0)
@@ -6460,37 +6851,6 @@ Partial Class TL_SaveEditor
         Me.TabControl1.ResumeLayout(False)
         Me.Tab_mii_edit.ResumeLayout(False)
         Me.Tab_mii_edit.PerformLayout()
-        Me.Panel_mii_musics.ResumeLayout(False)
-        Me.Fea_musics_musical.ResumeLayout(False)
-        Me.Fea_musics_techno.ResumeLayout(False)
-        Me.Fea_musics_opera.ResumeLayout(False)
-        Me.Fea_musics_ballad.ResumeLayout(False)
-        Me.Fea_musics_rap.ResumeLayout(False)
-        Me.Fea_musics_rockroll.ResumeLayout(False)
-        Me.Fea_musics_pop.ResumeLayout(False)
-        Me.Fea_musics_metal.ResumeLayout(False)
-        Me.Fea_unlock_music.ResumeLayout(False)
-        CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_cathphrase.ResumeLayout(False)
-        Me.Panel_cathph_J1.ResumeLayout(False)
-        Me.Panel_cathph_J1.PerformLayout()
-        Me.Panel_cathph_J2.ResumeLayout(False)
-        Me.Panel_cathph_J2.PerformLayout()
-        Me.Panel_cathph_05.ResumeLayout(False)
-        Me.Panel_cathph_05.PerformLayout()
-        Me.Panel_cathph_04.ResumeLayout(False)
-        Me.Panel_cathph_04.PerformLayout()
-        Me.Panel_cathph_03.ResumeLayout(False)
-        Me.Panel_cathph_03.PerformLayout()
-        Me.Panel_cathph_02.ResumeLayout(False)
-        Me.Panel_cathph_02.PerformLayout()
-        Me.Panel_cathph_01.ResumeLayout(False)
-        Me.Panel_cathph_01.PerformLayout()
-        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_edit_haircolor.ResumeLayout(False)
         Me.Panel_edit_haircolor.PerformLayout()
         CType(Me.color_32, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6525,6 +6885,37 @@ Partial Class TL_SaveEditor
         CType(Me.color_3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.color_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.color_1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_mii_musics.ResumeLayout(False)
+        Me.Fea_musics_musical.ResumeLayout(False)
+        Me.Fea_musics_techno.ResumeLayout(False)
+        Me.Fea_musics_opera.ResumeLayout(False)
+        Me.Fea_musics_ballad.ResumeLayout(False)
+        Me.Fea_musics_rap.ResumeLayout(False)
+        Me.Fea_musics_rockroll.ResumeLayout(False)
+        Me.Fea_musics_pop.ResumeLayout(False)
+        Me.Fea_musics_metal.ResumeLayout(False)
+        Me.Fea_unlock_music.ResumeLayout(False)
+        CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_cathphrase.ResumeLayout(False)
+        Me.Panel_cathph_J1.ResumeLayout(False)
+        Me.Panel_cathph_J1.PerformLayout()
+        Me.Panel_cathph_J2.ResumeLayout(False)
+        Me.Panel_cathph_J2.PerformLayout()
+        Me.Panel_cathph_05.ResumeLayout(False)
+        Me.Panel_cathph_05.PerformLayout()
+        Me.Panel_cathph_04.ResumeLayout(False)
+        Me.Panel_cathph_04.PerformLayout()
+        Me.Panel_cathph_03.ResumeLayout(False)
+        Me.Panel_cathph_03.PerformLayout()
+        Me.Panel_cathph_02.ResumeLayout(False)
+        Me.Panel_cathph_02.PerformLayout()
+        Me.Panel_cathph_01.ResumeLayout(False)
+        Me.Panel_cathph_01.PerformLayout()
+        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_miiMhouse, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_miiMhouse, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_haircolor, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6627,6 +7018,36 @@ Partial Class TL_SaveEditor
         CType(Me.valu_exp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Tab_mii_friendlist.ResumeLayout(False)
         Me.Tab_mii_friendlist.PerformLayout()
+        CType(Me.valu_selfriend_rela_30, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_29, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_28, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_27, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_selfriend_rela_1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
@@ -7033,12 +7454,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents color_2 As System.Windows.Forms.PictureBox
     Friend WithEvents color_1 As System.Windows.Forms.PictureBox
     Friend WithEvents color_empty As System.Windows.Forms.Label
-    Friend WithEvents Label49 As System.Windows.Forms.Label
-    Friend WithEvents Label48 As System.Windows.Forms.Label
-    Friend WithEvents Label47 As System.Windows.Forms.Label
-    Friend WithEvents Label46 As System.Windows.Forms.Label
-    Friend WithEvents Label45 As System.Windows.Forms.Label
-    Friend WithEvents Label44 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_6 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_5 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_4 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_3 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_2 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_1 As System.Windows.Forms.Label
     Friend WithEvents valu_friend_rela_6 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_5 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_4 As System.Windows.Forms.NumericUpDown
@@ -7051,12 +7472,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents Select_friend_rela_27 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_26 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_25 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label25 As System.Windows.Forms.Label
-    Friend WithEvents Label26 As System.Windows.Forms.Label
-    Friend WithEvents Label27 As System.Windows.Forms.Label
-    Friend WithEvents Label33 As System.Windows.Forms.Label
-    Friend WithEvents Label34 As System.Windows.Forms.Label
-    Friend WithEvents Label35 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_30 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_29 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_28 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_27 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_26 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_25 As System.Windows.Forms.Label
     Friend WithEvents valu_friend_rela_30 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_29 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_28 As System.Windows.Forms.NumericUpDown
@@ -7069,12 +7490,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents Select_friend_rela_21 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_20 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_19 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_24 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_23 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_22 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_21 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_20 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_19 As System.Windows.Forms.Label
     Friend WithEvents valu_friend_rela_24 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_23 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_22 As System.Windows.Forms.NumericUpDown
@@ -7087,12 +7508,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents Select_friend_rela_15 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_14 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_13 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label17 As System.Windows.Forms.Label
-    Friend WithEvents Label18 As System.Windows.Forms.Label
-    Friend WithEvents Label19 As System.Windows.Forms.Label
-    Friend WithEvents Label20 As System.Windows.Forms.Label
-    Friend WithEvents Label23 As System.Windows.Forms.Label
-    Friend WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_18 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_17 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_16 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_15 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_14 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_13 As System.Windows.Forms.Label
     Friend WithEvents valu_friend_rela_18 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_17 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_16 As System.Windows.Forms.NumericUpDown
@@ -7105,12 +7526,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents Select_friend_rela_9 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_8 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_friend_rela_7 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_12 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_11 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_10 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_9 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_8 As System.Windows.Forms.Label
+    Friend WithEvents Text_friendmii_7 As System.Windows.Forms.Label
     Friend WithEvents valu_friend_rela_12 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_11 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_friend_rela_10 As System.Windows.Forms.NumericUpDown
@@ -7157,5 +7578,35 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_cathph_J1 As System.Windows.Forms.TextBox
     Friend WithEvents Panel_cathph_J2 As System.Windows.Forms.Panel
     Friend WithEvents Text_cathph_J2 As System.Windows.Forms.TextBox
+    Friend WithEvents valu_selfriend_rela_30 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_29 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_28 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_27 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_26 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_25 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_24 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_23 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_22 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_21 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_20 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_19 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_18 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_17 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_16 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_15 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_14 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_13 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_12 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_11 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_10 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_9 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_8 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_7 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_6 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_5 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_4 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_3 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_selfriend_rela_1 As System.Windows.Forms.NumericUpDown
 
 End Class

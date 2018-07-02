@@ -102,6 +102,10 @@ Public Class TL_SaveEditor
     Dim Miitarget2 As String
     Dim Accessmii As String
     Dim Accessfriends As String
+    Dim Emotions As String
+    Dim Accessfriendlist As String
+    Dim AccessMiilist As String
+    Dim Accessrelalist As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -968,6 +972,9 @@ Public Class TL_SaveEditor
                 Reader.Position = &H29AE6 + Accessfriends  'Mii friendlist
                 Mhouse = Reader.Position
                 valu_miiMhouse.Value = Reader.ReadByte
+                Reader.Position = &H1F2C + Accessmii
+                Emotions = Reader.Position
+                valu_emotions.Value = Reader.ReadByte
             End If
             If Filever_text.Text = "JP" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
@@ -1116,7 +1123,12 @@ Public Class TL_SaveEditor
                 Reader.Position = &H24976 + Accessfriends  'Mii friendlist
                 Mhouse = Reader.Position
                 valu_miiMhouse.Value = Reader.ReadByte
+                Reader.Position = &H1E2C + Accessmii
+                Emotions = Reader.Position
+                valu_emotions.Value = Reader.ReadByte
             End If
+            Select_allfriends.Enabled = True
+            Text_save_mii.Enabled = True
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Failed to read informations of this Mii, make sure you have opened a file, or report this issue"
@@ -1127,6 +1139,8 @@ Public Class TL_SaveEditor
                 fdialog.ShowDialog()
             End If
             Select_mii.SelectedItem = Nothing
+            Select_allfriends.Enabled = False
+            Text_save_mii.Enabled = False
         End Try
     End Sub
 
@@ -1161,6 +1175,20 @@ Public Class TL_SaveEditor
             Writer.WriteUInt16(valu_itemmii_7.Value)
             Writer.Position = objet8
             Writer.WriteUInt16(valu_itemmii_8.Value)
+            Writer.Position = alltime
+            Writer.WriteUInt16(valu_allfav_1.Value)
+            Writer.Position = alltime2
+            Writer.WriteUInt16(valu_allfav_2.Value)
+            Writer.Position = fav
+            Writer.WriteUInt16(valu_fav_1.Value)
+            Writer.Position = fav2
+            Writer.WriteUInt16(valu_fav_2.Value)
+            Writer.Position = fav3
+            Writer.WriteUInt16(valu_fav_3.Value)
+            Writer.Position = worst
+            Writer.WriteUInt16(valu_worst_1.Value)
+            Writer.Position = worst2
+            Writer.WriteUInt16(valu_worst_2.Value)
             For i As Integer = 0 To 31
                 Writer.Position = bull2 + i
                 Writer.WriteInt8(0)
@@ -1185,6 +1213,18 @@ Public Class TL_SaveEditor
             Next
             Writer.Position = bull5
             Writer.WriteUnicodeString(Text_cathph_05.Text)
+            Writer.Position = econom
+            Writer.WriteUInt32(valu_economy.Value)
+            Writer.Position = Miiinteraction
+            Writer.WriteHexString(Text_interaction.Text)
+            Writer.Position = Miitarget1
+            Writer.WriteUInt16(valu_target1.Value)
+            Writer.Position = Miitarget2
+            Writer.WriteUInt16(valu_target2.Value)
+            Writer.Position = Splurge
+            Writer.WriteUInt32(valu_ranking_splurge.Value)
+            Writer.Position = Pampered
+            Writer.WriteUInt32(valu_ranking_pampered.Value)
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 For i As Integer = 0 To 59
                     Writer.Position = Mii1PP + i
@@ -1219,7 +1259,37 @@ Public Class TL_SaveEditor
                 Writer.Position = bullj2
                 Writer.WriteUnicodeString(Text_cathph_J2.Text)
             End If
-
+            If Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(1) Then
+                Writer.Position = objdiv
+                Writer.WriteUInt24(262143)
+            ElseIf Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(2) Then
+                Writer.Position = objdiv
+                Writer.WriteUInt24(0)
+            End If
+            If Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(1) Then
+                For i As Integer = 0 To 10
+                    Writer.Position = interieur + i
+                    Writer.WriteUInt16(65535)
+                Next
+                Writer.Position = interieur1
+                Writer.WriteUInt16(16383)
+            ElseIf Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(2) Then
+                For i As Integer = 0 To 11
+                    Writer.Position = interieur + i
+                    Writer.WriteUInt16(0)
+                Next
+            End If
+            If Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(1) Then
+                For i As Integer = 0 To 4
+                    Writer.Position = Sfoods + i
+                    Writer.WriteUInt16(65535)
+                Next
+            ElseIf Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(2) Then
+                For i As Integer = 0 To 4
+                    Writer.Position = Sfoods + i
+                    Writer.WriteUInt16(0)
+                Next
+            End If
             Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
             fs.Position = Mii1L
             fs.WriteByte(valu_level.Value)
@@ -1227,6 +1297,22 @@ Public Class TL_SaveEditor
             fs.WriteByte(valu_relationyou.Value)
             fs.Position = exp
             fs.WriteByte(valu_experience.Value)
+            fs.Position = eat
+            fs.WriteByte(valu_chkfullness.Value)
+            fs.Position = fullness
+            fs.WriteByte(valu_fullness.Value)
+            fs.Position = MiiHC
+            fs.WriteByte(valu_haircolor.Value)
+            fs.Position = grow
+            fs.WriteByte(valu_growkid.Value)
+            fs.Position = House
+            fs.WriteByte(valu_miihouse.Value)
+            fs.Position = Mhouse
+            fs.WriteByte(valu_miiMhouse.Value)
+            fs.Position = Miimusic
+            fs.WriteByte(valu_allmusic.Value)
+            fs.Position = Emotions
+            fs.WriteByte(valu_emotions.Value)
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Failed to save changes on this Mii, make sure you have opened a save file, or report this issue"
@@ -1237,6 +1323,514 @@ Public Class TL_SaveEditor
                 fdialog.ShowDialog()
             End If
         End Try
+    End Sub
+
+    Public Sub readfriendlist()
+        Try
+            Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+
+            Reader.Position = AccessMiilist
+            Text_friendmii_1.Text = Reader.ReadUnicodeString(10)
+            Reader.Position = Accessfriendlist
+            valu_friend_rela_1.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist
+            valu_selfriend_rela_1.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + &H660
+                Text_friendmii_2.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + &H590
+                Text_friendmii_2.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + &H1
+            valu_friend_rela_2.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + &H1
+            valu_selfriend_rela_2.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 2)
+                Text_friendmii_3.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 2)
+                Text_friendmii_3.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 2)
+            valu_friend_rela_3.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 2)
+            valu_selfriend_rela_3.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 3)
+                Text_friendmii_4.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 3)
+                Text_friendmii_4.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 3)
+            valu_friend_rela_4.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 3)
+            valu_selfriend_rela_4.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 4)
+                Text_friendmii_5.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 4)
+                Text_friendmii_5.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 4)
+            valu_friend_rela_5.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 4)
+            valu_selfriend_rela_5.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 5)
+                Text_friendmii_6.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 5)
+                Text_friendmii_6.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 5)
+            valu_friend_rela_6.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 5)
+            valu_selfriend_rela_6.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 6)
+                Text_friendmii_7.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 6)
+                Text_friendmii_7.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 6)
+            valu_friend_rela_7.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 6)
+            valu_selfriend_rela_7.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 7)
+                Text_friendmii_8.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 7)
+                Text_friendmii_8.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 7)
+            valu_friend_rela_8.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 7)
+            valu_selfriend_rela_8.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 8)
+                Text_friendmii_9.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 8)
+                Text_friendmii_9.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 8)
+            valu_friend_rela_9.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 8)
+            valu_selfriend_rela_9.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 9)
+                Text_friendmii_10.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 9)
+                Text_friendmii_10.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 9)
+            valu_friend_rela_10.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 9)
+            valu_selfriend_rela_10.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 10)
+                Text_friendmii_11.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 10)
+                Text_friendmii_11.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 10)
+            valu_friend_rela_11.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 10)
+            valu_selfriend_rela_11.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 11)
+                Text_friendmii_12.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 11)
+                Text_friendmii_12.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 11)
+            valu_friend_rela_12.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 11)
+            valu_selfriend_rela_12.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 12)
+                Text_friendmii_13.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 12)
+                Text_friendmii_13.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 12)
+            valu_friend_rela_13.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 12)
+            valu_selfriend_rela_13.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 13)
+                Text_friendmii_14.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 13)
+                Text_friendmii_14.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 13)
+            valu_friend_rela_14.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 13)
+            valu_selfriend_rela_14.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 14)
+                Text_friendmii_15.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 14)
+                Text_friendmii_15.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 14)
+            valu_friend_rela_15.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 14)
+            valu_selfriend_rela_15.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 15)
+                Text_friendmii_16.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 15)
+                Text_friendmii_16.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 15)
+            valu_friend_rela_16.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 15)
+            valu_selfriend_rela_16.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 16)
+                Text_friendmii_17.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 16)
+                Text_friendmii_17.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 16)
+            valu_friend_rela_17.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 16)
+            valu_selfriend_rela_17.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 17)
+                Text_friendmii_18.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 17)
+                Text_friendmii_18.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 17)
+            valu_friend_rela_18.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 17)
+            valu_selfriend_rela_18.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 18)
+                Text_friendmii_19.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 18)
+                Text_friendmii_19.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 18)
+            valu_friend_rela_19.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 18)
+            valu_selfriend_rela_19.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 19)
+                Text_friendmii_20.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 19)
+                Text_friendmii_20.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 19)
+            valu_friend_rela_20.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 19)
+            valu_selfriend_rela_20.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 20)
+                Text_friendmii_21.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 20)
+                Text_friendmii_21.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 20)
+            valu_friend_rela_21.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 20)
+            valu_selfriend_rela_21.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 21)
+                Text_friendmii_22.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 21)
+                Text_friendmii_22.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 21)
+            valu_friend_rela_22.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 21)
+            valu_selfriend_rela_22.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 22)
+                Text_friendmii_23.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 22)
+                Text_friendmii_23.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 22)
+            valu_friend_rela_23.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 22)
+            valu_selfriend_rela_23.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 23)
+                Text_friendmii_24.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 23)
+                Text_friendmii_24.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 23)
+            valu_friend_rela_24.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 23)
+            valu_selfriend_rela_24.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 24)
+                Text_friendmii_25.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 24)
+                Text_friendmii_25.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 24)
+            valu_friend_rela_25.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 24)
+            valu_selfriend_rela_25.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 25)
+                Text_friendmii_26.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 25)
+                Text_friendmii_26.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 25)
+            valu_friend_rela_26.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 25)
+            valu_selfriend_rela_26.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 26)
+                Text_friendmii_27.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 26)
+                Text_friendmii_27.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 26)
+            valu_friend_rela_27.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 26)
+            valu_selfriend_rela_27.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 27)
+                Text_friendmii_28.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 27)
+                Text_friendmii_28.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 27)
+            valu_friend_rela_28.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 27)
+            valu_selfriend_rela_28.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 28)
+                Text_friendmii_29.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 28)
+                Text_friendmii_29.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 28)
+            valu_friend_rela_29.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 28)
+            valu_selfriend_rela_29.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = AccessMiilist + (&H660 * 29)
+                Text_friendmii_30.Text = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = AccessMiilist + (&H590 * 29)
+                Text_friendmii_30.Text = Reader.ReadUnicodeString(10)
+            End If
+            Reader.Position = Accessfriendlist + (&H1 * 29)
+            valu_friend_rela_30.Value = Reader.ReadByte
+            Reader.Position = Accessrelalist + (&H1 * 29)
+            valu_selfriend_rela_30.Value = Reader.ReadByte
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Public Sub writefriendlist()
+        Try
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Public Sub hidefriendlist()
+        If Select_allfriends.SelectedItem = Select_allfriends.Items.Item(0) Or Select_allfriends.SelectedItem = Select_allfriends.Items.Item(1) Or Select_allfriends.SelectedItem = Select_allfriends.Items.Item(2) Then
+            Text_friendmii_11.Visible = True
+            valu_friend_rela_11.Visible = True
+            valu_selfriend_rela_11.Visible = True
+            Select_friend_rela_11.Visible = True
+            Text_friendmii_12.Visible = True
+            valu_friend_rela_12.Visible = True
+            valu_selfriend_rela_12.Visible = True
+            Select_friend_rela_12.Visible = True
+            Text_friendmii_13.Visible = True
+            valu_friend_rela_13.Visible = True
+            valu_selfriend_rela_13.Visible = True
+            Select_friend_rela_13.Visible = True
+            Text_friendmii_14.Visible = True
+            valu_friend_rela_14.Visible = True
+            valu_selfriend_rela_14.Visible = True
+            Select_friend_rela_14.Visible = True
+            Text_friendmii_15.Visible = True
+            valu_friend_rela_15.Visible = True
+            valu_selfriend_rela_15.Visible = True
+            Select_friend_rela_15.Visible = True
+            Text_friendmii_16.Visible = True
+            valu_friend_rela_16.Visible = True
+            valu_selfriend_rela_16.Visible = True
+            Select_friend_rela_16.Visible = True
+            Text_friendmii_17.Visible = True
+            valu_friend_rela_17.Visible = True
+            valu_selfriend_rela_17.Visible = True
+            Select_friend_rela_17.Visible = True
+            Text_friendmii_18.Visible = True
+            valu_friend_rela_18.Visible = True
+            valu_selfriend_rela_18.Visible = True
+            Select_friend_rela_18.Visible = True
+            Text_friendmii_19.Visible = True
+            valu_friend_rela_19.Visible = True
+            valu_selfriend_rela_19.Visible = True
+            Select_friend_rela_19.Visible = True
+            Text_friendmii_20.Visible = True
+            valu_friend_rela_20.Visible = True
+            valu_selfriend_rela_20.Visible = True
+            Select_friend_rela_20.Visible = True
+            Text_friendmii_21.Visible = True
+            valu_friend_rela_21.Visible = True
+            valu_selfriend_rela_21.Visible = True
+            Select_friend_rela_21.Visible = True
+            Text_friendmii_22.Visible = True
+            valu_friend_rela_22.Visible = True
+            valu_selfriend_rela_22.Visible = True
+            Select_friend_rela_22.Visible = True
+            Text_friendmii_23.Visible = True
+            valu_friend_rela_23.Visible = True
+            valu_selfriend_rela_23.Visible = True
+            Select_friend_rela_23.Visible = True
+            Text_friendmii_24.Visible = True
+            valu_friend_rela_24.Visible = True
+            valu_selfriend_rela_24.Visible = True
+            Select_friend_rela_24.Visible = True
+            Text_friendmii_25.Visible = True
+            valu_friend_rela_25.Visible = True
+            valu_selfriend_rela_25.Visible = True
+            Select_friend_rela_25.Visible = True
+            Text_friendmii_26.Visible = True
+            valu_friend_rela_26.Visible = True
+            valu_selfriend_rela_26.Visible = True
+            Select_friend_rela_26.Visible = True
+            Text_friendmii_27.Visible = True
+            valu_friend_rela_27.Visible = True
+            valu_selfriend_rela_27.Visible = True
+            Select_friend_rela_27.Visible = True
+            Text_friendmii_28.Visible = True
+            valu_friend_rela_28.Visible = True
+            valu_selfriend_rela_28.Visible = True
+            Select_friend_rela_28.Visible = True
+            Text_friendmii_29.Visible = True
+            valu_friend_rela_29.Visible = True
+            valu_selfriend_rela_29.Visible = True
+            Select_friend_rela_29.Visible = True
+            Text_friendmii_30.Visible = True
+            valu_friend_rela_30.Visible = True
+            valu_selfriend_rela_30.Visible = True
+            Select_friend_rela_30.Visible = True
+        ElseIf Select_allfriends.SelectedItem = Select_allfriends.Items.Item(3) Then
+            Text_friendmii_11.Visible = False
+            valu_friend_rela_11.Visible = False
+            valu_selfriend_rela_11.Visible = False
+            Select_friend_rela_11.Visible = False
+            Text_friendmii_12.Visible = False
+            valu_friend_rela_12.Visible = False
+            valu_selfriend_rela_12.Visible = False
+            Select_friend_rela_12.Visible = False
+            Text_friendmii_13.Visible = False
+            valu_friend_rela_13.Visible = False
+            valu_selfriend_rela_13.Visible = False
+            Select_friend_rela_13.Visible = False
+            Text_friendmii_14.Visible = False
+            valu_friend_rela_14.Visible = False
+            valu_selfriend_rela_14.Visible = False
+            Select_friend_rela_14.Visible = False
+            Text_friendmii_15.Visible = False
+            valu_friend_rela_15.Visible = False
+            valu_selfriend_rela_15.Visible = False
+            Select_friend_rela_15.Visible = False
+            Text_friendmii_16.Visible = False
+            valu_friend_rela_16.Visible = False
+            valu_selfriend_rela_16.Visible = False
+            Select_friend_rela_16.Visible = False
+            Text_friendmii_17.Visible = False
+            valu_friend_rela_17.Visible = False
+            valu_selfriend_rela_17.Visible = False
+            Select_friend_rela_17.Visible = False
+            Text_friendmii_18.Visible = False
+            valu_friend_rela_18.Visible = False
+            valu_selfriend_rela_18.Visible = False
+            Select_friend_rela_18.Visible = False
+            Text_friendmii_19.Visible = False
+            valu_friend_rela_19.Visible = False
+            valu_selfriend_rela_19.Visible = False
+            Select_friend_rela_19.Visible = False
+            Text_friendmii_20.Visible = False
+            valu_friend_rela_20.Visible = False
+            valu_selfriend_rela_20.Visible = False
+            Select_friend_rela_20.Visible = False
+            Text_friendmii_21.Visible = False
+            valu_friend_rela_21.Visible = False
+            valu_selfriend_rela_21.Visible = False
+            Select_friend_rela_21.Visible = False
+            Text_friendmii_22.Visible = False
+            valu_friend_rela_22.Visible = False
+            valu_selfriend_rela_22.Visible = False
+            Select_friend_rela_22.Visible = False
+            Text_friendmii_23.Visible = False
+            valu_friend_rela_23.Visible = False
+            valu_selfriend_rela_23.Visible = False
+            Select_friend_rela_23.Visible = False
+            Text_friendmii_24.Visible = False
+            valu_friend_rela_24.Visible = False
+            valu_selfriend_rela_24.Visible = False
+            Select_friend_rela_24.Visible = False
+            Text_friendmii_25.Visible = False
+            valu_friend_rela_25.Visible = False
+            valu_selfriend_rela_25.Visible = False
+            Select_friend_rela_25.Visible = False
+            Text_friendmii_26.Visible = False
+            valu_friend_rela_26.Visible = False
+            valu_selfriend_rela_26.Visible = False
+            Select_friend_rela_26.Visible = False
+            Text_friendmii_27.Visible = False
+            valu_friend_rela_27.Visible = False
+            valu_selfriend_rela_27.Visible = False
+            Select_friend_rela_27.Visible = False
+            Text_friendmii_28.Visible = False
+            valu_friend_rela_28.Visible = False
+            valu_selfriend_rela_28.Visible = False
+            Select_friend_rela_28.Visible = False
+            Text_friendmii_29.Visible = False
+            valu_friend_rela_29.Visible = False
+            valu_selfriend_rela_29.Visible = False
+            Select_friend_rela_29.Visible = False
+            Text_friendmii_30.Visible = False
+            valu_friend_rela_30.Visible = False
+            valu_selfriend_rela_30.Visible = False
+            Select_friend_rela_30.Visible = False
+        End If
     End Sub
 
     Private Sub Closebutton_Click(sender As Object, e As EventArgs) Handles Closebutton.Click
@@ -4402,410 +4996,612 @@ Public Class TL_SaveEditor
         Select_interaction.SelectedItem = Select_interaction.Items.Item(0)
         Select_emotions.SelectedItem = Select_emotions.Items.Item(0)
         Check_fullness.Checked = False
+        Select_growkid.SelectedItem = Select_growkid.Items.Item(0)
+        Select_allfriends.SelectedItem = Nothing
         If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
             If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
                 Accessmii = &H0
+                Accessfriends = &H0
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
                 Accessmii = &H660
+                Accessfriends = &H100
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
                 Accessmii = &H660 * 2
+                Accessfriends = &H100 * 2
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
                 Accessmii = &H660 * 3
+                Accessfriends = &H100 * 3
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
                 Accessmii = &H660 * 4
+                Accessfriends = &H100 * 4
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
                 Accessmii = &H660 * 5
+                Accessfriends = &H100 * 5
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
                 Accessmii = &H660 * 6
+                Accessfriends = &H100 * 6
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
                 Accessmii = &H660 * 7
+                Accessfriends = &H100 * 7
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
                 Accessmii = &H660 * 8
+                Accessfriends = &H100 * 8
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
                 Accessmii = &H660 * 9
+                Accessfriends = &H100 * 9
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
                 Accessmii = &H660 * 10
+                Accessfriends = &H100 * 10
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
                 Accessmii = &H660 * 11
+                Accessfriends = &H100 * 11
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
                 Accessmii = &H660 * 12
+                Accessfriends = &H100 * 12
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
                 Accessmii = &H660 * 13
+                Accessfriends = &H100 * 13
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
                 Accessmii = &H660 * 14
+                Accessfriends = &H100 * 14
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
                 Accessmii = &H660 * 15
+                Accessfriends = &H100 * 15
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
                 Accessmii = &H660 * 16
+                Accessfriends = &H100 * 16
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
                 Accessmii = &H660 * 17
+                Accessfriends = &H100 * 17
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
                 Accessmii = &H660 * 18
+                Accessfriends = &H100 * 18
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
                 Accessmii = &H660 * 19
+                Accessfriends = &H100 * 19
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
                 Accessmii = &H660 * 20
+                Accessfriends = &H100 * 20
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
                 Accessmii = &H660 * 21
+                Accessfriends = &H100 * 21
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
                 Accessmii = &H660 * 22
+                Accessfriends = &H100 * 22
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
                 Accessmii = &H660 * 23
+                Accessfriends = &H100 * 23
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
                 Accessmii = &H660 * 24
+                Accessfriends = &H100 * 24
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
                 Accessmii = &H660 * 25
+                Accessfriends = &H100 * 25
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
                 Accessmii = &H660 * 26
+                Accessfriends = &H100 * 26
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
                 Accessmii = &H660 * 27
+                Accessfriends = &H100 * 27
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
                 Accessmii = &H660 * 28
+                Accessfriends = &H100 * 28
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
                 Accessmii = &H660 * 29
+                Accessfriends = &H100 * 29
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
                 Accessmii = &H660 * 30
+                Accessfriends = &H100 * 30
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
                 Accessmii = &H660 * 31
+                Accessfriends = &H100 * 31
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
                 Accessmii = &H660 * 32
+                Accessfriends = &H100 * 32
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
                 Accessmii = &H660 * 33
+                Accessfriends = &H100 * 33
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
                 Accessmii = &H660 * 34
+                Accessfriends = &H100 * 34
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
                 Accessmii = &H660 * 35
+                Accessfriends = &H100 * 35
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
                 Accessmii = &H660 * 36
+                Accessfriends = &H100 * 36
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
                 Accessmii = &H660 * 37
+                Accessfriends = &H100 * 37
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
                 Accessmii = &H660 * 38
+                Accessfriends = &H100 * 38
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
                 Accessmii = &H660 * 39
+                Accessfriends = &H100 * 39
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
                 Accessmii = &H660 * 40
+                Accessfriends = &H100 * 40
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
                 Accessmii = &H660 * 41
+                Accessfriends = &H100 * 41
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
                 Accessmii = &H660 * 42
+                Accessfriends = &H100 * 42
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
                 Accessmii = &H660 * 43
+                Accessfriends = &H100 * 43
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
                 Accessmii = &H660 * 44
+                Accessfriends = &H100 * 44
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
                 Accessmii = &H660 * 45
+                Accessfriends = &H100 * 45
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
                 Accessmii = &H660 * 46
+                Accessfriends = &H100 * 46
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
                 Accessmii = &H660 * 47
+                Accessfriends = &H100 * 47
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
                 Accessmii = &H660 * 48
+                Accessfriends = &H100 * 48
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
                 Accessmii = &H660 * 49
+                Accessfriends = &H100 * 49
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(50) Then
                 Accessmii = &H660 * 50
+                Accessfriends = &H100 * 50
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(51) Then
                 Accessmii = &H660 * 51
+                Accessfriends = &H100 * 51
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(52) Then
                 Accessmii = &H660 * 52
+                Accessfriends = &H100 * 52
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(53) Then
                 Accessmii = &H660 * 53
+                Accessfriends = &H100 * 53
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(54) Then
                 Accessmii = &H660 * 54
+                Accessfriends = &H100 * 54
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(55) Then
                 Accessmii = &H660 * 55
+                Accessfriends = &H100 * 55
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(56) Then
                 Accessmii = &H660 * 56
+                Accessfriends = &H100 * 56
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(57) Then
                 Accessmii = &H660 * 57
+                Accessfriends = &H100 * 57
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(58) Then
                 Accessmii = &H660 * 58
+                Accessfriends = &H100 * 58
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(59) Then
                 Accessmii = &H660 * 59
+                Accessfriends = &H100 * 59
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(60) Then
                 Accessmii = &H660 * 60
+                Accessfriends = &H100 * 60
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(61) Then
                 Accessmii = &H660 * 61
+                Accessfriends = &H100 * 61
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(62) Then
                 Accessmii = &H660 * 62
+                Accessfriends = &H100 * 62
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(63) Then
                 Accessmii = &H660 * 63
+                Accessfriends = &H100 * 63
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(64) Then
                 Accessmii = &H660 * 64
+                Accessfriends = &H100 * 64
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(65) Then
                 Accessmii = &H660 * 65
+                Accessfriends = &H100 * 65
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(66) Then
                 Accessmii = &H660 * 66
+                Accessfriends = &H100 * 66
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(67) Then
                 Accessmii = &H660 * 67
+                Accessfriends = &H100 * 67
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(68) Then
                 Accessmii = &H660 * 68
+                Accessfriends = &H100 * 68
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(69) Then
                 Accessmii = &H660 * 69
+                Accessfriends = &H100 * 69
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(70) Then
                 Accessmii = &H660 * 70
+                Accessfriends = &H100 * 70
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(71) Then
                 Accessmii = &H660 * 71
+                Accessfriends = &H100 * 71
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(72) Then
                 Accessmii = &H660 * 72
+                Accessfriends = &H100 * 72
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(73) Then
                 Accessmii = &H660 * 73
+                Accessfriends = &H100 * 73
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(74) Then
                 Accessmii = &H660 * 74
+                Accessfriends = &H100 * 74
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(75) Then
                 Accessmii = &H660 * 75
+                Accessfriends = &H100 * 75
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(76) Then
                 Accessmii = &H660 * 76
+                Accessfriends = &H100 * 76
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(77) Then
                 Accessmii = &H660 * 77
+                Accessfriends = &H100 * 77
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(78) Then
                 Accessmii = &H660 * 78
+                Accessfriends = &H100 * 78
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(79) Then
                 Accessmii = &H660 * 79
+                Accessfriends = &H100 * 79
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(80) Then
                 Accessmii = &H660 * 80
+                Accessfriends = &H100 * 80
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(81) Then
                 Accessmii = &H660 * 81
+                Accessfriends = &H100 * 81
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(82) Then
                 Accessmii = &H660 * 82
+                Accessfriends = &H100 * 82
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(83) Then
                 Accessmii = &H660 * 83
+                Accessfriends = &H100 * 83
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(84) Then
                 Accessmii = &H660 * 84
+                Accessfriends = &H100 * 84
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(85) Then
                 Accessmii = &H660 * 85
+                Accessfriends = &H100 * 85
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(86) Then
                 Accessmii = &H660 * 86
+                Accessfriends = &H100 * 86
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(87) Then
                 Accessmii = &H660 * 87
+                Accessfriends = &H100 * 87
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(88) Then
                 Accessmii = &H660 * 88
+                Accessfriends = &H100 * 88
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(89) Then
                 Accessmii = &H660 * 89
+                Accessfriends = &H100 * 89
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(90) Then
                 Accessmii = &H660 * 90
+                Accessfriends = &H100 * 90
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(91) Then
                 Accessmii = &H660 * 91
+                Accessfriends = &H100 * 91
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(92) Then
                 Accessmii = &H660 * 92
+                Accessfriends = &H100 * 92
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(93) Then
                 Accessmii = &H660 * 93
+                Accessfriends = &H100 * 93
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(94) Then
                 Accessmii = &H660 * 94
+                Accessfriends = &H100 * 94
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(95) Then
                 Accessmii = &H660 * 95
+                Accessfriends = &H100 * 95
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(96) Then
                 Accessmii = &H660 * 96
+                Accessfriends = &H100 * 96
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(97) Then
                 Accessmii = &H660 * 97
+                Accessfriends = &H100 * 97
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(98) Then
                 Accessmii = &H660 * 98
+                Accessfriends = &H100 * 98
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(99) Then
                 Accessmii = &H660 * 99
+                Accessfriends = &H100 * 99
             End If
         End If
         If Filever_text.Text = "JP" Then
             If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
                 Accessmii = &H0
+                Accessfriends = &H0
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
                 Accessmii = &H590
+                Accessfriends = &H100
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
                 Accessmii = &H590 * 2
+                Accessfriends = &H100 * 2
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
                 Accessmii = &H590 * 3
+                Accessfriends = &H100 * 3
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
                 Accessmii = &H590 * 4
+                Accessfriends = &H100 * 4
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
                 Accessmii = &H590 * 5
+                Accessfriends = &H100 * 5
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
                 Accessmii = &H590 * 6
+                Accessfriends = &H100 * 6
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
                 Accessmii = &H590 * 7
+                Accessfriends = &H100 * 7
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
                 Accessmii = &H590 * 8
+                Accessfriends = &H100 * 8
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
                 Accessmii = &H590 * 9
+                Accessfriends = &H100 * 9
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
                 Accessmii = &H590 * 10
+                Accessfriends = &H100 * 10
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
                 Accessmii = &H590 * 11
+                Accessfriends = &H100 * 11
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
                 Accessmii = &H590 * 12
+                Accessfriends = &H100 * 12
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
                 Accessmii = &H590 * 13
+                Accessfriends = &H100 * 13
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
                 Accessmii = &H590 * 14
+                Accessfriends = &H100 * 14
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
                 Accessmii = &H590 * 15
+                Accessfriends = &H100 * 15
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
                 Accessmii = &H590 * 16
+                Accessfriends = &H100 * 16
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
                 Accessmii = &H590 * 17
+                Accessfriends = &H100 * 17
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
                 Accessmii = &H590 * 18
+                Accessfriends = &H100 * 18
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
                 Accessmii = &H590 * 19
+                Accessfriends = &H100 * 19
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
                 Accessmii = &H590 * 20
+                Accessfriends = &H100 * 20
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
                 Accessmii = &H590 * 21
+                Accessfriends = &H100 * 21
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
                 Accessmii = &H590 * 22
+                Accessfriends = &H100 * 22
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
                 Accessmii = &H590 * 23
+                Accessfriends = &H100 * 23
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
                 Accessmii = &H590 * 24
+                Accessfriends = &H100 * 24
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
                 Accessmii = &H590 * 25
+                Accessfriends = &H100 * 25
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
                 Accessmii = &H590 * 26
+                Accessfriends = &H100 * 26
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
                 Accessmii = &H590 * 27
+                Accessfriends = &H100 * 27
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
                 Accessmii = &H590 * 28
+                Accessfriends = &H100 * 28
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
                 Accessmii = &H590 * 29
+                Accessfriends = &H100 * 29
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
                 Accessmii = &H590 * 30
+                Accessfriends = &H100 * 30
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
                 Accessmii = &H590 * 31
+                Accessfriends = &H100 * 31
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
                 Accessmii = &H590 * 32
+                Accessfriends = &H100 * 32
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
                 Accessmii = &H590 * 33
+                Accessfriends = &H100 * 33
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
                 Accessmii = &H590 * 34
+                Accessfriends = &H100 * 34
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
                 Accessmii = &H590 * 35
+                Accessfriends = &H100 * 35
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
                 Accessmii = &H590 * 36
+                Accessfriends = &H100 * 36
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
                 Accessmii = &H590 * 37
+                Accessfriends = &H100 * 37
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
                 Accessmii = &H590 * 38
+                Accessfriends = &H100 * 38
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
                 Accessmii = &H590 * 39
+                Accessfriends = &H100 * 39
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
                 Accessmii = &H590 * 40
+                Accessfriends = &H100 * 40
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
                 Accessmii = &H590 * 41
+                Accessfriends = &H100 * 41
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
                 Accessmii = &H590 * 42
+                Accessfriends = &H100 * 42
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
                 Accessmii = &H590 * 43
+                Accessfriends = &H100 * 43
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
                 Accessmii = &H590 * 44
+                Accessfriends = &H100 * 44
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
                 Accessmii = &H590 * 45
+                Accessfriends = &H100 * 45
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
                 Accessmii = &H590 * 46
+                Accessfriends = &H100 * 46
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
                 Accessmii = &H590 * 47
+                Accessfriends = &H100 * 47
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
                 Accessmii = &H590 * 48
+                Accessfriends = &H100 * 48
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
                 Accessmii = &H590 * 49
+                Accessfriends = &H100 * 49
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(50) Then
                 Accessmii = &H590 * 50
+                Accessfriends = &H100 * 50
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(51) Then
                 Accessmii = &H590 * 51
+                Accessfriends = &H100 * 51
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(52) Then
                 Accessmii = &H590 * 52
+                Accessfriends = &H100 * 52
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(53) Then
                 Accessmii = &H590 * 53
+                Accessfriends = &H100 * 53
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(54) Then
                 Accessmii = &H590 * 54
+                Accessfriends = &H100 * 54
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(55) Then
                 Accessmii = &H590 * 55
+                Accessfriends = &H100 * 55
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(56) Then
                 Accessmii = &H590 * 56
+                Accessfriends = &H100 * 56
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(57) Then
                 Accessmii = &H590 * 57
+                Accessfriends = &H100 * 57
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(58) Then
                 Accessmii = &H590 * 58
+                Accessfriends = &H100 * 58
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(59) Then
                 Accessmii = &H590 * 59
+                Accessfriends = &H100 * 59
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(60) Then
                 Accessmii = &H590 * 60
+                Accessfriends = &H100 * 60
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(61) Then
                 Accessmii = &H590 * 61
+                Accessfriends = &H100 * 61
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(62) Then
                 Accessmii = &H590 * 62
+                Accessfriends = &H100 * 62
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(63) Then
                 Accessmii = &H590 * 63
+                Accessfriends = &H100 * 63
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(64) Then
                 Accessmii = &H590 * 64
+                Accessfriends = &H100 * 64
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(65) Then
                 Accessmii = &H590 * 65
+                Accessfriends = &H100 * 65
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(66) Then
                 Accessmii = &H590 * 66
+                Accessfriends = &H100 * 66
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(67) Then
                 Accessmii = &H590 * 67
+                Accessfriends = &H100 * 67
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(68) Then
                 Accessmii = &H590 * 68
+                Accessfriends = &H100 * 68
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(69) Then
                 Accessmii = &H590 * 69
+                Accessfriends = &H100 * 69
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(70) Then
                 Accessmii = &H590 * 70
+                Accessfriends = &H100 * 70
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(71) Then
                 Accessmii = &H590 * 71
+                Accessfriends = &H100 * 71
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(72) Then
                 Accessmii = &H590 * 72
+                Accessfriends = &H100 * 72
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(73) Then
                 Accessmii = &H590 * 73
+                Accessfriends = &H100 * 73
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(74) Then
                 Accessmii = &H590 * 74
+                Accessfriends = &H100 * 74
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(75) Then
                 Accessmii = &H590 * 75
+                Accessfriends = &H100 * 75
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(76) Then
                 Accessmii = &H590 * 76
+                Accessfriends = &H100 * 76
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(77) Then
                 Accessmii = &H590 * 77
+                Accessfriends = &H100 * 77
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(78) Then
                 Accessmii = &H590 * 78
+                Accessfriends = &H100 * 78
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(79) Then
                 Accessmii = &H590 * 79
+                Accessfriends = &H100 * 79
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(80) Then
                 Accessmii = &H590 * 80
+                Accessfriends = &H100 * 80
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(81) Then
                 Accessmii = &H590 * 81
+                Accessfriends = &H100 * 81
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(82) Then
                 Accessmii = &H590 * 82
+                Accessfriends = &H100 * 82
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(83) Then
                 Accessmii = &H590 * 83
+                Accessfriends = &H100 * 83
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(84) Then
                 Accessmii = &H590 * 84
+                Accessfriends = &H100 * 84
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(85) Then
                 Accessmii = &H590 * 85
+                Accessfriends = &H100 * 85
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(86) Then
                 Accessmii = &H590 * 86
+                Accessfriends = &H100 * 86
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(87) Then
                 Accessmii = &H590 * 87
+                Accessfriends = &H100 * 87
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(88) Then
                 Accessmii = &H590 * 88
+                Accessfriends = &H100 * 88
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(89) Then
                 Accessmii = &H590 * 89
+                Accessfriends = &H100 * 89
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(90) Then
                 Accessmii = &H590 * 90
+                Accessfriends = &H100 * 90
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(91) Then
                 Accessmii = &H590 * 91
+                Accessfriends = &H100 * 91
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(92) Then
                 Accessmii = &H590 * 92
+                Accessfriends = &H100 * 92
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(93) Then
                 Accessmii = &H590 * 93
+                Accessfriends = &H100 * 93
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(94) Then
                 Accessmii = &H590 * 94
+                Accessfriends = &H100 * 94
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(95) Then
                 Accessmii = &H590 * 95
+                Accessfriends = &H100 * 95
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(96) Then
                 Accessmii = &H590 * 96
+                Accessfriends = &H100 * 96
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(97) Then
                 Accessmii = &H590 * 97
+                Accessfriends = &H100 * 97
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(98) Then
                 Accessmii = &H590 * 98
+                Accessfriends = &H100 * 98
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(99) Then
                 Accessmii = &H590 * 99
+                Accessfriends = &H100 * 99
             End If
         End If
         readMii()
@@ -5560,5 +6356,471 @@ Public Class TL_SaveEditor
         Else
             Icon_interaction.Visible = False
         End If
+    End Sub
+
+    Private Sub Text_save_mii_Click(sender As Object, e As EventArgs) Handles Text_save_mii.Click
+        writeMii()
+    End Sub
+
+    Private Sub Select_target1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_target1.SelectedIndexChanged
+        If Select_target1.SelectedItem = Select_target1.Items.Item(0) Then
+            valu_target1.Value = 65535
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(1) Then
+            valu_target1.Value = 0
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(2) Then
+            valu_target1.Value = 1
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(3) Then
+            valu_target1.Value = 2
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(4) Then
+            valu_target1.Value = 3
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(5) Then
+            valu_target1.Value = 4
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(6) Then
+            valu_target1.Value = 5
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(7) Then
+            valu_target1.Value = 6
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(8) Then
+            valu_target1.Value = 7
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(9) Then
+            valu_target1.Value = 8
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(10) Then
+            valu_target1.Value = 9
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(11) Then
+            valu_target1.Value = 10
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(12) Then
+            valu_target1.Value = 11
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(13) Then
+            valu_target1.Value = 12
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(14) Then
+            valu_target1.Value = 13
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(15) Then
+            valu_target1.Value = 14
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(16) Then
+            valu_target1.Value = 15
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(17) Then
+            valu_target1.Value = 16
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(18) Then
+            valu_target1.Value = 17
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(19) Then
+            valu_target1.Value = 18
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(20) Then
+            valu_target1.Value = 19
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(21) Then
+            valu_target1.Value = 20
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(22) Then
+            valu_target1.Value = 21
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(23) Then
+            valu_target1.Value = 22
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(24) Then
+            valu_target1.Value = 23
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(25) Then
+            valu_target1.Value = 24
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(26) Then
+            valu_target1.Value = 25
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(27) Then
+            valu_target1.Value = 26
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(28) Then
+            valu_target1.Value = 27
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(29) Then
+            valu_target1.Value = 28
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(30) Then
+            valu_target1.Value = 29
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(31) Then
+            valu_target1.Value = 30
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(32) Then
+            valu_target1.Value = 31
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(33) Then
+            valu_target1.Value = 32
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(34) Then
+            valu_target1.Value = 33
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(35) Then
+            valu_target1.Value = 34
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(36) Then
+            valu_target1.Value = 35
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(37) Then
+            valu_target1.Value = 36
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(38) Then
+            valu_target1.Value = 37
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(39) Then
+            valu_target1.Value = 38
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(40) Then
+            valu_target1.Value = 39
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(41) Then
+            valu_target1.Value = 40
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(42) Then
+            valu_target1.Value = 41
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(43) Then
+            valu_target1.Value = 42
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(44) Then
+            valu_target1.Value = 43
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(45) Then
+            valu_target1.Value = 44
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(46) Then
+            valu_target1.Value = 45
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(47) Then
+            valu_target1.Value = 46
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(48) Then
+            valu_target1.Value = 47
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(49) Then
+            valu_target1.Value = 48
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(50) Then
+            valu_target1.Value = 49
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(51) Then
+            valu_target1.Value = 50
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(52) Then
+            valu_target1.Value = 51
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(53) Then
+            valu_target1.Value = 52
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(54) Then
+            valu_target1.Value = 53
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(55) Then
+            valu_target1.Value = 54
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(56) Then
+            valu_target1.Value = 55
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(57) Then
+            valu_target1.Value = 56
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(58) Then
+            valu_target1.Value = 57
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(59) Then
+            valu_target1.Value = 58
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(60) Then
+            valu_target1.Value = 59
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(61) Then
+            valu_target1.Value = 60
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(62) Then
+            valu_target1.Value = 61
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(63) Then
+            valu_target1.Value = 62
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(64) Then
+            valu_target1.Value = 63
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(65) Then
+            valu_target1.Value = 64
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(66) Then
+            valu_target1.Value = 65
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(67) Then
+            valu_target1.Value = 66
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(68) Then
+            valu_target1.Value = 67
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(69) Then
+            valu_target1.Value = 68
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(70) Then
+            valu_target1.Value = 69
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(71) Then
+            valu_target1.Value = 70
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(72) Then
+            valu_target1.Value = 71
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(73) Then
+            valu_target1.Value = 72
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(74) Then
+            valu_target1.Value = 73
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(75) Then
+            valu_target1.Value = 74
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(76) Then
+            valu_target1.Value = 75
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(77) Then
+            valu_target1.Value = 76
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(78) Then
+            valu_target1.Value = 77
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(79) Then
+            valu_target1.Value = 78
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(80) Then
+            valu_target1.Value = 79
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(81) Then
+            valu_target1.Value = 80
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(82) Then
+            valu_target1.Value = 81
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(83) Then
+            valu_target1.Value = 82
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(84) Then
+            valu_target1.Value = 83
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(85) Then
+            valu_target1.Value = 84
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(86) Then
+            valu_target1.Value = 85
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(87) Then
+            valu_target1.Value = 86
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(88) Then
+            valu_target1.Value = 87
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(89) Then
+            valu_target1.Value = 88
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(90) Then
+            valu_target1.Value = 89
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(91) Then
+            valu_target1.Value = 90
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(92) Then
+            valu_target1.Value = 91
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(93) Then
+            valu_target1.Value = 92
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(94) Then
+            valu_target1.Value = 93
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(95) Then
+            valu_target1.Value = 94
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(96) Then
+            valu_target1.Value = 95
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(97) Then
+            valu_target1.Value = 96
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(98) Then
+            valu_target1.Value = 97
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(99) Then
+            valu_target1.Value = 98
+        ElseIf Select_target1.SelectedItem = Select_target1.Items.Item(100) Then
+            valu_target1.Value = 99
+        End If
+    End Sub
+
+    Private Sub Select_target2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_target2.SelectedIndexChanged
+        If Select_target2.SelectedItem = Select_target2.Items.Item(0) Then
+            valu_target1.Value = 65535
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(1) Then
+            valu_target1.Value = 0
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(2) Then
+            valu_target1.Value = 1
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(3) Then
+            valu_target1.Value = 2
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(4) Then
+            valu_target1.Value = 3
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(5) Then
+            valu_target1.Value = 4
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(6) Then
+            valu_target1.Value = 5
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(7) Then
+            valu_target1.Value = 6
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(8) Then
+            valu_target1.Value = 7
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(9) Then
+            valu_target1.Value = 8
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(10) Then
+            valu_target1.Value = 9
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(11) Then
+            valu_target1.Value = 10
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(12) Then
+            valu_target1.Value = 11
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(13) Then
+            valu_target1.Value = 12
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(14) Then
+            valu_target1.Value = 13
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(15) Then
+            valu_target1.Value = 14
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(16) Then
+            valu_target1.Value = 15
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(17) Then
+            valu_target1.Value = 16
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(18) Then
+            valu_target1.Value = 17
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(19) Then
+            valu_target1.Value = 18
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(20) Then
+            valu_target1.Value = 19
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(21) Then
+            valu_target1.Value = 20
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(22) Then
+            valu_target1.Value = 21
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(23) Then
+            valu_target1.Value = 22
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(24) Then
+            valu_target1.Value = 23
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(25) Then
+            valu_target1.Value = 24
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(26) Then
+            valu_target1.Value = 25
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(27) Then
+            valu_target1.Value = 26
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(28) Then
+            valu_target1.Value = 27
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(29) Then
+            valu_target1.Value = 28
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(30) Then
+            valu_target1.Value = 29
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(31) Then
+            valu_target1.Value = 30
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(32) Then
+            valu_target1.Value = 31
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(33) Then
+            valu_target1.Value = 32
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(34) Then
+            valu_target1.Value = 33
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(35) Then
+            valu_target1.Value = 34
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(36) Then
+            valu_target1.Value = 35
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(37) Then
+            valu_target1.Value = 36
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(38) Then
+            valu_target1.Value = 37
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(39) Then
+            valu_target1.Value = 38
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(40) Then
+            valu_target1.Value = 39
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(41) Then
+            valu_target1.Value = 40
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(42) Then
+            valu_target1.Value = 41
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(43) Then
+            valu_target1.Value = 42
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(44) Then
+            valu_target1.Value = 43
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(45) Then
+            valu_target1.Value = 44
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(46) Then
+            valu_target1.Value = 45
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(47) Then
+            valu_target1.Value = 46
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(48) Then
+            valu_target1.Value = 47
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(49) Then
+            valu_target1.Value = 48
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(50) Then
+            valu_target1.Value = 49
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(51) Then
+            valu_target1.Value = 50
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(52) Then
+            valu_target1.Value = 51
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(53) Then
+            valu_target1.Value = 52
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(54) Then
+            valu_target1.Value = 53
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(55) Then
+            valu_target1.Value = 54
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(56) Then
+            valu_target1.Value = 55
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(57) Then
+            valu_target1.Value = 56
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(58) Then
+            valu_target1.Value = 57
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(59) Then
+            valu_target1.Value = 58
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(60) Then
+            valu_target1.Value = 59
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(61) Then
+            valu_target1.Value = 60
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(62) Then
+            valu_target1.Value = 61
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(63) Then
+            valu_target1.Value = 62
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(64) Then
+            valu_target1.Value = 63
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(65) Then
+            valu_target1.Value = 64
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(66) Then
+            valu_target1.Value = 65
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(67) Then
+            valu_target1.Value = 66
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(68) Then
+            valu_target1.Value = 67
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(69) Then
+            valu_target1.Value = 68
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(70) Then
+            valu_target1.Value = 69
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(71) Then
+            valu_target1.Value = 70
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(72) Then
+            valu_target1.Value = 71
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(73) Then
+            valu_target1.Value = 72
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(74) Then
+            valu_target1.Value = 73
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(75) Then
+            valu_target1.Value = 74
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(76) Then
+            valu_target1.Value = 75
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(77) Then
+            valu_target1.Value = 76
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(78) Then
+            valu_target1.Value = 77
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(79) Then
+            valu_target1.Value = 78
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(80) Then
+            valu_target1.Value = 79
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(81) Then
+            valu_target1.Value = 80
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(82) Then
+            valu_target1.Value = 81
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(83) Then
+            valu_target1.Value = 82
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(84) Then
+            valu_target1.Value = 83
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(85) Then
+            valu_target1.Value = 84
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(86) Then
+            valu_target1.Value = 85
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(87) Then
+            valu_target1.Value = 86
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(88) Then
+            valu_target1.Value = 87
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(89) Then
+            valu_target1.Value = 88
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(90) Then
+            valu_target1.Value = 89
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(91) Then
+            valu_target1.Value = 90
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(92) Then
+            valu_target1.Value = 91
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(93) Then
+            valu_target1.Value = 92
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(94) Then
+            valu_target1.Value = 93
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(95) Then
+            valu_target1.Value = 94
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(96) Then
+            valu_target1.Value = 95
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(97) Then
+            valu_target1.Value = 96
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(98) Then
+            valu_target1.Value = 97
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(99) Then
+            valu_target1.Value = 98
+        ElseIf Select_target2.SelectedItem = Select_target2.Items.Item(100) Then
+            valu_target1.Value = 99
+        End If
+    End Sub
+
+    Private Sub Select_allfriends_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_allfriends.SelectedIndexChanged
+        If Select_allfriends.SelectedItem = Select_allfriends.Items.Item(0) Then
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                AccessMiilist = &H1C8A
+                Accessfriendlist = Miifriendr
+                Accessrelalist = Miifriendr + &H64
+            End If
+            If Filever_text.Text = "JP" Then
+                AccessMiilist = &H1C5A
+                Accessfriendlist = Miifriendr
+                Accessrelalist = Miifriendr + &H64
+            End If
+        ElseIf Select_allfriends.SelectedItem = Select_allfriends.Items.Item(1) Then
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                AccessMiilist = &H1C8A + (&H660 * 30)
+                Accessfriendlist = Miifriendr + 30
+                Accessrelalist = (Miifriendr + &H64) + 30
+            End If
+            If Filever_text.Text = "JP" Then
+                AccessMiilist = &H1C5A + (&H590 * 30)
+                Accessfriendlist = Miifriendr + 30
+                Accessrelalist = (Miifriendr + &H64) + 30
+            End If
+        ElseIf Select_allfriends.SelectedItem = Select_allfriends.Items.Item(2) Then
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                AccessMiilist = &H1C8A + (&H660 * 60)
+                Accessfriendlist = Miifriendr + 60
+                Accessrelalist = (Miifriendr + &H64) + 60
+            End If
+            If Filever_text.Text = "JP" Then
+                AccessMiilist = &H1C5A + (&H590 * 60)
+                Accessfriendlist = Miifriendr + 60
+                Accessrelalist = (Miifriendr + &H64) + 60
+            End If
+        ElseIf Select_allfriends.SelectedItem = Select_allfriends.Items.Item(3) Then
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                AccessMiilist = &H1C8A + (&H660 * 90)
+                Accessfriendlist = Miifriendr + 90
+                Accessrelalist = (Miifriendr + &H64) + 90
+            End If
+            If Filever_text.Text = "JP" Then
+                AccessMiilist = &H1C5A + (&H590 * 90)
+                Accessfriendlist = Miifriendr + 90
+                Accessrelalist = (Miifriendr + &H64) + 90
+            End If
+        End If
+        hidefriendlist()
+        readfriendlist()
     End Sub
 End Class
