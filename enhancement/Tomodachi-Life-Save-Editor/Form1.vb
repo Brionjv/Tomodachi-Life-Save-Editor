@@ -1231,6 +1231,9 @@ Public Class TL_SaveEditor
             End If
             Select_allfriends.Enabled = True
             Text_save_mii.Enabled = True
+            Select_allfriends.SelectedItem = Select_allfriends.Items.Item(1)
+            readfriendlist()
+            Select_allfriends.SelectedItem = Select_allfriends.Items.Item(0)
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Failed to read informations of this Mii, make sure you have opened a file, or report this issue"
@@ -5292,7 +5295,6 @@ Public Class TL_SaveEditor
         Select_emotions.SelectedItem = Select_emotions.Items.Item(0)
         Check_fullness.Checked = False
         Select_growkid.SelectedItem = Select_growkid.Items.Item(0)
-        Select_allfriends.SelectedItem = Nothing
         If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
             If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
                 Accessmii = &H0
