@@ -539,6 +539,13 @@ Partial Class TL_SaveEditor
         Me.Text_save_mii = New System.Windows.Forms.Label()
         Me.Panel_select_mii = New System.Windows.Forms.Panel()
         Me.Select_mii = New System.Windows.Forms.ComboBox()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2263,7 +2270,7 @@ Partial Class TL_SaveEditor
         Me.Filever_text.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Filever_text.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Filever_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Filever_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Filever_text.ForeColor = System.Drawing.Color.White
         Me.Filever_text.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Filever_text.Location = New System.Drawing.Point(0, 0)
         Me.Filever_text.Name = "Filever_text"
@@ -6718,6 +6725,27 @@ Partial Class TL_SaveEditor
         Me.Select_mii.Size = New System.Drawing.Size(84, 21)
         Me.Select_mii.TabIndex = 0
         '
+        'Timer1
+        '
+        '
+        'Timer2
+        '
+        '
+        'Timer3
+        '
+        '
+        'Timer4
+        '
+        '
+        'Timer5
+        '
+        '
+        'Timer6
+        '
+        '
+        'Timer7
+        '
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -7638,5 +7666,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents valu_selfriend_rela_3 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_selfriend_rela_2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_selfriend_rela_1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents Timer3 As System.Windows.Forms.Timer
+    Friend WithEvents Timer4 As System.Windows.Forms.Timer
+    Friend WithEvents Timer5 As System.Windows.Forms.Timer
+    Friend WithEvents Timer6 As System.Windows.Forms.Timer
+    Friend WithEvents Timer7 As System.Windows.Forms.Timer
 
 End Class

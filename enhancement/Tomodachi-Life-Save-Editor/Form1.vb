@@ -267,6 +267,21 @@ Public Class TL_SaveEditor
         End Try
     End Sub
 
+    Public Sub veriffilever()
+        Timer1.Start()
+    End Sub
+
+    Public Sub Stopveriffilever()
+        Timer1.Stop()
+        Timer2.Stop()
+        Timer3.Stop()
+        Timer4.Stop()
+        Timer5.Stop()
+        Timer6.Stop()
+        Timer7.Stop()
+        Filever_text.ForeColor = Color.White
+    End Sub
+
     Public Sub switchfilever()
         If Filever_text.Text = "US" Then
             Filever_text.Text = "EU"
@@ -1400,6 +1415,7 @@ Public Class TL_SaveEditor
             fs.WriteByte(valu_allmusic.Value)
             fs.Position = Emotions
             fs.WriteByte(valu_emotions.Value)
+            writefriendlist()
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Editing of " & Text_nickname.Text & " has been saved"
                 fdialog.ShowDialog()
@@ -1749,14 +1765,6 @@ Public Class TL_SaveEditor
             Reader.Position = Accessrelalist + (&H1 * 29)
             valu_selfriend_rela_30.Value = Reader.ReadByte
         Catch ex As Exception
-            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Failed to read friend list of this Mii, retry or report this issue"
-                fdialog.ShowDialog()
-            End If
-            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "La lecture de la liste d'amis de ce Mii a échoué, réessayez ou signalez cet erreur"
-                fdialog.ShowDialog()
-            End If
         End Try
     End Sub
 
@@ -4068,6 +4076,7 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Text_menu_open_Click(sender As Object, e As EventArgs) Handles Text_menu_open.Click
+        veriffilever()
         Dim open As New OpenFileDialog
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
             fdialog.Text_fdialog.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a backup of your save file, check ''bak'' folder" & vbNewLine & vbNewLine & "Make sure you have choose right save file version"
@@ -4077,6 +4086,7 @@ Public Class TL_SaveEditor
             fdialog.Text_fdialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde, vérifiez le dossier ''bak''" & vbNewLine & vbNewLine & "Soyez sûr d'avoir choisi la bonne version de sauvegarde"
             fdialog.ShowDialog()
         End If
+        Stopveriffilever()
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
             open.Filter = "Text files|*.txt"
             open.Title = "Open save savedataArc.txt"
@@ -8549,4 +8559,45 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Filever_text.ForeColor = Color.Red
+        Timer1.Stop()
+        Timer2.Start()
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        Filever_text.ForeColor = Color.Orange
+        Timer2.Stop()
+        Timer3.Start()
+    End Sub
+
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+        Filever_text.ForeColor = Color.Yellow
+        Timer3.Stop()
+        Timer4.Start()
+    End Sub
+
+    Private Sub Timer4_Tick(sender As Object, e As EventArgs) Handles Timer4.Tick
+        Filever_text.ForeColor = Color.Green
+        Timer4.Stop()
+        Timer5.Start()
+    End Sub
+
+    Private Sub Timer5_Tick(sender As Object, e As EventArgs) Handles Timer5.Tick
+        Filever_text.ForeColor = Color.Blue
+        Timer5.Stop()
+        Timer6.Start()
+    End Sub
+
+    Private Sub Timer6_Tick(sender As Object, e As EventArgs) Handles Timer6.Tick
+        Filever_text.ForeColor = Color.Indigo
+        Timer6.Stop()
+        Timer7.Start()
+    End Sub
+
+    Private Sub Timer7_Tick(sender As Object, e As EventArgs) Handles Timer7.Tick
+        Filever_text.ForeColor = Color.Violet
+        Timer7.Stop()
+        Timer1.Start()
+    End Sub
 End Class
