@@ -5248,6 +5248,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_30.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_30.TabIndex = 225
         Me.valu_selfriend_rela_30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_30.Visible = False
         '
         'valu_selfriend_rela_29
         '
@@ -5258,6 +5259,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_29.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_29.TabIndex = 224
         Me.valu_selfriend_rela_29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_29.Visible = False
         '
         'valu_selfriend_rela_28
         '
@@ -5268,6 +5270,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_28.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_28.TabIndex = 223
         Me.valu_selfriend_rela_28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_28.Visible = False
         '
         'valu_selfriend_rela_27
         '
@@ -5278,6 +5281,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_27.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_27.TabIndex = 222
         Me.valu_selfriend_rela_27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_27.Visible = False
         '
         'valu_selfriend_rela_26
         '
@@ -5288,6 +5292,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_26.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_26.TabIndex = 221
         Me.valu_selfriend_rela_26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_26.Visible = False
         '
         'valu_selfriend_rela_25
         '
@@ -5298,6 +5303,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_25.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_25.TabIndex = 220
         Me.valu_selfriend_rela_25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_25.Visible = False
         '
         'valu_selfriend_rela_24
         '
@@ -5308,6 +5314,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_24.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_24.TabIndex = 219
         Me.valu_selfriend_rela_24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_24.Visible = False
         '
         'valu_selfriend_rela_23
         '
@@ -5318,6 +5325,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_23.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_23.TabIndex = 218
         Me.valu_selfriend_rela_23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_23.Visible = False
         '
         'valu_selfriend_rela_22
         '
@@ -5328,6 +5336,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_22.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_22.TabIndex = 217
         Me.valu_selfriend_rela_22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_22.Visible = False
         '
         'valu_selfriend_rela_21
         '
@@ -5338,6 +5347,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_21.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_21.TabIndex = 216
         Me.valu_selfriend_rela_21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_21.Visible = False
         '
         'valu_selfriend_rela_20
         '
@@ -5348,6 +5358,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_20.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_20.TabIndex = 215
         Me.valu_selfriend_rela_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_20.Visible = False
         '
         'valu_selfriend_rela_19
         '
@@ -5358,6 +5369,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_19.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_19.TabIndex = 214
         Me.valu_selfriend_rela_19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_19.Visible = False
         '
         'valu_selfriend_rela_18
         '
@@ -5368,6 +5380,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_18.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_18.TabIndex = 213
         Me.valu_selfriend_rela_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_18.Visible = False
         '
         'valu_selfriend_rela_17
         '
@@ -5378,6 +5391,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_17.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_17.TabIndex = 212
         Me.valu_selfriend_rela_17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_17.Visible = False
         '
         'valu_selfriend_rela_16
         '
@@ -5388,6 +5402,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_16.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_16.TabIndex = 211
         Me.valu_selfriend_rela_16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_16.Visible = False
         '
         'valu_selfriend_rela_15
         '
@@ -5398,6 +5413,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_15.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_15.TabIndex = 210
         Me.valu_selfriend_rela_15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_15.Visible = False
         '
         'valu_selfriend_rela_14
         '
@@ -5408,6 +5424,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_14.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_14.TabIndex = 209
         Me.valu_selfriend_rela_14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_14.Visible = False
         '
         'valu_selfriend_rela_13
         '
@@ -5418,6 +5435,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_13.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_13.TabIndex = 208
         Me.valu_selfriend_rela_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_13.Visible = False
         '
         'valu_selfriend_rela_12
         '
@@ -5428,6 +5446,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_12.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_12.TabIndex = 207
         Me.valu_selfriend_rela_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_12.Visible = False
         '
         'valu_selfriend_rela_11
         '
@@ -5438,6 +5457,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_11.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_11.TabIndex = 206
         Me.valu_selfriend_rela_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_11.Visible = False
         '
         'valu_selfriend_rela_10
         '
@@ -5448,6 +5468,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_10.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_10.TabIndex = 205
         Me.valu_selfriend_rela_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_10.Visible = False
         '
         'valu_selfriend_rela_9
         '
@@ -5458,6 +5479,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_9.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_9.TabIndex = 204
         Me.valu_selfriend_rela_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_9.Visible = False
         '
         'valu_selfriend_rela_8
         '
@@ -5468,6 +5490,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_8.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_8.TabIndex = 203
         Me.valu_selfriend_rela_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_8.Visible = False
         '
         'valu_selfriend_rela_7
         '
@@ -5478,6 +5501,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_7.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_7.TabIndex = 202
         Me.valu_selfriend_rela_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_7.Visible = False
         '
         'valu_selfriend_rela_6
         '
@@ -5488,6 +5512,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_6.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_6.TabIndex = 201
         Me.valu_selfriend_rela_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_6.Visible = False
         '
         'valu_selfriend_rela_5
         '
@@ -5498,6 +5523,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_5.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_5.TabIndex = 200
         Me.valu_selfriend_rela_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_5.Visible = False
         '
         'valu_selfriend_rela_4
         '
@@ -5508,6 +5534,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_4.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_4.TabIndex = 199
         Me.valu_selfriend_rela_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_4.Visible = False
         '
         'valu_selfriend_rela_3
         '
@@ -5518,6 +5545,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_3.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_3.TabIndex = 198
         Me.valu_selfriend_rela_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_3.Visible = False
         '
         'valu_selfriend_rela_2
         '
@@ -5528,6 +5556,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_2.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_2.TabIndex = 197
         Me.valu_selfriend_rela_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_2.Visible = False
         '
         'valu_selfriend_rela_1
         '
@@ -5538,6 +5567,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_1.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_1.TabIndex = 196
         Me.valu_selfriend_rela_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selfriend_rela_1.Visible = False
         '
         'PictureBox2
         '
