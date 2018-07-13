@@ -546,6 +546,7 @@ Partial Class TL_SaveEditor
         Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
+        Me.valu_selected_music = New System.Windows.Forms.NumericUpDown()
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -892,6 +893,7 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_save_mii.SuspendLayout()
         Me.Panel_select_mii.SuspendLayout()
+        CType(Me.valu_selected_music, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TLSE_header
@@ -3203,6 +3205,7 @@ Partial Class TL_SaveEditor
         'Panel_mii_musics
         '
         Me.Panel_mii_musics.BackColor = System.Drawing.Color.Azure
+        Me.Panel_mii_musics.Controls.Add(Me.valu_selected_music)
         Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_musical)
         Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_techno)
         Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_opera)
@@ -3414,6 +3417,7 @@ Partial Class TL_SaveEditor
         Me.valu_allmusic.Size = New System.Drawing.Size(35, 16)
         Me.valu_allmusic.TabIndex = 189
         Me.valu_allmusic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_allmusic.Visible = False
         '
         'Text_unlock_music
         '
@@ -3637,6 +3641,7 @@ Partial Class TL_SaveEditor
         'valu_miiMhouse
         '
         Me.valu_miiMhouse.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_miiMhouse.Enabled = False
         Me.valu_miiMhouse.Location = New System.Drawing.Point(290, 381)
         Me.valu_miiMhouse.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_miiMhouse.Name = "valu_miiMhouse"
@@ -3707,6 +3712,7 @@ Partial Class TL_SaveEditor
         'valu_miihouse
         '
         Me.valu_miihouse.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_miihouse.Enabled = False
         Me.valu_miihouse.Location = New System.Drawing.Point(177, 381)
         Me.valu_miihouse.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_miihouse.Name = "valu_miihouse"
@@ -6746,6 +6752,17 @@ Partial Class TL_SaveEditor
         'Timer7
         '
         '
+        'valu_selected_music
+        '
+        Me.valu_selected_music.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selected_music.Location = New System.Drawing.Point(6, 182)
+        Me.valu_selected_music.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_selected_music.Name = "valu_selected_music"
+        Me.valu_selected_music.Size = New System.Drawing.Size(35, 16)
+        Me.valu_selected_music.TabIndex = 190
+        Me.valu_selected_music.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selected_music.Visible = False
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -6753,6 +6770,7 @@ Partial Class TL_SaveEditor
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(600, 550)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.Panel_menu_opensave)
         Me.Controls.Add(Me.Panel_music)
@@ -6766,7 +6784,6 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -7148,6 +7165,7 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_save_mii.ResumeLayout(False)
         Me.Panel_select_mii.ResumeLayout(False)
+        CType(Me.valu_selected_music, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -7673,5 +7691,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents Timer5 As System.Windows.Forms.Timer
     Friend WithEvents Timer6 As System.Windows.Forms.Timer
     Friend WithEvents Timer7 As System.Windows.Forms.Timer
+    Friend WithEvents valu_selected_music As System.Windows.Forms.NumericUpDown
 
 End Class

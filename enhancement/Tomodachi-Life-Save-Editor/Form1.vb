@@ -106,66 +106,6 @@ Public Class TL_SaveEditor
     Dim Accessfriendlist As String
     Dim AccessMiilist As String
     Dim Accessrelalist As String
-    Dim Reawrfriend_1 As String
-    Dim Reawrfriend_2 As String
-    Dim Reawrfriend_3 As String
-    Dim Reawrfriend_4 As String
-    Dim Reawrfriend_5 As String
-    Dim Reawrfriend_6 As String
-    Dim Reawrfriend_7 As String
-    Dim Reawrfriend_8 As String
-    Dim Reawrfriend_9 As String
-    Dim Reawrfriend_10 As String
-    Dim Reawrfriend_11 As String
-    Dim Reawrfriend_12 As String
-    Dim Reawrfriend_13 As String
-    Dim Reawrfriend_14 As String
-    Dim Reawrfriend_15 As String
-    Dim Reawrfriend_16 As String
-    Dim Reawrfriend_17 As String
-    Dim Reawrfriend_18 As String
-    Dim Reawrfriend_19 As String
-    Dim Reawrfriend_20 As String
-    Dim Reawrfriend_21 As String
-    Dim Reawrfriend_22 As String
-    Dim Reawrfriend_23 As String
-    Dim Reawrfriend_24 As String
-    Dim Reawrfriend_25 As String
-    Dim Reawrfriend_26 As String
-    Dim Reawrfriend_27 As String
-    Dim Reawrfriend_28 As String
-    Dim Reawrfriend_29 As String
-    Dim Reawrfriend_30 As String
-    Dim Reawrfrirela_1 As String
-    Dim Reawrfrirela_2 As String
-    Dim Reawrfrirela_3 As String
-    Dim Reawrfrirela_4 As String
-    Dim Reawrfrirela_5 As String
-    Dim Reawrfrirela_6 As String
-    Dim Reawrfrirela_7 As String
-    Dim Reawrfrirela_8 As String
-    Dim Reawrfrirela_9 As String
-    Dim Reawrfrirela_10 As String
-    Dim Reawrfrirela_11 As String
-    Dim Reawrfrirela_12 As String
-    Dim Reawrfrirela_13 As String
-    Dim Reawrfrirela_14 As String
-    Dim Reawrfrirela_15 As String
-    Dim Reawrfrirela_16 As String
-    Dim Reawrfrirela_17 As String
-    Dim Reawrfrirela_18 As String
-    Dim Reawrfrirela_19 As String
-    Dim Reawrfrirela_20 As String
-    Dim Reawrfrirela_21 As String
-    Dim Reawrfrirela_22 As String
-    Dim Reawrfrirela_23 As String
-    Dim Reawrfrirela_24 As String
-    Dim Reawrfrirela_25 As String
-    Dim Reawrfrirela_26 As String
-    Dim Reawrfrirela_27 As String
-    Dim Reawrfrirela_28 As String
-    Dim Reawrfrirela_29 As String
-    Dim Reawrfrirela_30 As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -302,6 +242,14 @@ Public Class TL_SaveEditor
             Panel_cathph_J1.Visible = False
             Panel_cathph_J2.Visible = False
             Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
+            Text_edit_metal.Enabled = True
+            Text_edit_ballad.Enabled = True
+            Text_edit_musical.Enabled = True
+            Text_edit_opera.Enabled = True
+            Text_edit_pop.Enabled = True
+            Text_edit_rap.Enabled = True
+            Text_edit_rockroll.Enabled = True
+            Text_edit_techno.Enabled = True
         ElseIf Filever_text.Text = "EU" Then
             Filever_text.Text = "JP"
             TLSE_logo.Image = My.Resources.logo_JP
@@ -321,6 +269,14 @@ Public Class TL_SaveEditor
             Panel_cathph_J1.Visible = True
             Panel_cathph_J2.Visible = True
             Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase_j
+            Text_edit_metal.Enabled = False
+            Text_edit_ballad.Enabled = False
+            Text_edit_musical.Enabled = False
+            Text_edit_opera.Enabled = False
+            Text_edit_pop.Enabled = False
+            Text_edit_rap.Enabled = False
+            Text_edit_rockroll.Enabled = False
+            Text_edit_techno.Enabled = False
         ElseIf Filever_text.Text = "JP" Then
             Filever_text.Text = "KR"
             TLSE_logo.Image = My.Resources.logo_KR
@@ -340,6 +296,14 @@ Public Class TL_SaveEditor
             Panel_cathph_J1.Visible = False
             Panel_cathph_J2.Visible = False
             Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
+            Text_edit_metal.Enabled = False
+            Text_edit_ballad.Enabled = False
+            Text_edit_musical.Enabled = False
+            Text_edit_opera.Enabled = False
+            Text_edit_pop.Enabled = False
+            Text_edit_rap.Enabled = False
+            Text_edit_rockroll.Enabled = False
+            Text_edit_techno.Enabled = False
         ElseIf Filever_text.Text = "KR" Then
             Filever_text.Text = "US"
             TLSE_logo.Image = My.Resources.logo_US
@@ -359,6 +323,14 @@ Public Class TL_SaveEditor
             Panel_cathph_J1.Visible = False
             Panel_cathph_J2.Visible = False
             Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
+            Text_edit_metal.Enabled = True
+            Text_edit_ballad.Enabled = True
+            Text_edit_musical.Enabled = True
+            Text_edit_opera.Enabled = True
+            Text_edit_pop.Enabled = True
+            Text_edit_rap.Enabled = True
+            Text_edit_rockroll.Enabled = True
+            Text_edit_techno.Enabled = True
         ElseIf Filever_text.Text = "" Then
             Filever_text.Text = "US"
             TLSE_logo.Image = My.Resources.logo_US
@@ -378,6 +350,14 @@ Public Class TL_SaveEditor
             Panel_cathph_J1.Visible = False
             Panel_cathph_J2.Visible = False
             Icon_cathphrase.Image = My.Resources.icon_mii_cathphrase
+            Text_edit_metal.Enabled = True
+            Text_edit_ballad.Enabled = True
+            Text_edit_musical.Enabled = True
+            Text_edit_opera.Enabled = True
+            Text_edit_pop.Enabled = True
+            Text_edit_rap.Enabled = True
+            Text_edit_rockroll.Enabled = True
+            Text_edit_techno.Enabled = True
         End If
         Icon_changelog.Image = TLSE_logo.Image
     End Sub
@@ -1078,6 +1058,7 @@ Public Class TL_SaveEditor
                 Emotions = Reader.Position
                 valu_emotions.Value = Reader.ReadByte
             End If
+
             If Filever_text.Text = "JP" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
                 Reader.Position = &H1CA0 + Accessmii
@@ -4426,7 +4407,7 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Fea_edit_concert_Click(sender As Object, e As EventArgs) Handles Fea_edit_concert.Click
-
+        Concert_edit.Show()
     End Sub
 
     Private Sub Fea_edit_concert_MouseLeave(sender As Object, e As EventArgs) Handles Fea_edit_concert.MouseLeave
@@ -8601,5 +8582,45 @@ Public Class TL_SaveEditor
         Filever_text.ForeColor = Color.Violet
         Timer7.Stop()
         Timer1.Start()
+    End Sub
+
+    Private Sub Text_edit_metal_Click(sender As Object, e As EventArgs) Handles Text_edit_metal.Click
+        valu_selected_music.Value = 1
+        Miimusic_edit.ShowDialog()
+    End Sub
+
+    Private Sub Text_edit_pop_Click(sender As Object, e As EventArgs) Handles Text_edit_pop.Click
+        valu_selected_music.Value = 2
+        Miimusic_edit.ShowDialog()
+    End Sub
+
+    Private Sub Text_edit_rockroll_Click(sender As Object, e As EventArgs) Handles Text_edit_rockroll.Click
+        valu_selected_music.Value = 3
+        Miimusic_edit.ShowDialog()
+    End Sub
+
+    Private Sub Text_edit_rap_Click(sender As Object, e As EventArgs) Handles Text_edit_rap.Click
+        valu_selected_music.Value = 4
+        Miimusic_edit.ShowDialog()
+    End Sub
+
+    Private Sub Text_edit_ballad_Click(sender As Object, e As EventArgs) Handles Text_edit_ballad.Click
+        valu_selected_music.Value = 5
+        Miimusic_edit.ShowDialog()
+    End Sub
+
+    Private Sub Text_edit_opera_Click(sender As Object, e As EventArgs) Handles Text_edit_opera.Click
+        valu_selected_music.Value = 6
+        Miimusic_edit.ShowDialog()
+    End Sub
+
+    Private Sub Text_edit_techno_Click(sender As Object, e As EventArgs) Handles Text_edit_techno.Click
+        valu_selected_music.Value = 7
+        Miimusic_edit.ShowDialog()
+    End Sub
+
+    Private Sub Text_edit_musical_Click(sender As Object, e As EventArgs) Handles Text_edit_musical.Click
+        valu_selected_music.Value = 8
+        Miimusic_edit.ShowDialog()
     End Sub
 End Class
