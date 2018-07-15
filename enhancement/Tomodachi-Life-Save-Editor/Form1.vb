@@ -2090,20 +2090,25 @@ Public Class TL_SaveEditor
         switchfilever()
     End Sub
 
+    Private Sub Filever_text_MouseMove(sender As Object, e As EventArgs) Handles Filever_text.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to change save file version"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour changer la version de la sauvegarde"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Filever_text_MouseLeave(sender As Object, e As EventArgs) Handles Filever_text.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
     Private Sub Info_islandbuild_MouseMove(sender As Object, e As EventArgs) Handles Info_islandbuild.MouseMove
         Icon_info_building.Visible = True
     End Sub
 
     Private Sub Info_islandbuild_MouseLeave(sender As Object, e As EventArgs) Handles Info_islandbuild.MouseLeave
         Icon_info_building.Visible = False
-    End Sub
-
-    Private Sub Icon_pronun_islandname_MouseMove(sender As Object, e As EventArgs) Handles Icon_pronun_islandname.MouseMove
-        Text_pronun_islandname.Visible = True
-    End Sub
-
-    Private Sub Icon_pronun_islandname_MouseLeave(sender As Object, e As EventArgs) Handles Icon_pronun_islandname.MouseLeave
-        Text_pronun_islandname.Visible = False
     End Sub
 
     Private Sub Icon_islandn_pronun_val_Click(sender As Object, e As EventArgs) Handles Icon_islandn_pronun_val.Click
@@ -2114,6 +2119,21 @@ Public Class TL_SaveEditor
     Private Sub Icon_pronun_islandname_Click(sender As Object, e As EventArgs) Handles Icon_pronun_islandname.Click
         Panel_edit_pronun_island.Visible = True
         Text_pronun_island.Text = Text_pronun_islandname.Text
+    End Sub
+
+    Private Sub Icon_pronun_islandname_MouseMove(sender As Object, e As EventArgs) Handles Icon_pronun_islandname.MouseMove
+        Text_pronun_islandname.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to edit island's pronunciation name"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour éditer la prononciation du nom de l'île"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_pronun_islandname_MouseLeave(sender As Object, e As EventArgs) Handles Icon_pronun_islandname.MouseLeave
+        Text_pronun_islandname.Visible = False
+        Panel_description.Visible = False
     End Sub
 
     Private Sub Icon_appartrenov_Click(sender As Object, e As EventArgs) Handles Icon_appartrenov.Click
@@ -2137,6 +2157,19 @@ Public Class TL_SaveEditor
 
     Private Sub Icon_eventfountain_Click(sender As Object, e As EventArgs) Handles Icon_eventfountain.Click
         value_eventfountain.Value = 0
+    End Sub
+
+    Private Sub Icon_eventfountain_MouseMove(sender As Object, e As EventArgs) Handles Icon_eventfountain.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to active fountain's event"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour activer l'évènement de la fontaine"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_eventfountain_MouseLeave(sender As Object, e As EventArgs) Handles Icon_eventfountain.MouseLeave
+        Panel_description.Visible = False
     End Sub
 
     Private Sub Text_menu_button_Click(sender As Object, e As EventArgs) Handles Text_menu_button.Click
@@ -3709,10 +3742,17 @@ Public Class TL_SaveEditor
 
     Private Sub Icon_pronun_firstname_MouseMove(sender As Object, e As EventArgs) Handles Icon_pronun_firstname.MouseMove
         Text_pronun_firstname.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to edit first name pronunciation"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour éditer la prononciation du prénom"
+        End If
+        Panel_description.Visible = True
     End Sub
 
     Private Sub Icon_pronun_firstname_MouseLeave(sender As Object, e As EventArgs) Handles Icon_pronun_firstname.MouseLeave
         Text_pronun_firstname.Visible = False
+        Panel_description.Visible = False
     End Sub
 
     Private Sub Icon_valid_firstname_Click(sender As Object, e As EventArgs) Handles Icon_valid_firstname.Click
@@ -3727,10 +3767,17 @@ Public Class TL_SaveEditor
 
     Private Sub Icon_pronun_lastname_MouseMove(sender As Object, e As EventArgs) Handles Icon_pronun_lastname.MouseMove
         Text_pronun_lastname.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to edit last name pronunciation"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour éditer la prononciation du nom"
+        End If
+        Panel_description.Visible = True
     End Sub
 
     Private Sub Icon_pronun_lastname_MouseLeave(sender As Object, e As EventArgs) Handles Icon_pronun_lastname.MouseLeave
         Text_pronun_lastname.Visible = False
+        Panel_description.Visible = False
     End Sub
 
     Private Sub Icon_valid_lastname_Click(sender As Object, e As EventArgs) Handles Icon_valid_lastname.Click
@@ -3740,10 +3787,17 @@ Public Class TL_SaveEditor
 
     Private Sub Icon_pronun_nickname_MouseMove(sender As Object, e As EventArgs) Handles Icon_pronun_nickname.MouseMove
         Text_pronun_nickname.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Nickname pronunciation can't be edited"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Le surnom ne peut être édité"
+        End If
+        Panel_description.Visible = True
     End Sub
 
     Private Sub Icon_pronun_nickname_MouseLeave(sender As Object, e As EventArgs) Handles Icon_pronun_nickname.MouseLeave
         Text_pronun_nickname.Visible = False
+        Panel_description.Visible = False
     End Sub
 
     Private Sub Button_close_hcoloredit_Click(sender As Object, e As EventArgs) Handles Button_close_hcoloredit.Click
@@ -3752,6 +3806,19 @@ Public Class TL_SaveEditor
 
     Private Sub Icon_haircolor_Click(sender As Object, e As EventArgs) Handles Icon_haircolor.Click
         Panel_edit_haircolor.Visible = True
+    End Sub
+
+    Private Sub Icon_haircolor_MouseMove(sender As Object, e As EventArgs) Handles Icon_haircolor.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to edit hair color"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour éditer la couleur des cheveux"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_haircolor_MouseLeave(sender As Object, e As EventArgs) Handles Icon_haircolor.MouseLeave
+        Panel_description.Visible = False
     End Sub
 
     Private Sub color_1_Click(sender As Object, e As EventArgs) Handles color_1.Click
@@ -8622,5 +8689,47 @@ Public Class TL_SaveEditor
     Private Sub Text_edit_musical_Click(sender As Object, e As EventArgs) Handles Text_edit_musical.Click
         valu_selected_music.Value = 8
         Miimusic_edit.ShowDialog()
+    End Sub
+
+    Private Sub Icon_MiitopiaSE_Click(sender As Object, e As EventArgs) Handles Icon_MiitopiaSE.Click
+        Process.Start("https://github.com/Brionjv/Miitopia-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_MiitopiaSE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_MiitopiaSE.MouseLeave
+        Icon_MiitopiaSE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_MiitopiaSE_MouseMove(sender As Object, e As EventArgs) Handles Icon_MiitopiaSE.MouseMove
+        Icon_MiitopiaSE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try Miitopia Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer Miitopia Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_ChibiRoboZLSE_Click(sender As Object, e As EventArgs) Handles Icon_ChibiRoboZLSE.Click
+        Process.Start("https://github.com/Brionjv/Chibi-Robo-ZL-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_ChibiRoboZLSE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_ChibiRoboZLSE.MouseLeave
+        Icon_ChibiRoboZLSE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_ChibiRoboZLSE_MouseMove(sender As Object, e As EventArgs) Handles Icon_ChibiRoboZLSE.MouseMove
+        Icon_ChibiRoboZLSE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try Chibi Robo zip Lash Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer Chibi Robo zip Lash Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_eventfountain_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_eventfountain.MouseMove
+
     End Sub
 End Class

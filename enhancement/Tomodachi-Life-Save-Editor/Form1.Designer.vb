@@ -185,6 +185,10 @@ Partial Class TL_SaveEditor
         Me.Changelog = New System.Windows.Forms.Label()
         Me.Text_TLSE_version = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Icon_ChibiRoboZLSE = New System.Windows.Forms.PictureBox()
+        Me.Icon_3dsSEL = New System.Windows.Forms.PictureBox()
+        Me.Icon_MiitopiaSE = New System.Windows.Forms.PictureBox()
         Me.Panel_miiedit = New System.Windows.Forms.Panel()
         Me.Text_editing_mii = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -225,6 +229,7 @@ Partial Class TL_SaveEditor
         Me.color_2 = New System.Windows.Forms.PictureBox()
         Me.color_1 = New System.Windows.Forms.PictureBox()
         Me.Panel_mii_musics = New System.Windows.Forms.Panel()
+        Me.valu_selected_music = New System.Windows.Forms.NumericUpDown()
         Me.Fea_musics_musical = New System.Windows.Forms.Panel()
         Me.Text_edit_musical = New System.Windows.Forms.Label()
         Me.Fea_musics_techno = New System.Windows.Forms.Panel()
@@ -546,7 +551,10 @@ Partial Class TL_SaveEditor
         Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
-        Me.valu_selected_music = New System.Windows.Forms.NumericUpDown()
+        Me.Panel_description = New System.Windows.Forms.Panel()
+        Me.Text_description = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -670,6 +678,11 @@ Partial Class TL_SaveEditor
         Me.TabPage2.SuspendLayout()
         Me.Group_changelog.SuspendLayout()
         CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TabPage3.SuspendLayout()
+        Me.Panel11.SuspendLayout()
+        CType(Me.Icon_ChibiRoboZLSE, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_3dsSEL, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_MiitopiaSE, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_miiedit.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.Tab_mii_edit.SuspendLayout()
@@ -707,6 +720,7 @@ Partial Class TL_SaveEditor
         CType(Me.color_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.color_1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_mii_musics.SuspendLayout()
+        CType(Me.valu_selected_music, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Fea_musics_musical.SuspendLayout()
         Me.Fea_musics_techno.SuspendLayout()
         Me.Fea_musics_opera.SuspendLayout()
@@ -893,7 +907,8 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_save_mii.SuspendLayout()
         Me.Panel_select_mii.SuspendLayout()
-        CType(Me.valu_selected_music, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_description.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TLSE_header
@@ -2744,12 +2759,57 @@ Partial Class TL_SaveEditor
         '
         'TabPage3
         '
+        Me.TabPage3.BackgroundImage = CType(resources.GetObject("TabPage3.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage3.Controls.Add(Me.Panel11)
         Me.TabPage3.Location = New System.Drawing.Point(4, 4)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Size = New System.Drawing.Size(592, 464)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Credits"
         Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'Panel11
+        '
+        Me.Panel11.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel11.Controls.Add(Me.Icon_ChibiRoboZLSE)
+        Me.Panel11.Controls.Add(Me.Icon_3dsSEL)
+        Me.Panel11.Controls.Add(Me.Icon_MiitopiaSE)
+        Me.Panel11.Location = New System.Drawing.Point(531, 1)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(60, 462)
+        Me.Panel11.TabIndex = 0
+        '
+        'Icon_ChibiRoboZLSE
+        '
+        Me.Icon_ChibiRoboZLSE.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_ChibiRoboZLSE.Image = CType(resources.GetObject("Icon_ChibiRoboZLSE.Image"), System.Drawing.Image)
+        Me.Icon_ChibiRoboZLSE.Location = New System.Drawing.Point(6, 58)
+        Me.Icon_ChibiRoboZLSE.Name = "Icon_ChibiRoboZLSE"
+        Me.Icon_ChibiRoboZLSE.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_ChibiRoboZLSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Icon_ChibiRoboZLSE.TabIndex = 2
+        Me.Icon_ChibiRoboZLSE.TabStop = False
+        '
+        'Icon_3dsSEL
+        '
+        Me.Icon_3dsSEL.Image = CType(resources.GetObject("Icon_3dsSEL.Image"), System.Drawing.Image)
+        Me.Icon_3dsSEL.Location = New System.Drawing.Point(6, 112)
+        Me.Icon_3dsSEL.Name = "Icon_3dsSEL"
+        Me.Icon_3dsSEL.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_3dsSEL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Icon_3dsSEL.TabIndex = 1
+        Me.Icon_3dsSEL.TabStop = False
+        '
+        'Icon_MiitopiaSE
+        '
+        Me.Icon_MiitopiaSE.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_MiitopiaSE.Image = CType(resources.GetObject("Icon_MiitopiaSE.Image"), System.Drawing.Image)
+        Me.Icon_MiitopiaSE.Location = New System.Drawing.Point(6, 3)
+        Me.Icon_MiitopiaSE.Name = "Icon_MiitopiaSE"
+        Me.Icon_MiitopiaSE.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_MiitopiaSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Icon_MiitopiaSE.TabIndex = 0
+        Me.Icon_MiitopiaSE.TabStop = False
         '
         'Panel_miiedit
         '
@@ -3220,6 +3280,17 @@ Partial Class TL_SaveEditor
         Me.Panel_mii_musics.Size = New System.Drawing.Size(210, 202)
         Me.Panel_mii_musics.TabIndex = 180
         Me.Panel_mii_musics.Visible = False
+        '
+        'valu_selected_music
+        '
+        Me.valu_selected_music.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selected_music.Location = New System.Drawing.Point(6, 182)
+        Me.valu_selected_music.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_selected_music.Name = "valu_selected_music"
+        Me.valu_selected_music.Size = New System.Drawing.Size(35, 16)
+        Me.valu_selected_music.TabIndex = 190
+        Me.valu_selected_music.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selected_music.Visible = False
         '
         'Fea_musics_musical
         '
@@ -5119,6 +5190,8 @@ Partial Class TL_SaveEditor
         'Tab_mii_friendlist
         '
         Me.Tab_mii_friendlist.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
+        Me.Tab_mii_friendlist.Controls.Add(Me.Label1)
+        Me.Tab_mii_friendlist.Controls.Add(Me.PictureBox3)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_30)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_29)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_28)
@@ -6752,16 +6825,50 @@ Partial Class TL_SaveEditor
         'Timer7
         '
         '
-        'valu_selected_music
+        'Panel_description
         '
-        Me.valu_selected_music.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_selected_music.Location = New System.Drawing.Point(6, 182)
-        Me.valu_selected_music.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_selected_music.Name = "valu_selected_music"
-        Me.valu_selected_music.Size = New System.Drawing.Size(35, 16)
-        Me.valu_selected_music.TabIndex = 190
-        Me.valu_selected_music.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selected_music.Visible = False
+        Me.Panel_description.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_description.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
+        Me.Panel_description.Controls.Add(Me.Text_description)
+        Me.Panel_description.Location = New System.Drawing.Point(0, 525)
+        Me.Panel_description.Name = "Panel_description"
+        Me.Panel_description.Size = New System.Drawing.Size(600, 25)
+        Me.Panel_description.TabIndex = 28
+        Me.Panel_description.Visible = False
+        '
+        'Text_description
+        '
+        Me.Text_description.BackColor = System.Drawing.Color.Transparent
+        Me.Text_description.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Text_description.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_description.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_description.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Text_description.Location = New System.Drawing.Point(0, 0)
+        Me.Text_description.Name = "Text_description"
+        Me.Text_description.Size = New System.Drawing.Size(600, 25)
+        Me.Text_description.TabIndex = 0
+        Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(3, 1)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 226
+        Me.PictureBox3.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.Red
+        Me.Label1.Location = New System.Drawing.Point(26, 5)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(560, 13)
+        Me.Label1.TabIndex = 227
+        Me.Label1.Text = "If you edit relationship do same thing to second Mii (Mii 1 - set Mii 2 be spouse" & _
+    " , do for Mii 2 -> set Mii 1 be spouse too)"
         '
         'TL_SaveEditor
         '
@@ -6770,7 +6877,7 @@ Partial Class TL_SaveEditor
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(600, 550)
-        Me.Controls.Add(Me.Panel_miiedit)
+        Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.Panel_menu_opensave)
         Me.Controls.Add(Me.Panel_music)
@@ -6781,9 +6888,10 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Menu_panel)
         Me.Controls.Add(Me.Menu_button)
         Me.Controls.Add(Me.TLSE_header)
-        Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
+        Me.Controls.Add(Me.Panel_settings)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -6922,6 +7030,11 @@ Partial Class TL_SaveEditor
         Me.TabPage2.ResumeLayout(False)
         Me.Group_changelog.ResumeLayout(False)
         CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TabPage3.ResumeLayout(False)
+        Me.Panel11.ResumeLayout(False)
+        CType(Me.Icon_ChibiRoboZLSE, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_3dsSEL, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_MiitopiaSE, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_miiedit.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.Tab_mii_edit.ResumeLayout(False)
@@ -6961,6 +7074,7 @@ Partial Class TL_SaveEditor
         CType(Me.color_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.color_1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_mii_musics.ResumeLayout(False)
+        CType(Me.valu_selected_music, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Fea_musics_musical.ResumeLayout(False)
         Me.Fea_musics_techno.ResumeLayout(False)
         Me.Fea_musics_opera.ResumeLayout(False)
@@ -7165,7 +7279,8 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_save_mii.ResumeLayout(False)
         Me.Panel_select_mii.ResumeLayout(False)
-        CType(Me.valu_selected_music, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_description.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -7692,5 +7807,13 @@ Partial Class TL_SaveEditor
     Friend WithEvents Timer6 As System.Windows.Forms.Timer
     Friend WithEvents Timer7 As System.Windows.Forms.Timer
     Friend WithEvents valu_selected_music As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Panel11 As System.Windows.Forms.Panel
+    Friend WithEvents Icon_3dsSEL As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_MiitopiaSE As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel_description As System.Windows.Forms.Panel
+    Friend WithEvents Text_description As System.Windows.Forms.Label
+    Friend WithEvents Icon_ChibiRoboZLSE As System.Windows.Forms.PictureBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
 
 End Class
