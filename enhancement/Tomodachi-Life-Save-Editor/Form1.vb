@@ -1,5 +1,6 @@
 ﻿Imports System.Net
 Imports System.IO
+Imports PackageIO
 
 Public Class TL_SaveEditor
     Private IsFormBeingDragged As Boolean = False
@@ -4462,7 +4463,7 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Fea_edit_travelers_Click(sender As Object, e As EventArgs) Handles Fea_edit_travelers.Click
-
+        Travelers_edit.ShowDialog()
     End Sub
 
     Private Sub Fea_edit_travelers_MouseLeave(sender As Object, e As EventArgs) Handles Fea_edit_travelers.MouseLeave
@@ -8729,7 +8730,4 @@ Public Class TL_SaveEditor
         Panel_description.Visible = True
     End Sub
 
-    Private Sub Icon_eventfountain_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_eventfountain.MouseMove
-
-    End Sub
 End Class

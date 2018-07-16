@@ -199,6 +199,10 @@ Tomodachi-Life-Save-Editor
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_travelers">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.bkg_music">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.

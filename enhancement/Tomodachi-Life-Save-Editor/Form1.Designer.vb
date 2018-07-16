@@ -405,6 +405,8 @@ Partial Class TL_SaveEditor
         Me.Icon_fullness = New System.Windows.Forms.PictureBox()
         Me.valu_exp = New System.Windows.Forms.NumericUpDown()
         Me.Tab_mii_friendlist = New System.Windows.Forms.TabPage()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.valu_selfriend_rela_30 = New System.Windows.Forms.NumericUpDown()
         Me.valu_selfriend_rela_29 = New System.Windows.Forms.NumericUpDown()
         Me.valu_selfriend_rela_28 = New System.Windows.Forms.NumericUpDown()
@@ -553,8 +555,6 @@ Partial Class TL_SaveEditor
         Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_description = New System.Windows.Forms.Panel()
         Me.Text_description = New System.Windows.Forms.Label()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -835,6 +835,7 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_fullness, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_exp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Tab_mii_friendlist.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_selfriend_rela_30, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_selfriend_rela_29, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_selfriend_rela_28, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -908,7 +909,6 @@ Partial Class TL_SaveEditor
         Me.Panel_save_mii.SuspendLayout()
         Me.Panel_select_mii.SuspendLayout()
         Me.Panel_description.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TLSE_header
@@ -5325,6 +5325,27 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Text = "Friends list"
         Me.Tab_mii_friendlist.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.ForeColor = System.Drawing.Color.Red
+        Me.Label1.Location = New System.Drawing.Point(26, 5)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(560, 13)
+        Me.Label1.TabIndex = 227
+        Me.Label1.Text = "If you edit relationship do same thing to second Mii (Mii 1 - set Mii 2 be spouse" & _
+    " , do for Mii 2 -> set Mii 1 be spouse too)"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(3, 1)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 226
+        Me.PictureBox3.TabStop = False
+        '
         'valu_selfriend_rela_30
         '
         Me.valu_selfriend_rela_30.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -6849,27 +6870,6 @@ Partial Class TL_SaveEditor
         Me.Text_description.TabIndex = 0
         Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(3, 1)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 226
-        Me.PictureBox3.TabStop = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(26, 5)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(560, 13)
-        Me.Label1.TabIndex = 227
-        Me.Label1.Text = "If you edit relationship do same thing to second Mii (Mii 1 - set Mii 2 be spouse" & _
-    " , do for Mii 2 -> set Mii 1 be spouse too)"
-        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -6889,9 +6889,9 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Menu_button)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.Panel_islandedit)
-        Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_miiedit)
+        Me.Controls.Add(Me.Panel_extras)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -7207,6 +7207,7 @@ Partial Class TL_SaveEditor
         CType(Me.valu_exp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Tab_mii_friendlist.ResumeLayout(False)
         Me.Tab_mii_friendlist.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_selfriend_rela_30, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_selfriend_rela_29, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_selfriend_rela_28, System.ComponentModel.ISupportInitialize).EndInit()
@@ -7280,7 +7281,6 @@ Partial Class TL_SaveEditor
         Me.Panel_save_mii.ResumeLayout(False)
         Me.Panel_select_mii.ResumeLayout(False)
         Me.Panel_description.ResumeLayout(False)
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

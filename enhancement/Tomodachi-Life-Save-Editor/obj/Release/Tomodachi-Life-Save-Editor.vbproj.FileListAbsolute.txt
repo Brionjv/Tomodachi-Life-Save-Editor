@@ -27,3 +27,4 @@ D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Loading.resources
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Concert_edit.resources
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Miimusic_edit.resources
+D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Travelers_edit.resources

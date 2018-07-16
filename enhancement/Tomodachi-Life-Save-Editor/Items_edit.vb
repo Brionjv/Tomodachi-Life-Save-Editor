@@ -1,4 +1,5 @@
-﻿Public Class Items_edit
+﻿Imports PackageIO
+Public Class Items_edit
 
     Public Sub hidesub()
         Icon_clothes_01.Visible = False
@@ -62,5 +63,9 @@
 
     Private Sub Items_edit_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         Loading.Close()
+    End Sub
+
+    Private Sub Items_edit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
