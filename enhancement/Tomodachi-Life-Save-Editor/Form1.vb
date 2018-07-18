@@ -3663,6 +3663,15 @@ Public Class TL_SaveEditor
             valu_selfriend_rela_28.Visible = True
             valu_selfriend_rela_29.Visible = True
             valu_selfriend_rela_30.Visible = True
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
+                Select_allfav_1.Visible = False
+                Select_allfav_2.Visible = False
+                Select_fav_1.Visible = False
+                Select_fav_2.Visible = False
+                Select_fav_3.Visible = False
+                Select_worst_1.Visible = False
+                Select_worst_2.Visible = False
+            End If
         Else
             Hidden_things.Visible = False
             value_appartrenov.Visible = False
@@ -3742,6 +3751,15 @@ Public Class TL_SaveEditor
             valu_selfriend_rela_28.Visible = False
             valu_selfriend_rela_29.Visible = False
             valu_selfriend_rela_30.Visible = False
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
+                Select_allfav_1.Visible = True
+                Select_allfav_2.Visible = True
+                Select_fav_1.Visible = True
+                Select_fav_2.Visible = True
+                Select_fav_3.Visible = True
+                Select_worst_1.Visible = True
+                Select_worst_2.Visible = True
+            End If
         End If
     End Sub
 
@@ -9228,6 +9246,8 @@ Public Class TL_SaveEditor
             valu_allfav_1.Value = 371
         ElseIf Select_allfav_1.SelectedItem = Select_allfav_1.Items.Item(230) Then
             valu_allfav_1.Value = 381
+        ElseIf Select_allfav_1.SelectedItem = Select_allfav_1.Items.Item(231) Then
+            valu_allfav_1.Value = 0
         End If
     End Sub
 
@@ -9694,6 +9714,8 @@ Public Class TL_SaveEditor
             valu_allfav_2.Value = 371
         ElseIf Select_allfav_2.SelectedItem = Select_allfav_2.Items.Item(230) Then
             valu_allfav_2.Value = 381
+        ElseIf Select_allfav_2.SelectedItem = Select_allfav_2.Items.Item(231) Then
+            valu_allfav_2.Value = 0
         End If
     End Sub
 
@@ -10160,6 +10182,8 @@ Public Class TL_SaveEditor
             valu_fav_1.Value = 371
         ElseIf Select_fav_1.SelectedItem = Select_fav_1.Items.Item(230) Then
             valu_fav_1.Value = 381
+        ElseIf Select_fav_1.SelectedItem = Select_fav_1.Items.Item(231) Then
+            valu_fav_1.Value = 0
         End If
     End Sub
 
@@ -10626,6 +10650,8 @@ Public Class TL_SaveEditor
             valu_fav_2.Value = 371
         ElseIf Select_fav_2.SelectedItem = Select_fav_2.Items.Item(230) Then
             valu_fav_2.Value = 381
+        ElseIf Select_fav_2.SelectedItem = Select_fav_2.Items.Item(231) Then
+            valu_fav_2.Value = 0
         End If
     End Sub
 
@@ -11092,6 +11118,8 @@ Public Class TL_SaveEditor
             valu_fav_3.Value = 371
         ElseIf Select_fav_3.SelectedItem = Select_fav_3.Items.Item(230) Then
             valu_fav_3.Value = 381
+        ElseIf Select_fav_3.SelectedItem = Select_fav_3.Items.Item(231) Then
+            valu_fav_3.Value = 0
         End If
     End Sub
 
@@ -11558,6 +11586,8 @@ Public Class TL_SaveEditor
             valu_worst_1.Value = 371
         ElseIf Select_worst_1.SelectedItem = Select_worst_1.Items.Item(230) Then
             valu_worst_1.Value = 381
+        ElseIf Select_worst_1.SelectedItem = Select_worst_1.Items.Item(231) Then
+            valu_worst_1.Value = 0
         End If
     End Sub
 
@@ -12024,6 +12054,8 @@ Public Class TL_SaveEditor
             valu_worst_2.Value = 371
         ElseIf Select_worst_2.SelectedItem = Select_worst_2.Items.Item(230) Then
             valu_worst_2.Value = 381
+        ElseIf Select_worst_2.SelectedItem = Select_worst_2.Items.Item(231) Then
+            valu_worst_2.Value = 0
         End If
     End Sub
 
@@ -12490,6 +12522,8 @@ Public Class TL_SaveEditor
             Select_allfav_1.SelectedItem = Select_allfav_1.Items.Item(229)
         ElseIf valu_allfav_1.Value = 381 Then
             Select_allfav_1.SelectedItem = Select_allfav_1.Items.Item(230)
+        ElseIf valu_allfav_1.Value = 0 Then
+            Select_allfav_1.SelectedItem = Select_allfav_1.Items.Item(231)
         End If
     End Sub
 
@@ -12956,6 +12990,8 @@ Public Class TL_SaveEditor
             Select_allfav_2.SelectedItem = Select_allfav_2.Items.Item(229)
         ElseIf valu_allfav_2.Value = 381 Then
             Select_allfav_2.SelectedItem = Select_allfav_2.Items.Item(230)
+        ElseIf valu_allfav_2.Value = 0 Then
+            Select_allfav_2.SelectedItem = Select_allfav_2.Items.Item(231)
         End If
     End Sub
 
@@ -13422,6 +13458,8 @@ Public Class TL_SaveEditor
             Select_fav_1.SelectedItem = Select_fav_1.Items.Item(229)
         ElseIf valu_fav_1.Value = 381 Then
             Select_fav_1.SelectedItem = Select_fav_1.Items.Item(230)
+        ElseIf valu_fav_1.Value = 0 Then
+            Select_fav_1.SelectedItem = Select_fav_1.Items.Item(231)
         End If
     End Sub
 
@@ -13888,6 +13926,8 @@ Public Class TL_SaveEditor
             Select_fav_2.SelectedItem = Select_fav_2.Items.Item(229)
         ElseIf valu_fav_2.Value = 381 Then
             Select_fav_2.SelectedItem = Select_fav_2.Items.Item(230)
+        ElseIf valu_fav_2.Value = 0 Then
+            Select_fav_2.SelectedItem = Select_fav_2.Items.Item(231)
         End If
     End Sub
 
@@ -14354,6 +14394,8 @@ Public Class TL_SaveEditor
             Select_fav_3.SelectedItem = Select_fav_3.Items.Item(229)
         ElseIf valu_fav_3.Value = 381 Then
             Select_fav_3.SelectedItem = Select_fav_3.Items.Item(230)
+        ElseIf valu_fav_3.Value = 0 Then
+            Select_fav_3.SelectedItem = Select_fav_3.Items.Item(231)
         End If
     End Sub
 
@@ -14820,6 +14862,8 @@ Public Class TL_SaveEditor
             Select_worst_1.SelectedItem = Select_worst_1.Items.Item(229)
         ElseIf valu_worst_1.Value = 381 Then
             Select_worst_1.SelectedItem = Select_worst_1.Items.Item(230)
+        ElseIf valu_worst_1.Value = 0 Then
+            Select_worst_1.SelectedItem = Select_worst_1.Items.Item(231)
         End If
     End Sub
 
@@ -15286,6 +15330,8 @@ Public Class TL_SaveEditor
             Select_worst_2.SelectedItem = Select_worst_2.Items.Item(229)
         ElseIf valu_worst_2.Value = 381 Then
             Select_worst_2.SelectedItem = Select_worst_2.Items.Item(230)
+        ElseIf valu_worst_2.Value = 0 Then
+            Select_worst_2.SelectedItem = Select_worst_2.Items.Item(231)
         End If
     End Sub
 End Class
