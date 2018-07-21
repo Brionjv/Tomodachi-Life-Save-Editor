@@ -107,6 +107,7 @@ Public Class TL_SaveEditor
     Dim Accessfriendlist As String
     Dim AccessMiilist As String
     Dim Accessrelalist As String
+    Dim Patchmii As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -1435,7 +1436,7 @@ Public Class TL_SaveEditor
             fs.WriteByte(valu_allmusic.Value)
             fs.Position = Emotions
             fs.WriteByte(valu_emotions.Value)
-            writefriendlist()
+            Patchfrienlist()
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Editing of " & Text_nickname.Text & " has been saved"
                 fdialog.ShowDialog()
@@ -2084,6 +2085,427 @@ Public Class TL_SaveEditor
             valu_friend_rela_30.Visible = False
             Select_friend_rela_30.Visible = False
         End If
+    End Sub
+
+    Public Sub Patchfrienlist()
+        Try
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
+                If Select_allfriends.SelectedItem = Select_allfriends.Items.Item(0) Then
+                    fs.Position = &H29A54 + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_1.Value)
+                    fs.Position = &H29A54 + &H100 + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_2.Value)
+                    fs.Position = &H29A54 + (&H100 * 2) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_3.Value)
+                    fs.Position = &H29A54 + (&H100 * 3) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_4.Value)
+                    fs.Position = &H29A54 + (&H100 * 4) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_5.Value)
+                    fs.Position = &H29A54 + (&H100 * 5) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_6.Value)
+                    fs.Position = &H29A54 + (&H100 * 6) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_7.Value)
+                    fs.Position = &H29A54 + (&H100 * 7) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_8.Value)
+                    fs.Position = &H29A54 + (&H100 * 8) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_9.Value)
+                    fs.Position = &H29A54 + (&H100 * 9) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_10.Value)
+                    fs.Position = &H29A54 + (&H100 * 10) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_11.Value)
+                    fs.Position = &H29A54 + (&H100 * 11) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_12.Value)
+                    fs.Position = &H29A54 + (&H100 * 12) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_13.Value)
+                    fs.Position = &H29A54 + (&H100 * 13) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_14.Value)
+                    fs.Position = &H29A54 + (&H100 * 14) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_15.Value)
+                    fs.Position = &H29A54 + (&H100 * 15) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_16.Value)
+                    fs.Position = &H29A54 + (&H100 * 16) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_17.Value)
+                    fs.Position = &H29A54 + (&H100 * 17) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_18.Value)
+                    fs.Position = &H29A54 + (&H100 * 18) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_19.Value)
+                    fs.Position = &H29A54 + (&H100 * 19) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_20.Value)
+                    fs.Position = &H29A54 + (&H100 * 20) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_21.Value)
+                    fs.Position = &H29A54 + (&H100 * 21) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_22.Value)
+                    fs.Position = &H29A54 + (&H100 * 22) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_23.Value)
+                    fs.Position = &H29A54 + (&H100 * 23) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_24.Value)
+                    fs.Position = &H29A54 + (&H100 * 24) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_25.Value)
+                    fs.Position = &H29A54 + (&H100 * 25) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_26.Value)
+                    fs.Position = &H29A54 + (&H100 * 26) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_27.Value)
+                    fs.Position = &H29A54 + (&H100 * 27) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_28.Value)
+                    fs.Position = &H29A54 + (&H100 * 28) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_29.Value)
+                    fs.Position = &H29A54 + (&H100 * 29) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_30.Value)
+                ElseIf Select_allfriends.SelectedItem = Select_allfriends.Items.Item(1) Then
+                    fs.Position = &H29A54 + (&H100 * 30) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_1.Value)
+                    fs.Position = &H29A54 + (&H100 * 31) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_2.Value)
+                    fs.Position = &H29A54 + (&H100 * 32) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_3.Value)
+                    fs.Position = &H29A54 + (&H100 * 33) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_4.Value)
+                    fs.Position = &H29A54 + (&H100 * 34) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_5.Value)
+                    fs.Position = &H29A54 + (&H100 * 35) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_6.Value)
+                    fs.Position = &H29A54 + (&H100 * 36) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_7.Value)
+                    fs.Position = &H29A54 + (&H100 * 37) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_8.Value)
+                    fs.Position = &H29A54 + (&H100 * 38) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_9.Value)
+                    fs.Position = &H29A54 + (&H100 * 39) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_10.Value)
+                    fs.Position = &H29A54 + (&H100 * 40) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_11.Value)
+                    fs.Position = &H29A54 + (&H100 * 41) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_12.Value)
+                    fs.Position = &H29A54 + (&H100 * 42) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_13.Value)
+                    fs.Position = &H29A54 + (&H100 * 43) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_14.Value)
+                    fs.Position = &H29A54 + (&H100 * 44) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_15.Value)
+                    fs.Position = &H29A54 + (&H100 * 45) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_16.Value)
+                    fs.Position = &H29A54 + (&H100 * 46) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_17.Value)
+                    fs.Position = &H29A54 + (&H100 * 47) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_18.Value)
+                    fs.Position = &H29A54 + (&H100 * 48) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_19.Value)
+                    fs.Position = &H29A54 + (&H100 * 49) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_20.Value)
+                    fs.Position = &H29A54 + (&H100 * 50) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_21.Value)
+                    fs.Position = &H29A54 + (&H100 * 51) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_22.Value)
+                    fs.Position = &H29A54 + (&H100 * 52) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_23.Value)
+                    fs.Position = &H29A54 + (&H100 * 53) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_24.Value)
+                    fs.Position = &H29A54 + (&H100 * 54) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_25.Value)
+                    fs.Position = &H29A54 + (&H100 * 55) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_26.Value)
+                    fs.Position = &H29A54 + (&H100 * 56) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_27.Value)
+                    fs.Position = &H29A54 + (&H100 * 57) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_28.Value)
+                    fs.Position = &H29A54 + (&H100 * 58) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_29.Value)
+                    fs.Position = &H29A54 + (&H100 * 59) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_30.Value)
+                ElseIf Select_allfriends.SelectedItem = Select_allfriends.Items.Item(2) Then
+                    fs.Position = &H29A54 + (&H100 * 60) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_1.Value)
+                    fs.Position = &H29A54 + (&H100 * 61) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_2.Value)
+                    fs.Position = &H29A54 + (&H100 * 62) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_3.Value)
+                    fs.Position = &H29A54 + (&H100 * 63) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_4.Value)
+                    fs.Position = &H29A54 + (&H100 * 64) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_5.Value)
+                    fs.Position = &H29A54 + (&H100 * 65) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_6.Value)
+                    fs.Position = &H29A54 + (&H100 * 66) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_7.Value)
+                    fs.Position = &H29A54 + (&H100 * 67) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_8.Value)
+                    fs.Position = &H29A54 + (&H100 * 68) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_9.Value)
+                    fs.Position = &H29A54 + (&H100 * 69) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_10.Value)
+                    fs.Position = &H29A54 + (&H100 * 70) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_11.Value)
+                    fs.Position = &H29A54 + (&H100 * 71) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_12.Value)
+                    fs.Position = &H29A54 + (&H100 * 72) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_13.Value)
+                    fs.Position = &H29A54 + (&H100 * 73) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_14.Value)
+                    fs.Position = &H29A54 + (&H100 * 74) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_15.Value)
+                    fs.Position = &H29A54 + (&H100 * 75) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_16.Value)
+                    fs.Position = &H29A54 + (&H100 * 76) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_17.Value)
+                    fs.Position = &H29A54 + (&H100 * 77) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_18.Value)
+                    fs.Position = &H29A54 + (&H100 * 78) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_19.Value)
+                    fs.Position = &H29A54 + (&H100 * 79) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_20.Value)
+                    fs.Position = &H29A54 + (&H100 * 80) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_21.Value)
+                    fs.Position = &H29A54 + (&H100 * 81) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_22.Value)
+                    fs.Position = &H29A54 + (&H100 * 82) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_23.Value)
+                    fs.Position = &H29A54 + (&H100 * 83) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_24.Value)
+                    fs.Position = &H29A54 + (&H100 * 84) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_25.Value)
+                    fs.Position = &H29A54 + (&H100 * 85) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_26.Value)
+                    fs.Position = &H29A54 + (&H100 * 86) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_27.Value)
+                    fs.Position = &H29A54 + (&H100 * 87) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_28.Value)
+                    fs.Position = &H29A54 + (&H100 * 88) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_29.Value)
+                    fs.Position = &H29A54 + (&H100 * 89) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_30.Value)
+                ElseIf Select_allfriends.SelectedItem = Select_allfriends.Items.Item(3) Then
+                    fs.Position = &H29A54 + (&H100 * 90) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_1.Value)
+                    fs.Position = &H29A54 + (&H100 * 91) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_2.Value)
+                    fs.Position = &H29A54 + (&H100 * 92) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_3.Value)
+                    fs.Position = &H29A54 + (&H100 * 93) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_4.Value)
+                    fs.Position = &H29A54 + (&H100 * 94) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_5.Value)
+                    fs.Position = &H29A54 + (&H100 * 95) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_6.Value)
+                    fs.Position = &H29A54 + (&H100 * 96) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_7.Value)
+                    fs.Position = &H29A54 + (&H100 * 97) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_8.Value)
+                    fs.Position = &H29A54 + (&H100 * 98) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_9.Value)
+                    fs.Position = &H29A54 + (&H100 * 99) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_10.Value)
+                End If
+            End If
+            If Filever_text.Text = "JP" Then
+                If Select_allfriends.SelectedItem = Select_allfriends.Items.Item(0) Then
+                    fs.Position = &H248E4 + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_1.Value)
+                    fs.Position = &H248E4 + &H100 + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_2.Value)
+                    fs.Position = &H248E4 + (&H100 * 2) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_3.Value)
+                    fs.Position = &H248E4 + (&H100 * 3) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_4.Value)
+                    fs.Position = &H248E4 + (&H100 * 4) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_5.Value)
+                    fs.Position = &H248E4 + (&H100 * 5) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_6.Value)
+                    fs.Position = &H248E4 + (&H100 * 6) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_7.Value)
+                    fs.Position = &H248E4 + (&H100 * 7) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_8.Value)
+                    fs.Position = &H248E4 + (&H100 * 8) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_9.Value)
+                    fs.Position = &H248E4 + (&H100 * 9) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_10.Value)
+                    fs.Position = &H248E4 + (&H100 * 10) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_11.Value)
+                    fs.Position = &H248E4 + (&H100 * 11) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_12.Value)
+                    fs.Position = &H248E4 + (&H100 * 12) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_13.Value)
+                    fs.Position = &H248E4 + (&H100 * 13) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_14.Value)
+                    fs.Position = &H248E4 + (&H100 * 14) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_15.Value)
+                    fs.Position = &H248E4 + (&H100 * 15) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_16.Value)
+                    fs.Position = &H248E4 + (&H100 * 16) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_17.Value)
+                    fs.Position = &H248E4 + (&H100 * 17) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_18.Value)
+                    fs.Position = &H248E4 + (&H100 * 18) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_19.Value)
+                    fs.Position = &H248E4 + (&H100 * 19) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_20.Value)
+                    fs.Position = &H248E4 + (&H100 * 20) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_21.Value)
+                    fs.Position = &H248E4 + (&H100 * 21) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_22.Value)
+                    fs.Position = &H248E4 + (&H100 * 22) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_23.Value)
+                    fs.Position = &H248E4 + (&H100 * 23) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_24.Value)
+                    fs.Position = &H248E4 + (&H100 * 24) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_25.Value)
+                    fs.Position = &H248E4 + (&H100 * 25) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_26.Value)
+                    fs.Position = &H248E4 + (&H100 * 26) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_27.Value)
+                    fs.Position = &H248E4 + (&H100 * 27) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_28.Value)
+                    fs.Position = &H248E4 + (&H100 * 28) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_29.Value)
+                    fs.Position = &H248E4 + (&H100 * 29) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_30.Value)
+                ElseIf Select_allfriends.SelectedItem = Select_allfriends.Items.Item(1) Then
+                    fs.Position = &H248E4 + (&H100 * 30) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_1.Value)
+                    fs.Position = &H248E4 + (&H100 * 31) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_2.Value)
+                    fs.Position = &H248E4 + (&H100 * 32) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_3.Value)
+                    fs.Position = &H248E4 + (&H100 * 33) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_4.Value)
+                    fs.Position = &H248E4 + (&H100 * 34) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_5.Value)
+                    fs.Position = &H248E4 + (&H100 * 35) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_6.Value)
+                    fs.Position = &H248E4 + (&H100 * 36) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_7.Value)
+                    fs.Position = &H248E4 + (&H100 * 37) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_8.Value)
+                    fs.Position = &H248E4 + (&H100 * 38) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_9.Value)
+                    fs.Position = &H248E4 + (&H100 * 39) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_10.Value)
+                    fs.Position = &H248E4 + (&H100 * 40) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_11.Value)
+                    fs.Position = &H248E4 + (&H100 * 41) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_12.Value)
+                    fs.Position = &H248E4 + (&H100 * 42) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_13.Value)
+                    fs.Position = &H248E4 + (&H100 * 43) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_14.Value)
+                    fs.Position = &H248E4 + (&H100 * 44) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_15.Value)
+                    fs.Position = &H248E4 + (&H100 * 45) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_16.Value)
+                    fs.Position = &H248E4 + (&H100 * 46) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_17.Value)
+                    fs.Position = &H248E4 + (&H100 * 47) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_18.Value)
+                    fs.Position = &H248E4 + (&H100 * 48) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_19.Value)
+                    fs.Position = &H248E4 + (&H100 * 49) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_20.Value)
+                    fs.Position = &H248E4 + (&H100 * 50) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_21.Value)
+                    fs.Position = &H248E4 + (&H100 * 51) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_22.Value)
+                    fs.Position = &H248E4 + (&H100 * 52) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_23.Value)
+                    fs.Position = &H248E4 + (&H100 * 53) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_24.Value)
+                    fs.Position = &H248E4 + (&H100 * 54) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_25.Value)
+                    fs.Position = &H248E4 + (&H100 * 55) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_26.Value)
+                    fs.Position = &H248E4 + (&H100 * 56) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_27.Value)
+                    fs.Position = &H248E4 + (&H100 * 57) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_28.Value)
+                    fs.Position = &H248E4 + (&H100 * 58) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_29.Value)
+                    fs.Position = &H248E4 + (&H100 * 59) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_30.Value)
+                ElseIf Select_allfriends.SelectedItem = Select_allfriends.Items.Item(2) Then
+                    fs.Position = &H248E4 + (&H100 * 60) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_1.Value)
+                    fs.Position = &H248E4 + (&H100 * 61) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_2.Value)
+                    fs.Position = &H248E4 + (&H100 * 62) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_3.Value)
+                    fs.Position = &H248E4 + (&H100 * 63) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_4.Value)
+                    fs.Position = &H248E4 + (&H100 * 64) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_5.Value)
+                    fs.Position = &H248E4 + (&H100 * 65) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_6.Value)
+                    fs.Position = &H248E4 + (&H100 * 66) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_7.Value)
+                    fs.Position = &H248E4 + (&H100 * 67) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_8.Value)
+                    fs.Position = &H248E4 + (&H100 * 68) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_9.Value)
+                    fs.Position = &H248E4 + (&H100 * 69) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_10.Value)
+                    fs.Position = &H248E4 + (&H100 * 70) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_11.Value)
+                    fs.Position = &H248E4 + (&H100 * 71) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_12.Value)
+                    fs.Position = &H248E4 + (&H100 * 72) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_13.Value)
+                    fs.Position = &H248E4 + (&H100 * 73) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_14.Value)
+                    fs.Position = &H248E4 + (&H100 * 74) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_15.Value)
+                    fs.Position = &H248E4 + (&H100 * 75) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_16.Value)
+                    fs.Position = &H248E4 + (&H100 * 76) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_17.Value)
+                    fs.Position = &H248E4 + (&H100 * 77) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_18.Value)
+                    fs.Position = &H248E4 + (&H100 * 78) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_19.Value)
+                    fs.Position = &H248E4 + (&H100 * 79) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_20.Value)
+                    fs.Position = &H248E4 + (&H100 * 80) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_21.Value)
+                    fs.Position = &H248E4 + (&H100 * 81) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_22.Value)
+                    fs.Position = &H248E4 + (&H100 * 82) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_23.Value)
+                    fs.Position = &H248E4 + (&H100 * 83) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_24.Value)
+                    fs.Position = &H248E4 + (&H100 * 84) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_25.Value)
+                    fs.Position = &H248E4 + (&H100 * 85) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_26.Value)
+                    fs.Position = &H248E4 + (&H100 * 86) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_27.Value)
+                    fs.Position = &H248E4 + (&H100 * 87) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_28.Value)
+                    fs.Position = &H248E4 + (&H100 * 88) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_29.Value)
+                    fs.Position = &H248E4 + (&H100 * 89) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_30.Value)
+                ElseIf Select_allfriends.SelectedItem = Select_allfriends.Items.Item(3) Then
+                    fs.Position = &H248E4 + (&H100 * 90) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_1.Value)
+                    fs.Position = &H248E4 + (&H100 * 91) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_2.Value)
+                    fs.Position = &H248E4 + (&H100 * 92) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_3.Value)
+                    fs.Position = &H248E4 + (&H100 * 93) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_4.Value)
+                    fs.Position = &H248E4 + (&H100 * 94) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_5.Value)
+                    fs.Position = &H248E4 + (&H100 * 95) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_6.Value)
+                    fs.Position = &H248E4 + (&H100 * 96) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_7.Value)
+                    fs.Position = &H248E4 + (&H100 * 97) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_8.Value)
+                    fs.Position = &H248E4 + (&H100 * 98) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_9.Value)
+                    fs.Position = &H248E4 + (&H100 * 99) + Patchmii
+                    fs.WriteByte(valu_selfriend_rela_10.Value)
+                End If
+            End If
+        Catch ex As Exception
+        End Try
     End Sub
 
     Private Sub Closebutton_Click(sender As Object, e As EventArgs) Handles Closebutton.Click
@@ -5397,610 +5819,840 @@ Public Class TL_SaveEditor
         Select_emotions.SelectedItem = Select_emotions.Items.Item(0)
         Check_fullness.Checked = False
         Select_growkid.SelectedItem = Select_growkid.Items.Item(0)
+        Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0)
+        Select_friend_rela_2.SelectedItem = Select_friend_rela_2.Items.Item(0)
+        Select_friend_rela_3.SelectedItem = Select_friend_rela_3.Items.Item(0)
+        Select_friend_rela_4.SelectedItem = Select_friend_rela_4.Items.Item(0)
+        Select_friend_rela_5.SelectedItem = Select_friend_rela_5.Items.Item(0)
+        Select_friend_rela_6.SelectedItem = Select_friend_rela_6.Items.Item(0)
+        Select_friend_rela_7.SelectedItem = Select_friend_rela_7.Items.Item(0)
+        Select_friend_rela_8.SelectedItem = Select_friend_rela_8.Items.Item(0)
+        Select_friend_rela_9.SelectedItem = Select_friend_rela_9.Items.Item(0)
+        Select_friend_rela_10.SelectedItem = Select_friend_rela_10.Items.Item(0)
+        Select_friend_rela_11.SelectedItem = Select_friend_rela_11.Items.Item(0)
+        Select_friend_rela_12.SelectedItem = Select_friend_rela_12.Items.Item(0)
+        Select_friend_rela_13.SelectedItem = Select_friend_rela_13.Items.Item(0)
+        Select_friend_rela_14.SelectedItem = Select_friend_rela_14.Items.Item(0)
+        Select_friend_rela_15.SelectedItem = Select_friend_rela_15.Items.Item(0)
+        Select_friend_rela_16.SelectedItem = Select_friend_rela_16.Items.Item(0)
+        Select_friend_rela_17.SelectedItem = Select_friend_rela_17.Items.Item(0)
+        Select_friend_rela_18.SelectedItem = Select_friend_rela_18.Items.Item(0)
+        Select_friend_rela_19.SelectedItem = Select_friend_rela_19.Items.Item(0)
+        Select_friend_rela_20.SelectedItem = Select_friend_rela_20.Items.Item(0)
+        Select_friend_rela_21.SelectedItem = Select_friend_rela_21.Items.Item(0)
+        Select_friend_rela_22.SelectedItem = Select_friend_rela_22.Items.Item(0)
+        Select_friend_rela_23.SelectedItem = Select_friend_rela_23.Items.Item(0)
+        Select_friend_rela_24.SelectedItem = Select_friend_rela_24.Items.Item(0)
+        Select_friend_rela_25.SelectedItem = Select_friend_rela_25.Items.Item(0)
+        Select_friend_rela_26.SelectedItem = Select_friend_rela_26.Items.Item(0)
+        Select_friend_rela_27.SelectedItem = Select_friend_rela_27.Items.Item(0)
+        Select_friend_rela_28.SelectedItem = Select_friend_rela_28.Items.Item(0)
+        Select_friend_rela_29.SelectedItem = Select_friend_rela_29.Items.Item(0)
+        Select_friend_rela_30.SelectedItem = Select_friend_rela_30.Items.Item(0)
         If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
             If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
                 Accessmii = &H0
                 Accessfriends = &H0
+                Patchmii = 0
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
                 Accessmii = &H660
                 Accessfriends = &H100
+                Patchmii = 1
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
                 Accessmii = &H660 * 2
                 Accessfriends = &H100 * 2
+                Patchmii = 2
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
                 Accessmii = &H660 * 3
                 Accessfriends = &H100 * 3
+                Patchmii = 3
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
                 Accessmii = &H660 * 4
                 Accessfriends = &H100 * 4
+                Patchmii = 4
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
                 Accessmii = &H660 * 5
                 Accessfriends = &H100 * 5
+                Patchmii = 5
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
                 Accessmii = &H660 * 6
                 Accessfriends = &H100 * 6
+                Patchmii = 6
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
                 Accessmii = &H660 * 7
                 Accessfriends = &H100 * 7
+                Patchmii = 7
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
                 Accessmii = &H660 * 8
                 Accessfriends = &H100 * 8
+                Patchmii = 8
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
                 Accessmii = &H660 * 9
                 Accessfriends = &H100 * 9
+                Patchmii = 9
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
                 Accessmii = &H660 * 10
                 Accessfriends = &H100 * 10
+                Patchmii = 10
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
                 Accessmii = &H660 * 11
                 Accessfriends = &H100 * 11
+                Patchmii = 11
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
                 Accessmii = &H660 * 12
                 Accessfriends = &H100 * 12
+                Patchmii = 12
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
                 Accessmii = &H660 * 13
                 Accessfriends = &H100 * 13
+                Patchmii = 13
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
                 Accessmii = &H660 * 14
                 Accessfriends = &H100 * 14
+                Patchmii = 14
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
                 Accessmii = &H660 * 15
                 Accessfriends = &H100 * 15
+                Patchmii = 15
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
                 Accessmii = &H660 * 16
                 Accessfriends = &H100 * 16
+                Patchmii = 16
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
                 Accessmii = &H660 * 17
                 Accessfriends = &H100 * 17
+                Patchmii = 17
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
                 Accessmii = &H660 * 18
                 Accessfriends = &H100 * 18
+                Patchmii = 18
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
                 Accessmii = &H660 * 19
                 Accessfriends = &H100 * 19
+                Patchmii = 19
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
                 Accessmii = &H660 * 20
                 Accessfriends = &H100 * 20
+                Patchmii = 20
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
                 Accessmii = &H660 * 21
                 Accessfriends = &H100 * 21
+                Patchmii = 21
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
                 Accessmii = &H660 * 22
                 Accessfriends = &H100 * 22
+                Patchmii = 22
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
                 Accessmii = &H660 * 23
                 Accessfriends = &H100 * 23
+                Patchmii = 23
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
                 Accessmii = &H660 * 24
                 Accessfriends = &H100 * 24
+                Patchmii = 24
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
                 Accessmii = &H660 * 25
                 Accessfriends = &H100 * 25
+                Patchmii = 25
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
                 Accessmii = &H660 * 26
                 Accessfriends = &H100 * 26
+                Patchmii = 26
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
                 Accessmii = &H660 * 27
                 Accessfriends = &H100 * 27
+                Patchmii = 27
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
                 Accessmii = &H660 * 28
                 Accessfriends = &H100 * 28
+                Patchmii = 28
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
                 Accessmii = &H660 * 29
                 Accessfriends = &H100 * 29
+                Patchmii = 29
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
                 Accessmii = &H660 * 30
                 Accessfriends = &H100 * 30
+                Patchmii = 30
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
                 Accessmii = &H660 * 31
                 Accessfriends = &H100 * 31
+                Patchmii = 31
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
                 Accessmii = &H660 * 32
                 Accessfriends = &H100 * 32
+                Patchmii = 32
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
                 Accessmii = &H660 * 33
                 Accessfriends = &H100 * 33
+                Patchmii = 33
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
                 Accessmii = &H660 * 34
                 Accessfriends = &H100 * 34
+                Patchmii = 34
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
                 Accessmii = &H660 * 35
                 Accessfriends = &H100 * 35
+                Patchmii = 35
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
                 Accessmii = &H660 * 36
                 Accessfriends = &H100 * 36
+                Patchmii = 36
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
                 Accessmii = &H660 * 37
                 Accessfriends = &H100 * 37
+                Patchmii = 37
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
                 Accessmii = &H660 * 38
                 Accessfriends = &H100 * 38
+                Patchmii = 38
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
                 Accessmii = &H660 * 39
                 Accessfriends = &H100 * 39
+                Patchmii = 39
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
                 Accessmii = &H660 * 40
                 Accessfriends = &H100 * 40
+                Patchmii = 40
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
                 Accessmii = &H660 * 41
                 Accessfriends = &H100 * 41
+                Patchmii = 41
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
                 Accessmii = &H660 * 42
                 Accessfriends = &H100 * 42
+                Patchmii = 42
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
                 Accessmii = &H660 * 43
                 Accessfriends = &H100 * 43
+                Patchmii = 43
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
                 Accessmii = &H660 * 44
                 Accessfriends = &H100 * 44
+                Patchmii = 44
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
                 Accessmii = &H660 * 45
                 Accessfriends = &H100 * 45
+                Patchmii = 45
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
                 Accessmii = &H660 * 46
                 Accessfriends = &H100 * 46
+                Patchmii = 46
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
                 Accessmii = &H660 * 47
                 Accessfriends = &H100 * 47
+                Patchmii = 47
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
                 Accessmii = &H660 * 48
                 Accessfriends = &H100 * 48
+                Patchmii = 48
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
                 Accessmii = &H660 * 49
                 Accessfriends = &H100 * 49
+                Patchmii = 49
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(50) Then
                 Accessmii = &H660 * 50
                 Accessfriends = &H100 * 50
+                Patchmii = 50
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(51) Then
                 Accessmii = &H660 * 51
                 Accessfriends = &H100 * 51
+                Patchmii = 51
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(52) Then
                 Accessmii = &H660 * 52
                 Accessfriends = &H100 * 52
+                Patchmii = 52
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(53) Then
                 Accessmii = &H660 * 53
                 Accessfriends = &H100 * 53
+                Patchmii = 53
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(54) Then
                 Accessmii = &H660 * 54
                 Accessfriends = &H100 * 54
+                Patchmii = 54
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(55) Then
                 Accessmii = &H660 * 55
                 Accessfriends = &H100 * 55
+                Patchmii = 55
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(56) Then
                 Accessmii = &H660 * 56
                 Accessfriends = &H100 * 56
+                Patchmii = 56
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(57) Then
                 Accessmii = &H660 * 57
                 Accessfriends = &H100 * 57
+                Patchmii = 57
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(58) Then
                 Accessmii = &H660 * 58
                 Accessfriends = &H100 * 58
+                Patchmii = 58
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(59) Then
                 Accessmii = &H660 * 59
                 Accessfriends = &H100 * 59
+                Patchmii = 59
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(60) Then
                 Accessmii = &H660 * 60
                 Accessfriends = &H100 * 60
+                Patchmii = 60
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(61) Then
                 Accessmii = &H660 * 61
                 Accessfriends = &H100 * 61
+                Patchmii = 61
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(62) Then
                 Accessmii = &H660 * 62
                 Accessfriends = &H100 * 62
+                Patchmii = 62
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(63) Then
                 Accessmii = &H660 * 63
                 Accessfriends = &H100 * 63
+                Patchmii = 63
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(64) Then
                 Accessmii = &H660 * 64
                 Accessfriends = &H100 * 64
+                Patchmii = 64
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(65) Then
                 Accessmii = &H660 * 65
                 Accessfriends = &H100 * 65
+                Patchmii = 65
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(66) Then
                 Accessmii = &H660 * 66
                 Accessfriends = &H100 * 66
+                Patchmii = 66
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(67) Then
                 Accessmii = &H660 * 67
                 Accessfriends = &H100 * 67
+                Patchmii = 67
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(68) Then
                 Accessmii = &H660 * 68
                 Accessfriends = &H100 * 68
+                Patchmii = 68
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(69) Then
                 Accessmii = &H660 * 69
                 Accessfriends = &H100 * 69
+                Patchmii = 69
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(70) Then
                 Accessmii = &H660 * 70
                 Accessfriends = &H100 * 70
+                Patchmii = 70
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(71) Then
                 Accessmii = &H660 * 71
                 Accessfriends = &H100 * 71
+                Patchmii = 71
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(72) Then
                 Accessmii = &H660 * 72
                 Accessfriends = &H100 * 72
+                Patchmii = 72
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(73) Then
                 Accessmii = &H660 * 73
                 Accessfriends = &H100 * 73
+                Patchmii = 73
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(74) Then
                 Accessmii = &H660 * 74
                 Accessfriends = &H100 * 74
+                Patchmii = 74
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(75) Then
                 Accessmii = &H660 * 75
                 Accessfriends = &H100 * 75
+                Patchmii = 75
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(76) Then
                 Accessmii = &H660 * 76
                 Accessfriends = &H100 * 76
+                Patchmii = 76
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(77) Then
                 Accessmii = &H660 * 77
                 Accessfriends = &H100 * 77
+                Patchmii = 77
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(78) Then
                 Accessmii = &H660 * 78
                 Accessfriends = &H100 * 78
+                Patchmii = 78
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(79) Then
                 Accessmii = &H660 * 79
                 Accessfriends = &H100 * 79
+                Patchmii = 79
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(80) Then
                 Accessmii = &H660 * 80
                 Accessfriends = &H100 * 80
+                Patchmii = 80
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(81) Then
                 Accessmii = &H660 * 81
                 Accessfriends = &H100 * 81
+                Patchmii = 81
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(82) Then
                 Accessmii = &H660 * 82
                 Accessfriends = &H100 * 82
+                Patchmii = 82
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(83) Then
                 Accessmii = &H660 * 83
                 Accessfriends = &H100 * 83
+                Patchmii = 83
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(84) Then
                 Accessmii = &H660 * 84
                 Accessfriends = &H100 * 84
+                Patchmii = 84
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(85) Then
                 Accessmii = &H660 * 85
                 Accessfriends = &H100 * 85
+                Patchmii = 85
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(86) Then
                 Accessmii = &H660 * 86
                 Accessfriends = &H100 * 86
+                Patchmii = 86
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(87) Then
                 Accessmii = &H660 * 87
                 Accessfriends = &H100 * 87
+                Patchmii = 87
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(88) Then
                 Accessmii = &H660 * 88
                 Accessfriends = &H100 * 88
+                Patchmii = 88
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(89) Then
                 Accessmii = &H660 * 89
                 Accessfriends = &H100 * 89
+                Patchmii = 89
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(90) Then
                 Accessmii = &H660 * 90
                 Accessfriends = &H100 * 90
+                Patchmii = 90
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(91) Then
                 Accessmii = &H660 * 91
                 Accessfriends = &H100 * 91
+                Patchmii = 91
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(92) Then
                 Accessmii = &H660 * 92
                 Accessfriends = &H100 * 92
+                Patchmii = 92
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(93) Then
                 Accessmii = &H660 * 93
                 Accessfriends = &H100 * 93
+                Patchmii = 93
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(94) Then
                 Accessmii = &H660 * 94
                 Accessfriends = &H100 * 94
+                Patchmii = 94
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(95) Then
                 Accessmii = &H660 * 95
                 Accessfriends = &H100 * 95
+                Patchmii = 95
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(96) Then
                 Accessmii = &H660 * 96
                 Accessfriends = &H100 * 96
+                Patchmii = 96
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(97) Then
                 Accessmii = &H660 * 97
                 Accessfriends = &H100 * 97
+                Patchmii = 97
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(98) Then
                 Accessmii = &H660 * 98
                 Accessfriends = &H100 * 98
+                Patchmii = 98
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(99) Then
                 Accessmii = &H660 * 99
                 Accessfriends = &H100 * 99
+                Patchmii = 99
             End If
         End If
         If Filever_text.Text = "JP" Then
             If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
                 Accessmii = &H0
                 Accessfriends = &H0
+                Patchmii = 0
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
                 Accessmii = &H590
                 Accessfriends = &H100
+                Patchmii = 1
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
                 Accessmii = &H590 * 2
                 Accessfriends = &H100 * 2
+                Patchmii = 2
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
                 Accessmii = &H590 * 3
                 Accessfriends = &H100 * 3
+                Patchmii = 3
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
                 Accessmii = &H590 * 4
                 Accessfriends = &H100 * 4
+                Patchmii = 4
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
                 Accessmii = &H590 * 5
                 Accessfriends = &H100 * 5
+                Patchmii = 5
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
                 Accessmii = &H590 * 6
                 Accessfriends = &H100 * 6
+                Patchmii = 6
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
                 Accessmii = &H590 * 7
                 Accessfriends = &H100 * 7
+                Patchmii = 7
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
                 Accessmii = &H590 * 8
                 Accessfriends = &H100 * 8
+                Patchmii = 8
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
                 Accessmii = &H590 * 9
                 Accessfriends = &H100 * 9
+                Patchmii = 9
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
                 Accessmii = &H590 * 10
                 Accessfriends = &H100 * 10
+                Patchmii = 10
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
                 Accessmii = &H590 * 11
                 Accessfriends = &H100 * 11
+                Patchmii = 11
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
                 Accessmii = &H590 * 12
                 Accessfriends = &H100 * 12
+                Patchmii = 12
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
                 Accessmii = &H590 * 13
                 Accessfriends = &H100 * 13
+                Patchmii = 13
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
                 Accessmii = &H590 * 14
                 Accessfriends = &H100 * 14
+                Patchmii = 14
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
                 Accessmii = &H590 * 15
                 Accessfriends = &H100 * 15
+                Patchmii = 15
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
                 Accessmii = &H590 * 16
                 Accessfriends = &H100 * 16
+                Patchmii = 16
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
                 Accessmii = &H590 * 17
                 Accessfriends = &H100 * 17
+                Patchmii = 17
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
                 Accessmii = &H590 * 18
                 Accessfriends = &H100 * 18
+                Patchmii = 18
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
                 Accessmii = &H590 * 19
                 Accessfriends = &H100 * 19
+                Patchmii = 19
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
                 Accessmii = &H590 * 20
                 Accessfriends = &H100 * 20
+                Patchmii = 20
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
                 Accessmii = &H590 * 21
                 Accessfriends = &H100 * 21
+                Patchmii = 21
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
                 Accessmii = &H590 * 22
                 Accessfriends = &H100 * 22
+                Patchmii = 22
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
                 Accessmii = &H590 * 23
                 Accessfriends = &H100 * 23
+                Patchmii = 23
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
                 Accessmii = &H590 * 24
                 Accessfriends = &H100 * 24
+                Patchmii = 24
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
                 Accessmii = &H590 * 25
                 Accessfriends = &H100 * 25
+                Patchmii = 25
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
                 Accessmii = &H590 * 26
                 Accessfriends = &H100 * 26
+                Patchmii = 26
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
                 Accessmii = &H590 * 27
                 Accessfriends = &H100 * 27
+                Patchmii = 27
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
                 Accessmii = &H590 * 28
                 Accessfriends = &H100 * 28
+                Patchmii = 28
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
                 Accessmii = &H590 * 29
                 Accessfriends = &H100 * 29
+                Patchmii = 29
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
                 Accessmii = &H590 * 30
                 Accessfriends = &H100 * 30
+                Patchmii = 30
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
                 Accessmii = &H590 * 31
                 Accessfriends = &H100 * 31
+                Patchmii = 31
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
                 Accessmii = &H590 * 32
                 Accessfriends = &H100 * 32
+                Patchmii = 32
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
                 Accessmii = &H590 * 33
                 Accessfriends = &H100 * 33
+                Patchmii = 33
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
                 Accessmii = &H590 * 34
                 Accessfriends = &H100 * 34
+                Patchmii = 34
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
                 Accessmii = &H590 * 35
                 Accessfriends = &H100 * 35
+                Patchmii = 35
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
                 Accessmii = &H590 * 36
                 Accessfriends = &H100 * 36
+                Patchmii = 36
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
                 Accessmii = &H590 * 37
                 Accessfriends = &H100 * 37
+                Patchmii = 37
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
                 Accessmii = &H590 * 38
                 Accessfriends = &H100 * 38
+                Patchmii = 38
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
                 Accessmii = &H590 * 39
                 Accessfriends = &H100 * 39
+                Patchmii = 39
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
                 Accessmii = &H590 * 40
                 Accessfriends = &H100 * 40
+                Patchmii = 40
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
                 Accessmii = &H590 * 41
                 Accessfriends = &H100 * 41
+                Patchmii = 41
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
                 Accessmii = &H590 * 42
                 Accessfriends = &H100 * 42
+                Patchmii = 42
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
                 Accessmii = &H590 * 43
                 Accessfriends = &H100 * 43
+                Patchmii = 43
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
                 Accessmii = &H590 * 44
                 Accessfriends = &H100 * 44
+                Patchmii = 44
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
                 Accessmii = &H590 * 45
                 Accessfriends = &H100 * 45
+                Patchmii = 45
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
                 Accessmii = &H590 * 46
                 Accessfriends = &H100 * 46
+                Patchmii = 46
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
                 Accessmii = &H590 * 47
                 Accessfriends = &H100 * 47
+                Patchmii = 47
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
                 Accessmii = &H590 * 48
                 Accessfriends = &H100 * 48
+                Patchmii = 48
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
                 Accessmii = &H590 * 49
                 Accessfriends = &H100 * 49
+                Patchmii = 49
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(50) Then
                 Accessmii = &H590 * 50
                 Accessfriends = &H100 * 50
+                Patchmii = 50
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(51) Then
                 Accessmii = &H590 * 51
                 Accessfriends = &H100 * 51
+                Patchmii = 51
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(52) Then
                 Accessmii = &H590 * 52
                 Accessfriends = &H100 * 52
+                Patchmii = 52
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(53) Then
                 Accessmii = &H590 * 53
                 Accessfriends = &H100 * 53
+                Patchmii = 53
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(54) Then
                 Accessmii = &H590 * 54
                 Accessfriends = &H100 * 54
+                Patchmii = 54
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(55) Then
                 Accessmii = &H590 * 55
                 Accessfriends = &H100 * 55
+                Patchmii = 55
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(56) Then
                 Accessmii = &H590 * 56
                 Accessfriends = &H100 * 56
+                Patchmii = 56
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(57) Then
                 Accessmii = &H590 * 57
                 Accessfriends = &H100 * 57
+                Patchmii = 57
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(58) Then
                 Accessmii = &H590 * 58
                 Accessfriends = &H100 * 58
+                Patchmii = 58
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(59) Then
                 Accessmii = &H590 * 59
                 Accessfriends = &H100 * 59
+                Patchmii = 59
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(60) Then
                 Accessmii = &H590 * 60
                 Accessfriends = &H100 * 60
+                Patchmii = 60
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(61) Then
                 Accessmii = &H590 * 61
                 Accessfriends = &H100 * 61
+                Patchmii = 61
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(62) Then
                 Accessmii = &H590 * 62
                 Accessfriends = &H100 * 62
+                Patchmii = 62
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(63) Then
                 Accessmii = &H590 * 63
                 Accessfriends = &H100 * 63
+                Patchmii = 63
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(64) Then
                 Accessmii = &H590 * 64
                 Accessfriends = &H100 * 64
+                Patchmii = 64
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(65) Then
                 Accessmii = &H590 * 65
                 Accessfriends = &H100 * 65
+                Patchmii = 65
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(66) Then
                 Accessmii = &H590 * 66
                 Accessfriends = &H100 * 66
+                Patchmii = 66
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(67) Then
                 Accessmii = &H590 * 67
                 Accessfriends = &H100 * 67
+                Patchmii = 67
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(68) Then
                 Accessmii = &H590 * 68
                 Accessfriends = &H100 * 68
+                Patchmii = 68
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(69) Then
                 Accessmii = &H590 * 69
                 Accessfriends = &H100 * 69
+                Patchmii = 69
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(70) Then
                 Accessmii = &H590 * 70
                 Accessfriends = &H100 * 70
+                Patchmii = 70
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(71) Then
                 Accessmii = &H590 * 71
                 Accessfriends = &H100 * 71
+                Patchmii = 71
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(72) Then
                 Accessmii = &H590 * 72
                 Accessfriends = &H100 * 72
+                Patchmii = 72
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(73) Then
                 Accessmii = &H590 * 73
                 Accessfriends = &H100 * 73
+                Patchmii = 73
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(74) Then
                 Accessmii = &H590 * 74
                 Accessfriends = &H100 * 74
+                Patchmii = 74
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(75) Then
                 Accessmii = &H590 * 75
                 Accessfriends = &H100 * 75
+                Patchmii = 75
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(76) Then
                 Accessmii = &H590 * 76
                 Accessfriends = &H100 * 76
+                Patchmii = 76
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(77) Then
                 Accessmii = &H590 * 77
                 Accessfriends = &H100 * 77
+                Patchmii = 77
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(78) Then
                 Accessmii = &H590 * 78
                 Accessfriends = &H100 * 78
+                Patchmii = 78
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(79) Then
                 Accessmii = &H590 * 79
                 Accessfriends = &H100 * 79
+                Patchmii = 79
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(80) Then
                 Accessmii = &H590 * 80
                 Accessfriends = &H100 * 80
+                Patchmii = 80
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(81) Then
                 Accessmii = &H590 * 81
                 Accessfriends = &H100 * 81
+                Patchmii = 81
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(82) Then
                 Accessmii = &H590 * 82
                 Accessfriends = &H100 * 82
+                Patchmii = 82
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(83) Then
                 Accessmii = &H590 * 83
                 Accessfriends = &H100 * 83
+                Patchmii = 83
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(84) Then
                 Accessmii = &H590 * 84
                 Accessfriends = &H100 * 84
+                Patchmii = 84
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(85) Then
                 Accessmii = &H590 * 85
                 Accessfriends = &H100 * 85
+                Patchmii = 85
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(86) Then
                 Accessmii = &H590 * 86
                 Accessfriends = &H100 * 86
+                Patchmii = 86
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(87) Then
                 Accessmii = &H590 * 87
                 Accessfriends = &H100 * 87
+                Patchmii = 87
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(88) Then
                 Accessmii = &H590 * 88
                 Accessfriends = &H100 * 88
+                Patchmii = 88
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(89) Then
                 Accessmii = &H590 * 89
                 Accessfriends = &H100 * 89
+                Patchmii = 89
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(90) Then
                 Accessmii = &H590 * 90
                 Accessfriends = &H100 * 90
+                Patchmii = 90
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(91) Then
                 Accessmii = &H590 * 91
                 Accessfriends = &H100 * 91
+                Patchmii = 91
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(92) Then
                 Accessmii = &H590 * 92
                 Accessfriends = &H100 * 92
+                Patchmii = 92
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(93) Then
                 Accessmii = &H590 * 93
                 Accessfriends = &H100 * 93
+                Patchmii = 93
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(94) Then
                 Accessmii = &H590 * 94
                 Accessfriends = &H100 * 94
+                Patchmii = 94
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(95) Then
                 Accessmii = &H590 * 95
                 Accessfriends = &H100 * 95
+                Patchmii = 95
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(96) Then
                 Accessmii = &H590 * 96
                 Accessfriends = &H100 * 96
+                Patchmii = 96
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(97) Then
                 Accessmii = &H590 * 97
                 Accessfriends = &H100 * 97
+                Patchmii = 97
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(98) Then
                 Accessmii = &H590 * 98
                 Accessfriends = &H100 * 98
+                Patchmii = 98
             ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(99) Then
                 Accessmii = &H590 * 99
                 Accessfriends = &H100 * 99
+                Patchmii = 99
             End If
         End If
         readMii()
@@ -7174,6 +7826,10 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Select_allfriends_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_allfriends.SelectedIndexChanged
+        If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
+            Patchmii = &H0
+
+        End If
         If Select_allfriends.SelectedItem = Select_allfriends.Items.Item(0) Then
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 AccessMiilist = &H1C8A
