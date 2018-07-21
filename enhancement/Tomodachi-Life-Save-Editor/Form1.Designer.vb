@@ -5429,10 +5429,10 @@ Partial Class TL_SaveEditor
         Me.Label1.ForeColor = System.Drawing.Color.Red
         Me.Label1.Location = New System.Drawing.Point(26, 5)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(560, 13)
+        Me.Label1.Size = New System.Drawing.Size(404, 13)
         Me.Label1.TabIndex = 227
-        Me.Label1.Text = "If you edit relationship do same thing to second Mii (Mii 1 - set Mii 2 be spouse" & _
-    " , do for Mii 2 -> set Mii 1 be spouse too)"
+        Me.Label1.Text = "If your save file is corrupted, report this issue (your save file backup is in ''" & _
+    "bak'' folder)"
         '
         'PictureBox3
         '
@@ -6975,7 +6975,6 @@ Partial Class TL_SaveEditor
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(600, 550)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.Panel_menu_opensave)
@@ -6990,6 +6989,7 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_extras)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"

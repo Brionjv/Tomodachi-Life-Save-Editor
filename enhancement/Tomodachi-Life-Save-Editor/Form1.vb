@@ -108,6 +108,66 @@ Public Class TL_SaveEditor
     Dim AccessMiilist As String
     Dim Accessrelalist As String
     Dim Patchmii As String
+    Dim Friendmii_1 As String
+    Dim Friendrela_1 As String
+    Dim Friendmii_2 As String
+    Dim Friendrela_2 As String
+    Dim Friendmii_3 As String
+    Dim Friendrela_3 As String
+    Dim Friendmii_4 As String
+    Dim Friendrela_4 As String
+    Dim Friendmii_5 As String
+    Dim Friendrela_5 As String
+    Dim Friendmii_6 As String
+    Dim Friendrela_6 As String
+    Dim Friendmii_7 As String
+    Dim Friendrela_7 As String
+    Dim Friendmii_8 As String
+    Dim Friendrela_8 As String
+    Dim Friendmii_9 As String
+    Dim Friendrela_9 As String
+    Dim Friendmii_10 As String
+    Dim Friendrela_10 As String
+    Dim Friendmii_11 As String
+    Dim Friendrela_11 As String
+    Dim Friendmii_12 As String
+    Dim Friendrela_12 As String
+    Dim Friendmii_13 As String
+    Dim Friendrela_13 As String
+    Dim Friendmii_14 As String
+    Dim Friendrela_14 As String
+    Dim Friendmii_15 As String
+    Dim Friendrela_15 As String
+    Dim Friendmii_16 As String
+    Dim Friendrela_16 As String
+    Dim Friendmii_17 As String
+    Dim Friendrela_17 As String
+    Dim Friendmii_18 As String
+    Dim Friendrela_18 As String
+    Dim Friendmii_19 As String
+    Dim Friendrela_19 As String
+    Dim Friendmii_20 As String
+    Dim Friendrela_20 As String
+    Dim Friendmii_21 As String
+    Dim Friendrela_21 As String
+    Dim Friendmii_22 As String
+    Dim Friendrela_22 As String
+    Dim Friendmii_23 As String
+    Dim Friendrela_23 As String
+    Dim Friendmii_24 As String
+    Dim Friendrela_24 As String
+    Dim Friendmii_25 As String
+    Dim Friendrela_25 As String
+    Dim Friendmii_26 As String
+    Dim Friendrela_26 As String
+    Dim Friendmii_27 As String
+    Dim Friendrela_27 As String
+    Dim Friendmii_28 As String
+    Dim Friendrela_28 As String
+    Dim Friendmii_29 As String
+    Dim Friendrela_29 As String
+    Dim Friendmii_30 As String
+    Dim Friendrela_30 As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -1436,6 +1496,7 @@ Public Class TL_SaveEditor
             fs.WriteByte(valu_allmusic.Value)
             fs.Position = Emotions
             fs.WriteByte(valu_emotions.Value)
+            writefriendlist()
             Patchfrienlist()
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Editing of " & Text_nickname.Text & " has been saved"
@@ -1463,8 +1524,10 @@ Public Class TL_SaveEditor
             Reader.Position = AccessMiilist
             Text_friendmii_1.Text = Reader.ReadUnicodeString(10)
             Reader.Position = Accessfriendlist
+            Friendmii_1 = Reader.Position
             valu_friend_rela_1.Value = Reader.ReadByte
             Reader.Position = Accessrelalist
+            Friendrela_1 = Reader.Position
             valu_selfriend_rela_1.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + &H660
@@ -1474,8 +1537,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_2.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + &H1
+            Friendmii_2 = Reader.Position
             valu_friend_rela_2.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + &H1
+            Friendrela_2 = Reader.Position
             valu_selfriend_rela_2.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 2)
@@ -1485,8 +1550,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_3.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 2)
+            Friendmii_3 = Reader.Position
             valu_friend_rela_3.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 2)
+            Friendrela_3 = Reader.Position
             valu_selfriend_rela_3.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 3)
@@ -1496,8 +1563,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_4.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 3)
+            Friendmii_4 = Reader.Position
             valu_friend_rela_4.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 3)
+            Friendrela_4 = Reader.Position
             valu_selfriend_rela_4.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 4)
@@ -1507,8 +1576,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_5.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 4)
+            Friendmii_5 = Reader.Position
             valu_friend_rela_5.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 4)
+            Friendrela_5 = Reader.Position
             valu_selfriend_rela_5.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 5)
@@ -1518,8 +1589,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_6.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 5)
+            Friendmii_6 = Reader.Position
             valu_friend_rela_6.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 5)
+            Friendrela_6 = Reader.Position
             valu_selfriend_rela_6.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 6)
@@ -1529,8 +1602,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_7.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 6)
+            Friendmii_7 = Reader.Position
             valu_friend_rela_7.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 6)
+            Friendrela_7 = Reader.Position
             valu_selfriend_rela_7.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 7)
@@ -1540,8 +1615,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_8.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 7)
+            Friendmii_8 = Reader.Position
             valu_friend_rela_8.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 7)
+            Friendrela_8 = Reader.Position
             valu_selfriend_rela_8.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 8)
@@ -1551,8 +1628,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_9.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 8)
+            Friendmii_9 = Reader.Position
             valu_friend_rela_9.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 8)
+            Friendrela_9 = Reader.Position
             valu_selfriend_rela_9.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 9)
@@ -1562,8 +1641,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_10.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 9)
+            Friendmii_10 = Reader.Position
             valu_friend_rela_10.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 9)
+            Friendrela_10 = Reader.Position
             valu_selfriend_rela_10.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 10)
@@ -1573,8 +1654,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_11.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 10)
+            Friendmii_11 = Reader.Position
             valu_friend_rela_11.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 10)
+            Friendrela_11 = Reader.Position
             valu_selfriend_rela_11.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 11)
@@ -1584,8 +1667,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_12.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 11)
+            Friendmii_12 = Reader.Position
             valu_friend_rela_12.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 11)
+            Friendrela_12 = Reader.Position
             valu_selfriend_rela_12.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 12)
@@ -1595,8 +1680,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_13.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 12)
+            Friendmii_13 = Reader.Position
             valu_friend_rela_13.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 12)
+            Friendrela_13 = Reader.Position
             valu_selfriend_rela_13.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 13)
@@ -1606,8 +1693,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_14.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 13)
+            Friendmii_14 = Reader.Position
             valu_friend_rela_14.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 13)
+            Friendrela_14 = Reader.Position
             valu_selfriend_rela_14.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 14)
@@ -1617,8 +1706,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_15.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 14)
+            Friendmii_15 = Reader.Position
             valu_friend_rela_15.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 14)
+            Friendrela_15 = Reader.Position
             valu_selfriend_rela_15.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 15)
@@ -1628,8 +1719,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_16.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 15)
+            Friendmii_16 = Reader.Position
             valu_friend_rela_16.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 15)
+            Friendrela_16 = Reader.Position
             valu_selfriend_rela_16.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 16)
@@ -1639,8 +1732,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_17.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 16)
+            Friendmii_17 = Reader.Position
             valu_friend_rela_17.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 16)
+            Friendrela_17 = Reader.Position
             valu_selfriend_rela_17.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 17)
@@ -1650,8 +1745,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_18.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 17)
+            Friendmii_18 = Reader.Position
             valu_friend_rela_18.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 17)
+            Friendrela_18 = Reader.Position
             valu_selfriend_rela_18.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 18)
@@ -1661,8 +1758,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_19.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 18)
+            Friendmii_19 = Reader.Position
             valu_friend_rela_19.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 18)
+            Friendrela_19 = Reader.Position
             valu_selfriend_rela_19.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 19)
@@ -1672,8 +1771,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_20.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 19)
+            Friendmii_20 = Reader.Position
             valu_friend_rela_20.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 19)
+            Friendrela_20 = Reader.Position
             valu_selfriend_rela_20.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 20)
@@ -1683,8 +1784,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_21.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 20)
+            Friendmii_21 = Reader.Position
             valu_friend_rela_21.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 20)
+            Friendrela_21 = Reader.Position
             valu_selfriend_rela_21.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 21)
@@ -1694,8 +1797,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_22.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 21)
+            Friendmii_22 = Reader.Position
             valu_friend_rela_22.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 21)
+            Friendrela_22 = Reader.Position
             valu_selfriend_rela_22.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 22)
@@ -1705,8 +1810,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_23.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 22)
+            Friendmii_23 = Reader.Position
             valu_friend_rela_23.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 22)
+            Friendrela_23 = Reader.Position
             valu_selfriend_rela_23.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 23)
@@ -1716,8 +1823,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_24.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 23)
+            Friendmii_24 = Reader.Position
             valu_friend_rela_24.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 23)
+            Friendrela_24 = Reader.Position
             valu_selfriend_rela_24.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 24)
@@ -1727,8 +1836,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_25.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 24)
+            Friendmii_25 = Reader.Position
             valu_friend_rela_25.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 24)
+            Friendrela_25 = Reader.Position
             valu_selfriend_rela_25.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 25)
@@ -1738,8 +1849,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_26.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 25)
+            Friendmii_26 = Reader.Position
             valu_friend_rela_26.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 25)
+            Friendrela_26 = Reader.Position
             valu_selfriend_rela_26.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 26)
@@ -1749,8 +1862,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_27.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 26)
+            Friendmii_27 = Reader.Position
             valu_friend_rela_27.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 26)
+            Friendrela_27 = Reader.Position
             valu_selfriend_rela_27.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 27)
@@ -1760,8 +1875,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_28.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 27)
+            Friendmii_28 = Reader.Position
             valu_friend_rela_28.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 27)
+            Friendrela_28 = Reader.Position
             valu_selfriend_rela_28.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 28)
@@ -1771,8 +1888,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_29.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 28)
+            Friendmii_29 = Reader.Position
             valu_friend_rela_29.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 28)
+            Friendrela_29 = Reader.Position
             valu_selfriend_rela_29.Value = Reader.ReadByte
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 Reader.Position = AccessMiilist + (&H660 * 29)
@@ -1782,8 +1901,10 @@ Public Class TL_SaveEditor
                 Text_friendmii_30.Text = Reader.ReadUnicodeString(10)
             End If
             Reader.Position = Accessfriendlist + (&H1 * 29)
+            Friendmii_30 = Reader.Position
             valu_friend_rela_30.Value = Reader.ReadByte
             Reader.Position = Accessrelalist + (&H1 * 29)
+            Friendrela_30 = Reader.Position
             valu_selfriend_rela_30.Value = Reader.ReadByte
         Catch ex As Exception
         End Try
@@ -1792,125 +1913,125 @@ Public Class TL_SaveEditor
     Public Sub writefriendlist()
         Try
             Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
-            fs.Position = Accessfriendlist
+            fs.Position = Friendmii_1
             fs.WriteByte(valu_friend_rela_1.Value)
-            fs.Position = Accessrelalist
+            fs.Position = Friendrela_1
             fs.WriteByte(valu_selfriend_rela_1.Value)
-            fs.Position = Accessfriendlist + &H1
+            fs.Position = Friendmii_2
             fs.WriteByte(valu_friend_rela_2.Value)
-            fs.Position = Accessrelalist + &H1
+            fs.Position = Friendrela_2
             fs.WriteByte(valu_selfriend_rela_2.Value)
-            fs.Position = Accessfriendlist + (&H1 * 2)
+            fs.Position = Friendmii_3
             fs.WriteByte(valu_friend_rela_3.Value)
-            fs.Position = Accessrelalist + (&H1 * 2)
+            fs.Position = Friendrela_3
             fs.WriteByte(valu_selfriend_rela_3.Value)
-            fs.Position = Accessfriendlist + (&H1 * 3)
+            fs.Position = Friendmii_4
             fs.WriteByte(valu_friend_rela_4.Value)
-            fs.Position = Accessrelalist + (&H1 * 3)
+            fs.Position = Friendrela_4
             fs.WriteByte(valu_selfriend_rela_4.Value)
-            fs.Position = Accessfriendlist + (&H1 * 4)
+            fs.Position = Friendmii_5
             fs.WriteByte(valu_friend_rela_5.Value)
-            fs.Position = Accessrelalist + (&H1 * 4)
+            fs.Position = Friendrela_5
             fs.WriteByte(valu_selfriend_rela_5.Value)
-            fs.Position = Accessfriendlist + (&H1 * 5)
+            fs.Position = Friendmii_6
             fs.WriteByte(valu_friend_rela_6.Value)
-            fs.Position = Accessrelalist + (&H1 * 5)
+            fs.Position = Friendrela_6
             fs.WriteByte(valu_selfriend_rela_6.Value)
-            fs.Position = Accessfriendlist + (&H1 * 6)
+            fs.Position = Friendmii_7
             fs.WriteByte(valu_friend_rela_7.Value)
-            fs.Position = Accessrelalist + (&H1 * 6)
+            fs.Position = Friendrela_7
             fs.WriteByte(valu_selfriend_rela_7.Value)
-            fs.Position = Accessfriendlist + (&H1 * 7)
+            fs.Position = Friendmii_8
             fs.WriteByte(valu_friend_rela_8.Value)
-            fs.Position = Accessrelalist + (&H1 * 7)
+            fs.Position = Friendrela_8
             fs.WriteByte(valu_selfriend_rela_8.Value)
-            fs.Position = Accessfriendlist + (&H1 * 8)
+            fs.Position = Friendmii_9
             fs.WriteByte(valu_friend_rela_9.Value)
-            fs.Position = Accessrelalist + (&H1 * 8)
+            fs.Position = Friendrela_9
             fs.WriteByte(valu_selfriend_rela_9.Value)
-            fs.Position = Accessfriendlist + (&H1 * 9)
+            fs.Position = Friendmii_10
             fs.WriteByte(valu_friend_rela_10.Value)
-            fs.Position = Accessrelalist + (&H1 * 9)
+            fs.Position = Friendrela_10
             fs.WriteByte(valu_selfriend_rela_10.Value)
-            fs.Position = Accessfriendlist + (&H1 * 10)
+            fs.Position = Friendmii_11
             fs.WriteByte(valu_friend_rela_11.Value)
-            fs.Position = Accessrelalist + (&H1 * 10)
+            fs.Position = Friendrela_11
             fs.WriteByte(valu_selfriend_rela_11.Value)
-            fs.Position = Accessfriendlist + (&H1 * 11)
+            fs.Position = Friendmii_12
             fs.WriteByte(valu_friend_rela_12.Value)
-            fs.Position = Accessrelalist + (&H1 * 11)
+            fs.Position = Friendrela_12
             fs.WriteByte(valu_selfriend_rela_12.Value)
-            fs.Position = Accessfriendlist + (&H1 * 12)
+            fs.Position = Friendmii_13
             fs.WriteByte(valu_friend_rela_13.Value)
-            fs.Position = Accessrelalist + (&H1 * 12)
+            fs.Position = Friendrela_13
             fs.WriteByte(valu_selfriend_rela_13.Value)
-            fs.Position = Accessfriendlist + (&H1 * 13)
+            fs.Position = Friendmii_14
             fs.WriteByte(valu_friend_rela_14.Value)
-            fs.Position = Accessrelalist + (&H1 * 13)
+            fs.Position = Friendrela_14
             fs.WriteByte(valu_selfriend_rela_14.Value)
-            fs.Position = Accessfriendlist + (&H1 * 14)
+            fs.Position = Friendmii_15
             fs.WriteByte(valu_friend_rela_15.Value)
-            fs.Position = Accessrelalist + (&H1 * 14)
+            fs.Position = Friendrela_15
             fs.WriteByte(valu_selfriend_rela_15.Value)
-            fs.Position = Accessfriendlist + (&H1 * 15)
+            fs.Position = Friendmii_16
             fs.WriteByte(valu_friend_rela_16.Value)
-            fs.Position = Accessrelalist + (&H1 * 15)
+            fs.Position = Friendrela_16
             fs.WriteByte(valu_selfriend_rela_16.Value)
-            fs.Position = Accessfriendlist + (&H1 * 16)
+            fs.Position = Friendmii_17
             fs.WriteByte(valu_friend_rela_17.Value)
-            fs.Position = Accessrelalist + (&H1 * 16)
+            fs.Position = Friendrela_17
             fs.WriteByte(valu_selfriend_rela_17.Value)
-            fs.Position = Accessfriendlist + (&H1 * 17)
+            fs.Position = Friendmii_18
             fs.WriteByte(valu_friend_rela_18.Value)
-            fs.Position = Accessrelalist + (&H1 * 17)
+            fs.Position = Friendrela_18
             fs.WriteByte(valu_selfriend_rela_18.Value)
-            fs.Position = Accessfriendlist + (&H1 * 18)
+            fs.Position = Friendmii_19
             fs.WriteByte(valu_friend_rela_19.Value)
-            fs.Position = Accessrelalist + (&H1 * 18)
+            fs.Position = Friendrela_19
             fs.WriteByte(valu_selfriend_rela_19.Value)
-            fs.Position = Accessfriendlist + (&H1 * 19)
+            fs.Position = Friendmii_20
             fs.WriteByte(valu_friend_rela_20.Value)
-            fs.Position = Accessrelalist + (&H1 * 19)
+            fs.Position = Friendrela_20
             fs.WriteByte(valu_selfriend_rela_20.Value)
-            fs.Position = Accessfriendlist + (&H1 * 20)
+            fs.Position = Friendmii_21
             fs.WriteByte(valu_friend_rela_21.Value)
-            fs.Position = Accessrelalist + (&H1 * 20)
+            fs.Position = Friendrela_21
             fs.WriteByte(valu_selfriend_rela_21.Value)
-            fs.Position = Accessfriendlist + (&H1 * 21)
+            fs.Position = Friendmii_22
             fs.WriteByte(valu_friend_rela_22.Value)
-            fs.Position = Accessrelalist + (&H1 * 21)
+            fs.Position = Friendrela_22
             fs.WriteByte(valu_selfriend_rela_22.Value)
-            fs.Position = Accessfriendlist + (&H1 * 22)
+            fs.Position = Friendmii_23
             fs.WriteByte(valu_friend_rela_23.Value)
-            fs.Position = Accessrelalist + (&H1 * 22)
+            fs.Position = Friendrela_23
             fs.WriteByte(valu_selfriend_rela_23.Value)
-            fs.Position = Accessfriendlist + (&H1 * 23)
+            fs.Position = Friendmii_24
             fs.WriteByte(valu_friend_rela_24.Value)
-            fs.Position = Accessrelalist + (&H1 * 23)
+            fs.Position = Friendrela_24
             fs.WriteByte(valu_selfriend_rela_24.Value)
-            fs.Position = Accessfriendlist + (&H1 * 24)
+            fs.Position = Friendmii_25
             fs.WriteByte(valu_friend_rela_25.Value)
-            fs.Position = Accessrelalist + (&H1 * 24)
+            fs.Position = Friendrela_25
             fs.WriteByte(valu_selfriend_rela_25.Value)
-            fs.Position = Accessfriendlist + (&H1 * 25)
+            fs.Position = Friendmii_26
             fs.WriteByte(valu_friend_rela_26.Value)
-            fs.Position = Accessrelalist + (&H1 * 25)
+            fs.Position = Friendrela_26
             fs.WriteByte(valu_selfriend_rela_26.Value)
-            fs.Position = Accessfriendlist + (&H1 * 26)
+            fs.Position = Friendmii_27
             fs.WriteByte(valu_friend_rela_27.Value)
-            fs.Position = Accessrelalist + (&H1 * 26)
+            fs.Position = Friendrela_27
             fs.WriteByte(valu_selfriend_rela_27.Value)
-            fs.Position = Accessfriendlist + (&H1 * 27)
+            fs.Position = Friendmii_28
             fs.WriteByte(valu_friend_rela_28.Value)
-            fs.Position = Accessrelalist + (&H1 * 27)
+            fs.Position = Friendrela_28
             fs.WriteByte(valu_selfriend_rela_28.Value)
-            fs.Position = Accessfriendlist + (&H1 * 28)
+            fs.Position = Friendmii_29
             fs.WriteByte(valu_friend_rela_29.Value)
-            fs.Position = Accessrelalist + (&H1 * 28)
+            fs.Position = Friendrela_29
             fs.WriteByte(valu_selfriend_rela_29.Value)
-            fs.Position = Accessfriendlist + (&H1 * 29)
+            fs.Position = Friendmii_30
             fs.WriteByte(valu_friend_rela_30.Value)
-            fs.Position = Accessrelalist + (&H1 * 29)
+            fs.Position = Friendrela_30
             fs.WriteByte(valu_selfriend_rela_30.Value)
         Catch ex As Exception
         End Try
@@ -7826,10 +7947,6 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Select_allfriends_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_allfriends.SelectedIndexChanged
-        If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
-            Patchmii = &H0
-
-        End If
         If Select_allfriends.SelectedItem = Select_allfriends.Items.Item(0) Then
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 AccessMiilist = &H1C8A
