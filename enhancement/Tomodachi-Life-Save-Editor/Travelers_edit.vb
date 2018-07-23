@@ -90,9 +90,17 @@ Public Class Travelers_edit
         savedataArc = TL_SaveEditor.TextBox_fpath.Text
         If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
             Text_save.Text = "Save"
+            Title_happiness.Text = "Happiness"
+            Title_gratitude.Text = "Gratitude"
+            Title_region.Text = "Region"
+            Title_home.Text = "Home"
         End If
         If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
             Text_save.Text = "Enregistrer"
+            Title_happiness.Text = "Détente"
+            Title_gratitude.Text = "Gratitude"
+            Title_region.Text = "Région"
+            Title_home.Text = "Île d'origine"
         End If
     End Sub
 

@@ -29,6 +29,9 @@ Partial Class TL_SaveEditor
         Me.Closebutton = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo = New System.Windows.Forms.PictureBox()
         Me.Menu_panel = New System.Windows.Forms.Panel()
+        Me.Menu_manual = New System.Windows.Forms.Panel()
+        Me.Menu_text_manual = New System.Windows.Forms.Label()
+        Me.Menu_icon_manual = New System.Windows.Forms.PictureBox()
         Me.Menu_Repair = New System.Windows.Forms.Panel()
         Me.Menu_text_repair = New System.Windows.Forms.Label()
         Me.Menu_icon_repair = New System.Windows.Forms.PictureBox()
@@ -567,6 +570,8 @@ Partial Class TL_SaveEditor
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_panel.SuspendLayout()
+        Me.Menu_manual.SuspendLayout()
+        CType(Me.Menu_icon_manual, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_Repair.SuspendLayout()
         CType(Me.Menu_icon_repair, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_extras.SuspendLayout()
@@ -969,6 +974,7 @@ Partial Class TL_SaveEditor
         '
         Me.Menu_panel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
         Me.Menu_panel.CausesValidation = False
+        Me.Menu_panel.Controls.Add(Me.Menu_manual)
         Me.Menu_panel.Controls.Add(Me.Menu_Repair)
         Me.Menu_panel.Controls.Add(Me.Menu_extras)
         Me.Menu_panel.Controls.Add(Me.Menu_itemsedit)
@@ -983,12 +989,46 @@ Partial Class TL_SaveEditor
         Me.Menu_panel.TabIndex = 5
         Me.Menu_panel.Visible = False
         '
+        'Menu_manual
+        '
+        Me.Menu_manual.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_manual.Controls.Add(Me.Menu_text_manual)
+        Me.Menu_manual.Controls.Add(Me.Menu_icon_manual)
+        Me.Menu_manual.Location = New System.Drawing.Point(0, 376)
+        Me.Menu_manual.Name = "Menu_manual"
+        Me.Menu_manual.Size = New System.Drawing.Size(150, 34)
+        Me.Menu_manual.TabIndex = 8
+        '
+        'Menu_text_manual
+        '
+        Me.Menu_text_manual.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Menu_text_manual.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Menu_text_manual.Location = New System.Drawing.Point(35, 2)
+        Me.Menu_text_manual.Name = "Menu_text_manual"
+        Me.Menu_text_manual.Size = New System.Drawing.Size(112, 30)
+        Me.Menu_text_manual.TabIndex = 2
+        Me.Menu_text_manual.Text = "Manual"
+        Me.Menu_text_manual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_icon_manual
+        '
+        Me.Menu_icon_manual.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_icon_manual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Menu_icon_manual.Enabled = False
+        Me.Menu_icon_manual.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.howtouse
+        Me.Menu_icon_manual.Location = New System.Drawing.Point(0, 0)
+        Me.Menu_icon_manual.Name = "Menu_icon_manual"
+        Me.Menu_icon_manual.Size = New System.Drawing.Size(34, 34)
+        Me.Menu_icon_manual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Menu_icon_manual.TabIndex = 1
+        Me.Menu_icon_manual.TabStop = False
+        '
         'Menu_Repair
         '
         Me.Menu_Repair.BackColor = System.Drawing.Color.Transparent
         Me.Menu_Repair.Controls.Add(Me.Menu_text_repair)
         Me.Menu_Repair.Controls.Add(Me.Menu_icon_repair)
-        Me.Menu_Repair.Location = New System.Drawing.Point(0, 373)
+        Me.Menu_Repair.Location = New System.Drawing.Point(0, 215)
         Me.Menu_Repair.Name = "Menu_Repair"
         Me.Menu_Repair.Size = New System.Drawing.Size(150, 34)
         Me.Menu_Repair.TabIndex = 7
@@ -1009,7 +1049,7 @@ Partial Class TL_SaveEditor
         Me.Menu_icon_repair.BackColor = System.Drawing.Color.Transparent
         Me.Menu_icon_repair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Menu_icon_repair.Enabled = False
-        Me.Menu_icon_repair.Image = CType(resources.GetObject("Menu_icon_repair.Image"), System.Drawing.Image)
+        Me.Menu_icon_repair.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.repair_save
         Me.Menu_icon_repair.Location = New System.Drawing.Point(0, 0)
         Me.Menu_icon_repair.Name = "Menu_icon_repair"
         Me.Menu_icon_repair.Size = New System.Drawing.Size(34, 34)
@@ -4839,7 +4879,7 @@ Partial Class TL_SaveEditor
         Me.Select_interaction.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_interaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_interaction.FormattingEnabled = True
-        Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm hungry", "I'm hungry(1)", "I'm hungry(2)", "In love with", "angry at", "angry at(1)", "In love with (undecided)", "Dream", "I need new clothes", "I need new clothes (something classy)", "I need new clothes (to do sports)", "Can I tell you about my [love stories? / my wife?]", "Sad : love rejected", "Want to get married"})
+        Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm hungry", "I'm hungry(1)", "I'm hungry(2)", "In love with", "angry at", "angry at(1)", "In love with (undecided)", "Dream", "I need new clothes", "I need new clothes (something classy)", "I need new clothes (to do sports)", "Can I tell you about my [love stories? / my wife?]", "Sad : love rejected", "Want to get married", "I think {Mii} wants to be my friend", "Thanks for the other day (give money)", "I am thirsty", "Do you want to listen an imitation of {Mii} ?", "I have feelings to {Mii}", "I would like to be friend with {Mii}", "I would like to take {Mii} somewhere"})
         Me.Select_interaction.Location = New System.Drawing.Point(2, 2)
         Me.Select_interaction.Name = "Select_interaction"
         Me.Select_interaction.Size = New System.Drawing.Size(290, 21)
@@ -7000,6 +7040,8 @@ Partial Class TL_SaveEditor
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_panel.ResumeLayout(False)
+        Me.Menu_manual.ResumeLayout(False)
+        CType(Me.Menu_icon_manual, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_Repair.ResumeLayout(False)
         CType(Me.Menu_icon_repair, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_extras.ResumeLayout(False)
@@ -7920,5 +7962,8 @@ Partial Class TL_SaveEditor
     Friend WithEvents Select_fav_2 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_fav_1 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_allfav_2 As System.Windows.Forms.ComboBox
+    Friend WithEvents Menu_manual As System.Windows.Forms.Panel
+    Friend WithEvents Menu_text_manual As System.Windows.Forms.Label
+    Friend WithEvents Menu_icon_manual As System.Windows.Forms.PictureBox
 
 End Class

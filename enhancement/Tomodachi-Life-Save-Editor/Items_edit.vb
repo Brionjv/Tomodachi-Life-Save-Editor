@@ -1,5 +1,7 @@
 ﻿Imports PackageIO
 Public Class Items_edit
+    Dim savedataArc As String
+    Dim fdialog As New Form2
 
     Public Sub hidesub()
         Icon_clothes_01.Visible = False
@@ -66,6 +68,10 @@ Public Class Items_edit
     End Sub
 
     Private Sub Items_edit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SavedataArc = TL_SaveEditor.TextBox_fpath.Text
+    End Sub
 
+    Private Sub Text_specialfoods_Click(sender As Object, e As EventArgs) Handles Text_specialfoods.Click
+        Panel_specialfoods.Visible = True
     End Sub
 End Class

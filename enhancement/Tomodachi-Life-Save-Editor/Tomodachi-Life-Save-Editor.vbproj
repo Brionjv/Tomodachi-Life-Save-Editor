@@ -1261,6 +1261,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\howtouse.png" />
+    <None Include="Resources\repair_save.png" />
     <None Include="Resources\bg_travelers.png" />
     <None Include="Resources\bg_concert.png" />
   </ItemGroup>
