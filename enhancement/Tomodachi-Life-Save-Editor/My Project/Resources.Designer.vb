@@ -3680,6 +3680,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property unknow_items() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("unknow_items", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property validate() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("validate", resourceCulture)

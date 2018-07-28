@@ -565,6 +565,8 @@ Partial Class TL_SaveEditor
         Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_description = New System.Windows.Forms.Panel()
         Me.Text_description = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -2898,6 +2900,8 @@ Partial Class TL_SaveEditor
         '
         Me.Tab_mii_edit.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_edit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_edit.Controls.Add(Me.Label3)
+        Me.Tab_mii_edit.Controls.Add(Me.Label2)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_musics)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_cathphrase)
@@ -3830,7 +3834,6 @@ Partial Class TL_SaveEditor
         'valu_miihouse
         '
         Me.valu_miihouse.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_miihouse.Enabled = False
         Me.valu_miihouse.Location = New System.Drawing.Point(177, 381)
         Me.valu_miihouse.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_miihouse.Name = "valu_miihouse"
@@ -7008,6 +7011,24 @@ Partial Class TL_SaveEditor
         Me.Text_description.TabIndex = 0
         Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(259, 322)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(109, 13)
+        Me.Label2.TabIndex = 188
+        Me.Label2.Text = "Activity in Mii house ?"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(168, 322)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(52, 13)
+        Me.Label3.TabIndex = 189
+        Me.Label3.Text = "Mii house"
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -7965,5 +7986,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents Menu_manual As System.Windows.Forms.Panel
     Friend WithEvents Menu_text_manual As System.Windows.Forms.Label
     Friend WithEvents Menu_icon_manual As System.Windows.Forms.PictureBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 
 End Class

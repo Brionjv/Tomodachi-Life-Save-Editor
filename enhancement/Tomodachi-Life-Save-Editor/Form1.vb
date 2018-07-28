@@ -2849,6 +2849,7 @@ Public Class TL_SaveEditor
             Menu_text_repair.Text = "Repair save file"
             Menu_text_settings.Text = "Settings"
             Menu_text_itemsedit.Text = "Items edit"
+            Menu_text_manual.Text = "Manual"
             Title_appartrenov.Text = "Apartments renovation"
             Title_childrenborn.Text = "Children born"
             Title_eventfountain.Text = "Event fountain"
@@ -3256,6 +3257,7 @@ Public Class TL_SaveEditor
             Menu_text_repair.Text = "Réparation sauvegarde"
             Menu_text_settings.Text = "Paramètres"
             Menu_text_itemsedit.Text = "Édition objets"
+            Menu_text_manual.Text = "Manuel"
             Title_appartrenov.Text = "Rénovation appartements"
             Title_childrenborn.Text = "Nouveau né"
             Title_eventfountain.Text = "Évènement fontaine"
@@ -5064,10 +5066,17 @@ Public Class TL_SaveEditor
 
     Private Sub Fea_edit_travelers_MouseLeave(sender As Object, e As EventArgs) Handles Fea_edit_travelers.MouseLeave
         Fea_edit_travelers.BackColor = Color.White
+        Panel_description.Visible = False
     End Sub
 
-    Private Sub Fea_edit_travelers_MouseMove(sender As Object, e As MouseEventArgs) Handles Fea_edit_travelers.MouseMove
+    Private Sub Fea_edit_travelers_MouseMove(sender As Object, e As EventArgs) Handles Fea_edit_travelers.MouseMove
         Fea_edit_travelers.BackColor = Color.Orange
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to edit travelers"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour éditer les voyageurs"
+        End If
+        Panel_description.Visible = True
     End Sub
 
     Private Sub Fea_edit_concert_Click(sender As Object, e As EventArgs) Handles Fea_edit_concert.Click
@@ -5076,10 +5085,17 @@ Public Class TL_SaveEditor
 
     Private Sub Fea_edit_concert_MouseLeave(sender As Object, e As EventArgs) Handles Fea_edit_concert.MouseLeave
         Fea_edit_concert.BackColor = Color.White
+        Panel_description.Visible = False
     End Sub
 
     Private Sub Fea_edit_concert_MouseMove(sender As Object, e As MouseEventArgs) Handles Fea_edit_concert.MouseMove
         Fea_edit_concert.BackColor = Color.Orange
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to edit concerts"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour éditer les concerts"
+        End If
+        Panel_description.Visible = True
     End Sub
 
     Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
@@ -5970,6 +5986,13 @@ Public Class TL_SaveEditor
         Select_friend_rela_28.SelectedItem = Select_friend_rela_28.Items.Item(0)
         Select_friend_rela_29.SelectedItem = Select_friend_rela_29.Items.Item(0)
         Select_friend_rela_30.SelectedItem = Select_friend_rela_30.Items.Item(0)
+        Select_allfav_1.SelectedItem = Select_allfav_1.Items.Item(0)
+        Select_allfav_2.SelectedItem = Select_allfav_2.Items.Item(0)
+        Select_fav_1.SelectedItem = Select_fav_1.Items.Item(0)
+        Select_fav_2.SelectedItem = Select_fav_2.Items.Item(0)
+        Select_fav_3.SelectedItem = Select_fav_3.Items.Item(0)
+        Select_worst_1.SelectedItem = Select_worst_1.Items.Item(0)
+        Select_worst_2.SelectedItem = Select_worst_2.Items.Item(0)
         If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
             If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
                 Accessmii = &H0
@@ -16164,4 +16187,29 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
+    Private Sub Check_timetravel_MouseLeave(sender As Object, e As EventArgs) Handles Check_timetravel.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_timetravel_MouseMove(sender As Object, e As EventArgs) Handles Check_timetravel.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to remove time travel penality"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour retirer la pénalité de voyage dans le temps"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_resetstpspp_MouseLeave(sender As Object, e As EventArgs) Handles Check_resetstpspp.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_resetstpspp_MouseMove(sender As Object, e As EventArgs) Handles Check_resetstpspp.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to reset Tomodachi Life Streetpass/Spotpass"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour réinitialiser Streetpass/Spotpass de Tomodachi Life"
+        End If
+        Panel_description.Visible = True
+    End Sub
 End Class

@@ -125,7 +125,7 @@
         RK5CYII=
 </value>
   </data>
-  <data name="Panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Panel_gooditems.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EgAACxIB0t1+/AAAAB9JREFUOE9j+PdxL9loVDOJaFQziWhUM4lo5Gn+uBcAoREs/avgL1gAAAAASUVO

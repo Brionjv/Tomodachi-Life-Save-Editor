@@ -143,67 +143,7 @@ Partial Class Items_edit
         Me.Icon_clothes_04 = New System.Windows.Forms.PictureBox()
         Me.Icon_clothes_03 = New System.Windows.Forms.PictureBox()
         Me.Icon_clothes_05 = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ComboBox49 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox50 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox51 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox52 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox53 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox54 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox55 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox56 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox57 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox58 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox59 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox60 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox61 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox62 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox63 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox64 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox65 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox66 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox67 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox68 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox69 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox49 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox70 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox50 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox71 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox51 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox72 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox52 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox73 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox53 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox74 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox54 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox75 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox55 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox76 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox56 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox77 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox57 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox78 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox58 = New System.Windows.Forms.PictureBox()
+        Me.Panel_gooditems = New System.Windows.Forms.Panel()
         Me.ComboBox79 = New System.Windows.Forms.ComboBox()
         Me.PictureBox59 = New System.Windows.Forms.PictureBox()
         Me.ComboBox80 = New System.Windows.Forms.ComboBox()
@@ -310,37 +250,7 @@ Partial Class Items_edit
         CType(Me.Icon_clothes_04, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_clothes_03, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_clothes_05, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox49, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox50, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox51, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox52, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox53, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox54, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox55, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox56, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox57, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox58, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_gooditems.SuspendLayout()
         CType(Me.PictureBox59, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox60, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1796,770 +1706,50 @@ Partial Class Items_edit
         Me.Icon_clothes_05.TabStop = False
         Me.Icon_clothes_05.Visible = False
         '
-        'Panel1
-        '
-        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
-        Me.Panel1.Controls.Add(Me.ComboBox49)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.ComboBox50)
-        Me.Panel1.Controls.Add(Me.PictureBox2)
-        Me.Panel1.Controls.Add(Me.ComboBox51)
-        Me.Panel1.Controls.Add(Me.PictureBox3)
-        Me.Panel1.Controls.Add(Me.ComboBox52)
-        Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Controls.Add(Me.ComboBox53)
-        Me.Panel1.Controls.Add(Me.PictureBox5)
-        Me.Panel1.Controls.Add(Me.ComboBox54)
-        Me.Panel1.Controls.Add(Me.PictureBox6)
-        Me.Panel1.Controls.Add(Me.ComboBox55)
-        Me.Panel1.Controls.Add(Me.PictureBox7)
-        Me.Panel1.Controls.Add(Me.ComboBox56)
-        Me.Panel1.Controls.Add(Me.PictureBox8)
-        Me.Panel1.Controls.Add(Me.ComboBox57)
-        Me.Panel1.Controls.Add(Me.PictureBox9)
-        Me.Panel1.Controls.Add(Me.ComboBox58)
-        Me.Panel1.Controls.Add(Me.PictureBox10)
-        Me.Panel1.Controls.Add(Me.ComboBox59)
-        Me.Panel1.Controls.Add(Me.PictureBox11)
-        Me.Panel1.Controls.Add(Me.ComboBox60)
-        Me.Panel1.Controls.Add(Me.PictureBox12)
-        Me.Panel1.Controls.Add(Me.ComboBox61)
-        Me.Panel1.Controls.Add(Me.PictureBox13)
-        Me.Panel1.Controls.Add(Me.ComboBox62)
-        Me.Panel1.Controls.Add(Me.PictureBox14)
-        Me.Panel1.Controls.Add(Me.ComboBox63)
-        Me.Panel1.Controls.Add(Me.PictureBox15)
-        Me.Panel1.Controls.Add(Me.ComboBox64)
-        Me.Panel1.Controls.Add(Me.PictureBox16)
-        Me.Panel1.Controls.Add(Me.ComboBox65)
-        Me.Panel1.Controls.Add(Me.PictureBox17)
-        Me.Panel1.Controls.Add(Me.ComboBox66)
-        Me.Panel1.Controls.Add(Me.PictureBox18)
-        Me.Panel1.Controls.Add(Me.ComboBox67)
-        Me.Panel1.Controls.Add(Me.PictureBox19)
-        Me.Panel1.Controls.Add(Me.ComboBox68)
-        Me.Panel1.Controls.Add(Me.PictureBox20)
-        Me.Panel1.Controls.Add(Me.ComboBox69)
-        Me.Panel1.Controls.Add(Me.PictureBox49)
-        Me.Panel1.Controls.Add(Me.ComboBox70)
-        Me.Panel1.Controls.Add(Me.PictureBox50)
-        Me.Panel1.Controls.Add(Me.ComboBox71)
-        Me.Panel1.Controls.Add(Me.PictureBox51)
-        Me.Panel1.Controls.Add(Me.ComboBox72)
-        Me.Panel1.Controls.Add(Me.PictureBox52)
-        Me.Panel1.Controls.Add(Me.ComboBox73)
-        Me.Panel1.Controls.Add(Me.PictureBox53)
-        Me.Panel1.Controls.Add(Me.ComboBox74)
-        Me.Panel1.Controls.Add(Me.PictureBox54)
-        Me.Panel1.Controls.Add(Me.ComboBox75)
-        Me.Panel1.Controls.Add(Me.PictureBox55)
-        Me.Panel1.Controls.Add(Me.ComboBox76)
-        Me.Panel1.Controls.Add(Me.PictureBox56)
-        Me.Panel1.Controls.Add(Me.ComboBox77)
-        Me.Panel1.Controls.Add(Me.PictureBox57)
-        Me.Panel1.Controls.Add(Me.ComboBox78)
-        Me.Panel1.Controls.Add(Me.PictureBox58)
-        Me.Panel1.Controls.Add(Me.ComboBox79)
-        Me.Panel1.Controls.Add(Me.PictureBox59)
-        Me.Panel1.Controls.Add(Me.ComboBox80)
-        Me.Panel1.Controls.Add(Me.PictureBox60)
-        Me.Panel1.Controls.Add(Me.ComboBox81)
-        Me.Panel1.Controls.Add(Me.PictureBox61)
-        Me.Panel1.Controls.Add(Me.ComboBox82)
-        Me.Panel1.Controls.Add(Me.PictureBox62)
-        Me.Panel1.Controls.Add(Me.ComboBox83)
-        Me.Panel1.Controls.Add(Me.PictureBox63)
-        Me.Panel1.Controls.Add(Me.ComboBox84)
-        Me.Panel1.Controls.Add(Me.PictureBox64)
-        Me.Panel1.Controls.Add(Me.ComboBox85)
-        Me.Panel1.Controls.Add(Me.PictureBox65)
-        Me.Panel1.Controls.Add(Me.ComboBox86)
-        Me.Panel1.Controls.Add(Me.PictureBox66)
-        Me.Panel1.Controls.Add(Me.ComboBox87)
-        Me.Panel1.Controls.Add(Me.PictureBox67)
-        Me.Panel1.Controls.Add(Me.ComboBox88)
-        Me.Panel1.Controls.Add(Me.PictureBox68)
-        Me.Panel1.Controls.Add(Me.ComboBox89)
-        Me.Panel1.Controls.Add(Me.PictureBox69)
-        Me.Panel1.Controls.Add(Me.ComboBox90)
-        Me.Panel1.Controls.Add(Me.PictureBox70)
-        Me.Panel1.Controls.Add(Me.ComboBox91)
-        Me.Panel1.Controls.Add(Me.PictureBox71)
-        Me.Panel1.Controls.Add(Me.ComboBox92)
-        Me.Panel1.Controls.Add(Me.PictureBox72)
-        Me.Panel1.Controls.Add(Me.ComboBox93)
-        Me.Panel1.Controls.Add(Me.PictureBox73)
-        Me.Panel1.Controls.Add(Me.ComboBox94)
-        Me.Panel1.Controls.Add(Me.PictureBox74)
-        Me.Panel1.Controls.Add(Me.ComboBox95)
-        Me.Panel1.Controls.Add(Me.PictureBox75)
-        Me.Panel1.Controls.Add(Me.ComboBox96)
-        Me.Panel1.Controls.Add(Me.PictureBox76)
-        Me.Panel1.Location = New System.Drawing.Point(1, 37)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(905, 506)
-        Me.Panel1.TabIndex = 103
-        Me.Panel1.Visible = False
-        '
-        'ComboBox49
-        '
-        Me.ComboBox49.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox49.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox49.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox49.FormattingEnabled = True
-        Me.ComboBox49.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox49.Location = New System.Drawing.Point(653, 429)
-        Me.ComboBox49.Name = "ComboBox49"
-        Me.ComboBox49.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox49.TabIndex = 95
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_48
-        Me.PictureBox1.Location = New System.Drawing.Point(653, 376)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 94
-        Me.PictureBox1.TabStop = False
-        '
-        'ComboBox50
-        '
-        Me.ComboBox50.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox50.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox50.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox50.FormattingEnabled = True
-        Me.ComboBox50.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox50.Location = New System.Drawing.Point(587, 429)
-        Me.ComboBox50.Name = "ComboBox50"
-        Me.ComboBox50.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox50.TabIndex = 93
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_47
-        Me.PictureBox2.Location = New System.Drawing.Point(587, 376)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 92
-        Me.PictureBox2.TabStop = False
-        '
-        'ComboBox51
-        '
-        Me.ComboBox51.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox51.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox51.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox51.FormattingEnabled = True
-        Me.ComboBox51.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox51.Location = New System.Drawing.Point(521, 429)
-        Me.ComboBox51.Name = "ComboBox51"
-        Me.ComboBox51.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox51.TabIndex = 91
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_46
-        Me.PictureBox3.Location = New System.Drawing.Point(521, 376)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 90
-        Me.PictureBox3.TabStop = False
-        '
-        'ComboBox52
-        '
-        Me.ComboBox52.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox52.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox52.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox52.FormattingEnabled = True
-        Me.ComboBox52.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox52.Location = New System.Drawing.Point(455, 429)
-        Me.ComboBox52.Name = "ComboBox52"
-        Me.ComboBox52.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox52.TabIndex = 89
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_45
-        Me.PictureBox4.Location = New System.Drawing.Point(455, 376)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 88
-        Me.PictureBox4.TabStop = False
-        '
-        'ComboBox53
-        '
-        Me.ComboBox53.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox53.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox53.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox53.FormattingEnabled = True
-        Me.ComboBox53.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox53.Location = New System.Drawing.Point(389, 429)
-        Me.ComboBox53.Name = "ComboBox53"
-        Me.ComboBox53.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox53.TabIndex = 87
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_44
-        Me.PictureBox5.Location = New System.Drawing.Point(389, 376)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 86
-        Me.PictureBox5.TabStop = False
-        '
-        'ComboBox54
-        '
-        Me.ComboBox54.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox54.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox54.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox54.FormattingEnabled = True
-        Me.ComboBox54.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox54.Location = New System.Drawing.Point(323, 429)
-        Me.ComboBox54.Name = "ComboBox54"
-        Me.ComboBox54.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox54.TabIndex = 85
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_43
-        Me.PictureBox6.Location = New System.Drawing.Point(323, 376)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox6.TabIndex = 84
-        Me.PictureBox6.TabStop = False
-        '
-        'ComboBox55
-        '
-        Me.ComboBox55.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox55.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox55.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox55.FormattingEnabled = True
-        Me.ComboBox55.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox55.Location = New System.Drawing.Point(257, 429)
-        Me.ComboBox55.Name = "ComboBox55"
-        Me.ComboBox55.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox55.TabIndex = 83
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_42
-        Me.PictureBox7.Location = New System.Drawing.Point(257, 376)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox7.TabIndex = 82
-        Me.PictureBox7.TabStop = False
-        '
-        'ComboBox56
-        '
-        Me.ComboBox56.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox56.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox56.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox56.FormattingEnabled = True
-        Me.ComboBox56.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox56.Location = New System.Drawing.Point(191, 429)
-        Me.ComboBox56.Name = "ComboBox56"
-        Me.ComboBox56.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox56.TabIndex = 81
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_41
-        Me.PictureBox8.Location = New System.Drawing.Point(191, 376)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox8.TabIndex = 80
-        Me.PictureBox8.TabStop = False
-        '
-        'ComboBox57
-        '
-        Me.ComboBox57.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox57.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox57.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox57.FormattingEnabled = True
-        Me.ComboBox57.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox57.Location = New System.Drawing.Point(719, 349)
-        Me.ComboBox57.Name = "ComboBox57"
-        Me.ComboBox57.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox57.TabIndex = 79
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_40
-        Me.PictureBox9.Location = New System.Drawing.Point(719, 296)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox9.TabIndex = 78
-        Me.PictureBox9.TabStop = False
-        '
-        'ComboBox58
-        '
-        Me.ComboBox58.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox58.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox58.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox58.FormattingEnabled = True
-        Me.ComboBox58.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox58.Location = New System.Drawing.Point(653, 349)
-        Me.ComboBox58.Name = "ComboBox58"
-        Me.ComboBox58.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox58.TabIndex = 77
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_39
-        Me.PictureBox10.Location = New System.Drawing.Point(653, 296)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox10.TabIndex = 76
-        Me.PictureBox10.TabStop = False
-        '
-        'ComboBox59
-        '
-        Me.ComboBox59.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox59.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox59.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox59.FormattingEnabled = True
-        Me.ComboBox59.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox59.Location = New System.Drawing.Point(587, 349)
-        Me.ComboBox59.Name = "ComboBox59"
-        Me.ComboBox59.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox59.TabIndex = 75
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_38
-        Me.PictureBox11.Location = New System.Drawing.Point(587, 296)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox11.TabIndex = 74
-        Me.PictureBox11.TabStop = False
-        '
-        'ComboBox60
-        '
-        Me.ComboBox60.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox60.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox60.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox60.FormattingEnabled = True
-        Me.ComboBox60.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox60.Location = New System.Drawing.Point(521, 349)
-        Me.ComboBox60.Name = "ComboBox60"
-        Me.ComboBox60.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox60.TabIndex = 73
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_37
-        Me.PictureBox12.Location = New System.Drawing.Point(521, 296)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox12.TabIndex = 72
-        Me.PictureBox12.TabStop = False
-        '
-        'ComboBox61
-        '
-        Me.ComboBox61.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox61.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox61.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox61.FormattingEnabled = True
-        Me.ComboBox61.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox61.Location = New System.Drawing.Point(455, 349)
-        Me.ComboBox61.Name = "ComboBox61"
-        Me.ComboBox61.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox61.TabIndex = 71
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_36
-        Me.PictureBox13.Location = New System.Drawing.Point(455, 296)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox13.TabIndex = 70
-        Me.PictureBox13.TabStop = False
-        '
-        'ComboBox62
-        '
-        Me.ComboBox62.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox62.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox62.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox62.FormattingEnabled = True
-        Me.ComboBox62.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox62.Location = New System.Drawing.Point(389, 349)
-        Me.ComboBox62.Name = "ComboBox62"
-        Me.ComboBox62.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox62.TabIndex = 69
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_35
-        Me.PictureBox14.Location = New System.Drawing.Point(389, 296)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox14.TabIndex = 68
-        Me.PictureBox14.TabStop = False
-        '
-        'ComboBox63
-        '
-        Me.ComboBox63.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox63.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox63.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox63.FormattingEnabled = True
-        Me.ComboBox63.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox63.Location = New System.Drawing.Point(323, 349)
-        Me.ComboBox63.Name = "ComboBox63"
-        Me.ComboBox63.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox63.TabIndex = 67
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_34
-        Me.PictureBox15.Location = New System.Drawing.Point(323, 296)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox15.TabIndex = 66
-        Me.PictureBox15.TabStop = False
-        '
-        'ComboBox64
-        '
-        Me.ComboBox64.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox64.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox64.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox64.FormattingEnabled = True
-        Me.ComboBox64.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox64.Location = New System.Drawing.Point(257, 349)
-        Me.ComboBox64.Name = "ComboBox64"
-        Me.ComboBox64.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox64.TabIndex = 65
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_33
-        Me.PictureBox16.Location = New System.Drawing.Point(257, 296)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox16.TabIndex = 64
-        Me.PictureBox16.TabStop = False
-        '
-        'ComboBox65
-        '
-        Me.ComboBox65.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox65.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox65.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox65.FormattingEnabled = True
-        Me.ComboBox65.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox65.Location = New System.Drawing.Point(191, 349)
-        Me.ComboBox65.Name = "ComboBox65"
-        Me.ComboBox65.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox65.TabIndex = 63
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_32
-        Me.PictureBox17.Location = New System.Drawing.Point(191, 296)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox17.TabIndex = 62
-        Me.PictureBox17.TabStop = False
-        '
-        'ComboBox66
-        '
-        Me.ComboBox66.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox66.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox66.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox66.FormattingEnabled = True
-        Me.ComboBox66.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox66.Location = New System.Drawing.Point(125, 349)
-        Me.ComboBox66.Name = "ComboBox66"
-        Me.ComboBox66.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox66.TabIndex = 61
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_31
-        Me.PictureBox18.Location = New System.Drawing.Point(125, 296)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox18.TabIndex = 60
-        Me.PictureBox18.TabStop = False
-        '
-        'ComboBox67
-        '
-        Me.ComboBox67.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox67.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox67.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox67.FormattingEnabled = True
-        Me.ComboBox67.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox67.Location = New System.Drawing.Point(719, 269)
-        Me.ComboBox67.Name = "ComboBox67"
-        Me.ComboBox67.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox67.TabIndex = 59
-        '
-        'PictureBox19
-        '
-        Me.PictureBox19.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_30
-        Me.PictureBox19.Location = New System.Drawing.Point(719, 216)
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox19.TabIndex = 58
-        Me.PictureBox19.TabStop = False
-        '
-        'ComboBox68
-        '
-        Me.ComboBox68.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox68.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox68.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox68.FormattingEnabled = True
-        Me.ComboBox68.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox68.Location = New System.Drawing.Point(653, 269)
-        Me.ComboBox68.Name = "ComboBox68"
-        Me.ComboBox68.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox68.TabIndex = 57
-        '
-        'PictureBox20
-        '
-        Me.PictureBox20.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_29
-        Me.PictureBox20.Location = New System.Drawing.Point(653, 216)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox20.TabIndex = 56
-        Me.PictureBox20.TabStop = False
-        '
-        'ComboBox69
-        '
-        Me.ComboBox69.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox69.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox69.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox69.FormattingEnabled = True
-        Me.ComboBox69.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox69.Location = New System.Drawing.Point(587, 269)
-        Me.ComboBox69.Name = "ComboBox69"
-        Me.ComboBox69.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox69.TabIndex = 55
-        '
-        'PictureBox49
-        '
-        Me.PictureBox49.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_28
-        Me.PictureBox49.Location = New System.Drawing.Point(587, 216)
-        Me.PictureBox49.Name = "PictureBox49"
-        Me.PictureBox49.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox49.TabIndex = 54
-        Me.PictureBox49.TabStop = False
-        '
-        'ComboBox70
-        '
-        Me.ComboBox70.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox70.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox70.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox70.FormattingEnabled = True
-        Me.ComboBox70.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox70.Location = New System.Drawing.Point(521, 269)
-        Me.ComboBox70.Name = "ComboBox70"
-        Me.ComboBox70.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox70.TabIndex = 53
-        '
-        'PictureBox50
-        '
-        Me.PictureBox50.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_27
-        Me.PictureBox50.Location = New System.Drawing.Point(521, 216)
-        Me.PictureBox50.Name = "PictureBox50"
-        Me.PictureBox50.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox50.TabIndex = 52
-        Me.PictureBox50.TabStop = False
-        '
-        'ComboBox71
-        '
-        Me.ComboBox71.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox71.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox71.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox71.FormattingEnabled = True
-        Me.ComboBox71.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox71.Location = New System.Drawing.Point(455, 269)
-        Me.ComboBox71.Name = "ComboBox71"
-        Me.ComboBox71.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox71.TabIndex = 51
-        '
-        'PictureBox51
-        '
-        Me.PictureBox51.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_26
-        Me.PictureBox51.Location = New System.Drawing.Point(455, 216)
-        Me.PictureBox51.Name = "PictureBox51"
-        Me.PictureBox51.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox51.TabIndex = 50
-        Me.PictureBox51.TabStop = False
-        '
-        'ComboBox72
-        '
-        Me.ComboBox72.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox72.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox72.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox72.FormattingEnabled = True
-        Me.ComboBox72.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox72.Location = New System.Drawing.Point(389, 269)
-        Me.ComboBox72.Name = "ComboBox72"
-        Me.ComboBox72.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox72.TabIndex = 49
-        '
-        'PictureBox52
-        '
-        Me.PictureBox52.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_25
-        Me.PictureBox52.Location = New System.Drawing.Point(389, 216)
-        Me.PictureBox52.Name = "PictureBox52"
-        Me.PictureBox52.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox52.TabIndex = 48
-        Me.PictureBox52.TabStop = False
-        '
-        'ComboBox73
-        '
-        Me.ComboBox73.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox73.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox73.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox73.FormattingEnabled = True
-        Me.ComboBox73.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox73.Location = New System.Drawing.Point(323, 269)
-        Me.ComboBox73.Name = "ComboBox73"
-        Me.ComboBox73.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox73.TabIndex = 47
-        '
-        'PictureBox53
-        '
-        Me.PictureBox53.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_24
-        Me.PictureBox53.Location = New System.Drawing.Point(323, 216)
-        Me.PictureBox53.Name = "PictureBox53"
-        Me.PictureBox53.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox53.TabIndex = 46
-        Me.PictureBox53.TabStop = False
-        '
-        'ComboBox74
-        '
-        Me.ComboBox74.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox74.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox74.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox74.FormattingEnabled = True
-        Me.ComboBox74.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox74.Location = New System.Drawing.Point(257, 269)
-        Me.ComboBox74.Name = "ComboBox74"
-        Me.ComboBox74.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox74.TabIndex = 45
-        '
-        'PictureBox54
-        '
-        Me.PictureBox54.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_23
-        Me.PictureBox54.Location = New System.Drawing.Point(257, 216)
-        Me.PictureBox54.Name = "PictureBox54"
-        Me.PictureBox54.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox54.TabIndex = 44
-        Me.PictureBox54.TabStop = False
-        '
-        'ComboBox75
-        '
-        Me.ComboBox75.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox75.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox75.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox75.FormattingEnabled = True
-        Me.ComboBox75.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox75.Location = New System.Drawing.Point(191, 269)
-        Me.ComboBox75.Name = "ComboBox75"
-        Me.ComboBox75.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox75.TabIndex = 43
-        '
-        'PictureBox55
-        '
-        Me.PictureBox55.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_22
-        Me.PictureBox55.Location = New System.Drawing.Point(191, 216)
-        Me.PictureBox55.Name = "PictureBox55"
-        Me.PictureBox55.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox55.TabIndex = 42
-        Me.PictureBox55.TabStop = False
-        '
-        'ComboBox76
-        '
-        Me.ComboBox76.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox76.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox76.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox76.FormattingEnabled = True
-        Me.ComboBox76.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox76.Location = New System.Drawing.Point(125, 269)
-        Me.ComboBox76.Name = "ComboBox76"
-        Me.ComboBox76.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox76.TabIndex = 41
-        '
-        'PictureBox56
-        '
-        Me.PictureBox56.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_21
-        Me.PictureBox56.Location = New System.Drawing.Point(125, 216)
-        Me.PictureBox56.Name = "PictureBox56"
-        Me.PictureBox56.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox56.TabIndex = 40
-        Me.PictureBox56.TabStop = False
-        '
-        'ComboBox77
-        '
-        Me.ComboBox77.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox77.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox77.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox77.FormattingEnabled = True
-        Me.ComboBox77.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox77.Location = New System.Drawing.Point(719, 189)
-        Me.ComboBox77.Name = "ComboBox77"
-        Me.ComboBox77.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox77.TabIndex = 39
-        '
-        'PictureBox57
-        '
-        Me.PictureBox57.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_20
-        Me.PictureBox57.Location = New System.Drawing.Point(719, 136)
-        Me.PictureBox57.Name = "PictureBox57"
-        Me.PictureBox57.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox57.TabIndex = 38
-        Me.PictureBox57.TabStop = False
-        '
-        'ComboBox78
-        '
-        Me.ComboBox78.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox78.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox78.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox78.FormattingEnabled = True
-        Me.ComboBox78.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox78.Location = New System.Drawing.Point(653, 189)
-        Me.ComboBox78.Name = "ComboBox78"
-        Me.ComboBox78.Size = New System.Drawing.Size(60, 21)
-        Me.ComboBox78.TabIndex = 37
-        '
-        'PictureBox58
-        '
-        Me.PictureBox58.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_19
-        Me.PictureBox58.Location = New System.Drawing.Point(653, 136)
-        Me.PictureBox58.Name = "PictureBox58"
-        Me.PictureBox58.Size = New System.Drawing.Size(60, 54)
-        Me.PictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox58.TabIndex = 36
-        Me.PictureBox58.TabStop = False
+        'Panel_gooditems
+        '
+        Me.Panel_gooditems.BackgroundImage = CType(resources.GetObject("Panel_gooditems.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox79)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox59)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox80)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox60)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox81)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox61)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox82)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox62)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox83)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox63)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox84)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox64)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox85)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox65)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox86)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox66)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox87)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox67)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox88)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox68)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox89)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox69)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox90)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox70)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox91)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox71)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox92)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox72)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox93)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox73)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox94)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox74)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox95)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox75)
+        Me.Panel_gooditems.Controls.Add(Me.ComboBox96)
+        Me.Panel_gooditems.Controls.Add(Me.PictureBox76)
+        Me.Panel_gooditems.Location = New System.Drawing.Point(1, 37)
+        Me.Panel_gooditems.Name = "Panel_gooditems"
+        Me.Panel_gooditems.Size = New System.Drawing.Size(905, 506)
+        Me.Panel_gooditems.TabIndex = 103
+        Me.Panel_gooditems.Visible = False
         '
         'ComboBox79
         '
@@ -2568,15 +1758,15 @@ Partial Class Items_edit
         Me.ComboBox79.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox79.FormattingEnabled = True
         Me.ComboBox79.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox79.Location = New System.Drawing.Point(587, 189)
+        Me.ComboBox79.Location = New System.Drawing.Point(653, 300)
         Me.ComboBox79.Name = "ComboBox79"
         Me.ComboBox79.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox79.TabIndex = 35
         '
         'PictureBox59
         '
-        Me.PictureBox59.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_18
-        Me.PictureBox59.Location = New System.Drawing.Point(587, 136)
+        Me.PictureBox59.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox59.Location = New System.Drawing.Point(653, 247)
         Me.PictureBox59.Name = "PictureBox59"
         Me.PictureBox59.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2590,15 +1780,15 @@ Partial Class Items_edit
         Me.ComboBox80.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox80.FormattingEnabled = True
         Me.ComboBox80.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox80.Location = New System.Drawing.Point(521, 189)
+        Me.ComboBox80.Location = New System.Drawing.Point(587, 300)
         Me.ComboBox80.Name = "ComboBox80"
         Me.ComboBox80.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox80.TabIndex = 33
         '
         'PictureBox60
         '
-        Me.PictureBox60.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_17
-        Me.PictureBox60.Location = New System.Drawing.Point(521, 136)
+        Me.PictureBox60.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox60.Location = New System.Drawing.Point(587, 247)
         Me.PictureBox60.Name = "PictureBox60"
         Me.PictureBox60.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2612,15 +1802,15 @@ Partial Class Items_edit
         Me.ComboBox81.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox81.FormattingEnabled = True
         Me.ComboBox81.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox81.Location = New System.Drawing.Point(455, 189)
+        Me.ComboBox81.Location = New System.Drawing.Point(521, 300)
         Me.ComboBox81.Name = "ComboBox81"
         Me.ComboBox81.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox81.TabIndex = 31
         '
         'PictureBox61
         '
-        Me.PictureBox61.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_16
-        Me.PictureBox61.Location = New System.Drawing.Point(455, 136)
+        Me.PictureBox61.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox61.Location = New System.Drawing.Point(521, 247)
         Me.PictureBox61.Name = "PictureBox61"
         Me.PictureBox61.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2634,15 +1824,15 @@ Partial Class Items_edit
         Me.ComboBox82.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox82.FormattingEnabled = True
         Me.ComboBox82.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox82.Location = New System.Drawing.Point(389, 189)
+        Me.ComboBox82.Location = New System.Drawing.Point(455, 300)
         Me.ComboBox82.Name = "ComboBox82"
         Me.ComboBox82.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox82.TabIndex = 29
         '
         'PictureBox62
         '
-        Me.PictureBox62.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_15
-        Me.PictureBox62.Location = New System.Drawing.Point(389, 136)
+        Me.PictureBox62.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox62.Location = New System.Drawing.Point(455, 247)
         Me.PictureBox62.Name = "PictureBox62"
         Me.PictureBox62.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2656,15 +1846,15 @@ Partial Class Items_edit
         Me.ComboBox83.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox83.FormattingEnabled = True
         Me.ComboBox83.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox83.Location = New System.Drawing.Point(323, 189)
+        Me.ComboBox83.Location = New System.Drawing.Point(389, 300)
         Me.ComboBox83.Name = "ComboBox83"
         Me.ComboBox83.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox83.TabIndex = 27
         '
         'PictureBox63
         '
-        Me.PictureBox63.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_14
-        Me.PictureBox63.Location = New System.Drawing.Point(323, 136)
+        Me.PictureBox63.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox63.Location = New System.Drawing.Point(389, 247)
         Me.PictureBox63.Name = "PictureBox63"
         Me.PictureBox63.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2678,15 +1868,15 @@ Partial Class Items_edit
         Me.ComboBox84.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox84.FormattingEnabled = True
         Me.ComboBox84.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox84.Location = New System.Drawing.Point(257, 189)
+        Me.ComboBox84.Location = New System.Drawing.Point(323, 300)
         Me.ComboBox84.Name = "ComboBox84"
         Me.ComboBox84.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox84.TabIndex = 25
         '
         'PictureBox64
         '
-        Me.PictureBox64.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_13
-        Me.PictureBox64.Location = New System.Drawing.Point(257, 136)
+        Me.PictureBox64.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox64.Location = New System.Drawing.Point(323, 247)
         Me.PictureBox64.Name = "PictureBox64"
         Me.PictureBox64.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2700,15 +1890,15 @@ Partial Class Items_edit
         Me.ComboBox85.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox85.FormattingEnabled = True
         Me.ComboBox85.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox85.Location = New System.Drawing.Point(191, 189)
+        Me.ComboBox85.Location = New System.Drawing.Point(257, 300)
         Me.ComboBox85.Name = "ComboBox85"
         Me.ComboBox85.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox85.TabIndex = 23
         '
         'PictureBox65
         '
-        Me.PictureBox65.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_12
-        Me.PictureBox65.Location = New System.Drawing.Point(191, 136)
+        Me.PictureBox65.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox65.Location = New System.Drawing.Point(257, 247)
         Me.PictureBox65.Name = "PictureBox65"
         Me.PictureBox65.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2722,15 +1912,15 @@ Partial Class Items_edit
         Me.ComboBox86.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox86.FormattingEnabled = True
         Me.ComboBox86.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox86.Location = New System.Drawing.Point(125, 189)
+        Me.ComboBox86.Location = New System.Drawing.Point(191, 300)
         Me.ComboBox86.Name = "ComboBox86"
         Me.ComboBox86.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox86.TabIndex = 21
         '
         'PictureBox66
         '
-        Me.PictureBox66.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_11
-        Me.PictureBox66.Location = New System.Drawing.Point(125, 136)
+        Me.PictureBox66.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox66.Location = New System.Drawing.Point(191, 247)
         Me.PictureBox66.Name = "PictureBox66"
         Me.PictureBox66.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2745,15 +1935,15 @@ Partial Class Items_edit
         Me.ComboBox87.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox87.FormattingEnabled = True
         Me.ComboBox87.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox87.Location = New System.Drawing.Point(719, 109)
+        Me.ComboBox87.Location = New System.Drawing.Point(719, 220)
         Me.ComboBox87.Name = "ComboBox87"
         Me.ComboBox87.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox87.TabIndex = 19
         '
         'PictureBox67
         '
-        Me.PictureBox67.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_10
-        Me.PictureBox67.Location = New System.Drawing.Point(719, 56)
+        Me.PictureBox67.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox67.Location = New System.Drawing.Point(719, 167)
         Me.PictureBox67.Name = "PictureBox67"
         Me.PictureBox67.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2768,15 +1958,15 @@ Partial Class Items_edit
         Me.ComboBox88.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox88.FormattingEnabled = True
         Me.ComboBox88.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox88.Location = New System.Drawing.Point(653, 109)
+        Me.ComboBox88.Location = New System.Drawing.Point(653, 220)
         Me.ComboBox88.Name = "ComboBox88"
         Me.ComboBox88.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox88.TabIndex = 17
         '
         'PictureBox68
         '
-        Me.PictureBox68.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_09
-        Me.PictureBox68.Location = New System.Drawing.Point(653, 56)
+        Me.PictureBox68.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox68.Location = New System.Drawing.Point(653, 167)
         Me.PictureBox68.Name = "PictureBox68"
         Me.PictureBox68.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2791,15 +1981,15 @@ Partial Class Items_edit
         Me.ComboBox89.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox89.FormattingEnabled = True
         Me.ComboBox89.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox89.Location = New System.Drawing.Point(587, 109)
+        Me.ComboBox89.Location = New System.Drawing.Point(587, 220)
         Me.ComboBox89.Name = "ComboBox89"
         Me.ComboBox89.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox89.TabIndex = 15
         '
         'PictureBox69
         '
-        Me.PictureBox69.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_08
-        Me.PictureBox69.Location = New System.Drawing.Point(587, 56)
+        Me.PictureBox69.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox69.Location = New System.Drawing.Point(587, 167)
         Me.PictureBox69.Name = "PictureBox69"
         Me.PictureBox69.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2814,15 +2004,15 @@ Partial Class Items_edit
         Me.ComboBox90.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox90.FormattingEnabled = True
         Me.ComboBox90.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox90.Location = New System.Drawing.Point(521, 109)
+        Me.ComboBox90.Location = New System.Drawing.Point(521, 220)
         Me.ComboBox90.Name = "ComboBox90"
         Me.ComboBox90.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox90.TabIndex = 13
         '
         'PictureBox70
         '
-        Me.PictureBox70.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_07
-        Me.PictureBox70.Location = New System.Drawing.Point(521, 56)
+        Me.PictureBox70.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox70.Location = New System.Drawing.Point(521, 167)
         Me.PictureBox70.Name = "PictureBox70"
         Me.PictureBox70.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2837,15 +2027,15 @@ Partial Class Items_edit
         Me.ComboBox91.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox91.FormattingEnabled = True
         Me.ComboBox91.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox91.Location = New System.Drawing.Point(455, 109)
+        Me.ComboBox91.Location = New System.Drawing.Point(455, 220)
         Me.ComboBox91.Name = "ComboBox91"
         Me.ComboBox91.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox91.TabIndex = 11
         '
         'PictureBox71
         '
-        Me.PictureBox71.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_06
-        Me.PictureBox71.Location = New System.Drawing.Point(455, 56)
+        Me.PictureBox71.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox71.Location = New System.Drawing.Point(455, 167)
         Me.PictureBox71.Name = "PictureBox71"
         Me.PictureBox71.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2860,15 +2050,15 @@ Partial Class Items_edit
         Me.ComboBox92.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox92.FormattingEnabled = True
         Me.ComboBox92.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox92.Location = New System.Drawing.Point(389, 109)
+        Me.ComboBox92.Location = New System.Drawing.Point(389, 220)
         Me.ComboBox92.Name = "ComboBox92"
         Me.ComboBox92.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox92.TabIndex = 9
         '
         'PictureBox72
         '
-        Me.PictureBox72.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_05
-        Me.PictureBox72.Location = New System.Drawing.Point(389, 56)
+        Me.PictureBox72.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox72.Location = New System.Drawing.Point(389, 167)
         Me.PictureBox72.Name = "PictureBox72"
         Me.PictureBox72.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2883,15 +2073,15 @@ Partial Class Items_edit
         Me.ComboBox93.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox93.FormattingEnabled = True
         Me.ComboBox93.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox93.Location = New System.Drawing.Point(323, 109)
+        Me.ComboBox93.Location = New System.Drawing.Point(323, 220)
         Me.ComboBox93.Name = "ComboBox93"
         Me.ComboBox93.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox93.TabIndex = 7
         '
         'PictureBox73
         '
-        Me.PictureBox73.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_04
-        Me.PictureBox73.Location = New System.Drawing.Point(323, 56)
+        Me.PictureBox73.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox73.Location = New System.Drawing.Point(323, 167)
         Me.PictureBox73.Name = "PictureBox73"
         Me.PictureBox73.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2906,15 +2096,15 @@ Partial Class Items_edit
         Me.ComboBox94.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox94.FormattingEnabled = True
         Me.ComboBox94.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox94.Location = New System.Drawing.Point(257, 109)
+        Me.ComboBox94.Location = New System.Drawing.Point(257, 220)
         Me.ComboBox94.Name = "ComboBox94"
         Me.ComboBox94.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox94.TabIndex = 5
         '
         'PictureBox74
         '
-        Me.PictureBox74.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_03
-        Me.PictureBox74.Location = New System.Drawing.Point(257, 56)
+        Me.PictureBox74.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox74.Location = New System.Drawing.Point(257, 167)
         Me.PictureBox74.Name = "PictureBox74"
         Me.PictureBox74.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2929,15 +2119,15 @@ Partial Class Items_edit
         Me.ComboBox95.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox95.FormattingEnabled = True
         Me.ComboBox95.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox95.Location = New System.Drawing.Point(191, 109)
+        Me.ComboBox95.Location = New System.Drawing.Point(191, 220)
         Me.ComboBox95.Name = "ComboBox95"
         Me.ComboBox95.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox95.TabIndex = 3
         '
         'PictureBox75
         '
-        Me.PictureBox75.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_02
-        Me.PictureBox75.Location = New System.Drawing.Point(191, 56)
+        Me.PictureBox75.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox75.Location = New System.Drawing.Point(191, 167)
         Me.PictureBox75.Name = "PictureBox75"
         Me.PictureBox75.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2952,15 +2142,15 @@ Partial Class Items_edit
         Me.ComboBox96.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox96.FormattingEnabled = True
         Me.ComboBox96.Items.AddRange(New Object() {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50", "51", "52", "53", "54", "55", "56", "57", "58", "59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "Available", "Not available"})
-        Me.ComboBox96.Location = New System.Drawing.Point(125, 109)
+        Me.ComboBox96.Location = New System.Drawing.Point(125, 220)
         Me.ComboBox96.Name = "ComboBox96"
         Me.ComboBox96.Size = New System.Drawing.Size(60, 21)
         Me.ComboBox96.TabIndex = 1
         '
         'PictureBox76
         '
-        Me.PictureBox76.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_spef_01
-        Me.PictureBox76.Location = New System.Drawing.Point(125, 56)
+        Me.PictureBox76.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox76.Location = New System.Drawing.Point(125, 167)
         Me.PictureBox76.Name = "PictureBox76"
         Me.PictureBox76.Size = New System.Drawing.Size(60, 54)
         Me.PictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2975,7 +2165,7 @@ Partial Class Items_edit
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(907, 545)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Panel_gooditems)
         Me.Controls.Add(Me.Icon_hats_03)
         Me.Controls.Add(Me.Icon_hats_02)
         Me.Controls.Add(Me.Icon_clothes_03)
@@ -3073,37 +2263,7 @@ Partial Class Items_edit
         CType(Me.Icon_clothes_04, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_clothes_03, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_clothes_05, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox49, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox50, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox51, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox52, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox53, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox54, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox55, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox56, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox57, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox58, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_gooditems.ResumeLayout(False)
         CType(Me.PictureBox59, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox60, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3245,67 +2405,7 @@ Partial Class Items_edit
     Friend WithEvents Icon_hats_03 As System.Windows.Forms.PictureBox
     Friend WithEvents Icon_hats_02 As System.Windows.Forms.PictureBox
     Friend WithEvents Icon_hats_01 As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents ComboBox49 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox50 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox51 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox52 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox53 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox54 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox55 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox56 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox57 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox58 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox59 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox60 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox12 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox61 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox13 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox62 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox14 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox63 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox64 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox16 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox65 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox66 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox18 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox67 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox19 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox68 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox69 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox49 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox70 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox50 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox71 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox51 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox72 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox52 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox73 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox53 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox74 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox54 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox75 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox55 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox76 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox56 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox77 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox57 As System.Windows.Forms.PictureBox
-    Friend WithEvents ComboBox78 As System.Windows.Forms.ComboBox
-    Friend WithEvents PictureBox58 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel_gooditems As System.Windows.Forms.Panel
     Friend WithEvents ComboBox79 As System.Windows.Forms.ComboBox
     Friend WithEvents PictureBox59 As System.Windows.Forms.PictureBox
     Friend WithEvents ComboBox80 As System.Windows.Forms.ComboBox

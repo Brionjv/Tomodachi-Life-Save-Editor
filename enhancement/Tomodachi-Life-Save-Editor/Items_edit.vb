@@ -20,6 +20,11 @@ Public Class Items_edit
         Icon_specialfoods.Visible = False
     End Sub
 
+    Public Sub hidepanels()
+        Panel_specialfoods.Visible = False
+        Panel_gooditems.Visible = False
+    End Sub
+
     Private Sub Icon_normalfoods_Click(sender As Object, e As EventArgs) Handles Icon_normalfoods.Click
         hidesub()
         Icon_normalfoods_01.Visible = True
@@ -50,6 +55,8 @@ Public Class Items_edit
 
     Private Sub Icon_gooditems_Click(sender As Object, e As EventArgs) Handles Icon_gooditems.Click
         hidesub()
+        hidepanels()
+        Panel_gooditems.Visible = True
     End Sub
 
     Private Sub Icon_treasures_Click(sender As Object, e As EventArgs) Handles Icon_treasures.Click
@@ -72,6 +79,7 @@ Public Class Items_edit
     End Sub
 
     Private Sub Text_specialfoods_Click(sender As Object, e As EventArgs) Handles Text_specialfoods.Click
+        hidepanels()
         Panel_specialfoods.Visible = True
     End Sub
 End Class
