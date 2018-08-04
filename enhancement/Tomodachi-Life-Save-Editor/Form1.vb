@@ -168,6 +168,9 @@ Public Class TL_SaveEditor
     Dim Friendrela_29 As String
     Dim Friendmii_30 As String
     Dim Friendrela_30 As String
+    Dim Equclothes As String
+    Dim Equhats As String
+    Dim Equinteriors As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -1154,6 +1157,15 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1F2C + Accessmii
                 Emotions = Reader.Position
                 valu_emotions.Value = Reader.ReadByte
+                Reader.Position = &H1D42 + Accessmii
+                Equclothes = Reader.Position
+                valu_switch_clothes.Value = Reader.ReadUInt16
+                Reader.Position = &H1D44 + Accessmii
+                Equhats = Reader.Position
+                valu_switch_hats.Value = Reader.ReadUInt16
+                Reader.Position = &H1F20 + Accessmii
+                Equinteriors = Reader.Position
+                valu_switch_interiors.Value = Reader.ReadUInt16
             End If
 
             If Filever_text.Text = "JP" Then
@@ -1306,6 +1318,15 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1E2C + Accessmii
                 Emotions = Reader.Position
                 valu_emotions.Value = Reader.ReadByte
+                Reader.Position = &H1D12 + Accessmii
+                Equclothes = Reader.Position
+                valu_switch_clothes.Value = Reader.ReadUInt16
+                Reader.Position = &H1D14 + Accessmii
+                Equhats = Reader.Position
+                valu_switch_hats.Value = Reader.ReadUInt16
+                Reader.Position = &H1E20 + Accessmii
+                Equinteriors = Reader.Position
+                valu_switch_interiors.Value = Reader.ReadUInt16
             End If
             Select_allfriends.Enabled = True
             Text_save_mii.Enabled = True
@@ -1408,6 +1429,12 @@ Public Class TL_SaveEditor
             Writer.WriteUInt32(valu_ranking_splurge.Value)
             Writer.Position = Pampered
             Writer.WriteUInt32(valu_ranking_pampered.Value)
+            Writer.Position = Equclothes
+            Writer.WriteUInt16(valu_switch_clothes.Value)
+            Writer.Position = Equhats
+            Writer.WriteUInt16(valu_switch_hats.Value)
+            Writer.Position = Equinteriors
+            Writer.WriteUInt16(valu_switch_interiors.Value)
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 For i As Integer = 0 To 59
                     Writer.Position = Mii1PP + i
@@ -2843,6 +2870,7 @@ Public Class TL_SaveEditor
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
             Text_menu_button.Text = "Menu"
             Text_menu_open.Text = "Open"
+            Text_menu_save.Text = "Save"
             Menu_text_extras.Text = "Extras"
             Menu_text_islandedit.Text = "Island edit"
             Menu_text_miiedit.Text = "Mii edit"
@@ -3248,9 +3276,12 @@ Public Class TL_SaveEditor
             Select_friend_rela_30.Items.Item(7) = "Sibling"
             Select_friend_rela_30.Items.Item(8) = "Friend (in conflict)"
             Select_friend_rela_30.Items.Item(9) = "Best friend"
+            Text_danger_friendlist.Text = "If your save file is corrupted, report this issue (your save file backup is in ''bak'' folder)"
+            Title_miihouse.Text = "Mii house"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_menu_button.Text = "Menu"
             Text_menu_open.Text = "Ouvrir"
+            Text_menu_save.Text = "Enregistrer"
             Menu_text_extras.Text = "Extras"
             Menu_text_islandedit.Text = "Édition île"
             Menu_text_miiedit.Text = "Édition Mii"
@@ -3656,6 +3687,8 @@ Public Class TL_SaveEditor
             Select_friend_rela_30.Items.Item(7) = "Frère/Soeur"
             Select_friend_rela_30.Items.Item(8) = "Ami (en conflit)"
             Select_friend_rela_30.Items.Item(9) = "Meilleur(e) ami(e)"
+            Text_danger_friendlist.Text = "si votre sauvegarde est corrompu, signalez cet erreur (la copie de votre sauvegarde se trouve dans le dossier''bak'')"
+            Title_miihouse.Text = "Maison Mii"
         End If
     End Sub
 
@@ -16211,5 +16244,26 @@ Public Class TL_SaveEditor
             Text_description.Text = "Mettre à l'orange pour réinitialiser Streetpass/Spotpass de Tomodachi Life"
         End If
         Panel_description.Visible = True
+    End Sub
+
+    Private Sub Danger_friendlist_MouseMove(sender As Object, e As EventArgs) Handles Danger_friendlist.MouseMove
+        Text_danger_friendlist.Visible = True
+    End Sub
+
+    Private Sub Danger_friendlist_MouseLeave(sender As Object, e As EventArgs) Handles Danger_friendlist.MouseLeave
+        Text_danger_friendlist.Visible = False
+    End Sub
+
+    Private Sub Menu_manual_Click(sender As Object, e As EventArgs) Handles Menu_manual.Click, Menu_text_manual.Click
+        Manual.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Menu_manual_MouseMove(sender As Object, e As EventArgs) Handles Menu_manual.MouseMove, Menu_text_manual.MouseMove
+        Menu_manual.BorderStyle = BorderStyle.FixedSingle
+    End Sub
+
+    Private Sub Menu_manual_MouseLeave(sender As Object, e As EventArgs) Handles Menu_manual.MouseLeave, Menu_text_manual.MouseLeave
+        Menu_manual.BorderStyle = BorderStyle.None
     End Sub
 End Class

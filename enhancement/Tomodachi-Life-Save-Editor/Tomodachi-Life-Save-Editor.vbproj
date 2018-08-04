@@ -107,6 +107,12 @@
     <Compile Include="Loading.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Manual.Designer.vb">
+      <DependentUpon>Manual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Manual.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Miimusic_edit.Designer.vb">
       <DependentUpon>Miimusic_edit.vb</DependentUpon>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Loading.resx">
       <DependentUpon>Loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manual.resx">
+      <DependentUpon>Manual.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Miimusic_edit.resx">
       <DependentUpon>Miimusic_edit.vb</DependentUpon>
@@ -1261,6 +1270,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\Icon_switch_interior.png" />
+    <None Include="Resources\Icon_switch_hats.png" />
+    <None Include="Resources\Icon_switch_clothes.png" />
+    <None Include="Resources\icon_right.png" />
+    <None Include="Resources\Icon_left.png" />
     <None Include="Resources\unknow_items.png" />
     <None Include="Resources\howtouse.png" />
     <None Include="Resources\repair_save.png" />
