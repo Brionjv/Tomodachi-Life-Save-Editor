@@ -573,6 +573,9 @@ Partial Class TL_SaveEditor
         Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_description = New System.Windows.Forms.Panel()
         Me.Text_description = New System.Windows.Forms.Label()
+        Me.Panel_done = New System.Windows.Forms.Panel()
+        Me.Text_done = New System.Windows.Forms.Label()
+        Me.Timer_done = New System.Windows.Forms.Timer(Me.components)
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -935,6 +938,7 @@ Partial Class TL_SaveEditor
         Me.Panel_save_mii.SuspendLayout()
         Me.Panel_select_mii.SuspendLayout()
         Me.Panel_description.SuspendLayout()
+        Me.Panel_done.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_header
@@ -6005,6 +6009,7 @@ Partial Class TL_SaveEditor
         Me.Label36.Size = New System.Drawing.Size(14, 20)
         Me.Label36.TabIndex = 191
         Me.Label36.Text = "i"
+        Me.Label36.Visible = False
         '
         'Select_friend_rela_30
         '
@@ -7106,6 +7111,34 @@ Partial Class TL_SaveEditor
         Me.Text_description.TabIndex = 0
         Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Panel_done
+        '
+        Me.Panel_done.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.Panel_done.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_done.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
+        Me.Panel_done.Controls.Add(Me.Text_done)
+        Me.Panel_done.Location = New System.Drawing.Point(476, 479)
+        Me.Panel_done.Name = "Panel_done"
+        Me.Panel_done.Size = New System.Drawing.Size(124, 46)
+        Me.Panel_done.TabIndex = 29
+        Me.Panel_done.Visible = False
+        '
+        'Text_done
+        '
+        Me.Text_done.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_done.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_done.ForeColor = System.Drawing.Color.White
+        Me.Text_done.Location = New System.Drawing.Point(0, 0)
+        Me.Text_done.Name = "Text_done"
+        Me.Text_done.Size = New System.Drawing.Size(124, 46)
+        Me.Text_done.TabIndex = 0
+        Me.Text_done.Text = "Done !"
+        Me.Text_done.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Timer_done
+        '
+        Me.Timer_done.Interval = 400
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -7113,6 +7146,7 @@ Partial Class TL_SaveEditor
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(600, 550)
+        Me.Controls.Add(Me.Panel_done)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.Panel_menu_opensave)
@@ -7126,8 +7160,8 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.Panel_settings)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -7525,6 +7559,7 @@ Partial Class TL_SaveEditor
         Me.Panel_save_mii.ResumeLayout(False)
         Me.Panel_select_mii.ResumeLayout(False)
         Me.Panel_description.ResumeLayout(False)
+        Me.Panel_done.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -8077,5 +8112,8 @@ Partial Class TL_SaveEditor
     Friend WithEvents Icon_switch_clothes As System.Windows.Forms.PictureBox
     Friend WithEvents valu_switch_hats As System.Windows.Forms.NumericUpDown
     Friend WithEvents Icon_switch_hats As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel_done As System.Windows.Forms.Panel
+    Friend WithEvents Text_done As System.Windows.Forms.Label
+    Friend WithEvents Timer_done As System.Windows.Forms.Timer
 
 End Class

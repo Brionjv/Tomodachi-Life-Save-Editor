@@ -179,6 +179,11 @@ Public Class TL_SaveEditor
         Panel_miiedit.Visible = False
     End Sub
 
+    Public Sub done()
+        Timer_done.Start()
+        Panel_done.Visible = True
+    End Sub
+
     Private Sub unselectcolor()
         color_1.BorderStyle = BorderStyle.None
         color_2.BorderStyle = BorderStyle.None
@@ -2763,6 +2768,7 @@ Public Class TL_SaveEditor
 
     Private Sub Icon_eventfountain_Click(sender As Object, e As EventArgs) Handles Icon_eventfountain.Click
         value_eventfountain.Value = 0
+        done()
     End Sub
 
     Private Sub Icon_eventfountain_MouseMove(sender As Object, e As EventArgs) Handles Icon_eventfountain.MouseMove
@@ -3278,6 +3284,7 @@ Public Class TL_SaveEditor
             Select_friend_rela_30.Items.Item(9) = "Best friend"
             Text_danger_friendlist.Text = "If your save file is corrupted, report this issue (your save file backup is in ''bak'' folder)"
             Title_miihouse.Text = "Mii house"
+            Text_done.Text = "Done !"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_menu_button.Text = "Menu"
             Text_menu_open.Text = "Ouvrir"
@@ -3689,6 +3696,7 @@ Public Class TL_SaveEditor
             Select_friend_rela_30.Items.Item(9) = "Meilleur(e) ami(e)"
             Text_danger_friendlist.Text = "si votre sauvegarde est corrompu, signalez cet erreur (la copie de votre sauvegarde se trouve dans le dossier''bak'')"
             Title_miihouse.Text = "Maison Mii"
+            Text_done.Text = "Effectué !"
         End If
     End Sub
 
@@ -7427,6 +7435,20 @@ Public Class TL_SaveEditor
 
     Private Sub Text_unlock_music_Click(sender As Object, e As EventArgs) Handles Text_unlock_music.Click
         valu_allmusic.Value = 255
+        done()
+    End Sub
+
+    Private Sub Text_unlock_music_MouseMove(sender As Object, e As EventArgs) Handles Text_unlock_music.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to unlock all songs to this Mii"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour toutes les musiques de ce Mii"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Text_unlock_music_MouseLeave(sender As Object, e As EventArgs) Handles Text_unlock_music.MouseLeave
+        Panel_description.Visible = False
     End Sub
 
     Private Sub valu_emotions_ValueChanged(sender As Object, e As EventArgs) Handles valu_emotions.ValueChanged
@@ -9588,6 +9610,19 @@ Public Class TL_SaveEditor
         Filever_text.ForeColor = Color.Violet
         Timer7.Stop()
         Timer1.Start()
+    End Sub
+
+    Private Sub Text_edit_metal_MouseMove(sender As Object, e As EventArgs) Handles Text_edit_metal.MouseMove, Text_edit_pop.MouseMove, Text_edit_rockroll.MouseMove, Text_edit_rap.MouseMove, Text_edit_musical.MouseMove, Text_edit_opera.MouseMove, Text_edit_techno.MouseMove, Text_edit_ballad.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to edit this song"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour éditer cette musique"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Text_edit_metal_MouseLeave(sender As Object, e As EventArgs) Handles Text_edit_metal.MouseLeave, Text_edit_pop.MouseLeave, Text_edit_rockroll.MouseLeave, Text_edit_rap.MouseLeave, Text_edit_musical.MouseLeave, Text_edit_opera.MouseLeave, Text_edit_techno.MouseLeave, Text_edit_ballad.MouseLeave
+        Panel_description.Visible = False
     End Sub
 
     Private Sub Text_edit_metal_Click(sender As Object, e As EventArgs) Handles Text_edit_metal.Click
@@ -16265,5 +16300,21 @@ Public Class TL_SaveEditor
 
     Private Sub Menu_manual_MouseLeave(sender As Object, e As EventArgs) Handles Menu_manual.MouseLeave, Menu_text_manual.MouseLeave
         Menu_manual.BorderStyle = BorderStyle.None
+    End Sub
+
+    Private Sub Timer_done_Tick(sender As Object, e As EventArgs) Handles Timer_done.Tick
+        Timer_done.Stop()
+        Panel_done.Visible = False
+    End Sub
+
+    Private Sub Info_interaction_Click(sender As Object, e As EventArgs) Handles Info_interaction.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            fdialog.Text_fdialog.Text = "Miis must have same status (kid or grown_up) and don't have same sex, some interaction need conditions"
+            fdialog.ShowDialog()
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            fdialog.Text_fdialog.Text = "Les Miis doivent pas avoir le même status (enfant ou adulte) et doivent pas avoir le même sexe, certaines intéractions nécessite des conditions"
+            fdialog.ShowDialog()
+        End If
     End Sub
 End Class

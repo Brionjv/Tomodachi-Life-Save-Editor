@@ -1270,6 +1270,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\JKSM_newfolder.png" />
+    <None Include="Resources\JKSM_launch.png" />
+    <None Include="Resources\JKSM_backup.png" />
+    <None Include="Resources\JKSM_tomodachi.png" />
+    <None Include="Resources\JKSM_titles.png" />
+    <None Include="Resources\JKSM_savedata.png" />
     <None Include="Resources\Icon_switch_interior.png" />
     <None Include="Resources\Icon_switch_hats.png" />
     <None Include="Resources\Icon_switch_clothes.png" />
