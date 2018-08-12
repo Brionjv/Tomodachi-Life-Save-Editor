@@ -1270,6 +1270,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_validsave.png" />
     <None Include="Resources\JKSM_newfolder.png" />
     <None Include="Resources\JKSM_launch.png" />
     <None Include="Resources\JKSM_backup.png" />

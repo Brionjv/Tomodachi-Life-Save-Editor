@@ -105,7 +105,6 @@ Public Class Items_edit
             Goodsitems_18 = Reader.Position
             valu_goodi_18.Value = Reader.ReadByte
         Catch ex As Exception
-
         End Try
     End Sub
 
@@ -659,5 +658,1182 @@ Public Class Items_edit
             valu_goodi_18.Enabled = True
             valu_goodi_18.Value = 0
         End If
+    End Sub
+
+    Private Sub Check_available_sfoods_1_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_1.CheckedChanged
+        If Check_available_sfoods_1.Checked = True Then
+            Check_NA_sfoods_1.Enabled = False
+            valu_sfoods_1.Enabled = False
+            valu_sfoods_1.Value = 254
+        ElseIf Check_available_sfoods_1.Checked = False Then
+            Check_NA_sfoods_1.Enabled = True
+            valu_sfoods_1.Enabled = True
+            valu_sfoods_1.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_1_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_1.CheckedChanged
+        If Check_NA_sfoods_1.Checked = True Then
+            Check_available_sfoods_1.Enabled = False
+            valu_sfoods_1.Enabled = False
+            valu_sfoods_1.Value = 253
+        ElseIf Check_NA_sfoods_1.Checked = False Then
+            Check_available_sfoods_1.Enabled = True
+            valu_sfoods_1.Enabled = True
+            valu_sfoods_1.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_2_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_2.CheckedChanged
+        If Check_available_sfoods_2.Checked = True Then
+            Check_NA_sfoods_2.Enabled = False
+            valu_sfoods_2.Enabled = False
+            valu_sfoods_2.Value = 254
+        ElseIf Check_available_sfoods_2.Checked = False Then
+            Check_NA_sfoods_2.Enabled = True
+            valu_sfoods_2.Enabled = True
+            valu_sfoods_2.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_2_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_2.CheckedChanged
+        If Check_NA_sfoods_2.Checked = True Then
+            Check_available_sfoods_2.Enabled = False
+            valu_sfoods_2.Enabled = False
+            valu_sfoods_2.Value = 253
+        ElseIf Check_NA_sfoods_2.Checked = False Then
+            Check_available_sfoods_2.Enabled = True
+            valu_sfoods_2.Enabled = True
+            valu_sfoods_2.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_3_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_3.CheckedChanged
+        If Check_available_sfoods_3.Checked = True Then
+            Check_NA_sfoods_3.Enabled = False
+            valu_sfoods_3.Enabled = False
+            valu_sfoods_3.Value = 254
+        ElseIf Check_available_sfoods_3.Checked = False Then
+            Check_NA_sfoods_3.Enabled = True
+            valu_sfoods_3.Enabled = True
+            valu_sfoods_3.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_3_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_3.CheckedChanged
+        If Check_NA_sfoods_3.Checked = True Then
+            Check_available_sfoods_3.Enabled = False
+            valu_sfoods_3.Enabled = False
+            valu_sfoods_3.Value = 253
+        ElseIf Check_NA_sfoods_3.Checked = False Then
+            Check_available_sfoods_3.Enabled = True
+            valu_sfoods_3.Enabled = True
+            valu_sfoods_3.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_4_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_4.CheckedChanged
+        If Check_available_sfoods_4.Checked = True Then
+            Check_NA_sfoods_4.Enabled = False
+            valu_sfoods_4.Enabled = False
+            valu_sfoods_4.Value = 254
+        ElseIf Check_available_sfoods_4.Checked = False Then
+            Check_NA_sfoods_4.Enabled = True
+            valu_sfoods_4.Enabled = True
+            valu_sfoods_4.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_4_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_4.CheckedChanged
+        If Check_NA_sfoods_4.Checked = True Then
+            Check_available_sfoods_4.Enabled = False
+            valu_sfoods_4.Enabled = False
+            valu_sfoods_4.Value = 253
+        ElseIf Check_NA_sfoods_4.Checked = False Then
+            Check_available_sfoods_4.Enabled = True
+            valu_sfoods_4.Enabled = True
+            valu_sfoods_4.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_5_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_5.CheckedChanged
+        If Check_available_sfoods_5.Checked = True Then
+            Check_NA_sfoods_5.Enabled = False
+            valu_sfoods_5.Enabled = False
+            valu_sfoods_5.Value = 254
+        ElseIf Check_available_sfoods_5.Checked = False Then
+            Check_NA_sfoods_5.Enabled = True
+            valu_sfoods_5.Enabled = True
+            valu_sfoods_5.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_5_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_5.CheckedChanged
+        If Check_NA_sfoods_5.Checked = True Then
+            Check_available_sfoods_5.Enabled = False
+            valu_sfoods_5.Enabled = False
+            valu_sfoods_5.Value = 253
+        ElseIf Check_NA_sfoods_5.Checked = False Then
+            Check_available_sfoods_5.Enabled = True
+            valu_sfoods_5.Enabled = True
+            valu_sfoods_5.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_6_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_6.CheckedChanged
+        If Check_available_sfoods_6.Checked = True Then
+            Check_NA_sfoods_6.Enabled = False
+            valu_sfoods_6.Enabled = False
+            valu_sfoods_6.Value = 254
+        ElseIf Check_available_sfoods_6.Checked = False Then
+            Check_NA_sfoods_6.Enabled = True
+            valu_sfoods_6.Enabled = True
+            valu_sfoods_6.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_6_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_6.CheckedChanged
+        If Check_NA_sfoods_6.Checked = True Then
+            Check_available_sfoods_6.Enabled = False
+            valu_sfoods_6.Enabled = False
+            valu_sfoods_6.Value = 253
+        ElseIf Check_NA_sfoods_6.Checked = False Then
+            Check_available_sfoods_6.Enabled = True
+            valu_sfoods_6.Enabled = True
+            valu_sfoods_6.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_7_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_7.CheckedChanged
+        If Check_available_sfoods_7.Checked = True Then
+            Check_NA_sfoods_7.Enabled = False
+            valu_sfoods_7.Enabled = False
+            valu_sfoods_7.Value = 254
+        ElseIf Check_available_sfoods_7.Checked = False Then
+            Check_NA_sfoods_7.Enabled = True
+            valu_sfoods_7.Enabled = True
+            valu_sfoods_7.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_7_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_7.CheckedChanged
+        If Check_NA_sfoods_7.Checked = True Then
+            Check_available_sfoods_7.Enabled = False
+            valu_sfoods_7.Enabled = False
+            valu_sfoods_7.Value = 253
+        ElseIf Check_NA_sfoods_7.Checked = False Then
+            Check_available_sfoods_7.Enabled = True
+            valu_sfoods_7.Enabled = True
+            valu_sfoods_7.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_8_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_8.CheckedChanged
+        If Check_available_sfoods_8.Checked = True Then
+            Check_NA_sfoods_8.Enabled = False
+            valu_sfoods_8.Enabled = False
+            valu_sfoods_8.Value = 254
+        ElseIf Check_available_sfoods_8.Checked = False Then
+            Check_NA_sfoods_8.Enabled = True
+            valu_sfoods_8.Enabled = True
+            valu_sfoods_8.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_8_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_8.CheckedChanged
+        If Check_NA_sfoods_8.Checked = True Then
+            Check_available_sfoods_8.Enabled = False
+            valu_sfoods_8.Enabled = False
+            valu_sfoods_8.Value = 253
+        ElseIf Check_NA_sfoods_8.Checked = False Then
+            Check_available_sfoods_8.Enabled = True
+            valu_sfoods_8.Enabled = True
+            valu_sfoods_8.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_9_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_9.CheckedChanged
+        If Check_available_sfoods_9.Checked = True Then
+            Check_NA_sfoods_9.Enabled = False
+            valu_sfoods_9.Enabled = False
+            valu_sfoods_9.Value = 254
+        ElseIf Check_available_sfoods_9.Checked = False Then
+            Check_NA_sfoods_9.Enabled = True
+            valu_sfoods_9.Enabled = True
+            valu_sfoods_9.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_9_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_9.CheckedChanged
+        If Check_NA_sfoods_9.Checked = True Then
+            Check_available_sfoods_9.Enabled = False
+            valu_sfoods_9.Enabled = False
+            valu_sfoods_9.Value = 253
+        ElseIf Check_NA_sfoods_9.Checked = False Then
+            Check_available_sfoods_9.Enabled = True
+            valu_sfoods_9.Enabled = True
+            valu_sfoods_9.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_10_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_10.CheckedChanged
+        If Check_available_sfoods_10.Checked = True Then
+            Check_NA_sfoods_10.Enabled = False
+            valu_sfoods_10.Enabled = False
+            valu_sfoods_10.Value = 254
+        ElseIf Check_available_sfoods_10.Checked = False Then
+            Check_NA_sfoods_10.Enabled = True
+            valu_sfoods_10.Enabled = True
+            valu_sfoods_10.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_10_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_10.CheckedChanged
+        If Check_NA_sfoods_10.Checked = True Then
+            Check_available_sfoods_10.Enabled = False
+            valu_sfoods_10.Enabled = False
+            valu_sfoods_10.Value = 253
+        ElseIf Check_NA_sfoods_10.Checked = False Then
+            Check_available_sfoods_10.Enabled = True
+            valu_sfoods_10.Enabled = True
+            valu_sfoods_10.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_11_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_11.CheckedChanged
+        If Check_available_sfoods_11.Checked = True Then
+            Check_NA_sfoods_11.Enabled = False
+            valu_sfoods_11.Enabled = False
+            valu_sfoods_11.Value = 254
+        ElseIf Check_available_sfoods_11.Checked = False Then
+            Check_NA_sfoods_11.Enabled = True
+            valu_sfoods_11.Enabled = True
+            valu_sfoods_11.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_11_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_11.CheckedChanged
+        If Check_NA_sfoods_11.Checked = True Then
+            Check_available_sfoods_11.Enabled = False
+            valu_sfoods_11.Enabled = False
+            valu_sfoods_11.Value = 253
+        ElseIf Check_NA_sfoods_11.Checked = False Then
+            Check_available_sfoods_11.Enabled = True
+            valu_sfoods_11.Enabled = True
+            valu_sfoods_11.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_12_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_12.CheckedChanged
+        If Check_available_sfoods_12.Checked = True Then
+            Check_NA_sfoods_12.Enabled = False
+            valu_sfoods_12.Enabled = False
+            valu_sfoods_12.Value = 254
+        ElseIf Check_available_sfoods_12.Checked = False Then
+            Check_NA_sfoods_12.Enabled = True
+            valu_sfoods_12.Enabled = True
+            valu_sfoods_12.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_12_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_12.CheckedChanged
+        If Check_NA_sfoods_12.Checked = True Then
+            Check_available_sfoods_12.Enabled = False
+            valu_sfoods_12.Enabled = False
+            valu_sfoods_12.Value = 253
+        ElseIf Check_NA_sfoods_12.Checked = False Then
+            Check_available_sfoods_12.Enabled = True
+            valu_sfoods_12.Enabled = True
+            valu_sfoods_12.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_13_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_13.CheckedChanged
+        If Check_available_sfoods_13.Checked = True Then
+            Check_NA_sfoods_13.Enabled = False
+            valu_sfoods_13.Enabled = False
+            valu_sfoods_13.Value = 254
+        ElseIf Check_available_sfoods_13.Checked = False Then
+            Check_NA_sfoods_13.Enabled = True
+            valu_sfoods_13.Enabled = True
+            valu_sfoods_13.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_13_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_13.CheckedChanged
+        If Check_NA_sfoods_13.Checked = True Then
+            Check_available_sfoods_13.Enabled = False
+            valu_sfoods_13.Enabled = False
+            valu_sfoods_13.Value = 253
+        ElseIf Check_NA_sfoods_13.Checked = False Then
+            Check_available_sfoods_13.Enabled = True
+            valu_sfoods_13.Enabled = True
+            valu_sfoods_13.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_14_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_14.CheckedChanged
+        If Check_available_sfoods_14.Checked = True Then
+            Check_NA_sfoods_14.Enabled = False
+            valu_sfoods_14.Enabled = False
+            valu_sfoods_14.Value = 254
+        ElseIf Check_available_sfoods_14.Checked = False Then
+            Check_NA_sfoods_14.Enabled = True
+            valu_sfoods_14.Enabled = True
+            valu_sfoods_14.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_14_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_14.CheckedChanged
+        If Check_NA_sfoods_14.Checked = True Then
+            Check_available_sfoods_14.Enabled = False
+            valu_sfoods_14.Enabled = False
+            valu_sfoods_14.Value = 253
+        ElseIf Check_NA_sfoods_14.Checked = False Then
+            Check_available_sfoods_14.Enabled = True
+            valu_sfoods_14.Enabled = True
+            valu_sfoods_14.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_15_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_15.CheckedChanged
+        If Check_available_sfoods_15.Checked = True Then
+            Check_NA_sfoods_15.Enabled = False
+            valu_sfoods_15.Enabled = False
+            valu_sfoods_15.Value = 254
+        ElseIf Check_available_sfoods_15.Checked = False Then
+            Check_NA_sfoods_15.Enabled = True
+            valu_sfoods_15.Enabled = True
+            valu_sfoods_15.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_15_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_15.CheckedChanged
+        If Check_NA_sfoods_15.Checked = True Then
+            Check_available_sfoods_15.Enabled = False
+            valu_sfoods_15.Enabled = False
+            valu_sfoods_15.Value = 253
+        ElseIf Check_NA_sfoods_15.Checked = False Then
+            Check_available_sfoods_15.Enabled = True
+            valu_sfoods_15.Enabled = True
+            valu_sfoods_15.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_16_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_16.CheckedChanged
+        If Check_available_sfoods_16.Checked = True Then
+            Check_NA_sfoods_16.Enabled = False
+            valu_sfoods_16.Enabled = False
+            valu_sfoods_16.Value = 254
+        ElseIf Check_available_sfoods_16.Checked = False Then
+            Check_NA_sfoods_16.Enabled = True
+            valu_sfoods_16.Enabled = True
+            valu_sfoods_16.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_16_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_16.CheckedChanged
+        If Check_NA_sfoods_16.Checked = True Then
+            Check_available_sfoods_16.Enabled = False
+            valu_sfoods_16.Enabled = False
+            valu_sfoods_16.Value = 253
+        ElseIf Check_NA_sfoods_16.Checked = False Then
+            Check_available_sfoods_16.Enabled = True
+            valu_sfoods_16.Enabled = True
+            valu_sfoods_16.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_17_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_17.CheckedChanged
+        If Check_available_sfoods_17.Checked = True Then
+            Check_NA_sfoods_17.Enabled = False
+            valu_sfoods_17.Enabled = False
+            valu_sfoods_17.Value = 254
+        ElseIf Check_available_sfoods_17.Checked = False Then
+            Check_NA_sfoods_17.Enabled = True
+            valu_sfoods_17.Enabled = True
+            valu_sfoods_17.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_17_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_17.CheckedChanged
+        If Check_NA_sfoods_17.Checked = True Then
+            Check_available_sfoods_17.Enabled = False
+            valu_sfoods_17.Enabled = False
+            valu_sfoods_17.Value = 253
+        ElseIf Check_NA_sfoods_17.Checked = False Then
+            Check_available_sfoods_17.Enabled = True
+            valu_sfoods_17.Enabled = True
+            valu_sfoods_17.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_18_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_18.CheckedChanged
+        If Check_available_sfoods_18.Checked = True Then
+            Check_NA_sfoods_18.Enabled = False
+            valu_sfoods_18.Enabled = False
+            valu_sfoods_18.Value = 254
+        ElseIf Check_available_sfoods_18.Checked = False Then
+            Check_NA_sfoods_18.Enabled = True
+            valu_sfoods_18.Enabled = True
+            valu_sfoods_18.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_18_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_18.CheckedChanged
+        If Check_NA_sfoods_18.Checked = True Then
+            Check_available_sfoods_18.Enabled = False
+            valu_sfoods_18.Enabled = False
+            valu_sfoods_18.Value = 253
+        ElseIf Check_NA_sfoods_18.Checked = False Then
+            Check_available_sfoods_18.Enabled = True
+            valu_sfoods_18.Enabled = True
+            valu_sfoods_18.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_19_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_19.CheckedChanged
+        If Check_available_sfoods_19.Checked = True Then
+            Check_NA_sfoods_19.Enabled = False
+            valu_sfoods_19.Enabled = False
+            valu_sfoods_19.Value = 254
+        ElseIf Check_available_sfoods_19.Checked = False Then
+            Check_NA_sfoods_19.Enabled = True
+            valu_sfoods_19.Enabled = True
+            valu_sfoods_19.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_19_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_19.CheckedChanged
+        If Check_NA_sfoods_19.Checked = True Then
+            Check_available_sfoods_19.Enabled = False
+            valu_sfoods_19.Enabled = False
+            valu_sfoods_19.Value = 253
+        ElseIf Check_NA_sfoods_19.Checked = False Then
+            Check_available_sfoods_19.Enabled = True
+            valu_sfoods_19.Enabled = True
+            valu_sfoods_19.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_20_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_20.CheckedChanged
+        If Check_available_sfoods_20.Checked = True Then
+            Check_NA_sfoods_20.Enabled = False
+            valu_sfoods_20.Enabled = False
+            valu_sfoods_20.Value = 254
+        ElseIf Check_available_sfoods_20.Checked = False Then
+            Check_NA_sfoods_20.Enabled = True
+            valu_sfoods_20.Enabled = True
+            valu_sfoods_20.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_20_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_20.CheckedChanged
+        If Check_NA_sfoods_20.Checked = True Then
+            Check_available_sfoods_20.Enabled = False
+            valu_sfoods_20.Enabled = False
+            valu_sfoods_20.Value = 253
+        ElseIf Check_NA_sfoods_20.Checked = False Then
+            Check_available_sfoods_20.Enabled = True
+            valu_sfoods_20.Enabled = True
+            valu_sfoods_20.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_21_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_21.CheckedChanged
+        If Check_available_sfoods_21.Checked = True Then
+            Check_NA_sfoods_21.Enabled = False
+            valu_sfoods_21.Enabled = False
+            valu_sfoods_21.Value = 254
+        ElseIf Check_available_sfoods_21.Checked = False Then
+            Check_NA_sfoods_21.Enabled = True
+            valu_sfoods_21.Enabled = True
+            valu_sfoods_21.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_21_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_21.CheckedChanged
+        If Check_NA_sfoods_21.Checked = True Then
+            Check_available_sfoods_21.Enabled = False
+            valu_sfoods_21.Enabled = False
+            valu_sfoods_21.Value = 253
+        ElseIf Check_NA_sfoods_21.Checked = False Then
+            Check_available_sfoods_21.Enabled = True
+            valu_sfoods_21.Enabled = True
+            valu_sfoods_21.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_22_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_22.CheckedChanged
+        If Check_available_sfoods_22.Checked = True Then
+            Check_NA_sfoods_22.Enabled = False
+            valu_sfoods_22.Enabled = False
+            valu_sfoods_22.Value = 254
+        ElseIf Check_available_sfoods_22.Checked = False Then
+            Check_NA_sfoods_22.Enabled = True
+            valu_sfoods_22.Enabled = True
+            valu_sfoods_22.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_22_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_22.CheckedChanged
+        If Check_NA_sfoods_22.Checked = True Then
+            Check_available_sfoods_22.Enabled = False
+            valu_sfoods_22.Enabled = False
+            valu_sfoods_22.Value = 253
+        ElseIf Check_NA_sfoods_22.Checked = False Then
+            Check_available_sfoods_22.Enabled = True
+            valu_sfoods_22.Enabled = True
+            valu_sfoods_22.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_23_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_23.CheckedChanged
+        If Check_available_sfoods_23.Checked = True Then
+            Check_NA_sfoods_23.Enabled = False
+            valu_sfoods_23.Enabled = False
+            valu_sfoods_23.Value = 254
+        ElseIf Check_available_sfoods_23.Checked = False Then
+            Check_NA_sfoods_23.Enabled = True
+            valu_sfoods_23.Enabled = True
+            valu_sfoods_23.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_23_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_23.CheckedChanged
+        If Check_NA_sfoods_23.Checked = True Then
+            Check_available_sfoods_23.Enabled = False
+            valu_sfoods_23.Enabled = False
+            valu_sfoods_23.Value = 253
+        ElseIf Check_NA_sfoods_23.Checked = False Then
+            Check_available_sfoods_23.Enabled = True
+            valu_sfoods_23.Enabled = True
+            valu_sfoods_23.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_24_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_24.CheckedChanged
+        If Check_available_sfoods_24.Checked = True Then
+            Check_NA_sfoods_24.Enabled = False
+            valu_sfoods_24.Enabled = False
+            valu_sfoods_24.Value = 254
+        ElseIf Check_available_sfoods_24.Checked = False Then
+            Check_NA_sfoods_24.Enabled = True
+            valu_sfoods_24.Enabled = True
+            valu_sfoods_24.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_24_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_24.CheckedChanged
+        If Check_NA_sfoods_24.Checked = True Then
+            Check_available_sfoods_24.Enabled = False
+            valu_sfoods_24.Enabled = False
+            valu_sfoods_24.Value = 253
+        ElseIf Check_NA_sfoods_24.Checked = False Then
+            Check_available_sfoods_24.Enabled = True
+            valu_sfoods_24.Enabled = True
+            valu_sfoods_24.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_25_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_25.CheckedChanged
+        If Check_available_sfoods_25.Checked = True Then
+            Check_NA_sfoods_25.Enabled = False
+            valu_sfoods_25.Enabled = False
+            valu_sfoods_25.Value = 254
+        ElseIf Check_available_sfoods_25.Checked = False Then
+            Check_NA_sfoods_25.Enabled = True
+            valu_sfoods_25.Enabled = True
+            valu_sfoods_25.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_25_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_25.CheckedChanged
+        If Check_NA_sfoods_25.Checked = True Then
+            Check_available_sfoods_25.Enabled = False
+            valu_sfoods_25.Enabled = False
+            valu_sfoods_25.Value = 253
+        ElseIf Check_NA_sfoods_25.Checked = False Then
+            Check_available_sfoods_25.Enabled = True
+            valu_sfoods_25.Enabled = True
+            valu_sfoods_25.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_26_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_26.CheckedChanged
+        If Check_available_sfoods_26.Checked = True Then
+            Check_NA_sfoods_26.Enabled = False
+            valu_sfoods_26.Enabled = False
+            valu_sfoods_26.Value = 254
+        ElseIf Check_available_sfoods_26.Checked = False Then
+            Check_NA_sfoods_26.Enabled = True
+            valu_sfoods_26.Enabled = True
+            valu_sfoods_26.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_26_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_26.CheckedChanged
+        If Check_NA_sfoods_26.Checked = True Then
+            Check_available_sfoods_26.Enabled = False
+            valu_sfoods_26.Enabled = False
+            valu_sfoods_26.Value = 253
+        ElseIf Check_NA_sfoods_26.Checked = False Then
+            Check_available_sfoods_26.Enabled = True
+            valu_sfoods_26.Enabled = True
+            valu_sfoods_26.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_27_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_27.CheckedChanged
+        If Check_available_sfoods_27.Checked = True Then
+            Check_NA_sfoods_27.Enabled = False
+            valu_sfoods_27.Enabled = False
+            valu_sfoods_27.Value = 254
+        ElseIf Check_available_sfoods_27.Checked = False Then
+            Check_NA_sfoods_27.Enabled = True
+            valu_sfoods_27.Enabled = True
+            valu_sfoods_27.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_27_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_27.CheckedChanged
+        If Check_NA_sfoods_27.Checked = True Then
+            Check_available_sfoods_27.Enabled = False
+            valu_sfoods_27.Enabled = False
+            valu_sfoods_27.Value = 253
+        ElseIf Check_NA_sfoods_27.Checked = False Then
+            Check_available_sfoods_27.Enabled = True
+            valu_sfoods_27.Enabled = True
+            valu_sfoods_27.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_28_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_28.CheckedChanged
+        If Check_available_sfoods_28.Checked = True Then
+            Check_NA_sfoods_28.Enabled = False
+            valu_sfoods_28.Enabled = False
+            valu_sfoods_28.Value = 254
+        ElseIf Check_available_sfoods_28.Checked = False Then
+            Check_NA_sfoods_28.Enabled = True
+            valu_sfoods_28.Enabled = True
+            valu_sfoods_28.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_28_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_28.CheckedChanged
+        If Check_NA_sfoods_28.Checked = True Then
+            Check_available_sfoods_28.Enabled = False
+            valu_sfoods_28.Enabled = False
+            valu_sfoods_28.Value = 253
+        ElseIf Check_NA_sfoods_28.Checked = False Then
+            Check_available_sfoods_28.Enabled = True
+            valu_sfoods_28.Enabled = True
+            valu_sfoods_28.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_29_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_29.CheckedChanged
+        If Check_available_sfoods_29.Checked = True Then
+            Check_NA_sfoods_29.Enabled = False
+            valu_sfoods_29.Enabled = False
+            valu_sfoods_29.Value = 254
+        ElseIf Check_available_sfoods_29.Checked = False Then
+            Check_NA_sfoods_29.Enabled = True
+            valu_sfoods_29.Enabled = True
+            valu_sfoods_29.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_29_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_29.CheckedChanged
+        If Check_NA_sfoods_29.Checked = True Then
+            Check_available_sfoods_29.Enabled = False
+            valu_sfoods_29.Enabled = False
+            valu_sfoods_29.Value = 253
+        ElseIf Check_NA_sfoods_29.Checked = False Then
+            Check_available_sfoods_29.Enabled = True
+            valu_sfoods_29.Enabled = True
+            valu_sfoods_29.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_30_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_30.CheckedChanged
+        If Check_available_sfoods_30.Checked = True Then
+            Check_NA_sfoods_30.Enabled = False
+            valu_sfoods_30.Enabled = False
+            valu_sfoods_30.Value = 254
+        ElseIf Check_available_sfoods_30.Checked = False Then
+            Check_NA_sfoods_30.Enabled = True
+            valu_sfoods_30.Enabled = True
+            valu_sfoods_30.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_30_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_30.CheckedChanged
+        If Check_NA_sfoods_30.Checked = True Then
+            Check_available_sfoods_30.Enabled = False
+            valu_sfoods_30.Enabled = False
+            valu_sfoods_30.Value = 253
+        ElseIf Check_NA_sfoods_30.Checked = False Then
+            Check_available_sfoods_30.Enabled = True
+            valu_sfoods_30.Enabled = True
+            valu_sfoods_30.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_31_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_31.CheckedChanged
+        If Check_available_sfoods_31.Checked = True Then
+            Check_NA_sfoods_31.Enabled = False
+            valu_sfoods_31.Enabled = False
+            valu_sfoods_31.Value = 254
+        ElseIf Check_available_sfoods_31.Checked = False Then
+            Check_NA_sfoods_31.Enabled = True
+            valu_sfoods_31.Enabled = True
+            valu_sfoods_31.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_31_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_31.CheckedChanged
+        If Check_NA_sfoods_31.Checked = True Then
+            Check_available_sfoods_31.Enabled = False
+            valu_sfoods_31.Enabled = False
+            valu_sfoods_31.Value = 253
+        ElseIf Check_NA_sfoods_31.Checked = False Then
+            Check_available_sfoods_31.Enabled = True
+            valu_sfoods_31.Enabled = True
+            valu_sfoods_31.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_32_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_32.CheckedChanged
+        If Check_available_sfoods_32.Checked = True Then
+            Check_NA_sfoods_32.Enabled = False
+            valu_sfoods_32.Enabled = False
+            valu_sfoods_32.Value = 254
+        ElseIf Check_available_sfoods_32.Checked = False Then
+            Check_NA_sfoods_32.Enabled = True
+            valu_sfoods_32.Enabled = True
+            valu_sfoods_32.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_32_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_32.CheckedChanged
+        If Check_NA_sfoods_32.Checked = True Then
+            Check_available_sfoods_32.Enabled = False
+            valu_sfoods_32.Enabled = False
+            valu_sfoods_32.Value = 253
+        ElseIf Check_NA_sfoods_32.Checked = False Then
+            Check_available_sfoods_32.Enabled = True
+            valu_sfoods_32.Enabled = True
+            valu_sfoods_32.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_33_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_33.CheckedChanged
+        If Check_available_sfoods_33.Checked = True Then
+            Check_NA_sfoods_33.Enabled = False
+            valu_sfoods_33.Enabled = False
+            valu_sfoods_33.Value = 254
+        ElseIf Check_available_sfoods_33.Checked = False Then
+            Check_NA_sfoods_33.Enabled = True
+            valu_sfoods_33.Enabled = True
+            valu_sfoods_33.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_33_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_33.CheckedChanged
+        If Check_NA_sfoods_33.Checked = True Then
+            Check_available_sfoods_33.Enabled = False
+            valu_sfoods_33.Enabled = False
+            valu_sfoods_33.Value = 253
+        ElseIf Check_NA_sfoods_33.Checked = False Then
+            Check_available_sfoods_33.Enabled = True
+            valu_sfoods_33.Enabled = True
+            valu_sfoods_33.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_34_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_34.CheckedChanged
+        If Check_available_sfoods_34.Checked = True Then
+            Check_NA_sfoods_34.Enabled = False
+            valu_sfoods_34.Enabled = False
+            valu_sfoods_34.Value = 254
+        ElseIf Check_available_sfoods_34.Checked = False Then
+            Check_NA_sfoods_34.Enabled = True
+            valu_sfoods_34.Enabled = True
+            valu_sfoods_34.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_34_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_34.CheckedChanged
+        If Check_NA_sfoods_34.Checked = True Then
+            Check_available_sfoods_34.Enabled = False
+            valu_sfoods_34.Enabled = False
+            valu_sfoods_34.Value = 253
+        ElseIf Check_NA_sfoods_34.Checked = False Then
+            Check_available_sfoods_34.Enabled = True
+            valu_sfoods_34.Enabled = True
+            valu_sfoods_34.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_35_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_35.CheckedChanged
+        If Check_available_sfoods_35.Checked = True Then
+            Check_NA_sfoods_35.Enabled = False
+            valu_sfoods_35.Enabled = False
+            valu_sfoods_35.Value = 254
+        ElseIf Check_available_sfoods_35.Checked = False Then
+            Check_NA_sfoods_35.Enabled = True
+            valu_sfoods_35.Enabled = True
+            valu_sfoods_35.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_35_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_35.CheckedChanged
+        If Check_NA_sfoods_35.Checked = True Then
+            Check_available_sfoods_35.Enabled = False
+            valu_sfoods_35.Enabled = False
+            valu_sfoods_35.Value = 253
+        ElseIf Check_NA_sfoods_35.Checked = False Then
+            Check_available_sfoods_35.Enabled = True
+            valu_sfoods_35.Enabled = True
+            valu_sfoods_35.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_36_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_36.CheckedChanged
+        If Check_available_sfoods_36.Checked = True Then
+            Check_NA_sfoods_36.Enabled = False
+            valu_sfoods_36.Enabled = False
+            valu_sfoods_36.Value = 254
+        ElseIf Check_available_sfoods_36.Checked = False Then
+            Check_NA_sfoods_36.Enabled = True
+            valu_sfoods_36.Enabled = True
+            valu_sfoods_36.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_36_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_36.CheckedChanged
+        If Check_NA_sfoods_36.Checked = True Then
+            Check_available_sfoods_36.Enabled = False
+            valu_sfoods_36.Enabled = False
+            valu_sfoods_36.Value = 253
+        ElseIf Check_NA_sfoods_36.Checked = False Then
+            Check_available_sfoods_36.Enabled = True
+            valu_sfoods_36.Enabled = True
+            valu_sfoods_36.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_37_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_37.CheckedChanged
+        If Check_available_sfoods_37.Checked = True Then
+            Check_NA_sfoods_37.Enabled = False
+            valu_sfoods_37.Enabled = False
+            valu_sfoods_37.Value = 254
+        ElseIf Check_available_sfoods_37.Checked = False Then
+            Check_NA_sfoods_37.Enabled = True
+            valu_sfoods_37.Enabled = True
+            valu_sfoods_37.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_37_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_37.CheckedChanged
+        If Check_NA_sfoods_37.Checked = True Then
+            Check_available_sfoods_37.Enabled = False
+            valu_sfoods_37.Enabled = False
+            valu_sfoods_37.Value = 253
+        ElseIf Check_NA_sfoods_37.Checked = False Then
+            Check_available_sfoods_37.Enabled = True
+            valu_sfoods_37.Enabled = True
+            valu_sfoods_37.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_38_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_38.CheckedChanged
+        If Check_available_sfoods_38.Checked = True Then
+            Check_NA_sfoods_38.Enabled = False
+            valu_sfoods_38.Enabled = False
+            valu_sfoods_38.Value = 254
+        ElseIf Check_available_sfoods_38.Checked = False Then
+            Check_NA_sfoods_38.Enabled = True
+            valu_sfoods_38.Enabled = True
+            valu_sfoods_38.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_38_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_38.CheckedChanged
+        If Check_NA_sfoods_38.Checked = True Then
+            Check_available_sfoods_38.Enabled = False
+            valu_sfoods_38.Enabled = False
+            valu_sfoods_38.Value = 253
+        ElseIf Check_NA_sfoods_38.Checked = False Then
+            Check_available_sfoods_38.Enabled = True
+            valu_sfoods_38.Enabled = True
+            valu_sfoods_38.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_39_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_39.CheckedChanged
+        If Check_available_sfoods_39.Checked = True Then
+            Check_NA_sfoods_39.Enabled = False
+            valu_sfoods_39.Enabled = False
+            valu_sfoods_39.Value = 254
+        ElseIf Check_available_sfoods_39.Checked = False Then
+            Check_NA_sfoods_39.Enabled = True
+            valu_sfoods_39.Enabled = True
+            valu_sfoods_39.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_39_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_39.CheckedChanged
+        If Check_NA_sfoods_39.Checked = True Then
+            Check_available_sfoods_39.Enabled = False
+            valu_sfoods_39.Enabled = False
+            valu_sfoods_39.Value = 253
+        ElseIf Check_NA_sfoods_39.Checked = False Then
+            Check_available_sfoods_39.Enabled = True
+            valu_sfoods_39.Enabled = True
+            valu_sfoods_39.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_40_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_40.CheckedChanged
+        If Check_available_sfoods_40.Checked = True Then
+            Check_NA_sfoods_40.Enabled = False
+            valu_sfoods_40.Enabled = False
+            valu_sfoods_40.Value = 254
+        ElseIf Check_available_sfoods_40.Checked = False Then
+            Check_NA_sfoods_40.Enabled = True
+            valu_sfoods_40.Enabled = True
+            valu_sfoods_40.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_40_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_40.CheckedChanged
+        If Check_NA_sfoods_40.Checked = True Then
+            Check_available_sfoods_40.Enabled = False
+            valu_sfoods_40.Enabled = False
+            valu_sfoods_40.Value = 253
+        ElseIf Check_NA_sfoods_40.Checked = False Then
+            Check_available_sfoods_40.Enabled = True
+            valu_sfoods_40.Enabled = True
+            valu_sfoods_40.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_41_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_41.CheckedChanged
+        If Check_available_sfoods_41.Checked = True Then
+            Check_NA_sfoods_41.Enabled = False
+            valu_sfoods_41.Enabled = False
+            valu_sfoods_41.Value = 254
+        ElseIf Check_available_sfoods_41.Checked = False Then
+            Check_NA_sfoods_41.Enabled = True
+            valu_sfoods_41.Enabled = True
+            valu_sfoods_41.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_41_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_41.CheckedChanged
+        If Check_NA_sfoods_41.Checked = True Then
+            Check_available_sfoods_41.Enabled = False
+            valu_sfoods_41.Enabled = False
+            valu_sfoods_41.Value = 253
+        ElseIf Check_NA_sfoods_41.Checked = False Then
+            Check_available_sfoods_41.Enabled = True
+            valu_sfoods_41.Enabled = True
+            valu_sfoods_41.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_42_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_42.CheckedChanged
+        If Check_available_sfoods_42.Checked = True Then
+            Check_NA_sfoods_42.Enabled = False
+            valu_sfoods_42.Enabled = False
+            valu_sfoods_42.Value = 254
+        ElseIf Check_available_sfoods_42.Checked = False Then
+            Check_NA_sfoods_42.Enabled = True
+            valu_sfoods_42.Enabled = True
+            valu_sfoods_42.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_42_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_42.CheckedChanged
+        If Check_NA_sfoods_42.Checked = True Then
+            Check_available_sfoods_42.Enabled = False
+            valu_sfoods_42.Enabled = False
+            valu_sfoods_42.Value = 253
+        ElseIf Check_NA_sfoods_42.Checked = False Then
+            Check_available_sfoods_42.Enabled = True
+            valu_sfoods_42.Enabled = True
+            valu_sfoods_42.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_43_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_43.CheckedChanged
+        If Check_available_sfoods_43.Checked = True Then
+            Check_NA_sfoods_43.Enabled = False
+            valu_sfoods_43.Enabled = False
+            valu_sfoods_43.Value = 254
+        ElseIf Check_available_sfoods_43.Checked = False Then
+            Check_NA_sfoods_43.Enabled = True
+            valu_sfoods_43.Enabled = True
+            valu_sfoods_43.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_43_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_43.CheckedChanged
+        If Check_NA_sfoods_43.Checked = True Then
+            Check_available_sfoods_43.Enabled = False
+            valu_sfoods_43.Enabled = False
+            valu_sfoods_43.Value = 253
+        ElseIf Check_NA_sfoods_43.Checked = False Then
+            Check_available_sfoods_43.Enabled = True
+            valu_sfoods_43.Enabled = True
+            valu_sfoods_43.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_44_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_44.CheckedChanged
+        If Check_available_sfoods_44.Checked = True Then
+            Check_NA_sfoods_44.Enabled = False
+            valu_sfoods_44.Enabled = False
+            valu_sfoods_44.Value = 254
+        ElseIf Check_available_sfoods_44.Checked = False Then
+            Check_NA_sfoods_44.Enabled = True
+            valu_sfoods_44.Enabled = True
+            valu_sfoods_44.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_44_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_44.CheckedChanged
+        If Check_NA_sfoods_44.Checked = True Then
+            Check_available_sfoods_44.Enabled = False
+            valu_sfoods_44.Enabled = False
+            valu_sfoods_44.Value = 253
+        ElseIf Check_NA_sfoods_44.Checked = False Then
+            Check_available_sfoods_44.Enabled = True
+            valu_sfoods_44.Enabled = True
+            valu_sfoods_44.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_45_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_45.CheckedChanged
+        If Check_available_sfoods_45.Checked = True Then
+            Check_NA_sfoods_45.Enabled = False
+            valu_sfoods_45.Enabled = False
+            valu_sfoods_45.Value = 254
+        ElseIf Check_available_sfoods_45.Checked = False Then
+            Check_NA_sfoods_45.Enabled = True
+            valu_sfoods_45.Enabled = True
+            valu_sfoods_45.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_45_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_45.CheckedChanged
+        If Check_NA_sfoods_45.Checked = True Then
+            Check_available_sfoods_45.Enabled = False
+            valu_sfoods_45.Enabled = False
+            valu_sfoods_45.Value = 253
+        ElseIf Check_NA_sfoods_45.Checked = False Then
+            Check_available_sfoods_45.Enabled = True
+            valu_sfoods_45.Enabled = True
+            valu_sfoods_45.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_46_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_46.CheckedChanged
+        If Check_available_sfoods_46.Checked = True Then
+            Check_NA_sfoods_46.Enabled = False
+            valu_sfoods_46.Enabled = False
+            valu_sfoods_46.Value = 254
+        ElseIf Check_available_sfoods_46.Checked = False Then
+            Check_NA_sfoods_46.Enabled = True
+            valu_sfoods_46.Enabled = True
+            valu_sfoods_46.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_46_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_46.CheckedChanged
+        If Check_NA_sfoods_46.Checked = True Then
+            Check_available_sfoods_46.Enabled = False
+            valu_sfoods_46.Enabled = False
+            valu_sfoods_46.Value = 253
+        ElseIf Check_NA_sfoods_46.Checked = False Then
+            Check_available_sfoods_46.Enabled = True
+            valu_sfoods_46.Enabled = True
+            valu_sfoods_46.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_47_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_47.CheckedChanged
+        If Check_available_sfoods_47.Checked = True Then
+            Check_NA_sfoods_47.Enabled = False
+            valu_sfoods_47.Enabled = False
+            valu_sfoods_47.Value = 254
+        ElseIf Check_available_sfoods_47.Checked = False Then
+            Check_NA_sfoods_47.Enabled = True
+            valu_sfoods_47.Enabled = True
+            valu_sfoods_47.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_47_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_47.CheckedChanged
+        If Check_NA_sfoods_47.Checked = True Then
+            Check_available_sfoods_47.Enabled = False
+            valu_sfoods_47.Enabled = False
+            valu_sfoods_47.Value = 253
+        ElseIf Check_NA_sfoods_47.Checked = False Then
+            Check_available_sfoods_47.Enabled = True
+            valu_sfoods_47.Enabled = True
+            valu_sfoods_47.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_available_sfoods_48_CheckedChanged(sender As Object, e As EventArgs) Handles Check_available_sfoods_48.CheckedChanged
+        If Check_available_sfoods_48.Checked = True Then
+            Check_NA_sfoods_48.Enabled = False
+            valu_sfoods_48.Enabled = False
+            valu_sfoods_48.Value = 254
+        ElseIf Check_available_sfoods_48.Checked = False Then
+            Check_NA_sfoods_48.Enabled = True
+            valu_sfoods_48.Enabled = True
+            valu_sfoods_48.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_NA_sfoods_48_CheckedChanged(sender As Object, e As EventArgs) Handles Check_NA_sfoods_48.CheckedChanged
+        If Check_NA_sfoods_48.Checked = True Then
+            Check_available_sfoods_48.Enabled = False
+            valu_sfoods_48.Enabled = False
+            valu_sfoods_48.Value = 253
+        ElseIf Check_NA_sfoods_48.Checked = False Then
+            Check_available_sfoods_48.Enabled = True
+            valu_sfoods_48.Enabled = True
+            valu_sfoods_48.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_closesave_Click(sender As Object, e As EventArgs) Handles Icon_closesave.Click
+        Try
+            writegoodsitems()
+            If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+                fdialog.Text_fdialog.Text = "Editing of items has been successfully saved"
+                fdialog.ShowDialog()
+            End If
+            If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+                fdialog.Text_fdialog.Text = "L'édition des objets a été sauvegardé avec succès"
+                fdialog.ShowDialog()
+            End If
+            Me.Close()
+            TL_SaveEditor.Show()
+        Catch ex As Exception
+            If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+                fdialog.Text_fdialog.Text = "An error has occured when writing editing of items, please report this issue"
+                fdialog.ShowDialog()
+            End If
+            If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+                fdialog.Text_fdialog.Text = "Une erreur est survenue lors de l'écriture de l'édition des objets, veuillez signaler cet erreur s'il vous plaît"
+                fdialog.ShowDialog()
+            End If
+        End Try
     End Sub
 End Class

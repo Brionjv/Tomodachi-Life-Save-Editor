@@ -24,197 +24,197 @@ Partial Class Items_edit
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Items_edit))
         Me.Panel_specialfoods = New System.Windows.Forms.Panel()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_48 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_48 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_48 = New System.Windows.Forms.CheckBox()
         Me.PictureBox41 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown42 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox83 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox84 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_47 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_47 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_47 = New System.Windows.Forms.CheckBox()
         Me.PictureBox42 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown43 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox85 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox86 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_46 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_46 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_46 = New System.Windows.Forms.CheckBox()
         Me.PictureBox43 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown44 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox87 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox88 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_45 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_45 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_45 = New System.Windows.Forms.CheckBox()
         Me.PictureBox44 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown45 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox89 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox90 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_44 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_44 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_44 = New System.Windows.Forms.CheckBox()
         Me.PictureBox45 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown46 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox91 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox92 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_43 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_43 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_43 = New System.Windows.Forms.CheckBox()
         Me.PictureBox46 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown47 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox93 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox94 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_42 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_42 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_42 = New System.Windows.Forms.CheckBox()
         Me.PictureBox47 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown48 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox95 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox96 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_41 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_41 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_41 = New System.Windows.Forms.CheckBox()
         Me.PictureBox48 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown22 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox43 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox44 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_40 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_40 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_40 = New System.Windows.Forms.CheckBox()
         Me.PictureBox36 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown23 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox45 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox46 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_39 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_39 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_39 = New System.Windows.Forms.CheckBox()
         Me.PictureBox37 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown24 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox47 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox48 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_38 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_38 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_38 = New System.Windows.Forms.CheckBox()
         Me.PictureBox38 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown25 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox49 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox50 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_37 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_37 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_37 = New System.Windows.Forms.CheckBox()
         Me.PictureBox39 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown26 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox51 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox52 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_36 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_36 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_36 = New System.Windows.Forms.CheckBox()
         Me.PictureBox40 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown27 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox53 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox54 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_35 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_35 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_35 = New System.Windows.Forms.CheckBox()
         Me.PictureBox49 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown28 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox55 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox56 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_34 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_34 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_34 = New System.Windows.Forms.CheckBox()
         Me.PictureBox55 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown29 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox57 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox58 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_33 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_33 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_33 = New System.Windows.Forms.CheckBox()
         Me.PictureBox56 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown30 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox59 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox60 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_32 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_32 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_32 = New System.Windows.Forms.CheckBox()
         Me.PictureBox57 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown31 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox61 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox62 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_31 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_31 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_31 = New System.Windows.Forms.CheckBox()
         Me.PictureBox86 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown32 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox63 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox64 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_30 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_30 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_30 = New System.Windows.Forms.CheckBox()
         Me.PictureBox87 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown33 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox65 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox66 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_29 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_29 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_29 = New System.Windows.Forms.CheckBox()
         Me.PictureBox88 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown34 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox67 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox68 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_28 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_28 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_28 = New System.Windows.Forms.CheckBox()
         Me.PictureBox99 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown35 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox69 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox70 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_27 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_27 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_27 = New System.Windows.Forms.CheckBox()
         Me.PictureBox100 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown36 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox71 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox72 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_26 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_26 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_26 = New System.Windows.Forms.CheckBox()
         Me.PictureBox101 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown37 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox73 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox74 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_25 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_25 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_25 = New System.Windows.Forms.CheckBox()
         Me.PictureBox112 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown38 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox75 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox76 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_24 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_24 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_24 = New System.Windows.Forms.CheckBox()
         Me.PictureBox113 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown39 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox77 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox78 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_23 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_23 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_23 = New System.Windows.Forms.CheckBox()
         Me.PictureBox167 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown40 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox79 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox80 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_22 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_22 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_22 = New System.Windows.Forms.CheckBox()
         Me.PictureBox168 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown41 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox81 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox82 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_21 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_21 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_21 = New System.Windows.Forms.CheckBox()
         Me.PictureBox169 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown12 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox23 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox24 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_20 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_20 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_20 = New System.Windows.Forms.CheckBox()
         Me.PictureBox26 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown13 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox25 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox26 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_19 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_19 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_19 = New System.Windows.Forms.CheckBox()
         Me.PictureBox27 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown14 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox27 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox28 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_18 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_18 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_18 = New System.Windows.Forms.CheckBox()
         Me.PictureBox28 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown15 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox29 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox30 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_17 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_17 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_17 = New System.Windows.Forms.CheckBox()
         Me.PictureBox29 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown16 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox31 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox32 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_16 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_16 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_16 = New System.Windows.Forms.CheckBox()
         Me.PictureBox30 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown17 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox33 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox34 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_15 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_15 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_15 = New System.Windows.Forms.CheckBox()
         Me.PictureBox31 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown18 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox35 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox36 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_14 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_14 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_14 = New System.Windows.Forms.CheckBox()
         Me.PictureBox32 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown19 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox37 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox38 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_13 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_13 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_13 = New System.Windows.Forms.CheckBox()
         Me.PictureBox33 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown20 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox39 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox40 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_12 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_12 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_12 = New System.Windows.Forms.CheckBox()
         Me.PictureBox34 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown21 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox41 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox42 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_11 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_11 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_11 = New System.Windows.Forms.CheckBox()
         Me.PictureBox35 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox19 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox20 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_10 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_10 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_10 = New System.Windows.Forms.CheckBox()
         Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown11 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox21 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox22 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_9 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_9 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_9 = New System.Windows.Forms.CheckBox()
         Me.PictureBox25 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_8 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_8 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_8 = New System.Windows.Forms.CheckBox()
         Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown7 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox14 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_7 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_7 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_7 = New System.Windows.Forms.CheckBox()
         Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown8 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox15 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox16 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_6 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_6 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_6 = New System.Windows.Forms.CheckBox()
         Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown9 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox17 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox18 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_5 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_5 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_5 = New System.Windows.Forms.CheckBox()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_4 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_4 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_4 = New System.Windows.Forms.CheckBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_3 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_3 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_3 = New System.Windows.Forms.CheckBox()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_2 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_2 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_2 = New System.Windows.Forms.CheckBox()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.valu_sfoods_1 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_sfoods_1 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_sfoods_1 = New System.Windows.Forms.CheckBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Icon_hats_03 = New System.Windows.Forms.PictureBox()
         Me.Icon_hats_02 = New System.Windows.Forms.PictureBox()
@@ -728,102 +728,103 @@ Partial Class Items_edit
         Me.CheckBox292 = New System.Windows.Forms.CheckBox()
         Me.PictureBox141 = New System.Windows.Forms.PictureBox()
         Me.Icon_interiors_left = New System.Windows.Forms.PictureBox()
+        Me.Icon_closesave = New System.Windows.Forms.PictureBox()
         Me.Panel_specialfoods.SuspendLayout
-        CType(Me.NumericUpDown1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_48,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox41,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown42,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_47,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox42,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown43,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_46,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox43,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown44,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_45,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox44,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown45,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_44,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox45,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown46,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_43,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox46,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown47,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_42,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox47,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown48,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_41,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox48,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown22,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_40,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox36,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown23,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_39,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox37,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown24,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_38,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox38,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown25,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_37,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox39,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown26,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_36,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox40,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown27,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_35,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox49,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown28,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_34,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox55,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown29,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_33,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox56,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown30,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_32,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox57,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown31,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_31,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox86,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown32,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_30,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox87,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown33,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_29,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox88,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown34,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_28,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox99,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown35,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_27,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox100,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown36,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_26,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox101,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown37,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_25,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox112,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown38,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_24,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox113,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown39,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_23,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox167,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown40,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_22,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox168,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown41,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_21,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox169,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown12,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_20,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox26,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown13,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_19,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox27,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown14,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_18,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox28,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown15,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_17,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox29,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown16,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_16,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox30,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown17,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_15,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox31,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown18,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_14,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox32,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown19,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_13,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox33,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown20,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_12,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox34,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown21,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_11,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox35,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_10,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox24,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown11,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_9,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox25,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_8,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox20,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_7,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox21,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_6,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox22,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_5,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox23,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_4,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_3,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox19,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_2,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_1,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_hats_03,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_hats_02,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1093,202 +1094,203 @@ Partial Class Items_edit
         CType(Me.NumericUpDown146,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox141,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_interiors_left,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_closesave,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'Panel_specialfoods
         '
         Me.Panel_specialfoods.BackgroundImage = CType(resources.GetObject("Panel_specialfoods.BackgroundImage"),System.Drawing.Image)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown1)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox1)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox2)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_48)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_48)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_48)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox41)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown42)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox83)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox84)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_47)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_47)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_47)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox42)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown43)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox85)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox86)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_46)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_46)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_46)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox43)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown44)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox87)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox88)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_45)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_45)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_45)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox44)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown45)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox89)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox90)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_44)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_44)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_44)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox45)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown46)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox91)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox92)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_43)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_43)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_43)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox46)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown47)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox93)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox94)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_42)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_42)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_42)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox47)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown48)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox95)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox96)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_41)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_41)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_41)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox48)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown22)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox43)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox44)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_40)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_40)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_40)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox36)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown23)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox45)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox46)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_39)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_39)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_39)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox37)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown24)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox47)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox48)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_38)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_38)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_38)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox38)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown25)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox49)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox50)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_37)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_37)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_37)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox39)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown26)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox51)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox52)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_36)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_36)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_36)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox40)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown27)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox53)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox54)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_35)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_35)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_35)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox49)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown28)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox55)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox56)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_34)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_34)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_34)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox55)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown29)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox57)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox58)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_33)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_33)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_33)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox56)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown30)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox59)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox60)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_32)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_32)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_32)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox57)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown31)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox61)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox62)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_31)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_31)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_31)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox86)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown32)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox63)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox64)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_30)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_30)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_30)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox87)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown33)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox65)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox66)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_29)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_29)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_29)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox88)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown34)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox67)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox68)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_28)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_28)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_28)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox99)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown35)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox69)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox70)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_27)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_27)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_27)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox100)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown36)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox71)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox72)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_26)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_26)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_26)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox101)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown37)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox73)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox74)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_25)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_25)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_25)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox112)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown38)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox75)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox76)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_24)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_24)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_24)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox113)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown39)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox77)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox78)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_23)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_23)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_23)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox167)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown40)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox79)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox80)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_22)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_22)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_22)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox168)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown41)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox81)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox82)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_21)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_21)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_21)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox169)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown12)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox23)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox24)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_20)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_20)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_20)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox26)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown13)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox25)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox26)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_19)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_19)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_19)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox27)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown14)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox27)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox28)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_18)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_18)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_18)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox28)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown15)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox29)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox30)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_17)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_17)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_17)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox29)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown16)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox31)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox32)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_16)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_16)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_16)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox30)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown17)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox33)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox34)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_15)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_15)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_15)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox31)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown18)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox35)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox36)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_14)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_14)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_14)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox32)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown19)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox37)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox38)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_13)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_13)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_13)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox33)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown20)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox39)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox40)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_12)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_12)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_12)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox34)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown21)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox41)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox42)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_11)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_11)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_11)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox35)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown10)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox19)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox20)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_10)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_10)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_10)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox24)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown11)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox21)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox22)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_9)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_9)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_9)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox25)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown6)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox11)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox12)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_8)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_8)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_8)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox20)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown7)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox13)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox14)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_7)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_7)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_7)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox21)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown8)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox15)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox16)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_6)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_6)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_6)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox22)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown9)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox17)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox18)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_5)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_5)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_5)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox23)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown4)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox7)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox8)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_4)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_4)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_4)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox8)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown5)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox9)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox10)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_3)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_3)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_3)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox19)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown3)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox5)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox6)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_2)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_2)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_2)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox7)
-        Me.Panel_specialfoods.Controls.Add(Me.NumericUpDown2)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox3)
-        Me.Panel_specialfoods.Controls.Add(Me.CheckBox4)
+        Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_1)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_1)
+        Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_1)
         Me.Panel_specialfoods.Controls.Add(Me.PictureBox6)
         Me.Panel_specialfoods.Location = New System.Drawing.Point(1, 37)
         Me.Panel_specialfoods.Name = "Panel_specialfoods"
@@ -1296,35 +1298,35 @@ Partial Class Items_edit
         Me.Panel_specialfoods.TabIndex = 0
         Me.Panel_specialfoods.Visible = false
         '
-        'NumericUpDown1
+        'valu_sfoods_48
         '
-        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown1.Location = New System.Drawing.Point(717, 405)
-        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown1.TabIndex = 290
-        Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_48.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_48.Location = New System.Drawing.Point(717, 405)
+        Me.valu_sfoods_48.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_48.Name = "valu_sfoods_48"
+        Me.valu_sfoods_48.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_48.TabIndex = 290
+        Me.valu_sfoods_48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox1
+        'Check_NA_sfoods_48
         '
-        Me.CheckBox1.AutoSize = true
-        Me.CheckBox1.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox1.Location = New System.Drawing.Point(762, 409)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox1.TabIndex = 289
-        Me.CheckBox1.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_48.AutoSize = true
+        Me.Check_NA_sfoods_48.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_48.Location = New System.Drawing.Point(762, 409)
+        Me.Check_NA_sfoods_48.Name = "Check_NA_sfoods_48"
+        Me.Check_NA_sfoods_48.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_48.TabIndex = 289
+        Me.Check_NA_sfoods_48.UseVisualStyleBackColor = false
         '
-        'CheckBox2
+        'Check_available_sfoods_48
         '
-        Me.CheckBox2.AutoSize = true
-        Me.CheckBox2.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox2.Location = New System.Drawing.Point(701, 409)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox2.TabIndex = 288
-        Me.CheckBox2.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_48.AutoSize = true
+        Me.Check_available_sfoods_48.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_48.Location = New System.Drawing.Point(701, 409)
+        Me.Check_available_sfoods_48.Name = "Check_available_sfoods_48"
+        Me.Check_available_sfoods_48.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_48.TabIndex = 288
+        Me.Check_available_sfoods_48.UseVisualStyleBackColor = false
         '
         'PictureBox41
         '
@@ -1336,35 +1338,35 @@ Partial Class Items_edit
         Me.PictureBox41.TabIndex = 287
         Me.PictureBox41.TabStop = false
         '
-        'NumericUpDown42
+        'valu_sfoods_47
         '
-        Me.NumericUpDown42.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown42.Location = New System.Drawing.Point(635, 405)
-        Me.NumericUpDown42.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown42.Name = "NumericUpDown42"
-        Me.NumericUpDown42.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown42.TabIndex = 286
-        Me.NumericUpDown42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_47.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_47.Location = New System.Drawing.Point(635, 405)
+        Me.valu_sfoods_47.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_47.Name = "valu_sfoods_47"
+        Me.valu_sfoods_47.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_47.TabIndex = 286
+        Me.valu_sfoods_47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox83
+        'Check_NA_sfoods_47
         '
-        Me.CheckBox83.AutoSize = true
-        Me.CheckBox83.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox83.Location = New System.Drawing.Point(680, 409)
-        Me.CheckBox83.Name = "CheckBox83"
-        Me.CheckBox83.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox83.TabIndex = 285
-        Me.CheckBox83.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_47.AutoSize = true
+        Me.Check_NA_sfoods_47.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_47.Location = New System.Drawing.Point(680, 409)
+        Me.Check_NA_sfoods_47.Name = "Check_NA_sfoods_47"
+        Me.Check_NA_sfoods_47.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_47.TabIndex = 285
+        Me.Check_NA_sfoods_47.UseVisualStyleBackColor = false
         '
-        'CheckBox84
+        'Check_available_sfoods_47
         '
-        Me.CheckBox84.AutoSize = true
-        Me.CheckBox84.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox84.Location = New System.Drawing.Point(619, 409)
-        Me.CheckBox84.Name = "CheckBox84"
-        Me.CheckBox84.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox84.TabIndex = 284
-        Me.CheckBox84.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_47.AutoSize = true
+        Me.Check_available_sfoods_47.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_47.Location = New System.Drawing.Point(619, 409)
+        Me.Check_available_sfoods_47.Name = "Check_available_sfoods_47"
+        Me.Check_available_sfoods_47.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_47.TabIndex = 284
+        Me.Check_available_sfoods_47.UseVisualStyleBackColor = false
         '
         'PictureBox42
         '
@@ -1376,35 +1378,35 @@ Partial Class Items_edit
         Me.PictureBox42.TabIndex = 283
         Me.PictureBox42.TabStop = false
         '
-        'NumericUpDown43
+        'valu_sfoods_46
         '
-        Me.NumericUpDown43.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown43.Location = New System.Drawing.Point(553, 405)
-        Me.NumericUpDown43.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown43.Name = "NumericUpDown43"
-        Me.NumericUpDown43.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown43.TabIndex = 282
-        Me.NumericUpDown43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_46.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_46.Location = New System.Drawing.Point(553, 405)
+        Me.valu_sfoods_46.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_46.Name = "valu_sfoods_46"
+        Me.valu_sfoods_46.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_46.TabIndex = 282
+        Me.valu_sfoods_46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox85
+        'Check_NA_sfoods_46
         '
-        Me.CheckBox85.AutoSize = true
-        Me.CheckBox85.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox85.Location = New System.Drawing.Point(598, 409)
-        Me.CheckBox85.Name = "CheckBox85"
-        Me.CheckBox85.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox85.TabIndex = 281
-        Me.CheckBox85.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_46.AutoSize = true
+        Me.Check_NA_sfoods_46.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_46.Location = New System.Drawing.Point(598, 409)
+        Me.Check_NA_sfoods_46.Name = "Check_NA_sfoods_46"
+        Me.Check_NA_sfoods_46.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_46.TabIndex = 281
+        Me.Check_NA_sfoods_46.UseVisualStyleBackColor = false
         '
-        'CheckBox86
+        'Check_available_sfoods_46
         '
-        Me.CheckBox86.AutoSize = true
-        Me.CheckBox86.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox86.Location = New System.Drawing.Point(537, 409)
-        Me.CheckBox86.Name = "CheckBox86"
-        Me.CheckBox86.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox86.TabIndex = 280
-        Me.CheckBox86.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_46.AutoSize = true
+        Me.Check_available_sfoods_46.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_46.Location = New System.Drawing.Point(537, 409)
+        Me.Check_available_sfoods_46.Name = "Check_available_sfoods_46"
+        Me.Check_available_sfoods_46.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_46.TabIndex = 280
+        Me.Check_available_sfoods_46.UseVisualStyleBackColor = false
         '
         'PictureBox43
         '
@@ -1416,35 +1418,35 @@ Partial Class Items_edit
         Me.PictureBox43.TabIndex = 279
         Me.PictureBox43.TabStop = false
         '
-        'NumericUpDown44
+        'valu_sfoods_45
         '
-        Me.NumericUpDown44.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown44.Location = New System.Drawing.Point(471, 405)
-        Me.NumericUpDown44.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown44.Name = "NumericUpDown44"
-        Me.NumericUpDown44.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown44.TabIndex = 278
-        Me.NumericUpDown44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_45.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_45.Location = New System.Drawing.Point(471, 405)
+        Me.valu_sfoods_45.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_45.Name = "valu_sfoods_45"
+        Me.valu_sfoods_45.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_45.TabIndex = 278
+        Me.valu_sfoods_45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox87
+        'Check_NA_sfoods_45
         '
-        Me.CheckBox87.AutoSize = true
-        Me.CheckBox87.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox87.Location = New System.Drawing.Point(516, 409)
-        Me.CheckBox87.Name = "CheckBox87"
-        Me.CheckBox87.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox87.TabIndex = 277
-        Me.CheckBox87.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_45.AutoSize = true
+        Me.Check_NA_sfoods_45.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_45.Location = New System.Drawing.Point(516, 409)
+        Me.Check_NA_sfoods_45.Name = "Check_NA_sfoods_45"
+        Me.Check_NA_sfoods_45.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_45.TabIndex = 277
+        Me.Check_NA_sfoods_45.UseVisualStyleBackColor = false
         '
-        'CheckBox88
+        'Check_available_sfoods_45
         '
-        Me.CheckBox88.AutoSize = true
-        Me.CheckBox88.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox88.Location = New System.Drawing.Point(455, 409)
-        Me.CheckBox88.Name = "CheckBox88"
-        Me.CheckBox88.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox88.TabIndex = 276
-        Me.CheckBox88.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_45.AutoSize = true
+        Me.Check_available_sfoods_45.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_45.Location = New System.Drawing.Point(455, 409)
+        Me.Check_available_sfoods_45.Name = "Check_available_sfoods_45"
+        Me.Check_available_sfoods_45.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_45.TabIndex = 276
+        Me.Check_available_sfoods_45.UseVisualStyleBackColor = false
         '
         'PictureBox44
         '
@@ -1456,35 +1458,35 @@ Partial Class Items_edit
         Me.PictureBox44.TabIndex = 275
         Me.PictureBox44.TabStop = false
         '
-        'NumericUpDown45
+        'valu_sfoods_44
         '
-        Me.NumericUpDown45.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown45.Location = New System.Drawing.Point(389, 405)
-        Me.NumericUpDown45.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown45.Name = "NumericUpDown45"
-        Me.NumericUpDown45.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown45.TabIndex = 274
-        Me.NumericUpDown45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_44.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_44.Location = New System.Drawing.Point(389, 405)
+        Me.valu_sfoods_44.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_44.Name = "valu_sfoods_44"
+        Me.valu_sfoods_44.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_44.TabIndex = 274
+        Me.valu_sfoods_44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox89
+        'Check_NA_sfoods_44
         '
-        Me.CheckBox89.AutoSize = true
-        Me.CheckBox89.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox89.Location = New System.Drawing.Point(434, 409)
-        Me.CheckBox89.Name = "CheckBox89"
-        Me.CheckBox89.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox89.TabIndex = 273
-        Me.CheckBox89.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_44.AutoSize = true
+        Me.Check_NA_sfoods_44.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_44.Location = New System.Drawing.Point(434, 409)
+        Me.Check_NA_sfoods_44.Name = "Check_NA_sfoods_44"
+        Me.Check_NA_sfoods_44.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_44.TabIndex = 273
+        Me.Check_NA_sfoods_44.UseVisualStyleBackColor = false
         '
-        'CheckBox90
+        'Check_available_sfoods_44
         '
-        Me.CheckBox90.AutoSize = true
-        Me.CheckBox90.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox90.Location = New System.Drawing.Point(373, 409)
-        Me.CheckBox90.Name = "CheckBox90"
-        Me.CheckBox90.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox90.TabIndex = 272
-        Me.CheckBox90.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_44.AutoSize = true
+        Me.Check_available_sfoods_44.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_44.Location = New System.Drawing.Point(373, 409)
+        Me.Check_available_sfoods_44.Name = "Check_available_sfoods_44"
+        Me.Check_available_sfoods_44.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_44.TabIndex = 272
+        Me.Check_available_sfoods_44.UseVisualStyleBackColor = false
         '
         'PictureBox45
         '
@@ -1496,35 +1498,35 @@ Partial Class Items_edit
         Me.PictureBox45.TabIndex = 271
         Me.PictureBox45.TabStop = false
         '
-        'NumericUpDown46
+        'valu_sfoods_43
         '
-        Me.NumericUpDown46.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown46.Location = New System.Drawing.Point(307, 405)
-        Me.NumericUpDown46.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown46.Name = "NumericUpDown46"
-        Me.NumericUpDown46.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown46.TabIndex = 270
-        Me.NumericUpDown46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_43.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_43.Location = New System.Drawing.Point(307, 405)
+        Me.valu_sfoods_43.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_43.Name = "valu_sfoods_43"
+        Me.valu_sfoods_43.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_43.TabIndex = 270
+        Me.valu_sfoods_43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox91
+        'Check_NA_sfoods_43
         '
-        Me.CheckBox91.AutoSize = true
-        Me.CheckBox91.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox91.Location = New System.Drawing.Point(352, 409)
-        Me.CheckBox91.Name = "CheckBox91"
-        Me.CheckBox91.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox91.TabIndex = 269
-        Me.CheckBox91.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_43.AutoSize = true
+        Me.Check_NA_sfoods_43.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_43.Location = New System.Drawing.Point(352, 409)
+        Me.Check_NA_sfoods_43.Name = "Check_NA_sfoods_43"
+        Me.Check_NA_sfoods_43.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_43.TabIndex = 269
+        Me.Check_NA_sfoods_43.UseVisualStyleBackColor = false
         '
-        'CheckBox92
+        'Check_available_sfoods_43
         '
-        Me.CheckBox92.AutoSize = true
-        Me.CheckBox92.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox92.Location = New System.Drawing.Point(291, 409)
-        Me.CheckBox92.Name = "CheckBox92"
-        Me.CheckBox92.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox92.TabIndex = 268
-        Me.CheckBox92.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_43.AutoSize = true
+        Me.Check_available_sfoods_43.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_43.Location = New System.Drawing.Point(291, 409)
+        Me.Check_available_sfoods_43.Name = "Check_available_sfoods_43"
+        Me.Check_available_sfoods_43.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_43.TabIndex = 268
+        Me.Check_available_sfoods_43.UseVisualStyleBackColor = false
         '
         'PictureBox46
         '
@@ -1536,35 +1538,35 @@ Partial Class Items_edit
         Me.PictureBox46.TabIndex = 267
         Me.PictureBox46.TabStop = false
         '
-        'NumericUpDown47
+        'valu_sfoods_42
         '
-        Me.NumericUpDown47.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown47.Location = New System.Drawing.Point(225, 405)
-        Me.NumericUpDown47.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown47.Name = "NumericUpDown47"
-        Me.NumericUpDown47.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown47.TabIndex = 266
-        Me.NumericUpDown47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_42.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_42.Location = New System.Drawing.Point(225, 405)
+        Me.valu_sfoods_42.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_42.Name = "valu_sfoods_42"
+        Me.valu_sfoods_42.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_42.TabIndex = 266
+        Me.valu_sfoods_42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox93
+        'Check_NA_sfoods_42
         '
-        Me.CheckBox93.AutoSize = true
-        Me.CheckBox93.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox93.Location = New System.Drawing.Point(270, 409)
-        Me.CheckBox93.Name = "CheckBox93"
-        Me.CheckBox93.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox93.TabIndex = 265
-        Me.CheckBox93.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_42.AutoSize = true
+        Me.Check_NA_sfoods_42.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_42.Location = New System.Drawing.Point(270, 409)
+        Me.Check_NA_sfoods_42.Name = "Check_NA_sfoods_42"
+        Me.Check_NA_sfoods_42.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_42.TabIndex = 265
+        Me.Check_NA_sfoods_42.UseVisualStyleBackColor = false
         '
-        'CheckBox94
+        'Check_available_sfoods_42
         '
-        Me.CheckBox94.AutoSize = true
-        Me.CheckBox94.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox94.Location = New System.Drawing.Point(209, 409)
-        Me.CheckBox94.Name = "CheckBox94"
-        Me.CheckBox94.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox94.TabIndex = 264
-        Me.CheckBox94.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_42.AutoSize = true
+        Me.Check_available_sfoods_42.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_42.Location = New System.Drawing.Point(209, 409)
+        Me.Check_available_sfoods_42.Name = "Check_available_sfoods_42"
+        Me.Check_available_sfoods_42.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_42.TabIndex = 264
+        Me.Check_available_sfoods_42.UseVisualStyleBackColor = false
         '
         'PictureBox47
         '
@@ -1576,35 +1578,35 @@ Partial Class Items_edit
         Me.PictureBox47.TabIndex = 263
         Me.PictureBox47.TabStop = false
         '
-        'NumericUpDown48
+        'valu_sfoods_41
         '
-        Me.NumericUpDown48.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown48.Location = New System.Drawing.Point(143, 405)
-        Me.NumericUpDown48.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown48.Name = "NumericUpDown48"
-        Me.NumericUpDown48.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown48.TabIndex = 262
-        Me.NumericUpDown48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_41.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_41.Location = New System.Drawing.Point(143, 405)
+        Me.valu_sfoods_41.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_41.Name = "valu_sfoods_41"
+        Me.valu_sfoods_41.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_41.TabIndex = 262
+        Me.valu_sfoods_41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox95
+        'Check_NA_sfoods_41
         '
-        Me.CheckBox95.AutoSize = true
-        Me.CheckBox95.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox95.Location = New System.Drawing.Point(188, 409)
-        Me.CheckBox95.Name = "CheckBox95"
-        Me.CheckBox95.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox95.TabIndex = 261
-        Me.CheckBox95.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_41.AutoSize = true
+        Me.Check_NA_sfoods_41.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_41.Location = New System.Drawing.Point(188, 409)
+        Me.Check_NA_sfoods_41.Name = "Check_NA_sfoods_41"
+        Me.Check_NA_sfoods_41.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_41.TabIndex = 261
+        Me.Check_NA_sfoods_41.UseVisualStyleBackColor = false
         '
-        'CheckBox96
+        'Check_available_sfoods_41
         '
-        Me.CheckBox96.AutoSize = true
-        Me.CheckBox96.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox96.Location = New System.Drawing.Point(127, 409)
-        Me.CheckBox96.Name = "CheckBox96"
-        Me.CheckBox96.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox96.TabIndex = 260
-        Me.CheckBox96.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_41.AutoSize = true
+        Me.Check_available_sfoods_41.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_41.Location = New System.Drawing.Point(127, 409)
+        Me.Check_available_sfoods_41.Name = "Check_available_sfoods_41"
+        Me.Check_available_sfoods_41.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_41.TabIndex = 260
+        Me.Check_available_sfoods_41.UseVisualStyleBackColor = false
         '
         'PictureBox48
         '
@@ -1616,35 +1618,35 @@ Partial Class Items_edit
         Me.PictureBox48.TabIndex = 259
         Me.PictureBox48.TabStop = false
         '
-        'NumericUpDown22
+        'valu_sfoods_40
         '
-        Me.NumericUpDown22.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown22.Location = New System.Drawing.Point(799, 325)
-        Me.NumericUpDown22.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown22.Name = "NumericUpDown22"
-        Me.NumericUpDown22.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown22.TabIndex = 258
-        Me.NumericUpDown22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_40.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_40.Location = New System.Drawing.Point(799, 325)
+        Me.valu_sfoods_40.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_40.Name = "valu_sfoods_40"
+        Me.valu_sfoods_40.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_40.TabIndex = 258
+        Me.valu_sfoods_40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox43
+        'Check_NA_sfoods_40
         '
-        Me.CheckBox43.AutoSize = true
-        Me.CheckBox43.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox43.Location = New System.Drawing.Point(844, 329)
-        Me.CheckBox43.Name = "CheckBox43"
-        Me.CheckBox43.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox43.TabIndex = 257
-        Me.CheckBox43.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_40.AutoSize = true
+        Me.Check_NA_sfoods_40.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_40.Location = New System.Drawing.Point(844, 329)
+        Me.Check_NA_sfoods_40.Name = "Check_NA_sfoods_40"
+        Me.Check_NA_sfoods_40.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_40.TabIndex = 257
+        Me.Check_NA_sfoods_40.UseVisualStyleBackColor = false
         '
-        'CheckBox44
+        'Check_available_sfoods_40
         '
-        Me.CheckBox44.AutoSize = true
-        Me.CheckBox44.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox44.Location = New System.Drawing.Point(783, 329)
-        Me.CheckBox44.Name = "CheckBox44"
-        Me.CheckBox44.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox44.TabIndex = 256
-        Me.CheckBox44.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_40.AutoSize = true
+        Me.Check_available_sfoods_40.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_40.Location = New System.Drawing.Point(783, 329)
+        Me.Check_available_sfoods_40.Name = "Check_available_sfoods_40"
+        Me.Check_available_sfoods_40.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_40.TabIndex = 256
+        Me.Check_available_sfoods_40.UseVisualStyleBackColor = false
         '
         'PictureBox36
         '
@@ -1656,35 +1658,35 @@ Partial Class Items_edit
         Me.PictureBox36.TabIndex = 255
         Me.PictureBox36.TabStop = false
         '
-        'NumericUpDown23
+        'valu_sfoods_39
         '
-        Me.NumericUpDown23.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown23.Location = New System.Drawing.Point(717, 325)
-        Me.NumericUpDown23.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown23.Name = "NumericUpDown23"
-        Me.NumericUpDown23.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown23.TabIndex = 254
-        Me.NumericUpDown23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_39.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_39.Location = New System.Drawing.Point(717, 325)
+        Me.valu_sfoods_39.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_39.Name = "valu_sfoods_39"
+        Me.valu_sfoods_39.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_39.TabIndex = 254
+        Me.valu_sfoods_39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox45
+        'Check_NA_sfoods_39
         '
-        Me.CheckBox45.AutoSize = true
-        Me.CheckBox45.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox45.Location = New System.Drawing.Point(762, 329)
-        Me.CheckBox45.Name = "CheckBox45"
-        Me.CheckBox45.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox45.TabIndex = 253
-        Me.CheckBox45.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_39.AutoSize = true
+        Me.Check_NA_sfoods_39.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_39.Location = New System.Drawing.Point(762, 329)
+        Me.Check_NA_sfoods_39.Name = "Check_NA_sfoods_39"
+        Me.Check_NA_sfoods_39.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_39.TabIndex = 253
+        Me.Check_NA_sfoods_39.UseVisualStyleBackColor = false
         '
-        'CheckBox46
+        'Check_available_sfoods_39
         '
-        Me.CheckBox46.AutoSize = true
-        Me.CheckBox46.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox46.Location = New System.Drawing.Point(701, 329)
-        Me.CheckBox46.Name = "CheckBox46"
-        Me.CheckBox46.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox46.TabIndex = 252
-        Me.CheckBox46.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_39.AutoSize = true
+        Me.Check_available_sfoods_39.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_39.Location = New System.Drawing.Point(701, 329)
+        Me.Check_available_sfoods_39.Name = "Check_available_sfoods_39"
+        Me.Check_available_sfoods_39.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_39.TabIndex = 252
+        Me.Check_available_sfoods_39.UseVisualStyleBackColor = false
         '
         'PictureBox37
         '
@@ -1696,35 +1698,35 @@ Partial Class Items_edit
         Me.PictureBox37.TabIndex = 251
         Me.PictureBox37.TabStop = false
         '
-        'NumericUpDown24
+        'valu_sfoods_38
         '
-        Me.NumericUpDown24.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown24.Location = New System.Drawing.Point(635, 325)
-        Me.NumericUpDown24.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown24.Name = "NumericUpDown24"
-        Me.NumericUpDown24.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown24.TabIndex = 250
-        Me.NumericUpDown24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_38.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_38.Location = New System.Drawing.Point(635, 325)
+        Me.valu_sfoods_38.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_38.Name = "valu_sfoods_38"
+        Me.valu_sfoods_38.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_38.TabIndex = 250
+        Me.valu_sfoods_38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox47
+        'Check_NA_sfoods_38
         '
-        Me.CheckBox47.AutoSize = true
-        Me.CheckBox47.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox47.Location = New System.Drawing.Point(680, 329)
-        Me.CheckBox47.Name = "CheckBox47"
-        Me.CheckBox47.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox47.TabIndex = 249
-        Me.CheckBox47.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_38.AutoSize = true
+        Me.Check_NA_sfoods_38.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_38.Location = New System.Drawing.Point(680, 329)
+        Me.Check_NA_sfoods_38.Name = "Check_NA_sfoods_38"
+        Me.Check_NA_sfoods_38.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_38.TabIndex = 249
+        Me.Check_NA_sfoods_38.UseVisualStyleBackColor = false
         '
-        'CheckBox48
+        'Check_available_sfoods_38
         '
-        Me.CheckBox48.AutoSize = true
-        Me.CheckBox48.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox48.Location = New System.Drawing.Point(619, 329)
-        Me.CheckBox48.Name = "CheckBox48"
-        Me.CheckBox48.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox48.TabIndex = 248
-        Me.CheckBox48.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_38.AutoSize = true
+        Me.Check_available_sfoods_38.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_38.Location = New System.Drawing.Point(619, 329)
+        Me.Check_available_sfoods_38.Name = "Check_available_sfoods_38"
+        Me.Check_available_sfoods_38.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_38.TabIndex = 248
+        Me.Check_available_sfoods_38.UseVisualStyleBackColor = false
         '
         'PictureBox38
         '
@@ -1736,35 +1738,35 @@ Partial Class Items_edit
         Me.PictureBox38.TabIndex = 247
         Me.PictureBox38.TabStop = false
         '
-        'NumericUpDown25
+        'valu_sfoods_37
         '
-        Me.NumericUpDown25.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown25.Location = New System.Drawing.Point(553, 325)
-        Me.NumericUpDown25.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown25.Name = "NumericUpDown25"
-        Me.NumericUpDown25.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown25.TabIndex = 246
-        Me.NumericUpDown25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_37.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_37.Location = New System.Drawing.Point(553, 325)
+        Me.valu_sfoods_37.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_37.Name = "valu_sfoods_37"
+        Me.valu_sfoods_37.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_37.TabIndex = 246
+        Me.valu_sfoods_37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox49
+        'Check_NA_sfoods_37
         '
-        Me.CheckBox49.AutoSize = true
-        Me.CheckBox49.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox49.Location = New System.Drawing.Point(598, 329)
-        Me.CheckBox49.Name = "CheckBox49"
-        Me.CheckBox49.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox49.TabIndex = 245
-        Me.CheckBox49.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_37.AutoSize = true
+        Me.Check_NA_sfoods_37.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_37.Location = New System.Drawing.Point(598, 329)
+        Me.Check_NA_sfoods_37.Name = "Check_NA_sfoods_37"
+        Me.Check_NA_sfoods_37.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_37.TabIndex = 245
+        Me.Check_NA_sfoods_37.UseVisualStyleBackColor = false
         '
-        'CheckBox50
+        'Check_available_sfoods_37
         '
-        Me.CheckBox50.AutoSize = true
-        Me.CheckBox50.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox50.Location = New System.Drawing.Point(537, 329)
-        Me.CheckBox50.Name = "CheckBox50"
-        Me.CheckBox50.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox50.TabIndex = 244
-        Me.CheckBox50.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_37.AutoSize = true
+        Me.Check_available_sfoods_37.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_37.Location = New System.Drawing.Point(537, 329)
+        Me.Check_available_sfoods_37.Name = "Check_available_sfoods_37"
+        Me.Check_available_sfoods_37.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_37.TabIndex = 244
+        Me.Check_available_sfoods_37.UseVisualStyleBackColor = false
         '
         'PictureBox39
         '
@@ -1776,35 +1778,35 @@ Partial Class Items_edit
         Me.PictureBox39.TabIndex = 243
         Me.PictureBox39.TabStop = false
         '
-        'NumericUpDown26
+        'valu_sfoods_36
         '
-        Me.NumericUpDown26.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown26.Location = New System.Drawing.Point(471, 325)
-        Me.NumericUpDown26.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown26.Name = "NumericUpDown26"
-        Me.NumericUpDown26.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown26.TabIndex = 242
-        Me.NumericUpDown26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_36.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_36.Location = New System.Drawing.Point(471, 325)
+        Me.valu_sfoods_36.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_36.Name = "valu_sfoods_36"
+        Me.valu_sfoods_36.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_36.TabIndex = 242
+        Me.valu_sfoods_36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox51
+        'Check_NA_sfoods_36
         '
-        Me.CheckBox51.AutoSize = true
-        Me.CheckBox51.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox51.Location = New System.Drawing.Point(516, 329)
-        Me.CheckBox51.Name = "CheckBox51"
-        Me.CheckBox51.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox51.TabIndex = 241
-        Me.CheckBox51.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_36.AutoSize = true
+        Me.Check_NA_sfoods_36.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_36.Location = New System.Drawing.Point(516, 329)
+        Me.Check_NA_sfoods_36.Name = "Check_NA_sfoods_36"
+        Me.Check_NA_sfoods_36.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_36.TabIndex = 241
+        Me.Check_NA_sfoods_36.UseVisualStyleBackColor = false
         '
-        'CheckBox52
+        'Check_available_sfoods_36
         '
-        Me.CheckBox52.AutoSize = true
-        Me.CheckBox52.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox52.Location = New System.Drawing.Point(455, 329)
-        Me.CheckBox52.Name = "CheckBox52"
-        Me.CheckBox52.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox52.TabIndex = 240
-        Me.CheckBox52.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_36.AutoSize = true
+        Me.Check_available_sfoods_36.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_36.Location = New System.Drawing.Point(455, 329)
+        Me.Check_available_sfoods_36.Name = "Check_available_sfoods_36"
+        Me.Check_available_sfoods_36.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_36.TabIndex = 240
+        Me.Check_available_sfoods_36.UseVisualStyleBackColor = false
         '
         'PictureBox40
         '
@@ -1816,35 +1818,35 @@ Partial Class Items_edit
         Me.PictureBox40.TabIndex = 239
         Me.PictureBox40.TabStop = false
         '
-        'NumericUpDown27
+        'valu_sfoods_35
         '
-        Me.NumericUpDown27.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown27.Location = New System.Drawing.Point(389, 325)
-        Me.NumericUpDown27.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown27.Name = "NumericUpDown27"
-        Me.NumericUpDown27.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown27.TabIndex = 238
-        Me.NumericUpDown27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_35.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_35.Location = New System.Drawing.Point(389, 325)
+        Me.valu_sfoods_35.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_35.Name = "valu_sfoods_35"
+        Me.valu_sfoods_35.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_35.TabIndex = 238
+        Me.valu_sfoods_35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox53
+        'Check_NA_sfoods_35
         '
-        Me.CheckBox53.AutoSize = true
-        Me.CheckBox53.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox53.Location = New System.Drawing.Point(434, 329)
-        Me.CheckBox53.Name = "CheckBox53"
-        Me.CheckBox53.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox53.TabIndex = 237
-        Me.CheckBox53.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_35.AutoSize = true
+        Me.Check_NA_sfoods_35.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_35.Location = New System.Drawing.Point(434, 329)
+        Me.Check_NA_sfoods_35.Name = "Check_NA_sfoods_35"
+        Me.Check_NA_sfoods_35.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_35.TabIndex = 237
+        Me.Check_NA_sfoods_35.UseVisualStyleBackColor = false
         '
-        'CheckBox54
+        'Check_available_sfoods_35
         '
-        Me.CheckBox54.AutoSize = true
-        Me.CheckBox54.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox54.Location = New System.Drawing.Point(373, 329)
-        Me.CheckBox54.Name = "CheckBox54"
-        Me.CheckBox54.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox54.TabIndex = 236
-        Me.CheckBox54.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_35.AutoSize = true
+        Me.Check_available_sfoods_35.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_35.Location = New System.Drawing.Point(373, 329)
+        Me.Check_available_sfoods_35.Name = "Check_available_sfoods_35"
+        Me.Check_available_sfoods_35.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_35.TabIndex = 236
+        Me.Check_available_sfoods_35.UseVisualStyleBackColor = false
         '
         'PictureBox49
         '
@@ -1856,35 +1858,35 @@ Partial Class Items_edit
         Me.PictureBox49.TabIndex = 235
         Me.PictureBox49.TabStop = false
         '
-        'NumericUpDown28
+        'valu_sfoods_34
         '
-        Me.NumericUpDown28.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown28.Location = New System.Drawing.Point(307, 325)
-        Me.NumericUpDown28.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown28.Name = "NumericUpDown28"
-        Me.NumericUpDown28.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown28.TabIndex = 234
-        Me.NumericUpDown28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_34.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_34.Location = New System.Drawing.Point(307, 325)
+        Me.valu_sfoods_34.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_34.Name = "valu_sfoods_34"
+        Me.valu_sfoods_34.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_34.TabIndex = 234
+        Me.valu_sfoods_34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox55
+        'Check_NA_sfoods_34
         '
-        Me.CheckBox55.AutoSize = true
-        Me.CheckBox55.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox55.Location = New System.Drawing.Point(352, 329)
-        Me.CheckBox55.Name = "CheckBox55"
-        Me.CheckBox55.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox55.TabIndex = 233
-        Me.CheckBox55.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_34.AutoSize = true
+        Me.Check_NA_sfoods_34.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_34.Location = New System.Drawing.Point(352, 329)
+        Me.Check_NA_sfoods_34.Name = "Check_NA_sfoods_34"
+        Me.Check_NA_sfoods_34.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_34.TabIndex = 233
+        Me.Check_NA_sfoods_34.UseVisualStyleBackColor = false
         '
-        'CheckBox56
+        'Check_available_sfoods_34
         '
-        Me.CheckBox56.AutoSize = true
-        Me.CheckBox56.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox56.Location = New System.Drawing.Point(291, 329)
-        Me.CheckBox56.Name = "CheckBox56"
-        Me.CheckBox56.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox56.TabIndex = 232
-        Me.CheckBox56.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_34.AutoSize = true
+        Me.Check_available_sfoods_34.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_34.Location = New System.Drawing.Point(291, 329)
+        Me.Check_available_sfoods_34.Name = "Check_available_sfoods_34"
+        Me.Check_available_sfoods_34.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_34.TabIndex = 232
+        Me.Check_available_sfoods_34.UseVisualStyleBackColor = false
         '
         'PictureBox55
         '
@@ -1896,35 +1898,35 @@ Partial Class Items_edit
         Me.PictureBox55.TabIndex = 231
         Me.PictureBox55.TabStop = false
         '
-        'NumericUpDown29
+        'valu_sfoods_33
         '
-        Me.NumericUpDown29.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown29.Location = New System.Drawing.Point(225, 325)
-        Me.NumericUpDown29.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown29.Name = "NumericUpDown29"
-        Me.NumericUpDown29.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown29.TabIndex = 230
-        Me.NumericUpDown29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_33.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_33.Location = New System.Drawing.Point(225, 325)
+        Me.valu_sfoods_33.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_33.Name = "valu_sfoods_33"
+        Me.valu_sfoods_33.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_33.TabIndex = 230
+        Me.valu_sfoods_33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox57
+        'Check_NA_sfoods_33
         '
-        Me.CheckBox57.AutoSize = true
-        Me.CheckBox57.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox57.Location = New System.Drawing.Point(270, 329)
-        Me.CheckBox57.Name = "CheckBox57"
-        Me.CheckBox57.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox57.TabIndex = 229
-        Me.CheckBox57.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_33.AutoSize = true
+        Me.Check_NA_sfoods_33.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_33.Location = New System.Drawing.Point(270, 329)
+        Me.Check_NA_sfoods_33.Name = "Check_NA_sfoods_33"
+        Me.Check_NA_sfoods_33.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_33.TabIndex = 229
+        Me.Check_NA_sfoods_33.UseVisualStyleBackColor = false
         '
-        'CheckBox58
+        'Check_available_sfoods_33
         '
-        Me.CheckBox58.AutoSize = true
-        Me.CheckBox58.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox58.Location = New System.Drawing.Point(209, 329)
-        Me.CheckBox58.Name = "CheckBox58"
-        Me.CheckBox58.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox58.TabIndex = 228
-        Me.CheckBox58.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_33.AutoSize = true
+        Me.Check_available_sfoods_33.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_33.Location = New System.Drawing.Point(209, 329)
+        Me.Check_available_sfoods_33.Name = "Check_available_sfoods_33"
+        Me.Check_available_sfoods_33.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_33.TabIndex = 228
+        Me.Check_available_sfoods_33.UseVisualStyleBackColor = false
         '
         'PictureBox56
         '
@@ -1936,35 +1938,35 @@ Partial Class Items_edit
         Me.PictureBox56.TabIndex = 227
         Me.PictureBox56.TabStop = false
         '
-        'NumericUpDown30
+        'valu_sfoods_32
         '
-        Me.NumericUpDown30.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown30.Location = New System.Drawing.Point(143, 325)
-        Me.NumericUpDown30.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown30.Name = "NumericUpDown30"
-        Me.NumericUpDown30.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown30.TabIndex = 226
-        Me.NumericUpDown30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_32.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_32.Location = New System.Drawing.Point(143, 325)
+        Me.valu_sfoods_32.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_32.Name = "valu_sfoods_32"
+        Me.valu_sfoods_32.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_32.TabIndex = 226
+        Me.valu_sfoods_32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox59
+        'Check_NA_sfoods_32
         '
-        Me.CheckBox59.AutoSize = true
-        Me.CheckBox59.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox59.Location = New System.Drawing.Point(188, 329)
-        Me.CheckBox59.Name = "CheckBox59"
-        Me.CheckBox59.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox59.TabIndex = 225
-        Me.CheckBox59.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_32.AutoSize = true
+        Me.Check_NA_sfoods_32.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_32.Location = New System.Drawing.Point(188, 329)
+        Me.Check_NA_sfoods_32.Name = "Check_NA_sfoods_32"
+        Me.Check_NA_sfoods_32.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_32.TabIndex = 225
+        Me.Check_NA_sfoods_32.UseVisualStyleBackColor = false
         '
-        'CheckBox60
+        'Check_available_sfoods_32
         '
-        Me.CheckBox60.AutoSize = true
-        Me.CheckBox60.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox60.Location = New System.Drawing.Point(127, 329)
-        Me.CheckBox60.Name = "CheckBox60"
-        Me.CheckBox60.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox60.TabIndex = 224
-        Me.CheckBox60.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_32.AutoSize = true
+        Me.Check_available_sfoods_32.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_32.Location = New System.Drawing.Point(127, 329)
+        Me.Check_available_sfoods_32.Name = "Check_available_sfoods_32"
+        Me.Check_available_sfoods_32.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_32.TabIndex = 224
+        Me.Check_available_sfoods_32.UseVisualStyleBackColor = false
         '
         'PictureBox57
         '
@@ -1976,35 +1978,35 @@ Partial Class Items_edit
         Me.PictureBox57.TabIndex = 223
         Me.PictureBox57.TabStop = false
         '
-        'NumericUpDown31
+        'valu_sfoods_31
         '
-        Me.NumericUpDown31.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown31.Location = New System.Drawing.Point(61, 325)
-        Me.NumericUpDown31.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown31.Name = "NumericUpDown31"
-        Me.NumericUpDown31.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown31.TabIndex = 222
-        Me.NumericUpDown31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_31.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_31.Location = New System.Drawing.Point(61, 325)
+        Me.valu_sfoods_31.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_31.Name = "valu_sfoods_31"
+        Me.valu_sfoods_31.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_31.TabIndex = 222
+        Me.valu_sfoods_31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox61
+        'Check_NA_sfoods_31
         '
-        Me.CheckBox61.AutoSize = true
-        Me.CheckBox61.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox61.Location = New System.Drawing.Point(106, 329)
-        Me.CheckBox61.Name = "CheckBox61"
-        Me.CheckBox61.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox61.TabIndex = 221
-        Me.CheckBox61.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_31.AutoSize = true
+        Me.Check_NA_sfoods_31.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_31.Location = New System.Drawing.Point(106, 329)
+        Me.Check_NA_sfoods_31.Name = "Check_NA_sfoods_31"
+        Me.Check_NA_sfoods_31.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_31.TabIndex = 221
+        Me.Check_NA_sfoods_31.UseVisualStyleBackColor = false
         '
-        'CheckBox62
+        'Check_available_sfoods_31
         '
-        Me.CheckBox62.AutoSize = true
-        Me.CheckBox62.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox62.Location = New System.Drawing.Point(45, 329)
-        Me.CheckBox62.Name = "CheckBox62"
-        Me.CheckBox62.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox62.TabIndex = 220
-        Me.CheckBox62.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_31.AutoSize = true
+        Me.Check_available_sfoods_31.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_31.Location = New System.Drawing.Point(45, 329)
+        Me.Check_available_sfoods_31.Name = "Check_available_sfoods_31"
+        Me.Check_available_sfoods_31.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_31.TabIndex = 220
+        Me.Check_available_sfoods_31.UseVisualStyleBackColor = false
         '
         'PictureBox86
         '
@@ -2016,35 +2018,35 @@ Partial Class Items_edit
         Me.PictureBox86.TabIndex = 219
         Me.PictureBox86.TabStop = false
         '
-        'NumericUpDown32
+        'valu_sfoods_30
         '
-        Me.NumericUpDown32.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown32.Location = New System.Drawing.Point(799, 245)
-        Me.NumericUpDown32.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown32.Name = "NumericUpDown32"
-        Me.NumericUpDown32.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown32.TabIndex = 218
-        Me.NumericUpDown32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_30.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_30.Location = New System.Drawing.Point(799, 245)
+        Me.valu_sfoods_30.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_30.Name = "valu_sfoods_30"
+        Me.valu_sfoods_30.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_30.TabIndex = 218
+        Me.valu_sfoods_30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox63
+        'Check_NA_sfoods_30
         '
-        Me.CheckBox63.AutoSize = true
-        Me.CheckBox63.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox63.Location = New System.Drawing.Point(844, 249)
-        Me.CheckBox63.Name = "CheckBox63"
-        Me.CheckBox63.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox63.TabIndex = 217
-        Me.CheckBox63.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_30.AutoSize = true
+        Me.Check_NA_sfoods_30.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_30.Location = New System.Drawing.Point(844, 249)
+        Me.Check_NA_sfoods_30.Name = "Check_NA_sfoods_30"
+        Me.Check_NA_sfoods_30.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_30.TabIndex = 217
+        Me.Check_NA_sfoods_30.UseVisualStyleBackColor = false
         '
-        'CheckBox64
+        'Check_available_sfoods_30
         '
-        Me.CheckBox64.AutoSize = true
-        Me.CheckBox64.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox64.Location = New System.Drawing.Point(783, 249)
-        Me.CheckBox64.Name = "CheckBox64"
-        Me.CheckBox64.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox64.TabIndex = 216
-        Me.CheckBox64.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_30.AutoSize = true
+        Me.Check_available_sfoods_30.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_30.Location = New System.Drawing.Point(783, 249)
+        Me.Check_available_sfoods_30.Name = "Check_available_sfoods_30"
+        Me.Check_available_sfoods_30.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_30.TabIndex = 216
+        Me.Check_available_sfoods_30.UseVisualStyleBackColor = false
         '
         'PictureBox87
         '
@@ -2056,35 +2058,35 @@ Partial Class Items_edit
         Me.PictureBox87.TabIndex = 215
         Me.PictureBox87.TabStop = false
         '
-        'NumericUpDown33
+        'valu_sfoods_29
         '
-        Me.NumericUpDown33.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown33.Location = New System.Drawing.Point(717, 245)
-        Me.NumericUpDown33.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown33.Name = "NumericUpDown33"
-        Me.NumericUpDown33.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown33.TabIndex = 214
-        Me.NumericUpDown33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_29.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_29.Location = New System.Drawing.Point(717, 245)
+        Me.valu_sfoods_29.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_29.Name = "valu_sfoods_29"
+        Me.valu_sfoods_29.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_29.TabIndex = 214
+        Me.valu_sfoods_29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox65
+        'Check_NA_sfoods_29
         '
-        Me.CheckBox65.AutoSize = true
-        Me.CheckBox65.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox65.Location = New System.Drawing.Point(762, 249)
-        Me.CheckBox65.Name = "CheckBox65"
-        Me.CheckBox65.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox65.TabIndex = 213
-        Me.CheckBox65.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_29.AutoSize = true
+        Me.Check_NA_sfoods_29.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_29.Location = New System.Drawing.Point(762, 249)
+        Me.Check_NA_sfoods_29.Name = "Check_NA_sfoods_29"
+        Me.Check_NA_sfoods_29.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_29.TabIndex = 213
+        Me.Check_NA_sfoods_29.UseVisualStyleBackColor = false
         '
-        'CheckBox66
+        'Check_available_sfoods_29
         '
-        Me.CheckBox66.AutoSize = true
-        Me.CheckBox66.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox66.Location = New System.Drawing.Point(701, 249)
-        Me.CheckBox66.Name = "CheckBox66"
-        Me.CheckBox66.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox66.TabIndex = 212
-        Me.CheckBox66.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_29.AutoSize = true
+        Me.Check_available_sfoods_29.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_29.Location = New System.Drawing.Point(701, 249)
+        Me.Check_available_sfoods_29.Name = "Check_available_sfoods_29"
+        Me.Check_available_sfoods_29.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_29.TabIndex = 212
+        Me.Check_available_sfoods_29.UseVisualStyleBackColor = false
         '
         'PictureBox88
         '
@@ -2096,35 +2098,35 @@ Partial Class Items_edit
         Me.PictureBox88.TabIndex = 211
         Me.PictureBox88.TabStop = false
         '
-        'NumericUpDown34
+        'valu_sfoods_28
         '
-        Me.NumericUpDown34.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown34.Location = New System.Drawing.Point(635, 245)
-        Me.NumericUpDown34.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown34.Name = "NumericUpDown34"
-        Me.NumericUpDown34.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown34.TabIndex = 210
-        Me.NumericUpDown34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_28.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_28.Location = New System.Drawing.Point(635, 245)
+        Me.valu_sfoods_28.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_28.Name = "valu_sfoods_28"
+        Me.valu_sfoods_28.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_28.TabIndex = 210
+        Me.valu_sfoods_28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox67
+        'Check_NA_sfoods_28
         '
-        Me.CheckBox67.AutoSize = true
-        Me.CheckBox67.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox67.Location = New System.Drawing.Point(680, 249)
-        Me.CheckBox67.Name = "CheckBox67"
-        Me.CheckBox67.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox67.TabIndex = 209
-        Me.CheckBox67.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_28.AutoSize = true
+        Me.Check_NA_sfoods_28.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_28.Location = New System.Drawing.Point(680, 249)
+        Me.Check_NA_sfoods_28.Name = "Check_NA_sfoods_28"
+        Me.Check_NA_sfoods_28.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_28.TabIndex = 209
+        Me.Check_NA_sfoods_28.UseVisualStyleBackColor = false
         '
-        'CheckBox68
+        'Check_available_sfoods_28
         '
-        Me.CheckBox68.AutoSize = true
-        Me.CheckBox68.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox68.Location = New System.Drawing.Point(619, 249)
-        Me.CheckBox68.Name = "CheckBox68"
-        Me.CheckBox68.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox68.TabIndex = 208
-        Me.CheckBox68.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_28.AutoSize = true
+        Me.Check_available_sfoods_28.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_28.Location = New System.Drawing.Point(619, 249)
+        Me.Check_available_sfoods_28.Name = "Check_available_sfoods_28"
+        Me.Check_available_sfoods_28.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_28.TabIndex = 208
+        Me.Check_available_sfoods_28.UseVisualStyleBackColor = false
         '
         'PictureBox99
         '
@@ -2136,35 +2138,35 @@ Partial Class Items_edit
         Me.PictureBox99.TabIndex = 207
         Me.PictureBox99.TabStop = false
         '
-        'NumericUpDown35
+        'valu_sfoods_27
         '
-        Me.NumericUpDown35.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown35.Location = New System.Drawing.Point(553, 245)
-        Me.NumericUpDown35.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown35.Name = "NumericUpDown35"
-        Me.NumericUpDown35.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown35.TabIndex = 206
-        Me.NumericUpDown35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_27.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_27.Location = New System.Drawing.Point(553, 245)
+        Me.valu_sfoods_27.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_27.Name = "valu_sfoods_27"
+        Me.valu_sfoods_27.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_27.TabIndex = 206
+        Me.valu_sfoods_27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox69
+        'Check_NA_sfoods_27
         '
-        Me.CheckBox69.AutoSize = true
-        Me.CheckBox69.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox69.Location = New System.Drawing.Point(598, 249)
-        Me.CheckBox69.Name = "CheckBox69"
-        Me.CheckBox69.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox69.TabIndex = 205
-        Me.CheckBox69.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_27.AutoSize = true
+        Me.Check_NA_sfoods_27.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_27.Location = New System.Drawing.Point(598, 249)
+        Me.Check_NA_sfoods_27.Name = "Check_NA_sfoods_27"
+        Me.Check_NA_sfoods_27.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_27.TabIndex = 205
+        Me.Check_NA_sfoods_27.UseVisualStyleBackColor = false
         '
-        'CheckBox70
+        'Check_available_sfoods_27
         '
-        Me.CheckBox70.AutoSize = true
-        Me.CheckBox70.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox70.Location = New System.Drawing.Point(537, 249)
-        Me.CheckBox70.Name = "CheckBox70"
-        Me.CheckBox70.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox70.TabIndex = 204
-        Me.CheckBox70.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_27.AutoSize = true
+        Me.Check_available_sfoods_27.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_27.Location = New System.Drawing.Point(537, 249)
+        Me.Check_available_sfoods_27.Name = "Check_available_sfoods_27"
+        Me.Check_available_sfoods_27.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_27.TabIndex = 204
+        Me.Check_available_sfoods_27.UseVisualStyleBackColor = false
         '
         'PictureBox100
         '
@@ -2176,35 +2178,35 @@ Partial Class Items_edit
         Me.PictureBox100.TabIndex = 203
         Me.PictureBox100.TabStop = false
         '
-        'NumericUpDown36
+        'valu_sfoods_26
         '
-        Me.NumericUpDown36.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown36.Location = New System.Drawing.Point(471, 245)
-        Me.NumericUpDown36.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown36.Name = "NumericUpDown36"
-        Me.NumericUpDown36.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown36.TabIndex = 202
-        Me.NumericUpDown36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_26.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_26.Location = New System.Drawing.Point(471, 245)
+        Me.valu_sfoods_26.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_26.Name = "valu_sfoods_26"
+        Me.valu_sfoods_26.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_26.TabIndex = 202
+        Me.valu_sfoods_26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox71
+        'Check_NA_sfoods_26
         '
-        Me.CheckBox71.AutoSize = true
-        Me.CheckBox71.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox71.Location = New System.Drawing.Point(516, 249)
-        Me.CheckBox71.Name = "CheckBox71"
-        Me.CheckBox71.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox71.TabIndex = 201
-        Me.CheckBox71.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_26.AutoSize = true
+        Me.Check_NA_sfoods_26.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_26.Location = New System.Drawing.Point(516, 249)
+        Me.Check_NA_sfoods_26.Name = "Check_NA_sfoods_26"
+        Me.Check_NA_sfoods_26.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_26.TabIndex = 201
+        Me.Check_NA_sfoods_26.UseVisualStyleBackColor = false
         '
-        'CheckBox72
+        'Check_available_sfoods_26
         '
-        Me.CheckBox72.AutoSize = true
-        Me.CheckBox72.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox72.Location = New System.Drawing.Point(455, 249)
-        Me.CheckBox72.Name = "CheckBox72"
-        Me.CheckBox72.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox72.TabIndex = 200
-        Me.CheckBox72.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_26.AutoSize = true
+        Me.Check_available_sfoods_26.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_26.Location = New System.Drawing.Point(455, 249)
+        Me.Check_available_sfoods_26.Name = "Check_available_sfoods_26"
+        Me.Check_available_sfoods_26.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_26.TabIndex = 200
+        Me.Check_available_sfoods_26.UseVisualStyleBackColor = false
         '
         'PictureBox101
         '
@@ -2216,35 +2218,35 @@ Partial Class Items_edit
         Me.PictureBox101.TabIndex = 199
         Me.PictureBox101.TabStop = false
         '
-        'NumericUpDown37
+        'valu_sfoods_25
         '
-        Me.NumericUpDown37.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown37.Location = New System.Drawing.Point(389, 245)
-        Me.NumericUpDown37.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown37.Name = "NumericUpDown37"
-        Me.NumericUpDown37.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown37.TabIndex = 198
-        Me.NumericUpDown37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_25.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_25.Location = New System.Drawing.Point(389, 245)
+        Me.valu_sfoods_25.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_25.Name = "valu_sfoods_25"
+        Me.valu_sfoods_25.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_25.TabIndex = 198
+        Me.valu_sfoods_25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox73
+        'Check_NA_sfoods_25
         '
-        Me.CheckBox73.AutoSize = true
-        Me.CheckBox73.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox73.Location = New System.Drawing.Point(434, 249)
-        Me.CheckBox73.Name = "CheckBox73"
-        Me.CheckBox73.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox73.TabIndex = 197
-        Me.CheckBox73.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_25.AutoSize = true
+        Me.Check_NA_sfoods_25.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_25.Location = New System.Drawing.Point(434, 249)
+        Me.Check_NA_sfoods_25.Name = "Check_NA_sfoods_25"
+        Me.Check_NA_sfoods_25.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_25.TabIndex = 197
+        Me.Check_NA_sfoods_25.UseVisualStyleBackColor = false
         '
-        'CheckBox74
+        'Check_available_sfoods_25
         '
-        Me.CheckBox74.AutoSize = true
-        Me.CheckBox74.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox74.Location = New System.Drawing.Point(373, 249)
-        Me.CheckBox74.Name = "CheckBox74"
-        Me.CheckBox74.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox74.TabIndex = 196
-        Me.CheckBox74.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_25.AutoSize = true
+        Me.Check_available_sfoods_25.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_25.Location = New System.Drawing.Point(373, 249)
+        Me.Check_available_sfoods_25.Name = "Check_available_sfoods_25"
+        Me.Check_available_sfoods_25.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_25.TabIndex = 196
+        Me.Check_available_sfoods_25.UseVisualStyleBackColor = false
         '
         'PictureBox112
         '
@@ -2256,35 +2258,35 @@ Partial Class Items_edit
         Me.PictureBox112.TabIndex = 195
         Me.PictureBox112.TabStop = false
         '
-        'NumericUpDown38
+        'valu_sfoods_24
         '
-        Me.NumericUpDown38.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown38.Location = New System.Drawing.Point(307, 245)
-        Me.NumericUpDown38.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown38.Name = "NumericUpDown38"
-        Me.NumericUpDown38.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown38.TabIndex = 194
-        Me.NumericUpDown38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_24.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_24.Location = New System.Drawing.Point(307, 245)
+        Me.valu_sfoods_24.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_24.Name = "valu_sfoods_24"
+        Me.valu_sfoods_24.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_24.TabIndex = 194
+        Me.valu_sfoods_24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox75
+        'Check_NA_sfoods_24
         '
-        Me.CheckBox75.AutoSize = true
-        Me.CheckBox75.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox75.Location = New System.Drawing.Point(352, 249)
-        Me.CheckBox75.Name = "CheckBox75"
-        Me.CheckBox75.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox75.TabIndex = 193
-        Me.CheckBox75.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_24.AutoSize = true
+        Me.Check_NA_sfoods_24.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_24.Location = New System.Drawing.Point(352, 249)
+        Me.Check_NA_sfoods_24.Name = "Check_NA_sfoods_24"
+        Me.Check_NA_sfoods_24.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_24.TabIndex = 193
+        Me.Check_NA_sfoods_24.UseVisualStyleBackColor = false
         '
-        'CheckBox76
+        'Check_available_sfoods_24
         '
-        Me.CheckBox76.AutoSize = true
-        Me.CheckBox76.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox76.Location = New System.Drawing.Point(291, 249)
-        Me.CheckBox76.Name = "CheckBox76"
-        Me.CheckBox76.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox76.TabIndex = 192
-        Me.CheckBox76.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_24.AutoSize = true
+        Me.Check_available_sfoods_24.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_24.Location = New System.Drawing.Point(291, 249)
+        Me.Check_available_sfoods_24.Name = "Check_available_sfoods_24"
+        Me.Check_available_sfoods_24.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_24.TabIndex = 192
+        Me.Check_available_sfoods_24.UseVisualStyleBackColor = false
         '
         'PictureBox113
         '
@@ -2296,35 +2298,35 @@ Partial Class Items_edit
         Me.PictureBox113.TabIndex = 191
         Me.PictureBox113.TabStop = false
         '
-        'NumericUpDown39
+        'valu_sfoods_23
         '
-        Me.NumericUpDown39.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown39.Location = New System.Drawing.Point(225, 245)
-        Me.NumericUpDown39.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown39.Name = "NumericUpDown39"
-        Me.NumericUpDown39.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown39.TabIndex = 190
-        Me.NumericUpDown39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_23.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_23.Location = New System.Drawing.Point(225, 245)
+        Me.valu_sfoods_23.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_23.Name = "valu_sfoods_23"
+        Me.valu_sfoods_23.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_23.TabIndex = 190
+        Me.valu_sfoods_23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox77
+        'Check_NA_sfoods_23
         '
-        Me.CheckBox77.AutoSize = true
-        Me.CheckBox77.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox77.Location = New System.Drawing.Point(270, 249)
-        Me.CheckBox77.Name = "CheckBox77"
-        Me.CheckBox77.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox77.TabIndex = 189
-        Me.CheckBox77.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_23.AutoSize = true
+        Me.Check_NA_sfoods_23.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_23.Location = New System.Drawing.Point(270, 249)
+        Me.Check_NA_sfoods_23.Name = "Check_NA_sfoods_23"
+        Me.Check_NA_sfoods_23.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_23.TabIndex = 189
+        Me.Check_NA_sfoods_23.UseVisualStyleBackColor = false
         '
-        'CheckBox78
+        'Check_available_sfoods_23
         '
-        Me.CheckBox78.AutoSize = true
-        Me.CheckBox78.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox78.Location = New System.Drawing.Point(209, 249)
-        Me.CheckBox78.Name = "CheckBox78"
-        Me.CheckBox78.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox78.TabIndex = 188
-        Me.CheckBox78.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_23.AutoSize = true
+        Me.Check_available_sfoods_23.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_23.Location = New System.Drawing.Point(209, 249)
+        Me.Check_available_sfoods_23.Name = "Check_available_sfoods_23"
+        Me.Check_available_sfoods_23.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_23.TabIndex = 188
+        Me.Check_available_sfoods_23.UseVisualStyleBackColor = false
         '
         'PictureBox167
         '
@@ -2336,35 +2338,35 @@ Partial Class Items_edit
         Me.PictureBox167.TabIndex = 187
         Me.PictureBox167.TabStop = false
         '
-        'NumericUpDown40
+        'valu_sfoods_22
         '
-        Me.NumericUpDown40.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown40.Location = New System.Drawing.Point(143, 245)
-        Me.NumericUpDown40.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown40.Name = "NumericUpDown40"
-        Me.NumericUpDown40.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown40.TabIndex = 186
-        Me.NumericUpDown40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_22.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_22.Location = New System.Drawing.Point(143, 245)
+        Me.valu_sfoods_22.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_22.Name = "valu_sfoods_22"
+        Me.valu_sfoods_22.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_22.TabIndex = 186
+        Me.valu_sfoods_22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox79
+        'Check_NA_sfoods_22
         '
-        Me.CheckBox79.AutoSize = true
-        Me.CheckBox79.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox79.Location = New System.Drawing.Point(188, 249)
-        Me.CheckBox79.Name = "CheckBox79"
-        Me.CheckBox79.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox79.TabIndex = 185
-        Me.CheckBox79.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_22.AutoSize = true
+        Me.Check_NA_sfoods_22.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_22.Location = New System.Drawing.Point(188, 249)
+        Me.Check_NA_sfoods_22.Name = "Check_NA_sfoods_22"
+        Me.Check_NA_sfoods_22.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_22.TabIndex = 185
+        Me.Check_NA_sfoods_22.UseVisualStyleBackColor = false
         '
-        'CheckBox80
+        'Check_available_sfoods_22
         '
-        Me.CheckBox80.AutoSize = true
-        Me.CheckBox80.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox80.Location = New System.Drawing.Point(127, 249)
-        Me.CheckBox80.Name = "CheckBox80"
-        Me.CheckBox80.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox80.TabIndex = 184
-        Me.CheckBox80.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_22.AutoSize = true
+        Me.Check_available_sfoods_22.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_22.Location = New System.Drawing.Point(127, 249)
+        Me.Check_available_sfoods_22.Name = "Check_available_sfoods_22"
+        Me.Check_available_sfoods_22.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_22.TabIndex = 184
+        Me.Check_available_sfoods_22.UseVisualStyleBackColor = false
         '
         'PictureBox168
         '
@@ -2376,35 +2378,35 @@ Partial Class Items_edit
         Me.PictureBox168.TabIndex = 183
         Me.PictureBox168.TabStop = false
         '
-        'NumericUpDown41
+        'valu_sfoods_21
         '
-        Me.NumericUpDown41.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown41.Location = New System.Drawing.Point(61, 245)
-        Me.NumericUpDown41.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown41.Name = "NumericUpDown41"
-        Me.NumericUpDown41.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown41.TabIndex = 182
-        Me.NumericUpDown41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_21.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_21.Location = New System.Drawing.Point(61, 245)
+        Me.valu_sfoods_21.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_21.Name = "valu_sfoods_21"
+        Me.valu_sfoods_21.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_21.TabIndex = 182
+        Me.valu_sfoods_21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox81
+        'Check_NA_sfoods_21
         '
-        Me.CheckBox81.AutoSize = true
-        Me.CheckBox81.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox81.Location = New System.Drawing.Point(106, 249)
-        Me.CheckBox81.Name = "CheckBox81"
-        Me.CheckBox81.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox81.TabIndex = 181
-        Me.CheckBox81.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_21.AutoSize = true
+        Me.Check_NA_sfoods_21.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_21.Location = New System.Drawing.Point(106, 249)
+        Me.Check_NA_sfoods_21.Name = "Check_NA_sfoods_21"
+        Me.Check_NA_sfoods_21.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_21.TabIndex = 181
+        Me.Check_NA_sfoods_21.UseVisualStyleBackColor = false
         '
-        'CheckBox82
+        'Check_available_sfoods_21
         '
-        Me.CheckBox82.AutoSize = true
-        Me.CheckBox82.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox82.Location = New System.Drawing.Point(45, 249)
-        Me.CheckBox82.Name = "CheckBox82"
-        Me.CheckBox82.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox82.TabIndex = 180
-        Me.CheckBox82.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_21.AutoSize = true
+        Me.Check_available_sfoods_21.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_21.Location = New System.Drawing.Point(45, 249)
+        Me.Check_available_sfoods_21.Name = "Check_available_sfoods_21"
+        Me.Check_available_sfoods_21.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_21.TabIndex = 180
+        Me.Check_available_sfoods_21.UseVisualStyleBackColor = false
         '
         'PictureBox169
         '
@@ -2416,35 +2418,35 @@ Partial Class Items_edit
         Me.PictureBox169.TabIndex = 179
         Me.PictureBox169.TabStop = false
         '
-        'NumericUpDown12
+        'valu_sfoods_20
         '
-        Me.NumericUpDown12.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown12.Location = New System.Drawing.Point(799, 165)
-        Me.NumericUpDown12.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown12.Name = "NumericUpDown12"
-        Me.NumericUpDown12.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown12.TabIndex = 178
-        Me.NumericUpDown12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_20.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_20.Location = New System.Drawing.Point(799, 165)
+        Me.valu_sfoods_20.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_20.Name = "valu_sfoods_20"
+        Me.valu_sfoods_20.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_20.TabIndex = 178
+        Me.valu_sfoods_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox23
+        'Check_NA_sfoods_20
         '
-        Me.CheckBox23.AutoSize = true
-        Me.CheckBox23.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox23.Location = New System.Drawing.Point(844, 169)
-        Me.CheckBox23.Name = "CheckBox23"
-        Me.CheckBox23.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox23.TabIndex = 177
-        Me.CheckBox23.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_20.AutoSize = true
+        Me.Check_NA_sfoods_20.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_20.Location = New System.Drawing.Point(844, 169)
+        Me.Check_NA_sfoods_20.Name = "Check_NA_sfoods_20"
+        Me.Check_NA_sfoods_20.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_20.TabIndex = 177
+        Me.Check_NA_sfoods_20.UseVisualStyleBackColor = false
         '
-        'CheckBox24
+        'Check_available_sfoods_20
         '
-        Me.CheckBox24.AutoSize = true
-        Me.CheckBox24.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox24.Location = New System.Drawing.Point(783, 169)
-        Me.CheckBox24.Name = "CheckBox24"
-        Me.CheckBox24.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox24.TabIndex = 176
-        Me.CheckBox24.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_20.AutoSize = true
+        Me.Check_available_sfoods_20.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_20.Location = New System.Drawing.Point(783, 169)
+        Me.Check_available_sfoods_20.Name = "Check_available_sfoods_20"
+        Me.Check_available_sfoods_20.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_20.TabIndex = 176
+        Me.Check_available_sfoods_20.UseVisualStyleBackColor = false
         '
         'PictureBox26
         '
@@ -2456,35 +2458,35 @@ Partial Class Items_edit
         Me.PictureBox26.TabIndex = 175
         Me.PictureBox26.TabStop = false
         '
-        'NumericUpDown13
+        'valu_sfoods_19
         '
-        Me.NumericUpDown13.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown13.Location = New System.Drawing.Point(717, 165)
-        Me.NumericUpDown13.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown13.Name = "NumericUpDown13"
-        Me.NumericUpDown13.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown13.TabIndex = 174
-        Me.NumericUpDown13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_19.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_19.Location = New System.Drawing.Point(717, 165)
+        Me.valu_sfoods_19.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_19.Name = "valu_sfoods_19"
+        Me.valu_sfoods_19.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_19.TabIndex = 174
+        Me.valu_sfoods_19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox25
+        'Check_NA_sfoods_19
         '
-        Me.CheckBox25.AutoSize = true
-        Me.CheckBox25.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox25.Location = New System.Drawing.Point(762, 169)
-        Me.CheckBox25.Name = "CheckBox25"
-        Me.CheckBox25.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox25.TabIndex = 173
-        Me.CheckBox25.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_19.AutoSize = true
+        Me.Check_NA_sfoods_19.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_19.Location = New System.Drawing.Point(762, 169)
+        Me.Check_NA_sfoods_19.Name = "Check_NA_sfoods_19"
+        Me.Check_NA_sfoods_19.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_19.TabIndex = 173
+        Me.Check_NA_sfoods_19.UseVisualStyleBackColor = false
         '
-        'CheckBox26
+        'Check_available_sfoods_19
         '
-        Me.CheckBox26.AutoSize = true
-        Me.CheckBox26.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox26.Location = New System.Drawing.Point(701, 169)
-        Me.CheckBox26.Name = "CheckBox26"
-        Me.CheckBox26.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox26.TabIndex = 172
-        Me.CheckBox26.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_19.AutoSize = true
+        Me.Check_available_sfoods_19.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_19.Location = New System.Drawing.Point(701, 169)
+        Me.Check_available_sfoods_19.Name = "Check_available_sfoods_19"
+        Me.Check_available_sfoods_19.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_19.TabIndex = 172
+        Me.Check_available_sfoods_19.UseVisualStyleBackColor = false
         '
         'PictureBox27
         '
@@ -2496,35 +2498,35 @@ Partial Class Items_edit
         Me.PictureBox27.TabIndex = 171
         Me.PictureBox27.TabStop = false
         '
-        'NumericUpDown14
+        'valu_sfoods_18
         '
-        Me.NumericUpDown14.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown14.Location = New System.Drawing.Point(635, 165)
-        Me.NumericUpDown14.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown14.Name = "NumericUpDown14"
-        Me.NumericUpDown14.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown14.TabIndex = 170
-        Me.NumericUpDown14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_18.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_18.Location = New System.Drawing.Point(635, 165)
+        Me.valu_sfoods_18.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_18.Name = "valu_sfoods_18"
+        Me.valu_sfoods_18.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_18.TabIndex = 170
+        Me.valu_sfoods_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox27
+        'Check_NA_sfoods_18
         '
-        Me.CheckBox27.AutoSize = true
-        Me.CheckBox27.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox27.Location = New System.Drawing.Point(680, 169)
-        Me.CheckBox27.Name = "CheckBox27"
-        Me.CheckBox27.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox27.TabIndex = 169
-        Me.CheckBox27.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_18.AutoSize = true
+        Me.Check_NA_sfoods_18.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_18.Location = New System.Drawing.Point(680, 169)
+        Me.Check_NA_sfoods_18.Name = "Check_NA_sfoods_18"
+        Me.Check_NA_sfoods_18.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_18.TabIndex = 169
+        Me.Check_NA_sfoods_18.UseVisualStyleBackColor = false
         '
-        'CheckBox28
+        'Check_available_sfoods_18
         '
-        Me.CheckBox28.AutoSize = true
-        Me.CheckBox28.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox28.Location = New System.Drawing.Point(619, 169)
-        Me.CheckBox28.Name = "CheckBox28"
-        Me.CheckBox28.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox28.TabIndex = 168
-        Me.CheckBox28.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_18.AutoSize = true
+        Me.Check_available_sfoods_18.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_18.Location = New System.Drawing.Point(619, 169)
+        Me.Check_available_sfoods_18.Name = "Check_available_sfoods_18"
+        Me.Check_available_sfoods_18.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_18.TabIndex = 168
+        Me.Check_available_sfoods_18.UseVisualStyleBackColor = false
         '
         'PictureBox28
         '
@@ -2536,35 +2538,35 @@ Partial Class Items_edit
         Me.PictureBox28.TabIndex = 167
         Me.PictureBox28.TabStop = false
         '
-        'NumericUpDown15
+        'valu_sfoods_17
         '
-        Me.NumericUpDown15.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown15.Location = New System.Drawing.Point(553, 165)
-        Me.NumericUpDown15.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown15.Name = "NumericUpDown15"
-        Me.NumericUpDown15.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown15.TabIndex = 166
-        Me.NumericUpDown15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_17.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_17.Location = New System.Drawing.Point(553, 165)
+        Me.valu_sfoods_17.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_17.Name = "valu_sfoods_17"
+        Me.valu_sfoods_17.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_17.TabIndex = 166
+        Me.valu_sfoods_17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox29
+        'Check_NA_sfoods_17
         '
-        Me.CheckBox29.AutoSize = true
-        Me.CheckBox29.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox29.Location = New System.Drawing.Point(598, 169)
-        Me.CheckBox29.Name = "CheckBox29"
-        Me.CheckBox29.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox29.TabIndex = 165
-        Me.CheckBox29.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_17.AutoSize = true
+        Me.Check_NA_sfoods_17.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_17.Location = New System.Drawing.Point(598, 169)
+        Me.Check_NA_sfoods_17.Name = "Check_NA_sfoods_17"
+        Me.Check_NA_sfoods_17.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_17.TabIndex = 165
+        Me.Check_NA_sfoods_17.UseVisualStyleBackColor = false
         '
-        'CheckBox30
+        'Check_available_sfoods_17
         '
-        Me.CheckBox30.AutoSize = true
-        Me.CheckBox30.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox30.Location = New System.Drawing.Point(537, 169)
-        Me.CheckBox30.Name = "CheckBox30"
-        Me.CheckBox30.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox30.TabIndex = 164
-        Me.CheckBox30.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_17.AutoSize = true
+        Me.Check_available_sfoods_17.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_17.Location = New System.Drawing.Point(537, 169)
+        Me.Check_available_sfoods_17.Name = "Check_available_sfoods_17"
+        Me.Check_available_sfoods_17.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_17.TabIndex = 164
+        Me.Check_available_sfoods_17.UseVisualStyleBackColor = false
         '
         'PictureBox29
         '
@@ -2576,35 +2578,35 @@ Partial Class Items_edit
         Me.PictureBox29.TabIndex = 163
         Me.PictureBox29.TabStop = false
         '
-        'NumericUpDown16
+        'valu_sfoods_16
         '
-        Me.NumericUpDown16.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown16.Location = New System.Drawing.Point(471, 165)
-        Me.NumericUpDown16.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown16.Name = "NumericUpDown16"
-        Me.NumericUpDown16.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown16.TabIndex = 162
-        Me.NumericUpDown16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_16.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_16.Location = New System.Drawing.Point(471, 165)
+        Me.valu_sfoods_16.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_16.Name = "valu_sfoods_16"
+        Me.valu_sfoods_16.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_16.TabIndex = 162
+        Me.valu_sfoods_16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox31
+        'Check_NA_sfoods_16
         '
-        Me.CheckBox31.AutoSize = true
-        Me.CheckBox31.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox31.Location = New System.Drawing.Point(516, 169)
-        Me.CheckBox31.Name = "CheckBox31"
-        Me.CheckBox31.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox31.TabIndex = 161
-        Me.CheckBox31.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_16.AutoSize = true
+        Me.Check_NA_sfoods_16.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_16.Location = New System.Drawing.Point(516, 169)
+        Me.Check_NA_sfoods_16.Name = "Check_NA_sfoods_16"
+        Me.Check_NA_sfoods_16.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_16.TabIndex = 161
+        Me.Check_NA_sfoods_16.UseVisualStyleBackColor = false
         '
-        'CheckBox32
+        'Check_available_sfoods_16
         '
-        Me.CheckBox32.AutoSize = true
-        Me.CheckBox32.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox32.Location = New System.Drawing.Point(455, 169)
-        Me.CheckBox32.Name = "CheckBox32"
-        Me.CheckBox32.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox32.TabIndex = 160
-        Me.CheckBox32.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_16.AutoSize = true
+        Me.Check_available_sfoods_16.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_16.Location = New System.Drawing.Point(455, 169)
+        Me.Check_available_sfoods_16.Name = "Check_available_sfoods_16"
+        Me.Check_available_sfoods_16.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_16.TabIndex = 160
+        Me.Check_available_sfoods_16.UseVisualStyleBackColor = false
         '
         'PictureBox30
         '
@@ -2616,35 +2618,35 @@ Partial Class Items_edit
         Me.PictureBox30.TabIndex = 159
         Me.PictureBox30.TabStop = false
         '
-        'NumericUpDown17
+        'valu_sfoods_15
         '
-        Me.NumericUpDown17.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown17.Location = New System.Drawing.Point(389, 165)
-        Me.NumericUpDown17.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown17.Name = "NumericUpDown17"
-        Me.NumericUpDown17.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown17.TabIndex = 158
-        Me.NumericUpDown17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_15.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_15.Location = New System.Drawing.Point(389, 165)
+        Me.valu_sfoods_15.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_15.Name = "valu_sfoods_15"
+        Me.valu_sfoods_15.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_15.TabIndex = 158
+        Me.valu_sfoods_15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox33
+        'Check_NA_sfoods_15
         '
-        Me.CheckBox33.AutoSize = true
-        Me.CheckBox33.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox33.Location = New System.Drawing.Point(434, 169)
-        Me.CheckBox33.Name = "CheckBox33"
-        Me.CheckBox33.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox33.TabIndex = 157
-        Me.CheckBox33.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_15.AutoSize = true
+        Me.Check_NA_sfoods_15.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_15.Location = New System.Drawing.Point(434, 169)
+        Me.Check_NA_sfoods_15.Name = "Check_NA_sfoods_15"
+        Me.Check_NA_sfoods_15.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_15.TabIndex = 157
+        Me.Check_NA_sfoods_15.UseVisualStyleBackColor = false
         '
-        'CheckBox34
+        'Check_available_sfoods_15
         '
-        Me.CheckBox34.AutoSize = true
-        Me.CheckBox34.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox34.Location = New System.Drawing.Point(373, 169)
-        Me.CheckBox34.Name = "CheckBox34"
-        Me.CheckBox34.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox34.TabIndex = 156
-        Me.CheckBox34.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_15.AutoSize = true
+        Me.Check_available_sfoods_15.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_15.Location = New System.Drawing.Point(373, 169)
+        Me.Check_available_sfoods_15.Name = "Check_available_sfoods_15"
+        Me.Check_available_sfoods_15.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_15.TabIndex = 156
+        Me.Check_available_sfoods_15.UseVisualStyleBackColor = false
         '
         'PictureBox31
         '
@@ -2656,35 +2658,35 @@ Partial Class Items_edit
         Me.PictureBox31.TabIndex = 155
         Me.PictureBox31.TabStop = false
         '
-        'NumericUpDown18
+        'valu_sfoods_14
         '
-        Me.NumericUpDown18.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown18.Location = New System.Drawing.Point(307, 165)
-        Me.NumericUpDown18.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown18.Name = "NumericUpDown18"
-        Me.NumericUpDown18.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown18.TabIndex = 154
-        Me.NumericUpDown18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_14.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_14.Location = New System.Drawing.Point(307, 165)
+        Me.valu_sfoods_14.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_14.Name = "valu_sfoods_14"
+        Me.valu_sfoods_14.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_14.TabIndex = 154
+        Me.valu_sfoods_14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox35
+        'Check_NA_sfoods_14
         '
-        Me.CheckBox35.AutoSize = true
-        Me.CheckBox35.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox35.Location = New System.Drawing.Point(352, 169)
-        Me.CheckBox35.Name = "CheckBox35"
-        Me.CheckBox35.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox35.TabIndex = 153
-        Me.CheckBox35.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_14.AutoSize = true
+        Me.Check_NA_sfoods_14.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_14.Location = New System.Drawing.Point(352, 169)
+        Me.Check_NA_sfoods_14.Name = "Check_NA_sfoods_14"
+        Me.Check_NA_sfoods_14.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_14.TabIndex = 153
+        Me.Check_NA_sfoods_14.UseVisualStyleBackColor = false
         '
-        'CheckBox36
+        'Check_available_sfoods_14
         '
-        Me.CheckBox36.AutoSize = true
-        Me.CheckBox36.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox36.Location = New System.Drawing.Point(291, 169)
-        Me.CheckBox36.Name = "CheckBox36"
-        Me.CheckBox36.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox36.TabIndex = 152
-        Me.CheckBox36.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_14.AutoSize = true
+        Me.Check_available_sfoods_14.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_14.Location = New System.Drawing.Point(291, 169)
+        Me.Check_available_sfoods_14.Name = "Check_available_sfoods_14"
+        Me.Check_available_sfoods_14.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_14.TabIndex = 152
+        Me.Check_available_sfoods_14.UseVisualStyleBackColor = false
         '
         'PictureBox32
         '
@@ -2696,35 +2698,35 @@ Partial Class Items_edit
         Me.PictureBox32.TabIndex = 151
         Me.PictureBox32.TabStop = false
         '
-        'NumericUpDown19
+        'valu_sfoods_13
         '
-        Me.NumericUpDown19.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown19.Location = New System.Drawing.Point(225, 165)
-        Me.NumericUpDown19.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown19.Name = "NumericUpDown19"
-        Me.NumericUpDown19.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown19.TabIndex = 150
-        Me.NumericUpDown19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_13.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_13.Location = New System.Drawing.Point(225, 165)
+        Me.valu_sfoods_13.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_13.Name = "valu_sfoods_13"
+        Me.valu_sfoods_13.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_13.TabIndex = 150
+        Me.valu_sfoods_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox37
+        'Check_NA_sfoods_13
         '
-        Me.CheckBox37.AutoSize = true
-        Me.CheckBox37.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox37.Location = New System.Drawing.Point(270, 169)
-        Me.CheckBox37.Name = "CheckBox37"
-        Me.CheckBox37.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox37.TabIndex = 149
-        Me.CheckBox37.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_13.AutoSize = true
+        Me.Check_NA_sfoods_13.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_13.Location = New System.Drawing.Point(270, 169)
+        Me.Check_NA_sfoods_13.Name = "Check_NA_sfoods_13"
+        Me.Check_NA_sfoods_13.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_13.TabIndex = 149
+        Me.Check_NA_sfoods_13.UseVisualStyleBackColor = false
         '
-        'CheckBox38
+        'Check_available_sfoods_13
         '
-        Me.CheckBox38.AutoSize = true
-        Me.CheckBox38.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox38.Location = New System.Drawing.Point(209, 169)
-        Me.CheckBox38.Name = "CheckBox38"
-        Me.CheckBox38.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox38.TabIndex = 148
-        Me.CheckBox38.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_13.AutoSize = true
+        Me.Check_available_sfoods_13.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_13.Location = New System.Drawing.Point(209, 169)
+        Me.Check_available_sfoods_13.Name = "Check_available_sfoods_13"
+        Me.Check_available_sfoods_13.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_13.TabIndex = 148
+        Me.Check_available_sfoods_13.UseVisualStyleBackColor = false
         '
         'PictureBox33
         '
@@ -2736,35 +2738,35 @@ Partial Class Items_edit
         Me.PictureBox33.TabIndex = 147
         Me.PictureBox33.TabStop = false
         '
-        'NumericUpDown20
+        'valu_sfoods_12
         '
-        Me.NumericUpDown20.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown20.Location = New System.Drawing.Point(143, 165)
-        Me.NumericUpDown20.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown20.Name = "NumericUpDown20"
-        Me.NumericUpDown20.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown20.TabIndex = 146
-        Me.NumericUpDown20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_12.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_12.Location = New System.Drawing.Point(143, 165)
+        Me.valu_sfoods_12.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_12.Name = "valu_sfoods_12"
+        Me.valu_sfoods_12.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_12.TabIndex = 146
+        Me.valu_sfoods_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox39
+        'Check_NA_sfoods_12
         '
-        Me.CheckBox39.AutoSize = true
-        Me.CheckBox39.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox39.Location = New System.Drawing.Point(188, 169)
-        Me.CheckBox39.Name = "CheckBox39"
-        Me.CheckBox39.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox39.TabIndex = 145
-        Me.CheckBox39.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_12.AutoSize = true
+        Me.Check_NA_sfoods_12.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_12.Location = New System.Drawing.Point(188, 169)
+        Me.Check_NA_sfoods_12.Name = "Check_NA_sfoods_12"
+        Me.Check_NA_sfoods_12.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_12.TabIndex = 145
+        Me.Check_NA_sfoods_12.UseVisualStyleBackColor = false
         '
-        'CheckBox40
+        'Check_available_sfoods_12
         '
-        Me.CheckBox40.AutoSize = true
-        Me.CheckBox40.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox40.Location = New System.Drawing.Point(127, 169)
-        Me.CheckBox40.Name = "CheckBox40"
-        Me.CheckBox40.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox40.TabIndex = 144
-        Me.CheckBox40.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_12.AutoSize = true
+        Me.Check_available_sfoods_12.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_12.Location = New System.Drawing.Point(127, 169)
+        Me.Check_available_sfoods_12.Name = "Check_available_sfoods_12"
+        Me.Check_available_sfoods_12.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_12.TabIndex = 144
+        Me.Check_available_sfoods_12.UseVisualStyleBackColor = false
         '
         'PictureBox34
         '
@@ -2776,35 +2778,35 @@ Partial Class Items_edit
         Me.PictureBox34.TabIndex = 143
         Me.PictureBox34.TabStop = false
         '
-        'NumericUpDown21
+        'valu_sfoods_11
         '
-        Me.NumericUpDown21.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown21.Location = New System.Drawing.Point(61, 165)
-        Me.NumericUpDown21.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown21.Name = "NumericUpDown21"
-        Me.NumericUpDown21.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown21.TabIndex = 142
-        Me.NumericUpDown21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_11.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_11.Location = New System.Drawing.Point(61, 165)
+        Me.valu_sfoods_11.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_11.Name = "valu_sfoods_11"
+        Me.valu_sfoods_11.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_11.TabIndex = 142
+        Me.valu_sfoods_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox41
+        'Check_NA_sfoods_11
         '
-        Me.CheckBox41.AutoSize = true
-        Me.CheckBox41.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox41.Location = New System.Drawing.Point(106, 169)
-        Me.CheckBox41.Name = "CheckBox41"
-        Me.CheckBox41.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox41.TabIndex = 141
-        Me.CheckBox41.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_11.AutoSize = true
+        Me.Check_NA_sfoods_11.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_11.Location = New System.Drawing.Point(106, 169)
+        Me.Check_NA_sfoods_11.Name = "Check_NA_sfoods_11"
+        Me.Check_NA_sfoods_11.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_11.TabIndex = 141
+        Me.Check_NA_sfoods_11.UseVisualStyleBackColor = false
         '
-        'CheckBox42
+        'Check_available_sfoods_11
         '
-        Me.CheckBox42.AutoSize = true
-        Me.CheckBox42.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox42.Location = New System.Drawing.Point(45, 169)
-        Me.CheckBox42.Name = "CheckBox42"
-        Me.CheckBox42.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox42.TabIndex = 140
-        Me.CheckBox42.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_11.AutoSize = true
+        Me.Check_available_sfoods_11.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_11.Location = New System.Drawing.Point(45, 169)
+        Me.Check_available_sfoods_11.Name = "Check_available_sfoods_11"
+        Me.Check_available_sfoods_11.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_11.TabIndex = 140
+        Me.Check_available_sfoods_11.UseVisualStyleBackColor = false
         '
         'PictureBox35
         '
@@ -2816,35 +2818,35 @@ Partial Class Items_edit
         Me.PictureBox35.TabIndex = 139
         Me.PictureBox35.TabStop = false
         '
-        'NumericUpDown10
+        'valu_sfoods_10
         '
-        Me.NumericUpDown10.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown10.Location = New System.Drawing.Point(799, 85)
-        Me.NumericUpDown10.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown10.Name = "NumericUpDown10"
-        Me.NumericUpDown10.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown10.TabIndex = 138
-        Me.NumericUpDown10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_10.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_10.Location = New System.Drawing.Point(799, 85)
+        Me.valu_sfoods_10.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_10.Name = "valu_sfoods_10"
+        Me.valu_sfoods_10.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_10.TabIndex = 138
+        Me.valu_sfoods_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox19
+        'Check_NA_sfoods_10
         '
-        Me.CheckBox19.AutoSize = true
-        Me.CheckBox19.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox19.Location = New System.Drawing.Point(844, 89)
-        Me.CheckBox19.Name = "CheckBox19"
-        Me.CheckBox19.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox19.TabIndex = 137
-        Me.CheckBox19.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_10.AutoSize = true
+        Me.Check_NA_sfoods_10.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_10.Location = New System.Drawing.Point(844, 89)
+        Me.Check_NA_sfoods_10.Name = "Check_NA_sfoods_10"
+        Me.Check_NA_sfoods_10.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_10.TabIndex = 137
+        Me.Check_NA_sfoods_10.UseVisualStyleBackColor = false
         '
-        'CheckBox20
+        'Check_available_sfoods_10
         '
-        Me.CheckBox20.AutoSize = true
-        Me.CheckBox20.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox20.Location = New System.Drawing.Point(783, 89)
-        Me.CheckBox20.Name = "CheckBox20"
-        Me.CheckBox20.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox20.TabIndex = 136
-        Me.CheckBox20.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_10.AutoSize = true
+        Me.Check_available_sfoods_10.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_10.Location = New System.Drawing.Point(783, 89)
+        Me.Check_available_sfoods_10.Name = "Check_available_sfoods_10"
+        Me.Check_available_sfoods_10.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_10.TabIndex = 136
+        Me.Check_available_sfoods_10.UseVisualStyleBackColor = false
         '
         'PictureBox24
         '
@@ -2856,35 +2858,35 @@ Partial Class Items_edit
         Me.PictureBox24.TabIndex = 135
         Me.PictureBox24.TabStop = false
         '
-        'NumericUpDown11
+        'valu_sfoods_9
         '
-        Me.NumericUpDown11.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown11.Location = New System.Drawing.Point(717, 85)
-        Me.NumericUpDown11.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown11.Name = "NumericUpDown11"
-        Me.NumericUpDown11.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown11.TabIndex = 134
-        Me.NumericUpDown11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_9.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_9.Location = New System.Drawing.Point(717, 85)
+        Me.valu_sfoods_9.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_9.Name = "valu_sfoods_9"
+        Me.valu_sfoods_9.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_9.TabIndex = 134
+        Me.valu_sfoods_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox21
+        'Check_NA_sfoods_9
         '
-        Me.CheckBox21.AutoSize = true
-        Me.CheckBox21.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox21.Location = New System.Drawing.Point(762, 89)
-        Me.CheckBox21.Name = "CheckBox21"
-        Me.CheckBox21.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox21.TabIndex = 133
-        Me.CheckBox21.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_9.AutoSize = true
+        Me.Check_NA_sfoods_9.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_9.Location = New System.Drawing.Point(762, 89)
+        Me.Check_NA_sfoods_9.Name = "Check_NA_sfoods_9"
+        Me.Check_NA_sfoods_9.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_9.TabIndex = 133
+        Me.Check_NA_sfoods_9.UseVisualStyleBackColor = false
         '
-        'CheckBox22
+        'Check_available_sfoods_9
         '
-        Me.CheckBox22.AutoSize = true
-        Me.CheckBox22.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox22.Location = New System.Drawing.Point(701, 89)
-        Me.CheckBox22.Name = "CheckBox22"
-        Me.CheckBox22.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox22.TabIndex = 132
-        Me.CheckBox22.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_9.AutoSize = true
+        Me.Check_available_sfoods_9.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_9.Location = New System.Drawing.Point(701, 89)
+        Me.Check_available_sfoods_9.Name = "Check_available_sfoods_9"
+        Me.Check_available_sfoods_9.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_9.TabIndex = 132
+        Me.Check_available_sfoods_9.UseVisualStyleBackColor = false
         '
         'PictureBox25
         '
@@ -2896,35 +2898,35 @@ Partial Class Items_edit
         Me.PictureBox25.TabIndex = 131
         Me.PictureBox25.TabStop = false
         '
-        'NumericUpDown6
+        'valu_sfoods_8
         '
-        Me.NumericUpDown6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown6.Location = New System.Drawing.Point(635, 85)
-        Me.NumericUpDown6.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown6.Name = "NumericUpDown6"
-        Me.NumericUpDown6.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown6.TabIndex = 130
-        Me.NumericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_8.Location = New System.Drawing.Point(635, 85)
+        Me.valu_sfoods_8.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_8.Name = "valu_sfoods_8"
+        Me.valu_sfoods_8.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_8.TabIndex = 130
+        Me.valu_sfoods_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox11
+        'Check_NA_sfoods_8
         '
-        Me.CheckBox11.AutoSize = true
-        Me.CheckBox11.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox11.Location = New System.Drawing.Point(680, 89)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox11.TabIndex = 129
-        Me.CheckBox11.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_8.AutoSize = true
+        Me.Check_NA_sfoods_8.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_8.Location = New System.Drawing.Point(680, 89)
+        Me.Check_NA_sfoods_8.Name = "Check_NA_sfoods_8"
+        Me.Check_NA_sfoods_8.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_8.TabIndex = 129
+        Me.Check_NA_sfoods_8.UseVisualStyleBackColor = false
         '
-        'CheckBox12
+        'Check_available_sfoods_8
         '
-        Me.CheckBox12.AutoSize = true
-        Me.CheckBox12.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox12.Location = New System.Drawing.Point(619, 89)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox12.TabIndex = 128
-        Me.CheckBox12.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_8.AutoSize = true
+        Me.Check_available_sfoods_8.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_8.Location = New System.Drawing.Point(619, 89)
+        Me.Check_available_sfoods_8.Name = "Check_available_sfoods_8"
+        Me.Check_available_sfoods_8.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_8.TabIndex = 128
+        Me.Check_available_sfoods_8.UseVisualStyleBackColor = false
         '
         'PictureBox20
         '
@@ -2936,35 +2938,35 @@ Partial Class Items_edit
         Me.PictureBox20.TabIndex = 127
         Me.PictureBox20.TabStop = false
         '
-        'NumericUpDown7
+        'valu_sfoods_7
         '
-        Me.NumericUpDown7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown7.Location = New System.Drawing.Point(553, 85)
-        Me.NumericUpDown7.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown7.Name = "NumericUpDown7"
-        Me.NumericUpDown7.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown7.TabIndex = 126
-        Me.NumericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_7.Location = New System.Drawing.Point(553, 85)
+        Me.valu_sfoods_7.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_7.Name = "valu_sfoods_7"
+        Me.valu_sfoods_7.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_7.TabIndex = 126
+        Me.valu_sfoods_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox13
+        'Check_NA_sfoods_7
         '
-        Me.CheckBox13.AutoSize = true
-        Me.CheckBox13.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox13.Location = New System.Drawing.Point(598, 89)
-        Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox13.TabIndex = 125
-        Me.CheckBox13.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_7.AutoSize = true
+        Me.Check_NA_sfoods_7.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_7.Location = New System.Drawing.Point(598, 89)
+        Me.Check_NA_sfoods_7.Name = "Check_NA_sfoods_7"
+        Me.Check_NA_sfoods_7.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_7.TabIndex = 125
+        Me.Check_NA_sfoods_7.UseVisualStyleBackColor = false
         '
-        'CheckBox14
+        'Check_available_sfoods_7
         '
-        Me.CheckBox14.AutoSize = true
-        Me.CheckBox14.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox14.Location = New System.Drawing.Point(537, 89)
-        Me.CheckBox14.Name = "CheckBox14"
-        Me.CheckBox14.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox14.TabIndex = 124
-        Me.CheckBox14.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_7.AutoSize = true
+        Me.Check_available_sfoods_7.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_7.Location = New System.Drawing.Point(537, 89)
+        Me.Check_available_sfoods_7.Name = "Check_available_sfoods_7"
+        Me.Check_available_sfoods_7.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_7.TabIndex = 124
+        Me.Check_available_sfoods_7.UseVisualStyleBackColor = false
         '
         'PictureBox21
         '
@@ -2976,35 +2978,35 @@ Partial Class Items_edit
         Me.PictureBox21.TabIndex = 123
         Me.PictureBox21.TabStop = false
         '
-        'NumericUpDown8
+        'valu_sfoods_6
         '
-        Me.NumericUpDown8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown8.Location = New System.Drawing.Point(471, 85)
-        Me.NumericUpDown8.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown8.Name = "NumericUpDown8"
-        Me.NumericUpDown8.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown8.TabIndex = 122
-        Me.NumericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_6.Location = New System.Drawing.Point(471, 85)
+        Me.valu_sfoods_6.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_6.Name = "valu_sfoods_6"
+        Me.valu_sfoods_6.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_6.TabIndex = 122
+        Me.valu_sfoods_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox15
+        'Check_NA_sfoods_6
         '
-        Me.CheckBox15.AutoSize = true
-        Me.CheckBox15.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox15.Location = New System.Drawing.Point(516, 89)
-        Me.CheckBox15.Name = "CheckBox15"
-        Me.CheckBox15.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox15.TabIndex = 121
-        Me.CheckBox15.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_6.AutoSize = true
+        Me.Check_NA_sfoods_6.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_6.Location = New System.Drawing.Point(516, 89)
+        Me.Check_NA_sfoods_6.Name = "Check_NA_sfoods_6"
+        Me.Check_NA_sfoods_6.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_6.TabIndex = 121
+        Me.Check_NA_sfoods_6.UseVisualStyleBackColor = false
         '
-        'CheckBox16
+        'Check_available_sfoods_6
         '
-        Me.CheckBox16.AutoSize = true
-        Me.CheckBox16.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox16.Location = New System.Drawing.Point(455, 89)
-        Me.CheckBox16.Name = "CheckBox16"
-        Me.CheckBox16.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox16.TabIndex = 120
-        Me.CheckBox16.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_6.AutoSize = true
+        Me.Check_available_sfoods_6.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_6.Location = New System.Drawing.Point(455, 89)
+        Me.Check_available_sfoods_6.Name = "Check_available_sfoods_6"
+        Me.Check_available_sfoods_6.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_6.TabIndex = 120
+        Me.Check_available_sfoods_6.UseVisualStyleBackColor = false
         '
         'PictureBox22
         '
@@ -3016,35 +3018,35 @@ Partial Class Items_edit
         Me.PictureBox22.TabIndex = 119
         Me.PictureBox22.TabStop = false
         '
-        'NumericUpDown9
+        'valu_sfoods_5
         '
-        Me.NumericUpDown9.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown9.Location = New System.Drawing.Point(389, 85)
-        Me.NumericUpDown9.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown9.Name = "NumericUpDown9"
-        Me.NumericUpDown9.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown9.TabIndex = 118
-        Me.NumericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_5.Location = New System.Drawing.Point(389, 85)
+        Me.valu_sfoods_5.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_5.Name = "valu_sfoods_5"
+        Me.valu_sfoods_5.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_5.TabIndex = 118
+        Me.valu_sfoods_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox17
+        'Check_NA_sfoods_5
         '
-        Me.CheckBox17.AutoSize = true
-        Me.CheckBox17.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox17.Location = New System.Drawing.Point(434, 89)
-        Me.CheckBox17.Name = "CheckBox17"
-        Me.CheckBox17.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox17.TabIndex = 117
-        Me.CheckBox17.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_5.AutoSize = true
+        Me.Check_NA_sfoods_5.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_5.Location = New System.Drawing.Point(434, 89)
+        Me.Check_NA_sfoods_5.Name = "Check_NA_sfoods_5"
+        Me.Check_NA_sfoods_5.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_5.TabIndex = 117
+        Me.Check_NA_sfoods_5.UseVisualStyleBackColor = false
         '
-        'CheckBox18
+        'Check_available_sfoods_5
         '
-        Me.CheckBox18.AutoSize = true
-        Me.CheckBox18.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox18.Location = New System.Drawing.Point(373, 89)
-        Me.CheckBox18.Name = "CheckBox18"
-        Me.CheckBox18.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox18.TabIndex = 116
-        Me.CheckBox18.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_5.AutoSize = true
+        Me.Check_available_sfoods_5.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_5.Location = New System.Drawing.Point(373, 89)
+        Me.Check_available_sfoods_5.Name = "Check_available_sfoods_5"
+        Me.Check_available_sfoods_5.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_5.TabIndex = 116
+        Me.Check_available_sfoods_5.UseVisualStyleBackColor = false
         '
         'PictureBox23
         '
@@ -3056,35 +3058,35 @@ Partial Class Items_edit
         Me.PictureBox23.TabIndex = 115
         Me.PictureBox23.TabStop = false
         '
-        'NumericUpDown4
+        'valu_sfoods_4
         '
-        Me.NumericUpDown4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown4.Location = New System.Drawing.Point(307, 85)
-        Me.NumericUpDown4.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown4.TabIndex = 114
-        Me.NumericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_4.Location = New System.Drawing.Point(307, 85)
+        Me.valu_sfoods_4.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_4.Name = "valu_sfoods_4"
+        Me.valu_sfoods_4.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_4.TabIndex = 114
+        Me.valu_sfoods_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox7
+        'Check_NA_sfoods_4
         '
-        Me.CheckBox7.AutoSize = true
-        Me.CheckBox7.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox7.Location = New System.Drawing.Point(352, 89)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox7.TabIndex = 113
-        Me.CheckBox7.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_4.AutoSize = true
+        Me.Check_NA_sfoods_4.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_4.Location = New System.Drawing.Point(352, 89)
+        Me.Check_NA_sfoods_4.Name = "Check_NA_sfoods_4"
+        Me.Check_NA_sfoods_4.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_4.TabIndex = 113
+        Me.Check_NA_sfoods_4.UseVisualStyleBackColor = false
         '
-        'CheckBox8
+        'Check_available_sfoods_4
         '
-        Me.CheckBox8.AutoSize = true
-        Me.CheckBox8.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox8.Location = New System.Drawing.Point(291, 89)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox8.TabIndex = 112
-        Me.CheckBox8.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_4.AutoSize = true
+        Me.Check_available_sfoods_4.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_4.Location = New System.Drawing.Point(291, 89)
+        Me.Check_available_sfoods_4.Name = "Check_available_sfoods_4"
+        Me.Check_available_sfoods_4.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_4.TabIndex = 112
+        Me.Check_available_sfoods_4.UseVisualStyleBackColor = false
         '
         'PictureBox8
         '
@@ -3096,35 +3098,35 @@ Partial Class Items_edit
         Me.PictureBox8.TabIndex = 111
         Me.PictureBox8.TabStop = false
         '
-        'NumericUpDown5
+        'valu_sfoods_3
         '
-        Me.NumericUpDown5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown5.Location = New System.Drawing.Point(225, 85)
-        Me.NumericUpDown5.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown5.Name = "NumericUpDown5"
-        Me.NumericUpDown5.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown5.TabIndex = 110
-        Me.NumericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_3.Location = New System.Drawing.Point(225, 85)
+        Me.valu_sfoods_3.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_3.Name = "valu_sfoods_3"
+        Me.valu_sfoods_3.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_3.TabIndex = 110
+        Me.valu_sfoods_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox9
+        'Check_NA_sfoods_3
         '
-        Me.CheckBox9.AutoSize = true
-        Me.CheckBox9.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox9.Location = New System.Drawing.Point(270, 89)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox9.TabIndex = 109
-        Me.CheckBox9.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_3.AutoSize = true
+        Me.Check_NA_sfoods_3.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_3.Location = New System.Drawing.Point(270, 89)
+        Me.Check_NA_sfoods_3.Name = "Check_NA_sfoods_3"
+        Me.Check_NA_sfoods_3.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_3.TabIndex = 109
+        Me.Check_NA_sfoods_3.UseVisualStyleBackColor = false
         '
-        'CheckBox10
+        'Check_available_sfoods_3
         '
-        Me.CheckBox10.AutoSize = true
-        Me.CheckBox10.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox10.Location = New System.Drawing.Point(209, 89)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox10.TabIndex = 108
-        Me.CheckBox10.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_3.AutoSize = true
+        Me.Check_available_sfoods_3.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_3.Location = New System.Drawing.Point(209, 89)
+        Me.Check_available_sfoods_3.Name = "Check_available_sfoods_3"
+        Me.Check_available_sfoods_3.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_3.TabIndex = 108
+        Me.Check_available_sfoods_3.UseVisualStyleBackColor = false
         '
         'PictureBox19
         '
@@ -3136,35 +3138,35 @@ Partial Class Items_edit
         Me.PictureBox19.TabIndex = 107
         Me.PictureBox19.TabStop = false
         '
-        'NumericUpDown3
+        'valu_sfoods_2
         '
-        Me.NumericUpDown3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown3.Location = New System.Drawing.Point(143, 85)
-        Me.NumericUpDown3.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown3.TabIndex = 106
-        Me.NumericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_2.Location = New System.Drawing.Point(143, 85)
+        Me.valu_sfoods_2.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_2.Name = "valu_sfoods_2"
+        Me.valu_sfoods_2.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_2.TabIndex = 106
+        Me.valu_sfoods_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox5
+        'Check_NA_sfoods_2
         '
-        Me.CheckBox5.AutoSize = true
-        Me.CheckBox5.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox5.Location = New System.Drawing.Point(188, 89)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox5.TabIndex = 105
-        Me.CheckBox5.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_2.AutoSize = true
+        Me.Check_NA_sfoods_2.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_2.Location = New System.Drawing.Point(188, 89)
+        Me.Check_NA_sfoods_2.Name = "Check_NA_sfoods_2"
+        Me.Check_NA_sfoods_2.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_2.TabIndex = 105
+        Me.Check_NA_sfoods_2.UseVisualStyleBackColor = false
         '
-        'CheckBox6
+        'Check_available_sfoods_2
         '
-        Me.CheckBox6.AutoSize = true
-        Me.CheckBox6.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox6.Location = New System.Drawing.Point(127, 89)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox6.TabIndex = 104
-        Me.CheckBox6.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_2.AutoSize = true
+        Me.Check_available_sfoods_2.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_2.Location = New System.Drawing.Point(127, 89)
+        Me.Check_available_sfoods_2.Name = "Check_available_sfoods_2"
+        Me.Check_available_sfoods_2.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_2.TabIndex = 104
+        Me.Check_available_sfoods_2.UseVisualStyleBackColor = false
         '
         'PictureBox7
         '
@@ -3176,35 +3178,35 @@ Partial Class Items_edit
         Me.PictureBox7.TabIndex = 103
         Me.PictureBox7.TabStop = false
         '
-        'NumericUpDown2
+        'valu_sfoods_1
         '
-        Me.NumericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown2.Location = New System.Drawing.Point(61, 85)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown2.TabIndex = 102
-        Me.NumericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_sfoods_1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_sfoods_1.Location = New System.Drawing.Point(61, 85)
+        Me.valu_sfoods_1.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_sfoods_1.Name = "valu_sfoods_1"
+        Me.valu_sfoods_1.Size = New System.Drawing.Size(44, 16)
+        Me.valu_sfoods_1.TabIndex = 102
+        Me.valu_sfoods_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox3
+        'Check_NA_sfoods_1
         '
-        Me.CheckBox3.AutoSize = true
-        Me.CheckBox3.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox3.Location = New System.Drawing.Point(106, 89)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox3.TabIndex = 101
-        Me.CheckBox3.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_1.AutoSize = true
+        Me.Check_NA_sfoods_1.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_sfoods_1.Location = New System.Drawing.Point(106, 89)
+        Me.Check_NA_sfoods_1.Name = "Check_NA_sfoods_1"
+        Me.Check_NA_sfoods_1.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_sfoods_1.TabIndex = 101
+        Me.Check_NA_sfoods_1.UseVisualStyleBackColor = false
         '
-        'CheckBox4
+        'Check_available_sfoods_1
         '
-        Me.CheckBox4.AutoSize = true
-        Me.CheckBox4.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox4.Location = New System.Drawing.Point(45, 89)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox4.TabIndex = 100
-        Me.CheckBox4.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_1.AutoSize = true
+        Me.Check_available_sfoods_1.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_sfoods_1.Location = New System.Drawing.Point(45, 89)
+        Me.Check_available_sfoods_1.Name = "Check_available_sfoods_1"
+        Me.Check_available_sfoods_1.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_sfoods_1.TabIndex = 100
+        Me.Check_available_sfoods_1.UseVisualStyleBackColor = false
         '
         'PictureBox6
         '
@@ -3574,23 +3576,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_18
         '
-        Me.Check_NA_goodi_18.AutoSize = True
+        Me.Check_NA_goodi_18.AutoSize = true
         Me.Check_NA_goodi_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_18.Location = New System.Drawing.Point(762, 316)
         Me.Check_NA_goodi_18.Name = "Check_NA_goodi_18"
         Me.Check_NA_goodi_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_18.TabIndex = 249
-        Me.Check_NA_goodi_18.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_18.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_18
         '
-        Me.Check_available_goodi_18.AutoSize = True
+        Me.Check_available_goodi_18.AutoSize = true
         Me.Check_available_goodi_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_18.Location = New System.Drawing.Point(701, 316)
         Me.Check_available_goodi_18.Name = "Check_available_goodi_18"
         Me.Check_available_goodi_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_18.TabIndex = 248
-        Me.Check_available_goodi_18.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_18.UseVisualStyleBackColor = false
         '
         'PictureBox61
         '
@@ -3600,7 +3602,7 @@ Partial Class Items_edit
         Me.PictureBox61.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox61.TabIndex = 247
-        Me.PictureBox61.TabStop = False
+        Me.PictureBox61.TabStop = false
         '
         'valu_goodi_17
         '
@@ -3614,23 +3616,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_17
         '
-        Me.Check_NA_goodi_17.AutoSize = True
+        Me.Check_NA_goodi_17.AutoSize = true
         Me.Check_NA_goodi_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_17.Location = New System.Drawing.Point(680, 316)
         Me.Check_NA_goodi_17.Name = "Check_NA_goodi_17"
         Me.Check_NA_goodi_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_17.TabIndex = 245
-        Me.Check_NA_goodi_17.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_17.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_17
         '
-        Me.Check_available_goodi_17.AutoSize = True
+        Me.Check_available_goodi_17.AutoSize = true
         Me.Check_available_goodi_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_17.Location = New System.Drawing.Point(619, 316)
         Me.Check_available_goodi_17.Name = "Check_available_goodi_17"
         Me.Check_available_goodi_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_17.TabIndex = 244
-        Me.Check_available_goodi_17.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_17.UseVisualStyleBackColor = false
         '
         'PictureBox62
         '
@@ -3640,7 +3642,7 @@ Partial Class Items_edit
         Me.PictureBox62.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox62.TabIndex = 243
-        Me.PictureBox62.TabStop = False
+        Me.PictureBox62.TabStop = false
         '
         'valu_goodi_16
         '
@@ -3654,23 +3656,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_16
         '
-        Me.Check_NA_goodi_16.AutoSize = True
+        Me.Check_NA_goodi_16.AutoSize = true
         Me.Check_NA_goodi_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_16.Location = New System.Drawing.Point(598, 316)
         Me.Check_NA_goodi_16.Name = "Check_NA_goodi_16"
         Me.Check_NA_goodi_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_16.TabIndex = 241
-        Me.Check_NA_goodi_16.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_16.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_16
         '
-        Me.Check_available_goodi_16.AutoSize = True
+        Me.Check_available_goodi_16.AutoSize = true
         Me.Check_available_goodi_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_16.Location = New System.Drawing.Point(537, 316)
         Me.Check_available_goodi_16.Name = "Check_available_goodi_16"
         Me.Check_available_goodi_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_16.TabIndex = 240
-        Me.Check_available_goodi_16.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_16.UseVisualStyleBackColor = false
         '
         'PictureBox63
         '
@@ -3680,7 +3682,7 @@ Partial Class Items_edit
         Me.PictureBox63.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox63.TabIndex = 239
-        Me.PictureBox63.TabStop = False
+        Me.PictureBox63.TabStop = false
         '
         'valu_goodi_15
         '
@@ -3694,23 +3696,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_15
         '
-        Me.Check_NA_goodi_15.AutoSize = True
+        Me.Check_NA_goodi_15.AutoSize = true
         Me.Check_NA_goodi_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_15.Location = New System.Drawing.Point(516, 316)
         Me.Check_NA_goodi_15.Name = "Check_NA_goodi_15"
         Me.Check_NA_goodi_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_15.TabIndex = 237
-        Me.Check_NA_goodi_15.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_15.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_15
         '
-        Me.Check_available_goodi_15.AutoSize = True
+        Me.Check_available_goodi_15.AutoSize = true
         Me.Check_available_goodi_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_15.Location = New System.Drawing.Point(455, 316)
         Me.Check_available_goodi_15.Name = "Check_available_goodi_15"
         Me.Check_available_goodi_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_15.TabIndex = 236
-        Me.Check_available_goodi_15.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_15.UseVisualStyleBackColor = false
         '
         'PictureBox64
         '
@@ -3720,7 +3722,7 @@ Partial Class Items_edit
         Me.PictureBox64.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox64.TabIndex = 235
-        Me.PictureBox64.TabStop = False
+        Me.PictureBox64.TabStop = false
         '
         'valu_goodi_14
         '
@@ -3734,23 +3736,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_14
         '
-        Me.Check_NA_goodi_14.AutoSize = True
+        Me.Check_NA_goodi_14.AutoSize = true
         Me.Check_NA_goodi_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_14.Location = New System.Drawing.Point(434, 316)
         Me.Check_NA_goodi_14.Name = "Check_NA_goodi_14"
         Me.Check_NA_goodi_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_14.TabIndex = 233
-        Me.Check_NA_goodi_14.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_14.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_14
         '
-        Me.Check_available_goodi_14.AutoSize = True
+        Me.Check_available_goodi_14.AutoSize = true
         Me.Check_available_goodi_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_14.Location = New System.Drawing.Point(373, 316)
         Me.Check_available_goodi_14.Name = "Check_available_goodi_14"
         Me.Check_available_goodi_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_14.TabIndex = 232
-        Me.Check_available_goodi_14.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_14.UseVisualStyleBackColor = false
         '
         'PictureBox65
         '
@@ -3760,7 +3762,7 @@ Partial Class Items_edit
         Me.PictureBox65.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox65.TabIndex = 231
-        Me.PictureBox65.TabStop = False
+        Me.PictureBox65.TabStop = false
         '
         'valu_goodi_13
         '
@@ -3774,23 +3776,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_13
         '
-        Me.Check_NA_goodi_13.AutoSize = True
+        Me.Check_NA_goodi_13.AutoSize = true
         Me.Check_NA_goodi_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_13.Location = New System.Drawing.Point(352, 316)
         Me.Check_NA_goodi_13.Name = "Check_NA_goodi_13"
         Me.Check_NA_goodi_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_13.TabIndex = 229
-        Me.Check_NA_goodi_13.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_13.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_13
         '
-        Me.Check_available_goodi_13.AutoSize = True
+        Me.Check_available_goodi_13.AutoSize = true
         Me.Check_available_goodi_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_13.Location = New System.Drawing.Point(291, 316)
         Me.Check_available_goodi_13.Name = "Check_available_goodi_13"
         Me.Check_available_goodi_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_13.TabIndex = 228
-        Me.Check_available_goodi_13.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_13.UseVisualStyleBackColor = false
         '
         'PictureBox66
         '
@@ -3800,7 +3802,7 @@ Partial Class Items_edit
         Me.PictureBox66.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox66.TabIndex = 227
-        Me.PictureBox66.TabStop = False
+        Me.PictureBox66.TabStop = false
         '
         'valu_goodi_12
         '
@@ -3814,23 +3816,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_12
         '
-        Me.Check_NA_goodi_12.AutoSize = True
+        Me.Check_NA_goodi_12.AutoSize = true
         Me.Check_NA_goodi_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_12.Location = New System.Drawing.Point(270, 316)
         Me.Check_NA_goodi_12.Name = "Check_NA_goodi_12"
         Me.Check_NA_goodi_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_12.TabIndex = 225
-        Me.Check_NA_goodi_12.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_12.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_12
         '
-        Me.Check_available_goodi_12.AutoSize = True
+        Me.Check_available_goodi_12.AutoSize = true
         Me.Check_available_goodi_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_12.Location = New System.Drawing.Point(209, 316)
         Me.Check_available_goodi_12.Name = "Check_available_goodi_12"
         Me.Check_available_goodi_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_12.TabIndex = 224
-        Me.Check_available_goodi_12.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_12.UseVisualStyleBackColor = false
         '
         'PictureBox67
         '
@@ -3840,7 +3842,7 @@ Partial Class Items_edit
         Me.PictureBox67.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox67.TabIndex = 223
-        Me.PictureBox67.TabStop = False
+        Me.PictureBox67.TabStop = false
         '
         'valu_goodi_11
         '
@@ -3854,23 +3856,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_11
         '
-        Me.Check_NA_goodi_11.AutoSize = True
+        Me.Check_NA_goodi_11.AutoSize = true
         Me.Check_NA_goodi_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_11.Location = New System.Drawing.Point(188, 316)
         Me.Check_NA_goodi_11.Name = "Check_NA_goodi_11"
         Me.Check_NA_goodi_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_11.TabIndex = 221
-        Me.Check_NA_goodi_11.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_11.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_11
         '
-        Me.Check_available_goodi_11.AutoSize = True
+        Me.Check_available_goodi_11.AutoSize = true
         Me.Check_available_goodi_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_11.Location = New System.Drawing.Point(127, 316)
         Me.Check_available_goodi_11.Name = "Check_available_goodi_11"
         Me.Check_available_goodi_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_11.TabIndex = 220
-        Me.Check_available_goodi_11.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_11.UseVisualStyleBackColor = false
         '
         'PictureBox68
         '
@@ -3880,7 +3882,7 @@ Partial Class Items_edit
         Me.PictureBox68.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox68.TabIndex = 219
-        Me.PictureBox68.TabStop = False
+        Me.PictureBox68.TabStop = false
         '
         'valu_goodi_10
         '
@@ -3894,23 +3896,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_10
         '
-        Me.Check_NA_goodi_10.AutoSize = True
+        Me.Check_NA_goodi_10.AutoSize = true
         Me.Check_NA_goodi_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_10.Location = New System.Drawing.Point(844, 236)
         Me.Check_NA_goodi_10.Name = "Check_NA_goodi_10"
         Me.Check_NA_goodi_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_10.TabIndex = 217
-        Me.Check_NA_goodi_10.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_10.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_10
         '
-        Me.Check_available_goodi_10.AutoSize = True
+        Me.Check_available_goodi_10.AutoSize = true
         Me.Check_available_goodi_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_10.Location = New System.Drawing.Point(783, 236)
         Me.Check_available_goodi_10.Name = "Check_available_goodi_10"
         Me.Check_available_goodi_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_10.TabIndex = 216
-        Me.Check_available_goodi_10.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_10.UseVisualStyleBackColor = false
         '
         'PictureBox69
         '
@@ -3920,7 +3922,7 @@ Partial Class Items_edit
         Me.PictureBox69.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox69.TabIndex = 215
-        Me.PictureBox69.TabStop = False
+        Me.PictureBox69.TabStop = false
         '
         'valu_goodi_9
         '
@@ -3934,23 +3936,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_9
         '
-        Me.Check_NA_goodi_9.AutoSize = True
+        Me.Check_NA_goodi_9.AutoSize = true
         Me.Check_NA_goodi_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_9.Location = New System.Drawing.Point(762, 236)
         Me.Check_NA_goodi_9.Name = "Check_NA_goodi_9"
         Me.Check_NA_goodi_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_9.TabIndex = 213
-        Me.Check_NA_goodi_9.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_9.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_9
         '
-        Me.Check_available_goodi_9.AutoSize = True
+        Me.Check_available_goodi_9.AutoSize = true
         Me.Check_available_goodi_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_9.Location = New System.Drawing.Point(701, 236)
         Me.Check_available_goodi_9.Name = "Check_available_goodi_9"
         Me.Check_available_goodi_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_9.TabIndex = 212
-        Me.Check_available_goodi_9.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_9.UseVisualStyleBackColor = false
         '
         'PictureBox70
         '
@@ -3960,7 +3962,7 @@ Partial Class Items_edit
         Me.PictureBox70.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox70.TabIndex = 211
-        Me.PictureBox70.TabStop = False
+        Me.PictureBox70.TabStop = false
         '
         'valu_goodi_8
         '
@@ -3974,23 +3976,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_8
         '
-        Me.Check_NA_goodi_8.AutoSize = True
+        Me.Check_NA_goodi_8.AutoSize = true
         Me.Check_NA_goodi_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_8.Location = New System.Drawing.Point(680, 236)
         Me.Check_NA_goodi_8.Name = "Check_NA_goodi_8"
         Me.Check_NA_goodi_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_8.TabIndex = 209
-        Me.Check_NA_goodi_8.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_8.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_8
         '
-        Me.Check_available_goodi_8.AutoSize = True
+        Me.Check_available_goodi_8.AutoSize = true
         Me.Check_available_goodi_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_8.Location = New System.Drawing.Point(619, 236)
         Me.Check_available_goodi_8.Name = "Check_available_goodi_8"
         Me.Check_available_goodi_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_8.TabIndex = 208
-        Me.Check_available_goodi_8.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_8.UseVisualStyleBackColor = false
         '
         'PictureBox71
         '
@@ -4000,7 +4002,7 @@ Partial Class Items_edit
         Me.PictureBox71.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox71.TabIndex = 207
-        Me.PictureBox71.TabStop = False
+        Me.PictureBox71.TabStop = false
         '
         'valu_goodi_7
         '
@@ -4014,23 +4016,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_7
         '
-        Me.Check_NA_goodi_7.AutoSize = True
+        Me.Check_NA_goodi_7.AutoSize = true
         Me.Check_NA_goodi_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_7.Location = New System.Drawing.Point(598, 236)
         Me.Check_NA_goodi_7.Name = "Check_NA_goodi_7"
         Me.Check_NA_goodi_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_7.TabIndex = 205
-        Me.Check_NA_goodi_7.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_7.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_7
         '
-        Me.Check_available_goodi_7.AutoSize = True
+        Me.Check_available_goodi_7.AutoSize = true
         Me.Check_available_goodi_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_7.Location = New System.Drawing.Point(537, 236)
         Me.Check_available_goodi_7.Name = "Check_available_goodi_7"
         Me.Check_available_goodi_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_7.TabIndex = 204
-        Me.Check_available_goodi_7.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_7.UseVisualStyleBackColor = false
         '
         'PictureBox72
         '
@@ -4040,7 +4042,7 @@ Partial Class Items_edit
         Me.PictureBox72.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox72.TabIndex = 203
-        Me.PictureBox72.TabStop = False
+        Me.PictureBox72.TabStop = false
         '
         'valu_goodi_6
         '
@@ -4054,23 +4056,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_6
         '
-        Me.Check_NA_goodi_6.AutoSize = True
+        Me.Check_NA_goodi_6.AutoSize = true
         Me.Check_NA_goodi_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_6.Location = New System.Drawing.Point(516, 236)
         Me.Check_NA_goodi_6.Name = "Check_NA_goodi_6"
         Me.Check_NA_goodi_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_6.TabIndex = 201
-        Me.Check_NA_goodi_6.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_6.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_6
         '
-        Me.Check_available_goodi_6.AutoSize = True
+        Me.Check_available_goodi_6.AutoSize = true
         Me.Check_available_goodi_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_6.Location = New System.Drawing.Point(455, 236)
         Me.Check_available_goodi_6.Name = "Check_available_goodi_6"
         Me.Check_available_goodi_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_6.TabIndex = 200
-        Me.Check_available_goodi_6.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_6.UseVisualStyleBackColor = false
         '
         'PictureBox73
         '
@@ -4080,7 +4082,7 @@ Partial Class Items_edit
         Me.PictureBox73.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox73.TabIndex = 199
-        Me.PictureBox73.TabStop = False
+        Me.PictureBox73.TabStop = false
         '
         'valu_goodi_5
         '
@@ -4094,23 +4096,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_5
         '
-        Me.Check_NA_goodi_5.AutoSize = True
+        Me.Check_NA_goodi_5.AutoSize = true
         Me.Check_NA_goodi_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_5.Location = New System.Drawing.Point(434, 236)
         Me.Check_NA_goodi_5.Name = "Check_NA_goodi_5"
         Me.Check_NA_goodi_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_5.TabIndex = 197
-        Me.Check_NA_goodi_5.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_5.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_5
         '
-        Me.Check_available_goodi_5.AutoSize = True
+        Me.Check_available_goodi_5.AutoSize = true
         Me.Check_available_goodi_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_5.Location = New System.Drawing.Point(373, 236)
         Me.Check_available_goodi_5.Name = "Check_available_goodi_5"
         Me.Check_available_goodi_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_5.TabIndex = 196
-        Me.Check_available_goodi_5.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_5.UseVisualStyleBackColor = false
         '
         'PictureBox74
         '
@@ -4120,7 +4122,7 @@ Partial Class Items_edit
         Me.PictureBox74.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox74.TabIndex = 195
-        Me.PictureBox74.TabStop = False
+        Me.PictureBox74.TabStop = false
         '
         'valu_goodi_4
         '
@@ -4134,23 +4136,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_4
         '
-        Me.Check_NA_goodi_4.AutoSize = True
+        Me.Check_NA_goodi_4.AutoSize = true
         Me.Check_NA_goodi_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_4.Location = New System.Drawing.Point(352, 236)
         Me.Check_NA_goodi_4.Name = "Check_NA_goodi_4"
         Me.Check_NA_goodi_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_4.TabIndex = 193
-        Me.Check_NA_goodi_4.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_4.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_4
         '
-        Me.Check_available_goodi_4.AutoSize = True
+        Me.Check_available_goodi_4.AutoSize = true
         Me.Check_available_goodi_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_4.Location = New System.Drawing.Point(291, 236)
         Me.Check_available_goodi_4.Name = "Check_available_goodi_4"
         Me.Check_available_goodi_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_4.TabIndex = 192
-        Me.Check_available_goodi_4.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_4.UseVisualStyleBackColor = false
         '
         'PictureBox75
         '
@@ -4160,7 +4162,7 @@ Partial Class Items_edit
         Me.PictureBox75.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox75.TabIndex = 191
-        Me.PictureBox75.TabStop = False
+        Me.PictureBox75.TabStop = false
         '
         'valu_goodi_3
         '
@@ -4174,23 +4176,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_3
         '
-        Me.Check_NA_goodi_3.AutoSize = True
+        Me.Check_NA_goodi_3.AutoSize = true
         Me.Check_NA_goodi_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_3.Location = New System.Drawing.Point(270, 236)
         Me.Check_NA_goodi_3.Name = "Check_NA_goodi_3"
         Me.Check_NA_goodi_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_3.TabIndex = 189
-        Me.Check_NA_goodi_3.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_3.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_3
         '
-        Me.Check_available_goodi_3.AutoSize = True
+        Me.Check_available_goodi_3.AutoSize = true
         Me.Check_available_goodi_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_3.Location = New System.Drawing.Point(209, 236)
         Me.Check_available_goodi_3.Name = "Check_available_goodi_3"
         Me.Check_available_goodi_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_3.TabIndex = 188
-        Me.Check_available_goodi_3.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_3.UseVisualStyleBackColor = false
         '
         'PictureBox76
         '
@@ -4200,7 +4202,7 @@ Partial Class Items_edit
         Me.PictureBox76.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox76.TabIndex = 187
-        Me.PictureBox76.TabStop = False
+        Me.PictureBox76.TabStop = false
         '
         'valu_goodi_2
         '
@@ -4214,23 +4216,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_2
         '
-        Me.Check_NA_goodi_2.AutoSize = True
+        Me.Check_NA_goodi_2.AutoSize = true
         Me.Check_NA_goodi_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_2.Location = New System.Drawing.Point(188, 236)
         Me.Check_NA_goodi_2.Name = "Check_NA_goodi_2"
         Me.Check_NA_goodi_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_2.TabIndex = 185
-        Me.Check_NA_goodi_2.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_2.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_2
         '
-        Me.Check_available_goodi_2.AutoSize = True
+        Me.Check_available_goodi_2.AutoSize = true
         Me.Check_available_goodi_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_2.Location = New System.Drawing.Point(127, 236)
         Me.Check_available_goodi_2.Name = "Check_available_goodi_2"
         Me.Check_available_goodi_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_2.TabIndex = 184
-        Me.Check_available_goodi_2.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_2.UseVisualStyleBackColor = false
         '
         'PictureBox170
         '
@@ -4240,7 +4242,7 @@ Partial Class Items_edit
         Me.PictureBox170.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox170.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox170.TabIndex = 183
-        Me.PictureBox170.TabStop = False
+        Me.PictureBox170.TabStop = false
         '
         'valu_goodi_1
         '
@@ -4254,7 +4256,7 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_1
         '
-        Me.Check_NA_goodi_1.AutoSize = True
+        Me.Check_NA_goodi_1.AutoSize = true
         Me.Check_NA_goodi_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_1.Location = New System.Drawing.Point(106, 236)
         Me.Check_NA_goodi_1.Name = "Check_NA_goodi_1"
@@ -8858,6 +8860,17 @@ Partial Class Items_edit
         Me.Icon_interiors_left.TabIndex = 110
         Me.Icon_interiors_left.TabStop = false
         '
+        'Icon_closesave
+        '
+        Me.Icon_closesave.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_closesave.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_closesave.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_validsave
+        Me.Icon_closesave.Location = New System.Drawing.Point(800, 0)
+        Me.Icon_closesave.Name = "Icon_closesave"
+        Me.Icon_closesave.Size = New System.Drawing.Size(40, 30)
+        Me.Icon_closesave.TabIndex = 106
+        Me.Icon_closesave.TabStop = false
+        '
         'Items_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -8866,6 +8879,7 @@ Partial Class Items_edit
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"),System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(907, 545)
         Me.ControlBox = false
+        Me.Controls.Add(Me.Icon_closesave)
         Me.Controls.Add(Me.Icon_hats_03)
         Me.Controls.Add(Me.Icon_hats_02)
         Me.Controls.Add(Me.Icon_clothes_03)
@@ -8887,10 +8901,10 @@ Partial Class Items_edit
         Me.Controls.Add(Me.Icon_hats)
         Me.Controls.Add(Me.Icon_clothes)
         Me.Controls.Add(Me.Icon_normalfoods)
-        Me.Controls.Add(Me.Panel_gooditems)
         Me.Controls.Add(Me.Panel_specialfoods)
         Me.Controls.Add(Me.Panel_interiors_1)
         Me.Controls.Add(Me.Panel_interiors)
+        Me.Controls.Add(Me.Panel_gooditems)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Items_edit"
@@ -8898,101 +8912,101 @@ Partial Class Items_edit
         Me.Text = "Items_edit"
         Me.Panel_specialfoods.ResumeLayout(false)
         Me.Panel_specialfoods.PerformLayout
-        CType(Me.NumericUpDown1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_48,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox41,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown42,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_47,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox42,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown43,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_46,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox43,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown44,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_45,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox44,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown45,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_44,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox45,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown46,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_43,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox46,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown47,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_42,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox47,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown48,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_41,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox48,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown22,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_40,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox36,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown23,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_39,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox37,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown24,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_38,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox38,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown25,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_37,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox39,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown26,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_36,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox40,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown27,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_35,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox49,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown28,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_34,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox55,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown29,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_33,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox56,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown30,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_32,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox57,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown31,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_31,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox86,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown32,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_30,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox87,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown33,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_29,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox88,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown34,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_28,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox99,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown35,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_27,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox100,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown36,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_26,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox101,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown37,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_25,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox112,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown38,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_24,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox113,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown39,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_23,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox167,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown40,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_22,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox168,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown41,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_21,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox169,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown12,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_20,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox26,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown13,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_19,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox27,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown14,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_18,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox28,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown15,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_17,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox29,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown16,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_16,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox30,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown17,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_15,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox31,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown18,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_14,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox32,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown19,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_13,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox33,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown20,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_12,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox34,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown21,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_11,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox35,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown10,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_10,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox24,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown11,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_9,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox25,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown6,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_8,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox20,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown7,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_7,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox21,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown8,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_6,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox22,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown9,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_5,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox23,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_4,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown5,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_3,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox19,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_2,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sfoods_1,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_hats_03,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_hats_02,System.ComponentModel.ISupportInitialize).EndInit
@@ -9265,6 +9279,7 @@ Partial Class Items_edit
         CType(Me.NumericUpDown146,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox141,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_interiors_left,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_closesave,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
 
 End Sub
@@ -9297,197 +9312,197 @@ End Sub
     Friend WithEvents Panel_interiors_1 As System.Windows.Forms.Panel
     Friend WithEvents Icon_interiors_left As System.Windows.Forms.PictureBox
     Friend WithEvents Icon_interiors_right As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown1 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_48 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_48 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_48 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox41 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown42 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox83 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox84 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_47 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_47 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_47 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox42 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown43 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox85 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox86 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_46 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_46 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_46 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox43 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown44 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox87 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox88 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_45 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_45 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_45 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox44 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown45 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox89 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox90 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_44 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_44 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_44 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox45 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown46 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox91 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox92 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_43 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_43 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_43 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox46 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown47 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox93 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox94 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_42 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_42 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_42 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox47 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown48 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox95 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox96 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_41 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_41 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_41 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox48 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown22 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox43 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox44 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_40 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_40 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_40 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox36 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown23 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox45 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox46 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_39 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_39 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_39 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox37 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown24 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox47 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox48 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_38 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_38 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_38 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox38 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown25 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox49 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox50 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_37 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_37 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_37 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox39 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown26 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox51 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox52 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_36 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_36 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_36 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox40 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown27 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox53 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox54 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_35 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_35 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_35 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox49 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown28 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox55 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox56 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_34 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_34 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_34 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox55 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown29 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox57 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox58 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_33 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_33 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_33 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox56 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown30 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox59 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox60 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_32 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_32 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_32 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox57 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown31 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox61 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox62 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_31 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_31 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_31 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox86 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown32 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox63 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox64 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_30 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_30 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_30 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox87 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown33 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox65 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox66 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_29 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_29 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_29 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox88 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown34 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox67 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox68 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_28 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_28 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_28 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox99 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown35 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox69 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox70 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_27 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_27 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_27 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox100 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown36 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox71 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox72 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_26 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_26 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_26 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox101 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown37 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox73 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox74 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_25 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_25 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_25 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox112 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown38 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox75 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox76 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_24 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_24 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_24 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox113 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown39 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox77 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox78 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_23 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_23 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_23 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox167 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown40 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox79 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox80 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_22 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_22 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_22 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox168 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown41 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox81 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox82 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_21 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_21 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_21 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox169 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown12 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox23 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox24 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_20 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_20 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_20 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox26 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown13 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox25 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox26 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_19 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_19 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_19 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox27 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown14 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox27 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox28 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_18 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_18 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_18 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox28 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown15 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox29 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox30 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_17 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_17 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_17 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox29 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown16 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox31 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox32 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_16 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_16 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_16 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox30 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown17 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox33 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox34 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_15 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_15 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_15 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox31 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown18 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox35 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox36 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_14 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_14 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_14 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox32 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown19 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox37 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox38 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_13 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_13 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_13 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox33 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown20 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox39 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox40 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_12 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_12 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_12 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox34 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown21 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox41 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox42 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_11 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_11 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_11 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox35 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown10 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox19 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox20 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_10 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_10 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_10 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox24 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown11 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox21 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox22 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_9 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_9 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_9 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox25 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown6 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox11 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox12 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_8 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_8 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_8 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown7 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox13 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox14 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_7 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_7 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_7 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox21 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown8 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox15 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox16 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_6 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_6 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_6 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox22 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown9 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox17 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox18 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_5 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_5 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_5 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox23 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown4 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox7 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox8 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_4 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_4 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_4 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown5 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox9 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox10 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_3 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_3 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_3 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox19 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown3 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox5 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox6 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_2 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_2 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown2 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox4 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_sfoods_1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_sfoods_1 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_sfoods_1 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents valu_goodi_18 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Check_NA_goodi_18 As System.Windows.Forms.CheckBox
@@ -9973,4 +9988,5 @@ End Sub
     Friend WithEvents CheckBox291 As System.Windows.Forms.CheckBox
     Friend WithEvents CheckBox292 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox141 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_closesave As System.Windows.Forms.PictureBox
 End Class
