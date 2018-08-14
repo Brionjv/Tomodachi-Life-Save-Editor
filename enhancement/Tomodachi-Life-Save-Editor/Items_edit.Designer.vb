@@ -729,377 +729,382 @@ Partial Class Items_edit
         Me.PictureBox141 = New System.Windows.Forms.PictureBox()
         Me.Icon_interiors_left = New System.Windows.Forms.PictureBox()
         Me.Icon_closesave = New System.Windows.Forms.PictureBox()
-        Me.Panel_specialfoods.SuspendLayout
-        CType(Me.valu_sfoods_48,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox41,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_47,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox42,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_46,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox43,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_45,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox44,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_44,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox45,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_43,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox46,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_42,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox47,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_41,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox48,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_40,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox36,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_39,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox37,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_38,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox38,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_37,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox39,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_36,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox40,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_35,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox49,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_34,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox55,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_33,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox56,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_32,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox57,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_31,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox86,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_30,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox87,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_29,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox88,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_28,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox99,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_27,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox100,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_26,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox101,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_25,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox112,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_24,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox113,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_23,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox167,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_22,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox168,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_21,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox169,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_20,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox26,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_19,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox27,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_18,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox28,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_17,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox29,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_16,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox30,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_15,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox31,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_14,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox32,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_13,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox33,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_12,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox34,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_11,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox35,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_10,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox24,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_9,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox25,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_8,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox20,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_7,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox21,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_6,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox22,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_5,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox23,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_4,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_3,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox19,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_sfoods_1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_hats_03,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_hats_02,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_hats_01,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_normalfoods_01,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_normalfoods_03,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_normalfoods_04,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_normalfoods_02,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_normalfoods,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_clothes,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_interiors,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_hats,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_treasures,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_gooditems,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Icon_treasures_01.SuspendLayout
-        Me.Icon_specialfoods.SuspendLayout
-        CType(Me.Icon_return,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_clothes_01,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_clothes_02,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_clothes_04,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_clothes_03,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_clothes_05,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel_gooditems.SuspendLayout
-        CType(Me.valu_goodi_18,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox61,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_17,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox62,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_16,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox63,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_15,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox64,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_14,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox65,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_13,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox66,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_12,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox67,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_11,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox68,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_10,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox69,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_9,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox70,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_8,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox71,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_7,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox72,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_6,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox73,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_5,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox74,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_4,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox75,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_3,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox76,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox170,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_goodi_1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox171,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel_interiors.SuspendLayout
-        CType(Me.NumericUpDown107,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox97,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown108,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox98,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown109,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox102,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown110,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox103,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown111,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox104,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown112,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox105,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown113,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox106,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown114,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox107,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown115,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox108,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown116,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox109,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown117,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox110,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown118,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox111,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown119,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox115,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown120,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox116,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown121,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox117,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown122,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox118,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown123,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox119,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown124,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox120,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown125,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox121,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown126,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox122,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown87,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox58,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown88,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox59,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown89,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox60,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown90,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox77,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown91,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox78,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown92,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox79,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown93,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox80,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown94,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox81,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown95,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox82,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown96,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox83,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown97,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox84,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown98,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox85,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown99,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox89,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown100,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox90,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown101,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox91,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown102,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox92,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown103,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox93,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown104,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox94,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown105,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox95,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown106,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox96,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown77,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox14,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown78,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox15,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown79,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox16,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown80,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox17,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown81,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox18,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown82,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox50,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown83,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox51,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown84,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox52,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown85,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox53,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown86,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox54,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown49,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown50,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown69,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown70,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown71,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown72,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown73,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown74,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown75,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox12,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown76,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_interiors_right,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel_interiors_1.SuspendLayout
-        CType(Me.NumericUpDown167,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox162,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown168,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox163,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown169,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox164,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown147,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox142,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown148,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox143,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown149,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox144,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown150,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox145,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown151,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox146,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown152,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox147,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown153,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox148,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown154,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox149,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown155,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox150,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown156,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox151,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown157,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox152,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown158,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox153,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown159,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox154,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown160,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox155,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown161,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox156,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown162,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox157,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown163,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox158,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown164,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox159,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown165,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox160,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown166,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox161,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown127,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox114,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown128,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox123,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown129,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox124,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown130,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox125,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown131,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox126,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown132,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox127,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown133,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox128,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown134,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox129,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown135,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox130,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown136,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox131,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown137,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox132,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown138,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox133,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown139,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox134,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown140,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox135,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown141,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox136,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown142,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox137,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown143,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox138,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown144,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox139,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown145,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox140,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.NumericUpDown146,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox141,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_interiors_left,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_closesave,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        Me.Info_itemsedit = New System.Windows.Forms.Label()
+        Me.Panel_info_itemsedit = New System.Windows.Forms.Panel()
+        Me.Info_text_notavailable = New System.Windows.Forms.Label()
+        Me.Info_text_available = New System.Windows.Forms.Label()
+        Me.Panel_specialfoods.SuspendLayout()
+        CType(Me.valu_sfoods_48, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_47, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_46, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_45, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox44, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_44, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox45, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_43, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox46, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_42, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox47, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_41, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox48, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_40, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_39, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_38, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_37, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_36, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox49, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox55, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox56, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox57, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox86, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox87, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox88, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox99, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox100, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox101, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox112, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox113, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox167, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox168, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox169, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_sfoods_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_hats_03, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_hats_02, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_hats_01, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_normalfoods_01, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_normalfoods_03, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_normalfoods_04, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_normalfoods_02, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_normalfoods, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_clothes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_hats, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_treasures, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_gooditems, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Icon_treasures_01.SuspendLayout()
+        Me.Icon_specialfoods.SuspendLayout()
+        CType(Me.Icon_return, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_clothes_01, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_clothes_02, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_clothes_04, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_clothes_03, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_clothes_05, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_gooditems.SuspendLayout()
+        CType(Me.valu_goodi_18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox62, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox63, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox64, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox65, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox66, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox67, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox68, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox69, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox70, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox71, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox72, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox73, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox74, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox75, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox76, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox170, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_goodi_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox171, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_interiors.SuspendLayout()
+        CType(Me.NumericUpDown107, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox97, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown108, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox98, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown109, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox102, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown110, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox103, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown111, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox104, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown112, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox105, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown113, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox106, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown114, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox107, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown115, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox108, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown116, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox109, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown117, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox110, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown118, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox111, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown119, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox115, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown120, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox116, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown121, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox117, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown122, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox118, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown123, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox119, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown124, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox120, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown125, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox121, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown126, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox122, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown87, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox58, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown88, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox59, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown89, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox60, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown90, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox77, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown91, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox78, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown92, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox79, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown93, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox80, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown94, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox81, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown95, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox82, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown96, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox83, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown97, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox84, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown98, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox85, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown99, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox89, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown100, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox90, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown101, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox91, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown102, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox92, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown103, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox93, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown104, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox94, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown105, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox95, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown106, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox96, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown77, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown78, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown79, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown80, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown81, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown82, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox50, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown83, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox51, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown84, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox52, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown85, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox53, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown86, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox54, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown49, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown50, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown69, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown70, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown71, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown72, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown73, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown74, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown75, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown76, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_interiors_right, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_interiors_1.SuspendLayout()
+        CType(Me.NumericUpDown167, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox162, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown168, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox163, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown169, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox164, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown147, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox142, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown148, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox143, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown149, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox144, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown150, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox145, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown151, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox146, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown152, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox147, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown153, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox148, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown154, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox149, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown155, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox150, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown156, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox151, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown157, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox152, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown158, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox153, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown159, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox154, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown160, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox155, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown161, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox156, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown162, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox157, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown163, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox158, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown164, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox159, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown165, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox160, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown166, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox161, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown127, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox114, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown128, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox123, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown129, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox124, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown130, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox125, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown131, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox126, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown132, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox127, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown133, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox128, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown134, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox129, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown135, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox130, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown136, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox131, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown137, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox132, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown138, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox133, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown139, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox134, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown140, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox135, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown141, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox136, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown142, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox137, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown143, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox138, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown144, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox139, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown145, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox140, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown146, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox141, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_interiors_left, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_closesave, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_info_itemsedit.SuspendLayout()
+        Me.SuspendLayout()
         '
         'Panel_specialfoods
         '
-        Me.Panel_specialfoods.BackgroundImage = CType(resources.GetObject("Panel_specialfoods.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_specialfoods.BackgroundImage = CType(resources.GetObject("Panel_specialfoods.BackgroundImage"), System.Drawing.Image)
         Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_48)
         Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_48)
         Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_48)
@@ -1296,7 +1301,7 @@ Partial Class Items_edit
         Me.Panel_specialfoods.Name = "Panel_specialfoods"
         Me.Panel_specialfoods.Size = New System.Drawing.Size(905, 506)
         Me.Panel_specialfoods.TabIndex = 0
-        Me.Panel_specialfoods.Visible = false
+        Me.Panel_specialfoods.Visible = False
         '
         'valu_sfoods_48
         '
@@ -1310,23 +1315,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_48
         '
-        Me.Check_NA_sfoods_48.AutoSize = true
+        Me.Check_NA_sfoods_48.AutoSize = True
         Me.Check_NA_sfoods_48.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_48.Location = New System.Drawing.Point(762, 409)
         Me.Check_NA_sfoods_48.Name = "Check_NA_sfoods_48"
         Me.Check_NA_sfoods_48.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_48.TabIndex = 289
-        Me.Check_NA_sfoods_48.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_48.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_48
         '
-        Me.Check_available_sfoods_48.AutoSize = true
+        Me.Check_available_sfoods_48.AutoSize = True
         Me.Check_available_sfoods_48.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_48.Location = New System.Drawing.Point(701, 409)
         Me.Check_available_sfoods_48.Name = "Check_available_sfoods_48"
         Me.Check_available_sfoods_48.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_48.TabIndex = 288
-        Me.Check_available_sfoods_48.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_48.UseVisualStyleBackColor = False
         '
         'PictureBox41
         '
@@ -1336,7 +1341,7 @@ Partial Class Items_edit
         Me.PictureBox41.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox41.TabIndex = 287
-        Me.PictureBox41.TabStop = false
+        Me.PictureBox41.TabStop = False
         '
         'valu_sfoods_47
         '
@@ -1350,23 +1355,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_47
         '
-        Me.Check_NA_sfoods_47.AutoSize = true
+        Me.Check_NA_sfoods_47.AutoSize = True
         Me.Check_NA_sfoods_47.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_47.Location = New System.Drawing.Point(680, 409)
         Me.Check_NA_sfoods_47.Name = "Check_NA_sfoods_47"
         Me.Check_NA_sfoods_47.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_47.TabIndex = 285
-        Me.Check_NA_sfoods_47.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_47.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_47
         '
-        Me.Check_available_sfoods_47.AutoSize = true
+        Me.Check_available_sfoods_47.AutoSize = True
         Me.Check_available_sfoods_47.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_47.Location = New System.Drawing.Point(619, 409)
         Me.Check_available_sfoods_47.Name = "Check_available_sfoods_47"
         Me.Check_available_sfoods_47.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_47.TabIndex = 284
-        Me.Check_available_sfoods_47.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_47.UseVisualStyleBackColor = False
         '
         'PictureBox42
         '
@@ -1376,7 +1381,7 @@ Partial Class Items_edit
         Me.PictureBox42.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox42.TabIndex = 283
-        Me.PictureBox42.TabStop = false
+        Me.PictureBox42.TabStop = False
         '
         'valu_sfoods_46
         '
@@ -1390,23 +1395,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_46
         '
-        Me.Check_NA_sfoods_46.AutoSize = true
+        Me.Check_NA_sfoods_46.AutoSize = True
         Me.Check_NA_sfoods_46.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_46.Location = New System.Drawing.Point(598, 409)
         Me.Check_NA_sfoods_46.Name = "Check_NA_sfoods_46"
         Me.Check_NA_sfoods_46.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_46.TabIndex = 281
-        Me.Check_NA_sfoods_46.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_46.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_46
         '
-        Me.Check_available_sfoods_46.AutoSize = true
+        Me.Check_available_sfoods_46.AutoSize = True
         Me.Check_available_sfoods_46.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_46.Location = New System.Drawing.Point(537, 409)
         Me.Check_available_sfoods_46.Name = "Check_available_sfoods_46"
         Me.Check_available_sfoods_46.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_46.TabIndex = 280
-        Me.Check_available_sfoods_46.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_46.UseVisualStyleBackColor = False
         '
         'PictureBox43
         '
@@ -1416,7 +1421,7 @@ Partial Class Items_edit
         Me.PictureBox43.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox43.TabIndex = 279
-        Me.PictureBox43.TabStop = false
+        Me.PictureBox43.TabStop = False
         '
         'valu_sfoods_45
         '
@@ -1430,23 +1435,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_45
         '
-        Me.Check_NA_sfoods_45.AutoSize = true
+        Me.Check_NA_sfoods_45.AutoSize = True
         Me.Check_NA_sfoods_45.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_45.Location = New System.Drawing.Point(516, 409)
         Me.Check_NA_sfoods_45.Name = "Check_NA_sfoods_45"
         Me.Check_NA_sfoods_45.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_45.TabIndex = 277
-        Me.Check_NA_sfoods_45.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_45.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_45
         '
-        Me.Check_available_sfoods_45.AutoSize = true
+        Me.Check_available_sfoods_45.AutoSize = True
         Me.Check_available_sfoods_45.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_45.Location = New System.Drawing.Point(455, 409)
         Me.Check_available_sfoods_45.Name = "Check_available_sfoods_45"
         Me.Check_available_sfoods_45.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_45.TabIndex = 276
-        Me.Check_available_sfoods_45.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_45.UseVisualStyleBackColor = False
         '
         'PictureBox44
         '
@@ -1456,7 +1461,7 @@ Partial Class Items_edit
         Me.PictureBox44.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox44.TabIndex = 275
-        Me.PictureBox44.TabStop = false
+        Me.PictureBox44.TabStop = False
         '
         'valu_sfoods_44
         '
@@ -1470,23 +1475,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_44
         '
-        Me.Check_NA_sfoods_44.AutoSize = true
+        Me.Check_NA_sfoods_44.AutoSize = True
         Me.Check_NA_sfoods_44.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_44.Location = New System.Drawing.Point(434, 409)
         Me.Check_NA_sfoods_44.Name = "Check_NA_sfoods_44"
         Me.Check_NA_sfoods_44.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_44.TabIndex = 273
-        Me.Check_NA_sfoods_44.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_44.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_44
         '
-        Me.Check_available_sfoods_44.AutoSize = true
+        Me.Check_available_sfoods_44.AutoSize = True
         Me.Check_available_sfoods_44.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_44.Location = New System.Drawing.Point(373, 409)
         Me.Check_available_sfoods_44.Name = "Check_available_sfoods_44"
         Me.Check_available_sfoods_44.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_44.TabIndex = 272
-        Me.Check_available_sfoods_44.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_44.UseVisualStyleBackColor = False
         '
         'PictureBox45
         '
@@ -1496,7 +1501,7 @@ Partial Class Items_edit
         Me.PictureBox45.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox45.TabIndex = 271
-        Me.PictureBox45.TabStop = false
+        Me.PictureBox45.TabStop = False
         '
         'valu_sfoods_43
         '
@@ -1510,23 +1515,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_43
         '
-        Me.Check_NA_sfoods_43.AutoSize = true
+        Me.Check_NA_sfoods_43.AutoSize = True
         Me.Check_NA_sfoods_43.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_43.Location = New System.Drawing.Point(352, 409)
         Me.Check_NA_sfoods_43.Name = "Check_NA_sfoods_43"
         Me.Check_NA_sfoods_43.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_43.TabIndex = 269
-        Me.Check_NA_sfoods_43.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_43.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_43
         '
-        Me.Check_available_sfoods_43.AutoSize = true
+        Me.Check_available_sfoods_43.AutoSize = True
         Me.Check_available_sfoods_43.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_43.Location = New System.Drawing.Point(291, 409)
         Me.Check_available_sfoods_43.Name = "Check_available_sfoods_43"
         Me.Check_available_sfoods_43.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_43.TabIndex = 268
-        Me.Check_available_sfoods_43.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_43.UseVisualStyleBackColor = False
         '
         'PictureBox46
         '
@@ -1536,7 +1541,7 @@ Partial Class Items_edit
         Me.PictureBox46.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox46.TabIndex = 267
-        Me.PictureBox46.TabStop = false
+        Me.PictureBox46.TabStop = False
         '
         'valu_sfoods_42
         '
@@ -1550,23 +1555,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_42
         '
-        Me.Check_NA_sfoods_42.AutoSize = true
+        Me.Check_NA_sfoods_42.AutoSize = True
         Me.Check_NA_sfoods_42.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_42.Location = New System.Drawing.Point(270, 409)
         Me.Check_NA_sfoods_42.Name = "Check_NA_sfoods_42"
         Me.Check_NA_sfoods_42.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_42.TabIndex = 265
-        Me.Check_NA_sfoods_42.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_42.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_42
         '
-        Me.Check_available_sfoods_42.AutoSize = true
+        Me.Check_available_sfoods_42.AutoSize = True
         Me.Check_available_sfoods_42.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_42.Location = New System.Drawing.Point(209, 409)
         Me.Check_available_sfoods_42.Name = "Check_available_sfoods_42"
         Me.Check_available_sfoods_42.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_42.TabIndex = 264
-        Me.Check_available_sfoods_42.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_42.UseVisualStyleBackColor = False
         '
         'PictureBox47
         '
@@ -1576,7 +1581,7 @@ Partial Class Items_edit
         Me.PictureBox47.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox47.TabIndex = 263
-        Me.PictureBox47.TabStop = false
+        Me.PictureBox47.TabStop = False
         '
         'valu_sfoods_41
         '
@@ -1590,23 +1595,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_41
         '
-        Me.Check_NA_sfoods_41.AutoSize = true
+        Me.Check_NA_sfoods_41.AutoSize = True
         Me.Check_NA_sfoods_41.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_41.Location = New System.Drawing.Point(188, 409)
         Me.Check_NA_sfoods_41.Name = "Check_NA_sfoods_41"
         Me.Check_NA_sfoods_41.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_41.TabIndex = 261
-        Me.Check_NA_sfoods_41.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_41.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_41
         '
-        Me.Check_available_sfoods_41.AutoSize = true
+        Me.Check_available_sfoods_41.AutoSize = True
         Me.Check_available_sfoods_41.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_41.Location = New System.Drawing.Point(127, 409)
         Me.Check_available_sfoods_41.Name = "Check_available_sfoods_41"
         Me.Check_available_sfoods_41.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_41.TabIndex = 260
-        Me.Check_available_sfoods_41.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_41.UseVisualStyleBackColor = False
         '
         'PictureBox48
         '
@@ -1616,7 +1621,7 @@ Partial Class Items_edit
         Me.PictureBox48.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox48.TabIndex = 259
-        Me.PictureBox48.TabStop = false
+        Me.PictureBox48.TabStop = False
         '
         'valu_sfoods_40
         '
@@ -1630,23 +1635,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_40
         '
-        Me.Check_NA_sfoods_40.AutoSize = true
+        Me.Check_NA_sfoods_40.AutoSize = True
         Me.Check_NA_sfoods_40.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_40.Location = New System.Drawing.Point(844, 329)
         Me.Check_NA_sfoods_40.Name = "Check_NA_sfoods_40"
         Me.Check_NA_sfoods_40.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_40.TabIndex = 257
-        Me.Check_NA_sfoods_40.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_40.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_40
         '
-        Me.Check_available_sfoods_40.AutoSize = true
+        Me.Check_available_sfoods_40.AutoSize = True
         Me.Check_available_sfoods_40.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_40.Location = New System.Drawing.Point(783, 329)
         Me.Check_available_sfoods_40.Name = "Check_available_sfoods_40"
         Me.Check_available_sfoods_40.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_40.TabIndex = 256
-        Me.Check_available_sfoods_40.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_40.UseVisualStyleBackColor = False
         '
         'PictureBox36
         '
@@ -1656,7 +1661,7 @@ Partial Class Items_edit
         Me.PictureBox36.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox36.TabIndex = 255
-        Me.PictureBox36.TabStop = false
+        Me.PictureBox36.TabStop = False
         '
         'valu_sfoods_39
         '
@@ -1670,23 +1675,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_39
         '
-        Me.Check_NA_sfoods_39.AutoSize = true
+        Me.Check_NA_sfoods_39.AutoSize = True
         Me.Check_NA_sfoods_39.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_39.Location = New System.Drawing.Point(762, 329)
         Me.Check_NA_sfoods_39.Name = "Check_NA_sfoods_39"
         Me.Check_NA_sfoods_39.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_39.TabIndex = 253
-        Me.Check_NA_sfoods_39.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_39.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_39
         '
-        Me.Check_available_sfoods_39.AutoSize = true
+        Me.Check_available_sfoods_39.AutoSize = True
         Me.Check_available_sfoods_39.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_39.Location = New System.Drawing.Point(701, 329)
         Me.Check_available_sfoods_39.Name = "Check_available_sfoods_39"
         Me.Check_available_sfoods_39.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_39.TabIndex = 252
-        Me.Check_available_sfoods_39.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_39.UseVisualStyleBackColor = False
         '
         'PictureBox37
         '
@@ -1696,7 +1701,7 @@ Partial Class Items_edit
         Me.PictureBox37.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox37.TabIndex = 251
-        Me.PictureBox37.TabStop = false
+        Me.PictureBox37.TabStop = False
         '
         'valu_sfoods_38
         '
@@ -1710,23 +1715,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_38
         '
-        Me.Check_NA_sfoods_38.AutoSize = true
+        Me.Check_NA_sfoods_38.AutoSize = True
         Me.Check_NA_sfoods_38.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_38.Location = New System.Drawing.Point(680, 329)
         Me.Check_NA_sfoods_38.Name = "Check_NA_sfoods_38"
         Me.Check_NA_sfoods_38.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_38.TabIndex = 249
-        Me.Check_NA_sfoods_38.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_38.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_38
         '
-        Me.Check_available_sfoods_38.AutoSize = true
+        Me.Check_available_sfoods_38.AutoSize = True
         Me.Check_available_sfoods_38.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_38.Location = New System.Drawing.Point(619, 329)
         Me.Check_available_sfoods_38.Name = "Check_available_sfoods_38"
         Me.Check_available_sfoods_38.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_38.TabIndex = 248
-        Me.Check_available_sfoods_38.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_38.UseVisualStyleBackColor = False
         '
         'PictureBox38
         '
@@ -1736,7 +1741,7 @@ Partial Class Items_edit
         Me.PictureBox38.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox38.TabIndex = 247
-        Me.PictureBox38.TabStop = false
+        Me.PictureBox38.TabStop = False
         '
         'valu_sfoods_37
         '
@@ -1750,23 +1755,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_37
         '
-        Me.Check_NA_sfoods_37.AutoSize = true
+        Me.Check_NA_sfoods_37.AutoSize = True
         Me.Check_NA_sfoods_37.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_37.Location = New System.Drawing.Point(598, 329)
         Me.Check_NA_sfoods_37.Name = "Check_NA_sfoods_37"
         Me.Check_NA_sfoods_37.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_37.TabIndex = 245
-        Me.Check_NA_sfoods_37.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_37.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_37
         '
-        Me.Check_available_sfoods_37.AutoSize = true
+        Me.Check_available_sfoods_37.AutoSize = True
         Me.Check_available_sfoods_37.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_37.Location = New System.Drawing.Point(537, 329)
         Me.Check_available_sfoods_37.Name = "Check_available_sfoods_37"
         Me.Check_available_sfoods_37.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_37.TabIndex = 244
-        Me.Check_available_sfoods_37.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_37.UseVisualStyleBackColor = False
         '
         'PictureBox39
         '
@@ -1776,7 +1781,7 @@ Partial Class Items_edit
         Me.PictureBox39.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox39.TabIndex = 243
-        Me.PictureBox39.TabStop = false
+        Me.PictureBox39.TabStop = False
         '
         'valu_sfoods_36
         '
@@ -1790,23 +1795,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_36
         '
-        Me.Check_NA_sfoods_36.AutoSize = true
+        Me.Check_NA_sfoods_36.AutoSize = True
         Me.Check_NA_sfoods_36.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_36.Location = New System.Drawing.Point(516, 329)
         Me.Check_NA_sfoods_36.Name = "Check_NA_sfoods_36"
         Me.Check_NA_sfoods_36.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_36.TabIndex = 241
-        Me.Check_NA_sfoods_36.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_36.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_36
         '
-        Me.Check_available_sfoods_36.AutoSize = true
+        Me.Check_available_sfoods_36.AutoSize = True
         Me.Check_available_sfoods_36.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_36.Location = New System.Drawing.Point(455, 329)
         Me.Check_available_sfoods_36.Name = "Check_available_sfoods_36"
         Me.Check_available_sfoods_36.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_36.TabIndex = 240
-        Me.Check_available_sfoods_36.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_36.UseVisualStyleBackColor = False
         '
         'PictureBox40
         '
@@ -1816,7 +1821,7 @@ Partial Class Items_edit
         Me.PictureBox40.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox40.TabIndex = 239
-        Me.PictureBox40.TabStop = false
+        Me.PictureBox40.TabStop = False
         '
         'valu_sfoods_35
         '
@@ -1830,23 +1835,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_35
         '
-        Me.Check_NA_sfoods_35.AutoSize = true
+        Me.Check_NA_sfoods_35.AutoSize = True
         Me.Check_NA_sfoods_35.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_35.Location = New System.Drawing.Point(434, 329)
         Me.Check_NA_sfoods_35.Name = "Check_NA_sfoods_35"
         Me.Check_NA_sfoods_35.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_35.TabIndex = 237
-        Me.Check_NA_sfoods_35.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_35.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_35
         '
-        Me.Check_available_sfoods_35.AutoSize = true
+        Me.Check_available_sfoods_35.AutoSize = True
         Me.Check_available_sfoods_35.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_35.Location = New System.Drawing.Point(373, 329)
         Me.Check_available_sfoods_35.Name = "Check_available_sfoods_35"
         Me.Check_available_sfoods_35.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_35.TabIndex = 236
-        Me.Check_available_sfoods_35.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_35.UseVisualStyleBackColor = False
         '
         'PictureBox49
         '
@@ -1856,7 +1861,7 @@ Partial Class Items_edit
         Me.PictureBox49.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox49.TabIndex = 235
-        Me.PictureBox49.TabStop = false
+        Me.PictureBox49.TabStop = False
         '
         'valu_sfoods_34
         '
@@ -1870,23 +1875,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_34
         '
-        Me.Check_NA_sfoods_34.AutoSize = true
+        Me.Check_NA_sfoods_34.AutoSize = True
         Me.Check_NA_sfoods_34.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_34.Location = New System.Drawing.Point(352, 329)
         Me.Check_NA_sfoods_34.Name = "Check_NA_sfoods_34"
         Me.Check_NA_sfoods_34.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_34.TabIndex = 233
-        Me.Check_NA_sfoods_34.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_34.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_34
         '
-        Me.Check_available_sfoods_34.AutoSize = true
+        Me.Check_available_sfoods_34.AutoSize = True
         Me.Check_available_sfoods_34.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_34.Location = New System.Drawing.Point(291, 329)
         Me.Check_available_sfoods_34.Name = "Check_available_sfoods_34"
         Me.Check_available_sfoods_34.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_34.TabIndex = 232
-        Me.Check_available_sfoods_34.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_34.UseVisualStyleBackColor = False
         '
         'PictureBox55
         '
@@ -1896,7 +1901,7 @@ Partial Class Items_edit
         Me.PictureBox55.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox55.TabIndex = 231
-        Me.PictureBox55.TabStop = false
+        Me.PictureBox55.TabStop = False
         '
         'valu_sfoods_33
         '
@@ -1910,23 +1915,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_33
         '
-        Me.Check_NA_sfoods_33.AutoSize = true
+        Me.Check_NA_sfoods_33.AutoSize = True
         Me.Check_NA_sfoods_33.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_33.Location = New System.Drawing.Point(270, 329)
         Me.Check_NA_sfoods_33.Name = "Check_NA_sfoods_33"
         Me.Check_NA_sfoods_33.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_33.TabIndex = 229
-        Me.Check_NA_sfoods_33.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_33.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_33
         '
-        Me.Check_available_sfoods_33.AutoSize = true
+        Me.Check_available_sfoods_33.AutoSize = True
         Me.Check_available_sfoods_33.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_33.Location = New System.Drawing.Point(209, 329)
         Me.Check_available_sfoods_33.Name = "Check_available_sfoods_33"
         Me.Check_available_sfoods_33.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_33.TabIndex = 228
-        Me.Check_available_sfoods_33.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_33.UseVisualStyleBackColor = False
         '
         'PictureBox56
         '
@@ -1936,7 +1941,7 @@ Partial Class Items_edit
         Me.PictureBox56.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox56.TabIndex = 227
-        Me.PictureBox56.TabStop = false
+        Me.PictureBox56.TabStop = False
         '
         'valu_sfoods_32
         '
@@ -1950,23 +1955,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_32
         '
-        Me.Check_NA_sfoods_32.AutoSize = true
+        Me.Check_NA_sfoods_32.AutoSize = True
         Me.Check_NA_sfoods_32.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_32.Location = New System.Drawing.Point(188, 329)
         Me.Check_NA_sfoods_32.Name = "Check_NA_sfoods_32"
         Me.Check_NA_sfoods_32.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_32.TabIndex = 225
-        Me.Check_NA_sfoods_32.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_32.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_32
         '
-        Me.Check_available_sfoods_32.AutoSize = true
+        Me.Check_available_sfoods_32.AutoSize = True
         Me.Check_available_sfoods_32.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_32.Location = New System.Drawing.Point(127, 329)
         Me.Check_available_sfoods_32.Name = "Check_available_sfoods_32"
         Me.Check_available_sfoods_32.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_32.TabIndex = 224
-        Me.Check_available_sfoods_32.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_32.UseVisualStyleBackColor = False
         '
         'PictureBox57
         '
@@ -1976,7 +1981,7 @@ Partial Class Items_edit
         Me.PictureBox57.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox57.TabIndex = 223
-        Me.PictureBox57.TabStop = false
+        Me.PictureBox57.TabStop = False
         '
         'valu_sfoods_31
         '
@@ -1990,23 +1995,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_31
         '
-        Me.Check_NA_sfoods_31.AutoSize = true
+        Me.Check_NA_sfoods_31.AutoSize = True
         Me.Check_NA_sfoods_31.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_31.Location = New System.Drawing.Point(106, 329)
         Me.Check_NA_sfoods_31.Name = "Check_NA_sfoods_31"
         Me.Check_NA_sfoods_31.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_31.TabIndex = 221
-        Me.Check_NA_sfoods_31.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_31.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_31
         '
-        Me.Check_available_sfoods_31.AutoSize = true
+        Me.Check_available_sfoods_31.AutoSize = True
         Me.Check_available_sfoods_31.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_31.Location = New System.Drawing.Point(45, 329)
         Me.Check_available_sfoods_31.Name = "Check_available_sfoods_31"
         Me.Check_available_sfoods_31.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_31.TabIndex = 220
-        Me.Check_available_sfoods_31.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_31.UseVisualStyleBackColor = False
         '
         'PictureBox86
         '
@@ -2016,7 +2021,7 @@ Partial Class Items_edit
         Me.PictureBox86.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox86.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox86.TabIndex = 219
-        Me.PictureBox86.TabStop = false
+        Me.PictureBox86.TabStop = False
         '
         'valu_sfoods_30
         '
@@ -2030,23 +2035,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_30
         '
-        Me.Check_NA_sfoods_30.AutoSize = true
+        Me.Check_NA_sfoods_30.AutoSize = True
         Me.Check_NA_sfoods_30.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_30.Location = New System.Drawing.Point(844, 249)
         Me.Check_NA_sfoods_30.Name = "Check_NA_sfoods_30"
         Me.Check_NA_sfoods_30.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_30.TabIndex = 217
-        Me.Check_NA_sfoods_30.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_30.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_30
         '
-        Me.Check_available_sfoods_30.AutoSize = true
+        Me.Check_available_sfoods_30.AutoSize = True
         Me.Check_available_sfoods_30.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_30.Location = New System.Drawing.Point(783, 249)
         Me.Check_available_sfoods_30.Name = "Check_available_sfoods_30"
         Me.Check_available_sfoods_30.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_30.TabIndex = 216
-        Me.Check_available_sfoods_30.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_30.UseVisualStyleBackColor = False
         '
         'PictureBox87
         '
@@ -2056,7 +2061,7 @@ Partial Class Items_edit
         Me.PictureBox87.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox87.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox87.TabIndex = 215
-        Me.PictureBox87.TabStop = false
+        Me.PictureBox87.TabStop = False
         '
         'valu_sfoods_29
         '
@@ -2070,23 +2075,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_29
         '
-        Me.Check_NA_sfoods_29.AutoSize = true
+        Me.Check_NA_sfoods_29.AutoSize = True
         Me.Check_NA_sfoods_29.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_29.Location = New System.Drawing.Point(762, 249)
         Me.Check_NA_sfoods_29.Name = "Check_NA_sfoods_29"
         Me.Check_NA_sfoods_29.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_29.TabIndex = 213
-        Me.Check_NA_sfoods_29.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_29.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_29
         '
-        Me.Check_available_sfoods_29.AutoSize = true
+        Me.Check_available_sfoods_29.AutoSize = True
         Me.Check_available_sfoods_29.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_29.Location = New System.Drawing.Point(701, 249)
         Me.Check_available_sfoods_29.Name = "Check_available_sfoods_29"
         Me.Check_available_sfoods_29.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_29.TabIndex = 212
-        Me.Check_available_sfoods_29.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_29.UseVisualStyleBackColor = False
         '
         'PictureBox88
         '
@@ -2096,7 +2101,7 @@ Partial Class Items_edit
         Me.PictureBox88.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox88.TabIndex = 211
-        Me.PictureBox88.TabStop = false
+        Me.PictureBox88.TabStop = False
         '
         'valu_sfoods_28
         '
@@ -2110,23 +2115,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_28
         '
-        Me.Check_NA_sfoods_28.AutoSize = true
+        Me.Check_NA_sfoods_28.AutoSize = True
         Me.Check_NA_sfoods_28.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_28.Location = New System.Drawing.Point(680, 249)
         Me.Check_NA_sfoods_28.Name = "Check_NA_sfoods_28"
         Me.Check_NA_sfoods_28.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_28.TabIndex = 209
-        Me.Check_NA_sfoods_28.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_28.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_28
         '
-        Me.Check_available_sfoods_28.AutoSize = true
+        Me.Check_available_sfoods_28.AutoSize = True
         Me.Check_available_sfoods_28.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_28.Location = New System.Drawing.Point(619, 249)
         Me.Check_available_sfoods_28.Name = "Check_available_sfoods_28"
         Me.Check_available_sfoods_28.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_28.TabIndex = 208
-        Me.Check_available_sfoods_28.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_28.UseVisualStyleBackColor = False
         '
         'PictureBox99
         '
@@ -2136,7 +2141,7 @@ Partial Class Items_edit
         Me.PictureBox99.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox99.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox99.TabIndex = 207
-        Me.PictureBox99.TabStop = false
+        Me.PictureBox99.TabStop = False
         '
         'valu_sfoods_27
         '
@@ -2150,23 +2155,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_27
         '
-        Me.Check_NA_sfoods_27.AutoSize = true
+        Me.Check_NA_sfoods_27.AutoSize = True
         Me.Check_NA_sfoods_27.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_27.Location = New System.Drawing.Point(598, 249)
         Me.Check_NA_sfoods_27.Name = "Check_NA_sfoods_27"
         Me.Check_NA_sfoods_27.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_27.TabIndex = 205
-        Me.Check_NA_sfoods_27.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_27.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_27
         '
-        Me.Check_available_sfoods_27.AutoSize = true
+        Me.Check_available_sfoods_27.AutoSize = True
         Me.Check_available_sfoods_27.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_27.Location = New System.Drawing.Point(537, 249)
         Me.Check_available_sfoods_27.Name = "Check_available_sfoods_27"
         Me.Check_available_sfoods_27.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_27.TabIndex = 204
-        Me.Check_available_sfoods_27.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_27.UseVisualStyleBackColor = False
         '
         'PictureBox100
         '
@@ -2176,7 +2181,7 @@ Partial Class Items_edit
         Me.PictureBox100.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox100.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox100.TabIndex = 203
-        Me.PictureBox100.TabStop = false
+        Me.PictureBox100.TabStop = False
         '
         'valu_sfoods_26
         '
@@ -2190,23 +2195,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_26
         '
-        Me.Check_NA_sfoods_26.AutoSize = true
+        Me.Check_NA_sfoods_26.AutoSize = True
         Me.Check_NA_sfoods_26.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_26.Location = New System.Drawing.Point(516, 249)
         Me.Check_NA_sfoods_26.Name = "Check_NA_sfoods_26"
         Me.Check_NA_sfoods_26.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_26.TabIndex = 201
-        Me.Check_NA_sfoods_26.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_26.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_26
         '
-        Me.Check_available_sfoods_26.AutoSize = true
+        Me.Check_available_sfoods_26.AutoSize = True
         Me.Check_available_sfoods_26.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_26.Location = New System.Drawing.Point(455, 249)
         Me.Check_available_sfoods_26.Name = "Check_available_sfoods_26"
         Me.Check_available_sfoods_26.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_26.TabIndex = 200
-        Me.Check_available_sfoods_26.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_26.UseVisualStyleBackColor = False
         '
         'PictureBox101
         '
@@ -2216,7 +2221,7 @@ Partial Class Items_edit
         Me.PictureBox101.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox101.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox101.TabIndex = 199
-        Me.PictureBox101.TabStop = false
+        Me.PictureBox101.TabStop = False
         '
         'valu_sfoods_25
         '
@@ -2230,23 +2235,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_25
         '
-        Me.Check_NA_sfoods_25.AutoSize = true
+        Me.Check_NA_sfoods_25.AutoSize = True
         Me.Check_NA_sfoods_25.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_25.Location = New System.Drawing.Point(434, 249)
         Me.Check_NA_sfoods_25.Name = "Check_NA_sfoods_25"
         Me.Check_NA_sfoods_25.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_25.TabIndex = 197
-        Me.Check_NA_sfoods_25.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_25.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_25
         '
-        Me.Check_available_sfoods_25.AutoSize = true
+        Me.Check_available_sfoods_25.AutoSize = True
         Me.Check_available_sfoods_25.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_25.Location = New System.Drawing.Point(373, 249)
         Me.Check_available_sfoods_25.Name = "Check_available_sfoods_25"
         Me.Check_available_sfoods_25.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_25.TabIndex = 196
-        Me.Check_available_sfoods_25.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_25.UseVisualStyleBackColor = False
         '
         'PictureBox112
         '
@@ -2256,7 +2261,7 @@ Partial Class Items_edit
         Me.PictureBox112.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox112.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox112.TabIndex = 195
-        Me.PictureBox112.TabStop = false
+        Me.PictureBox112.TabStop = False
         '
         'valu_sfoods_24
         '
@@ -2270,23 +2275,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_24
         '
-        Me.Check_NA_sfoods_24.AutoSize = true
+        Me.Check_NA_sfoods_24.AutoSize = True
         Me.Check_NA_sfoods_24.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_24.Location = New System.Drawing.Point(352, 249)
         Me.Check_NA_sfoods_24.Name = "Check_NA_sfoods_24"
         Me.Check_NA_sfoods_24.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_24.TabIndex = 193
-        Me.Check_NA_sfoods_24.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_24.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_24
         '
-        Me.Check_available_sfoods_24.AutoSize = true
+        Me.Check_available_sfoods_24.AutoSize = True
         Me.Check_available_sfoods_24.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_24.Location = New System.Drawing.Point(291, 249)
         Me.Check_available_sfoods_24.Name = "Check_available_sfoods_24"
         Me.Check_available_sfoods_24.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_24.TabIndex = 192
-        Me.Check_available_sfoods_24.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_24.UseVisualStyleBackColor = False
         '
         'PictureBox113
         '
@@ -2296,7 +2301,7 @@ Partial Class Items_edit
         Me.PictureBox113.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox113.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox113.TabIndex = 191
-        Me.PictureBox113.TabStop = false
+        Me.PictureBox113.TabStop = False
         '
         'valu_sfoods_23
         '
@@ -2310,23 +2315,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_23
         '
-        Me.Check_NA_sfoods_23.AutoSize = true
+        Me.Check_NA_sfoods_23.AutoSize = True
         Me.Check_NA_sfoods_23.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_23.Location = New System.Drawing.Point(270, 249)
         Me.Check_NA_sfoods_23.Name = "Check_NA_sfoods_23"
         Me.Check_NA_sfoods_23.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_23.TabIndex = 189
-        Me.Check_NA_sfoods_23.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_23.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_23
         '
-        Me.Check_available_sfoods_23.AutoSize = true
+        Me.Check_available_sfoods_23.AutoSize = True
         Me.Check_available_sfoods_23.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_23.Location = New System.Drawing.Point(209, 249)
         Me.Check_available_sfoods_23.Name = "Check_available_sfoods_23"
         Me.Check_available_sfoods_23.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_23.TabIndex = 188
-        Me.Check_available_sfoods_23.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_23.UseVisualStyleBackColor = False
         '
         'PictureBox167
         '
@@ -2336,7 +2341,7 @@ Partial Class Items_edit
         Me.PictureBox167.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox167.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox167.TabIndex = 187
-        Me.PictureBox167.TabStop = false
+        Me.PictureBox167.TabStop = False
         '
         'valu_sfoods_22
         '
@@ -2350,23 +2355,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_22
         '
-        Me.Check_NA_sfoods_22.AutoSize = true
+        Me.Check_NA_sfoods_22.AutoSize = True
         Me.Check_NA_sfoods_22.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_22.Location = New System.Drawing.Point(188, 249)
         Me.Check_NA_sfoods_22.Name = "Check_NA_sfoods_22"
         Me.Check_NA_sfoods_22.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_22.TabIndex = 185
-        Me.Check_NA_sfoods_22.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_22.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_22
         '
-        Me.Check_available_sfoods_22.AutoSize = true
+        Me.Check_available_sfoods_22.AutoSize = True
         Me.Check_available_sfoods_22.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_22.Location = New System.Drawing.Point(127, 249)
         Me.Check_available_sfoods_22.Name = "Check_available_sfoods_22"
         Me.Check_available_sfoods_22.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_22.TabIndex = 184
-        Me.Check_available_sfoods_22.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_22.UseVisualStyleBackColor = False
         '
         'PictureBox168
         '
@@ -2376,7 +2381,7 @@ Partial Class Items_edit
         Me.PictureBox168.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox168.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox168.TabIndex = 183
-        Me.PictureBox168.TabStop = false
+        Me.PictureBox168.TabStop = False
         '
         'valu_sfoods_21
         '
@@ -2390,23 +2395,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_21
         '
-        Me.Check_NA_sfoods_21.AutoSize = true
+        Me.Check_NA_sfoods_21.AutoSize = True
         Me.Check_NA_sfoods_21.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_21.Location = New System.Drawing.Point(106, 249)
         Me.Check_NA_sfoods_21.Name = "Check_NA_sfoods_21"
         Me.Check_NA_sfoods_21.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_21.TabIndex = 181
-        Me.Check_NA_sfoods_21.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_21.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_21
         '
-        Me.Check_available_sfoods_21.AutoSize = true
+        Me.Check_available_sfoods_21.AutoSize = True
         Me.Check_available_sfoods_21.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_21.Location = New System.Drawing.Point(45, 249)
         Me.Check_available_sfoods_21.Name = "Check_available_sfoods_21"
         Me.Check_available_sfoods_21.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_21.TabIndex = 180
-        Me.Check_available_sfoods_21.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_21.UseVisualStyleBackColor = False
         '
         'PictureBox169
         '
@@ -2416,7 +2421,7 @@ Partial Class Items_edit
         Me.PictureBox169.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox169.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox169.TabIndex = 179
-        Me.PictureBox169.TabStop = false
+        Me.PictureBox169.TabStop = False
         '
         'valu_sfoods_20
         '
@@ -2430,23 +2435,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_20
         '
-        Me.Check_NA_sfoods_20.AutoSize = true
+        Me.Check_NA_sfoods_20.AutoSize = True
         Me.Check_NA_sfoods_20.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_20.Location = New System.Drawing.Point(844, 169)
         Me.Check_NA_sfoods_20.Name = "Check_NA_sfoods_20"
         Me.Check_NA_sfoods_20.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_20.TabIndex = 177
-        Me.Check_NA_sfoods_20.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_20.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_20
         '
-        Me.Check_available_sfoods_20.AutoSize = true
+        Me.Check_available_sfoods_20.AutoSize = True
         Me.Check_available_sfoods_20.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_20.Location = New System.Drawing.Point(783, 169)
         Me.Check_available_sfoods_20.Name = "Check_available_sfoods_20"
         Me.Check_available_sfoods_20.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_20.TabIndex = 176
-        Me.Check_available_sfoods_20.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_20.UseVisualStyleBackColor = False
         '
         'PictureBox26
         '
@@ -2456,7 +2461,7 @@ Partial Class Items_edit
         Me.PictureBox26.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox26.TabIndex = 175
-        Me.PictureBox26.TabStop = false
+        Me.PictureBox26.TabStop = False
         '
         'valu_sfoods_19
         '
@@ -2470,23 +2475,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_19
         '
-        Me.Check_NA_sfoods_19.AutoSize = true
+        Me.Check_NA_sfoods_19.AutoSize = True
         Me.Check_NA_sfoods_19.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_19.Location = New System.Drawing.Point(762, 169)
         Me.Check_NA_sfoods_19.Name = "Check_NA_sfoods_19"
         Me.Check_NA_sfoods_19.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_19.TabIndex = 173
-        Me.Check_NA_sfoods_19.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_19.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_19
         '
-        Me.Check_available_sfoods_19.AutoSize = true
+        Me.Check_available_sfoods_19.AutoSize = True
         Me.Check_available_sfoods_19.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_19.Location = New System.Drawing.Point(701, 169)
         Me.Check_available_sfoods_19.Name = "Check_available_sfoods_19"
         Me.Check_available_sfoods_19.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_19.TabIndex = 172
-        Me.Check_available_sfoods_19.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_19.UseVisualStyleBackColor = False
         '
         'PictureBox27
         '
@@ -2496,7 +2501,7 @@ Partial Class Items_edit
         Me.PictureBox27.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox27.TabIndex = 171
-        Me.PictureBox27.TabStop = false
+        Me.PictureBox27.TabStop = False
         '
         'valu_sfoods_18
         '
@@ -2510,23 +2515,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_18
         '
-        Me.Check_NA_sfoods_18.AutoSize = true
+        Me.Check_NA_sfoods_18.AutoSize = True
         Me.Check_NA_sfoods_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_18.Location = New System.Drawing.Point(680, 169)
         Me.Check_NA_sfoods_18.Name = "Check_NA_sfoods_18"
         Me.Check_NA_sfoods_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_18.TabIndex = 169
-        Me.Check_NA_sfoods_18.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_18.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_18
         '
-        Me.Check_available_sfoods_18.AutoSize = true
+        Me.Check_available_sfoods_18.AutoSize = True
         Me.Check_available_sfoods_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_18.Location = New System.Drawing.Point(619, 169)
         Me.Check_available_sfoods_18.Name = "Check_available_sfoods_18"
         Me.Check_available_sfoods_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_18.TabIndex = 168
-        Me.Check_available_sfoods_18.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_18.UseVisualStyleBackColor = False
         '
         'PictureBox28
         '
@@ -2536,7 +2541,7 @@ Partial Class Items_edit
         Me.PictureBox28.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox28.TabIndex = 167
-        Me.PictureBox28.TabStop = false
+        Me.PictureBox28.TabStop = False
         '
         'valu_sfoods_17
         '
@@ -2550,23 +2555,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_17
         '
-        Me.Check_NA_sfoods_17.AutoSize = true
+        Me.Check_NA_sfoods_17.AutoSize = True
         Me.Check_NA_sfoods_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_17.Location = New System.Drawing.Point(598, 169)
         Me.Check_NA_sfoods_17.Name = "Check_NA_sfoods_17"
         Me.Check_NA_sfoods_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_17.TabIndex = 165
-        Me.Check_NA_sfoods_17.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_17.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_17
         '
-        Me.Check_available_sfoods_17.AutoSize = true
+        Me.Check_available_sfoods_17.AutoSize = True
         Me.Check_available_sfoods_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_17.Location = New System.Drawing.Point(537, 169)
         Me.Check_available_sfoods_17.Name = "Check_available_sfoods_17"
         Me.Check_available_sfoods_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_17.TabIndex = 164
-        Me.Check_available_sfoods_17.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_17.UseVisualStyleBackColor = False
         '
         'PictureBox29
         '
@@ -2576,7 +2581,7 @@ Partial Class Items_edit
         Me.PictureBox29.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox29.TabIndex = 163
-        Me.PictureBox29.TabStop = false
+        Me.PictureBox29.TabStop = False
         '
         'valu_sfoods_16
         '
@@ -2590,23 +2595,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_16
         '
-        Me.Check_NA_sfoods_16.AutoSize = true
+        Me.Check_NA_sfoods_16.AutoSize = True
         Me.Check_NA_sfoods_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_16.Location = New System.Drawing.Point(516, 169)
         Me.Check_NA_sfoods_16.Name = "Check_NA_sfoods_16"
         Me.Check_NA_sfoods_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_16.TabIndex = 161
-        Me.Check_NA_sfoods_16.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_16.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_16
         '
-        Me.Check_available_sfoods_16.AutoSize = true
+        Me.Check_available_sfoods_16.AutoSize = True
         Me.Check_available_sfoods_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_16.Location = New System.Drawing.Point(455, 169)
         Me.Check_available_sfoods_16.Name = "Check_available_sfoods_16"
         Me.Check_available_sfoods_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_16.TabIndex = 160
-        Me.Check_available_sfoods_16.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_16.UseVisualStyleBackColor = False
         '
         'PictureBox30
         '
@@ -2616,7 +2621,7 @@ Partial Class Items_edit
         Me.PictureBox30.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox30.TabIndex = 159
-        Me.PictureBox30.TabStop = false
+        Me.PictureBox30.TabStop = False
         '
         'valu_sfoods_15
         '
@@ -2630,23 +2635,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_15
         '
-        Me.Check_NA_sfoods_15.AutoSize = true
+        Me.Check_NA_sfoods_15.AutoSize = True
         Me.Check_NA_sfoods_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_15.Location = New System.Drawing.Point(434, 169)
         Me.Check_NA_sfoods_15.Name = "Check_NA_sfoods_15"
         Me.Check_NA_sfoods_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_15.TabIndex = 157
-        Me.Check_NA_sfoods_15.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_15.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_15
         '
-        Me.Check_available_sfoods_15.AutoSize = true
+        Me.Check_available_sfoods_15.AutoSize = True
         Me.Check_available_sfoods_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_15.Location = New System.Drawing.Point(373, 169)
         Me.Check_available_sfoods_15.Name = "Check_available_sfoods_15"
         Me.Check_available_sfoods_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_15.TabIndex = 156
-        Me.Check_available_sfoods_15.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_15.UseVisualStyleBackColor = False
         '
         'PictureBox31
         '
@@ -2656,7 +2661,7 @@ Partial Class Items_edit
         Me.PictureBox31.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox31.TabIndex = 155
-        Me.PictureBox31.TabStop = false
+        Me.PictureBox31.TabStop = False
         '
         'valu_sfoods_14
         '
@@ -2670,23 +2675,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_14
         '
-        Me.Check_NA_sfoods_14.AutoSize = true
+        Me.Check_NA_sfoods_14.AutoSize = True
         Me.Check_NA_sfoods_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_14.Location = New System.Drawing.Point(352, 169)
         Me.Check_NA_sfoods_14.Name = "Check_NA_sfoods_14"
         Me.Check_NA_sfoods_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_14.TabIndex = 153
-        Me.Check_NA_sfoods_14.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_14.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_14
         '
-        Me.Check_available_sfoods_14.AutoSize = true
+        Me.Check_available_sfoods_14.AutoSize = True
         Me.Check_available_sfoods_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_14.Location = New System.Drawing.Point(291, 169)
         Me.Check_available_sfoods_14.Name = "Check_available_sfoods_14"
         Me.Check_available_sfoods_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_14.TabIndex = 152
-        Me.Check_available_sfoods_14.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_14.UseVisualStyleBackColor = False
         '
         'PictureBox32
         '
@@ -2696,7 +2701,7 @@ Partial Class Items_edit
         Me.PictureBox32.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox32.TabIndex = 151
-        Me.PictureBox32.TabStop = false
+        Me.PictureBox32.TabStop = False
         '
         'valu_sfoods_13
         '
@@ -2710,23 +2715,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_13
         '
-        Me.Check_NA_sfoods_13.AutoSize = true
+        Me.Check_NA_sfoods_13.AutoSize = True
         Me.Check_NA_sfoods_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_13.Location = New System.Drawing.Point(270, 169)
         Me.Check_NA_sfoods_13.Name = "Check_NA_sfoods_13"
         Me.Check_NA_sfoods_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_13.TabIndex = 149
-        Me.Check_NA_sfoods_13.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_13.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_13
         '
-        Me.Check_available_sfoods_13.AutoSize = true
+        Me.Check_available_sfoods_13.AutoSize = True
         Me.Check_available_sfoods_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_13.Location = New System.Drawing.Point(209, 169)
         Me.Check_available_sfoods_13.Name = "Check_available_sfoods_13"
         Me.Check_available_sfoods_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_13.TabIndex = 148
-        Me.Check_available_sfoods_13.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_13.UseVisualStyleBackColor = False
         '
         'PictureBox33
         '
@@ -2736,7 +2741,7 @@ Partial Class Items_edit
         Me.PictureBox33.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox33.TabIndex = 147
-        Me.PictureBox33.TabStop = false
+        Me.PictureBox33.TabStop = False
         '
         'valu_sfoods_12
         '
@@ -2750,23 +2755,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_12
         '
-        Me.Check_NA_sfoods_12.AutoSize = true
+        Me.Check_NA_sfoods_12.AutoSize = True
         Me.Check_NA_sfoods_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_12.Location = New System.Drawing.Point(188, 169)
         Me.Check_NA_sfoods_12.Name = "Check_NA_sfoods_12"
         Me.Check_NA_sfoods_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_12.TabIndex = 145
-        Me.Check_NA_sfoods_12.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_12.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_12
         '
-        Me.Check_available_sfoods_12.AutoSize = true
+        Me.Check_available_sfoods_12.AutoSize = True
         Me.Check_available_sfoods_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_12.Location = New System.Drawing.Point(127, 169)
         Me.Check_available_sfoods_12.Name = "Check_available_sfoods_12"
         Me.Check_available_sfoods_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_12.TabIndex = 144
-        Me.Check_available_sfoods_12.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_12.UseVisualStyleBackColor = False
         '
         'PictureBox34
         '
@@ -2776,7 +2781,7 @@ Partial Class Items_edit
         Me.PictureBox34.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox34.TabIndex = 143
-        Me.PictureBox34.TabStop = false
+        Me.PictureBox34.TabStop = False
         '
         'valu_sfoods_11
         '
@@ -2790,23 +2795,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_11
         '
-        Me.Check_NA_sfoods_11.AutoSize = true
+        Me.Check_NA_sfoods_11.AutoSize = True
         Me.Check_NA_sfoods_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_11.Location = New System.Drawing.Point(106, 169)
         Me.Check_NA_sfoods_11.Name = "Check_NA_sfoods_11"
         Me.Check_NA_sfoods_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_11.TabIndex = 141
-        Me.Check_NA_sfoods_11.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_11.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_11
         '
-        Me.Check_available_sfoods_11.AutoSize = true
+        Me.Check_available_sfoods_11.AutoSize = True
         Me.Check_available_sfoods_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_11.Location = New System.Drawing.Point(45, 169)
         Me.Check_available_sfoods_11.Name = "Check_available_sfoods_11"
         Me.Check_available_sfoods_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_11.TabIndex = 140
-        Me.Check_available_sfoods_11.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_11.UseVisualStyleBackColor = False
         '
         'PictureBox35
         '
@@ -2816,7 +2821,7 @@ Partial Class Items_edit
         Me.PictureBox35.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox35.TabIndex = 139
-        Me.PictureBox35.TabStop = false
+        Me.PictureBox35.TabStop = False
         '
         'valu_sfoods_10
         '
@@ -2830,23 +2835,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_10
         '
-        Me.Check_NA_sfoods_10.AutoSize = true
+        Me.Check_NA_sfoods_10.AutoSize = True
         Me.Check_NA_sfoods_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_10.Location = New System.Drawing.Point(844, 89)
         Me.Check_NA_sfoods_10.Name = "Check_NA_sfoods_10"
         Me.Check_NA_sfoods_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_10.TabIndex = 137
-        Me.Check_NA_sfoods_10.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_10.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_10
         '
-        Me.Check_available_sfoods_10.AutoSize = true
+        Me.Check_available_sfoods_10.AutoSize = True
         Me.Check_available_sfoods_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_10.Location = New System.Drawing.Point(783, 89)
         Me.Check_available_sfoods_10.Name = "Check_available_sfoods_10"
         Me.Check_available_sfoods_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_10.TabIndex = 136
-        Me.Check_available_sfoods_10.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_10.UseVisualStyleBackColor = False
         '
         'PictureBox24
         '
@@ -2856,7 +2861,7 @@ Partial Class Items_edit
         Me.PictureBox24.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox24.TabIndex = 135
-        Me.PictureBox24.TabStop = false
+        Me.PictureBox24.TabStop = False
         '
         'valu_sfoods_9
         '
@@ -2870,23 +2875,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_9
         '
-        Me.Check_NA_sfoods_9.AutoSize = true
+        Me.Check_NA_sfoods_9.AutoSize = True
         Me.Check_NA_sfoods_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_9.Location = New System.Drawing.Point(762, 89)
         Me.Check_NA_sfoods_9.Name = "Check_NA_sfoods_9"
         Me.Check_NA_sfoods_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_9.TabIndex = 133
-        Me.Check_NA_sfoods_9.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_9.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_9
         '
-        Me.Check_available_sfoods_9.AutoSize = true
+        Me.Check_available_sfoods_9.AutoSize = True
         Me.Check_available_sfoods_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_9.Location = New System.Drawing.Point(701, 89)
         Me.Check_available_sfoods_9.Name = "Check_available_sfoods_9"
         Me.Check_available_sfoods_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_9.TabIndex = 132
-        Me.Check_available_sfoods_9.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_9.UseVisualStyleBackColor = False
         '
         'PictureBox25
         '
@@ -2896,7 +2901,7 @@ Partial Class Items_edit
         Me.PictureBox25.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox25.TabIndex = 131
-        Me.PictureBox25.TabStop = false
+        Me.PictureBox25.TabStop = False
         '
         'valu_sfoods_8
         '
@@ -2910,23 +2915,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_8
         '
-        Me.Check_NA_sfoods_8.AutoSize = true
+        Me.Check_NA_sfoods_8.AutoSize = True
         Me.Check_NA_sfoods_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_8.Location = New System.Drawing.Point(680, 89)
         Me.Check_NA_sfoods_8.Name = "Check_NA_sfoods_8"
         Me.Check_NA_sfoods_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_8.TabIndex = 129
-        Me.Check_NA_sfoods_8.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_8.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_8
         '
-        Me.Check_available_sfoods_8.AutoSize = true
+        Me.Check_available_sfoods_8.AutoSize = True
         Me.Check_available_sfoods_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_8.Location = New System.Drawing.Point(619, 89)
         Me.Check_available_sfoods_8.Name = "Check_available_sfoods_8"
         Me.Check_available_sfoods_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_8.TabIndex = 128
-        Me.Check_available_sfoods_8.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_8.UseVisualStyleBackColor = False
         '
         'PictureBox20
         '
@@ -2936,7 +2941,7 @@ Partial Class Items_edit
         Me.PictureBox20.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox20.TabIndex = 127
-        Me.PictureBox20.TabStop = false
+        Me.PictureBox20.TabStop = False
         '
         'valu_sfoods_7
         '
@@ -2950,23 +2955,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_7
         '
-        Me.Check_NA_sfoods_7.AutoSize = true
+        Me.Check_NA_sfoods_7.AutoSize = True
         Me.Check_NA_sfoods_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_7.Location = New System.Drawing.Point(598, 89)
         Me.Check_NA_sfoods_7.Name = "Check_NA_sfoods_7"
         Me.Check_NA_sfoods_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_7.TabIndex = 125
-        Me.Check_NA_sfoods_7.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_7.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_7
         '
-        Me.Check_available_sfoods_7.AutoSize = true
+        Me.Check_available_sfoods_7.AutoSize = True
         Me.Check_available_sfoods_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_7.Location = New System.Drawing.Point(537, 89)
         Me.Check_available_sfoods_7.Name = "Check_available_sfoods_7"
         Me.Check_available_sfoods_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_7.TabIndex = 124
-        Me.Check_available_sfoods_7.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_7.UseVisualStyleBackColor = False
         '
         'PictureBox21
         '
@@ -2976,7 +2981,7 @@ Partial Class Items_edit
         Me.PictureBox21.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox21.TabIndex = 123
-        Me.PictureBox21.TabStop = false
+        Me.PictureBox21.TabStop = False
         '
         'valu_sfoods_6
         '
@@ -2990,23 +2995,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_6
         '
-        Me.Check_NA_sfoods_6.AutoSize = true
+        Me.Check_NA_sfoods_6.AutoSize = True
         Me.Check_NA_sfoods_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_6.Location = New System.Drawing.Point(516, 89)
         Me.Check_NA_sfoods_6.Name = "Check_NA_sfoods_6"
         Me.Check_NA_sfoods_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_6.TabIndex = 121
-        Me.Check_NA_sfoods_6.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_6.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_6
         '
-        Me.Check_available_sfoods_6.AutoSize = true
+        Me.Check_available_sfoods_6.AutoSize = True
         Me.Check_available_sfoods_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_6.Location = New System.Drawing.Point(455, 89)
         Me.Check_available_sfoods_6.Name = "Check_available_sfoods_6"
         Me.Check_available_sfoods_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_6.TabIndex = 120
-        Me.Check_available_sfoods_6.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_6.UseVisualStyleBackColor = False
         '
         'PictureBox22
         '
@@ -3016,7 +3021,7 @@ Partial Class Items_edit
         Me.PictureBox22.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox22.TabIndex = 119
-        Me.PictureBox22.TabStop = false
+        Me.PictureBox22.TabStop = False
         '
         'valu_sfoods_5
         '
@@ -3030,23 +3035,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_5
         '
-        Me.Check_NA_sfoods_5.AutoSize = true
+        Me.Check_NA_sfoods_5.AutoSize = True
         Me.Check_NA_sfoods_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_5.Location = New System.Drawing.Point(434, 89)
         Me.Check_NA_sfoods_5.Name = "Check_NA_sfoods_5"
         Me.Check_NA_sfoods_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_5.TabIndex = 117
-        Me.Check_NA_sfoods_5.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_5.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_5
         '
-        Me.Check_available_sfoods_5.AutoSize = true
+        Me.Check_available_sfoods_5.AutoSize = True
         Me.Check_available_sfoods_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_5.Location = New System.Drawing.Point(373, 89)
         Me.Check_available_sfoods_5.Name = "Check_available_sfoods_5"
         Me.Check_available_sfoods_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_5.TabIndex = 116
-        Me.Check_available_sfoods_5.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_5.UseVisualStyleBackColor = False
         '
         'PictureBox23
         '
@@ -3056,7 +3061,7 @@ Partial Class Items_edit
         Me.PictureBox23.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox23.TabIndex = 115
-        Me.PictureBox23.TabStop = false
+        Me.PictureBox23.TabStop = False
         '
         'valu_sfoods_4
         '
@@ -3070,23 +3075,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_4
         '
-        Me.Check_NA_sfoods_4.AutoSize = true
+        Me.Check_NA_sfoods_4.AutoSize = True
         Me.Check_NA_sfoods_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_4.Location = New System.Drawing.Point(352, 89)
         Me.Check_NA_sfoods_4.Name = "Check_NA_sfoods_4"
         Me.Check_NA_sfoods_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_4.TabIndex = 113
-        Me.Check_NA_sfoods_4.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_4.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_4
         '
-        Me.Check_available_sfoods_4.AutoSize = true
+        Me.Check_available_sfoods_4.AutoSize = True
         Me.Check_available_sfoods_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_4.Location = New System.Drawing.Point(291, 89)
         Me.Check_available_sfoods_4.Name = "Check_available_sfoods_4"
         Me.Check_available_sfoods_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_4.TabIndex = 112
-        Me.Check_available_sfoods_4.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_4.UseVisualStyleBackColor = False
         '
         'PictureBox8
         '
@@ -3096,7 +3101,7 @@ Partial Class Items_edit
         Me.PictureBox8.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox8.TabIndex = 111
-        Me.PictureBox8.TabStop = false
+        Me.PictureBox8.TabStop = False
         '
         'valu_sfoods_3
         '
@@ -3110,23 +3115,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_3
         '
-        Me.Check_NA_sfoods_3.AutoSize = true
+        Me.Check_NA_sfoods_3.AutoSize = True
         Me.Check_NA_sfoods_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_3.Location = New System.Drawing.Point(270, 89)
         Me.Check_NA_sfoods_3.Name = "Check_NA_sfoods_3"
         Me.Check_NA_sfoods_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_3.TabIndex = 109
-        Me.Check_NA_sfoods_3.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_3.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_3
         '
-        Me.Check_available_sfoods_3.AutoSize = true
+        Me.Check_available_sfoods_3.AutoSize = True
         Me.Check_available_sfoods_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_3.Location = New System.Drawing.Point(209, 89)
         Me.Check_available_sfoods_3.Name = "Check_available_sfoods_3"
         Me.Check_available_sfoods_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_3.TabIndex = 108
-        Me.Check_available_sfoods_3.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_3.UseVisualStyleBackColor = False
         '
         'PictureBox19
         '
@@ -3136,7 +3141,7 @@ Partial Class Items_edit
         Me.PictureBox19.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox19.TabIndex = 107
-        Me.PictureBox19.TabStop = false
+        Me.PictureBox19.TabStop = False
         '
         'valu_sfoods_2
         '
@@ -3150,23 +3155,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_2
         '
-        Me.Check_NA_sfoods_2.AutoSize = true
+        Me.Check_NA_sfoods_2.AutoSize = True
         Me.Check_NA_sfoods_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_2.Location = New System.Drawing.Point(188, 89)
         Me.Check_NA_sfoods_2.Name = "Check_NA_sfoods_2"
         Me.Check_NA_sfoods_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_2.TabIndex = 105
-        Me.Check_NA_sfoods_2.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_2.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_2
         '
-        Me.Check_available_sfoods_2.AutoSize = true
+        Me.Check_available_sfoods_2.AutoSize = True
         Me.Check_available_sfoods_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_2.Location = New System.Drawing.Point(127, 89)
         Me.Check_available_sfoods_2.Name = "Check_available_sfoods_2"
         Me.Check_available_sfoods_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_2.TabIndex = 104
-        Me.Check_available_sfoods_2.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_2.UseVisualStyleBackColor = False
         '
         'PictureBox7
         '
@@ -3176,7 +3181,7 @@ Partial Class Items_edit
         Me.PictureBox7.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox7.TabIndex = 103
-        Me.PictureBox7.TabStop = false
+        Me.PictureBox7.TabStop = False
         '
         'valu_sfoods_1
         '
@@ -3190,23 +3195,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_1
         '
-        Me.Check_NA_sfoods_1.AutoSize = true
+        Me.Check_NA_sfoods_1.AutoSize = True
         Me.Check_NA_sfoods_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_1.Location = New System.Drawing.Point(106, 89)
         Me.Check_NA_sfoods_1.Name = "Check_NA_sfoods_1"
         Me.Check_NA_sfoods_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_1.TabIndex = 101
-        Me.Check_NA_sfoods_1.UseVisualStyleBackColor = false
+        Me.Check_NA_sfoods_1.UseVisualStyleBackColor = False
         '
         'Check_available_sfoods_1
         '
-        Me.Check_available_sfoods_1.AutoSize = true
+        Me.Check_available_sfoods_1.AutoSize = True
         Me.Check_available_sfoods_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_1.Location = New System.Drawing.Point(45, 89)
         Me.Check_available_sfoods_1.Name = "Check_available_sfoods_1"
         Me.Check_available_sfoods_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_1.TabIndex = 100
-        Me.Check_available_sfoods_1.UseVisualStyleBackColor = false
+        Me.Check_available_sfoods_1.UseVisualStyleBackColor = False
         '
         'PictureBox6
         '
@@ -3216,7 +3221,7 @@ Partial Class Items_edit
         Me.PictureBox6.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 99
-        Me.PictureBox6.TabStop = false
+        Me.PictureBox6.TabStop = False
         '
         'Icon_hats_03
         '
@@ -3227,8 +3232,8 @@ Partial Class Items_edit
         Me.Icon_hats_03.Name = "Icon_hats_03"
         Me.Icon_hats_03.Size = New System.Drawing.Size(54, 26)
         Me.Icon_hats_03.TabIndex = 100
-        Me.Icon_hats_03.TabStop = false
-        Me.Icon_hats_03.Visible = false
+        Me.Icon_hats_03.TabStop = False
+        Me.Icon_hats_03.Visible = False
         '
         'Icon_hats_02
         '
@@ -3239,8 +3244,8 @@ Partial Class Items_edit
         Me.Icon_hats_02.Name = "Icon_hats_02"
         Me.Icon_hats_02.Size = New System.Drawing.Size(54, 26)
         Me.Icon_hats_02.TabIndex = 99
-        Me.Icon_hats_02.TabStop = false
-        Me.Icon_hats_02.Visible = false
+        Me.Icon_hats_02.TabStop = False
+        Me.Icon_hats_02.Visible = False
         '
         'Icon_hats_01
         '
@@ -3251,8 +3256,8 @@ Partial Class Items_edit
         Me.Icon_hats_01.Name = "Icon_hats_01"
         Me.Icon_hats_01.Size = New System.Drawing.Size(54, 26)
         Me.Icon_hats_01.TabIndex = 98
-        Me.Icon_hats_01.TabStop = false
-        Me.Icon_hats_01.Visible = false
+        Me.Icon_hats_01.TabStop = False
+        Me.Icon_hats_01.Visible = False
         '
         'Icon_normalfoods_01
         '
@@ -3263,8 +3268,8 @@ Partial Class Items_edit
         Me.Icon_normalfoods_01.Name = "Icon_normalfoods_01"
         Me.Icon_normalfoods_01.Size = New System.Drawing.Size(64, 26)
         Me.Icon_normalfoods_01.TabIndex = 99
-        Me.Icon_normalfoods_01.TabStop = false
-        Me.Icon_normalfoods_01.Visible = false
+        Me.Icon_normalfoods_01.TabStop = False
+        Me.Icon_normalfoods_01.Visible = False
         '
         'Icon_normalfoods_03
         '
@@ -3275,8 +3280,8 @@ Partial Class Items_edit
         Me.Icon_normalfoods_03.Name = "Icon_normalfoods_03"
         Me.Icon_normalfoods_03.Size = New System.Drawing.Size(64, 26)
         Me.Icon_normalfoods_03.TabIndex = 101
-        Me.Icon_normalfoods_03.TabStop = false
-        Me.Icon_normalfoods_03.Visible = false
+        Me.Icon_normalfoods_03.TabStop = False
+        Me.Icon_normalfoods_03.Visible = False
         '
         'Icon_normalfoods_04
         '
@@ -3287,8 +3292,8 @@ Partial Class Items_edit
         Me.Icon_normalfoods_04.Name = "Icon_normalfoods_04"
         Me.Icon_normalfoods_04.Size = New System.Drawing.Size(64, 26)
         Me.Icon_normalfoods_04.TabIndex = 102
-        Me.Icon_normalfoods_04.TabStop = false
-        Me.Icon_normalfoods_04.Visible = false
+        Me.Icon_normalfoods_04.TabStop = False
+        Me.Icon_normalfoods_04.Visible = False
         '
         'Icon_normalfoods_02
         '
@@ -3299,8 +3304,8 @@ Partial Class Items_edit
         Me.Icon_normalfoods_02.Name = "Icon_normalfoods_02"
         Me.Icon_normalfoods_02.Size = New System.Drawing.Size(64, 26)
         Me.Icon_normalfoods_02.TabIndex = 100
-        Me.Icon_normalfoods_02.TabStop = false
-        Me.Icon_normalfoods_02.Visible = false
+        Me.Icon_normalfoods_02.TabStop = False
+        Me.Icon_normalfoods_02.Visible = False
         '
         'Icon_normalfoods
         '
@@ -3311,7 +3316,7 @@ Partial Class Items_edit
         Me.Icon_normalfoods.Name = "Icon_normalfoods"
         Me.Icon_normalfoods.Size = New System.Drawing.Size(50, 32)
         Me.Icon_normalfoods.TabIndex = 1
-        Me.Icon_normalfoods.TabStop = false
+        Me.Icon_normalfoods.TabStop = False
         '
         'Icon_clothes
         '
@@ -3322,7 +3327,7 @@ Partial Class Items_edit
         Me.Icon_clothes.Name = "Icon_clothes"
         Me.Icon_clothes.Size = New System.Drawing.Size(50, 32)
         Me.Icon_clothes.TabIndex = 2
-        Me.Icon_clothes.TabStop = false
+        Me.Icon_clothes.TabStop = False
         '
         'Icon_interiors
         '
@@ -3333,7 +3338,7 @@ Partial Class Items_edit
         Me.Icon_interiors.Name = "Icon_interiors"
         Me.Icon_interiors.Size = New System.Drawing.Size(50, 32)
         Me.Icon_interiors.TabIndex = 4
-        Me.Icon_interiors.TabStop = false
+        Me.Icon_interiors.TabStop = False
         '
         'Icon_hats
         '
@@ -3344,7 +3349,7 @@ Partial Class Items_edit
         Me.Icon_hats.Name = "Icon_hats"
         Me.Icon_hats.Size = New System.Drawing.Size(50, 32)
         Me.Icon_hats.TabIndex = 3
-        Me.Icon_hats.TabStop = false
+        Me.Icon_hats.TabStop = False
         '
         'Icon_treasures
         '
@@ -3355,7 +3360,7 @@ Partial Class Items_edit
         Me.Icon_treasures.Name = "Icon_treasures"
         Me.Icon_treasures.Size = New System.Drawing.Size(50, 32)
         Me.Icon_treasures.TabIndex = 6
-        Me.Icon_treasures.TabStop = false
+        Me.Icon_treasures.TabStop = False
         '
         'Icon_gooditems
         '
@@ -3366,7 +3371,7 @@ Partial Class Items_edit
         Me.Icon_gooditems.Name = "Icon_gooditems"
         Me.Icon_gooditems.Size = New System.Drawing.Size(50, 32)
         Me.Icon_gooditems.TabIndex = 5
-        Me.Icon_gooditems.TabStop = false
+        Me.Icon_gooditems.TabStop = False
         '
         'Icon_treasures_01
         '
@@ -3377,7 +3382,7 @@ Partial Class Items_edit
         Me.Icon_treasures_01.Name = "Icon_treasures_01"
         Me.Icon_treasures_01.Size = New System.Drawing.Size(138, 28)
         Me.Icon_treasures_01.TabIndex = 9
-        Me.Icon_treasures_01.Visible = false
+        Me.Icon_treasures_01.Visible = False
         '
         'Text_treasures_01
         '
@@ -3399,7 +3404,7 @@ Partial Class Items_edit
         Me.Icon_specialfoods.Name = "Icon_specialfoods"
         Me.Icon_specialfoods.Size = New System.Drawing.Size(138, 28)
         Me.Icon_specialfoods.TabIndex = 10
-        Me.Icon_specialfoods.Visible = false
+        Me.Icon_specialfoods.Visible = False
         '
         'Text_specialfoods
         '
@@ -3421,7 +3426,7 @@ Partial Class Items_edit
         Me.Icon_return.Name = "Icon_return"
         Me.Icon_return.Size = New System.Drawing.Size(40, 30)
         Me.Icon_return.TabIndex = 11
-        Me.Icon_return.TabStop = false
+        Me.Icon_return.TabStop = False
         '
         'Icon_clothes_01
         '
@@ -3432,8 +3437,8 @@ Partial Class Items_edit
         Me.Icon_clothes_01.Name = "Icon_clothes_01"
         Me.Icon_clothes_01.Size = New System.Drawing.Size(54, 26)
         Me.Icon_clothes_01.TabIndex = 12
-        Me.Icon_clothes_01.TabStop = false
-        Me.Icon_clothes_01.Visible = false
+        Me.Icon_clothes_01.TabStop = False
+        Me.Icon_clothes_01.Visible = False
         '
         'Icon_clothes_02
         '
@@ -3444,8 +3449,8 @@ Partial Class Items_edit
         Me.Icon_clothes_02.Name = "Icon_clothes_02"
         Me.Icon_clothes_02.Size = New System.Drawing.Size(54, 26)
         Me.Icon_clothes_02.TabIndex = 96
-        Me.Icon_clothes_02.TabStop = false
-        Me.Icon_clothes_02.Visible = false
+        Me.Icon_clothes_02.TabStop = False
+        Me.Icon_clothes_02.Visible = False
         '
         'Icon_clothes_04
         '
@@ -3456,8 +3461,8 @@ Partial Class Items_edit
         Me.Icon_clothes_04.Name = "Icon_clothes_04"
         Me.Icon_clothes_04.Size = New System.Drawing.Size(54, 26)
         Me.Icon_clothes_04.TabIndex = 98
-        Me.Icon_clothes_04.TabStop = false
-        Me.Icon_clothes_04.Visible = false
+        Me.Icon_clothes_04.TabStop = False
+        Me.Icon_clothes_04.Visible = False
         '
         'Icon_clothes_03
         '
@@ -3468,8 +3473,8 @@ Partial Class Items_edit
         Me.Icon_clothes_03.Name = "Icon_clothes_03"
         Me.Icon_clothes_03.Size = New System.Drawing.Size(54, 26)
         Me.Icon_clothes_03.TabIndex = 97
-        Me.Icon_clothes_03.TabStop = false
-        Me.Icon_clothes_03.Visible = false
+        Me.Icon_clothes_03.TabStop = False
+        Me.Icon_clothes_03.Visible = False
         '
         'Icon_clothes_05
         '
@@ -3480,12 +3485,12 @@ Partial Class Items_edit
         Me.Icon_clothes_05.Name = "Icon_clothes_05"
         Me.Icon_clothes_05.Size = New System.Drawing.Size(54, 26)
         Me.Icon_clothes_05.TabIndex = 99
-        Me.Icon_clothes_05.TabStop = false
-        Me.Icon_clothes_05.Visible = false
+        Me.Icon_clothes_05.TabStop = False
+        Me.Icon_clothes_05.Visible = False
         '
         'Panel_gooditems
         '
-        Me.Panel_gooditems.BackgroundImage = CType(resources.GetObject("Panel_gooditems.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_gooditems.BackgroundImage = CType(resources.GetObject("Panel_gooditems.BackgroundImage"), System.Drawing.Image)
         Me.Panel_gooditems.Controls.Add(Me.valu_goodi_18)
         Me.Panel_gooditems.Controls.Add(Me.Check_NA_goodi_18)
         Me.Panel_gooditems.Controls.Add(Me.Check_available_goodi_18)
@@ -3562,7 +3567,7 @@ Partial Class Items_edit
         Me.Panel_gooditems.Name = "Panel_gooditems"
         Me.Panel_gooditems.Size = New System.Drawing.Size(905, 506)
         Me.Panel_gooditems.TabIndex = 103
-        Me.Panel_gooditems.Visible = false
+        Me.Panel_gooditems.Visible = False
         '
         'valu_goodi_18
         '
@@ -3576,23 +3581,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_18
         '
-        Me.Check_NA_goodi_18.AutoSize = true
+        Me.Check_NA_goodi_18.AutoSize = True
         Me.Check_NA_goodi_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_18.Location = New System.Drawing.Point(762, 316)
         Me.Check_NA_goodi_18.Name = "Check_NA_goodi_18"
         Me.Check_NA_goodi_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_18.TabIndex = 249
-        Me.Check_NA_goodi_18.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_18.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_18
         '
-        Me.Check_available_goodi_18.AutoSize = true
+        Me.Check_available_goodi_18.AutoSize = True
         Me.Check_available_goodi_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_18.Location = New System.Drawing.Point(701, 316)
         Me.Check_available_goodi_18.Name = "Check_available_goodi_18"
         Me.Check_available_goodi_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_18.TabIndex = 248
-        Me.Check_available_goodi_18.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_18.UseVisualStyleBackColor = False
         '
         'PictureBox61
         '
@@ -3602,7 +3607,7 @@ Partial Class Items_edit
         Me.PictureBox61.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox61.TabIndex = 247
-        Me.PictureBox61.TabStop = false
+        Me.PictureBox61.TabStop = False
         '
         'valu_goodi_17
         '
@@ -3616,23 +3621,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_17
         '
-        Me.Check_NA_goodi_17.AutoSize = true
+        Me.Check_NA_goodi_17.AutoSize = True
         Me.Check_NA_goodi_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_17.Location = New System.Drawing.Point(680, 316)
         Me.Check_NA_goodi_17.Name = "Check_NA_goodi_17"
         Me.Check_NA_goodi_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_17.TabIndex = 245
-        Me.Check_NA_goodi_17.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_17.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_17
         '
-        Me.Check_available_goodi_17.AutoSize = true
+        Me.Check_available_goodi_17.AutoSize = True
         Me.Check_available_goodi_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_17.Location = New System.Drawing.Point(619, 316)
         Me.Check_available_goodi_17.Name = "Check_available_goodi_17"
         Me.Check_available_goodi_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_17.TabIndex = 244
-        Me.Check_available_goodi_17.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_17.UseVisualStyleBackColor = False
         '
         'PictureBox62
         '
@@ -3642,7 +3647,7 @@ Partial Class Items_edit
         Me.PictureBox62.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox62.TabIndex = 243
-        Me.PictureBox62.TabStop = false
+        Me.PictureBox62.TabStop = False
         '
         'valu_goodi_16
         '
@@ -3656,23 +3661,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_16
         '
-        Me.Check_NA_goodi_16.AutoSize = true
+        Me.Check_NA_goodi_16.AutoSize = True
         Me.Check_NA_goodi_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_16.Location = New System.Drawing.Point(598, 316)
         Me.Check_NA_goodi_16.Name = "Check_NA_goodi_16"
         Me.Check_NA_goodi_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_16.TabIndex = 241
-        Me.Check_NA_goodi_16.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_16.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_16
         '
-        Me.Check_available_goodi_16.AutoSize = true
+        Me.Check_available_goodi_16.AutoSize = True
         Me.Check_available_goodi_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_16.Location = New System.Drawing.Point(537, 316)
         Me.Check_available_goodi_16.Name = "Check_available_goodi_16"
         Me.Check_available_goodi_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_16.TabIndex = 240
-        Me.Check_available_goodi_16.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_16.UseVisualStyleBackColor = False
         '
         'PictureBox63
         '
@@ -3682,7 +3687,7 @@ Partial Class Items_edit
         Me.PictureBox63.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox63.TabIndex = 239
-        Me.PictureBox63.TabStop = false
+        Me.PictureBox63.TabStop = False
         '
         'valu_goodi_15
         '
@@ -3696,23 +3701,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_15
         '
-        Me.Check_NA_goodi_15.AutoSize = true
+        Me.Check_NA_goodi_15.AutoSize = True
         Me.Check_NA_goodi_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_15.Location = New System.Drawing.Point(516, 316)
         Me.Check_NA_goodi_15.Name = "Check_NA_goodi_15"
         Me.Check_NA_goodi_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_15.TabIndex = 237
-        Me.Check_NA_goodi_15.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_15.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_15
         '
-        Me.Check_available_goodi_15.AutoSize = true
+        Me.Check_available_goodi_15.AutoSize = True
         Me.Check_available_goodi_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_15.Location = New System.Drawing.Point(455, 316)
         Me.Check_available_goodi_15.Name = "Check_available_goodi_15"
         Me.Check_available_goodi_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_15.TabIndex = 236
-        Me.Check_available_goodi_15.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_15.UseVisualStyleBackColor = False
         '
         'PictureBox64
         '
@@ -3722,7 +3727,7 @@ Partial Class Items_edit
         Me.PictureBox64.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox64.TabIndex = 235
-        Me.PictureBox64.TabStop = false
+        Me.PictureBox64.TabStop = False
         '
         'valu_goodi_14
         '
@@ -3736,23 +3741,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_14
         '
-        Me.Check_NA_goodi_14.AutoSize = true
+        Me.Check_NA_goodi_14.AutoSize = True
         Me.Check_NA_goodi_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_14.Location = New System.Drawing.Point(434, 316)
         Me.Check_NA_goodi_14.Name = "Check_NA_goodi_14"
         Me.Check_NA_goodi_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_14.TabIndex = 233
-        Me.Check_NA_goodi_14.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_14.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_14
         '
-        Me.Check_available_goodi_14.AutoSize = true
+        Me.Check_available_goodi_14.AutoSize = True
         Me.Check_available_goodi_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_14.Location = New System.Drawing.Point(373, 316)
         Me.Check_available_goodi_14.Name = "Check_available_goodi_14"
         Me.Check_available_goodi_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_14.TabIndex = 232
-        Me.Check_available_goodi_14.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_14.UseVisualStyleBackColor = False
         '
         'PictureBox65
         '
@@ -3762,7 +3767,7 @@ Partial Class Items_edit
         Me.PictureBox65.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox65.TabIndex = 231
-        Me.PictureBox65.TabStop = false
+        Me.PictureBox65.TabStop = False
         '
         'valu_goodi_13
         '
@@ -3776,23 +3781,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_13
         '
-        Me.Check_NA_goodi_13.AutoSize = true
+        Me.Check_NA_goodi_13.AutoSize = True
         Me.Check_NA_goodi_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_13.Location = New System.Drawing.Point(352, 316)
         Me.Check_NA_goodi_13.Name = "Check_NA_goodi_13"
         Me.Check_NA_goodi_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_13.TabIndex = 229
-        Me.Check_NA_goodi_13.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_13.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_13
         '
-        Me.Check_available_goodi_13.AutoSize = true
+        Me.Check_available_goodi_13.AutoSize = True
         Me.Check_available_goodi_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_13.Location = New System.Drawing.Point(291, 316)
         Me.Check_available_goodi_13.Name = "Check_available_goodi_13"
         Me.Check_available_goodi_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_13.TabIndex = 228
-        Me.Check_available_goodi_13.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_13.UseVisualStyleBackColor = False
         '
         'PictureBox66
         '
@@ -3802,7 +3807,7 @@ Partial Class Items_edit
         Me.PictureBox66.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox66.TabIndex = 227
-        Me.PictureBox66.TabStop = false
+        Me.PictureBox66.TabStop = False
         '
         'valu_goodi_12
         '
@@ -3816,23 +3821,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_12
         '
-        Me.Check_NA_goodi_12.AutoSize = true
+        Me.Check_NA_goodi_12.AutoSize = True
         Me.Check_NA_goodi_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_12.Location = New System.Drawing.Point(270, 316)
         Me.Check_NA_goodi_12.Name = "Check_NA_goodi_12"
         Me.Check_NA_goodi_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_12.TabIndex = 225
-        Me.Check_NA_goodi_12.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_12.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_12
         '
-        Me.Check_available_goodi_12.AutoSize = true
+        Me.Check_available_goodi_12.AutoSize = True
         Me.Check_available_goodi_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_12.Location = New System.Drawing.Point(209, 316)
         Me.Check_available_goodi_12.Name = "Check_available_goodi_12"
         Me.Check_available_goodi_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_12.TabIndex = 224
-        Me.Check_available_goodi_12.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_12.UseVisualStyleBackColor = False
         '
         'PictureBox67
         '
@@ -3842,7 +3847,7 @@ Partial Class Items_edit
         Me.PictureBox67.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox67.TabIndex = 223
-        Me.PictureBox67.TabStop = false
+        Me.PictureBox67.TabStop = False
         '
         'valu_goodi_11
         '
@@ -3856,23 +3861,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_11
         '
-        Me.Check_NA_goodi_11.AutoSize = true
+        Me.Check_NA_goodi_11.AutoSize = True
         Me.Check_NA_goodi_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_11.Location = New System.Drawing.Point(188, 316)
         Me.Check_NA_goodi_11.Name = "Check_NA_goodi_11"
         Me.Check_NA_goodi_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_11.TabIndex = 221
-        Me.Check_NA_goodi_11.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_11.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_11
         '
-        Me.Check_available_goodi_11.AutoSize = true
+        Me.Check_available_goodi_11.AutoSize = True
         Me.Check_available_goodi_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_11.Location = New System.Drawing.Point(127, 316)
         Me.Check_available_goodi_11.Name = "Check_available_goodi_11"
         Me.Check_available_goodi_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_11.TabIndex = 220
-        Me.Check_available_goodi_11.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_11.UseVisualStyleBackColor = False
         '
         'PictureBox68
         '
@@ -3882,7 +3887,7 @@ Partial Class Items_edit
         Me.PictureBox68.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox68.TabIndex = 219
-        Me.PictureBox68.TabStop = false
+        Me.PictureBox68.TabStop = False
         '
         'valu_goodi_10
         '
@@ -3896,23 +3901,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_10
         '
-        Me.Check_NA_goodi_10.AutoSize = true
+        Me.Check_NA_goodi_10.AutoSize = True
         Me.Check_NA_goodi_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_10.Location = New System.Drawing.Point(844, 236)
         Me.Check_NA_goodi_10.Name = "Check_NA_goodi_10"
         Me.Check_NA_goodi_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_10.TabIndex = 217
-        Me.Check_NA_goodi_10.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_10.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_10
         '
-        Me.Check_available_goodi_10.AutoSize = true
+        Me.Check_available_goodi_10.AutoSize = True
         Me.Check_available_goodi_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_10.Location = New System.Drawing.Point(783, 236)
         Me.Check_available_goodi_10.Name = "Check_available_goodi_10"
         Me.Check_available_goodi_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_10.TabIndex = 216
-        Me.Check_available_goodi_10.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_10.UseVisualStyleBackColor = False
         '
         'PictureBox69
         '
@@ -3922,7 +3927,7 @@ Partial Class Items_edit
         Me.PictureBox69.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox69.TabIndex = 215
-        Me.PictureBox69.TabStop = false
+        Me.PictureBox69.TabStop = False
         '
         'valu_goodi_9
         '
@@ -3936,23 +3941,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_9
         '
-        Me.Check_NA_goodi_9.AutoSize = true
+        Me.Check_NA_goodi_9.AutoSize = True
         Me.Check_NA_goodi_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_9.Location = New System.Drawing.Point(762, 236)
         Me.Check_NA_goodi_9.Name = "Check_NA_goodi_9"
         Me.Check_NA_goodi_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_9.TabIndex = 213
-        Me.Check_NA_goodi_9.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_9.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_9
         '
-        Me.Check_available_goodi_9.AutoSize = true
+        Me.Check_available_goodi_9.AutoSize = True
         Me.Check_available_goodi_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_9.Location = New System.Drawing.Point(701, 236)
         Me.Check_available_goodi_9.Name = "Check_available_goodi_9"
         Me.Check_available_goodi_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_9.TabIndex = 212
-        Me.Check_available_goodi_9.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_9.UseVisualStyleBackColor = False
         '
         'PictureBox70
         '
@@ -3962,7 +3967,7 @@ Partial Class Items_edit
         Me.PictureBox70.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox70.TabIndex = 211
-        Me.PictureBox70.TabStop = false
+        Me.PictureBox70.TabStop = False
         '
         'valu_goodi_8
         '
@@ -3976,23 +3981,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_8
         '
-        Me.Check_NA_goodi_8.AutoSize = true
+        Me.Check_NA_goodi_8.AutoSize = True
         Me.Check_NA_goodi_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_8.Location = New System.Drawing.Point(680, 236)
         Me.Check_NA_goodi_8.Name = "Check_NA_goodi_8"
         Me.Check_NA_goodi_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_8.TabIndex = 209
-        Me.Check_NA_goodi_8.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_8.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_8
         '
-        Me.Check_available_goodi_8.AutoSize = true
+        Me.Check_available_goodi_8.AutoSize = True
         Me.Check_available_goodi_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_8.Location = New System.Drawing.Point(619, 236)
         Me.Check_available_goodi_8.Name = "Check_available_goodi_8"
         Me.Check_available_goodi_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_8.TabIndex = 208
-        Me.Check_available_goodi_8.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_8.UseVisualStyleBackColor = False
         '
         'PictureBox71
         '
@@ -4002,7 +4007,7 @@ Partial Class Items_edit
         Me.PictureBox71.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox71.TabIndex = 207
-        Me.PictureBox71.TabStop = false
+        Me.PictureBox71.TabStop = False
         '
         'valu_goodi_7
         '
@@ -4016,23 +4021,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_7
         '
-        Me.Check_NA_goodi_7.AutoSize = true
+        Me.Check_NA_goodi_7.AutoSize = True
         Me.Check_NA_goodi_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_7.Location = New System.Drawing.Point(598, 236)
         Me.Check_NA_goodi_7.Name = "Check_NA_goodi_7"
         Me.Check_NA_goodi_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_7.TabIndex = 205
-        Me.Check_NA_goodi_7.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_7.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_7
         '
-        Me.Check_available_goodi_7.AutoSize = true
+        Me.Check_available_goodi_7.AutoSize = True
         Me.Check_available_goodi_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_7.Location = New System.Drawing.Point(537, 236)
         Me.Check_available_goodi_7.Name = "Check_available_goodi_7"
         Me.Check_available_goodi_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_7.TabIndex = 204
-        Me.Check_available_goodi_7.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_7.UseVisualStyleBackColor = False
         '
         'PictureBox72
         '
@@ -4042,7 +4047,7 @@ Partial Class Items_edit
         Me.PictureBox72.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox72.TabIndex = 203
-        Me.PictureBox72.TabStop = false
+        Me.PictureBox72.TabStop = False
         '
         'valu_goodi_6
         '
@@ -4056,23 +4061,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_6
         '
-        Me.Check_NA_goodi_6.AutoSize = true
+        Me.Check_NA_goodi_6.AutoSize = True
         Me.Check_NA_goodi_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_6.Location = New System.Drawing.Point(516, 236)
         Me.Check_NA_goodi_6.Name = "Check_NA_goodi_6"
         Me.Check_NA_goodi_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_6.TabIndex = 201
-        Me.Check_NA_goodi_6.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_6.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_6
         '
-        Me.Check_available_goodi_6.AutoSize = true
+        Me.Check_available_goodi_6.AutoSize = True
         Me.Check_available_goodi_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_6.Location = New System.Drawing.Point(455, 236)
         Me.Check_available_goodi_6.Name = "Check_available_goodi_6"
         Me.Check_available_goodi_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_6.TabIndex = 200
-        Me.Check_available_goodi_6.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_6.UseVisualStyleBackColor = False
         '
         'PictureBox73
         '
@@ -4082,7 +4087,7 @@ Partial Class Items_edit
         Me.PictureBox73.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox73.TabIndex = 199
-        Me.PictureBox73.TabStop = false
+        Me.PictureBox73.TabStop = False
         '
         'valu_goodi_5
         '
@@ -4096,23 +4101,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_5
         '
-        Me.Check_NA_goodi_5.AutoSize = true
+        Me.Check_NA_goodi_5.AutoSize = True
         Me.Check_NA_goodi_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_5.Location = New System.Drawing.Point(434, 236)
         Me.Check_NA_goodi_5.Name = "Check_NA_goodi_5"
         Me.Check_NA_goodi_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_5.TabIndex = 197
-        Me.Check_NA_goodi_5.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_5.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_5
         '
-        Me.Check_available_goodi_5.AutoSize = true
+        Me.Check_available_goodi_5.AutoSize = True
         Me.Check_available_goodi_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_5.Location = New System.Drawing.Point(373, 236)
         Me.Check_available_goodi_5.Name = "Check_available_goodi_5"
         Me.Check_available_goodi_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_5.TabIndex = 196
-        Me.Check_available_goodi_5.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_5.UseVisualStyleBackColor = False
         '
         'PictureBox74
         '
@@ -4122,7 +4127,7 @@ Partial Class Items_edit
         Me.PictureBox74.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox74.TabIndex = 195
-        Me.PictureBox74.TabStop = false
+        Me.PictureBox74.TabStop = False
         '
         'valu_goodi_4
         '
@@ -4136,23 +4141,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_4
         '
-        Me.Check_NA_goodi_4.AutoSize = true
+        Me.Check_NA_goodi_4.AutoSize = True
         Me.Check_NA_goodi_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_4.Location = New System.Drawing.Point(352, 236)
         Me.Check_NA_goodi_4.Name = "Check_NA_goodi_4"
         Me.Check_NA_goodi_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_4.TabIndex = 193
-        Me.Check_NA_goodi_4.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_4.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_4
         '
-        Me.Check_available_goodi_4.AutoSize = true
+        Me.Check_available_goodi_4.AutoSize = True
         Me.Check_available_goodi_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_4.Location = New System.Drawing.Point(291, 236)
         Me.Check_available_goodi_4.Name = "Check_available_goodi_4"
         Me.Check_available_goodi_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_4.TabIndex = 192
-        Me.Check_available_goodi_4.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_4.UseVisualStyleBackColor = False
         '
         'PictureBox75
         '
@@ -4162,7 +4167,7 @@ Partial Class Items_edit
         Me.PictureBox75.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox75.TabIndex = 191
-        Me.PictureBox75.TabStop = false
+        Me.PictureBox75.TabStop = False
         '
         'valu_goodi_3
         '
@@ -4176,23 +4181,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_3
         '
-        Me.Check_NA_goodi_3.AutoSize = true
+        Me.Check_NA_goodi_3.AutoSize = True
         Me.Check_NA_goodi_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_3.Location = New System.Drawing.Point(270, 236)
         Me.Check_NA_goodi_3.Name = "Check_NA_goodi_3"
         Me.Check_NA_goodi_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_3.TabIndex = 189
-        Me.Check_NA_goodi_3.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_3.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_3
         '
-        Me.Check_available_goodi_3.AutoSize = true
+        Me.Check_available_goodi_3.AutoSize = True
         Me.Check_available_goodi_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_3.Location = New System.Drawing.Point(209, 236)
         Me.Check_available_goodi_3.Name = "Check_available_goodi_3"
         Me.Check_available_goodi_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_3.TabIndex = 188
-        Me.Check_available_goodi_3.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_3.UseVisualStyleBackColor = False
         '
         'PictureBox76
         '
@@ -4202,7 +4207,7 @@ Partial Class Items_edit
         Me.PictureBox76.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox76.TabIndex = 187
-        Me.PictureBox76.TabStop = false
+        Me.PictureBox76.TabStop = False
         '
         'valu_goodi_2
         '
@@ -4216,23 +4221,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_2
         '
-        Me.Check_NA_goodi_2.AutoSize = true
+        Me.Check_NA_goodi_2.AutoSize = True
         Me.Check_NA_goodi_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_2.Location = New System.Drawing.Point(188, 236)
         Me.Check_NA_goodi_2.Name = "Check_NA_goodi_2"
         Me.Check_NA_goodi_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_2.TabIndex = 185
-        Me.Check_NA_goodi_2.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_2.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_2
         '
-        Me.Check_available_goodi_2.AutoSize = true
+        Me.Check_available_goodi_2.AutoSize = True
         Me.Check_available_goodi_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_2.Location = New System.Drawing.Point(127, 236)
         Me.Check_available_goodi_2.Name = "Check_available_goodi_2"
         Me.Check_available_goodi_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_2.TabIndex = 184
-        Me.Check_available_goodi_2.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_2.UseVisualStyleBackColor = False
         '
         'PictureBox170
         '
@@ -4242,7 +4247,7 @@ Partial Class Items_edit
         Me.PictureBox170.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox170.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox170.TabIndex = 183
-        Me.PictureBox170.TabStop = false
+        Me.PictureBox170.TabStop = False
         '
         'valu_goodi_1
         '
@@ -4256,23 +4261,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_1
         '
-        Me.Check_NA_goodi_1.AutoSize = true
+        Me.Check_NA_goodi_1.AutoSize = True
         Me.Check_NA_goodi_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_1.Location = New System.Drawing.Point(106, 236)
         Me.Check_NA_goodi_1.Name = "Check_NA_goodi_1"
         Me.Check_NA_goodi_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_1.TabIndex = 181
-        Me.Check_NA_goodi_1.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_1.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_1
         '
-        Me.Check_available_goodi_1.AutoSize = true
+        Me.Check_available_goodi_1.AutoSize = True
         Me.Check_available_goodi_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_1.Location = New System.Drawing.Point(45, 236)
         Me.Check_available_goodi_1.Name = "Check_available_goodi_1"
         Me.Check_available_goodi_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_1.TabIndex = 180
-        Me.Check_available_goodi_1.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_1.UseVisualStyleBackColor = False
         '
         'PictureBox171
         '
@@ -4282,11 +4287,11 @@ Partial Class Items_edit
         Me.PictureBox171.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox171.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox171.TabIndex = 179
-        Me.PictureBox171.TabStop = false
+        Me.PictureBox171.TabStop = False
         '
         'Panel_interiors
         '
-        Me.Panel_interiors.BackgroundImage = CType(resources.GetObject("Panel_interiors.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_interiors.BackgroundImage = CType(resources.GetObject("Panel_interiors.BackgroundImage"), System.Drawing.Image)
         Me.Panel_interiors.Controls.Add(Me.NumericUpDown107)
         Me.Panel_interiors.Controls.Add(Me.CheckBox213)
         Me.Panel_interiors.Controls.Add(Me.CheckBox214)
@@ -4532,7 +4537,7 @@ Partial Class Items_edit
         Me.Panel_interiors.Name = "Panel_interiors"
         Me.Panel_interiors.Size = New System.Drawing.Size(905, 506)
         Me.Panel_interiors.TabIndex = 104
-        Me.Panel_interiors.Visible = false
+        Me.Panel_interiors.Visible = False
         '
         'NumericUpDown107
         '
@@ -4546,23 +4551,23 @@ Partial Class Items_edit
         '
         'CheckBox213
         '
-        Me.CheckBox213.AutoSize = true
+        Me.CheckBox213.AutoSize = True
         Me.CheckBox213.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox213.Location = New System.Drawing.Point(844, 476)
         Me.CheckBox213.Name = "CheckBox213"
         Me.CheckBox213.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox213.TabIndex = 457
-        Me.CheckBox213.UseVisualStyleBackColor = false
+        Me.CheckBox213.UseVisualStyleBackColor = False
         '
         'CheckBox214
         '
-        Me.CheckBox214.AutoSize = true
+        Me.CheckBox214.AutoSize = True
         Me.CheckBox214.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox214.Location = New System.Drawing.Point(783, 476)
         Me.CheckBox214.Name = "CheckBox214"
         Me.CheckBox214.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox214.TabIndex = 456
-        Me.CheckBox214.UseVisualStyleBackColor = false
+        Me.CheckBox214.UseVisualStyleBackColor = False
         '
         'PictureBox97
         '
@@ -4572,7 +4577,7 @@ Partial Class Items_edit
         Me.PictureBox97.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox97.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox97.TabIndex = 455
-        Me.PictureBox97.TabStop = false
+        Me.PictureBox97.TabStop = False
         '
         'NumericUpDown108
         '
@@ -4586,23 +4591,23 @@ Partial Class Items_edit
         '
         'CheckBox215
         '
-        Me.CheckBox215.AutoSize = true
+        Me.CheckBox215.AutoSize = True
         Me.CheckBox215.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox215.Location = New System.Drawing.Point(762, 476)
         Me.CheckBox215.Name = "CheckBox215"
         Me.CheckBox215.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox215.TabIndex = 453
-        Me.CheckBox215.UseVisualStyleBackColor = false
+        Me.CheckBox215.UseVisualStyleBackColor = False
         '
         'CheckBox216
         '
-        Me.CheckBox216.AutoSize = true
+        Me.CheckBox216.AutoSize = True
         Me.CheckBox216.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox216.Location = New System.Drawing.Point(701, 476)
         Me.CheckBox216.Name = "CheckBox216"
         Me.CheckBox216.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox216.TabIndex = 452
-        Me.CheckBox216.UseVisualStyleBackColor = false
+        Me.CheckBox216.UseVisualStyleBackColor = False
         '
         'PictureBox98
         '
@@ -4612,7 +4617,7 @@ Partial Class Items_edit
         Me.PictureBox98.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox98.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox98.TabIndex = 451
-        Me.PictureBox98.TabStop = false
+        Me.PictureBox98.TabStop = False
         '
         'NumericUpDown109
         '
@@ -4626,23 +4631,23 @@ Partial Class Items_edit
         '
         'CheckBox217
         '
-        Me.CheckBox217.AutoSize = true
+        Me.CheckBox217.AutoSize = True
         Me.CheckBox217.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox217.Location = New System.Drawing.Point(680, 476)
         Me.CheckBox217.Name = "CheckBox217"
         Me.CheckBox217.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox217.TabIndex = 449
-        Me.CheckBox217.UseVisualStyleBackColor = false
+        Me.CheckBox217.UseVisualStyleBackColor = False
         '
         'CheckBox218
         '
-        Me.CheckBox218.AutoSize = true
+        Me.CheckBox218.AutoSize = True
         Me.CheckBox218.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox218.Location = New System.Drawing.Point(619, 476)
         Me.CheckBox218.Name = "CheckBox218"
         Me.CheckBox218.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox218.TabIndex = 448
-        Me.CheckBox218.UseVisualStyleBackColor = false
+        Me.CheckBox218.UseVisualStyleBackColor = False
         '
         'PictureBox102
         '
@@ -4652,7 +4657,7 @@ Partial Class Items_edit
         Me.PictureBox102.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox102.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox102.TabIndex = 447
-        Me.PictureBox102.TabStop = false
+        Me.PictureBox102.TabStop = False
         '
         'NumericUpDown110
         '
@@ -4666,23 +4671,23 @@ Partial Class Items_edit
         '
         'CheckBox219
         '
-        Me.CheckBox219.AutoSize = true
+        Me.CheckBox219.AutoSize = True
         Me.CheckBox219.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox219.Location = New System.Drawing.Point(598, 476)
         Me.CheckBox219.Name = "CheckBox219"
         Me.CheckBox219.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox219.TabIndex = 445
-        Me.CheckBox219.UseVisualStyleBackColor = false
+        Me.CheckBox219.UseVisualStyleBackColor = False
         '
         'CheckBox220
         '
-        Me.CheckBox220.AutoSize = true
+        Me.CheckBox220.AutoSize = True
         Me.CheckBox220.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox220.Location = New System.Drawing.Point(537, 476)
         Me.CheckBox220.Name = "CheckBox220"
         Me.CheckBox220.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox220.TabIndex = 444
-        Me.CheckBox220.UseVisualStyleBackColor = false
+        Me.CheckBox220.UseVisualStyleBackColor = False
         '
         'PictureBox103
         '
@@ -4692,7 +4697,7 @@ Partial Class Items_edit
         Me.PictureBox103.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox103.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox103.TabIndex = 443
-        Me.PictureBox103.TabStop = false
+        Me.PictureBox103.TabStop = False
         '
         'NumericUpDown111
         '
@@ -4706,23 +4711,23 @@ Partial Class Items_edit
         '
         'CheckBox221
         '
-        Me.CheckBox221.AutoSize = true
+        Me.CheckBox221.AutoSize = True
         Me.CheckBox221.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox221.Location = New System.Drawing.Point(516, 476)
         Me.CheckBox221.Name = "CheckBox221"
         Me.CheckBox221.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox221.TabIndex = 441
-        Me.CheckBox221.UseVisualStyleBackColor = false
+        Me.CheckBox221.UseVisualStyleBackColor = False
         '
         'CheckBox222
         '
-        Me.CheckBox222.AutoSize = true
+        Me.CheckBox222.AutoSize = True
         Me.CheckBox222.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox222.Location = New System.Drawing.Point(455, 476)
         Me.CheckBox222.Name = "CheckBox222"
         Me.CheckBox222.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox222.TabIndex = 440
-        Me.CheckBox222.UseVisualStyleBackColor = false
+        Me.CheckBox222.UseVisualStyleBackColor = False
         '
         'PictureBox104
         '
@@ -4732,7 +4737,7 @@ Partial Class Items_edit
         Me.PictureBox104.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox104.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox104.TabIndex = 439
-        Me.PictureBox104.TabStop = false
+        Me.PictureBox104.TabStop = False
         '
         'NumericUpDown112
         '
@@ -4746,23 +4751,23 @@ Partial Class Items_edit
         '
         'CheckBox223
         '
-        Me.CheckBox223.AutoSize = true
+        Me.CheckBox223.AutoSize = True
         Me.CheckBox223.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox223.Location = New System.Drawing.Point(434, 476)
         Me.CheckBox223.Name = "CheckBox223"
         Me.CheckBox223.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox223.TabIndex = 437
-        Me.CheckBox223.UseVisualStyleBackColor = false
+        Me.CheckBox223.UseVisualStyleBackColor = False
         '
         'CheckBox224
         '
-        Me.CheckBox224.AutoSize = true
+        Me.CheckBox224.AutoSize = True
         Me.CheckBox224.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox224.Location = New System.Drawing.Point(373, 476)
         Me.CheckBox224.Name = "CheckBox224"
         Me.CheckBox224.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox224.TabIndex = 436
-        Me.CheckBox224.UseVisualStyleBackColor = false
+        Me.CheckBox224.UseVisualStyleBackColor = False
         '
         'PictureBox105
         '
@@ -4772,7 +4777,7 @@ Partial Class Items_edit
         Me.PictureBox105.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox105.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox105.TabIndex = 435
-        Me.PictureBox105.TabStop = false
+        Me.PictureBox105.TabStop = False
         '
         'NumericUpDown113
         '
@@ -4786,23 +4791,23 @@ Partial Class Items_edit
         '
         'CheckBox225
         '
-        Me.CheckBox225.AutoSize = true
+        Me.CheckBox225.AutoSize = True
         Me.CheckBox225.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox225.Location = New System.Drawing.Point(352, 476)
         Me.CheckBox225.Name = "CheckBox225"
         Me.CheckBox225.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox225.TabIndex = 433
-        Me.CheckBox225.UseVisualStyleBackColor = false
+        Me.CheckBox225.UseVisualStyleBackColor = False
         '
         'CheckBox226
         '
-        Me.CheckBox226.AutoSize = true
+        Me.CheckBox226.AutoSize = True
         Me.CheckBox226.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox226.Location = New System.Drawing.Point(291, 476)
         Me.CheckBox226.Name = "CheckBox226"
         Me.CheckBox226.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox226.TabIndex = 432
-        Me.CheckBox226.UseVisualStyleBackColor = false
+        Me.CheckBox226.UseVisualStyleBackColor = False
         '
         'PictureBox106
         '
@@ -4812,7 +4817,7 @@ Partial Class Items_edit
         Me.PictureBox106.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox106.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox106.TabIndex = 431
-        Me.PictureBox106.TabStop = false
+        Me.PictureBox106.TabStop = False
         '
         'NumericUpDown114
         '
@@ -4826,23 +4831,23 @@ Partial Class Items_edit
         '
         'CheckBox227
         '
-        Me.CheckBox227.AutoSize = true
+        Me.CheckBox227.AutoSize = True
         Me.CheckBox227.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox227.Location = New System.Drawing.Point(270, 476)
         Me.CheckBox227.Name = "CheckBox227"
         Me.CheckBox227.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox227.TabIndex = 429
-        Me.CheckBox227.UseVisualStyleBackColor = false
+        Me.CheckBox227.UseVisualStyleBackColor = False
         '
         'CheckBox228
         '
-        Me.CheckBox228.AutoSize = true
+        Me.CheckBox228.AutoSize = True
         Me.CheckBox228.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox228.Location = New System.Drawing.Point(209, 476)
         Me.CheckBox228.Name = "CheckBox228"
         Me.CheckBox228.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox228.TabIndex = 428
-        Me.CheckBox228.UseVisualStyleBackColor = false
+        Me.CheckBox228.UseVisualStyleBackColor = False
         '
         'PictureBox107
         '
@@ -4852,7 +4857,7 @@ Partial Class Items_edit
         Me.PictureBox107.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox107.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox107.TabIndex = 427
-        Me.PictureBox107.TabStop = false
+        Me.PictureBox107.TabStop = False
         '
         'NumericUpDown115
         '
@@ -4866,23 +4871,23 @@ Partial Class Items_edit
         '
         'CheckBox229
         '
-        Me.CheckBox229.AutoSize = true
+        Me.CheckBox229.AutoSize = True
         Me.CheckBox229.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox229.Location = New System.Drawing.Point(188, 476)
         Me.CheckBox229.Name = "CheckBox229"
         Me.CheckBox229.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox229.TabIndex = 425
-        Me.CheckBox229.UseVisualStyleBackColor = false
+        Me.CheckBox229.UseVisualStyleBackColor = False
         '
         'CheckBox230
         '
-        Me.CheckBox230.AutoSize = true
+        Me.CheckBox230.AutoSize = True
         Me.CheckBox230.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox230.Location = New System.Drawing.Point(127, 476)
         Me.CheckBox230.Name = "CheckBox230"
         Me.CheckBox230.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox230.TabIndex = 424
-        Me.CheckBox230.UseVisualStyleBackColor = false
+        Me.CheckBox230.UseVisualStyleBackColor = False
         '
         'PictureBox108
         '
@@ -4892,7 +4897,7 @@ Partial Class Items_edit
         Me.PictureBox108.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox108.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox108.TabIndex = 423
-        Me.PictureBox108.TabStop = false
+        Me.PictureBox108.TabStop = False
         '
         'NumericUpDown116
         '
@@ -4906,23 +4911,23 @@ Partial Class Items_edit
         '
         'CheckBox231
         '
-        Me.CheckBox231.AutoSize = true
+        Me.CheckBox231.AutoSize = True
         Me.CheckBox231.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox231.Location = New System.Drawing.Point(106, 476)
         Me.CheckBox231.Name = "CheckBox231"
         Me.CheckBox231.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox231.TabIndex = 421
-        Me.CheckBox231.UseVisualStyleBackColor = false
+        Me.CheckBox231.UseVisualStyleBackColor = False
         '
         'CheckBox232
         '
-        Me.CheckBox232.AutoSize = true
+        Me.CheckBox232.AutoSize = True
         Me.CheckBox232.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox232.Location = New System.Drawing.Point(45, 476)
         Me.CheckBox232.Name = "CheckBox232"
         Me.CheckBox232.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox232.TabIndex = 420
-        Me.CheckBox232.UseVisualStyleBackColor = false
+        Me.CheckBox232.UseVisualStyleBackColor = False
         '
         'PictureBox109
         '
@@ -4932,7 +4937,7 @@ Partial Class Items_edit
         Me.PictureBox109.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox109.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox109.TabIndex = 419
-        Me.PictureBox109.TabStop = false
+        Me.PictureBox109.TabStop = False
         '
         'NumericUpDown117
         '
@@ -4946,23 +4951,23 @@ Partial Class Items_edit
         '
         'CheckBox233
         '
-        Me.CheckBox233.AutoSize = true
+        Me.CheckBox233.AutoSize = True
         Me.CheckBox233.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox233.Location = New System.Drawing.Point(844, 396)
         Me.CheckBox233.Name = "CheckBox233"
         Me.CheckBox233.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox233.TabIndex = 417
-        Me.CheckBox233.UseVisualStyleBackColor = false
+        Me.CheckBox233.UseVisualStyleBackColor = False
         '
         'CheckBox234
         '
-        Me.CheckBox234.AutoSize = true
+        Me.CheckBox234.AutoSize = True
         Me.CheckBox234.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox234.Location = New System.Drawing.Point(783, 396)
         Me.CheckBox234.Name = "CheckBox234"
         Me.CheckBox234.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox234.TabIndex = 416
-        Me.CheckBox234.UseVisualStyleBackColor = false
+        Me.CheckBox234.UseVisualStyleBackColor = False
         '
         'PictureBox110
         '
@@ -4972,7 +4977,7 @@ Partial Class Items_edit
         Me.PictureBox110.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox110.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox110.TabIndex = 415
-        Me.PictureBox110.TabStop = false
+        Me.PictureBox110.TabStop = False
         '
         'NumericUpDown118
         '
@@ -4986,23 +4991,23 @@ Partial Class Items_edit
         '
         'CheckBox235
         '
-        Me.CheckBox235.AutoSize = true
+        Me.CheckBox235.AutoSize = True
         Me.CheckBox235.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox235.Location = New System.Drawing.Point(762, 396)
         Me.CheckBox235.Name = "CheckBox235"
         Me.CheckBox235.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox235.TabIndex = 413
-        Me.CheckBox235.UseVisualStyleBackColor = false
+        Me.CheckBox235.UseVisualStyleBackColor = False
         '
         'CheckBox236
         '
-        Me.CheckBox236.AutoSize = true
+        Me.CheckBox236.AutoSize = True
         Me.CheckBox236.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox236.Location = New System.Drawing.Point(701, 396)
         Me.CheckBox236.Name = "CheckBox236"
         Me.CheckBox236.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox236.TabIndex = 412
-        Me.CheckBox236.UseVisualStyleBackColor = false
+        Me.CheckBox236.UseVisualStyleBackColor = False
         '
         'PictureBox111
         '
@@ -5012,7 +5017,7 @@ Partial Class Items_edit
         Me.PictureBox111.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox111.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox111.TabIndex = 411
-        Me.PictureBox111.TabStop = false
+        Me.PictureBox111.TabStop = False
         '
         'NumericUpDown119
         '
@@ -5026,23 +5031,23 @@ Partial Class Items_edit
         '
         'CheckBox237
         '
-        Me.CheckBox237.AutoSize = true
+        Me.CheckBox237.AutoSize = True
         Me.CheckBox237.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox237.Location = New System.Drawing.Point(680, 396)
         Me.CheckBox237.Name = "CheckBox237"
         Me.CheckBox237.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox237.TabIndex = 409
-        Me.CheckBox237.UseVisualStyleBackColor = false
+        Me.CheckBox237.UseVisualStyleBackColor = False
         '
         'CheckBox238
         '
-        Me.CheckBox238.AutoSize = true
+        Me.CheckBox238.AutoSize = True
         Me.CheckBox238.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox238.Location = New System.Drawing.Point(619, 396)
         Me.CheckBox238.Name = "CheckBox238"
         Me.CheckBox238.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox238.TabIndex = 408
-        Me.CheckBox238.UseVisualStyleBackColor = false
+        Me.CheckBox238.UseVisualStyleBackColor = False
         '
         'PictureBox115
         '
@@ -5052,7 +5057,7 @@ Partial Class Items_edit
         Me.PictureBox115.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox115.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox115.TabIndex = 407
-        Me.PictureBox115.TabStop = false
+        Me.PictureBox115.TabStop = False
         '
         'NumericUpDown120
         '
@@ -5066,23 +5071,23 @@ Partial Class Items_edit
         '
         'CheckBox239
         '
-        Me.CheckBox239.AutoSize = true
+        Me.CheckBox239.AutoSize = True
         Me.CheckBox239.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox239.Location = New System.Drawing.Point(598, 396)
         Me.CheckBox239.Name = "CheckBox239"
         Me.CheckBox239.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox239.TabIndex = 405
-        Me.CheckBox239.UseVisualStyleBackColor = false
+        Me.CheckBox239.UseVisualStyleBackColor = False
         '
         'CheckBox240
         '
-        Me.CheckBox240.AutoSize = true
+        Me.CheckBox240.AutoSize = True
         Me.CheckBox240.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox240.Location = New System.Drawing.Point(537, 396)
         Me.CheckBox240.Name = "CheckBox240"
         Me.CheckBox240.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox240.TabIndex = 404
-        Me.CheckBox240.UseVisualStyleBackColor = false
+        Me.CheckBox240.UseVisualStyleBackColor = False
         '
         'PictureBox116
         '
@@ -5092,7 +5097,7 @@ Partial Class Items_edit
         Me.PictureBox116.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox116.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox116.TabIndex = 403
-        Me.PictureBox116.TabStop = false
+        Me.PictureBox116.TabStop = False
         '
         'NumericUpDown121
         '
@@ -5106,23 +5111,23 @@ Partial Class Items_edit
         '
         'CheckBox241
         '
-        Me.CheckBox241.AutoSize = true
+        Me.CheckBox241.AutoSize = True
         Me.CheckBox241.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox241.Location = New System.Drawing.Point(516, 396)
         Me.CheckBox241.Name = "CheckBox241"
         Me.CheckBox241.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox241.TabIndex = 401
-        Me.CheckBox241.UseVisualStyleBackColor = false
+        Me.CheckBox241.UseVisualStyleBackColor = False
         '
         'CheckBox242
         '
-        Me.CheckBox242.AutoSize = true
+        Me.CheckBox242.AutoSize = True
         Me.CheckBox242.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox242.Location = New System.Drawing.Point(455, 396)
         Me.CheckBox242.Name = "CheckBox242"
         Me.CheckBox242.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox242.TabIndex = 400
-        Me.CheckBox242.UseVisualStyleBackColor = false
+        Me.CheckBox242.UseVisualStyleBackColor = False
         '
         'PictureBox117
         '
@@ -5132,7 +5137,7 @@ Partial Class Items_edit
         Me.PictureBox117.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox117.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox117.TabIndex = 399
-        Me.PictureBox117.TabStop = false
+        Me.PictureBox117.TabStop = False
         '
         'NumericUpDown122
         '
@@ -5146,23 +5151,23 @@ Partial Class Items_edit
         '
         'CheckBox243
         '
-        Me.CheckBox243.AutoSize = true
+        Me.CheckBox243.AutoSize = True
         Me.CheckBox243.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox243.Location = New System.Drawing.Point(434, 396)
         Me.CheckBox243.Name = "CheckBox243"
         Me.CheckBox243.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox243.TabIndex = 397
-        Me.CheckBox243.UseVisualStyleBackColor = false
+        Me.CheckBox243.UseVisualStyleBackColor = False
         '
         'CheckBox244
         '
-        Me.CheckBox244.AutoSize = true
+        Me.CheckBox244.AutoSize = True
         Me.CheckBox244.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox244.Location = New System.Drawing.Point(373, 396)
         Me.CheckBox244.Name = "CheckBox244"
         Me.CheckBox244.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox244.TabIndex = 396
-        Me.CheckBox244.UseVisualStyleBackColor = false
+        Me.CheckBox244.UseVisualStyleBackColor = False
         '
         'PictureBox118
         '
@@ -5172,7 +5177,7 @@ Partial Class Items_edit
         Me.PictureBox118.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox118.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox118.TabIndex = 395
-        Me.PictureBox118.TabStop = false
+        Me.PictureBox118.TabStop = False
         '
         'NumericUpDown123
         '
@@ -5186,23 +5191,23 @@ Partial Class Items_edit
         '
         'CheckBox245
         '
-        Me.CheckBox245.AutoSize = true
+        Me.CheckBox245.AutoSize = True
         Me.CheckBox245.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox245.Location = New System.Drawing.Point(352, 396)
         Me.CheckBox245.Name = "CheckBox245"
         Me.CheckBox245.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox245.TabIndex = 393
-        Me.CheckBox245.UseVisualStyleBackColor = false
+        Me.CheckBox245.UseVisualStyleBackColor = False
         '
         'CheckBox246
         '
-        Me.CheckBox246.AutoSize = true
+        Me.CheckBox246.AutoSize = True
         Me.CheckBox246.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox246.Location = New System.Drawing.Point(291, 396)
         Me.CheckBox246.Name = "CheckBox246"
         Me.CheckBox246.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox246.TabIndex = 392
-        Me.CheckBox246.UseVisualStyleBackColor = false
+        Me.CheckBox246.UseVisualStyleBackColor = False
         '
         'PictureBox119
         '
@@ -5212,7 +5217,7 @@ Partial Class Items_edit
         Me.PictureBox119.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox119.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox119.TabIndex = 391
-        Me.PictureBox119.TabStop = false
+        Me.PictureBox119.TabStop = False
         '
         'NumericUpDown124
         '
@@ -5226,23 +5231,23 @@ Partial Class Items_edit
         '
         'CheckBox247
         '
-        Me.CheckBox247.AutoSize = true
+        Me.CheckBox247.AutoSize = True
         Me.CheckBox247.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox247.Location = New System.Drawing.Point(270, 396)
         Me.CheckBox247.Name = "CheckBox247"
         Me.CheckBox247.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox247.TabIndex = 389
-        Me.CheckBox247.UseVisualStyleBackColor = false
+        Me.CheckBox247.UseVisualStyleBackColor = False
         '
         'CheckBox248
         '
-        Me.CheckBox248.AutoSize = true
+        Me.CheckBox248.AutoSize = True
         Me.CheckBox248.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox248.Location = New System.Drawing.Point(209, 396)
         Me.CheckBox248.Name = "CheckBox248"
         Me.CheckBox248.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox248.TabIndex = 388
-        Me.CheckBox248.UseVisualStyleBackColor = false
+        Me.CheckBox248.UseVisualStyleBackColor = False
         '
         'PictureBox120
         '
@@ -5252,7 +5257,7 @@ Partial Class Items_edit
         Me.PictureBox120.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox120.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox120.TabIndex = 387
-        Me.PictureBox120.TabStop = false
+        Me.PictureBox120.TabStop = False
         '
         'NumericUpDown125
         '
@@ -5266,23 +5271,23 @@ Partial Class Items_edit
         '
         'CheckBox249
         '
-        Me.CheckBox249.AutoSize = true
+        Me.CheckBox249.AutoSize = True
         Me.CheckBox249.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox249.Location = New System.Drawing.Point(188, 396)
         Me.CheckBox249.Name = "CheckBox249"
         Me.CheckBox249.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox249.TabIndex = 385
-        Me.CheckBox249.UseVisualStyleBackColor = false
+        Me.CheckBox249.UseVisualStyleBackColor = False
         '
         'CheckBox250
         '
-        Me.CheckBox250.AutoSize = true
+        Me.CheckBox250.AutoSize = True
         Me.CheckBox250.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox250.Location = New System.Drawing.Point(127, 396)
         Me.CheckBox250.Name = "CheckBox250"
         Me.CheckBox250.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox250.TabIndex = 384
-        Me.CheckBox250.UseVisualStyleBackColor = false
+        Me.CheckBox250.UseVisualStyleBackColor = False
         '
         'PictureBox121
         '
@@ -5292,7 +5297,7 @@ Partial Class Items_edit
         Me.PictureBox121.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox121.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox121.TabIndex = 383
-        Me.PictureBox121.TabStop = false
+        Me.PictureBox121.TabStop = False
         '
         'NumericUpDown126
         '
@@ -5306,23 +5311,23 @@ Partial Class Items_edit
         '
         'CheckBox251
         '
-        Me.CheckBox251.AutoSize = true
+        Me.CheckBox251.AutoSize = True
         Me.CheckBox251.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox251.Location = New System.Drawing.Point(106, 396)
         Me.CheckBox251.Name = "CheckBox251"
         Me.CheckBox251.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox251.TabIndex = 381
-        Me.CheckBox251.UseVisualStyleBackColor = false
+        Me.CheckBox251.UseVisualStyleBackColor = False
         '
         'CheckBox252
         '
-        Me.CheckBox252.AutoSize = true
+        Me.CheckBox252.AutoSize = True
         Me.CheckBox252.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox252.Location = New System.Drawing.Point(45, 396)
         Me.CheckBox252.Name = "CheckBox252"
         Me.CheckBox252.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox252.TabIndex = 380
-        Me.CheckBox252.UseVisualStyleBackColor = false
+        Me.CheckBox252.UseVisualStyleBackColor = False
         '
         'PictureBox122
         '
@@ -5332,7 +5337,7 @@ Partial Class Items_edit
         Me.PictureBox122.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox122.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox122.TabIndex = 379
-        Me.PictureBox122.TabStop = false
+        Me.PictureBox122.TabStop = False
         '
         'NumericUpDown87
         '
@@ -5346,23 +5351,23 @@ Partial Class Items_edit
         '
         'CheckBox173
         '
-        Me.CheckBox173.AutoSize = true
+        Me.CheckBox173.AutoSize = True
         Me.CheckBox173.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox173.Location = New System.Drawing.Point(844, 316)
         Me.CheckBox173.Name = "CheckBox173"
         Me.CheckBox173.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox173.TabIndex = 377
-        Me.CheckBox173.UseVisualStyleBackColor = false
+        Me.CheckBox173.UseVisualStyleBackColor = False
         '
         'CheckBox174
         '
-        Me.CheckBox174.AutoSize = true
+        Me.CheckBox174.AutoSize = True
         Me.CheckBox174.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox174.Location = New System.Drawing.Point(783, 316)
         Me.CheckBox174.Name = "CheckBox174"
         Me.CheckBox174.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox174.TabIndex = 376
-        Me.CheckBox174.UseVisualStyleBackColor = false
+        Me.CheckBox174.UseVisualStyleBackColor = False
         '
         'PictureBox58
         '
@@ -5372,7 +5377,7 @@ Partial Class Items_edit
         Me.PictureBox58.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox58.TabIndex = 375
-        Me.PictureBox58.TabStop = false
+        Me.PictureBox58.TabStop = False
         '
         'NumericUpDown88
         '
@@ -5386,23 +5391,23 @@ Partial Class Items_edit
         '
         'CheckBox175
         '
-        Me.CheckBox175.AutoSize = true
+        Me.CheckBox175.AutoSize = True
         Me.CheckBox175.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox175.Location = New System.Drawing.Point(762, 316)
         Me.CheckBox175.Name = "CheckBox175"
         Me.CheckBox175.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox175.TabIndex = 373
-        Me.CheckBox175.UseVisualStyleBackColor = false
+        Me.CheckBox175.UseVisualStyleBackColor = False
         '
         'CheckBox176
         '
-        Me.CheckBox176.AutoSize = true
+        Me.CheckBox176.AutoSize = True
         Me.CheckBox176.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox176.Location = New System.Drawing.Point(701, 316)
         Me.CheckBox176.Name = "CheckBox176"
         Me.CheckBox176.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox176.TabIndex = 372
-        Me.CheckBox176.UseVisualStyleBackColor = false
+        Me.CheckBox176.UseVisualStyleBackColor = False
         '
         'PictureBox59
         '
@@ -5412,7 +5417,7 @@ Partial Class Items_edit
         Me.PictureBox59.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox59.TabIndex = 371
-        Me.PictureBox59.TabStop = false
+        Me.PictureBox59.TabStop = False
         '
         'NumericUpDown89
         '
@@ -5426,23 +5431,23 @@ Partial Class Items_edit
         '
         'CheckBox177
         '
-        Me.CheckBox177.AutoSize = true
+        Me.CheckBox177.AutoSize = True
         Me.CheckBox177.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox177.Location = New System.Drawing.Point(680, 316)
         Me.CheckBox177.Name = "CheckBox177"
         Me.CheckBox177.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox177.TabIndex = 369
-        Me.CheckBox177.UseVisualStyleBackColor = false
+        Me.CheckBox177.UseVisualStyleBackColor = False
         '
         'CheckBox178
         '
-        Me.CheckBox178.AutoSize = true
+        Me.CheckBox178.AutoSize = True
         Me.CheckBox178.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox178.Location = New System.Drawing.Point(619, 316)
         Me.CheckBox178.Name = "CheckBox178"
         Me.CheckBox178.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox178.TabIndex = 368
-        Me.CheckBox178.UseVisualStyleBackColor = false
+        Me.CheckBox178.UseVisualStyleBackColor = False
         '
         'PictureBox60
         '
@@ -5452,7 +5457,7 @@ Partial Class Items_edit
         Me.PictureBox60.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox60.TabIndex = 367
-        Me.PictureBox60.TabStop = false
+        Me.PictureBox60.TabStop = False
         '
         'NumericUpDown90
         '
@@ -5466,23 +5471,23 @@ Partial Class Items_edit
         '
         'CheckBox179
         '
-        Me.CheckBox179.AutoSize = true
+        Me.CheckBox179.AutoSize = True
         Me.CheckBox179.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox179.Location = New System.Drawing.Point(598, 316)
         Me.CheckBox179.Name = "CheckBox179"
         Me.CheckBox179.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox179.TabIndex = 365
-        Me.CheckBox179.UseVisualStyleBackColor = false
+        Me.CheckBox179.UseVisualStyleBackColor = False
         '
         'CheckBox180
         '
-        Me.CheckBox180.AutoSize = true
+        Me.CheckBox180.AutoSize = True
         Me.CheckBox180.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox180.Location = New System.Drawing.Point(537, 316)
         Me.CheckBox180.Name = "CheckBox180"
         Me.CheckBox180.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox180.TabIndex = 364
-        Me.CheckBox180.UseVisualStyleBackColor = false
+        Me.CheckBox180.UseVisualStyleBackColor = False
         '
         'PictureBox77
         '
@@ -5492,7 +5497,7 @@ Partial Class Items_edit
         Me.PictureBox77.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox77.TabIndex = 363
-        Me.PictureBox77.TabStop = false
+        Me.PictureBox77.TabStop = False
         '
         'NumericUpDown91
         '
@@ -5506,23 +5511,23 @@ Partial Class Items_edit
         '
         'CheckBox181
         '
-        Me.CheckBox181.AutoSize = true
+        Me.CheckBox181.AutoSize = True
         Me.CheckBox181.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox181.Location = New System.Drawing.Point(516, 316)
         Me.CheckBox181.Name = "CheckBox181"
         Me.CheckBox181.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox181.TabIndex = 361
-        Me.CheckBox181.UseVisualStyleBackColor = false
+        Me.CheckBox181.UseVisualStyleBackColor = False
         '
         'CheckBox182
         '
-        Me.CheckBox182.AutoSize = true
+        Me.CheckBox182.AutoSize = True
         Me.CheckBox182.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox182.Location = New System.Drawing.Point(455, 316)
         Me.CheckBox182.Name = "CheckBox182"
         Me.CheckBox182.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox182.TabIndex = 360
-        Me.CheckBox182.UseVisualStyleBackColor = false
+        Me.CheckBox182.UseVisualStyleBackColor = False
         '
         'PictureBox78
         '
@@ -5532,7 +5537,7 @@ Partial Class Items_edit
         Me.PictureBox78.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox78.TabIndex = 359
-        Me.PictureBox78.TabStop = false
+        Me.PictureBox78.TabStop = False
         '
         'NumericUpDown92
         '
@@ -5546,23 +5551,23 @@ Partial Class Items_edit
         '
         'CheckBox183
         '
-        Me.CheckBox183.AutoSize = true
+        Me.CheckBox183.AutoSize = True
         Me.CheckBox183.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox183.Location = New System.Drawing.Point(434, 316)
         Me.CheckBox183.Name = "CheckBox183"
         Me.CheckBox183.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox183.TabIndex = 357
-        Me.CheckBox183.UseVisualStyleBackColor = false
+        Me.CheckBox183.UseVisualStyleBackColor = False
         '
         'CheckBox184
         '
-        Me.CheckBox184.AutoSize = true
+        Me.CheckBox184.AutoSize = True
         Me.CheckBox184.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox184.Location = New System.Drawing.Point(373, 316)
         Me.CheckBox184.Name = "CheckBox184"
         Me.CheckBox184.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox184.TabIndex = 356
-        Me.CheckBox184.UseVisualStyleBackColor = false
+        Me.CheckBox184.UseVisualStyleBackColor = False
         '
         'PictureBox79
         '
@@ -5572,7 +5577,7 @@ Partial Class Items_edit
         Me.PictureBox79.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox79.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox79.TabIndex = 355
-        Me.PictureBox79.TabStop = false
+        Me.PictureBox79.TabStop = False
         '
         'NumericUpDown93
         '
@@ -5586,23 +5591,23 @@ Partial Class Items_edit
         '
         'CheckBox185
         '
-        Me.CheckBox185.AutoSize = true
+        Me.CheckBox185.AutoSize = True
         Me.CheckBox185.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox185.Location = New System.Drawing.Point(352, 316)
         Me.CheckBox185.Name = "CheckBox185"
         Me.CheckBox185.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox185.TabIndex = 353
-        Me.CheckBox185.UseVisualStyleBackColor = false
+        Me.CheckBox185.UseVisualStyleBackColor = False
         '
         'CheckBox186
         '
-        Me.CheckBox186.AutoSize = true
+        Me.CheckBox186.AutoSize = True
         Me.CheckBox186.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox186.Location = New System.Drawing.Point(291, 316)
         Me.CheckBox186.Name = "CheckBox186"
         Me.CheckBox186.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox186.TabIndex = 352
-        Me.CheckBox186.UseVisualStyleBackColor = false
+        Me.CheckBox186.UseVisualStyleBackColor = False
         '
         'PictureBox80
         '
@@ -5612,7 +5617,7 @@ Partial Class Items_edit
         Me.PictureBox80.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox80.TabIndex = 351
-        Me.PictureBox80.TabStop = false
+        Me.PictureBox80.TabStop = False
         '
         'NumericUpDown94
         '
@@ -5626,23 +5631,23 @@ Partial Class Items_edit
         '
         'CheckBox187
         '
-        Me.CheckBox187.AutoSize = true
+        Me.CheckBox187.AutoSize = True
         Me.CheckBox187.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox187.Location = New System.Drawing.Point(270, 316)
         Me.CheckBox187.Name = "CheckBox187"
         Me.CheckBox187.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox187.TabIndex = 349
-        Me.CheckBox187.UseVisualStyleBackColor = false
+        Me.CheckBox187.UseVisualStyleBackColor = False
         '
         'CheckBox188
         '
-        Me.CheckBox188.AutoSize = true
+        Me.CheckBox188.AutoSize = True
         Me.CheckBox188.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox188.Location = New System.Drawing.Point(209, 316)
         Me.CheckBox188.Name = "CheckBox188"
         Me.CheckBox188.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox188.TabIndex = 348
-        Me.CheckBox188.UseVisualStyleBackColor = false
+        Me.CheckBox188.UseVisualStyleBackColor = False
         '
         'PictureBox81
         '
@@ -5652,7 +5657,7 @@ Partial Class Items_edit
         Me.PictureBox81.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox81.TabIndex = 347
-        Me.PictureBox81.TabStop = false
+        Me.PictureBox81.TabStop = False
         '
         'NumericUpDown95
         '
@@ -5666,23 +5671,23 @@ Partial Class Items_edit
         '
         'CheckBox189
         '
-        Me.CheckBox189.AutoSize = true
+        Me.CheckBox189.AutoSize = True
         Me.CheckBox189.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox189.Location = New System.Drawing.Point(188, 316)
         Me.CheckBox189.Name = "CheckBox189"
         Me.CheckBox189.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox189.TabIndex = 345
-        Me.CheckBox189.UseVisualStyleBackColor = false
+        Me.CheckBox189.UseVisualStyleBackColor = False
         '
         'CheckBox190
         '
-        Me.CheckBox190.AutoSize = true
+        Me.CheckBox190.AutoSize = True
         Me.CheckBox190.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox190.Location = New System.Drawing.Point(127, 316)
         Me.CheckBox190.Name = "CheckBox190"
         Me.CheckBox190.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox190.TabIndex = 344
-        Me.CheckBox190.UseVisualStyleBackColor = false
+        Me.CheckBox190.UseVisualStyleBackColor = False
         '
         'PictureBox82
         '
@@ -5692,7 +5697,7 @@ Partial Class Items_edit
         Me.PictureBox82.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox82.TabIndex = 343
-        Me.PictureBox82.TabStop = false
+        Me.PictureBox82.TabStop = False
         '
         'NumericUpDown96
         '
@@ -5706,23 +5711,23 @@ Partial Class Items_edit
         '
         'CheckBox191
         '
-        Me.CheckBox191.AutoSize = true
+        Me.CheckBox191.AutoSize = True
         Me.CheckBox191.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox191.Location = New System.Drawing.Point(106, 316)
         Me.CheckBox191.Name = "CheckBox191"
         Me.CheckBox191.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox191.TabIndex = 341
-        Me.CheckBox191.UseVisualStyleBackColor = false
+        Me.CheckBox191.UseVisualStyleBackColor = False
         '
         'CheckBox192
         '
-        Me.CheckBox192.AutoSize = true
+        Me.CheckBox192.AutoSize = True
         Me.CheckBox192.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox192.Location = New System.Drawing.Point(45, 316)
         Me.CheckBox192.Name = "CheckBox192"
         Me.CheckBox192.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox192.TabIndex = 340
-        Me.CheckBox192.UseVisualStyleBackColor = false
+        Me.CheckBox192.UseVisualStyleBackColor = False
         '
         'PictureBox83
         '
@@ -5732,7 +5737,7 @@ Partial Class Items_edit
         Me.PictureBox83.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox83.TabIndex = 339
-        Me.PictureBox83.TabStop = false
+        Me.PictureBox83.TabStop = False
         '
         'NumericUpDown97
         '
@@ -5746,23 +5751,23 @@ Partial Class Items_edit
         '
         'CheckBox193
         '
-        Me.CheckBox193.AutoSize = true
+        Me.CheckBox193.AutoSize = True
         Me.CheckBox193.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox193.Location = New System.Drawing.Point(844, 236)
         Me.CheckBox193.Name = "CheckBox193"
         Me.CheckBox193.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox193.TabIndex = 337
-        Me.CheckBox193.UseVisualStyleBackColor = false
+        Me.CheckBox193.UseVisualStyleBackColor = False
         '
         'CheckBox194
         '
-        Me.CheckBox194.AutoSize = true
+        Me.CheckBox194.AutoSize = True
         Me.CheckBox194.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox194.Location = New System.Drawing.Point(783, 236)
         Me.CheckBox194.Name = "CheckBox194"
         Me.CheckBox194.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox194.TabIndex = 336
-        Me.CheckBox194.UseVisualStyleBackColor = false
+        Me.CheckBox194.UseVisualStyleBackColor = False
         '
         'PictureBox84
         '
@@ -5772,7 +5777,7 @@ Partial Class Items_edit
         Me.PictureBox84.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox84.TabIndex = 335
-        Me.PictureBox84.TabStop = false
+        Me.PictureBox84.TabStop = False
         '
         'NumericUpDown98
         '
@@ -5786,23 +5791,23 @@ Partial Class Items_edit
         '
         'CheckBox195
         '
-        Me.CheckBox195.AutoSize = true
+        Me.CheckBox195.AutoSize = True
         Me.CheckBox195.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox195.Location = New System.Drawing.Point(762, 236)
         Me.CheckBox195.Name = "CheckBox195"
         Me.CheckBox195.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox195.TabIndex = 333
-        Me.CheckBox195.UseVisualStyleBackColor = false
+        Me.CheckBox195.UseVisualStyleBackColor = False
         '
         'CheckBox196
         '
-        Me.CheckBox196.AutoSize = true
+        Me.CheckBox196.AutoSize = True
         Me.CheckBox196.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox196.Location = New System.Drawing.Point(701, 236)
         Me.CheckBox196.Name = "CheckBox196"
         Me.CheckBox196.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox196.TabIndex = 332
-        Me.CheckBox196.UseVisualStyleBackColor = false
+        Me.CheckBox196.UseVisualStyleBackColor = False
         '
         'PictureBox85
         '
@@ -5812,7 +5817,7 @@ Partial Class Items_edit
         Me.PictureBox85.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox85.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox85.TabIndex = 331
-        Me.PictureBox85.TabStop = false
+        Me.PictureBox85.TabStop = False
         '
         'NumericUpDown99
         '
@@ -5826,23 +5831,23 @@ Partial Class Items_edit
         '
         'CheckBox197
         '
-        Me.CheckBox197.AutoSize = true
+        Me.CheckBox197.AutoSize = True
         Me.CheckBox197.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox197.Location = New System.Drawing.Point(680, 236)
         Me.CheckBox197.Name = "CheckBox197"
         Me.CheckBox197.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox197.TabIndex = 329
-        Me.CheckBox197.UseVisualStyleBackColor = false
+        Me.CheckBox197.UseVisualStyleBackColor = False
         '
         'CheckBox198
         '
-        Me.CheckBox198.AutoSize = true
+        Me.CheckBox198.AutoSize = True
         Me.CheckBox198.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox198.Location = New System.Drawing.Point(619, 236)
         Me.CheckBox198.Name = "CheckBox198"
         Me.CheckBox198.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox198.TabIndex = 328
-        Me.CheckBox198.UseVisualStyleBackColor = false
+        Me.CheckBox198.UseVisualStyleBackColor = False
         '
         'PictureBox89
         '
@@ -5852,7 +5857,7 @@ Partial Class Items_edit
         Me.PictureBox89.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox89.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox89.TabIndex = 327
-        Me.PictureBox89.TabStop = false
+        Me.PictureBox89.TabStop = False
         '
         'NumericUpDown100
         '
@@ -5866,23 +5871,23 @@ Partial Class Items_edit
         '
         'CheckBox199
         '
-        Me.CheckBox199.AutoSize = true
+        Me.CheckBox199.AutoSize = True
         Me.CheckBox199.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox199.Location = New System.Drawing.Point(598, 236)
         Me.CheckBox199.Name = "CheckBox199"
         Me.CheckBox199.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox199.TabIndex = 325
-        Me.CheckBox199.UseVisualStyleBackColor = false
+        Me.CheckBox199.UseVisualStyleBackColor = False
         '
         'CheckBox200
         '
-        Me.CheckBox200.AutoSize = true
+        Me.CheckBox200.AutoSize = True
         Me.CheckBox200.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox200.Location = New System.Drawing.Point(537, 236)
         Me.CheckBox200.Name = "CheckBox200"
         Me.CheckBox200.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox200.TabIndex = 324
-        Me.CheckBox200.UseVisualStyleBackColor = false
+        Me.CheckBox200.UseVisualStyleBackColor = False
         '
         'PictureBox90
         '
@@ -5892,7 +5897,7 @@ Partial Class Items_edit
         Me.PictureBox90.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox90.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox90.TabIndex = 323
-        Me.PictureBox90.TabStop = false
+        Me.PictureBox90.TabStop = False
         '
         'NumericUpDown101
         '
@@ -5906,23 +5911,23 @@ Partial Class Items_edit
         '
         'CheckBox201
         '
-        Me.CheckBox201.AutoSize = true
+        Me.CheckBox201.AutoSize = True
         Me.CheckBox201.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox201.Location = New System.Drawing.Point(516, 236)
         Me.CheckBox201.Name = "CheckBox201"
         Me.CheckBox201.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox201.TabIndex = 321
-        Me.CheckBox201.UseVisualStyleBackColor = false
+        Me.CheckBox201.UseVisualStyleBackColor = False
         '
         'CheckBox202
         '
-        Me.CheckBox202.AutoSize = true
+        Me.CheckBox202.AutoSize = True
         Me.CheckBox202.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox202.Location = New System.Drawing.Point(455, 236)
         Me.CheckBox202.Name = "CheckBox202"
         Me.CheckBox202.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox202.TabIndex = 320
-        Me.CheckBox202.UseVisualStyleBackColor = false
+        Me.CheckBox202.UseVisualStyleBackColor = False
         '
         'PictureBox91
         '
@@ -5932,7 +5937,7 @@ Partial Class Items_edit
         Me.PictureBox91.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox91.TabIndex = 319
-        Me.PictureBox91.TabStop = false
+        Me.PictureBox91.TabStop = False
         '
         'NumericUpDown102
         '
@@ -5946,23 +5951,23 @@ Partial Class Items_edit
         '
         'CheckBox203
         '
-        Me.CheckBox203.AutoSize = true
+        Me.CheckBox203.AutoSize = True
         Me.CheckBox203.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox203.Location = New System.Drawing.Point(434, 236)
         Me.CheckBox203.Name = "CheckBox203"
         Me.CheckBox203.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox203.TabIndex = 317
-        Me.CheckBox203.UseVisualStyleBackColor = false
+        Me.CheckBox203.UseVisualStyleBackColor = False
         '
         'CheckBox204
         '
-        Me.CheckBox204.AutoSize = true
+        Me.CheckBox204.AutoSize = True
         Me.CheckBox204.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox204.Location = New System.Drawing.Point(373, 236)
         Me.CheckBox204.Name = "CheckBox204"
         Me.CheckBox204.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox204.TabIndex = 316
-        Me.CheckBox204.UseVisualStyleBackColor = false
+        Me.CheckBox204.UseVisualStyleBackColor = False
         '
         'PictureBox92
         '
@@ -5972,7 +5977,7 @@ Partial Class Items_edit
         Me.PictureBox92.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox92.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox92.TabIndex = 315
-        Me.PictureBox92.TabStop = false
+        Me.PictureBox92.TabStop = False
         '
         'NumericUpDown103
         '
@@ -5986,23 +5991,23 @@ Partial Class Items_edit
         '
         'CheckBox205
         '
-        Me.CheckBox205.AutoSize = true
+        Me.CheckBox205.AutoSize = True
         Me.CheckBox205.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox205.Location = New System.Drawing.Point(352, 236)
         Me.CheckBox205.Name = "CheckBox205"
         Me.CheckBox205.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox205.TabIndex = 313
-        Me.CheckBox205.UseVisualStyleBackColor = false
+        Me.CheckBox205.UseVisualStyleBackColor = False
         '
         'CheckBox206
         '
-        Me.CheckBox206.AutoSize = true
+        Me.CheckBox206.AutoSize = True
         Me.CheckBox206.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox206.Location = New System.Drawing.Point(291, 236)
         Me.CheckBox206.Name = "CheckBox206"
         Me.CheckBox206.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox206.TabIndex = 312
-        Me.CheckBox206.UseVisualStyleBackColor = false
+        Me.CheckBox206.UseVisualStyleBackColor = False
         '
         'PictureBox93
         '
@@ -6012,7 +6017,7 @@ Partial Class Items_edit
         Me.PictureBox93.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox93.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox93.TabIndex = 311
-        Me.PictureBox93.TabStop = false
+        Me.PictureBox93.TabStop = False
         '
         'NumericUpDown104
         '
@@ -6026,23 +6031,23 @@ Partial Class Items_edit
         '
         'CheckBox207
         '
-        Me.CheckBox207.AutoSize = true
+        Me.CheckBox207.AutoSize = True
         Me.CheckBox207.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox207.Location = New System.Drawing.Point(270, 236)
         Me.CheckBox207.Name = "CheckBox207"
         Me.CheckBox207.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox207.TabIndex = 309
-        Me.CheckBox207.UseVisualStyleBackColor = false
+        Me.CheckBox207.UseVisualStyleBackColor = False
         '
         'CheckBox208
         '
-        Me.CheckBox208.AutoSize = true
+        Me.CheckBox208.AutoSize = True
         Me.CheckBox208.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox208.Location = New System.Drawing.Point(209, 236)
         Me.CheckBox208.Name = "CheckBox208"
         Me.CheckBox208.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox208.TabIndex = 308
-        Me.CheckBox208.UseVisualStyleBackColor = false
+        Me.CheckBox208.UseVisualStyleBackColor = False
         '
         'PictureBox94
         '
@@ -6052,7 +6057,7 @@ Partial Class Items_edit
         Me.PictureBox94.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox94.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox94.TabIndex = 307
-        Me.PictureBox94.TabStop = false
+        Me.PictureBox94.TabStop = False
         '
         'NumericUpDown105
         '
@@ -6066,23 +6071,23 @@ Partial Class Items_edit
         '
         'CheckBox209
         '
-        Me.CheckBox209.AutoSize = true
+        Me.CheckBox209.AutoSize = True
         Me.CheckBox209.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox209.Location = New System.Drawing.Point(188, 236)
         Me.CheckBox209.Name = "CheckBox209"
         Me.CheckBox209.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox209.TabIndex = 305
-        Me.CheckBox209.UseVisualStyleBackColor = false
+        Me.CheckBox209.UseVisualStyleBackColor = False
         '
         'CheckBox210
         '
-        Me.CheckBox210.AutoSize = true
+        Me.CheckBox210.AutoSize = True
         Me.CheckBox210.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox210.Location = New System.Drawing.Point(127, 236)
         Me.CheckBox210.Name = "CheckBox210"
         Me.CheckBox210.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox210.TabIndex = 304
-        Me.CheckBox210.UseVisualStyleBackColor = false
+        Me.CheckBox210.UseVisualStyleBackColor = False
         '
         'PictureBox95
         '
@@ -6092,7 +6097,7 @@ Partial Class Items_edit
         Me.PictureBox95.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox95.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox95.TabIndex = 303
-        Me.PictureBox95.TabStop = false
+        Me.PictureBox95.TabStop = False
         '
         'NumericUpDown106
         '
@@ -6106,23 +6111,23 @@ Partial Class Items_edit
         '
         'CheckBox211
         '
-        Me.CheckBox211.AutoSize = true
+        Me.CheckBox211.AutoSize = True
         Me.CheckBox211.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox211.Location = New System.Drawing.Point(106, 236)
         Me.CheckBox211.Name = "CheckBox211"
         Me.CheckBox211.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox211.TabIndex = 301
-        Me.CheckBox211.UseVisualStyleBackColor = false
+        Me.CheckBox211.UseVisualStyleBackColor = False
         '
         'CheckBox212
         '
-        Me.CheckBox212.AutoSize = true
+        Me.CheckBox212.AutoSize = True
         Me.CheckBox212.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox212.Location = New System.Drawing.Point(45, 236)
         Me.CheckBox212.Name = "CheckBox212"
         Me.CheckBox212.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox212.TabIndex = 300
-        Me.CheckBox212.UseVisualStyleBackColor = false
+        Me.CheckBox212.UseVisualStyleBackColor = False
         '
         'PictureBox96
         '
@@ -6132,7 +6137,7 @@ Partial Class Items_edit
         Me.PictureBox96.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox96.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox96.TabIndex = 299
-        Me.PictureBox96.TabStop = false
+        Me.PictureBox96.TabStop = False
         '
         'NumericUpDown77
         '
@@ -6146,23 +6151,23 @@ Partial Class Items_edit
         '
         'CheckBox153
         '
-        Me.CheckBox153.AutoSize = true
+        Me.CheckBox153.AutoSize = True
         Me.CheckBox153.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox153.Location = New System.Drawing.Point(844, 156)
         Me.CheckBox153.Name = "CheckBox153"
         Me.CheckBox153.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox153.TabIndex = 297
-        Me.CheckBox153.UseVisualStyleBackColor = false
+        Me.CheckBox153.UseVisualStyleBackColor = False
         '
         'CheckBox154
         '
-        Me.CheckBox154.AutoSize = true
+        Me.CheckBox154.AutoSize = True
         Me.CheckBox154.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox154.Location = New System.Drawing.Point(783, 156)
         Me.CheckBox154.Name = "CheckBox154"
         Me.CheckBox154.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox154.TabIndex = 296
-        Me.CheckBox154.UseVisualStyleBackColor = false
+        Me.CheckBox154.UseVisualStyleBackColor = False
         '
         'PictureBox14
         '
@@ -6172,7 +6177,7 @@ Partial Class Items_edit
         Me.PictureBox14.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox14.TabIndex = 295
-        Me.PictureBox14.TabStop = false
+        Me.PictureBox14.TabStop = False
         '
         'NumericUpDown78
         '
@@ -6186,23 +6191,23 @@ Partial Class Items_edit
         '
         'CheckBox155
         '
-        Me.CheckBox155.AutoSize = true
+        Me.CheckBox155.AutoSize = True
         Me.CheckBox155.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox155.Location = New System.Drawing.Point(762, 156)
         Me.CheckBox155.Name = "CheckBox155"
         Me.CheckBox155.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox155.TabIndex = 293
-        Me.CheckBox155.UseVisualStyleBackColor = false
+        Me.CheckBox155.UseVisualStyleBackColor = False
         '
         'CheckBox156
         '
-        Me.CheckBox156.AutoSize = true
+        Me.CheckBox156.AutoSize = True
         Me.CheckBox156.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox156.Location = New System.Drawing.Point(701, 156)
         Me.CheckBox156.Name = "CheckBox156"
         Me.CheckBox156.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox156.TabIndex = 292
-        Me.CheckBox156.UseVisualStyleBackColor = false
+        Me.CheckBox156.UseVisualStyleBackColor = False
         '
         'PictureBox15
         '
@@ -6212,7 +6217,7 @@ Partial Class Items_edit
         Me.PictureBox15.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox15.TabIndex = 291
-        Me.PictureBox15.TabStop = false
+        Me.PictureBox15.TabStop = False
         '
         'NumericUpDown79
         '
@@ -6226,23 +6231,23 @@ Partial Class Items_edit
         '
         'CheckBox157
         '
-        Me.CheckBox157.AutoSize = true
+        Me.CheckBox157.AutoSize = True
         Me.CheckBox157.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox157.Location = New System.Drawing.Point(680, 156)
         Me.CheckBox157.Name = "CheckBox157"
         Me.CheckBox157.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox157.TabIndex = 289
-        Me.CheckBox157.UseVisualStyleBackColor = false
+        Me.CheckBox157.UseVisualStyleBackColor = False
         '
         'CheckBox158
         '
-        Me.CheckBox158.AutoSize = true
+        Me.CheckBox158.AutoSize = True
         Me.CheckBox158.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox158.Location = New System.Drawing.Point(619, 156)
         Me.CheckBox158.Name = "CheckBox158"
         Me.CheckBox158.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox158.TabIndex = 288
-        Me.CheckBox158.UseVisualStyleBackColor = false
+        Me.CheckBox158.UseVisualStyleBackColor = False
         '
         'PictureBox16
         '
@@ -6252,7 +6257,7 @@ Partial Class Items_edit
         Me.PictureBox16.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox16.TabIndex = 287
-        Me.PictureBox16.TabStop = false
+        Me.PictureBox16.TabStop = False
         '
         'NumericUpDown80
         '
@@ -6266,23 +6271,23 @@ Partial Class Items_edit
         '
         'CheckBox159
         '
-        Me.CheckBox159.AutoSize = true
+        Me.CheckBox159.AutoSize = True
         Me.CheckBox159.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox159.Location = New System.Drawing.Point(598, 156)
         Me.CheckBox159.Name = "CheckBox159"
         Me.CheckBox159.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox159.TabIndex = 285
-        Me.CheckBox159.UseVisualStyleBackColor = false
+        Me.CheckBox159.UseVisualStyleBackColor = False
         '
         'CheckBox160
         '
-        Me.CheckBox160.AutoSize = true
+        Me.CheckBox160.AutoSize = True
         Me.CheckBox160.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox160.Location = New System.Drawing.Point(537, 156)
         Me.CheckBox160.Name = "CheckBox160"
         Me.CheckBox160.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox160.TabIndex = 284
-        Me.CheckBox160.UseVisualStyleBackColor = false
+        Me.CheckBox160.UseVisualStyleBackColor = False
         '
         'PictureBox17
         '
@@ -6292,7 +6297,7 @@ Partial Class Items_edit
         Me.PictureBox17.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox17.TabIndex = 283
-        Me.PictureBox17.TabStop = false
+        Me.PictureBox17.TabStop = False
         '
         'NumericUpDown81
         '
@@ -6306,23 +6311,23 @@ Partial Class Items_edit
         '
         'CheckBox161
         '
-        Me.CheckBox161.AutoSize = true
+        Me.CheckBox161.AutoSize = True
         Me.CheckBox161.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox161.Location = New System.Drawing.Point(516, 156)
         Me.CheckBox161.Name = "CheckBox161"
         Me.CheckBox161.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox161.TabIndex = 281
-        Me.CheckBox161.UseVisualStyleBackColor = false
+        Me.CheckBox161.UseVisualStyleBackColor = False
         '
         'CheckBox162
         '
-        Me.CheckBox162.AutoSize = true
+        Me.CheckBox162.AutoSize = True
         Me.CheckBox162.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox162.Location = New System.Drawing.Point(455, 156)
         Me.CheckBox162.Name = "CheckBox162"
         Me.CheckBox162.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox162.TabIndex = 280
-        Me.CheckBox162.UseVisualStyleBackColor = false
+        Me.CheckBox162.UseVisualStyleBackColor = False
         '
         'PictureBox18
         '
@@ -6332,7 +6337,7 @@ Partial Class Items_edit
         Me.PictureBox18.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox18.TabIndex = 279
-        Me.PictureBox18.TabStop = false
+        Me.PictureBox18.TabStop = False
         '
         'NumericUpDown82
         '
@@ -6346,23 +6351,23 @@ Partial Class Items_edit
         '
         'CheckBox163
         '
-        Me.CheckBox163.AutoSize = true
+        Me.CheckBox163.AutoSize = True
         Me.CheckBox163.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox163.Location = New System.Drawing.Point(434, 156)
         Me.CheckBox163.Name = "CheckBox163"
         Me.CheckBox163.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox163.TabIndex = 277
-        Me.CheckBox163.UseVisualStyleBackColor = false
+        Me.CheckBox163.UseVisualStyleBackColor = False
         '
         'CheckBox164
         '
-        Me.CheckBox164.AutoSize = true
+        Me.CheckBox164.AutoSize = True
         Me.CheckBox164.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox164.Location = New System.Drawing.Point(373, 156)
         Me.CheckBox164.Name = "CheckBox164"
         Me.CheckBox164.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox164.TabIndex = 276
-        Me.CheckBox164.UseVisualStyleBackColor = false
+        Me.CheckBox164.UseVisualStyleBackColor = False
         '
         'PictureBox50
         '
@@ -6372,7 +6377,7 @@ Partial Class Items_edit
         Me.PictureBox50.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox50.TabIndex = 275
-        Me.PictureBox50.TabStop = false
+        Me.PictureBox50.TabStop = False
         '
         'NumericUpDown83
         '
@@ -6386,23 +6391,23 @@ Partial Class Items_edit
         '
         'CheckBox165
         '
-        Me.CheckBox165.AutoSize = true
+        Me.CheckBox165.AutoSize = True
         Me.CheckBox165.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox165.Location = New System.Drawing.Point(352, 156)
         Me.CheckBox165.Name = "CheckBox165"
         Me.CheckBox165.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox165.TabIndex = 273
-        Me.CheckBox165.UseVisualStyleBackColor = false
+        Me.CheckBox165.UseVisualStyleBackColor = False
         '
         'CheckBox166
         '
-        Me.CheckBox166.AutoSize = true
+        Me.CheckBox166.AutoSize = True
         Me.CheckBox166.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox166.Location = New System.Drawing.Point(291, 156)
         Me.CheckBox166.Name = "CheckBox166"
         Me.CheckBox166.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox166.TabIndex = 272
-        Me.CheckBox166.UseVisualStyleBackColor = false
+        Me.CheckBox166.UseVisualStyleBackColor = False
         '
         'PictureBox51
         '
@@ -6412,7 +6417,7 @@ Partial Class Items_edit
         Me.PictureBox51.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox51.TabIndex = 271
-        Me.PictureBox51.TabStop = false
+        Me.PictureBox51.TabStop = False
         '
         'NumericUpDown84
         '
@@ -6426,23 +6431,23 @@ Partial Class Items_edit
         '
         'CheckBox167
         '
-        Me.CheckBox167.AutoSize = true
+        Me.CheckBox167.AutoSize = True
         Me.CheckBox167.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox167.Location = New System.Drawing.Point(270, 156)
         Me.CheckBox167.Name = "CheckBox167"
         Me.CheckBox167.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox167.TabIndex = 269
-        Me.CheckBox167.UseVisualStyleBackColor = false
+        Me.CheckBox167.UseVisualStyleBackColor = False
         '
         'CheckBox168
         '
-        Me.CheckBox168.AutoSize = true
+        Me.CheckBox168.AutoSize = True
         Me.CheckBox168.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox168.Location = New System.Drawing.Point(209, 156)
         Me.CheckBox168.Name = "CheckBox168"
         Me.CheckBox168.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox168.TabIndex = 268
-        Me.CheckBox168.UseVisualStyleBackColor = false
+        Me.CheckBox168.UseVisualStyleBackColor = False
         '
         'PictureBox52
         '
@@ -6452,7 +6457,7 @@ Partial Class Items_edit
         Me.PictureBox52.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox52.TabIndex = 267
-        Me.PictureBox52.TabStop = false
+        Me.PictureBox52.TabStop = False
         '
         'NumericUpDown85
         '
@@ -6466,23 +6471,23 @@ Partial Class Items_edit
         '
         'CheckBox169
         '
-        Me.CheckBox169.AutoSize = true
+        Me.CheckBox169.AutoSize = True
         Me.CheckBox169.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox169.Location = New System.Drawing.Point(188, 156)
         Me.CheckBox169.Name = "CheckBox169"
         Me.CheckBox169.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox169.TabIndex = 265
-        Me.CheckBox169.UseVisualStyleBackColor = false
+        Me.CheckBox169.UseVisualStyleBackColor = False
         '
         'CheckBox170
         '
-        Me.CheckBox170.AutoSize = true
+        Me.CheckBox170.AutoSize = True
         Me.CheckBox170.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox170.Location = New System.Drawing.Point(127, 156)
         Me.CheckBox170.Name = "CheckBox170"
         Me.CheckBox170.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox170.TabIndex = 264
-        Me.CheckBox170.UseVisualStyleBackColor = false
+        Me.CheckBox170.UseVisualStyleBackColor = False
         '
         'PictureBox53
         '
@@ -6492,7 +6497,7 @@ Partial Class Items_edit
         Me.PictureBox53.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox53.TabIndex = 263
-        Me.PictureBox53.TabStop = false
+        Me.PictureBox53.TabStop = False
         '
         'NumericUpDown86
         '
@@ -6506,23 +6511,23 @@ Partial Class Items_edit
         '
         'CheckBox171
         '
-        Me.CheckBox171.AutoSize = true
+        Me.CheckBox171.AutoSize = True
         Me.CheckBox171.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox171.Location = New System.Drawing.Point(106, 156)
         Me.CheckBox171.Name = "CheckBox171"
         Me.CheckBox171.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox171.TabIndex = 261
-        Me.CheckBox171.UseVisualStyleBackColor = false
+        Me.CheckBox171.UseVisualStyleBackColor = False
         '
         'CheckBox172
         '
-        Me.CheckBox172.AutoSize = true
+        Me.CheckBox172.AutoSize = True
         Me.CheckBox172.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox172.Location = New System.Drawing.Point(45, 156)
         Me.CheckBox172.Name = "CheckBox172"
         Me.CheckBox172.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox172.TabIndex = 260
-        Me.CheckBox172.UseVisualStyleBackColor = false
+        Me.CheckBox172.UseVisualStyleBackColor = False
         '
         'PictureBox54
         '
@@ -6532,7 +6537,7 @@ Partial Class Items_edit
         Me.PictureBox54.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox54.TabIndex = 259
-        Me.PictureBox54.TabStop = false
+        Me.PictureBox54.TabStop = False
         '
         'NumericUpDown49
         '
@@ -6546,23 +6551,23 @@ Partial Class Items_edit
         '
         'CheckBox97
         '
-        Me.CheckBox97.AutoSize = true
+        Me.CheckBox97.AutoSize = True
         Me.CheckBox97.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox97.Location = New System.Drawing.Point(844, 76)
         Me.CheckBox97.Name = "CheckBox97"
         Me.CheckBox97.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox97.TabIndex = 257
-        Me.CheckBox97.UseVisualStyleBackColor = false
+        Me.CheckBox97.UseVisualStyleBackColor = False
         '
         'CheckBox98
         '
-        Me.CheckBox98.AutoSize = true
+        Me.CheckBox98.AutoSize = True
         Me.CheckBox98.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox98.Location = New System.Drawing.Point(783, 76)
         Me.CheckBox98.Name = "CheckBox98"
         Me.CheckBox98.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox98.TabIndex = 256
-        Me.CheckBox98.UseVisualStyleBackColor = false
+        Me.CheckBox98.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -6572,7 +6577,7 @@ Partial Class Items_edit
         Me.PictureBox1.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 255
-        Me.PictureBox1.TabStop = false
+        Me.PictureBox1.TabStop = False
         '
         'NumericUpDown50
         '
@@ -6586,23 +6591,23 @@ Partial Class Items_edit
         '
         'CheckBox99
         '
-        Me.CheckBox99.AutoSize = true
+        Me.CheckBox99.AutoSize = True
         Me.CheckBox99.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox99.Location = New System.Drawing.Point(762, 76)
         Me.CheckBox99.Name = "CheckBox99"
         Me.CheckBox99.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox99.TabIndex = 253
-        Me.CheckBox99.UseVisualStyleBackColor = false
+        Me.CheckBox99.UseVisualStyleBackColor = False
         '
         'CheckBox100
         '
-        Me.CheckBox100.AutoSize = true
+        Me.CheckBox100.AutoSize = True
         Me.CheckBox100.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox100.Location = New System.Drawing.Point(701, 76)
         Me.CheckBox100.Name = "CheckBox100"
         Me.CheckBox100.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox100.TabIndex = 252
-        Me.CheckBox100.UseVisualStyleBackColor = false
+        Me.CheckBox100.UseVisualStyleBackColor = False
         '
         'PictureBox2
         '
@@ -6612,7 +6617,7 @@ Partial Class Items_edit
         Me.PictureBox2.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 251
-        Me.PictureBox2.TabStop = false
+        Me.PictureBox2.TabStop = False
         '
         'NumericUpDown69
         '
@@ -6626,23 +6631,23 @@ Partial Class Items_edit
         '
         'CheckBox137
         '
-        Me.CheckBox137.AutoSize = true
+        Me.CheckBox137.AutoSize = True
         Me.CheckBox137.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox137.Location = New System.Drawing.Point(680, 76)
         Me.CheckBox137.Name = "CheckBox137"
         Me.CheckBox137.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox137.TabIndex = 249
-        Me.CheckBox137.UseVisualStyleBackColor = false
+        Me.CheckBox137.UseVisualStyleBackColor = False
         '
         'CheckBox138
         '
-        Me.CheckBox138.AutoSize = true
+        Me.CheckBox138.AutoSize = True
         Me.CheckBox138.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox138.Location = New System.Drawing.Point(619, 76)
         Me.CheckBox138.Name = "CheckBox138"
         Me.CheckBox138.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox138.TabIndex = 248
-        Me.CheckBox138.UseVisualStyleBackColor = false
+        Me.CheckBox138.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
@@ -6652,7 +6657,7 @@ Partial Class Items_edit
         Me.PictureBox3.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 247
-        Me.PictureBox3.TabStop = false
+        Me.PictureBox3.TabStop = False
         '
         'NumericUpDown70
         '
@@ -6666,23 +6671,23 @@ Partial Class Items_edit
         '
         'CheckBox139
         '
-        Me.CheckBox139.AutoSize = true
+        Me.CheckBox139.AutoSize = True
         Me.CheckBox139.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox139.Location = New System.Drawing.Point(598, 76)
         Me.CheckBox139.Name = "CheckBox139"
         Me.CheckBox139.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox139.TabIndex = 245
-        Me.CheckBox139.UseVisualStyleBackColor = false
+        Me.CheckBox139.UseVisualStyleBackColor = False
         '
         'CheckBox140
         '
-        Me.CheckBox140.AutoSize = true
+        Me.CheckBox140.AutoSize = True
         Me.CheckBox140.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox140.Location = New System.Drawing.Point(537, 76)
         Me.CheckBox140.Name = "CheckBox140"
         Me.CheckBox140.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox140.TabIndex = 244
-        Me.CheckBox140.UseVisualStyleBackColor = false
+        Me.CheckBox140.UseVisualStyleBackColor = False
         '
         'PictureBox4
         '
@@ -6692,7 +6697,7 @@ Partial Class Items_edit
         Me.PictureBox4.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 243
-        Me.PictureBox4.TabStop = false
+        Me.PictureBox4.TabStop = False
         '
         'NumericUpDown71
         '
@@ -6706,23 +6711,23 @@ Partial Class Items_edit
         '
         'CheckBox141
         '
-        Me.CheckBox141.AutoSize = true
+        Me.CheckBox141.AutoSize = True
         Me.CheckBox141.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox141.Location = New System.Drawing.Point(516, 76)
         Me.CheckBox141.Name = "CheckBox141"
         Me.CheckBox141.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox141.TabIndex = 241
-        Me.CheckBox141.UseVisualStyleBackColor = false
+        Me.CheckBox141.UseVisualStyleBackColor = False
         '
         'CheckBox142
         '
-        Me.CheckBox142.AutoSize = true
+        Me.CheckBox142.AutoSize = True
         Me.CheckBox142.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox142.Location = New System.Drawing.Point(455, 76)
         Me.CheckBox142.Name = "CheckBox142"
         Me.CheckBox142.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox142.TabIndex = 240
-        Me.CheckBox142.UseVisualStyleBackColor = false
+        Me.CheckBox142.UseVisualStyleBackColor = False
         '
         'PictureBox5
         '
@@ -6732,7 +6737,7 @@ Partial Class Items_edit
         Me.PictureBox5.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 239
-        Me.PictureBox5.TabStop = false
+        Me.PictureBox5.TabStop = False
         '
         'NumericUpDown72
         '
@@ -6746,23 +6751,23 @@ Partial Class Items_edit
         '
         'CheckBox143
         '
-        Me.CheckBox143.AutoSize = true
+        Me.CheckBox143.AutoSize = True
         Me.CheckBox143.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox143.Location = New System.Drawing.Point(434, 76)
         Me.CheckBox143.Name = "CheckBox143"
         Me.CheckBox143.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox143.TabIndex = 237
-        Me.CheckBox143.UseVisualStyleBackColor = false
+        Me.CheckBox143.UseVisualStyleBackColor = False
         '
         'CheckBox144
         '
-        Me.CheckBox144.AutoSize = true
+        Me.CheckBox144.AutoSize = True
         Me.CheckBox144.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox144.Location = New System.Drawing.Point(373, 76)
         Me.CheckBox144.Name = "CheckBox144"
         Me.CheckBox144.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox144.TabIndex = 236
-        Me.CheckBox144.UseVisualStyleBackColor = false
+        Me.CheckBox144.UseVisualStyleBackColor = False
         '
         'PictureBox9
         '
@@ -6772,7 +6777,7 @@ Partial Class Items_edit
         Me.PictureBox9.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 235
-        Me.PictureBox9.TabStop = false
+        Me.PictureBox9.TabStop = False
         '
         'NumericUpDown73
         '
@@ -6786,23 +6791,23 @@ Partial Class Items_edit
         '
         'CheckBox145
         '
-        Me.CheckBox145.AutoSize = true
+        Me.CheckBox145.AutoSize = True
         Me.CheckBox145.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox145.Location = New System.Drawing.Point(352, 76)
         Me.CheckBox145.Name = "CheckBox145"
         Me.CheckBox145.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox145.TabIndex = 233
-        Me.CheckBox145.UseVisualStyleBackColor = false
+        Me.CheckBox145.UseVisualStyleBackColor = False
         '
         'CheckBox146
         '
-        Me.CheckBox146.AutoSize = true
+        Me.CheckBox146.AutoSize = True
         Me.CheckBox146.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox146.Location = New System.Drawing.Point(291, 76)
         Me.CheckBox146.Name = "CheckBox146"
         Me.CheckBox146.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox146.TabIndex = 232
-        Me.CheckBox146.UseVisualStyleBackColor = false
+        Me.CheckBox146.UseVisualStyleBackColor = False
         '
         'PictureBox10
         '
@@ -6812,7 +6817,7 @@ Partial Class Items_edit
         Me.PictureBox10.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox10.TabIndex = 231
-        Me.PictureBox10.TabStop = false
+        Me.PictureBox10.TabStop = False
         '
         'NumericUpDown74
         '
@@ -6826,23 +6831,23 @@ Partial Class Items_edit
         '
         'CheckBox147
         '
-        Me.CheckBox147.AutoSize = true
+        Me.CheckBox147.AutoSize = True
         Me.CheckBox147.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox147.Location = New System.Drawing.Point(270, 76)
         Me.CheckBox147.Name = "CheckBox147"
         Me.CheckBox147.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox147.TabIndex = 229
-        Me.CheckBox147.UseVisualStyleBackColor = false
+        Me.CheckBox147.UseVisualStyleBackColor = False
         '
         'CheckBox148
         '
-        Me.CheckBox148.AutoSize = true
+        Me.CheckBox148.AutoSize = True
         Me.CheckBox148.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox148.Location = New System.Drawing.Point(209, 76)
         Me.CheckBox148.Name = "CheckBox148"
         Me.CheckBox148.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox148.TabIndex = 228
-        Me.CheckBox148.UseVisualStyleBackColor = false
+        Me.CheckBox148.UseVisualStyleBackColor = False
         '
         'PictureBox11
         '
@@ -6852,7 +6857,7 @@ Partial Class Items_edit
         Me.PictureBox11.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox11.TabIndex = 227
-        Me.PictureBox11.TabStop = false
+        Me.PictureBox11.TabStop = False
         '
         'NumericUpDown75
         '
@@ -6866,23 +6871,23 @@ Partial Class Items_edit
         '
         'CheckBox149
         '
-        Me.CheckBox149.AutoSize = true
+        Me.CheckBox149.AutoSize = True
         Me.CheckBox149.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox149.Location = New System.Drawing.Point(188, 76)
         Me.CheckBox149.Name = "CheckBox149"
         Me.CheckBox149.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox149.TabIndex = 225
-        Me.CheckBox149.UseVisualStyleBackColor = false
+        Me.CheckBox149.UseVisualStyleBackColor = False
         '
         'CheckBox150
         '
-        Me.CheckBox150.AutoSize = true
+        Me.CheckBox150.AutoSize = True
         Me.CheckBox150.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox150.Location = New System.Drawing.Point(127, 76)
         Me.CheckBox150.Name = "CheckBox150"
         Me.CheckBox150.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox150.TabIndex = 224
-        Me.CheckBox150.UseVisualStyleBackColor = false
+        Me.CheckBox150.UseVisualStyleBackColor = False
         '
         'PictureBox12
         '
@@ -6892,7 +6897,7 @@ Partial Class Items_edit
         Me.PictureBox12.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox12.TabIndex = 223
-        Me.PictureBox12.TabStop = false
+        Me.PictureBox12.TabStop = False
         '
         'NumericUpDown76
         '
@@ -6906,23 +6911,23 @@ Partial Class Items_edit
         '
         'CheckBox151
         '
-        Me.CheckBox151.AutoSize = true
+        Me.CheckBox151.AutoSize = True
         Me.CheckBox151.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox151.Location = New System.Drawing.Point(106, 76)
         Me.CheckBox151.Name = "CheckBox151"
         Me.CheckBox151.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox151.TabIndex = 221
-        Me.CheckBox151.UseVisualStyleBackColor = false
+        Me.CheckBox151.UseVisualStyleBackColor = False
         '
         'CheckBox152
         '
-        Me.CheckBox152.AutoSize = true
+        Me.CheckBox152.AutoSize = True
         Me.CheckBox152.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox152.Location = New System.Drawing.Point(45, 76)
         Me.CheckBox152.Name = "CheckBox152"
         Me.CheckBox152.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox152.TabIndex = 220
-        Me.CheckBox152.UseVisualStyleBackColor = false
+        Me.CheckBox152.UseVisualStyleBackColor = False
         '
         'PictureBox13
         '
@@ -6932,7 +6937,7 @@ Partial Class Items_edit
         Me.PictureBox13.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox13.TabIndex = 219
-        Me.PictureBox13.TabStop = false
+        Me.PictureBox13.TabStop = False
         '
         'Icon_interiors_right
         '
@@ -6944,11 +6949,11 @@ Partial Class Items_edit
         Me.Icon_interiors_right.Size = New System.Drawing.Size(17, 42)
         Me.Icon_interiors_right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Icon_interiors_right.TabIndex = 150
-        Me.Icon_interiors_right.TabStop = false
+        Me.Icon_interiors_right.TabStop = False
         '
         'Panel_interiors_1
         '
-        Me.Panel_interiors_1.BackgroundImage = CType(resources.GetObject("Panel_interiors_1.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_interiors_1.BackgroundImage = CType(resources.GetObject("Panel_interiors_1.BackgroundImage"), System.Drawing.Image)
         Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown167)
         Me.Panel_interiors_1.Controls.Add(Me.CheckBox333)
         Me.Panel_interiors_1.Controls.Add(Me.CheckBox334)
@@ -7126,7 +7131,7 @@ Partial Class Items_edit
         Me.Panel_interiors_1.Name = "Panel_interiors_1"
         Me.Panel_interiors_1.Size = New System.Drawing.Size(905, 506)
         Me.Panel_interiors_1.TabIndex = 105
-        Me.Panel_interiors_1.Visible = false
+        Me.Panel_interiors_1.Visible = False
         '
         'NumericUpDown167
         '
@@ -7140,23 +7145,23 @@ Partial Class Items_edit
         '
         'CheckBox333
         '
-        Me.CheckBox333.AutoSize = true
+        Me.CheckBox333.AutoSize = True
         Me.CheckBox333.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox333.Location = New System.Drawing.Point(541, 436)
         Me.CheckBox333.Name = "CheckBox333"
         Me.CheckBox333.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox333.TabIndex = 469
-        Me.CheckBox333.UseVisualStyleBackColor = false
+        Me.CheckBox333.UseVisualStyleBackColor = False
         '
         'CheckBox334
         '
-        Me.CheckBox334.AutoSize = true
+        Me.CheckBox334.AutoSize = True
         Me.CheckBox334.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox334.Location = New System.Drawing.Point(480, 436)
         Me.CheckBox334.Name = "CheckBox334"
         Me.CheckBox334.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox334.TabIndex = 468
-        Me.CheckBox334.UseVisualStyleBackColor = false
+        Me.CheckBox334.UseVisualStyleBackColor = False
         '
         'PictureBox162
         '
@@ -7166,7 +7171,7 @@ Partial Class Items_edit
         Me.PictureBox162.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox162.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox162.TabIndex = 467
-        Me.PictureBox162.TabStop = false
+        Me.PictureBox162.TabStop = False
         '
         'NumericUpDown168
         '
@@ -7180,23 +7185,23 @@ Partial Class Items_edit
         '
         'CheckBox335
         '
-        Me.CheckBox335.AutoSize = true
+        Me.CheckBox335.AutoSize = True
         Me.CheckBox335.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox335.Location = New System.Drawing.Point(459, 436)
         Me.CheckBox335.Name = "CheckBox335"
         Me.CheckBox335.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox335.TabIndex = 465
-        Me.CheckBox335.UseVisualStyleBackColor = false
+        Me.CheckBox335.UseVisualStyleBackColor = False
         '
         'CheckBox336
         '
-        Me.CheckBox336.AutoSize = true
+        Me.CheckBox336.AutoSize = True
         Me.CheckBox336.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox336.Location = New System.Drawing.Point(398, 436)
         Me.CheckBox336.Name = "CheckBox336"
         Me.CheckBox336.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox336.TabIndex = 464
-        Me.CheckBox336.UseVisualStyleBackColor = false
+        Me.CheckBox336.UseVisualStyleBackColor = False
         '
         'PictureBox163
         '
@@ -7206,7 +7211,7 @@ Partial Class Items_edit
         Me.PictureBox163.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox163.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox163.TabIndex = 463
-        Me.PictureBox163.TabStop = false
+        Me.PictureBox163.TabStop = False
         '
         'NumericUpDown169
         '
@@ -7220,23 +7225,23 @@ Partial Class Items_edit
         '
         'CheckBox337
         '
-        Me.CheckBox337.AutoSize = true
+        Me.CheckBox337.AutoSize = True
         Me.CheckBox337.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox337.Location = New System.Drawing.Point(377, 436)
         Me.CheckBox337.Name = "CheckBox337"
         Me.CheckBox337.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox337.TabIndex = 461
-        Me.CheckBox337.UseVisualStyleBackColor = false
+        Me.CheckBox337.UseVisualStyleBackColor = False
         '
         'CheckBox338
         '
-        Me.CheckBox338.AutoSize = true
+        Me.CheckBox338.AutoSize = True
         Me.CheckBox338.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox338.Location = New System.Drawing.Point(316, 436)
         Me.CheckBox338.Name = "CheckBox338"
         Me.CheckBox338.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox338.TabIndex = 460
-        Me.CheckBox338.UseVisualStyleBackColor = false
+        Me.CheckBox338.UseVisualStyleBackColor = False
         '
         'PictureBox164
         '
@@ -7246,7 +7251,7 @@ Partial Class Items_edit
         Me.PictureBox164.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox164.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox164.TabIndex = 459
-        Me.PictureBox164.TabStop = false
+        Me.PictureBox164.TabStop = False
         '
         'NumericUpDown147
         '
@@ -7260,23 +7265,23 @@ Partial Class Items_edit
         '
         'CheckBox293
         '
-        Me.CheckBox293.AutoSize = true
+        Me.CheckBox293.AutoSize = True
         Me.CheckBox293.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox293.Location = New System.Drawing.Point(844, 356)
         Me.CheckBox293.Name = "CheckBox293"
         Me.CheckBox293.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox293.TabIndex = 457
-        Me.CheckBox293.UseVisualStyleBackColor = false
+        Me.CheckBox293.UseVisualStyleBackColor = False
         '
         'CheckBox294
         '
-        Me.CheckBox294.AutoSize = true
+        Me.CheckBox294.AutoSize = True
         Me.CheckBox294.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox294.Location = New System.Drawing.Point(783, 356)
         Me.CheckBox294.Name = "CheckBox294"
         Me.CheckBox294.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox294.TabIndex = 456
-        Me.CheckBox294.UseVisualStyleBackColor = false
+        Me.CheckBox294.UseVisualStyleBackColor = False
         '
         'PictureBox142
         '
@@ -7286,7 +7291,7 @@ Partial Class Items_edit
         Me.PictureBox142.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox142.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox142.TabIndex = 455
-        Me.PictureBox142.TabStop = false
+        Me.PictureBox142.TabStop = False
         '
         'NumericUpDown148
         '
@@ -7300,23 +7305,23 @@ Partial Class Items_edit
         '
         'CheckBox295
         '
-        Me.CheckBox295.AutoSize = true
+        Me.CheckBox295.AutoSize = True
         Me.CheckBox295.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox295.Location = New System.Drawing.Point(762, 356)
         Me.CheckBox295.Name = "CheckBox295"
         Me.CheckBox295.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox295.TabIndex = 453
-        Me.CheckBox295.UseVisualStyleBackColor = false
+        Me.CheckBox295.UseVisualStyleBackColor = False
         '
         'CheckBox296
         '
-        Me.CheckBox296.AutoSize = true
+        Me.CheckBox296.AutoSize = True
         Me.CheckBox296.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox296.Location = New System.Drawing.Point(701, 356)
         Me.CheckBox296.Name = "CheckBox296"
         Me.CheckBox296.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox296.TabIndex = 452
-        Me.CheckBox296.UseVisualStyleBackColor = false
+        Me.CheckBox296.UseVisualStyleBackColor = False
         '
         'PictureBox143
         '
@@ -7326,7 +7331,7 @@ Partial Class Items_edit
         Me.PictureBox143.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox143.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox143.TabIndex = 451
-        Me.PictureBox143.TabStop = false
+        Me.PictureBox143.TabStop = False
         '
         'NumericUpDown149
         '
@@ -7340,23 +7345,23 @@ Partial Class Items_edit
         '
         'CheckBox297
         '
-        Me.CheckBox297.AutoSize = true
+        Me.CheckBox297.AutoSize = True
         Me.CheckBox297.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox297.Location = New System.Drawing.Point(680, 356)
         Me.CheckBox297.Name = "CheckBox297"
         Me.CheckBox297.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox297.TabIndex = 449
-        Me.CheckBox297.UseVisualStyleBackColor = false
+        Me.CheckBox297.UseVisualStyleBackColor = False
         '
         'CheckBox298
         '
-        Me.CheckBox298.AutoSize = true
+        Me.CheckBox298.AutoSize = True
         Me.CheckBox298.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox298.Location = New System.Drawing.Point(619, 356)
         Me.CheckBox298.Name = "CheckBox298"
         Me.CheckBox298.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox298.TabIndex = 448
-        Me.CheckBox298.UseVisualStyleBackColor = false
+        Me.CheckBox298.UseVisualStyleBackColor = False
         '
         'PictureBox144
         '
@@ -7366,7 +7371,7 @@ Partial Class Items_edit
         Me.PictureBox144.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox144.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox144.TabIndex = 447
-        Me.PictureBox144.TabStop = false
+        Me.PictureBox144.TabStop = False
         '
         'NumericUpDown150
         '
@@ -7380,23 +7385,23 @@ Partial Class Items_edit
         '
         'CheckBox299
         '
-        Me.CheckBox299.AutoSize = true
+        Me.CheckBox299.AutoSize = True
         Me.CheckBox299.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox299.Location = New System.Drawing.Point(598, 356)
         Me.CheckBox299.Name = "CheckBox299"
         Me.CheckBox299.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox299.TabIndex = 445
-        Me.CheckBox299.UseVisualStyleBackColor = false
+        Me.CheckBox299.UseVisualStyleBackColor = False
         '
         'CheckBox300
         '
-        Me.CheckBox300.AutoSize = true
+        Me.CheckBox300.AutoSize = True
         Me.CheckBox300.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox300.Location = New System.Drawing.Point(537, 356)
         Me.CheckBox300.Name = "CheckBox300"
         Me.CheckBox300.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox300.TabIndex = 444
-        Me.CheckBox300.UseVisualStyleBackColor = false
+        Me.CheckBox300.UseVisualStyleBackColor = False
         '
         'PictureBox145
         '
@@ -7406,7 +7411,7 @@ Partial Class Items_edit
         Me.PictureBox145.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox145.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox145.TabIndex = 443
-        Me.PictureBox145.TabStop = false
+        Me.PictureBox145.TabStop = False
         '
         'NumericUpDown151
         '
@@ -7420,23 +7425,23 @@ Partial Class Items_edit
         '
         'CheckBox301
         '
-        Me.CheckBox301.AutoSize = true
+        Me.CheckBox301.AutoSize = True
         Me.CheckBox301.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox301.Location = New System.Drawing.Point(516, 356)
         Me.CheckBox301.Name = "CheckBox301"
         Me.CheckBox301.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox301.TabIndex = 441
-        Me.CheckBox301.UseVisualStyleBackColor = false
+        Me.CheckBox301.UseVisualStyleBackColor = False
         '
         'CheckBox302
         '
-        Me.CheckBox302.AutoSize = true
+        Me.CheckBox302.AutoSize = True
         Me.CheckBox302.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox302.Location = New System.Drawing.Point(455, 356)
         Me.CheckBox302.Name = "CheckBox302"
         Me.CheckBox302.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox302.TabIndex = 440
-        Me.CheckBox302.UseVisualStyleBackColor = false
+        Me.CheckBox302.UseVisualStyleBackColor = False
         '
         'PictureBox146
         '
@@ -7446,7 +7451,7 @@ Partial Class Items_edit
         Me.PictureBox146.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox146.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox146.TabIndex = 439
-        Me.PictureBox146.TabStop = false
+        Me.PictureBox146.TabStop = False
         '
         'NumericUpDown152
         '
@@ -7460,23 +7465,23 @@ Partial Class Items_edit
         '
         'CheckBox303
         '
-        Me.CheckBox303.AutoSize = true
+        Me.CheckBox303.AutoSize = True
         Me.CheckBox303.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox303.Location = New System.Drawing.Point(434, 356)
         Me.CheckBox303.Name = "CheckBox303"
         Me.CheckBox303.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox303.TabIndex = 437
-        Me.CheckBox303.UseVisualStyleBackColor = false
+        Me.CheckBox303.UseVisualStyleBackColor = False
         '
         'CheckBox304
         '
-        Me.CheckBox304.AutoSize = true
+        Me.CheckBox304.AutoSize = True
         Me.CheckBox304.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox304.Location = New System.Drawing.Point(373, 356)
         Me.CheckBox304.Name = "CheckBox304"
         Me.CheckBox304.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox304.TabIndex = 436
-        Me.CheckBox304.UseVisualStyleBackColor = false
+        Me.CheckBox304.UseVisualStyleBackColor = False
         '
         'PictureBox147
         '
@@ -7486,7 +7491,7 @@ Partial Class Items_edit
         Me.PictureBox147.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox147.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox147.TabIndex = 435
-        Me.PictureBox147.TabStop = false
+        Me.PictureBox147.TabStop = False
         '
         'NumericUpDown153
         '
@@ -7500,23 +7505,23 @@ Partial Class Items_edit
         '
         'CheckBox305
         '
-        Me.CheckBox305.AutoSize = true
+        Me.CheckBox305.AutoSize = True
         Me.CheckBox305.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox305.Location = New System.Drawing.Point(352, 356)
         Me.CheckBox305.Name = "CheckBox305"
         Me.CheckBox305.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox305.TabIndex = 433
-        Me.CheckBox305.UseVisualStyleBackColor = false
+        Me.CheckBox305.UseVisualStyleBackColor = False
         '
         'CheckBox306
         '
-        Me.CheckBox306.AutoSize = true
+        Me.CheckBox306.AutoSize = True
         Me.CheckBox306.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox306.Location = New System.Drawing.Point(291, 356)
         Me.CheckBox306.Name = "CheckBox306"
         Me.CheckBox306.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox306.TabIndex = 432
-        Me.CheckBox306.UseVisualStyleBackColor = false
+        Me.CheckBox306.UseVisualStyleBackColor = False
         '
         'PictureBox148
         '
@@ -7526,7 +7531,7 @@ Partial Class Items_edit
         Me.PictureBox148.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox148.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox148.TabIndex = 431
-        Me.PictureBox148.TabStop = false
+        Me.PictureBox148.TabStop = False
         '
         'NumericUpDown154
         '
@@ -7540,23 +7545,23 @@ Partial Class Items_edit
         '
         'CheckBox307
         '
-        Me.CheckBox307.AutoSize = true
+        Me.CheckBox307.AutoSize = True
         Me.CheckBox307.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox307.Location = New System.Drawing.Point(270, 356)
         Me.CheckBox307.Name = "CheckBox307"
         Me.CheckBox307.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox307.TabIndex = 429
-        Me.CheckBox307.UseVisualStyleBackColor = false
+        Me.CheckBox307.UseVisualStyleBackColor = False
         '
         'CheckBox308
         '
-        Me.CheckBox308.AutoSize = true
+        Me.CheckBox308.AutoSize = True
         Me.CheckBox308.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox308.Location = New System.Drawing.Point(209, 356)
         Me.CheckBox308.Name = "CheckBox308"
         Me.CheckBox308.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox308.TabIndex = 428
-        Me.CheckBox308.UseVisualStyleBackColor = false
+        Me.CheckBox308.UseVisualStyleBackColor = False
         '
         'PictureBox149
         '
@@ -7566,7 +7571,7 @@ Partial Class Items_edit
         Me.PictureBox149.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox149.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox149.TabIndex = 427
-        Me.PictureBox149.TabStop = false
+        Me.PictureBox149.TabStop = False
         '
         'NumericUpDown155
         '
@@ -7580,23 +7585,23 @@ Partial Class Items_edit
         '
         'CheckBox309
         '
-        Me.CheckBox309.AutoSize = true
+        Me.CheckBox309.AutoSize = True
         Me.CheckBox309.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox309.Location = New System.Drawing.Point(188, 356)
         Me.CheckBox309.Name = "CheckBox309"
         Me.CheckBox309.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox309.TabIndex = 425
-        Me.CheckBox309.UseVisualStyleBackColor = false
+        Me.CheckBox309.UseVisualStyleBackColor = False
         '
         'CheckBox310
         '
-        Me.CheckBox310.AutoSize = true
+        Me.CheckBox310.AutoSize = True
         Me.CheckBox310.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox310.Location = New System.Drawing.Point(127, 356)
         Me.CheckBox310.Name = "CheckBox310"
         Me.CheckBox310.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox310.TabIndex = 424
-        Me.CheckBox310.UseVisualStyleBackColor = false
+        Me.CheckBox310.UseVisualStyleBackColor = False
         '
         'PictureBox150
         '
@@ -7606,7 +7611,7 @@ Partial Class Items_edit
         Me.PictureBox150.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox150.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox150.TabIndex = 423
-        Me.PictureBox150.TabStop = false
+        Me.PictureBox150.TabStop = False
         '
         'NumericUpDown156
         '
@@ -7620,23 +7625,23 @@ Partial Class Items_edit
         '
         'CheckBox311
         '
-        Me.CheckBox311.AutoSize = true
+        Me.CheckBox311.AutoSize = True
         Me.CheckBox311.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox311.Location = New System.Drawing.Point(106, 356)
         Me.CheckBox311.Name = "CheckBox311"
         Me.CheckBox311.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox311.TabIndex = 421
-        Me.CheckBox311.UseVisualStyleBackColor = false
+        Me.CheckBox311.UseVisualStyleBackColor = False
         '
         'CheckBox312
         '
-        Me.CheckBox312.AutoSize = true
+        Me.CheckBox312.AutoSize = True
         Me.CheckBox312.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox312.Location = New System.Drawing.Point(45, 356)
         Me.CheckBox312.Name = "CheckBox312"
         Me.CheckBox312.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox312.TabIndex = 420
-        Me.CheckBox312.UseVisualStyleBackColor = false
+        Me.CheckBox312.UseVisualStyleBackColor = False
         '
         'PictureBox151
         '
@@ -7646,7 +7651,7 @@ Partial Class Items_edit
         Me.PictureBox151.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox151.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox151.TabIndex = 419
-        Me.PictureBox151.TabStop = false
+        Me.PictureBox151.TabStop = False
         '
         'NumericUpDown157
         '
@@ -7660,23 +7665,23 @@ Partial Class Items_edit
         '
         'CheckBox313
         '
-        Me.CheckBox313.AutoSize = true
+        Me.CheckBox313.AutoSize = True
         Me.CheckBox313.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox313.Location = New System.Drawing.Point(844, 276)
         Me.CheckBox313.Name = "CheckBox313"
         Me.CheckBox313.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox313.TabIndex = 417
-        Me.CheckBox313.UseVisualStyleBackColor = false
+        Me.CheckBox313.UseVisualStyleBackColor = False
         '
         'CheckBox314
         '
-        Me.CheckBox314.AutoSize = true
+        Me.CheckBox314.AutoSize = True
         Me.CheckBox314.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox314.Location = New System.Drawing.Point(783, 276)
         Me.CheckBox314.Name = "CheckBox314"
         Me.CheckBox314.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox314.TabIndex = 416
-        Me.CheckBox314.UseVisualStyleBackColor = false
+        Me.CheckBox314.UseVisualStyleBackColor = False
         '
         'PictureBox152
         '
@@ -7686,7 +7691,7 @@ Partial Class Items_edit
         Me.PictureBox152.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox152.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox152.TabIndex = 415
-        Me.PictureBox152.TabStop = false
+        Me.PictureBox152.TabStop = False
         '
         'NumericUpDown158
         '
@@ -7700,23 +7705,23 @@ Partial Class Items_edit
         '
         'CheckBox315
         '
-        Me.CheckBox315.AutoSize = true
+        Me.CheckBox315.AutoSize = True
         Me.CheckBox315.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox315.Location = New System.Drawing.Point(762, 276)
         Me.CheckBox315.Name = "CheckBox315"
         Me.CheckBox315.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox315.TabIndex = 413
-        Me.CheckBox315.UseVisualStyleBackColor = false
+        Me.CheckBox315.UseVisualStyleBackColor = False
         '
         'CheckBox316
         '
-        Me.CheckBox316.AutoSize = true
+        Me.CheckBox316.AutoSize = True
         Me.CheckBox316.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox316.Location = New System.Drawing.Point(701, 276)
         Me.CheckBox316.Name = "CheckBox316"
         Me.CheckBox316.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox316.TabIndex = 412
-        Me.CheckBox316.UseVisualStyleBackColor = false
+        Me.CheckBox316.UseVisualStyleBackColor = False
         '
         'PictureBox153
         '
@@ -7726,7 +7731,7 @@ Partial Class Items_edit
         Me.PictureBox153.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox153.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox153.TabIndex = 411
-        Me.PictureBox153.TabStop = false
+        Me.PictureBox153.TabStop = False
         '
         'NumericUpDown159
         '
@@ -7740,23 +7745,23 @@ Partial Class Items_edit
         '
         'CheckBox317
         '
-        Me.CheckBox317.AutoSize = true
+        Me.CheckBox317.AutoSize = True
         Me.CheckBox317.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox317.Location = New System.Drawing.Point(680, 276)
         Me.CheckBox317.Name = "CheckBox317"
         Me.CheckBox317.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox317.TabIndex = 409
-        Me.CheckBox317.UseVisualStyleBackColor = false
+        Me.CheckBox317.UseVisualStyleBackColor = False
         '
         'CheckBox318
         '
-        Me.CheckBox318.AutoSize = true
+        Me.CheckBox318.AutoSize = True
         Me.CheckBox318.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox318.Location = New System.Drawing.Point(619, 276)
         Me.CheckBox318.Name = "CheckBox318"
         Me.CheckBox318.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox318.TabIndex = 408
-        Me.CheckBox318.UseVisualStyleBackColor = false
+        Me.CheckBox318.UseVisualStyleBackColor = False
         '
         'PictureBox154
         '
@@ -7766,7 +7771,7 @@ Partial Class Items_edit
         Me.PictureBox154.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox154.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox154.TabIndex = 407
-        Me.PictureBox154.TabStop = false
+        Me.PictureBox154.TabStop = False
         '
         'NumericUpDown160
         '
@@ -7780,23 +7785,23 @@ Partial Class Items_edit
         '
         'CheckBox319
         '
-        Me.CheckBox319.AutoSize = true
+        Me.CheckBox319.AutoSize = True
         Me.CheckBox319.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox319.Location = New System.Drawing.Point(598, 276)
         Me.CheckBox319.Name = "CheckBox319"
         Me.CheckBox319.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox319.TabIndex = 405
-        Me.CheckBox319.UseVisualStyleBackColor = false
+        Me.CheckBox319.UseVisualStyleBackColor = False
         '
         'CheckBox320
         '
-        Me.CheckBox320.AutoSize = true
+        Me.CheckBox320.AutoSize = True
         Me.CheckBox320.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox320.Location = New System.Drawing.Point(537, 276)
         Me.CheckBox320.Name = "CheckBox320"
         Me.CheckBox320.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox320.TabIndex = 404
-        Me.CheckBox320.UseVisualStyleBackColor = false
+        Me.CheckBox320.UseVisualStyleBackColor = False
         '
         'PictureBox155
         '
@@ -7806,7 +7811,7 @@ Partial Class Items_edit
         Me.PictureBox155.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox155.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox155.TabIndex = 403
-        Me.PictureBox155.TabStop = false
+        Me.PictureBox155.TabStop = False
         '
         'NumericUpDown161
         '
@@ -7820,23 +7825,23 @@ Partial Class Items_edit
         '
         'CheckBox321
         '
-        Me.CheckBox321.AutoSize = true
+        Me.CheckBox321.AutoSize = True
         Me.CheckBox321.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox321.Location = New System.Drawing.Point(516, 276)
         Me.CheckBox321.Name = "CheckBox321"
         Me.CheckBox321.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox321.TabIndex = 401
-        Me.CheckBox321.UseVisualStyleBackColor = false
+        Me.CheckBox321.UseVisualStyleBackColor = False
         '
         'CheckBox322
         '
-        Me.CheckBox322.AutoSize = true
+        Me.CheckBox322.AutoSize = True
         Me.CheckBox322.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox322.Location = New System.Drawing.Point(455, 276)
         Me.CheckBox322.Name = "CheckBox322"
         Me.CheckBox322.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox322.TabIndex = 400
-        Me.CheckBox322.UseVisualStyleBackColor = false
+        Me.CheckBox322.UseVisualStyleBackColor = False
         '
         'PictureBox156
         '
@@ -7846,7 +7851,7 @@ Partial Class Items_edit
         Me.PictureBox156.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox156.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox156.TabIndex = 399
-        Me.PictureBox156.TabStop = false
+        Me.PictureBox156.TabStop = False
         '
         'NumericUpDown162
         '
@@ -7860,23 +7865,23 @@ Partial Class Items_edit
         '
         'CheckBox323
         '
-        Me.CheckBox323.AutoSize = true
+        Me.CheckBox323.AutoSize = True
         Me.CheckBox323.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox323.Location = New System.Drawing.Point(434, 276)
         Me.CheckBox323.Name = "CheckBox323"
         Me.CheckBox323.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox323.TabIndex = 397
-        Me.CheckBox323.UseVisualStyleBackColor = false
+        Me.CheckBox323.UseVisualStyleBackColor = False
         '
         'CheckBox324
         '
-        Me.CheckBox324.AutoSize = true
+        Me.CheckBox324.AutoSize = True
         Me.CheckBox324.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox324.Location = New System.Drawing.Point(373, 276)
         Me.CheckBox324.Name = "CheckBox324"
         Me.CheckBox324.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox324.TabIndex = 396
-        Me.CheckBox324.UseVisualStyleBackColor = false
+        Me.CheckBox324.UseVisualStyleBackColor = False
         '
         'PictureBox157
         '
@@ -7886,7 +7891,7 @@ Partial Class Items_edit
         Me.PictureBox157.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox157.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox157.TabIndex = 395
-        Me.PictureBox157.TabStop = false
+        Me.PictureBox157.TabStop = False
         '
         'NumericUpDown163
         '
@@ -7900,23 +7905,23 @@ Partial Class Items_edit
         '
         'CheckBox325
         '
-        Me.CheckBox325.AutoSize = true
+        Me.CheckBox325.AutoSize = True
         Me.CheckBox325.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox325.Location = New System.Drawing.Point(352, 276)
         Me.CheckBox325.Name = "CheckBox325"
         Me.CheckBox325.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox325.TabIndex = 393
-        Me.CheckBox325.UseVisualStyleBackColor = false
+        Me.CheckBox325.UseVisualStyleBackColor = False
         '
         'CheckBox326
         '
-        Me.CheckBox326.AutoSize = true
+        Me.CheckBox326.AutoSize = True
         Me.CheckBox326.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox326.Location = New System.Drawing.Point(291, 276)
         Me.CheckBox326.Name = "CheckBox326"
         Me.CheckBox326.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox326.TabIndex = 392
-        Me.CheckBox326.UseVisualStyleBackColor = false
+        Me.CheckBox326.UseVisualStyleBackColor = False
         '
         'PictureBox158
         '
@@ -7926,7 +7931,7 @@ Partial Class Items_edit
         Me.PictureBox158.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox158.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox158.TabIndex = 391
-        Me.PictureBox158.TabStop = false
+        Me.PictureBox158.TabStop = False
         '
         'NumericUpDown164
         '
@@ -7940,23 +7945,23 @@ Partial Class Items_edit
         '
         'CheckBox327
         '
-        Me.CheckBox327.AutoSize = true
+        Me.CheckBox327.AutoSize = True
         Me.CheckBox327.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox327.Location = New System.Drawing.Point(270, 276)
         Me.CheckBox327.Name = "CheckBox327"
         Me.CheckBox327.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox327.TabIndex = 389
-        Me.CheckBox327.UseVisualStyleBackColor = false
+        Me.CheckBox327.UseVisualStyleBackColor = False
         '
         'CheckBox328
         '
-        Me.CheckBox328.AutoSize = true
+        Me.CheckBox328.AutoSize = True
         Me.CheckBox328.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox328.Location = New System.Drawing.Point(209, 276)
         Me.CheckBox328.Name = "CheckBox328"
         Me.CheckBox328.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox328.TabIndex = 388
-        Me.CheckBox328.UseVisualStyleBackColor = false
+        Me.CheckBox328.UseVisualStyleBackColor = False
         '
         'PictureBox159
         '
@@ -7966,7 +7971,7 @@ Partial Class Items_edit
         Me.PictureBox159.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox159.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox159.TabIndex = 387
-        Me.PictureBox159.TabStop = false
+        Me.PictureBox159.TabStop = False
         '
         'NumericUpDown165
         '
@@ -7980,23 +7985,23 @@ Partial Class Items_edit
         '
         'CheckBox329
         '
-        Me.CheckBox329.AutoSize = true
+        Me.CheckBox329.AutoSize = True
         Me.CheckBox329.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox329.Location = New System.Drawing.Point(188, 276)
         Me.CheckBox329.Name = "CheckBox329"
         Me.CheckBox329.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox329.TabIndex = 385
-        Me.CheckBox329.UseVisualStyleBackColor = false
+        Me.CheckBox329.UseVisualStyleBackColor = False
         '
         'CheckBox330
         '
-        Me.CheckBox330.AutoSize = true
+        Me.CheckBox330.AutoSize = True
         Me.CheckBox330.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox330.Location = New System.Drawing.Point(127, 276)
         Me.CheckBox330.Name = "CheckBox330"
         Me.CheckBox330.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox330.TabIndex = 384
-        Me.CheckBox330.UseVisualStyleBackColor = false
+        Me.CheckBox330.UseVisualStyleBackColor = False
         '
         'PictureBox160
         '
@@ -8006,7 +8011,7 @@ Partial Class Items_edit
         Me.PictureBox160.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox160.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox160.TabIndex = 383
-        Me.PictureBox160.TabStop = false
+        Me.PictureBox160.TabStop = False
         '
         'NumericUpDown166
         '
@@ -8020,23 +8025,23 @@ Partial Class Items_edit
         '
         'CheckBox331
         '
-        Me.CheckBox331.AutoSize = true
+        Me.CheckBox331.AutoSize = True
         Me.CheckBox331.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox331.Location = New System.Drawing.Point(106, 276)
         Me.CheckBox331.Name = "CheckBox331"
         Me.CheckBox331.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox331.TabIndex = 381
-        Me.CheckBox331.UseVisualStyleBackColor = false
+        Me.CheckBox331.UseVisualStyleBackColor = False
         '
         'CheckBox332
         '
-        Me.CheckBox332.AutoSize = true
+        Me.CheckBox332.AutoSize = True
         Me.CheckBox332.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox332.Location = New System.Drawing.Point(45, 276)
         Me.CheckBox332.Name = "CheckBox332"
         Me.CheckBox332.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox332.TabIndex = 380
-        Me.CheckBox332.UseVisualStyleBackColor = false
+        Me.CheckBox332.UseVisualStyleBackColor = False
         '
         'PictureBox161
         '
@@ -8046,7 +8051,7 @@ Partial Class Items_edit
         Me.PictureBox161.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox161.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox161.TabIndex = 379
-        Me.PictureBox161.TabStop = false
+        Me.PictureBox161.TabStop = False
         '
         'NumericUpDown127
         '
@@ -8060,23 +8065,23 @@ Partial Class Items_edit
         '
         'CheckBox253
         '
-        Me.CheckBox253.AutoSize = true
+        Me.CheckBox253.AutoSize = True
         Me.CheckBox253.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox253.Location = New System.Drawing.Point(844, 196)
         Me.CheckBox253.Name = "CheckBox253"
         Me.CheckBox253.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox253.TabIndex = 377
-        Me.CheckBox253.UseVisualStyleBackColor = false
+        Me.CheckBox253.UseVisualStyleBackColor = False
         '
         'CheckBox254
         '
-        Me.CheckBox254.AutoSize = true
+        Me.CheckBox254.AutoSize = True
         Me.CheckBox254.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox254.Location = New System.Drawing.Point(783, 196)
         Me.CheckBox254.Name = "CheckBox254"
         Me.CheckBox254.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox254.TabIndex = 376
-        Me.CheckBox254.UseVisualStyleBackColor = false
+        Me.CheckBox254.UseVisualStyleBackColor = False
         '
         'PictureBox114
         '
@@ -8086,7 +8091,7 @@ Partial Class Items_edit
         Me.PictureBox114.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox114.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox114.TabIndex = 375
-        Me.PictureBox114.TabStop = false
+        Me.PictureBox114.TabStop = False
         '
         'NumericUpDown128
         '
@@ -8100,23 +8105,23 @@ Partial Class Items_edit
         '
         'CheckBox255
         '
-        Me.CheckBox255.AutoSize = true
+        Me.CheckBox255.AutoSize = True
         Me.CheckBox255.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox255.Location = New System.Drawing.Point(762, 196)
         Me.CheckBox255.Name = "CheckBox255"
         Me.CheckBox255.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox255.TabIndex = 373
-        Me.CheckBox255.UseVisualStyleBackColor = false
+        Me.CheckBox255.UseVisualStyleBackColor = False
         '
         'CheckBox256
         '
-        Me.CheckBox256.AutoSize = true
+        Me.CheckBox256.AutoSize = True
         Me.CheckBox256.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox256.Location = New System.Drawing.Point(701, 196)
         Me.CheckBox256.Name = "CheckBox256"
         Me.CheckBox256.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox256.TabIndex = 372
-        Me.CheckBox256.UseVisualStyleBackColor = false
+        Me.CheckBox256.UseVisualStyleBackColor = False
         '
         'PictureBox123
         '
@@ -8126,7 +8131,7 @@ Partial Class Items_edit
         Me.PictureBox123.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox123.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox123.TabIndex = 371
-        Me.PictureBox123.TabStop = false
+        Me.PictureBox123.TabStop = False
         '
         'NumericUpDown129
         '
@@ -8140,23 +8145,23 @@ Partial Class Items_edit
         '
         'CheckBox257
         '
-        Me.CheckBox257.AutoSize = true
+        Me.CheckBox257.AutoSize = True
         Me.CheckBox257.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox257.Location = New System.Drawing.Point(680, 196)
         Me.CheckBox257.Name = "CheckBox257"
         Me.CheckBox257.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox257.TabIndex = 369
-        Me.CheckBox257.UseVisualStyleBackColor = false
+        Me.CheckBox257.UseVisualStyleBackColor = False
         '
         'CheckBox258
         '
-        Me.CheckBox258.AutoSize = true
+        Me.CheckBox258.AutoSize = True
         Me.CheckBox258.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox258.Location = New System.Drawing.Point(619, 196)
         Me.CheckBox258.Name = "CheckBox258"
         Me.CheckBox258.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox258.TabIndex = 368
-        Me.CheckBox258.UseVisualStyleBackColor = false
+        Me.CheckBox258.UseVisualStyleBackColor = False
         '
         'PictureBox124
         '
@@ -8166,7 +8171,7 @@ Partial Class Items_edit
         Me.PictureBox124.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox124.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox124.TabIndex = 367
-        Me.PictureBox124.TabStop = false
+        Me.PictureBox124.TabStop = False
         '
         'NumericUpDown130
         '
@@ -8180,23 +8185,23 @@ Partial Class Items_edit
         '
         'CheckBox259
         '
-        Me.CheckBox259.AutoSize = true
+        Me.CheckBox259.AutoSize = True
         Me.CheckBox259.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox259.Location = New System.Drawing.Point(598, 196)
         Me.CheckBox259.Name = "CheckBox259"
         Me.CheckBox259.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox259.TabIndex = 365
-        Me.CheckBox259.UseVisualStyleBackColor = false
+        Me.CheckBox259.UseVisualStyleBackColor = False
         '
         'CheckBox260
         '
-        Me.CheckBox260.AutoSize = true
+        Me.CheckBox260.AutoSize = True
         Me.CheckBox260.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox260.Location = New System.Drawing.Point(537, 196)
         Me.CheckBox260.Name = "CheckBox260"
         Me.CheckBox260.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox260.TabIndex = 364
-        Me.CheckBox260.UseVisualStyleBackColor = false
+        Me.CheckBox260.UseVisualStyleBackColor = False
         '
         'PictureBox125
         '
@@ -8206,7 +8211,7 @@ Partial Class Items_edit
         Me.PictureBox125.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox125.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox125.TabIndex = 363
-        Me.PictureBox125.TabStop = false
+        Me.PictureBox125.TabStop = False
         '
         'NumericUpDown131
         '
@@ -8220,23 +8225,23 @@ Partial Class Items_edit
         '
         'CheckBox261
         '
-        Me.CheckBox261.AutoSize = true
+        Me.CheckBox261.AutoSize = True
         Me.CheckBox261.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox261.Location = New System.Drawing.Point(516, 196)
         Me.CheckBox261.Name = "CheckBox261"
         Me.CheckBox261.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox261.TabIndex = 361
-        Me.CheckBox261.UseVisualStyleBackColor = false
+        Me.CheckBox261.UseVisualStyleBackColor = False
         '
         'CheckBox262
         '
-        Me.CheckBox262.AutoSize = true
+        Me.CheckBox262.AutoSize = True
         Me.CheckBox262.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox262.Location = New System.Drawing.Point(455, 196)
         Me.CheckBox262.Name = "CheckBox262"
         Me.CheckBox262.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox262.TabIndex = 360
-        Me.CheckBox262.UseVisualStyleBackColor = false
+        Me.CheckBox262.UseVisualStyleBackColor = False
         '
         'PictureBox126
         '
@@ -8246,7 +8251,7 @@ Partial Class Items_edit
         Me.PictureBox126.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox126.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox126.TabIndex = 359
-        Me.PictureBox126.TabStop = false
+        Me.PictureBox126.TabStop = False
         '
         'NumericUpDown132
         '
@@ -8260,23 +8265,23 @@ Partial Class Items_edit
         '
         'CheckBox263
         '
-        Me.CheckBox263.AutoSize = true
+        Me.CheckBox263.AutoSize = True
         Me.CheckBox263.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox263.Location = New System.Drawing.Point(434, 196)
         Me.CheckBox263.Name = "CheckBox263"
         Me.CheckBox263.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox263.TabIndex = 357
-        Me.CheckBox263.UseVisualStyleBackColor = false
+        Me.CheckBox263.UseVisualStyleBackColor = False
         '
         'CheckBox264
         '
-        Me.CheckBox264.AutoSize = true
+        Me.CheckBox264.AutoSize = True
         Me.CheckBox264.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox264.Location = New System.Drawing.Point(373, 196)
         Me.CheckBox264.Name = "CheckBox264"
         Me.CheckBox264.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox264.TabIndex = 356
-        Me.CheckBox264.UseVisualStyleBackColor = false
+        Me.CheckBox264.UseVisualStyleBackColor = False
         '
         'PictureBox127
         '
@@ -8286,7 +8291,7 @@ Partial Class Items_edit
         Me.PictureBox127.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox127.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox127.TabIndex = 355
-        Me.PictureBox127.TabStop = false
+        Me.PictureBox127.TabStop = False
         '
         'NumericUpDown133
         '
@@ -8300,23 +8305,23 @@ Partial Class Items_edit
         '
         'CheckBox265
         '
-        Me.CheckBox265.AutoSize = true
+        Me.CheckBox265.AutoSize = True
         Me.CheckBox265.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox265.Location = New System.Drawing.Point(352, 196)
         Me.CheckBox265.Name = "CheckBox265"
         Me.CheckBox265.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox265.TabIndex = 353
-        Me.CheckBox265.UseVisualStyleBackColor = false
+        Me.CheckBox265.UseVisualStyleBackColor = False
         '
         'CheckBox266
         '
-        Me.CheckBox266.AutoSize = true
+        Me.CheckBox266.AutoSize = True
         Me.CheckBox266.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox266.Location = New System.Drawing.Point(291, 196)
         Me.CheckBox266.Name = "CheckBox266"
         Me.CheckBox266.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox266.TabIndex = 352
-        Me.CheckBox266.UseVisualStyleBackColor = false
+        Me.CheckBox266.UseVisualStyleBackColor = False
         '
         'PictureBox128
         '
@@ -8326,7 +8331,7 @@ Partial Class Items_edit
         Me.PictureBox128.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox128.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox128.TabIndex = 351
-        Me.PictureBox128.TabStop = false
+        Me.PictureBox128.TabStop = False
         '
         'NumericUpDown134
         '
@@ -8340,23 +8345,23 @@ Partial Class Items_edit
         '
         'CheckBox267
         '
-        Me.CheckBox267.AutoSize = true
+        Me.CheckBox267.AutoSize = True
         Me.CheckBox267.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox267.Location = New System.Drawing.Point(270, 196)
         Me.CheckBox267.Name = "CheckBox267"
         Me.CheckBox267.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox267.TabIndex = 349
-        Me.CheckBox267.UseVisualStyleBackColor = false
+        Me.CheckBox267.UseVisualStyleBackColor = False
         '
         'CheckBox268
         '
-        Me.CheckBox268.AutoSize = true
+        Me.CheckBox268.AutoSize = True
         Me.CheckBox268.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox268.Location = New System.Drawing.Point(209, 196)
         Me.CheckBox268.Name = "CheckBox268"
         Me.CheckBox268.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox268.TabIndex = 348
-        Me.CheckBox268.UseVisualStyleBackColor = false
+        Me.CheckBox268.UseVisualStyleBackColor = False
         '
         'PictureBox129
         '
@@ -8366,7 +8371,7 @@ Partial Class Items_edit
         Me.PictureBox129.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox129.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox129.TabIndex = 347
-        Me.PictureBox129.TabStop = false
+        Me.PictureBox129.TabStop = False
         '
         'NumericUpDown135
         '
@@ -8380,23 +8385,23 @@ Partial Class Items_edit
         '
         'CheckBox269
         '
-        Me.CheckBox269.AutoSize = true
+        Me.CheckBox269.AutoSize = True
         Me.CheckBox269.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox269.Location = New System.Drawing.Point(188, 196)
         Me.CheckBox269.Name = "CheckBox269"
         Me.CheckBox269.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox269.TabIndex = 345
-        Me.CheckBox269.UseVisualStyleBackColor = false
+        Me.CheckBox269.UseVisualStyleBackColor = False
         '
         'CheckBox270
         '
-        Me.CheckBox270.AutoSize = true
+        Me.CheckBox270.AutoSize = True
         Me.CheckBox270.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox270.Location = New System.Drawing.Point(127, 196)
         Me.CheckBox270.Name = "CheckBox270"
         Me.CheckBox270.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox270.TabIndex = 344
-        Me.CheckBox270.UseVisualStyleBackColor = false
+        Me.CheckBox270.UseVisualStyleBackColor = False
         '
         'PictureBox130
         '
@@ -8406,7 +8411,7 @@ Partial Class Items_edit
         Me.PictureBox130.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox130.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox130.TabIndex = 343
-        Me.PictureBox130.TabStop = false
+        Me.PictureBox130.TabStop = False
         '
         'NumericUpDown136
         '
@@ -8420,23 +8425,23 @@ Partial Class Items_edit
         '
         'CheckBox271
         '
-        Me.CheckBox271.AutoSize = true
+        Me.CheckBox271.AutoSize = True
         Me.CheckBox271.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox271.Location = New System.Drawing.Point(106, 196)
         Me.CheckBox271.Name = "CheckBox271"
         Me.CheckBox271.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox271.TabIndex = 341
-        Me.CheckBox271.UseVisualStyleBackColor = false
+        Me.CheckBox271.UseVisualStyleBackColor = False
         '
         'CheckBox272
         '
-        Me.CheckBox272.AutoSize = true
+        Me.CheckBox272.AutoSize = True
         Me.CheckBox272.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox272.Location = New System.Drawing.Point(45, 196)
         Me.CheckBox272.Name = "CheckBox272"
         Me.CheckBox272.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox272.TabIndex = 340
-        Me.CheckBox272.UseVisualStyleBackColor = false
+        Me.CheckBox272.UseVisualStyleBackColor = False
         '
         'PictureBox131
         '
@@ -8446,7 +8451,7 @@ Partial Class Items_edit
         Me.PictureBox131.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox131.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox131.TabIndex = 339
-        Me.PictureBox131.TabStop = false
+        Me.PictureBox131.TabStop = False
         '
         'NumericUpDown137
         '
@@ -8460,23 +8465,23 @@ Partial Class Items_edit
         '
         'CheckBox273
         '
-        Me.CheckBox273.AutoSize = true
+        Me.CheckBox273.AutoSize = True
         Me.CheckBox273.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox273.Location = New System.Drawing.Point(844, 116)
         Me.CheckBox273.Name = "CheckBox273"
         Me.CheckBox273.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox273.TabIndex = 337
-        Me.CheckBox273.UseVisualStyleBackColor = false
+        Me.CheckBox273.UseVisualStyleBackColor = False
         '
         'CheckBox274
         '
-        Me.CheckBox274.AutoSize = true
+        Me.CheckBox274.AutoSize = True
         Me.CheckBox274.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox274.Location = New System.Drawing.Point(783, 116)
         Me.CheckBox274.Name = "CheckBox274"
         Me.CheckBox274.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox274.TabIndex = 336
-        Me.CheckBox274.UseVisualStyleBackColor = false
+        Me.CheckBox274.UseVisualStyleBackColor = False
         '
         'PictureBox132
         '
@@ -8486,7 +8491,7 @@ Partial Class Items_edit
         Me.PictureBox132.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox132.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox132.TabIndex = 335
-        Me.PictureBox132.TabStop = false
+        Me.PictureBox132.TabStop = False
         '
         'NumericUpDown138
         '
@@ -8500,23 +8505,23 @@ Partial Class Items_edit
         '
         'CheckBox275
         '
-        Me.CheckBox275.AutoSize = true
+        Me.CheckBox275.AutoSize = True
         Me.CheckBox275.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox275.Location = New System.Drawing.Point(762, 116)
         Me.CheckBox275.Name = "CheckBox275"
         Me.CheckBox275.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox275.TabIndex = 333
-        Me.CheckBox275.UseVisualStyleBackColor = false
+        Me.CheckBox275.UseVisualStyleBackColor = False
         '
         'CheckBox276
         '
-        Me.CheckBox276.AutoSize = true
+        Me.CheckBox276.AutoSize = True
         Me.CheckBox276.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox276.Location = New System.Drawing.Point(701, 116)
         Me.CheckBox276.Name = "CheckBox276"
         Me.CheckBox276.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox276.TabIndex = 332
-        Me.CheckBox276.UseVisualStyleBackColor = false
+        Me.CheckBox276.UseVisualStyleBackColor = False
         '
         'PictureBox133
         '
@@ -8526,7 +8531,7 @@ Partial Class Items_edit
         Me.PictureBox133.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox133.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox133.TabIndex = 331
-        Me.PictureBox133.TabStop = false
+        Me.PictureBox133.TabStop = False
         '
         'NumericUpDown139
         '
@@ -8540,23 +8545,23 @@ Partial Class Items_edit
         '
         'CheckBox277
         '
-        Me.CheckBox277.AutoSize = true
+        Me.CheckBox277.AutoSize = True
         Me.CheckBox277.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox277.Location = New System.Drawing.Point(680, 116)
         Me.CheckBox277.Name = "CheckBox277"
         Me.CheckBox277.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox277.TabIndex = 329
-        Me.CheckBox277.UseVisualStyleBackColor = false
+        Me.CheckBox277.UseVisualStyleBackColor = False
         '
         'CheckBox278
         '
-        Me.CheckBox278.AutoSize = true
+        Me.CheckBox278.AutoSize = True
         Me.CheckBox278.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox278.Location = New System.Drawing.Point(619, 116)
         Me.CheckBox278.Name = "CheckBox278"
         Me.CheckBox278.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox278.TabIndex = 328
-        Me.CheckBox278.UseVisualStyleBackColor = false
+        Me.CheckBox278.UseVisualStyleBackColor = False
         '
         'PictureBox134
         '
@@ -8566,7 +8571,7 @@ Partial Class Items_edit
         Me.PictureBox134.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox134.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox134.TabIndex = 327
-        Me.PictureBox134.TabStop = false
+        Me.PictureBox134.TabStop = False
         '
         'NumericUpDown140
         '
@@ -8580,23 +8585,23 @@ Partial Class Items_edit
         '
         'CheckBox279
         '
-        Me.CheckBox279.AutoSize = true
+        Me.CheckBox279.AutoSize = True
         Me.CheckBox279.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox279.Location = New System.Drawing.Point(598, 116)
         Me.CheckBox279.Name = "CheckBox279"
         Me.CheckBox279.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox279.TabIndex = 325
-        Me.CheckBox279.UseVisualStyleBackColor = false
+        Me.CheckBox279.UseVisualStyleBackColor = False
         '
         'CheckBox280
         '
-        Me.CheckBox280.AutoSize = true
+        Me.CheckBox280.AutoSize = True
         Me.CheckBox280.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox280.Location = New System.Drawing.Point(537, 116)
         Me.CheckBox280.Name = "CheckBox280"
         Me.CheckBox280.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox280.TabIndex = 324
-        Me.CheckBox280.UseVisualStyleBackColor = false
+        Me.CheckBox280.UseVisualStyleBackColor = False
         '
         'PictureBox135
         '
@@ -8606,7 +8611,7 @@ Partial Class Items_edit
         Me.PictureBox135.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox135.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox135.TabIndex = 323
-        Me.PictureBox135.TabStop = false
+        Me.PictureBox135.TabStop = False
         '
         'NumericUpDown141
         '
@@ -8620,23 +8625,23 @@ Partial Class Items_edit
         '
         'CheckBox281
         '
-        Me.CheckBox281.AutoSize = true
+        Me.CheckBox281.AutoSize = True
         Me.CheckBox281.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox281.Location = New System.Drawing.Point(516, 116)
         Me.CheckBox281.Name = "CheckBox281"
         Me.CheckBox281.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox281.TabIndex = 321
-        Me.CheckBox281.UseVisualStyleBackColor = false
+        Me.CheckBox281.UseVisualStyleBackColor = False
         '
         'CheckBox282
         '
-        Me.CheckBox282.AutoSize = true
+        Me.CheckBox282.AutoSize = True
         Me.CheckBox282.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox282.Location = New System.Drawing.Point(455, 116)
         Me.CheckBox282.Name = "CheckBox282"
         Me.CheckBox282.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox282.TabIndex = 320
-        Me.CheckBox282.UseVisualStyleBackColor = false
+        Me.CheckBox282.UseVisualStyleBackColor = False
         '
         'PictureBox136
         '
@@ -8646,7 +8651,7 @@ Partial Class Items_edit
         Me.PictureBox136.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox136.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox136.TabIndex = 319
-        Me.PictureBox136.TabStop = false
+        Me.PictureBox136.TabStop = False
         '
         'NumericUpDown142
         '
@@ -8660,23 +8665,23 @@ Partial Class Items_edit
         '
         'CheckBox283
         '
-        Me.CheckBox283.AutoSize = true
+        Me.CheckBox283.AutoSize = True
         Me.CheckBox283.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox283.Location = New System.Drawing.Point(434, 116)
         Me.CheckBox283.Name = "CheckBox283"
         Me.CheckBox283.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox283.TabIndex = 317
-        Me.CheckBox283.UseVisualStyleBackColor = false
+        Me.CheckBox283.UseVisualStyleBackColor = False
         '
         'CheckBox284
         '
-        Me.CheckBox284.AutoSize = true
+        Me.CheckBox284.AutoSize = True
         Me.CheckBox284.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox284.Location = New System.Drawing.Point(373, 116)
         Me.CheckBox284.Name = "CheckBox284"
         Me.CheckBox284.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox284.TabIndex = 316
-        Me.CheckBox284.UseVisualStyleBackColor = false
+        Me.CheckBox284.UseVisualStyleBackColor = False
         '
         'PictureBox137
         '
@@ -8686,7 +8691,7 @@ Partial Class Items_edit
         Me.PictureBox137.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox137.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox137.TabIndex = 315
-        Me.PictureBox137.TabStop = false
+        Me.PictureBox137.TabStop = False
         '
         'NumericUpDown143
         '
@@ -8700,23 +8705,23 @@ Partial Class Items_edit
         '
         'CheckBox285
         '
-        Me.CheckBox285.AutoSize = true
+        Me.CheckBox285.AutoSize = True
         Me.CheckBox285.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox285.Location = New System.Drawing.Point(352, 116)
         Me.CheckBox285.Name = "CheckBox285"
         Me.CheckBox285.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox285.TabIndex = 313
-        Me.CheckBox285.UseVisualStyleBackColor = false
+        Me.CheckBox285.UseVisualStyleBackColor = False
         '
         'CheckBox286
         '
-        Me.CheckBox286.AutoSize = true
+        Me.CheckBox286.AutoSize = True
         Me.CheckBox286.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox286.Location = New System.Drawing.Point(291, 116)
         Me.CheckBox286.Name = "CheckBox286"
         Me.CheckBox286.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox286.TabIndex = 312
-        Me.CheckBox286.UseVisualStyleBackColor = false
+        Me.CheckBox286.UseVisualStyleBackColor = False
         '
         'PictureBox138
         '
@@ -8726,7 +8731,7 @@ Partial Class Items_edit
         Me.PictureBox138.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox138.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox138.TabIndex = 311
-        Me.PictureBox138.TabStop = false
+        Me.PictureBox138.TabStop = False
         '
         'NumericUpDown144
         '
@@ -8740,23 +8745,23 @@ Partial Class Items_edit
         '
         'CheckBox287
         '
-        Me.CheckBox287.AutoSize = true
+        Me.CheckBox287.AutoSize = True
         Me.CheckBox287.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox287.Location = New System.Drawing.Point(270, 116)
         Me.CheckBox287.Name = "CheckBox287"
         Me.CheckBox287.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox287.TabIndex = 309
-        Me.CheckBox287.UseVisualStyleBackColor = false
+        Me.CheckBox287.UseVisualStyleBackColor = False
         '
         'CheckBox288
         '
-        Me.CheckBox288.AutoSize = true
+        Me.CheckBox288.AutoSize = True
         Me.CheckBox288.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox288.Location = New System.Drawing.Point(209, 116)
         Me.CheckBox288.Name = "CheckBox288"
         Me.CheckBox288.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox288.TabIndex = 308
-        Me.CheckBox288.UseVisualStyleBackColor = false
+        Me.CheckBox288.UseVisualStyleBackColor = False
         '
         'PictureBox139
         '
@@ -8766,7 +8771,7 @@ Partial Class Items_edit
         Me.PictureBox139.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox139.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox139.TabIndex = 307
-        Me.PictureBox139.TabStop = false
+        Me.PictureBox139.TabStop = False
         '
         'NumericUpDown145
         '
@@ -8780,23 +8785,23 @@ Partial Class Items_edit
         '
         'CheckBox289
         '
-        Me.CheckBox289.AutoSize = true
+        Me.CheckBox289.AutoSize = True
         Me.CheckBox289.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox289.Location = New System.Drawing.Point(188, 116)
         Me.CheckBox289.Name = "CheckBox289"
         Me.CheckBox289.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox289.TabIndex = 305
-        Me.CheckBox289.UseVisualStyleBackColor = false
+        Me.CheckBox289.UseVisualStyleBackColor = False
         '
         'CheckBox290
         '
-        Me.CheckBox290.AutoSize = true
+        Me.CheckBox290.AutoSize = True
         Me.CheckBox290.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox290.Location = New System.Drawing.Point(127, 116)
         Me.CheckBox290.Name = "CheckBox290"
         Me.CheckBox290.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox290.TabIndex = 304
-        Me.CheckBox290.UseVisualStyleBackColor = false
+        Me.CheckBox290.UseVisualStyleBackColor = False
         '
         'PictureBox140
         '
@@ -8806,7 +8811,7 @@ Partial Class Items_edit
         Me.PictureBox140.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox140.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox140.TabIndex = 303
-        Me.PictureBox140.TabStop = false
+        Me.PictureBox140.TabStop = False
         '
         'NumericUpDown146
         '
@@ -8820,23 +8825,23 @@ Partial Class Items_edit
         '
         'CheckBox291
         '
-        Me.CheckBox291.AutoSize = true
+        Me.CheckBox291.AutoSize = True
         Me.CheckBox291.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox291.Location = New System.Drawing.Point(106, 116)
         Me.CheckBox291.Name = "CheckBox291"
         Me.CheckBox291.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox291.TabIndex = 301
-        Me.CheckBox291.UseVisualStyleBackColor = false
+        Me.CheckBox291.UseVisualStyleBackColor = False
         '
         'CheckBox292
         '
-        Me.CheckBox292.AutoSize = true
+        Me.CheckBox292.AutoSize = True
         Me.CheckBox292.BackColor = System.Drawing.Color.Transparent
         Me.CheckBox292.Location = New System.Drawing.Point(45, 116)
         Me.CheckBox292.Name = "CheckBox292"
         Me.CheckBox292.Size = New System.Drawing.Size(15, 14)
         Me.CheckBox292.TabIndex = 300
-        Me.CheckBox292.UseVisualStyleBackColor = false
+        Me.CheckBox292.UseVisualStyleBackColor = False
         '
         'PictureBox141
         '
@@ -8846,7 +8851,7 @@ Partial Class Items_edit
         Me.PictureBox141.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox141.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox141.TabIndex = 299
-        Me.PictureBox141.TabStop = false
+        Me.PictureBox141.TabStop = False
         '
         'Icon_interiors_left
         '
@@ -8858,7 +8863,7 @@ Partial Class Items_edit
         Me.Icon_interiors_left.Size = New System.Drawing.Size(17, 42)
         Me.Icon_interiors_left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Icon_interiors_left.TabIndex = 110
-        Me.Icon_interiors_left.TabStop = false
+        Me.Icon_interiors_left.TabStop = False
         '
         'Icon_closesave
         '
@@ -8869,7 +8874,50 @@ Partial Class Items_edit
         Me.Icon_closesave.Name = "Icon_closesave"
         Me.Icon_closesave.Size = New System.Drawing.Size(40, 30)
         Me.Icon_closesave.TabIndex = 106
-        Me.Icon_closesave.TabStop = false
+        Me.Icon_closesave.TabStop = False
+        '
+        'Info_itemsedit
+        '
+        Me.Info_itemsedit.AutoSize = True
+        Me.Info_itemsedit.BackColor = System.Drawing.Color.Transparent
+        Me.Info_itemsedit.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Info_itemsedit.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_itemsedit.ForeColor = System.Drawing.Color.Blue
+        Me.Info_itemsedit.Location = New System.Drawing.Point(338, 15)
+        Me.Info_itemsedit.Name = "Info_itemsedit"
+        Me.Info_itemsedit.Size = New System.Drawing.Size(14, 20)
+        Me.Info_itemsedit.TabIndex = 107
+        Me.Info_itemsedit.Text = "i"
+        '
+        'Panel_info_itemsedit
+        '
+        Me.Panel_info_itemsedit.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_info_itemsedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Info_itemsedit
+        Me.Panel_info_itemsedit.Controls.Add(Me.Info_text_notavailable)
+        Me.Panel_info_itemsedit.Controls.Add(Me.Info_text_available)
+        Me.Panel_info_itemsedit.Location = New System.Drawing.Point(358, 37)
+        Me.Panel_info_itemsedit.Name = "Panel_info_itemsedit"
+        Me.Panel_info_itemsedit.Size = New System.Drawing.Size(200, 200)
+        Me.Panel_info_itemsedit.TabIndex = 109
+        Me.Panel_info_itemsedit.Visible = False
+        '
+        'Info_text_notavailable
+        '
+        Me.Info_text_notavailable.Location = New System.Drawing.Point(9, 157)
+        Me.Info_text_notavailable.Name = "Info_text_notavailable"
+        Me.Info_text_notavailable.Size = New System.Drawing.Size(182, 36)
+        Me.Info_text_notavailable.TabIndex = 1
+        Me.Info_text_notavailable.Text = "Check to set as not available"
+        Me.Info_text_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Info_text_available
+        '
+        Me.Info_text_available.Location = New System.Drawing.Point(9, 8)
+        Me.Info_text_available.Name = "Info_text_available"
+        Me.Info_text_available.Size = New System.Drawing.Size(182, 36)
+        Me.Info_text_available.TabIndex = 0
+        Me.Info_text_available.Text = "Check to set as available"
+        Me.Info_text_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Items_edit
         '
@@ -8879,6 +8927,8 @@ Partial Class Items_edit
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"),System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(907, 545)
         Me.ControlBox = false
+        Me.Controls.Add(Me.Panel_info_itemsedit)
+        Me.Controls.Add(Me.Info_itemsedit)
         Me.Controls.Add(Me.Icon_closesave)
         Me.Controls.Add(Me.Icon_hats_03)
         Me.Controls.Add(Me.Icon_hats_02)
@@ -9280,7 +9330,9 @@ Partial Class Items_edit
         CType(Me.PictureBox141,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_interiors_left,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_closesave,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_info_itemsedit.ResumeLayout(false)
         Me.ResumeLayout(false)
+        Me.PerformLayout
 
 End Sub
     Friend WithEvents Panel_specialfoods As System.Windows.Forms.Panel
@@ -9989,4 +10041,8 @@ End Sub
     Friend WithEvents CheckBox292 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox141 As System.Windows.Forms.PictureBox
     Friend WithEvents Icon_closesave As System.Windows.Forms.PictureBox
+    Friend WithEvents Info_itemsedit As System.Windows.Forms.Label
+    Friend WithEvents Panel_info_itemsedit As System.Windows.Forms.Panel
+    Friend WithEvents Info_text_notavailable As System.Windows.Forms.Label
+    Friend WithEvents Info_text_available As System.Windows.Forms.Label
 End Class

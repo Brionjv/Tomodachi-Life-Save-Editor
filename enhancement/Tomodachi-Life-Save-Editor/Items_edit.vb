@@ -22,6 +22,55 @@ Public Class Items_edit
     Dim Goodsitems_16 As String
     Dim Goodsitems_17 As String
     Dim Goodsitems_18 As String
+    Dim Specialfoods As String
+    Dim Specialfoods_1 As String
+    Dim Specialfoods_2 As String
+    Dim Specialfoods_3 As String
+    Dim Specialfoods_4 As String
+    Dim Specialfoods_5 As String
+    Dim Specialfoods_6 As String
+    Dim Specialfoods_7 As String
+    Dim Specialfoods_8 As String
+    Dim Specialfoods_9 As String
+    Dim Specialfoods_10 As String
+    Dim Specialfoods_11 As String
+    Dim Specialfoods_12 As String
+    Dim Specialfoods_13 As String
+    Dim Specialfoods_14 As String
+    Dim Specialfoods_15 As String
+    Dim Specialfoods_16 As String
+    Dim Specialfoods_17 As String
+    Dim Specialfoods_18 As String
+    Dim Specialfoods_19 As String
+    Dim Specialfoods_20 As String
+    Dim Specialfoods_21 As String
+    Dim Specialfoods_22 As String
+    Dim Specialfoods_23 As String
+    Dim Specialfoods_24 As String
+    Dim Specialfoods_25 As String
+    Dim Specialfoods_26 As String
+    Dim Specialfoods_27 As String
+    Dim Specialfoods_28 As String
+    Dim Specialfoods_29 As String
+    Dim Specialfoods_30 As String
+    Dim Specialfoods_31 As String
+    Dim Specialfoods_32 As String
+    Dim Specialfoods_33 As String
+    Dim Specialfoods_34 As String
+    Dim Specialfoods_35 As String
+    Dim Specialfoods_36 As String
+    Dim Specialfoods_37 As String
+    Dim Specialfoods_38 As String
+    Dim Specialfoods_39 As String
+    Dim Specialfoods_40 As String
+    Dim Specialfoods_41 As String
+    Dim Specialfoods_42 As String
+    Dim Specialfoods_43 As String
+    Dim Specialfoods_44 As String
+    Dim Specialfoods_45 As String
+    Dim Specialfoods_46 As String
+    Dim Specialfoods_47 As String
+    Dim Specialfoods_48 As String
 
     Public Sub hidesub()
         Icon_clothes_01.Visible = False
@@ -148,6 +197,257 @@ Public Class Items_edit
         fs.WriteByte(valu_goodi_18.Value)
     End Sub
 
+    Public Sub readspecialfoods()
+        Try
+            Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+            Reader.Position = Goodsitems
+            Specialfoods_1 = Reader.Position
+            valu_sfoods_1.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 2
+            Specialfoods_2 = Reader.Position
+            valu_sfoods_2.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 3
+            Specialfoods_3 = Reader.Position
+            valu_sfoods_3.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 4
+            Specialfoods_4 = Reader.Position
+            valu_sfoods_4.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 5
+            Specialfoods_5 = Reader.Position
+            valu_sfoods_5.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 6
+            Specialfoods_6 = Reader.Position
+            valu_sfoods_6.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 7
+            Specialfoods_7 = Reader.Position
+            valu_sfoods_7.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 8
+            Specialfoods_8 = Reader.Position
+            valu_sfoods_8.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 9
+            Specialfoods_9 = Reader.Position
+            valu_sfoods_9.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 10
+            Specialfoods_10 = Reader.Position
+            valu_sfoods_10.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 11
+            Specialfoods_11 = Reader.Position
+            valu_sfoods_11.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 12
+            Specialfoods_12 = Reader.Position
+            valu_sfoods_12.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 13
+            Specialfoods_13 = Reader.Position
+            valu_sfoods_13.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 14
+            Specialfoods_14 = Reader.Position
+            valu_sfoods_14.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 15
+            Specialfoods_15 = Reader.Position
+            valu_sfoods_15.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 16
+            Specialfoods_16 = Reader.Position
+            valu_sfoods_16.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 17
+            Specialfoods_17 = Reader.Position
+            valu_sfoods_17.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 18
+            Specialfoods_18 = Reader.Position
+            valu_sfoods_18.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 19
+            Specialfoods_19 = Reader.Position
+            valu_sfoods_19.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 20
+            Specialfoods_20 = Reader.Position
+            valu_sfoods_20.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 21
+            Specialfoods_21 = Reader.Position
+            valu_sfoods_21.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 22
+            Specialfoods_22 = Reader.Position
+            valu_sfoods_22.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 23
+            Specialfoods_23 = Reader.Position
+            valu_sfoods_23.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 24
+            Specialfoods_24 = Reader.Position
+            valu_sfoods_24.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 25
+            Specialfoods_25 = Reader.Position
+            valu_sfoods_25.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 26
+            Specialfoods_26 = Reader.Position
+            valu_sfoods_26.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 27
+            Specialfoods_27 = Reader.Position
+            valu_sfoods_27.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 28
+            Specialfoods_28 = Reader.Position
+            valu_sfoods_28.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 29
+            Specialfoods_29 = Reader.Position
+            valu_sfoods_29.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 30
+            Specialfoods_30 = Reader.Position
+            valu_sfoods_30.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 31
+            Specialfoods_31 = Reader.Position
+            valu_sfoods_31.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 32
+            Specialfoods_32 = Reader.Position
+            valu_sfoods_32.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 33
+            Specialfoods_33 = Reader.Position
+            valu_sfoods_33.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 34
+            Specialfoods_34 = Reader.Position
+            valu_sfoods_34.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 35
+            Specialfoods_35 = Reader.Position
+            valu_sfoods_35.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 36
+            Specialfoods_36 = Reader.Position
+            valu_sfoods_36.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 37
+            Specialfoods_37 = Reader.Position
+            valu_sfoods_37.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 38
+            Specialfoods_38 = Reader.Position
+            valu_sfoods_38.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 39
+            Specialfoods_39 = Reader.Position
+            valu_sfoods_39.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 40
+            Specialfoods_40 = Reader.Position
+            valu_sfoods_40.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 41
+            Specialfoods_41 = Reader.Position
+            valu_sfoods_41.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 42
+            Specialfoods_42 = Reader.Position
+            valu_sfoods_42.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 43
+            Specialfoods_43 = Reader.Position
+            valu_sfoods_43.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 44
+            Specialfoods_44 = Reader.Position
+            valu_sfoods_44.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 45
+            Specialfoods_45 = Reader.Position
+            valu_sfoods_45.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 46
+            Specialfoods_46 = Reader.Position
+            valu_sfoods_46.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 47
+            Specialfoods_47 = Reader.Position
+            valu_sfoods_47.Value = Reader.ReadByte
+            Reader.Position = Goodsitems + 48
+            Specialfoods_48 = Reader.Position
+            valu_sfoods_48.Value = Reader.ReadByte
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Public Sub writespecialfoods()
+        Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+        fs.Position = Specialfoods_1
+        fs.WriteByte(valu_sfoods_1.Value)
+        fs.Position = Specialfoods_2
+        fs.WriteByte(valu_sfoods_2.Value)
+        fs.Position = Specialfoods_3
+        fs.WriteByte(valu_sfoods_3.Value)
+        fs.Position = Specialfoods_4
+        fs.WriteByte(valu_sfoods_4.Value)
+        fs.Position = Specialfoods_5
+        fs.WriteByte(valu_sfoods_5.Value)
+        fs.Position = Specialfoods_6
+        fs.WriteByte(valu_sfoods_6.Value)
+        fs.Position = Specialfoods_7
+        fs.WriteByte(valu_sfoods_7.Value)
+        fs.Position = Specialfoods_8
+        fs.WriteByte(valu_sfoods_8.Value)
+        fs.Position = Specialfoods_9
+        fs.WriteByte(valu_sfoods_9.Value)
+        fs.Position = Specialfoods_10
+        fs.WriteByte(valu_sfoods_10.Value)
+        fs.Position = Specialfoods_11
+        fs.WriteByte(valu_sfoods_11.Value)
+        fs.Position = Specialfoods_12
+        fs.WriteByte(valu_sfoods_12.Value)
+        fs.Position = Specialfoods_13
+        fs.WriteByte(valu_sfoods_13.Value)
+        fs.Position = Specialfoods_14
+        fs.WriteByte(valu_sfoods_14.Value)
+        fs.Position = Specialfoods_15
+        fs.WriteByte(valu_sfoods_15.Value)
+        fs.Position = Specialfoods_16
+        fs.WriteByte(valu_sfoods_16.Value)
+        fs.Position = Specialfoods_17
+        fs.WriteByte(valu_sfoods_17.Value)
+        fs.Position = Specialfoods_18
+        fs.WriteByte(valu_sfoods_18.Value)
+        fs.Position = Specialfoods_19
+        fs.WriteByte(valu_sfoods_19.Value)
+        fs.Position = Specialfoods_20
+        fs.WriteByte(valu_sfoods_20.Value)
+        fs.Position = Specialfoods_21
+        fs.WriteByte(valu_sfoods_21.Value)
+        fs.Position = Specialfoods_22
+        fs.WriteByte(valu_sfoods_22.Value)
+        fs.Position = Specialfoods_23
+        fs.WriteByte(valu_sfoods_23.Value)
+        fs.Position = Specialfoods_24
+        fs.WriteByte(valu_sfoods_24.Value)
+        fs.Position = Specialfoods_25
+        fs.WriteByte(valu_sfoods_25.Value)
+        fs.Position = Specialfoods_26
+        fs.WriteByte(valu_sfoods_26.Value)
+        fs.Position = Specialfoods_27
+        fs.WriteByte(valu_sfoods_27.Value)
+        fs.Position = Specialfoods_28
+        fs.WriteByte(valu_sfoods_28.Value)
+        fs.Position = Specialfoods_29
+        fs.WriteByte(valu_sfoods_29.Value)
+        fs.Position = Specialfoods_30
+        fs.WriteByte(valu_sfoods_30.Value)
+        fs.Position = Specialfoods_31
+        fs.WriteByte(valu_sfoods_31.Value)
+        fs.Position = Specialfoods_32
+        fs.WriteByte(valu_sfoods_32.Value)
+        fs.Position = Specialfoods_33
+        fs.WriteByte(valu_sfoods_33.Value)
+        fs.Position = Specialfoods_34
+        fs.WriteByte(valu_sfoods_34.Value)
+        fs.Position = Specialfoods_35
+        fs.WriteByte(valu_sfoods_35.Value)
+        fs.Position = Specialfoods_36
+        fs.WriteByte(valu_sfoods_36.Value)
+        fs.Position = Specialfoods_37
+        fs.WriteByte(valu_sfoods_37.Value)
+        fs.Position = Specialfoods_38
+        fs.WriteByte(valu_sfoods_38.Value)
+        fs.Position = Specialfoods_39
+        fs.WriteByte(valu_sfoods_39.Value)
+        fs.Position = Specialfoods_40
+        fs.WriteByte(valu_sfoods_40.Value)
+        fs.Position = Specialfoods_41
+        fs.WriteByte(valu_sfoods_41.Value)
+        fs.Position = Specialfoods_42
+        fs.WriteByte(valu_sfoods_42.Value)
+        fs.Position = Specialfoods_43
+        fs.WriteByte(valu_sfoods_43.Value)
+        fs.Position = Specialfoods_44
+        fs.WriteByte(valu_sfoods_44.Value)
+        fs.Position = Specialfoods_45
+        fs.WriteByte(valu_sfoods_45.Value)
+        fs.Position = Specialfoods_46
+        fs.WriteByte(valu_sfoods_46.Value)
+        fs.Position = Specialfoods_47
+        fs.WriteByte(valu_sfoods_47.Value)
+        fs.Position = Specialfoods_48
+        fs.WriteByte(valu_sfoods_48.Value)
+    End Sub
+
     Private Sub Icon_normalfoods_Click(sender As Object, e As EventArgs) Handles Icon_normalfoods.Click
         hidesub()
         Icon_normalfoods_01.Visible = True
@@ -203,14 +503,19 @@ Public Class Items_edit
         savedataArc = TL_SaveEditor.TextBox_fpath.Text
         If TL_SaveEditor.Filever_text.Text = "US" Then
             Goodsitems = &H18F0
+            Specialfoods = &H19E2
         ElseIf TL_SaveEditor.Filever_text.Text = "EU" Then
             Goodsitems = &H18F0
+            Specialfoods = &H1A14
         ElseIf TL_SaveEditor.Filever_text.Text = "JP" Then
             Goodsitems = &H18F0
+            Specialfoods = &H19B0
         ElseIf TL_SaveEditor.Filever_text.Text = "KR" Then
             Goodsitems = &H18F0
+            Specialfoods = &H1A46
         End If
         readgoodsitems()
+        readspecialfoods()
     End Sub
 
     Private Sub Text_specialfoods_Click(sender As Object, e As EventArgs) Handles Text_specialfoods.Click
@@ -1815,6 +2120,7 @@ Public Class Items_edit
     Private Sub Icon_closesave_Click(sender As Object, e As EventArgs) Handles Icon_closesave.Click
         Try
             writegoodsitems()
+            writespecialfoods()
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Editing of items has been successfully saved"
                 fdialog.ShowDialog()
@@ -1835,5 +2141,13 @@ Public Class Items_edit
                 fdialog.ShowDialog()
             End If
         End Try
+    End Sub
+
+    Private Sub Info_itemsedit_MouseMove(sender As Object, e As EventArgs) Handles Info_itemsedit.MouseMove
+        Panel_info_itemsedit.Visible = True
+    End Sub
+
+    Private Sub Info_itemsedit_MouseLeave(sender As Object, e As EventArgs) Handles Info_itemsedit.MouseLeave
+        Panel_info_itemsedit.Visible = False
     End Sub
 End Class
