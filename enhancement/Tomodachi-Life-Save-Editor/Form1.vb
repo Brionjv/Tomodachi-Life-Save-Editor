@@ -422,13 +422,13 @@ Public Class TL_SaveEditor
             Text_edit_rap.Enabled = True
             Text_edit_rockroll.Enabled = True
             Text_edit_techno.Enabled = True
-            Select_allfav_1.Visible = True
-            Select_allfav_2.Visible = True
-            Select_fav_1.Visible = True
-            Select_fav_2.Visible = True
-            Select_fav_3.Visible = True
-            Select_worst_1.Visible = True
-            Select_worst_2.Visible = True
+            Select_allfav_1.Visible = False
+            Select_allfav_2.Visible = False
+            Select_fav_1.Visible = False
+            Select_fav_2.Visible = False
+            Select_fav_3.Visible = False
+            Select_worst_1.Visible = False
+            Select_worst_2.Visible = False
         ElseIf Filever_text.Text = "" Then
             Filever_text.Text = "US"
             TLSE_logo.Image = My.Resources.logo_US
@@ -456,13 +456,13 @@ Public Class TL_SaveEditor
             Text_edit_rap.Enabled = True
             Text_edit_rockroll.Enabled = True
             Text_edit_techno.Enabled = True
-            Select_allfav_1.Visible = True
-            Select_allfav_2.Visible = True
-            Select_fav_1.Visible = True
-            Select_fav_2.Visible = True
-            Select_fav_3.Visible = True
-            Select_worst_1.Visible = True
-            Select_worst_2.Visible = True
+            Select_allfav_1.Visible = False
+            Select_allfav_2.Visible = False
+            Select_fav_1.Visible = False
+            Select_fav_2.Visible = False
+            Select_fav_3.Visible = False
+            Select_worst_1.Visible = False
+            Select_worst_2.Visible = False
         End If
         Icon_changelog.Image = TLSE_logo.Image
     End Sub
@@ -16313,8 +16313,217 @@ Public Class TL_SaveEditor
             fdialog.ShowDialog()
         End If
         If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            fdialog.Text_fdialog.Text = "Les Miis doivent pas avoir le même status (enfant ou adulte) et doivent pas avoir le même sexe, certaines intéractions nécessite des conditions"
+            fdialog.Text_fdialog.Text = "Les Miis doivent pas avoir le même status (enfant ou adulte) et doivent pas avoir le même sexe, certaines interactions nécessite des conditions"
             fdialog.ShowDialog()
         End If
+    End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Try
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            fs.Position = &H22A8
+            fs.WriteByte(0)
+            fs.Position = &H22A8 + &H660
+            fs.WriteByte(1)
+            fs.Position = &H22A8 + (&H660 * 2)
+            fs.WriteByte(2)
+            fs.Position = &H22A8 + (&H660 * 3)
+            fs.WriteByte(3)
+            fs.Position = &H22A8 + (&H660 * 4)
+            fs.WriteByte(4)
+            fs.Position = &H22A8 + (&H660 * 5)
+            fs.WriteByte(5)
+            fs.Position = &H22A8 + (&H660 * 6)
+            fs.WriteByte(6)
+            fs.Position = &H22A8 + (&H660 * 7)
+            fs.WriteByte(7)
+            fs.Position = &H22A8 + (&H660 * 8)
+            fs.WriteByte(8)
+            fs.Position = &H22A8 + (&H660 * 9)
+            fs.WriteByte(9)
+            fs.Position = &H22A8 + (&H660 * 10)
+            fs.WriteByte(10)
+            fs.Position = &H22A8 + (&H660 * 11)
+            fs.WriteByte(11)
+            fs.Position = &H22A8 + (&H660 * 12)
+            fs.WriteByte(12)
+            fs.Position = &H22A8 + (&H660 * 13)
+            fs.WriteByte(13)
+            fs.Position = &H22A8 + (&H660 * 14)
+            fs.WriteByte(14)
+            fs.Position = &H22A8 + (&H660 * 15)
+            fs.WriteByte(15)
+            fs.Position = &H22A8 + (&H660 * 16)
+            fs.WriteByte(16)
+            fs.Position = &H22A8 + (&H660 * 17)
+            fs.WriteByte(17)
+            fs.Position = &H22A8 + (&H660 * 18)
+            fs.WriteByte(18)
+            fs.Position = &H22A8 + (&H660 * 19)
+            fs.WriteByte(19)
+            fs.Position = &H22A8 + (&H660 * 20)
+            fs.WriteByte(20)
+            fs.Position = &H22A8 + (&H660 * 21)
+            fs.WriteByte(21)
+            fs.Position = &H22A8 + (&H660 * 22)
+            fs.WriteByte(22)
+            fs.Position = &H22A8 + (&H660 * 23)
+            fs.WriteByte(23)
+            fs.Position = &H22A8 + (&H660 * 24)
+            fs.WriteByte(24)
+            fs.Position = &H22A8 + (&H660 * 25)
+            fs.WriteByte(25)
+            fs.Position = &H22A8 + (&H660 * 26)
+            fs.WriteByte(26)
+            fs.Position = &H22A8 + (&H660 * 27)
+            fs.WriteByte(27)
+            fs.Position = &H22A8 + (&H660 * 28)
+            fs.WriteByte(28)
+            fs.Position = &H22A8 + (&H660 * 29)
+            fs.WriteByte(29)
+            fs.Position = &H22A8 + (&H660 * 30)
+            fs.WriteByte(30)
+            fs.Position = &H22A8 + (&H660 * 31)
+            fs.WriteByte(31)
+            fs.Position = &H22A8 + (&H660 * 32)
+            fs.WriteByte(32)
+            fs.Position = &H22A8 + (&H660 * 33)
+            fs.WriteByte(33)
+            fs.Position = &H22A8 + (&H660 * 34)
+            fs.WriteByte(34)
+            fs.Position = &H22A8 + (&H660 * 35)
+            fs.WriteByte(35)
+            fs.Position = &H22A8 + (&H660 * 36)
+            fs.WriteByte(36)
+            fs.Position = &H22A8 + (&H660 * 37)
+            fs.WriteByte(37)
+            fs.Position = &H22A8 + (&H660 * 38)
+            fs.WriteByte(38)
+            fs.Position = &H22A8 + (&H660 * 39)
+            fs.WriteByte(39)
+            fs.Position = &H22A8 + (&H660 * 40)
+            fs.WriteByte(40)
+            fs.Position = &H22A8 + (&H660 * 41)
+            fs.WriteByte(41)
+            fs.Position = &H22A8 + (&H660 * 42)
+            fs.WriteByte(42)
+            fs.Position = &H22A8 + (&H660 * 43)
+            fs.WriteByte(43)
+            fs.Position = &H22A8 + (&H660 * 44)
+            fs.WriteByte(44)
+            fs.Position = &H22A8 + (&H660 * 45)
+            fs.WriteByte(45)
+            fs.Position = &H22A8 + (&H660 * 46)
+            fs.WriteByte(46)
+            fs.Position = &H22A8 + (&H660 * 47)
+            fs.WriteByte(47)
+            fs.Position = &H22A8 + (&H660 * 48)
+            fs.WriteByte(48)
+            fs.Position = &H22A8 + (&H660 * 49)
+            fs.WriteByte(49)
+            fs.Position = &H22A8 + (&H660 * 50)
+            fs.WriteByte(50)
+            fs.Position = &H22A8 + (&H660 * 51)
+            fs.WriteByte(51)
+            fs.Position = &H22A8 + (&H660 * 52)
+            fs.WriteByte(52)
+            fs.Position = &H22A8 + (&H660 * 53)
+            fs.WriteByte(53)
+            fs.Position = &H22A8 + (&H660 * 54)
+            fs.WriteByte(54)
+            fs.Position = &H22A8 + (&H660 * 55)
+            fs.WriteByte(55)
+            fs.Position = &H22A8 + (&H660 * 56)
+            fs.WriteByte(56)
+            fs.Position = &H22A8 + (&H660 * 57)
+            fs.WriteByte(57)
+            fs.Position = &H22A8 + (&H660 * 58)
+            fs.WriteByte(58)
+            fs.Position = &H22A8 + (&H660 * 59)
+            fs.WriteByte(59)
+            fs.Position = &H22A8 + (&H660 * 60)
+            fs.WriteByte(60)
+            fs.Position = &H22A8 + (&H660 * 61)
+            fs.WriteByte(61)
+            fs.Position = &H22A8 + (&H660 * 62)
+            fs.WriteByte(62)
+            fs.Position = &H22A8 + (&H660 * 63)
+            fs.WriteByte(63)
+            fs.Position = &H22A8 + (&H660 * 64)
+            fs.WriteByte(64)
+            fs.Position = &H22A8 + (&H660 * 65)
+            fs.WriteByte(65)
+            fs.Position = &H22A8 + (&H660 * 66)
+            fs.WriteByte(66)
+            fs.Position = &H22A8 + (&H660 * 67)
+            fs.WriteByte(67)
+            fs.Position = &H22A8 + (&H660 * 68)
+            fs.WriteByte(68)
+            fs.Position = &H22A8 + (&H660 * 69)
+            fs.WriteByte(69)
+            fs.Position = &H22A8 + (&H660 * 70)
+            fs.WriteByte(70)
+            fs.Position = &H22A8 + (&H660 * 71)
+            fs.WriteByte(71)
+            fs.Position = &H22A8 + (&H660 * 72)
+            fs.WriteByte(72)
+            fs.Position = &H22A8 + (&H660 * 73)
+            fs.WriteByte(73)
+            fs.Position = &H22A8 + (&H660 * 74)
+            fs.WriteByte(74)
+            fs.Position = &H22A8 + (&H660 * 75)
+            fs.WriteByte(75)
+            fs.Position = &H22A8 + (&H660 * 76)
+            fs.WriteByte(76)
+            fs.Position = &H22A8 + (&H660 * 77)
+            fs.WriteByte(77)
+            fs.Position = &H22A8 + (&H660 * 78)
+            fs.WriteByte(78)
+            fs.Position = &H22A8 + (&H660 * 79)
+            fs.WriteByte(79)
+            fs.Position = &H22A8 + (&H660 * 80)
+            fs.WriteByte(80)
+            fs.Position = &H22A8 + (&H660 * 81)
+            fs.WriteByte(81)
+            fs.Position = &H22A8 + (&H660 * 82)
+            fs.WriteByte(82)
+            fs.Position = &H22A8 + (&H660 * 83)
+            fs.WriteByte(83)
+            fs.Position = &H22A8 + (&H660 * 84)
+            fs.WriteByte(84)
+            fs.Position = &H22A8 + (&H660 * 85)
+            fs.WriteByte(85)
+            fs.Position = &H22A8 + (&H660 * 86)
+            fs.WriteByte(86)
+            fs.Position = &H22A8 + (&H660 * 87)
+            fs.WriteByte(87)
+            fs.Position = &H22A8 + (&H660 * 88)
+            fs.WriteByte(88)
+            fs.Position = &H22A8 + (&H660 * 89)
+            fs.WriteByte(89)
+            fs.Position = &H22A8 + (&H660 * 90)
+            fs.WriteByte(90)
+            fs.Position = &H22A8 + (&H660 * 91)
+            fs.WriteByte(91)
+            fs.Position = &H22A8 + (&H660 * 92)
+            fs.WriteByte(92)
+            fs.Position = &H22A8 + (&H660 * 93)
+            fs.WriteByte(93)
+            fs.Position = &H22A8 + (&H660 * 94)
+            fs.WriteByte(94)
+            fs.Position = &H22A8 + (&H660 * 95)
+            fs.WriteByte(95)
+            fs.Position = &H22A8 + (&H660 * 96)
+            fs.WriteByte(96)
+            fs.Position = &H22A8 + (&H660 * 97)
+            fs.WriteByte(97)
+            fs.Position = &H22A8 + (&H660 * 98)
+            fs.WriteByte(98)
+            fs.Position = &H22A8 + (&H660 * 99)
+            fs.WriteByte(99)
+            MsgBox("done")
+        Catch ex As Exception
+            MsgBox("eror")
+        End Try
     End Sub
 End Class

@@ -146,6 +146,34 @@
         RK5CYII=
 </value>
   </data>
+  <data name="Panel_foods.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAB9JREFUOE9j+PdxL9loVDOJaFQziWhUM4lo5Gn+uBcAoREs/avgL1gAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="Panel_clothing.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAB9JREFUOE9j+PdxL9loVDOJaFQziWhUM4lo5Gn+uBcAoREs/avgL1gAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="Panel_hats.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAB9JREFUOE9j+PdxL9loVDOJaFQziWhUM4lo5Gn+uBcAoREs/avgL1gAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="Panel_treasures.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EgAACxIB0t1+/AAAAB9JREFUOE9j+PdxL9loVDOJaFQziWhUM4lo5Gn+uBcAoREs/avgL1gAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

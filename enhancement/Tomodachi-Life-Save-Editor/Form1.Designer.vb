@@ -54,6 +54,7 @@ Partial Class TL_SaveEditor
         Me.Menu_button = New System.Windows.Forms.Panel()
         Me.Text_menu_button = New System.Windows.Forms.Label()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.value_eventfountain = New System.Windows.Forms.NumericUpDown()
         Me.Icon_eventfountain = New System.Windows.Forms.PictureBox()
         Me.Title_eventfountain = New System.Windows.Forms.Label()
@@ -598,6 +599,7 @@ Partial Class TL_SaveEditor
         CType(Me.Menu_width, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_button.SuspendLayout()
         Me.Panel_islandedit.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.value_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_info_building, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1284,6 +1286,7 @@ Partial Class TL_SaveEditor
         'Panel_islandedit
         '
         Me.Panel_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox3)
         Me.Panel_islandedit.Controls.Add(Me.value_eventfountain)
         Me.Panel_islandedit.Controls.Add(Me.Icon_eventfountain)
         Me.Panel_islandedit.Controls.Add(Me.Title_eventfountain)
@@ -1322,6 +1325,15 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Name = "Panel_islandedit"
         Me.Panel_islandedit.Size = New System.Drawing.Size(600, 490)
         Me.Panel_islandedit.TabIndex = 11
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Location = New System.Drawing.Point(210, 281)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(32, 33)
+        Me.PictureBox3.TabIndex = 65
+        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
         '
         'value_eventfountain
         '
@@ -7190,6 +7202,7 @@ Partial Class TL_SaveEditor
         Me.Menu_button.ResumeLayout(False)
         Me.Panel_islandedit.ResumeLayout(False)
         Me.Panel_islandedit.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.value_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_info_building, System.ComponentModel.ISupportInitialize).EndInit()
@@ -8115,5 +8128,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents Panel_done As System.Windows.Forms.Panel
     Friend WithEvents Text_done As System.Windows.Forms.Label
     Friend WithEvents Timer_done As System.Windows.Forms.Timer
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
 
 End Class

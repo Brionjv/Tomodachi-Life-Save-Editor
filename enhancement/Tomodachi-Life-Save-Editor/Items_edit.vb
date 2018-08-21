@@ -71,6 +71,111 @@ Public Class Items_edit
     Dim Specialfoods_46 As String
     Dim Specialfoods_47 As String
     Dim Specialfoods_48 As String
+    Dim Interiors As String
+    Dim Interiors_1 As String
+    Dim Interiors_2 As String
+    Dim Interiors_3 As String
+    Dim Interiors_4 As String
+    Dim Interiors_5 As String
+    Dim Interiors_6 As String
+    Dim Interiors_7 As String
+    Dim Interiors_8 As String
+    Dim Interiors_9 As String
+    Dim Interiors_10 As String
+    Dim Interiors_11 As String
+    Dim Interiors_12 As String
+    Dim Interiors_13 As String
+    Dim Interiors_14 As String
+    Dim Interiors_15 As String
+    Dim Interiors_16 As String
+    Dim Interiors_17 As String
+    Dim Interiors_18 As String
+    Dim Interiors_19 As String
+    Dim Interiors_20 As String
+    Dim Interiors_21 As String
+    Dim Interiors_22 As String
+    Dim Interiors_23 As String
+    Dim Interiors_24 As String
+    Dim Interiors_25 As String
+    Dim Interiors_26 As String
+    Dim Interiors_27 As String
+    Dim Interiors_28 As String
+    Dim Interiors_29 As String
+    Dim Interiors_30 As String
+    Dim Interiors_31 As String
+    Dim Interiors_32 As String
+    Dim Interiors_33 As String
+    Dim Interiors_34 As String
+    Dim Interiors_35 As String
+    Dim Interiors_36 As String
+    Dim Interiors_37 As String
+    Dim Interiors_38 As String
+    Dim Interiors_39 As String
+    Dim Interiors_40 As String
+    Dim Interiors_41 As String
+    Dim Interiors_42 As String
+    Dim Interiors_43 As String
+    Dim Interiors_44 As String
+    Dim Interiors_45 As String
+    Dim Interiors_46 As String
+    Dim Interiors_47 As String
+    Dim Interiors_48 As String
+    Dim Interiors_49 As String
+    Dim Interiors_50 As String
+    Dim Interiors_51 As String
+    Dim Interiors_52 As String
+    Dim Interiors_53 As String
+    Dim Interiors_54 As String
+    Dim Interiors_55 As String
+    Dim Interiors_56 As String
+    Dim Interiors_57 As String
+    Dim Interiors_58 As String
+    Dim Interiors_59 As String
+    Dim Interiors_60 As String
+    Dim Interiors_61 As String
+    Dim Interiors_62 As String
+    Dim Interiors_63 As String
+    Dim Interiors_64 As String
+    Dim Interiors_65 As String
+    Dim Interiors_66 As String
+    Dim Interiors_67 As String
+    Dim Interiors_68 As String
+    Dim Interiors_69 As String
+    Dim Interiors_70 As String
+    Dim Interiors_71 As String
+    Dim Interiors_72 As String
+    Dim Interiors_73 As String
+    Dim Interiors_74 As String
+    Dim Interiors_75 As String
+    Dim Interiors_76 As String
+    Dim Interiors_77 As String
+    Dim Interiors_78 As String
+    Dim Interiors_79 As String
+    Dim Interiors_80 As String
+    Dim Interiors_81 As String
+    Dim Interiors_82 As String
+    Dim Interiors_83 As String
+    Dim Interiors_84 As String
+    Dim Interiors_85 As String
+    Dim Interiors_86 As String
+    Dim Interiors_87 As String
+    Dim Interiors_88 As String
+    Dim Interiors_89 As String
+    Dim Interiors_90 As String
+    Dim Interiors_91 As String
+    Dim Interiors_92 As String
+    Dim Interiors_93 As String
+    Dim Interiors_94 As String
+    Dim Interiors_95 As String
+    Dim Interiors_96 As String
+    Dim Interiors_97 As String
+    Dim Interiors_98 As String
+    Dim Interiors_99 As String
+    Dim Interiors_100 As String
+    Dim Interiors_101 As String
+    Dim Interiors_102 As String
+    Dim Interiors_103 As String
+    Dim Interiors_104 As String
 
     Public Sub hidesub()
         Icon_clothes_01.Visible = False
@@ -94,6 +199,10 @@ Public Class Items_edit
         Panel_gooditems.Visible = False
         Panel_interiors.Visible = False
         Panel_interiors_1.Visible = False
+        Panel_clothing.Visible = False
+        Panel_foods.Visible = False
+        Panel_hats.Visible = False
+        Panel_treasures.Visible = False
     End Sub
 
     Public Sub readgoodsitems()
@@ -150,9 +259,11 @@ Public Class Items_edit
             Reader.Position = Goodsitems + 16
             Goodsitems_17 = Reader.Position
             valu_goodi_17.Value = Reader.ReadByte
-            Reader.Position = Goodsitems + 17
-            Goodsitems_18 = Reader.Position
-            valu_goodi_18.Value = Reader.ReadByte
+            If TL_SaveEditor.Filever_text.Text = "EU" Or TL_SaveEditor.Filever_text.Text = "US" Then
+                Reader.Position = Goodsitems + 17
+                Goodsitems_18 = Reader.Position
+                valu_goodi_18.Value = Reader.ReadByte
+            End If
         Catch ex As Exception
         End Try
     End Sub
@@ -193,8 +304,10 @@ Public Class Items_edit
         fs.WriteByte(valu_goodi_16.Value)
         fs.Position = Goodsitems_17
         fs.WriteByte(valu_goodi_17.Value)
-        fs.Position = Goodsitems_18
-        fs.WriteByte(valu_goodi_18.Value)
+        If TL_SaveEditor.Filever_text.Text = "EU" Or TL_SaveEditor.Filever_text.Text = "US" Then
+            fs.Position = Goodsitems_18
+            fs.WriteByte(valu_goodi_18.Value)
+        End If
     End Sub
 
     Public Sub readspecialfoods()
@@ -448,28 +561,579 @@ Public Class Items_edit
         fs.WriteByte(valu_sfoods_48.Value)
     End Sub
 
+    Public Sub readinteriors()
+        Try
+            Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+            Reader.Position = Interiors
+            Interiors_1 = Reader.Position
+            valu_interiors_1.Value = Reader.ReadByte
+            Reader.Position = Interiors + 1
+            Interiors_2 = Reader.Position
+            valu_interiors_2.Value = Reader.ReadByte
+            Reader.Position = Interiors + 2
+            Interiors_3 = Reader.Position
+            valu_interiors_3.Value = Reader.ReadByte
+            Reader.Position = Interiors + 3
+            Interiors_4 = Reader.Position
+            valu_interiors_4.Value = Reader.ReadByte
+            Reader.Position = Interiors + 4
+            Interiors_5 = Reader.Position
+            valu_interiors_5.Value = Reader.ReadByte
+            Reader.Position = Interiors + 5
+            Interiors_6 = Reader.Position
+            valu_interiors_6.Value = Reader.ReadByte
+            Reader.Position = Interiors + 6
+            Interiors_7 = Reader.Position
+            valu_interiors_7.Value = Reader.ReadByte
+            Reader.Position = Interiors + 7
+            Interiors_8 = Reader.Position
+            valu_interiors_8.Value = Reader.ReadByte
+            Reader.Position = Interiors + 8
+            Interiors_9 = Reader.Position
+            valu_interiors_9.Value = Reader.ReadByte
+            Reader.Position = Interiors + 9
+            Interiors_10 = Reader.Position
+            valu_interiors_10.Value = Reader.ReadByte
+            Reader.Position = Interiors + 10
+            Interiors_11 = Reader.Position
+            valu_interiors_11.Value = Reader.ReadByte
+            Reader.Position = Interiors + 11
+            Interiors_12 = Reader.Position
+            valu_interiors_12.Value = Reader.ReadByte
+            Reader.Position = Interiors + 12
+            Interiors_13 = Reader.Position
+            valu_interiors_13.Value = Reader.ReadByte
+            Reader.Position = Interiors + 13
+            Interiors_14 = Reader.Position
+            valu_interiors_14.Value = Reader.ReadByte
+            Reader.Position = Interiors + 14
+            Interiors_15 = Reader.Position
+            valu_interiors_15.Value = Reader.ReadByte
+            Reader.Position = Interiors + 15
+            Interiors_16 = Reader.Position
+            valu_interiors_16.Value = Reader.ReadByte
+            Reader.Position = Interiors + 16
+            Interiors_17 = Reader.Position
+            valu_interiors_17.Value = Reader.ReadByte
+            Reader.Position = Interiors + 17
+            Interiors_18 = Reader.Position
+            valu_interiors_18.Value = Reader.ReadByte
+            Reader.Position = Interiors + 18
+            Interiors_19 = Reader.Position
+            valu_interiors_19.Value = Reader.ReadByte
+            Reader.Position = Interiors + 19
+            Interiors_20 = Reader.Position
+            valu_interiors_20.Value = Reader.ReadByte
+            Reader.Position = Interiors + 20
+            Interiors_21 = Reader.Position
+            valu_interiors_21.Value = Reader.ReadByte
+            Reader.Position = Interiors + 21
+            Interiors_22 = Reader.Position
+            valu_interiors_22.Value = Reader.ReadByte
+            Reader.Position = Interiors + 22
+            Interiors_23 = Reader.Position
+            valu_interiors_23.Value = Reader.ReadByte
+            Reader.Position = Interiors + 23
+            Interiors_24 = Reader.Position
+            valu_interiors_24.Value = Reader.ReadByte
+            Reader.Position = Interiors + 24
+            Interiors_25 = Reader.Position
+            valu_interiors_25.Value = Reader.ReadByte
+            Reader.Position = Interiors + 25
+            Interiors_26 = Reader.Position
+            valu_interiors_26.Value = Reader.ReadByte
+            Reader.Position = Interiors + 26
+            Interiors_27 = Reader.Position
+            valu_interiors_27.Value = Reader.ReadByte
+            Reader.Position = Interiors + 27
+            Interiors_28 = Reader.Position
+            valu_interiors_28.Value = Reader.ReadByte
+            Reader.Position = Interiors + 28
+            Interiors_29 = Reader.Position
+            valu_interiors_29.Value = Reader.ReadByte
+            Reader.Position = Interiors + 29
+            Interiors_30 = Reader.Position
+            valu_interiors_30.Value = Reader.ReadByte
+            Reader.Position = Interiors + 30
+            Interiors_31 = Reader.Position
+            valu_interiors_31.Value = Reader.ReadByte
+            Reader.Position = Interiors + 31
+            Interiors_32 = Reader.Position
+            valu_interiors_32.Value = Reader.ReadByte
+            Reader.Position = Interiors + 32
+            Interiors_33 = Reader.Position
+            valu_interiors_33.Value = Reader.ReadByte
+            Reader.Position = Interiors + 33
+            Interiors_34 = Reader.Position
+            valu_interiors_34.Value = Reader.ReadByte
+            Reader.Position = Interiors + 34
+            Interiors_35 = Reader.Position
+            valu_interiors_35.Value = Reader.ReadByte
+            Reader.Position = Interiors + 35
+            Interiors_36 = Reader.Position
+            valu_interiors_36.Value = Reader.ReadByte
+            Reader.Position = Interiors + 36
+            Interiors_37 = Reader.Position
+            valu_interiors_37.Value = Reader.ReadByte
+            Reader.Position = Interiors + 37
+            Interiors_38 = Reader.Position
+            valu_interiors_38.Value = Reader.ReadByte
+            Reader.Position = Interiors + 38
+            Interiors_39 = Reader.Position
+            valu_interiors_39.Value = Reader.ReadByte
+            Reader.Position = Interiors + 39
+            Interiors_40 = Reader.Position
+            valu_interiors_40.Value = Reader.ReadByte
+            Reader.Position = Interiors + 40
+            Interiors_41 = Reader.Position
+            valu_interiors_41.Value = Reader.ReadByte
+            Reader.Position = Interiors + 41
+            Interiors_42 = Reader.Position
+            valu_interiors_42.Value = Reader.ReadByte
+            Reader.Position = Interiors + 42
+            Interiors_43 = Reader.Position
+            valu_interiors_43.Value = Reader.ReadByte
+            Reader.Position = Interiors + 43
+            Interiors_44 = Reader.Position
+            valu_interiors_44.Value = Reader.ReadByte
+            Reader.Position = Interiors + 44
+            Interiors_45 = Reader.Position
+            valu_interiors_45.Value = Reader.ReadByte
+            Reader.Position = Interiors + 45
+            Interiors_46 = Reader.Position
+            valu_interiors_46.Value = Reader.ReadByte
+            Reader.Position = Interiors + 46
+            Interiors_47 = Reader.Position
+            valu_interiors_47.Value = Reader.ReadByte
+            Reader.Position = Interiors + 47
+            Interiors_48 = Reader.Position
+            valu_interiors_48.Value = Reader.ReadByte
+            Reader.Position = Interiors + 48
+            Interiors_49 = Reader.Position
+            valu_interiors_49.Value = Reader.ReadByte
+            Reader.Position = Interiors + 49
+            Interiors_50 = Reader.Position
+            valu_interiors_50.Value = Reader.ReadByte
+            Reader.Position = Interiors + 50
+            Interiors_51 = Reader.Position
+            valu_interiors_51.Value = Reader.ReadByte
+            Reader.Position = Interiors + 51
+            Interiors_52 = Reader.Position
+            valu_interiors_52.Value = Reader.ReadByte
+            Reader.Position = Interiors + 52
+            Interiors_53 = Reader.Position
+            valu_interiors_53.Value = Reader.ReadByte
+            Reader.Position = Interiors + 53
+            Interiors_54 = Reader.Position
+            valu_interiors_54.Value = Reader.ReadByte
+            Reader.Position = Interiors + 54
+            Interiors_55 = Reader.Position
+            valu_interiors_55.Value = Reader.ReadByte
+            Reader.Position = Interiors + 55
+            Interiors_56 = Reader.Position
+            valu_interiors_56.Value = Reader.ReadByte
+            Reader.Position = Interiors + 56
+            Interiors_57 = Reader.Position
+            valu_interiors_57.Value = Reader.ReadByte
+            Reader.Position = Interiors + 57
+            Interiors_58 = Reader.Position
+            valu_interiors_58.Value = Reader.ReadByte
+            Reader.Position = Interiors + 58
+            Interiors_59 = Reader.Position
+            valu_interiors_59.Value = Reader.ReadByte
+            Reader.Position = Interiors + 59
+            Interiors_60 = Reader.Position
+            valu_interiors_60.Value = Reader.ReadByte
+            Reader.Position = Interiors + 60
+            Interiors_61 = Reader.Position
+            valu_interiors_61.Value = Reader.ReadByte
+            Reader.Position = Interiors + 61
+            Interiors_62 = Reader.Position
+            valu_interiors_62.Value = Reader.ReadByte
+            Reader.Position = Interiors + 62
+            Interiors_63 = Reader.Position
+            valu_interiors_63.Value = Reader.ReadByte
+            Reader.Position = Interiors + 63
+            Interiors_64 = Reader.Position
+            valu_interiors_64.Value = Reader.ReadByte
+            Reader.Position = Interiors + 64
+            Interiors_65 = Reader.Position
+            valu_interiors_65.Value = Reader.ReadByte
+            Reader.Position = Interiors + 65
+            Interiors_66 = Reader.Position
+            valu_interiors_66.Value = Reader.ReadByte
+            Reader.Position = Interiors + 66
+            Interiors_67 = Reader.Position
+            valu_interiors_67.Value = Reader.ReadByte
+            Reader.Position = Interiors + 67
+            Interiors_68 = Reader.Position
+            valu_interiors_68.Value = Reader.ReadByte
+            Reader.Position = Interiors + 68
+            Interiors_69 = Reader.Position
+            valu_interiors_69.Value = Reader.ReadByte
+            Reader.Position = Interiors + 69
+            Interiors_70 = Reader.Position
+            valu_interiors_70.Value = Reader.ReadByte
+            Reader.Position = Interiors + 70
+            Interiors_71 = Reader.Position
+            valu_interiors_71.Value = Reader.ReadByte
+            Reader.Position = Interiors + 71
+            Interiors_72 = Reader.Position
+            valu_interiors_72.Value = Reader.ReadByte
+            Reader.Position = Interiors + 72
+            Interiors_73 = Reader.Position
+            valu_interiors_73.Value = Reader.ReadByte
+            Reader.Position = Interiors + 73
+            Interiors_74 = Reader.Position
+            valu_interiors_74.Value = Reader.ReadByte
+            Reader.Position = Interiors + 74
+            Interiors_75 = Reader.Position
+            valu_interiors_75.Value = Reader.ReadByte
+            Reader.Position = Interiors + 75
+            Interiors_76 = Reader.Position
+            valu_interiors_76.Value = Reader.ReadByte
+            Reader.Position = Interiors + 76
+            Interiors_77 = Reader.Position
+            valu_interiors_77.Value = Reader.ReadByte
+            Reader.Position = Interiors + 77
+            Interiors_78 = Reader.Position
+            valu_interiors_78.Value = Reader.ReadByte
+            Reader.Position = Interiors + 78
+            Interiors_79 = Reader.Position
+            valu_interiors_79.Value = Reader.ReadByte
+            Reader.Position = Interiors + 79
+            Interiors_80 = Reader.Position
+            valu_interiors_80.Value = Reader.ReadByte
+            Reader.Position = Interiors + 80
+            Interiors_81 = Reader.Position
+            valu_interiors_81.Value = Reader.ReadByte
+            Reader.Position = Interiors + 81
+            Interiors_82 = Reader.Position
+            valu_interiors_82.Value = Reader.ReadByte
+            Reader.Position = Interiors + 82
+            Interiors_83 = Reader.Position
+            valu_interiors_83.Value = Reader.ReadByte
+            Reader.Position = Interiors + 83
+            Interiors_84 = Reader.Position
+            valu_interiors_84.Value = Reader.ReadByte
+            Reader.Position = Interiors + 84
+            Interiors_85 = Reader.Position
+            valu_interiors_85.Value = Reader.ReadByte
+            Reader.Position = Interiors + 85
+            Interiors_86 = Reader.Position
+            valu_interiors_86.Value = Reader.ReadByte
+            Reader.Position = Interiors + 86
+            Interiors_87 = Reader.Position
+            valu_interiors_87.Value = Reader.ReadByte
+            Reader.Position = Interiors + 87
+            Interiors_88 = Reader.Position
+            valu_interiors_88.Value = Reader.ReadByte
+            Reader.Position = Interiors + 88
+            Interiors_89 = Reader.Position
+            valu_interiors_89.Value = Reader.ReadByte
+            Reader.Position = Interiors + 89
+            Interiors_90 = Reader.Position
+            valu_interiors_90.Value = Reader.ReadByte
+            Reader.Position = Interiors + 90
+            Interiors_91 = Reader.Position
+            valu_interiors_91.Value = Reader.ReadByte
+            Reader.Position = Interiors + 91
+            Interiors_92 = Reader.Position
+            valu_interiors_92.Value = Reader.ReadByte
+            Reader.Position = Interiors + 92
+            Interiors_93 = Reader.Position
+            valu_interiors_93.Value = Reader.ReadByte
+            Reader.Position = Interiors + 93
+            Interiors_94 = Reader.Position
+            valu_interiors_94.Value = Reader.ReadByte
+            Reader.Position = Interiors + 94
+            Interiors_95 = Reader.Position
+            valu_interiors_95.Value = Reader.ReadByte
+            Reader.Position = Interiors + 95
+            Interiors_96 = Reader.Position
+            valu_interiors_96.Value = Reader.ReadByte
+            Reader.Position = Interiors + 96
+            Interiors_97 = Reader.Position
+            valu_interiors_97.Value = Reader.ReadByte
+            Reader.Position = Interiors + 97
+            Interiors_98 = Reader.Position
+            valu_interiors_98.Value = Reader.ReadByte
+            Reader.Position = Interiors + 98
+            Interiors_99 = Reader.Position
+            valu_interiors_99.Value = Reader.ReadByte
+            Reader.Position = Interiors + 99
+            Interiors_100 = Reader.Position
+            valu_interiors_100.Value = Reader.ReadByte
+            If TL_SaveEditor.Filever_text.Text = "KR" Or TL_SaveEditor.Filever_text.Text = "EU" Or TL_SaveEditor.Filever_text.Text = "US" Then
+                Reader.Position = Interiors + 100
+                Interiors_101 = Reader.Position
+                valu_interiors_101.Value = Reader.ReadByte
+            End If
+            If TL_SaveEditor.Filever_text.Text = "KR" Or TL_SaveEditor.Filever_text.Text = "EU" Or TL_SaveEditor.Filever_text.Text = "US" Then
+                Reader.Position = Interiors + 101
+                Interiors_102 = Reader.Position
+                valu_interiors_102.Value = Reader.ReadByte
+            End If
+            If TL_SaveEditor.Filever_text.Text = "KR" Or TL_SaveEditor.Filever_text.Text = "EU" Then
+                Reader.Position = Interiors + 102
+                Interiors_103 = Reader.Position
+                valu_interiors_103.Value = Reader.ReadByte
+            End If
+            If TL_SaveEditor.Filever_text.Text = "KR" Then
+                Reader.Position = Interiors + 103
+                Interiors_104 = Reader.Position
+                valu_interiors_104.Value = Reader.ReadByte
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Public Sub writeinteriors()
+        Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+        fs.Position = Interiors_1
+        fs.WriteByte(valu_interiors_1.Value)
+        fs.Position = Interiors_2
+        fs.WriteByte(valu_interiors_2.Value)
+        fs.Position = Interiors_3
+        fs.WriteByte(valu_interiors_3.Value)
+        fs.Position = Interiors_4
+        fs.WriteByte(valu_interiors_4.Value)
+        fs.Position = Interiors_5
+        fs.WriteByte(valu_interiors_5.Value)
+        fs.Position = Interiors_6
+        fs.WriteByte(valu_interiors_6.Value)
+        fs.Position = Interiors_7
+        fs.WriteByte(valu_interiors_7.Value)
+        fs.Position = Interiors_8
+        fs.WriteByte(valu_interiors_8.Value)
+        fs.Position = Interiors_9
+        fs.WriteByte(valu_interiors_9.Value)
+        fs.Position = Interiors_10
+        fs.WriteByte(valu_interiors_10.Value)
+        fs.Position = Interiors_11
+        fs.WriteByte(valu_interiors_11.Value)
+        fs.Position = Interiors_12
+        fs.WriteByte(valu_interiors_12.Value)
+        fs.Position = Interiors_13
+        fs.WriteByte(valu_interiors_13.Value)
+        fs.Position = Interiors_14
+        fs.WriteByte(valu_interiors_14.Value)
+        fs.Position = Interiors_15
+        fs.WriteByte(valu_interiors_15.Value)
+        fs.Position = Interiors_16
+        fs.WriteByte(valu_interiors_16.Value)
+        fs.Position = Interiors_17
+        fs.WriteByte(valu_interiors_17.Value)
+        fs.Position = Interiors_18
+        fs.WriteByte(valu_interiors_18.Value)
+        fs.Position = Interiors_19
+        fs.WriteByte(valu_interiors_19.Value)
+        fs.Position = Interiors_20
+        fs.WriteByte(valu_interiors_20.Value)
+        fs.Position = Interiors_21
+        fs.WriteByte(valu_interiors_21.Value)
+        fs.Position = Interiors_22
+        fs.WriteByte(valu_interiors_22.Value)
+        fs.Position = Interiors_23
+        fs.WriteByte(valu_interiors_23.Value)
+        fs.Position = Interiors_24
+        fs.WriteByte(valu_interiors_24.Value)
+        fs.Position = Interiors_25
+        fs.WriteByte(valu_interiors_25.Value)
+        fs.Position = Interiors_26
+        fs.WriteByte(valu_interiors_26.Value)
+        fs.Position = Interiors_27
+        fs.WriteByte(valu_interiors_27.Value)
+        fs.Position = Interiors_28
+        fs.WriteByte(valu_interiors_28.Value)
+        fs.Position = Interiors_29
+        fs.WriteByte(valu_interiors_29.Value)
+        fs.Position = Interiors_30
+        fs.WriteByte(valu_interiors_30.Value)
+        fs.Position = Interiors_31
+        fs.WriteByte(valu_interiors_31.Value)
+        fs.Position = Interiors_32
+        fs.WriteByte(valu_interiors_32.Value)
+        fs.Position = Interiors_33
+        fs.WriteByte(valu_interiors_33.Value)
+        fs.Position = Interiors_34
+        fs.WriteByte(valu_interiors_34.Value)
+        fs.Position = Interiors_35
+        fs.WriteByte(valu_interiors_35.Value)
+        fs.Position = Interiors_36
+        fs.WriteByte(valu_interiors_36.Value)
+        fs.Position = Interiors_37
+        fs.WriteByte(valu_interiors_37.Value)
+        fs.Position = Interiors_38
+        fs.WriteByte(valu_interiors_38.Value)
+        fs.Position = Interiors_39
+        fs.WriteByte(valu_interiors_39.Value)
+        fs.Position = Interiors_40
+        fs.WriteByte(valu_interiors_40.Value)
+        fs.Position = Interiors_41
+        fs.WriteByte(valu_interiors_41.Value)
+        fs.Position = Interiors_42
+        fs.WriteByte(valu_interiors_42.Value)
+        fs.Position = Interiors_43
+        fs.WriteByte(valu_interiors_43.Value)
+        fs.Position = Interiors_44
+        fs.WriteByte(valu_interiors_44.Value)
+        fs.Position = Interiors_45
+        fs.WriteByte(valu_interiors_45.Value)
+        fs.Position = Interiors_46
+        fs.WriteByte(valu_interiors_46.Value)
+        fs.Position = Interiors_47
+        fs.WriteByte(valu_interiors_47.Value)
+        fs.Position = Interiors_48
+        fs.WriteByte(valu_interiors_48.Value)
+        fs.Position = Interiors_49
+        fs.WriteByte(valu_interiors_49.Value)
+        fs.Position = Interiors_50
+        fs.WriteByte(valu_interiors_50.Value)
+        fs.Position = Interiors_51
+        fs.WriteByte(valu_interiors_51.Value)
+        fs.Position = Interiors_52
+        fs.WriteByte(valu_interiors_52.Value)
+        fs.Position = Interiors_53
+        fs.WriteByte(valu_interiors_53.Value)
+        fs.Position = Interiors_54
+        fs.WriteByte(valu_interiors_54.Value)
+        fs.Position = Interiors_55
+        fs.WriteByte(valu_interiors_55.Value)
+        fs.Position = Interiors_56
+        fs.WriteByte(valu_interiors_56.Value)
+        fs.Position = Interiors_57
+        fs.WriteByte(valu_interiors_57.Value)
+        fs.Position = Interiors_58
+        fs.WriteByte(valu_interiors_58.Value)
+        fs.Position = Interiors_59
+        fs.WriteByte(valu_interiors_59.Value)
+        fs.Position = Interiors_60
+        fs.WriteByte(valu_interiors_60.Value)
+        fs.Position = Interiors_61
+        fs.WriteByte(valu_interiors_61.Value)
+        fs.Position = Interiors_62
+        fs.WriteByte(valu_interiors_62.Value)
+        fs.Position = Interiors_63
+        fs.WriteByte(valu_interiors_63.Value)
+        fs.Position = Interiors_64
+        fs.WriteByte(valu_interiors_64.Value)
+        fs.Position = Interiors_65
+        fs.WriteByte(valu_interiors_65.Value)
+        fs.Position = Interiors_66
+        fs.WriteByte(valu_interiors_66.Value)
+        fs.Position = Interiors_67
+        fs.WriteByte(valu_interiors_67.Value)
+        fs.Position = Interiors_68
+        fs.WriteByte(valu_interiors_68.Value)
+        fs.Position = Interiors_69
+        fs.WriteByte(valu_interiors_69.Value)
+        fs.Position = Interiors_70
+        fs.WriteByte(valu_interiors_70.Value)
+        fs.Position = Interiors_71
+        fs.WriteByte(valu_interiors_71.Value)
+        fs.Position = Interiors_72
+        fs.WriteByte(valu_interiors_72.Value)
+        fs.Position = Interiors_73
+        fs.WriteByte(valu_interiors_73.Value)
+        fs.Position = Interiors_74
+        fs.WriteByte(valu_interiors_74.Value)
+        fs.Position = Interiors_75
+        fs.WriteByte(valu_interiors_75.Value)
+        fs.Position = Interiors_76
+        fs.WriteByte(valu_interiors_76.Value)
+        fs.Position = Interiors_77
+        fs.WriteByte(valu_interiors_77.Value)
+        fs.Position = Interiors_78
+        fs.WriteByte(valu_interiors_78.Value)
+        fs.Position = Interiors_79
+        fs.WriteByte(valu_interiors_79.Value)
+        fs.Position = Interiors_80
+        fs.WriteByte(valu_interiors_80.Value)
+        fs.Position = Interiors_81
+        fs.WriteByte(valu_interiors_81.Value)
+        fs.Position = Interiors_82
+        fs.WriteByte(valu_interiors_82.Value)
+        fs.Position = Interiors_83
+        fs.WriteByte(valu_interiors_83.Value)
+        fs.Position = Interiors_84
+        fs.WriteByte(valu_interiors_84.Value)
+        fs.Position = Interiors_85
+        fs.WriteByte(valu_interiors_85.Value)
+        fs.Position = Interiors_86
+        fs.WriteByte(valu_interiors_86.Value)
+        fs.Position = Interiors_87
+        fs.WriteByte(valu_interiors_87.Value)
+        fs.Position = Interiors_88
+        fs.WriteByte(valu_interiors_88.Value)
+        fs.Position = Interiors_89
+        fs.WriteByte(valu_interiors_89.Value)
+        fs.Position = Interiors_90
+        fs.WriteByte(valu_interiors_90.Value)
+        fs.Position = Interiors_91
+        fs.WriteByte(valu_interiors_91.Value)
+        fs.Position = Interiors_92
+        fs.WriteByte(valu_interiors_92.Value)
+        fs.Position = Interiors_93
+        fs.WriteByte(valu_interiors_93.Value)
+        fs.Position = Interiors_94
+        fs.WriteByte(valu_interiors_94.Value)
+        fs.Position = Interiors_95
+        fs.WriteByte(valu_interiors_95.Value)
+        fs.Position = Interiors_96
+        fs.WriteByte(valu_interiors_96.Value)
+        fs.Position = Interiors_97
+        fs.WriteByte(valu_interiors_97.Value)
+        fs.Position = Interiors_98
+        fs.WriteByte(valu_interiors_98.Value)
+        fs.Position = Interiors_99
+        fs.WriteByte(valu_interiors_99.Value)
+        If TL_SaveEditor.Filever_text.Text = "KR" Or TL_SaveEditor.Filever_text.Text = "EU" Or TL_SaveEditor.Filever_text.Text = "US" Then
+            fs.Position = Interiors_100
+            fs.WriteByte(valu_interiors_100.Value)
+        End If
+        If TL_SaveEditor.Filever_text.Text = "KR" Or TL_SaveEditor.Filever_text.Text = "EU" Or TL_SaveEditor.Filever_text.Text = "US" Then
+            fs.Position = Interiors_101
+            fs.WriteByte(valu_interiors_101.Value)
+        End If
+        If TL_SaveEditor.Filever_text.Text = "KR" Or TL_SaveEditor.Filever_text.Text = "EU" Then
+            fs.Position = Interiors_102
+            fs.WriteByte(valu_interiors_102.Value)
+        End If
+        If TL_SaveEditor.Filever_text.Text = "KR" Then
+            fs.Position = Interiors_103
+            fs.WriteByte(valu_interiors_103.Value)
+        End If
+    End Sub
+
     Private Sub Icon_normalfoods_Click(sender As Object, e As EventArgs) Handles Icon_normalfoods.Click
         hidesub()
+        hidepanels()
         Icon_normalfoods_01.Visible = True
         Icon_normalfoods_02.Visible = True
         Icon_normalfoods_03.Visible = True
         Icon_normalfoods_04.Visible = True
+        Panel_foods.Visible = True
     End Sub
 
     Private Sub Icon_clothes_Click(sender As Object, e As EventArgs) Handles Icon_clothes.Click
         hidesub()
+        hidepanels()
         Icon_clothes_01.Visible = True
         Icon_clothes_02.Visible = True
         Icon_clothes_03.Visible = True
         Icon_clothes_04.Visible = True
         Icon_clothes_05.Visible = True
+        Panel_clothing.Visible = True
     End Sub
 
     Private Sub Icon_hats_Click(sender As Object, e As EventArgs) Handles Icon_hats.Click
         hidesub()
+        hidepanels()
         Icon_hats_01.Visible = True
         Icon_hats_02.Visible = True
         Icon_hats_03.Visible = True
+        Panel_hats.Visible = True
     End Sub
 
     Private Sub Icon_interiors_Click(sender As Object, e As EventArgs) Handles Icon_interiors.Click
@@ -501,26 +1165,123 @@ Public Class Items_edit
 
     Private Sub Items_edit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         savedataArc = TL_SaveEditor.TextBox_fpath.Text
+        If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+            Info_text_available.Text = "Check to set as available"
+            Info_text_notavailable.Text = "Check to set as not available"
+        ElseIf TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+            Info_text_available.Text = "Cochez pour rendre disponible"
+            Info_text_notavailable.Text = "Cochez pour rendre indisponible"
+        End If
         If TL_SaveEditor.Filever_text.Text = "US" Then
             Goodsitems = &H18F0
             Specialfoods = &H19E2
+            Interiors = &H1778
+            Icon_interiors_101.Visible = True
+            Icon_interiors_102.Visible = True
+            Icon_interiors_103.Visible = False
+            Icon_interiors_104.Visible = False
+            Icon_goodi_18.Visible = True
+            valu_interiors_101.Visible = True
+            valu_interiors_102.Visible = True
+            valu_interiors_103.Visible = False
+            valu_interiors_104.Visible = False
+            valu_goodi_18.Visible = True
+            Check_available_interiors_101.Visible = True
+            Check_available_interiors_102.Visible = True
+            Check_available_interiors_103.Visible = False
+            Check_available_interiors_104.Visible = False
+            Check_available_goodi_18.Visible = True
+            Check_NA_interiors_101.Visible = True
+            Check_NA_interiors_102.Visible = True
+            Check_NA_interiors_103.Visible = False
+            Check_NA_interiors_104.Visible = False
+            Check_NA_goodi_18.Visible = True
         ElseIf TL_SaveEditor.Filever_text.Text = "EU" Then
             Goodsitems = &H18F0
             Specialfoods = &H1A14
+            Interiors = &H1778
+            Icon_interiors_101.Visible = True
+            Icon_interiors_102.Visible = True
+            Icon_interiors_103.Visible = True
+            Icon_interiors_104.Visible = False
+            Icon_goodi_18.Visible = True
+            valu_interiors_101.Visible = True
+            valu_interiors_102.Visible = True
+            valu_interiors_103.Visible = True
+            valu_interiors_104.Visible = False
+            valu_goodi_18.Visible = True
+            Check_available_interiors_101.Visible = True
+            Check_available_interiors_102.Visible = True
+            Check_available_interiors_103.Visible = True
+            Check_available_interiors_104.Visible = False
+            Check_available_goodi_18.Visible = True
+            Check_NA_interiors_101.Visible = True
+            Check_NA_interiors_102.Visible = True
+            Check_NA_interiors_103.Visible = True
+            Check_NA_interiors_104.Visible = False
+            Check_NA_goodi_18.Visible = True
         ElseIf TL_SaveEditor.Filever_text.Text = "JP" Then
             Goodsitems = &H18F0
             Specialfoods = &H19B0
+            Interiors = &H1778
+            Icon_interiors_101.Visible = False
+            Icon_interiors_102.Visible = False
+            Icon_interiors_103.Visible = False
+            Icon_interiors_104.Visible = False
+            Icon_goodi_18.Visible = False
+            valu_interiors_101.Visible = False
+            valu_interiors_102.Visible = False
+            valu_interiors_103.Visible = False
+            valu_interiors_104.Visible = False
+            valu_goodi_18.Visible = False
+            Check_available_interiors_101.Visible = False
+            Check_available_interiors_102.Visible = False
+            Check_available_interiors_103.Visible = False
+            Check_available_interiors_104.Visible = False
+            Check_available_goodi_18.Visible = False
+            Check_NA_interiors_101.Visible = False
+            Check_NA_interiors_102.Visible = False
+            Check_NA_interiors_103.Visible = False
+            Check_NA_interiors_104.Visible = False
+            Check_NA_goodi_18.Visible = False
         ElseIf TL_SaveEditor.Filever_text.Text = "KR" Then
             Goodsitems = &H18F0
             Specialfoods = &H1A46
+            Interiors = &H1778
+            Icon_interiors_101.Visible = True
+            Icon_interiors_102.Visible = True
+            Icon_interiors_103.Visible = True
+            Icon_interiors_104.Visible = True
+            Icon_goodi_18.Visible = False
+            valu_interiors_101.Visible = True
+            valu_interiors_102.Visible = True
+            valu_interiors_103.Visible = True
+            valu_interiors_104.Visible = True
+            valu_goodi_18.Visible = False
+            Check_available_interiors_101.Visible = True
+            Check_available_interiors_102.Visible = True
+            Check_available_interiors_103.Visible = True
+            Check_available_interiors_104.Visible = True
+            Check_available_goodi_18.Visible = False
+            Check_NA_interiors_101.Visible = True
+            Check_NA_interiors_102.Visible = True
+            Check_NA_interiors_103.Visible = True
+            Check_NA_interiors_104.Visible = True
+            Check_NA_goodi_18.Visible = False
         End If
         readgoodsitems()
         readspecialfoods()
+        readinteriors()
     End Sub
 
     Private Sub Text_specialfoods_Click(sender As Object, e As EventArgs) Handles Text_specialfoods.Click
         hidepanels()
         Panel_specialfoods.Visible = True
+    End Sub
+
+    Private Sub Text_treasures_01_Click(sender As Object, e As EventArgs) Handles Text_treasures_01.Click
+        hidepanels()
+        Panel_treasures.Visible = True
     End Sub
 
     Private Sub Icon_interiors_right_Click(sender As Object, e As EventArgs) Handles Icon_interiors_right.Click
@@ -2121,6 +2882,7 @@ Public Class Items_edit
         Try
             writegoodsitems()
             writespecialfoods()
+            writeinteriors()
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Editing of items has been successfully saved"
                 fdialog.ShowDialog()

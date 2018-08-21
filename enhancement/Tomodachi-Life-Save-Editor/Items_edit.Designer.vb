@@ -243,7 +243,7 @@ Partial Class Items_edit
         Me.valu_goodi_18 = New System.Windows.Forms.NumericUpDown()
         Me.Check_NA_goodi_18 = New System.Windows.Forms.CheckBox()
         Me.Check_available_goodi_18 = New System.Windows.Forms.CheckBox()
-        Me.PictureBox61 = New System.Windows.Forms.PictureBox()
+        Me.Icon_goodi_18 = New System.Windows.Forms.PictureBox()
         Me.valu_goodi_17 = New System.Windows.Forms.NumericUpDown()
         Me.Check_NA_goodi_17 = New System.Windows.Forms.CheckBox()
         Me.Check_available_goodi_17 = New System.Windows.Forms.CheckBox()
@@ -313,419 +313,419 @@ Partial Class Items_edit
         Me.Check_available_goodi_1 = New System.Windows.Forms.CheckBox()
         Me.PictureBox171 = New System.Windows.Forms.PictureBox()
         Me.Panel_interiors = New System.Windows.Forms.Panel()
-        Me.NumericUpDown107 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox213 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox214 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_60 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_60 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_60 = New System.Windows.Forms.CheckBox()
         Me.PictureBox97 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown108 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox215 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox216 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_59 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_59 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_59 = New System.Windows.Forms.CheckBox()
         Me.PictureBox98 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown109 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox217 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox218 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_58 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_58 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_58 = New System.Windows.Forms.CheckBox()
         Me.PictureBox102 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown110 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox219 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox220 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_57 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_57 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_57 = New System.Windows.Forms.CheckBox()
         Me.PictureBox103 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown111 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox221 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox222 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_56 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_56 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_56 = New System.Windows.Forms.CheckBox()
         Me.PictureBox104 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown112 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox223 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox224 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_55 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_55 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_55 = New System.Windows.Forms.CheckBox()
         Me.PictureBox105 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown113 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox225 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox226 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_54 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_54 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_54 = New System.Windows.Forms.CheckBox()
         Me.PictureBox106 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown114 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox227 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox228 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_53 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_53 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_53 = New System.Windows.Forms.CheckBox()
         Me.PictureBox107 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown115 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox229 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox230 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_52 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_52 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_52 = New System.Windows.Forms.CheckBox()
         Me.PictureBox108 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown116 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox231 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox232 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_51 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_51 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_51 = New System.Windows.Forms.CheckBox()
         Me.PictureBox109 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown117 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox233 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox234 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_50 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_50 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_50 = New System.Windows.Forms.CheckBox()
         Me.PictureBox110 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown118 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox235 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox236 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_49 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_49 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_49 = New System.Windows.Forms.CheckBox()
         Me.PictureBox111 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown119 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox237 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox238 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_48 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_48 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_48 = New System.Windows.Forms.CheckBox()
         Me.PictureBox115 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown120 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox239 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox240 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_47 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_47 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_47 = New System.Windows.Forms.CheckBox()
         Me.PictureBox116 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown121 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox241 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox242 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_46 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_46 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_46 = New System.Windows.Forms.CheckBox()
         Me.PictureBox117 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown122 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox243 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox244 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_45 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_45 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_45 = New System.Windows.Forms.CheckBox()
         Me.PictureBox118 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown123 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox245 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox246 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_44 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_44 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_44 = New System.Windows.Forms.CheckBox()
         Me.PictureBox119 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown124 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox247 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox248 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_43 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_43 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_43 = New System.Windows.Forms.CheckBox()
         Me.PictureBox120 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown125 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox249 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox250 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_42 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_42 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_42 = New System.Windows.Forms.CheckBox()
         Me.PictureBox121 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown126 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox251 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox252 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_41 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_41 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_41 = New System.Windows.Forms.CheckBox()
         Me.PictureBox122 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown87 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox173 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox174 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_40 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_40 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_40 = New System.Windows.Forms.CheckBox()
         Me.PictureBox58 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown88 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox175 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox176 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_39 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_39 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_39 = New System.Windows.Forms.CheckBox()
         Me.PictureBox59 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown89 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox177 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox178 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_38 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_38 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_38 = New System.Windows.Forms.CheckBox()
         Me.PictureBox60 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown90 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox179 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox180 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_37 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_37 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_37 = New System.Windows.Forms.CheckBox()
         Me.PictureBox77 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown91 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox181 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox182 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_36 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_36 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_36 = New System.Windows.Forms.CheckBox()
         Me.PictureBox78 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown92 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox183 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox184 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_35 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_35 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_35 = New System.Windows.Forms.CheckBox()
         Me.PictureBox79 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown93 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox185 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox186 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_34 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_34 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_34 = New System.Windows.Forms.CheckBox()
         Me.PictureBox80 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown94 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox187 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox188 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_33 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_33 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_33 = New System.Windows.Forms.CheckBox()
         Me.PictureBox81 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown95 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox189 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox190 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_32 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_32 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_32 = New System.Windows.Forms.CheckBox()
         Me.PictureBox82 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown96 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox191 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox192 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_31 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_31 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_31 = New System.Windows.Forms.CheckBox()
         Me.PictureBox83 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown97 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox193 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox194 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_30 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_30 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_30 = New System.Windows.Forms.CheckBox()
         Me.PictureBox84 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown98 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox195 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox196 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_29 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_29 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_29 = New System.Windows.Forms.CheckBox()
         Me.PictureBox85 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown99 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox197 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox198 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_28 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_28 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_28 = New System.Windows.Forms.CheckBox()
         Me.PictureBox89 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown100 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox199 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox200 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_27 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_27 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_27 = New System.Windows.Forms.CheckBox()
         Me.PictureBox90 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown101 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox201 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox202 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_26 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_26 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_26 = New System.Windows.Forms.CheckBox()
         Me.PictureBox91 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown102 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox203 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox204 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_25 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_25 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_25 = New System.Windows.Forms.CheckBox()
         Me.PictureBox92 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown103 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox205 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox206 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_24 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_24 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_24 = New System.Windows.Forms.CheckBox()
         Me.PictureBox93 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown104 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox207 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox208 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_23 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_23 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_23 = New System.Windows.Forms.CheckBox()
         Me.PictureBox94 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown105 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox209 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox210 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_22 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_22 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_22 = New System.Windows.Forms.CheckBox()
         Me.PictureBox95 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown106 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox211 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox212 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_21 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_21 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_21 = New System.Windows.Forms.CheckBox()
         Me.PictureBox96 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown77 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox153 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox154 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_20 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_20 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_20 = New System.Windows.Forms.CheckBox()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown78 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox155 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox156 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_19 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_19 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_19 = New System.Windows.Forms.CheckBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown79 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox157 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox158 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_18 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_18 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_18 = New System.Windows.Forms.CheckBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown80 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox159 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox160 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_17 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_17 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_17 = New System.Windows.Forms.CheckBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown81 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox161 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox162 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_16 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_16 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_16 = New System.Windows.Forms.CheckBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown82 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox163 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox164 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_15 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_15 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_15 = New System.Windows.Forms.CheckBox()
         Me.PictureBox50 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown83 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox165 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox166 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_14 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_14 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_14 = New System.Windows.Forms.CheckBox()
         Me.PictureBox51 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown84 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox167 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox168 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_13 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_13 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_13 = New System.Windows.Forms.CheckBox()
         Me.PictureBox52 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown85 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox169 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox170 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_12 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_12 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_12 = New System.Windows.Forms.CheckBox()
         Me.PictureBox53 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown86 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox171 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox172 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_11 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_11 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_11 = New System.Windows.Forms.CheckBox()
         Me.PictureBox54 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown49 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox97 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox98 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_10 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_10 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_10 = New System.Windows.Forms.CheckBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown50 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox99 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox100 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_9 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_9 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_9 = New System.Windows.Forms.CheckBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown69 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox137 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox138 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_8 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_8 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_8 = New System.Windows.Forms.CheckBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown70 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox139 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox140 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_7 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_7 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_7 = New System.Windows.Forms.CheckBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown71 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox141 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox142 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_6 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_6 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_6 = New System.Windows.Forms.CheckBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown72 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox143 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox144 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_5 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_5 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_5 = New System.Windows.Forms.CheckBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown73 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox145 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox146 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_4 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_4 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_4 = New System.Windows.Forms.CheckBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown74 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox147 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox148 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_3 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_3 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_3 = New System.Windows.Forms.CheckBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown75 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox149 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox150 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_2 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_2 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_2 = New System.Windows.Forms.CheckBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown76 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox151 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox152 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_1 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_1 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_1 = New System.Windows.Forms.CheckBox()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Icon_interiors_right = New System.Windows.Forms.PictureBox()
         Me.Panel_interiors_1 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown167 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox333 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox334 = New System.Windows.Forms.CheckBox()
-        Me.PictureBox162 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown168 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox335 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox336 = New System.Windows.Forms.CheckBox()
-        Me.PictureBox163 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown169 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox337 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox338 = New System.Windows.Forms.CheckBox()
-        Me.PictureBox164 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown147 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox293 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox294 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_103 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_103 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_103 = New System.Windows.Forms.CheckBox()
+        Me.Icon_interiors_103 = New System.Windows.Forms.PictureBox()
+        Me.valu_interiors_102 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_102 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_102 = New System.Windows.Forms.CheckBox()
+        Me.Icon_interiors_102 = New System.Windows.Forms.PictureBox()
+        Me.valu_interiors_101 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_101 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_101 = New System.Windows.Forms.CheckBox()
+        Me.Icon_interiors_101 = New System.Windows.Forms.PictureBox()
+        Me.valu_interiors_100 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_100 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_100 = New System.Windows.Forms.CheckBox()
         Me.PictureBox142 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown148 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox295 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox296 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_99 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_99 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_99 = New System.Windows.Forms.CheckBox()
         Me.PictureBox143 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown149 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox297 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox298 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_98 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_98 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_98 = New System.Windows.Forms.CheckBox()
         Me.PictureBox144 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown150 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox299 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox300 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_97 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_97 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_97 = New System.Windows.Forms.CheckBox()
         Me.PictureBox145 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown151 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox301 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox302 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_96 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_96 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_96 = New System.Windows.Forms.CheckBox()
         Me.PictureBox146 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown152 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox303 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox304 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_95 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_95 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_95 = New System.Windows.Forms.CheckBox()
         Me.PictureBox147 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown153 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox305 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox306 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_94 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_94 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_94 = New System.Windows.Forms.CheckBox()
         Me.PictureBox148 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown154 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox307 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox308 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_93 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_93 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_93 = New System.Windows.Forms.CheckBox()
         Me.PictureBox149 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown155 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox309 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox310 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_92 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_92 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_92 = New System.Windows.Forms.CheckBox()
         Me.PictureBox150 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown156 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox311 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox312 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_91 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_91 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_91 = New System.Windows.Forms.CheckBox()
         Me.PictureBox151 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown157 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox313 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox314 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_90 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_90 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_90 = New System.Windows.Forms.CheckBox()
         Me.PictureBox152 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown158 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox315 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox316 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_89 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_89 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_89 = New System.Windows.Forms.CheckBox()
         Me.PictureBox153 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown159 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox317 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox318 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_88 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_88 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_88 = New System.Windows.Forms.CheckBox()
         Me.PictureBox154 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown160 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox319 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox320 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_87 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_87 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_87 = New System.Windows.Forms.CheckBox()
         Me.PictureBox155 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown161 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox321 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox322 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_86 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_86 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_86 = New System.Windows.Forms.CheckBox()
         Me.PictureBox156 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown162 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox323 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox324 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_85 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_85 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_85 = New System.Windows.Forms.CheckBox()
         Me.PictureBox157 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown163 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox325 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox326 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_84 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_84 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_84 = New System.Windows.Forms.CheckBox()
         Me.PictureBox158 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown164 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox327 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox328 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_83 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_83 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_83 = New System.Windows.Forms.CheckBox()
         Me.PictureBox159 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown165 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox329 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox330 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_82 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_82 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_82 = New System.Windows.Forms.CheckBox()
         Me.PictureBox160 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown166 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox331 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox332 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_81 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_81 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_81 = New System.Windows.Forms.CheckBox()
         Me.PictureBox161 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown127 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox253 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox254 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_80 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_80 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_80 = New System.Windows.Forms.CheckBox()
         Me.PictureBox114 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown128 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox255 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox256 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_79 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_79 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_79 = New System.Windows.Forms.CheckBox()
         Me.PictureBox123 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown129 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox257 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox258 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_78 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_78 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_78 = New System.Windows.Forms.CheckBox()
         Me.PictureBox124 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown130 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox259 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox260 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_77 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_77 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_77 = New System.Windows.Forms.CheckBox()
         Me.PictureBox125 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown131 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox261 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox262 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_76 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_76 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_76 = New System.Windows.Forms.CheckBox()
         Me.PictureBox126 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown132 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox263 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox264 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_75 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_75 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_75 = New System.Windows.Forms.CheckBox()
         Me.PictureBox127 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown133 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox265 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox266 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_74 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_74 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_74 = New System.Windows.Forms.CheckBox()
         Me.PictureBox128 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown134 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox267 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox268 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_73 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_73 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_73 = New System.Windows.Forms.CheckBox()
         Me.PictureBox129 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown135 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox269 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox270 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_72 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_72 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_72 = New System.Windows.Forms.CheckBox()
         Me.PictureBox130 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown136 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox271 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox272 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_71 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_71 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_71 = New System.Windows.Forms.CheckBox()
         Me.PictureBox131 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown137 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox273 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox274 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_70 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_70 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_70 = New System.Windows.Forms.CheckBox()
         Me.PictureBox132 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown138 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox275 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox276 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_69 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_69 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_69 = New System.Windows.Forms.CheckBox()
         Me.PictureBox133 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown139 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox277 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox278 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_68 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_68 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_68 = New System.Windows.Forms.CheckBox()
         Me.PictureBox134 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown140 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox279 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox280 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_67 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_67 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_67 = New System.Windows.Forms.CheckBox()
         Me.PictureBox135 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown141 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox281 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox282 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_66 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_66 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_66 = New System.Windows.Forms.CheckBox()
         Me.PictureBox136 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown142 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox283 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox284 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_65 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_65 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_65 = New System.Windows.Forms.CheckBox()
         Me.PictureBox137 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown143 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox285 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox286 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_64 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_64 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_64 = New System.Windows.Forms.CheckBox()
         Me.PictureBox138 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown144 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox287 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox288 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_63 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_63 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_63 = New System.Windows.Forms.CheckBox()
         Me.PictureBox139 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown145 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox289 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox290 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_62 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_62 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_62 = New System.Windows.Forms.CheckBox()
         Me.PictureBox140 = New System.Windows.Forms.PictureBox()
-        Me.NumericUpDown146 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox291 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox292 = New System.Windows.Forms.CheckBox()
+        Me.valu_interiors_61 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_61 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_61 = New System.Windows.Forms.CheckBox()
         Me.PictureBox141 = New System.Windows.Forms.PictureBox()
         Me.Icon_interiors_left = New System.Windows.Forms.PictureBox()
         Me.Icon_closesave = New System.Windows.Forms.PictureBox()
@@ -733,378 +733,388 @@ Partial Class Items_edit
         Me.Panel_info_itemsedit = New System.Windows.Forms.Panel()
         Me.Info_text_notavailable = New System.Windows.Forms.Label()
         Me.Info_text_available = New System.Windows.Forms.Label()
-        Me.Panel_specialfoods.SuspendLayout()
-        CType(Me.valu_sfoods_48, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_47, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox42, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_46, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox43, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_45, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox44, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_44, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox45, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_43, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox46, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_42, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox47, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_41, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox48, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_40, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_39, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox37, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_38, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox38, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_37, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox39, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_36, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_35, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox49, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_34, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox55, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_33, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox56, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_32, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox57, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_31, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox86, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox87, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox88, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox99, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_27, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox100, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox101, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox112, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox113, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox167, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox168, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox169, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sfoods_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_hats_03, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_hats_02, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_hats_01, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_normalfoods_01, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_normalfoods_03, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_normalfoods_04, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_normalfoods_02, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_normalfoods, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_clothes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_hats, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_treasures, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_gooditems, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Icon_treasures_01.SuspendLayout()
-        Me.Icon_specialfoods.SuspendLayout()
-        CType(Me.Icon_return, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_clothes_01, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_clothes_02, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_clothes_04, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_clothes_03, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_clothes_05, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_gooditems.SuspendLayout()
-        CType(Me.valu_goodi_18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox62, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox63, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox64, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox65, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox66, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox67, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox68, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox69, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox70, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox71, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox72, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox73, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox74, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox75, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox76, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox170, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_goodi_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox171, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_interiors.SuspendLayout()
-        CType(Me.NumericUpDown107, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox97, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown108, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox98, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown109, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox102, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown110, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox103, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown111, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox104, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown112, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox105, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown113, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox106, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown114, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox107, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown115, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox108, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown116, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox109, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown117, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox110, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown118, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox111, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown119, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox115, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown120, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox116, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown121, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox117, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown122, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox118, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown123, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox119, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown124, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox120, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown125, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox121, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown126, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox122, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown87, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox58, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown88, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox59, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown89, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox60, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown90, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox77, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown91, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox78, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown92, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox79, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown93, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox80, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown94, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox81, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown95, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox82, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown96, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox83, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown97, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox84, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown98, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox85, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown99, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox89, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown100, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox90, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown101, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox91, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown102, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox92, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown103, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox93, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown104, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox94, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown105, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox95, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown106, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox96, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown77, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown78, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown79, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown80, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown81, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown82, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox50, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown83, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox51, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown84, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox52, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown85, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox53, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown86, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox54, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown49, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown50, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown69, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown70, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown71, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown72, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown73, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown74, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown75, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown76, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_interiors_right, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_interiors_1.SuspendLayout()
-        CType(Me.NumericUpDown167, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox162, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown168, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox163, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown169, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox164, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown147, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox142, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown148, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox143, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown149, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox144, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown150, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox145, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown151, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox146, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown152, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox147, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown153, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox148, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown154, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox149, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown155, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox150, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown156, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox151, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown157, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox152, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown158, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox153, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown159, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox154, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown160, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox155, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown161, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox156, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown162, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox157, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown163, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox158, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown164, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox159, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown165, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox160, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown166, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox161, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown127, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox114, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown128, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox123, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown129, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox124, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown130, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox125, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown131, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox126, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown132, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox127, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown133, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox128, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown134, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox129, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown135, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox130, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown136, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox131, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown137, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox132, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown138, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox133, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown139, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox134, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown140, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox135, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown141, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox136, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown142, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox137, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown143, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox138, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown144, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox139, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown145, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox140, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown146, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox141, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_interiors_left, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_closesave, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_info_itemsedit.SuspendLayout()
-        Me.SuspendLayout()
+        Me.valu_interiors_104 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_104 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_104 = New System.Windows.Forms.CheckBox()
+        Me.Icon_interiors_104 = New System.Windows.Forms.PictureBox()
+        Me.Panel_foods = New System.Windows.Forms.Panel()
+        Me.Panel_clothing = New System.Windows.Forms.Panel()
+        Me.Panel_hats = New System.Windows.Forms.Panel()
+        Me.Panel_treasures = New System.Windows.Forms.Panel()
+        Me.Panel_specialfoods.SuspendLayout
+        CType(Me.valu_sfoods_48,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox41,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_47,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox42,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_46,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox43,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_45,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox44,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_44,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox45,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_43,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox46,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_42,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox47,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_41,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox48,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_40,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox36,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_39,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox37,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_38,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox38,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_37,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox39,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_36,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox40,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_35,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox49,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_34,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox55,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_33,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox56,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_32,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox57,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_31,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox86,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_30,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox87,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_29,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox88,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_28,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox99,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_27,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox100,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_26,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox101,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_25,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox112,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_24,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox113,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_23,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox167,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_22,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox168,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_21,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox169,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_20,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox26,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_19,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox27,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_18,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox28,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_17,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox29,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_16,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox30,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_15,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox31,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_14,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox32,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_13,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox33,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_12,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox34,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_11,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox35,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox24,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox25,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox20,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox21,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox22,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox23,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox19,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sfoods_1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_hats_03,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_hats_02,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_hats_01,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_normalfoods_01,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_normalfoods_03,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_normalfoods_04,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_normalfoods_02,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_normalfoods,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_clothes,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_interiors,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_hats,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_treasures,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_gooditems,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Icon_treasures_01.SuspendLayout
+        Me.Icon_specialfoods.SuspendLayout
+        CType(Me.Icon_return,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_clothes_01,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_clothes_02,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_clothes_04,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_clothes_03,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_clothes_05,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_gooditems.SuspendLayout
+        CType(Me.valu_goodi_18,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_goodi_18,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_17,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox62,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_16,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox63,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_15,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox64,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_14,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox65,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_13,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox66,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_12,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox67,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_11,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox68,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox69,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox70,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox71,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox72,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox73,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox74,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox75,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox76,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox170,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_goodi_1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox171,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_interiors.SuspendLayout
+        CType(Me.valu_interiors_60,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox97,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_59,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox98,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_58,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox102,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_57,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox103,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_56,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox104,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_55,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox105,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_54,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox106,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_53,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox107,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_52,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox108,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_51,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox109,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_50,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox110,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_49,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox111,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_48,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox115,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_47,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox116,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_46,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox117,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_45,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox118,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_44,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox119,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_43,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox120,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_42,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox121,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_41,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox122,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_40,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox58,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_39,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox59,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_38,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox60,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_37,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox77,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_36,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox78,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_35,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox79,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_34,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox80,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_33,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox81,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_32,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox82,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_31,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox83,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_30,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox84,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_29,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox85,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_28,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox89,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_27,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox90,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_26,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox91,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_25,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox92,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_24,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox93,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_23,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox94,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_22,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox95,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_21,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox96,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_20,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox14,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_19,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox15,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_18,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox16,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_17,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox17,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_16,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox18,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_15,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox50,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_14,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox51,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_13,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox52,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_12,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox53,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_11,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox54,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox12,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_interiors_right,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_interiors_1.SuspendLayout
+        CType(Me.valu_interiors_103,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_interiors_103,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_102,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_interiors_102,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_101,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_interiors_101,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_100,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox142,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_99,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox143,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_98,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox144,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_97,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox145,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_96,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox146,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_95,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox147,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_94,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox148,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_93,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox149,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_92,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox150,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_91,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox151,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_90,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox152,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_89,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox153,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_88,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox154,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_87,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox155,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_86,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox156,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_85,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox157,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_84,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox158,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_83,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox159,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_82,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox160,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_81,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox161,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_80,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox114,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_79,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox123,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_78,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox124,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_77,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox125,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_76,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox126,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_75,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox127,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_74,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox128,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_73,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox129,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_72,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox130,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_71,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox131,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_70,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox132,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_69,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox133,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_68,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox134,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_67,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox135,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_66,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox136,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_65,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox137,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_64,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox138,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_63,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox139,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_62,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox140,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interiors_61,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox141,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_interiors_left,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_closesave,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_info_itemsedit.SuspendLayout
+        CType(Me.valu_interiors_104,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_interiors_104,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'Panel_specialfoods
         '
-        Me.Panel_specialfoods.BackgroundImage = CType(resources.GetObject("Panel_specialfoods.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_specialfoods.BackgroundImage = CType(resources.GetObject("Panel_specialfoods.BackgroundImage"),System.Drawing.Image)
         Me.Panel_specialfoods.Controls.Add(Me.valu_sfoods_48)
         Me.Panel_specialfoods.Controls.Add(Me.Check_NA_sfoods_48)
         Me.Panel_specialfoods.Controls.Add(Me.Check_available_sfoods_48)
@@ -1301,7 +1311,7 @@ Partial Class Items_edit
         Me.Panel_specialfoods.Name = "Panel_specialfoods"
         Me.Panel_specialfoods.Size = New System.Drawing.Size(905, 506)
         Me.Panel_specialfoods.TabIndex = 0
-        Me.Panel_specialfoods.Visible = False
+        Me.Panel_specialfoods.Visible = false
         '
         'valu_sfoods_48
         '
@@ -1315,23 +1325,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_48
         '
-        Me.Check_NA_sfoods_48.AutoSize = True
+        Me.Check_NA_sfoods_48.AutoSize = true
         Me.Check_NA_sfoods_48.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_48.Location = New System.Drawing.Point(762, 409)
         Me.Check_NA_sfoods_48.Name = "Check_NA_sfoods_48"
         Me.Check_NA_sfoods_48.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_48.TabIndex = 289
-        Me.Check_NA_sfoods_48.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_48.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_48
         '
-        Me.Check_available_sfoods_48.AutoSize = True
+        Me.Check_available_sfoods_48.AutoSize = true
         Me.Check_available_sfoods_48.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_48.Location = New System.Drawing.Point(701, 409)
         Me.Check_available_sfoods_48.Name = "Check_available_sfoods_48"
         Me.Check_available_sfoods_48.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_48.TabIndex = 288
-        Me.Check_available_sfoods_48.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_48.UseVisualStyleBackColor = false
         '
         'PictureBox41
         '
@@ -1341,7 +1351,7 @@ Partial Class Items_edit
         Me.PictureBox41.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox41.TabIndex = 287
-        Me.PictureBox41.TabStop = False
+        Me.PictureBox41.TabStop = false
         '
         'valu_sfoods_47
         '
@@ -1355,23 +1365,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_47
         '
-        Me.Check_NA_sfoods_47.AutoSize = True
+        Me.Check_NA_sfoods_47.AutoSize = true
         Me.Check_NA_sfoods_47.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_47.Location = New System.Drawing.Point(680, 409)
         Me.Check_NA_sfoods_47.Name = "Check_NA_sfoods_47"
         Me.Check_NA_sfoods_47.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_47.TabIndex = 285
-        Me.Check_NA_sfoods_47.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_47.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_47
         '
-        Me.Check_available_sfoods_47.AutoSize = True
+        Me.Check_available_sfoods_47.AutoSize = true
         Me.Check_available_sfoods_47.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_47.Location = New System.Drawing.Point(619, 409)
         Me.Check_available_sfoods_47.Name = "Check_available_sfoods_47"
         Me.Check_available_sfoods_47.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_47.TabIndex = 284
-        Me.Check_available_sfoods_47.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_47.UseVisualStyleBackColor = false
         '
         'PictureBox42
         '
@@ -1381,7 +1391,7 @@ Partial Class Items_edit
         Me.PictureBox42.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox42.TabIndex = 283
-        Me.PictureBox42.TabStop = False
+        Me.PictureBox42.TabStop = false
         '
         'valu_sfoods_46
         '
@@ -1395,23 +1405,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_46
         '
-        Me.Check_NA_sfoods_46.AutoSize = True
+        Me.Check_NA_sfoods_46.AutoSize = true
         Me.Check_NA_sfoods_46.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_46.Location = New System.Drawing.Point(598, 409)
         Me.Check_NA_sfoods_46.Name = "Check_NA_sfoods_46"
         Me.Check_NA_sfoods_46.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_46.TabIndex = 281
-        Me.Check_NA_sfoods_46.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_46.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_46
         '
-        Me.Check_available_sfoods_46.AutoSize = True
+        Me.Check_available_sfoods_46.AutoSize = true
         Me.Check_available_sfoods_46.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_46.Location = New System.Drawing.Point(537, 409)
         Me.Check_available_sfoods_46.Name = "Check_available_sfoods_46"
         Me.Check_available_sfoods_46.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_46.TabIndex = 280
-        Me.Check_available_sfoods_46.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_46.UseVisualStyleBackColor = false
         '
         'PictureBox43
         '
@@ -1421,7 +1431,7 @@ Partial Class Items_edit
         Me.PictureBox43.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox43.TabIndex = 279
-        Me.PictureBox43.TabStop = False
+        Me.PictureBox43.TabStop = false
         '
         'valu_sfoods_45
         '
@@ -1435,23 +1445,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_45
         '
-        Me.Check_NA_sfoods_45.AutoSize = True
+        Me.Check_NA_sfoods_45.AutoSize = true
         Me.Check_NA_sfoods_45.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_45.Location = New System.Drawing.Point(516, 409)
         Me.Check_NA_sfoods_45.Name = "Check_NA_sfoods_45"
         Me.Check_NA_sfoods_45.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_45.TabIndex = 277
-        Me.Check_NA_sfoods_45.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_45.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_45
         '
-        Me.Check_available_sfoods_45.AutoSize = True
+        Me.Check_available_sfoods_45.AutoSize = true
         Me.Check_available_sfoods_45.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_45.Location = New System.Drawing.Point(455, 409)
         Me.Check_available_sfoods_45.Name = "Check_available_sfoods_45"
         Me.Check_available_sfoods_45.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_45.TabIndex = 276
-        Me.Check_available_sfoods_45.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_45.UseVisualStyleBackColor = false
         '
         'PictureBox44
         '
@@ -1461,7 +1471,7 @@ Partial Class Items_edit
         Me.PictureBox44.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox44.TabIndex = 275
-        Me.PictureBox44.TabStop = False
+        Me.PictureBox44.TabStop = false
         '
         'valu_sfoods_44
         '
@@ -1475,23 +1485,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_44
         '
-        Me.Check_NA_sfoods_44.AutoSize = True
+        Me.Check_NA_sfoods_44.AutoSize = true
         Me.Check_NA_sfoods_44.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_44.Location = New System.Drawing.Point(434, 409)
         Me.Check_NA_sfoods_44.Name = "Check_NA_sfoods_44"
         Me.Check_NA_sfoods_44.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_44.TabIndex = 273
-        Me.Check_NA_sfoods_44.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_44.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_44
         '
-        Me.Check_available_sfoods_44.AutoSize = True
+        Me.Check_available_sfoods_44.AutoSize = true
         Me.Check_available_sfoods_44.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_44.Location = New System.Drawing.Point(373, 409)
         Me.Check_available_sfoods_44.Name = "Check_available_sfoods_44"
         Me.Check_available_sfoods_44.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_44.TabIndex = 272
-        Me.Check_available_sfoods_44.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_44.UseVisualStyleBackColor = false
         '
         'PictureBox45
         '
@@ -1501,7 +1511,7 @@ Partial Class Items_edit
         Me.PictureBox45.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox45.TabIndex = 271
-        Me.PictureBox45.TabStop = False
+        Me.PictureBox45.TabStop = false
         '
         'valu_sfoods_43
         '
@@ -1515,23 +1525,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_43
         '
-        Me.Check_NA_sfoods_43.AutoSize = True
+        Me.Check_NA_sfoods_43.AutoSize = true
         Me.Check_NA_sfoods_43.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_43.Location = New System.Drawing.Point(352, 409)
         Me.Check_NA_sfoods_43.Name = "Check_NA_sfoods_43"
         Me.Check_NA_sfoods_43.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_43.TabIndex = 269
-        Me.Check_NA_sfoods_43.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_43.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_43
         '
-        Me.Check_available_sfoods_43.AutoSize = True
+        Me.Check_available_sfoods_43.AutoSize = true
         Me.Check_available_sfoods_43.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_43.Location = New System.Drawing.Point(291, 409)
         Me.Check_available_sfoods_43.Name = "Check_available_sfoods_43"
         Me.Check_available_sfoods_43.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_43.TabIndex = 268
-        Me.Check_available_sfoods_43.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_43.UseVisualStyleBackColor = false
         '
         'PictureBox46
         '
@@ -1541,7 +1551,7 @@ Partial Class Items_edit
         Me.PictureBox46.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox46.TabIndex = 267
-        Me.PictureBox46.TabStop = False
+        Me.PictureBox46.TabStop = false
         '
         'valu_sfoods_42
         '
@@ -1555,23 +1565,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_42
         '
-        Me.Check_NA_sfoods_42.AutoSize = True
+        Me.Check_NA_sfoods_42.AutoSize = true
         Me.Check_NA_sfoods_42.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_42.Location = New System.Drawing.Point(270, 409)
         Me.Check_NA_sfoods_42.Name = "Check_NA_sfoods_42"
         Me.Check_NA_sfoods_42.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_42.TabIndex = 265
-        Me.Check_NA_sfoods_42.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_42.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_42
         '
-        Me.Check_available_sfoods_42.AutoSize = True
+        Me.Check_available_sfoods_42.AutoSize = true
         Me.Check_available_sfoods_42.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_42.Location = New System.Drawing.Point(209, 409)
         Me.Check_available_sfoods_42.Name = "Check_available_sfoods_42"
         Me.Check_available_sfoods_42.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_42.TabIndex = 264
-        Me.Check_available_sfoods_42.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_42.UseVisualStyleBackColor = false
         '
         'PictureBox47
         '
@@ -1581,7 +1591,7 @@ Partial Class Items_edit
         Me.PictureBox47.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox47.TabIndex = 263
-        Me.PictureBox47.TabStop = False
+        Me.PictureBox47.TabStop = false
         '
         'valu_sfoods_41
         '
@@ -1595,23 +1605,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_41
         '
-        Me.Check_NA_sfoods_41.AutoSize = True
+        Me.Check_NA_sfoods_41.AutoSize = true
         Me.Check_NA_sfoods_41.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_41.Location = New System.Drawing.Point(188, 409)
         Me.Check_NA_sfoods_41.Name = "Check_NA_sfoods_41"
         Me.Check_NA_sfoods_41.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_41.TabIndex = 261
-        Me.Check_NA_sfoods_41.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_41.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_41
         '
-        Me.Check_available_sfoods_41.AutoSize = True
+        Me.Check_available_sfoods_41.AutoSize = true
         Me.Check_available_sfoods_41.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_41.Location = New System.Drawing.Point(127, 409)
         Me.Check_available_sfoods_41.Name = "Check_available_sfoods_41"
         Me.Check_available_sfoods_41.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_41.TabIndex = 260
-        Me.Check_available_sfoods_41.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_41.UseVisualStyleBackColor = false
         '
         'PictureBox48
         '
@@ -1621,7 +1631,7 @@ Partial Class Items_edit
         Me.PictureBox48.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox48.TabIndex = 259
-        Me.PictureBox48.TabStop = False
+        Me.PictureBox48.TabStop = false
         '
         'valu_sfoods_40
         '
@@ -1635,23 +1645,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_40
         '
-        Me.Check_NA_sfoods_40.AutoSize = True
+        Me.Check_NA_sfoods_40.AutoSize = true
         Me.Check_NA_sfoods_40.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_40.Location = New System.Drawing.Point(844, 329)
         Me.Check_NA_sfoods_40.Name = "Check_NA_sfoods_40"
         Me.Check_NA_sfoods_40.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_40.TabIndex = 257
-        Me.Check_NA_sfoods_40.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_40.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_40
         '
-        Me.Check_available_sfoods_40.AutoSize = True
+        Me.Check_available_sfoods_40.AutoSize = true
         Me.Check_available_sfoods_40.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_40.Location = New System.Drawing.Point(783, 329)
         Me.Check_available_sfoods_40.Name = "Check_available_sfoods_40"
         Me.Check_available_sfoods_40.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_40.TabIndex = 256
-        Me.Check_available_sfoods_40.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_40.UseVisualStyleBackColor = false
         '
         'PictureBox36
         '
@@ -1661,7 +1671,7 @@ Partial Class Items_edit
         Me.PictureBox36.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox36.TabIndex = 255
-        Me.PictureBox36.TabStop = False
+        Me.PictureBox36.TabStop = false
         '
         'valu_sfoods_39
         '
@@ -1675,23 +1685,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_39
         '
-        Me.Check_NA_sfoods_39.AutoSize = True
+        Me.Check_NA_sfoods_39.AutoSize = true
         Me.Check_NA_sfoods_39.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_39.Location = New System.Drawing.Point(762, 329)
         Me.Check_NA_sfoods_39.Name = "Check_NA_sfoods_39"
         Me.Check_NA_sfoods_39.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_39.TabIndex = 253
-        Me.Check_NA_sfoods_39.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_39.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_39
         '
-        Me.Check_available_sfoods_39.AutoSize = True
+        Me.Check_available_sfoods_39.AutoSize = true
         Me.Check_available_sfoods_39.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_39.Location = New System.Drawing.Point(701, 329)
         Me.Check_available_sfoods_39.Name = "Check_available_sfoods_39"
         Me.Check_available_sfoods_39.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_39.TabIndex = 252
-        Me.Check_available_sfoods_39.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_39.UseVisualStyleBackColor = false
         '
         'PictureBox37
         '
@@ -1701,7 +1711,7 @@ Partial Class Items_edit
         Me.PictureBox37.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox37.TabIndex = 251
-        Me.PictureBox37.TabStop = False
+        Me.PictureBox37.TabStop = false
         '
         'valu_sfoods_38
         '
@@ -1715,23 +1725,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_38
         '
-        Me.Check_NA_sfoods_38.AutoSize = True
+        Me.Check_NA_sfoods_38.AutoSize = true
         Me.Check_NA_sfoods_38.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_38.Location = New System.Drawing.Point(680, 329)
         Me.Check_NA_sfoods_38.Name = "Check_NA_sfoods_38"
         Me.Check_NA_sfoods_38.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_38.TabIndex = 249
-        Me.Check_NA_sfoods_38.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_38.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_38
         '
-        Me.Check_available_sfoods_38.AutoSize = True
+        Me.Check_available_sfoods_38.AutoSize = true
         Me.Check_available_sfoods_38.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_38.Location = New System.Drawing.Point(619, 329)
         Me.Check_available_sfoods_38.Name = "Check_available_sfoods_38"
         Me.Check_available_sfoods_38.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_38.TabIndex = 248
-        Me.Check_available_sfoods_38.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_38.UseVisualStyleBackColor = false
         '
         'PictureBox38
         '
@@ -1741,7 +1751,7 @@ Partial Class Items_edit
         Me.PictureBox38.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox38.TabIndex = 247
-        Me.PictureBox38.TabStop = False
+        Me.PictureBox38.TabStop = false
         '
         'valu_sfoods_37
         '
@@ -1755,23 +1765,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_37
         '
-        Me.Check_NA_sfoods_37.AutoSize = True
+        Me.Check_NA_sfoods_37.AutoSize = true
         Me.Check_NA_sfoods_37.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_37.Location = New System.Drawing.Point(598, 329)
         Me.Check_NA_sfoods_37.Name = "Check_NA_sfoods_37"
         Me.Check_NA_sfoods_37.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_37.TabIndex = 245
-        Me.Check_NA_sfoods_37.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_37.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_37
         '
-        Me.Check_available_sfoods_37.AutoSize = True
+        Me.Check_available_sfoods_37.AutoSize = true
         Me.Check_available_sfoods_37.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_37.Location = New System.Drawing.Point(537, 329)
         Me.Check_available_sfoods_37.Name = "Check_available_sfoods_37"
         Me.Check_available_sfoods_37.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_37.TabIndex = 244
-        Me.Check_available_sfoods_37.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_37.UseVisualStyleBackColor = false
         '
         'PictureBox39
         '
@@ -1781,7 +1791,7 @@ Partial Class Items_edit
         Me.PictureBox39.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox39.TabIndex = 243
-        Me.PictureBox39.TabStop = False
+        Me.PictureBox39.TabStop = false
         '
         'valu_sfoods_36
         '
@@ -1795,23 +1805,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_36
         '
-        Me.Check_NA_sfoods_36.AutoSize = True
+        Me.Check_NA_sfoods_36.AutoSize = true
         Me.Check_NA_sfoods_36.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_36.Location = New System.Drawing.Point(516, 329)
         Me.Check_NA_sfoods_36.Name = "Check_NA_sfoods_36"
         Me.Check_NA_sfoods_36.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_36.TabIndex = 241
-        Me.Check_NA_sfoods_36.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_36.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_36
         '
-        Me.Check_available_sfoods_36.AutoSize = True
+        Me.Check_available_sfoods_36.AutoSize = true
         Me.Check_available_sfoods_36.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_36.Location = New System.Drawing.Point(455, 329)
         Me.Check_available_sfoods_36.Name = "Check_available_sfoods_36"
         Me.Check_available_sfoods_36.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_36.TabIndex = 240
-        Me.Check_available_sfoods_36.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_36.UseVisualStyleBackColor = false
         '
         'PictureBox40
         '
@@ -1821,7 +1831,7 @@ Partial Class Items_edit
         Me.PictureBox40.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox40.TabIndex = 239
-        Me.PictureBox40.TabStop = False
+        Me.PictureBox40.TabStop = false
         '
         'valu_sfoods_35
         '
@@ -1835,23 +1845,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_35
         '
-        Me.Check_NA_sfoods_35.AutoSize = True
+        Me.Check_NA_sfoods_35.AutoSize = true
         Me.Check_NA_sfoods_35.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_35.Location = New System.Drawing.Point(434, 329)
         Me.Check_NA_sfoods_35.Name = "Check_NA_sfoods_35"
         Me.Check_NA_sfoods_35.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_35.TabIndex = 237
-        Me.Check_NA_sfoods_35.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_35.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_35
         '
-        Me.Check_available_sfoods_35.AutoSize = True
+        Me.Check_available_sfoods_35.AutoSize = true
         Me.Check_available_sfoods_35.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_35.Location = New System.Drawing.Point(373, 329)
         Me.Check_available_sfoods_35.Name = "Check_available_sfoods_35"
         Me.Check_available_sfoods_35.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_35.TabIndex = 236
-        Me.Check_available_sfoods_35.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_35.UseVisualStyleBackColor = false
         '
         'PictureBox49
         '
@@ -1861,7 +1871,7 @@ Partial Class Items_edit
         Me.PictureBox49.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox49.TabIndex = 235
-        Me.PictureBox49.TabStop = False
+        Me.PictureBox49.TabStop = false
         '
         'valu_sfoods_34
         '
@@ -1875,23 +1885,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_34
         '
-        Me.Check_NA_sfoods_34.AutoSize = True
+        Me.Check_NA_sfoods_34.AutoSize = true
         Me.Check_NA_sfoods_34.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_34.Location = New System.Drawing.Point(352, 329)
         Me.Check_NA_sfoods_34.Name = "Check_NA_sfoods_34"
         Me.Check_NA_sfoods_34.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_34.TabIndex = 233
-        Me.Check_NA_sfoods_34.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_34.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_34
         '
-        Me.Check_available_sfoods_34.AutoSize = True
+        Me.Check_available_sfoods_34.AutoSize = true
         Me.Check_available_sfoods_34.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_34.Location = New System.Drawing.Point(291, 329)
         Me.Check_available_sfoods_34.Name = "Check_available_sfoods_34"
         Me.Check_available_sfoods_34.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_34.TabIndex = 232
-        Me.Check_available_sfoods_34.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_34.UseVisualStyleBackColor = false
         '
         'PictureBox55
         '
@@ -1901,7 +1911,7 @@ Partial Class Items_edit
         Me.PictureBox55.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox55.TabIndex = 231
-        Me.PictureBox55.TabStop = False
+        Me.PictureBox55.TabStop = false
         '
         'valu_sfoods_33
         '
@@ -1915,23 +1925,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_33
         '
-        Me.Check_NA_sfoods_33.AutoSize = True
+        Me.Check_NA_sfoods_33.AutoSize = true
         Me.Check_NA_sfoods_33.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_33.Location = New System.Drawing.Point(270, 329)
         Me.Check_NA_sfoods_33.Name = "Check_NA_sfoods_33"
         Me.Check_NA_sfoods_33.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_33.TabIndex = 229
-        Me.Check_NA_sfoods_33.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_33.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_33
         '
-        Me.Check_available_sfoods_33.AutoSize = True
+        Me.Check_available_sfoods_33.AutoSize = true
         Me.Check_available_sfoods_33.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_33.Location = New System.Drawing.Point(209, 329)
         Me.Check_available_sfoods_33.Name = "Check_available_sfoods_33"
         Me.Check_available_sfoods_33.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_33.TabIndex = 228
-        Me.Check_available_sfoods_33.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_33.UseVisualStyleBackColor = false
         '
         'PictureBox56
         '
@@ -1941,7 +1951,7 @@ Partial Class Items_edit
         Me.PictureBox56.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox56.TabIndex = 227
-        Me.PictureBox56.TabStop = False
+        Me.PictureBox56.TabStop = false
         '
         'valu_sfoods_32
         '
@@ -1955,23 +1965,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_32
         '
-        Me.Check_NA_sfoods_32.AutoSize = True
+        Me.Check_NA_sfoods_32.AutoSize = true
         Me.Check_NA_sfoods_32.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_32.Location = New System.Drawing.Point(188, 329)
         Me.Check_NA_sfoods_32.Name = "Check_NA_sfoods_32"
         Me.Check_NA_sfoods_32.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_32.TabIndex = 225
-        Me.Check_NA_sfoods_32.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_32.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_32
         '
-        Me.Check_available_sfoods_32.AutoSize = True
+        Me.Check_available_sfoods_32.AutoSize = true
         Me.Check_available_sfoods_32.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_32.Location = New System.Drawing.Point(127, 329)
         Me.Check_available_sfoods_32.Name = "Check_available_sfoods_32"
         Me.Check_available_sfoods_32.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_32.TabIndex = 224
-        Me.Check_available_sfoods_32.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_32.UseVisualStyleBackColor = false
         '
         'PictureBox57
         '
@@ -1981,7 +1991,7 @@ Partial Class Items_edit
         Me.PictureBox57.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox57.TabIndex = 223
-        Me.PictureBox57.TabStop = False
+        Me.PictureBox57.TabStop = false
         '
         'valu_sfoods_31
         '
@@ -1995,23 +2005,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_31
         '
-        Me.Check_NA_sfoods_31.AutoSize = True
+        Me.Check_NA_sfoods_31.AutoSize = true
         Me.Check_NA_sfoods_31.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_31.Location = New System.Drawing.Point(106, 329)
         Me.Check_NA_sfoods_31.Name = "Check_NA_sfoods_31"
         Me.Check_NA_sfoods_31.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_31.TabIndex = 221
-        Me.Check_NA_sfoods_31.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_31.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_31
         '
-        Me.Check_available_sfoods_31.AutoSize = True
+        Me.Check_available_sfoods_31.AutoSize = true
         Me.Check_available_sfoods_31.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_31.Location = New System.Drawing.Point(45, 329)
         Me.Check_available_sfoods_31.Name = "Check_available_sfoods_31"
         Me.Check_available_sfoods_31.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_31.TabIndex = 220
-        Me.Check_available_sfoods_31.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_31.UseVisualStyleBackColor = false
         '
         'PictureBox86
         '
@@ -2021,7 +2031,7 @@ Partial Class Items_edit
         Me.PictureBox86.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox86.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox86.TabIndex = 219
-        Me.PictureBox86.TabStop = False
+        Me.PictureBox86.TabStop = false
         '
         'valu_sfoods_30
         '
@@ -2035,23 +2045,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_30
         '
-        Me.Check_NA_sfoods_30.AutoSize = True
+        Me.Check_NA_sfoods_30.AutoSize = true
         Me.Check_NA_sfoods_30.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_30.Location = New System.Drawing.Point(844, 249)
         Me.Check_NA_sfoods_30.Name = "Check_NA_sfoods_30"
         Me.Check_NA_sfoods_30.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_30.TabIndex = 217
-        Me.Check_NA_sfoods_30.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_30.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_30
         '
-        Me.Check_available_sfoods_30.AutoSize = True
+        Me.Check_available_sfoods_30.AutoSize = true
         Me.Check_available_sfoods_30.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_30.Location = New System.Drawing.Point(783, 249)
         Me.Check_available_sfoods_30.Name = "Check_available_sfoods_30"
         Me.Check_available_sfoods_30.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_30.TabIndex = 216
-        Me.Check_available_sfoods_30.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_30.UseVisualStyleBackColor = false
         '
         'PictureBox87
         '
@@ -2061,7 +2071,7 @@ Partial Class Items_edit
         Me.PictureBox87.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox87.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox87.TabIndex = 215
-        Me.PictureBox87.TabStop = False
+        Me.PictureBox87.TabStop = false
         '
         'valu_sfoods_29
         '
@@ -2075,23 +2085,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_29
         '
-        Me.Check_NA_sfoods_29.AutoSize = True
+        Me.Check_NA_sfoods_29.AutoSize = true
         Me.Check_NA_sfoods_29.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_29.Location = New System.Drawing.Point(762, 249)
         Me.Check_NA_sfoods_29.Name = "Check_NA_sfoods_29"
         Me.Check_NA_sfoods_29.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_29.TabIndex = 213
-        Me.Check_NA_sfoods_29.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_29.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_29
         '
-        Me.Check_available_sfoods_29.AutoSize = True
+        Me.Check_available_sfoods_29.AutoSize = true
         Me.Check_available_sfoods_29.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_29.Location = New System.Drawing.Point(701, 249)
         Me.Check_available_sfoods_29.Name = "Check_available_sfoods_29"
         Me.Check_available_sfoods_29.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_29.TabIndex = 212
-        Me.Check_available_sfoods_29.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_29.UseVisualStyleBackColor = false
         '
         'PictureBox88
         '
@@ -2101,7 +2111,7 @@ Partial Class Items_edit
         Me.PictureBox88.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox88.TabIndex = 211
-        Me.PictureBox88.TabStop = False
+        Me.PictureBox88.TabStop = false
         '
         'valu_sfoods_28
         '
@@ -2115,23 +2125,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_28
         '
-        Me.Check_NA_sfoods_28.AutoSize = True
+        Me.Check_NA_sfoods_28.AutoSize = true
         Me.Check_NA_sfoods_28.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_28.Location = New System.Drawing.Point(680, 249)
         Me.Check_NA_sfoods_28.Name = "Check_NA_sfoods_28"
         Me.Check_NA_sfoods_28.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_28.TabIndex = 209
-        Me.Check_NA_sfoods_28.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_28.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_28
         '
-        Me.Check_available_sfoods_28.AutoSize = True
+        Me.Check_available_sfoods_28.AutoSize = true
         Me.Check_available_sfoods_28.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_28.Location = New System.Drawing.Point(619, 249)
         Me.Check_available_sfoods_28.Name = "Check_available_sfoods_28"
         Me.Check_available_sfoods_28.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_28.TabIndex = 208
-        Me.Check_available_sfoods_28.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_28.UseVisualStyleBackColor = false
         '
         'PictureBox99
         '
@@ -2141,7 +2151,7 @@ Partial Class Items_edit
         Me.PictureBox99.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox99.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox99.TabIndex = 207
-        Me.PictureBox99.TabStop = False
+        Me.PictureBox99.TabStop = false
         '
         'valu_sfoods_27
         '
@@ -2155,23 +2165,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_27
         '
-        Me.Check_NA_sfoods_27.AutoSize = True
+        Me.Check_NA_sfoods_27.AutoSize = true
         Me.Check_NA_sfoods_27.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_27.Location = New System.Drawing.Point(598, 249)
         Me.Check_NA_sfoods_27.Name = "Check_NA_sfoods_27"
         Me.Check_NA_sfoods_27.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_27.TabIndex = 205
-        Me.Check_NA_sfoods_27.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_27.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_27
         '
-        Me.Check_available_sfoods_27.AutoSize = True
+        Me.Check_available_sfoods_27.AutoSize = true
         Me.Check_available_sfoods_27.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_27.Location = New System.Drawing.Point(537, 249)
         Me.Check_available_sfoods_27.Name = "Check_available_sfoods_27"
         Me.Check_available_sfoods_27.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_27.TabIndex = 204
-        Me.Check_available_sfoods_27.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_27.UseVisualStyleBackColor = false
         '
         'PictureBox100
         '
@@ -2181,7 +2191,7 @@ Partial Class Items_edit
         Me.PictureBox100.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox100.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox100.TabIndex = 203
-        Me.PictureBox100.TabStop = False
+        Me.PictureBox100.TabStop = false
         '
         'valu_sfoods_26
         '
@@ -2195,23 +2205,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_26
         '
-        Me.Check_NA_sfoods_26.AutoSize = True
+        Me.Check_NA_sfoods_26.AutoSize = true
         Me.Check_NA_sfoods_26.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_26.Location = New System.Drawing.Point(516, 249)
         Me.Check_NA_sfoods_26.Name = "Check_NA_sfoods_26"
         Me.Check_NA_sfoods_26.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_26.TabIndex = 201
-        Me.Check_NA_sfoods_26.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_26.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_26
         '
-        Me.Check_available_sfoods_26.AutoSize = True
+        Me.Check_available_sfoods_26.AutoSize = true
         Me.Check_available_sfoods_26.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_26.Location = New System.Drawing.Point(455, 249)
         Me.Check_available_sfoods_26.Name = "Check_available_sfoods_26"
         Me.Check_available_sfoods_26.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_26.TabIndex = 200
-        Me.Check_available_sfoods_26.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_26.UseVisualStyleBackColor = false
         '
         'PictureBox101
         '
@@ -2221,7 +2231,7 @@ Partial Class Items_edit
         Me.PictureBox101.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox101.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox101.TabIndex = 199
-        Me.PictureBox101.TabStop = False
+        Me.PictureBox101.TabStop = false
         '
         'valu_sfoods_25
         '
@@ -2235,23 +2245,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_25
         '
-        Me.Check_NA_sfoods_25.AutoSize = True
+        Me.Check_NA_sfoods_25.AutoSize = true
         Me.Check_NA_sfoods_25.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_25.Location = New System.Drawing.Point(434, 249)
         Me.Check_NA_sfoods_25.Name = "Check_NA_sfoods_25"
         Me.Check_NA_sfoods_25.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_25.TabIndex = 197
-        Me.Check_NA_sfoods_25.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_25.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_25
         '
-        Me.Check_available_sfoods_25.AutoSize = True
+        Me.Check_available_sfoods_25.AutoSize = true
         Me.Check_available_sfoods_25.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_25.Location = New System.Drawing.Point(373, 249)
         Me.Check_available_sfoods_25.Name = "Check_available_sfoods_25"
         Me.Check_available_sfoods_25.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_25.TabIndex = 196
-        Me.Check_available_sfoods_25.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_25.UseVisualStyleBackColor = false
         '
         'PictureBox112
         '
@@ -2261,7 +2271,7 @@ Partial Class Items_edit
         Me.PictureBox112.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox112.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox112.TabIndex = 195
-        Me.PictureBox112.TabStop = False
+        Me.PictureBox112.TabStop = false
         '
         'valu_sfoods_24
         '
@@ -2275,23 +2285,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_24
         '
-        Me.Check_NA_sfoods_24.AutoSize = True
+        Me.Check_NA_sfoods_24.AutoSize = true
         Me.Check_NA_sfoods_24.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_24.Location = New System.Drawing.Point(352, 249)
         Me.Check_NA_sfoods_24.Name = "Check_NA_sfoods_24"
         Me.Check_NA_sfoods_24.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_24.TabIndex = 193
-        Me.Check_NA_sfoods_24.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_24.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_24
         '
-        Me.Check_available_sfoods_24.AutoSize = True
+        Me.Check_available_sfoods_24.AutoSize = true
         Me.Check_available_sfoods_24.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_24.Location = New System.Drawing.Point(291, 249)
         Me.Check_available_sfoods_24.Name = "Check_available_sfoods_24"
         Me.Check_available_sfoods_24.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_24.TabIndex = 192
-        Me.Check_available_sfoods_24.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_24.UseVisualStyleBackColor = false
         '
         'PictureBox113
         '
@@ -2301,7 +2311,7 @@ Partial Class Items_edit
         Me.PictureBox113.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox113.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox113.TabIndex = 191
-        Me.PictureBox113.TabStop = False
+        Me.PictureBox113.TabStop = false
         '
         'valu_sfoods_23
         '
@@ -2315,23 +2325,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_23
         '
-        Me.Check_NA_sfoods_23.AutoSize = True
+        Me.Check_NA_sfoods_23.AutoSize = true
         Me.Check_NA_sfoods_23.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_23.Location = New System.Drawing.Point(270, 249)
         Me.Check_NA_sfoods_23.Name = "Check_NA_sfoods_23"
         Me.Check_NA_sfoods_23.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_23.TabIndex = 189
-        Me.Check_NA_sfoods_23.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_23.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_23
         '
-        Me.Check_available_sfoods_23.AutoSize = True
+        Me.Check_available_sfoods_23.AutoSize = true
         Me.Check_available_sfoods_23.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_23.Location = New System.Drawing.Point(209, 249)
         Me.Check_available_sfoods_23.Name = "Check_available_sfoods_23"
         Me.Check_available_sfoods_23.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_23.TabIndex = 188
-        Me.Check_available_sfoods_23.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_23.UseVisualStyleBackColor = false
         '
         'PictureBox167
         '
@@ -2341,7 +2351,7 @@ Partial Class Items_edit
         Me.PictureBox167.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox167.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox167.TabIndex = 187
-        Me.PictureBox167.TabStop = False
+        Me.PictureBox167.TabStop = false
         '
         'valu_sfoods_22
         '
@@ -2355,23 +2365,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_22
         '
-        Me.Check_NA_sfoods_22.AutoSize = True
+        Me.Check_NA_sfoods_22.AutoSize = true
         Me.Check_NA_sfoods_22.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_22.Location = New System.Drawing.Point(188, 249)
         Me.Check_NA_sfoods_22.Name = "Check_NA_sfoods_22"
         Me.Check_NA_sfoods_22.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_22.TabIndex = 185
-        Me.Check_NA_sfoods_22.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_22.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_22
         '
-        Me.Check_available_sfoods_22.AutoSize = True
+        Me.Check_available_sfoods_22.AutoSize = true
         Me.Check_available_sfoods_22.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_22.Location = New System.Drawing.Point(127, 249)
         Me.Check_available_sfoods_22.Name = "Check_available_sfoods_22"
         Me.Check_available_sfoods_22.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_22.TabIndex = 184
-        Me.Check_available_sfoods_22.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_22.UseVisualStyleBackColor = false
         '
         'PictureBox168
         '
@@ -2381,7 +2391,7 @@ Partial Class Items_edit
         Me.PictureBox168.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox168.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox168.TabIndex = 183
-        Me.PictureBox168.TabStop = False
+        Me.PictureBox168.TabStop = false
         '
         'valu_sfoods_21
         '
@@ -2395,23 +2405,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_21
         '
-        Me.Check_NA_sfoods_21.AutoSize = True
+        Me.Check_NA_sfoods_21.AutoSize = true
         Me.Check_NA_sfoods_21.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_21.Location = New System.Drawing.Point(106, 249)
         Me.Check_NA_sfoods_21.Name = "Check_NA_sfoods_21"
         Me.Check_NA_sfoods_21.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_21.TabIndex = 181
-        Me.Check_NA_sfoods_21.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_21.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_21
         '
-        Me.Check_available_sfoods_21.AutoSize = True
+        Me.Check_available_sfoods_21.AutoSize = true
         Me.Check_available_sfoods_21.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_21.Location = New System.Drawing.Point(45, 249)
         Me.Check_available_sfoods_21.Name = "Check_available_sfoods_21"
         Me.Check_available_sfoods_21.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_21.TabIndex = 180
-        Me.Check_available_sfoods_21.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_21.UseVisualStyleBackColor = false
         '
         'PictureBox169
         '
@@ -2421,7 +2431,7 @@ Partial Class Items_edit
         Me.PictureBox169.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox169.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox169.TabIndex = 179
-        Me.PictureBox169.TabStop = False
+        Me.PictureBox169.TabStop = false
         '
         'valu_sfoods_20
         '
@@ -2435,23 +2445,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_20
         '
-        Me.Check_NA_sfoods_20.AutoSize = True
+        Me.Check_NA_sfoods_20.AutoSize = true
         Me.Check_NA_sfoods_20.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_20.Location = New System.Drawing.Point(844, 169)
         Me.Check_NA_sfoods_20.Name = "Check_NA_sfoods_20"
         Me.Check_NA_sfoods_20.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_20.TabIndex = 177
-        Me.Check_NA_sfoods_20.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_20.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_20
         '
-        Me.Check_available_sfoods_20.AutoSize = True
+        Me.Check_available_sfoods_20.AutoSize = true
         Me.Check_available_sfoods_20.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_20.Location = New System.Drawing.Point(783, 169)
         Me.Check_available_sfoods_20.Name = "Check_available_sfoods_20"
         Me.Check_available_sfoods_20.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_20.TabIndex = 176
-        Me.Check_available_sfoods_20.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_20.UseVisualStyleBackColor = false
         '
         'PictureBox26
         '
@@ -2461,7 +2471,7 @@ Partial Class Items_edit
         Me.PictureBox26.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox26.TabIndex = 175
-        Me.PictureBox26.TabStop = False
+        Me.PictureBox26.TabStop = false
         '
         'valu_sfoods_19
         '
@@ -2475,23 +2485,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_19
         '
-        Me.Check_NA_sfoods_19.AutoSize = True
+        Me.Check_NA_sfoods_19.AutoSize = true
         Me.Check_NA_sfoods_19.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_19.Location = New System.Drawing.Point(762, 169)
         Me.Check_NA_sfoods_19.Name = "Check_NA_sfoods_19"
         Me.Check_NA_sfoods_19.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_19.TabIndex = 173
-        Me.Check_NA_sfoods_19.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_19.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_19
         '
-        Me.Check_available_sfoods_19.AutoSize = True
+        Me.Check_available_sfoods_19.AutoSize = true
         Me.Check_available_sfoods_19.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_19.Location = New System.Drawing.Point(701, 169)
         Me.Check_available_sfoods_19.Name = "Check_available_sfoods_19"
         Me.Check_available_sfoods_19.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_19.TabIndex = 172
-        Me.Check_available_sfoods_19.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_19.UseVisualStyleBackColor = false
         '
         'PictureBox27
         '
@@ -2501,7 +2511,7 @@ Partial Class Items_edit
         Me.PictureBox27.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox27.TabIndex = 171
-        Me.PictureBox27.TabStop = False
+        Me.PictureBox27.TabStop = false
         '
         'valu_sfoods_18
         '
@@ -2515,23 +2525,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_18
         '
-        Me.Check_NA_sfoods_18.AutoSize = True
+        Me.Check_NA_sfoods_18.AutoSize = true
         Me.Check_NA_sfoods_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_18.Location = New System.Drawing.Point(680, 169)
         Me.Check_NA_sfoods_18.Name = "Check_NA_sfoods_18"
         Me.Check_NA_sfoods_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_18.TabIndex = 169
-        Me.Check_NA_sfoods_18.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_18.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_18
         '
-        Me.Check_available_sfoods_18.AutoSize = True
+        Me.Check_available_sfoods_18.AutoSize = true
         Me.Check_available_sfoods_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_18.Location = New System.Drawing.Point(619, 169)
         Me.Check_available_sfoods_18.Name = "Check_available_sfoods_18"
         Me.Check_available_sfoods_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_18.TabIndex = 168
-        Me.Check_available_sfoods_18.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_18.UseVisualStyleBackColor = false
         '
         'PictureBox28
         '
@@ -2541,7 +2551,7 @@ Partial Class Items_edit
         Me.PictureBox28.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox28.TabIndex = 167
-        Me.PictureBox28.TabStop = False
+        Me.PictureBox28.TabStop = false
         '
         'valu_sfoods_17
         '
@@ -2555,23 +2565,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_17
         '
-        Me.Check_NA_sfoods_17.AutoSize = True
+        Me.Check_NA_sfoods_17.AutoSize = true
         Me.Check_NA_sfoods_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_17.Location = New System.Drawing.Point(598, 169)
         Me.Check_NA_sfoods_17.Name = "Check_NA_sfoods_17"
         Me.Check_NA_sfoods_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_17.TabIndex = 165
-        Me.Check_NA_sfoods_17.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_17.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_17
         '
-        Me.Check_available_sfoods_17.AutoSize = True
+        Me.Check_available_sfoods_17.AutoSize = true
         Me.Check_available_sfoods_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_17.Location = New System.Drawing.Point(537, 169)
         Me.Check_available_sfoods_17.Name = "Check_available_sfoods_17"
         Me.Check_available_sfoods_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_17.TabIndex = 164
-        Me.Check_available_sfoods_17.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_17.UseVisualStyleBackColor = false
         '
         'PictureBox29
         '
@@ -2581,7 +2591,7 @@ Partial Class Items_edit
         Me.PictureBox29.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox29.TabIndex = 163
-        Me.PictureBox29.TabStop = False
+        Me.PictureBox29.TabStop = false
         '
         'valu_sfoods_16
         '
@@ -2595,23 +2605,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_16
         '
-        Me.Check_NA_sfoods_16.AutoSize = True
+        Me.Check_NA_sfoods_16.AutoSize = true
         Me.Check_NA_sfoods_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_16.Location = New System.Drawing.Point(516, 169)
         Me.Check_NA_sfoods_16.Name = "Check_NA_sfoods_16"
         Me.Check_NA_sfoods_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_16.TabIndex = 161
-        Me.Check_NA_sfoods_16.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_16.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_16
         '
-        Me.Check_available_sfoods_16.AutoSize = True
+        Me.Check_available_sfoods_16.AutoSize = true
         Me.Check_available_sfoods_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_16.Location = New System.Drawing.Point(455, 169)
         Me.Check_available_sfoods_16.Name = "Check_available_sfoods_16"
         Me.Check_available_sfoods_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_16.TabIndex = 160
-        Me.Check_available_sfoods_16.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_16.UseVisualStyleBackColor = false
         '
         'PictureBox30
         '
@@ -2621,7 +2631,7 @@ Partial Class Items_edit
         Me.PictureBox30.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox30.TabIndex = 159
-        Me.PictureBox30.TabStop = False
+        Me.PictureBox30.TabStop = false
         '
         'valu_sfoods_15
         '
@@ -2635,23 +2645,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_15
         '
-        Me.Check_NA_sfoods_15.AutoSize = True
+        Me.Check_NA_sfoods_15.AutoSize = true
         Me.Check_NA_sfoods_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_15.Location = New System.Drawing.Point(434, 169)
         Me.Check_NA_sfoods_15.Name = "Check_NA_sfoods_15"
         Me.Check_NA_sfoods_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_15.TabIndex = 157
-        Me.Check_NA_sfoods_15.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_15.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_15
         '
-        Me.Check_available_sfoods_15.AutoSize = True
+        Me.Check_available_sfoods_15.AutoSize = true
         Me.Check_available_sfoods_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_15.Location = New System.Drawing.Point(373, 169)
         Me.Check_available_sfoods_15.Name = "Check_available_sfoods_15"
         Me.Check_available_sfoods_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_15.TabIndex = 156
-        Me.Check_available_sfoods_15.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_15.UseVisualStyleBackColor = false
         '
         'PictureBox31
         '
@@ -2661,7 +2671,7 @@ Partial Class Items_edit
         Me.PictureBox31.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox31.TabIndex = 155
-        Me.PictureBox31.TabStop = False
+        Me.PictureBox31.TabStop = false
         '
         'valu_sfoods_14
         '
@@ -2675,23 +2685,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_14
         '
-        Me.Check_NA_sfoods_14.AutoSize = True
+        Me.Check_NA_sfoods_14.AutoSize = true
         Me.Check_NA_sfoods_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_14.Location = New System.Drawing.Point(352, 169)
         Me.Check_NA_sfoods_14.Name = "Check_NA_sfoods_14"
         Me.Check_NA_sfoods_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_14.TabIndex = 153
-        Me.Check_NA_sfoods_14.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_14.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_14
         '
-        Me.Check_available_sfoods_14.AutoSize = True
+        Me.Check_available_sfoods_14.AutoSize = true
         Me.Check_available_sfoods_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_14.Location = New System.Drawing.Point(291, 169)
         Me.Check_available_sfoods_14.Name = "Check_available_sfoods_14"
         Me.Check_available_sfoods_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_14.TabIndex = 152
-        Me.Check_available_sfoods_14.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_14.UseVisualStyleBackColor = false
         '
         'PictureBox32
         '
@@ -2701,7 +2711,7 @@ Partial Class Items_edit
         Me.PictureBox32.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox32.TabIndex = 151
-        Me.PictureBox32.TabStop = False
+        Me.PictureBox32.TabStop = false
         '
         'valu_sfoods_13
         '
@@ -2715,23 +2725,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_13
         '
-        Me.Check_NA_sfoods_13.AutoSize = True
+        Me.Check_NA_sfoods_13.AutoSize = true
         Me.Check_NA_sfoods_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_13.Location = New System.Drawing.Point(270, 169)
         Me.Check_NA_sfoods_13.Name = "Check_NA_sfoods_13"
         Me.Check_NA_sfoods_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_13.TabIndex = 149
-        Me.Check_NA_sfoods_13.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_13.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_13
         '
-        Me.Check_available_sfoods_13.AutoSize = True
+        Me.Check_available_sfoods_13.AutoSize = true
         Me.Check_available_sfoods_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_13.Location = New System.Drawing.Point(209, 169)
         Me.Check_available_sfoods_13.Name = "Check_available_sfoods_13"
         Me.Check_available_sfoods_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_13.TabIndex = 148
-        Me.Check_available_sfoods_13.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_13.UseVisualStyleBackColor = false
         '
         'PictureBox33
         '
@@ -2741,7 +2751,7 @@ Partial Class Items_edit
         Me.PictureBox33.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox33.TabIndex = 147
-        Me.PictureBox33.TabStop = False
+        Me.PictureBox33.TabStop = false
         '
         'valu_sfoods_12
         '
@@ -2755,23 +2765,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_12
         '
-        Me.Check_NA_sfoods_12.AutoSize = True
+        Me.Check_NA_sfoods_12.AutoSize = true
         Me.Check_NA_sfoods_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_12.Location = New System.Drawing.Point(188, 169)
         Me.Check_NA_sfoods_12.Name = "Check_NA_sfoods_12"
         Me.Check_NA_sfoods_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_12.TabIndex = 145
-        Me.Check_NA_sfoods_12.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_12.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_12
         '
-        Me.Check_available_sfoods_12.AutoSize = True
+        Me.Check_available_sfoods_12.AutoSize = true
         Me.Check_available_sfoods_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_12.Location = New System.Drawing.Point(127, 169)
         Me.Check_available_sfoods_12.Name = "Check_available_sfoods_12"
         Me.Check_available_sfoods_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_12.TabIndex = 144
-        Me.Check_available_sfoods_12.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_12.UseVisualStyleBackColor = false
         '
         'PictureBox34
         '
@@ -2781,7 +2791,7 @@ Partial Class Items_edit
         Me.PictureBox34.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox34.TabIndex = 143
-        Me.PictureBox34.TabStop = False
+        Me.PictureBox34.TabStop = false
         '
         'valu_sfoods_11
         '
@@ -2795,23 +2805,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_11
         '
-        Me.Check_NA_sfoods_11.AutoSize = True
+        Me.Check_NA_sfoods_11.AutoSize = true
         Me.Check_NA_sfoods_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_11.Location = New System.Drawing.Point(106, 169)
         Me.Check_NA_sfoods_11.Name = "Check_NA_sfoods_11"
         Me.Check_NA_sfoods_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_11.TabIndex = 141
-        Me.Check_NA_sfoods_11.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_11.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_11
         '
-        Me.Check_available_sfoods_11.AutoSize = True
+        Me.Check_available_sfoods_11.AutoSize = true
         Me.Check_available_sfoods_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_11.Location = New System.Drawing.Point(45, 169)
         Me.Check_available_sfoods_11.Name = "Check_available_sfoods_11"
         Me.Check_available_sfoods_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_11.TabIndex = 140
-        Me.Check_available_sfoods_11.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_11.UseVisualStyleBackColor = false
         '
         'PictureBox35
         '
@@ -2821,7 +2831,7 @@ Partial Class Items_edit
         Me.PictureBox35.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox35.TabIndex = 139
-        Me.PictureBox35.TabStop = False
+        Me.PictureBox35.TabStop = false
         '
         'valu_sfoods_10
         '
@@ -2835,23 +2845,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_10
         '
-        Me.Check_NA_sfoods_10.AutoSize = True
+        Me.Check_NA_sfoods_10.AutoSize = true
         Me.Check_NA_sfoods_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_10.Location = New System.Drawing.Point(844, 89)
         Me.Check_NA_sfoods_10.Name = "Check_NA_sfoods_10"
         Me.Check_NA_sfoods_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_10.TabIndex = 137
-        Me.Check_NA_sfoods_10.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_10.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_10
         '
-        Me.Check_available_sfoods_10.AutoSize = True
+        Me.Check_available_sfoods_10.AutoSize = true
         Me.Check_available_sfoods_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_10.Location = New System.Drawing.Point(783, 89)
         Me.Check_available_sfoods_10.Name = "Check_available_sfoods_10"
         Me.Check_available_sfoods_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_10.TabIndex = 136
-        Me.Check_available_sfoods_10.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_10.UseVisualStyleBackColor = false
         '
         'PictureBox24
         '
@@ -2861,7 +2871,7 @@ Partial Class Items_edit
         Me.PictureBox24.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox24.TabIndex = 135
-        Me.PictureBox24.TabStop = False
+        Me.PictureBox24.TabStop = false
         '
         'valu_sfoods_9
         '
@@ -2875,23 +2885,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_9
         '
-        Me.Check_NA_sfoods_9.AutoSize = True
+        Me.Check_NA_sfoods_9.AutoSize = true
         Me.Check_NA_sfoods_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_9.Location = New System.Drawing.Point(762, 89)
         Me.Check_NA_sfoods_9.Name = "Check_NA_sfoods_9"
         Me.Check_NA_sfoods_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_9.TabIndex = 133
-        Me.Check_NA_sfoods_9.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_9.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_9
         '
-        Me.Check_available_sfoods_9.AutoSize = True
+        Me.Check_available_sfoods_9.AutoSize = true
         Me.Check_available_sfoods_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_9.Location = New System.Drawing.Point(701, 89)
         Me.Check_available_sfoods_9.Name = "Check_available_sfoods_9"
         Me.Check_available_sfoods_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_9.TabIndex = 132
-        Me.Check_available_sfoods_9.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_9.UseVisualStyleBackColor = false
         '
         'PictureBox25
         '
@@ -2901,7 +2911,7 @@ Partial Class Items_edit
         Me.PictureBox25.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox25.TabIndex = 131
-        Me.PictureBox25.TabStop = False
+        Me.PictureBox25.TabStop = false
         '
         'valu_sfoods_8
         '
@@ -2915,23 +2925,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_8
         '
-        Me.Check_NA_sfoods_8.AutoSize = True
+        Me.Check_NA_sfoods_8.AutoSize = true
         Me.Check_NA_sfoods_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_8.Location = New System.Drawing.Point(680, 89)
         Me.Check_NA_sfoods_8.Name = "Check_NA_sfoods_8"
         Me.Check_NA_sfoods_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_8.TabIndex = 129
-        Me.Check_NA_sfoods_8.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_8.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_8
         '
-        Me.Check_available_sfoods_8.AutoSize = True
+        Me.Check_available_sfoods_8.AutoSize = true
         Me.Check_available_sfoods_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_8.Location = New System.Drawing.Point(619, 89)
         Me.Check_available_sfoods_8.Name = "Check_available_sfoods_8"
         Me.Check_available_sfoods_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_8.TabIndex = 128
-        Me.Check_available_sfoods_8.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_8.UseVisualStyleBackColor = false
         '
         'PictureBox20
         '
@@ -2941,7 +2951,7 @@ Partial Class Items_edit
         Me.PictureBox20.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox20.TabIndex = 127
-        Me.PictureBox20.TabStop = False
+        Me.PictureBox20.TabStop = false
         '
         'valu_sfoods_7
         '
@@ -2955,23 +2965,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_7
         '
-        Me.Check_NA_sfoods_7.AutoSize = True
+        Me.Check_NA_sfoods_7.AutoSize = true
         Me.Check_NA_sfoods_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_7.Location = New System.Drawing.Point(598, 89)
         Me.Check_NA_sfoods_7.Name = "Check_NA_sfoods_7"
         Me.Check_NA_sfoods_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_7.TabIndex = 125
-        Me.Check_NA_sfoods_7.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_7.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_7
         '
-        Me.Check_available_sfoods_7.AutoSize = True
+        Me.Check_available_sfoods_7.AutoSize = true
         Me.Check_available_sfoods_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_7.Location = New System.Drawing.Point(537, 89)
         Me.Check_available_sfoods_7.Name = "Check_available_sfoods_7"
         Me.Check_available_sfoods_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_7.TabIndex = 124
-        Me.Check_available_sfoods_7.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_7.UseVisualStyleBackColor = false
         '
         'PictureBox21
         '
@@ -2981,7 +2991,7 @@ Partial Class Items_edit
         Me.PictureBox21.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox21.TabIndex = 123
-        Me.PictureBox21.TabStop = False
+        Me.PictureBox21.TabStop = false
         '
         'valu_sfoods_6
         '
@@ -2995,23 +3005,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_6
         '
-        Me.Check_NA_sfoods_6.AutoSize = True
+        Me.Check_NA_sfoods_6.AutoSize = true
         Me.Check_NA_sfoods_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_6.Location = New System.Drawing.Point(516, 89)
         Me.Check_NA_sfoods_6.Name = "Check_NA_sfoods_6"
         Me.Check_NA_sfoods_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_6.TabIndex = 121
-        Me.Check_NA_sfoods_6.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_6.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_6
         '
-        Me.Check_available_sfoods_6.AutoSize = True
+        Me.Check_available_sfoods_6.AutoSize = true
         Me.Check_available_sfoods_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_6.Location = New System.Drawing.Point(455, 89)
         Me.Check_available_sfoods_6.Name = "Check_available_sfoods_6"
         Me.Check_available_sfoods_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_6.TabIndex = 120
-        Me.Check_available_sfoods_6.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_6.UseVisualStyleBackColor = false
         '
         'PictureBox22
         '
@@ -3021,7 +3031,7 @@ Partial Class Items_edit
         Me.PictureBox22.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox22.TabIndex = 119
-        Me.PictureBox22.TabStop = False
+        Me.PictureBox22.TabStop = false
         '
         'valu_sfoods_5
         '
@@ -3035,23 +3045,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_5
         '
-        Me.Check_NA_sfoods_5.AutoSize = True
+        Me.Check_NA_sfoods_5.AutoSize = true
         Me.Check_NA_sfoods_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_5.Location = New System.Drawing.Point(434, 89)
         Me.Check_NA_sfoods_5.Name = "Check_NA_sfoods_5"
         Me.Check_NA_sfoods_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_5.TabIndex = 117
-        Me.Check_NA_sfoods_5.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_5.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_5
         '
-        Me.Check_available_sfoods_5.AutoSize = True
+        Me.Check_available_sfoods_5.AutoSize = true
         Me.Check_available_sfoods_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_5.Location = New System.Drawing.Point(373, 89)
         Me.Check_available_sfoods_5.Name = "Check_available_sfoods_5"
         Me.Check_available_sfoods_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_5.TabIndex = 116
-        Me.Check_available_sfoods_5.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_5.UseVisualStyleBackColor = false
         '
         'PictureBox23
         '
@@ -3061,7 +3071,7 @@ Partial Class Items_edit
         Me.PictureBox23.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox23.TabIndex = 115
-        Me.PictureBox23.TabStop = False
+        Me.PictureBox23.TabStop = false
         '
         'valu_sfoods_4
         '
@@ -3075,23 +3085,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_4
         '
-        Me.Check_NA_sfoods_4.AutoSize = True
+        Me.Check_NA_sfoods_4.AutoSize = true
         Me.Check_NA_sfoods_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_4.Location = New System.Drawing.Point(352, 89)
         Me.Check_NA_sfoods_4.Name = "Check_NA_sfoods_4"
         Me.Check_NA_sfoods_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_4.TabIndex = 113
-        Me.Check_NA_sfoods_4.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_4.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_4
         '
-        Me.Check_available_sfoods_4.AutoSize = True
+        Me.Check_available_sfoods_4.AutoSize = true
         Me.Check_available_sfoods_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_4.Location = New System.Drawing.Point(291, 89)
         Me.Check_available_sfoods_4.Name = "Check_available_sfoods_4"
         Me.Check_available_sfoods_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_4.TabIndex = 112
-        Me.Check_available_sfoods_4.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_4.UseVisualStyleBackColor = false
         '
         'PictureBox8
         '
@@ -3101,7 +3111,7 @@ Partial Class Items_edit
         Me.PictureBox8.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox8.TabIndex = 111
-        Me.PictureBox8.TabStop = False
+        Me.PictureBox8.TabStop = false
         '
         'valu_sfoods_3
         '
@@ -3115,23 +3125,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_3
         '
-        Me.Check_NA_sfoods_3.AutoSize = True
+        Me.Check_NA_sfoods_3.AutoSize = true
         Me.Check_NA_sfoods_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_3.Location = New System.Drawing.Point(270, 89)
         Me.Check_NA_sfoods_3.Name = "Check_NA_sfoods_3"
         Me.Check_NA_sfoods_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_3.TabIndex = 109
-        Me.Check_NA_sfoods_3.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_3.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_3
         '
-        Me.Check_available_sfoods_3.AutoSize = True
+        Me.Check_available_sfoods_3.AutoSize = true
         Me.Check_available_sfoods_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_3.Location = New System.Drawing.Point(209, 89)
         Me.Check_available_sfoods_3.Name = "Check_available_sfoods_3"
         Me.Check_available_sfoods_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_3.TabIndex = 108
-        Me.Check_available_sfoods_3.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_3.UseVisualStyleBackColor = false
         '
         'PictureBox19
         '
@@ -3141,7 +3151,7 @@ Partial Class Items_edit
         Me.PictureBox19.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox19.TabIndex = 107
-        Me.PictureBox19.TabStop = False
+        Me.PictureBox19.TabStop = false
         '
         'valu_sfoods_2
         '
@@ -3155,23 +3165,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_2
         '
-        Me.Check_NA_sfoods_2.AutoSize = True
+        Me.Check_NA_sfoods_2.AutoSize = true
         Me.Check_NA_sfoods_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_2.Location = New System.Drawing.Point(188, 89)
         Me.Check_NA_sfoods_2.Name = "Check_NA_sfoods_2"
         Me.Check_NA_sfoods_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_2.TabIndex = 105
-        Me.Check_NA_sfoods_2.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_2.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_2
         '
-        Me.Check_available_sfoods_2.AutoSize = True
+        Me.Check_available_sfoods_2.AutoSize = true
         Me.Check_available_sfoods_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_2.Location = New System.Drawing.Point(127, 89)
         Me.Check_available_sfoods_2.Name = "Check_available_sfoods_2"
         Me.Check_available_sfoods_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_2.TabIndex = 104
-        Me.Check_available_sfoods_2.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_2.UseVisualStyleBackColor = false
         '
         'PictureBox7
         '
@@ -3181,7 +3191,7 @@ Partial Class Items_edit
         Me.PictureBox7.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox7.TabIndex = 103
-        Me.PictureBox7.TabStop = False
+        Me.PictureBox7.TabStop = false
         '
         'valu_sfoods_1
         '
@@ -3195,23 +3205,23 @@ Partial Class Items_edit
         '
         'Check_NA_sfoods_1
         '
-        Me.Check_NA_sfoods_1.AutoSize = True
+        Me.Check_NA_sfoods_1.AutoSize = true
         Me.Check_NA_sfoods_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_sfoods_1.Location = New System.Drawing.Point(106, 89)
         Me.Check_NA_sfoods_1.Name = "Check_NA_sfoods_1"
         Me.Check_NA_sfoods_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_sfoods_1.TabIndex = 101
-        Me.Check_NA_sfoods_1.UseVisualStyleBackColor = False
+        Me.Check_NA_sfoods_1.UseVisualStyleBackColor = false
         '
         'Check_available_sfoods_1
         '
-        Me.Check_available_sfoods_1.AutoSize = True
+        Me.Check_available_sfoods_1.AutoSize = true
         Me.Check_available_sfoods_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_sfoods_1.Location = New System.Drawing.Point(45, 89)
         Me.Check_available_sfoods_1.Name = "Check_available_sfoods_1"
         Me.Check_available_sfoods_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_sfoods_1.TabIndex = 100
-        Me.Check_available_sfoods_1.UseVisualStyleBackColor = False
+        Me.Check_available_sfoods_1.UseVisualStyleBackColor = false
         '
         'PictureBox6
         '
@@ -3221,7 +3231,7 @@ Partial Class Items_edit
         Me.PictureBox6.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 99
-        Me.PictureBox6.TabStop = False
+        Me.PictureBox6.TabStop = false
         '
         'Icon_hats_03
         '
@@ -3232,8 +3242,8 @@ Partial Class Items_edit
         Me.Icon_hats_03.Name = "Icon_hats_03"
         Me.Icon_hats_03.Size = New System.Drawing.Size(54, 26)
         Me.Icon_hats_03.TabIndex = 100
-        Me.Icon_hats_03.TabStop = False
-        Me.Icon_hats_03.Visible = False
+        Me.Icon_hats_03.TabStop = false
+        Me.Icon_hats_03.Visible = false
         '
         'Icon_hats_02
         '
@@ -3244,8 +3254,8 @@ Partial Class Items_edit
         Me.Icon_hats_02.Name = "Icon_hats_02"
         Me.Icon_hats_02.Size = New System.Drawing.Size(54, 26)
         Me.Icon_hats_02.TabIndex = 99
-        Me.Icon_hats_02.TabStop = False
-        Me.Icon_hats_02.Visible = False
+        Me.Icon_hats_02.TabStop = false
+        Me.Icon_hats_02.Visible = false
         '
         'Icon_hats_01
         '
@@ -3256,8 +3266,8 @@ Partial Class Items_edit
         Me.Icon_hats_01.Name = "Icon_hats_01"
         Me.Icon_hats_01.Size = New System.Drawing.Size(54, 26)
         Me.Icon_hats_01.TabIndex = 98
-        Me.Icon_hats_01.TabStop = False
-        Me.Icon_hats_01.Visible = False
+        Me.Icon_hats_01.TabStop = false
+        Me.Icon_hats_01.Visible = false
         '
         'Icon_normalfoods_01
         '
@@ -3268,8 +3278,8 @@ Partial Class Items_edit
         Me.Icon_normalfoods_01.Name = "Icon_normalfoods_01"
         Me.Icon_normalfoods_01.Size = New System.Drawing.Size(64, 26)
         Me.Icon_normalfoods_01.TabIndex = 99
-        Me.Icon_normalfoods_01.TabStop = False
-        Me.Icon_normalfoods_01.Visible = False
+        Me.Icon_normalfoods_01.TabStop = false
+        Me.Icon_normalfoods_01.Visible = false
         '
         'Icon_normalfoods_03
         '
@@ -3280,8 +3290,8 @@ Partial Class Items_edit
         Me.Icon_normalfoods_03.Name = "Icon_normalfoods_03"
         Me.Icon_normalfoods_03.Size = New System.Drawing.Size(64, 26)
         Me.Icon_normalfoods_03.TabIndex = 101
-        Me.Icon_normalfoods_03.TabStop = False
-        Me.Icon_normalfoods_03.Visible = False
+        Me.Icon_normalfoods_03.TabStop = false
+        Me.Icon_normalfoods_03.Visible = false
         '
         'Icon_normalfoods_04
         '
@@ -3292,8 +3302,8 @@ Partial Class Items_edit
         Me.Icon_normalfoods_04.Name = "Icon_normalfoods_04"
         Me.Icon_normalfoods_04.Size = New System.Drawing.Size(64, 26)
         Me.Icon_normalfoods_04.TabIndex = 102
-        Me.Icon_normalfoods_04.TabStop = False
-        Me.Icon_normalfoods_04.Visible = False
+        Me.Icon_normalfoods_04.TabStop = false
+        Me.Icon_normalfoods_04.Visible = false
         '
         'Icon_normalfoods_02
         '
@@ -3304,8 +3314,8 @@ Partial Class Items_edit
         Me.Icon_normalfoods_02.Name = "Icon_normalfoods_02"
         Me.Icon_normalfoods_02.Size = New System.Drawing.Size(64, 26)
         Me.Icon_normalfoods_02.TabIndex = 100
-        Me.Icon_normalfoods_02.TabStop = False
-        Me.Icon_normalfoods_02.Visible = False
+        Me.Icon_normalfoods_02.TabStop = false
+        Me.Icon_normalfoods_02.Visible = false
         '
         'Icon_normalfoods
         '
@@ -3316,7 +3326,7 @@ Partial Class Items_edit
         Me.Icon_normalfoods.Name = "Icon_normalfoods"
         Me.Icon_normalfoods.Size = New System.Drawing.Size(50, 32)
         Me.Icon_normalfoods.TabIndex = 1
-        Me.Icon_normalfoods.TabStop = False
+        Me.Icon_normalfoods.TabStop = false
         '
         'Icon_clothes
         '
@@ -3327,7 +3337,7 @@ Partial Class Items_edit
         Me.Icon_clothes.Name = "Icon_clothes"
         Me.Icon_clothes.Size = New System.Drawing.Size(50, 32)
         Me.Icon_clothes.TabIndex = 2
-        Me.Icon_clothes.TabStop = False
+        Me.Icon_clothes.TabStop = false
         '
         'Icon_interiors
         '
@@ -3338,7 +3348,7 @@ Partial Class Items_edit
         Me.Icon_interiors.Name = "Icon_interiors"
         Me.Icon_interiors.Size = New System.Drawing.Size(50, 32)
         Me.Icon_interiors.TabIndex = 4
-        Me.Icon_interiors.TabStop = False
+        Me.Icon_interiors.TabStop = false
         '
         'Icon_hats
         '
@@ -3349,7 +3359,7 @@ Partial Class Items_edit
         Me.Icon_hats.Name = "Icon_hats"
         Me.Icon_hats.Size = New System.Drawing.Size(50, 32)
         Me.Icon_hats.TabIndex = 3
-        Me.Icon_hats.TabStop = False
+        Me.Icon_hats.TabStop = false
         '
         'Icon_treasures
         '
@@ -3360,7 +3370,7 @@ Partial Class Items_edit
         Me.Icon_treasures.Name = "Icon_treasures"
         Me.Icon_treasures.Size = New System.Drawing.Size(50, 32)
         Me.Icon_treasures.TabIndex = 6
-        Me.Icon_treasures.TabStop = False
+        Me.Icon_treasures.TabStop = false
         '
         'Icon_gooditems
         '
@@ -3371,7 +3381,7 @@ Partial Class Items_edit
         Me.Icon_gooditems.Name = "Icon_gooditems"
         Me.Icon_gooditems.Size = New System.Drawing.Size(50, 32)
         Me.Icon_gooditems.TabIndex = 5
-        Me.Icon_gooditems.TabStop = False
+        Me.Icon_gooditems.TabStop = false
         '
         'Icon_treasures_01
         '
@@ -3382,7 +3392,7 @@ Partial Class Items_edit
         Me.Icon_treasures_01.Name = "Icon_treasures_01"
         Me.Icon_treasures_01.Size = New System.Drawing.Size(138, 28)
         Me.Icon_treasures_01.TabIndex = 9
-        Me.Icon_treasures_01.Visible = False
+        Me.Icon_treasures_01.Visible = false
         '
         'Text_treasures_01
         '
@@ -3404,7 +3414,7 @@ Partial Class Items_edit
         Me.Icon_specialfoods.Name = "Icon_specialfoods"
         Me.Icon_specialfoods.Size = New System.Drawing.Size(138, 28)
         Me.Icon_specialfoods.TabIndex = 10
-        Me.Icon_specialfoods.Visible = False
+        Me.Icon_specialfoods.Visible = false
         '
         'Text_specialfoods
         '
@@ -3426,7 +3436,7 @@ Partial Class Items_edit
         Me.Icon_return.Name = "Icon_return"
         Me.Icon_return.Size = New System.Drawing.Size(40, 30)
         Me.Icon_return.TabIndex = 11
-        Me.Icon_return.TabStop = False
+        Me.Icon_return.TabStop = false
         '
         'Icon_clothes_01
         '
@@ -3437,8 +3447,8 @@ Partial Class Items_edit
         Me.Icon_clothes_01.Name = "Icon_clothes_01"
         Me.Icon_clothes_01.Size = New System.Drawing.Size(54, 26)
         Me.Icon_clothes_01.TabIndex = 12
-        Me.Icon_clothes_01.TabStop = False
-        Me.Icon_clothes_01.Visible = False
+        Me.Icon_clothes_01.TabStop = false
+        Me.Icon_clothes_01.Visible = false
         '
         'Icon_clothes_02
         '
@@ -3449,8 +3459,8 @@ Partial Class Items_edit
         Me.Icon_clothes_02.Name = "Icon_clothes_02"
         Me.Icon_clothes_02.Size = New System.Drawing.Size(54, 26)
         Me.Icon_clothes_02.TabIndex = 96
-        Me.Icon_clothes_02.TabStop = False
-        Me.Icon_clothes_02.Visible = False
+        Me.Icon_clothes_02.TabStop = false
+        Me.Icon_clothes_02.Visible = false
         '
         'Icon_clothes_04
         '
@@ -3461,8 +3471,8 @@ Partial Class Items_edit
         Me.Icon_clothes_04.Name = "Icon_clothes_04"
         Me.Icon_clothes_04.Size = New System.Drawing.Size(54, 26)
         Me.Icon_clothes_04.TabIndex = 98
-        Me.Icon_clothes_04.TabStop = False
-        Me.Icon_clothes_04.Visible = False
+        Me.Icon_clothes_04.TabStop = false
+        Me.Icon_clothes_04.Visible = false
         '
         'Icon_clothes_03
         '
@@ -3473,8 +3483,8 @@ Partial Class Items_edit
         Me.Icon_clothes_03.Name = "Icon_clothes_03"
         Me.Icon_clothes_03.Size = New System.Drawing.Size(54, 26)
         Me.Icon_clothes_03.TabIndex = 97
-        Me.Icon_clothes_03.TabStop = False
-        Me.Icon_clothes_03.Visible = False
+        Me.Icon_clothes_03.TabStop = false
+        Me.Icon_clothes_03.Visible = false
         '
         'Icon_clothes_05
         '
@@ -3485,16 +3495,16 @@ Partial Class Items_edit
         Me.Icon_clothes_05.Name = "Icon_clothes_05"
         Me.Icon_clothes_05.Size = New System.Drawing.Size(54, 26)
         Me.Icon_clothes_05.TabIndex = 99
-        Me.Icon_clothes_05.TabStop = False
-        Me.Icon_clothes_05.Visible = False
+        Me.Icon_clothes_05.TabStop = false
+        Me.Icon_clothes_05.Visible = false
         '
         'Panel_gooditems
         '
-        Me.Panel_gooditems.BackgroundImage = CType(resources.GetObject("Panel_gooditems.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_gooditems.BackgroundImage = CType(resources.GetObject("Panel_gooditems.BackgroundImage"),System.Drawing.Image)
         Me.Panel_gooditems.Controls.Add(Me.valu_goodi_18)
         Me.Panel_gooditems.Controls.Add(Me.Check_NA_goodi_18)
         Me.Panel_gooditems.Controls.Add(Me.Check_available_goodi_18)
-        Me.Panel_gooditems.Controls.Add(Me.PictureBox61)
+        Me.Panel_gooditems.Controls.Add(Me.Icon_goodi_18)
         Me.Panel_gooditems.Controls.Add(Me.valu_goodi_17)
         Me.Panel_gooditems.Controls.Add(Me.Check_NA_goodi_17)
         Me.Panel_gooditems.Controls.Add(Me.Check_available_goodi_17)
@@ -3567,7 +3577,7 @@ Partial Class Items_edit
         Me.Panel_gooditems.Name = "Panel_gooditems"
         Me.Panel_gooditems.Size = New System.Drawing.Size(905, 506)
         Me.Panel_gooditems.TabIndex = 103
-        Me.Panel_gooditems.Visible = False
+        Me.Panel_gooditems.Visible = false
         '
         'valu_goodi_18
         '
@@ -3581,33 +3591,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_18
         '
-        Me.Check_NA_goodi_18.AutoSize = True
+        Me.Check_NA_goodi_18.AutoSize = true
         Me.Check_NA_goodi_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_18.Location = New System.Drawing.Point(762, 316)
         Me.Check_NA_goodi_18.Name = "Check_NA_goodi_18"
         Me.Check_NA_goodi_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_18.TabIndex = 249
-        Me.Check_NA_goodi_18.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_18.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_18
         '
-        Me.Check_available_goodi_18.AutoSize = True
+        Me.Check_available_goodi_18.AutoSize = true
         Me.Check_available_goodi_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_18.Location = New System.Drawing.Point(701, 316)
         Me.Check_available_goodi_18.Name = "Check_available_goodi_18"
         Me.Check_available_goodi_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_18.TabIndex = 248
-        Me.Check_available_goodi_18.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_18.UseVisualStyleBackColor = false
         '
-        'PictureBox61
+        'Icon_goodi_18
         '
-        Me.PictureBox61.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
-        Me.PictureBox61.Location = New System.Drawing.Point(701, 256)
-        Me.PictureBox61.Name = "PictureBox61"
-        Me.PictureBox61.Size = New System.Drawing.Size(76, 74)
-        Me.PictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox61.TabIndex = 247
-        Me.PictureBox61.TabStop = False
+        Me.Icon_goodi_18.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.Icon_goodi_18.Location = New System.Drawing.Point(701, 256)
+        Me.Icon_goodi_18.Name = "Icon_goodi_18"
+        Me.Icon_goodi_18.Size = New System.Drawing.Size(76, 74)
+        Me.Icon_goodi_18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_goodi_18.TabIndex = 247
+        Me.Icon_goodi_18.TabStop = false
         '
         'valu_goodi_17
         '
@@ -3621,23 +3631,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_17
         '
-        Me.Check_NA_goodi_17.AutoSize = True
+        Me.Check_NA_goodi_17.AutoSize = true
         Me.Check_NA_goodi_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_17.Location = New System.Drawing.Point(680, 316)
         Me.Check_NA_goodi_17.Name = "Check_NA_goodi_17"
         Me.Check_NA_goodi_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_17.TabIndex = 245
-        Me.Check_NA_goodi_17.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_17.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_17
         '
-        Me.Check_available_goodi_17.AutoSize = True
+        Me.Check_available_goodi_17.AutoSize = true
         Me.Check_available_goodi_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_17.Location = New System.Drawing.Point(619, 316)
         Me.Check_available_goodi_17.Name = "Check_available_goodi_17"
         Me.Check_available_goodi_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_17.TabIndex = 244
-        Me.Check_available_goodi_17.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_17.UseVisualStyleBackColor = false
         '
         'PictureBox62
         '
@@ -3647,7 +3657,7 @@ Partial Class Items_edit
         Me.PictureBox62.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox62.TabIndex = 243
-        Me.PictureBox62.TabStop = False
+        Me.PictureBox62.TabStop = false
         '
         'valu_goodi_16
         '
@@ -3661,23 +3671,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_16
         '
-        Me.Check_NA_goodi_16.AutoSize = True
+        Me.Check_NA_goodi_16.AutoSize = true
         Me.Check_NA_goodi_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_16.Location = New System.Drawing.Point(598, 316)
         Me.Check_NA_goodi_16.Name = "Check_NA_goodi_16"
         Me.Check_NA_goodi_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_16.TabIndex = 241
-        Me.Check_NA_goodi_16.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_16.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_16
         '
-        Me.Check_available_goodi_16.AutoSize = True
+        Me.Check_available_goodi_16.AutoSize = true
         Me.Check_available_goodi_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_16.Location = New System.Drawing.Point(537, 316)
         Me.Check_available_goodi_16.Name = "Check_available_goodi_16"
         Me.Check_available_goodi_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_16.TabIndex = 240
-        Me.Check_available_goodi_16.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_16.UseVisualStyleBackColor = false
         '
         'PictureBox63
         '
@@ -3687,7 +3697,7 @@ Partial Class Items_edit
         Me.PictureBox63.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox63.TabIndex = 239
-        Me.PictureBox63.TabStop = False
+        Me.PictureBox63.TabStop = false
         '
         'valu_goodi_15
         '
@@ -3701,23 +3711,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_15
         '
-        Me.Check_NA_goodi_15.AutoSize = True
+        Me.Check_NA_goodi_15.AutoSize = true
         Me.Check_NA_goodi_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_15.Location = New System.Drawing.Point(516, 316)
         Me.Check_NA_goodi_15.Name = "Check_NA_goodi_15"
         Me.Check_NA_goodi_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_15.TabIndex = 237
-        Me.Check_NA_goodi_15.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_15.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_15
         '
-        Me.Check_available_goodi_15.AutoSize = True
+        Me.Check_available_goodi_15.AutoSize = true
         Me.Check_available_goodi_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_15.Location = New System.Drawing.Point(455, 316)
         Me.Check_available_goodi_15.Name = "Check_available_goodi_15"
         Me.Check_available_goodi_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_15.TabIndex = 236
-        Me.Check_available_goodi_15.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_15.UseVisualStyleBackColor = false
         '
         'PictureBox64
         '
@@ -3727,7 +3737,7 @@ Partial Class Items_edit
         Me.PictureBox64.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox64.TabIndex = 235
-        Me.PictureBox64.TabStop = False
+        Me.PictureBox64.TabStop = false
         '
         'valu_goodi_14
         '
@@ -3741,23 +3751,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_14
         '
-        Me.Check_NA_goodi_14.AutoSize = True
+        Me.Check_NA_goodi_14.AutoSize = true
         Me.Check_NA_goodi_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_14.Location = New System.Drawing.Point(434, 316)
         Me.Check_NA_goodi_14.Name = "Check_NA_goodi_14"
         Me.Check_NA_goodi_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_14.TabIndex = 233
-        Me.Check_NA_goodi_14.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_14.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_14
         '
-        Me.Check_available_goodi_14.AutoSize = True
+        Me.Check_available_goodi_14.AutoSize = true
         Me.Check_available_goodi_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_14.Location = New System.Drawing.Point(373, 316)
         Me.Check_available_goodi_14.Name = "Check_available_goodi_14"
         Me.Check_available_goodi_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_14.TabIndex = 232
-        Me.Check_available_goodi_14.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_14.UseVisualStyleBackColor = false
         '
         'PictureBox65
         '
@@ -3767,7 +3777,7 @@ Partial Class Items_edit
         Me.PictureBox65.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox65.TabIndex = 231
-        Me.PictureBox65.TabStop = False
+        Me.PictureBox65.TabStop = false
         '
         'valu_goodi_13
         '
@@ -3781,23 +3791,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_13
         '
-        Me.Check_NA_goodi_13.AutoSize = True
+        Me.Check_NA_goodi_13.AutoSize = true
         Me.Check_NA_goodi_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_13.Location = New System.Drawing.Point(352, 316)
         Me.Check_NA_goodi_13.Name = "Check_NA_goodi_13"
         Me.Check_NA_goodi_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_13.TabIndex = 229
-        Me.Check_NA_goodi_13.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_13.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_13
         '
-        Me.Check_available_goodi_13.AutoSize = True
+        Me.Check_available_goodi_13.AutoSize = true
         Me.Check_available_goodi_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_13.Location = New System.Drawing.Point(291, 316)
         Me.Check_available_goodi_13.Name = "Check_available_goodi_13"
         Me.Check_available_goodi_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_13.TabIndex = 228
-        Me.Check_available_goodi_13.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_13.UseVisualStyleBackColor = false
         '
         'PictureBox66
         '
@@ -3807,7 +3817,7 @@ Partial Class Items_edit
         Me.PictureBox66.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox66.TabIndex = 227
-        Me.PictureBox66.TabStop = False
+        Me.PictureBox66.TabStop = false
         '
         'valu_goodi_12
         '
@@ -3821,23 +3831,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_12
         '
-        Me.Check_NA_goodi_12.AutoSize = True
+        Me.Check_NA_goodi_12.AutoSize = true
         Me.Check_NA_goodi_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_12.Location = New System.Drawing.Point(270, 316)
         Me.Check_NA_goodi_12.Name = "Check_NA_goodi_12"
         Me.Check_NA_goodi_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_12.TabIndex = 225
-        Me.Check_NA_goodi_12.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_12.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_12
         '
-        Me.Check_available_goodi_12.AutoSize = True
+        Me.Check_available_goodi_12.AutoSize = true
         Me.Check_available_goodi_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_12.Location = New System.Drawing.Point(209, 316)
         Me.Check_available_goodi_12.Name = "Check_available_goodi_12"
         Me.Check_available_goodi_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_12.TabIndex = 224
-        Me.Check_available_goodi_12.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_12.UseVisualStyleBackColor = false
         '
         'PictureBox67
         '
@@ -3847,7 +3857,7 @@ Partial Class Items_edit
         Me.PictureBox67.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox67.TabIndex = 223
-        Me.PictureBox67.TabStop = False
+        Me.PictureBox67.TabStop = false
         '
         'valu_goodi_11
         '
@@ -3861,23 +3871,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_11
         '
-        Me.Check_NA_goodi_11.AutoSize = True
+        Me.Check_NA_goodi_11.AutoSize = true
         Me.Check_NA_goodi_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_11.Location = New System.Drawing.Point(188, 316)
         Me.Check_NA_goodi_11.Name = "Check_NA_goodi_11"
         Me.Check_NA_goodi_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_11.TabIndex = 221
-        Me.Check_NA_goodi_11.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_11.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_11
         '
-        Me.Check_available_goodi_11.AutoSize = True
+        Me.Check_available_goodi_11.AutoSize = true
         Me.Check_available_goodi_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_11.Location = New System.Drawing.Point(127, 316)
         Me.Check_available_goodi_11.Name = "Check_available_goodi_11"
         Me.Check_available_goodi_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_11.TabIndex = 220
-        Me.Check_available_goodi_11.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_11.UseVisualStyleBackColor = false
         '
         'PictureBox68
         '
@@ -3887,7 +3897,7 @@ Partial Class Items_edit
         Me.PictureBox68.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox68.TabIndex = 219
-        Me.PictureBox68.TabStop = False
+        Me.PictureBox68.TabStop = false
         '
         'valu_goodi_10
         '
@@ -3901,23 +3911,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_10
         '
-        Me.Check_NA_goodi_10.AutoSize = True
+        Me.Check_NA_goodi_10.AutoSize = true
         Me.Check_NA_goodi_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_10.Location = New System.Drawing.Point(844, 236)
         Me.Check_NA_goodi_10.Name = "Check_NA_goodi_10"
         Me.Check_NA_goodi_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_10.TabIndex = 217
-        Me.Check_NA_goodi_10.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_10.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_10
         '
-        Me.Check_available_goodi_10.AutoSize = True
+        Me.Check_available_goodi_10.AutoSize = true
         Me.Check_available_goodi_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_10.Location = New System.Drawing.Point(783, 236)
         Me.Check_available_goodi_10.Name = "Check_available_goodi_10"
         Me.Check_available_goodi_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_10.TabIndex = 216
-        Me.Check_available_goodi_10.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_10.UseVisualStyleBackColor = false
         '
         'PictureBox69
         '
@@ -3927,7 +3937,7 @@ Partial Class Items_edit
         Me.PictureBox69.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox69.TabIndex = 215
-        Me.PictureBox69.TabStop = False
+        Me.PictureBox69.TabStop = false
         '
         'valu_goodi_9
         '
@@ -3941,23 +3951,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_9
         '
-        Me.Check_NA_goodi_9.AutoSize = True
+        Me.Check_NA_goodi_9.AutoSize = true
         Me.Check_NA_goodi_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_9.Location = New System.Drawing.Point(762, 236)
         Me.Check_NA_goodi_9.Name = "Check_NA_goodi_9"
         Me.Check_NA_goodi_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_9.TabIndex = 213
-        Me.Check_NA_goodi_9.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_9.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_9
         '
-        Me.Check_available_goodi_9.AutoSize = True
+        Me.Check_available_goodi_9.AutoSize = true
         Me.Check_available_goodi_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_9.Location = New System.Drawing.Point(701, 236)
         Me.Check_available_goodi_9.Name = "Check_available_goodi_9"
         Me.Check_available_goodi_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_9.TabIndex = 212
-        Me.Check_available_goodi_9.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_9.UseVisualStyleBackColor = false
         '
         'PictureBox70
         '
@@ -3967,7 +3977,7 @@ Partial Class Items_edit
         Me.PictureBox70.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox70.TabIndex = 211
-        Me.PictureBox70.TabStop = False
+        Me.PictureBox70.TabStop = false
         '
         'valu_goodi_8
         '
@@ -3981,23 +3991,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_8
         '
-        Me.Check_NA_goodi_8.AutoSize = True
+        Me.Check_NA_goodi_8.AutoSize = true
         Me.Check_NA_goodi_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_8.Location = New System.Drawing.Point(680, 236)
         Me.Check_NA_goodi_8.Name = "Check_NA_goodi_8"
         Me.Check_NA_goodi_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_8.TabIndex = 209
-        Me.Check_NA_goodi_8.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_8.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_8
         '
-        Me.Check_available_goodi_8.AutoSize = True
+        Me.Check_available_goodi_8.AutoSize = true
         Me.Check_available_goodi_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_8.Location = New System.Drawing.Point(619, 236)
         Me.Check_available_goodi_8.Name = "Check_available_goodi_8"
         Me.Check_available_goodi_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_8.TabIndex = 208
-        Me.Check_available_goodi_8.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_8.UseVisualStyleBackColor = false
         '
         'PictureBox71
         '
@@ -4007,7 +4017,7 @@ Partial Class Items_edit
         Me.PictureBox71.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox71.TabIndex = 207
-        Me.PictureBox71.TabStop = False
+        Me.PictureBox71.TabStop = false
         '
         'valu_goodi_7
         '
@@ -4021,23 +4031,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_7
         '
-        Me.Check_NA_goodi_7.AutoSize = True
+        Me.Check_NA_goodi_7.AutoSize = true
         Me.Check_NA_goodi_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_7.Location = New System.Drawing.Point(598, 236)
         Me.Check_NA_goodi_7.Name = "Check_NA_goodi_7"
         Me.Check_NA_goodi_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_7.TabIndex = 205
-        Me.Check_NA_goodi_7.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_7.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_7
         '
-        Me.Check_available_goodi_7.AutoSize = True
+        Me.Check_available_goodi_7.AutoSize = true
         Me.Check_available_goodi_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_7.Location = New System.Drawing.Point(537, 236)
         Me.Check_available_goodi_7.Name = "Check_available_goodi_7"
         Me.Check_available_goodi_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_7.TabIndex = 204
-        Me.Check_available_goodi_7.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_7.UseVisualStyleBackColor = false
         '
         'PictureBox72
         '
@@ -4047,7 +4057,7 @@ Partial Class Items_edit
         Me.PictureBox72.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox72.TabIndex = 203
-        Me.PictureBox72.TabStop = False
+        Me.PictureBox72.TabStop = false
         '
         'valu_goodi_6
         '
@@ -4061,23 +4071,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_6
         '
-        Me.Check_NA_goodi_6.AutoSize = True
+        Me.Check_NA_goodi_6.AutoSize = true
         Me.Check_NA_goodi_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_6.Location = New System.Drawing.Point(516, 236)
         Me.Check_NA_goodi_6.Name = "Check_NA_goodi_6"
         Me.Check_NA_goodi_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_6.TabIndex = 201
-        Me.Check_NA_goodi_6.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_6.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_6
         '
-        Me.Check_available_goodi_6.AutoSize = True
+        Me.Check_available_goodi_6.AutoSize = true
         Me.Check_available_goodi_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_6.Location = New System.Drawing.Point(455, 236)
         Me.Check_available_goodi_6.Name = "Check_available_goodi_6"
         Me.Check_available_goodi_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_6.TabIndex = 200
-        Me.Check_available_goodi_6.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_6.UseVisualStyleBackColor = false
         '
         'PictureBox73
         '
@@ -4087,7 +4097,7 @@ Partial Class Items_edit
         Me.PictureBox73.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox73.TabIndex = 199
-        Me.PictureBox73.TabStop = False
+        Me.PictureBox73.TabStop = false
         '
         'valu_goodi_5
         '
@@ -4101,23 +4111,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_5
         '
-        Me.Check_NA_goodi_5.AutoSize = True
+        Me.Check_NA_goodi_5.AutoSize = true
         Me.Check_NA_goodi_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_5.Location = New System.Drawing.Point(434, 236)
         Me.Check_NA_goodi_5.Name = "Check_NA_goodi_5"
         Me.Check_NA_goodi_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_5.TabIndex = 197
-        Me.Check_NA_goodi_5.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_5.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_5
         '
-        Me.Check_available_goodi_5.AutoSize = True
+        Me.Check_available_goodi_5.AutoSize = true
         Me.Check_available_goodi_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_5.Location = New System.Drawing.Point(373, 236)
         Me.Check_available_goodi_5.Name = "Check_available_goodi_5"
         Me.Check_available_goodi_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_5.TabIndex = 196
-        Me.Check_available_goodi_5.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_5.UseVisualStyleBackColor = false
         '
         'PictureBox74
         '
@@ -4127,7 +4137,7 @@ Partial Class Items_edit
         Me.PictureBox74.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox74.TabIndex = 195
-        Me.PictureBox74.TabStop = False
+        Me.PictureBox74.TabStop = false
         '
         'valu_goodi_4
         '
@@ -4141,23 +4151,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_4
         '
-        Me.Check_NA_goodi_4.AutoSize = True
+        Me.Check_NA_goodi_4.AutoSize = true
         Me.Check_NA_goodi_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_4.Location = New System.Drawing.Point(352, 236)
         Me.Check_NA_goodi_4.Name = "Check_NA_goodi_4"
         Me.Check_NA_goodi_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_4.TabIndex = 193
-        Me.Check_NA_goodi_4.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_4.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_4
         '
-        Me.Check_available_goodi_4.AutoSize = True
+        Me.Check_available_goodi_4.AutoSize = true
         Me.Check_available_goodi_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_4.Location = New System.Drawing.Point(291, 236)
         Me.Check_available_goodi_4.Name = "Check_available_goodi_4"
         Me.Check_available_goodi_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_4.TabIndex = 192
-        Me.Check_available_goodi_4.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_4.UseVisualStyleBackColor = false
         '
         'PictureBox75
         '
@@ -4167,7 +4177,7 @@ Partial Class Items_edit
         Me.PictureBox75.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox75.TabIndex = 191
-        Me.PictureBox75.TabStop = False
+        Me.PictureBox75.TabStop = false
         '
         'valu_goodi_3
         '
@@ -4181,23 +4191,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_3
         '
-        Me.Check_NA_goodi_3.AutoSize = True
+        Me.Check_NA_goodi_3.AutoSize = true
         Me.Check_NA_goodi_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_3.Location = New System.Drawing.Point(270, 236)
         Me.Check_NA_goodi_3.Name = "Check_NA_goodi_3"
         Me.Check_NA_goodi_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_3.TabIndex = 189
-        Me.Check_NA_goodi_3.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_3.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_3
         '
-        Me.Check_available_goodi_3.AutoSize = True
+        Me.Check_available_goodi_3.AutoSize = true
         Me.Check_available_goodi_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_3.Location = New System.Drawing.Point(209, 236)
         Me.Check_available_goodi_3.Name = "Check_available_goodi_3"
         Me.Check_available_goodi_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_3.TabIndex = 188
-        Me.Check_available_goodi_3.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_3.UseVisualStyleBackColor = false
         '
         'PictureBox76
         '
@@ -4207,7 +4217,7 @@ Partial Class Items_edit
         Me.PictureBox76.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox76.TabIndex = 187
-        Me.PictureBox76.TabStop = False
+        Me.PictureBox76.TabStop = false
         '
         'valu_goodi_2
         '
@@ -4221,23 +4231,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_2
         '
-        Me.Check_NA_goodi_2.AutoSize = True
+        Me.Check_NA_goodi_2.AutoSize = true
         Me.Check_NA_goodi_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_2.Location = New System.Drawing.Point(188, 236)
         Me.Check_NA_goodi_2.Name = "Check_NA_goodi_2"
         Me.Check_NA_goodi_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_2.TabIndex = 185
-        Me.Check_NA_goodi_2.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_2.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_2
         '
-        Me.Check_available_goodi_2.AutoSize = True
+        Me.Check_available_goodi_2.AutoSize = true
         Me.Check_available_goodi_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_2.Location = New System.Drawing.Point(127, 236)
         Me.Check_available_goodi_2.Name = "Check_available_goodi_2"
         Me.Check_available_goodi_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_2.TabIndex = 184
-        Me.Check_available_goodi_2.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_2.UseVisualStyleBackColor = false
         '
         'PictureBox170
         '
@@ -4247,7 +4257,7 @@ Partial Class Items_edit
         Me.PictureBox170.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox170.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox170.TabIndex = 183
-        Me.PictureBox170.TabStop = False
+        Me.PictureBox170.TabStop = false
         '
         'valu_goodi_1
         '
@@ -4261,23 +4271,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_1
         '
-        Me.Check_NA_goodi_1.AutoSize = True
+        Me.Check_NA_goodi_1.AutoSize = true
         Me.Check_NA_goodi_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_1.Location = New System.Drawing.Point(106, 236)
         Me.Check_NA_goodi_1.Name = "Check_NA_goodi_1"
         Me.Check_NA_goodi_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_1.TabIndex = 181
-        Me.Check_NA_goodi_1.UseVisualStyleBackColor = False
+        Me.Check_NA_goodi_1.UseVisualStyleBackColor = false
         '
         'Check_available_goodi_1
         '
-        Me.Check_available_goodi_1.AutoSize = True
+        Me.Check_available_goodi_1.AutoSize = true
         Me.Check_available_goodi_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_1.Location = New System.Drawing.Point(45, 236)
         Me.Check_available_goodi_1.Name = "Check_available_goodi_1"
         Me.Check_available_goodi_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_1.TabIndex = 180
-        Me.Check_available_goodi_1.UseVisualStyleBackColor = False
+        Me.Check_available_goodi_1.UseVisualStyleBackColor = false
         '
         'PictureBox171
         '
@@ -4287,287 +4297,287 @@ Partial Class Items_edit
         Me.PictureBox171.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox171.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox171.TabIndex = 179
-        Me.PictureBox171.TabStop = False
+        Me.PictureBox171.TabStop = false
         '
         'Panel_interiors
         '
-        Me.Panel_interiors.BackgroundImage = CType(resources.GetObject("Panel_interiors.BackgroundImage"), System.Drawing.Image)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown107)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox213)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox214)
+        Me.Panel_interiors.BackgroundImage = CType(resources.GetObject("Panel_interiors.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_60)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_60)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_60)
         Me.Panel_interiors.Controls.Add(Me.PictureBox97)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown108)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox215)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox216)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_59)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_59)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_59)
         Me.Panel_interiors.Controls.Add(Me.PictureBox98)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown109)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox217)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox218)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_58)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_58)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_58)
         Me.Panel_interiors.Controls.Add(Me.PictureBox102)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown110)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox219)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox220)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_57)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_57)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_57)
         Me.Panel_interiors.Controls.Add(Me.PictureBox103)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown111)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox221)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox222)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_56)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_56)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_56)
         Me.Panel_interiors.Controls.Add(Me.PictureBox104)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown112)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox223)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox224)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_55)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_55)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_55)
         Me.Panel_interiors.Controls.Add(Me.PictureBox105)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown113)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox225)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox226)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_54)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_54)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_54)
         Me.Panel_interiors.Controls.Add(Me.PictureBox106)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown114)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox227)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox228)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_53)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_53)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_53)
         Me.Panel_interiors.Controls.Add(Me.PictureBox107)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown115)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox229)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox230)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_52)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_52)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_52)
         Me.Panel_interiors.Controls.Add(Me.PictureBox108)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown116)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox231)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox232)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_51)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_51)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_51)
         Me.Panel_interiors.Controls.Add(Me.PictureBox109)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown117)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox233)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox234)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_50)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_50)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_50)
         Me.Panel_interiors.Controls.Add(Me.PictureBox110)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown118)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox235)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox236)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_49)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_49)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_49)
         Me.Panel_interiors.Controls.Add(Me.PictureBox111)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown119)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox237)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox238)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_48)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_48)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_48)
         Me.Panel_interiors.Controls.Add(Me.PictureBox115)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown120)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox239)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox240)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_47)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_47)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_47)
         Me.Panel_interiors.Controls.Add(Me.PictureBox116)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown121)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox241)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox242)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_46)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_46)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_46)
         Me.Panel_interiors.Controls.Add(Me.PictureBox117)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown122)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox243)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox244)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_45)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_45)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_45)
         Me.Panel_interiors.Controls.Add(Me.PictureBox118)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown123)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox245)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox246)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_44)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_44)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_44)
         Me.Panel_interiors.Controls.Add(Me.PictureBox119)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown124)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox247)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox248)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_43)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_43)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_43)
         Me.Panel_interiors.Controls.Add(Me.PictureBox120)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown125)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox249)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox250)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_42)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_42)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_42)
         Me.Panel_interiors.Controls.Add(Me.PictureBox121)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown126)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox251)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox252)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_41)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_41)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_41)
         Me.Panel_interiors.Controls.Add(Me.PictureBox122)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown87)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox173)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox174)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_40)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_40)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_40)
         Me.Panel_interiors.Controls.Add(Me.PictureBox58)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown88)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox175)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox176)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_39)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_39)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_39)
         Me.Panel_interiors.Controls.Add(Me.PictureBox59)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown89)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox177)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox178)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_38)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_38)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_38)
         Me.Panel_interiors.Controls.Add(Me.PictureBox60)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown90)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox179)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox180)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_37)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_37)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_37)
         Me.Panel_interiors.Controls.Add(Me.PictureBox77)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown91)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox181)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox182)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_36)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_36)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_36)
         Me.Panel_interiors.Controls.Add(Me.PictureBox78)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown92)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox183)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox184)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_35)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_35)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_35)
         Me.Panel_interiors.Controls.Add(Me.PictureBox79)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown93)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox185)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox186)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_34)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_34)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_34)
         Me.Panel_interiors.Controls.Add(Me.PictureBox80)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown94)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox187)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox188)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_33)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_33)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_33)
         Me.Panel_interiors.Controls.Add(Me.PictureBox81)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown95)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox189)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox190)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_32)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_32)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_32)
         Me.Panel_interiors.Controls.Add(Me.PictureBox82)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown96)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox191)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox192)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_31)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_31)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_31)
         Me.Panel_interiors.Controls.Add(Me.PictureBox83)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown97)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox193)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox194)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_30)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_30)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_30)
         Me.Panel_interiors.Controls.Add(Me.PictureBox84)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown98)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox195)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox196)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_29)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_29)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_29)
         Me.Panel_interiors.Controls.Add(Me.PictureBox85)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown99)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox197)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox198)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_28)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_28)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_28)
         Me.Panel_interiors.Controls.Add(Me.PictureBox89)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown100)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox199)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox200)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_27)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_27)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_27)
         Me.Panel_interiors.Controls.Add(Me.PictureBox90)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown101)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox201)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox202)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_26)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_26)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_26)
         Me.Panel_interiors.Controls.Add(Me.PictureBox91)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown102)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox203)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox204)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_25)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_25)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_25)
         Me.Panel_interiors.Controls.Add(Me.PictureBox92)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown103)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox205)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox206)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_24)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_24)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_24)
         Me.Panel_interiors.Controls.Add(Me.PictureBox93)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown104)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox207)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox208)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_23)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_23)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_23)
         Me.Panel_interiors.Controls.Add(Me.PictureBox94)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown105)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox209)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox210)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_22)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_22)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_22)
         Me.Panel_interiors.Controls.Add(Me.PictureBox95)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown106)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox211)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox212)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_21)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_21)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_21)
         Me.Panel_interiors.Controls.Add(Me.PictureBox96)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown77)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox153)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox154)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_20)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_20)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_20)
         Me.Panel_interiors.Controls.Add(Me.PictureBox14)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown78)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox155)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox156)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_19)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_19)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_19)
         Me.Panel_interiors.Controls.Add(Me.PictureBox15)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown79)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox157)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox158)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_18)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_18)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_18)
         Me.Panel_interiors.Controls.Add(Me.PictureBox16)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown80)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox159)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox160)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_17)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_17)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_17)
         Me.Panel_interiors.Controls.Add(Me.PictureBox17)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown81)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox161)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox162)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_16)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_16)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_16)
         Me.Panel_interiors.Controls.Add(Me.PictureBox18)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown82)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox163)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox164)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_15)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_15)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_15)
         Me.Panel_interiors.Controls.Add(Me.PictureBox50)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown83)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox165)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox166)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_14)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_14)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_14)
         Me.Panel_interiors.Controls.Add(Me.PictureBox51)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown84)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox167)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox168)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_13)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_13)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_13)
         Me.Panel_interiors.Controls.Add(Me.PictureBox52)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown85)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox169)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox170)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_12)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_12)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_12)
         Me.Panel_interiors.Controls.Add(Me.PictureBox53)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown86)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox171)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox172)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_11)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_11)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_11)
         Me.Panel_interiors.Controls.Add(Me.PictureBox54)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown49)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox97)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox98)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_10)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_10)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_10)
         Me.Panel_interiors.Controls.Add(Me.PictureBox1)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown50)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox99)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox100)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_9)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_9)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_9)
         Me.Panel_interiors.Controls.Add(Me.PictureBox2)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown69)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox137)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox138)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_8)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_8)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_8)
         Me.Panel_interiors.Controls.Add(Me.PictureBox3)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown70)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox139)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox140)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_7)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_7)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_7)
         Me.Panel_interiors.Controls.Add(Me.PictureBox4)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown71)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox141)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox142)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_6)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_6)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_6)
         Me.Panel_interiors.Controls.Add(Me.PictureBox5)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown72)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox143)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox144)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_5)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_5)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_5)
         Me.Panel_interiors.Controls.Add(Me.PictureBox9)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown73)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox145)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox146)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_4)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_4)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_4)
         Me.Panel_interiors.Controls.Add(Me.PictureBox10)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown74)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox147)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox148)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_3)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_3)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_3)
         Me.Panel_interiors.Controls.Add(Me.PictureBox11)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown75)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox149)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox150)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_2)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_2)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_2)
         Me.Panel_interiors.Controls.Add(Me.PictureBox12)
-        Me.Panel_interiors.Controls.Add(Me.NumericUpDown76)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox151)
-        Me.Panel_interiors.Controls.Add(Me.CheckBox152)
+        Me.Panel_interiors.Controls.Add(Me.valu_interiors_1)
+        Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_1)
+        Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_1)
         Me.Panel_interiors.Controls.Add(Me.PictureBox13)
         Me.Panel_interiors.Controls.Add(Me.Icon_interiors_right)
         Me.Panel_interiors.Location = New System.Drawing.Point(1, 37)
         Me.Panel_interiors.Name = "Panel_interiors"
         Me.Panel_interiors.Size = New System.Drawing.Size(905, 506)
         Me.Panel_interiors.TabIndex = 104
-        Me.Panel_interiors.Visible = False
+        Me.Panel_interiors.Visible = false
         '
-        'NumericUpDown107
+        'valu_interiors_60
         '
-        Me.NumericUpDown107.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown107.Location = New System.Drawing.Point(799, 472)
-        Me.NumericUpDown107.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown107.Name = "NumericUpDown107"
-        Me.NumericUpDown107.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown107.TabIndex = 458
-        Me.NumericUpDown107.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_60.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_60.Location = New System.Drawing.Point(799, 472)
+        Me.valu_interiors_60.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_60.Name = "valu_interiors_60"
+        Me.valu_interiors_60.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_60.TabIndex = 458
+        Me.valu_interiors_60.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox213
+        'Check_NA_interiors_60
         '
-        Me.CheckBox213.AutoSize = True
-        Me.CheckBox213.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox213.Location = New System.Drawing.Point(844, 476)
-        Me.CheckBox213.Name = "CheckBox213"
-        Me.CheckBox213.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox213.TabIndex = 457
-        Me.CheckBox213.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_60.AutoSize = true
+        Me.Check_NA_interiors_60.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_60.Location = New System.Drawing.Point(844, 476)
+        Me.Check_NA_interiors_60.Name = "Check_NA_interiors_60"
+        Me.Check_NA_interiors_60.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_60.TabIndex = 457
+        Me.Check_NA_interiors_60.UseVisualStyleBackColor = false
         '
-        'CheckBox214
+        'Check_available_interiors_60
         '
-        Me.CheckBox214.AutoSize = True
-        Me.CheckBox214.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox214.Location = New System.Drawing.Point(783, 476)
-        Me.CheckBox214.Name = "CheckBox214"
-        Me.CheckBox214.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox214.TabIndex = 456
-        Me.CheckBox214.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_60.AutoSize = true
+        Me.Check_available_interiors_60.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_60.Location = New System.Drawing.Point(783, 476)
+        Me.Check_available_interiors_60.Name = "Check_available_interiors_60"
+        Me.Check_available_interiors_60.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_60.TabIndex = 456
+        Me.Check_available_interiors_60.UseVisualStyleBackColor = false
         '
         'PictureBox97
         '
@@ -4577,37 +4587,37 @@ Partial Class Items_edit
         Me.PictureBox97.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox97.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox97.TabIndex = 455
-        Me.PictureBox97.TabStop = False
+        Me.PictureBox97.TabStop = false
         '
-        'NumericUpDown108
+        'valu_interiors_59
         '
-        Me.NumericUpDown108.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown108.Location = New System.Drawing.Point(717, 472)
-        Me.NumericUpDown108.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown108.Name = "NumericUpDown108"
-        Me.NumericUpDown108.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown108.TabIndex = 454
-        Me.NumericUpDown108.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_59.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_59.Location = New System.Drawing.Point(717, 472)
+        Me.valu_interiors_59.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_59.Name = "valu_interiors_59"
+        Me.valu_interiors_59.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_59.TabIndex = 454
+        Me.valu_interiors_59.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox215
+        'Check_NA_interiors_59
         '
-        Me.CheckBox215.AutoSize = True
-        Me.CheckBox215.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox215.Location = New System.Drawing.Point(762, 476)
-        Me.CheckBox215.Name = "CheckBox215"
-        Me.CheckBox215.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox215.TabIndex = 453
-        Me.CheckBox215.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_59.AutoSize = true
+        Me.Check_NA_interiors_59.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_59.Location = New System.Drawing.Point(762, 476)
+        Me.Check_NA_interiors_59.Name = "Check_NA_interiors_59"
+        Me.Check_NA_interiors_59.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_59.TabIndex = 453
+        Me.Check_NA_interiors_59.UseVisualStyleBackColor = false
         '
-        'CheckBox216
+        'Check_available_interiors_59
         '
-        Me.CheckBox216.AutoSize = True
-        Me.CheckBox216.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox216.Location = New System.Drawing.Point(701, 476)
-        Me.CheckBox216.Name = "CheckBox216"
-        Me.CheckBox216.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox216.TabIndex = 452
-        Me.CheckBox216.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_59.AutoSize = true
+        Me.Check_available_interiors_59.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_59.Location = New System.Drawing.Point(701, 476)
+        Me.Check_available_interiors_59.Name = "Check_available_interiors_59"
+        Me.Check_available_interiors_59.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_59.TabIndex = 452
+        Me.Check_available_interiors_59.UseVisualStyleBackColor = false
         '
         'PictureBox98
         '
@@ -4617,37 +4627,37 @@ Partial Class Items_edit
         Me.PictureBox98.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox98.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox98.TabIndex = 451
-        Me.PictureBox98.TabStop = False
+        Me.PictureBox98.TabStop = false
         '
-        'NumericUpDown109
+        'valu_interiors_58
         '
-        Me.NumericUpDown109.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown109.Location = New System.Drawing.Point(635, 472)
-        Me.NumericUpDown109.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown109.Name = "NumericUpDown109"
-        Me.NumericUpDown109.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown109.TabIndex = 450
-        Me.NumericUpDown109.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_58.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_58.Location = New System.Drawing.Point(635, 472)
+        Me.valu_interiors_58.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_58.Name = "valu_interiors_58"
+        Me.valu_interiors_58.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_58.TabIndex = 450
+        Me.valu_interiors_58.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox217
+        'Check_NA_interiors_58
         '
-        Me.CheckBox217.AutoSize = True
-        Me.CheckBox217.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox217.Location = New System.Drawing.Point(680, 476)
-        Me.CheckBox217.Name = "CheckBox217"
-        Me.CheckBox217.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox217.TabIndex = 449
-        Me.CheckBox217.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_58.AutoSize = true
+        Me.Check_NA_interiors_58.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_58.Location = New System.Drawing.Point(680, 476)
+        Me.Check_NA_interiors_58.Name = "Check_NA_interiors_58"
+        Me.Check_NA_interiors_58.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_58.TabIndex = 449
+        Me.Check_NA_interiors_58.UseVisualStyleBackColor = false
         '
-        'CheckBox218
+        'Check_available_interiors_58
         '
-        Me.CheckBox218.AutoSize = True
-        Me.CheckBox218.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox218.Location = New System.Drawing.Point(619, 476)
-        Me.CheckBox218.Name = "CheckBox218"
-        Me.CheckBox218.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox218.TabIndex = 448
-        Me.CheckBox218.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_58.AutoSize = true
+        Me.Check_available_interiors_58.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_58.Location = New System.Drawing.Point(619, 476)
+        Me.Check_available_interiors_58.Name = "Check_available_interiors_58"
+        Me.Check_available_interiors_58.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_58.TabIndex = 448
+        Me.Check_available_interiors_58.UseVisualStyleBackColor = false
         '
         'PictureBox102
         '
@@ -4657,37 +4667,37 @@ Partial Class Items_edit
         Me.PictureBox102.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox102.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox102.TabIndex = 447
-        Me.PictureBox102.TabStop = False
+        Me.PictureBox102.TabStop = false
         '
-        'NumericUpDown110
+        'valu_interiors_57
         '
-        Me.NumericUpDown110.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown110.Location = New System.Drawing.Point(553, 472)
-        Me.NumericUpDown110.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown110.Name = "NumericUpDown110"
-        Me.NumericUpDown110.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown110.TabIndex = 446
-        Me.NumericUpDown110.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_57.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_57.Location = New System.Drawing.Point(553, 472)
+        Me.valu_interiors_57.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_57.Name = "valu_interiors_57"
+        Me.valu_interiors_57.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_57.TabIndex = 446
+        Me.valu_interiors_57.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox219
+        'Check_NA_interiors_57
         '
-        Me.CheckBox219.AutoSize = True
-        Me.CheckBox219.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox219.Location = New System.Drawing.Point(598, 476)
-        Me.CheckBox219.Name = "CheckBox219"
-        Me.CheckBox219.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox219.TabIndex = 445
-        Me.CheckBox219.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_57.AutoSize = true
+        Me.Check_NA_interiors_57.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_57.Location = New System.Drawing.Point(598, 476)
+        Me.Check_NA_interiors_57.Name = "Check_NA_interiors_57"
+        Me.Check_NA_interiors_57.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_57.TabIndex = 445
+        Me.Check_NA_interiors_57.UseVisualStyleBackColor = false
         '
-        'CheckBox220
+        'Check_available_interiors_57
         '
-        Me.CheckBox220.AutoSize = True
-        Me.CheckBox220.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox220.Location = New System.Drawing.Point(537, 476)
-        Me.CheckBox220.Name = "CheckBox220"
-        Me.CheckBox220.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox220.TabIndex = 444
-        Me.CheckBox220.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_57.AutoSize = true
+        Me.Check_available_interiors_57.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_57.Location = New System.Drawing.Point(537, 476)
+        Me.Check_available_interiors_57.Name = "Check_available_interiors_57"
+        Me.Check_available_interiors_57.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_57.TabIndex = 444
+        Me.Check_available_interiors_57.UseVisualStyleBackColor = false
         '
         'PictureBox103
         '
@@ -4697,37 +4707,37 @@ Partial Class Items_edit
         Me.PictureBox103.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox103.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox103.TabIndex = 443
-        Me.PictureBox103.TabStop = False
+        Me.PictureBox103.TabStop = false
         '
-        'NumericUpDown111
+        'valu_interiors_56
         '
-        Me.NumericUpDown111.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown111.Location = New System.Drawing.Point(471, 472)
-        Me.NumericUpDown111.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown111.Name = "NumericUpDown111"
-        Me.NumericUpDown111.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown111.TabIndex = 442
-        Me.NumericUpDown111.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_56.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_56.Location = New System.Drawing.Point(471, 472)
+        Me.valu_interiors_56.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_56.Name = "valu_interiors_56"
+        Me.valu_interiors_56.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_56.TabIndex = 442
+        Me.valu_interiors_56.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox221
+        'Check_NA_interiors_56
         '
-        Me.CheckBox221.AutoSize = True
-        Me.CheckBox221.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox221.Location = New System.Drawing.Point(516, 476)
-        Me.CheckBox221.Name = "CheckBox221"
-        Me.CheckBox221.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox221.TabIndex = 441
-        Me.CheckBox221.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_56.AutoSize = true
+        Me.Check_NA_interiors_56.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_56.Location = New System.Drawing.Point(516, 476)
+        Me.Check_NA_interiors_56.Name = "Check_NA_interiors_56"
+        Me.Check_NA_interiors_56.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_56.TabIndex = 441
+        Me.Check_NA_interiors_56.UseVisualStyleBackColor = false
         '
-        'CheckBox222
+        'Check_available_interiors_56
         '
-        Me.CheckBox222.AutoSize = True
-        Me.CheckBox222.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox222.Location = New System.Drawing.Point(455, 476)
-        Me.CheckBox222.Name = "CheckBox222"
-        Me.CheckBox222.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox222.TabIndex = 440
-        Me.CheckBox222.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_56.AutoSize = true
+        Me.Check_available_interiors_56.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_56.Location = New System.Drawing.Point(455, 476)
+        Me.Check_available_interiors_56.Name = "Check_available_interiors_56"
+        Me.Check_available_interiors_56.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_56.TabIndex = 440
+        Me.Check_available_interiors_56.UseVisualStyleBackColor = false
         '
         'PictureBox104
         '
@@ -4737,37 +4747,37 @@ Partial Class Items_edit
         Me.PictureBox104.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox104.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox104.TabIndex = 439
-        Me.PictureBox104.TabStop = False
+        Me.PictureBox104.TabStop = false
         '
-        'NumericUpDown112
+        'valu_interiors_55
         '
-        Me.NumericUpDown112.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown112.Location = New System.Drawing.Point(389, 472)
-        Me.NumericUpDown112.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown112.Name = "NumericUpDown112"
-        Me.NumericUpDown112.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown112.TabIndex = 438
-        Me.NumericUpDown112.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_55.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_55.Location = New System.Drawing.Point(389, 472)
+        Me.valu_interiors_55.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_55.Name = "valu_interiors_55"
+        Me.valu_interiors_55.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_55.TabIndex = 438
+        Me.valu_interiors_55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox223
+        'Check_NA_interiors_55
         '
-        Me.CheckBox223.AutoSize = True
-        Me.CheckBox223.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox223.Location = New System.Drawing.Point(434, 476)
-        Me.CheckBox223.Name = "CheckBox223"
-        Me.CheckBox223.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox223.TabIndex = 437
-        Me.CheckBox223.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_55.AutoSize = true
+        Me.Check_NA_interiors_55.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_55.Location = New System.Drawing.Point(434, 476)
+        Me.Check_NA_interiors_55.Name = "Check_NA_interiors_55"
+        Me.Check_NA_interiors_55.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_55.TabIndex = 437
+        Me.Check_NA_interiors_55.UseVisualStyleBackColor = false
         '
-        'CheckBox224
+        'Check_available_interiors_55
         '
-        Me.CheckBox224.AutoSize = True
-        Me.CheckBox224.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox224.Location = New System.Drawing.Point(373, 476)
-        Me.CheckBox224.Name = "CheckBox224"
-        Me.CheckBox224.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox224.TabIndex = 436
-        Me.CheckBox224.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_55.AutoSize = true
+        Me.Check_available_interiors_55.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_55.Location = New System.Drawing.Point(373, 476)
+        Me.Check_available_interiors_55.Name = "Check_available_interiors_55"
+        Me.Check_available_interiors_55.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_55.TabIndex = 436
+        Me.Check_available_interiors_55.UseVisualStyleBackColor = false
         '
         'PictureBox105
         '
@@ -4777,37 +4787,37 @@ Partial Class Items_edit
         Me.PictureBox105.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox105.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox105.TabIndex = 435
-        Me.PictureBox105.TabStop = False
+        Me.PictureBox105.TabStop = false
         '
-        'NumericUpDown113
+        'valu_interiors_54
         '
-        Me.NumericUpDown113.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown113.Location = New System.Drawing.Point(307, 472)
-        Me.NumericUpDown113.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown113.Name = "NumericUpDown113"
-        Me.NumericUpDown113.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown113.TabIndex = 434
-        Me.NumericUpDown113.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_54.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_54.Location = New System.Drawing.Point(307, 472)
+        Me.valu_interiors_54.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_54.Name = "valu_interiors_54"
+        Me.valu_interiors_54.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_54.TabIndex = 434
+        Me.valu_interiors_54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox225
+        'Check_NA_interiors_54
         '
-        Me.CheckBox225.AutoSize = True
-        Me.CheckBox225.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox225.Location = New System.Drawing.Point(352, 476)
-        Me.CheckBox225.Name = "CheckBox225"
-        Me.CheckBox225.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox225.TabIndex = 433
-        Me.CheckBox225.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_54.AutoSize = true
+        Me.Check_NA_interiors_54.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_54.Location = New System.Drawing.Point(352, 476)
+        Me.Check_NA_interiors_54.Name = "Check_NA_interiors_54"
+        Me.Check_NA_interiors_54.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_54.TabIndex = 433
+        Me.Check_NA_interiors_54.UseVisualStyleBackColor = false
         '
-        'CheckBox226
+        'Check_available_interiors_54
         '
-        Me.CheckBox226.AutoSize = True
-        Me.CheckBox226.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox226.Location = New System.Drawing.Point(291, 476)
-        Me.CheckBox226.Name = "CheckBox226"
-        Me.CheckBox226.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox226.TabIndex = 432
-        Me.CheckBox226.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_54.AutoSize = true
+        Me.Check_available_interiors_54.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_54.Location = New System.Drawing.Point(291, 476)
+        Me.Check_available_interiors_54.Name = "Check_available_interiors_54"
+        Me.Check_available_interiors_54.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_54.TabIndex = 432
+        Me.Check_available_interiors_54.UseVisualStyleBackColor = false
         '
         'PictureBox106
         '
@@ -4817,37 +4827,37 @@ Partial Class Items_edit
         Me.PictureBox106.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox106.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox106.TabIndex = 431
-        Me.PictureBox106.TabStop = False
+        Me.PictureBox106.TabStop = false
         '
-        'NumericUpDown114
+        'valu_interiors_53
         '
-        Me.NumericUpDown114.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown114.Location = New System.Drawing.Point(225, 472)
-        Me.NumericUpDown114.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown114.Name = "NumericUpDown114"
-        Me.NumericUpDown114.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown114.TabIndex = 430
-        Me.NumericUpDown114.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_53.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_53.Location = New System.Drawing.Point(225, 472)
+        Me.valu_interiors_53.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_53.Name = "valu_interiors_53"
+        Me.valu_interiors_53.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_53.TabIndex = 430
+        Me.valu_interiors_53.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox227
+        'Check_NA_interiors_53
         '
-        Me.CheckBox227.AutoSize = True
-        Me.CheckBox227.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox227.Location = New System.Drawing.Point(270, 476)
-        Me.CheckBox227.Name = "CheckBox227"
-        Me.CheckBox227.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox227.TabIndex = 429
-        Me.CheckBox227.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_53.AutoSize = true
+        Me.Check_NA_interiors_53.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_53.Location = New System.Drawing.Point(270, 476)
+        Me.Check_NA_interiors_53.Name = "Check_NA_interiors_53"
+        Me.Check_NA_interiors_53.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_53.TabIndex = 429
+        Me.Check_NA_interiors_53.UseVisualStyleBackColor = false
         '
-        'CheckBox228
+        'Check_available_interiors_53
         '
-        Me.CheckBox228.AutoSize = True
-        Me.CheckBox228.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox228.Location = New System.Drawing.Point(209, 476)
-        Me.CheckBox228.Name = "CheckBox228"
-        Me.CheckBox228.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox228.TabIndex = 428
-        Me.CheckBox228.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_53.AutoSize = true
+        Me.Check_available_interiors_53.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_53.Location = New System.Drawing.Point(209, 476)
+        Me.Check_available_interiors_53.Name = "Check_available_interiors_53"
+        Me.Check_available_interiors_53.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_53.TabIndex = 428
+        Me.Check_available_interiors_53.UseVisualStyleBackColor = false
         '
         'PictureBox107
         '
@@ -4857,37 +4867,37 @@ Partial Class Items_edit
         Me.PictureBox107.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox107.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox107.TabIndex = 427
-        Me.PictureBox107.TabStop = False
+        Me.PictureBox107.TabStop = false
         '
-        'NumericUpDown115
+        'valu_interiors_52
         '
-        Me.NumericUpDown115.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown115.Location = New System.Drawing.Point(143, 472)
-        Me.NumericUpDown115.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown115.Name = "NumericUpDown115"
-        Me.NumericUpDown115.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown115.TabIndex = 426
-        Me.NumericUpDown115.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_52.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_52.Location = New System.Drawing.Point(143, 472)
+        Me.valu_interiors_52.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_52.Name = "valu_interiors_52"
+        Me.valu_interiors_52.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_52.TabIndex = 426
+        Me.valu_interiors_52.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox229
+        'Check_NA_interiors_52
         '
-        Me.CheckBox229.AutoSize = True
-        Me.CheckBox229.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox229.Location = New System.Drawing.Point(188, 476)
-        Me.CheckBox229.Name = "CheckBox229"
-        Me.CheckBox229.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox229.TabIndex = 425
-        Me.CheckBox229.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_52.AutoSize = true
+        Me.Check_NA_interiors_52.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_52.Location = New System.Drawing.Point(188, 476)
+        Me.Check_NA_interiors_52.Name = "Check_NA_interiors_52"
+        Me.Check_NA_interiors_52.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_52.TabIndex = 425
+        Me.Check_NA_interiors_52.UseVisualStyleBackColor = false
         '
-        'CheckBox230
+        'Check_available_interiors_52
         '
-        Me.CheckBox230.AutoSize = True
-        Me.CheckBox230.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox230.Location = New System.Drawing.Point(127, 476)
-        Me.CheckBox230.Name = "CheckBox230"
-        Me.CheckBox230.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox230.TabIndex = 424
-        Me.CheckBox230.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_52.AutoSize = true
+        Me.Check_available_interiors_52.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_52.Location = New System.Drawing.Point(127, 476)
+        Me.Check_available_interiors_52.Name = "Check_available_interiors_52"
+        Me.Check_available_interiors_52.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_52.TabIndex = 424
+        Me.Check_available_interiors_52.UseVisualStyleBackColor = false
         '
         'PictureBox108
         '
@@ -4897,37 +4907,37 @@ Partial Class Items_edit
         Me.PictureBox108.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox108.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox108.TabIndex = 423
-        Me.PictureBox108.TabStop = False
+        Me.PictureBox108.TabStop = false
         '
-        'NumericUpDown116
+        'valu_interiors_51
         '
-        Me.NumericUpDown116.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown116.Location = New System.Drawing.Point(61, 472)
-        Me.NumericUpDown116.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown116.Name = "NumericUpDown116"
-        Me.NumericUpDown116.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown116.TabIndex = 422
-        Me.NumericUpDown116.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_51.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_51.Location = New System.Drawing.Point(61, 472)
+        Me.valu_interiors_51.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_51.Name = "valu_interiors_51"
+        Me.valu_interiors_51.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_51.TabIndex = 422
+        Me.valu_interiors_51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox231
+        'Check_NA_interiors_51
         '
-        Me.CheckBox231.AutoSize = True
-        Me.CheckBox231.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox231.Location = New System.Drawing.Point(106, 476)
-        Me.CheckBox231.Name = "CheckBox231"
-        Me.CheckBox231.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox231.TabIndex = 421
-        Me.CheckBox231.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_51.AutoSize = true
+        Me.Check_NA_interiors_51.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_51.Location = New System.Drawing.Point(106, 476)
+        Me.Check_NA_interiors_51.Name = "Check_NA_interiors_51"
+        Me.Check_NA_interiors_51.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_51.TabIndex = 421
+        Me.Check_NA_interiors_51.UseVisualStyleBackColor = false
         '
-        'CheckBox232
+        'Check_available_interiors_51
         '
-        Me.CheckBox232.AutoSize = True
-        Me.CheckBox232.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox232.Location = New System.Drawing.Point(45, 476)
-        Me.CheckBox232.Name = "CheckBox232"
-        Me.CheckBox232.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox232.TabIndex = 420
-        Me.CheckBox232.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_51.AutoSize = true
+        Me.Check_available_interiors_51.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_51.Location = New System.Drawing.Point(45, 476)
+        Me.Check_available_interiors_51.Name = "Check_available_interiors_51"
+        Me.Check_available_interiors_51.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_51.TabIndex = 420
+        Me.Check_available_interiors_51.UseVisualStyleBackColor = false
         '
         'PictureBox109
         '
@@ -4937,37 +4947,37 @@ Partial Class Items_edit
         Me.PictureBox109.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox109.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox109.TabIndex = 419
-        Me.PictureBox109.TabStop = False
+        Me.PictureBox109.TabStop = false
         '
-        'NumericUpDown117
+        'valu_interiors_50
         '
-        Me.NumericUpDown117.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown117.Location = New System.Drawing.Point(799, 392)
-        Me.NumericUpDown117.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown117.Name = "NumericUpDown117"
-        Me.NumericUpDown117.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown117.TabIndex = 418
-        Me.NumericUpDown117.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_50.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_50.Location = New System.Drawing.Point(799, 392)
+        Me.valu_interiors_50.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_50.Name = "valu_interiors_50"
+        Me.valu_interiors_50.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_50.TabIndex = 418
+        Me.valu_interiors_50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox233
+        'Check_NA_interiors_50
         '
-        Me.CheckBox233.AutoSize = True
-        Me.CheckBox233.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox233.Location = New System.Drawing.Point(844, 396)
-        Me.CheckBox233.Name = "CheckBox233"
-        Me.CheckBox233.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox233.TabIndex = 417
-        Me.CheckBox233.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_50.AutoSize = true
+        Me.Check_NA_interiors_50.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_50.Location = New System.Drawing.Point(844, 396)
+        Me.Check_NA_interiors_50.Name = "Check_NA_interiors_50"
+        Me.Check_NA_interiors_50.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_50.TabIndex = 417
+        Me.Check_NA_interiors_50.UseVisualStyleBackColor = false
         '
-        'CheckBox234
+        'Check_available_interiors_50
         '
-        Me.CheckBox234.AutoSize = True
-        Me.CheckBox234.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox234.Location = New System.Drawing.Point(783, 396)
-        Me.CheckBox234.Name = "CheckBox234"
-        Me.CheckBox234.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox234.TabIndex = 416
-        Me.CheckBox234.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_50.AutoSize = true
+        Me.Check_available_interiors_50.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_50.Location = New System.Drawing.Point(783, 396)
+        Me.Check_available_interiors_50.Name = "Check_available_interiors_50"
+        Me.Check_available_interiors_50.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_50.TabIndex = 416
+        Me.Check_available_interiors_50.UseVisualStyleBackColor = false
         '
         'PictureBox110
         '
@@ -4977,37 +4987,37 @@ Partial Class Items_edit
         Me.PictureBox110.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox110.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox110.TabIndex = 415
-        Me.PictureBox110.TabStop = False
+        Me.PictureBox110.TabStop = false
         '
-        'NumericUpDown118
+        'valu_interiors_49
         '
-        Me.NumericUpDown118.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown118.Location = New System.Drawing.Point(717, 392)
-        Me.NumericUpDown118.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown118.Name = "NumericUpDown118"
-        Me.NumericUpDown118.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown118.TabIndex = 414
-        Me.NumericUpDown118.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_49.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_49.Location = New System.Drawing.Point(717, 392)
+        Me.valu_interiors_49.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_49.Name = "valu_interiors_49"
+        Me.valu_interiors_49.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_49.TabIndex = 414
+        Me.valu_interiors_49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox235
+        'Check_NA_interiors_49
         '
-        Me.CheckBox235.AutoSize = True
-        Me.CheckBox235.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox235.Location = New System.Drawing.Point(762, 396)
-        Me.CheckBox235.Name = "CheckBox235"
-        Me.CheckBox235.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox235.TabIndex = 413
-        Me.CheckBox235.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_49.AutoSize = true
+        Me.Check_NA_interiors_49.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_49.Location = New System.Drawing.Point(762, 396)
+        Me.Check_NA_interiors_49.Name = "Check_NA_interiors_49"
+        Me.Check_NA_interiors_49.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_49.TabIndex = 413
+        Me.Check_NA_interiors_49.UseVisualStyleBackColor = false
         '
-        'CheckBox236
+        'Check_available_interiors_49
         '
-        Me.CheckBox236.AutoSize = True
-        Me.CheckBox236.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox236.Location = New System.Drawing.Point(701, 396)
-        Me.CheckBox236.Name = "CheckBox236"
-        Me.CheckBox236.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox236.TabIndex = 412
-        Me.CheckBox236.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_49.AutoSize = true
+        Me.Check_available_interiors_49.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_49.Location = New System.Drawing.Point(701, 396)
+        Me.Check_available_interiors_49.Name = "Check_available_interiors_49"
+        Me.Check_available_interiors_49.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_49.TabIndex = 412
+        Me.Check_available_interiors_49.UseVisualStyleBackColor = false
         '
         'PictureBox111
         '
@@ -5017,37 +5027,37 @@ Partial Class Items_edit
         Me.PictureBox111.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox111.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox111.TabIndex = 411
-        Me.PictureBox111.TabStop = False
+        Me.PictureBox111.TabStop = false
         '
-        'NumericUpDown119
+        'valu_interiors_48
         '
-        Me.NumericUpDown119.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown119.Location = New System.Drawing.Point(635, 392)
-        Me.NumericUpDown119.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown119.Name = "NumericUpDown119"
-        Me.NumericUpDown119.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown119.TabIndex = 410
-        Me.NumericUpDown119.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_48.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_48.Location = New System.Drawing.Point(635, 392)
+        Me.valu_interiors_48.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_48.Name = "valu_interiors_48"
+        Me.valu_interiors_48.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_48.TabIndex = 410
+        Me.valu_interiors_48.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox237
+        'Check_NA_interiors_48
         '
-        Me.CheckBox237.AutoSize = True
-        Me.CheckBox237.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox237.Location = New System.Drawing.Point(680, 396)
-        Me.CheckBox237.Name = "CheckBox237"
-        Me.CheckBox237.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox237.TabIndex = 409
-        Me.CheckBox237.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_48.AutoSize = true
+        Me.Check_NA_interiors_48.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_48.Location = New System.Drawing.Point(680, 396)
+        Me.Check_NA_interiors_48.Name = "Check_NA_interiors_48"
+        Me.Check_NA_interiors_48.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_48.TabIndex = 409
+        Me.Check_NA_interiors_48.UseVisualStyleBackColor = false
         '
-        'CheckBox238
+        'Check_available_interiors_48
         '
-        Me.CheckBox238.AutoSize = True
-        Me.CheckBox238.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox238.Location = New System.Drawing.Point(619, 396)
-        Me.CheckBox238.Name = "CheckBox238"
-        Me.CheckBox238.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox238.TabIndex = 408
-        Me.CheckBox238.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_48.AutoSize = true
+        Me.Check_available_interiors_48.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_48.Location = New System.Drawing.Point(619, 396)
+        Me.Check_available_interiors_48.Name = "Check_available_interiors_48"
+        Me.Check_available_interiors_48.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_48.TabIndex = 408
+        Me.Check_available_interiors_48.UseVisualStyleBackColor = false
         '
         'PictureBox115
         '
@@ -5057,37 +5067,37 @@ Partial Class Items_edit
         Me.PictureBox115.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox115.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox115.TabIndex = 407
-        Me.PictureBox115.TabStop = False
+        Me.PictureBox115.TabStop = false
         '
-        'NumericUpDown120
+        'valu_interiors_47
         '
-        Me.NumericUpDown120.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown120.Location = New System.Drawing.Point(553, 392)
-        Me.NumericUpDown120.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown120.Name = "NumericUpDown120"
-        Me.NumericUpDown120.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown120.TabIndex = 406
-        Me.NumericUpDown120.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_47.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_47.Location = New System.Drawing.Point(553, 392)
+        Me.valu_interiors_47.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_47.Name = "valu_interiors_47"
+        Me.valu_interiors_47.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_47.TabIndex = 406
+        Me.valu_interiors_47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox239
+        'Check_NA_interiors_47
         '
-        Me.CheckBox239.AutoSize = True
-        Me.CheckBox239.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox239.Location = New System.Drawing.Point(598, 396)
-        Me.CheckBox239.Name = "CheckBox239"
-        Me.CheckBox239.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox239.TabIndex = 405
-        Me.CheckBox239.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_47.AutoSize = true
+        Me.Check_NA_interiors_47.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_47.Location = New System.Drawing.Point(598, 396)
+        Me.Check_NA_interiors_47.Name = "Check_NA_interiors_47"
+        Me.Check_NA_interiors_47.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_47.TabIndex = 405
+        Me.Check_NA_interiors_47.UseVisualStyleBackColor = false
         '
-        'CheckBox240
+        'Check_available_interiors_47
         '
-        Me.CheckBox240.AutoSize = True
-        Me.CheckBox240.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox240.Location = New System.Drawing.Point(537, 396)
-        Me.CheckBox240.Name = "CheckBox240"
-        Me.CheckBox240.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox240.TabIndex = 404
-        Me.CheckBox240.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_47.AutoSize = true
+        Me.Check_available_interiors_47.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_47.Location = New System.Drawing.Point(537, 396)
+        Me.Check_available_interiors_47.Name = "Check_available_interiors_47"
+        Me.Check_available_interiors_47.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_47.TabIndex = 404
+        Me.Check_available_interiors_47.UseVisualStyleBackColor = false
         '
         'PictureBox116
         '
@@ -5097,37 +5107,37 @@ Partial Class Items_edit
         Me.PictureBox116.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox116.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox116.TabIndex = 403
-        Me.PictureBox116.TabStop = False
+        Me.PictureBox116.TabStop = false
         '
-        'NumericUpDown121
+        'valu_interiors_46
         '
-        Me.NumericUpDown121.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown121.Location = New System.Drawing.Point(471, 392)
-        Me.NumericUpDown121.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown121.Name = "NumericUpDown121"
-        Me.NumericUpDown121.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown121.TabIndex = 402
-        Me.NumericUpDown121.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_46.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_46.Location = New System.Drawing.Point(471, 392)
+        Me.valu_interiors_46.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_46.Name = "valu_interiors_46"
+        Me.valu_interiors_46.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_46.TabIndex = 402
+        Me.valu_interiors_46.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox241
+        'Check_NA_interiors_46
         '
-        Me.CheckBox241.AutoSize = True
-        Me.CheckBox241.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox241.Location = New System.Drawing.Point(516, 396)
-        Me.CheckBox241.Name = "CheckBox241"
-        Me.CheckBox241.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox241.TabIndex = 401
-        Me.CheckBox241.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_46.AutoSize = true
+        Me.Check_NA_interiors_46.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_46.Location = New System.Drawing.Point(516, 396)
+        Me.Check_NA_interiors_46.Name = "Check_NA_interiors_46"
+        Me.Check_NA_interiors_46.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_46.TabIndex = 401
+        Me.Check_NA_interiors_46.UseVisualStyleBackColor = false
         '
-        'CheckBox242
+        'Check_available_interiors_46
         '
-        Me.CheckBox242.AutoSize = True
-        Me.CheckBox242.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox242.Location = New System.Drawing.Point(455, 396)
-        Me.CheckBox242.Name = "CheckBox242"
-        Me.CheckBox242.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox242.TabIndex = 400
-        Me.CheckBox242.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_46.AutoSize = true
+        Me.Check_available_interiors_46.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_46.Location = New System.Drawing.Point(455, 396)
+        Me.Check_available_interiors_46.Name = "Check_available_interiors_46"
+        Me.Check_available_interiors_46.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_46.TabIndex = 400
+        Me.Check_available_interiors_46.UseVisualStyleBackColor = false
         '
         'PictureBox117
         '
@@ -5137,37 +5147,37 @@ Partial Class Items_edit
         Me.PictureBox117.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox117.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox117.TabIndex = 399
-        Me.PictureBox117.TabStop = False
+        Me.PictureBox117.TabStop = false
         '
-        'NumericUpDown122
+        'valu_interiors_45
         '
-        Me.NumericUpDown122.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown122.Location = New System.Drawing.Point(389, 392)
-        Me.NumericUpDown122.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown122.Name = "NumericUpDown122"
-        Me.NumericUpDown122.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown122.TabIndex = 398
-        Me.NumericUpDown122.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_45.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_45.Location = New System.Drawing.Point(389, 392)
+        Me.valu_interiors_45.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_45.Name = "valu_interiors_45"
+        Me.valu_interiors_45.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_45.TabIndex = 398
+        Me.valu_interiors_45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox243
+        'Check_NA_interiors_45
         '
-        Me.CheckBox243.AutoSize = True
-        Me.CheckBox243.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox243.Location = New System.Drawing.Point(434, 396)
-        Me.CheckBox243.Name = "CheckBox243"
-        Me.CheckBox243.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox243.TabIndex = 397
-        Me.CheckBox243.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_45.AutoSize = true
+        Me.Check_NA_interiors_45.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_45.Location = New System.Drawing.Point(434, 396)
+        Me.Check_NA_interiors_45.Name = "Check_NA_interiors_45"
+        Me.Check_NA_interiors_45.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_45.TabIndex = 397
+        Me.Check_NA_interiors_45.UseVisualStyleBackColor = false
         '
-        'CheckBox244
+        'Check_available_interiors_45
         '
-        Me.CheckBox244.AutoSize = True
-        Me.CheckBox244.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox244.Location = New System.Drawing.Point(373, 396)
-        Me.CheckBox244.Name = "CheckBox244"
-        Me.CheckBox244.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox244.TabIndex = 396
-        Me.CheckBox244.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_45.AutoSize = true
+        Me.Check_available_interiors_45.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_45.Location = New System.Drawing.Point(373, 396)
+        Me.Check_available_interiors_45.Name = "Check_available_interiors_45"
+        Me.Check_available_interiors_45.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_45.TabIndex = 396
+        Me.Check_available_interiors_45.UseVisualStyleBackColor = false
         '
         'PictureBox118
         '
@@ -5177,37 +5187,37 @@ Partial Class Items_edit
         Me.PictureBox118.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox118.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox118.TabIndex = 395
-        Me.PictureBox118.TabStop = False
+        Me.PictureBox118.TabStop = false
         '
-        'NumericUpDown123
+        'valu_interiors_44
         '
-        Me.NumericUpDown123.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown123.Location = New System.Drawing.Point(307, 392)
-        Me.NumericUpDown123.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown123.Name = "NumericUpDown123"
-        Me.NumericUpDown123.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown123.TabIndex = 394
-        Me.NumericUpDown123.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_44.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_44.Location = New System.Drawing.Point(307, 392)
+        Me.valu_interiors_44.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_44.Name = "valu_interiors_44"
+        Me.valu_interiors_44.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_44.TabIndex = 394
+        Me.valu_interiors_44.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox245
+        'Check_NA_interiors_44
         '
-        Me.CheckBox245.AutoSize = True
-        Me.CheckBox245.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox245.Location = New System.Drawing.Point(352, 396)
-        Me.CheckBox245.Name = "CheckBox245"
-        Me.CheckBox245.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox245.TabIndex = 393
-        Me.CheckBox245.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_44.AutoSize = true
+        Me.Check_NA_interiors_44.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_44.Location = New System.Drawing.Point(352, 396)
+        Me.Check_NA_interiors_44.Name = "Check_NA_interiors_44"
+        Me.Check_NA_interiors_44.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_44.TabIndex = 393
+        Me.Check_NA_interiors_44.UseVisualStyleBackColor = false
         '
-        'CheckBox246
+        'Check_available_interiors_44
         '
-        Me.CheckBox246.AutoSize = True
-        Me.CheckBox246.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox246.Location = New System.Drawing.Point(291, 396)
-        Me.CheckBox246.Name = "CheckBox246"
-        Me.CheckBox246.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox246.TabIndex = 392
-        Me.CheckBox246.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_44.AutoSize = true
+        Me.Check_available_interiors_44.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_44.Location = New System.Drawing.Point(291, 396)
+        Me.Check_available_interiors_44.Name = "Check_available_interiors_44"
+        Me.Check_available_interiors_44.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_44.TabIndex = 392
+        Me.Check_available_interiors_44.UseVisualStyleBackColor = false
         '
         'PictureBox119
         '
@@ -5217,37 +5227,37 @@ Partial Class Items_edit
         Me.PictureBox119.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox119.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox119.TabIndex = 391
-        Me.PictureBox119.TabStop = False
+        Me.PictureBox119.TabStop = false
         '
-        'NumericUpDown124
+        'valu_interiors_43
         '
-        Me.NumericUpDown124.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown124.Location = New System.Drawing.Point(225, 392)
-        Me.NumericUpDown124.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown124.Name = "NumericUpDown124"
-        Me.NumericUpDown124.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown124.TabIndex = 390
-        Me.NumericUpDown124.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_43.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_43.Location = New System.Drawing.Point(225, 392)
+        Me.valu_interiors_43.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_43.Name = "valu_interiors_43"
+        Me.valu_interiors_43.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_43.TabIndex = 390
+        Me.valu_interiors_43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox247
+        'Check_NA_interiors_43
         '
-        Me.CheckBox247.AutoSize = True
-        Me.CheckBox247.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox247.Location = New System.Drawing.Point(270, 396)
-        Me.CheckBox247.Name = "CheckBox247"
-        Me.CheckBox247.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox247.TabIndex = 389
-        Me.CheckBox247.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_43.AutoSize = true
+        Me.Check_NA_interiors_43.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_43.Location = New System.Drawing.Point(270, 396)
+        Me.Check_NA_interiors_43.Name = "Check_NA_interiors_43"
+        Me.Check_NA_interiors_43.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_43.TabIndex = 389
+        Me.Check_NA_interiors_43.UseVisualStyleBackColor = false
         '
-        'CheckBox248
+        'Check_available_interiors_43
         '
-        Me.CheckBox248.AutoSize = True
-        Me.CheckBox248.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox248.Location = New System.Drawing.Point(209, 396)
-        Me.CheckBox248.Name = "CheckBox248"
-        Me.CheckBox248.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox248.TabIndex = 388
-        Me.CheckBox248.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_43.AutoSize = true
+        Me.Check_available_interiors_43.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_43.Location = New System.Drawing.Point(209, 396)
+        Me.Check_available_interiors_43.Name = "Check_available_interiors_43"
+        Me.Check_available_interiors_43.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_43.TabIndex = 388
+        Me.Check_available_interiors_43.UseVisualStyleBackColor = false
         '
         'PictureBox120
         '
@@ -5257,37 +5267,37 @@ Partial Class Items_edit
         Me.PictureBox120.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox120.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox120.TabIndex = 387
-        Me.PictureBox120.TabStop = False
+        Me.PictureBox120.TabStop = false
         '
-        'NumericUpDown125
+        'valu_interiors_42
         '
-        Me.NumericUpDown125.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown125.Location = New System.Drawing.Point(143, 392)
-        Me.NumericUpDown125.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown125.Name = "NumericUpDown125"
-        Me.NumericUpDown125.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown125.TabIndex = 386
-        Me.NumericUpDown125.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_42.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_42.Location = New System.Drawing.Point(143, 392)
+        Me.valu_interiors_42.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_42.Name = "valu_interiors_42"
+        Me.valu_interiors_42.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_42.TabIndex = 386
+        Me.valu_interiors_42.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox249
+        'Check_NA_interiors_42
         '
-        Me.CheckBox249.AutoSize = True
-        Me.CheckBox249.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox249.Location = New System.Drawing.Point(188, 396)
-        Me.CheckBox249.Name = "CheckBox249"
-        Me.CheckBox249.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox249.TabIndex = 385
-        Me.CheckBox249.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_42.AutoSize = true
+        Me.Check_NA_interiors_42.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_42.Location = New System.Drawing.Point(188, 396)
+        Me.Check_NA_interiors_42.Name = "Check_NA_interiors_42"
+        Me.Check_NA_interiors_42.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_42.TabIndex = 385
+        Me.Check_NA_interiors_42.UseVisualStyleBackColor = false
         '
-        'CheckBox250
+        'Check_available_interiors_42
         '
-        Me.CheckBox250.AutoSize = True
-        Me.CheckBox250.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox250.Location = New System.Drawing.Point(127, 396)
-        Me.CheckBox250.Name = "CheckBox250"
-        Me.CheckBox250.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox250.TabIndex = 384
-        Me.CheckBox250.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_42.AutoSize = true
+        Me.Check_available_interiors_42.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_42.Location = New System.Drawing.Point(127, 396)
+        Me.Check_available_interiors_42.Name = "Check_available_interiors_42"
+        Me.Check_available_interiors_42.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_42.TabIndex = 384
+        Me.Check_available_interiors_42.UseVisualStyleBackColor = false
         '
         'PictureBox121
         '
@@ -5297,37 +5307,37 @@ Partial Class Items_edit
         Me.PictureBox121.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox121.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox121.TabIndex = 383
-        Me.PictureBox121.TabStop = False
+        Me.PictureBox121.TabStop = false
         '
-        'NumericUpDown126
+        'valu_interiors_41
         '
-        Me.NumericUpDown126.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown126.Location = New System.Drawing.Point(61, 392)
-        Me.NumericUpDown126.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown126.Name = "NumericUpDown126"
-        Me.NumericUpDown126.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown126.TabIndex = 382
-        Me.NumericUpDown126.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_41.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_41.Location = New System.Drawing.Point(61, 392)
+        Me.valu_interiors_41.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_41.Name = "valu_interiors_41"
+        Me.valu_interiors_41.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_41.TabIndex = 382
+        Me.valu_interiors_41.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox251
+        'Check_NA_interiors_41
         '
-        Me.CheckBox251.AutoSize = True
-        Me.CheckBox251.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox251.Location = New System.Drawing.Point(106, 396)
-        Me.CheckBox251.Name = "CheckBox251"
-        Me.CheckBox251.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox251.TabIndex = 381
-        Me.CheckBox251.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_41.AutoSize = true
+        Me.Check_NA_interiors_41.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_41.Location = New System.Drawing.Point(106, 396)
+        Me.Check_NA_interiors_41.Name = "Check_NA_interiors_41"
+        Me.Check_NA_interiors_41.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_41.TabIndex = 381
+        Me.Check_NA_interiors_41.UseVisualStyleBackColor = false
         '
-        'CheckBox252
+        'Check_available_interiors_41
         '
-        Me.CheckBox252.AutoSize = True
-        Me.CheckBox252.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox252.Location = New System.Drawing.Point(45, 396)
-        Me.CheckBox252.Name = "CheckBox252"
-        Me.CheckBox252.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox252.TabIndex = 380
-        Me.CheckBox252.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_41.AutoSize = true
+        Me.Check_available_interiors_41.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_41.Location = New System.Drawing.Point(45, 396)
+        Me.Check_available_interiors_41.Name = "Check_available_interiors_41"
+        Me.Check_available_interiors_41.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_41.TabIndex = 380
+        Me.Check_available_interiors_41.UseVisualStyleBackColor = false
         '
         'PictureBox122
         '
@@ -5337,37 +5347,37 @@ Partial Class Items_edit
         Me.PictureBox122.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox122.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox122.TabIndex = 379
-        Me.PictureBox122.TabStop = False
+        Me.PictureBox122.TabStop = false
         '
-        'NumericUpDown87
+        'valu_interiors_40
         '
-        Me.NumericUpDown87.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown87.Location = New System.Drawing.Point(799, 312)
-        Me.NumericUpDown87.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown87.Name = "NumericUpDown87"
-        Me.NumericUpDown87.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown87.TabIndex = 378
-        Me.NumericUpDown87.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_40.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_40.Location = New System.Drawing.Point(799, 312)
+        Me.valu_interiors_40.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_40.Name = "valu_interiors_40"
+        Me.valu_interiors_40.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_40.TabIndex = 378
+        Me.valu_interiors_40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox173
+        'Check_NA_interiors_40
         '
-        Me.CheckBox173.AutoSize = True
-        Me.CheckBox173.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox173.Location = New System.Drawing.Point(844, 316)
-        Me.CheckBox173.Name = "CheckBox173"
-        Me.CheckBox173.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox173.TabIndex = 377
-        Me.CheckBox173.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_40.AutoSize = true
+        Me.Check_NA_interiors_40.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_40.Location = New System.Drawing.Point(844, 316)
+        Me.Check_NA_interiors_40.Name = "Check_NA_interiors_40"
+        Me.Check_NA_interiors_40.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_40.TabIndex = 377
+        Me.Check_NA_interiors_40.UseVisualStyleBackColor = false
         '
-        'CheckBox174
+        'Check_available_interiors_40
         '
-        Me.CheckBox174.AutoSize = True
-        Me.CheckBox174.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox174.Location = New System.Drawing.Point(783, 316)
-        Me.CheckBox174.Name = "CheckBox174"
-        Me.CheckBox174.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox174.TabIndex = 376
-        Me.CheckBox174.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_40.AutoSize = true
+        Me.Check_available_interiors_40.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_40.Location = New System.Drawing.Point(783, 316)
+        Me.Check_available_interiors_40.Name = "Check_available_interiors_40"
+        Me.Check_available_interiors_40.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_40.TabIndex = 376
+        Me.Check_available_interiors_40.UseVisualStyleBackColor = false
         '
         'PictureBox58
         '
@@ -5377,37 +5387,37 @@ Partial Class Items_edit
         Me.PictureBox58.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox58.TabIndex = 375
-        Me.PictureBox58.TabStop = False
+        Me.PictureBox58.TabStop = false
         '
-        'NumericUpDown88
+        'valu_interiors_39
         '
-        Me.NumericUpDown88.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown88.Location = New System.Drawing.Point(717, 312)
-        Me.NumericUpDown88.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown88.Name = "NumericUpDown88"
-        Me.NumericUpDown88.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown88.TabIndex = 374
-        Me.NumericUpDown88.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_39.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_39.Location = New System.Drawing.Point(717, 312)
+        Me.valu_interiors_39.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_39.Name = "valu_interiors_39"
+        Me.valu_interiors_39.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_39.TabIndex = 374
+        Me.valu_interiors_39.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox175
+        'Check_NA_interiors_39
         '
-        Me.CheckBox175.AutoSize = True
-        Me.CheckBox175.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox175.Location = New System.Drawing.Point(762, 316)
-        Me.CheckBox175.Name = "CheckBox175"
-        Me.CheckBox175.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox175.TabIndex = 373
-        Me.CheckBox175.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_39.AutoSize = true
+        Me.Check_NA_interiors_39.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_39.Location = New System.Drawing.Point(762, 316)
+        Me.Check_NA_interiors_39.Name = "Check_NA_interiors_39"
+        Me.Check_NA_interiors_39.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_39.TabIndex = 373
+        Me.Check_NA_interiors_39.UseVisualStyleBackColor = false
         '
-        'CheckBox176
+        'Check_available_interiors_39
         '
-        Me.CheckBox176.AutoSize = True
-        Me.CheckBox176.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox176.Location = New System.Drawing.Point(701, 316)
-        Me.CheckBox176.Name = "CheckBox176"
-        Me.CheckBox176.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox176.TabIndex = 372
-        Me.CheckBox176.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_39.AutoSize = true
+        Me.Check_available_interiors_39.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_39.Location = New System.Drawing.Point(701, 316)
+        Me.Check_available_interiors_39.Name = "Check_available_interiors_39"
+        Me.Check_available_interiors_39.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_39.TabIndex = 372
+        Me.Check_available_interiors_39.UseVisualStyleBackColor = false
         '
         'PictureBox59
         '
@@ -5417,37 +5427,37 @@ Partial Class Items_edit
         Me.PictureBox59.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox59.TabIndex = 371
-        Me.PictureBox59.TabStop = False
+        Me.PictureBox59.TabStop = false
         '
-        'NumericUpDown89
+        'valu_interiors_38
         '
-        Me.NumericUpDown89.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown89.Location = New System.Drawing.Point(635, 312)
-        Me.NumericUpDown89.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown89.Name = "NumericUpDown89"
-        Me.NumericUpDown89.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown89.TabIndex = 370
-        Me.NumericUpDown89.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_38.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_38.Location = New System.Drawing.Point(635, 312)
+        Me.valu_interiors_38.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_38.Name = "valu_interiors_38"
+        Me.valu_interiors_38.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_38.TabIndex = 370
+        Me.valu_interiors_38.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox177
+        'Check_NA_interiors_38
         '
-        Me.CheckBox177.AutoSize = True
-        Me.CheckBox177.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox177.Location = New System.Drawing.Point(680, 316)
-        Me.CheckBox177.Name = "CheckBox177"
-        Me.CheckBox177.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox177.TabIndex = 369
-        Me.CheckBox177.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_38.AutoSize = true
+        Me.Check_NA_interiors_38.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_38.Location = New System.Drawing.Point(680, 316)
+        Me.Check_NA_interiors_38.Name = "Check_NA_interiors_38"
+        Me.Check_NA_interiors_38.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_38.TabIndex = 369
+        Me.Check_NA_interiors_38.UseVisualStyleBackColor = false
         '
-        'CheckBox178
+        'Check_available_interiors_38
         '
-        Me.CheckBox178.AutoSize = True
-        Me.CheckBox178.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox178.Location = New System.Drawing.Point(619, 316)
-        Me.CheckBox178.Name = "CheckBox178"
-        Me.CheckBox178.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox178.TabIndex = 368
-        Me.CheckBox178.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_38.AutoSize = true
+        Me.Check_available_interiors_38.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_38.Location = New System.Drawing.Point(619, 316)
+        Me.Check_available_interiors_38.Name = "Check_available_interiors_38"
+        Me.Check_available_interiors_38.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_38.TabIndex = 368
+        Me.Check_available_interiors_38.UseVisualStyleBackColor = false
         '
         'PictureBox60
         '
@@ -5457,37 +5467,37 @@ Partial Class Items_edit
         Me.PictureBox60.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox60.TabIndex = 367
-        Me.PictureBox60.TabStop = False
+        Me.PictureBox60.TabStop = false
         '
-        'NumericUpDown90
+        'valu_interiors_37
         '
-        Me.NumericUpDown90.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown90.Location = New System.Drawing.Point(553, 312)
-        Me.NumericUpDown90.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown90.Name = "NumericUpDown90"
-        Me.NumericUpDown90.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown90.TabIndex = 366
-        Me.NumericUpDown90.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_37.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_37.Location = New System.Drawing.Point(553, 312)
+        Me.valu_interiors_37.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_37.Name = "valu_interiors_37"
+        Me.valu_interiors_37.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_37.TabIndex = 366
+        Me.valu_interiors_37.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox179
+        'Check_NA_interiors_37
         '
-        Me.CheckBox179.AutoSize = True
-        Me.CheckBox179.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox179.Location = New System.Drawing.Point(598, 316)
-        Me.CheckBox179.Name = "CheckBox179"
-        Me.CheckBox179.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox179.TabIndex = 365
-        Me.CheckBox179.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_37.AutoSize = true
+        Me.Check_NA_interiors_37.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_37.Location = New System.Drawing.Point(598, 316)
+        Me.Check_NA_interiors_37.Name = "Check_NA_interiors_37"
+        Me.Check_NA_interiors_37.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_37.TabIndex = 365
+        Me.Check_NA_interiors_37.UseVisualStyleBackColor = false
         '
-        'CheckBox180
+        'Check_available_interiors_37
         '
-        Me.CheckBox180.AutoSize = True
-        Me.CheckBox180.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox180.Location = New System.Drawing.Point(537, 316)
-        Me.CheckBox180.Name = "CheckBox180"
-        Me.CheckBox180.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox180.TabIndex = 364
-        Me.CheckBox180.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_37.AutoSize = true
+        Me.Check_available_interiors_37.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_37.Location = New System.Drawing.Point(537, 316)
+        Me.Check_available_interiors_37.Name = "Check_available_interiors_37"
+        Me.Check_available_interiors_37.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_37.TabIndex = 364
+        Me.Check_available_interiors_37.UseVisualStyleBackColor = false
         '
         'PictureBox77
         '
@@ -5497,37 +5507,37 @@ Partial Class Items_edit
         Me.PictureBox77.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox77.TabIndex = 363
-        Me.PictureBox77.TabStop = False
+        Me.PictureBox77.TabStop = false
         '
-        'NumericUpDown91
+        'valu_interiors_36
         '
-        Me.NumericUpDown91.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown91.Location = New System.Drawing.Point(471, 312)
-        Me.NumericUpDown91.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown91.Name = "NumericUpDown91"
-        Me.NumericUpDown91.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown91.TabIndex = 362
-        Me.NumericUpDown91.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_36.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_36.Location = New System.Drawing.Point(471, 312)
+        Me.valu_interiors_36.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_36.Name = "valu_interiors_36"
+        Me.valu_interiors_36.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_36.TabIndex = 362
+        Me.valu_interiors_36.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox181
+        'Check_NA_interiors_36
         '
-        Me.CheckBox181.AutoSize = True
-        Me.CheckBox181.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox181.Location = New System.Drawing.Point(516, 316)
-        Me.CheckBox181.Name = "CheckBox181"
-        Me.CheckBox181.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox181.TabIndex = 361
-        Me.CheckBox181.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_36.AutoSize = true
+        Me.Check_NA_interiors_36.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_36.Location = New System.Drawing.Point(516, 316)
+        Me.Check_NA_interiors_36.Name = "Check_NA_interiors_36"
+        Me.Check_NA_interiors_36.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_36.TabIndex = 361
+        Me.Check_NA_interiors_36.UseVisualStyleBackColor = false
         '
-        'CheckBox182
+        'Check_available_interiors_36
         '
-        Me.CheckBox182.AutoSize = True
-        Me.CheckBox182.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox182.Location = New System.Drawing.Point(455, 316)
-        Me.CheckBox182.Name = "CheckBox182"
-        Me.CheckBox182.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox182.TabIndex = 360
-        Me.CheckBox182.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_36.AutoSize = true
+        Me.Check_available_interiors_36.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_36.Location = New System.Drawing.Point(455, 316)
+        Me.Check_available_interiors_36.Name = "Check_available_interiors_36"
+        Me.Check_available_interiors_36.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_36.TabIndex = 360
+        Me.Check_available_interiors_36.UseVisualStyleBackColor = false
         '
         'PictureBox78
         '
@@ -5537,37 +5547,37 @@ Partial Class Items_edit
         Me.PictureBox78.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox78.TabIndex = 359
-        Me.PictureBox78.TabStop = False
+        Me.PictureBox78.TabStop = false
         '
-        'NumericUpDown92
+        'valu_interiors_35
         '
-        Me.NumericUpDown92.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown92.Location = New System.Drawing.Point(389, 312)
-        Me.NumericUpDown92.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown92.Name = "NumericUpDown92"
-        Me.NumericUpDown92.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown92.TabIndex = 358
-        Me.NumericUpDown92.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_35.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_35.Location = New System.Drawing.Point(389, 312)
+        Me.valu_interiors_35.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_35.Name = "valu_interiors_35"
+        Me.valu_interiors_35.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_35.TabIndex = 358
+        Me.valu_interiors_35.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox183
+        'Check_NA_interiors_35
         '
-        Me.CheckBox183.AutoSize = True
-        Me.CheckBox183.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox183.Location = New System.Drawing.Point(434, 316)
-        Me.CheckBox183.Name = "CheckBox183"
-        Me.CheckBox183.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox183.TabIndex = 357
-        Me.CheckBox183.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_35.AutoSize = true
+        Me.Check_NA_interiors_35.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_35.Location = New System.Drawing.Point(434, 316)
+        Me.Check_NA_interiors_35.Name = "Check_NA_interiors_35"
+        Me.Check_NA_interiors_35.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_35.TabIndex = 357
+        Me.Check_NA_interiors_35.UseVisualStyleBackColor = false
         '
-        'CheckBox184
+        'Check_available_interiors_35
         '
-        Me.CheckBox184.AutoSize = True
-        Me.CheckBox184.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox184.Location = New System.Drawing.Point(373, 316)
-        Me.CheckBox184.Name = "CheckBox184"
-        Me.CheckBox184.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox184.TabIndex = 356
-        Me.CheckBox184.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_35.AutoSize = true
+        Me.Check_available_interiors_35.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_35.Location = New System.Drawing.Point(373, 316)
+        Me.Check_available_interiors_35.Name = "Check_available_interiors_35"
+        Me.Check_available_interiors_35.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_35.TabIndex = 356
+        Me.Check_available_interiors_35.UseVisualStyleBackColor = false
         '
         'PictureBox79
         '
@@ -5577,37 +5587,37 @@ Partial Class Items_edit
         Me.PictureBox79.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox79.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox79.TabIndex = 355
-        Me.PictureBox79.TabStop = False
+        Me.PictureBox79.TabStop = false
         '
-        'NumericUpDown93
+        'valu_interiors_34
         '
-        Me.NumericUpDown93.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown93.Location = New System.Drawing.Point(307, 312)
-        Me.NumericUpDown93.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown93.Name = "NumericUpDown93"
-        Me.NumericUpDown93.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown93.TabIndex = 354
-        Me.NumericUpDown93.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_34.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_34.Location = New System.Drawing.Point(307, 312)
+        Me.valu_interiors_34.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_34.Name = "valu_interiors_34"
+        Me.valu_interiors_34.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_34.TabIndex = 354
+        Me.valu_interiors_34.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox185
+        'Check_NA_interiors_34
         '
-        Me.CheckBox185.AutoSize = True
-        Me.CheckBox185.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox185.Location = New System.Drawing.Point(352, 316)
-        Me.CheckBox185.Name = "CheckBox185"
-        Me.CheckBox185.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox185.TabIndex = 353
-        Me.CheckBox185.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_34.AutoSize = true
+        Me.Check_NA_interiors_34.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_34.Location = New System.Drawing.Point(352, 316)
+        Me.Check_NA_interiors_34.Name = "Check_NA_interiors_34"
+        Me.Check_NA_interiors_34.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_34.TabIndex = 353
+        Me.Check_NA_interiors_34.UseVisualStyleBackColor = false
         '
-        'CheckBox186
+        'Check_available_interiors_34
         '
-        Me.CheckBox186.AutoSize = True
-        Me.CheckBox186.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox186.Location = New System.Drawing.Point(291, 316)
-        Me.CheckBox186.Name = "CheckBox186"
-        Me.CheckBox186.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox186.TabIndex = 352
-        Me.CheckBox186.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_34.AutoSize = true
+        Me.Check_available_interiors_34.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_34.Location = New System.Drawing.Point(291, 316)
+        Me.Check_available_interiors_34.Name = "Check_available_interiors_34"
+        Me.Check_available_interiors_34.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_34.TabIndex = 352
+        Me.Check_available_interiors_34.UseVisualStyleBackColor = false
         '
         'PictureBox80
         '
@@ -5617,37 +5627,37 @@ Partial Class Items_edit
         Me.PictureBox80.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox80.TabIndex = 351
-        Me.PictureBox80.TabStop = False
+        Me.PictureBox80.TabStop = false
         '
-        'NumericUpDown94
+        'valu_interiors_33
         '
-        Me.NumericUpDown94.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown94.Location = New System.Drawing.Point(225, 312)
-        Me.NumericUpDown94.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown94.Name = "NumericUpDown94"
-        Me.NumericUpDown94.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown94.TabIndex = 350
-        Me.NumericUpDown94.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_33.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_33.Location = New System.Drawing.Point(225, 312)
+        Me.valu_interiors_33.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_33.Name = "valu_interiors_33"
+        Me.valu_interiors_33.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_33.TabIndex = 350
+        Me.valu_interiors_33.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox187
+        'Check_NA_interiors_33
         '
-        Me.CheckBox187.AutoSize = True
-        Me.CheckBox187.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox187.Location = New System.Drawing.Point(270, 316)
-        Me.CheckBox187.Name = "CheckBox187"
-        Me.CheckBox187.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox187.TabIndex = 349
-        Me.CheckBox187.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_33.AutoSize = true
+        Me.Check_NA_interiors_33.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_33.Location = New System.Drawing.Point(270, 316)
+        Me.Check_NA_interiors_33.Name = "Check_NA_interiors_33"
+        Me.Check_NA_interiors_33.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_33.TabIndex = 349
+        Me.Check_NA_interiors_33.UseVisualStyleBackColor = false
         '
-        'CheckBox188
+        'Check_available_interiors_33
         '
-        Me.CheckBox188.AutoSize = True
-        Me.CheckBox188.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox188.Location = New System.Drawing.Point(209, 316)
-        Me.CheckBox188.Name = "CheckBox188"
-        Me.CheckBox188.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox188.TabIndex = 348
-        Me.CheckBox188.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_33.AutoSize = true
+        Me.Check_available_interiors_33.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_33.Location = New System.Drawing.Point(209, 316)
+        Me.Check_available_interiors_33.Name = "Check_available_interiors_33"
+        Me.Check_available_interiors_33.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_33.TabIndex = 348
+        Me.Check_available_interiors_33.UseVisualStyleBackColor = false
         '
         'PictureBox81
         '
@@ -5657,37 +5667,37 @@ Partial Class Items_edit
         Me.PictureBox81.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox81.TabIndex = 347
-        Me.PictureBox81.TabStop = False
+        Me.PictureBox81.TabStop = false
         '
-        'NumericUpDown95
+        'valu_interiors_32
         '
-        Me.NumericUpDown95.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown95.Location = New System.Drawing.Point(143, 312)
-        Me.NumericUpDown95.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown95.Name = "NumericUpDown95"
-        Me.NumericUpDown95.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown95.TabIndex = 346
-        Me.NumericUpDown95.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_32.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_32.Location = New System.Drawing.Point(143, 312)
+        Me.valu_interiors_32.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_32.Name = "valu_interiors_32"
+        Me.valu_interiors_32.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_32.TabIndex = 346
+        Me.valu_interiors_32.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox189
+        'Check_NA_interiors_32
         '
-        Me.CheckBox189.AutoSize = True
-        Me.CheckBox189.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox189.Location = New System.Drawing.Point(188, 316)
-        Me.CheckBox189.Name = "CheckBox189"
-        Me.CheckBox189.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox189.TabIndex = 345
-        Me.CheckBox189.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_32.AutoSize = true
+        Me.Check_NA_interiors_32.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_32.Location = New System.Drawing.Point(188, 316)
+        Me.Check_NA_interiors_32.Name = "Check_NA_interiors_32"
+        Me.Check_NA_interiors_32.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_32.TabIndex = 345
+        Me.Check_NA_interiors_32.UseVisualStyleBackColor = false
         '
-        'CheckBox190
+        'Check_available_interiors_32
         '
-        Me.CheckBox190.AutoSize = True
-        Me.CheckBox190.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox190.Location = New System.Drawing.Point(127, 316)
-        Me.CheckBox190.Name = "CheckBox190"
-        Me.CheckBox190.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox190.TabIndex = 344
-        Me.CheckBox190.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_32.AutoSize = true
+        Me.Check_available_interiors_32.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_32.Location = New System.Drawing.Point(127, 316)
+        Me.Check_available_interiors_32.Name = "Check_available_interiors_32"
+        Me.Check_available_interiors_32.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_32.TabIndex = 344
+        Me.Check_available_interiors_32.UseVisualStyleBackColor = false
         '
         'PictureBox82
         '
@@ -5697,37 +5707,37 @@ Partial Class Items_edit
         Me.PictureBox82.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox82.TabIndex = 343
-        Me.PictureBox82.TabStop = False
+        Me.PictureBox82.TabStop = false
         '
-        'NumericUpDown96
+        'valu_interiors_31
         '
-        Me.NumericUpDown96.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown96.Location = New System.Drawing.Point(61, 312)
-        Me.NumericUpDown96.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown96.Name = "NumericUpDown96"
-        Me.NumericUpDown96.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown96.TabIndex = 342
-        Me.NumericUpDown96.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_31.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_31.Location = New System.Drawing.Point(61, 312)
+        Me.valu_interiors_31.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_31.Name = "valu_interiors_31"
+        Me.valu_interiors_31.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_31.TabIndex = 342
+        Me.valu_interiors_31.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox191
+        'Check_NA_interiors_31
         '
-        Me.CheckBox191.AutoSize = True
-        Me.CheckBox191.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox191.Location = New System.Drawing.Point(106, 316)
-        Me.CheckBox191.Name = "CheckBox191"
-        Me.CheckBox191.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox191.TabIndex = 341
-        Me.CheckBox191.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_31.AutoSize = true
+        Me.Check_NA_interiors_31.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_31.Location = New System.Drawing.Point(106, 316)
+        Me.Check_NA_interiors_31.Name = "Check_NA_interiors_31"
+        Me.Check_NA_interiors_31.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_31.TabIndex = 341
+        Me.Check_NA_interiors_31.UseVisualStyleBackColor = false
         '
-        'CheckBox192
+        'Check_available_interiors_31
         '
-        Me.CheckBox192.AutoSize = True
-        Me.CheckBox192.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox192.Location = New System.Drawing.Point(45, 316)
-        Me.CheckBox192.Name = "CheckBox192"
-        Me.CheckBox192.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox192.TabIndex = 340
-        Me.CheckBox192.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_31.AutoSize = true
+        Me.Check_available_interiors_31.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_31.Location = New System.Drawing.Point(45, 316)
+        Me.Check_available_interiors_31.Name = "Check_available_interiors_31"
+        Me.Check_available_interiors_31.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_31.TabIndex = 340
+        Me.Check_available_interiors_31.UseVisualStyleBackColor = false
         '
         'PictureBox83
         '
@@ -5737,37 +5747,37 @@ Partial Class Items_edit
         Me.PictureBox83.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox83.TabIndex = 339
-        Me.PictureBox83.TabStop = False
+        Me.PictureBox83.TabStop = false
         '
-        'NumericUpDown97
+        'valu_interiors_30
         '
-        Me.NumericUpDown97.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown97.Location = New System.Drawing.Point(799, 232)
-        Me.NumericUpDown97.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown97.Name = "NumericUpDown97"
-        Me.NumericUpDown97.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown97.TabIndex = 338
-        Me.NumericUpDown97.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_30.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_30.Location = New System.Drawing.Point(799, 232)
+        Me.valu_interiors_30.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_30.Name = "valu_interiors_30"
+        Me.valu_interiors_30.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_30.TabIndex = 338
+        Me.valu_interiors_30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox193
+        'Check_NA_interiors_30
         '
-        Me.CheckBox193.AutoSize = True
-        Me.CheckBox193.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox193.Location = New System.Drawing.Point(844, 236)
-        Me.CheckBox193.Name = "CheckBox193"
-        Me.CheckBox193.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox193.TabIndex = 337
-        Me.CheckBox193.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_30.AutoSize = true
+        Me.Check_NA_interiors_30.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_30.Location = New System.Drawing.Point(844, 236)
+        Me.Check_NA_interiors_30.Name = "Check_NA_interiors_30"
+        Me.Check_NA_interiors_30.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_30.TabIndex = 337
+        Me.Check_NA_interiors_30.UseVisualStyleBackColor = false
         '
-        'CheckBox194
+        'Check_available_interiors_30
         '
-        Me.CheckBox194.AutoSize = True
-        Me.CheckBox194.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox194.Location = New System.Drawing.Point(783, 236)
-        Me.CheckBox194.Name = "CheckBox194"
-        Me.CheckBox194.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox194.TabIndex = 336
-        Me.CheckBox194.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_30.AutoSize = true
+        Me.Check_available_interiors_30.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_30.Location = New System.Drawing.Point(783, 236)
+        Me.Check_available_interiors_30.Name = "Check_available_interiors_30"
+        Me.Check_available_interiors_30.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_30.TabIndex = 336
+        Me.Check_available_interiors_30.UseVisualStyleBackColor = false
         '
         'PictureBox84
         '
@@ -5777,37 +5787,37 @@ Partial Class Items_edit
         Me.PictureBox84.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox84.TabIndex = 335
-        Me.PictureBox84.TabStop = False
+        Me.PictureBox84.TabStop = false
         '
-        'NumericUpDown98
+        'valu_interiors_29
         '
-        Me.NumericUpDown98.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown98.Location = New System.Drawing.Point(717, 232)
-        Me.NumericUpDown98.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown98.Name = "NumericUpDown98"
-        Me.NumericUpDown98.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown98.TabIndex = 334
-        Me.NumericUpDown98.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_29.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_29.Location = New System.Drawing.Point(717, 232)
+        Me.valu_interiors_29.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_29.Name = "valu_interiors_29"
+        Me.valu_interiors_29.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_29.TabIndex = 334
+        Me.valu_interiors_29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox195
+        'Check_NA_interiors_29
         '
-        Me.CheckBox195.AutoSize = True
-        Me.CheckBox195.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox195.Location = New System.Drawing.Point(762, 236)
-        Me.CheckBox195.Name = "CheckBox195"
-        Me.CheckBox195.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox195.TabIndex = 333
-        Me.CheckBox195.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_29.AutoSize = true
+        Me.Check_NA_interiors_29.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_29.Location = New System.Drawing.Point(762, 236)
+        Me.Check_NA_interiors_29.Name = "Check_NA_interiors_29"
+        Me.Check_NA_interiors_29.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_29.TabIndex = 333
+        Me.Check_NA_interiors_29.UseVisualStyleBackColor = false
         '
-        'CheckBox196
+        'Check_available_interiors_29
         '
-        Me.CheckBox196.AutoSize = True
-        Me.CheckBox196.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox196.Location = New System.Drawing.Point(701, 236)
-        Me.CheckBox196.Name = "CheckBox196"
-        Me.CheckBox196.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox196.TabIndex = 332
-        Me.CheckBox196.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_29.AutoSize = true
+        Me.Check_available_interiors_29.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_29.Location = New System.Drawing.Point(701, 236)
+        Me.Check_available_interiors_29.Name = "Check_available_interiors_29"
+        Me.Check_available_interiors_29.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_29.TabIndex = 332
+        Me.Check_available_interiors_29.UseVisualStyleBackColor = false
         '
         'PictureBox85
         '
@@ -5817,37 +5827,37 @@ Partial Class Items_edit
         Me.PictureBox85.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox85.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox85.TabIndex = 331
-        Me.PictureBox85.TabStop = False
+        Me.PictureBox85.TabStop = false
         '
-        'NumericUpDown99
+        'valu_interiors_28
         '
-        Me.NumericUpDown99.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown99.Location = New System.Drawing.Point(635, 232)
-        Me.NumericUpDown99.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown99.Name = "NumericUpDown99"
-        Me.NumericUpDown99.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown99.TabIndex = 330
-        Me.NumericUpDown99.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_28.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_28.Location = New System.Drawing.Point(635, 232)
+        Me.valu_interiors_28.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_28.Name = "valu_interiors_28"
+        Me.valu_interiors_28.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_28.TabIndex = 330
+        Me.valu_interiors_28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox197
+        'Check_NA_interiors_28
         '
-        Me.CheckBox197.AutoSize = True
-        Me.CheckBox197.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox197.Location = New System.Drawing.Point(680, 236)
-        Me.CheckBox197.Name = "CheckBox197"
-        Me.CheckBox197.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox197.TabIndex = 329
-        Me.CheckBox197.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_28.AutoSize = true
+        Me.Check_NA_interiors_28.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_28.Location = New System.Drawing.Point(680, 236)
+        Me.Check_NA_interiors_28.Name = "Check_NA_interiors_28"
+        Me.Check_NA_interiors_28.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_28.TabIndex = 329
+        Me.Check_NA_interiors_28.UseVisualStyleBackColor = false
         '
-        'CheckBox198
+        'Check_available_interiors_28
         '
-        Me.CheckBox198.AutoSize = True
-        Me.CheckBox198.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox198.Location = New System.Drawing.Point(619, 236)
-        Me.CheckBox198.Name = "CheckBox198"
-        Me.CheckBox198.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox198.TabIndex = 328
-        Me.CheckBox198.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_28.AutoSize = true
+        Me.Check_available_interiors_28.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_28.Location = New System.Drawing.Point(619, 236)
+        Me.Check_available_interiors_28.Name = "Check_available_interiors_28"
+        Me.Check_available_interiors_28.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_28.TabIndex = 328
+        Me.Check_available_interiors_28.UseVisualStyleBackColor = false
         '
         'PictureBox89
         '
@@ -5857,37 +5867,37 @@ Partial Class Items_edit
         Me.PictureBox89.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox89.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox89.TabIndex = 327
-        Me.PictureBox89.TabStop = False
+        Me.PictureBox89.TabStop = false
         '
-        'NumericUpDown100
+        'valu_interiors_27
         '
-        Me.NumericUpDown100.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown100.Location = New System.Drawing.Point(553, 232)
-        Me.NumericUpDown100.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown100.Name = "NumericUpDown100"
-        Me.NumericUpDown100.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown100.TabIndex = 326
-        Me.NumericUpDown100.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_27.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_27.Location = New System.Drawing.Point(553, 232)
+        Me.valu_interiors_27.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_27.Name = "valu_interiors_27"
+        Me.valu_interiors_27.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_27.TabIndex = 326
+        Me.valu_interiors_27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox199
+        'Check_NA_interiors_27
         '
-        Me.CheckBox199.AutoSize = True
-        Me.CheckBox199.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox199.Location = New System.Drawing.Point(598, 236)
-        Me.CheckBox199.Name = "CheckBox199"
-        Me.CheckBox199.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox199.TabIndex = 325
-        Me.CheckBox199.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_27.AutoSize = true
+        Me.Check_NA_interiors_27.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_27.Location = New System.Drawing.Point(598, 236)
+        Me.Check_NA_interiors_27.Name = "Check_NA_interiors_27"
+        Me.Check_NA_interiors_27.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_27.TabIndex = 325
+        Me.Check_NA_interiors_27.UseVisualStyleBackColor = false
         '
-        'CheckBox200
+        'Check_available_interiors_27
         '
-        Me.CheckBox200.AutoSize = True
-        Me.CheckBox200.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox200.Location = New System.Drawing.Point(537, 236)
-        Me.CheckBox200.Name = "CheckBox200"
-        Me.CheckBox200.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox200.TabIndex = 324
-        Me.CheckBox200.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_27.AutoSize = true
+        Me.Check_available_interiors_27.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_27.Location = New System.Drawing.Point(537, 236)
+        Me.Check_available_interiors_27.Name = "Check_available_interiors_27"
+        Me.Check_available_interiors_27.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_27.TabIndex = 324
+        Me.Check_available_interiors_27.UseVisualStyleBackColor = false
         '
         'PictureBox90
         '
@@ -5897,37 +5907,37 @@ Partial Class Items_edit
         Me.PictureBox90.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox90.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox90.TabIndex = 323
-        Me.PictureBox90.TabStop = False
+        Me.PictureBox90.TabStop = false
         '
-        'NumericUpDown101
+        'valu_interiors_26
         '
-        Me.NumericUpDown101.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown101.Location = New System.Drawing.Point(471, 232)
-        Me.NumericUpDown101.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown101.Name = "NumericUpDown101"
-        Me.NumericUpDown101.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown101.TabIndex = 322
-        Me.NumericUpDown101.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_26.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_26.Location = New System.Drawing.Point(471, 232)
+        Me.valu_interiors_26.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_26.Name = "valu_interiors_26"
+        Me.valu_interiors_26.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_26.TabIndex = 322
+        Me.valu_interiors_26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox201
+        'Check_NA_interiors_26
         '
-        Me.CheckBox201.AutoSize = True
-        Me.CheckBox201.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox201.Location = New System.Drawing.Point(516, 236)
-        Me.CheckBox201.Name = "CheckBox201"
-        Me.CheckBox201.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox201.TabIndex = 321
-        Me.CheckBox201.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_26.AutoSize = true
+        Me.Check_NA_interiors_26.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_26.Location = New System.Drawing.Point(516, 236)
+        Me.Check_NA_interiors_26.Name = "Check_NA_interiors_26"
+        Me.Check_NA_interiors_26.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_26.TabIndex = 321
+        Me.Check_NA_interiors_26.UseVisualStyleBackColor = false
         '
-        'CheckBox202
+        'Check_available_interiors_26
         '
-        Me.CheckBox202.AutoSize = True
-        Me.CheckBox202.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox202.Location = New System.Drawing.Point(455, 236)
-        Me.CheckBox202.Name = "CheckBox202"
-        Me.CheckBox202.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox202.TabIndex = 320
-        Me.CheckBox202.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_26.AutoSize = true
+        Me.Check_available_interiors_26.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_26.Location = New System.Drawing.Point(455, 236)
+        Me.Check_available_interiors_26.Name = "Check_available_interiors_26"
+        Me.Check_available_interiors_26.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_26.TabIndex = 320
+        Me.Check_available_interiors_26.UseVisualStyleBackColor = false
         '
         'PictureBox91
         '
@@ -5937,37 +5947,37 @@ Partial Class Items_edit
         Me.PictureBox91.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox91.TabIndex = 319
-        Me.PictureBox91.TabStop = False
+        Me.PictureBox91.TabStop = false
         '
-        'NumericUpDown102
+        'valu_interiors_25
         '
-        Me.NumericUpDown102.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown102.Location = New System.Drawing.Point(389, 232)
-        Me.NumericUpDown102.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown102.Name = "NumericUpDown102"
-        Me.NumericUpDown102.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown102.TabIndex = 318
-        Me.NumericUpDown102.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_25.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_25.Location = New System.Drawing.Point(389, 232)
+        Me.valu_interiors_25.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_25.Name = "valu_interiors_25"
+        Me.valu_interiors_25.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_25.TabIndex = 318
+        Me.valu_interiors_25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox203
+        'Check_NA_interiors_25
         '
-        Me.CheckBox203.AutoSize = True
-        Me.CheckBox203.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox203.Location = New System.Drawing.Point(434, 236)
-        Me.CheckBox203.Name = "CheckBox203"
-        Me.CheckBox203.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox203.TabIndex = 317
-        Me.CheckBox203.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_25.AutoSize = true
+        Me.Check_NA_interiors_25.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_25.Location = New System.Drawing.Point(434, 236)
+        Me.Check_NA_interiors_25.Name = "Check_NA_interiors_25"
+        Me.Check_NA_interiors_25.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_25.TabIndex = 317
+        Me.Check_NA_interiors_25.UseVisualStyleBackColor = false
         '
-        'CheckBox204
+        'Check_available_interiors_25
         '
-        Me.CheckBox204.AutoSize = True
-        Me.CheckBox204.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox204.Location = New System.Drawing.Point(373, 236)
-        Me.CheckBox204.Name = "CheckBox204"
-        Me.CheckBox204.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox204.TabIndex = 316
-        Me.CheckBox204.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_25.AutoSize = true
+        Me.Check_available_interiors_25.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_25.Location = New System.Drawing.Point(373, 236)
+        Me.Check_available_interiors_25.Name = "Check_available_interiors_25"
+        Me.Check_available_interiors_25.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_25.TabIndex = 316
+        Me.Check_available_interiors_25.UseVisualStyleBackColor = false
         '
         'PictureBox92
         '
@@ -5977,37 +5987,37 @@ Partial Class Items_edit
         Me.PictureBox92.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox92.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox92.TabIndex = 315
-        Me.PictureBox92.TabStop = False
+        Me.PictureBox92.TabStop = false
         '
-        'NumericUpDown103
+        'valu_interiors_24
         '
-        Me.NumericUpDown103.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown103.Location = New System.Drawing.Point(307, 232)
-        Me.NumericUpDown103.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown103.Name = "NumericUpDown103"
-        Me.NumericUpDown103.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown103.TabIndex = 314
-        Me.NumericUpDown103.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_24.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_24.Location = New System.Drawing.Point(307, 232)
+        Me.valu_interiors_24.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_24.Name = "valu_interiors_24"
+        Me.valu_interiors_24.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_24.TabIndex = 314
+        Me.valu_interiors_24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox205
+        'Check_NA_interiors_24
         '
-        Me.CheckBox205.AutoSize = True
-        Me.CheckBox205.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox205.Location = New System.Drawing.Point(352, 236)
-        Me.CheckBox205.Name = "CheckBox205"
-        Me.CheckBox205.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox205.TabIndex = 313
-        Me.CheckBox205.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_24.AutoSize = true
+        Me.Check_NA_interiors_24.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_24.Location = New System.Drawing.Point(352, 236)
+        Me.Check_NA_interiors_24.Name = "Check_NA_interiors_24"
+        Me.Check_NA_interiors_24.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_24.TabIndex = 313
+        Me.Check_NA_interiors_24.UseVisualStyleBackColor = false
         '
-        'CheckBox206
+        'Check_available_interiors_24
         '
-        Me.CheckBox206.AutoSize = True
-        Me.CheckBox206.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox206.Location = New System.Drawing.Point(291, 236)
-        Me.CheckBox206.Name = "CheckBox206"
-        Me.CheckBox206.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox206.TabIndex = 312
-        Me.CheckBox206.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_24.AutoSize = true
+        Me.Check_available_interiors_24.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_24.Location = New System.Drawing.Point(291, 236)
+        Me.Check_available_interiors_24.Name = "Check_available_interiors_24"
+        Me.Check_available_interiors_24.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_24.TabIndex = 312
+        Me.Check_available_interiors_24.UseVisualStyleBackColor = false
         '
         'PictureBox93
         '
@@ -6017,37 +6027,37 @@ Partial Class Items_edit
         Me.PictureBox93.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox93.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox93.TabIndex = 311
-        Me.PictureBox93.TabStop = False
+        Me.PictureBox93.TabStop = false
         '
-        'NumericUpDown104
+        'valu_interiors_23
         '
-        Me.NumericUpDown104.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown104.Location = New System.Drawing.Point(225, 232)
-        Me.NumericUpDown104.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown104.Name = "NumericUpDown104"
-        Me.NumericUpDown104.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown104.TabIndex = 310
-        Me.NumericUpDown104.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_23.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_23.Location = New System.Drawing.Point(225, 232)
+        Me.valu_interiors_23.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_23.Name = "valu_interiors_23"
+        Me.valu_interiors_23.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_23.TabIndex = 310
+        Me.valu_interiors_23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox207
+        'Check_NA_interiors_23
         '
-        Me.CheckBox207.AutoSize = True
-        Me.CheckBox207.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox207.Location = New System.Drawing.Point(270, 236)
-        Me.CheckBox207.Name = "CheckBox207"
-        Me.CheckBox207.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox207.TabIndex = 309
-        Me.CheckBox207.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_23.AutoSize = true
+        Me.Check_NA_interiors_23.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_23.Location = New System.Drawing.Point(270, 236)
+        Me.Check_NA_interiors_23.Name = "Check_NA_interiors_23"
+        Me.Check_NA_interiors_23.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_23.TabIndex = 309
+        Me.Check_NA_interiors_23.UseVisualStyleBackColor = false
         '
-        'CheckBox208
+        'Check_available_interiors_23
         '
-        Me.CheckBox208.AutoSize = True
-        Me.CheckBox208.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox208.Location = New System.Drawing.Point(209, 236)
-        Me.CheckBox208.Name = "CheckBox208"
-        Me.CheckBox208.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox208.TabIndex = 308
-        Me.CheckBox208.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_23.AutoSize = true
+        Me.Check_available_interiors_23.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_23.Location = New System.Drawing.Point(209, 236)
+        Me.Check_available_interiors_23.Name = "Check_available_interiors_23"
+        Me.Check_available_interiors_23.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_23.TabIndex = 308
+        Me.Check_available_interiors_23.UseVisualStyleBackColor = false
         '
         'PictureBox94
         '
@@ -6057,37 +6067,37 @@ Partial Class Items_edit
         Me.PictureBox94.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox94.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox94.TabIndex = 307
-        Me.PictureBox94.TabStop = False
+        Me.PictureBox94.TabStop = false
         '
-        'NumericUpDown105
+        'valu_interiors_22
         '
-        Me.NumericUpDown105.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown105.Location = New System.Drawing.Point(143, 232)
-        Me.NumericUpDown105.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown105.Name = "NumericUpDown105"
-        Me.NumericUpDown105.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown105.TabIndex = 306
-        Me.NumericUpDown105.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_22.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_22.Location = New System.Drawing.Point(143, 232)
+        Me.valu_interiors_22.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_22.Name = "valu_interiors_22"
+        Me.valu_interiors_22.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_22.TabIndex = 306
+        Me.valu_interiors_22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox209
+        'Check_NA_interiors_22
         '
-        Me.CheckBox209.AutoSize = True
-        Me.CheckBox209.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox209.Location = New System.Drawing.Point(188, 236)
-        Me.CheckBox209.Name = "CheckBox209"
-        Me.CheckBox209.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox209.TabIndex = 305
-        Me.CheckBox209.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_22.AutoSize = true
+        Me.Check_NA_interiors_22.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_22.Location = New System.Drawing.Point(188, 236)
+        Me.Check_NA_interiors_22.Name = "Check_NA_interiors_22"
+        Me.Check_NA_interiors_22.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_22.TabIndex = 305
+        Me.Check_NA_interiors_22.UseVisualStyleBackColor = false
         '
-        'CheckBox210
+        'Check_available_interiors_22
         '
-        Me.CheckBox210.AutoSize = True
-        Me.CheckBox210.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox210.Location = New System.Drawing.Point(127, 236)
-        Me.CheckBox210.Name = "CheckBox210"
-        Me.CheckBox210.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox210.TabIndex = 304
-        Me.CheckBox210.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_22.AutoSize = true
+        Me.Check_available_interiors_22.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_22.Location = New System.Drawing.Point(127, 236)
+        Me.Check_available_interiors_22.Name = "Check_available_interiors_22"
+        Me.Check_available_interiors_22.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_22.TabIndex = 304
+        Me.Check_available_interiors_22.UseVisualStyleBackColor = false
         '
         'PictureBox95
         '
@@ -6097,37 +6107,37 @@ Partial Class Items_edit
         Me.PictureBox95.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox95.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox95.TabIndex = 303
-        Me.PictureBox95.TabStop = False
+        Me.PictureBox95.TabStop = false
         '
-        'NumericUpDown106
+        'valu_interiors_21
         '
-        Me.NumericUpDown106.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown106.Location = New System.Drawing.Point(61, 232)
-        Me.NumericUpDown106.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown106.Name = "NumericUpDown106"
-        Me.NumericUpDown106.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown106.TabIndex = 302
-        Me.NumericUpDown106.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_21.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_21.Location = New System.Drawing.Point(61, 232)
+        Me.valu_interiors_21.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_21.Name = "valu_interiors_21"
+        Me.valu_interiors_21.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_21.TabIndex = 302
+        Me.valu_interiors_21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox211
+        'Check_NA_interiors_21
         '
-        Me.CheckBox211.AutoSize = True
-        Me.CheckBox211.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox211.Location = New System.Drawing.Point(106, 236)
-        Me.CheckBox211.Name = "CheckBox211"
-        Me.CheckBox211.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox211.TabIndex = 301
-        Me.CheckBox211.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_21.AutoSize = true
+        Me.Check_NA_interiors_21.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_21.Location = New System.Drawing.Point(106, 236)
+        Me.Check_NA_interiors_21.Name = "Check_NA_interiors_21"
+        Me.Check_NA_interiors_21.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_21.TabIndex = 301
+        Me.Check_NA_interiors_21.UseVisualStyleBackColor = false
         '
-        'CheckBox212
+        'Check_available_interiors_21
         '
-        Me.CheckBox212.AutoSize = True
-        Me.CheckBox212.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox212.Location = New System.Drawing.Point(45, 236)
-        Me.CheckBox212.Name = "CheckBox212"
-        Me.CheckBox212.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox212.TabIndex = 300
-        Me.CheckBox212.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_21.AutoSize = true
+        Me.Check_available_interiors_21.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_21.Location = New System.Drawing.Point(45, 236)
+        Me.Check_available_interiors_21.Name = "Check_available_interiors_21"
+        Me.Check_available_interiors_21.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_21.TabIndex = 300
+        Me.Check_available_interiors_21.UseVisualStyleBackColor = false
         '
         'PictureBox96
         '
@@ -6137,37 +6147,37 @@ Partial Class Items_edit
         Me.PictureBox96.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox96.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox96.TabIndex = 299
-        Me.PictureBox96.TabStop = False
+        Me.PictureBox96.TabStop = false
         '
-        'NumericUpDown77
+        'valu_interiors_20
         '
-        Me.NumericUpDown77.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown77.Location = New System.Drawing.Point(799, 152)
-        Me.NumericUpDown77.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown77.Name = "NumericUpDown77"
-        Me.NumericUpDown77.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown77.TabIndex = 298
-        Me.NumericUpDown77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_20.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_20.Location = New System.Drawing.Point(799, 152)
+        Me.valu_interiors_20.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_20.Name = "valu_interiors_20"
+        Me.valu_interiors_20.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_20.TabIndex = 298
+        Me.valu_interiors_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox153
+        'Check_NA_interiors_20
         '
-        Me.CheckBox153.AutoSize = True
-        Me.CheckBox153.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox153.Location = New System.Drawing.Point(844, 156)
-        Me.CheckBox153.Name = "CheckBox153"
-        Me.CheckBox153.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox153.TabIndex = 297
-        Me.CheckBox153.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_20.AutoSize = true
+        Me.Check_NA_interiors_20.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_20.Location = New System.Drawing.Point(844, 156)
+        Me.Check_NA_interiors_20.Name = "Check_NA_interiors_20"
+        Me.Check_NA_interiors_20.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_20.TabIndex = 297
+        Me.Check_NA_interiors_20.UseVisualStyleBackColor = false
         '
-        'CheckBox154
+        'Check_available_interiors_20
         '
-        Me.CheckBox154.AutoSize = True
-        Me.CheckBox154.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox154.Location = New System.Drawing.Point(783, 156)
-        Me.CheckBox154.Name = "CheckBox154"
-        Me.CheckBox154.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox154.TabIndex = 296
-        Me.CheckBox154.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_20.AutoSize = true
+        Me.Check_available_interiors_20.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_20.Location = New System.Drawing.Point(783, 156)
+        Me.Check_available_interiors_20.Name = "Check_available_interiors_20"
+        Me.Check_available_interiors_20.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_20.TabIndex = 296
+        Me.Check_available_interiors_20.UseVisualStyleBackColor = false
         '
         'PictureBox14
         '
@@ -6177,37 +6187,37 @@ Partial Class Items_edit
         Me.PictureBox14.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox14.TabIndex = 295
-        Me.PictureBox14.TabStop = False
+        Me.PictureBox14.TabStop = false
         '
-        'NumericUpDown78
+        'valu_interiors_19
         '
-        Me.NumericUpDown78.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown78.Location = New System.Drawing.Point(717, 152)
-        Me.NumericUpDown78.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown78.Name = "NumericUpDown78"
-        Me.NumericUpDown78.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown78.TabIndex = 294
-        Me.NumericUpDown78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_19.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_19.Location = New System.Drawing.Point(717, 152)
+        Me.valu_interiors_19.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_19.Name = "valu_interiors_19"
+        Me.valu_interiors_19.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_19.TabIndex = 294
+        Me.valu_interiors_19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox155
+        'Check_NA_interiors_19
         '
-        Me.CheckBox155.AutoSize = True
-        Me.CheckBox155.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox155.Location = New System.Drawing.Point(762, 156)
-        Me.CheckBox155.Name = "CheckBox155"
-        Me.CheckBox155.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox155.TabIndex = 293
-        Me.CheckBox155.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_19.AutoSize = true
+        Me.Check_NA_interiors_19.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_19.Location = New System.Drawing.Point(762, 156)
+        Me.Check_NA_interiors_19.Name = "Check_NA_interiors_19"
+        Me.Check_NA_interiors_19.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_19.TabIndex = 293
+        Me.Check_NA_interiors_19.UseVisualStyleBackColor = false
         '
-        'CheckBox156
+        'Check_available_interiors_19
         '
-        Me.CheckBox156.AutoSize = True
-        Me.CheckBox156.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox156.Location = New System.Drawing.Point(701, 156)
-        Me.CheckBox156.Name = "CheckBox156"
-        Me.CheckBox156.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox156.TabIndex = 292
-        Me.CheckBox156.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_19.AutoSize = true
+        Me.Check_available_interiors_19.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_19.Location = New System.Drawing.Point(701, 156)
+        Me.Check_available_interiors_19.Name = "Check_available_interiors_19"
+        Me.Check_available_interiors_19.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_19.TabIndex = 292
+        Me.Check_available_interiors_19.UseVisualStyleBackColor = false
         '
         'PictureBox15
         '
@@ -6217,37 +6227,37 @@ Partial Class Items_edit
         Me.PictureBox15.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox15.TabIndex = 291
-        Me.PictureBox15.TabStop = False
+        Me.PictureBox15.TabStop = false
         '
-        'NumericUpDown79
+        'valu_interiors_18
         '
-        Me.NumericUpDown79.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown79.Location = New System.Drawing.Point(635, 152)
-        Me.NumericUpDown79.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown79.Name = "NumericUpDown79"
-        Me.NumericUpDown79.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown79.TabIndex = 290
-        Me.NumericUpDown79.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_18.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_18.Location = New System.Drawing.Point(635, 152)
+        Me.valu_interiors_18.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_18.Name = "valu_interiors_18"
+        Me.valu_interiors_18.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_18.TabIndex = 290
+        Me.valu_interiors_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox157
+        'Check_NA_interiors_18
         '
-        Me.CheckBox157.AutoSize = True
-        Me.CheckBox157.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox157.Location = New System.Drawing.Point(680, 156)
-        Me.CheckBox157.Name = "CheckBox157"
-        Me.CheckBox157.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox157.TabIndex = 289
-        Me.CheckBox157.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_18.AutoSize = true
+        Me.Check_NA_interiors_18.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_18.Location = New System.Drawing.Point(680, 156)
+        Me.Check_NA_interiors_18.Name = "Check_NA_interiors_18"
+        Me.Check_NA_interiors_18.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_18.TabIndex = 289
+        Me.Check_NA_interiors_18.UseVisualStyleBackColor = false
         '
-        'CheckBox158
+        'Check_available_interiors_18
         '
-        Me.CheckBox158.AutoSize = True
-        Me.CheckBox158.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox158.Location = New System.Drawing.Point(619, 156)
-        Me.CheckBox158.Name = "CheckBox158"
-        Me.CheckBox158.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox158.TabIndex = 288
-        Me.CheckBox158.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_18.AutoSize = true
+        Me.Check_available_interiors_18.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_18.Location = New System.Drawing.Point(619, 156)
+        Me.Check_available_interiors_18.Name = "Check_available_interiors_18"
+        Me.Check_available_interiors_18.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_18.TabIndex = 288
+        Me.Check_available_interiors_18.UseVisualStyleBackColor = false
         '
         'PictureBox16
         '
@@ -6257,37 +6267,37 @@ Partial Class Items_edit
         Me.PictureBox16.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox16.TabIndex = 287
-        Me.PictureBox16.TabStop = False
+        Me.PictureBox16.TabStop = false
         '
-        'NumericUpDown80
+        'valu_interiors_17
         '
-        Me.NumericUpDown80.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown80.Location = New System.Drawing.Point(553, 152)
-        Me.NumericUpDown80.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown80.Name = "NumericUpDown80"
-        Me.NumericUpDown80.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown80.TabIndex = 286
-        Me.NumericUpDown80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_17.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_17.Location = New System.Drawing.Point(553, 152)
+        Me.valu_interiors_17.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_17.Name = "valu_interiors_17"
+        Me.valu_interiors_17.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_17.TabIndex = 286
+        Me.valu_interiors_17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox159
+        'Check_NA_interiors_17
         '
-        Me.CheckBox159.AutoSize = True
-        Me.CheckBox159.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox159.Location = New System.Drawing.Point(598, 156)
-        Me.CheckBox159.Name = "CheckBox159"
-        Me.CheckBox159.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox159.TabIndex = 285
-        Me.CheckBox159.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_17.AutoSize = true
+        Me.Check_NA_interiors_17.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_17.Location = New System.Drawing.Point(598, 156)
+        Me.Check_NA_interiors_17.Name = "Check_NA_interiors_17"
+        Me.Check_NA_interiors_17.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_17.TabIndex = 285
+        Me.Check_NA_interiors_17.UseVisualStyleBackColor = false
         '
-        'CheckBox160
+        'Check_available_interiors_17
         '
-        Me.CheckBox160.AutoSize = True
-        Me.CheckBox160.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox160.Location = New System.Drawing.Point(537, 156)
-        Me.CheckBox160.Name = "CheckBox160"
-        Me.CheckBox160.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox160.TabIndex = 284
-        Me.CheckBox160.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_17.AutoSize = true
+        Me.Check_available_interiors_17.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_17.Location = New System.Drawing.Point(537, 156)
+        Me.Check_available_interiors_17.Name = "Check_available_interiors_17"
+        Me.Check_available_interiors_17.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_17.TabIndex = 284
+        Me.Check_available_interiors_17.UseVisualStyleBackColor = false
         '
         'PictureBox17
         '
@@ -6297,37 +6307,37 @@ Partial Class Items_edit
         Me.PictureBox17.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox17.TabIndex = 283
-        Me.PictureBox17.TabStop = False
+        Me.PictureBox17.TabStop = false
         '
-        'NumericUpDown81
+        'valu_interiors_16
         '
-        Me.NumericUpDown81.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown81.Location = New System.Drawing.Point(471, 152)
-        Me.NumericUpDown81.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown81.Name = "NumericUpDown81"
-        Me.NumericUpDown81.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown81.TabIndex = 282
-        Me.NumericUpDown81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_16.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_16.Location = New System.Drawing.Point(471, 152)
+        Me.valu_interiors_16.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_16.Name = "valu_interiors_16"
+        Me.valu_interiors_16.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_16.TabIndex = 282
+        Me.valu_interiors_16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox161
+        'Check_NA_interiors_16
         '
-        Me.CheckBox161.AutoSize = True
-        Me.CheckBox161.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox161.Location = New System.Drawing.Point(516, 156)
-        Me.CheckBox161.Name = "CheckBox161"
-        Me.CheckBox161.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox161.TabIndex = 281
-        Me.CheckBox161.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_16.AutoSize = true
+        Me.Check_NA_interiors_16.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_16.Location = New System.Drawing.Point(516, 156)
+        Me.Check_NA_interiors_16.Name = "Check_NA_interiors_16"
+        Me.Check_NA_interiors_16.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_16.TabIndex = 281
+        Me.Check_NA_interiors_16.UseVisualStyleBackColor = false
         '
-        'CheckBox162
+        'Check_available_interiors_16
         '
-        Me.CheckBox162.AutoSize = True
-        Me.CheckBox162.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox162.Location = New System.Drawing.Point(455, 156)
-        Me.CheckBox162.Name = "CheckBox162"
-        Me.CheckBox162.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox162.TabIndex = 280
-        Me.CheckBox162.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_16.AutoSize = true
+        Me.Check_available_interiors_16.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_16.Location = New System.Drawing.Point(455, 156)
+        Me.Check_available_interiors_16.Name = "Check_available_interiors_16"
+        Me.Check_available_interiors_16.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_16.TabIndex = 280
+        Me.Check_available_interiors_16.UseVisualStyleBackColor = false
         '
         'PictureBox18
         '
@@ -6337,37 +6347,37 @@ Partial Class Items_edit
         Me.PictureBox18.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox18.TabIndex = 279
-        Me.PictureBox18.TabStop = False
+        Me.PictureBox18.TabStop = false
         '
-        'NumericUpDown82
+        'valu_interiors_15
         '
-        Me.NumericUpDown82.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown82.Location = New System.Drawing.Point(389, 152)
-        Me.NumericUpDown82.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown82.Name = "NumericUpDown82"
-        Me.NumericUpDown82.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown82.TabIndex = 278
-        Me.NumericUpDown82.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_15.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_15.Location = New System.Drawing.Point(389, 152)
+        Me.valu_interiors_15.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_15.Name = "valu_interiors_15"
+        Me.valu_interiors_15.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_15.TabIndex = 278
+        Me.valu_interiors_15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox163
+        'Check_NA_interiors_15
         '
-        Me.CheckBox163.AutoSize = True
-        Me.CheckBox163.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox163.Location = New System.Drawing.Point(434, 156)
-        Me.CheckBox163.Name = "CheckBox163"
-        Me.CheckBox163.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox163.TabIndex = 277
-        Me.CheckBox163.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_15.AutoSize = true
+        Me.Check_NA_interiors_15.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_15.Location = New System.Drawing.Point(434, 156)
+        Me.Check_NA_interiors_15.Name = "Check_NA_interiors_15"
+        Me.Check_NA_interiors_15.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_15.TabIndex = 277
+        Me.Check_NA_interiors_15.UseVisualStyleBackColor = false
         '
-        'CheckBox164
+        'Check_available_interiors_15
         '
-        Me.CheckBox164.AutoSize = True
-        Me.CheckBox164.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox164.Location = New System.Drawing.Point(373, 156)
-        Me.CheckBox164.Name = "CheckBox164"
-        Me.CheckBox164.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox164.TabIndex = 276
-        Me.CheckBox164.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_15.AutoSize = true
+        Me.Check_available_interiors_15.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_15.Location = New System.Drawing.Point(373, 156)
+        Me.Check_available_interiors_15.Name = "Check_available_interiors_15"
+        Me.Check_available_interiors_15.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_15.TabIndex = 276
+        Me.Check_available_interiors_15.UseVisualStyleBackColor = false
         '
         'PictureBox50
         '
@@ -6377,37 +6387,37 @@ Partial Class Items_edit
         Me.PictureBox50.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox50.TabIndex = 275
-        Me.PictureBox50.TabStop = False
+        Me.PictureBox50.TabStop = false
         '
-        'NumericUpDown83
+        'valu_interiors_14
         '
-        Me.NumericUpDown83.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown83.Location = New System.Drawing.Point(307, 152)
-        Me.NumericUpDown83.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown83.Name = "NumericUpDown83"
-        Me.NumericUpDown83.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown83.TabIndex = 274
-        Me.NumericUpDown83.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_14.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_14.Location = New System.Drawing.Point(307, 152)
+        Me.valu_interiors_14.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_14.Name = "valu_interiors_14"
+        Me.valu_interiors_14.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_14.TabIndex = 274
+        Me.valu_interiors_14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox165
+        'Check_NA_interiors_14
         '
-        Me.CheckBox165.AutoSize = True
-        Me.CheckBox165.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox165.Location = New System.Drawing.Point(352, 156)
-        Me.CheckBox165.Name = "CheckBox165"
-        Me.CheckBox165.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox165.TabIndex = 273
-        Me.CheckBox165.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_14.AutoSize = true
+        Me.Check_NA_interiors_14.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_14.Location = New System.Drawing.Point(352, 156)
+        Me.Check_NA_interiors_14.Name = "Check_NA_interiors_14"
+        Me.Check_NA_interiors_14.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_14.TabIndex = 273
+        Me.Check_NA_interiors_14.UseVisualStyleBackColor = false
         '
-        'CheckBox166
+        'Check_available_interiors_14
         '
-        Me.CheckBox166.AutoSize = True
-        Me.CheckBox166.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox166.Location = New System.Drawing.Point(291, 156)
-        Me.CheckBox166.Name = "CheckBox166"
-        Me.CheckBox166.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox166.TabIndex = 272
-        Me.CheckBox166.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_14.AutoSize = true
+        Me.Check_available_interiors_14.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_14.Location = New System.Drawing.Point(291, 156)
+        Me.Check_available_interiors_14.Name = "Check_available_interiors_14"
+        Me.Check_available_interiors_14.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_14.TabIndex = 272
+        Me.Check_available_interiors_14.UseVisualStyleBackColor = false
         '
         'PictureBox51
         '
@@ -6417,37 +6427,37 @@ Partial Class Items_edit
         Me.PictureBox51.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox51.TabIndex = 271
-        Me.PictureBox51.TabStop = False
+        Me.PictureBox51.TabStop = false
         '
-        'NumericUpDown84
+        'valu_interiors_13
         '
-        Me.NumericUpDown84.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown84.Location = New System.Drawing.Point(225, 152)
-        Me.NumericUpDown84.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown84.Name = "NumericUpDown84"
-        Me.NumericUpDown84.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown84.TabIndex = 270
-        Me.NumericUpDown84.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_13.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_13.Location = New System.Drawing.Point(225, 152)
+        Me.valu_interiors_13.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_13.Name = "valu_interiors_13"
+        Me.valu_interiors_13.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_13.TabIndex = 270
+        Me.valu_interiors_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox167
+        'Check_NA_interiors_13
         '
-        Me.CheckBox167.AutoSize = True
-        Me.CheckBox167.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox167.Location = New System.Drawing.Point(270, 156)
-        Me.CheckBox167.Name = "CheckBox167"
-        Me.CheckBox167.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox167.TabIndex = 269
-        Me.CheckBox167.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_13.AutoSize = true
+        Me.Check_NA_interiors_13.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_13.Location = New System.Drawing.Point(270, 156)
+        Me.Check_NA_interiors_13.Name = "Check_NA_interiors_13"
+        Me.Check_NA_interiors_13.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_13.TabIndex = 269
+        Me.Check_NA_interiors_13.UseVisualStyleBackColor = false
         '
-        'CheckBox168
+        'Check_available_interiors_13
         '
-        Me.CheckBox168.AutoSize = True
-        Me.CheckBox168.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox168.Location = New System.Drawing.Point(209, 156)
-        Me.CheckBox168.Name = "CheckBox168"
-        Me.CheckBox168.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox168.TabIndex = 268
-        Me.CheckBox168.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_13.AutoSize = true
+        Me.Check_available_interiors_13.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_13.Location = New System.Drawing.Point(209, 156)
+        Me.Check_available_interiors_13.Name = "Check_available_interiors_13"
+        Me.Check_available_interiors_13.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_13.TabIndex = 268
+        Me.Check_available_interiors_13.UseVisualStyleBackColor = false
         '
         'PictureBox52
         '
@@ -6457,37 +6467,37 @@ Partial Class Items_edit
         Me.PictureBox52.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox52.TabIndex = 267
-        Me.PictureBox52.TabStop = False
+        Me.PictureBox52.TabStop = false
         '
-        'NumericUpDown85
+        'valu_interiors_12
         '
-        Me.NumericUpDown85.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown85.Location = New System.Drawing.Point(143, 152)
-        Me.NumericUpDown85.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown85.Name = "NumericUpDown85"
-        Me.NumericUpDown85.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown85.TabIndex = 266
-        Me.NumericUpDown85.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_12.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_12.Location = New System.Drawing.Point(143, 152)
+        Me.valu_interiors_12.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_12.Name = "valu_interiors_12"
+        Me.valu_interiors_12.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_12.TabIndex = 266
+        Me.valu_interiors_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox169
+        'Check_NA_interiors_12
         '
-        Me.CheckBox169.AutoSize = True
-        Me.CheckBox169.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox169.Location = New System.Drawing.Point(188, 156)
-        Me.CheckBox169.Name = "CheckBox169"
-        Me.CheckBox169.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox169.TabIndex = 265
-        Me.CheckBox169.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_12.AutoSize = true
+        Me.Check_NA_interiors_12.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_12.Location = New System.Drawing.Point(188, 156)
+        Me.Check_NA_interiors_12.Name = "Check_NA_interiors_12"
+        Me.Check_NA_interiors_12.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_12.TabIndex = 265
+        Me.Check_NA_interiors_12.UseVisualStyleBackColor = false
         '
-        'CheckBox170
+        'Check_available_interiors_12
         '
-        Me.CheckBox170.AutoSize = True
-        Me.CheckBox170.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox170.Location = New System.Drawing.Point(127, 156)
-        Me.CheckBox170.Name = "CheckBox170"
-        Me.CheckBox170.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox170.TabIndex = 264
-        Me.CheckBox170.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_12.AutoSize = true
+        Me.Check_available_interiors_12.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_12.Location = New System.Drawing.Point(127, 156)
+        Me.Check_available_interiors_12.Name = "Check_available_interiors_12"
+        Me.Check_available_interiors_12.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_12.TabIndex = 264
+        Me.Check_available_interiors_12.UseVisualStyleBackColor = false
         '
         'PictureBox53
         '
@@ -6497,37 +6507,37 @@ Partial Class Items_edit
         Me.PictureBox53.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox53.TabIndex = 263
-        Me.PictureBox53.TabStop = False
+        Me.PictureBox53.TabStop = false
         '
-        'NumericUpDown86
+        'valu_interiors_11
         '
-        Me.NumericUpDown86.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown86.Location = New System.Drawing.Point(61, 152)
-        Me.NumericUpDown86.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown86.Name = "NumericUpDown86"
-        Me.NumericUpDown86.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown86.TabIndex = 262
-        Me.NumericUpDown86.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_11.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_11.Location = New System.Drawing.Point(61, 152)
+        Me.valu_interiors_11.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_11.Name = "valu_interiors_11"
+        Me.valu_interiors_11.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_11.TabIndex = 262
+        Me.valu_interiors_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox171
+        'Check_NA_interiors_11
         '
-        Me.CheckBox171.AutoSize = True
-        Me.CheckBox171.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox171.Location = New System.Drawing.Point(106, 156)
-        Me.CheckBox171.Name = "CheckBox171"
-        Me.CheckBox171.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox171.TabIndex = 261
-        Me.CheckBox171.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_11.AutoSize = true
+        Me.Check_NA_interiors_11.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_11.Location = New System.Drawing.Point(106, 156)
+        Me.Check_NA_interiors_11.Name = "Check_NA_interiors_11"
+        Me.Check_NA_interiors_11.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_11.TabIndex = 261
+        Me.Check_NA_interiors_11.UseVisualStyleBackColor = false
         '
-        'CheckBox172
+        'Check_available_interiors_11
         '
-        Me.CheckBox172.AutoSize = True
-        Me.CheckBox172.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox172.Location = New System.Drawing.Point(45, 156)
-        Me.CheckBox172.Name = "CheckBox172"
-        Me.CheckBox172.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox172.TabIndex = 260
-        Me.CheckBox172.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_11.AutoSize = true
+        Me.Check_available_interiors_11.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_11.Location = New System.Drawing.Point(45, 156)
+        Me.Check_available_interiors_11.Name = "Check_available_interiors_11"
+        Me.Check_available_interiors_11.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_11.TabIndex = 260
+        Me.Check_available_interiors_11.UseVisualStyleBackColor = false
         '
         'PictureBox54
         '
@@ -6537,37 +6547,37 @@ Partial Class Items_edit
         Me.PictureBox54.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox54.TabIndex = 259
-        Me.PictureBox54.TabStop = False
+        Me.PictureBox54.TabStop = false
         '
-        'NumericUpDown49
+        'valu_interiors_10
         '
-        Me.NumericUpDown49.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown49.Location = New System.Drawing.Point(799, 72)
-        Me.NumericUpDown49.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown49.Name = "NumericUpDown49"
-        Me.NumericUpDown49.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown49.TabIndex = 258
-        Me.NumericUpDown49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_10.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_10.Location = New System.Drawing.Point(799, 72)
+        Me.valu_interiors_10.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_10.Name = "valu_interiors_10"
+        Me.valu_interiors_10.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_10.TabIndex = 258
+        Me.valu_interiors_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox97
+        'Check_NA_interiors_10
         '
-        Me.CheckBox97.AutoSize = True
-        Me.CheckBox97.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox97.Location = New System.Drawing.Point(844, 76)
-        Me.CheckBox97.Name = "CheckBox97"
-        Me.CheckBox97.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox97.TabIndex = 257
-        Me.CheckBox97.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_10.AutoSize = true
+        Me.Check_NA_interiors_10.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_10.Location = New System.Drawing.Point(844, 76)
+        Me.Check_NA_interiors_10.Name = "Check_NA_interiors_10"
+        Me.Check_NA_interiors_10.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_10.TabIndex = 257
+        Me.Check_NA_interiors_10.UseVisualStyleBackColor = false
         '
-        'CheckBox98
+        'Check_available_interiors_10
         '
-        Me.CheckBox98.AutoSize = True
-        Me.CheckBox98.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox98.Location = New System.Drawing.Point(783, 76)
-        Me.CheckBox98.Name = "CheckBox98"
-        Me.CheckBox98.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox98.TabIndex = 256
-        Me.CheckBox98.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_10.AutoSize = true
+        Me.Check_available_interiors_10.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_10.Location = New System.Drawing.Point(783, 76)
+        Me.Check_available_interiors_10.Name = "Check_available_interiors_10"
+        Me.Check_available_interiors_10.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_10.TabIndex = 256
+        Me.Check_available_interiors_10.UseVisualStyleBackColor = false
         '
         'PictureBox1
         '
@@ -6577,37 +6587,37 @@ Partial Class Items_edit
         Me.PictureBox1.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 255
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.TabStop = false
         '
-        'NumericUpDown50
+        'valu_interiors_9
         '
-        Me.NumericUpDown50.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown50.Location = New System.Drawing.Point(717, 72)
-        Me.NumericUpDown50.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown50.Name = "NumericUpDown50"
-        Me.NumericUpDown50.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown50.TabIndex = 254
-        Me.NumericUpDown50.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_9.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_9.Location = New System.Drawing.Point(717, 72)
+        Me.valu_interiors_9.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_9.Name = "valu_interiors_9"
+        Me.valu_interiors_9.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_9.TabIndex = 254
+        Me.valu_interiors_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox99
+        'Check_NA_interiors_9
         '
-        Me.CheckBox99.AutoSize = True
-        Me.CheckBox99.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox99.Location = New System.Drawing.Point(762, 76)
-        Me.CheckBox99.Name = "CheckBox99"
-        Me.CheckBox99.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox99.TabIndex = 253
-        Me.CheckBox99.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_9.AutoSize = true
+        Me.Check_NA_interiors_9.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_9.Location = New System.Drawing.Point(762, 76)
+        Me.Check_NA_interiors_9.Name = "Check_NA_interiors_9"
+        Me.Check_NA_interiors_9.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_9.TabIndex = 253
+        Me.Check_NA_interiors_9.UseVisualStyleBackColor = false
         '
-        'CheckBox100
+        'Check_available_interiors_9
         '
-        Me.CheckBox100.AutoSize = True
-        Me.CheckBox100.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox100.Location = New System.Drawing.Point(701, 76)
-        Me.CheckBox100.Name = "CheckBox100"
-        Me.CheckBox100.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox100.TabIndex = 252
-        Me.CheckBox100.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_9.AutoSize = true
+        Me.Check_available_interiors_9.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_9.Location = New System.Drawing.Point(701, 76)
+        Me.Check_available_interiors_9.Name = "Check_available_interiors_9"
+        Me.Check_available_interiors_9.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_9.TabIndex = 252
+        Me.Check_available_interiors_9.UseVisualStyleBackColor = false
         '
         'PictureBox2
         '
@@ -6617,37 +6627,37 @@ Partial Class Items_edit
         Me.PictureBox2.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 251
-        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.TabStop = false
         '
-        'NumericUpDown69
+        'valu_interiors_8
         '
-        Me.NumericUpDown69.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown69.Location = New System.Drawing.Point(635, 72)
-        Me.NumericUpDown69.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown69.Name = "NumericUpDown69"
-        Me.NumericUpDown69.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown69.TabIndex = 250
-        Me.NumericUpDown69.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_8.Location = New System.Drawing.Point(635, 72)
+        Me.valu_interiors_8.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_8.Name = "valu_interiors_8"
+        Me.valu_interiors_8.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_8.TabIndex = 250
+        Me.valu_interiors_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox137
+        'Check_NA_interiors_8
         '
-        Me.CheckBox137.AutoSize = True
-        Me.CheckBox137.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox137.Location = New System.Drawing.Point(680, 76)
-        Me.CheckBox137.Name = "CheckBox137"
-        Me.CheckBox137.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox137.TabIndex = 249
-        Me.CheckBox137.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_8.AutoSize = true
+        Me.Check_NA_interiors_8.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_8.Location = New System.Drawing.Point(680, 76)
+        Me.Check_NA_interiors_8.Name = "Check_NA_interiors_8"
+        Me.Check_NA_interiors_8.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_8.TabIndex = 249
+        Me.Check_NA_interiors_8.UseVisualStyleBackColor = false
         '
-        'CheckBox138
+        'Check_available_interiors_8
         '
-        Me.CheckBox138.AutoSize = True
-        Me.CheckBox138.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox138.Location = New System.Drawing.Point(619, 76)
-        Me.CheckBox138.Name = "CheckBox138"
-        Me.CheckBox138.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox138.TabIndex = 248
-        Me.CheckBox138.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_8.AutoSize = true
+        Me.Check_available_interiors_8.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_8.Location = New System.Drawing.Point(619, 76)
+        Me.Check_available_interiors_8.Name = "Check_available_interiors_8"
+        Me.Check_available_interiors_8.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_8.TabIndex = 248
+        Me.Check_available_interiors_8.UseVisualStyleBackColor = false
         '
         'PictureBox3
         '
@@ -6657,37 +6667,37 @@ Partial Class Items_edit
         Me.PictureBox3.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 247
-        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.TabStop = false
         '
-        'NumericUpDown70
+        'valu_interiors_7
         '
-        Me.NumericUpDown70.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown70.Location = New System.Drawing.Point(553, 72)
-        Me.NumericUpDown70.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown70.Name = "NumericUpDown70"
-        Me.NumericUpDown70.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown70.TabIndex = 246
-        Me.NumericUpDown70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_7.Location = New System.Drawing.Point(553, 72)
+        Me.valu_interiors_7.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_7.Name = "valu_interiors_7"
+        Me.valu_interiors_7.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_7.TabIndex = 246
+        Me.valu_interiors_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox139
+        'Check_NA_interiors_7
         '
-        Me.CheckBox139.AutoSize = True
-        Me.CheckBox139.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox139.Location = New System.Drawing.Point(598, 76)
-        Me.CheckBox139.Name = "CheckBox139"
-        Me.CheckBox139.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox139.TabIndex = 245
-        Me.CheckBox139.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_7.AutoSize = true
+        Me.Check_NA_interiors_7.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_7.Location = New System.Drawing.Point(598, 76)
+        Me.Check_NA_interiors_7.Name = "Check_NA_interiors_7"
+        Me.Check_NA_interiors_7.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_7.TabIndex = 245
+        Me.Check_NA_interiors_7.UseVisualStyleBackColor = false
         '
-        'CheckBox140
+        'Check_available_interiors_7
         '
-        Me.CheckBox140.AutoSize = True
-        Me.CheckBox140.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox140.Location = New System.Drawing.Point(537, 76)
-        Me.CheckBox140.Name = "CheckBox140"
-        Me.CheckBox140.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox140.TabIndex = 244
-        Me.CheckBox140.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_7.AutoSize = true
+        Me.Check_available_interiors_7.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_7.Location = New System.Drawing.Point(537, 76)
+        Me.Check_available_interiors_7.Name = "Check_available_interiors_7"
+        Me.Check_available_interiors_7.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_7.TabIndex = 244
+        Me.Check_available_interiors_7.UseVisualStyleBackColor = false
         '
         'PictureBox4
         '
@@ -6697,37 +6707,37 @@ Partial Class Items_edit
         Me.PictureBox4.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 243
-        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.TabStop = false
         '
-        'NumericUpDown71
+        'valu_interiors_6
         '
-        Me.NumericUpDown71.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown71.Location = New System.Drawing.Point(471, 72)
-        Me.NumericUpDown71.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown71.Name = "NumericUpDown71"
-        Me.NumericUpDown71.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown71.TabIndex = 242
-        Me.NumericUpDown71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_6.Location = New System.Drawing.Point(471, 72)
+        Me.valu_interiors_6.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_6.Name = "valu_interiors_6"
+        Me.valu_interiors_6.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_6.TabIndex = 242
+        Me.valu_interiors_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox141
+        'Check_NA_interiors_6
         '
-        Me.CheckBox141.AutoSize = True
-        Me.CheckBox141.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox141.Location = New System.Drawing.Point(516, 76)
-        Me.CheckBox141.Name = "CheckBox141"
-        Me.CheckBox141.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox141.TabIndex = 241
-        Me.CheckBox141.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_6.AutoSize = true
+        Me.Check_NA_interiors_6.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_6.Location = New System.Drawing.Point(516, 76)
+        Me.Check_NA_interiors_6.Name = "Check_NA_interiors_6"
+        Me.Check_NA_interiors_6.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_6.TabIndex = 241
+        Me.Check_NA_interiors_6.UseVisualStyleBackColor = false
         '
-        'CheckBox142
+        'Check_available_interiors_6
         '
-        Me.CheckBox142.AutoSize = True
-        Me.CheckBox142.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox142.Location = New System.Drawing.Point(455, 76)
-        Me.CheckBox142.Name = "CheckBox142"
-        Me.CheckBox142.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox142.TabIndex = 240
-        Me.CheckBox142.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_6.AutoSize = true
+        Me.Check_available_interiors_6.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_6.Location = New System.Drawing.Point(455, 76)
+        Me.Check_available_interiors_6.Name = "Check_available_interiors_6"
+        Me.Check_available_interiors_6.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_6.TabIndex = 240
+        Me.Check_available_interiors_6.UseVisualStyleBackColor = false
         '
         'PictureBox5
         '
@@ -6737,37 +6747,37 @@ Partial Class Items_edit
         Me.PictureBox5.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 239
-        Me.PictureBox5.TabStop = False
+        Me.PictureBox5.TabStop = false
         '
-        'NumericUpDown72
+        'valu_interiors_5
         '
-        Me.NumericUpDown72.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown72.Location = New System.Drawing.Point(389, 72)
-        Me.NumericUpDown72.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown72.Name = "NumericUpDown72"
-        Me.NumericUpDown72.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown72.TabIndex = 238
-        Me.NumericUpDown72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_5.Location = New System.Drawing.Point(389, 72)
+        Me.valu_interiors_5.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_5.Name = "valu_interiors_5"
+        Me.valu_interiors_5.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_5.TabIndex = 238
+        Me.valu_interiors_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox143
+        'Check_NA_interiors_5
         '
-        Me.CheckBox143.AutoSize = True
-        Me.CheckBox143.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox143.Location = New System.Drawing.Point(434, 76)
-        Me.CheckBox143.Name = "CheckBox143"
-        Me.CheckBox143.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox143.TabIndex = 237
-        Me.CheckBox143.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_5.AutoSize = true
+        Me.Check_NA_interiors_5.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_5.Location = New System.Drawing.Point(434, 76)
+        Me.Check_NA_interiors_5.Name = "Check_NA_interiors_5"
+        Me.Check_NA_interiors_5.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_5.TabIndex = 237
+        Me.Check_NA_interiors_5.UseVisualStyleBackColor = false
         '
-        'CheckBox144
+        'Check_available_interiors_5
         '
-        Me.CheckBox144.AutoSize = True
-        Me.CheckBox144.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox144.Location = New System.Drawing.Point(373, 76)
-        Me.CheckBox144.Name = "CheckBox144"
-        Me.CheckBox144.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox144.TabIndex = 236
-        Me.CheckBox144.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_5.AutoSize = true
+        Me.Check_available_interiors_5.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_5.Location = New System.Drawing.Point(373, 76)
+        Me.Check_available_interiors_5.Name = "Check_available_interiors_5"
+        Me.Check_available_interiors_5.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_5.TabIndex = 236
+        Me.Check_available_interiors_5.UseVisualStyleBackColor = false
         '
         'PictureBox9
         '
@@ -6777,37 +6787,37 @@ Partial Class Items_edit
         Me.PictureBox9.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 235
-        Me.PictureBox9.TabStop = False
+        Me.PictureBox9.TabStop = false
         '
-        'NumericUpDown73
+        'valu_interiors_4
         '
-        Me.NumericUpDown73.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown73.Location = New System.Drawing.Point(307, 72)
-        Me.NumericUpDown73.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown73.Name = "NumericUpDown73"
-        Me.NumericUpDown73.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown73.TabIndex = 234
-        Me.NumericUpDown73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_4.Location = New System.Drawing.Point(307, 72)
+        Me.valu_interiors_4.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_4.Name = "valu_interiors_4"
+        Me.valu_interiors_4.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_4.TabIndex = 234
+        Me.valu_interiors_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox145
+        'Check_NA_interiors_4
         '
-        Me.CheckBox145.AutoSize = True
-        Me.CheckBox145.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox145.Location = New System.Drawing.Point(352, 76)
-        Me.CheckBox145.Name = "CheckBox145"
-        Me.CheckBox145.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox145.TabIndex = 233
-        Me.CheckBox145.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_4.AutoSize = true
+        Me.Check_NA_interiors_4.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_4.Location = New System.Drawing.Point(352, 76)
+        Me.Check_NA_interiors_4.Name = "Check_NA_interiors_4"
+        Me.Check_NA_interiors_4.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_4.TabIndex = 233
+        Me.Check_NA_interiors_4.UseVisualStyleBackColor = false
         '
-        'CheckBox146
+        'Check_available_interiors_4
         '
-        Me.CheckBox146.AutoSize = True
-        Me.CheckBox146.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox146.Location = New System.Drawing.Point(291, 76)
-        Me.CheckBox146.Name = "CheckBox146"
-        Me.CheckBox146.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox146.TabIndex = 232
-        Me.CheckBox146.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_4.AutoSize = true
+        Me.Check_available_interiors_4.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_4.Location = New System.Drawing.Point(291, 76)
+        Me.Check_available_interiors_4.Name = "Check_available_interiors_4"
+        Me.Check_available_interiors_4.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_4.TabIndex = 232
+        Me.Check_available_interiors_4.UseVisualStyleBackColor = false
         '
         'PictureBox10
         '
@@ -6817,37 +6827,37 @@ Partial Class Items_edit
         Me.PictureBox10.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox10.TabIndex = 231
-        Me.PictureBox10.TabStop = False
+        Me.PictureBox10.TabStop = false
         '
-        'NumericUpDown74
+        'valu_interiors_3
         '
-        Me.NumericUpDown74.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown74.Location = New System.Drawing.Point(225, 72)
-        Me.NumericUpDown74.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown74.Name = "NumericUpDown74"
-        Me.NumericUpDown74.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown74.TabIndex = 230
-        Me.NumericUpDown74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_3.Location = New System.Drawing.Point(225, 72)
+        Me.valu_interiors_3.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_3.Name = "valu_interiors_3"
+        Me.valu_interiors_3.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_3.TabIndex = 230
+        Me.valu_interiors_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox147
+        'Check_NA_interiors_3
         '
-        Me.CheckBox147.AutoSize = True
-        Me.CheckBox147.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox147.Location = New System.Drawing.Point(270, 76)
-        Me.CheckBox147.Name = "CheckBox147"
-        Me.CheckBox147.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox147.TabIndex = 229
-        Me.CheckBox147.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_3.AutoSize = true
+        Me.Check_NA_interiors_3.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_3.Location = New System.Drawing.Point(270, 76)
+        Me.Check_NA_interiors_3.Name = "Check_NA_interiors_3"
+        Me.Check_NA_interiors_3.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_3.TabIndex = 229
+        Me.Check_NA_interiors_3.UseVisualStyleBackColor = false
         '
-        'CheckBox148
+        'Check_available_interiors_3
         '
-        Me.CheckBox148.AutoSize = True
-        Me.CheckBox148.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox148.Location = New System.Drawing.Point(209, 76)
-        Me.CheckBox148.Name = "CheckBox148"
-        Me.CheckBox148.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox148.TabIndex = 228
-        Me.CheckBox148.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_3.AutoSize = true
+        Me.Check_available_interiors_3.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_3.Location = New System.Drawing.Point(209, 76)
+        Me.Check_available_interiors_3.Name = "Check_available_interiors_3"
+        Me.Check_available_interiors_3.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_3.TabIndex = 228
+        Me.Check_available_interiors_3.UseVisualStyleBackColor = false
         '
         'PictureBox11
         '
@@ -6857,37 +6867,37 @@ Partial Class Items_edit
         Me.PictureBox11.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox11.TabIndex = 227
-        Me.PictureBox11.TabStop = False
+        Me.PictureBox11.TabStop = false
         '
-        'NumericUpDown75
+        'valu_interiors_2
         '
-        Me.NumericUpDown75.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown75.Location = New System.Drawing.Point(143, 72)
-        Me.NumericUpDown75.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown75.Name = "NumericUpDown75"
-        Me.NumericUpDown75.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown75.TabIndex = 226
-        Me.NumericUpDown75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_2.Location = New System.Drawing.Point(143, 72)
+        Me.valu_interiors_2.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_2.Name = "valu_interiors_2"
+        Me.valu_interiors_2.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_2.TabIndex = 226
+        Me.valu_interiors_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox149
+        'Check_NA_interiors_2
         '
-        Me.CheckBox149.AutoSize = True
-        Me.CheckBox149.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox149.Location = New System.Drawing.Point(188, 76)
-        Me.CheckBox149.Name = "CheckBox149"
-        Me.CheckBox149.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox149.TabIndex = 225
-        Me.CheckBox149.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_2.AutoSize = true
+        Me.Check_NA_interiors_2.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_2.Location = New System.Drawing.Point(188, 76)
+        Me.Check_NA_interiors_2.Name = "Check_NA_interiors_2"
+        Me.Check_NA_interiors_2.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_2.TabIndex = 225
+        Me.Check_NA_interiors_2.UseVisualStyleBackColor = false
         '
-        'CheckBox150
+        'Check_available_interiors_2
         '
-        Me.CheckBox150.AutoSize = True
-        Me.CheckBox150.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox150.Location = New System.Drawing.Point(127, 76)
-        Me.CheckBox150.Name = "CheckBox150"
-        Me.CheckBox150.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox150.TabIndex = 224
-        Me.CheckBox150.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_2.AutoSize = true
+        Me.Check_available_interiors_2.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_2.Location = New System.Drawing.Point(127, 76)
+        Me.Check_available_interiors_2.Name = "Check_available_interiors_2"
+        Me.Check_available_interiors_2.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_2.TabIndex = 224
+        Me.Check_available_interiors_2.UseVisualStyleBackColor = false
         '
         'PictureBox12
         '
@@ -6897,37 +6907,37 @@ Partial Class Items_edit
         Me.PictureBox12.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox12.TabIndex = 223
-        Me.PictureBox12.TabStop = False
+        Me.PictureBox12.TabStop = false
         '
-        'NumericUpDown76
+        'valu_interiors_1
         '
-        Me.NumericUpDown76.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown76.Location = New System.Drawing.Point(61, 72)
-        Me.NumericUpDown76.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown76.Name = "NumericUpDown76"
-        Me.NumericUpDown76.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown76.TabIndex = 222
-        Me.NumericUpDown76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_1.Location = New System.Drawing.Point(61, 72)
+        Me.valu_interiors_1.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_1.Name = "valu_interiors_1"
+        Me.valu_interiors_1.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_1.TabIndex = 222
+        Me.valu_interiors_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox151
+        'Check_NA_interiors_1
         '
-        Me.CheckBox151.AutoSize = True
-        Me.CheckBox151.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox151.Location = New System.Drawing.Point(106, 76)
-        Me.CheckBox151.Name = "CheckBox151"
-        Me.CheckBox151.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox151.TabIndex = 221
-        Me.CheckBox151.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_1.AutoSize = true
+        Me.Check_NA_interiors_1.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_1.Location = New System.Drawing.Point(106, 76)
+        Me.Check_NA_interiors_1.Name = "Check_NA_interiors_1"
+        Me.Check_NA_interiors_1.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_1.TabIndex = 221
+        Me.Check_NA_interiors_1.UseVisualStyleBackColor = false
         '
-        'CheckBox152
+        'Check_available_interiors_1
         '
-        Me.CheckBox152.AutoSize = True
-        Me.CheckBox152.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox152.Location = New System.Drawing.Point(45, 76)
-        Me.CheckBox152.Name = "CheckBox152"
-        Me.CheckBox152.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox152.TabIndex = 220
-        Me.CheckBox152.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_1.AutoSize = true
+        Me.Check_available_interiors_1.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_1.Location = New System.Drawing.Point(45, 76)
+        Me.Check_available_interiors_1.Name = "Check_available_interiors_1"
+        Me.Check_available_interiors_1.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_1.TabIndex = 220
+        Me.Check_available_interiors_1.UseVisualStyleBackColor = false
         '
         'PictureBox13
         '
@@ -6937,7 +6947,7 @@ Partial Class Items_edit
         Me.PictureBox13.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox13.TabIndex = 219
-        Me.PictureBox13.TabStop = False
+        Me.PictureBox13.TabStop = false
         '
         'Icon_interiors_right
         '
@@ -6949,339 +6959,343 @@ Partial Class Items_edit
         Me.Icon_interiors_right.Size = New System.Drawing.Size(17, 42)
         Me.Icon_interiors_right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Icon_interiors_right.TabIndex = 150
-        Me.Icon_interiors_right.TabStop = False
+        Me.Icon_interiors_right.TabStop = false
         '
         'Panel_interiors_1
         '
-        Me.Panel_interiors_1.BackgroundImage = CType(resources.GetObject("Panel_interiors_1.BackgroundImage"), System.Drawing.Image)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown167)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox333)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox334)
-        Me.Panel_interiors_1.Controls.Add(Me.PictureBox162)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown168)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox335)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox336)
-        Me.Panel_interiors_1.Controls.Add(Me.PictureBox163)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown169)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox337)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox338)
-        Me.Panel_interiors_1.Controls.Add(Me.PictureBox164)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown147)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox293)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox294)
+        Me.Panel_interiors_1.BackgroundImage = CType(resources.GetObject("Panel_interiors_1.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_104)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_104)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_104)
+        Me.Panel_interiors_1.Controls.Add(Me.Icon_interiors_104)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_103)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_103)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_103)
+        Me.Panel_interiors_1.Controls.Add(Me.Icon_interiors_103)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_102)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_102)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_102)
+        Me.Panel_interiors_1.Controls.Add(Me.Icon_interiors_102)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_101)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_101)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_101)
+        Me.Panel_interiors_1.Controls.Add(Me.Icon_interiors_101)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_100)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_100)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_100)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox142)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown148)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox295)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox296)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_99)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_99)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_99)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox143)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown149)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox297)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox298)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_98)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_98)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_98)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox144)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown150)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox299)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox300)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_97)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_97)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_97)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox145)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown151)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox301)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox302)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_96)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_96)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_96)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox146)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown152)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox303)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox304)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_95)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_95)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_95)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox147)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown153)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox305)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox306)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_94)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_94)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_94)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox148)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown154)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox307)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox308)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_93)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_93)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_93)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox149)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown155)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox309)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox310)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_92)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_92)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_92)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox150)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown156)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox311)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox312)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_91)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_91)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_91)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox151)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown157)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox313)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox314)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_90)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_90)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_90)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox152)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown158)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox315)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox316)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_89)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_89)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_89)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox153)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown159)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox317)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox318)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_88)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_88)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_88)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox154)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown160)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox319)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox320)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_87)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_87)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_87)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox155)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown161)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox321)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox322)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_86)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_86)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_86)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox156)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown162)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox323)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox324)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_85)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_85)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_85)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox157)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown163)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox325)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox326)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_84)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_84)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_84)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox158)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown164)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox327)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox328)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_83)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_83)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_83)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox159)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown165)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox329)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox330)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_82)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_82)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_82)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox160)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown166)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox331)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox332)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_81)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_81)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_81)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox161)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown127)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox253)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox254)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_80)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_80)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_80)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox114)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown128)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox255)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox256)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_79)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_79)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_79)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox123)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown129)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox257)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox258)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_78)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_78)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_78)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox124)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown130)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox259)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox260)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_77)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_77)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_77)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox125)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown131)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox261)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox262)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_76)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_76)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_76)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox126)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown132)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox263)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox264)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_75)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_75)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_75)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox127)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown133)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox265)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox266)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_74)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_74)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_74)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox128)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown134)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox267)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox268)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_73)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_73)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_73)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox129)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown135)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox269)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox270)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_72)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_72)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_72)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox130)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown136)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox271)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox272)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_71)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_71)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_71)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox131)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown137)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox273)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox274)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_70)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_70)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_70)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox132)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown138)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox275)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox276)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_69)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_69)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_69)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox133)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown139)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox277)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox278)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_68)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_68)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_68)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox134)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown140)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox279)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox280)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_67)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_67)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_67)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox135)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown141)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox281)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox282)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_66)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_66)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_66)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox136)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown142)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox283)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox284)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_65)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_65)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_65)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox137)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown143)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox285)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox286)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_64)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_64)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_64)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox138)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown144)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox287)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox288)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_63)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_63)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_63)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox139)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown145)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox289)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox290)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_62)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_62)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_62)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox140)
-        Me.Panel_interiors_1.Controls.Add(Me.NumericUpDown146)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox291)
-        Me.Panel_interiors_1.Controls.Add(Me.CheckBox292)
+        Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_61)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_61)
+        Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_61)
         Me.Panel_interiors_1.Controls.Add(Me.PictureBox141)
         Me.Panel_interiors_1.Controls.Add(Me.Icon_interiors_left)
         Me.Panel_interiors_1.Location = New System.Drawing.Point(1, 37)
         Me.Panel_interiors_1.Name = "Panel_interiors_1"
         Me.Panel_interiors_1.Size = New System.Drawing.Size(905, 506)
         Me.Panel_interiors_1.TabIndex = 105
-        Me.Panel_interiors_1.Visible = False
+        Me.Panel_interiors_1.Visible = false
         '
-        'NumericUpDown167
+        'valu_interiors_103
         '
-        Me.NumericUpDown167.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown167.Location = New System.Drawing.Point(496, 432)
-        Me.NumericUpDown167.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown167.Name = "NumericUpDown167"
-        Me.NumericUpDown167.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown167.TabIndex = 470
-        Me.NumericUpDown167.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_103.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_103.Location = New System.Drawing.Point(471, 432)
+        Me.valu_interiors_103.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_103.Name = "valu_interiors_103"
+        Me.valu_interiors_103.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_103.TabIndex = 470
+        Me.valu_interiors_103.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox333
+        'Check_NA_interiors_103
         '
-        Me.CheckBox333.AutoSize = True
-        Me.CheckBox333.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox333.Location = New System.Drawing.Point(541, 436)
-        Me.CheckBox333.Name = "CheckBox333"
-        Me.CheckBox333.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox333.TabIndex = 469
-        Me.CheckBox333.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_103.AutoSize = true
+        Me.Check_NA_interiors_103.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_103.Location = New System.Drawing.Point(516, 436)
+        Me.Check_NA_interiors_103.Name = "Check_NA_interiors_103"
+        Me.Check_NA_interiors_103.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_103.TabIndex = 469
+        Me.Check_NA_interiors_103.UseVisualStyleBackColor = false
         '
-        'CheckBox334
+        'Check_available_interiors_103
         '
-        Me.CheckBox334.AutoSize = True
-        Me.CheckBox334.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox334.Location = New System.Drawing.Point(480, 436)
-        Me.CheckBox334.Name = "CheckBox334"
-        Me.CheckBox334.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox334.TabIndex = 468
-        Me.CheckBox334.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_103.AutoSize = true
+        Me.Check_available_interiors_103.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_103.Location = New System.Drawing.Point(455, 436)
+        Me.Check_available_interiors_103.Name = "Check_available_interiors_103"
+        Me.Check_available_interiors_103.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_103.TabIndex = 468
+        Me.Check_available_interiors_103.UseVisualStyleBackColor = false
         '
-        'PictureBox162
+        'Icon_interiors_103
         '
-        Me.PictureBox162.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
-        Me.PictureBox162.Location = New System.Drawing.Point(480, 376)
-        Me.PictureBox162.Name = "PictureBox162"
-        Me.PictureBox162.Size = New System.Drawing.Size(76, 74)
-        Me.PictureBox162.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox162.TabIndex = 467
-        Me.PictureBox162.TabStop = False
+        Me.Icon_interiors_103.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.Icon_interiors_103.Location = New System.Drawing.Point(455, 376)
+        Me.Icon_interiors_103.Name = "Icon_interiors_103"
+        Me.Icon_interiors_103.Size = New System.Drawing.Size(76, 74)
+        Me.Icon_interiors_103.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_interiors_103.TabIndex = 467
+        Me.Icon_interiors_103.TabStop = false
         '
-        'NumericUpDown168
+        'valu_interiors_102
         '
-        Me.NumericUpDown168.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown168.Location = New System.Drawing.Point(414, 432)
-        Me.NumericUpDown168.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown168.Name = "NumericUpDown168"
-        Me.NumericUpDown168.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown168.TabIndex = 466
-        Me.NumericUpDown168.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_102.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_102.Location = New System.Drawing.Point(389, 432)
+        Me.valu_interiors_102.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_102.Name = "valu_interiors_102"
+        Me.valu_interiors_102.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_102.TabIndex = 466
+        Me.valu_interiors_102.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox335
+        'Check_NA_interiors_102
         '
-        Me.CheckBox335.AutoSize = True
-        Me.CheckBox335.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox335.Location = New System.Drawing.Point(459, 436)
-        Me.CheckBox335.Name = "CheckBox335"
-        Me.CheckBox335.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox335.TabIndex = 465
-        Me.CheckBox335.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_102.AutoSize = true
+        Me.Check_NA_interiors_102.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_102.Location = New System.Drawing.Point(434, 436)
+        Me.Check_NA_interiors_102.Name = "Check_NA_interiors_102"
+        Me.Check_NA_interiors_102.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_102.TabIndex = 465
+        Me.Check_NA_interiors_102.UseVisualStyleBackColor = false
         '
-        'CheckBox336
+        'Check_available_interiors_102
         '
-        Me.CheckBox336.AutoSize = True
-        Me.CheckBox336.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox336.Location = New System.Drawing.Point(398, 436)
-        Me.CheckBox336.Name = "CheckBox336"
-        Me.CheckBox336.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox336.TabIndex = 464
-        Me.CheckBox336.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_102.AutoSize = true
+        Me.Check_available_interiors_102.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_102.Location = New System.Drawing.Point(373, 436)
+        Me.Check_available_interiors_102.Name = "Check_available_interiors_102"
+        Me.Check_available_interiors_102.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_102.TabIndex = 464
+        Me.Check_available_interiors_102.UseVisualStyleBackColor = false
         '
-        'PictureBox163
+        'Icon_interiors_102
         '
-        Me.PictureBox163.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
-        Me.PictureBox163.Location = New System.Drawing.Point(398, 376)
-        Me.PictureBox163.Name = "PictureBox163"
-        Me.PictureBox163.Size = New System.Drawing.Size(76, 74)
-        Me.PictureBox163.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox163.TabIndex = 463
-        Me.PictureBox163.TabStop = False
+        Me.Icon_interiors_102.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.Icon_interiors_102.Location = New System.Drawing.Point(373, 376)
+        Me.Icon_interiors_102.Name = "Icon_interiors_102"
+        Me.Icon_interiors_102.Size = New System.Drawing.Size(76, 74)
+        Me.Icon_interiors_102.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_interiors_102.TabIndex = 463
+        Me.Icon_interiors_102.TabStop = false
         '
-        'NumericUpDown169
+        'valu_interiors_101
         '
-        Me.NumericUpDown169.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown169.Location = New System.Drawing.Point(332, 432)
-        Me.NumericUpDown169.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown169.Name = "NumericUpDown169"
-        Me.NumericUpDown169.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown169.TabIndex = 462
-        Me.NumericUpDown169.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_101.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_101.Location = New System.Drawing.Point(307, 432)
+        Me.valu_interiors_101.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_101.Name = "valu_interiors_101"
+        Me.valu_interiors_101.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_101.TabIndex = 462
+        Me.valu_interiors_101.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox337
+        'Check_NA_interiors_101
         '
-        Me.CheckBox337.AutoSize = True
-        Me.CheckBox337.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox337.Location = New System.Drawing.Point(377, 436)
-        Me.CheckBox337.Name = "CheckBox337"
-        Me.CheckBox337.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox337.TabIndex = 461
-        Me.CheckBox337.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_101.AutoSize = true
+        Me.Check_NA_interiors_101.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_101.Location = New System.Drawing.Point(352, 436)
+        Me.Check_NA_interiors_101.Name = "Check_NA_interiors_101"
+        Me.Check_NA_interiors_101.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_101.TabIndex = 461
+        Me.Check_NA_interiors_101.UseVisualStyleBackColor = false
         '
-        'CheckBox338
+        'Check_available_interiors_101
         '
-        Me.CheckBox338.AutoSize = True
-        Me.CheckBox338.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox338.Location = New System.Drawing.Point(316, 436)
-        Me.CheckBox338.Name = "CheckBox338"
-        Me.CheckBox338.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox338.TabIndex = 460
-        Me.CheckBox338.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_101.AutoSize = true
+        Me.Check_available_interiors_101.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_101.Location = New System.Drawing.Point(291, 436)
+        Me.Check_available_interiors_101.Name = "Check_available_interiors_101"
+        Me.Check_available_interiors_101.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_101.TabIndex = 460
+        Me.Check_available_interiors_101.UseVisualStyleBackColor = false
         '
-        'PictureBox164
+        'Icon_interiors_101
         '
-        Me.PictureBox164.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
-        Me.PictureBox164.Location = New System.Drawing.Point(316, 376)
-        Me.PictureBox164.Name = "PictureBox164"
-        Me.PictureBox164.Size = New System.Drawing.Size(76, 74)
-        Me.PictureBox164.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox164.TabIndex = 459
-        Me.PictureBox164.TabStop = False
+        Me.Icon_interiors_101.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.Icon_interiors_101.Location = New System.Drawing.Point(291, 376)
+        Me.Icon_interiors_101.Name = "Icon_interiors_101"
+        Me.Icon_interiors_101.Size = New System.Drawing.Size(76, 74)
+        Me.Icon_interiors_101.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_interiors_101.TabIndex = 459
+        Me.Icon_interiors_101.TabStop = false
         '
-        'NumericUpDown147
+        'valu_interiors_100
         '
-        Me.NumericUpDown147.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown147.Location = New System.Drawing.Point(799, 352)
-        Me.NumericUpDown147.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown147.Name = "NumericUpDown147"
-        Me.NumericUpDown147.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown147.TabIndex = 458
-        Me.NumericUpDown147.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_100.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_100.Location = New System.Drawing.Point(799, 352)
+        Me.valu_interiors_100.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_100.Name = "valu_interiors_100"
+        Me.valu_interiors_100.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_100.TabIndex = 458
+        Me.valu_interiors_100.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox293
+        'Check_NA_interiors_100
         '
-        Me.CheckBox293.AutoSize = True
-        Me.CheckBox293.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox293.Location = New System.Drawing.Point(844, 356)
-        Me.CheckBox293.Name = "CheckBox293"
-        Me.CheckBox293.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox293.TabIndex = 457
-        Me.CheckBox293.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_100.AutoSize = true
+        Me.Check_NA_interiors_100.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_100.Location = New System.Drawing.Point(844, 356)
+        Me.Check_NA_interiors_100.Name = "Check_NA_interiors_100"
+        Me.Check_NA_interiors_100.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_100.TabIndex = 457
+        Me.Check_NA_interiors_100.UseVisualStyleBackColor = false
         '
-        'CheckBox294
+        'Check_available_interiors_100
         '
-        Me.CheckBox294.AutoSize = True
-        Me.CheckBox294.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox294.Location = New System.Drawing.Point(783, 356)
-        Me.CheckBox294.Name = "CheckBox294"
-        Me.CheckBox294.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox294.TabIndex = 456
-        Me.CheckBox294.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_100.AutoSize = true
+        Me.Check_available_interiors_100.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_100.Location = New System.Drawing.Point(783, 356)
+        Me.Check_available_interiors_100.Name = "Check_available_interiors_100"
+        Me.Check_available_interiors_100.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_100.TabIndex = 456
+        Me.Check_available_interiors_100.UseVisualStyleBackColor = false
         '
         'PictureBox142
         '
@@ -7291,37 +7305,37 @@ Partial Class Items_edit
         Me.PictureBox142.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox142.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox142.TabIndex = 455
-        Me.PictureBox142.TabStop = False
+        Me.PictureBox142.TabStop = false
         '
-        'NumericUpDown148
+        'valu_interiors_99
         '
-        Me.NumericUpDown148.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown148.Location = New System.Drawing.Point(717, 352)
-        Me.NumericUpDown148.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown148.Name = "NumericUpDown148"
-        Me.NumericUpDown148.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown148.TabIndex = 454
-        Me.NumericUpDown148.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_99.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_99.Location = New System.Drawing.Point(717, 352)
+        Me.valu_interiors_99.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_99.Name = "valu_interiors_99"
+        Me.valu_interiors_99.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_99.TabIndex = 454
+        Me.valu_interiors_99.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox295
+        'Check_NA_interiors_99
         '
-        Me.CheckBox295.AutoSize = True
-        Me.CheckBox295.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox295.Location = New System.Drawing.Point(762, 356)
-        Me.CheckBox295.Name = "CheckBox295"
-        Me.CheckBox295.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox295.TabIndex = 453
-        Me.CheckBox295.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_99.AutoSize = true
+        Me.Check_NA_interiors_99.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_99.Location = New System.Drawing.Point(762, 356)
+        Me.Check_NA_interiors_99.Name = "Check_NA_interiors_99"
+        Me.Check_NA_interiors_99.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_99.TabIndex = 453
+        Me.Check_NA_interiors_99.UseVisualStyleBackColor = false
         '
-        'CheckBox296
+        'Check_available_interiors_99
         '
-        Me.CheckBox296.AutoSize = True
-        Me.CheckBox296.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox296.Location = New System.Drawing.Point(701, 356)
-        Me.CheckBox296.Name = "CheckBox296"
-        Me.CheckBox296.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox296.TabIndex = 452
-        Me.CheckBox296.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_99.AutoSize = true
+        Me.Check_available_interiors_99.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_99.Location = New System.Drawing.Point(701, 356)
+        Me.Check_available_interiors_99.Name = "Check_available_interiors_99"
+        Me.Check_available_interiors_99.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_99.TabIndex = 452
+        Me.Check_available_interiors_99.UseVisualStyleBackColor = false
         '
         'PictureBox143
         '
@@ -7331,37 +7345,37 @@ Partial Class Items_edit
         Me.PictureBox143.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox143.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox143.TabIndex = 451
-        Me.PictureBox143.TabStop = False
+        Me.PictureBox143.TabStop = false
         '
-        'NumericUpDown149
+        'valu_interiors_98
         '
-        Me.NumericUpDown149.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown149.Location = New System.Drawing.Point(635, 352)
-        Me.NumericUpDown149.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown149.Name = "NumericUpDown149"
-        Me.NumericUpDown149.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown149.TabIndex = 450
-        Me.NumericUpDown149.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_98.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_98.Location = New System.Drawing.Point(635, 352)
+        Me.valu_interiors_98.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_98.Name = "valu_interiors_98"
+        Me.valu_interiors_98.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_98.TabIndex = 450
+        Me.valu_interiors_98.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox297
+        'Check_NA_interiors_98
         '
-        Me.CheckBox297.AutoSize = True
-        Me.CheckBox297.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox297.Location = New System.Drawing.Point(680, 356)
-        Me.CheckBox297.Name = "CheckBox297"
-        Me.CheckBox297.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox297.TabIndex = 449
-        Me.CheckBox297.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_98.AutoSize = true
+        Me.Check_NA_interiors_98.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_98.Location = New System.Drawing.Point(680, 356)
+        Me.Check_NA_interiors_98.Name = "Check_NA_interiors_98"
+        Me.Check_NA_interiors_98.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_98.TabIndex = 449
+        Me.Check_NA_interiors_98.UseVisualStyleBackColor = false
         '
-        'CheckBox298
+        'Check_available_interiors_98
         '
-        Me.CheckBox298.AutoSize = True
-        Me.CheckBox298.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox298.Location = New System.Drawing.Point(619, 356)
-        Me.CheckBox298.Name = "CheckBox298"
-        Me.CheckBox298.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox298.TabIndex = 448
-        Me.CheckBox298.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_98.AutoSize = true
+        Me.Check_available_interiors_98.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_98.Location = New System.Drawing.Point(619, 356)
+        Me.Check_available_interiors_98.Name = "Check_available_interiors_98"
+        Me.Check_available_interiors_98.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_98.TabIndex = 448
+        Me.Check_available_interiors_98.UseVisualStyleBackColor = false
         '
         'PictureBox144
         '
@@ -7371,37 +7385,37 @@ Partial Class Items_edit
         Me.PictureBox144.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox144.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox144.TabIndex = 447
-        Me.PictureBox144.TabStop = False
+        Me.PictureBox144.TabStop = false
         '
-        'NumericUpDown150
+        'valu_interiors_97
         '
-        Me.NumericUpDown150.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown150.Location = New System.Drawing.Point(553, 352)
-        Me.NumericUpDown150.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown150.Name = "NumericUpDown150"
-        Me.NumericUpDown150.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown150.TabIndex = 446
-        Me.NumericUpDown150.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_97.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_97.Location = New System.Drawing.Point(553, 352)
+        Me.valu_interiors_97.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_97.Name = "valu_interiors_97"
+        Me.valu_interiors_97.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_97.TabIndex = 446
+        Me.valu_interiors_97.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox299
+        'Check_NA_interiors_97
         '
-        Me.CheckBox299.AutoSize = True
-        Me.CheckBox299.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox299.Location = New System.Drawing.Point(598, 356)
-        Me.CheckBox299.Name = "CheckBox299"
-        Me.CheckBox299.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox299.TabIndex = 445
-        Me.CheckBox299.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_97.AutoSize = true
+        Me.Check_NA_interiors_97.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_97.Location = New System.Drawing.Point(598, 356)
+        Me.Check_NA_interiors_97.Name = "Check_NA_interiors_97"
+        Me.Check_NA_interiors_97.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_97.TabIndex = 445
+        Me.Check_NA_interiors_97.UseVisualStyleBackColor = false
         '
-        'CheckBox300
+        'Check_available_interiors_97
         '
-        Me.CheckBox300.AutoSize = True
-        Me.CheckBox300.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox300.Location = New System.Drawing.Point(537, 356)
-        Me.CheckBox300.Name = "CheckBox300"
-        Me.CheckBox300.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox300.TabIndex = 444
-        Me.CheckBox300.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_97.AutoSize = true
+        Me.Check_available_interiors_97.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_97.Location = New System.Drawing.Point(537, 356)
+        Me.Check_available_interiors_97.Name = "Check_available_interiors_97"
+        Me.Check_available_interiors_97.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_97.TabIndex = 444
+        Me.Check_available_interiors_97.UseVisualStyleBackColor = false
         '
         'PictureBox145
         '
@@ -7411,37 +7425,37 @@ Partial Class Items_edit
         Me.PictureBox145.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox145.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox145.TabIndex = 443
-        Me.PictureBox145.TabStop = False
+        Me.PictureBox145.TabStop = false
         '
-        'NumericUpDown151
+        'valu_interiors_96
         '
-        Me.NumericUpDown151.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown151.Location = New System.Drawing.Point(471, 352)
-        Me.NumericUpDown151.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown151.Name = "NumericUpDown151"
-        Me.NumericUpDown151.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown151.TabIndex = 442
-        Me.NumericUpDown151.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_96.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_96.Location = New System.Drawing.Point(471, 352)
+        Me.valu_interiors_96.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_96.Name = "valu_interiors_96"
+        Me.valu_interiors_96.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_96.TabIndex = 442
+        Me.valu_interiors_96.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox301
+        'Check_NA_interiors_96
         '
-        Me.CheckBox301.AutoSize = True
-        Me.CheckBox301.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox301.Location = New System.Drawing.Point(516, 356)
-        Me.CheckBox301.Name = "CheckBox301"
-        Me.CheckBox301.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox301.TabIndex = 441
-        Me.CheckBox301.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_96.AutoSize = true
+        Me.Check_NA_interiors_96.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_96.Location = New System.Drawing.Point(516, 356)
+        Me.Check_NA_interiors_96.Name = "Check_NA_interiors_96"
+        Me.Check_NA_interiors_96.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_96.TabIndex = 441
+        Me.Check_NA_interiors_96.UseVisualStyleBackColor = false
         '
-        'CheckBox302
+        'Check_available_interiors_96
         '
-        Me.CheckBox302.AutoSize = True
-        Me.CheckBox302.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox302.Location = New System.Drawing.Point(455, 356)
-        Me.CheckBox302.Name = "CheckBox302"
-        Me.CheckBox302.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox302.TabIndex = 440
-        Me.CheckBox302.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_96.AutoSize = true
+        Me.Check_available_interiors_96.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_96.Location = New System.Drawing.Point(455, 356)
+        Me.Check_available_interiors_96.Name = "Check_available_interiors_96"
+        Me.Check_available_interiors_96.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_96.TabIndex = 440
+        Me.Check_available_interiors_96.UseVisualStyleBackColor = false
         '
         'PictureBox146
         '
@@ -7451,37 +7465,37 @@ Partial Class Items_edit
         Me.PictureBox146.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox146.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox146.TabIndex = 439
-        Me.PictureBox146.TabStop = False
+        Me.PictureBox146.TabStop = false
         '
-        'NumericUpDown152
+        'valu_interiors_95
         '
-        Me.NumericUpDown152.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown152.Location = New System.Drawing.Point(389, 352)
-        Me.NumericUpDown152.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown152.Name = "NumericUpDown152"
-        Me.NumericUpDown152.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown152.TabIndex = 438
-        Me.NumericUpDown152.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_95.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_95.Location = New System.Drawing.Point(389, 352)
+        Me.valu_interiors_95.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_95.Name = "valu_interiors_95"
+        Me.valu_interiors_95.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_95.TabIndex = 438
+        Me.valu_interiors_95.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox303
+        'Check_NA_interiors_95
         '
-        Me.CheckBox303.AutoSize = True
-        Me.CheckBox303.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox303.Location = New System.Drawing.Point(434, 356)
-        Me.CheckBox303.Name = "CheckBox303"
-        Me.CheckBox303.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox303.TabIndex = 437
-        Me.CheckBox303.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_95.AutoSize = true
+        Me.Check_NA_interiors_95.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_95.Location = New System.Drawing.Point(434, 356)
+        Me.Check_NA_interiors_95.Name = "Check_NA_interiors_95"
+        Me.Check_NA_interiors_95.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_95.TabIndex = 437
+        Me.Check_NA_interiors_95.UseVisualStyleBackColor = false
         '
-        'CheckBox304
+        'Check_available_interiors_95
         '
-        Me.CheckBox304.AutoSize = True
-        Me.CheckBox304.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox304.Location = New System.Drawing.Point(373, 356)
-        Me.CheckBox304.Name = "CheckBox304"
-        Me.CheckBox304.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox304.TabIndex = 436
-        Me.CheckBox304.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_95.AutoSize = true
+        Me.Check_available_interiors_95.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_95.Location = New System.Drawing.Point(373, 356)
+        Me.Check_available_interiors_95.Name = "Check_available_interiors_95"
+        Me.Check_available_interiors_95.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_95.TabIndex = 436
+        Me.Check_available_interiors_95.UseVisualStyleBackColor = false
         '
         'PictureBox147
         '
@@ -7491,37 +7505,37 @@ Partial Class Items_edit
         Me.PictureBox147.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox147.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox147.TabIndex = 435
-        Me.PictureBox147.TabStop = False
+        Me.PictureBox147.TabStop = false
         '
-        'NumericUpDown153
+        'valu_interiors_94
         '
-        Me.NumericUpDown153.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown153.Location = New System.Drawing.Point(307, 352)
-        Me.NumericUpDown153.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown153.Name = "NumericUpDown153"
-        Me.NumericUpDown153.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown153.TabIndex = 434
-        Me.NumericUpDown153.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_94.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_94.Location = New System.Drawing.Point(307, 352)
+        Me.valu_interiors_94.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_94.Name = "valu_interiors_94"
+        Me.valu_interiors_94.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_94.TabIndex = 434
+        Me.valu_interiors_94.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox305
+        'Check_NA_interiors_94
         '
-        Me.CheckBox305.AutoSize = True
-        Me.CheckBox305.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox305.Location = New System.Drawing.Point(352, 356)
-        Me.CheckBox305.Name = "CheckBox305"
-        Me.CheckBox305.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox305.TabIndex = 433
-        Me.CheckBox305.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_94.AutoSize = true
+        Me.Check_NA_interiors_94.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_94.Location = New System.Drawing.Point(352, 356)
+        Me.Check_NA_interiors_94.Name = "Check_NA_interiors_94"
+        Me.Check_NA_interiors_94.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_94.TabIndex = 433
+        Me.Check_NA_interiors_94.UseVisualStyleBackColor = false
         '
-        'CheckBox306
+        'Check_available_interiors_94
         '
-        Me.CheckBox306.AutoSize = True
-        Me.CheckBox306.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox306.Location = New System.Drawing.Point(291, 356)
-        Me.CheckBox306.Name = "CheckBox306"
-        Me.CheckBox306.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox306.TabIndex = 432
-        Me.CheckBox306.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_94.AutoSize = true
+        Me.Check_available_interiors_94.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_94.Location = New System.Drawing.Point(291, 356)
+        Me.Check_available_interiors_94.Name = "Check_available_interiors_94"
+        Me.Check_available_interiors_94.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_94.TabIndex = 432
+        Me.Check_available_interiors_94.UseVisualStyleBackColor = false
         '
         'PictureBox148
         '
@@ -7531,37 +7545,37 @@ Partial Class Items_edit
         Me.PictureBox148.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox148.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox148.TabIndex = 431
-        Me.PictureBox148.TabStop = False
+        Me.PictureBox148.TabStop = false
         '
-        'NumericUpDown154
+        'valu_interiors_93
         '
-        Me.NumericUpDown154.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown154.Location = New System.Drawing.Point(225, 352)
-        Me.NumericUpDown154.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown154.Name = "NumericUpDown154"
-        Me.NumericUpDown154.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown154.TabIndex = 430
-        Me.NumericUpDown154.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_93.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_93.Location = New System.Drawing.Point(225, 352)
+        Me.valu_interiors_93.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_93.Name = "valu_interiors_93"
+        Me.valu_interiors_93.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_93.TabIndex = 430
+        Me.valu_interiors_93.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox307
+        'Check_NA_interiors_93
         '
-        Me.CheckBox307.AutoSize = True
-        Me.CheckBox307.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox307.Location = New System.Drawing.Point(270, 356)
-        Me.CheckBox307.Name = "CheckBox307"
-        Me.CheckBox307.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox307.TabIndex = 429
-        Me.CheckBox307.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_93.AutoSize = true
+        Me.Check_NA_interiors_93.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_93.Location = New System.Drawing.Point(270, 356)
+        Me.Check_NA_interiors_93.Name = "Check_NA_interiors_93"
+        Me.Check_NA_interiors_93.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_93.TabIndex = 429
+        Me.Check_NA_interiors_93.UseVisualStyleBackColor = false
         '
-        'CheckBox308
+        'Check_available_interiors_93
         '
-        Me.CheckBox308.AutoSize = True
-        Me.CheckBox308.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox308.Location = New System.Drawing.Point(209, 356)
-        Me.CheckBox308.Name = "CheckBox308"
-        Me.CheckBox308.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox308.TabIndex = 428
-        Me.CheckBox308.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_93.AutoSize = true
+        Me.Check_available_interiors_93.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_93.Location = New System.Drawing.Point(209, 356)
+        Me.Check_available_interiors_93.Name = "Check_available_interiors_93"
+        Me.Check_available_interiors_93.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_93.TabIndex = 428
+        Me.Check_available_interiors_93.UseVisualStyleBackColor = false
         '
         'PictureBox149
         '
@@ -7571,37 +7585,37 @@ Partial Class Items_edit
         Me.PictureBox149.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox149.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox149.TabIndex = 427
-        Me.PictureBox149.TabStop = False
+        Me.PictureBox149.TabStop = false
         '
-        'NumericUpDown155
+        'valu_interiors_92
         '
-        Me.NumericUpDown155.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown155.Location = New System.Drawing.Point(143, 352)
-        Me.NumericUpDown155.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown155.Name = "NumericUpDown155"
-        Me.NumericUpDown155.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown155.TabIndex = 426
-        Me.NumericUpDown155.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_92.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_92.Location = New System.Drawing.Point(143, 352)
+        Me.valu_interiors_92.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_92.Name = "valu_interiors_92"
+        Me.valu_interiors_92.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_92.TabIndex = 426
+        Me.valu_interiors_92.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox309
+        'Check_NA_interiors_92
         '
-        Me.CheckBox309.AutoSize = True
-        Me.CheckBox309.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox309.Location = New System.Drawing.Point(188, 356)
-        Me.CheckBox309.Name = "CheckBox309"
-        Me.CheckBox309.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox309.TabIndex = 425
-        Me.CheckBox309.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_92.AutoSize = true
+        Me.Check_NA_interiors_92.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_92.Location = New System.Drawing.Point(188, 356)
+        Me.Check_NA_interiors_92.Name = "Check_NA_interiors_92"
+        Me.Check_NA_interiors_92.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_92.TabIndex = 425
+        Me.Check_NA_interiors_92.UseVisualStyleBackColor = false
         '
-        'CheckBox310
+        'Check_available_interiors_92
         '
-        Me.CheckBox310.AutoSize = True
-        Me.CheckBox310.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox310.Location = New System.Drawing.Point(127, 356)
-        Me.CheckBox310.Name = "CheckBox310"
-        Me.CheckBox310.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox310.TabIndex = 424
-        Me.CheckBox310.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_92.AutoSize = true
+        Me.Check_available_interiors_92.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_92.Location = New System.Drawing.Point(127, 356)
+        Me.Check_available_interiors_92.Name = "Check_available_interiors_92"
+        Me.Check_available_interiors_92.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_92.TabIndex = 424
+        Me.Check_available_interiors_92.UseVisualStyleBackColor = false
         '
         'PictureBox150
         '
@@ -7611,37 +7625,37 @@ Partial Class Items_edit
         Me.PictureBox150.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox150.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox150.TabIndex = 423
-        Me.PictureBox150.TabStop = False
+        Me.PictureBox150.TabStop = false
         '
-        'NumericUpDown156
+        'valu_interiors_91
         '
-        Me.NumericUpDown156.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown156.Location = New System.Drawing.Point(61, 352)
-        Me.NumericUpDown156.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown156.Name = "NumericUpDown156"
-        Me.NumericUpDown156.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown156.TabIndex = 422
-        Me.NumericUpDown156.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_91.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_91.Location = New System.Drawing.Point(61, 352)
+        Me.valu_interiors_91.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_91.Name = "valu_interiors_91"
+        Me.valu_interiors_91.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_91.TabIndex = 422
+        Me.valu_interiors_91.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox311
+        'Check_NA_interiors_91
         '
-        Me.CheckBox311.AutoSize = True
-        Me.CheckBox311.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox311.Location = New System.Drawing.Point(106, 356)
-        Me.CheckBox311.Name = "CheckBox311"
-        Me.CheckBox311.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox311.TabIndex = 421
-        Me.CheckBox311.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_91.AutoSize = true
+        Me.Check_NA_interiors_91.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_91.Location = New System.Drawing.Point(106, 356)
+        Me.Check_NA_interiors_91.Name = "Check_NA_interiors_91"
+        Me.Check_NA_interiors_91.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_91.TabIndex = 421
+        Me.Check_NA_interiors_91.UseVisualStyleBackColor = false
         '
-        'CheckBox312
+        'Check_available_interiors_91
         '
-        Me.CheckBox312.AutoSize = True
-        Me.CheckBox312.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox312.Location = New System.Drawing.Point(45, 356)
-        Me.CheckBox312.Name = "CheckBox312"
-        Me.CheckBox312.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox312.TabIndex = 420
-        Me.CheckBox312.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_91.AutoSize = true
+        Me.Check_available_interiors_91.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_91.Location = New System.Drawing.Point(45, 356)
+        Me.Check_available_interiors_91.Name = "Check_available_interiors_91"
+        Me.Check_available_interiors_91.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_91.TabIndex = 420
+        Me.Check_available_interiors_91.UseVisualStyleBackColor = false
         '
         'PictureBox151
         '
@@ -7651,37 +7665,37 @@ Partial Class Items_edit
         Me.PictureBox151.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox151.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox151.TabIndex = 419
-        Me.PictureBox151.TabStop = False
+        Me.PictureBox151.TabStop = false
         '
-        'NumericUpDown157
+        'valu_interiors_90
         '
-        Me.NumericUpDown157.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown157.Location = New System.Drawing.Point(799, 272)
-        Me.NumericUpDown157.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown157.Name = "NumericUpDown157"
-        Me.NumericUpDown157.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown157.TabIndex = 418
-        Me.NumericUpDown157.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_90.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_90.Location = New System.Drawing.Point(799, 272)
+        Me.valu_interiors_90.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_90.Name = "valu_interiors_90"
+        Me.valu_interiors_90.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_90.TabIndex = 418
+        Me.valu_interiors_90.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox313
+        'Check_NA_interiors_90
         '
-        Me.CheckBox313.AutoSize = True
-        Me.CheckBox313.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox313.Location = New System.Drawing.Point(844, 276)
-        Me.CheckBox313.Name = "CheckBox313"
-        Me.CheckBox313.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox313.TabIndex = 417
-        Me.CheckBox313.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_90.AutoSize = true
+        Me.Check_NA_interiors_90.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_90.Location = New System.Drawing.Point(844, 276)
+        Me.Check_NA_interiors_90.Name = "Check_NA_interiors_90"
+        Me.Check_NA_interiors_90.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_90.TabIndex = 417
+        Me.Check_NA_interiors_90.UseVisualStyleBackColor = false
         '
-        'CheckBox314
+        'Check_available_interiors_90
         '
-        Me.CheckBox314.AutoSize = True
-        Me.CheckBox314.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox314.Location = New System.Drawing.Point(783, 276)
-        Me.CheckBox314.Name = "CheckBox314"
-        Me.CheckBox314.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox314.TabIndex = 416
-        Me.CheckBox314.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_90.AutoSize = true
+        Me.Check_available_interiors_90.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_90.Location = New System.Drawing.Point(783, 276)
+        Me.Check_available_interiors_90.Name = "Check_available_interiors_90"
+        Me.Check_available_interiors_90.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_90.TabIndex = 416
+        Me.Check_available_interiors_90.UseVisualStyleBackColor = false
         '
         'PictureBox152
         '
@@ -7691,37 +7705,37 @@ Partial Class Items_edit
         Me.PictureBox152.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox152.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox152.TabIndex = 415
-        Me.PictureBox152.TabStop = False
+        Me.PictureBox152.TabStop = false
         '
-        'NumericUpDown158
+        'valu_interiors_89
         '
-        Me.NumericUpDown158.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown158.Location = New System.Drawing.Point(717, 272)
-        Me.NumericUpDown158.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown158.Name = "NumericUpDown158"
-        Me.NumericUpDown158.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown158.TabIndex = 414
-        Me.NumericUpDown158.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_89.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_89.Location = New System.Drawing.Point(717, 272)
+        Me.valu_interiors_89.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_89.Name = "valu_interiors_89"
+        Me.valu_interiors_89.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_89.TabIndex = 414
+        Me.valu_interiors_89.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox315
+        'Check_NA_interiors_89
         '
-        Me.CheckBox315.AutoSize = True
-        Me.CheckBox315.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox315.Location = New System.Drawing.Point(762, 276)
-        Me.CheckBox315.Name = "CheckBox315"
-        Me.CheckBox315.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox315.TabIndex = 413
-        Me.CheckBox315.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_89.AutoSize = true
+        Me.Check_NA_interiors_89.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_89.Location = New System.Drawing.Point(762, 276)
+        Me.Check_NA_interiors_89.Name = "Check_NA_interiors_89"
+        Me.Check_NA_interiors_89.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_89.TabIndex = 413
+        Me.Check_NA_interiors_89.UseVisualStyleBackColor = false
         '
-        'CheckBox316
+        'Check_available_interiors_89
         '
-        Me.CheckBox316.AutoSize = True
-        Me.CheckBox316.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox316.Location = New System.Drawing.Point(701, 276)
-        Me.CheckBox316.Name = "CheckBox316"
-        Me.CheckBox316.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox316.TabIndex = 412
-        Me.CheckBox316.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_89.AutoSize = true
+        Me.Check_available_interiors_89.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_89.Location = New System.Drawing.Point(701, 276)
+        Me.Check_available_interiors_89.Name = "Check_available_interiors_89"
+        Me.Check_available_interiors_89.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_89.TabIndex = 412
+        Me.Check_available_interiors_89.UseVisualStyleBackColor = false
         '
         'PictureBox153
         '
@@ -7731,37 +7745,37 @@ Partial Class Items_edit
         Me.PictureBox153.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox153.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox153.TabIndex = 411
-        Me.PictureBox153.TabStop = False
+        Me.PictureBox153.TabStop = false
         '
-        'NumericUpDown159
+        'valu_interiors_88
         '
-        Me.NumericUpDown159.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown159.Location = New System.Drawing.Point(635, 272)
-        Me.NumericUpDown159.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown159.Name = "NumericUpDown159"
-        Me.NumericUpDown159.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown159.TabIndex = 410
-        Me.NumericUpDown159.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_88.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_88.Location = New System.Drawing.Point(635, 272)
+        Me.valu_interiors_88.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_88.Name = "valu_interiors_88"
+        Me.valu_interiors_88.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_88.TabIndex = 410
+        Me.valu_interiors_88.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox317
+        'Check_NA_interiors_88
         '
-        Me.CheckBox317.AutoSize = True
-        Me.CheckBox317.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox317.Location = New System.Drawing.Point(680, 276)
-        Me.CheckBox317.Name = "CheckBox317"
-        Me.CheckBox317.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox317.TabIndex = 409
-        Me.CheckBox317.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_88.AutoSize = true
+        Me.Check_NA_interiors_88.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_88.Location = New System.Drawing.Point(680, 276)
+        Me.Check_NA_interiors_88.Name = "Check_NA_interiors_88"
+        Me.Check_NA_interiors_88.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_88.TabIndex = 409
+        Me.Check_NA_interiors_88.UseVisualStyleBackColor = false
         '
-        'CheckBox318
+        'Check_available_interiors_88
         '
-        Me.CheckBox318.AutoSize = True
-        Me.CheckBox318.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox318.Location = New System.Drawing.Point(619, 276)
-        Me.CheckBox318.Name = "CheckBox318"
-        Me.CheckBox318.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox318.TabIndex = 408
-        Me.CheckBox318.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_88.AutoSize = true
+        Me.Check_available_interiors_88.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_88.Location = New System.Drawing.Point(619, 276)
+        Me.Check_available_interiors_88.Name = "Check_available_interiors_88"
+        Me.Check_available_interiors_88.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_88.TabIndex = 408
+        Me.Check_available_interiors_88.UseVisualStyleBackColor = false
         '
         'PictureBox154
         '
@@ -7771,37 +7785,37 @@ Partial Class Items_edit
         Me.PictureBox154.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox154.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox154.TabIndex = 407
-        Me.PictureBox154.TabStop = False
+        Me.PictureBox154.TabStop = false
         '
-        'NumericUpDown160
+        'valu_interiors_87
         '
-        Me.NumericUpDown160.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown160.Location = New System.Drawing.Point(553, 272)
-        Me.NumericUpDown160.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown160.Name = "NumericUpDown160"
-        Me.NumericUpDown160.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown160.TabIndex = 406
-        Me.NumericUpDown160.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_87.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_87.Location = New System.Drawing.Point(553, 272)
+        Me.valu_interiors_87.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_87.Name = "valu_interiors_87"
+        Me.valu_interiors_87.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_87.TabIndex = 406
+        Me.valu_interiors_87.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox319
+        'Check_NA_interiors_87
         '
-        Me.CheckBox319.AutoSize = True
-        Me.CheckBox319.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox319.Location = New System.Drawing.Point(598, 276)
-        Me.CheckBox319.Name = "CheckBox319"
-        Me.CheckBox319.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox319.TabIndex = 405
-        Me.CheckBox319.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_87.AutoSize = true
+        Me.Check_NA_interiors_87.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_87.Location = New System.Drawing.Point(598, 276)
+        Me.Check_NA_interiors_87.Name = "Check_NA_interiors_87"
+        Me.Check_NA_interiors_87.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_87.TabIndex = 405
+        Me.Check_NA_interiors_87.UseVisualStyleBackColor = false
         '
-        'CheckBox320
+        'Check_available_interiors_87
         '
-        Me.CheckBox320.AutoSize = True
-        Me.CheckBox320.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox320.Location = New System.Drawing.Point(537, 276)
-        Me.CheckBox320.Name = "CheckBox320"
-        Me.CheckBox320.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox320.TabIndex = 404
-        Me.CheckBox320.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_87.AutoSize = true
+        Me.Check_available_interiors_87.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_87.Location = New System.Drawing.Point(537, 276)
+        Me.Check_available_interiors_87.Name = "Check_available_interiors_87"
+        Me.Check_available_interiors_87.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_87.TabIndex = 404
+        Me.Check_available_interiors_87.UseVisualStyleBackColor = false
         '
         'PictureBox155
         '
@@ -7811,37 +7825,37 @@ Partial Class Items_edit
         Me.PictureBox155.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox155.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox155.TabIndex = 403
-        Me.PictureBox155.TabStop = False
+        Me.PictureBox155.TabStop = false
         '
-        'NumericUpDown161
+        'valu_interiors_86
         '
-        Me.NumericUpDown161.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown161.Location = New System.Drawing.Point(471, 272)
-        Me.NumericUpDown161.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown161.Name = "NumericUpDown161"
-        Me.NumericUpDown161.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown161.TabIndex = 402
-        Me.NumericUpDown161.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_86.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_86.Location = New System.Drawing.Point(471, 272)
+        Me.valu_interiors_86.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_86.Name = "valu_interiors_86"
+        Me.valu_interiors_86.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_86.TabIndex = 402
+        Me.valu_interiors_86.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox321
+        'Check_NA_interiors_86
         '
-        Me.CheckBox321.AutoSize = True
-        Me.CheckBox321.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox321.Location = New System.Drawing.Point(516, 276)
-        Me.CheckBox321.Name = "CheckBox321"
-        Me.CheckBox321.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox321.TabIndex = 401
-        Me.CheckBox321.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_86.AutoSize = true
+        Me.Check_NA_interiors_86.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_86.Location = New System.Drawing.Point(516, 276)
+        Me.Check_NA_interiors_86.Name = "Check_NA_interiors_86"
+        Me.Check_NA_interiors_86.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_86.TabIndex = 401
+        Me.Check_NA_interiors_86.UseVisualStyleBackColor = false
         '
-        'CheckBox322
+        'Check_available_interiors_86
         '
-        Me.CheckBox322.AutoSize = True
-        Me.CheckBox322.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox322.Location = New System.Drawing.Point(455, 276)
-        Me.CheckBox322.Name = "CheckBox322"
-        Me.CheckBox322.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox322.TabIndex = 400
-        Me.CheckBox322.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_86.AutoSize = true
+        Me.Check_available_interiors_86.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_86.Location = New System.Drawing.Point(455, 276)
+        Me.Check_available_interiors_86.Name = "Check_available_interiors_86"
+        Me.Check_available_interiors_86.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_86.TabIndex = 400
+        Me.Check_available_interiors_86.UseVisualStyleBackColor = false
         '
         'PictureBox156
         '
@@ -7851,37 +7865,37 @@ Partial Class Items_edit
         Me.PictureBox156.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox156.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox156.TabIndex = 399
-        Me.PictureBox156.TabStop = False
+        Me.PictureBox156.TabStop = false
         '
-        'NumericUpDown162
+        'valu_interiors_85
         '
-        Me.NumericUpDown162.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown162.Location = New System.Drawing.Point(389, 272)
-        Me.NumericUpDown162.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown162.Name = "NumericUpDown162"
-        Me.NumericUpDown162.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown162.TabIndex = 398
-        Me.NumericUpDown162.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_85.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_85.Location = New System.Drawing.Point(389, 272)
+        Me.valu_interiors_85.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_85.Name = "valu_interiors_85"
+        Me.valu_interiors_85.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_85.TabIndex = 398
+        Me.valu_interiors_85.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox323
+        'Check_NA_interiors_85
         '
-        Me.CheckBox323.AutoSize = True
-        Me.CheckBox323.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox323.Location = New System.Drawing.Point(434, 276)
-        Me.CheckBox323.Name = "CheckBox323"
-        Me.CheckBox323.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox323.TabIndex = 397
-        Me.CheckBox323.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_85.AutoSize = true
+        Me.Check_NA_interiors_85.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_85.Location = New System.Drawing.Point(434, 276)
+        Me.Check_NA_interiors_85.Name = "Check_NA_interiors_85"
+        Me.Check_NA_interiors_85.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_85.TabIndex = 397
+        Me.Check_NA_interiors_85.UseVisualStyleBackColor = false
         '
-        'CheckBox324
+        'Check_available_interiors_85
         '
-        Me.CheckBox324.AutoSize = True
-        Me.CheckBox324.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox324.Location = New System.Drawing.Point(373, 276)
-        Me.CheckBox324.Name = "CheckBox324"
-        Me.CheckBox324.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox324.TabIndex = 396
-        Me.CheckBox324.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_85.AutoSize = true
+        Me.Check_available_interiors_85.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_85.Location = New System.Drawing.Point(373, 276)
+        Me.Check_available_interiors_85.Name = "Check_available_interiors_85"
+        Me.Check_available_interiors_85.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_85.TabIndex = 396
+        Me.Check_available_interiors_85.UseVisualStyleBackColor = false
         '
         'PictureBox157
         '
@@ -7891,37 +7905,37 @@ Partial Class Items_edit
         Me.PictureBox157.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox157.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox157.TabIndex = 395
-        Me.PictureBox157.TabStop = False
+        Me.PictureBox157.TabStop = false
         '
-        'NumericUpDown163
+        'valu_interiors_84
         '
-        Me.NumericUpDown163.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown163.Location = New System.Drawing.Point(307, 272)
-        Me.NumericUpDown163.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown163.Name = "NumericUpDown163"
-        Me.NumericUpDown163.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown163.TabIndex = 394
-        Me.NumericUpDown163.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_84.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_84.Location = New System.Drawing.Point(307, 272)
+        Me.valu_interiors_84.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_84.Name = "valu_interiors_84"
+        Me.valu_interiors_84.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_84.TabIndex = 394
+        Me.valu_interiors_84.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox325
+        'Check_NA_interiors_84
         '
-        Me.CheckBox325.AutoSize = True
-        Me.CheckBox325.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox325.Location = New System.Drawing.Point(352, 276)
-        Me.CheckBox325.Name = "CheckBox325"
-        Me.CheckBox325.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox325.TabIndex = 393
-        Me.CheckBox325.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_84.AutoSize = true
+        Me.Check_NA_interiors_84.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_84.Location = New System.Drawing.Point(352, 276)
+        Me.Check_NA_interiors_84.Name = "Check_NA_interiors_84"
+        Me.Check_NA_interiors_84.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_84.TabIndex = 393
+        Me.Check_NA_interiors_84.UseVisualStyleBackColor = false
         '
-        'CheckBox326
+        'Check_available_interiors_84
         '
-        Me.CheckBox326.AutoSize = True
-        Me.CheckBox326.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox326.Location = New System.Drawing.Point(291, 276)
-        Me.CheckBox326.Name = "CheckBox326"
-        Me.CheckBox326.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox326.TabIndex = 392
-        Me.CheckBox326.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_84.AutoSize = true
+        Me.Check_available_interiors_84.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_84.Location = New System.Drawing.Point(291, 276)
+        Me.Check_available_interiors_84.Name = "Check_available_interiors_84"
+        Me.Check_available_interiors_84.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_84.TabIndex = 392
+        Me.Check_available_interiors_84.UseVisualStyleBackColor = false
         '
         'PictureBox158
         '
@@ -7931,37 +7945,37 @@ Partial Class Items_edit
         Me.PictureBox158.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox158.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox158.TabIndex = 391
-        Me.PictureBox158.TabStop = False
+        Me.PictureBox158.TabStop = false
         '
-        'NumericUpDown164
+        'valu_interiors_83
         '
-        Me.NumericUpDown164.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown164.Location = New System.Drawing.Point(225, 272)
-        Me.NumericUpDown164.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown164.Name = "NumericUpDown164"
-        Me.NumericUpDown164.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown164.TabIndex = 390
-        Me.NumericUpDown164.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_83.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_83.Location = New System.Drawing.Point(225, 272)
+        Me.valu_interiors_83.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_83.Name = "valu_interiors_83"
+        Me.valu_interiors_83.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_83.TabIndex = 390
+        Me.valu_interiors_83.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox327
+        'Check_NA_interiors_83
         '
-        Me.CheckBox327.AutoSize = True
-        Me.CheckBox327.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox327.Location = New System.Drawing.Point(270, 276)
-        Me.CheckBox327.Name = "CheckBox327"
-        Me.CheckBox327.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox327.TabIndex = 389
-        Me.CheckBox327.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_83.AutoSize = true
+        Me.Check_NA_interiors_83.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_83.Location = New System.Drawing.Point(270, 276)
+        Me.Check_NA_interiors_83.Name = "Check_NA_interiors_83"
+        Me.Check_NA_interiors_83.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_83.TabIndex = 389
+        Me.Check_NA_interiors_83.UseVisualStyleBackColor = false
         '
-        'CheckBox328
+        'Check_available_interiors_83
         '
-        Me.CheckBox328.AutoSize = True
-        Me.CheckBox328.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox328.Location = New System.Drawing.Point(209, 276)
-        Me.CheckBox328.Name = "CheckBox328"
-        Me.CheckBox328.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox328.TabIndex = 388
-        Me.CheckBox328.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_83.AutoSize = true
+        Me.Check_available_interiors_83.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_83.Location = New System.Drawing.Point(209, 276)
+        Me.Check_available_interiors_83.Name = "Check_available_interiors_83"
+        Me.Check_available_interiors_83.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_83.TabIndex = 388
+        Me.Check_available_interiors_83.UseVisualStyleBackColor = false
         '
         'PictureBox159
         '
@@ -7971,37 +7985,37 @@ Partial Class Items_edit
         Me.PictureBox159.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox159.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox159.TabIndex = 387
-        Me.PictureBox159.TabStop = False
+        Me.PictureBox159.TabStop = false
         '
-        'NumericUpDown165
+        'valu_interiors_82
         '
-        Me.NumericUpDown165.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown165.Location = New System.Drawing.Point(143, 272)
-        Me.NumericUpDown165.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown165.Name = "NumericUpDown165"
-        Me.NumericUpDown165.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown165.TabIndex = 386
-        Me.NumericUpDown165.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_82.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_82.Location = New System.Drawing.Point(143, 272)
+        Me.valu_interiors_82.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_82.Name = "valu_interiors_82"
+        Me.valu_interiors_82.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_82.TabIndex = 386
+        Me.valu_interiors_82.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox329
+        'Check_NA_interiors_82
         '
-        Me.CheckBox329.AutoSize = True
-        Me.CheckBox329.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox329.Location = New System.Drawing.Point(188, 276)
-        Me.CheckBox329.Name = "CheckBox329"
-        Me.CheckBox329.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox329.TabIndex = 385
-        Me.CheckBox329.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_82.AutoSize = true
+        Me.Check_NA_interiors_82.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_82.Location = New System.Drawing.Point(188, 276)
+        Me.Check_NA_interiors_82.Name = "Check_NA_interiors_82"
+        Me.Check_NA_interiors_82.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_82.TabIndex = 385
+        Me.Check_NA_interiors_82.UseVisualStyleBackColor = false
         '
-        'CheckBox330
+        'Check_available_interiors_82
         '
-        Me.CheckBox330.AutoSize = True
-        Me.CheckBox330.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox330.Location = New System.Drawing.Point(127, 276)
-        Me.CheckBox330.Name = "CheckBox330"
-        Me.CheckBox330.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox330.TabIndex = 384
-        Me.CheckBox330.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_82.AutoSize = true
+        Me.Check_available_interiors_82.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_82.Location = New System.Drawing.Point(127, 276)
+        Me.Check_available_interiors_82.Name = "Check_available_interiors_82"
+        Me.Check_available_interiors_82.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_82.TabIndex = 384
+        Me.Check_available_interiors_82.UseVisualStyleBackColor = false
         '
         'PictureBox160
         '
@@ -8011,37 +8025,37 @@ Partial Class Items_edit
         Me.PictureBox160.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox160.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox160.TabIndex = 383
-        Me.PictureBox160.TabStop = False
+        Me.PictureBox160.TabStop = false
         '
-        'NumericUpDown166
+        'valu_interiors_81
         '
-        Me.NumericUpDown166.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown166.Location = New System.Drawing.Point(61, 272)
-        Me.NumericUpDown166.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown166.Name = "NumericUpDown166"
-        Me.NumericUpDown166.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown166.TabIndex = 382
-        Me.NumericUpDown166.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_81.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_81.Location = New System.Drawing.Point(61, 272)
+        Me.valu_interiors_81.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_81.Name = "valu_interiors_81"
+        Me.valu_interiors_81.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_81.TabIndex = 382
+        Me.valu_interiors_81.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox331
+        'Check_NA_interiors_81
         '
-        Me.CheckBox331.AutoSize = True
-        Me.CheckBox331.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox331.Location = New System.Drawing.Point(106, 276)
-        Me.CheckBox331.Name = "CheckBox331"
-        Me.CheckBox331.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox331.TabIndex = 381
-        Me.CheckBox331.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_81.AutoSize = true
+        Me.Check_NA_interiors_81.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_81.Location = New System.Drawing.Point(106, 276)
+        Me.Check_NA_interiors_81.Name = "Check_NA_interiors_81"
+        Me.Check_NA_interiors_81.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_81.TabIndex = 381
+        Me.Check_NA_interiors_81.UseVisualStyleBackColor = false
         '
-        'CheckBox332
+        'Check_available_interiors_81
         '
-        Me.CheckBox332.AutoSize = True
-        Me.CheckBox332.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox332.Location = New System.Drawing.Point(45, 276)
-        Me.CheckBox332.Name = "CheckBox332"
-        Me.CheckBox332.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox332.TabIndex = 380
-        Me.CheckBox332.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_81.AutoSize = true
+        Me.Check_available_interiors_81.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_81.Location = New System.Drawing.Point(45, 276)
+        Me.Check_available_interiors_81.Name = "Check_available_interiors_81"
+        Me.Check_available_interiors_81.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_81.TabIndex = 380
+        Me.Check_available_interiors_81.UseVisualStyleBackColor = false
         '
         'PictureBox161
         '
@@ -8051,37 +8065,37 @@ Partial Class Items_edit
         Me.PictureBox161.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox161.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox161.TabIndex = 379
-        Me.PictureBox161.TabStop = False
+        Me.PictureBox161.TabStop = false
         '
-        'NumericUpDown127
+        'valu_interiors_80
         '
-        Me.NumericUpDown127.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown127.Location = New System.Drawing.Point(799, 192)
-        Me.NumericUpDown127.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown127.Name = "NumericUpDown127"
-        Me.NumericUpDown127.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown127.TabIndex = 378
-        Me.NumericUpDown127.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_80.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_80.Location = New System.Drawing.Point(799, 192)
+        Me.valu_interiors_80.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_80.Name = "valu_interiors_80"
+        Me.valu_interiors_80.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_80.TabIndex = 378
+        Me.valu_interiors_80.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox253
+        'Check_NA_interiors_80
         '
-        Me.CheckBox253.AutoSize = True
-        Me.CheckBox253.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox253.Location = New System.Drawing.Point(844, 196)
-        Me.CheckBox253.Name = "CheckBox253"
-        Me.CheckBox253.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox253.TabIndex = 377
-        Me.CheckBox253.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_80.AutoSize = true
+        Me.Check_NA_interiors_80.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_80.Location = New System.Drawing.Point(844, 196)
+        Me.Check_NA_interiors_80.Name = "Check_NA_interiors_80"
+        Me.Check_NA_interiors_80.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_80.TabIndex = 377
+        Me.Check_NA_interiors_80.UseVisualStyleBackColor = false
         '
-        'CheckBox254
+        'Check_available_interiors_80
         '
-        Me.CheckBox254.AutoSize = True
-        Me.CheckBox254.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox254.Location = New System.Drawing.Point(783, 196)
-        Me.CheckBox254.Name = "CheckBox254"
-        Me.CheckBox254.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox254.TabIndex = 376
-        Me.CheckBox254.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_80.AutoSize = true
+        Me.Check_available_interiors_80.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_80.Location = New System.Drawing.Point(783, 196)
+        Me.Check_available_interiors_80.Name = "Check_available_interiors_80"
+        Me.Check_available_interiors_80.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_80.TabIndex = 376
+        Me.Check_available_interiors_80.UseVisualStyleBackColor = false
         '
         'PictureBox114
         '
@@ -8091,37 +8105,37 @@ Partial Class Items_edit
         Me.PictureBox114.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox114.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox114.TabIndex = 375
-        Me.PictureBox114.TabStop = False
+        Me.PictureBox114.TabStop = false
         '
-        'NumericUpDown128
+        'valu_interiors_79
         '
-        Me.NumericUpDown128.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown128.Location = New System.Drawing.Point(717, 192)
-        Me.NumericUpDown128.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown128.Name = "NumericUpDown128"
-        Me.NumericUpDown128.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown128.TabIndex = 374
-        Me.NumericUpDown128.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_79.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_79.Location = New System.Drawing.Point(717, 192)
+        Me.valu_interiors_79.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_79.Name = "valu_interiors_79"
+        Me.valu_interiors_79.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_79.TabIndex = 374
+        Me.valu_interiors_79.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox255
+        'Check_NA_interiors_79
         '
-        Me.CheckBox255.AutoSize = True
-        Me.CheckBox255.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox255.Location = New System.Drawing.Point(762, 196)
-        Me.CheckBox255.Name = "CheckBox255"
-        Me.CheckBox255.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox255.TabIndex = 373
-        Me.CheckBox255.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_79.AutoSize = true
+        Me.Check_NA_interiors_79.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_79.Location = New System.Drawing.Point(762, 196)
+        Me.Check_NA_interiors_79.Name = "Check_NA_interiors_79"
+        Me.Check_NA_interiors_79.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_79.TabIndex = 373
+        Me.Check_NA_interiors_79.UseVisualStyleBackColor = false
         '
-        'CheckBox256
+        'Check_available_interiors_79
         '
-        Me.CheckBox256.AutoSize = True
-        Me.CheckBox256.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox256.Location = New System.Drawing.Point(701, 196)
-        Me.CheckBox256.Name = "CheckBox256"
-        Me.CheckBox256.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox256.TabIndex = 372
-        Me.CheckBox256.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_79.AutoSize = true
+        Me.Check_available_interiors_79.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_79.Location = New System.Drawing.Point(701, 196)
+        Me.Check_available_interiors_79.Name = "Check_available_interiors_79"
+        Me.Check_available_interiors_79.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_79.TabIndex = 372
+        Me.Check_available_interiors_79.UseVisualStyleBackColor = false
         '
         'PictureBox123
         '
@@ -8131,37 +8145,37 @@ Partial Class Items_edit
         Me.PictureBox123.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox123.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox123.TabIndex = 371
-        Me.PictureBox123.TabStop = False
+        Me.PictureBox123.TabStop = false
         '
-        'NumericUpDown129
+        'valu_interiors_78
         '
-        Me.NumericUpDown129.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown129.Location = New System.Drawing.Point(635, 192)
-        Me.NumericUpDown129.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown129.Name = "NumericUpDown129"
-        Me.NumericUpDown129.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown129.TabIndex = 370
-        Me.NumericUpDown129.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_78.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_78.Location = New System.Drawing.Point(635, 192)
+        Me.valu_interiors_78.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_78.Name = "valu_interiors_78"
+        Me.valu_interiors_78.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_78.TabIndex = 370
+        Me.valu_interiors_78.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox257
+        'Check_NA_interiors_78
         '
-        Me.CheckBox257.AutoSize = True
-        Me.CheckBox257.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox257.Location = New System.Drawing.Point(680, 196)
-        Me.CheckBox257.Name = "CheckBox257"
-        Me.CheckBox257.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox257.TabIndex = 369
-        Me.CheckBox257.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_78.AutoSize = true
+        Me.Check_NA_interiors_78.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_78.Location = New System.Drawing.Point(680, 196)
+        Me.Check_NA_interiors_78.Name = "Check_NA_interiors_78"
+        Me.Check_NA_interiors_78.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_78.TabIndex = 369
+        Me.Check_NA_interiors_78.UseVisualStyleBackColor = false
         '
-        'CheckBox258
+        'Check_available_interiors_78
         '
-        Me.CheckBox258.AutoSize = True
-        Me.CheckBox258.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox258.Location = New System.Drawing.Point(619, 196)
-        Me.CheckBox258.Name = "CheckBox258"
-        Me.CheckBox258.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox258.TabIndex = 368
-        Me.CheckBox258.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_78.AutoSize = true
+        Me.Check_available_interiors_78.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_78.Location = New System.Drawing.Point(619, 196)
+        Me.Check_available_interiors_78.Name = "Check_available_interiors_78"
+        Me.Check_available_interiors_78.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_78.TabIndex = 368
+        Me.Check_available_interiors_78.UseVisualStyleBackColor = false
         '
         'PictureBox124
         '
@@ -8171,37 +8185,37 @@ Partial Class Items_edit
         Me.PictureBox124.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox124.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox124.TabIndex = 367
-        Me.PictureBox124.TabStop = False
+        Me.PictureBox124.TabStop = false
         '
-        'NumericUpDown130
+        'valu_interiors_77
         '
-        Me.NumericUpDown130.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown130.Location = New System.Drawing.Point(553, 192)
-        Me.NumericUpDown130.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown130.Name = "NumericUpDown130"
-        Me.NumericUpDown130.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown130.TabIndex = 366
-        Me.NumericUpDown130.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_77.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_77.Location = New System.Drawing.Point(553, 192)
+        Me.valu_interiors_77.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_77.Name = "valu_interiors_77"
+        Me.valu_interiors_77.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_77.TabIndex = 366
+        Me.valu_interiors_77.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox259
+        'Check_NA_interiors_77
         '
-        Me.CheckBox259.AutoSize = True
-        Me.CheckBox259.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox259.Location = New System.Drawing.Point(598, 196)
-        Me.CheckBox259.Name = "CheckBox259"
-        Me.CheckBox259.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox259.TabIndex = 365
-        Me.CheckBox259.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_77.AutoSize = true
+        Me.Check_NA_interiors_77.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_77.Location = New System.Drawing.Point(598, 196)
+        Me.Check_NA_interiors_77.Name = "Check_NA_interiors_77"
+        Me.Check_NA_interiors_77.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_77.TabIndex = 365
+        Me.Check_NA_interiors_77.UseVisualStyleBackColor = false
         '
-        'CheckBox260
+        'Check_available_interiors_77
         '
-        Me.CheckBox260.AutoSize = True
-        Me.CheckBox260.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox260.Location = New System.Drawing.Point(537, 196)
-        Me.CheckBox260.Name = "CheckBox260"
-        Me.CheckBox260.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox260.TabIndex = 364
-        Me.CheckBox260.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_77.AutoSize = true
+        Me.Check_available_interiors_77.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_77.Location = New System.Drawing.Point(537, 196)
+        Me.Check_available_interiors_77.Name = "Check_available_interiors_77"
+        Me.Check_available_interiors_77.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_77.TabIndex = 364
+        Me.Check_available_interiors_77.UseVisualStyleBackColor = false
         '
         'PictureBox125
         '
@@ -8211,37 +8225,37 @@ Partial Class Items_edit
         Me.PictureBox125.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox125.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox125.TabIndex = 363
-        Me.PictureBox125.TabStop = False
+        Me.PictureBox125.TabStop = false
         '
-        'NumericUpDown131
+        'valu_interiors_76
         '
-        Me.NumericUpDown131.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown131.Location = New System.Drawing.Point(471, 192)
-        Me.NumericUpDown131.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown131.Name = "NumericUpDown131"
-        Me.NumericUpDown131.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown131.TabIndex = 362
-        Me.NumericUpDown131.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_76.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_76.Location = New System.Drawing.Point(471, 192)
+        Me.valu_interiors_76.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_76.Name = "valu_interiors_76"
+        Me.valu_interiors_76.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_76.TabIndex = 362
+        Me.valu_interiors_76.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox261
+        'Check_NA_interiors_76
         '
-        Me.CheckBox261.AutoSize = True
-        Me.CheckBox261.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox261.Location = New System.Drawing.Point(516, 196)
-        Me.CheckBox261.Name = "CheckBox261"
-        Me.CheckBox261.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox261.TabIndex = 361
-        Me.CheckBox261.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_76.AutoSize = true
+        Me.Check_NA_interiors_76.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_76.Location = New System.Drawing.Point(516, 196)
+        Me.Check_NA_interiors_76.Name = "Check_NA_interiors_76"
+        Me.Check_NA_interiors_76.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_76.TabIndex = 361
+        Me.Check_NA_interiors_76.UseVisualStyleBackColor = false
         '
-        'CheckBox262
+        'Check_available_interiors_76
         '
-        Me.CheckBox262.AutoSize = True
-        Me.CheckBox262.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox262.Location = New System.Drawing.Point(455, 196)
-        Me.CheckBox262.Name = "CheckBox262"
-        Me.CheckBox262.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox262.TabIndex = 360
-        Me.CheckBox262.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_76.AutoSize = true
+        Me.Check_available_interiors_76.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_76.Location = New System.Drawing.Point(455, 196)
+        Me.Check_available_interiors_76.Name = "Check_available_interiors_76"
+        Me.Check_available_interiors_76.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_76.TabIndex = 360
+        Me.Check_available_interiors_76.UseVisualStyleBackColor = false
         '
         'PictureBox126
         '
@@ -8251,37 +8265,37 @@ Partial Class Items_edit
         Me.PictureBox126.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox126.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox126.TabIndex = 359
-        Me.PictureBox126.TabStop = False
+        Me.PictureBox126.TabStop = false
         '
-        'NumericUpDown132
+        'valu_interiors_75
         '
-        Me.NumericUpDown132.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown132.Location = New System.Drawing.Point(389, 192)
-        Me.NumericUpDown132.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown132.Name = "NumericUpDown132"
-        Me.NumericUpDown132.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown132.TabIndex = 358
-        Me.NumericUpDown132.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_75.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_75.Location = New System.Drawing.Point(389, 192)
+        Me.valu_interiors_75.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_75.Name = "valu_interiors_75"
+        Me.valu_interiors_75.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_75.TabIndex = 358
+        Me.valu_interiors_75.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox263
+        'Check_NA_interiors_75
         '
-        Me.CheckBox263.AutoSize = True
-        Me.CheckBox263.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox263.Location = New System.Drawing.Point(434, 196)
-        Me.CheckBox263.Name = "CheckBox263"
-        Me.CheckBox263.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox263.TabIndex = 357
-        Me.CheckBox263.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_75.AutoSize = true
+        Me.Check_NA_interiors_75.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_75.Location = New System.Drawing.Point(434, 196)
+        Me.Check_NA_interiors_75.Name = "Check_NA_interiors_75"
+        Me.Check_NA_interiors_75.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_75.TabIndex = 357
+        Me.Check_NA_interiors_75.UseVisualStyleBackColor = false
         '
-        'CheckBox264
+        'Check_available_interiors_75
         '
-        Me.CheckBox264.AutoSize = True
-        Me.CheckBox264.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox264.Location = New System.Drawing.Point(373, 196)
-        Me.CheckBox264.Name = "CheckBox264"
-        Me.CheckBox264.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox264.TabIndex = 356
-        Me.CheckBox264.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_75.AutoSize = true
+        Me.Check_available_interiors_75.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_75.Location = New System.Drawing.Point(373, 196)
+        Me.Check_available_interiors_75.Name = "Check_available_interiors_75"
+        Me.Check_available_interiors_75.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_75.TabIndex = 356
+        Me.Check_available_interiors_75.UseVisualStyleBackColor = false
         '
         'PictureBox127
         '
@@ -8291,37 +8305,37 @@ Partial Class Items_edit
         Me.PictureBox127.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox127.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox127.TabIndex = 355
-        Me.PictureBox127.TabStop = False
+        Me.PictureBox127.TabStop = false
         '
-        'NumericUpDown133
+        'valu_interiors_74
         '
-        Me.NumericUpDown133.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown133.Location = New System.Drawing.Point(307, 192)
-        Me.NumericUpDown133.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown133.Name = "NumericUpDown133"
-        Me.NumericUpDown133.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown133.TabIndex = 354
-        Me.NumericUpDown133.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_74.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_74.Location = New System.Drawing.Point(307, 192)
+        Me.valu_interiors_74.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_74.Name = "valu_interiors_74"
+        Me.valu_interiors_74.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_74.TabIndex = 354
+        Me.valu_interiors_74.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox265
+        'Check_NA_interiors_74
         '
-        Me.CheckBox265.AutoSize = True
-        Me.CheckBox265.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox265.Location = New System.Drawing.Point(352, 196)
-        Me.CheckBox265.Name = "CheckBox265"
-        Me.CheckBox265.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox265.TabIndex = 353
-        Me.CheckBox265.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_74.AutoSize = true
+        Me.Check_NA_interiors_74.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_74.Location = New System.Drawing.Point(352, 196)
+        Me.Check_NA_interiors_74.Name = "Check_NA_interiors_74"
+        Me.Check_NA_interiors_74.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_74.TabIndex = 353
+        Me.Check_NA_interiors_74.UseVisualStyleBackColor = false
         '
-        'CheckBox266
+        'Check_available_interiors_74
         '
-        Me.CheckBox266.AutoSize = True
-        Me.CheckBox266.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox266.Location = New System.Drawing.Point(291, 196)
-        Me.CheckBox266.Name = "CheckBox266"
-        Me.CheckBox266.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox266.TabIndex = 352
-        Me.CheckBox266.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_74.AutoSize = true
+        Me.Check_available_interiors_74.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_74.Location = New System.Drawing.Point(291, 196)
+        Me.Check_available_interiors_74.Name = "Check_available_interiors_74"
+        Me.Check_available_interiors_74.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_74.TabIndex = 352
+        Me.Check_available_interiors_74.UseVisualStyleBackColor = false
         '
         'PictureBox128
         '
@@ -8331,37 +8345,37 @@ Partial Class Items_edit
         Me.PictureBox128.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox128.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox128.TabIndex = 351
-        Me.PictureBox128.TabStop = False
+        Me.PictureBox128.TabStop = false
         '
-        'NumericUpDown134
+        'valu_interiors_73
         '
-        Me.NumericUpDown134.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown134.Location = New System.Drawing.Point(225, 192)
-        Me.NumericUpDown134.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown134.Name = "NumericUpDown134"
-        Me.NumericUpDown134.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown134.TabIndex = 350
-        Me.NumericUpDown134.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_73.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_73.Location = New System.Drawing.Point(225, 192)
+        Me.valu_interiors_73.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_73.Name = "valu_interiors_73"
+        Me.valu_interiors_73.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_73.TabIndex = 350
+        Me.valu_interiors_73.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox267
+        'Check_NA_interiors_73
         '
-        Me.CheckBox267.AutoSize = True
-        Me.CheckBox267.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox267.Location = New System.Drawing.Point(270, 196)
-        Me.CheckBox267.Name = "CheckBox267"
-        Me.CheckBox267.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox267.TabIndex = 349
-        Me.CheckBox267.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_73.AutoSize = true
+        Me.Check_NA_interiors_73.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_73.Location = New System.Drawing.Point(270, 196)
+        Me.Check_NA_interiors_73.Name = "Check_NA_interiors_73"
+        Me.Check_NA_interiors_73.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_73.TabIndex = 349
+        Me.Check_NA_interiors_73.UseVisualStyleBackColor = false
         '
-        'CheckBox268
+        'Check_available_interiors_73
         '
-        Me.CheckBox268.AutoSize = True
-        Me.CheckBox268.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox268.Location = New System.Drawing.Point(209, 196)
-        Me.CheckBox268.Name = "CheckBox268"
-        Me.CheckBox268.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox268.TabIndex = 348
-        Me.CheckBox268.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_73.AutoSize = true
+        Me.Check_available_interiors_73.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_73.Location = New System.Drawing.Point(209, 196)
+        Me.Check_available_interiors_73.Name = "Check_available_interiors_73"
+        Me.Check_available_interiors_73.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_73.TabIndex = 348
+        Me.Check_available_interiors_73.UseVisualStyleBackColor = false
         '
         'PictureBox129
         '
@@ -8371,37 +8385,37 @@ Partial Class Items_edit
         Me.PictureBox129.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox129.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox129.TabIndex = 347
-        Me.PictureBox129.TabStop = False
+        Me.PictureBox129.TabStop = false
         '
-        'NumericUpDown135
+        'valu_interiors_72
         '
-        Me.NumericUpDown135.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown135.Location = New System.Drawing.Point(143, 192)
-        Me.NumericUpDown135.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown135.Name = "NumericUpDown135"
-        Me.NumericUpDown135.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown135.TabIndex = 346
-        Me.NumericUpDown135.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_72.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_72.Location = New System.Drawing.Point(143, 192)
+        Me.valu_interiors_72.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_72.Name = "valu_interiors_72"
+        Me.valu_interiors_72.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_72.TabIndex = 346
+        Me.valu_interiors_72.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox269
+        'Check_NA_interiors_72
         '
-        Me.CheckBox269.AutoSize = True
-        Me.CheckBox269.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox269.Location = New System.Drawing.Point(188, 196)
-        Me.CheckBox269.Name = "CheckBox269"
-        Me.CheckBox269.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox269.TabIndex = 345
-        Me.CheckBox269.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_72.AutoSize = true
+        Me.Check_NA_interiors_72.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_72.Location = New System.Drawing.Point(188, 196)
+        Me.Check_NA_interiors_72.Name = "Check_NA_interiors_72"
+        Me.Check_NA_interiors_72.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_72.TabIndex = 345
+        Me.Check_NA_interiors_72.UseVisualStyleBackColor = false
         '
-        'CheckBox270
+        'Check_available_interiors_72
         '
-        Me.CheckBox270.AutoSize = True
-        Me.CheckBox270.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox270.Location = New System.Drawing.Point(127, 196)
-        Me.CheckBox270.Name = "CheckBox270"
-        Me.CheckBox270.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox270.TabIndex = 344
-        Me.CheckBox270.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_72.AutoSize = true
+        Me.Check_available_interiors_72.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_72.Location = New System.Drawing.Point(127, 196)
+        Me.Check_available_interiors_72.Name = "Check_available_interiors_72"
+        Me.Check_available_interiors_72.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_72.TabIndex = 344
+        Me.Check_available_interiors_72.UseVisualStyleBackColor = false
         '
         'PictureBox130
         '
@@ -8411,37 +8425,37 @@ Partial Class Items_edit
         Me.PictureBox130.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox130.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox130.TabIndex = 343
-        Me.PictureBox130.TabStop = False
+        Me.PictureBox130.TabStop = false
         '
-        'NumericUpDown136
+        'valu_interiors_71
         '
-        Me.NumericUpDown136.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown136.Location = New System.Drawing.Point(61, 192)
-        Me.NumericUpDown136.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown136.Name = "NumericUpDown136"
-        Me.NumericUpDown136.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown136.TabIndex = 342
-        Me.NumericUpDown136.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_71.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_71.Location = New System.Drawing.Point(61, 192)
+        Me.valu_interiors_71.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_71.Name = "valu_interiors_71"
+        Me.valu_interiors_71.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_71.TabIndex = 342
+        Me.valu_interiors_71.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox271
+        'Check_NA_interiors_71
         '
-        Me.CheckBox271.AutoSize = True
-        Me.CheckBox271.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox271.Location = New System.Drawing.Point(106, 196)
-        Me.CheckBox271.Name = "CheckBox271"
-        Me.CheckBox271.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox271.TabIndex = 341
-        Me.CheckBox271.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_71.AutoSize = true
+        Me.Check_NA_interiors_71.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_71.Location = New System.Drawing.Point(106, 196)
+        Me.Check_NA_interiors_71.Name = "Check_NA_interiors_71"
+        Me.Check_NA_interiors_71.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_71.TabIndex = 341
+        Me.Check_NA_interiors_71.UseVisualStyleBackColor = false
         '
-        'CheckBox272
+        'Check_available_interiors_71
         '
-        Me.CheckBox272.AutoSize = True
-        Me.CheckBox272.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox272.Location = New System.Drawing.Point(45, 196)
-        Me.CheckBox272.Name = "CheckBox272"
-        Me.CheckBox272.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox272.TabIndex = 340
-        Me.CheckBox272.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_71.AutoSize = true
+        Me.Check_available_interiors_71.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_71.Location = New System.Drawing.Point(45, 196)
+        Me.Check_available_interiors_71.Name = "Check_available_interiors_71"
+        Me.Check_available_interiors_71.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_71.TabIndex = 340
+        Me.Check_available_interiors_71.UseVisualStyleBackColor = false
         '
         'PictureBox131
         '
@@ -8451,37 +8465,37 @@ Partial Class Items_edit
         Me.PictureBox131.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox131.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox131.TabIndex = 339
-        Me.PictureBox131.TabStop = False
+        Me.PictureBox131.TabStop = false
         '
-        'NumericUpDown137
+        'valu_interiors_70
         '
-        Me.NumericUpDown137.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown137.Location = New System.Drawing.Point(799, 112)
-        Me.NumericUpDown137.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown137.Name = "NumericUpDown137"
-        Me.NumericUpDown137.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown137.TabIndex = 338
-        Me.NumericUpDown137.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_70.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_70.Location = New System.Drawing.Point(799, 112)
+        Me.valu_interiors_70.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_70.Name = "valu_interiors_70"
+        Me.valu_interiors_70.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_70.TabIndex = 338
+        Me.valu_interiors_70.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox273
+        'Check_NA_interiors_70
         '
-        Me.CheckBox273.AutoSize = True
-        Me.CheckBox273.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox273.Location = New System.Drawing.Point(844, 116)
-        Me.CheckBox273.Name = "CheckBox273"
-        Me.CheckBox273.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox273.TabIndex = 337
-        Me.CheckBox273.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_70.AutoSize = true
+        Me.Check_NA_interiors_70.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_70.Location = New System.Drawing.Point(844, 116)
+        Me.Check_NA_interiors_70.Name = "Check_NA_interiors_70"
+        Me.Check_NA_interiors_70.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_70.TabIndex = 337
+        Me.Check_NA_interiors_70.UseVisualStyleBackColor = false
         '
-        'CheckBox274
+        'Check_available_interiors_70
         '
-        Me.CheckBox274.AutoSize = True
-        Me.CheckBox274.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox274.Location = New System.Drawing.Point(783, 116)
-        Me.CheckBox274.Name = "CheckBox274"
-        Me.CheckBox274.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox274.TabIndex = 336
-        Me.CheckBox274.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_70.AutoSize = true
+        Me.Check_available_interiors_70.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_70.Location = New System.Drawing.Point(783, 116)
+        Me.Check_available_interiors_70.Name = "Check_available_interiors_70"
+        Me.Check_available_interiors_70.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_70.TabIndex = 336
+        Me.Check_available_interiors_70.UseVisualStyleBackColor = false
         '
         'PictureBox132
         '
@@ -8491,37 +8505,37 @@ Partial Class Items_edit
         Me.PictureBox132.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox132.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox132.TabIndex = 335
-        Me.PictureBox132.TabStop = False
+        Me.PictureBox132.TabStop = false
         '
-        'NumericUpDown138
+        'valu_interiors_69
         '
-        Me.NumericUpDown138.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown138.Location = New System.Drawing.Point(717, 112)
-        Me.NumericUpDown138.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown138.Name = "NumericUpDown138"
-        Me.NumericUpDown138.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown138.TabIndex = 334
-        Me.NumericUpDown138.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_69.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_69.Location = New System.Drawing.Point(717, 112)
+        Me.valu_interiors_69.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_69.Name = "valu_interiors_69"
+        Me.valu_interiors_69.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_69.TabIndex = 334
+        Me.valu_interiors_69.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox275
+        'Check_NA_interiors_69
         '
-        Me.CheckBox275.AutoSize = True
-        Me.CheckBox275.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox275.Location = New System.Drawing.Point(762, 116)
-        Me.CheckBox275.Name = "CheckBox275"
-        Me.CheckBox275.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox275.TabIndex = 333
-        Me.CheckBox275.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_69.AutoSize = true
+        Me.Check_NA_interiors_69.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_69.Location = New System.Drawing.Point(762, 116)
+        Me.Check_NA_interiors_69.Name = "Check_NA_interiors_69"
+        Me.Check_NA_interiors_69.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_69.TabIndex = 333
+        Me.Check_NA_interiors_69.UseVisualStyleBackColor = false
         '
-        'CheckBox276
+        'Check_available_interiors_69
         '
-        Me.CheckBox276.AutoSize = True
-        Me.CheckBox276.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox276.Location = New System.Drawing.Point(701, 116)
-        Me.CheckBox276.Name = "CheckBox276"
-        Me.CheckBox276.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox276.TabIndex = 332
-        Me.CheckBox276.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_69.AutoSize = true
+        Me.Check_available_interiors_69.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_69.Location = New System.Drawing.Point(701, 116)
+        Me.Check_available_interiors_69.Name = "Check_available_interiors_69"
+        Me.Check_available_interiors_69.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_69.TabIndex = 332
+        Me.Check_available_interiors_69.UseVisualStyleBackColor = false
         '
         'PictureBox133
         '
@@ -8531,37 +8545,37 @@ Partial Class Items_edit
         Me.PictureBox133.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox133.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox133.TabIndex = 331
-        Me.PictureBox133.TabStop = False
+        Me.PictureBox133.TabStop = false
         '
-        'NumericUpDown139
+        'valu_interiors_68
         '
-        Me.NumericUpDown139.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown139.Location = New System.Drawing.Point(635, 112)
-        Me.NumericUpDown139.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown139.Name = "NumericUpDown139"
-        Me.NumericUpDown139.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown139.TabIndex = 330
-        Me.NumericUpDown139.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_68.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_68.Location = New System.Drawing.Point(635, 112)
+        Me.valu_interiors_68.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_68.Name = "valu_interiors_68"
+        Me.valu_interiors_68.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_68.TabIndex = 330
+        Me.valu_interiors_68.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox277
+        'Check_NA_interiors_68
         '
-        Me.CheckBox277.AutoSize = True
-        Me.CheckBox277.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox277.Location = New System.Drawing.Point(680, 116)
-        Me.CheckBox277.Name = "CheckBox277"
-        Me.CheckBox277.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox277.TabIndex = 329
-        Me.CheckBox277.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_68.AutoSize = true
+        Me.Check_NA_interiors_68.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_68.Location = New System.Drawing.Point(680, 116)
+        Me.Check_NA_interiors_68.Name = "Check_NA_interiors_68"
+        Me.Check_NA_interiors_68.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_68.TabIndex = 329
+        Me.Check_NA_interiors_68.UseVisualStyleBackColor = false
         '
-        'CheckBox278
+        'Check_available_interiors_68
         '
-        Me.CheckBox278.AutoSize = True
-        Me.CheckBox278.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox278.Location = New System.Drawing.Point(619, 116)
-        Me.CheckBox278.Name = "CheckBox278"
-        Me.CheckBox278.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox278.TabIndex = 328
-        Me.CheckBox278.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_68.AutoSize = true
+        Me.Check_available_interiors_68.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_68.Location = New System.Drawing.Point(619, 116)
+        Me.Check_available_interiors_68.Name = "Check_available_interiors_68"
+        Me.Check_available_interiors_68.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_68.TabIndex = 328
+        Me.Check_available_interiors_68.UseVisualStyleBackColor = false
         '
         'PictureBox134
         '
@@ -8571,37 +8585,37 @@ Partial Class Items_edit
         Me.PictureBox134.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox134.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox134.TabIndex = 327
-        Me.PictureBox134.TabStop = False
+        Me.PictureBox134.TabStop = false
         '
-        'NumericUpDown140
+        'valu_interiors_67
         '
-        Me.NumericUpDown140.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown140.Location = New System.Drawing.Point(553, 112)
-        Me.NumericUpDown140.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown140.Name = "NumericUpDown140"
-        Me.NumericUpDown140.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown140.TabIndex = 326
-        Me.NumericUpDown140.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_67.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_67.Location = New System.Drawing.Point(553, 112)
+        Me.valu_interiors_67.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_67.Name = "valu_interiors_67"
+        Me.valu_interiors_67.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_67.TabIndex = 326
+        Me.valu_interiors_67.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox279
+        'Check_NA_interiors_67
         '
-        Me.CheckBox279.AutoSize = True
-        Me.CheckBox279.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox279.Location = New System.Drawing.Point(598, 116)
-        Me.CheckBox279.Name = "CheckBox279"
-        Me.CheckBox279.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox279.TabIndex = 325
-        Me.CheckBox279.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_67.AutoSize = true
+        Me.Check_NA_interiors_67.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_67.Location = New System.Drawing.Point(598, 116)
+        Me.Check_NA_interiors_67.Name = "Check_NA_interiors_67"
+        Me.Check_NA_interiors_67.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_67.TabIndex = 325
+        Me.Check_NA_interiors_67.UseVisualStyleBackColor = false
         '
-        'CheckBox280
+        'Check_available_interiors_67
         '
-        Me.CheckBox280.AutoSize = True
-        Me.CheckBox280.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox280.Location = New System.Drawing.Point(537, 116)
-        Me.CheckBox280.Name = "CheckBox280"
-        Me.CheckBox280.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox280.TabIndex = 324
-        Me.CheckBox280.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_67.AutoSize = true
+        Me.Check_available_interiors_67.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_67.Location = New System.Drawing.Point(537, 116)
+        Me.Check_available_interiors_67.Name = "Check_available_interiors_67"
+        Me.Check_available_interiors_67.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_67.TabIndex = 324
+        Me.Check_available_interiors_67.UseVisualStyleBackColor = false
         '
         'PictureBox135
         '
@@ -8611,37 +8625,37 @@ Partial Class Items_edit
         Me.PictureBox135.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox135.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox135.TabIndex = 323
-        Me.PictureBox135.TabStop = False
+        Me.PictureBox135.TabStop = false
         '
-        'NumericUpDown141
+        'valu_interiors_66
         '
-        Me.NumericUpDown141.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown141.Location = New System.Drawing.Point(471, 112)
-        Me.NumericUpDown141.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown141.Name = "NumericUpDown141"
-        Me.NumericUpDown141.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown141.TabIndex = 322
-        Me.NumericUpDown141.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_66.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_66.Location = New System.Drawing.Point(471, 112)
+        Me.valu_interiors_66.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_66.Name = "valu_interiors_66"
+        Me.valu_interiors_66.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_66.TabIndex = 322
+        Me.valu_interiors_66.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox281
+        'Check_NA_interiors_66
         '
-        Me.CheckBox281.AutoSize = True
-        Me.CheckBox281.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox281.Location = New System.Drawing.Point(516, 116)
-        Me.CheckBox281.Name = "CheckBox281"
-        Me.CheckBox281.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox281.TabIndex = 321
-        Me.CheckBox281.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_66.AutoSize = true
+        Me.Check_NA_interiors_66.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_66.Location = New System.Drawing.Point(516, 116)
+        Me.Check_NA_interiors_66.Name = "Check_NA_interiors_66"
+        Me.Check_NA_interiors_66.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_66.TabIndex = 321
+        Me.Check_NA_interiors_66.UseVisualStyleBackColor = false
         '
-        'CheckBox282
+        'Check_available_interiors_66
         '
-        Me.CheckBox282.AutoSize = True
-        Me.CheckBox282.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox282.Location = New System.Drawing.Point(455, 116)
-        Me.CheckBox282.Name = "CheckBox282"
-        Me.CheckBox282.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox282.TabIndex = 320
-        Me.CheckBox282.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_66.AutoSize = true
+        Me.Check_available_interiors_66.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_66.Location = New System.Drawing.Point(455, 116)
+        Me.Check_available_interiors_66.Name = "Check_available_interiors_66"
+        Me.Check_available_interiors_66.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_66.TabIndex = 320
+        Me.Check_available_interiors_66.UseVisualStyleBackColor = false
         '
         'PictureBox136
         '
@@ -8651,37 +8665,37 @@ Partial Class Items_edit
         Me.PictureBox136.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox136.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox136.TabIndex = 319
-        Me.PictureBox136.TabStop = False
+        Me.PictureBox136.TabStop = false
         '
-        'NumericUpDown142
+        'valu_interiors_65
         '
-        Me.NumericUpDown142.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown142.Location = New System.Drawing.Point(389, 112)
-        Me.NumericUpDown142.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown142.Name = "NumericUpDown142"
-        Me.NumericUpDown142.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown142.TabIndex = 318
-        Me.NumericUpDown142.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_65.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_65.Location = New System.Drawing.Point(389, 112)
+        Me.valu_interiors_65.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_65.Name = "valu_interiors_65"
+        Me.valu_interiors_65.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_65.TabIndex = 318
+        Me.valu_interiors_65.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox283
+        'Check_NA_interiors_65
         '
-        Me.CheckBox283.AutoSize = True
-        Me.CheckBox283.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox283.Location = New System.Drawing.Point(434, 116)
-        Me.CheckBox283.Name = "CheckBox283"
-        Me.CheckBox283.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox283.TabIndex = 317
-        Me.CheckBox283.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_65.AutoSize = true
+        Me.Check_NA_interiors_65.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_65.Location = New System.Drawing.Point(434, 116)
+        Me.Check_NA_interiors_65.Name = "Check_NA_interiors_65"
+        Me.Check_NA_interiors_65.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_65.TabIndex = 317
+        Me.Check_NA_interiors_65.UseVisualStyleBackColor = false
         '
-        'CheckBox284
+        'Check_available_interiors_65
         '
-        Me.CheckBox284.AutoSize = True
-        Me.CheckBox284.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox284.Location = New System.Drawing.Point(373, 116)
-        Me.CheckBox284.Name = "CheckBox284"
-        Me.CheckBox284.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox284.TabIndex = 316
-        Me.CheckBox284.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_65.AutoSize = true
+        Me.Check_available_interiors_65.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_65.Location = New System.Drawing.Point(373, 116)
+        Me.Check_available_interiors_65.Name = "Check_available_interiors_65"
+        Me.Check_available_interiors_65.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_65.TabIndex = 316
+        Me.Check_available_interiors_65.UseVisualStyleBackColor = false
         '
         'PictureBox137
         '
@@ -8691,37 +8705,37 @@ Partial Class Items_edit
         Me.PictureBox137.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox137.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox137.TabIndex = 315
-        Me.PictureBox137.TabStop = False
+        Me.PictureBox137.TabStop = false
         '
-        'NumericUpDown143
+        'valu_interiors_64
         '
-        Me.NumericUpDown143.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown143.Location = New System.Drawing.Point(307, 112)
-        Me.NumericUpDown143.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown143.Name = "NumericUpDown143"
-        Me.NumericUpDown143.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown143.TabIndex = 314
-        Me.NumericUpDown143.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_64.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_64.Location = New System.Drawing.Point(307, 112)
+        Me.valu_interiors_64.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_64.Name = "valu_interiors_64"
+        Me.valu_interiors_64.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_64.TabIndex = 314
+        Me.valu_interiors_64.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox285
+        'Check_NA_interiors_64
         '
-        Me.CheckBox285.AutoSize = True
-        Me.CheckBox285.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox285.Location = New System.Drawing.Point(352, 116)
-        Me.CheckBox285.Name = "CheckBox285"
-        Me.CheckBox285.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox285.TabIndex = 313
-        Me.CheckBox285.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_64.AutoSize = true
+        Me.Check_NA_interiors_64.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_64.Location = New System.Drawing.Point(352, 116)
+        Me.Check_NA_interiors_64.Name = "Check_NA_interiors_64"
+        Me.Check_NA_interiors_64.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_64.TabIndex = 313
+        Me.Check_NA_interiors_64.UseVisualStyleBackColor = false
         '
-        'CheckBox286
+        'Check_available_interiors_64
         '
-        Me.CheckBox286.AutoSize = True
-        Me.CheckBox286.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox286.Location = New System.Drawing.Point(291, 116)
-        Me.CheckBox286.Name = "CheckBox286"
-        Me.CheckBox286.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox286.TabIndex = 312
-        Me.CheckBox286.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_64.AutoSize = true
+        Me.Check_available_interiors_64.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_64.Location = New System.Drawing.Point(291, 116)
+        Me.Check_available_interiors_64.Name = "Check_available_interiors_64"
+        Me.Check_available_interiors_64.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_64.TabIndex = 312
+        Me.Check_available_interiors_64.UseVisualStyleBackColor = false
         '
         'PictureBox138
         '
@@ -8731,37 +8745,37 @@ Partial Class Items_edit
         Me.PictureBox138.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox138.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox138.TabIndex = 311
-        Me.PictureBox138.TabStop = False
+        Me.PictureBox138.TabStop = false
         '
-        'NumericUpDown144
+        'valu_interiors_63
         '
-        Me.NumericUpDown144.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown144.Location = New System.Drawing.Point(225, 112)
-        Me.NumericUpDown144.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown144.Name = "NumericUpDown144"
-        Me.NumericUpDown144.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown144.TabIndex = 310
-        Me.NumericUpDown144.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_63.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_63.Location = New System.Drawing.Point(225, 112)
+        Me.valu_interiors_63.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_63.Name = "valu_interiors_63"
+        Me.valu_interiors_63.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_63.TabIndex = 310
+        Me.valu_interiors_63.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox287
+        'Check_NA_interiors_63
         '
-        Me.CheckBox287.AutoSize = True
-        Me.CheckBox287.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox287.Location = New System.Drawing.Point(270, 116)
-        Me.CheckBox287.Name = "CheckBox287"
-        Me.CheckBox287.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox287.TabIndex = 309
-        Me.CheckBox287.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_63.AutoSize = true
+        Me.Check_NA_interiors_63.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_63.Location = New System.Drawing.Point(270, 116)
+        Me.Check_NA_interiors_63.Name = "Check_NA_interiors_63"
+        Me.Check_NA_interiors_63.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_63.TabIndex = 309
+        Me.Check_NA_interiors_63.UseVisualStyleBackColor = false
         '
-        'CheckBox288
+        'Check_available_interiors_63
         '
-        Me.CheckBox288.AutoSize = True
-        Me.CheckBox288.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox288.Location = New System.Drawing.Point(209, 116)
-        Me.CheckBox288.Name = "CheckBox288"
-        Me.CheckBox288.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox288.TabIndex = 308
-        Me.CheckBox288.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_63.AutoSize = true
+        Me.Check_available_interiors_63.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_63.Location = New System.Drawing.Point(209, 116)
+        Me.Check_available_interiors_63.Name = "Check_available_interiors_63"
+        Me.Check_available_interiors_63.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_63.TabIndex = 308
+        Me.Check_available_interiors_63.UseVisualStyleBackColor = false
         '
         'PictureBox139
         '
@@ -8771,37 +8785,37 @@ Partial Class Items_edit
         Me.PictureBox139.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox139.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox139.TabIndex = 307
-        Me.PictureBox139.TabStop = False
+        Me.PictureBox139.TabStop = false
         '
-        'NumericUpDown145
+        'valu_interiors_62
         '
-        Me.NumericUpDown145.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown145.Location = New System.Drawing.Point(143, 112)
-        Me.NumericUpDown145.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown145.Name = "NumericUpDown145"
-        Me.NumericUpDown145.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown145.TabIndex = 306
-        Me.NumericUpDown145.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_62.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_62.Location = New System.Drawing.Point(143, 112)
+        Me.valu_interiors_62.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_62.Name = "valu_interiors_62"
+        Me.valu_interiors_62.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_62.TabIndex = 306
+        Me.valu_interiors_62.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox289
+        'Check_NA_interiors_62
         '
-        Me.CheckBox289.AutoSize = True
-        Me.CheckBox289.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox289.Location = New System.Drawing.Point(188, 116)
-        Me.CheckBox289.Name = "CheckBox289"
-        Me.CheckBox289.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox289.TabIndex = 305
-        Me.CheckBox289.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_62.AutoSize = true
+        Me.Check_NA_interiors_62.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_62.Location = New System.Drawing.Point(188, 116)
+        Me.Check_NA_interiors_62.Name = "Check_NA_interiors_62"
+        Me.Check_NA_interiors_62.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_62.TabIndex = 305
+        Me.Check_NA_interiors_62.UseVisualStyleBackColor = false
         '
-        'CheckBox290
+        'Check_available_interiors_62
         '
-        Me.CheckBox290.AutoSize = True
-        Me.CheckBox290.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox290.Location = New System.Drawing.Point(127, 116)
-        Me.CheckBox290.Name = "CheckBox290"
-        Me.CheckBox290.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox290.TabIndex = 304
-        Me.CheckBox290.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_62.AutoSize = true
+        Me.Check_available_interiors_62.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_62.Location = New System.Drawing.Point(127, 116)
+        Me.Check_available_interiors_62.Name = "Check_available_interiors_62"
+        Me.Check_available_interiors_62.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_62.TabIndex = 304
+        Me.Check_available_interiors_62.UseVisualStyleBackColor = false
         '
         'PictureBox140
         '
@@ -8811,37 +8825,37 @@ Partial Class Items_edit
         Me.PictureBox140.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox140.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox140.TabIndex = 303
-        Me.PictureBox140.TabStop = False
+        Me.PictureBox140.TabStop = false
         '
-        'NumericUpDown146
+        'valu_interiors_61
         '
-        Me.NumericUpDown146.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown146.Location = New System.Drawing.Point(61, 112)
-        Me.NumericUpDown146.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown146.Name = "NumericUpDown146"
-        Me.NumericUpDown146.Size = New System.Drawing.Size(44, 16)
-        Me.NumericUpDown146.TabIndex = 302
-        Me.NumericUpDown146.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interiors_61.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_61.Location = New System.Drawing.Point(61, 112)
+        Me.valu_interiors_61.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_61.Name = "valu_interiors_61"
+        Me.valu_interiors_61.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_61.TabIndex = 302
+        Me.valu_interiors_61.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'CheckBox291
+        'Check_NA_interiors_61
         '
-        Me.CheckBox291.AutoSize = True
-        Me.CheckBox291.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox291.Location = New System.Drawing.Point(106, 116)
-        Me.CheckBox291.Name = "CheckBox291"
-        Me.CheckBox291.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox291.TabIndex = 301
-        Me.CheckBox291.UseVisualStyleBackColor = False
+        Me.Check_NA_interiors_61.AutoSize = true
+        Me.Check_NA_interiors_61.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_61.Location = New System.Drawing.Point(106, 116)
+        Me.Check_NA_interiors_61.Name = "Check_NA_interiors_61"
+        Me.Check_NA_interiors_61.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_61.TabIndex = 301
+        Me.Check_NA_interiors_61.UseVisualStyleBackColor = false
         '
-        'CheckBox292
+        'Check_available_interiors_61
         '
-        Me.CheckBox292.AutoSize = True
-        Me.CheckBox292.BackColor = System.Drawing.Color.Transparent
-        Me.CheckBox292.Location = New System.Drawing.Point(45, 116)
-        Me.CheckBox292.Name = "CheckBox292"
-        Me.CheckBox292.Size = New System.Drawing.Size(15, 14)
-        Me.CheckBox292.TabIndex = 300
-        Me.CheckBox292.UseVisualStyleBackColor = False
+        Me.Check_available_interiors_61.AutoSize = true
+        Me.Check_available_interiors_61.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_61.Location = New System.Drawing.Point(45, 116)
+        Me.Check_available_interiors_61.Name = "Check_available_interiors_61"
+        Me.Check_available_interiors_61.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_61.TabIndex = 300
+        Me.Check_available_interiors_61.UseVisualStyleBackColor = false
         '
         'PictureBox141
         '
@@ -8851,7 +8865,7 @@ Partial Class Items_edit
         Me.PictureBox141.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox141.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox141.TabIndex = 299
-        Me.PictureBox141.TabStop = False
+        Me.PictureBox141.TabStop = false
         '
         'Icon_interiors_left
         '
@@ -8863,7 +8877,7 @@ Partial Class Items_edit
         Me.Icon_interiors_left.Size = New System.Drawing.Size(17, 42)
         Me.Icon_interiors_left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Icon_interiors_left.TabIndex = 110
-        Me.Icon_interiors_left.TabStop = False
+        Me.Icon_interiors_left.TabStop = false
         '
         'Icon_closesave
         '
@@ -8874,14 +8888,14 @@ Partial Class Items_edit
         Me.Icon_closesave.Name = "Icon_closesave"
         Me.Icon_closesave.Size = New System.Drawing.Size(40, 30)
         Me.Icon_closesave.TabIndex = 106
-        Me.Icon_closesave.TabStop = False
+        Me.Icon_closesave.TabStop = false
         '
         'Info_itemsedit
         '
-        Me.Info_itemsedit.AutoSize = True
+        Me.Info_itemsedit.AutoSize = true
         Me.Info_itemsedit.BackColor = System.Drawing.Color.Transparent
         Me.Info_itemsedit.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_itemsedit.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_itemsedit.Font = New System.Drawing.Font("Harlow Solid Italic", 12!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic),System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Info_itemsedit.ForeColor = System.Drawing.Color.Blue
         Me.Info_itemsedit.Location = New System.Drawing.Point(338, 15)
         Me.Info_itemsedit.Name = "Info_itemsedit"
@@ -8899,7 +8913,7 @@ Partial Class Items_edit
         Me.Panel_info_itemsedit.Name = "Panel_info_itemsedit"
         Me.Panel_info_itemsedit.Size = New System.Drawing.Size(200, 200)
         Me.Panel_info_itemsedit.TabIndex = 109
-        Me.Panel_info_itemsedit.Visible = False
+        Me.Panel_info_itemsedit.Visible = false
         '
         'Info_text_notavailable
         '
@@ -8918,6 +8932,82 @@ Partial Class Items_edit
         Me.Info_text_available.TabIndex = 0
         Me.Info_text_available.Text = "Check to set as available"
         Me.Info_text_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'valu_interiors_104
+        '
+        Me.valu_interiors_104.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_104.Location = New System.Drawing.Point(553, 432)
+        Me.valu_interiors_104.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_104.Name = "valu_interiors_104"
+        Me.valu_interiors_104.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_104.TabIndex = 474
+        Me.valu_interiors_104.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Check_NA_interiors_104
+        '
+        Me.Check_NA_interiors_104.AutoSize = true
+        Me.Check_NA_interiors_104.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_104.Location = New System.Drawing.Point(598, 436)
+        Me.Check_NA_interiors_104.Name = "Check_NA_interiors_104"
+        Me.Check_NA_interiors_104.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_104.TabIndex = 473
+        Me.Check_NA_interiors_104.UseVisualStyleBackColor = false
+        '
+        'Check_available_interiors_104
+        '
+        Me.Check_available_interiors_104.AutoSize = true
+        Me.Check_available_interiors_104.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_104.Location = New System.Drawing.Point(537, 436)
+        Me.Check_available_interiors_104.Name = "Check_available_interiors_104"
+        Me.Check_available_interiors_104.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_104.TabIndex = 472
+        Me.Check_available_interiors_104.UseVisualStyleBackColor = false
+        '
+        'Icon_interiors_104
+        '
+        Me.Icon_interiors_104.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.Icon_interiors_104.Location = New System.Drawing.Point(537, 376)
+        Me.Icon_interiors_104.Name = "Icon_interiors_104"
+        Me.Icon_interiors_104.Size = New System.Drawing.Size(76, 74)
+        Me.Icon_interiors_104.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_interiors_104.TabIndex = 471
+        Me.Icon_interiors_104.TabStop = false
+        '
+        'Panel_foods
+        '
+        Me.Panel_foods.BackgroundImage = CType(resources.GetObject("Panel_foods.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_foods.Location = New System.Drawing.Point(1, 37)
+        Me.Panel_foods.Name = "Panel_foods"
+        Me.Panel_foods.Size = New System.Drawing.Size(905, 506)
+        Me.Panel_foods.TabIndex = 110
+        Me.Panel_foods.Visible = false
+        '
+        'Panel_clothing
+        '
+        Me.Panel_clothing.BackgroundImage = CType(resources.GetObject("Panel_clothing.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_clothing.Location = New System.Drawing.Point(1, 37)
+        Me.Panel_clothing.Name = "Panel_clothing"
+        Me.Panel_clothing.Size = New System.Drawing.Size(905, 506)
+        Me.Panel_clothing.TabIndex = 111
+        Me.Panel_clothing.Visible = false
+        '
+        'Panel_hats
+        '
+        Me.Panel_hats.BackgroundImage = CType(resources.GetObject("Panel_hats.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_hats.Location = New System.Drawing.Point(1, 37)
+        Me.Panel_hats.Name = "Panel_hats"
+        Me.Panel_hats.Size = New System.Drawing.Size(905, 506)
+        Me.Panel_hats.TabIndex = 112
+        Me.Panel_hats.Visible = false
+        '
+        'Panel_treasures
+        '
+        Me.Panel_treasures.BackgroundImage = CType(resources.GetObject("Panel_treasures.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_treasures.Location = New System.Drawing.Point(1, 37)
+        Me.Panel_treasures.Name = "Panel_treasures"
+        Me.Panel_treasures.Size = New System.Drawing.Size(905, 506)
+        Me.Panel_treasures.TabIndex = 113
+        Me.Panel_treasures.Visible = false
         '
         'Items_edit
         '
@@ -8951,10 +9041,14 @@ Partial Class Items_edit
         Me.Controls.Add(Me.Icon_hats)
         Me.Controls.Add(Me.Icon_clothes)
         Me.Controls.Add(Me.Icon_normalfoods)
+        Me.Controls.Add(Me.Panel_gooditems)
         Me.Controls.Add(Me.Panel_specialfoods)
         Me.Controls.Add(Me.Panel_interiors_1)
         Me.Controls.Add(Me.Panel_interiors)
-        Me.Controls.Add(Me.Panel_gooditems)
+        Me.Controls.Add(Me.Panel_treasures)
+        Me.Controls.Add(Me.Panel_hats)
+        Me.Controls.Add(Me.Panel_clothing)
+        Me.Controls.Add(Me.Panel_foods)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Items_edit"
@@ -9082,7 +9176,7 @@ Partial Class Items_edit
         Me.Panel_gooditems.ResumeLayout(false)
         Me.Panel_gooditems.PerformLayout
         CType(Me.valu_goodi_18,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox61,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_goodi_18,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_goodi_17,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox62,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_goodi_16,System.ComponentModel.ISupportInitialize).EndInit
@@ -9119,218 +9213,220 @@ Partial Class Items_edit
         CType(Me.PictureBox171,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_interiors.ResumeLayout(false)
         Me.Panel_interiors.PerformLayout
-        CType(Me.NumericUpDown107,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_60,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox97,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown108,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_59,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox98,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown109,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_58,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox102,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown110,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_57,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox103,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown111,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_56,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox104,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown112,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_55,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox105,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown113,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_54,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox106,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown114,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_53,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox107,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown115,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_52,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox108,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown116,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_51,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox109,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown117,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_50,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox110,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown118,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_49,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox111,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown119,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_48,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox115,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown120,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_47,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox116,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown121,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_46,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox117,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown122,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_45,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox118,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown123,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_44,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox119,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown124,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_43,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox120,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown125,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_42,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox121,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown126,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_41,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox122,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown87,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_40,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox58,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown88,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_39,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox59,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown89,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_38,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox60,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown90,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_37,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox77,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown91,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_36,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox78,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown92,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_35,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox79,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown93,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_34,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox80,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown94,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_33,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox81,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown95,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_32,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox82,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown96,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_31,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox83,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown97,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_30,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox84,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown98,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_29,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox85,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown99,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_28,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox89,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown100,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_27,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox90,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown101,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_26,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox91,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown102,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_25,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox92,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown103,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_24,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox93,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown104,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_23,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox94,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown105,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_22,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox95,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown106,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_21,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox96,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown77,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_20,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox14,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown78,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_19,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox15,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown79,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_18,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox16,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown80,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_17,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox17,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown81,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_16,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox18,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown82,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_15,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox50,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown83,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_14,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox51,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown84,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_13,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox52,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown85,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_12,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox53,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown86,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_11,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox54,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown49,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_10,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown50,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_9,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox2,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown69,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_8,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown70,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_7,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown71,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_6,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown72,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_5,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown73,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_4,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown74,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_3,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown75,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_2,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox12,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown76,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_1,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_interiors_right,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_interiors_1.ResumeLayout(false)
         Me.Panel_interiors_1.PerformLayout
-        CType(Me.NumericUpDown167,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox162,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown168,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox163,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown169,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox164,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown147,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_103,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_interiors_103,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_102,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_interiors_102,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_101,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_interiors_101,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_100,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox142,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown148,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_99,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox143,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown149,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_98,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox144,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown150,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_97,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox145,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown151,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_96,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox146,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown152,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_95,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox147,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown153,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_94,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox148,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown154,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_93,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox149,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown155,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_92,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox150,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown156,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_91,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox151,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown157,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_90,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox152,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown158,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_89,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox153,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown159,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_88,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox154,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown160,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_87,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox155,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown161,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_86,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox156,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown162,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_85,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox157,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown163,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_84,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox158,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown164,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_83,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox159,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown165,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_82,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox160,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown166,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_81,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox161,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown127,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_80,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox114,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown128,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_79,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox123,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown129,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_78,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox124,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown130,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_77,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox125,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown131,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_76,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox126,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown132,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_75,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox127,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown133,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_74,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox128,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown134,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_73,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox129,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown135,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_72,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox130,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown136,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_71,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox131,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown137,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_70,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox132,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown138,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_69,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox133,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown139,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_68,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox134,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown140,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_67,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox135,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown141,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_66,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox136,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown142,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_65,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox137,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown143,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_64,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox138,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown144,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_63,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox139,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown145,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_62,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox140,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.NumericUpDown146,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interiors_61,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox141,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_interiors_left,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_closesave,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_info_itemsedit.ResumeLayout(false)
+        CType(Me.valu_interiors_104,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_interiors_104,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
         Me.PerformLayout
 
@@ -9559,7 +9655,7 @@ End Sub
     Friend WithEvents valu_goodi_18 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Check_NA_goodi_18 As System.Windows.Forms.CheckBox
     Friend WithEvents Check_available_goodi_18 As System.Windows.Forms.CheckBox
-    Friend WithEvents PictureBox61 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_goodi_18 As System.Windows.Forms.PictureBox
     Friend WithEvents valu_goodi_17 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Check_NA_goodi_17 As System.Windows.Forms.CheckBox
     Friend WithEvents Check_available_goodi_17 As System.Windows.Forms.CheckBox
@@ -9628,421 +9724,429 @@ End Sub
     Friend WithEvents Check_NA_goodi_1 As System.Windows.Forms.CheckBox
     Friend WithEvents Check_available_goodi_1 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox171 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown107 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox213 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox214 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_60 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_60 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_60 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox97 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown108 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox215 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox216 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_59 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_59 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_59 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox98 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown109 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox217 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox218 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_58 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_58 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_58 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox102 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown110 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox219 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox220 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_57 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_57 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_57 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox103 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown111 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox221 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox222 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_56 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_56 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_56 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox104 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown112 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox223 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox224 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_55 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_55 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_55 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox105 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown113 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox225 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox226 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_54 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_54 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_54 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox106 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown114 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox227 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox228 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_53 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_53 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_53 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox107 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown115 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox229 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox230 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_52 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_52 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_52 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox108 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown116 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox231 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox232 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_51 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_51 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_51 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox109 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown117 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox233 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox234 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_50 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_50 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_50 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox110 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown118 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox235 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox236 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_49 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_49 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_49 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox111 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown119 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox237 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox238 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_48 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_48 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_48 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox115 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown120 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox239 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox240 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_47 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_47 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_47 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox116 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown121 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox241 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox242 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_46 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_46 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_46 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox117 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown122 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox243 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox244 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_45 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_45 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_45 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox118 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown123 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox245 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox246 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_44 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_44 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_44 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox119 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown124 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox247 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox248 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_43 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_43 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_43 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox120 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown125 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox249 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox250 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_42 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_42 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_42 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox121 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown126 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox251 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox252 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_41 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_41 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_41 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox122 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown87 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox173 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox174 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_40 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_40 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_40 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox58 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown88 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox175 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox176 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_39 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_39 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_39 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox59 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown89 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox177 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox178 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_38 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_38 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_38 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox60 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown90 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox179 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox180 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_37 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_37 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_37 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox77 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown91 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox181 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox182 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_36 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_36 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_36 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox78 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown92 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox183 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox184 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_35 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_35 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_35 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox79 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown93 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox185 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox186 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_34 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_34 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_34 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox80 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown94 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox187 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox188 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_33 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_33 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_33 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox81 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown95 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox189 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox190 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_32 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_32 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_32 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox82 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown96 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox191 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox192 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_31 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_31 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_31 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox83 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown97 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox193 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox194 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_30 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_30 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_30 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox84 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown98 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox195 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox196 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_29 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_29 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_29 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox85 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown99 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox197 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox198 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_28 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_28 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_28 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox89 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown100 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox199 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox200 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_27 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_27 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_27 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox90 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown101 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox201 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox202 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_26 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_26 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_26 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox91 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown102 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox203 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox204 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_25 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_25 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_25 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox92 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown103 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox205 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox206 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_24 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_24 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_24 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox93 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown104 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox207 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox208 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_23 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_23 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_23 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox94 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown105 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox209 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox210 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_22 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_22 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_22 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox95 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown106 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox211 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox212 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_21 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_21 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_21 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox96 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown77 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox153 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox154 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_20 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_20 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_20 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox14 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown78 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox155 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox156 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_19 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_19 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_19 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown79 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox157 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox158 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_18 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_18 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_18 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox16 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown80 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox159 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox160 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_17 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_17 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_17 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown81 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox161 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox162 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_16 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_16 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_16 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox18 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown82 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox163 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox164 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_15 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_15 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_15 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox50 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown83 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox165 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox166 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_14 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_14 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_14 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox51 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown84 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox167 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox168 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_13 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_13 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_13 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox52 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown85 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox169 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox170 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_12 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_12 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_12 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox53 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown86 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox171 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox172 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_11 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_11 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_11 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox54 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown49 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox97 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox98 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_10 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_10 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_10 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown50 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox99 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox100 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_9 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_9 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_9 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown69 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox137 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox138 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_8 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_8 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_8 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown70 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox139 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox140 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_7 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_7 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_7 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown71 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox141 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox142 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_6 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_6 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_6 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown72 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox143 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox144 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_5 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_5 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_5 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown73 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox145 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox146 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_4 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_4 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_4 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown74 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox147 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox148 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_3 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_3 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_3 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown75 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox149 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox150 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_2 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_2 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox12 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown76 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox151 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox152 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_1 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_1 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox13 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown167 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox333 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox334 As System.Windows.Forms.CheckBox
-    Friend WithEvents PictureBox162 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown168 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox335 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox336 As System.Windows.Forms.CheckBox
-    Friend WithEvents PictureBox163 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown169 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox337 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox338 As System.Windows.Forms.CheckBox
-    Friend WithEvents PictureBox164 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown147 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox293 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox294 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_103 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_103 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_103 As System.Windows.Forms.CheckBox
+    Friend WithEvents Icon_interiors_103 As System.Windows.Forms.PictureBox
+    Friend WithEvents valu_interiors_102 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_102 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_102 As System.Windows.Forms.CheckBox
+    Friend WithEvents Icon_interiors_102 As System.Windows.Forms.PictureBox
+    Friend WithEvents valu_interiors_101 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_101 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_101 As System.Windows.Forms.CheckBox
+    Friend WithEvents Icon_interiors_101 As System.Windows.Forms.PictureBox
+    Friend WithEvents valu_interiors_100 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_100 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_100 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox142 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown148 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox295 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox296 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_99 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_99 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_99 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox143 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown149 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox297 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox298 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_98 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_98 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_98 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox144 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown150 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox299 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox300 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_97 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_97 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_97 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox145 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown151 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox301 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox302 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_96 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_96 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_96 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox146 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown152 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox303 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox304 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_95 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_95 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_95 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox147 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown153 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox305 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox306 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_94 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_94 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_94 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox148 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown154 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox307 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox308 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_93 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_93 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_93 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox149 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown155 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox309 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox310 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_92 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_92 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_92 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox150 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown156 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox311 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox312 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_91 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_91 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_91 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox151 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown157 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox313 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox314 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_90 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_90 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_90 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox152 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown158 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox315 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox316 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_89 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_89 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_89 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox153 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown159 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox317 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox318 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_88 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_88 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_88 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox154 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown160 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox319 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox320 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_87 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_87 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_87 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox155 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown161 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox321 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox322 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_86 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_86 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_86 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox156 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown162 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox323 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox324 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_85 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_85 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_85 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox157 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown163 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox325 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox326 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_84 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_84 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_84 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox158 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown164 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox327 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox328 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_83 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_83 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_83 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox159 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown165 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox329 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox330 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_82 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_82 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_82 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox160 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown166 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox331 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox332 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_81 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_81 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_81 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox161 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown127 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox253 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox254 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_80 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_80 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_80 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox114 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown128 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox255 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox256 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_79 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_79 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_79 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox123 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown129 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox257 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox258 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_78 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_78 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_78 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox124 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown130 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox259 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox260 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_77 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_77 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_77 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox125 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown131 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox261 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox262 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_76 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_76 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_76 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox126 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown132 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox263 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox264 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_75 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_75 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_75 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox127 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown133 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox265 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox266 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_74 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_74 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_74 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox128 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown134 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox267 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox268 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_73 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_73 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_73 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox129 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown135 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox269 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox270 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_72 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_72 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_72 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox130 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown136 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox271 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox272 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_71 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_71 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_71 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox131 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown137 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox273 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox274 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_70 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_70 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_70 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox132 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown138 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox275 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox276 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_69 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_69 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_69 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox133 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown139 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox277 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox278 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_68 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_68 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_68 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox134 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown140 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox279 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox280 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_67 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_67 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_67 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox135 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown141 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox281 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox282 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_66 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_66 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_66 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox136 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown142 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox283 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox284 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_65 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_65 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_65 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox137 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown143 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox285 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox286 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_64 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_64 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_64 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox138 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown144 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox287 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox288 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_63 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_63 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_63 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox139 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown145 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox289 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox290 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_62 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_62 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_62 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox140 As System.Windows.Forms.PictureBox
-    Friend WithEvents NumericUpDown146 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents CheckBox291 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox292 As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_interiors_61 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_61 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_61 As System.Windows.Forms.CheckBox
     Friend WithEvents PictureBox141 As System.Windows.Forms.PictureBox
     Friend WithEvents Icon_closesave As System.Windows.Forms.PictureBox
     Friend WithEvents Info_itemsedit As System.Windows.Forms.Label
     Friend WithEvents Panel_info_itemsedit As System.Windows.Forms.Panel
     Friend WithEvents Info_text_notavailable As System.Windows.Forms.Label
     Friend WithEvents Info_text_available As System.Windows.Forms.Label
+    Friend WithEvents valu_interiors_104 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_NA_interiors_104 As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_available_interiors_104 As System.Windows.Forms.CheckBox
+    Friend WithEvents Icon_interiors_104 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel_foods As System.Windows.Forms.Panel
+    Friend WithEvents Panel_clothing As System.Windows.Forms.Panel
+    Friend WithEvents Panel_hats As System.Windows.Forms.Panel
+    Friend WithEvents Panel_treasures As System.Windows.Forms.Panel
 End Class
