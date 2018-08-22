@@ -54,7 +54,6 @@ Partial Class TL_SaveEditor
         Me.Menu_button = New System.Windows.Forms.Panel()
         Me.Text_menu_button = New System.Windows.Forms.Label()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.value_eventfountain = New System.Windows.Forms.NumericUpDown()
         Me.Icon_eventfountain = New System.Windows.Forms.PictureBox()
         Me.Title_eventfountain = New System.Windows.Forms.Label()
@@ -146,6 +145,7 @@ Partial Class TL_SaveEditor
         Me.Icon_cafe = New System.Windows.Forms.PictureBox()
         Me.Icon_broc = New System.Windows.Forms.PictureBox()
         Me.Icon_appart = New System.Windows.Forms.PictureBox()
+        Me.Icon_resetmiiapart = New System.Windows.Forms.PictureBox()
         Me.File_path = New System.Windows.Forms.Panel()
         Me.TextBox_fpath = New System.Windows.Forms.TextBox()
         Me.Panel_filever = New System.Windows.Forms.Panel()
@@ -159,6 +159,7 @@ Partial Class TL_SaveEditor
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Text_menu_open = New System.Windows.Forms.Label()
         Me.Panel_extras = New System.Windows.Forms.Panel()
+        Me.Check_resetmiiapart = New System.Windows.Forms.CheckBox()
         Me.Fea_edit_concert = New System.Windows.Forms.Panel()
         Me.Icon_edit_concert = New System.Windows.Forms.PictureBox()
         Me.Fea_edit_travelers = New System.Windows.Forms.Panel()
@@ -170,7 +171,7 @@ Partial Class TL_SaveEditor
         Me.TLSE_logo_update = New System.Windows.Forms.PictureBox()
         Me.Panel_settings = New System.Windows.Forms.Panel()
         Me.TabControl_settings = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Settings_settings = New System.Windows.Forms.TabPage()
         Me.Panel30 = New System.Windows.Forms.Panel()
         Me.Setting_ckupdate = New System.Windows.Forms.CheckBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
@@ -183,13 +184,15 @@ Partial Class TL_SaveEditor
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Select_music = New System.Windows.Forms.ComboBox()
         Me.Setting_music = New System.Windows.Forms.CheckBox()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.Settings_changelog = New System.Windows.Forms.TabPage()
         Me.Group_changelog = New System.Windows.Forms.GroupBox()
         Me.Icon_changelog = New System.Windows.Forms.PictureBox()
         Me.Changelog = New System.Windows.Forms.Label()
         Me.Text_TLSE_version = New System.Windows.Forms.Label()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Settings_credits = New System.Windows.Forms.TabPage()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Icon_TLSE = New System.Windows.Forms.PictureBox()
         Me.Icon_ChibiRoboZLSE = New System.Windows.Forms.PictureBox()
         Me.Icon_3dsSEL = New System.Windows.Forms.PictureBox()
         Me.Icon_MiitopiaSE = New System.Windows.Forms.PictureBox()
@@ -599,7 +602,6 @@ Partial Class TL_SaveEditor
         CType(Me.Menu_width, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_button.SuspendLayout()
         Me.Panel_islandedit.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.value_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_info_building, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -678,6 +680,7 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_cafe, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_broc, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_appart, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_resetmiiapart, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.File_path.SuspendLayout()
         Me.Panel_filever.SuspendLayout()
         Me.Hidden_things.SuspendLayout()
@@ -694,17 +697,18 @@ Partial Class TL_SaveEditor
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_settings.SuspendLayout()
         Me.TabControl_settings.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
+        Me.Settings_settings.SuspendLayout()
         Me.Panel30.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel10.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
+        Me.Settings_changelog.SuspendLayout()
         Me.Group_changelog.SuspendLayout()
         CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TabPage3.SuspendLayout()
+        Me.Settings_credits.SuspendLayout()
         Me.Panel11.SuspendLayout()
+        CType(Me.Icon_TLSE, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_ChibiRoboZLSE, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_3dsSEL, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_MiitopiaSE, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1286,7 +1290,6 @@ Partial Class TL_SaveEditor
         'Panel_islandedit
         '
         Me.Panel_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
-        Me.Panel_islandedit.Controls.Add(Me.PictureBox3)
         Me.Panel_islandedit.Controls.Add(Me.value_eventfountain)
         Me.Panel_islandedit.Controls.Add(Me.Icon_eventfountain)
         Me.Panel_islandedit.Controls.Add(Me.Title_eventfountain)
@@ -1325,15 +1328,6 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Name = "Panel_islandedit"
         Me.Panel_islandedit.Size = New System.Drawing.Size(600, 490)
         Me.Panel_islandedit.TabIndex = 11
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Location = New System.Drawing.Point(210, 281)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(32, 33)
-        Me.PictureBox3.TabIndex = 65
-        Me.PictureBox3.TabStop = False
-        Me.PictureBox3.Visible = False
         '
         'value_eventfountain
         '
@@ -2327,6 +2321,16 @@ Partial Class TL_SaveEditor
         Me.Icon_appart.TabIndex = 1
         Me.Icon_appart.TabStop = False
         '
+        'Icon_resetmiiapart
+        '
+        Me.Icon_resetmiiapart.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_resetmiiapart.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_resetapartmii
+        Me.Icon_resetmiiapart.Location = New System.Drawing.Point(15, 170)
+        Me.Icon_resetmiiapart.Name = "Icon_resetmiiapart"
+        Me.Icon_resetmiiapart.Size = New System.Drawing.Size(75, 25)
+        Me.Icon_resetmiiapart.TabIndex = 65
+        Me.Icon_resetmiiapart.TabStop = False
+        '
         'File_path
         '
         Me.File_path.BackColor = System.Drawing.Color.Transparent
@@ -2478,7 +2482,9 @@ Partial Class TL_SaveEditor
         'Panel_extras
         '
         Me.Panel_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_extras.Controls.Add(Me.Check_resetmiiapart)
         Me.Panel_extras.Controls.Add(Me.Fea_edit_concert)
+        Me.Panel_extras.Controls.Add(Me.Icon_resetmiiapart)
         Me.Panel_extras.Controls.Add(Me.Fea_edit_travelers)
         Me.Panel_extras.Controls.Add(Me.Check_resetstpspp)
         Me.Panel_extras.Controls.Add(Me.Icon_resetstpspp)
@@ -2490,13 +2496,30 @@ Partial Class TL_SaveEditor
         Me.Panel_extras.TabIndex = 24
         Me.Panel_extras.Visible = False
         '
+        'Check_resetmiiapart
+        '
+        Me.Check_resetmiiapart.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_resetmiiapart.AutoSize = True
+        Me.Check_resetmiiapart.BackColor = System.Drawing.Color.White
+        Me.Check_resetmiiapart.FlatAppearance.BorderSize = 0
+        Me.Check_resetmiiapart.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_resetmiiapart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_resetmiiapart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_resetmiiapart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_resetmiiapart.Location = New System.Drawing.Point(95, 171)
+        Me.Check_resetmiiapart.Name = "Check_resetmiiapart"
+        Me.Check_resetmiiapart.Size = New System.Drawing.Size(116, 23)
+        Me.Check_resetmiiapart.TabIndex = 66
+        Me.Check_resetmiiapart.Text = "Reset Miis apartment"
+        Me.Check_resetmiiapart.UseVisualStyleBackColor = False
+        '
         'Fea_edit_concert
         '
         Me.Fea_edit_concert.BackColor = System.Drawing.Color.White
         Me.Fea_edit_concert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Fea_edit_concert.Controls.Add(Me.Icon_edit_concert)
         Me.Fea_edit_concert.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Fea_edit_concert.Location = New System.Drawing.Point(290, 215)
+        Me.Fea_edit_concert.Location = New System.Drawing.Point(290, 238)
         Me.Fea_edit_concert.Name = "Fea_edit_concert"
         Me.Fea_edit_concert.Size = New System.Drawing.Size(137, 60)
         Me.Fea_edit_concert.TabIndex = 9
@@ -2519,7 +2542,7 @@ Partial Class TL_SaveEditor
         Me.Fea_edit_travelers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Fea_edit_travelers.Controls.Add(Me.Icon_edit_travelers)
         Me.Fea_edit_travelers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Fea_edit_travelers.Location = New System.Drawing.Point(174, 215)
+        Me.Fea_edit_travelers.Location = New System.Drawing.Point(174, 238)
         Me.Fea_edit_travelers.Name = "Fea_edit_travelers"
         Me.Fea_edit_travelers.Size = New System.Drawing.Size(60, 60)
         Me.Fea_edit_travelers.TabIndex = 8
@@ -2619,9 +2642,9 @@ Partial Class TL_SaveEditor
         'TabControl_settings
         '
         Me.TabControl_settings.Alignment = System.Windows.Forms.TabAlignment.Bottom
-        Me.TabControl_settings.Controls.Add(Me.TabPage1)
-        Me.TabControl_settings.Controls.Add(Me.TabPage2)
-        Me.TabControl_settings.Controls.Add(Me.TabPage3)
+        Me.TabControl_settings.Controls.Add(Me.Settings_settings)
+        Me.TabControl_settings.Controls.Add(Me.Settings_changelog)
+        Me.TabControl_settings.Controls.Add(Me.Settings_credits)
         Me.TabControl_settings.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl_settings.Location = New System.Drawing.Point(0, 0)
         Me.TabControl_settings.Multiline = True
@@ -2630,21 +2653,21 @@ Partial Class TL_SaveEditor
         Me.TabControl_settings.Size = New System.Drawing.Size(600, 490)
         Me.TabControl_settings.TabIndex = 0
         '
-        'TabPage1
+        'Settings_settings
         '
-        Me.TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), System.Drawing.Image)
-        Me.TabPage1.Controls.Add(Me.Panel30)
-        Me.TabPage1.Controls.Add(Me.Panel9)
-        Me.TabPage1.Controls.Add(Me.Panel1)
-        Me.TabPage1.Controls.Add(Me.Panel4)
-        Me.TabPage1.Controls.Add(Me.Panel10)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 4)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(592, 464)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Settings"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        Me.Settings_settings.BackgroundImage = CType(resources.GetObject("Settings_settings.BackgroundImage"), System.Drawing.Image)
+        Me.Settings_settings.Controls.Add(Me.Panel30)
+        Me.Settings_settings.Controls.Add(Me.Panel9)
+        Me.Settings_settings.Controls.Add(Me.Panel1)
+        Me.Settings_settings.Controls.Add(Me.Panel4)
+        Me.Settings_settings.Controls.Add(Me.Panel10)
+        Me.Settings_settings.Location = New System.Drawing.Point(4, 4)
+        Me.Settings_settings.Name = "Settings_settings"
+        Me.Settings_settings.Padding = New System.Windows.Forms.Padding(3)
+        Me.Settings_settings.Size = New System.Drawing.Size(592, 464)
+        Me.Settings_settings.TabIndex = 0
+        Me.Settings_settings.Text = "Settings"
+        Me.Settings_settings.UseVisualStyleBackColor = True
         '
         'Panel30
         '
@@ -2776,17 +2799,17 @@ Partial Class TL_SaveEditor
         Me.Setting_music.Text = "Active background music"
         Me.Setting_music.UseVisualStyleBackColor = False
         '
-        'TabPage2
+        'Settings_changelog
         '
-        Me.TabPage2.BackgroundImage = CType(resources.GetObject("TabPage2.BackgroundImage"), System.Drawing.Image)
-        Me.TabPage2.Controls.Add(Me.Group_changelog)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 4)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(592, 464)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Changelog"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.Settings_changelog.BackgroundImage = CType(resources.GetObject("Settings_changelog.BackgroundImage"), System.Drawing.Image)
+        Me.Settings_changelog.Controls.Add(Me.Group_changelog)
+        Me.Settings_changelog.Location = New System.Drawing.Point(4, 4)
+        Me.Settings_changelog.Name = "Settings_changelog"
+        Me.Settings_changelog.Padding = New System.Windows.Forms.Padding(3)
+        Me.Settings_changelog.Size = New System.Drawing.Size(592, 464)
+        Me.Settings_changelog.TabIndex = 1
+        Me.Settings_changelog.Text = "Changelog"
+        Me.Settings_changelog.UseVisualStyleBackColor = True
         '
         'Group_changelog
         '
@@ -2831,23 +2854,34 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(471, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 3.0.0"
+        Me.Text_TLSE_version.Text = "Version 3.0.0 Beta 001"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TabPage3
+        'Settings_credits
         '
-        Me.TabPage3.BackgroundImage = CType(resources.GetObject("TabPage3.BackgroundImage"), System.Drawing.Image)
-        Me.TabPage3.Controls.Add(Me.Panel11)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 4)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(592, 464)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Credits"
-        Me.TabPage3.UseVisualStyleBackColor = True
+        Me.Settings_credits.BackgroundImage = CType(resources.GetObject("Settings_credits.BackgroundImage"), System.Drawing.Image)
+        Me.Settings_credits.Controls.Add(Me.Label1)
+        Me.Settings_credits.Controls.Add(Me.Panel11)
+        Me.Settings_credits.Location = New System.Drawing.Point(4, 4)
+        Me.Settings_credits.Name = "Settings_credits"
+        Me.Settings_credits.Size = New System.Drawing.Size(592, 464)
+        Me.Settings_credits.TabIndex = 2
+        Me.Settings_credits.Text = "Credits"
+        Me.Settings_credits.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(4, 5)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(524, 456)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = resources.GetString("Label1.Text")
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel11
         '
         Me.Panel11.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel11.Controls.Add(Me.Icon_TLSE)
         Me.Panel11.Controls.Add(Me.Icon_ChibiRoboZLSE)
         Me.Panel11.Controls.Add(Me.Icon_3dsSEL)
         Me.Panel11.Controls.Add(Me.Icon_MiitopiaSE)
@@ -2856,11 +2890,22 @@ Partial Class TL_SaveEditor
         Me.Panel11.Size = New System.Drawing.Size(60, 462)
         Me.Panel11.TabIndex = 0
         '
+        'Icon_TLSE
+        '
+        Me.Icon_TLSE.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_TLSE.Image = CType(resources.GetObject("Icon_TLSE.Image"), System.Drawing.Image)
+        Me.Icon_TLSE.Location = New System.Drawing.Point(6, 6)
+        Me.Icon_TLSE.Name = "Icon_TLSE"
+        Me.Icon_TLSE.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_TLSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Icon_TLSE.TabIndex = 3
+        Me.Icon_TLSE.TabStop = False
+        '
         'Icon_ChibiRoboZLSE
         '
         Me.Icon_ChibiRoboZLSE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_ChibiRoboZLSE.Image = CType(resources.GetObject("Icon_ChibiRoboZLSE.Image"), System.Drawing.Image)
-        Me.Icon_ChibiRoboZLSE.Location = New System.Drawing.Point(6, 58)
+        Me.Icon_ChibiRoboZLSE.Location = New System.Drawing.Point(6, 115)
         Me.Icon_ChibiRoboZLSE.Name = "Icon_ChibiRoboZLSE"
         Me.Icon_ChibiRoboZLSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_ChibiRoboZLSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2870,7 +2915,7 @@ Partial Class TL_SaveEditor
         'Icon_3dsSEL
         '
         Me.Icon_3dsSEL.Image = CType(resources.GetObject("Icon_3dsSEL.Image"), System.Drawing.Image)
-        Me.Icon_3dsSEL.Location = New System.Drawing.Point(6, 112)
+        Me.Icon_3dsSEL.Location = New System.Drawing.Point(6, 169)
         Me.Icon_3dsSEL.Name = "Icon_3dsSEL"
         Me.Icon_3dsSEL.Size = New System.Drawing.Size(48, 48)
         Me.Icon_3dsSEL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2881,7 +2926,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_MiitopiaSE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_MiitopiaSE.Image = CType(resources.GetObject("Icon_MiitopiaSE.Image"), System.Drawing.Image)
-        Me.Icon_MiitopiaSE.Location = New System.Drawing.Point(6, 3)
+        Me.Icon_MiitopiaSE.Location = New System.Drawing.Point(6, 60)
         Me.Icon_MiitopiaSE.Name = "Icon_MiitopiaSE"
         Me.Icon_MiitopiaSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_MiitopiaSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -7171,9 +7216,9 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Menu_button)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.Panel_islandedit)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_settings)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -7202,7 +7247,6 @@ Partial Class TL_SaveEditor
         Me.Menu_button.ResumeLayout(False)
         Me.Panel_islandedit.ResumeLayout(False)
         Me.Panel_islandedit.PerformLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.value_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_info_building, System.ComponentModel.ISupportInitialize).EndInit()
@@ -7283,6 +7327,7 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_cafe, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_broc, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_appart, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_resetmiiapart, System.ComponentModel.ISupportInitialize).EndInit()
         Me.File_path.ResumeLayout(False)
         Me.File_path.PerformLayout()
         Me.Panel_filever.ResumeLayout(False)
@@ -7301,7 +7346,7 @@ Partial Class TL_SaveEditor
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_settings.ResumeLayout(False)
         Me.TabControl_settings.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
+        Me.Settings_settings.ResumeLayout(False)
         Me.Panel30.ResumeLayout(False)
         Me.Panel30.PerformLayout()
         Me.Panel9.ResumeLayout(False)
@@ -7312,11 +7357,12 @@ Partial Class TL_SaveEditor
         Me.Panel4.PerformLayout()
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
-        Me.TabPage2.ResumeLayout(False)
+        Me.Settings_changelog.ResumeLayout(False)
         Me.Group_changelog.ResumeLayout(False)
         CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TabPage3.ResumeLayout(False)
+        Me.Settings_credits.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
+        CType(Me.Icon_TLSE, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_ChibiRoboZLSE, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_3dsSEL, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_MiitopiaSE, System.ComponentModel.ISupportInitialize).EndInit()
@@ -7712,8 +7758,8 @@ Partial Class TL_SaveEditor
     Friend WithEvents TLSE_logo_update As System.Windows.Forms.PictureBox
     Friend WithEvents Panel_settings As System.Windows.Forms.Panel
     Friend WithEvents TabControl_settings As System.Windows.Forms.TabControl
-    Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
-    Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
+    Friend WithEvents Settings_settings As System.Windows.Forms.TabPage
+    Friend WithEvents Settings_changelog As System.Windows.Forms.TabPage
     Friend WithEvents Panel30 As System.Windows.Forms.Panel
     Friend WithEvents Setting_ckupdate As System.Windows.Forms.CheckBox
     Friend WithEvents Panel9 As System.Windows.Forms.Panel
@@ -7730,7 +7776,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents Icon_changelog As System.Windows.Forms.PictureBox
     Friend WithEvents Changelog As System.Windows.Forms.Label
     Friend WithEvents Text_TLSE_version As System.Windows.Forms.Label
-    Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
+    Friend WithEvents Settings_credits As System.Windows.Forms.TabPage
     Friend WithEvents Panel_miiedit As System.Windows.Forms.Panel
     Friend WithEvents Panel_save_mii As System.Windows.Forms.Panel
     Friend WithEvents Text_save_mii As System.Windows.Forms.Label
@@ -8128,6 +8174,9 @@ Partial Class TL_SaveEditor
     Friend WithEvents Panel_done As System.Windows.Forms.Panel
     Friend WithEvents Text_done As System.Windows.Forms.Label
     Friend WithEvents Timer_done As System.Windows.Forms.Timer
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_resetmiiapart As System.Windows.Forms.PictureBox
+    Friend WithEvents Check_resetmiiapart As System.Windows.Forms.CheckBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Icon_TLSE As System.Windows.Forms.PictureBox
 
 End Class

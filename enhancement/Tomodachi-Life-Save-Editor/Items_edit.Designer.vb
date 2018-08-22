@@ -555,6 +555,10 @@ Partial Class Items_edit
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Icon_interiors_right = New System.Windows.Forms.PictureBox()
         Me.Panel_interiors_1 = New System.Windows.Forms.Panel()
+        Me.valu_interiors_104 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_NA_interiors_104 = New System.Windows.Forms.CheckBox()
+        Me.Check_available_interiors_104 = New System.Windows.Forms.CheckBox()
+        Me.Icon_interiors_104 = New System.Windows.Forms.PictureBox()
         Me.valu_interiors_103 = New System.Windows.Forms.NumericUpDown()
         Me.Check_NA_interiors_103 = New System.Windows.Forms.CheckBox()
         Me.Check_available_interiors_103 = New System.Windows.Forms.CheckBox()
@@ -733,14 +737,32 @@ Partial Class Items_edit
         Me.Panel_info_itemsedit = New System.Windows.Forms.Panel()
         Me.Info_text_notavailable = New System.Windows.Forms.Label()
         Me.Info_text_available = New System.Windows.Forms.Label()
-        Me.valu_interiors_104 = New System.Windows.Forms.NumericUpDown()
-        Me.Check_NA_interiors_104 = New System.Windows.Forms.CheckBox()
-        Me.Check_available_interiors_104 = New System.Windows.Forms.CheckBox()
-        Me.Icon_interiors_104 = New System.Windows.Forms.PictureBox()
         Me.Panel_foods = New System.Windows.Forms.Panel()
+        Me.valu_foods_bynumbers = New System.Windows.Forms.NumericUpDown()
+        Me.Check_foods_notavailable = New System.Windows.Forms.CheckBox()
+        Me.Check_foods_available = New System.Windows.Forms.CheckBox()
+        Me.Check_foods_bynumbers = New System.Windows.Forms.CheckBox()
         Me.Panel_clothing = New System.Windows.Forms.Panel()
+        Me.Check_clothingstp_notavailable = New System.Windows.Forms.CheckBox()
+        Me.Check_clothingstp_available = New System.Windows.Forms.CheckBox()
+        Me.Check_clothingstp_bynumbers = New System.Windows.Forms.CheckBox()
+        Me.valu_clothing_bynumbers = New System.Windows.Forms.NumericUpDown()
+        Me.Check_clothing_notavailable = New System.Windows.Forms.CheckBox()
+        Me.Check_clothing_available = New System.Windows.Forms.CheckBox()
+        Me.Check_clothing_bynumbers = New System.Windows.Forms.CheckBox()
         Me.Panel_hats = New System.Windows.Forms.Panel()
+        Me.valu_hatsstp_bynumbers = New System.Windows.Forms.NumericUpDown()
+        Me.Check_hatsstp_notavailable = New System.Windows.Forms.CheckBox()
+        Me.Check_hatsstp_available = New System.Windows.Forms.CheckBox()
+        Me.Check_hatsstp_bynumbers = New System.Windows.Forms.CheckBox()
+        Me.valu_hats_bynumbers = New System.Windows.Forms.NumericUpDown()
+        Me.Check_hats_notavailable = New System.Windows.Forms.CheckBox()
+        Me.Check_hats_available = New System.Windows.Forms.CheckBox()
+        Me.Check_hats_bynumbers = New System.Windows.Forms.CheckBox()
         Me.Panel_treasures = New System.Windows.Forms.Panel()
+        Me.valu_treasures_bynumbers = New System.Windows.Forms.NumericUpDown()
+        Me.Check_treasures_notavailable = New System.Windows.Forms.CheckBox()
+        Me.Check_treasures_bynumbers = New System.Windows.Forms.CheckBox()
         Me.Panel_specialfoods.SuspendLayout
         CType(Me.valu_sfoods_48,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox41,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1019,6 +1041,8 @@ Partial Class Items_edit
         CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_interiors_right,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_interiors_1.SuspendLayout
+        CType(Me.valu_interiors_104,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_interiors_104,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_interiors_103,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_interiors_103,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_interiors_102,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1108,8 +1132,15 @@ Partial Class Items_edit
         CType(Me.Icon_interiors_left,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_closesave,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_info_itemsedit.SuspendLayout
-        CType(Me.valu_interiors_104,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_interiors_104,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_foods.SuspendLayout
+        CType(Me.valu_foods_bynumbers,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_clothing.SuspendLayout
+        CType(Me.valu_clothing_bynumbers,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_hats.SuspendLayout
+        CType(Me.valu_hatsstp_bynumbers,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_hats_bynumbers,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_treasures.SuspendLayout
+        CType(Me.valu_treasures_bynumbers,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'Panel_specialfoods
@@ -7147,6 +7178,46 @@ Partial Class Items_edit
         Me.Panel_interiors_1.TabIndex = 105
         Me.Panel_interiors_1.Visible = false
         '
+        'valu_interiors_104
+        '
+        Me.valu_interiors_104.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interiors_104.Location = New System.Drawing.Point(553, 432)
+        Me.valu_interiors_104.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_interiors_104.Name = "valu_interiors_104"
+        Me.valu_interiors_104.Size = New System.Drawing.Size(44, 16)
+        Me.valu_interiors_104.TabIndex = 474
+        Me.valu_interiors_104.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Check_NA_interiors_104
+        '
+        Me.Check_NA_interiors_104.AutoSize = true
+        Me.Check_NA_interiors_104.BackColor = System.Drawing.Color.Transparent
+        Me.Check_NA_interiors_104.Location = New System.Drawing.Point(598, 436)
+        Me.Check_NA_interiors_104.Name = "Check_NA_interiors_104"
+        Me.Check_NA_interiors_104.Size = New System.Drawing.Size(15, 14)
+        Me.Check_NA_interiors_104.TabIndex = 473
+        Me.Check_NA_interiors_104.UseVisualStyleBackColor = false
+        '
+        'Check_available_interiors_104
+        '
+        Me.Check_available_interiors_104.AutoSize = true
+        Me.Check_available_interiors_104.BackColor = System.Drawing.Color.Transparent
+        Me.Check_available_interiors_104.Location = New System.Drawing.Point(537, 436)
+        Me.Check_available_interiors_104.Name = "Check_available_interiors_104"
+        Me.Check_available_interiors_104.Size = New System.Drawing.Size(15, 14)
+        Me.Check_available_interiors_104.TabIndex = 472
+        Me.Check_available_interiors_104.UseVisualStyleBackColor = false
+        '
+        'Icon_interiors_104
+        '
+        Me.Icon_interiors_104.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.Icon_interiors_104.Location = New System.Drawing.Point(537, 376)
+        Me.Icon_interiors_104.Name = "Icon_interiors_104"
+        Me.Icon_interiors_104.Size = New System.Drawing.Size(76, 74)
+        Me.Icon_interiors_104.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_interiors_104.TabIndex = 471
+        Me.Icon_interiors_104.TabStop = false
+        '
         'valu_interiors_103
         '
         Me.valu_interiors_103.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -8933,81 +9004,407 @@ Partial Class Items_edit
         Me.Info_text_available.Text = "Check to set as available"
         Me.Info_text_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'valu_interiors_104
-        '
-        Me.valu_interiors_104.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_interiors_104.Location = New System.Drawing.Point(553, 432)
-        Me.valu_interiors_104.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_interiors_104.Name = "valu_interiors_104"
-        Me.valu_interiors_104.Size = New System.Drawing.Size(44, 16)
-        Me.valu_interiors_104.TabIndex = 474
-        Me.valu_interiors_104.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Check_NA_interiors_104
-        '
-        Me.Check_NA_interiors_104.AutoSize = true
-        Me.Check_NA_interiors_104.BackColor = System.Drawing.Color.Transparent
-        Me.Check_NA_interiors_104.Location = New System.Drawing.Point(598, 436)
-        Me.Check_NA_interiors_104.Name = "Check_NA_interiors_104"
-        Me.Check_NA_interiors_104.Size = New System.Drawing.Size(15, 14)
-        Me.Check_NA_interiors_104.TabIndex = 473
-        Me.Check_NA_interiors_104.UseVisualStyleBackColor = false
-        '
-        'Check_available_interiors_104
-        '
-        Me.Check_available_interiors_104.AutoSize = true
-        Me.Check_available_interiors_104.BackColor = System.Drawing.Color.Transparent
-        Me.Check_available_interiors_104.Location = New System.Drawing.Point(537, 436)
-        Me.Check_available_interiors_104.Name = "Check_available_interiors_104"
-        Me.Check_available_interiors_104.Size = New System.Drawing.Size(15, 14)
-        Me.Check_available_interiors_104.TabIndex = 472
-        Me.Check_available_interiors_104.UseVisualStyleBackColor = false
-        '
-        'Icon_interiors_104
-        '
-        Me.Icon_interiors_104.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
-        Me.Icon_interiors_104.Location = New System.Drawing.Point(537, 376)
-        Me.Icon_interiors_104.Name = "Icon_interiors_104"
-        Me.Icon_interiors_104.Size = New System.Drawing.Size(76, 74)
-        Me.Icon_interiors_104.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Icon_interiors_104.TabIndex = 471
-        Me.Icon_interiors_104.TabStop = false
-        '
         'Panel_foods
         '
         Me.Panel_foods.BackgroundImage = CType(resources.GetObject("Panel_foods.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_foods.Controls.Add(Me.valu_foods_bynumbers)
+        Me.Panel_foods.Controls.Add(Me.Check_foods_notavailable)
+        Me.Panel_foods.Controls.Add(Me.Check_foods_available)
+        Me.Panel_foods.Controls.Add(Me.Check_foods_bynumbers)
         Me.Panel_foods.Location = New System.Drawing.Point(1, 37)
         Me.Panel_foods.Name = "Panel_foods"
         Me.Panel_foods.Size = New System.Drawing.Size(905, 506)
         Me.Panel_foods.TabIndex = 110
         Me.Panel_foods.Visible = false
         '
+        'valu_foods_bynumbers
+        '
+        Me.valu_foods_bynumbers.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_foods_bynumbers.Location = New System.Drawing.Point(543, 207)
+        Me.valu_foods_bynumbers.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_foods_bynumbers.Name = "valu_foods_bynumbers"
+        Me.valu_foods_bynumbers.Size = New System.Drawing.Size(54, 16)
+        Me.valu_foods_bynumbers.TabIndex = 11
+        Me.valu_foods_bynumbers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_foods_bynumbers.Value = New Decimal(New Integer() {99, 0, 0, 0})
+        '
+        'Check_foods_notavailable
+        '
+        Me.Check_foods_notavailable.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_foods_notavailable.BackColor = System.Drawing.Color.White
+        Me.Check_foods_notavailable.FlatAppearance.BorderSize = 0
+        Me.Check_foods_notavailable.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_foods_notavailable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_foods_notavailable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_foods_notavailable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_foods_notavailable.Location = New System.Drawing.Point(308, 280)
+        Me.Check_foods_notavailable.Name = "Check_foods_notavailable"
+        Me.Check_foods_notavailable.Size = New System.Drawing.Size(229, 23)
+        Me.Check_foods_notavailable.TabIndex = 10
+        Me.Check_foods_notavailable.Text = "Set all to not available"
+        Me.Check_foods_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_foods_notavailable.UseVisualStyleBackColor = false
+        '
+        'Check_foods_available
+        '
+        Me.Check_foods_available.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_foods_available.BackColor = System.Drawing.Color.White
+        Me.Check_foods_available.FlatAppearance.BorderSize = 0
+        Me.Check_foods_available.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_foods_available.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_foods_available.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_foods_available.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_foods_available.Location = New System.Drawing.Point(308, 242)
+        Me.Check_foods_available.Name = "Check_foods_available"
+        Me.Check_foods_available.Size = New System.Drawing.Size(229, 23)
+        Me.Check_foods_available.TabIndex = 9
+        Me.Check_foods_available.Text = "Set all to available"
+        Me.Check_foods_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_foods_available.UseVisualStyleBackColor = false
+        '
+        'Check_foods_bynumbers
+        '
+        Me.Check_foods_bynumbers.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_foods_bynumbers.BackColor = System.Drawing.Color.White
+        Me.Check_foods_bynumbers.FlatAppearance.BorderSize = 0
+        Me.Check_foods_bynumbers.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_foods_bynumbers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_foods_bynumbers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_foods_bynumbers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_foods_bynumbers.Location = New System.Drawing.Point(308, 204)
+        Me.Check_foods_bynumbers.Name = "Check_foods_bynumbers"
+        Me.Check_foods_bynumbers.Size = New System.Drawing.Size(229, 23)
+        Me.Check_foods_bynumbers.TabIndex = 8
+        Me.Check_foods_bynumbers.Text = "Unlock all by numbers"
+        Me.Check_foods_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_foods_bynumbers.UseVisualStyleBackColor = false
+        '
         'Panel_clothing
         '
         Me.Panel_clothing.BackgroundImage = CType(resources.GetObject("Panel_clothing.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_clothing.Controls.Add(Me.Check_clothingstp_notavailable)
+        Me.Panel_clothing.Controls.Add(Me.Check_clothingstp_available)
+        Me.Panel_clothing.Controls.Add(Me.Check_clothingstp_bynumbers)
+        Me.Panel_clothing.Controls.Add(Me.valu_clothing_bynumbers)
+        Me.Panel_clothing.Controls.Add(Me.Check_clothing_notavailable)
+        Me.Panel_clothing.Controls.Add(Me.Check_clothing_available)
+        Me.Panel_clothing.Controls.Add(Me.Check_clothing_bynumbers)
         Me.Panel_clothing.Location = New System.Drawing.Point(1, 37)
         Me.Panel_clothing.Name = "Panel_clothing"
         Me.Panel_clothing.Size = New System.Drawing.Size(905, 506)
         Me.Panel_clothing.TabIndex = 111
         Me.Panel_clothing.Visible = false
         '
+        'Check_clothingstp_notavailable
+        '
+        Me.Check_clothingstp_notavailable.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_clothingstp_notavailable.BackColor = System.Drawing.Color.White
+        Me.Check_clothingstp_notavailable.FlatAppearance.BorderSize = 0
+        Me.Check_clothingstp_notavailable.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_clothingstp_notavailable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_clothingstp_notavailable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_clothingstp_notavailable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_clothingstp_notavailable.Location = New System.Drawing.Point(500, 282)
+        Me.Check_clothingstp_notavailable.Name = "Check_clothingstp_notavailable"
+        Me.Check_clothingstp_notavailable.Size = New System.Drawing.Size(229, 23)
+        Me.Check_clothingstp_notavailable.TabIndex = 22
+        Me.Check_clothingstp_notavailable.Text = "Set all Streetpass / Spotpass to not available"
+        Me.Check_clothingstp_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_clothingstp_notavailable.UseVisualStyleBackColor = false
+        '
+        'Check_clothingstp_available
+        '
+        Me.Check_clothingstp_available.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_clothingstp_available.BackColor = System.Drawing.Color.White
+        Me.Check_clothingstp_available.FlatAppearance.BorderSize = 0
+        Me.Check_clothingstp_available.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_clothingstp_available.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_clothingstp_available.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_clothingstp_available.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_clothingstp_available.Location = New System.Drawing.Point(500, 244)
+        Me.Check_clothingstp_available.Name = "Check_clothingstp_available"
+        Me.Check_clothingstp_available.Size = New System.Drawing.Size(229, 23)
+        Me.Check_clothingstp_available.TabIndex = 21
+        Me.Check_clothingstp_available.Text = "Set all Streetpass / Spotpass to available"
+        Me.Check_clothingstp_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_clothingstp_available.UseVisualStyleBackColor = false
+        '
+        'Check_clothingstp_bynumbers
+        '
+        Me.Check_clothingstp_bynumbers.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_clothingstp_bynumbers.BackColor = System.Drawing.Color.White
+        Me.Check_clothingstp_bynumbers.FlatAppearance.BorderSize = 0
+        Me.Check_clothingstp_bynumbers.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_clothingstp_bynumbers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_clothingstp_bynumbers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_clothingstp_bynumbers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_clothingstp_bynumbers.Location = New System.Drawing.Point(500, 206)
+        Me.Check_clothingstp_bynumbers.Name = "Check_clothingstp_bynumbers"
+        Me.Check_clothingstp_bynumbers.Size = New System.Drawing.Size(229, 23)
+        Me.Check_clothingstp_bynumbers.TabIndex = 20
+        Me.Check_clothingstp_bynumbers.Text = "Unlock all Streetpass / Spotpass by numbers"
+        Me.Check_clothingstp_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_clothingstp_bynumbers.UseVisualStyleBackColor = false
+        '
+        'valu_clothing_bynumbers
+        '
+        Me.valu_clothing_bynumbers.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_clothing_bynumbers.Location = New System.Drawing.Point(350, 205)
+        Me.valu_clothing_bynumbers.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_clothing_bynumbers.Name = "valu_clothing_bynumbers"
+        Me.valu_clothing_bynumbers.Size = New System.Drawing.Size(54, 16)
+        Me.valu_clothing_bynumbers.TabIndex = 19
+        Me.valu_clothing_bynumbers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_clothing_bynumbers.Value = New Decimal(New Integer() {99, 0, 0, 0})
+        '
+        'Check_clothing_notavailable
+        '
+        Me.Check_clothing_notavailable.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_clothing_notavailable.BackColor = System.Drawing.Color.White
+        Me.Check_clothing_notavailable.FlatAppearance.BorderSize = 0
+        Me.Check_clothing_notavailable.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_clothing_notavailable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_clothing_notavailable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_clothing_notavailable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_clothing_notavailable.Location = New System.Drawing.Point(115, 278)
+        Me.Check_clothing_notavailable.Name = "Check_clothing_notavailable"
+        Me.Check_clothing_notavailable.Size = New System.Drawing.Size(229, 23)
+        Me.Check_clothing_notavailable.TabIndex = 18
+        Me.Check_clothing_notavailable.Text = "Set all to not available"
+        Me.Check_clothing_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_clothing_notavailable.UseVisualStyleBackColor = false
+        '
+        'Check_clothing_available
+        '
+        Me.Check_clothing_available.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_clothing_available.BackColor = System.Drawing.Color.White
+        Me.Check_clothing_available.FlatAppearance.BorderSize = 0
+        Me.Check_clothing_available.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_clothing_available.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_clothing_available.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_clothing_available.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_clothing_available.Location = New System.Drawing.Point(115, 240)
+        Me.Check_clothing_available.Name = "Check_clothing_available"
+        Me.Check_clothing_available.Size = New System.Drawing.Size(229, 23)
+        Me.Check_clothing_available.TabIndex = 17
+        Me.Check_clothing_available.Text = "Set all to available"
+        Me.Check_clothing_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_clothing_available.UseVisualStyleBackColor = false
+        '
+        'Check_clothing_bynumbers
+        '
+        Me.Check_clothing_bynumbers.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_clothing_bynumbers.BackColor = System.Drawing.Color.White
+        Me.Check_clothing_bynumbers.FlatAppearance.BorderSize = 0
+        Me.Check_clothing_bynumbers.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_clothing_bynumbers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_clothing_bynumbers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_clothing_bynumbers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_clothing_bynumbers.Location = New System.Drawing.Point(115, 202)
+        Me.Check_clothing_bynumbers.Name = "Check_clothing_bynumbers"
+        Me.Check_clothing_bynumbers.Size = New System.Drawing.Size(229, 23)
+        Me.Check_clothing_bynumbers.TabIndex = 16
+        Me.Check_clothing_bynumbers.Text = "Unlock all by numbers"
+        Me.Check_clothing_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_clothing_bynumbers.UseVisualStyleBackColor = false
+        '
         'Panel_hats
         '
         Me.Panel_hats.BackgroundImage = CType(resources.GetObject("Panel_hats.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_hats.Controls.Add(Me.valu_hatsstp_bynumbers)
+        Me.Panel_hats.Controls.Add(Me.Check_hatsstp_notavailable)
+        Me.Panel_hats.Controls.Add(Me.Check_hatsstp_available)
+        Me.Panel_hats.Controls.Add(Me.Check_hatsstp_bynumbers)
+        Me.Panel_hats.Controls.Add(Me.valu_hats_bynumbers)
+        Me.Panel_hats.Controls.Add(Me.Check_hats_notavailable)
+        Me.Panel_hats.Controls.Add(Me.Check_hats_available)
+        Me.Panel_hats.Controls.Add(Me.Check_hats_bynumbers)
         Me.Panel_hats.Location = New System.Drawing.Point(1, 37)
         Me.Panel_hats.Name = "Panel_hats"
         Me.Panel_hats.Size = New System.Drawing.Size(905, 506)
         Me.Panel_hats.TabIndex = 112
         Me.Panel_hats.Visible = false
         '
+        'valu_hatsstp_bynumbers
+        '
+        Me.valu_hatsstp_bynumbers.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_hatsstp_bynumbers.Location = New System.Drawing.Point(735, 209)
+        Me.valu_hatsstp_bynumbers.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_hatsstp_bynumbers.Name = "valu_hatsstp_bynumbers"
+        Me.valu_hatsstp_bynumbers.Size = New System.Drawing.Size(54, 16)
+        Me.valu_hatsstp_bynumbers.TabIndex = 15
+        Me.valu_hatsstp_bynumbers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_hatsstp_bynumbers.Value = New Decimal(New Integer() {99, 0, 0, 0})
+        '
+        'Check_hatsstp_notavailable
+        '
+        Me.Check_hatsstp_notavailable.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_hatsstp_notavailable.BackColor = System.Drawing.Color.White
+        Me.Check_hatsstp_notavailable.FlatAppearance.BorderSize = 0
+        Me.Check_hatsstp_notavailable.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_hatsstp_notavailable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_hatsstp_notavailable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_hatsstp_notavailable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_hatsstp_notavailable.Location = New System.Drawing.Point(500, 282)
+        Me.Check_hatsstp_notavailable.Name = "Check_hatsstp_notavailable"
+        Me.Check_hatsstp_notavailable.Size = New System.Drawing.Size(229, 23)
+        Me.Check_hatsstp_notavailable.TabIndex = 14
+        Me.Check_hatsstp_notavailable.Text = "Set all Streetpass / Spotpass to not available"
+        Me.Check_hatsstp_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_hatsstp_notavailable.UseVisualStyleBackColor = false
+        '
+        'Check_hatsstp_available
+        '
+        Me.Check_hatsstp_available.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_hatsstp_available.BackColor = System.Drawing.Color.White
+        Me.Check_hatsstp_available.FlatAppearance.BorderSize = 0
+        Me.Check_hatsstp_available.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_hatsstp_available.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_hatsstp_available.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_hatsstp_available.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_hatsstp_available.Location = New System.Drawing.Point(500, 244)
+        Me.Check_hatsstp_available.Name = "Check_hatsstp_available"
+        Me.Check_hatsstp_available.Size = New System.Drawing.Size(229, 23)
+        Me.Check_hatsstp_available.TabIndex = 13
+        Me.Check_hatsstp_available.Text = "Set all Streetpass / Spotpass to available"
+        Me.Check_hatsstp_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_hatsstp_available.UseVisualStyleBackColor = false
+        '
+        'Check_hatsstp_bynumbers
+        '
+        Me.Check_hatsstp_bynumbers.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_hatsstp_bynumbers.BackColor = System.Drawing.Color.White
+        Me.Check_hatsstp_bynumbers.FlatAppearance.BorderSize = 0
+        Me.Check_hatsstp_bynumbers.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_hatsstp_bynumbers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_hatsstp_bynumbers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_hatsstp_bynumbers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_hatsstp_bynumbers.Location = New System.Drawing.Point(500, 206)
+        Me.Check_hatsstp_bynumbers.Name = "Check_hatsstp_bynumbers"
+        Me.Check_hatsstp_bynumbers.Size = New System.Drawing.Size(229, 23)
+        Me.Check_hatsstp_bynumbers.TabIndex = 12
+        Me.Check_hatsstp_bynumbers.Text = "Unlock all Streetpass / Spotpass by numbers"
+        Me.Check_hatsstp_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_hatsstp_bynumbers.UseVisualStyleBackColor = false
+        '
+        'valu_hats_bynumbers
+        '
+        Me.valu_hats_bynumbers.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_hats_bynumbers.Location = New System.Drawing.Point(350, 205)
+        Me.valu_hats_bynumbers.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_hats_bynumbers.Name = "valu_hats_bynumbers"
+        Me.valu_hats_bynumbers.Size = New System.Drawing.Size(54, 16)
+        Me.valu_hats_bynumbers.TabIndex = 11
+        Me.valu_hats_bynumbers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_hats_bynumbers.Value = New Decimal(New Integer() {99, 0, 0, 0})
+        '
+        'Check_hats_notavailable
+        '
+        Me.Check_hats_notavailable.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_hats_notavailable.BackColor = System.Drawing.Color.White
+        Me.Check_hats_notavailable.FlatAppearance.BorderSize = 0
+        Me.Check_hats_notavailable.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_hats_notavailable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_hats_notavailable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_hats_notavailable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_hats_notavailable.Location = New System.Drawing.Point(115, 278)
+        Me.Check_hats_notavailable.Name = "Check_hats_notavailable"
+        Me.Check_hats_notavailable.Size = New System.Drawing.Size(229, 23)
+        Me.Check_hats_notavailable.TabIndex = 10
+        Me.Check_hats_notavailable.Text = "Set all to not available"
+        Me.Check_hats_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_hats_notavailable.UseVisualStyleBackColor = false
+        '
+        'Check_hats_available
+        '
+        Me.Check_hats_available.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_hats_available.BackColor = System.Drawing.Color.White
+        Me.Check_hats_available.FlatAppearance.BorderSize = 0
+        Me.Check_hats_available.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_hats_available.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_hats_available.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_hats_available.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_hats_available.Location = New System.Drawing.Point(115, 240)
+        Me.Check_hats_available.Name = "Check_hats_available"
+        Me.Check_hats_available.Size = New System.Drawing.Size(229, 23)
+        Me.Check_hats_available.TabIndex = 9
+        Me.Check_hats_available.Text = "Set all to available"
+        Me.Check_hats_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_hats_available.UseVisualStyleBackColor = false
+        '
+        'Check_hats_bynumbers
+        '
+        Me.Check_hats_bynumbers.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_hats_bynumbers.BackColor = System.Drawing.Color.White
+        Me.Check_hats_bynumbers.FlatAppearance.BorderSize = 0
+        Me.Check_hats_bynumbers.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_hats_bynumbers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_hats_bynumbers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_hats_bynumbers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_hats_bynumbers.Location = New System.Drawing.Point(115, 202)
+        Me.Check_hats_bynumbers.Name = "Check_hats_bynumbers"
+        Me.Check_hats_bynumbers.Size = New System.Drawing.Size(229, 23)
+        Me.Check_hats_bynumbers.TabIndex = 8
+        Me.Check_hats_bynumbers.Text = "Unlock all by numbers"
+        Me.Check_hats_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_hats_bynumbers.UseVisualStyleBackColor = false
+        '
         'Panel_treasures
         '
         Me.Panel_treasures.BackgroundImage = CType(resources.GetObject("Panel_treasures.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_treasures.Controls.Add(Me.valu_treasures_bynumbers)
+        Me.Panel_treasures.Controls.Add(Me.Check_treasures_notavailable)
+        Me.Panel_treasures.Controls.Add(Me.Check_treasures_bynumbers)
         Me.Panel_treasures.Location = New System.Drawing.Point(1, 37)
         Me.Panel_treasures.Name = "Panel_treasures"
         Me.Panel_treasures.Size = New System.Drawing.Size(905, 506)
         Me.Panel_treasures.TabIndex = 113
         Me.Panel_treasures.Visible = false
+        '
+        'valu_treasures_bynumbers
+        '
+        Me.valu_treasures_bynumbers.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_treasures_bynumbers.Location = New System.Drawing.Point(543, 207)
+        Me.valu_treasures_bynumbers.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_treasures_bynumbers.Name = "valu_treasures_bynumbers"
+        Me.valu_treasures_bynumbers.Size = New System.Drawing.Size(54, 16)
+        Me.valu_treasures_bynumbers.TabIndex = 7
+        Me.valu_treasures_bynumbers.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_treasures_bynumbers.Value = New Decimal(New Integer() {99, 0, 0, 0})
+        '
+        'Check_treasures_notavailable
+        '
+        Me.Check_treasures_notavailable.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_treasures_notavailable.BackColor = System.Drawing.Color.White
+        Me.Check_treasures_notavailable.FlatAppearance.BorderSize = 0
+        Me.Check_treasures_notavailable.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_treasures_notavailable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_treasures_notavailable.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_treasures_notavailable.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_treasures_notavailable.Location = New System.Drawing.Point(308, 280)
+        Me.Check_treasures_notavailable.Name = "Check_treasures_notavailable"
+        Me.Check_treasures_notavailable.Size = New System.Drawing.Size(229, 23)
+        Me.Check_treasures_notavailable.TabIndex = 6
+        Me.Check_treasures_notavailable.Text = "Set all to not available"
+        Me.Check_treasures_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_treasures_notavailable.UseVisualStyleBackColor = false
+        '
+        'Check_treasures_bynumbers
+        '
+        Me.Check_treasures_bynumbers.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_treasures_bynumbers.BackColor = System.Drawing.Color.White
+        Me.Check_treasures_bynumbers.FlatAppearance.BorderSize = 0
+        Me.Check_treasures_bynumbers.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_treasures_bynumbers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_treasures_bynumbers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_treasures_bynumbers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_treasures_bynumbers.Location = New System.Drawing.Point(308, 204)
+        Me.Check_treasures_bynumbers.Name = "Check_treasures_bynumbers"
+        Me.Check_treasures_bynumbers.Size = New System.Drawing.Size(229, 23)
+        Me.Check_treasures_bynumbers.TabIndex = 4
+        Me.Check_treasures_bynumbers.Text = "Unlock all by numbers"
+        Me.Check_treasures_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_treasures_bynumbers.UseVisualStyleBackColor = false
         '
         'Items_edit
         '
@@ -9041,14 +9438,14 @@ Partial Class Items_edit
         Me.Controls.Add(Me.Icon_hats)
         Me.Controls.Add(Me.Icon_clothes)
         Me.Controls.Add(Me.Icon_normalfoods)
-        Me.Controls.Add(Me.Panel_gooditems)
-        Me.Controls.Add(Me.Panel_specialfoods)
         Me.Controls.Add(Me.Panel_interiors_1)
         Me.Controls.Add(Me.Panel_interiors)
         Me.Controls.Add(Me.Panel_treasures)
         Me.Controls.Add(Me.Panel_hats)
-        Me.Controls.Add(Me.Panel_clothing)
         Me.Controls.Add(Me.Panel_foods)
+        Me.Controls.Add(Me.Panel_clothing)
+        Me.Controls.Add(Me.Panel_gooditems)
+        Me.Controls.Add(Me.Panel_specialfoods)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Items_edit"
@@ -9336,6 +9733,8 @@ Partial Class Items_edit
         CType(Me.Icon_interiors_right,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_interiors_1.ResumeLayout(false)
         Me.Panel_interiors_1.PerformLayout
+        CType(Me.valu_interiors_104,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_interiors_104,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_interiors_103,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_interiors_103,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_interiors_102,System.ComponentModel.ISupportInitialize).EndInit
@@ -9425,8 +9824,15 @@ Partial Class Items_edit
         CType(Me.Icon_interiors_left,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_closesave,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_info_itemsedit.ResumeLayout(false)
-        CType(Me.valu_interiors_104,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_interiors_104,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_foods.ResumeLayout(false)
+        CType(Me.valu_foods_bynumbers,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_clothing.ResumeLayout(false)
+        CType(Me.valu_clothing_bynumbers,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_hats.ResumeLayout(false)
+        CType(Me.valu_hatsstp_bynumbers,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_hats_bynumbers,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_treasures.ResumeLayout(false)
+        CType(Me.valu_treasures_bynumbers,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
         Me.PerformLayout
 
@@ -10149,4 +10555,26 @@ End Sub
     Friend WithEvents Panel_clothing As System.Windows.Forms.Panel
     Friend WithEvents Panel_hats As System.Windows.Forms.Panel
     Friend WithEvents Panel_treasures As System.Windows.Forms.Panel
+    Friend WithEvents valu_treasures_bynumbers As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_treasures_notavailable As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_treasures_bynumbers As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_foods_bynumbers As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_foods_notavailable As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_foods_available As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_foods_bynumbers As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_hats_bynumbers As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_hats_notavailable As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_hats_available As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_hats_bynumbers As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_hatsstp_bynumbers As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_hatsstp_notavailable As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_hatsstp_available As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_hatsstp_bynumbers As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_clothingstp_notavailable As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_clothingstp_available As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_clothingstp_bynumbers As System.Windows.Forms.CheckBox
+    Friend WithEvents valu_clothing_bynumbers As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_clothing_notavailable As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_clothing_available As System.Windows.Forms.CheckBox
+    Friend WithEvents Check_clothing_bynumbers As System.Windows.Forms.CheckBox
 End Class
