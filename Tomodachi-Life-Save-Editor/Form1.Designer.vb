@@ -54,6 +54,28 @@ Partial Class TL_SaveEditor
         Me.Menu_button = New System.Windows.Forms.Panel()
         Me.Text_menu_button = New System.Windows.Forms.Label()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.valu_rank_splurge = New System.Windows.Forms.NumericUpDown()
+        Me.valu_rank_traveler = New System.Windows.Forms.NumericUpDown()
+        Me.valu_rank_island = New System.Windows.Forms.NumericUpDown()
+        Me.valu_rank_romance = New System.Windows.Forms.NumericUpDown()
+        Me.valu_rank_friendship = New System.Windows.Forms.NumericUpDown()
+        Me.valu_rank_pampered = New System.Windows.Forms.NumericUpDown()
+        Me.valu_rank_girlcharm = New System.Windows.Forms.NumericUpDown()
+        Me.valu_rank_boycharm = New System.Windows.Forms.NumericUpDown()
+        Me.valu_rank_popularity = New System.Windows.Forms.NumericUpDown()
+        Me.valu_rank_vitality = New System.Windows.Forms.NumericUpDown()
+        Me.Title_rankingboard = New System.Windows.Forms.Label()
+        Me.Icon_rank_splurge = New System.Windows.Forms.PictureBox()
+        Me.Icon_rank_traveler = New System.Windows.Forms.PictureBox()
+        Me.Icon_rank_island = New System.Windows.Forms.PictureBox()
+        Me.Icon_rank_romance = New System.Windows.Forms.PictureBox()
+        Me.Icon_rank_friendship = New System.Windows.Forms.PictureBox()
+        Me.Icon_rank_pampered = New System.Windows.Forms.PictureBox()
+        Me.Icon_rank_girlcharm = New System.Windows.Forms.PictureBox()
+        Me.Icon_rank_boycharm = New System.Windows.Forms.PictureBox()
+        Me.Icon_rank_popularity = New System.Windows.Forms.PictureBox()
+        Me.Icon_rank_vitality = New System.Windows.Forms.PictureBox()
         Me.value_eventfountain = New System.Windows.Forms.NumericUpDown()
         Me.Icon_eventfountain = New System.Windows.Forms.PictureBox()
         Me.Title_eventfountain = New System.Windows.Forms.Label()
@@ -159,6 +181,8 @@ Partial Class TL_SaveEditor
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Text_menu_open = New System.Windows.Forms.Label()
         Me.Panel_extras = New System.Windows.Forms.Panel()
+        Me.Check_resetnewsflash = New System.Windows.Forms.CheckBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Check_resetmiiapart = New System.Windows.Forms.CheckBox()
         Me.Fea_edit_concert = New System.Windows.Forms.Panel()
         Me.Icon_edit_concert = New System.Windows.Forms.PictureBox()
@@ -192,6 +216,10 @@ Partial Class TL_SaveEditor
         Me.Settings_credits = New System.Windows.Forms.TabPage()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Icon_MarioPartyITSE = New System.Windows.Forms.PictureBox()
+        Me.Icon_PaparMarioSSSE = New System.Windows.Forms.PictureBox()
+        Me.Icon_nintendogscatSE = New System.Windows.Forms.PictureBox()
+        Me.Icon_IronfallISE = New System.Windows.Forms.PictureBox()
         Me.Icon_TLSE = New System.Windows.Forms.PictureBox()
         Me.Icon_ChibiRoboZLSE = New System.Windows.Forms.PictureBox()
         Me.Icon_3dsSEL = New System.Windows.Forms.PictureBox()
@@ -604,6 +632,27 @@ Partial Class TL_SaveEditor
         CType(Me.Menu_width, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_button.SuspendLayout()
         Me.Panel_islandedit.SuspendLayout()
+        Me.Panel12.SuspendLayout()
+        CType(Me.valu_rank_splurge, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_rank_traveler, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_rank_island, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_rank_romance, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_rank_friendship, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_rank_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_rank_girlcharm, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_rank_boycharm, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_rank_popularity, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_rank_vitality, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rank_splurge, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rank_traveler, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rank_island, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rank_romance, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rank_friendship, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rank_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rank_girlcharm, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rank_boycharm, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rank_popularity, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_rank_vitality, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.value_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_info_building, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -690,6 +739,7 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_music, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_menu_opensave.SuspendLayout()
         Me.Panel_extras.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Fea_edit_concert.SuspendLayout()
         CType(Me.Icon_edit_concert, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Fea_edit_travelers.SuspendLayout()
@@ -710,6 +760,10 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Settings_credits.SuspendLayout()
         Me.Panel11.SuspendLayout()
+        CType(Me.Icon_MarioPartyITSE, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_PaparMarioSSSE, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_nintendogscatSE, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_IronfallISE, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_TLSE, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_ChibiRoboZLSE, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_3dsSEL, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1293,6 +1347,7 @@ Partial Class TL_SaveEditor
         'Panel_islandedit
         '
         Me.Panel_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_islandedit.Controls.Add(Me.Panel12)
         Me.Panel_islandedit.Controls.Add(Me.value_eventfountain)
         Me.Panel_islandedit.Controls.Add(Me.Icon_eventfountain)
         Me.Panel_islandedit.Controls.Add(Me.Title_eventfountain)
@@ -1332,10 +1387,261 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Size = New System.Drawing.Size(600, 490)
         Me.Panel_islandedit.TabIndex = 11
         '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.Transparent
+        Me.Panel12.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_rankingboard
+        Me.Panel12.Controls.Add(Me.valu_rank_splurge)
+        Me.Panel12.Controls.Add(Me.valu_rank_traveler)
+        Me.Panel12.Controls.Add(Me.valu_rank_island)
+        Me.Panel12.Controls.Add(Me.valu_rank_romance)
+        Me.Panel12.Controls.Add(Me.valu_rank_friendship)
+        Me.Panel12.Controls.Add(Me.valu_rank_pampered)
+        Me.Panel12.Controls.Add(Me.valu_rank_girlcharm)
+        Me.Panel12.Controls.Add(Me.valu_rank_boycharm)
+        Me.Panel12.Controls.Add(Me.valu_rank_popularity)
+        Me.Panel12.Controls.Add(Me.valu_rank_vitality)
+        Me.Panel12.Controls.Add(Me.Title_rankingboard)
+        Me.Panel12.Controls.Add(Me.Icon_rank_splurge)
+        Me.Panel12.Controls.Add(Me.Icon_rank_traveler)
+        Me.Panel12.Controls.Add(Me.Icon_rank_island)
+        Me.Panel12.Controls.Add(Me.Icon_rank_romance)
+        Me.Panel12.Controls.Add(Me.Icon_rank_friendship)
+        Me.Panel12.Controls.Add(Me.Icon_rank_pampered)
+        Me.Panel12.Controls.Add(Me.Icon_rank_girlcharm)
+        Me.Panel12.Controls.Add(Me.Icon_rank_boycharm)
+        Me.Panel12.Controls.Add(Me.Icon_rank_popularity)
+        Me.Panel12.Controls.Add(Me.Icon_rank_vitality)
+        Me.Panel12.Location = New System.Drawing.Point(343, 337)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(239, 135)
+        Me.Panel12.TabIndex = 65
+        '
+        'valu_rank_splurge
+        '
+        Me.valu_rank_splurge.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_rank_splurge.Location = New System.Drawing.Point(190, 112)
+        Me.valu_rank_splurge.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.valu_rank_splurge.Name = "valu_rank_splurge"
+        Me.valu_rank_splurge.Size = New System.Drawing.Size(39, 16)
+        Me.valu_rank_splurge.TabIndex = 20
+        Me.valu_rank_splurge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_rank_splurge.Visible = False
+        '
+        'valu_rank_traveler
+        '
+        Me.valu_rank_traveler.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_rank_traveler.Location = New System.Drawing.Point(145, 112)
+        Me.valu_rank_traveler.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.valu_rank_traveler.Name = "valu_rank_traveler"
+        Me.valu_rank_traveler.Size = New System.Drawing.Size(39, 16)
+        Me.valu_rank_traveler.TabIndex = 19
+        Me.valu_rank_traveler.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_rank_traveler.Visible = False
+        '
+        'valu_rank_island
+        '
+        Me.valu_rank_island.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_rank_island.Location = New System.Drawing.Point(100, 112)
+        Me.valu_rank_island.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.valu_rank_island.Name = "valu_rank_island"
+        Me.valu_rank_island.Size = New System.Drawing.Size(39, 16)
+        Me.valu_rank_island.TabIndex = 18
+        Me.valu_rank_island.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_rank_island.Visible = False
+        '
+        'valu_rank_romance
+        '
+        Me.valu_rank_romance.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_rank_romance.Location = New System.Drawing.Point(55, 112)
+        Me.valu_rank_romance.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.valu_rank_romance.Name = "valu_rank_romance"
+        Me.valu_rank_romance.Size = New System.Drawing.Size(39, 16)
+        Me.valu_rank_romance.TabIndex = 17
+        Me.valu_rank_romance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_rank_romance.Visible = False
+        '
+        'valu_rank_friendship
+        '
+        Me.valu_rank_friendship.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_rank_friendship.Location = New System.Drawing.Point(10, 112)
+        Me.valu_rank_friendship.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.valu_rank_friendship.Name = "valu_rank_friendship"
+        Me.valu_rank_friendship.Size = New System.Drawing.Size(39, 16)
+        Me.valu_rank_friendship.TabIndex = 16
+        Me.valu_rank_friendship.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_rank_friendship.Visible = False
+        '
+        'valu_rank_pampered
+        '
+        Me.valu_rank_pampered.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_rank_pampered.Location = New System.Drawing.Point(190, 57)
+        Me.valu_rank_pampered.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.valu_rank_pampered.Name = "valu_rank_pampered"
+        Me.valu_rank_pampered.Size = New System.Drawing.Size(39, 16)
+        Me.valu_rank_pampered.TabIndex = 15
+        Me.valu_rank_pampered.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_rank_pampered.Visible = False
+        '
+        'valu_rank_girlcharm
+        '
+        Me.valu_rank_girlcharm.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_rank_girlcharm.Location = New System.Drawing.Point(145, 57)
+        Me.valu_rank_girlcharm.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.valu_rank_girlcharm.Name = "valu_rank_girlcharm"
+        Me.valu_rank_girlcharm.Size = New System.Drawing.Size(39, 16)
+        Me.valu_rank_girlcharm.TabIndex = 14
+        Me.valu_rank_girlcharm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_rank_girlcharm.Visible = False
+        '
+        'valu_rank_boycharm
+        '
+        Me.valu_rank_boycharm.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_rank_boycharm.Location = New System.Drawing.Point(100, 57)
+        Me.valu_rank_boycharm.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.valu_rank_boycharm.Name = "valu_rank_boycharm"
+        Me.valu_rank_boycharm.Size = New System.Drawing.Size(39, 16)
+        Me.valu_rank_boycharm.TabIndex = 13
+        Me.valu_rank_boycharm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_rank_boycharm.Visible = False
+        '
+        'valu_rank_popularity
+        '
+        Me.valu_rank_popularity.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_rank_popularity.Location = New System.Drawing.Point(55, 57)
+        Me.valu_rank_popularity.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.valu_rank_popularity.Name = "valu_rank_popularity"
+        Me.valu_rank_popularity.Size = New System.Drawing.Size(39, 16)
+        Me.valu_rank_popularity.TabIndex = 12
+        Me.valu_rank_popularity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_rank_popularity.Visible = False
+        '
+        'valu_rank_vitality
+        '
+        Me.valu_rank_vitality.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_rank_vitality.Location = New System.Drawing.Point(10, 57)
+        Me.valu_rank_vitality.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.valu_rank_vitality.Name = "valu_rank_vitality"
+        Me.valu_rank_vitality.Size = New System.Drawing.Size(39, 16)
+        Me.valu_rank_vitality.TabIndex = 11
+        Me.valu_rank_vitality.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_rank_vitality.Visible = False
+        '
+        'Title_rankingboard
+        '
+        Me.Title_rankingboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Title_rankingboard.ForeColor = System.Drawing.Color.White
+        Me.Title_rankingboard.Location = New System.Drawing.Point(3, 2)
+        Me.Title_rankingboard.Name = "Title_rankingboard"
+        Me.Title_rankingboard.Size = New System.Drawing.Size(233, 18)
+        Me.Title_rankingboard.TabIndex = 10
+        Me.Title_rankingboard.Text = "Ranking board"
+        Me.Title_rankingboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Icon_rank_splurge
+        '
+        Me.Icon_rank_splurge.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rank_splurge.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.ranking_splurgei
+        Me.Icon_rank_splurge.Location = New System.Drawing.Point(190, 78)
+        Me.Icon_rank_splurge.Name = "Icon_rank_splurge"
+        Me.Icon_rank_splurge.Size = New System.Drawing.Size(39, 50)
+        Me.Icon_rank_splurge.TabIndex = 9
+        Me.Icon_rank_splurge.TabStop = False
+        '
+        'Icon_rank_traveler
+        '
+        Me.Icon_rank_traveler.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rank_traveler.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.ranking_traveleri
+        Me.Icon_rank_traveler.Location = New System.Drawing.Point(145, 78)
+        Me.Icon_rank_traveler.Name = "Icon_rank_traveler"
+        Me.Icon_rank_traveler.Size = New System.Drawing.Size(39, 50)
+        Me.Icon_rank_traveler.TabIndex = 8
+        Me.Icon_rank_traveler.TabStop = False
+        '
+        'Icon_rank_island
+        '
+        Me.Icon_rank_island.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rank_island.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.ranking_islandi
+        Me.Icon_rank_island.Location = New System.Drawing.Point(100, 78)
+        Me.Icon_rank_island.Name = "Icon_rank_island"
+        Me.Icon_rank_island.Size = New System.Drawing.Size(39, 50)
+        Me.Icon_rank_island.TabIndex = 7
+        Me.Icon_rank_island.TabStop = False
+        '
+        'Icon_rank_romance
+        '
+        Me.Icon_rank_romance.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rank_romance.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.ranking_romancei
+        Me.Icon_rank_romance.Location = New System.Drawing.Point(55, 78)
+        Me.Icon_rank_romance.Name = "Icon_rank_romance"
+        Me.Icon_rank_romance.Size = New System.Drawing.Size(39, 50)
+        Me.Icon_rank_romance.TabIndex = 6
+        Me.Icon_rank_romance.TabStop = False
+        '
+        'Icon_rank_friendship
+        '
+        Me.Icon_rank_friendship.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rank_friendship.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.ranking_friendshipi
+        Me.Icon_rank_friendship.Location = New System.Drawing.Point(10, 78)
+        Me.Icon_rank_friendship.Name = "Icon_rank_friendship"
+        Me.Icon_rank_friendship.Size = New System.Drawing.Size(39, 50)
+        Me.Icon_rank_friendship.TabIndex = 5
+        Me.Icon_rank_friendship.TabStop = False
+        '
+        'Icon_rank_pampered
+        '
+        Me.Icon_rank_pampered.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rank_pampered.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.ranking_pamperedi
+        Me.Icon_rank_pampered.Location = New System.Drawing.Point(190, 23)
+        Me.Icon_rank_pampered.Name = "Icon_rank_pampered"
+        Me.Icon_rank_pampered.Size = New System.Drawing.Size(39, 50)
+        Me.Icon_rank_pampered.TabIndex = 4
+        Me.Icon_rank_pampered.TabStop = False
+        '
+        'Icon_rank_girlcharm
+        '
+        Me.Icon_rank_girlcharm.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rank_girlcharm.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.ranking_girlcharmi
+        Me.Icon_rank_girlcharm.Location = New System.Drawing.Point(145, 23)
+        Me.Icon_rank_girlcharm.Name = "Icon_rank_girlcharm"
+        Me.Icon_rank_girlcharm.Size = New System.Drawing.Size(39, 50)
+        Me.Icon_rank_girlcharm.TabIndex = 3
+        Me.Icon_rank_girlcharm.TabStop = False
+        '
+        'Icon_rank_boycharm
+        '
+        Me.Icon_rank_boycharm.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rank_boycharm.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.ranking_boycharmi
+        Me.Icon_rank_boycharm.Location = New System.Drawing.Point(100, 23)
+        Me.Icon_rank_boycharm.Name = "Icon_rank_boycharm"
+        Me.Icon_rank_boycharm.Size = New System.Drawing.Size(39, 50)
+        Me.Icon_rank_boycharm.TabIndex = 2
+        Me.Icon_rank_boycharm.TabStop = False
+        '
+        'Icon_rank_popularity
+        '
+        Me.Icon_rank_popularity.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rank_popularity.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.ranking_popularityi
+        Me.Icon_rank_popularity.Location = New System.Drawing.Point(55, 23)
+        Me.Icon_rank_popularity.Name = "Icon_rank_popularity"
+        Me.Icon_rank_popularity.Size = New System.Drawing.Size(39, 50)
+        Me.Icon_rank_popularity.TabIndex = 1
+        Me.Icon_rank_popularity.TabStop = False
+        '
+        'Icon_rank_vitality
+        '
+        Me.Icon_rank_vitality.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_rank_vitality.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.ranking_vitalityi
+        Me.Icon_rank_vitality.Location = New System.Drawing.Point(10, 23)
+        Me.Icon_rank_vitality.Name = "Icon_rank_vitality"
+        Me.Icon_rank_vitality.Size = New System.Drawing.Size(39, 50)
+        Me.Icon_rank_vitality.TabIndex = 0
+        Me.Icon_rank_vitality.TabStop = False
+        '
         'value_eventfountain
         '
         Me.value_eventfountain.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.value_eventfountain.Location = New System.Drawing.Point(278, 382)
+        Me.value_eventfountain.Location = New System.Drawing.Point(245, 328)
         Me.value_eventfountain.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.value_eventfountain.Name = "value_eventfountain"
         Me.value_eventfountain.Size = New System.Drawing.Size(81, 16)
@@ -1348,7 +1654,7 @@ Partial Class TL_SaveEditor
         Me.Icon_eventfountain.BackColor = System.Drawing.Color.Transparent
         Me.Icon_eventfountain.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_eventfountain.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.event_fountain
-        Me.Icon_eventfountain.Location = New System.Drawing.Point(295, 341)
+        Me.Icon_eventfountain.Location = New System.Drawing.Point(262, 287)
         Me.Icon_eventfountain.Name = "Icon_eventfountain"
         Me.Icon_eventfountain.Size = New System.Drawing.Size(44, 57)
         Me.Icon_eventfountain.TabIndex = 63
@@ -1357,7 +1663,7 @@ Partial Class TL_SaveEditor
         'Title_eventfountain
         '
         Me.Title_eventfountain.BackColor = System.Drawing.Color.Transparent
-        Me.Title_eventfountain.Location = New System.Drawing.Point(239, 325)
+        Me.Title_eventfountain.Location = New System.Drawing.Point(206, 271)
         Me.Title_eventfountain.Name = "Title_eventfountain"
         Me.Title_eventfountain.Size = New System.Drawing.Size(156, 13)
         Me.Title_eventfountain.TabIndex = 62
@@ -1380,7 +1686,7 @@ Partial Class TL_SaveEditor
         'value_appartrenov
         '
         Me.value_appartrenov.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.value_appartrenov.Location = New System.Drawing.Point(481, 411)
+        Me.value_appartrenov.Location = New System.Drawing.Point(98, 451)
         Me.value_appartrenov.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.value_appartrenov.Name = "value_appartrenov"
         Me.value_appartrenov.Size = New System.Drawing.Size(58, 16)
@@ -1393,7 +1699,7 @@ Partial Class TL_SaveEditor
         Me.Icon_appartrenov.BackColor = System.Drawing.Color.Transparent
         Me.Icon_appartrenov.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_appartrenov.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_appart_00
-        Me.Icon_appartrenov.Location = New System.Drawing.Point(481, 339)
+        Me.Icon_appartrenov.Location = New System.Drawing.Point(98, 379)
         Me.Icon_appartrenov.Name = "Icon_appartrenov"
         Me.Icon_appartrenov.Size = New System.Drawing.Size(58, 88)
         Me.Icon_appartrenov.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -1403,7 +1709,7 @@ Partial Class TL_SaveEditor
         'Title_appartrenov
         '
         Me.Title_appartrenov.BackColor = System.Drawing.Color.Transparent
-        Me.Title_appartrenov.Location = New System.Drawing.Point(432, 325)
+        Me.Title_appartrenov.Location = New System.Drawing.Point(49, 365)
         Me.Title_appartrenov.Name = "Title_appartrenov"
         Me.Title_appartrenov.Size = New System.Drawing.Size(156, 13)
         Me.Title_appartrenov.TabIndex = 61
@@ -1415,7 +1721,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_pronun_island.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_edit_pronun_island.Controls.Add(Me.Icon_islandn_pronun_val)
         Me.Panel_edit_pronun_island.Controls.Add(Me.Text_pronun_island)
-        Me.Panel_edit_pronun_island.Location = New System.Drawing.Point(47, 120)
+        Me.Panel_edit_pronun_island.Location = New System.Drawing.Point(47, 52)
         Me.Panel_edit_pronun_island.Name = "Panel_edit_pronun_island"
         Me.Panel_edit_pronun_island.Size = New System.Drawing.Size(181, 17)
         Me.Panel_edit_pronun_island.TabIndex = 58
@@ -1446,7 +1752,7 @@ Partial Class TL_SaveEditor
         'Title_travelerssent
         '
         Me.Title_travelerssent.BackColor = System.Drawing.Color.Transparent
-        Me.Title_travelerssent.Location = New System.Drawing.Point(49, 371)
+        Me.Title_travelerssent.Location = New System.Drawing.Point(49, 303)
         Me.Title_travelerssent.Name = "Title_travelerssent"
         Me.Title_travelerssent.Size = New System.Drawing.Size(156, 13)
         Me.Title_travelerssent.TabIndex = 57
@@ -1457,7 +1763,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_travelerssent.BackColor = System.Drawing.Color.Transparent
         Me.Icon_travelerssent.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Travelers_sent
-        Me.Icon_travelerssent.Location = New System.Drawing.Point(75, 385)
+        Me.Icon_travelerssent.Location = New System.Drawing.Point(75, 317)
         Me.Icon_travelerssent.Name = "Icon_travelerssent"
         Me.Icon_travelerssent.Size = New System.Drawing.Size(41, 20)
         Me.Icon_travelerssent.TabIndex = 3
@@ -1467,7 +1773,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_travelerssent.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_travelerssent.Controls.Add(Me.value_travelerssent)
-        Me.Panel_travelerssent.Location = New System.Drawing.Point(117, 385)
+        Me.Panel_travelerssent.Location = New System.Drawing.Point(117, 317)
         Me.Panel_travelerssent.Name = "Panel_travelerssent"
         Me.Panel_travelerssent.Size = New System.Drawing.Size(64, 20)
         Me.Panel_travelerssent.TabIndex = 56
@@ -1486,7 +1792,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_travelersreceived.BackColor = System.Drawing.Color.Transparent
         Me.Icon_travelersreceived.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Travelers_received
-        Me.Icon_travelersreceived.Location = New System.Drawing.Point(74, 339)
+        Me.Icon_travelersreceived.Location = New System.Drawing.Point(74, 271)
         Me.Icon_travelersreceived.Name = "Icon_travelersreceived"
         Me.Icon_travelersreceived.Size = New System.Drawing.Size(41, 20)
         Me.Icon_travelersreceived.TabIndex = 2
@@ -1496,7 +1802,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_travelersreceived.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_travelersreceived.Controls.Add(Me.value_travelersreceived)
-        Me.Panel_travelersreceived.Location = New System.Drawing.Point(116, 339)
+        Me.Panel_travelersreceived.Location = New System.Drawing.Point(116, 271)
         Me.Panel_travelersreceived.Name = "Panel_travelersreceived"
         Me.Panel_travelersreceived.Size = New System.Drawing.Size(64, 20)
         Me.Panel_travelersreceived.TabIndex = 55
@@ -1514,7 +1820,7 @@ Partial Class TL_SaveEditor
         'Title_travelersreceived
         '
         Me.Title_travelersreceived.BackColor = System.Drawing.Color.Transparent
-        Me.Title_travelersreceived.Location = New System.Drawing.Point(49, 325)
+        Me.Title_travelersreceived.Location = New System.Drawing.Point(49, 257)
         Me.Title_travelersreceived.Name = "Title_travelersreceived"
         Me.Title_travelersreceived.Size = New System.Drawing.Size(156, 13)
         Me.Title_travelersreceived.TabIndex = 54
@@ -1524,7 +1830,7 @@ Partial Class TL_SaveEditor
         'Title_childrenborn
         '
         Me.Title_childrenborn.BackColor = System.Drawing.Color.Transparent
-        Me.Title_childrenborn.Location = New System.Drawing.Point(49, 279)
+        Me.Title_childrenborn.Location = New System.Drawing.Point(49, 211)
         Me.Title_childrenborn.Name = "Title_childrenborn"
         Me.Title_childrenborn.Size = New System.Drawing.Size(156, 13)
         Me.Title_childrenborn.TabIndex = 53
@@ -1535,7 +1841,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_childrenborn.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_childrenborn.Controls.Add(Me.value_childrenborn)
-        Me.Panel_childrenborn.Location = New System.Drawing.Point(105, 293)
+        Me.Panel_childrenborn.Location = New System.Drawing.Point(105, 225)
         Me.Panel_childrenborn.Name = "Panel_childrenborn"
         Me.Panel_childrenborn.Size = New System.Drawing.Size(64, 20)
         Me.Panel_childrenborn.TabIndex = 52
@@ -1553,7 +1859,7 @@ Partial Class TL_SaveEditor
         'Title_weddings
         '
         Me.Title_weddings.BackColor = System.Drawing.Color.Transparent
-        Me.Title_weddings.Location = New System.Drawing.Point(49, 233)
+        Me.Title_weddings.Location = New System.Drawing.Point(49, 165)
         Me.Title_weddings.Name = "Title_weddings"
         Me.Title_weddings.Size = New System.Drawing.Size(156, 13)
         Me.Title_weddings.TabIndex = 51
@@ -1564,7 +1870,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_childrenborn.BackColor = System.Drawing.Color.Transparent
         Me.Icon_childrenborn.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_childrenborn
-        Me.Icon_childrenborn.Location = New System.Drawing.Point(84, 293)
+        Me.Icon_childrenborn.Location = New System.Drawing.Point(84, 225)
         Me.Icon_childrenborn.Name = "Icon_childrenborn"
         Me.Icon_childrenborn.Size = New System.Drawing.Size(20, 20)
         Me.Icon_childrenborn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1575,7 +1881,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_weddings.BackColor = System.Drawing.Color.Transparent
         Me.Icon_weddings.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_wedding
-        Me.Icon_weddings.Location = New System.Drawing.Point(81, 247)
+        Me.Icon_weddings.Location = New System.Drawing.Point(81, 179)
         Me.Icon_weddings.Name = "Icon_weddings"
         Me.Icon_weddings.Size = New System.Drawing.Size(26, 20)
         Me.Icon_weddings.TabIndex = 3
@@ -1585,7 +1891,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_weddings.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_weddings.Controls.Add(Me.value_weddings)
-        Me.Panel_weddings.Location = New System.Drawing.Point(108, 247)
+        Me.Panel_weddings.Location = New System.Drawing.Point(108, 179)
         Me.Panel_weddings.Name = "Panel_weddings"
         Me.Panel_weddings.Size = New System.Drawing.Size(64, 20)
         Me.Panel_weddings.TabIndex = 50
@@ -1616,7 +1922,7 @@ Partial Class TL_SaveEditor
         'Title_streetpassencounters
         '
         Me.Title_streetpassencounters.BackColor = System.Drawing.Color.Transparent
-        Me.Title_streetpassencounters.Location = New System.Drawing.Point(49, 187)
+        Me.Title_streetpassencounters.Location = New System.Drawing.Point(49, 119)
         Me.Title_streetpassencounters.Name = "Title_streetpassencounters"
         Me.Title_streetpassencounters.Size = New System.Drawing.Size(156, 13)
         Me.Title_streetpassencounters.TabIndex = 48
@@ -1627,7 +1933,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_streetpassencounters.BackColor = System.Drawing.Color.Transparent
         Me.Icon_streetpassencounters.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_streetpass_encounters
-        Me.Icon_streetpassencounters.Location = New System.Drawing.Point(77, 201)
+        Me.Icon_streetpassencounters.Location = New System.Drawing.Point(77, 133)
         Me.Icon_streetpassencounters.Name = "Icon_streetpassencounters"
         Me.Icon_streetpassencounters.Size = New System.Drawing.Size(31, 20)
         Me.Icon_streetpassencounters.TabIndex = 2
@@ -1637,7 +1943,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_streetpassencounters.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_streetpassencounters.Controls.Add(Me.value_streetpassencounters)
-        Me.Panel_streetpassencounters.Location = New System.Drawing.Point(109, 201)
+        Me.Panel_streetpassencounters.Location = New System.Drawing.Point(109, 133)
         Me.Panel_streetpassencounters.Name = "Panel_streetpassencounters"
         Me.Panel_streetpassencounters.Size = New System.Drawing.Size(64, 20)
         Me.Panel_streetpassencounters.TabIndex = 47
@@ -1687,7 +1993,7 @@ Partial Class TL_SaveEditor
         'Title_problemsolved
         '
         Me.Title_problemsolved.BackColor = System.Drawing.Color.Transparent
-        Me.Title_problemsolved.Location = New System.Drawing.Point(49, 141)
+        Me.Title_problemsolved.Location = New System.Drawing.Point(49, 73)
         Me.Title_problemsolved.Name = "Title_problemsolved"
         Me.Title_problemsolved.Size = New System.Drawing.Size(156, 13)
         Me.Title_problemsolved.TabIndex = 45
@@ -1698,7 +2004,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_problemsolved.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_problemsolved.Controls.Add(Me.value_problemsolved)
-        Me.Panel_problemsolved.Location = New System.Drawing.Point(104, 155)
+        Me.Panel_problemsolved.Location = New System.Drawing.Point(104, 87)
         Me.Panel_problemsolved.Name = "Panel_problemsolved"
         Me.Panel_problemsolved.Size = New System.Drawing.Size(64, 20)
         Me.Panel_problemsolved.TabIndex = 44
@@ -1717,7 +2023,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_problemsolved.BackColor = System.Drawing.Color.Transparent
         Me.Icon_problemsolved.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_problems_solved
-        Me.Icon_problemsolved.Location = New System.Drawing.Point(83, 155)
+        Me.Icon_problemsolved.Location = New System.Drawing.Point(83, 87)
         Me.Icon_problemsolved.Name = "Icon_problemsolved"
         Me.Icon_problemsolved.Size = New System.Drawing.Size(20, 20)
         Me.Icon_problemsolved.TabIndex = 1
@@ -1726,7 +2032,7 @@ Partial Class TL_SaveEditor
         'Title_islandname
         '
         Me.Title_islandname.BackColor = System.Drawing.Color.Transparent
-        Me.Title_islandname.Location = New System.Drawing.Point(49, 85)
+        Me.Title_islandname.Location = New System.Drawing.Point(49, 17)
         Me.Title_islandname.Name = "Title_islandname"
         Me.Title_islandname.Size = New System.Drawing.Size(156, 13)
         Me.Title_islandname.TabIndex = 43
@@ -1737,7 +2043,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_islandname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_islandname.Controls.Add(Me.Text_islandname)
-        Me.Panel_islandname.Location = New System.Drawing.Point(47, 99)
+        Me.Panel_islandname.Location = New System.Drawing.Point(47, 31)
         Me.Panel_islandname.Name = "Panel_islandname"
         Me.Panel_islandname.Size = New System.Drawing.Size(160, 17)
         Me.Panel_islandname.TabIndex = 42
@@ -1757,7 +2063,7 @@ Partial Class TL_SaveEditor
         Me.Text_pronun_islandname.AutoSize = True
         Me.Text_pronun_islandname.BackColor = System.Drawing.Color.White
         Me.Text_pronun_islandname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Text_pronun_islandname.Location = New System.Drawing.Point(49, 121)
+        Me.Text_pronun_islandname.Location = New System.Drawing.Point(49, 53)
         Me.Text_pronun_islandname.Name = "Text_pronun_islandname"
         Me.Text_pronun_islandname.Size = New System.Drawing.Size(2, 15)
         Me.Text_pronun_islandname.TabIndex = 27
@@ -1768,7 +2074,7 @@ Partial Class TL_SaveEditor
         Me.Icon_pronun_islandname.BackColor = System.Drawing.Color.Transparent
         Me.Icon_pronun_islandname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_pronun_islandname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_pronunciation
-        Me.Icon_pronun_islandname.Location = New System.Drawing.Point(207, 96)
+        Me.Icon_pronun_islandname.Location = New System.Drawing.Point(207, 28)
         Me.Icon_pronun_islandname.Name = "Icon_pronun_islandname"
         Me.Icon_pronun_islandname.Size = New System.Drawing.Size(22, 22)
         Me.Icon_pronun_islandname.TabIndex = 24
@@ -1778,7 +2084,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_islandname.BackColor = System.Drawing.Color.Transparent
         Me.Icon_islandname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_island
-        Me.Icon_islandname.Location = New System.Drawing.Point(28, 97)
+        Me.Icon_islandname.Location = New System.Drawing.Point(28, 29)
         Me.Icon_islandname.Name = "Icon_islandname"
         Me.Icon_islandname.Size = New System.Drawing.Size(18, 20)
         Me.Icon_islandname.TabIndex = 25
@@ -2485,6 +2791,8 @@ Partial Class TL_SaveEditor
         'Panel_extras
         '
         Me.Panel_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_extras.Controls.Add(Me.Check_resetnewsflash)
+        Me.Panel_extras.Controls.Add(Me.PictureBox3)
         Me.Panel_extras.Controls.Add(Me.Check_resetmiiapart)
         Me.Panel_extras.Controls.Add(Me.Fea_edit_concert)
         Me.Panel_extras.Controls.Add(Me.Icon_resetmiiapart)
@@ -2498,6 +2806,34 @@ Partial Class TL_SaveEditor
         Me.Panel_extras.Size = New System.Drawing.Size(600, 490)
         Me.Panel_extras.TabIndex = 24
         Me.Panel_extras.Visible = False
+        '
+        'Check_resetnewsflash
+        '
+        Me.Check_resetnewsflash.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_resetnewsflash.AutoSize = True
+        Me.Check_resetnewsflash.BackColor = System.Drawing.Color.White
+        Me.Check_resetnewsflash.FlatAppearance.BorderSize = 0
+        Me.Check_resetnewsflash.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_resetnewsflash.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_resetnewsflash.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_resetnewsflash.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_resetnewsflash.Location = New System.Drawing.Point(95, 221)
+        Me.Check_resetnewsflash.Name = "Check_resetnewsflash"
+        Me.Check_resetnewsflash.Size = New System.Drawing.Size(103, 23)
+        Me.Check_resetnewsflash.TabIndex = 68
+        Me.Check_resetnewsflash.Text = "Reset News Flash"
+        Me.Check_resetnewsflash.UseVisualStyleBackColor = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_newsflash
+        Me.PictureBox3.Location = New System.Drawing.Point(4, 220)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(86, 25)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 67
+        Me.PictureBox3.TabStop = False
         '
         'Check_resetmiiapart
         '
@@ -2522,7 +2858,7 @@ Partial Class TL_SaveEditor
         Me.Fea_edit_concert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Fea_edit_concert.Controls.Add(Me.Icon_edit_concert)
         Me.Fea_edit_concert.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Fea_edit_concert.Location = New System.Drawing.Point(290, 238)
+        Me.Fea_edit_concert.Location = New System.Drawing.Point(290, 319)
         Me.Fea_edit_concert.Name = "Fea_edit_concert"
         Me.Fea_edit_concert.Size = New System.Drawing.Size(137, 60)
         Me.Fea_edit_concert.TabIndex = 9
@@ -2545,7 +2881,7 @@ Partial Class TL_SaveEditor
         Me.Fea_edit_travelers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Fea_edit_travelers.Controls.Add(Me.Icon_edit_travelers)
         Me.Fea_edit_travelers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Fea_edit_travelers.Location = New System.Drawing.Point(174, 238)
+        Me.Fea_edit_travelers.Location = New System.Drawing.Point(174, 319)
         Me.Fea_edit_travelers.Name = "Fea_edit_travelers"
         Me.Fea_edit_travelers.Size = New System.Drawing.Size(60, 60)
         Me.Fea_edit_travelers.TabIndex = 8
@@ -2857,7 +3193,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(471, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Beta ver. 3.0.0"
+        Me.Text_TLSE_version.Text = "Version 3.0.0"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -2884,6 +3220,10 @@ Partial Class TL_SaveEditor
         'Panel11
         '
         Me.Panel11.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel11.Controls.Add(Me.Icon_MarioPartyITSE)
+        Me.Panel11.Controls.Add(Me.Icon_PaparMarioSSSE)
+        Me.Panel11.Controls.Add(Me.Icon_nintendogscatSE)
+        Me.Panel11.Controls.Add(Me.Icon_IronfallISE)
         Me.Panel11.Controls.Add(Me.Icon_TLSE)
         Me.Panel11.Controls.Add(Me.Icon_ChibiRoboZLSE)
         Me.Panel11.Controls.Add(Me.Icon_3dsSEL)
@@ -2893,11 +3233,55 @@ Partial Class TL_SaveEditor
         Me.Panel11.Size = New System.Drawing.Size(60, 462)
         Me.Panel11.TabIndex = 0
         '
+        'Icon_MarioPartyITSE
+        '
+        Me.Icon_MarioPartyITSE.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_MarioPartyITSE.Image = CType(resources.GetObject("Icon_MarioPartyITSE.Image"), System.Drawing.Image)
+        Me.Icon_MarioPartyITSE.Location = New System.Drawing.Point(7, 342)
+        Me.Icon_MarioPartyITSE.Name = "Icon_MarioPartyITSE"
+        Me.Icon_MarioPartyITSE.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_MarioPartyITSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Icon_MarioPartyITSE.TabIndex = 7
+        Me.Icon_MarioPartyITSE.TabStop = False
+        '
+        'Icon_PaparMarioSSSE
+        '
+        Me.Icon_PaparMarioSSSE.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_PaparMarioSSSE.Image = CType(resources.GetObject("Icon_PaparMarioSSSE.Image"), System.Drawing.Image)
+        Me.Icon_PaparMarioSSSE.Location = New System.Drawing.Point(7, 180)
+        Me.Icon_PaparMarioSSSE.Name = "Icon_PaparMarioSSSE"
+        Me.Icon_PaparMarioSSSE.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_PaparMarioSSSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Icon_PaparMarioSSSE.TabIndex = 6
+        Me.Icon_PaparMarioSSSE.TabStop = False
+        '
+        'Icon_nintendogscatSE
+        '
+        Me.Icon_nintendogscatSE.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_nintendogscatSE.Image = CType(resources.GetObject("Icon_nintendogscatSE.Image"), System.Drawing.Image)
+        Me.Icon_nintendogscatSE.Location = New System.Drawing.Point(7, 288)
+        Me.Icon_nintendogscatSE.Name = "Icon_nintendogscatSE"
+        Me.Icon_nintendogscatSE.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_nintendogscatSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Icon_nintendogscatSE.TabIndex = 5
+        Me.Icon_nintendogscatSE.TabStop = False
+        '
+        'Icon_IronfallISE
+        '
+        Me.Icon_IronfallISE.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_IronfallISE.Image = CType(resources.GetObject("Icon_IronfallISE.Image"), System.Drawing.Image)
+        Me.Icon_IronfallISE.Location = New System.Drawing.Point(7, 234)
+        Me.Icon_IronfallISE.Name = "Icon_IronfallISE"
+        Me.Icon_IronfallISE.Size = New System.Drawing.Size(48, 48)
+        Me.Icon_IronfallISE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Icon_IronfallISE.TabIndex = 4
+        Me.Icon_IronfallISE.TabStop = False
+        '
         'Icon_TLSE
         '
         Me.Icon_TLSE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_TLSE.Image = CType(resources.GetObject("Icon_TLSE.Image"), System.Drawing.Image)
-        Me.Icon_TLSE.Location = New System.Drawing.Point(6, 6)
+        Me.Icon_TLSE.Location = New System.Drawing.Point(7, 18)
         Me.Icon_TLSE.Name = "Icon_TLSE"
         Me.Icon_TLSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_TLSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2908,7 +3292,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_ChibiRoboZLSE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_ChibiRoboZLSE.Image = CType(resources.GetObject("Icon_ChibiRoboZLSE.Image"), System.Drawing.Image)
-        Me.Icon_ChibiRoboZLSE.Location = New System.Drawing.Point(6, 115)
+        Me.Icon_ChibiRoboZLSE.Location = New System.Drawing.Point(7, 126)
         Me.Icon_ChibiRoboZLSE.Name = "Icon_ChibiRoboZLSE"
         Me.Icon_ChibiRoboZLSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_ChibiRoboZLSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2918,7 +3302,7 @@ Partial Class TL_SaveEditor
         'Icon_3dsSEL
         '
         Me.Icon_3dsSEL.Image = CType(resources.GetObject("Icon_3dsSEL.Image"), System.Drawing.Image)
-        Me.Icon_3dsSEL.Location = New System.Drawing.Point(6, 169)
+        Me.Icon_3dsSEL.Location = New System.Drawing.Point(7, 396)
         Me.Icon_3dsSEL.Name = "Icon_3dsSEL"
         Me.Icon_3dsSEL.Size = New System.Drawing.Size(48, 48)
         Me.Icon_3dsSEL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -2929,7 +3313,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_MiitopiaSE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_MiitopiaSE.Image = CType(resources.GetObject("Icon_MiitopiaSE.Image"), System.Drawing.Image)
-        Me.Icon_MiitopiaSE.Location = New System.Drawing.Point(6, 60)
+        Me.Icon_MiitopiaSE.Location = New System.Drawing.Point(7, 72)
         Me.Icon_MiitopiaSE.Name = "Icon_MiitopiaSE"
         Me.Icon_MiitopiaSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_MiitopiaSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -7243,8 +7627,8 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Menu_panel)
         Me.Controls.Add(Me.Menu_button)
         Me.Controls.Add(Me.TLSE_header)
-        Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_miiedit)
+        Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_settings)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -7275,6 +7659,27 @@ Partial Class TL_SaveEditor
         Me.Menu_button.ResumeLayout(False)
         Me.Panel_islandedit.ResumeLayout(False)
         Me.Panel_islandedit.PerformLayout()
+        Me.Panel12.ResumeLayout(False)
+        CType(Me.valu_rank_splurge, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_rank_traveler, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_rank_island, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_rank_romance, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_rank_friendship, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_rank_pampered, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_rank_girlcharm, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_rank_boycharm, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_rank_popularity, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_rank_vitality, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rank_splurge, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rank_traveler, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rank_island, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rank_romance, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rank_friendship, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rank_pampered, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rank_girlcharm, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rank_boycharm, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rank_popularity, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_rank_vitality, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.value_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_info_building, System.ComponentModel.ISupportInitialize).EndInit()
@@ -7365,6 +7770,7 @@ Partial Class TL_SaveEditor
         Me.Panel_menu_opensave.ResumeLayout(False)
         Me.Panel_extras.ResumeLayout(False)
         Me.Panel_extras.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Fea_edit_concert.ResumeLayout(False)
         CType(Me.Icon_edit_concert, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Fea_edit_travelers.ResumeLayout(False)
@@ -7390,6 +7796,10 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Settings_credits.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
+        CType(Me.Icon_MarioPartyITSE, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_PaparMarioSSSE, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_nintendogscatSE, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_IronfallISE, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_TLSE, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_ChibiRoboZLSE, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_3dsSEL, System.ComponentModel.ISupportInitialize).EndInit()
@@ -8209,5 +8619,33 @@ Partial Class TL_SaveEditor
     Friend WithEvents Icon_TLSE As System.Windows.Forms.PictureBox
     Friend WithEvents Text_danger_interaction As System.Windows.Forms.Label
     Friend WithEvents Danger_interaction As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel12 As System.Windows.Forms.Panel
+    Friend WithEvents Icon_rank_splurge As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_rank_traveler As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_rank_island As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_rank_romance As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_rank_friendship As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_rank_pampered As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_rank_girlcharm As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_rank_boycharm As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_rank_popularity As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_rank_vitality As System.Windows.Forms.PictureBox
+    Friend WithEvents Title_rankingboard As System.Windows.Forms.Label
+    Friend WithEvents valu_rank_splurge As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_rank_traveler As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_rank_island As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_rank_romance As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_rank_friendship As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_rank_pampered As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_rank_girlcharm As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_rank_boycharm As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_rank_popularity As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_rank_vitality As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Check_resetnewsflash As System.Windows.Forms.CheckBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_MarioPartyITSE As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_PaparMarioSSSE As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_nintendogscatSE As System.Windows.Forms.PictureBox
+    Friend WithEvents Icon_IronfallISE As System.Windows.Forms.PictureBox
 
 End Class

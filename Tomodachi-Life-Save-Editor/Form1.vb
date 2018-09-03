@@ -171,6 +171,17 @@ Public Class TL_SaveEditor
     Dim Equclothes As String
     Dim Equhats As String
     Dim Equinteriors As String
+    Dim Rank_vitality As String
+    Dim Rank_popularity As String
+    Dim Rank_boycharm As String
+    Dim Rank_girlcharm As String
+    Dim Rank_pampered As String
+    Dim Rank_friendship As String
+    Dim Rank_romance As String
+    Dim Rank_island As String
+    Dim Rank_traveler As String
+    Dim Rank_splurge As String
+    Dim accessappartMii As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -623,6 +634,36 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1E4C79
                 appartrenov = Reader.Position
                 value_appartrenov.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C3E
+                Rank_vitality = Reader.Position
+                valu_rank_vitality.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C3F
+                Rank_popularity = Reader.Position
+                valu_rank_popularity.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C40
+                Rank_friendship = Reader.Position
+                valu_rank_friendship.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C41
+                Rank_romance = Reader.Position
+                valu_rank_romance.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C42
+                Rank_boycharm = Reader.Position
+                valu_rank_boycharm.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C43
+                Rank_girlcharm = Reader.Position
+                valu_rank_girlcharm.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C44
+                Rank_pampered = Reader.Position
+                valu_rank_pampered.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C45
+                Rank_splurge = Reader.Position
+                valu_rank_splurge.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C46
+                Rank_traveler = Reader.Position
+                valu_rank_traveler.Value = Reader.ReadInt8
+                Reader.Position = &H1E4C47
+                Rank_island = Reader.Position
+                valu_rank_island.Value = Reader.ReadInt8
             End If
             If Filever_text.Text = "JP" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
@@ -719,6 +760,36 @@ Public Class TL_SaveEditor
                 Reader.Position = &H14BD49
                 appartrenov = Reader.Position
                 value_appartrenov.Value = Reader.ReadInt8
+                Reader.Position = &H14BD0E
+                Rank_vitality = Reader.Position
+                valu_rank_vitality.Value = Reader.ReadInt8
+                Reader.Position = &H14BD0F
+                Rank_popularity = Reader.Position
+                valu_rank_popularity.Value = Reader.ReadInt8
+                Reader.Position = &H14BD10
+                Rank_friendship = Reader.Position
+                valu_rank_friendship.Value = Reader.ReadInt8
+                Reader.Position = &H14BD11
+                Rank_romance = Reader.Position
+                valu_rank_romance.Value = Reader.ReadInt8
+                Reader.Position = &H14BD12
+                Rank_boycharm = Reader.Position
+                valu_rank_boycharm.Value = Reader.ReadInt8
+                Reader.Position = &H14BD13
+                Rank_girlcharm = Reader.Position
+                valu_rank_girlcharm.Value = Reader.ReadInt8
+                Reader.Position = &H14BD14
+                Rank_pampered = Reader.Position
+                valu_rank_pampered.Value = Reader.ReadInt8
+                Reader.Position = &H14BD15
+                Rank_splurge = Reader.Position
+                valu_rank_splurge.Value = Reader.ReadInt8
+                Reader.Position = &H14BD16
+                Rank_traveler = Reader.Position
+                valu_rank_traveler.Value = Reader.ReadInt8
+                Reader.Position = &H14BD17
+                Rank_island = Reader.Position
+                valu_rank_island.Value = Reader.ReadInt8
             End If
             If Filever_text.Text = "KR" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
@@ -824,6 +895,36 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1F0029
                 appartrenov = Reader.Position
                 value_appartrenov.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFEE
+                Rank_vitality = Reader.Position
+                valu_rank_vitality.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFEF
+                Rank_popularity = Reader.Position
+                valu_rank_popularity.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFF0
+                Rank_friendship = Reader.Position
+                valu_rank_friendship.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFF1
+                Rank_romance = Reader.Position
+                valu_rank_romance.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFF2
+                Rank_boycharm = Reader.Position
+                valu_rank_boycharm.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFF3
+                Rank_girlcharm = Reader.Position
+                valu_rank_girlcharm.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFF4
+                Rank_pampered = Reader.Position
+                valu_rank_pampered.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFF5
+                Rank_splurge = Reader.Position
+                valu_rank_splurge.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFF6
+                Rank_traveler = Reader.Position
+                valu_rank_traveler.Value = Reader.ReadInt8
+                Reader.Position = &H1EFFF7
+                Rank_island = Reader.Position
+                valu_rank_island.Value = Reader.ReadInt8
             End If
             Text_menu_open.Visible = False
             Text_menu_save.Visible = True
@@ -914,6 +1015,26 @@ Public Class TL_SaveEditor
             Writer.WriteUInt32(value_eventfountain.Value)
             Writer.Position = appartrenov
             Writer.WriteInt8(value_appartrenov.Value)
+            Writer.Position = Rank_boycharm
+            Writer.WriteInt8(valu_rank_boycharm.Value)
+            Writer.Position = Rank_friendship
+            Writer.WriteInt8(valu_rank_friendship.Value)
+            Writer.Position = Rank_girlcharm
+            Writer.WriteInt8(valu_rank_girlcharm.Value)
+            Writer.Position = Rank_island
+            Writer.WriteInt8(valu_rank_island.Value)
+            Writer.Position = Rank_pampered
+            Writer.WriteInt8(valu_rank_pampered.Value)
+            Writer.Position = Rank_popularity
+            Writer.WriteInt8(valu_rank_popularity.Value)
+            Writer.Position = Rank_romance
+            Writer.WriteInt8(valu_rank_romance.Value)
+            Writer.Position = Rank_splurge
+            Writer.WriteInt8(valu_rank_splurge.Value)
+            Writer.Position = Rank_traveler
+            Writer.WriteInt8(valu_rank_traveler.Value)
+            Writer.Position = Rank_vitality
+            Writer.WriteInt8(valu_rank_vitality.Value)
             If Filever_text.Text = "EU" Then
                 For i As Integer = 0 To 19
                     Writer.Position = Islp + i
@@ -932,6 +1053,12 @@ Public Class TL_SaveEditor
                 If Check_resetstpspp.Checked = True Then
                     Writer.Position = &H1E4C71
                     Writer.WriteInt8(0)
+                End If
+                If Check_resetnewsflash.Checked = True Then
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1E4C48 + i
+                        Writer.WriteInt8(0)
+                    Next
                 End If
             End If
             If Filever_text.Text = "US" Then
@@ -953,6 +1080,12 @@ Public Class TL_SaveEditor
                     Writer.Position = &H1E4C71
                     Writer.WriteInt8(0)
                 End If
+                If Check_resetnewsflash.Checked = True Then
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1E4C48 + i
+                        Writer.WriteInt8(0)
+                    Next
+                End If
             End If
             If Filever_text.Text = "JP" Then
                 If Check_timetravel.Checked = True Then
@@ -962,6 +1095,12 @@ Public Class TL_SaveEditor
                 If Check_resetstpspp.Checked = True Then
                     Writer.Position = &H14BD41
                     Writer.WriteInt8(0)
+                End If
+                If Check_resetnewsflash.Checked = True Then
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H14BD18 + i
+                        Writer.WriteInt8(0)
+                    Next
                 End If
             End If
             If Filever_text.Text = "KR" Then
@@ -983,208 +1122,219 @@ Public Class TL_SaveEditor
                     Writer.Position = &H1F0021
                     Writer.WriteInt8(0)
                 End If
+                If Check_resetnewsflash.Checked = True Then
+                    For i As Integer = 0 To 4
+                        Writer.Position = &H1EFFF8 + i
+                        Writer.WriteInt8(0)
+                    Next
+                End If
             End If
             If Check_resetmiiapart.Checked = True Then
+                If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
+                    accessappartMii = &H22A8
+                ElseIf Filever_text.Text = "JP" Then
+                    accessappartMii = &H21A8
+                End If
                 Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
-                fs.Position = &H22A8
+                fs.Position = accessappartMii
                 fs.WriteByte(0)
-                fs.Position = &H22A8 + &H660
+                fs.Position = accessappartMii + &H660
                 fs.WriteByte(1)
-                fs.Position = &H22A8 + (&H660 * 2)
+                fs.Position = accessappartMii + (&H660 * 2)
                 fs.WriteByte(2)
-                fs.Position = &H22A8 + (&H660 * 3)
+                fs.Position = accessappartMii + (&H660 * 3)
                 fs.WriteByte(3)
-                fs.Position = &H22A8 + (&H660 * 4)
+                fs.Position = accessappartMii + (&H660 * 4)
                 fs.WriteByte(4)
-                fs.Position = &H22A8 + (&H660 * 5)
+                fs.Position = accessappartMii + (&H660 * 5)
                 fs.WriteByte(5)
-                fs.Position = &H22A8 + (&H660 * 6)
+                fs.Position = accessappartMii + (&H660 * 6)
                 fs.WriteByte(6)
-                fs.Position = &H22A8 + (&H660 * 7)
+                fs.Position = accessappartMii + (&H660 * 7)
                 fs.WriteByte(7)
-                fs.Position = &H22A8 + (&H660 * 8)
+                fs.Position = accessappartMii + (&H660 * 8)
                 fs.WriteByte(8)
-                fs.Position = &H22A8 + (&H660 * 9)
+                fs.Position = accessappartMii + (&H660 * 9)
                 fs.WriteByte(9)
-                fs.Position = &H22A8 + (&H660 * 10)
+                fs.Position = accessappartMii + (&H660 * 10)
                 fs.WriteByte(10)
-                fs.Position = &H22A8 + (&H660 * 11)
+                fs.Position = accessappartMii + (&H660 * 11)
                 fs.WriteByte(11)
-                fs.Position = &H22A8 + (&H660 * 12)
+                fs.Position = accessappartMii + (&H660 * 12)
                 fs.WriteByte(12)
-                fs.Position = &H22A8 + (&H660 * 13)
+                fs.Position = accessappartMii + (&H660 * 13)
                 fs.WriteByte(13)
-                fs.Position = &H22A8 + (&H660 * 14)
+                fs.Position = accessappartMii + (&H660 * 14)
                 fs.WriteByte(14)
-                fs.Position = &H22A8 + (&H660 * 15)
+                fs.Position = accessappartMii + (&H660 * 15)
                 fs.WriteByte(15)
-                fs.Position = &H22A8 + (&H660 * 16)
+                fs.Position = accessappartMii + (&H660 * 16)
                 fs.WriteByte(16)
-                fs.Position = &H22A8 + (&H660 * 17)
+                fs.Position = accessappartMii + (&H660 * 17)
                 fs.WriteByte(17)
-                fs.Position = &H22A8 + (&H660 * 18)
+                fs.Position = accessappartMii + (&H660 * 18)
                 fs.WriteByte(18)
-                fs.Position = &H22A8 + (&H660 * 19)
+                fs.Position = accessappartMii + (&H660 * 19)
                 fs.WriteByte(19)
-                fs.Position = &H22A8 + (&H660 * 20)
+                fs.Position = accessappartMii + (&H660 * 20)
                 fs.WriteByte(20)
-                fs.Position = &H22A8 + (&H660 * 21)
+                fs.Position = accessappartMii + (&H660 * 21)
                 fs.WriteByte(21)
-                fs.Position = &H22A8 + (&H660 * 22)
+                fs.Position = accessappartMii + (&H660 * 22)
                 fs.WriteByte(22)
-                fs.Position = &H22A8 + (&H660 * 23)
+                fs.Position = accessappartMii + (&H660 * 23)
                 fs.WriteByte(23)
-                fs.Position = &H22A8 + (&H660 * 24)
+                fs.Position = accessappartMii + (&H660 * 24)
                 fs.WriteByte(24)
-                fs.Position = &H22A8 + (&H660 * 25)
+                fs.Position = accessappartMii + (&H660 * 25)
                 fs.WriteByte(25)
-                fs.Position = &H22A8 + (&H660 * 26)
+                fs.Position = accessappartMii + (&H660 * 26)
                 fs.WriteByte(26)
-                fs.Position = &H22A8 + (&H660 * 27)
+                fs.Position = accessappartMii + (&H660 * 27)
                 fs.WriteByte(27)
-                fs.Position = &H22A8 + (&H660 * 28)
+                fs.Position = accessappartMii + (&H660 * 28)
                 fs.WriteByte(28)
-                fs.Position = &H22A8 + (&H660 * 29)
+                fs.Position = accessappartMii + (&H660 * 29)
                 fs.WriteByte(29)
-                fs.Position = &H22A8 + (&H660 * 30)
+                fs.Position = accessappartMii + (&H660 * 30)
                 fs.WriteByte(30)
-                fs.Position = &H22A8 + (&H660 * 31)
+                fs.Position = accessappartMii + (&H660 * 31)
                 fs.WriteByte(31)
-                fs.Position = &H22A8 + (&H660 * 32)
+                fs.Position = accessappartMii + (&H660 * 32)
                 fs.WriteByte(32)
-                fs.Position = &H22A8 + (&H660 * 33)
+                fs.Position = accessappartMii + (&H660 * 33)
                 fs.WriteByte(33)
-                fs.Position = &H22A8 + (&H660 * 34)
+                fs.Position = accessappartMii + (&H660 * 34)
                 fs.WriteByte(34)
-                fs.Position = &H22A8 + (&H660 * 35)
+                fs.Position = accessappartMii + (&H660 * 35)
                 fs.WriteByte(35)
-                fs.Position = &H22A8 + (&H660 * 36)
+                fs.Position = accessappartMii + (&H660 * 36)
                 fs.WriteByte(36)
-                fs.Position = &H22A8 + (&H660 * 37)
+                fs.Position = accessappartMii + (&H660 * 37)
                 fs.WriteByte(37)
-                fs.Position = &H22A8 + (&H660 * 38)
+                fs.Position = accessappartMii + (&H660 * 38)
                 fs.WriteByte(38)
-                fs.Position = &H22A8 + (&H660 * 39)
+                fs.Position = accessappartMii + (&H660 * 39)
                 fs.WriteByte(39)
-                fs.Position = &H22A8 + (&H660 * 40)
+                fs.Position = accessappartMii + (&H660 * 40)
                 fs.WriteByte(40)
-                fs.Position = &H22A8 + (&H660 * 41)
+                fs.Position = accessappartMii + (&H660 * 41)
                 fs.WriteByte(41)
-                fs.Position = &H22A8 + (&H660 * 42)
+                fs.Position = accessappartMii + (&H660 * 42)
                 fs.WriteByte(42)
-                fs.Position = &H22A8 + (&H660 * 43)
+                fs.Position = accessappartMii + (&H660 * 43)
                 fs.WriteByte(43)
-                fs.Position = &H22A8 + (&H660 * 44)
+                fs.Position = accessappartMii + (&H660 * 44)
                 fs.WriteByte(44)
-                fs.Position = &H22A8 + (&H660 * 45)
+                fs.Position = accessappartMii + (&H660 * 45)
                 fs.WriteByte(45)
-                fs.Position = &H22A8 + (&H660 * 46)
+                fs.Position = accessappartMii + (&H660 * 46)
                 fs.WriteByte(46)
-                fs.Position = &H22A8 + (&H660 * 47)
+                fs.Position = accessappartMii + (&H660 * 47)
                 fs.WriteByte(47)
-                fs.Position = &H22A8 + (&H660 * 48)
+                fs.Position = accessappartMii + (&H660 * 48)
                 fs.WriteByte(48)
-                fs.Position = &H22A8 + (&H660 * 49)
+                fs.Position = accessappartMii + (&H660 * 49)
                 fs.WriteByte(49)
-                fs.Position = &H22A8 + (&H660 * 50)
+                fs.Position = accessappartMii + (&H660 * 50)
                 fs.WriteByte(50)
-                fs.Position = &H22A8 + (&H660 * 51)
+                fs.Position = accessappartMii + (&H660 * 51)
                 fs.WriteByte(51)
-                fs.Position = &H22A8 + (&H660 * 52)
+                fs.Position = accessappartMii + (&H660 * 52)
                 fs.WriteByte(52)
-                fs.Position = &H22A8 + (&H660 * 53)
+                fs.Position = accessappartMii + (&H660 * 53)
                 fs.WriteByte(53)
-                fs.Position = &H22A8 + (&H660 * 54)
+                fs.Position = accessappartMii + (&H660 * 54)
                 fs.WriteByte(54)
-                fs.Position = &H22A8 + (&H660 * 55)
+                fs.Position = accessappartMii + (&H660 * 55)
                 fs.WriteByte(55)
-                fs.Position = &H22A8 + (&H660 * 56)
+                fs.Position = accessappartMii + (&H660 * 56)
                 fs.WriteByte(56)
-                fs.Position = &H22A8 + (&H660 * 57)
+                fs.Position = accessappartMii + (&H660 * 57)
                 fs.WriteByte(57)
-                fs.Position = &H22A8 + (&H660 * 58)
+                fs.Position = accessappartMii + (&H660 * 58)
                 fs.WriteByte(58)
-                fs.Position = &H22A8 + (&H660 * 59)
+                fs.Position = accessappartMii + (&H660 * 59)
                 fs.WriteByte(59)
-                fs.Position = &H22A8 + (&H660 * 60)
+                fs.Position = accessappartMii + (&H660 * 60)
                 fs.WriteByte(60)
-                fs.Position = &H22A8 + (&H660 * 61)
+                fs.Position = accessappartMii + (&H660 * 61)
                 fs.WriteByte(61)
-                fs.Position = &H22A8 + (&H660 * 62)
+                fs.Position = accessappartMii + (&H660 * 62)
                 fs.WriteByte(62)
-                fs.Position = &H22A8 + (&H660 * 63)
+                fs.Position = accessappartMii + (&H660 * 63)
                 fs.WriteByte(63)
-                fs.Position = &H22A8 + (&H660 * 64)
+                fs.Position = accessappartMii + (&H660 * 64)
                 fs.WriteByte(64)
-                fs.Position = &H22A8 + (&H660 * 65)
+                fs.Position = accessappartMii + (&H660 * 65)
                 fs.WriteByte(65)
-                fs.Position = &H22A8 + (&H660 * 66)
+                fs.Position = accessappartMii + (&H660 * 66)
                 fs.WriteByte(66)
-                fs.Position = &H22A8 + (&H660 * 67)
+                fs.Position = accessappartMii + (&H660 * 67)
                 fs.WriteByte(67)
-                fs.Position = &H22A8 + (&H660 * 68)
+                fs.Position = accessappartMii + (&H660 * 68)
                 fs.WriteByte(68)
-                fs.Position = &H22A8 + (&H660 * 69)
+                fs.Position = accessappartMii + (&H660 * 69)
                 fs.WriteByte(69)
-                fs.Position = &H22A8 + (&H660 * 70)
+                fs.Position = accessappartMii + (&H660 * 70)
                 fs.WriteByte(70)
-                fs.Position = &H22A8 + (&H660 * 71)
+                fs.Position = accessappartMii + (&H660 * 71)
                 fs.WriteByte(71)
-                fs.Position = &H22A8 + (&H660 * 72)
+                fs.Position = accessappartMii + (&H660 * 72)
                 fs.WriteByte(72)
-                fs.Position = &H22A8 + (&H660 * 73)
+                fs.Position = accessappartMii + (&H660 * 73)
                 fs.WriteByte(73)
-                fs.Position = &H22A8 + (&H660 * 74)
+                fs.Position = accessappartMii + (&H660 * 74)
                 fs.WriteByte(74)
-                fs.Position = &H22A8 + (&H660 * 75)
+                fs.Position = accessappartMii + (&H660 * 75)
                 fs.WriteByte(75)
-                fs.Position = &H22A8 + (&H660 * 76)
+                fs.Position = accessappartMii + (&H660 * 76)
                 fs.WriteByte(76)
-                fs.Position = &H22A8 + (&H660 * 77)
+                fs.Position = accessappartMii + (&H660 * 77)
                 fs.WriteByte(77)
-                fs.Position = &H22A8 + (&H660 * 78)
+                fs.Position = accessappartMii + (&H660 * 78)
                 fs.WriteByte(78)
-                fs.Position = &H22A8 + (&H660 * 79)
+                fs.Position = accessappartMii + (&H660 * 79)
                 fs.WriteByte(79)
-                fs.Position = &H22A8 + (&H660 * 80)
+                fs.Position = accessappartMii + (&H660 * 80)
                 fs.WriteByte(80)
-                fs.Position = &H22A8 + (&H660 * 81)
+                fs.Position = accessappartMii + (&H660 * 81)
                 fs.WriteByte(81)
-                fs.Position = &H22A8 + (&H660 * 82)
+                fs.Position = accessappartMii + (&H660 * 82)
                 fs.WriteByte(82)
-                fs.Position = &H22A8 + (&H660 * 83)
+                fs.Position = accessappartMii + (&H660 * 83)
                 fs.WriteByte(83)
-                fs.Position = &H22A8 + (&H660 * 84)
+                fs.Position = accessappartMii + (&H660 * 84)
                 fs.WriteByte(84)
-                fs.Position = &H22A8 + (&H660 * 85)
+                fs.Position = accessappartMii + (&H660 * 85)
                 fs.WriteByte(85)
-                fs.Position = &H22A8 + (&H660 * 86)
+                fs.Position = accessappartMii + (&H660 * 86)
                 fs.WriteByte(86)
-                fs.Position = &H22A8 + (&H660 * 87)
+                fs.Position = accessappartMii + (&H660 * 87)
                 fs.WriteByte(87)
-                fs.Position = &H22A8 + (&H660 * 88)
+                fs.Position = accessappartMii + (&H660 * 88)
                 fs.WriteByte(88)
-                fs.Position = &H22A8 + (&H660 * 89)
+                fs.Position = accessappartMii + (&H660 * 89)
                 fs.WriteByte(89)
-                fs.Position = &H22A8 + (&H660 * 90)
+                fs.Position = accessappartMii + (&H660 * 90)
                 fs.WriteByte(90)
-                fs.Position = &H22A8 + (&H660 * 91)
+                fs.Position = accessappartMii + (&H660 * 91)
                 fs.WriteByte(91)
-                fs.Position = &H22A8 + (&H660 * 92)
+                fs.Position = accessappartMii + (&H660 * 92)
                 fs.WriteByte(92)
-                fs.Position = &H22A8 + (&H660 * 93)
+                fs.Position = accessappartMii + (&H660 * 93)
                 fs.WriteByte(93)
-                fs.Position = &H22A8 + (&H660 * 94)
+                fs.Position = accessappartMii + (&H660 * 94)
                 fs.WriteByte(94)
-                fs.Position = &H22A8 + (&H660 * 95)
+                fs.Position = accessappartMii + (&H660 * 95)
                 fs.WriteByte(95)
-                fs.Position = &H22A8 + (&H660 * 96)
+                fs.Position = accessappartMii + (&H660 * 96)
                 fs.WriteByte(96)
-                fs.Position = &H22A8 + (&H660 * 97)
+                fs.Position = accessappartMii + (&H660 * 97)
                 fs.WriteByte(97)
-                fs.Position = &H22A8 + (&H660 * 98)
+                fs.Position = accessappartMii + (&H660 * 98)
                 fs.WriteByte(98)
-                fs.Position = &H22A8 + (&H660 * 99)
+                fs.Position = accessappartMii + (&H660 * 99)
                 fs.WriteByte(99)
             End If
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
@@ -3492,6 +3642,8 @@ Public Class TL_SaveEditor
             Settings_changelog.Text = "Changelog"
             Settings_credits.Text = "Credits"
             Settings_settings.Text = "Settings"
+            Title_rankingboard.Text = "Ranking board"
+            Check_resetnewsflash.Text = "Reset News flash"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_menu_button.Text = "Menu"
             Text_menu_open.Text = "Ouvrir"
@@ -3908,6 +4060,8 @@ Public Class TL_SaveEditor
             Settings_changelog.Text = "Changelog"
             Settings_credits.Text = "Crédits"
             Settings_settings.Text = "Paramètres"
+            Title_rankingboard.Text = "Classements"
+            Check_resetnewsflash.Text = "Réinitialiser les Flash info"
         End If
     End Sub
 
@@ -4460,6 +4614,16 @@ Public Class TL_SaveEditor
             valu_selfriend_rela_28.Visible = True
             valu_selfriend_rela_29.Visible = True
             valu_selfriend_rela_30.Visible = True
+            valu_rank_boycharm.Visible = True
+            valu_rank_friendship.Visible = True
+            valu_rank_girlcharm.Visible = True
+            valu_rank_island.Visible = True
+            valu_rank_pampered.Visible = True
+            valu_rank_popularity.Visible = True
+            valu_rank_romance.Visible = True
+            valu_rank_splurge.Visible = True
+            valu_rank_traveler.Visible = True
+            valu_rank_vitality.Visible = True
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
                 Select_allfav_1.Visible = False
                 Select_allfav_2.Visible = False
@@ -4548,6 +4712,16 @@ Public Class TL_SaveEditor
             valu_selfriend_rela_28.Visible = False
             valu_selfriend_rela_29.Visible = False
             valu_selfriend_rela_30.Visible = False
+            valu_rank_boycharm.Visible = False
+            valu_rank_friendship.Visible = False
+            valu_rank_girlcharm.Visible = False
+            valu_rank_island.Visible = False
+            valu_rank_pampered.Visible = False
+            valu_rank_popularity.Visible = False
+            valu_rank_romance.Visible = False
+            valu_rank_splurge.Visible = False
+            valu_rank_traveler.Visible = False
+            valu_rank_vitality.Visible = False
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
                 Select_allfav_1.Visible = True
                 Select_allfav_2.Visible = True
@@ -9910,6 +10084,100 @@ Public Class TL_SaveEditor
             Text_description.Text = "Click to download and try Chibi Robo zip Lash Save Editor"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_description.Text = "Cliquez pour télécharger et essayer Chibi Robo zip Lash Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_PaparMarioSSSE_Click(sender As Object, e As EventArgs) Handles Icon_PaparMarioSSSE.Click
+        Process.Start("https://github.com/Brionjv/Paper-Mario-SS-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_PaparMarioSSSE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_PaparMarioSSSE.MouseLeave
+        Icon_PaparMarioSSSE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_PaparMarioSSSE_MouseMove(sender As Object, e As EventArgs) Handles Icon_PaparMarioSSSE.MouseMove
+        Icon_PaparMarioSSSE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try Paper Mario Sticker Star Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer Paper Mario Sticker Star Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_IronfallISE_Click(sender As Object, e As EventArgs) Handles Icon_IronfallISE.Click
+        Process.Start("https://github.com/Brionjv/Ironfall-Invasion-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_IronfallISE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_IronfallISE.MouseLeave
+        Icon_IronfallISE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_IronfallISE_MouseMove(sender As Object, e As EventArgs) Handles Icon_IronfallISE.MouseMove
+        Icon_IronfallISE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try Ironfall Invasion Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer Ironfall Invasion Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_NintendogscatSE_Click(sender As Object, e As EventArgs) Handles Icon_nintendogscatSE.Click
+        Process.Start("https://github.com/Brionjv/3ds-Nintendogs-cats-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_NintendogscatSE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_nintendogscatSE.MouseLeave
+        Icon_NintendogscatSE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_NintendogscatSE_MouseMove(sender As Object, e As EventArgs) Handles Icon_nintendogscatSE.MouseMove
+        Icon_NintendogscatSE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try 3ds Nintendogs + cats Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer 3ds Nintendogs + cats Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_MarioPartyITSE_Click(sender As Object, e As EventArgs) Handles Icon_MarioPartyITSE.Click
+        Process.Start("https://github.com/Brionjv/Mario-Party-IT-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_MarioPartyITSE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_MarioPartyITSE.MouseLeave
+        Icon_MarioPartyITSE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_MarioPartyITSE_MouseMove(sender As Object, e As EventArgs) Handles Icon_MarioPartyITSE.MouseMove
+        Icon_MarioPartyITSE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try Mario Party Island Tour Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer Mario Party Island Tour Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_3dsSEL_Click(sender As Object, e As EventArgs) Handles Icon_3dsSEL.Click
+    End Sub
+
+    Private Sub Icon_3dsSEL_MouseLeave(sender As Object, e As EventArgs) Handles Icon_3dsSEL.MouseLeave
+        Icon_3dsSEL.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_3dsSEL_MouseMove(sender As Object, e As EventArgs) Handles Icon_3dsSEL.MouseMove
+        Icon_3dsSEL.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "???"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "???"
         End If
         Panel_description.Visible = True
     End Sub
@@ -16569,7 +16837,195 @@ Public Class TL_SaveEditor
         Panel_description.Visible = True
     End Sub
 
-    Private Sub Danger_friendlist_MouseMove(sender As Object, e As MouseEventArgs) Handles Danger_friendlist.MouseMove
+    Private Sub Icon_rank_vitality_Click(sender As Object, e As EventArgs) Handles Icon_rank_vitality.Click
+        If valu_rank_vitality.Value = 2 Then
+            valu_rank_vitality.Value = 0
+        Else
+            valu_rank_vitality.Value = valu_rank_vitality.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_rank_popularity_Click(sender As Object, e As EventArgs) Handles Icon_rank_popularity.Click
+        If valu_rank_popularity.Value = 2 Then
+            valu_rank_popularity.Value = 0
+        Else
+            valu_rank_popularity.Value = valu_rank_popularity.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_rank_boycharm_Click(sender As Object, e As EventArgs) Handles Icon_rank_boycharm.Click
+        If valu_rank_boycharm.Value = 2 Then
+            valu_rank_boycharm.Value = 0
+        Else
+            valu_rank_boycharm.Value = valu_rank_boycharm.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_rank_girlcharm_Click(sender As Object, e As EventArgs) Handles Icon_rank_girlcharm.Click
+        If valu_rank_girlcharm.Value = 2 Then
+            valu_rank_girlcharm.Value = 0
+        Else
+            valu_rank_girlcharm.Value = valu_rank_girlcharm.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_rank_pampered_Click(sender As Object, e As EventArgs) Handles Icon_rank_pampered.Click
+        If valu_rank_pampered.Value = 2 Then
+            valu_rank_pampered.Value = 0
+        Else
+            valu_rank_pampered.Value = valu_rank_pampered.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_rank_friendship_Click(sender As Object, e As EventArgs) Handles Icon_rank_friendship.Click
+        If valu_rank_friendship.Value = 2 Then
+            valu_rank_friendship.Value = 0
+        Else
+            valu_rank_friendship.Value = valu_rank_friendship.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_rank_romance_Click(sender As Object, e As EventArgs) Handles Icon_rank_romance.Click
+        If valu_rank_romance.Value = 2 Then
+            valu_rank_romance.Value = 0
+        Else
+            valu_rank_romance.Value = valu_rank_romance.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_rank_island_Click(sender As Object, e As EventArgs) Handles Icon_rank_island.Click
+        If valu_rank_island.Value = 2 Then
+            valu_rank_island.Value = 0
+        Else
+            valu_rank_island.Value = valu_rank_island.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_rank_traveler_Click(sender As Object, e As EventArgs) Handles Icon_rank_traveler.Click
+        If valu_rank_traveler.Value = 2 Then
+            valu_rank_traveler.Value = 0
+        Else
+            valu_rank_traveler.Value = valu_rank_traveler.Value + 1
+        End If
+    End Sub
+
+    Private Sub Icon_rank_splurge_Click(sender As Object, e As EventArgs) Handles Icon_rank_splurge.Click
+        If valu_rank_splurge.Value = 2 Then
+            valu_rank_splurge.Value = 0
+        Else
+            valu_rank_splurge.Value = valu_rank_splurge.Value + 1
+        End If
+    End Sub
+
+    Private Sub valu_rank_vitality_ValueChanged(sender As Object, e As EventArgs) Handles valu_rank_vitality.ValueChanged
+        If valu_rank_vitality.Value = 0 Then
+            Icon_rank_vitality.Image = My.Resources.ranking_vitalityi
+        ElseIf valu_rank_vitality.Value = 1 Then
+            Icon_rank_vitality.Image = My.Resources.ranking_vitality
+        ElseIf valu_rank_vitality.Value = 2 Then
+            Icon_rank_vitality.Image = My.Resources.ranking_vitalityn
+        End If
+    End Sub
+
+    Private Sub valu_rank_popularity_ValueChanged(sender As Object, e As EventArgs) Handles valu_rank_popularity.ValueChanged
+        If valu_rank_popularity.Value = 0 Then
+            Icon_rank_popularity.Image = My.Resources.ranking_popularityi
+        ElseIf valu_rank_popularity.Value = 1 Then
+            Icon_rank_popularity.Image = My.Resources.ranking_popularity
+        ElseIf valu_rank_popularity.Value = 2 Then
+            Icon_rank_popularity.Image = My.Resources.ranking_popularityn
+        End If
+    End Sub
+
+    Private Sub valu_rank_boycharm_ValueChanged(sender As Object, e As EventArgs) Handles valu_rank_boycharm.ValueChanged
+        If valu_rank_boycharm.Value = 0 Then
+            Icon_rank_boycharm.Image = My.Resources.ranking_boycharmi
+        ElseIf valu_rank_boycharm.Value = 1 Then
+            Icon_rank_boycharm.Image = My.Resources.ranking_boycharm
+        ElseIf valu_rank_boycharm.Value = 2 Then
+            Icon_rank_boycharm.Image = My.Resources.ranking_boycharmn
+        End If
+    End Sub
+
+    Private Sub valu_rank_girlcharm_ValueChanged(sender As Object, e As EventArgs) Handles valu_rank_girlcharm.ValueChanged
+        If valu_rank_girlcharm.Value = 0 Then
+            Icon_rank_girlcharm.Image = My.Resources.ranking_girlcharmi
+        ElseIf valu_rank_girlcharm.Value = 1 Then
+            Icon_rank_girlcharm.Image = My.Resources.ranking_girlcharm
+        ElseIf valu_rank_girlcharm.Value = 2 Then
+            Icon_rank_girlcharm.Image = My.Resources.ranking_girlcharmn
+        End If
+    End Sub
+
+    Private Sub valu_rank_pampered_ValueChanged(sender As Object, e As EventArgs) Handles valu_rank_pampered.ValueChanged
+        If valu_rank_pampered.Value = 0 Then
+            Icon_rank_pampered.Image = My.Resources.ranking_pamperedi
+        ElseIf valu_rank_pampered.Value = 1 Then
+            Icon_rank_pampered.Image = My.Resources.ranking_pampered
+        ElseIf valu_rank_pampered.Value = 2 Then
+            Icon_rank_pampered.Image = My.Resources.ranking_pamperedn
+        End If
+    End Sub
+
+    Private Sub valu_rank_friendship_ValueChanged(sender As Object, e As EventArgs) Handles valu_rank_friendship.ValueChanged
+        If valu_rank_friendship.Value = 0 Then
+            Icon_rank_friendship.Image = My.Resources.ranking_friendshipi
+        ElseIf valu_rank_friendship.Value = 1 Then
+            Icon_rank_friendship.Image = My.Resources.ranking_friendship
+        ElseIf valu_rank_friendship.Value = 2 Then
+            Icon_rank_friendship.Image = My.Resources.ranking_friendshipn
+        End If
+    End Sub
+
+    Private Sub valu_rank_romance_ValueChanged(sender As Object, e As EventArgs) Handles valu_rank_romance.ValueChanged
+        If valu_rank_romance.Value = 0 Then
+            Icon_rank_romance.Image = My.Resources.ranking_romancei
+        ElseIf valu_rank_romance.Value = 1 Then
+            Icon_rank_romance.Image = My.Resources.ranking_romance
+        ElseIf valu_rank_romance.Value = 2 Then
+            Icon_rank_romance.Image = My.Resources.ranking_romancen
+        End If
+    End Sub
+
+    Private Sub valu_rank_island_ValueChanged(sender As Object, e As EventArgs) Handles valu_rank_island.ValueChanged
+        If valu_rank_island.Value = 0 Then
+            Icon_rank_island.Image = My.Resources.ranking_islandi
+        ElseIf valu_rank_island.Value = 1 Then
+            Icon_rank_island.Image = My.Resources.ranking_island
+        ElseIf valu_rank_island.Value = 2 Then
+            Icon_rank_island.Image = My.Resources.ranking_islandn
+        End If
+    End Sub
+
+    Private Sub valu_rank_traveler_ValueChanged(sender As Object, e As EventArgs) Handles valu_rank_traveler.ValueChanged
+        If valu_rank_traveler.Value = 0 Then
+            Icon_rank_traveler.Image = My.Resources.ranking_traveleri
+        ElseIf valu_rank_traveler.Value = 1 Then
+            Icon_rank_traveler.Image = My.Resources.ranking_traveler
+        ElseIf valu_rank_traveler.Value = 2 Then
+            Icon_rank_traveler.Image = My.Resources.ranking_travelern
+        End If
+    End Sub
+
+    Private Sub valu_rank_splurge_ValueChanged(sender As Object, e As EventArgs) Handles valu_rank_splurge.ValueChanged
+        If valu_rank_splurge.Value = 0 Then
+            Icon_rank_splurge.Image = My.Resources.ranking_splurgei
+        ElseIf valu_rank_splurge.Value = 1 Then
+            Icon_rank_splurge.Image = My.Resources.ranking_splurge
+        ElseIf valu_rank_splurge.Value = 2 Then
+            Icon_rank_splurge.Image = My.Resources.ranking_splurgen
+        End If
+    End Sub
+
+    Private Sub Check_resetmiiapart_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_resetmiiapart.MouseMove
+
+    End Sub
+
+    Private Sub Icon_MiitopiaSE_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_MiitopiaSE.MouseMove
+
+    End Sub
+
+    Private Sub Icon_ChibiRoboZLSE_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_ChibiRoboZLSE.MouseMove
 
     End Sub
 End Class

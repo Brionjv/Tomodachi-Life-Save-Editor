@@ -762,6 +762,8 @@ Partial Class Items_edit
         Me.valu_treasures_bynumbers = New System.Windows.Forms.NumericUpDown()
         Me.Check_treasures_notavailable = New System.Windows.Forms.CheckBox()
         Me.Check_treasures_bynumbers = New System.Windows.Forms.CheckBox()
+        Me.Text_danger_itemsedit = New System.Windows.Forms.Label()
+        Me.Danger_itemsedit = New System.Windows.Forms.PictureBox()
         Me.Panel_specialfoods.SuspendLayout
         CType(Me.valu_sfoods_48,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox41,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1139,6 +1141,7 @@ Partial Class Items_edit
         CType(Me.valu_hats_bynumbers,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_treasures.SuspendLayout
         CType(Me.valu_treasures_bynumbers,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Danger_itemsedit,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'Panel_specialfoods
@@ -3461,7 +3464,7 @@ Partial Class Items_edit
         Me.Icon_return.BackColor = System.Drawing.Color.Transparent
         Me.Icon_return.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_return.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_return
-        Me.Icon_return.Location = New System.Drawing.Point(865, 0)
+        Me.Icon_return.Location = New System.Drawing.Point(867, 0)
         Me.Icon_return.Name = "Icon_return"
         Me.Icon_return.Size = New System.Drawing.Size(40, 30)
         Me.Icon_return.TabIndex = 11
@@ -3640,13 +3643,13 @@ Partial Class Items_edit
         '
         'Icon_goodi_18
         '
-        Me.Icon_goodi_18.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.Icon_goodi_18.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_18
         Me.Icon_goodi_18.Location = New System.Drawing.Point(701, 256)
         Me.Icon_goodi_18.Name = "Icon_goodi_18"
         Me.Icon_goodi_18.Size = New System.Drawing.Size(76, 74)
         Me.Icon_goodi_18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_goodi_18.TabIndex = 247
-        Me.Icon_goodi_18.TabStop = false
+        Me.Icon_goodi_18.TabStop = False
         '
         'valu_goodi_17
         '
@@ -3660,33 +3663,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_17
         '
-        Me.Check_NA_goodi_17.AutoSize = true
+        Me.Check_NA_goodi_17.AutoSize = True
         Me.Check_NA_goodi_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_17.Location = New System.Drawing.Point(680, 316)
         Me.Check_NA_goodi_17.Name = "Check_NA_goodi_17"
         Me.Check_NA_goodi_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_17.TabIndex = 245
-        Me.Check_NA_goodi_17.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_17.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_17
         '
-        Me.Check_available_goodi_17.AutoSize = true
+        Me.Check_available_goodi_17.AutoSize = True
         Me.Check_available_goodi_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_17.Location = New System.Drawing.Point(619, 316)
         Me.Check_available_goodi_17.Name = "Check_available_goodi_17"
         Me.Check_available_goodi_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_17.TabIndex = 244
-        Me.Check_available_goodi_17.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_17.UseVisualStyleBackColor = False
         '
         'PictureBox62
         '
-        Me.PictureBox62.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox62.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_17
         Me.PictureBox62.Location = New System.Drawing.Point(619, 256)
         Me.PictureBox62.Name = "PictureBox62"
         Me.PictureBox62.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox62.TabIndex = 243
-        Me.PictureBox62.TabStop = false
+        Me.PictureBox62.TabStop = False
         '
         'valu_goodi_16
         '
@@ -3700,33 +3703,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_16
         '
-        Me.Check_NA_goodi_16.AutoSize = true
+        Me.Check_NA_goodi_16.AutoSize = True
         Me.Check_NA_goodi_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_16.Location = New System.Drawing.Point(598, 316)
         Me.Check_NA_goodi_16.Name = "Check_NA_goodi_16"
         Me.Check_NA_goodi_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_16.TabIndex = 241
-        Me.Check_NA_goodi_16.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_16.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_16
         '
-        Me.Check_available_goodi_16.AutoSize = true
+        Me.Check_available_goodi_16.AutoSize = True
         Me.Check_available_goodi_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_16.Location = New System.Drawing.Point(537, 316)
         Me.Check_available_goodi_16.Name = "Check_available_goodi_16"
         Me.Check_available_goodi_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_16.TabIndex = 240
-        Me.Check_available_goodi_16.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_16.UseVisualStyleBackColor = False
         '
         'PictureBox63
         '
-        Me.PictureBox63.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox63.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_16
         Me.PictureBox63.Location = New System.Drawing.Point(537, 256)
         Me.PictureBox63.Name = "PictureBox63"
         Me.PictureBox63.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox63.TabIndex = 239
-        Me.PictureBox63.TabStop = false
+        Me.PictureBox63.TabStop = False
         '
         'valu_goodi_15
         '
@@ -3740,33 +3743,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_15
         '
-        Me.Check_NA_goodi_15.AutoSize = true
+        Me.Check_NA_goodi_15.AutoSize = True
         Me.Check_NA_goodi_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_15.Location = New System.Drawing.Point(516, 316)
         Me.Check_NA_goodi_15.Name = "Check_NA_goodi_15"
         Me.Check_NA_goodi_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_15.TabIndex = 237
-        Me.Check_NA_goodi_15.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_15.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_15
         '
-        Me.Check_available_goodi_15.AutoSize = true
+        Me.Check_available_goodi_15.AutoSize = True
         Me.Check_available_goodi_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_15.Location = New System.Drawing.Point(455, 316)
         Me.Check_available_goodi_15.Name = "Check_available_goodi_15"
         Me.Check_available_goodi_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_15.TabIndex = 236
-        Me.Check_available_goodi_15.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_15.UseVisualStyleBackColor = False
         '
         'PictureBox64
         '
-        Me.PictureBox64.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox64.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_15
         Me.PictureBox64.Location = New System.Drawing.Point(455, 256)
         Me.PictureBox64.Name = "PictureBox64"
         Me.PictureBox64.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox64.TabIndex = 235
-        Me.PictureBox64.TabStop = false
+        Me.PictureBox64.TabStop = False
         '
         'valu_goodi_14
         '
@@ -3780,33 +3783,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_14
         '
-        Me.Check_NA_goodi_14.AutoSize = true
+        Me.Check_NA_goodi_14.AutoSize = True
         Me.Check_NA_goodi_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_14.Location = New System.Drawing.Point(434, 316)
         Me.Check_NA_goodi_14.Name = "Check_NA_goodi_14"
         Me.Check_NA_goodi_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_14.TabIndex = 233
-        Me.Check_NA_goodi_14.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_14.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_14
         '
-        Me.Check_available_goodi_14.AutoSize = true
+        Me.Check_available_goodi_14.AutoSize = True
         Me.Check_available_goodi_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_14.Location = New System.Drawing.Point(373, 316)
         Me.Check_available_goodi_14.Name = "Check_available_goodi_14"
         Me.Check_available_goodi_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_14.TabIndex = 232
-        Me.Check_available_goodi_14.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_14.UseVisualStyleBackColor = False
         '
         'PictureBox65
         '
-        Me.PictureBox65.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox65.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_14
         Me.PictureBox65.Location = New System.Drawing.Point(373, 256)
         Me.PictureBox65.Name = "PictureBox65"
         Me.PictureBox65.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox65.TabIndex = 231
-        Me.PictureBox65.TabStop = false
+        Me.PictureBox65.TabStop = False
         '
         'valu_goodi_13
         '
@@ -3820,33 +3823,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_13
         '
-        Me.Check_NA_goodi_13.AutoSize = true
+        Me.Check_NA_goodi_13.AutoSize = True
         Me.Check_NA_goodi_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_13.Location = New System.Drawing.Point(352, 316)
         Me.Check_NA_goodi_13.Name = "Check_NA_goodi_13"
         Me.Check_NA_goodi_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_13.TabIndex = 229
-        Me.Check_NA_goodi_13.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_13.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_13
         '
-        Me.Check_available_goodi_13.AutoSize = true
+        Me.Check_available_goodi_13.AutoSize = True
         Me.Check_available_goodi_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_13.Location = New System.Drawing.Point(291, 316)
         Me.Check_available_goodi_13.Name = "Check_available_goodi_13"
         Me.Check_available_goodi_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_13.TabIndex = 228
-        Me.Check_available_goodi_13.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_13.UseVisualStyleBackColor = False
         '
         'PictureBox66
         '
-        Me.PictureBox66.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox66.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_13
         Me.PictureBox66.Location = New System.Drawing.Point(291, 256)
         Me.PictureBox66.Name = "PictureBox66"
         Me.PictureBox66.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox66.TabIndex = 227
-        Me.PictureBox66.TabStop = false
+        Me.PictureBox66.TabStop = False
         '
         'valu_goodi_12
         '
@@ -3860,33 +3863,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_12
         '
-        Me.Check_NA_goodi_12.AutoSize = true
+        Me.Check_NA_goodi_12.AutoSize = True
         Me.Check_NA_goodi_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_12.Location = New System.Drawing.Point(270, 316)
         Me.Check_NA_goodi_12.Name = "Check_NA_goodi_12"
         Me.Check_NA_goodi_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_12.TabIndex = 225
-        Me.Check_NA_goodi_12.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_12.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_12
         '
-        Me.Check_available_goodi_12.AutoSize = true
+        Me.Check_available_goodi_12.AutoSize = True
         Me.Check_available_goodi_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_12.Location = New System.Drawing.Point(209, 316)
         Me.Check_available_goodi_12.Name = "Check_available_goodi_12"
         Me.Check_available_goodi_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_12.TabIndex = 224
-        Me.Check_available_goodi_12.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_12.UseVisualStyleBackColor = False
         '
         'PictureBox67
         '
-        Me.PictureBox67.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox67.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_12
         Me.PictureBox67.Location = New System.Drawing.Point(209, 256)
         Me.PictureBox67.Name = "PictureBox67"
         Me.PictureBox67.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox67.TabIndex = 223
-        Me.PictureBox67.TabStop = false
+        Me.PictureBox67.TabStop = False
         '
         'valu_goodi_11
         '
@@ -3900,33 +3903,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_11
         '
-        Me.Check_NA_goodi_11.AutoSize = true
+        Me.Check_NA_goodi_11.AutoSize = True
         Me.Check_NA_goodi_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_11.Location = New System.Drawing.Point(188, 316)
         Me.Check_NA_goodi_11.Name = "Check_NA_goodi_11"
         Me.Check_NA_goodi_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_11.TabIndex = 221
-        Me.Check_NA_goodi_11.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_11.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_11
         '
-        Me.Check_available_goodi_11.AutoSize = true
+        Me.Check_available_goodi_11.AutoSize = True
         Me.Check_available_goodi_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_11.Location = New System.Drawing.Point(127, 316)
         Me.Check_available_goodi_11.Name = "Check_available_goodi_11"
         Me.Check_available_goodi_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_11.TabIndex = 220
-        Me.Check_available_goodi_11.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_11.UseVisualStyleBackColor = False
         '
         'PictureBox68
         '
-        Me.PictureBox68.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox68.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_11
         Me.PictureBox68.Location = New System.Drawing.Point(127, 256)
         Me.PictureBox68.Name = "PictureBox68"
         Me.PictureBox68.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox68.TabIndex = 219
-        Me.PictureBox68.TabStop = false
+        Me.PictureBox68.TabStop = False
         '
         'valu_goodi_10
         '
@@ -3940,33 +3943,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_10
         '
-        Me.Check_NA_goodi_10.AutoSize = true
+        Me.Check_NA_goodi_10.AutoSize = True
         Me.Check_NA_goodi_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_10.Location = New System.Drawing.Point(844, 236)
         Me.Check_NA_goodi_10.Name = "Check_NA_goodi_10"
         Me.Check_NA_goodi_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_10.TabIndex = 217
-        Me.Check_NA_goodi_10.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_10.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_10
         '
-        Me.Check_available_goodi_10.AutoSize = true
+        Me.Check_available_goodi_10.AutoSize = True
         Me.Check_available_goodi_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_10.Location = New System.Drawing.Point(783, 236)
         Me.Check_available_goodi_10.Name = "Check_available_goodi_10"
         Me.Check_available_goodi_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_10.TabIndex = 216
-        Me.Check_available_goodi_10.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_10.UseVisualStyleBackColor = False
         '
         'PictureBox69
         '
-        Me.PictureBox69.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox69.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_10
         Me.PictureBox69.Location = New System.Drawing.Point(783, 176)
         Me.PictureBox69.Name = "PictureBox69"
         Me.PictureBox69.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox69.TabIndex = 215
-        Me.PictureBox69.TabStop = false
+        Me.PictureBox69.TabStop = False
         '
         'valu_goodi_9
         '
@@ -3980,33 +3983,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_9
         '
-        Me.Check_NA_goodi_9.AutoSize = true
+        Me.Check_NA_goodi_9.AutoSize = True
         Me.Check_NA_goodi_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_9.Location = New System.Drawing.Point(762, 236)
         Me.Check_NA_goodi_9.Name = "Check_NA_goodi_9"
         Me.Check_NA_goodi_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_9.TabIndex = 213
-        Me.Check_NA_goodi_9.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_9.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_9
         '
-        Me.Check_available_goodi_9.AutoSize = true
+        Me.Check_available_goodi_9.AutoSize = True
         Me.Check_available_goodi_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_9.Location = New System.Drawing.Point(701, 236)
         Me.Check_available_goodi_9.Name = "Check_available_goodi_9"
         Me.Check_available_goodi_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_9.TabIndex = 212
-        Me.Check_available_goodi_9.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_9.UseVisualStyleBackColor = False
         '
         'PictureBox70
         '
-        Me.PictureBox70.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox70.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_09
         Me.PictureBox70.Location = New System.Drawing.Point(701, 176)
         Me.PictureBox70.Name = "PictureBox70"
         Me.PictureBox70.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox70.TabIndex = 211
-        Me.PictureBox70.TabStop = false
+        Me.PictureBox70.TabStop = False
         '
         'valu_goodi_8
         '
@@ -4020,33 +4023,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_8
         '
-        Me.Check_NA_goodi_8.AutoSize = true
+        Me.Check_NA_goodi_8.AutoSize = True
         Me.Check_NA_goodi_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_8.Location = New System.Drawing.Point(680, 236)
         Me.Check_NA_goodi_8.Name = "Check_NA_goodi_8"
         Me.Check_NA_goodi_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_8.TabIndex = 209
-        Me.Check_NA_goodi_8.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_8.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_8
         '
-        Me.Check_available_goodi_8.AutoSize = true
+        Me.Check_available_goodi_8.AutoSize = True
         Me.Check_available_goodi_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_8.Location = New System.Drawing.Point(619, 236)
         Me.Check_available_goodi_8.Name = "Check_available_goodi_8"
         Me.Check_available_goodi_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_8.TabIndex = 208
-        Me.Check_available_goodi_8.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_8.UseVisualStyleBackColor = False
         '
         'PictureBox71
         '
-        Me.PictureBox71.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox71.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_08
         Me.PictureBox71.Location = New System.Drawing.Point(619, 176)
         Me.PictureBox71.Name = "PictureBox71"
         Me.PictureBox71.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox71.TabIndex = 207
-        Me.PictureBox71.TabStop = false
+        Me.PictureBox71.TabStop = False
         '
         'valu_goodi_7
         '
@@ -4060,33 +4063,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_7
         '
-        Me.Check_NA_goodi_7.AutoSize = true
+        Me.Check_NA_goodi_7.AutoSize = True
         Me.Check_NA_goodi_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_7.Location = New System.Drawing.Point(598, 236)
         Me.Check_NA_goodi_7.Name = "Check_NA_goodi_7"
         Me.Check_NA_goodi_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_7.TabIndex = 205
-        Me.Check_NA_goodi_7.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_7.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_7
         '
-        Me.Check_available_goodi_7.AutoSize = true
+        Me.Check_available_goodi_7.AutoSize = True
         Me.Check_available_goodi_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_7.Location = New System.Drawing.Point(537, 236)
         Me.Check_available_goodi_7.Name = "Check_available_goodi_7"
         Me.Check_available_goodi_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_7.TabIndex = 204
-        Me.Check_available_goodi_7.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_7.UseVisualStyleBackColor = False
         '
         'PictureBox72
         '
-        Me.PictureBox72.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox72.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_07
         Me.PictureBox72.Location = New System.Drawing.Point(537, 176)
         Me.PictureBox72.Name = "PictureBox72"
         Me.PictureBox72.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox72.TabIndex = 203
-        Me.PictureBox72.TabStop = false
+        Me.PictureBox72.TabStop = False
         '
         'valu_goodi_6
         '
@@ -4100,33 +4103,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_6
         '
-        Me.Check_NA_goodi_6.AutoSize = true
+        Me.Check_NA_goodi_6.AutoSize = True
         Me.Check_NA_goodi_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_6.Location = New System.Drawing.Point(516, 236)
         Me.Check_NA_goodi_6.Name = "Check_NA_goodi_6"
         Me.Check_NA_goodi_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_6.TabIndex = 201
-        Me.Check_NA_goodi_6.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_6.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_6
         '
-        Me.Check_available_goodi_6.AutoSize = true
+        Me.Check_available_goodi_6.AutoSize = True
         Me.Check_available_goodi_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_6.Location = New System.Drawing.Point(455, 236)
         Me.Check_available_goodi_6.Name = "Check_available_goodi_6"
         Me.Check_available_goodi_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_6.TabIndex = 200
-        Me.Check_available_goodi_6.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_6.UseVisualStyleBackColor = False
         '
         'PictureBox73
         '
-        Me.PictureBox73.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox73.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_06
         Me.PictureBox73.Location = New System.Drawing.Point(455, 176)
         Me.PictureBox73.Name = "PictureBox73"
         Me.PictureBox73.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox73.TabIndex = 199
-        Me.PictureBox73.TabStop = false
+        Me.PictureBox73.TabStop = False
         '
         'valu_goodi_5
         '
@@ -4140,33 +4143,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_5
         '
-        Me.Check_NA_goodi_5.AutoSize = true
+        Me.Check_NA_goodi_5.AutoSize = True
         Me.Check_NA_goodi_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_5.Location = New System.Drawing.Point(434, 236)
         Me.Check_NA_goodi_5.Name = "Check_NA_goodi_5"
         Me.Check_NA_goodi_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_5.TabIndex = 197
-        Me.Check_NA_goodi_5.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_5.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_5
         '
-        Me.Check_available_goodi_5.AutoSize = true
+        Me.Check_available_goodi_5.AutoSize = True
         Me.Check_available_goodi_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_5.Location = New System.Drawing.Point(373, 236)
         Me.Check_available_goodi_5.Name = "Check_available_goodi_5"
         Me.Check_available_goodi_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_5.TabIndex = 196
-        Me.Check_available_goodi_5.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_5.UseVisualStyleBackColor = False
         '
         'PictureBox74
         '
-        Me.PictureBox74.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox74.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_05
         Me.PictureBox74.Location = New System.Drawing.Point(373, 176)
         Me.PictureBox74.Name = "PictureBox74"
         Me.PictureBox74.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox74.TabIndex = 195
-        Me.PictureBox74.TabStop = false
+        Me.PictureBox74.TabStop = False
         '
         'valu_goodi_4
         '
@@ -4180,33 +4183,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_4
         '
-        Me.Check_NA_goodi_4.AutoSize = true
+        Me.Check_NA_goodi_4.AutoSize = True
         Me.Check_NA_goodi_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_4.Location = New System.Drawing.Point(352, 236)
         Me.Check_NA_goodi_4.Name = "Check_NA_goodi_4"
         Me.Check_NA_goodi_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_4.TabIndex = 193
-        Me.Check_NA_goodi_4.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_4.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_4
         '
-        Me.Check_available_goodi_4.AutoSize = true
+        Me.Check_available_goodi_4.AutoSize = True
         Me.Check_available_goodi_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_4.Location = New System.Drawing.Point(291, 236)
         Me.Check_available_goodi_4.Name = "Check_available_goodi_4"
         Me.Check_available_goodi_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_4.TabIndex = 192
-        Me.Check_available_goodi_4.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_4.UseVisualStyleBackColor = False
         '
         'PictureBox75
         '
-        Me.PictureBox75.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox75.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_04
         Me.PictureBox75.Location = New System.Drawing.Point(291, 176)
         Me.PictureBox75.Name = "PictureBox75"
         Me.PictureBox75.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox75.TabIndex = 191
-        Me.PictureBox75.TabStop = false
+        Me.PictureBox75.TabStop = False
         '
         'valu_goodi_3
         '
@@ -4220,33 +4223,33 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_3
         '
-        Me.Check_NA_goodi_3.AutoSize = true
+        Me.Check_NA_goodi_3.AutoSize = True
         Me.Check_NA_goodi_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_3.Location = New System.Drawing.Point(270, 236)
         Me.Check_NA_goodi_3.Name = "Check_NA_goodi_3"
         Me.Check_NA_goodi_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_3.TabIndex = 189
-        Me.Check_NA_goodi_3.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_3.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_3
         '
-        Me.Check_available_goodi_3.AutoSize = true
+        Me.Check_available_goodi_3.AutoSize = True
         Me.Check_available_goodi_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_3.Location = New System.Drawing.Point(209, 236)
         Me.Check_available_goodi_3.Name = "Check_available_goodi_3"
         Me.Check_available_goodi_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_3.TabIndex = 188
-        Me.Check_available_goodi_3.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_3.UseVisualStyleBackColor = False
         '
         'PictureBox76
         '
-        Me.PictureBox76.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox76.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_03
         Me.PictureBox76.Location = New System.Drawing.Point(209, 176)
         Me.PictureBox76.Name = "PictureBox76"
         Me.PictureBox76.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox76.TabIndex = 187
-        Me.PictureBox76.TabStop = false
+        Me.PictureBox76.TabStop = False
         '
         'valu_goodi_2
         '
@@ -4260,27 +4263,27 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_2
         '
-        Me.Check_NA_goodi_2.AutoSize = true
+        Me.Check_NA_goodi_2.AutoSize = True
         Me.Check_NA_goodi_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_2.Location = New System.Drawing.Point(188, 236)
         Me.Check_NA_goodi_2.Name = "Check_NA_goodi_2"
         Me.Check_NA_goodi_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_2.TabIndex = 185
-        Me.Check_NA_goodi_2.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_2.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_2
         '
-        Me.Check_available_goodi_2.AutoSize = true
+        Me.Check_available_goodi_2.AutoSize = True
         Me.Check_available_goodi_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_2.Location = New System.Drawing.Point(127, 236)
         Me.Check_available_goodi_2.Name = "Check_available_goodi_2"
         Me.Check_available_goodi_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_2.TabIndex = 184
-        Me.Check_available_goodi_2.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_2.UseVisualStyleBackColor = False
         '
         'PictureBox170
         '
-        Me.PictureBox170.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox170.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_02
         Me.PictureBox170.Location = New System.Drawing.Point(127, 176)
         Me.PictureBox170.Name = "PictureBox170"
         Me.PictureBox170.Size = New System.Drawing.Size(76, 74)
@@ -4320,7 +4323,7 @@ Partial Class Items_edit
         '
         'PictureBox171
         '
-        Me.PictureBox171.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.unknow_items
+        Me.PictureBox171.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.EU_gooditems_01
         Me.PictureBox171.Location = New System.Drawing.Point(45, 176)
         Me.PictureBox171.Name = "PictureBox171"
         Me.PictureBox171.Size = New System.Drawing.Size(76, 74)
@@ -9392,6 +9395,30 @@ Partial Class Items_edit
         Me.Check_treasures_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Check_treasures_bynumbers.UseVisualStyleBackColor = false
         '
+        'Text_danger_itemsedit
+        '
+        Me.Text_danger_itemsedit.AutoSize = true
+        Me.Text_danger_itemsedit.BackColor = System.Drawing.Color.Transparent
+        Me.Text_danger_itemsedit.ForeColor = System.Drawing.Color.Red
+        Me.Text_danger_itemsedit.Location = New System.Drawing.Point(261, 261)
+        Me.Text_danger_itemsedit.Name = "Text_danger_itemsedit"
+        Me.Text_danger_itemsedit.Size = New System.Drawing.Size(367, 13)
+        Me.Text_danger_itemsedit.TabIndex = 231
+        Me.Text_danger_itemsedit.Text = "Some images in items edit may not correspond to your Tomodachi Life region"
+        Me.Text_danger_itemsedit.Visible = false
+        '
+        'Danger_itemsedit
+        '
+        Me.Danger_itemsedit.BackColor = System.Drawing.Color.Transparent
+        Me.Danger_itemsedit.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Danger_itemsedit.Image = CType(resources.GetObject("Danger_itemsedit.Image"),System.Drawing.Image)
+        Me.Danger_itemsedit.Location = New System.Drawing.Point(238, 257)
+        Me.Danger_itemsedit.Name = "Danger_itemsedit"
+        Me.Danger_itemsedit.Size = New System.Drawing.Size(20, 20)
+        Me.Danger_itemsedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Danger_itemsedit.TabIndex = 230
+        Me.Danger_itemsedit.TabStop = false
+        '
         'Items_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -9432,6 +9459,8 @@ Partial Class Items_edit
         Me.Controls.Add(Me.Panel_hats)
         Me.Controls.Add(Me.Panel_clothing)
         Me.Controls.Add(Me.Panel_foods)
+        Me.Controls.Add(Me.Danger_itemsedit)
+        Me.Controls.Add(Me.Text_danger_itemsedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Items_edit"
@@ -9818,6 +9847,7 @@ Partial Class Items_edit
         CType(Me.valu_hats_bynumbers,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_treasures.ResumeLayout(false)
         CType(Me.valu_treasures_bynumbers,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Danger_itemsedit,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
         Me.PerformLayout
 
@@ -10561,4 +10591,6 @@ End Sub
     Friend WithEvents Check_clothing_notavailable As System.Windows.Forms.CheckBox
     Friend WithEvents Check_clothing_available As System.Windows.Forms.CheckBox
     Friend WithEvents Check_clothing_bynumbers As System.Windows.Forms.CheckBox
+    Friend WithEvents Text_danger_itemsedit As System.Windows.Forms.Label
+    Friend WithEvents Danger_itemsedit As System.Windows.Forms.PictureBox
 End Class

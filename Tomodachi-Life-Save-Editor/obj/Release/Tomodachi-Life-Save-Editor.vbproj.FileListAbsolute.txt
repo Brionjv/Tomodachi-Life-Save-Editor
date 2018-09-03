@@ -28,3 +28,4 @@ D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi-Life-Save-Editor.exe
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi-Life-Save-Editor.xml
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi-Life-Save-Editor.pdb
+D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi-Life-Save-Editor.vbprojResolveAssemblyReference.cache

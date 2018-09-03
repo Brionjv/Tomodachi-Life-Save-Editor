@@ -279,6 +279,7 @@ Partial Class Travelers_edit
         Me.valu_happiness.Name = "valu_happiness"
         Me.valu_happiness.Size = New System.Drawing.Size(33, 16)
         Me.valu_happiness.TabIndex = 83
+        Me.valu_happiness.Visible = False
         '
         'Travelers_edit
         '
