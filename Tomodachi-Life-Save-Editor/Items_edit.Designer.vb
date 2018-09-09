@@ -4289,7 +4289,7 @@ Partial Class Items_edit
         Me.PictureBox170.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox170.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox170.TabIndex = 183
-        Me.PictureBox170.TabStop = false
+        Me.PictureBox170.TabStop = False
         '
         'valu_goodi_1
         '
@@ -4303,23 +4303,23 @@ Partial Class Items_edit
         '
         'Check_NA_goodi_1
         '
-        Me.Check_NA_goodi_1.AutoSize = true
+        Me.Check_NA_goodi_1.AutoSize = True
         Me.Check_NA_goodi_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_goodi_1.Location = New System.Drawing.Point(106, 236)
         Me.Check_NA_goodi_1.Name = "Check_NA_goodi_1"
         Me.Check_NA_goodi_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_goodi_1.TabIndex = 181
-        Me.Check_NA_goodi_1.UseVisualStyleBackColor = false
+        Me.Check_NA_goodi_1.UseVisualStyleBackColor = False
         '
         'Check_available_goodi_1
         '
-        Me.Check_available_goodi_1.AutoSize = true
+        Me.Check_available_goodi_1.AutoSize = True
         Me.Check_available_goodi_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_goodi_1.Location = New System.Drawing.Point(45, 236)
         Me.Check_available_goodi_1.Name = "Check_available_goodi_1"
         Me.Check_available_goodi_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_goodi_1.TabIndex = 180
-        Me.Check_available_goodi_1.UseVisualStyleBackColor = false
+        Me.Check_available_goodi_1.UseVisualStyleBackColor = False
         '
         'PictureBox171
         '
@@ -4329,11 +4329,11 @@ Partial Class Items_edit
         Me.PictureBox171.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox171.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox171.TabIndex = 179
-        Me.PictureBox171.TabStop = false
+        Me.PictureBox171.TabStop = False
         '
         'Panel_interiors
         '
-        Me.Panel_interiors.BackgroundImage = CType(resources.GetObject("Panel_interiors.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_interiors.BackgroundImage = CType(resources.GetObject("Panel_interiors.BackgroundImage"), System.Drawing.Image)
         Me.Panel_interiors.Controls.Add(Me.valu_interiors_60)
         Me.Panel_interiors.Controls.Add(Me.Check_NA_interiors_60)
         Me.Panel_interiors.Controls.Add(Me.Check_available_interiors_60)
@@ -4579,7 +4579,7 @@ Partial Class Items_edit
         Me.Panel_interiors.Name = "Panel_interiors"
         Me.Panel_interiors.Size = New System.Drawing.Size(905, 506)
         Me.Panel_interiors.TabIndex = 104
-        Me.Panel_interiors.Visible = false
+        Me.Panel_interiors.Visible = False
         '
         'valu_interiors_60
         '
@@ -4593,23 +4593,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_60
         '
-        Me.Check_NA_interiors_60.AutoSize = true
+        Me.Check_NA_interiors_60.AutoSize = True
         Me.Check_NA_interiors_60.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_60.Location = New System.Drawing.Point(844, 476)
         Me.Check_NA_interiors_60.Name = "Check_NA_interiors_60"
         Me.Check_NA_interiors_60.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_60.TabIndex = 457
-        Me.Check_NA_interiors_60.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_60.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_60
         '
-        Me.Check_available_interiors_60.AutoSize = true
+        Me.Check_available_interiors_60.AutoSize = True
         Me.Check_available_interiors_60.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_60.Location = New System.Drawing.Point(783, 476)
         Me.Check_available_interiors_60.Name = "Check_available_interiors_60"
         Me.Check_available_interiors_60.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_60.TabIndex = 456
-        Me.Check_available_interiors_60.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_60.UseVisualStyleBackColor = False
         '
         'PictureBox97
         '
@@ -4619,7 +4619,7 @@ Partial Class Items_edit
         Me.PictureBox97.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox97.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox97.TabIndex = 455
-        Me.PictureBox97.TabStop = false
+        Me.PictureBox97.TabStop = False
         '
         'valu_interiors_59
         '
@@ -4633,23 +4633,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_59
         '
-        Me.Check_NA_interiors_59.AutoSize = true
+        Me.Check_NA_interiors_59.AutoSize = True
         Me.Check_NA_interiors_59.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_59.Location = New System.Drawing.Point(762, 476)
         Me.Check_NA_interiors_59.Name = "Check_NA_interiors_59"
         Me.Check_NA_interiors_59.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_59.TabIndex = 453
-        Me.Check_NA_interiors_59.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_59.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_59
         '
-        Me.Check_available_interiors_59.AutoSize = true
+        Me.Check_available_interiors_59.AutoSize = True
         Me.Check_available_interiors_59.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_59.Location = New System.Drawing.Point(701, 476)
         Me.Check_available_interiors_59.Name = "Check_available_interiors_59"
         Me.Check_available_interiors_59.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_59.TabIndex = 452
-        Me.Check_available_interiors_59.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_59.UseVisualStyleBackColor = False
         '
         'PictureBox98
         '
@@ -4659,7 +4659,7 @@ Partial Class Items_edit
         Me.PictureBox98.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox98.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox98.TabIndex = 451
-        Me.PictureBox98.TabStop = false
+        Me.PictureBox98.TabStop = False
         '
         'valu_interiors_58
         '
@@ -4673,23 +4673,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_58
         '
-        Me.Check_NA_interiors_58.AutoSize = true
+        Me.Check_NA_interiors_58.AutoSize = True
         Me.Check_NA_interiors_58.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_58.Location = New System.Drawing.Point(680, 476)
         Me.Check_NA_interiors_58.Name = "Check_NA_interiors_58"
         Me.Check_NA_interiors_58.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_58.TabIndex = 449
-        Me.Check_NA_interiors_58.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_58.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_58
         '
-        Me.Check_available_interiors_58.AutoSize = true
+        Me.Check_available_interiors_58.AutoSize = True
         Me.Check_available_interiors_58.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_58.Location = New System.Drawing.Point(619, 476)
         Me.Check_available_interiors_58.Name = "Check_available_interiors_58"
         Me.Check_available_interiors_58.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_58.TabIndex = 448
-        Me.Check_available_interiors_58.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_58.UseVisualStyleBackColor = False
         '
         'PictureBox102
         '
@@ -4699,7 +4699,7 @@ Partial Class Items_edit
         Me.PictureBox102.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox102.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox102.TabIndex = 447
-        Me.PictureBox102.TabStop = false
+        Me.PictureBox102.TabStop = False
         '
         'valu_interiors_57
         '
@@ -4713,23 +4713,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_57
         '
-        Me.Check_NA_interiors_57.AutoSize = true
+        Me.Check_NA_interiors_57.AutoSize = True
         Me.Check_NA_interiors_57.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_57.Location = New System.Drawing.Point(598, 476)
         Me.Check_NA_interiors_57.Name = "Check_NA_interiors_57"
         Me.Check_NA_interiors_57.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_57.TabIndex = 445
-        Me.Check_NA_interiors_57.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_57.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_57
         '
-        Me.Check_available_interiors_57.AutoSize = true
+        Me.Check_available_interiors_57.AutoSize = True
         Me.Check_available_interiors_57.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_57.Location = New System.Drawing.Point(537, 476)
         Me.Check_available_interiors_57.Name = "Check_available_interiors_57"
         Me.Check_available_interiors_57.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_57.TabIndex = 444
-        Me.Check_available_interiors_57.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_57.UseVisualStyleBackColor = False
         '
         'PictureBox103
         '
@@ -4739,7 +4739,7 @@ Partial Class Items_edit
         Me.PictureBox103.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox103.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox103.TabIndex = 443
-        Me.PictureBox103.TabStop = false
+        Me.PictureBox103.TabStop = False
         '
         'valu_interiors_56
         '
@@ -4753,23 +4753,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_56
         '
-        Me.Check_NA_interiors_56.AutoSize = true
+        Me.Check_NA_interiors_56.AutoSize = True
         Me.Check_NA_interiors_56.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_56.Location = New System.Drawing.Point(516, 476)
         Me.Check_NA_interiors_56.Name = "Check_NA_interiors_56"
         Me.Check_NA_interiors_56.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_56.TabIndex = 441
-        Me.Check_NA_interiors_56.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_56.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_56
         '
-        Me.Check_available_interiors_56.AutoSize = true
+        Me.Check_available_interiors_56.AutoSize = True
         Me.Check_available_interiors_56.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_56.Location = New System.Drawing.Point(455, 476)
         Me.Check_available_interiors_56.Name = "Check_available_interiors_56"
         Me.Check_available_interiors_56.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_56.TabIndex = 440
-        Me.Check_available_interiors_56.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_56.UseVisualStyleBackColor = False
         '
         'PictureBox104
         '
@@ -4779,7 +4779,7 @@ Partial Class Items_edit
         Me.PictureBox104.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox104.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox104.TabIndex = 439
-        Me.PictureBox104.TabStop = false
+        Me.PictureBox104.TabStop = False
         '
         'valu_interiors_55
         '
@@ -4793,23 +4793,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_55
         '
-        Me.Check_NA_interiors_55.AutoSize = true
+        Me.Check_NA_interiors_55.AutoSize = True
         Me.Check_NA_interiors_55.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_55.Location = New System.Drawing.Point(434, 476)
         Me.Check_NA_interiors_55.Name = "Check_NA_interiors_55"
         Me.Check_NA_interiors_55.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_55.TabIndex = 437
-        Me.Check_NA_interiors_55.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_55.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_55
         '
-        Me.Check_available_interiors_55.AutoSize = true
+        Me.Check_available_interiors_55.AutoSize = True
         Me.Check_available_interiors_55.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_55.Location = New System.Drawing.Point(373, 476)
         Me.Check_available_interiors_55.Name = "Check_available_interiors_55"
         Me.Check_available_interiors_55.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_55.TabIndex = 436
-        Me.Check_available_interiors_55.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_55.UseVisualStyleBackColor = False
         '
         'PictureBox105
         '
@@ -4819,7 +4819,7 @@ Partial Class Items_edit
         Me.PictureBox105.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox105.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox105.TabIndex = 435
-        Me.PictureBox105.TabStop = false
+        Me.PictureBox105.TabStop = False
         '
         'valu_interiors_54
         '
@@ -4833,23 +4833,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_54
         '
-        Me.Check_NA_interiors_54.AutoSize = true
+        Me.Check_NA_interiors_54.AutoSize = True
         Me.Check_NA_interiors_54.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_54.Location = New System.Drawing.Point(352, 476)
         Me.Check_NA_interiors_54.Name = "Check_NA_interiors_54"
         Me.Check_NA_interiors_54.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_54.TabIndex = 433
-        Me.Check_NA_interiors_54.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_54.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_54
         '
-        Me.Check_available_interiors_54.AutoSize = true
+        Me.Check_available_interiors_54.AutoSize = True
         Me.Check_available_interiors_54.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_54.Location = New System.Drawing.Point(291, 476)
         Me.Check_available_interiors_54.Name = "Check_available_interiors_54"
         Me.Check_available_interiors_54.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_54.TabIndex = 432
-        Me.Check_available_interiors_54.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_54.UseVisualStyleBackColor = False
         '
         'PictureBox106
         '
@@ -4859,7 +4859,7 @@ Partial Class Items_edit
         Me.PictureBox106.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox106.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox106.TabIndex = 431
-        Me.PictureBox106.TabStop = false
+        Me.PictureBox106.TabStop = False
         '
         'valu_interiors_53
         '
@@ -4873,23 +4873,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_53
         '
-        Me.Check_NA_interiors_53.AutoSize = true
+        Me.Check_NA_interiors_53.AutoSize = True
         Me.Check_NA_interiors_53.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_53.Location = New System.Drawing.Point(270, 476)
         Me.Check_NA_interiors_53.Name = "Check_NA_interiors_53"
         Me.Check_NA_interiors_53.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_53.TabIndex = 429
-        Me.Check_NA_interiors_53.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_53.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_53
         '
-        Me.Check_available_interiors_53.AutoSize = true
+        Me.Check_available_interiors_53.AutoSize = True
         Me.Check_available_interiors_53.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_53.Location = New System.Drawing.Point(209, 476)
         Me.Check_available_interiors_53.Name = "Check_available_interiors_53"
         Me.Check_available_interiors_53.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_53.TabIndex = 428
-        Me.Check_available_interiors_53.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_53.UseVisualStyleBackColor = False
         '
         'PictureBox107
         '
@@ -4899,7 +4899,7 @@ Partial Class Items_edit
         Me.PictureBox107.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox107.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox107.TabIndex = 427
-        Me.PictureBox107.TabStop = false
+        Me.PictureBox107.TabStop = False
         '
         'valu_interiors_52
         '
@@ -4913,23 +4913,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_52
         '
-        Me.Check_NA_interiors_52.AutoSize = true
+        Me.Check_NA_interiors_52.AutoSize = True
         Me.Check_NA_interiors_52.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_52.Location = New System.Drawing.Point(188, 476)
         Me.Check_NA_interiors_52.Name = "Check_NA_interiors_52"
         Me.Check_NA_interiors_52.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_52.TabIndex = 425
-        Me.Check_NA_interiors_52.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_52.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_52
         '
-        Me.Check_available_interiors_52.AutoSize = true
+        Me.Check_available_interiors_52.AutoSize = True
         Me.Check_available_interiors_52.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_52.Location = New System.Drawing.Point(127, 476)
         Me.Check_available_interiors_52.Name = "Check_available_interiors_52"
         Me.Check_available_interiors_52.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_52.TabIndex = 424
-        Me.Check_available_interiors_52.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_52.UseVisualStyleBackColor = False
         '
         'PictureBox108
         '
@@ -4939,7 +4939,7 @@ Partial Class Items_edit
         Me.PictureBox108.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox108.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox108.TabIndex = 423
-        Me.PictureBox108.TabStop = false
+        Me.PictureBox108.TabStop = False
         '
         'valu_interiors_51
         '
@@ -4953,23 +4953,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_51
         '
-        Me.Check_NA_interiors_51.AutoSize = true
+        Me.Check_NA_interiors_51.AutoSize = True
         Me.Check_NA_interiors_51.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_51.Location = New System.Drawing.Point(106, 476)
         Me.Check_NA_interiors_51.Name = "Check_NA_interiors_51"
         Me.Check_NA_interiors_51.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_51.TabIndex = 421
-        Me.Check_NA_interiors_51.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_51.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_51
         '
-        Me.Check_available_interiors_51.AutoSize = true
+        Me.Check_available_interiors_51.AutoSize = True
         Me.Check_available_interiors_51.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_51.Location = New System.Drawing.Point(45, 476)
         Me.Check_available_interiors_51.Name = "Check_available_interiors_51"
         Me.Check_available_interiors_51.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_51.TabIndex = 420
-        Me.Check_available_interiors_51.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_51.UseVisualStyleBackColor = False
         '
         'PictureBox109
         '
@@ -4979,7 +4979,7 @@ Partial Class Items_edit
         Me.PictureBox109.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox109.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox109.TabIndex = 419
-        Me.PictureBox109.TabStop = false
+        Me.PictureBox109.TabStop = False
         '
         'valu_interiors_50
         '
@@ -4993,23 +4993,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_50
         '
-        Me.Check_NA_interiors_50.AutoSize = true
+        Me.Check_NA_interiors_50.AutoSize = True
         Me.Check_NA_interiors_50.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_50.Location = New System.Drawing.Point(844, 396)
         Me.Check_NA_interiors_50.Name = "Check_NA_interiors_50"
         Me.Check_NA_interiors_50.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_50.TabIndex = 417
-        Me.Check_NA_interiors_50.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_50.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_50
         '
-        Me.Check_available_interiors_50.AutoSize = true
+        Me.Check_available_interiors_50.AutoSize = True
         Me.Check_available_interiors_50.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_50.Location = New System.Drawing.Point(783, 396)
         Me.Check_available_interiors_50.Name = "Check_available_interiors_50"
         Me.Check_available_interiors_50.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_50.TabIndex = 416
-        Me.Check_available_interiors_50.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_50.UseVisualStyleBackColor = False
         '
         'PictureBox110
         '
@@ -5019,7 +5019,7 @@ Partial Class Items_edit
         Me.PictureBox110.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox110.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox110.TabIndex = 415
-        Me.PictureBox110.TabStop = false
+        Me.PictureBox110.TabStop = False
         '
         'valu_interiors_49
         '
@@ -5033,23 +5033,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_49
         '
-        Me.Check_NA_interiors_49.AutoSize = true
+        Me.Check_NA_interiors_49.AutoSize = True
         Me.Check_NA_interiors_49.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_49.Location = New System.Drawing.Point(762, 396)
         Me.Check_NA_interiors_49.Name = "Check_NA_interiors_49"
         Me.Check_NA_interiors_49.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_49.TabIndex = 413
-        Me.Check_NA_interiors_49.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_49.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_49
         '
-        Me.Check_available_interiors_49.AutoSize = true
+        Me.Check_available_interiors_49.AutoSize = True
         Me.Check_available_interiors_49.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_49.Location = New System.Drawing.Point(701, 396)
         Me.Check_available_interiors_49.Name = "Check_available_interiors_49"
         Me.Check_available_interiors_49.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_49.TabIndex = 412
-        Me.Check_available_interiors_49.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_49.UseVisualStyleBackColor = False
         '
         'PictureBox111
         '
@@ -5059,7 +5059,7 @@ Partial Class Items_edit
         Me.PictureBox111.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox111.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox111.TabIndex = 411
-        Me.PictureBox111.TabStop = false
+        Me.PictureBox111.TabStop = False
         '
         'valu_interiors_48
         '
@@ -5073,23 +5073,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_48
         '
-        Me.Check_NA_interiors_48.AutoSize = true
+        Me.Check_NA_interiors_48.AutoSize = True
         Me.Check_NA_interiors_48.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_48.Location = New System.Drawing.Point(680, 396)
         Me.Check_NA_interiors_48.Name = "Check_NA_interiors_48"
         Me.Check_NA_interiors_48.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_48.TabIndex = 409
-        Me.Check_NA_interiors_48.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_48.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_48
         '
-        Me.Check_available_interiors_48.AutoSize = true
+        Me.Check_available_interiors_48.AutoSize = True
         Me.Check_available_interiors_48.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_48.Location = New System.Drawing.Point(619, 396)
         Me.Check_available_interiors_48.Name = "Check_available_interiors_48"
         Me.Check_available_interiors_48.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_48.TabIndex = 408
-        Me.Check_available_interiors_48.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_48.UseVisualStyleBackColor = False
         '
         'PictureBox115
         '
@@ -5099,7 +5099,7 @@ Partial Class Items_edit
         Me.PictureBox115.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox115.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox115.TabIndex = 407
-        Me.PictureBox115.TabStop = false
+        Me.PictureBox115.TabStop = False
         '
         'valu_interiors_47
         '
@@ -5113,23 +5113,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_47
         '
-        Me.Check_NA_interiors_47.AutoSize = true
+        Me.Check_NA_interiors_47.AutoSize = True
         Me.Check_NA_interiors_47.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_47.Location = New System.Drawing.Point(598, 396)
         Me.Check_NA_interiors_47.Name = "Check_NA_interiors_47"
         Me.Check_NA_interiors_47.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_47.TabIndex = 405
-        Me.Check_NA_interiors_47.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_47.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_47
         '
-        Me.Check_available_interiors_47.AutoSize = true
+        Me.Check_available_interiors_47.AutoSize = True
         Me.Check_available_interiors_47.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_47.Location = New System.Drawing.Point(537, 396)
         Me.Check_available_interiors_47.Name = "Check_available_interiors_47"
         Me.Check_available_interiors_47.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_47.TabIndex = 404
-        Me.Check_available_interiors_47.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_47.UseVisualStyleBackColor = False
         '
         'PictureBox116
         '
@@ -5139,7 +5139,7 @@ Partial Class Items_edit
         Me.PictureBox116.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox116.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox116.TabIndex = 403
-        Me.PictureBox116.TabStop = false
+        Me.PictureBox116.TabStop = False
         '
         'valu_interiors_46
         '
@@ -5153,23 +5153,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_46
         '
-        Me.Check_NA_interiors_46.AutoSize = true
+        Me.Check_NA_interiors_46.AutoSize = True
         Me.Check_NA_interiors_46.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_46.Location = New System.Drawing.Point(516, 396)
         Me.Check_NA_interiors_46.Name = "Check_NA_interiors_46"
         Me.Check_NA_interiors_46.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_46.TabIndex = 401
-        Me.Check_NA_interiors_46.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_46.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_46
         '
-        Me.Check_available_interiors_46.AutoSize = true
+        Me.Check_available_interiors_46.AutoSize = True
         Me.Check_available_interiors_46.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_46.Location = New System.Drawing.Point(455, 396)
         Me.Check_available_interiors_46.Name = "Check_available_interiors_46"
         Me.Check_available_interiors_46.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_46.TabIndex = 400
-        Me.Check_available_interiors_46.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_46.UseVisualStyleBackColor = False
         '
         'PictureBox117
         '
@@ -5179,7 +5179,7 @@ Partial Class Items_edit
         Me.PictureBox117.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox117.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox117.TabIndex = 399
-        Me.PictureBox117.TabStop = false
+        Me.PictureBox117.TabStop = False
         '
         'valu_interiors_45
         '
@@ -5193,23 +5193,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_45
         '
-        Me.Check_NA_interiors_45.AutoSize = true
+        Me.Check_NA_interiors_45.AutoSize = True
         Me.Check_NA_interiors_45.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_45.Location = New System.Drawing.Point(434, 396)
         Me.Check_NA_interiors_45.Name = "Check_NA_interiors_45"
         Me.Check_NA_interiors_45.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_45.TabIndex = 397
-        Me.Check_NA_interiors_45.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_45.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_45
         '
-        Me.Check_available_interiors_45.AutoSize = true
+        Me.Check_available_interiors_45.AutoSize = True
         Me.Check_available_interiors_45.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_45.Location = New System.Drawing.Point(373, 396)
         Me.Check_available_interiors_45.Name = "Check_available_interiors_45"
         Me.Check_available_interiors_45.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_45.TabIndex = 396
-        Me.Check_available_interiors_45.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_45.UseVisualStyleBackColor = False
         '
         'PictureBox118
         '
@@ -5219,7 +5219,7 @@ Partial Class Items_edit
         Me.PictureBox118.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox118.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox118.TabIndex = 395
-        Me.PictureBox118.TabStop = false
+        Me.PictureBox118.TabStop = False
         '
         'valu_interiors_44
         '
@@ -5233,23 +5233,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_44
         '
-        Me.Check_NA_interiors_44.AutoSize = true
+        Me.Check_NA_interiors_44.AutoSize = True
         Me.Check_NA_interiors_44.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_44.Location = New System.Drawing.Point(352, 396)
         Me.Check_NA_interiors_44.Name = "Check_NA_interiors_44"
         Me.Check_NA_interiors_44.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_44.TabIndex = 393
-        Me.Check_NA_interiors_44.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_44.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_44
         '
-        Me.Check_available_interiors_44.AutoSize = true
+        Me.Check_available_interiors_44.AutoSize = True
         Me.Check_available_interiors_44.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_44.Location = New System.Drawing.Point(291, 396)
         Me.Check_available_interiors_44.Name = "Check_available_interiors_44"
         Me.Check_available_interiors_44.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_44.TabIndex = 392
-        Me.Check_available_interiors_44.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_44.UseVisualStyleBackColor = False
         '
         'PictureBox119
         '
@@ -5259,7 +5259,7 @@ Partial Class Items_edit
         Me.PictureBox119.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox119.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox119.TabIndex = 391
-        Me.PictureBox119.TabStop = false
+        Me.PictureBox119.TabStop = False
         '
         'valu_interiors_43
         '
@@ -5273,23 +5273,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_43
         '
-        Me.Check_NA_interiors_43.AutoSize = true
+        Me.Check_NA_interiors_43.AutoSize = True
         Me.Check_NA_interiors_43.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_43.Location = New System.Drawing.Point(270, 396)
         Me.Check_NA_interiors_43.Name = "Check_NA_interiors_43"
         Me.Check_NA_interiors_43.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_43.TabIndex = 389
-        Me.Check_NA_interiors_43.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_43.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_43
         '
-        Me.Check_available_interiors_43.AutoSize = true
+        Me.Check_available_interiors_43.AutoSize = True
         Me.Check_available_interiors_43.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_43.Location = New System.Drawing.Point(209, 396)
         Me.Check_available_interiors_43.Name = "Check_available_interiors_43"
         Me.Check_available_interiors_43.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_43.TabIndex = 388
-        Me.Check_available_interiors_43.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_43.UseVisualStyleBackColor = False
         '
         'PictureBox120
         '
@@ -5299,7 +5299,7 @@ Partial Class Items_edit
         Me.PictureBox120.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox120.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox120.TabIndex = 387
-        Me.PictureBox120.TabStop = false
+        Me.PictureBox120.TabStop = False
         '
         'valu_interiors_42
         '
@@ -5313,23 +5313,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_42
         '
-        Me.Check_NA_interiors_42.AutoSize = true
+        Me.Check_NA_interiors_42.AutoSize = True
         Me.Check_NA_interiors_42.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_42.Location = New System.Drawing.Point(188, 396)
         Me.Check_NA_interiors_42.Name = "Check_NA_interiors_42"
         Me.Check_NA_interiors_42.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_42.TabIndex = 385
-        Me.Check_NA_interiors_42.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_42.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_42
         '
-        Me.Check_available_interiors_42.AutoSize = true
+        Me.Check_available_interiors_42.AutoSize = True
         Me.Check_available_interiors_42.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_42.Location = New System.Drawing.Point(127, 396)
         Me.Check_available_interiors_42.Name = "Check_available_interiors_42"
         Me.Check_available_interiors_42.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_42.TabIndex = 384
-        Me.Check_available_interiors_42.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_42.UseVisualStyleBackColor = False
         '
         'PictureBox121
         '
@@ -5339,7 +5339,7 @@ Partial Class Items_edit
         Me.PictureBox121.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox121.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox121.TabIndex = 383
-        Me.PictureBox121.TabStop = false
+        Me.PictureBox121.TabStop = False
         '
         'valu_interiors_41
         '
@@ -5353,23 +5353,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_41
         '
-        Me.Check_NA_interiors_41.AutoSize = true
+        Me.Check_NA_interiors_41.AutoSize = True
         Me.Check_NA_interiors_41.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_41.Location = New System.Drawing.Point(106, 396)
         Me.Check_NA_interiors_41.Name = "Check_NA_interiors_41"
         Me.Check_NA_interiors_41.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_41.TabIndex = 381
-        Me.Check_NA_interiors_41.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_41.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_41
         '
-        Me.Check_available_interiors_41.AutoSize = true
+        Me.Check_available_interiors_41.AutoSize = True
         Me.Check_available_interiors_41.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_41.Location = New System.Drawing.Point(45, 396)
         Me.Check_available_interiors_41.Name = "Check_available_interiors_41"
         Me.Check_available_interiors_41.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_41.TabIndex = 380
-        Me.Check_available_interiors_41.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_41.UseVisualStyleBackColor = False
         '
         'PictureBox122
         '
@@ -5379,7 +5379,7 @@ Partial Class Items_edit
         Me.PictureBox122.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox122.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox122.TabIndex = 379
-        Me.PictureBox122.TabStop = false
+        Me.PictureBox122.TabStop = False
         '
         'valu_interiors_40
         '
@@ -5393,23 +5393,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_40
         '
-        Me.Check_NA_interiors_40.AutoSize = true
+        Me.Check_NA_interiors_40.AutoSize = True
         Me.Check_NA_interiors_40.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_40.Location = New System.Drawing.Point(844, 316)
         Me.Check_NA_interiors_40.Name = "Check_NA_interiors_40"
         Me.Check_NA_interiors_40.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_40.TabIndex = 377
-        Me.Check_NA_interiors_40.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_40.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_40
         '
-        Me.Check_available_interiors_40.AutoSize = true
+        Me.Check_available_interiors_40.AutoSize = True
         Me.Check_available_interiors_40.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_40.Location = New System.Drawing.Point(783, 316)
         Me.Check_available_interiors_40.Name = "Check_available_interiors_40"
         Me.Check_available_interiors_40.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_40.TabIndex = 376
-        Me.Check_available_interiors_40.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_40.UseVisualStyleBackColor = False
         '
         'PictureBox58
         '
@@ -5419,7 +5419,7 @@ Partial Class Items_edit
         Me.PictureBox58.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox58.TabIndex = 375
-        Me.PictureBox58.TabStop = false
+        Me.PictureBox58.TabStop = False
         '
         'valu_interiors_39
         '
@@ -5433,23 +5433,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_39
         '
-        Me.Check_NA_interiors_39.AutoSize = true
+        Me.Check_NA_interiors_39.AutoSize = True
         Me.Check_NA_interiors_39.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_39.Location = New System.Drawing.Point(762, 316)
         Me.Check_NA_interiors_39.Name = "Check_NA_interiors_39"
         Me.Check_NA_interiors_39.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_39.TabIndex = 373
-        Me.Check_NA_interiors_39.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_39.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_39
         '
-        Me.Check_available_interiors_39.AutoSize = true
+        Me.Check_available_interiors_39.AutoSize = True
         Me.Check_available_interiors_39.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_39.Location = New System.Drawing.Point(701, 316)
         Me.Check_available_interiors_39.Name = "Check_available_interiors_39"
         Me.Check_available_interiors_39.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_39.TabIndex = 372
-        Me.Check_available_interiors_39.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_39.UseVisualStyleBackColor = False
         '
         'PictureBox59
         '
@@ -5459,7 +5459,7 @@ Partial Class Items_edit
         Me.PictureBox59.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox59.TabIndex = 371
-        Me.PictureBox59.TabStop = false
+        Me.PictureBox59.TabStop = False
         '
         'valu_interiors_38
         '
@@ -5473,23 +5473,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_38
         '
-        Me.Check_NA_interiors_38.AutoSize = true
+        Me.Check_NA_interiors_38.AutoSize = True
         Me.Check_NA_interiors_38.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_38.Location = New System.Drawing.Point(680, 316)
         Me.Check_NA_interiors_38.Name = "Check_NA_interiors_38"
         Me.Check_NA_interiors_38.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_38.TabIndex = 369
-        Me.Check_NA_interiors_38.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_38.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_38
         '
-        Me.Check_available_interiors_38.AutoSize = true
+        Me.Check_available_interiors_38.AutoSize = True
         Me.Check_available_interiors_38.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_38.Location = New System.Drawing.Point(619, 316)
         Me.Check_available_interiors_38.Name = "Check_available_interiors_38"
         Me.Check_available_interiors_38.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_38.TabIndex = 368
-        Me.Check_available_interiors_38.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_38.UseVisualStyleBackColor = False
         '
         'PictureBox60
         '
@@ -5499,7 +5499,7 @@ Partial Class Items_edit
         Me.PictureBox60.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox60.TabIndex = 367
-        Me.PictureBox60.TabStop = false
+        Me.PictureBox60.TabStop = False
         '
         'valu_interiors_37
         '
@@ -5513,23 +5513,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_37
         '
-        Me.Check_NA_interiors_37.AutoSize = true
+        Me.Check_NA_interiors_37.AutoSize = True
         Me.Check_NA_interiors_37.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_37.Location = New System.Drawing.Point(598, 316)
         Me.Check_NA_interiors_37.Name = "Check_NA_interiors_37"
         Me.Check_NA_interiors_37.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_37.TabIndex = 365
-        Me.Check_NA_interiors_37.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_37.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_37
         '
-        Me.Check_available_interiors_37.AutoSize = true
+        Me.Check_available_interiors_37.AutoSize = True
         Me.Check_available_interiors_37.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_37.Location = New System.Drawing.Point(537, 316)
         Me.Check_available_interiors_37.Name = "Check_available_interiors_37"
         Me.Check_available_interiors_37.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_37.TabIndex = 364
-        Me.Check_available_interiors_37.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_37.UseVisualStyleBackColor = False
         '
         'PictureBox77
         '
@@ -5539,7 +5539,7 @@ Partial Class Items_edit
         Me.PictureBox77.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox77.TabIndex = 363
-        Me.PictureBox77.TabStop = false
+        Me.PictureBox77.TabStop = False
         '
         'valu_interiors_36
         '
@@ -5553,23 +5553,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_36
         '
-        Me.Check_NA_interiors_36.AutoSize = true
+        Me.Check_NA_interiors_36.AutoSize = True
         Me.Check_NA_interiors_36.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_36.Location = New System.Drawing.Point(516, 316)
         Me.Check_NA_interiors_36.Name = "Check_NA_interiors_36"
         Me.Check_NA_interiors_36.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_36.TabIndex = 361
-        Me.Check_NA_interiors_36.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_36.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_36
         '
-        Me.Check_available_interiors_36.AutoSize = true
+        Me.Check_available_interiors_36.AutoSize = True
         Me.Check_available_interiors_36.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_36.Location = New System.Drawing.Point(455, 316)
         Me.Check_available_interiors_36.Name = "Check_available_interiors_36"
         Me.Check_available_interiors_36.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_36.TabIndex = 360
-        Me.Check_available_interiors_36.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_36.UseVisualStyleBackColor = False
         '
         'PictureBox78
         '
@@ -5579,7 +5579,7 @@ Partial Class Items_edit
         Me.PictureBox78.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox78.TabIndex = 359
-        Me.PictureBox78.TabStop = false
+        Me.PictureBox78.TabStop = False
         '
         'valu_interiors_35
         '
@@ -5593,23 +5593,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_35
         '
-        Me.Check_NA_interiors_35.AutoSize = true
+        Me.Check_NA_interiors_35.AutoSize = True
         Me.Check_NA_interiors_35.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_35.Location = New System.Drawing.Point(434, 316)
         Me.Check_NA_interiors_35.Name = "Check_NA_interiors_35"
         Me.Check_NA_interiors_35.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_35.TabIndex = 357
-        Me.Check_NA_interiors_35.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_35.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_35
         '
-        Me.Check_available_interiors_35.AutoSize = true
+        Me.Check_available_interiors_35.AutoSize = True
         Me.Check_available_interiors_35.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_35.Location = New System.Drawing.Point(373, 316)
         Me.Check_available_interiors_35.Name = "Check_available_interiors_35"
         Me.Check_available_interiors_35.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_35.TabIndex = 356
-        Me.Check_available_interiors_35.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_35.UseVisualStyleBackColor = False
         '
         'PictureBox79
         '
@@ -5619,7 +5619,7 @@ Partial Class Items_edit
         Me.PictureBox79.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox79.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox79.TabIndex = 355
-        Me.PictureBox79.TabStop = false
+        Me.PictureBox79.TabStop = False
         '
         'valu_interiors_34
         '
@@ -5633,23 +5633,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_34
         '
-        Me.Check_NA_interiors_34.AutoSize = true
+        Me.Check_NA_interiors_34.AutoSize = True
         Me.Check_NA_interiors_34.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_34.Location = New System.Drawing.Point(352, 316)
         Me.Check_NA_interiors_34.Name = "Check_NA_interiors_34"
         Me.Check_NA_interiors_34.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_34.TabIndex = 353
-        Me.Check_NA_interiors_34.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_34.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_34
         '
-        Me.Check_available_interiors_34.AutoSize = true
+        Me.Check_available_interiors_34.AutoSize = True
         Me.Check_available_interiors_34.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_34.Location = New System.Drawing.Point(291, 316)
         Me.Check_available_interiors_34.Name = "Check_available_interiors_34"
         Me.Check_available_interiors_34.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_34.TabIndex = 352
-        Me.Check_available_interiors_34.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_34.UseVisualStyleBackColor = False
         '
         'PictureBox80
         '
@@ -5659,7 +5659,7 @@ Partial Class Items_edit
         Me.PictureBox80.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox80.TabIndex = 351
-        Me.PictureBox80.TabStop = false
+        Me.PictureBox80.TabStop = False
         '
         'valu_interiors_33
         '
@@ -5673,23 +5673,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_33
         '
-        Me.Check_NA_interiors_33.AutoSize = true
+        Me.Check_NA_interiors_33.AutoSize = True
         Me.Check_NA_interiors_33.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_33.Location = New System.Drawing.Point(270, 316)
         Me.Check_NA_interiors_33.Name = "Check_NA_interiors_33"
         Me.Check_NA_interiors_33.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_33.TabIndex = 349
-        Me.Check_NA_interiors_33.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_33.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_33
         '
-        Me.Check_available_interiors_33.AutoSize = true
+        Me.Check_available_interiors_33.AutoSize = True
         Me.Check_available_interiors_33.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_33.Location = New System.Drawing.Point(209, 316)
         Me.Check_available_interiors_33.Name = "Check_available_interiors_33"
         Me.Check_available_interiors_33.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_33.TabIndex = 348
-        Me.Check_available_interiors_33.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_33.UseVisualStyleBackColor = False
         '
         'PictureBox81
         '
@@ -5699,7 +5699,7 @@ Partial Class Items_edit
         Me.PictureBox81.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox81.TabIndex = 347
-        Me.PictureBox81.TabStop = false
+        Me.PictureBox81.TabStop = False
         '
         'valu_interiors_32
         '
@@ -5713,23 +5713,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_32
         '
-        Me.Check_NA_interiors_32.AutoSize = true
+        Me.Check_NA_interiors_32.AutoSize = True
         Me.Check_NA_interiors_32.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_32.Location = New System.Drawing.Point(188, 316)
         Me.Check_NA_interiors_32.Name = "Check_NA_interiors_32"
         Me.Check_NA_interiors_32.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_32.TabIndex = 345
-        Me.Check_NA_interiors_32.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_32.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_32
         '
-        Me.Check_available_interiors_32.AutoSize = true
+        Me.Check_available_interiors_32.AutoSize = True
         Me.Check_available_interiors_32.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_32.Location = New System.Drawing.Point(127, 316)
         Me.Check_available_interiors_32.Name = "Check_available_interiors_32"
         Me.Check_available_interiors_32.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_32.TabIndex = 344
-        Me.Check_available_interiors_32.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_32.UseVisualStyleBackColor = False
         '
         'PictureBox82
         '
@@ -5739,7 +5739,7 @@ Partial Class Items_edit
         Me.PictureBox82.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox82.TabIndex = 343
-        Me.PictureBox82.TabStop = false
+        Me.PictureBox82.TabStop = False
         '
         'valu_interiors_31
         '
@@ -5753,23 +5753,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_31
         '
-        Me.Check_NA_interiors_31.AutoSize = true
+        Me.Check_NA_interiors_31.AutoSize = True
         Me.Check_NA_interiors_31.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_31.Location = New System.Drawing.Point(106, 316)
         Me.Check_NA_interiors_31.Name = "Check_NA_interiors_31"
         Me.Check_NA_interiors_31.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_31.TabIndex = 341
-        Me.Check_NA_interiors_31.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_31.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_31
         '
-        Me.Check_available_interiors_31.AutoSize = true
+        Me.Check_available_interiors_31.AutoSize = True
         Me.Check_available_interiors_31.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_31.Location = New System.Drawing.Point(45, 316)
         Me.Check_available_interiors_31.Name = "Check_available_interiors_31"
         Me.Check_available_interiors_31.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_31.TabIndex = 340
-        Me.Check_available_interiors_31.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_31.UseVisualStyleBackColor = False
         '
         'PictureBox83
         '
@@ -5779,7 +5779,7 @@ Partial Class Items_edit
         Me.PictureBox83.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox83.TabIndex = 339
-        Me.PictureBox83.TabStop = false
+        Me.PictureBox83.TabStop = False
         '
         'valu_interiors_30
         '
@@ -5793,23 +5793,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_30
         '
-        Me.Check_NA_interiors_30.AutoSize = true
+        Me.Check_NA_interiors_30.AutoSize = True
         Me.Check_NA_interiors_30.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_30.Location = New System.Drawing.Point(844, 236)
         Me.Check_NA_interiors_30.Name = "Check_NA_interiors_30"
         Me.Check_NA_interiors_30.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_30.TabIndex = 337
-        Me.Check_NA_interiors_30.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_30.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_30
         '
-        Me.Check_available_interiors_30.AutoSize = true
+        Me.Check_available_interiors_30.AutoSize = True
         Me.Check_available_interiors_30.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_30.Location = New System.Drawing.Point(783, 236)
         Me.Check_available_interiors_30.Name = "Check_available_interiors_30"
         Me.Check_available_interiors_30.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_30.TabIndex = 336
-        Me.Check_available_interiors_30.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_30.UseVisualStyleBackColor = False
         '
         'PictureBox84
         '
@@ -5819,7 +5819,7 @@ Partial Class Items_edit
         Me.PictureBox84.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox84.TabIndex = 335
-        Me.PictureBox84.TabStop = false
+        Me.PictureBox84.TabStop = False
         '
         'valu_interiors_29
         '
@@ -5833,23 +5833,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_29
         '
-        Me.Check_NA_interiors_29.AutoSize = true
+        Me.Check_NA_interiors_29.AutoSize = True
         Me.Check_NA_interiors_29.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_29.Location = New System.Drawing.Point(762, 236)
         Me.Check_NA_interiors_29.Name = "Check_NA_interiors_29"
         Me.Check_NA_interiors_29.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_29.TabIndex = 333
-        Me.Check_NA_interiors_29.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_29.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_29
         '
-        Me.Check_available_interiors_29.AutoSize = true
+        Me.Check_available_interiors_29.AutoSize = True
         Me.Check_available_interiors_29.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_29.Location = New System.Drawing.Point(701, 236)
         Me.Check_available_interiors_29.Name = "Check_available_interiors_29"
         Me.Check_available_interiors_29.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_29.TabIndex = 332
-        Me.Check_available_interiors_29.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_29.UseVisualStyleBackColor = False
         '
         'PictureBox85
         '
@@ -5859,7 +5859,7 @@ Partial Class Items_edit
         Me.PictureBox85.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox85.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox85.TabIndex = 331
-        Me.PictureBox85.TabStop = false
+        Me.PictureBox85.TabStop = False
         '
         'valu_interiors_28
         '
@@ -5873,23 +5873,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_28
         '
-        Me.Check_NA_interiors_28.AutoSize = true
+        Me.Check_NA_interiors_28.AutoSize = True
         Me.Check_NA_interiors_28.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_28.Location = New System.Drawing.Point(680, 236)
         Me.Check_NA_interiors_28.Name = "Check_NA_interiors_28"
         Me.Check_NA_interiors_28.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_28.TabIndex = 329
-        Me.Check_NA_interiors_28.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_28.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_28
         '
-        Me.Check_available_interiors_28.AutoSize = true
+        Me.Check_available_interiors_28.AutoSize = True
         Me.Check_available_interiors_28.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_28.Location = New System.Drawing.Point(619, 236)
         Me.Check_available_interiors_28.Name = "Check_available_interiors_28"
         Me.Check_available_interiors_28.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_28.TabIndex = 328
-        Me.Check_available_interiors_28.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_28.UseVisualStyleBackColor = False
         '
         'PictureBox89
         '
@@ -5899,7 +5899,7 @@ Partial Class Items_edit
         Me.PictureBox89.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox89.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox89.TabIndex = 327
-        Me.PictureBox89.TabStop = false
+        Me.PictureBox89.TabStop = False
         '
         'valu_interiors_27
         '
@@ -5913,23 +5913,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_27
         '
-        Me.Check_NA_interiors_27.AutoSize = true
+        Me.Check_NA_interiors_27.AutoSize = True
         Me.Check_NA_interiors_27.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_27.Location = New System.Drawing.Point(598, 236)
         Me.Check_NA_interiors_27.Name = "Check_NA_interiors_27"
         Me.Check_NA_interiors_27.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_27.TabIndex = 325
-        Me.Check_NA_interiors_27.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_27.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_27
         '
-        Me.Check_available_interiors_27.AutoSize = true
+        Me.Check_available_interiors_27.AutoSize = True
         Me.Check_available_interiors_27.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_27.Location = New System.Drawing.Point(537, 236)
         Me.Check_available_interiors_27.Name = "Check_available_interiors_27"
         Me.Check_available_interiors_27.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_27.TabIndex = 324
-        Me.Check_available_interiors_27.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_27.UseVisualStyleBackColor = False
         '
         'PictureBox90
         '
@@ -5939,7 +5939,7 @@ Partial Class Items_edit
         Me.PictureBox90.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox90.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox90.TabIndex = 323
-        Me.PictureBox90.TabStop = false
+        Me.PictureBox90.TabStop = False
         '
         'valu_interiors_26
         '
@@ -5953,23 +5953,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_26
         '
-        Me.Check_NA_interiors_26.AutoSize = true
+        Me.Check_NA_interiors_26.AutoSize = True
         Me.Check_NA_interiors_26.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_26.Location = New System.Drawing.Point(516, 236)
         Me.Check_NA_interiors_26.Name = "Check_NA_interiors_26"
         Me.Check_NA_interiors_26.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_26.TabIndex = 321
-        Me.Check_NA_interiors_26.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_26.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_26
         '
-        Me.Check_available_interiors_26.AutoSize = true
+        Me.Check_available_interiors_26.AutoSize = True
         Me.Check_available_interiors_26.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_26.Location = New System.Drawing.Point(455, 236)
         Me.Check_available_interiors_26.Name = "Check_available_interiors_26"
         Me.Check_available_interiors_26.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_26.TabIndex = 320
-        Me.Check_available_interiors_26.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_26.UseVisualStyleBackColor = False
         '
         'PictureBox91
         '
@@ -5979,7 +5979,7 @@ Partial Class Items_edit
         Me.PictureBox91.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox91.TabIndex = 319
-        Me.PictureBox91.TabStop = false
+        Me.PictureBox91.TabStop = False
         '
         'valu_interiors_25
         '
@@ -5993,23 +5993,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_25
         '
-        Me.Check_NA_interiors_25.AutoSize = true
+        Me.Check_NA_interiors_25.AutoSize = True
         Me.Check_NA_interiors_25.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_25.Location = New System.Drawing.Point(434, 236)
         Me.Check_NA_interiors_25.Name = "Check_NA_interiors_25"
         Me.Check_NA_interiors_25.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_25.TabIndex = 317
-        Me.Check_NA_interiors_25.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_25.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_25
         '
-        Me.Check_available_interiors_25.AutoSize = true
+        Me.Check_available_interiors_25.AutoSize = True
         Me.Check_available_interiors_25.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_25.Location = New System.Drawing.Point(373, 236)
         Me.Check_available_interiors_25.Name = "Check_available_interiors_25"
         Me.Check_available_interiors_25.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_25.TabIndex = 316
-        Me.Check_available_interiors_25.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_25.UseVisualStyleBackColor = False
         '
         'PictureBox92
         '
@@ -6019,7 +6019,7 @@ Partial Class Items_edit
         Me.PictureBox92.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox92.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox92.TabIndex = 315
-        Me.PictureBox92.TabStop = false
+        Me.PictureBox92.TabStop = False
         '
         'valu_interiors_24
         '
@@ -6033,23 +6033,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_24
         '
-        Me.Check_NA_interiors_24.AutoSize = true
+        Me.Check_NA_interiors_24.AutoSize = True
         Me.Check_NA_interiors_24.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_24.Location = New System.Drawing.Point(352, 236)
         Me.Check_NA_interiors_24.Name = "Check_NA_interiors_24"
         Me.Check_NA_interiors_24.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_24.TabIndex = 313
-        Me.Check_NA_interiors_24.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_24.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_24
         '
-        Me.Check_available_interiors_24.AutoSize = true
+        Me.Check_available_interiors_24.AutoSize = True
         Me.Check_available_interiors_24.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_24.Location = New System.Drawing.Point(291, 236)
         Me.Check_available_interiors_24.Name = "Check_available_interiors_24"
         Me.Check_available_interiors_24.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_24.TabIndex = 312
-        Me.Check_available_interiors_24.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_24.UseVisualStyleBackColor = False
         '
         'PictureBox93
         '
@@ -6059,7 +6059,7 @@ Partial Class Items_edit
         Me.PictureBox93.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox93.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox93.TabIndex = 311
-        Me.PictureBox93.TabStop = false
+        Me.PictureBox93.TabStop = False
         '
         'valu_interiors_23
         '
@@ -6073,23 +6073,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_23
         '
-        Me.Check_NA_interiors_23.AutoSize = true
+        Me.Check_NA_interiors_23.AutoSize = True
         Me.Check_NA_interiors_23.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_23.Location = New System.Drawing.Point(270, 236)
         Me.Check_NA_interiors_23.Name = "Check_NA_interiors_23"
         Me.Check_NA_interiors_23.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_23.TabIndex = 309
-        Me.Check_NA_interiors_23.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_23.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_23
         '
-        Me.Check_available_interiors_23.AutoSize = true
+        Me.Check_available_interiors_23.AutoSize = True
         Me.Check_available_interiors_23.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_23.Location = New System.Drawing.Point(209, 236)
         Me.Check_available_interiors_23.Name = "Check_available_interiors_23"
         Me.Check_available_interiors_23.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_23.TabIndex = 308
-        Me.Check_available_interiors_23.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_23.UseVisualStyleBackColor = False
         '
         'PictureBox94
         '
@@ -6099,7 +6099,7 @@ Partial Class Items_edit
         Me.PictureBox94.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox94.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox94.TabIndex = 307
-        Me.PictureBox94.TabStop = false
+        Me.PictureBox94.TabStop = False
         '
         'valu_interiors_22
         '
@@ -6113,23 +6113,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_22
         '
-        Me.Check_NA_interiors_22.AutoSize = true
+        Me.Check_NA_interiors_22.AutoSize = True
         Me.Check_NA_interiors_22.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_22.Location = New System.Drawing.Point(188, 236)
         Me.Check_NA_interiors_22.Name = "Check_NA_interiors_22"
         Me.Check_NA_interiors_22.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_22.TabIndex = 305
-        Me.Check_NA_interiors_22.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_22.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_22
         '
-        Me.Check_available_interiors_22.AutoSize = true
+        Me.Check_available_interiors_22.AutoSize = True
         Me.Check_available_interiors_22.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_22.Location = New System.Drawing.Point(127, 236)
         Me.Check_available_interiors_22.Name = "Check_available_interiors_22"
         Me.Check_available_interiors_22.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_22.TabIndex = 304
-        Me.Check_available_interiors_22.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_22.UseVisualStyleBackColor = False
         '
         'PictureBox95
         '
@@ -6139,7 +6139,7 @@ Partial Class Items_edit
         Me.PictureBox95.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox95.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox95.TabIndex = 303
-        Me.PictureBox95.TabStop = false
+        Me.PictureBox95.TabStop = False
         '
         'valu_interiors_21
         '
@@ -6153,23 +6153,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_21
         '
-        Me.Check_NA_interiors_21.AutoSize = true
+        Me.Check_NA_interiors_21.AutoSize = True
         Me.Check_NA_interiors_21.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_21.Location = New System.Drawing.Point(106, 236)
         Me.Check_NA_interiors_21.Name = "Check_NA_interiors_21"
         Me.Check_NA_interiors_21.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_21.TabIndex = 301
-        Me.Check_NA_interiors_21.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_21.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_21
         '
-        Me.Check_available_interiors_21.AutoSize = true
+        Me.Check_available_interiors_21.AutoSize = True
         Me.Check_available_interiors_21.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_21.Location = New System.Drawing.Point(45, 236)
         Me.Check_available_interiors_21.Name = "Check_available_interiors_21"
         Me.Check_available_interiors_21.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_21.TabIndex = 300
-        Me.Check_available_interiors_21.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_21.UseVisualStyleBackColor = False
         '
         'PictureBox96
         '
@@ -6179,7 +6179,7 @@ Partial Class Items_edit
         Me.PictureBox96.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox96.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox96.TabIndex = 299
-        Me.PictureBox96.TabStop = false
+        Me.PictureBox96.TabStop = False
         '
         'valu_interiors_20
         '
@@ -6193,23 +6193,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_20
         '
-        Me.Check_NA_interiors_20.AutoSize = true
+        Me.Check_NA_interiors_20.AutoSize = True
         Me.Check_NA_interiors_20.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_20.Location = New System.Drawing.Point(844, 156)
         Me.Check_NA_interiors_20.Name = "Check_NA_interiors_20"
         Me.Check_NA_interiors_20.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_20.TabIndex = 297
-        Me.Check_NA_interiors_20.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_20.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_20
         '
-        Me.Check_available_interiors_20.AutoSize = true
+        Me.Check_available_interiors_20.AutoSize = True
         Me.Check_available_interiors_20.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_20.Location = New System.Drawing.Point(783, 156)
         Me.Check_available_interiors_20.Name = "Check_available_interiors_20"
         Me.Check_available_interiors_20.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_20.TabIndex = 296
-        Me.Check_available_interiors_20.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_20.UseVisualStyleBackColor = False
         '
         'PictureBox14
         '
@@ -6219,7 +6219,7 @@ Partial Class Items_edit
         Me.PictureBox14.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox14.TabIndex = 295
-        Me.PictureBox14.TabStop = false
+        Me.PictureBox14.TabStop = False
         '
         'valu_interiors_19
         '
@@ -6233,23 +6233,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_19
         '
-        Me.Check_NA_interiors_19.AutoSize = true
+        Me.Check_NA_interiors_19.AutoSize = True
         Me.Check_NA_interiors_19.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_19.Location = New System.Drawing.Point(762, 156)
         Me.Check_NA_interiors_19.Name = "Check_NA_interiors_19"
         Me.Check_NA_interiors_19.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_19.TabIndex = 293
-        Me.Check_NA_interiors_19.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_19.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_19
         '
-        Me.Check_available_interiors_19.AutoSize = true
+        Me.Check_available_interiors_19.AutoSize = True
         Me.Check_available_interiors_19.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_19.Location = New System.Drawing.Point(701, 156)
         Me.Check_available_interiors_19.Name = "Check_available_interiors_19"
         Me.Check_available_interiors_19.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_19.TabIndex = 292
-        Me.Check_available_interiors_19.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_19.UseVisualStyleBackColor = False
         '
         'PictureBox15
         '
@@ -6259,7 +6259,7 @@ Partial Class Items_edit
         Me.PictureBox15.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox15.TabIndex = 291
-        Me.PictureBox15.TabStop = false
+        Me.PictureBox15.TabStop = False
         '
         'valu_interiors_18
         '
@@ -6273,23 +6273,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_18
         '
-        Me.Check_NA_interiors_18.AutoSize = true
+        Me.Check_NA_interiors_18.AutoSize = True
         Me.Check_NA_interiors_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_18.Location = New System.Drawing.Point(680, 156)
         Me.Check_NA_interiors_18.Name = "Check_NA_interiors_18"
         Me.Check_NA_interiors_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_18.TabIndex = 289
-        Me.Check_NA_interiors_18.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_18.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_18
         '
-        Me.Check_available_interiors_18.AutoSize = true
+        Me.Check_available_interiors_18.AutoSize = True
         Me.Check_available_interiors_18.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_18.Location = New System.Drawing.Point(619, 156)
         Me.Check_available_interiors_18.Name = "Check_available_interiors_18"
         Me.Check_available_interiors_18.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_18.TabIndex = 288
-        Me.Check_available_interiors_18.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_18.UseVisualStyleBackColor = False
         '
         'PictureBox16
         '
@@ -6299,7 +6299,7 @@ Partial Class Items_edit
         Me.PictureBox16.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox16.TabIndex = 287
-        Me.PictureBox16.TabStop = false
+        Me.PictureBox16.TabStop = False
         '
         'valu_interiors_17
         '
@@ -6313,23 +6313,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_17
         '
-        Me.Check_NA_interiors_17.AutoSize = true
+        Me.Check_NA_interiors_17.AutoSize = True
         Me.Check_NA_interiors_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_17.Location = New System.Drawing.Point(598, 156)
         Me.Check_NA_interiors_17.Name = "Check_NA_interiors_17"
         Me.Check_NA_interiors_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_17.TabIndex = 285
-        Me.Check_NA_interiors_17.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_17.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_17
         '
-        Me.Check_available_interiors_17.AutoSize = true
+        Me.Check_available_interiors_17.AutoSize = True
         Me.Check_available_interiors_17.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_17.Location = New System.Drawing.Point(537, 156)
         Me.Check_available_interiors_17.Name = "Check_available_interiors_17"
         Me.Check_available_interiors_17.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_17.TabIndex = 284
-        Me.Check_available_interiors_17.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_17.UseVisualStyleBackColor = False
         '
         'PictureBox17
         '
@@ -6339,7 +6339,7 @@ Partial Class Items_edit
         Me.PictureBox17.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox17.TabIndex = 283
-        Me.PictureBox17.TabStop = false
+        Me.PictureBox17.TabStop = False
         '
         'valu_interiors_16
         '
@@ -6353,23 +6353,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_16
         '
-        Me.Check_NA_interiors_16.AutoSize = true
+        Me.Check_NA_interiors_16.AutoSize = True
         Me.Check_NA_interiors_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_16.Location = New System.Drawing.Point(516, 156)
         Me.Check_NA_interiors_16.Name = "Check_NA_interiors_16"
         Me.Check_NA_interiors_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_16.TabIndex = 281
-        Me.Check_NA_interiors_16.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_16.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_16
         '
-        Me.Check_available_interiors_16.AutoSize = true
+        Me.Check_available_interiors_16.AutoSize = True
         Me.Check_available_interiors_16.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_16.Location = New System.Drawing.Point(455, 156)
         Me.Check_available_interiors_16.Name = "Check_available_interiors_16"
         Me.Check_available_interiors_16.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_16.TabIndex = 280
-        Me.Check_available_interiors_16.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_16.UseVisualStyleBackColor = False
         '
         'PictureBox18
         '
@@ -6379,7 +6379,7 @@ Partial Class Items_edit
         Me.PictureBox18.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox18.TabIndex = 279
-        Me.PictureBox18.TabStop = false
+        Me.PictureBox18.TabStop = False
         '
         'valu_interiors_15
         '
@@ -6393,23 +6393,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_15
         '
-        Me.Check_NA_interiors_15.AutoSize = true
+        Me.Check_NA_interiors_15.AutoSize = True
         Me.Check_NA_interiors_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_15.Location = New System.Drawing.Point(434, 156)
         Me.Check_NA_interiors_15.Name = "Check_NA_interiors_15"
         Me.Check_NA_interiors_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_15.TabIndex = 277
-        Me.Check_NA_interiors_15.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_15.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_15
         '
-        Me.Check_available_interiors_15.AutoSize = true
+        Me.Check_available_interiors_15.AutoSize = True
         Me.Check_available_interiors_15.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_15.Location = New System.Drawing.Point(373, 156)
         Me.Check_available_interiors_15.Name = "Check_available_interiors_15"
         Me.Check_available_interiors_15.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_15.TabIndex = 276
-        Me.Check_available_interiors_15.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_15.UseVisualStyleBackColor = False
         '
         'PictureBox50
         '
@@ -6419,7 +6419,7 @@ Partial Class Items_edit
         Me.PictureBox50.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox50.TabIndex = 275
-        Me.PictureBox50.TabStop = false
+        Me.PictureBox50.TabStop = False
         '
         'valu_interiors_14
         '
@@ -6433,23 +6433,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_14
         '
-        Me.Check_NA_interiors_14.AutoSize = true
+        Me.Check_NA_interiors_14.AutoSize = True
         Me.Check_NA_interiors_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_14.Location = New System.Drawing.Point(352, 156)
         Me.Check_NA_interiors_14.Name = "Check_NA_interiors_14"
         Me.Check_NA_interiors_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_14.TabIndex = 273
-        Me.Check_NA_interiors_14.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_14.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_14
         '
-        Me.Check_available_interiors_14.AutoSize = true
+        Me.Check_available_interiors_14.AutoSize = True
         Me.Check_available_interiors_14.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_14.Location = New System.Drawing.Point(291, 156)
         Me.Check_available_interiors_14.Name = "Check_available_interiors_14"
         Me.Check_available_interiors_14.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_14.TabIndex = 272
-        Me.Check_available_interiors_14.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_14.UseVisualStyleBackColor = False
         '
         'PictureBox51
         '
@@ -6459,7 +6459,7 @@ Partial Class Items_edit
         Me.PictureBox51.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox51.TabIndex = 271
-        Me.PictureBox51.TabStop = false
+        Me.PictureBox51.TabStop = False
         '
         'valu_interiors_13
         '
@@ -6473,23 +6473,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_13
         '
-        Me.Check_NA_interiors_13.AutoSize = true
+        Me.Check_NA_interiors_13.AutoSize = True
         Me.Check_NA_interiors_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_13.Location = New System.Drawing.Point(270, 156)
         Me.Check_NA_interiors_13.Name = "Check_NA_interiors_13"
         Me.Check_NA_interiors_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_13.TabIndex = 269
-        Me.Check_NA_interiors_13.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_13.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_13
         '
-        Me.Check_available_interiors_13.AutoSize = true
+        Me.Check_available_interiors_13.AutoSize = True
         Me.Check_available_interiors_13.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_13.Location = New System.Drawing.Point(209, 156)
         Me.Check_available_interiors_13.Name = "Check_available_interiors_13"
         Me.Check_available_interiors_13.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_13.TabIndex = 268
-        Me.Check_available_interiors_13.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_13.UseVisualStyleBackColor = False
         '
         'PictureBox52
         '
@@ -6499,7 +6499,7 @@ Partial Class Items_edit
         Me.PictureBox52.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox52.TabIndex = 267
-        Me.PictureBox52.TabStop = false
+        Me.PictureBox52.TabStop = False
         '
         'valu_interiors_12
         '
@@ -6513,23 +6513,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_12
         '
-        Me.Check_NA_interiors_12.AutoSize = true
+        Me.Check_NA_interiors_12.AutoSize = True
         Me.Check_NA_interiors_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_12.Location = New System.Drawing.Point(188, 156)
         Me.Check_NA_interiors_12.Name = "Check_NA_interiors_12"
         Me.Check_NA_interiors_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_12.TabIndex = 265
-        Me.Check_NA_interiors_12.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_12.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_12
         '
-        Me.Check_available_interiors_12.AutoSize = true
+        Me.Check_available_interiors_12.AutoSize = True
         Me.Check_available_interiors_12.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_12.Location = New System.Drawing.Point(127, 156)
         Me.Check_available_interiors_12.Name = "Check_available_interiors_12"
         Me.Check_available_interiors_12.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_12.TabIndex = 264
-        Me.Check_available_interiors_12.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_12.UseVisualStyleBackColor = False
         '
         'PictureBox53
         '
@@ -6539,7 +6539,7 @@ Partial Class Items_edit
         Me.PictureBox53.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox53.TabIndex = 263
-        Me.PictureBox53.TabStop = false
+        Me.PictureBox53.TabStop = False
         '
         'valu_interiors_11
         '
@@ -6553,23 +6553,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_11
         '
-        Me.Check_NA_interiors_11.AutoSize = true
+        Me.Check_NA_interiors_11.AutoSize = True
         Me.Check_NA_interiors_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_11.Location = New System.Drawing.Point(106, 156)
         Me.Check_NA_interiors_11.Name = "Check_NA_interiors_11"
         Me.Check_NA_interiors_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_11.TabIndex = 261
-        Me.Check_NA_interiors_11.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_11.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_11
         '
-        Me.Check_available_interiors_11.AutoSize = true
+        Me.Check_available_interiors_11.AutoSize = True
         Me.Check_available_interiors_11.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_11.Location = New System.Drawing.Point(45, 156)
         Me.Check_available_interiors_11.Name = "Check_available_interiors_11"
         Me.Check_available_interiors_11.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_11.TabIndex = 260
-        Me.Check_available_interiors_11.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_11.UseVisualStyleBackColor = False
         '
         'PictureBox54
         '
@@ -6579,7 +6579,7 @@ Partial Class Items_edit
         Me.PictureBox54.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox54.TabIndex = 259
-        Me.PictureBox54.TabStop = false
+        Me.PictureBox54.TabStop = False
         '
         'valu_interiors_10
         '
@@ -6593,23 +6593,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_10
         '
-        Me.Check_NA_interiors_10.AutoSize = true
+        Me.Check_NA_interiors_10.AutoSize = True
         Me.Check_NA_interiors_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_10.Location = New System.Drawing.Point(844, 76)
         Me.Check_NA_interiors_10.Name = "Check_NA_interiors_10"
         Me.Check_NA_interiors_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_10.TabIndex = 257
-        Me.Check_NA_interiors_10.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_10.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_10
         '
-        Me.Check_available_interiors_10.AutoSize = true
+        Me.Check_available_interiors_10.AutoSize = True
         Me.Check_available_interiors_10.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_10.Location = New System.Drawing.Point(783, 76)
         Me.Check_available_interiors_10.Name = "Check_available_interiors_10"
         Me.Check_available_interiors_10.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_10.TabIndex = 256
-        Me.Check_available_interiors_10.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_10.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
@@ -6619,7 +6619,7 @@ Partial Class Items_edit
         Me.PictureBox1.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 255
-        Me.PictureBox1.TabStop = false
+        Me.PictureBox1.TabStop = False
         '
         'valu_interiors_9
         '
@@ -6633,23 +6633,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_9
         '
-        Me.Check_NA_interiors_9.AutoSize = true
+        Me.Check_NA_interiors_9.AutoSize = True
         Me.Check_NA_interiors_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_9.Location = New System.Drawing.Point(762, 76)
         Me.Check_NA_interiors_9.Name = "Check_NA_interiors_9"
         Me.Check_NA_interiors_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_9.TabIndex = 253
-        Me.Check_NA_interiors_9.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_9.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_9
         '
-        Me.Check_available_interiors_9.AutoSize = true
+        Me.Check_available_interiors_9.AutoSize = True
         Me.Check_available_interiors_9.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_9.Location = New System.Drawing.Point(701, 76)
         Me.Check_available_interiors_9.Name = "Check_available_interiors_9"
         Me.Check_available_interiors_9.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_9.TabIndex = 252
-        Me.Check_available_interiors_9.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_9.UseVisualStyleBackColor = False
         '
         'PictureBox2
         '
@@ -6659,7 +6659,7 @@ Partial Class Items_edit
         Me.PictureBox2.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 251
-        Me.PictureBox2.TabStop = false
+        Me.PictureBox2.TabStop = False
         '
         'valu_interiors_8
         '
@@ -6673,23 +6673,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_8
         '
-        Me.Check_NA_interiors_8.AutoSize = true
+        Me.Check_NA_interiors_8.AutoSize = True
         Me.Check_NA_interiors_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_8.Location = New System.Drawing.Point(680, 76)
         Me.Check_NA_interiors_8.Name = "Check_NA_interiors_8"
         Me.Check_NA_interiors_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_8.TabIndex = 249
-        Me.Check_NA_interiors_8.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_8.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_8
         '
-        Me.Check_available_interiors_8.AutoSize = true
+        Me.Check_available_interiors_8.AutoSize = True
         Me.Check_available_interiors_8.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_8.Location = New System.Drawing.Point(619, 76)
         Me.Check_available_interiors_8.Name = "Check_available_interiors_8"
         Me.Check_available_interiors_8.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_8.TabIndex = 248
-        Me.Check_available_interiors_8.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_8.UseVisualStyleBackColor = False
         '
         'PictureBox3
         '
@@ -6699,7 +6699,7 @@ Partial Class Items_edit
         Me.PictureBox3.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 247
-        Me.PictureBox3.TabStop = false
+        Me.PictureBox3.TabStop = False
         '
         'valu_interiors_7
         '
@@ -6713,23 +6713,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_7
         '
-        Me.Check_NA_interiors_7.AutoSize = true
+        Me.Check_NA_interiors_7.AutoSize = True
         Me.Check_NA_interiors_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_7.Location = New System.Drawing.Point(598, 76)
         Me.Check_NA_interiors_7.Name = "Check_NA_interiors_7"
         Me.Check_NA_interiors_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_7.TabIndex = 245
-        Me.Check_NA_interiors_7.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_7.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_7
         '
-        Me.Check_available_interiors_7.AutoSize = true
+        Me.Check_available_interiors_7.AutoSize = True
         Me.Check_available_interiors_7.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_7.Location = New System.Drawing.Point(537, 76)
         Me.Check_available_interiors_7.Name = "Check_available_interiors_7"
         Me.Check_available_interiors_7.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_7.TabIndex = 244
-        Me.Check_available_interiors_7.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_7.UseVisualStyleBackColor = False
         '
         'PictureBox4
         '
@@ -6739,7 +6739,7 @@ Partial Class Items_edit
         Me.PictureBox4.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 243
-        Me.PictureBox4.TabStop = false
+        Me.PictureBox4.TabStop = False
         '
         'valu_interiors_6
         '
@@ -6753,23 +6753,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_6
         '
-        Me.Check_NA_interiors_6.AutoSize = true
+        Me.Check_NA_interiors_6.AutoSize = True
         Me.Check_NA_interiors_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_6.Location = New System.Drawing.Point(516, 76)
         Me.Check_NA_interiors_6.Name = "Check_NA_interiors_6"
         Me.Check_NA_interiors_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_6.TabIndex = 241
-        Me.Check_NA_interiors_6.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_6.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_6
         '
-        Me.Check_available_interiors_6.AutoSize = true
+        Me.Check_available_interiors_6.AutoSize = True
         Me.Check_available_interiors_6.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_6.Location = New System.Drawing.Point(455, 76)
         Me.Check_available_interiors_6.Name = "Check_available_interiors_6"
         Me.Check_available_interiors_6.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_6.TabIndex = 240
-        Me.Check_available_interiors_6.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_6.UseVisualStyleBackColor = False
         '
         'PictureBox5
         '
@@ -6779,7 +6779,7 @@ Partial Class Items_edit
         Me.PictureBox5.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 239
-        Me.PictureBox5.TabStop = false
+        Me.PictureBox5.TabStop = False
         '
         'valu_interiors_5
         '
@@ -6793,23 +6793,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_5
         '
-        Me.Check_NA_interiors_5.AutoSize = true
+        Me.Check_NA_interiors_5.AutoSize = True
         Me.Check_NA_interiors_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_5.Location = New System.Drawing.Point(434, 76)
         Me.Check_NA_interiors_5.Name = "Check_NA_interiors_5"
         Me.Check_NA_interiors_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_5.TabIndex = 237
-        Me.Check_NA_interiors_5.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_5.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_5
         '
-        Me.Check_available_interiors_5.AutoSize = true
+        Me.Check_available_interiors_5.AutoSize = True
         Me.Check_available_interiors_5.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_5.Location = New System.Drawing.Point(373, 76)
         Me.Check_available_interiors_5.Name = "Check_available_interiors_5"
         Me.Check_available_interiors_5.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_5.TabIndex = 236
-        Me.Check_available_interiors_5.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_5.UseVisualStyleBackColor = False
         '
         'PictureBox9
         '
@@ -6819,7 +6819,7 @@ Partial Class Items_edit
         Me.PictureBox9.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 235
-        Me.PictureBox9.TabStop = false
+        Me.PictureBox9.TabStop = False
         '
         'valu_interiors_4
         '
@@ -6833,23 +6833,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_4
         '
-        Me.Check_NA_interiors_4.AutoSize = true
+        Me.Check_NA_interiors_4.AutoSize = True
         Me.Check_NA_interiors_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_4.Location = New System.Drawing.Point(352, 76)
         Me.Check_NA_interiors_4.Name = "Check_NA_interiors_4"
         Me.Check_NA_interiors_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_4.TabIndex = 233
-        Me.Check_NA_interiors_4.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_4.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_4
         '
-        Me.Check_available_interiors_4.AutoSize = true
+        Me.Check_available_interiors_4.AutoSize = True
         Me.Check_available_interiors_4.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_4.Location = New System.Drawing.Point(291, 76)
         Me.Check_available_interiors_4.Name = "Check_available_interiors_4"
         Me.Check_available_interiors_4.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_4.TabIndex = 232
-        Me.Check_available_interiors_4.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_4.UseVisualStyleBackColor = False
         '
         'PictureBox10
         '
@@ -6859,7 +6859,7 @@ Partial Class Items_edit
         Me.PictureBox10.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox10.TabIndex = 231
-        Me.PictureBox10.TabStop = false
+        Me.PictureBox10.TabStop = False
         '
         'valu_interiors_3
         '
@@ -6873,23 +6873,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_3
         '
-        Me.Check_NA_interiors_3.AutoSize = true
+        Me.Check_NA_interiors_3.AutoSize = True
         Me.Check_NA_interiors_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_3.Location = New System.Drawing.Point(270, 76)
         Me.Check_NA_interiors_3.Name = "Check_NA_interiors_3"
         Me.Check_NA_interiors_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_3.TabIndex = 229
-        Me.Check_NA_interiors_3.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_3.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_3
         '
-        Me.Check_available_interiors_3.AutoSize = true
+        Me.Check_available_interiors_3.AutoSize = True
         Me.Check_available_interiors_3.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_3.Location = New System.Drawing.Point(209, 76)
         Me.Check_available_interiors_3.Name = "Check_available_interiors_3"
         Me.Check_available_interiors_3.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_3.TabIndex = 228
-        Me.Check_available_interiors_3.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_3.UseVisualStyleBackColor = False
         '
         'PictureBox11
         '
@@ -6899,7 +6899,7 @@ Partial Class Items_edit
         Me.PictureBox11.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox11.TabIndex = 227
-        Me.PictureBox11.TabStop = false
+        Me.PictureBox11.TabStop = False
         '
         'valu_interiors_2
         '
@@ -6913,23 +6913,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_2
         '
-        Me.Check_NA_interiors_2.AutoSize = true
+        Me.Check_NA_interiors_2.AutoSize = True
         Me.Check_NA_interiors_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_2.Location = New System.Drawing.Point(188, 76)
         Me.Check_NA_interiors_2.Name = "Check_NA_interiors_2"
         Me.Check_NA_interiors_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_2.TabIndex = 225
-        Me.Check_NA_interiors_2.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_2.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_2
         '
-        Me.Check_available_interiors_2.AutoSize = true
+        Me.Check_available_interiors_2.AutoSize = True
         Me.Check_available_interiors_2.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_2.Location = New System.Drawing.Point(127, 76)
         Me.Check_available_interiors_2.Name = "Check_available_interiors_2"
         Me.Check_available_interiors_2.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_2.TabIndex = 224
-        Me.Check_available_interiors_2.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_2.UseVisualStyleBackColor = False
         '
         'PictureBox12
         '
@@ -6939,7 +6939,7 @@ Partial Class Items_edit
         Me.PictureBox12.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox12.TabIndex = 223
-        Me.PictureBox12.TabStop = false
+        Me.PictureBox12.TabStop = False
         '
         'valu_interiors_1
         '
@@ -6953,23 +6953,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_1
         '
-        Me.Check_NA_interiors_1.AutoSize = true
+        Me.Check_NA_interiors_1.AutoSize = True
         Me.Check_NA_interiors_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_1.Location = New System.Drawing.Point(106, 76)
         Me.Check_NA_interiors_1.Name = "Check_NA_interiors_1"
         Me.Check_NA_interiors_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_1.TabIndex = 221
-        Me.Check_NA_interiors_1.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_1.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_1
         '
-        Me.Check_available_interiors_1.AutoSize = true
+        Me.Check_available_interiors_1.AutoSize = True
         Me.Check_available_interiors_1.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_1.Location = New System.Drawing.Point(45, 76)
         Me.Check_available_interiors_1.Name = "Check_available_interiors_1"
         Me.Check_available_interiors_1.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_1.TabIndex = 220
-        Me.Check_available_interiors_1.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_1.UseVisualStyleBackColor = False
         '
         'PictureBox13
         '
@@ -6979,7 +6979,7 @@ Partial Class Items_edit
         Me.PictureBox13.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox13.TabIndex = 219
-        Me.PictureBox13.TabStop = false
+        Me.PictureBox13.TabStop = False
         '
         'Icon_interiors_right
         '
@@ -6991,11 +6991,11 @@ Partial Class Items_edit
         Me.Icon_interiors_right.Size = New System.Drawing.Size(17, 42)
         Me.Icon_interiors_right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Icon_interiors_right.TabIndex = 150
-        Me.Icon_interiors_right.TabStop = false
+        Me.Icon_interiors_right.TabStop = False
         '
         'Panel_interiors_1
         '
-        Me.Panel_interiors_1.BackgroundImage = CType(resources.GetObject("Panel_interiors_1.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_interiors_1.BackgroundImage = CType(resources.GetObject("Panel_interiors_1.BackgroundImage"), System.Drawing.Image)
         Me.Panel_interiors_1.Controls.Add(Me.valu_interiors_104)
         Me.Panel_interiors_1.Controls.Add(Me.Check_NA_interiors_104)
         Me.Panel_interiors_1.Controls.Add(Me.Check_available_interiors_104)
@@ -7177,7 +7177,7 @@ Partial Class Items_edit
         Me.Panel_interiors_1.Name = "Panel_interiors_1"
         Me.Panel_interiors_1.Size = New System.Drawing.Size(905, 506)
         Me.Panel_interiors_1.TabIndex = 105
-        Me.Panel_interiors_1.Visible = false
+        Me.Panel_interiors_1.Visible = False
         '
         'valu_interiors_104
         '
@@ -7191,23 +7191,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_104
         '
-        Me.Check_NA_interiors_104.AutoSize = true
+        Me.Check_NA_interiors_104.AutoSize = True
         Me.Check_NA_interiors_104.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_104.Location = New System.Drawing.Point(598, 436)
         Me.Check_NA_interiors_104.Name = "Check_NA_interiors_104"
         Me.Check_NA_interiors_104.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_104.TabIndex = 473
-        Me.Check_NA_interiors_104.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_104.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_104
         '
-        Me.Check_available_interiors_104.AutoSize = true
+        Me.Check_available_interiors_104.AutoSize = True
         Me.Check_available_interiors_104.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_104.Location = New System.Drawing.Point(537, 436)
         Me.Check_available_interiors_104.Name = "Check_available_interiors_104"
         Me.Check_available_interiors_104.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_104.TabIndex = 472
-        Me.Check_available_interiors_104.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_104.UseVisualStyleBackColor = False
         '
         'Icon_interiors_104
         '
@@ -7217,7 +7217,7 @@ Partial Class Items_edit
         Me.Icon_interiors_104.Size = New System.Drawing.Size(76, 74)
         Me.Icon_interiors_104.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_interiors_104.TabIndex = 471
-        Me.Icon_interiors_104.TabStop = false
+        Me.Icon_interiors_104.TabStop = False
         '
         'valu_interiors_103
         '
@@ -7231,23 +7231,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_103
         '
-        Me.Check_NA_interiors_103.AutoSize = true
+        Me.Check_NA_interiors_103.AutoSize = True
         Me.Check_NA_interiors_103.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_103.Location = New System.Drawing.Point(516, 436)
         Me.Check_NA_interiors_103.Name = "Check_NA_interiors_103"
         Me.Check_NA_interiors_103.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_103.TabIndex = 469
-        Me.Check_NA_interiors_103.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_103.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_103
         '
-        Me.Check_available_interiors_103.AutoSize = true
+        Me.Check_available_interiors_103.AutoSize = True
         Me.Check_available_interiors_103.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_103.Location = New System.Drawing.Point(455, 436)
         Me.Check_available_interiors_103.Name = "Check_available_interiors_103"
         Me.Check_available_interiors_103.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_103.TabIndex = 468
-        Me.Check_available_interiors_103.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_103.UseVisualStyleBackColor = False
         '
         'Icon_interiors_103
         '
@@ -7257,7 +7257,7 @@ Partial Class Items_edit
         Me.Icon_interiors_103.Size = New System.Drawing.Size(76, 74)
         Me.Icon_interiors_103.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_interiors_103.TabIndex = 467
-        Me.Icon_interiors_103.TabStop = false
+        Me.Icon_interiors_103.TabStop = False
         '
         'valu_interiors_102
         '
@@ -7271,23 +7271,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_102
         '
-        Me.Check_NA_interiors_102.AutoSize = true
+        Me.Check_NA_interiors_102.AutoSize = True
         Me.Check_NA_interiors_102.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_102.Location = New System.Drawing.Point(434, 436)
         Me.Check_NA_interiors_102.Name = "Check_NA_interiors_102"
         Me.Check_NA_interiors_102.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_102.TabIndex = 465
-        Me.Check_NA_interiors_102.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_102.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_102
         '
-        Me.Check_available_interiors_102.AutoSize = true
+        Me.Check_available_interiors_102.AutoSize = True
         Me.Check_available_interiors_102.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_102.Location = New System.Drawing.Point(373, 436)
         Me.Check_available_interiors_102.Name = "Check_available_interiors_102"
         Me.Check_available_interiors_102.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_102.TabIndex = 464
-        Me.Check_available_interiors_102.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_102.UseVisualStyleBackColor = False
         '
         'Icon_interiors_102
         '
@@ -7297,7 +7297,7 @@ Partial Class Items_edit
         Me.Icon_interiors_102.Size = New System.Drawing.Size(76, 74)
         Me.Icon_interiors_102.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_interiors_102.TabIndex = 463
-        Me.Icon_interiors_102.TabStop = false
+        Me.Icon_interiors_102.TabStop = False
         '
         'valu_interiors_101
         '
@@ -7311,23 +7311,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_101
         '
-        Me.Check_NA_interiors_101.AutoSize = true
+        Me.Check_NA_interiors_101.AutoSize = True
         Me.Check_NA_interiors_101.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_101.Location = New System.Drawing.Point(352, 436)
         Me.Check_NA_interiors_101.Name = "Check_NA_interiors_101"
         Me.Check_NA_interiors_101.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_101.TabIndex = 461
-        Me.Check_NA_interiors_101.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_101.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_101
         '
-        Me.Check_available_interiors_101.AutoSize = true
+        Me.Check_available_interiors_101.AutoSize = True
         Me.Check_available_interiors_101.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_101.Location = New System.Drawing.Point(291, 436)
         Me.Check_available_interiors_101.Name = "Check_available_interiors_101"
         Me.Check_available_interiors_101.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_101.TabIndex = 460
-        Me.Check_available_interiors_101.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_101.UseVisualStyleBackColor = False
         '
         'Icon_interiors_101
         '
@@ -7337,7 +7337,7 @@ Partial Class Items_edit
         Me.Icon_interiors_101.Size = New System.Drawing.Size(76, 74)
         Me.Icon_interiors_101.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_interiors_101.TabIndex = 459
-        Me.Icon_interiors_101.TabStop = false
+        Me.Icon_interiors_101.TabStop = False
         '
         'valu_interiors_100
         '
@@ -7351,23 +7351,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_100
         '
-        Me.Check_NA_interiors_100.AutoSize = true
+        Me.Check_NA_interiors_100.AutoSize = True
         Me.Check_NA_interiors_100.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_100.Location = New System.Drawing.Point(844, 356)
         Me.Check_NA_interiors_100.Name = "Check_NA_interiors_100"
         Me.Check_NA_interiors_100.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_100.TabIndex = 457
-        Me.Check_NA_interiors_100.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_100.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_100
         '
-        Me.Check_available_interiors_100.AutoSize = true
+        Me.Check_available_interiors_100.AutoSize = True
         Me.Check_available_interiors_100.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_100.Location = New System.Drawing.Point(783, 356)
         Me.Check_available_interiors_100.Name = "Check_available_interiors_100"
         Me.Check_available_interiors_100.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_100.TabIndex = 456
-        Me.Check_available_interiors_100.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_100.UseVisualStyleBackColor = False
         '
         'PictureBox142
         '
@@ -7377,7 +7377,7 @@ Partial Class Items_edit
         Me.PictureBox142.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox142.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox142.TabIndex = 455
-        Me.PictureBox142.TabStop = false
+        Me.PictureBox142.TabStop = False
         '
         'valu_interiors_99
         '
@@ -7391,23 +7391,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_99
         '
-        Me.Check_NA_interiors_99.AutoSize = true
+        Me.Check_NA_interiors_99.AutoSize = True
         Me.Check_NA_interiors_99.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_99.Location = New System.Drawing.Point(762, 356)
         Me.Check_NA_interiors_99.Name = "Check_NA_interiors_99"
         Me.Check_NA_interiors_99.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_99.TabIndex = 453
-        Me.Check_NA_interiors_99.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_99.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_99
         '
-        Me.Check_available_interiors_99.AutoSize = true
+        Me.Check_available_interiors_99.AutoSize = True
         Me.Check_available_interiors_99.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_99.Location = New System.Drawing.Point(701, 356)
         Me.Check_available_interiors_99.Name = "Check_available_interiors_99"
         Me.Check_available_interiors_99.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_99.TabIndex = 452
-        Me.Check_available_interiors_99.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_99.UseVisualStyleBackColor = False
         '
         'PictureBox143
         '
@@ -7417,7 +7417,7 @@ Partial Class Items_edit
         Me.PictureBox143.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox143.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox143.TabIndex = 451
-        Me.PictureBox143.TabStop = false
+        Me.PictureBox143.TabStop = False
         '
         'valu_interiors_98
         '
@@ -7431,23 +7431,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_98
         '
-        Me.Check_NA_interiors_98.AutoSize = true
+        Me.Check_NA_interiors_98.AutoSize = True
         Me.Check_NA_interiors_98.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_98.Location = New System.Drawing.Point(680, 356)
         Me.Check_NA_interiors_98.Name = "Check_NA_interiors_98"
         Me.Check_NA_interiors_98.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_98.TabIndex = 449
-        Me.Check_NA_interiors_98.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_98.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_98
         '
-        Me.Check_available_interiors_98.AutoSize = true
+        Me.Check_available_interiors_98.AutoSize = True
         Me.Check_available_interiors_98.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_98.Location = New System.Drawing.Point(619, 356)
         Me.Check_available_interiors_98.Name = "Check_available_interiors_98"
         Me.Check_available_interiors_98.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_98.TabIndex = 448
-        Me.Check_available_interiors_98.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_98.UseVisualStyleBackColor = False
         '
         'PictureBox144
         '
@@ -7457,7 +7457,7 @@ Partial Class Items_edit
         Me.PictureBox144.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox144.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox144.TabIndex = 447
-        Me.PictureBox144.TabStop = false
+        Me.PictureBox144.TabStop = False
         '
         'valu_interiors_97
         '
@@ -7471,23 +7471,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_97
         '
-        Me.Check_NA_interiors_97.AutoSize = true
+        Me.Check_NA_interiors_97.AutoSize = True
         Me.Check_NA_interiors_97.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_97.Location = New System.Drawing.Point(598, 356)
         Me.Check_NA_interiors_97.Name = "Check_NA_interiors_97"
         Me.Check_NA_interiors_97.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_97.TabIndex = 445
-        Me.Check_NA_interiors_97.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_97.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_97
         '
-        Me.Check_available_interiors_97.AutoSize = true
+        Me.Check_available_interiors_97.AutoSize = True
         Me.Check_available_interiors_97.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_97.Location = New System.Drawing.Point(537, 356)
         Me.Check_available_interiors_97.Name = "Check_available_interiors_97"
         Me.Check_available_interiors_97.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_97.TabIndex = 444
-        Me.Check_available_interiors_97.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_97.UseVisualStyleBackColor = False
         '
         'PictureBox145
         '
@@ -7497,7 +7497,7 @@ Partial Class Items_edit
         Me.PictureBox145.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox145.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox145.TabIndex = 443
-        Me.PictureBox145.TabStop = false
+        Me.PictureBox145.TabStop = False
         '
         'valu_interiors_96
         '
@@ -7511,23 +7511,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_96
         '
-        Me.Check_NA_interiors_96.AutoSize = true
+        Me.Check_NA_interiors_96.AutoSize = True
         Me.Check_NA_interiors_96.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_96.Location = New System.Drawing.Point(516, 356)
         Me.Check_NA_interiors_96.Name = "Check_NA_interiors_96"
         Me.Check_NA_interiors_96.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_96.TabIndex = 441
-        Me.Check_NA_interiors_96.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_96.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_96
         '
-        Me.Check_available_interiors_96.AutoSize = true
+        Me.Check_available_interiors_96.AutoSize = True
         Me.Check_available_interiors_96.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_96.Location = New System.Drawing.Point(455, 356)
         Me.Check_available_interiors_96.Name = "Check_available_interiors_96"
         Me.Check_available_interiors_96.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_96.TabIndex = 440
-        Me.Check_available_interiors_96.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_96.UseVisualStyleBackColor = False
         '
         'PictureBox146
         '
@@ -7537,7 +7537,7 @@ Partial Class Items_edit
         Me.PictureBox146.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox146.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox146.TabIndex = 439
-        Me.PictureBox146.TabStop = false
+        Me.PictureBox146.TabStop = False
         '
         'valu_interiors_95
         '
@@ -7551,23 +7551,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_95
         '
-        Me.Check_NA_interiors_95.AutoSize = true
+        Me.Check_NA_interiors_95.AutoSize = True
         Me.Check_NA_interiors_95.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_95.Location = New System.Drawing.Point(434, 356)
         Me.Check_NA_interiors_95.Name = "Check_NA_interiors_95"
         Me.Check_NA_interiors_95.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_95.TabIndex = 437
-        Me.Check_NA_interiors_95.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_95.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_95
         '
-        Me.Check_available_interiors_95.AutoSize = true
+        Me.Check_available_interiors_95.AutoSize = True
         Me.Check_available_interiors_95.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_95.Location = New System.Drawing.Point(373, 356)
         Me.Check_available_interiors_95.Name = "Check_available_interiors_95"
         Me.Check_available_interiors_95.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_95.TabIndex = 436
-        Me.Check_available_interiors_95.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_95.UseVisualStyleBackColor = False
         '
         'PictureBox147
         '
@@ -7577,7 +7577,7 @@ Partial Class Items_edit
         Me.PictureBox147.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox147.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox147.TabIndex = 435
-        Me.PictureBox147.TabStop = false
+        Me.PictureBox147.TabStop = False
         '
         'valu_interiors_94
         '
@@ -7591,23 +7591,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_94
         '
-        Me.Check_NA_interiors_94.AutoSize = true
+        Me.Check_NA_interiors_94.AutoSize = True
         Me.Check_NA_interiors_94.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_94.Location = New System.Drawing.Point(352, 356)
         Me.Check_NA_interiors_94.Name = "Check_NA_interiors_94"
         Me.Check_NA_interiors_94.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_94.TabIndex = 433
-        Me.Check_NA_interiors_94.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_94.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_94
         '
-        Me.Check_available_interiors_94.AutoSize = true
+        Me.Check_available_interiors_94.AutoSize = True
         Me.Check_available_interiors_94.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_94.Location = New System.Drawing.Point(291, 356)
         Me.Check_available_interiors_94.Name = "Check_available_interiors_94"
         Me.Check_available_interiors_94.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_94.TabIndex = 432
-        Me.Check_available_interiors_94.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_94.UseVisualStyleBackColor = False
         '
         'PictureBox148
         '
@@ -7617,7 +7617,7 @@ Partial Class Items_edit
         Me.PictureBox148.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox148.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox148.TabIndex = 431
-        Me.PictureBox148.TabStop = false
+        Me.PictureBox148.TabStop = False
         '
         'valu_interiors_93
         '
@@ -7631,23 +7631,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_93
         '
-        Me.Check_NA_interiors_93.AutoSize = true
+        Me.Check_NA_interiors_93.AutoSize = True
         Me.Check_NA_interiors_93.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_93.Location = New System.Drawing.Point(270, 356)
         Me.Check_NA_interiors_93.Name = "Check_NA_interiors_93"
         Me.Check_NA_interiors_93.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_93.TabIndex = 429
-        Me.Check_NA_interiors_93.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_93.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_93
         '
-        Me.Check_available_interiors_93.AutoSize = true
+        Me.Check_available_interiors_93.AutoSize = True
         Me.Check_available_interiors_93.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_93.Location = New System.Drawing.Point(209, 356)
         Me.Check_available_interiors_93.Name = "Check_available_interiors_93"
         Me.Check_available_interiors_93.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_93.TabIndex = 428
-        Me.Check_available_interiors_93.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_93.UseVisualStyleBackColor = False
         '
         'PictureBox149
         '
@@ -7657,7 +7657,7 @@ Partial Class Items_edit
         Me.PictureBox149.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox149.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox149.TabIndex = 427
-        Me.PictureBox149.TabStop = false
+        Me.PictureBox149.TabStop = False
         '
         'valu_interiors_92
         '
@@ -7671,23 +7671,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_92
         '
-        Me.Check_NA_interiors_92.AutoSize = true
+        Me.Check_NA_interiors_92.AutoSize = True
         Me.Check_NA_interiors_92.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_92.Location = New System.Drawing.Point(188, 356)
         Me.Check_NA_interiors_92.Name = "Check_NA_interiors_92"
         Me.Check_NA_interiors_92.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_92.TabIndex = 425
-        Me.Check_NA_interiors_92.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_92.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_92
         '
-        Me.Check_available_interiors_92.AutoSize = true
+        Me.Check_available_interiors_92.AutoSize = True
         Me.Check_available_interiors_92.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_92.Location = New System.Drawing.Point(127, 356)
         Me.Check_available_interiors_92.Name = "Check_available_interiors_92"
         Me.Check_available_interiors_92.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_92.TabIndex = 424
-        Me.Check_available_interiors_92.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_92.UseVisualStyleBackColor = False
         '
         'PictureBox150
         '
@@ -7697,7 +7697,7 @@ Partial Class Items_edit
         Me.PictureBox150.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox150.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox150.TabIndex = 423
-        Me.PictureBox150.TabStop = false
+        Me.PictureBox150.TabStop = False
         '
         'valu_interiors_91
         '
@@ -7711,23 +7711,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_91
         '
-        Me.Check_NA_interiors_91.AutoSize = true
+        Me.Check_NA_interiors_91.AutoSize = True
         Me.Check_NA_interiors_91.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_91.Location = New System.Drawing.Point(106, 356)
         Me.Check_NA_interiors_91.Name = "Check_NA_interiors_91"
         Me.Check_NA_interiors_91.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_91.TabIndex = 421
-        Me.Check_NA_interiors_91.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_91.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_91
         '
-        Me.Check_available_interiors_91.AutoSize = true
+        Me.Check_available_interiors_91.AutoSize = True
         Me.Check_available_interiors_91.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_91.Location = New System.Drawing.Point(45, 356)
         Me.Check_available_interiors_91.Name = "Check_available_interiors_91"
         Me.Check_available_interiors_91.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_91.TabIndex = 420
-        Me.Check_available_interiors_91.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_91.UseVisualStyleBackColor = False
         '
         'PictureBox151
         '
@@ -7737,7 +7737,7 @@ Partial Class Items_edit
         Me.PictureBox151.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox151.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox151.TabIndex = 419
-        Me.PictureBox151.TabStop = false
+        Me.PictureBox151.TabStop = False
         '
         'valu_interiors_90
         '
@@ -7751,23 +7751,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_90
         '
-        Me.Check_NA_interiors_90.AutoSize = true
+        Me.Check_NA_interiors_90.AutoSize = True
         Me.Check_NA_interiors_90.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_90.Location = New System.Drawing.Point(844, 276)
         Me.Check_NA_interiors_90.Name = "Check_NA_interiors_90"
         Me.Check_NA_interiors_90.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_90.TabIndex = 417
-        Me.Check_NA_interiors_90.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_90.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_90
         '
-        Me.Check_available_interiors_90.AutoSize = true
+        Me.Check_available_interiors_90.AutoSize = True
         Me.Check_available_interiors_90.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_90.Location = New System.Drawing.Point(783, 276)
         Me.Check_available_interiors_90.Name = "Check_available_interiors_90"
         Me.Check_available_interiors_90.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_90.TabIndex = 416
-        Me.Check_available_interiors_90.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_90.UseVisualStyleBackColor = False
         '
         'PictureBox152
         '
@@ -7777,7 +7777,7 @@ Partial Class Items_edit
         Me.PictureBox152.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox152.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox152.TabIndex = 415
-        Me.PictureBox152.TabStop = false
+        Me.PictureBox152.TabStop = False
         '
         'valu_interiors_89
         '
@@ -7791,23 +7791,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_89
         '
-        Me.Check_NA_interiors_89.AutoSize = true
+        Me.Check_NA_interiors_89.AutoSize = True
         Me.Check_NA_interiors_89.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_89.Location = New System.Drawing.Point(762, 276)
         Me.Check_NA_interiors_89.Name = "Check_NA_interiors_89"
         Me.Check_NA_interiors_89.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_89.TabIndex = 413
-        Me.Check_NA_interiors_89.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_89.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_89
         '
-        Me.Check_available_interiors_89.AutoSize = true
+        Me.Check_available_interiors_89.AutoSize = True
         Me.Check_available_interiors_89.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_89.Location = New System.Drawing.Point(701, 276)
         Me.Check_available_interiors_89.Name = "Check_available_interiors_89"
         Me.Check_available_interiors_89.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_89.TabIndex = 412
-        Me.Check_available_interiors_89.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_89.UseVisualStyleBackColor = False
         '
         'PictureBox153
         '
@@ -7817,7 +7817,7 @@ Partial Class Items_edit
         Me.PictureBox153.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox153.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox153.TabIndex = 411
-        Me.PictureBox153.TabStop = false
+        Me.PictureBox153.TabStop = False
         '
         'valu_interiors_88
         '
@@ -7831,23 +7831,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_88
         '
-        Me.Check_NA_interiors_88.AutoSize = true
+        Me.Check_NA_interiors_88.AutoSize = True
         Me.Check_NA_interiors_88.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_88.Location = New System.Drawing.Point(680, 276)
         Me.Check_NA_interiors_88.Name = "Check_NA_interiors_88"
         Me.Check_NA_interiors_88.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_88.TabIndex = 409
-        Me.Check_NA_interiors_88.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_88.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_88
         '
-        Me.Check_available_interiors_88.AutoSize = true
+        Me.Check_available_interiors_88.AutoSize = True
         Me.Check_available_interiors_88.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_88.Location = New System.Drawing.Point(619, 276)
         Me.Check_available_interiors_88.Name = "Check_available_interiors_88"
         Me.Check_available_interiors_88.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_88.TabIndex = 408
-        Me.Check_available_interiors_88.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_88.UseVisualStyleBackColor = False
         '
         'PictureBox154
         '
@@ -7857,7 +7857,7 @@ Partial Class Items_edit
         Me.PictureBox154.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox154.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox154.TabIndex = 407
-        Me.PictureBox154.TabStop = false
+        Me.PictureBox154.TabStop = False
         '
         'valu_interiors_87
         '
@@ -7871,23 +7871,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_87
         '
-        Me.Check_NA_interiors_87.AutoSize = true
+        Me.Check_NA_interiors_87.AutoSize = True
         Me.Check_NA_interiors_87.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_87.Location = New System.Drawing.Point(598, 276)
         Me.Check_NA_interiors_87.Name = "Check_NA_interiors_87"
         Me.Check_NA_interiors_87.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_87.TabIndex = 405
-        Me.Check_NA_interiors_87.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_87.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_87
         '
-        Me.Check_available_interiors_87.AutoSize = true
+        Me.Check_available_interiors_87.AutoSize = True
         Me.Check_available_interiors_87.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_87.Location = New System.Drawing.Point(537, 276)
         Me.Check_available_interiors_87.Name = "Check_available_interiors_87"
         Me.Check_available_interiors_87.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_87.TabIndex = 404
-        Me.Check_available_interiors_87.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_87.UseVisualStyleBackColor = False
         '
         'PictureBox155
         '
@@ -7897,7 +7897,7 @@ Partial Class Items_edit
         Me.PictureBox155.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox155.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox155.TabIndex = 403
-        Me.PictureBox155.TabStop = false
+        Me.PictureBox155.TabStop = False
         '
         'valu_interiors_86
         '
@@ -7911,23 +7911,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_86
         '
-        Me.Check_NA_interiors_86.AutoSize = true
+        Me.Check_NA_interiors_86.AutoSize = True
         Me.Check_NA_interiors_86.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_86.Location = New System.Drawing.Point(516, 276)
         Me.Check_NA_interiors_86.Name = "Check_NA_interiors_86"
         Me.Check_NA_interiors_86.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_86.TabIndex = 401
-        Me.Check_NA_interiors_86.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_86.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_86
         '
-        Me.Check_available_interiors_86.AutoSize = true
+        Me.Check_available_interiors_86.AutoSize = True
         Me.Check_available_interiors_86.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_86.Location = New System.Drawing.Point(455, 276)
         Me.Check_available_interiors_86.Name = "Check_available_interiors_86"
         Me.Check_available_interiors_86.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_86.TabIndex = 400
-        Me.Check_available_interiors_86.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_86.UseVisualStyleBackColor = False
         '
         'PictureBox156
         '
@@ -7937,7 +7937,7 @@ Partial Class Items_edit
         Me.PictureBox156.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox156.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox156.TabIndex = 399
-        Me.PictureBox156.TabStop = false
+        Me.PictureBox156.TabStop = False
         '
         'valu_interiors_85
         '
@@ -7951,23 +7951,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_85
         '
-        Me.Check_NA_interiors_85.AutoSize = true
+        Me.Check_NA_interiors_85.AutoSize = True
         Me.Check_NA_interiors_85.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_85.Location = New System.Drawing.Point(434, 276)
         Me.Check_NA_interiors_85.Name = "Check_NA_interiors_85"
         Me.Check_NA_interiors_85.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_85.TabIndex = 397
-        Me.Check_NA_interiors_85.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_85.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_85
         '
-        Me.Check_available_interiors_85.AutoSize = true
+        Me.Check_available_interiors_85.AutoSize = True
         Me.Check_available_interiors_85.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_85.Location = New System.Drawing.Point(373, 276)
         Me.Check_available_interiors_85.Name = "Check_available_interiors_85"
         Me.Check_available_interiors_85.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_85.TabIndex = 396
-        Me.Check_available_interiors_85.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_85.UseVisualStyleBackColor = False
         '
         'PictureBox157
         '
@@ -7977,7 +7977,7 @@ Partial Class Items_edit
         Me.PictureBox157.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox157.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox157.TabIndex = 395
-        Me.PictureBox157.TabStop = false
+        Me.PictureBox157.TabStop = False
         '
         'valu_interiors_84
         '
@@ -7991,23 +7991,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_84
         '
-        Me.Check_NA_interiors_84.AutoSize = true
+        Me.Check_NA_interiors_84.AutoSize = True
         Me.Check_NA_interiors_84.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_84.Location = New System.Drawing.Point(352, 276)
         Me.Check_NA_interiors_84.Name = "Check_NA_interiors_84"
         Me.Check_NA_interiors_84.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_84.TabIndex = 393
-        Me.Check_NA_interiors_84.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_84.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_84
         '
-        Me.Check_available_interiors_84.AutoSize = true
+        Me.Check_available_interiors_84.AutoSize = True
         Me.Check_available_interiors_84.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_84.Location = New System.Drawing.Point(291, 276)
         Me.Check_available_interiors_84.Name = "Check_available_interiors_84"
         Me.Check_available_interiors_84.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_84.TabIndex = 392
-        Me.Check_available_interiors_84.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_84.UseVisualStyleBackColor = False
         '
         'PictureBox158
         '
@@ -8017,7 +8017,7 @@ Partial Class Items_edit
         Me.PictureBox158.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox158.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox158.TabIndex = 391
-        Me.PictureBox158.TabStop = false
+        Me.PictureBox158.TabStop = False
         '
         'valu_interiors_83
         '
@@ -8031,23 +8031,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_83
         '
-        Me.Check_NA_interiors_83.AutoSize = true
+        Me.Check_NA_interiors_83.AutoSize = True
         Me.Check_NA_interiors_83.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_83.Location = New System.Drawing.Point(270, 276)
         Me.Check_NA_interiors_83.Name = "Check_NA_interiors_83"
         Me.Check_NA_interiors_83.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_83.TabIndex = 389
-        Me.Check_NA_interiors_83.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_83.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_83
         '
-        Me.Check_available_interiors_83.AutoSize = true
+        Me.Check_available_interiors_83.AutoSize = True
         Me.Check_available_interiors_83.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_83.Location = New System.Drawing.Point(209, 276)
         Me.Check_available_interiors_83.Name = "Check_available_interiors_83"
         Me.Check_available_interiors_83.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_83.TabIndex = 388
-        Me.Check_available_interiors_83.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_83.UseVisualStyleBackColor = False
         '
         'PictureBox159
         '
@@ -8057,7 +8057,7 @@ Partial Class Items_edit
         Me.PictureBox159.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox159.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox159.TabIndex = 387
-        Me.PictureBox159.TabStop = false
+        Me.PictureBox159.TabStop = False
         '
         'valu_interiors_82
         '
@@ -8071,23 +8071,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_82
         '
-        Me.Check_NA_interiors_82.AutoSize = true
+        Me.Check_NA_interiors_82.AutoSize = True
         Me.Check_NA_interiors_82.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_82.Location = New System.Drawing.Point(188, 276)
         Me.Check_NA_interiors_82.Name = "Check_NA_interiors_82"
         Me.Check_NA_interiors_82.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_82.TabIndex = 385
-        Me.Check_NA_interiors_82.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_82.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_82
         '
-        Me.Check_available_interiors_82.AutoSize = true
+        Me.Check_available_interiors_82.AutoSize = True
         Me.Check_available_interiors_82.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_82.Location = New System.Drawing.Point(127, 276)
         Me.Check_available_interiors_82.Name = "Check_available_interiors_82"
         Me.Check_available_interiors_82.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_82.TabIndex = 384
-        Me.Check_available_interiors_82.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_82.UseVisualStyleBackColor = False
         '
         'PictureBox160
         '
@@ -8097,7 +8097,7 @@ Partial Class Items_edit
         Me.PictureBox160.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox160.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox160.TabIndex = 383
-        Me.PictureBox160.TabStop = false
+        Me.PictureBox160.TabStop = False
         '
         'valu_interiors_81
         '
@@ -8111,23 +8111,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_81
         '
-        Me.Check_NA_interiors_81.AutoSize = true
+        Me.Check_NA_interiors_81.AutoSize = True
         Me.Check_NA_interiors_81.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_81.Location = New System.Drawing.Point(106, 276)
         Me.Check_NA_interiors_81.Name = "Check_NA_interiors_81"
         Me.Check_NA_interiors_81.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_81.TabIndex = 381
-        Me.Check_NA_interiors_81.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_81.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_81
         '
-        Me.Check_available_interiors_81.AutoSize = true
+        Me.Check_available_interiors_81.AutoSize = True
         Me.Check_available_interiors_81.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_81.Location = New System.Drawing.Point(45, 276)
         Me.Check_available_interiors_81.Name = "Check_available_interiors_81"
         Me.Check_available_interiors_81.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_81.TabIndex = 380
-        Me.Check_available_interiors_81.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_81.UseVisualStyleBackColor = False
         '
         'PictureBox161
         '
@@ -8137,7 +8137,7 @@ Partial Class Items_edit
         Me.PictureBox161.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox161.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox161.TabIndex = 379
-        Me.PictureBox161.TabStop = false
+        Me.PictureBox161.TabStop = False
         '
         'valu_interiors_80
         '
@@ -8151,23 +8151,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_80
         '
-        Me.Check_NA_interiors_80.AutoSize = true
+        Me.Check_NA_interiors_80.AutoSize = True
         Me.Check_NA_interiors_80.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_80.Location = New System.Drawing.Point(844, 196)
         Me.Check_NA_interiors_80.Name = "Check_NA_interiors_80"
         Me.Check_NA_interiors_80.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_80.TabIndex = 377
-        Me.Check_NA_interiors_80.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_80.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_80
         '
-        Me.Check_available_interiors_80.AutoSize = true
+        Me.Check_available_interiors_80.AutoSize = True
         Me.Check_available_interiors_80.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_80.Location = New System.Drawing.Point(783, 196)
         Me.Check_available_interiors_80.Name = "Check_available_interiors_80"
         Me.Check_available_interiors_80.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_80.TabIndex = 376
-        Me.Check_available_interiors_80.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_80.UseVisualStyleBackColor = False
         '
         'PictureBox114
         '
@@ -8177,7 +8177,7 @@ Partial Class Items_edit
         Me.PictureBox114.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox114.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox114.TabIndex = 375
-        Me.PictureBox114.TabStop = false
+        Me.PictureBox114.TabStop = False
         '
         'valu_interiors_79
         '
@@ -8191,23 +8191,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_79
         '
-        Me.Check_NA_interiors_79.AutoSize = true
+        Me.Check_NA_interiors_79.AutoSize = True
         Me.Check_NA_interiors_79.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_79.Location = New System.Drawing.Point(762, 196)
         Me.Check_NA_interiors_79.Name = "Check_NA_interiors_79"
         Me.Check_NA_interiors_79.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_79.TabIndex = 373
-        Me.Check_NA_interiors_79.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_79.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_79
         '
-        Me.Check_available_interiors_79.AutoSize = true
+        Me.Check_available_interiors_79.AutoSize = True
         Me.Check_available_interiors_79.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_79.Location = New System.Drawing.Point(701, 196)
         Me.Check_available_interiors_79.Name = "Check_available_interiors_79"
         Me.Check_available_interiors_79.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_79.TabIndex = 372
-        Me.Check_available_interiors_79.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_79.UseVisualStyleBackColor = False
         '
         'PictureBox123
         '
@@ -8217,7 +8217,7 @@ Partial Class Items_edit
         Me.PictureBox123.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox123.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox123.TabIndex = 371
-        Me.PictureBox123.TabStop = false
+        Me.PictureBox123.TabStop = False
         '
         'valu_interiors_78
         '
@@ -8231,23 +8231,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_78
         '
-        Me.Check_NA_interiors_78.AutoSize = true
+        Me.Check_NA_interiors_78.AutoSize = True
         Me.Check_NA_interiors_78.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_78.Location = New System.Drawing.Point(680, 196)
         Me.Check_NA_interiors_78.Name = "Check_NA_interiors_78"
         Me.Check_NA_interiors_78.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_78.TabIndex = 369
-        Me.Check_NA_interiors_78.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_78.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_78
         '
-        Me.Check_available_interiors_78.AutoSize = true
+        Me.Check_available_interiors_78.AutoSize = True
         Me.Check_available_interiors_78.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_78.Location = New System.Drawing.Point(619, 196)
         Me.Check_available_interiors_78.Name = "Check_available_interiors_78"
         Me.Check_available_interiors_78.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_78.TabIndex = 368
-        Me.Check_available_interiors_78.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_78.UseVisualStyleBackColor = False
         '
         'PictureBox124
         '
@@ -8257,7 +8257,7 @@ Partial Class Items_edit
         Me.PictureBox124.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox124.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox124.TabIndex = 367
-        Me.PictureBox124.TabStop = false
+        Me.PictureBox124.TabStop = False
         '
         'valu_interiors_77
         '
@@ -8271,23 +8271,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_77
         '
-        Me.Check_NA_interiors_77.AutoSize = true
+        Me.Check_NA_interiors_77.AutoSize = True
         Me.Check_NA_interiors_77.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_77.Location = New System.Drawing.Point(598, 196)
         Me.Check_NA_interiors_77.Name = "Check_NA_interiors_77"
         Me.Check_NA_interiors_77.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_77.TabIndex = 365
-        Me.Check_NA_interiors_77.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_77.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_77
         '
-        Me.Check_available_interiors_77.AutoSize = true
+        Me.Check_available_interiors_77.AutoSize = True
         Me.Check_available_interiors_77.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_77.Location = New System.Drawing.Point(537, 196)
         Me.Check_available_interiors_77.Name = "Check_available_interiors_77"
         Me.Check_available_interiors_77.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_77.TabIndex = 364
-        Me.Check_available_interiors_77.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_77.UseVisualStyleBackColor = False
         '
         'PictureBox125
         '
@@ -8297,7 +8297,7 @@ Partial Class Items_edit
         Me.PictureBox125.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox125.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox125.TabIndex = 363
-        Me.PictureBox125.TabStop = false
+        Me.PictureBox125.TabStop = False
         '
         'valu_interiors_76
         '
@@ -8311,23 +8311,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_76
         '
-        Me.Check_NA_interiors_76.AutoSize = true
+        Me.Check_NA_interiors_76.AutoSize = True
         Me.Check_NA_interiors_76.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_76.Location = New System.Drawing.Point(516, 196)
         Me.Check_NA_interiors_76.Name = "Check_NA_interiors_76"
         Me.Check_NA_interiors_76.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_76.TabIndex = 361
-        Me.Check_NA_interiors_76.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_76.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_76
         '
-        Me.Check_available_interiors_76.AutoSize = true
+        Me.Check_available_interiors_76.AutoSize = True
         Me.Check_available_interiors_76.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_76.Location = New System.Drawing.Point(455, 196)
         Me.Check_available_interiors_76.Name = "Check_available_interiors_76"
         Me.Check_available_interiors_76.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_76.TabIndex = 360
-        Me.Check_available_interiors_76.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_76.UseVisualStyleBackColor = False
         '
         'PictureBox126
         '
@@ -8337,7 +8337,7 @@ Partial Class Items_edit
         Me.PictureBox126.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox126.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox126.TabIndex = 359
-        Me.PictureBox126.TabStop = false
+        Me.PictureBox126.TabStop = False
         '
         'valu_interiors_75
         '
@@ -8351,23 +8351,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_75
         '
-        Me.Check_NA_interiors_75.AutoSize = true
+        Me.Check_NA_interiors_75.AutoSize = True
         Me.Check_NA_interiors_75.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_75.Location = New System.Drawing.Point(434, 196)
         Me.Check_NA_interiors_75.Name = "Check_NA_interiors_75"
         Me.Check_NA_interiors_75.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_75.TabIndex = 357
-        Me.Check_NA_interiors_75.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_75.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_75
         '
-        Me.Check_available_interiors_75.AutoSize = true
+        Me.Check_available_interiors_75.AutoSize = True
         Me.Check_available_interiors_75.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_75.Location = New System.Drawing.Point(373, 196)
         Me.Check_available_interiors_75.Name = "Check_available_interiors_75"
         Me.Check_available_interiors_75.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_75.TabIndex = 356
-        Me.Check_available_interiors_75.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_75.UseVisualStyleBackColor = False
         '
         'PictureBox127
         '
@@ -8377,7 +8377,7 @@ Partial Class Items_edit
         Me.PictureBox127.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox127.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox127.TabIndex = 355
-        Me.PictureBox127.TabStop = false
+        Me.PictureBox127.TabStop = False
         '
         'valu_interiors_74
         '
@@ -8391,23 +8391,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_74
         '
-        Me.Check_NA_interiors_74.AutoSize = true
+        Me.Check_NA_interiors_74.AutoSize = True
         Me.Check_NA_interiors_74.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_74.Location = New System.Drawing.Point(352, 196)
         Me.Check_NA_interiors_74.Name = "Check_NA_interiors_74"
         Me.Check_NA_interiors_74.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_74.TabIndex = 353
-        Me.Check_NA_interiors_74.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_74.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_74
         '
-        Me.Check_available_interiors_74.AutoSize = true
+        Me.Check_available_interiors_74.AutoSize = True
         Me.Check_available_interiors_74.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_74.Location = New System.Drawing.Point(291, 196)
         Me.Check_available_interiors_74.Name = "Check_available_interiors_74"
         Me.Check_available_interiors_74.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_74.TabIndex = 352
-        Me.Check_available_interiors_74.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_74.UseVisualStyleBackColor = False
         '
         'PictureBox128
         '
@@ -8417,7 +8417,7 @@ Partial Class Items_edit
         Me.PictureBox128.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox128.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox128.TabIndex = 351
-        Me.PictureBox128.TabStop = false
+        Me.PictureBox128.TabStop = False
         '
         'valu_interiors_73
         '
@@ -8431,23 +8431,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_73
         '
-        Me.Check_NA_interiors_73.AutoSize = true
+        Me.Check_NA_interiors_73.AutoSize = True
         Me.Check_NA_interiors_73.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_73.Location = New System.Drawing.Point(270, 196)
         Me.Check_NA_interiors_73.Name = "Check_NA_interiors_73"
         Me.Check_NA_interiors_73.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_73.TabIndex = 349
-        Me.Check_NA_interiors_73.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_73.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_73
         '
-        Me.Check_available_interiors_73.AutoSize = true
+        Me.Check_available_interiors_73.AutoSize = True
         Me.Check_available_interiors_73.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_73.Location = New System.Drawing.Point(209, 196)
         Me.Check_available_interiors_73.Name = "Check_available_interiors_73"
         Me.Check_available_interiors_73.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_73.TabIndex = 348
-        Me.Check_available_interiors_73.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_73.UseVisualStyleBackColor = False
         '
         'PictureBox129
         '
@@ -8457,7 +8457,7 @@ Partial Class Items_edit
         Me.PictureBox129.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox129.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox129.TabIndex = 347
-        Me.PictureBox129.TabStop = false
+        Me.PictureBox129.TabStop = False
         '
         'valu_interiors_72
         '
@@ -8471,23 +8471,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_72
         '
-        Me.Check_NA_interiors_72.AutoSize = true
+        Me.Check_NA_interiors_72.AutoSize = True
         Me.Check_NA_interiors_72.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_72.Location = New System.Drawing.Point(188, 196)
         Me.Check_NA_interiors_72.Name = "Check_NA_interiors_72"
         Me.Check_NA_interiors_72.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_72.TabIndex = 345
-        Me.Check_NA_interiors_72.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_72.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_72
         '
-        Me.Check_available_interiors_72.AutoSize = true
+        Me.Check_available_interiors_72.AutoSize = True
         Me.Check_available_interiors_72.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_72.Location = New System.Drawing.Point(127, 196)
         Me.Check_available_interiors_72.Name = "Check_available_interiors_72"
         Me.Check_available_interiors_72.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_72.TabIndex = 344
-        Me.Check_available_interiors_72.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_72.UseVisualStyleBackColor = False
         '
         'PictureBox130
         '
@@ -8497,7 +8497,7 @@ Partial Class Items_edit
         Me.PictureBox130.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox130.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox130.TabIndex = 343
-        Me.PictureBox130.TabStop = false
+        Me.PictureBox130.TabStop = False
         '
         'valu_interiors_71
         '
@@ -8511,23 +8511,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_71
         '
-        Me.Check_NA_interiors_71.AutoSize = true
+        Me.Check_NA_interiors_71.AutoSize = True
         Me.Check_NA_interiors_71.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_71.Location = New System.Drawing.Point(106, 196)
         Me.Check_NA_interiors_71.Name = "Check_NA_interiors_71"
         Me.Check_NA_interiors_71.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_71.TabIndex = 341
-        Me.Check_NA_interiors_71.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_71.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_71
         '
-        Me.Check_available_interiors_71.AutoSize = true
+        Me.Check_available_interiors_71.AutoSize = True
         Me.Check_available_interiors_71.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_71.Location = New System.Drawing.Point(45, 196)
         Me.Check_available_interiors_71.Name = "Check_available_interiors_71"
         Me.Check_available_interiors_71.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_71.TabIndex = 340
-        Me.Check_available_interiors_71.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_71.UseVisualStyleBackColor = False
         '
         'PictureBox131
         '
@@ -8537,7 +8537,7 @@ Partial Class Items_edit
         Me.PictureBox131.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox131.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox131.TabIndex = 339
-        Me.PictureBox131.TabStop = false
+        Me.PictureBox131.TabStop = False
         '
         'valu_interiors_70
         '
@@ -8551,23 +8551,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_70
         '
-        Me.Check_NA_interiors_70.AutoSize = true
+        Me.Check_NA_interiors_70.AutoSize = True
         Me.Check_NA_interiors_70.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_70.Location = New System.Drawing.Point(844, 116)
         Me.Check_NA_interiors_70.Name = "Check_NA_interiors_70"
         Me.Check_NA_interiors_70.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_70.TabIndex = 337
-        Me.Check_NA_interiors_70.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_70.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_70
         '
-        Me.Check_available_interiors_70.AutoSize = true
+        Me.Check_available_interiors_70.AutoSize = True
         Me.Check_available_interiors_70.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_70.Location = New System.Drawing.Point(783, 116)
         Me.Check_available_interiors_70.Name = "Check_available_interiors_70"
         Me.Check_available_interiors_70.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_70.TabIndex = 336
-        Me.Check_available_interiors_70.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_70.UseVisualStyleBackColor = False
         '
         'PictureBox132
         '
@@ -8577,7 +8577,7 @@ Partial Class Items_edit
         Me.PictureBox132.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox132.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox132.TabIndex = 335
-        Me.PictureBox132.TabStop = false
+        Me.PictureBox132.TabStop = False
         '
         'valu_interiors_69
         '
@@ -8591,23 +8591,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_69
         '
-        Me.Check_NA_interiors_69.AutoSize = true
+        Me.Check_NA_interiors_69.AutoSize = True
         Me.Check_NA_interiors_69.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_69.Location = New System.Drawing.Point(762, 116)
         Me.Check_NA_interiors_69.Name = "Check_NA_interiors_69"
         Me.Check_NA_interiors_69.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_69.TabIndex = 333
-        Me.Check_NA_interiors_69.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_69.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_69
         '
-        Me.Check_available_interiors_69.AutoSize = true
+        Me.Check_available_interiors_69.AutoSize = True
         Me.Check_available_interiors_69.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_69.Location = New System.Drawing.Point(701, 116)
         Me.Check_available_interiors_69.Name = "Check_available_interiors_69"
         Me.Check_available_interiors_69.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_69.TabIndex = 332
-        Me.Check_available_interiors_69.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_69.UseVisualStyleBackColor = False
         '
         'PictureBox133
         '
@@ -8617,7 +8617,7 @@ Partial Class Items_edit
         Me.PictureBox133.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox133.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox133.TabIndex = 331
-        Me.PictureBox133.TabStop = false
+        Me.PictureBox133.TabStop = False
         '
         'valu_interiors_68
         '
@@ -8631,23 +8631,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_68
         '
-        Me.Check_NA_interiors_68.AutoSize = true
+        Me.Check_NA_interiors_68.AutoSize = True
         Me.Check_NA_interiors_68.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_68.Location = New System.Drawing.Point(680, 116)
         Me.Check_NA_interiors_68.Name = "Check_NA_interiors_68"
         Me.Check_NA_interiors_68.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_68.TabIndex = 329
-        Me.Check_NA_interiors_68.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_68.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_68
         '
-        Me.Check_available_interiors_68.AutoSize = true
+        Me.Check_available_interiors_68.AutoSize = True
         Me.Check_available_interiors_68.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_68.Location = New System.Drawing.Point(619, 116)
         Me.Check_available_interiors_68.Name = "Check_available_interiors_68"
         Me.Check_available_interiors_68.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_68.TabIndex = 328
-        Me.Check_available_interiors_68.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_68.UseVisualStyleBackColor = False
         '
         'PictureBox134
         '
@@ -8657,7 +8657,7 @@ Partial Class Items_edit
         Me.PictureBox134.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox134.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox134.TabIndex = 327
-        Me.PictureBox134.TabStop = false
+        Me.PictureBox134.TabStop = False
         '
         'valu_interiors_67
         '
@@ -8671,23 +8671,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_67
         '
-        Me.Check_NA_interiors_67.AutoSize = true
+        Me.Check_NA_interiors_67.AutoSize = True
         Me.Check_NA_interiors_67.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_67.Location = New System.Drawing.Point(598, 116)
         Me.Check_NA_interiors_67.Name = "Check_NA_interiors_67"
         Me.Check_NA_interiors_67.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_67.TabIndex = 325
-        Me.Check_NA_interiors_67.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_67.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_67
         '
-        Me.Check_available_interiors_67.AutoSize = true
+        Me.Check_available_interiors_67.AutoSize = True
         Me.Check_available_interiors_67.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_67.Location = New System.Drawing.Point(537, 116)
         Me.Check_available_interiors_67.Name = "Check_available_interiors_67"
         Me.Check_available_interiors_67.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_67.TabIndex = 324
-        Me.Check_available_interiors_67.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_67.UseVisualStyleBackColor = False
         '
         'PictureBox135
         '
@@ -8697,7 +8697,7 @@ Partial Class Items_edit
         Me.PictureBox135.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox135.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox135.TabIndex = 323
-        Me.PictureBox135.TabStop = false
+        Me.PictureBox135.TabStop = False
         '
         'valu_interiors_66
         '
@@ -8711,23 +8711,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_66
         '
-        Me.Check_NA_interiors_66.AutoSize = true
+        Me.Check_NA_interiors_66.AutoSize = True
         Me.Check_NA_interiors_66.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_66.Location = New System.Drawing.Point(516, 116)
         Me.Check_NA_interiors_66.Name = "Check_NA_interiors_66"
         Me.Check_NA_interiors_66.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_66.TabIndex = 321
-        Me.Check_NA_interiors_66.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_66.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_66
         '
-        Me.Check_available_interiors_66.AutoSize = true
+        Me.Check_available_interiors_66.AutoSize = True
         Me.Check_available_interiors_66.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_66.Location = New System.Drawing.Point(455, 116)
         Me.Check_available_interiors_66.Name = "Check_available_interiors_66"
         Me.Check_available_interiors_66.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_66.TabIndex = 320
-        Me.Check_available_interiors_66.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_66.UseVisualStyleBackColor = False
         '
         'PictureBox136
         '
@@ -8737,7 +8737,7 @@ Partial Class Items_edit
         Me.PictureBox136.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox136.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox136.TabIndex = 319
-        Me.PictureBox136.TabStop = false
+        Me.PictureBox136.TabStop = False
         '
         'valu_interiors_65
         '
@@ -8751,23 +8751,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_65
         '
-        Me.Check_NA_interiors_65.AutoSize = true
+        Me.Check_NA_interiors_65.AutoSize = True
         Me.Check_NA_interiors_65.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_65.Location = New System.Drawing.Point(434, 116)
         Me.Check_NA_interiors_65.Name = "Check_NA_interiors_65"
         Me.Check_NA_interiors_65.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_65.TabIndex = 317
-        Me.Check_NA_interiors_65.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_65.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_65
         '
-        Me.Check_available_interiors_65.AutoSize = true
+        Me.Check_available_interiors_65.AutoSize = True
         Me.Check_available_interiors_65.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_65.Location = New System.Drawing.Point(373, 116)
         Me.Check_available_interiors_65.Name = "Check_available_interiors_65"
         Me.Check_available_interiors_65.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_65.TabIndex = 316
-        Me.Check_available_interiors_65.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_65.UseVisualStyleBackColor = False
         '
         'PictureBox137
         '
@@ -8777,7 +8777,7 @@ Partial Class Items_edit
         Me.PictureBox137.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox137.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox137.TabIndex = 315
-        Me.PictureBox137.TabStop = false
+        Me.PictureBox137.TabStop = False
         '
         'valu_interiors_64
         '
@@ -8791,23 +8791,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_64
         '
-        Me.Check_NA_interiors_64.AutoSize = true
+        Me.Check_NA_interiors_64.AutoSize = True
         Me.Check_NA_interiors_64.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_64.Location = New System.Drawing.Point(352, 116)
         Me.Check_NA_interiors_64.Name = "Check_NA_interiors_64"
         Me.Check_NA_interiors_64.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_64.TabIndex = 313
-        Me.Check_NA_interiors_64.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_64.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_64
         '
-        Me.Check_available_interiors_64.AutoSize = true
+        Me.Check_available_interiors_64.AutoSize = True
         Me.Check_available_interiors_64.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_64.Location = New System.Drawing.Point(291, 116)
         Me.Check_available_interiors_64.Name = "Check_available_interiors_64"
         Me.Check_available_interiors_64.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_64.TabIndex = 312
-        Me.Check_available_interiors_64.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_64.UseVisualStyleBackColor = False
         '
         'PictureBox138
         '
@@ -8817,7 +8817,7 @@ Partial Class Items_edit
         Me.PictureBox138.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox138.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox138.TabIndex = 311
-        Me.PictureBox138.TabStop = false
+        Me.PictureBox138.TabStop = False
         '
         'valu_interiors_63
         '
@@ -8831,23 +8831,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_63
         '
-        Me.Check_NA_interiors_63.AutoSize = true
+        Me.Check_NA_interiors_63.AutoSize = True
         Me.Check_NA_interiors_63.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_63.Location = New System.Drawing.Point(270, 116)
         Me.Check_NA_interiors_63.Name = "Check_NA_interiors_63"
         Me.Check_NA_interiors_63.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_63.TabIndex = 309
-        Me.Check_NA_interiors_63.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_63.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_63
         '
-        Me.Check_available_interiors_63.AutoSize = true
+        Me.Check_available_interiors_63.AutoSize = True
         Me.Check_available_interiors_63.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_63.Location = New System.Drawing.Point(209, 116)
         Me.Check_available_interiors_63.Name = "Check_available_interiors_63"
         Me.Check_available_interiors_63.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_63.TabIndex = 308
-        Me.Check_available_interiors_63.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_63.UseVisualStyleBackColor = False
         '
         'PictureBox139
         '
@@ -8857,7 +8857,7 @@ Partial Class Items_edit
         Me.PictureBox139.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox139.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox139.TabIndex = 307
-        Me.PictureBox139.TabStop = false
+        Me.PictureBox139.TabStop = False
         '
         'valu_interiors_62
         '
@@ -8871,23 +8871,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_62
         '
-        Me.Check_NA_interiors_62.AutoSize = true
+        Me.Check_NA_interiors_62.AutoSize = True
         Me.Check_NA_interiors_62.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_62.Location = New System.Drawing.Point(188, 116)
         Me.Check_NA_interiors_62.Name = "Check_NA_interiors_62"
         Me.Check_NA_interiors_62.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_62.TabIndex = 305
-        Me.Check_NA_interiors_62.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_62.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_62
         '
-        Me.Check_available_interiors_62.AutoSize = true
+        Me.Check_available_interiors_62.AutoSize = True
         Me.Check_available_interiors_62.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_62.Location = New System.Drawing.Point(127, 116)
         Me.Check_available_interiors_62.Name = "Check_available_interiors_62"
         Me.Check_available_interiors_62.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_62.TabIndex = 304
-        Me.Check_available_interiors_62.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_62.UseVisualStyleBackColor = False
         '
         'PictureBox140
         '
@@ -8897,7 +8897,7 @@ Partial Class Items_edit
         Me.PictureBox140.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox140.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox140.TabIndex = 303
-        Me.PictureBox140.TabStop = false
+        Me.PictureBox140.TabStop = False
         '
         'valu_interiors_61
         '
@@ -8911,23 +8911,23 @@ Partial Class Items_edit
         '
         'Check_NA_interiors_61
         '
-        Me.Check_NA_interiors_61.AutoSize = true
+        Me.Check_NA_interiors_61.AutoSize = True
         Me.Check_NA_interiors_61.BackColor = System.Drawing.Color.Transparent
         Me.Check_NA_interiors_61.Location = New System.Drawing.Point(106, 116)
         Me.Check_NA_interiors_61.Name = "Check_NA_interiors_61"
         Me.Check_NA_interiors_61.Size = New System.Drawing.Size(15, 14)
         Me.Check_NA_interiors_61.TabIndex = 301
-        Me.Check_NA_interiors_61.UseVisualStyleBackColor = false
+        Me.Check_NA_interiors_61.UseVisualStyleBackColor = False
         '
         'Check_available_interiors_61
         '
-        Me.Check_available_interiors_61.AutoSize = true
+        Me.Check_available_interiors_61.AutoSize = True
         Me.Check_available_interiors_61.BackColor = System.Drawing.Color.Transparent
         Me.Check_available_interiors_61.Location = New System.Drawing.Point(45, 116)
         Me.Check_available_interiors_61.Name = "Check_available_interiors_61"
         Me.Check_available_interiors_61.Size = New System.Drawing.Size(15, 14)
         Me.Check_available_interiors_61.TabIndex = 300
-        Me.Check_available_interiors_61.UseVisualStyleBackColor = false
+        Me.Check_available_interiors_61.UseVisualStyleBackColor = False
         '
         'PictureBox141
         '
@@ -8937,7 +8937,7 @@ Partial Class Items_edit
         Me.PictureBox141.Size = New System.Drawing.Size(76, 74)
         Me.PictureBox141.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox141.TabIndex = 299
-        Me.PictureBox141.TabStop = false
+        Me.PictureBox141.TabStop = False
         '
         'Icon_interiors_left
         '
@@ -8949,7 +8949,7 @@ Partial Class Items_edit
         Me.Icon_interiors_left.Size = New System.Drawing.Size(17, 42)
         Me.Icon_interiors_left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Icon_interiors_left.TabIndex = 110
-        Me.Icon_interiors_left.TabStop = false
+        Me.Icon_interiors_left.TabStop = False
         '
         'Icon_closesave
         '
@@ -8960,14 +8960,14 @@ Partial Class Items_edit
         Me.Icon_closesave.Name = "Icon_closesave"
         Me.Icon_closesave.Size = New System.Drawing.Size(40, 30)
         Me.Icon_closesave.TabIndex = 106
-        Me.Icon_closesave.TabStop = false
+        Me.Icon_closesave.TabStop = False
         '
         'Info_itemsedit
         '
-        Me.Info_itemsedit.AutoSize = true
+        Me.Info_itemsedit.AutoSize = True
         Me.Info_itemsedit.BackColor = System.Drawing.Color.Transparent
         Me.Info_itemsedit.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_itemsedit.Font = New System.Drawing.Font("Harlow Solid Italic", 12!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic),System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Info_itemsedit.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_itemsedit.ForeColor = System.Drawing.Color.Blue
         Me.Info_itemsedit.Location = New System.Drawing.Point(338, 15)
         Me.Info_itemsedit.Name = "Info_itemsedit"
@@ -8985,7 +8985,7 @@ Partial Class Items_edit
         Me.Panel_info_itemsedit.Name = "Panel_info_itemsedit"
         Me.Panel_info_itemsedit.Size = New System.Drawing.Size(200, 200)
         Me.Panel_info_itemsedit.TabIndex = 109
-        Me.Panel_info_itemsedit.Visible = false
+        Me.Panel_info_itemsedit.Visible = False
         '
         'Info_text_notavailable
         '
@@ -9007,7 +9007,7 @@ Partial Class Items_edit
         '
         'Panel_foods
         '
-        Me.Panel_foods.BackgroundImage = CType(resources.GetObject("Panel_foods.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_foods.BackgroundImage = CType(resources.GetObject("Panel_foods.BackgroundImage"), System.Drawing.Image)
         Me.Panel_foods.Controls.Add(Me.valu_foods_bynumbers)
         Me.Panel_foods.Controls.Add(Me.Check_foods_notavailable)
         Me.Panel_foods.Controls.Add(Me.Check_foods_available)
@@ -9016,7 +9016,7 @@ Partial Class Items_edit
         Me.Panel_foods.Name = "Panel_foods"
         Me.Panel_foods.Size = New System.Drawing.Size(905, 506)
         Me.Panel_foods.TabIndex = 110
-        Me.Panel_foods.Visible = false
+        Me.Panel_foods.Visible = False
         '
         'valu_foods_bynumbers
         '
@@ -9044,7 +9044,7 @@ Partial Class Items_edit
         Me.Check_foods_notavailable.TabIndex = 10
         Me.Check_foods_notavailable.Text = "Set all to not available"
         Me.Check_foods_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_foods_notavailable.UseVisualStyleBackColor = false
+        Me.Check_foods_notavailable.UseVisualStyleBackColor = False
         '
         'Check_foods_available
         '
@@ -9061,7 +9061,7 @@ Partial Class Items_edit
         Me.Check_foods_available.TabIndex = 9
         Me.Check_foods_available.Text = "Set all to available"
         Me.Check_foods_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_foods_available.UseVisualStyleBackColor = false
+        Me.Check_foods_available.UseVisualStyleBackColor = False
         '
         'Check_foods_bynumbers
         '
@@ -9078,11 +9078,11 @@ Partial Class Items_edit
         Me.Check_foods_bynumbers.TabIndex = 8
         Me.Check_foods_bynumbers.Text = "Unlock all by numbers"
         Me.Check_foods_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_foods_bynumbers.UseVisualStyleBackColor = false
+        Me.Check_foods_bynumbers.UseVisualStyleBackColor = False
         '
         'Panel_clothing
         '
-        Me.Panel_clothing.BackgroundImage = CType(resources.GetObject("Panel_clothing.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_clothing.BackgroundImage = CType(resources.GetObject("Panel_clothing.BackgroundImage"), System.Drawing.Image)
         Me.Panel_clothing.Controls.Add(Me.Check_clothingstp_notavailable)
         Me.Panel_clothing.Controls.Add(Me.Check_clothingstp_available)
         Me.Panel_clothing.Controls.Add(Me.Check_clothingstp_bynumbers)
@@ -9094,7 +9094,7 @@ Partial Class Items_edit
         Me.Panel_clothing.Name = "Panel_clothing"
         Me.Panel_clothing.Size = New System.Drawing.Size(905, 506)
         Me.Panel_clothing.TabIndex = 111
-        Me.Panel_clothing.Visible = false
+        Me.Panel_clothing.Visible = False
         '
         'Check_clothingstp_notavailable
         '
@@ -9111,7 +9111,7 @@ Partial Class Items_edit
         Me.Check_clothingstp_notavailable.TabIndex = 22
         Me.Check_clothingstp_notavailable.Text = "Set all Streetpass / Spotpass to not available"
         Me.Check_clothingstp_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_clothingstp_notavailable.UseVisualStyleBackColor = false
+        Me.Check_clothingstp_notavailable.UseVisualStyleBackColor = False
         '
         'Check_clothingstp_available
         '
@@ -9128,7 +9128,7 @@ Partial Class Items_edit
         Me.Check_clothingstp_available.TabIndex = 21
         Me.Check_clothingstp_available.Text = "Set all Streetpass / Spotpass to available"
         Me.Check_clothingstp_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_clothingstp_available.UseVisualStyleBackColor = false
+        Me.Check_clothingstp_available.UseVisualStyleBackColor = False
         '
         'Check_clothingstp_bynumbers
         '
@@ -9145,7 +9145,7 @@ Partial Class Items_edit
         Me.Check_clothingstp_bynumbers.TabIndex = 20
         Me.Check_clothingstp_bynumbers.Text = "Unlock all Streetpass / Spotpass by numbers"
         Me.Check_clothingstp_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_clothingstp_bynumbers.UseVisualStyleBackColor = false
+        Me.Check_clothingstp_bynumbers.UseVisualStyleBackColor = False
         '
         'valu_clothing_bynumbers
         '
@@ -9173,7 +9173,7 @@ Partial Class Items_edit
         Me.Check_clothing_notavailable.TabIndex = 18
         Me.Check_clothing_notavailable.Text = "Set all to not available"
         Me.Check_clothing_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_clothing_notavailable.UseVisualStyleBackColor = false
+        Me.Check_clothing_notavailable.UseVisualStyleBackColor = False
         '
         'Check_clothing_available
         '
@@ -9190,7 +9190,7 @@ Partial Class Items_edit
         Me.Check_clothing_available.TabIndex = 17
         Me.Check_clothing_available.Text = "Set all to available"
         Me.Check_clothing_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_clothing_available.UseVisualStyleBackColor = false
+        Me.Check_clothing_available.UseVisualStyleBackColor = False
         '
         'Check_clothing_bynumbers
         '
@@ -9207,11 +9207,11 @@ Partial Class Items_edit
         Me.Check_clothing_bynumbers.TabIndex = 16
         Me.Check_clothing_bynumbers.Text = "Unlock all by numbers"
         Me.Check_clothing_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_clothing_bynumbers.UseVisualStyleBackColor = false
+        Me.Check_clothing_bynumbers.UseVisualStyleBackColor = False
         '
         'Panel_hats
         '
-        Me.Panel_hats.BackgroundImage = CType(resources.GetObject("Panel_hats.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_hats.BackgroundImage = CType(resources.GetObject("Panel_hats.BackgroundImage"), System.Drawing.Image)
         Me.Panel_hats.Controls.Add(Me.Check_hatsstp_notavailable)
         Me.Panel_hats.Controls.Add(Me.Check_hatsstp_available)
         Me.Panel_hats.Controls.Add(Me.Check_hatsstp_bynumbers)
@@ -9223,7 +9223,7 @@ Partial Class Items_edit
         Me.Panel_hats.Name = "Panel_hats"
         Me.Panel_hats.Size = New System.Drawing.Size(905, 506)
         Me.Panel_hats.TabIndex = 112
-        Me.Panel_hats.Visible = false
+        Me.Panel_hats.Visible = False
         '
         'Check_hatsstp_notavailable
         '
@@ -9240,7 +9240,7 @@ Partial Class Items_edit
         Me.Check_hatsstp_notavailable.TabIndex = 14
         Me.Check_hatsstp_notavailable.Text = "Set all Streetpass / Spotpass to not available"
         Me.Check_hatsstp_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_hatsstp_notavailable.UseVisualStyleBackColor = false
+        Me.Check_hatsstp_notavailable.UseVisualStyleBackColor = False
         '
         'Check_hatsstp_available
         '
@@ -9257,7 +9257,7 @@ Partial Class Items_edit
         Me.Check_hatsstp_available.TabIndex = 13
         Me.Check_hatsstp_available.Text = "Set all Streetpass / Spotpass to available"
         Me.Check_hatsstp_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_hatsstp_available.UseVisualStyleBackColor = false
+        Me.Check_hatsstp_available.UseVisualStyleBackColor = False
         '
         'Check_hatsstp_bynumbers
         '
@@ -9274,7 +9274,7 @@ Partial Class Items_edit
         Me.Check_hatsstp_bynumbers.TabIndex = 12
         Me.Check_hatsstp_bynumbers.Text = "Unlock all Streetpass / Spotpass by numbers"
         Me.Check_hatsstp_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_hatsstp_bynumbers.UseVisualStyleBackColor = false
+        Me.Check_hatsstp_bynumbers.UseVisualStyleBackColor = False
         '
         'valu_hats_bynumbers
         '
@@ -9302,7 +9302,7 @@ Partial Class Items_edit
         Me.Check_hats_notavailable.TabIndex = 10
         Me.Check_hats_notavailable.Text = "Set all to not available"
         Me.Check_hats_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_hats_notavailable.UseVisualStyleBackColor = false
+        Me.Check_hats_notavailable.UseVisualStyleBackColor = False
         '
         'Check_hats_available
         '
@@ -9319,7 +9319,7 @@ Partial Class Items_edit
         Me.Check_hats_available.TabIndex = 9
         Me.Check_hats_available.Text = "Set all to available"
         Me.Check_hats_available.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_hats_available.UseVisualStyleBackColor = false
+        Me.Check_hats_available.UseVisualStyleBackColor = False
         '
         'Check_hats_bynumbers
         '
@@ -9336,11 +9336,11 @@ Partial Class Items_edit
         Me.Check_hats_bynumbers.TabIndex = 8
         Me.Check_hats_bynumbers.Text = "Unlock all by numbers"
         Me.Check_hats_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_hats_bynumbers.UseVisualStyleBackColor = false
+        Me.Check_hats_bynumbers.UseVisualStyleBackColor = False
         '
         'Panel_treasures
         '
-        Me.Panel_treasures.BackgroundImage = CType(resources.GetObject("Panel_treasures.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_treasures.BackgroundImage = CType(resources.GetObject("Panel_treasures.BackgroundImage"), System.Drawing.Image)
         Me.Panel_treasures.Controls.Add(Me.valu_treasures_bynumbers)
         Me.Panel_treasures.Controls.Add(Me.Check_treasures_notavailable)
         Me.Panel_treasures.Controls.Add(Me.Check_treasures_bynumbers)
@@ -9348,7 +9348,7 @@ Partial Class Items_edit
         Me.Panel_treasures.Name = "Panel_treasures"
         Me.Panel_treasures.Size = New System.Drawing.Size(905, 506)
         Me.Panel_treasures.TabIndex = 113
-        Me.Panel_treasures.Visible = false
+        Me.Panel_treasures.Visible = False
         '
         'valu_treasures_bynumbers
         '
@@ -9376,7 +9376,7 @@ Partial Class Items_edit
         Me.Check_treasures_notavailable.TabIndex = 6
         Me.Check_treasures_notavailable.Text = "Set all to not available"
         Me.Check_treasures_notavailable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_treasures_notavailable.UseVisualStyleBackColor = false
+        Me.Check_treasures_notavailable.UseVisualStyleBackColor = False
         '
         'Check_treasures_bynumbers
         '
@@ -9393,11 +9393,11 @@ Partial Class Items_edit
         Me.Check_treasures_bynumbers.TabIndex = 4
         Me.Check_treasures_bynumbers.Text = "Unlock all by numbers"
         Me.Check_treasures_bynumbers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Check_treasures_bynumbers.UseVisualStyleBackColor = false
+        Me.Check_treasures_bynumbers.UseVisualStyleBackColor = False
         '
         'Text_danger_itemsedit
         '
-        Me.Text_danger_itemsedit.AutoSize = true
+        Me.Text_danger_itemsedit.AutoSize = True
         Me.Text_danger_itemsedit.BackColor = System.Drawing.Color.Transparent
         Me.Text_danger_itemsedit.ForeColor = System.Drawing.Color.Red
         Me.Text_danger_itemsedit.Location = New System.Drawing.Point(261, 261)
@@ -9405,28 +9405,28 @@ Partial Class Items_edit
         Me.Text_danger_itemsedit.Size = New System.Drawing.Size(367, 13)
         Me.Text_danger_itemsedit.TabIndex = 231
         Me.Text_danger_itemsedit.Text = "Some images in items edit may not correspond to your Tomodachi Life region"
-        Me.Text_danger_itemsedit.Visible = false
+        Me.Text_danger_itemsedit.Visible = False
         '
         'Danger_itemsedit
         '
         Me.Danger_itemsedit.BackColor = System.Drawing.Color.Transparent
         Me.Danger_itemsedit.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Danger_itemsedit.Image = CType(resources.GetObject("Danger_itemsedit.Image"),System.Drawing.Image)
+        Me.Danger_itemsedit.Image = CType(resources.GetObject("Danger_itemsedit.Image"), System.Drawing.Image)
         Me.Danger_itemsedit.Location = New System.Drawing.Point(238, 257)
         Me.Danger_itemsedit.Name = "Danger_itemsedit"
         Me.Danger_itemsedit.Size = New System.Drawing.Size(20, 20)
         Me.Danger_itemsedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Danger_itemsedit.TabIndex = 230
-        Me.Danger_itemsedit.TabStop = false
+        Me.Danger_itemsedit.TabStop = False
         '
         'Items_edit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"),System.Drawing.Image)
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(907, 545)
-        Me.ControlBox = false
+        Me.ControlBox = False
         Me.Controls.Add(Me.Panel_info_itemsedit)
         Me.Controls.Add(Me.Info_itemsedit)
         Me.Controls.Add(Me.Icon_closesave)
@@ -9458,9 +9458,9 @@ Partial Class Items_edit
         Me.Controls.Add(Me.Panel_treasures)
         Me.Controls.Add(Me.Panel_hats)
         Me.Controls.Add(Me.Panel_clothing)
-        Me.Controls.Add(Me.Panel_foods)
         Me.Controls.Add(Me.Danger_itemsedit)
         Me.Controls.Add(Me.Text_danger_itemsedit)
+        Me.Controls.Add(Me.Panel_foods)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Items_edit"

@@ -3751,6 +3751,36 @@ Public Class Items_edit
                     Next
                 End If
             End If
+            If Check_foods_bynumbers.Checked = True Or Check_foods_available.Checked = True Or Check_foods_notavailable.Checked = True Then
+                If TL_SaveEditor.Filever_text.Text = "US" Then
+                    Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+                    For i As Integer = 0 To 230
+                        fs.Position = &H17F0 + i
+                        fs.WriteByte(valu_foods_bynumbers.Value)
+                    Next
+                End If
+                If TL_SaveEditor.Filever_text.Text = "EU" Then
+                    Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+                    For i As Integer = 0 To 230
+                        fs.Position = &H17F0 + i
+                        fs.WriteByte(valu_foods_bynumbers.Value)
+                    Next
+                End If
+                If TL_SaveEditor.Filever_text.Text = "JP" Then
+                    Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+                    For i As Integer = 0 To 229
+                        fs.Position = &H17F0 + i
+                        fs.WriteByte(valu_foods_bynumbers.Value)
+                    Next
+                End If
+                If TL_SaveEditor.Filever_text.Text = "KR" Then
+                    Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+                    For i As Integer = 0 To 254
+                        fs.Position = &H17F0 + i
+                        fs.WriteByte(valu_foods_bynumbers.Value)
+                    Next
+                End If
+            End If
         Catch ex As Exception
         End Try
     End Sub
