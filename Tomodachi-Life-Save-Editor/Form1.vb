@@ -507,7 +507,7 @@ Public Class TL_SaveEditor
                     TLSE_logo.Visible = False
                     TLSE_logo_update.Visible = True
                     If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                        fdialog.Text_fdialog.Text = "An update is avalible, click on Tomodachi Life Save Editor icon to download new version"
+                        fdialog.Text_fdialog.Text = "An update is available, click on Tomodachi Life Save Editor icon to download new version"
                         fdialog.ShowDialog()
                     End If
                     If Select_language.SelectedItem = Select_language.Items.Item(1) Then
@@ -10165,6 +10165,7 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Icon_3dsSEL_Click(sender As Object, e As EventArgs) Handles Icon_3dsSEL.Click
+        Process.Start("https://github.com/Brionjv/3DS-Save-Editors-Library/releases")
     End Sub
 
     Private Sub Icon_3dsSEL_MouseLeave(sender As Object, e As EventArgs) Handles Icon_3dsSEL.MouseLeave
@@ -10175,9 +10176,9 @@ Public Class TL_SaveEditor
     Private Sub Icon_3dsSEL_MouseMove(sender As Object, e As EventArgs) Handles Icon_3dsSEL.MouseMove
         Icon_3dsSEL.BorderStyle = BorderStyle.FixedSingle
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            Text_description.Text = "???"
+            Text_description.Text = "Click to download and try 3DS Save Editors Library"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            Text_description.Text = "???"
+            Text_description.Text = "Cliquez pour télécharger et essayer 3DS Save Editors Library"
         End If
         Panel_description.Visible = True
     End Sub

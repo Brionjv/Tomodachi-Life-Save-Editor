@@ -9451,6 +9451,7 @@ Partial Class Items_edit
         Me.Controls.Add(Me.Icon_hats)
         Me.Controls.Add(Me.Icon_clothes)
         Me.Controls.Add(Me.Icon_normalfoods)
+        Me.Controls.Add(Me.Panel_foods)
         Me.Controls.Add(Me.Panel_gooditems)
         Me.Controls.Add(Me.Panel_specialfoods)
         Me.Controls.Add(Me.Panel_interiors_1)
@@ -9460,7 +9461,6 @@ Partial Class Items_edit
         Me.Controls.Add(Me.Panel_clothing)
         Me.Controls.Add(Me.Danger_itemsedit)
         Me.Controls.Add(Me.Text_danger_itemsedit)
-        Me.Controls.Add(Me.Panel_foods)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Items_edit"
