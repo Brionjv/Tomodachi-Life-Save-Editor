@@ -22,6 +22,30 @@ Public Class Repairsave
         Closebutton.Image = My.Resources.close
     End Sub
 
+    Private Sub TLSE_header_MouseDown(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles TLSE_header.MouseDown, TLSE_title.MouseDown
+        If e.Button = Windows.Forms.MouseButtons.Left Then
+            IsFormBeingDragged = True
+            MousedwnX = e.X
+            MousedwnY = e.Y
+        End If
+    End Sub
+
+    Private Sub TLSE_header_MouseUp(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles TLSE_header.MouseUp, TLSE_title.MouseUp
+        If e.Button = Windows.Forms.MouseButtons.Left Then
+            IsFormBeingDragged = False
+        End If
+    End Sub
+
+    Private Sub TLSE_header_MouseMove(sender As Object, e As System.Windows.Forms.MouseEventArgs) Handles TLSE_header.MouseMove, TLSE_title.MouseMove
+        If IsFormBeingDragged = True Then
+            Dim tmp As Point = New Point()
+            tmp.X = Me.Location.X + (e.X - MousedwnX)
+            tmp.Y = Me.Location.Y + (e.Y - MousedwnY)
+            Me.Location = tmp
+            tmp = Nothing
+        End If
+    End Sub
+
     Private Sub Repairsave_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If TL_SaveEditor.Filever_text.Text = "US" Then
             TLSE_logo.Image = My.Resources.logo_US
