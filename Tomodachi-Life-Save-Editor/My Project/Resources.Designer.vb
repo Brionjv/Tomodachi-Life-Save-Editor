@@ -3463,6 +3463,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property info_repair() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("info_repair", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property infon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("infon", resourceCulture)
@@ -4106,6 +4116,26 @@ Namespace My.Resources
         Friend ReadOnly Property repair_save() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("repair_save", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property repair_somethinggood() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("repair_somethinggood", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property repair_somethingwrong() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("repair_somethingwrong", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

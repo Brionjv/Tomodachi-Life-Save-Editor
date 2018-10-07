@@ -149,6 +149,18 @@ Namespace My
                 Me("Parasetting_filever") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Parasetting_foodslang() As String
+            Get
+                Return CType(Me("Parasetting_foodslang"),String)
+            End Get
+            Set
+                Me("Parasetting_foodslang") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
