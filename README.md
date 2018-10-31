@@ -14,3 +14,6 @@
 
 # Releases :
 https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases
+
+# Page :
+https://gbatemp.net/threads/wip-tomodachi-life-save-editor.399006/
