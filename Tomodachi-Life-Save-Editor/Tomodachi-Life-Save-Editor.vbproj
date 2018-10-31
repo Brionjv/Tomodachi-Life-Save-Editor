@@ -1279,6 +1279,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\reset_items.gif" />
+    <None Include="Resources\icon_path.png" />
+    <None Include="Resources\CKPT_restore.bmp" />
+    <None Include="Resources\CKPT_selecttomodachi.bmp" />
+    <None Include="Resources\CKPT_launch.bmp" />
+    <None Include="Resources\CKPT_confirmgame.bmp" />
+    <None Include="Resources\CKPT_bakfolder.bmp" />
+    <None Include="Resources\CKPT_backup.bmp" />
+    <None Include="Resources\Icon_restore_items.png" />
     <None Include="Resources\info_repair.png" />
     <None Include="Resources\repair_somethingwrong.gif" />
     <None Include="Resources\repair_somethinggood.gif" />

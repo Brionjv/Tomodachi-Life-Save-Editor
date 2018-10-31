@@ -346,6 +346,8 @@ Public Class TL_SaveEditor
             Select_worst_US1.Visible = False
             Select_worst_US2.Visible = False
             Select_foods_language.Visible = True
+            Fea_edit_travelers.Enabled = True
+            Fea_edit_concert.Enabled = True
         ElseIf Filever_text.Text = "EU" Then
             Filever_text.Text = "JP"
             TLSE_logo.Image = My.Resources.logo_JP
@@ -388,6 +390,8 @@ Public Class TL_SaveEditor
             Select_worst_US1.Visible = False
             Select_worst_US2.Visible = False
             Select_foods_language.Visible = False
+            Fea_edit_travelers.Enabled = False
+            Fea_edit_concert.Enabled = False
         ElseIf Filever_text.Text = "JP" Then
             Filever_text.Text = "KR"
             TLSE_logo.Image = My.Resources.logo_KR
@@ -430,6 +434,8 @@ Public Class TL_SaveEditor
             Select_worst_US1.Visible = False
             Select_worst_US2.Visible = False
             Select_foods_language.Visible = False
+            Fea_edit_travelers.Enabled = False
+            Fea_edit_concert.Enabled = False
         ElseIf Filever_text.Text = "KR" Then
             Filever_text.Text = "US"
             TLSE_logo.Image = My.Resources.logo_US
@@ -472,6 +478,8 @@ Public Class TL_SaveEditor
             Select_worst_US1.Visible = True
             Select_worst_US2.Visible = True
             Select_foods_language.Visible = False
+            Fea_edit_travelers.Enabled = True
+            Fea_edit_concert.Enabled = True
         ElseIf Filever_text.Text = "" Then
             Filever_text.Text = "US"
             TLSE_logo.Image = My.Resources.logo_US
@@ -514,6 +522,8 @@ Public Class TL_SaveEditor
             Select_worst_US1.Visible = True
             Select_worst_US2.Visible = True
             Select_foods_language.Visible = False
+            Fea_edit_travelers.Enabled = True
+            Fea_edit_concert.Enabled = True
         End If
         Icon_changelog.Image = TLSE_logo.Image
     End Sub
@@ -1376,6 +1386,13 @@ Public Class TL_SaveEditor
                 fs.WriteByte(98)
                 fs.Position = accessappartMii + (&H660 * 99)
                 fs.WriteByte(99)
+            End If
+            If Check_resetitems.Checked = True Then
+                Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+                For i As Integer = 0 To &H1A47
+                    fs.Position = &H30 + i
+                    fs.WriteByte(253)
+                Next
             End If
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 fdialog.Text_fdialog.Text = "Editing in savedataArc.txt has been saved"
@@ -3697,6 +3714,8 @@ Public Class TL_SaveEditor
             Settings_settings.Text = "Settings"
             Title_rankingboard.Text = "Ranking board"
             Check_resetnewsflash.Text = "Reset News flash"
+            Text_savefileregion.Text = "Save file region ->"
+            Check_resetitems.Text = "Reset all items"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_menu_button.Text = "Menu"
             Text_menu_open.Text = "Ouvrir"
@@ -4115,6 +4134,8 @@ Public Class TL_SaveEditor
             Settings_settings.Text = "Paramètres"
             Title_rankingboard.Text = "Classements"
             Check_resetnewsflash.Text = "Réinitialiser les Flash info"
+            Text_savefileregion.Text = "Région sauvegarde ->"
+            Check_resetitems.Text = "Réinitialiser tout les objets"
         End If
     End Sub
 
@@ -5211,11 +5232,11 @@ Public Class TL_SaveEditor
         veriffilever()
         Dim open As New OpenFileDialog
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            fdialog.Text_fdialog.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a backup of your save file, check ''bak'' folder" & vbNewLine & vbNewLine & "Make sure you have choose right save file version"
+            fdialog.Text_fdialog.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a backup of your save file before any changes, check ''bak'' folder" & vbNewLine & vbNewLine & "Make sure you have choose right save file version"
             fdialog.ShowDialog()
         End If
         If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            fdialog.Text_fdialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde, vérifiez le dossier ''bak''" & vbNewLine & vbNewLine & "Soyez sûr d'avoir choisi la bonne version de sauvegarde"
+            fdialog.Text_fdialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde avant tout changements, vérifiez le dossier ''bak''" & vbNewLine & vbNewLine & "Soyez sûr d'avoir choisi la bonne version de sauvegarde"
             fdialog.ShowDialog()
         End If
         Stopveriffilever()
@@ -20112,6 +20133,19 @@ Public Class TL_SaveEditor
         Panel_description.Visible = True
     End Sub
 
+    Private Sub Check_resetitems_MouseLeave(sender As Object, e As EventArgs) Handles Check_resetitems.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_resetitems_MouseMove(sender As Object, e As EventArgs) Handles Check_resetitems.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to reset all items"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour réinitialiser tout les objets"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
     Private Sub Danger_friendlist_MouseMove(sender As Object, e As EventArgs) Handles Danger_friendlist.MouseMove
         Text_danger_friendlist.Visible = True
     End Sub
@@ -26884,5 +26918,13 @@ Public Class TL_SaveEditor
             Select_worst_2.Items.Item(230) = "Bonbon à la menthe"
             Select_worst_2.Items.Item(231) = "Cornet de glace"
         End If
+    End Sub
+
+    Private Sub Icon_path_MouseMove(sender As Object, e As EventArgs) Handles Icon_path.MouseMove
+        TextBox_fpath.Visible = True
+    End Sub
+
+    Private Sub Icon_path_MouseLeave(sender As Object, e As EventArgs) Handles Icon_path.MouseLeave
+        TextBox_fpath.Visible = False
     End Sub
 End Class

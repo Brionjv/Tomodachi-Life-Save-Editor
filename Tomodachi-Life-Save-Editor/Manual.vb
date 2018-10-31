@@ -7,11 +7,15 @@
     Public Sub hidepanels()
         Panel_extractsave.Visible = False
         Panel_restoresave.Visible = False
+        Panel_extractsave_1.Visible = False
+        Panel_restoresave_1.Visible = False
     End Sub
 
     Public Sub hidemenu()
         Text_extractsave.BorderStyle = BorderStyle.None
         Text_restoresave.BorderStyle = BorderStyle.None
+        Text_extractsave_1.BorderStyle = BorderStyle.None
+        Text_restoresave_1.BorderStyle = BorderStyle.None
     End Sub
 
     Private Sub Closebutton_MouseMove(sender As Object, e As EventArgs) Handles Closebutton.MouseMove
@@ -145,5 +149,108 @@
         Panel_restoresave.Visible = True
         hidemenu()
         Text_restoresave.BorderStyle = BorderStyle.FixedSingle
+    End Sub
+
+    Private Sub Text_extractsave_1_Click(sender As Object, e As EventArgs) Handles Text_extractsave_1.Click
+        hidepanels()
+        Panel_extractsave_1.Visible = True
+        hidemenu()
+        Text_extractsave_1.BorderStyle = BorderStyle.FixedSingle
+    End Sub
+
+    Private Sub Text_restoresave_1_Click(sender As Object, e As EventArgs) Handles Text_restoresave_1.Click
+        hidepanels()
+        Panel_restoresave_1.Visible = True
+        hidemenu()
+        Text_restoresave_1.BorderStyle = BorderStyle.FixedSingle
+    End Sub
+
+    Private Sub Panel_extractsave_1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_extractsave_1.MouseMove
+        Info_image.Location = New Point(e.X + 200, e.Y + 15)
+    End Sub
+
+    Private Sub Info_extractsave_1_1_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1_1.MouseMove
+        Info_image.Image = My.Resources.CKPT_launch
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_1_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1_1.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_1_2_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1_2.MouseMove
+        Info_image.Image = My.Resources.CKPT_selecttomodachi
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_2_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1_2.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_1_3_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1_3.MouseMove
+        Info_image.Image = My.Resources.CKPT_confirmgame
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_3_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1_3.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_1_4_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1_4.MouseMove
+        Info_image.Image = My.Resources.CKPT_backup
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_4_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1_4.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_1_5_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1_5.MouseMove
+        Info_image.Image = My.Resources.CKPT_bakfolder
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_5_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1_5.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Panel_restoresave_1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_restoresave_1.MouseMove
+        Info_image.Location = New Point(e.X + 200, e.Y + 15)
+    End Sub
+
+    Private Sub Info_restoresave_1_1_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_1_1.MouseMove
+        Info_image.Image = My.Resources.CKPT_launch
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_1_1_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_1_1.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_restoresave_1_2_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_1_2.MouseMove
+        Info_image.Image = My.Resources.CKPT_selecttomodachi
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_1_2_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_1_2.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_restoresave_1_3_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_1_3.MouseMove
+        Info_image.Image = My.Resources.CKPT_confirmgame
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_1_3_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_1_3.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_restoresave_1_4_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_1_4.MouseMove
+        Info_image.Image = My.Resources.CKPT_restore
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_1_4_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_1_4.MouseLeave
+        Info_image.Visible = False
     End Sub
 End Class

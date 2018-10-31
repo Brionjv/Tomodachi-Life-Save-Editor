@@ -3864,6 +3864,8 @@ Public Class Items_edit
             Check_hatsstp_notavailable.Text = "Set all Streetpass/Spotpass to not available"
             Check_treasures_bynumbers.Text = "Unlock all by numbers"
             Check_treasures_notavailable.Text = "Set all to not available"
+            Text_specialfoods.Text = "Special foods"
+            Text_treasures_01.Text = "Treasures"
         ElseIf TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
             Info_text_available.Text = "Cochez pour rendre disponible"
             Info_text_notavailable.Text = "Cochez pour rendre indisponible"
@@ -3884,6 +3886,8 @@ Public Class Items_edit
             Check_hatsstp_notavailable.Text = "Rendre tout Sttpass/Sptpass indisponible"
             Check_treasures_bynumbers.Text = "Débloquer tout par nombres"
             Check_treasures_notavailable.Text = "Rendre tout indisponible"
+            Text_specialfoods.Text = "Produits spéciaux"
+            Text_treasures_01.Text = "Trésors"
         End If
         If TL_SaveEditor.Filever_text.Text = "US" Then
             Goodsitems = &H18F0
