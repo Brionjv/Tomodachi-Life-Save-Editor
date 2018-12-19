@@ -54,6 +54,7 @@ Partial Class TL_SaveEditor
         Me.Menu_button = New System.Windows.Forms.Panel()
         Me.Text_menu_button = New System.Windows.Forms.Label()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.valu_rank_splurge = New System.Windows.Forms.NumericUpDown()
         Me.valu_rank_traveler = New System.Windows.Forms.NumericUpDown()
@@ -182,6 +183,8 @@ Partial Class TL_SaveEditor
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Text_menu_open = New System.Windows.Forms.Label()
         Me.Panel_extras = New System.Windows.Forms.Panel()
+        Me.Check_resetrelationship = New System.Windows.Forms.CheckBox()
+        Me.Icon_resetrelationship = New System.Windows.Forms.PictureBox()
         Me.Check_resetitems = New System.Windows.Forms.CheckBox()
         Me.Icon_resetitems = New System.Windows.Forms.PictureBox()
         Me.Check_resetnewsflash = New System.Windows.Forms.CheckBox()
@@ -199,6 +202,8 @@ Partial Class TL_SaveEditor
         Me.Panel_settings = New System.Windows.Forms.Panel()
         Me.TabControl_settings = New System.Windows.Forms.TabControl()
         Me.Settings_settings = New System.Windows.Forms.TabPage()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.Setting_Advhelp = New System.Windows.Forms.CheckBox()
         Me.Panel30 = New System.Windows.Forms.Panel()
         Me.Setting_ckupdate = New System.Windows.Forms.CheckBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
@@ -507,7 +512,6 @@ Partial Class TL_SaveEditor
         Me.Button_setallfriends = New System.Windows.Forms.Button()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Select_allfriends = New System.Windows.Forms.ComboBox()
-        Me.Label36 = New System.Windows.Forms.Label()
         Me.Select_friend_rela_30 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_29 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_28 = New System.Windows.Forms.ComboBox()
@@ -622,401 +626,553 @@ Partial Class TL_SaveEditor
         Me.Text_done = New System.Windows.Forms.Label()
         Me.Timer_done = New System.Windows.Forms.Timer(Me.components)
         Me.Text_savefileregion = New System.Windows.Forms.Label()
-        Me.TLSE_header.SuspendLayout()
-        CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu_panel.SuspendLayout()
-        Me.Menu_manual.SuspendLayout()
-        CType(Me.Menu_icon_manual, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu_Repair.SuspendLayout()
-        CType(Me.Menu_icon_repair, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu_extras.SuspendLayout()
-        CType(Me.Menu_icon_extras, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu_itemsedit.SuspendLayout()
-        CType(Me.Menu_icon_itemsedit, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu_miiedit.SuspendLayout()
-        CType(Me.Menu_icon_miiedit, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu_islandedit.SuspendLayout()
-        CType(Me.Menu_icon_islandedit, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu_settings.SuspendLayout()
-        CType(Me.Menu_icon_settings, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Menu_width, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu_button.SuspendLayout()
-        Me.Panel_islandedit.SuspendLayout()
-        Me.Panel12.SuspendLayout()
-        CType(Me.valu_rank_splurge, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_rank_traveler, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_rank_island, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_rank_romance, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_rank_friendship, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_rank_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_rank_girlcharm, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_rank_boycharm, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_rank_popularity, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_rank_vitality, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_rank_splurge, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_rank_traveler, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_rank_island, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_rank_romance, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_rank_friendship, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_rank_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_rank_girlcharm, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_rank_boycharm, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_rank_popularity, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_rank_vitality, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_info_building, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_appartrenov, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_appartrenov, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_edit_pronun_island.SuspendLayout()
-        CType(Me.Icon_islandn_pronun_val, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_travelerssent, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_travelerssent.SuspendLayout()
-        CType(Me.value_travelerssent, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_travelersreceived, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_travelersreceived.SuspendLayout()
-        CType(Me.value_travelersreceived, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_childrenborn.SuspendLayout()
-        CType(Me.value_childrenborn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_childrenborn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_weddings, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_weddings.SuspendLayout()
-        CType(Me.value_weddings, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_streetpassencounters, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_streetpassencounters.SuspendLayout()
-        CType(Me.value_streetpassencounters, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_money.SuspendLayout()
-        CType(Me.value_money, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_money, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_problemsolved.SuspendLayout()
-        CType(Me.value_problemsolved, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_problemsolved, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_islandname.SuspendLayout()
-        CType(Me.Icon_pronun_islandname, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_islandname, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel29.SuspendLayout()
-        CType(Me.value_part, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_port, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_tervague, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_plage, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_magimport, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_epicer, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_cafe, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_stud, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_test, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_classem, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_conc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_font, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_chap, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_parc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_mais, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_mair, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_appart, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_broc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_info, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_parc1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_tour, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_deco, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.value_vetem, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_vetem, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_tour, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_part, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_test, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_tervague, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_stud, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_port, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_plage, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_parc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_parc1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_mais, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_mair, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_magimport, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_info, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_font, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_epicer, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_deco, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_conc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_classem, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_chap, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cafe, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_broc, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_appart, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_resetmiiapart, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.File_path.SuspendLayout()
-        CType(Me.Icon_path, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_filever.SuspendLayout()
-        Me.Hidden_things.SuspendLayout()
-        Me.Panel_music.SuspendLayout()
-        CType(Me.Icon_music, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_menu_opensave.SuspendLayout()
-        Me.Panel_extras.SuspendLayout()
-        CType(Me.Icon_resetitems, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_resetnewsflash, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Fea_edit_concert.SuspendLayout()
-        CType(Me.Icon_edit_concert, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Fea_edit_travelers.SuspendLayout()
-        CType(Me.Icon_edit_travelers, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_resetstpspp, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_timetravel, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_settings.SuspendLayout()
-        Me.TabControl_settings.SuspendLayout()
-        Me.Settings_settings.SuspendLayout()
-        Me.Panel30.SuspendLayout()
-        Me.Panel9.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel10.SuspendLayout()
-        Me.Settings_changelog.SuspendLayout()
-        Me.Group_changelog.SuspendLayout()
-        CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Settings_credits.SuspendLayout()
-        Me.Panel11.SuspendLayout()
-        CType(Me.Icon_MarioPartyITSE, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_PaparMarioSSSE, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_nintendogscatSE, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_IronfallISE, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_TLSE, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_ChibiRoboZLSE, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_3dsSEL, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_MiitopiaSE, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_miiedit.SuspendLayout()
-        Me.TabControl1.SuspendLayout()
-        Me.Tab_mii_edit.SuspendLayout()
-        Me.Panel_edit_haircolor.SuspendLayout()
-        CType(Me.color_32, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_31, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_27, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.color_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_mii_musics.SuspendLayout()
-        CType(Me.valu_selected_music, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Fea_musics_musical.SuspendLayout()
-        Me.Fea_musics_techno.SuspendLayout()
-        Me.Fea_musics_opera.SuspendLayout()
-        Me.Fea_musics_ballad.SuspendLayout()
-        Me.Fea_musics_rap.SuspendLayout()
-        Me.Fea_musics_rockroll.SuspendLayout()
-        Me.Fea_musics_pop.SuspendLayout()
-        Me.Fea_musics_metal.SuspendLayout()
-        Me.Fea_unlock_music.SuspendLayout()
-        CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_cathphrase.SuspendLayout()
-        Me.Panel_cathph_J1.SuspendLayout()
-        Me.Panel_cathph_J2.SuspendLayout()
-        Me.Panel_cathph_05.SuspendLayout()
-        Me.Panel_cathph_04.SuspendLayout()
-        Me.Panel_cathph_03.SuspendLayout()
-        Me.Panel_cathph_02.SuspendLayout()
-        Me.Panel_cathph_01.SuspendLayout()
-        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_miiMhouse, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_miiMhouse, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_haircolor, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_haircolor, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_favcolor, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_favcolor, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_miihouse, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_miihouse, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_miiedit_music, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_cathphrase, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_inventory, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Mii, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel2.SuspendLayout()
-        Me.Panel16.SuspendLayout()
-        CType(Me.valu_growkid, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel15.SuspendLayout()
-        CType(Me.valu_relationyou, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_pronun_nickname, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_nickname.SuspendLayout()
-        Me.Panel_edit_lastname.SuspendLayout()
-        CType(Me.Icon_valid_lastname, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_pronun_lastname, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_lastname.SuspendLayout()
-        Me.Panel_edit_firstname.SuspendLayout()
-        CType(Me.Icon_valid_firstname, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_pronun_firstname, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_firstname.SuspendLayout()
-        Me.Panel6.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        CType(Me.Icon_copying, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_sharing, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_miiapart, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_miiapart, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_copying, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_sharing, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_mii_inventory.SuspendLayout()
-        CType(Me.Icon_unlock_gooditems, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_unlock_specialfoods, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_unlock_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel27.SuspendLayout()
-        Me.Panel26.SuspendLayout()
-        Me.Panel13.SuspendLayout()
-        Me.Tab_mii_status.SuspendLayout()
-        CType(Me.Danger_interaction, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_switch_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_switch_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_switch_clothes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_switch_clothes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_switch_hats, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_switch_hats, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_edit_fullness.SuspendLayout()
-        CType(Me.Icon_edit_full_100, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_edit_full_50, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_edit_full_25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_edit_full_00, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_chkfullness, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_experience, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_itemmii_8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_growkid, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_itemmii_7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_itemmii_6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_itemmii_5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
-        Me.Panel25.SuspendLayout()
-        CType(Me.valu_emotions, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_interaction, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_target2.SuspendLayout()
-        CType(Me.valu_target2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_target1.SuspendLayout()
-        CType(Me.valu_target1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel17.SuspendLayout()
-        CType(Me.valu_itemmii_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_itemmii_4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_itemmii_2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_itemmii_3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_itemmii_4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_itemmii_5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_itemmii_6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_itemmii_7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_itemmii_8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_itemmii_3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_itemmii_2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_itemmii_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_experience, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_level, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_fullness, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_economy, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_fullness, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_exp, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_allfav_2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_fav_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_fav_2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_fav_3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_worst_2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_worst_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_allfav_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Tab_mii_friendlist.SuspendLayout()
-        CType(Me.Danger_friendlist, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_27, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_selfriend_rela_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel8.SuspendLayout()
-        CType(Me.valu_setallfriends, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel7.SuspendLayout()
-        CType(Me.valu_friend_rela_30, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_29, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_28, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_27, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_26, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_25, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_friend_rela_1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Tab_mii_extras.SuspendLayout()
-        CType(Me.valu_ranking_splurge, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_ranking_splurge, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel_save_mii.SuspendLayout()
-        Me.Panel_select_mii.SuspendLayout()
-        Me.Panel_description.SuspendLayout()
-        Me.Panel_done.SuspendLayout()
-        Me.SuspendLayout()
+        Me.Advhelp = New System.Windows.Forms.Panel()
+        Me.Advhelp_text = New System.Windows.Forms.Label()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox27 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox28 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox29 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox30 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox37 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox38 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox39 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox40 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox41 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox42 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox43 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox44 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox45 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox46 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox47 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox48 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox49 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox50 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox51 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox52 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox53 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox54 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox55 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox56 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox57 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox58 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox59 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox60 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox61 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox62 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox63 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox64 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox65 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox66 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox67 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox68 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox69 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox70 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox71 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox72 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox73 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox74 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox75 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox76 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox77 = New System.Windows.Forms.PictureBox()
+        Me.TLSE_header.SuspendLayout
+        CType(Me.TLSE_title,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Closebutton,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TLSE_logo,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Menu_panel.SuspendLayout
+        Me.Menu_manual.SuspendLayout
+        CType(Me.Menu_icon_manual,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Menu_Repair.SuspendLayout
+        CType(Me.Menu_icon_repair,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Menu_extras.SuspendLayout
+        CType(Me.Menu_icon_extras,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Menu_itemsedit.SuspendLayout
+        CType(Me.Menu_icon_itemsedit,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Menu_miiedit.SuspendLayout
+        CType(Me.Menu_icon_miiedit,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Menu_islandedit.SuspendLayout
+        CType(Me.Menu_icon_islandedit,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Menu_settings.SuspendLayout
+        CType(Me.Menu_icon_settings,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Menu_width,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Menu_button.SuspendLayout
+        Me.Panel_islandedit.SuspendLayout
+        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel12.SuspendLayout
+        CType(Me.valu_rank_splurge,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_rank_traveler,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_rank_island,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_rank_romance,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_rank_friendship,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_rank_pampered,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_rank_girlcharm,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_rank_boycharm,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_rank_popularity,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_rank_vitality,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_rank_splurge,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_rank_traveler,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_rank_island,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_rank_romance,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_rank_friendship,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_rank_pampered,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_rank_girlcharm,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_rank_boycharm,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_rank_popularity,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_rank_vitality,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_eventfountain,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_eventfountain,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_info_building,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_appartrenov,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_appartrenov,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_edit_pronun_island.SuspendLayout
+        CType(Me.Icon_islandn_pronun_val,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_travelerssent,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_travelerssent.SuspendLayout
+        CType(Me.value_travelerssent,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_travelersreceived,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_travelersreceived.SuspendLayout
+        CType(Me.value_travelersreceived,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_childrenborn.SuspendLayout
+        CType(Me.value_childrenborn,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_childrenborn,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_weddings,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_weddings.SuspendLayout
+        CType(Me.value_weddings,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_streetpassencounters,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_streetpassencounters.SuspendLayout
+        CType(Me.value_streetpassencounters,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_money.SuspendLayout
+        CType(Me.value_money,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_money,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_problemsolved.SuspendLayout
+        CType(Me.value_problemsolved,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_problemsolved,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_islandname.SuspendLayout
+        CType(Me.Icon_pronun_islandname,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_islandname,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel29.SuspendLayout
+        CType(Me.value_part,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_port,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_tervague,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_plage,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_magimport,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_epicer,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_cafe,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_stud,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_test,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_classem,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_conc,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_font,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_chap,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_parc,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_mais,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_mair,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_appart,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_broc,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_info,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_parc1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_tour,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_deco,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.value_vetem,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_vetem,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_tour,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_part,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_test,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_tervague,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_stud,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_port,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_plage,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_parc,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_parc1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_mais,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_mair,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_magimport,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_info,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_font,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_epicer,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_deco,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_conc,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_classem,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_chap,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_cafe,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_broc,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_appart,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_resetmiiapart,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.File_path.SuspendLayout
+        CType(Me.Icon_path,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_filever.SuspendLayout
+        Me.Hidden_things.SuspendLayout
+        Me.Panel_music.SuspendLayout
+        CType(Me.Icon_music,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_menu_opensave.SuspendLayout
+        Me.Panel_extras.SuspendLayout
+        CType(Me.Icon_resetrelationship,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_resetitems,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_resetnewsflash,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Fea_edit_concert.SuspendLayout
+        CType(Me.Icon_edit_concert,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Fea_edit_travelers.SuspendLayout
+        CType(Me.Icon_edit_travelers,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_resetstpspp,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_timetravel,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.TLSE_logo_update,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_settings.SuspendLayout
+        Me.TabControl_settings.SuspendLayout
+        Me.Settings_settings.SuspendLayout
+        Me.Panel14.SuspendLayout
+        Me.Panel30.SuspendLayout
+        Me.Panel9.SuspendLayout
+        Me.Panel1.SuspendLayout
+        Me.Panel4.SuspendLayout
+        Me.Panel10.SuspendLayout
+        Me.Settings_changelog.SuspendLayout
+        Me.Group_changelog.SuspendLayout
+        CType(Me.Icon_changelog,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Settings_credits.SuspendLayout
+        Me.Panel11.SuspendLayout
+        CType(Me.Icon_MarioPartyITSE,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_PaparMarioSSSE,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_nintendogscatSE,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_IronfallISE,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_TLSE,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_ChibiRoboZLSE,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_3dsSEL,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_MiitopiaSE,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_miiedit.SuspendLayout
+        Me.TabControl1.SuspendLayout
+        Me.Tab_mii_edit.SuspendLayout
+        Me.Panel_edit_haircolor.SuspendLayout
+        CType(Me.color_32,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_31,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_30,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_29,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_28,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_27,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_26,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_25,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_24,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_23,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_22,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_21,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_20,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_19,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_18,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_17,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_16,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_15,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_14,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_13,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_12,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_11,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.color_1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_mii_musics.SuspendLayout
+        CType(Me.valu_selected_music,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Fea_musics_musical.SuspendLayout
+        Me.Fea_musics_techno.SuspendLayout
+        Me.Fea_musics_opera.SuspendLayout
+        Me.Fea_musics_ballad.SuspendLayout
+        Me.Fea_musics_rap.SuspendLayout
+        Me.Fea_musics_rockroll.SuspendLayout
+        Me.Fea_musics_pop.SuspendLayout
+        Me.Fea_musics_metal.SuspendLayout
+        Me.Fea_unlock_music.SuspendLayout
+        CType(Me.valu_allmusic,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_cathphrase.SuspendLayout
+        Me.Panel_cathph_J1.SuspendLayout
+        Me.Panel_cathph_J2.SuspendLayout
+        Me.Panel_cathph_05.SuspendLayout
+        Me.Panel_cathph_04.SuspendLayout
+        Me.Panel_cathph_03.SuspendLayout
+        Me.Panel_cathph_02.SuspendLayout
+        Me.Panel_cathph_01.SuspendLayout
+        CType(Me.Icon_cathph_05,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_cathph_04,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_cathph_03,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_cathph_02,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_cathph_01,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_miiMhouse,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_miiMhouse,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_haircolor,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_haircolor,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_favcolor,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_favcolor,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_miihouse,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_miihouse,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_miiedit_music,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_cathphrase,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_inventory,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Mii,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel2.SuspendLayout
+        Me.Panel16.SuspendLayout
+        CType(Me.valu_growkid,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel15.SuspendLayout
+        CType(Me.valu_relationyou,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_pronun_nickname,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_nickname.SuspendLayout
+        Me.Panel_edit_lastname.SuspendLayout
+        CType(Me.Icon_valid_lastname,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_pronun_lastname,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_lastname.SuspendLayout
+        Me.Panel_edit_firstname.SuspendLayout
+        CType(Me.Icon_valid_firstname,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_pronun_firstname,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_firstname.SuspendLayout
+        Me.Panel6.SuspendLayout
+        Me.Panel5.SuspendLayout
+        CType(Me.Icon_copying,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_sharing,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_miiapart,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_miiapart,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_copying,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_sharing,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_mii_inventory.SuspendLayout
+        CType(Me.Icon_unlock_gooditems,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_unlock_specialfoods,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_unlock_interiors,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel27.SuspendLayout
+        Me.Panel26.SuspendLayout
+        Me.Panel13.SuspendLayout
+        Me.Tab_mii_status.SuspendLayout
+        CType(Me.Danger_interaction,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_switch_interiors,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_switch_interiors,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_switch_clothes,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_switch_clothes,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_switch_hats,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_switch_hats,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_edit_fullness.SuspendLayout
+        CType(Me.Icon_edit_full_100,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_edit_full_50,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_edit_full_25,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_edit_full_00,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_chkfullness,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_experience,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_itemmii_8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_growkid,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_itemmii_7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_itemmii_6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_itemmii_5,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel3.SuspendLayout
+        Me.Panel25.SuspendLayout
+        CType(Me.valu_emotions,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_interaction,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_target2.SuspendLayout
+        CType(Me.valu_target2,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_target1.SuspendLayout
+        CType(Me.valu_target1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel17.SuspendLayout
+        CType(Me.valu_itemmii_1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_itemmii_4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_itemmii_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_itemmii_3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_itemmii_4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_itemmii_5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_itemmii_6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_itemmii_7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_itemmii_8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_itemmii_3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_itemmii_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_itemmii_1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_experience,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_level,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_fullness,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox34,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_economy,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_fullness,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_exp,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_allfav_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_fav_1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_fav_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_fav_3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_worst_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_worst_1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_allfav_1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Tab_mii_friendlist.SuspendLayout
+        CType(Me.Danger_friendlist,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_30,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_29,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_28,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_27,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_26,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_25,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_24,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_23,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_22,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_21,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_20,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_19,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_18,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_17,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_16,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_15,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_14,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_13,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_12,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_11,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_selfriend_rela_1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel8.SuspendLayout
+        CType(Me.valu_setallfriends,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel7.SuspendLayout
+        CType(Me.valu_friend_rela_30,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_29,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_28,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_27,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_26,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_25,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_24,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_23,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_22,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_21,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_20,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_19,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_18,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_17,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_16,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_15,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_14,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_13,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_12,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_11,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_3,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_2,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_friend_rela_1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Tab_mii_extras.SuspendLayout
+        CType(Me.valu_ranking_splurge,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_ranking_splurge,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_ranking_pampered,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_ranking_pampered,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_save_mii.SuspendLayout
+        Me.Panel_select_mii.SuspendLayout
+        Me.Panel_description.SuspendLayout
+        Me.Panel_done.SuspendLayout
+        Me.Advhelp.SuspendLayout
+        CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox12,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox14,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox15,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox16,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox17,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox18,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox19,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox20,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox21,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox22,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox23,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox24,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox25,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox26,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox27,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox28,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox29,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox30,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox31,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox32,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox33,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox35,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox36,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox37,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox38,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox39,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox40,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox41,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox42,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox43,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox44,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox45,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox46,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox47,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox48,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox49,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox50,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox51,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox52,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox53,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox54,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox55,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox56,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox57,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox58,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox59,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox60,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox61,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox62,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox63,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox64,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox65,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox66,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox67,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox68,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox69,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox70,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox71,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox72,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox73,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox74,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox75,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox76,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox77,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'TLSE_header
         '
@@ -1038,7 +1194,7 @@ Partial Class TL_SaveEditor
         Me.TLSE_title.Size = New System.Drawing.Size(435, 15)
         Me.TLSE_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.TLSE_title.TabIndex = 3
-        Me.TLSE_title.TabStop = False
+        Me.TLSE_title.TabStop = false
         '
         'Closebutton
         '
@@ -1050,7 +1206,7 @@ Partial Class TL_SaveEditor
         Me.Closebutton.Name = "Closebutton"
         Me.Closebutton.Size = New System.Drawing.Size(45, 30)
         Me.Closebutton.TabIndex = 2
-        Me.Closebutton.TabStop = False
+        Me.Closebutton.TabStop = false
         '
         'TLSE_logo
         '
@@ -1063,12 +1219,13 @@ Partial Class TL_SaveEditor
         Me.TLSE_logo.Size = New System.Drawing.Size(66, 60)
         Me.TLSE_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.TLSE_logo.TabIndex = 2
-        Me.TLSE_logo.TabStop = False
+        Me.TLSE_logo.TabStop = false
         '
         'Menu_panel
         '
         Me.Menu_panel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
-        Me.Menu_panel.CausesValidation = False
+        Me.Menu_panel.CausesValidation = false
+        Me.Menu_panel.Controls.Add(Me.PictureBox69)
         Me.Menu_panel.Controls.Add(Me.Menu_manual)
         Me.Menu_panel.Controls.Add(Me.Menu_Repair)
         Me.Menu_panel.Controls.Add(Me.Menu_extras)
@@ -1082,11 +1239,12 @@ Partial Class TL_SaveEditor
         Me.Menu_panel.Name = "Menu_panel"
         Me.Menu_panel.Size = New System.Drawing.Size(34, 490)
         Me.Menu_panel.TabIndex = 5
-        Me.Menu_panel.Visible = False
+        Me.Menu_panel.Visible = false
         '
         'Menu_manual
         '
         Me.Menu_manual.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_manual.Controls.Add(Me.PictureBox75)
         Me.Menu_manual.Controls.Add(Me.Menu_text_manual)
         Me.Menu_manual.Controls.Add(Me.Menu_icon_manual)
         Me.Menu_manual.Location = New System.Drawing.Point(0, 376)
@@ -1096,7 +1254,7 @@ Partial Class TL_SaveEditor
         '
         'Menu_text_manual
         '
-        Me.Menu_text_manual.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Menu_text_manual.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Menu_text_manual.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Menu_text_manual.Location = New System.Drawing.Point(35, 2)
         Me.Menu_text_manual.Name = "Menu_text_manual"
@@ -1109,18 +1267,19 @@ Partial Class TL_SaveEditor
         '
         Me.Menu_icon_manual.BackColor = System.Drawing.Color.Transparent
         Me.Menu_icon_manual.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Menu_icon_manual.Enabled = False
+        Me.Menu_icon_manual.Enabled = false
         Me.Menu_icon_manual.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.howtouse
         Me.Menu_icon_manual.Location = New System.Drawing.Point(0, 0)
         Me.Menu_icon_manual.Name = "Menu_icon_manual"
         Me.Menu_icon_manual.Size = New System.Drawing.Size(34, 34)
         Me.Menu_icon_manual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Menu_icon_manual.TabIndex = 1
-        Me.Menu_icon_manual.TabStop = False
+        Me.Menu_icon_manual.TabStop = false
         '
         'Menu_Repair
         '
         Me.Menu_Repair.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_Repair.Controls.Add(Me.PictureBox74)
         Me.Menu_Repair.Controls.Add(Me.Menu_text_repair)
         Me.Menu_Repair.Controls.Add(Me.Menu_icon_repair)
         Me.Menu_Repair.Location = New System.Drawing.Point(0, 215)
@@ -1130,7 +1289,7 @@ Partial Class TL_SaveEditor
         '
         'Menu_text_repair
         '
-        Me.Menu_text_repair.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Menu_text_repair.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Menu_text_repair.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Menu_text_repair.Location = New System.Drawing.Point(35, 2)
         Me.Menu_text_repair.Name = "Menu_text_repair"
@@ -1143,18 +1302,19 @@ Partial Class TL_SaveEditor
         '
         Me.Menu_icon_repair.BackColor = System.Drawing.Color.Transparent
         Me.Menu_icon_repair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Menu_icon_repair.Enabled = False
+        Me.Menu_icon_repair.Enabled = false
         Me.Menu_icon_repair.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.repair_save
         Me.Menu_icon_repair.Location = New System.Drawing.Point(0, 0)
         Me.Menu_icon_repair.Name = "Menu_icon_repair"
         Me.Menu_icon_repair.Size = New System.Drawing.Size(34, 34)
         Me.Menu_icon_repair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Menu_icon_repair.TabIndex = 1
-        Me.Menu_icon_repair.TabStop = False
+        Me.Menu_icon_repair.TabStop = false
         '
         'Menu_extras
         '
         Me.Menu_extras.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_extras.Controls.Add(Me.PictureBox73)
         Me.Menu_extras.Controls.Add(Me.Menu_text_extras)
         Me.Menu_extras.Controls.Add(Me.Menu_icon_extras)
         Me.Menu_extras.Location = New System.Drawing.Point(0, 175)
@@ -1164,7 +1324,7 @@ Partial Class TL_SaveEditor
         '
         'Menu_text_extras
         '
-        Me.Menu_text_extras.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Menu_text_extras.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Menu_text_extras.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Menu_text_extras.Location = New System.Drawing.Point(35, 2)
         Me.Menu_text_extras.Name = "Menu_text_extras"
@@ -1177,18 +1337,19 @@ Partial Class TL_SaveEditor
         '
         Me.Menu_icon_extras.BackColor = System.Drawing.Color.Transparent
         Me.Menu_icon_extras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Menu_icon_extras.Enabled = False
+        Me.Menu_icon_extras.Enabled = false
         Me.Menu_icon_extras.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.extras
         Me.Menu_icon_extras.Location = New System.Drawing.Point(0, 0)
         Me.Menu_icon_extras.Name = "Menu_icon_extras"
         Me.Menu_icon_extras.Size = New System.Drawing.Size(34, 34)
         Me.Menu_icon_extras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Menu_icon_extras.TabIndex = 1
-        Me.Menu_icon_extras.TabStop = False
+        Me.Menu_icon_extras.TabStop = false
         '
         'Menu_itemsedit
         '
         Me.Menu_itemsedit.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_itemsedit.Controls.Add(Me.PictureBox72)
         Me.Menu_itemsedit.Controls.Add(Me.Menu_text_itemsedit)
         Me.Menu_itemsedit.Controls.Add(Me.Menu_icon_itemsedit)
         Me.Menu_itemsedit.Location = New System.Drawing.Point(0, 135)
@@ -1198,7 +1359,7 @@ Partial Class TL_SaveEditor
         '
         'Menu_text_itemsedit
         '
-        Me.Menu_text_itemsedit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Menu_text_itemsedit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Menu_text_itemsedit.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Menu_text_itemsedit.Location = New System.Drawing.Point(35, 2)
         Me.Menu_text_itemsedit.Name = "Menu_text_itemsedit"
@@ -1211,17 +1372,18 @@ Partial Class TL_SaveEditor
         '
         Me.Menu_icon_itemsedit.BackColor = System.Drawing.Color.Transparent
         Me.Menu_icon_itemsedit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Menu_icon_itemsedit.Enabled = False
-        Me.Menu_icon_itemsedit.Image = CType(resources.GetObject("Menu_icon_itemsedit.Image"), System.Drawing.Image)
+        Me.Menu_icon_itemsedit.Enabled = false
+        Me.Menu_icon_itemsedit.Image = CType(resources.GetObject("Menu_icon_itemsedit.Image"),System.Drawing.Image)
         Me.Menu_icon_itemsedit.Location = New System.Drawing.Point(0, 0)
         Me.Menu_icon_itemsedit.Name = "Menu_icon_itemsedit"
         Me.Menu_icon_itemsedit.Size = New System.Drawing.Size(34, 34)
         Me.Menu_icon_itemsedit.TabIndex = 1
-        Me.Menu_icon_itemsedit.TabStop = False
+        Me.Menu_icon_itemsedit.TabStop = false
         '
         'Menu_miiedit
         '
         Me.Menu_miiedit.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_miiedit.Controls.Add(Me.PictureBox71)
         Me.Menu_miiedit.Controls.Add(Me.Menu_text_miiedit)
         Me.Menu_miiedit.Controls.Add(Me.Menu_icon_miiedit)
         Me.Menu_miiedit.Location = New System.Drawing.Point(0, 95)
@@ -1232,7 +1394,7 @@ Partial Class TL_SaveEditor
         'Menu_text_miiedit
         '
         Me.Menu_text_miiedit.BackColor = System.Drawing.Color.Transparent
-        Me.Menu_text_miiedit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Menu_text_miiedit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Menu_text_miiedit.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Menu_text_miiedit.Location = New System.Drawing.Point(35, 2)
         Me.Menu_text_miiedit.Name = "Menu_text_miiedit"
@@ -1240,23 +1402,24 @@ Partial Class TL_SaveEditor
         Me.Menu_text_miiedit.TabIndex = 2
         Me.Menu_text_miiedit.Text = "Mii edit"
         Me.Menu_text_miiedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Menu_text_miiedit.UseCompatibleTextRendering = True
+        Me.Menu_text_miiedit.UseCompatibleTextRendering = true
         '
         'Menu_icon_miiedit
         '
         Me.Menu_icon_miiedit.BackColor = System.Drawing.Color.Transparent
         Me.Menu_icon_miiedit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Menu_icon_miiedit.Enabled = False
-        Me.Menu_icon_miiedit.Image = CType(resources.GetObject("Menu_icon_miiedit.Image"), System.Drawing.Image)
+        Me.Menu_icon_miiedit.Enabled = false
+        Me.Menu_icon_miiedit.Image = CType(resources.GetObject("Menu_icon_miiedit.Image"),System.Drawing.Image)
         Me.Menu_icon_miiedit.Location = New System.Drawing.Point(0, 0)
         Me.Menu_icon_miiedit.Name = "Menu_icon_miiedit"
         Me.Menu_icon_miiedit.Size = New System.Drawing.Size(34, 34)
         Me.Menu_icon_miiedit.TabIndex = 1
-        Me.Menu_icon_miiedit.TabStop = False
+        Me.Menu_icon_miiedit.TabStop = false
         '
         'Menu_islandedit
         '
         Me.Menu_islandedit.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_islandedit.Controls.Add(Me.PictureBox70)
         Me.Menu_islandedit.Controls.Add(Me.Menu_text_islandedit)
         Me.Menu_islandedit.Controls.Add(Me.Menu_icon_islandedit)
         Me.Menu_islandedit.Location = New System.Drawing.Point(0, 55)
@@ -1266,7 +1429,7 @@ Partial Class TL_SaveEditor
         '
         'Menu_text_islandedit
         '
-        Me.Menu_text_islandedit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Menu_text_islandedit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Menu_text_islandedit.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Menu_text_islandedit.Location = New System.Drawing.Point(35, 2)
         Me.Menu_text_islandedit.Name = "Menu_text_islandedit"
@@ -1274,24 +1437,25 @@ Partial Class TL_SaveEditor
         Me.Menu_text_islandedit.TabIndex = 2
         Me.Menu_text_islandedit.Text = "Island edit"
         Me.Menu_text_islandedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Menu_text_islandedit.UseCompatibleTextRendering = True
+        Me.Menu_text_islandedit.UseCompatibleTextRendering = true
         '
         'Menu_icon_islandedit
         '
         Me.Menu_icon_islandedit.BackColor = System.Drawing.Color.Transparent
         Me.Menu_icon_islandedit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Menu_icon_islandedit.Enabled = False
-        Me.Menu_icon_islandedit.Image = CType(resources.GetObject("Menu_icon_islandedit.Image"), System.Drawing.Image)
+        Me.Menu_icon_islandedit.Enabled = false
+        Me.Menu_icon_islandedit.Image = CType(resources.GetObject("Menu_icon_islandedit.Image"),System.Drawing.Image)
         Me.Menu_icon_islandedit.Location = New System.Drawing.Point(0, 0)
         Me.Menu_icon_islandedit.Name = "Menu_icon_islandedit"
         Me.Menu_icon_islandedit.Size = New System.Drawing.Size(34, 34)
         Me.Menu_icon_islandedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Menu_icon_islandedit.TabIndex = 1
-        Me.Menu_icon_islandedit.TabStop = False
+        Me.Menu_icon_islandedit.TabStop = false
         '
         'Menu_settings
         '
         Me.Menu_settings.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_settings.Controls.Add(Me.PictureBox76)
         Me.Menu_settings.Controls.Add(Me.Menu_text_settings)
         Me.Menu_settings.Controls.Add(Me.Menu_icon_settings)
         Me.Menu_settings.Location = New System.Drawing.Point(0, 416)
@@ -1301,7 +1465,7 @@ Partial Class TL_SaveEditor
         '
         'Menu_text_settings
         '
-        Me.Menu_text_settings.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Menu_text_settings.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Menu_text_settings.ForeColor = System.Drawing.Color.White
         Me.Menu_text_settings.Location = New System.Drawing.Point(35, 2)
         Me.Menu_text_settings.Name = "Menu_text_settings"
@@ -1315,29 +1479,30 @@ Partial Class TL_SaveEditor
         Me.Menu_icon_settings.BackColor = System.Drawing.Color.Transparent
         Me.Menu_icon_settings.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.settings
         Me.Menu_icon_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Menu_icon_settings.Enabled = False
+        Me.Menu_icon_settings.Enabled = false
         Me.Menu_icon_settings.Location = New System.Drawing.Point(0, 0)
         Me.Menu_icon_settings.Name = "Menu_icon_settings"
         Me.Menu_icon_settings.Size = New System.Drawing.Size(34, 34)
         Me.Menu_icon_settings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Menu_icon_settings.TabIndex = 1
-        Me.Menu_icon_settings.TabStop = False
+        Me.Menu_icon_settings.TabStop = false
         '
         'Menu_width
         '
         Me.Menu_width.BackColor = System.Drawing.Color.Transparent
-        Me.Menu_width.BackgroundImage = CType(resources.GetObject("Menu_width.BackgroundImage"), System.Drawing.Image)
+        Me.Menu_width.BackgroundImage = CType(resources.GetObject("Menu_width.BackgroundImage"),System.Drawing.Image)
         Me.Menu_width.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.Menu_width.Location = New System.Drawing.Point(0, 0)
         Me.Menu_width.Name = "Menu_width"
         Me.Menu_width.Size = New System.Drawing.Size(34, 34)
         Me.Menu_width.TabIndex = 0
-        Me.Menu_width.TabStop = False
+        Me.Menu_width.TabStop = false
         '
         'Menu_button
         '
         Me.Menu_button.BackColor = System.Drawing.Color.Transparent
         Me.Menu_button.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
+        Me.Menu_button.Controls.Add(Me.PictureBox67)
         Me.Menu_button.Controls.Add(Me.Text_menu_button)
         Me.Menu_button.Location = New System.Drawing.Point(66, 33)
         Me.Menu_button.Name = "Menu_button"
@@ -1349,7 +1514,7 @@ Partial Class TL_SaveEditor
         Me.Text_menu_button.BackColor = System.Drawing.Color.Transparent
         Me.Text_menu_button.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_button.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_menu_button.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_menu_button.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Text_menu_button.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_menu_button.Location = New System.Drawing.Point(0, 0)
         Me.Text_menu_button.Name = "Text_menu_button"
@@ -1361,6 +1526,19 @@ Partial Class TL_SaveEditor
         'Panel_islandedit
         '
         Me.Panel_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox15)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox14)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox13)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox12)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox11)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox10)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox9)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox8)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox7)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox6)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox5)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox4)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox3)
         Me.Panel_islandedit.Controls.Add(Me.Panel12)
         Me.Panel_islandedit.Controls.Add(Me.value_eventfountain)
         Me.Panel_islandedit.Controls.Add(Me.Icon_eventfountain)
@@ -1401,6 +1579,18 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Size = New System.Drawing.Size(600, 490)
         Me.Panel_islandedit.TabIndex = 11
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox3.Location = New System.Drawing.Point(172, 85)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox3.TabIndex = 66
+        Me.PictureBox3.TabStop = false
+        Me.PictureBox3.Visible = false
+        '
         'Panel12
         '
         Me.Panel12.BackColor = System.Drawing.Color.Transparent
@@ -1440,7 +1630,7 @@ Partial Class TL_SaveEditor
         Me.valu_rank_splurge.Size = New System.Drawing.Size(39, 16)
         Me.valu_rank_splurge.TabIndex = 20
         Me.valu_rank_splurge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_rank_splurge.Visible = False
+        Me.valu_rank_splurge.Visible = false
         '
         'valu_rank_traveler
         '
@@ -1451,7 +1641,7 @@ Partial Class TL_SaveEditor
         Me.valu_rank_traveler.Size = New System.Drawing.Size(39, 16)
         Me.valu_rank_traveler.TabIndex = 19
         Me.valu_rank_traveler.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_rank_traveler.Visible = False
+        Me.valu_rank_traveler.Visible = false
         '
         'valu_rank_island
         '
@@ -1462,7 +1652,7 @@ Partial Class TL_SaveEditor
         Me.valu_rank_island.Size = New System.Drawing.Size(39, 16)
         Me.valu_rank_island.TabIndex = 18
         Me.valu_rank_island.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_rank_island.Visible = False
+        Me.valu_rank_island.Visible = false
         '
         'valu_rank_romance
         '
@@ -1473,7 +1663,7 @@ Partial Class TL_SaveEditor
         Me.valu_rank_romance.Size = New System.Drawing.Size(39, 16)
         Me.valu_rank_romance.TabIndex = 17
         Me.valu_rank_romance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_rank_romance.Visible = False
+        Me.valu_rank_romance.Visible = false
         '
         'valu_rank_friendship
         '
@@ -1484,7 +1674,7 @@ Partial Class TL_SaveEditor
         Me.valu_rank_friendship.Size = New System.Drawing.Size(39, 16)
         Me.valu_rank_friendship.TabIndex = 16
         Me.valu_rank_friendship.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_rank_friendship.Visible = False
+        Me.valu_rank_friendship.Visible = false
         '
         'valu_rank_pampered
         '
@@ -1495,7 +1685,7 @@ Partial Class TL_SaveEditor
         Me.valu_rank_pampered.Size = New System.Drawing.Size(39, 16)
         Me.valu_rank_pampered.TabIndex = 15
         Me.valu_rank_pampered.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_rank_pampered.Visible = False
+        Me.valu_rank_pampered.Visible = false
         '
         'valu_rank_girlcharm
         '
@@ -1506,7 +1696,7 @@ Partial Class TL_SaveEditor
         Me.valu_rank_girlcharm.Size = New System.Drawing.Size(39, 16)
         Me.valu_rank_girlcharm.TabIndex = 14
         Me.valu_rank_girlcharm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_rank_girlcharm.Visible = False
+        Me.valu_rank_girlcharm.Visible = false
         '
         'valu_rank_boycharm
         '
@@ -1517,7 +1707,7 @@ Partial Class TL_SaveEditor
         Me.valu_rank_boycharm.Size = New System.Drawing.Size(39, 16)
         Me.valu_rank_boycharm.TabIndex = 13
         Me.valu_rank_boycharm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_rank_boycharm.Visible = False
+        Me.valu_rank_boycharm.Visible = false
         '
         'valu_rank_popularity
         '
@@ -1528,7 +1718,7 @@ Partial Class TL_SaveEditor
         Me.valu_rank_popularity.Size = New System.Drawing.Size(39, 16)
         Me.valu_rank_popularity.TabIndex = 12
         Me.valu_rank_popularity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_rank_popularity.Visible = False
+        Me.valu_rank_popularity.Visible = false
         '
         'valu_rank_vitality
         '
@@ -1539,11 +1729,11 @@ Partial Class TL_SaveEditor
         Me.valu_rank_vitality.Size = New System.Drawing.Size(39, 16)
         Me.valu_rank_vitality.TabIndex = 11
         Me.valu_rank_vitality.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_rank_vitality.Visible = False
+        Me.valu_rank_vitality.Visible = false
         '
         'Title_rankingboard
         '
-        Me.Title_rankingboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Title_rankingboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Title_rankingboard.ForeColor = System.Drawing.Color.White
         Me.Title_rankingboard.Location = New System.Drawing.Point(3, 2)
         Me.Title_rankingboard.Name = "Title_rankingboard"
@@ -1560,7 +1750,7 @@ Partial Class TL_SaveEditor
         Me.Icon_rank_splurge.Name = "Icon_rank_splurge"
         Me.Icon_rank_splurge.Size = New System.Drawing.Size(39, 50)
         Me.Icon_rank_splurge.TabIndex = 9
-        Me.Icon_rank_splurge.TabStop = False
+        Me.Icon_rank_splurge.TabStop = false
         '
         'Icon_rank_traveler
         '
@@ -1570,7 +1760,7 @@ Partial Class TL_SaveEditor
         Me.Icon_rank_traveler.Name = "Icon_rank_traveler"
         Me.Icon_rank_traveler.Size = New System.Drawing.Size(39, 50)
         Me.Icon_rank_traveler.TabIndex = 8
-        Me.Icon_rank_traveler.TabStop = False
+        Me.Icon_rank_traveler.TabStop = false
         '
         'Icon_rank_island
         '
@@ -1580,7 +1770,7 @@ Partial Class TL_SaveEditor
         Me.Icon_rank_island.Name = "Icon_rank_island"
         Me.Icon_rank_island.Size = New System.Drawing.Size(39, 50)
         Me.Icon_rank_island.TabIndex = 7
-        Me.Icon_rank_island.TabStop = False
+        Me.Icon_rank_island.TabStop = false
         '
         'Icon_rank_romance
         '
@@ -1590,7 +1780,7 @@ Partial Class TL_SaveEditor
         Me.Icon_rank_romance.Name = "Icon_rank_romance"
         Me.Icon_rank_romance.Size = New System.Drawing.Size(39, 50)
         Me.Icon_rank_romance.TabIndex = 6
-        Me.Icon_rank_romance.TabStop = False
+        Me.Icon_rank_romance.TabStop = false
         '
         'Icon_rank_friendship
         '
@@ -1600,7 +1790,7 @@ Partial Class TL_SaveEditor
         Me.Icon_rank_friendship.Name = "Icon_rank_friendship"
         Me.Icon_rank_friendship.Size = New System.Drawing.Size(39, 50)
         Me.Icon_rank_friendship.TabIndex = 5
-        Me.Icon_rank_friendship.TabStop = False
+        Me.Icon_rank_friendship.TabStop = false
         '
         'Icon_rank_pampered
         '
@@ -1610,7 +1800,7 @@ Partial Class TL_SaveEditor
         Me.Icon_rank_pampered.Name = "Icon_rank_pampered"
         Me.Icon_rank_pampered.Size = New System.Drawing.Size(39, 50)
         Me.Icon_rank_pampered.TabIndex = 4
-        Me.Icon_rank_pampered.TabStop = False
+        Me.Icon_rank_pampered.TabStop = false
         '
         'Icon_rank_girlcharm
         '
@@ -1620,7 +1810,7 @@ Partial Class TL_SaveEditor
         Me.Icon_rank_girlcharm.Name = "Icon_rank_girlcharm"
         Me.Icon_rank_girlcharm.Size = New System.Drawing.Size(39, 50)
         Me.Icon_rank_girlcharm.TabIndex = 3
-        Me.Icon_rank_girlcharm.TabStop = False
+        Me.Icon_rank_girlcharm.TabStop = false
         '
         'Icon_rank_boycharm
         '
@@ -1630,7 +1820,7 @@ Partial Class TL_SaveEditor
         Me.Icon_rank_boycharm.Name = "Icon_rank_boycharm"
         Me.Icon_rank_boycharm.Size = New System.Drawing.Size(39, 50)
         Me.Icon_rank_boycharm.TabIndex = 2
-        Me.Icon_rank_boycharm.TabStop = False
+        Me.Icon_rank_boycharm.TabStop = false
         '
         'Icon_rank_popularity
         '
@@ -1640,7 +1830,7 @@ Partial Class TL_SaveEditor
         Me.Icon_rank_popularity.Name = "Icon_rank_popularity"
         Me.Icon_rank_popularity.Size = New System.Drawing.Size(39, 50)
         Me.Icon_rank_popularity.TabIndex = 1
-        Me.Icon_rank_popularity.TabStop = False
+        Me.Icon_rank_popularity.TabStop = false
         '
         'Icon_rank_vitality
         '
@@ -1650,7 +1840,7 @@ Partial Class TL_SaveEditor
         Me.Icon_rank_vitality.Name = "Icon_rank_vitality"
         Me.Icon_rank_vitality.Size = New System.Drawing.Size(39, 50)
         Me.Icon_rank_vitality.TabIndex = 0
-        Me.Icon_rank_vitality.TabStop = False
+        Me.Icon_rank_vitality.TabStop = false
         '
         'value_eventfountain
         '
@@ -1661,7 +1851,7 @@ Partial Class TL_SaveEditor
         Me.value_eventfountain.Size = New System.Drawing.Size(81, 16)
         Me.value_eventfountain.TabIndex = 64
         Me.value_eventfountain.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_eventfountain.Visible = False
+        Me.value_eventfountain.Visible = false
         '
         'Icon_eventfountain
         '
@@ -1672,7 +1862,7 @@ Partial Class TL_SaveEditor
         Me.Icon_eventfountain.Name = "Icon_eventfountain"
         Me.Icon_eventfountain.Size = New System.Drawing.Size(44, 57)
         Me.Icon_eventfountain.TabIndex = 63
-        Me.Icon_eventfountain.TabStop = False
+        Me.Icon_eventfountain.TabStop = false
         '
         'Title_eventfountain
         '
@@ -1694,8 +1884,8 @@ Partial Class TL_SaveEditor
         Me.Icon_info_building.Size = New System.Drawing.Size(58, 62)
         Me.Icon_info_building.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_info_building.TabIndex = 41
-        Me.Icon_info_building.TabStop = False
-        Me.Icon_info_building.Visible = False
+        Me.Icon_info_building.TabStop = false
+        Me.Icon_info_building.Visible = false
         '
         'value_appartrenov
         '
@@ -1706,7 +1896,7 @@ Partial Class TL_SaveEditor
         Me.value_appartrenov.Size = New System.Drawing.Size(58, 16)
         Me.value_appartrenov.TabIndex = 60
         Me.value_appartrenov.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_appartrenov.Visible = False
+        Me.value_appartrenov.Visible = false
         '
         'Icon_appartrenov
         '
@@ -1718,7 +1908,7 @@ Partial Class TL_SaveEditor
         Me.Icon_appartrenov.Size = New System.Drawing.Size(58, 88)
         Me.Icon_appartrenov.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Icon_appartrenov.TabIndex = 59
-        Me.Icon_appartrenov.TabStop = False
+        Me.Icon_appartrenov.TabStop = false
         '
         'Title_appartrenov
         '
@@ -1739,7 +1929,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_pronun_island.Name = "Panel_edit_pronun_island"
         Me.Panel_edit_pronun_island.Size = New System.Drawing.Size(181, 17)
         Me.Panel_edit_pronun_island.TabIndex = 58
-        Me.Panel_edit_pronun_island.Visible = False
+        Me.Panel_edit_pronun_island.Visible = false
         '
         'Icon_islandn_pronun_val
         '
@@ -1751,7 +1941,7 @@ Partial Class TL_SaveEditor
         Me.Icon_islandn_pronun_val.Size = New System.Drawing.Size(15, 12)
         Me.Icon_islandn_pronun_val.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_islandn_pronun_val.TabIndex = 8
-        Me.Icon_islandn_pronun_val.TabStop = False
+        Me.Icon_islandn_pronun_val.TabStop = false
         '
         'Text_pronun_island
         '
@@ -1781,7 +1971,7 @@ Partial Class TL_SaveEditor
         Me.Icon_travelerssent.Name = "Icon_travelerssent"
         Me.Icon_travelerssent.Size = New System.Drawing.Size(41, 20)
         Me.Icon_travelerssent.TabIndex = 3
-        Me.Icon_travelerssent.TabStop = False
+        Me.Icon_travelerssent.TabStop = false
         '
         'Panel_travelerssent
         '
@@ -1810,7 +2000,7 @@ Partial Class TL_SaveEditor
         Me.Icon_travelersreceived.Name = "Icon_travelersreceived"
         Me.Icon_travelersreceived.Size = New System.Drawing.Size(41, 20)
         Me.Icon_travelersreceived.TabIndex = 2
-        Me.Icon_travelersreceived.TabStop = False
+        Me.Icon_travelersreceived.TabStop = false
         '
         'Panel_travelersreceived
         '
@@ -1889,7 +2079,7 @@ Partial Class TL_SaveEditor
         Me.Icon_childrenborn.Size = New System.Drawing.Size(20, 20)
         Me.Icon_childrenborn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_childrenborn.TabIndex = 2
-        Me.Icon_childrenborn.TabStop = False
+        Me.Icon_childrenborn.TabStop = false
         '
         'Icon_weddings
         '
@@ -1899,7 +2089,7 @@ Partial Class TL_SaveEditor
         Me.Icon_weddings.Name = "Icon_weddings"
         Me.Icon_weddings.Size = New System.Drawing.Size(26, 20)
         Me.Icon_weddings.TabIndex = 3
-        Me.Icon_weddings.TabStop = False
+        Me.Icon_weddings.TabStop = false
         '
         'Panel_weddings
         '
@@ -1922,10 +2112,10 @@ Partial Class TL_SaveEditor
         '
         'Info_islandbuild
         '
-        Me.Info_islandbuild.AutoSize = True
+        Me.Info_islandbuild.AutoSize = true
         Me.Info_islandbuild.BackColor = System.Drawing.Color.Transparent
         Me.Info_islandbuild.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_islandbuild.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_islandbuild.Font = New System.Drawing.Font("Harlow Solid Italic", 12!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic),System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Info_islandbuild.ForeColor = System.Drawing.Color.Blue
         Me.Info_islandbuild.Location = New System.Drawing.Point(575, 206)
         Me.Info_islandbuild.Name = "Info_islandbuild"
@@ -1951,7 +2141,7 @@ Partial Class TL_SaveEditor
         Me.Icon_streetpassencounters.Name = "Icon_streetpassencounters"
         Me.Icon_streetpassencounters.Size = New System.Drawing.Size(31, 20)
         Me.Icon_streetpassencounters.TabIndex = 2
-        Me.Icon_streetpassencounters.TabStop = False
+        Me.Icon_streetpassencounters.TabStop = false
         '
         'Panel_streetpassencounters
         '
@@ -1992,7 +2182,7 @@ Partial Class TL_SaveEditor
         Me.value_money.Size = New System.Drawing.Size(120, 16)
         Me.value_money.TabIndex = 47
         Me.value_money.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_money.ThousandsSeparator = True
+        Me.value_money.ThousandsSeparator = true
         '
         'Icon_money
         '
@@ -2002,7 +2192,7 @@ Partial Class TL_SaveEditor
         Me.Icon_money.Size = New System.Drawing.Size(20, 19)
         Me.Icon_money.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Icon_money.TabIndex = 1
-        Me.Icon_money.TabStop = False
+        Me.Icon_money.TabStop = false
         '
         'Title_problemsolved
         '
@@ -2041,7 +2231,7 @@ Partial Class TL_SaveEditor
         Me.Icon_problemsolved.Name = "Icon_problemsolved"
         Me.Icon_problemsolved.Size = New System.Drawing.Size(20, 20)
         Me.Icon_problemsolved.TabIndex = 1
-        Me.Icon_problemsolved.TabStop = False
+        Me.Icon_problemsolved.TabStop = false
         '
         'Title_islandname
         '
@@ -2074,14 +2264,14 @@ Partial Class TL_SaveEditor
         '
         'Text_pronun_islandname
         '
-        Me.Text_pronun_islandname.AutoSize = True
+        Me.Text_pronun_islandname.AutoSize = true
         Me.Text_pronun_islandname.BackColor = System.Drawing.Color.White
         Me.Text_pronun_islandname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Text_pronun_islandname.Location = New System.Drawing.Point(49, 53)
         Me.Text_pronun_islandname.Name = "Text_pronun_islandname"
         Me.Text_pronun_islandname.Size = New System.Drawing.Size(2, 15)
         Me.Text_pronun_islandname.TabIndex = 27
-        Me.Text_pronun_islandname.Visible = False
+        Me.Text_pronun_islandname.Visible = false
         '
         'Icon_pronun_islandname
         '
@@ -2092,7 +2282,7 @@ Partial Class TL_SaveEditor
         Me.Icon_pronun_islandname.Name = "Icon_pronun_islandname"
         Me.Icon_pronun_islandname.Size = New System.Drawing.Size(22, 22)
         Me.Icon_pronun_islandname.TabIndex = 24
-        Me.Icon_pronun_islandname.TabStop = False
+        Me.Icon_pronun_islandname.TabStop = false
         '
         'Icon_islandname
         '
@@ -2102,7 +2292,7 @@ Partial Class TL_SaveEditor
         Me.Icon_islandname.Name = "Icon_islandname"
         Me.Icon_islandname.Size = New System.Drawing.Size(18, 20)
         Me.Icon_islandname.TabIndex = 25
-        Me.Icon_islandname.TabStop = False
+        Me.Icon_islandname.TabStop = false
         '
         'Panel29
         '
@@ -2170,7 +2360,7 @@ Partial Class TL_SaveEditor
         Me.value_part.Size = New System.Drawing.Size(33, 16)
         Me.value_part.TabIndex = 44
         Me.value_part.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_part.Visible = False
+        Me.value_part.Visible = false
         '
         'value_port
         '
@@ -2181,7 +2371,7 @@ Partial Class TL_SaveEditor
         Me.value_port.Size = New System.Drawing.Size(33, 16)
         Me.value_port.TabIndex = 43
         Me.value_port.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_port.Visible = False
+        Me.value_port.Visible = false
         '
         'value_tervague
         '
@@ -2192,7 +2382,7 @@ Partial Class TL_SaveEditor
         Me.value_tervague.Size = New System.Drawing.Size(33, 16)
         Me.value_tervague.TabIndex = 42
         Me.value_tervague.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_tervague.Visible = False
+        Me.value_tervague.Visible = false
         '
         'value_plage
         '
@@ -2203,7 +2393,7 @@ Partial Class TL_SaveEditor
         Me.value_plage.Size = New System.Drawing.Size(33, 16)
         Me.value_plage.TabIndex = 41
         Me.value_plage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_plage.Visible = False
+        Me.value_plage.Visible = false
         '
         'value_magimport
         '
@@ -2214,7 +2404,7 @@ Partial Class TL_SaveEditor
         Me.value_magimport.Size = New System.Drawing.Size(33, 16)
         Me.value_magimport.TabIndex = 40
         Me.value_magimport.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_magimport.Visible = False
+        Me.value_magimport.Visible = false
         '
         'value_epicer
         '
@@ -2225,7 +2415,7 @@ Partial Class TL_SaveEditor
         Me.value_epicer.Size = New System.Drawing.Size(33, 16)
         Me.value_epicer.TabIndex = 39
         Me.value_epicer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_epicer.Visible = False
+        Me.value_epicer.Visible = false
         '
         'value_cafe
         '
@@ -2236,7 +2426,7 @@ Partial Class TL_SaveEditor
         Me.value_cafe.Size = New System.Drawing.Size(33, 16)
         Me.value_cafe.TabIndex = 38
         Me.value_cafe.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_cafe.Visible = False
+        Me.value_cafe.Visible = false
         '
         'value_stud
         '
@@ -2247,7 +2437,7 @@ Partial Class TL_SaveEditor
         Me.value_stud.Size = New System.Drawing.Size(33, 16)
         Me.value_stud.TabIndex = 37
         Me.value_stud.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_stud.Visible = False
+        Me.value_stud.Visible = false
         '
         'value_test
         '
@@ -2258,7 +2448,7 @@ Partial Class TL_SaveEditor
         Me.value_test.Size = New System.Drawing.Size(33, 16)
         Me.value_test.TabIndex = 36
         Me.value_test.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_test.Visible = False
+        Me.value_test.Visible = false
         '
         'value_classem
         '
@@ -2269,7 +2459,7 @@ Partial Class TL_SaveEditor
         Me.value_classem.Size = New System.Drawing.Size(33, 16)
         Me.value_classem.TabIndex = 35
         Me.value_classem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_classem.Visible = False
+        Me.value_classem.Visible = false
         '
         'value_conc
         '
@@ -2280,7 +2470,7 @@ Partial Class TL_SaveEditor
         Me.value_conc.Size = New System.Drawing.Size(33, 16)
         Me.value_conc.TabIndex = 34
         Me.value_conc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_conc.Visible = False
+        Me.value_conc.Visible = false
         '
         'value_font
         '
@@ -2291,7 +2481,7 @@ Partial Class TL_SaveEditor
         Me.value_font.Size = New System.Drawing.Size(33, 16)
         Me.value_font.TabIndex = 33
         Me.value_font.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_font.Visible = False
+        Me.value_font.Visible = false
         '
         'value_chap
         '
@@ -2302,7 +2492,7 @@ Partial Class TL_SaveEditor
         Me.value_chap.Size = New System.Drawing.Size(33, 16)
         Me.value_chap.TabIndex = 32
         Me.value_chap.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_chap.Visible = False
+        Me.value_chap.Visible = false
         '
         'value_parc
         '
@@ -2313,7 +2503,7 @@ Partial Class TL_SaveEditor
         Me.value_parc.Size = New System.Drawing.Size(33, 16)
         Me.value_parc.TabIndex = 31
         Me.value_parc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_parc.Visible = False
+        Me.value_parc.Visible = false
         '
         'value_mais
         '
@@ -2324,7 +2514,7 @@ Partial Class TL_SaveEditor
         Me.value_mais.Size = New System.Drawing.Size(33, 16)
         Me.value_mais.TabIndex = 30
         Me.value_mais.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_mais.Visible = False
+        Me.value_mais.Visible = false
         '
         'value_mair
         '
@@ -2335,7 +2525,7 @@ Partial Class TL_SaveEditor
         Me.value_mair.Size = New System.Drawing.Size(33, 16)
         Me.value_mair.TabIndex = 29
         Me.value_mair.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_mair.Visible = False
+        Me.value_mair.Visible = false
         '
         'value_appart
         '
@@ -2346,7 +2536,7 @@ Partial Class TL_SaveEditor
         Me.value_appart.Size = New System.Drawing.Size(33, 16)
         Me.value_appart.TabIndex = 28
         Me.value_appart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_appart.Visible = False
+        Me.value_appart.Visible = false
         '
         'value_broc
         '
@@ -2357,7 +2547,7 @@ Partial Class TL_SaveEditor
         Me.value_broc.Size = New System.Drawing.Size(33, 16)
         Me.value_broc.TabIndex = 27
         Me.value_broc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_broc.Visible = False
+        Me.value_broc.Visible = false
         '
         'value_info
         '
@@ -2368,7 +2558,7 @@ Partial Class TL_SaveEditor
         Me.value_info.Size = New System.Drawing.Size(33, 16)
         Me.value_info.TabIndex = 26
         Me.value_info.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_info.Visible = False
+        Me.value_info.Visible = false
         '
         'value_parc1
         '
@@ -2379,7 +2569,7 @@ Partial Class TL_SaveEditor
         Me.value_parc1.Size = New System.Drawing.Size(33, 16)
         Me.value_parc1.TabIndex = 25
         Me.value_parc1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_parc1.Visible = False
+        Me.value_parc1.Visible = false
         '
         'value_tour
         '
@@ -2390,7 +2580,7 @@ Partial Class TL_SaveEditor
         Me.value_tour.Size = New System.Drawing.Size(33, 16)
         Me.value_tour.TabIndex = 24
         Me.value_tour.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_tour.Visible = False
+        Me.value_tour.Visible = false
         '
         'value_deco
         '
@@ -2401,7 +2591,7 @@ Partial Class TL_SaveEditor
         Me.value_deco.Size = New System.Drawing.Size(33, 16)
         Me.value_deco.TabIndex = 2
         Me.value_deco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_deco.Visible = False
+        Me.value_deco.Visible = false
         '
         'value_vetem
         '
@@ -2412,7 +2602,7 @@ Partial Class TL_SaveEditor
         Me.value_vetem.Size = New System.Drawing.Size(33, 16)
         Me.value_vetem.TabIndex = 1
         Me.value_vetem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.value_vetem.Visible = False
+        Me.value_vetem.Visible = false
         '
         'Icon_vetem
         '
@@ -2422,7 +2612,7 @@ Partial Class TL_SaveEditor
         Me.Icon_vetem.Name = "Icon_vetem"
         Me.Icon_vetem.Size = New System.Drawing.Size(41, 41)
         Me.Icon_vetem.TabIndex = 23
-        Me.Icon_vetem.TabStop = False
+        Me.Icon_vetem.TabStop = false
         '
         'Icon_tour
         '
@@ -2432,7 +2622,7 @@ Partial Class TL_SaveEditor
         Me.Icon_tour.Name = "Icon_tour"
         Me.Icon_tour.Size = New System.Drawing.Size(42, 41)
         Me.Icon_tour.TabIndex = 22
-        Me.Icon_tour.TabStop = False
+        Me.Icon_tour.TabStop = false
         '
         'Icon_part
         '
@@ -2442,7 +2632,7 @@ Partial Class TL_SaveEditor
         Me.Icon_part.Name = "Icon_part"
         Me.Icon_part.Size = New System.Drawing.Size(43, 41)
         Me.Icon_part.TabIndex = 21
-        Me.Icon_part.TabStop = False
+        Me.Icon_part.TabStop = false
         '
         'Icon_test
         '
@@ -2452,7 +2642,7 @@ Partial Class TL_SaveEditor
         Me.Icon_test.Name = "Icon_test"
         Me.Icon_test.Size = New System.Drawing.Size(41, 40)
         Me.Icon_test.TabIndex = 20
-        Me.Icon_test.TabStop = False
+        Me.Icon_test.TabStop = false
         '
         'Icon_tervague
         '
@@ -2462,7 +2652,7 @@ Partial Class TL_SaveEditor
         Me.Icon_tervague.Name = "Icon_tervague"
         Me.Icon_tervague.Size = New System.Drawing.Size(41, 40)
         Me.Icon_tervague.TabIndex = 19
-        Me.Icon_tervague.TabStop = False
+        Me.Icon_tervague.TabStop = false
         '
         'Icon_stud
         '
@@ -2472,7 +2662,7 @@ Partial Class TL_SaveEditor
         Me.Icon_stud.Name = "Icon_stud"
         Me.Icon_stud.Size = New System.Drawing.Size(41, 40)
         Me.Icon_stud.TabIndex = 18
-        Me.Icon_stud.TabStop = False
+        Me.Icon_stud.TabStop = false
         '
         'Icon_port
         '
@@ -2482,7 +2672,7 @@ Partial Class TL_SaveEditor
         Me.Icon_port.Name = "Icon_port"
         Me.Icon_port.Size = New System.Drawing.Size(42, 41)
         Me.Icon_port.TabIndex = 17
-        Me.Icon_port.TabStop = False
+        Me.Icon_port.TabStop = false
         '
         'Icon_plage
         '
@@ -2492,7 +2682,7 @@ Partial Class TL_SaveEditor
         Me.Icon_plage.Name = "Icon_plage"
         Me.Icon_plage.Size = New System.Drawing.Size(41, 40)
         Me.Icon_plage.TabIndex = 16
-        Me.Icon_plage.TabStop = False
+        Me.Icon_plage.TabStop = false
         '
         'Icon_parc
         '
@@ -2502,7 +2692,7 @@ Partial Class TL_SaveEditor
         Me.Icon_parc.Name = "Icon_parc"
         Me.Icon_parc.Size = New System.Drawing.Size(40, 40)
         Me.Icon_parc.TabIndex = 15
-        Me.Icon_parc.TabStop = False
+        Me.Icon_parc.TabStop = false
         '
         'Icon_parc1
         '
@@ -2512,7 +2702,7 @@ Partial Class TL_SaveEditor
         Me.Icon_parc1.Name = "Icon_parc1"
         Me.Icon_parc1.Size = New System.Drawing.Size(40, 39)
         Me.Icon_parc1.TabIndex = 14
-        Me.Icon_parc1.TabStop = False
+        Me.Icon_parc1.TabStop = false
         '
         'Icon_mais
         '
@@ -2522,7 +2712,7 @@ Partial Class TL_SaveEditor
         Me.Icon_mais.Name = "Icon_mais"
         Me.Icon_mais.Size = New System.Drawing.Size(48, 48)
         Me.Icon_mais.TabIndex = 13
-        Me.Icon_mais.TabStop = False
+        Me.Icon_mais.TabStop = false
         '
         'Icon_mair
         '
@@ -2532,7 +2722,7 @@ Partial Class TL_SaveEditor
         Me.Icon_mair.Name = "Icon_mair"
         Me.Icon_mair.Size = New System.Drawing.Size(49, 48)
         Me.Icon_mair.TabIndex = 12
-        Me.Icon_mair.TabStop = False
+        Me.Icon_mair.TabStop = false
         '
         'Icon_magimport
         '
@@ -2542,7 +2732,7 @@ Partial Class TL_SaveEditor
         Me.Icon_magimport.Name = "Icon_magimport"
         Me.Icon_magimport.Size = New System.Drawing.Size(41, 40)
         Me.Icon_magimport.TabIndex = 11
-        Me.Icon_magimport.TabStop = False
+        Me.Icon_magimport.TabStop = false
         '
         'Icon_info
         '
@@ -2552,7 +2742,7 @@ Partial Class TL_SaveEditor
         Me.Icon_info.Name = "Icon_info"
         Me.Icon_info.Size = New System.Drawing.Size(44, 58)
         Me.Icon_info.TabIndex = 10
-        Me.Icon_info.TabStop = False
+        Me.Icon_info.TabStop = false
         '
         'Icon_font
         '
@@ -2562,7 +2752,7 @@ Partial Class TL_SaveEditor
         Me.Icon_font.Name = "Icon_font"
         Me.Icon_font.Size = New System.Drawing.Size(41, 40)
         Me.Icon_font.TabIndex = 9
-        Me.Icon_font.TabStop = False
+        Me.Icon_font.TabStop = false
         '
         'Icon_epicer
         '
@@ -2572,7 +2762,7 @@ Partial Class TL_SaveEditor
         Me.Icon_epicer.Name = "Icon_epicer"
         Me.Icon_epicer.Size = New System.Drawing.Size(41, 40)
         Me.Icon_epicer.TabIndex = 8
-        Me.Icon_epicer.TabStop = False
+        Me.Icon_epicer.TabStop = false
         '
         'Icon_deco
         '
@@ -2582,7 +2772,7 @@ Partial Class TL_SaveEditor
         Me.Icon_deco.Name = "Icon_deco"
         Me.Icon_deco.Size = New System.Drawing.Size(40, 40)
         Me.Icon_deco.TabIndex = 7
-        Me.Icon_deco.TabStop = False
+        Me.Icon_deco.TabStop = false
         '
         'Icon_conc
         '
@@ -2592,7 +2782,7 @@ Partial Class TL_SaveEditor
         Me.Icon_conc.Name = "Icon_conc"
         Me.Icon_conc.Size = New System.Drawing.Size(40, 40)
         Me.Icon_conc.TabIndex = 6
-        Me.Icon_conc.TabStop = False
+        Me.Icon_conc.TabStop = false
         '
         'Icon_classem
         '
@@ -2602,7 +2792,7 @@ Partial Class TL_SaveEditor
         Me.Icon_classem.Name = "Icon_classem"
         Me.Icon_classem.Size = New System.Drawing.Size(40, 40)
         Me.Icon_classem.TabIndex = 5
-        Me.Icon_classem.TabStop = False
+        Me.Icon_classem.TabStop = false
         '
         'Icon_chap
         '
@@ -2612,7 +2802,7 @@ Partial Class TL_SaveEditor
         Me.Icon_chap.Name = "Icon_chap"
         Me.Icon_chap.Size = New System.Drawing.Size(41, 40)
         Me.Icon_chap.TabIndex = 4
-        Me.Icon_chap.TabStop = False
+        Me.Icon_chap.TabStop = false
         '
         'Icon_cafe
         '
@@ -2622,7 +2812,7 @@ Partial Class TL_SaveEditor
         Me.Icon_cafe.Name = "Icon_cafe"
         Me.Icon_cafe.Size = New System.Drawing.Size(41, 40)
         Me.Icon_cafe.TabIndex = 3
-        Me.Icon_cafe.TabStop = False
+        Me.Icon_cafe.TabStop = false
         '
         'Icon_broc
         '
@@ -2632,7 +2822,7 @@ Partial Class TL_SaveEditor
         Me.Icon_broc.Name = "Icon_broc"
         Me.Icon_broc.Size = New System.Drawing.Size(41, 41)
         Me.Icon_broc.TabIndex = 2
-        Me.Icon_broc.TabStop = False
+        Me.Icon_broc.TabStop = false
         '
         'Icon_appart
         '
@@ -2642,17 +2832,17 @@ Partial Class TL_SaveEditor
         Me.Icon_appart.Name = "Icon_appart"
         Me.Icon_appart.Size = New System.Drawing.Size(65, 59)
         Me.Icon_appart.TabIndex = 1
-        Me.Icon_appart.TabStop = False
+        Me.Icon_appart.TabStop = false
         '
         'Icon_resetmiiapart
         '
         Me.Icon_resetmiiapart.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetmiiapart.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_apartmii
-        Me.Icon_resetmiiapart.Location = New System.Drawing.Point(15, 170)
+        Me.Icon_resetmiiapart.Location = New System.Drawing.Point(15, 173)
         Me.Icon_resetmiiapart.Name = "Icon_resetmiiapart"
         Me.Icon_resetmiiapart.Size = New System.Drawing.Size(75, 25)
         Me.Icon_resetmiiapart.TabIndex = 65
-        Me.Icon_resetmiiapart.TabStop = False
+        Me.Icon_resetmiiapart.TabStop = false
         '
         'File_path
         '
@@ -2664,7 +2854,7 @@ Partial Class TL_SaveEditor
         Me.File_path.Name = "File_path"
         Me.File_path.Size = New System.Drawing.Size(31, 25)
         Me.File_path.TabIndex = 18
-        Me.File_path.Visible = False
+        Me.File_path.Visible = false
         '
         'Icon_path
         '
@@ -2674,7 +2864,7 @@ Partial Class TL_SaveEditor
         Me.Icon_path.Name = "Icon_path"
         Me.Icon_path.Size = New System.Drawing.Size(31, 25)
         Me.Icon_path.TabIndex = 0
-        Me.Icon_path.TabStop = False
+        Me.Icon_path.TabStop = false
         '
         'TextBox_fpath
         '
@@ -2682,10 +2872,10 @@ Partial Class TL_SaveEditor
         Me.TextBox_fpath.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox_fpath.Location = New System.Drawing.Point(53, 61)
         Me.TextBox_fpath.Name = "TextBox_fpath"
-        Me.TextBox_fpath.ReadOnly = True
+        Me.TextBox_fpath.ReadOnly = true
         Me.TextBox_fpath.Size = New System.Drawing.Size(494, 13)
         Me.TextBox_fpath.TabIndex = 0
-        Me.TextBox_fpath.Visible = False
+        Me.TextBox_fpath.Visible = false
         '
         'Panel_filever
         '
@@ -2702,7 +2892,7 @@ Partial Class TL_SaveEditor
         Me.Filever_text.BackColor = System.Drawing.Color.Transparent
         Me.Filever_text.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Filever_text.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Filever_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Filever_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Filever_text.ForeColor = System.Drawing.Color.White
         Me.Filever_text.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Filever_text.Location = New System.Drawing.Point(0, 0)
@@ -2721,14 +2911,14 @@ Partial Class TL_SaveEditor
         Me.Hidden_things.Name = "Hidden_things"
         Me.Hidden_things.Size = New System.Drawing.Size(31, 25)
         Me.Hidden_things.TabIndex = 19
-        Me.Hidden_things.Visible = False
+        Me.Hidden_things.Visible = false
         '
         'Hidden_text
         '
         Me.Hidden_text.BackColor = System.Drawing.Color.Transparent
         Me.Hidden_text.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Hidden_text.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Hidden_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Hidden_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Hidden_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Hidden_text.Location = New System.Drawing.Point(0, 0)
         Me.Hidden_text.Name = "Hidden_text"
@@ -2746,7 +2936,7 @@ Partial Class TL_SaveEditor
         Me.Panel_music.Name = "Panel_music"
         Me.Panel_music.Size = New System.Drawing.Size(31, 25)
         Me.Panel_music.TabIndex = 21
-        Me.Panel_music.Visible = False
+        Me.Panel_music.Visible = false
         '
         'Icon_music
         '
@@ -2757,12 +2947,13 @@ Partial Class TL_SaveEditor
         Me.Icon_music.Size = New System.Drawing.Size(31, 25)
         Me.Icon_music.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Icon_music.TabIndex = 0
-        Me.Icon_music.TabStop = False
+        Me.Icon_music.TabStop = false
         '
         'Panel_menu_opensave
         '
         Me.Panel_menu_opensave.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_menu_opensave.BackgroundImage = CType(resources.GetObject("Panel_menu_opensave.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_menu_opensave.BackgroundImage = CType(resources.GetObject("Panel_menu_opensave.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_menu_opensave.Controls.Add(Me.PictureBox68)
         Me.Panel_menu_opensave.Controls.Add(Me.Text_menu_save)
         Me.Panel_menu_opensave.Controls.Add(Me.Text_menu_open)
         Me.Panel_menu_opensave.Location = New System.Drawing.Point(135, 33)
@@ -2775,7 +2966,7 @@ Partial Class TL_SaveEditor
         Me.Text_menu_save.BackColor = System.Drawing.Color.Transparent
         Me.Text_menu_save.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_save.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_menu_save.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_menu_save.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Text_menu_save.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_menu_save.ImageAlign = System.Drawing.ContentAlignment.TopCenter
         Me.Text_menu_save.ImageList = Me.ImageList1
@@ -2785,11 +2976,11 @@ Partial Class TL_SaveEditor
         Me.Text_menu_save.TabIndex = 1
         Me.Text_menu_save.Text = "Save"
         Me.Text_menu_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Text_menu_save.Visible = False
+        Me.Text_menu_save.Visible = false
         '
         'ImageList1
         '
-        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"),System.Windows.Forms.ImageListStreamer)
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList1.Images.SetKeyName(0, "icon_mii_edit.png")
         Me.ImageList1.Images.SetKeyName(1, "icon_mii_friendlist.png")
@@ -2803,7 +2994,7 @@ Partial Class TL_SaveEditor
         Me.Text_menu_open.BackColor = System.Drawing.Color.Transparent
         Me.Text_menu_open.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_open.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_menu_open.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_menu_open.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Text_menu_open.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_menu_open.ImageAlign = System.Drawing.ContentAlignment.TopLeft
         Me.Text_menu_open.ImageList = Me.ImageList1
@@ -2817,6 +3008,16 @@ Partial Class TL_SaveEditor
         'Panel_extras
         '
         Me.Panel_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_extras.Controls.Add(Me.PictureBox66)
+        Me.Panel_extras.Controls.Add(Me.PictureBox65)
+        Me.Panel_extras.Controls.Add(Me.PictureBox64)
+        Me.Panel_extras.Controls.Add(Me.PictureBox63)
+        Me.Panel_extras.Controls.Add(Me.PictureBox62)
+        Me.Panel_extras.Controls.Add(Me.PictureBox61)
+        Me.Panel_extras.Controls.Add(Me.PictureBox60)
+        Me.Panel_extras.Controls.Add(Me.PictureBox59)
+        Me.Panel_extras.Controls.Add(Me.Check_resetrelationship)
+        Me.Panel_extras.Controls.Add(Me.Icon_resetrelationship)
         Me.Panel_extras.Controls.Add(Me.Check_resetitems)
         Me.Panel_extras.Controls.Add(Me.Icon_resetitems)
         Me.Panel_extras.Controls.Add(Me.Check_resetnewsflash)
@@ -2833,12 +3034,41 @@ Partial Class TL_SaveEditor
         Me.Panel_extras.Name = "Panel_extras"
         Me.Panel_extras.Size = New System.Drawing.Size(600, 490)
         Me.Panel_extras.TabIndex = 24
-        Me.Panel_extras.Visible = False
+        Me.Panel_extras.Visible = false
+        '
+        'Check_resetrelationship
+        '
+        Me.Check_resetrelationship.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_resetrelationship.AutoSize = true
+        Me.Check_resetrelationship.BackColor = System.Drawing.Color.White
+        Me.Check_resetrelationship.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_resetrelationship.FlatAppearance.BorderSize = 0
+        Me.Check_resetrelationship.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_resetrelationship.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_resetrelationship.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_resetrelationship.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_resetrelationship.Location = New System.Drawing.Point(96, 321)
+        Me.Check_resetrelationship.Name = "Check_resetrelationship"
+        Me.Check_resetrelationship.Size = New System.Drawing.Size(150, 23)
+        Me.Check_resetrelationship.TabIndex = 72
+        Me.Check_resetrelationship.Text = "Reset all friend's relationship"
+        Me.Check_resetrelationship.UseVisualStyleBackColor = false
+        '
+        'Icon_resetrelationship
+        '
+        Me.Icon_resetrelationship.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_resetrelationship.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_relationship
+        Me.Icon_resetrelationship.Location = New System.Drawing.Point(50, 312)
+        Me.Icon_resetrelationship.Name = "Icon_resetrelationship"
+        Me.Icon_resetrelationship.Size = New System.Drawing.Size(40, 40)
+        Me.Icon_resetrelationship.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_resetrelationship.TabIndex = 71
+        Me.Icon_resetrelationship.TabStop = false
         '
         'Check_resetitems
         '
         Me.Check_resetitems.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Check_resetitems.AutoSize = True
+        Me.Check_resetitems.AutoSize = true
         Me.Check_resetitems.BackColor = System.Drawing.Color.White
         Me.Check_resetitems.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Check_resetitems.FlatAppearance.BorderSize = 0
@@ -2846,28 +3076,28 @@ Partial Class TL_SaveEditor
         Me.Check_resetitems.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetitems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetitems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetitems.Location = New System.Drawing.Point(95, 271)
+        Me.Check_resetitems.Location = New System.Drawing.Point(95, 272)
         Me.Check_resetitems.Name = "Check_resetitems"
         Me.Check_resetitems.Size = New System.Drawing.Size(85, 23)
         Me.Check_resetitems.TabIndex = 70
         Me.Check_resetitems.Text = "Reset all items"
-        Me.Check_resetitems.UseVisualStyleBackColor = False
+        Me.Check_resetitems.UseVisualStyleBackColor = false
         '
         'Icon_resetitems
         '
         Me.Icon_resetitems.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetitems.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_items
-        Me.Icon_resetitems.Location = New System.Drawing.Point(49, 262)
+        Me.Icon_resetitems.Location = New System.Drawing.Point(49, 263)
         Me.Icon_resetitems.Name = "Icon_resetitems"
         Me.Icon_resetitems.Size = New System.Drawing.Size(40, 40)
         Me.Icon_resetitems.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_resetitems.TabIndex = 69
-        Me.Icon_resetitems.TabStop = False
+        Me.Icon_resetitems.TabStop = false
         '
         'Check_resetnewsflash
         '
         Me.Check_resetnewsflash.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Check_resetnewsflash.AutoSize = True
+        Me.Check_resetnewsflash.AutoSize = true
         Me.Check_resetnewsflash.BackColor = System.Drawing.Color.White
         Me.Check_resetnewsflash.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Check_resetnewsflash.FlatAppearance.BorderSize = 0
@@ -2875,28 +3105,28 @@ Partial Class TL_SaveEditor
         Me.Check_resetnewsflash.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetnewsflash.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetnewsflash.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetnewsflash.Location = New System.Drawing.Point(95, 221)
+        Me.Check_resetnewsflash.Location = New System.Drawing.Point(95, 223)
         Me.Check_resetnewsflash.Name = "Check_resetnewsflash"
         Me.Check_resetnewsflash.Size = New System.Drawing.Size(103, 23)
         Me.Check_resetnewsflash.TabIndex = 68
         Me.Check_resetnewsflash.Text = "Reset News Flash"
-        Me.Check_resetnewsflash.UseVisualStyleBackColor = False
+        Me.Check_resetnewsflash.UseVisualStyleBackColor = false
         '
         'Icon_resetnewsflash
         '
         Me.Icon_resetnewsflash.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetnewsflash.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_newsflash
-        Me.Icon_resetnewsflash.Location = New System.Drawing.Point(4, 220)
+        Me.Icon_resetnewsflash.Location = New System.Drawing.Point(4, 222)
         Me.Icon_resetnewsflash.Name = "Icon_resetnewsflash"
         Me.Icon_resetnewsflash.Size = New System.Drawing.Size(86, 25)
         Me.Icon_resetnewsflash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_resetnewsflash.TabIndex = 67
-        Me.Icon_resetnewsflash.TabStop = False
+        Me.Icon_resetnewsflash.TabStop = false
         '
         'Check_resetmiiapart
         '
         Me.Check_resetmiiapart.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Check_resetmiiapart.AutoSize = True
+        Me.Check_resetmiiapart.AutoSize = true
         Me.Check_resetmiiapart.BackColor = System.Drawing.Color.White
         Me.Check_resetmiiapart.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Check_resetmiiapart.FlatAppearance.BorderSize = 0
@@ -2904,12 +3134,12 @@ Partial Class TL_SaveEditor
         Me.Check_resetmiiapart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetmiiapart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetmiiapart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetmiiapart.Location = New System.Drawing.Point(95, 171)
+        Me.Check_resetmiiapart.Location = New System.Drawing.Point(95, 174)
         Me.Check_resetmiiapart.Name = "Check_resetmiiapart"
         Me.Check_resetmiiapart.Size = New System.Drawing.Size(116, 23)
         Me.Check_resetmiiapart.TabIndex = 66
         Me.Check_resetmiiapart.Text = "Reset Miis apartment"
-        Me.Check_resetmiiapart.UseVisualStyleBackColor = False
+        Me.Check_resetmiiapart.UseVisualStyleBackColor = false
         '
         'Fea_edit_concert
         '
@@ -2917,7 +3147,7 @@ Partial Class TL_SaveEditor
         Me.Fea_edit_concert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Fea_edit_concert.Controls.Add(Me.Icon_edit_concert)
         Me.Fea_edit_concert.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Fea_edit_concert.Location = New System.Drawing.Point(441, 158)
+        Me.Fea_edit_concert.Location = New System.Drawing.Point(438, 158)
         Me.Fea_edit_concert.Name = "Fea_edit_concert"
         Me.Fea_edit_concert.Size = New System.Drawing.Size(137, 60)
         Me.Fea_edit_concert.TabIndex = 9
@@ -2925,14 +3155,14 @@ Partial Class TL_SaveEditor
         'Icon_edit_concert
         '
         Me.Icon_edit_concert.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_edit_concert.BackgroundImage = CType(resources.GetObject("Icon_edit_concert.BackgroundImage"), System.Drawing.Image)
+        Me.Icon_edit_concert.BackgroundImage = CType(resources.GetObject("Icon_edit_concert.BackgroundImage"),System.Drawing.Image)
         Me.Icon_edit_concert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Icon_edit_concert.Enabled = False
+        Me.Icon_edit_concert.Enabled = false
         Me.Icon_edit_concert.Location = New System.Drawing.Point(3, 3)
         Me.Icon_edit_concert.Name = "Icon_edit_concert"
         Me.Icon_edit_concert.Size = New System.Drawing.Size(130, 54)
         Me.Icon_edit_concert.TabIndex = 0
-        Me.Icon_edit_concert.TabStop = False
+        Me.Icon_edit_concert.TabStop = false
         '
         'Fea_edit_travelers
         '
@@ -2940,7 +3170,7 @@ Partial Class TL_SaveEditor
         Me.Fea_edit_travelers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Fea_edit_travelers.Controls.Add(Me.Icon_edit_travelers)
         Me.Fea_edit_travelers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Fea_edit_travelers.Location = New System.Drawing.Point(479, 53)
+        Me.Fea_edit_travelers.Location = New System.Drawing.Point(476, 53)
         Me.Fea_edit_travelers.Name = "Fea_edit_travelers"
         Me.Fea_edit_travelers.Size = New System.Drawing.Size(60, 60)
         Me.Fea_edit_travelers.TabIndex = 8
@@ -2948,19 +3178,19 @@ Partial Class TL_SaveEditor
         'Icon_edit_travelers
         '
         Me.Icon_edit_travelers.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_edit_travelers.BackgroundImage = CType(resources.GetObject("Icon_edit_travelers.BackgroundImage"), System.Drawing.Image)
+        Me.Icon_edit_travelers.BackgroundImage = CType(resources.GetObject("Icon_edit_travelers.BackgroundImage"),System.Drawing.Image)
         Me.Icon_edit_travelers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Icon_edit_travelers.Enabled = False
+        Me.Icon_edit_travelers.Enabled = false
         Me.Icon_edit_travelers.Location = New System.Drawing.Point(7, 3)
         Me.Icon_edit_travelers.Name = "Icon_edit_travelers"
         Me.Icon_edit_travelers.Size = New System.Drawing.Size(46, 54)
         Me.Icon_edit_travelers.TabIndex = 0
-        Me.Icon_edit_travelers.TabStop = False
+        Me.Icon_edit_travelers.TabStop = false
         '
         'Check_resetstpspp
         '
         Me.Check_resetstpspp.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Check_resetstpspp.AutoSize = True
+        Me.Check_resetstpspp.AutoSize = true
         Me.Check_resetstpspp.BackColor = System.Drawing.Color.White
         Me.Check_resetstpspp.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Check_resetstpspp.FlatAppearance.BorderSize = 0
@@ -2968,28 +3198,28 @@ Partial Class TL_SaveEditor
         Me.Check_resetstpspp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetstpspp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetstpspp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetstpspp.Location = New System.Drawing.Point(95, 124)
+        Me.Check_resetstpspp.Location = New System.Drawing.Point(95, 125)
         Me.Check_resetstpspp.Name = "Check_resetstpspp"
         Me.Check_resetstpspp.Size = New System.Drawing.Size(229, 23)
         Me.Check_resetstpspp.TabIndex = 3
         Me.Check_resetstpspp.Text = "Reset Tomodachi Life Streetpass / Spotpass"
-        Me.Check_resetstpspp.UseVisualStyleBackColor = False
+        Me.Check_resetstpspp.UseVisualStyleBackColor = false
         '
         'Icon_resetstpspp
         '
         Me.Icon_resetstpspp.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetstpspp.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_stpspp
-        Me.Icon_resetstpspp.Location = New System.Drawing.Point(57, 123)
+        Me.Icon_resetstpspp.Location = New System.Drawing.Point(57, 124)
         Me.Icon_resetstpspp.Name = "Icon_resetstpspp"
         Me.Icon_resetstpspp.Size = New System.Drawing.Size(32, 25)
         Me.Icon_resetstpspp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Icon_resetstpspp.TabIndex = 2
-        Me.Icon_resetstpspp.TabStop = False
+        Me.Icon_resetstpspp.TabStop = false
         '
         'Check_timetravel
         '
         Me.Check_timetravel.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Check_timetravel.AutoSize = True
+        Me.Check_timetravel.AutoSize = true
         Me.Check_timetravel.BackColor = System.Drawing.Color.White
         Me.Check_timetravel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Check_timetravel.FlatAppearance.BorderSize = 0
@@ -3002,7 +3232,7 @@ Partial Class TL_SaveEditor
         Me.Check_timetravel.Size = New System.Drawing.Size(155, 23)
         Me.Check_timetravel.TabIndex = 1
         Me.Check_timetravel.Text = "Remove Time Travel penality"
-        Me.Check_timetravel.UseVisualStyleBackColor = False
+        Me.Check_timetravel.UseVisualStyleBackColor = false
         '
         'Icon_timetravel
         '
@@ -3013,7 +3243,7 @@ Partial Class TL_SaveEditor
         Me.Icon_timetravel.Size = New System.Drawing.Size(25, 25)
         Me.Icon_timetravel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Icon_timetravel.TabIndex = 0
-        Me.Icon_timetravel.TabStop = False
+        Me.Icon_timetravel.TabStop = false
         '
         'TLSE_logo_update
         '
@@ -3026,18 +3256,18 @@ Partial Class TL_SaveEditor
         Me.TLSE_logo_update.Size = New System.Drawing.Size(66, 60)
         Me.TLSE_logo_update.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.TLSE_logo_update.TabIndex = 25
-        Me.TLSE_logo_update.TabStop = False
-        Me.TLSE_logo_update.Visible = False
+        Me.TLSE_logo_update.TabStop = false
+        Me.TLSE_logo_update.Visible = false
         '
         'Panel_settings
         '
-        Me.Panel_settings.BackgroundImage = CType(resources.GetObject("Panel_settings.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_settings.BackgroundImage = CType(resources.GetObject("Panel_settings.BackgroundImage"),System.Drawing.Image)
         Me.Panel_settings.Controls.Add(Me.TabControl_settings)
         Me.Panel_settings.Location = New System.Drawing.Point(0, 60)
         Me.Panel_settings.Name = "Panel_settings"
         Me.Panel_settings.Size = New System.Drawing.Size(600, 490)
         Me.Panel_settings.TabIndex = 26
-        Me.Panel_settings.Visible = False
+        Me.Panel_settings.Visible = false
         '
         'TabControl_settings
         '
@@ -3047,7 +3277,7 @@ Partial Class TL_SaveEditor
         Me.TabControl_settings.Controls.Add(Me.Settings_credits)
         Me.TabControl_settings.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl_settings.Location = New System.Drawing.Point(0, 0)
-        Me.TabControl_settings.Multiline = True
+        Me.TabControl_settings.Multiline = true
         Me.TabControl_settings.Name = "TabControl_settings"
         Me.TabControl_settings.SelectedIndex = 0
         Me.TabControl_settings.Size = New System.Drawing.Size(600, 490)
@@ -3055,7 +3285,8 @@ Partial Class TL_SaveEditor
         '
         'Settings_settings
         '
-        Me.Settings_settings.BackgroundImage = CType(resources.GetObject("Settings_settings.BackgroundImage"), System.Drawing.Image)
+        Me.Settings_settings.BackgroundImage = CType(resources.GetObject("Settings_settings.BackgroundImage"),System.Drawing.Image)
+        Me.Settings_settings.Controls.Add(Me.Panel14)
         Me.Settings_settings.Controls.Add(Me.Panel30)
         Me.Settings_settings.Controls.Add(Me.Panel9)
         Me.Settings_settings.Controls.Add(Me.Panel1)
@@ -3067,28 +3298,49 @@ Partial Class TL_SaveEditor
         Me.Settings_settings.Size = New System.Drawing.Size(592, 464)
         Me.Settings_settings.TabIndex = 0
         Me.Settings_settings.Text = "Settings"
-        Me.Settings_settings.UseVisualStyleBackColor = True
+        Me.Settings_settings.UseVisualStyleBackColor = true
+        '
+        'Panel14
+        '
+        Me.Panel14.BackColor = System.Drawing.Color.White
+        Me.Panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel14.Controls.Add(Me.Setting_Advhelp)
+        Me.Panel14.Location = New System.Drawing.Point(166, 315)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(260, 24)
+        Me.Panel14.TabIndex = 15
+        '
+        'Setting_Advhelp
+        '
+        Me.Setting_Advhelp.AutoSize = true
+        Me.Setting_Advhelp.BackColor = System.Drawing.Color.Transparent
+        Me.Setting_Advhelp.Location = New System.Drawing.Point(5, 4)
+        Me.Setting_Advhelp.Name = "Setting_Advhelp"
+        Me.Setting_Advhelp.Size = New System.Drawing.Size(121, 17)
+        Me.Setting_Advhelp.TabIndex = 1
+        Me.Setting_Advhelp.Text = "Show advance help"
+        Me.Setting_Advhelp.UseVisualStyleBackColor = false
         '
         'Panel30
         '
         Me.Panel30.BackColor = System.Drawing.Color.White
         Me.Panel30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel30.Controls.Add(Me.Setting_ckupdate)
-        Me.Panel30.Location = New System.Drawing.Point(166, 258)
+        Me.Panel30.Location = New System.Drawing.Point(166, 239)
         Me.Panel30.Name = "Panel30"
         Me.Panel30.Size = New System.Drawing.Size(260, 24)
         Me.Panel30.TabIndex = 14
         '
         'Setting_ckupdate
         '
-        Me.Setting_ckupdate.AutoSize = True
+        Me.Setting_ckupdate.AutoSize = true
         Me.Setting_ckupdate.BackColor = System.Drawing.Color.Transparent
         Me.Setting_ckupdate.Location = New System.Drawing.Point(4, 4)
         Me.Setting_ckupdate.Name = "Setting_ckupdate"
         Me.Setting_ckupdate.Size = New System.Drawing.Size(143, 17)
         Me.Setting_ckupdate.TabIndex = 2
         Me.Setting_ckupdate.Text = "Unactive check updates"
-        Me.Setting_ckupdate.UseVisualStyleBackColor = False
+        Me.Setting_ckupdate.UseVisualStyleBackColor = false
         '
         'Panel9
         '
@@ -3096,14 +3348,14 @@ Partial Class TL_SaveEditor
         Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel9.Controls.Add(Me.Text_language)
         Me.Panel9.Controls.Add(Me.Select_language)
-        Me.Panel9.Location = New System.Drawing.Point(166, 296)
+        Me.Panel9.Location = New System.Drawing.Point(166, 277)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(260, 24)
         Me.Panel9.TabIndex = 13
         '
         'Text_language
         '
-        Me.Text_language.AutoSize = True
+        Me.Text_language.AutoSize = true
         Me.Text_language.BackColor = System.Drawing.Color.Transparent
         Me.Text_language.Location = New System.Drawing.Point(10, 5)
         Me.Text_language.Name = "Text_language"
@@ -3116,7 +3368,7 @@ Partial Class TL_SaveEditor
         Me.Select_language.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Select_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_language.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_language.FormattingEnabled = True
+        Me.Select_language.FormattingEnabled = true
         Me.Select_language.Items.AddRange(New Object() {"ENG", "FRA"})
         Me.Select_language.Location = New System.Drawing.Point(97, 2)
         Me.Select_language.Name = "Select_language"
@@ -3128,42 +3380,42 @@ Partial Class TL_SaveEditor
         Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Controls.Add(Me.Setting_filepath)
-        Me.Panel1.Location = New System.Drawing.Point(166, 220)
+        Me.Panel1.Location = New System.Drawing.Point(166, 201)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(260, 24)
         Me.Panel1.TabIndex = 12
         '
         'Setting_filepath
         '
-        Me.Setting_filepath.AutoSize = True
+        Me.Setting_filepath.AutoSize = true
         Me.Setting_filepath.BackColor = System.Drawing.Color.Transparent
         Me.Setting_filepath.Location = New System.Drawing.Point(4, 4)
         Me.Setting_filepath.Name = "Setting_filepath"
         Me.Setting_filepath.Size = New System.Drawing.Size(93, 17)
         Me.Setting_filepath.TabIndex = 2
         Me.Setting_filepath.Text = "Show file path"
-        Me.Setting_filepath.UseVisualStyleBackColor = False
+        Me.Setting_filepath.UseVisualStyleBackColor = false
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.White
         Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel4.Controls.Add(Me.Setting_hidden)
-        Me.Panel4.Location = New System.Drawing.Point(166, 182)
+        Me.Panel4.Location = New System.Drawing.Point(166, 163)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(260, 24)
         Me.Panel4.TabIndex = 11
         '
         'Setting_hidden
         '
-        Me.Setting_hidden.AutoSize = True
+        Me.Setting_hidden.AutoSize = true
         Me.Setting_hidden.BackColor = System.Drawing.Color.Transparent
         Me.Setting_hidden.Location = New System.Drawing.Point(5, 4)
         Me.Setting_hidden.Name = "Setting_hidden"
         Me.Setting_hidden.Size = New System.Drawing.Size(119, 17)
         Me.Setting_hidden.TabIndex = 1
         Me.Setting_hidden.Text = "Show hidden things"
-        Me.Setting_hidden.UseVisualStyleBackColor = False
+        Me.Setting_hidden.UseVisualStyleBackColor = false
         '
         'Panel10
         '
@@ -3171,7 +3423,7 @@ Partial Class TL_SaveEditor
         Me.Panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel10.Controls.Add(Me.Select_music)
         Me.Panel10.Controls.Add(Me.Setting_music)
-        Me.Panel10.Location = New System.Drawing.Point(166, 144)
+        Me.Panel10.Location = New System.Drawing.Point(166, 125)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(260, 24)
         Me.Panel10.TabIndex = 10
@@ -3181,7 +3433,7 @@ Partial Class TL_SaveEditor
         Me.Select_music.BackColor = System.Drawing.Color.White
         Me.Select_music.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_music.FormattingEnabled = True
+        Me.Select_music.FormattingEnabled = true
         Me.Select_music.Items.AddRange(New Object() {"1", "2", "3"})
         Me.Select_music.Location = New System.Drawing.Point(211, 2)
         Me.Select_music.Name = "Select_music"
@@ -3190,18 +3442,18 @@ Partial Class TL_SaveEditor
         '
         'Setting_music
         '
-        Me.Setting_music.AutoSize = True
+        Me.Setting_music.AutoSize = true
         Me.Setting_music.BackColor = System.Drawing.Color.Transparent
         Me.Setting_music.Location = New System.Drawing.Point(5, 4)
         Me.Setting_music.Name = "Setting_music"
         Me.Setting_music.Size = New System.Drawing.Size(146, 17)
         Me.Setting_music.TabIndex = 0
         Me.Setting_music.Text = "Active background music"
-        Me.Setting_music.UseVisualStyleBackColor = False
+        Me.Setting_music.UseVisualStyleBackColor = false
         '
         'Settings_changelog
         '
-        Me.Settings_changelog.BackgroundImage = CType(resources.GetObject("Settings_changelog.BackgroundImage"), System.Drawing.Image)
+        Me.Settings_changelog.BackgroundImage = CType(resources.GetObject("Settings_changelog.BackgroundImage"),System.Drawing.Image)
         Me.Settings_changelog.Controls.Add(Me.Group_changelog)
         Me.Settings_changelog.Location = New System.Drawing.Point(4, 4)
         Me.Settings_changelog.Name = "Settings_changelog"
@@ -3209,7 +3461,7 @@ Partial Class TL_SaveEditor
         Me.Settings_changelog.Size = New System.Drawing.Size(592, 464)
         Me.Settings_changelog.TabIndex = 1
         Me.Settings_changelog.Text = "Changelog"
-        Me.Settings_changelog.UseVisualStyleBackColor = True
+        Me.Settings_changelog.UseVisualStyleBackColor = true
         '
         'Group_changelog
         '
@@ -3222,7 +3474,7 @@ Partial Class TL_SaveEditor
         Me.Group_changelog.Name = "Group_changelog"
         Me.Group_changelog.Size = New System.Drawing.Size(483, 393)
         Me.Group_changelog.TabIndex = 2
-        Me.Group_changelog.TabStop = False
+        Me.Group_changelog.TabStop = false
         Me.Group_changelog.Text = "Changelog"
         '
         'Icon_changelog
@@ -3234,18 +3486,18 @@ Partial Class TL_SaveEditor
         Me.Icon_changelog.Size = New System.Drawing.Size(102, 90)
         Me.Icon_changelog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Icon_changelog.TabIndex = 2
-        Me.Icon_changelog.TabStop = False
+        Me.Icon_changelog.TabStop = false
         '
         'Changelog
         '
         Me.Changelog.BackColor = System.Drawing.Color.Transparent
-        Me.Changelog.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Changelog.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Changelog.Location = New System.Drawing.Point(9, 44)
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(468, 342)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = "Update Manual" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Add delete all items" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Lock edit tavelers and concert by region" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Up" & _
-    "date Tomodachi Life Save Editor's menu"
+        Me.Changelog.Text = "Update Tomodachi Life Save Editor's informations" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Add advance help in Settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "A" & _
+    "dd delete all friend's relationship"
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version
@@ -3255,12 +3507,12 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(471, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 3.0.4"
+        Me.Text_TLSE_version.Text = "Version 3.0.5"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
         '
-        Me.Settings_credits.BackgroundImage = CType(resources.GetObject("Settings_credits.BackgroundImage"), System.Drawing.Image)
+        Me.Settings_credits.BackgroundImage = CType(resources.GetObject("Settings_credits.BackgroundImage"),System.Drawing.Image)
         Me.Settings_credits.Controls.Add(Me.Label1)
         Me.Settings_credits.Controls.Add(Me.Panel11)
         Me.Settings_credits.Location = New System.Drawing.Point(4, 4)
@@ -3268,7 +3520,7 @@ Partial Class TL_SaveEditor
         Me.Settings_credits.Size = New System.Drawing.Size(592, 464)
         Me.Settings_credits.TabIndex = 2
         Me.Settings_credits.Text = "Credits"
-        Me.Settings_credits.UseVisualStyleBackColor = True
+        Me.Settings_credits.UseVisualStyleBackColor = true
         '
         'Label1
         '
@@ -3298,94 +3550,96 @@ Partial Class TL_SaveEditor
         'Icon_MarioPartyITSE
         '
         Me.Icon_MarioPartyITSE.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_MarioPartyITSE.Image = CType(resources.GetObject("Icon_MarioPartyITSE.Image"), System.Drawing.Image)
+        Me.Icon_MarioPartyITSE.Image = CType(resources.GetObject("Icon_MarioPartyITSE.Image"),System.Drawing.Image)
         Me.Icon_MarioPartyITSE.Location = New System.Drawing.Point(7, 342)
         Me.Icon_MarioPartyITSE.Name = "Icon_MarioPartyITSE"
         Me.Icon_MarioPartyITSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_MarioPartyITSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Icon_MarioPartyITSE.TabIndex = 7
-        Me.Icon_MarioPartyITSE.TabStop = False
+        Me.Icon_MarioPartyITSE.TabStop = false
         '
         'Icon_PaparMarioSSSE
         '
         Me.Icon_PaparMarioSSSE.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_PaparMarioSSSE.Image = CType(resources.GetObject("Icon_PaparMarioSSSE.Image"), System.Drawing.Image)
+        Me.Icon_PaparMarioSSSE.Image = CType(resources.GetObject("Icon_PaparMarioSSSE.Image"),System.Drawing.Image)
         Me.Icon_PaparMarioSSSE.Location = New System.Drawing.Point(7, 180)
         Me.Icon_PaparMarioSSSE.Name = "Icon_PaparMarioSSSE"
         Me.Icon_PaparMarioSSSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_PaparMarioSSSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Icon_PaparMarioSSSE.TabIndex = 6
-        Me.Icon_PaparMarioSSSE.TabStop = False
+        Me.Icon_PaparMarioSSSE.TabStop = false
         '
         'Icon_nintendogscatSE
         '
         Me.Icon_nintendogscatSE.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_nintendogscatSE.Image = CType(resources.GetObject("Icon_nintendogscatSE.Image"), System.Drawing.Image)
+        Me.Icon_nintendogscatSE.Image = CType(resources.GetObject("Icon_nintendogscatSE.Image"),System.Drawing.Image)
         Me.Icon_nintendogscatSE.Location = New System.Drawing.Point(7, 288)
         Me.Icon_nintendogscatSE.Name = "Icon_nintendogscatSE"
         Me.Icon_nintendogscatSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_nintendogscatSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Icon_nintendogscatSE.TabIndex = 5
-        Me.Icon_nintendogscatSE.TabStop = False
+        Me.Icon_nintendogscatSE.TabStop = false
         '
         'Icon_IronfallISE
         '
         Me.Icon_IronfallISE.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_IronfallISE.Image = CType(resources.GetObject("Icon_IronfallISE.Image"), System.Drawing.Image)
+        Me.Icon_IronfallISE.Image = CType(resources.GetObject("Icon_IronfallISE.Image"),System.Drawing.Image)
         Me.Icon_IronfallISE.Location = New System.Drawing.Point(7, 234)
         Me.Icon_IronfallISE.Name = "Icon_IronfallISE"
         Me.Icon_IronfallISE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_IronfallISE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Icon_IronfallISE.TabIndex = 4
-        Me.Icon_IronfallISE.TabStop = False
+        Me.Icon_IronfallISE.TabStop = false
         '
         'Icon_TLSE
         '
         Me.Icon_TLSE.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_TLSE.Image = CType(resources.GetObject("Icon_TLSE.Image"), System.Drawing.Image)
+        Me.Icon_TLSE.Image = CType(resources.GetObject("Icon_TLSE.Image"),System.Drawing.Image)
         Me.Icon_TLSE.Location = New System.Drawing.Point(7, 18)
         Me.Icon_TLSE.Name = "Icon_TLSE"
         Me.Icon_TLSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_TLSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Icon_TLSE.TabIndex = 3
-        Me.Icon_TLSE.TabStop = False
+        Me.Icon_TLSE.TabStop = false
         '
         'Icon_ChibiRoboZLSE
         '
         Me.Icon_ChibiRoboZLSE.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_ChibiRoboZLSE.Image = CType(resources.GetObject("Icon_ChibiRoboZLSE.Image"), System.Drawing.Image)
+        Me.Icon_ChibiRoboZLSE.Image = CType(resources.GetObject("Icon_ChibiRoboZLSE.Image"),System.Drawing.Image)
         Me.Icon_ChibiRoboZLSE.Location = New System.Drawing.Point(7, 126)
         Me.Icon_ChibiRoboZLSE.Name = "Icon_ChibiRoboZLSE"
         Me.Icon_ChibiRoboZLSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_ChibiRoboZLSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Icon_ChibiRoboZLSE.TabIndex = 2
-        Me.Icon_ChibiRoboZLSE.TabStop = False
+        Me.Icon_ChibiRoboZLSE.TabStop = false
         '
         'Icon_3dsSEL
         '
         Me.Icon_3dsSEL.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_3dsSEL.Image = CType(resources.GetObject("Icon_3dsSEL.Image"), System.Drawing.Image)
+        Me.Icon_3dsSEL.Image = CType(resources.GetObject("Icon_3dsSEL.Image"),System.Drawing.Image)
         Me.Icon_3dsSEL.Location = New System.Drawing.Point(7, 396)
         Me.Icon_3dsSEL.Name = "Icon_3dsSEL"
         Me.Icon_3dsSEL.Size = New System.Drawing.Size(48, 48)
         Me.Icon_3dsSEL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Icon_3dsSEL.TabIndex = 1
-        Me.Icon_3dsSEL.TabStop = False
+        Me.Icon_3dsSEL.TabStop = false
         '
         'Icon_MiitopiaSE
         '
         Me.Icon_MiitopiaSE.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_MiitopiaSE.Image = CType(resources.GetObject("Icon_MiitopiaSE.Image"), System.Drawing.Image)
+        Me.Icon_MiitopiaSE.Image = CType(resources.GetObject("Icon_MiitopiaSE.Image"),System.Drawing.Image)
         Me.Icon_MiitopiaSE.Location = New System.Drawing.Point(7, 72)
         Me.Icon_MiitopiaSE.Name = "Icon_MiitopiaSE"
         Me.Icon_MiitopiaSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_MiitopiaSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Icon_MiitopiaSE.TabIndex = 0
-        Me.Icon_MiitopiaSE.TabStop = False
+        Me.Icon_MiitopiaSE.TabStop = false
         '
         'Panel_miiedit
         '
         Me.Panel_miiedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_miiedit.Controls.Add(Me.PictureBox36)
+        Me.Panel_miiedit.Controls.Add(Me.PictureBox35)
         Me.Panel_miiedit.Controls.Add(Me.Text_editing_mii)
         Me.Panel_miiedit.Controls.Add(Me.TabControl1)
         Me.Panel_miiedit.Controls.Add(Me.Panel_save_mii)
@@ -3394,7 +3648,7 @@ Partial Class TL_SaveEditor
         Me.Panel_miiedit.Name = "Panel_miiedit"
         Me.Panel_miiedit.Size = New System.Drawing.Size(600, 490)
         Me.Panel_miiedit.TabIndex = 27
-        Me.Panel_miiedit.Visible = False
+        Me.Panel_miiedit.Visible = false
         '
         'Text_editing_mii
         '
@@ -3423,11 +3677,22 @@ Partial Class TL_SaveEditor
         '
         Me.Tab_mii_edit.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_edit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox58)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox57)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox26)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox25)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox24)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox23)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox22)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox21)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox20)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox19)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox18)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox17)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox16)
         Me.Tab_mii_edit.Controls.Add(Me.Title_miihouse)
         Me.Tab_mii_edit.Controls.Add(Me.Label2)
-        Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
-        Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_musics)
-        Me.Tab_mii_edit.Controls.Add(Me.Panel_cathphrase)
         Me.Tab_mii_edit.Controls.Add(Me.valu_miiMhouse)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_miiMhouse)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_haircolor)
@@ -3473,6 +3738,8 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_edit.Controls.Add(Me.Title_favcolor)
         Me.Tab_mii_edit.Controls.Add(Me.Title_firstname)
         Me.Tab_mii_edit.Controls.Add(Me.Text_pronun_firstname)
+        Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_musics)
+        Me.Tab_mii_edit.Controls.Add(Me.Panel_cathphrase)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_inventory)
         Me.Tab_mii_edit.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Tab_mii_edit.ImageIndex = 0
@@ -3494,7 +3761,7 @@ Partial Class TL_SaveEditor
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        Me.Label2.AutoSize = true
         Me.Label2.Location = New System.Drawing.Point(259, 329)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(109, 13)
@@ -3504,6 +3771,7 @@ Partial Class TL_SaveEditor
         'Panel_edit_haircolor
         '
         Me.Panel_edit_haircolor.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_haircolor
+        Me.Panel_edit_haircolor.Controls.Add(Me.PictureBox27)
         Me.Panel_edit_haircolor.Controls.Add(Me.color_empty)
         Me.Panel_edit_haircolor.Controls.Add(Me.Button_close_hcoloredit)
         Me.Panel_edit_haircolor.Controls.Add(Me.color_32)
@@ -3543,11 +3811,11 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_haircolor.Name = "Panel_edit_haircolor"
         Me.Panel_edit_haircolor.Size = New System.Drawing.Size(201, 150)
         Me.Panel_edit_haircolor.TabIndex = 185
-        Me.Panel_edit_haircolor.Visible = False
+        Me.Panel_edit_haircolor.Visible = false
         '
         'color_empty
         '
-        Me.color_empty.AutoSize = True
+        Me.color_empty.AutoSize = true
         Me.color_empty.Cursor = System.Windows.Forms.Cursors.Hand
         Me.color_empty.Location = New System.Drawing.Point(140, 10)
         Me.color_empty.Name = "color_empty"
@@ -3558,7 +3826,7 @@ Partial Class TL_SaveEditor
         'Button_close_hcoloredit
         '
         Me.Button_close_hcoloredit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button_close_hcoloredit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button_close_hcoloredit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Button_close_hcoloredit.Location = New System.Drawing.Point(3, 121)
         Me.Button_close_hcoloredit.Name = "Button_close_hcoloredit"
         Me.Button_close_hcoloredit.Size = New System.Drawing.Size(195, 25)
@@ -3573,7 +3841,7 @@ Partial Class TL_SaveEditor
         Me.color_32.Name = "color_32"
         Me.color_32.Size = New System.Drawing.Size(17, 17)
         Me.color_32.TabIndex = 31
-        Me.color_32.TabStop = False
+        Me.color_32.TabStop = false
         '
         'color_31
         '
@@ -3582,7 +3850,7 @@ Partial Class TL_SaveEditor
         Me.color_31.Name = "color_31"
         Me.color_31.Size = New System.Drawing.Size(17, 17)
         Me.color_31.TabIndex = 30
-        Me.color_31.TabStop = False
+        Me.color_31.TabStop = false
         '
         'color_30
         '
@@ -3591,7 +3859,7 @@ Partial Class TL_SaveEditor
         Me.color_30.Name = "color_30"
         Me.color_30.Size = New System.Drawing.Size(17, 17)
         Me.color_30.TabIndex = 29
-        Me.color_30.TabStop = False
+        Me.color_30.TabStop = false
         '
         'color_29
         '
@@ -3600,7 +3868,7 @@ Partial Class TL_SaveEditor
         Me.color_29.Name = "color_29"
         Me.color_29.Size = New System.Drawing.Size(17, 17)
         Me.color_29.TabIndex = 28
-        Me.color_29.TabStop = False
+        Me.color_29.TabStop = false
         '
         'color_28
         '
@@ -3609,7 +3877,7 @@ Partial Class TL_SaveEditor
         Me.color_28.Name = "color_28"
         Me.color_28.Size = New System.Drawing.Size(17, 17)
         Me.color_28.TabIndex = 27
-        Me.color_28.TabStop = False
+        Me.color_28.TabStop = false
         '
         'color_27
         '
@@ -3618,7 +3886,7 @@ Partial Class TL_SaveEditor
         Me.color_27.Name = "color_27"
         Me.color_27.Size = New System.Drawing.Size(17, 17)
         Me.color_27.TabIndex = 26
-        Me.color_27.TabStop = False
+        Me.color_27.TabStop = false
         '
         'color_26
         '
@@ -3627,7 +3895,7 @@ Partial Class TL_SaveEditor
         Me.color_26.Name = "color_26"
         Me.color_26.Size = New System.Drawing.Size(17, 17)
         Me.color_26.TabIndex = 25
-        Me.color_26.TabStop = False
+        Me.color_26.TabStop = false
         '
         'color_25
         '
@@ -3636,7 +3904,7 @@ Partial Class TL_SaveEditor
         Me.color_25.Name = "color_25"
         Me.color_25.Size = New System.Drawing.Size(17, 17)
         Me.color_25.TabIndex = 24
-        Me.color_25.TabStop = False
+        Me.color_25.TabStop = false
         '
         'color_24
         '
@@ -3645,7 +3913,7 @@ Partial Class TL_SaveEditor
         Me.color_24.Name = "color_24"
         Me.color_24.Size = New System.Drawing.Size(17, 17)
         Me.color_24.TabIndex = 23
-        Me.color_24.TabStop = False
+        Me.color_24.TabStop = false
         '
         'color_23
         '
@@ -3654,7 +3922,7 @@ Partial Class TL_SaveEditor
         Me.color_23.Name = "color_23"
         Me.color_23.Size = New System.Drawing.Size(17, 17)
         Me.color_23.TabIndex = 22
-        Me.color_23.TabStop = False
+        Me.color_23.TabStop = false
         '
         'color_22
         '
@@ -3663,7 +3931,7 @@ Partial Class TL_SaveEditor
         Me.color_22.Name = "color_22"
         Me.color_22.Size = New System.Drawing.Size(17, 17)
         Me.color_22.TabIndex = 21
-        Me.color_22.TabStop = False
+        Me.color_22.TabStop = false
         '
         'color_21
         '
@@ -3672,7 +3940,7 @@ Partial Class TL_SaveEditor
         Me.color_21.Name = "color_21"
         Me.color_21.Size = New System.Drawing.Size(17, 17)
         Me.color_21.TabIndex = 20
-        Me.color_21.TabStop = False
+        Me.color_21.TabStop = false
         '
         'color_20
         '
@@ -3681,7 +3949,7 @@ Partial Class TL_SaveEditor
         Me.color_20.Name = "color_20"
         Me.color_20.Size = New System.Drawing.Size(17, 17)
         Me.color_20.TabIndex = 19
-        Me.color_20.TabStop = False
+        Me.color_20.TabStop = false
         '
         'color_19
         '
@@ -3690,7 +3958,7 @@ Partial Class TL_SaveEditor
         Me.color_19.Name = "color_19"
         Me.color_19.Size = New System.Drawing.Size(17, 17)
         Me.color_19.TabIndex = 18
-        Me.color_19.TabStop = False
+        Me.color_19.TabStop = false
         '
         'color_18
         '
@@ -3699,7 +3967,7 @@ Partial Class TL_SaveEditor
         Me.color_18.Name = "color_18"
         Me.color_18.Size = New System.Drawing.Size(17, 17)
         Me.color_18.TabIndex = 17
-        Me.color_18.TabStop = False
+        Me.color_18.TabStop = false
         '
         'color_17
         '
@@ -3708,7 +3976,7 @@ Partial Class TL_SaveEditor
         Me.color_17.Name = "color_17"
         Me.color_17.Size = New System.Drawing.Size(17, 17)
         Me.color_17.TabIndex = 16
-        Me.color_17.TabStop = False
+        Me.color_17.TabStop = false
         '
         'color_16
         '
@@ -3717,7 +3985,7 @@ Partial Class TL_SaveEditor
         Me.color_16.Name = "color_16"
         Me.color_16.Size = New System.Drawing.Size(17, 17)
         Me.color_16.TabIndex = 15
-        Me.color_16.TabStop = False
+        Me.color_16.TabStop = false
         '
         'color_15
         '
@@ -3726,7 +3994,7 @@ Partial Class TL_SaveEditor
         Me.color_15.Name = "color_15"
         Me.color_15.Size = New System.Drawing.Size(17, 17)
         Me.color_15.TabIndex = 14
-        Me.color_15.TabStop = False
+        Me.color_15.TabStop = false
         '
         'color_14
         '
@@ -3735,7 +4003,7 @@ Partial Class TL_SaveEditor
         Me.color_14.Name = "color_14"
         Me.color_14.Size = New System.Drawing.Size(17, 17)
         Me.color_14.TabIndex = 13
-        Me.color_14.TabStop = False
+        Me.color_14.TabStop = false
         '
         'color_13
         '
@@ -3744,7 +4012,7 @@ Partial Class TL_SaveEditor
         Me.color_13.Name = "color_13"
         Me.color_13.Size = New System.Drawing.Size(17, 17)
         Me.color_13.TabIndex = 12
-        Me.color_13.TabStop = False
+        Me.color_13.TabStop = false
         '
         'color_12
         '
@@ -3753,7 +4021,7 @@ Partial Class TL_SaveEditor
         Me.color_12.Name = "color_12"
         Me.color_12.Size = New System.Drawing.Size(17, 17)
         Me.color_12.TabIndex = 11
-        Me.color_12.TabStop = False
+        Me.color_12.TabStop = false
         '
         'color_11
         '
@@ -3762,7 +4030,7 @@ Partial Class TL_SaveEditor
         Me.color_11.Name = "color_11"
         Me.color_11.Size = New System.Drawing.Size(17, 17)
         Me.color_11.TabIndex = 10
-        Me.color_11.TabStop = False
+        Me.color_11.TabStop = false
         '
         'color_10
         '
@@ -3771,7 +4039,7 @@ Partial Class TL_SaveEditor
         Me.color_10.Name = "color_10"
         Me.color_10.Size = New System.Drawing.Size(17, 17)
         Me.color_10.TabIndex = 9
-        Me.color_10.TabStop = False
+        Me.color_10.TabStop = false
         '
         'color_9
         '
@@ -3780,7 +4048,7 @@ Partial Class TL_SaveEditor
         Me.color_9.Name = "color_9"
         Me.color_9.Size = New System.Drawing.Size(17, 17)
         Me.color_9.TabIndex = 8
-        Me.color_9.TabStop = False
+        Me.color_9.TabStop = false
         '
         'color_8
         '
@@ -3789,7 +4057,7 @@ Partial Class TL_SaveEditor
         Me.color_8.Name = "color_8"
         Me.color_8.Size = New System.Drawing.Size(17, 17)
         Me.color_8.TabIndex = 7
-        Me.color_8.TabStop = False
+        Me.color_8.TabStop = false
         '
         'color_7
         '
@@ -3798,7 +4066,7 @@ Partial Class TL_SaveEditor
         Me.color_7.Name = "color_7"
         Me.color_7.Size = New System.Drawing.Size(17, 17)
         Me.color_7.TabIndex = 6
-        Me.color_7.TabStop = False
+        Me.color_7.TabStop = false
         '
         'color_6
         '
@@ -3807,7 +4075,7 @@ Partial Class TL_SaveEditor
         Me.color_6.Name = "color_6"
         Me.color_6.Size = New System.Drawing.Size(17, 17)
         Me.color_6.TabIndex = 5
-        Me.color_6.TabStop = False
+        Me.color_6.TabStop = false
         '
         'color_5
         '
@@ -3816,7 +4084,7 @@ Partial Class TL_SaveEditor
         Me.color_5.Name = "color_5"
         Me.color_5.Size = New System.Drawing.Size(17, 17)
         Me.color_5.TabIndex = 4
-        Me.color_5.TabStop = False
+        Me.color_5.TabStop = false
         '
         'color_4
         '
@@ -3825,7 +4093,7 @@ Partial Class TL_SaveEditor
         Me.color_4.Name = "color_4"
         Me.color_4.Size = New System.Drawing.Size(17, 17)
         Me.color_4.TabIndex = 3
-        Me.color_4.TabStop = False
+        Me.color_4.TabStop = false
         '
         'color_3
         '
@@ -3834,7 +4102,7 @@ Partial Class TL_SaveEditor
         Me.color_3.Name = "color_3"
         Me.color_3.Size = New System.Drawing.Size(17, 17)
         Me.color_3.TabIndex = 2
-        Me.color_3.TabStop = False
+        Me.color_3.TabStop = false
         '
         'color_2
         '
@@ -3843,7 +4111,7 @@ Partial Class TL_SaveEditor
         Me.color_2.Name = "color_2"
         Me.color_2.Size = New System.Drawing.Size(17, 17)
         Me.color_2.TabIndex = 1
-        Me.color_2.TabStop = False
+        Me.color_2.TabStop = false
         '
         'color_1
         '
@@ -3852,11 +4120,13 @@ Partial Class TL_SaveEditor
         Me.color_1.Name = "color_1"
         Me.color_1.Size = New System.Drawing.Size(17, 17)
         Me.color_1.TabIndex = 0
-        Me.color_1.TabStop = False
+        Me.color_1.TabStop = false
         '
         'Panel_mii_musics
         '
         Me.Panel_mii_musics.BackColor = System.Drawing.Color.Azure
+        Me.Panel_mii_musics.Controls.Add(Me.PictureBox29)
+        Me.Panel_mii_musics.Controls.Add(Me.PictureBox28)
         Me.Panel_mii_musics.Controls.Add(Me.valu_selected_music)
         Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_musical)
         Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_techno)
@@ -3871,7 +4141,7 @@ Partial Class TL_SaveEditor
         Me.Panel_mii_musics.Name = "Panel_mii_musics"
         Me.Panel_mii_musics.Size = New System.Drawing.Size(210, 202)
         Me.Panel_mii_musics.TabIndex = 180
-        Me.Panel_mii_musics.Visible = False
+        Me.Panel_mii_musics.Visible = false
         '
         'valu_selected_music
         '
@@ -3882,7 +4152,7 @@ Partial Class TL_SaveEditor
         Me.valu_selected_music.Size = New System.Drawing.Size(35, 16)
         Me.valu_selected_music.TabIndex = 190
         Me.valu_selected_music.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selected_music.Visible = False
+        Me.valu_selected_music.Visible = false
         '
         'Fea_musics_musical
         '
@@ -4080,14 +4350,14 @@ Partial Class TL_SaveEditor
         Me.valu_allmusic.Size = New System.Drawing.Size(35, 16)
         Me.valu_allmusic.TabIndex = 189
         Me.valu_allmusic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_allmusic.Visible = False
+        Me.valu_allmusic.Visible = false
         '
         'Text_unlock_music
         '
         Me.Text_unlock_music.BackColor = System.Drawing.Color.Transparent
         Me.Text_unlock_music.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_unlock_music.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_unlock_music.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_unlock_music.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Text_unlock_music.Location = New System.Drawing.Point(0, 0)
         Me.Text_unlock_music.Name = "Text_unlock_music"
         Me.Text_unlock_music.Size = New System.Drawing.Size(150, 32)
@@ -4098,6 +4368,7 @@ Partial Class TL_SaveEditor
         'Panel_cathphrase
         '
         Me.Panel_cathphrase.BackColor = System.Drawing.Color.Azure
+        Me.Panel_cathphrase.Controls.Add(Me.PictureBox30)
         Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J1)
         Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J2)
         Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_05)
@@ -4114,7 +4385,7 @@ Partial Class TL_SaveEditor
         Me.Panel_cathphrase.Name = "Panel_cathphrase"
         Me.Panel_cathphrase.Size = New System.Drawing.Size(190, 224)
         Me.Panel_cathphrase.TabIndex = 176
-        Me.Panel_cathphrase.Visible = False
+        Me.Panel_cathphrase.Visible = false
         '
         'Panel_cathph_J1
         '
@@ -4124,7 +4395,7 @@ Partial Class TL_SaveEditor
         Me.Panel_cathph_J1.Name = "Panel_cathph_J1"
         Me.Panel_cathph_J1.Size = New System.Drawing.Size(134, 17)
         Me.Panel_cathph_J1.TabIndex = 184
-        Me.Panel_cathph_J1.Visible = False
+        Me.Panel_cathph_J1.Visible = false
         '
         'Text_cathph_J1
         '
@@ -4144,7 +4415,7 @@ Partial Class TL_SaveEditor
         Me.Panel_cathph_J2.Name = "Panel_cathph_J2"
         Me.Panel_cathph_J2.Size = New System.Drawing.Size(134, 17)
         Me.Panel_cathph_J2.TabIndex = 183
-        Me.Panel_cathph_J2.Visible = False
+        Me.Panel_cathph_J2.Visible = false
         '
         'Text_cathph_J2
         '
@@ -4254,57 +4525,57 @@ Partial Class TL_SaveEditor
         'Icon_cathph_05
         '
         Me.Icon_cathph_05.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_05.Image = CType(resources.GetObject("Icon_cathph_05.Image"), System.Drawing.Image)
+        Me.Icon_cathph_05.Image = CType(resources.GetObject("Icon_cathph_05.Image"),System.Drawing.Image)
         Me.Icon_cathph_05.Location = New System.Drawing.Point(17, 182)
         Me.Icon_cathph_05.Name = "Icon_cathph_05"
         Me.Icon_cathph_05.Size = New System.Drawing.Size(33, 34)
         Me.Icon_cathph_05.TabIndex = 175
-        Me.Icon_cathph_05.TabStop = False
+        Me.Icon_cathph_05.TabStop = false
         '
         'Icon_cathph_04
         '
         Me.Icon_cathph_04.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_04.Image = CType(resources.GetObject("Icon_cathph_04.Image"), System.Drawing.Image)
+        Me.Icon_cathph_04.Image = CType(resources.GetObject("Icon_cathph_04.Image"),System.Drawing.Image)
         Me.Icon_cathph_04.Location = New System.Drawing.Point(26, 149)
         Me.Icon_cathph_04.Name = "Icon_cathph_04"
         Me.Icon_cathph_04.Size = New System.Drawing.Size(24, 24)
         Me.Icon_cathph_04.TabIndex = 174
-        Me.Icon_cathph_04.TabStop = False
+        Me.Icon_cathph_04.TabStop = false
         '
         'Icon_cathph_03
         '
         Me.Icon_cathph_03.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_03.Image = CType(resources.GetObject("Icon_cathph_03.Image"), System.Drawing.Image)
+        Me.Icon_cathph_03.Image = CType(resources.GetObject("Icon_cathph_03.Image"),System.Drawing.Image)
         Me.Icon_cathph_03.Location = New System.Drawing.Point(26, 110)
         Me.Icon_cathph_03.Name = "Icon_cathph_03"
         Me.Icon_cathph_03.Size = New System.Drawing.Size(24, 24)
         Me.Icon_cathph_03.TabIndex = 173
-        Me.Icon_cathph_03.TabStop = False
+        Me.Icon_cathph_03.TabStop = false
         '
         'Icon_cathph_02
         '
         Me.Icon_cathph_02.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_02.Image = CType(resources.GetObject("Icon_cathph_02.Image"), System.Drawing.Image)
+        Me.Icon_cathph_02.Image = CType(resources.GetObject("Icon_cathph_02.Image"),System.Drawing.Image)
         Me.Icon_cathph_02.Location = New System.Drawing.Point(26, 74)
         Me.Icon_cathph_02.Name = "Icon_cathph_02"
         Me.Icon_cathph_02.Size = New System.Drawing.Size(24, 24)
         Me.Icon_cathph_02.TabIndex = 172
-        Me.Icon_cathph_02.TabStop = False
+        Me.Icon_cathph_02.TabStop = false
         '
         'Icon_cathph_01
         '
         Me.Icon_cathph_01.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_01.Image = CType(resources.GetObject("Icon_cathph_01.Image"), System.Drawing.Image)
+        Me.Icon_cathph_01.Image = CType(resources.GetObject("Icon_cathph_01.Image"),System.Drawing.Image)
         Me.Icon_cathph_01.Location = New System.Drawing.Point(11, 22)
         Me.Icon_cathph_01.Name = "Icon_cathph_01"
         Me.Icon_cathph_01.Size = New System.Drawing.Size(39, 25)
         Me.Icon_cathph_01.TabIndex = 171
-        Me.Icon_cathph_01.TabStop = False
+        Me.Icon_cathph_01.TabStop = false
         '
         'valu_miiMhouse
         '
         Me.valu_miiMhouse.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_miiMhouse.Enabled = False
+        Me.valu_miiMhouse.Enabled = false
         Me.valu_miiMhouse.Location = New System.Drawing.Point(290, 388)
         Me.valu_miiMhouse.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_miiMhouse.Name = "valu_miiMhouse"
@@ -4319,7 +4590,7 @@ Partial Class TL_SaveEditor
         Me.Icon_miiMhouse.Name = "Icon_miiMhouse"
         Me.Icon_miiMhouse.Size = New System.Drawing.Size(40, 43)
         Me.Icon_miiMhouse.TabIndex = 186
-        Me.Icon_miiMhouse.TabStop = False
+        Me.Icon_miiMhouse.TabStop = false
         '
         'Icon_haircolor
         '
@@ -4329,7 +4600,7 @@ Partial Class TL_SaveEditor
         Me.Icon_haircolor.Name = "Icon_haircolor"
         Me.Icon_haircolor.Size = New System.Drawing.Size(24, 24)
         Me.Icon_haircolor.TabIndex = 183
-        Me.Icon_haircolor.TabStop = False
+        Me.Icon_haircolor.TabStop = false
         '
         'valu_haircolor
         '
@@ -4340,7 +4611,7 @@ Partial Class TL_SaveEditor
         Me.valu_haircolor.Size = New System.Drawing.Size(35, 16)
         Me.valu_haircolor.TabIndex = 184
         Me.valu_haircolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_haircolor.Visible = False
+        Me.valu_haircolor.Visible = false
         '
         'Title_haircolor
         '
@@ -4354,13 +4625,13 @@ Partial Class TL_SaveEditor
         'valu_favcolor
         '
         Me.valu_favcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_favcolor.Location = New System.Drawing.Point(515, 159)
+        Me.valu_favcolor.Location = New System.Drawing.Point(460, 160)
         Me.valu_favcolor.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_favcolor.Name = "valu_favcolor"
         Me.valu_favcolor.Size = New System.Drawing.Size(37, 16)
         Me.valu_favcolor.TabIndex = 127
         Me.valu_favcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_favcolor.Visible = False
+        Me.valu_favcolor.Visible = false
         '
         'Icon_favcolor
         '
@@ -4370,7 +4641,7 @@ Partial Class TL_SaveEditor
         Me.Icon_favcolor.Name = "Icon_favcolor"
         Me.Icon_favcolor.Size = New System.Drawing.Size(54, 26)
         Me.Icon_favcolor.TabIndex = 123
-        Me.Icon_favcolor.TabStop = False
+        Me.Icon_favcolor.TabStop = false
         '
         'valu_miihouse
         '
@@ -4389,7 +4660,7 @@ Partial Class TL_SaveEditor
         Me.Icon_miihouse.Name = "Icon_miihouse"
         Me.Icon_miihouse.Size = New System.Drawing.Size(40, 43)
         Me.Icon_miihouse.TabIndex = 178
-        Me.Icon_miihouse.TabStop = False
+        Me.Icon_miihouse.TabStop = false
         '
         'Icon_miiedit_music
         '
@@ -4399,7 +4670,7 @@ Partial Class TL_SaveEditor
         Me.Icon_miiedit_music.Name = "Icon_miiedit_music"
         Me.Icon_miiedit_music.Size = New System.Drawing.Size(44, 30)
         Me.Icon_miiedit_music.TabIndex = 165
-        Me.Icon_miiedit_music.TabStop = False
+        Me.Icon_miiedit_music.TabStop = false
         '
         'Icon_cathphrase
         '
@@ -4409,7 +4680,7 @@ Partial Class TL_SaveEditor
         Me.Icon_cathphrase.Name = "Icon_cathphrase"
         Me.Icon_cathphrase.Size = New System.Drawing.Size(44, 30)
         Me.Icon_cathphrase.TabIndex = 164
-        Me.Icon_cathphrase.TabStop = False
+        Me.Icon_cathphrase.TabStop = false
         '
         'Icon_inventory
         '
@@ -4419,18 +4690,18 @@ Partial Class TL_SaveEditor
         Me.Icon_inventory.Name = "Icon_inventory"
         Me.Icon_inventory.Size = New System.Drawing.Size(44, 30)
         Me.Icon_inventory.TabIndex = 163
-        Me.Icon_inventory.TabStop = False
+        Me.Icon_inventory.TabStop = false
         '
         'Mii
         '
         Me.Mii.BackColor = System.Drawing.Color.Transparent
         Me.Mii.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Mii.Image = CType(resources.GetObject("Mii.Image"), System.Drawing.Image)
+        Me.Mii.Image = CType(resources.GetObject("Mii.Image"),System.Drawing.Image)
         Me.Mii.Location = New System.Drawing.Point(217, 64)
         Me.Mii.Name = "Mii"
         Me.Mii.Size = New System.Drawing.Size(37, 67)
         Me.Mii.TabIndex = 162
-        Me.Mii.TabStop = False
+        Me.Mii.TabStop = false
         '
         'Panel2
         '
@@ -4448,7 +4719,7 @@ Partial Class TL_SaveEditor
         Me.Text_creator.Location = New System.Drawing.Point(2, 2)
         Me.Text_creator.MaxLength = 10
         Me.Text_creator.Name = "Text_creator"
-        Me.Text_creator.ReadOnly = True
+        Me.Text_creator.ReadOnly = true
         Me.Text_creator.Size = New System.Drawing.Size(100, 13)
         Me.Text_creator.TabIndex = 110
         Me.Text_creator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -4485,13 +4756,13 @@ Partial Class TL_SaveEditor
         Me.valu_growkid.Size = New System.Drawing.Size(40, 16)
         Me.valu_growkid.TabIndex = 131
         Me.valu_growkid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_growkid.Visible = False
+        Me.valu_growkid.Visible = false
         '
         'Select_growkid
         '
         Me.Select_growkid.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_growkid.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_growkid.FormattingEnabled = True
+        Me.Select_growkid.FormattingEnabled = true
         Me.Select_growkid.Items.AddRange(New Object() {"Grown-up", "Grown-up (1)", "Kid"})
         Me.Select_growkid.Location = New System.Drawing.Point(2, 2)
         Me.Select_growkid.Name = "Select_growkid"
@@ -4517,14 +4788,14 @@ Partial Class TL_SaveEditor
         Me.valu_relationyou.Size = New System.Drawing.Size(40, 16)
         Me.valu_relationyou.TabIndex = 132
         Me.valu_relationyou.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_relationyou.Visible = False
+        Me.valu_relationyou.Visible = false
         '
         'Select_relationyou
         '
         Me.Select_relationyou.BackColor = System.Drawing.SystemColors.Window
         Me.Select_relationyou.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_relationyou.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_relationyou.FormattingEnabled = True
+        Me.Select_relationyou.FormattingEnabled = true
         Me.Select_relationyou.Items.AddRange(New Object() {"Child", "Not Related", "Other Relative", "Parent", "Self", "Sibling", "Spouse"})
         Me.Select_relationyou.Location = New System.Drawing.Point(2, 2)
         Me.Select_relationyou.Name = "Select_relationyou"
@@ -4540,7 +4811,7 @@ Partial Class TL_SaveEditor
         Me.Icon_pronun_nickname.Name = "Icon_pronun_nickname"
         Me.Icon_pronun_nickname.Size = New System.Drawing.Size(22, 22)
         Me.Icon_pronun_nickname.TabIndex = 156
-        Me.Icon_pronun_nickname.TabStop = False
+        Me.Icon_pronun_nickname.TabStop = false
         '
         'Panel_nickname
         '
@@ -4558,7 +4829,7 @@ Partial Class TL_SaveEditor
         Me.Text_nickname.Location = New System.Drawing.Point(2, 2)
         Me.Text_nickname.MaxLength = 10
         Me.Text_nickname.Name = "Text_nickname"
-        Me.Text_nickname.ReadOnly = True
+        Me.Text_nickname.ReadOnly = true
         Me.Text_nickname.Size = New System.Drawing.Size(100, 13)
         Me.Text_nickname.TabIndex = 103
         Me.Text_nickname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -4575,14 +4846,14 @@ Partial Class TL_SaveEditor
         '
         'Text_pronun_nickname
         '
-        Me.Text_pronun_nickname.AutoSize = True
+        Me.Text_pronun_nickname.AutoSize = true
         Me.Text_pronun_nickname.BackColor = System.Drawing.Color.White
         Me.Text_pronun_nickname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Text_pronun_nickname.Location = New System.Drawing.Point(265, 171)
         Me.Text_pronun_nickname.Name = "Text_pronun_nickname"
         Me.Text_pronun_nickname.Size = New System.Drawing.Size(2, 15)
         Me.Text_pronun_nickname.TabIndex = 154
-        Me.Text_pronun_nickname.Visible = False
+        Me.Text_pronun_nickname.Visible = false
         '
         'Panel_edit_lastname
         '
@@ -4593,7 +4864,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_lastname.Name = "Panel_edit_lastname"
         Me.Panel_edit_lastname.Size = New System.Drawing.Size(125, 17)
         Me.Panel_edit_lastname.TabIndex = 152
-        Me.Panel_edit_lastname.Visible = False
+        Me.Panel_edit_lastname.Visible = false
         '
         'Icon_valid_lastname
         '
@@ -4605,7 +4876,7 @@ Partial Class TL_SaveEditor
         Me.Icon_valid_lastname.Size = New System.Drawing.Size(15, 12)
         Me.Icon_valid_lastname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_valid_lastname.TabIndex = 8
-        Me.Icon_valid_lastname.TabStop = False
+        Me.Icon_valid_lastname.TabStop = false
         '
         'Text_edit_lastname
         '
@@ -4626,7 +4897,7 @@ Partial Class TL_SaveEditor
         Me.Icon_pronun_lastname.Name = "Icon_pronun_lastname"
         Me.Icon_pronun_lastname.Size = New System.Drawing.Size(22, 22)
         Me.Icon_pronun_lastname.TabIndex = 151
-        Me.Icon_pronun_lastname.TabStop = False
+        Me.Icon_pronun_lastname.TabStop = false
         '
         'Panel_lastname
         '
@@ -4659,14 +4930,14 @@ Partial Class TL_SaveEditor
         '
         'Text_pronun_lastname
         '
-        Me.Text_pronun_lastname.AutoSize = True
+        Me.Text_pronun_lastname.AutoSize = true
         Me.Text_pronun_lastname.BackColor = System.Drawing.Color.White
         Me.Text_pronun_lastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Text_pronun_lastname.Location = New System.Drawing.Point(445, 99)
         Me.Text_pronun_lastname.Name = "Text_pronun_lastname"
         Me.Text_pronun_lastname.Size = New System.Drawing.Size(2, 15)
         Me.Text_pronun_lastname.TabIndex = 149
-        Me.Text_pronun_lastname.Visible = False
+        Me.Text_pronun_lastname.Visible = false
         '
         'Panel_edit_firstname
         '
@@ -4677,7 +4948,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_firstname.Name = "Panel_edit_firstname"
         Me.Panel_edit_firstname.Size = New System.Drawing.Size(125, 17)
         Me.Panel_edit_firstname.TabIndex = 147
-        Me.Panel_edit_firstname.Visible = False
+        Me.Panel_edit_firstname.Visible = false
         '
         'Icon_valid_firstname
         '
@@ -4689,7 +4960,7 @@ Partial Class TL_SaveEditor
         Me.Icon_valid_firstname.Size = New System.Drawing.Size(15, 12)
         Me.Icon_valid_firstname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_valid_firstname.TabIndex = 8
-        Me.Icon_valid_firstname.TabStop = False
+        Me.Icon_valid_firstname.TabStop = false
         '
         'Text_edit_firstname
         '
@@ -4710,7 +4981,7 @@ Partial Class TL_SaveEditor
         Me.Icon_pronun_firstname.Name = "Icon_pronun_firstname"
         Me.Icon_pronun_firstname.Size = New System.Drawing.Size(22, 22)
         Me.Icon_pronun_firstname.TabIndex = 146
-        Me.Icon_pronun_firstname.TabStop = False
+        Me.Icon_pronun_firstname.TabStop = false
         '
         'Panel_firstname
         '
@@ -4745,7 +5016,7 @@ Partial Class TL_SaveEditor
         Me.Text_copying.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Text_copying.Location = New System.Drawing.Point(2, 2)
         Me.Text_copying.Name = "Text_copying"
-        Me.Text_copying.ReadOnly = True
+        Me.Text_copying.ReadOnly = true
         Me.Text_copying.Size = New System.Drawing.Size(73, 13)
         Me.Text_copying.TabIndex = 126
         Me.Text_copying.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -4764,7 +5035,7 @@ Partial Class TL_SaveEditor
         Me.Text_sharing.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Text_sharing.Location = New System.Drawing.Point(2, 2)
         Me.Text_sharing.Name = "Text_sharing"
-        Me.Text_sharing.ReadOnly = True
+        Me.Text_sharing.ReadOnly = true
         Me.Text_sharing.Size = New System.Drawing.Size(73, 13)
         Me.Text_sharing.TabIndex = 125
         Me.Text_sharing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -4777,7 +5048,7 @@ Partial Class TL_SaveEditor
         Me.Icon_copying.Size = New System.Drawing.Size(20, 20)
         Me.Icon_copying.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_copying.TabIndex = 142
-        Me.Icon_copying.TabStop = False
+        Me.Icon_copying.TabStop = false
         '
         'Icon_sharing
         '
@@ -4787,7 +5058,7 @@ Partial Class TL_SaveEditor
         Me.Icon_sharing.Size = New System.Drawing.Size(20, 20)
         Me.Icon_sharing.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_sharing.TabIndex = 141
-        Me.Icon_sharing.TabStop = False
+        Me.Icon_sharing.TabStop = false
         '
         'valu_miiapart
         '
@@ -4799,7 +5070,7 @@ Partial Class TL_SaveEditor
         Me.valu_miiapart.TabIndex = 134
         Me.valu_miiapart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.valu_miiapart.Value = New Decimal(New Integer() {100, 0, 0, 0})
-        Me.valu_miiapart.Visible = False
+        Me.valu_miiapart.Visible = false
         '
         'Text_miiapart
         '
@@ -4812,12 +5083,12 @@ Partial Class TL_SaveEditor
         '
         'Icon_miiapart
         '
-        Me.Icon_miiapart.Image = CType(resources.GetObject("Icon_miiapart.Image"), System.Drawing.Image)
+        Me.Icon_miiapart.Image = CType(resources.GetObject("Icon_miiapart.Image"),System.Drawing.Image)
         Me.Icon_miiapart.Location = New System.Drawing.Point(402, 363)
         Me.Icon_miiapart.Name = "Icon_miiapart"
         Me.Icon_miiapart.Size = New System.Drawing.Size(32, 25)
         Me.Icon_miiapart.TabIndex = 132
-        Me.Icon_miiapart.TabStop = False
+        Me.Icon_miiapart.TabStop = false
         '
         'valu_copying
         '
@@ -4829,7 +5100,7 @@ Partial Class TL_SaveEditor
         Me.valu_copying.TabIndex = 130
         Me.valu_copying.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.valu_copying.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.valu_copying.Visible = False
+        Me.valu_copying.Visible = false
         '
         'valu_sharing
         '
@@ -4840,7 +5111,7 @@ Partial Class TL_SaveEditor
         Me.valu_sharing.Size = New System.Drawing.Size(38, 16)
         Me.valu_sharing.TabIndex = 129
         Me.valu_sharing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_sharing.Visible = False
+        Me.valu_sharing.Visible = false
         '
         'Title_relationyou
         '
@@ -4899,18 +5170,21 @@ Partial Class TL_SaveEditor
         '
         'Text_pronun_firstname
         '
-        Me.Text_pronun_firstname.AutoSize = True
+        Me.Text_pronun_firstname.AutoSize = true
         Me.Text_pronun_firstname.BackColor = System.Drawing.Color.White
         Me.Text_pronun_firstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Text_pronun_firstname.Location = New System.Drawing.Point(265, 99)
         Me.Text_pronun_firstname.Name = "Text_pronun_firstname"
         Me.Text_pronun_firstname.Size = New System.Drawing.Size(2, 15)
         Me.Text_pronun_firstname.TabIndex = 113
-        Me.Text_pronun_firstname.Visible = False
+        Me.Text_pronun_firstname.Visible = false
         '
         'Panel_mii_inventory
         '
         Me.Panel_mii_inventory.BackColor = System.Drawing.Color.Azure
+        Me.Panel_mii_inventory.Controls.Add(Me.PictureBox33)
+        Me.Panel_mii_inventory.Controls.Add(Me.PictureBox32)
+        Me.Panel_mii_inventory.Controls.Add(Me.PictureBox31)
         Me.Panel_mii_inventory.Controls.Add(Me.Icon_unlock_gooditems)
         Me.Panel_mii_inventory.Controls.Add(Me.Icon_unlock_specialfoods)
         Me.Panel_mii_inventory.Controls.Add(Me.Icon_unlock_interiors)
@@ -4924,32 +5198,32 @@ Partial Class TL_SaveEditor
         '
         'Icon_unlock_gooditems
         '
-        Me.Icon_unlock_gooditems.Image = CType(resources.GetObject("Icon_unlock_gooditems.Image"), System.Drawing.Image)
+        Me.Icon_unlock_gooditems.Image = CType(resources.GetObject("Icon_unlock_gooditems.Image"),System.Drawing.Image)
         Me.Icon_unlock_gooditems.Location = New System.Drawing.Point(28, 171)
         Me.Icon_unlock_gooditems.Name = "Icon_unlock_gooditems"
         Me.Icon_unlock_gooditems.Size = New System.Drawing.Size(46, 31)
         Me.Icon_unlock_gooditems.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Icon_unlock_gooditems.TabIndex = 164
-        Me.Icon_unlock_gooditems.TabStop = False
+        Me.Icon_unlock_gooditems.TabStop = false
         '
         'Icon_unlock_specialfoods
         '
-        Me.Icon_unlock_specialfoods.Image = CType(resources.GetObject("Icon_unlock_specialfoods.Image"), System.Drawing.Image)
+        Me.Icon_unlock_specialfoods.Image = CType(resources.GetObject("Icon_unlock_specialfoods.Image"),System.Drawing.Image)
         Me.Icon_unlock_specialfoods.Location = New System.Drawing.Point(28, 120)
         Me.Icon_unlock_specialfoods.Name = "Icon_unlock_specialfoods"
         Me.Icon_unlock_specialfoods.Size = New System.Drawing.Size(46, 31)
         Me.Icon_unlock_specialfoods.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_unlock_specialfoods.TabIndex = 163
-        Me.Icon_unlock_specialfoods.TabStop = False
+        Me.Icon_unlock_specialfoods.TabStop = false
         '
         'Icon_unlock_interiors
         '
-        Me.Icon_unlock_interiors.Image = CType(resources.GetObject("Icon_unlock_interiors.Image"), System.Drawing.Image)
+        Me.Icon_unlock_interiors.Image = CType(resources.GetObject("Icon_unlock_interiors.Image"),System.Drawing.Image)
         Me.Icon_unlock_interiors.Location = New System.Drawing.Point(28, 69)
         Me.Icon_unlock_interiors.Name = "Icon_unlock_interiors"
         Me.Icon_unlock_interiors.Size = New System.Drawing.Size(46, 31)
         Me.Icon_unlock_interiors.TabIndex = 162
-        Me.Icon_unlock_interiors.TabStop = False
+        Me.Icon_unlock_interiors.TabStop = false
         '
         'Panel27
         '
@@ -4965,7 +5239,7 @@ Partial Class TL_SaveEditor
         Me.Select_unlock_gooditems.BackColor = System.Drawing.SystemColors.Window
         Me.Select_unlock_gooditems.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_unlock_gooditems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_unlock_gooditems.FormattingEnabled = True
+        Me.Select_unlock_gooditems.FormattingEnabled = true
         Me.Select_unlock_gooditems.Items.AddRange(New Object() {"Do nothing", "Unlock all", "Delete all"})
         Me.Select_unlock_gooditems.Location = New System.Drawing.Point(2, 2)
         Me.Select_unlock_gooditems.Name = "Select_unlock_gooditems"
@@ -4986,7 +5260,7 @@ Partial Class TL_SaveEditor
         Me.Select_unlock_specialfoods.BackColor = System.Drawing.SystemColors.Window
         Me.Select_unlock_specialfoods.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_unlock_specialfoods.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_unlock_specialfoods.FormattingEnabled = True
+        Me.Select_unlock_specialfoods.FormattingEnabled = true
         Me.Select_unlock_specialfoods.Items.AddRange(New Object() {"Do nothing", "Unlock all", "Delete all"})
         Me.Select_unlock_specialfoods.Location = New System.Drawing.Point(2, 2)
         Me.Select_unlock_specialfoods.Name = "Select_unlock_specialfoods"
@@ -5007,7 +5281,7 @@ Partial Class TL_SaveEditor
         Me.Select_unlock_interiors.BackColor = System.Drawing.SystemColors.Window
         Me.Select_unlock_interiors.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_unlock_interiors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_unlock_interiors.FormattingEnabled = True
+        Me.Select_unlock_interiors.FormattingEnabled = true
         Me.Select_unlock_interiors.Items.AddRange(New Object() {"Do nothing", "Unlock all", "Delete all"})
         Me.Select_unlock_interiors.Location = New System.Drawing.Point(2, 2)
         Me.Select_unlock_interiors.Name = "Select_unlock_interiors"
@@ -5018,6 +5292,17 @@ Partial Class TL_SaveEditor
         '
         Me.Tab_mii_status.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_status.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox48)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox47)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox46)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox45)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox43)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox42)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox41)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox40)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox39)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox38)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox37)
         Me.Tab_mii_status.Controls.Add(Me.Select_foods_language)
         Me.Tab_mii_status.Controls.Add(Me.Select_worst_US2)
         Me.Tab_mii_status.Controls.Add(Me.Select_worst_US1)
@@ -5084,6 +5369,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Controls.Add(Me.valu_worst_1)
         Me.Tab_mii_status.Controls.Add(Me.Select_allfav_1)
         Me.Tab_mii_status.Controls.Add(Me.valu_allfav_1)
+        Me.Tab_mii_status.Controls.Add(Me.PictureBox44)
         Me.Tab_mii_status.ImageIndex = 2
         Me.Tab_mii_status.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_status.Name = "Tab_mii_status"
@@ -5097,19 +5383,19 @@ Partial Class TL_SaveEditor
         Me.Select_foods_language.BackColor = System.Drawing.SystemColors.Window
         Me.Select_foods_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_foods_language.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_foods_language.FormattingEnabled = True
+        Me.Select_foods_language.FormattingEnabled = true
         Me.Select_foods_language.Items.AddRange(New Object() {"ENG", "FRA"})
         Me.Select_foods_language.Location = New System.Drawing.Point(101, 42)
         Me.Select_foods_language.Name = "Select_foods_language"
         Me.Select_foods_language.Size = New System.Drawing.Size(47, 21)
         Me.Select_foods_language.TabIndex = 237
-        Me.Select_foods_language.Visible = False
+        Me.Select_foods_language.Visible = false
         '
         'Select_worst_US2
         '
         Me.Select_worst_US2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_worst_US2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_worst_US2.FormattingEnabled = True
+        Me.Select_worst_US2.FormattingEnabled = true
         Me.Select_worst_US2.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
         Me.Select_worst_US2.Location = New System.Drawing.Point(163, 227)
         Me.Select_worst_US2.Name = "Select_worst_US2"
@@ -5120,7 +5406,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_worst_US1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_worst_US1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_worst_US1.FormattingEnabled = True
+        Me.Select_worst_US1.FormattingEnabled = true
         Me.Select_worst_US1.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
         Me.Select_worst_US1.Location = New System.Drawing.Point(163, 205)
         Me.Select_worst_US1.Name = "Select_worst_US1"
@@ -5131,7 +5417,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_fav_US3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_fav_US3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_fav_US3.FormattingEnabled = True
+        Me.Select_fav_US3.FormattingEnabled = true
         Me.Select_fav_US3.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
         Me.Select_fav_US3.Location = New System.Drawing.Point(163, 163)
         Me.Select_fav_US3.Name = "Select_fav_US3"
@@ -5142,7 +5428,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_fav_US2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_fav_US2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_fav_US2.FormattingEnabled = True
+        Me.Select_fav_US2.FormattingEnabled = true
         Me.Select_fav_US2.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
         Me.Select_fav_US2.Location = New System.Drawing.Point(163, 141)
         Me.Select_fav_US2.Name = "Select_fav_US2"
@@ -5153,7 +5439,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_fav_US1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_fav_US1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_fav_US1.FormattingEnabled = True
+        Me.Select_fav_US1.FormattingEnabled = true
         Me.Select_fav_US1.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
         Me.Select_fav_US1.Location = New System.Drawing.Point(163, 119)
         Me.Select_fav_US1.Name = "Select_fav_US1"
@@ -5164,7 +5450,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_allfav_US2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_allfav_US2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_allfav_US2.FormattingEnabled = True
+        Me.Select_allfav_US2.FormattingEnabled = true
         Me.Select_allfav_US2.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
         Me.Select_allfav_US2.Location = New System.Drawing.Point(163, 79)
         Me.Select_allfav_US2.Name = "Select_allfav_US2"
@@ -5175,7 +5461,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_allfav_US1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_allfav_US1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_allfav_US1.FormattingEnabled = True
+        Me.Select_allfav_US1.FormattingEnabled = true
         Me.Select_allfav_US1.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
         Me.Select_allfav_US1.Location = New System.Drawing.Point(163, 57)
         Me.Select_allfav_US1.Name = "Select_allfav_US1"
@@ -5184,26 +5470,26 @@ Partial Class TL_SaveEditor
         '
         'Text_danger_interaction
         '
-        Me.Text_danger_interaction.AutoSize = True
+        Me.Text_danger_interaction.AutoSize = true
         Me.Text_danger_interaction.ForeColor = System.Drawing.Color.Red
         Me.Text_danger_interaction.Location = New System.Drawing.Point(64, 396)
         Me.Text_danger_interaction.Name = "Text_danger_interaction"
         Me.Text_danger_interaction.Size = New System.Drawing.Size(408, 26)
         Me.Text_danger_interaction.TabIndex = 229
-        Me.Text_danger_interaction.Text = "Interactions not work properly with some Tomodachi Life region (this is a beta fe" & _
-    "ature)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Make sure a recent save file is used"
-        Me.Text_danger_interaction.Visible = False
+        Me.Text_danger_interaction.Text = "Interactions not work properly with some Tomodachi Life region (this is a beta fe"& _ 
+    "ature)"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Make sure a recent save file is used"
+        Me.Text_danger_interaction.Visible = false
         '
         'Danger_interaction
         '
         Me.Danger_interaction.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Danger_interaction.Image = CType(resources.GetObject("Danger_interaction.Image"), System.Drawing.Image)
+        Me.Danger_interaction.Image = CType(resources.GetObject("Danger_interaction.Image"),System.Drawing.Image)
         Me.Danger_interaction.Location = New System.Drawing.Point(41, 392)
         Me.Danger_interaction.Name = "Danger_interaction"
         Me.Danger_interaction.Size = New System.Drawing.Size(20, 20)
         Me.Danger_interaction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Danger_interaction.TabIndex = 228
-        Me.Danger_interaction.TabStop = False
+        Me.Danger_interaction.TabStop = false
         '
         'valu_switch_interiors
         '
@@ -5222,7 +5508,7 @@ Partial Class TL_SaveEditor
         Me.Icon_switch_interiors.Name = "Icon_switch_interiors"
         Me.Icon_switch_interiors.Size = New System.Drawing.Size(32, 22)
         Me.Icon_switch_interiors.TabIndex = 191
-        Me.Icon_switch_interiors.TabStop = False
+        Me.Icon_switch_interiors.TabStop = false
         '
         'valu_switch_clothes
         '
@@ -5241,7 +5527,7 @@ Partial Class TL_SaveEditor
         Me.Icon_switch_clothes.Name = "Icon_switch_clothes"
         Me.Icon_switch_clothes.Size = New System.Drawing.Size(32, 22)
         Me.Icon_switch_clothes.TabIndex = 189
-        Me.Icon_switch_clothes.TabStop = False
+        Me.Icon_switch_clothes.TabStop = false
         '
         'valu_switch_hats
         '
@@ -5260,7 +5546,7 @@ Partial Class TL_SaveEditor
         Me.Icon_switch_hats.Name = "Icon_switch_hats"
         Me.Icon_switch_hats.Size = New System.Drawing.Size(32, 22)
         Me.Icon_switch_hats.TabIndex = 187
-        Me.Icon_switch_hats.TabStop = False
+        Me.Icon_switch_hats.TabStop = false
         '
         'Panel_edit_fullness
         '
@@ -5273,7 +5559,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_fullness.Name = "Panel_edit_fullness"
         Me.Panel_edit_fullness.Size = New System.Drawing.Size(117, 110)
         Me.Panel_edit_fullness.TabIndex = 129
-        Me.Panel_edit_fullness.Visible = False
+        Me.Panel_edit_fullness.Visible = false
         '
         'Icon_edit_full_100
         '
@@ -5284,7 +5570,7 @@ Partial Class TL_SaveEditor
         Me.Icon_edit_full_100.Name = "Icon_edit_full_100"
         Me.Icon_edit_full_100.Size = New System.Drawing.Size(55, 50)
         Me.Icon_edit_full_100.TabIndex = 113
-        Me.Icon_edit_full_100.TabStop = False
+        Me.Icon_edit_full_100.TabStop = false
         '
         'Icon_edit_full_50
         '
@@ -5295,7 +5581,7 @@ Partial Class TL_SaveEditor
         Me.Icon_edit_full_50.Name = "Icon_edit_full_50"
         Me.Icon_edit_full_50.Size = New System.Drawing.Size(55, 50)
         Me.Icon_edit_full_50.TabIndex = 112
-        Me.Icon_edit_full_50.TabStop = False
+        Me.Icon_edit_full_50.TabStop = false
         '
         'Icon_edit_full_25
         '
@@ -5306,7 +5592,7 @@ Partial Class TL_SaveEditor
         Me.Icon_edit_full_25.Name = "Icon_edit_full_25"
         Me.Icon_edit_full_25.Size = New System.Drawing.Size(55, 50)
         Me.Icon_edit_full_25.TabIndex = 111
-        Me.Icon_edit_full_25.TabStop = False
+        Me.Icon_edit_full_25.TabStop = false
         '
         'Icon_edit_full_00
         '
@@ -5317,7 +5603,7 @@ Partial Class TL_SaveEditor
         Me.Icon_edit_full_00.Name = "Icon_edit_full_00"
         Me.Icon_edit_full_00.Size = New System.Drawing.Size(55, 50)
         Me.Icon_edit_full_00.TabIndex = 110
-        Me.Icon_edit_full_00.TabStop = False
+        Me.Icon_edit_full_00.TabStop = false
         '
         'valu_chkfullness
         '
@@ -5328,7 +5614,7 @@ Partial Class TL_SaveEditor
         Me.valu_chkfullness.Size = New System.Drawing.Size(38, 16)
         Me.valu_chkfullness.TabIndex = 179
         Me.valu_chkfullness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_chkfullness.Visible = False
+        Me.valu_chkfullness.Visible = false
         '
         'valu_experience
         '
@@ -5339,7 +5625,7 @@ Partial Class TL_SaveEditor
         Me.valu_experience.Size = New System.Drawing.Size(40, 16)
         Me.valu_experience.TabIndex = 178
         Me.valu_experience.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_experience.Visible = False
+        Me.valu_experience.Visible = false
         '
         'valu_itemmii_8
         '
@@ -5350,7 +5636,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemmii_8.Size = New System.Drawing.Size(40, 16)
         Me.valu_itemmii_8.TabIndex = 86
         Me.valu_itemmii_8.Value = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_itemmii_8.Visible = False
+        Me.valu_itemmii_8.Visible = false
         '
         'Icon_growkid
         '
@@ -5359,7 +5645,7 @@ Partial Class TL_SaveEditor
         Me.Icon_growkid.Name = "Icon_growkid"
         Me.Icon_growkid.Size = New System.Drawing.Size(28, 22)
         Me.Icon_growkid.TabIndex = 128
-        Me.Icon_growkid.TabStop = False
+        Me.Icon_growkid.TabStop = false
         '
         'valu_itemmii_7
         '
@@ -5370,7 +5656,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemmii_7.Size = New System.Drawing.Size(40, 16)
         Me.valu_itemmii_7.TabIndex = 85
         Me.valu_itemmii_7.Value = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_itemmii_7.Visible = False
+        Me.valu_itemmii_7.Visible = false
         '
         'valu_itemmii_6
         '
@@ -5381,7 +5667,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemmii_6.Size = New System.Drawing.Size(40, 16)
         Me.valu_itemmii_6.TabIndex = 84
         Me.valu_itemmii_6.Value = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_itemmii_6.Visible = False
+        Me.valu_itemmii_6.Visible = false
         '
         'valu_itemmii_5
         '
@@ -5392,11 +5678,14 @@ Partial Class TL_SaveEditor
         Me.valu_itemmii_5.Size = New System.Drawing.Size(40, 16)
         Me.valu_itemmii_5.TabIndex = 83
         Me.valu_itemmii_5.Value = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_itemmii_5.Visible = False
+        Me.valu_itemmii_5.Visible = false
         '
         'Panel3
         '
         Me.Panel3.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_apartment
+        Me.Panel3.Controls.Add(Me.PictureBox51)
+        Me.Panel3.Controls.Add(Me.PictureBox50)
+        Me.Panel3.Controls.Add(Me.PictureBox49)
         Me.Panel3.Controls.Add(Me.Text_interaction)
         Me.Panel3.Controls.Add(Me.Title_emotions)
         Me.Panel3.Controls.Add(Me.Title_target2)
@@ -5420,11 +5709,11 @@ Partial Class TL_SaveEditor
         Me.Text_interaction.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Text_interaction.Location = New System.Drawing.Point(43, 47)
         Me.Text_interaction.Name = "Text_interaction"
-        Me.Text_interaction.ReadOnly = True
+        Me.Text_interaction.ReadOnly = true
         Me.Text_interaction.Size = New System.Drawing.Size(235, 13)
         Me.Text_interaction.TabIndex = 169
         Me.Text_interaction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.Text_interaction.Visible = False
+        Me.Text_interaction.Visible = false
         '
         'Title_emotions
         '
@@ -5489,14 +5778,14 @@ Partial Class TL_SaveEditor
         Me.valu_emotions.Size = New System.Drawing.Size(35, 16)
         Me.valu_emotions.TabIndex = 185
         Me.valu_emotions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_emotions.Visible = False
+        Me.valu_emotions.Visible = false
         '
         'Select_emotions
         '
         Me.Select_emotions.BackColor = System.Drawing.SystemColors.Window
         Me.Select_emotions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_emotions.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_emotions.FormattingEnabled = True
+        Me.Select_emotions.FormattingEnabled = true
         Me.Select_emotions.Items.AddRange(New Object() {"Normal", "Happy", "Angry", "Sad", "In love"})
         Me.Select_emotions.Location = New System.Drawing.Point(2, 2)
         Me.Select_emotions.Name = "Select_emotions"
@@ -5510,15 +5799,15 @@ Partial Class TL_SaveEditor
         Me.Icon_interaction.Name = "Icon_interaction"
         Me.Icon_interaction.Size = New System.Drawing.Size(30, 26)
         Me.Icon_interaction.TabIndex = 163
-        Me.Icon_interaction.TabStop = False
-        Me.Icon_interaction.Visible = False
+        Me.Icon_interaction.TabStop = false
+        Me.Icon_interaction.Visible = false
         '
         'Info_interaction
         '
-        Me.Info_interaction.AutoSize = True
+        Me.Info_interaction.AutoSize = true
         Me.Info_interaction.BackColor = System.Drawing.Color.Transparent
         Me.Info_interaction.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_interaction.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_interaction.Font = New System.Drawing.Font("Harlow Solid Italic", 12!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic),System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Info_interaction.ForeColor = System.Drawing.Color.Blue
         Me.Info_interaction.Location = New System.Drawing.Point(464, 78)
         Me.Info_interaction.Name = "Info_interaction"
@@ -5545,7 +5834,7 @@ Partial Class TL_SaveEditor
         Me.valu_target2.Size = New System.Drawing.Size(86, 16)
         Me.valu_target2.TabIndex = 186
         Me.valu_target2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_target2.Visible = False
+        Me.valu_target2.Visible = false
         '
         'Select_target2
         '
@@ -5553,7 +5842,7 @@ Partial Class TL_SaveEditor
         Me.Select_target2.DisplayMember = "0"
         Me.Select_target2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_target2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_target2.FormattingEnabled = True
+        Me.Select_target2.FormattingEnabled = true
         Me.Select_target2.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
         Me.Select_target2.Location = New System.Drawing.Point(2, 2)
         Me.Select_target2.Name = "Select_target2"
@@ -5579,7 +5868,7 @@ Partial Class TL_SaveEditor
         Me.valu_target1.Size = New System.Drawing.Size(86, 16)
         Me.valu_target1.TabIndex = 186
         Me.valu_target1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_target1.Visible = False
+        Me.valu_target1.Visible = false
         '
         'Select_target1
         '
@@ -5587,7 +5876,7 @@ Partial Class TL_SaveEditor
         Me.Select_target1.DisplayMember = "0"
         Me.Select_target1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_target1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_target1.FormattingEnabled = True
+        Me.Select_target1.FormattingEnabled = true
         Me.Select_target1.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
         Me.Select_target1.Location = New System.Drawing.Point(2, 2)
         Me.Select_target1.Name = "Select_target1"
@@ -5608,7 +5897,7 @@ Partial Class TL_SaveEditor
         Me.Select_interaction.BackColor = System.Drawing.SystemColors.Window
         Me.Select_interaction.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_interaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_interaction.FormattingEnabled = True
+        Me.Select_interaction.FormattingEnabled = true
         Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm hungry", "I'm hungry(1)", "I'm hungry(2)", "In love with", "angry at", "angry at(1)", "In love with (undecided)", "Dream", "I need new clothes", "I need new clothes (something classy)", "I need new clothes (to do sports)", "Can I tell you about my [love stories? / my wife?]", "Sad : love rejected", "Want to get married", "I think {Mii} wants to be my friend", "Thanks for the other day (give money)", "I am thirsty", "Do you want to listen an imitation of {Mii} ?", "I have feelings to {Mii}", "I would like to be friend with {Mii}", "I would like to take {Mii} somewhere"})
         Me.Select_interaction.Location = New System.Drawing.Point(2, 2)
         Me.Select_interaction.Name = "Select_interaction"
@@ -5624,7 +5913,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemmii_1.Size = New System.Drawing.Size(40, 16)
         Me.valu_itemmii_1.TabIndex = 79
         Me.valu_itemmii_1.Value = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_itemmii_1.Visible = False
+        Me.valu_itemmii_1.Visible = false
         '
         'valu_itemmii_4
         '
@@ -5635,7 +5924,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemmii_4.Size = New System.Drawing.Size(40, 16)
         Me.valu_itemmii_4.TabIndex = 82
         Me.valu_itemmii_4.Value = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_itemmii_4.Visible = False
+        Me.valu_itemmii_4.Visible = false
         '
         'valu_itemmii_2
         '
@@ -5646,7 +5935,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemmii_2.Size = New System.Drawing.Size(40, 16)
         Me.valu_itemmii_2.TabIndex = 80
         Me.valu_itemmii_2.Value = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_itemmii_2.Visible = False
+        Me.valu_itemmii_2.Visible = false
         '
         'valu_itemmii_3
         '
@@ -5657,7 +5946,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemmii_3.Size = New System.Drawing.Size(40, 16)
         Me.valu_itemmii_3.TabIndex = 81
         Me.valu_itemmii_3.Value = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_itemmii_3.Visible = False
+        Me.valu_itemmii_3.Visible = false
         '
         'Icon_itemmii_4
         '
@@ -5668,7 +5957,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_4.Name = "Icon_itemmii_4"
         Me.Icon_itemmii_4.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_4.TabIndex = 47
-        Me.Icon_itemmii_4.TabStop = False
+        Me.Icon_itemmii_4.TabStop = false
         '
         'Icon_itemmii_5
         '
@@ -5679,7 +5968,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_5.Name = "Icon_itemmii_5"
         Me.Icon_itemmii_5.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_5.TabIndex = 48
-        Me.Icon_itemmii_5.TabStop = False
+        Me.Icon_itemmii_5.TabStop = false
         '
         'Title_foods_worst
         '
@@ -5700,11 +5989,11 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_6.Name = "Icon_itemmii_6"
         Me.Icon_itemmii_6.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_6.TabIndex = 49
-        Me.Icon_itemmii_6.TabStop = False
+        Me.Icon_itemmii_6.TabStop = false
         '
         'Title_foods_favorite
         '
-        Me.Title_foods_favorite.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Title_foods_favorite.BackColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
         Me.Title_foods_favorite.ForeColor = System.Drawing.Color.White
         Me.Title_foods_favorite.Location = New System.Drawing.Point(152, 103)
         Me.Title_foods_favorite.Name = "Title_foods_favorite"
@@ -5721,7 +6010,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_7.Name = "Icon_itemmii_7"
         Me.Icon_itemmii_7.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_7.TabIndex = 50
-        Me.Icon_itemmii_7.TabStop = False
+        Me.Icon_itemmii_7.TabStop = false
         '
         'Title_foods_allfav
         '
@@ -5742,18 +6031,18 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_8.Name = "Icon_itemmii_8"
         Me.Icon_itemmii_8.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_8.TabIndex = 51
-        Me.Icon_itemmii_8.TabStop = False
+        Me.Icon_itemmii_8.TabStop = false
         '
         'Label29
         '
-        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
         Me.Label29.ForeColor = System.Drawing.Color.White
         Me.Label29.Location = New System.Drawing.Point(434, 95)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(101, 13)
         Me.Label29.TabIndex = 117
         Me.Label29.Text = "Sweetheart"
-        Me.Label29.Visible = False
+        Me.Label29.Visible = false
         '
         'Icon_itemmii_3
         '
@@ -5764,18 +6053,18 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_3.Name = "Icon_itemmii_3"
         Me.Icon_itemmii_3.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_3.TabIndex = 46
-        Me.Icon_itemmii_3.TabStop = False
+        Me.Icon_itemmii_3.TabStop = false
         '
         'Label28
         '
-        Me.Label28.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Label28.BackColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
         Me.Label28.ForeColor = System.Drawing.Color.White
         Me.Label28.Location = New System.Drawing.Point(434, 130)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(101, 13)
         Me.Label28.TabIndex = 116
         Me.Label28.Text = "Best Friend"
-        Me.Label28.Visible = False
+        Me.Label28.Visible = false
         '
         'Icon_itemmii_2
         '
@@ -5786,11 +6075,11 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_2.Name = "Icon_itemmii_2"
         Me.Icon_itemmii_2.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_2.TabIndex = 45
-        Me.Icon_itemmii_2.TabStop = False
+        Me.Icon_itemmii_2.TabStop = false
         '
         'Text_level
         '
-        Me.Text_level.AutoSize = True
+        Me.Text_level.AutoSize = true
         Me.Text_level.BackColor = System.Drawing.Color.Transparent
         Me.Text_level.Location = New System.Drawing.Point(247, 21)
         Me.Text_level.Name = "Text_level"
@@ -5807,7 +6096,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_1.Name = "Icon_itemmii_1"
         Me.Icon_itemmii_1.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_1.TabIndex = 44
-        Me.Icon_itemmii_1.TabStop = False
+        Me.Icon_itemmii_1.TabStop = false
         '
         'Icon_experience
         '
@@ -5818,7 +6107,7 @@ Partial Class TL_SaveEditor
         Me.Icon_experience.Name = "Icon_experience"
         Me.Icon_experience.Size = New System.Drawing.Size(159, 22)
         Me.Icon_experience.TabIndex = 107
-        Me.Icon_experience.TabStop = False
+        Me.Icon_experience.TabStop = false
         '
         'valu_level
         '
@@ -5837,11 +6126,11 @@ Partial Class TL_SaveEditor
         Me.valu_fullness.Size = New System.Drawing.Size(38, 16)
         Me.valu_fullness.TabIndex = 115
         Me.valu_fullness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_fullness.Visible = False
+        Me.valu_fullness.Visible = false
         '
         'Text_fullness
         '
-        Me.Text_fullness.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Text_fullness.BackColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
         Me.Text_fullness.ForeColor = System.Drawing.Color.White
         Me.Text_fullness.Location = New System.Drawing.Point(390, 41)
         Me.Text_fullness.Name = "Text_fullness"
@@ -5851,25 +6140,25 @@ Partial Class TL_SaveEditor
         '
         'Check_fullness
         '
-        Me.Check_fullness.AutoSize = True
+        Me.Check_fullness.AutoSize = true
         Me.Check_fullness.BackColor = System.Drawing.Color.Transparent
         Me.Check_fullness.Location = New System.Drawing.Point(375, 76)
         Me.Check_fullness.Name = "Check_fullness"
         Me.Check_fullness.Size = New System.Drawing.Size(85, 17)
         Me.Check_fullness.TabIndex = 111
-        Me.Check_fullness.TabStop = True
+        Me.Check_fullness.TabStop = true
         Me.Check_fullness.Text = "He didn't eat"
-        Me.Check_fullness.UseVisualStyleBackColor = False
+        Me.Check_fullness.UseVisualStyleBackColor = false
         '
         'PictureBox34
         '
         Me.PictureBox34.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox34.Image = CType(resources.GetObject("PictureBox34.Image"), System.Drawing.Image)
+        Me.PictureBox34.Image = CType(resources.GetObject("PictureBox34.Image"),System.Drawing.Image)
         Me.PictureBox34.Location = New System.Drawing.Point(63, 253)
         Me.PictureBox34.Name = "PictureBox34"
         Me.PictureBox34.Size = New System.Drawing.Size(23, 23)
         Me.PictureBox34.TabIndex = 113
-        Me.PictureBox34.TabStop = False
+        Me.PictureBox34.TabStop = false
         '
         'valu_economy
         '
@@ -5890,7 +6179,7 @@ Partial Class TL_SaveEditor
         Me.Icon_fullness.Name = "Icon_fullness"
         Me.Icon_fullness.Size = New System.Drawing.Size(55, 50)
         Me.Icon_fullness.TabIndex = 109
-        Me.Icon_fullness.TabStop = False
+        Me.Icon_fullness.TabStop = false
         '
         'valu_exp
         '
@@ -5905,7 +6194,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_allfav_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_allfav_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_allfav_2.FormattingEnabled = True
+        Me.Select_allfav_2.FormattingEnabled = true
         Me.Select_allfav_2.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
         Me.Select_allfav_2.Location = New System.Drawing.Point(163, 79)
         Me.Select_allfav_2.Name = "Select_allfav_2"
@@ -5927,7 +6216,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_fav_3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_fav_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_fav_3.FormattingEnabled = True
+        Me.Select_fav_3.FormattingEnabled = true
         Me.Select_fav_3.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
         Me.Select_fav_3.Location = New System.Drawing.Point(163, 163)
         Me.Select_fav_3.Name = "Select_fav_3"
@@ -5938,7 +6227,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_fav_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_fav_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_fav_2.FormattingEnabled = True
+        Me.Select_fav_2.FormattingEnabled = true
         Me.Select_fav_2.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
         Me.Select_fav_2.Location = New System.Drawing.Point(163, 141)
         Me.Select_fav_2.Name = "Select_fav_2"
@@ -5949,7 +6238,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_fav_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_fav_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_fav_1.FormattingEnabled = True
+        Me.Select_fav_1.FormattingEnabled = true
         Me.Select_fav_1.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
         Me.Select_fav_1.Location = New System.Drawing.Point(163, 119)
         Me.Select_fav_1.Name = "Select_fav_1"
@@ -5993,7 +6282,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_worst_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_worst_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_worst_2.FormattingEnabled = True
+        Me.Select_worst_2.FormattingEnabled = true
         Me.Select_worst_2.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
         Me.Select_worst_2.Location = New System.Drawing.Point(163, 227)
         Me.Select_worst_2.Name = "Select_worst_2"
@@ -6004,7 +6293,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_worst_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_worst_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_worst_1.FormattingEnabled = True
+        Me.Select_worst_1.FormattingEnabled = true
         Me.Select_worst_1.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
         Me.Select_worst_1.Location = New System.Drawing.Point(163, 205)
         Me.Select_worst_1.Name = "Select_worst_1"
@@ -6037,7 +6326,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_allfav_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_allfav_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_allfav_1.FormattingEnabled = True
+        Me.Select_allfav_1.FormattingEnabled = true
         Me.Select_allfav_1.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
         Me.Select_allfav_1.Location = New System.Drawing.Point(163, 57)
         Me.Select_allfav_1.Name = "Select_allfav_1"
@@ -6058,6 +6347,9 @@ Partial Class TL_SaveEditor
         'Tab_mii_friendlist
         '
         Me.Tab_mii_friendlist.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
+        Me.Tab_mii_friendlist.Controls.Add(Me.PictureBox54)
+        Me.Tab_mii_friendlist.Controls.Add(Me.PictureBox53)
+        Me.Tab_mii_friendlist.Controls.Add(Me.PictureBox52)
         Me.Tab_mii_friendlist.Controls.Add(Me.Text_danger_friendlist)
         Me.Tab_mii_friendlist.Controls.Add(Me.Danger_friendlist)
         Me.Tab_mii_friendlist.Controls.Add(Me.valu_selfriend_rela_30)
@@ -6094,7 +6386,6 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Controls.Add(Me.PictureBox1)
         Me.Tab_mii_friendlist.Controls.Add(Me.Panel8)
         Me.Tab_mii_friendlist.Controls.Add(Me.Panel7)
-        Me.Tab_mii_friendlist.Controls.Add(Me.Label36)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_30)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_29)
         Me.Tab_mii_friendlist.Controls.Add(Me.Select_friend_rela_28)
@@ -6191,30 +6482,30 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.Size = New System.Drawing.Size(585, 429)
         Me.Tab_mii_friendlist.TabIndex = 2
         Me.Tab_mii_friendlist.Text = "Friends list"
-        Me.Tab_mii_friendlist.UseVisualStyleBackColor = True
+        Me.Tab_mii_friendlist.UseVisualStyleBackColor = true
         '
         'Text_danger_friendlist
         '
-        Me.Text_danger_friendlist.AutoSize = True
+        Me.Text_danger_friendlist.AutoSize = true
         Me.Text_danger_friendlist.ForeColor = System.Drawing.Color.Red
         Me.Text_danger_friendlist.Location = New System.Drawing.Point(26, 5)
         Me.Text_danger_friendlist.Name = "Text_danger_friendlist"
         Me.Text_danger_friendlist.Size = New System.Drawing.Size(404, 13)
         Me.Text_danger_friendlist.TabIndex = 227
-        Me.Text_danger_friendlist.Text = "If your save file is corrupted, report this issue (your save file backup is in ''" & _
+        Me.Text_danger_friendlist.Text = "If your save file is corrupted, report this issue (your save file backup is in ''"& _ 
     "bak'' folder)"
-        Me.Text_danger_friendlist.Visible = False
+        Me.Text_danger_friendlist.Visible = false
         '
         'Danger_friendlist
         '
         Me.Danger_friendlist.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Danger_friendlist.Image = CType(resources.GetObject("Danger_friendlist.Image"), System.Drawing.Image)
+        Me.Danger_friendlist.Image = CType(resources.GetObject("Danger_friendlist.Image"),System.Drawing.Image)
         Me.Danger_friendlist.Location = New System.Drawing.Point(3, 1)
         Me.Danger_friendlist.Name = "Danger_friendlist"
         Me.Danger_friendlist.Size = New System.Drawing.Size(20, 20)
         Me.Danger_friendlist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Danger_friendlist.TabIndex = 226
-        Me.Danger_friendlist.TabStop = False
+        Me.Danger_friendlist.TabStop = false
         '
         'valu_selfriend_rela_30
         '
@@ -6225,7 +6516,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_30.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_30.TabIndex = 225
         Me.valu_selfriend_rela_30.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_30.Visible = False
+        Me.valu_selfriend_rela_30.Visible = false
         '
         'valu_selfriend_rela_29
         '
@@ -6236,7 +6527,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_29.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_29.TabIndex = 224
         Me.valu_selfriend_rela_29.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_29.Visible = False
+        Me.valu_selfriend_rela_29.Visible = false
         '
         'valu_selfriend_rela_28
         '
@@ -6247,7 +6538,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_28.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_28.TabIndex = 223
         Me.valu_selfriend_rela_28.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_28.Visible = False
+        Me.valu_selfriend_rela_28.Visible = false
         '
         'valu_selfriend_rela_27
         '
@@ -6258,7 +6549,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_27.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_27.TabIndex = 222
         Me.valu_selfriend_rela_27.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_27.Visible = False
+        Me.valu_selfriend_rela_27.Visible = false
         '
         'valu_selfriend_rela_26
         '
@@ -6269,7 +6560,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_26.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_26.TabIndex = 221
         Me.valu_selfriend_rela_26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_26.Visible = False
+        Me.valu_selfriend_rela_26.Visible = false
         '
         'valu_selfriend_rela_25
         '
@@ -6280,7 +6571,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_25.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_25.TabIndex = 220
         Me.valu_selfriend_rela_25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_25.Visible = False
+        Me.valu_selfriend_rela_25.Visible = false
         '
         'valu_selfriend_rela_24
         '
@@ -6291,7 +6582,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_24.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_24.TabIndex = 219
         Me.valu_selfriend_rela_24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_24.Visible = False
+        Me.valu_selfriend_rela_24.Visible = false
         '
         'valu_selfriend_rela_23
         '
@@ -6302,7 +6593,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_23.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_23.TabIndex = 218
         Me.valu_selfriend_rela_23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_23.Visible = False
+        Me.valu_selfriend_rela_23.Visible = false
         '
         'valu_selfriend_rela_22
         '
@@ -6313,7 +6604,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_22.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_22.TabIndex = 217
         Me.valu_selfriend_rela_22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_22.Visible = False
+        Me.valu_selfriend_rela_22.Visible = false
         '
         'valu_selfriend_rela_21
         '
@@ -6324,7 +6615,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_21.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_21.TabIndex = 216
         Me.valu_selfriend_rela_21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_21.Visible = False
+        Me.valu_selfriend_rela_21.Visible = false
         '
         'valu_selfriend_rela_20
         '
@@ -6335,7 +6626,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_20.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_20.TabIndex = 215
         Me.valu_selfriend_rela_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_20.Visible = False
+        Me.valu_selfriend_rela_20.Visible = false
         '
         'valu_selfriend_rela_19
         '
@@ -6346,7 +6637,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_19.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_19.TabIndex = 214
         Me.valu_selfriend_rela_19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_19.Visible = False
+        Me.valu_selfriend_rela_19.Visible = false
         '
         'valu_selfriend_rela_18
         '
@@ -6357,7 +6648,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_18.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_18.TabIndex = 213
         Me.valu_selfriend_rela_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_18.Visible = False
+        Me.valu_selfriend_rela_18.Visible = false
         '
         'valu_selfriend_rela_17
         '
@@ -6368,7 +6659,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_17.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_17.TabIndex = 212
         Me.valu_selfriend_rela_17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_17.Visible = False
+        Me.valu_selfriend_rela_17.Visible = false
         '
         'valu_selfriend_rela_16
         '
@@ -6379,7 +6670,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_16.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_16.TabIndex = 211
         Me.valu_selfriend_rela_16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_16.Visible = False
+        Me.valu_selfriend_rela_16.Visible = false
         '
         'valu_selfriend_rela_15
         '
@@ -6390,7 +6681,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_15.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_15.TabIndex = 210
         Me.valu_selfriend_rela_15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_15.Visible = False
+        Me.valu_selfriend_rela_15.Visible = false
         '
         'valu_selfriend_rela_14
         '
@@ -6401,7 +6692,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_14.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_14.TabIndex = 209
         Me.valu_selfriend_rela_14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_14.Visible = False
+        Me.valu_selfriend_rela_14.Visible = false
         '
         'valu_selfriend_rela_13
         '
@@ -6412,7 +6703,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_13.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_13.TabIndex = 208
         Me.valu_selfriend_rela_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_13.Visible = False
+        Me.valu_selfriend_rela_13.Visible = false
         '
         'valu_selfriend_rela_12
         '
@@ -6423,7 +6714,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_12.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_12.TabIndex = 207
         Me.valu_selfriend_rela_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_12.Visible = False
+        Me.valu_selfriend_rela_12.Visible = false
         '
         'valu_selfriend_rela_11
         '
@@ -6434,7 +6725,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_11.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_11.TabIndex = 206
         Me.valu_selfriend_rela_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_11.Visible = False
+        Me.valu_selfriend_rela_11.Visible = false
         '
         'valu_selfriend_rela_10
         '
@@ -6445,7 +6736,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_10.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_10.TabIndex = 205
         Me.valu_selfriend_rela_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_10.Visible = False
+        Me.valu_selfriend_rela_10.Visible = false
         '
         'valu_selfriend_rela_9
         '
@@ -6456,7 +6747,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_9.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_9.TabIndex = 204
         Me.valu_selfriend_rela_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_9.Visible = False
+        Me.valu_selfriend_rela_9.Visible = false
         '
         'valu_selfriend_rela_8
         '
@@ -6467,7 +6758,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_8.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_8.TabIndex = 203
         Me.valu_selfriend_rela_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_8.Visible = False
+        Me.valu_selfriend_rela_8.Visible = false
         '
         'valu_selfriend_rela_7
         '
@@ -6478,7 +6769,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_7.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_7.TabIndex = 202
         Me.valu_selfriend_rela_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_7.Visible = False
+        Me.valu_selfriend_rela_7.Visible = false
         '
         'valu_selfriend_rela_6
         '
@@ -6489,7 +6780,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_6.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_6.TabIndex = 201
         Me.valu_selfriend_rela_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_6.Visible = False
+        Me.valu_selfriend_rela_6.Visible = false
         '
         'valu_selfriend_rela_5
         '
@@ -6500,7 +6791,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_5.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_5.TabIndex = 200
         Me.valu_selfriend_rela_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_5.Visible = False
+        Me.valu_selfriend_rela_5.Visible = false
         '
         'valu_selfriend_rela_4
         '
@@ -6511,7 +6802,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_4.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_4.TabIndex = 199
         Me.valu_selfriend_rela_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_4.Visible = False
+        Me.valu_selfriend_rela_4.Visible = false
         '
         'valu_selfriend_rela_3
         '
@@ -6522,7 +6813,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_3.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_3.TabIndex = 198
         Me.valu_selfriend_rela_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_3.Visible = False
+        Me.valu_selfriend_rela_3.Visible = false
         '
         'valu_selfriend_rela_2
         '
@@ -6533,7 +6824,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_2.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_2.TabIndex = 197
         Me.valu_selfriend_rela_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_2.Visible = False
+        Me.valu_selfriend_rela_2.Visible = false
         '
         'valu_selfriend_rela_1
         '
@@ -6544,7 +6835,7 @@ Partial Class TL_SaveEditor
         Me.valu_selfriend_rela_1.Size = New System.Drawing.Size(43, 16)
         Me.valu_selfriend_rela_1.TabIndex = 196
         Me.valu_selfriend_rela_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selfriend_rela_1.Visible = False
+        Me.valu_selfriend_rela_1.Visible = false
         '
         'PictureBox2
         '
@@ -6554,7 +6845,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox2.Size = New System.Drawing.Size(100, 36)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 195
-        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.TabStop = false
         '
         'PictureBox1
         '
@@ -6564,7 +6855,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox1.Size = New System.Drawing.Size(100, 36)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 194
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.TabStop = false
         '
         'Panel8
         '
@@ -6601,7 +6892,7 @@ Partial Class TL_SaveEditor
         Me.Button_setallfriends.Size = New System.Drawing.Size(89, 21)
         Me.Button_setallfriends.TabIndex = 194
         Me.Button_setallfriends.Text = "Set all to"
-        Me.Button_setallfriends.UseVisualStyleBackColor = False
+        Me.Button_setallfriends.UseVisualStyleBackColor = false
         '
         'Panel7
         '
@@ -6618,35 +6909,21 @@ Partial Class TL_SaveEditor
         Me.Select_allfriends.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Select_allfriends.DisplayMember = "0"
         Me.Select_allfriends.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_allfriends.Enabled = False
+        Me.Select_allfriends.Enabled = false
         Me.Select_allfriends.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_allfriends.FormattingEnabled = True
+        Me.Select_allfriends.FormattingEnabled = true
         Me.Select_allfriends.Items.AddRange(New Object() {"Mii 1 to 30", "Mii 31 to 60", "Mii 61 to 90", "Mii 91 to 100"})
         Me.Select_allfriends.Location = New System.Drawing.Point(5, 2)
         Me.Select_allfriends.Name = "Select_allfriends"
         Me.Select_allfriends.Size = New System.Drawing.Size(122, 21)
         Me.Select_allfriends.TabIndex = 0
         '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.BackColor = System.Drawing.Color.Transparent
-        Me.Label36.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Label36.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.ForeColor = System.Drawing.Color.Blue
-        Me.Label36.Location = New System.Drawing.Point(567, 4)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(14, 20)
-        Me.Label36.TabIndex = 191
-        Me.Label36.Text = "i"
-        Me.Label36.Visible = False
-        '
         'Select_friend_rela_30
         '
         Me.Select_friend_rela_30.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_30.FormattingEnabled = True
+        Me.Select_friend_rela_30.FormattingEnabled = true
         Me.Select_friend_rela_30.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_30.Location = New System.Drawing.Point(490, 353)
         Me.Select_friend_rela_30.Name = "Select_friend_rela_30"
@@ -6658,7 +6935,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_29.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_29.FormattingEnabled = True
+        Me.Select_friend_rela_29.FormattingEnabled = true
         Me.Select_friend_rela_29.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_29.Location = New System.Drawing.Point(394, 353)
         Me.Select_friend_rela_29.Name = "Select_friend_rela_29"
@@ -6670,7 +6947,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_28.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_28.FormattingEnabled = True
+        Me.Select_friend_rela_28.FormattingEnabled = true
         Me.Select_friend_rela_28.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_28.Location = New System.Drawing.Point(298, 353)
         Me.Select_friend_rela_28.Name = "Select_friend_rela_28"
@@ -6682,7 +6959,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_27.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_27.FormattingEnabled = True
+        Me.Select_friend_rela_27.FormattingEnabled = true
         Me.Select_friend_rela_27.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_27.Location = New System.Drawing.Point(202, 353)
         Me.Select_friend_rela_27.Name = "Select_friend_rela_27"
@@ -6694,7 +6971,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_26.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_26.FormattingEnabled = True
+        Me.Select_friend_rela_26.FormattingEnabled = true
         Me.Select_friend_rela_26.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_26.Location = New System.Drawing.Point(106, 353)
         Me.Select_friend_rela_26.Name = "Select_friend_rela_26"
@@ -6706,7 +6983,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_25.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_25.FormattingEnabled = True
+        Me.Select_friend_rela_25.FormattingEnabled = true
         Me.Select_friend_rela_25.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_25.Location = New System.Drawing.Point(10, 353)
         Me.Select_friend_rela_25.Name = "Select_friend_rela_25"
@@ -6832,7 +7109,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_24.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_24.FormattingEnabled = True
+        Me.Select_friend_rela_24.FormattingEnabled = true
         Me.Select_friend_rela_24.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_24.Location = New System.Drawing.Point(490, 277)
         Me.Select_friend_rela_24.Name = "Select_friend_rela_24"
@@ -6844,7 +7121,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_23.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_23.FormattingEnabled = True
+        Me.Select_friend_rela_23.FormattingEnabled = true
         Me.Select_friend_rela_23.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_23.Location = New System.Drawing.Point(394, 277)
         Me.Select_friend_rela_23.Name = "Select_friend_rela_23"
@@ -6856,7 +7133,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_22.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_22.FormattingEnabled = True
+        Me.Select_friend_rela_22.FormattingEnabled = true
         Me.Select_friend_rela_22.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_22.Location = New System.Drawing.Point(298, 277)
         Me.Select_friend_rela_22.Name = "Select_friend_rela_22"
@@ -6868,7 +7145,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_21.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_21.FormattingEnabled = True
+        Me.Select_friend_rela_21.FormattingEnabled = true
         Me.Select_friend_rela_21.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_21.Location = New System.Drawing.Point(202, 277)
         Me.Select_friend_rela_21.Name = "Select_friend_rela_21"
@@ -6880,7 +7157,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_20.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_20.FormattingEnabled = True
+        Me.Select_friend_rela_20.FormattingEnabled = true
         Me.Select_friend_rela_20.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_20.Location = New System.Drawing.Point(106, 277)
         Me.Select_friend_rela_20.Name = "Select_friend_rela_20"
@@ -6892,7 +7169,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_19.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_19.FormattingEnabled = True
+        Me.Select_friend_rela_19.FormattingEnabled = true
         Me.Select_friend_rela_19.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_19.Location = New System.Drawing.Point(10, 277)
         Me.Select_friend_rela_19.Name = "Select_friend_rela_19"
@@ -7018,7 +7295,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_18.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_18.FormattingEnabled = True
+        Me.Select_friend_rela_18.FormattingEnabled = true
         Me.Select_friend_rela_18.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_18.Location = New System.Drawing.Point(490, 205)
         Me.Select_friend_rela_18.Name = "Select_friend_rela_18"
@@ -7030,7 +7307,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_17.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_17.FormattingEnabled = True
+        Me.Select_friend_rela_17.FormattingEnabled = true
         Me.Select_friend_rela_17.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_17.Location = New System.Drawing.Point(394, 205)
         Me.Select_friend_rela_17.Name = "Select_friend_rela_17"
@@ -7042,7 +7319,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_16.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_16.FormattingEnabled = True
+        Me.Select_friend_rela_16.FormattingEnabled = true
         Me.Select_friend_rela_16.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_16.Location = New System.Drawing.Point(298, 205)
         Me.Select_friend_rela_16.Name = "Select_friend_rela_16"
@@ -7054,7 +7331,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_15.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_15.FormattingEnabled = True
+        Me.Select_friend_rela_15.FormattingEnabled = true
         Me.Select_friend_rela_15.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_15.Location = New System.Drawing.Point(202, 205)
         Me.Select_friend_rela_15.Name = "Select_friend_rela_15"
@@ -7066,7 +7343,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_14.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_14.FormattingEnabled = True
+        Me.Select_friend_rela_14.FormattingEnabled = true
         Me.Select_friend_rela_14.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_14.Location = New System.Drawing.Point(106, 205)
         Me.Select_friend_rela_14.Name = "Select_friend_rela_14"
@@ -7078,7 +7355,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_13.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_13.FormattingEnabled = True
+        Me.Select_friend_rela_13.FormattingEnabled = true
         Me.Select_friend_rela_13.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_13.Location = New System.Drawing.Point(10, 205)
         Me.Select_friend_rela_13.Name = "Select_friend_rela_13"
@@ -7204,7 +7481,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_12.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_12.FormattingEnabled = True
+        Me.Select_friend_rela_12.FormattingEnabled = true
         Me.Select_friend_rela_12.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_12.Location = New System.Drawing.Point(490, 131)
         Me.Select_friend_rela_12.Name = "Select_friend_rela_12"
@@ -7216,7 +7493,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_11.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_11.FormattingEnabled = True
+        Me.Select_friend_rela_11.FormattingEnabled = true
         Me.Select_friend_rela_11.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_11.Location = New System.Drawing.Point(394, 131)
         Me.Select_friend_rela_11.Name = "Select_friend_rela_11"
@@ -7228,7 +7505,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_10.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_10.FormattingEnabled = True
+        Me.Select_friend_rela_10.FormattingEnabled = true
         Me.Select_friend_rela_10.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_10.Location = New System.Drawing.Point(298, 131)
         Me.Select_friend_rela_10.Name = "Select_friend_rela_10"
@@ -7240,7 +7517,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_9.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_9.FormattingEnabled = True
+        Me.Select_friend_rela_9.FormattingEnabled = true
         Me.Select_friend_rela_9.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_9.Location = New System.Drawing.Point(202, 131)
         Me.Select_friend_rela_9.Name = "Select_friend_rela_9"
@@ -7252,7 +7529,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_8.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_8.FormattingEnabled = True
+        Me.Select_friend_rela_8.FormattingEnabled = true
         Me.Select_friend_rela_8.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_8.Location = New System.Drawing.Point(106, 131)
         Me.Select_friend_rela_8.Name = "Select_friend_rela_8"
@@ -7264,7 +7541,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_7.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_7.FormattingEnabled = True
+        Me.Select_friend_rela_7.FormattingEnabled = true
         Me.Select_friend_rela_7.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_7.Location = New System.Drawing.Point(10, 131)
         Me.Select_friend_rela_7.Name = "Select_friend_rela_7"
@@ -7390,7 +7667,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_6.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_6.FormattingEnabled = True
+        Me.Select_friend_rela_6.FormattingEnabled = true
         Me.Select_friend_rela_6.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_6.Location = New System.Drawing.Point(490, 59)
         Me.Select_friend_rela_6.Name = "Select_friend_rela_6"
@@ -7402,7 +7679,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_5.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_5.FormattingEnabled = True
+        Me.Select_friend_rela_5.FormattingEnabled = true
         Me.Select_friend_rela_5.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_5.Location = New System.Drawing.Point(394, 59)
         Me.Select_friend_rela_5.Name = "Select_friend_rela_5"
@@ -7414,7 +7691,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_4.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_4.FormattingEnabled = True
+        Me.Select_friend_rela_4.FormattingEnabled = true
         Me.Select_friend_rela_4.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_4.Location = New System.Drawing.Point(298, 59)
         Me.Select_friend_rela_4.Name = "Select_friend_rela_4"
@@ -7426,7 +7703,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_3.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_3.FormattingEnabled = True
+        Me.Select_friend_rela_3.FormattingEnabled = true
         Me.Select_friend_rela_3.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_3.Location = New System.Drawing.Point(202, 59)
         Me.Select_friend_rela_3.Name = "Select_friend_rela_3"
@@ -7438,7 +7715,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_2.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_2.FormattingEnabled = True
+        Me.Select_friend_rela_2.FormattingEnabled = true
         Me.Select_friend_rela_2.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_2.Location = New System.Drawing.Point(106, 59)
         Me.Select_friend_rela_2.Name = "Select_friend_rela_2"
@@ -7450,7 +7727,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_1.BackColor = System.Drawing.SystemColors.Window
         Me.Select_friend_rela_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_friend_rela_1.FormattingEnabled = True
+        Me.Select_friend_rela_1.FormattingEnabled = true
         Me.Select_friend_rela_1.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
         Me.Select_friend_rela_1.Location = New System.Drawing.Point(10, 59)
         Me.Select_friend_rela_1.Name = "Select_friend_rela_1"
@@ -7574,6 +7851,8 @@ Partial Class TL_SaveEditor
         'Tab_mii_extras
         '
         Me.Tab_mii_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_extras.Controls.Add(Me.PictureBox56)
+        Me.Tab_mii_extras.Controls.Add(Me.PictureBox55)
         Me.Tab_mii_extras.Controls.Add(Me.valu_ranking_splurge)
         Me.Tab_mii_extras.Controls.Add(Me.Title_ranking_splurge)
         Me.Tab_mii_extras.Controls.Add(Me.Icon_ranking_splurge)
@@ -7586,7 +7865,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_extras.Size = New System.Drawing.Size(585, 429)
         Me.Tab_mii_extras.TabIndex = 3
         Me.Tab_mii_extras.Text = "Extras"
-        Me.Tab_mii_extras.UseVisualStyleBackColor = True
+        Me.Tab_mii_extras.UseVisualStyleBackColor = true
         '
         'valu_ranking_splurge
         '
@@ -7597,7 +7876,7 @@ Partial Class TL_SaveEditor
         Me.valu_ranking_splurge.Size = New System.Drawing.Size(93, 16)
         Me.valu_ranking_splurge.TabIndex = 11
         Me.valu_ranking_splurge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_ranking_splurge.ThousandsSeparator = True
+        Me.valu_ranking_splurge.ThousandsSeparator = true
         '
         'Title_ranking_splurge
         '
@@ -7611,12 +7890,12 @@ Partial Class TL_SaveEditor
         '
         'Icon_ranking_splurge
         '
-        Me.Icon_ranking_splurge.Image = CType(resources.GetObject("Icon_ranking_splurge.Image"), System.Drawing.Image)
+        Me.Icon_ranking_splurge.Image = CType(resources.GetObject("Icon_ranking_splurge.Image"),System.Drawing.Image)
         Me.Icon_ranking_splurge.Location = New System.Drawing.Point(218, 227)
         Me.Icon_ranking_splurge.Name = "Icon_ranking_splurge"
         Me.Icon_ranking_splurge.Size = New System.Drawing.Size(50, 64)
         Me.Icon_ranking_splurge.TabIndex = 9
-        Me.Icon_ranking_splurge.TabStop = False
+        Me.Icon_ranking_splurge.TabStop = false
         '
         'valu_ranking_pampered
         '
@@ -7627,7 +7906,7 @@ Partial Class TL_SaveEditor
         Me.valu_ranking_pampered.Size = New System.Drawing.Size(93, 16)
         Me.valu_ranking_pampered.TabIndex = 8
         Me.valu_ranking_pampered.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_ranking_pampered.ThousandsSeparator = True
+        Me.valu_ranking_pampered.ThousandsSeparator = true
         '
         'Title_ranking_pampered
         '
@@ -7641,17 +7920,17 @@ Partial Class TL_SaveEditor
         '
         'Icon_ranking_pampered
         '
-        Me.Icon_ranking_pampered.Image = CType(resources.GetObject("Icon_ranking_pampered.Image"), System.Drawing.Image)
+        Me.Icon_ranking_pampered.Image = CType(resources.GetObject("Icon_ranking_pampered.Image"),System.Drawing.Image)
         Me.Icon_ranking_pampered.Location = New System.Drawing.Point(218, 137)
         Me.Icon_ranking_pampered.Name = "Icon_ranking_pampered"
         Me.Icon_ranking_pampered.Size = New System.Drawing.Size(50, 64)
         Me.Icon_ranking_pampered.TabIndex = 6
-        Me.Icon_ranking_pampered.TabStop = False
+        Me.Icon_ranking_pampered.TabStop = false
         '
         'Panel_save_mii
         '
         Me.Panel_save_mii.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_save_mii.BackgroundImage = CType(resources.GetObject("Panel_save_mii.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_save_mii.BackgroundImage = CType(resources.GetObject("Panel_save_mii.BackgroundImage"),System.Drawing.Image)
         Me.Panel_save_mii.Controls.Add(Me.Text_save_mii)
         Me.Panel_save_mii.Location = New System.Drawing.Point(496, 460)
         Me.Panel_save_mii.Name = "Panel_save_mii"
@@ -7663,8 +7942,8 @@ Partial Class TL_SaveEditor
         Me.Text_save_mii.BackColor = System.Drawing.Color.Transparent
         Me.Text_save_mii.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_save_mii.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_save_mii.Enabled = False
-        Me.Text_save_mii.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_save_mii.Enabled = false
+        Me.Text_save_mii.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Text_save_mii.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_save_mii.Location = New System.Drawing.Point(0, 0)
         Me.Text_save_mii.Name = "Text_save_mii"
@@ -7689,7 +7968,7 @@ Partial Class TL_SaveEditor
         Me.Select_mii.DisplayMember = "0"
         Me.Select_mii.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_mii.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_mii.FormattingEnabled = True
+        Me.Select_mii.FormattingEnabled = true
         Me.Select_mii.Items.AddRange(New Object() {"Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
         Me.Select_mii.Location = New System.Drawing.Point(8, 4)
         Me.Select_mii.Name = "Select_mii"
@@ -7726,14 +8005,14 @@ Partial Class TL_SaveEditor
         Me.Panel_description.Name = "Panel_description"
         Me.Panel_description.Size = New System.Drawing.Size(600, 25)
         Me.Panel_description.TabIndex = 28
-        Me.Panel_description.Visible = False
+        Me.Panel_description.Visible = false
         '
         'Text_description
         '
         Me.Text_description.BackColor = System.Drawing.Color.Transparent
         Me.Text_description.Cursor = System.Windows.Forms.Cursors.Default
         Me.Text_description.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_description.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_description.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Text_description.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_description.Location = New System.Drawing.Point(0, 0)
         Me.Text_description.Name = "Text_description"
@@ -7751,12 +8030,12 @@ Partial Class TL_SaveEditor
         Me.Panel_done.Name = "Panel_done"
         Me.Panel_done.Size = New System.Drawing.Size(124, 46)
         Me.Panel_done.TabIndex = 29
-        Me.Panel_done.Visible = False
+        Me.Panel_done.Visible = false
         '
         'Text_done
         '
         Me.Text_done.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_done.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_done.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Text_done.ForeColor = System.Drawing.Color.White
         Me.Text_done.Location = New System.Drawing.Point(0, 0)
         Me.Text_done.Name = "Text_done"
@@ -7772,7 +8051,7 @@ Partial Class TL_SaveEditor
         'Text_savefileregion
         '
         Me.Text_savefileregion.BackColor = System.Drawing.Color.Transparent
-        Me.Text_savefileregion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_savefileregion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Text_savefileregion.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_savefileregion.Location = New System.Drawing.Point(206, 33)
         Me.Text_savefileregion.Name = "Text_savefileregion"
@@ -7781,13 +8060,927 @@ Partial Class TL_SaveEditor
         Me.Text_savefileregion.Text = "Save file region ->"
         Me.Text_savefileregion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Advhelp
+        '
+        Me.Advhelp.BackColor = System.Drawing.Color.Transparent
+        Me.Advhelp.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
+        Me.Advhelp.Controls.Add(Me.Advhelp_text)
+        Me.Advhelp.Location = New System.Drawing.Point(464, 33)
+        Me.Advhelp.Name = "Advhelp"
+        Me.Advhelp.Size = New System.Drawing.Size(31, 25)
+        Me.Advhelp.TabIndex = 32
+        Me.Advhelp.Visible = false
+        '
+        'Advhelp_text
+        '
+        Me.Advhelp_text.BackColor = System.Drawing.Color.Transparent
+        Me.Advhelp_text.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Advhelp_text.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Advhelp_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Advhelp_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Advhelp_text.Location = New System.Drawing.Point(0, 0)
+        Me.Advhelp_text.Name = "Advhelp_text"
+        Me.Advhelp_text.Size = New System.Drawing.Size(31, 25)
+        Me.Advhelp_text.TabIndex = 0
+        Me.Advhelp_text.Text = "A.?"
+        Me.Advhelp_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox4.Location = New System.Drawing.Point(177, 133)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox4.TabIndex = 67
+        Me.PictureBox4.TabStop = false
+        Me.PictureBox4.Visible = false
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox5.Location = New System.Drawing.Point(176, 177)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox5.TabIndex = 68
+        Me.PictureBox5.TabStop = false
+        Me.PictureBox5.Visible = false
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox6.Location = New System.Drawing.Point(173, 224)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox6.TabIndex = 69
+        Me.PictureBox6.TabStop = false
+        Me.PictureBox6.Visible = false
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox7.Location = New System.Drawing.Point(184, 270)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox7.TabIndex = 70
+        Me.PictureBox7.TabStop = false
+        Me.PictureBox7.Visible = false
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox8.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox8.Location = New System.Drawing.Point(185, 316)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox8.TabIndex = 71
+        Me.PictureBox8.TabStop = false
+        Me.PictureBox8.Visible = false
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox9.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox9.Location = New System.Drawing.Point(162, 426)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox9.TabIndex = 72
+        Me.PictureBox9.TabStop = false
+        Me.PictureBox9.Visible = false
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox10.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox10.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox10.Location = New System.Drawing.Point(573, 187)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox10.TabIndex = 73
+        Me.PictureBox10.TabStop = false
+        Me.PictureBox10.Visible = false
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox11.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox11.Location = New System.Drawing.Point(400, 232)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox11.TabIndex = 74
+        Me.PictureBox11.TabStop = false
+        Me.PictureBox11.Visible = false
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox12.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox12.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox12.Location = New System.Drawing.Point(309, 305)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox12.TabIndex = 75
+        Me.PictureBox12.TabStop = false
+        Me.PictureBox12.Visible = false
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox13.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox13.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox13.Location = New System.Drawing.Point(315, 450)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox13.TabIndex = 76
+        Me.PictureBox13.TabStop = false
+        Me.PictureBox13.Visible = false
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox14.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox14.Location = New System.Drawing.Point(206, 70)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox14.TabIndex = 77
+        Me.PictureBox14.TabStop = false
+        Me.PictureBox14.Visible = false
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox15.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox15.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox15.Location = New System.Drawing.Point(4, 27)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox15.TabIndex = 78
+        Me.PictureBox15.TabStop = false
+        Me.PictureBox15.Visible = false
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox16.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox16.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox16.Location = New System.Drawing.Point(65, 17)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox16.TabIndex = 190
+        Me.PictureBox16.TabStop = false
+        Me.PictureBox16.Visible = false
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox17.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox17.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox17.Location = New System.Drawing.Point(132, 18)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox17.TabIndex = 191
+        Me.PictureBox17.TabStop = false
+        Me.PictureBox17.Visible = false
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox18.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox18.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox18.Location = New System.Drawing.Point(199, 17)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox18.TabIndex = 192
+        Me.PictureBox18.TabStop = false
+        Me.PictureBox18.Visible = false
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox19.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox19.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox19.Location = New System.Drawing.Point(210, 366)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox19.TabIndex = 193
+        Me.PictureBox19.TabStop = false
+        Me.PictureBox19.Visible = false
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox20.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox20.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox20.Location = New System.Drawing.Point(327, 366)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox20.TabIndex = 194
+        Me.PictureBox20.TabStop = false
+        Me.PictureBox20.Visible = false
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox21.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox21.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox21.Location = New System.Drawing.Point(379, 366)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox21.TabIndex = 195
+        Me.PictureBox21.TabStop = false
+        Me.PictureBox21.Visible = false
+        '
+        'PictureBox22
+        '
+        Me.PictureBox22.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox22.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox22.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox22.Location = New System.Drawing.Point(465, 283)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox22.TabIndex = 196
+        Me.PictureBox22.TabStop = false
+        Me.PictureBox22.Visible = false
+        '
+        'PictureBox23
+        '
+        Me.PictureBox23.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox23.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox23.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox23.Location = New System.Drawing.Point(543, 242)
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox23.TabIndex = 197
+        Me.PictureBox23.TabStop = false
+        Me.PictureBox23.Visible = false
+        '
+        'PictureBox24
+        '
+        Me.PictureBox24.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox24.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox24.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox24.Location = New System.Drawing.Point(513, 154)
+        Me.PictureBox24.Name = "PictureBox24"
+        Me.PictureBox24.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox24.TabIndex = 198
+        Me.PictureBox24.TabStop = false
+        Me.PictureBox24.Visible = false
+        '
+        'PictureBox25
+        '
+        Me.PictureBox25.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox25.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox25.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox25.Location = New System.Drawing.Point(381, 39)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox25.TabIndex = 199
+        Me.PictureBox25.TabStop = false
+        Me.PictureBox25.Visible = false
+        '
+        'PictureBox26
+        '
+        Me.PictureBox26.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox26.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox26.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox26.Location = New System.Drawing.Point(504, 39)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox26.TabIndex = 200
+        Me.PictureBox26.TabStop = false
+        Me.PictureBox26.Visible = false
+        '
+        'PictureBox27
+        '
+        Me.PictureBox27.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox27.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox27.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox27.Location = New System.Drawing.Point(3, 2)
+        Me.PictureBox27.Name = "PictureBox27"
+        Me.PictureBox27.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox27.TabIndex = 201
+        Me.PictureBox27.TabStop = false
+        Me.PictureBox27.Visible = false
+        '
+        'PictureBox28
+        '
+        Me.PictureBox28.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox28.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox28.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox28.Location = New System.Drawing.Point(183, 9)
+        Me.PictureBox28.Name = "PictureBox28"
+        Me.PictureBox28.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox28.TabIndex = 191
+        Me.PictureBox28.TabStop = false
+        Me.PictureBox28.Visible = false
+        '
+        'PictureBox29
+        '
+        Me.PictureBox29.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox29.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox29.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox29.Location = New System.Drawing.Point(185, 178)
+        Me.PictureBox29.Name = "PictureBox29"
+        Me.PictureBox29.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox29.TabIndex = 192
+        Me.PictureBox29.TabStop = false
+        Me.PictureBox29.Visible = false
+        '
+        'PictureBox30
+        '
+        Me.PictureBox30.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox30.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox30.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox30.Location = New System.Drawing.Point(2, 0)
+        Me.PictureBox30.Name = "PictureBox30"
+        Me.PictureBox30.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox30.TabIndex = 185
+        Me.PictureBox30.TabStop = false
+        Me.PictureBox30.Visible = false
+        '
+        'PictureBox31
+        '
+        Me.PictureBox31.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox31.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox31.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox31.Location = New System.Drawing.Point(183, 74)
+        Me.PictureBox31.Name = "PictureBox31"
+        Me.PictureBox31.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox31.TabIndex = 165
+        Me.PictureBox31.TabStop = false
+        Me.PictureBox31.Visible = false
+        '
+        'PictureBox32
+        '
+        Me.PictureBox32.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox32.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox32.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox32.Location = New System.Drawing.Point(183, 126)
+        Me.PictureBox32.Name = "PictureBox32"
+        Me.PictureBox32.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox32.TabIndex = 166
+        Me.PictureBox32.TabStop = false
+        Me.PictureBox32.Visible = false
+        '
+        'PictureBox33
+        '
+        Me.PictureBox33.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox33.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox33.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox33.Location = New System.Drawing.Point(183, 176)
+        Me.PictureBox33.Name = "PictureBox33"
+        Me.PictureBox33.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox33.TabIndex = 167
+        Me.PictureBox33.TabStop = false
+        Me.PictureBox33.Visible = false
+        '
+        'PictureBox35
+        '
+        Me.PictureBox35.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox35.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox35.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox35.Location = New System.Drawing.Point(472, 462)
+        Me.PictureBox35.Name = "PictureBox35"
+        Me.PictureBox35.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox35.TabIndex = 201
+        Me.PictureBox35.TabStop = false
+        Me.PictureBox35.Visible = false
+        '
+        'PictureBox36
+        '
+        Me.PictureBox36.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox36.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox36.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox36.Location = New System.Drawing.Point(104, 465)
+        Me.PictureBox36.Name = "PictureBox36"
+        Me.PictureBox36.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox36.TabIndex = 202
+        Me.PictureBox36.TabStop = false
+        Me.PictureBox36.Visible = false
+        '
+        'PictureBox37
+        '
+        Me.PictureBox37.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox37.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox37.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox37.Location = New System.Drawing.Point(67, 29)
+        Me.PictureBox37.Name = "PictureBox37"
+        Me.PictureBox37.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox37.TabIndex = 238
+        Me.PictureBox37.TabStop = false
+        Me.PictureBox37.Visible = false
+        '
+        'PictureBox38
+        '
+        Me.PictureBox38.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox38.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox38.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox38.Location = New System.Drawing.Point(68, 104)
+        Me.PictureBox38.Name = "PictureBox38"
+        Me.PictureBox38.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox38.TabIndex = 239
+        Me.PictureBox38.TabStop = false
+        Me.PictureBox38.Visible = false
+        '
+        'PictureBox39
+        '
+        Me.PictureBox39.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox39.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox39.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox39.Location = New System.Drawing.Point(68, 180)
+        Me.PictureBox39.Name = "PictureBox39"
+        Me.PictureBox39.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox39.TabIndex = 240
+        Me.PictureBox39.TabStop = false
+        Me.PictureBox39.Visible = false
+        '
+        'PictureBox40
+        '
+        Me.PictureBox40.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox40.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox40.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox40.Location = New System.Drawing.Point(162, 257)
+        Me.PictureBox40.Name = "PictureBox40"
+        Me.PictureBox40.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox40.TabIndex = 241
+        Me.PictureBox40.TabStop = false
+        Me.PictureBox40.Visible = false
+        '
+        'PictureBox41
+        '
+        Me.PictureBox41.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox41.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox41.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox41.Location = New System.Drawing.Point(315, 16)
+        Me.PictureBox41.Name = "PictureBox41"
+        Me.PictureBox41.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox41.TabIndex = 242
+        Me.PictureBox41.TabStop = false
+        Me.PictureBox41.Visible = false
+        '
+        'PictureBox42
+        '
+        Me.PictureBox42.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox42.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox42.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox42.Location = New System.Drawing.Point(541, 16)
+        Me.PictureBox42.Name = "PictureBox42"
+        Me.PictureBox42.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox42.TabIndex = 243
+        Me.PictureBox42.TabStop = false
+        Me.PictureBox42.Visible = false
+        '
+        'PictureBox43
+        '
+        Me.PictureBox43.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox43.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox43.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox43.Location = New System.Drawing.Point(541, 45)
+        Me.PictureBox43.Name = "PictureBox43"
+        Me.PictureBox43.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox43.TabIndex = 244
+        Me.PictureBox43.TabStop = false
+        Me.PictureBox43.Visible = false
+        '
+        'PictureBox44
+        '
+        Me.PictureBox44.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox44.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox44.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox44.Location = New System.Drawing.Point(416, 94)
+        Me.PictureBox44.Name = "PictureBox44"
+        Me.PictureBox44.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox44.TabIndex = 245
+        Me.PictureBox44.TabStop = false
+        Me.PictureBox44.Visible = false
+        '
+        'PictureBox45
+        '
+        Me.PictureBox45.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox45.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox45.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox45.Location = New System.Drawing.Point(538, 189)
+        Me.PictureBox45.Name = "PictureBox45"
+        Me.PictureBox45.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox45.TabIndex = 246
+        Me.PictureBox45.TabStop = false
+        Me.PictureBox45.Visible = false
+        '
+        'PictureBox46
+        '
+        Me.PictureBox46.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox46.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox46.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox46.Location = New System.Drawing.Point(332, 69)
+        Me.PictureBox46.Name = "PictureBox46"
+        Me.PictureBox46.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox46.TabIndex = 247
+        Me.PictureBox46.TabStop = false
+        Me.PictureBox46.Visible = false
+        '
+        'PictureBox47
+        '
+        Me.PictureBox47.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox47.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox47.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox47.Location = New System.Drawing.Point(332, 141)
+        Me.PictureBox47.Name = "PictureBox47"
+        Me.PictureBox47.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox47.TabIndex = 248
+        Me.PictureBox47.TabStop = false
+        Me.PictureBox47.Visible = false
+        '
+        'PictureBox48
+        '
+        Me.PictureBox48.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox48.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox48.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox48.Location = New System.Drawing.Point(332, 214)
+        Me.PictureBox48.Name = "PictureBox48"
+        Me.PictureBox48.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox48.TabIndex = 249
+        Me.PictureBox48.TabStop = false
+        Me.PictureBox48.Visible = false
+        '
+        'PictureBox49
+        '
+        Me.PictureBox49.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox49.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox49.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox49.Location = New System.Drawing.Point(280, 48)
+        Me.PictureBox49.Name = "PictureBox49"
+        Me.PictureBox49.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox49.TabIndex = 250
+        Me.PictureBox49.TabStop = false
+        Me.PictureBox49.Visible = false
+        '
+        'PictureBox50
+        '
+        Me.PictureBox50.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox50.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox50.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox50.Location = New System.Drawing.Point(477, 47)
+        Me.PictureBox50.Name = "PictureBox50"
+        Me.PictureBox50.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox50.TabIndex = 251
+        Me.PictureBox50.TabStop = false
+        Me.PictureBox50.Visible = false
+        '
+        'PictureBox51
+        '
+        Me.PictureBox51.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox51.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox51.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox51.Location = New System.Drawing.Point(402, 74)
+        Me.PictureBox51.Name = "PictureBox51"
+        Me.PictureBox51.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox51.TabIndex = 252
+        Me.PictureBox51.TabStop = false
+        Me.PictureBox51.Visible = false
+        '
+        'PictureBox52
+        '
+        Me.PictureBox52.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox52.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox52.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox52.Location = New System.Drawing.Point(559, 2)
+        Me.PictureBox52.Name = "PictureBox52"
+        Me.PictureBox52.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox52.TabIndex = 228
+        Me.PictureBox52.TabStop = false
+        Me.PictureBox52.Visible = false
+        '
+        'PictureBox53
+        '
+        Me.PictureBox53.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox53.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox53.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox53.Location = New System.Drawing.Point(435, 396)
+        Me.PictureBox53.Name = "PictureBox53"
+        Me.PictureBox53.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox53.TabIndex = 229
+        Me.PictureBox53.TabStop = false
+        Me.PictureBox53.Visible = false
+        '
+        'PictureBox54
+        '
+        Me.PictureBox54.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox54.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox54.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox54.Location = New System.Drawing.Point(125, 395)
+        Me.PictureBox54.Name = "PictureBox54"
+        Me.PictureBox54.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox54.TabIndex = 230
+        Me.PictureBox54.TabStop = false
+        Me.PictureBox54.Visible = false
+        '
+        'PictureBox55
+        '
+        Me.PictureBox55.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox55.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox55.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox55.Location = New System.Drawing.Point(373, 173)
+        Me.PictureBox55.Name = "PictureBox55"
+        Me.PictureBox55.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox55.TabIndex = 67
+        Me.PictureBox55.TabStop = false
+        Me.PictureBox55.Visible = false
+        '
+        'PictureBox56
+        '
+        Me.PictureBox56.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox56.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox56.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox56.Location = New System.Drawing.Point(373, 263)
+        Me.PictureBox56.Name = "PictureBox56"
+        Me.PictureBox56.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox56.TabIndex = 68
+        Me.PictureBox56.TabStop = false
+        Me.PictureBox56.Visible = false
+        '
+        'PictureBox57
+        '
+        Me.PictureBox57.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox57.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox57.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox57.Location = New System.Drawing.Point(379, 218)
+        Me.PictureBox57.Name = "PictureBox57"
+        Me.PictureBox57.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox57.TabIndex = 201
+        Me.PictureBox57.TabStop = false
+        Me.PictureBox57.Visible = false
+        '
+        'PictureBox58
+        '
+        Me.PictureBox58.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox58.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox58.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox58.Location = New System.Drawing.Point(297, 286)
+        Me.PictureBox58.Name = "PictureBox58"
+        Me.PictureBox58.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox58.TabIndex = 202
+        Me.PictureBox58.TabStop = false
+        Me.PictureBox58.Visible = false
+        '
+        'PictureBox59
+        '
+        Me.PictureBox59.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox59.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox59.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox59.Location = New System.Drawing.Point(256, 77)
+        Me.PictureBox59.Name = "PictureBox59"
+        Me.PictureBox59.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox59.TabIndex = 73
+        Me.PictureBox59.TabStop = false
+        Me.PictureBox59.Visible = false
+        '
+        'PictureBox60
+        '
+        Me.PictureBox60.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox60.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox60.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox60.Location = New System.Drawing.Point(330, 126)
+        Me.PictureBox60.Name = "PictureBox60"
+        Me.PictureBox60.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox60.TabIndex = 74
+        Me.PictureBox60.TabStop = false
+        Me.PictureBox60.Visible = false
+        '
+        'PictureBox61
+        '
+        Me.PictureBox61.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox61.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox61.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox61.Location = New System.Drawing.Point(217, 175)
+        Me.PictureBox61.Name = "PictureBox61"
+        Me.PictureBox61.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox61.TabIndex = 75
+        Me.PictureBox61.TabStop = false
+        Me.PictureBox61.Visible = false
+        '
+        'PictureBox62
+        '
+        Me.PictureBox62.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox62.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox62.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox62.Location = New System.Drawing.Point(202, 224)
+        Me.PictureBox62.Name = "PictureBox62"
+        Me.PictureBox62.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox62.TabIndex = 76
+        Me.PictureBox62.TabStop = false
+        Me.PictureBox62.Visible = false
+        '
+        'PictureBox63
+        '
+        Me.PictureBox63.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox63.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox63.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox63.Location = New System.Drawing.Point(186, 273)
+        Me.PictureBox63.Name = "PictureBox63"
+        Me.PictureBox63.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox63.TabIndex = 77
+        Me.PictureBox63.TabStop = false
+        Me.PictureBox63.Visible = false
+        '
+        'PictureBox64
+        '
+        Me.PictureBox64.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox64.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox64.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox64.Location = New System.Drawing.Point(252, 322)
+        Me.PictureBox64.Name = "PictureBox64"
+        Me.PictureBox64.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox64.TabIndex = 78
+        Me.PictureBox64.TabStop = false
+        Me.PictureBox64.Visible = false
+        '
+        'PictureBox65
+        '
+        Me.PictureBox65.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox65.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox65.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox65.Location = New System.Drawing.Point(536, 91)
+        Me.PictureBox65.Name = "PictureBox65"
+        Me.PictureBox65.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox65.TabIndex = 79
+        Me.PictureBox65.TabStop = false
+        Me.PictureBox65.Visible = false
+        '
+        'PictureBox66
+        '
+        Me.PictureBox66.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox66.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox66.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox66.Location = New System.Drawing.Point(575, 196)
+        Me.PictureBox66.Name = "PictureBox66"
+        Me.PictureBox66.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox66.TabIndex = 80
+        Me.PictureBox66.TabStop = false
+        Me.PictureBox66.Visible = false
+        '
+        'PictureBox67
+        '
+        Me.PictureBox67.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox67.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox67.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox67.Location = New System.Drawing.Point(53, 12)
+        Me.PictureBox67.Name = "PictureBox67"
+        Me.PictureBox67.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox67.TabIndex = 67
+        Me.PictureBox67.TabStop = false
+        Me.PictureBox67.Visible = false
+        '
+        'PictureBox68
+        '
+        Me.PictureBox68.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox68.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox68.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox68.Location = New System.Drawing.Point(53, 11)
+        Me.PictureBox68.Name = "PictureBox68"
+        Me.PictureBox68.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox68.TabIndex = 68
+        Me.PictureBox68.TabStop = false
+        Me.PictureBox68.Visible = false
+        '
+        'PictureBox69
+        '
+        Me.PictureBox69.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox69.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox69.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox69.Location = New System.Drawing.Point(19, 34)
+        Me.PictureBox69.Name = "PictureBox69"
+        Me.PictureBox69.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox69.TabIndex = 68
+        Me.PictureBox69.TabStop = false
+        Me.PictureBox69.Visible = false
+        '
+        'PictureBox70
+        '
+        Me.PictureBox70.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox70.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox70.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox70.Location = New System.Drawing.Point(34, 19)
+        Me.PictureBox70.Name = "PictureBox70"
+        Me.PictureBox70.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox70.TabIndex = 69
+        Me.PictureBox70.TabStop = false
+        Me.PictureBox70.Visible = false
+        '
+        'PictureBox71
+        '
+        Me.PictureBox71.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox71.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox71.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox71.Location = New System.Drawing.Point(34, 19)
+        Me.PictureBox71.Name = "PictureBox71"
+        Me.PictureBox71.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox71.TabIndex = 69
+        Me.PictureBox71.TabStop = false
+        Me.PictureBox71.Visible = false
+        '
+        'PictureBox72
+        '
+        Me.PictureBox72.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox72.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox72.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox72.Location = New System.Drawing.Point(34, 19)
+        Me.PictureBox72.Name = "PictureBox72"
+        Me.PictureBox72.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox72.TabIndex = 69
+        Me.PictureBox72.TabStop = false
+        Me.PictureBox72.Visible = false
+        '
+        'PictureBox73
+        '
+        Me.PictureBox73.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox73.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox73.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox73.Location = New System.Drawing.Point(34, 19)
+        Me.PictureBox73.Name = "PictureBox73"
+        Me.PictureBox73.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox73.TabIndex = 69
+        Me.PictureBox73.TabStop = false
+        Me.PictureBox73.Visible = false
+        '
+        'PictureBox74
+        '
+        Me.PictureBox74.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox74.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox74.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox74.Location = New System.Drawing.Point(34, 19)
+        Me.PictureBox74.Name = "PictureBox74"
+        Me.PictureBox74.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox74.TabIndex = 69
+        Me.PictureBox74.TabStop = false
+        Me.PictureBox74.Visible = false
+        '
+        'PictureBox75
+        '
+        Me.PictureBox75.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox75.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox75.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox75.Location = New System.Drawing.Point(34, 19)
+        Me.PictureBox75.Name = "PictureBox75"
+        Me.PictureBox75.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox75.TabIndex = 69
+        Me.PictureBox75.TabStop = false
+        Me.PictureBox75.Visible = false
+        '
+        'PictureBox76
+        '
+        Me.PictureBox76.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox76.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox76.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox76.Location = New System.Drawing.Point(34, 19)
+        Me.PictureBox76.Name = "PictureBox76"
+        Me.PictureBox76.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox76.TabIndex = 69
+        Me.PictureBox76.TabStop = false
+        Me.PictureBox76.Visible = false
+        '
+        'PictureBox77
+        '
+        Me.PictureBox77.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox77.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox77.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox77.Location = New System.Drawing.Point(322, 45)
+        Me.PictureBox77.Name = "PictureBox77"
+        Me.PictureBox77.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox77.TabIndex = 69
+        Me.PictureBox77.TabStop = false
+        Me.PictureBox77.Visible = false
+        '
         'TL_SaveEditor
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(600, 550)
+        Me.Controls.Add(Me.PictureBox77)
+        Me.Controls.Add(Me.Advhelp)
         Me.Controls.Add(Me.Text_savefileregion)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_done)
@@ -7802,442 +8995,520 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Menu_panel)
         Me.Controls.Add(Me.Menu_button)
         Me.Controls.Add(Me.TLSE_header)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.Panel_islandedit)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_extras)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tomodachi Life Save Editor"
-        Me.TLSE_header.ResumeLayout(False)
-        CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu_panel.ResumeLayout(False)
-        Me.Menu_manual.ResumeLayout(False)
-        CType(Me.Menu_icon_manual, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu_Repair.ResumeLayout(False)
-        CType(Me.Menu_icon_repair, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu_extras.ResumeLayout(False)
-        CType(Me.Menu_icon_extras, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu_itemsedit.ResumeLayout(False)
-        CType(Me.Menu_icon_itemsedit, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu_miiedit.ResumeLayout(False)
-        CType(Me.Menu_icon_miiedit, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu_islandedit.ResumeLayout(False)
-        CType(Me.Menu_icon_islandedit, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu_settings.ResumeLayout(False)
-        CType(Me.Menu_icon_settings, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Menu_width, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu_button.ResumeLayout(False)
-        Me.Panel_islandedit.ResumeLayout(False)
-        Me.Panel_islandedit.PerformLayout()
-        Me.Panel12.ResumeLayout(False)
-        CType(Me.valu_rank_splurge, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_rank_traveler, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_rank_island, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_rank_romance, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_rank_friendship, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_rank_pampered, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_rank_girlcharm, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_rank_boycharm, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_rank_popularity, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_rank_vitality, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_rank_splurge, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_rank_traveler, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_rank_island, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_rank_romance, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_rank_friendship, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_rank_pampered, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_rank_girlcharm, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_rank_boycharm, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_rank_popularity, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_rank_vitality, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_info_building, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_appartrenov, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_appartrenov, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_edit_pronun_island.ResumeLayout(False)
-        Me.Panel_edit_pronun_island.PerformLayout()
-        CType(Me.Icon_islandn_pronun_val, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_travelerssent, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_travelerssent.ResumeLayout(False)
-        CType(Me.value_travelerssent, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_travelersreceived, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_travelersreceived.ResumeLayout(False)
-        CType(Me.value_travelersreceived, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_childrenborn.ResumeLayout(False)
-        CType(Me.value_childrenborn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_childrenborn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_weddings, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_weddings.ResumeLayout(False)
-        CType(Me.value_weddings, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_streetpassencounters, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_streetpassencounters.ResumeLayout(False)
-        CType(Me.value_streetpassencounters, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_money.ResumeLayout(False)
-        CType(Me.value_money, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_money, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_problemsolved.ResumeLayout(False)
-        CType(Me.value_problemsolved, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_problemsolved, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_islandname.ResumeLayout(False)
-        Me.Panel_islandname.PerformLayout()
-        CType(Me.Icon_pronun_islandname, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_islandname, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel29.ResumeLayout(False)
-        CType(Me.value_part, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_port, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_tervague, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_plage, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_magimport, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_epicer, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_cafe, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_stud, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_test, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_classem, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_conc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_font, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_chap, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_parc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_mais, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_mair, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_appart, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_broc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_info, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_parc1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_tour, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_deco, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.value_vetem, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_vetem, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_tour, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_part, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_test, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_tervague, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_stud, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_port, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_plage, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_parc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_parc1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_mais, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_mair, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_magimport, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_info, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_font, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_epicer, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_deco, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_conc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_classem, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_chap, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cafe, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_broc, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_appart, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_resetmiiapart, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.File_path.ResumeLayout(False)
-        CType(Me.Icon_path, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_filever.ResumeLayout(False)
-        Me.Hidden_things.ResumeLayout(False)
-        Me.Panel_music.ResumeLayout(False)
-        CType(Me.Icon_music, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_menu_opensave.ResumeLayout(False)
-        Me.Panel_extras.ResumeLayout(False)
-        Me.Panel_extras.PerformLayout()
-        CType(Me.Icon_resetitems, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_resetnewsflash, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Fea_edit_concert.ResumeLayout(False)
-        CType(Me.Icon_edit_concert, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Fea_edit_travelers.ResumeLayout(False)
-        CType(Me.Icon_edit_travelers, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_resetstpspp, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_timetravel, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_settings.ResumeLayout(False)
-        Me.TabControl_settings.ResumeLayout(False)
-        Me.Settings_settings.ResumeLayout(False)
-        Me.Panel30.ResumeLayout(False)
-        Me.Panel30.PerformLayout()
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel9.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        Me.Panel10.ResumeLayout(False)
-        Me.Panel10.PerformLayout()
-        Me.Settings_changelog.ResumeLayout(False)
-        Me.Group_changelog.ResumeLayout(False)
-        CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Settings_credits.ResumeLayout(False)
-        Me.Panel11.ResumeLayout(False)
-        CType(Me.Icon_MarioPartyITSE, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_PaparMarioSSSE, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_nintendogscatSE, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_IronfallISE, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_TLSE, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_ChibiRoboZLSE, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_3dsSEL, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_MiitopiaSE, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_miiedit.ResumeLayout(False)
-        Me.TabControl1.ResumeLayout(False)
-        Me.Tab_mii_edit.ResumeLayout(False)
-        Me.Tab_mii_edit.PerformLayout()
-        Me.Panel_edit_haircolor.ResumeLayout(False)
-        Me.Panel_edit_haircolor.PerformLayout()
-        CType(Me.color_32, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_31, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_30, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_29, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_27, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.color_1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_mii_musics.ResumeLayout(False)
-        CType(Me.valu_selected_music, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Fea_musics_musical.ResumeLayout(False)
-        Me.Fea_musics_techno.ResumeLayout(False)
-        Me.Fea_musics_opera.ResumeLayout(False)
-        Me.Fea_musics_ballad.ResumeLayout(False)
-        Me.Fea_musics_rap.ResumeLayout(False)
-        Me.Fea_musics_rockroll.ResumeLayout(False)
-        Me.Fea_musics_pop.ResumeLayout(False)
-        Me.Fea_musics_metal.ResumeLayout(False)
-        Me.Fea_unlock_music.ResumeLayout(False)
-        CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_cathphrase.ResumeLayout(False)
-        Me.Panel_cathph_J1.ResumeLayout(False)
-        Me.Panel_cathph_J1.PerformLayout()
-        Me.Panel_cathph_J2.ResumeLayout(False)
-        Me.Panel_cathph_J2.PerformLayout()
-        Me.Panel_cathph_05.ResumeLayout(False)
-        Me.Panel_cathph_05.PerformLayout()
-        Me.Panel_cathph_04.ResumeLayout(False)
-        Me.Panel_cathph_04.PerformLayout()
-        Me.Panel_cathph_03.ResumeLayout(False)
-        Me.Panel_cathph_03.PerformLayout()
-        Me.Panel_cathph_02.ResumeLayout(False)
-        Me.Panel_cathph_02.PerformLayout()
-        Me.Panel_cathph_01.ResumeLayout(False)
-        Me.Panel_cathph_01.PerformLayout()
-        CType(Me.Icon_cathph_05, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_04, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_miiMhouse, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_miiMhouse, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_haircolor, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_haircolor, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_favcolor, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_favcolor, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_miihouse, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_miihouse, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_miiedit_music, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_cathphrase, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_inventory, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Mii, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel16.ResumeLayout(False)
-        CType(Me.valu_growkid, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel15.ResumeLayout(False)
-        CType(Me.valu_relationyou, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_pronun_nickname, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_nickname.ResumeLayout(False)
-        Me.Panel_nickname.PerformLayout()
-        Me.Panel_edit_lastname.ResumeLayout(False)
-        Me.Panel_edit_lastname.PerformLayout()
-        CType(Me.Icon_valid_lastname, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_pronun_lastname, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_lastname.ResumeLayout(False)
-        Me.Panel_lastname.PerformLayout()
-        Me.Panel_edit_firstname.ResumeLayout(False)
-        Me.Panel_edit_firstname.PerformLayout()
-        CType(Me.Icon_valid_firstname, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_pronun_firstname, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_firstname.ResumeLayout(False)
-        Me.Panel_firstname.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        CType(Me.Icon_copying, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_sharing, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_miiapart, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_miiapart, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_copying, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_sharing, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_mii_inventory.ResumeLayout(False)
-        CType(Me.Icon_unlock_gooditems, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_unlock_specialfoods, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_unlock_interiors, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel27.ResumeLayout(False)
-        Me.Panel26.ResumeLayout(False)
-        Me.Panel13.ResumeLayout(False)
-        Me.Tab_mii_status.ResumeLayout(False)
-        Me.Tab_mii_status.PerformLayout()
-        CType(Me.Danger_interaction, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_switch_interiors, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_switch_interiors, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_switch_clothes, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_switch_clothes, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_switch_hats, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_switch_hats, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_edit_fullness.ResumeLayout(False)
-        CType(Me.Icon_edit_full_100, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_edit_full_50, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_edit_full_25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_edit_full_00, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_chkfullness, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_experience, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_itemmii_8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_growkid, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_itemmii_7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_itemmii_6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_itemmii_5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel25.ResumeLayout(False)
-        CType(Me.valu_emotions, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_interaction, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_target2.ResumeLayout(False)
-        CType(Me.valu_target2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_target1.ResumeLayout(False)
-        CType(Me.valu_target1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel17.ResumeLayout(False)
-        CType(Me.valu_itemmii_1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_itemmii_4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_itemmii_2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_itemmii_3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_itemmii_4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_itemmii_5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_itemmii_6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_itemmii_7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_itemmii_8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_itemmii_3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_itemmii_2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_itemmii_1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_experience, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_level, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_fullness, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_economy, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_fullness, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_exp, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_allfav_2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_fav_1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_fav_2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_fav_3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_worst_2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_worst_1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_allfav_1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Tab_mii_friendlist.ResumeLayout(False)
-        Me.Tab_mii_friendlist.PerformLayout()
-        CType(Me.Danger_friendlist, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_30, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_29, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_27, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_selfriend_rela_1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel8.ResumeLayout(False)
-        CType(Me.valu_setallfriends, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel7.ResumeLayout(False)
-        CType(Me.valu_friend_rela_30, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_29, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_28, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_27, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_26, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_25, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_friend_rela_1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Tab_mii_extras.ResumeLayout(False)
-        CType(Me.valu_ranking_splurge, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_ranking_splurge, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel_save_mii.ResumeLayout(False)
-        Me.Panel_select_mii.ResumeLayout(False)
-        Me.Panel_description.ResumeLayout(False)
-        Me.Panel_done.ResumeLayout(False)
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Me.TLSE_header.ResumeLayout(false)
+        CType(Me.TLSE_title,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Closebutton,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TLSE_logo,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Menu_panel.ResumeLayout(false)
+        Me.Menu_manual.ResumeLayout(false)
+        CType(Me.Menu_icon_manual,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Menu_Repair.ResumeLayout(false)
+        CType(Me.Menu_icon_repair,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Menu_extras.ResumeLayout(false)
+        CType(Me.Menu_icon_extras,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Menu_itemsedit.ResumeLayout(false)
+        CType(Me.Menu_icon_itemsedit,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Menu_miiedit.ResumeLayout(false)
+        CType(Me.Menu_icon_miiedit,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Menu_islandedit.ResumeLayout(false)
+        CType(Me.Menu_icon_islandedit,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Menu_settings.ResumeLayout(false)
+        CType(Me.Menu_icon_settings,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Menu_width,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Menu_button.ResumeLayout(false)
+        Me.Panel_islandedit.ResumeLayout(false)
+        Me.Panel_islandedit.PerformLayout
+        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel12.ResumeLayout(false)
+        CType(Me.valu_rank_splurge,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_rank_traveler,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_rank_island,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_rank_romance,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_rank_friendship,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_rank_pampered,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_rank_girlcharm,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_rank_boycharm,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_rank_popularity,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_rank_vitality,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_rank_splurge,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_rank_traveler,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_rank_island,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_rank_romance,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_rank_friendship,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_rank_pampered,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_rank_girlcharm,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_rank_boycharm,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_rank_popularity,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_rank_vitality,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_eventfountain,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_eventfountain,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_info_building,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_appartrenov,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_appartrenov,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_edit_pronun_island.ResumeLayout(false)
+        Me.Panel_edit_pronun_island.PerformLayout
+        CType(Me.Icon_islandn_pronun_val,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_travelerssent,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_travelerssent.ResumeLayout(false)
+        CType(Me.value_travelerssent,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_travelersreceived,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_travelersreceived.ResumeLayout(false)
+        CType(Me.value_travelersreceived,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_childrenborn.ResumeLayout(false)
+        CType(Me.value_childrenborn,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_childrenborn,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_weddings,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_weddings.ResumeLayout(false)
+        CType(Me.value_weddings,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_streetpassencounters,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_streetpassencounters.ResumeLayout(false)
+        CType(Me.value_streetpassencounters,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_money.ResumeLayout(false)
+        CType(Me.value_money,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_money,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_problemsolved.ResumeLayout(false)
+        CType(Me.value_problemsolved,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_problemsolved,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_islandname.ResumeLayout(false)
+        Me.Panel_islandname.PerformLayout
+        CType(Me.Icon_pronun_islandname,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_islandname,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel29.ResumeLayout(false)
+        CType(Me.value_part,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_port,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_tervague,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_plage,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_magimport,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_epicer,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_cafe,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_stud,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_test,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_classem,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_conc,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_font,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_chap,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_parc,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_mais,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_mair,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_appart,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_broc,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_info,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_parc1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_tour,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_deco,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.value_vetem,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_vetem,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_tour,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_part,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_test,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_tervague,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_stud,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_port,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_plage,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_parc,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_parc1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_mais,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_mair,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_magimport,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_info,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_font,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_epicer,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_deco,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_conc,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_classem,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_chap,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_cafe,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_broc,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_appart,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_resetmiiapart,System.ComponentModel.ISupportInitialize).EndInit
+        Me.File_path.ResumeLayout(false)
+        CType(Me.Icon_path,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_filever.ResumeLayout(false)
+        Me.Hidden_things.ResumeLayout(false)
+        Me.Panel_music.ResumeLayout(false)
+        CType(Me.Icon_music,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_menu_opensave.ResumeLayout(false)
+        Me.Panel_extras.ResumeLayout(false)
+        Me.Panel_extras.PerformLayout
+        CType(Me.Icon_resetrelationship,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_resetitems,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_resetnewsflash,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Fea_edit_concert.ResumeLayout(false)
+        CType(Me.Icon_edit_concert,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Fea_edit_travelers.ResumeLayout(false)
+        CType(Me.Icon_edit_travelers,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_resetstpspp,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_timetravel,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.TLSE_logo_update,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_settings.ResumeLayout(false)
+        Me.TabControl_settings.ResumeLayout(false)
+        Me.Settings_settings.ResumeLayout(false)
+        Me.Panel14.ResumeLayout(false)
+        Me.Panel14.PerformLayout
+        Me.Panel30.ResumeLayout(false)
+        Me.Panel30.PerformLayout
+        Me.Panel9.ResumeLayout(false)
+        Me.Panel9.PerformLayout
+        Me.Panel1.ResumeLayout(false)
+        Me.Panel1.PerformLayout
+        Me.Panel4.ResumeLayout(false)
+        Me.Panel4.PerformLayout
+        Me.Panel10.ResumeLayout(false)
+        Me.Panel10.PerformLayout
+        Me.Settings_changelog.ResumeLayout(false)
+        Me.Group_changelog.ResumeLayout(false)
+        CType(Me.Icon_changelog,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Settings_credits.ResumeLayout(false)
+        Me.Panel11.ResumeLayout(false)
+        CType(Me.Icon_MarioPartyITSE,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_PaparMarioSSSE,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_nintendogscatSE,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_IronfallISE,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_TLSE,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_ChibiRoboZLSE,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_3dsSEL,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_MiitopiaSE,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_miiedit.ResumeLayout(false)
+        Me.TabControl1.ResumeLayout(false)
+        Me.Tab_mii_edit.ResumeLayout(false)
+        Me.Tab_mii_edit.PerformLayout
+        Me.Panel_edit_haircolor.ResumeLayout(false)
+        Me.Panel_edit_haircolor.PerformLayout
+        CType(Me.color_32,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_31,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_30,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_29,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_28,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_27,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_26,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_25,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_24,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_23,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_22,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_21,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_20,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_19,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_18,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_17,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_16,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_15,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_14,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_13,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_12,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_11,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_10,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_9,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_8,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_7,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_6,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_5,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.color_1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_mii_musics.ResumeLayout(false)
+        CType(Me.valu_selected_music,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Fea_musics_musical.ResumeLayout(false)
+        Me.Fea_musics_techno.ResumeLayout(false)
+        Me.Fea_musics_opera.ResumeLayout(false)
+        Me.Fea_musics_ballad.ResumeLayout(false)
+        Me.Fea_musics_rap.ResumeLayout(false)
+        Me.Fea_musics_rockroll.ResumeLayout(false)
+        Me.Fea_musics_pop.ResumeLayout(false)
+        Me.Fea_musics_metal.ResumeLayout(false)
+        Me.Fea_unlock_music.ResumeLayout(false)
+        CType(Me.valu_allmusic,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_cathphrase.ResumeLayout(false)
+        Me.Panel_cathph_J1.ResumeLayout(false)
+        Me.Panel_cathph_J1.PerformLayout
+        Me.Panel_cathph_J2.ResumeLayout(false)
+        Me.Panel_cathph_J2.PerformLayout
+        Me.Panel_cathph_05.ResumeLayout(false)
+        Me.Panel_cathph_05.PerformLayout
+        Me.Panel_cathph_04.ResumeLayout(false)
+        Me.Panel_cathph_04.PerformLayout
+        Me.Panel_cathph_03.ResumeLayout(false)
+        Me.Panel_cathph_03.PerformLayout
+        Me.Panel_cathph_02.ResumeLayout(false)
+        Me.Panel_cathph_02.PerformLayout
+        Me.Panel_cathph_01.ResumeLayout(false)
+        Me.Panel_cathph_01.PerformLayout
+        CType(Me.Icon_cathph_05,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_cathph_04,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_cathph_03,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_cathph_02,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_cathph_01,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_miiMhouse,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_miiMhouse,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_haircolor,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_haircolor,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_favcolor,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_favcolor,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_miihouse,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_miihouse,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_miiedit_music,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_cathphrase,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_inventory,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Mii,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel2.ResumeLayout(false)
+        Me.Panel2.PerformLayout
+        Me.Panel16.ResumeLayout(false)
+        CType(Me.valu_growkid,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel15.ResumeLayout(false)
+        CType(Me.valu_relationyou,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_pronun_nickname,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_nickname.ResumeLayout(false)
+        Me.Panel_nickname.PerformLayout
+        Me.Panel_edit_lastname.ResumeLayout(false)
+        Me.Panel_edit_lastname.PerformLayout
+        CType(Me.Icon_valid_lastname,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_pronun_lastname,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_lastname.ResumeLayout(false)
+        Me.Panel_lastname.PerformLayout
+        Me.Panel_edit_firstname.ResumeLayout(false)
+        Me.Panel_edit_firstname.PerformLayout
+        CType(Me.Icon_valid_firstname,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_pronun_firstname,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_firstname.ResumeLayout(false)
+        Me.Panel_firstname.PerformLayout
+        Me.Panel6.ResumeLayout(false)
+        Me.Panel6.PerformLayout
+        Me.Panel5.ResumeLayout(false)
+        Me.Panel5.PerformLayout
+        CType(Me.Icon_copying,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_sharing,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_miiapart,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_miiapart,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_copying,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_sharing,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_mii_inventory.ResumeLayout(false)
+        CType(Me.Icon_unlock_gooditems,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_unlock_specialfoods,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_unlock_interiors,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel27.ResumeLayout(false)
+        Me.Panel26.ResumeLayout(false)
+        Me.Panel13.ResumeLayout(false)
+        Me.Tab_mii_status.ResumeLayout(false)
+        Me.Tab_mii_status.PerformLayout
+        CType(Me.Danger_interaction,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_switch_interiors,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_switch_interiors,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_switch_clothes,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_switch_clothes,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_switch_hats,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_switch_hats,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_edit_fullness.ResumeLayout(false)
+        CType(Me.Icon_edit_full_100,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_edit_full_50,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_edit_full_25,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_edit_full_00,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_chkfullness,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_experience,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_itemmii_8,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_growkid,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_itemmii_7,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_itemmii_6,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_itemmii_5,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel3.ResumeLayout(false)
+        Me.Panel3.PerformLayout
+        Me.Panel25.ResumeLayout(false)
+        CType(Me.valu_emotions,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_interaction,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_target2.ResumeLayout(false)
+        CType(Me.valu_target2,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_target1.ResumeLayout(false)
+        CType(Me.valu_target1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel17.ResumeLayout(false)
+        CType(Me.valu_itemmii_1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_itemmii_4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_itemmii_2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_itemmii_3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_itemmii_4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_itemmii_5,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_itemmii_6,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_itemmii_7,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_itemmii_8,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_itemmii_3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_itemmii_2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_itemmii_1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_experience,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_level,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_fullness,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox34,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_economy,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_fullness,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_exp,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_allfav_2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_fav_1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_fav_2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_fav_3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_worst_2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_worst_1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_allfav_1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Tab_mii_friendlist.ResumeLayout(false)
+        Me.Tab_mii_friendlist.PerformLayout
+        CType(Me.Danger_friendlist,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_30,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_29,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_28,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_27,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_26,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_25,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_24,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_23,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_22,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_21,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_20,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_19,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_18,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_17,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_16,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_15,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_14,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_13,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_12,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_11,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_10,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_9,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_8,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_7,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_6,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_5,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_selfriend_rela_1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel8.ResumeLayout(false)
+        CType(Me.valu_setallfriends,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel7.ResumeLayout(false)
+        CType(Me.valu_friend_rela_30,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_29,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_28,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_27,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_26,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_25,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_24,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_23,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_22,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_21,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_20,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_19,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_18,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_17,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_16,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_15,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_14,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_13,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_12,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_11,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_10,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_9,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_8,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_7,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_6,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_5,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_3,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_2,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_friend_rela_1,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Tab_mii_extras.ResumeLayout(false)
+        CType(Me.valu_ranking_splurge,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_ranking_splurge,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_ranking_pampered,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_ranking_pampered,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_save_mii.ResumeLayout(false)
+        Me.Panel_select_mii.ResumeLayout(false)
+        Me.Panel_description.ResumeLayout(false)
+        Me.Panel_done.ResumeLayout(false)
+        Me.Advhelp.ResumeLayout(false)
+        CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox12,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox14,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox15,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox16,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox17,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox18,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox19,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox20,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox21,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox22,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox23,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox24,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox25,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox26,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox27,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox28,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox29,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox30,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox31,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox32,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox33,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox35,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox36,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox37,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox38,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox39,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox40,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox41,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox42,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox43,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox44,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox45,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox46,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox47,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox48,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox49,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox50,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox51,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox52,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox53,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox54,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox55,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox56,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox57,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox58,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox59,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox60,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox61,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox62,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox63,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox64,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox65,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox66,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox67,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox68,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox69,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox70,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox71,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox72,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox73,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox74,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox75,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox76,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox77,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
     Friend WithEvents TLSE_header As System.Windows.Forms.Panel
     Friend WithEvents TLSE_logo As System.Windows.Forms.PictureBox
     Friend WithEvents Closebutton As System.Windows.Forms.PictureBox
@@ -8696,7 +9967,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents Select_allfriends As System.Windows.Forms.ComboBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label36 As System.Windows.Forms.Label
     Friend WithEvents Panel_edit_fullness As System.Windows.Forms.Panel
     Friend WithEvents Icon_edit_full_100 As System.Windows.Forms.PictureBox
     Friend WithEvents Icon_edit_full_50 As System.Windows.Forms.PictureBox
@@ -8836,5 +10106,85 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_savefileregion As System.Windows.Forms.Label
     Friend WithEvents Check_resetitems As System.Windows.Forms.CheckBox
     Friend WithEvents Icon_resetitems As System.Windows.Forms.PictureBox
+    Friend WithEvents Check_resetrelationship As System.Windows.Forms.CheckBox
+    Friend WithEvents Icon_resetrelationship As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel14 As System.Windows.Forms.Panel
+    Friend WithEvents Setting_Advhelp As System.Windows.Forms.CheckBox
+    Friend WithEvents Advhelp As System.Windows.Forms.Panel
+    Friend WithEvents Advhelp_text As System.Windows.Forms.Label
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox15 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox14 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox13 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox12 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox11 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox66 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox65 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox64 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox63 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox62 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox61 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox60 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox59 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox36 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox35 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox27 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox58 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox57 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox26 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox25 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox24 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox23 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox22 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox21 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox20 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox19 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox18 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox17 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox16 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox29 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox28 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox30 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox33 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox32 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox31 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox48 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox47 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox46 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox45 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox43 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox42 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox41 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox40 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox39 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox38 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox37 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox51 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox50 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox49 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox44 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox54 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox53 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox52 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox56 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox55 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox69 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox75 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox74 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox73 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox72 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox71 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox70 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox76 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox67 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox68 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox77 As System.Windows.Forms.PictureBox
 
 End Class

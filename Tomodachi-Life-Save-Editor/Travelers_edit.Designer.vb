@@ -45,6 +45,13 @@ Partial Class Travelers_edit
         Me.Text_save = New System.Windows.Forms.Label()
         Me.Icon_return = New System.Windows.Forms.PictureBox()
         Me.valu_happiness = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox162 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         CType(Me.valu_level, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_happiness2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
@@ -57,6 +64,13 @@ Partial Class Travelers_edit
         Me.Button_save.SuspendLayout()
         CType(Me.Icon_return, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_happiness, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox162, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'valu_level
@@ -281,6 +295,90 @@ Partial Class Travelers_edit
         Me.valu_happiness.TabIndex = 83
         Me.valu_happiness.Visible = False
         '
+        'PictureBox162
+        '
+        Me.PictureBox162.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox162.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox162.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox162.Location = New System.Drawing.Point(236, 79)
+        Me.PictureBox162.Name = "PictureBox162"
+        Me.PictureBox162.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox162.TabIndex = 84
+        Me.PictureBox162.TabStop = False
+        Me.PictureBox162.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox1.Location = New System.Drawing.Point(332, 79)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox1.TabIndex = 85
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox2.Location = New System.Drawing.Point(36, 119)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox2.TabIndex = 86
+        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox3.Location = New System.Drawing.Point(378, 145)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox3.TabIndex = 87
+        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox4.Location = New System.Drawing.Point(378, 201)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox4.TabIndex = 88
+        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox5.Location = New System.Drawing.Point(162, 267)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox5.TabIndex = 89
+        Me.PictureBox5.TabStop = False
+        Me.PictureBox5.Visible = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox6.Location = New System.Drawing.Point(365, 264)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox6.TabIndex = 90
+        Me.PictureBox6.TabStop = False
+        Me.PictureBox6.Visible = False
+        '
         'Travelers_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -288,6 +386,13 @@ Partial Class Travelers_edit
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_travelers
         Me.ClientSize = New System.Drawing.Size(434, 298)
         Me.ControlBox = False
+        Me.Controls.Add(Me.PictureBox6)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBox162)
         Me.Controls.Add(Me.valu_happiness)
         Me.Controls.Add(Me.Button_save)
         Me.Controls.Add(Me.Icon_return)
@@ -321,6 +426,13 @@ Partial Class Travelers_edit
         Me.Button_save.ResumeLayout(False)
         CType(Me.Icon_return, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_happiness, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox162, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -347,4 +459,11 @@ Partial Class Travelers_edit
     Friend WithEvents Text_save As System.Windows.Forms.Label
     Friend WithEvents Icon_return As System.Windows.Forms.PictureBox
     Friend WithEvents valu_happiness As System.Windows.Forms.NumericUpDown
+    Friend WithEvents PictureBox162 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
 End Class

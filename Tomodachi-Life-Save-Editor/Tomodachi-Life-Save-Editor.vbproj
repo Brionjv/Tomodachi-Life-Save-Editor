@@ -1279,6 +1279,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\Icon_advhelp.png" />
+    <None Include="Resources\reset_relationship.gif" />
     <None Include="Resources\reset_items.gif" />
     <None Include="Resources\icon_path.png" />
     <None Include="Resources\CKPT_restore.bmp" />

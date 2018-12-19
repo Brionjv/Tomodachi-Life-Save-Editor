@@ -3705,7 +3705,7 @@ Public Class TL_SaveEditor
             Select_friend_rela_30.Items.Item(7) = "Sibling"
             Select_friend_rela_30.Items.Item(8) = "Friend (in conflict)"
             Select_friend_rela_30.Items.Item(9) = "Best friend"
-            Text_danger_friendlist.Text = "If your save file is corrupted, report this issue (your save file backup is in ''bak'' folder)"
+            Text_danger_friendlist.Text = "Miis can have more than one best friend or lover, sweetheart" & vbNewLine & "If your save file is corrupted, report this issue (your save file backup is in ''bak'' folder)"
             Title_miihouse.Text = "Mii house"
             Text_done.Text = "Done !"
             Check_resetmiiapart.Text = "Reset Miis apartment"
@@ -4125,7 +4125,7 @@ Public Class TL_SaveEditor
             Select_friend_rela_30.Items.Item(7) = "Frère/Soeur"
             Select_friend_rela_30.Items.Item(8) = "Ami (en conflit)"
             Select_friend_rela_30.Items.Item(9) = "Meilleur(e) ami(e)"
-            Text_danger_friendlist.Text = "si votre sauvegarde est corrompu, signalez cet erreur (la copie de votre sauvegarde se trouve dans le dossier''bak'')"
+            Text_danger_friendlist.Text = "Les Mii ne peuvent pas avoir plus d'un meilleur amis ou amoureux, époux" & vbNewLine & "si votre sauvegarde est corrompu, signalez cet erreur (la copie de votre sauvegarde se trouve dans le dossier''bak'')"
             Title_miihouse.Text = "Maison Mii"
             Text_done.Text = "Effectué !"
             Check_resetmiiapart.Text = "Réinitialiser l'appartement des Mii"
@@ -26926,5 +26926,13 @@ Public Class TL_SaveEditor
 
     Private Sub Icon_path_MouseLeave(sender As Object, e As EventArgs) Handles Icon_path.MouseLeave
         TextBox_fpath.Visible = False
+    End Sub
+
+    Private Sub Check_resetitems_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_resetitems.MouseMove
+
+    End Sub
+
+    Private Sub Icon_path_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_path.MouseMove
+
     End Sub
 End Class

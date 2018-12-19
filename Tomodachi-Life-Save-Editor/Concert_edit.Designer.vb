@@ -59,6 +59,11 @@ Partial Class Concert_edit
         Me.Icon_return = New System.Windows.Forms.PictureBox()
         Me.Button_save = New System.Windows.Forms.Panel()
         Me.Text_save = New System.Windows.Forms.Label()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel2.SuspendLayout()
         CType(Me.valu_pagh_13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_pagh_12, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,6 +83,11 @@ Partial Class Concert_edit
         CType(Me.Icon_title_1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_return, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Button_save.SuspendLayout()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Select_musics
@@ -103,6 +113,7 @@ Partial Class Concert_edit
         'Panel2
         '
         Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
+        Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.valu_pagh_13)
         Me.Panel2.Controls.Add(Me.valu_pagh_12)
         Me.Panel2.Controls.Add(Me.valu_pagh_11)
@@ -481,6 +492,66 @@ Partial Class Concert_edit
         Me.Text_save.Text = "Save"
         Me.Text_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'PictureBox14
+        '
+        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox14.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox14.Location = New System.Drawing.Point(479, 76)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox14.TabIndex = 78
+        Me.PictureBox14.TabStop = False
+        Me.PictureBox14.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox1.Location = New System.Drawing.Point(85, 81)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox1.TabIndex = 79
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox2.Location = New System.Drawing.Point(414, 245)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox2.TabIndex = 80
+        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox3.Location = New System.Drawing.Point(168, 412)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox3.TabIndex = 80
+        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox4.Location = New System.Drawing.Point(439, 412)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox4.TabIndex = 81
+        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
+        '
         'Concert_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -488,6 +559,10 @@ Partial Class Concert_edit
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_concert
         Me.ClientSize = New System.Drawing.Size(505, 442)
         Me.ControlBox = False
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBox14)
         Me.Controls.Add(Me.Button_save)
         Me.Controls.Add(Me.Icon_return)
         Me.Controls.Add(Me.Panel_title)
@@ -518,6 +593,11 @@ Partial Class Concert_edit
         CType(Me.Icon_title_1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_return, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Button_save.ResumeLayout(False)
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -558,4 +638,9 @@ Partial Class Concert_edit
     Friend WithEvents Icon_return As System.Windows.Forms.PictureBox
     Friend WithEvents Button_save As System.Windows.Forms.Panel
     Friend WithEvents Text_save As System.Windows.Forms.Label
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox14 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
 End Class

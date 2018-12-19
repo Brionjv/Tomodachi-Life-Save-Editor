@@ -73,32 +73,42 @@ Partial Class Miimusic_edit
         Me.Text_edit_metal = New System.Windows.Forms.Label()
         Me.valu_selected_music = New System.Windows.Forms.NumericUpDown()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Button_save.SuspendLayout
-        CType(Me.Icon_return,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel2.SuspendLayout
-        CType(Me.valu_pagh_13,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_12,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_11,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_10,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_9,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_8,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_7,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_6,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_5,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_4,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_3,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_2,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_pagh_1,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Fea_musics_musical.SuspendLayout
-        Me.Fea_musics_techno.SuspendLayout
-        Me.Fea_musics_opera.SuspendLayout
-        Me.Fea_musics_ballad.SuspendLayout
-        Me.Fea_musics_rap.SuspendLayout
-        Me.Fea_musics_rockroll.SuspendLayout
-        Me.Fea_musics_pop.SuspendLayout
-        Me.Fea_musics_metal.SuspendLayout
-        CType(Me.valu_selected_music,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        Me.PictureBox162 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Button_save.SuspendLayout()
+        CType(Me.Icon_return, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        CType(Me.valu_pagh_13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Fea_musics_musical.SuspendLayout()
+        Me.Fea_musics_techno.SuspendLayout()
+        Me.Fea_musics_opera.SuspendLayout()
+        Me.Fea_musics_ballad.SuspendLayout()
+        Me.Fea_musics_rap.SuspendLayout()
+        Me.Fea_musics_rockroll.SuspendLayout()
+        Me.Fea_musics_pop.SuspendLayout()
+        Me.Fea_musics_metal.SuspendLayout()
+        CType(Me.valu_selected_music, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox162, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'Text_titlemusic
         '
@@ -124,7 +134,7 @@ Partial Class Miimusic_edit
         '
         Me.Text_save.BackColor = System.Drawing.Color.Transparent
         Me.Text_save.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_save.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Text_save.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Text_save.Location = New System.Drawing.Point(0, 0)
         Me.Text_save.Name = "Text_save"
         Me.Text_save.Size = New System.Drawing.Size(150, 32)
@@ -135,16 +145,17 @@ Partial Class Miimusic_edit
         'Icon_return
         '
         Me.Icon_return.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_return.Image = CType(resources.GetObject("Icon_return.Image"),System.Drawing.Image)
+        Me.Icon_return.Image = CType(resources.GetObject("Icon_return.Image"), System.Drawing.Image)
         Me.Icon_return.Location = New System.Drawing.Point(450, 433)
         Me.Icon_return.Name = "Icon_return"
         Me.Icon_return.Size = New System.Drawing.Size(40, 30)
         Me.Icon_return.TabIndex = 46
-        Me.Icon_return.TabStop = false
+        Me.Icon_return.TabStop = False
         '
         'Panel2
         '
-        Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"),System.Drawing.Image)
+        Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
+        Me.Panel2.Controls.Add(Me.PictureBox2)
         Me.Panel2.Controls.Add(Me.valu_pagh_13)
         Me.Panel2.Controls.Add(Me.valu_pagh_12)
         Me.Panel2.Controls.Add(Me.valu_pagh_11)
@@ -184,7 +195,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_13.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_13.TabIndex = 25
         Me.valu_pagh_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_13.Visible = false
+        Me.valu_pagh_13.Visible = False
         '
         'valu_pagh_12
         '
@@ -194,7 +205,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_12.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_12.TabIndex = 24
         Me.valu_pagh_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_12.Visible = false
+        Me.valu_pagh_12.Visible = False
         '
         'valu_pagh_11
         '
@@ -204,7 +215,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_11.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_11.TabIndex = 23
         Me.valu_pagh_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_11.Visible = false
+        Me.valu_pagh_11.Visible = False
         '
         'valu_pagh_10
         '
@@ -214,7 +225,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_10.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_10.TabIndex = 22
         Me.valu_pagh_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_10.Visible = false
+        Me.valu_pagh_10.Visible = False
         '
         'valu_pagh_9
         '
@@ -224,7 +235,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_9.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_9.TabIndex = 21
         Me.valu_pagh_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_9.Visible = false
+        Me.valu_pagh_9.Visible = False
         '
         'valu_pagh_8
         '
@@ -234,7 +245,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_8.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_8.TabIndex = 20
         Me.valu_pagh_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_8.Visible = false
+        Me.valu_pagh_8.Visible = False
         '
         'valu_pagh_7
         '
@@ -244,7 +255,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_7.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_7.TabIndex = 19
         Me.valu_pagh_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_7.Visible = false
+        Me.valu_pagh_7.Visible = False
         '
         'valu_pagh_6
         '
@@ -254,7 +265,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_6.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_6.TabIndex = 18
         Me.valu_pagh_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_6.Visible = false
+        Me.valu_pagh_6.Visible = False
         '
         'valu_pagh_5
         '
@@ -264,7 +275,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_5.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_5.TabIndex = 17
         Me.valu_pagh_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_5.Visible = false
+        Me.valu_pagh_5.Visible = False
         '
         'valu_pagh_4
         '
@@ -274,7 +285,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_4.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_4.TabIndex = 16
         Me.valu_pagh_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_4.Visible = false
+        Me.valu_pagh_4.Visible = False
         '
         'valu_pagh_3
         '
@@ -284,7 +295,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_3.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_3.TabIndex = 15
         Me.valu_pagh_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_3.Visible = false
+        Me.valu_pagh_3.Visible = False
         '
         'valu_pagh_2
         '
@@ -294,7 +305,7 @@ Partial Class Miimusic_edit
         Me.valu_pagh_2.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_2.TabIndex = 14
         Me.valu_pagh_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_2.Visible = false
+        Me.valu_pagh_2.Visible = False
         '
         'valu_pagh_1
         '
@@ -304,12 +315,12 @@ Partial Class Miimusic_edit
         Me.valu_pagh_1.Size = New System.Drawing.Size(36, 16)
         Me.valu_pagh_1.TabIndex = 13
         Me.valu_pagh_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_pagh_1.Visible = false
+        Me.valu_pagh_1.Visible = False
         '
         'Text_pagh_13
         '
         Me.Text_pagh_13.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_13.Enabled = false
+        Me.Text_pagh_13.Enabled = False
         Me.Text_pagh_13.Location = New System.Drawing.Point(52, 242)
         Me.Text_pagh_13.MaxLength = 48
         Me.Text_pagh_13.Name = "Text_pagh_13"
@@ -320,7 +331,7 @@ Partial Class Miimusic_edit
         'Text_pagh_12
         '
         Me.Text_pagh_12.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_12.Enabled = false
+        Me.Text_pagh_12.Enabled = False
         Me.Text_pagh_12.Location = New System.Drawing.Point(52, 223)
         Me.Text_pagh_12.MaxLength = 48
         Me.Text_pagh_12.Name = "Text_pagh_12"
@@ -331,7 +342,7 @@ Partial Class Miimusic_edit
         'Text_pagh_11
         '
         Me.Text_pagh_11.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_11.Enabled = false
+        Me.Text_pagh_11.Enabled = False
         Me.Text_pagh_11.Location = New System.Drawing.Point(52, 204)
         Me.Text_pagh_11.MaxLength = 48
         Me.Text_pagh_11.Name = "Text_pagh_11"
@@ -342,7 +353,7 @@ Partial Class Miimusic_edit
         'Text_pagh_10
         '
         Me.Text_pagh_10.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_10.Enabled = false
+        Me.Text_pagh_10.Enabled = False
         Me.Text_pagh_10.Location = New System.Drawing.Point(52, 185)
         Me.Text_pagh_10.MaxLength = 48
         Me.Text_pagh_10.Name = "Text_pagh_10"
@@ -353,7 +364,7 @@ Partial Class Miimusic_edit
         'Text_pagh_9
         '
         Me.Text_pagh_9.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_9.Enabled = false
+        Me.Text_pagh_9.Enabled = False
         Me.Text_pagh_9.Location = New System.Drawing.Point(52, 166)
         Me.Text_pagh_9.MaxLength = 48
         Me.Text_pagh_9.Name = "Text_pagh_9"
@@ -364,7 +375,7 @@ Partial Class Miimusic_edit
         'Text_pagh_8
         '
         Me.Text_pagh_8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_8.Enabled = false
+        Me.Text_pagh_8.Enabled = False
         Me.Text_pagh_8.Location = New System.Drawing.Point(52, 147)
         Me.Text_pagh_8.MaxLength = 48
         Me.Text_pagh_8.Name = "Text_pagh_8"
@@ -375,7 +386,7 @@ Partial Class Miimusic_edit
         'Text_pagh_7
         '
         Me.Text_pagh_7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_7.Enabled = false
+        Me.Text_pagh_7.Enabled = False
         Me.Text_pagh_7.Location = New System.Drawing.Point(52, 128)
         Me.Text_pagh_7.MaxLength = 48
         Me.Text_pagh_7.Name = "Text_pagh_7"
@@ -386,7 +397,7 @@ Partial Class Miimusic_edit
         'Text_pagh_6
         '
         Me.Text_pagh_6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_6.Enabled = false
+        Me.Text_pagh_6.Enabled = False
         Me.Text_pagh_6.Location = New System.Drawing.Point(52, 109)
         Me.Text_pagh_6.MaxLength = 48
         Me.Text_pagh_6.Name = "Text_pagh_6"
@@ -397,7 +408,7 @@ Partial Class Miimusic_edit
         'Text_pagh_5
         '
         Me.Text_pagh_5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_5.Enabled = false
+        Me.Text_pagh_5.Enabled = False
         Me.Text_pagh_5.Location = New System.Drawing.Point(52, 90)
         Me.Text_pagh_5.MaxLength = 48
         Me.Text_pagh_5.Name = "Text_pagh_5"
@@ -408,7 +419,7 @@ Partial Class Miimusic_edit
         'Text_pagh_4
         '
         Me.Text_pagh_4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_4.Enabled = false
+        Me.Text_pagh_4.Enabled = False
         Me.Text_pagh_4.Location = New System.Drawing.Point(52, 71)
         Me.Text_pagh_4.MaxLength = 48
         Me.Text_pagh_4.Name = "Text_pagh_4"
@@ -419,7 +430,7 @@ Partial Class Miimusic_edit
         'Text_pagh_3
         '
         Me.Text_pagh_3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_3.Enabled = false
+        Me.Text_pagh_3.Enabled = False
         Me.Text_pagh_3.Location = New System.Drawing.Point(52, 52)
         Me.Text_pagh_3.MaxLength = 48
         Me.Text_pagh_3.Name = "Text_pagh_3"
@@ -430,7 +441,7 @@ Partial Class Miimusic_edit
         'Text_pagh_2
         '
         Me.Text_pagh_2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_2.Enabled = false
+        Me.Text_pagh_2.Enabled = False
         Me.Text_pagh_2.Location = New System.Drawing.Point(52, 33)
         Me.Text_pagh_2.MaxLength = 48
         Me.Text_pagh_2.Name = "Text_pagh_2"
@@ -441,7 +452,7 @@ Partial Class Miimusic_edit
         'Text_pagh_1
         '
         Me.Text_pagh_1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_pagh_1.Enabled = false
+        Me.Text_pagh_1.Enabled = False
         Me.Text_pagh_1.Location = New System.Drawing.Point(52, 14)
         Me.Text_pagh_1.MaxLength = 48
         Me.Text_pagh_1.Name = "Text_pagh_1"
@@ -646,13 +657,77 @@ Partial Class Miimusic_edit
         '
         Me.Timer1.Interval = 500
         '
+        'PictureBox162
+        '
+        Me.PictureBox162.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox162.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox162.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox162.Location = New System.Drawing.Point(457, 55)
+        Me.PictureBox162.Name = "PictureBox162"
+        Me.PictureBox162.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox162.TabIndex = 198
+        Me.PictureBox162.TabStop = False
+        Me.PictureBox162.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox1.Location = New System.Drawing.Point(467, 102)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox1.TabIndex = 199
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox2.Location = New System.Drawing.Point(414, 245)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox2.TabIndex = 200
+        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox3.Location = New System.Drawing.Point(158, 433)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox3.TabIndex = 200
+        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox4.Location = New System.Drawing.Point(421, 433)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox4.TabIndex = 201
+        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
+        '
         'Miimusic_edit
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_concert
         Me.ClientSize = New System.Drawing.Size(490, 464)
-        Me.ControlBox = false
+        Me.ControlBox = False
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBox162)
         Me.Controls.Add(Me.valu_selected_music)
         Me.Controls.Add(Me.Fea_musics_musical)
         Me.Controls.Add(Me.Fea_musics_techno)
@@ -668,37 +743,42 @@ Partial Class Miimusic_edit
         Me.Controls.Add(Me.Panel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Miimusic_edit"
-        Me.ShowIcon = false
-        Me.ShowInTaskbar = false
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Miimusic_edit"
-        Me.Button_save.ResumeLayout(false)
-        CType(Me.Icon_return,System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel2.ResumeLayout(false)
-        Me.Panel2.PerformLayout
-        CType(Me.valu_pagh_13,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_12,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_11,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_10,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_9,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_8,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_7,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_6,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_5,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_4,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_3,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_2,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_pagh_1,System.ComponentModel.ISupportInitialize).EndInit
-        Me.Fea_musics_musical.ResumeLayout(false)
-        Me.Fea_musics_techno.ResumeLayout(false)
-        Me.Fea_musics_opera.ResumeLayout(false)
-        Me.Fea_musics_ballad.ResumeLayout(false)
-        Me.Fea_musics_rap.ResumeLayout(false)
-        Me.Fea_musics_rockroll.ResumeLayout(false)
-        Me.Fea_musics_pop.ResumeLayout(false)
-        Me.Fea_musics_metal.ResumeLayout(false)
-        CType(Me.valu_selected_music,System.ComponentModel.ISupportInitialize).EndInit
-        Me.ResumeLayout(false)
+        Me.Button_save.ResumeLayout(False)
+        CType(Me.Icon_return, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        CType(Me.valu_pagh_13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Fea_musics_musical.ResumeLayout(False)
+        Me.Fea_musics_techno.ResumeLayout(False)
+        Me.Fea_musics_opera.ResumeLayout(False)
+        Me.Fea_musics_ballad.ResumeLayout(False)
+        Me.Fea_musics_rap.ResumeLayout(False)
+        Me.Fea_musics_rockroll.ResumeLayout(False)
+        Me.Fea_musics_pop.ResumeLayout(False)
+        Me.Fea_musics_metal.ResumeLayout(False)
+        CType(Me.valu_selected_music, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox162, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
         Me.PerformLayout
 
 End Sub
@@ -751,4 +831,9 @@ End Sub
     Friend WithEvents Text_edit_metal As System.Windows.Forms.Label
     Friend WithEvents valu_selected_music As System.Windows.Forms.NumericUpDown
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox162 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
 End Class

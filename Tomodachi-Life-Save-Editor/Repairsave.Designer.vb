@@ -35,6 +35,8 @@ Partial Class Repairsave
         Me.Icon_repair_header = New System.Windows.Forms.PictureBox()
         Me.Info_repair = New System.Windows.Forms.Label()
         Me.Icon_info_repair = New System.Windows.Forms.PictureBox()
+        Me.PictureBox162 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -42,6 +44,8 @@ Partial Class Repairsave
         Me.Panel_menu_opensave.SuspendLayout()
         CType(Me.Icon_repair_header, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_info_repair, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox162, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TLSE_logo
@@ -190,12 +194,38 @@ Partial Class Repairsave
         Me.Icon_info_repair.TabStop = False
         Me.Icon_info_repair.Visible = False
         '
+        'PictureBox162
+        '
+        Me.PictureBox162.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox162.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox162.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox162.Location = New System.Drawing.Point(420, 121)
+        Me.PictureBox162.Name = "PictureBox162"
+        Me.PictureBox162.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox162.TabIndex = 194
+        Me.PictureBox162.TabStop = False
+        Me.PictureBox162.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox1.Location = New System.Drawing.Point(141, 38)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox1.TabIndex = 195
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
         'Repairsave
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
         Me.ClientSize = New System.Drawing.Size(505, 449)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBox162)
         Me.Controls.Add(Me.Icon_info_repair)
         Me.Controls.Add(Me.Info_repair)
         Me.Controls.Add(Me.Icon_repair_header)
@@ -216,6 +246,8 @@ Partial Class Repairsave
         Me.Panel_menu_opensave.ResumeLayout(False)
         CType(Me.Icon_repair_header, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_info_repair, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox162, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -232,4 +264,6 @@ Partial Class Repairsave
     Friend WithEvents Icon_repair_header As System.Windows.Forms.PictureBox
     Friend WithEvents Info_repair As System.Windows.Forms.Label
     Friend WithEvents Icon_info_repair As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox162 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class
