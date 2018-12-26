@@ -161,6 +161,30 @@ Namespace My
                 Me("Parasetting_foodslang") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Parasetting_advH() As String
+            Get
+                Return CType(Me("Parasetting_advH"),String)
+            End Get
+            Set
+                Me("Parasetting_advH") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Parasetting_specharc3ds() As String
+            Get
+                Return CType(Me("Parasetting_specharc3ds"),String)
+            End Get
+            Set
+                Me("Parasetting_specharc3ds") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

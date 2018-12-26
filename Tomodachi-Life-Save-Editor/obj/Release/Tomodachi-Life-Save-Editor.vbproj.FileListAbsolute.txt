@@ -17,7 +17,6 @@ D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\bin\Release\PackageIO.dll
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Concert_edit.resources
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.TL_SaveEditor.resources
-D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Form2.resources
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Items_edit.resources
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Loading.resources
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Manual.resources
@@ -30,3 +29,5 @@ D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi-Life-Save-Editor.pdb
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi-Life-Save-Editor.vbprojResolveAssemblyReference.cache
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Repairsave.resources
+D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Specialcharacter.resources
+D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_dialog.resources

@@ -6,7 +6,6 @@ Public Class TL_SaveEditor
     Private IsFormBeingDragged As Boolean = False
     Private MousedwnX As Integer
     Private MousedwnY As Integer
-    Dim fdialog As New Form2
     Dim applicationpath = Application.StartupPath
     Dim AudioTomodachi As System.IO.UnmanagedMemoryStream
     Dim savedataArc As String
@@ -557,22 +556,26 @@ Public Class TL_SaveEditor
                     TLSE_logo.Visible = False
                     TLSE_logo_update.Visible = True
                     If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                        fdialog.Text_fdialog.Text = "An update is available, click on Tomodachi Life Save Editor icon to download new version"
-                        fdialog.ShowDialog()
+                        TLSE_dialog.Text_TLSE_dialog.Text = "An update is available" & vbNewLine & "click on Tomodachi Life Save Editor icon" & vbNewLine & "to download new version"
+                        TLSE_dialog.Icon_reference.Location = New Point(10, 40)
+                        TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+                        TLSE_dialog.ShowDialog()
                     End If
                     If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                        fdialog.Text_fdialog.Text = "Une mise à jour est disponible, cliquez sur l'îcone de Tomodachi Life Save Editor pour télécharger la nouvelle version"
-                        fdialog.ShowDialog()
+                        TLSE_dialog.Text_TLSE_dialog.Text = "Une mise à jour est disponible" & vbNewLine & "cliquez sur l'îcone de Tomodachi Life Save Editor" & vbNewLine & "pour télécharger la nouvelle version"
+                        TLSE_dialog.Icon_reference.Location = New Point(10, 40)
+                        TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+                        TLSE_dialog.ShowDialog()
                     End If
                 End If
             Catch ex As Exception
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                    fdialog.Text_fdialog.Text = "An error has occured when checking updates"
-                    fdialog.ShowDialog()
+                    TLSE_dialog.Text_TLSE_dialog.Text = "An error has occured when checking updates"
+                    TLSE_dialog.ShowDialog()
                 End If
                 If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                    fdialog.Text_fdialog.Text = "Une erreur est survenue lors de la vérification des mises à jour"
-                    fdialog.ShowDialog()
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Une erreur est survenue lors de la vérification des mises à jour"
+                    TLSE_dialog.ShowDialog()
                 End If
             End Try
         End If
@@ -982,12 +985,12 @@ Public Class TL_SaveEditor
             Select_language.Enabled = False
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Failed to read savedataArc.txt, make sure you choose right save file version and to have opened a file, or report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read savedataArc.txt" & vbNewLine & " Opening of save file has been canceled or something goes wrong" & vbNewLine & "make sure you choose the good save file version or report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "L'ouverture de savedataArc.txt a échoué, soyez sûr d'avoir choisi la bonne version de sauvegarde et d'avoir ouvert un fichier, ou signalez cet erreur"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de savedataArc.txt a échoué" & vbNewLine & " L'ouverture du fichier de sauvegarde a été annulé ou quelque chose ne va pas" & vbNewLine & "soyez sûr d'avoir choisi la bonne version de sauvegarde ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
             End If
             Text_menu_open.Visible = True
             Text_menu_save.Visible = False
@@ -1394,22 +1397,15 @@ Public Class TL_SaveEditor
                     fs.WriteByte(253)
                 Next
             End If
-            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Editing in savedataArc.txt has been saved"
-                fdialog.ShowDialog()
-            End If
-            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "Les modifications dans savedataArc.txt ont été enregistrées"
-                fdialog.ShowDialog()
-            End If
+            done()
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Failed to write savedataArc.txt, make sure you choose right save file version and to have opened a file, or report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to write savedataArc.txt" & vbNewLine & "something goes wrong, retry or report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "L'écriture de savedataArc.txt a échoué, soyez sûr d'avoir choisi la bonne version de sauvegarde et d'avoir ouvert un fichier, ou signalez cet erreur"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'écriture de savedataArc.txt a échoué" & vbNewLine & "quelque chose ne va pas, réessayez ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
             End If
         End Try
     End Sub
@@ -1750,12 +1746,12 @@ Public Class TL_SaveEditor
             Select_allfriends.SelectedItem = Select_allfriends.Items.Item(0)
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Failed to read informations of this Mii, make sure you have opened a file, or report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read informations of this Mii, make sure you have opened a file or report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "La lecture des informations de ce Mii a échoué, soyez sûr d'avoir ouvert un fichier, ou signalez cet erreur"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture des informations de ce Mii a échoué, soyez sûr d'avoir ouvert un fichier ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
             End If
             Select_mii.SelectedItem = Nothing
             Select_allfriends.Enabled = False
@@ -1940,22 +1936,15 @@ Public Class TL_SaveEditor
             fs.WriteByte(valu_emotions.Value)
             writefriendlist()
             Patchfrienlist()
-            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Editing of " & Text_nickname.Text & " has been saved"
-                fdialog.ShowDialog()
-            End If
-            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "Les modifications de " & Text_nickname.Text & " ont été enregistrées"
-                fdialog.ShowDialog()
-            End If
+            done()
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Failed to save changes on this Mii, make sure you have opened a save file, or report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to save changes on this Mii, make sure you have opened a save file or report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "L'enregistrement des changements sur ce Mii a échoué, soyez sûr d'avoir ouvert un fichier de sauvegarde, ou signalez cet erreur"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'enregistrement des changements sur ce Mii a échoué, soyez sûr d'avoir ouvert un fichier de sauvegarde ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
             End If
         End Try
     End Sub
@@ -4570,6 +4559,7 @@ Public Class TL_SaveEditor
         Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
         Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
         Select_foods_language.SelectedItem = Select_foods_language.Items.Item(0)
+        select_setallrelation.SelectedItem = select_setallrelation.Items.Item(0)
         Try
             Setting_ckupdate.Checked = My.Settings.Parasetting_ckupdate
             Setting_filepath.Checked = My.Settings.Parasetting_filepath
@@ -4580,6 +4570,8 @@ Public Class TL_SaveEditor
             Select_music.SelectedItem = My.Settings.Parasetting_musicsel
             Filever_text.Text = My.Settings.Parasetting_filever
             Select_foods_language.SelectedItem = My.Settings.Parasetting_foodslang
+            Setting_Advhelp.Checked = My.Settings.Parasetting_advH
+            Setting_specharac3ds.Checked = My.Settings.Parasetting_specharc3ds
             If Filever_text.Text = "US" Then
                 Filever_text.Text = "KR"
             ElseIf Filever_text.Text = "EU" Then
@@ -4609,6 +4601,8 @@ Public Class TL_SaveEditor
         My.Settings.Parasetting_musicsel = Select_music.SelectedItem
         My.Settings.Parasetting_filever = Filever_text.Text
         My.Settings.Parasetting_foodslang = Select_foods_language.SelectedItem
+        My.Settings.Parasetting_advH = Setting_Advhelp.Checked
+        My.Settings.Parasetting_specharc3ds = Setting_specharac3ds.Checked
     End Sub
 
     Private Sub Setting_hidden_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_hidden.CheckedChanged
@@ -4816,6 +4810,184 @@ Public Class TL_SaveEditor
             File_path.Visible = True
         Else
             File_path.Visible = False
+        End If
+    End Sub
+
+    Private Sub Setting_Advhelp_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_Advhelp.CheckedChanged
+        If Setting_Advhelp.Checked = True Then
+            Advhelp.Visible = True
+            Info_interaction.Visible = False
+            Info_islandbuild.Visible = False
+            AdvH_allfav.Visible = True
+            AdvH_apartrenov.Visible = True
+            AdvH_cathphrase.Visible = True
+            AdvH_childborn.Visible = True
+            AdvH_concertedit.Visible = True
+            AdvH_copying.Visible = True
+            AdvH_creator.Visible = True
+            AdvH_editcathphrase.Visible = True
+            AdvH_edithaircolor.Visible = True
+            AdvH_editmiimusic.Visible = True
+            AdvH_emotion.Visible = True
+            AdvH_eventfountain.Visible = True
+            AdvH_experience.Visible = True
+            AdvH_extras.Visible = True
+            AdvH_fav.Visible = True
+            AdvH_favcolor.Visible = True
+            AdvH_filever.Visible = True
+            AdvH_firstname.Visible = True
+            AdvH_firstnamepronun.Visible = True
+            AdvH_friendlist.Visible = True
+            AdvH_fullness.Visible = True
+            AdvH_gifs.Visible = True
+            AdvH_grownkid.Visible = True
+            AdvH_haircolor.Visible = True
+            AdvH_interaction.Visible = True
+            AdvH_interior.Visible = True
+            AdvH_inventory.Visible = True
+            AdvH_invgoodsitems.Visible = True
+            AdvH_invinterior.Visible = True
+            AdvH_invspefoods.Visible = True
+            AdvH_islandbuild.Visible = True
+            AdvH_islandedit.Visible = True
+            AdvH_islandname.Visible = True
+            AdvH_islandnamepronun.Visible = True
+            AdvH_itemsedit.Visible = True
+            AdvH_lastname.Visible = True
+            AdvH_lastnamepronun.Visible = True
+            AdvH_manual.Visible = True
+            AdvH_menu.Visible = True
+            AdvH_menu_opensave.Visible = True
+            AdvH_menu_width.Visible = True
+            AdvH_miieconomy.Visible = True
+            AdvH_miiedit.Visible = True
+            AdvH_miieditmusic.Visible = True
+            AdvH_miiHhouse.Visible = True
+            AdvH_miihouse.Visible = True
+            AdvH_miilevel.Visible = True
+            AdvH_money.Visible = True
+            AdvH_noeat.Visible = True
+            AdvH_pamperedrank.Visible = True
+            AdvH_problemssolved.Visible = True
+            AdvH_rankboard.Visible = True
+            AdvH_relarealtoyou.Visible = True
+            AdvH_repairsave.Visible = True
+            AdvH_resetitems.Visible = True
+            AdvH_resetmiiapart.Visible = True
+            AdvH_resetmiirela.Visible = True
+            AdvH_resetnewsflash.Visible = True
+            AdvH_resetstpspp.Visible = True
+            AdvH_savemii.Visible = True
+            AdvH_selectfriendlist.Visible = True
+            AdvH_selectmii.Visible = True
+            AdvH_setallfriends.Visible = True
+            AdvH_setallrelation.Visible = True
+            AdvH_settings.Visible = True
+            AdvH_sharing.Visible = True
+            AdvH_splurgerank.Visible = True
+            AdvH_streetencounters.Visible = True
+            AdvH_switchclothes.Visible = True
+            AdvH_switchhats.Visible = True
+            AdvH_switchinteriors.Visible = True
+            AdvH_targets.Visible = True
+            AdvH_timetravel.Visible = True
+            AdvH_travelersedit.Visible = True
+            AdvH_travelersreceived.Visible = True
+            AdvH_travelerssent.Visible = True
+            AdvH_unlockmusic.Visible = True
+            AdvH_weddings.Visible = True
+            AdvH_worst.Visible = True
+        Else
+            Advhelp.Visible = False
+            Info_interaction.Visible = True
+            Info_islandbuild.Visible = True
+            AdvH_allfav.Visible = False
+            AdvH_apartrenov.Visible = False
+            AdvH_cathphrase.Visible = False
+            AdvH_childborn.Visible = False
+            AdvH_concertedit.Visible = False
+            AdvH_copying.Visible = False
+            AdvH_creator.Visible = False
+            AdvH_editcathphrase.Visible = False
+            AdvH_edithaircolor.Visible = False
+            AdvH_editmiimusic.Visible = False
+            AdvH_emotion.Visible = False
+            AdvH_eventfountain.Visible = False
+            AdvH_experience.Visible = False
+            AdvH_extras.Visible = False
+            AdvH_fav.Visible = False
+            AdvH_favcolor.Visible = False
+            AdvH_filever.Visible = False
+            AdvH_firstname.Visible = False
+            AdvH_firstnamepronun.Visible = False
+            AdvH_friendlist.Visible = False
+            AdvH_fullness.Visible = False
+            AdvH_gifs.Visible = False
+            AdvH_grownkid.Visible = False
+            AdvH_haircolor.Visible = False
+            AdvH_interaction.Visible = False
+            AdvH_interior.Visible = False
+            AdvH_inventory.Visible = False
+            AdvH_invgoodsitems.Visible = False
+            AdvH_invinterior.Visible = False
+            AdvH_invspefoods.Visible = False
+            AdvH_islandbuild.Visible = False
+            AdvH_islandedit.Visible = False
+            AdvH_islandname.Visible = False
+            AdvH_islandnamepronun.Visible = False
+            AdvH_itemsedit.Visible = False
+            AdvH_lastname.Visible = False
+            AdvH_lastnamepronun.Visible = False
+            AdvH_manual.Visible = False
+            AdvH_menu.Visible = False
+            AdvH_menu_opensave.Visible = False
+            AdvH_menu_width.Visible = False
+            AdvH_miieconomy.Visible = False
+            AdvH_miiedit.Visible = False
+            AdvH_miieditmusic.Visible = False
+            AdvH_miiHhouse.Visible = False
+            AdvH_miihouse.Visible = False
+            AdvH_miilevel.Visible = False
+            AdvH_money.Visible = False
+            AdvH_noeat.Visible = False
+            AdvH_pamperedrank.Visible = False
+            AdvH_problemssolved.Visible = False
+            AdvH_rankboard.Visible = False
+            AdvH_relarealtoyou.Visible = False
+            AdvH_repairsave.Visible = False
+            AdvH_resetitems.Visible = False
+            AdvH_resetmiiapart.Visible = False
+            AdvH_resetmiirela.Visible = False
+            AdvH_resetnewsflash.Visible = False
+            AdvH_resetstpspp.Visible = False
+            AdvH_savemii.Visible = False
+            AdvH_selectfriendlist.Visible = False
+            AdvH_selectmii.Visible = False
+            AdvH_setallfriends.Visible = False
+            AdvH_setallrelation.Visible = False
+            AdvH_settings.Visible = False
+            AdvH_sharing.Visible = False
+            AdvH_splurgerank.Visible = False
+            AdvH_streetencounters.Visible = False
+            AdvH_switchclothes.Visible = False
+            AdvH_switchhats.Visible = False
+            AdvH_switchinteriors.Visible = False
+            AdvH_targets.Visible = False
+            AdvH_timetravel.Visible = False
+            AdvH_travelersedit.Visible = False
+            AdvH_travelersreceived.Visible = False
+            AdvH_travelerssent.Visible = False
+            AdvH_unlockmusic.Visible = False
+            AdvH_weddings.Visible = False
+            AdvH_worst.Visible = False
+        End If
+    End Sub
+
+    Private Sub Setting_specharac3ds_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_specharac3ds.CheckedChanged
+        If Setting_specharac3ds.Checked = True Then
+            Specharac3ds.Visible = True
+        Else
+            Specharac3ds.Visible = False
         End If
     End Sub
 
@@ -5232,27 +5404,37 @@ Public Class TL_SaveEditor
         veriffilever()
         Dim open As New OpenFileDialog
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            fdialog.Text_fdialog.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a backup of your save file before any changes, check ''bak'' folder" & vbNewLine & vbNewLine & "Make sure you have choose right save file version"
-            fdialog.ShowDialog()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a backup of your save file before any changes, check ''bak'' folder" & vbNewLine & vbNewLine & "Make sure you have choose the good save file version"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.Icon_reference.Location = New Point(310, 50)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
         End If
         If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            fdialog.Text_fdialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde avant tout changements, vérifiez le dossier ''bak''" & vbNewLine & vbNewLine & "Soyez sûr d'avoir choisi la bonne version de sauvegarde"
-            fdialog.ShowDialog()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde avant tout changements, vérifiez le dossier ''bak''" & vbNewLine & vbNewLine & "Soyez sûr d'avoir choisi la bonne version de sauvegarde"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.Icon_reference.Location = New Point(310, 50)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
         End If
         Stopveriffilever()
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            open.Filter = "Text files|*.txt"
-            open.Title = "Open save savedataArc.txt"
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                open.Filter = "Text files|*.txt"
+                open.Title = "Open save savedataArc.txt"
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                open.Filter = "Fichiers texte|*.txt"
+                open.Title = "Ouvrir la sauvegarde savedataArc.txt"
+            End If
+            open.ShowDialog()
+            savedataArc = open.FileName
+            TextBox_fpath.Text = savedataArc
+            readsavedataArc()
+            makebak()
         End If
-        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            open.Filter = "Fichiers texte|*.txt"
-            open.Title = "Ouvrir la sauvegarde savedataArc.txt"
-        End If
-        open.ShowDialog()
-        savedataArc = open.FileName
-        TextBox_fpath.Text = savedataArc
-        readsavedataArc()
-        makebak()
     End Sub
 
     Private Sub valu_experience_ValueChanged(sender As Object, e As EventArgs) Handles valu_experience.ValueChanged
@@ -5602,7 +5784,21 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
-        writesavedataArc()
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Do you want save all changes" & vbNewLine & "in your save file (except changes on Miis) ?"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Voulez-vous enregistrer tout les changements" & vbNewLine & "dans votre fichier de sauvegarde (excepté les changements sur les Mii) ?"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            writesavedataArc()
+        End If
     End Sub
 
     Private Sub Button_setallfriends_Click(sender As Object, e As EventArgs) Handles Button_setallfriends.Click
@@ -8134,7 +8330,21 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Text_save_mii_Click(sender As Object, e As EventArgs) Handles Text_save_mii.Click
-        writeMii()
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Do you want save all changes on this Mii ?"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Voulez-vous enregistrer tout les changements sur ce Mii) ?"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            writeMii()
+        End If
     End Sub
 
     Private Sub Select_target1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_target1.SelectedIndexChanged
@@ -20182,12 +20392,12 @@ Public Class TL_SaveEditor
 
     Private Sub Info_interaction_Click(sender As Object, e As EventArgs) Handles Info_interaction.Click
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            fdialog.Text_fdialog.Text = "Miis must have same status (kid or grown_up) and don't have same sex, some interaction need conditions"
-            fdialog.ShowDialog()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Miis must have same status (kid or grown_up)" & vbNewLine & "and don't have same sex, some interaction need conditions"
+            TLSE_dialog.ShowDialog()
         End If
         If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            fdialog.Text_fdialog.Text = "Les Miis doivent pas avoir le même status (enfant ou adulte) et doivent pas avoir le même sexe, certaines interactions nécessite des conditions"
-            fdialog.ShowDialog()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Les Miis doivent pas avoir le même status (enfant ou adulte)" & vbNewLine & "et doivent pas avoir le même sexe, certaines interactions nécessite des conditions"
+            TLSE_dialog.ShowDialog()
         End If
     End Sub
 
@@ -26928,11 +27138,110 @@ Public Class TL_SaveEditor
         TextBox_fpath.Visible = False
     End Sub
 
-    Private Sub Check_resetitems_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_resetitems.MouseMove
-
+    Private Sub Specharac3ds_icon_Click(sender As Object, e As EventArgs) Handles Specharac3ds_icon.Click
+        Specialcharacter.Show()
     End Sub
 
-    Private Sub Icon_path_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_path.MouseMove
+    Private Sub Specharac3ds_icon_MouseLeave(sender As Object, e As EventArgs) Handles Specharac3ds_icon.MouseLeave
+        Panel_description.Visible = False
+    End Sub
 
+    Private Sub Icon_problemsolved_Click(sender As Object, e As EventArgs) Handles Icon_problemsolved.Click
+        value_problemsolved.Value = 9999
+    End Sub
+
+    Private Sub Icon_streetpassencounters_Click(sender As Object, e As EventArgs) Handles Icon_streetpassencounters.Click
+        value_streetpassencounters.Value = 9999
+    End Sub
+
+    Private Sub Icon_weddings_Click(sender As Object, e As EventArgs) Handles Icon_weddings.Click
+        value_weddings.Value = 9999
+    End Sub
+
+    Private Sub Icon_childrenborn_Click(sender As Object, e As EventArgs) Handles Icon_childrenborn.Click
+        value_childrenborn.Value = 9999
+    End Sub
+
+    Private Sub Icon_travelersreceived_Click(sender As Object, e As EventArgs) Handles Icon_travelersreceived.Click
+        value_travelersreceived.Value = 9999
+    End Sub
+
+    Private Sub Icon_travelerssent_Click(sender As Object, e As EventArgs) Handles Icon_travelerssent.Click
+        value_travelerssent.Value = 9999
+    End Sub
+
+    Private Sub Icon_money_Click(sender As Object, e As EventArgs) Handles Icon_money.Click
+        value_money.Value = 99999999
+    End Sub
+
+    Private Sub Specharac3ds_icon_MouseMove(sender As Object, e As EventArgs) Handles Specharac3ds_icon.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to show 3DS special character panel"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour afficher le panneau de caractère spécial 3DS"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub AdvH_allfav_Click(sender As Object, e As EventArgs) Handles AdvH_allfav.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Foods listed :" & vbNewLine & "If your region have foods listed, just select them" & vbNewLine & "you can also see foods that your Mii loves even if he hasn't eaten them" & vbNewLine & vbNewLine & "Unlisted foods :" & vbNewLine & "Foods list doesn't exist, you can edit value has you want but some may not correspond to a food"
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Nourritures listé : " & vbNewLine & "Si votre région a les nourritures listé,  vous avez juste à les sélectionner" & vbNewLine & "vous pouvez également voir les nourritures que votre Mii aime même si il les a pas mangé" & vbNewLine & vbNewLine & "Nourriture non listé :" & vbNewLine & "La liste des nourritures n'existe pas, vous pouvez éditer les valeurs mais certaines peuvent ne pas correspondre à une nourriture"
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_apartrenov_Click(sender As Object, e As EventArgs) Handles AdvH_apartrenov.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click to edit the size of your building" & vbNewLine & "If you have save with a smaller building than you have Mii" & vbNewLine & "you will automatically unlock the top level"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 98)
+            TLSE_dialog.Icon_reference.Location = New Point(98, 481)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquez pour éditer la taille de votre immeuble" & vbNewLine & "Si vous sauvegarder avec une plus petite immeuble que vous avez de Mii" & vbNewLine & "vous débloquerez automatiquement le niveau supérieur"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 98)
+            TLSE_dialog.Icon_reference.Location = New Point(98, 481)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_cathphrase_Click(sender As Object, e As EventArgs) Handles AdvH_cathphrase.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to edit catchphrase of your Mii"
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour pouvoir éditer les expressions favorite de votre Mii"
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_childborn_Click(sender As Object, e As EventArgs) Handles AdvH_childborn.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is the number of baby born on your island"
+            TLSE_dialog.Panel_dialog.Location = New Point(160, 160)
+            TLSE_dialog.Icon_reference.Location = New Point(85, 290)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click on this icon to put directly to the maximum"
+            TLSE_dialog.Panel_dialog.Location = New Point(160, 160)
+            TLSE_dialog.Icon_reference.Location = New Point(60, 290)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est le nombre de bébé né sur votre île"
+            TLSE_dialog.Panel_dialog.Location = New Point(160, 160)
+            TLSE_dialog.Icon_reference.Location = New Point(85, 290)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquez sur cette icône pour mettre directement au maximum"
+            TLSE_dialog.Panel_dialog.Location = New Point(160, 160)
+            TLSE_dialog.Icon_reference.Location = New Point(60, 290)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
     End Sub
 End Class

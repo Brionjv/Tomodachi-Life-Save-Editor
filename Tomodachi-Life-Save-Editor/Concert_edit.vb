@@ -1,7 +1,6 @@
 ﻿Imports PackageIO
 Public Class Concert_edit
     Dim savedataArc As String
-    Dim fdialog As New Form2
     Dim Pagh1 As String
     Dim Pagh2 As String
     Dim Pagh3 As String
@@ -212,12 +211,12 @@ Public Class Concert_edit
             Text_titlemusic.Text = Reader.ReadUnicodeString(32)
         Catch ex As Exception
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Failed to read savedataArc.txt, make sure you choose right save file version and to have opened a file, or report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read savedataArc.txt, make sure you choose right save file version and to have opened a file, or report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "La lecture de savedataArc.txt a échoué, soyez sûr d'avoir choisi la bonne version de sauvegarde et d'avoir ouvert un fichier, ou signalez cet erreur"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de savedataArc.txt a échoué, soyez sûr d'avoir choisi la bonne version de sauvegarde et d'avoir ouvert un fichier, ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
             End If
         End Try
     End Sub
@@ -440,21 +439,21 @@ Public Class Concert_edit
             Writer.Position = Tmusc
             Writer.WriteUnicodeString(Text_titlemusic.Text)
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Editing of this song has been saved"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Editing of this song has been saved"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "Les modifications de cette musique ont été enregistrées"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Les modifications de cette musique ont été enregistrées"
+                TLSE_dialog.ShowDialog()
             End If
         Catch ex As Exception
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Failed to write savedataArc.txt, make sure you choose right save file version and to have opened a file, or report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to write savedataArc.txt, make sure you choose right save file version and to have opened a file, or report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "L'écriture de savedataArc.txt a échoué, soyez sûr d'avoir choisi la bonne version de sauvegarde et d'avoir ouvert un fichier, ou signalez cet erreur"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'écriture de savedataArc.txt a échoué, soyez sûr d'avoir choisi la bonne version de sauvegarde et d'avoir ouvert un fichier, ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
             End If
         End Try
     End Sub

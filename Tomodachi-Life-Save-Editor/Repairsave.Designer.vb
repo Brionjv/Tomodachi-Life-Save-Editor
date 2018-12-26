@@ -37,6 +37,7 @@ Partial Class Repairsave
         Me.Icon_info_repair = New System.Windows.Forms.PictureBox()
         Me.PictureBox162 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Check_resetrelationship = New System.Windows.Forms.CheckBox()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -218,12 +219,31 @@ Partial Class Repairsave
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
+        'Check_resetrelationship
+        '
+        Me.Check_resetrelationship.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_resetrelationship.AutoSize = True
+        Me.Check_resetrelationship.BackColor = System.Drawing.Color.White
+        Me.Check_resetrelationship.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_resetrelationship.FlatAppearance.BorderSize = 0
+        Me.Check_resetrelationship.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_resetrelationship.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_resetrelationship.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_resetrelationship.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_resetrelationship.Location = New System.Drawing.Point(12, 192)
+        Me.Check_resetrelationship.Name = "Check_resetrelationship"
+        Me.Check_resetrelationship.Size = New System.Drawing.Size(198, 23)
+        Me.Check_resetrelationship.TabIndex = 196
+        Me.Check_resetrelationship.Text = "Reset all items, friendlist, Mii apartment"
+        Me.Check_resetrelationship.UseVisualStyleBackColor = False
+        '
         'Repairsave
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
         Me.ClientSize = New System.Drawing.Size(505, 449)
+        Me.Controls.Add(Me.Check_resetrelationship)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox162)
         Me.Controls.Add(Me.Icon_info_repair)
@@ -266,4 +286,5 @@ Partial Class Repairsave
     Friend WithEvents Icon_info_repair As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox162 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Check_resetrelationship As System.Windows.Forms.CheckBox
 End Class

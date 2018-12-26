@@ -2,7 +2,6 @@
 Imports System.IO
 Public Class Items_edit
     Dim savedataArc As String
-    Dim fdialog As New Form2
     Dim Goodsitems As String
     Dim Goodsitems_1 As String
     Dim Goodsitems_2 As String
@@ -8098,23 +8097,23 @@ Public Class Items_edit
             writeinteriors()
             writeunitems()
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Editing of items has been successfully saved"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Editing of items has been successfully saved"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "L'édition des objets a été sauvegardé avec succès"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'édition des objets a été sauvegardé avec succès"
+                TLSE_dialog.ShowDialog()
             End If
             Me.Close()
             TL_SaveEditor.Show()
         Catch ex As Exception
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "An error has occured when writing editing of items, please report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "An error has occured when writing editing of items, please report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "Une erreur est survenue lors de l'écriture de l'édition des objets, veuillez signaler cet erreur s'il vous plaît"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Une erreur est survenue lors de l'écriture de l'édition des objets, veuillez signaler cet erreur s'il vous plaît"
+                TLSE_dialog.ShowDialog()
             End If
         End Try
     End Sub

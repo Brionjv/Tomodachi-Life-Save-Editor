@@ -2,7 +2,6 @@
 Imports PackageIO
 Public Class Travelers_edit
     Dim Accesstravelers As String
-    Dim fdialog As New Form2
     Dim savedataArc As String
     Dim stmexp As String
     Dim stmlv As String
@@ -24,12 +23,12 @@ Public Class Travelers_edit
             valu_happiness.Value = Reader.ReadByte
         Catch ex As Exception
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Failed to read this traveler, load a save file first or report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read this traveler, load a save file first or report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "La lecture de ce voyageur a échoué, ouvrez une savegarde avant ou signalez cet erreur"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de ce voyageur a échoué, ouvrez une savegarde avant ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
             End If
         End Try
     End Sub
@@ -42,21 +41,21 @@ Public Class Travelers_edit
             fs.Position = stmexp
             fs.WriteByte(valu_happiness.Value)
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "This traveler has been edited"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "This traveler has been edited"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "Ce voyageur a été édité"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Ce voyageur a été édité"
+                TLSE_dialog.ShowDialog()
             End If
         Catch ex As Exception
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Editing of this traveler has failed, load a save file first or report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Editing of this traveler has failed, load a save file first or report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "L'édition de ce voyageur a échoué, ouvrez une savegarde avant ou signalez cet erreur"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'édition de ce voyageur a échoué, ouvrez une savegarde avant ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
             End If
         End Try
     End Sub

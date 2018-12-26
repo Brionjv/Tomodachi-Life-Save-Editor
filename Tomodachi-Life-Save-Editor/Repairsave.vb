@@ -5,7 +5,6 @@ Public Class Repairsave
     Private IsFormBeingDragged As Boolean = False
     Private MousedwnX As Integer
     Private MousedwnY As Integer
-    Dim fdialog As New Form2
     Dim applicationpath = Application.StartupPath
     Dim savedataArc As String
 
@@ -61,12 +60,12 @@ Public Class Repairsave
     Private Sub Text_menu_open_Click(sender As Object, e As EventArgs) Handles Text_menu_open.Click
         Dim open As New OpenFileDialog
         If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-            fdialog.Text_fdialog.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a backup of your save file before any changes, check ''bak\Tryrepair'' folder" & vbNewLine & vbNewLine & "Make sure you have choose right save file version"
-            fdialog.ShowDialog()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Open savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor will make a backup of your save file before any changes, check ''bak\Tryrepair'' folder" & vbNewLine & vbNewLine & "Make sure you have choose right save file version"
+            TLSE_dialog.ShowDialog()
         End If
         If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-            fdialog.Text_fdialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde avant tout changements, vérifiez le dossier ''bak\Tryrepair''" & vbNewLine & vbNewLine & "Soyez sûr d'avoir choisi la bonne version de sauvegarde"
-            fdialog.ShowDialog()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde avant tout changements, vérifiez le dossier ''bak\Tryrepair''" & vbNewLine & vbNewLine & "Soyez sûr d'avoir choisi la bonne version de sauvegarde"
+            TLSE_dialog.ShowDialog()
         End If
         If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
             open.Filter = "Text files|*.txt"
@@ -91,12 +90,12 @@ Public Class Repairsave
             Text_menu_save.Visible = True
         Catch ex As Exception
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Failed to read savedataArc.txt, make sure to have opened a Tomodachi Life save, or report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read savedataArc.txt, make sure to have opened a Tomodachi Life save, or report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "L'ouverture de savedataArc.txt a échoué, soyez sûr d'avoir ouvert une sauvegarde de Tomodachi Life, ou signalez cet erreur"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'ouverture de savedataArc.txt a échoué, soyez sûr d'avoir ouvert une sauvegarde de Tomodachi Life, ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
             End If
         End Try
     End Sub
@@ -116,21 +115,21 @@ Public Class Repairsave
             Writer.Position = &H0
             Writer.WriteHexString(Text_header.Text)
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "savedataArc.txt has been successfully edited"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "savedataArc.txt has been successfully edited"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "savedataArc.txt a été édité avec succès"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "savedataArc.txt a été édité avec succès"
+                TLSE_dialog.ShowDialog()
             End If
         Catch ex As Exception
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                fdialog.Text_fdialog.Text = "Failed to write savedataArc.txt, make sure to have opened a Tomodachi Life save, or report this issue"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to write savedataArc.txt, make sure to have opened a Tomodachi Life save, or report this issue"
+                TLSE_dialog.ShowDialog()
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                fdialog.Text_fdialog.Text = "L'écriture de savedataArc.txt a échoué, soyez sûr d'avoir ouvert une sauvegarde de Tomodachi Life, ou signalez cet erreur"
-                fdialog.ShowDialog()
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'écriture de savedataArc.txt a échoué, soyez sûr d'avoir ouvert une sauvegarde de Tomodachi Life, ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
             End If
         End Try
     End Sub
