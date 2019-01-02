@@ -713,8 +713,8 @@ Partial Class TL_SaveEditor
         Me.AdvH_filever = New System.Windows.Forms.PictureBox()
         Me.Specharac3ds = New System.Windows.Forms.Panel()
         Me.Specharac3ds_icon = New System.Windows.Forms.PictureBox()
-        Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Panel_uncheckupdate = New System.Windows.Forms.Panel()
+        Me.Icon_uncheckupdate = New System.Windows.Forms.PictureBox()
         Me.TLSE_header.SuspendLayout
         CType(Me.TLSE_title,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Closebutton,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1195,8 +1195,8 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_filever,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Specharac3ds.SuspendLayout
         CType(Me.Specharac3ds_icon,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel20.SuspendLayout
-        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_uncheckupdate.SuspendLayout
+        CType(Me.Icon_uncheckupdate,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'TLSE_header
@@ -8853,7 +8853,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox1.Size = New System.Drawing.Size(84, 31)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 194
-        Me.PictureBox1.TabStop = false
+        Me.PictureBox1.TabStop = False
         '
         'Tab_mii_extras
         '
@@ -8872,7 +8872,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_extras.Size = New System.Drawing.Size(585, 429)
         Me.Tab_mii_extras.TabIndex = 3
         Me.Tab_mii_extras.Text = "Extras"
-        Me.Tab_mii_extras.UseVisualStyleBackColor = true
+        Me.Tab_mii_extras.UseVisualStyleBackColor = True
         '
         'AdvH_splurgerank
         '
@@ -8883,8 +8883,8 @@ Partial Class TL_SaveEditor
         Me.AdvH_splurgerank.Name = "AdvH_splurgerank"
         Me.AdvH_splurgerank.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_splurgerank.TabIndex = 68
-        Me.AdvH_splurgerank.TabStop = false
-        Me.AdvH_splurgerank.Visible = false
+        Me.AdvH_splurgerank.TabStop = False
+        Me.AdvH_splurgerank.Visible = False
         '
         'AdvH_pamperedrank
         '
@@ -8895,8 +8895,8 @@ Partial Class TL_SaveEditor
         Me.AdvH_pamperedrank.Name = "AdvH_pamperedrank"
         Me.AdvH_pamperedrank.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_pamperedrank.TabIndex = 67
-        Me.AdvH_pamperedrank.TabStop = false
-        Me.AdvH_pamperedrank.Visible = false
+        Me.AdvH_pamperedrank.TabStop = False
+        Me.AdvH_pamperedrank.Visible = False
         '
         'valu_ranking_splurge
         '
@@ -8907,7 +8907,7 @@ Partial Class TL_SaveEditor
         Me.valu_ranking_splurge.Size = New System.Drawing.Size(93, 16)
         Me.valu_ranking_splurge.TabIndex = 11
         Me.valu_ranking_splurge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_ranking_splurge.ThousandsSeparator = true
+        Me.valu_ranking_splurge.ThousandsSeparator = True
         '
         'Title_ranking_splurge
         '
@@ -8921,12 +8921,12 @@ Partial Class TL_SaveEditor
         '
         'Icon_ranking_splurge
         '
-        Me.Icon_ranking_splurge.Image = CType(resources.GetObject("Icon_ranking_splurge.Image"),System.Drawing.Image)
+        Me.Icon_ranking_splurge.Image = CType(resources.GetObject("Icon_ranking_splurge.Image"), System.Drawing.Image)
         Me.Icon_ranking_splurge.Location = New System.Drawing.Point(218, 227)
         Me.Icon_ranking_splurge.Name = "Icon_ranking_splurge"
         Me.Icon_ranking_splurge.Size = New System.Drawing.Size(50, 64)
         Me.Icon_ranking_splurge.TabIndex = 9
-        Me.Icon_ranking_splurge.TabStop = false
+        Me.Icon_ranking_splurge.TabStop = False
         '
         'valu_ranking_pampered
         '
@@ -8937,7 +8937,7 @@ Partial Class TL_SaveEditor
         Me.valu_ranking_pampered.Size = New System.Drawing.Size(93, 16)
         Me.valu_ranking_pampered.TabIndex = 8
         Me.valu_ranking_pampered.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_ranking_pampered.ThousandsSeparator = true
+        Me.valu_ranking_pampered.ThousandsSeparator = True
         '
         'Title_ranking_pampered
         '
@@ -8951,17 +8951,17 @@ Partial Class TL_SaveEditor
         '
         'Icon_ranking_pampered
         '
-        Me.Icon_ranking_pampered.Image = CType(resources.GetObject("Icon_ranking_pampered.Image"),System.Drawing.Image)
+        Me.Icon_ranking_pampered.Image = CType(resources.GetObject("Icon_ranking_pampered.Image"), System.Drawing.Image)
         Me.Icon_ranking_pampered.Location = New System.Drawing.Point(218, 137)
         Me.Icon_ranking_pampered.Name = "Icon_ranking_pampered"
         Me.Icon_ranking_pampered.Size = New System.Drawing.Size(50, 64)
         Me.Icon_ranking_pampered.TabIndex = 6
-        Me.Icon_ranking_pampered.TabStop = false
+        Me.Icon_ranking_pampered.TabStop = False
         '
         'Panel_save_mii
         '
         Me.Panel_save_mii.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_save_mii.BackgroundImage = CType(resources.GetObject("Panel_save_mii.BackgroundImage"),System.Drawing.Image)
+        Me.Panel_save_mii.BackgroundImage = CType(resources.GetObject("Panel_save_mii.BackgroundImage"), System.Drawing.Image)
         Me.Panel_save_mii.Controls.Add(Me.Text_save_mii)
         Me.Panel_save_mii.Location = New System.Drawing.Point(496, 460)
         Me.Panel_save_mii.Name = "Panel_save_mii"
@@ -8973,8 +8973,8 @@ Partial Class TL_SaveEditor
         Me.Text_save_mii.BackColor = System.Drawing.Color.Transparent
         Me.Text_save_mii.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_save_mii.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_save_mii.Enabled = false
-        Me.Text_save_mii.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Text_save_mii.Enabled = False
+        Me.Text_save_mii.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Text_save_mii.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_save_mii.Location = New System.Drawing.Point(0, 0)
         Me.Text_save_mii.Name = "Text_save_mii"
@@ -8999,7 +8999,7 @@ Partial Class TL_SaveEditor
         Me.Select_mii.DisplayMember = "0"
         Me.Select_mii.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_mii.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_mii.FormattingEnabled = true
+        Me.Select_mii.FormattingEnabled = True
         Me.Select_mii.Items.AddRange(New Object() {"Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
         Me.Select_mii.Location = New System.Drawing.Point(8, 4)
         Me.Select_mii.Name = "Select_mii"
@@ -9036,14 +9036,14 @@ Partial Class TL_SaveEditor
         Me.Panel_description.Name = "Panel_description"
         Me.Panel_description.Size = New System.Drawing.Size(600, 25)
         Me.Panel_description.TabIndex = 28
-        Me.Panel_description.Visible = false
+        Me.Panel_description.Visible = False
         '
         'Text_description
         '
         Me.Text_description.BackColor = System.Drawing.Color.Transparent
         Me.Text_description.Cursor = System.Windows.Forms.Cursors.Default
         Me.Text_description.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_description.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Text_description.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Text_description.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_description.Location = New System.Drawing.Point(0, 0)
         Me.Text_description.Name = "Text_description"
@@ -9061,12 +9061,12 @@ Partial Class TL_SaveEditor
         Me.Panel_done.Name = "Panel_done"
         Me.Panel_done.Size = New System.Drawing.Size(124, 46)
         Me.Panel_done.TabIndex = 29
-        Me.Panel_done.Visible = false
+        Me.Panel_done.Visible = False
         '
         'Text_done
         '
         Me.Text_done.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_done.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Text_done.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Text_done.ForeColor = System.Drawing.Color.White
         Me.Text_done.Location = New System.Drawing.Point(0, 0)
         Me.Text_done.Name = "Text_done"
@@ -9082,7 +9082,7 @@ Partial Class TL_SaveEditor
         'Text_savefileregion
         '
         Me.Text_savefileregion.BackColor = System.Drawing.Color.Transparent
-        Me.Text_savefileregion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Text_savefileregion.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Text_savefileregion.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_savefileregion.Location = New System.Drawing.Point(206, 33)
         Me.Text_savefileregion.Name = "Text_savefileregion"
@@ -9100,14 +9100,14 @@ Partial Class TL_SaveEditor
         Me.Advhelp.Name = "Advhelp"
         Me.Advhelp.Size = New System.Drawing.Size(31, 25)
         Me.Advhelp.TabIndex = 32
-        Me.Advhelp.Visible = false
+        Me.Advhelp.Visible = False
         '
         'Advhelp_text
         '
         Me.Advhelp_text.BackColor = System.Drawing.Color.Transparent
         Me.Advhelp_text.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Advhelp_text.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Advhelp_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Advhelp_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Advhelp_text.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Advhelp_text.Location = New System.Drawing.Point(0, 0)
         Me.Advhelp_text.Name = "Advhelp_text"
@@ -9126,8 +9126,8 @@ Partial Class TL_SaveEditor
         Me.AdvH_filever.Size = New System.Drawing.Size(15, 15)
         Me.AdvH_filever.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.AdvH_filever.TabIndex = 69
-        Me.AdvH_filever.TabStop = false
-        Me.AdvH_filever.Visible = false
+        Me.AdvH_filever.TabStop = False
+        Me.AdvH_filever.Visible = False
         '
         'Specharac3ds
         '
@@ -9138,51 +9138,51 @@ Partial Class TL_SaveEditor
         Me.Specharac3ds.Name = "Specharac3ds"
         Me.Specharac3ds.Size = New System.Drawing.Size(31, 25)
         Me.Specharac3ds.TabIndex = 70
-        Me.Specharac3ds.Visible = false
+        Me.Specharac3ds.Visible = False
         '
         'Specharac3ds_icon
         '
         Me.Specharac3ds_icon.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Specharac3ds_icon.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Specharac3ds_icon.Image = CType(resources.GetObject("Specharac3ds_icon.Image"),System.Drawing.Image)
+        Me.Specharac3ds_icon.Image = CType(resources.GetObject("Specharac3ds_icon.Image"), System.Drawing.Image)
         Me.Specharac3ds_icon.Location = New System.Drawing.Point(0, 0)
         Me.Specharac3ds_icon.Name = "Specharac3ds_icon"
         Me.Specharac3ds_icon.Size = New System.Drawing.Size(31, 25)
         Me.Specharac3ds_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.Specharac3ds_icon.TabIndex = 0
-        Me.Specharac3ds_icon.TabStop = false
+        Me.Specharac3ds_icon.TabStop = False
         '
-        'Panel20
+        'Panel_uncheckupdate
         '
-        Me.Panel20.BackColor = System.Drawing.Color.Transparent
-        Me.Panel20.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
-        Me.Panel20.Controls.Add(Me.PictureBox3)
-        Me.Panel20.Location = New System.Drawing.Point(528, 33)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(31, 25)
-        Me.Panel20.TabIndex = 71
-        Me.Panel20.Visible = false
+        Me.Panel_uncheckupdate.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_uncheckupdate.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
+        Me.Panel_uncheckupdate.Controls.Add(Me.Icon_uncheckupdate)
+        Me.Panel_uncheckupdate.Location = New System.Drawing.Point(528, 33)
+        Me.Panel_uncheckupdate.Name = "Panel_uncheckupdate"
+        Me.Panel_uncheckupdate.Size = New System.Drawing.Size(31, 25)
+        Me.Panel_uncheckupdate.TabIndex = 71
+        Me.Panel_uncheckupdate.Visible = False
         '
-        'PictureBox3
+        'Icon_uncheckupdate
         '
-        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"),System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(31, 25)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox3.TabIndex = 0
-        Me.PictureBox3.TabStop = false
+        Me.Icon_uncheckupdate.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_uncheckupdate.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Icon_uncheckupdate.Image = CType(resources.GetObject("Icon_uncheckupdate.Image"), System.Drawing.Image)
+        Me.Icon_uncheckupdate.Location = New System.Drawing.Point(0, 0)
+        Me.Icon_uncheckupdate.Name = "Icon_uncheckupdate"
+        Me.Icon_uncheckupdate.Size = New System.Drawing.Size(31, 25)
+        Me.Icon_uncheckupdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_uncheckupdate.TabIndex = 0
+        Me.Icon_uncheckupdate.TabStop = False
         '
         'TL_SaveEditor
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(600, 550)
-        Me.Controls.Add(Me.Panel20)
+        Me.Controls.Add(Me.Panel_uncheckupdate)
         Me.Controls.Add(Me.Specharac3ds)
         Me.Controls.Add(Me.AdvH_filever)
         Me.Controls.Add(Me.Advhelp)
@@ -9720,8 +9720,8 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_filever,System.ComponentModel.ISupportInitialize).EndInit
         Me.Specharac3ds.ResumeLayout(false)
         CType(Me.Specharac3ds_icon,System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel20.ResumeLayout(false)
-        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_uncheckupdate.ResumeLayout(false)
+        CType(Me.Icon_uncheckupdate,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
         Me.PerformLayout
 
@@ -10415,7 +10415,7 @@ End Sub
     Friend WithEvents Setting_specharac3ds As System.Windows.Forms.CheckBox
     Friend WithEvents Specharac3ds As System.Windows.Forms.Panel
     Friend WithEvents Specharac3ds_icon As System.Windows.Forms.PictureBox
-    Friend WithEvents Panel20 As System.Windows.Forms.Panel
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel_uncheckupdate As System.Windows.Forms.Panel
+    Friend WithEvents Icon_uncheckupdate As System.Windows.Forms.PictureBox
 
 End Class

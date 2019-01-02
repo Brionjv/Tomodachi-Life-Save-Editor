@@ -260,6 +260,7 @@
     <None Include="Resources\icon_childrenborn.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\tomodachi_font.ttf" />
     <None Include="Resources\Travelers_received.png" />
   </ItemGroup>
   <ItemGroup>

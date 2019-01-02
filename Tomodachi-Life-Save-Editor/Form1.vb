@@ -4805,6 +4805,14 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
+    Private Sub Setting_ckupdate_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_ckupdate.CheckedChanged
+        If Setting_ckupdate.Checked = True Then
+            Panel_uncheckupdate.Visible = True
+        Else
+            Panel_uncheckupdate.Visible = False
+        End If
+    End Sub
+
     Private Sub Setting_filepath_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_filepath.CheckedChanged
         If Setting_filepath.Checked = True Then
             File_path.Visible = True
@@ -5415,6 +5423,7 @@ Public Class TL_SaveEditor
             TLSE_dialog.Text_TLSE_dialog.Text = "Ouvrir savedataArc.txt" & vbNewLine & "Tomodachi Life Save Editor va faire une copie de votre sauvegarde avant tout changements, vérifiez le dossier ''bak''" & vbNewLine & vbNewLine & "Soyez sûr d'avoir choisi la bonne version de sauvegarde"
             TLSE_dialog.Panel_Cancel.Visible = True
             TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.Cancel_Button.Text = "Annuler"
             TLSE_dialog.Icon_reference.Location = New Point(310, 50)
             TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
             TLSE_dialog.ShowDialog()
@@ -5794,6 +5803,7 @@ Public Class TL_SaveEditor
             TLSE_dialog.Text_TLSE_dialog.Text = "Voulez-vous enregistrer tout les changements" & vbNewLine & "dans votre fichier de sauvegarde (excepté les changements sur les Mii) ?"
             TLSE_dialog.Panel_Cancel.Visible = True
             TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.Cancel_Button.Text = "Annuler"
             TLSE_dialog.ShowDialog()
         End If
         If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
@@ -8337,9 +8347,10 @@ Public Class TL_SaveEditor
             TLSE_dialog.ShowDialog()
         End If
         If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Voulez-vous enregistrer tout les changements sur ce Mii) ?"
+            TLSE_dialog.Text_TLSE_dialog.Text = "Voulez-vous enregistrer tout les changements sur ce Mii ?"
             TLSE_dialog.Panel_Cancel.Visible = True
             TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.Cancel_Button.Text = "Annuler"
             TLSE_dialog.ShowDialog()
         End If
         If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
@@ -27174,11 +27185,325 @@ Public Class TL_SaveEditor
         value_money.Value = 99999999
     End Sub
 
+    Private Sub Button_setallrelation_Click(sender As Object, e As EventArgs) Handles Button_setallrelation.Click
+        If select_setallrelation.SelectedItem = select_setallrelation.Items.Item(0) Then
+            valu_selfriend_rela_1.Value = 0
+            valu_selfriend_rela_2.Value = 0
+            valu_selfriend_rela_3.Value = 0
+            valu_selfriend_rela_4.Value = 0
+            valu_selfriend_rela_5.Value = 0
+            valu_selfriend_rela_6.Value = 0
+            valu_selfriend_rela_7.Value = 0
+            valu_selfriend_rela_8.Value = 0
+            valu_selfriend_rela_9.Value = 0
+            valu_selfriend_rela_10.Value = 0
+            valu_selfriend_rela_11.Value = 0
+            valu_selfriend_rela_12.Value = 0
+            valu_selfriend_rela_13.Value = 0
+            valu_selfriend_rela_14.Value = 0
+            valu_selfriend_rela_15.Value = 0
+            valu_selfriend_rela_16.Value = 0
+            valu_selfriend_rela_17.Value = 0
+            valu_selfriend_rela_18.Value = 0
+            valu_selfriend_rela_19.Value = 0
+            valu_selfriend_rela_20.Value = 0
+            valu_selfriend_rela_21.Value = 0
+            valu_selfriend_rela_22.Value = 0
+            valu_selfriend_rela_23.Value = 0
+            valu_selfriend_rela_24.Value = 0
+            valu_selfriend_rela_25.Value = 0
+            valu_selfriend_rela_26.Value = 0
+            valu_selfriend_rela_27.Value = 0
+            valu_selfriend_rela_28.Value = 0
+            valu_selfriend_rela_29.Value = 0
+            valu_selfriend_rela_30.Value = 0
+        ElseIf select_setallrelation.SelectedItem = select_setallrelation.Items.Item(1) Then
+            valu_selfriend_rela_1.Value = 1
+            valu_selfriend_rela_2.Value = 1
+            valu_selfriend_rela_3.Value = 1
+            valu_selfriend_rela_4.Value = 1
+            valu_selfriend_rela_5.Value = 1
+            valu_selfriend_rela_6.Value = 1
+            valu_selfriend_rela_7.Value = 1
+            valu_selfriend_rela_8.Value = 1
+            valu_selfriend_rela_9.Value = 1
+            valu_selfriend_rela_10.Value = 1
+            valu_selfriend_rela_11.Value = 1
+            valu_selfriend_rela_12.Value = 1
+            valu_selfriend_rela_13.Value = 1
+            valu_selfriend_rela_14.Value = 1
+            valu_selfriend_rela_15.Value = 1
+            valu_selfriend_rela_16.Value = 1
+            valu_selfriend_rela_17.Value = 1
+            valu_selfriend_rela_18.Value = 1
+            valu_selfriend_rela_19.Value = 1
+            valu_selfriend_rela_20.Value = 1
+            valu_selfriend_rela_21.Value = 1
+            valu_selfriend_rela_22.Value = 1
+            valu_selfriend_rela_23.Value = 1
+            valu_selfriend_rela_24.Value = 1
+            valu_selfriend_rela_25.Value = 1
+            valu_selfriend_rela_26.Value = 1
+            valu_selfriend_rela_27.Value = 1
+            valu_selfriend_rela_28.Value = 1
+            valu_selfriend_rela_29.Value = 1
+            valu_selfriend_rela_30.Value = 1
+        ElseIf select_setallrelation.SelectedItem = select_setallrelation.Items.Item(2) Then
+            valu_selfriend_rela_1.Value = 2
+            valu_selfriend_rela_2.Value = 2
+            valu_selfriend_rela_3.Value = 2
+            valu_selfriend_rela_4.Value = 2
+            valu_selfriend_rela_5.Value = 2
+            valu_selfriend_rela_6.Value = 2
+            valu_selfriend_rela_7.Value = 2
+            valu_selfriend_rela_8.Value = 2
+            valu_selfriend_rela_9.Value = 2
+            valu_selfriend_rela_10.Value = 2
+            valu_selfriend_rela_11.Value = 2
+            valu_selfriend_rela_12.Value = 2
+            valu_selfriend_rela_13.Value = 2
+            valu_selfriend_rela_14.Value = 2
+            valu_selfriend_rela_15.Value = 2
+            valu_selfriend_rela_16.Value = 2
+            valu_selfriend_rela_17.Value = 2
+            valu_selfriend_rela_18.Value = 2
+            valu_selfriend_rela_19.Value = 2
+            valu_selfriend_rela_20.Value = 2
+            valu_selfriend_rela_21.Value = 2
+            valu_selfriend_rela_22.Value = 2
+            valu_selfriend_rela_23.Value = 2
+            valu_selfriend_rela_24.Value = 2
+            valu_selfriend_rela_25.Value = 2
+            valu_selfriend_rela_26.Value = 2
+            valu_selfriend_rela_27.Value = 2
+            valu_selfriend_rela_28.Value = 2
+            valu_selfriend_rela_29.Value = 2
+            valu_selfriend_rela_30.Value = 2
+        ElseIf select_setallrelation.SelectedItem = select_setallrelation.Items.Item(3) Then
+            valu_selfriend_rela_1.Value = 3
+            valu_selfriend_rela_2.Value = 3
+            valu_selfriend_rela_3.Value = 3
+            valu_selfriend_rela_4.Value = 3
+            valu_selfriend_rela_5.Value = 3
+            valu_selfriend_rela_6.Value = 3
+            valu_selfriend_rela_7.Value = 3
+            valu_selfriend_rela_8.Value = 3
+            valu_selfriend_rela_9.Value = 3
+            valu_selfriend_rela_10.Value = 3
+            valu_selfriend_rela_11.Value = 3
+            valu_selfriend_rela_12.Value = 3
+            valu_selfriend_rela_13.Value = 3
+            valu_selfriend_rela_14.Value = 3
+            valu_selfriend_rela_15.Value = 3
+            valu_selfriend_rela_16.Value = 3
+            valu_selfriend_rela_17.Value = 3
+            valu_selfriend_rela_18.Value = 3
+            valu_selfriend_rela_19.Value = 3
+            valu_selfriend_rela_20.Value = 3
+            valu_selfriend_rela_21.Value = 3
+            valu_selfriend_rela_22.Value = 3
+            valu_selfriend_rela_23.Value = 3
+            valu_selfriend_rela_24.Value = 3
+            valu_selfriend_rela_25.Value = 3
+            valu_selfriend_rela_26.Value = 3
+            valu_selfriend_rela_27.Value = 3
+            valu_selfriend_rela_28.Value = 3
+            valu_selfriend_rela_29.Value = 3
+            valu_selfriend_rela_30.Value = 3
+        ElseIf select_setallrelation.SelectedItem = select_setallrelation.Items.Item(4) Then
+            valu_selfriend_rela_1.Value = 4
+            valu_selfriend_rela_2.Value = 4
+            valu_selfriend_rela_3.Value = 4
+            valu_selfriend_rela_4.Value = 4
+            valu_selfriend_rela_5.Value = 4
+            valu_selfriend_rela_6.Value = 4
+            valu_selfriend_rela_7.Value = 4
+            valu_selfriend_rela_8.Value = 4
+            valu_selfriend_rela_9.Value = 4
+            valu_selfriend_rela_10.Value = 4
+            valu_selfriend_rela_11.Value = 4
+            valu_selfriend_rela_12.Value = 4
+            valu_selfriend_rela_13.Value = 4
+            valu_selfriend_rela_14.Value = 4
+            valu_selfriend_rela_15.Value = 4
+            valu_selfriend_rela_16.Value = 4
+            valu_selfriend_rela_17.Value = 4
+            valu_selfriend_rela_18.Value = 4
+            valu_selfriend_rela_19.Value = 4
+            valu_selfriend_rela_20.Value = 4
+            valu_selfriend_rela_21.Value = 4
+            valu_selfriend_rela_22.Value = 4
+            valu_selfriend_rela_23.Value = 4
+            valu_selfriend_rela_24.Value = 4
+            valu_selfriend_rela_25.Value = 4
+            valu_selfriend_rela_26.Value = 4
+            valu_selfriend_rela_27.Value = 4
+            valu_selfriend_rela_28.Value = 4
+            valu_selfriend_rela_29.Value = 4
+            valu_selfriend_rela_30.Value = 4
+        ElseIf select_setallrelation.SelectedItem = select_setallrelation.Items.Item(5) Then
+            valu_selfriend_rela_1.Value = 6
+            valu_selfriend_rela_2.Value = 6
+            valu_selfriend_rela_3.Value = 6
+            valu_selfriend_rela_4.Value = 6
+            valu_selfriend_rela_5.Value = 6
+            valu_selfriend_rela_6.Value = 6
+            valu_selfriend_rela_7.Value = 6
+            valu_selfriend_rela_8.Value = 6
+            valu_selfriend_rela_9.Value = 6
+            valu_selfriend_rela_10.Value = 6
+            valu_selfriend_rela_11.Value = 6
+            valu_selfriend_rela_12.Value = 6
+            valu_selfriend_rela_13.Value = 6
+            valu_selfriend_rela_14.Value = 6
+            valu_selfriend_rela_15.Value = 6
+            valu_selfriend_rela_16.Value = 6
+            valu_selfriend_rela_17.Value = 6
+            valu_selfriend_rela_18.Value = 6
+            valu_selfriend_rela_19.Value = 6
+            valu_selfriend_rela_20.Value = 6
+            valu_selfriend_rela_21.Value = 6
+            valu_selfriend_rela_22.Value = 6
+            valu_selfriend_rela_23.Value = 6
+            valu_selfriend_rela_24.Value = 6
+            valu_selfriend_rela_25.Value = 6
+            valu_selfriend_rela_26.Value = 6
+            valu_selfriend_rela_27.Value = 6
+            valu_selfriend_rela_28.Value = 6
+            valu_selfriend_rela_29.Value = 6
+            valu_selfriend_rela_30.Value = 6
+        ElseIf select_setallrelation.SelectedItem = select_setallrelation.Items.Item(6) Then
+            valu_selfriend_rela_1.Value = 7
+            valu_selfriend_rela_2.Value = 7
+            valu_selfriend_rela_3.Value = 7
+            valu_selfriend_rela_4.Value = 7
+            valu_selfriend_rela_5.Value = 7
+            valu_selfriend_rela_6.Value = 7
+            valu_selfriend_rela_7.Value = 7
+            valu_selfriend_rela_8.Value = 7
+            valu_selfriend_rela_9.Value = 7
+            valu_selfriend_rela_10.Value = 7
+            valu_selfriend_rela_11.Value = 7
+            valu_selfriend_rela_12.Value = 7
+            valu_selfriend_rela_13.Value = 7
+            valu_selfriend_rela_14.Value = 7
+            valu_selfriend_rela_15.Value = 7
+            valu_selfriend_rela_16.Value = 7
+            valu_selfriend_rela_17.Value = 7
+            valu_selfriend_rela_18.Value = 7
+            valu_selfriend_rela_19.Value = 7
+            valu_selfriend_rela_20.Value = 7
+            valu_selfriend_rela_21.Value = 7
+            valu_selfriend_rela_22.Value = 7
+            valu_selfriend_rela_23.Value = 7
+            valu_selfriend_rela_24.Value = 7
+            valu_selfriend_rela_25.Value = 7
+            valu_selfriend_rela_26.Value = 7
+            valu_selfriend_rela_27.Value = 7
+            valu_selfriend_rela_28.Value = 7
+            valu_selfriend_rela_29.Value = 7
+            valu_selfriend_rela_30.Value = 7
+        ElseIf select_setallrelation.SelectedItem = select_setallrelation.Items.Item(7) Then
+            valu_selfriend_rela_1.Value = 8
+            valu_selfriend_rela_2.Value = 8
+            valu_selfriend_rela_3.Value = 8
+            valu_selfriend_rela_4.Value = 8
+            valu_selfriend_rela_5.Value = 8
+            valu_selfriend_rela_6.Value = 8
+            valu_selfriend_rela_7.Value = 8
+            valu_selfriend_rela_8.Value = 8
+            valu_selfriend_rela_9.Value = 8
+            valu_selfriend_rela_10.Value = 8
+            valu_selfriend_rela_11.Value = 8
+            valu_selfriend_rela_12.Value = 8
+            valu_selfriend_rela_13.Value = 8
+            valu_selfriend_rela_14.Value = 8
+            valu_selfriend_rela_15.Value = 8
+            valu_selfriend_rela_16.Value = 8
+            valu_selfriend_rela_17.Value = 8
+            valu_selfriend_rela_18.Value = 8
+            valu_selfriend_rela_19.Value = 8
+            valu_selfriend_rela_20.Value = 8
+            valu_selfriend_rela_21.Value = 8
+            valu_selfriend_rela_22.Value = 8
+            valu_selfriend_rela_23.Value = 8
+            valu_selfriend_rela_24.Value = 8
+            valu_selfriend_rela_25.Value = 8
+            valu_selfriend_rela_26.Value = 8
+            valu_selfriend_rela_27.Value = 8
+            valu_selfriend_rela_28.Value = 8
+            valu_selfriend_rela_29.Value = 8
+            valu_selfriend_rela_30.Value = 8
+        ElseIf select_setallrelation.SelectedItem = select_setallrelation.Items.Item(8) Then
+            valu_selfriend_rela_1.Value = 9
+            valu_selfriend_rela_2.Value = 9
+            valu_selfriend_rela_3.Value = 9
+            valu_selfriend_rela_4.Value = 9
+            valu_selfriend_rela_5.Value = 9
+            valu_selfriend_rela_6.Value = 9
+            valu_selfriend_rela_7.Value = 9
+            valu_selfriend_rela_8.Value = 9
+            valu_selfriend_rela_9.Value = 9
+            valu_selfriend_rela_10.Value = 9
+            valu_selfriend_rela_11.Value = 9
+            valu_selfriend_rela_12.Value = 9
+            valu_selfriend_rela_13.Value = 9
+            valu_selfriend_rela_14.Value = 9
+            valu_selfriend_rela_15.Value = 9
+            valu_selfriend_rela_16.Value = 9
+            valu_selfriend_rela_17.Value = 9
+            valu_selfriend_rela_18.Value = 9
+            valu_selfriend_rela_19.Value = 9
+            valu_selfriend_rela_20.Value = 9
+            valu_selfriend_rela_21.Value = 9
+            valu_selfriend_rela_22.Value = 9
+            valu_selfriend_rela_23.Value = 9
+            valu_selfriend_rela_24.Value = 9
+            valu_selfriend_rela_25.Value = 9
+            valu_selfriend_rela_26.Value = 9
+            valu_selfriend_rela_27.Value = 9
+            valu_selfriend_rela_28.Value = 9
+            valu_selfriend_rela_29.Value = 9
+            valu_selfriend_rela_30.Value = 9
+        ElseIf select_setallrelation.SelectedItem = select_setallrelation.Items.Item(9) Then
+            valu_selfriend_rela_1.Value = 12
+            valu_selfriend_rela_2.Value = 12
+            valu_selfriend_rela_3.Value = 12
+            valu_selfriend_rela_4.Value = 12
+            valu_selfriend_rela_5.Value = 12
+            valu_selfriend_rela_6.Value = 12
+            valu_selfriend_rela_7.Value = 12
+            valu_selfriend_rela_8.Value = 12
+            valu_selfriend_rela_9.Value = 12
+            valu_selfriend_rela_10.Value = 12
+            valu_selfriend_rela_11.Value = 12
+            valu_selfriend_rela_12.Value = 12
+            valu_selfriend_rela_13.Value = 12
+            valu_selfriend_rela_14.Value = 12
+            valu_selfriend_rela_15.Value = 12
+            valu_selfriend_rela_16.Value = 12
+            valu_selfriend_rela_17.Value = 12
+            valu_selfriend_rela_18.Value = 12
+            valu_selfriend_rela_19.Value = 12
+            valu_selfriend_rela_20.Value = 12
+            valu_selfriend_rela_21.Value = 12
+            valu_selfriend_rela_22.Value = 12
+            valu_selfriend_rela_23.Value = 12
+            valu_selfriend_rela_24.Value = 12
+            valu_selfriend_rela_25.Value = 12
+            valu_selfriend_rela_26.Value = 12
+            valu_selfriend_rela_27.Value = 12
+            valu_selfriend_rela_28.Value = 12
+            valu_selfriend_rela_29.Value = 12
+            valu_selfriend_rela_30.Value = 12
+        End If
+    End Sub
+
     Private Sub Specharac3ds_icon_MouseMove(sender As Object, e As EventArgs) Handles Specharac3ds_icon.MouseMove
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            Text_description.Text = "Click to show 3DS special character panel"
+            Text_description.Text = "Click to show special symbol panel"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            Text_description.Text = "Cliquez pour afficher le panneau de caractère spécial 3DS"
+            Text_description.Text = "Cliquez pour afficher le panneau de symbole spécial"
         End If
         Panel_description.Visible = True
     End Sub
@@ -27186,9 +27511,15 @@ Public Class TL_SaveEditor
     Private Sub AdvH_allfav_Click(sender As Object, e As EventArgs) Handles AdvH_allfav.Click
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
             TLSE_dialog.Text_TLSE_dialog.Text = "Foods listed :" & vbNewLine & "If your region have foods listed, just select them" & vbNewLine & "you can also see foods that your Mii loves even if he hasn't eaten them" & vbNewLine & vbNewLine & "Unlisted foods :" & vbNewLine & "Foods list doesn't exist, you can edit value has you want but some may not correspond to a food"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 200)
+            TLSE_dialog.Icon_reference.Location = New Point(150, 150)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
             TLSE_dialog.ShowDialog()
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             TLSE_dialog.Text_TLSE_dialog.Text = "Nourritures listé : " & vbNewLine & "Si votre région a les nourritures listé,  vous avez juste à les sélectionner" & vbNewLine & "vous pouvez également voir les nourritures que votre Mii aime même si il les a pas mangé" & vbNewLine & vbNewLine & "Nourriture non listé :" & vbNewLine & "La liste des nourritures n'existe pas, vous pouvez éditer les valeurs mais certaines peuvent ne pas correspondre à une nourriture"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 200)
+            TLSE_dialog.Icon_reference.Location = New Point(150, 150)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
             TLSE_dialog.ShowDialog()
         End If
     End Sub
@@ -27211,10 +27542,16 @@ Public Class TL_SaveEditor
 
     Private Sub AdvH_cathphrase_Click(sender As Object, e As EventArgs) Handles AdvH_cathphrase.Click
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to edit catchphrase of your Mii"
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to edit your Mii's catchphrase"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(75, 110)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
             TLSE_dialog.ShowDialog()
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour pouvoir éditer les expressions favorite de votre Mii"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(75, 110)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
             TLSE_dialog.ShowDialog()
         End If
     End Sub
@@ -27242,6 +27579,50 @@ Public Class TL_SaveEditor
             TLSE_dialog.Icon_reference.Location = New Point(60, 290)
             TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
             TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+
+    Private Sub AdvH_concertedit_Click(sender As Object, e As EventArgs) Handles AdvH_concertedit.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to edit concert" & vbNewLine & "This feature is only available with EUR and USA versions"
+            TLSE_dialog.Panel_dialog.Location = New Point(2, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 250)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour pouvoir éditer les concerts" & vbNewLine & "Cette fonctionnalité est uniquement disponible avec les versions EUR et USA"
+            TLSE_dialog.Panel_dialog.Location = New Point(2, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 250)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_copying_Click(sender As Object, e As EventArgs) Handles AdvH_copying.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Check here if your Mii can be copying or not" & vbNewLine & "This feature is not editable without corrupt save file" & vbNewLine & "See issue #17 on Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 110)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "See"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vérifiez ici si votre Mii peut être copié ou pas" & vbNewLine & "Cette fonctionnalité n'est pas éditable sans corrompre la sauvegarde" & vbNewLine & "Voir issue #17 sur Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 110)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "Voir"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/issues/17")
         End If
     End Sub
 End Class

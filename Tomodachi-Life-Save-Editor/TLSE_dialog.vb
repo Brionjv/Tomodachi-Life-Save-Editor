@@ -18,6 +18,8 @@ Public Class TLSE_dialog
         Icon_reference.Image = Nothing
         Icon_reference.Location = New Point(86, 36)
         Panel_dialog.Location = New Point(83, 118)
+        Cancel_Button.Text = "Cancel"
+        OK_Button.Text = "OK"
     End Sub
 
     Private Sub Text_TLSE_dialog_Click(sender As Object, e As EventArgs) Handles Text_TLSE_dialog.Click
@@ -27,11 +29,6 @@ Public Class TLSE_dialog
     End Sub
 
     Private Sub TLSE_dialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-            Cancel_Button.Text = "Cancel"
-        ElseIf TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-            Cancel_Button.Text = "Annuler"
-        End If
         Me.DesktopLocation = TL_SaveEditor.DesktopLocation
     End Sub
 End Class
