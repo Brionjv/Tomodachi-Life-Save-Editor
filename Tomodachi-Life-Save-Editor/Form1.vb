@@ -570,7 +570,7 @@ Public Class TL_SaveEditor
                 End If
             Catch ex As Exception
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                    TLSE_dialog.Text_TLSE_dialog.Text = "An error has occured when checking updates"
+                    TLSE_dialog.Text_TLSE_dialog.Text = "An error has occurred when checking updates"
                     TLSE_dialog.ShowDialog()
                 End If
                 If Select_language.SelectedItem = Select_language.Items.Item(1) Then
@@ -1182,6 +1182,7 @@ Public Class TL_SaveEditor
                     Next
                 End If
             End If
+            Writer.Close()
             If Check_resetmiiapart.Checked = True Then
                 If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
                     accessappartMii = &H22A8
@@ -1389,6 +1390,7 @@ Public Class TL_SaveEditor
                 fs.WriteByte(98)
                 fs.Position = accessappartMii + (&H660 * 99)
                 fs.WriteByte(99)
+                fs.Close()
             End If
             If Check_resetitems.Checked = True Then
                 Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
@@ -1396,6 +1398,7 @@ Public Class TL_SaveEditor
                     fs.Position = &H30 + i
                     fs.WriteByte(253)
                 Next
+                fs.Close()
             End If
             done()
         Catch ex As Exception
@@ -1911,6 +1914,7 @@ Public Class TL_SaveEditor
                     Writer.WriteUInt16(0)
                 Next
             End If
+            Writer.Close()
             Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
             fs.Position = Mii1L
             fs.WriteByte(valu_level.Value)
@@ -1937,6 +1941,7 @@ Public Class TL_SaveEditor
             writefriendlist()
             Patchfrienlist()
             done()
+            fs.Close()
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 TLSE_dialog.Text_TLSE_dialog.Text = "Failed to save changes on this Mii, make sure you have opened a save file or report this issue"
@@ -2464,6 +2469,7 @@ Public Class TL_SaveEditor
             fs.WriteByte(valu_friend_rela_30.Value)
             fs.Position = Friendrela_30
             fs.WriteByte(valu_selfriend_rela_30.Value)
+            fs.Close()
         Catch ex As Exception
         End Try
     End Sub
@@ -3056,6 +3062,7 @@ Public Class TL_SaveEditor
                     fs.WriteByte(valu_selfriend_rela_10.Value)
                 End If
             End If
+            fs.Close()
         Catch ex As Exception
         End Try
     End Sub
@@ -27624,5 +27631,244 @@ Public Class TL_SaveEditor
         If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
             Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/issues/17")
         End If
+    End Sub
+
+    Private Sub AdvH_creator_Click(sender As Object, e As EventArgs) Handles AdvH_creator.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is your Mii creator" & vbNewLine & "This feature is not editable without corrupt save file" & vbNewLine & "See issue #17 on Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(10, 35)
+            TLSE_dialog.Icon_reference.Location = New Point(390, 375)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "See"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est le créateur de votre Mii" & vbNewLine & "Cette fonctionnalité n'est pas éditable sans corrompre la sauvegarde" & vbNewLine & "Voir issue #17 sur Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(10, 35)
+            TLSE_dialog.Icon_reference.Location = New Point(390, 375)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "Voir"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/issues/17")
+        End If
+    End Sub
+
+    Private Sub AdvH_editcathphrase_Click(sender As Object, e As EventArgs) Handles AdvH_editcathphrase.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here your Mii's catchphrase" & vbNewLine & "If you edit a Mii, all cathphrase will be automatically unlocked"
+            TLSE_dialog.Panel_dialog.Location = New Point(150, 200)
+            TLSE_dialog.Icon_reference.Location = New Point(20, 190)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici les expressions favorite de votre Mii" & vbNewLine & "Si vous éditez un Mii, toutes les expressions favorite seront automatiquement débloquées"
+            TLSE_dialog.Panel_dialog.Location = New Point(150, 200)
+            TLSE_dialog.Icon_reference.Location = New Point(20, 190)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_edithaircolor_Click(sender As Object, e As EventArgs) Handles AdvH_edithaircolor.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's hair color" & vbNewLine & "You can click on ''Normal'' to set hair color by default"
+            TLSE_dialog.Panel_dialog.Location = New Point(0, 0)
+            TLSE_dialog.Icon_reference.Location = New Point(300, 320)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici la couleur des cheveux de votre Mii" & vbNewLine & "Vous pouvez cliquer sur ''Normal'' pour mettre la couleur des cheveux par défaut"
+            TLSE_dialog.Panel_dialog.Location = New Point(0, 0)
+            TLSE_dialog.Icon_reference.Location = New Point(300, 320)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_editmiimusic_Click(sender As Object, e As EventArgs) Handles AdvH_editmiimusic.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's songs" & vbNewLine & "This feature is only available with EUR and USA versions"
+            TLSE_dialog.Panel_dialog.Location = New Point(160, 230)
+            TLSE_dialog.Icon_reference.Location = New Point(90, 250)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici les musiques de votre Mii" & vbNewLine & "cette fonctionnalité est uniquement disponible avec les versions EUR et USA"
+            TLSE_dialog.Panel_dialog.Location = New Point(160, 230)
+            TLSE_dialog.Icon_reference.Location = New Point(90, 250)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_emotion_Click(sender As Object, e As EventArgs) Handles AdvH_emotion.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's emotion" & vbNewLine & "This is a condition for ''Interaction pattern'' feature"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 110)
+            TLSE_dialog.Icon_reference.Location = New Point(360, 450)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici l'émotion de votre Mii" & vbNewLine & "Ceci est une condition pour la fonctionnalité ''Interaction''"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 110)
+            TLSE_dialog.Icon_reference.Location = New Point(360, 450)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_eventfountain_Click(sender As Object, e As EventArgs) Handles AdvH_eventfountain.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to active fountain event"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 20)
+            TLSE_dialog.Icon_reference.Location = New Point(250, 370)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour activer l'évènement de la fontaine"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 20)
+            TLSE_dialog.Icon_reference.Location = New Point(250, 370)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_experience_Click(sender As Object, e As EventArgs) Handles AdvH_experience.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is Mii's experience, you can edit with arrows on the right"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(380, 110)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est l'experience de votre Mii, vous pouvez editer avec les flèches sur la droite"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(380, 110)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_extras_Click(sender As Object, e As EventArgs) Handles AdvH_extras.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to access to extras features"
+            TLSE_dialog.Panel_dialog.Location = New Point(155, 110)
+            TLSE_dialog.Icon_reference.Location = New Point(60, 250)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour accéder aux fonctionnalités extras"
+            TLSE_dialog.Panel_dialog.Location = New Point(155, 110)
+            TLSE_dialog.Icon_reference.Location = New Point(60, 250)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_fav_Click(sender As Object, e As EventArgs) Handles AdvH_fav.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Foods listed :" & vbNewLine & "If your region have foods listed, just select them" & vbNewLine & "you can also see foods that your Mii loves even if he hasn't eaten them" & vbNewLine & vbNewLine & "Unlisted foods :" & vbNewLine & "Foods list doesn't exist, you can edit value has you want but some may not correspond to a food"
+            TLSE_dialog.Panel_dialog.Location = New Point(150, 230)
+            TLSE_dialog.Icon_reference.Location = New Point(150, 230)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Nourritures listé : " & vbNewLine & "Si votre région a les nourritures listé, vous avez juste à les sélectionner" & vbNewLine & "vous pouvez également voir les nourritures que votre Mii aime même si il les a pas mangé" & vbNewLine & vbNewLine & "Nourriture non listé :" & vbNewLine & "La liste des nourritures n'existe pas, vous pouvez éditer les valeurs mais certaines peuvent ne pas correspondre à une nourriture"
+            TLSE_dialog.Panel_dialog.Location = New Point(150, 230)
+            TLSE_dialog.Icon_reference.Location = New Point(150, 230)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_favcolor_Click(sender As Object, e As EventArgs) Handles AdvH_favcolor.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is your Mii's favorite color" & vbNewLine & "This feature is not editable without corrupt save file" & vbNewLine & "See issue #17 on Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(10, 118)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 240)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "See"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est la couleur favorite de votre Mii" & vbNewLine & "Cette fonctionnalité n'est pas éditable sans corrompre la sauvegarde" & vbNewLine & "Voir issue #17 sur Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(10, 118)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 240)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "Voir"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/issues/17")
+        End If
+    End Sub
+
+    Private Sub AdvH_filever_Click(sender As Object, e As EventArgs) Handles AdvH_filever.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is save file region" & vbNewLine & "Make sure you have selected the good save file region before open a save file" & vbNewLine & vbNewLine & "or an error can occurred when save file or features are loaded"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 118)
+            TLSE_dialog.Icon_reference.Location = New Point(310, 50)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est la région de la sauvegarde" & vbNewLine & "Soyez sûr d'avoir choisi la bonne région de sauvegarde avant d'ouvrir votre fichier de sauvegarde" & vbNewLine & "ou une erreur peux survenir lorsque le fichier de sauvegarde ou les fonctionnalités sont chargés"
+            TLSE_dialog.Panel_dialog.Location = New Point(150, 230)
+            TLSE_dialog.Icon_reference.Location = New Point(150, 230)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub Icon_bakinteraction_Click(sender As Object, e As EventArgs) Handles Icon_bakinteraction.Click
+        Try
+            Dim SaveFileDialog1 As New SaveFileDialog
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                SaveFileDialog1.Filter = "Text file|*.txt"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                SaveFileDialog1.Filter = "Fichier texte|*.txt"
+            End If
+            SaveFileDialog1.FileName = "Interaction_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
+            If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+                Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                Writer.Write("Mii : " & Text_nickname.Text)
+                Writer.Write(vbNewLine & "Fullness : " & valu_fullness.Value)
+                Writer.Write(vbNewLine & "Grown-up/Kid : " & Select_growkid.SelectedItem)
+                Writer.Write(vbNewLine & "Relation to real you : " & Select_relationyou.SelectedItem)
+                Writer.Write(vbNewLine & "Interaction (value) : " & Text_interaction.Text)
+                Writer.Write(vbNewLine & "Target 1 : " & valu_target1.Value)
+                Writer.Write(vbNewLine & "Target 2 : " & valu_target2.Value)
+                Writer.Write(vbNewLine & "Emotions : " & Select_emotions.SelectedItem)
+                Writer.Close()
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "This Interaction has been successfully extracted"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Cette interaction à été extraite avec succès"
+                    TLSE_dialog.ShowDialog()
+                End If
+            End If
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "An error has occurred" & vbNewLine & "retry or report this issue"
+                TLSE_dialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Une erreur est survenue" & vbNewLine & "réessayez ou signalez cette erreur"
+                TLSE_dialog.ShowDialog()
+            End If
+        End Try
     End Sub
 End Class

@@ -1294,6 +1294,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_bakinterac.png" />
     <None Include="Resources\TLSE_arrow.gif" />
     <None Include="Resources\Icon_advhelp.png" />
     <None Include="Resources\reset_relationship.gif" />
