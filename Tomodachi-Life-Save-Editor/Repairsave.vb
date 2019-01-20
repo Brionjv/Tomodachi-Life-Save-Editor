@@ -88,6 +88,7 @@ Public Class Repairsave
             Text_header.Text = Reader.ReadHexString(4)
             Text_menu_open.Visible = False
             Text_menu_save.Visible = True
+            Icon_repair_header.Visible = True
         Catch ex As Exception
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
                 TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read savedataArc.txt, make sure to have opened a Tomodachi Life save, or report this issue"

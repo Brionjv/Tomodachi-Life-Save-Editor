@@ -168,6 +168,7 @@ Partial Class Repairsave
         Me.Icon_repair_header.Size = New System.Drawing.Size(63, 70)
         Me.Icon_repair_header.TabIndex = 31
         Me.Icon_repair_header.TabStop = False
+        Me.Icon_repair_header.Visible = False
         '
         'Info_repair
         '
@@ -225,6 +226,7 @@ Partial Class Repairsave
         Me.Check_resetrelationship.AutoSize = True
         Me.Check_resetrelationship.BackColor = System.Drawing.Color.White
         Me.Check_resetrelationship.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_resetrelationship.Enabled = False
         Me.Check_resetrelationship.FlatAppearance.BorderSize = 0
         Me.Check_resetrelationship.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
         Me.Check_resetrelationship.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
