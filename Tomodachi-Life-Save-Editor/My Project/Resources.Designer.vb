@@ -373,6 +373,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property apartment_in() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_in", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property apartment_orange() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("apartment_orange", resourceCulture)
@@ -383,9 +393,39 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property apartment_out() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_out", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property apartment_outhouse() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_outhouse", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property apartment_pink() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("apartment_pink", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property apartment_vert() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_vert", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

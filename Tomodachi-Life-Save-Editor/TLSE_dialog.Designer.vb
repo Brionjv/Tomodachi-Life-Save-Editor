@@ -26,9 +26,9 @@ Partial Class TLSE_dialog
         Me.Panel_OK = New System.Windows.Forms.Panel()
         Me.OK_Button = New System.Windows.Forms.Label()
         Me.Panel_Cancel = New System.Windows.Forms.Panel()
+        Me.Cancel_Button = New System.Windows.Forms.Label()
         Me.Panel_dialog = New System.Windows.Forms.Panel()
         Me.Icon_reference = New System.Windows.Forms.PictureBox()
-        Me.Cancel_Button = New System.Windows.Forms.Label()
         Me.Panel_OK.SuspendLayout()
         Me.Panel_Cancel.SuspendLayout()
         Me.Panel_dialog.SuspendLayout()
@@ -84,6 +84,18 @@ Partial Class TLSE_dialog
         Me.Panel_Cancel.TabIndex = 3
         Me.Panel_Cancel.Visible = False
         '
+        'Cancel_Button
+        '
+        Me.Cancel_Button.BackColor = System.Drawing.Color.Transparent
+        Me.Cancel_Button.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Cancel_Button.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Cancel_Button.Location = New System.Drawing.Point(0, 0)
+        Me.Cancel_Button.Name = "Cancel_Button"
+        Me.Cancel_Button.Size = New System.Drawing.Size(80, 23)
+        Me.Cancel_Button.TabIndex = 0
+        Me.Cancel_Button.Text = "Cancel"
+        Me.Cancel_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Panel_dialog
         '
         Me.Panel_dialog.BackColor = System.Drawing.Color.Transparent
@@ -106,18 +118,6 @@ Partial Class TLSE_dialog
         Me.Icon_reference.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.Icon_reference.TabIndex = 5
         Me.Icon_reference.TabStop = False
-        '
-        'Cancel_Button
-        '
-        Me.Cancel_Button.BackColor = System.Drawing.Color.Transparent
-        Me.Cancel_Button.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Cancel_Button.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Cancel_Button.Location = New System.Drawing.Point(0, 0)
-        Me.Cancel_Button.Name = "Cancel_Button"
-        Me.Cancel_Button.Size = New System.Drawing.Size(80, 23)
-        Me.Cancel_Button.TabIndex = 0
-        Me.Cancel_Button.Text = "Cancel"
-        Me.Cancel_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TLSE_dialog
         '
