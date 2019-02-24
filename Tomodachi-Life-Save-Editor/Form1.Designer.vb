@@ -7061,7 +7061,6 @@ Partial Class TL_SaveEditor
         'valu_place_2
         '
         Me.valu_place_2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_place_2.Enabled = false
         Me.valu_place_2.Location = New System.Drawing.Point(2, 4)
         Me.valu_place_2.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_place_2.Name = "valu_place_2"
@@ -7075,7 +7074,7 @@ Partial Class TL_SaveEditor
         Me.ComboBox2.DisplayMember = "0"
         Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox2.FormattingEnabled = true
+        Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
         Me.ComboBox2.Location = New System.Drawing.Point(2, 2)
         Me.ComboBox2.Name = "ComboBox2"
@@ -7095,7 +7094,6 @@ Partial Class TL_SaveEditor
         'valu_place_1
         '
         Me.valu_place_1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_place_1.Enabled = false
         Me.valu_place_1.Location = New System.Drawing.Point(2, 4)
         Me.valu_place_1.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_place_1.Name = "valu_place_1"

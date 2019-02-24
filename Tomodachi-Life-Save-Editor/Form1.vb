@@ -2727,6 +2727,406 @@ Public Class TL_SaveEditor
                 Accessrelalist = Miifriendr + &H64
             End If
             readfriendlist()
+            If Text_friendmii_1.Text <> "" Then
+                Select_target1.Items.Item(1) = Text_friendmii_1.Text
+                Select_target2.Items.Item(1) = Text_friendmii_1.Text
+            End If
+            If Text_friendmii_2.Text <> "" Then
+                Select_target1.Items.Item(2) = Text_friendmii_2.Text
+                Select_target2.Items.Item(2) = Text_friendmii_2.Text
+            End If
+            If Text_friendmii_3.Text <> "" Then
+                Select_target1.Items.Item(3) = Text_friendmii_3.Text
+                Select_target2.Items.Item(3) = Text_friendmii_3.Text
+            End If
+            If Text_friendmii_4.Text <> "" Then
+                Select_target1.Items.Item(4) = Text_friendmii_4.Text
+                Select_target2.Items.Item(4) = Text_friendmii_4.Text
+            End If
+            If Text_friendmii_5.Text <> "" Then
+                Select_target1.Items.Item(5) = Text_friendmii_5.Text
+                Select_target2.Items.Item(5) = Text_friendmii_5.Text
+            End If
+            If Text_friendmii_6.Text <> "" Then
+                Select_target1.Items.Item(6) = Text_friendmii_6.Text
+                Select_target2.Items.Item(6) = Text_friendmii_6.Text
+            End If
+            If Text_friendmii_7.Text <> "" Then
+                Select_target1.Items.Item(7) = Text_friendmii_7.Text
+                Select_target2.Items.Item(7) = Text_friendmii_7.Text
+            End If
+            If Text_friendmii_8.Text <> "" Then
+                Select_target1.Items.Item(8) = Text_friendmii_8.Text
+                Select_target2.Items.Item(8) = Text_friendmii_8.Text
+            End If
+            If Text_friendmii_9.Text <> "" Then
+                Select_target1.Items.Item(9) = Text_friendmii_9.Text
+                Select_target2.Items.Item(9) = Text_friendmii_9.Text
+            End If
+            If Text_friendmii_10.Text <> "" Then
+                Select_target1.Items.Item(10) = Text_friendmii_10.Text
+                Select_target2.Items.Item(10) = Text_friendmii_10.Text
+            End If
+            If Text_friendmii_11.Text <> "" Then
+                Select_target1.Items.Item(11) = Text_friendmii_11.Text
+                Select_target2.Items.Item(11) = Text_friendmii_11.Text
+            End If
+            If Text_friendmii_12.Text <> "" Then
+                Select_target1.Items.Item(12) = Text_friendmii_12.Text
+                Select_target2.Items.Item(12) = Text_friendmii_12.Text
+            End If
+            If Text_friendmii_13.Text <> "" Then
+                Select_target1.Items.Item(13) = Text_friendmii_13.Text
+                Select_target2.Items.Item(13) = Text_friendmii_13.Text
+            End If
+            If Text_friendmii_14.Text <> "" Then
+                Select_target1.Items.Item(14) = Text_friendmii_14.Text
+                Select_target2.Items.Item(14) = Text_friendmii_14.Text
+            End If
+            If Text_friendmii_15.Text <> "" Then
+                Select_target1.Items.Item(15) = Text_friendmii_15.Text
+                Select_target2.Items.Item(15) = Text_friendmii_15.Text
+            End If
+            If Text_friendmii_16.Text <> "" Then
+                Select_target1.Items.Item(16) = Text_friendmii_16.Text
+                Select_target2.Items.Item(16) = Text_friendmii_16.Text
+            End If
+            If Text_friendmii_17.Text <> "" Then
+                Select_target1.Items.Item(17) = Text_friendmii_17.Text
+                Select_target2.Items.Item(17) = Text_friendmii_17.Text
+            End If
+            If Text_friendmii_18.Text <> "" Then
+                Select_target1.Items.Item(18) = Text_friendmii_18.Text
+                Select_target2.Items.Item(18) = Text_friendmii_18.Text
+            End If
+            If Text_friendmii_19.Text <> "" Then
+                Select_target1.Items.Item(19) = Text_friendmii_19.Text
+                Select_target2.Items.Item(19) = Text_friendmii_19.Text
+            End If
+            If Text_friendmii_20.Text <> "" Then
+                Select_target1.Items.Item(20) = Text_friendmii_20.Text
+                Select_target2.Items.Item(20) = Text_friendmii_20.Text
+            End If
+            If Text_friendmii_21.Text <> "" Then
+                Select_target1.Items.Item(21) = Text_friendmii_21.Text
+                Select_target2.Items.Item(21) = Text_friendmii_21.Text
+            End If
+            If Text_friendmii_22.Text <> "" Then
+                Select_target1.Items.Item(22) = Text_friendmii_22.Text
+                Select_target2.Items.Item(22) = Text_friendmii_22.Text
+            End If
+            If Text_friendmii_23.Text <> "" Then
+                Select_target1.Items.Item(23) = Text_friendmii_23.Text
+                Select_target2.Items.Item(23) = Text_friendmii_23.Text
+            End If
+            If Text_friendmii_24.Text <> "" Then
+                Select_target1.Items.Item(24) = Text_friendmii_24.Text
+                Select_target2.Items.Item(24) = Text_friendmii_24.Text
+            End If
+            If Text_friendmii_25.Text <> "" Then
+                Select_target1.Items.Item(25) = Text_friendmii_25.Text
+                Select_target2.Items.Item(25) = Text_friendmii_25.Text
+            End If
+            If Text_friendmii_26.Text <> "" Then
+                Select_target1.Items.Item(26) = Text_friendmii_26.Text
+                Select_target2.Items.Item(26) = Text_friendmii_26.Text
+            End If
+            If Text_friendmii_27.Text <> "" Then
+                Select_target1.Items.Item(27) = Text_friendmii_27.Text
+                Select_target2.Items.Item(27) = Text_friendmii_27.Text
+            End If
+            If Text_friendmii_28.Text <> "" Then
+                Select_target1.Items.Item(28) = Text_friendmii_28.Text
+                Select_target2.Items.Item(28) = Text_friendmii_28.Text
+            End If
+            If Text_friendmii_29.Text <> "" Then
+                Select_target1.Items.Item(29) = Text_friendmii_29.Text
+                Select_target2.Items.Item(29) = Text_friendmii_29.Text
+            End If
+            If Text_friendmii_30.Text <> "" Then
+                Select_target1.Items.Item(30) = Text_friendmii_30.Text
+                Select_target2.Items.Item(30) = Text_friendmii_30.Text
+            End If
+            If Text_friendmii_31.Text <> "" Then
+                Select_target1.Items.Item(31) = Text_friendmii_31.Text
+                Select_target2.Items.Item(31) = Text_friendmii_31.Text
+            End If
+            If Text_friendmii_32.Text <> "" Then
+                Select_target1.Items.Item(32) = Text_friendmii_32.Text
+                Select_target2.Items.Item(32) = Text_friendmii_32.Text
+            End If
+            If Text_friendmii_33.Text <> "" Then
+                Select_target1.Items.Item(33) = Text_friendmii_33.Text
+                Select_target2.Items.Item(33) = Text_friendmii_33.Text
+            End If
+            If Text_friendmii_34.Text <> "" Then
+                Select_target1.Items.Item(34) = Text_friendmii_34.Text
+                Select_target2.Items.Item(34) = Text_friendmii_34.Text
+            End If
+            If Text_friendmii_35.Text <> "" Then
+                Select_target1.Items.Item(35) = Text_friendmii_35.Text
+                Select_target2.Items.Item(35) = Text_friendmii_35.Text
+            End If
+            If Text_friendmii_36.Text <> "" Then
+                Select_target1.Items.Item(36) = Text_friendmii_36.Text
+                Select_target2.Items.Item(36) = Text_friendmii_36.Text
+            End If
+            If Text_friendmii_37.Text <> "" Then
+                Select_target1.Items.Item(37) = Text_friendmii_37.Text
+                Select_target2.Items.Item(37) = Text_friendmii_37.Text
+            End If
+            If Text_friendmii_38.Text <> "" Then
+                Select_target1.Items.Item(38) = Text_friendmii_38.Text
+                Select_target2.Items.Item(38) = Text_friendmii_38.Text
+            End If
+            If Text_friendmii_39.Text <> "" Then
+                Select_target1.Items.Item(39) = Text_friendmii_39.Text
+                Select_target2.Items.Item(39) = Text_friendmii_39.Text
+            End If
+            If Text_friendmii_40.Text <> "" Then
+                Select_target1.Items.Item(40) = Text_friendmii_40.Text
+                Select_target2.Items.Item(40) = Text_friendmii_40.Text
+            End If
+            If Text_friendmii_41.Text <> "" Then
+                Select_target1.Items.Item(41) = Text_friendmii_41.Text
+                Select_target2.Items.Item(41) = Text_friendmii_41.Text
+            End If
+            If Text_friendmii_42.Text <> "" Then
+                Select_target1.Items.Item(42) = Text_friendmii_42.Text
+                Select_target2.Items.Item(42) = Text_friendmii_42.Text
+            End If
+            If Text_friendmii_43.Text <> "" Then
+                Select_target1.Items.Item(43) = Text_friendmii_43.Text
+                Select_target2.Items.Item(43) = Text_friendmii_43.Text
+            End If
+            If Text_friendmii_44.Text <> "" Then
+                Select_target1.Items.Item(44) = Text_friendmii_44.Text
+                Select_target2.Items.Item(44) = Text_friendmii_44.Text
+            End If
+            If Text_friendmii_45.Text <> "" Then
+                Select_target1.Items.Item(45) = Text_friendmii_45.Text
+                Select_target2.Items.Item(45) = Text_friendmii_45.Text
+            End If
+            If Text_friendmii_46.Text <> "" Then
+                Select_target1.Items.Item(46) = Text_friendmii_46.Text
+                Select_target2.Items.Item(46) = Text_friendmii_46.Text
+            End If
+            If Text_friendmii_47.Text <> "" Then
+                Select_target1.Items.Item(47) = Text_friendmii_47.Text
+                Select_target2.Items.Item(47) = Text_friendmii_47.Text
+            End If
+            If Text_friendmii_48.Text <> "" Then
+                Select_target1.Items.Item(48) = Text_friendmii_48.Text
+                Select_target2.Items.Item(48) = Text_friendmii_48.Text
+            End If
+            If Text_friendmii_49.Text <> "" Then
+                Select_target1.Items.Item(49) = Text_friendmii_49.Text
+                Select_target2.Items.Item(49) = Text_friendmii_49.Text
+            End If
+            If Text_friendmii_50.Text <> "" Then
+                Select_target1.Items.Item(50) = Text_friendmii_50.Text
+                Select_target2.Items.Item(50) = Text_friendmii_50.Text
+            End If
+            If Text_friendmii_51.Text <> "" Then
+                Select_target1.Items.Item(51) = Text_friendmii_51.Text
+                Select_target2.Items.Item(51) = Text_friendmii_51.Text
+            End If
+            If Text_friendmii_52.Text <> "" Then
+                Select_target1.Items.Item(52) = Text_friendmii_52.Text
+                Select_target2.Items.Item(52) = Text_friendmii_52.Text
+            End If
+            If Text_friendmii_53.Text <> "" Then
+                Select_target1.Items.Item(53) = Text_friendmii_53.Text
+                Select_target2.Items.Item(53) = Text_friendmii_53.Text
+            End If
+            If Text_friendmii_54.Text <> "" Then
+                Select_target1.Items.Item(54) = Text_friendmii_54.Text
+                Select_target2.Items.Item(54) = Text_friendmii_54.Text
+            End If
+            If Text_friendmii_55.Text <> "" Then
+                Select_target1.Items.Item(55) = Text_friendmii_55.Text
+                Select_target2.Items.Item(55) = Text_friendmii_55.Text
+            End If
+            If Text_friendmii_56.Text <> "" Then
+                Select_target1.Items.Item(56) = Text_friendmii_56.Text
+                Select_target2.Items.Item(56) = Text_friendmii_56.Text
+            End If
+            If Text_friendmii_57.Text <> "" Then
+                Select_target1.Items.Item(57) = Text_friendmii_57.Text
+                Select_target2.Items.Item(57) = Text_friendmii_57.Text
+            End If
+            If Text_friendmii_58.Text <> "" Then
+                Select_target1.Items.Item(58) = Text_friendmii_58.Text
+                Select_target2.Items.Item(58) = Text_friendmii_58.Text
+            End If
+            If Text_friendmii_59.Text <> "" Then
+                Select_target1.Items.Item(59) = Text_friendmii_59.Text
+                Select_target2.Items.Item(59) = Text_friendmii_59.Text
+            End If
+            If Text_friendmii_60.Text <> "" Then
+                Select_target1.Items.Item(60) = Text_friendmii_60.Text
+                Select_target2.Items.Item(60) = Text_friendmii_60.Text
+            End If
+            If Text_friendmii_61.Text <> "" Then
+                Select_target1.Items.Item(61) = Text_friendmii_61.Text
+                Select_target2.Items.Item(61) = Text_friendmii_61.Text
+            End If
+            If Text_friendmii_62.Text <> "" Then
+                Select_target1.Items.Item(62) = Text_friendmii_62.Text
+                Select_target2.Items.Item(62) = Text_friendmii_62.Text
+            End If
+            If Text_friendmii_63.Text <> "" Then
+                Select_target1.Items.Item(63) = Text_friendmii_63.Text
+                Select_target2.Items.Item(63) = Text_friendmii_63.Text
+            End If
+            If Text_friendmii_64.Text <> "" Then
+                Select_target1.Items.Item(64) = Text_friendmii_64.Text
+                Select_target2.Items.Item(64) = Text_friendmii_64.Text
+            End If
+            If Text_friendmii_65.Text <> "" Then
+                Select_target1.Items.Item(65) = Text_friendmii_65.Text
+                Select_target2.Items.Item(65) = Text_friendmii_65.Text
+            End If
+            If Text_friendmii_66.Text <> "" Then
+                Select_target1.Items.Item(66) = Text_friendmii_66.Text
+                Select_target2.Items.Item(66) = Text_friendmii_66.Text
+            End If
+            If Text_friendmii_67.Text <> "" Then
+                Select_target1.Items.Item(67) = Text_friendmii_67.Text
+                Select_target2.Items.Item(67) = Text_friendmii_67.Text
+            End If
+            If Text_friendmii_68.Text <> "" Then
+                Select_target1.Items.Item(68) = Text_friendmii_68.Text
+                Select_target2.Items.Item(68) = Text_friendmii_68.Text
+            End If
+            If Text_friendmii_69.Text <> "" Then
+                Select_target1.Items.Item(69) = Text_friendmii_69.Text
+                Select_target2.Items.Item(69) = Text_friendmii_69.Text
+            End If
+            If Text_friendmii_70.Text <> "" Then
+                Select_target1.Items.Item(70) = Text_friendmii_70.Text
+                Select_target2.Items.Item(70) = Text_friendmii_70.Text
+            End If
+            If Text_friendmii_71.Text <> "" Then
+                Select_target1.Items.Item(71) = Text_friendmii_71.Text
+                Select_target2.Items.Item(71) = Text_friendmii_71.Text
+            End If
+            If Text_friendmii_72.Text <> "" Then
+                Select_target1.Items.Item(72) = Text_friendmii_72.Text
+                Select_target2.Items.Item(72) = Text_friendmii_72.Text
+            End If
+            If Text_friendmii_73.Text <> "" Then
+                Select_target1.Items.Item(73) = Text_friendmii_73.Text
+                Select_target2.Items.Item(73) = Text_friendmii_73.Text
+            End If
+            If Text_friendmii_74.Text <> "" Then
+                Select_target1.Items.Item(74) = Text_friendmii_74.Text
+                Select_target2.Items.Item(74) = Text_friendmii_74.Text
+            End If
+            If Text_friendmii_75.Text <> "" Then
+                Select_target1.Items.Item(75) = Text_friendmii_75.Text
+                Select_target2.Items.Item(75) = Text_friendmii_75.Text
+            End If
+            If Text_friendmii_76.Text <> "" Then
+                Select_target1.Items.Item(76) = Text_friendmii_76.Text
+                Select_target2.Items.Item(76) = Text_friendmii_76.Text
+            End If
+            If Text_friendmii_77.Text <> "" Then
+                Select_target1.Items.Item(77) = Text_friendmii_77.Text
+                Select_target2.Items.Item(77) = Text_friendmii_77.Text
+            End If
+            If Text_friendmii_78.Text <> "" Then
+                Select_target1.Items.Item(78) = Text_friendmii_78.Text
+                Select_target2.Items.Item(78) = Text_friendmii_78.Text
+            End If
+            If Text_friendmii_79.Text <> "" Then
+                Select_target1.Items.Item(79) = Text_friendmii_79.Text
+                Select_target2.Items.Item(79) = Text_friendmii_79.Text
+            End If
+            If Text_friendmii_80.Text <> "" Then
+                Select_target1.Items.Item(80) = Text_friendmii_80.Text
+                Select_target2.Items.Item(80) = Text_friendmii_80.Text
+            End If
+            If Text_friendmii_81.Text <> "" Then
+                Select_target1.Items.Item(81) = Text_friendmii_81.Text
+                Select_target2.Items.Item(81) = Text_friendmii_81.Text
+            End If
+            If Text_friendmii_82.Text <> "" Then
+                Select_target1.Items.Item(82) = Text_friendmii_82.Text
+                Select_target2.Items.Item(82) = Text_friendmii_82.Text
+            End If
+            If Text_friendmii_83.Text <> "" Then
+                Select_target1.Items.Item(83) = Text_friendmii_83.Text
+                Select_target2.Items.Item(83) = Text_friendmii_83.Text
+            End If
+            If Text_friendmii_84.Text <> "" Then
+                Select_target1.Items.Item(84) = Text_friendmii_84.Text
+                Select_target2.Items.Item(84) = Text_friendmii_84.Text
+            End If
+            If Text_friendmii_85.Text <> "" Then
+                Select_target1.Items.Item(85) = Text_friendmii_85.Text
+                Select_target2.Items.Item(85) = Text_friendmii_85.Text
+            End If
+            If Text_friendmii_86.Text <> "" Then
+                Select_target1.Items.Item(86) = Text_friendmii_86.Text
+                Select_target2.Items.Item(86) = Text_friendmii_86.Text
+            End If
+            If Text_friendmii_87.Text <> "" Then
+                Select_target1.Items.Item(87) = Text_friendmii_87.Text
+                Select_target2.Items.Item(87) = Text_friendmii_87.Text
+            End If
+            If Text_friendmii_88.Text <> "" Then
+                Select_target1.Items.Item(88) = Text_friendmii_88.Text
+                Select_target2.Items.Item(88) = Text_friendmii_88.Text
+            End If
+            If Text_friendmii_89.Text <> "" Then
+                Select_target1.Items.Item(89) = Text_friendmii_89.Text
+                Select_target2.Items.Item(89) = Text_friendmii_89.Text
+            End If
+            If Text_friendmii_90.Text <> "" Then
+                Select_target1.Items.Item(90) = Text_friendmii_90.Text
+                Select_target2.Items.Item(90) = Text_friendmii_90.Text
+            End If
+            If Text_friendmii_91.Text <> "" Then
+                Select_target1.Items.Item(91) = Text_friendmii_91.Text
+                Select_target2.Items.Item(91) = Text_friendmii_91.Text
+            End If
+            If Text_friendmii_92.Text <> "" Then
+                Select_target1.Items.Item(92) = Text_friendmii_92.Text
+                Select_target2.Items.Item(92) = Text_friendmii_92.Text
+            End If
+            If Text_friendmii_93.Text <> "" Then
+                Select_target1.Items.Item(93) = Text_friendmii_93.Text
+                Select_target2.Items.Item(93) = Text_friendmii_93.Text
+            End If
+            If Text_friendmii_94.Text <> "" Then
+                Select_target1.Items.Item(94) = Text_friendmii_94.Text
+                Select_target2.Items.Item(94) = Text_friendmii_94.Text
+            End If
+            If Text_friendmii_95.Text <> "" Then
+                Select_target1.Items.Item(95) = Text_friendmii_95.Text
+                Select_target2.Items.Item(95) = Text_friendmii_95.Text
+            End If
+            If Text_friendmii_96.Text <> "" Then
+                Select_target1.Items.Item(96) = Text_friendmii_96.Text
+                Select_target2.Items.Item(96) = Text_friendmii_96.Text
+            End If
+            If Text_friendmii_97.Text <> "" Then
+                Select_target1.Items.Item(97) = Text_friendmii_97.Text
+                Select_target2.Items.Item(97) = Text_friendmii_97.Text
+            End If
+            If Text_friendmii_98.Text <> "" Then
+                Select_target1.Items.Item(98) = Text_friendmii_98.Text
+                Select_target2.Items.Item(98) = Text_friendmii_98.Text
+            End If
+            If Text_friendmii_99.Text <> "" Then
+                Select_target1.Items.Item(99) = Text_friendmii_99.Text
+                Select_target2.Items.Item(99) = Text_friendmii_99.Text
+            End If
+            If Text_friendmii_100.Text <> "" Then
+                Select_target1.Items.Item(100) = Text_friendmii_100.Text
+                Select_target2.Items.Item(100) = Text_friendmii_100.Text
+            End If
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read informations of this Mii, make sure you have opened a file or report this issue"
