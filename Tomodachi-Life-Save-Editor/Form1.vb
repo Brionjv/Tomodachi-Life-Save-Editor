@@ -324,6 +324,8 @@ Public Class TL_SaveEditor
     Dim Place1 As String
     Dim Place2 As String
     Dim accessrelationship As String
+    Dim Enddateinterac As String
+    Dim Enddateinterac2 As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -860,6 +862,8 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1E4C47
                 Rank_island = Reader.Position
                 valu_rank_island.Value = Reader.ReadInt8
+                Reader.Position = &H10
+                valu_lastdatesave.Value = Reader.ReadUInt32
             End If
             If Filever_text.Text = "JP" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
@@ -986,6 +990,8 @@ Public Class TL_SaveEditor
                 Reader.Position = &H14BD17
                 Rank_island = Reader.Position
                 valu_rank_island.Value = Reader.ReadInt8
+                Reader.Position = &H10
+                valu_lastdatesave.Value = Reader.ReadUInt32
             End If
             If Filever_text.Text = "KR" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
@@ -1121,6 +1127,8 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1EFFF7
                 Rank_island = Reader.Position
                 valu_rank_island.Value = Reader.ReadInt8
+                Reader.Position = &H10
+                valu_lastdatesave.Value = Reader.ReadUInt32
             End If
             Text_menu_open.Visible = False
             Text_menu_save.Visible = True
@@ -2508,8 +2516,11 @@ Public Class TL_SaveEditor
                 Miimusic = Reader.Position
                 valu_allmusic.Value = Reader.ReadByte
                 Reader.Position = &H29AB8 + Accessfriends 'Mii friendlist
+                Enddateinterac = Reader.Position
+                valu_enddateinterac.Value = Reader.ReadUInt32
+                Reader.Position = &H29AC0 + Accessfriends 'Mii friendlist
                 Miiinteraction = Reader.Position
-                Text_interaction.Text = Reader.ReadHexString(16)
+                valu_interaction.Value = Reader.ReadUInt32
                 Reader.Position = &H29AC4 + Accessfriends  'Mii friendlist
                 Miitarget1 = Reader.Position
                 valu_target1.Value = Reader.ReadUInt16
@@ -2528,25 +2539,18 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1F20 + Accessmii
                 Equinteriors = Reader.Position
                 valu_switch_interiors.Value = Reader.ReadUInt16
-                Reader.Position = &H29AC8 + Accessfriends 'Mii friendlist
+                Reader.Position = &H29AD8 + Accessfriends 'Mii friendlist
+                Enddateinterac2 = Reader.Position
+                valu_enddateinterac2.Value = Reader.ReadUInt32
+                Reader.Position = &H29AE0 + Accessfriends 'Mii friendlist
                 Miiinteraction2 = Reader.Position
-                Text_interaction2.Text = Reader.ReadHexString(35)
+                valu_interaction2.Value = Reader.ReadUInt32
                 Reader.Position = &H29AE6 + Accessfriends 'Mii friendlist
                 Place1 = Reader.Position
                 valu_place_1.Value = Reader.ReadUInt16
                 Reader.Position = &H29AE8 + Accessfriends 'Mii friendlist
                 Place2 = Reader.Position
                 valu_place_2.Value = Reader.ReadUInt16
-                'mode research
-                Reader.Position = &H29AC8 + Accessfriends
-                mode_reserach_2.Value = Reader.ReadUInt32
-                Reader.Position = &H29AD0 + Accessfriends
-                mode_reserach_3.Value = Reader.ReadUInt32
-                Reader.Position = &H29AD8 + Accessfriends
-                mode_reserach_4.Value = Reader.ReadUInt32
-                Reader.Position = &H29AE1 + Accessfriends 'lieu du Mii
-                mode_reserach.Value = Reader.ReadUInt16
-                'end mode research
             End If
 
             If Filever_text.Text = "JP" Then
@@ -34611,214 +34615,6 @@ Public Class TL_SaveEditor
         Panel_friendlist_3.Visible = True
     End Sub
 
-    Private Sub mode_reserach_ValueChanged(sender As Object, e As EventArgs) Handles mode_reserach.Click
-        Try
-            Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-            Writer.Position = &H29AE1
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + &H100
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 2)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 3)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 4)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 5)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 6)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 7)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 8)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 9)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 10)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 11)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 12)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 13)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 14)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 15)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 16)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 17)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 18)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 19)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 20)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 21)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 22)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 23)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 24)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 25)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 26)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 27)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 28)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 29)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 30)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 31)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 32)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 33)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 34)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 35)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 36)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 37)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 38)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 39)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 40)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 41)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 42)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 43)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 44)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 45)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 46)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 47)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 48)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 49)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 50)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 51)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 52)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 53)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 54)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 55)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 56)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 57)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 58)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 59)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 60)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 61)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 62)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 63)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 64)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 65)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 66)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 67)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 68)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 69)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 70)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 71)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 72)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 73)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 74)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 75)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 76)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 77)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 78)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 79)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 80)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 81)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 82)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 83)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 84)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 85)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 86)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 87)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 88)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 89)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 90)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 91)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 92)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 93)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 94)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 95)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 96)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 97)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 98)
-            Writer.WriteUInt16(&H1363)
-            Writer.Position = &H29AE1 + (&H100 * 99)
-            Writer.WriteUInt16(&H1363)
-            MsgBox("good")
-        Catch ex As Exception
-            MsgBox("error")
-        End Try
-    End Sub
 
     Private Sub Select_miihouse_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_miihouse.SelectedIndexChanged
         If Select_miihouse.SelectedItem = Select_miihouse.Items.Item(0) Then
