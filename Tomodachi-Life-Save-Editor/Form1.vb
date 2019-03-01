@@ -2689,8 +2689,11 @@ Public Class TL_SaveEditor
                 Miimusic = Reader.Position
                 valu_allmusic.Value = Reader.ReadByte
                 Reader.Position = &H24948 + Accessfriends 'Mii friendlist
+                Enddateinterac = Reader.Position
+                valu_enddateinterac.Value = Reader.ReadUInt32
+                Reader.Position = &H24950 + Accessfriends 'Mii friendlist
                 Miiinteraction = Reader.Position
-                Text_interaction.Text = Reader.ReadHexString(16)
+                valu_interaction.Value = Reader.ReadUInt32
                 Reader.Position = &H24954 + Accessfriends  'Mii friendlist
                 Miitarget1 = Reader.Position
                 valu_target1.Value = Reader.ReadUInt16
@@ -2710,8 +2713,11 @@ Public Class TL_SaveEditor
                 Equinteriors = Reader.Position
                 valu_switch_interiors.Value = Reader.ReadUInt16
                 Reader.Position = &H24958 + Accessfriends 'Mii friendlist
+                Enddateinterac2 = Reader.Position
+                valu_enddateinterac2.Value = Reader.ReadUInt32
+                Reader.Position = &H24960 + Accessfriends 'Mii friendlist
                 Miiinteraction2 = Reader.Position
-                Text_interaction2.Text = Reader.ReadHexString(35)
+                valu_interaction2.Value = Reader.ReadUInt32
                 Reader.Position = &H24976 + Accessfriends 'Mii friendlist
                 Place1 = Reader.Position
                 valu_place_1.Value = Reader.ReadUInt16
@@ -3217,7 +3223,9 @@ Public Class TL_SaveEditor
             Writer.Position = econom
             Writer.WriteUInt32(valu_economy.Value)
             Writer.Position = Miiinteraction
-            Writer.WriteHexString(Text_interaction.Text)
+            Writer.WriteUInt32(valu_interaction.Value)
+            Writer.Position = Enddateinterac
+            Writer.WriteUInt32(valu_enddateinterac.Value)
             Writer.Position = Miitarget1
             Writer.WriteUInt16(valu_target1.Value)
             Writer.Position = Miitarget2
@@ -3233,7 +3241,9 @@ Public Class TL_SaveEditor
             Writer.Position = Equinteriors
             Writer.WriteUInt16(valu_switch_interiors.Value)
             Writer.Position = Miiinteraction2
-            Writer.WriteHexString(Text_interaction2.Text)
+            Writer.WriteUInt32(valu_interaction2.Value)
+            Writer.Position = Enddateinterac2
+            Writer.WriteUInt32(valu_enddateinterac2.Value)
             Writer.Position = Place1
             Writer.WriteUInt16(valu_place_1.Value)
             Writer.Position = Place2
@@ -5637,21 +5647,6 @@ Public Class TL_SaveEditor
             Select_relationyou.Items.Item(4) = "Self"
             Select_relationyou.Items.Item(5) = "Sibling"
             Select_relationyou.Items.Item(6) = "Spouse"
-            Select_interaction.Items.Item(0) = "Nothing"
-            Select_interaction.Items.Item(1) = "I'm hungry"
-            Select_interaction.Items.Item(2) = "I'm hungry(1)"
-            Select_interaction.Items.Item(3) = "I'm hungry(2)"
-            Select_interaction.Items.Item(4) = "In love with"
-            Select_interaction.Items.Item(5) = "angry at"
-            Select_interaction.Items.Item(6) = "angry at(1)"
-            Select_interaction.Items.Item(7) = "In love with (undecided)"
-            Select_interaction.Items.Item(8) = "Dream"
-            Select_interaction.Items.Item(9) = "I need new clothes"
-            Select_interaction.Items.Item(10) = "I need new clothes (something classy)"
-            Select_interaction.Items.Item(11) = "I need new clothes (to do sports)"
-            Select_interaction.Items.Item(12) = "Can I tell you about my [love stories? / my wife?]"
-            Select_interaction.Items.Item(13) = "Sad : love rejected"
-            Select_interaction.Items.Item(14) = "Want to get married"
             Select_emotions.Items.Item(0) = "Normal"
             Select_emotions.Items.Item(1) = "Happy"
             Select_emotions.Items.Item(2) = "Angry"
@@ -6060,21 +6055,6 @@ Public Class TL_SaveEditor
             Select_relationyou.Items.Item(4) = "Moi-même"
             Select_relationyou.Items.Item(5) = "Frère / Soeur"
             Select_relationyou.Items.Item(6) = "Épouse"
-            Select_interaction.Items.Item(0) = "Rien"
-            Select_interaction.Items.Item(1) = "J'ai faim"
-            Select_interaction.Items.Item(2) = "J'ai faim (1)"
-            Select_interaction.Items.Item(3) = "J'ai faim (2)"
-            Select_interaction.Items.Item(4) = "Amoureux de"
-            Select_interaction.Items.Item(5) = "Faché contre"
-            Select_interaction.Items.Item(6) = "Faché contre (1)"
-            Select_interaction.Items.Item(7) = "Amoureux de (indécis)"
-            Select_interaction.Items.Item(8) = "Rêve"
-            Select_interaction.Items.Item(9) = "J'ai besoin de nouveaux vêtements"
-            Select_interaction.Items.Item(10) = "J'ai besoin de nouveaux vêtements (qq.chose de classe)"
-            Select_interaction.Items.Item(11) = "J'ai besoin de nouveaux vêtements (pr.faire du sports)"
-            Select_interaction.Items.Item(12) = "Puis-je vous parler de [mes histoires d'amour? / ma femme?]"
-            Select_interaction.Items.Item(13) = "Triste : amour rejeté"
-            Select_interaction.Items.Item(14) = "Veux se marrier"
             Select_emotions.Items.Item(0) = "Normal"
             Select_emotions.Items.Item(1) = "Heureux"
             Select_emotions.Items.Item(2) = "En colère"
@@ -6931,7 +6911,6 @@ Public Class TL_SaveEditor
             valu_itemmii_8.Visible = True
             valu_target1.Visible = True
             valu_target2.Visible = True
-            Text_interaction.Visible = True
             valu_emotions.Visible = True
             valu_selfriend_rela_1.Visible = True
             valu_selfriend_rela_2.Visible = True
@@ -7043,7 +7022,6 @@ Public Class TL_SaveEditor
             valu_rank_splurge.Visible = True
             valu_rank_traveler.Visible = True
             valu_rank_vitality.Visible = True
-            Text_interaction2.Visible = True
             valu_miihouse.Visible = True
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
                 Select_allfav_1.Visible = False
@@ -7101,7 +7079,6 @@ Public Class TL_SaveEditor
             valu_itemmii_8.Visible = False
             valu_target1.Visible = False
             valu_target2.Visible = False
-            Text_interaction.Visible = False
             valu_emotions.Visible = False
             valu_selfriend_rela_1.Visible = False
             valu_selfriend_rela_2.Visible = False
@@ -7213,7 +7190,6 @@ Public Class TL_SaveEditor
             valu_rank_splurge.Visible = False
             valu_rank_traveler.Visible = False
             valu_rank_vitality.Visible = False
-            Text_interaction2.Visible = False
             valu_miihouse.Visible = False
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
                 Select_allfav_1.Visible = True
@@ -10715,191 +10691,6 @@ Public Class TL_SaveEditor
             valu_emotions.Value = 3
         ElseIf Select_emotions.SelectedItem = Select_emotions.Items.Item(4) Then
             valu_emotions.Value = 4
-        End If
-    End Sub
-
-    Private Sub Select_interaction_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_interaction.SelectedIndexChanged
-        If Select_interaction.SelectedItem = Select_interaction.Items.Item(0) Then
-            Icon_interaction.Visible = False
-            Text_interaction.Text = "00000000000000000000000CFFFFFFFF"
-            valu_target1.Value = 65535
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(1) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "3EC1EF21000000000001010CFFFFFFFF"
-            valu_target1.Value = 65535
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(2) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "002AF521000000000001000CFFFFFFFF"
-            valu_target1.Value = 65535
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(3) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "74DEF521000000000001000CFFFFFFFF"
-            valu_target1.Value = 65535
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(4) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_pink
-            Text_interaction.Text = "86F5FF21000000004C01000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(5) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_orange
-            Text_interaction.Text = "0906F421000000005801000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(6) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_orange
-            Text_interaction.Text = "7E0AF621000000005801000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(7) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_pink
-            Text_interaction.Text = "2F430022000000005001000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 0
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(8) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "1600F621000000005801000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(9) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "59D6F521000000002501000CFFFFFFFF"
-            valu_target1.Value = 65535
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(10) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "8ED5F521000000002F01000CFFFFFFFF"
-            valu_target1.Value = 65535
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(11) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "9E5CF621000000003501010CFFFFFFFF"
-            valu_target1.Value = 65535
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(12) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "8E5FF621000000008E01000CFFFFFFFF"
-            valu_target1.Value = 65535
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(13) Then
-            Icon_interaction.Visible = True
-            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
-                Icon_interaction.Image = My.Resources.apartment_blue
-            ElseIf Filever_text.Text = "JP" Then
-                Icon_interaction.Image = My.Resources.apartment_blue_j
-            End If
-            Text_interaction.Text = "78FAF821000000005F01000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(14) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_pink
-            Text_interaction.Text = "C69E0822000000005401000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(15) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "633DF721000000004A01000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(16) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "9D2DFC21000000008C01000CFFFFFFFF"
-            valu_target1.Value = 65535
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(17) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "6C40F721000000000301010CFFFFFFFF"
-            valu_target1.Value = 65535
-            valu_target2.Value = 65535
-            valu_target1.Visible = True
-            valu_target2.Visible = True
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(18) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_black
-            Text_interaction.Text = "FC45F721000000008D01010C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(19) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_pink
-            Text_interaction.Text = "BC56F522000000004C01000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(20) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_orange
-            Text_interaction.Text = "4D73E822000000004901000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(21) Then
-            Icon_interaction.Visible = True
-            Icon_interaction.Image = My.Resources.apartment_orange
-            Text_interaction.Text = "018AE822000000005301000C0000FFFF"
-            valu_target1.Value = 0
-            valu_target2.Value = 65535
-            valu_target1.Visible = False
-            valu_target2.Visible = False
-        Else
-            Icon_interaction.Visible = False
         End If
     End Sub
 
@@ -26262,14 +26053,6 @@ Public Class TL_SaveEditor
         Text_danger_friendlist.Visible = False
     End Sub
 
-    Private Sub Danger_interaction_MouseMove(sender As Object, e As EventArgs) Handles Danger_interaction.MouseMove
-        Text_danger_interaction.Visible = True
-    End Sub
-
-    Private Sub Danger_interaction_MouseLeave(sender As Object, e As EventArgs) Handles Danger_interaction.MouseLeave
-        Text_danger_interaction.Visible = False
-    End Sub
-
     Private Sub Menu_manual_Click(sender As Object, e As EventArgs) Handles Menu_manual.Click, Menu_text_manual.Click
         Manual.Show()
         Me.Hide()
@@ -34290,13 +34073,13 @@ Public Class TL_SaveEditor
 
     Private Sub AdvH_emotion_Click(sender As Object, e As EventArgs) Handles AdvH_emotion.Click
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's emotion" & vbNewLine & "This is a condition for ''Interaction pattern'' feature"
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's emotion"
             TLSE_dialog.Panel_dialog.Location = New Point(83, 110)
             TLSE_dialog.Icon_reference.Location = New Point(450, 460)
             TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
             TLSE_dialog.ShowDialog()
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici l'émotion de votre Mii" & vbNewLine & "Ceci est une condition pour la fonctionnalité ''Interaction''"
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici l'émotion de votre Mii"
             TLSE_dialog.Panel_dialog.Location = New Point(83, 110)
             TLSE_dialog.Icon_reference.Location = New Point(450, 460)
             TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
@@ -34442,10 +34225,10 @@ Public Class TL_SaveEditor
                 Writer.Write(vbNewLine & "Fullness : " & valu_fullness.Value)
                 Writer.Write(vbNewLine & "Grown-up/Kid : " & Select_growkid.SelectedItem)
                 Writer.Write(vbNewLine & "Relation to real you : " & Select_relationyou.SelectedItem)
-                Writer.Write(vbNewLine & "Interaction (value) : " & Text_interaction.Text)
+                Writer.Write(vbNewLine & "Interaction (value) : " & valu_interaction.Value)
                 Writer.Write(vbNewLine & "Target 1 : " & valu_target1.Value)
                 Writer.Write(vbNewLine & "Target 2 : " & valu_target2.Value)
-                Writer.Write(vbNewLine & "Interaction 2 (value) : " & Text_interaction2.Text)
+                Writer.Write(vbNewLine & "Interaction 2 (value) : " & valu_interaction2.Value)
                 Writer.Write(vbNewLine & "Place 1 : " & valu_place_1.Value)
                 Writer.Write(vbNewLine & "Place 2 : " & valu_place_2.Value)
                 Writer.Write(vbNewLine & "Emotions : " & Select_emotions.SelectedItem)
@@ -34824,4 +34607,170 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
+    Private Sub Select_interaction_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_interaction.SelectedIndexChanged
+        Danger_interaction.Visible = False
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(0) Then
+            valu_interaction.Value = &HC000000
+            Icon_interaction.Visible = False
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(1) Then
+            valu_interaction.Value = &HC000100
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(2) Then
+            valu_interaction.Value = &HC000101
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(3) Then
+            valu_interaction.Value = &HC000102
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(4) Then
+            valu_interaction.Value = &HC000103
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(5) Then
+            valu_interaction.Value = &HC000104
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(6) Then
+            valu_interaction.Value = &HC000105
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(7) Then
+            valu_interaction.Value = &HC000106
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(8) Then
+            valu_interaction.Value = &HC000107
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(9) Then
+            valu_interaction.Value = &HC000108
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(10) Then
+            valu_interaction.Value = &HC000109
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(11) Then
+            valu_interaction.Value = &HC00010A
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(12) Then
+            valu_interaction.Value = &HC00010B
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(13) Then
+            valu_interaction.Value = &HC00010C
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(14) Then
+            valu_interaction.Value = &HC00010D
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(15) Then
+            valu_interaction.Value = &HC00010E
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(16) Then
+            valu_interaction.Value = &HC00010F
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(17) Then
+            valu_interaction.Value = &HC000110
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(18) Then
+            valu_interaction.Value = &HC000111
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(19) Then
+            valu_interaction.Value = &HC000112
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(20) Then
+            valu_interaction.Value = &HC000113
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(21) Then
+            valu_interaction.Value = &HC000114
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(22) Then
+            valu_interaction.Value = &HC000115
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(23) Then
+            valu_interaction.Value = &HC000116
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(24) Then
+            valu_interaction.Value = &HC000117
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(25) Then
+            valu_interaction.Value = &HC000118
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+
+        End If
+    End Sub
+
+    Private Sub Check_patchendinterac_CheckedChanged(sender As Object, e As EventArgs) Handles Check_patchendinterac.CheckedChanged
+        If Check_patchendinterac.Checked = True Then
+            valu_enddateinterac.Value = valu_enddateinterac.Value + &H10000
+        End If
+    End Sub
 End Class
