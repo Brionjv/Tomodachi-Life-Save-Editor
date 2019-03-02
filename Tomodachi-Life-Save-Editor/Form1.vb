@@ -34609,6 +34609,8 @@ Public Class TL_SaveEditor
 
     Private Sub Select_interaction_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_interaction.SelectedIndexChanged
         Danger_interaction.Visible = False
+        valu_target1.Enabled = False
+        valu_target2.Enabled = False
         If Select_interaction.SelectedItem = Select_interaction.Items.Item(0) Then
             valu_interaction.Value = &HC000000
             Icon_interaction.Visible = False
@@ -34764,13 +34766,12 @@ Public Class TL_SaveEditor
             Icon_interaction.Visible = True
             valu_target1.Value = 65535
             valu_target2.Value = 65535
-
         End If
     End Sub
 
     Private Sub Check_patchendinterac_CheckedChanged(sender As Object, e As EventArgs) Handles Check_patchendinterac.CheckedChanged
         If Check_patchendinterac.Checked = True Then
-            valu_enddateinterac.Value = valu_enddateinterac.Value + &H10000
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
         End If
     End Sub
 End Class
