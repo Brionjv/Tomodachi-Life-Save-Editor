@@ -513,7 +513,6 @@ Partial Class TL_SaveEditor
         Me.valu_emotions = New System.Windows.Forms.NumericUpDown()
         Me.Select_emotions = New System.Windows.Forms.ComboBox()
         Me.Icon_interaction = New System.Windows.Forms.PictureBox()
-        Me.Info_interaction = New System.Windows.Forms.Label()
         Me.Panel_target2 = New System.Windows.Forms.Panel()
         Me.valu_target2 = New System.Windows.Forms.NumericUpDown()
         Me.Select_target2 = New System.Windows.Forms.ComboBox()
@@ -4429,8 +4428,7 @@ Partial Class TL_SaveEditor
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(468, 342)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = "Add Interaction 2"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Update ""Extract interaction"" feature"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Add Reset Mii's relation"& _ 
-    "ship"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Update Mii house feature"
+        Me.Changelog.Text = resources.GetString("Changelog.Text")
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version
@@ -4440,7 +4438,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(471, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "ß2 Version 3.0.5"
+        Me.Text_TLSE_version.Text = "ß3 Version 3.0.5"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7035,20 +7033,19 @@ Partial Class TL_SaveEditor
         Me.Panel3.Controls.Add(Me.Title_interactionpattern)
         Me.Panel3.Controls.Add(Me.Panel25)
         Me.Panel3.Controls.Add(Me.Icon_interaction)
-        Me.Panel3.Controls.Add(Me.Info_interaction)
         Me.Panel3.Controls.Add(Me.Panel_target2)
         Me.Panel3.Controls.Add(Me.Panel_target1)
         Me.Panel3.Controls.Add(Me.Panel17)
         Me.Panel3.Location = New System.Drawing.Point(5, 242)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(574, 153)
+        Me.Panel3.Size = New System.Drawing.Size(574, 167)
         Me.Panel3.TabIndex = 177
         '
         'valu_enddateinterac2
         '
         Me.valu_enddateinterac2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_enddateinterac2.Hexadecimal = true
-        Me.valu_enddateinterac2.Location = New System.Drawing.Point(207, 108)
+        Me.valu_enddateinterac2.Location = New System.Drawing.Point(207, 122)
         Me.valu_enddateinterac2.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.valu_enddateinterac2.Name = "valu_enddateinterac2"
         Me.valu_enddateinterac2.Size = New System.Drawing.Size(86, 16)
@@ -7060,18 +7057,19 @@ Partial Class TL_SaveEditor
         '
         Me.valu_enddateinterac.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_enddateinterac.Hexadecimal = true
-        Me.valu_enddateinterac.Location = New System.Drawing.Point(207, 47)
+        Me.valu_enddateinterac.Location = New System.Drawing.Point(202, 47)
         Me.valu_enddateinterac.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.valu_enddateinterac.Name = "valu_enddateinterac"
         Me.valu_enddateinterac.Size = New System.Drawing.Size(86, 16)
         Me.valu_enddateinterac.TabIndex = 271
         Me.valu_enddateinterac.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_enddateinterac.Visible = false
         '
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = true
         Me.CheckBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.CheckBox2.Location = New System.Drawing.Point(40, 108)
+        Me.CheckBox2.Location = New System.Drawing.Point(40, 122)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(159, 17)
         Me.CheckBox2.TabIndex = 270
@@ -7082,7 +7080,7 @@ Partial Class TL_SaveEditor
         '
         Me.Check_patchendinterac.AutoSize = true
         Me.Check_patchendinterac.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Check_patchendinterac.Location = New System.Drawing.Point(40, 47)
+        Me.Check_patchendinterac.Location = New System.Drawing.Point(35, 47)
         Me.Check_patchendinterac.Name = "Check_patchendinterac"
         Me.Check_patchendinterac.Size = New System.Drawing.Size(150, 17)
         Me.Check_patchendinterac.TabIndex = 269
@@ -7094,7 +7092,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.PictureBox5.Location = New System.Drawing.Point(522, 81)
+        Me.PictureBox5.Location = New System.Drawing.Point(428, 138)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox5.TabIndex = 266
@@ -7105,7 +7103,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_place_2.BackColor = System.Drawing.Color.Transparent
         Me.Title_place_2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_place_2.Location = New System.Drawing.Point(428, 66)
+        Me.Title_place_2.Location = New System.Drawing.Point(334, 123)
         Me.Title_place_2.Name = "Title_place_2"
         Me.Title_place_2.Size = New System.Drawing.Size(93, 13)
         Me.Title_place_2.TabIndex = 265
@@ -7116,7 +7114,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_place_1.BackColor = System.Drawing.Color.Transparent
         Me.Title_place_1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_place_1.Location = New System.Drawing.Point(333, 66)
+        Me.Title_place_1.Location = New System.Drawing.Point(333, 80)
         Me.Title_place_1.Name = "Title_place_1"
         Me.Title_place_1.Size = New System.Drawing.Size(93, 13)
         Me.Title_place_1.TabIndex = 264
@@ -7128,7 +7126,7 @@ Partial Class TL_SaveEditor
         Me.Panel20.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel20.Controls.Add(Me.valu_place_2)
         Me.Panel20.Controls.Add(Me.ComboBox2)
-        Me.Panel20.Location = New System.Drawing.Point(431, 82)
+        Me.Panel20.Location = New System.Drawing.Point(337, 139)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(90, 25)
         Me.Panel20.TabIndex = 263
@@ -7151,7 +7149,7 @@ Partial Class TL_SaveEditor
         Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox2.FormattingEnabled = true
         Me.ComboBox2.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
-        Me.ComboBox2.Location = New System.Drawing.Point(2, 2)
+        Me.ComboBox2.Location = New System.Drawing.Point(2, 1)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(86, 21)
         Me.ComboBox2.TabIndex = 1
@@ -7161,7 +7159,7 @@ Partial Class TL_SaveEditor
         Me.Panel21.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel21.Controls.Add(Me.valu_place_1)
         Me.Panel21.Controls.Add(Me.ComboBox3)
-        Me.Panel21.Location = New System.Drawing.Point(336, 82)
+        Me.Panel21.Location = New System.Drawing.Point(336, 96)
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(90, 25)
         Me.Panel21.TabIndex = 262
@@ -7184,7 +7182,7 @@ Partial Class TL_SaveEditor
         Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox3.FormattingEnabled = true
         Me.ComboBox3.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
-        Me.ComboBox3.Location = New System.Drawing.Point(2, 2)
+        Me.ComboBox3.Location = New System.Drawing.Point(2, 1)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(86, 21)
         Me.ComboBox3.TabIndex = 1
@@ -7194,7 +7192,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_interaction2.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_interaction2.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_interaction2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_interaction2.Location = New System.Drawing.Point(393, 108)
+        Me.AdvH_interaction2.Location = New System.Drawing.Point(299, 120)
         Me.AdvH_interaction2.Name = "AdvH_interaction2"
         Me.AdvH_interaction2.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_interaction2.TabIndex = 261
@@ -7205,7 +7203,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_interaction2.BackColor = System.Drawing.Color.Transparent
         Me.Title_interaction2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_interaction2.Location = New System.Drawing.Point(42, 66)
+        Me.Title_interaction2.Location = New System.Drawing.Point(42, 80)
         Me.Title_interaction2.Name = "Title_interaction2"
         Me.Title_interaction2.Size = New System.Drawing.Size(290, 13)
         Me.Title_interaction2.TabIndex = 259
@@ -7215,7 +7213,7 @@ Partial Class TL_SaveEditor
         'Icon_interaction2
         '
         Me.Icon_interaction2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.apartment_vert
-        Me.Icon_interaction2.Location = New System.Drawing.Point(7, 81)
+        Me.Icon_interaction2.Location = New System.Drawing.Point(7, 95)
         Me.Icon_interaction2.Name = "Icon_interaction2"
         Me.Icon_interaction2.Size = New System.Drawing.Size(30, 26)
         Me.Icon_interaction2.TabIndex = 258
@@ -7227,7 +7225,7 @@ Partial Class TL_SaveEditor
         Me.Panel7.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel7.Controls.Add(Me.valu_interaction2)
         Me.Panel7.Controls.Add(Me.Select_interaction2)
-        Me.Panel7.Location = New System.Drawing.Point(38, 82)
+        Me.Panel7.Location = New System.Drawing.Point(38, 96)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(294, 25)
         Me.Panel7.TabIndex = 257
@@ -7252,7 +7250,7 @@ Partial Class TL_SaveEditor
         Me.Select_interaction2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_interaction2.FormattingEnabled = true
         Me.Select_interaction2.Items.AddRange(New Object() {"""Show hidden things"" in settings is needed", "Is in", "Is in {Mii} house", "Is in his house", "Is in amusement park"})
-        Me.Select_interaction2.Location = New System.Drawing.Point(2, 2)
+        Me.Select_interaction2.Location = New System.Drawing.Point(2, 1)
         Me.Select_interaction2.Name = "Select_interaction2"
         Me.Select_interaction2.Size = New System.Drawing.Size(290, 21)
         Me.Select_interaction2.TabIndex = 112
@@ -7262,7 +7260,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_extractinterac.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_extractinterac.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_extractinterac.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_extractinterac.Location = New System.Drawing.Point(23, 128)
+        Me.AdvH_extractinterac.Location = New System.Drawing.Point(23, 141)
         Me.AdvH_extractinterac.Name = "AdvH_extractinterac"
         Me.AdvH_extractinterac.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_extractinterac.TabIndex = 254
@@ -7273,7 +7271,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_bakinteraction.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_bakinteraction.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_bakinterac
-        Me.Icon_bakinteraction.Location = New System.Drawing.Point(3, 124)
+        Me.Icon_bakinteraction.Location = New System.Drawing.Point(3, 137)
         Me.Icon_bakinteraction.Name = "Icon_bakinteraction"
         Me.Icon_bakinteraction.Size = New System.Drawing.Size(19, 26)
         Me.Icon_bakinteraction.TabIndex = 253
@@ -7284,7 +7282,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_emotion.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_emotion.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_emotion.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_emotion.Location = New System.Drawing.Point(512, 130)
+        Me.AdvH_emotion.Location = New System.Drawing.Point(549, 143)
         Me.AdvH_emotion.Name = "AdvH_emotion"
         Me.AdvH_emotion.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_emotion.TabIndex = 252
@@ -7296,7 +7294,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_targets.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_targets.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_targets.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_targets.Location = New System.Drawing.Point(546, 47)
+        Me.AdvH_targets.Location = New System.Drawing.Point(545, 90)
         Me.AdvH_targets.Name = "AdvH_targets"
         Me.AdvH_targets.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_targets.TabIndex = 251
@@ -7308,7 +7306,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_interaction.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_interaction.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_interaction.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_interaction.Location = New System.Drawing.Point(308, 47)
+        Me.AdvH_interaction.Location = New System.Drawing.Point(411, 47)
         Me.AdvH_interaction.Name = "AdvH_interaction"
         Me.AdvH_interaction.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_interaction.TabIndex = 250
@@ -7319,7 +7317,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_emotions.BackColor = System.Drawing.Color.Transparent
         Me.Title_emotions.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_emotions.Location = New System.Drawing.Point(413, 110)
+        Me.Title_emotions.Location = New System.Drawing.Point(450, 123)
         Me.Title_emotions.Name = "Title_emotions"
         Me.Title_emotions.Size = New System.Drawing.Size(99, 13)
         Me.Title_emotions.TabIndex = 168
@@ -7330,7 +7328,7 @@ Partial Class TL_SaveEditor
         '
         Me.Danger_interaction.Cursor = System.Windows.Forms.Cursors.Help
         Me.Danger_interaction.Image = CType(resources.GetObject("Danger_interaction.Image"),System.Drawing.Image)
-        Me.Danger_interaction.Location = New System.Drawing.Point(39, 0)
+        Me.Danger_interaction.Location = New System.Drawing.Point(34, 0)
         Me.Danger_interaction.Name = "Danger_interaction"
         Me.Danger_interaction.Size = New System.Drawing.Size(20, 20)
         Me.Danger_interaction.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -7342,7 +7340,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_target2.BackColor = System.Drawing.Color.Transparent
         Me.Title_target2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_target2.Location = New System.Drawing.Point(476, 5)
+        Me.Title_target2.Location = New System.Drawing.Point(477, 46)
         Me.Title_target2.Name = "Title_target2"
         Me.Title_target2.Size = New System.Drawing.Size(93, 13)
         Me.Title_target2.TabIndex = 167
@@ -7353,7 +7351,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_target1.BackColor = System.Drawing.Color.Transparent
         Me.Title_target1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_target1.Location = New System.Drawing.Point(381, 5)
+        Me.Title_target1.Location = New System.Drawing.Point(477, 6)
         Me.Title_target1.Name = "Title_target1"
         Me.Title_target1.Size = New System.Drawing.Size(93, 13)
         Me.Title_target1.TabIndex = 166
@@ -7364,9 +7362,9 @@ Partial Class TL_SaveEditor
         '
         Me.Title_interactionpattern.BackColor = System.Drawing.Color.Transparent
         Me.Title_interactionpattern.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_interactionpattern.Location = New System.Drawing.Point(42, 5)
+        Me.Title_interactionpattern.Location = New System.Drawing.Point(37, 5)
         Me.Title_interactionpattern.Name = "Title_interactionpattern"
-        Me.Title_interactionpattern.Size = New System.Drawing.Size(336, 13)
+        Me.Title_interactionpattern.Size = New System.Drawing.Size(438, 13)
         Me.Title_interactionpattern.TabIndex = 165
         Me.Title_interactionpattern.Text = "Interaction pattern"
         Me.Title_interactionpattern.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -7376,7 +7374,7 @@ Partial Class TL_SaveEditor
         Me.Panel25.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel25.Controls.Add(Me.valu_emotions)
         Me.Panel25.Controls.Add(Me.Select_emotions)
-        Me.Panel25.Location = New System.Drawing.Point(414, 126)
+        Me.Panel25.Location = New System.Drawing.Point(451, 139)
         Me.Panel25.Name = "Panel25"
         Me.Panel25.Size = New System.Drawing.Size(97, 25)
         Me.Panel25.TabIndex = 164
@@ -7407,32 +7405,19 @@ Partial Class TL_SaveEditor
         'Icon_interaction
         '
         Me.Icon_interaction.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.apartment_black
-        Me.Icon_interaction.Location = New System.Drawing.Point(7, 20)
+        Me.Icon_interaction.Location = New System.Drawing.Point(2, 20)
         Me.Icon_interaction.Name = "Icon_interaction"
         Me.Icon_interaction.Size = New System.Drawing.Size(30, 26)
         Me.Icon_interaction.TabIndex = 163
         Me.Icon_interaction.TabStop = false
         Me.Icon_interaction.Visible = false
         '
-        'Info_interaction
-        '
-        Me.Info_interaction.AutoSize = true
-        Me.Info_interaction.BackColor = System.Drawing.Color.Transparent
-        Me.Info_interaction.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_interaction.Font = New System.Drawing.Font("Harlow Solid Italic", 12!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic),System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Info_interaction.ForeColor = System.Drawing.Color.Blue
-        Me.Info_interaction.Location = New System.Drawing.Point(536, 133)
-        Me.Info_interaction.Name = "Info_interaction"
-        Me.Info_interaction.Size = New System.Drawing.Size(14, 20)
-        Me.Info_interaction.TabIndex = 162
-        Me.Info_interaction.Text = "i"
-        '
         'Panel_target2
         '
         Me.Panel_target2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_target2.Controls.Add(Me.valu_target2)
         Me.Panel_target2.Controls.Add(Me.Select_target2)
-        Me.Panel_target2.Location = New System.Drawing.Point(479, 21)
+        Me.Panel_target2.Location = New System.Drawing.Point(480, 62)
         Me.Panel_target2.Name = "Panel_target2"
         Me.Panel_target2.Size = New System.Drawing.Size(90, 25)
         Me.Panel_target2.TabIndex = 161
@@ -7456,7 +7441,7 @@ Partial Class TL_SaveEditor
         Me.Select_target2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_target2.FormattingEnabled = true
         Me.Select_target2.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
-        Me.Select_target2.Location = New System.Drawing.Point(2, 2)
+        Me.Select_target2.Location = New System.Drawing.Point(2, 1)
         Me.Select_target2.Name = "Select_target2"
         Me.Select_target2.Size = New System.Drawing.Size(86, 21)
         Me.Select_target2.TabIndex = 1
@@ -7466,7 +7451,7 @@ Partial Class TL_SaveEditor
         Me.Panel_target1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_target1.Controls.Add(Me.valu_target1)
         Me.Panel_target1.Controls.Add(Me.Select_target1)
-        Me.Panel_target1.Location = New System.Drawing.Point(384, 21)
+        Me.Panel_target1.Location = New System.Drawing.Point(480, 22)
         Me.Panel_target1.Name = "Panel_target1"
         Me.Panel_target1.Size = New System.Drawing.Size(90, 25)
         Me.Panel_target1.TabIndex = 160
@@ -7490,7 +7475,7 @@ Partial Class TL_SaveEditor
         Me.Select_target1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_target1.FormattingEnabled = true
         Me.Select_target1.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
-        Me.Select_target1.Location = New System.Drawing.Point(2, 2)
+        Me.Select_target1.Location = New System.Drawing.Point(2, 1)
         Me.Select_target1.Name = "Select_target1"
         Me.Select_target1.Size = New System.Drawing.Size(86, 21)
         Me.Select_target1.TabIndex = 1
@@ -7500,9 +7485,9 @@ Partial Class TL_SaveEditor
         Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel17.Controls.Add(Me.valu_interaction)
         Me.Panel17.Controls.Add(Me.Select_interaction)
-        Me.Panel17.Location = New System.Drawing.Point(38, 21)
+        Me.Panel17.Location = New System.Drawing.Point(33, 21)
         Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(342, 25)
+        Me.Panel17.Size = New System.Drawing.Size(442, 25)
         Me.Panel17.TabIndex = 159
         '
         'valu_interaction
@@ -7515,19 +7500,22 @@ Partial Class TL_SaveEditor
         Me.valu_interaction.Size = New System.Drawing.Size(86, 16)
         Me.valu_interaction.TabIndex = 187
         Me.valu_interaction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interaction.Visible = false
         '
         'Select_interaction
         '
         Me.Select_interaction.BackColor = System.Drawing.SystemColors.Window
         Me.Select_interaction.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_interaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_interaction.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Select_interaction.FormattingEnabled = true
         Me.Select_interaction.IntegralHeight = false
         Me.Select_interaction.ItemHeight = 13
-        Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like ??? ??? (foods)", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh"})
-        Me.Select_interaction.Location = New System.Drawing.Point(2, 2)
+        Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like ??? ??? (foods)", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "I'd like to eat something Korean", "I could eat anything !", "I'm starving (1)", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want ??? ??? (clothes)", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like ??? ??? (hats)", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings "& _ 
+                "to ?", "_Show heart in windows but freeze_"})
+        Me.Select_interaction.Location = New System.Drawing.Point(2, 1)
         Me.Select_interaction.Name = "Select_interaction"
-        Me.Select_interaction.Size = New System.Drawing.Size(338, 21)
+        Me.Select_interaction.Size = New System.Drawing.Size(437, 21)
         Me.Select_interaction.TabIndex = 112
         '
         'valu_itemmii_1
@@ -7986,7 +7974,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_danger_interaction.AutoSize = true
         Me.Text_danger_interaction.ForeColor = System.Drawing.Color.Red
-        Me.Text_danger_interaction.Location = New System.Drawing.Point(46, 405)
+        Me.Text_danger_interaction.Location = New System.Drawing.Point(46, 412)
         Me.Text_danger_interaction.Name = "Text_danger_interaction"
         Me.Text_danger_interaction.Size = New System.Drawing.Size(492, 13)
         Me.Text_danger_interaction.TabIndex = 229
@@ -13213,9 +13201,9 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Menu_panel)
         Me.Controls.Add(Me.Menu_button)
         Me.Controls.Add(Me.TLSE_header)
+        Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_extras)
-        Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
@@ -14136,7 +14124,6 @@ End Sub
     Friend WithEvents Panel_target1 As System.Windows.Forms.Panel
     Friend WithEvents Panel17 As System.Windows.Forms.Panel
     Friend WithEvents Select_interaction As System.Windows.Forms.ComboBox
-    Friend WithEvents Info_interaction As System.Windows.Forms.Label
     Friend WithEvents valu_miihouse As System.Windows.Forms.NumericUpDown
     Friend WithEvents Icon_miihouse As System.Windows.Forms.PictureBox
     Friend WithEvents Select_target2 As System.Windows.Forms.ComboBox
