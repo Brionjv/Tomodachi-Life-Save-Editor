@@ -9126,10 +9126,7 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Select_mii_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_mii.SelectedIndexChanged
-        Try
-            readMii()
-        Catch ex As Exception
-        End Try
+        readMii()
         Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(0)
         Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
         Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
@@ -9251,6 +9248,7 @@ Public Class TL_SaveEditor
         Select_fav_3.SelectedItem = Select_fav_US3.Items.Item(0)
         Select_worst_1.SelectedItem = Select_worst_US1.Items.Item(0)
         Select_worst_2.SelectedItem = Select_worst_US2.Items.Item(0)
+        Check_patchendinterac.Checked = False
         If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
             If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
                 Accessmii = &H0
@@ -35125,6 +35123,284 @@ Public Class TL_SaveEditor
             valu_target1.Enabled = True
             valu_target2.Enabled = True
             Danger_interaction.Visible = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(79) Then
+            valu_interaction.Value = &HC000153
+            Icon_interaction.Image = My.Resources.apartment_orange
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(80) Then
+            valu_interaction.Value = &HC000154
+            Icon_interaction.Image = My.Resources.apartment_pink
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(81) Then
+            valu_interaction.Value = &HC000157
+            Icon_interaction.Visible = False
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Danger_interaction.Visible = True
+            valu_target1.Enabled = True
+            valu_target2.Enabled = True
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(82) Then
+            valu_interaction.Value = &HC000158
+            Icon_interaction.Image = My.Resources.apartment_orange
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(83) Then
+            valu_interaction.Value = &HC000159
+            Icon_interaction.Image = My.Resources.apartment_orange
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(84) Then
+            valu_interaction.Value = &HC00015A
+            Icon_interaction.Image = My.Resources.apartment_orange
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 0
+            valu_target1.Enabled = True
+            valu_target2.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            Select_target2.Visible = True
+            valu_target1.Visible = False
+            valu_target2.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(85) Then
+            valu_interaction.Value = &HC00015E
+            Icon_interaction.Visible = False
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(86) Then
+            valu_interaction.Value = &HC00015F
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+                Icon_interaction.Image = My.Resources.apartment_blue
+            ElseIf Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(87) Then
+            valu_interaction.Value = &HC000160
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+                Icon_interaction.Image = My.Resources.apartment_blue
+            ElseIf Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(88) Then
+            valu_interaction.Value = &HC000161
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+                Icon_interaction.Image = My.Resources.apartment_blue
+            ElseIf Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(89) Then
+            valu_interaction.Value = &HC000162
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+                Icon_interaction.Image = My.Resources.apartment_blue
+            ElseIf Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(90) Then
+            valu_interaction.Value = &HC000163
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+                Icon_interaction.Image = My.Resources.apartment_blue
+            ElseIf Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(91) Then
+            valu_interaction.Value = &HC000164
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+                Icon_interaction.Image = My.Resources.apartment_blue
+            ElseIf Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(92) Then
+            valu_interaction.Value = &HC000165
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+                Icon_interaction.Image = My.Resources.apartment_blue
+            ElseIf Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(93) Then
+            valu_interaction.Value = &HC000166
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+                Icon_interaction.Image = My.Resources.apartment_blue
+            ElseIf Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            Icon_interaction.Visible = True
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(94) Then
+            valu_interaction.Value = &HC000167
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(95) Then
+            valu_interaction.Value = &HC000168
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(96) Then
+            valu_interaction.Value = &HC000169
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(97) Then
+            valu_interaction.Value = &HC00016A
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(98) Then
+            valu_interaction.Value = &HC00016B
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(99) Then
+            valu_interaction.Value = &HC00016C
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(100) Then
+            valu_interaction.Value = &HC00016D
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(101) Then
+            valu_interaction.Value = &HC00016E
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(102) Then
+            valu_interaction.Value = &HC00016F
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(103) Then
+            valu_interaction.Value = &HC000171
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(104) Then
+            valu_interaction.Value = &HC000172
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(105) Then
+            valu_interaction.Value = &HC000173
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(106) Then
+            valu_interaction.Value = &HC000174
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(107) Then
+            valu_interaction.Value = &HC000175
+            Icon_interaction.Image = My.Resources.apartment_black
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+        ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(108) Then
+            valu_interaction.Value = &HC000176
+            Icon_interaction.Image = My.Resources.apartment_orange
+            Icon_interaction.Visible = True
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            Select_target1.Visible = True
+            valu_target1.Visible = False
         End If
     End Sub
 
