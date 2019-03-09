@@ -480,19 +480,19 @@ Partial Class TL_SaveEditor
         Me.valu_itemmii_6 = New System.Windows.Forms.NumericUpDown()
         Me.valu_itemmii_5 = New System.Windows.Forms.NumericUpDown()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.valu_interacunknow = New System.Windows.Forms.NumericUpDown()
         Me.valu_enddateinterac2 = New System.Windows.Forms.NumericUpDown()
         Me.valu_enddateinterac = New System.Windows.Forms.NumericUpDown()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.Check_patchendinterac = New System.Windows.Forms.CheckBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Title_place_2 = New System.Windows.Forms.Label()
         Me.Title_place_1 = New System.Windows.Forms.Label()
         Me.Panel20 = New System.Windows.Forms.Panel()
         Me.valu_place_2 = New System.Windows.Forms.NumericUpDown()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Panel21 = New System.Windows.Forms.Panel()
         Me.valu_place_1 = New System.Windows.Forms.NumericUpDown()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.AdvH_interaction2 = New System.Windows.Forms.PictureBox()
         Me.Title_interaction2 = New System.Windows.Forms.Label()
         Me.Icon_interaction2 = New System.Windows.Forms.PictureBox()
@@ -1022,6 +1022,7 @@ Partial Class TL_SaveEditor
         Me.Specharac3ds_icon = New System.Windows.Forms.PictureBox()
         Me.Panel_uncheckupdate = New System.Windows.Forms.Panel()
         Me.Icon_uncheckupdate = New System.Windows.Forms.PictureBox()
+        Me.Text_notinteraction = New System.Windows.Forms.TextBox()
         Me.TLSE_header.SuspendLayout
         CType(Me.TLSE_title,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Closebutton,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1375,6 +1376,9 @@ Partial Class TL_SaveEditor
         CType(Me.valu_itemmii_6,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_itemmii_5,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel3.SuspendLayout
+        CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_interacunknow,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_enddateinterac2,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_enddateinterac,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).BeginInit
@@ -4428,8 +4432,9 @@ Partial Class TL_SaveEditor
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(468, 342)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = "Patch end time interaction will be now uncheck when Mii selected is change"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Add M"& _ 
-    "ore interactions (some interactions not work properly for now, need more test)"
+        Me.Changelog.Text = "Update Mii interaction feature (now update automatically end time interaction)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "A" & _
+    "dd More interactions (some interactions not work properly for now, need to extra" & _
+    "ct them to have good values)"
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version
@@ -4439,7 +4444,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(471, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "ß4 Version 3.0.5"
+        Me.Text_TLSE_version.Text = "ß5 Version 3.0.5"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7009,10 +7014,12 @@ Partial Class TL_SaveEditor
         'Panel3
         '
         Me.Panel3.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_apartment
+        Me.Panel3.Controls.Add(Me.PictureBox6)
+        Me.Panel3.Controls.Add(Me.PictureBox4)
+        Me.Panel3.Controls.Add(Me.valu_interacunknow)
         Me.Panel3.Controls.Add(Me.valu_enddateinterac2)
         Me.Panel3.Controls.Add(Me.valu_enddateinterac)
         Me.Panel3.Controls.Add(Me.CheckBox2)
-        Me.Panel3.Controls.Add(Me.Check_patchendinterac)
         Me.Panel3.Controls.Add(Me.PictureBox5)
         Me.Panel3.Controls.Add(Me.Title_place_2)
         Me.Panel3.Controls.Add(Me.Title_place_1)
@@ -7042,6 +7049,42 @@ Partial Class TL_SaveEditor
         Me.Panel3.Size = New System.Drawing.Size(574, 167)
         Me.Panel3.TabIndex = 177
         '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox6.Location = New System.Drawing.Point(246, 46)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox6.TabIndex = 275
+        Me.PictureBox6.TabStop = false
+        Me.PictureBox6.Visible = false
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox4.Location = New System.Drawing.Point(125, 46)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox4.TabIndex = 274
+        Me.PictureBox4.TabStop = false
+        Me.PictureBox4.Visible = false
+        '
+        'valu_interacunknow
+        '
+        Me.valu_interacunknow.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interacunknow.Hexadecimal = true
+        Me.valu_interacunknow.Location = New System.Drawing.Point(158, 49)
+        Me.valu_interacunknow.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_interacunknow.Name = "valu_interacunknow"
+        Me.valu_interacunknow.Size = New System.Drawing.Size(86, 16)
+        Me.valu_interacunknow.TabIndex = 273
+        Me.valu_interacunknow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_interacunknow.Visible = false
+        '
         'valu_enddateinterac2
         '
         Me.valu_enddateinterac2.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -7058,7 +7101,7 @@ Partial Class TL_SaveEditor
         '
         Me.valu_enddateinterac.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_enddateinterac.Hexadecimal = true
-        Me.valu_enddateinterac.Location = New System.Drawing.Point(202, 47)
+        Me.valu_enddateinterac.Location = New System.Drawing.Point(35, 49)
         Me.valu_enddateinterac.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.valu_enddateinterac.Name = "valu_enddateinterac"
         Me.valu_enddateinterac.Size = New System.Drawing.Size(86, 16)
@@ -7076,17 +7119,6 @@ Partial Class TL_SaveEditor
         Me.CheckBox2.TabIndex = 270
         Me.CheckBox2.Text = "Patch Interaction 2 end time"
         Me.CheckBox2.UseVisualStyleBackColor = true
-        '
-        'Check_patchendinterac
-        '
-        Me.Check_patchendinterac.AutoSize = true
-        Me.Check_patchendinterac.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Check_patchendinterac.Location = New System.Drawing.Point(35, 47)
-        Me.Check_patchendinterac.Name = "Check_patchendinterac"
-        Me.Check_patchendinterac.Size = New System.Drawing.Size(150, 17)
-        Me.Check_patchendinterac.TabIndex = 269
-        Me.Check_patchendinterac.Text = "Patch Interaction end time"
-        Me.Check_patchendinterac.UseVisualStyleBackColor = true
         '
         'PictureBox5
         '
@@ -7126,7 +7158,6 @@ Partial Class TL_SaveEditor
         '
         Me.Panel20.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel20.Controls.Add(Me.valu_place_2)
-        Me.Panel20.Controls.Add(Me.ComboBox2)
         Me.Panel20.Location = New System.Drawing.Point(337, 139)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(90, 25)
@@ -7142,24 +7173,10 @@ Partial Class TL_SaveEditor
         Me.valu_place_2.TabIndex = 186
         Me.valu_place_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'ComboBox2
-        '
-        Me.ComboBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox2.DisplayMember = "0"
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox2.FormattingEnabled = true
-        Me.ComboBox2.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
-        Me.ComboBox2.Location = New System.Drawing.Point(2, 1)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(86, 21)
-        Me.ComboBox2.TabIndex = 1
-        '
         'Panel21
         '
         Me.Panel21.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel21.Controls.Add(Me.valu_place_1)
-        Me.Panel21.Controls.Add(Me.ComboBox3)
         Me.Panel21.Location = New System.Drawing.Point(336, 96)
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(90, 25)
@@ -7174,19 +7191,6 @@ Partial Class TL_SaveEditor
         Me.valu_place_1.Size = New System.Drawing.Size(86, 16)
         Me.valu_place_1.TabIndex = 186
         Me.valu_place_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox3.DisplayMember = "0"
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox3.FormattingEnabled = true
-        Me.ComboBox3.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
-        Me.ComboBox3.Location = New System.Drawing.Point(2, 1)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(86, 21)
-        Me.ComboBox3.TabIndex = 1
         '
         'AdvH_interaction2
         '
@@ -7251,7 +7255,7 @@ Partial Class TL_SaveEditor
         Me.Select_interaction2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_interaction2.FormattingEnabled = true
         Me.Select_interaction2.Items.AddRange(New Object() {"""Show hidden things"" in settings is needed", "Is in", "Is in {Mii} house", "Is in his house", "Is in amusement park"})
-        Me.Select_interaction2.Location = New System.Drawing.Point(2, 1)
+        Me.Select_interaction2.Location = New System.Drawing.Point(2, 2)
         Me.Select_interaction2.Name = "Select_interaction2"
         Me.Select_interaction2.Size = New System.Drawing.Size(290, 21)
         Me.Select_interaction2.TabIndex = 112
@@ -7442,7 +7446,7 @@ Partial Class TL_SaveEditor
         Me.Select_target2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_target2.FormattingEnabled = true
         Me.Select_target2.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
-        Me.Select_target2.Location = New System.Drawing.Point(2, 1)
+        Me.Select_target2.Location = New System.Drawing.Point(2, 2)
         Me.Select_target2.Name = "Select_target2"
         Me.Select_target2.Size = New System.Drawing.Size(86, 21)
         Me.Select_target2.TabIndex = 1
@@ -7476,7 +7480,7 @@ Partial Class TL_SaveEditor
         Me.Select_target1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_target1.FormattingEnabled = true
         Me.Select_target1.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
-        Me.Select_target1.Location = New System.Drawing.Point(2, 1)
+        Me.Select_target1.Location = New System.Drawing.Point(2, 2)
         Me.Select_target1.Name = "Select_target1"
         Me.Select_target1.Size = New System.Drawing.Size(86, 21)
         Me.Select_target1.TabIndex = 1
@@ -7486,9 +7490,10 @@ Partial Class TL_SaveEditor
         Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel17.Controls.Add(Me.valu_interaction)
         Me.Panel17.Controls.Add(Me.Select_interaction)
+        Me.Panel17.Controls.Add(Me.Text_notinteraction)
         Me.Panel17.Location = New System.Drawing.Point(33, 21)
         Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(442, 25)
+        Me.Panel17.Size = New System.Drawing.Size(441, 25)
         Me.Panel17.TabIndex = 159
         '
         'valu_interaction
@@ -7496,7 +7501,7 @@ Partial Class TL_SaveEditor
         Me.valu_interaction.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_interaction.Hexadecimal = true
         Me.valu_interaction.Location = New System.Drawing.Point(104, 4)
-        Me.valu_interaction.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
+        Me.valu_interaction.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_interaction.Name = "valu_interaction"
         Me.valu_interaction.Size = New System.Drawing.Size(86, 16)
         Me.valu_interaction.TabIndex = 187
@@ -7512,10 +7517,15 @@ Partial Class TL_SaveEditor
         Me.Select_interaction.FormattingEnabled = true
         Me.Select_interaction.IntegralHeight = false
         Me.Select_interaction.ItemHeight = 13
-        Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like ??? ??? (foods)", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "I'd like to eat something Korean", "I could eat anything !", "I'm starving (1)", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want ??? ??? (clothes)", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like ??? ??? (hats)", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings "& _ 
-                "to ?", "_Show heart in windows but freeze_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "{Call you in phone and freeze game_not work for now_probably have a baby}", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "Divorce and break target's heart (target's will have a blue icon in windows)", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you"& _ 
-                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?"})
-        Me.Select_interaction.Location = New System.Drawing.Point(2, 1)
+        Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like {foods}", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "_Would like to eat something but say nothing_", "_Would like to eat something but say nothing (1)_", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "_Would like to eat something but say nothing (2)_", "I'd like to eat something Korean", "I could eat anything !", "I'm starving", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings "& _ 
+                "to ?", "_Show heart in windows but freeze_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you"& _ 
+                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me "& _ 
+                "?", "I think that I have something really special with {Mii}.  What do you thing about"& _ 
+                " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii"& _ 
+                "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories,"& _ 
+                " should I tell them more ?", "A mosquito got into my tent…", "I'm so famished I can hardly move…", "I've got a sore throat…", "I got a letter from someone to meet them on the roof… I don't know who wrote it… "& _ 
+                "Should I go ?", "I loss something very important", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?"})
+        Me.Select_interaction.Location = New System.Drawing.Point(2, 2)
         Me.Select_interaction.Name = "Select_interaction"
         Me.Select_interaction.Size = New System.Drawing.Size(437, 21)
         Me.Select_interaction.TabIndex = 112
@@ -13178,6 +13188,19 @@ Partial Class TL_SaveEditor
         Me.Icon_uncheckupdate.TabIndex = 0
         Me.Icon_uncheckupdate.TabStop = false
         '
+        'Text_notinteraction
+        '
+        Me.Text_notinteraction.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Text_notinteraction.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Text_notinteraction.Enabled = false
+        Me.Text_notinteraction.Location = New System.Drawing.Point(2, 2)
+        Me.Text_notinteraction.Name = "Text_notinteraction"
+        Me.Text_notinteraction.ReadOnly = true
+        Me.Text_notinteraction.Size = New System.Drawing.Size(437, 20)
+        Me.Text_notinteraction.TabIndex = 276
+        Me.Text_notinteraction.Text = "This interaction is not listed. You can extract him and share it"
+        Me.Text_notinteraction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -13595,6 +13618,9 @@ Partial Class TL_SaveEditor
         CType(Me.valu_itemmii_5,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel3.ResumeLayout(false)
         Me.Panel3.PerformLayout
+        CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_interacunknow,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_enddateinterac2,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_enddateinterac,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).EndInit
@@ -13620,6 +13646,7 @@ Partial Class TL_SaveEditor
         Me.Panel_target1.ResumeLayout(false)
         CType(Me.valu_target1,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel17.ResumeLayout(false)
+        Me.Panel17.PerformLayout
         CType(Me.valu_interaction,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_itemmii_1,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_itemmii_4,System.ComponentModel.ISupportInitialize).EndInit
@@ -14874,13 +14901,10 @@ End Sub
     Friend WithEvents Title_place_1 As System.Windows.Forms.Label
     Friend WithEvents Panel20 As System.Windows.Forms.Panel
     Friend WithEvents valu_place_2 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents Panel21 As System.Windows.Forms.Panel
     Friend WithEvents valu_place_1 As System.Windows.Forms.NumericUpDown
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_miihouse As System.Windows.Forms.ComboBox
     Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents Check_patchendinterac As System.Windows.Forms.CheckBox
     Friend WithEvents valu_interaction2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_interaction As System.Windows.Forms.NumericUpDown
     Friend WithEvents Title_lastdatesave As System.Windows.Forms.Label
@@ -14888,5 +14912,9 @@ End Sub
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents valu_enddateinterac2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_enddateinterac As System.Windows.Forms.NumericUpDown
+    Friend WithEvents valu_interacunknow As System.Windows.Forms.NumericUpDown
+    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents Text_notinteraction As System.Windows.Forms.TextBox
 
 End Class

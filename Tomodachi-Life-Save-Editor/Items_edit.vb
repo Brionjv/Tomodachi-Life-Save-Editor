@@ -1108,7 +1108,7 @@ Public Class Items_edit
     Public Sub writeunitems()
         Try
             If Check_clothingstp_bynumbers.Checked = True Or Check_clothingstp_available.Checked = True Or Check_clothingstp_notavailable.Checked = True Then
-                If TL_SaveEditor.Filever_text.Text = "EU" Then 'stpclothing
+                If TL_SaveEditor.Filever_text.Text = "EU" Then
                     Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
                     For i As Integer = 0 To 7
                         fs.Position = &H60 + i

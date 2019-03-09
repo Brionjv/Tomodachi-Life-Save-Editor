@@ -413,6 +413,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property apartment_phone() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_phone", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property apartment_pink() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("apartment_pink", resourceCulture)

@@ -1318,6 +1318,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\apartment_phone.png" />
     <None Include="Resources\apartment_vert.png" />
     <None Include="Resources\apartment_outhouse.png" />
     <None Include="Resources\apartment_out.png" />
