@@ -63,9 +63,21 @@ Partial Class TL_SaveEditor
         Me.AdvH_menu = New System.Windows.Forms.PictureBox()
         Me.Text_menu_button = New System.Windows.Forms.Label()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
+        Me.Panel38 = New System.Windows.Forms.Panel()
+        Me.valu_lastdatesave = New System.Windows.Forms.NumericUpDown()
+        Me.Warning_islandaddress = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.Panel36 = New System.Windows.Forms.Panel()
+        Me.valu_islandaddress_p4 = New System.Windows.Forms.NumericUpDown()
+        Me.Panel37 = New System.Windows.Forms.Panel()
+        Me.valu_islandaddress_p3 = New System.Windows.Forms.NumericUpDown()
+        Me.Panel35 = New System.Windows.Forms.Panel()
+        Me.valu_islandaddress_p2 = New System.Windows.Forms.NumericUpDown()
+        Me.Panel34 = New System.Windows.Forms.Panel()
+        Me.valu_islandaddress_p1 = New System.Windows.Forms.NumericUpDown()
+        Me.Title_islandaddress = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Title_lastdatesave = New System.Windows.Forms.Label()
-        Me.valu_lastdatesave = New System.Windows.Forms.NumericUpDown()
         Me.AdvH_islandname = New System.Windows.Forms.PictureBox()
         Me.AdvH_islandnamepronun = New System.Windows.Forms.PictureBox()
         Me.AdvH_rankboard = New System.Windows.Forms.PictureBox()
@@ -273,6 +285,21 @@ Partial Class TL_SaveEditor
         Me.Text_editing_mii = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Tab_mii_edit = New System.Windows.Forms.TabPage()
+        Me.Panel31 = New System.Windows.Forms.Panel()
+        Me.valu_economy = New System.Windows.Forms.NumericUpDown()
+        Me.Title_miieconomy = New System.Windows.Forms.Label()
+        Me.Title_switch_interiors = New System.Windows.Forms.Label()
+        Me.Title_switch_clothes = New System.Windows.Forms.Label()
+        Me.Panel28 = New System.Windows.Forms.Panel()
+        Me.valu_miihouse = New System.Windows.Forms.NumericUpDown()
+        Me.Select_miihouse = New System.Windows.Forms.ComboBox()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.valu_switch_clothes = New System.Windows.Forms.NumericUpDown()
+        Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.valu_switch_interiors = New System.Windows.Forms.NumericUpDown()
+        Me.Panel22 = New System.Windows.Forms.Panel()
+        Me.valu_switch_hats = New System.Windows.Forms.NumericUpDown()
+        Me.Title_switch_hats = New System.Windows.Forms.Label()
         Me.Panel_edit_haircolor = New System.Windows.Forms.Panel()
         Me.AdvH_edithaircolor = New System.Windows.Forms.PictureBox()
         Me.color_empty = New System.Windows.Forms.Label()
@@ -320,21 +347,28 @@ Partial Class TL_SaveEditor
         Me.AdvH_favcolor = New System.Windows.Forms.PictureBox()
         Me.AdvH_relarealtoyou = New System.Windows.Forms.PictureBox()
         Me.AdvH_creator = New System.Windows.Forms.PictureBox()
+        Me.AdvH_miieconomy = New System.Windows.Forms.PictureBox()
         Me.AdvH_interior = New System.Windows.Forms.PictureBox()
         Me.AdvH_miihouse = New System.Windows.Forms.PictureBox()
+        Me.AdvH_switchinteriors = New System.Windows.Forms.PictureBox()
         Me.AdvH_miieditmusic = New System.Windows.Forms.PictureBox()
         Me.AdvH_cathphrase = New System.Windows.Forms.PictureBox()
+        Me.AdvH_switchclothes = New System.Windows.Forms.PictureBox()
         Me.AdvH_inventory = New System.Windows.Forms.PictureBox()
         Me.Title_miihouse = New System.Windows.Forms.Label()
+        Me.AdvH_switchhats = New System.Windows.Forms.PictureBox()
         Me.Icon_haircolor = New System.Windows.Forms.PictureBox()
         Me.valu_haircolor = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
         Me.Title_haircolor = New System.Windows.Forms.Label()
         Me.valu_favcolor = New System.Windows.Forms.NumericUpDown()
         Me.Icon_favcolor = New System.Windows.Forms.PictureBox()
-        Me.valu_miihouse = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_switch_interiors = New System.Windows.Forms.PictureBox()
         Me.Icon_miihouse = New System.Windows.Forms.PictureBox()
+        Me.Icon_switch_clothes = New System.Windows.Forms.PictureBox()
         Me.Icon_miiedit_music = New System.Windows.Forms.PictureBox()
         Me.Icon_cathphrase = New System.Windows.Forms.PictureBox()
+        Me.Icon_switch_hats = New System.Windows.Forms.PictureBox()
         Me.Icon_inventory = New System.Windows.Forms.PictureBox()
         Me.Mii = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -440,8 +474,13 @@ Partial Class TL_SaveEditor
         Me.Select_unlock_specialfoods = New System.Windows.Forms.ComboBox()
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.Select_unlock_interiors = New System.Windows.Forms.ComboBox()
-        Me.Select_miihouse = New System.Windows.Forms.ComboBox()
         Me.Tab_mii_status = New System.Windows.Forms.TabPage()
+        Me.Select_allfav_US1 = New System.Windows.Forms.ComboBox()
+        Me.Panel_edit_fullness = New System.Windows.Forms.Panel()
+        Me.Icon_edit_full_100 = New System.Windows.Forms.PictureBox()
+        Me.Icon_edit_full_50 = New System.Windows.Forms.PictureBox()
+        Me.Icon_edit_full_25 = New System.Windows.Forms.PictureBox()
+        Me.Icon_edit_full_00 = New System.Windows.Forms.PictureBox()
         Me.AdvH_worst = New System.Windows.Forms.PictureBox()
         Me.AdvH_fav = New System.Windows.Forms.PictureBox()
         Me.AdvH_allfav = New System.Windows.Forms.PictureBox()
@@ -449,10 +488,6 @@ Partial Class TL_SaveEditor
         Me.AdvH_fullness = New System.Windows.Forms.PictureBox()
         Me.AdvH_experience = New System.Windows.Forms.PictureBox()
         Me.AdvH_miilevel = New System.Windows.Forms.PictureBox()
-        Me.AdvH_miieconomy = New System.Windows.Forms.PictureBox()
-        Me.AdvH_switchinteriors = New System.Windows.Forms.PictureBox()
-        Me.AdvH_switchclothes = New System.Windows.Forms.PictureBox()
-        Me.AdvH_switchhats = New System.Windows.Forms.PictureBox()
         Me.Select_foods_language = New System.Windows.Forms.ComboBox()
         Me.Select_worst_US2 = New System.Windows.Forms.ComboBox()
         Me.Select_worst_US1 = New System.Windows.Forms.ComboBox()
@@ -460,18 +495,6 @@ Partial Class TL_SaveEditor
         Me.Select_fav_US2 = New System.Windows.Forms.ComboBox()
         Me.Select_fav_US1 = New System.Windows.Forms.ComboBox()
         Me.Select_allfav_US2 = New System.Windows.Forms.ComboBox()
-        Me.Select_allfav_US1 = New System.Windows.Forms.ComboBox()
-        Me.valu_switch_interiors = New System.Windows.Forms.NumericUpDown()
-        Me.Icon_switch_interiors = New System.Windows.Forms.PictureBox()
-        Me.valu_switch_clothes = New System.Windows.Forms.NumericUpDown()
-        Me.Icon_switch_clothes = New System.Windows.Forms.PictureBox()
-        Me.valu_switch_hats = New System.Windows.Forms.NumericUpDown()
-        Me.Icon_switch_hats = New System.Windows.Forms.PictureBox()
-        Me.Panel_edit_fullness = New System.Windows.Forms.Panel()
-        Me.Icon_edit_full_100 = New System.Windows.Forms.PictureBox()
-        Me.Icon_edit_full_50 = New System.Windows.Forms.PictureBox()
-        Me.Icon_edit_full_25 = New System.Windows.Forms.PictureBox()
-        Me.Icon_edit_full_00 = New System.Windows.Forms.PictureBox()
         Me.valu_chkfullness = New System.Windows.Forms.NumericUpDown()
         Me.valu_experience = New System.Windows.Forms.NumericUpDown()
         Me.valu_itemmii_8 = New System.Windows.Forms.NumericUpDown()
@@ -485,7 +508,6 @@ Partial Class TL_SaveEditor
         Me.valu_interacunknow = New System.Windows.Forms.NumericUpDown()
         Me.valu_enddateinterac2 = New System.Windows.Forms.NumericUpDown()
         Me.valu_enddateinterac = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Title_place_2 = New System.Windows.Forms.Label()
         Me.Title_place_1 = New System.Windows.Forms.Label()
@@ -522,6 +544,10 @@ Partial Class TL_SaveEditor
         Me.Panel17 = New System.Windows.Forms.Panel()
         Me.valu_interaction = New System.Windows.Forms.NumericUpDown()
         Me.Select_interaction = New System.Windows.Forms.ComboBox()
+        Me.Text_notinteraction = New System.Windows.Forms.TextBox()
+        Me.Panel_target1_foods = New System.Windows.Forms.Panel()
+        Me.Select_target1_foodUS = New System.Windows.Forms.ComboBox()
+        Me.Select_target1_foodEU = New System.Windows.Forms.ComboBox()
         Me.valu_itemmii_1 = New System.Windows.Forms.NumericUpDown()
         Me.valu_itemmii_4 = New System.Windows.Forms.NumericUpDown()
         Me.valu_itemmii_2 = New System.Windows.Forms.NumericUpDown()
@@ -534,9 +560,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_7 = New System.Windows.Forms.PictureBox()
         Me.Title_foods_allfav = New System.Windows.Forms.Label()
         Me.Icon_itemmii_8 = New System.Windows.Forms.PictureBox()
-        Me.Label29 = New System.Windows.Forms.Label()
         Me.Icon_itemmii_3 = New System.Windows.Forms.PictureBox()
-        Me.Label28 = New System.Windows.Forms.Label()
         Me.Icon_itemmii_2 = New System.Windows.Forms.PictureBox()
         Me.Text_level = New System.Windows.Forms.Label()
         Me.Icon_itemmii_1 = New System.Windows.Forms.PictureBox()
@@ -545,8 +569,6 @@ Partial Class TL_SaveEditor
         Me.valu_fullness = New System.Windows.Forms.NumericUpDown()
         Me.Text_fullness = New System.Windows.Forms.Label()
         Me.Check_fullness = New System.Windows.Forms.RadioButton()
-        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
-        Me.valu_economy = New System.Windows.Forms.NumericUpDown()
         Me.Icon_fullness = New System.Windows.Forms.PictureBox()
         Me.valu_exp = New System.Windows.Forms.NumericUpDown()
         Me.Select_allfav_2 = New System.Windows.Forms.ComboBox()
@@ -561,10 +583,10 @@ Partial Class TL_SaveEditor
         Me.Select_worst_1 = New System.Windows.Forms.ComboBox()
         Me.valu_worst_2 = New System.Windows.Forms.NumericUpDown()
         Me.valu_worst_1 = New System.Windows.Forms.NumericUpDown()
-        Me.Select_allfav_1 = New System.Windows.Forms.ComboBox()
-        Me.valu_allfav_1 = New System.Windows.Forms.NumericUpDown()
         Me.AdvH_noeat = New System.Windows.Forms.PictureBox()
         Me.Text_danger_interaction = New System.Windows.Forms.Label()
+        Me.Select_allfav_1 = New System.Windows.Forms.ComboBox()
+        Me.valu_allfav_1 = New System.Windows.Forms.NumericUpDown()
         Me.Tab_mii_friendlist = New System.Windows.Forms.TabPage()
         Me.AdvH_setallrelation = New System.Windows.Forms.PictureBox()
         Me.Panel18 = New System.Windows.Forms.Panel()
@@ -990,12 +1012,14 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_29 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_30 = New System.Windows.Forms.ComboBox()
         Me.Tab_mii_extras = New System.Windows.Forms.TabPage()
+        Me.Panel33 = New System.Windows.Forms.Panel()
+        Me.valu_ranking_pampered = New System.Windows.Forms.NumericUpDown()
+        Me.Panel32 = New System.Windows.Forms.Panel()
+        Me.valu_ranking_splurge = New System.Windows.Forms.NumericUpDown()
         Me.AdvH_splurgerank = New System.Windows.Forms.PictureBox()
         Me.AdvH_pamperedrank = New System.Windows.Forms.PictureBox()
-        Me.valu_ranking_splurge = New System.Windows.Forms.NumericUpDown()
         Me.Title_ranking_splurge = New System.Windows.Forms.Label()
         Me.Icon_ranking_splurge = New System.Windows.Forms.PictureBox()
-        Me.valu_ranking_pampered = New System.Windows.Forms.NumericUpDown()
         Me.Title_ranking_pampered = New System.Windows.Forms.Label()
         Me.Icon_ranking_pampered = New System.Windows.Forms.PictureBox()
         Me.Panel_save_mii = New System.Windows.Forms.Panel()
@@ -1022,7 +1046,6 @@ Partial Class TL_SaveEditor
         Me.Specharac3ds_icon = New System.Windows.Forms.PictureBox()
         Me.Panel_uncheckupdate = New System.Windows.Forms.Panel()
         Me.Icon_uncheckupdate = New System.Windows.Forms.PictureBox()
-        Me.Text_notinteraction = New System.Windows.Forms.TextBox()
         Me.TLSE_header.SuspendLayout
         CType(Me.TLSE_title,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Closebutton,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1054,8 +1077,19 @@ Partial Class TL_SaveEditor
         Me.Menu_button.SuspendLayout
         CType(Me.AdvH_menu,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_islandedit.SuspendLayout
-        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel38.SuspendLayout
         CType(Me.valu_lastdatesave,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Warning_islandaddress,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel36.SuspendLayout
+        CType(Me.valu_islandaddress_p4,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel37.SuspendLayout
+        CType(Me.valu_islandaddress_p3,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel35.SuspendLayout
+        CType(Me.valu_islandaddress_p2,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel34.SuspendLayout
+        CType(Me.valu_islandaddress_p1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_islandname,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_islandnamepronun,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_rankboard,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1224,6 +1258,16 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_savemii,System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabControl1.SuspendLayout
         Me.Tab_mii_edit.SuspendLayout
+        Me.Panel31.SuspendLayout
+        CType(Me.valu_economy,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel28.SuspendLayout
+        CType(Me.valu_miihouse,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel24.SuspendLayout
+        CType(Me.valu_switch_clothes,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel23.SuspendLayout
+        CType(Me.valu_switch_interiors,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel22.SuspendLayout
+        CType(Me.valu_switch_hats,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_edit_haircolor.SuspendLayout
         CType(Me.AdvH_edithaircolor,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_32,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1269,19 +1313,26 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_favcolor,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_relarealtoyou,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_creator,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_miieconomy,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_interior,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_miihouse,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_switchinteriors,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_miieditmusic,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_cathphrase,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_switchclothes,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_inventory,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_switchhats,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_haircolor,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_haircolor,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox34,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_favcolor,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_favcolor,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_miihouse,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_switch_interiors,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_miihouse,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_switch_clothes,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_miiedit_music,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_cathphrase,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_switch_hats,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_inventory,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Mii,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel2.SuspendLayout
@@ -1346,6 +1397,11 @@ Partial Class TL_SaveEditor
         Me.Panel26.SuspendLayout
         Me.Panel13.SuspendLayout
         Me.Tab_mii_status.SuspendLayout
+        Me.Panel_edit_fullness.SuspendLayout
+        CType(Me.Icon_edit_full_100,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_edit_full_50,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_edit_full_25,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_edit_full_00,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_worst,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_fav,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_allfav,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1353,21 +1409,6 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_fullness,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_experience,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_miilevel,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_miieconomy,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_switchinteriors,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_switchclothes,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_switchhats,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_switch_interiors,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_switch_interiors,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_switch_clothes,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_switch_clothes,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_switch_hats,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_switch_hats,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel_edit_fullness.SuspendLayout
-        CType(Me.Icon_edit_full_100,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_edit_full_50,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_edit_full_25,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_edit_full_00,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_chkfullness,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_experience,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_itemmii_8,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1405,6 +1446,7 @@ Partial Class TL_SaveEditor
         CType(Me.valu_target1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel17.SuspendLayout
         CType(Me.valu_interaction,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_target1_foods.SuspendLayout
         CType(Me.valu_itemmii_1,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_itemmii_4,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_itemmii_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1420,8 +1462,6 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_experience,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_level,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_fullness,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox34,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_economy,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_fullness,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_exp,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_allfav_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1430,8 +1470,8 @@ Partial Class TL_SaveEditor
         CType(Me.valu_fav_3,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_worst_2,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_worst_1,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_allfav_1,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_noeat,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_allfav_1,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Tab_mii_friendlist.SuspendLayout
         CType(Me.AdvH_setallrelation,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel18.SuspendLayout
@@ -1653,11 +1693,13 @@ Partial Class TL_SaveEditor
         CType(Me.valu_friend_rela_45,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_friend_rela_44,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Tab_mii_extras.SuspendLayout
+        Me.Panel33.SuspendLayout
+        CType(Me.valu_ranking_pampered,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel32.SuspendLayout
+        CType(Me.valu_ranking_splurge,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_splurgerank,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_pamperedrank,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_ranking_splurge,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_ranking_splurge,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_ranking_pampered,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_ranking_pampered,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_save_mii.SuspendLayout
         Me.Panel_select_mii.SuspendLayout
@@ -1677,16 +1719,16 @@ Partial Class TL_SaveEditor
         Me.TLSE_header.Controls.Add(Me.TLSE_title)
         Me.TLSE_header.Controls.Add(Me.Closebutton)
         Me.TLSE_header.Cursor = System.Windows.Forms.Cursors.NoMove2D
-        Me.TLSE_header.Location = New System.Drawing.Point(63, 0)
+        Me.TLSE_header.Location = New System.Drawing.Point(66, 0)
         Me.TLSE_header.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TLSE_header.Name = "TLSE_header"
-        Me.TLSE_header.Size = New System.Drawing.Size(537, 30)
+        Me.TLSE_header.Size = New System.Drawing.Size(584, 30)
         Me.TLSE_header.TabIndex = 1
         '
         'TLSE_title
         '
         Me.TLSE_title.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.TLSE_title
-        Me.TLSE_title.Location = New System.Drawing.Point(32, 8)
+        Me.TLSE_title.Location = New System.Drawing.Point(49, 8)
         Me.TLSE_title.Name = "TLSE_title"
         Me.TLSE_title.Size = New System.Drawing.Size(435, 15)
         Me.TLSE_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -1698,7 +1740,7 @@ Partial Class TL_SaveEditor
         Me.Closebutton.BackColor = System.Drawing.Color.Transparent
         Me.Closebutton.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Closebutton.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.close
-        Me.Closebutton.Location = New System.Drawing.Point(492, 0)
+        Me.Closebutton.Location = New System.Drawing.Point(538, 0)
         Me.Closebutton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Closebutton.Name = "Closebutton"
         Me.Closebutton.Size = New System.Drawing.Size(45, 30)
@@ -1734,7 +1776,7 @@ Partial Class TL_SaveEditor
         Me.Menu_panel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Menu_panel.Location = New System.Drawing.Point(0, 60)
         Me.Menu_panel.Name = "Menu_panel"
-        Me.Menu_panel.Size = New System.Drawing.Size(34, 490)
+        Me.Menu_panel.Size = New System.Drawing.Size(34, 540)
         Me.Menu_panel.TabIndex = 5
         Me.Menu_panel.Visible = false
         '
@@ -2140,9 +2182,16 @@ Partial Class TL_SaveEditor
         'Panel_islandedit
         '
         Me.Panel_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_islandedit.Controls.Add(Me.Panel38)
+        Me.Panel_islandedit.Controls.Add(Me.Warning_islandaddress)
+        Me.Panel_islandedit.Controls.Add(Me.PictureBox7)
+        Me.Panel_islandedit.Controls.Add(Me.Panel36)
+        Me.Panel_islandedit.Controls.Add(Me.Panel37)
+        Me.Panel_islandedit.Controls.Add(Me.Panel35)
+        Me.Panel_islandedit.Controls.Add(Me.Panel34)
+        Me.Panel_islandedit.Controls.Add(Me.Title_islandaddress)
         Me.Panel_islandedit.Controls.Add(Me.PictureBox3)
         Me.Panel_islandedit.Controls.Add(Me.Title_lastdatesave)
-        Me.Panel_islandedit.Controls.Add(Me.valu_lastdatesave)
         Me.Panel_islandedit.Controls.Add(Me.AdvH_islandname)
         Me.Panel_islandedit.Controls.Add(Me.AdvH_islandnamepronun)
         Me.Panel_islandedit.Controls.Add(Me.AdvH_rankboard)
@@ -2193,15 +2242,151 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Controls.Add(Me.Panel29)
         Me.Panel_islandedit.Location = New System.Drawing.Point(0, 60)
         Me.Panel_islandedit.Name = "Panel_islandedit"
-        Me.Panel_islandedit.Size = New System.Drawing.Size(600, 490)
+        Me.Panel_islandedit.Size = New System.Drawing.Size(650, 540)
         Me.Panel_islandedit.TabIndex = 11
+        '
+        'Panel38
+        '
+        Me.Panel38.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel38.Controls.Add(Me.valu_lastdatesave)
+        Me.Panel38.Location = New System.Drawing.Point(38, 510)
+        Me.Panel38.Name = "Panel38"
+        Me.Panel38.Size = New System.Drawing.Size(124, 20)
+        Me.Panel38.TabIndex = 89
+        '
+        'valu_lastdatesave
+        '
+        Me.valu_lastdatesave.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_lastdatesave.Enabled = false
+        Me.valu_lastdatesave.Hexadecimal = true
+        Me.valu_lastdatesave.Location = New System.Drawing.Point(2, 2)
+        Me.valu_lastdatesave.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
+        Me.valu_lastdatesave.Name = "valu_lastdatesave"
+        Me.valu_lastdatesave.ReadOnly = true
+        Me.valu_lastdatesave.Size = New System.Drawing.Size(120, 16)
+        Me.valu_lastdatesave.TabIndex = 79
+        Me.valu_lastdatesave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_lastdatesave.ThousandsSeparator = true
+        '
+        'Warning_islandaddress
+        '
+        Me.Warning_islandaddress.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_islandaddress.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_islandaddress.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_danger
+        Me.Warning_islandaddress.Location = New System.Drawing.Point(321, 500)
+        Me.Warning_islandaddress.Name = "Warning_islandaddress"
+        Me.Warning_islandaddress.Size = New System.Drawing.Size(14, 12)
+        Me.Warning_islandaddress.TabIndex = 88
+        Me.Warning_islandaddress.TabStop = false
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox7.Location = New System.Drawing.Point(618, 499)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox7.TabIndex = 87
+        Me.PictureBox7.TabStop = false
+        Me.PictureBox7.Visible = false
+        '
+        'Panel36
+        '
+        Me.Panel36.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel36.Controls.Add(Me.valu_islandaddress_p4)
+        Me.Panel36.Location = New System.Drawing.Point(561, 479)
+        Me.Panel36.Name = "Panel36"
+        Me.Panel36.Size = New System.Drawing.Size(80, 20)
+        Me.Panel36.TabIndex = 86
+        '
+        'valu_islandaddress_p4
+        '
+        Me.valu_islandaddress_p4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_islandaddress_p4.Hexadecimal = true
+        Me.valu_islandaddress_p4.Location = New System.Drawing.Point(2, 2)
+        Me.valu_islandaddress_p4.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
+        Me.valu_islandaddress_p4.Name = "valu_islandaddress_p4"
+        Me.valu_islandaddress_p4.Size = New System.Drawing.Size(76, 16)
+        Me.valu_islandaddress_p4.TabIndex = 1
+        Me.valu_islandaddress_p4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel37
+        '
+        Me.Panel37.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel37.Controls.Add(Me.valu_islandaddress_p3)
+        Me.Panel37.Location = New System.Drawing.Point(481, 479)
+        Me.Panel37.Name = "Panel37"
+        Me.Panel37.Size = New System.Drawing.Size(80, 20)
+        Me.Panel37.TabIndex = 85
+        '
+        'valu_islandaddress_p3
+        '
+        Me.valu_islandaddress_p3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_islandaddress_p3.Hexadecimal = true
+        Me.valu_islandaddress_p3.Location = New System.Drawing.Point(2, 2)
+        Me.valu_islandaddress_p3.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
+        Me.valu_islandaddress_p3.Name = "valu_islandaddress_p3"
+        Me.valu_islandaddress_p3.Size = New System.Drawing.Size(76, 16)
+        Me.valu_islandaddress_p3.TabIndex = 1
+        Me.valu_islandaddress_p3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel35
+        '
+        Me.Panel35.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel35.Controls.Add(Me.valu_islandaddress_p2)
+        Me.Panel35.Location = New System.Drawing.Point(401, 479)
+        Me.Panel35.Name = "Panel35"
+        Me.Panel35.Size = New System.Drawing.Size(80, 20)
+        Me.Panel35.TabIndex = 84
+        '
+        'valu_islandaddress_p2
+        '
+        Me.valu_islandaddress_p2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_islandaddress_p2.Hexadecimal = true
+        Me.valu_islandaddress_p2.Location = New System.Drawing.Point(2, 2)
+        Me.valu_islandaddress_p2.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
+        Me.valu_islandaddress_p2.Name = "valu_islandaddress_p2"
+        Me.valu_islandaddress_p2.Size = New System.Drawing.Size(76, 16)
+        Me.valu_islandaddress_p2.TabIndex = 1
+        Me.valu_islandaddress_p2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel34
+        '
+        Me.Panel34.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel34.Controls.Add(Me.valu_islandaddress_p1)
+        Me.Panel34.Location = New System.Drawing.Point(321, 479)
+        Me.Panel34.Name = "Panel34"
+        Me.Panel34.Size = New System.Drawing.Size(80, 20)
+        Me.Panel34.TabIndex = 83
+        '
+        'valu_islandaddress_p1
+        '
+        Me.valu_islandaddress_p1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_islandaddress_p1.Hexadecimal = true
+        Me.valu_islandaddress_p1.Location = New System.Drawing.Point(2, 2)
+        Me.valu_islandaddress_p1.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
+        Me.valu_islandaddress_p1.Name = "valu_islandaddress_p1"
+        Me.valu_islandaddress_p1.Size = New System.Drawing.Size(76, 16)
+        Me.valu_islandaddress_p1.TabIndex = 1
+        Me.valu_islandaddress_p1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Title_islandaddress
+        '
+        Me.Title_islandaddress.BackColor = System.Drawing.Color.Transparent
+        Me.Title_islandaddress.Location = New System.Drawing.Point(321, 464)
+        Me.Title_islandaddress.Name = "Title_islandaddress"
+        Me.Title_islandaddress.Size = New System.Drawing.Size(320, 13)
+        Me.Title_islandaddress.TabIndex = 82
+        Me.Title_islandaddress.Text = "Island's address"
+        Me.Title_islandaddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.PictureBox3.Location = New System.Drawing.Point(573, 459)
+        Me.PictureBox3.Location = New System.Drawing.Point(164, 508)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox3.TabIndex = 81
@@ -2211,33 +2396,19 @@ Partial Class TL_SaveEditor
         'Title_lastdatesave
         '
         Me.Title_lastdatesave.BackColor = System.Drawing.Color.Transparent
-        Me.Title_lastdatesave.Location = New System.Drawing.Point(429, 448)
+        Me.Title_lastdatesave.Location = New System.Drawing.Point(20, 497)
         Me.Title_lastdatesave.Name = "Title_lastdatesave"
         Me.Title_lastdatesave.Size = New System.Drawing.Size(156, 13)
         Me.Title_lastdatesave.TabIndex = 80
         Me.Title_lastdatesave.Text = "Last save date"
         Me.Title_lastdatesave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'valu_lastdatesave
-        '
-        Me.valu_lastdatesave.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_lastdatesave.Enabled = false
-        Me.valu_lastdatesave.Hexadecimal = true
-        Me.valu_lastdatesave.Location = New System.Drawing.Point(448, 464)
-        Me.valu_lastdatesave.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
-        Me.valu_lastdatesave.Name = "valu_lastdatesave"
-        Me.valu_lastdatesave.ReadOnly = true
-        Me.valu_lastdatesave.Size = New System.Drawing.Size(120, 16)
-        Me.valu_lastdatesave.TabIndex = 79
-        Me.valu_lastdatesave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_lastdatesave.ThousandsSeparator = true
-        '
         'AdvH_islandname
         '
         Me.AdvH_islandname.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_islandname.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_islandname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_islandname.Location = New System.Drawing.Point(4, 22)
+        Me.AdvH_islandname.Location = New System.Drawing.Point(10, 26)
         Me.AdvH_islandname.Name = "AdvH_islandname"
         Me.AdvH_islandname.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_islandname.TabIndex = 78
@@ -2249,7 +2420,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_islandnamepronun.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_islandnamepronun.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_islandnamepronun.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_islandnamepronun.Location = New System.Drawing.Point(206, 65)
+        Me.AdvH_islandnamepronun.Location = New System.Drawing.Point(212, 69)
         Me.AdvH_islandnamepronun.Name = "AdvH_islandnamepronun"
         Me.AdvH_islandnamepronun.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_islandnamepronun.TabIndex = 77
@@ -2261,7 +2432,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_rankboard.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_rankboard.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_rankboard.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_rankboard.Location = New System.Drawing.Point(245, 459)
+        Me.AdvH_rankboard.Location = New System.Drawing.Point(251, 463)
         Me.AdvH_rankboard.Name = "AdvH_rankboard"
         Me.AdvH_rankboard.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_rankboard.TabIndex = 76
@@ -2273,7 +2444,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_eventfountain.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_eventfountain.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_eventfountain.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_eventfountain.Location = New System.Drawing.Point(359, 335)
+        Me.AdvH_eventfountain.Location = New System.Drawing.Point(405, 342)
         Me.AdvH_eventfountain.Name = "AdvH_eventfountain"
         Me.AdvH_eventfountain.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_eventfountain.TabIndex = 75
@@ -2285,7 +2456,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_money.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_money.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_money.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_money.Location = New System.Drawing.Point(400, 227)
+        Me.AdvH_money.Location = New System.Drawing.Point(446, 234)
         Me.AdvH_money.Name = "AdvH_money"
         Me.AdvH_money.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_money.TabIndex = 74
@@ -2297,7 +2468,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_islandbuild.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_islandbuild.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_islandbuild.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_islandbuild.Location = New System.Drawing.Point(573, 182)
+        Me.AdvH_islandbuild.Location = New System.Drawing.Point(619, 189)
         Me.AdvH_islandbuild.Name = "AdvH_islandbuild"
         Me.AdvH_islandbuild.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_islandbuild.TabIndex = 73
@@ -2309,7 +2480,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_apartrenov.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_apartrenov.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_apartrenov.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_apartrenov.Location = New System.Drawing.Point(528, 362)
+        Me.AdvH_apartrenov.Location = New System.Drawing.Point(574, 369)
         Me.AdvH_apartrenov.Name = "AdvH_apartrenov"
         Me.AdvH_apartrenov.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_apartrenov.TabIndex = 72
@@ -2321,7 +2492,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_travelerssent.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_travelerssent.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_travelerssent.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_travelerssent.Location = New System.Drawing.Point(185, 311)
+        Me.AdvH_travelerssent.Location = New System.Drawing.Point(191, 315)
         Me.AdvH_travelerssent.Name = "AdvH_travelerssent"
         Me.AdvH_travelerssent.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_travelerssent.TabIndex = 71
@@ -2333,7 +2504,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_travelersreceived.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_travelersreceived.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_travelersreceived.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_travelersreceived.Location = New System.Drawing.Point(184, 265)
+        Me.AdvH_travelersreceived.Location = New System.Drawing.Point(190, 269)
         Me.AdvH_travelersreceived.Name = "AdvH_travelersreceived"
         Me.AdvH_travelersreceived.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_travelersreceived.TabIndex = 70
@@ -2345,7 +2516,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_childborn.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_childborn.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_childborn.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_childborn.Location = New System.Drawing.Point(173, 219)
+        Me.AdvH_childborn.Location = New System.Drawing.Point(179, 223)
         Me.AdvH_childborn.Name = "AdvH_childborn"
         Me.AdvH_childborn.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_childborn.TabIndex = 69
@@ -2357,7 +2528,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_weddings.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_weddings.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_weddings.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_weddings.Location = New System.Drawing.Point(176, 172)
+        Me.AdvH_weddings.Location = New System.Drawing.Point(182, 176)
         Me.AdvH_weddings.Name = "AdvH_weddings"
         Me.AdvH_weddings.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_weddings.TabIndex = 68
@@ -2369,7 +2540,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_streetencounters.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_streetencounters.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_streetencounters.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_streetencounters.Location = New System.Drawing.Point(177, 128)
+        Me.AdvH_streetencounters.Location = New System.Drawing.Point(183, 132)
         Me.AdvH_streetencounters.Name = "AdvH_streetencounters"
         Me.AdvH_streetencounters.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_streetencounters.TabIndex = 67
@@ -2381,7 +2552,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_problemssolved.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_problemssolved.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_problemssolved.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_problemssolved.Location = New System.Drawing.Point(172, 80)
+        Me.AdvH_problemssolved.Location = New System.Drawing.Point(178, 84)
         Me.AdvH_problemssolved.Name = "AdvH_problemssolved"
         Me.AdvH_problemssolved.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_problemssolved.TabIndex = 66
@@ -2413,7 +2584,7 @@ Partial Class TL_SaveEditor
         Me.Panel12.Controls.Add(Me.Icon_rank_boycharm)
         Me.Panel12.Controls.Add(Me.Icon_rank_popularity)
         Me.Panel12.Controls.Add(Me.Icon_rank_vitality)
-        Me.Panel12.Location = New System.Drawing.Point(4, 346)
+        Me.Panel12.Location = New System.Drawing.Point(10, 350)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(239, 135)
         Me.Panel12.TabIndex = 65
@@ -2642,7 +2813,7 @@ Partial Class TL_SaveEditor
         'value_eventfountain
         '
         Me.value_eventfountain.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.value_eventfountain.Location = New System.Drawing.Point(295, 358)
+        Me.value_eventfountain.Location = New System.Drawing.Point(341, 365)
         Me.value_eventfountain.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.value_eventfountain.Name = "value_eventfountain"
         Me.value_eventfountain.Size = New System.Drawing.Size(81, 16)
@@ -2655,7 +2826,7 @@ Partial Class TL_SaveEditor
         Me.Icon_eventfountain.BackColor = System.Drawing.Color.Transparent
         Me.Icon_eventfountain.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_eventfountain.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.event_fountain
-        Me.Icon_eventfountain.Location = New System.Drawing.Point(312, 317)
+        Me.Icon_eventfountain.Location = New System.Drawing.Point(358, 324)
         Me.Icon_eventfountain.Name = "Icon_eventfountain"
         Me.Icon_eventfountain.Size = New System.Drawing.Size(44, 57)
         Me.Icon_eventfountain.TabIndex = 63
@@ -2664,7 +2835,7 @@ Partial Class TL_SaveEditor
         'Title_eventfountain
         '
         Me.Title_eventfountain.BackColor = System.Drawing.Color.Transparent
-        Me.Title_eventfountain.Location = New System.Drawing.Point(256, 301)
+        Me.Title_eventfountain.Location = New System.Drawing.Point(302, 308)
         Me.Title_eventfountain.Name = "Title_eventfountain"
         Me.Title_eventfountain.Size = New System.Drawing.Size(156, 13)
         Me.Title_eventfountain.TabIndex = 62
@@ -2676,7 +2847,7 @@ Partial Class TL_SaveEditor
         Me.Icon_info_building.BackColor = System.Drawing.Color.Transparent
         Me.Icon_info_building.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Icon_info_building.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.info_islandbuilding
-        Me.Icon_info_building.Location = New System.Drawing.Point(514, 161)
+        Me.Icon_info_building.Location = New System.Drawing.Point(560, 168)
         Me.Icon_info_building.Name = "Icon_info_building"
         Me.Icon_info_building.Size = New System.Drawing.Size(58, 62)
         Me.Icon_info_building.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2687,7 +2858,7 @@ Partial Class TL_SaveEditor
         'value_appartrenov
         '
         Me.value_appartrenov.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.value_appartrenov.Location = New System.Drawing.Point(464, 387)
+        Me.value_appartrenov.Location = New System.Drawing.Point(510, 394)
         Me.value_appartrenov.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.value_appartrenov.Name = "value_appartrenov"
         Me.value_appartrenov.Size = New System.Drawing.Size(58, 16)
@@ -2700,7 +2871,7 @@ Partial Class TL_SaveEditor
         Me.Icon_appartrenov.BackColor = System.Drawing.Color.Transparent
         Me.Icon_appartrenov.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_appartrenov.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_appart_00
-        Me.Icon_appartrenov.Location = New System.Drawing.Point(464, 315)
+        Me.Icon_appartrenov.Location = New System.Drawing.Point(510, 322)
         Me.Icon_appartrenov.Name = "Icon_appartrenov"
         Me.Icon_appartrenov.Size = New System.Drawing.Size(58, 88)
         Me.Icon_appartrenov.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -2710,7 +2881,7 @@ Partial Class TL_SaveEditor
         'Title_appartrenov
         '
         Me.Title_appartrenov.BackColor = System.Drawing.Color.Transparent
-        Me.Title_appartrenov.Location = New System.Drawing.Point(415, 301)
+        Me.Title_appartrenov.Location = New System.Drawing.Point(461, 308)
         Me.Title_appartrenov.Name = "Title_appartrenov"
         Me.Title_appartrenov.Size = New System.Drawing.Size(156, 13)
         Me.Title_appartrenov.TabIndex = 61
@@ -2722,7 +2893,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_pronun_island.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_edit_pronun_island.Controls.Add(Me.Icon_islandn_pronun_val)
         Me.Panel_edit_pronun_island.Controls.Add(Me.Text_pronun_island)
-        Me.Panel_edit_pronun_island.Location = New System.Drawing.Point(47, 47)
+        Me.Panel_edit_pronun_island.Location = New System.Drawing.Point(53, 51)
         Me.Panel_edit_pronun_island.Name = "Panel_edit_pronun_island"
         Me.Panel_edit_pronun_island.Size = New System.Drawing.Size(181, 17)
         Me.Panel_edit_pronun_island.TabIndex = 58
@@ -2753,7 +2924,7 @@ Partial Class TL_SaveEditor
         'Title_travelerssent
         '
         Me.Title_travelerssent.BackColor = System.Drawing.Color.Transparent
-        Me.Title_travelerssent.Location = New System.Drawing.Point(49, 298)
+        Me.Title_travelerssent.Location = New System.Drawing.Point(55, 302)
         Me.Title_travelerssent.Name = "Title_travelerssent"
         Me.Title_travelerssent.Size = New System.Drawing.Size(156, 13)
         Me.Title_travelerssent.TabIndex = 57
@@ -2765,7 +2936,7 @@ Partial Class TL_SaveEditor
         Me.Icon_travelerssent.BackColor = System.Drawing.Color.Transparent
         Me.Icon_travelerssent.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_travelerssent.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Travelers_sent
-        Me.Icon_travelerssent.Location = New System.Drawing.Point(75, 312)
+        Me.Icon_travelerssent.Location = New System.Drawing.Point(81, 316)
         Me.Icon_travelerssent.Name = "Icon_travelerssent"
         Me.Icon_travelerssent.Size = New System.Drawing.Size(41, 20)
         Me.Icon_travelerssent.TabIndex = 3
@@ -2775,7 +2946,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_travelerssent.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_travelerssent.Controls.Add(Me.value_travelerssent)
-        Me.Panel_travelerssent.Location = New System.Drawing.Point(117, 312)
+        Me.Panel_travelerssent.Location = New System.Drawing.Point(123, 316)
         Me.Panel_travelerssent.Name = "Panel_travelerssent"
         Me.Panel_travelerssent.Size = New System.Drawing.Size(64, 20)
         Me.Panel_travelerssent.TabIndex = 56
@@ -2795,7 +2966,7 @@ Partial Class TL_SaveEditor
         Me.Icon_travelersreceived.BackColor = System.Drawing.Color.Transparent
         Me.Icon_travelersreceived.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_travelersreceived.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Travelers_received
-        Me.Icon_travelersreceived.Location = New System.Drawing.Point(74, 266)
+        Me.Icon_travelersreceived.Location = New System.Drawing.Point(80, 270)
         Me.Icon_travelersreceived.Name = "Icon_travelersreceived"
         Me.Icon_travelersreceived.Size = New System.Drawing.Size(41, 20)
         Me.Icon_travelersreceived.TabIndex = 2
@@ -2805,7 +2976,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_travelersreceived.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_travelersreceived.Controls.Add(Me.value_travelersreceived)
-        Me.Panel_travelersreceived.Location = New System.Drawing.Point(116, 266)
+        Me.Panel_travelersreceived.Location = New System.Drawing.Point(122, 270)
         Me.Panel_travelersreceived.Name = "Panel_travelersreceived"
         Me.Panel_travelersreceived.Size = New System.Drawing.Size(64, 20)
         Me.Panel_travelersreceived.TabIndex = 55
@@ -2823,7 +2994,7 @@ Partial Class TL_SaveEditor
         'Title_travelersreceived
         '
         Me.Title_travelersreceived.BackColor = System.Drawing.Color.Transparent
-        Me.Title_travelersreceived.Location = New System.Drawing.Point(49, 252)
+        Me.Title_travelersreceived.Location = New System.Drawing.Point(55, 256)
         Me.Title_travelersreceived.Name = "Title_travelersreceived"
         Me.Title_travelersreceived.Size = New System.Drawing.Size(156, 13)
         Me.Title_travelersreceived.TabIndex = 54
@@ -2833,7 +3004,7 @@ Partial Class TL_SaveEditor
         'Title_childrenborn
         '
         Me.Title_childrenborn.BackColor = System.Drawing.Color.Transparent
-        Me.Title_childrenborn.Location = New System.Drawing.Point(49, 206)
+        Me.Title_childrenborn.Location = New System.Drawing.Point(55, 210)
         Me.Title_childrenborn.Name = "Title_childrenborn"
         Me.Title_childrenborn.Size = New System.Drawing.Size(156, 13)
         Me.Title_childrenborn.TabIndex = 53
@@ -2844,7 +3015,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_childrenborn.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_childrenborn.Controls.Add(Me.value_childrenborn)
-        Me.Panel_childrenborn.Location = New System.Drawing.Point(105, 220)
+        Me.Panel_childrenborn.Location = New System.Drawing.Point(111, 224)
         Me.Panel_childrenborn.Name = "Panel_childrenborn"
         Me.Panel_childrenborn.Size = New System.Drawing.Size(64, 20)
         Me.Panel_childrenborn.TabIndex = 52
@@ -2862,7 +3033,7 @@ Partial Class TL_SaveEditor
         'Title_weddings
         '
         Me.Title_weddings.BackColor = System.Drawing.Color.Transparent
-        Me.Title_weddings.Location = New System.Drawing.Point(49, 160)
+        Me.Title_weddings.Location = New System.Drawing.Point(55, 164)
         Me.Title_weddings.Name = "Title_weddings"
         Me.Title_weddings.Size = New System.Drawing.Size(156, 13)
         Me.Title_weddings.TabIndex = 51
@@ -2874,7 +3045,7 @@ Partial Class TL_SaveEditor
         Me.Icon_childrenborn.BackColor = System.Drawing.Color.Transparent
         Me.Icon_childrenborn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_childrenborn.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_childrenborn
-        Me.Icon_childrenborn.Location = New System.Drawing.Point(84, 220)
+        Me.Icon_childrenborn.Location = New System.Drawing.Point(90, 224)
         Me.Icon_childrenborn.Name = "Icon_childrenborn"
         Me.Icon_childrenborn.Size = New System.Drawing.Size(20, 20)
         Me.Icon_childrenborn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -2886,7 +3057,7 @@ Partial Class TL_SaveEditor
         Me.Icon_weddings.BackColor = System.Drawing.Color.Transparent
         Me.Icon_weddings.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_weddings.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_wedding
-        Me.Icon_weddings.Location = New System.Drawing.Point(81, 174)
+        Me.Icon_weddings.Location = New System.Drawing.Point(87, 178)
         Me.Icon_weddings.Name = "Icon_weddings"
         Me.Icon_weddings.Size = New System.Drawing.Size(26, 20)
         Me.Icon_weddings.TabIndex = 3
@@ -2896,7 +3067,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_weddings.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_weddings.Controls.Add(Me.value_weddings)
-        Me.Panel_weddings.Location = New System.Drawing.Point(108, 174)
+        Me.Panel_weddings.Location = New System.Drawing.Point(114, 178)
         Me.Panel_weddings.Name = "Panel_weddings"
         Me.Panel_weddings.Size = New System.Drawing.Size(64, 20)
         Me.Panel_weddings.TabIndex = 50
@@ -2918,7 +3089,7 @@ Partial Class TL_SaveEditor
         Me.Info_islandbuild.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_islandbuild.Font = New System.Drawing.Font("Harlow Solid Italic", 12!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic),System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Info_islandbuild.ForeColor = System.Drawing.Color.Blue
-        Me.Info_islandbuild.Location = New System.Drawing.Point(575, 201)
+        Me.Info_islandbuild.Location = New System.Drawing.Point(621, 208)
         Me.Info_islandbuild.Name = "Info_islandbuild"
         Me.Info_islandbuild.Size = New System.Drawing.Size(14, 20)
         Me.Info_islandbuild.TabIndex = 49
@@ -2927,7 +3098,7 @@ Partial Class TL_SaveEditor
         'Title_streetpassencounters
         '
         Me.Title_streetpassencounters.BackColor = System.Drawing.Color.Transparent
-        Me.Title_streetpassencounters.Location = New System.Drawing.Point(49, 114)
+        Me.Title_streetpassencounters.Location = New System.Drawing.Point(55, 118)
         Me.Title_streetpassencounters.Name = "Title_streetpassencounters"
         Me.Title_streetpassencounters.Size = New System.Drawing.Size(156, 13)
         Me.Title_streetpassencounters.TabIndex = 48
@@ -2939,7 +3110,7 @@ Partial Class TL_SaveEditor
         Me.Icon_streetpassencounters.BackColor = System.Drawing.Color.Transparent
         Me.Icon_streetpassencounters.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_streetpassencounters.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_streetpass_encounters
-        Me.Icon_streetpassencounters.Location = New System.Drawing.Point(77, 128)
+        Me.Icon_streetpassencounters.Location = New System.Drawing.Point(83, 132)
         Me.Icon_streetpassencounters.Name = "Icon_streetpassencounters"
         Me.Icon_streetpassencounters.Size = New System.Drawing.Size(31, 20)
         Me.Icon_streetpassencounters.TabIndex = 2
@@ -2949,7 +3120,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_streetpassencounters.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_streetpassencounters.Controls.Add(Me.value_streetpassencounters)
-        Me.Panel_streetpassencounters.Location = New System.Drawing.Point(109, 128)
+        Me.Panel_streetpassencounters.Location = New System.Drawing.Point(115, 132)
         Me.Panel_streetpassencounters.Name = "Panel_streetpassencounters"
         Me.Panel_streetpassencounters.Size = New System.Drawing.Size(64, 20)
         Me.Panel_streetpassencounters.TabIndex = 47
@@ -2970,7 +3141,7 @@ Partial Class TL_SaveEditor
         Me.Panel_money.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_money
         Me.Panel_money.Controls.Add(Me.value_money)
         Me.Panel_money.Controls.Add(Me.Icon_money)
-        Me.Panel_money.Location = New System.Drawing.Point(242, 225)
+        Me.Panel_money.Location = New System.Drawing.Point(288, 232)
         Me.Panel_money.Name = "Panel_money"
         Me.Panel_money.Size = New System.Drawing.Size(156, 24)
         Me.Panel_money.TabIndex = 46
@@ -3000,7 +3171,7 @@ Partial Class TL_SaveEditor
         'Title_problemsolved
         '
         Me.Title_problemsolved.BackColor = System.Drawing.Color.Transparent
-        Me.Title_problemsolved.Location = New System.Drawing.Point(49, 68)
+        Me.Title_problemsolved.Location = New System.Drawing.Point(55, 72)
         Me.Title_problemsolved.Name = "Title_problemsolved"
         Me.Title_problemsolved.Size = New System.Drawing.Size(156, 13)
         Me.Title_problemsolved.TabIndex = 45
@@ -3011,7 +3182,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_problemsolved.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_problemsolved.Controls.Add(Me.value_problemsolved)
-        Me.Panel_problemsolved.Location = New System.Drawing.Point(104, 82)
+        Me.Panel_problemsolved.Location = New System.Drawing.Point(110, 86)
         Me.Panel_problemsolved.Name = "Panel_problemsolved"
         Me.Panel_problemsolved.Size = New System.Drawing.Size(64, 20)
         Me.Panel_problemsolved.TabIndex = 44
@@ -3031,7 +3202,7 @@ Partial Class TL_SaveEditor
         Me.Icon_problemsolved.BackColor = System.Drawing.Color.Transparent
         Me.Icon_problemsolved.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_problemsolved.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_problems_solved
-        Me.Icon_problemsolved.Location = New System.Drawing.Point(83, 82)
+        Me.Icon_problemsolved.Location = New System.Drawing.Point(89, 86)
         Me.Icon_problemsolved.Name = "Icon_problemsolved"
         Me.Icon_problemsolved.Size = New System.Drawing.Size(20, 20)
         Me.Icon_problemsolved.TabIndex = 1
@@ -3040,7 +3211,7 @@ Partial Class TL_SaveEditor
         'Title_islandname
         '
         Me.Title_islandname.BackColor = System.Drawing.Color.Transparent
-        Me.Title_islandname.Location = New System.Drawing.Point(49, 12)
+        Me.Title_islandname.Location = New System.Drawing.Point(55, 16)
         Me.Title_islandname.Name = "Title_islandname"
         Me.Title_islandname.Size = New System.Drawing.Size(156, 13)
         Me.Title_islandname.TabIndex = 43
@@ -3051,7 +3222,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_islandname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_islandname.Controls.Add(Me.Text_islandname)
-        Me.Panel_islandname.Location = New System.Drawing.Point(47, 26)
+        Me.Panel_islandname.Location = New System.Drawing.Point(53, 30)
         Me.Panel_islandname.Name = "Panel_islandname"
         Me.Panel_islandname.Size = New System.Drawing.Size(160, 17)
         Me.Panel_islandname.TabIndex = 42
@@ -3071,7 +3242,7 @@ Partial Class TL_SaveEditor
         Me.Text_pronun_islandname.AutoSize = true
         Me.Text_pronun_islandname.BackColor = System.Drawing.Color.White
         Me.Text_pronun_islandname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Text_pronun_islandname.Location = New System.Drawing.Point(49, 48)
+        Me.Text_pronun_islandname.Location = New System.Drawing.Point(55, 52)
         Me.Text_pronun_islandname.Name = "Text_pronun_islandname"
         Me.Text_pronun_islandname.Size = New System.Drawing.Size(2, 15)
         Me.Text_pronun_islandname.TabIndex = 27
@@ -3082,7 +3253,7 @@ Partial Class TL_SaveEditor
         Me.Icon_pronun_islandname.BackColor = System.Drawing.Color.Transparent
         Me.Icon_pronun_islandname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_pronun_islandname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_pronunciation
-        Me.Icon_pronun_islandname.Location = New System.Drawing.Point(207, 23)
+        Me.Icon_pronun_islandname.Location = New System.Drawing.Point(213, 27)
         Me.Icon_pronun_islandname.Name = "Icon_pronun_islandname"
         Me.Icon_pronun_islandname.Size = New System.Drawing.Size(22, 22)
         Me.Icon_pronun_islandname.TabIndex = 24
@@ -3092,7 +3263,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_islandname.BackColor = System.Drawing.Color.Transparent
         Me.Icon_islandname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_island
-        Me.Icon_islandname.Location = New System.Drawing.Point(28, 24)
+        Me.Icon_islandname.Location = New System.Drawing.Point(34, 28)
         Me.Icon_islandname.Name = "Icon_islandname"
         Me.Icon_islandname.Size = New System.Drawing.Size(18, 20)
         Me.Icon_islandname.TabIndex = 25
@@ -3149,7 +3320,7 @@ Partial Class TL_SaveEditor
         Me.Panel29.Controls.Add(Me.Icon_cafe)
         Me.Panel29.Controls.Add(Me.Icon_broc)
         Me.Panel29.Controls.Add(Me.Icon_appart)
-        Me.Panel29.Location = New System.Drawing.Point(242, 9)
+        Me.Panel29.Location = New System.Drawing.Point(288, 16)
         Me.Panel29.Name = "Panel29"
         Me.Panel29.Size = New System.Drawing.Size(330, 214)
         Me.Panel29.TabIndex = 40
@@ -3642,7 +3813,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_resetmiiapart.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetmiiapart.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_apartmii
-        Me.Icon_resetmiiapart.Location = New System.Drawing.Point(15, 173)
+        Me.Icon_resetmiiapart.Location = New System.Drawing.Point(39, 241)
         Me.Icon_resetmiiapart.Name = "Icon_resetmiiapart"
         Me.Icon_resetmiiapart.Size = New System.Drawing.Size(75, 25)
         Me.Icon_resetmiiapart.TabIndex = 65
@@ -3850,7 +4021,7 @@ Partial Class TL_SaveEditor
         Me.Panel_extras.Controls.Add(Me.Icon_timetravel)
         Me.Panel_extras.Location = New System.Drawing.Point(0, 60)
         Me.Panel_extras.Name = "Panel_extras"
-        Me.Panel_extras.Size = New System.Drawing.Size(600, 490)
+        Me.Panel_extras.Size = New System.Drawing.Size(650, 540)
         Me.Panel_extras.TabIndex = 24
         Me.Panel_extras.Visible = false
         '
@@ -3859,7 +4030,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_concertedit.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_concertedit.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_concertedit.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_concertedit.Location = New System.Drawing.Point(575, 196)
+        Me.AdvH_concertedit.Location = New System.Drawing.Point(599, 264)
         Me.AdvH_concertedit.Name = "AdvH_concertedit"
         Me.AdvH_concertedit.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_concertedit.TabIndex = 80
@@ -3871,7 +4042,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_travelersedit.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_travelersedit.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_travelersedit.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_travelersedit.Location = New System.Drawing.Point(536, 91)
+        Me.AdvH_travelersedit.Location = New System.Drawing.Point(560, 159)
         Me.AdvH_travelersedit.Name = "AdvH_travelersedit"
         Me.AdvH_travelersedit.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_travelersedit.TabIndex = 79
@@ -3883,7 +4054,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_resetmiirela.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_resetmiirela.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_resetmiirela.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetmiirela.Location = New System.Drawing.Point(252, 322)
+        Me.AdvH_resetmiirela.Location = New System.Drawing.Point(276, 390)
         Me.AdvH_resetmiirela.Name = "AdvH_resetmiirela"
         Me.AdvH_resetmiirela.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_resetmiirela.TabIndex = 78
@@ -3895,7 +4066,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_resetitems.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_resetitems.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_resetitems.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetitems.Location = New System.Drawing.Point(186, 273)
+        Me.AdvH_resetitems.Location = New System.Drawing.Point(210, 341)
         Me.AdvH_resetitems.Name = "AdvH_resetitems"
         Me.AdvH_resetitems.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_resetitems.TabIndex = 77
@@ -3907,7 +4078,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_resetnewsflash.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_resetnewsflash.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_resetnewsflash.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetnewsflash.Location = New System.Drawing.Point(202, 224)
+        Me.AdvH_resetnewsflash.Location = New System.Drawing.Point(226, 292)
         Me.AdvH_resetnewsflash.Name = "AdvH_resetnewsflash"
         Me.AdvH_resetnewsflash.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_resetnewsflash.TabIndex = 76
@@ -3919,7 +4090,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_resetmiiapart.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_resetmiiapart.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_resetmiiapart.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetmiiapart.Location = New System.Drawing.Point(217, 175)
+        Me.AdvH_resetmiiapart.Location = New System.Drawing.Point(241, 243)
         Me.AdvH_resetmiiapart.Name = "AdvH_resetmiiapart"
         Me.AdvH_resetmiiapart.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_resetmiiapart.TabIndex = 75
@@ -3931,7 +4102,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_resetstpspp.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_resetstpspp.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_resetstpspp.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetstpspp.Location = New System.Drawing.Point(330, 126)
+        Me.AdvH_resetstpspp.Location = New System.Drawing.Point(354, 194)
         Me.AdvH_resetstpspp.Name = "AdvH_resetstpspp"
         Me.AdvH_resetstpspp.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_resetstpspp.TabIndex = 74
@@ -3943,7 +4114,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_timetravel.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_timetravel.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_timetravel.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_timetravel.Location = New System.Drawing.Point(256, 77)
+        Me.AdvH_timetravel.Location = New System.Drawing.Point(280, 145)
         Me.AdvH_timetravel.Name = "AdvH_timetravel"
         Me.AdvH_timetravel.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_timetravel.TabIndex = 73
@@ -3961,7 +4132,7 @@ Partial Class TL_SaveEditor
         Me.Check_resetrelationship.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetrelationship.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetrelationship.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetrelationship.Location = New System.Drawing.Point(96, 321)
+        Me.Check_resetrelationship.Location = New System.Drawing.Point(120, 389)
         Me.Check_resetrelationship.Name = "Check_resetrelationship"
         Me.Check_resetrelationship.Size = New System.Drawing.Size(150, 23)
         Me.Check_resetrelationship.TabIndex = 72
@@ -3972,7 +4143,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_resetrelationship.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetrelationship.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_relationship
-        Me.Icon_resetrelationship.Location = New System.Drawing.Point(50, 312)
+        Me.Icon_resetrelationship.Location = New System.Drawing.Point(74, 380)
         Me.Icon_resetrelationship.Name = "Icon_resetrelationship"
         Me.Icon_resetrelationship.Size = New System.Drawing.Size(40, 40)
         Me.Icon_resetrelationship.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -3990,7 +4161,7 @@ Partial Class TL_SaveEditor
         Me.Check_resetitems.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetitems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetitems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetitems.Location = New System.Drawing.Point(95, 272)
+        Me.Check_resetitems.Location = New System.Drawing.Point(119, 340)
         Me.Check_resetitems.Name = "Check_resetitems"
         Me.Check_resetitems.Size = New System.Drawing.Size(85, 23)
         Me.Check_resetitems.TabIndex = 70
@@ -4001,7 +4172,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_resetitems.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetitems.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_items
-        Me.Icon_resetitems.Location = New System.Drawing.Point(49, 263)
+        Me.Icon_resetitems.Location = New System.Drawing.Point(73, 331)
         Me.Icon_resetitems.Name = "Icon_resetitems"
         Me.Icon_resetitems.Size = New System.Drawing.Size(40, 40)
         Me.Icon_resetitems.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -4019,7 +4190,7 @@ Partial Class TL_SaveEditor
         Me.Check_resetnewsflash.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetnewsflash.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetnewsflash.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetnewsflash.Location = New System.Drawing.Point(95, 223)
+        Me.Check_resetnewsflash.Location = New System.Drawing.Point(119, 291)
         Me.Check_resetnewsflash.Name = "Check_resetnewsflash"
         Me.Check_resetnewsflash.Size = New System.Drawing.Size(103, 23)
         Me.Check_resetnewsflash.TabIndex = 68
@@ -4030,7 +4201,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_resetnewsflash.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetnewsflash.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_newsflash
-        Me.Icon_resetnewsflash.Location = New System.Drawing.Point(4, 222)
+        Me.Icon_resetnewsflash.Location = New System.Drawing.Point(28, 290)
         Me.Icon_resetnewsflash.Name = "Icon_resetnewsflash"
         Me.Icon_resetnewsflash.Size = New System.Drawing.Size(86, 25)
         Me.Icon_resetnewsflash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -4048,7 +4219,7 @@ Partial Class TL_SaveEditor
         Me.Check_resetmiiapart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetmiiapart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetmiiapart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetmiiapart.Location = New System.Drawing.Point(95, 174)
+        Me.Check_resetmiiapart.Location = New System.Drawing.Point(119, 242)
         Me.Check_resetmiiapart.Name = "Check_resetmiiapart"
         Me.Check_resetmiiapart.Size = New System.Drawing.Size(116, 23)
         Me.Check_resetmiiapart.TabIndex = 66
@@ -4061,7 +4232,7 @@ Partial Class TL_SaveEditor
         Me.Fea_edit_concert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Fea_edit_concert.Controls.Add(Me.Icon_edit_concert)
         Me.Fea_edit_concert.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Fea_edit_concert.Location = New System.Drawing.Point(438, 158)
+        Me.Fea_edit_concert.Location = New System.Drawing.Point(462, 226)
         Me.Fea_edit_concert.Name = "Fea_edit_concert"
         Me.Fea_edit_concert.Size = New System.Drawing.Size(137, 60)
         Me.Fea_edit_concert.TabIndex = 9
@@ -4084,7 +4255,7 @@ Partial Class TL_SaveEditor
         Me.Fea_edit_travelers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Fea_edit_travelers.Controls.Add(Me.Icon_edit_travelers)
         Me.Fea_edit_travelers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Fea_edit_travelers.Location = New System.Drawing.Point(476, 53)
+        Me.Fea_edit_travelers.Location = New System.Drawing.Point(500, 121)
         Me.Fea_edit_travelers.Name = "Fea_edit_travelers"
         Me.Fea_edit_travelers.Size = New System.Drawing.Size(60, 60)
         Me.Fea_edit_travelers.TabIndex = 8
@@ -4112,7 +4283,7 @@ Partial Class TL_SaveEditor
         Me.Check_resetstpspp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetstpspp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetstpspp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetstpspp.Location = New System.Drawing.Point(95, 125)
+        Me.Check_resetstpspp.Location = New System.Drawing.Point(119, 193)
         Me.Check_resetstpspp.Name = "Check_resetstpspp"
         Me.Check_resetstpspp.Size = New System.Drawing.Size(229, 23)
         Me.Check_resetstpspp.TabIndex = 3
@@ -4123,7 +4294,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_resetstpspp.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetstpspp.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_stpspp
-        Me.Icon_resetstpspp.Location = New System.Drawing.Point(57, 124)
+        Me.Icon_resetstpspp.Location = New System.Drawing.Point(81, 192)
         Me.Icon_resetstpspp.Name = "Icon_resetstpspp"
         Me.Icon_resetstpspp.Size = New System.Drawing.Size(32, 25)
         Me.Icon_resetstpspp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -4141,7 +4312,7 @@ Partial Class TL_SaveEditor
         Me.Check_timetravel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_timetravel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_timetravel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_timetravel.Location = New System.Drawing.Point(95, 76)
+        Me.Check_timetravel.Location = New System.Drawing.Point(119, 144)
         Me.Check_timetravel.Name = "Check_timetravel"
         Me.Check_timetravel.Size = New System.Drawing.Size(155, 23)
         Me.Check_timetravel.TabIndex = 1
@@ -4152,7 +4323,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_timetravel.BackColor = System.Drawing.Color.Transparent
         Me.Icon_timetravel.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Time_travel
-        Me.Icon_timetravel.Location = New System.Drawing.Point(64, 75)
+        Me.Icon_timetravel.Location = New System.Drawing.Point(88, 143)
         Me.Icon_timetravel.Name = "Icon_timetravel"
         Me.Icon_timetravel.Size = New System.Drawing.Size(25, 25)
         Me.Icon_timetravel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -4179,7 +4350,7 @@ Partial Class TL_SaveEditor
         Me.Panel_settings.Controls.Add(Me.TabControl_settings)
         Me.Panel_settings.Location = New System.Drawing.Point(0, 60)
         Me.Panel_settings.Name = "Panel_settings"
-        Me.Panel_settings.Size = New System.Drawing.Size(600, 490)
+        Me.Panel_settings.Size = New System.Drawing.Size(650, 540)
         Me.Panel_settings.TabIndex = 26
         Me.Panel_settings.Visible = false
         '
@@ -4194,7 +4365,7 @@ Partial Class TL_SaveEditor
         Me.TabControl_settings.Multiline = true
         Me.TabControl_settings.Name = "TabControl_settings"
         Me.TabControl_settings.SelectedIndex = 0
-        Me.TabControl_settings.Size = New System.Drawing.Size(600, 490)
+        Me.TabControl_settings.Size = New System.Drawing.Size(650, 540)
         Me.TabControl_settings.TabIndex = 0
         '
         'Settings_settings
@@ -4210,7 +4381,7 @@ Partial Class TL_SaveEditor
         Me.Settings_settings.Location = New System.Drawing.Point(4, 4)
         Me.Settings_settings.Name = "Settings_settings"
         Me.Settings_settings.Padding = New System.Windows.Forms.Padding(3)
-        Me.Settings_settings.Size = New System.Drawing.Size(592, 464)
+        Me.Settings_settings.Size = New System.Drawing.Size(642, 514)
         Me.Settings_settings.TabIndex = 0
         Me.Settings_settings.Text = "Settings"
         Me.Settings_settings.UseVisualStyleBackColor = true
@@ -4220,7 +4391,7 @@ Partial Class TL_SaveEditor
         Me.Panel19.BackColor = System.Drawing.Color.White
         Me.Panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel19.Controls.Add(Me.Setting_specharac3ds)
-        Me.Panel19.Location = New System.Drawing.Point(166, 331)
+        Me.Panel19.Location = New System.Drawing.Point(191, 356)
         Me.Panel19.Name = "Panel19"
         Me.Panel19.Size = New System.Drawing.Size(260, 24)
         Me.Panel19.TabIndex = 16
@@ -4241,7 +4412,7 @@ Partial Class TL_SaveEditor
         Me.Panel14.BackColor = System.Drawing.Color.White
         Me.Panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel14.Controls.Add(Me.Setting_Advhelp)
-        Me.Panel14.Location = New System.Drawing.Point(166, 294)
+        Me.Panel14.Location = New System.Drawing.Point(191, 319)
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(260, 24)
         Me.Panel14.TabIndex = 15
@@ -4250,6 +4421,7 @@ Partial Class TL_SaveEditor
         '
         Me.Setting_Advhelp.AutoSize = true
         Me.Setting_Advhelp.BackColor = System.Drawing.Color.Transparent
+        Me.Setting_Advhelp.Enabled = false
         Me.Setting_Advhelp.Location = New System.Drawing.Point(5, 4)
         Me.Setting_Advhelp.Name = "Setting_Advhelp"
         Me.Setting_Advhelp.Size = New System.Drawing.Size(121, 17)
@@ -4262,7 +4434,7 @@ Partial Class TL_SaveEditor
         Me.Panel30.BackColor = System.Drawing.Color.White
         Me.Panel30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel30.Controls.Add(Me.Setting_ckupdate)
-        Me.Panel30.Location = New System.Drawing.Point(166, 220)
+        Me.Panel30.Location = New System.Drawing.Point(191, 245)
         Me.Panel30.Name = "Panel30"
         Me.Panel30.Size = New System.Drawing.Size(260, 24)
         Me.Panel30.TabIndex = 14
@@ -4284,7 +4456,7 @@ Partial Class TL_SaveEditor
         Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel9.Controls.Add(Me.Text_language)
         Me.Panel9.Controls.Add(Me.Select_language)
-        Me.Panel9.Location = New System.Drawing.Point(166, 257)
+        Me.Panel9.Location = New System.Drawing.Point(191, 282)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(260, 24)
         Me.Panel9.TabIndex = 13
@@ -4316,7 +4488,7 @@ Partial Class TL_SaveEditor
         Me.Panel1.BackColor = System.Drawing.Color.White
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Controls.Add(Me.Setting_filepath)
-        Me.Panel1.Location = New System.Drawing.Point(166, 183)
+        Me.Panel1.Location = New System.Drawing.Point(191, 208)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(260, 24)
         Me.Panel1.TabIndex = 12
@@ -4337,7 +4509,7 @@ Partial Class TL_SaveEditor
         Me.Panel4.BackColor = System.Drawing.Color.White
         Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel4.Controls.Add(Me.Setting_hidden)
-        Me.Panel4.Location = New System.Drawing.Point(166, 146)
+        Me.Panel4.Location = New System.Drawing.Point(191, 171)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(260, 24)
         Me.Panel4.TabIndex = 11
@@ -4359,7 +4531,7 @@ Partial Class TL_SaveEditor
         Me.Panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel10.Controls.Add(Me.Select_music)
         Me.Panel10.Controls.Add(Me.Setting_music)
-        Me.Panel10.Location = New System.Drawing.Point(166, 109)
+        Me.Panel10.Location = New System.Drawing.Point(191, 134)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(260, 24)
         Me.Panel10.TabIndex = 10
@@ -4394,7 +4566,7 @@ Partial Class TL_SaveEditor
         Me.Settings_changelog.Location = New System.Drawing.Point(4, 4)
         Me.Settings_changelog.Name = "Settings_changelog"
         Me.Settings_changelog.Padding = New System.Windows.Forms.Padding(3)
-        Me.Settings_changelog.Size = New System.Drawing.Size(592, 464)
+        Me.Settings_changelog.Size = New System.Drawing.Size(642, 514)
         Me.Settings_changelog.TabIndex = 1
         Me.Settings_changelog.Text = "Changelog"
         Me.Settings_changelog.UseVisualStyleBackColor = true
@@ -4408,7 +4580,7 @@ Partial Class TL_SaveEditor
         Me.Group_changelog.Controls.Add(Me.Text_TLSE_version)
         Me.Group_changelog.Location = New System.Drawing.Point(55, 36)
         Me.Group_changelog.Name = "Group_changelog"
-        Me.Group_changelog.Size = New System.Drawing.Size(483, 393)
+        Me.Group_changelog.Size = New System.Drawing.Size(533, 443)
         Me.Group_changelog.TabIndex = 2
         Me.Group_changelog.TabStop = false
         Me.Group_changelog.Text = "Changelog"
@@ -4417,7 +4589,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_changelog.BackColor = System.Drawing.Color.Transparent
         Me.Icon_changelog.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.logo_US
-        Me.Icon_changelog.Location = New System.Drawing.Point(360, 34)
+        Me.Icon_changelog.Location = New System.Drawing.Point(417, 34)
         Me.Icon_changelog.Name = "Icon_changelog"
         Me.Icon_changelog.Size = New System.Drawing.Size(102, 90)
         Me.Icon_changelog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -4430,11 +4602,9 @@ Partial Class TL_SaveEditor
         Me.Changelog.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Changelog.Location = New System.Drawing.Point(9, 44)
         Me.Changelog.Name = "Changelog"
-        Me.Changelog.Size = New System.Drawing.Size(468, 342)
+        Me.Changelog.Size = New System.Drawing.Size(518, 392)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = "Update Mii interaction feature (now update automatically end time interaction)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "A" & _
-    "dd More interactions (some interactions not work properly for now, need to extra" & _
-    "ct them to have good values)"
+        Me.Changelog.Text = resources.GetString("Changelog.Text")
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version
@@ -4442,9 +4612,9 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.BackColor = System.Drawing.Color.Transparent
         Me.Text_TLSE_version.Location = New System.Drawing.Point(6, 16)
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
-        Me.Text_TLSE_version.Size = New System.Drawing.Size(471, 13)
+        Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "ß5 Version 3.0.5"
+        Me.Text_TLSE_version.Text = "Version 3.0.5"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -4454,7 +4624,7 @@ Partial Class TL_SaveEditor
         Me.Settings_credits.Controls.Add(Me.Panel11)
         Me.Settings_credits.Location = New System.Drawing.Point(4, 4)
         Me.Settings_credits.Name = "Settings_credits"
-        Me.Settings_credits.Size = New System.Drawing.Size(592, 464)
+        Me.Settings_credits.Size = New System.Drawing.Size(642, 514)
         Me.Settings_credits.TabIndex = 2
         Me.Settings_credits.Text = "Credits"
         Me.Settings_credits.UseVisualStyleBackColor = true
@@ -4463,7 +4633,7 @@ Partial Class TL_SaveEditor
         '
         Me.Label1.Location = New System.Drawing.Point(4, 5)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(524, 456)
+        Me.Label1.Size = New System.Drawing.Size(574, 506)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = resources.GetString("Label1.Text")
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -4479,9 +4649,9 @@ Partial Class TL_SaveEditor
         Me.Panel11.Controls.Add(Me.Icon_ChibiRoboZLSE)
         Me.Panel11.Controls.Add(Me.Icon_3dsSEL)
         Me.Panel11.Controls.Add(Me.Icon_MiitopiaSE)
-        Me.Panel11.Location = New System.Drawing.Point(531, 1)
+        Me.Panel11.Location = New System.Drawing.Point(581, 1)
         Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(60, 462)
+        Me.Panel11.Size = New System.Drawing.Size(60, 513)
         Me.Panel11.TabIndex = 0
         '
         'Icon_MarioPartyITSE
@@ -4583,7 +4753,7 @@ Partial Class TL_SaveEditor
         Me.Panel_miiedit.Controls.Add(Me.Panel_select_mii)
         Me.Panel_miiedit.Location = New System.Drawing.Point(0, 60)
         Me.Panel_miiedit.Name = "Panel_miiedit"
-        Me.Panel_miiedit.Size = New System.Drawing.Size(600, 490)
+        Me.Panel_miiedit.Size = New System.Drawing.Size(650, 540)
         Me.Panel_miiedit.TabIndex = 27
         Me.Panel_miiedit.Visible = false
         '
@@ -4592,7 +4762,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_selectmii.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_selectmii.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_selectmii.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_selectmii.Location = New System.Drawing.Point(104, 465)
+        Me.AdvH_selectmii.Location = New System.Drawing.Point(104, 516)
         Me.AdvH_selectmii.Name = "AdvH_selectmii"
         Me.AdvH_selectmii.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_selectmii.TabIndex = 202
@@ -4604,7 +4774,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_savemii.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_savemii.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_savemii.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_savemii.Location = New System.Drawing.Point(472, 462)
+        Me.AdvH_savemii.Location = New System.Drawing.Point(523, 513)
         Me.AdvH_savemii.Name = "AdvH_savemii"
         Me.AdvH_savemii.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_savemii.TabIndex = 201
@@ -4614,7 +4784,7 @@ Partial Class TL_SaveEditor
         'Text_editing_mii
         '
         Me.Text_editing_mii.BackColor = System.Drawing.Color.Transparent
-        Me.Text_editing_mii.Location = New System.Drawing.Point(108, 463)
+        Me.Text_editing_mii.Location = New System.Drawing.Point(133, 514)
         Me.Text_editing_mii.Name = "Text_editing_mii"
         Me.Text_editing_mii.Size = New System.Drawing.Size(385, 23)
         Me.Text_editing_mii.TabIndex = 27
@@ -4631,13 +4801,22 @@ Partial Class TL_SaveEditor
         Me.TabControl1.Location = New System.Drawing.Point(4, 3)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(593, 456)
+        Me.TabControl1.Size = New System.Drawing.Size(643, 506)
         Me.TabControl1.TabIndex = 26
         '
         'Tab_mii_edit
         '
         Me.Tab_mii_edit.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_edit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_edit.Controls.Add(Me.Panel31)
+        Me.Tab_mii_edit.Controls.Add(Me.Title_miieconomy)
+        Me.Tab_mii_edit.Controls.Add(Me.Title_switch_interiors)
+        Me.Tab_mii_edit.Controls.Add(Me.Title_switch_clothes)
+        Me.Tab_mii_edit.Controls.Add(Me.Panel28)
+        Me.Tab_mii_edit.Controls.Add(Me.Panel24)
+        Me.Tab_mii_edit.Controls.Add(Me.Panel23)
+        Me.Tab_mii_edit.Controls.Add(Me.Panel22)
+        Me.Tab_mii_edit.Controls.Add(Me.Title_switch_hats)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_lastname)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_lastnamepronun)
@@ -4650,21 +4829,28 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_favcolor)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_relarealtoyou)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_creator)
+        Me.Tab_mii_edit.Controls.Add(Me.AdvH_miieconomy)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_interior)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_miihouse)
+        Me.Tab_mii_edit.Controls.Add(Me.AdvH_switchinteriors)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_miieditmusic)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_cathphrase)
+        Me.Tab_mii_edit.Controls.Add(Me.AdvH_switchclothes)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_inventory)
         Me.Tab_mii_edit.Controls.Add(Me.Title_miihouse)
+        Me.Tab_mii_edit.Controls.Add(Me.AdvH_switchhats)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.valu_haircolor)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox34)
         Me.Tab_mii_edit.Controls.Add(Me.Title_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.valu_favcolor)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_favcolor)
-        Me.Tab_mii_edit.Controls.Add(Me.valu_miihouse)
+        Me.Tab_mii_edit.Controls.Add(Me.Icon_switch_interiors)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_miihouse)
+        Me.Tab_mii_edit.Controls.Add(Me.Icon_switch_clothes)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_miiedit_music)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_cathphrase)
+        Me.Tab_mii_edit.Controls.Add(Me.Icon_switch_hats)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_inventory)
         Me.Tab_mii_edit.Controls.Add(Me.Mii)
         Me.Tab_mii_edit.Controls.Add(Me.Panel2)
@@ -4702,15 +4888,160 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_musics)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_cathphrase)
         Me.Tab_mii_edit.Controls.Add(Me.Panel_mii_inventory)
-        Me.Tab_mii_edit.Controls.Add(Me.Select_miihouse)
         Me.Tab_mii_edit.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Tab_mii_edit.ImageIndex = 0
         Me.Tab_mii_edit.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_edit.Name = "Tab_mii_edit"
         Me.Tab_mii_edit.Padding = New System.Windows.Forms.Padding(3)
-        Me.Tab_mii_edit.Size = New System.Drawing.Size(585, 429)
+        Me.Tab_mii_edit.Size = New System.Drawing.Size(635, 479)
         Me.Tab_mii_edit.TabIndex = 0
         Me.Tab_mii_edit.Text = "Edit"
+        '
+        'Panel31
+        '
+        Me.Panel31.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel31.Controls.Add(Me.valu_economy)
+        Me.Panel31.Location = New System.Drawing.Point(43, 431)
+        Me.Panel31.Name = "Panel31"
+        Me.Panel31.Size = New System.Drawing.Size(76, 20)
+        Me.Panel31.TabIndex = 250
+        '
+        'valu_economy
+        '
+        Me.valu_economy.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_economy.Location = New System.Drawing.Point(2, 2)
+        Me.valu_economy.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
+        Me.valu_economy.Name = "valu_economy"
+        Me.valu_economy.Size = New System.Drawing.Size(72, 16)
+        Me.valu_economy.TabIndex = 112
+        Me.valu_economy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Title_miieconomy
+        '
+        Me.Title_miieconomy.Location = New System.Drawing.Point(19, 414)
+        Me.Title_miieconomy.Name = "Title_miieconomy"
+        Me.Title_miieconomy.Size = New System.Drawing.Size(122, 13)
+        Me.Title_miieconomy.TabIndex = 249
+        Me.Title_miieconomy.Text = "Mii economy"
+        Me.Title_miieconomy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Title_switch_interiors
+        '
+        Me.Title_switch_interiors.Location = New System.Drawing.Point(217, 330)
+        Me.Title_switch_interiors.Name = "Title_switch_interiors"
+        Me.Title_switch_interiors.Size = New System.Drawing.Size(100, 13)
+        Me.Title_switch_interiors.TabIndex = 248
+        Me.Title_switch_interiors.Text = "Interior equipped"
+        Me.Title_switch_interiors.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Title_switch_clothes
+        '
+        Me.Title_switch_clothes.Location = New System.Drawing.Point(114, 330)
+        Me.Title_switch_clothes.Name = "Title_switch_clothes"
+        Me.Title_switch_clothes.Size = New System.Drawing.Size(100, 13)
+        Me.Title_switch_clothes.TabIndex = 247
+        Me.Title_switch_clothes.Text = "Clothe equipped"
+        Me.Title_switch_clothes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel28
+        '
+        Me.Panel28.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel28.Controls.Add(Me.valu_miihouse)
+        Me.Panel28.Controls.Add(Me.Select_miihouse)
+        Me.Panel28.Location = New System.Drawing.Point(366, 435)
+        Me.Panel28.Name = "Panel28"
+        Me.Panel28.Size = New System.Drawing.Size(138, 25)
+        Me.Panel28.TabIndex = 246
+        '
+        'valu_miihouse
+        '
+        Me.valu_miihouse.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_miihouse.Location = New System.Drawing.Point(52, 4)
+        Me.valu_miihouse.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_miihouse.Name = "valu_miihouse"
+        Me.valu_miihouse.Size = New System.Drawing.Size(35, 16)
+        Me.valu_miihouse.TabIndex = 179
+        Me.valu_miihouse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_miihouse.Visible = false
+        '
+        'Select_miihouse
+        '
+        Me.Select_miihouse.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_miihouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_miihouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_miihouse.FormattingEnabled = true
+        Me.Select_miihouse.IntegralHeight = false
+        Me.Select_miihouse.Items.AddRange(New Object() {"Mii House 1 / None", "Mii House 2", "Mii House 3", "Mii House 4", "Mii House 5", "Mii House 6", "Mii House 7", "Mii House 8", "Mii House 9", "Mii House 10", "Mii House 11", "Mii House 12", "Mii House 13", "Mii House 14", "Mii House 15", "Mii House 16", "Mii House 17", "Mii House 18", "Mii House 19", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"20", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"21", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"22", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"23", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"24", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"25", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"26", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"27", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"28", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"29", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"30", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"31", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"32", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"33", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"34", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"35", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"36", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"37", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"38", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"39", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"40", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"41", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"42", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"43", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"44", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"45", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"46", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"47", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"48", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"49", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"50"})
+        Me.Select_miihouse.Location = New System.Drawing.Point(2, 2)
+        Me.Select_miihouse.Name = "Select_miihouse"
+        Me.Select_miihouse.Size = New System.Drawing.Size(134, 21)
+        Me.Select_miihouse.TabIndex = 207
+        '
+        'Panel24
+        '
+        Me.Panel24.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel24.Controls.Add(Me.valu_switch_clothes)
+        Me.Panel24.Location = New System.Drawing.Point(136, 368)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(56, 20)
+        Me.Panel24.TabIndex = 245
+        '
+        'valu_switch_clothes
+        '
+        Me.valu_switch_clothes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_switch_clothes.Location = New System.Drawing.Point(2, 2)
+        Me.valu_switch_clothes.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_switch_clothes.Name = "valu_switch_clothes"
+        Me.valu_switch_clothes.Size = New System.Drawing.Size(52, 16)
+        Me.valu_switch_clothes.TabIndex = 190
+        Me.valu_switch_clothes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel23
+        '
+        Me.Panel23.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel23.Controls.Add(Me.valu_switch_interiors)
+        Me.Panel23.Location = New System.Drawing.Point(239, 368)
+        Me.Panel23.Name = "Panel23"
+        Me.Panel23.Size = New System.Drawing.Size(56, 20)
+        Me.Panel23.TabIndex = 244
+        '
+        'valu_switch_interiors
+        '
+        Me.valu_switch_interiors.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_switch_interiors.Location = New System.Drawing.Point(2, 2)
+        Me.valu_switch_interiors.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_switch_interiors.Name = "valu_switch_interiors"
+        Me.valu_switch_interiors.Size = New System.Drawing.Size(52, 16)
+        Me.valu_switch_interiors.TabIndex = 192
+        Me.valu_switch_interiors.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel22
+        '
+        Me.Panel22.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel22.Controls.Add(Me.valu_switch_hats)
+        Me.Panel22.Location = New System.Drawing.Point(33, 368)
+        Me.Panel22.Name = "Panel22"
+        Me.Panel22.Size = New System.Drawing.Size(56, 20)
+        Me.Panel22.TabIndex = 243
+        '
+        'valu_switch_hats
+        '
+        Me.valu_switch_hats.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_switch_hats.Location = New System.Drawing.Point(2, 2)
+        Me.valu_switch_hats.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_switch_hats.Name = "valu_switch_hats"
+        Me.valu_switch_hats.Size = New System.Drawing.Size(52, 16)
+        Me.valu_switch_hats.TabIndex = 188
+        Me.valu_switch_hats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Title_switch_hats
+        '
+        Me.Title_switch_hats.Location = New System.Drawing.Point(11, 330)
+        Me.Title_switch_hats.Name = "Title_switch_hats"
+        Me.Title_switch_hats.Size = New System.Drawing.Size(100, 13)
+        Me.Title_switch_hats.TabIndex = 242
+        Me.Title_switch_hats.Text = "Hat equipped"
+        Me.Title_switch_hats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel_edit_haircolor
         '
@@ -4751,7 +5082,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_haircolor.Controls.Add(Me.color_2)
         Me.Panel_edit_haircolor.Controls.Add(Me.color_1)
         Me.Panel_edit_haircolor.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel_edit_haircolor.Location = New System.Drawing.Point(220, 169)
+        Me.Panel_edit_haircolor.Location = New System.Drawing.Point(266, 174)
         Me.Panel_edit_haircolor.Name = "Panel_edit_haircolor"
         Me.Panel_edit_haircolor.Size = New System.Drawing.Size(201, 150)
         Me.Panel_edit_haircolor.TabIndex = 185
@@ -5083,7 +5414,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_lastname.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_lastname.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_lastname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_lastname.Location = New System.Drawing.Point(561, 75)
+        Me.AdvH_lastname.Location = New System.Drawing.Point(607, 80)
         Me.AdvH_lastname.Name = "AdvH_lastname"
         Me.AdvH_lastname.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_lastname.TabIndex = 206
@@ -5095,7 +5426,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_lastnamepronun.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_lastnamepronun.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_lastnamepronun.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_lastnamepronun.Location = New System.Drawing.Point(561, 97)
+        Me.AdvH_lastnamepronun.Location = New System.Drawing.Point(607, 102)
         Me.AdvH_lastnamepronun.Name = "AdvH_lastnamepronun"
         Me.AdvH_lastnamepronun.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_lastnamepronun.TabIndex = 205
@@ -5107,7 +5438,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_firstnamepronun.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_firstnamepronun.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_firstnamepronun.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_firstnamepronun.Location = New System.Drawing.Point(392, 97)
+        Me.AdvH_firstnamepronun.Location = New System.Drawing.Point(438, 102)
         Me.AdvH_firstnamepronun.Name = "AdvH_firstnamepronun"
         Me.AdvH_firstnamepronun.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_firstnamepronun.TabIndex = 204
@@ -5119,7 +5450,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_firstname.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_firstname.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_firstname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_firstname.Location = New System.Drawing.Point(392, 73)
+        Me.AdvH_firstname.Location = New System.Drawing.Point(438, 78)
         Me.AdvH_firstname.Name = "AdvH_firstname"
         Me.AdvH_firstname.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_firstname.TabIndex = 203
@@ -5131,7 +5462,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_haircolor.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_haircolor.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_haircolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_haircolor.Location = New System.Drawing.Point(297, 286)
+        Me.AdvH_haircolor.Location = New System.Drawing.Point(343, 291)
         Me.AdvH_haircolor.Name = "AdvH_haircolor"
         Me.AdvH_haircolor.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_haircolor.TabIndex = 202
@@ -5143,7 +5474,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_grownkid.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_grownkid.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_grownkid.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_grownkid.Location = New System.Drawing.Point(379, 218)
+        Me.AdvH_grownkid.Location = New System.Drawing.Point(425, 223)
         Me.AdvH_grownkid.Name = "AdvH_grownkid"
         Me.AdvH_grownkid.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_grownkid.TabIndex = 201
@@ -5155,7 +5486,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_copying.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_copying.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_copying.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_copying.Location = New System.Drawing.Point(504, 39)
+        Me.AdvH_copying.Location = New System.Drawing.Point(550, 44)
         Me.AdvH_copying.Name = "AdvH_copying"
         Me.AdvH_copying.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_copying.TabIndex = 200
@@ -5167,7 +5498,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_sharing.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_sharing.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_sharing.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_sharing.Location = New System.Drawing.Point(381, 39)
+        Me.AdvH_sharing.Location = New System.Drawing.Point(427, 44)
         Me.AdvH_sharing.Name = "AdvH_sharing"
         Me.AdvH_sharing.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_sharing.TabIndex = 199
@@ -5179,7 +5510,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_favcolor.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_favcolor.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_favcolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_favcolor.Location = New System.Drawing.Point(513, 154)
+        Me.AdvH_favcolor.Location = New System.Drawing.Point(559, 159)
         Me.AdvH_favcolor.Name = "AdvH_favcolor"
         Me.AdvH_favcolor.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_favcolor.TabIndex = 198
@@ -5191,7 +5522,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_relarealtoyou.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_relarealtoyou.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_relarealtoyou.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_relarealtoyou.Location = New System.Drawing.Point(543, 242)
+        Me.AdvH_relarealtoyou.Location = New System.Drawing.Point(589, 247)
         Me.AdvH_relarealtoyou.Name = "AdvH_relarealtoyou"
         Me.AdvH_relarealtoyou.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_relarealtoyou.TabIndex = 197
@@ -5203,19 +5534,31 @@ Partial Class TL_SaveEditor
         Me.AdvH_creator.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_creator.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_creator.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_creator.Location = New System.Drawing.Point(465, 283)
+        Me.AdvH_creator.Location = New System.Drawing.Point(511, 288)
         Me.AdvH_creator.Name = "AdvH_creator"
         Me.AdvH_creator.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_creator.TabIndex = 196
         Me.AdvH_creator.TabStop = false
         Me.AdvH_creator.Visible = false
         '
+        'AdvH_miieconomy
+        '
+        Me.AdvH_miieconomy.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_miieconomy.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_miieconomy.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_miieconomy.Location = New System.Drawing.Point(119, 430)
+        Me.AdvH_miieconomy.Name = "AdvH_miieconomy"
+        Me.AdvH_miieconomy.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_miieconomy.TabIndex = 241
+        Me.AdvH_miieconomy.TabStop = false
+        Me.AdvH_miieconomy.Visible = false
+        '
         'AdvH_interior
         '
         Me.AdvH_interior.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_interior.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_interior.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_interior.Location = New System.Drawing.Point(379, 366)
+        Me.AdvH_interior.Location = New System.Drawing.Point(545, 413)
         Me.AdvH_interior.Name = "AdvH_interior"
         Me.AdvH_interior.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_interior.TabIndex = 195
@@ -5227,19 +5570,31 @@ Partial Class TL_SaveEditor
         Me.AdvH_miihouse.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_miihouse.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_miihouse.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_miihouse.Location = New System.Drawing.Point(210, 366)
+        Me.AdvH_miihouse.Location = New System.Drawing.Point(455, 413)
         Me.AdvH_miihouse.Name = "AdvH_miihouse"
         Me.AdvH_miihouse.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_miihouse.TabIndex = 193
         Me.AdvH_miihouse.TabStop = false
         Me.AdvH_miihouse.Visible = false
         '
+        'AdvH_switchinteriors
+        '
+        Me.AdvH_switchinteriors.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_switchinteriors.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_switchinteriors.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_switchinteriors.Location = New System.Drawing.Point(284, 345)
+        Me.AdvH_switchinteriors.Name = "AdvH_switchinteriors"
+        Me.AdvH_switchinteriors.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_switchinteriors.TabIndex = 240
+        Me.AdvH_switchinteriors.TabStop = false
+        Me.AdvH_switchinteriors.Visible = false
+        '
         'AdvH_miieditmusic
         '
         Me.AdvH_miieditmusic.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_miieditmusic.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_miieditmusic.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_miieditmusic.Location = New System.Drawing.Point(199, 17)
+        Me.AdvH_miieditmusic.Location = New System.Drawing.Point(203, 16)
         Me.AdvH_miieditmusic.Name = "AdvH_miieditmusic"
         Me.AdvH_miieditmusic.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_miieditmusic.TabIndex = 192
@@ -5251,19 +5606,31 @@ Partial Class TL_SaveEditor
         Me.AdvH_cathphrase.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_cathphrase.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_cathphrase.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_cathphrase.Location = New System.Drawing.Point(132, 18)
+        Me.AdvH_cathphrase.Location = New System.Drawing.Point(136, 17)
         Me.AdvH_cathphrase.Name = "AdvH_cathphrase"
         Me.AdvH_cathphrase.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_cathphrase.TabIndex = 191
         Me.AdvH_cathphrase.TabStop = false
         Me.AdvH_cathphrase.Visible = false
         '
+        'AdvH_switchclothes
+        '
+        Me.AdvH_switchclothes.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_switchclothes.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_switchclothes.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_switchclothes.Location = New System.Drawing.Point(181, 345)
+        Me.AdvH_switchclothes.Name = "AdvH_switchclothes"
+        Me.AdvH_switchclothes.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_switchclothes.TabIndex = 239
+        Me.AdvH_switchclothes.TabStop = false
+        Me.AdvH_switchclothes.Visible = false
+        '
         'AdvH_inventory
         '
         Me.AdvH_inventory.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_inventory.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_inventory.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_inventory.Location = New System.Drawing.Point(65, 17)
+        Me.AdvH_inventory.Location = New System.Drawing.Point(69, 16)
         Me.AdvH_inventory.Name = "AdvH_inventory"
         Me.AdvH_inventory.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_inventory.TabIndex = 190
@@ -5272,18 +5639,30 @@ Partial Class TL_SaveEditor
         '
         'Title_miihouse
         '
-        Me.Title_miihouse.Location = New System.Drawing.Point(155, 329)
+        Me.Title_miihouse.Location = New System.Drawing.Point(400, 376)
         Me.Title_miihouse.Name = "Title_miihouse"
         Me.Title_miihouse.Size = New System.Drawing.Size(71, 13)
         Me.Title_miihouse.TabIndex = 189
         Me.Title_miihouse.Text = "Mii house"
         Me.Title_miihouse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'AdvH_switchhats
+        '
+        Me.AdvH_switchhats.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_switchhats.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_switchhats.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_switchhats.Location = New System.Drawing.Point(78, 345)
+        Me.AdvH_switchhats.Name = "AdvH_switchhats"
+        Me.AdvH_switchhats.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_switchhats.TabIndex = 238
+        Me.AdvH_switchhats.TabStop = false
+        Me.AdvH_switchhats.Visible = false
+        '
         'Icon_haircolor
         '
         Me.Icon_haircolor.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_haircolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.HCdefault
-        Me.Icon_haircolor.Location = New System.Drawing.Point(272, 285)
+        Me.Icon_haircolor.Location = New System.Drawing.Point(318, 290)
         Me.Icon_haircolor.Name = "Icon_haircolor"
         Me.Icon_haircolor.Size = New System.Drawing.Size(24, 24)
         Me.Icon_haircolor.TabIndex = 183
@@ -5292,7 +5671,7 @@ Partial Class TL_SaveEditor
         'valu_haircolor
         '
         Me.valu_haircolor.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_haircolor.Location = New System.Drawing.Point(238, 290)
+        Me.valu_haircolor.Location = New System.Drawing.Point(284, 295)
         Me.valu_haircolor.Maximum = New Decimal(New Integer() {191, 0, 0, 0})
         Me.valu_haircolor.Name = "valu_haircolor"
         Me.valu_haircolor.Size = New System.Drawing.Size(35, 16)
@@ -5300,9 +5679,19 @@ Partial Class TL_SaveEditor
         Me.valu_haircolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.valu_haircolor.Visible = false
         '
+        'PictureBox34
+        '
+        Me.PictureBox34.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox34.Image = CType(resources.GetObject("PictureBox34.Image"),System.Drawing.Image)
+        Me.PictureBox34.Location = New System.Drawing.Point(20, 430)
+        Me.PictureBox34.Name = "PictureBox34"
+        Me.PictureBox34.Size = New System.Drawing.Size(23, 23)
+        Me.PictureBox34.TabIndex = 113
+        Me.PictureBox34.TabStop = false
+        '
         'Title_haircolor
         '
-        Me.Title_haircolor.Location = New System.Drawing.Point(231, 269)
+        Me.Title_haircolor.Location = New System.Drawing.Point(277, 274)
         Me.Title_haircolor.Name = "Title_haircolor"
         Me.Title_haircolor.Size = New System.Drawing.Size(104, 13)
         Me.Title_haircolor.TabIndex = 182
@@ -5312,7 +5701,7 @@ Partial Class TL_SaveEditor
         'valu_favcolor
         '
         Me.valu_favcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_favcolor.Location = New System.Drawing.Point(460, 160)
+        Me.valu_favcolor.Location = New System.Drawing.Point(506, 165)
         Me.valu_favcolor.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_favcolor.Name = "valu_favcolor"
         Me.valu_favcolor.Size = New System.Drawing.Size(37, 16)
@@ -5324,37 +5713,44 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_favcolor.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Icon_favcolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color
-        Me.Icon_favcolor.Location = New System.Drawing.Point(459, 150)
+        Me.Icon_favcolor.Location = New System.Drawing.Point(505, 155)
         Me.Icon_favcolor.Name = "Icon_favcolor"
         Me.Icon_favcolor.Size = New System.Drawing.Size(54, 26)
         Me.Icon_favcolor.TabIndex = 123
         Me.Icon_favcolor.TabStop = false
         '
-        'valu_miihouse
+        'Icon_switch_interiors
         '
-        Me.valu_miihouse.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_miihouse.Location = New System.Drawing.Point(173, 388)
-        Me.valu_miihouse.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_miihouse.Name = "valu_miihouse"
-        Me.valu_miihouse.Size = New System.Drawing.Size(35, 16)
-        Me.valu_miihouse.TabIndex = 179
-        Me.valu_miihouse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_miihouse.Visible = false
+        Me.Icon_switch_interiors.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_switch_interior
+        Me.Icon_switch_interiors.Location = New System.Drawing.Point(251, 345)
+        Me.Icon_switch_interiors.Name = "Icon_switch_interiors"
+        Me.Icon_switch_interiors.Size = New System.Drawing.Size(32, 22)
+        Me.Icon_switch_interiors.TabIndex = 191
+        Me.Icon_switch_interiors.TabStop = false
         '
         'Icon_miihouse
         '
         Me.Icon_miihouse.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_mii_house
-        Me.Icon_miihouse.Location = New System.Drawing.Point(170, 345)
+        Me.Icon_miihouse.Location = New System.Drawing.Point(415, 392)
         Me.Icon_miihouse.Name = "Icon_miihouse"
         Me.Icon_miihouse.Size = New System.Drawing.Size(40, 43)
         Me.Icon_miihouse.TabIndex = 178
         Me.Icon_miihouse.TabStop = false
         '
+        'Icon_switch_clothes
+        '
+        Me.Icon_switch_clothes.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_switch_clothes
+        Me.Icon_switch_clothes.Location = New System.Drawing.Point(148, 345)
+        Me.Icon_switch_clothes.Name = "Icon_switch_clothes"
+        Me.Icon_switch_clothes.Size = New System.Drawing.Size(32, 22)
+        Me.Icon_switch_clothes.TabIndex = 189
+        Me.Icon_switch_clothes.TabStop = false
+        '
         'Icon_miiedit_music
         '
         Me.Icon_miiedit_music.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_miiedit_music.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_mii_song
-        Me.Icon_miiedit_music.Location = New System.Drawing.Point(155, 9)
+        Me.Icon_miiedit_music.Location = New System.Drawing.Point(159, 8)
         Me.Icon_miiedit_music.Name = "Icon_miiedit_music"
         Me.Icon_miiedit_music.Size = New System.Drawing.Size(44, 30)
         Me.Icon_miiedit_music.TabIndex = 165
@@ -5364,17 +5760,26 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_cathphrase.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_cathphrase.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_mii_cathphrase
-        Me.Icon_cathphrase.Location = New System.Drawing.Point(88, 9)
+        Me.Icon_cathphrase.Location = New System.Drawing.Point(92, 8)
         Me.Icon_cathphrase.Name = "Icon_cathphrase"
         Me.Icon_cathphrase.Size = New System.Drawing.Size(44, 30)
         Me.Icon_cathphrase.TabIndex = 164
         Me.Icon_cathphrase.TabStop = false
         '
+        'Icon_switch_hats
+        '
+        Me.Icon_switch_hats.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_switch_hats
+        Me.Icon_switch_hats.Location = New System.Drawing.Point(45, 345)
+        Me.Icon_switch_hats.Name = "Icon_switch_hats"
+        Me.Icon_switch_hats.Size = New System.Drawing.Size(32, 22)
+        Me.Icon_switch_hats.TabIndex = 187
+        Me.Icon_switch_hats.TabStop = false
+        '
         'Icon_inventory
         '
         Me.Icon_inventory.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_inventory.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_mii_inventory
-        Me.Icon_inventory.Location = New System.Drawing.Point(21, 9)
+        Me.Icon_inventory.Location = New System.Drawing.Point(25, 8)
         Me.Icon_inventory.Name = "Icon_inventory"
         Me.Icon_inventory.Size = New System.Drawing.Size(44, 30)
         Me.Icon_inventory.TabIndex = 163
@@ -5385,7 +5790,7 @@ Partial Class TL_SaveEditor
         Me.Mii.BackColor = System.Drawing.Color.Transparent
         Me.Mii.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.Mii.Image = CType(resources.GetObject("Mii.Image"),System.Drawing.Image)
-        Me.Mii.Location = New System.Drawing.Point(217, 64)
+        Me.Mii.Location = New System.Drawing.Point(248, 98)
         Me.Mii.Name = "Mii"
         Me.Mii.Size = New System.Drawing.Size(37, 67)
         Me.Mii.TabIndex = 162
@@ -5395,7 +5800,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel2.Controls.Add(Me.Text_creator)
-        Me.Panel2.Location = New System.Drawing.Point(361, 286)
+        Me.Panel2.Location = New System.Drawing.Point(407, 291)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(104, 17)
         Me.Panel2.TabIndex = 161
@@ -5418,7 +5823,7 @@ Partial Class TL_SaveEditor
         Me.Title_creator.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Title_creator.ImageIndex = 4
         Me.Title_creator.ImageList = Me.ImageList1
-        Me.Title_creator.Location = New System.Drawing.Point(352, 267)
+        Me.Title_creator.Location = New System.Drawing.Point(398, 272)
         Me.Title_creator.Name = "Title_creator"
         Me.Title_creator.Size = New System.Drawing.Size(123, 16)
         Me.Title_creator.TabIndex = 160
@@ -5430,7 +5835,7 @@ Partial Class TL_SaveEditor
         Me.Panel16.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel16.Controls.Add(Me.valu_growkid)
         Me.Panel16.Controls.Add(Me.Select_growkid)
-        Me.Panel16.Location = New System.Drawing.Point(274, 217)
+        Me.Panel16.Location = New System.Drawing.Point(320, 222)
         Me.Panel16.Name = "Panel16"
         Me.Panel16.Size = New System.Drawing.Size(104, 25)
         Me.Panel16.TabIndex = 159
@@ -5462,7 +5867,7 @@ Partial Class TL_SaveEditor
         Me.Panel15.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel15.Controls.Add(Me.valu_relationyou)
         Me.Panel15.Controls.Add(Me.Select_relationyou)
-        Me.Panel15.Location = New System.Drawing.Point(447, 217)
+        Me.Panel15.Location = New System.Drawing.Point(493, 222)
         Me.Panel15.Name = "Panel15"
         Me.Panel15.Size = New System.Drawing.Size(118, 25)
         Me.Panel15.TabIndex = 158
@@ -5495,7 +5900,7 @@ Partial Class TL_SaveEditor
         Me.Icon_pronun_nickname.BackColor = System.Drawing.Color.Transparent
         Me.Icon_pronun_nickname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_pronun_nickname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_pronunciation
-        Me.Icon_pronun_nickname.Location = New System.Drawing.Point(369, 147)
+        Me.Icon_pronun_nickname.Location = New System.Drawing.Point(415, 152)
         Me.Icon_pronun_nickname.Name = "Icon_pronun_nickname"
         Me.Icon_pronun_nickname.Size = New System.Drawing.Size(22, 22)
         Me.Icon_pronun_nickname.TabIndex = 156
@@ -5505,7 +5910,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_nickname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_nickname.Controls.Add(Me.Text_nickname)
-        Me.Panel_nickname.Location = New System.Drawing.Point(265, 150)
+        Me.Panel_nickname.Location = New System.Drawing.Point(311, 155)
         Me.Panel_nickname.Name = "Panel_nickname"
         Me.Panel_nickname.Size = New System.Drawing.Size(104, 17)
         Me.Panel_nickname.TabIndex = 155
@@ -5525,7 +5930,7 @@ Partial Class TL_SaveEditor
         'Title_nickname
         '
         Me.Title_nickname.BackColor = System.Drawing.Color.Transparent
-        Me.Title_nickname.Location = New System.Drawing.Point(265, 134)
+        Me.Title_nickname.Location = New System.Drawing.Point(311, 139)
         Me.Title_nickname.Name = "Title_nickname"
         Me.Title_nickname.Size = New System.Drawing.Size(104, 13)
         Me.Title_nickname.TabIndex = 153
@@ -5537,7 +5942,7 @@ Partial Class TL_SaveEditor
         Me.Text_pronun_nickname.AutoSize = true
         Me.Text_pronun_nickname.BackColor = System.Drawing.Color.White
         Me.Text_pronun_nickname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Text_pronun_nickname.Location = New System.Drawing.Point(265, 171)
+        Me.Text_pronun_nickname.Location = New System.Drawing.Point(311, 176)
         Me.Text_pronun_nickname.Name = "Text_pronun_nickname"
         Me.Text_pronun_nickname.Size = New System.Drawing.Size(2, 15)
         Me.Text_pronun_nickname.TabIndex = 154
@@ -5548,7 +5953,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_lastname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_edit_lastname.Controls.Add(Me.Icon_valid_lastname)
         Me.Panel_edit_lastname.Controls.Add(Me.Text_edit_lastname)
-        Me.Panel_edit_lastname.Location = New System.Drawing.Point(434, 99)
+        Me.Panel_edit_lastname.Location = New System.Drawing.Point(480, 104)
         Me.Panel_edit_lastname.Name = "Panel_edit_lastname"
         Me.Panel_edit_lastname.Size = New System.Drawing.Size(125, 17)
         Me.Panel_edit_lastname.TabIndex = 152
@@ -5581,7 +5986,7 @@ Partial Class TL_SaveEditor
         Me.Icon_pronun_lastname.BackColor = System.Drawing.Color.Transparent
         Me.Icon_pronun_lastname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_pronun_lastname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_pronunciation
-        Me.Icon_pronun_lastname.Location = New System.Drawing.Point(538, 75)
+        Me.Icon_pronun_lastname.Location = New System.Drawing.Point(584, 80)
         Me.Icon_pronun_lastname.Name = "Icon_pronun_lastname"
         Me.Icon_pronun_lastname.Size = New System.Drawing.Size(22, 22)
         Me.Icon_pronun_lastname.TabIndex = 151
@@ -5591,7 +5996,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_lastname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_lastname.Controls.Add(Me.Text_lastname)
-        Me.Panel_lastname.Location = New System.Drawing.Point(434, 78)
+        Me.Panel_lastname.Location = New System.Drawing.Point(480, 83)
         Me.Panel_lastname.Name = "Panel_lastname"
         Me.Panel_lastname.Size = New System.Drawing.Size(104, 17)
         Me.Panel_lastname.TabIndex = 150
@@ -5609,7 +6014,7 @@ Partial Class TL_SaveEditor
         'Title_lastname
         '
         Me.Title_lastname.BackColor = System.Drawing.Color.Transparent
-        Me.Title_lastname.Location = New System.Drawing.Point(434, 62)
+        Me.Title_lastname.Location = New System.Drawing.Point(480, 67)
         Me.Title_lastname.Name = "Title_lastname"
         Me.Title_lastname.Size = New System.Drawing.Size(104, 13)
         Me.Title_lastname.TabIndex = 148
@@ -5621,7 +6026,7 @@ Partial Class TL_SaveEditor
         Me.Text_pronun_lastname.AutoSize = true
         Me.Text_pronun_lastname.BackColor = System.Drawing.Color.White
         Me.Text_pronun_lastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Text_pronun_lastname.Location = New System.Drawing.Point(445, 99)
+        Me.Text_pronun_lastname.Location = New System.Drawing.Point(491, 104)
         Me.Text_pronun_lastname.Name = "Text_pronun_lastname"
         Me.Text_pronun_lastname.Size = New System.Drawing.Size(2, 15)
         Me.Text_pronun_lastname.TabIndex = 149
@@ -5632,7 +6037,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_firstname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_edit_firstname.Controls.Add(Me.Icon_valid_firstname)
         Me.Panel_edit_firstname.Controls.Add(Me.Text_edit_firstname)
-        Me.Panel_edit_firstname.Location = New System.Drawing.Point(265, 99)
+        Me.Panel_edit_firstname.Location = New System.Drawing.Point(311, 104)
         Me.Panel_edit_firstname.Name = "Panel_edit_firstname"
         Me.Panel_edit_firstname.Size = New System.Drawing.Size(125, 17)
         Me.Panel_edit_firstname.TabIndex = 147
@@ -5665,7 +6070,7 @@ Partial Class TL_SaveEditor
         Me.Icon_pronun_firstname.BackColor = System.Drawing.Color.Transparent
         Me.Icon_pronun_firstname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_pronun_firstname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_pronunciation
-        Me.Icon_pronun_firstname.Location = New System.Drawing.Point(369, 75)
+        Me.Icon_pronun_firstname.Location = New System.Drawing.Point(415, 80)
         Me.Icon_pronun_firstname.Name = "Icon_pronun_firstname"
         Me.Icon_pronun_firstname.Size = New System.Drawing.Size(22, 22)
         Me.Icon_pronun_firstname.TabIndex = 146
@@ -5675,7 +6080,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_firstname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_firstname.Controls.Add(Me.Text_firstname)
-        Me.Panel_firstname.Location = New System.Drawing.Point(265, 78)
+        Me.Panel_firstname.Location = New System.Drawing.Point(311, 83)
         Me.Panel_firstname.Name = "Panel_firstname"
         Me.Panel_firstname.Size = New System.Drawing.Size(104, 17)
         Me.Panel_firstname.TabIndex = 145
@@ -5694,7 +6099,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel6.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel6.Controls.Add(Me.Text_copying)
-        Me.Panel6.Location = New System.Drawing.Point(450, 22)
+        Me.Panel6.Location = New System.Drawing.Point(496, 27)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(77, 17)
         Me.Panel6.TabIndex = 144
@@ -5713,7 +6118,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel5.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel5.Controls.Add(Me.Text_sharing)
-        Me.Panel5.Location = New System.Drawing.Point(327, 22)
+        Me.Panel5.Location = New System.Drawing.Point(373, 27)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(77, 17)
         Me.Panel5.TabIndex = 143
@@ -5731,7 +6136,7 @@ Partial Class TL_SaveEditor
         'Icon_copying
         '
         Me.Icon_copying.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_copy
-        Me.Icon_copying.Location = New System.Drawing.Point(430, 2)
+        Me.Icon_copying.Location = New System.Drawing.Point(476, 7)
         Me.Icon_copying.Name = "Icon_copying"
         Me.Icon_copying.Size = New System.Drawing.Size(20, 20)
         Me.Icon_copying.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -5741,7 +6146,7 @@ Partial Class TL_SaveEditor
         'Icon_sharing
         '
         Me.Icon_sharing.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_share
-        Me.Icon_sharing.Location = New System.Drawing.Point(307, 2)
+        Me.Icon_sharing.Location = New System.Drawing.Point(353, 7)
         Me.Icon_sharing.Name = "Icon_sharing"
         Me.Icon_sharing.Size = New System.Drawing.Size(20, 20)
         Me.Icon_sharing.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -5751,7 +6156,7 @@ Partial Class TL_SaveEditor
         'valu_miiapart
         '
         Me.valu_miiapart.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_miiapart.Location = New System.Drawing.Point(424, 372)
+        Me.valu_miiapart.Location = New System.Drawing.Point(590, 419)
         Me.valu_miiapart.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_miiapart.Name = "valu_miiapart"
         Me.valu_miiapart.Size = New System.Drawing.Size(35, 16)
@@ -5762,7 +6167,7 @@ Partial Class TL_SaveEditor
         '
         'Text_miiapart
         '
-        Me.Text_miiapart.Location = New System.Drawing.Point(382, 389)
+        Me.Text_miiapart.Location = New System.Drawing.Point(548, 436)
         Me.Text_miiapart.Name = "Text_miiapart"
         Me.Text_miiapart.Size = New System.Drawing.Size(77, 14)
         Me.Text_miiapart.TabIndex = 133
@@ -5772,7 +6177,7 @@ Partial Class TL_SaveEditor
         'Icon_miiapart
         '
         Me.Icon_miiapart.Image = CType(resources.GetObject("Icon_miiapart.Image"),System.Drawing.Image)
-        Me.Icon_miiapart.Location = New System.Drawing.Point(402, 363)
+        Me.Icon_miiapart.Location = New System.Drawing.Point(568, 410)
         Me.Icon_miiapart.Name = "Icon_miiapart"
         Me.Icon_miiapart.Size = New System.Drawing.Size(32, 25)
         Me.Icon_miiapart.TabIndex = 132
@@ -5781,7 +6186,7 @@ Partial Class TL_SaveEditor
         'valu_copying
         '
         Me.valu_copying.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_copying.Location = New System.Drawing.Point(529, 22)
+        Me.valu_copying.Location = New System.Drawing.Point(575, 27)
         Me.valu_copying.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_copying.Name = "valu_copying"
         Me.valu_copying.Size = New System.Drawing.Size(38, 16)
@@ -5793,7 +6198,7 @@ Partial Class TL_SaveEditor
         'valu_sharing
         '
         Me.valu_sharing.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_sharing.Location = New System.Drawing.Point(288, 24)
+        Me.valu_sharing.Location = New System.Drawing.Point(334, 29)
         Me.valu_sharing.Maximum = New Decimal(New Integer() {70000, 0, 0, 0})
         Me.valu_sharing.Name = "valu_sharing"
         Me.valu_sharing.Size = New System.Drawing.Size(38, 16)
@@ -5803,7 +6208,7 @@ Partial Class TL_SaveEditor
         '
         'Title_relationyou
         '
-        Me.Title_relationyou.Location = New System.Drawing.Point(429, 201)
+        Me.Title_relationyou.Location = New System.Drawing.Point(475, 206)
         Me.Title_relationyou.Name = "Title_relationyou"
         Me.Title_relationyou.Size = New System.Drawing.Size(144, 13)
         Me.Title_relationyou.TabIndex = 124
@@ -5812,7 +6217,7 @@ Partial Class TL_SaveEditor
         '
         'Title_copying
         '
-        Me.Title_copying.Location = New System.Drawing.Point(450, 6)
+        Me.Title_copying.Location = New System.Drawing.Point(496, 11)
         Me.Title_copying.Name = "Title_copying"
         Me.Title_copying.Size = New System.Drawing.Size(77, 13)
         Me.Title_copying.TabIndex = 122
@@ -5821,7 +6226,7 @@ Partial Class TL_SaveEditor
         '
         'Title_sharing
         '
-        Me.Title_sharing.Location = New System.Drawing.Point(327, 6)
+        Me.Title_sharing.Location = New System.Drawing.Point(373, 11)
         Me.Title_sharing.Name = "Title_sharing"
         Me.Title_sharing.Size = New System.Drawing.Size(77, 13)
         Me.Title_sharing.TabIndex = 121
@@ -5830,7 +6235,7 @@ Partial Class TL_SaveEditor
         '
         'Title_growkid
         '
-        Me.Title_growkid.Location = New System.Drawing.Point(262, 201)
+        Me.Title_growkid.Location = New System.Drawing.Point(308, 206)
         Me.Title_growkid.Name = "Title_growkid"
         Me.Title_growkid.Size = New System.Drawing.Size(128, 13)
         Me.Title_growkid.TabIndex = 120
@@ -5839,7 +6244,7 @@ Partial Class TL_SaveEditor
         '
         'Title_favcolor
         '
-        Me.Title_favcolor.Location = New System.Drawing.Point(438, 134)
+        Me.Title_favcolor.Location = New System.Drawing.Point(484, 139)
         Me.Title_favcolor.Name = "Title_favcolor"
         Me.Title_favcolor.Size = New System.Drawing.Size(96, 13)
         Me.Title_favcolor.TabIndex = 119
@@ -5849,7 +6254,7 @@ Partial Class TL_SaveEditor
         'Title_firstname
         '
         Me.Title_firstname.BackColor = System.Drawing.Color.Transparent
-        Me.Title_firstname.Location = New System.Drawing.Point(265, 62)
+        Me.Title_firstname.Location = New System.Drawing.Point(311, 67)
         Me.Title_firstname.Name = "Title_firstname"
         Me.Title_firstname.Size = New System.Drawing.Size(104, 13)
         Me.Title_firstname.TabIndex = 104
@@ -5861,7 +6266,7 @@ Partial Class TL_SaveEditor
         Me.Text_pronun_firstname.AutoSize = true
         Me.Text_pronun_firstname.BackColor = System.Drawing.Color.White
         Me.Text_pronun_firstname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Text_pronun_firstname.Location = New System.Drawing.Point(265, 99)
+        Me.Text_pronun_firstname.Location = New System.Drawing.Point(311, 104)
         Me.Text_pronun_firstname.Name = "Text_pronun_firstname"
         Me.Text_pronun_firstname.Size = New System.Drawing.Size(2, 15)
         Me.Text_pronun_firstname.TabIndex = 113
@@ -5882,7 +6287,7 @@ Partial Class TL_SaveEditor
         Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_pop)
         Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_metal)
         Me.Panel_mii_musics.Controls.Add(Me.Fea_unlock_music)
-        Me.Panel_mii_musics.Location = New System.Drawing.Point(4, 52)
+        Me.Panel_mii_musics.Location = New System.Drawing.Point(8, 51)
         Me.Panel_mii_musics.Name = "Panel_mii_musics"
         Me.Panel_mii_musics.Size = New System.Drawing.Size(210, 202)
         Me.Panel_mii_musics.TabIndex = 180
@@ -6150,7 +6555,7 @@ Partial Class TL_SaveEditor
         Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_03)
         Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_02)
         Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_01)
-        Me.Panel_cathphrase.Location = New System.Drawing.Point(16, 52)
+        Me.Panel_cathphrase.Location = New System.Drawing.Point(20, 51)
         Me.Panel_cathphrase.Name = "Panel_cathphrase"
         Me.Panel_cathphrase.Size = New System.Drawing.Size(190, 224)
         Me.Panel_cathphrase.TabIndex = 176
@@ -6365,7 +6770,7 @@ Partial Class TL_SaveEditor
         Me.Panel_mii_inventory.Controls.Add(Me.Panel27)
         Me.Panel_mii_inventory.Controls.Add(Me.Panel26)
         Me.Panel_mii_inventory.Controls.Add(Me.Panel13)
-        Me.Panel_mii_inventory.Location = New System.Drawing.Point(4, 48)
+        Me.Panel_mii_inventory.Location = New System.Drawing.Point(8, 47)
         Me.Panel_mii_inventory.Name = "Panel_mii_inventory"
         Me.Panel_mii_inventory.Size = New System.Drawing.Size(210, 271)
         Me.Panel_mii_inventory.TabIndex = 181
@@ -6498,23 +6903,12 @@ Partial Class TL_SaveEditor
         Me.Select_unlock_interiors.Size = New System.Drawing.Size(104, 21)
         Me.Select_unlock_interiors.TabIndex = 112
         '
-        'Select_miihouse
-        '
-        Me.Select_miihouse.BackColor = System.Drawing.SystemColors.Window
-        Me.Select_miihouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_miihouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_miihouse.FormattingEnabled = true
-        Me.Select_miihouse.IntegralHeight = false
-        Me.Select_miihouse.Items.AddRange(New Object() {"Mii House 1 / None", "Mii House 2", "Mii House 3", "Mii House 4", "Mii House 5", "Mii House 6", "Mii House 7", "Mii House 8", "Mii House 9", "Mii House 10", "Mii House 11", "Mii House 12", "Mii House 13", "Mii House 14", "Mii House 15", "Mii House 16", "Mii House 17", "Mii House 18", "Mii House 19", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"20", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"21", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"22", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"23", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"24", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"25", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"26", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"27", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"28", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"29", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"30", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"31", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"32", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"33", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"34", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"35", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"36", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"37", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"38", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"39", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"40", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"41", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"42", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"43", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"44", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"45", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"46", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"47", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"48", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"49", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"50"})
-        Me.Select_miihouse.Location = New System.Drawing.Point(123, 389)
-        Me.Select_miihouse.Name = "Select_miihouse"
-        Me.Select_miihouse.Size = New System.Drawing.Size(134, 21)
-        Me.Select_miihouse.TabIndex = 207
-        '
         'Tab_mii_status
         '
         Me.Tab_mii_status.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_status.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
+        Me.Tab_mii_status.Controls.Add(Me.Select_allfav_US1)
+        Me.Tab_mii_status.Controls.Add(Me.Panel_edit_fullness)
         Me.Tab_mii_status.Controls.Add(Me.AdvH_worst)
         Me.Tab_mii_status.Controls.Add(Me.AdvH_fav)
         Me.Tab_mii_status.Controls.Add(Me.AdvH_allfav)
@@ -6522,10 +6916,6 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Controls.Add(Me.AdvH_fullness)
         Me.Tab_mii_status.Controls.Add(Me.AdvH_experience)
         Me.Tab_mii_status.Controls.Add(Me.AdvH_miilevel)
-        Me.Tab_mii_status.Controls.Add(Me.AdvH_miieconomy)
-        Me.Tab_mii_status.Controls.Add(Me.AdvH_switchinteriors)
-        Me.Tab_mii_status.Controls.Add(Me.AdvH_switchclothes)
-        Me.Tab_mii_status.Controls.Add(Me.AdvH_switchhats)
         Me.Tab_mii_status.Controls.Add(Me.Select_foods_language)
         Me.Tab_mii_status.Controls.Add(Me.Select_worst_US2)
         Me.Tab_mii_status.Controls.Add(Me.Select_worst_US1)
@@ -6533,14 +6923,6 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Controls.Add(Me.Select_fav_US2)
         Me.Tab_mii_status.Controls.Add(Me.Select_fav_US1)
         Me.Tab_mii_status.Controls.Add(Me.Select_allfav_US2)
-        Me.Tab_mii_status.Controls.Add(Me.Select_allfav_US1)
-        Me.Tab_mii_status.Controls.Add(Me.valu_switch_interiors)
-        Me.Tab_mii_status.Controls.Add(Me.Icon_switch_interiors)
-        Me.Tab_mii_status.Controls.Add(Me.valu_switch_clothes)
-        Me.Tab_mii_status.Controls.Add(Me.Icon_switch_clothes)
-        Me.Tab_mii_status.Controls.Add(Me.valu_switch_hats)
-        Me.Tab_mii_status.Controls.Add(Me.Icon_switch_hats)
-        Me.Tab_mii_status.Controls.Add(Me.Panel_edit_fullness)
         Me.Tab_mii_status.Controls.Add(Me.valu_chkfullness)
         Me.Tab_mii_status.Controls.Add(Me.valu_experience)
         Me.Tab_mii_status.Controls.Add(Me.valu_itemmii_8)
@@ -6561,9 +6943,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_7)
         Me.Tab_mii_status.Controls.Add(Me.Title_foods_allfav)
         Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_8)
-        Me.Tab_mii_status.Controls.Add(Me.Label29)
         Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_3)
-        Me.Tab_mii_status.Controls.Add(Me.Label28)
         Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_2)
         Me.Tab_mii_status.Controls.Add(Me.Text_level)
         Me.Tab_mii_status.Controls.Add(Me.Icon_itemmii_1)
@@ -6572,8 +6952,6 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Controls.Add(Me.valu_fullness)
         Me.Tab_mii_status.Controls.Add(Me.Text_fullness)
         Me.Tab_mii_status.Controls.Add(Me.Check_fullness)
-        Me.Tab_mii_status.Controls.Add(Me.PictureBox34)
-        Me.Tab_mii_status.Controls.Add(Me.valu_economy)
         Me.Tab_mii_status.Controls.Add(Me.Icon_fullness)
         Me.Tab_mii_status.Controls.Add(Me.valu_exp)
         Me.Tab_mii_status.Controls.Add(Me.Select_allfav_2)
@@ -6588,228 +6966,17 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Controls.Add(Me.Select_worst_1)
         Me.Tab_mii_status.Controls.Add(Me.valu_worst_2)
         Me.Tab_mii_status.Controls.Add(Me.valu_worst_1)
-        Me.Tab_mii_status.Controls.Add(Me.Select_allfav_1)
-        Me.Tab_mii_status.Controls.Add(Me.valu_allfav_1)
         Me.Tab_mii_status.Controls.Add(Me.AdvH_noeat)
         Me.Tab_mii_status.Controls.Add(Me.Text_danger_interaction)
+        Me.Tab_mii_status.Controls.Add(Me.Select_allfav_1)
+        Me.Tab_mii_status.Controls.Add(Me.valu_allfav_1)
         Me.Tab_mii_status.ImageIndex = 2
         Me.Tab_mii_status.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_status.Name = "Tab_mii_status"
         Me.Tab_mii_status.Padding = New System.Windows.Forms.Padding(3)
-        Me.Tab_mii_status.Size = New System.Drawing.Size(585, 429)
+        Me.Tab_mii_status.Size = New System.Drawing.Size(635, 479)
         Me.Tab_mii_status.TabIndex = 1
         Me.Tab_mii_status.Text = "Status"
-        '
-        'AdvH_worst
-        '
-        Me.AdvH_worst.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_worst.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_worst.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_worst.Location = New System.Drawing.Point(332, 202)
-        Me.AdvH_worst.Name = "AdvH_worst"
-        Me.AdvH_worst.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_worst.TabIndex = 249
-        Me.AdvH_worst.TabStop = false
-        Me.AdvH_worst.Visible = false
-        '
-        'AdvH_fav
-        '
-        Me.AdvH_fav.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_fav.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_fav.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_fav.Location = New System.Drawing.Point(332, 129)
-        Me.AdvH_fav.Name = "AdvH_fav"
-        Me.AdvH_fav.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_fav.TabIndex = 248
-        Me.AdvH_fav.TabStop = false
-        Me.AdvH_fav.Visible = false
-        '
-        'AdvH_allfav
-        '
-        Me.AdvH_allfav.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_allfav.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_allfav.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_allfav.Location = New System.Drawing.Point(332, 57)
-        Me.AdvH_allfav.Name = "AdvH_allfav"
-        Me.AdvH_allfav.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_allfav.TabIndex = 247
-        Me.AdvH_allfav.TabStop = false
-        Me.AdvH_allfav.Visible = false
-        '
-        'AdvH_gifs
-        '
-        Me.AdvH_gifs.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_gifs.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_gifs.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_gifs.Location = New System.Drawing.Point(538, 177)
-        Me.AdvH_gifs.Name = "AdvH_gifs"
-        Me.AdvH_gifs.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_gifs.TabIndex = 246
-        Me.AdvH_gifs.TabStop = false
-        Me.AdvH_gifs.Visible = false
-        '
-        'AdvH_fullness
-        '
-        Me.AdvH_fullness.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_fullness.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_fullness.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_fullness.Location = New System.Drawing.Point(541, 32)
-        Me.AdvH_fullness.Name = "AdvH_fullness"
-        Me.AdvH_fullness.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_fullness.TabIndex = 244
-        Me.AdvH_fullness.TabStop = false
-        Me.AdvH_fullness.Visible = false
-        '
-        'AdvH_experience
-        '
-        Me.AdvH_experience.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_experience.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_experience.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_experience.Location = New System.Drawing.Point(541, 4)
-        Me.AdvH_experience.Name = "AdvH_experience"
-        Me.AdvH_experience.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_experience.TabIndex = 243
-        Me.AdvH_experience.TabStop = false
-        Me.AdvH_experience.Visible = false
-        '
-        'AdvH_miilevel
-        '
-        Me.AdvH_miilevel.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_miilevel.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_miilevel.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_miilevel.Location = New System.Drawing.Point(315, 4)
-        Me.AdvH_miilevel.Name = "AdvH_miilevel"
-        Me.AdvH_miilevel.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_miilevel.TabIndex = 242
-        Me.AdvH_miilevel.TabStop = false
-        Me.AdvH_miilevel.Visible = false
-        '
-        'AdvH_miieconomy
-        '
-        Me.AdvH_miieconomy.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_miieconomy.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_miieconomy.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_miieconomy.Location = New System.Drawing.Point(122, 213)
-        Me.AdvH_miieconomy.Name = "AdvH_miieconomy"
-        Me.AdvH_miieconomy.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_miieconomy.TabIndex = 241
-        Me.AdvH_miieconomy.TabStop = false
-        Me.AdvH_miieconomy.Visible = false
-        '
-        'AdvH_switchinteriors
-        '
-        Me.AdvH_switchinteriors.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_switchinteriors.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_switchinteriors.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_switchinteriors.Location = New System.Drawing.Point(66, 149)
-        Me.AdvH_switchinteriors.Name = "AdvH_switchinteriors"
-        Me.AdvH_switchinteriors.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_switchinteriors.TabIndex = 240
-        Me.AdvH_switchinteriors.TabStop = false
-        Me.AdvH_switchinteriors.Visible = false
-        '
-        'AdvH_switchclothes
-        '
-        Me.AdvH_switchclothes.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_switchclothes.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_switchclothes.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_switchclothes.Location = New System.Drawing.Point(66, 77)
-        Me.AdvH_switchclothes.Name = "AdvH_switchclothes"
-        Me.AdvH_switchclothes.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_switchclothes.TabIndex = 239
-        Me.AdvH_switchclothes.TabStop = false
-        Me.AdvH_switchclothes.Visible = false
-        '
-        'AdvH_switchhats
-        '
-        Me.AdvH_switchhats.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_switchhats.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_switchhats.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_switchhats.Location = New System.Drawing.Point(65, 5)
-        Me.AdvH_switchhats.Name = "AdvH_switchhats"
-        Me.AdvH_switchhats.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_switchhats.TabIndex = 238
-        Me.AdvH_switchhats.TabStop = false
-        Me.AdvH_switchhats.Visible = false
-        '
-        'Select_foods_language
-        '
-        Me.Select_foods_language.BackColor = System.Drawing.SystemColors.Window
-        Me.Select_foods_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_foods_language.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_foods_language.FormattingEnabled = true
-        Me.Select_foods_language.Items.AddRange(New Object() {"ENG", "FRA"})
-        Me.Select_foods_language.Location = New System.Drawing.Point(101, 30)
-        Me.Select_foods_language.Name = "Select_foods_language"
-        Me.Select_foods_language.Size = New System.Drawing.Size(47, 21)
-        Me.Select_foods_language.TabIndex = 237
-        Me.Select_foods_language.Visible = false
-        '
-        'Select_worst_US2
-        '
-        Me.Select_worst_US2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_worst_US2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_worst_US2.FormattingEnabled = true
-        Me.Select_worst_US2.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
-        Me.Select_worst_US2.Location = New System.Drawing.Point(163, 215)
-        Me.Select_worst_US2.Name = "Select_worst_US2"
-        Me.Select_worst_US2.Size = New System.Drawing.Size(167, 21)
-        Me.Select_worst_US2.TabIndex = 236
-        '
-        'Select_worst_US1
-        '
-        Me.Select_worst_US1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_worst_US1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_worst_US1.FormattingEnabled = true
-        Me.Select_worst_US1.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
-        Me.Select_worst_US1.Location = New System.Drawing.Point(163, 193)
-        Me.Select_worst_US1.Name = "Select_worst_US1"
-        Me.Select_worst_US1.Size = New System.Drawing.Size(167, 21)
-        Me.Select_worst_US1.TabIndex = 235
-        '
-        'Select_fav_US3
-        '
-        Me.Select_fav_US3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_fav_US3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_fav_US3.FormattingEnabled = true
-        Me.Select_fav_US3.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
-        Me.Select_fav_US3.Location = New System.Drawing.Point(163, 151)
-        Me.Select_fav_US3.Name = "Select_fav_US3"
-        Me.Select_fav_US3.Size = New System.Drawing.Size(167, 21)
-        Me.Select_fav_US3.TabIndex = 234
-        '
-        'Select_fav_US2
-        '
-        Me.Select_fav_US2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_fav_US2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_fav_US2.FormattingEnabled = true
-        Me.Select_fav_US2.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
-        Me.Select_fav_US2.Location = New System.Drawing.Point(163, 129)
-        Me.Select_fav_US2.Name = "Select_fav_US2"
-        Me.Select_fav_US2.Size = New System.Drawing.Size(167, 21)
-        Me.Select_fav_US2.TabIndex = 233
-        '
-        'Select_fav_US1
-        '
-        Me.Select_fav_US1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_fav_US1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_fav_US1.FormattingEnabled = true
-        Me.Select_fav_US1.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
-        Me.Select_fav_US1.Location = New System.Drawing.Point(163, 107)
-        Me.Select_fav_US1.Name = "Select_fav_US1"
-        Me.Select_fav_US1.Size = New System.Drawing.Size(167, 21)
-        Me.Select_fav_US1.TabIndex = 232
-        '
-        'Select_allfav_US2
-        '
-        Me.Select_allfav_US2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_allfav_US2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_allfav_US2.FormattingEnabled = true
-        Me.Select_allfav_US2.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
-        Me.Select_allfav_US2.Location = New System.Drawing.Point(163, 67)
-        Me.Select_allfav_US2.Name = "Select_allfav_US2"
-        Me.Select_allfav_US2.Size = New System.Drawing.Size(167, 21)
-        Me.Select_allfav_US2.TabIndex = 231
         '
         'Select_allfav_US1
         '
@@ -6817,67 +6984,10 @@ Partial Class TL_SaveEditor
         Me.Select_allfav_US1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_allfav_US1.FormattingEnabled = true
         Me.Select_allfav_US1.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
-        Me.Select_allfav_US1.Location = New System.Drawing.Point(163, 45)
+        Me.Select_allfav_US1.Location = New System.Drawing.Point(129, 47)
         Me.Select_allfav_US1.Name = "Select_allfav_US1"
         Me.Select_allfav_US1.Size = New System.Drawing.Size(167, 21)
-        Me.Select_allfav_US1.TabIndex = 230
-        '
-        'valu_switch_interiors
-        '
-        Me.valu_switch_interiors.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_switch_interiors.Location = New System.Drawing.Point(23, 172)
-        Me.valu_switch_interiors.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_switch_interiors.Name = "valu_switch_interiors"
-        Me.valu_switch_interiors.Size = New System.Drawing.Size(52, 16)
-        Me.valu_switch_interiors.TabIndex = 192
-        Me.valu_switch_interiors.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Icon_switch_interiors
-        '
-        Me.Icon_switch_interiors.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_switch_interior
-        Me.Icon_switch_interiors.Location = New System.Drawing.Point(33, 149)
-        Me.Icon_switch_interiors.Name = "Icon_switch_interiors"
-        Me.Icon_switch_interiors.Size = New System.Drawing.Size(32, 22)
-        Me.Icon_switch_interiors.TabIndex = 191
-        Me.Icon_switch_interiors.TabStop = false
-        '
-        'valu_switch_clothes
-        '
-        Me.valu_switch_clothes.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_switch_clothes.Location = New System.Drawing.Point(23, 100)
-        Me.valu_switch_clothes.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_switch_clothes.Name = "valu_switch_clothes"
-        Me.valu_switch_clothes.Size = New System.Drawing.Size(52, 16)
-        Me.valu_switch_clothes.TabIndex = 190
-        Me.valu_switch_clothes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Icon_switch_clothes
-        '
-        Me.Icon_switch_clothes.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_switch_clothes
-        Me.Icon_switch_clothes.Location = New System.Drawing.Point(33, 77)
-        Me.Icon_switch_clothes.Name = "Icon_switch_clothes"
-        Me.Icon_switch_clothes.Size = New System.Drawing.Size(32, 22)
-        Me.Icon_switch_clothes.TabIndex = 189
-        Me.Icon_switch_clothes.TabStop = false
-        '
-        'valu_switch_hats
-        '
-        Me.valu_switch_hats.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_switch_hats.Location = New System.Drawing.Point(22, 28)
-        Me.valu_switch_hats.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_switch_hats.Name = "valu_switch_hats"
-        Me.valu_switch_hats.Size = New System.Drawing.Size(52, 16)
-        Me.valu_switch_hats.TabIndex = 188
-        Me.valu_switch_hats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Icon_switch_hats
-        '
-        Me.Icon_switch_hats.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_switch_hats
-        Me.Icon_switch_hats.Location = New System.Drawing.Point(32, 5)
-        Me.Icon_switch_hats.Name = "Icon_switch_hats"
-        Me.Icon_switch_hats.Size = New System.Drawing.Size(32, 22)
-        Me.Icon_switch_hats.TabIndex = 187
-        Me.Icon_switch_hats.TabStop = false
+        Me.Select_allfav_US1.TabIndex = 250
         '
         'Panel_edit_fullness
         '
@@ -6886,7 +6996,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_fullness.Controls.Add(Me.Icon_edit_full_50)
         Me.Panel_edit_fullness.Controls.Add(Me.Icon_edit_full_25)
         Me.Panel_edit_fullness.Controls.Add(Me.Icon_edit_full_00)
-        Me.Panel_edit_fullness.Location = New System.Drawing.Point(423, 44)
+        Me.Panel_edit_fullness.Location = New System.Drawing.Point(422, 45)
         Me.Panel_edit_fullness.Name = "Panel_edit_fullness"
         Me.Panel_edit_fullness.Size = New System.Drawing.Size(117, 110)
         Me.Panel_edit_fullness.TabIndex = 129
@@ -6936,10 +7046,173 @@ Partial Class TL_SaveEditor
         Me.Icon_edit_full_00.TabIndex = 110
         Me.Icon_edit_full_00.TabStop = false
         '
+        'AdvH_worst
+        '
+        Me.AdvH_worst.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_worst.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_worst.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_worst.Location = New System.Drawing.Point(298, 204)
+        Me.AdvH_worst.Name = "AdvH_worst"
+        Me.AdvH_worst.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_worst.TabIndex = 249
+        Me.AdvH_worst.TabStop = false
+        Me.AdvH_worst.Visible = false
+        '
+        'AdvH_fav
+        '
+        Me.AdvH_fav.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_fav.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_fav.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_fav.Location = New System.Drawing.Point(298, 131)
+        Me.AdvH_fav.Name = "AdvH_fav"
+        Me.AdvH_fav.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_fav.TabIndex = 248
+        Me.AdvH_fav.TabStop = false
+        Me.AdvH_fav.Visible = false
+        '
+        'AdvH_allfav
+        '
+        Me.AdvH_allfav.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_allfav.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_allfav.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_allfav.Location = New System.Drawing.Point(298, 59)
+        Me.AdvH_allfav.Name = "AdvH_allfav"
+        Me.AdvH_allfav.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_allfav.TabIndex = 247
+        Me.AdvH_allfav.TabStop = false
+        Me.AdvH_allfav.Visible = false
+        '
+        'AdvH_gifs
+        '
+        Me.AdvH_gifs.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_gifs.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_gifs.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_gifs.Location = New System.Drawing.Point(540, 181)
+        Me.AdvH_gifs.Name = "AdvH_gifs"
+        Me.AdvH_gifs.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_gifs.TabIndex = 246
+        Me.AdvH_gifs.TabStop = false
+        Me.AdvH_gifs.Visible = false
+        '
+        'AdvH_fullness
+        '
+        Me.AdvH_fullness.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_fullness.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_fullness.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_fullness.Location = New System.Drawing.Point(540, 33)
+        Me.AdvH_fullness.Name = "AdvH_fullness"
+        Me.AdvH_fullness.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_fullness.TabIndex = 244
+        Me.AdvH_fullness.TabStop = false
+        Me.AdvH_fullness.Visible = false
+        '
+        'AdvH_experience
+        '
+        Me.AdvH_experience.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_experience.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_experience.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_experience.Location = New System.Drawing.Point(540, 5)
+        Me.AdvH_experience.Name = "AdvH_experience"
+        Me.AdvH_experience.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_experience.TabIndex = 243
+        Me.AdvH_experience.TabStop = false
+        Me.AdvH_experience.Visible = false
+        '
+        'AdvH_miilevel
+        '
+        Me.AdvH_miilevel.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_miilevel.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_miilevel.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_miilevel.Location = New System.Drawing.Point(334, 5)
+        Me.AdvH_miilevel.Name = "AdvH_miilevel"
+        Me.AdvH_miilevel.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_miilevel.TabIndex = 242
+        Me.AdvH_miilevel.TabStop = false
+        Me.AdvH_miilevel.Visible = false
+        '
+        'Select_foods_language
+        '
+        Me.Select_foods_language.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_foods_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_foods_language.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_foods_language.FormattingEnabled = true
+        Me.Select_foods_language.Items.AddRange(New Object() {"ENG", "FRA"})
+        Me.Select_foods_language.Location = New System.Drawing.Point(71, 4)
+        Me.Select_foods_language.Name = "Select_foods_language"
+        Me.Select_foods_language.Size = New System.Drawing.Size(47, 21)
+        Me.Select_foods_language.TabIndex = 237
+        Me.Select_foods_language.Visible = false
+        '
+        'Select_worst_US2
+        '
+        Me.Select_worst_US2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_worst_US2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_worst_US2.FormattingEnabled = true
+        Me.Select_worst_US2.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
+        Me.Select_worst_US2.Location = New System.Drawing.Point(129, 217)
+        Me.Select_worst_US2.Name = "Select_worst_US2"
+        Me.Select_worst_US2.Size = New System.Drawing.Size(167, 21)
+        Me.Select_worst_US2.TabIndex = 236
+        '
+        'Select_worst_US1
+        '
+        Me.Select_worst_US1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_worst_US1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_worst_US1.FormattingEnabled = true
+        Me.Select_worst_US1.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
+        Me.Select_worst_US1.Location = New System.Drawing.Point(129, 195)
+        Me.Select_worst_US1.Name = "Select_worst_US1"
+        Me.Select_worst_US1.Size = New System.Drawing.Size(167, 21)
+        Me.Select_worst_US1.TabIndex = 235
+        '
+        'Select_fav_US3
+        '
+        Me.Select_fav_US3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_fav_US3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_fav_US3.FormattingEnabled = true
+        Me.Select_fav_US3.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
+        Me.Select_fav_US3.Location = New System.Drawing.Point(129, 153)
+        Me.Select_fav_US3.Name = "Select_fav_US3"
+        Me.Select_fav_US3.Size = New System.Drawing.Size(167, 21)
+        Me.Select_fav_US3.TabIndex = 234
+        '
+        'Select_fav_US2
+        '
+        Me.Select_fav_US2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_fav_US2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_fav_US2.FormattingEnabled = true
+        Me.Select_fav_US2.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
+        Me.Select_fav_US2.Location = New System.Drawing.Point(129, 131)
+        Me.Select_fav_US2.Name = "Select_fav_US2"
+        Me.Select_fav_US2.Size = New System.Drawing.Size(167, 21)
+        Me.Select_fav_US2.TabIndex = 233
+        '
+        'Select_fav_US1
+        '
+        Me.Select_fav_US1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_fav_US1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_fav_US1.FormattingEnabled = true
+        Me.Select_fav_US1.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
+        Me.Select_fav_US1.Location = New System.Drawing.Point(129, 109)
+        Me.Select_fav_US1.Name = "Select_fav_US1"
+        Me.Select_fav_US1.Size = New System.Drawing.Size(167, 21)
+        Me.Select_fav_US1.TabIndex = 232
+        '
+        'Select_allfav_US2
+        '
+        Me.Select_allfav_US2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_allfav_US2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_allfav_US2.FormattingEnabled = true
+        Me.Select_allfav_US2.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
+        Me.Select_allfav_US2.Location = New System.Drawing.Point(129, 69)
+        Me.Select_allfav_US2.Name = "Select_allfav_US2"
+        Me.Select_allfav_US2.Size = New System.Drawing.Size(167, 21)
+        Me.Select_allfav_US2.TabIndex = 231
+        '
         'valu_chkfullness
         '
         Me.valu_chkfullness.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_chkfullness.Location = New System.Drawing.Point(375, 85)
+        Me.valu_chkfullness.Location = New System.Drawing.Point(374, 86)
         Me.valu_chkfullness.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_chkfullness.Name = "valu_chkfullness"
         Me.valu_chkfullness.Size = New System.Drawing.Size(38, 16)
@@ -6950,7 +7223,7 @@ Partial Class TL_SaveEditor
         'valu_experience
         '
         Me.valu_experience.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_experience.Location = New System.Drawing.Point(367, 7)
+        Me.valu_experience.Location = New System.Drawing.Point(366, 8)
         Me.valu_experience.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_experience.Name = "valu_experience"
         Me.valu_experience.Size = New System.Drawing.Size(40, 16)
@@ -6961,7 +7234,7 @@ Partial Class TL_SaveEditor
         'valu_itemmii_8
         '
         Me.valu_itemmii_8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_8.Location = New System.Drawing.Point(494, 202)
+        Me.valu_itemmii_8.Location = New System.Drawing.Point(496, 206)
         Me.valu_itemmii_8.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_8.Name = "valu_itemmii_8"
         Me.valu_itemmii_8.Size = New System.Drawing.Size(40, 16)
@@ -6972,7 +7245,7 @@ Partial Class TL_SaveEditor
         'Icon_growkid
         '
         Me.Icon_growkid.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.grown_up
-        Me.Icon_growkid.Location = New System.Drawing.Point(152, 5)
+        Me.Icon_growkid.Location = New System.Drawing.Point(227, 5)
         Me.Icon_growkid.Name = "Icon_growkid"
         Me.Icon_growkid.Size = New System.Drawing.Size(28, 22)
         Me.Icon_growkid.TabIndex = 128
@@ -6981,7 +7254,7 @@ Partial Class TL_SaveEditor
         'valu_itemmii_7
         '
         Me.valu_itemmii_7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_7.Location = New System.Drawing.Point(460, 202)
+        Me.valu_itemmii_7.Location = New System.Drawing.Point(462, 206)
         Me.valu_itemmii_7.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_7.Name = "valu_itemmii_7"
         Me.valu_itemmii_7.Size = New System.Drawing.Size(40, 16)
@@ -6992,7 +7265,7 @@ Partial Class TL_SaveEditor
         'valu_itemmii_6
         '
         Me.valu_itemmii_6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_6.Location = New System.Drawing.Point(426, 202)
+        Me.valu_itemmii_6.Location = New System.Drawing.Point(428, 206)
         Me.valu_itemmii_6.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_6.Name = "valu_itemmii_6"
         Me.valu_itemmii_6.Size = New System.Drawing.Size(40, 16)
@@ -7003,7 +7276,7 @@ Partial Class TL_SaveEditor
         'valu_itemmii_5
         '
         Me.valu_itemmii_5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_5.Location = New System.Drawing.Point(392, 202)
+        Me.valu_itemmii_5.Location = New System.Drawing.Point(394, 206)
         Me.valu_itemmii_5.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_5.Name = "valu_itemmii_5"
         Me.valu_itemmii_5.Size = New System.Drawing.Size(40, 16)
@@ -7019,7 +7292,6 @@ Partial Class TL_SaveEditor
         Me.Panel3.Controls.Add(Me.valu_interacunknow)
         Me.Panel3.Controls.Add(Me.valu_enddateinterac2)
         Me.Panel3.Controls.Add(Me.valu_enddateinterac)
-        Me.Panel3.Controls.Add(Me.CheckBox2)
         Me.Panel3.Controls.Add(Me.PictureBox5)
         Me.Panel3.Controls.Add(Me.Title_place_2)
         Me.Panel3.Controls.Add(Me.Title_place_1)
@@ -7044,9 +7316,10 @@ Partial Class TL_SaveEditor
         Me.Panel3.Controls.Add(Me.Panel_target2)
         Me.Panel3.Controls.Add(Me.Panel_target1)
         Me.Panel3.Controls.Add(Me.Panel17)
-        Me.Panel3.Location = New System.Drawing.Point(5, 242)
+        Me.Panel3.Controls.Add(Me.Panel_target1_foods)
+        Me.Panel3.Location = New System.Drawing.Point(2, 288)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(574, 167)
+        Me.Panel3.Size = New System.Drawing.Size(631, 167)
         Me.Panel3.TabIndex = 177
         '
         'PictureBox6
@@ -7109,17 +7382,6 @@ Partial Class TL_SaveEditor
         Me.valu_enddateinterac.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.valu_enddateinterac.Visible = false
         '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = true
-        Me.CheckBox2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.CheckBox2.Location = New System.Drawing.Point(40, 122)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(159, 17)
-        Me.CheckBox2.TabIndex = 270
-        Me.CheckBox2.Text = "Patch Interaction 2 end time"
-        Me.CheckBox2.UseVisualStyleBackColor = true
-        '
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
@@ -7142,6 +7404,7 @@ Partial Class TL_SaveEditor
         Me.Title_place_2.TabIndex = 265
         Me.Title_place_2.Text = "Place 2"
         Me.Title_place_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Title_place_2.Visible = false
         '
         'Title_place_1
         '
@@ -7153,6 +7416,7 @@ Partial Class TL_SaveEditor
         Me.Title_place_1.TabIndex = 264
         Me.Title_place_1.Text = "Place 1"
         Me.Title_place_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Title_place_1.Visible = false
         '
         'Panel20
         '
@@ -7162,6 +7426,7 @@ Partial Class TL_SaveEditor
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(90, 25)
         Me.Panel20.TabIndex = 263
+        Me.Panel20.Visible = false
         '
         'valu_place_2
         '
@@ -7181,6 +7446,7 @@ Partial Class TL_SaveEditor
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(90, 25)
         Me.Panel21.TabIndex = 262
+        Me.Panel21.Visible = false
         '
         'valu_place_1
         '
@@ -7214,6 +7480,7 @@ Partial Class TL_SaveEditor
         Me.Title_interaction2.TabIndex = 259
         Me.Title_interaction2.Text = "Interaction pattern 2"
         Me.Title_interaction2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Title_interaction2.Visible = false
         '
         'Icon_interaction2
         '
@@ -7234,6 +7501,7 @@ Partial Class TL_SaveEditor
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(294, 25)
         Me.Panel7.TabIndex = 257
+        Me.Panel7.Visible = false
         '
         'valu_interaction2
         '
@@ -7299,7 +7567,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_targets.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_targets.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_targets.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_targets.Location = New System.Drawing.Point(545, 90)
+        Me.AdvH_targets.Location = New System.Drawing.Point(604, 92)
         Me.AdvH_targets.Name = "AdvH_targets"
         Me.AdvH_targets.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_targets.TabIndex = 251
@@ -7345,9 +7613,9 @@ Partial Class TL_SaveEditor
         '
         Me.Title_target2.BackColor = System.Drawing.Color.Transparent
         Me.Title_target2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_target2.Location = New System.Drawing.Point(477, 46)
+        Me.Title_target2.Location = New System.Drawing.Point(475, 46)
         Me.Title_target2.Name = "Title_target2"
-        Me.Title_target2.Size = New System.Drawing.Size(93, 13)
+        Me.Title_target2.Size = New System.Drawing.Size(153, 13)
         Me.Title_target2.TabIndex = 167
         Me.Title_target2.Text = "Target 2"
         Me.Title_target2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -7356,9 +7624,9 @@ Partial Class TL_SaveEditor
         '
         Me.Title_target1.BackColor = System.Drawing.Color.Transparent
         Me.Title_target1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_target1.Location = New System.Drawing.Point(477, 6)
+        Me.Title_target1.Location = New System.Drawing.Point(475, 6)
         Me.Title_target1.Name = "Title_target1"
-        Me.Title_target1.Size = New System.Drawing.Size(93, 13)
+        Me.Title_target1.Size = New System.Drawing.Size(152, 13)
         Me.Title_target1.TabIndex = 166
         Me.Title_target1.Text = "Target 1"
         Me.Title_target1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -7422,9 +7690,9 @@ Partial Class TL_SaveEditor
         Me.Panel_target2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_target2.Controls.Add(Me.valu_target2)
         Me.Panel_target2.Controls.Add(Me.Select_target2)
-        Me.Panel_target2.Location = New System.Drawing.Point(480, 62)
+        Me.Panel_target2.Location = New System.Drawing.Point(478, 62)
         Me.Panel_target2.Name = "Panel_target2"
-        Me.Panel_target2.Size = New System.Drawing.Size(90, 25)
+        Me.Panel_target2.Size = New System.Drawing.Size(150, 25)
         Me.Panel_target2.TabIndex = 161
         '
         'valu_target2
@@ -7433,7 +7701,7 @@ Partial Class TL_SaveEditor
         Me.valu_target2.Location = New System.Drawing.Point(2, 4)
         Me.valu_target2.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_target2.Name = "valu_target2"
-        Me.valu_target2.Size = New System.Drawing.Size(86, 16)
+        Me.valu_target2.Size = New System.Drawing.Size(146, 16)
         Me.valu_target2.TabIndex = 186
         Me.valu_target2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.valu_target2.Visible = false
@@ -7448,7 +7716,7 @@ Partial Class TL_SaveEditor
         Me.Select_target2.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
         Me.Select_target2.Location = New System.Drawing.Point(2, 2)
         Me.Select_target2.Name = "Select_target2"
-        Me.Select_target2.Size = New System.Drawing.Size(86, 21)
+        Me.Select_target2.Size = New System.Drawing.Size(146, 21)
         Me.Select_target2.TabIndex = 1
         '
         'Panel_target1
@@ -7456,9 +7724,9 @@ Partial Class TL_SaveEditor
         Me.Panel_target1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_target1.Controls.Add(Me.valu_target1)
         Me.Panel_target1.Controls.Add(Me.Select_target1)
-        Me.Panel_target1.Location = New System.Drawing.Point(480, 22)
+        Me.Panel_target1.Location = New System.Drawing.Point(478, 22)
         Me.Panel_target1.Name = "Panel_target1"
-        Me.Panel_target1.Size = New System.Drawing.Size(90, 25)
+        Me.Panel_target1.Size = New System.Drawing.Size(150, 25)
         Me.Panel_target1.TabIndex = 160
         '
         'valu_target1
@@ -7467,7 +7735,7 @@ Partial Class TL_SaveEditor
         Me.valu_target1.Location = New System.Drawing.Point(2, 4)
         Me.valu_target1.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_target1.Name = "valu_target1"
-        Me.valu_target1.Size = New System.Drawing.Size(86, 16)
+        Me.valu_target1.Size = New System.Drawing.Size(146, 16)
         Me.valu_target1.TabIndex = 186
         Me.valu_target1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.valu_target1.Visible = false
@@ -7482,7 +7750,7 @@ Partial Class TL_SaveEditor
         Me.Select_target1.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
         Me.Select_target1.Location = New System.Drawing.Point(2, 2)
         Me.Select_target1.Name = "Select_target1"
-        Me.Select_target1.Size = New System.Drawing.Size(86, 21)
+        Me.Select_target1.Size = New System.Drawing.Size(146, 21)
         Me.Select_target1.TabIndex = 1
         '
         'Panel17
@@ -7517,7 +7785,7 @@ Partial Class TL_SaveEditor
         Me.Select_interaction.FormattingEnabled = true
         Me.Select_interaction.IntegralHeight = false
         Me.Select_interaction.ItemHeight = 13
-        Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like {foods}", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "_Would like to eat something but say nothing_", "_Would like to eat something but say nothing (1)_", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "_Would like to eat something but say nothing (2)_", "I'd like to eat something Korean", "I could eat anything !", "I'm starving", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings "& _ 
+        Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like {foods}", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "_Would like to eat something but say nothing_", "_Would like to eat something but say nothing (1)_", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "_Would like to eat something but say nothing (2)_", "I'd like to eat something Korean", "I could eat anything !", "I'm starving (1)", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings "& _ 
                 "to ?", "_Show heart in windows but freeze_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you"& _ 
                 " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me "& _ 
                 "?", "I think that I have something really special with {Mii}.  What do you thing about"& _ 
@@ -7530,10 +7798,55 @@ Partial Class TL_SaveEditor
         Me.Select_interaction.Size = New System.Drawing.Size(437, 21)
         Me.Select_interaction.TabIndex = 112
         '
+        'Text_notinteraction
+        '
+        Me.Text_notinteraction.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Text_notinteraction.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Text_notinteraction.Enabled = false
+        Me.Text_notinteraction.Location = New System.Drawing.Point(2, 2)
+        Me.Text_notinteraction.Name = "Text_notinteraction"
+        Me.Text_notinteraction.ReadOnly = true
+        Me.Text_notinteraction.Size = New System.Drawing.Size(437, 20)
+        Me.Text_notinteraction.TabIndex = 276
+        Me.Text_notinteraction.Text = "This interaction is not listed. You can extract him and share it"
+        Me.Text_notinteraction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_target1_foods
+        '
+        Me.Panel_target1_foods.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_target1_foods.Controls.Add(Me.Select_target1_foodUS)
+        Me.Panel_target1_foods.Controls.Add(Me.Select_target1_foodEU)
+        Me.Panel_target1_foods.Location = New System.Drawing.Point(478, 22)
+        Me.Panel_target1_foods.Name = "Panel_target1_foods"
+        Me.Panel_target1_foods.Size = New System.Drawing.Size(150, 25)
+        Me.Panel_target1_foods.TabIndex = 253
+        '
+        'Select_target1_foodUS
+        '
+        Me.Select_target1_foodUS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_target1_foodUS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_target1_foodUS.FormattingEnabled = true
+        Me.Select_target1_foodUS.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
+        Me.Select_target1_foodUS.Location = New System.Drawing.Point(2, 2)
+        Me.Select_target1_foodUS.Name = "Select_target1_foodUS"
+        Me.Select_target1_foodUS.Size = New System.Drawing.Size(146, 21)
+        Me.Select_target1_foodUS.TabIndex = 252
+        '
+        'Select_target1_foodEU
+        '
+        Me.Select_target1_foodEU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_target1_foodEU.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_target1_foodEU.FormattingEnabled = true
+        Me.Select_target1_foodEU.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
+        Me.Select_target1_foodEU.Location = New System.Drawing.Point(2, 2)
+        Me.Select_target1_foodEU.Name = "Select_target1_foodEU"
+        Me.Select_target1_foodEU.Size = New System.Drawing.Size(146, 21)
+        Me.Select_target1_foodEU.TabIndex = 251
+        '
         'valu_itemmii_1
         '
         Me.valu_itemmii_1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_1.Location = New System.Drawing.Point(389, 168)
+        Me.valu_itemmii_1.Location = New System.Drawing.Point(391, 172)
         Me.valu_itemmii_1.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_1.Name = "valu_itemmii_1"
         Me.valu_itemmii_1.Size = New System.Drawing.Size(40, 16)
@@ -7544,7 +7857,7 @@ Partial Class TL_SaveEditor
         'valu_itemmii_4
         '
         Me.valu_itemmii_4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_4.Location = New System.Drawing.Point(499, 168)
+        Me.valu_itemmii_4.Location = New System.Drawing.Point(501, 172)
         Me.valu_itemmii_4.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_4.Name = "valu_itemmii_4"
         Me.valu_itemmii_4.Size = New System.Drawing.Size(40, 16)
@@ -7555,7 +7868,7 @@ Partial Class TL_SaveEditor
         'valu_itemmii_2
         '
         Me.valu_itemmii_2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_2.Location = New System.Drawing.Point(426, 168)
+        Me.valu_itemmii_2.Location = New System.Drawing.Point(428, 172)
         Me.valu_itemmii_2.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_2.Name = "valu_itemmii_2"
         Me.valu_itemmii_2.Size = New System.Drawing.Size(40, 16)
@@ -7566,7 +7879,7 @@ Partial Class TL_SaveEditor
         'valu_itemmii_3
         '
         Me.valu_itemmii_3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_3.Location = New System.Drawing.Point(465, 168)
+        Me.valu_itemmii_3.Location = New System.Drawing.Point(467, 172)
         Me.valu_itemmii_3.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_3.Name = "valu_itemmii_3"
         Me.valu_itemmii_3.Size = New System.Drawing.Size(40, 16)
@@ -7579,7 +7892,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_4.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.Icon_itemmii_4.Location = New System.Drawing.Point(503, 157)
+        Me.Icon_itemmii_4.Location = New System.Drawing.Point(505, 161)
         Me.Icon_itemmii_4.Name = "Icon_itemmii_4"
         Me.Icon_itemmii_4.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_4.TabIndex = 47
@@ -7590,7 +7903,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_5.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.Icon_itemmii_5.Location = New System.Drawing.Point(401, 191)
+        Me.Icon_itemmii_5.Location = New System.Drawing.Point(403, 195)
         Me.Icon_itemmii_5.Name = "Icon_itemmii_5"
         Me.Icon_itemmii_5.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_5.TabIndex = 48
@@ -7600,9 +7913,9 @@ Partial Class TL_SaveEditor
         '
         Me.Title_foods_worst.BackColor = System.Drawing.Color.MediumBlue
         Me.Title_foods_worst.ForeColor = System.Drawing.Color.White
-        Me.Title_foods_worst.Location = New System.Drawing.Point(152, 177)
+        Me.Title_foods_worst.Location = New System.Drawing.Point(95, 179)
         Me.Title_foods_worst.Name = "Title_foods_worst"
-        Me.Title_foods_worst.Size = New System.Drawing.Size(178, 13)
+        Me.Title_foods_worst.Size = New System.Drawing.Size(201, 13)
         Me.Title_foods_worst.TabIndex = 120
         Me.Title_foods_worst.Text = "Worst / Worst Ever"
         '
@@ -7611,7 +7924,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_6.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.Icon_itemmii_6.Location = New System.Drawing.Point(435, 191)
+        Me.Icon_itemmii_6.Location = New System.Drawing.Point(437, 195)
         Me.Icon_itemmii_6.Name = "Icon_itemmii_6"
         Me.Icon_itemmii_6.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_6.TabIndex = 49
@@ -7621,9 +7934,9 @@ Partial Class TL_SaveEditor
         '
         Me.Title_foods_favorite.BackColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
         Me.Title_foods_favorite.ForeColor = System.Drawing.Color.White
-        Me.Title_foods_favorite.Location = New System.Drawing.Point(152, 91)
+        Me.Title_foods_favorite.Location = New System.Drawing.Point(95, 93)
         Me.Title_foods_favorite.Name = "Title_foods_favorite"
-        Me.Title_foods_favorite.Size = New System.Drawing.Size(178, 13)
+        Me.Title_foods_favorite.Size = New System.Drawing.Size(201, 13)
         Me.Title_foods_favorite.TabIndex = 119
         Me.Title_foods_favorite.Text = "Favorite Foods"
         '
@@ -7632,7 +7945,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_7.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.Icon_itemmii_7.Location = New System.Drawing.Point(469, 191)
+        Me.Icon_itemmii_7.Location = New System.Drawing.Point(471, 195)
         Me.Icon_itemmii_7.Name = "Icon_itemmii_7"
         Me.Icon_itemmii_7.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_7.TabIndex = 50
@@ -7642,9 +7955,9 @@ Partial Class TL_SaveEditor
         '
         Me.Title_foods_allfav.BackColor = System.Drawing.Color.OrangeRed
         Me.Title_foods_allfav.ForeColor = System.Drawing.Color.White
-        Me.Title_foods_allfav.Location = New System.Drawing.Point(152, 29)
+        Me.Title_foods_allfav.Location = New System.Drawing.Point(95, 31)
         Me.Title_foods_allfav.Name = "Title_foods_allfav"
-        Me.Title_foods_allfav.Size = New System.Drawing.Size(178, 13)
+        Me.Title_foods_allfav.Size = New System.Drawing.Size(201, 13)
         Me.Title_foods_allfav.TabIndex = 118
         Me.Title_foods_allfav.Text = "Super All-Time Fav / All-Time Fav"
         '
@@ -7653,51 +7966,29 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_8.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.Icon_itemmii_8.Location = New System.Drawing.Point(503, 191)
+        Me.Icon_itemmii_8.Location = New System.Drawing.Point(505, 195)
         Me.Icon_itemmii_8.Name = "Icon_itemmii_8"
         Me.Icon_itemmii_8.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_8.TabIndex = 51
         Me.Icon_itemmii_8.TabStop = false
-        '
-        'Label29
-        '
-        Me.Label29.BackColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
-        Me.Label29.ForeColor = System.Drawing.Color.White
-        Me.Label29.Location = New System.Drawing.Point(434, 83)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(101, 13)
-        Me.Label29.TabIndex = 117
-        Me.Label29.Text = "Sweetheart"
-        Me.Label29.Visible = false
         '
         'Icon_itemmii_3
         '
         Me.Icon_itemmii_3.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.Icon_itemmii_3.Location = New System.Drawing.Point(469, 157)
+        Me.Icon_itemmii_3.Location = New System.Drawing.Point(471, 161)
         Me.Icon_itemmii_3.Name = "Icon_itemmii_3"
         Me.Icon_itemmii_3.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_3.TabIndex = 46
         Me.Icon_itemmii_3.TabStop = false
-        '
-        'Label28
-        '
-        Me.Label28.BackColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
-        Me.Label28.ForeColor = System.Drawing.Color.White
-        Me.Label28.Location = New System.Drawing.Point(434, 118)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(101, 13)
-        Me.Label28.TabIndex = 116
-        Me.Label28.Text = "Best Friend"
-        Me.Label28.Visible = false
         '
         'Icon_itemmii_2
         '
         Me.Icon_itemmii_2.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.Icon_itemmii_2.Location = New System.Drawing.Point(435, 157)
+        Me.Icon_itemmii_2.Location = New System.Drawing.Point(437, 161)
         Me.Icon_itemmii_2.Name = "Icon_itemmii_2"
         Me.Icon_itemmii_2.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_2.TabIndex = 45
@@ -7707,7 +7998,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_level.AutoSize = true
         Me.Text_level.BackColor = System.Drawing.Color.Transparent
-        Me.Text_level.Location = New System.Drawing.Point(247, 9)
+        Me.Text_level.Location = New System.Drawing.Point(266, 10)
         Me.Text_level.Name = "Text_level"
         Me.Text_level.Size = New System.Drawing.Size(22, 13)
         Me.Text_level.TabIndex = 106
@@ -7718,7 +8009,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_1.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.FFFF
-        Me.Icon_itemmii_1.Location = New System.Drawing.Point(401, 157)
+        Me.Icon_itemmii_1.Location = New System.Drawing.Point(403, 161)
         Me.Icon_itemmii_1.Name = "Icon_itemmii_1"
         Me.Icon_itemmii_1.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_1.TabIndex = 44
@@ -7729,7 +8020,7 @@ Partial Class TL_SaveEditor
         Me.Icon_experience.BackColor = System.Drawing.Color.Transparent
         Me.Icon_experience.Cursor = System.Windows.Forms.Cursors.Default
         Me.Icon_experience.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.exp0
-        Me.Icon_experience.Location = New System.Drawing.Point(365, 5)
+        Me.Icon_experience.Location = New System.Drawing.Point(364, 5)
         Me.Icon_experience.Name = "Icon_experience"
         Me.Icon_experience.Size = New System.Drawing.Size(159, 22)
         Me.Icon_experience.TabIndex = 107
@@ -7738,7 +8029,7 @@ Partial Class TL_SaveEditor
         'valu_level
         '
         Me.valu_level.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_level.Location = New System.Drawing.Point(275, 8)
+        Me.valu_level.Location = New System.Drawing.Point(294, 8)
         Me.valu_level.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_level.Name = "valu_level"
         Me.valu_level.Size = New System.Drawing.Size(40, 16)
@@ -7747,7 +8038,7 @@ Partial Class TL_SaveEditor
         'valu_fullness
         '
         Me.valu_fullness.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_fullness.Location = New System.Drawing.Point(502, 65)
+        Me.valu_fullness.Location = New System.Drawing.Point(501, 66)
         Me.valu_fullness.Name = "valu_fullness"
         Me.valu_fullness.Size = New System.Drawing.Size(38, 16)
         Me.valu_fullness.TabIndex = 115
@@ -7758,7 +8049,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_fullness.BackColor = System.Drawing.Color.FromArgb(CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer), CType(CType(64,Byte),Integer))
         Me.Text_fullness.ForeColor = System.Drawing.Color.White
-        Me.Text_fullness.Location = New System.Drawing.Point(390, 29)
+        Me.Text_fullness.Location = New System.Drawing.Point(389, 30)
         Me.Text_fullness.Name = "Text_fullness"
         Me.Text_fullness.Size = New System.Drawing.Size(102, 13)
         Me.Text_fullness.TabIndex = 108
@@ -7768,7 +8059,7 @@ Partial Class TL_SaveEditor
         '
         Me.Check_fullness.AutoSize = true
         Me.Check_fullness.BackColor = System.Drawing.Color.Transparent
-        Me.Check_fullness.Location = New System.Drawing.Point(375, 64)
+        Me.Check_fullness.Location = New System.Drawing.Point(374, 65)
         Me.Check_fullness.Name = "Check_fullness"
         Me.Check_fullness.Size = New System.Drawing.Size(85, 17)
         Me.Check_fullness.TabIndex = 111
@@ -7776,32 +8067,12 @@ Partial Class TL_SaveEditor
         Me.Check_fullness.Text = "He didn't eat"
         Me.Check_fullness.UseVisualStyleBackColor = false
         '
-        'PictureBox34
-        '
-        Me.PictureBox34.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox34.Image = CType(resources.GetObject("PictureBox34.Image"),System.Drawing.Image)
-        Me.PictureBox34.Location = New System.Drawing.Point(23, 209)
-        Me.PictureBox34.Name = "PictureBox34"
-        Me.PictureBox34.Size = New System.Drawing.Size(23, 23)
-        Me.PictureBox34.TabIndex = 113
-        Me.PictureBox34.TabStop = false
-        '
-        'valu_economy
-        '
-        Me.valu_economy.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_economy.Location = New System.Drawing.Point(49, 216)
-        Me.valu_economy.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
-        Me.valu_economy.Name = "valu_economy"
-        Me.valu_economy.Size = New System.Drawing.Size(72, 16)
-        Me.valu_economy.TabIndex = 112
-        Me.valu_economy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'Icon_fullness
         '
         Me.Icon_fullness.BackColor = System.Drawing.Color.Transparent
         Me.Icon_fullness.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_fullness.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.fullness_00
-        Me.Icon_fullness.Location = New System.Drawing.Point(484, 32)
+        Me.Icon_fullness.Location = New System.Drawing.Point(483, 33)
         Me.Icon_fullness.Name = "Icon_fullness"
         Me.Icon_fullness.Size = New System.Drawing.Size(55, 50)
         Me.Icon_fullness.TabIndex = 109
@@ -7810,7 +8081,7 @@ Partial Class TL_SaveEditor
         'valu_exp
         '
         Me.valu_exp.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_exp.Location = New System.Drawing.Point(500, 7)
+        Me.valu_exp.Location = New System.Drawing.Point(499, 8)
         Me.valu_exp.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_exp.Name = "valu_exp"
         Me.valu_exp.Size = New System.Drawing.Size(40, 16)
@@ -7822,7 +8093,7 @@ Partial Class TL_SaveEditor
         Me.Select_allfav_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_allfav_2.FormattingEnabled = true
         Me.Select_allfav_2.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
-        Me.Select_allfav_2.Location = New System.Drawing.Point(163, 67)
+        Me.Select_allfav_2.Location = New System.Drawing.Point(129, 69)
         Me.Select_allfav_2.Name = "Select_allfav_2"
         Me.Select_allfav_2.Size = New System.Drawing.Size(167, 21)
         Me.Select_allfav_2.TabIndex = 181
@@ -7831,12 +8102,12 @@ Partial Class TL_SaveEditor
         '
         Me.valu_allfav_2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_allfav_2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.valu_allfav_2.Location = New System.Drawing.Point(163, 70)
+        Me.valu_allfav_2.Location = New System.Drawing.Point(129, 72)
         Me.valu_allfav_2.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_allfav_2.Name = "valu_allfav_2"
         Me.valu_allfav_2.Size = New System.Drawing.Size(167, 16)
         Me.valu_allfav_2.TabIndex = 122
-        Me.valu_allfav_2.Value = New Decimal(New Integer() {65534, 0, 0, 0})
+        Me.valu_allfav_2.Value = New Decimal(New Integer() {65535, 0, 0, 0})
         '
         'Select_fav_3
         '
@@ -7844,7 +8115,7 @@ Partial Class TL_SaveEditor
         Me.Select_fav_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_fav_3.FormattingEnabled = true
         Me.Select_fav_3.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
-        Me.Select_fav_3.Location = New System.Drawing.Point(163, 151)
+        Me.Select_fav_3.Location = New System.Drawing.Point(129, 153)
         Me.Select_fav_3.Name = "Select_fav_3"
         Me.Select_fav_3.Size = New System.Drawing.Size(167, 21)
         Me.Select_fav_3.TabIndex = 184
@@ -7855,7 +8126,7 @@ Partial Class TL_SaveEditor
         Me.Select_fav_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_fav_2.FormattingEnabled = true
         Me.Select_fav_2.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
-        Me.Select_fav_2.Location = New System.Drawing.Point(163, 129)
+        Me.Select_fav_2.Location = New System.Drawing.Point(129, 131)
         Me.Select_fav_2.Name = "Select_fav_2"
         Me.Select_fav_2.Size = New System.Drawing.Size(167, 21)
         Me.Select_fav_2.TabIndex = 183
@@ -7866,7 +8137,7 @@ Partial Class TL_SaveEditor
         Me.Select_fav_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_fav_1.FormattingEnabled = true
         Me.Select_fav_1.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
-        Me.Select_fav_1.Location = New System.Drawing.Point(163, 107)
+        Me.Select_fav_1.Location = New System.Drawing.Point(129, 109)
         Me.Select_fav_1.Name = "Select_fav_1"
         Me.Select_fav_1.Size = New System.Drawing.Size(167, 21)
         Me.Select_fav_1.TabIndex = 182
@@ -7875,34 +8146,34 @@ Partial Class TL_SaveEditor
         '
         Me.valu_fav_1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_fav_1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.valu_fav_1.Location = New System.Drawing.Point(163, 111)
+        Me.valu_fav_1.Location = New System.Drawing.Point(129, 113)
         Me.valu_fav_1.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_fav_1.Name = "valu_fav_1"
         Me.valu_fav_1.Size = New System.Drawing.Size(167, 16)
         Me.valu_fav_1.TabIndex = 123
-        Me.valu_fav_1.Value = New Decimal(New Integer() {65534, 0, 0, 0})
+        Me.valu_fav_1.Value = New Decimal(New Integer() {65535, 0, 0, 0})
         '
         'valu_fav_2
         '
         Me.valu_fav_2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_fav_2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.valu_fav_2.Location = New System.Drawing.Point(163, 132)
+        Me.valu_fav_2.Location = New System.Drawing.Point(129, 134)
         Me.valu_fav_2.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_fav_2.Name = "valu_fav_2"
         Me.valu_fav_2.Size = New System.Drawing.Size(167, 16)
         Me.valu_fav_2.TabIndex = 124
-        Me.valu_fav_2.Value = New Decimal(New Integer() {65534, 0, 0, 0})
+        Me.valu_fav_2.Value = New Decimal(New Integer() {65535, 0, 0, 0})
         '
         'valu_fav_3
         '
         Me.valu_fav_3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_fav_3.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.valu_fav_3.Location = New System.Drawing.Point(163, 154)
+        Me.valu_fav_3.Location = New System.Drawing.Point(129, 156)
         Me.valu_fav_3.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_fav_3.Name = "valu_fav_3"
         Me.valu_fav_3.Size = New System.Drawing.Size(167, 16)
         Me.valu_fav_3.TabIndex = 125
-        Me.valu_fav_3.Value = New Decimal(New Integer() {65534, 0, 0, 0})
+        Me.valu_fav_3.Value = New Decimal(New Integer() {65535, 0, 0, 0})
         '
         'Select_worst_2
         '
@@ -7910,7 +8181,7 @@ Partial Class TL_SaveEditor
         Me.Select_worst_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_worst_2.FormattingEnabled = true
         Me.Select_worst_2.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
-        Me.Select_worst_2.Location = New System.Drawing.Point(163, 215)
+        Me.Select_worst_2.Location = New System.Drawing.Point(129, 217)
         Me.Select_worst_2.Name = "Select_worst_2"
         Me.Select_worst_2.Size = New System.Drawing.Size(167, 21)
         Me.Select_worst_2.TabIndex = 186
@@ -7921,7 +8192,7 @@ Partial Class TL_SaveEditor
         Me.Select_worst_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_worst_1.FormattingEnabled = true
         Me.Select_worst_1.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
-        Me.Select_worst_1.Location = New System.Drawing.Point(163, 193)
+        Me.Select_worst_1.Location = New System.Drawing.Point(129, 195)
         Me.Select_worst_1.Name = "Select_worst_1"
         Me.Select_worst_1.Size = New System.Drawing.Size(167, 21)
         Me.Select_worst_1.TabIndex = 185
@@ -7930,52 +8201,30 @@ Partial Class TL_SaveEditor
         '
         Me.valu_worst_2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_worst_2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.valu_worst_2.Location = New System.Drawing.Point(163, 219)
+        Me.valu_worst_2.Location = New System.Drawing.Point(129, 221)
         Me.valu_worst_2.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_worst_2.Name = "valu_worst_2"
         Me.valu_worst_2.Size = New System.Drawing.Size(167, 16)
         Me.valu_worst_2.TabIndex = 127
-        Me.valu_worst_2.Value = New Decimal(New Integer() {65534, 0, 0, 0})
+        Me.valu_worst_2.Value = New Decimal(New Integer() {65535, 0, 0, 0})
         '
         'valu_worst_1
         '
         Me.valu_worst_1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_worst_1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.valu_worst_1.Location = New System.Drawing.Point(163, 197)
+        Me.valu_worst_1.Location = New System.Drawing.Point(129, 199)
         Me.valu_worst_1.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_worst_1.Name = "valu_worst_1"
         Me.valu_worst_1.Size = New System.Drawing.Size(167, 16)
         Me.valu_worst_1.TabIndex = 126
-        Me.valu_worst_1.Value = New Decimal(New Integer() {65534, 0, 0, 0})
-        '
-        'Select_allfav_1
-        '
-        Me.Select_allfav_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_allfav_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_allfav_1.FormattingEnabled = true
-        Me.Select_allfav_1.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
-        Me.Select_allfav_1.Location = New System.Drawing.Point(163, 45)
-        Me.Select_allfav_1.Name = "Select_allfav_1"
-        Me.Select_allfav_1.Size = New System.Drawing.Size(167, 21)
-        Me.Select_allfav_1.TabIndex = 180
-        '
-        'valu_allfav_1
-        '
-        Me.valu_allfav_1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_allfav_1.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.valu_allfav_1.Location = New System.Drawing.Point(163, 48)
-        Me.valu_allfav_1.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_allfav_1.Name = "valu_allfav_1"
-        Me.valu_allfav_1.Size = New System.Drawing.Size(167, 16)
-        Me.valu_allfav_1.TabIndex = 121
-        Me.valu_allfav_1.Value = New Decimal(New Integer() {65534, 0, 0, 0})
+        Me.valu_worst_1.Value = New Decimal(New Integer() {65535, 0, 0, 0})
         '
         'AdvH_noeat
         '
         Me.AdvH_noeat.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_noeat.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_noeat.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_noeat.Location = New System.Drawing.Point(416, 82)
+        Me.AdvH_noeat.Location = New System.Drawing.Point(415, 83)
         Me.AdvH_noeat.Name = "AdvH_noeat"
         Me.AdvH_noeat.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_noeat.TabIndex = 245
@@ -7986,12 +8235,34 @@ Partial Class TL_SaveEditor
         '
         Me.Text_danger_interaction.AutoSize = true
         Me.Text_danger_interaction.ForeColor = System.Drawing.Color.Red
-        Me.Text_danger_interaction.Location = New System.Drawing.Point(46, 412)
+        Me.Text_danger_interaction.Location = New System.Drawing.Point(75, 458)
         Me.Text_danger_interaction.Name = "Text_danger_interaction"
         Me.Text_danger_interaction.Size = New System.Drawing.Size(492, 13)
         Me.Text_danger_interaction.TabIndex = 229
         Me.Text_danger_interaction.Text = "Make sure a recent save file is used, if you have an interaction not listed : Ple"& _ 
     "ase extract and share him"
+        '
+        'Select_allfav_1
+        '
+        Me.Select_allfav_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_allfav_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_allfav_1.FormattingEnabled = true
+        Me.Select_allfav_1.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
+        Me.Select_allfav_1.Location = New System.Drawing.Point(129, 47)
+        Me.Select_allfav_1.Name = "Select_allfav_1"
+        Me.Select_allfav_1.Size = New System.Drawing.Size(167, 21)
+        Me.Select_allfav_1.TabIndex = 180
+        '
+        'valu_allfav_1
+        '
+        Me.valu_allfav_1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_allfav_1.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.valu_allfav_1.Location = New System.Drawing.Point(129, 50)
+        Me.valu_allfav_1.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_allfav_1.Name = "valu_allfav_1"
+        Me.valu_allfav_1.Size = New System.Drawing.Size(167, 16)
+        Me.valu_allfav_1.TabIndex = 121
+        Me.valu_allfav_1.Value = New Decimal(New Integer() {65535, 0, 0, 0})
         '
         'Tab_mii_friendlist
         '
@@ -8012,7 +8283,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_friendlist.ImageIndex = 1
         Me.Tab_mii_friendlist.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_friendlist.Name = "Tab_mii_friendlist"
-        Me.Tab_mii_friendlist.Size = New System.Drawing.Size(585, 429)
+        Me.Tab_mii_friendlist.Size = New System.Drawing.Size(635, 479)
         Me.Tab_mii_friendlist.TabIndex = 2
         Me.Tab_mii_friendlist.Text = "Friends list"
         Me.Tab_mii_friendlist.UseVisualStyleBackColor = true
@@ -8022,7 +8293,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_setallrelation.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_setallrelation.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_setallrelation.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_setallrelation.Location = New System.Drawing.Point(558, 390)
+        Me.AdvH_setallrelation.Location = New System.Drawing.Point(583, 414)
         Me.AdvH_setallrelation.Name = "AdvH_setallrelation"
         Me.AdvH_setallrelation.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_setallrelation.TabIndex = 232
@@ -8035,7 +8306,7 @@ Partial Class TL_SaveEditor
         Me.Panel18.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
         Me.Panel18.Controls.Add(Me.select_setallrelation)
         Me.Panel18.Controls.Add(Me.Button_setallrelation)
-        Me.Panel18.Location = New System.Drawing.Point(413, 376)
+        Me.Panel18.Location = New System.Drawing.Point(438, 400)
         Me.Panel18.Name = "Panel18"
         Me.Panel18.Size = New System.Drawing.Size(144, 51)
         Me.Panel18.TabIndex = 231
@@ -8072,7 +8343,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_setallfriends.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_setallfriends.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_setallfriends.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_setallfriends.Location = New System.Drawing.Point(378, 390)
+        Me.AdvH_setallfriends.Location = New System.Drawing.Point(403, 414)
         Me.AdvH_setallfriends.Name = "AdvH_setallfriends"
         Me.AdvH_setallfriends.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_setallfriends.TabIndex = 229
@@ -8084,7 +8355,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_friendlist.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_friendlist.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_friendlist.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_friendlist.Location = New System.Drawing.Point(562, 0)
+        Me.AdvH_friendlist.Location = New System.Drawing.Point(587, 24)
         Me.AdvH_friendlist.Name = "AdvH_friendlist"
         Me.AdvH_friendlist.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_friendlist.TabIndex = 228
@@ -8095,7 +8366,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_danger_friendlist.AutoSize = true
         Me.Text_danger_friendlist.ForeColor = System.Drawing.Color.Red
-        Me.Text_danger_friendlist.Location = New System.Drawing.Point(26, 5)
+        Me.Text_danger_friendlist.Location = New System.Drawing.Point(51, 15)
         Me.Text_danger_friendlist.Name = "Text_danger_friendlist"
         Me.Text_danger_friendlist.Size = New System.Drawing.Size(404, 13)
         Me.Text_danger_friendlist.TabIndex = 227
@@ -8107,7 +8378,7 @@ Partial Class TL_SaveEditor
         '
         Me.Danger_friendlist.Cursor = System.Windows.Forms.Cursors.Help
         Me.Danger_friendlist.Image = CType(resources.GetObject("Danger_friendlist.Image"),System.Drawing.Image)
-        Me.Danger_friendlist.Location = New System.Drawing.Point(3, 1)
+        Me.Danger_friendlist.Location = New System.Drawing.Point(28, 11)
         Me.Danger_friendlist.Name = "Danger_friendlist"
         Me.Danger_friendlist.Size = New System.Drawing.Size(20, 20)
         Me.Danger_friendlist.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -8117,7 +8388,7 @@ Partial Class TL_SaveEditor
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.info_relation_less
-        Me.PictureBox2.Location = New System.Drawing.Point(69, 400)
+        Me.PictureBox2.Location = New System.Drawing.Point(94, 424)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(84, 31)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -8130,7 +8401,7 @@ Partial Class TL_SaveEditor
         Me.Panel8.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
         Me.Panel8.Controls.Add(Me.valu_setallfriends)
         Me.Panel8.Controls.Add(Me.Button_setallfriends)
-        Me.Panel8.Location = New System.Drawing.Point(233, 389)
+        Me.Panel8.Location = New System.Drawing.Point(258, 413)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(144, 25)
         Me.Panel8.TabIndex = 193
@@ -8164,7 +8435,7 @@ Partial Class TL_SaveEditor
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.info_relation_more
-        Me.PictureBox1.Location = New System.Drawing.Point(4, 378)
+        Me.PictureBox1.Location = New System.Drawing.Point(29, 402)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(84, 31)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -8274,7 +8545,7 @@ Partial Class TL_SaveEditor
         Me.Panel_friendlist_1.Controls.Add(Me.Select_friend_rela_3)
         Me.Panel_friendlist_1.Controls.Add(Me.Select_friend_rela_4)
         Me.Panel_friendlist_1.Controls.Add(Me.Select_friend_rela_5)
-        Me.Panel_friendlist_1.Location = New System.Drawing.Point(0, 21)
+        Me.Panel_friendlist_1.Location = New System.Drawing.Point(25, 45)
         Me.Panel_friendlist_1.Name = "Panel_friendlist_1"
         Me.Panel_friendlist_1.Size = New System.Drawing.Size(585, 355)
         Me.Panel_friendlist_1.TabIndex = 233
@@ -9442,7 +9713,7 @@ Partial Class TL_SaveEditor
         Me.Panel_friendlist_4.Controls.Add(Me.Select_friend_rela_93)
         Me.Panel_friendlist_4.Controls.Add(Me.Select_friend_rela_81)
         Me.Panel_friendlist_4.Controls.Add(Me.Select_friend_rela_76)
-        Me.Panel_friendlist_4.Location = New System.Drawing.Point(0, 21)
+        Me.Panel_friendlist_4.Location = New System.Drawing.Point(25, 45)
         Me.Panel_friendlist_4.Name = "Panel_friendlist_4"
         Me.Panel_friendlist_4.Size = New System.Drawing.Size(585, 355)
         Me.Panel_friendlist_4.TabIndex = 236
@@ -10612,7 +10883,7 @@ Partial Class TL_SaveEditor
         Me.Panel_friendlist_3.Controls.Add(Me.Select_friend_rela_53)
         Me.Panel_friendlist_3.Controls.Add(Me.Select_friend_rela_54)
         Me.Panel_friendlist_3.Controls.Add(Me.Select_friend_rela_55)
-        Me.Panel_friendlist_3.Location = New System.Drawing.Point(0, 21)
+        Me.Panel_friendlist_3.Location = New System.Drawing.Point(25, 45)
         Me.Panel_friendlist_3.Name = "Panel_friendlist_3"
         Me.Panel_friendlist_3.Size = New System.Drawing.Size(585, 355)
         Me.Panel_friendlist_3.TabIndex = 235
@@ -11792,7 +12063,7 @@ Partial Class TL_SaveEditor
         Me.Panel_friendlist_2.Controls.Add(Me.Select_friend_rela_28)
         Me.Panel_friendlist_2.Controls.Add(Me.Select_friend_rela_29)
         Me.Panel_friendlist_2.Controls.Add(Me.Select_friend_rela_30)
-        Me.Panel_friendlist_2.Location = New System.Drawing.Point(0, 21)
+        Me.Panel_friendlist_2.Location = New System.Drawing.Point(25, 45)
         Me.Panel_friendlist_2.Name = "Panel_friendlist_2"
         Me.Panel_friendlist_2.Size = New System.Drawing.Size(585, 355)
         Me.Panel_friendlist_2.TabIndex = 234
@@ -12871,21 +13142,61 @@ Partial Class TL_SaveEditor
         'Tab_mii_extras
         '
         Me.Tab_mii_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_extras.Controls.Add(Me.Panel33)
+        Me.Tab_mii_extras.Controls.Add(Me.Panel32)
         Me.Tab_mii_extras.Controls.Add(Me.AdvH_splurgerank)
         Me.Tab_mii_extras.Controls.Add(Me.AdvH_pamperedrank)
-        Me.Tab_mii_extras.Controls.Add(Me.valu_ranking_splurge)
         Me.Tab_mii_extras.Controls.Add(Me.Title_ranking_splurge)
         Me.Tab_mii_extras.Controls.Add(Me.Icon_ranking_splurge)
-        Me.Tab_mii_extras.Controls.Add(Me.valu_ranking_pampered)
         Me.Tab_mii_extras.Controls.Add(Me.Title_ranking_pampered)
         Me.Tab_mii_extras.Controls.Add(Me.Icon_ranking_pampered)
         Me.Tab_mii_extras.ImageIndex = 5
         Me.Tab_mii_extras.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_extras.Name = "Tab_mii_extras"
-        Me.Tab_mii_extras.Size = New System.Drawing.Size(585, 429)
+        Me.Tab_mii_extras.Size = New System.Drawing.Size(635, 479)
         Me.Tab_mii_extras.TabIndex = 3
         Me.Tab_mii_extras.Text = "Extras"
         Me.Tab_mii_extras.UseVisualStyleBackColor = true
+        '
+        'Panel33
+        '
+        Me.Panel33.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel33.Controls.Add(Me.valu_ranking_pampered)
+        Me.Panel33.Location = New System.Drawing.Point(274, 175)
+        Me.Panel33.Name = "Panel33"
+        Me.Panel33.Size = New System.Drawing.Size(97, 20)
+        Me.Panel33.TabIndex = 70
+        '
+        'valu_ranking_pampered
+        '
+        Me.valu_ranking_pampered.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_ranking_pampered.Location = New System.Drawing.Point(2, 2)
+        Me.valu_ranking_pampered.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
+        Me.valu_ranking_pampered.Name = "valu_ranking_pampered"
+        Me.valu_ranking_pampered.Size = New System.Drawing.Size(93, 16)
+        Me.valu_ranking_pampered.TabIndex = 8
+        Me.valu_ranking_pampered.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_ranking_pampered.ThousandsSeparator = true
+        '
+        'Panel32
+        '
+        Me.Panel32.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel32.Controls.Add(Me.valu_ranking_splurge)
+        Me.Panel32.Location = New System.Drawing.Point(274, 265)
+        Me.Panel32.Name = "Panel32"
+        Me.Panel32.Size = New System.Drawing.Size(97, 20)
+        Me.Panel32.TabIndex = 69
+        '
+        'valu_ranking_splurge
+        '
+        Me.valu_ranking_splurge.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_ranking_splurge.Location = New System.Drawing.Point(2, 2)
+        Me.valu_ranking_splurge.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
+        Me.valu_ranking_splurge.Name = "valu_ranking_splurge"
+        Me.valu_ranking_splurge.Size = New System.Drawing.Size(93, 16)
+        Me.valu_ranking_splurge.TabIndex = 11
+        Me.valu_ranking_splurge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_ranking_splurge.ThousandsSeparator = true
         '
         'AdvH_splurgerank
         '
@@ -12911,17 +13222,6 @@ Partial Class TL_SaveEditor
         Me.AdvH_pamperedrank.TabStop = false
         Me.AdvH_pamperedrank.Visible = false
         '
-        'valu_ranking_splurge
-        '
-        Me.valu_ranking_splurge.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_ranking_splurge.Location = New System.Drawing.Point(274, 267)
-        Me.valu_ranking_splurge.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
-        Me.valu_ranking_splurge.Name = "valu_ranking_splurge"
-        Me.valu_ranking_splurge.Size = New System.Drawing.Size(93, 16)
-        Me.valu_ranking_splurge.TabIndex = 11
-        Me.valu_ranking_splurge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_ranking_splurge.ThousandsSeparator = true
-        '
         'Title_ranking_splurge
         '
         Me.Title_ranking_splurge.BackColor = System.Drawing.Color.Transparent
@@ -12940,17 +13240,6 @@ Partial Class TL_SaveEditor
         Me.Icon_ranking_splurge.Size = New System.Drawing.Size(50, 64)
         Me.Icon_ranking_splurge.TabIndex = 9
         Me.Icon_ranking_splurge.TabStop = false
-        '
-        'valu_ranking_pampered
-        '
-        Me.valu_ranking_pampered.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_ranking_pampered.Location = New System.Drawing.Point(274, 177)
-        Me.valu_ranking_pampered.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
-        Me.valu_ranking_pampered.Name = "valu_ranking_pampered"
-        Me.valu_ranking_pampered.Size = New System.Drawing.Size(93, 16)
-        Me.valu_ranking_pampered.TabIndex = 8
-        Me.valu_ranking_pampered.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_ranking_pampered.ThousandsSeparator = true
         '
         'Title_ranking_pampered
         '
@@ -12976,7 +13265,7 @@ Partial Class TL_SaveEditor
         Me.Panel_save_mii.BackColor = System.Drawing.Color.Transparent
         Me.Panel_save_mii.BackgroundImage = CType(resources.GetObject("Panel_save_mii.BackgroundImage"),System.Drawing.Image)
         Me.Panel_save_mii.Controls.Add(Me.Text_save_mii)
-        Me.Panel_save_mii.Location = New System.Drawing.Point(496, 460)
+        Me.Panel_save_mii.Location = New System.Drawing.Point(547, 511)
         Me.Panel_save_mii.Name = "Panel_save_mii"
         Me.Panel_save_mii.Size = New System.Drawing.Size(100, 28)
         Me.Panel_save_mii.TabIndex = 25
@@ -13001,7 +13290,7 @@ Partial Class TL_SaveEditor
         Me.Panel_select_mii.BackColor = System.Drawing.Color.Transparent
         Me.Panel_select_mii.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
         Me.Panel_select_mii.Controls.Add(Me.Select_mii)
-        Me.Panel_select_mii.Location = New System.Drawing.Point(3, 460)
+        Me.Panel_select_mii.Location = New System.Drawing.Point(3, 511)
         Me.Panel_select_mii.Name = "Panel_select_mii"
         Me.Panel_select_mii.Size = New System.Drawing.Size(100, 28)
         Me.Panel_select_mii.TabIndex = 24
@@ -13045,9 +13334,9 @@ Partial Class TL_SaveEditor
         Me.Panel_description.BackColor = System.Drawing.Color.Transparent
         Me.Panel_description.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
         Me.Panel_description.Controls.Add(Me.Text_description)
-        Me.Panel_description.Location = New System.Drawing.Point(0, 525)
+        Me.Panel_description.Location = New System.Drawing.Point(0, 575)
         Me.Panel_description.Name = "Panel_description"
-        Me.Panel_description.Size = New System.Drawing.Size(600, 25)
+        Me.Panel_description.Size = New System.Drawing.Size(650, 25)
         Me.Panel_description.TabIndex = 28
         Me.Panel_description.Visible = false
         '
@@ -13060,7 +13349,7 @@ Partial Class TL_SaveEditor
         Me.Text_description.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Text_description.Location = New System.Drawing.Point(0, 0)
         Me.Text_description.Name = "Text_description"
-        Me.Text_description.Size = New System.Drawing.Size(600, 25)
+        Me.Text_description.Size = New System.Drawing.Size(650, 25)
         Me.Text_description.TabIndex = 0
         Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
@@ -13070,7 +13359,7 @@ Partial Class TL_SaveEditor
         Me.Panel_done.BackColor = System.Drawing.Color.Transparent
         Me.Panel_done.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
         Me.Panel_done.Controls.Add(Me.Text_done)
-        Me.Panel_done.Location = New System.Drawing.Point(476, 479)
+        Me.Panel_done.Location = New System.Drawing.Point(526, 529)
         Me.Panel_done.Name = "Panel_done"
         Me.Panel_done.Size = New System.Drawing.Size(124, 46)
         Me.Panel_done.TabIndex = 29
@@ -13188,26 +13477,13 @@ Partial Class TL_SaveEditor
         Me.Icon_uncheckupdate.TabIndex = 0
         Me.Icon_uncheckupdate.TabStop = false
         '
-        'Text_notinteraction
-        '
-        Me.Text_notinteraction.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Text_notinteraction.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Text_notinteraction.Enabled = false
-        Me.Text_notinteraction.Location = New System.Drawing.Point(2, 2)
-        Me.Text_notinteraction.Name = "Text_notinteraction"
-        Me.Text_notinteraction.ReadOnly = true
-        Me.Text_notinteraction.Size = New System.Drawing.Size(437, 20)
-        Me.Text_notinteraction.TabIndex = 276
-        Me.Text_notinteraction.Text = "This interaction is not listed. You can extract him and share it"
-        Me.Text_notinteraction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
-        Me.ClientSize = New System.Drawing.Size(600, 550)
+        Me.ClientSize = New System.Drawing.Size(650, 600)
         Me.Controls.Add(Me.Panel_uncheckupdate)
         Me.Controls.Add(Me.Specharac3ds)
         Me.Controls.Add(Me.AdvH_filever)
@@ -13267,8 +13543,19 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_menu,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_islandedit.ResumeLayout(false)
         Me.Panel_islandedit.PerformLayout
-        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel38.ResumeLayout(false)
         CType(Me.valu_lastdatesave,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Warning_islandaddress,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel36.ResumeLayout(false)
+        CType(Me.valu_islandaddress_p4,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel37.ResumeLayout(false)
+        CType(Me.valu_islandaddress_p3,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel35.ResumeLayout(false)
+        CType(Me.valu_islandaddress_p2,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel34.ResumeLayout(false)
+        CType(Me.valu_islandaddress_p1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_islandname,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_islandnamepronun,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_rankboard,System.ComponentModel.ISupportInitialize).EndInit
@@ -13448,6 +13735,16 @@ Partial Class TL_SaveEditor
         Me.TabControl1.ResumeLayout(false)
         Me.Tab_mii_edit.ResumeLayout(false)
         Me.Tab_mii_edit.PerformLayout
+        Me.Panel31.ResumeLayout(false)
+        CType(Me.valu_economy,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel28.ResumeLayout(false)
+        CType(Me.valu_miihouse,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel24.ResumeLayout(false)
+        CType(Me.valu_switch_clothes,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel23.ResumeLayout(false)
+        CType(Me.valu_switch_interiors,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel22.ResumeLayout(false)
+        CType(Me.valu_switch_hats,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_edit_haircolor.ResumeLayout(false)
         Me.Panel_edit_haircolor.PerformLayout
         CType(Me.AdvH_edithaircolor,System.ComponentModel.ISupportInitialize).EndInit
@@ -13494,19 +13791,26 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_favcolor,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_relarealtoyou,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_creator,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_miieconomy,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_interior,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_miihouse,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_switchinteriors,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_miieditmusic,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_cathphrase,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_switchclothes,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_inventory,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_switchhats,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_haircolor,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_haircolor,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox34,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_favcolor,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_favcolor,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_miihouse,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_switch_interiors,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_miihouse,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_switch_clothes,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_miiedit_music,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_cathphrase,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_switch_hats,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_inventory,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Mii,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel2.ResumeLayout(false)
@@ -13587,6 +13891,11 @@ Partial Class TL_SaveEditor
         Me.Panel13.ResumeLayout(false)
         Me.Tab_mii_status.ResumeLayout(false)
         Me.Tab_mii_status.PerformLayout
+        Me.Panel_edit_fullness.ResumeLayout(false)
+        CType(Me.Icon_edit_full_100,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_edit_full_50,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_edit_full_25,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_edit_full_00,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_worst,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_fav,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_allfav,System.ComponentModel.ISupportInitialize).EndInit
@@ -13594,21 +13903,6 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_fullness,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_experience,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_miilevel,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_miieconomy,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_switchinteriors,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_switchclothes,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_switchhats,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_switch_interiors,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_switch_interiors,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_switch_clothes,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_switch_clothes,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_switch_hats,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_switch_hats,System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel_edit_fullness.ResumeLayout(false)
-        CType(Me.Icon_edit_full_100,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_edit_full_50,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_edit_full_25,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_edit_full_00,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_chkfullness,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_experience,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_itemmii_8,System.ComponentModel.ISupportInitialize).EndInit
@@ -13617,7 +13911,6 @@ Partial Class TL_SaveEditor
         CType(Me.valu_itemmii_6,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_itemmii_5,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel3.ResumeLayout(false)
-        Me.Panel3.PerformLayout
         CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_interacunknow,System.ComponentModel.ISupportInitialize).EndInit
@@ -13648,6 +13941,7 @@ Partial Class TL_SaveEditor
         Me.Panel17.ResumeLayout(false)
         Me.Panel17.PerformLayout
         CType(Me.valu_interaction,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_target1_foods.ResumeLayout(false)
         CType(Me.valu_itemmii_1,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_itemmii_4,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_itemmii_2,System.ComponentModel.ISupportInitialize).EndInit
@@ -13663,8 +13957,6 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_experience,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_level,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_fullness,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox34,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_economy,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_fullness,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_exp,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_allfav_2,System.ComponentModel.ISupportInitialize).EndInit
@@ -13673,8 +13965,8 @@ Partial Class TL_SaveEditor
         CType(Me.valu_fav_3,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_worst_2,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_worst_1,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_allfav_1,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_noeat,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_allfav_1,System.ComponentModel.ISupportInitialize).EndInit
         Me.Tab_mii_friendlist.ResumeLayout(false)
         Me.Tab_mii_friendlist.PerformLayout
         CType(Me.AdvH_setallrelation,System.ComponentModel.ISupportInitialize).EndInit
@@ -13897,11 +14189,13 @@ Partial Class TL_SaveEditor
         CType(Me.valu_friend_rela_45,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_friend_rela_44,System.ComponentModel.ISupportInitialize).EndInit
         Me.Tab_mii_extras.ResumeLayout(false)
+        Me.Panel33.ResumeLayout(false)
+        CType(Me.valu_ranking_pampered,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel32.ResumeLayout(false)
+        CType(Me.valu_ranking_splurge,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_splurgerank,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_pamperedrank,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_ranking_splurge,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_ranking_splurge,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_ranking_pampered,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_ranking_pampered,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_save_mii.ResumeLayout(false)
         Me.Panel_select_mii.ResumeLayout(false)
@@ -14206,8 +14500,6 @@ End Sub
     Friend WithEvents Title_foods_worst As System.Windows.Forms.Label
     Friend WithEvents Title_foods_favorite As System.Windows.Forms.Label
     Friend WithEvents Title_foods_allfav As System.Windows.Forms.Label
-    Friend WithEvents Label29 As System.Windows.Forms.Label
-    Friend WithEvents Label28 As System.Windows.Forms.Label
     Friend WithEvents Text_level As System.Windows.Forms.Label
     Friend WithEvents Icon_experience As System.Windows.Forms.PictureBox
     Friend WithEvents valu_level As System.Windows.Forms.NumericUpDown
@@ -14475,7 +14767,6 @@ End Sub
     Friend WithEvents Icon_PaparMarioSSSE As System.Windows.Forms.PictureBox
     Friend WithEvents Icon_nintendogscatSE As System.Windows.Forms.PictureBox
     Friend WithEvents Icon_IronfallISE As System.Windows.Forms.PictureBox
-    Friend WithEvents Select_allfav_US1 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_worst_US2 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_worst_US1 As System.Windows.Forms.ComboBox
     Friend WithEvents Select_fav_US3 As System.Windows.Forms.ComboBox
@@ -14904,7 +15195,6 @@ End Sub
     Friend WithEvents Panel21 As System.Windows.Forms.Panel
     Friend WithEvents valu_place_1 As System.Windows.Forms.NumericUpDown
     Friend WithEvents Select_miihouse As System.Windows.Forms.ComboBox
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
     Friend WithEvents valu_interaction2 As System.Windows.Forms.NumericUpDown
     Friend WithEvents valu_interaction As System.Windows.Forms.NumericUpDown
     Friend WithEvents Title_lastdatesave As System.Windows.Forms.Label
@@ -14916,5 +15206,32 @@ End Sub
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
     Friend WithEvents Text_notinteraction As System.Windows.Forms.TextBox
+    Friend WithEvents Panel31 As System.Windows.Forms.Panel
+    Friend WithEvents Title_miieconomy As System.Windows.Forms.Label
+    Friend WithEvents Title_switch_interiors As System.Windows.Forms.Label
+    Friend WithEvents Title_switch_clothes As System.Windows.Forms.Label
+    Friend WithEvents Panel28 As System.Windows.Forms.Panel
+    Friend WithEvents Panel24 As System.Windows.Forms.Panel
+    Friend WithEvents Panel23 As System.Windows.Forms.Panel
+    Friend WithEvents Panel22 As System.Windows.Forms.Panel
+    Friend WithEvents Title_switch_hats As System.Windows.Forms.Label
+    Friend WithEvents Panel33 As System.Windows.Forms.Panel
+    Friend WithEvents Panel32 As System.Windows.Forms.Panel
+    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel36 As System.Windows.Forms.Panel
+    Friend WithEvents valu_islandaddress_p4 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Panel37 As System.Windows.Forms.Panel
+    Friend WithEvents valu_islandaddress_p3 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Panel35 As System.Windows.Forms.Panel
+    Friend WithEvents valu_islandaddress_p2 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Panel34 As System.Windows.Forms.Panel
+    Friend WithEvents valu_islandaddress_p1 As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Title_islandaddress As System.Windows.Forms.Label
+    Friend WithEvents Warning_islandaddress As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel38 As System.Windows.Forms.Panel
+    Friend WithEvents Panel_target1_foods As System.Windows.Forms.Panel
+    Friend WithEvents Select_target1_foodUS As System.Windows.Forms.ComboBox
+    Friend WithEvents Select_target1_foodEU As System.Windows.Forms.ComboBox
+    Friend WithEvents Select_allfav_US1 As System.Windows.Forms.ComboBox
 
 End Class

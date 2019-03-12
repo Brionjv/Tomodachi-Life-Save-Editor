@@ -178,7 +178,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABo
-        DQAAAk1TRnQBSQFMAgEBBgEAAbgBBwG4AQcBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        DQAAAk1TRnQBSQFMAgEBBgEAARgBCAEYAQgBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABIAMAAQEBAAEgBgABIBYAA18B4AMWAR70AANcAd8DQAH9AVgBWQFYAeMBVwFcAVcB3wFXAlwB3wMt
         AUboAAMhATADWQHyAcUBywHKAf8B0gLTAf8BpQKpAf8DYAHeAVkCXAHPAzcBW+QAA1gB7wHUAt0B/wH3
         AvgB/wHQAtEB/wGlAqcB/wEAAYABAAH/AVsCXwHbAzoBYC8AAf8BjwGRAYAB/wGPAZEBAAH/AZABkQGA
@@ -360,6 +360,12 @@
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVBhXY1A4zKp1TBCIgAwG5SMcjme0gAjIYDA6
         IQXhABmoMgg9h1kBpv4U09trAKQAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="Changelog.Text" xml:space="preserve">
+    <value>Update target 1 feature (show foods list when is needed)
+Add island's address (can be edited as you want, but some values can corrupt save file)
+Hide interaction 2 (need more research)
+Unactive Advance help</value>
   </data>
   <data name="Settings_credits.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -970,6 +976,34 @@ Visual Basic 2010 - Visual Studio 2012 - Microsoft Word - Microsoft Excel</value
         /7qCUp3qCOohWCaqS1qnj78rzUoDvtAWaCx/A0lYYhgeyKiFAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="PictureBox34.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
   <data name="Mii.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACMAAABHCAYAAACNvP4VAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -1487,34 +1521,6 @@ Visual Basic 2010 - Visual Studio 2012 - Microsoft Word - Microsoft Excel</value
         OfB1RK7dz7qmFEJ2dJ2diYAABwCG/lyCTW2Eyxm0+cOz8LlzZN1xhx2qGxufE4F6e5WxcKGybrlFbqwM
         crI4C7pggTLRz8yzv0W+sUqlj726Kx36D+VG8u7avHGhL76g0GefUVKvDRR5zU8+ofCTT3JdSOZyJMTf
         7N0U2flz9T/2IPe0HbkokgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="PictureBox34.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
 </value>
   </data>
   <data name="Danger_friendlist.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
