@@ -4604,7 +4604,7 @@ Partial Class TL_SaveEditor
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(518, 392)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = resources.GetString("Changelog.Text")
+        Me.Changelog.Text = "Fix reading of Island's address" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Add tuto to found save file with Citra Emulator"
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version
@@ -4614,7 +4614,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 3.0.5"
+        Me.Text_TLSE_version.Text = "Version 3.0.6"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7567,7 +7567,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_targets.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_targets.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_targets.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_targets.Location = New System.Drawing.Point(604, 92)
+        Me.AdvH_targets.Location = New System.Drawing.Point(604, 99)
         Me.AdvH_targets.Name = "AdvH_targets"
         Me.AdvH_targets.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_targets.TabIndex = 251
@@ -7613,7 +7613,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_target2.BackColor = System.Drawing.Color.Transparent
         Me.Title_target2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_target2.Location = New System.Drawing.Point(475, 46)
+        Me.Title_target2.Location = New System.Drawing.Point(475, 53)
         Me.Title_target2.Name = "Title_target2"
         Me.Title_target2.Size = New System.Drawing.Size(153, 13)
         Me.Title_target2.TabIndex = 167
@@ -7624,7 +7624,7 @@ Partial Class TL_SaveEditor
         '
         Me.Title_target1.BackColor = System.Drawing.Color.Transparent
         Me.Title_target1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Title_target1.Location = New System.Drawing.Point(475, 6)
+        Me.Title_target1.Location = New System.Drawing.Point(475, 5)
         Me.Title_target1.Name = "Title_target1"
         Me.Title_target1.Size = New System.Drawing.Size(152, 13)
         Me.Title_target1.TabIndex = 166
@@ -7690,7 +7690,7 @@ Partial Class TL_SaveEditor
         Me.Panel_target2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_target2.Controls.Add(Me.valu_target2)
         Me.Panel_target2.Controls.Add(Me.Select_target2)
-        Me.Panel_target2.Location = New System.Drawing.Point(478, 62)
+        Me.Panel_target2.Location = New System.Drawing.Point(478, 69)
         Me.Panel_target2.Name = "Panel_target2"
         Me.Panel_target2.Size = New System.Drawing.Size(150, 25)
         Me.Panel_target2.TabIndex = 161
@@ -7724,7 +7724,7 @@ Partial Class TL_SaveEditor
         Me.Panel_target1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_target1.Controls.Add(Me.valu_target1)
         Me.Panel_target1.Controls.Add(Me.Select_target1)
-        Me.Panel_target1.Location = New System.Drawing.Point(478, 22)
+        Me.Panel_target1.Location = New System.Drawing.Point(478, 21)
         Me.Panel_target1.Name = "Panel_target1"
         Me.Panel_target1.Size = New System.Drawing.Size(150, 25)
         Me.Panel_target1.TabIndex = 160
@@ -7816,7 +7816,7 @@ Partial Class TL_SaveEditor
         Me.Panel_target1_foods.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_target1_foods.Controls.Add(Me.Select_target1_foodUS)
         Me.Panel_target1_foods.Controls.Add(Me.Select_target1_foodEU)
-        Me.Panel_target1_foods.Location = New System.Drawing.Point(478, 22)
+        Me.Panel_target1_foods.Location = New System.Drawing.Point(478, 21)
         Me.Panel_target1_foods.Name = "Panel_target1_foods"
         Me.Panel_target1_foods.Size = New System.Drawing.Size(150, 25)
         Me.Panel_target1_foods.TabIndex = 253
@@ -13379,7 +13379,7 @@ Partial Class TL_SaveEditor
         '
         'Timer_done
         '
-        Me.Timer_done.Interval = 400
+        Me.Timer_done.Interval = 600
         '
         'Text_savefileregion
         '

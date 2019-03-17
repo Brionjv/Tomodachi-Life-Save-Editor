@@ -9,6 +9,7 @@
         Panel_restoresave.Visible = False
         Panel_extractsave_1.Visible = False
         Panel_restoresave_1.Visible = False
+        Panel_citratomo.Visible = False
     End Sub
 
     Public Sub hidemenu()
@@ -16,6 +17,7 @@
         Text_restoresave.BorderStyle = BorderStyle.None
         Text_extractsave_1.BorderStyle = BorderStyle.None
         Text_restoresave_1.BorderStyle = BorderStyle.None
+        Text_citratomo.BorderStyle = BorderStyle.None
     End Sub
 
     Private Sub Closebutton_MouseMove(sender As Object, e As EventArgs) Handles Closebutton.MouseMove
@@ -137,6 +139,13 @@
         Info_image.Visible = False
     End Sub
 
+    Private Sub Text_citratomo_Click(sender As Object, e As EventArgs) Handles Text_citratomo.Click
+        hidepanels()
+        Panel_citratomo.Visible = True
+        hidemenu()
+        Text_citratomo.BorderStyle = BorderStyle.FixedSingle
+    End Sub
+
     Private Sub Text_extractsave_Click(sender As Object, e As EventArgs) Handles Text_extractsave.Click
         hidepanels()
         Panel_extractsave.Visible = True
@@ -251,6 +260,19 @@
     End Sub
 
     Private Sub Info_restoresave_1_4_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_1_4.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Panel_citratomo_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_citratomo.MouseMove
+        Info_image.Location = New Point(e.X + 200, e.Y + 15)
+    End Sub
+
+    Private Sub Info_citratomo_2_MouseMove(sender As Object, e As EventArgs) Handles Info_citratomo_2.MouseMove
+        Info_image.Image = My.Resources.Cit_opensaveloc
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_citratomo_2_MouseLeave(sender As Object, e As EventArgs) Handles Info_citratomo_2.MouseLeave
         Info_image.Visible = False
     End Sub
 End Class

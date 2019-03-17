@@ -178,7 +178,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABo
-        DQAAAk1TRnQBSQFMAgEBBgEAARgBCAEYAQgBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        DQAAAk1TRnQBSQFMAgEBBgEAATgBCAE4AQgBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABIAMAAQEBAAEgBgABIBYAA18B4AMWAR70AANcAd8DQAH9AVgBWQFYAeMBVwFcAVcB3wFXAlwB3wMt
         AUboAAMhATADWQHyAcUBywHKAf8B0gLTAf8BpQKpAf8DYAHeAVkCXAHPAzcBW+QAA1gB7wHUAt0B/wH3
         AvgB/wHQAtEB/wGlAqcB/wEAAYABAAH/AVsCXwHbAzoBYC8AAf8BjwGRAYAB/wGPAZEBAAH/AZABkQGA
@@ -360,12 +360,6 @@
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVBhXY1A4zKp1TBCIgAwG5SMcjme0gAjIYDA6
         IQXhABmoMgg9h1kBpv4U09trAKQAAAAASUVORK5CYII=
 </value>
-  </data>
-  <data name="Changelog.Text" xml:space="preserve">
-    <value>Update target 1 feature (show foods list when is needed)
-Add island's address (can be edited as you want, but some values can corrupt save file)
-Hide interaction 2 (need more research)
-Unactive Advance help</value>
   </data>
   <data name="Settings_credits.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

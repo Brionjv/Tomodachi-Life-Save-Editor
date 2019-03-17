@@ -104,7 +104,7 @@ Partial Class TLSE_dialog
         Me.Panel_dialog.Controls.Add(Me.Text_TLSE_dialog)
         Me.Panel_dialog.Controls.Add(Me.Panel_Cancel)
         Me.Panel_dialog.Controls.Add(Me.Panel_OK)
-        Me.Panel_dialog.Location = New System.Drawing.Point(83, 118)
+        Me.Panel_dialog.Location = New System.Drawing.Point(108, 143)
         Me.Panel_dialog.Name = "Panel_dialog"
         Me.Panel_dialog.Size = New System.Drawing.Size(435, 315)
         Me.Panel_dialog.TabIndex = 4
@@ -124,7 +124,7 @@ Partial Class TLSE_dialog
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(600, 550)
+        Me.ClientSize = New System.Drawing.Size(650, 600)
         Me.Controls.Add(Me.Icon_reference)
         Me.Controls.Add(Me.Panel_dialog)
         Me.DoubleBuffered = True

@@ -866,13 +866,13 @@ Public Class TL_SaveEditor
                 Reader.Position = &H10
                 valu_lastdatesave.Value = Reader.ReadUInt32
                 Reader.Position = &H20
-                valu_islandaddress_p1.Value = Reader.ReadInt32
+                valu_islandaddress_p1.Value = Reader.ReadUInt32
                 Reader.Position = &H24
-                valu_islandaddress_p2.Value = Reader.ReadInt32
+                valu_islandaddress_p2.Value = Reader.ReadUInt32
                 Reader.Position = &H28
-                valu_islandaddress_p3.Value = Reader.ReadInt32
+                valu_islandaddress_p3.Value = Reader.ReadUInt32
                 Reader.Position = &H2C
-                valu_islandaddress_p4.Value = Reader.ReadInt32
+                valu_islandaddress_p4.Value = Reader.ReadUInt32
             End If
             If Filever_text.Text = "JP" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
@@ -36037,8 +36037,8 @@ Public Class TL_SaveEditor
         ElseIf Select_interaction.SelectedItem = Select_interaction.Items.Item(106) Then
             valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
             valu_interaction.Value = &H16C
-            valu_interacunknow.Value = &HC00
-            valu_target1.Value = 1
+            valu_interacunknow.Value = &HC01
+            valu_target1.Value = 5
             valu_target2.Value = 65535
             Icon_interaction.Image = My.Resources.apartment_black
             valu_target1.Enabled = True
@@ -36046,7 +36046,7 @@ Public Class TL_SaveEditor
             valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
             valu_interaction.Value = &H16D
             valu_interacunknow.Value = &HC00
-            valu_target1.Value = 1
+            valu_target1.Value = 2
             valu_target2.Value = 65535
             Icon_interaction.Image = My.Resources.apartment_black
             valu_target1.Enabled = True
@@ -38906,4 +38906,5 @@ Public Class TL_SaveEditor
             valu_target1.Value = 0
         End If
     End Sub
+
 End Class
