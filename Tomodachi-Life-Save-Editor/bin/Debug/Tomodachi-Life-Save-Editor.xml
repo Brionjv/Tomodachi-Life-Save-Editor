@@ -1283,6 +1283,10 @@ Tomodachi-Life-Save-Editor
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_extracttravelers">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_gooditems">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -1300,6 +1304,10 @@ Tomodachi-Life-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_hats_03">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_importtravelers">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -1395,6 +1403,10 @@ Tomodachi-Life-Save-Editor
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_reusetravelers">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_right">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -1416,6 +1428,10 @@ Tomodachi-Life-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_switch_interior">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_tent">
 	<summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>

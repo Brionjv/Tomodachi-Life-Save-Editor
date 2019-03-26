@@ -8108,12 +8108,22 @@ Public Class Items_edit
             TL_SaveEditor.Show()
         Catch ex As Exception
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-                TLSE_dialog.Text_TLSE_dialog.Text = "An error has occured when writing editing of items, please report this issue"
-                TLSE_dialog.ShowDialog()
+                If TL_SaveEditor.Text_menu_save.Visible = True Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "An error has occured when writing editing of items, (you have opened a save file) please report this issue"
+                    TLSE_dialog.ShowDialog()
+                Else
+                    TLSE_dialog.Text_TLSE_dialog.Text = "An error has occured when writing editing of items, open a save file (savedataArc.txt) first and retry"
+                    TLSE_dialog.ShowDialog()
+                End If
             End If
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-                TLSE_dialog.Text_TLSE_dialog.Text = "Une erreur est survenue lors de l'écriture de l'édition des objets, veuillez signaler cet erreur s'il vous plaît"
-                TLSE_dialog.ShowDialog()
+                If TL_SaveEditor.Text_menu_save.Visible = True Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Une erreur est survenue lors de l'écriture de l'édition des objets, (vous avez ouvert une sauvegarde) veuillez signaler cet erreur s'il vous plaît"
+                    TLSE_dialog.ShowDialog()
+                Else
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Une erreur est survenue lors de l'écriture de l'édition des objets, ouvrir un fichier de sauvegarde (savedataArc.txt) avant et réessayez"
+                    TLSE_dialog.ShowDialog()
+                End If
             End If
         End Try
     End Sub

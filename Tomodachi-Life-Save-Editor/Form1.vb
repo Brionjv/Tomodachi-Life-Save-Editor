@@ -34846,7 +34846,7 @@ Public Class TL_SaveEditor
                     TLSE_dialog.ShowDialog()
                 End If
                 If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                    TLSE_dialog.Text_TLSE_dialog.Text = "Cette interaction à été extraite avec succès"
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Cette interaction a été extraite avec succès"
                     TLSE_dialog.ShowDialog()
                 End If
             End If

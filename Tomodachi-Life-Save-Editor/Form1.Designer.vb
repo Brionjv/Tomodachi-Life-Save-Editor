@@ -4604,7 +4604,7 @@ Partial Class TL_SaveEditor
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(518, 392)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = "Fix reading of Island's address" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Add tuto to found save file with Citra Emulator"
+        Me.Changelog.Text = "Fix reading of Island's address"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Add tuto to found save file with Citra Emulator"
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version

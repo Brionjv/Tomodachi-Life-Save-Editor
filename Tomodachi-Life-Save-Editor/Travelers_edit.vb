@@ -5,6 +5,21 @@ Public Class Travelers_edit
     Dim savedataArc As String
     Dim stmexp As String
     Dim stmlv As String
+    Dim stptravelers As String
+    Dim TLexplorer As String
+    Dim Datetraveler As String
+    Dim Tent As String
+    Dim interaction As String
+    Dim unknow_1 As String
+    Dim unknow_2 As String
+    Dim unknow_3 As String
+    Dim unknow_4 As String
+    Dim unknow_5 As String
+    Dim unknow_6 As String
+    Dim unknow_7 As String
+    Dim lastdatestp As String
+    Dim target1 As String
+    Dim target2 As String
 
     Public Sub readtravelers()
         Try
@@ -21,6 +36,48 @@ Public Class Travelers_edit
             Reader.Position = &H394FC + Accesstravelers
             stmexp = Reader.Position
             valu_happiness.Value = Reader.ReadByte
+            Reader.Position = &H390E0 + Accesstravelers
+            stptravelers = Reader.Position
+            Text_globaltravelers.Text = Reader.ReadHexString(&HC28)
+            Reader.Position = &H39390 + Accesstravelers
+            Datetraveler = Reader.Position
+            valu_lastdatetraveler.Value = Reader.ReadUInt32
+            Reader.Position = &H3939A + Accesstravelers
+            Tent = Reader.Position
+            valu_tent.Value = Reader.ReadUInt16
+            Reader.Position = &H393A2 + Accesstravelers
+            interaction = Reader.Position
+            valu_interaction.Value = Reader.ReadUInt16
+            Reader.Position = &H393A4 + Accesstravelers
+            target1 = Reader.Position
+            valu_target1.Value = Reader.ReadUInt16
+            Reader.Position = &H393A6 + Accesstravelers
+            target2 = Reader.Position
+            valu_target2.Value = Reader.ReadUInt16
+            Reader.Position = &H39394 + Accesstravelers
+            unknow_1 = Reader.Position
+            valu_unknow_1.Value = Reader.ReadUInt32
+            Reader.Position = &H39398 + Accesstravelers
+            unknow_2 = Reader.Position
+            valu_unknow_2.Value = Reader.ReadByte
+            Reader.Position = &H39399 + Accesstravelers
+            unknow_3 = Reader.Position
+            valu_unknow_3.Value = Reader.ReadByte
+            Reader.Position = &H3939C + Accesstravelers
+            unknow_4 = Reader.Position
+            valu_unknow_4.Value = Reader.ReadUInt16
+            Reader.Position = &H3939E + Accesstravelers
+            unknow_5 = Reader.Position
+            valu_unknow_5.Value = Reader.ReadUInt16
+            Reader.Position = &H393A0 + Accesstravelers
+            unknow_6 = Reader.Position
+            valu_unknow_6.Value = Reader.ReadByte
+            Reader.Position = &H393A1 + Accesstravelers
+            unknow_7 = Reader.Position
+            valu_unknow_7.Value = Reader.ReadByte
+            Reader.Position = &H390D0
+            lastdatestp = Reader.Position
+            valu_lastdatestp.Value = Reader.ReadUInt32
         Catch ex As Exception
             If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
                 TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read this traveler, load a save file first or report this issue"
@@ -418,5 +475,103 @@ Public Class Travelers_edit
 
     Private Sub Text_save_Click(sender As Object, e As EventArgs) Handles Text_save.Click
         writetravelers()
+    End Sub
+
+    Private Sub Fea_extractravelers_Click(sender As Object, e As EventArgs) Handles Fea_extractravelers.Click
+        Try
+            Dim SaveFileDialog1 As New SaveFileDialog
+            SaveFileDialog1.Filter = "Tomodachi Life traveler|*.TLtraveler"
+            SaveFileDialog1.FileName = "Explorer_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
+            If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+                Dim Writer1 As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                Writer1.Close()
+                Dim Writer As New PackageIO.Writer(SaveFileDialog1.FileName, PackageIO.Endian.Little)
+                Writer.WriteHexString(Text_globaltravelers.Text)
+                If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "This traveler has been successfully extracted"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Ce voyageur a été extrait avec succès"
+                    TLSE_dialog.ShowDialog()
+                End If
+            End If
+        Catch ex As Exception
+            If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Extraction of this traveler has failed, retry or report this issue"
+                TLSE_dialog.ShowDialog()
+            End If
+            If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'extraction de ce voyageur a échoué, réessayez ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
+            End If
+        End Try
+    End Sub
+
+    Private Sub Fea_importravelers_Click(sender As Object, e As EventArgs) Handles Fea_importravelers.Click
+        Dim open As New OpenFileDialog
+        If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Open a Tomodachi Life traveler file" & vbNewLine & "Current traveler will be replace by traveler in Tomodachi Life traveler file" & vbNewLine & vbNewLine & "Do you want to continue ?"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ouvrir un fichier Tomodachi Life traveler" & vbNewLine & "Le voyageur actuel va être remplacé par le voyageur du fichier Tomodachi Life traveler" & vbNewLine & vbNewLine & "Voulez-vous continuer ?"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.Cancel_Button.Text = "Annuler"
+            TLSE_dialog.ShowDialog()
+        End If
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+                open.Filter = "Tomodachi Life traveler|*.TLtraveler"
+                open.Title = "Open a Tomodachi Life traveler file"
+            End If
+            If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+                open.Filter = "Tomodachi Life traveler|*.TLtraveler"
+                open.Title = "Ouvrir un fichier Tomodachi Life traveler"
+            End If
+            open.ShowDialog()
+            TLexplorer = open.FileName
+            Try
+                Dim Readexplo As New PackageIO.Reader(TLexplorer, PackageIO.Endian.Little)
+                Readexplo.Position = &H0
+                Text_globaltravelers.Text = Readexplo.ReadHexString(&HC28)
+                Readexplo.Close()
+            Catch ex As Exception
+                If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read Tomodachi Life traveler file" & vbNewLine & "Select a valid Tomodachi Life traveler file or report this issue"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "La lecture du fichier Tomodachi Life traveler a échoué" & vbNewLine & "Sélectionnez un fichier Tomodachi Life traveler valide ou signalez cet erreur"
+                    TLSE_dialog.ShowDialog()
+                End If
+            End Try
+            Try
+                Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+                Writer.Position = stptravelers
+                Writer.WriteHexString(Text_globaltravelers.Text)
+                If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "This traveler has been successfully replaced"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Ce voyageur a été remplacé avec succès"
+                    TLSE_dialog.ShowDialog()
+                End If
+                readtravelers()
+            Catch ex As Exception
+                If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Failed to write Tomodachi Life traveler file" & vbNewLine & "Make sure you have opened a Tomodachi Life save file before or report this issue"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "L'écriture du fichier Tomodachi Life traveler a échoué" & vbNewLine & "Soyez sûr d'avoir ouvert une sauvegarde de Tomodachi Life ou signalez cet erreur"
+                    TLSE_dialog.ShowDialog()
+                End If
+            End Try
+        End If
     End Sub
 End Class

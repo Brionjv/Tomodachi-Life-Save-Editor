@@ -1318,6 +1318,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_tent.png" />
+    <None Include="Resources\Icon_reusetravelers.png" />
+    <None Include="Resources\icon_extracttravelers.png" />
+    <None Include="Resources\icon_importtravelers.png" />
     <None Include="Resources\Cit_opensaveloc.png" />
     <None Include="Resources\icon_danger.png" />
     <None Include="Resources\icon_xray.png" />
