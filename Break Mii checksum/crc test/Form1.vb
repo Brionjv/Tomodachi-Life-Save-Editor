@@ -12,21 +12,12 @@ Public Class Form1
     Public Sub GetCrc()
         Dim crc As Integer = &H0 ' Starting value 
         Dim Polynom As Integer = &H1021 ' As in X^16 + X^12 + X^5 + 1 
-        Dim bytes() As Byte = Nothing
         Dim bit As Boolean
         Dim c15 As Boolean
         Dim i As Integer
-
-        ' Convert the parameter to a Byte-array: 
-        For Each s As String In TextBox2.Text
-            If IsNothing(bytes) Then
-                ReDim bytes(0)
-            Else
-                ReDim Preserve bytes(bytes.Length)
-            End If
-
-            bytes(bytes.Length - 1) = CByte(CStr("&H" & s))
-        Next
+        Dim str As String = TextBox2.Text
+        Dim ctr = PackageIO.Conversions.HexToByteArray(str)
+        Dim bytes As Byte() = ctr
 
         ' Calculate the CRC: 
         For Each b As Byte In bytes
@@ -65,6 +56,40 @@ Public Class Form1
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+        UnicodeStringToBytes
     End Sub
+
+    Private Sub UnicodeStringToBytes()
+        Dim str As String = TextBox2.Text
+        Dim ctr = System.Text.Encoding.Unicode.GetBytes(str)
+        Dim crc As UShort = &H0
+
+        Dim data As Byte() = ctr
+
+        Dim pos = 0
+        Do While (pos < data.Length)
+
+            crc ^= data(pos)
+
+            Dim i = 8
+            Do While (i <> 0)
+                i = (i - 1)
+                If (crc And &H1) <> 0 Then
+                    crc >>= 1
+                    crc ^= &H1021
+                Else
+                    crc >>= 1
+                End If
+            Loop
+
+            pos = (pos + 1)
+
+        Loop
+
+        TextBox1.Text = crc
+        Return
+    End Sub
+
 End Class
 
