@@ -9,3 +9,4 @@ d:\users\brion\documents\visual studio 2012\Projects\crc test\crc test\obj\Debug
 d:\users\brion\documents\visual studio 2012\Projects\crc test\crc test\obj\Debug\crc test.xml
 d:\users\brion\documents\visual studio 2012\Projects\crc test\crc test\obj\Debug\crc test.pdb
 d:\users\brion\documents\visual studio 2012\Projects\crc test\crc test\bin\Debug\PackageIO.dll
+D:\Users\Brion\Documents\Visual Studio 2012\Projects\crc test\crc test\obj\Debug\crc test.vbprojResolveAssemblyReference.cache

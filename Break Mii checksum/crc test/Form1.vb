@@ -1,6 +1,10 @@
-﻿Public Class Form1
+﻿Imports System
+
+Public Class Form1
     Dim savedataArc As String
     Dim number1 As String
+   
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -13,15 +17,16 @@
         Dim c15 As Boolean
         Dim i As Integer
 
-        ' Convert the parameter to a Byte-array:  
+        ' Convert the parameter to a Byte-array: 
+        For Each s As String In TextBox2.Text
             If IsNothing(bytes) Then
                 ReDim bytes(0)
             Else
                 ReDim Preserve bytes(bytes.Length)
             End If
 
-        bytes(bytes.Length - 1) = CByte(CStr(TextBox2.Text))
-
+            bytes(bytes.Length - 1) = CByte(CStr("&H" & s))
+        Next
 
         ' Calculate the CRC: 
         For Each b As Byte In bytes
@@ -38,7 +43,7 @@
         crc = crc And &HFFFF
 
         ' De crc-variable is a decimal value. We return a Hex-value, so we need to convert this to hex. 
-        ' The 8 in the Convert-method means the Hex-base. 
+        ' The 16 in the Convert-method means the Hex-base. 
         Dim retVal As String = System.Convert.ToString(crc, 16)
         TextBox1.Text = retVal
         Return
@@ -58,4 +63,8 @@
         Reader.Position = &H1C70
         TextBox2.Text = Reader.ReadHexString(&H5E)
     End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    End Sub
 End Class
+
