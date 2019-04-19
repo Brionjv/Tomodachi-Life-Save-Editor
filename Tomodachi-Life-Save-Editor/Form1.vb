@@ -327,6 +327,7 @@ Public Class TL_SaveEditor
     Dim Enddateinterac As String
     Dim Enddateinterac2 As String
     Dim Interacunknow As String
+    Dim crcxmodem As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -446,6 +447,72 @@ Public Class TL_SaveEditor
         Timer6.Stop()
         Timer7.Stop()
         Filever_text.ForeColor = Color.White
+    End Sub
+
+    Public Sub XmodemMii()
+        Dim crc As Integer = &H0 ' Starting value 
+        Dim Polynom As Integer = &H1021 ' As in X^16 + X^12 + X^5 + 1 
+        Dim bit As Boolean
+        Dim c15 As Boolean
+        Dim i As Integer
+        Dim str As String = Text_Mii.Text
+        Dim ctr = PackageIO.Conversions.HexToByteArray(str)
+        Dim bytes As Byte() = ctr
+
+        ' Calculate the CRC: 
+        For Each b As Byte In bytes
+            For i = 0 To 7
+                bit = ((b >> (7 - i) And 1)) '= 1) 
+                c15 = ((crc >> 15 And 1)) '= 1) 
+                crc <<= 1
+                If c15 Xor bit Then
+                    crc = crc Xor Polynom
+                End If
+            Next
+        Next
+
+        crc = crc And &HFFFF
+
+        valu_crcxmodem.Value = crc
+        Try
+            Dim Writecrc As New PackageIO.Writer(savedataArc, PackageIO.Endian.Big)
+            Writecrc.Position = crcxmodem
+            Writecrc.WriteUInt16(valu_crcxmodem.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to fix checksum, make sure you have opened a save file or report this issue"
+                TLSE_dialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La correction du checksum a échoué, soyez sûr d'avoir ouvert un fichier de sauvegarde ou signalez cet erreur"
+                TLSE_dialog.ShowDialog()
+            End If
+        End Try
+        Return
+    End Sub
+
+    Public Sub readmiidata()
+        Try
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
+                Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+                Reader.Position = &H1C70 + Accessmii
+                Text_Mii.Text = Reader.ReadHexString(&H5E)
+                Reader.Position = &H1CCE + Accessmii
+                crcxmodem = Reader.Position
+                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
+            End If
+
+            If Filever_text.Text = "JP" Then
+                Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+                Reader.Position = &H1C40 + Accessmii
+                Text_Mii.Text = Reader.ReadHexString(&H5E)
+                Reader.Position = &H1C9E + Accessmii
+                crcxmodem = Reader.Position
+                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
+            End If
+            done()
+        Catch ex As Exception
+        End Try
     End Sub
 
     Public Sub switchfilever()
@@ -727,6 +794,816 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
+    Public Sub readmiiname()
+        Try
+            Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Reader.Position = &H1C8A
+                Select_target1.Items.Item(1) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + &H660
+                Select_target1.Items.Item(2) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 2)
+                Select_target1.Items.Item(3) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 3)
+                Select_target1.Items.Item(4) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 4)
+                Select_target1.Items.Item(5) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 5)
+                Select_target1.Items.Item(6) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 6)
+                Select_target1.Items.Item(7) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 7)
+                Select_target1.Items.Item(8) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 8)
+                Select_target1.Items.Item(9) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 9)
+                Select_target1.Items.Item(10) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 10)
+                Select_target1.Items.Item(11) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 11)
+                Select_target1.Items.Item(12) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 12)
+                Select_target1.Items.Item(13) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 13)
+                Select_target1.Items.Item(14) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 14)
+                Select_target1.Items.Item(15) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 15)
+                Select_target1.Items.Item(16) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 16)
+                Select_target1.Items.Item(17) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 17)
+                Select_target1.Items.Item(18) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 18)
+                Select_target1.Items.Item(19) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 19)
+                Select_target1.Items.Item(20) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 20)
+                Select_target1.Items.Item(21) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 21)
+                Select_target1.Items.Item(22) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 22)
+                Select_target1.Items.Item(23) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 23)
+                Select_target1.Items.Item(24) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 24)
+                Select_target1.Items.Item(25) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 25)
+                Select_target1.Items.Item(26) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 26)
+                Select_target1.Items.Item(27) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 27)
+                Select_target1.Items.Item(28) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 28)
+                Select_target1.Items.Item(29) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 29)
+                Select_target1.Items.Item(30) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 30)
+                Select_target1.Items.Item(31) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 31)
+                Select_target1.Items.Item(32) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 32)
+                Select_target1.Items.Item(33) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 33)
+                Select_target1.Items.Item(34) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 34)
+                Select_target1.Items.Item(35) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 35)
+                Select_target1.Items.Item(36) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 36)
+                Select_target1.Items.Item(37) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 37)
+                Select_target1.Items.Item(38) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 38)
+                Select_target1.Items.Item(39) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 39)
+                Select_target1.Items.Item(40) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 40)
+                Select_target1.Items.Item(41) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 41)
+                Select_target1.Items.Item(42) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 42)
+                Select_target1.Items.Item(43) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 43)
+                Select_target1.Items.Item(44) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 44)
+                Select_target1.Items.Item(45) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 45)
+                Select_target1.Items.Item(46) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 46)
+                Select_target1.Items.Item(47) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 47)
+                Select_target1.Items.Item(48) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 48)
+                Select_target1.Items.Item(49) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 49)
+                Select_target1.Items.Item(50) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 50)
+                Select_target1.Items.Item(51) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 51)
+                Select_target1.Items.Item(52) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 52)
+                Select_target1.Items.Item(53) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 53)
+                Select_target1.Items.Item(54) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 54)
+                Select_target1.Items.Item(55) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 55)
+                Select_target1.Items.Item(56) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 56)
+                Select_target1.Items.Item(57) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 57)
+                Select_target1.Items.Item(58) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 58)
+                Select_target1.Items.Item(59) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 59)
+                Select_target1.Items.Item(60) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 60)
+                Select_target1.Items.Item(61) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 61)
+                Select_target1.Items.Item(62) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 62)
+                Select_target1.Items.Item(63) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 63)
+                Select_target1.Items.Item(64) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 64)
+                Select_target1.Items.Item(65) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 65)
+                Select_target1.Items.Item(66) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 66)
+                Select_target1.Items.Item(67) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 67)
+                Select_target1.Items.Item(68) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 68)
+                Select_target1.Items.Item(69) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 69)
+                Select_target1.Items.Item(70) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 70)
+                Select_target1.Items.Item(71) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 71)
+                Select_target1.Items.Item(72) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 72)
+                Select_target1.Items.Item(73) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 73)
+                Select_target1.Items.Item(74) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 74)
+                Select_target1.Items.Item(75) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 75)
+                Select_target1.Items.Item(76) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 76)
+                Select_target1.Items.Item(77) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 77)
+                Select_target1.Items.Item(78) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 78)
+                Select_target1.Items.Item(79) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 79)
+                Select_target1.Items.Item(80) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 80)
+                Select_target1.Items.Item(81) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 81)
+                Select_target1.Items.Item(82) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 82)
+                Select_target1.Items.Item(83) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 83)
+                Select_target1.Items.Item(84) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 84)
+                Select_target1.Items.Item(85) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 85)
+                Select_target1.Items.Item(86) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 86)
+                Select_target1.Items.Item(87) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 87)
+                Select_target1.Items.Item(88) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 88)
+                Select_target1.Items.Item(89) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 89)
+                Select_target1.Items.Item(90) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 90)
+                Select_target1.Items.Item(91) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 91)
+                Select_target1.Items.Item(92) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 92)
+                Select_target1.Items.Item(93) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 93)
+                Select_target1.Items.Item(94) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 94)
+                Select_target1.Items.Item(95) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 95)
+                Select_target1.Items.Item(96) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 96)
+                Select_target1.Items.Item(97) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 97)
+                Select_target1.Items.Item(98) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 98)
+                Select_target1.Items.Item(99) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 99)
+                Select_target1.Items.Item(100) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A
+                Select_target2.Items.Item(1) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + &H660
+                Select_target2.Items.Item(2) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 2)
+                Select_target2.Items.Item(3) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 3)
+                Select_target2.Items.Item(4) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 4)
+                Select_target2.Items.Item(5) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 5)
+                Select_target2.Items.Item(6) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 6)
+                Select_target2.Items.Item(7) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 7)
+                Select_target2.Items.Item(8) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 8)
+                Select_target2.Items.Item(9) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 9)
+                Select_target2.Items.Item(10) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 10)
+                Select_target2.Items.Item(11) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 11)
+                Select_target2.Items.Item(12) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 12)
+                Select_target2.Items.Item(13) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 13)
+                Select_target2.Items.Item(14) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 14)
+                Select_target2.Items.Item(15) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 15)
+                Select_target2.Items.Item(16) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 16)
+                Select_target2.Items.Item(17) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 17)
+                Select_target2.Items.Item(18) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 18)
+                Select_target2.Items.Item(19) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 19)
+                Select_target2.Items.Item(20) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 20)
+                Select_target2.Items.Item(21) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 21)
+                Select_target2.Items.Item(22) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 22)
+                Select_target2.Items.Item(23) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 23)
+                Select_target2.Items.Item(24) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 24)
+                Select_target2.Items.Item(25) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 25)
+                Select_target2.Items.Item(26) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 26)
+                Select_target2.Items.Item(27) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 27)
+                Select_target2.Items.Item(28) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 28)
+                Select_target2.Items.Item(29) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 29)
+                Select_target2.Items.Item(30) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 30)
+                Select_target2.Items.Item(31) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 31)
+                Select_target2.Items.Item(32) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 32)
+                Select_target2.Items.Item(33) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 33)
+                Select_target2.Items.Item(34) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 34)
+                Select_target2.Items.Item(35) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 35)
+                Select_target2.Items.Item(36) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 36)
+                Select_target2.Items.Item(37) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 37)
+                Select_target2.Items.Item(38) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 38)
+                Select_target2.Items.Item(39) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 39)
+                Select_target2.Items.Item(40) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 40)
+                Select_target2.Items.Item(41) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 41)
+                Select_target2.Items.Item(42) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 42)
+                Select_target2.Items.Item(43) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 43)
+                Select_target2.Items.Item(44) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 44)
+                Select_target2.Items.Item(45) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 45)
+                Select_target2.Items.Item(46) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 46)
+                Select_target2.Items.Item(47) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 47)
+                Select_target2.Items.Item(48) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 48)
+                Select_target2.Items.Item(49) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 49)
+                Select_target2.Items.Item(50) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 50)
+                Select_target2.Items.Item(51) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 51)
+                Select_target2.Items.Item(52) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 52)
+                Select_target2.Items.Item(53) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 53)
+                Select_target2.Items.Item(54) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 54)
+                Select_target2.Items.Item(55) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 55)
+                Select_target2.Items.Item(56) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 56)
+                Select_target2.Items.Item(57) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 57)
+                Select_target2.Items.Item(58) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 58)
+                Select_target2.Items.Item(59) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 59)
+                Select_target2.Items.Item(60) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 60)
+                Select_target2.Items.Item(61) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 61)
+                Select_target2.Items.Item(62) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 62)
+                Select_target2.Items.Item(63) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 63)
+                Select_target2.Items.Item(64) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 64)
+                Select_target2.Items.Item(65) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 65)
+                Select_target2.Items.Item(66) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 66)
+                Select_target2.Items.Item(67) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 67)
+                Select_target2.Items.Item(68) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 68)
+                Select_target2.Items.Item(69) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 69)
+                Select_target2.Items.Item(70) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 70)
+                Select_target2.Items.Item(71) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 71)
+                Select_target2.Items.Item(72) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 72)
+                Select_target2.Items.Item(73) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 73)
+                Select_target2.Items.Item(74) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 74)
+                Select_target2.Items.Item(75) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 75)
+                Select_target2.Items.Item(76) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 76)
+                Select_target2.Items.Item(77) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 77)
+                Select_target2.Items.Item(78) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 78)
+                Select_target2.Items.Item(79) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 79)
+                Select_target2.Items.Item(80) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 80)
+                Select_target2.Items.Item(81) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 81)
+                Select_target2.Items.Item(82) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 82)
+                Select_target2.Items.Item(83) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 83)
+                Select_target2.Items.Item(84) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 84)
+                Select_target2.Items.Item(85) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 85)
+                Select_target2.Items.Item(86) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 86)
+                Select_target2.Items.Item(87) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 87)
+                Select_target2.Items.Item(88) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 88)
+                Select_target2.Items.Item(89) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 89)
+                Select_target2.Items.Item(90) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 90)
+                Select_target2.Items.Item(91) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 91)
+                Select_target2.Items.Item(92) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 92)
+                Select_target2.Items.Item(93) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 93)
+                Select_target2.Items.Item(94) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 94)
+                Select_target2.Items.Item(95) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 95)
+                Select_target2.Items.Item(96) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 96)
+                Select_target2.Items.Item(97) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 97)
+                Select_target2.Items.Item(98) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 98)
+                Select_target2.Items.Item(99) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C8A + (&H660 * 99)
+                Select_target2.Items.Item(100) = Reader.ReadUnicodeString(10)
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = &H1C5A
+                Select_target1.Items.Item(1) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + &H660
+                Select_target1.Items.Item(2) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 2)
+                Select_target1.Items.Item(3) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 3)
+                Select_target1.Items.Item(4) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 4)
+                Select_target1.Items.Item(5) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 5)
+                Select_target1.Items.Item(6) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 6)
+                Select_target1.Items.Item(7) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 7)
+                Select_target1.Items.Item(8) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 8)
+                Select_target1.Items.Item(9) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 9)
+                Select_target1.Items.Item(10) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 10)
+                Select_target1.Items.Item(11) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 11)
+                Select_target1.Items.Item(12) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 12)
+                Select_target1.Items.Item(13) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 13)
+                Select_target1.Items.Item(14) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 14)
+                Select_target1.Items.Item(15) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 15)
+                Select_target1.Items.Item(16) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 16)
+                Select_target1.Items.Item(17) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 17)
+                Select_target1.Items.Item(18) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 18)
+                Select_target1.Items.Item(19) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 19)
+                Select_target1.Items.Item(20) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 20)
+                Select_target1.Items.Item(21) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 21)
+                Select_target1.Items.Item(22) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 22)
+                Select_target1.Items.Item(23) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 23)
+                Select_target1.Items.Item(24) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 24)
+                Select_target1.Items.Item(25) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 25)
+                Select_target1.Items.Item(26) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 26)
+                Select_target1.Items.Item(27) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 27)
+                Select_target1.Items.Item(28) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 28)
+                Select_target1.Items.Item(29) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 29)
+                Select_target1.Items.Item(30) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 30)
+                Select_target1.Items.Item(31) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 31)
+                Select_target1.Items.Item(32) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 32)
+                Select_target1.Items.Item(33) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 33)
+                Select_target1.Items.Item(34) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 34)
+                Select_target1.Items.Item(35) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 35)
+                Select_target1.Items.Item(36) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 36)
+                Select_target1.Items.Item(37) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 37)
+                Select_target1.Items.Item(38) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 38)
+                Select_target1.Items.Item(39) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 39)
+                Select_target1.Items.Item(40) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 40)
+                Select_target1.Items.Item(41) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 41)
+                Select_target1.Items.Item(42) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 42)
+                Select_target1.Items.Item(43) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 43)
+                Select_target1.Items.Item(44) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 44)
+                Select_target1.Items.Item(45) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 45)
+                Select_target1.Items.Item(46) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 46)
+                Select_target1.Items.Item(47) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 47)
+                Select_target1.Items.Item(48) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 48)
+                Select_target1.Items.Item(49) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 49)
+                Select_target1.Items.Item(50) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 50)
+                Select_target1.Items.Item(51) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 51)
+                Select_target1.Items.Item(52) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 52)
+                Select_target1.Items.Item(53) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 53)
+                Select_target1.Items.Item(54) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 54)
+                Select_target1.Items.Item(55) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 55)
+                Select_target1.Items.Item(56) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 56)
+                Select_target1.Items.Item(57) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 57)
+                Select_target1.Items.Item(58) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 58)
+                Select_target1.Items.Item(59) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 59)
+                Select_target1.Items.Item(60) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 60)
+                Select_target1.Items.Item(61) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 61)
+                Select_target1.Items.Item(62) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 62)
+                Select_target1.Items.Item(63) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 63)
+                Select_target1.Items.Item(64) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 64)
+                Select_target1.Items.Item(65) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 65)
+                Select_target1.Items.Item(66) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 66)
+                Select_target1.Items.Item(67) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 67)
+                Select_target1.Items.Item(68) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 68)
+                Select_target1.Items.Item(69) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 69)
+                Select_target1.Items.Item(70) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 70)
+                Select_target1.Items.Item(71) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 71)
+                Select_target1.Items.Item(72) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 72)
+                Select_target1.Items.Item(73) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 73)
+                Select_target1.Items.Item(74) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 74)
+                Select_target1.Items.Item(75) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 75)
+                Select_target1.Items.Item(76) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 76)
+                Select_target1.Items.Item(77) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 77)
+                Select_target1.Items.Item(78) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 78)
+                Select_target1.Items.Item(79) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 79)
+                Select_target1.Items.Item(80) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 80)
+                Select_target1.Items.Item(81) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 81)
+                Select_target1.Items.Item(82) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 82)
+                Select_target1.Items.Item(83) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 83)
+                Select_target1.Items.Item(84) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 84)
+                Select_target1.Items.Item(85) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 85)
+                Select_target1.Items.Item(86) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 86)
+                Select_target1.Items.Item(87) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 87)
+                Select_target1.Items.Item(88) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 88)
+                Select_target1.Items.Item(89) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 89)
+                Select_target1.Items.Item(90) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 90)
+                Select_target1.Items.Item(91) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 91)
+                Select_target1.Items.Item(92) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 92)
+                Select_target1.Items.Item(93) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 93)
+                Select_target1.Items.Item(94) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 94)
+                Select_target1.Items.Item(95) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 95)
+                Select_target1.Items.Item(96) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 96)
+                Select_target1.Items.Item(97) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 97)
+                Select_target1.Items.Item(98) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 98)
+                Select_target1.Items.Item(99) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 99)
+                Select_target1.Items.Item(100) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A
+                Select_target2.Items.Item(1) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + &H660
+                Select_target2.Items.Item(2) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 2)
+                Select_target2.Items.Item(3) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 3)
+                Select_target2.Items.Item(4) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 4)
+                Select_target2.Items.Item(5) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 5)
+                Select_target2.Items.Item(6) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 6)
+                Select_target2.Items.Item(7) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 7)
+                Select_target2.Items.Item(8) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 8)
+                Select_target2.Items.Item(9) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 9)
+                Select_target2.Items.Item(10) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 10)
+                Select_target2.Items.Item(11) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 11)
+                Select_target2.Items.Item(12) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 12)
+                Select_target2.Items.Item(13) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 13)
+                Select_target2.Items.Item(14) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 14)
+                Select_target2.Items.Item(15) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 15)
+                Select_target2.Items.Item(16) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 16)
+                Select_target2.Items.Item(17) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 17)
+                Select_target2.Items.Item(18) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 18)
+                Select_target2.Items.Item(19) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 19)
+                Select_target2.Items.Item(20) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 20)
+                Select_target2.Items.Item(21) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 21)
+                Select_target2.Items.Item(22) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 22)
+                Select_target2.Items.Item(23) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 23)
+                Select_target2.Items.Item(24) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 24)
+                Select_target2.Items.Item(25) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 25)
+                Select_target2.Items.Item(26) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 26)
+                Select_target2.Items.Item(27) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 27)
+                Select_target2.Items.Item(28) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 28)
+                Select_target2.Items.Item(29) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 29)
+                Select_target2.Items.Item(30) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 30)
+                Select_target2.Items.Item(31) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 31)
+                Select_target2.Items.Item(32) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 32)
+                Select_target2.Items.Item(33) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 33)
+                Select_target2.Items.Item(34) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 34)
+                Select_target2.Items.Item(35) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 35)
+                Select_target2.Items.Item(36) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 36)
+                Select_target2.Items.Item(37) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 37)
+                Select_target2.Items.Item(38) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 38)
+                Select_target2.Items.Item(39) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 39)
+                Select_target2.Items.Item(40) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 40)
+                Select_target2.Items.Item(41) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 41)
+                Select_target2.Items.Item(42) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 42)
+                Select_target2.Items.Item(43) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 43)
+                Select_target2.Items.Item(44) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 44)
+                Select_target2.Items.Item(45) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 45)
+                Select_target2.Items.Item(46) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 46)
+                Select_target2.Items.Item(47) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 47)
+                Select_target2.Items.Item(48) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 48)
+                Select_target2.Items.Item(49) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 49)
+                Select_target2.Items.Item(50) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 50)
+                Select_target2.Items.Item(51) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 51)
+                Select_target2.Items.Item(52) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 52)
+                Select_target2.Items.Item(53) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 53)
+                Select_target2.Items.Item(54) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 54)
+                Select_target2.Items.Item(55) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 55)
+                Select_target2.Items.Item(56) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 56)
+                Select_target2.Items.Item(57) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 57)
+                Select_target2.Items.Item(58) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 58)
+                Select_target2.Items.Item(59) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 59)
+                Select_target2.Items.Item(60) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 60)
+                Select_target2.Items.Item(61) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 61)
+                Select_target2.Items.Item(62) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 62)
+                Select_target2.Items.Item(63) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 63)
+                Select_target2.Items.Item(64) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 64)
+                Select_target2.Items.Item(65) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 65)
+                Select_target2.Items.Item(66) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 66)
+                Select_target2.Items.Item(67) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 67)
+                Select_target2.Items.Item(68) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 68)
+                Select_target2.Items.Item(69) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 69)
+                Select_target2.Items.Item(70) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 70)
+                Select_target2.Items.Item(71) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 71)
+                Select_target2.Items.Item(72) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 72)
+                Select_target2.Items.Item(73) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 73)
+                Select_target2.Items.Item(74) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 74)
+                Select_target2.Items.Item(75) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 75)
+                Select_target2.Items.Item(76) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 76)
+                Select_target2.Items.Item(77) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 77)
+                Select_target2.Items.Item(78) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 78)
+                Select_target2.Items.Item(79) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 79)
+                Select_target2.Items.Item(80) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 80)
+                Select_target2.Items.Item(81) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 81)
+                Select_target2.Items.Item(82) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 82)
+                Select_target2.Items.Item(83) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 83)
+                Select_target2.Items.Item(84) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 84)
+                Select_target2.Items.Item(85) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 85)
+                Select_target2.Items.Item(86) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 86)
+                Select_target2.Items.Item(87) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 87)
+                Select_target2.Items.Item(88) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 88)
+                Select_target2.Items.Item(89) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 89)
+                Select_target2.Items.Item(90) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 90)
+                Select_target2.Items.Item(91) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 91)
+                Select_target2.Items.Item(92) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 92)
+                Select_target2.Items.Item(93) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 93)
+                Select_target2.Items.Item(94) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 94)
+                Select_target2.Items.Item(95) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 95)
+                Select_target2.Items.Item(96) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 96)
+                Select_target2.Items.Item(97) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 97)
+                Select_target2.Items.Item(98) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 98)
+                Select_target2.Items.Item(99) = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C5A + (&H660 * 99)
+                Select_target2.Items.Item(100) = Reader.ReadUnicodeString(10)
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
     Public Sub readsavedataArc()
         Try
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
@@ -871,8 +1748,6 @@ Public Class TL_SaveEditor
                 valu_islandaddress_p2.Value = Reader.ReadUInt32
                 Reader.Position = &H28
                 valu_islandaddress_p3.Value = Reader.ReadUInt32
-                Reader.Position = &H2C
-                valu_islandaddress_p4.Value = Reader.ReadUInt32
             End If
             If Filever_text.Text = "JP" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
@@ -1159,6 +2034,7 @@ Public Class TL_SaveEditor
             Text_menu_save.Visible = True
             Filever_text.Enabled = False
             Select_language.Enabled = False
+            readmiiname()
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read savedataArc.txt" & vbNewLine & " Opening of save file has been canceled or something goes wrong" & vbNewLine & "make sure you choose the good save file version or report this issue"
@@ -2587,6 +3463,11 @@ Public Class TL_SaveEditor
                 Reader.Position = &H29AE8 + Accessfriends 'Mii friendlist
                 Place2 = Reader.Position
                 valu_place_2.Value = Reader.ReadUInt16
+                Reader.Position = &H1C70 + Accessmii
+                Text_Mii.Text = Reader.ReadHexString(&H5E)
+                Reader.Position = &H1CCE + Accessmii
+                crcxmodem = Reader.Position
+                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
             End If
 
             If Filever_text.Text = "JP" Then
@@ -2763,6 +3644,11 @@ Public Class TL_SaveEditor
                 Reader.Position = &H24978 + Accessfriends 'Mii friendlist
                 Place2 = Reader.Position
                 valu_place_2.Value = Reader.ReadUInt16
+                Reader.Position = &H1C40 + Accessmii
+                Text_Mii.Text = Reader.ReadHexString(&H5E)
+                Reader.Position = &H1C9E + Accessmii
+                crcxmodem = Reader.Position
+                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
             End If
             Text_save_mii.Enabled = True
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
@@ -2776,406 +3662,6 @@ Public Class TL_SaveEditor
                 Accessrelalist = Miifriendr + &H64
             End If
             readfriendlist()
-            If Text_friendmii_1.Text <> "" Then
-                Select_target1.Items.Item(1) = Text_friendmii_1.Text
-                Select_target2.Items.Item(1) = Text_friendmii_1.Text
-            End If
-            If Text_friendmii_2.Text <> "" Then
-                Select_target1.Items.Item(2) = Text_friendmii_2.Text
-                Select_target2.Items.Item(2) = Text_friendmii_2.Text
-            End If
-            If Text_friendmii_3.Text <> "" Then
-                Select_target1.Items.Item(3) = Text_friendmii_3.Text
-                Select_target2.Items.Item(3) = Text_friendmii_3.Text
-            End If
-            If Text_friendmii_4.Text <> "" Then
-                Select_target1.Items.Item(4) = Text_friendmii_4.Text
-                Select_target2.Items.Item(4) = Text_friendmii_4.Text
-            End If
-            If Text_friendmii_5.Text <> "" Then
-                Select_target1.Items.Item(5) = Text_friendmii_5.Text
-                Select_target2.Items.Item(5) = Text_friendmii_5.Text
-            End If
-            If Text_friendmii_6.Text <> "" Then
-                Select_target1.Items.Item(6) = Text_friendmii_6.Text
-                Select_target2.Items.Item(6) = Text_friendmii_6.Text
-            End If
-            If Text_friendmii_7.Text <> "" Then
-                Select_target1.Items.Item(7) = Text_friendmii_7.Text
-                Select_target2.Items.Item(7) = Text_friendmii_7.Text
-            End If
-            If Text_friendmii_8.Text <> "" Then
-                Select_target1.Items.Item(8) = Text_friendmii_8.Text
-                Select_target2.Items.Item(8) = Text_friendmii_8.Text
-            End If
-            If Text_friendmii_9.Text <> "" Then
-                Select_target1.Items.Item(9) = Text_friendmii_9.Text
-                Select_target2.Items.Item(9) = Text_friendmii_9.Text
-            End If
-            If Text_friendmii_10.Text <> "" Then
-                Select_target1.Items.Item(10) = Text_friendmii_10.Text
-                Select_target2.Items.Item(10) = Text_friendmii_10.Text
-            End If
-            If Text_friendmii_11.Text <> "" Then
-                Select_target1.Items.Item(11) = Text_friendmii_11.Text
-                Select_target2.Items.Item(11) = Text_friendmii_11.Text
-            End If
-            If Text_friendmii_12.Text <> "" Then
-                Select_target1.Items.Item(12) = Text_friendmii_12.Text
-                Select_target2.Items.Item(12) = Text_friendmii_12.Text
-            End If
-            If Text_friendmii_13.Text <> "" Then
-                Select_target1.Items.Item(13) = Text_friendmii_13.Text
-                Select_target2.Items.Item(13) = Text_friendmii_13.Text
-            End If
-            If Text_friendmii_14.Text <> "" Then
-                Select_target1.Items.Item(14) = Text_friendmii_14.Text
-                Select_target2.Items.Item(14) = Text_friendmii_14.Text
-            End If
-            If Text_friendmii_15.Text <> "" Then
-                Select_target1.Items.Item(15) = Text_friendmii_15.Text
-                Select_target2.Items.Item(15) = Text_friendmii_15.Text
-            End If
-            If Text_friendmii_16.Text <> "" Then
-                Select_target1.Items.Item(16) = Text_friendmii_16.Text
-                Select_target2.Items.Item(16) = Text_friendmii_16.Text
-            End If
-            If Text_friendmii_17.Text <> "" Then
-                Select_target1.Items.Item(17) = Text_friendmii_17.Text
-                Select_target2.Items.Item(17) = Text_friendmii_17.Text
-            End If
-            If Text_friendmii_18.Text <> "" Then
-                Select_target1.Items.Item(18) = Text_friendmii_18.Text
-                Select_target2.Items.Item(18) = Text_friendmii_18.Text
-            End If
-            If Text_friendmii_19.Text <> "" Then
-                Select_target1.Items.Item(19) = Text_friendmii_19.Text
-                Select_target2.Items.Item(19) = Text_friendmii_19.Text
-            End If
-            If Text_friendmii_20.Text <> "" Then
-                Select_target1.Items.Item(20) = Text_friendmii_20.Text
-                Select_target2.Items.Item(20) = Text_friendmii_20.Text
-            End If
-            If Text_friendmii_21.Text <> "" Then
-                Select_target1.Items.Item(21) = Text_friendmii_21.Text
-                Select_target2.Items.Item(21) = Text_friendmii_21.Text
-            End If
-            If Text_friendmii_22.Text <> "" Then
-                Select_target1.Items.Item(22) = Text_friendmii_22.Text
-                Select_target2.Items.Item(22) = Text_friendmii_22.Text
-            End If
-            If Text_friendmii_23.Text <> "" Then
-                Select_target1.Items.Item(23) = Text_friendmii_23.Text
-                Select_target2.Items.Item(23) = Text_friendmii_23.Text
-            End If
-            If Text_friendmii_24.Text <> "" Then
-                Select_target1.Items.Item(24) = Text_friendmii_24.Text
-                Select_target2.Items.Item(24) = Text_friendmii_24.Text
-            End If
-            If Text_friendmii_25.Text <> "" Then
-                Select_target1.Items.Item(25) = Text_friendmii_25.Text
-                Select_target2.Items.Item(25) = Text_friendmii_25.Text
-            End If
-            If Text_friendmii_26.Text <> "" Then
-                Select_target1.Items.Item(26) = Text_friendmii_26.Text
-                Select_target2.Items.Item(26) = Text_friendmii_26.Text
-            End If
-            If Text_friendmii_27.Text <> "" Then
-                Select_target1.Items.Item(27) = Text_friendmii_27.Text
-                Select_target2.Items.Item(27) = Text_friendmii_27.Text
-            End If
-            If Text_friendmii_28.Text <> "" Then
-                Select_target1.Items.Item(28) = Text_friendmii_28.Text
-                Select_target2.Items.Item(28) = Text_friendmii_28.Text
-            End If
-            If Text_friendmii_29.Text <> "" Then
-                Select_target1.Items.Item(29) = Text_friendmii_29.Text
-                Select_target2.Items.Item(29) = Text_friendmii_29.Text
-            End If
-            If Text_friendmii_30.Text <> "" Then
-                Select_target1.Items.Item(30) = Text_friendmii_30.Text
-                Select_target2.Items.Item(30) = Text_friendmii_30.Text
-            End If
-            If Text_friendmii_31.Text <> "" Then
-                Select_target1.Items.Item(31) = Text_friendmii_31.Text
-                Select_target2.Items.Item(31) = Text_friendmii_31.Text
-            End If
-            If Text_friendmii_32.Text <> "" Then
-                Select_target1.Items.Item(32) = Text_friendmii_32.Text
-                Select_target2.Items.Item(32) = Text_friendmii_32.Text
-            End If
-            If Text_friendmii_33.Text <> "" Then
-                Select_target1.Items.Item(33) = Text_friendmii_33.Text
-                Select_target2.Items.Item(33) = Text_friendmii_33.Text
-            End If
-            If Text_friendmii_34.Text <> "" Then
-                Select_target1.Items.Item(34) = Text_friendmii_34.Text
-                Select_target2.Items.Item(34) = Text_friendmii_34.Text
-            End If
-            If Text_friendmii_35.Text <> "" Then
-                Select_target1.Items.Item(35) = Text_friendmii_35.Text
-                Select_target2.Items.Item(35) = Text_friendmii_35.Text
-            End If
-            If Text_friendmii_36.Text <> "" Then
-                Select_target1.Items.Item(36) = Text_friendmii_36.Text
-                Select_target2.Items.Item(36) = Text_friendmii_36.Text
-            End If
-            If Text_friendmii_37.Text <> "" Then
-                Select_target1.Items.Item(37) = Text_friendmii_37.Text
-                Select_target2.Items.Item(37) = Text_friendmii_37.Text
-            End If
-            If Text_friendmii_38.Text <> "" Then
-                Select_target1.Items.Item(38) = Text_friendmii_38.Text
-                Select_target2.Items.Item(38) = Text_friendmii_38.Text
-            End If
-            If Text_friendmii_39.Text <> "" Then
-                Select_target1.Items.Item(39) = Text_friendmii_39.Text
-                Select_target2.Items.Item(39) = Text_friendmii_39.Text
-            End If
-            If Text_friendmii_40.Text <> "" Then
-                Select_target1.Items.Item(40) = Text_friendmii_40.Text
-                Select_target2.Items.Item(40) = Text_friendmii_40.Text
-            End If
-            If Text_friendmii_41.Text <> "" Then
-                Select_target1.Items.Item(41) = Text_friendmii_41.Text
-                Select_target2.Items.Item(41) = Text_friendmii_41.Text
-            End If
-            If Text_friendmii_42.Text <> "" Then
-                Select_target1.Items.Item(42) = Text_friendmii_42.Text
-                Select_target2.Items.Item(42) = Text_friendmii_42.Text
-            End If
-            If Text_friendmii_43.Text <> "" Then
-                Select_target1.Items.Item(43) = Text_friendmii_43.Text
-                Select_target2.Items.Item(43) = Text_friendmii_43.Text
-            End If
-            If Text_friendmii_44.Text <> "" Then
-                Select_target1.Items.Item(44) = Text_friendmii_44.Text
-                Select_target2.Items.Item(44) = Text_friendmii_44.Text
-            End If
-            If Text_friendmii_45.Text <> "" Then
-                Select_target1.Items.Item(45) = Text_friendmii_45.Text
-                Select_target2.Items.Item(45) = Text_friendmii_45.Text
-            End If
-            If Text_friendmii_46.Text <> "" Then
-                Select_target1.Items.Item(46) = Text_friendmii_46.Text
-                Select_target2.Items.Item(46) = Text_friendmii_46.Text
-            End If
-            If Text_friendmii_47.Text <> "" Then
-                Select_target1.Items.Item(47) = Text_friendmii_47.Text
-                Select_target2.Items.Item(47) = Text_friendmii_47.Text
-            End If
-            If Text_friendmii_48.Text <> "" Then
-                Select_target1.Items.Item(48) = Text_friendmii_48.Text
-                Select_target2.Items.Item(48) = Text_friendmii_48.Text
-            End If
-            If Text_friendmii_49.Text <> "" Then
-                Select_target1.Items.Item(49) = Text_friendmii_49.Text
-                Select_target2.Items.Item(49) = Text_friendmii_49.Text
-            End If
-            If Text_friendmii_50.Text <> "" Then
-                Select_target1.Items.Item(50) = Text_friendmii_50.Text
-                Select_target2.Items.Item(50) = Text_friendmii_50.Text
-            End If
-            If Text_friendmii_51.Text <> "" Then
-                Select_target1.Items.Item(51) = Text_friendmii_51.Text
-                Select_target2.Items.Item(51) = Text_friendmii_51.Text
-            End If
-            If Text_friendmii_52.Text <> "" Then
-                Select_target1.Items.Item(52) = Text_friendmii_52.Text
-                Select_target2.Items.Item(52) = Text_friendmii_52.Text
-            End If
-            If Text_friendmii_53.Text <> "" Then
-                Select_target1.Items.Item(53) = Text_friendmii_53.Text
-                Select_target2.Items.Item(53) = Text_friendmii_53.Text
-            End If
-            If Text_friendmii_54.Text <> "" Then
-                Select_target1.Items.Item(54) = Text_friendmii_54.Text
-                Select_target2.Items.Item(54) = Text_friendmii_54.Text
-            End If
-            If Text_friendmii_55.Text <> "" Then
-                Select_target1.Items.Item(55) = Text_friendmii_55.Text
-                Select_target2.Items.Item(55) = Text_friendmii_55.Text
-            End If
-            If Text_friendmii_56.Text <> "" Then
-                Select_target1.Items.Item(56) = Text_friendmii_56.Text
-                Select_target2.Items.Item(56) = Text_friendmii_56.Text
-            End If
-            If Text_friendmii_57.Text <> "" Then
-                Select_target1.Items.Item(57) = Text_friendmii_57.Text
-                Select_target2.Items.Item(57) = Text_friendmii_57.Text
-            End If
-            If Text_friendmii_58.Text <> "" Then
-                Select_target1.Items.Item(58) = Text_friendmii_58.Text
-                Select_target2.Items.Item(58) = Text_friendmii_58.Text
-            End If
-            If Text_friendmii_59.Text <> "" Then
-                Select_target1.Items.Item(59) = Text_friendmii_59.Text
-                Select_target2.Items.Item(59) = Text_friendmii_59.Text
-            End If
-            If Text_friendmii_60.Text <> "" Then
-                Select_target1.Items.Item(60) = Text_friendmii_60.Text
-                Select_target2.Items.Item(60) = Text_friendmii_60.Text
-            End If
-            If Text_friendmii_61.Text <> "" Then
-                Select_target1.Items.Item(61) = Text_friendmii_61.Text
-                Select_target2.Items.Item(61) = Text_friendmii_61.Text
-            End If
-            If Text_friendmii_62.Text <> "" Then
-                Select_target1.Items.Item(62) = Text_friendmii_62.Text
-                Select_target2.Items.Item(62) = Text_friendmii_62.Text
-            End If
-            If Text_friendmii_63.Text <> "" Then
-                Select_target1.Items.Item(63) = Text_friendmii_63.Text
-                Select_target2.Items.Item(63) = Text_friendmii_63.Text
-            End If
-            If Text_friendmii_64.Text <> "" Then
-                Select_target1.Items.Item(64) = Text_friendmii_64.Text
-                Select_target2.Items.Item(64) = Text_friendmii_64.Text
-            End If
-            If Text_friendmii_65.Text <> "" Then
-                Select_target1.Items.Item(65) = Text_friendmii_65.Text
-                Select_target2.Items.Item(65) = Text_friendmii_65.Text
-            End If
-            If Text_friendmii_66.Text <> "" Then
-                Select_target1.Items.Item(66) = Text_friendmii_66.Text
-                Select_target2.Items.Item(66) = Text_friendmii_66.Text
-            End If
-            If Text_friendmii_67.Text <> "" Then
-                Select_target1.Items.Item(67) = Text_friendmii_67.Text
-                Select_target2.Items.Item(67) = Text_friendmii_67.Text
-            End If
-            If Text_friendmii_68.Text <> "" Then
-                Select_target1.Items.Item(68) = Text_friendmii_68.Text
-                Select_target2.Items.Item(68) = Text_friendmii_68.Text
-            End If
-            If Text_friendmii_69.Text <> "" Then
-                Select_target1.Items.Item(69) = Text_friendmii_69.Text
-                Select_target2.Items.Item(69) = Text_friendmii_69.Text
-            End If
-            If Text_friendmii_70.Text <> "" Then
-                Select_target1.Items.Item(70) = Text_friendmii_70.Text
-                Select_target2.Items.Item(70) = Text_friendmii_70.Text
-            End If
-            If Text_friendmii_71.Text <> "" Then
-                Select_target1.Items.Item(71) = Text_friendmii_71.Text
-                Select_target2.Items.Item(71) = Text_friendmii_71.Text
-            End If
-            If Text_friendmii_72.Text <> "" Then
-                Select_target1.Items.Item(72) = Text_friendmii_72.Text
-                Select_target2.Items.Item(72) = Text_friendmii_72.Text
-            End If
-            If Text_friendmii_73.Text <> "" Then
-                Select_target1.Items.Item(73) = Text_friendmii_73.Text
-                Select_target2.Items.Item(73) = Text_friendmii_73.Text
-            End If
-            If Text_friendmii_74.Text <> "" Then
-                Select_target1.Items.Item(74) = Text_friendmii_74.Text
-                Select_target2.Items.Item(74) = Text_friendmii_74.Text
-            End If
-            If Text_friendmii_75.Text <> "" Then
-                Select_target1.Items.Item(75) = Text_friendmii_75.Text
-                Select_target2.Items.Item(75) = Text_friendmii_75.Text
-            End If
-            If Text_friendmii_76.Text <> "" Then
-                Select_target1.Items.Item(76) = Text_friendmii_76.Text
-                Select_target2.Items.Item(76) = Text_friendmii_76.Text
-            End If
-            If Text_friendmii_77.Text <> "" Then
-                Select_target1.Items.Item(77) = Text_friendmii_77.Text
-                Select_target2.Items.Item(77) = Text_friendmii_77.Text
-            End If
-            If Text_friendmii_78.Text <> "" Then
-                Select_target1.Items.Item(78) = Text_friendmii_78.Text
-                Select_target2.Items.Item(78) = Text_friendmii_78.Text
-            End If
-            If Text_friendmii_79.Text <> "" Then
-                Select_target1.Items.Item(79) = Text_friendmii_79.Text
-                Select_target2.Items.Item(79) = Text_friendmii_79.Text
-            End If
-            If Text_friendmii_80.Text <> "" Then
-                Select_target1.Items.Item(80) = Text_friendmii_80.Text
-                Select_target2.Items.Item(80) = Text_friendmii_80.Text
-            End If
-            If Text_friendmii_81.Text <> "" Then
-                Select_target1.Items.Item(81) = Text_friendmii_81.Text
-                Select_target2.Items.Item(81) = Text_friendmii_81.Text
-            End If
-            If Text_friendmii_82.Text <> "" Then
-                Select_target1.Items.Item(82) = Text_friendmii_82.Text
-                Select_target2.Items.Item(82) = Text_friendmii_82.Text
-            End If
-            If Text_friendmii_83.Text <> "" Then
-                Select_target1.Items.Item(83) = Text_friendmii_83.Text
-                Select_target2.Items.Item(83) = Text_friendmii_83.Text
-            End If
-            If Text_friendmii_84.Text <> "" Then
-                Select_target1.Items.Item(84) = Text_friendmii_84.Text
-                Select_target2.Items.Item(84) = Text_friendmii_84.Text
-            End If
-            If Text_friendmii_85.Text <> "" Then
-                Select_target1.Items.Item(85) = Text_friendmii_85.Text
-                Select_target2.Items.Item(85) = Text_friendmii_85.Text
-            End If
-            If Text_friendmii_86.Text <> "" Then
-                Select_target1.Items.Item(86) = Text_friendmii_86.Text
-                Select_target2.Items.Item(86) = Text_friendmii_86.Text
-            End If
-            If Text_friendmii_87.Text <> "" Then
-                Select_target1.Items.Item(87) = Text_friendmii_87.Text
-                Select_target2.Items.Item(87) = Text_friendmii_87.Text
-            End If
-            If Text_friendmii_88.Text <> "" Then
-                Select_target1.Items.Item(88) = Text_friendmii_88.Text
-                Select_target2.Items.Item(88) = Text_friendmii_88.Text
-            End If
-            If Text_friendmii_89.Text <> "" Then
-                Select_target1.Items.Item(89) = Text_friendmii_89.Text
-                Select_target2.Items.Item(89) = Text_friendmii_89.Text
-            End If
-            If Text_friendmii_90.Text <> "" Then
-                Select_target1.Items.Item(90) = Text_friendmii_90.Text
-                Select_target2.Items.Item(90) = Text_friendmii_90.Text
-            End If
-            If Text_friendmii_91.Text <> "" Then
-                Select_target1.Items.Item(91) = Text_friendmii_91.Text
-                Select_target2.Items.Item(91) = Text_friendmii_91.Text
-            End If
-            If Text_friendmii_92.Text <> "" Then
-                Select_target1.Items.Item(92) = Text_friendmii_92.Text
-                Select_target2.Items.Item(92) = Text_friendmii_92.Text
-            End If
-            If Text_friendmii_93.Text <> "" Then
-                Select_target1.Items.Item(93) = Text_friendmii_93.Text
-                Select_target2.Items.Item(93) = Text_friendmii_93.Text
-            End If
-            If Text_friendmii_94.Text <> "" Then
-                Select_target1.Items.Item(94) = Text_friendmii_94.Text
-                Select_target2.Items.Item(94) = Text_friendmii_94.Text
-            End If
-            If Text_friendmii_95.Text <> "" Then
-                Select_target1.Items.Item(95) = Text_friendmii_95.Text
-                Select_target2.Items.Item(95) = Text_friendmii_95.Text
-            End If
-            If Text_friendmii_96.Text <> "" Then
-                Select_target1.Items.Item(96) = Text_friendmii_96.Text
-                Select_target2.Items.Item(96) = Text_friendmii_96.Text
-            End If
-            If Text_friendmii_97.Text <> "" Then
-                Select_target1.Items.Item(97) = Text_friendmii_97.Text
-                Select_target2.Items.Item(97) = Text_friendmii_97.Text
-            End If
-            If Text_friendmii_98.Text <> "" Then
-                Select_target1.Items.Item(98) = Text_friendmii_98.Text
-                Select_target2.Items.Item(98) = Text_friendmii_98.Text
-            End If
-            If Text_friendmii_99.Text <> "" Then
-                Select_target1.Items.Item(99) = Text_friendmii_99.Text
-                Select_target2.Items.Item(99) = Text_friendmii_99.Text
-            End If
-            If Text_friendmii_100.Text <> "" Then
-                Select_target1.Items.Item(100) = Text_friendmii_100.Text
-                Select_target2.Items.Item(100) = Text_friendmii_100.Text
-            End If
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read informations of this Mii, make sure you have opened a file or report this issue"
@@ -3205,6 +3691,12 @@ Public Class TL_SaveEditor
             Next
             Writer.Position = Mii1N
             Writer.WriteUnicodeString(Text_lastname.Text)
+            For i As Integer = 0 To 19
+                Writer.Position = Mii1S + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = Mii1S
+            Writer.WriteUnicodeString(Text_nickname.Text)
             Writer.Position = objet1
             Writer.WriteUInt16(valu_itemmii_1.Value)
             Writer.Position = objet2
@@ -3289,6 +3781,7 @@ Public Class TL_SaveEditor
             Writer.WriteUInt16(valu_place_1.Value)
             Writer.Position = Place2
             Writer.WriteUInt16(valu_place_2.Value)
+
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 For i As Integer = 0 To 59
                     Writer.Position = Mii1PP + i
@@ -3302,6 +3795,12 @@ Public Class TL_SaveEditor
                 Next
                 Writer.Position = Mii1NP
                 Writer.WriteUnicodeString(Text_pronun_lastname.Text)
+                For i As Integer = 0 To 39
+                    Writer.Position = Mii1SP + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = Mii1SP
+                Writer.WriteUnicodeString(Text_pronun_nickname.Text)
                 For i As Integer = 0 To 31
                     Writer.Position = bull1 + i
                     Writer.WriteInt8(0)
@@ -5996,7 +6495,7 @@ Public Class TL_SaveEditor
             Select_friend_rela_30.Items.Item(7) = "Sibling"
             Select_friend_rela_30.Items.Item(8) = "Friend (in conflict)"
             Select_friend_rela_30.Items.Item(9) = "Best friend"
-            Text_danger_friendlist.Text = "Miis can have more than one best friend or lover, sweetheart" & vbNewLine & "If your save file is corrupted, report this issue (your save file backup is in ''bak'' folder)"
+            Text_danger_friendlist.Text = "Miis can't have more than one best friend or lover, sweetheart" & vbNewLine & "If your save file is corrupted, report this issue (your save file backup is in ''bak'' folder)"
             Title_miihouse.Text = "Mii house"
             Text_done.Text = "Done !"
             Check_resetmiiapart.Text = "Reset Miis apartment"
@@ -6410,7 +6909,7 @@ Public Class TL_SaveEditor
             Select_friend_rela_30.Items.Item(7) = "Frère/Soeur"
             Select_friend_rela_30.Items.Item(8) = "Ami (en conflit)"
             Select_friend_rela_30.Items.Item(9) = "Meilleur(e) ami(e)"
-            Text_danger_friendlist.Text = "Les Mii ne peuvent pas avoir plus d'un meilleur amis ou amoureux, époux" & vbNewLine & "si votre sauvegarde est corrompu, signalez cet erreur (la copie de votre sauvegarde se trouve dans le dossier''bak'')"
+            Text_danger_friendlist.Text = "Les Mii ne peuvent pas avoir plus d'un meilleur amis ou amoureux, époux(se)" & vbNewLine & "si votre sauvegarde est corrompu, signalez cet erreur (la copie de votre sauvegarde se trouve dans le dossier''bak'')"
             Title_miihouse.Text = "Maison Mii"
             Text_done.Text = "Effectué !"
             Check_resetmiiapart.Text = "Réinitialiser l'appartement des Mii"
@@ -10256,21 +10755,11 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub valu_copying_ValueChanged(sender As Object, e As EventArgs) Handles valu_copying.ValueChanged
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            If valu_copying.Value = 0 Then
-                Text_copying.Text = "Don't Allow"
-            End If
-            If valu_copying.Value = 1 Then
-                Text_copying.Text = "Allow"
-            End If
+        If valu_copying.Value = 0 Then
+            Select_copying.SelectedItem = Select_copying.Items.Item(0)
         End If
-        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            If valu_copying.Value = 0 Then
-                Text_copying.Text = "Interdire"
-            End If
-            If valu_copying.Value = 1 Then
-                Text_copying.Text = "Autoriser"
-            End If
+        If valu_copying.Value = 1 Then
+            Select_copying.SelectedItem = Select_copying.Items.Item(1)
         End If
     End Sub
 
@@ -10764,6 +11253,8 @@ Public Class TL_SaveEditor
         End If
         If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
             writeMii()
+            readmiidata()
+            XmodemMii()
         End If
     End Sub
 
@@ -34385,338 +34876,6 @@ Public Class TL_SaveEditor
         Panel_description.Visible = True
     End Sub
 
-    Private Sub AdvH_allfav_Click(sender As Object, e As EventArgs) Handles AdvH_allfav.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Foods listed :" & vbNewLine & "If your region have foods listed, just select them" & vbNewLine & "you can also see foods that your Mii loves even if he hasn't eaten them" & vbNewLine & vbNewLine & "Unlisted foods :" & vbNewLine & "Foods list doesn't exist, you can edit value has you want but some may not correspond to a food"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 200)
-            TLSE_dialog.Icon_reference.Location = New Point(150, 140)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Nourritures listé : " & vbNewLine & "Si votre région a les nourritures listé,  vous avez juste à les sélectionner" & vbNewLine & "vous pouvez également voir les nourritures que votre Mii aime même si il les a pas mangé" & vbNewLine & vbNewLine & "Nourriture non listé :" & vbNewLine & "La liste des nourritures n'existe pas, vous pouvez éditer les valeurs mais certaines peuvent ne pas correspondre à une nourriture"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 200)
-            TLSE_dialog.Icon_reference.Location = New Point(150, 140)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_apartrenov_Click(sender As Object, e As EventArgs) Handles AdvH_apartrenov.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can click to edit the size of your building" & vbNewLine & "If you have save with a smaller building than you have Mii" & vbNewLine & "you will automatically unlock the top level"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 98)
-            TLSE_dialog.Icon_reference.Location = New Point(98, 481)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquez pour éditer la taille de votre immeuble" & vbNewLine & "Si vous sauvegarder avec une plus petite immeuble que vous avez de Mii" & vbNewLine & "vous débloquerez automatiquement le niveau supérieur"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 98)
-            TLSE_dialog.Icon_reference.Location = New Point(98, 481)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_cathphrase_Click(sender As Object, e As EventArgs) Handles AdvH_cathphrase.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to edit your Mii's catchphrase"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
-            TLSE_dialog.Icon_reference.Location = New Point(75, 110)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour pouvoir éditer les expressions favorite de votre Mii"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
-            TLSE_dialog.Icon_reference.Location = New Point(75, 110)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_childborn_Click(sender As Object, e As EventArgs) Handles AdvH_childborn.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "This is the number of baby born on your island"
-            TLSE_dialog.Panel_dialog.Location = New Point(160, 160)
-            TLSE_dialog.Icon_reference.Location = New Point(85, 290)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can click on this icon to put directly to the maximum"
-            TLSE_dialog.Panel_dialog.Location = New Point(160, 160)
-            TLSE_dialog.Icon_reference.Location = New Point(60, 290)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est le nombre de bébé né sur votre île"
-            TLSE_dialog.Panel_dialog.Location = New Point(160, 160)
-            TLSE_dialog.Icon_reference.Location = New Point(85, 290)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquez sur cette icône pour mettre directement au maximum"
-            TLSE_dialog.Panel_dialog.Location = New Point(160, 160)
-            TLSE_dialog.Icon_reference.Location = New Point(60, 290)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-
-    Private Sub AdvH_concertedit_Click(sender As Object, e As EventArgs) Handles AdvH_concertedit.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to edit concert" & vbNewLine & "This feature is only available with EUR and USA versions"
-            TLSE_dialog.Panel_dialog.Location = New Point(2, 150)
-            TLSE_dialog.Icon_reference.Location = New Point(450, 250)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour pouvoir éditer les concerts" & vbNewLine & "Cette fonctionnalité est uniquement disponible avec les versions EUR et USA"
-            TLSE_dialog.Panel_dialog.Location = New Point(2, 150)
-            TLSE_dialog.Icon_reference.Location = New Point(450, 250)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_copying_Click(sender As Object, e As EventArgs) Handles AdvH_copying.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Check here if your Mii can be copying or not" & vbNewLine & "This feature is not editable without corrupt save file" & vbNewLine & "See issue #17 on Github"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
-            TLSE_dialog.Icon_reference.Location = New Point(450, 110)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.OK_Button.Text = "See"
-            TLSE_dialog.Cancel_Button.Text = "OK"
-            TLSE_dialog.Panel_Cancel.Visible = True
-            TLSE_dialog.Panel_OK.Visible = True
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vérifiez ici si votre Mii peut être copié ou pas" & vbNewLine & "Cette fonctionnalité n'est pas éditable sans corrompre la sauvegarde" & vbNewLine & "Voir issue #17 sur Github"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
-            TLSE_dialog.Icon_reference.Location = New Point(450, 110)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.OK_Button.Text = "Voir"
-            TLSE_dialog.Cancel_Button.Text = "OK"
-            TLSE_dialog.Panel_Cancel.Visible = True
-            TLSE_dialog.Panel_OK.Visible = True
-            TLSE_dialog.ShowDialog()
-        End If
-        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
-            Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/issues/17")
-        End If
-    End Sub
-
-    Private Sub AdvH_creator_Click(sender As Object, e As EventArgs) Handles AdvH_creator.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "This is your Mii creator" & vbNewLine & "This feature is not editable without corrupt save file" & vbNewLine & "See issue #17 on Github"
-            TLSE_dialog.Panel_dialog.Location = New Point(10, 35)
-            TLSE_dialog.Icon_reference.Location = New Point(390, 375)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.OK_Button.Text = "See"
-            TLSE_dialog.Cancel_Button.Text = "OK"
-            TLSE_dialog.Panel_Cancel.Visible = True
-            TLSE_dialog.Panel_OK.Visible = True
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est le créateur de votre Mii" & vbNewLine & "Cette fonctionnalité n'est pas éditable sans corrompre la sauvegarde" & vbNewLine & "Voir issue #17 sur Github"
-            TLSE_dialog.Panel_dialog.Location = New Point(10, 35)
-            TLSE_dialog.Icon_reference.Location = New Point(390, 375)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.OK_Button.Text = "Voir"
-            TLSE_dialog.Cancel_Button.Text = "OK"
-            TLSE_dialog.Panel_Cancel.Visible = True
-            TLSE_dialog.Panel_OK.Visible = True
-            TLSE_dialog.ShowDialog()
-        End If
-        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
-            Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/issues/17")
-        End If
-    End Sub
-
-    Private Sub AdvH_editcathphrase_Click(sender As Object, e As EventArgs) Handles AdvH_editcathphrase.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here your Mii's catchphrase" & vbNewLine & "If you edit a Mii, all cathphrase will be automatically unlocked"
-            TLSE_dialog.Panel_dialog.Location = New Point(150, 200)
-            TLSE_dialog.Icon_reference.Location = New Point(20, 190)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici les expressions favorite de votre Mii" & vbNewLine & "Si vous éditez un Mii, toutes les expressions favorite seront automatiquement débloquées"
-            TLSE_dialog.Panel_dialog.Location = New Point(150, 200)
-            TLSE_dialog.Icon_reference.Location = New Point(20, 190)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_edithaircolor_Click(sender As Object, e As EventArgs) Handles AdvH_edithaircolor.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's hair color" & vbNewLine & "You can click on ''Normal'' to set hair color by default"
-            TLSE_dialog.Panel_dialog.Location = New Point(0, 0)
-            TLSE_dialog.Icon_reference.Location = New Point(300, 320)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici la couleur des cheveux de votre Mii" & vbNewLine & "Vous pouvez cliquer sur ''Normal'' pour mettre la couleur des cheveux par défaut"
-            TLSE_dialog.Panel_dialog.Location = New Point(0, 0)
-            TLSE_dialog.Icon_reference.Location = New Point(300, 320)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_editmiimusic_Click(sender As Object, e As EventArgs) Handles AdvH_editmiimusic.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's songs" & vbNewLine & "This feature is only available with EUR and USA versions"
-            TLSE_dialog.Panel_dialog.Location = New Point(160, 230)
-            TLSE_dialog.Icon_reference.Location = New Point(90, 250)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici les musiques de votre Mii" & vbNewLine & "cette fonctionnalité est uniquement disponible avec les versions EUR et USA"
-            TLSE_dialog.Panel_dialog.Location = New Point(160, 230)
-            TLSE_dialog.Icon_reference.Location = New Point(90, 250)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_emotion_Click(sender As Object, e As EventArgs) Handles AdvH_emotion.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's emotion"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 110)
-            TLSE_dialog.Icon_reference.Location = New Point(450, 460)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici l'émotion de votre Mii"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 110)
-            TLSE_dialog.Icon_reference.Location = New Point(450, 460)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_eventfountain_Click(sender As Object, e As EventArgs) Handles AdvH_eventfountain.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to active fountain event" & vbNewLine & "Miis will give you money in fountain"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 20)
-            TLSE_dialog.Icon_reference.Location = New Point(250, 370)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour activer l'évènement de la fontaine" & vbNewLine & "les Mii vont vous donner de la monnaie dans la fontaine"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 20)
-            TLSE_dialog.Icon_reference.Location = New Point(250, 370)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_experience_Click(sender As Object, e As EventArgs) Handles AdvH_experience.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "This is Mii's experience, you can edit with arrows on the right"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
-            TLSE_dialog.Icon_reference.Location = New Point(380, 100)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est l'experience de votre Mii, vous pouvez editer avec les flèches sur la droite"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
-            TLSE_dialog.Icon_reference.Location = New Point(380, 100)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_extractinterac_Click(sender As Object, e As EventArgs) Handles AdvH_extractinterac.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Click here to extract an interaction" & vbNewLine & "don't touch anything before extract an interaction to have his conditions"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 100)
-            TLSE_dialog.Icon_reference.Location = New Point(5, 460)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Cliquez ici pour extraire une interaction" & vbNewLine & "Ne touchez à rien avant d'extraire une interaction afin d'obtenir ses conditions"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 100)
-            TLSE_dialog.Icon_reference.Location = New Point(5, 460)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_extras_Click(sender As Object, e As EventArgs) Handles AdvH_extras.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to access to extras features"
-            TLSE_dialog.Panel_dialog.Location = New Point(155, 110)
-            TLSE_dialog.Icon_reference.Location = New Point(60, 250)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour accéder aux fonctionnalités extras"
-            TLSE_dialog.Panel_dialog.Location = New Point(155, 110)
-            TLSE_dialog.Icon_reference.Location = New Point(60, 250)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_fav_Click(sender As Object, e As EventArgs) Handles AdvH_fav.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Foods listed :" & vbNewLine & "If your region have foods listed, just select them" & vbNewLine & "you can also see foods that your Mii loves even if he hasn't eaten them" & vbNewLine & vbNewLine & "Unlisted foods :" & vbNewLine & "Foods list doesn't exist, you can edit value has you want but some may not correspond to a food"
-            TLSE_dialog.Panel_dialog.Location = New Point(150, 230)
-            TLSE_dialog.Icon_reference.Location = New Point(150, 220)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Nourritures listé : " & vbNewLine & "Si votre région a les nourritures listé, vous avez juste à les sélectionner" & vbNewLine & "vous pouvez également voir les nourritures que votre Mii aime même si il les a pas mangé" & vbNewLine & vbNewLine & "Nourriture non listé :" & vbNewLine & "La liste des nourritures n'existe pas, vous pouvez éditer les valeurs mais certaines peuvent ne pas correspondre à une nourriture"
-            TLSE_dialog.Panel_dialog.Location = New Point(150, 230)
-            TLSE_dialog.Icon_reference.Location = New Point(150, 220)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
-    Private Sub AdvH_favcolor_Click(sender As Object, e As EventArgs) Handles AdvH_favcolor.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "This is your Mii's favorite color" & vbNewLine & "This feature is not editable without corrupt save file" & vbNewLine & "See issue #17 on Github"
-            TLSE_dialog.Panel_dialog.Location = New Point(10, 118)
-            TLSE_dialog.Icon_reference.Location = New Point(450, 240)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.OK_Button.Text = "See"
-            TLSE_dialog.Cancel_Button.Text = "OK"
-            TLSE_dialog.Panel_Cancel.Visible = True
-            TLSE_dialog.Panel_OK.Visible = True
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est la couleur favorite de votre Mii" & vbNewLine & "Cette fonctionnalité n'est pas éditable sans corrompre la sauvegarde" & vbNewLine & "Voir issue #17 sur Github"
-            TLSE_dialog.Panel_dialog.Location = New Point(10, 118)
-            TLSE_dialog.Icon_reference.Location = New Point(450, 240)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.OK_Button.Text = "Voir"
-            TLSE_dialog.Cancel_Button.Text = "OK"
-            TLSE_dialog.Panel_Cancel.Visible = True
-            TLSE_dialog.Panel_OK.Visible = True
-            TLSE_dialog.ShowDialog()
-        End If
-        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
-            Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/issues/17")
-        End If
-    End Sub
-
-    Private Sub AdvH_filever_Click(sender As Object, e As EventArgs) Handles AdvH_filever.Click
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "This is save file region" & vbNewLine & "Make sure you have selected the good save file region before open a save file" & vbNewLine & vbNewLine & "or an error can occurred when save file or features are loaded"
-            TLSE_dialog.Panel_dialog.Location = New Point(83, 118)
-            TLSE_dialog.Icon_reference.Location = New Point(310, 50)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est la région de la sauvegarde" & vbNewLine & "Soyez sûr d'avoir choisi la bonne région de sauvegarde avant d'ouvrir votre fichier de sauvegarde" & vbNewLine & "ou une erreur peux survenir lorsque le fichier de sauvegarde ou les fonctionnalités sont chargés"
-            TLSE_dialog.Panel_dialog.Location = New Point(150, 230)
-            TLSE_dialog.Icon_reference.Location = New Point(150, 230)
-            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
-            TLSE_dialog.ShowDialog()
-        End If
-    End Sub
-
     Private Sub Icon_bakinteraction_Click(sender As Object, e As EventArgs) Handles Icon_bakinteraction.Click
         Try
             Dim SaveFileDialog1 As New SaveFileDialog
@@ -38907,4 +39066,779 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
+    Private Sub Danger_interaction_Click(sender As Object, e As EventArgs) Handles Danger_interaction.Click
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(2) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a food in the list (target 1)" & vbNewLine & "If foods is not listed in your region : edit value (target 1) as you want"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner une nourriture dans la liste (cible 1)" & vbNewLine & "Si les nourritures ne sont pas listés dans votre région : éditez la valeur (cible 1) comme vous le souhaitez"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(39) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a clothe value"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner une valeur de nourriture"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(56) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a hat value"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner une valeur de chapeau"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(74) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'unknow' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'inconnu' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(75) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'unknow' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'inconnu' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(76) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'friend' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'ami' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(77) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'friend' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'ami' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(78) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select 2 'friend' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner 2 Mii 'ami' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(79) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select 2 'friend' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner 2 Mii 'ami' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(80) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select 2 'friend' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner 2 Mii 'ami' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(81) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Show heart in windows but freeze when you talk with Mii"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Affiche un coeur dans la fenêtre mais bug quand on parle au Mii"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(82) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'lover' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'amoureux(se)' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(83) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'lover' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'amoureux(se)' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(84) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'spouse' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'époux(se)' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(85) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'spouse' Mii in Mii friend list" & vbNewLine & vbNewLine & "Mii target must have same interaction (target this Mii)"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'époux(se)' dans la liste d'amis" & vbNewLine & vbNewLine & "Le Mii cible doit avoir le même interaction (ciblez ce Mii)"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(86) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'spouse' Mii in Mii friend list" & vbNewLine & vbNewLine & "Mii target must have same interaction (target this Mii)"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'époux(se)' dans la liste d'amis" & vbNewLine & vbNewLine & "Le Mii cible doit avoir le même interaction (ciblez ce Mii)"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(87) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'friend (in conflict)' Mii in Mii friend list" & vbNewLine & vbNewLine & "Mii target should have same interaction (target this Mii) but work too if target have other interaction or not have one"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'ami (en conflit)' dans la liste d'amis" & vbNewLine & vbNewLine & "Le Mii cible devrait avoir le même interaction (ciblez ce Mii) mais fonctionne si la cible a une autre interaction ou n'en a pas"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(88) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'friend (in conflict)' Mii in Mii friend list" & vbNewLine & vbNewLine & "Mii target should have same interaction (target this Mii) but work too if target have other interaction or not have one"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'ami (en conflit)' dans la liste d'amis" & vbNewLine & vbNewLine & "Le Mii cible devrait avoir le même interaction (ciblez ce Mii) mais fonctionne si la cible a une autre interaction ou n'en a pas"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(89) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select 2 'friend (in conflict)' Mii in Mii friend list" & vbNewLine & vbNewLine & "Mii target should have same interaction (target this Mii) but work too if target have other interaction or not have one"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner 2 Mii 'ami (en conflit)' dans la liste d'amis" & vbNewLine & vbNewLine & "Le Mii cible devrait avoir le même interaction (ciblez ce Mii) mais fonctionne si la cible a une autre interaction ou n'en a pas"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(90) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'friend (in conflict)' Mii in Mii friend list" & vbNewLine & vbNewLine & "Mii target should have same interaction (target this Mii) but work too if target have other interaction or not have one"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'ami (en conflit)' dans la liste d'amis" & vbNewLine & vbNewLine & "Le Mii cible devrait avoir le même interaction (ciblez ce Mii) mais fonctionne si la cible a une autre interaction ou n'en a pas"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(91) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii" & vbNewLine & vbNewLine & "Mii target should have same interaction (target this Mii) but work too if target have other interaction or not have one"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii" & vbNewLine & vbNewLine & "Le Mii cible devrait avoir le même interaction (ciblez ce Mii) mais fonctionne si la cible a une autre interaction ou n'en a pas"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(92) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii" & vbNewLine & vbNewLine & "Mii target should have same interaction (target this Mii) but work too if target have other interaction or not have one"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii" & vbNewLine & vbNewLine & "Le Mii cible devrait avoir le même interaction (ciblez ce Mii) mais fonctionne si la cible a une autre interaction ou n'en a pas"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(93) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(94) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(95) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(96) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(97) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(98) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(99) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(100) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(115) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'unknow' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'inconnu' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(116) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'friend' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'ami' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(117) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'best friend' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'meilleur ami' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(118) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'lover' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'amoureux(se)' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(119) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a 'spouse' Mii in Mii friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'époux(se)' dans la liste d'amis"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(123) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Infinite interaction" & vbNewLine & "This is an interaction for travelers"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Interaction infini" & vbNewLine & "C'est une interaction pour les voyageurs"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(124) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Infinite interaction" & vbNewLine & "This is an interaction for travelers"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Interaction infini" & vbNewLine & "C'est une interaction pour les voyageurs"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(125) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Infinite interaction" & vbNewLine & "This is an interaction for travelers"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Interaction infini" & vbNewLine & "C'est une interaction pour les voyageurs"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(126) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Infinite interaction" & vbNewLine & "This is an interaction for travelers"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Interaction infini" & vbNewLine & "C'est une interaction pour les voyageurs"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(127) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Infinite interaction" & vbNewLine & "This is an interaction for travelers"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Interaction infini" & vbNewLine & "C'est une interaction pour les voyageurs"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(128) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Infinite interaction" & vbNewLine & "This is an interaction for travelers"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Interaction infini" & vbNewLine & "C'est une interaction pour les voyageurs"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(129) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Infinite interaction" & vbNewLine & "This is an interaction for travelers"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Interaction infini" & vbNewLine & "C'est une interaction pour les voyageurs"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(130) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Infinite interaction" & vbNewLine & "This is an interaction for travelers"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Interaction infini" & vbNewLine & "C'est une interaction pour les voyageurs"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(131) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Infinite interaction" & vbNewLine & "This is an interaction for travelers"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Interaction infini" & vbNewLine & "C'est une interaction pour les voyageurs"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(132) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(133) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii 'friend' in friend list (target 1) and a object (target 2)" & vbNewLine & vbNewLine & "Mii target must have same interaction (target this Mii) and same object"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'ami' dans la liste d'ami et un objet (cible 2)" & vbNewLine & vbNewLine & "Le Mii cible doit avoir le même interaction (ciblez ce Mii) et le même objet"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(136) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii 'best friend' in friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'meilleur ami' dans la liste d'ami"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(137) Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "You must select a Mii 'lover' or 'spouse' in friend list"
+                TLSE_dialog.ShowDialog()
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Vous devez sélectionner un Mii 'meilleur ami' ou 'époux(se)' dans la liste d'ami"
+                TLSE_dialog.ShowDialog()
+            End If
+        End If
+    End Sub
+
+    Private Sub AdvH_allfav_Click(sender As Object, e As EventArgs) Handles AdvH_allfav.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Foods listed :" & vbNewLine & "If your region have foods listed, just select them" & vbNewLine & "you can also see foods that your Mii loves even if he hasn't eaten them" & vbNewLine & vbNewLine & "Unlisted foods :" & vbNewLine & "Foods list doesn't exist, you can edit value has you want but some may not correspond to a food"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 200)
+            TLSE_dialog.Icon_reference.Location = New Point(103, 152)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Nourritures listé : " & vbNewLine & "Si votre région a les nourritures listé,  vous avez juste à les sélectionner" & vbNewLine & "vous pouvez également voir les nourritures que votre Mii aime même si il les a pas mangé" & vbNewLine & vbNewLine & "Nourriture non listé :" & vbNewLine & "La liste des nourritures n'existe pas, vous pouvez éditer les valeurs mais certaines peuvent ne pas correspondre à une nourriture"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 200)
+            TLSE_dialog.Icon_reference.Location = New Point(103, 152)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_apartrenov_Click(sender As Object, e As EventArgs) Handles AdvH_apartrenov.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click to edit the size of your building" & vbNewLine & "If you have save with a smaller building than you have Mii" & vbNewLine & "you will automatically unlock the top level"
+            TLSE_dialog.Panel_dialog.Location = New Point(75, 85)
+            TLSE_dialog.Icon_reference.Location = New Point(485, 425)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquez pour éditer la taille de votre immeuble" & vbNewLine & "Si vous sauvegarder avec une plus petite immeuble que vous avez de Mii" & vbNewLine & "vous débloquerez automatiquement le niveau supérieur"
+            TLSE_dialog.Panel_dialog.Location = New Point(75, 85)
+            TLSE_dialog.Icon_reference.Location = New Point(485, 425)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_cathphrase_Click(sender As Object, e As EventArgs) Handles AdvH_cathphrase.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to edit your Mii's catchphrase"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(75, 110)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour pouvoir éditer les expressions favorite de votre Mii"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(75, 110)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_childborn_Click(sender As Object, e As EventArgs) Handles AdvH_childborn.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is the number of baby born on your island"
+            TLSE_dialog.Panel_dialog.Location = New Point(180, 160)
+            TLSE_dialog.Icon_reference.Location = New Point(102, 292)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click on this icon to put directly to the maximum"
+            TLSE_dialog.Panel_dialog.Location = New Point(180, 160)
+            TLSE_dialog.Icon_reference.Location = New Point(62, 290)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est le nombre de bébé né sur votre île"
+            TLSE_dialog.Panel_dialog.Location = New Point(180, 160)
+            TLSE_dialog.Icon_reference.Location = New Point(102, 292)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquez sur cette icône pour mettre directement au maximum"
+            TLSE_dialog.Panel_dialog.Location = New Point(180, 160)
+            TLSE_dialog.Icon_reference.Location = New Point(62, 290)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+
+    Private Sub AdvH_concertedit_Click(sender As Object, e As EventArgs) Handles AdvH_concertedit.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to edit concert" & vbNewLine & "This feature is only available with EUR and USA versions"
+            TLSE_dialog.Panel_dialog.Location = New Point(2, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 317)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour pouvoir éditer les concerts" & vbNewLine & "Cette fonctionnalité est uniquement disponible avec les versions EUR et USA"
+            TLSE_dialog.Panel_dialog.Location = New Point(2, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 317)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_copying_Click(sender As Object, e As EventArgs) Handles AdvH_copying.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Check here if your Mii can be copying or not" & vbNewLine & "This feature is not editable without corrupt save file" & vbNewLine & "See issue #17 on Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(478, 120)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "See"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vérifiez ici si votre Mii peut être copié ou pas" & vbNewLine & "Cette fonctionnalité n'est pas éditable sans corrompre la sauvegarde" & vbNewLine & "Voir issue #17 sur Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 110)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "Voir"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/issues/17")
+        End If
+    End Sub
+
+    Private Sub AdvH_creator_Click(sender As Object, e As EventArgs) Handles AdvH_creator.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is your Mii creator" & vbNewLine & "This feature is not editable without corrupt save file" & vbNewLine & "See issue #17 on Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(10, 35)
+            TLSE_dialog.Icon_reference.Location = New Point(390, 375)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "See"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est le créateur de votre Mii" & vbNewLine & "Cette fonctionnalité n'est pas éditable sans corrompre la sauvegarde" & vbNewLine & "Voir issue #17 sur Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(10, 35)
+            TLSE_dialog.Icon_reference.Location = New Point(390, 375)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "Voir"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/issues/17")
+        End If
+    End Sub
+
+    Private Sub AdvH_editcathphrase_Click(sender As Object, e As EventArgs) Handles AdvH_editcathphrase.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here your Mii's catchphrase" & vbNewLine & "If you edit a Mii, all cathphrase will be automatically unlocked"
+            TLSE_dialog.Panel_dialog.Location = New Point(150, 200)
+            TLSE_dialog.Icon_reference.Location = New Point(20, 190)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici les expressions favorite de votre Mii" & vbNewLine & "Si vous éditez un Mii, toutes les expressions favorite seront automatiquement débloquées"
+            TLSE_dialog.Panel_dialog.Location = New Point(150, 200)
+            TLSE_dialog.Icon_reference.Location = New Point(20, 190)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_edithaircolor_Click(sender As Object, e As EventArgs) Handles AdvH_edithaircolor.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's hair color" & vbNewLine & "You can click on ''Normal'' to set hair color by default"
+            TLSE_dialog.Panel_dialog.Location = New Point(0, 0)
+            TLSE_dialog.Icon_reference.Location = New Point(300, 320)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici la couleur des cheveux de votre Mii" & vbNewLine & "Vous pouvez cliquer sur ''Normal'' pour mettre la couleur des cheveux par défaut"
+            TLSE_dialog.Panel_dialog.Location = New Point(0, 0)
+            TLSE_dialog.Icon_reference.Location = New Point(300, 320)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_editmiimusic_Click(sender As Object, e As EventArgs) Handles AdvH_editmiimusic.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's songs" & vbNewLine & "This feature is only available with EUR and USA versions"
+            TLSE_dialog.Panel_dialog.Location = New Point(160, 230)
+            TLSE_dialog.Icon_reference.Location = New Point(90, 250)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici les musiques de votre Mii" & vbNewLine & "cette fonctionnalité est uniquement disponible avec les versions EUR et USA"
+            TLSE_dialog.Panel_dialog.Location = New Point(160, 230)
+            TLSE_dialog.Icon_reference.Location = New Point(90, 250)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_emotion_Click(sender As Object, e As EventArgs) Handles AdvH_emotion.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here Mii's emotion"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 110)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 460)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici l'émotion de votre Mii"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 110)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 460)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_eventfountain_Click(sender As Object, e As EventArgs) Handles AdvH_eventfountain.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to active fountain event" & vbNewLine & "Miis will give you money in fountain"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 20)
+            TLSE_dialog.Icon_reference.Location = New Point(250, 370)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour activer l'évènement de la fontaine" & vbNewLine & "les Mii vont vous donner de la monnaie dans la fontaine"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 20)
+            TLSE_dialog.Icon_reference.Location = New Point(250, 370)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_experience_Click(sender As Object, e As EventArgs) Handles AdvH_experience.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is Mii's experience, you can edit with arrows on the right"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(380, 100)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est l'experience de votre Mii, vous pouvez editer avec les flèches sur la droite"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 150)
+            TLSE_dialog.Icon_reference.Location = New Point(380, 100)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_extractinterac_Click(sender As Object, e As EventArgs) Handles AdvH_extractinterac.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Click here to extract an interaction" & vbNewLine & "don't touch anything before extract an interaction to have his conditions"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 100)
+            TLSE_dialog.Icon_reference.Location = New Point(5, 460)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Cliquez ici pour extraire une interaction" & vbNewLine & "Ne touchez à rien avant d'extraire une interaction afin d'obtenir ses conditions"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 100)
+            TLSE_dialog.Icon_reference.Location = New Point(5, 460)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_extras_Click(sender As Object, e As EventArgs) Handles AdvH_extras.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to access to extras features"
+            TLSE_dialog.Panel_dialog.Location = New Point(155, 110)
+            TLSE_dialog.Icon_reference.Location = New Point(60, 250)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour accéder aux fonctionnalités extras"
+            TLSE_dialog.Panel_dialog.Location = New Point(155, 110)
+            TLSE_dialog.Icon_reference.Location = New Point(60, 250)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_fav_Click(sender As Object, e As EventArgs) Handles AdvH_fav.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Foods listed :" & vbNewLine & "If your region have foods listed, just select them" & vbNewLine & "you can also see foods that your Mii loves even if he hasn't eaten them" & vbNewLine & vbNewLine & "Unlisted foods :" & vbNewLine & "Foods list doesn't exist, you can edit value has you want but some may not correspond to a food"
+            TLSE_dialog.Panel_dialog.Location = New Point(150, 230)
+            TLSE_dialog.Icon_reference.Location = New Point(150, 220)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Nourritures listé : " & vbNewLine & "Si votre région a les nourritures listé, vous avez juste à les sélectionner" & vbNewLine & "vous pouvez également voir les nourritures que votre Mii aime même si il les a pas mangé" & vbNewLine & vbNewLine & "Nourriture non listé :" & vbNewLine & "La liste des nourritures n'existe pas, vous pouvez éditer les valeurs mais certaines peuvent ne pas correspondre à une nourriture"
+            TLSE_dialog.Panel_dialog.Location = New Point(150, 230)
+            TLSE_dialog.Icon_reference.Location = New Point(150, 220)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub AdvH_favcolor_Click(sender As Object, e As EventArgs) Handles AdvH_favcolor.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is your Mii's favorite color" & vbNewLine & "This feature is not editable without corrupt save file" & vbNewLine & "See issue #17 on Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(10, 118)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 240)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "See"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est la couleur favorite de votre Mii" & vbNewLine & "Cette fonctionnalité n'est pas éditable sans corrompre la sauvegarde" & vbNewLine & "Voir issue #17 sur Github"
+            TLSE_dialog.Panel_dialog.Location = New Point(10, 118)
+            TLSE_dialog.Icon_reference.Location = New Point(450, 240)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.OK_Button.Text = "Voir"
+            TLSE_dialog.Cancel_Button.Text = "OK"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/issues/17")
+        End If
+    End Sub
+
+    Private Sub AdvH_filever_Click(sender As Object, e As EventArgs) Handles AdvH_filever.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is save file region" & vbNewLine & "Make sure you have selected the good save file region before open a save file" & vbNewLine & vbNewLine & "or an error can occurred when save file or features are loaded"
+            TLSE_dialog.Panel_dialog.Location = New Point(83, 118)
+            TLSE_dialog.Icon_reference.Location = New Point(310, 50)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est la région de la sauvegarde" & vbNewLine & "Soyez sûr d'avoir choisi la bonne région de sauvegarde avant d'ouvrir votre fichier de sauvegarde" & vbNewLine & "ou une erreur peux survenir lorsque le fichier de sauvegarde ou les fonctionnalités sont chargés"
+            TLSE_dialog.Panel_dialog.Location = New Point(150, 230)
+            TLSE_dialog.Icon_reference.Location = New Point(150, 230)
+            TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub Select_copying_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_copying.SelectedIndexChanged
+        If Select_copying.SelectedItem = Select_copying.Items.Item(0) Then
+            valu_copying.Value = 0
+        End If
+        If Select_copying.SelectedItem = Select_copying.Items.Item(1) Then
+            valu_copying.Value = 1
+        End If
+    End Sub
 End Class

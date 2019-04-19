@@ -27,12 +27,6 @@ Partial Class Manual
         Me.TLSE_title = New System.Windows.Forms.PictureBox()
         Me.Closebutton = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel_citratomo = New System.Windows.Forms.Panel()
-        Me.CheckBox21 = New System.Windows.Forms.CheckBox()
-        Me.Info_citratomo_2 = New System.Windows.Forms.Label()
-        Me.CheckBox28 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox29 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox30 = New System.Windows.Forms.CheckBox()
         Me.Info_image = New System.Windows.Forms.PictureBox()
         Me.Panel_restoresave = New System.Windows.Forms.Panel()
         Me.CheckBox13 = New System.Windows.Forms.CheckBox()
@@ -89,17 +83,23 @@ Partial Class Manual
         Me.Text_restoresave = New System.Windows.Forms.Label()
         Me.Text_HtuTLSEold = New System.Windows.Forms.Label()
         Me.Text_extractsave = New System.Windows.Forms.Label()
+        Me.Panel_citratomo = New System.Windows.Forms.Panel()
+        Me.CheckBox21 = New System.Windows.Forms.CheckBox()
+        Me.Info_citratomo_2 = New System.Windows.Forms.Label()
+        Me.CheckBox28 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox29 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox30 = New System.Windows.Forms.CheckBox()
         Me.TLSE_header.SuspendLayout()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
-        Me.Panel_citratomo.SuspendLayout()
         CType(Me.Info_image, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_restoresave.SuspendLayout()
         Me.Panel_restoresave_1.SuspendLayout()
         Me.Panel_extractsave_1.SuspendLayout()
         Me.Panel_extractsave.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel_citratomo.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_header
@@ -140,89 +140,16 @@ Partial Class Manual
         '
         Me.Panel1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
         Me.Panel1.Controls.Add(Me.Info_image)
+        Me.Panel1.Controls.Add(Me.Panel2)
+        Me.Panel1.Controls.Add(Me.Panel_citratomo)
         Me.Panel1.Controls.Add(Me.Panel_restoresave)
         Me.Panel1.Controls.Add(Me.Panel_restoresave_1)
         Me.Panel1.Controls.Add(Me.Panel_extractsave_1)
         Me.Panel1.Controls.Add(Me.Panel_extractsave)
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Controls.Add(Me.Panel_citratomo)
         Me.Panel1.Location = New System.Drawing.Point(1, 37)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(728, 612)
         Me.Panel1.TabIndex = 3
-        '
-        'Panel_citratomo
-        '
-        Me.Panel_citratomo.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_citratomo.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
-        Me.Panel_citratomo.Controls.Add(Me.CheckBox21)
-        Me.Panel_citratomo.Controls.Add(Me.Info_citratomo_2)
-        Me.Panel_citratomo.Controls.Add(Me.CheckBox28)
-        Me.Panel_citratomo.Controls.Add(Me.CheckBox29)
-        Me.Panel_citratomo.Controls.Add(Me.CheckBox30)
-        Me.Panel_citratomo.Location = New System.Drawing.Point(187, 6)
-        Me.Panel_citratomo.Name = "Panel_citratomo"
-        Me.Panel_citratomo.Size = New System.Drawing.Size(535, 601)
-        Me.Panel_citratomo.TabIndex = 9
-        Me.Panel_citratomo.Visible = False
-        '
-        'CheckBox21
-        '
-        Me.CheckBox21.AutoSize = True
-        Me.CheckBox21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox21.Location = New System.Drawing.Point(26, 9)
-        Me.CheckBox21.Name = "CheckBox21"
-        Me.CheckBox21.Size = New System.Drawing.Size(445, 17)
-        Me.CheckBox21.TabIndex = 58
-        Me.CheckBox21.Text = "In Citra Emulator : Make sure you have launch your Tomodachi Life game one time b" & _
-    "efore"
-        Me.CheckBox21.UseVisualStyleBackColor = True
-        '
-        'Info_citratomo_2
-        '
-        Me.Info_citratomo_2.AutoSize = True
-        Me.Info_citratomo_2.BackColor = System.Drawing.Color.Transparent
-        Me.Info_citratomo_2.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_citratomo_2.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Info_citratomo_2.ForeColor = System.Drawing.Color.Blue
-        Me.Info_citratomo_2.Location = New System.Drawing.Point(6, 32)
-        Me.Info_citratomo_2.Name = "Info_citratomo_2"
-        Me.Info_citratomo_2.Size = New System.Drawing.Size(14, 20)
-        Me.Info_citratomo_2.TabIndex = 50
-        Me.Info_citratomo_2.Text = "i"
-        '
-        'CheckBox28
-        '
-        Me.CheckBox28.AutoSize = True
-        Me.CheckBox28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox28.Location = New System.Drawing.Point(26, 78)
-        Me.CheckBox28.Name = "CheckBox28"
-        Me.CheckBox28.Size = New System.Drawing.Size(362, 17)
-        Me.CheckBox28.TabIndex = 2
-        Me.CheckBox28.Text = "To restore edited save file, copy and past it in previous save file location"
-        Me.CheckBox28.UseVisualStyleBackColor = True
-        '
-        'CheckBox29
-        '
-        Me.CheckBox29.AutoSize = True
-        Me.CheckBox29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox29.Location = New System.Drawing.Point(26, 55)
-        Me.CheckBox29.Name = "CheckBox29"
-        Me.CheckBox29.Size = New System.Drawing.Size(270, 17)
-        Me.CheckBox29.TabIndex = 1
-        Me.CheckBox29.Text = "Copy and past this save file in other location to edit it"
-        Me.CheckBox29.UseVisualStyleBackColor = True
-        '
-        'CheckBox30
-        '
-        Me.CheckBox30.AutoSize = True
-        Me.CheckBox30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox30.Location = New System.Drawing.Point(26, 32)
-        Me.CheckBox30.Name = "CheckBox30"
-        Me.CheckBox30.Size = New System.Drawing.Size(395, 17)
-        Me.CheckBox30.TabIndex = 0
-        Me.CheckBox30.Text = "Click right on your Tomodachi Life game and click ""Open Save Data Location"""
-        Me.CheckBox30.UseVisualStyleBackColor = True
         '
         'Info_image
         '
@@ -925,14 +852,87 @@ Partial Class Manual
         Me.Text_extractsave.Text = "Extract your save file (with JK's save manager [2018 version])"
         Me.Text_extractsave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Panel_citratomo
+        '
+        Me.Panel_citratomo.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_citratomo.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
+        Me.Panel_citratomo.Controls.Add(Me.CheckBox21)
+        Me.Panel_citratomo.Controls.Add(Me.Info_citratomo_2)
+        Me.Panel_citratomo.Controls.Add(Me.CheckBox28)
+        Me.Panel_citratomo.Controls.Add(Me.CheckBox29)
+        Me.Panel_citratomo.Controls.Add(Me.CheckBox30)
+        Me.Panel_citratomo.Location = New System.Drawing.Point(187, 6)
+        Me.Panel_citratomo.Name = "Panel_citratomo"
+        Me.Panel_citratomo.Size = New System.Drawing.Size(535, 601)
+        Me.Panel_citratomo.TabIndex = 9
+        Me.Panel_citratomo.Visible = False
+        '
+        'CheckBox21
+        '
+        Me.CheckBox21.AutoSize = True
+        Me.CheckBox21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox21.Location = New System.Drawing.Point(26, 9)
+        Me.CheckBox21.Name = "CheckBox21"
+        Me.CheckBox21.Size = New System.Drawing.Size(445, 17)
+        Me.CheckBox21.TabIndex = 58
+        Me.CheckBox21.Text = "In Citra Emulator : Make sure you have launch your Tomodachi Life game one time b" & _
+    "efore"
+        Me.CheckBox21.UseVisualStyleBackColor = True
+        '
+        'Info_citratomo_2
+        '
+        Me.Info_citratomo_2.AutoSize = True
+        Me.Info_citratomo_2.BackColor = System.Drawing.Color.Transparent
+        Me.Info_citratomo_2.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Info_citratomo_2.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_citratomo_2.ForeColor = System.Drawing.Color.Blue
+        Me.Info_citratomo_2.Location = New System.Drawing.Point(6, 32)
+        Me.Info_citratomo_2.Name = "Info_citratomo_2"
+        Me.Info_citratomo_2.Size = New System.Drawing.Size(14, 20)
+        Me.Info_citratomo_2.TabIndex = 50
+        Me.Info_citratomo_2.Text = "i"
+        '
+        'CheckBox28
+        '
+        Me.CheckBox28.AutoSize = True
+        Me.CheckBox28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox28.Location = New System.Drawing.Point(26, 78)
+        Me.CheckBox28.Name = "CheckBox28"
+        Me.CheckBox28.Size = New System.Drawing.Size(362, 17)
+        Me.CheckBox28.TabIndex = 2
+        Me.CheckBox28.Text = "To restore edited save file, copy and past it in previous save file location"
+        Me.CheckBox28.UseVisualStyleBackColor = True
+        '
+        'CheckBox29
+        '
+        Me.CheckBox29.AutoSize = True
+        Me.CheckBox29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox29.Location = New System.Drawing.Point(26, 55)
+        Me.CheckBox29.Name = "CheckBox29"
+        Me.CheckBox29.Size = New System.Drawing.Size(270, 17)
+        Me.CheckBox29.TabIndex = 1
+        Me.CheckBox29.Text = "Copy and past this save file in other location to edit it"
+        Me.CheckBox29.UseVisualStyleBackColor = True
+        '
+        'CheckBox30
+        '
+        Me.CheckBox30.AutoSize = True
+        Me.CheckBox30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox30.Location = New System.Drawing.Point(26, 32)
+        Me.CheckBox30.Name = "CheckBox30"
+        Me.CheckBox30.Size = New System.Drawing.Size(395, 17)
+        Me.CheckBox30.TabIndex = 0
+        Me.CheckBox30.Text = "Click right on your Tomodachi Life game and click ""Open Save Data Location"""
+        Me.CheckBox30.UseVisualStyleBackColor = True
+        '
         'Manual
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(730, 650)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.TLSE_header)
+        Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Manual"
@@ -943,8 +943,6 @@ Partial Class Manual
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel_citratomo.ResumeLayout(False)
-        Me.Panel_citratomo.PerformLayout()
         CType(Me.Info_image, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_restoresave.ResumeLayout(False)
         Me.Panel_restoresave.PerformLayout()
@@ -955,6 +953,8 @@ Partial Class Manual
         Me.Panel_extractsave.ResumeLayout(False)
         Me.Panel_extractsave.PerformLayout()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel_citratomo.ResumeLayout(False)
+        Me.Panel_citratomo.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
