@@ -1,6 +1,7 @@
 ﻿Imports System.Net
 Imports System.IO
 Imports PackageIO
+Imports System.Text
 
 Public Class TL_SaveEditor
     Private IsFormBeingDragged As Boolean = False
@@ -3468,6 +3469,9 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1CCE + Accessmii
                 crcxmodem = Reader.Position
                 valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
+                Reader.Position = &H1CA0 + Accessmii
+                sharing = Reader.Position
+                TextBox4.Text = Reader.ReadHexString(1)
             End If
 
             If Filever_text.Text = "JP" Then
@@ -3781,7 +3785,8 @@ Public Class TL_SaveEditor
             Writer.WriteUInt16(valu_place_1.Value)
             Writer.Position = Place2
             Writer.WriteUInt16(valu_place_2.Value)
-
+            Writer.Position = sharing
+            Writer.WriteHexString(TextBox4.Text)
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 For i As Integer = 0 To 59
                     Writer.Position = Mii1PP + i
@@ -8032,6 +8037,16 @@ Public Class TL_SaveEditor
     Private Sub Icon_pronun_nickname_MouseLeave(sender As Object, e As EventArgs) Handles Icon_pronun_nickname.MouseLeave
         Text_pronun_nickname.Visible = False
         Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_pronun_nickname_Click(sender As Object, e As EventArgs) Handles Icon_pronun_nickname.Click
+        Text_edit_nickname.Text = Text_pronun_nickname.Text
+        Panel_edit_nickname.Visible = True
+    End Sub
+
+    Private Sub Icon_valid_nickname_Click(sender As Object, e As EventArgs) Handles Icon_valid_nickname.Click
+        Text_pronun_nickname.Text = Text_edit_nickname.Text
+        Panel_edit_nickname.Visible = False
     End Sub
 
     Private Sub Button_close_hcoloredit_Click(sender As Object, e As EventArgs) Handles Button_close_hcoloredit.Click
@@ -38112,8 +38127,6 @@ Public Class TL_SaveEditor
             Select_interaction.SelectedItem = Select_interaction.Items.Item(137)
         ElseIf valu_interaction.Value = &H18F Then
             Select_interaction.SelectedItem = Select_interaction.Items.Item(138)
-        Else
-            Select_interaction.Visible = False
         End If
     End Sub
 
@@ -39840,5 +39853,26 @@ Public Class TL_SaveEditor
         If Select_copying.SelectedItem = Select_copying.Items.Item(1) Then
             valu_copying.Value = 1
         End If
+    End Sub
+
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
+        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(TextBox4.Text, 16)) 'sharing hex to binary
+        Dim valout As String
+        valout = Convert.ToString(Convert.ToInt32(valconvert), 2)
+        TextBox3.Text = valout.PadLeft(8, "0")
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(TextBox3.Text, 2)) 'sharing binary to hex
+        Dim valout As String
+        valout = Convert.ToString(Convert.ToInt32(valconvert), 16)
+        TextBox4.Text = valout
+        TextBox7.Text = TextBox3.Text.Substring(7, 1) 'update binary features
+        TextBox6.Text = TextBox3.Text.Substring(3, 4)
+        TextBox5.Text = TextBox3.Text.Substring(0, 3)
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        TextBox3.Text = TextBox5.Text + TextBox6.Text + TextBox7.Text 'merge binary features
     End Sub
 End Class

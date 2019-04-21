@@ -285,30 +285,6 @@ Partial Class TL_SaveEditor
         Me.Text_editing_mii = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Tab_mii_edit = New System.Windows.Forms.TabPage()
-        Me.Panel41 = New System.Windows.Forms.Panel()
-        Me.valu_copying = New System.Windows.Forms.NumericUpDown()
-        Me.Select_copying = New System.Windows.Forms.ComboBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Panel40 = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel39 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Panel31 = New System.Windows.Forms.Panel()
-        Me.valu_economy = New System.Windows.Forms.NumericUpDown()
-        Me.Title_miieconomy = New System.Windows.Forms.Label()
-        Me.Title_switch_interiors = New System.Windows.Forms.Label()
-        Me.Title_switch_clothes = New System.Windows.Forms.Label()
-        Me.Panel28 = New System.Windows.Forms.Panel()
-        Me.valu_miihouse = New System.Windows.Forms.NumericUpDown()
-        Me.Select_miihouse = New System.Windows.Forms.ComboBox()
-        Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.valu_switch_clothes = New System.Windows.Forms.NumericUpDown()
-        Me.Panel23 = New System.Windows.Forms.Panel()
-        Me.valu_switch_interiors = New System.Windows.Forms.NumericUpDown()
-        Me.Panel22 = New System.Windows.Forms.Panel()
-        Me.valu_switch_hats = New System.Windows.Forms.NumericUpDown()
-        Me.Title_switch_hats = New System.Windows.Forms.Label()
         Me.Panel_edit_haircolor = New System.Windows.Forms.Panel()
         Me.AdvH_edithaircolor = New System.Windows.Forms.PictureBox()
         Me.color_empty = New System.Windows.Forms.Label()
@@ -345,6 +321,36 @@ Partial Class TL_SaveEditor
         Me.color_3 = New System.Windows.Forms.PictureBox()
         Me.color_2 = New System.Windows.Forms.PictureBox()
         Me.color_1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.Panel_edit_nickname = New System.Windows.Forms.Panel()
+        Me.Icon_valid_nickname = New System.Windows.Forms.PictureBox()
+        Me.Text_edit_nickname = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Panel41 = New System.Windows.Forms.Panel()
+        Me.valu_copying = New System.Windows.Forms.NumericUpDown()
+        Me.Select_copying = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel40 = New System.Windows.Forms.Panel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel39 = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Panel31 = New System.Windows.Forms.Panel()
+        Me.valu_economy = New System.Windows.Forms.NumericUpDown()
+        Me.Title_miieconomy = New System.Windows.Forms.Label()
+        Me.Title_switch_interiors = New System.Windows.Forms.Label()
+        Me.Title_switch_clothes = New System.Windows.Forms.Label()
+        Me.Panel28 = New System.Windows.Forms.Panel()
+        Me.valu_miihouse = New System.Windows.Forms.NumericUpDown()
+        Me.Select_miihouse = New System.Windows.Forms.ComboBox()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.valu_switch_clothes = New System.Windows.Forms.NumericUpDown()
+        Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.valu_switch_interiors = New System.Windows.Forms.NumericUpDown()
+        Me.Panel22 = New System.Windows.Forms.Panel()
+        Me.valu_switch_hats = New System.Windows.Forms.NumericUpDown()
+        Me.Title_switch_hats = New System.Windows.Forms.Label()
         Me.AdvH_lastname = New System.Windows.Forms.PictureBox()
         Me.AdvH_lastnamepronun = New System.Windows.Forms.PictureBox()
         Me.AdvH_firstnamepronun = New System.Windows.Forms.PictureBox()
@@ -550,7 +556,6 @@ Partial Class TL_SaveEditor
         Me.Panel17 = New System.Windows.Forms.Panel()
         Me.valu_interaction = New System.Windows.Forms.NumericUpDown()
         Me.Select_interaction = New System.Windows.Forms.ComboBox()
-        Me.Text_notinteraction = New System.Windows.Forms.TextBox()
         Me.Panel_target1_foods = New System.Windows.Forms.Panel()
         Me.Select_target1_foodUS = New System.Windows.Forms.ComboBox()
         Me.Select_target1_foodEU = New System.Windows.Forms.ComboBox()
@@ -1018,6 +1023,17 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_29 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_30 = New System.Windows.Forms.ComboBox()
         Me.Tab_mii_extras = New System.Windows.Forms.TabPage()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.valu_crcxmodem = New System.Windows.Forms.NumericUpDown()
         Me.Text_Mii = New System.Windows.Forms.TextBox()
         Me.Panel33 = New System.Windows.Forms.Panel()
@@ -1266,20 +1282,6 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_savemii,System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabControl1.SuspendLayout
         Me.Tab_mii_edit.SuspendLayout
-        Me.Panel41.SuspendLayout
-        CType(Me.valu_copying,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel40.SuspendLayout
-        Me.Panel39.SuspendLayout
-        Me.Panel31.SuspendLayout
-        CType(Me.valu_economy,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel28.SuspendLayout
-        CType(Me.valu_miihouse,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel24.SuspendLayout
-        CType(Me.valu_switch_clothes,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel23.SuspendLayout
-        CType(Me.valu_switch_interiors,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel22.SuspendLayout
-        CType(Me.valu_switch_hats,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_edit_haircolor.SuspendLayout
         CType(Me.AdvH_edithaircolor,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_32,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1314,6 +1316,24 @@ Partial Class TL_SaveEditor
         CType(Me.color_3,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_2,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_edit_nickname.SuspendLayout
+        CType(Me.Icon_valid_nickname,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel41.SuspendLayout
+        CType(Me.valu_copying,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel40.SuspendLayout
+        Me.Panel39.SuspendLayout
+        Me.Panel31.SuspendLayout
+        CType(Me.valu_economy,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel28.SuspendLayout
+        CType(Me.valu_miihouse,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel24.SuspendLayout
+        CType(Me.valu_switch_clothes,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel23.SuspendLayout
+        CType(Me.valu_switch_interiors,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel22.SuspendLayout
+        CType(Me.valu_switch_hats,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_lastname,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_lastnamepronun,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_firstnamepronun,System.ComponentModel.ISupportInitialize).BeginInit
@@ -4821,6 +4841,11 @@ Partial Class TL_SaveEditor
         '
         Me.Tab_mii_edit.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_edit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox10)
+        Me.Tab_mii_edit.Controls.Add(Me.PictureBox8)
+        Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_nickname)
+        Me.Tab_mii_edit.Controls.Add(Me.Label4)
         Me.Tab_mii_edit.Controls.Add(Me.Panel41)
         Me.Tab_mii_edit.Controls.Add(Me.Label3)
         Me.Tab_mii_edit.Controls.Add(Me.Panel40)
@@ -4835,7 +4860,6 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_edit.Controls.Add(Me.Panel23)
         Me.Tab_mii_edit.Controls.Add(Me.Panel22)
         Me.Tab_mii_edit.Controls.Add(Me.Title_switch_hats)
-        Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_lastname)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_lastnamepronun)
         Me.Tab_mii_edit.Controls.Add(Me.AdvH_firstnamepronun)
@@ -4913,242 +4937,6 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_edit.TabIndex = 0
         Me.Tab_mii_edit.Text = "Edit"
         '
-        'Panel41
-        '
-        Me.Panel41.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel41.Controls.Add(Me.valu_copying)
-        Me.Panel41.Controls.Add(Me.Select_copying)
-        Me.Panel41.Location = New System.Drawing.Point(491, 26)
-        Me.Panel41.Name = "Panel41"
-        Me.Panel41.Size = New System.Drawing.Size(118, 25)
-        Me.Panel41.TabIndex = 255
-        '
-        'valu_copying
-        '
-        Me.valu_copying.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_copying.Location = New System.Drawing.Point(3, 4)
-        Me.valu_copying.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_copying.Name = "valu_copying"
-        Me.valu_copying.Size = New System.Drawing.Size(38, 16)
-        Me.valu_copying.TabIndex = 130
-        Me.valu_copying.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_copying.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.valu_copying.Visible = false
-        '
-        'Select_copying
-        '
-        Me.Select_copying.BackColor = System.Drawing.SystemColors.Window
-        Me.Select_copying.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_copying.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_copying.FormattingEnabled = true
-        Me.Select_copying.Items.AddRange(New Object() {"Don't allow", "Allow"})
-        Me.Select_copying.Location = New System.Drawing.Point(2, 2)
-        Me.Select_copying.Name = "Select_copying"
-        Me.Select_copying.Size = New System.Drawing.Size(114, 21)
-        Me.Select_copying.TabIndex = 112
-        '
-        'Label3
-        '
-        Me.Label3.Location = New System.Drawing.Point(200, 440)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(129, 13)
-        Me.Label3.TabIndex = 254
-        Me.Label3.Text = "TL Mii system ID"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel40
-        '
-        Me.Panel40.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel40.Controls.Add(Me.TextBox2)
-        Me.Panel40.Location = New System.Drawing.Point(203, 454)
-        Me.Panel40.Name = "Panel40"
-        Me.Panel40.Size = New System.Drawing.Size(126, 17)
-        Me.Panel40.TabIndex = 253
-        '
-        'TextBox2
-        '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Location = New System.Drawing.Point(2, 2)
-        Me.TextBox2.MaxLength = 15
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(122, 13)
-        Me.TextBox2.TabIndex = 101
-        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label2
-        '
-        Me.Label2.Location = New System.Drawing.Point(200, 400)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(129, 13)
-        Me.Label2.TabIndex = 252
-        Me.Label2.Text = "Mii system ID"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel39
-        '
-        Me.Panel39.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel39.Controls.Add(Me.TextBox1)
-        Me.Panel39.Location = New System.Drawing.Point(203, 414)
-        Me.Panel39.Name = "Panel39"
-        Me.Panel39.Size = New System.Drawing.Size(126, 17)
-        Me.Panel39.TabIndex = 251
-        '
-        'TextBox1
-        '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(2, 2)
-        Me.TextBox1.MaxLength = 15
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(122, 13)
-        Me.TextBox1.TabIndex = 101
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel31
-        '
-        Me.Panel31.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel31.Controls.Add(Me.valu_economy)
-        Me.Panel31.Location = New System.Drawing.Point(43, 431)
-        Me.Panel31.Name = "Panel31"
-        Me.Panel31.Size = New System.Drawing.Size(76, 20)
-        Me.Panel31.TabIndex = 250
-        '
-        'valu_economy
-        '
-        Me.valu_economy.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_economy.Location = New System.Drawing.Point(2, 2)
-        Me.valu_economy.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
-        Me.valu_economy.Name = "valu_economy"
-        Me.valu_economy.Size = New System.Drawing.Size(72, 16)
-        Me.valu_economy.TabIndex = 112
-        Me.valu_economy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Title_miieconomy
-        '
-        Me.Title_miieconomy.Location = New System.Drawing.Point(19, 414)
-        Me.Title_miieconomy.Name = "Title_miieconomy"
-        Me.Title_miieconomy.Size = New System.Drawing.Size(122, 13)
-        Me.Title_miieconomy.TabIndex = 249
-        Me.Title_miieconomy.Text = "Mii economy"
-        Me.Title_miieconomy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Title_switch_interiors
-        '
-        Me.Title_switch_interiors.Location = New System.Drawing.Point(217, 330)
-        Me.Title_switch_interiors.Name = "Title_switch_interiors"
-        Me.Title_switch_interiors.Size = New System.Drawing.Size(100, 13)
-        Me.Title_switch_interiors.TabIndex = 248
-        Me.Title_switch_interiors.Text = "Interior equipped"
-        Me.Title_switch_interiors.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Title_switch_clothes
-        '
-        Me.Title_switch_clothes.Location = New System.Drawing.Point(114, 330)
-        Me.Title_switch_clothes.Name = "Title_switch_clothes"
-        Me.Title_switch_clothes.Size = New System.Drawing.Size(100, 13)
-        Me.Title_switch_clothes.TabIndex = 247
-        Me.Title_switch_clothes.Text = "Clothe equipped"
-        Me.Title_switch_clothes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel28
-        '
-        Me.Panel28.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel28.Controls.Add(Me.valu_miihouse)
-        Me.Panel28.Controls.Add(Me.Select_miihouse)
-        Me.Panel28.Location = New System.Drawing.Point(366, 435)
-        Me.Panel28.Name = "Panel28"
-        Me.Panel28.Size = New System.Drawing.Size(138, 25)
-        Me.Panel28.TabIndex = 246
-        '
-        'valu_miihouse
-        '
-        Me.valu_miihouse.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_miihouse.Location = New System.Drawing.Point(52, 4)
-        Me.valu_miihouse.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_miihouse.Name = "valu_miihouse"
-        Me.valu_miihouse.Size = New System.Drawing.Size(35, 16)
-        Me.valu_miihouse.TabIndex = 179
-        Me.valu_miihouse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_miihouse.Visible = false
-        '
-        'Select_miihouse
-        '
-        Me.Select_miihouse.BackColor = System.Drawing.SystemColors.Window
-        Me.Select_miihouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_miihouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_miihouse.FormattingEnabled = true
-        Me.Select_miihouse.IntegralHeight = false
-        Me.Select_miihouse.Items.AddRange(New Object() {"Mii House 1 / None", "Mii House 2", "Mii House 3", "Mii House 4", "Mii House 5", "Mii House 6", "Mii House 7", "Mii House 8", "Mii House 9", "Mii House 10", "Mii House 11", "Mii House 12", "Mii House 13", "Mii House 14", "Mii House 15", "Mii House 16", "Mii House 17", "Mii House 18", "Mii House 19", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"20", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"21", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"22", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"23", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"24", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"25", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"26", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"27", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"28", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"29", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"30", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"31", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"32", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"33", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"34", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"35", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"36", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"37", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"38", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"39", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"40", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"41", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"42", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"43", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"44", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"45", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"46", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"47", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"48", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"49", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"50"})
-        Me.Select_miihouse.Location = New System.Drawing.Point(2, 2)
-        Me.Select_miihouse.Name = "Select_miihouse"
-        Me.Select_miihouse.Size = New System.Drawing.Size(134, 21)
-        Me.Select_miihouse.TabIndex = 207
-        '
-        'Panel24
-        '
-        Me.Panel24.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel24.Controls.Add(Me.valu_switch_clothes)
-        Me.Panel24.Location = New System.Drawing.Point(136, 368)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(56, 20)
-        Me.Panel24.TabIndex = 245
-        '
-        'valu_switch_clothes
-        '
-        Me.valu_switch_clothes.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_switch_clothes.Location = New System.Drawing.Point(2, 2)
-        Me.valu_switch_clothes.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_switch_clothes.Name = "valu_switch_clothes"
-        Me.valu_switch_clothes.Size = New System.Drawing.Size(52, 16)
-        Me.valu_switch_clothes.TabIndex = 190
-        Me.valu_switch_clothes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel23
-        '
-        Me.Panel23.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel23.Controls.Add(Me.valu_switch_interiors)
-        Me.Panel23.Location = New System.Drawing.Point(239, 368)
-        Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(56, 20)
-        Me.Panel23.TabIndex = 244
-        '
-        'valu_switch_interiors
-        '
-        Me.valu_switch_interiors.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_switch_interiors.Location = New System.Drawing.Point(2, 2)
-        Me.valu_switch_interiors.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_switch_interiors.Name = "valu_switch_interiors"
-        Me.valu_switch_interiors.Size = New System.Drawing.Size(52, 16)
-        Me.valu_switch_interiors.TabIndex = 192
-        Me.valu_switch_interiors.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel22
-        '
-        Me.Panel22.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel22.Controls.Add(Me.valu_switch_hats)
-        Me.Panel22.Location = New System.Drawing.Point(33, 368)
-        Me.Panel22.Name = "Panel22"
-        Me.Panel22.Size = New System.Drawing.Size(56, 20)
-        Me.Panel22.TabIndex = 243
-        '
-        'valu_switch_hats
-        '
-        Me.valu_switch_hats.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_switch_hats.Location = New System.Drawing.Point(2, 2)
-        Me.valu_switch_hats.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_switch_hats.Name = "valu_switch_hats"
-        Me.valu_switch_hats.Size = New System.Drawing.Size(52, 16)
-        Me.valu_switch_hats.TabIndex = 188
-        Me.valu_switch_hats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Title_switch_hats
-        '
-        Me.Title_switch_hats.Location = New System.Drawing.Point(11, 330)
-        Me.Title_switch_hats.Name = "Title_switch_hats"
-        Me.Title_switch_hats.Size = New System.Drawing.Size(100, 13)
-        Me.Title_switch_hats.TabIndex = 242
-        Me.Title_switch_hats.Text = "Hat equipped"
-        Me.Title_switch_hats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Panel_edit_haircolor
         '
         Me.Panel_edit_haircolor.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_haircolor
@@ -5188,7 +4976,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_haircolor.Controls.Add(Me.color_2)
         Me.Panel_edit_haircolor.Controls.Add(Me.color_1)
         Me.Panel_edit_haircolor.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel_edit_haircolor.Location = New System.Drawing.Point(266, 174)
+        Me.Panel_edit_haircolor.Location = New System.Drawing.Point(260, 174)
         Me.Panel_edit_haircolor.Name = "Panel_edit_haircolor"
         Me.Panel_edit_haircolor.Size = New System.Drawing.Size(201, 150)
         Me.Panel_edit_haircolor.TabIndex = 185
@@ -5515,6 +5303,310 @@ Partial Class TL_SaveEditor
         Me.color_1.TabIndex = 0
         Me.color_1.TabStop = false
         '
+        'PictureBox10
+        '
+        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox10.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox10.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox10.Location = New System.Drawing.Point(438, 152)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox10.TabIndex = 259
+        Me.PictureBox10.TabStop = false
+        Me.PictureBox10.Visible = false
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox8.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox8.Location = New System.Drawing.Point(438, 174)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox8.TabIndex = 258
+        Me.PictureBox8.TabStop = false
+        Me.PictureBox8.Visible = false
+        '
+        'Panel_edit_nickname
+        '
+        Me.Panel_edit_nickname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_edit_nickname.Controls.Add(Me.Icon_valid_nickname)
+        Me.Panel_edit_nickname.Controls.Add(Me.Text_edit_nickname)
+        Me.Panel_edit_nickname.Location = New System.Drawing.Point(311, 176)
+        Me.Panel_edit_nickname.Name = "Panel_edit_nickname"
+        Me.Panel_edit_nickname.Size = New System.Drawing.Size(125, 17)
+        Me.Panel_edit_nickname.TabIndex = 257
+        Me.Panel_edit_nickname.Visible = false
+        '
+        'Icon_valid_nickname
+        '
+        Me.Icon_valid_nickname.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_valid_nickname.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_valid_nickname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.validate
+        Me.Icon_valid_nickname.Location = New System.Drawing.Point(107, 2)
+        Me.Icon_valid_nickname.Name = "Icon_valid_nickname"
+        Me.Icon_valid_nickname.Size = New System.Drawing.Size(15, 12)
+        Me.Icon_valid_nickname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_valid_nickname.TabIndex = 8
+        Me.Icon_valid_nickname.TabStop = false
+        '
+        'Text_edit_nickname
+        '
+        Me.Text_edit_nickname.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_edit_nickname.Location = New System.Drawing.Point(2, 2)
+        Me.Text_edit_nickname.MaxLength = 20
+        Me.Text_edit_nickname.Name = "Text_edit_nickname"
+        Me.Text_edit_nickname.Size = New System.Drawing.Size(102, 13)
+        Me.Text_edit_nickname.TabIndex = 7
+        Me.Text_edit_nickname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = true
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label4.Location = New System.Drawing.Point(311, 176)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(2, 15)
+        Me.Label4.TabIndex = 256
+        Me.Label4.Visible = false
+        '
+        'Panel41
+        '
+        Me.Panel41.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel41.Controls.Add(Me.valu_copying)
+        Me.Panel41.Controls.Add(Me.Select_copying)
+        Me.Panel41.Location = New System.Drawing.Point(491, 26)
+        Me.Panel41.Name = "Panel41"
+        Me.Panel41.Size = New System.Drawing.Size(118, 25)
+        Me.Panel41.TabIndex = 255
+        '
+        'valu_copying
+        '
+        Me.valu_copying.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_copying.Location = New System.Drawing.Point(3, 4)
+        Me.valu_copying.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_copying.Name = "valu_copying"
+        Me.valu_copying.Size = New System.Drawing.Size(38, 16)
+        Me.valu_copying.TabIndex = 130
+        Me.valu_copying.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_copying.Value = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_copying.Visible = false
+        '
+        'Select_copying
+        '
+        Me.Select_copying.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_copying.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_copying.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_copying.FormattingEnabled = true
+        Me.Select_copying.Items.AddRange(New Object() {"Don't allow", "Allow"})
+        Me.Select_copying.Location = New System.Drawing.Point(2, 2)
+        Me.Select_copying.Name = "Select_copying"
+        Me.Select_copying.Size = New System.Drawing.Size(114, 21)
+        Me.Select_copying.TabIndex = 112
+        '
+        'Label3
+        '
+        Me.Label3.Location = New System.Drawing.Point(200, 440)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(129, 13)
+        Me.Label3.TabIndex = 254
+        Me.Label3.Text = "TL Mii system ID"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel40
+        '
+        Me.Panel40.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel40.Controls.Add(Me.TextBox2)
+        Me.Panel40.Location = New System.Drawing.Point(203, 454)
+        Me.Panel40.Name = "Panel40"
+        Me.Panel40.Size = New System.Drawing.Size(126, 17)
+        Me.Panel40.TabIndex = 253
+        '
+        'TextBox2
+        '
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox2.Location = New System.Drawing.Point(2, 2)
+        Me.TextBox2.MaxLength = 15
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(122, 13)
+        Me.TextBox2.TabIndex = 101
+        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label2
+        '
+        Me.Label2.Location = New System.Drawing.Point(200, 400)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(129, 13)
+        Me.Label2.TabIndex = 252
+        Me.Label2.Text = "Mii system ID"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel39
+        '
+        Me.Panel39.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel39.Controls.Add(Me.TextBox1)
+        Me.Panel39.Location = New System.Drawing.Point(203, 414)
+        Me.Panel39.Name = "Panel39"
+        Me.Panel39.Size = New System.Drawing.Size(126, 17)
+        Me.Panel39.TabIndex = 251
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox1.Location = New System.Drawing.Point(2, 2)
+        Me.TextBox1.MaxLength = 15
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(122, 13)
+        Me.TextBox1.TabIndex = 101
+        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel31
+        '
+        Me.Panel31.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel31.Controls.Add(Me.valu_economy)
+        Me.Panel31.Location = New System.Drawing.Point(43, 431)
+        Me.Panel31.Name = "Panel31"
+        Me.Panel31.Size = New System.Drawing.Size(76, 20)
+        Me.Panel31.TabIndex = 250
+        '
+        'valu_economy
+        '
+        Me.valu_economy.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_economy.Location = New System.Drawing.Point(2, 2)
+        Me.valu_economy.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
+        Me.valu_economy.Name = "valu_economy"
+        Me.valu_economy.Size = New System.Drawing.Size(72, 16)
+        Me.valu_economy.TabIndex = 112
+        Me.valu_economy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Title_miieconomy
+        '
+        Me.Title_miieconomy.Location = New System.Drawing.Point(19, 414)
+        Me.Title_miieconomy.Name = "Title_miieconomy"
+        Me.Title_miieconomy.Size = New System.Drawing.Size(122, 13)
+        Me.Title_miieconomy.TabIndex = 249
+        Me.Title_miieconomy.Text = "Mii economy"
+        Me.Title_miieconomy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Title_switch_interiors
+        '
+        Me.Title_switch_interiors.Location = New System.Drawing.Point(217, 330)
+        Me.Title_switch_interiors.Name = "Title_switch_interiors"
+        Me.Title_switch_interiors.Size = New System.Drawing.Size(100, 13)
+        Me.Title_switch_interiors.TabIndex = 248
+        Me.Title_switch_interiors.Text = "Interior equipped"
+        Me.Title_switch_interiors.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Title_switch_clothes
+        '
+        Me.Title_switch_clothes.Location = New System.Drawing.Point(114, 330)
+        Me.Title_switch_clothes.Name = "Title_switch_clothes"
+        Me.Title_switch_clothes.Size = New System.Drawing.Size(100, 13)
+        Me.Title_switch_clothes.TabIndex = 247
+        Me.Title_switch_clothes.Text = "Clothe equipped"
+        Me.Title_switch_clothes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel28
+        '
+        Me.Panel28.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel28.Controls.Add(Me.valu_miihouse)
+        Me.Panel28.Controls.Add(Me.Select_miihouse)
+        Me.Panel28.Location = New System.Drawing.Point(366, 435)
+        Me.Panel28.Name = "Panel28"
+        Me.Panel28.Size = New System.Drawing.Size(138, 25)
+        Me.Panel28.TabIndex = 246
+        '
+        'valu_miihouse
+        '
+        Me.valu_miihouse.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_miihouse.Location = New System.Drawing.Point(52, 4)
+        Me.valu_miihouse.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_miihouse.Name = "valu_miihouse"
+        Me.valu_miihouse.Size = New System.Drawing.Size(35, 16)
+        Me.valu_miihouse.TabIndex = 179
+        Me.valu_miihouse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_miihouse.Visible = false
+        '
+        'Select_miihouse
+        '
+        Me.Select_miihouse.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_miihouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_miihouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_miihouse.FormattingEnabled = true
+        Me.Select_miihouse.IntegralHeight = false
+        Me.Select_miihouse.Items.AddRange(New Object() {"Mii House 1 / None", "Mii House 2", "Mii House 3", "Mii House 4", "Mii House 5", "Mii House 6", "Mii House 7", "Mii House 8", "Mii House 9", "Mii House 10", "Mii House 11", "Mii House 12", "Mii House 13", "Mii House 14", "Mii House 15", "Mii House 16", "Mii House 17", "Mii House 18", "Mii House 19", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"20", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"21", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"22", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"23", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"24", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"25", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"26", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"27", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"28", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"29", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"30", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"31", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"32", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"33", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"34", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"35", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"36", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"37", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"38", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"39", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"40", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"41", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"42", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"43", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"44", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"45", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"46", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"47", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"48", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"49", "Mii house "&Global.Microsoft.VisualBasic.ChrW(9)&"50"})
+        Me.Select_miihouse.Location = New System.Drawing.Point(2, 2)
+        Me.Select_miihouse.Name = "Select_miihouse"
+        Me.Select_miihouse.Size = New System.Drawing.Size(134, 21)
+        Me.Select_miihouse.TabIndex = 207
+        '
+        'Panel24
+        '
+        Me.Panel24.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel24.Controls.Add(Me.valu_switch_clothes)
+        Me.Panel24.Location = New System.Drawing.Point(136, 368)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(56, 20)
+        Me.Panel24.TabIndex = 245
+        '
+        'valu_switch_clothes
+        '
+        Me.valu_switch_clothes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_switch_clothes.Location = New System.Drawing.Point(2, 2)
+        Me.valu_switch_clothes.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_switch_clothes.Name = "valu_switch_clothes"
+        Me.valu_switch_clothes.Size = New System.Drawing.Size(52, 16)
+        Me.valu_switch_clothes.TabIndex = 190
+        Me.valu_switch_clothes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel23
+        '
+        Me.Panel23.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel23.Controls.Add(Me.valu_switch_interiors)
+        Me.Panel23.Location = New System.Drawing.Point(239, 368)
+        Me.Panel23.Name = "Panel23"
+        Me.Panel23.Size = New System.Drawing.Size(56, 20)
+        Me.Panel23.TabIndex = 244
+        '
+        'valu_switch_interiors
+        '
+        Me.valu_switch_interiors.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_switch_interiors.Location = New System.Drawing.Point(2, 2)
+        Me.valu_switch_interiors.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_switch_interiors.Name = "valu_switch_interiors"
+        Me.valu_switch_interiors.Size = New System.Drawing.Size(52, 16)
+        Me.valu_switch_interiors.TabIndex = 192
+        Me.valu_switch_interiors.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel22
+        '
+        Me.Panel22.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel22.Controls.Add(Me.valu_switch_hats)
+        Me.Panel22.Location = New System.Drawing.Point(33, 368)
+        Me.Panel22.Name = "Panel22"
+        Me.Panel22.Size = New System.Drawing.Size(56, 20)
+        Me.Panel22.TabIndex = 243
+        '
+        'valu_switch_hats
+        '
+        Me.valu_switch_hats.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_switch_hats.Location = New System.Drawing.Point(2, 2)
+        Me.valu_switch_hats.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_switch_hats.Name = "valu_switch_hats"
+        Me.valu_switch_hats.Size = New System.Drawing.Size(52, 16)
+        Me.valu_switch_hats.TabIndex = 188
+        Me.valu_switch_hats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Title_switch_hats
+        '
+        Me.Title_switch_hats.Location = New System.Drawing.Point(11, 330)
+        Me.Title_switch_hats.Name = "Title_switch_hats"
+        Me.Title_switch_hats.Size = New System.Drawing.Size(100, 13)
+        Me.Title_switch_hats.TabIndex = 242
+        Me.Title_switch_hats.Text = "Hat equipped"
+        Me.Title_switch_hats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'AdvH_lastname
         '
         Me.AdvH_lastname.BackColor = System.Drawing.Color.Transparent
@@ -5556,7 +5648,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_firstname.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_firstname.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_firstname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_firstname.Location = New System.Drawing.Point(438, 78)
+        Me.AdvH_firstname.Location = New System.Drawing.Point(438, 80)
         Me.AdvH_firstname.Name = "AdvH_firstname"
         Me.AdvH_firstname.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_firstname.TabIndex = 203
@@ -6079,7 +6171,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_edit_lastname.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Text_edit_lastname.Location = New System.Drawing.Point(2, 2)
-        Me.Text_edit_lastname.MaxLength = 10
+        Me.Text_edit_lastname.MaxLength = 30
         Me.Text_edit_lastname.Name = "Text_edit_lastname"
         Me.Text_edit_lastname.Size = New System.Drawing.Size(102, 13)
         Me.Text_edit_lastname.TabIndex = 7
@@ -6163,7 +6255,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_edit_firstname.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Text_edit_firstname.Location = New System.Drawing.Point(2, 2)
-        Me.Text_edit_firstname.MaxLength = 10
+        Me.Text_edit_firstname.MaxLength = 30
         Me.Text_edit_firstname.Name = "Text_edit_firstname"
         Me.Text_edit_firstname.Size = New System.Drawing.Size(102, 13)
         Me.Text_edit_firstname.TabIndex = 7
@@ -7831,7 +7923,6 @@ Partial Class TL_SaveEditor
         Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel17.Controls.Add(Me.valu_interaction)
         Me.Panel17.Controls.Add(Me.Select_interaction)
-        Me.Panel17.Controls.Add(Me.Text_notinteraction)
         Me.Panel17.Location = New System.Drawing.Point(33, 21)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(441, 25)
@@ -7870,19 +7961,6 @@ Partial Class TL_SaveEditor
         Me.Select_interaction.Name = "Select_interaction"
         Me.Select_interaction.Size = New System.Drawing.Size(437, 21)
         Me.Select_interaction.TabIndex = 112
-        '
-        'Text_notinteraction
-        '
-        Me.Text_notinteraction.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Text_notinteraction.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Text_notinteraction.Enabled = false
-        Me.Text_notinteraction.Location = New System.Drawing.Point(2, 2)
-        Me.Text_notinteraction.Name = "Text_notinteraction"
-        Me.Text_notinteraction.ReadOnly = true
-        Me.Text_notinteraction.Size = New System.Drawing.Size(437, 20)
-        Me.Text_notinteraction.TabIndex = 276
-        Me.Text_notinteraction.Text = "This interaction is not listed. You can extract him and share it"
-        Me.Text_notinteraction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel_target1_foods
         '
@@ -13214,6 +13292,17 @@ Partial Class TL_SaveEditor
         'Tab_mii_extras
         '
         Me.Tab_mii_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_extras.Controls.Add(Me.Button1)
+        Me.Tab_mii_extras.Controls.Add(Me.TextBox7)
+        Me.Tab_mii_extras.Controls.Add(Me.TextBox6)
+        Me.Tab_mii_extras.Controls.Add(Me.TextBox5)
+        Me.Tab_mii_extras.Controls.Add(Me.Label9)
+        Me.Tab_mii_extras.Controls.Add(Me.Label8)
+        Me.Tab_mii_extras.Controls.Add(Me.Label7)
+        Me.Tab_mii_extras.Controls.Add(Me.Label6)
+        Me.Tab_mii_extras.Controls.Add(Me.TextBox4)
+        Me.Tab_mii_extras.Controls.Add(Me.Label5)
+        Me.Tab_mii_extras.Controls.Add(Me.TextBox3)
         Me.Tab_mii_extras.Controls.Add(Me.valu_crcxmodem)
         Me.Tab_mii_extras.Controls.Add(Me.Text_Mii)
         Me.Tab_mii_extras.Controls.Add(Me.Panel33)
@@ -13231,6 +13320,96 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_extras.TabIndex = 3
         Me.Tab_mii_extras.Text = "Extras"
         Me.Tab_mii_extras.UseVisualStyleBackColor = true
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(539, 426)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 87
+        Me.Button1.Text = "Edit"
+        Me.Button1.UseVisualStyleBackColor = true
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(424, 429)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox7.TabIndex = 86
+        '
+        'TextBox6
+        '
+        Me.TextBox6.Location = New System.Drawing.Point(299, 428)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox6.TabIndex = 85
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(174, 429)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox5.TabIndex = 84
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = true
+        Me.Label9.Location = New System.Drawing.Point(204, 412)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(36, 13)
+        Me.Label9.TabIndex = 83
+        Me.Label9.Text = "bit 5-7"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = true
+        Me.Label8.Location = New System.Drawing.Point(330, 412)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(36, 13)
+        Me.Label8.TabIndex = 81
+        Me.Label8.Text = "bit 1-4"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = true
+        Me.Label7.Location = New System.Drawing.Point(452, 412)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(27, 13)
+        Me.Label7.TabIndex = 80
+        Me.Label7.Text = "bit 0"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = true
+        Me.Label6.Location = New System.Drawing.Point(286, 361)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(28, 13)
+        Me.Label6.TabIndex = 77
+        Me.Label6.Text = "data"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBox4.Location = New System.Drawing.Point(259, 377)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.TabIndex = 76
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = true
+        Me.Label5.Location = New System.Drawing.Point(438, 361)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(35, 13)
+        Me.Label5.TabIndex = 75
+        Me.Label5.Text = "binary"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(371, 377)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(164, 20)
+        Me.TextBox3.TabIndex = 74
         '
         'valu_crcxmodem
         '
@@ -13829,22 +14008,6 @@ Partial Class TL_SaveEditor
         Me.TabControl1.ResumeLayout(false)
         Me.Tab_mii_edit.ResumeLayout(false)
         Me.Tab_mii_edit.PerformLayout
-        Me.Panel41.ResumeLayout(false)
-        CType(Me.valu_copying,System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel40.ResumeLayout(false)
-        Me.Panel40.PerformLayout
-        Me.Panel39.ResumeLayout(false)
-        Me.Panel39.PerformLayout
-        Me.Panel31.ResumeLayout(false)
-        CType(Me.valu_economy,System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel28.ResumeLayout(false)
-        CType(Me.valu_miihouse,System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel24.ResumeLayout(false)
-        CType(Me.valu_switch_clothes,System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel23.ResumeLayout(false)
-        CType(Me.valu_switch_interiors,System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel22.ResumeLayout(false)
-        CType(Me.valu_switch_hats,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_edit_haircolor.ResumeLayout(false)
         Me.Panel_edit_haircolor.PerformLayout
         CType(Me.AdvH_edithaircolor,System.ComponentModel.ISupportInitialize).EndInit
@@ -13880,6 +14043,27 @@ Partial Class TL_SaveEditor
         CType(Me.color_3,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.color_2,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.color_1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_edit_nickname.ResumeLayout(false)
+        Me.Panel_edit_nickname.PerformLayout
+        CType(Me.Icon_valid_nickname,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel41.ResumeLayout(false)
+        CType(Me.valu_copying,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel40.ResumeLayout(false)
+        Me.Panel40.PerformLayout
+        Me.Panel39.ResumeLayout(false)
+        Me.Panel39.PerformLayout
+        Me.Panel31.ResumeLayout(false)
+        CType(Me.valu_economy,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel28.ResumeLayout(false)
+        CType(Me.valu_miihouse,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel24.ResumeLayout(false)
+        CType(Me.valu_switch_clothes,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel23.ResumeLayout(false)
+        CType(Me.valu_switch_interiors,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel22.ResumeLayout(false)
+        CType(Me.valu_switch_hats,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_lastname,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_lastnamepronun,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_firstnamepronun,System.ComponentModel.ISupportInitialize).EndInit
@@ -14036,7 +14220,6 @@ Partial Class TL_SaveEditor
         Me.Panel_target1.ResumeLayout(false)
         CType(Me.valu_target1,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel17.ResumeLayout(false)
-        Me.Panel17.PerformLayout
         CType(Me.valu_interaction,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_target1_foods.ResumeLayout(false)
         CType(Me.valu_itemmii_1,System.ComponentModel.ISupportInitialize).EndInit
@@ -15302,7 +15485,6 @@ End Sub
     Friend WithEvents valu_interacunknow As System.Windows.Forms.NumericUpDown
     Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents Text_notinteraction As System.Windows.Forms.TextBox
     Friend WithEvents Panel31 As System.Windows.Forms.Panel
     Friend WithEvents Title_miieconomy As System.Windows.Forms.Label
     Friend WithEvents Title_switch_interiors As System.Windows.Forms.Label
@@ -15340,5 +15522,22 @@ End Sub
     Friend WithEvents valu_crcxmodem As System.Windows.Forms.NumericUpDown
     Friend WithEvents Panel41 As System.Windows.Forms.Panel
     Friend WithEvents Select_copying As System.Windows.Forms.ComboBox
+    Friend WithEvents PictureBox10 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents Panel_edit_nickname As System.Windows.Forms.Panel
+    Friend WithEvents Icon_valid_nickname As System.Windows.Forms.PictureBox
+    Friend WithEvents Text_edit_nickname As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
