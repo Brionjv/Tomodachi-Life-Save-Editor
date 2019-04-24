@@ -1023,6 +1023,15 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_29 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_30 = New System.Windows.Forms.ComboBox()
         Me.Tab_mii_extras = New System.Windows.Forms.TabPage()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.TextBox12 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
@@ -4455,12 +4464,13 @@ Partial Class TL_SaveEditor
         '
         Me.Setting_Advhelp.AutoSize = true
         Me.Setting_Advhelp.BackColor = System.Drawing.Color.Transparent
+        Me.Setting_Advhelp.Enabled = False
         Me.Setting_Advhelp.Location = New System.Drawing.Point(5, 4)
         Me.Setting_Advhelp.Name = "Setting_Advhelp"
         Me.Setting_Advhelp.Size = New System.Drawing.Size(121, 17)
         Me.Setting_Advhelp.TabIndex = 1
         Me.Setting_Advhelp.Text = "Show advance help"
-        Me.Setting_Advhelp.UseVisualStyleBackColor = false
+        Me.Setting_Advhelp.UseVisualStyleBackColor = False
         '
         'Panel30
         '
@@ -4474,14 +4484,14 @@ Partial Class TL_SaveEditor
         '
         'Setting_ckupdate
         '
-        Me.Setting_ckupdate.AutoSize = true
+        Me.Setting_ckupdate.AutoSize = True
         Me.Setting_ckupdate.BackColor = System.Drawing.Color.Transparent
         Me.Setting_ckupdate.Location = New System.Drawing.Point(4, 4)
         Me.Setting_ckupdate.Name = "Setting_ckupdate"
         Me.Setting_ckupdate.Size = New System.Drawing.Size(143, 17)
         Me.Setting_ckupdate.TabIndex = 2
         Me.Setting_ckupdate.Text = "Unactive check updates"
-        Me.Setting_ckupdate.UseVisualStyleBackColor = false
+        Me.Setting_ckupdate.UseVisualStyleBackColor = False
         '
         'Panel9
         '
@@ -4496,7 +4506,7 @@ Partial Class TL_SaveEditor
         '
         'Text_language
         '
-        Me.Text_language.AutoSize = true
+        Me.Text_language.AutoSize = True
         Me.Text_language.BackColor = System.Drawing.Color.Transparent
         Me.Text_language.Location = New System.Drawing.Point(10, 5)
         Me.Text_language.Name = "Text_language"
@@ -4509,7 +4519,7 @@ Partial Class TL_SaveEditor
         Me.Select_language.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Select_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_language.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_language.FormattingEnabled = true
+        Me.Select_language.FormattingEnabled = True
         Me.Select_language.Items.AddRange(New Object() {"ENG", "FRA"})
         Me.Select_language.Location = New System.Drawing.Point(97, 2)
         Me.Select_language.Name = "Select_language"
@@ -4528,14 +4538,14 @@ Partial Class TL_SaveEditor
         '
         'Setting_filepath
         '
-        Me.Setting_filepath.AutoSize = true
+        Me.Setting_filepath.AutoSize = True
         Me.Setting_filepath.BackColor = System.Drawing.Color.Transparent
         Me.Setting_filepath.Location = New System.Drawing.Point(4, 4)
         Me.Setting_filepath.Name = "Setting_filepath"
         Me.Setting_filepath.Size = New System.Drawing.Size(93, 17)
         Me.Setting_filepath.TabIndex = 2
         Me.Setting_filepath.Text = "Show file path"
-        Me.Setting_filepath.UseVisualStyleBackColor = false
+        Me.Setting_filepath.UseVisualStyleBackColor = False
         '
         'Panel4
         '
@@ -4549,14 +4559,14 @@ Partial Class TL_SaveEditor
         '
         'Setting_hidden
         '
-        Me.Setting_hidden.AutoSize = true
+        Me.Setting_hidden.AutoSize = True
         Me.Setting_hidden.BackColor = System.Drawing.Color.Transparent
         Me.Setting_hidden.Location = New System.Drawing.Point(5, 4)
         Me.Setting_hidden.Name = "Setting_hidden"
         Me.Setting_hidden.Size = New System.Drawing.Size(119, 17)
         Me.Setting_hidden.TabIndex = 1
         Me.Setting_hidden.Text = "Show hidden things"
-        Me.Setting_hidden.UseVisualStyleBackColor = false
+        Me.Setting_hidden.UseVisualStyleBackColor = False
         '
         'Panel10
         '
@@ -4574,7 +4584,7 @@ Partial Class TL_SaveEditor
         Me.Select_music.BackColor = System.Drawing.Color.White
         Me.Select_music.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_music.FormattingEnabled = true
+        Me.Select_music.FormattingEnabled = True
         Me.Select_music.Items.AddRange(New Object() {"1", "2", "3"})
         Me.Select_music.Location = New System.Drawing.Point(211, 2)
         Me.Select_music.Name = "Select_music"
@@ -4583,18 +4593,18 @@ Partial Class TL_SaveEditor
         '
         'Setting_music
         '
-        Me.Setting_music.AutoSize = true
+        Me.Setting_music.AutoSize = True
         Me.Setting_music.BackColor = System.Drawing.Color.Transparent
         Me.Setting_music.Location = New System.Drawing.Point(5, 4)
         Me.Setting_music.Name = "Setting_music"
         Me.Setting_music.Size = New System.Drawing.Size(146, 17)
         Me.Setting_music.TabIndex = 0
         Me.Setting_music.Text = "Active background music"
-        Me.Setting_music.UseVisualStyleBackColor = false
+        Me.Setting_music.UseVisualStyleBackColor = False
         '
         'Settings_changelog
         '
-        Me.Settings_changelog.BackgroundImage = CType(resources.GetObject("Settings_changelog.BackgroundImage"),System.Drawing.Image)
+        Me.Settings_changelog.BackgroundImage = CType(resources.GetObject("Settings_changelog.BackgroundImage"), System.Drawing.Image)
         Me.Settings_changelog.Controls.Add(Me.Group_changelog)
         Me.Settings_changelog.Location = New System.Drawing.Point(4, 4)
         Me.Settings_changelog.Name = "Settings_changelog"
@@ -4602,7 +4612,7 @@ Partial Class TL_SaveEditor
         Me.Settings_changelog.Size = New System.Drawing.Size(642, 514)
         Me.Settings_changelog.TabIndex = 1
         Me.Settings_changelog.Text = "Changelog"
-        Me.Settings_changelog.UseVisualStyleBackColor = true
+        Me.Settings_changelog.UseVisualStyleBackColor = True
         '
         'Group_changelog
         '
@@ -4615,7 +4625,7 @@ Partial Class TL_SaveEditor
         Me.Group_changelog.Name = "Group_changelog"
         Me.Group_changelog.Size = New System.Drawing.Size(533, 443)
         Me.Group_changelog.TabIndex = 2
-        Me.Group_changelog.TabStop = false
+        Me.Group_changelog.TabStop = False
         Me.Group_changelog.Text = "Changelog"
         '
         'Icon_changelog
@@ -4627,12 +4637,12 @@ Partial Class TL_SaveEditor
         Me.Icon_changelog.Size = New System.Drawing.Size(102, 90)
         Me.Icon_changelog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Icon_changelog.TabIndex = 2
-        Me.Icon_changelog.TabStop = false
+        Me.Icon_changelog.TabStop = False
         '
         'Changelog
         '
         Me.Changelog.BackColor = System.Drawing.Color.Transparent
-        Me.Changelog.Font = New System.Drawing.Font("Microsoft Sans Serif", 9!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Changelog.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Changelog.Location = New System.Drawing.Point(9, 44)
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(518, 392)
@@ -4647,7 +4657,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 3.0.7"
+        Me.Text_TLSE_version.Text = "Version 3.0.8"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -5413,6 +5423,7 @@ Partial Class TL_SaveEditor
         Me.Label3.TabIndex = 254
         Me.Label3.Text = "TL Mii system ID"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label3.Visible = false
         '
         'Panel40
         '
@@ -5422,6 +5433,7 @@ Partial Class TL_SaveEditor
         Me.Panel40.Name = "Panel40"
         Me.Panel40.Size = New System.Drawing.Size(126, 17)
         Me.Panel40.TabIndex = 253
+        Me.Panel40.Visible = false
         '
         'TextBox2
         '
@@ -5441,6 +5453,7 @@ Partial Class TL_SaveEditor
         Me.Label2.TabIndex = 252
         Me.Label2.Text = "Mii system ID"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label2.Visible = false
         '
         'Panel39
         '
@@ -5450,6 +5463,7 @@ Partial Class TL_SaveEditor
         Me.Panel39.Name = "Panel39"
         Me.Panel39.Size = New System.Drawing.Size(126, 17)
         Me.Panel39.TabIndex = 251
+        Me.Panel39.Visible = false
         '
         'TextBox1
         '
@@ -13292,6 +13306,15 @@ Partial Class TL_SaveEditor
         'Tab_mii_extras
         '
         Me.Tab_mii_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_extras.Controls.Add(Me.Button2)
+        Me.Tab_mii_extras.Controls.Add(Me.TextBox8)
+        Me.Tab_mii_extras.Controls.Add(Me.TextBox9)
+        Me.Tab_mii_extras.Controls.Add(Me.Label10)
+        Me.Tab_mii_extras.Controls.Add(Me.Label11)
+        Me.Tab_mii_extras.Controls.Add(Me.Label12)
+        Me.Tab_mii_extras.Controls.Add(Me.TextBox11)
+        Me.Tab_mii_extras.Controls.Add(Me.Label13)
+        Me.Tab_mii_extras.Controls.Add(Me.TextBox12)
         Me.Tab_mii_extras.Controls.Add(Me.Button1)
         Me.Tab_mii_extras.Controls.Add(Me.TextBox7)
         Me.Tab_mii_extras.Controls.Add(Me.TextBox6)
@@ -13321,95 +13344,189 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_extras.Text = "Extras"
         Me.Tab_mii_extras.UseVisualStyleBackColor = true
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(503, 449)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 97
+        Me.Button2.Text = "Edit"
+        Me.Button2.UseVisualStyleBackColor = true
+        Me.Button2.Visible = false
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(388, 452)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox8.TabIndex = 96
+        Me.TextBox8.Visible = false
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(263, 451)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox9.TabIndex = 95
+        Me.TextBox9.Visible = false
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = true
+        Me.Label10.Location = New System.Drawing.Point(294, 435)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(36, 13)
+        Me.Label10.TabIndex = 93
+        Me.Label10.Text = "bit 4-7"
+        Me.Label10.Visible = false
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = true
+        Me.Label11.Location = New System.Drawing.Point(416, 435)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(36, 13)
+        Me.Label11.TabIndex = 92
+        Me.Label11.Text = "bit 0-3"
+        Me.Label11.Visible = false
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = true
+        Me.Label12.Location = New System.Drawing.Point(250, 384)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(28, 13)
+        Me.Label12.TabIndex = 91
+        Me.Label12.Text = "data"
+        Me.Label12.Visible = false
+        '
+        'TextBox11
+        '
+        Me.TextBox11.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBox11.Location = New System.Drawing.Point(223, 400)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox11.TabIndex = 90
+        Me.TextBox11.Visible = false
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = true
+        Me.Label13.Location = New System.Drawing.Point(402, 384)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(35, 13)
+        Me.Label13.TabIndex = 89
+        Me.Label13.Text = "binary"
+        Me.Label13.Visible = false
+        '
+        'TextBox12
+        '
+        Me.TextBox12.Location = New System.Drawing.Point(335, 400)
+        Me.TextBox12.Name = "TextBox12"
+        Me.TextBox12.Size = New System.Drawing.Size(164, 20)
+        Me.TextBox12.TabIndex = 88
+        Me.TextBox12.Visible = false
+        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(539, 426)
+        Me.Button1.Location = New System.Drawing.Point(374, 352)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 87
         Me.Button1.Text = "Edit"
         Me.Button1.UseVisualStyleBackColor = true
+        Me.Button1.Visible = false
         '
         'TextBox7
         '
-        Me.TextBox7.Location = New System.Drawing.Point(424, 429)
+        Me.TextBox7.Location = New System.Drawing.Point(259, 355)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(100, 20)
         Me.TextBox7.TabIndex = 86
+        Me.TextBox7.Visible = false
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(299, 428)
+        Me.TextBox6.Location = New System.Drawing.Point(134, 354)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(100, 20)
         Me.TextBox6.TabIndex = 85
+        Me.TextBox6.Visible = false
         '
         'TextBox5
         '
-        Me.TextBox5.Location = New System.Drawing.Point(174, 429)
+        Me.TextBox5.Location = New System.Drawing.Point(9, 355)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(100, 20)
         Me.TextBox5.TabIndex = 84
+        Me.TextBox5.Visible = false
         '
         'Label9
         '
         Me.Label9.AutoSize = true
-        Me.Label9.Location = New System.Drawing.Point(204, 412)
+        Me.Label9.Location = New System.Drawing.Point(39, 338)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(36, 13)
         Me.Label9.TabIndex = 83
         Me.Label9.Text = "bit 5-7"
+        Me.Label9.Visible = false
         '
         'Label8
         '
         Me.Label8.AutoSize = true
-        Me.Label8.Location = New System.Drawing.Point(330, 412)
+        Me.Label8.Location = New System.Drawing.Point(165, 338)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(36, 13)
         Me.Label8.TabIndex = 81
         Me.Label8.Text = "bit 1-4"
+        Me.Label8.Visible = false
         '
         'Label7
         '
         Me.Label7.AutoSize = true
-        Me.Label7.Location = New System.Drawing.Point(452, 412)
+        Me.Label7.Location = New System.Drawing.Point(287, 338)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(27, 13)
         Me.Label7.TabIndex = 80
         Me.Label7.Text = "bit 0"
+        Me.Label7.Visible = false
         '
         'Label6
         '
         Me.Label6.AutoSize = true
-        Me.Label6.Location = New System.Drawing.Point(286, 361)
+        Me.Label6.Location = New System.Drawing.Point(121, 287)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(28, 13)
         Me.Label6.TabIndex = 77
         Me.Label6.Text = "data"
+        Me.Label6.Visible = false
         '
         'TextBox4
         '
         Me.TextBox4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TextBox4.Location = New System.Drawing.Point(259, 377)
+        Me.TextBox4.Location = New System.Drawing.Point(94, 303)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 20)
         Me.TextBox4.TabIndex = 76
+        Me.TextBox4.Visible = false
         '
         'Label5
         '
         Me.Label5.AutoSize = true
-        Me.Label5.Location = New System.Drawing.Point(438, 361)
+        Me.Label5.Location = New System.Drawing.Point(273, 287)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(35, 13)
         Me.Label5.TabIndex = 75
         Me.Label5.Text = "binary"
+        Me.Label5.Visible = false
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(371, 377)
+        Me.TextBox3.Location = New System.Drawing.Point(206, 303)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(164, 20)
         Me.TextBox3.TabIndex = 74
+        Me.TextBox3.Visible = false
         '
         'valu_crcxmodem
         '
@@ -13421,6 +13538,7 @@ Partial Class TL_SaveEditor
         Me.valu_crcxmodem.Size = New System.Drawing.Size(91, 16)
         Me.valu_crcxmodem.TabIndex = 73
         Me.valu_crcxmodem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_crcxmodem.Visible = false
         '
         'Text_Mii
         '
@@ -13430,6 +13548,7 @@ Partial Class TL_SaveEditor
         Me.Text_Mii.Name = "Text_Mii"
         Me.Text_Mii.Size = New System.Drawing.Size(297, 104)
         Me.Text_Mii.TabIndex = 71
+        Me.Text_Mii.Visible = false
         '
         'Panel33
         '
@@ -15539,5 +15658,14 @@ End Sub
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents TextBox12 As System.Windows.Forms.TextBox
 
 End Class

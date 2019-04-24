@@ -329,6 +329,7 @@ Public Class TL_SaveEditor
     Dim Enddateinterac2 As String
     Dim Interacunknow As String
     Dim crcxmodem As String
+    Dim wrinkmake As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -3472,6 +3473,9 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1CA0 + Accessmii
                 sharing = Reader.Position
                 TextBox4.Text = Reader.ReadHexString(1)
+                Reader.Position = &H1CA1 + Accessmii
+                wrinkmake = Reader.Position
+                TextBox11.Text = Reader.ReadHexString(1)
             End If
 
             If Filever_text.Text = "JP" Then
@@ -3701,6 +3705,12 @@ Public Class TL_SaveEditor
             Next
             Writer.Position = Mii1S
             Writer.WriteUnicodeString(Text_nickname.Text)
+            For i As Integer = 0 To 19
+                Writer.Position = Mii1C + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = Mii1C
+            Writer.WriteUnicodeString(Text_creator.Text)
             Writer.Position = objet1
             Writer.WriteUInt16(valu_itemmii_1.Value)
             Writer.Position = objet2
@@ -3880,6 +3890,8 @@ Public Class TL_SaveEditor
             fs.WriteByte(valu_allmusic.Value)
             fs.Position = Emotions
             fs.WriteByte(valu_emotions.Value)
+            fs.Position = copy
+            fs.WriteByte(valu_copying.Value)
             writefriendlist()
             Patchfrienlist()
             done()
@@ -8027,9 +8039,9 @@ Public Class TL_SaveEditor
     Private Sub Icon_pronun_nickname_MouseMove(sender As Object, e As EventArgs) Handles Icon_pronun_nickname.MouseMove
         Text_pronun_nickname.Visible = True
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            Text_description.Text = "Nickname pronunciation can't be edited"
+            Text_description.Text = "Click to edit nickname"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            Text_description.Text = "Le surnom ne peut être édité"
+            Text_description.Text = "Cliquez pour éditer le surnom"
         End If
         Panel_description.Visible = True
     End Sub
@@ -39874,5 +39886,25 @@ Public Class TL_SaveEditor
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         TextBox3.Text = TextBox5.Text + TextBox6.Text + TextBox7.Text 'merge binary features
+    End Sub
+
+    Private Sub TextBox11_TextChanged(sender As Object, e As EventArgs) Handles TextBox11.TextChanged
+        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(TextBox11.Text, 16)) 'sharing hex to binary
+        Dim valout As String
+        valout = Convert.ToString(Convert.ToInt32(valconvert), 2)
+        TextBox12.Text = valout.PadLeft(8, "0")
+    End Sub
+
+    Private Sub TextBox12_TextChanged(sender As Object, e As EventArgs) Handles TextBox12.TextChanged
+        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(TextBox12.Text, 2)) 'sharing binary to hex
+        Dim valout As String
+        valout = Convert.ToString(Convert.ToInt32(valconvert), 16)
+        TextBox11.Text = valout
+        TextBox8.Text = TextBox12.Text.Substring(4, 4) 'update binary features
+        TextBox9.Text = TextBox12.Text.Substring(0, 4)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        TextBox12.Text = TextBox9.Text + TextBox8.Text 'merge binary features
     End Sub
 End Class
