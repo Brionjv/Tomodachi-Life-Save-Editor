@@ -3399,7 +3399,7 @@ Public Class TL_SaveEditor
                 valu_copying.Value = Reader.ReadInt8
                 Reader.Position = &H1CA0 + Accessmii
                 sharing = Reader.Position
-                valu_sharing.Value = Reader.ReadUInt16
+                Text_datasharing.Text = Reader.ReadHexString(1)
                 Reader.Position = &H1C89 + Accessmii
                 couleur = Reader.Position
                 valu_favcolor.Value = Reader.ReadInt8
@@ -3470,12 +3470,9 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1CCE + Accessmii
                 crcxmodem = Reader.Position
                 valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
-                Reader.Position = &H1CA0 + Accessmii
-                sharing = Reader.Position
-                TextBox4.Text = Reader.ReadHexString(1)
                 Reader.Position = &H1CA1 + Accessmii
                 wrinkmake = Reader.Position
-                TextBox11.Text = Reader.ReadHexString(1)
+                Text_datawrinkles.Text = Reader.ReadHexString(1)
             End If
 
             If Filever_text.Text = "JP" Then
@@ -3586,7 +3583,7 @@ Public Class TL_SaveEditor
                 valu_copying.Value = Reader.ReadInt8
                 Reader.Position = &H1C70 + Accessmii
                 sharing = Reader.Position
-                valu_sharing.Value = Reader.ReadUInt16
+                Text_datasharing.Text = Reader.ReadHexString(1)
                 Reader.Position = &H1C59 + Accessmii
                 couleur = Reader.Position
                 valu_favcolor.Value = Reader.ReadInt8
@@ -3796,7 +3793,7 @@ Public Class TL_SaveEditor
             Writer.Position = Place2
             Writer.WriteUInt16(valu_place_2.Value)
             Writer.Position = sharing
-            Writer.WriteHexString(TextBox4.Text)
+            Writer.WriteHexString(Text_datasharing.Text)
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 For i As Integer = 0 To 59
                     Writer.Position = Mii1PP + i
@@ -7461,7 +7458,6 @@ Public Class TL_SaveEditor
             value_tour.Visible = True
             value_vetem.Visible = True
             valu_allmusic.Visible = True
-            valu_sharing.Visible = True
             valu_copying.Visible = True
             valu_favcolor.Visible = True
             valu_growkid.Visible = True
@@ -7632,7 +7628,6 @@ Public Class TL_SaveEditor
             value_tour.Visible = False
             value_vetem.Visible = False
             valu_allmusic.Visible = False
-            valu_sharing.Visible = False
             valu_copying.Visible = False
             valu_favcolor.Visible = False
             valu_growkid.Visible = False
@@ -10787,25 +10782,6 @@ Public Class TL_SaveEditor
         End If
         If valu_copying.Value = 1 Then
             Select_copying.SelectedItem = Select_copying.Items.Item(1)
-        End If
-    End Sub
-
-    Private Sub valu_sharing_ValueChanged(sender As Object, e As EventArgs) Handles valu_sharing.ValueChanged
-        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            If valu_sharing.Value Mod 2 = 0 Then
-                Text_sharing.Text = "On"
-            End If
-            If valu_sharing.Value Mod 2 = 1 Then
-                Text_sharing.Text = "Off"
-            End If
-        End If
-        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            If valu_sharing.Value Mod 2 = 0 Then
-                Text_sharing.Text = "Oui"
-            End If
-            If valu_sharing.Value Mod 2 = 1 Then
-                Text_sharing.Text = "Non"
-            End If
         End If
     End Sub
 
@@ -39867,44 +39843,329 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
-        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(TextBox4.Text, 16)) 'sharing hex to binary
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles Text_datasharing.TextChanged
+        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(Text_datasharing.Text, 16)) 'sharing hex to binary
         Dim valout As String
         valout = Convert.ToString(Convert.ToInt32(valconvert), 2)
-        TextBox3.Text = valout.PadLeft(8, "0")
+        Text_binarysharing.Text = valout.PadLeft(8, "0")
     End Sub
 
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
-        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(TextBox3.Text, 2)) 'sharing binary to hex
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles Text_binarysharing.TextChanged
+        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(Text_binarysharing.Text, 2)) 'sharing binary to hex
         Dim valout As String
         valout = Convert.ToString(Convert.ToInt32(valconvert), 16)
-        TextBox4.Text = valout
-        TextBox7.Text = TextBox3.Text.Substring(7, 1) 'update binary features
-        TextBox6.Text = TextBox3.Text.Substring(3, 4)
-        TextBox5.Text = TextBox3.Text.Substring(0, 3)
+        Text_datasharing.Text = valout
+        Text_valuesharing.Text = Text_binarysharing.Text.Substring(7, 1) 'update binary features
+        Text_faceshape.Text = Text_binarysharing.Text.Substring(3, 4)
+        Text_skincolor.Text = Text_binarysharing.Text.Substring(0, 3)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        TextBox3.Text = TextBox5.Text + TextBox6.Text + TextBox7.Text 'merge binary features
+        Text_binarysharing.Text = Text_skincolor.Text + Text_faceshape.Text + Text_valuesharing.Text 'merge binary features
     End Sub
 
-    Private Sub TextBox11_TextChanged(sender As Object, e As EventArgs) Handles TextBox11.TextChanged
-        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(TextBox11.Text, 16)) 'sharing hex to binary
+    Private Sub TextBox11_TextChanged(sender As Object, e As EventArgs) Handles Text_datawrinkles.TextChanged
+        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(Text_datawrinkles.Text, 16)) 'sharing hex to binary
         Dim valout As String
         valout = Convert.ToString(Convert.ToInt32(valconvert), 2)
-        TextBox12.Text = valout.PadLeft(8, "0")
+        Text_binarywrinkles.Text = valout.PadLeft(8, "0")
     End Sub
 
-    Private Sub TextBox12_TextChanged(sender As Object, e As EventArgs) Handles TextBox12.TextChanged
-        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(TextBox12.Text, 2)) 'sharing binary to hex
+    Private Sub TextBox12_TextChanged(sender As Object, e As EventArgs) Handles Text_binarywrinkles.TextChanged
+        Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(Text_binarywrinkles.Text, 2)) 'sharing binary to hex
         Dim valout As String
         valout = Convert.ToString(Convert.ToInt32(valconvert), 16)
-        TextBox11.Text = valout
-        TextBox8.Text = TextBox12.Text.Substring(4, 4) 'update binary features
-        TextBox9.Text = TextBox12.Text.Substring(0, 4)
+        Text_datawrinkles.Text = valout
+        Text_wrinkles.Text = Text_binarywrinkles.Text.Substring(4, 4) 'update binary features
+        Text_makeup.Text = Text_binarywrinkles.Text.Substring(0, 4)
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        TextBox12.Text = TextBox9.Text + TextBox8.Text 'merge binary features
+        Text_binarywrinkles.Text = Text_makeup.Text + Text_wrinkles.Text 'merge binary features
+    End Sub
+
+    Private Sub Select_sharing_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_sharing.SelectedIndexChanged
+        If Select_sharing.SelectedItem = Select_sharing.Items.Item(0) Then
+            Text_valuesharing.Text = "0"
+        ElseIf Select_sharing.SelectedItem = Select_sharing.Items.Item(1) Then
+            Text_valuesharing.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Text_valuesharing_TextChanged(sender As Object, e As EventArgs) Handles Text_valuesharing.TextChanged
+        If Text_valuesharing.Text = "0" Then
+            Select_sharing.SelectedItem = Select_sharing.Items.Item(0)
+        ElseIf Text_valuesharing.Text = "1" Then
+            Select_sharing.SelectedItem = Select_sharing.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Text_faceshape_TextChanged(sender As Object, e As EventArgs) Handles Text_faceshape.TextChanged
+        If Text_faceshape.Text = "0000" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(0)
+        ElseIf Text_faceshape.Text = "0001" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(1)
+        ElseIf Text_faceshape.Text = "1000" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(2)
+        ElseIf Text_faceshape.Text = "0010" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(3)
+        ElseIf Text_faceshape.Text = "0011" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(4)
+        ElseIf Text_faceshape.Text = "1001" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(5)
+        ElseIf Text_faceshape.Text = "0100" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(6)
+        ElseIf Text_faceshape.Text = "0101" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(7)
+        ElseIf Text_faceshape.Text = "1010" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(8)
+        ElseIf Text_faceshape.Text = "0110" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(9)
+        ElseIf Text_faceshape.Text = "0111" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(10)
+        ElseIf Text_faceshape.Text = "1011" Then
+            Select_faceshape.SelectedItem = Select_faceshape.Items.Item(11)
+        End If
+    End Sub
+
+    Private Sub Select_faceshape_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_faceshape.SelectedIndexChanged
+        If Select_faceshape.SelectedItem = Select_faceshape.Items.Item(0) Then
+            Text_faceshape.Text = "0000"
+            Icon_faceshape.Image = My.Resources.faceshape_1
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(1) Then
+            Text_faceshape.Text = "0001"
+            Icon_faceshape.Image = My.Resources.faceshape_2
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(2) Then
+            Text_faceshape.Text = "1000"
+            Icon_faceshape.Image = My.Resources.faceshape_3
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(3) Then
+            Text_faceshape.Text = "0010"
+            Icon_faceshape.Image = My.Resources.faceshape_4
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(4) Then
+            Text_faceshape.Text = "0011"
+            Icon_faceshape.Image = My.Resources.faceshape_5
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(5) Then
+            Text_faceshape.Text = "1001"
+            Icon_faceshape.Image = My.Resources.faceshape_6
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(6) Then
+            Text_faceshape.Text = "0100"
+            Icon_faceshape.Image = My.Resources.faceshape_7
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(7) Then
+            Text_faceshape.Text = "0101"
+            Icon_faceshape.Image = My.Resources.faceshape_8
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(8) Then
+            Text_faceshape.Text = "1010"
+            Icon_faceshape.Image = My.Resources.faceshape_9
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(9) Then
+            Text_faceshape.Text = "0110"
+            Icon_faceshape.Image = My.Resources.faceshape_10
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(10) Then
+            Text_faceshape.Text = "0111"
+            Icon_faceshape.Image = My.Resources.faceshape_11
+        ElseIf Select_faceshape.SelectedItem = Select_faceshape.Items.Item(11) Then
+            Text_faceshape.Text = "1011"
+            Icon_faceshape.Image = My.Resources.faceshape_12
+        End If
+    End Sub
+
+    Private Sub Icon_skincolor_1_Click(sender As Object, e As EventArgs) Handles Icon_skincolor_1.Click
+        Text_skincolor.Text = "000"
+    End Sub
+
+    Private Sub Icon_skincolor_2_Click(sender As Object, e As EventArgs) Handles Icon_skincolor_2.Click
+        Text_skincolor.Text = "001"
+    End Sub
+
+    Private Sub Icon_skincolor_3_Click(sender As Object, e As EventArgs) Handles Icon_skincolor_3.Click
+        Text_skincolor.Text = "010"
+    End Sub
+
+    Private Sub Icon_skincolor_4_Click(sender As Object, e As EventArgs) Handles Icon_skincolor_4.Click
+        Text_skincolor.Text = "011"
+    End Sub
+
+    Private Sub Icon_skincolor_5_Click(sender As Object, e As EventArgs) Handles Icon_skincolor_5.Click
+        Text_skincolor.Text = "100"
+    End Sub
+
+    Private Sub Icon_skincolor_6_Click(sender As Object, e As EventArgs) Handles Icon_skincolor_6.Click
+        Text_skincolor.Text = "101"
+    End Sub
+
+    Private Sub Text_skincolor_TextChanged(sender As Object, e As EventArgs) Handles Text_skincolor.TextChanged
+        If Text_skincolor.Text = "000" Then
+            hideskincolor()
+            Icon_skincolor_1.BorderStyle = BorderStyle.FixedSingle
+        ElseIf Text_skincolor.Text = "001" Then
+            hideskincolor()
+            Icon_skincolor_2.BorderStyle = BorderStyle.FixedSingle
+        ElseIf Text_skincolor.Text = "010" Then
+            hideskincolor()
+            Icon_skincolor_3.BorderStyle = BorderStyle.FixedSingle
+        ElseIf Text_skincolor.Text = "011" Then
+            hideskincolor()
+            Icon_skincolor_4.BorderStyle = BorderStyle.FixedSingle
+        ElseIf Text_skincolor.Text = "100" Then
+            hideskincolor()
+            Icon_skincolor_5.BorderStyle = BorderStyle.FixedSingle
+        ElseIf Text_skincolor.Text = "101" Then
+            hideskincolor()
+            Icon_skincolor_6.BorderStyle = BorderStyle.FixedSingle
+        End If
+    End Sub
+
+    Public Sub hideskincolor()
+        Icon_skincolor_1.BorderStyle = BorderStyle.None
+        Icon_skincolor_2.BorderStyle = BorderStyle.None
+        Icon_skincolor_3.BorderStyle = BorderStyle.None
+        Icon_skincolor_4.BorderStyle = BorderStyle.None
+        Icon_skincolor_5.BorderStyle = BorderStyle.None
+        Icon_skincolor_6.BorderStyle = BorderStyle.None
+    End Sub
+
+    Private Sub Select_makeup_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_makeup.SelectedIndexChanged
+        If Select_makeup.SelectedItem = Select_makeup.Items.Item(0) Then
+            Text_makeup.Text = "0000"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(1) Then
+            Text_makeup.Text = "0001"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(2) Then
+            Text_makeup.Text = "0010"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(3) Then
+            Text_makeup.Text = "0011"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(4) Then
+            Text_makeup.Text = "0100"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(5) Then
+            Text_makeup.Text = "0101"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(6) Then
+            Text_makeup.Text = "0110"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(7) Then
+            Text_makeup.Text = "0111"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(8) Then
+            Text_makeup.Text = "1000"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(9) Then
+            Text_makeup.Text = "1001"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(10) Then
+            Text_makeup.Text = "1010"
+        ElseIf Select_makeup.SelectedItem = Select_makeup.Items.Item(11) Then
+            Text_makeup.Text = "1011"
+        End If
+    End Sub
+
+    Private Sub Text_makeup_TextChanged(sender As Object, e As EventArgs) Handles Text_makeup.TextChanged
+        If Text_makeup.Text = "0000" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(0)
+            Icon_makeup.Image = My.Resources.makeup_1
+        ElseIf Text_makeup.Text = "0001" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(1)
+            Icon_makeup.Image = My.Resources.makeup_2
+        ElseIf Text_makeup.Text = "0010" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(2)
+            Icon_makeup.Image = My.Resources.makeup_3
+        ElseIf Text_makeup.Text = "0011" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(3)
+            Icon_makeup.Image = My.Resources.makeup_4
+        ElseIf Text_makeup.Text = "0100" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(4)
+            Icon_makeup.Image = My.Resources.makeup_5
+        ElseIf Text_makeup.Text = "0101" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(5)
+            Icon_makeup.Image = My.Resources.makeup_6
+        ElseIf Text_makeup.Text = "0110" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(6)
+            Icon_makeup.Image = My.Resources.makeup_7
+        ElseIf Text_makeup.Text = "0111" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(7)
+            Icon_makeup.Image = My.Resources.makeup_8
+        ElseIf Text_makeup.Text = "1000" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(8)
+            Icon_makeup.Image = My.Resources.makeup_9
+        ElseIf Text_makeup.Text = "1001" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(9)
+            Icon_makeup.Image = My.Resources.makeup_10
+        ElseIf Text_makeup.Text = "1010" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(10)
+            Icon_makeup.Image = My.Resources.makeup_11
+        ElseIf Text_makeup.Text = "1011" Then
+            Select_makeup.SelectedItem = Select_makeup.Items.Item(11)
+            Icon_makeup.Image = My.Resources.makeup_12
+        End If
+    End Sub
+
+    Private Sub Select_wrinkles_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_wrinkles.SelectedIndexChanged
+        If Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(0) Then
+            Text_wrinkles.Text = "0000"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(1) Then
+            Text_wrinkles.Text = "0001"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(2) Then
+            Text_wrinkles.Text = "0010"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(3) Then
+            Text_wrinkles.Text = "0011"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(4) Then
+            Text_wrinkles.Text = "0100"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(5) Then
+            Text_wrinkles.Text = "0101"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(6) Then
+            Text_wrinkles.Text = "0110"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(7) Then
+            Text_wrinkles.Text = "0111"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(8) Then
+            Text_wrinkles.Text = "1000"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(9) Then
+            Text_wrinkles.Text = "1001"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(10) Then
+            Text_wrinkles.Text = "1010"
+        ElseIf Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(11) Then
+            Text_wrinkles.Text = "1011"
+        End If
+    End Sub
+
+    Private Sub Text_wrinkles_TextChanged(sender As Object, e As EventArgs) Handles Text_wrinkles.TextChanged
+        If Text_wrinkles.Text = "0000" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(0)
+            Icon_wrinkles.Image = My.Resources.wrinkles_1
+        ElseIf Text_wrinkles.Text = "0001" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(1)
+            Icon_wrinkles.Image = My.Resources.wrinkles_2
+        ElseIf Text_wrinkles.Text = "0010" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(2)
+            Icon_wrinkles.Image = My.Resources.wrinkles_3
+        ElseIf Text_wrinkles.Text = "0011" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(3)
+            Icon_wrinkles.Image = My.Resources.wrinkles_4
+        ElseIf Text_wrinkles.Text = "0100" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(4)
+            Icon_wrinkles.Image = My.Resources.wrinkles_5
+        ElseIf Text_wrinkles.Text = "0101" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(5)
+            Icon_wrinkles.Image = My.Resources.wrinkles_6
+        ElseIf Text_wrinkles.Text = "0110" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(6)
+            Icon_wrinkles.Image = My.Resources.wrinkles_7
+        ElseIf Text_wrinkles.Text = "0111" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(7)
+            Icon_wrinkles.Image = My.Resources.wrinkles_8
+        ElseIf Text_wrinkles.Text = "1000" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(8)
+            Icon_wrinkles.Image = My.Resources.wrinkles_9
+        ElseIf Text_wrinkles.Text = "1001" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(9)
+            Icon_wrinkles.Image = My.Resources.wrinkles_10
+        ElseIf Text_wrinkles.Text = "1010" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(10)
+            Icon_wrinkles.Image = My.Resources.wrinkles_11
+        ElseIf Text_wrinkles.Text = "1011" Then
+            Select_wrinkles.SelectedItem = Select_wrinkles.Items.Item(11)
+            Icon_wrinkles.Image = My.Resources.wrinkles_12
+        End If
+    End Sub
+
+    Private Sub Icon_editbodyface_Click(sender As Object, e As EventArgs) Handles Icon_editbodyface.Click
+        Panel_profile.Visible = False
+        Panel_bodyface.Visible = True
+    End Sub
+
+    Private Sub Icon_editprofile_Click(sender As Object, e As EventArgs) Handles Icon_editprofile.Click
+        Panel_profile.Visible = True
+        Panel_bodyface.Visible = False
     End Sub
 End Class
