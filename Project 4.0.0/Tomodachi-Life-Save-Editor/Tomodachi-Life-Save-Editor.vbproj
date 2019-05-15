@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7031DEA9-4CEC-4C2C-8878-4F9E6F2890B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Tomodachi_Life_Save_Editor.My.MyApplication</StartupObject>
+    <RootNamespace>Tomodachi_Life_Save_Editor</RootNamespace>
+    <AssemblyName>Tomodachi-Life-Save-Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Tomodachi-Life-Save-Editor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Tomodachi-Life-Save-Editor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon Tomodachi.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PackageIO">
+      <HintPath>..\PackageIO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TLSE_dialog.Designer.vb">
+      <DependentUpon>TLSE_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_dialog.resx">
+      <DependentUpon>TLSE_dialog.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\button_addspecarac.png" />
+    <None Include="Resources\vetv.png" />
+    <None Include="Resources\vetn.png" />
+    <None Include="Resources\vet.png" />
+    <None Include="Resources\tourv.png" />
+    <None Include="Resources\tourn.png" />
+    <None Include="Resources\touri.png" />
+    <None Include="Resources\tour.png" />
+    <None Include="Resources\testv.png" />
+    <None Include="Resources\testn.png" />
+    <None Include="Resources\test.png" />
+    <None Include="Resources\tervaguev.png" />
+    <None Include="Resources\tervaguen.png" />
+    <None Include="Resources\tervague.png" />
+    <None Include="Resources\studv.png" />
+    <None Include="Resources\studn.png" />
+    <None Include="Resources\stud.png" />
+    <None Include="Resources\portv.png" />
+    <None Include="Resources\portn.png" />
+    <None Include="Resources\port.png" />
+    <None Include="Resources\plagev.png" />
+    <None Include="Resources\plagen.png" />
+    <None Include="Resources\plage.png" />
+    <None Include="Resources\partv.png" />
+    <None Include="Resources\partn.png" />
+    <None Include="Resources\parti.png" />
+    <None Include="Resources\part.png" />
+    <None Include="Resources\parcv.png" />
+    <None Include="Resources\parcn.png" />
+    <None Include="Resources\parc1v.png" />
+    <None Include="Resources\parc1n.png" />
+    <None Include="Resources\parc1.png" />
+    <None Include="Resources\parc.png" />
+    <None Include="Resources\maisv.png" />
+    <None Include="Resources\maisn.png" />
+    <None Include="Resources\mais.png" />
+    <None Include="Resources\mairv.png" />
+    <None Include="Resources\mairn.png" />
+    <None Include="Resources\mair.png" />
+    <None Include="Resources\magimportv.png" />
+    <None Include="Resources\magimportn.png" />
+    <None Include="Resources\magimport.png" />
+    <None Include="Resources\infov.png" />
+    <None Include="Resources\infon.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\fontv.png" />
+    <None Include="Resources\fontn.png" />
+    <None Include="Resources\font.png" />
+    <None Include="Resources\epicerv.png" />
+    <None Include="Resources\epicern.png" />
+    <None Include="Resources\epicer.png" />
+    <None Include="Resources\decov.png" />
+    <None Include="Resources\decon.png" />
+    <None Include="Resources\deco.png" />
+    <None Include="Resources\concv.png" />
+    <None Include="Resources\concn.png" />
+    <None Include="Resources\conc.png" />
+    <None Include="Resources\classv.png" />
+    <None Include="Resources\classn.png" />
+    <None Include="Resources\classem.png" />
+    <None Include="Resources\chapv.png" />
+    <None Include="Resources\chapn.png" />
+    <None Include="Resources\chap.png" />
+    <None Include="Resources\cafev.png" />
+    <None Include="Resources\cafen.png" />
+    <None Include="Resources\cafe.png" />
+    <None Include="Resources\brocv.png" />
+    <None Include="Resources\brocn.png" />
+    <None Include="Resources\broc.png" />
+    <None Include="Resources\appartv.png" />
+    <None Include="Resources\appartn.png" />
+    <None Include="Resources\appart.png" />
+    <None Include="Resources\bg_buttons_large.png" />
+    <None Include="Resources\bg_dialog.png" />
+    <None Include="Resources\buttontop_largex4.png" />
+    <None Include="Resources\icon_danger.png" />
+    <None Include="Resources\Icon_travelers_sent.png" />
+    <None Include="Resources\Icon_travelers_received.png" />
+    <None Include="Resources\icon_streetpass_encounters.png" />
+    <None Include="Resources\icon_wedding.png" />
+    <None Include="Resources\icon_problems_solved.png" />
+    <None Include="Resources\icon_childrenborn.png" />
+    <None Include="Resources\icon_island.png" />
+    <None Include="Resources\carte.png" />
+    <None Include="Resources\event_fountain.gif" />
+    <None Include="Resources\icon_appart_03.png" />
+    <None Include="Resources\icon_appart_02.png" />
+    <None Include="Resources\icon_appart_01.png" />
+    <None Include="Resources\icon_appart_00.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\repair_save.png" />
+    <None Include="Resources\extras.png" />
+    <None Include="Resources\mii_edit.png" />
+    <None Include="Resources\manual.png" />
+    <None Include="Resources\items_edit.png" />
+    <None Include="Resources\island_edit.png" />
+    <None Include="Resources\buttontop_single_act.png" />
+    <None Include="Resources\buttontop_single.png" />
+    <None Include="Resources\buttontop_largex2_act.png" />
+    <None Include="Resources\buttontop_largex2.png" />
+    <None Include="Resources\icon_gitpage.png" />
+    <None Include="Resources\icon_gbtpage.png" />
+    <None Include="Resources\Icon_advhelp.png" />
+    <None Include="Resources\bg_money.png" />
+    <None Include="Resources\validate.png" />
+    <None Include="Resources\icon_pronunciation.png" />
+    <None Include="Resources\bg_menu_selected.png" />
+    <None Include="Resources\ranking_vitalityn.png" />
+    <None Include="Resources\ranking_vitalityi.png" />
+    <None Include="Resources\ranking_vitality.png" />
+    <None Include="Resources\ranking_travelern.png" />
+    <None Include="Resources\ranking_traveleri.png" />
+    <None Include="Resources\ranking_traveler.png" />
+    <None Include="Resources\ranking_splurgen.png" />
+    <None Include="Resources\ranking_splurgei.png" />
+    <None Include="Resources\ranking_splurge.png" />
+    <None Include="Resources\ranking_romancen.png" />
+    <None Include="Resources\ranking_romancei.png" />
+    <None Include="Resources\ranking_romance.png" />
+    <None Include="Resources\ranking_popularityn.png" />
+    <None Include="Resources\ranking_popularityi.png" />
+    <None Include="Resources\ranking_popularity.png" />
+    <None Include="Resources\ranking_pamperedn.png" />
+    <None Include="Resources\ranking_pamperedi.png" />
+    <None Include="Resources\ranking_pampered.png" />
+    <None Include="Resources\ranking_islandn.png" />
+    <None Include="Resources\ranking_islandi.png" />
+    <None Include="Resources\ranking_island.png" />
+    <None Include="Resources\ranking_girlcharmn.png" />
+    <None Include="Resources\ranking_girlcharmi.png" />
+    <None Include="Resources\ranking_girlcharm.png" />
+    <None Include="Resources\ranking_friendshipn.png" />
+    <None Include="Resources\ranking_friendshipi.png" />
+    <None Include="Resources\ranking_friendship.png" />
+    <None Include="Resources\ranking_boycharmn.png" />
+    <None Include="Resources\ranking_boycharmi.png" />
+    <None Include="Resources\ranking_boycharm.png" />
+    <None Include="Resources\bg_rankingboard.png" />
+    <None Include="Resources\bg_orange.png" />
+    <None Include="Resources\minimize_gray.png" />
+    <None Include="Resources\minimize.png" />
+    <None Include="Resources\bg_panel.png" />
+    <None Include="Resources\close_red_tl.png" />
+    <None Include="Resources\TLSE_title.gif" />
+    <None Include="Resources\logo_US_update.gif" />
+    <None Include="Resources\logo_US.gif" />
+    <None Include="Resources\logo_KR_update.gif" />
+    <None Include="Resources\logo_KR.gif" />
+    <None Include="Resources\logo_JP_update.gif" />
+    <None Include="Resources\logo_JP.gif" />
+    <None Include="Resources\logo_EU_update.gif" />
+    <None Include="Resources\logo_EU.gif" />
+    <None Include="Resources\close_tl.png" />
+    <None Include="Resources\tomo_bg.png" />
+    <None Include="Resources\bg_menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
