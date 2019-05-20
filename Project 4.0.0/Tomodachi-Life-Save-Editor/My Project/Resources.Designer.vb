@@ -113,6 +113,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property bg_done() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_done", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property bg_menu() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("bg_menu", resourceCulture)
@@ -573,6 +583,66 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property icon_badvh() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_badvh", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_bfilepath() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_bfilepath", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_bgmusic() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_bgmusic", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_bhidden() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_bhidden", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_bnoupdate() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_bnoupdate", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_bsymb() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_bsymb", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property icon_childrenborn() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icon_childrenborn", resourceCulture)
@@ -653,6 +723,26 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property icon_tomoeu() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_tomoeu", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_tomojp() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_tomojp", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property Icon_travelers_received() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Icon_travelers_received", resourceCulture)
@@ -666,6 +756,16 @@ Namespace My.Resources
         Public ReadOnly Property Icon_travelers_sent() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Icon_travelers_sent", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_warning() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_warning", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -1417,6 +1517,33 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("settings", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Public ReadOnly Property sound1() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("sound1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Public ReadOnly Property sound2() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("sound2", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Public ReadOnly Property sound3() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("sound3", resourceCulture)
             End Get
         End Property
         

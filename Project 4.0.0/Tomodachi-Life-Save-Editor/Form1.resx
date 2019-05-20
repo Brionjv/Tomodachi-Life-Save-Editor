@@ -164,6 +164,12 @@
         IQXhABmoMgg9h1kBpv4U09trAKQAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="Changelog.Text" xml:space="preserve">
+    <value>TomodachiLife Save Editor has been rewrite from zero (fix project error)
+Update save editor appareance
+Detect save file region (need to choose between EUR and USA version)
+Update special symbol feature</value>
+  </data>
   <data name="Settings_credits.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB8AAAAfCAMAAAAocOYLAAAABGdBTUEAALGPC/xhBQAAABhQTFRFANK+
@@ -2560,6 +2566,9 @@ Visual Studio 2017- Microsoft Word - Microsoft Excel</value>
         gg==
 </value>
   </data>
+  <metadata name="Timer_done.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAMDAAAAEAIACoJQAAFgAAACgAAAAwAAAAYAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA

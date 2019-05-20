@@ -22,11 +22,24 @@ Partial Class TL_SaveEditor
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TL_SaveEditor))
         Me.TLSE_logo_update = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo = New System.Windows.Forms.PictureBox()
         Me.TLSE_header = New System.Windows.Forms.Panel()
         Me.Panel_menubar = New System.Windows.Forms.Panel()
+        Me.Panel_bspesymb = New System.Windows.Forms.Panel()
+        Me.Icon_bspesymb = New System.Windows.Forms.PictureBox()
+        Me.Panel_Advhelp = New System.Windows.Forms.Panel()
+        Me.Icon_Advhelp = New System.Windows.Forms.PictureBox()
+        Me.Panel_chkupdate = New System.Windows.Forms.Panel()
+        Me.Icon_chkupdate = New System.Windows.Forms.PictureBox()
+        Me.Panel_filepath = New System.Windows.Forms.Panel()
+        Me.Icon_filepath = New System.Windows.Forms.PictureBox()
+        Me.Panel_hiddenthings = New System.Windows.Forms.Panel()
+        Me.Icon_hiddenthings = New System.Windows.Forms.PictureBox()
+        Me.Panel_bgmusic = New System.Windows.Forms.Panel()
+        Me.Icon_bgmusic = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Filever_text = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -66,10 +79,18 @@ Partial Class TL_SaveEditor
         Me.Menu_text_settings = New System.Windows.Forms.Label()
         Me.Menu_icon_settings = New System.Windows.Forms.PictureBox()
         Me.Menu_panel = New System.Windows.Forms.Panel()
+        Me.Icon_description = New System.Windows.Forms.PictureBox()
+        Me.Panel_done = New System.Windows.Forms.Panel()
+        Me.Text_done = New System.Windows.Forms.Label()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
+        Me.Warning_islandname = New System.Windows.Forms.PictureBox()
         Me.Panel_addsymb = New System.Windows.Forms.Panel()
+        Me.Text_spesymb = New System.Windows.Forms.Label()
         Me.Panel_spesymb_cancel = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_cancel = New System.Windows.Forms.Label()
         Me.Panel_spesymb_add = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_add_pn = New System.Windows.Forms.Label()
+        Me.Text_spesymb_add_n = New System.Windows.Forms.Label()
         Me.Select_spesymb = New System.Windows.Forms.ComboBox()
         Me.Addsymbol_pronun_island = New System.Windows.Forms.PictureBox()
         Me.Addsymbol_islandname = New System.Windows.Forms.PictureBox()
@@ -218,7 +239,7 @@ Partial Class TL_SaveEditor
         Me.TabControl_settings = New System.Windows.Forms.TabControl()
         Me.Settings_settings = New System.Windows.Forms.TabPage()
         Me.Panel19 = New System.Windows.Forms.Panel()
-        Me.Setting_specharac3ds = New System.Windows.Forms.CheckBox()
+        Me.Setting_spesymb = New System.Windows.Forms.CheckBox()
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Setting_Advhelp = New System.Windows.Forms.CheckBox()
         Me.Panel30 = New System.Windows.Forms.Panel()
@@ -342,13 +363,24 @@ Partial Class TL_SaveEditor
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Panel_miiedit = New System.Windows.Forms.Panel()
-        Me.Text_spesymb_add_n = New System.Windows.Forms.Label()
-        Me.Text_spesymb_add_pn = New System.Windows.Forms.Label()
-        Me.Text_spesymb_cancel = New System.Windows.Forms.Label()
+        Me.TextBox_fpath = New System.Windows.Forms.TextBox()
+        Me.Timer_done = New System.Windows.Forms.Timer(Me.components)
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_header.SuspendLayout()
         Me.Panel_menubar.SuspendLayout()
+        Me.Panel_bspesymb.SuspendLayout()
+        CType(Me.Icon_bspesymb, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_Advhelp.SuspendLayout()
+        CType(Me.Icon_Advhelp, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_chkupdate.SuspendLayout()
+        CType(Me.Icon_chkupdate, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_filepath.SuspendLayout()
+        CType(Me.Icon_filepath, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_hiddenthings.SuspendLayout()
+        CType(Me.Icon_hiddenthings, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_bgmusic.SuspendLayout()
+        CType(Me.Icon_bgmusic, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel_menu_opensave.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -377,7 +409,10 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_settings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Menu_icon_settings, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_panel.SuspendLayout()
+        CType(Me.Icon_description, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_done.SuspendLayout()
         Me.Panel_islandedit.SuspendLayout()
+        CType(Me.Warning_islandname, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_addsymb.SuspendLayout()
         Me.Panel_spesymb_cancel.SuspendLayout()
         Me.Panel_spesymb_add.SuspendLayout()
@@ -606,6 +641,12 @@ Partial Class TL_SaveEditor
         'Panel_menubar
         '
         Me.Panel_menubar.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_menubar.Controls.Add(Me.Panel_bspesymb)
+        Me.Panel_menubar.Controls.Add(Me.Panel_Advhelp)
+        Me.Panel_menubar.Controls.Add(Me.Panel_chkupdate)
+        Me.Panel_menubar.Controls.Add(Me.Panel_filepath)
+        Me.Panel_menubar.Controls.Add(Me.Panel_hiddenthings)
+        Me.Panel_menubar.Controls.Add(Me.Panel_bgmusic)
         Me.Panel_menubar.Controls.Add(Me.Panel1)
         Me.Panel_menubar.Controls.Add(Me.Panel_menu_opensave)
         Me.Panel_menubar.Location = New System.Drawing.Point(0, 41)
@@ -613,11 +654,162 @@ Partial Class TL_SaveEditor
         Me.Panel_menubar.Size = New System.Drawing.Size(460, 34)
         Me.Panel_menubar.TabIndex = 5
         '
+        'Panel_bspesymb
+        '
+        Me.Panel_bspesymb.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_bspesymb.Controls.Add(Me.Icon_bspesymb)
+        Me.Panel_bspesymb.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Panel_bspesymb.Location = New System.Drawing.Point(395, 0)
+        Me.Panel_bspesymb.Name = "Panel_bspesymb"
+        Me.Panel_bspesymb.Size = New System.Drawing.Size(34, 34)
+        Me.Panel_bspesymb.TabIndex = 7
+        Me.Panel_bspesymb.Visible = False
+        '
+        'Icon_bspesymb
+        '
+        Me.Icon_bspesymb.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_bspesymb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Icon_bspesymb.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Icon_bspesymb.Enabled = False
+        Me.Icon_bspesymb.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_bsymb
+        Me.Icon_bspesymb.Location = New System.Drawing.Point(0, 0)
+        Me.Icon_bspesymb.Name = "Icon_bspesymb"
+        Me.Icon_bspesymb.Size = New System.Drawing.Size(34, 34)
+        Me.Icon_bspesymb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_bspesymb.TabIndex = 2
+        Me.Icon_bspesymb.TabStop = False
+        '
+        'Panel_Advhelp
+        '
+        Me.Panel_Advhelp.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_Advhelp.Controls.Add(Me.Icon_Advhelp)
+        Me.Panel_Advhelp.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Panel_Advhelp.Location = New System.Drawing.Point(358, 0)
+        Me.Panel_Advhelp.Name = "Panel_Advhelp"
+        Me.Panel_Advhelp.Size = New System.Drawing.Size(34, 34)
+        Me.Panel_Advhelp.TabIndex = 6
+        Me.Panel_Advhelp.Visible = False
+        '
+        'Icon_Advhelp
+        '
+        Me.Icon_Advhelp.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_Advhelp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Icon_Advhelp.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Icon_Advhelp.Enabled = False
+        Me.Icon_Advhelp.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_badvh
+        Me.Icon_Advhelp.Location = New System.Drawing.Point(0, 0)
+        Me.Icon_Advhelp.Name = "Icon_Advhelp"
+        Me.Icon_Advhelp.Size = New System.Drawing.Size(34, 34)
+        Me.Icon_Advhelp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_Advhelp.TabIndex = 2
+        Me.Icon_Advhelp.TabStop = False
+        '
+        'Panel_chkupdate
+        '
+        Me.Panel_chkupdate.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_chkupdate.Controls.Add(Me.Icon_chkupdate)
+        Me.Panel_chkupdate.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Panel_chkupdate.Location = New System.Drawing.Point(321, 0)
+        Me.Panel_chkupdate.Name = "Panel_chkupdate"
+        Me.Panel_chkupdate.Size = New System.Drawing.Size(34, 34)
+        Me.Panel_chkupdate.TabIndex = 5
+        Me.Panel_chkupdate.Visible = False
+        '
+        'Icon_chkupdate
+        '
+        Me.Icon_chkupdate.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_chkupdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Icon_chkupdate.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Icon_chkupdate.Enabled = False
+        Me.Icon_chkupdate.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_bnoupdate
+        Me.Icon_chkupdate.Location = New System.Drawing.Point(0, 0)
+        Me.Icon_chkupdate.Name = "Icon_chkupdate"
+        Me.Icon_chkupdate.Size = New System.Drawing.Size(34, 34)
+        Me.Icon_chkupdate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_chkupdate.TabIndex = 2
+        Me.Icon_chkupdate.TabStop = False
+        '
+        'Panel_filepath
+        '
+        Me.Panel_filepath.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_filepath.Controls.Add(Me.Icon_filepath)
+        Me.Panel_filepath.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel_filepath.Location = New System.Drawing.Point(284, 0)
+        Me.Panel_filepath.Name = "Panel_filepath"
+        Me.Panel_filepath.Size = New System.Drawing.Size(34, 34)
+        Me.Panel_filepath.TabIndex = 4
+        Me.Panel_filepath.Visible = False
+        '
+        'Icon_filepath
+        '
+        Me.Icon_filepath.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_filepath.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Icon_filepath.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Icon_filepath.Enabled = False
+        Me.Icon_filepath.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_bfilepath
+        Me.Icon_filepath.Location = New System.Drawing.Point(0, 0)
+        Me.Icon_filepath.Name = "Icon_filepath"
+        Me.Icon_filepath.Size = New System.Drawing.Size(34, 34)
+        Me.Icon_filepath.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_filepath.TabIndex = 2
+        Me.Icon_filepath.TabStop = False
+        '
+        'Panel_hiddenthings
+        '
+        Me.Panel_hiddenthings.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_hiddenthings.Controls.Add(Me.Icon_hiddenthings)
+        Me.Panel_hiddenthings.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Panel_hiddenthings.Location = New System.Drawing.Point(247, 0)
+        Me.Panel_hiddenthings.Name = "Panel_hiddenthings"
+        Me.Panel_hiddenthings.Size = New System.Drawing.Size(34, 34)
+        Me.Panel_hiddenthings.TabIndex = 3
+        Me.Panel_hiddenthings.Visible = False
+        '
+        'Icon_hiddenthings
+        '
+        Me.Icon_hiddenthings.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_hiddenthings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Icon_hiddenthings.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Icon_hiddenthings.Enabled = False
+        Me.Icon_hiddenthings.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_bhidden
+        Me.Icon_hiddenthings.Location = New System.Drawing.Point(0, 0)
+        Me.Icon_hiddenthings.Name = "Icon_hiddenthings"
+        Me.Icon_hiddenthings.Size = New System.Drawing.Size(34, 34)
+        Me.Icon_hiddenthings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_hiddenthings.TabIndex = 2
+        Me.Icon_hiddenthings.TabStop = False
+        '
+        'Panel_bgmusic
+        '
+        Me.Panel_bgmusic.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_bgmusic.Controls.Add(Me.Icon_bgmusic)
+        Me.Panel_bgmusic.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Panel_bgmusic.Location = New System.Drawing.Point(210, 0)
+        Me.Panel_bgmusic.Name = "Panel_bgmusic"
+        Me.Panel_bgmusic.Size = New System.Drawing.Size(34, 34)
+        Me.Panel_bgmusic.TabIndex = 2
+        Me.Panel_bgmusic.Visible = False
+        '
+        'Icon_bgmusic
+        '
+        Me.Icon_bgmusic.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_bgmusic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Icon_bgmusic.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Icon_bgmusic.Enabled = False
+        Me.Icon_bgmusic.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_bgmusic
+        Me.Icon_bgmusic.Location = New System.Drawing.Point(0, 0)
+        Me.Icon_bgmusic.Name = "Icon_bgmusic"
+        Me.Icon_bgmusic.Size = New System.Drawing.Size(34, 34)
+        Me.Icon_bgmusic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_bgmusic.TabIndex = 2
+        Me.Icon_bgmusic.TabStop = False
+        '
         'Panel1
         '
         Me.Panel1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex4
         Me.Panel1.Controls.Add(Me.Filever_text)
         Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel1.Location = New System.Drawing.Point(72, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(135, 34)
@@ -649,6 +841,7 @@ Partial Class TL_SaveEditor
         Me.Panel_menu_opensave.Controls.Add(Me.PictureBox1)
         Me.Panel_menu_opensave.Controls.Add(Me.Text_menu_save)
         Me.Panel_menu_opensave.Controls.Add(Me.Text_menu_open)
+        Me.Panel_menu_opensave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Panel_menu_opensave.Location = New System.Drawing.Point(0, 0)
         Me.Panel_menu_opensave.Name = "Panel_menu_opensave"
         Me.Panel_menu_opensave.Size = New System.Drawing.Size(69, 34)
@@ -739,7 +932,7 @@ Partial Class TL_SaveEditor
         Me.Menu_manual.Controls.Add(Me.AdvH_manual)
         Me.Menu_manual.Controls.Add(Me.Menu_text_manual)
         Me.Menu_manual.Controls.Add(Me.Menu_icon_manual)
-        Me.Menu_manual.Location = New System.Drawing.Point(0, 376)
+        Me.Menu_manual.Location = New System.Drawing.Point(0, 351)
         Me.Menu_manual.Name = "Menu_manual"
         Me.Menu_manual.Size = New System.Drawing.Size(150, 34)
         Me.Menu_manual.TabIndex = 8
@@ -1031,7 +1224,7 @@ Partial Class TL_SaveEditor
         Me.Menu_settings.Controls.Add(Me.AdvH_settings)
         Me.Menu_settings.Controls.Add(Me.Menu_text_settings)
         Me.Menu_settings.Controls.Add(Me.Menu_icon_settings)
-        Me.Menu_settings.Location = New System.Drawing.Point(0, 416)
+        Me.Menu_settings.Location = New System.Drawing.Point(0, 391)
         Me.Menu_settings.Name = "Menu_settings"
         Me.Menu_settings.Size = New System.Drawing.Size(150, 34)
         Me.Menu_settings.TabIndex = 2
@@ -1077,6 +1270,7 @@ Partial Class TL_SaveEditor
         '
         Me.Menu_panel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
         Me.Menu_panel.CausesValidation = False
+        Me.Menu_panel.Controls.Add(Me.Icon_description)
         Me.Menu_panel.Controls.Add(Me.Menu_manual)
         Me.Menu_panel.Controls.Add(Me.Menu_Repair)
         Me.Menu_panel.Controls.Add(Me.Menu_extras)
@@ -1084,15 +1278,50 @@ Partial Class TL_SaveEditor
         Me.Menu_panel.Controls.Add(Me.Menu_miiedit)
         Me.Menu_panel.Controls.Add(Me.Menu_islandedit)
         Me.Menu_panel.Controls.Add(Me.Menu_settings)
+        Me.Menu_panel.Controls.Add(Me.Panel_done)
         Me.Menu_panel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Menu_panel.Location = New System.Drawing.Point(0, 75)
         Me.Menu_panel.Name = "Menu_panel"
         Me.Menu_panel.Size = New System.Drawing.Size(150, 575)
         Me.Menu_panel.TabIndex = 29
         '
+        'Icon_description
+        '
+        Me.Icon_description.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_description.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Icon_description.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_tomoeu
+        Me.Icon_description.Location = New System.Drawing.Point(99, 524)
+        Me.Icon_description.Name = "Icon_description"
+        Me.Icon_description.Size = New System.Drawing.Size(50, 50)
+        Me.Icon_description.TabIndex = 9
+        Me.Icon_description.TabStop = False
+        Me.Icon_description.Visible = False
+        '
+        'Panel_done
+        '
+        Me.Panel_done.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_done.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_done
+        Me.Panel_done.Controls.Add(Me.Text_done)
+        Me.Panel_done.Location = New System.Drawing.Point(24, 431)
+        Me.Panel_done.Name = "Panel_done"
+        Me.Panel_done.Size = New System.Drawing.Size(123, 111)
+        Me.Panel_done.TabIndex = 10
+        Me.Panel_done.Visible = False
+        '
+        'Text_done
+        '
+        Me.Text_done.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_done.Location = New System.Drawing.Point(3, 3)
+        Me.Text_done.Name = "Text_done"
+        Me.Text_done.Size = New System.Drawing.Size(117, 83)
+        Me.Text_done.TabIndex = 0
+        Me.Text_done.Text = "It's done !"
+        Me.Text_done.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Panel_islandedit
         '
         Me.Panel_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_islandedit.Controls.Add(Me.Warning_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Panel_addsymb)
         Me.Panel_islandedit.Controls.Add(Me.Addsymbol_pronun_island)
         Me.Panel_islandedit.Controls.Add(Me.Addsymbol_islandname)
@@ -1157,11 +1386,25 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Size = New System.Drawing.Size(676, 540)
         Me.Panel_islandedit.TabIndex = 30
         '
+        'Warning_islandname
+        '
+        Me.Warning_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_islandname.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_islandname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_warning
+        Me.Warning_islandname.Location = New System.Drawing.Point(26, 8)
+        Me.Warning_islandname.Name = "Warning_islandname"
+        Me.Warning_islandname.Size = New System.Drawing.Size(20, 20)
+        Me.Warning_islandname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Warning_islandname.TabIndex = 229
+        Me.Warning_islandname.TabStop = False
+        Me.Warning_islandname.Visible = False
+        '
         'Panel_addsymb
         '
         Me.Panel_addsymb.BackColor = System.Drawing.Color.Transparent
         Me.Panel_addsymb.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex4
         Me.Panel_addsymb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_addsymb.Controls.Add(Me.Text_spesymb)
         Me.Panel_addsymb.Controls.Add(Me.Panel_spesymb_cancel)
         Me.Panel_addsymb.Controls.Add(Me.Panel_spesymb_add)
         Me.Panel_addsymb.Controls.Add(Me.Select_spesymb)
@@ -1170,6 +1413,17 @@ Partial Class TL_SaveEditor
         Me.Panel_addsymb.Size = New System.Drawing.Size(201, 46)
         Me.Panel_addsymb.TabIndex = 92
         Me.Panel_addsymb.Visible = False
+        '
+        'Text_spesymb
+        '
+        Me.Text_spesymb.AutoSize = True
+        Me.Text_spesymb.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb.Location = New System.Drawing.Point(18, 5)
+        Me.Text_spesymb.Name = "Text_spesymb"
+        Me.Text_spesymb.Size = New System.Drawing.Size(14, 13)
+        Me.Text_spesymb.TabIndex = 93
+        Me.Text_spesymb.Text = "T"
+        Me.Text_spesymb.Visible = False
         '
         'Panel_spesymb_cancel
         '
@@ -1180,6 +1434,22 @@ Partial Class TL_SaveEditor
         Me.Panel_spesymb_cancel.Name = "Panel_spesymb_cancel"
         Me.Panel_spesymb_cancel.Size = New System.Drawing.Size(78, 18)
         Me.Panel_spesymb_cancel.TabIndex = 94
+        '
+        'Text_spesymb_cancel
+        '
+        Me.Text_spesymb_cancel.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_cancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_cancel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_cancel.ImageKey = "(aucun)"
+        Me.Text_spesymb_cancel.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_cancel.Name = "Text_spesymb_cancel"
+        Me.Text_spesymb_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_cancel.TabIndex = 5
+        Me.Text_spesymb_cancel.Text = "Cancel"
+        Me.Text_spesymb_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel_spesymb_add
         '
@@ -1192,13 +1462,45 @@ Partial Class TL_SaveEditor
         Me.Panel_spesymb_add.Size = New System.Drawing.Size(78, 18)
         Me.Panel_spesymb_add.TabIndex = 93
         '
+        'Text_spesymb_add_pn
+        '
+        Me.Text_spesymb_add_pn.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_pn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_pn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_pn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_pn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_pn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_pn.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_pn.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_pn.Name = "Text_spesymb_add_pn"
+        Me.Text_spesymb_add_pn.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_pn.TabIndex = 4
+        Me.Text_spesymb_add_pn.Text = "Add"
+        Me.Text_spesymb_add_pn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_spesymb_add_n
+        '
+        Me.Text_spesymb_add_n.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_n.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_n.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_n.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_n.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_n.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_n.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_n.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_n.Name = "Text_spesymb_add_n"
+        Me.Text_spesymb_add_n.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_n.TabIndex = 3
+        Me.Text_spesymb_add_n.Text = "Add"
+        Me.Text_spesymb_add_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Select_spesymb
         '
         Me.Select_spesymb.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Select_spesymb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_spesymb.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_spesymb.FormattingEnabled = True
-        Me.Select_spesymb.Items.AddRange(New Object() {"NDS - A Button", "NDS - B Button", "NDS - X Button", "NDS - Y Button", "NDS - L Button", "NDS - R Button", "NDS - D-pad", "NDS - Touch Screen Calibration Icon", "DSi/3DS - Touch Screen Calibration Icon", "DSi - Camera Icon", "3DS - Circle Pad", "3DS - D-pad Up", "3DS - D-pad Down", "3DS - D-pad Left", "3DS - D-pad Right", "3DS - D-pad Up & Down", "3DS - D-pad Left & Right", "3DS - Power Button", "3DS - Video Icon", "3DS - Turning Arrow", "3DS - HOME Menu", "3DS - Pedometer", "3DS - Play Coin", "3DS- Close Button", "3DS - Alt. Close Button"})
+        Me.Select_spesymb.ItemHeight = 13
+        Me.Select_spesymb.Items.AddRange(New Object() {"NDS - A Button", "NDS - B Button", "NDS - X Button", "NDS - Y Button", "NDS - L Button", "NDS - R Button", "NDS - D-pad", "NDS - Touch Screen Calibration Icon", "DSi/3DS - Touch Screen Calibration Icon", "DSi - Camera Icon", "3DS - Circle Pad", "3DS - D-pad Up", "3DS - D-pad Down", "3DS - D-pad Left", "3DS - D-pad Right", "3DS - D-pad Up & Down", "3DS - D-pad Left & Right", "3DS - Power Button", "3DS - Video Icon", "3DS - Turning Arrow", "3DS - HOME Menu", "3DS - Pedometer", "3DS - Play Coin", "3DS- Close Button", "3DS - Alt. Close Button", "Pic.Chat - Happy Face", "Pic.Chat - Angry Face", "Pic.Chat - Sad Face", "Pic.Chat - Sleepy Face", "Pic.Chat - Sun", "Pic.Chat - Cloud", "Pic.Chat - Umbrella", "Pic.Chat - Snowman", "Pic.Chat - Exclamation Mark", "Pic.Chat - Question Mark", "Pic.Chat - Envelope", "Pic.Chat - Cellphone", "Pic.Chat - Clock", "Pic.Chat - Spade", "Pic.Chat - Diamond", "Pic.Chat - Heart", "Pic.Chat - Clubs", "Pic.Chat - Right Arrow", "Pic.Chat - Left Arrow", "Pic.Chat - Up Arrow", "Pic.Chat - Down Arrow", "Pic.Chat - Box with X inside", "Pic.Chat - Loading Squares 1", "Pic.Chat - Loading Squares 2", "Pic.Chat - Loading Squares 3", "Pic.Chat - Loading Squares 4", "Pic.Chat - Loading Squares 5", "Pic.Chat - Loading Squares 6", "Pic.Chat - Loading Squares 7", "Pic.Chat - Loading Squares 8", "Pic.Chat - Cross", "Pic.Chat - Chat Room A", "Pic.Chat - Chat Room B", "Pic.Chat - Chat Room C", "Pic.Chat - Chat Room D", "Pic.Chat - DS Auto Mode Icon", "Pic.Chat - DS Manual Mode Icon", "Pic.Chat - P in PictoChat Logo", "Pic.Chat - I in PictoChat Logo", "Pic.Chat - C in PictoChat Logo", "Pic.Chat - T in PictoChat Logo", "Pic.Chat - H in PictoChat Logo", "Pic.Chat - A in PictoChat Logo", "Pic.Chat - Small Inverted Cross", "Pic.Chat - Large Inverted Cross", "Wii - Wii Logo", "Wii - Wii Remote A Button", "Wii - Wii Remote B Button", "Wii - D-pad", "Wii - Home Button", "Wii - Plus Button", "Wii - Minus Button", "Wii - 1 Button", "Wii - 2 Button", "Wii - Power Button", "Wii - Analog Stick", "Wii - Nunchuk C Button", "Wii - Nunchuk Z Button", "Wii - Left Analog Stick", "Wii - Right Analog Stick", "Wii - Classic Controller A Button", "Wii - Classic Controller B Button", "Wii - Classic Controller X Button", "Wii - Classic Controller Y Button", "Wii - Classic Controller L Button", "Wii - Classic Controller R Button", "Wii - Classic Controller ZL Button", "Wii - Classic Controller ZR Button", "Wii - Enter Key", "Wii - Space Key", "Wii - Wii Remote Pointer", "Wii - Wii Remote Pointer 1", "Wii - Wii Remote Pointer 2", "Wii - Wii Remote Pointer 3", "Wii - Wii Remote Pointer 4", "Wii - Wii Remote Pointer Grabbing", "Wii - Wii Remote Pointer Grabbing 1", "Wii - Wii Remote Pointer Grabbing 2", "Wii - Wii Remote Pointer Grabbing 3", "Wii - Wii Remote Pointer Grabbing 4", "Wii - Wii Remote Pointer Open", "Wii - Wii Remote Pointer Open 1", "Wii - Wii Remote Pointer Open 2", "Wii - Wii Remote Pointer Open 3", "Wii - Wii Remote Pointer Open 4", "Wii - Inverted Question Mark", "Wii - Superscript er", "Wii - Superscript re", "Wii - Superscript e"})
         Me.Select_spesymb.Location = New System.Drawing.Point(11, 1)
         Me.Select_spesymb.Name = "Select_spesymb"
         Me.Select_spesymb.Size = New System.Drawing.Size(178, 21)
@@ -2837,22 +3139,22 @@ Partial Class TL_SaveEditor
         '
         Me.Panel19.BackColor = System.Drawing.Color.White
         Me.Panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel19.Controls.Add(Me.Setting_specharac3ds)
+        Me.Panel19.Controls.Add(Me.Setting_spesymb)
         Me.Panel19.Location = New System.Drawing.Point(204, 356)
         Me.Panel19.Name = "Panel19"
         Me.Panel19.Size = New System.Drawing.Size(260, 24)
         Me.Panel19.TabIndex = 16
         '
-        'Setting_specharac3ds
+        'Setting_spesymb
         '
-        Me.Setting_specharac3ds.AutoSize = True
-        Me.Setting_specharac3ds.BackColor = System.Drawing.Color.Transparent
-        Me.Setting_specharac3ds.Location = New System.Drawing.Point(5, 4)
-        Me.Setting_specharac3ds.Name = "Setting_specharac3ds"
-        Me.Setting_specharac3ds.Size = New System.Drawing.Size(193, 17)
-        Me.Setting_specharac3ds.TabIndex = 1
-        Me.Setting_specharac3ds.Text = "Active 3DS special character panel"
-        Me.Setting_specharac3ds.UseVisualStyleBackColor = False
+        Me.Setting_spesymb.AutoSize = True
+        Me.Setting_spesymb.BackColor = System.Drawing.Color.Transparent
+        Me.Setting_spesymb.Location = New System.Drawing.Point(5, 4)
+        Me.Setting_spesymb.Name = "Setting_spesymb"
+        Me.Setting_spesymb.Size = New System.Drawing.Size(127, 17)
+        Me.Setting_spesymb.TabIndex = 1
+        Me.Setting_spesymb.Text = "Active special symbol"
+        Me.Setting_spesymb.UseVisualStyleBackColor = False
         '
         'Panel14
         '
@@ -3050,9 +3352,7 @@ Partial Class TL_SaveEditor
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(518, 392)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = "TomodachiLife Save Editor has been rewrite from zero (fix project error)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Update " &
-    "save editor appareance" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Detect save file region (need to choose between EUR and " &
-    "USA version)"
+        Me.Changelog.Text = resources.GetString("Changelog.Text")
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version
@@ -4378,53 +4678,20 @@ Partial Class TL_SaveEditor
         Me.Panel_miiedit.TabIndex = 95
         Me.Panel_miiedit.Visible = False
         '
-        'Text_spesymb_add_n
+        'TextBox_fpath
         '
-        Me.Text_spesymb_add_n.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb_add_n.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_spesymb_add_n.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_spesymb_add_n.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_spesymb_add_n.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_spesymb_add_n.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Text_spesymb_add_n.ImageKey = "(aucun)"
-        Me.Text_spesymb_add_n.Location = New System.Drawing.Point(0, 0)
-        Me.Text_spesymb_add_n.Name = "Text_spesymb_add_n"
-        Me.Text_spesymb_add_n.Size = New System.Drawing.Size(78, 18)
-        Me.Text_spesymb_add_n.TabIndex = 3
-        Me.Text_spesymb_add_n.Text = "Add"
-        Me.Text_spesymb_add_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.TextBox_fpath.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.TextBox_fpath.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox_fpath.Location = New System.Drawing.Point(168, 78)
+        Me.TextBox_fpath.Name = "TextBox_fpath"
+        Me.TextBox_fpath.ReadOnly = True
+        Me.TextBox_fpath.Size = New System.Drawing.Size(494, 13)
+        Me.TextBox_fpath.TabIndex = 96
+        Me.TextBox_fpath.Visible = False
         '
-        'Text_spesymb_add_pn
+        'Timer_done
         '
-        Me.Text_spesymb_add_pn.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb_add_pn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_spesymb_add_pn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_spesymb_add_pn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_spesymb_add_pn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_spesymb_add_pn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Text_spesymb_add_pn.ImageKey = "(aucun)"
-        Me.Text_spesymb_add_pn.Location = New System.Drawing.Point(0, 0)
-        Me.Text_spesymb_add_pn.Name = "Text_spesymb_add_pn"
-        Me.Text_spesymb_add_pn.Size = New System.Drawing.Size(78, 18)
-        Me.Text_spesymb_add_pn.TabIndex = 4
-        Me.Text_spesymb_add_pn.Text = "Add"
-        Me.Text_spesymb_add_pn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Text_spesymb_cancel
-        '
-        Me.Text_spesymb_cancel.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb_cancel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_spesymb_cancel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_spesymb_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_spesymb_cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_spesymb_cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Text_spesymb_cancel.ImageKey = "(aucun)"
-        Me.Text_spesymb_cancel.Location = New System.Drawing.Point(0, 0)
-        Me.Text_spesymb_cancel.Name = "Text_spesymb_cancel"
-        Me.Text_spesymb_cancel.Size = New System.Drawing.Size(78, 18)
-        Me.Text_spesymb_cancel.TabIndex = 5
-        Me.Text_spesymb_cancel.Text = "Cancel"
-        Me.Text_spesymb_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Timer_done.Interval = 1000
         '
         'TL_SaveEditor
         '
@@ -4433,16 +4700,17 @@ Partial Class TL_SaveEditor
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
         Me.Controls.Add(Me.Panel_islandedit)
+        Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_repairsave)
         Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.Panel_miiedit)
-        Me.Controls.Add(Me.Panel_settings)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -4452,6 +4720,18 @@ Partial Class TL_SaveEditor
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TLSE_header.ResumeLayout(False)
         Me.Panel_menubar.ResumeLayout(False)
+        Me.Panel_bspesymb.ResumeLayout(False)
+        CType(Me.Icon_bspesymb, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_Advhelp.ResumeLayout(False)
+        CType(Me.Icon_Advhelp, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_chkupdate.ResumeLayout(False)
+        CType(Me.Icon_chkupdate, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_filepath.ResumeLayout(False)
+        CType(Me.Icon_filepath, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_hiddenthings.ResumeLayout(False)
+        CType(Me.Icon_hiddenthings, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_bgmusic.ResumeLayout(False)
+        CType(Me.Icon_bgmusic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel_menu_opensave.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4480,9 +4760,13 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_settings, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Menu_icon_settings, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_panel.ResumeLayout(False)
+        CType(Me.Icon_description, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_done.ResumeLayout(False)
         Me.Panel_islandedit.ResumeLayout(False)
         Me.Panel_islandedit.PerformLayout()
+        CType(Me.Warning_islandname, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_addsymb.ResumeLayout(False)
+        Me.Panel_addsymb.PerformLayout()
         Me.Panel_spesymb_cancel.ResumeLayout(False)
         Me.Panel_spesymb_add.ResumeLayout(False)
         CType(Me.Addsymbol_pronun_island, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4682,6 +4966,7 @@ Partial Class TL_SaveEditor
         Me.Panel_extractsave.ResumeLayout(False)
         Me.Panel_extractsave.PerformLayout()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -4874,7 +5159,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents TabControl_settings As TabControl
     Friend WithEvents Settings_settings As TabPage
     Friend WithEvents Panel19 As Panel
-    Friend WithEvents Setting_specharac3ds As CheckBox
+    Friend WithEvents Setting_spesymb As CheckBox
     Friend WithEvents Panel14 As Panel
     Friend WithEvents Setting_Advhelp As CheckBox
     Friend WithEvents Panel30 As Panel
@@ -5007,4 +5292,23 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_spesymb_add_n As Label
     Friend WithEvents Text_spesymb_cancel As Label
     Friend WithEvents Text_spesymb_add_pn As Label
+    Friend WithEvents Text_spesymb As Label
+    Friend WithEvents Warning_islandname As PictureBox
+    Friend WithEvents Panel_bgmusic As Panel
+    Friend WithEvents Icon_bgmusic As PictureBox
+    Friend WithEvents Panel_bspesymb As Panel
+    Friend WithEvents Icon_bspesymb As PictureBox
+    Friend WithEvents Panel_Advhelp As Panel
+    Friend WithEvents Icon_Advhelp As PictureBox
+    Friend WithEvents Panel_chkupdate As Panel
+    Friend WithEvents Icon_chkupdate As PictureBox
+    Friend WithEvents Panel_filepath As Panel
+    Friend WithEvents Icon_filepath As PictureBox
+    Friend WithEvents Panel_hiddenthings As Panel
+    Friend WithEvents Icon_hiddenthings As PictureBox
+    Friend WithEvents TextBox_fpath As TextBox
+    Friend WithEvents Icon_description As PictureBox
+    Friend WithEvents Panel_done As Panel
+    Friend WithEvents Text_done As Label
+    Friend WithEvents Timer_done As Timer
 End Class

@@ -19,10 +19,11 @@ Public Class TL_SaveEditor
         My.Settings.Parasetting_musicsel = Select_music.SelectedItem
         'My.Settings.Parasetting_foodslang = Select_foods_language.SelectedItem
         My.Settings.Parasetting_advH = Setting_Advhelp.Checked
-        My.Settings.Parasetting_specharc3ds = Setting_specharac3ds.Checked
+        My.Settings.Parasetting_specharc3ds = Setting_spesymb.Checked
     End Sub
 
     Private Sub TL_SaveEditor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Select_spesymb.SelectedItem = Select_spesymb.Items.Item(0)
         Try
             Setting_ckupdate.Checked = My.Settings.Parasetting_ckupdate
             Setting_filepath.Checked = My.Settings.Parasetting_filepath
@@ -31,7 +32,7 @@ Public Class TL_SaveEditor
             Setting_music.Checked = My.Settings.Parasetting_music
             Select_music.SelectedItem = My.Settings.Parasetting_musicsel
             Setting_Advhelp.Checked = My.Settings.Parasetting_advH
-            Setting_specharac3ds.Checked = My.Settings.Parasetting_specharc3ds
+            Setting_spesymb.Checked = My.Settings.Parasetting_specharc3ds
         Catch ex As Exception
         End Try
     End Sub
@@ -290,7 +291,7 @@ Public Class TL_SaveEditor
         If Setting_Advhelp.Checked = True Then
             AdvH_islandnamepronun.Visible = True
         End If
-        If Setting_specharac3ds.Checked = True Then
+        If Setting_spesymb.Checked = True Then
             Addsymbol_pronun_island.Visible = True
         End If
     End Sub
@@ -771,21 +772,40 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
+    Private Sub Icon_appartrenov_MouseMove(sender As Object, e As EventArgs) Handles Icon_appartrenov.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to edit appartments renovation"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour éditer la rénovation des appartements"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_appartrenov_MouseLeave(sender As Object, e As EventArgs) Handles Icon_appartrenov.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
     Private Sub Icon_eventfountain_Click(sender As Object, e As EventArgs) Handles Icon_eventfountain.Click
         valu_eventfountain.Value = 0
+        done()
     End Sub
 
     Private Sub Icon_eventfountain_MouseMove(sender As Object, e As EventArgs) Handles Icon_eventfountain.MouseMove
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            Text_description.Text = "Click to active fountain's event"
+            Text_description.Text = "Click to reactivate an event in fountain "
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            Text_description.Text = "Cliquez pour activer l'évènement de la fontaine"
+            Text_description.Text = "Cliquez pour réactiver un évènement dans fontaine"
         End If
         Panel_description.Visible = True
     End Sub
 
     Private Sub Icon_eventfountain_MouseLeave(sender As Object, e As EventArgs) Handles Icon_eventfountain.MouseLeave
-        Panel_description.Visible = False
+        If Timer_done.Enabled = True Then
+            Panel_description.Visible = False
+            Icon_description.Visible = True
+        Else
+            Panel_description.Visible = False
+        End If
     End Sub
 
     Private Sub Icon_rank_vitality_Click(sender As Object, e As EventArgs) Handles Icon_rank_vitality.Click
@@ -984,10 +1004,489 @@ Public Class TL_SaveEditor
         Text_spesymb_add_pn.Visible = True
     End Sub
 
+    Private Sub Select_spesymb_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_spesymb.SelectedIndexChanged
+        If Select_spesymb.SelectedItem = Select_spesymb.Items.Item(0) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(1) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(2) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(3) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(4) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(5) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(6) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(7) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(8) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(9) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(10) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(11) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(12) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(13) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(14) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(15) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(16) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(17) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(18) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(19) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(20) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(21) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(22) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(23) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(24) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(25) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(26) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(27) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(28) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(29) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(30) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(31) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(32) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(33) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(34) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(35) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(36) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(37) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(38) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(39) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(40) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(41) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(42) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(43) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(44) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(45) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(46) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(47) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(48) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(49) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(50) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(51) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(52) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(53) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(54) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(55) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(56) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(57) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(58) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(59) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(60) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(61) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(62) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(63) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(64) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(65) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(66) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(67) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(68) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(69) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(70) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(71) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(72) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(73) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(74) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(75) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(76) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(77) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(78) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(79) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(80) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(81) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(82) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(83) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(84) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(85) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(86) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(87) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(88) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(89) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(90) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(91) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(92) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(93) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(94) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(95) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(96) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(97) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(98) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(99) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(100) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(101) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(102) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(103) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(104) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(105) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(106) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(107) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(108) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(109) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(110) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(111) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(112) Then
+            Text_spesymb.Text = ""
+        ElseIf Select_spesymb.SelectedItem = Select_spesymb.Items.Item(113) Then
+            Text_spesymb.Text = ""
+        End If
+    End Sub
+
+    Private Sub Text_spesymb_add_pn_Click(sender As Object, e As EventArgs) Handles Text_spesymb_add_pn.Click
+        If Text_pronun_island.TextLength < 20 Then
+            Text_pronun_island.Text = Text_pronun_island.Text & Text_spesymb.Text
+            Panel_addsymb.Visible = False
+        Else
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Maximum character reached"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Caractère maximum atteint"
+            End If
+            TLSE_dialog.ShowDialog()
+            Panel_addsymb.Visible = False
+        End If
+    End Sub
+
     Private Sub Text_spesymb_add_Click(sender As Object, e As EventArgs) Handles Text_spesymb_add_n.Click
-        Text_spesymb_add_n.Text = ""
+        If Text_islandname.TextLength < 10 Then
+            Text_islandname.Text = Text_islandname.Text & Text_spesymb.Text
+            Panel_addsymb.Visible = False
+        Else
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Maximum character reached"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Caractère maximum atteint"
+            End If
+            TLSE_dialog.ShowDialog()
+            Panel_addsymb.Visible = False
+        End If
     End Sub
     'end edit island animation block
 
+    'settings animation
+    Private Sub Setting_music_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_music.CheckedChanged
+        startmusic()
+    End Sub
 
+    Private Sub Select_music_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_music.SelectedIndexChanged
+        startmusic()
+    End Sub
+
+    Public Sub startmusic()
+        Panel_bgmusic.Visible = True
+        If Select_music.SelectedItem = Select_music.Items.Item(0) Then
+            AudioTomodachi = My.Resources.sound1
+        ElseIf Select_music.SelectedItem = Select_music.Items.Item(1) Then
+            AudioTomodachi = My.Resources.sound2
+        ElseIf Select_music.SelectedItem = Select_music.Items.Item(2) Then
+            AudioTomodachi = My.Resources.sound3
+        End If
+        If Setting_music.Checked = True Then
+            My.Computer.Audio.Play(AudioTomodachi, AudioPlayMode.BackgroundLoop)
+        Else
+            My.Computer.Audio.Stop()
+            Panel_bgmusic.Visible = False
+        End If
+    End Sub
+
+    Private Sub Setting_hidden_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_hidden.CheckedChanged
+        hiddenthings()
+    End Sub
+
+    Public Sub hiddenthings()
+        If Setting_hidden.Checked = True Then
+            Panel_hiddenthings.Visible = True
+            valu_vetem.Visible = True
+            valu_deco.Visible = True
+            valu_tour.Visible = True
+            valu_parc1.Visible = True
+            valu_info.Visible = True
+            valu_parc.Visible = True
+            valu_mais.Visible = True
+            valu_mair.Visible = True
+            valu_appart.Visible = True
+            valu_broc.Visible = True
+            valu_chap.Visible = True
+            valu_font.Visible = True
+            valu_conc.Visible = True
+            valu_classem.Visible = True
+            valu_test.Visible = True
+            valu_stud.Visible = True
+            valu_cafe.Visible = True
+            valu_epicer.Visible = True
+            valu_magimport.Visible = True
+            valu_plage.Visible = True
+            valu_tervague.Visible = True
+            valu_port.Visible = True
+            valu_part.Visible = True
+            valu_eventfountain.Visible = True
+            valu_appartrenov.Visible = True
+            valu_rank_vitality.Visible = True
+            valu_rank_popularity.Visible = True
+            valu_rank_boycharm.Visible = True
+            valu_rank_girlcharm.Visible = True
+            valu_rank_pampered.Visible = True
+            valu_rank_friendship.Visible = True
+            valu_rank_romance.Visible = True
+            valu_rank_island.Visible = True
+            valu_rank_traveler.Visible = True
+            valu_rank_splurge.Visible = True
+        Else
+            Panel_hiddenthings.Visible = False
+            valu_vetem.Visible = False
+            valu_deco.Visible = False
+            valu_tour.Visible = False
+            valu_parc1.Visible = False
+            valu_info.Visible = False
+            valu_parc.Visible = False
+            valu_mais.Visible = False
+            valu_mair.Visible = False
+            valu_appart.Visible = False
+            valu_broc.Visible = False
+            valu_chap.Visible = False
+            valu_font.Visible = False
+            valu_conc.Visible = False
+            valu_classem.Visible = False
+            valu_test.Visible = False
+            valu_stud.Visible = False
+            valu_cafe.Visible = False
+            valu_epicer.Visible = False
+            valu_magimport.Visible = False
+            valu_plage.Visible = False
+            valu_tervague.Visible = False
+            valu_port.Visible = False
+            valu_part.Visible = False
+            valu_eventfountain.Visible = False
+            valu_appartrenov.Visible = False
+            valu_rank_vitality.Visible = False
+            valu_rank_popularity.Visible = False
+            valu_rank_boycharm.Visible = False
+            valu_rank_girlcharm.Visible = False
+            valu_rank_pampered.Visible = False
+            valu_rank_friendship.Visible = False
+            valu_rank_romance.Visible = False
+            valu_rank_island.Visible = False
+            valu_rank_traveler.Visible = False
+            valu_rank_splurge.Visible = False
+        End If
+    End Sub
+
+    Private Sub Setting_filepath_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_filepath.CheckedChanged
+        If Setting_filepath.Checked = True Then
+            Panel_filepath.Visible = True
+        Else
+            Panel_filepath.Visible = False
+        End If
+    End Sub
+
+    Private Sub Setting_ckupdate_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_ckupdate.CheckedChanged
+        If Setting_ckupdate.Checked = True Then
+            Panel_chkupdate.Visible = True
+        Else
+            Panel_chkupdate.Visible = False
+        End If
+    End Sub
+
+    Private Sub Setting_Advhelp_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_Advhelp.CheckedChanged
+        If Setting_Advhelp.Checked = True Then
+            Panel_Advhelp.Visible = True
+            AdvH_islandname.Visible = True
+            AdvH_problemssolved.Visible = True
+            AdvH_streetencounters.Visible = True
+            AdvH_weddings.Visible = True
+            AdvH_childborn.Visible = True
+            AdvH_travelersreceived.Visible = True
+            AdvH_travelerssent.Visible = True
+            AdvH_islandbuild.Visible = True
+            AdvH_money.Visible = True
+            AdvH_eventfountain.Visible = True
+            AdvH_apartrenov.Visible = True
+            AdvH_rankboard.Visible = True
+            AdvH_islandaddress.Visible = True
+            AdvH_lastdatesave.Visible = True
+        ElseIf Setting_Advhelp.Checked = False Then
+            Panel_Advhelp.Visible = False
+            AdvH_islandname.Visible = False
+            AdvH_problemssolved.Visible = False
+            AdvH_streetencounters.Visible = False
+            AdvH_weddings.Visible = False
+            AdvH_childborn.Visible = False
+            AdvH_travelersreceived.Visible = False
+            AdvH_travelerssent.Visible = False
+            AdvH_islandbuild.Visible = False
+            AdvH_money.Visible = False
+            AdvH_eventfountain.Visible = False
+            AdvH_apartrenov.Visible = False
+            AdvH_rankboard.Visible = False
+            AdvH_islandaddress.Visible = False
+            AdvH_lastdatesave.Visible = False
+            AdvH_islandnamepronun.Visible = False
+        End If
+    End Sub
+
+    Private Sub Setting_spesymb_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_spesymb.CheckedChanged
+        If Setting_spesymb.Checked = True Then
+            Panel_bspesymb.Visible = True
+            Addsymbol_islandname.Visible = True
+        ElseIf Setting_spesymb.Checked = False Then
+            Panel_bspesymb.Visible = False
+            Addsymbol_islandname.Visible = False
+            Addsymbol_pronun_island.Visible = False
+        End If
+    End Sub
+
+    Private Sub Panel_filepath_MouseMove(sender As Object, e As EventArgs) Handles Panel_filepath.MouseMove
+        Panel_filepath.BackgroundImage = My.Resources.buttontop_single_act
+        TextBox_fpath.Visible = True
+    End Sub
+
+    Private Sub Panel_filepath_MouseLeave(sender As Object, e As EventArgs) Handles Panel_filepath.MouseLeave
+        Panel_filepath.BackgroundImage = My.Resources.buttontop_single
+        TextBox_fpath.Visible = False
+    End Sub
+
+    Private Sub Panel_description_VisibleChanged(sender As Object, e As EventArgs) Handles Panel_description.VisibleChanged
+        If Panel_description.Visible = True Then
+            If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_description.Image = My.Resources.icon_tomojp
+            Else
+                Icon_description.Image = My.Resources.icon_tomoeu
+            End If
+            Icon_description.Visible = True
+        Else
+            Icon_description.Visible = False
+        End If
+    End Sub
+
+    Private Sub Panel_done_VisibleChanged(sender As Object, e As EventArgs) Handles Panel_done.VisibleChanged
+        If Panel_done.Visible = True Then
+            If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_description.Image = My.Resources.icon_tomojp
+            Else
+                Icon_description.Image = My.Resources.icon_tomoeu
+            End If
+            Icon_description.Visible = True
+        Else
+            Icon_description.Visible = False
+        End If
+    End Sub
+
+    Public Sub done()
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_done.Text = "It's done !"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_done.Text = "C'est fait !"
+        End If
+        Panel_done.Visible = True
+        Timer_done.Start
+    End Sub
+
+    Private Sub Timer_done_Tick(sender As Object, e As EventArgs) Handles Timer_done.Tick
+        Timer_done.Stop()
+        Panel_done.Visible = False
+    End Sub
 End Class

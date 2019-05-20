@@ -157,6 +157,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\bg_done.png" />
+    <None Include="Resources\icon_tomoeu.png" />
+    <None Include="Resources\icon_tomojp.png" />
+    <None Include="Resources\sound3.wav" />
+    <None Include="Resources\sound2.wav" />
+    <None Include="Resources\sound1.wav" />
+    <None Include="Resources\icon_bsymb.png" />
+    <None Include="Resources\icon_bnoupdate.png" />
+    <None Include="Resources\icon_bhidden.png" />
+    <None Include="Resources\icon_bgmusic.png" />
+    <None Include="Resources\icon_bfilepath.png" />
+    <None Include="Resources\icon_badvh.png" />
+    <None Include="Resources\icon_warning.png" />
     <None Include="Resources\button_addspecarac.png" />
     <None Include="Resources\vetv.png" />
     <None Include="Resources\vetn.png" />
