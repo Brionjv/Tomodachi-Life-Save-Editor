@@ -774,7 +774,7 @@ Public Class TL_SaveEditor
 
     Private Sub Icon_appartrenov_MouseMove(sender As Object, e As EventArgs) Handles Icon_appartrenov.MouseMove
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            Text_description.Text = "Click to edit appartments renovation"
+            Text_description.Text = "Click to edit apartments renovation"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_description.Text = "Cliquez pour éditer la rénovation des appartements"
         End If
@@ -1489,4 +1489,296 @@ Public Class TL_SaveEditor
         Timer_done.Stop()
         Panel_done.Visible = False
     End Sub
+    'end setting animation
+
+    ' Advance help island edit
+    Private Sub AdvH_islandname_Click(sender As Object, e As EventArgs) Handles AdvH_islandname.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_islandname.Location.X + (Panel_islandname.Width / 2), Panel_islandname.Location.Y + (Panel_islandname.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit your island name here" & vbNewLine & vbNewLine & "If you add a special symbol, island name will be '???' in the data of a crossed Mii via StreetPass"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer le nom de votre île ici" & vbNewLine & vbNewLine & "si vous ajoutez un symbole spécial, le nom de votre île sera '???' dans les donnés d'un Mii croisé via StreetPass"
+        End If
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_pronun_islandname.Location.X + (Icon_pronun_islandname.Width / 2), Icon_pronun_islandname.Location.Y + (Icon_pronun_islandname.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to edit island name pronunciation"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour éditer la prononciation du nom de l'île"
+        End If
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_islandnamepronun_Click(sender As Object, e As EventArgs) Handles AdvH_islandnamepronun.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_edit_pronun_island.Location.X + (Panel_edit_pronun_island.Width / 2), Panel_edit_pronun_island.Location.Y + (Panel_edit_pronun_island.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit your island name pronunciation here" & vbNewLine & vbNewLine & "Special symbols can be added but they are won't pronounced"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer la prononciation du nom de votre île ici" & vbNewLine & vbNewLine & "si vous ajoutez des symboles spéciaux mais ils seront pas prononcés"
+        End If
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_edit_pronun_island.Location.X + (Panel_edit_pronun_island.Width / 2) + 80, Panel_edit_pronun_island.Location.Y + (Panel_edit_pronun_island.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to validate island name pronunciation"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour valider la prononciation du nom de l'île"
+        End If
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_problemssolved_Click(sender As Object, e As EventArgs) Handles AdvH_problemssolved.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_problemsolved.Location.X + (Panel_problemsolved.Width / 2), Panel_problemsolved.Location.Y + (Panel_problemsolved.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit your problems solved on your island here"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer les problèmes résolus sur votre île ici"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_problemsolved.Location.X + (Icon_problemsolved.Width / 2), Icon_problemsolved.Location.Y + (Icon_problemsolved.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to set 'problems solved' value to maximum"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour mettre la valeur de 'problèmes résolus' au maximum"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_streetencounters_Click(sender As Object, e As EventArgs) Handles AdvH_streetencounters.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_streetpassencounters.Location.X + (Panel_streetpassencounters.Width / 2), Panel_streetpassencounters.Location.Y + (Panel_streetpassencounters.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit StreetPass encounters number here"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer le nombre de StreetPass reçus ici"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_streetpassencounters.Location.X + (Icon_streetpassencounters.Width / 2), Icon_streetpassencounters.Location.Y + (Icon_streetpassencounters.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to set 'StreetPass encounters' value to maximum"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour mettre la valeur de 'StreetPass reçus' au maximum"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_weddings_Click(sender As Object, e As EventArgs) Handles AdvH_weddings.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_weddings.Location.X + (Panel_weddings.Width / 2), Panel_weddings.Location.Y + (Panel_weddings.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit Weddings number here"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer le nombre de Marriage ici"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_weddings.Location.X + (Icon_weddings.Width / 2), Icon_weddings.Location.Y + (Icon_weddings.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to set 'Weddings' value to maximum"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour mettre la valeur de 'Marriage' au maximum"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_childborn_Click(sender As Object, e As EventArgs) Handles AdvH_childborn.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_childrenborn.Location.X + (Panel_childrenborn.Width / 2), Panel_childrenborn.Location.Y + (Panel_childrenborn.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit Children born number here"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer le nombre de Nouveau né ici"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_childrenborn.Location.X + (Icon_childrenborn.Width / 2), Icon_childrenborn.Location.Y + (Icon_childrenborn.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to set 'Children born' value to maximum"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour mettre la valeur de 'Nouveau né' au maximum"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_travelersreceived_Click(sender As Object, e As EventArgs) Handles AdvH_travelersreceived.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_travelersreceived.Location.X + (Panel_travelersreceived.Width / 2), Panel_travelersreceived.Location.Y + (Panel_travelersreceived.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit Travelers received number here"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer le nombre de Voyageurs reçus ici"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_travelersreceived.Location.X + (Icon_travelersreceived.Width / 2), Icon_travelersreceived.Location.Y + (Icon_travelersreceived.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to set 'Travelers received' value to maximum"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour mettre la valeur de 'Voyageurs reçus' au maximum"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_travelerssent_Click(sender As Object, e As EventArgs) Handles AdvH_travelerssent.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_travelerssent.Location.X + (Panel_travelerssent.Width / 2), Panel_travelerssent.Location.Y + (Panel_travelerssent.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit Travelers sent number here"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer le nombre de Voyageurs envoyés ici"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_travelerssent.Location.X + (Icon_travelerssent.Width / 2), Icon_travelerssent.Location.Y + (Icon_travelerssent.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to set 'Travelers sent' value to maximum"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour mettre la valeur de 'Voyageurs envoyés' au maximum"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_rankboard_Click(sender As Object, e As EventArgs) Handles AdvH_rankboard.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_rankboard.Location.X + (Panel_rankboard.Width / 2), Panel_rankboard.Location.Y + (Panel_rankboard.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        TLSE_dialog.Icon_reference.Image = My.Resources.info_rankingboard
+        TLSE_dialog.Icon_reference.Location = New Point(395, 335)
+        TLSE_dialog.Icon_reference.BackgroundImage = My.Resources.bg_dialog
+        TLSE_dialog.Icon_reference.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Click on icons to edit ranking board"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Cliquez sur les icônes pour éditer le tableau des classements"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 6
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_lastdatesave_Click(sender As Object, e As EventArgs) Handles AdvH_lastdatesave.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_lastdatesave.Location.X + (Panel_lastdatesave.Width / 2), Panel_lastdatesave.Location.Y + (Panel_lastdatesave.Height / 2) - 8)
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This feature is not editable" & vbNewLine & vbNewLine & "This value is used to patch Mii interactions and to reuse travelers"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Cette fonctionnalité n'est pas éditable" & vbNewLine & vbNewLine & "Cette valeur est utilisé pour patcher les interactions des Mii et pour réutiliser les voyageurs"
+        End If
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_islandbuild_Click(sender As Object, e As EventArgs) Handles AdvH_islandbuild.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_islandbuilding.Location.X + (Panel_islandbuilding.Width / 2), Panel_islandbuilding.Location.Y + (Panel_islandbuilding.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        TLSE_dialog.Icon_reference.Image = My.Resources.info_islandbuilding
+        TLSE_dialog.Icon_reference.Location = New Point(395, 335)
+        TLSE_dialog.Icon_reference.BackgroundImage = My.Resources.bg_dialog
+        TLSE_dialog.Icon_reference.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Click on icons to edit Island's building"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Cliquez sur les icônes pour éditer les bâtiments de l'île"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 6
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_money_Click(sender As Object, e As EventArgs) Handles AdvH_money.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_money.Location.X + (Panel_money.Width / 2), Panel_money.Location.Y + (Panel_money.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit money here"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer l'argent ici"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_money.Location.X + 10, Panel_money.Location.Y + (Panel_money.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to set Money value to maximum"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour mettre la valeur de l'Argent au maximum"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+
+    End Sub
+
+    Private Sub AdvH_eventfountain_Click(sender As Object, e As EventArgs) Handles AdvH_eventfountain.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_eventfountain.Location.X + (Icon_eventfountain.Width / 2), Icon_eventfountain.Location.Y + (Icon_eventfountain.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to active an event in fountain"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour activer un évènement dans la fontaine"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_apartrenov_Click(sender As Object, e As EventArgs) Handles AdvH_apartrenov.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_appartrenov.Location.X + (Icon_appartrenov.Width / 2), Icon_appartrenov.Location.Y + (Icon_appartrenov.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to edit apartments renovation"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour la rénovation des appartements"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_islandaddress_Click(sender As Object, e As EventArgs) Handles AdvH_islandaddress.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(481, 485)
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here island's address" & vbNewLine & vbNewLine & "Some values can corrupt your save file, if he's corrupted retry with other values or restore an older save file in 'backup' folder"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici l'addresse de l'île" & vbNewLine & vbNewLine & "Certaines valeurs peuvent corrompre votre sauvegarde, si c'est le cas réessayez avec d'autres valeurs ou restaurez une ancienne sauvegarde depuis le dossier 'backup'"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 5
+        TLSE_dialog.ShowDialog()
+    End Sub
+    ' end Advance help island edit
 End Class

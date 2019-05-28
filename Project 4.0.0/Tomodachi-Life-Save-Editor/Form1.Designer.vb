@@ -83,7 +83,6 @@ Partial Class TL_SaveEditor
         Me.Panel_done = New System.Windows.Forms.Panel()
         Me.Text_done = New System.Windows.Forms.Label()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
-        Me.Warning_islandname = New System.Windows.Forms.PictureBox()
         Me.Panel_addsymb = New System.Windows.Forms.Panel()
         Me.Text_spesymb = New System.Windows.Forms.Label()
         Me.Panel_spesymb_cancel = New System.Windows.Forms.Panel()
@@ -92,9 +91,10 @@ Partial Class TL_SaveEditor
         Me.Text_spesymb_add_pn = New System.Windows.Forms.Label()
         Me.Text_spesymb_add_n = New System.Windows.Forms.Label()
         Me.Select_spesymb = New System.Windows.Forms.ComboBox()
+        Me.Warning_islandname = New System.Windows.Forms.PictureBox()
         Me.Addsymbol_pronun_island = New System.Windows.Forms.PictureBox()
         Me.Addsymbol_islandname = New System.Windows.Forms.PictureBox()
-        Me.Panel38 = New System.Windows.Forms.Panel()
+        Me.Panel_lastdatesave = New System.Windows.Forms.Panel()
         Me.valu_lastdatesave = New System.Windows.Forms.NumericUpDown()
         Me.Warning_islandaddress = New System.Windows.Forms.PictureBox()
         Me.AdvH_islandaddress = New System.Windows.Forms.PictureBox()
@@ -122,7 +122,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_weddings = New System.Windows.Forms.PictureBox()
         Me.AdvH_streetencounters = New System.Windows.Forms.PictureBox()
         Me.AdvH_problemssolved = New System.Windows.Forms.PictureBox()
-        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Panel_rankboard = New System.Windows.Forms.Panel()
         Me.valu_rank_splurge = New System.Windows.Forms.NumericUpDown()
         Me.valu_rank_traveler = New System.Windows.Forms.NumericUpDown()
         Me.valu_rank_island = New System.Windows.Forms.NumericUpDown()
@@ -186,7 +186,7 @@ Partial Class TL_SaveEditor
         Me.Text_pronun_islandname = New System.Windows.Forms.Label()
         Me.Icon_pronun_islandname = New System.Windows.Forms.PictureBox()
         Me.Icon_islandname = New System.Windows.Forms.PictureBox()
-        Me.Panel29 = New System.Windows.Forms.Panel()
+        Me.Panel_islandbuilding = New System.Windows.Forms.Panel()
         Me.valu_part = New System.Windows.Forms.NumericUpDown()
         Me.valu_port = New System.Windows.Forms.NumericUpDown()
         Me.valu_tervague = New System.Windows.Forms.NumericUpDown()
@@ -412,13 +412,13 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_description, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_done.SuspendLayout()
         Me.Panel_islandedit.SuspendLayout()
-        CType(Me.Warning_islandname, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_addsymb.SuspendLayout()
         Me.Panel_spesymb_cancel.SuspendLayout()
         Me.Panel_spesymb_add.SuspendLayout()
+        CType(Me.Warning_islandname, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Addsymbol_pronun_island, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Addsymbol_islandname, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel38.SuspendLayout()
+        Me.Panel_lastdatesave.SuspendLayout()
         CType(Me.valu_lastdatesave, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Warning_islandaddress, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_islandaddress, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -444,7 +444,7 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_weddings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_streetencounters, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_problemssolved, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel12.SuspendLayout()
+        Me.Panel_rankboard.SuspendLayout()
         CType(Me.valu_rank_splurge, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_rank_traveler, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_rank_island, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -495,7 +495,7 @@ Partial Class TL_SaveEditor
         Me.Panel_islandname.SuspendLayout()
         CType(Me.Icon_pronun_islandname, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_islandname, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel29.SuspendLayout()
+        Me.Panel_islandbuilding.SuspendLayout()
         CType(Me.valu_part, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_port, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_tervague, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1321,11 +1321,11 @@ Partial Class TL_SaveEditor
         'Panel_islandedit
         '
         Me.Panel_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
-        Me.Panel_islandedit.Controls.Add(Me.Warning_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Panel_addsymb)
+        Me.Panel_islandedit.Controls.Add(Me.Warning_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Addsymbol_pronun_island)
         Me.Panel_islandedit.Controls.Add(Me.Addsymbol_islandname)
-        Me.Panel_islandedit.Controls.Add(Me.Panel38)
+        Me.Panel_islandedit.Controls.Add(Me.Panel_lastdatesave)
         Me.Panel_islandedit.Controls.Add(Me.Warning_islandaddress)
         Me.Panel_islandedit.Controls.Add(Me.AdvH_islandaddress)
         Me.Panel_islandedit.Controls.Add(Me.Panel36)
@@ -1348,7 +1348,7 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Controls.Add(Me.AdvH_weddings)
         Me.Panel_islandedit.Controls.Add(Me.AdvH_streetencounters)
         Me.Panel_islandedit.Controls.Add(Me.AdvH_problemssolved)
-        Me.Panel_islandedit.Controls.Add(Me.Panel12)
+        Me.Panel_islandedit.Controls.Add(Me.Panel_rankboard)
         Me.Panel_islandedit.Controls.Add(Me.valu_eventfountain)
         Me.Panel_islandedit.Controls.Add(Me.Icon_eventfountain)
         Me.Panel_islandedit.Controls.Add(Me.Title_eventfountain)
@@ -1380,24 +1380,11 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Controls.Add(Me.Text_pronun_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Icon_pronun_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Icon_islandname)
-        Me.Panel_islandedit.Controls.Add(Me.Panel29)
+        Me.Panel_islandedit.Controls.Add(Me.Panel_islandbuilding)
         Me.Panel_islandedit.Location = New System.Drawing.Point(152, 77)
         Me.Panel_islandedit.Name = "Panel_islandedit"
         Me.Panel_islandedit.Size = New System.Drawing.Size(676, 540)
         Me.Panel_islandedit.TabIndex = 30
-        '
-        'Warning_islandname
-        '
-        Me.Warning_islandname.BackColor = System.Drawing.Color.Transparent
-        Me.Warning_islandname.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Warning_islandname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_warning
-        Me.Warning_islandname.Location = New System.Drawing.Point(26, 8)
-        Me.Warning_islandname.Name = "Warning_islandname"
-        Me.Warning_islandname.Size = New System.Drawing.Size(20, 20)
-        Me.Warning_islandname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.Warning_islandname.TabIndex = 229
-        Me.Warning_islandname.TabStop = False
-        Me.Warning_islandname.Visible = False
         '
         'Panel_addsymb
         '
@@ -1506,6 +1493,19 @@ Partial Class TL_SaveEditor
         Me.Select_spesymb.Size = New System.Drawing.Size(178, 21)
         Me.Select_spesymb.TabIndex = 0
         '
+        'Warning_islandname
+        '
+        Me.Warning_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_islandname.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_islandname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_warning
+        Me.Warning_islandname.Location = New System.Drawing.Point(26, 8)
+        Me.Warning_islandname.Name = "Warning_islandname"
+        Me.Warning_islandname.Size = New System.Drawing.Size(20, 20)
+        Me.Warning_islandname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Warning_islandname.TabIndex = 229
+        Me.Warning_islandname.TabStop = False
+        Me.Warning_islandname.Visible = False
+        '
         'Addsymbol_pronun_island
         '
         Me.Addsymbol_pronun_island.BackColor = System.Drawing.Color.Transparent
@@ -1532,14 +1532,14 @@ Partial Class TL_SaveEditor
         Me.Addsymbol_islandname.TabStop = False
         Me.Addsymbol_islandname.Visible = False
         '
-        'Panel38
+        'Panel_lastdatesave
         '
-        Me.Panel38.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel38.Controls.Add(Me.valu_lastdatesave)
-        Me.Panel38.Location = New System.Drawing.Point(38, 510)
-        Me.Panel38.Name = "Panel38"
-        Me.Panel38.Size = New System.Drawing.Size(124, 20)
-        Me.Panel38.TabIndex = 89
+        Me.Panel_lastdatesave.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_lastdatesave.Controls.Add(Me.valu_lastdatesave)
+        Me.Panel_lastdatesave.Location = New System.Drawing.Point(38, 510)
+        Me.Panel_lastdatesave.Name = "Panel_lastdatesave"
+        Me.Panel_lastdatesave.Size = New System.Drawing.Size(124, 20)
+        Me.Panel_lastdatesave.TabIndex = 89
         '
         'valu_lastdatesave
         '
@@ -1846,35 +1846,35 @@ Partial Class TL_SaveEditor
         Me.AdvH_problemssolved.TabStop = False
         Me.AdvH_problemssolved.Visible = False
         '
-        'Panel12
+        'Panel_rankboard
         '
-        Me.Panel12.BackColor = System.Drawing.Color.Transparent
-        Me.Panel12.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_rankingboard
-        Me.Panel12.Controls.Add(Me.valu_rank_splurge)
-        Me.Panel12.Controls.Add(Me.valu_rank_traveler)
-        Me.Panel12.Controls.Add(Me.valu_rank_island)
-        Me.Panel12.Controls.Add(Me.valu_rank_romance)
-        Me.Panel12.Controls.Add(Me.valu_rank_friendship)
-        Me.Panel12.Controls.Add(Me.valu_rank_pampered)
-        Me.Panel12.Controls.Add(Me.valu_rank_girlcharm)
-        Me.Panel12.Controls.Add(Me.valu_rank_boycharm)
-        Me.Panel12.Controls.Add(Me.valu_rank_popularity)
-        Me.Panel12.Controls.Add(Me.valu_rank_vitality)
-        Me.Panel12.Controls.Add(Me.Title_rankingboard)
-        Me.Panel12.Controls.Add(Me.Icon_rank_splurge)
-        Me.Panel12.Controls.Add(Me.Icon_rank_traveler)
-        Me.Panel12.Controls.Add(Me.Icon_rank_island)
-        Me.Panel12.Controls.Add(Me.Icon_rank_romance)
-        Me.Panel12.Controls.Add(Me.Icon_rank_friendship)
-        Me.Panel12.Controls.Add(Me.Icon_rank_pampered)
-        Me.Panel12.Controls.Add(Me.Icon_rank_girlcharm)
-        Me.Panel12.Controls.Add(Me.Icon_rank_boycharm)
-        Me.Panel12.Controls.Add(Me.Icon_rank_popularity)
-        Me.Panel12.Controls.Add(Me.Icon_rank_vitality)
-        Me.Panel12.Location = New System.Drawing.Point(10, 350)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(239, 135)
-        Me.Panel12.TabIndex = 65
+        Me.Panel_rankboard.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_rankboard.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_rankingboard
+        Me.Panel_rankboard.Controls.Add(Me.valu_rank_splurge)
+        Me.Panel_rankboard.Controls.Add(Me.valu_rank_traveler)
+        Me.Panel_rankboard.Controls.Add(Me.valu_rank_island)
+        Me.Panel_rankboard.Controls.Add(Me.valu_rank_romance)
+        Me.Panel_rankboard.Controls.Add(Me.valu_rank_friendship)
+        Me.Panel_rankboard.Controls.Add(Me.valu_rank_pampered)
+        Me.Panel_rankboard.Controls.Add(Me.valu_rank_girlcharm)
+        Me.Panel_rankboard.Controls.Add(Me.valu_rank_boycharm)
+        Me.Panel_rankboard.Controls.Add(Me.valu_rank_popularity)
+        Me.Panel_rankboard.Controls.Add(Me.valu_rank_vitality)
+        Me.Panel_rankboard.Controls.Add(Me.Title_rankingboard)
+        Me.Panel_rankboard.Controls.Add(Me.Icon_rank_splurge)
+        Me.Panel_rankboard.Controls.Add(Me.Icon_rank_traveler)
+        Me.Panel_rankboard.Controls.Add(Me.Icon_rank_island)
+        Me.Panel_rankboard.Controls.Add(Me.Icon_rank_romance)
+        Me.Panel_rankboard.Controls.Add(Me.Icon_rank_friendship)
+        Me.Panel_rankboard.Controls.Add(Me.Icon_rank_pampered)
+        Me.Panel_rankboard.Controls.Add(Me.Icon_rank_girlcharm)
+        Me.Panel_rankboard.Controls.Add(Me.Icon_rank_boycharm)
+        Me.Panel_rankboard.Controls.Add(Me.Icon_rank_popularity)
+        Me.Panel_rankboard.Controls.Add(Me.Icon_rank_vitality)
+        Me.Panel_rankboard.Location = New System.Drawing.Point(10, 350)
+        Me.Panel_rankboard.Name = "Panel_rankboard"
+        Me.Panel_rankboard.Size = New System.Drawing.Size(239, 135)
+        Me.Panel_rankboard.TabIndex = 65
         '
         'valu_rank_splurge
         '
@@ -2529,61 +2529,61 @@ Partial Class TL_SaveEditor
         Me.Icon_islandname.TabIndex = 25
         Me.Icon_islandname.TabStop = False
         '
-        'Panel29
+        'Panel_islandbuilding
         '
-        Me.Panel29.BackColor = System.Drawing.Color.Orange
-        Me.Panel29.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.carte
-        Me.Panel29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Panel29.Controls.Add(Me.valu_part)
-        Me.Panel29.Controls.Add(Me.valu_port)
-        Me.Panel29.Controls.Add(Me.valu_tervague)
-        Me.Panel29.Controls.Add(Me.valu_plage)
-        Me.Panel29.Controls.Add(Me.valu_magimport)
-        Me.Panel29.Controls.Add(Me.valu_epicer)
-        Me.Panel29.Controls.Add(Me.valu_cafe)
-        Me.Panel29.Controls.Add(Me.valu_stud)
-        Me.Panel29.Controls.Add(Me.valu_test)
-        Me.Panel29.Controls.Add(Me.valu_classem)
-        Me.Panel29.Controls.Add(Me.valu_conc)
-        Me.Panel29.Controls.Add(Me.valu_font)
-        Me.Panel29.Controls.Add(Me.valu_chap)
-        Me.Panel29.Controls.Add(Me.valu_parc)
-        Me.Panel29.Controls.Add(Me.valu_mais)
-        Me.Panel29.Controls.Add(Me.valu_mair)
-        Me.Panel29.Controls.Add(Me.valu_appart)
-        Me.Panel29.Controls.Add(Me.valu_broc)
-        Me.Panel29.Controls.Add(Me.valu_info)
-        Me.Panel29.Controls.Add(Me.valu_parc1)
-        Me.Panel29.Controls.Add(Me.valu_tour)
-        Me.Panel29.Controls.Add(Me.valu_deco)
-        Me.Panel29.Controls.Add(Me.valu_vetem)
-        Me.Panel29.Controls.Add(Me.Icon_vetem)
-        Me.Panel29.Controls.Add(Me.Icon_tour)
-        Me.Panel29.Controls.Add(Me.Icon_part)
-        Me.Panel29.Controls.Add(Me.Icon_test)
-        Me.Panel29.Controls.Add(Me.Icon_tervague)
-        Me.Panel29.Controls.Add(Me.Icon_stud)
-        Me.Panel29.Controls.Add(Me.Icon_port)
-        Me.Panel29.Controls.Add(Me.Icon_plage)
-        Me.Panel29.Controls.Add(Me.Icon_parc)
-        Me.Panel29.Controls.Add(Me.Icon_parc1)
-        Me.Panel29.Controls.Add(Me.Icon_mais)
-        Me.Panel29.Controls.Add(Me.Icon_mair)
-        Me.Panel29.Controls.Add(Me.Icon_magimport)
-        Me.Panel29.Controls.Add(Me.Icon_info)
-        Me.Panel29.Controls.Add(Me.Icon_font)
-        Me.Panel29.Controls.Add(Me.Icon_epicer)
-        Me.Panel29.Controls.Add(Me.Icon_deco)
-        Me.Panel29.Controls.Add(Me.Icon_conc)
-        Me.Panel29.Controls.Add(Me.Icon_classem)
-        Me.Panel29.Controls.Add(Me.Icon_chap)
-        Me.Panel29.Controls.Add(Me.Icon_cafe)
-        Me.Panel29.Controls.Add(Me.Icon_broc)
-        Me.Panel29.Controls.Add(Me.Icon_appart)
-        Me.Panel29.Location = New System.Drawing.Point(288, 16)
-        Me.Panel29.Name = "Panel29"
-        Me.Panel29.Size = New System.Drawing.Size(330, 214)
-        Me.Panel29.TabIndex = 40
+        Me.Panel_islandbuilding.BackColor = System.Drawing.Color.Orange
+        Me.Panel_islandbuilding.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.carte
+        Me.Panel_islandbuilding.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_part)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_port)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_tervague)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_plage)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_magimport)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_epicer)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_cafe)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_stud)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_test)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_classem)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_conc)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_font)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_chap)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_parc)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_mais)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_mair)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_appart)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_broc)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_info)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_parc1)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_tour)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_deco)
+        Me.Panel_islandbuilding.Controls.Add(Me.valu_vetem)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_vetem)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_tour)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_part)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_test)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_tervague)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_stud)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_port)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_plage)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_parc)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_parc1)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_mais)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_mair)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_magimport)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_info)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_font)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_epicer)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_deco)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_conc)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_classem)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_chap)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_cafe)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_broc)
+        Me.Panel_islandbuilding.Controls.Add(Me.Icon_appart)
+        Me.Panel_islandbuilding.Location = New System.Drawing.Point(288, 16)
+        Me.Panel_islandbuilding.Name = "Panel_islandbuilding"
+        Me.Panel_islandbuilding.Size = New System.Drawing.Size(330, 214)
+        Me.Panel_islandbuilding.TabIndex = 40
         '
         'valu_part
         '
@@ -4764,14 +4764,14 @@ Partial Class TL_SaveEditor
         Me.Panel_done.ResumeLayout(False)
         Me.Panel_islandedit.ResumeLayout(False)
         Me.Panel_islandedit.PerformLayout()
-        CType(Me.Warning_islandname, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_addsymb.ResumeLayout(False)
         Me.Panel_addsymb.PerformLayout()
         Me.Panel_spesymb_cancel.ResumeLayout(False)
         Me.Panel_spesymb_add.ResumeLayout(False)
+        CType(Me.Warning_islandname, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Addsymbol_pronun_island, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Addsymbol_islandname, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel38.ResumeLayout(False)
+        Me.Panel_lastdatesave.ResumeLayout(False)
         CType(Me.valu_lastdatesave, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Warning_islandaddress, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_islandaddress, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4797,7 +4797,7 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_weddings, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_streetencounters, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_problemssolved, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel12.ResumeLayout(False)
+        Me.Panel_rankboard.ResumeLayout(False)
         CType(Me.valu_rank_splurge, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_rank_traveler, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_rank_island, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4850,7 +4850,7 @@ Partial Class TL_SaveEditor
         Me.Panel_islandname.PerformLayout()
         CType(Me.Icon_pronun_islandname, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_islandname, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel29.ResumeLayout(False)
+        Me.Panel_islandbuilding.ResumeLayout(False)
         CType(Me.valu_part, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_port, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_tervague, System.ComponentModel.ISupportInitialize).EndInit()
@@ -5005,7 +5005,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents Menu_icon_settings As PictureBox
     Friend WithEvents Menu_panel As Panel
     Friend WithEvents Panel_islandedit As Panel
-    Friend WithEvents Panel38 As Panel
+    Friend WithEvents Panel_lastdatesave As Panel
     Friend WithEvents valu_lastdatesave As NumericUpDown
     Friend WithEvents Warning_islandaddress As PictureBox
     Friend WithEvents AdvH_islandaddress As PictureBox
@@ -5033,7 +5033,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents AdvH_weddings As PictureBox
     Friend WithEvents AdvH_streetencounters As PictureBox
     Friend WithEvents AdvH_problemssolved As PictureBox
-    Friend WithEvents Panel12 As Panel
+    Friend WithEvents Panel_rankboard As Panel
     Friend WithEvents valu_rank_splurge As NumericUpDown
     Friend WithEvents valu_rank_traveler As NumericUpDown
     Friend WithEvents valu_rank_island As NumericUpDown
@@ -5097,7 +5097,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_pronun_islandname As Label
     Friend WithEvents Icon_pronun_islandname As PictureBox
     Friend WithEvents Icon_islandname As PictureBox
-    Friend WithEvents Panel29 As Panel
+    Friend WithEvents Panel_islandbuilding As Panel
     Friend WithEvents valu_part As NumericUpDown
     Friend WithEvents valu_port As NumericUpDown
     Friend WithEvents valu_tervague As NumericUpDown

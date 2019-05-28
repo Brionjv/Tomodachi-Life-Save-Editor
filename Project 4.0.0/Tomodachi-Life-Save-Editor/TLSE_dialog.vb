@@ -21,6 +21,10 @@ Public Class TLSE_dialog
         Cancel_Button.Text = "Cancel"
         OK_Button.Text = "OK"
         Icon_reference_panel.Image = Nothing
+        valu_pandialogpos.Value = 0
+        Icon_reference.BackgroundImage = Nothing
+        Icon_reference.Visible = False
+        Icon_reference_panel.Visible = False
     End Sub
 
     Private Sub Text_TLSE_dialog_Click(sender As Object, e As EventArgs) Handles Text_TLSE_dialog.Click
@@ -31,5 +35,18 @@ Public Class TLSE_dialog
 
     Private Sub TLSE_dialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.DesktopLocation = TL_SaveEditor.DesktopLocation
+        If valu_pandialogpos.Value = 1 Then
+            Panel_dialog.Location = New Point(0, 0)
+        ElseIf valu_pandialogpos.Value = 2 Then
+            Panel_dialog.Location = New Point(395, 0)
+        ElseIf valu_pandialogpos.Value = 3 Then
+            Panel_dialog.Location = New Point(0, 168)
+        ElseIf valu_pandialogpos.Value = 4 Then
+            Panel_dialog.Location = New Point(395, 168)
+        ElseIf valu_pandialogpos.Value = 5 Then
+            Panel_dialog.Location = New Point(0, 335)
+        ElseIf valu_pandialogpos.Value = 6 Then
+            Panel_dialog.Location = New Point(395, 335)
+        End If
     End Sub
 End Class
