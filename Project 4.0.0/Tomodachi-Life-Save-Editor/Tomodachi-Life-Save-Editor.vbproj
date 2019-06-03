@@ -157,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_issue.png" />
     <None Include="Resources\info_rankingboard.png" />
     <None Include="Resources\info_islandbuilding.png" />
     <None Include="Resources\TLSE_arrow_right.gif" />

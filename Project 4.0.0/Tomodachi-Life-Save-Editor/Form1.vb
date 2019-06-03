@@ -1,5 +1,6 @@
 ﻿Imports PackageIO
 Imports System.IO
+Imports System.Net
 
 Public Class TL_SaveEditor
     Private IsFormBeingDragged As Boolean = False
@@ -8,6 +9,55 @@ Public Class TL_SaveEditor
     Dim applicationpath = Application.StartupPath
     Dim AudioTomodachi As System.IO.UnmanagedMemoryStream
     Dim savedataArc As String
+    Dim Money As String
+    Dim IslandName As String
+    Dim IslandPronun As String
+    Dim Problemsolved As String
+    Dim Weddings As String
+    Dim Childrenborn As String
+    Dim Travelreceived As String
+    Dim StreetPassencount As String
+    Dim Travelsent As String
+    Dim Eventfountain As String
+    Dim Appartrenov As String
+    Dim Lastsavedate As String
+    Dim Rankvitality As String
+    Dim Rankpopularity As String
+    Dim Rankboycharm As String
+    Dim Rankgirlcharm As String
+    Dim Rankpampered As String
+    Dim Rankfriendship As String
+    Dim Rankromance As String
+    Dim Rankisland As String
+    Dim Ranktravelers As String
+    Dim Ranksplurge As String
+    Dim Islandaddres_1 As String
+    Dim Islandaddres_2 As String
+    Dim Islandaddres_3 As String
+    Dim Islandaddres_4 As String
+    Dim appart As String
+    Dim mair As String
+    Dim info As String
+    Dim classem As String
+    Dim vetem As String
+    Dim chap As String
+    Dim epicer As String
+    Dim deco As String
+    Dim broc As String
+    Dim magimport As String
+    Dim fontai As String
+    Dim mais As String
+    Dim port As String
+    Dim tervague As String
+    Dim conc As String
+    Dim test As String
+    Dim stud As String
+    Dim plage As String
+    Dim parc1 As String
+    Dim cafe As String
+    Dim parc As String
+    Dim tour As String
+    Dim part As String
 
     'form setting
     Private Sub TL_SaveEditor_FormClosing(sender As Object, e As EventArgs) Handles MyBase.FormClosing
@@ -24,6 +74,7 @@ Public Class TL_SaveEditor
 
     Private Sub TL_SaveEditor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Select_spesymb.SelectedItem = Select_spesymb.Items.Item(0)
+        Select_music.SelectedItem = Select_music.Items.Item(0)
         Try
             Setting_ckupdate.Checked = My.Settings.Parasetting_ckupdate
             Setting_filepath.Checked = My.Settings.Parasetting_filepath
@@ -35,6 +86,178 @@ Public Class TL_SaveEditor
             Setting_spesymb.Checked = My.Settings.Parasetting_specharc3ds
         Catch ex As Exception
         End Try
+        Selectlanguage()
+    End Sub
+
+    Public Sub Checkupdates()
+        If Setting_ckupdate.Checked = False Then
+            Try
+                Dim MAJ As New WebClient
+                Dim lastupdate As String = MAJ.DownloadString("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/Version.txt")
+                If Text_TLSE_version.Text = lastupdate Then
+                    TLSE_logo.Visible = True
+                    TLSE_logo_update.Visible = False
+                Else
+                    TLSE_logo.Visible = False
+                    TLSE_logo_update.Visible = True
+                    If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                        TLSE_dialog.Text_TLSE_dialog.Text = "An update is available" & vbNewLine & vbNewLine & "Click on Tomodachi Life Save Editor icon" & vbNewLine & "to download new version"
+                        TLSE_dialog.Icon_reference.Location = New Point(TLSE_logo.Width / 2, TLSE_logo.Height / 2)
+                        TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow_left
+                        TLSE_dialog.Icon_reference.Visible = True
+                        TLSE_dialog.ShowDialog()
+                    End If
+                    If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                        TLSE_dialog.Text_TLSE_dialog.Text = "Une mise à jour est disponible" & vbNewLine & vbNewLine & "Cliquez sur l'îcone de Tomodachi Life Save Editor" & vbNewLine & "pour télécharger la nouvelle version"
+                        TLSE_dialog.Icon_reference.Location = New Point(TLSE_logo.Width / 2, TLSE_logo.Height / 2)
+                        TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow_left
+                        TLSE_dialog.Icon_reference.Visible = True
+                        TLSE_dialog.ShowDialog()
+                    End If
+                End If
+            Catch ex As Exception
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "An error has occurred when checking updates"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Une erreur est survenue lors de la vérification des mises à jour"
+                    TLSE_dialog.ShowDialog()
+                End If
+            End Try
+        End If
+    End Sub
+
+    Private Sub TL_SaveEditor_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        Checkupdates()
+    End Sub
+
+    Public Sub Selectlanguage()
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_menu_open.Text = "Open"
+            Text_menu_save.Text = "Save"
+            Title_filever.Text = "Save file region :"
+            Menu_text_extras.Text = "Extras"
+            Menu_text_islandedit.Text = "Island edit"
+            Menu_text_itemsedit.Text = "Items edit"
+            Menu_text_manual.Text = "Manual"
+            Menu_text_miiedit.Text = "Mii edit"
+            Menu_text_repair.Text = "Repair save file"
+            Menu_text_settings.Text = "Settings"
+            Text_spesymb_add_pn.Text = "Add"
+            Text_spesymb_add_n.Text = "Add"
+            Text_spesymb_cancel.Text = "Cancel"
+            Title_islandname.Text = "Island's name"
+            Title_problemsolved.Text = "Problems solved"
+            Title_streetpassencounters.Text = "StreetPass encounters"
+            Title_weddings.Text = "Weddings"
+            Title_childrenborn.Text = "Children born"
+            Title_travelersreceived.Text = "Travelers received"
+            Title_travelerssent.Text = "Travelers sent"
+            Title_rankingboard.Text = "Rankings board"
+            Title_eventfountain.Text = "Event fountain"
+            Title_appartrenov.Text = "Apartments renovation"
+            Title_lastdatesave.Text = "Last save date"
+            Title_islandaddress.Text = "Island's address"
+            Setting_music.Text = "Active background music"
+            Setting_hidden.Text = "Show hidden things"
+            Setting_filepath.Text = "Show file path"
+            Setting_ckupdate.Text = "Unactive check updates"
+            Text_language.Text = "Language :"
+            Setting_Advhelp.Text = "Show advance help"
+            Setting_spesymb.Text = "Active special symbol"
+            Settings_settings.Text = "Settings"
+            Settings_changelog.Text = "Changelog"
+            Settings_credits.Text = "Credits"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_menu_open.Text = "Ouvrir"
+            Text_menu_save.Text = "Enregistrer"
+            Title_filever.Text = "Région de la " & vbNewLine & "sauvegarde :"
+            Menu_text_extras.Text = "Extras"
+            Menu_text_islandedit.Text = "Édition île"
+            Menu_text_itemsedit.Text = "Édition objets"
+            Menu_text_manual.Text = "Manuel"
+            Menu_text_miiedit.Text = "Édition Mii"
+            Menu_text_repair.Text = "Réparation sauvegarde"
+            Menu_text_settings.Text = "Paramètres"
+            Text_spesymb_add_pn.Text = "Ajouter"
+            Text_spesymb_add_n.Text = "Ajouter"
+            Text_spesymb_cancel.Text = "annuler"
+            Title_islandname.Text = "Nom de l'île"
+            Title_problemsolved.Text = "Problèmes résolus"
+            Title_streetpassencounters.Text = "Rencontres StreetPass"
+            Title_weddings.Text = "Marriages"
+            Title_childrenborn.Text = "Nouveau né"
+            Title_travelersreceived.Text = "Voyageurs reçus"
+            Title_travelerssent.Text = "Voyageurs envoyés"
+            Title_rankingboard.Text = "Classements"
+            Title_eventfountain.Text = "Évènement fontaine"
+            Title_appartrenov.Text = "Rénovation appartements"
+            Title_lastdatesave.Text = "Dernière date sauvegarde"
+            Title_islandaddress.Text = "Adresse de l'île"
+            Setting_music.Text = "Activer la musique de fond"
+            Setting_hidden.Text = "Afficher les choses cachées"
+            Setting_filepath.Text = "Afficher le chemin du fichier"
+            Setting_ckupdate.Text = "Désactiver la vérification des mises à jour"
+            Text_language.Text = "Langage :"
+            Setting_Advhelp.Text = "Afficher l'aide avancée"
+            Setting_spesymb.Text = "Activer les symboles spéciaux"
+            Settings_settings.Text = "Paramètres"
+            Settings_changelog.Text = "Changelog"
+            Settings_credits.Text = "Crédits"
+        End If
+    End Sub
+
+    Private Sub Select_language_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_language.SelectedIndexChanged
+        Selectlanguage()
+    End Sub
+
+    Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
+        Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
+    End Sub
+
+    Public Sub switchfilever()
+        If Filever_text.Text = "US" Then
+            TLSE_logo.Image = My.Resources.logo_US
+            TLSE_logo_update.Image = My.Resources.logo_US_update
+            Icon_pronun_islandname.Visible = True
+            Icon_tour.Image = Nothing
+            Icon_part.Image = Nothing
+            Icon_tour.Enabled = True
+            Icon_part.Enabled = True
+        ElseIf Filever_text.Text = "EU" Then
+            TLSE_logo.Image = My.Resources.logo_EU
+            TLSE_logo_update.Image = My.Resources.logo_EU_update
+            Icon_pronun_islandname.Visible = True
+            Icon_tour.Image = Nothing
+            Icon_part.Image = Nothing
+            Icon_tour.Enabled = True
+            Icon_part.Enabled = True
+        ElseIf Filever_text.Text = "JP" Then
+            TLSE_logo.Image = My.Resources.logo_JP
+            TLSE_logo_update.Image = My.Resources.logo_JP_update
+            Icon_pronun_islandname.Visible = False
+            Icon_tour.Image = My.Resources.touri
+            Icon_part.Image = My.Resources.parti
+            Icon_tour.Enabled = False
+            Icon_part.Enabled = False
+        ElseIf Filever_text.Text = "KR" Then
+            TLSE_logo.Image = My.Resources.logo_KR
+            TLSE_logo_update.Image = My.Resources.logo_KR_update
+            Icon_pronun_islandname.Visible = True
+            Icon_tour.Image = Nothing
+            Icon_part.Image = Nothing
+            Icon_tour.Enabled = True
+            Icon_part.Enabled = True
+        ElseIf Filever_text.Text = "" Then
+            TLSE_logo.Image = My.Resources.logo_US
+            TLSE_logo_update.Image = My.Resources.logo_US_update
+            Icon_pronun_islandname.Visible = True
+            Icon_tour.Image = Nothing
+            Icon_part.Image = Nothing
+            Icon_tour.Enabled = True
+            Icon_part.Enabled = True
+        End If
     End Sub
     'end form setting
 
@@ -106,7 +329,7 @@ Public Class TL_SaveEditor
         Panel_manual.Visible = False
     End Sub
 
-    Private Sub hideselectmenu()
+    Private Sub Hideselectmenu()
         Menu_islandedit.BackgroundImage = Nothing
         Menu_miiedit.BackgroundImage = Nothing
         Menu_extras.BackgroundImage = Nothing
@@ -118,7 +341,7 @@ Public Class TL_SaveEditor
 
     Private Sub Menu_text_settings_Click(sender As Object, e As EventArgs) Handles Menu_settings.Click, Menu_text_settings.Click
         hidepanels()
-        hideselectmenu()
+        Hideselectmenu()
         Panel_settings.Visible = True
     End Sub
 
@@ -136,7 +359,7 @@ Public Class TL_SaveEditor
 
     Private Sub Menu_text_islandedit_Click(sender As Object, e As EventArgs) Handles Menu_islandedit.Click, Menu_text_islandedit.Click
         hidepanels()
-        hideselectmenu()
+        Hideselectmenu()
         Panel_islandedit.Visible = True
     End Sub
 
@@ -154,7 +377,7 @@ Public Class TL_SaveEditor
 
     Private Sub Menu_text_extras_Click(sender As Object, e As EventArgs) Handles Menu_extras.Click, Menu_text_extras.Click
         hidepanels()
-        hideselectmenu()
+        Hideselectmenu()
         Panel_extras.Visible = True
     End Sub
 
@@ -172,7 +395,7 @@ Public Class TL_SaveEditor
 
     Private Sub Menu_text_repair_Click(sender As Object, e As EventArgs) Handles Menu_Repair.Click, Menu_text_repair.Click
         hidepanels()
-        hideselectmenu()
+        Hideselectmenu()
         Panel_repairsave.Visible = True
     End Sub
 
@@ -190,7 +413,7 @@ Public Class TL_SaveEditor
 
     Private Sub Menu_text_manual_Click(sender As Object, e As EventArgs) Handles Menu_manual.Click, Menu_text_manual.Click
         hidepanels()
-        hideselectmenu()
+        Hideselectmenu()
         Panel_manual.Visible = True
     End Sub
 
@@ -208,7 +431,7 @@ Public Class TL_SaveEditor
 
     Private Sub Menu_text_miiedit_Click(sender As Object, e As EventArgs) Handles Menu_miiedit.Click, Menu_text_miiedit.Click
         hidepanels()
-        hideselectmenu()
+        Hideselectmenu()
         Panel_miiedit.Visible = True
     End Sub
 
@@ -225,7 +448,7 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Menu_text_itemsedit_Click(sender As Object, e As EventArgs) Handles Menu_itemsedit.Click, Menu_text_itemsedit.Click
-        hideselectmenu()
+        Hideselectmenu()
     End Sub
 
     Private Sub Menu_text_itemsedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Menu_itemsedit.MouseMove, Menu_text_itemsedit.MouseMove
@@ -236,46 +459,6 @@ Public Class TL_SaveEditor
         Menu_itemsedit.BackgroundImage = Nothing
     End Sub
     'end menu animation block
-
-    Private Sub Text_menu_open_Click(sender As Object, e As EventArgs) Handles Text_menu_open.Click
-        Try
-            Dim open As New OpenFileDialog
-            open.Filter = "Text files|*.txt"
-            open.Title = "Open save savedataArc.txt"
-            open.ShowDialog()
-            savedataArc = open.FileName
-            If FileLen(savedataArc) = &H1E4C98 Then
-                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                    TLSE_dialog.Text_TLSE_dialog.Text = "EUR or USA save file detected" & vbNewLine & "Choose a save file region corresponding to your game region"
-                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                    TLSE_dialog.Text_TLSE_dialog.Text = "Sauvegarde EUR ou USA détecté" & vbNewLine & "Choisissez une région de sauvegarde correspondant à la région de votre jeux"
-                End If
-                TLSE_dialog.Panel_Cancel.Visible = True
-                TLSE_dialog.Panel_OK.Visible = True
-                TLSE_dialog.OK_Button.Text = "EUR"
-                TLSE_dialog.Cancel_Button.Text = "USA"
-                TLSE_dialog.ShowDialog()
-                If TLSE_dialog.DialogResult = DialogResult.OK Then
-                    Filever_text.Text = "EU"
-                ElseIf TLSE_dialog.DialogResult = DialogResult.Cancel Then
-                    Filever_text.Text = "US"
-                End If
-            ElseIf FileLen(savedataArc) = &H1F0048 Then
-                Filever_text.Text = "KR"
-            ElseIf FileLen(savedataArc) = &H14BD68 Then
-                Filever_text.Text = "JP"
-            Else
-                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                    TLSE_dialog.Text_TLSE_dialog.Text = "Invalid Tomodachi Life save file"
-                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                    TLSE_dialog.Text_TLSE_dialog.Text = "Sauvegarde de Tomodachi Life invalide"
-                End If
-                TLSE_dialog.ShowDialog()
-                Filever_text.Text = ""
-            End If
-        Catch ex As Exception
-        End Try
-    End Sub
 
     'edit island animation block
     Private Sub Icon_islandn_pronun_val_Click(sender As Object, e As EventArgs) Handles Icon_islandn_pronun_val.Click
@@ -1265,6 +1448,26 @@ Public Class TL_SaveEditor
             Panel_addsymb.Visible = False
         End If
     End Sub
+
+    Private Sub Warning_islandaddress_Click(sender As Object, e As EventArgs) Handles Warning_islandaddress.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Warning :" & vbNewLine & "Some values can corrupt save file but this feature can be edited as you want" & vbNewLine & vbNewLine & "If your save is corrupted after has been restored, restore previous save file from ''bak'' folder"
+            TLSE_dialog.ShowDialog()
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Avertissement :" & vbNewLine & "Certaines valeurs peuvent corrompre le fichier de sauvegarde, mais cette fonctionnalité peut être modifiée à votre guise " & vbNewLine & vbNewLine & " Si votre sauvegarde est corrompue après avoir été restaurée, restaurez le fichier de sauvegarde précédent à partir du dossier '' bak '' "
+            TLSE_dialog.ShowDialog()
+        End If
+    End Sub
+
+    Private Sub Warning_islandname_Click(sender As Object, e As EventArgs) Handles Warning_islandname.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "If you add a special symbol, island name will be '???' in the data of a crossed Mii via StreetPass"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Si vous ajoutez un symbole spécial, le nom de votre île sera '???' dans les donnés d'un Mii croisé via StreetPass"
+        End If
+        TLSE_dialog.ShowDialog()
+    End Sub
     'end edit island animation block
 
     'settings animation
@@ -1294,10 +1497,10 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Setting_hidden_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_hidden.CheckedChanged
-        hiddenthings()
+        Hiddenthings()
     End Sub
 
-    Public Sub hiddenthings()
+    Public Sub Hiddenthings()
         If Setting_hidden.Checked = True Then
             Panel_hiddenthings.Visible = True
             valu_vetem.Visible = True
@@ -1408,6 +1611,7 @@ Public Class TL_SaveEditor
             AdvH_rankboard.Visible = True
             AdvH_islandaddress.Visible = True
             AdvH_lastdatesave.Visible = True
+            Warning_islandname.Visible = False
         ElseIf Setting_Advhelp.Checked = False Then
             Panel_Advhelp.Visible = False
             AdvH_islandname.Visible = False
@@ -1425,6 +1629,12 @@ Public Class TL_SaveEditor
             AdvH_islandaddress.Visible = False
             AdvH_lastdatesave.Visible = False
             AdvH_islandnamepronun.Visible = False
+            If Setting_spesymb.Checked = True Then
+                Warning_islandname.Visible = True
+            Else
+                Warning_islandname.Visible = False
+            End If
+
         End If
     End Sub
 
@@ -1432,10 +1642,14 @@ Public Class TL_SaveEditor
         If Setting_spesymb.Checked = True Then
             Panel_bspesymb.Visible = True
             Addsymbol_islandname.Visible = True
+            If Setting_Advhelp.Checked = False Then
+                Warning_islandname.Visible = True
+            End If
         ElseIf Setting_spesymb.Checked = False Then
             Panel_bspesymb.Visible = False
             Addsymbol_islandname.Visible = False
             Addsymbol_pronun_island.Visible = False
+            Warning_islandname.Visible = False
         End If
     End Sub
 
@@ -1488,6 +1702,177 @@ Public Class TL_SaveEditor
     Private Sub Timer_done_Tick(sender As Object, e As EventArgs) Handles Timer_done.Tick
         Timer_done.Stop()
         Panel_done.Visible = False
+    End Sub
+
+    Private Sub Icon_TLSE_git_Click(sender As Object, e As EventArgs) Handles Icon_TLSE_git.Click
+        Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor")
+    End Sub
+
+    Private Sub Icon_TLSE_git_MouseLeave(sender As Object, e As EventArgs) Handles Icon_TLSE_git.MouseLeave
+        Icon_TLSE_git.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_TLSE_git_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_TLSE_git.MouseMove
+        Icon_TLSE_git.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to access to Tomodachi Life Save Editor page (Github)"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour accéder à la page de Tomodachi Life Save Editor (Github)"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_TLSE_gbt_Click(sender As Object, e As EventArgs) Handles Icon_TLSE_gbt.Click
+        Process.Start("https://gbatemp.net/threads/wip-tomodachi-life-save-editor.399006/")
+    End Sub
+
+    Private Sub Icon_TLSE_gbt_MouseLeave(sender As Object, e As EventArgs) Handles Icon_TLSE_gbt.MouseLeave
+        Icon_TLSE_gbt.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_TLSE_gbt_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_TLSE_gbt.MouseMove
+        Icon_TLSE_gbt.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to access to Tomodachi Life Save Editor page (gbatemp.net)"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour accéder à la page de Tomodachi Life Save Editor (gbatemp.net)"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_MiitopiaSE_Click(sender As Object, e As EventArgs) Handles Icon_MiitopiaSE.Click
+        Process.Start("https://github.com/Brionjv/Miitopia-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_MiitopiaSE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_MiitopiaSE.MouseLeave
+        Icon_MiitopiaSE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_MiitopiaSE_MouseMove(sender As Object, e As EventArgs) Handles Icon_MiitopiaSE.MouseMove
+        Icon_MiitopiaSE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try Miitopia Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer Miitopia Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_ChibiRoboZLSE_Click(sender As Object, e As EventArgs) Handles Icon_ChibiRoboZLSE.Click
+        Process.Start("https://github.com/Brionjv/Chibi-Robo-ZL-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_ChibiRoboZLSE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_ChibiRoboZLSE.MouseLeave
+        Icon_ChibiRoboZLSE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_ChibiRoboZLSE_MouseMove(sender As Object, e As EventArgs) Handles Icon_ChibiRoboZLSE.MouseMove
+        Icon_ChibiRoboZLSE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try Chibi Robo zip Lash Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer Chibi Robo zip Lash Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_PaparMarioSSSE_Click(sender As Object, e As EventArgs) Handles Icon_PaparMarioSSSE.Click
+        Process.Start("https://github.com/Brionjv/Paper-Mario-SS-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_PaparMarioSSSE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_PaparMarioSSSE.MouseLeave
+        Icon_PaparMarioSSSE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_PaparMarioSSSE_MouseMove(sender As Object, e As EventArgs) Handles Icon_PaparMarioSSSE.MouseMove
+        Icon_PaparMarioSSSE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try Paper Mario Sticker Star Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer Paper Mario Sticker Star Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_IronfallISE_Click(sender As Object, e As EventArgs) Handles Icon_IronfallISE.Click
+        Process.Start("https://github.com/Brionjv/Ironfall-Invasion-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_IronfallISE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_IronfallISE.MouseLeave
+        Icon_IronfallISE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_IronfallISE_MouseMove(sender As Object, e As EventArgs) Handles Icon_IronfallISE.MouseMove
+        Icon_IronfallISE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try Ironfall Invasion Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer Ironfall Invasion Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_NintendogscatSE_Click(sender As Object, e As EventArgs) Handles Icon_nintendogscatSE.Click
+        Process.Start("https://github.com/Brionjv/3ds-Nintendogs-cats-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_NintendogscatSE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_nintendogscatSE.MouseLeave
+        Icon_nintendogscatSE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_NintendogscatSE_MouseMove(sender As Object, e As EventArgs) Handles Icon_nintendogscatSE.MouseMove
+        Icon_nintendogscatSE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try 3ds Nintendogs + cats Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer 3ds Nintendogs + cats Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_MarioPartyITSE_Click(sender As Object, e As EventArgs) Handles Icon_MarioPartyITSE.Click
+        Process.Start("https://github.com/Brionjv/Mario-Party-IT-Save-Editor/releases")
+    End Sub
+
+    Private Sub Icon_MarioPartyITSE_MouseLeave(sender As Object, e As EventArgs) Handles Icon_MarioPartyITSE.MouseLeave
+        Icon_MarioPartyITSE.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_MarioPartyITSE_MouseMove(sender As Object, e As EventArgs) Handles Icon_MarioPartyITSE.MouseMove
+        Icon_MarioPartyITSE.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try Mario Party Island Tour Save Editor"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer Mario Party Island Tour Save Editor"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_3dsSEL_Click(sender As Object, e As EventArgs) Handles Icon_3dsSEL.Click
+        Process.Start("https://github.com/Brionjv/3DS-Save-Editors-Library/releases")
+    End Sub
+
+    Private Sub Icon_3dsSEL_MouseLeave(sender As Object, e As EventArgs) Handles Icon_3dsSEL.MouseLeave
+        Icon_3dsSEL.BorderStyle = BorderStyle.None
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_3dsSEL_MouseMove(sender As Object, e As EventArgs) Handles Icon_3dsSEL.MouseMove
+        Icon_3dsSEL.BorderStyle = BorderStyle.FixedSingle
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to download and try 3DS Save Editors Library"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour télécharger et essayer 3DS Save Editors Library"
+        End If
+        Panel_description.Visible = True
     End Sub
     'end setting animation
 
@@ -1781,4 +2166,908 @@ Public Class TL_SaveEditor
         TLSE_dialog.ShowDialog()
     End Sub
     ' end Advance help island edit
+
+    'read savedataArc
+    Private Sub Text_menu_open_Click(sender As Object, e As EventArgs) Handles Text_menu_open.Click
+        Try
+            Dim open As New OpenFileDialog
+            open.Filter = "Text files|*.txt"
+            open.Title = "Open save savedataArc.txt"
+            open.ShowDialog()
+            savedataArc = open.FileName
+            If FileLen(savedataArc) = &H1E4C98 Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "EUR or USA save file detected" & vbNewLine & "Choose a save file region corresponding to your game region"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Sauvegarde EUR ou USA détecté" & vbNewLine & "Choisissez une région de sauvegarde correspondant à la région de votre jeux"
+                End If
+                TLSE_dialog.Panel_Cancel.Visible = True
+                TLSE_dialog.Panel_OK.Visible = True
+                TLSE_dialog.OK_Button.Text = "EUR"
+                TLSE_dialog.Cancel_Button.Text = "USA"
+                TLSE_dialog.ShowDialog()
+                If TLSE_dialog.DialogResult = DialogResult.OK Then
+                    Filever_text.Text = "EU"
+                ElseIf TLSE_dialog.DialogResult = DialogResult.Cancel Then
+                    Filever_text.Text = "US"
+                End If
+            ElseIf FileLen(savedataArc) = &H1F0048 Then
+                Filever_text.Text = "KR"
+
+            ElseIf FileLen(savedataArc) = &H14BD68 Then
+                Filever_text.Text = "JP"
+            Else
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Invalid Tomodachi Life save file"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Sauvegarde de Tomodachi Life invalide"
+                End If
+                TLSE_dialog.ShowDialog()
+                Filever_text.Text = ""
+            End If
+            switchfilever()
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Savefileregion()
+                ReadsavedataArc()
+                Makebackup()
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Public Sub ReadsavedataArc()
+        Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+        Try
+            Reader.Position = Money
+            valu_money.Value = Reader.ReadUInt32
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Money', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Argent', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_money.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = IslandName
+            Text_islandname.Text = Reader.ReadUnicodeString(10)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Island name', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Nom de l'île', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Text_islandname.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+            Try
+                Reader.Position = IslandPronun
+                Text_pronun_islandname.Text = Reader.ReadUnicodeString(20)
+            Catch ex As Exception
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Island name pronunciation', please report this issue"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Prononciation du nom de l'île', veuillez signaler ce problème"
+                End If
+                TLSE_dialog.ShowDialog()
+                Text_pronun_islandname.BackColor = Color.Red
+                Text_menu_open.BackColor = Color.Red
+            End Try
+        End If
+        Try
+            Reader.Position = Problemsolved
+            valu_problemsolved.Value = Reader.ReadUInt16
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Problems solved', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Soucis résolus', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_problemsolved.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Weddings
+            valu_weddings.Value = Reader.ReadUInt16
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Weddings', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Marriages', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_weddings.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Childrenborn
+            valu_childrenborn.Value = Reader.ReadUInt16
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Children born', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Nouveau né', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_childrenborn.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Travelreceived
+            valu_travelersreceived.Value = Reader.ReadUInt16
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Travelers received', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Voyageurs reçus', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_travelersreceived.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = StreetPassencount
+            valu_streetpassencounters.Value = Reader.ReadUInt16
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'StreetPass encounters', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'StreetPass reçus', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_streetpassencounters.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Travelsent
+            valu_travelerssent.Value = Reader.ReadUInt16
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Travelers sent', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Voyageurs envoyés', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_travelerssent.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Eventfountain
+            valu_eventfountain.Value = Reader.ReadUInt32
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Event fountain', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Évènement fontaine', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_eventfountain.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Appartrenov
+            valu_appartrenov.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Apartments renovation', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Rénovation appartements', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_appartrenov.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Lastsavedate
+            valu_lastdatesave.Value = Reader.ReadUInt32
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Last date save', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Dernière date sauvegarde', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_lastdatesave.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Rankvitality
+            valu_rank_vitality.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Ranking vitality', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Classements forme générale', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_rank_vitality.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Rankpopularity
+            valu_rank_popularity.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Ranking popularity', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Classements popularité', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_rank_popularity.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Rankboycharm
+            valu_rank_boycharm.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Ranking boy charm', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Classements garçons populaires', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_rank_boycharm.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Rankgirlcharm
+            valu_rank_girlcharm.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Ranking girl charm', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Classements filles populaires', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_rank_girlcharm.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Rankpampered
+            valu_rank_pampered.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Ranking pampered', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Classements Mii préférés', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_rank_pampered.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Rankfriendship
+            valu_rank_friendship.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Ranking friendship', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Classements amitié', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_rank_friendship.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Rankromance
+            valu_rank_romance.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Ranking romance', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Classements relations amoureuses', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_rank_romance.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Rankisland
+            valu_rank_island.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Ranking island', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Classements qualité de vie', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_rank_island.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Ranktravelers
+            valu_rank_traveler.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Ranking travelers', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Classements Mii voyageurs', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_rank_traveler.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Ranksplurge
+            valu_rank_splurge.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Ranking splurge', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Classements Mii dépensiers', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_rank_splurge.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Islandaddres_1
+            valu_islandaddress_p1.Value = Reader.ReadUInt32
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Island's address', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Adresse de l'île', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_islandaddress_p1.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Islandaddres_2
+            valu_islandaddress_p2.Value = Reader.ReadUInt32
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Island's address', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Adresse de l'île', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_islandaddress_p2.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Islandaddres_3
+            valu_islandaddress_p3.Value = Reader.ReadUInt32
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Island's address', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Adresse de l'île', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_islandaddress_p3.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = Islandaddres_4
+            valu_islandaddress_p4.Value = Reader.ReadUInt32
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Island's address', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Adresse de l'île', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_islandaddress_p4.BackColor = Color.Red
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = appart
+            valu_appart.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building Mii apartments', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment appartements Mii', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_appart.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = mair
+            valu_mair.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building town hall', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment mairie', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_mair.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = info
+            valu_info.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building Mii news', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment infos Mii', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_info.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = classem
+            valu_classem.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building rankings board', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment classements', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_classem.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = vetem
+            valu_vetem.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building clothing', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment vêtements', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_vetem.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = chap
+            valu_chap.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building hats', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment chapeaux', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_chap.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = epicer
+            valu_epicer.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building food mart', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment épicerie', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_epicer.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = deco
+            valu_deco.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building interiors', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment déco d'intérieur', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_deco.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = broc
+            valu_broc.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building pawn shop', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment brocante', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_broc.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = magimport
+            valu_magimport.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building import wear', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment magasin d'import', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_magimport.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = fontai
+            valu_font.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building fountain', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment fontaine', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_font.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = mais
+            valu_mais.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building Mii homes', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment maisons Mii', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_mais.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = port
+            valu_port.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building port', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment port', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_port.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = tervague
+            valu_tervague.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building campground', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment terrain vague', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_tervague.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = conc
+            valu_conc.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building concert hall', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment salle de concert', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_conc.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = test
+            valu_test.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building compatibility tester', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment testeur de compatibilité', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_test.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = stud
+            valu_stud.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building photo studio', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment studio photo', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_stud.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = plage
+            valu_plage.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building beach', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment plage', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_plage.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = parc1
+            valu_parc1.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building park', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment parc', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_parc1.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = cafe
+            valu_cafe.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building café', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment café', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_cafe.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = parc
+            valu_parc.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building amusement park', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment parc d'attractions', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_parc.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = tour
+            valu_tour.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building observation tower', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment tour d'observation', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_tour.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        Try
+            Reader.Position = part
+            valu_part.Value = Reader.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Reading of this feature has failed : 'Building 3DS image share', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette fonctionnalité a échoué : 'Bâtiment partage d'images 3DS', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            Icon_part.Image = My.Resources.icon_issue
+            Text_menu_open.BackColor = Color.Red
+        End Try
+        If Text_menu_open.BackColor = Color.Red Then
+            Text_menu_save.Visible = False
+            Text_menu_open.Enabled = False
+        Else
+            Text_menu_save.Visible = True
+        End If
+    End Sub
+
+    Public Sub Savefileregion()
+        If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+            Money = &H1E4BB8
+            IslandName = &H1E4BCC
+            IslandPronun = &H1E4BF6
+            Problemsolved = &H1E4BC6
+            Weddings = &H1E4BC0
+            Childrenborn = &H1E4BC2
+            Travelreceived = &H1E4BBE
+            StreetPassencount = &H1E4BBC
+            Travelsent = &H1E4BC4
+            Eventfountain = &H1E4AF8
+            Appartrenov = &H1E4C79
+            Lastsavedate = &H10
+            Rankvitality = &H1E4C3E
+            Rankpopularity = &H1E4C3F
+            Rankboycharm = &H1E4C42
+            Rankgirlcharm = &H1E4C43
+            Rankpampered = &H1E4C44
+            Rankfriendship = &H1E4C40
+            Rankromance = &H1E4C41
+            Rankisland = &H1E4C47
+            Ranktravelers = &H1E4C46
+            Ranksplurge = &H1E4C45
+            Islandaddres_1 = &H20
+            Islandaddres_2 = &H24
+            Islandaddres_3 = &H28
+            Islandaddres_4 = &H2C
+            appart = &H1E4C20
+            mair = &H1E4C21
+            info = &H1E4C22
+            classem = &H1E4C23
+            vetem = &H1E4C24
+            chap = &H1E4C25
+            epicer = &H1E4C26
+            deco = &H1E4C27
+            broc = &H1E4C28
+            magimport = &H1E4C29
+            fontai = &H1E4C2A
+            mais = &H1E4C2B
+            port = &H1E4C2C
+            tervague = &H1E4C2D
+            conc = &H1E4C2E
+            test = &H1E4C2F
+            stud = &H1E4C30
+            plage = &H1E4C31
+            parc1 = &H1E4C32
+            cafe = &H1E4C33
+            parc = &H1E4C34
+            tour = &H1E4C35
+            part = &H1E4C36
+        ElseIf Filever_text.Text = "JP" Then
+            Money = &H14BCA8
+            IslandName = &H14BCBC
+            Problemsolved = &H14BCB6
+            Weddings = &H14BCB0
+            Childrenborn = &H14BCB2
+            Travelreceived = &H14BCAE
+            StreetPassencount = &H14BCAC
+            Travelsent = &H14BCB4
+            Eventfountain = &H14BBE8
+            Appartrenov = &H14BD49
+            Lastsavedate = &H10
+            Rankvitality = &H14BD0E
+            Rankpopularity = &H14BD0F
+            Rankboycharm = &H14BD12
+            Rankgirlcharm = &H14BD13
+            Rankpampered = &H14BD14
+            Rankfriendship = &H14BD10
+            Rankromance = &H14BD11
+            Rankisland = &H14BD17
+            Ranktravelers = &H14BD16
+            Ranksplurge = &H14BD15
+            Islandaddres_1 = &H20
+            Islandaddres_2 = &H24
+            Islandaddres_3 = &H28
+            Islandaddres_4 = &H2C
+            appart = &H14BCF0
+            mair = &H14BCF1
+            info = &H14BCF2
+            classem = &H14BCF3
+            vetem = &H14BCF4
+            chap = &H14BCF5
+            epicer = &H14BCF6
+            deco = &H14BCF7
+            broc = &H14BCF8
+            magimport = &H14BCF9
+            fontai = &H14BCFA
+            mais = &H14BCFB
+            port = &H14BCFC
+            tervague = &H14BCFD
+            conc = &H14BCFE
+            test = &H14BCFF
+            stud = &H14BD00
+            plage = &H14BD01
+            parc1 = &H14BD02
+            cafe = &H14BD03
+            parc = &H14BD04
+            tour = &H14BD05
+            part = &H14BD06
+        ElseIf Filever_text.Text = "KR" Then
+            Money = &H1EFF68
+            IslandName = &H1EFF7C
+            Problemsolved = &H1EFF76
+            Weddings = &H1EFF70
+            Childrenborn = &H1EFF72
+            Travelreceived = &H1EFF6E
+            StreetPassencount = &H1EFF6C
+            Travelsent = &H1EFF74
+            Eventfountain = &H1EFEA8
+            Appartrenov = &H1F0029
+            Lastsavedate = &H10
+            Rankvitality = &H1EFFEE
+            Rankpopularity = &H1EFFEF
+            Rankboycharm = &H1EFFF2
+            Rankgirlcharm = &H1EFFF3
+            Rankpampered = &H1EFFF4
+            Rankfriendship = &H1EFFF0
+            Rankromance = &H1EFFF1
+            Rankisland = &H1EFFF7
+            Ranktravelers = &H1EFFF6
+            Ranksplurge = &H1EFFF5
+            Islandaddres_1 = &H20
+            Islandaddres_2 = &H24
+            Islandaddres_3 = &H28
+            Islandaddres_4 = &H2C
+            appart = &H1EFFD0
+            mair = &H1EFFD1
+            info = &H1EFFD2
+            classem = &H1EFFD3
+            vetem = &H1EFFD4
+            chap = &H1EFFD5
+            epicer = &H1EFFD6
+            deco = &H1EFFD7
+            broc = &H1EFFD8
+            magimport = &H1EFFD9
+            fontai = &H1EFFDA
+            mais = &H1EFFDB
+            port = &H1EFFDC
+            tervague = &H1EFFDD
+            conc = &H1EFFDE
+            test = &H1EFFDF
+            stud = &H1EFFE0
+            plage = &H1EFFE1
+            parc1 = &H1EFFE2
+            cafe = &H1EFFE3
+            parc = &H1EFFE4
+            tour = &H1EFFE5
+            part = &H1EFFE6
+        End If
+    End Sub
+
+    Public Sub Makebackup()
+        Try
+            If Filever_text.Text = "US" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\Backup\USA\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+            If Filever_text.Text = "EU" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\Backup\EUR\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+            If Filever_text.Text = "JP" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\Backup\JPN\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+            If Filever_text.Text = "KR" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\Backup\KOR\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+            Timer_done.Interval = Timer_done.Interval + 500
+            done()
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                Text_done.Text = "Backup done !"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                Text_done.Text = "Backup fait !"
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+    'end read savedataArc
+
+    Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
+        WritesavedataArc()
+    End Sub
+
+    Public Sub WritesavedataArc()
+        Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+        Try
+            Writer.Position = Money
+            Writer.WriteUInt32(valu_money.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Money', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'écriture de cette fonctionnalité a échoué : 'Argent', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_money.BackColor = Color.Orange
+        End Try
+    End Sub
+    'save savedataArc
 End Class
