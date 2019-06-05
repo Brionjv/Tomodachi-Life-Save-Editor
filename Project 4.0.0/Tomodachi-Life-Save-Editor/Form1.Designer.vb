@@ -366,6 +366,7 @@ Partial Class TL_SaveEditor
         Me.Panel_miiedit = New System.Windows.Forms.Panel()
         Me.TextBox_fpath = New System.Windows.Forms.TextBox()
         Me.Timer_done = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel_itemsedit = New System.Windows.Forms.Panel()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_header.SuspendLayout()
@@ -1564,7 +1565,7 @@ Partial Class TL_SaveEditor
         Me.Warning_islandaddress.BackColor = System.Drawing.Color.Transparent
         Me.Warning_islandaddress.Cursor = System.Windows.Forms.Cursors.Help
         Me.Warning_islandaddress.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_danger
-        Me.Warning_islandaddress.Location = New System.Drawing.Point(321, 500)
+        Me.Warning_islandaddress.Location = New System.Drawing.Point(645, 483)
         Me.Warning_islandaddress.Name = "Warning_islandaddress"
         Me.Warning_islandaddress.Size = New System.Drawing.Size(14, 12)
         Me.Warning_islandaddress.TabIndex = 88
@@ -3944,6 +3945,7 @@ Partial Class TL_SaveEditor
         'Text_citratomo
         '
         Me.Text_citratomo.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_citratomo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Text_citratomo.Location = New System.Drawing.Point(3, 148)
         Me.Text_citratomo.Name = "Text_citratomo"
         Me.Text_citratomo.Size = New System.Drawing.Size(170, 31)
@@ -4079,7 +4081,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_restoresave.BackColor = System.Drawing.Color.Transparent
         Me.Panel_restoresave.BackgroundImage = CType(resources.GetObject("Panel_restoresave.BackgroundImage"), System.Drawing.Image)
-        Me.Panel_restoresave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Panel_restoresave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel_restoresave.Controls.Add(Me.CheckBox13)
         Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_5)
         Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_4)
@@ -4233,7 +4235,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_restoresave_1.BackColor = System.Drawing.Color.Transparent
         Me.Panel_restoresave_1.BackgroundImage = CType(resources.GetObject("Panel_restoresave_1.BackgroundImage"), System.Drawing.Image)
-        Me.Panel_restoresave_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Panel_restoresave_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel_restoresave_1.Controls.Add(Me.CheckBox16)
         Me.Panel_restoresave_1.Controls.Add(Me.Info_restoresave_1_4)
         Me.Panel_restoresave_1.Controls.Add(Me.Info_restoresave_1_3)
@@ -4361,7 +4363,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_extractsave_1.BackColor = System.Drawing.Color.Transparent
         Me.Panel_extractsave_1.BackgroundImage = CType(resources.GetObject("Panel_extractsave_1.BackgroundImage"), System.Drawing.Image)
-        Me.Panel_extractsave_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Panel_extractsave_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel_extractsave_1.Controls.Add(Me.CheckBox14)
         Me.Panel_extractsave_1.Controls.Add(Me.Info_extractsave_1_5)
         Me.Panel_extractsave_1.Controls.Add(Me.CheckBox15)
@@ -4516,7 +4518,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_extractsave.BackColor = System.Drawing.Color.Transparent
         Me.Panel_extractsave.BackgroundImage = CType(resources.GetObject("Panel_extractsave.BackgroundImage"), System.Drawing.Image)
-        Me.Panel_extractsave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Panel_extractsave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel_extractsave.Controls.Add(Me.CheckBox7)
         Me.Panel_extractsave.Controls.Add(Me.Info_extractsave_6)
         Me.Panel_extractsave.Controls.Add(Me.CheckBox6)
@@ -4716,13 +4718,22 @@ Partial Class TL_SaveEditor
         '
         Me.Timer_done.Interval = 1000
         '
+        'Panel_itemsedit
+        '
+        Me.Panel_itemsedit.BackgroundImage = CType(resources.GetObject("Panel_itemsedit.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_itemsedit.Location = New System.Drawing.Point(152, 77)
+        Me.Panel_itemsedit.Name = "Panel_itemsedit"
+        Me.Panel_itemsedit.Size = New System.Drawing.Size(676, 540)
+        Me.Panel_itemsedit.TabIndex = 97
+        Me.Panel_itemsedit.Visible = False
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
-        Me.Controls.Add(Me.Panel_islandedit)
+        Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -4732,8 +4743,9 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_repairsave)
-        Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.Panel_miiedit)
+        Me.Controls.Add(Me.Panel_islandedit)
+        Me.Controls.Add(Me.Panel_itemsedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -5336,4 +5348,5 @@ Partial Class TL_SaveEditor
     Friend WithEvents Timer_done As Timer
     Friend WithEvents Icon_TLSE_gbt As PictureBox
     Friend WithEvents Icon_TLSE_git As PictureBox
+    Friend WithEvents Panel_itemsedit As Panel
 End Class

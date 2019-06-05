@@ -448,7 +448,9 @@ Public Class TL_SaveEditor
     End Sub
 
     Private Sub Menu_text_itemsedit_Click(sender As Object, e As EventArgs) Handles Menu_itemsedit.Click, Menu_text_itemsedit.Click
+        hidepanels()
         Hideselectmenu()
+        Panel_itemsedit.Visible = True
     End Sub
 
     Private Sub Menu_text_itemsedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Menu_itemsedit.MouseMove, Menu_text_itemsedit.MouseMove
@@ -1451,11 +1453,11 @@ Public Class TL_SaveEditor
 
     Private Sub Warning_islandaddress_Click(sender As Object, e As EventArgs) Handles Warning_islandaddress.Click
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Warning :" & vbNewLine & "Some values can corrupt save file but this feature can be edited as you want" & vbNewLine & vbNewLine & "If your save is corrupted after has been restored, restore previous save file from ''bak'' folder"
+            TLSE_dialog.Text_TLSE_dialog.Text = "Warning :" & vbNewLine & "Some values can corrupt save file but this feature can be edited as you want" & vbNewLine & vbNewLine & "If your save is corrupted after has been restored, restore previous save file from ''Backup'' folder"
             TLSE_dialog.ShowDialog()
         End If
         If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Avertissement :" & vbNewLine & "Certaines valeurs peuvent corrompre le fichier de sauvegarde, mais cette fonctionnalité peut être modifiée à votre guise " & vbNewLine & vbNewLine & " Si votre sauvegarde est corrompue après avoir été restaurée, restaurez le fichier de sauvegarde précédent à partir du dossier '' bak '' "
+            TLSE_dialog.Text_TLSE_dialog.Text = "Avertissement :" & vbNewLine & "Certaines valeurs peuvent corrompre le fichier de sauvegarde, mais cette fonctionnalité peut être modifiée à votre guise " & vbNewLine & vbNewLine & " Si votre sauvegarde est corrompue après avoir été restaurée, restaurez le fichier de sauvegarde précédent à partir du dossier ''Backup'' "
             TLSE_dialog.ShowDialog()
         End If
     End Sub
@@ -1612,6 +1614,7 @@ Public Class TL_SaveEditor
             AdvH_islandaddress.Visible = True
             AdvH_lastdatesave.Visible = True
             Warning_islandname.Visible = False
+            Warning_islandaddress.Visible = False
         ElseIf Setting_Advhelp.Checked = False Then
             Panel_Advhelp.Visible = False
             AdvH_islandname.Visible = False
@@ -1634,7 +1637,7 @@ Public Class TL_SaveEditor
             Else
                 Warning_islandname.Visible = False
             End If
-
+            Warning_islandaddress.Visible = True
         End If
     End Sub
 
@@ -1868,9 +1871,9 @@ Public Class TL_SaveEditor
     Private Sub Icon_3dsSEL_MouseMove(sender As Object, e As EventArgs) Handles Icon_3dsSEL.MouseMove
         Icon_3dsSEL.BorderStyle = BorderStyle.FixedSingle
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            Text_description.Text = "Click to download and try 3DS Save Editors Library"
+            Text_description.Text = "Click to download and try 3DS Save Editors Library (Collection of save editors)"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            Text_description.Text = "Cliquez pour télécharger et essayer 3DS Save Editors Library"
+            Text_description.Text = "Cliquez pour télécharger et essayer 3DS Save Editors Library (Collection d'éditeurs de sauvegarde)"
         End If
         Panel_description.Visible = True
     End Sub
@@ -2158,9 +2161,9 @@ Public Class TL_SaveEditor
         TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
         TLSE_dialog.Icon_reference_panel.Visible = True
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here island's address" & vbNewLine & vbNewLine & "Some values can corrupt your save file, if he's corrupted retry with other values or restore an older save file in 'backup' folder"
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here island's address" & vbNewLine & vbNewLine & "Some values can corrupt your save file, if he's corrupted retry with other values or restore an older save file in 'Backup' folder"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici l'addresse de l'île" & vbNewLine & vbNewLine & "Certaines valeurs peuvent corrompre votre sauvegarde, si c'est le cas réessayez avec d'autres valeurs ou restaurez une ancienne sauvegarde depuis le dossier 'backup'"
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici l'addresse de l'île" & vbNewLine & vbNewLine & "Certaines valeurs peuvent corrompre votre sauvegarde, si c'est le cas réessayez avec d'autres valeurs ou restaurez une ancienne sauvegarde depuis le dossier 'Backup'"
         End If
         TLSE_dialog.valu_pandialogpos.Value = 5
         TLSE_dialog.ShowDialog()
@@ -2210,6 +2213,7 @@ Public Class TL_SaveEditor
                 Savefileregion()
                 ReadsavedataArc()
                 Makebackup()
+                TextBox_fpath.Text = savedataArc
             End If
         Catch ex As Exception
         End Try
@@ -3038,7 +3042,7 @@ Public Class TL_SaveEditor
                           savedataArc,
                         applicationpath & "\Backup\KOR\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
             End If
-            Timer_done.Interval = Timer_done.Interval + 500
+            Timer_done.Interval = Timer_done.Interval + 800
             done()
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 Text_done.Text = "Backup done !"
@@ -3066,8 +3070,898 @@ Public Class TL_SaveEditor
                 TLSE_dialog.Text_TLSE_dialog.Text = "L'écriture de cette fonctionnalité a échoué : 'Argent', veuillez signaler ce problème"
             End If
             TLSE_dialog.ShowDialog()
-            valu_money.BackColor = Color.Orange
         End Try
+        Try
+            For i As Integer = 0 To 19
+                Writer.Position = IslandName + i
+                Writer.WriteInt8(0)
+            Next
+            Writer.Position = IslandName
+            Writer.WriteUnicodeString(Text_islandname.Text)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Island name', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Nom de l'île', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+            Try
+                For i As Integer = 0 To 39
+                    Writer.Position = IslandPronun + i
+                    Writer.WriteInt8(0)
+                Next
+                Writer.Position = IslandPronun
+                Writer.WriteUnicodeString(Text_pronun_islandname.Text)
+            Catch ex As Exception
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Island name pronunciation', please report this issue"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Prononciation du nom de l'île', veuillez signaler ce problème"
+                End If
+                TLSE_dialog.ShowDialog()
+            End Try
+        End If
+        Try
+            Writer.Position = Problemsolved
+            Writer.WriteUInt16(valu_problemsolved.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Problems solved', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Soucis résolus', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+            valu_problemsolved.BackColor = Color.Red
+        End Try
+        Try
+            Writer.Position = Weddings
+            Writer.WriteUInt16(valu_weddings.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Weddings', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Marriages', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            Writer.Position = Childrenborn
+            Writer.WriteUInt16(valu_childrenborn.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Children born', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Nouveau né', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            Writer.Position = Travelreceived
+            Writer.WriteUInt16(valu_travelersreceived.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Travelers received', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Voyageurs reçus', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            Writer.Position = StreetPassencount
+            Writer.WriteUInt16(valu_streetpassencounters.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'StreetPass encounters', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'StreetPass reçus', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            Writer.Position = Travelsent
+            Writer.WriteUInt16(valu_travelerssent.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Travelers sent', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Voyageurs envoyés', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            Writer.Position = Eventfountain
+            Writer.WriteUInt32(valu_eventfountain.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Event fountain', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Évènement fontaine', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            Writer.Position = Lastsavedate
+            Writer.WriteUInt32(valu_lastdatesave.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Last date save', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Dernière date sauvegarde', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            Writer.Position = Islandaddres_1
+            Writer.WriteUInt32(valu_islandaddress_p1.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Island's address', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Adresse de l'île', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            Writer.Position = Islandaddres_2
+            Writer.WriteUInt32(valu_islandaddress_p2.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Island's address', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Adresse de l'île', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            Writer.Position = Islandaddres_3
+            Writer.WriteUInt32(valu_islandaddress_p3.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Island's address', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Adresse de l'île', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            Writer.Position = Islandaddres_4
+            Writer.WriteUInt32(valu_islandaddress_p4.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Island's address', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Adresse de l'île', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Writer.Close()
+        Dim ws As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+        Try
+            ws.Position = appart
+            ws.WriteByte(valu_appart.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building Mii apartments', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment appartements Mii', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = mair
+            ws.WriteByte(valu_mair.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building town hall', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment mairie', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = info
+            ws.WriteByte(valu_info.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building Mii news', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment infos Mii', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = classem
+            ws.WriteByte(valu_classem.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building rankings board', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment classements', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = vetem
+            ws.WriteByte(valu_vetem.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building clothing', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment vêtements', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = chap
+            ws.WriteByte(valu_chap.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building hats', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment chapeaux', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = epicer
+            ws.WriteByte(valu_epicer.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building food mart', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment épicerie', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = deco
+            ws.WriteByte(valu_deco.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building interiors', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment déco d'intérieur', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = broc
+            ws.WriteByte(valu_broc.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building pawn shop', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment brocante', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = magimport
+            ws.WriteByte(valu_magimport.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building import wear', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment magasin d'import', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = fontai
+            ws.WriteByte(valu_font.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building fountain', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment fontaine', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = mais
+            ws.WriteByte(valu_mais.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building Mii homes', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment maisons Mii', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = port
+            ws.WriteByte(valu_port.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building port', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment port', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = tervague
+            ws.WriteByte(valu_tervague.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building campground', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment terrain vague', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = conc
+            ws.WriteByte(valu_conc.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building concert hall', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment salle de concert', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = test
+            ws.WriteByte(valu_test.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building compatibility tester', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment testeur de compatibilité', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = stud
+            ws.WriteByte(valu_stud.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building photo studio', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment studio photo', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = plage
+            ws.WriteByte(valu_plage.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building beach', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment plage', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = parc1
+            ws.WriteByte(valu_parc1.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building park', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment parc', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = cafe
+            ws.WriteByte(valu_cafe.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building café', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment café', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = parc
+            ws.WriteByte(valu_parc.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building amusement park', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment parc d'attractions', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = tour
+            ws.WriteByte(valu_tour.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building observation tower', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment tour d'observation', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = part
+            ws.WriteByte(valu_part.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Building 3DS image share', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Bâtiment partage d'images 3DS', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Appartrenov
+            ws.WriteByte(valu_appartrenov.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Apartments renovation', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Rénovation appartements', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Rankvitality
+            ws.WriteByte(valu_rank_vitality.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Ranking vitality', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Classements forme générale', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Rankpopularity
+            ws.WriteByte(valu_rank_popularity.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Ranking popularity', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Classements popularité', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Rankboycharm
+            ws.WriteByte(valu_rank_boycharm.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Ranking boy charm', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Classements garçons populaires', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Rankgirlcharm
+            ws.WriteByte(valu_rank_girlcharm.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Ranking girl charm', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Classements filles populaires', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Rankpampered
+            ws.WriteByte(valu_rank_pampered.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Ranking pampered', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Classements Mii préférés', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Rankfriendship
+            ws.WriteByte(valu_rank_friendship.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Ranking friendship', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Classements amitié', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Rankromance
+            ws.WriteByte(valu_rank_romance.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Ranking romance', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Classements relations amoureuses', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Rankisland
+            ws.WriteByte(valu_rank_island.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Ranking island', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Classements qualité de vie', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Ranktravelers
+            ws.WriteByte(valu_rank_traveler.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Ranking travelers', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Classements Mii voyageurs', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        Try
+            ws.Position = Ranksplurge
+            ws.WriteByte(valu_rank_splurge.Value)
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Ranking splurge', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Classements Mii dépensiers', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+        done()
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_done.Text = "File saved !"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_done.Text = "Fichier sauvegardé !"
+        End If
     End Sub
-    'save savedataArc
+    'end save savedataArc
+
+    'animation manual block
+    Public Sub hidemanualpanels()
+        Panel_extractsave.Visible = False
+        Panel_restoresave.Visible = False
+        Panel_extractsave_1.Visible = False
+        Panel_restoresave_1.Visible = False
+        Panel_citratomo.Visible = False
+    End Sub
+
+    Public Sub hidemanualmenu()
+        Text_extractsave.BorderStyle = BorderStyle.None
+        Text_restoresave.BorderStyle = BorderStyle.None
+        Text_extractsave_1.BorderStyle = BorderStyle.None
+        Text_restoresave_1.BorderStyle = BorderStyle.None
+        Text_citratomo.BorderStyle = BorderStyle.None
+        Text_extractsave.BackColor = Color.Transparent
+        Text_restoresave.BackColor = Color.Transparent
+        Text_extractsave_1.BackColor = Color.Transparent
+        Text_restoresave_1.BackColor = Color.Transparent
+        Text_citratomo.BackColor = Color.Transparent
+    End Sub
+
+    Private Sub Panel_extractsave_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_extractsave.MouseMove
+        Info_image.Location = New Point(e.X + 200, e.Y + 15)
+    End Sub
+
+    Private Sub Info_extractsave_1_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1.MouseMove
+        Info_image.Image = My.Resources.JKSM_launch
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_2_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_2.MouseMove
+        Info_image.Image = My.Resources.JKSM_titles
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_2_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_2.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_3_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_3.MouseMove
+        Info_image.Image = My.Resources.JKSM_tomodachi
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_3_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_3.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_4_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_4.MouseMove
+        Info_image.Image = My.Resources.JKSM_savedata
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_4_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_4.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_5_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_5.MouseMove
+        Info_image.Image = My.Resources.JKSM_newfolder
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_5_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_5.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_6_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_6.MouseMove
+        Info_image.Image = My.Resources.JKSM_backup
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_6_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_6.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Text_HtuTLSEold_Click(sender As Object, e As EventArgs) Handles Text_HtuTLSEold.Click
+        Process.Start("https://www.youtube.com/watch?v=EIpuxMg9SVE")
+    End Sub
+
+    Private Sub Panel_restoresave_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_restoresave.MouseMove
+        Info_image.Location = New Point(e.X + 200, e.Y + 15)
+    End Sub
+
+    Private Sub Info_restoresave_1_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_1.MouseMove
+        Info_image.Image = My.Resources.JKSM_launch
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_1_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_1.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_restoresave_2_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_2.MouseMove
+        Info_image.Image = My.Resources.JKSM_titles
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_2_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_2.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_restoresave_3_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_3.MouseMove
+        Info_image.Image = My.Resources.JKSM_tomodachi
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_3_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_3.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_restoresave_4_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_4.MouseMove
+        Info_image.Image = My.Resources.JKSM_savedata
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_4_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_4.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_restoresave_5_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_5.MouseMove
+        Info_image.Image = My.Resources.JKSM_backup
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_5_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_5.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Text_citratomo_Click(sender As Object, e As EventArgs) Handles Text_citratomo.Click
+        hidemanualpanels()
+        Panel_citratomo.Visible = True
+        hidemanualmenu()
+        Text_citratomo.BorderStyle = BorderStyle.FixedSingle
+        Text_citratomo.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_extractsave_Click(sender As Object, e As EventArgs) Handles Text_extractsave.Click
+        hidemanualpanels()
+        Panel_extractsave.Visible = True
+        hidemanualmenu()
+        Text_extractsave.BorderStyle = BorderStyle.FixedSingle
+        Text_extractsave.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_restoresave_Click(sender As Object, e As EventArgs) Handles Text_restoresave.Click
+        hidemanualpanels()
+        Panel_restoresave.Visible = True
+        hidemanualmenu()
+        Text_restoresave.BorderStyle = BorderStyle.FixedSingle
+        Text_restoresave.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_extractsave_1_Click(sender As Object, e As EventArgs) Handles Text_extractsave_1.Click
+        hidemanualpanels()
+        Panel_extractsave_1.Visible = True
+        hidemanualmenu()
+        Text_extractsave_1.BorderStyle = BorderStyle.FixedSingle
+        Text_extractsave_1.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_restoresave_1_Click(sender As Object, e As EventArgs) Handles Text_restoresave_1.Click
+        hidemanualpanels()
+        Panel_restoresave_1.Visible = True
+        hidemanualmenu()
+        Text_restoresave_1.BorderStyle = BorderStyle.FixedSingle
+        Text_restoresave_1.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Panel_extractsave_1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_extractsave_1.MouseMove
+        Info_image.Location = New Point(e.X + 200, e.Y + 15)
+    End Sub
+
+    Private Sub Info_extractsave_1_1_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1_1.MouseMove
+        Info_image.Image = My.Resources.CKPT_launch
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_1_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1_1.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_1_2_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1_2.MouseMove
+        Info_image.Image = My.Resources.CKPT_selecttomodachi
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_2_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1_2.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_1_3_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1_3.MouseMove
+        Info_image.Image = My.Resources.CKPT_confirmgame
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_3_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1_3.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_1_4_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1_4.MouseMove
+        Info_image.Image = My.Resources.CKPT_backup
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_4_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1_4.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_extractsave_1_5_MouseMove(sender As Object, e As EventArgs) Handles Info_extractsave_1_5.MouseMove
+        Info_image.Image = My.Resources.CKPT_bakfolder
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_extractsave_1_5_MouseLeave(sender As Object, e As EventArgs) Handles Info_extractsave_1_5.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Panel_restoresave_1_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_restoresave_1.MouseMove
+        Info_image.Location = New Point(e.X + 200, e.Y + 15)
+    End Sub
+
+    Private Sub Info_restoresave_1_1_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_1_1.MouseMove
+        Info_image.Image = My.Resources.CKPT_launch
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_1_1_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_1_1.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_restoresave_1_2_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_1_2.MouseMove
+        Info_image.Image = My.Resources.CKPT_selecttomodachi
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_1_2_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_1_2.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_restoresave_1_3_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_1_3.MouseMove
+        Info_image.Image = My.Resources.CKPT_confirmgame
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_1_3_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_1_3.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Info_restoresave_1_4_MouseMove(sender As Object, e As EventArgs) Handles Info_restoresave_1_4.MouseMove
+        Info_image.Image = My.Resources.CKPT_restore
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_restoresave_1_4_MouseLeave(sender As Object, e As EventArgs) Handles Info_restoresave_1_4.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Panel_citratomo_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel_citratomo.MouseMove
+        Info_image.Location = New Point(e.X + 200, e.Y + 15)
+    End Sub
+
+    Private Sub Info_citratomo_2_MouseMove(sender As Object, e As EventArgs) Handles Info_citratomo_2.MouseMove
+        Info_image.Image = My.Resources.Cit_opensaveloc
+        Info_image.Visible = True
+    End Sub
+
+    Private Sub Info_citratomo_2_MouseLeave(sender As Object, e As EventArgs) Handles Info_citratomo_2.MouseLeave
+        Info_image.Visible = False
+    End Sub
+
+    Private Sub Text_citratomo_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_citratomo.MouseMove
+        Text_citratomo.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_citratomo_MouseLeave(sender As Object, e As EventArgs) Handles Text_citratomo.MouseLeave
+        If Panel_citratomo.Visible = True Then
+            Text_citratomo.BackColor = Color.Orange
+        Else
+            Text_citratomo.BackColor = Color.Transparent
+        End If
+    End Sub
+
+    Private Sub Text_extractsave_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_extractsave.MouseMove
+        Text_extractsave.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_extractsave_MouseLeave(sender As Object, e As EventArgs) Handles Text_extractsave.MouseLeave
+        If Panel_extractsave.Visible = True Then
+            Text_extractsave.BackColor = Color.Orange
+        Else
+            Text_extractsave.BackColor = Color.Transparent
+        End If
+    End Sub
+
+    Private Sub Text_restoresave_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_restoresave.MouseMove
+        Text_restoresave.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_restoresave_MouseLeave(sender As Object, e As EventArgs) Handles Text_restoresave.MouseLeave
+        If Panel_restoresave.Visible = True Then
+            Text_restoresave.BackColor = Color.Orange
+        Else
+            Text_restoresave.BackColor = Color.Transparent
+        End If
+    End Sub
+
+    Private Sub Text_extractsave_1_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_extractsave_1.MouseMove
+        Text_extractsave_1.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_extractsave_1_MouseLeave(sender As Object, e As EventArgs) Handles Text_extractsave_1.MouseLeave
+        If Panel_extractsave_1.Visible = True Then
+            Text_extractsave_1.BackColor = Color.Orange
+        Else
+            Text_extractsave_1.BackColor = Color.Transparent
+        End If
+    End Sub
+
+    Private Sub Text_restoresave_1_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_restoresave_1.MouseMove
+        Text_restoresave_1.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_restoresave_1_MouseLeave(sender As Object, e As EventArgs) Handles Text_restoresave_1.MouseLeave
+        If Panel_restoresave_1.Visible = True Then
+            Text_restoresave_1.BackColor = Color.Orange
+        Else
+            Text_restoresave_1.BackColor = Color.Transparent
+        End If
+    End Sub
+
+    Private Sub Text_htuTLSEold_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_HtuTLSEold.MouseMove
+        Text_HtuTLSEold.BackColor = Color.Orange
+    End Sub
+
+    Private Sub Text_htuTLSEold_MouseLeave(sender As Object, e As EventArgs) Handles Text_HtuTLSEold.MouseLeave
+        Text_HtuTLSEold.BackColor = Color.Transparent
+    End Sub
+    'end animation manual block
 End Class

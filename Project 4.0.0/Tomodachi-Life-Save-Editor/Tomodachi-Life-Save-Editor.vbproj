@@ -157,6 +157,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\JKSM_tomodachi.png" />
+    <None Include="Resources\JKSM_titles.png" />
+    <None Include="Resources\JKSM_savedata.png" />
+    <None Include="Resources\JKSM_newfolder.png" />
+    <None Include="Resources\JKSM_launch.png" />
+    <None Include="Resources\JKSM_backup.png" />
+    <None Include="Resources\CKPT_selecttomodachi.bmp" />
+    <None Include="Resources\CKPT_restore.bmp" />
+    <None Include="Resources\CKPT_launch.bmp" />
+    <None Include="Resources\CKPT_confirmgame.bmp" />
+    <None Include="Resources\CKPT_bakfolder.bmp" />
+    <None Include="Resources\CKPT_backup.bmp" />
+    <None Include="Resources\Cit_opensaveloc.png" />
     <None Include="Resources\icon_issue.png" />
     <None Include="Resources\info_rankingboard.png" />
     <None Include="Resources\info_islandbuilding.png" />

@@ -343,6 +343,76 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property Cit_opensaveloc() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Cit_opensaveloc", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property CKPT_backup() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CKPT_backup", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property CKPT_bakfolder() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CKPT_bakfolder", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property CKPT_confirmgame() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CKPT_confirmgame", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property CKPT_launch() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CKPT_launch", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property CKPT_restore() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CKPT_restore", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property CKPT_selecttomodachi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("CKPT_selecttomodachi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property classem() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("classem", resourceCulture)
@@ -856,6 +926,66 @@ Namespace My.Resources
         Public ReadOnly Property items_edit() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("items_edit", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property JKSM_backup() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("JKSM_backup", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property JKSM_launch() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("JKSM_launch", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property JKSM_newfolder() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("JKSM_newfolder", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property JKSM_savedata() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("JKSM_savedata", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property JKSM_titles() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("JKSM_titles", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property JKSM_tomodachi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("JKSM_tomodachi", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
