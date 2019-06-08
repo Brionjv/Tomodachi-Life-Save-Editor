@@ -1750,6 +1750,8 @@ Public Class TL_SaveEditor
                 valu_islandaddress_p2.Value = Reader.ReadUInt32
                 Reader.Position = &H28
                 valu_islandaddress_p3.Value = Reader.ReadUInt32
+                Reader.Position = &H2C
+                valu_islandaddress_p4.Value = Reader.ReadUInt32
             End If
             If Filever_text.Text = "JP" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
@@ -3792,8 +3794,6 @@ Public Class TL_SaveEditor
             Writer.WriteUInt16(valu_place_1.Value)
             Writer.Position = Place2
             Writer.WriteUInt16(valu_place_2.Value)
-            Writer.Position = sharing
-            Writer.WriteHexString(Text_datasharing.Text)
             If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
                 For i As Integer = 0 To 59
                     Writer.Position = Mii1PP + i

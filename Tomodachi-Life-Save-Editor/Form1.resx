@@ -178,7 +178,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABo
-        DQAAAk1TRnQBSQFMAgEBBgEAAXABCQFwAQkBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        DQAAAk1TRnQBSQFMAgEBBgEAAaABCQGgAQkBEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABIAMAAQEBAAEgBgABIBYAA18B4AMWAR70AANcAd8DQAH9AVgBWQFYAeMBVwFcAVcB3wFXAlwB3wMt
         AUboAAMhATADWQHyAcUBywHKAf8B0gLTAf8BpQKpAf8DYAHeAVkCXAHPAzcBW+QAA1gB7wHUAt0B/wH3
         AvgB/wHQAtEB/wGlAqcB/wEAAYABAAH/AVsCXwHbAzoBYC8AAf8BjwGRAYAB/wGPAZEBAAH/AZABkQGA
@@ -359,15 +359,6 @@
         iVBORw0KGgoAAAANSUhEUgAAAAQAAAAFCAIAAADtz9qMAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
         dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAqSURBVBhXY1A4zKp1TBCIgAwG5SMcjme0gAjIYDA6
         IQXhABmoMgg9h1kBpv4U09trAKQAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="Changelog.Text" xml:space="preserve">
-    <value>Update Interaction feature (set as nothing when interaction is not listed)
-Check if save file is load in Items edit (if items edit not work, other way will be added in the futur)
-
-- Fix Mii checksum - 
-Nickname, copying, creator and nickname pronunciation can be edited
-
 </value>
   </data>
   <data name="Settings_credits.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

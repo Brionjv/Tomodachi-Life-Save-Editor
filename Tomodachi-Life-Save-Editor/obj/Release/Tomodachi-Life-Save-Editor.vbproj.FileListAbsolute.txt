@@ -30,3 +30,4 @@ D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Repairsave.resources
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.Specialcharacter.resources
 D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_dialog.resources
+D:\Users\Brion\Documents\Visual Studio 2012\Projects\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Release\Tomodachi-Life-Save-Editor.vbprojResolveAssemblyReference.cache
