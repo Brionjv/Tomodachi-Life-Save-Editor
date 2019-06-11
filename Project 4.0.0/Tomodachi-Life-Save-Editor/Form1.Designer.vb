@@ -46,6 +46,7 @@ Partial Class TL_SaveEditor
         Me.Panel_menu_opensave = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Text_menu_save = New System.Windows.Forms.Label()
+        Me.ImageList_menusave = New System.Windows.Forms.ImageList(Me.components)
         Me.Text_menu_open = New System.Windows.Forms.Label()
         Me.Minimizebutton = New System.Windows.Forms.PictureBox()
         Me.TLSE_title = New System.Windows.Forms.PictureBox()
@@ -79,6 +80,14 @@ Partial Class TL_SaveEditor
         Me.Menu_text_settings = New System.Windows.Forms.Label()
         Me.Menu_icon_settings = New System.Windows.Forms.PictureBox()
         Me.Menu_panel = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Menu_concertedit = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Menu_text_concertedit = New System.Windows.Forms.Label()
+        Me.Menu_icon_concertedit = New System.Windows.Forms.PictureBox()
         Me.Icon_description = New System.Windows.Forms.PictureBox()
         Me.Panel_done = New System.Windows.Forms.Panel()
         Me.Text_done = New System.Windows.Forms.Label()
@@ -272,9 +281,7 @@ Partial Class TL_SaveEditor
         Me.Icon_3dsSEL = New System.Windows.Forms.PictureBox()
         Me.Icon_MiitopiaSE = New System.Windows.Forms.PictureBox()
         Me.Panel_extras = New System.Windows.Forms.Panel()
-        Me.AdvH_concertedit = New System.Windows.Forms.PictureBox()
-        Me.AdvH_travelersedit = New System.Windows.Forms.PictureBox()
-        Me.AdvH_resetmiirela = New System.Windows.Forms.PictureBox()
+        Me.AdvH_resetrelationship = New System.Windows.Forms.PictureBox()
         Me.AdvH_resetitems = New System.Windows.Forms.PictureBox()
         Me.AdvH_resetnewsflash = New System.Windows.Forms.PictureBox()
         Me.AdvH_resetmiiapart = New System.Windows.Forms.PictureBox()
@@ -287,17 +294,14 @@ Partial Class TL_SaveEditor
         Me.Check_resetnewsflash = New System.Windows.Forms.CheckBox()
         Me.Icon_resetnewsflash = New System.Windows.Forms.PictureBox()
         Me.Check_resetmiiapart = New System.Windows.Forms.CheckBox()
-        Me.Fea_edit_concert = New System.Windows.Forms.Panel()
-        Me.Icon_edit_concert = New System.Windows.Forms.PictureBox()
         Me.Icon_resetmiiapart = New System.Windows.Forms.PictureBox()
-        Me.Fea_edit_travelers = New System.Windows.Forms.Panel()
-        Me.Icon_edit_travelers = New System.Windows.Forms.PictureBox()
         Me.Check_resetstpspp = New System.Windows.Forms.CheckBox()
         Me.Icon_resetstpspp = New System.Windows.Forms.PictureBox()
         Me.Check_timetravel = New System.Windows.Forms.CheckBox()
         Me.Icon_timetravel = New System.Windows.Forms.PictureBox()
         Me.Panel_repairsave = New System.Windows.Forms.Panel()
-        Me.PictureBox162 = New System.Windows.Forms.PictureBox()
+        Me.Icon_header = New System.Windows.Forms.PictureBox()
+        Me.AdvH_header = New System.Windows.Forms.PictureBox()
         Me.Title_header = New System.Windows.Forms.Label()
         Me.Text_header = New System.Windows.Forms.TextBox()
         Me.Panel_manual = New System.Windows.Forms.Panel()
@@ -309,24 +313,6 @@ Partial Class TL_SaveEditor
         Me.Text_restoresave = New System.Windows.Forms.Label()
         Me.Text_HtuTLSEold = New System.Windows.Forms.Label()
         Me.Text_extractsave = New System.Windows.Forms.Label()
-        Me.Panel_citratomo = New System.Windows.Forms.Panel()
-        Me.CheckBox21 = New System.Windows.Forms.CheckBox()
-        Me.Info_citratomo_2 = New System.Windows.Forms.Label()
-        Me.CheckBox28 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox29 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox30 = New System.Windows.Forms.CheckBox()
-        Me.Panel_restoresave = New System.Windows.Forms.Panel()
-        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
-        Me.Info_restoresave_5 = New System.Windows.Forms.Label()
-        Me.Info_restoresave_4 = New System.Windows.Forms.Label()
-        Me.Info_restoresave_3 = New System.Windows.Forms.Label()
-        Me.Info_restoresave_2 = New System.Windows.Forms.Label()
-        Me.Info_restoresave_1 = New System.Windows.Forms.Label()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
         Me.Panel_restoresave_1 = New System.Windows.Forms.Panel()
         Me.CheckBox16 = New System.Windows.Forms.CheckBox()
         Me.Info_restoresave_1_4 = New System.Windows.Forms.Label()
@@ -363,10 +349,29 @@ Partial Class TL_SaveEditor
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Panel_citratomo = New System.Windows.Forms.Panel()
+        Me.CheckBox21 = New System.Windows.Forms.CheckBox()
+        Me.Info_citratomo_2 = New System.Windows.Forms.Label()
+        Me.CheckBox28 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox29 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox30 = New System.Windows.Forms.CheckBox()
+        Me.Panel_restoresave = New System.Windows.Forms.Panel()
+        Me.CheckBox13 = New System.Windows.Forms.CheckBox()
+        Me.Info_restoresave_5 = New System.Windows.Forms.Label()
+        Me.Info_restoresave_4 = New System.Windows.Forms.Label()
+        Me.Info_restoresave_3 = New System.Windows.Forms.Label()
+        Me.Info_restoresave_2 = New System.Windows.Forms.Label()
+        Me.Info_restoresave_1 = New System.Windows.Forms.Label()
+        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox12 = New System.Windows.Forms.CheckBox()
         Me.Panel_miiedit = New System.Windows.Forms.Panel()
         Me.TextBox_fpath = New System.Windows.Forms.TextBox()
         Me.Timer_done = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_itemsedit = New System.Windows.Forms.Panel()
+        Me.Panel_concertedit = New System.Windows.Forms.Panel()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_header.SuspendLayout()
@@ -411,6 +416,12 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_settings, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Menu_icon_settings, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_panel.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Menu_concertedit.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Menu_icon_concertedit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_description, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_done.SuspendLayout()
         Me.Panel_islandedit.SuspendLayout()
@@ -570,9 +581,7 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_3dsSEL, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_MiitopiaSE, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_extras.SuspendLayout()
-        CType(Me.AdvH_concertedit, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AdvH_travelersedit, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AdvH_resetmiirela, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AdvH_resetrelationship, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_resetitems, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_resetnewsflash, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_resetmiiapart, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -581,23 +590,20 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_resetrelationship, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_resetitems, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_resetnewsflash, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Fea_edit_concert.SuspendLayout()
-        CType(Me.Icon_edit_concert, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_resetmiiapart, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Fea_edit_travelers.SuspendLayout()
-        CType(Me.Icon_edit_travelers, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_resetstpspp, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_timetravel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_repairsave.SuspendLayout()
-        CType(Me.PictureBox162, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_header, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AdvH_header, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_manual.SuspendLayout()
         CType(Me.Info_image, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
-        Me.Panel_citratomo.SuspendLayout()
-        Me.Panel_restoresave.SuspendLayout()
         Me.Panel_restoresave_1.SuspendLayout()
         Me.Panel_extractsave_1.SuspendLayout()
         Me.Panel_extractsave.SuspendLayout()
+        Me.Panel_citratomo.SuspendLayout()
+        Me.Panel_restoresave.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -871,8 +877,9 @@ Partial Class TL_SaveEditor
         Me.Text_menu_save.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Text_menu_save.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Text_menu_save.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_menu_save.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Text_menu_save.ImageKey = "(aucun)"
+        Me.Text_menu_save.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Text_menu_save.ImageKey = "icon_menusave.png"
+        Me.Text_menu_save.ImageList = Me.ImageList_menusave
         Me.Text_menu_save.Location = New System.Drawing.Point(0, 0)
         Me.Text_menu_save.Name = "Text_menu_save"
         Me.Text_menu_save.Size = New System.Drawing.Size(69, 34)
@@ -880,6 +887,12 @@ Partial Class TL_SaveEditor
         Me.Text_menu_save.Text = "Save"
         Me.Text_menu_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Text_menu_save.Visible = False
+        '
+        'ImageList_menusave
+        '
+        Me.ImageList_menusave.ImageStream = CType(resources.GetObject("ImageList_menusave.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList_menusave.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList_menusave.Images.SetKeyName(0, "icon_menusave.png")
         '
         'Text_menu_open
         '
@@ -1274,6 +1287,8 @@ Partial Class TL_SaveEditor
         '
         Me.Menu_panel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
         Me.Menu_panel.CausesValidation = False
+        Me.Menu_panel.Controls.Add(Me.Panel3)
+        Me.Menu_panel.Controls.Add(Me.Menu_concertedit)
         Me.Menu_panel.Controls.Add(Me.Icon_description)
         Me.Menu_panel.Controls.Add(Me.Menu_manual)
         Me.Menu_panel.Controls.Add(Me.Menu_Repair)
@@ -1288,6 +1303,103 @@ Partial Class TL_SaveEditor
         Me.Menu_panel.Name = "Menu_panel"
         Me.Menu_panel.Size = New System.Drawing.Size(150, 575)
         Me.Menu_panel.TabIndex = 29
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Transparent
+        Me.Panel3.Controls.Add(Me.PictureBox2)
+        Me.Panel3.Controls.Add(Me.Label1)
+        Me.Panel3.Controls.Add(Me.PictureBox3)
+        Me.Panel3.Location = New System.Drawing.Point(0, 296)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(150, 34)
+        Me.Panel3.TabIndex = 12
+        Me.Panel3.Visible = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox2.Location = New System.Drawing.Point(34, 19)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 69
+        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
+        '
+        'Label1
+        '
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label1.Location = New System.Drawing.Point(35, 2)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(112, 30)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Mii management"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox3.Enabled = False
+        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.repair_save
+        Me.PictureBox3.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(34, 34)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox3.TabIndex = 1
+        Me.PictureBox3.TabStop = False
+        '
+        'Menu_concertedit
+        '
+        Me.Menu_concertedit.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_concertedit.Controls.Add(Me.PictureBox4)
+        Me.Menu_concertedit.Controls.Add(Me.Menu_text_concertedit)
+        Me.Menu_concertedit.Controls.Add(Me.Menu_icon_concertedit)
+        Me.Menu_concertedit.Location = New System.Drawing.Point(0, 256)
+        Me.Menu_concertedit.Name = "Menu_concertedit"
+        Me.Menu_concertedit.Size = New System.Drawing.Size(150, 34)
+        Me.Menu_concertedit.TabIndex = 11
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox4.Location = New System.Drawing.Point(34, 19)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(15, 15)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 69
+        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
+        '
+        'Menu_text_concertedit
+        '
+        Me.Menu_text_concertedit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Menu_text_concertedit.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Menu_text_concertedit.Location = New System.Drawing.Point(35, 2)
+        Me.Menu_text_concertedit.Name = "Menu_text_concertedit"
+        Me.Menu_text_concertedit.Size = New System.Drawing.Size(112, 30)
+        Me.Menu_text_concertedit.TabIndex = 2
+        Me.Menu_text_concertedit.Text = "Concert edit"
+        Me.Menu_text_concertedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_icon_concertedit
+        '
+        Me.Menu_icon_concertedit.BackColor = System.Drawing.Color.Transparent
+        Me.Menu_icon_concertedit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Menu_icon_concertedit.Enabled = False
+        Me.Menu_icon_concertedit.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.concert_edit
+        Me.Menu_icon_concertedit.Location = New System.Drawing.Point(0, 0)
+        Me.Menu_icon_concertedit.Name = "Menu_icon_concertedit"
+        Me.Menu_icon_concertedit.Size = New System.Drawing.Size(34, 34)
+        Me.Menu_icon_concertedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Menu_icon_concertedit.TabIndex = 1
+        Me.Menu_icon_concertedit.TabStop = False
         '
         'Icon_description
         '
@@ -3517,9 +3629,7 @@ Partial Class TL_SaveEditor
         'Panel_extras
         '
         Me.Panel_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
-        Me.Panel_extras.Controls.Add(Me.AdvH_concertedit)
-        Me.Panel_extras.Controls.Add(Me.AdvH_travelersedit)
-        Me.Panel_extras.Controls.Add(Me.AdvH_resetmiirela)
+        Me.Panel_extras.Controls.Add(Me.AdvH_resetrelationship)
         Me.Panel_extras.Controls.Add(Me.AdvH_resetitems)
         Me.Panel_extras.Controls.Add(Me.AdvH_resetnewsflash)
         Me.Panel_extras.Controls.Add(Me.AdvH_resetmiiapart)
@@ -3532,9 +3642,7 @@ Partial Class TL_SaveEditor
         Me.Panel_extras.Controls.Add(Me.Check_resetnewsflash)
         Me.Panel_extras.Controls.Add(Me.Icon_resetnewsflash)
         Me.Panel_extras.Controls.Add(Me.Check_resetmiiapart)
-        Me.Panel_extras.Controls.Add(Me.Fea_edit_concert)
         Me.Panel_extras.Controls.Add(Me.Icon_resetmiiapart)
-        Me.Panel_extras.Controls.Add(Me.Fea_edit_travelers)
         Me.Panel_extras.Controls.Add(Me.Check_resetstpspp)
         Me.Panel_extras.Controls.Add(Me.Icon_resetstpspp)
         Me.Panel_extras.Controls.Add(Me.Check_timetravel)
@@ -3545,41 +3653,17 @@ Partial Class TL_SaveEditor
         Me.Panel_extras.TabIndex = 92
         Me.Panel_extras.Visible = False
         '
-        'AdvH_concertedit
+        'AdvH_resetrelationship
         '
-        Me.AdvH_concertedit.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_concertedit.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_concertedit.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_concertedit.Location = New System.Drawing.Point(612, 264)
-        Me.AdvH_concertedit.Name = "AdvH_concertedit"
-        Me.AdvH_concertedit.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_concertedit.TabIndex = 80
-        Me.AdvH_concertedit.TabStop = False
-        Me.AdvH_concertedit.Visible = False
-        '
-        'AdvH_travelersedit
-        '
-        Me.AdvH_travelersedit.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_travelersedit.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_travelersedit.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_travelersedit.Location = New System.Drawing.Point(573, 159)
-        Me.AdvH_travelersedit.Name = "AdvH_travelersedit"
-        Me.AdvH_travelersedit.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_travelersedit.TabIndex = 79
-        Me.AdvH_travelersedit.TabStop = False
-        Me.AdvH_travelersedit.Visible = False
-        '
-        'AdvH_resetmiirela
-        '
-        Me.AdvH_resetmiirela.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_resetmiirela.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_resetmiirela.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetmiirela.Location = New System.Drawing.Point(289, 390)
-        Me.AdvH_resetmiirela.Name = "AdvH_resetmiirela"
-        Me.AdvH_resetmiirela.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_resetmiirela.TabIndex = 78
-        Me.AdvH_resetmiirela.TabStop = False
-        Me.AdvH_resetmiirela.Visible = False
+        Me.AdvH_resetrelationship.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_resetrelationship.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_resetrelationship.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_resetrelationship.Location = New System.Drawing.Point(289, 390)
+        Me.AdvH_resetrelationship.Name = "AdvH_resetrelationship"
+        Me.AdvH_resetrelationship.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_resetrelationship.TabIndex = 78
+        Me.AdvH_resetrelationship.TabStop = False
+        Me.AdvH_resetrelationship.Visible = False
         '
         'AdvH_resetitems
         '
@@ -3662,6 +3746,7 @@ Partial Class TL_SaveEditor
         'Icon_resetrelationship
         '
         Me.Icon_resetrelationship.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_resetrelationship.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_relationship
         Me.Icon_resetrelationship.Location = New System.Drawing.Point(87, 380)
         Me.Icon_resetrelationship.Name = "Icon_resetrelationship"
         Me.Icon_resetrelationship.Size = New System.Drawing.Size(40, 40)
@@ -3690,6 +3775,7 @@ Partial Class TL_SaveEditor
         'Icon_resetitems
         '
         Me.Icon_resetitems.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_resetitems.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_items
         Me.Icon_resetitems.Location = New System.Drawing.Point(86, 331)
         Me.Icon_resetitems.Name = "Icon_resetitems"
         Me.Icon_resetitems.Size = New System.Drawing.Size(40, 40)
@@ -3718,6 +3804,7 @@ Partial Class TL_SaveEditor
         'Icon_resetnewsflash
         '
         Me.Icon_resetnewsflash.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_resetnewsflash.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_newsflash
         Me.Icon_resetnewsflash.Location = New System.Drawing.Point(41, 290)
         Me.Icon_resetnewsflash.Name = "Icon_resetnewsflash"
         Me.Icon_resetnewsflash.Size = New System.Drawing.Size(86, 25)
@@ -3740,63 +3827,18 @@ Partial Class TL_SaveEditor
         Me.Check_resetmiiapart.Name = "Check_resetmiiapart"
         Me.Check_resetmiiapart.Size = New System.Drawing.Size(116, 23)
         Me.Check_resetmiiapart.TabIndex = 66
-        Me.Check_resetmiiapart.Text = "Reset Miis apartment"
+        Me.Check_resetmiiapart.Text = "Reset Mii apartments"
         Me.Check_resetmiiapart.UseVisualStyleBackColor = False
-        '
-        'Fea_edit_concert
-        '
-        Me.Fea_edit_concert.BackColor = System.Drawing.Color.White
-        Me.Fea_edit_concert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Fea_edit_concert.Controls.Add(Me.Icon_edit_concert)
-        Me.Fea_edit_concert.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Fea_edit_concert.Location = New System.Drawing.Point(475, 226)
-        Me.Fea_edit_concert.Name = "Fea_edit_concert"
-        Me.Fea_edit_concert.Size = New System.Drawing.Size(137, 60)
-        Me.Fea_edit_concert.TabIndex = 9
-        '
-        'Icon_edit_concert
-        '
-        Me.Icon_edit_concert.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_edit_concert.BackgroundImage = CType(resources.GetObject("Icon_edit_concert.BackgroundImage"), System.Drawing.Image)
-        Me.Icon_edit_concert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Icon_edit_concert.Enabled = False
-        Me.Icon_edit_concert.Location = New System.Drawing.Point(3, 3)
-        Me.Icon_edit_concert.Name = "Icon_edit_concert"
-        Me.Icon_edit_concert.Size = New System.Drawing.Size(130, 54)
-        Me.Icon_edit_concert.TabIndex = 0
-        Me.Icon_edit_concert.TabStop = False
         '
         'Icon_resetmiiapart
         '
         Me.Icon_resetmiiapart.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_resetmiiapart.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_apartmii
         Me.Icon_resetmiiapart.Location = New System.Drawing.Point(52, 241)
         Me.Icon_resetmiiapart.Name = "Icon_resetmiiapart"
         Me.Icon_resetmiiapart.Size = New System.Drawing.Size(75, 25)
         Me.Icon_resetmiiapart.TabIndex = 65
         Me.Icon_resetmiiapart.TabStop = False
-        '
-        'Fea_edit_travelers
-        '
-        Me.Fea_edit_travelers.BackColor = System.Drawing.Color.White
-        Me.Fea_edit_travelers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Fea_edit_travelers.Controls.Add(Me.Icon_edit_travelers)
-        Me.Fea_edit_travelers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Fea_edit_travelers.Location = New System.Drawing.Point(513, 121)
-        Me.Fea_edit_travelers.Name = "Fea_edit_travelers"
-        Me.Fea_edit_travelers.Size = New System.Drawing.Size(60, 60)
-        Me.Fea_edit_travelers.TabIndex = 8
-        '
-        'Icon_edit_travelers
-        '
-        Me.Icon_edit_travelers.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_edit_travelers.BackgroundImage = CType(resources.GetObject("Icon_edit_travelers.BackgroundImage"), System.Drawing.Image)
-        Me.Icon_edit_travelers.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Icon_edit_travelers.Enabled = False
-        Me.Icon_edit_travelers.Location = New System.Drawing.Point(7, 3)
-        Me.Icon_edit_travelers.Name = "Icon_edit_travelers"
-        Me.Icon_edit_travelers.Size = New System.Drawing.Size(46, 54)
-        Me.Icon_edit_travelers.TabIndex = 0
-        Me.Icon_edit_travelers.TabStop = False
         '
         'Check_resetstpspp
         '
@@ -3819,6 +3861,7 @@ Partial Class TL_SaveEditor
         'Icon_resetstpspp
         '
         Me.Icon_resetstpspp.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_resetstpspp.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_stpspp
         Me.Icon_resetstpspp.Location = New System.Drawing.Point(94, 192)
         Me.Icon_resetstpspp.Name = "Icon_resetstpspp"
         Me.Icon_resetstpspp.Size = New System.Drawing.Size(32, 25)
@@ -3847,6 +3890,7 @@ Partial Class TL_SaveEditor
         'Icon_timetravel
         '
         Me.Icon_timetravel.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_timetravel.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Time_travel
         Me.Icon_timetravel.Location = New System.Drawing.Point(101, 143)
         Me.Icon_timetravel.Name = "Icon_timetravel"
         Me.Icon_timetravel.Size = New System.Drawing.Size(25, 25)
@@ -3857,7 +3901,8 @@ Partial Class TL_SaveEditor
         'Panel_repairsave
         '
         Me.Panel_repairsave.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
-        Me.Panel_repairsave.Controls.Add(Me.PictureBox162)
+        Me.Panel_repairsave.Controls.Add(Me.Icon_header)
+        Me.Panel_repairsave.Controls.Add(Me.AdvH_header)
         Me.Panel_repairsave.Controls.Add(Me.Title_header)
         Me.Panel_repairsave.Controls.Add(Me.Text_header)
         Me.Panel_repairsave.Location = New System.Drawing.Point(152, 77)
@@ -3866,17 +3911,30 @@ Partial Class TL_SaveEditor
         Me.Panel_repairsave.TabIndex = 93
         Me.Panel_repairsave.Visible = False
         '
-        'PictureBox162
+        'Icon_header
         '
-        Me.PictureBox162.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox162.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox162.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.PictureBox162.Location = New System.Drawing.Point(471, 59)
-        Me.PictureBox162.Name = "PictureBox162"
-        Me.PictureBox162.Size = New System.Drawing.Size(23, 22)
-        Me.PictureBox162.TabIndex = 195
-        Me.PictureBox162.TabStop = False
-        Me.PictureBox162.Visible = False
+        Me.Icon_header.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_header.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_header.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_fixheader
+        Me.Icon_header.Location = New System.Drawing.Point(155, 48)
+        Me.Icon_header.Name = "Icon_header"
+        Me.Icon_header.Size = New System.Drawing.Size(46, 46)
+        Me.Icon_header.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_header.TabIndex = 196
+        Me.Icon_header.TabStop = False
+        Me.Icon_header.Visible = False
+        '
+        'AdvH_header
+        '
+        Me.AdvH_header.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_header.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_header.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_header.Location = New System.Drawing.Point(471, 59)
+        Me.AdvH_header.Name = "AdvH_header"
+        Me.AdvH_header.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_header.TabIndex = 195
+        Me.AdvH_header.TabStop = False
+        Me.AdvH_header.Visible = False
         '
         'Title_header
         '
@@ -3903,11 +3961,11 @@ Partial Class TL_SaveEditor
         Me.Panel_manual.BackgroundImage = CType(resources.GetObject("Panel_manual.BackgroundImage"), System.Drawing.Image)
         Me.Panel_manual.Controls.Add(Me.Info_image)
         Me.Panel_manual.Controls.Add(Me.Panel5)
-        Me.Panel_manual.Controls.Add(Me.Panel_citratomo)
-        Me.Panel_manual.Controls.Add(Me.Panel_restoresave)
         Me.Panel_manual.Controls.Add(Me.Panel_restoresave_1)
         Me.Panel_manual.Controls.Add(Me.Panel_extractsave_1)
         Me.Panel_manual.Controls.Add(Me.Panel_extractsave)
+        Me.Panel_manual.Controls.Add(Me.Panel_citratomo)
+        Me.Panel_manual.Controls.Add(Me.Panel_restoresave)
         Me.Panel_manual.Location = New System.Drawing.Point(152, 77)
         Me.Panel_manual.Name = "Panel_manual"
         Me.Panel_manual.Size = New System.Drawing.Size(676, 540)
@@ -4003,234 +4061,6 @@ Partial Class TL_SaveEditor
         Me.Text_extractsave.Text = "Extract your save file (with JK's save manager [2018 version])"
         Me.Text_extractsave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Panel_citratomo
-        '
-        Me.Panel_citratomo.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_citratomo.BackgroundImage = CType(resources.GetObject("Panel_citratomo.BackgroundImage"), System.Drawing.Image)
-        Me.Panel_citratomo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_citratomo.Controls.Add(Me.CheckBox21)
-        Me.Panel_citratomo.Controls.Add(Me.Info_citratomo_2)
-        Me.Panel_citratomo.Controls.Add(Me.CheckBox28)
-        Me.Panel_citratomo.Controls.Add(Me.CheckBox29)
-        Me.Panel_citratomo.Controls.Add(Me.CheckBox30)
-        Me.Panel_citratomo.Location = New System.Drawing.Point(191, 12)
-        Me.Panel_citratomo.Name = "Panel_citratomo"
-        Me.Panel_citratomo.Size = New System.Drawing.Size(475, 516)
-        Me.Panel_citratomo.TabIndex = 16
-        Me.Panel_citratomo.Visible = False
-        '
-        'CheckBox21
-        '
-        Me.CheckBox21.AutoSize = True
-        Me.CheckBox21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox21.Location = New System.Drawing.Point(26, 9)
-        Me.CheckBox21.Name = "CheckBox21"
-        Me.CheckBox21.Size = New System.Drawing.Size(445, 17)
-        Me.CheckBox21.TabIndex = 58
-        Me.CheckBox21.Text = "In Citra Emulator : Make sure you have launch your Tomodachi Life game one time b" &
-    "efore"
-        Me.CheckBox21.UseVisualStyleBackColor = True
-        '
-        'Info_citratomo_2
-        '
-        Me.Info_citratomo_2.AutoSize = True
-        Me.Info_citratomo_2.BackColor = System.Drawing.Color.Transparent
-        Me.Info_citratomo_2.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_citratomo_2.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Info_citratomo_2.ForeColor = System.Drawing.Color.Blue
-        Me.Info_citratomo_2.Location = New System.Drawing.Point(6, 32)
-        Me.Info_citratomo_2.Name = "Info_citratomo_2"
-        Me.Info_citratomo_2.Size = New System.Drawing.Size(14, 20)
-        Me.Info_citratomo_2.TabIndex = 50
-        Me.Info_citratomo_2.Text = "i"
-        '
-        'CheckBox28
-        '
-        Me.CheckBox28.AutoSize = True
-        Me.CheckBox28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox28.Location = New System.Drawing.Point(26, 78)
-        Me.CheckBox28.Name = "CheckBox28"
-        Me.CheckBox28.Size = New System.Drawing.Size(362, 17)
-        Me.CheckBox28.TabIndex = 2
-        Me.CheckBox28.Text = "To restore edited save file, copy and past it in previous save file location"
-        Me.CheckBox28.UseVisualStyleBackColor = True
-        '
-        'CheckBox29
-        '
-        Me.CheckBox29.AutoSize = True
-        Me.CheckBox29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox29.Location = New System.Drawing.Point(26, 55)
-        Me.CheckBox29.Name = "CheckBox29"
-        Me.CheckBox29.Size = New System.Drawing.Size(270, 17)
-        Me.CheckBox29.TabIndex = 1
-        Me.CheckBox29.Text = "Copy and past this save file in other location to edit it"
-        Me.CheckBox29.UseVisualStyleBackColor = True
-        '
-        'CheckBox30
-        '
-        Me.CheckBox30.AutoSize = True
-        Me.CheckBox30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox30.Location = New System.Drawing.Point(26, 32)
-        Me.CheckBox30.Name = "CheckBox30"
-        Me.CheckBox30.Size = New System.Drawing.Size(395, 17)
-        Me.CheckBox30.TabIndex = 0
-        Me.CheckBox30.Text = "Click right on your Tomodachi Life game and click ""Open Save Data Location"""
-        Me.CheckBox30.UseVisualStyleBackColor = True
-        '
-        'Panel_restoresave
-        '
-        Me.Panel_restoresave.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_restoresave.BackgroundImage = CType(resources.GetObject("Panel_restoresave.BackgroundImage"), System.Drawing.Image)
-        Me.Panel_restoresave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_restoresave.Controls.Add(Me.CheckBox13)
-        Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_5)
-        Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_4)
-        Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_3)
-        Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_2)
-        Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_1)
-        Me.Panel_restoresave.Controls.Add(Me.CheckBox8)
-        Me.Panel_restoresave.Controls.Add(Me.CheckBox9)
-        Me.Panel_restoresave.Controls.Add(Me.CheckBox10)
-        Me.Panel_restoresave.Controls.Add(Me.CheckBox11)
-        Me.Panel_restoresave.Controls.Add(Me.CheckBox12)
-        Me.Panel_restoresave.Location = New System.Drawing.Point(191, 12)
-        Me.Panel_restoresave.Name = "Panel_restoresave"
-        Me.Panel_restoresave.Size = New System.Drawing.Size(475, 516)
-        Me.Panel_restoresave.TabIndex = 13
-        Me.Panel_restoresave.Visible = False
-        '
-        'CheckBox13
-        '
-        Me.CheckBox13.AutoSize = True
-        Me.CheckBox13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox13.Location = New System.Drawing.Point(26, 9)
-        Me.CheckBox13.Name = "CheckBox13"
-        Me.CheckBox13.Size = New System.Drawing.Size(328, 30)
-        Me.CheckBox13.TabIndex = 58
-        Me.CheckBox13.Text = "Make sure you have your edited save file here on your SD card :" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "JKSV\Saves\Tomod" &
-    "achi Life\*your folder name\savedataArc.txt"
-        Me.CheckBox13.UseVisualStyleBackColor = True
-        '
-        'Info_restoresave_5
-        '
-        Me.Info_restoresave_5.AutoSize = True
-        Me.Info_restoresave_5.BackColor = System.Drawing.Color.Transparent
-        Me.Info_restoresave_5.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_restoresave_5.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Info_restoresave_5.ForeColor = System.Drawing.Color.Blue
-        Me.Info_restoresave_5.Location = New System.Drawing.Point(6, 141)
-        Me.Info_restoresave_5.Name = "Info_restoresave_5"
-        Me.Info_restoresave_5.Size = New System.Drawing.Size(14, 20)
-        Me.Info_restoresave_5.TabIndex = 54
-        Me.Info_restoresave_5.Text = "i"
-        '
-        'Info_restoresave_4
-        '
-        Me.Info_restoresave_4.AutoSize = True
-        Me.Info_restoresave_4.BackColor = System.Drawing.Color.Transparent
-        Me.Info_restoresave_4.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_restoresave_4.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Info_restoresave_4.ForeColor = System.Drawing.Color.Blue
-        Me.Info_restoresave_4.Location = New System.Drawing.Point(6, 112)
-        Me.Info_restoresave_4.Name = "Info_restoresave_4"
-        Me.Info_restoresave_4.Size = New System.Drawing.Size(14, 20)
-        Me.Info_restoresave_4.TabIndex = 53
-        Me.Info_restoresave_4.Text = "i"
-        '
-        'Info_restoresave_3
-        '
-        Me.Info_restoresave_3.AutoSize = True
-        Me.Info_restoresave_3.BackColor = System.Drawing.Color.Transparent
-        Me.Info_restoresave_3.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_restoresave_3.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Info_restoresave_3.ForeColor = System.Drawing.Color.Blue
-        Me.Info_restoresave_3.Location = New System.Drawing.Point(6, 89)
-        Me.Info_restoresave_3.Name = "Info_restoresave_3"
-        Me.Info_restoresave_3.Size = New System.Drawing.Size(14, 20)
-        Me.Info_restoresave_3.TabIndex = 52
-        Me.Info_restoresave_3.Text = "i"
-        '
-        'Info_restoresave_2
-        '
-        Me.Info_restoresave_2.AutoSize = True
-        Me.Info_restoresave_2.BackColor = System.Drawing.Color.Transparent
-        Me.Info_restoresave_2.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_restoresave_2.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Info_restoresave_2.ForeColor = System.Drawing.Color.Blue
-        Me.Info_restoresave_2.Location = New System.Drawing.Point(6, 66)
-        Me.Info_restoresave_2.Name = "Info_restoresave_2"
-        Me.Info_restoresave_2.Size = New System.Drawing.Size(14, 20)
-        Me.Info_restoresave_2.TabIndex = 51
-        Me.Info_restoresave_2.Text = "i"
-        '
-        'Info_restoresave_1
-        '
-        Me.Info_restoresave_1.AutoSize = True
-        Me.Info_restoresave_1.BackColor = System.Drawing.Color.Transparent
-        Me.Info_restoresave_1.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Info_restoresave_1.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Info_restoresave_1.ForeColor = System.Drawing.Color.Blue
-        Me.Info_restoresave_1.Location = New System.Drawing.Point(6, 43)
-        Me.Info_restoresave_1.Name = "Info_restoresave_1"
-        Me.Info_restoresave_1.Size = New System.Drawing.Size(14, 20)
-        Me.Info_restoresave_1.TabIndex = 50
-        Me.Info_restoresave_1.Text = "i"
-        '
-        'CheckBox8
-        '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox8.Location = New System.Drawing.Point(26, 136)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(155, 30)
-        Me.CheckBox8.TabIndex = 4
-        Me.CheckBox8.Text = "Select your folder" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Press Y and confirme with A" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.CheckBox8.UseVisualStyleBackColor = True
-        '
-        'CheckBox9
-        '
-        Me.CheckBox9.AutoSize = True
-        Me.CheckBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox9.Location = New System.Drawing.Point(26, 113)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(117, 17)
-        Me.CheckBox9.TabIndex = 3
-        Me.CheckBox9.Text = "Select ""Save Data"""
-        Me.CheckBox9.UseVisualStyleBackColor = True
-        '
-        'CheckBox10
-        '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox10.Location = New System.Drawing.Point(26, 90)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(181, 17)
-        Me.CheckBox10.TabIndex = 2
-        Me.CheckBox10.Text = "Select your Tomodachi Life game"
-        Me.CheckBox10.UseVisualStyleBackColor = True
-        '
-        'CheckBox11
-        '
-        Me.CheckBox11.AutoSize = True
-        Me.CheckBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox11.Location = New System.Drawing.Point(26, 67)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(91, 17)
-        Me.CheckBox11.TabIndex = 1
-        Me.CheckBox11.Text = "Select ""Titles"""
-        Me.CheckBox11.UseVisualStyleBackColor = True
-        '
-        'CheckBox12
-        '
-        Me.CheckBox12.AutoSize = True
-        Me.CheckBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox12.Location = New System.Drawing.Point(26, 44)
-        Me.CheckBox12.Name = "CheckBox12"
-        Me.CheckBox12.Size = New System.Drawing.Size(206, 17)
-        Me.CheckBox12.TabIndex = 0
-        Me.CheckBox12.Text = "To your 3ds, launch JK's Save Manger"
-        Me.CheckBox12.UseVisualStyleBackColor = True
-        '
         'Panel_restoresave_1
         '
         Me.Panel_restoresave_1.BackColor = System.Drawing.Color.Transparent
@@ -4255,7 +4085,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox16.AutoSize = True
         Me.CheckBox16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox16.Location = New System.Drawing.Point(26, 9)
+        Me.CheckBox16.Location = New System.Drawing.Point(4, 45)
         Me.CheckBox16.Name = "CheckBox16"
         Me.CheckBox16.Size = New System.Drawing.Size(467, 30)
         Me.CheckBox16.TabIndex = 57
@@ -4270,7 +4100,7 @@ Partial Class TL_SaveEditor
         Me.Info_restoresave_1_4.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_restoresave_1_4.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_restoresave_1_4.ForeColor = System.Drawing.Color.Blue
-        Me.Info_restoresave_1_4.Location = New System.Drawing.Point(6, 123)
+        Me.Info_restoresave_1_4.Location = New System.Drawing.Point(6, 159)
         Me.Info_restoresave_1_4.Name = "Info_restoresave_1_4"
         Me.Info_restoresave_1_4.Size = New System.Drawing.Size(14, 20)
         Me.Info_restoresave_1_4.TabIndex = 53
@@ -4283,7 +4113,7 @@ Partial Class TL_SaveEditor
         Me.Info_restoresave_1_3.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_restoresave_1_3.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_restoresave_1_3.ForeColor = System.Drawing.Color.Blue
-        Me.Info_restoresave_1_3.Location = New System.Drawing.Point(6, 93)
+        Me.Info_restoresave_1_3.Location = New System.Drawing.Point(6, 129)
         Me.Info_restoresave_1_3.Name = "Info_restoresave_1_3"
         Me.Info_restoresave_1_3.Size = New System.Drawing.Size(14, 20)
         Me.Info_restoresave_1_3.TabIndex = 52
@@ -4296,7 +4126,7 @@ Partial Class TL_SaveEditor
         Me.Info_restoresave_1_2.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_restoresave_1_2.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_restoresave_1_2.ForeColor = System.Drawing.Color.Blue
-        Me.Info_restoresave_1_2.Location = New System.Drawing.Point(6, 69)
+        Me.Info_restoresave_1_2.Location = New System.Drawing.Point(6, 105)
         Me.Info_restoresave_1_2.Name = "Info_restoresave_1_2"
         Me.Info_restoresave_1_2.Size = New System.Drawing.Size(14, 20)
         Me.Info_restoresave_1_2.TabIndex = 51
@@ -4309,7 +4139,7 @@ Partial Class TL_SaveEditor
         Me.Info_restoresave_1_1.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_restoresave_1_1.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_restoresave_1_1.ForeColor = System.Drawing.Color.Blue
-        Me.Info_restoresave_1_1.Location = New System.Drawing.Point(6, 45)
+        Me.Info_restoresave_1_1.Location = New System.Drawing.Point(6, 81)
         Me.Info_restoresave_1_1.Name = "Info_restoresave_1_1"
         Me.Info_restoresave_1_1.Size = New System.Drawing.Size(14, 20)
         Me.Info_restoresave_1_1.TabIndex = 50
@@ -4319,7 +4149,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox22.AutoSize = True
         Me.CheckBox22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox22.Location = New System.Drawing.Point(26, 118)
+        Me.CheckBox22.Location = New System.Drawing.Point(26, 154)
         Me.CheckBox22.Name = "CheckBox22"
         Me.CheckBox22.Size = New System.Drawing.Size(269, 30)
         Me.CheckBox22.TabIndex = 3
@@ -4330,7 +4160,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox23.AutoSize = True
         Me.CheckBox23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox23.Location = New System.Drawing.Point(26, 94)
+        Me.CheckBox23.Location = New System.Drawing.Point(26, 130)
         Me.CheckBox23.Name = "CheckBox23"
         Me.CheckBox23.Size = New System.Drawing.Size(349, 17)
         Me.CheckBox23.TabIndex = 2
@@ -4341,7 +4171,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox24.AutoSize = True
         Me.CheckBox24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox24.Location = New System.Drawing.Point(26, 70)
+        Me.CheckBox24.Location = New System.Drawing.Point(26, 106)
         Me.CheckBox24.Name = "CheckBox24"
         Me.CheckBox24.Size = New System.Drawing.Size(249, 17)
         Me.CheckBox24.TabIndex = 1
@@ -4352,7 +4182,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox25.AutoSize = True
         Me.CheckBox25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox25.Location = New System.Drawing.Point(26, 46)
+        Me.CheckBox25.Location = New System.Drawing.Point(26, 82)
         Me.CheckBox25.Name = "CheckBox25"
         Me.CheckBox25.Size = New System.Drawing.Size(174, 17)
         Me.CheckBox25.TabIndex = 0
@@ -4385,7 +4215,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox14.AutoSize = True
         Me.CheckBox14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox14.Location = New System.Drawing.Point(26, 138)
+        Me.CheckBox14.Location = New System.Drawing.Point(4, 166)
         Me.CheckBox14.Name = "CheckBox14"
         Me.CheckBox14.Size = New System.Drawing.Size(467, 30)
         Me.CheckBox14.TabIndex = 57
@@ -4400,7 +4230,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_1_5.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_1_5.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_1_5.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_1_5.Location = New System.Drawing.Point(6, 114)
+        Me.Info_extractsave_1_5.Location = New System.Drawing.Point(6, 142)
         Me.Info_extractsave_1_5.Name = "Info_extractsave_1_5"
         Me.Info_extractsave_1_5.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_1_5.TabIndex = 56
@@ -4410,7 +4240,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox15.AutoSize = True
         Me.CheckBox15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox15.Location = New System.Drawing.Point(26, 115)
+        Me.CheckBox15.Location = New System.Drawing.Point(26, 143)
         Me.CheckBox15.Name = "CheckBox15"
         Me.CheckBox15.Size = New System.Drawing.Size(175, 17)
         Me.CheckBox15.TabIndex = 55
@@ -4424,7 +4254,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_1_4.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_1_4.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_1_4.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_1_4.Location = New System.Drawing.Point(6, 76)
+        Me.Info_extractsave_1_4.Location = New System.Drawing.Point(6, 104)
         Me.Info_extractsave_1_4.Name = "Info_extractsave_1_4"
         Me.Info_extractsave_1_4.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_1_4.TabIndex = 53
@@ -4437,7 +4267,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_1_3.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_1_3.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_1_3.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_1_3.Location = New System.Drawing.Point(6, 53)
+        Me.Info_extractsave_1_3.Location = New System.Drawing.Point(6, 81)
         Me.Info_extractsave_1_3.Name = "Info_extractsave_1_3"
         Me.Info_extractsave_1_3.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_1_3.TabIndex = 52
@@ -4450,7 +4280,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_1_2.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_1_2.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_1_2.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_1_2.Location = New System.Drawing.Point(6, 30)
+        Me.Info_extractsave_1_2.Location = New System.Drawing.Point(6, 58)
         Me.Info_extractsave_1_2.Name = "Info_extractsave_1_2"
         Me.Info_extractsave_1_2.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_1_2.TabIndex = 51
@@ -4463,7 +4293,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_1_1.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_1_1.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_1_1.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_1_1.Location = New System.Drawing.Point(6, 7)
+        Me.Info_extractsave_1_1.Location = New System.Drawing.Point(6, 35)
         Me.Info_extractsave_1_1.Name = "Info_extractsave_1_1"
         Me.Info_extractsave_1_1.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_1_1.TabIndex = 50
@@ -4473,7 +4303,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox17.AutoSize = True
         Me.CheckBox17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox17.Location = New System.Drawing.Point(26, 77)
+        Me.CheckBox17.Location = New System.Drawing.Point(26, 105)
         Me.CheckBox17.Name = "CheckBox17"
         Me.CheckBox17.Size = New System.Drawing.Size(395, 30)
         Me.CheckBox17.TabIndex = 3
@@ -4485,7 +4315,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox18.AutoSize = True
         Me.CheckBox18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox18.Location = New System.Drawing.Point(26, 54)
+        Me.CheckBox18.Location = New System.Drawing.Point(26, 82)
         Me.CheckBox18.Name = "CheckBox18"
         Me.CheckBox18.Size = New System.Drawing.Size(349, 17)
         Me.CheckBox18.TabIndex = 2
@@ -4496,7 +4326,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox19.AutoSize = True
         Me.CheckBox19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox19.Location = New System.Drawing.Point(26, 31)
+        Me.CheckBox19.Location = New System.Drawing.Point(26, 59)
         Me.CheckBox19.Name = "CheckBox19"
         Me.CheckBox19.Size = New System.Drawing.Size(249, 17)
         Me.CheckBox19.TabIndex = 1
@@ -4507,7 +4337,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox20.AutoSize = True
         Me.CheckBox20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox20.Location = New System.Drawing.Point(26, 8)
+        Me.CheckBox20.Location = New System.Drawing.Point(26, 36)
         Me.CheckBox20.Name = "CheckBox20"
         Me.CheckBox20.Size = New System.Drawing.Size(174, 17)
         Me.CheckBox20.TabIndex = 0
@@ -4542,7 +4372,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox7.AutoSize = True
         Me.CheckBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox7.Location = New System.Drawing.Point(26, 159)
+        Me.CheckBox7.Location = New System.Drawing.Point(26, 183)
         Me.CheckBox7.Name = "CheckBox7"
         Me.CheckBox7.Size = New System.Drawing.Size(328, 30)
         Me.CheckBox7.TabIndex = 57
@@ -4557,7 +4387,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_6.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_6.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_6.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_6.Location = New System.Drawing.Point(6, 135)
+        Me.Info_extractsave_6.Location = New System.Drawing.Point(6, 159)
         Me.Info_extractsave_6.Name = "Info_extractsave_6"
         Me.Info_extractsave_6.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_6.TabIndex = 56
@@ -4567,7 +4397,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox6.AutoSize = True
         Me.CheckBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox6.Location = New System.Drawing.Point(26, 136)
+        Me.CheckBox6.Location = New System.Drawing.Point(26, 160)
         Me.CheckBox6.Name = "CheckBox6"
         Me.CheckBox6.Size = New System.Drawing.Size(175, 17)
         Me.CheckBox6.TabIndex = 55
@@ -4581,7 +4411,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_5.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_5.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_5.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_5.Location = New System.Drawing.Point(6, 105)
+        Me.Info_extractsave_5.Location = New System.Drawing.Point(6, 129)
         Me.Info_extractsave_5.Name = "Info_extractsave_5"
         Me.Info_extractsave_5.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_5.TabIndex = 54
@@ -4594,7 +4424,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_4.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_4.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_4.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_4.Location = New System.Drawing.Point(6, 76)
+        Me.Info_extractsave_4.Location = New System.Drawing.Point(6, 100)
         Me.Info_extractsave_4.Name = "Info_extractsave_4"
         Me.Info_extractsave_4.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_4.TabIndex = 53
@@ -4607,7 +4437,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_3.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_3.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_3.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_3.Location = New System.Drawing.Point(6, 53)
+        Me.Info_extractsave_3.Location = New System.Drawing.Point(6, 77)
         Me.Info_extractsave_3.Name = "Info_extractsave_3"
         Me.Info_extractsave_3.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_3.TabIndex = 52
@@ -4620,7 +4450,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_2.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_2.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_2.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_2.Location = New System.Drawing.Point(6, 30)
+        Me.Info_extractsave_2.Location = New System.Drawing.Point(6, 54)
         Me.Info_extractsave_2.Name = "Info_extractsave_2"
         Me.Info_extractsave_2.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_2.TabIndex = 51
@@ -4633,7 +4463,7 @@ Partial Class TL_SaveEditor
         Me.Info_extractsave_1.Cursor = System.Windows.Forms.Cursors.Help
         Me.Info_extractsave_1.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Info_extractsave_1.ForeColor = System.Drawing.Color.Blue
-        Me.Info_extractsave_1.Location = New System.Drawing.Point(6, 7)
+        Me.Info_extractsave_1.Location = New System.Drawing.Point(6, 31)
         Me.Info_extractsave_1.Name = "Info_extractsave_1"
         Me.Info_extractsave_1.Size = New System.Drawing.Size(14, 20)
         Me.Info_extractsave_1.TabIndex = 50
@@ -4643,7 +4473,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox5.AutoSize = True
         Me.CheckBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox5.Location = New System.Drawing.Point(26, 100)
+        Me.CheckBox5.Location = New System.Drawing.Point(26, 124)
         Me.CheckBox5.Name = "CheckBox5"
         Me.CheckBox5.Size = New System.Drawing.Size(203, 30)
         Me.CheckBox5.TabIndex = 4
@@ -4654,7 +4484,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox4.AutoSize = True
         Me.CheckBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox4.Location = New System.Drawing.Point(26, 77)
+        Me.CheckBox4.Location = New System.Drawing.Point(26, 101)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(117, 17)
         Me.CheckBox4.TabIndex = 3
@@ -4665,7 +4495,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox3.Location = New System.Drawing.Point(26, 54)
+        Me.CheckBox3.Location = New System.Drawing.Point(26, 78)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(181, 17)
         Me.CheckBox3.TabIndex = 2
@@ -4676,7 +4506,7 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox2.Location = New System.Drawing.Point(26, 31)
+        Me.CheckBox2.Location = New System.Drawing.Point(26, 55)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(91, 17)
         Me.CheckBox2.TabIndex = 1
@@ -4687,12 +4517,240 @@ Partial Class TL_SaveEditor
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox1.Location = New System.Drawing.Point(26, 8)
+        Me.CheckBox1.Location = New System.Drawing.Point(26, 32)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(206, 17)
         Me.CheckBox1.TabIndex = 0
         Me.CheckBox1.Text = "To your 3ds, launch JK's Save Manger"
         Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Panel_citratomo
+        '
+        Me.Panel_citratomo.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_citratomo.BackgroundImage = CType(resources.GetObject("Panel_citratomo.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_citratomo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_citratomo.Controls.Add(Me.CheckBox21)
+        Me.Panel_citratomo.Controls.Add(Me.Info_citratomo_2)
+        Me.Panel_citratomo.Controls.Add(Me.CheckBox28)
+        Me.Panel_citratomo.Controls.Add(Me.CheckBox29)
+        Me.Panel_citratomo.Controls.Add(Me.CheckBox30)
+        Me.Panel_citratomo.Location = New System.Drawing.Point(191, 12)
+        Me.Panel_citratomo.Name = "Panel_citratomo"
+        Me.Panel_citratomo.Size = New System.Drawing.Size(475, 516)
+        Me.Panel_citratomo.TabIndex = 16
+        Me.Panel_citratomo.Visible = False
+        '
+        'CheckBox21
+        '
+        Me.CheckBox21.AutoSize = True
+        Me.CheckBox21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox21.Location = New System.Drawing.Point(26, 28)
+        Me.CheckBox21.Name = "CheckBox21"
+        Me.CheckBox21.Size = New System.Drawing.Size(445, 17)
+        Me.CheckBox21.TabIndex = 58
+        Me.CheckBox21.Text = "In Citra Emulator : Make sure you have launch your Tomodachi Life game one time b" &
+    "efore"
+        Me.CheckBox21.UseVisualStyleBackColor = True
+        '
+        'Info_citratomo_2
+        '
+        Me.Info_citratomo_2.AutoSize = True
+        Me.Info_citratomo_2.BackColor = System.Drawing.Color.Transparent
+        Me.Info_citratomo_2.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Info_citratomo_2.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_citratomo_2.ForeColor = System.Drawing.Color.Blue
+        Me.Info_citratomo_2.Location = New System.Drawing.Point(6, 51)
+        Me.Info_citratomo_2.Name = "Info_citratomo_2"
+        Me.Info_citratomo_2.Size = New System.Drawing.Size(14, 20)
+        Me.Info_citratomo_2.TabIndex = 50
+        Me.Info_citratomo_2.Text = "i"
+        '
+        'CheckBox28
+        '
+        Me.CheckBox28.AutoSize = True
+        Me.CheckBox28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox28.Location = New System.Drawing.Point(26, 97)
+        Me.CheckBox28.Name = "CheckBox28"
+        Me.CheckBox28.Size = New System.Drawing.Size(362, 17)
+        Me.CheckBox28.TabIndex = 2
+        Me.CheckBox28.Text = "To restore edited save file, copy and past it in previous save file location"
+        Me.CheckBox28.UseVisualStyleBackColor = True
+        '
+        'CheckBox29
+        '
+        Me.CheckBox29.AutoSize = True
+        Me.CheckBox29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox29.Location = New System.Drawing.Point(26, 74)
+        Me.CheckBox29.Name = "CheckBox29"
+        Me.CheckBox29.Size = New System.Drawing.Size(270, 17)
+        Me.CheckBox29.TabIndex = 1
+        Me.CheckBox29.Text = "Copy and past this save file in other location to edit it"
+        Me.CheckBox29.UseVisualStyleBackColor = True
+        '
+        'CheckBox30
+        '
+        Me.CheckBox30.AutoSize = True
+        Me.CheckBox30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox30.Location = New System.Drawing.Point(26, 51)
+        Me.CheckBox30.Name = "CheckBox30"
+        Me.CheckBox30.Size = New System.Drawing.Size(395, 17)
+        Me.CheckBox30.TabIndex = 0
+        Me.CheckBox30.Text = "Click right on your Tomodachi Life game and click ""Open Save Data Location"""
+        Me.CheckBox30.UseVisualStyleBackColor = True
+        '
+        'Panel_restoresave
+        '
+        Me.Panel_restoresave.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_restoresave.BackgroundImage = CType(resources.GetObject("Panel_restoresave.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_restoresave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_restoresave.Controls.Add(Me.CheckBox13)
+        Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_5)
+        Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_4)
+        Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_3)
+        Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_2)
+        Me.Panel_restoresave.Controls.Add(Me.Info_restoresave_1)
+        Me.Panel_restoresave.Controls.Add(Me.CheckBox8)
+        Me.Panel_restoresave.Controls.Add(Me.CheckBox9)
+        Me.Panel_restoresave.Controls.Add(Me.CheckBox10)
+        Me.Panel_restoresave.Controls.Add(Me.CheckBox11)
+        Me.Panel_restoresave.Controls.Add(Me.CheckBox12)
+        Me.Panel_restoresave.Location = New System.Drawing.Point(191, 12)
+        Me.Panel_restoresave.Name = "Panel_restoresave"
+        Me.Panel_restoresave.Size = New System.Drawing.Size(475, 516)
+        Me.Panel_restoresave.TabIndex = 13
+        Me.Panel_restoresave.Visible = False
+        '
+        'CheckBox13
+        '
+        Me.CheckBox13.AutoSize = True
+        Me.CheckBox13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox13.Location = New System.Drawing.Point(26, 24)
+        Me.CheckBox13.Name = "CheckBox13"
+        Me.CheckBox13.Size = New System.Drawing.Size(328, 30)
+        Me.CheckBox13.TabIndex = 58
+        Me.CheckBox13.Text = "Make sure you have your edited save file here on your SD card :" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "JKSV\Saves\Tomod" &
+    "achi Life\*your folder name\savedataArc.txt"
+        Me.CheckBox13.UseVisualStyleBackColor = True
+        '
+        'Info_restoresave_5
+        '
+        Me.Info_restoresave_5.AutoSize = True
+        Me.Info_restoresave_5.BackColor = System.Drawing.Color.Transparent
+        Me.Info_restoresave_5.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Info_restoresave_5.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_restoresave_5.ForeColor = System.Drawing.Color.Blue
+        Me.Info_restoresave_5.Location = New System.Drawing.Point(6, 156)
+        Me.Info_restoresave_5.Name = "Info_restoresave_5"
+        Me.Info_restoresave_5.Size = New System.Drawing.Size(14, 20)
+        Me.Info_restoresave_5.TabIndex = 54
+        Me.Info_restoresave_5.Text = "i"
+        '
+        'Info_restoresave_4
+        '
+        Me.Info_restoresave_4.AutoSize = True
+        Me.Info_restoresave_4.BackColor = System.Drawing.Color.Transparent
+        Me.Info_restoresave_4.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Info_restoresave_4.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_restoresave_4.ForeColor = System.Drawing.Color.Blue
+        Me.Info_restoresave_4.Location = New System.Drawing.Point(6, 127)
+        Me.Info_restoresave_4.Name = "Info_restoresave_4"
+        Me.Info_restoresave_4.Size = New System.Drawing.Size(14, 20)
+        Me.Info_restoresave_4.TabIndex = 53
+        Me.Info_restoresave_4.Text = "i"
+        '
+        'Info_restoresave_3
+        '
+        Me.Info_restoresave_3.AutoSize = True
+        Me.Info_restoresave_3.BackColor = System.Drawing.Color.Transparent
+        Me.Info_restoresave_3.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Info_restoresave_3.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_restoresave_3.ForeColor = System.Drawing.Color.Blue
+        Me.Info_restoresave_3.Location = New System.Drawing.Point(6, 104)
+        Me.Info_restoresave_3.Name = "Info_restoresave_3"
+        Me.Info_restoresave_3.Size = New System.Drawing.Size(14, 20)
+        Me.Info_restoresave_3.TabIndex = 52
+        Me.Info_restoresave_3.Text = "i"
+        '
+        'Info_restoresave_2
+        '
+        Me.Info_restoresave_2.AutoSize = True
+        Me.Info_restoresave_2.BackColor = System.Drawing.Color.Transparent
+        Me.Info_restoresave_2.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Info_restoresave_2.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_restoresave_2.ForeColor = System.Drawing.Color.Blue
+        Me.Info_restoresave_2.Location = New System.Drawing.Point(6, 81)
+        Me.Info_restoresave_2.Name = "Info_restoresave_2"
+        Me.Info_restoresave_2.Size = New System.Drawing.Size(14, 20)
+        Me.Info_restoresave_2.TabIndex = 51
+        Me.Info_restoresave_2.Text = "i"
+        '
+        'Info_restoresave_1
+        '
+        Me.Info_restoresave_1.AutoSize = True
+        Me.Info_restoresave_1.BackColor = System.Drawing.Color.Transparent
+        Me.Info_restoresave_1.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Info_restoresave_1.Font = New System.Drawing.Font("Harlow Solid Italic", 12.0!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Info_restoresave_1.ForeColor = System.Drawing.Color.Blue
+        Me.Info_restoresave_1.Location = New System.Drawing.Point(6, 58)
+        Me.Info_restoresave_1.Name = "Info_restoresave_1"
+        Me.Info_restoresave_1.Size = New System.Drawing.Size(14, 20)
+        Me.Info_restoresave_1.TabIndex = 50
+        Me.Info_restoresave_1.Text = "i"
+        '
+        'CheckBox8
+        '
+        Me.CheckBox8.AutoSize = True
+        Me.CheckBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox8.Location = New System.Drawing.Point(26, 151)
+        Me.CheckBox8.Name = "CheckBox8"
+        Me.CheckBox8.Size = New System.Drawing.Size(155, 30)
+        Me.CheckBox8.TabIndex = 4
+        Me.CheckBox8.Text = "Select your folder" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Press Y and confirme with A" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.CheckBox8.UseVisualStyleBackColor = True
+        '
+        'CheckBox9
+        '
+        Me.CheckBox9.AutoSize = True
+        Me.CheckBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox9.Location = New System.Drawing.Point(26, 128)
+        Me.CheckBox9.Name = "CheckBox9"
+        Me.CheckBox9.Size = New System.Drawing.Size(117, 17)
+        Me.CheckBox9.TabIndex = 3
+        Me.CheckBox9.Text = "Select ""Save Data"""
+        Me.CheckBox9.UseVisualStyleBackColor = True
+        '
+        'CheckBox10
+        '
+        Me.CheckBox10.AutoSize = True
+        Me.CheckBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox10.Location = New System.Drawing.Point(26, 105)
+        Me.CheckBox10.Name = "CheckBox10"
+        Me.CheckBox10.Size = New System.Drawing.Size(181, 17)
+        Me.CheckBox10.TabIndex = 2
+        Me.CheckBox10.Text = "Select your Tomodachi Life game"
+        Me.CheckBox10.UseVisualStyleBackColor = True
+        '
+        'CheckBox11
+        '
+        Me.CheckBox11.AutoSize = True
+        Me.CheckBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox11.Location = New System.Drawing.Point(26, 82)
+        Me.CheckBox11.Name = "CheckBox11"
+        Me.CheckBox11.Size = New System.Drawing.Size(91, 17)
+        Me.CheckBox11.TabIndex = 1
+        Me.CheckBox11.Text = "Select ""Titles"""
+        Me.CheckBox11.UseVisualStyleBackColor = True
+        '
+        'CheckBox12
+        '
+        Me.CheckBox12.AutoSize = True
+        Me.CheckBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox12.Location = New System.Drawing.Point(26, 59)
+        Me.CheckBox12.Name = "CheckBox12"
+        Me.CheckBox12.Size = New System.Drawing.Size(206, 17)
+        Me.CheckBox12.TabIndex = 0
+        Me.CheckBox12.Text = "To your 3ds, launch JK's Save Manger"
+        Me.CheckBox12.UseVisualStyleBackColor = True
         '
         'Panel_miiedit
         '
@@ -4727,13 +4785,21 @@ Partial Class TL_SaveEditor
         Me.Panel_itemsedit.TabIndex = 97
         Me.Panel_itemsedit.Visible = False
         '
+        'Panel_concertedit
+        '
+        Me.Panel_concertedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_concertedit.Location = New System.Drawing.Point(152, 77)
+        Me.Panel_concertedit.Name = "Panel_concertedit"
+        Me.Panel_concertedit.Size = New System.Drawing.Size(676, 540)
+        Me.Panel_concertedit.TabIndex = 98
+        Me.Panel_concertedit.Visible = False
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
-        Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -4741,11 +4807,13 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
         Me.Controls.Add(Me.Panel_settings)
-        Me.Controls.Add(Me.Panel_extras)
-        Me.Controls.Add(Me.Panel_repairsave)
         Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_itemsedit)
+        Me.Controls.Add(Me.Panel_manual)
+        Me.Controls.Add(Me.Panel_concertedit)
+        Me.Controls.Add(Me.Panel_extras)
+        Me.Controls.Add(Me.Panel_repairsave)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -4795,6 +4863,12 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_settings, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Menu_icon_settings, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_panel.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Menu_concertedit.ResumeLayout(False)
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Menu_icon_concertedit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_description, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_done.ResumeLayout(False)
         Me.Panel_islandedit.ResumeLayout(False)
@@ -4966,9 +5040,7 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_MiitopiaSE, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_extras.ResumeLayout(False)
         Me.Panel_extras.PerformLayout()
-        CType(Me.AdvH_concertedit, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AdvH_travelersedit, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AdvH_resetmiirela, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AdvH_resetrelationship, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_resetitems, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_resetnewsflash, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_resetmiiapart, System.ComponentModel.ISupportInitialize).EndInit()
@@ -4977,30 +5049,27 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_resetrelationship, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_resetitems, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_resetnewsflash, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Fea_edit_concert.ResumeLayout(False)
-        CType(Me.Icon_edit_concert, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_resetmiiapart, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Fea_edit_travelers.ResumeLayout(False)
-        CType(Me.Icon_edit_travelers, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_resetstpspp, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_timetravel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_repairsave.ResumeLayout(False)
         Me.Panel_repairsave.PerformLayout()
-        CType(Me.PictureBox162, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_header, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AdvH_header, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_manual.ResumeLayout(False)
         Me.Panel_manual.PerformLayout()
         CType(Me.Info_image, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
-        Me.Panel_citratomo.ResumeLayout(False)
-        Me.Panel_citratomo.PerformLayout()
-        Me.Panel_restoresave.ResumeLayout(False)
-        Me.Panel_restoresave.PerformLayout()
         Me.Panel_restoresave_1.ResumeLayout(False)
         Me.Panel_restoresave_1.PerformLayout()
         Me.Panel_extractsave_1.ResumeLayout(False)
         Me.Panel_extractsave_1.PerformLayout()
         Me.Panel_extractsave.ResumeLayout(False)
         Me.Panel_extractsave.PerformLayout()
+        Me.Panel_citratomo.ResumeLayout(False)
+        Me.Panel_citratomo.PerformLayout()
+        Me.Panel_restoresave.ResumeLayout(False)
+        Me.Panel_restoresave.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -5226,9 +5295,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents Icon_3dsSEL As PictureBox
     Friend WithEvents Icon_MiitopiaSE As PictureBox
     Friend WithEvents Panel_extras As Panel
-    Friend WithEvents AdvH_concertedit As PictureBox
-    Friend WithEvents AdvH_travelersedit As PictureBox
-    Friend WithEvents AdvH_resetmiirela As PictureBox
+    Friend WithEvents AdvH_resetrelationship As PictureBox
     Friend WithEvents AdvH_resetitems As PictureBox
     Friend WithEvents AdvH_resetnewsflash As PictureBox
     Friend WithEvents AdvH_resetmiiapart As PictureBox
@@ -5241,17 +5308,13 @@ Partial Class TL_SaveEditor
     Friend WithEvents Check_resetnewsflash As CheckBox
     Friend WithEvents Icon_resetnewsflash As PictureBox
     Friend WithEvents Check_resetmiiapart As CheckBox
-    Friend WithEvents Fea_edit_concert As Panel
-    Friend WithEvents Icon_edit_concert As PictureBox
     Friend WithEvents Icon_resetmiiapart As PictureBox
-    Friend WithEvents Fea_edit_travelers As Panel
-    Friend WithEvents Icon_edit_travelers As PictureBox
     Friend WithEvents Check_resetstpspp As CheckBox
     Friend WithEvents Icon_resetstpspp As PictureBox
     Friend WithEvents Check_timetravel As CheckBox
     Friend WithEvents Icon_timetravel As PictureBox
     Friend WithEvents Panel_repairsave As Panel
-    Friend WithEvents PictureBox162 As PictureBox
+    Friend WithEvents AdvH_header As PictureBox
     Friend WithEvents Title_header As Label
     Friend WithEvents Text_header As TextBox
     Friend WithEvents Panel_manual As Panel
@@ -5349,4 +5412,15 @@ Partial Class TL_SaveEditor
     Friend WithEvents Icon_TLSE_gbt As PictureBox
     Friend WithEvents Icon_TLSE_git As PictureBox
     Friend WithEvents Panel_itemsedit As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Menu_concertedit As Panel
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Menu_text_concertedit As Label
+    Friend WithEvents Menu_icon_concertedit As PictureBox
+    Friend WithEvents ImageList_menusave As ImageList
+    Friend WithEvents Panel_concertedit As Panel
+    Friend WithEvents Icon_header As PictureBox
 End Class

@@ -157,6 +157,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_fixheader.gif" />
+    <None Include="Resources\icon_menusave.png" />
+    <None Include="Resources\concert_edit.png" />
+    <None Include="Resources\reset_relationship.gif" />
+    <None Include="Resources\reset_items.gif" />
+    <None Include="Resources\reset_newsflash.gif" />
+    <None Include="Resources\reset_apartmii.gif" />
+    <None Include="Resources\reset_stpspp.gif" />
+    <None Include="Resources\Time_travel.gif" />
     <None Include="Resources\JKSM_tomodachi.png" />
     <None Include="Resources\JKSM_titles.png" />
     <None Include="Resources\JKSM_savedata.png" />

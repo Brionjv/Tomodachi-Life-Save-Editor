@@ -227,6 +227,11 @@ Tomodachi-Life-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.concert_edit">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.concn">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -357,6 +362,11 @@ Tomodachi-Life-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_fixheader">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_gbtpage">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -373,6 +383,11 @@ Tomodachi-Life-Save-Editor
 </summary>
 </member>
 <member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menusave">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -827,6 +842,31 @@ Tomodachi-Life-Save-Editor
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_apartmii">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_items">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_newsflash">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_relationship">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_stpspp">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.settings">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -888,6 +928,11 @@ Tomodachi-Life-Save-Editor
 </summary>
 </member>
 <member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.testv">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Tomodachi_Life_Save_Editor.My.Resources.Resources.Time_travel">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>

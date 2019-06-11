@@ -58,6 +58,9 @@ Public Class TL_SaveEditor
     Dim parc As String
     Dim tour As String
     Dim part As String
+    Dim accessappartMii As String
+    Dim spaceappartMii As String
+    Dim accessrelationship As String
 
     'form setting
     Private Sub TL_SaveEditor_FormClosing(sender As Object, e As EventArgs) Handles MyBase.FormClosing
@@ -169,6 +172,12 @@ Public Class TL_SaveEditor
             Settings_settings.Text = "Settings"
             Settings_changelog.Text = "Changelog"
             Settings_credits.Text = "Credits"
+            Check_resetstpspp.Text = "Reset Tomodachi Life Streetpass / Spotpass"
+            Check_timetravel.Text = "Remove time travel penality"
+            Check_resetmiiapart.Text = "Reset Mii apartments"
+            Check_resetnewsflash.Text = "Reset News flash"
+            Check_resetitems.Text = "Reset all items"
+            Check_resetrelationship.Text = "Reset all Mii's relationship"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_menu_open.Text = "Ouvrir"
             Text_menu_save.Text = "Enregistrer"
@@ -205,6 +214,12 @@ Public Class TL_SaveEditor
             Settings_settings.Text = "Paramètres"
             Settings_changelog.Text = "Changelog"
             Settings_credits.Text = "Crédits"
+            Check_resetstpspp.Text = "Réinitialiser Streetpass / Spotpass de Tomodachi Life"
+            Check_timetravel.Text = "Retirer la pénalité de voyage dans le temps"
+            Check_resetmiiapart.Text = "Réinitialiser les appartements des Mii"
+            Check_resetnewsflash.Text = "Réinitialiser les Flash info"
+            Check_resetitems.Text = "Réinitialiser tout les objets"
+            Check_resetrelationship.Text = "Réinitialiser toutes les relations des Mii"
         End If
     End Sub
 
@@ -327,6 +342,8 @@ Public Class TL_SaveEditor
         Panel_miiedit.Visible = False
         Panel_repairsave.Visible = False
         Panel_manual.Visible = False
+        Panel_itemsedit.Visible = False
+        Panel_concertedit.Visible = False
     End Sub
 
     Private Sub Hideselectmenu()
@@ -460,6 +477,21 @@ Public Class TL_SaveEditor
     Private Sub Menu_text_itemsedit_MouseLeave(sender As Object, e As EventArgs) Handles Menu_itemsedit.MouseLeave, Menu_text_itemsedit.MouseLeave
         Menu_itemsedit.BackgroundImage = Nothing
     End Sub
+
+    Private Sub Menu_text_concertedit_Click(sender As Object, e As EventArgs) Handles Menu_concertedit.Click, Menu_text_concertedit.Click
+        hidepanels()
+        Hideselectmenu()
+        Panel_concertedit.Visible = True
+    End Sub
+
+    Private Sub Menu_text_concertedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Menu_concertedit.MouseMove, Menu_text_concertedit.MouseMove
+        Menu_concertedit.BackgroundImage = My.Resources.bg_menu_selected
+    End Sub
+
+    Private Sub Menu_text_concertedit_MouseLeave(sender As Object, e As EventArgs) Handles Menu_concertedit.MouseLeave, Menu_text_concertedit.MouseLeave
+        Menu_concertedit.BackgroundImage = Nothing
+    End Sub
+
     'end menu animation block
 
     'edit island animation block
@@ -1615,6 +1647,13 @@ Public Class TL_SaveEditor
             AdvH_lastdatesave.Visible = True
             Warning_islandname.Visible = False
             Warning_islandaddress.Visible = False
+            AdvH_timetravel.Visible = True
+            AdvH_resetstpspp.Visible = True
+            AdvH_resetmiiapart.Visible = True
+            AdvH_resetnewsflash.Visible = True
+            AdvH_resetitems.Visible = True
+            AdvH_resetrelationship.Visible = True
+            AdvH_header.Visible = True
         ElseIf Setting_Advhelp.Checked = False Then
             Panel_Advhelp.Visible = False
             AdvH_islandname.Visible = False
@@ -1638,6 +1677,13 @@ Public Class TL_SaveEditor
                 Warning_islandname.Visible = False
             End If
             Warning_islandaddress.Visible = True
+            AdvH_timetravel.Visible = False
+            AdvH_resetstpspp.Visible = False
+            AdvH_resetmiiapart.Visible = False
+            AdvH_resetnewsflash.Visible = False
+            AdvH_resetitems.Visible = False
+            AdvH_resetrelationship.Visible = False
+            AdvH_header.Visible = False
         End If
     End Sub
 
@@ -2860,6 +2906,10 @@ Public Class TL_SaveEditor
             Icon_part.Image = My.Resources.icon_issue
             Text_menu_open.BackColor = Color.Red
         End Try
+        Try
+            Checkheader()
+        Catch ex As Exception
+        End Try
         If Text_menu_open.BackColor = Color.Red Then
             Text_menu_save.Visible = False
             Text_menu_open.Enabled = False
@@ -3056,6 +3106,11 @@ Public Class TL_SaveEditor
 
     Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
         WritesavedataArc()
+        Checkheader()
+        If Text_header.Text <> "11000000" Then
+            hidepanels()
+            Panel_repairsave.Visible = True
+        End If
     End Sub
 
     Public Sub WritesavedataArc()
@@ -3612,6 +3667,60 @@ Public Class TL_SaveEditor
             End If
             TLSE_dialog.ShowDialog()
         End Try
+        Try
+            Removetimetravel()
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Remove time travel penality', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Retirer la pénalité de voyage dans le temps', veuillez signaler ce problème"
+            End If
+        End Try
+        Try
+            Resetstreetspotpass()
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Reset Tomodachi Life Streetpass / Spotpass', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Réinitialiser StreetPass / Spotpass de Tomodachi Life', veuillez signaler ce problème"
+            End If
+        End Try
+        Try
+            resetmiiapart()
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Reset Mii apartments', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Réinitialiser les appartements des Mii', veuillez signaler ce problème"
+            End If
+        End Try
+        Try
+            Resetnewsflash()
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Reset news flash', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Réinitialiser les infos Mii', veuillez signaler ce problème"
+            End If
+        End Try
+        Try
+            Resetallitems()
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Reset all items', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Réinitialiser tout les objets', veuillez signaler ce problème"
+            End If
+        End Try
+        Try
+            Resetallrela()
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Reset Mii relationship', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Réinitialiser les relations des Mii', veuillez signaler ce problème"
+            End If
+        End Try
         done()
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
             Text_done.Text = "File saved !"
@@ -3964,4 +4073,1532 @@ Public Class TL_SaveEditor
         Text_HtuTLSEold.BackColor = Color.Transparent
     End Sub
     'end animation manual block
+
+    'extras animation block
+    Private Sub Check_timetravel_SizeChanged(sender As Object, e As EventArgs) Handles Check_timetravel.SizeChanged
+        AdvH_timetravel.Location = New Point(Check_timetravel.Location.X + Check_timetravel.Width + 5, Check_timetravel.Location.Y + (Check_timetravel.Height / 2) - 10)
+    End Sub
+
+    Private Sub Check_resetstpspp_SizeChanged(sender As Object, e As EventArgs) Handles Check_resetstpspp.SizeChanged
+        AdvH_resetstpspp.Location = New Point(Check_resetstpspp.Location.X + Check_resetstpspp.Width + 5, Check_resetstpspp.Location.Y + (Check_resetstpspp.Height / 2) - 10)
+    End Sub
+
+    Private Sub Check_resetmiiapart_SizeChanged(sender As Object, e As EventArgs) Handles Check_resetmiiapart.SizeChanged
+        AdvH_resetmiiapart.Location = New Point(Check_resetmiiapart.Location.X + Check_resetmiiapart.Width + 5, Check_resetmiiapart.Location.Y + (Check_resetmiiapart.Height / 2) - 10)
+    End Sub
+
+    Private Sub Check_resetnewsflash_SizeChanged(sender As Object, e As EventArgs) Handles Check_resetnewsflash.SizeChanged
+        AdvH_resetnewsflash.Location = New Point(Check_resetnewsflash.Location.X + Check_resetnewsflash.Width + 5, Check_resetnewsflash.Location.Y + (Check_resetnewsflash.Height / 2) - 10)
+    End Sub
+
+    Private Sub Check_resetitems_SizeChanged(sender As Object, e As EventArgs) Handles Check_resetitems.SizeChanged
+        AdvH_resetitems.Location = New Point(Check_resetitems.Location.X + Check_resetitems.Width + 5, Check_resetitems.Location.Y + (Check_resetitems.Height / 2) - 10)
+    End Sub
+
+    Private Sub Check_resetrelationship_SizeChanged(sender As Object, e As EventArgs) Handles Check_resetrelationship.SizeChanged
+        AdvH_resetrelationship.Location = New Point(Check_resetrelationship.Location.X + Check_resetrelationship.Width + 5, Check_resetrelationship.Location.Y + (Check_resetrelationship.Height / 2) - 10)
+    End Sub
+
+    Private Sub AdvH_timetravel_Click(sender As Object, e As EventArgs) Handles AdvH_timetravel.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Check_timetravel.Location.X + (Check_timetravel.Width / 2), Check_timetravel.Location.Y + (Check_timetravel.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to remove time travel penality" & vbNewLine & vbNewLine & "- You need to save in Tomodachi Life with time travel penality" & vbNewLine & "- Load your save file in Tomodachi Life Save Editor" & vbNewLine & "- Set as orange Remove time travel penality" & vbNewLine & "- Click on save on top, and restore your save file"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre en orange pour retirer la pénalité de voyage dans le temps" & vbNewLine & vbNewLine & "- Vous devez sauvegarder dans Tomodachi Life avec la pénalité de voyage dans le temps" & vbNewLine & "- Ouvrez votre sauvegarde dans Tomodachi Life Save Editor" & vbNewLine & "- Mettre en orange Retirer la pénalité de voyage dans le temps" & vbNewLine & "- Cliquez sur Enregistrer en haut, et restaurez votre fichier de sauvegarde"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 6
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_resetstpspp_Click(sender As Object, e As EventArgs) Handles AdvH_resetstpspp.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Check_resetstpspp.Location.X + (Check_resetstpspp.Width / 2), Check_resetstpspp.Location.Y + (Check_resetstpspp.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to reset Tomodachi Life " & vbNewLine & vbNewLine & "Tomodachi Life will ask you to activate StreetPass and SpotPass again"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre en orange pour réinitialiser StreetPass / SpotPass de Tomodachi Life" & vbNewLine & vbNewLine & "Tomodachi Life vous demandera de nouveau d'activer StreetPass et SpotPass"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 6
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_resetmiiapart_Click(sender As Object, e As EventArgs) Handles AdvH_resetmiiapart.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Check_resetmiiapart.Location.X + (Check_resetmiiapart.Width / 2), Check_resetmiiapart.Location.Y + (Check_resetmiiapart.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to reset Mii apartments" & vbNewLine & vbNewLine & "All Mii apartments will be set by default (Mii 1 will have apartment 101, Mii 2 will have apartment 102, ...)"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre en orange pour réinitialiser les appartements des Mii" & vbNewLine & vbNewLine & "Tous les appartements des Mii vont être mis par défaut (Mii 1 va avoir l'appartement 101, Mii 2 va avoir l'appartement 102, ...)"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 2
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_resetnewsflash_Click(sender As Object, e As EventArgs) Handles AdvH_resetnewsflash.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Check_resetnewsflash.Location.X + (Check_resetnewsflash.Width / 2), Check_resetnewsflash.Location.Y + (Check_resetnewsflash.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to reset News flash" & vbNewLine & vbNewLine & "You will see another time news flash about features unlocked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre en orange pour réinitialiser les Infos Mii" & vbNewLine & vbNewLine & "Vous pourrez revoir les infos mii des fonctionnalités débloqués"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 2
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_resetitems_Click(sender As Object, e As EventArgs) Handles AdvH_resetitems.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Check_resetitems.Location.X + (Check_resetitems.Width / 2), Check_resetitems.Location.Y + (Check_resetitems.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to reset items" & vbNewLine & vbNewLine & "All items in your inventory will be deleted"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre en orange pour réinitialiser les objets" & vbNewLine & vbNewLine & "Tout les objets dans votre inventaire vont être supprimés"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 2
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_resetrelationship_Click(sender As Object, e As EventArgs) Handles AdvH_resetrelationship.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Check_resetitems.Location.X + (Check_resetitems.Width / 2), Check_resetitems.Location.Y + (Check_resetitems.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to reset Mii relationship" & vbNewLine & vbNewLine & "All Mii relationship will be set as 'unknow'"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre en orange pour réinitialiser les relations des Mii" & vbNewLine & vbNewLine & "Toutes les relations des Mii vont être mis en tant que 'inconnu'"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 2
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Public Sub Removetimetravel()
+        Dim ws As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+        If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+            If Check_timetravel.Checked = True Then
+                ws.Position = &H1E4C70
+                ws.WriteByte(0)
+            End If
+        ElseIf Filever_text.Text = "JP" Then
+            If Check_timetravel.Checked = True Then
+                ws.Position = &H14BD40
+                ws.WriteByte(0)
+            End If
+        ElseIf Filever_text.Text = "KR" Then
+            If Check_timetravel.Checked = True Then
+                ws.Position = &H1F0020
+                ws.WriteByte(0)
+            End If
+        End If
+    End Sub
+
+    Public Sub Resetstreetspotpass()
+        Dim ws As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+        If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+            If Check_resetstpspp.Checked = True Then
+                ws.Position = &H1E4C71
+                ws.WriteByte(0)
+            End If
+        ElseIf Filever_text.Text = "JP" Then
+            If Check_resetstpspp.Checked = True Then
+                ws.Position = &H14BD41
+                ws.WriteByte(0)
+            End If
+        ElseIf Filever_text.Text = "KR" Then
+            If Check_resetstpspp.Checked = True Then
+                ws.Position = &H1F0021
+                ws.WriteByte(0)
+            End If
+        End If
+    End Sub
+
+    Public Sub resetmiiapart()
+        Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+        If Check_resetmiiapart.Checked = True Then
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
+                fs.Position = &H22A8
+                fs.WriteByte(0)
+                fs.Position = &H22A8 + &H660
+                fs.WriteByte(1)
+                fs.Position = &H22A8 + (&H660 * 2)
+                fs.WriteByte(2)
+                fs.Position = &H22A8 + (&H660 * 3)
+                fs.WriteByte(3)
+                fs.Position = &H22A8 + (&H660 * 4)
+                fs.WriteByte(4)
+                fs.Position = &H22A8 + (&H660 * 5)
+                fs.WriteByte(5)
+                fs.Position = &H22A8 + (&H660 * 6)
+                fs.WriteByte(6)
+                fs.Position = &H22A8 + (&H660 * 7)
+                fs.WriteByte(7)
+                fs.Position = &H22A8 + (&H660 * 8)
+                fs.WriteByte(8)
+                fs.Position = &H22A8 + (&H660 * 9)
+                fs.WriteByte(9)
+                fs.Position = &H22A8 + (&H660 * 10)
+                fs.WriteByte(10)
+                fs.Position = &H22A8 + (&H660 * 11)
+                fs.WriteByte(11)
+                fs.Position = &H22A8 + (&H660 * 12)
+                fs.WriteByte(12)
+                fs.Position = &H22A8 + (&H660 * 13)
+                fs.WriteByte(13)
+                fs.Position = &H22A8 + (&H660 * 14)
+                fs.WriteByte(14)
+                fs.Position = &H22A8 + (&H660 * 15)
+                fs.WriteByte(15)
+                fs.Position = &H22A8 + (&H660 * 16)
+                fs.WriteByte(16)
+                fs.Position = &H22A8 + (&H660 * 17)
+                fs.WriteByte(17)
+                fs.Position = &H22A8 + (&H660 * 18)
+                fs.WriteByte(18)
+                fs.Position = &H22A8 + (&H660 * 19)
+                fs.WriteByte(19)
+                fs.Position = &H22A8 + (&H660 * 20)
+                fs.WriteByte(20)
+                fs.Position = &H22A8 + (&H660 * 21)
+                fs.WriteByte(21)
+                fs.Position = &H22A8 + (&H660 * 22)
+                fs.WriteByte(22)
+                fs.Position = &H22A8 + (&H660 * 23)
+                fs.WriteByte(23)
+                fs.Position = &H22A8 + (&H660 * 24)
+                fs.WriteByte(24)
+                fs.Position = &H22A8 + (&H660 * 25)
+                fs.WriteByte(25)
+                fs.Position = &H22A8 + (&H660 * 26)
+                fs.WriteByte(26)
+                fs.Position = &H22A8 + (&H660 * 27)
+                fs.WriteByte(27)
+                fs.Position = &H22A8 + (&H660 * 28)
+                fs.WriteByte(28)
+                fs.Position = &H22A8 + (&H660 * 29)
+                fs.WriteByte(29)
+                fs.Position = &H22A8 + (&H660 * 30)
+                fs.WriteByte(30)
+                fs.Position = &H22A8 + (&H660 * 31)
+                fs.WriteByte(31)
+                fs.Position = &H22A8 + (&H660 * 32)
+                fs.WriteByte(32)
+                fs.Position = &H22A8 + (&H660 * 33)
+                fs.WriteByte(33)
+                fs.Position = &H22A8 + (&H660 * 34)
+                fs.WriteByte(34)
+                fs.Position = &H22A8 + (&H660 * 35)
+                fs.WriteByte(35)
+                fs.Position = &H22A8 + (&H660 * 36)
+                fs.WriteByte(36)
+                fs.Position = &H22A8 + (&H660 * 37)
+                fs.WriteByte(37)
+                fs.Position = &H22A8 + (&H660 * 38)
+                fs.WriteByte(38)
+                fs.Position = &H22A8 + (&H660 * 39)
+                fs.WriteByte(39)
+                fs.Position = &H22A8 + (&H660 * 40)
+                fs.WriteByte(40)
+                fs.Position = &H22A8 + (&H660 * 41)
+                fs.WriteByte(41)
+                fs.Position = &H22A8 + (&H660 * 42)
+                fs.WriteByte(42)
+                fs.Position = &H22A8 + (&H660 * 43)
+                fs.WriteByte(43)
+                fs.Position = &H22A8 + (&H660 * 44)
+                fs.WriteByte(44)
+                fs.Position = &H22A8 + (&H660 * 45)
+                fs.WriteByte(45)
+                fs.Position = &H22A8 + (&H660 * 46)
+                fs.WriteByte(46)
+                fs.Position = &H22A8 + (&H660 * 47)
+                fs.WriteByte(47)
+                fs.Position = &H22A8 + (&H660 * 48)
+                fs.WriteByte(48)
+                fs.Position = &H22A8 + (&H660 * 49)
+                fs.WriteByte(49)
+                fs.Position = &H22A8 + (&H660 * 50)
+                fs.WriteByte(50)
+                fs.Position = &H22A8 + (&H660 * 51)
+                fs.WriteByte(51)
+                fs.Position = &H22A8 + (&H660 * 52)
+                fs.WriteByte(52)
+                fs.Position = &H22A8 + (&H660 * 53)
+                fs.WriteByte(53)
+                fs.Position = &H22A8 + (&H660 * 54)
+                fs.WriteByte(54)
+                fs.Position = &H22A8 + (&H660 * 55)
+                fs.WriteByte(55)
+                fs.Position = &H22A8 + (&H660 * 56)
+                fs.WriteByte(56)
+                fs.Position = &H22A8 + (&H660 * 57)
+                fs.WriteByte(57)
+                fs.Position = &H22A8 + (&H660 * 58)
+                fs.WriteByte(58)
+                fs.Position = &H22A8 + (&H660 * 59)
+                fs.WriteByte(59)
+                fs.Position = &H22A8 + (&H660 * 60)
+                fs.WriteByte(60)
+                fs.Position = &H22A8 + (&H660 * 61)
+                fs.WriteByte(61)
+                fs.Position = &H22A8 + (&H660 * 62)
+                fs.WriteByte(62)
+                fs.Position = &H22A8 + (&H660 * 63)
+                fs.WriteByte(63)
+                fs.Position = &H22A8 + (&H660 * 64)
+                fs.WriteByte(64)
+                fs.Position = &H22A8 + (&H660 * 65)
+                fs.WriteByte(65)
+                fs.Position = &H22A8 + (&H660 * 66)
+                fs.WriteByte(66)
+                fs.Position = &H22A8 + (&H660 * 67)
+                fs.WriteByte(67)
+                fs.Position = &H22A8 + (&H660 * 68)
+                fs.WriteByte(68)
+                fs.Position = &H22A8 + (&H660 * 69)
+                fs.WriteByte(69)
+                fs.Position = &H22A8 + (&H660 * 70)
+                fs.WriteByte(70)
+                fs.Position = &H22A8 + (&H660 * 71)
+                fs.WriteByte(71)
+                fs.Position = &H22A8 + (&H660 * 72)
+                fs.WriteByte(72)
+                fs.Position = &H22A8 + (&H660 * 73)
+                fs.WriteByte(73)
+                fs.Position = &H22A8 + (&H660 * 74)
+                fs.WriteByte(74)
+                fs.Position = &H22A8 + (&H660 * 75)
+                fs.WriteByte(75)
+                fs.Position = &H22A8 + (&H660 * 76)
+                fs.WriteByte(76)
+                fs.Position = &H22A8 + (&H660 * 77)
+                fs.WriteByte(77)
+                fs.Position = &H22A8 + (&H660 * 78)
+                fs.WriteByte(78)
+                fs.Position = &H22A8 + (&H660 * 79)
+                fs.WriteByte(79)
+                fs.Position = &H22A8 + (&H660 * 80)
+                fs.WriteByte(80)
+                fs.Position = &H22A8 + (&H660 * 81)
+                fs.WriteByte(81)
+                fs.Position = &H22A8 + (&H660 * 82)
+                fs.WriteByte(82)
+                fs.Position = &H22A8 + (&H660 * 83)
+                fs.WriteByte(83)
+                fs.Position = &H22A8 + (&H660 * 84)
+                fs.WriteByte(84)
+                fs.Position = &H22A8 + (&H660 * 85)
+                fs.WriteByte(85)
+                fs.Position = &H22A8 + (&H660 * 86)
+                fs.WriteByte(86)
+                fs.Position = &H22A8 + (&H660 * 87)
+                fs.WriteByte(87)
+                fs.Position = &H22A8 + (&H660 * 88)
+                fs.WriteByte(88)
+                fs.Position = &H22A8 + (&H660 * 89)
+                fs.WriteByte(89)
+                fs.Position = &H22A8 + (&H660 * 90)
+                fs.WriteByte(90)
+                fs.Position = &H22A8 + (&H660 * 91)
+                fs.WriteByte(91)
+                fs.Position = &H22A8 + (&H660 * 92)
+                fs.WriteByte(92)
+                fs.Position = &H22A8 + (&H660 * 93)
+                fs.WriteByte(93)
+                fs.Position = &H22A8 + (&H660 * 94)
+                fs.WriteByte(94)
+                fs.Position = &H22A8 + (&H660 * 95)
+                fs.WriteByte(95)
+                fs.Position = &H22A8 + (&H660 * 96)
+                fs.WriteByte(96)
+                fs.Position = &H22A8 + (&H660 * 97)
+                fs.WriteByte(97)
+                fs.Position = &H22A8 + (&H660 * 98)
+                fs.WriteByte(98)
+                fs.Position = &H22A8 + (&H660 * 99)
+                fs.WriteByte(99)
+                fs.Close()
+            ElseIf Filever_text.Text = "JP" Then
+                fs.Position = &H21A8
+                fs.WriteByte(0)
+                fs.Position = &H21A8 + &H590
+                fs.WriteByte(1)
+                fs.Position = &H21A8 + (&H590 * 2)
+                fs.WriteByte(2)
+                fs.Position = &H21A8 + (&H590 * 3)
+                fs.WriteByte(3)
+                fs.Position = &H21A8 + (&H590 * 4)
+                fs.WriteByte(4)
+                fs.Position = &H21A8 + (&H590 * 5)
+                fs.WriteByte(5)
+                fs.Position = &H21A8 + (&H590 * 6)
+                fs.WriteByte(6)
+                fs.Position = &H21A8 + (&H590 * 7)
+                fs.WriteByte(7)
+                fs.Position = &H21A8 + (&H590 * 8)
+                fs.WriteByte(8)
+                fs.Position = &H21A8 + (&H590 * 9)
+                fs.WriteByte(9)
+                fs.Position = &H21A8 + (&H590 * 10)
+                fs.WriteByte(10)
+                fs.Position = &H21A8 + (&H590 * 11)
+                fs.WriteByte(11)
+                fs.Position = &H21A8 + (&H590 * 12)
+                fs.WriteByte(12)
+                fs.Position = &H21A8 + (&H590 * 13)
+                fs.WriteByte(13)
+                fs.Position = &H21A8 + (&H590 * 14)
+                fs.WriteByte(14)
+                fs.Position = &H21A8 + (&H590 * 15)
+                fs.WriteByte(15)
+                fs.Position = &H21A8 + (&H590 * 16)
+                fs.WriteByte(16)
+                fs.Position = &H21A8 + (&H590 * 17)
+                fs.WriteByte(17)
+                fs.Position = &H21A8 + (&H590 * 18)
+                fs.WriteByte(18)
+                fs.Position = &H21A8 + (&H590 * 19)
+                fs.WriteByte(19)
+                fs.Position = &H21A8 + (&H590 * 20)
+                fs.WriteByte(20)
+                fs.Position = &H21A8 + (&H590 * 21)
+                fs.WriteByte(21)
+                fs.Position = &H21A8 + (&H590 * 22)
+                fs.WriteByte(22)
+                fs.Position = &H21A8 + (&H590 * 23)
+                fs.WriteByte(23)
+                fs.Position = &H21A8 + (&H590 * 24)
+                fs.WriteByte(24)
+                fs.Position = &H21A8 + (&H590 * 25)
+                fs.WriteByte(25)
+                fs.Position = &H21A8 + (&H590 * 26)
+                fs.WriteByte(26)
+                fs.Position = &H21A8 + (&H590 * 27)
+                fs.WriteByte(27)
+                fs.Position = &H21A8 + (&H590 * 28)
+                fs.WriteByte(28)
+                fs.Position = &H21A8 + (&H590 * 29)
+                fs.WriteByte(29)
+                fs.Position = &H21A8 + (&H590 * 30)
+                fs.WriteByte(30)
+                fs.Position = &H21A8 + (&H590 * 31)
+                fs.WriteByte(31)
+                fs.Position = &H21A8 + (&H590 * 32)
+                fs.WriteByte(32)
+                fs.Position = &H21A8 + (&H590 * 33)
+                fs.WriteByte(33)
+                fs.Position = &H21A8 + (&H590 * 34)
+                fs.WriteByte(34)
+                fs.Position = &H21A8 + (&H590 * 35)
+                fs.WriteByte(35)
+                fs.Position = &H21A8 + (&H590 * 36)
+                fs.WriteByte(36)
+                fs.Position = &H21A8 + (&H590 * 37)
+                fs.WriteByte(37)
+                fs.Position = &H21A8 + (&H590 * 38)
+                fs.WriteByte(38)
+                fs.Position = &H21A8 + (&H590 * 39)
+                fs.WriteByte(39)
+                fs.Position = &H21A8 + (&H590 * 40)
+                fs.WriteByte(40)
+                fs.Position = &H21A8 + (&H590 * 41)
+                fs.WriteByte(41)
+                fs.Position = &H21A8 + (&H590 * 42)
+                fs.WriteByte(42)
+                fs.Position = &H21A8 + (&H590 * 43)
+                fs.WriteByte(43)
+                fs.Position = &H21A8 + (&H590 * 44)
+                fs.WriteByte(44)
+                fs.Position = &H21A8 + (&H590 * 45)
+                fs.WriteByte(45)
+                fs.Position = &H21A8 + (&H590 * 46)
+                fs.WriteByte(46)
+                fs.Position = &H21A8 + (&H590 * 47)
+                fs.WriteByte(47)
+                fs.Position = &H21A8 + (&H590 * 48)
+                fs.WriteByte(48)
+                fs.Position = &H21A8 + (&H590 * 49)
+                fs.WriteByte(49)
+                fs.Position = &H21A8 + (&H590 * 50)
+                fs.WriteByte(50)
+                fs.Position = &H21A8 + (&H590 * 51)
+                fs.WriteByte(51)
+                fs.Position = &H21A8 + (&H590 * 52)
+                fs.WriteByte(52)
+                fs.Position = &H21A8 + (&H590 * 53)
+                fs.WriteByte(53)
+                fs.Position = &H21A8 + (&H590 * 54)
+                fs.WriteByte(54)
+                fs.Position = &H21A8 + (&H590 * 55)
+                fs.WriteByte(55)
+                fs.Position = &H21A8 + (&H590 * 56)
+                fs.WriteByte(56)
+                fs.Position = &H21A8 + (&H590 * 57)
+                fs.WriteByte(57)
+                fs.Position = &H21A8 + (&H590 * 58)
+                fs.WriteByte(58)
+                fs.Position = &H21A8 + (&H590 * 59)
+                fs.WriteByte(59)
+                fs.Position = &H21A8 + (&H590 * 60)
+                fs.WriteByte(60)
+                fs.Position = &H21A8 + (&H590 * 61)
+                fs.WriteByte(61)
+                fs.Position = &H21A8 + (&H590 * 62)
+                fs.WriteByte(62)
+                fs.Position = &H21A8 + (&H590 * 63)
+                fs.WriteByte(63)
+                fs.Position = &H21A8 + (&H590 * 64)
+                fs.WriteByte(64)
+                fs.Position = &H21A8 + (&H590 * 65)
+                fs.WriteByte(65)
+                fs.Position = &H21A8 + (&H590 * 66)
+                fs.WriteByte(66)
+                fs.Position = &H21A8 + (&H590 * 67)
+                fs.WriteByte(67)
+                fs.Position = &H21A8 + (&H590 * 68)
+                fs.WriteByte(68)
+                fs.Position = &H21A8 + (&H590 * 69)
+                fs.WriteByte(69)
+                fs.Position = &H21A8 + (&H590 * 70)
+                fs.WriteByte(70)
+                fs.Position = &H21A8 + (&H590 * 71)
+                fs.WriteByte(71)
+                fs.Position = &H21A8 + (&H590 * 72)
+                fs.WriteByte(72)
+                fs.Position = &H21A8 + (&H590 * 73)
+                fs.WriteByte(73)
+                fs.Position = &H21A8 + (&H590 * 74)
+                fs.WriteByte(74)
+                fs.Position = &H21A8 + (&H590 * 75)
+                fs.WriteByte(75)
+                fs.Position = &H21A8 + (&H590 * 76)
+                fs.WriteByte(76)
+                fs.Position = &H21A8 + (&H590 * 77)
+                fs.WriteByte(77)
+                fs.Position = &H21A8 + (&H590 * 78)
+                fs.WriteByte(78)
+                fs.Position = &H21A8 + (&H590 * 79)
+                fs.WriteByte(79)
+                fs.Position = &H21A8 + (&H590 * 80)
+                fs.WriteByte(80)
+                fs.Position = &H21A8 + (&H590 * 81)
+                fs.WriteByte(81)
+                fs.Position = &H21A8 + (&H590 * 82)
+                fs.WriteByte(82)
+                fs.Position = &H21A8 + (&H590 * 83)
+                fs.WriteByte(83)
+                fs.Position = &H21A8 + (&H590 * 84)
+                fs.WriteByte(84)
+                fs.Position = &H21A8 + (&H590 * 85)
+                fs.WriteByte(85)
+                fs.Position = &H21A8 + (&H590 * 86)
+                fs.WriteByte(86)
+                fs.Position = &H21A8 + (&H590 * 87)
+                fs.WriteByte(87)
+                fs.Position = &H21A8 + (&H590 * 88)
+                fs.WriteByte(88)
+                fs.Position = &H21A8 + (&H590 * 89)
+                fs.WriteByte(89)
+                fs.Position = &H21A8 + (&H590 * 90)
+                fs.WriteByte(90)
+                fs.Position = &H21A8 + (&H590 * 91)
+                fs.WriteByte(91)
+                fs.Position = &H21A8 + (&H590 * 92)
+                fs.WriteByte(92)
+                fs.Position = &H21A8 + (&H590 * 93)
+                fs.WriteByte(93)
+                fs.Position = &H21A8 + (&H590 * 94)
+                fs.WriteByte(94)
+                fs.Position = &H21A8 + (&H590 * 95)
+                fs.WriteByte(95)
+                fs.Position = &H21A8 + (&H590 * 96)
+                fs.WriteByte(96)
+                fs.Position = &H21A8 + (&H590 * 97)
+                fs.WriteByte(97)
+                fs.Position = &H21A8 + (&H590 * 98)
+                fs.WriteByte(98)
+                fs.Position = &H21A8 + (&H590 * 99)
+                fs.WriteByte(99)
+                fs.Close()
+            End If
+        End If
+    End Sub
+
+    Public Sub Resetnewsflash()
+        Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+        If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
+            If Check_resetnewsflash.Checked = True Then
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1E4C48 + i
+                    Writer.WriteInt8(0)
+                Next
+            End If
+        ElseIf Filever_text.Text = "JP" Then
+            If Check_resetnewsflash.Checked = True Then
+                For i As Integer = 0 To 4
+                    Writer.Position = &H14BD18 + i
+                    Writer.WriteInt8(0)
+                Next
+            End If
+        ElseIf Filever_text.Text = "KR" Then
+            If Check_resetnewsflash.Checked = True Then
+                For i As Integer = 0 To 4
+                    Writer.Position = &H1EFFF8 + i
+                    Writer.WriteInt8(0)
+                Next
+            End If
+        End If
+    End Sub
+
+    Public Sub Resetallitems()
+        If Check_resetitems.Checked = True Then
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            For i As Integer = 0 To &H1A47
+                fs.Position = &H30 + i
+                fs.WriteByte(253)
+            Next
+        End If
+    End Sub
+
+    Public Sub Resetallrela()
+        If Check_resetrelationship.Checked = True Then
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
+                accessrelationship = &H299F0
+            ElseIf Filever_text.Text = "JP" Then
+                accessrelationship = &H24880
+            End If
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + &H100
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + &H100
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 2)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 2)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 3)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 3)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 4)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 4)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 5)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 5)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 6)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 6)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 7)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 7)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 8)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 8)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 9)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 9)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 10)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 10)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 11)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 11)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 12)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 12)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 13)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 13)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 14)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 14)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 15)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 15)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 16)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 16)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 17)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 17)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 18)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 18)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 19)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 19)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 20)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 20)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 21)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 21)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 22)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 22)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 23)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 23)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 24)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 24)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 25)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 25)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 26)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 26)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 27)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 27)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 28)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 28)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 29)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 29)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 30)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 30)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 31)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 31)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 32)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 32)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 33)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 33)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 34)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 34)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 35)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 35)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 36)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 36)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 37)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 37)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 38)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 38)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 39)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 39)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 40)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 40)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 41)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 41)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 42)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 42)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 43)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 43)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 44)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 44)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 45)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 45)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 46)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 46)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 47)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 47)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 48)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 48)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 49)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 49)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 50)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 50)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 51)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 51)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 52)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 52)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 53)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 53)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 54)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 54)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 55)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 55)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 56)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 56)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 57)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 57)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 58)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 58)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 59)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 59)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 60)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 60)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 61)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 61)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 62)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 62)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 63)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 63)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 64)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 64)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 65)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 65)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 66)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 66)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 67)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 67)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 68)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 68)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 69)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 69)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 70)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 70)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 71)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 71)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 72)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 72)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 73)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 73)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 74)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 74)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 75)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 75)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 76)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 76)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 77)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 77)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 78)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 78)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 79)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 79)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 80)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 80)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 81)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 81)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 82)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 82)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 83)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 83)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 84)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 84)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 85)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 85)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 86)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 86)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 87)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 87)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 88)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 88)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 89)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 89)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 90)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 90)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 91)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 91)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 92)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 92)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 93)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 93)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 94)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 94)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 95)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 95)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 96)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 96)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 97)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 97)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 98)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 98)
+                fs.WriteByte(0)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = accessrelationship + i + (&H100 * 99)
+                fs.WriteByte(100)
+            Next
+            For i As Integer = 0 To &H63
+                fs.Position = (accessrelationship + &H64) + i + (&H100 * 99)
+                fs.WriteByte(0)
+            Next
+        End If
+    End Sub
+
+    Private Sub Check_timetravel_MouseLeave(sender As Object, e As EventArgs) Handles Check_timetravel.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_timetravel_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_timetravel.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to remove time travel penality"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour retirer la pénalité de voyage dans le temps"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_resetstpspp_MouseLeave(sender As Object, e As EventArgs) Handles Check_resetstpspp.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_resetstpspp_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_resetstpspp.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to reset Tomodachi Life Streetpass/Spotpass"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour réinitialiser Streetpass/Spotpass de Tomodachi Life"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_resetmiiapart_MouseLeave(sender As Object, e As EventArgs) Handles Check_resetmiiapart.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_resetmiiapart_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_resetmiiapart.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to reset Mii apartments"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour réinitialiser les appartements des Mii"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_resetnewsflash_MouseLeave(sender As Object, e As EventArgs) Handles Check_resetnewsflash.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_resetnewsflasht_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_resetnewsflash.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to reset News flash"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour réinitialiser les infos Mii"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_resetitems_MouseLeave(sender As Object, e As EventArgs) Handles Check_resetitems.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_resetitems_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_resetitems.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to reset all items"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour réinitialiser tout les objets"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_resetrelationship_MouseLeave(sender As Object, e As EventArgs) Handles Check_resetrelationship.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_resetrelationship_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_resetrelationship.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to reset Mii's relationship"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour réinitialiser les relations des Mii"
+        End If
+        Panel_description.Visible = True
+    End Sub
+    'end extras animation block
+
+    'repair save file block
+    Public Sub Checkheader()
+        Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+        Reader.Position = &H0
+        Text_header.Text = Reader.ReadHexString(4)
+    End Sub
+
+    Private Sub Text_header_TextChanged(sender As Object, e As EventArgs) Handles Text_header.TextChanged
+        If Text_header.Text = "11000000" Then
+            Text_header.BackColor = DefaultBackColor
+            Icon_header.visible = False
+        Else
+            Text_header.BackColor = Color.Red
+            Icon_header.visible = True
+        End If
+    End Sub
+
+    Private Sub Icon_header_Click(sender As Object, e As EventArgs) Handles Icon_header.Click
+        Text_header.Text = "11000000"
+        Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+        Try
+            Writer.Position = &H0
+            Writer.WriteHexString(Text_header.Text)
+            done()
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Header', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'écriture de cette fonctionnalité a échoué : 'Header', veuillez signaler ce problème"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
+
+    Private Sub AdvH_header_Click(sender As Object, e As EventArgs) Handles AdvH_header.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Text_header.Location.X + (Text_header.Width / 2), Text_header.Location.Y + (Text_header.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is your header" & vbNewLine & vbNewLine & "If back color is red, you need to fix him before restore your save file"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est votre header" & vbNewLine & vbNewLine & "Si le fond est rouge, vous aurez besoin de le corriger avant de restaurer votre sauvegarde"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+    End Sub
+    'end repair save file block
 End Class
