@@ -157,6 +157,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_minus.png" />
+    <None Include="Resources\icon_plus.png" />
+    <None Include="Resources\icon_crthall_techno.png" />
+    <None Include="Resources\icon_crthall_rockroll.png" />
+    <None Include="Resources\icon_crthall_rap.png" />
+    <None Include="Resources\icon_crthall_pop.png" />
+    <None Include="Resources\icon_crthall_opera.png" />
+    <None Include="Resources\icon_crthall_musical.png" />
+    <None Include="Resources\icon_crthall_metal.png" />
+    <None Include="Resources\icon_crthall_ballad.png" />
+    <None Include="Resources\bg_concert.png" />
     <None Include="Resources\icon_fixheader.gif" />
     <None Include="Resources\icon_menusave.png" />
     <None Include="Resources\concert_edit.png" />

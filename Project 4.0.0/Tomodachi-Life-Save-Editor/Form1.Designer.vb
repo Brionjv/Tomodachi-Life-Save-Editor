@@ -372,6 +372,73 @@ Partial Class TL_SaveEditor
         Me.Timer_done = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_itemsedit = New System.Windows.Forms.Panel()
         Me.Panel_concertedit = New System.Windows.Forms.Panel()
+        Me.Minus_pagh_1 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_1 = New System.Windows.Forms.PictureBox()
+        Me.valu_typemusic = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.Button_save = New System.Windows.Forms.Panel()
+        Me.Text_save = New System.Windows.Forms.Label()
+        Me.Panel_title = New System.Windows.Forms.Panel()
+        Me.Text_title = New System.Windows.Forms.Label()
+        Me.Icon_title_2 = New System.Windows.Forms.PictureBox()
+        Me.Icon_title_1 = New System.Windows.Forms.PictureBox()
+        Me.Select_musics = New System.Windows.Forms.ComboBox()
+        Me.Text_titlemusic = New System.Windows.Forms.TextBox()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.valu_pagh_13 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_12 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_11 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_10 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_9 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_8 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_7 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_6 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_5 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_4 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_3 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_2 = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pagh_1 = New System.Windows.Forms.NumericUpDown()
+        Me.Text_pagh_13 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_12 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_11 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_10 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_9 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_8 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_7 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_6 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_5 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_4 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_3 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_2 = New System.Windows.Forms.TextBox()
+        Me.Text_pagh_1 = New System.Windows.Forms.TextBox()
+        Me.Icon_crthall_music = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_2 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_2 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_4 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_4 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_3 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_3 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_8 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_8 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_7 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_7 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_6 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_6 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_5 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_5 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_12 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_12 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_11 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_11 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_10 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_10 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_9 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_9 = New System.Windows.Forms.PictureBox()
+        Me.Minus_pagh_13 = New System.Windows.Forms.PictureBox()
+        Me.Plus_pagh_13 = New System.Windows.Forms.PictureBox()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_header.SuspendLayout()
@@ -604,6 +671,57 @@ Partial Class TL_SaveEditor
         Me.Panel_extractsave.SuspendLayout()
         Me.Panel_citratomo.SuspendLayout()
         Me.Panel_restoresave.SuspendLayout()
+        Me.Panel_concertedit.SuspendLayout()
+        CType(Me.Minus_pagh_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_typemusic, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Button_save.SuspendLayout()
+        Me.Panel_title.SuspendLayout()
+        CType(Me.Icon_title_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_title_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel6.SuspendLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pagh_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_crthall_music, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Minus_pagh_13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Plus_pagh_13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -4787,12 +4905,795 @@ Partial Class TL_SaveEditor
         '
         'Panel_concertedit
         '
-        Me.Panel_concertedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_concertedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_concert
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_13)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_13)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_12)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_12)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_11)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_11)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_10)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_10)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_9)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_9)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_8)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_8)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_7)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_7)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_6)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_6)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_5)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_5)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_4)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_4)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_3)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_3)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_2)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_2)
+        Me.Panel_concertedit.Controls.Add(Me.Minus_pagh_1)
+        Me.Panel_concertedit.Controls.Add(Me.Plus_pagh_1)
+        Me.Panel_concertedit.Controls.Add(Me.valu_typemusic)
+        Me.Panel_concertedit.Controls.Add(Me.PictureBox6)
+        Me.Panel_concertedit.Controls.Add(Me.PictureBox7)
+        Me.Panel_concertedit.Controls.Add(Me.PictureBox14)
+        Me.Panel_concertedit.Controls.Add(Me.Button_save)
+        Me.Panel_concertedit.Controls.Add(Me.Panel_title)
+        Me.Panel_concertedit.Controls.Add(Me.Select_musics)
+        Me.Panel_concertedit.Controls.Add(Me.Text_titlemusic)
+        Me.Panel_concertedit.Controls.Add(Me.Panel6)
+        Me.Panel_concertedit.Controls.Add(Me.Icon_crthall_music)
         Me.Panel_concertedit.Location = New System.Drawing.Point(152, 77)
         Me.Panel_concertedit.Name = "Panel_concertedit"
         Me.Panel_concertedit.Size = New System.Drawing.Size(676, 540)
         Me.Panel_concertedit.TabIndex = 98
         Me.Panel_concertedit.Visible = False
+        '
+        'Minus_pagh_1
+        '
+        Me.Minus_pagh_1.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_1.Location = New System.Drawing.Point(90, 160)
+        Me.Minus_pagh_1.Name = "Minus_pagh_1"
+        Me.Minus_pagh_1.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_1.TabIndex = 94
+        Me.Minus_pagh_1.TabStop = False
+        '
+        'Plus_pagh_1
+        '
+        Me.Plus_pagh_1.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_1.Location = New System.Drawing.Point(69, 160)
+        Me.Plus_pagh_1.Name = "Plus_pagh_1"
+        Me.Plus_pagh_1.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_1.TabIndex = 93
+        Me.Plus_pagh_1.TabStop = False
+        '
+        'valu_typemusic
+        '
+        Me.valu_typemusic.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_typemusic.Location = New System.Drawing.Point(504, 129)
+        Me.valu_typemusic.Name = "valu_typemusic"
+        Me.valu_typemusic.Size = New System.Drawing.Size(39, 16)
+        Me.valu_typemusic.TabIndex = 91
+        Me.valu_typemusic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_typemusic.Visible = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox6.Location = New System.Drawing.Point(577, 120)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox6.TabIndex = 90
+        Me.PictureBox6.TabStop = False
+        Me.PictureBox6.Visible = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox7.Location = New System.Drawing.Point(162, 120)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox7.TabIndex = 89
+        Me.PictureBox7.TabStop = False
+        Me.PictureBox7.Visible = False
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox14.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox14.Location = New System.Drawing.Point(466, 119)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox14.TabIndex = 88
+        Me.PictureBox14.TabStop = False
+        Me.PictureBox14.Visible = False
+        '
+        'Button_save
+        '
+        Me.Button_save.BackColor = System.Drawing.Color.Transparent
+        Me.Button_save.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Button_save.Controls.Add(Me.Text_save)
+        Me.Button_save.Location = New System.Drawing.Point(263, 448)
+        Me.Button_save.Name = "Button_save"
+        Me.Button_save.Size = New System.Drawing.Size(150, 32)
+        Me.Button_save.TabIndex = 87
+        '
+        'Text_save
+        '
+        Me.Text_save.BackColor = System.Drawing.Color.Transparent
+        Me.Text_save.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_save.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_save.Location = New System.Drawing.Point(0, 0)
+        Me.Text_save.Name = "Text_save"
+        Me.Text_save.Size = New System.Drawing.Size(150, 32)
+        Me.Text_save.TabIndex = 0
+        Me.Text_save.Text = "Save"
+        Me.Text_save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_title
+        '
+        Me.Panel_title.BackgroundImage = CType(resources.GetObject("Panel_title.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_title.Controls.Add(Me.Text_title)
+        Me.Panel_title.Controls.Add(Me.Icon_title_2)
+        Me.Panel_title.Controls.Add(Me.Icon_title_1)
+        Me.Panel_title.Location = New System.Drawing.Point(122, 60)
+        Me.Panel_title.Name = "Panel_title"
+        Me.Panel_title.Size = New System.Drawing.Size(420, 45)
+        Me.Panel_title.TabIndex = 85
+        '
+        'Text_title
+        '
+        Me.Text_title.BackColor = System.Drawing.Color.Transparent
+        Me.Text_title.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_title.Location = New System.Drawing.Point(86, 1)
+        Me.Text_title.Name = "Text_title"
+        Me.Text_title.Size = New System.Drawing.Size(248, 44)
+        Me.Text_title.TabIndex = 2
+        Me.Text_title.Text = "Concert Hall"
+        Me.Text_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Icon_title_2
+        '
+        Me.Icon_title_2.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_title_2.BackgroundImage = CType(resources.GetObject("Icon_title_2.BackgroundImage"), System.Drawing.Image)
+        Me.Icon_title_2.Location = New System.Drawing.Point(340, 1)
+        Me.Icon_title_2.Name = "Icon_title_2"
+        Me.Icon_title_2.Size = New System.Drawing.Size(68, 44)
+        Me.Icon_title_2.TabIndex = 1
+        Me.Icon_title_2.TabStop = False
+        '
+        'Icon_title_1
+        '
+        Me.Icon_title_1.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_title_1.BackgroundImage = CType(resources.GetObject("Icon_title_1.BackgroundImage"), System.Drawing.Image)
+        Me.Icon_title_1.Location = New System.Drawing.Point(12, 1)
+        Me.Icon_title_1.Name = "Icon_title_1"
+        Me.Icon_title_1.Size = New System.Drawing.Size(68, 44)
+        Me.Icon_title_1.TabIndex = 0
+        Me.Icon_title_1.TabStop = False
+        '
+        'Select_musics
+        '
+        Me.Select_musics.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_musics.FormattingEnabled = True
+        Me.Select_musics.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "21", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"})
+        Me.Select_musics.Location = New System.Drawing.Point(113, 120)
+        Me.Select_musics.Name = "Select_musics"
+        Me.Select_musics.Size = New System.Drawing.Size(47, 21)
+        Me.Select_musics.TabIndex = 84
+        '
+        'Text_titlemusic
+        '
+        Me.Text_titlemusic.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_titlemusic.Location = New System.Drawing.Point(203, 124)
+        Me.Text_titlemusic.MaxLength = 32
+        Me.Text_titlemusic.Name = "Text_titlemusic"
+        Me.Text_titlemusic.Size = New System.Drawing.Size(260, 13)
+        Me.Text_titlemusic.TabIndex = 83
+        Me.Text_titlemusic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel6
+        '
+        Me.Panel6.BackgroundImage = CType(resources.GetObject("Panel6.BackgroundImage"), System.Drawing.Image)
+        Me.Panel6.Controls.Add(Me.PictureBox8)
+        Me.Panel6.Controls.Add(Me.valu_pagh_13)
+        Me.Panel6.Controls.Add(Me.valu_pagh_12)
+        Me.Panel6.Controls.Add(Me.valu_pagh_11)
+        Me.Panel6.Controls.Add(Me.valu_pagh_10)
+        Me.Panel6.Controls.Add(Me.valu_pagh_9)
+        Me.Panel6.Controls.Add(Me.valu_pagh_8)
+        Me.Panel6.Controls.Add(Me.valu_pagh_7)
+        Me.Panel6.Controls.Add(Me.valu_pagh_6)
+        Me.Panel6.Controls.Add(Me.valu_pagh_5)
+        Me.Panel6.Controls.Add(Me.valu_pagh_4)
+        Me.Panel6.Controls.Add(Me.valu_pagh_3)
+        Me.Panel6.Controls.Add(Me.valu_pagh_2)
+        Me.Panel6.Controls.Add(Me.valu_pagh_1)
+        Me.Panel6.Controls.Add(Me.Text_pagh_13)
+        Me.Panel6.Controls.Add(Me.Text_pagh_12)
+        Me.Panel6.Controls.Add(Me.Text_pagh_11)
+        Me.Panel6.Controls.Add(Me.Text_pagh_10)
+        Me.Panel6.Controls.Add(Me.Text_pagh_9)
+        Me.Panel6.Controls.Add(Me.Text_pagh_8)
+        Me.Panel6.Controls.Add(Me.Text_pagh_7)
+        Me.Panel6.Controls.Add(Me.Text_pagh_6)
+        Me.Panel6.Controls.Add(Me.Text_pagh_5)
+        Me.Panel6.Controls.Add(Me.Text_pagh_4)
+        Me.Panel6.Controls.Add(Me.Text_pagh_3)
+        Me.Panel6.Controls.Add(Me.Text_pagh_2)
+        Me.Panel6.Controls.Add(Me.Text_pagh_1)
+        Me.Panel6.Location = New System.Drawing.Point(113, 146)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(440, 270)
+        Me.Panel6.TabIndex = 82
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox8.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox8.Location = New System.Drawing.Point(414, 245)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox8.TabIndex = 80
+        Me.PictureBox8.TabStop = False
+        Me.PictureBox8.Visible = False
+        '
+        'valu_pagh_13
+        '
+        Me.valu_pagh_13.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_13.Location = New System.Drawing.Point(11, 241)
+        Me.valu_pagh_13.Name = "valu_pagh_13"
+        Me.valu_pagh_13.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_13.TabIndex = 25
+        Me.valu_pagh_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_13.Visible = False
+        '
+        'valu_pagh_12
+        '
+        Me.valu_pagh_12.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_12.Location = New System.Drawing.Point(11, 222)
+        Me.valu_pagh_12.Name = "valu_pagh_12"
+        Me.valu_pagh_12.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_12.TabIndex = 24
+        Me.valu_pagh_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_12.Visible = False
+        '
+        'valu_pagh_11
+        '
+        Me.valu_pagh_11.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_11.Location = New System.Drawing.Point(11, 203)
+        Me.valu_pagh_11.Name = "valu_pagh_11"
+        Me.valu_pagh_11.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_11.TabIndex = 23
+        Me.valu_pagh_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_11.Visible = False
+        '
+        'valu_pagh_10
+        '
+        Me.valu_pagh_10.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_10.Location = New System.Drawing.Point(11, 184)
+        Me.valu_pagh_10.Name = "valu_pagh_10"
+        Me.valu_pagh_10.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_10.TabIndex = 22
+        Me.valu_pagh_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_10.Visible = False
+        '
+        'valu_pagh_9
+        '
+        Me.valu_pagh_9.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_9.Location = New System.Drawing.Point(11, 165)
+        Me.valu_pagh_9.Name = "valu_pagh_9"
+        Me.valu_pagh_9.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_9.TabIndex = 21
+        Me.valu_pagh_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_9.Visible = False
+        '
+        'valu_pagh_8
+        '
+        Me.valu_pagh_8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_8.Location = New System.Drawing.Point(11, 145)
+        Me.valu_pagh_8.Name = "valu_pagh_8"
+        Me.valu_pagh_8.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_8.TabIndex = 20
+        Me.valu_pagh_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_8.Visible = False
+        '
+        'valu_pagh_7
+        '
+        Me.valu_pagh_7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_7.Location = New System.Drawing.Point(11, 126)
+        Me.valu_pagh_7.Name = "valu_pagh_7"
+        Me.valu_pagh_7.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_7.TabIndex = 19
+        Me.valu_pagh_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_7.Visible = False
+        '
+        'valu_pagh_6
+        '
+        Me.valu_pagh_6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_6.Location = New System.Drawing.Point(11, 107)
+        Me.valu_pagh_6.Name = "valu_pagh_6"
+        Me.valu_pagh_6.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_6.TabIndex = 18
+        Me.valu_pagh_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_6.Visible = False
+        '
+        'valu_pagh_5
+        '
+        Me.valu_pagh_5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_5.Location = New System.Drawing.Point(11, 88)
+        Me.valu_pagh_5.Name = "valu_pagh_5"
+        Me.valu_pagh_5.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_5.TabIndex = 17
+        Me.valu_pagh_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_5.Visible = False
+        '
+        'valu_pagh_4
+        '
+        Me.valu_pagh_4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_4.Location = New System.Drawing.Point(11, 69)
+        Me.valu_pagh_4.Name = "valu_pagh_4"
+        Me.valu_pagh_4.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_4.TabIndex = 16
+        Me.valu_pagh_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_4.Visible = False
+        '
+        'valu_pagh_3
+        '
+        Me.valu_pagh_3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_3.Location = New System.Drawing.Point(11, 50)
+        Me.valu_pagh_3.Name = "valu_pagh_3"
+        Me.valu_pagh_3.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_3.TabIndex = 15
+        Me.valu_pagh_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_3.Visible = False
+        '
+        'valu_pagh_2
+        '
+        Me.valu_pagh_2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_2.Location = New System.Drawing.Point(11, 31)
+        Me.valu_pagh_2.Name = "valu_pagh_2"
+        Me.valu_pagh_2.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_2.TabIndex = 14
+        Me.valu_pagh_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_2.Visible = False
+        '
+        'valu_pagh_1
+        '
+        Me.valu_pagh_1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pagh_1.Location = New System.Drawing.Point(11, 12)
+        Me.valu_pagh_1.Name = "valu_pagh_1"
+        Me.valu_pagh_1.Size = New System.Drawing.Size(36, 16)
+        Me.valu_pagh_1.TabIndex = 13
+        Me.valu_pagh_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_pagh_1.Visible = False
+        '
+        'Text_pagh_13
+        '
+        Me.Text_pagh_13.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_13.Enabled = False
+        Me.Text_pagh_13.Location = New System.Drawing.Point(52, 242)
+        Me.Text_pagh_13.MaxLength = 48
+        Me.Text_pagh_13.Name = "Text_pagh_13"
+        Me.Text_pagh_13.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_13.TabIndex = 12
+        Me.Text_pagh_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_12
+        '
+        Me.Text_pagh_12.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_12.Enabled = False
+        Me.Text_pagh_12.Location = New System.Drawing.Point(52, 223)
+        Me.Text_pagh_12.MaxLength = 48
+        Me.Text_pagh_12.Name = "Text_pagh_12"
+        Me.Text_pagh_12.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_12.TabIndex = 11
+        Me.Text_pagh_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_11
+        '
+        Me.Text_pagh_11.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_11.Enabled = False
+        Me.Text_pagh_11.Location = New System.Drawing.Point(52, 204)
+        Me.Text_pagh_11.MaxLength = 48
+        Me.Text_pagh_11.Name = "Text_pagh_11"
+        Me.Text_pagh_11.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_11.TabIndex = 10
+        Me.Text_pagh_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_10
+        '
+        Me.Text_pagh_10.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_10.Enabled = False
+        Me.Text_pagh_10.Location = New System.Drawing.Point(52, 185)
+        Me.Text_pagh_10.MaxLength = 48
+        Me.Text_pagh_10.Name = "Text_pagh_10"
+        Me.Text_pagh_10.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_10.TabIndex = 9
+        Me.Text_pagh_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_9
+        '
+        Me.Text_pagh_9.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_9.Enabled = False
+        Me.Text_pagh_9.Location = New System.Drawing.Point(52, 166)
+        Me.Text_pagh_9.MaxLength = 48
+        Me.Text_pagh_9.Name = "Text_pagh_9"
+        Me.Text_pagh_9.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_9.TabIndex = 8
+        Me.Text_pagh_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_8
+        '
+        Me.Text_pagh_8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_8.Enabled = False
+        Me.Text_pagh_8.Location = New System.Drawing.Point(52, 147)
+        Me.Text_pagh_8.MaxLength = 48
+        Me.Text_pagh_8.Name = "Text_pagh_8"
+        Me.Text_pagh_8.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_8.TabIndex = 7
+        Me.Text_pagh_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_7
+        '
+        Me.Text_pagh_7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_7.Enabled = False
+        Me.Text_pagh_7.Location = New System.Drawing.Point(52, 128)
+        Me.Text_pagh_7.MaxLength = 48
+        Me.Text_pagh_7.Name = "Text_pagh_7"
+        Me.Text_pagh_7.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_7.TabIndex = 6
+        Me.Text_pagh_7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_6
+        '
+        Me.Text_pagh_6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_6.Enabled = False
+        Me.Text_pagh_6.Location = New System.Drawing.Point(52, 109)
+        Me.Text_pagh_6.MaxLength = 48
+        Me.Text_pagh_6.Name = "Text_pagh_6"
+        Me.Text_pagh_6.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_6.TabIndex = 5
+        Me.Text_pagh_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_5
+        '
+        Me.Text_pagh_5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_5.Enabled = False
+        Me.Text_pagh_5.Location = New System.Drawing.Point(52, 90)
+        Me.Text_pagh_5.MaxLength = 48
+        Me.Text_pagh_5.Name = "Text_pagh_5"
+        Me.Text_pagh_5.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_5.TabIndex = 4
+        Me.Text_pagh_5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_4
+        '
+        Me.Text_pagh_4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_4.Enabled = False
+        Me.Text_pagh_4.Location = New System.Drawing.Point(52, 71)
+        Me.Text_pagh_4.MaxLength = 48
+        Me.Text_pagh_4.Name = "Text_pagh_4"
+        Me.Text_pagh_4.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_4.TabIndex = 3
+        Me.Text_pagh_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_3
+        '
+        Me.Text_pagh_3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_3.Enabled = False
+        Me.Text_pagh_3.Location = New System.Drawing.Point(52, 52)
+        Me.Text_pagh_3.MaxLength = 48
+        Me.Text_pagh_3.Name = "Text_pagh_3"
+        Me.Text_pagh_3.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_3.TabIndex = 2
+        Me.Text_pagh_3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_2
+        '
+        Me.Text_pagh_2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_2.Enabled = False
+        Me.Text_pagh_2.Location = New System.Drawing.Point(52, 33)
+        Me.Text_pagh_2.MaxLength = 48
+        Me.Text_pagh_2.Name = "Text_pagh_2"
+        Me.Text_pagh_2.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_2.TabIndex = 1
+        Me.Text_pagh_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Text_pagh_1
+        '
+        Me.Text_pagh_1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_pagh_1.Enabled = False
+        Me.Text_pagh_1.Location = New System.Drawing.Point(52, 14)
+        Me.Text_pagh_1.MaxLength = 48
+        Me.Text_pagh_1.Name = "Text_pagh_1"
+        Me.Text_pagh_1.Size = New System.Drawing.Size(337, 13)
+        Me.Text_pagh_1.TabIndex = 0
+        Me.Text_pagh_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_crthall_music
+        '
+        Me.Icon_crthall_music.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_crthall_music.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_crthall_music.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_crthall_metal
+        Me.Icon_crthall_music.Location = New System.Drawing.Point(505, 116)
+        Me.Icon_crthall_music.Name = "Icon_crthall_music"
+        Me.Icon_crthall_music.Size = New System.Drawing.Size(70, 29)
+        Me.Icon_crthall_music.TabIndex = 92
+        Me.Icon_crthall_music.TabStop = False
+        '
+        'Minus_pagh_2
+        '
+        Me.Minus_pagh_2.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_2.Location = New System.Drawing.Point(90, 179)
+        Me.Minus_pagh_2.Name = "Minus_pagh_2"
+        Me.Minus_pagh_2.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_2.TabIndex = 96
+        Me.Minus_pagh_2.TabStop = False
+        '
+        'Plus_pagh_2
+        '
+        Me.Plus_pagh_2.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_2.Location = New System.Drawing.Point(69, 179)
+        Me.Plus_pagh_2.Name = "Plus_pagh_2"
+        Me.Plus_pagh_2.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_2.TabIndex = 95
+        Me.Plus_pagh_2.TabStop = False
+        '
+        'Minus_pagh_4
+        '
+        Me.Minus_pagh_4.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_4.Location = New System.Drawing.Point(90, 217)
+        Me.Minus_pagh_4.Name = "Minus_pagh_4"
+        Me.Minus_pagh_4.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_4.TabIndex = 100
+        Me.Minus_pagh_4.TabStop = False
+        '
+        'Plus_pagh_4
+        '
+        Me.Plus_pagh_4.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_4.Location = New System.Drawing.Point(69, 217)
+        Me.Plus_pagh_4.Name = "Plus_pagh_4"
+        Me.Plus_pagh_4.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_4.TabIndex = 99
+        Me.Plus_pagh_4.TabStop = False
+        '
+        'Minus_pagh_3
+        '
+        Me.Minus_pagh_3.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_3.Location = New System.Drawing.Point(90, 198)
+        Me.Minus_pagh_3.Name = "Minus_pagh_3"
+        Me.Minus_pagh_3.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_3.TabIndex = 98
+        Me.Minus_pagh_3.TabStop = False
+        '
+        'Plus_pagh_3
+        '
+        Me.Plus_pagh_3.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_3.Location = New System.Drawing.Point(69, 198)
+        Me.Plus_pagh_3.Name = "Plus_pagh_3"
+        Me.Plus_pagh_3.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_3.TabIndex = 97
+        Me.Plus_pagh_3.TabStop = False
+        '
+        'Minus_pagh_8
+        '
+        Me.Minus_pagh_8.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_8.Location = New System.Drawing.Point(90, 293)
+        Me.Minus_pagh_8.Name = "Minus_pagh_8"
+        Me.Minus_pagh_8.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_8.TabIndex = 108
+        Me.Minus_pagh_8.TabStop = False
+        '
+        'Plus_pagh_8
+        '
+        Me.Plus_pagh_8.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_8.Location = New System.Drawing.Point(69, 293)
+        Me.Plus_pagh_8.Name = "Plus_pagh_8"
+        Me.Plus_pagh_8.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_8.TabIndex = 107
+        Me.Plus_pagh_8.TabStop = False
+        '
+        'Minus_pagh_7
+        '
+        Me.Minus_pagh_7.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_7.Location = New System.Drawing.Point(90, 274)
+        Me.Minus_pagh_7.Name = "Minus_pagh_7"
+        Me.Minus_pagh_7.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_7.TabIndex = 106
+        Me.Minus_pagh_7.TabStop = False
+        '
+        'Plus_pagh_7
+        '
+        Me.Plus_pagh_7.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_7.Location = New System.Drawing.Point(69, 274)
+        Me.Plus_pagh_7.Name = "Plus_pagh_7"
+        Me.Plus_pagh_7.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_7.TabIndex = 105
+        Me.Plus_pagh_7.TabStop = False
+        '
+        'Minus_pagh_6
+        '
+        Me.Minus_pagh_6.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_6.Location = New System.Drawing.Point(90, 255)
+        Me.Minus_pagh_6.Name = "Minus_pagh_6"
+        Me.Minus_pagh_6.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_6.TabIndex = 104
+        Me.Minus_pagh_6.TabStop = False
+        '
+        'Plus_pagh_6
+        '
+        Me.Plus_pagh_6.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_6.Location = New System.Drawing.Point(69, 255)
+        Me.Plus_pagh_6.Name = "Plus_pagh_6"
+        Me.Plus_pagh_6.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_6.TabIndex = 103
+        Me.Plus_pagh_6.TabStop = False
+        '
+        'Minus_pagh_5
+        '
+        Me.Minus_pagh_5.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_5.Location = New System.Drawing.Point(90, 236)
+        Me.Minus_pagh_5.Name = "Minus_pagh_5"
+        Me.Minus_pagh_5.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_5.TabIndex = 102
+        Me.Minus_pagh_5.TabStop = False
+        '
+        'Plus_pagh_5
+        '
+        Me.Plus_pagh_5.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_5.Location = New System.Drawing.Point(69, 236)
+        Me.Plus_pagh_5.Name = "Plus_pagh_5"
+        Me.Plus_pagh_5.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_5.TabIndex = 101
+        Me.Plus_pagh_5.TabStop = False
+        '
+        'Minus_pagh_12
+        '
+        Me.Minus_pagh_12.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_12.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_12.Location = New System.Drawing.Point(90, 369)
+        Me.Minus_pagh_12.Name = "Minus_pagh_12"
+        Me.Minus_pagh_12.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_12.TabIndex = 116
+        Me.Minus_pagh_12.TabStop = False
+        '
+        'Plus_pagh_12
+        '
+        Me.Plus_pagh_12.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_12.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_12.Location = New System.Drawing.Point(69, 369)
+        Me.Plus_pagh_12.Name = "Plus_pagh_12"
+        Me.Plus_pagh_12.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_12.TabIndex = 115
+        Me.Plus_pagh_12.TabStop = False
+        '
+        'Minus_pagh_11
+        '
+        Me.Minus_pagh_11.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_11.Location = New System.Drawing.Point(90, 350)
+        Me.Minus_pagh_11.Name = "Minus_pagh_11"
+        Me.Minus_pagh_11.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_11.TabIndex = 114
+        Me.Minus_pagh_11.TabStop = False
+        '
+        'Plus_pagh_11
+        '
+        Me.Plus_pagh_11.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_11.Location = New System.Drawing.Point(69, 350)
+        Me.Plus_pagh_11.Name = "Plus_pagh_11"
+        Me.Plus_pagh_11.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_11.TabIndex = 113
+        Me.Plus_pagh_11.TabStop = False
+        '
+        'Minus_pagh_10
+        '
+        Me.Minus_pagh_10.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_10.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_10.Location = New System.Drawing.Point(90, 331)
+        Me.Minus_pagh_10.Name = "Minus_pagh_10"
+        Me.Minus_pagh_10.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_10.TabIndex = 112
+        Me.Minus_pagh_10.TabStop = False
+        '
+        'Plus_pagh_10
+        '
+        Me.Plus_pagh_10.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_10.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_10.Location = New System.Drawing.Point(69, 331)
+        Me.Plus_pagh_10.Name = "Plus_pagh_10"
+        Me.Plus_pagh_10.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_10.TabIndex = 111
+        Me.Plus_pagh_10.TabStop = False
+        '
+        'Minus_pagh_9
+        '
+        Me.Minus_pagh_9.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_9.Location = New System.Drawing.Point(90, 312)
+        Me.Minus_pagh_9.Name = "Minus_pagh_9"
+        Me.Minus_pagh_9.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_9.TabIndex = 110
+        Me.Minus_pagh_9.TabStop = False
+        '
+        'Plus_pagh_9
+        '
+        Me.Plus_pagh_9.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_9.Location = New System.Drawing.Point(69, 312)
+        Me.Plus_pagh_9.Name = "Plus_pagh_9"
+        Me.Plus_pagh_9.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_9.TabIndex = 109
+        Me.Plus_pagh_9.TabStop = False
+        '
+        'Minus_pagh_13
+        '
+        Me.Minus_pagh_13.BackColor = System.Drawing.Color.Transparent
+        Me.Minus_pagh_13.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Minus_pagh_13.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_minus
+        Me.Minus_pagh_13.Location = New System.Drawing.Point(90, 388)
+        Me.Minus_pagh_13.Name = "Minus_pagh_13"
+        Me.Minus_pagh_13.Size = New System.Drawing.Size(15, 15)
+        Me.Minus_pagh_13.TabIndex = 118
+        Me.Minus_pagh_13.TabStop = False
+        '
+        'Plus_pagh_13
+        '
+        Me.Plus_pagh_13.BackColor = System.Drawing.Color.Transparent
+        Me.Plus_pagh_13.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Plus_pagh_13.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_plus
+        Me.Plus_pagh_13.Location = New System.Drawing.Point(69, 388)
+        Me.Plus_pagh_13.Name = "Plus_pagh_13"
+        Me.Plus_pagh_13.Size = New System.Drawing.Size(15, 15)
+        Me.Plus_pagh_13.TabIndex = 117
+        Me.Plus_pagh_13.TabStop = False
         '
         'TL_SaveEditor
         '
@@ -4800,6 +5701,7 @@ Partial Class TL_SaveEditor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
+        Me.Controls.Add(Me.Panel_concertedit)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -4811,7 +5713,6 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.Panel_manual)
-        Me.Controls.Add(Me.Panel_concertedit)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_repairsave)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -5070,6 +5971,59 @@ Partial Class TL_SaveEditor
         Me.Panel_citratomo.PerformLayout()
         Me.Panel_restoresave.ResumeLayout(False)
         Me.Panel_restoresave.PerformLayout()
+        Me.Panel_concertedit.ResumeLayout(False)
+        Me.Panel_concertedit.PerformLayout()
+        CType(Me.Minus_pagh_1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_typemusic, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Button_save.ResumeLayout(False)
+        Me.Panel_title.ResumeLayout(False)
+        CType(Me.Icon_title_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_title_1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel6.PerformLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pagh_1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_crthall_music, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Minus_pagh_13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Plus_pagh_13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -5423,4 +6377,71 @@ Partial Class TL_SaveEditor
     Friend WithEvents ImageList_menusave As ImageList
     Friend WithEvents Panel_concertedit As Panel
     Friend WithEvents Icon_header As PictureBox
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents Button_save As Panel
+    Friend WithEvents Text_save As Label
+    Friend WithEvents Panel_title As Panel
+    Friend WithEvents Text_title As Label
+    Friend WithEvents Icon_title_2 As PictureBox
+    Friend WithEvents Icon_title_1 As PictureBox
+    Friend WithEvents Select_musics As ComboBox
+    Friend WithEvents Text_titlemusic As TextBox
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents valu_pagh_13 As NumericUpDown
+    Friend WithEvents valu_pagh_12 As NumericUpDown
+    Friend WithEvents valu_pagh_11 As NumericUpDown
+    Friend WithEvents valu_pagh_10 As NumericUpDown
+    Friend WithEvents valu_pagh_9 As NumericUpDown
+    Friend WithEvents valu_pagh_8 As NumericUpDown
+    Friend WithEvents valu_pagh_7 As NumericUpDown
+    Friend WithEvents valu_pagh_6 As NumericUpDown
+    Friend WithEvents valu_pagh_5 As NumericUpDown
+    Friend WithEvents valu_pagh_4 As NumericUpDown
+    Friend WithEvents valu_pagh_3 As NumericUpDown
+    Friend WithEvents valu_pagh_2 As NumericUpDown
+    Friend WithEvents valu_pagh_1 As NumericUpDown
+    Friend WithEvents Text_pagh_13 As TextBox
+    Friend WithEvents Text_pagh_12 As TextBox
+    Friend WithEvents Text_pagh_11 As TextBox
+    Friend WithEvents Text_pagh_10 As TextBox
+    Friend WithEvents Text_pagh_9 As TextBox
+    Friend WithEvents Text_pagh_8 As TextBox
+    Friend WithEvents Text_pagh_7 As TextBox
+    Friend WithEvents Text_pagh_6 As TextBox
+    Friend WithEvents Text_pagh_5 As TextBox
+    Friend WithEvents Text_pagh_4 As TextBox
+    Friend WithEvents Text_pagh_3 As TextBox
+    Friend WithEvents Text_pagh_2 As TextBox
+    Friend WithEvents Text_pagh_1 As TextBox
+    Friend WithEvents valu_typemusic As NumericUpDown
+    Friend WithEvents Icon_crthall_music As PictureBox
+    Friend WithEvents Minus_pagh_1 As PictureBox
+    Friend WithEvents Plus_pagh_1 As PictureBox
+    Friend WithEvents Minus_pagh_13 As PictureBox
+    Friend WithEvents Plus_pagh_13 As PictureBox
+    Friend WithEvents Minus_pagh_12 As PictureBox
+    Friend WithEvents Plus_pagh_12 As PictureBox
+    Friend WithEvents Minus_pagh_11 As PictureBox
+    Friend WithEvents Plus_pagh_11 As PictureBox
+    Friend WithEvents Minus_pagh_10 As PictureBox
+    Friend WithEvents Plus_pagh_10 As PictureBox
+    Friend WithEvents Minus_pagh_9 As PictureBox
+    Friend WithEvents Plus_pagh_9 As PictureBox
+    Friend WithEvents Minus_pagh_8 As PictureBox
+    Friend WithEvents Plus_pagh_8 As PictureBox
+    Friend WithEvents Minus_pagh_7 As PictureBox
+    Friend WithEvents Plus_pagh_7 As PictureBox
+    Friend WithEvents Minus_pagh_6 As PictureBox
+    Friend WithEvents Plus_pagh_6 As PictureBox
+    Friend WithEvents Minus_pagh_5 As PictureBox
+    Friend WithEvents Plus_pagh_5 As PictureBox
+    Friend WithEvents Minus_pagh_4 As PictureBox
+    Friend WithEvents Plus_pagh_4 As PictureBox
+    Friend WithEvents Minus_pagh_3 As PictureBox
+    Friend WithEvents Plus_pagh_3 As PictureBox
+    Friend WithEvents Minus_pagh_2 As PictureBox
+    Friend WithEvents Plus_pagh_2 As PictureBox
 End Class
