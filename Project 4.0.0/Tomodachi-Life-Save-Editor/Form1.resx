@@ -124,25 +124,25 @@
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAy
-        BAAAAk1TRnQBSQFMAwEBAAF4AQABeAEAAR8BAAEPAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABfAMA
-        AQ8DAAEBAQABIAUAARABHf8A/wAWAAE9Af//AOkAAfoB9AHmAf8BXAFlAW8B/wEAAQEBDwH/AQABBwEq
-        Af8JAAEYAUYB/wIAAQEB/wFBAU8BYQH/AgABIAH//wDFAAH6AfQB5gH/AfYB+wL/AfkB/QH+Af8B+gH0
-        AeYB/wH6AfQB5gH/AYgBiQGHAf8DhQH/AfoB9AHmAf8B+gH0AeYB/wH7Av0B/wGCAYUBiQH/AgABFAH/
-        /wDBAAH6AfQB5gH/Af0L/wP9Af8D+wH/A/4B/wP+Af8D/gH/A/4B/wH6AvwB/wH6AfQB5gH/AYQBhgGH
-        Af8BQwFFAUYB/wEwATQBNQH/ATQBQQFRAf//AK0AAfoB9AHmAf8B+gH0AeYB/wH9FP8B/gP/Af4K/wP+
-        Af8D/QH/A/4B/wP8Af8D/AH/AfoB9AHmAf8B+gH0AeYB//8AqQAB+gH0AeYB/wH6AfQB5gH/Af0D/wH8
-        Af4C/wH9D/8D/h3/AfoB9AHmAf8IAAEcAS4BRQH/AfoB9AHmAf8BCgElAUcB//8AlQAB+gH0AeYB/wH6
-        AfQB5gH/AfgB/hb/A/4Z/wH4Af4C/wH6AfQB5gH/AfoB9AHmAf8IAAH6AfQB5gH/AYgBiwGPAf8DAAH/
-        AgABAQH/AQABDQFFAf//AI0AAfoB9AHmAf8B/QX/Af4D/wH+Iv8B/gP/Af4G/wH6AfQB5gH/AfoB9AHm
-        Af8SAAEMAf8DAAH/AwAB/wMAAf8CAAEHAf//AI0AAfoB9AHmAf8B+gH0AeYB/wH9B/8B+AH9Av8B+gH0
-        AeYB/wH6AfQB5gH/AfoB9AHmAf8B+gH0AeYB/wH4Af4K/wP+Bf8B+gH0AeYB/wH6AfQB5gH/FgABIAH/
-        AwAB/wMAAf8DAAH/AwAB/wIAASUB//8ApQAB+gH0AeYB/wH6AfQB5gH/Af0B/gP/Af4D/wH+Av8B+AH+
-        Av8B+gH0AeYB/yIAAQUB/wMAAf8DAAH/AwAB/wIAAQMB//8ArQAB+gH0AeYB/wH6AfQB5gH/AfoB9AHm
-        Af8pAAECATkB/wMAAf8DAAH/AwAB/wMAAf8CAAEpAf//AOMAARMB/wMAAf8CAAEHAf//AOoAAQkBQgH/
-        AgABPAH//wD/AP8AawABQgFNAT4HAAE+AwABKAMAAXwDAAEPAwABAQEAAQEFAAHwFwAD/wEAA/8B/gwA
-        AfcC/wH+DAAB4QGHAf8B/gwAAcABAwH/Af4MAAHAAQABPwH+DAABgAEAAR8B/gwAAYABAAExAf4OAAEw
-        AX4OAAF4AT4MAAGAAQABfAEODAAB/wGAAf8BBgwAAf8B8QH/AYAMAAP/AeIMAAP/AfIMAAP/Af4MAAs=
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAm
+        BAAAAk1TRnQBSQFMAwEBAAGoAQABqAEAAR8BAAEPAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABfAMA
+        AQ8DAAEBAQABIAUAARABHf8A/wAWAAE3Af//AOkAAfoB9AHmAf8BVgFfAWkB/wIAAQkB/wEAAQEBJAH/
+        CQABEgFAAf8DAAH/ATsBSQFbAf8CAAEaAf//AMUAAfoB9AHmAf8B9gH7Av8B+QH9Af4B/wH6AfQB5gH/
+        AfoB9AHmAf8BiAGJAYcB/wOFAf8B+gH0AeYB/wH6AfQB5gH/AfsC/QH/AYIBhQGJAf8CAAEOAf//AMEA
+        AfoB9AHmAf8B/Qv/A/0B/wP7Af8D/gH/A/4B/wP+Af8D/gH/AfoC/AH/AfoB9AHmAf8BhAGGAYcB/wE9
+        AT8BQAH/ASoBLgEvAf8BLgE7AUsB//8ArQAB+gH0AeYB/wH6AfQB5gH/Af0U/wH+A/8B/gr/A/4B/wP9
+        Af8D/gH/A/wB/wP8Af8B+gH0AeYB/wH6AfQB5gH//wCpAAH6AfQB5gH/AfoB9AHmAf8B/QP/AfwB/gL/
+        Af0P/wP+Hf8B+gH0AeYB/wgAARYBKAE/Af8B+gH0AeYB/wEEAR8BQQH//wCVAAH6AfQB5gH/AfoB9AHm
+        Af8B+AH+Fv8D/hn/AfgB/gL/AfoB9AHmAf8B+gH0AeYB/wgAAfoB9AHmAf8BiAGLAY8B/wMAAf8DAAH/
+        AQABBwE/Af//AI0AAfoB9AHmAf8B/QX/Af4D/wH+Iv8B/gP/Af4G/wH6AfQB5gH/AfoB9AHmAf8SAAEG
+        Af8DAAH/AwAB/wMAAf8CAAEBAf//AI0AAfoB9AHmAf8B+gH0AeYB/wH9B/8B+AH9Av8B+gH0AeYB/wH6
+        AfQB5gH/AfoB9AHmAf8B+gH0AeYB/wH4Af4K/wP+Bf8B+gH0AeYB/wH6AfQB5gH/FgABGgH/AwAB/wMA
+        Af8DAAH/AwAB/wIAAR8B//8ApQAB+gH0AeYB/wH6AfQB5gH/Af0B/gP/Af4D/wH+Av8B+AH+Av8B+gH0
+        AeYB/yMAAf8DAAH/AwAB/wMAAf8DAAH//wCtAAH6AfQB5gH/AfoB9AHmAf8B+gH0AeYB/yoAATMB/wMA
+        Af8DAAH/AwAB/wMAAf8CAAEjAf//AOMAAQ0B/wMAAf8CAAEBAf//AOoAAQMBPAH/AgABNgH//wD/AP8A
+        awABQgFNAT4HAAE+AwABKAMAAXwDAAEPAwABAQEAAQEFAAHwFwAD/wEAA/8B/gwAAfcC/wH+DAAB4QGH
+        Af8B/gwAAcABAwH/Af4MAAHAAQABPwH+DAABgAEAAR8B/gwAAYABAAExAf4OAAEwAX4OAAF4AT4MAAGA
+        AQABfAEODAAB/wGAAf8BBgwAAf8B8QH/AYAMAAP/AeIMAAP/AfIMAAP/Af4MAAs=
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -198,7 +198,9 @@ Update save editor appareance
 Detect save file region (need to choose between EUR and USA version)
 Update special symbol feature
 Add Advance help (add more informations about features)
-Update features in settings, manual</value>
+Update features in settings, manual
+Add add or delete line to song
+Add edit song's type</value>
   </data>
   <data name="Settings_credits.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1638,7 +1640,7 @@ Visual Studio 2017- Microsoft Word - Microsoft Excel</value>
         uAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="Panel6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Panel_editsongslign.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
         EgAACxIB0t1+/AAAADBJREFUOE9jeH2l+z8leNSAUQNAeNQAoAEvLnb+pwQzPDhW958SzPDoZMN/8nHD

@@ -76,6 +76,20 @@ Public Class TL_SaveEditor
     Dim Pagh13 As String
     Dim Tmusc As String
     Dim Accesspagh As String
+    Dim ValPagh1 As String
+    Dim ValPagh2 As String
+    Dim ValPagh3 As String
+    Dim ValPagh4 As String
+    Dim ValPagh5 As String
+    Dim ValPagh6 As String
+    Dim ValPagh7 As String
+    Dim ValPagh8 As String
+    Dim ValPagh9 As String
+    Dim ValPagh10 As String
+    Dim ValPagh11 As String
+    Dim ValPagh12 As String
+    Dim ValPagh13 As String
+    Dim Typesong As String
 
     'form setting
     Private Sub TL_SaveEditor_FormClosing(sender As Object, e As EventArgs) Handles MyBase.FormClosing
@@ -193,6 +207,8 @@ Public Class TL_SaveEditor
             Check_resetnewsflash.Text = "Reset News flash"
             Check_resetitems.Text = "Reset all items"
             Check_resetrelationship.Text = "Reset all Mii's relationship"
+            Text_title_editsongs.Text = "Concert Hall"
+            Text_save_editsongs.Text = "Save"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_menu_open.Text = "Ouvrir"
             Text_menu_save.Text = "Enregistrer"
@@ -235,6 +251,8 @@ Public Class TL_SaveEditor
             Check_resetnewsflash.Text = "Réinitialiser les Flash info"
             Check_resetitems.Text = "Réinitialiser tout les objets"
             Check_resetrelationship.Text = "Réinitialiser toutes les relations des Mii"
+            Text_title_editsongs.Text = "Salle de Concert"
+            Text_save_editsongs.Text = "Enregistrer"
         End If
     End Sub
 
@@ -255,6 +273,7 @@ Public Class TL_SaveEditor
             Icon_part.Image = Nothing
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
+            Menu_concertedit.Visible = True
         ElseIf Filever_text.Text = "EU" Then
             TLSE_logo.Image = My.Resources.logo_EU
             TLSE_logo_update.Image = My.Resources.logo_EU_update
@@ -263,6 +282,7 @@ Public Class TL_SaveEditor
             Icon_part.Image = Nothing
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
+            Menu_concertedit.Visible = True
         ElseIf Filever_text.Text = "JP" Then
             TLSE_logo.Image = My.Resources.logo_JP
             TLSE_logo_update.Image = My.Resources.logo_JP_update
@@ -271,6 +291,7 @@ Public Class TL_SaveEditor
             Icon_part.Image = My.Resources.parti
             Icon_tour.Enabled = False
             Icon_part.Enabled = False
+            Menu_concertedit.Visible = False
         ElseIf Filever_text.Text = "KR" Then
             TLSE_logo.Image = My.Resources.logo_KR
             TLSE_logo_update.Image = My.Resources.logo_KR_update
@@ -279,6 +300,7 @@ Public Class TL_SaveEditor
             Icon_part.Image = Nothing
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
+            Menu_concertedit.Visible = False
         ElseIf Filever_text.Text = "" Then
             TLSE_logo.Image = My.Resources.logo_US
             TLSE_logo_update.Image = My.Resources.logo_US_update
@@ -287,6 +309,7 @@ Public Class TL_SaveEditor
             Icon_part.Image = Nothing
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
+            Menu_concertedit.Visible = True
         End If
     End Sub
     'end form setting
@@ -1669,6 +1692,12 @@ Public Class TL_SaveEditor
             AdvH_resetitems.Visible = True
             AdvH_resetrelationship.Visible = True
             AdvH_header.Visible = True
+            AdvH_selectsongs.Visible = True
+            AdvH_titlesong.Visible = True
+            AdvH_typesong.Visible = True
+            AdvH_plusminussong.Visible = True
+            AdvH_editsonglign.Visible = True
+            AdvH_savesong.Visible = True
         ElseIf Setting_Advhelp.Checked = False Then
             Panel_Advhelp.Visible = False
             AdvH_islandname.Visible = False
@@ -1699,6 +1728,12 @@ Public Class TL_SaveEditor
             AdvH_resetitems.Visible = False
             AdvH_resetrelationship.Visible = False
             AdvH_header.Visible = False
+            AdvH_selectsongs.Visible = False
+            AdvH_titlesong.Visible = False
+            AdvH_typesong.Visible = False
+            AdvH_plusminussong.Visible = False
+            AdvH_editsonglign.Visible = False
+            AdvH_savesong.Visible = False
         End If
     End Sub
 
@@ -5618,106 +5653,106 @@ Public Class TL_SaveEditor
     'end repair save file block
 
     'concert edit block
-    Private Sub Select_musics_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_musics.SelectedIndexChanged
-        If Select_musics.SelectedItem = Select_musics.Items.Item(0) Then
+    Private Sub Select_songs_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_songs.SelectedIndexChanged
+        If Select_songs.SelectedItem = Select_songs.Items.Item(0) Then
             Accesspagh = &H0
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(1) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(1) Then
             Accesspagh = &H5C4
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(2) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(2) Then
             Accesspagh = &H5C4 * 2
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(3) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(3) Then
             Accesspagh = &H5C4 * 3
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(4) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(4) Then
             Accesspagh = &H5C4 * 4
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(5) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(5) Then
             Accesspagh = &H5C4 * 5
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(6) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(6) Then
             Accesspagh = &H5C4 * 6
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(7) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(7) Then
             Accesspagh = &H5C4 * 7
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(8) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(8) Then
             Accesspagh = &H5C4 * 8
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(9) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(9) Then
             Accesspagh = &H5C4 * 9
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(10) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(10) Then
             Accesspagh = &H5C4 * 10
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(11) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(11) Then
             Accesspagh = &H5C4 * 11
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(12) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(12) Then
             Accesspagh = &H5C4 * 12
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(13) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(13) Then
             Accesspagh = &H5C4 * 13
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(14) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(14) Then
             Accesspagh = &H5C4 * 14
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(15) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(15) Then
             Accesspagh = &H5C4 * 15
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(16) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(16) Then
             Accesspagh = &H5C4 * 16
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(17) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(17) Then
             Accesspagh = &H5C4 * 17
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(18) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(18) Then
             Accesspagh = &H5C4 * 18
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(19) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(19) Then
             Accesspagh = &H5C4 * 19
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(20) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(20) Then
             Accesspagh = &H5C4 * 20
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(21) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(21) Then
             Accesspagh = &H5C4 * 21
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(22) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(22) Then
             Accesspagh = &H5C4 * 22
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(23) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(23) Then
             Accesspagh = &H5C4 * 23
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(24) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(24) Then
             Accesspagh = &H5C4 * 24
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(25) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(25) Then
             Accesspagh = &H5C4 * 25
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(26) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(26) Then
             Accesspagh = &H5C4 * 26
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(27) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(27) Then
             Accesspagh = &H5C4 * 27
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(28) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(28) Then
             Accesspagh = &H5C4 * 28
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(29) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(29) Then
             Accesspagh = &H5C4 * 29
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(30) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(30) Then
             Accesspagh = &H5C4 * 30
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(31) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(31) Then
             Accesspagh = &H5C4 * 31
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(32) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(32) Then
             Accesspagh = &H5C4 * 32
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(33) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(33) Then
             Accesspagh = &H5C4 * 33
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(34) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(34) Then
             Accesspagh = &H5C4 * 34
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(35) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(35) Then
             Accesspagh = &H5C4 * 35
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(36) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(36) Then
             Accesspagh = &H5C4 * 36
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(37) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(37) Then
             Accesspagh = &H5C4 * 37
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(38) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(38) Then
             Accesspagh = &H5C4 * 38
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(39) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(39) Then
             Accesspagh = &H5C4 * 39
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(40) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(40) Then
             Accesspagh = &H5C4 * 40
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(41) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(41) Then
             Accesspagh = &H5C4 * 41
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(42) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(42) Then
             Accesspagh = &H5C4 * 42
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(43) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(43) Then
             Accesspagh = &H5C4 * 43
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(44) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(44) Then
             Accesspagh = &H5C4 * 44
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(45) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(45) Then
             Accesspagh = &H5C4 * 45
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(46) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(46) Then
             Accesspagh = &H5C4 * 46
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(47) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(47) Then
             Accesspagh = &H5C4 * 47
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(48) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(48) Then
             Accesspagh = &H5C4 * 48
-        ElseIf Select_musics.SelectedItem = Select_musics.Items.Item(49) Then
+        ElseIf Select_songs.SelectedItem = Select_songs.Items.Item(49) Then
             Accesspagh = &H5C4 * 49
         End If
         readmusic()
@@ -5727,85 +5762,110 @@ Public Class TL_SaveEditor
         Try
             Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
             Reader.Position = &H17B6E4 + Accesspagh
+            ValPagh1 = Reader.Position
             valu_pagh_1.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh
             Pagh1 = Reader.Position
             Text_pagh_1.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + &H68
+            ValPagh2 = Reader.Position
             valu_pagh_2.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + &H68
             Pagh2 = Reader.Position
             Text_pagh_2.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 2)
+            ValPagh3 = Reader.Position
             valu_pagh_3.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 2)
             Pagh3 = Reader.Position
             Text_pagh_3.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 3)
+            ValPagh4 = Reader.Position
             valu_pagh_4.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 3)
             Pagh4 = Reader.Position
             Text_pagh_4.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 4)
+            ValPagh5 = Reader.Position
             valu_pagh_5.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 4)
             Pagh5 = Reader.Position
             Text_pagh_5.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 5)
+            ValPagh6 = Reader.Position
             valu_pagh_6.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 5)
             Pagh6 = Reader.Position
             Text_pagh_6.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 6)
+            ValPagh7 = Reader.Position
             valu_pagh_7.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 6)
             Pagh7 = Reader.Position
             Text_pagh_7.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 7)
+            ValPagh8 = Reader.Position
             valu_pagh_8.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 7)
             Pagh8 = Reader.Position
             Text_pagh_8.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 8)
+            ValPagh9 = Reader.Position
             valu_pagh_9.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 8)
             Pagh9 = Reader.Position
             Text_pagh_9.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 9)
+            ValPagh10 = Reader.Position
             valu_pagh_10.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 9)
             Pagh10 = Reader.Position
             Text_pagh_10.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 10)
+            ValPagh11 = Reader.Position
             valu_pagh_11.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 10)
             Pagh11 = Reader.Position
             Text_pagh_11.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 11)
+            ValPagh12 = Reader.Position
             valu_pagh_12.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 11)
             Pagh12 = Reader.Position
             Text_pagh_12.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17B6E4 + Accesspagh + (&H68 * 12)
+            ValPagh13 = Reader.Position
             valu_pagh_13.Value = Reader.ReadByte
             Reader.Position = &H17B6EA + Accesspagh + (&H68 * 12)
             Pagh13 = Reader.Position
             Text_pagh_13.Text = Reader.ReadUnicodeString(48)
             Reader.Position = &H17BC2C + Accesspagh
             Tmusc = Reader.Position
-            Text_titlemusic.Text = Reader.ReadUnicodeString(32)
+            Text_titlesong.Text = Reader.ReadUnicodeString(32)
             Reader.Position = &H17BC71 + Accesspagh
-            'Tmusc = Reader.Position
-            valu_typemusic.Value = Reader.ReadByte
+            Typesong = Reader.Position
+            valu_typesong.Value = Reader.ReadByte
         Catch ex As Exception
-            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read this music, please report this issue"
-                TLSE_dialog.ShowDialog()
+            If Text_menu_save.Visible = True Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read this music, please report this issue"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette musique a échoué, veuilleez signaler cet erreur"
+                    TLSE_dialog.ShowDialog()
+                End If
+            Else
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Open a save file first and retry"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Ouvrez une sauvegarde avant et réessayez"
+                    TLSE_dialog.ShowDialog()
+                End If
             End If
-            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture de cette musique a échoué, veuilleez signaler cet erreur"
-                TLSE_dialog.ShowDialog()
-            End If
+
         End Try
     End Sub
 
@@ -5913,8 +5973,9 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Text_save_Click(sender As Object, e As EventArgs) Handles Text_save.Click
+    Private Sub Text_save_editsongs_Click(sender As Object, e As EventArgs) Handles Text_save_editsongs.Click
         Try
+            'package.IO
             Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
             If valu_pagh_1.Value = 14 Then
                 For i As Integer = 0 To 95
@@ -6025,7 +6086,39 @@ Public Class TL_SaveEditor
                 Writer.WriteInt8(0)
             Next
             Writer.Position = Tmusc
-            Writer.WriteUnicodeString(Text_titlemusic.Text)
+            Writer.WriteUnicodeString(Text_titlesong.Text)
+            'end package.IO
+            'filestream save songs
+            Dim ws As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            ws.Position = ValPagh1
+            ws.WriteByte(valu_pagh_1.Value)
+            ws.Position = ValPagh2
+            ws.WriteByte(valu_pagh_2.Value)
+            ws.Position = ValPagh3
+            ws.WriteByte(valu_pagh_3.Value)
+            ws.Position = ValPagh4
+            ws.WriteByte(valu_pagh_4.Value)
+            ws.Position = ValPagh5
+            ws.WriteByte(valu_pagh_5.Value)
+            ws.Position = ValPagh6
+            ws.WriteByte(valu_pagh_6.Value)
+            ws.Position = ValPagh7
+            ws.WriteByte(valu_pagh_7.Value)
+            ws.Position = ValPagh8
+            ws.WriteByte(valu_pagh_8.Value)
+            ws.Position = ValPagh9
+            ws.WriteByte(valu_pagh_9.Value)
+            ws.Position = ValPagh10
+            ws.WriteByte(valu_pagh_10.Value)
+            ws.Position = ValPagh11
+            ws.WriteByte(valu_pagh_11.Value)
+            ws.Position = ValPagh12
+            ws.WriteByte(valu_pagh_12.Value)
+            ws.Position = ValPagh13
+            ws.WriteByte(valu_pagh_13.Value)
+            ws.Position = Typesong
+            ws.WriteByte(valu_typesong.Value)
+            'end filestream save songs
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 TLSE_dialog.Text_TLSE_dialog.Text = "Editing of this song has been saved"
                 TLSE_dialog.ShowDialog()
@@ -6035,43 +6128,164 @@ Public Class TL_SaveEditor
                 TLSE_dialog.ShowDialog()
             End If
         Catch ex As Exception
-            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to write savedataArc.txt, make sure you choose right save file version and to have opened a file, or report this issue"
-                TLSE_dialog.ShowDialog()
-            End If
-            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                TLSE_dialog.Text_TLSE_dialog.Text = "L'écriture de savedataArc.txt a échoué, soyez sûr d'avoir choisi la bonne version de sauvegarde et d'avoir ouvert un fichier, ou signalez cet erreur"
-                TLSE_dialog.ShowDialog()
+            If Text_menu_save.Visible = True Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Failed to edit this song, please report this issue"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "L'édition de cette musique a échoué, veuillez signalez cet erreur"
+                    TLSE_dialog.ShowDialog()
+                End If
+            Else
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Open a save file first and retry"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Ouvrez une sauvegarde avant et réessayez"
+                    TLSE_dialog.ShowDialog()
+                End If
             End If
         End Try
     End Sub
 
-    Private Sub valu_typemusic_ValueChanged(sender As Object, e As EventArgs) Handles valu_typemusic.ValueChanged
-        If valu_typemusic.Value = 0 Then
+    Private Sub valu_typesong_ValueChanged(sender As Object, e As EventArgs) Handles valu_typesong.ValueChanged
+        If valu_typesong.Value = 0 Then
             Icon_crthall_music.Image = My.Resources.icon_crthall_metal
-        ElseIf valu_typemusic.Value = 1 Then
+        ElseIf valu_typesong.Value = 1 Then
             Icon_crthall_music.Image = My.Resources.icon_crthall_pop
-        ElseIf valu_typemusic.Value = 2 Then
+        ElseIf valu_typesong.Value = 2 Then
             Icon_crthall_music.Image = My.Resources.icon_crthall_rockroll
-        ElseIf valu_typemusic.Value = 3 Then
+        ElseIf valu_typesong.Value = 3 Then
             Icon_crthall_music.Image = My.Resources.icon_crthall_rap
-        ElseIf valu_typemusic.Value = 4 Then
+        ElseIf valu_typesong.Value = 4 Then
             Icon_crthall_music.Image = My.Resources.icon_crthall_ballad
-        ElseIf valu_typemusic.Value = 5 Then
+        ElseIf valu_typesong.Value = 5 Then
             Icon_crthall_music.Image = My.Resources.icon_crthall_opera
-        ElseIf valu_typemusic.Value = 6 Then
+        ElseIf valu_typesong.Value = 6 Then
             Icon_crthall_music.Image = My.Resources.icon_crthall_techno
-        ElseIf valu_typemusic.Value = 7 Then
+        ElseIf valu_typesong.Value = 7 Then
             Icon_crthall_music.Image = My.Resources.icon_crthall_musical
         End If
     End Sub
 
     Private Sub Icon_crthall_music_Click(sender As Object, e As EventArgs) Handles Icon_crthall_music.Click
-        If valu_typemusic.Value >= 7 Then
-            valu_typemusic.Value = 0
+        If valu_typesong.Value >= 7 Then
+            valu_typesong.Value = 0
         Else
-            valu_typemusic.Value = valu_typemusic.Value + 1
+            valu_typesong.Value = valu_typesong.Value + 1
         End If
+        Locklignpagh()
+        If valu_typesong.Value = 0 Then
+            valu_pagh_1.Value = 14
+            valu_pagh_2.Value = 14
+            valu_pagh_3.Value = 14
+            valu_pagh_4.Value = 14
+            valu_pagh_5.Value = 14
+            valu_pagh_6.Value = 14
+            valu_pagh_7.Value = 14
+            valu_pagh_8.Value = 14
+        ElseIf valu_typesong.Value = 1 Then
+            valu_pagh_1.Value = 14
+            valu_pagh_2.Value = 14
+            valu_pagh_3.Value = 14
+            valu_pagh_4.Value = 14
+            valu_pagh_5.Value = 14
+            valu_pagh_6.Value = 14
+            valu_pagh_7.Value = 14
+            valu_pagh_8.Value = 14
+            valu_pagh_9.Value = 14
+            valu_pagh_10.Value = 14
+            valu_pagh_11.Value = 14
+        ElseIf valu_typesong.Value = 2 Then
+            valu_pagh_1.Value = 14
+            valu_pagh_2.Value = 14
+            valu_pagh_3.Value = 14
+            valu_pagh_4.Value = 14
+            valu_pagh_5.Value = 14
+            valu_pagh_6.Value = 14
+            valu_pagh_7.Value = 14
+            valu_pagh_8.Value = 14
+            valu_pagh_9.Value = 14
+            valu_pagh_10.Value = 14
+        ElseIf valu_typesong.Value = 3 Then
+            valu_pagh_1.Value = 14
+            valu_pagh_2.Value = 14
+            valu_pagh_3.Value = 14
+            valu_pagh_4.Value = 14
+            valu_pagh_5.Value = 14
+            valu_pagh_6.Value = 14
+            valu_pagh_7.Value = 14
+            valu_pagh_8.Value = 14
+            valu_pagh_9.Value = 14
+            valu_pagh_10.Value = 14
+            valu_pagh_11.Value = 14
+            valu_pagh_12.Value = 14
+            valu_pagh_13.Value = 14
+        ElseIf valu_typesong.Value = 4 Then
+            valu_pagh_1.Value = 14
+            valu_pagh_2.Value = 14
+            valu_pagh_3.Value = 14
+            valu_pagh_4.Value = 14
+            valu_pagh_5.Value = 14
+            valu_pagh_6.Value = 14
+            valu_pagh_7.Value = 14
+            valu_pagh_8.Value = 14
+            valu_pagh_9.Value = 14
+            valu_pagh_10.Value = 14
+            valu_pagh_11.Value = 14
+            valu_pagh_12.Value = 14
+            valu_pagh_13.Value = 14
+        ElseIf valu_typesong.Value = 5 Then
+            valu_pagh_1.Value = 14
+            valu_pagh_2.Value = 14
+            valu_pagh_3.Value = 14
+            valu_pagh_4.Value = 14
+            valu_pagh_5.Value = 14
+            valu_pagh_6.Value = 14
+            valu_pagh_7.Value = 14
+            valu_pagh_8.Value = 14
+            valu_pagh_9.Value = 14
+            valu_pagh_10.Value = 14
+            valu_pagh_11.Value = 14
+        ElseIf valu_typesong.Value = 6 Then
+            valu_pagh_1.Value = 14
+            valu_pagh_2.Value = 14
+            valu_pagh_3.Value = 14
+            valu_pagh_4.Value = 14
+            valu_pagh_5.Value = 14
+            valu_pagh_6.Value = 14
+            valu_pagh_7.Value = 14
+            valu_pagh_8.Value = 14
+            valu_pagh_9.Value = 14
+            valu_pagh_10.Value = 14
+            valu_pagh_11.Value = 14
+        ElseIf valu_typesong.Value = 7 Then
+            valu_pagh_1.Value = 14
+            valu_pagh_2.Value = 14
+            valu_pagh_3.Value = 14
+            valu_pagh_4.Value = 14
+            valu_pagh_5.Value = 14
+            valu_pagh_6.Value = 14
+            valu_pagh_7.Value = 14
+            valu_pagh_8.Value = 14
+            valu_pagh_9.Value = 14
+            valu_pagh_10.Value = 14
+        End If
+    End Sub
+
+    Private Sub Icon_crthall_music_MouseMove(sender As Object, e As EventArgs) Handles Icon_crthall_music.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to change song's type"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour changer le type de la chansons"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_crthall_music_MouseLeave(sender As Object, e As EventArgs) Handles Icon_crthall_music.MouseLeave
+        Panel_description.Visible = False
     End Sub
 
     Private Sub Plus_pagh_1_Click(sender As Object, e As EventArgs) Handles Plus_pagh_1.Click
@@ -6082,5 +6296,218 @@ Public Class TL_SaveEditor
         Text_pagh_1.Text = ""
         valu_pagh_1.Value = 0
     End Sub
+
+    Private Sub Plus_pagh_2_Click(sender As Object, e As EventArgs) Handles Plus_pagh_2.Click
+        valu_pagh_2.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_2_Click(sender As Object, e As EventArgs) Handles Minus_pagh_2.Click
+        Text_pagh_2.Text = ""
+        valu_pagh_2.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_3_Click(sender As Object, e As EventArgs) Handles Plus_pagh_3.Click
+        valu_pagh_3.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_3_Click(sender As Object, e As EventArgs) Handles Minus_pagh_3.Click
+        Text_pagh_3.Text = ""
+        valu_pagh_3.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_4_Click(sender As Object, e As EventArgs) Handles Plus_pagh_4.Click
+        valu_pagh_4.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_4_Click(sender As Object, e As EventArgs) Handles Minus_pagh_4.Click
+        Text_pagh_4.Text = ""
+        valu_pagh_4.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_5_Click(sender As Object, e As EventArgs) Handles Plus_pagh_5.Click
+        valu_pagh_5.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_5_Click(sender As Object, e As EventArgs) Handles Minus_pagh_5.Click
+        Text_pagh_5.Text = ""
+        valu_pagh_5.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_6_Click(sender As Object, e As EventArgs) Handles Plus_pagh_6.Click
+        valu_pagh_6.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_6_Click(sender As Object, e As EventArgs) Handles Minus_pagh_6.Click
+        Text_pagh_6.Text = ""
+        valu_pagh_6.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_7_Click(sender As Object, e As EventArgs) Handles Plus_pagh_7.Click
+        valu_pagh_7.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_7_Click(sender As Object, e As EventArgs) Handles Minus_pagh_7.Click
+        Text_pagh_7.Text = ""
+        valu_pagh_7.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_8_Click(sender As Object, e As EventArgs) Handles Plus_pagh_8.Click
+        valu_pagh_8.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_8_Click(sender As Object, e As EventArgs) Handles Minus_pagh_8.Click
+        Text_pagh_8.Text = ""
+        valu_pagh_8.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_9_Click(sender As Object, e As EventArgs) Handles Plus_pagh_9.Click
+        valu_pagh_9.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_9_Click(sender As Object, e As EventArgs) Handles Minus_pagh_9.Click
+        Text_pagh_9.Text = ""
+        valu_pagh_9.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_10_Click(sender As Object, e As EventArgs) Handles Plus_pagh_10.Click
+        valu_pagh_10.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_10_Click(sender As Object, e As EventArgs) Handles Minus_pagh_10.Click
+        Text_pagh_10.Text = ""
+        valu_pagh_10.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_11_Click(sender As Object, e As EventArgs) Handles Plus_pagh_11.Click
+        valu_pagh_11.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_11_Click(sender As Object, e As EventArgs) Handles Minus_pagh_11.Click
+        Text_pagh_11.Text = ""
+        valu_pagh_11.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_12_Click(sender As Object, e As EventArgs) Handles Plus_pagh_12.Click
+        valu_pagh_12.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_12_Click(sender As Object, e As EventArgs) Handles Minus_pagh_12.Click
+        Text_pagh_12.Text = ""
+        valu_pagh_12.Value = 0
+    End Sub
+
+    Private Sub Plus_pagh_13_Click(sender As Object, e As EventArgs) Handles Plus_pagh_13.Click
+        valu_pagh_13.Value = 14
+    End Sub
+
+    Private Sub Minus_pagh_13_Click(sender As Object, e As EventArgs) Handles Minus_pagh_13.Click
+        Text_pagh_13.Text = ""
+        valu_pagh_13.Value = 0
+    End Sub
+
+    Public Sub Locklignpagh()
+        valu_pagh_1.Value = 0
+        valu_pagh_2.Value = 0
+        valu_pagh_3.Value = 0
+        valu_pagh_4.Value = 0
+        valu_pagh_5.Value = 0
+        valu_pagh_6.Value = 0
+        valu_pagh_7.Value = 0
+        valu_pagh_8.Value = 0
+        valu_pagh_9.Value = 0
+        valu_pagh_10.Value = 0
+        valu_pagh_11.Value = 0
+        valu_pagh_12.Value = 0
+        valu_pagh_13.Value = 0
+    End Sub
     'end concert edit block
+
+    ' advance help concert edit
+    Private Sub AdvH_selectsongs_Click(sender As Object, e As EventArgs) Handles AdvH_selectsongs.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Select_songs.Location.X + (Select_songs.Width / 2), Select_songs.Location.Y + (Select_songs.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can select a song you want to edit"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "vous pouvez sélectionner une chanson que vous voulez éditer"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_titlesong_Click(sender As Object, e As EventArgs) Handles AdvH_titlesong.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Text_titlesong.Location.X + (Text_titlesong.Width / 2), Text_titlesong.Location.Y + (Text_titlesong.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This is your song's title"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ceci est le title de votre chanson"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 5
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_typesong_Click(sender As Object, e As EventArgs) Handles AdvH_typesong.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_crthall_music.Location.X + (Icon_crthall_music.Width / 2), Icon_crthall_music.Location.Y + (Icon_crthall_music.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click here to changes your song's type"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer ici pour changer le type de votre chanson"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_plusminussong_Click(sender As Object, e As EventArgs) Handles AdvH_plusminussong.Click
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_right
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Plus_pagh_7.Location.X - (TLSE_dialog.Icon_reference_panel.Width - 6), Plus_pagh_7.Location.Y + (Plus_pagh_7.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can click on 'More' symbols to add a line to your song"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez cliquer sur les symboles 'plus' pour ajouter une ligne à votre chanson"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Minus_pagh_7.Location.X + (Minus_pagh_7.Width / 2), Minus_pagh_7.Location.Y + (Minus_pagh_7.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "And on 'Less' symbols to delete a line on your song"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Et sur les symboles 'Moins' pour supprimer une ligne à votre chanson"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_editsonglign_Click(sender As Object, e As EventArgs) Handles AdvH_editsonglign.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_editsongslign.Location.X + (Panel_editsongslign.Width / 2), Panel_editsongslign.Location.Y + (Panel_editsongslign.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit your songs here, you can add or delete line to do weird songs"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer vos chansons ici, vous pouvez ajouter ou supprimer des lignes pour faire des chansons bizarre"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 1
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_savesong_Click(sender As Object, e As EventArgs) Handles AdvH_savesong.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Button_save.Location.X + (Button_save.Width / 2), Button_save.Location.Y + (Button_save.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Click here to save changes in your songs" & vbNewLine & vbNewLine & "If you have an error : make sure your save file is not in a specific location (like Onedrive folder)"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Cliquez ici pour enregistrer les changements dans vos chansons" & vbNewLine & vbNewLine & "Si vous avez une erreur : soyez sûr que votre fichier de sauvegarde ne se trouve pas dans un endroit spécifique (comme le dossier Onedrive)"
+        End If
+        TLSE_dialog.ShowDialog()
+    End Sub
+    ' end advance help concert edit
 End Class
