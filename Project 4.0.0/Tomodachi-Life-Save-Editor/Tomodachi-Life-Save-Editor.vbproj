@@ -157,6 +157,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\Icon_untreasures.png" />
+    <None Include="Resources\Icon_uninteriors.png" />
+    <None Include="Resources\Icon_unhatsstsp.png" />
+    <None Include="Resources\Icon_unhats.png" />
+    <None Include="Resources\Icon_ungoods.png" />
+    <None Include="Resources\Icon_unfoodsspe.png" />
+    <None Include="Resources\Icon_unfoods.png" />
+    <None Include="Resources\Icon_unclothesstsp.png" />
+    <None Include="Resources\Icon_unclothes.png" />
+    <None Include="Resources\icon_advedititems.png" />
+    <None Include="Resources\bg_unlocknumb.png" />
+    <None Include="Resources\bg_itemspanel.png" />
+    <None Include="Resources\bg_ft_items.png" />
     <None Include="Resources\icon_minus.png" />
     <None Include="Resources\icon_plus.png" />
     <None Include="Resources\icon_crthall_techno.png" />

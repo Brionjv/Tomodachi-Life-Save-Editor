@@ -371,6 +371,69 @@ Partial Class TL_SaveEditor
         Me.TextBox_fpath = New System.Windows.Forms.TextBox()
         Me.Timer_done = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_itemsedit = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Title_itemsedit_foods = New System.Windows.Forms.Label()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Check_delete_foods = New System.Windows.Forms.CheckBox()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.valu_itemsedit_foods = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_itemsedit_foods = New System.Windows.Forms.PictureBox()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Title_itemsedit_clothes = New System.Windows.Forms.Label()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.Check_delete_clothes = New System.Windows.Forms.CheckBox()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.valu_itemsedit_clothes = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_itemsedit_clothes = New System.Windows.Forms.PictureBox()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Title_itemsedit_ssclothes = New System.Windows.Forms.Label()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.Check_delete_ssclothes = New System.Windows.Forms.CheckBox()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.valu_itemsedit_ssclothes = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_itemsedit_ssclothes = New System.Windows.Forms.PictureBox()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.Title_itemsedit_hats = New System.Windows.Forms.Label()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.Check_delete_hats = New System.Windows.Forms.CheckBox()
+        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.valu_itemsedit_hats = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_itemsedit_hats = New System.Windows.Forms.PictureBox()
+        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Title_itemsedit_sshats = New System.Windows.Forms.Label()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.Check_delete_sshats = New System.Windows.Forms.CheckBox()
+        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.valu_itemsedit_sshats = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_itemsedit_sshats = New System.Windows.Forms.PictureBox()
+        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.Title_itemsedit_interiors = New System.Windows.Forms.Label()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.Check_delete_interiors = New System.Windows.Forms.CheckBox()
+        Me.Panel22 = New System.Windows.Forms.Panel()
+        Me.valu_itemsedit_interiors = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_itemsedit_interiors = New System.Windows.Forms.PictureBox()
+        Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.Title_itemsedit_goodsitems = New System.Windows.Forms.Label()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.Check_delete_goodsitems = New System.Windows.Forms.CheckBox()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.valu_itemsedit_goodsitems = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_itemsedit_goodsitems = New System.Windows.Forms.PictureBox()
+        Me.Panel25 = New System.Windows.Forms.Panel()
+        Me.Title_itemsedit_treasures = New System.Windows.Forms.Label()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.Check_delete_treasures = New System.Windows.Forms.CheckBox()
+        Me.Panel26 = New System.Windows.Forms.Panel()
+        Me.valu_itemsedit_treasures = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_itemsedit_treasures = New System.Windows.Forms.PictureBox()
+        Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.Title_itemsedit_spefoods = New System.Windows.Forms.Label()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.Check_delete_spefoods = New System.Windows.Forms.CheckBox()
+        Me.Panel28 = New System.Windows.Forms.Panel()
+        Me.valu_itemsedit_spefoods = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_itemsedit_spefoods = New System.Windows.Forms.PictureBox()
         Me.Panel_concertedit = New System.Windows.Forms.Panel()
         Me.AdvH_savesong = New System.Windows.Forms.PictureBox()
         Me.AdvH_plusminussong = New System.Windows.Forms.PictureBox()
@@ -441,6 +504,8 @@ Partial Class TL_SaveEditor
         Me.Text_pagh_2 = New System.Windows.Forms.TextBox()
         Me.Text_pagh_1 = New System.Windows.Forms.TextBox()
         Me.Icon_crthall_music = New System.Windows.Forms.PictureBox()
+        Me.Panel29 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_header.SuspendLayout()
@@ -673,6 +738,52 @@ Partial Class TL_SaveEditor
         Me.Panel_extractsave.SuspendLayout()
         Me.Panel_citratomo.SuspendLayout()
         Me.Panel_restoresave.SuspendLayout()
+        Me.Panel_itemsedit.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel20.SuspendLayout()
+        CType(Me.valu_itemsedit_foods, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemsedit_foods, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel7.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel8.SuspendLayout()
+        CType(Me.valu_itemsedit_clothes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemsedit_clothes, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel12.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel13.SuspendLayout()
+        CType(Me.valu_itemsedit_ssclothes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemsedit_ssclothes, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel15.SuspendLayout()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel16.SuspendLayout()
+        CType(Me.valu_itemsedit_hats, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemsedit_hats, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel17.SuspendLayout()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel18.SuspendLayout()
+        CType(Me.valu_itemsedit_sshats, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemsedit_sshats, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel21.SuspendLayout()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel22.SuspendLayout()
+        CType(Me.valu_itemsedit_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemsedit_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel23.SuspendLayout()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel24.SuspendLayout()
+        CType(Me.valu_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel25.SuspendLayout()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel26.SuspendLayout()
+        CType(Me.valu_itemsedit_treasures, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemsedit_treasures, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel27.SuspendLayout()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel28.SuspendLayout()
+        CType(Me.valu_itemsedit_spefoods, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemsedit_spefoods, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_concertedit.SuspendLayout()
         CType(Me.AdvH_savesong, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_plusminussong, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -726,6 +837,7 @@ Partial Class TL_SaveEditor
         CType(Me.valu_pagh_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_pagh_1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_crthall_music, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel29.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -4900,12 +5012,760 @@ Partial Class TL_SaveEditor
         '
         'Panel_itemsedit
         '
-        Me.Panel_itemsedit.BackgroundImage = CType(resources.GetObject("Panel_itemsedit.BackgroundImage"), System.Drawing.Image)
+        Me.Panel_itemsedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_ft_items
+        Me.Panel_itemsedit.Controls.Add(Me.Panel29)
+        Me.Panel_itemsedit.Controls.Add(Me.Panel6)
+        Me.Panel_itemsedit.Controls.Add(Me.Panel7)
+        Me.Panel_itemsedit.Controls.Add(Me.Panel12)
+        Me.Panel_itemsedit.Controls.Add(Me.Panel15)
+        Me.Panel_itemsedit.Controls.Add(Me.Panel17)
+        Me.Panel_itemsedit.Controls.Add(Me.Panel21)
+        Me.Panel_itemsedit.Controls.Add(Me.Panel23)
+        Me.Panel_itemsedit.Controls.Add(Me.Panel25)
+        Me.Panel_itemsedit.Controls.Add(Me.Panel27)
         Me.Panel_itemsedit.Location = New System.Drawing.Point(152, 77)
         Me.Panel_itemsedit.Name = "Panel_itemsedit"
         Me.Panel_itemsedit.Size = New System.Drawing.Size(676, 540)
         Me.Panel_itemsedit.TabIndex = 97
         Me.Panel_itemsedit.Visible = False
+        '
+        'Panel6
+        '
+        Me.Panel6.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel6.Controls.Add(Me.Title_itemsedit_foods)
+        Me.Panel6.Controls.Add(Me.PictureBox6)
+        Me.Panel6.Controls.Add(Me.Check_delete_foods)
+        Me.Panel6.Controls.Add(Me.Panel20)
+        Me.Panel6.Controls.Add(Me.Icon_itemsedit_foods)
+        Me.Panel6.Location = New System.Drawing.Point(32, 32)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(200, 150)
+        Me.Panel6.TabIndex = 18
+        '
+        'Title_itemsedit_foods
+        '
+        Me.Title_itemsedit_foods.BackColor = System.Drawing.Color.Transparent
+        Me.Title_itemsedit_foods.Location = New System.Drawing.Point(83, 3)
+        Me.Title_itemsedit_foods.Name = "Title_itemsedit_foods"
+        Me.Title_itemsedit_foods.Size = New System.Drawing.Size(114, 28)
+        Me.Title_itemsedit_foods.TabIndex = 73
+        Me.Title_itemsedit_foods.Text = "Foods"
+        Me.Title_itemsedit_foods.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
+        Me.PictureBox6.Location = New System.Drawing.Point(167, 117)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox6.TabIndex = 72
+        Me.PictureBox6.TabStop = False
+        '
+        'Check_delete_foods
+        '
+        Me.Check_delete_foods.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_delete_foods.BackColor = System.Drawing.Color.White
+        Me.Check_delete_foods.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_delete_foods.FlatAppearance.BorderSize = 0
+        Me.Check_delete_foods.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_foods.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_delete_foods.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_foods.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_delete_foods.Location = New System.Drawing.Point(8, 86)
+        Me.Check_delete_foods.Name = "Check_delete_foods"
+        Me.Check_delete_foods.Size = New System.Drawing.Size(185, 23)
+        Me.Check_delete_foods.TabIndex = 71
+        Me.Check_delete_foods.Text = "Delete all"
+        Me.Check_delete_foods.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_delete_foods.UseVisualStyleBackColor = False
+        '
+        'Panel20
+        '
+        Me.Panel20.BackColor = System.Drawing.Color.Transparent
+        Me.Panel20.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_unlocknumb
+        Me.Panel20.Controls.Add(Me.valu_itemsedit_foods)
+        Me.Panel20.Location = New System.Drawing.Point(84, 33)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(114, 22)
+        Me.Panel20.TabIndex = 2
+        '
+        'valu_itemsedit_foods
+        '
+        Me.valu_itemsedit_foods.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsedit_foods.Location = New System.Drawing.Point(29, 3)
+        Me.valu_itemsedit_foods.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_foods.Name = "valu_itemsedit_foods"
+        Me.valu_itemsedit_foods.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsedit_foods.TabIndex = 1
+        Me.valu_itemsedit_foods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_itemsedit_foods
+        '
+        Me.Icon_itemsedit_foods.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_foods.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unfoods
+        Me.Icon_itemsedit_foods.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_itemsedit_foods.Name = "Icon_itemsedit_foods"
+        Me.Icon_itemsedit_foods.Size = New System.Drawing.Size(80, 75)
+        Me.Icon_itemsedit_foods.TabIndex = 0
+        Me.Icon_itemsedit_foods.TabStop = False
+        '
+        'Panel7
+        '
+        Me.Panel7.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel7.Controls.Add(Me.Title_itemsedit_clothes)
+        Me.Panel7.Controls.Add(Me.PictureBox7)
+        Me.Panel7.Controls.Add(Me.Check_delete_clothes)
+        Me.Panel7.Controls.Add(Me.Panel8)
+        Me.Panel7.Controls.Add(Me.Icon_itemsedit_clothes)
+        Me.Panel7.Location = New System.Drawing.Point(238, 32)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(200, 150)
+        Me.Panel7.TabIndex = 19
+        '
+        'Title_itemsedit_clothes
+        '
+        Me.Title_itemsedit_clothes.BackColor = System.Drawing.Color.Transparent
+        Me.Title_itemsedit_clothes.Location = New System.Drawing.Point(83, 3)
+        Me.Title_itemsedit_clothes.Name = "Title_itemsedit_clothes"
+        Me.Title_itemsedit_clothes.Size = New System.Drawing.Size(114, 28)
+        Me.Title_itemsedit_clothes.TabIndex = 74
+        Me.Title_itemsedit_clothes.Text = "Clothes"
+        Me.Title_itemsedit_clothes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
+        Me.PictureBox7.Location = New System.Drawing.Point(167, 117)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox7.TabIndex = 72
+        Me.PictureBox7.TabStop = False
+        '
+        'Check_delete_clothes
+        '
+        Me.Check_delete_clothes.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_delete_clothes.BackColor = System.Drawing.Color.White
+        Me.Check_delete_clothes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_delete_clothes.FlatAppearance.BorderSize = 0
+        Me.Check_delete_clothes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_clothes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_delete_clothes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_clothes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_delete_clothes.Location = New System.Drawing.Point(8, 86)
+        Me.Check_delete_clothes.Name = "Check_delete_clothes"
+        Me.Check_delete_clothes.Size = New System.Drawing.Size(185, 23)
+        Me.Check_delete_clothes.TabIndex = 71
+        Me.Check_delete_clothes.Text = "Delete all"
+        Me.Check_delete_clothes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_delete_clothes.UseVisualStyleBackColor = False
+        '
+        'Panel8
+        '
+        Me.Panel8.BackColor = System.Drawing.Color.Transparent
+        Me.Panel8.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_unlocknumb
+        Me.Panel8.Controls.Add(Me.valu_itemsedit_clothes)
+        Me.Panel8.Location = New System.Drawing.Point(84, 33)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(114, 22)
+        Me.Panel8.TabIndex = 2
+        '
+        'valu_itemsedit_clothes
+        '
+        Me.valu_itemsedit_clothes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsedit_clothes.Location = New System.Drawing.Point(29, 3)
+        Me.valu_itemsedit_clothes.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_clothes.Name = "valu_itemsedit_clothes"
+        Me.valu_itemsedit_clothes.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsedit_clothes.TabIndex = 1
+        Me.valu_itemsedit_clothes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_itemsedit_clothes
+        '
+        Me.Icon_itemsedit_clothes.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_clothes.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unclothes
+        Me.Icon_itemsedit_clothes.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_itemsedit_clothes.Name = "Icon_itemsedit_clothes"
+        Me.Icon_itemsedit_clothes.Size = New System.Drawing.Size(80, 75)
+        Me.Icon_itemsedit_clothes.TabIndex = 0
+        Me.Icon_itemsedit_clothes.TabStop = False
+        '
+        'Panel12
+        '
+        Me.Panel12.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel12.Controls.Add(Me.Title_itemsedit_ssclothes)
+        Me.Panel12.Controls.Add(Me.PictureBox9)
+        Me.Panel12.Controls.Add(Me.Check_delete_ssclothes)
+        Me.Panel12.Controls.Add(Me.Panel13)
+        Me.Panel12.Controls.Add(Me.Icon_itemsedit_ssclothes)
+        Me.Panel12.Location = New System.Drawing.Point(444, 32)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(200, 150)
+        Me.Panel12.TabIndex = 20
+        '
+        'Title_itemsedit_ssclothes
+        '
+        Me.Title_itemsedit_ssclothes.BackColor = System.Drawing.Color.Transparent
+        Me.Title_itemsedit_ssclothes.Location = New System.Drawing.Point(83, 3)
+        Me.Title_itemsedit_ssclothes.Name = "Title_itemsedit_ssclothes"
+        Me.Title_itemsedit_ssclothes.Size = New System.Drawing.Size(114, 28)
+        Me.Title_itemsedit_ssclothes.TabIndex = 74
+        Me.Title_itemsedit_ssclothes.Text = "StreetPass / SpotPass" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "clothes"
+        Me.Title_itemsedit_ssclothes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
+        Me.PictureBox9.Location = New System.Drawing.Point(167, 117)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox9.TabIndex = 72
+        Me.PictureBox9.TabStop = False
+        '
+        'Check_delete_ssclothes
+        '
+        Me.Check_delete_ssclothes.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_delete_ssclothes.BackColor = System.Drawing.Color.White
+        Me.Check_delete_ssclothes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_delete_ssclothes.FlatAppearance.BorderSize = 0
+        Me.Check_delete_ssclothes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_ssclothes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_delete_ssclothes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_ssclothes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_delete_ssclothes.Location = New System.Drawing.Point(8, 86)
+        Me.Check_delete_ssclothes.Name = "Check_delete_ssclothes"
+        Me.Check_delete_ssclothes.Size = New System.Drawing.Size(185, 23)
+        Me.Check_delete_ssclothes.TabIndex = 71
+        Me.Check_delete_ssclothes.Text = "Delete all"
+        Me.Check_delete_ssclothes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_delete_ssclothes.UseVisualStyleBackColor = False
+        '
+        'Panel13
+        '
+        Me.Panel13.BackColor = System.Drawing.Color.Transparent
+        Me.Panel13.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_unlocknumb
+        Me.Panel13.Controls.Add(Me.valu_itemsedit_ssclothes)
+        Me.Panel13.Location = New System.Drawing.Point(84, 33)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(114, 22)
+        Me.Panel13.TabIndex = 2
+        '
+        'valu_itemsedit_ssclothes
+        '
+        Me.valu_itemsedit_ssclothes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsedit_ssclothes.Location = New System.Drawing.Point(29, 3)
+        Me.valu_itemsedit_ssclothes.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_ssclothes.Name = "valu_itemsedit_ssclothes"
+        Me.valu_itemsedit_ssclothes.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsedit_ssclothes.TabIndex = 1
+        Me.valu_itemsedit_ssclothes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_itemsedit_ssclothes
+        '
+        Me.Icon_itemsedit_ssclothes.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_ssclothes.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unclothesstsp
+        Me.Icon_itemsedit_ssclothes.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_itemsedit_ssclothes.Name = "Icon_itemsedit_ssclothes"
+        Me.Icon_itemsedit_ssclothes.Size = New System.Drawing.Size(80, 75)
+        Me.Icon_itemsedit_ssclothes.TabIndex = 0
+        Me.Icon_itemsedit_ssclothes.TabStop = False
+        '
+        'Panel15
+        '
+        Me.Panel15.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel15.Controls.Add(Me.Title_itemsedit_hats)
+        Me.Panel15.Controls.Add(Me.PictureBox11)
+        Me.Panel15.Controls.Add(Me.Check_delete_hats)
+        Me.Panel15.Controls.Add(Me.Panel16)
+        Me.Panel15.Controls.Add(Me.Icon_itemsedit_hats)
+        Me.Panel15.Location = New System.Drawing.Point(32, 188)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(200, 150)
+        Me.Panel15.TabIndex = 21
+        '
+        'Title_itemsedit_hats
+        '
+        Me.Title_itemsedit_hats.BackColor = System.Drawing.Color.Transparent
+        Me.Title_itemsedit_hats.Location = New System.Drawing.Point(83, 3)
+        Me.Title_itemsedit_hats.Name = "Title_itemsedit_hats"
+        Me.Title_itemsedit_hats.Size = New System.Drawing.Size(114, 28)
+        Me.Title_itemsedit_hats.TabIndex = 74
+        Me.Title_itemsedit_hats.Text = "Hats"
+        Me.Title_itemsedit_hats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
+        Me.PictureBox11.Location = New System.Drawing.Point(167, 117)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox11.TabIndex = 72
+        Me.PictureBox11.TabStop = False
+        '
+        'Check_delete_hats
+        '
+        Me.Check_delete_hats.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_delete_hats.BackColor = System.Drawing.Color.White
+        Me.Check_delete_hats.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_delete_hats.FlatAppearance.BorderSize = 0
+        Me.Check_delete_hats.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_hats.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_delete_hats.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_hats.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_delete_hats.Location = New System.Drawing.Point(8, 86)
+        Me.Check_delete_hats.Name = "Check_delete_hats"
+        Me.Check_delete_hats.Size = New System.Drawing.Size(185, 23)
+        Me.Check_delete_hats.TabIndex = 71
+        Me.Check_delete_hats.Text = "Delete all"
+        Me.Check_delete_hats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_delete_hats.UseVisualStyleBackColor = False
+        '
+        'Panel16
+        '
+        Me.Panel16.BackColor = System.Drawing.Color.Transparent
+        Me.Panel16.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_unlocknumb
+        Me.Panel16.Controls.Add(Me.valu_itemsedit_hats)
+        Me.Panel16.Location = New System.Drawing.Point(84, 33)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(114, 22)
+        Me.Panel16.TabIndex = 2
+        '
+        'valu_itemsedit_hats
+        '
+        Me.valu_itemsedit_hats.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsedit_hats.Location = New System.Drawing.Point(29, 3)
+        Me.valu_itemsedit_hats.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_hats.Name = "valu_itemsedit_hats"
+        Me.valu_itemsedit_hats.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsedit_hats.TabIndex = 1
+        Me.valu_itemsedit_hats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_itemsedit_hats
+        '
+        Me.Icon_itemsedit_hats.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_hats.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unhats
+        Me.Icon_itemsedit_hats.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_itemsedit_hats.Name = "Icon_itemsedit_hats"
+        Me.Icon_itemsedit_hats.Size = New System.Drawing.Size(80, 75)
+        Me.Icon_itemsedit_hats.TabIndex = 0
+        Me.Icon_itemsedit_hats.TabStop = False
+        '
+        'Panel17
+        '
+        Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel17.Controls.Add(Me.Title_itemsedit_sshats)
+        Me.Panel17.Controls.Add(Me.PictureBox13)
+        Me.Panel17.Controls.Add(Me.Check_delete_sshats)
+        Me.Panel17.Controls.Add(Me.Panel18)
+        Me.Panel17.Controls.Add(Me.Icon_itemsedit_sshats)
+        Me.Panel17.Location = New System.Drawing.Point(238, 188)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(200, 150)
+        Me.Panel17.TabIndex = 22
+        '
+        'Title_itemsedit_sshats
+        '
+        Me.Title_itemsedit_sshats.BackColor = System.Drawing.Color.Transparent
+        Me.Title_itemsedit_sshats.Location = New System.Drawing.Point(83, 3)
+        Me.Title_itemsedit_sshats.Name = "Title_itemsedit_sshats"
+        Me.Title_itemsedit_sshats.Size = New System.Drawing.Size(114, 28)
+        Me.Title_itemsedit_sshats.TabIndex = 74
+        Me.Title_itemsedit_sshats.Text = "StreetPass / SpotPass" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "hats"
+        Me.Title_itemsedit_sshats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox13.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox13.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
+        Me.PictureBox13.Location = New System.Drawing.Point(167, 117)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox13.TabIndex = 72
+        Me.PictureBox13.TabStop = False
+        '
+        'Check_delete_sshats
+        '
+        Me.Check_delete_sshats.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_delete_sshats.BackColor = System.Drawing.Color.White
+        Me.Check_delete_sshats.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_delete_sshats.FlatAppearance.BorderSize = 0
+        Me.Check_delete_sshats.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_sshats.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_delete_sshats.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_sshats.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_delete_sshats.Location = New System.Drawing.Point(8, 86)
+        Me.Check_delete_sshats.Name = "Check_delete_sshats"
+        Me.Check_delete_sshats.Size = New System.Drawing.Size(185, 23)
+        Me.Check_delete_sshats.TabIndex = 71
+        Me.Check_delete_sshats.Text = "Delete all"
+        Me.Check_delete_sshats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_delete_sshats.UseVisualStyleBackColor = False
+        '
+        'Panel18
+        '
+        Me.Panel18.BackColor = System.Drawing.Color.Transparent
+        Me.Panel18.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_unlocknumb
+        Me.Panel18.Controls.Add(Me.valu_itemsedit_sshats)
+        Me.Panel18.Location = New System.Drawing.Point(84, 33)
+        Me.Panel18.Name = "Panel18"
+        Me.Panel18.Size = New System.Drawing.Size(114, 22)
+        Me.Panel18.TabIndex = 2
+        '
+        'valu_itemsedit_sshats
+        '
+        Me.valu_itemsedit_sshats.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsedit_sshats.Location = New System.Drawing.Point(29, 3)
+        Me.valu_itemsedit_sshats.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_sshats.Name = "valu_itemsedit_sshats"
+        Me.valu_itemsedit_sshats.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsedit_sshats.TabIndex = 1
+        Me.valu_itemsedit_sshats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_itemsedit_sshats
+        '
+        Me.Icon_itemsedit_sshats.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_sshats.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unhatsstsp
+        Me.Icon_itemsedit_sshats.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_itemsedit_sshats.Name = "Icon_itemsedit_sshats"
+        Me.Icon_itemsedit_sshats.Size = New System.Drawing.Size(80, 75)
+        Me.Icon_itemsedit_sshats.TabIndex = 0
+        Me.Icon_itemsedit_sshats.TabStop = False
+        '
+        'Panel21
+        '
+        Me.Panel21.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel21.Controls.Add(Me.Title_itemsedit_interiors)
+        Me.Panel21.Controls.Add(Me.PictureBox15)
+        Me.Panel21.Controls.Add(Me.Check_delete_interiors)
+        Me.Panel21.Controls.Add(Me.Panel22)
+        Me.Panel21.Controls.Add(Me.Icon_itemsedit_interiors)
+        Me.Panel21.Location = New System.Drawing.Point(444, 188)
+        Me.Panel21.Name = "Panel21"
+        Me.Panel21.Size = New System.Drawing.Size(200, 150)
+        Me.Panel21.TabIndex = 23
+        '
+        'Title_itemsedit_interiors
+        '
+        Me.Title_itemsedit_interiors.BackColor = System.Drawing.Color.Transparent
+        Me.Title_itemsedit_interiors.Location = New System.Drawing.Point(83, 3)
+        Me.Title_itemsedit_interiors.Name = "Title_itemsedit_interiors"
+        Me.Title_itemsedit_interiors.Size = New System.Drawing.Size(114, 28)
+        Me.Title_itemsedit_interiors.TabIndex = 74
+        Me.Title_itemsedit_interiors.Text = "Interiors"
+        Me.Title_itemsedit_interiors.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox15.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox15.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
+        Me.PictureBox15.Location = New System.Drawing.Point(167, 117)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox15.TabIndex = 72
+        Me.PictureBox15.TabStop = False
+        '
+        'Check_delete_interiors
+        '
+        Me.Check_delete_interiors.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_delete_interiors.BackColor = System.Drawing.Color.White
+        Me.Check_delete_interiors.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_delete_interiors.FlatAppearance.BorderSize = 0
+        Me.Check_delete_interiors.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_interiors.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_delete_interiors.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_interiors.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_delete_interiors.Location = New System.Drawing.Point(8, 86)
+        Me.Check_delete_interiors.Name = "Check_delete_interiors"
+        Me.Check_delete_interiors.Size = New System.Drawing.Size(185, 23)
+        Me.Check_delete_interiors.TabIndex = 71
+        Me.Check_delete_interiors.Text = "Delete all"
+        Me.Check_delete_interiors.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_delete_interiors.UseVisualStyleBackColor = False
+        '
+        'Panel22
+        '
+        Me.Panel22.BackColor = System.Drawing.Color.Transparent
+        Me.Panel22.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_unlocknumb
+        Me.Panel22.Controls.Add(Me.valu_itemsedit_interiors)
+        Me.Panel22.Location = New System.Drawing.Point(84, 33)
+        Me.Panel22.Name = "Panel22"
+        Me.Panel22.Size = New System.Drawing.Size(114, 22)
+        Me.Panel22.TabIndex = 2
+        '
+        'valu_itemsedit_interiors
+        '
+        Me.valu_itemsedit_interiors.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsedit_interiors.Location = New System.Drawing.Point(29, 3)
+        Me.valu_itemsedit_interiors.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_interiors.Name = "valu_itemsedit_interiors"
+        Me.valu_itemsedit_interiors.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsedit_interiors.TabIndex = 1
+        Me.valu_itemsedit_interiors.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_itemsedit_interiors
+        '
+        Me.Icon_itemsedit_interiors.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_interiors.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_uninteriors
+        Me.Icon_itemsedit_interiors.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_itemsedit_interiors.Name = "Icon_itemsedit_interiors"
+        Me.Icon_itemsedit_interiors.Size = New System.Drawing.Size(80, 75)
+        Me.Icon_itemsedit_interiors.TabIndex = 0
+        Me.Icon_itemsedit_interiors.TabStop = False
+        '
+        'Panel23
+        '
+        Me.Panel23.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel23.Controls.Add(Me.Title_itemsedit_goodsitems)
+        Me.Panel23.Controls.Add(Me.PictureBox17)
+        Me.Panel23.Controls.Add(Me.Check_delete_goodsitems)
+        Me.Panel23.Controls.Add(Me.Panel24)
+        Me.Panel23.Controls.Add(Me.Icon_itemsedit_goodsitems)
+        Me.Panel23.Location = New System.Drawing.Point(32, 344)
+        Me.Panel23.Name = "Panel23"
+        Me.Panel23.Size = New System.Drawing.Size(200, 150)
+        Me.Panel23.TabIndex = 24
+        '
+        'Title_itemsedit_goodsitems
+        '
+        Me.Title_itemsedit_goodsitems.BackColor = System.Drawing.Color.Transparent
+        Me.Title_itemsedit_goodsitems.Location = New System.Drawing.Point(83, 3)
+        Me.Title_itemsedit_goodsitems.Name = "Title_itemsedit_goodsitems"
+        Me.Title_itemsedit_goodsitems.Size = New System.Drawing.Size(114, 28)
+        Me.Title_itemsedit_goodsitems.TabIndex = 74
+        Me.Title_itemsedit_goodsitems.Text = "Goods items"
+        Me.Title_itemsedit_goodsitems.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox17.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox17.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
+        Me.PictureBox17.Location = New System.Drawing.Point(167, 117)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox17.TabIndex = 72
+        Me.PictureBox17.TabStop = False
+        '
+        'Check_delete_goodsitems
+        '
+        Me.Check_delete_goodsitems.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_delete_goodsitems.BackColor = System.Drawing.Color.White
+        Me.Check_delete_goodsitems.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_delete_goodsitems.FlatAppearance.BorderSize = 0
+        Me.Check_delete_goodsitems.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_goodsitems.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_delete_goodsitems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_goodsitems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_delete_goodsitems.Location = New System.Drawing.Point(8, 86)
+        Me.Check_delete_goodsitems.Name = "Check_delete_goodsitems"
+        Me.Check_delete_goodsitems.Size = New System.Drawing.Size(185, 23)
+        Me.Check_delete_goodsitems.TabIndex = 71
+        Me.Check_delete_goodsitems.Text = "Delete all"
+        Me.Check_delete_goodsitems.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_delete_goodsitems.UseVisualStyleBackColor = False
+        '
+        'Panel24
+        '
+        Me.Panel24.BackColor = System.Drawing.Color.Transparent
+        Me.Panel24.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_unlocknumb
+        Me.Panel24.Controls.Add(Me.valu_itemsedit_goodsitems)
+        Me.Panel24.Location = New System.Drawing.Point(84, 33)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(114, 22)
+        Me.Panel24.TabIndex = 2
+        '
+        'valu_itemsedit_goodsitems
+        '
+        Me.valu_itemsedit_goodsitems.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsedit_goodsitems.Location = New System.Drawing.Point(29, 3)
+        Me.valu_itemsedit_goodsitems.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_goodsitems.Name = "valu_itemsedit_goodsitems"
+        Me.valu_itemsedit_goodsitems.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsedit_goodsitems.TabIndex = 1
+        Me.valu_itemsedit_goodsitems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_itemsedit_goodsitems
+        '
+        Me.Icon_itemsedit_goodsitems.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_goodsitems.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_ungoods
+        Me.Icon_itemsedit_goodsitems.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_itemsedit_goodsitems.Name = "Icon_itemsedit_goodsitems"
+        Me.Icon_itemsedit_goodsitems.Size = New System.Drawing.Size(80, 75)
+        Me.Icon_itemsedit_goodsitems.TabIndex = 0
+        Me.Icon_itemsedit_goodsitems.TabStop = False
+        '
+        'Panel25
+        '
+        Me.Panel25.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel25.Controls.Add(Me.Title_itemsedit_treasures)
+        Me.Panel25.Controls.Add(Me.PictureBox19)
+        Me.Panel25.Controls.Add(Me.Check_delete_treasures)
+        Me.Panel25.Controls.Add(Me.Panel26)
+        Me.Panel25.Controls.Add(Me.Icon_itemsedit_treasures)
+        Me.Panel25.Location = New System.Drawing.Point(238, 344)
+        Me.Panel25.Name = "Panel25"
+        Me.Panel25.Size = New System.Drawing.Size(200, 150)
+        Me.Panel25.TabIndex = 25
+        '
+        'Title_itemsedit_treasures
+        '
+        Me.Title_itemsedit_treasures.BackColor = System.Drawing.Color.Transparent
+        Me.Title_itemsedit_treasures.Location = New System.Drawing.Point(83, 3)
+        Me.Title_itemsedit_treasures.Name = "Title_itemsedit_treasures"
+        Me.Title_itemsedit_treasures.Size = New System.Drawing.Size(114, 28)
+        Me.Title_itemsedit_treasures.TabIndex = 74
+        Me.Title_itemsedit_treasures.Text = "Treasures"
+        Me.Title_itemsedit_treasures.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox19.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox19.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
+        Me.PictureBox19.Location = New System.Drawing.Point(167, 117)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox19.TabIndex = 72
+        Me.PictureBox19.TabStop = False
+        '
+        'Check_delete_treasures
+        '
+        Me.Check_delete_treasures.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_delete_treasures.BackColor = System.Drawing.Color.White
+        Me.Check_delete_treasures.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_delete_treasures.FlatAppearance.BorderSize = 0
+        Me.Check_delete_treasures.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_treasures.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_delete_treasures.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_treasures.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_delete_treasures.Location = New System.Drawing.Point(8, 86)
+        Me.Check_delete_treasures.Name = "Check_delete_treasures"
+        Me.Check_delete_treasures.Size = New System.Drawing.Size(185, 23)
+        Me.Check_delete_treasures.TabIndex = 71
+        Me.Check_delete_treasures.Text = "Delete all"
+        Me.Check_delete_treasures.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_delete_treasures.UseVisualStyleBackColor = False
+        '
+        'Panel26
+        '
+        Me.Panel26.BackColor = System.Drawing.Color.Transparent
+        Me.Panel26.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_unlocknumb
+        Me.Panel26.Controls.Add(Me.valu_itemsedit_treasures)
+        Me.Panel26.Location = New System.Drawing.Point(84, 33)
+        Me.Panel26.Name = "Panel26"
+        Me.Panel26.Size = New System.Drawing.Size(114, 22)
+        Me.Panel26.TabIndex = 2
+        '
+        'valu_itemsedit_treasures
+        '
+        Me.valu_itemsedit_treasures.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsedit_treasures.Location = New System.Drawing.Point(29, 3)
+        Me.valu_itemsedit_treasures.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_treasures.Name = "valu_itemsedit_treasures"
+        Me.valu_itemsedit_treasures.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsedit_treasures.TabIndex = 1
+        Me.valu_itemsedit_treasures.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_itemsedit_treasures
+        '
+        Me.Icon_itemsedit_treasures.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_treasures.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_untreasures
+        Me.Icon_itemsedit_treasures.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_itemsedit_treasures.Name = "Icon_itemsedit_treasures"
+        Me.Icon_itemsedit_treasures.Size = New System.Drawing.Size(80, 75)
+        Me.Icon_itemsedit_treasures.TabIndex = 0
+        Me.Icon_itemsedit_treasures.TabStop = False
+        '
+        'Panel27
+        '
+        Me.Panel27.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel27.Controls.Add(Me.Title_itemsedit_spefoods)
+        Me.Panel27.Controls.Add(Me.PictureBox21)
+        Me.Panel27.Controls.Add(Me.Check_delete_spefoods)
+        Me.Panel27.Controls.Add(Me.Panel28)
+        Me.Panel27.Controls.Add(Me.Icon_itemsedit_spefoods)
+        Me.Panel27.Location = New System.Drawing.Point(444, 344)
+        Me.Panel27.Name = "Panel27"
+        Me.Panel27.Size = New System.Drawing.Size(200, 150)
+        Me.Panel27.TabIndex = 26
+        '
+        'Title_itemsedit_spefoods
+        '
+        Me.Title_itemsedit_spefoods.BackColor = System.Drawing.Color.Transparent
+        Me.Title_itemsedit_spefoods.Location = New System.Drawing.Point(83, 3)
+        Me.Title_itemsedit_spefoods.Name = "Title_itemsedit_spefoods"
+        Me.Title_itemsedit_spefoods.Size = New System.Drawing.Size(114, 28)
+        Me.Title_itemsedit_spefoods.TabIndex = 74
+        Me.Title_itemsedit_spefoods.Text = "Special Foods"
+        Me.Title_itemsedit_spefoods.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.PictureBox21.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
+        Me.PictureBox21.Location = New System.Drawing.Point(167, 117)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox21.TabIndex = 72
+        Me.PictureBox21.TabStop = False
+        '
+        'Check_delete_spefoods
+        '
+        Me.Check_delete_spefoods.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_delete_spefoods.BackColor = System.Drawing.Color.White
+        Me.Check_delete_spefoods.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_delete_spefoods.FlatAppearance.BorderSize = 0
+        Me.Check_delete_spefoods.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_spefoods.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_delete_spefoods.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_delete_spefoods.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_delete_spefoods.Location = New System.Drawing.Point(8, 86)
+        Me.Check_delete_spefoods.Name = "Check_delete_spefoods"
+        Me.Check_delete_spefoods.Size = New System.Drawing.Size(185, 23)
+        Me.Check_delete_spefoods.TabIndex = 71
+        Me.Check_delete_spefoods.Text = "Delete all"
+        Me.Check_delete_spefoods.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_delete_spefoods.UseVisualStyleBackColor = False
+        '
+        'Panel28
+        '
+        Me.Panel28.BackColor = System.Drawing.Color.Transparent
+        Me.Panel28.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_unlocknumb
+        Me.Panel28.Controls.Add(Me.valu_itemsedit_spefoods)
+        Me.Panel28.Location = New System.Drawing.Point(84, 33)
+        Me.Panel28.Name = "Panel28"
+        Me.Panel28.Size = New System.Drawing.Size(114, 22)
+        Me.Panel28.TabIndex = 2
+        '
+        'valu_itemsedit_spefoods
+        '
+        Me.valu_itemsedit_spefoods.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsedit_spefoods.Location = New System.Drawing.Point(29, 3)
+        Me.valu_itemsedit_spefoods.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_spefoods.Name = "valu_itemsedit_spefoods"
+        Me.valu_itemsedit_spefoods.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsedit_spefoods.TabIndex = 1
+        Me.valu_itemsedit_spefoods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_itemsedit_spefoods
+        '
+        Me.Icon_itemsedit_spefoods.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_spefoods.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unfoodsspe
+        Me.Icon_itemsedit_spefoods.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_itemsedit_spefoods.Name = "Icon_itemsedit_spefoods"
+        Me.Icon_itemsedit_spefoods.Size = New System.Drawing.Size(80, 75)
+        Me.Icon_itemsedit_spefoods.TabIndex = 0
+        Me.Icon_itemsedit_spefoods.TabStop = False
         '
         'Panel_concertedit
         '
@@ -5739,12 +6599,35 @@ Partial Class TL_SaveEditor
         Me.Icon_crthall_music.TabIndex = 92
         Me.Icon_crthall_music.TabStop = False
         '
+        'Panel29
+        '
+        Me.Panel29.BackColor = System.Drawing.Color.Transparent
+        Me.Panel29.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel29.Controls.Add(Me.Label3)
+        Me.Panel29.Location = New System.Drawing.Point(263, 501)
+        Me.Panel29.Name = "Panel29"
+        Me.Panel29.Size = New System.Drawing.Size(150, 32)
+        Me.Panel29.TabIndex = 88
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(0, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(150, 32)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Save"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
+        Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -5754,7 +6637,6 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.Panel_islandedit)
-        Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_repairsave)
@@ -6015,6 +6897,52 @@ Partial Class TL_SaveEditor
         Me.Panel_citratomo.PerformLayout()
         Me.Panel_restoresave.ResumeLayout(False)
         Me.Panel_restoresave.PerformLayout()
+        Me.Panel_itemsedit.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel20.ResumeLayout(False)
+        CType(Me.valu_itemsedit_foods, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemsedit_foods, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel7.ResumeLayout(False)
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel8.ResumeLayout(False)
+        CType(Me.valu_itemsedit_clothes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemsedit_clothes, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel12.ResumeLayout(False)
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel13.ResumeLayout(False)
+        CType(Me.valu_itemsedit_ssclothes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemsedit_ssclothes, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel15.ResumeLayout(False)
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel16.ResumeLayout(False)
+        CType(Me.valu_itemsedit_hats, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemsedit_hats, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel17.ResumeLayout(False)
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel18.ResumeLayout(False)
+        CType(Me.valu_itemsedit_sshats, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemsedit_sshats, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel21.ResumeLayout(False)
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel22.ResumeLayout(False)
+        CType(Me.valu_itemsedit_interiors, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemsedit_interiors, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel23.ResumeLayout(False)
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel24.ResumeLayout(False)
+        CType(Me.valu_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel25.ResumeLayout(False)
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel26.ResumeLayout(False)
+        CType(Me.valu_itemsedit_treasures, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemsedit_treasures, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel27.ResumeLayout(False)
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel28.ResumeLayout(False)
+        CType(Me.valu_itemsedit_spefoods, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemsedit_spefoods, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_concertedit.ResumeLayout(False)
         Me.Panel_concertedit.PerformLayout()
         CType(Me.AdvH_savesong, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6070,6 +6998,7 @@ Partial Class TL_SaveEditor
         CType(Me.valu_pagh_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_pagh_1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_crthall_music, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel29.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -6492,4 +7421,69 @@ Partial Class TL_SaveEditor
     Friend WithEvents Plus_pagh_2 As PictureBox
     Friend WithEvents AdvH_savesong As PictureBox
     Friend WithEvents AdvH_plusminussong As PictureBox
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Check_delete_foods As CheckBox
+    Friend WithEvents Panel20 As Panel
+    Friend WithEvents valu_itemsedit_foods As NumericUpDown
+    Friend WithEvents Icon_itemsedit_foods As PictureBox
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents Check_delete_clothes As CheckBox
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents valu_itemsedit_clothes As NumericUpDown
+    Friend WithEvents Icon_itemsedit_clothes As PictureBox
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents Check_delete_ssclothes As CheckBox
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents valu_itemsedit_ssclothes As NumericUpDown
+    Friend WithEvents Icon_itemsedit_ssclothes As PictureBox
+    Friend WithEvents Panel15 As Panel
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents Check_delete_hats As CheckBox
+    Friend WithEvents Panel16 As Panel
+    Friend WithEvents valu_itemsedit_hats As NumericUpDown
+    Friend WithEvents Icon_itemsedit_hats As PictureBox
+    Friend WithEvents Panel17 As Panel
+    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents Check_delete_sshats As CheckBox
+    Friend WithEvents Panel18 As Panel
+    Friend WithEvents valu_itemsedit_sshats As NumericUpDown
+    Friend WithEvents Icon_itemsedit_sshats As PictureBox
+    Friend WithEvents Panel21 As Panel
+    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents Check_delete_interiors As CheckBox
+    Friend WithEvents Panel22 As Panel
+    Friend WithEvents valu_itemsedit_interiors As NumericUpDown
+    Friend WithEvents Icon_itemsedit_interiors As PictureBox
+    Friend WithEvents Panel23 As Panel
+    Friend WithEvents PictureBox17 As PictureBox
+    Friend WithEvents Check_delete_goodsitems As CheckBox
+    Friend WithEvents Panel24 As Panel
+    Friend WithEvents valu_itemsedit_goodsitems As NumericUpDown
+    Friend WithEvents Icon_itemsedit_goodsitems As PictureBox
+    Friend WithEvents Panel25 As Panel
+    Friend WithEvents PictureBox19 As PictureBox
+    Friend WithEvents Check_delete_treasures As CheckBox
+    Friend WithEvents Panel26 As Panel
+    Friend WithEvents valu_itemsedit_treasures As NumericUpDown
+    Friend WithEvents Icon_itemsedit_treasures As PictureBox
+    Friend WithEvents Panel27 As Panel
+    Friend WithEvents PictureBox21 As PictureBox
+    Friend WithEvents Check_delete_spefoods As CheckBox
+    Friend WithEvents Panel28 As Panel
+    Friend WithEvents valu_itemsedit_spefoods As NumericUpDown
+    Friend WithEvents Icon_itemsedit_spefoods As PictureBox
+    Friend WithEvents Title_itemsedit_foods As Label
+    Friend WithEvents Title_itemsedit_clothes As Label
+    Friend WithEvents Title_itemsedit_ssclothes As Label
+    Friend WithEvents Title_itemsedit_hats As Label
+    Friend WithEvents Title_itemsedit_sshats As Label
+    Friend WithEvents Title_itemsedit_interiors As Label
+    Friend WithEvents Title_itemsedit_goodsitems As Label
+    Friend WithEvents Title_itemsedit_treasures As Label
+    Friend WithEvents Title_itemsedit_spefoods As Label
+    Friend WithEvents Panel29 As Panel
+    Friend WithEvents Label3 As Label
 End Class
