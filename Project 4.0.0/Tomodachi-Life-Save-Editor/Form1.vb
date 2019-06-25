@@ -209,6 +209,7 @@ Public Class TL_SaveEditor
             Check_resetrelationship.Text = "Reset all Mii's relationship"
             Text_title_editsongs.Text = "Concert Hall"
             Text_save_editsongs.Text = "Save"
+            Check_setalltummy.Text = "Set all Mii's tummy to :"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_menu_open.Text = "Ouvrir"
             Text_menu_save.Text = "Enregistrer"
@@ -253,6 +254,7 @@ Public Class TL_SaveEditor
             Check_resetrelationship.Text = "Réinitialiser toutes les relations des Mii"
             Text_title_editsongs.Text = "Salle de Concert"
             Text_save_editsongs.Text = "Enregistrer"
+            Check_setalltummy.Text = "Mettre l'estomac des Mii :"
         End If
     End Sub
 
@@ -1698,6 +1700,7 @@ Public Class TL_SaveEditor
             AdvH_plusminussong.Visible = True
             AdvH_editsonglign.Visible = True
             AdvH_savesong.Visible = True
+            AdvH_setalltummy.Visible = True
         ElseIf Setting_Advhelp.Checked = False Then
             Panel_Advhelp.Visible = False
             AdvH_islandname.Visible = False
@@ -1734,6 +1737,7 @@ Public Class TL_SaveEditor
             AdvH_plusminussong.Visible = False
             AdvH_editsonglign.Visible = False
             AdvH_savesong.Visible = False
+            AdvH_setalltummy.Visible = False
         End If
     End Sub
 
@@ -3771,6 +3775,24 @@ Public Class TL_SaveEditor
                 TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Réinitialiser les relations des Mii', veuillez signaler ce problème"
             End If
         End Try
+        Try
+            settummyfullempt()
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Set Mii's tummy to', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Mettre l'estomac des Mii', veuillez signaler ce problème"
+            End If
+        End Try
+        Try
+            writefoodsitems()
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Writing of this feature has failed : 'Items edit foods', please report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L’écriture de cette fonctionnalité a échoué : 'Édition objets nourritures', veuillez signaler ce problème"
+            End If
+        End Try
         done()
         If Select_language.SelectedItem = Select_language.Items.Item(0) Then
             Text_done.Text = "File saved !"
@@ -5602,6 +5624,1282 @@ Public Class TL_SaveEditor
         End If
         Panel_description.Visible = True
     End Sub
+
+    Private Sub valu_setalltummy_ValueChanged(sender As Object, e As EventArgs) Handles valu_setalltummy.ValueChanged
+        If valu_setalltummy.Value = 0 Then
+            Icon_setalltummy.Image = My.Resources.icon_checktummy_empty
+        ElseIf valu_setalltummy.Value = 1 Then
+            Icon_setalltummy.Image = My.Resources.icon_checktummy_full
+        End If
+    End Sub
+
+    Private Sub Icon_setalltummy_Click(sender As Object, e As EventArgs) Handles Icon_setalltummy.Click
+        If valu_setalltummy.Value = 0 Then
+            valu_setalltummy.Value = 1
+        ElseIf valu_setalltummy.Value = 1 Then
+            valu_setalltummy.Value = 0
+        End If
+    End Sub
+
+    Private Sub AdvH_setalltummy_Click(sender As Object, e As EventArgs) Handles AdvH_setalltummy.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Check_setalltummy.Location.X + (Check_setalltummy.Width / 2), Check_setalltummy.Location.Y + (Check_setalltummy.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to set Mii's tummy to empty or full"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre en orange pour mettre l'estomac des Mii vide ou rempli"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 2
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Icon_setalltummy.Location.X + (Icon_setalltummy.Width / 2), Icon_setalltummy.Location.Y + (Icon_setalltummy.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Click here to set as empty or full"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Cliquez ici pour mettre vide ou rempli"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 2
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub Icon_setalltummy_MouseMove(sender As Object, e As EventArgs) Handles Icon_setalltummy.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to set as empty or full"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour mettre vide ou plein"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_setalltummy_MouseLeave(sender As Object, e As EventArgs) Handles Icon_setalltummy.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_setalltummy_MouseMove(sender As Object, e As EventArgs) Handles Check_setalltummy.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to set all Mii's tummy to empty or full"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour mettre l'estomac des Mii vide ou plein"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_setalltummy_MouseLeave(sender As Object, e As EventArgs) Handles Check_setalltummy.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Public Sub settummyfullempt()
+        Dim ws As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+        If Check_setalltummy.Checked = True Then
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
+                ws.Position = &H2293
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + &H660
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 2)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 3)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 4)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 5)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 6)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 7)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 8)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 9)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 10)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 11)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 12)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 13)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 14)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 15)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 16)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 17)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 18)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 19)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 20)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 21)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 22)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 23)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 24)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 25)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 26)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 27)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 28)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 29)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 30)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 31)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 32)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 33)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 34)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 35)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 36)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 37)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 38)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 39)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 40)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 41)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 42)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 43)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 44)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 45)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 46)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 47)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 48)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 49)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 50)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 51)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 52)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 53)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 54)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 55)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 56)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 57)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 58)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 59)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 60)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 61)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 62)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 63)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 64)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 65)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 66)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 67)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 68)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 69)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 70)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 71)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 72)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 73)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 74)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 75)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 76)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 77)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 78)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 79)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 80)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 81)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 82)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 83)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 84)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 85)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 86)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 87)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 88)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 89)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 90)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 91)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 92)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 93)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 94)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 95)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 96)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 97)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 98)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2293 + (&H660 * 99)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Close()
+            ElseIf Filever_text.Text = "JP" Then
+                ws.Position = &H2193
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + &H590
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 2)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 3)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 4)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 5)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 6)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 7)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 8)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 9)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 10)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 11)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 12)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 13)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 14)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 15)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 16)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 17)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 18)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 19)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 20)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 21)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 22)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 23)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 24)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 25)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 26)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 27)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 28)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 29)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 30)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 31)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 32)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 33)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 34)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 35)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 36)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 37)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 38)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 39)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 40)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 41)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 42)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 43)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 44)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 45)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 46)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 47)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 48)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 49)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 50)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 51)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 52)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 53)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 54)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 55)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 56)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 57)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 58)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 59)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 60)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 61)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 62)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 63)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 64)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 65)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 66)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 67)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 68)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 69)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 70)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 71)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 72)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 73)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 74)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 75)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 76)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 77)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 78)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 79)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 80)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 81)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 82)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 83)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 84)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 85)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 86)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 87)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 88)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 89)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 90)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 91)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 92)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 93)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 94)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 95)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 96)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 97)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 98)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Position = &H2193 + (&H590 * 99)
+                If valu_setalltummy.Value = 0 Then
+                    ws.WriteByte(0)
+                ElseIf valu_setalltummy.Value = 1 Then
+                    ws.WriteByte(64)
+                End If
+                ws.Close()
+            End If
+        End If
+    End Sub
     'end extras animation block
 
     'repair save file block
@@ -6510,4 +7808,324 @@ Public Class TL_SaveEditor
         TLSE_dialog.ShowDialog()
     End Sub
     ' end advance help concert edit
+
+    ' items edit animation block
+    Private Sub valu_itemsediticon_foods_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemsediticon_foods.ValueChanged
+        If valu_itemsediticon_foods.Value = 0 Then
+            Icon_itemsedit_foods.Image = My.Resources.Icon_unfoods
+            Check_delete_foods.Enabled = True
+        ElseIf valu_itemsediticon_foods.Value = 1 Then
+            Icon_itemsedit_foods.Image = My.Resources.Icon_unfoods_act
+            Check_delete_foods.Enabled = False
+        End If
+    End Sub
+
+    Private Sub valu_itemsediticon_clothes_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemsediticon_clothes.ValueChanged
+        If valu_itemsediticon_clothes.Value = 0 Then
+            Icon_itemsedit_clothes.Image = My.Resources.Icon_unclothes
+            Check_delete_clothes.Enabled = True
+        ElseIf valu_itemsediticon_clothes.Value = 1 Then
+            Icon_itemsedit_clothes.Image = My.Resources.Icon_unclothes_act
+            Check_delete_clothes.Enabled = False
+        End If
+    End Sub
+
+    Private Sub valu_itemsediticon_ssclothes_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemsediticon_ssclothes.ValueChanged
+        If valu_itemsediticon_ssclothes.Value = 0 Then
+            Icon_itemsedit_ssclothes.Image = My.Resources.Icon_unclothesstsp
+            Check_delete_ssclothes.Enabled = True
+        ElseIf valu_itemsediticon_ssclothes.Value = 1 Then
+            Icon_itemsedit_ssclothes.Image = My.Resources.Icon_unclothesstsp_act
+            Check_delete_ssclothes.Enabled = False
+        End If
+    End Sub
+
+    Private Sub valu_itemsediticon_hats_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemsediticon_hats.ValueChanged
+        If valu_itemsediticon_hats.Value = 0 Then
+            Icon_itemsedit_hats.Image = My.Resources.Icon_unhats
+            Check_delete_hats.Enabled = True
+        ElseIf valu_itemsediticon_hats.Value = 1 Then
+            Icon_itemsedit_hats.Image = My.Resources.Icon_unhats_act
+            Check_delete_hats.Enabled = False
+        End If
+    End Sub
+
+    Private Sub valu_itemsediticon_sshats_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemsediticon_sshats.ValueChanged
+        If valu_itemsediticon_sshats.Value = 0 Then
+            Icon_itemsedit_sshats.Image = My.Resources.Icon_unhatsstsp
+            Check_delete_sshats.Enabled = True
+        ElseIf valu_itemsediticon_sshats.Value = 1 Then
+            Icon_itemsedit_sshats.Image = My.Resources.Icon_unhatsstsp_act
+            Check_delete_sshats.Enabled = False
+        End If
+    End Sub
+
+    Private Sub valu_itemsediticon_interiors_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemsediticon_interiors.ValueChanged
+        If valu_itemsediticon_interiors.Value = 0 Then
+            Icon_itemsedit_interiors.Image = My.Resources.Icon_uninteriors
+            Check_delete_interiors.Enabled = True
+        ElseIf valu_itemsediticon_interiors.Value = 1 Then
+            Icon_itemsedit_interiors.Image = My.Resources.Icon_uninteriors_act
+            Check_delete_interiors.Enabled = False
+        End If
+    End Sub
+
+    Private Sub valu_itemsediticon_goodsitems_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemsediticon_goodsitems.ValueChanged
+        If valu_itemsediticon_goodsitems.Value = 0 Then
+            Icon_itemsedit_goodsitems.Image = My.Resources.Icon_ungoods
+            Check_delete_goodsitems.Enabled = True
+        ElseIf valu_itemsediticon_goodsitems.Value = 1 Then
+            Icon_itemsedit_goodsitems.Image = My.Resources.Icon_ungoods_act
+            Check_delete_goodsitems.Enabled = False
+        End If
+    End Sub
+
+    Private Sub valu_itemsediticon_treasures_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemsediticon_treasures.ValueChanged
+        If valu_itemsediticon_treasures.Value = 0 Then
+            Icon_itemsedit_treasures.Image = My.Resources.Icon_untreasures
+            Check_delete_treasures.Enabled = True
+        ElseIf valu_itemsediticon_treasures.Value = 1 Then
+            Icon_itemsedit_treasures.Image = My.Resources.Icon_untreasures_act
+            Check_delete_treasures.Enabled = False
+        End If
+    End Sub
+
+    Private Sub valu_itemsediticon_spefoods_ValueChanged(sender As Object, e As EventArgs) Handles valu_itemsediticon_spefoods.ValueChanged
+        If valu_itemsediticon_spefoods.Value = 0 Then
+            Icon_itemsedit_spefoods.Image = My.Resources.Icon_unfoodsspe
+            Check_delete_spefoods.Enabled = True
+        ElseIf valu_itemsediticon_spefoods.Value = 1 Then
+            Icon_itemsedit_spefoods.Image = My.Resources.Icon_unfoodsspe_act
+            Check_delete_spefoods.Enabled = False
+        End If
+    End Sub
+
+    Private Sub Icon_itemsedit_foods_Click(sender As Object, e As EventArgs) Handles Icon_itemsedit_foods.Click
+        If valu_itemsediticon_foods.Value = 0 Then
+            valu_itemsediticon_foods.Value = 1
+        ElseIf valu_itemsediticon_foods.Value = 1 Then
+            valu_itemsediticon_foods.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_itemsedit_clothes_Click(sender As Object, e As EventArgs) Handles Icon_itemsedit_clothes.Click
+        If valu_itemsediticon_clothes.Value = 0 Then
+            valu_itemsediticon_clothes.Value = 1
+        ElseIf valu_itemsediticon_clothes.Value = 1 Then
+            valu_itemsediticon_clothes.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_itemsedit_ssclothes_Click(sender As Object, e As EventArgs) Handles Icon_itemsedit_ssclothes.Click
+        If valu_itemsediticon_ssclothes.Value = 0 Then
+            valu_itemsediticon_ssclothes.Value = 1
+        ElseIf valu_itemsediticon_ssclothes.Value = 1 Then
+            valu_itemsediticon_ssclothes.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_itemsedit_hats_Click(sender As Object, e As EventArgs) Handles Icon_itemsedit_hats.Click
+        If valu_itemsediticon_hats.Value = 0 Then
+            valu_itemsediticon_hats.Value = 1
+        ElseIf valu_itemsediticon_hats.Value = 1 Then
+            valu_itemsediticon_hats.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_itemsedit_sshats_Click(sender As Object, e As EventArgs) Handles Icon_itemsedit_sshats.Click
+        If valu_itemsediticon_sshats.Value = 0 Then
+            valu_itemsediticon_sshats.Value = 1
+        ElseIf valu_itemsediticon_sshats.Value = 1 Then
+            valu_itemsediticon_sshats.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_itemsedit_interiors_Click(sender As Object, e As EventArgs) Handles Icon_itemsedit_interiors.Click
+        If valu_itemsediticon_interiors.Value = 0 Then
+            valu_itemsediticon_interiors.Value = 1
+        ElseIf valu_itemsediticon_interiors.Value = 1 Then
+            valu_itemsediticon_interiors.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_itemsedit_goodsitems_Click(sender As Object, e As EventArgs) Handles Icon_itemsedit_goodsitems.Click
+        If valu_itemsediticon_goodsitems.Value = 0 Then
+            valu_itemsediticon_goodsitems.Value = 1
+        ElseIf valu_itemsediticon_goodsitems.Value = 1 Then
+            valu_itemsediticon_goodsitems.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_itemsedit_treasures_Click(sender As Object, e As EventArgs) Handles Icon_itemsedit_treasures.Click
+        If valu_itemsediticon_treasures.Value = 0 Then
+            valu_itemsediticon_treasures.Value = 1
+        ElseIf valu_itemsediticon_treasures.Value = 1 Then
+            valu_itemsediticon_treasures.Value = 0
+        End If
+    End Sub
+
+    Private Sub Icon_itemsedit_spefoods_Click(sender As Object, e As EventArgs) Handles Icon_itemsedit_spefoods.Click
+        If valu_itemsediticon_spefoods.Value = 0 Then
+            valu_itemsediticon_spefoods.Value = 1
+        ElseIf valu_itemsediticon_spefoods.Value = 1 Then
+            valu_itemsediticon_spefoods.Value = 0
+        End If
+    End Sub
+
+    Private Sub Check_delete_foods_CheckedChanged(sender As Object, e As EventArgs) Handles Check_delete_foods.CheckedChanged
+        If Check_delete_foods.Checked = True Then
+            Icon_itemsedit_foods.Enabled = False
+            valu_itemsedit_foods.Enabled = False
+            valu_itemsedit_foods.Maximum = 255
+            valu_itemsedit_foods.Value = 253
+        Else
+            Icon_itemsedit_foods.Enabled = True
+            valu_itemsedit_foods.Enabled = True
+            valu_itemsedit_foods.Maximum = 99
+            valu_itemsedit_foods.Value = 99
+        End If
+    End Sub
+
+    Private Sub Check_delete_clothes_CheckedChanged(sender As Object, e As EventArgs) Handles Check_delete_clothes.CheckedChanged
+        If Check_delete_clothes.Checked = True Then
+            Icon_itemsedit_clothes.Enabled = False
+            valu_itemsedit_clothes.Enabled = False
+            valu_itemsedit_clothes.Maximum = 255
+            valu_itemsedit_clothes.Value = 253
+        Else
+            Icon_itemsedit_clothes.Enabled = True
+            valu_itemsedit_clothes.Enabled = True
+            valu_itemsedit_clothes.Maximum = 99
+            valu_itemsedit_clothes.Value = 99
+        End If
+    End Sub
+
+    Private Sub Check_delete_ssclothes_CheckedChanged(sender As Object, e As EventArgs) Handles Check_delete_ssclothes.CheckedChanged
+        If Check_delete_ssclothes.Checked = True Then
+            Icon_itemsedit_ssclothes.Enabled = False
+            valu_itemsedit_ssclothes.Enabled = False
+            valu_itemsedit_ssclothes.Maximum = 255
+            valu_itemsedit_ssclothes.Value = 253
+        Else
+            Icon_itemsedit_ssclothes.Enabled = True
+            valu_itemsedit_ssclothes.Enabled = True
+            valu_itemsedit_ssclothes.Maximum = 99
+            valu_itemsedit_ssclothes.Value = 99
+        End If
+    End Sub
+
+    Private Sub Check_delete_hats_CheckedChanged(sender As Object, e As EventArgs) Handles Check_delete_hats.CheckedChanged
+        If Check_delete_hats.Checked = True Then
+            Icon_itemsedit_hats.Enabled = False
+            valu_itemsedit_hats.Enabled = False
+            valu_itemsedit_hats.Maximum = 255
+            valu_itemsedit_hats.Value = 253
+        Else
+            Icon_itemsedit_hats.Enabled = True
+            valu_itemsedit_hats.Enabled = True
+            valu_itemsedit_hats.Maximum = 99
+            valu_itemsedit_hats.Value = 99
+        End If
+    End Sub
+
+    Private Sub Check_delete_sshats_CheckedChanged(sender As Object, e As EventArgs) Handles Check_delete_sshats.CheckedChanged
+        If Check_delete_sshats.Checked = True Then
+            Icon_itemsedit_sshats.Enabled = False
+            valu_itemsedit_sshats.Enabled = False
+            valu_itemsedit_sshats.Maximum = 255
+            valu_itemsedit_sshats.Value = 253
+        Else
+            Icon_itemsedit_sshats.Enabled = True
+            valu_itemsedit_sshats.Enabled = True
+            valu_itemsedit_sshats.Maximum = 99
+            valu_itemsedit_sshats.Value = 99
+        End If
+    End Sub
+
+    Private Sub Check_delete_interiors_CheckedChanged(sender As Object, e As EventArgs) Handles Check_delete_interiors.CheckedChanged
+        If Check_delete_interiors.Checked = True Then
+            Icon_itemsedit_interiors.Enabled = False
+            valu_itemsedit_interiors.Enabled = False
+            valu_itemsedit_interiors.Maximum = 255
+            valu_itemsedit_interiors.Value = 253
+        Else
+            Icon_itemsedit_interiors.Enabled = True
+            valu_itemsedit_interiors.Enabled = True
+            valu_itemsedit_interiors.Maximum = 99
+            valu_itemsedit_interiors.Value = 99
+        End If
+    End Sub
+
+    Private Sub Check_delete_goodsitems_CheckedChanged(sender As Object, e As EventArgs) Handles Check_delete_goodsitems.CheckedChanged
+        If Check_delete_goodsitems.Checked = True Then
+            Icon_itemsedit_goodsitems.Enabled = False
+            valu_itemsedit_goodsitems.Enabled = False
+            valu_itemsedit_goodsitems.Maximum = 255
+            valu_itemsedit_goodsitems.Value = 253
+        Else
+            Icon_itemsedit_goodsitems.Enabled = True
+            valu_itemsedit_goodsitems.Enabled = True
+            valu_itemsedit_goodsitems.Maximum = 99
+            valu_itemsedit_goodsitems.Value = 99
+        End If
+    End Sub
+
+    Private Sub Check_delete_treasures_CheckedChanged(sender As Object, e As EventArgs) Handles Check_delete_treasures.CheckedChanged
+        If Check_delete_treasures.Checked = True Then
+            Icon_itemsedit_treasures.Enabled = False
+            valu_itemsedit_treasures.Enabled = False
+            valu_itemsedit_treasures.Maximum = 255
+            valu_itemsedit_treasures.Value = 253
+        Else
+            Icon_itemsedit_treasures.Enabled = True
+            valu_itemsedit_treasures.Enabled = True
+            valu_itemsedit_treasures.Maximum = 99
+            valu_itemsedit_treasures.Value = 99
+        End If
+    End Sub
+
+    Private Sub Check_delete_spefoods_CheckedChanged(sender As Object, e As EventArgs) Handles Check_delete_spefoods.CheckedChanged
+        If Check_delete_spefoods.Checked = True Then
+            Icon_itemsedit_spefoods.Enabled = False
+            valu_itemsedit_spefoods.Enabled = False
+            valu_itemsedit_spefoods.Maximum = 255
+            valu_itemsedit_spefoods.Value = 253
+        Else
+            Icon_itemsedit_spefoods.Enabled = True
+            valu_itemsedit_spefoods.Enabled = True
+            valu_itemsedit_spefoods.Maximum = 99
+            valu_itemsedit_spefoods.Value = 99
+        End If
+    End Sub
+
+    Public Sub writefoodsitems()
+        If valu_itemsediticon_foods.Value = 1 Or Check_delete_foods.Checked = True Then
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            If Filever_text.Text = "US" Then
+                For i As Integer = 0 To 230
+                    fs.Position = &H17F0 + i
+                    fs.WriteByte(valu_itemsedit_foods.Value)
+                Next
+            End If
+            If Filever_text.Text = "EU" Then
+                For i As Integer = 0 To 230
+                    fs.Position = &H17F0 + i
+                    fs.WriteByte(valu_itemsedit_foods.Value)
+                Next
+            End If
+            If Filever_text.Text = "JP" Then
+                For i As Integer = 0 To 229
+                    fs.Position = &H17F0 + i
+                    fs.WriteByte(valu_itemsedit_foods.Value)
+                Next
+            End If
+            If Filever_text.Text = "KR" Then
+                For i As Integer = 0 To 254
+                    fs.Position = &H17F0 + i
+                    fs.WriteByte(valu_itemsedit_foods.Value)
+                Next
+            End If
+        End If
+    End Sub
+    ' end items edit animation block
 End Class

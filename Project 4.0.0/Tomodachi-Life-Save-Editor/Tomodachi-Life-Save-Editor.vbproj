@@ -157,6 +157,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\Icon_untreasures_act.png" />
+    <None Include="Resources\Icon_uninteriors_act.png" />
+    <None Include="Resources\Icon_unhatsstsp_act.png" />
+    <None Include="Resources\Icon_unhats_act.png" />
+    <None Include="Resources\Icon_ungoods_act.png" />
+    <None Include="Resources\Icon_unfoodsspe_act.png" />
+    <None Include="Resources\Icon_unfoods_act.png" />
+    <None Include="Resources\Icon_unclothesstsp_act.png" />
+    <None Include="Resources\Icon_unclothes_act.png" />
+    <None Include="Resources\icon_checktummy_full.png" />
+    <None Include="Resources\icon_checktummy_empty.png" />
     <None Include="Resources\Icon_untreasures.png" />
     <None Include="Resources\Icon_uninteriors.png" />
     <None Include="Resources\Icon_unhatsstsp.png" />

@@ -281,6 +281,10 @@ Partial Class TL_SaveEditor
         Me.Icon_3dsSEL = New System.Windows.Forms.PictureBox()
         Me.Icon_MiitopiaSE = New System.Windows.Forms.PictureBox()
         Me.Panel_extras = New System.Windows.Forms.Panel()
+        Me.valu_setalltummy = New System.Windows.Forms.NumericUpDown()
+        Me.AdvH_setalltummy = New System.Windows.Forms.PictureBox()
+        Me.Check_setalltummy = New System.Windows.Forms.CheckBox()
+        Me.Icon_setalltummy = New System.Windows.Forms.PictureBox()
         Me.AdvH_resetrelationship = New System.Windows.Forms.PictureBox()
         Me.AdvH_resetitems = New System.Windows.Forms.PictureBox()
         Me.AdvH_resetnewsflash = New System.Windows.Forms.PictureBox()
@@ -372,6 +376,7 @@ Partial Class TL_SaveEditor
         Me.Timer_done = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_itemsedit = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.valu_itemsediticon_foods = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_foods = New System.Windows.Forms.Label()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Check_delete_foods = New System.Windows.Forms.CheckBox()
@@ -379,6 +384,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemsedit_foods = New System.Windows.Forms.NumericUpDown()
         Me.Icon_itemsedit_foods = New System.Windows.Forms.PictureBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.valu_itemsediticon_clothes = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_clothes = New System.Windows.Forms.Label()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Check_delete_clothes = New System.Windows.Forms.CheckBox()
@@ -386,6 +392,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemsedit_clothes = New System.Windows.Forms.NumericUpDown()
         Me.Icon_itemsedit_clothes = New System.Windows.Forms.PictureBox()
         Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.valu_itemsediticon_ssclothes = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_ssclothes = New System.Windows.Forms.Label()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Check_delete_ssclothes = New System.Windows.Forms.CheckBox()
@@ -393,6 +400,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemsedit_ssclothes = New System.Windows.Forms.NumericUpDown()
         Me.Icon_itemsedit_ssclothes = New System.Windows.Forms.PictureBox()
         Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.valu_itemsediticon_hats = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_hats = New System.Windows.Forms.Label()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.Check_delete_hats = New System.Windows.Forms.CheckBox()
@@ -400,6 +408,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemsedit_hats = New System.Windows.Forms.NumericUpDown()
         Me.Icon_itemsedit_hats = New System.Windows.Forms.PictureBox()
         Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.valu_itemsediticon_sshats = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_sshats = New System.Windows.Forms.Label()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Check_delete_sshats = New System.Windows.Forms.CheckBox()
@@ -407,6 +416,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemsedit_sshats = New System.Windows.Forms.NumericUpDown()
         Me.Icon_itemsedit_sshats = New System.Windows.Forms.PictureBox()
         Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.valu_itemsediticon_interiors = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_interiors = New System.Windows.Forms.Label()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.Check_delete_interiors = New System.Windows.Forms.CheckBox()
@@ -414,6 +424,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemsedit_interiors = New System.Windows.Forms.NumericUpDown()
         Me.Icon_itemsedit_interiors = New System.Windows.Forms.PictureBox()
         Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.valu_itemsediticon_goodsitems = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_goodsitems = New System.Windows.Forms.Label()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.Check_delete_goodsitems = New System.Windows.Forms.CheckBox()
@@ -421,6 +432,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemsedit_goodsitems = New System.Windows.Forms.NumericUpDown()
         Me.Icon_itemsedit_goodsitems = New System.Windows.Forms.PictureBox()
         Me.Panel25 = New System.Windows.Forms.Panel()
+        Me.valu_itemsediticon_treasures = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_treasures = New System.Windows.Forms.Label()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.Check_delete_treasures = New System.Windows.Forms.CheckBox()
@@ -428,6 +440,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemsedit_treasures = New System.Windows.Forms.NumericUpDown()
         Me.Icon_itemsedit_treasures = New System.Windows.Forms.PictureBox()
         Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.valu_itemsediticon_spefoods = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_spefoods = New System.Windows.Forms.Label()
         Me.PictureBox21 = New System.Windows.Forms.PictureBox()
         Me.Check_delete_spefoods = New System.Windows.Forms.CheckBox()
@@ -504,8 +517,6 @@ Partial Class TL_SaveEditor
         Me.Text_pagh_2 = New System.Windows.Forms.TextBox()
         Me.Text_pagh_1 = New System.Windows.Forms.TextBox()
         Me.Icon_crthall_music = New System.Windows.Forms.PictureBox()
-        Me.Panel29 = New System.Windows.Forms.Panel()
-        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_header.SuspendLayout()
@@ -715,6 +726,9 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_3dsSEL, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_MiitopiaSE, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_extras.SuspendLayout()
+        CType(Me.valu_setalltummy, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AdvH_setalltummy, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_setalltummy, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_resetrelationship, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_resetitems, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_resetnewsflash, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -740,46 +754,55 @@ Partial Class TL_SaveEditor
         Me.Panel_restoresave.SuspendLayout()
         Me.Panel_itemsedit.SuspendLayout()
         Me.Panel6.SuspendLayout()
+        CType(Me.valu_itemsediticon_foods, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel20.SuspendLayout()
         CType(Me.valu_itemsedit_foods, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_itemsedit_foods, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
+        CType(Me.valu_itemsediticon_clothes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
         CType(Me.valu_itemsedit_clothes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_itemsedit_clothes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel12.SuspendLayout()
+        CType(Me.valu_itemsediticon_ssclothes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel13.SuspendLayout()
         CType(Me.valu_itemsedit_ssclothes, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_itemsedit_ssclothes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel15.SuspendLayout()
+        CType(Me.valu_itemsediticon_hats, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel16.SuspendLayout()
         CType(Me.valu_itemsedit_hats, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_itemsedit_hats, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel17.SuspendLayout()
+        CType(Me.valu_itemsediticon_sshats, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel18.SuspendLayout()
         CType(Me.valu_itemsedit_sshats, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_itemsedit_sshats, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel21.SuspendLayout()
+        CType(Me.valu_itemsediticon_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel22.SuspendLayout()
         CType(Me.valu_itemsedit_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_itemsedit_interiors, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel23.SuspendLayout()
+        CType(Me.valu_itemsediticon_goodsitems, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel24.SuspendLayout()
         CType(Me.valu_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel25.SuspendLayout()
+        CType(Me.valu_itemsediticon_treasures, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel26.SuspendLayout()
         CType(Me.valu_itemsedit_treasures, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_itemsedit_treasures, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel27.SuspendLayout()
+        CType(Me.valu_itemsediticon_spefoods, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel28.SuspendLayout()
         CType(Me.valu_itemsedit_spefoods, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -837,7 +860,6 @@ Partial Class TL_SaveEditor
         CType(Me.valu_pagh_2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_pagh_1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_crthall_music, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel29.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -3863,6 +3885,10 @@ Partial Class TL_SaveEditor
         'Panel_extras
         '
         Me.Panel_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_extras.Controls.Add(Me.valu_setalltummy)
+        Me.Panel_extras.Controls.Add(Me.AdvH_setalltummy)
+        Me.Panel_extras.Controls.Add(Me.Check_setalltummy)
+        Me.Panel_extras.Controls.Add(Me.Icon_setalltummy)
         Me.Panel_extras.Controls.Add(Me.AdvH_resetrelationship)
         Me.Panel_extras.Controls.Add(Me.AdvH_resetitems)
         Me.Panel_extras.Controls.Add(Me.AdvH_resetnewsflash)
@@ -3887,12 +3913,64 @@ Partial Class TL_SaveEditor
         Me.Panel_extras.TabIndex = 92
         Me.Panel_extras.Visible = False
         '
+        'valu_setalltummy
+        '
+        Me.valu_setalltummy.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_setalltummy.Location = New System.Drawing.Point(87, 418)
+        Me.valu_setalltummy.Name = "valu_setalltummy"
+        Me.valu_setalltummy.Size = New System.Drawing.Size(37, 16)
+        Me.valu_setalltummy.TabIndex = 82
+        Me.valu_setalltummy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_setalltummy.Visible = False
+        '
+        'AdvH_setalltummy
+        '
+        Me.AdvH_setalltummy.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_setalltummy.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_setalltummy.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_setalltummy.Location = New System.Drawing.Point(265, 403)
+        Me.AdvH_setalltummy.Name = "AdvH_setalltummy"
+        Me.AdvH_setalltummy.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_setalltummy.TabIndex = 81
+        Me.AdvH_setalltummy.TabStop = False
+        Me.AdvH_setalltummy.Visible = False
+        '
+        'Check_setalltummy
+        '
+        Me.Check_setalltummy.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_setalltummy.AutoSize = True
+        Me.Check_setalltummy.BackColor = System.Drawing.Color.White
+        Me.Check_setalltummy.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_setalltummy.FlatAppearance.BorderSize = 0
+        Me.Check_setalltummy.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_setalltummy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_setalltummy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_setalltummy.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_setalltummy.Location = New System.Drawing.Point(132, 403)
+        Me.Check_setalltummy.Name = "Check_setalltummy"
+        Me.Check_setalltummy.Size = New System.Drawing.Size(126, 23)
+        Me.Check_setalltummy.TabIndex = 80
+        Me.Check_setalltummy.Text = "Set all Mii 's tummy to : "
+        Me.Check_setalltummy.UseVisualStyleBackColor = False
+        '
+        'Icon_setalltummy
+        '
+        Me.Icon_setalltummy.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_setalltummy.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_setalltummy.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_checktummy_empty
+        Me.Icon_setalltummy.Location = New System.Drawing.Point(86, 394)
+        Me.Icon_setalltummy.Name = "Icon_setalltummy"
+        Me.Icon_setalltummy.Size = New System.Drawing.Size(40, 40)
+        Me.Icon_setalltummy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_setalltummy.TabIndex = 79
+        Me.Icon_setalltummy.TabStop = False
+        '
         'AdvH_resetrelationship
         '
         Me.AdvH_resetrelationship.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_resetrelationship.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_resetrelationship.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetrelationship.Location = New System.Drawing.Point(289, 390)
+        Me.AdvH_resetrelationship.Location = New System.Drawing.Point(289, 354)
         Me.AdvH_resetrelationship.Name = "AdvH_resetrelationship"
         Me.AdvH_resetrelationship.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_resetrelationship.TabIndex = 78
@@ -3904,7 +3982,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_resetitems.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_resetitems.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_resetitems.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetitems.Location = New System.Drawing.Point(223, 341)
+        Me.AdvH_resetitems.Location = New System.Drawing.Point(223, 305)
         Me.AdvH_resetitems.Name = "AdvH_resetitems"
         Me.AdvH_resetitems.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_resetitems.TabIndex = 77
@@ -3916,7 +3994,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_resetnewsflash.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_resetnewsflash.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_resetnewsflash.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetnewsflash.Location = New System.Drawing.Point(239, 292)
+        Me.AdvH_resetnewsflash.Location = New System.Drawing.Point(239, 256)
         Me.AdvH_resetnewsflash.Name = "AdvH_resetnewsflash"
         Me.AdvH_resetnewsflash.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_resetnewsflash.TabIndex = 76
@@ -3928,7 +4006,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_resetmiiapart.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_resetmiiapart.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_resetmiiapart.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetmiiapart.Location = New System.Drawing.Point(254, 243)
+        Me.AdvH_resetmiiapart.Location = New System.Drawing.Point(254, 207)
         Me.AdvH_resetmiiapart.Name = "AdvH_resetmiiapart"
         Me.AdvH_resetmiiapart.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_resetmiiapart.TabIndex = 75
@@ -3940,7 +4018,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_resetstpspp.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_resetstpspp.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_resetstpspp.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_resetstpspp.Location = New System.Drawing.Point(367, 194)
+        Me.AdvH_resetstpspp.Location = New System.Drawing.Point(367, 158)
         Me.AdvH_resetstpspp.Name = "AdvH_resetstpspp"
         Me.AdvH_resetstpspp.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_resetstpspp.TabIndex = 74
@@ -3952,7 +4030,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_timetravel.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_timetravel.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_timetravel.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_timetravel.Location = New System.Drawing.Point(293, 145)
+        Me.AdvH_timetravel.Location = New System.Drawing.Point(293, 109)
         Me.AdvH_timetravel.Name = "AdvH_timetravel"
         Me.AdvH_timetravel.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_timetravel.TabIndex = 73
@@ -3970,7 +4048,7 @@ Partial Class TL_SaveEditor
         Me.Check_resetrelationship.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetrelationship.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetrelationship.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetrelationship.Location = New System.Drawing.Point(133, 389)
+        Me.Check_resetrelationship.Location = New System.Drawing.Point(132, 354)
         Me.Check_resetrelationship.Name = "Check_resetrelationship"
         Me.Check_resetrelationship.Size = New System.Drawing.Size(150, 23)
         Me.Check_resetrelationship.TabIndex = 72
@@ -3981,7 +4059,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_resetrelationship.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetrelationship.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_relationship
-        Me.Icon_resetrelationship.Location = New System.Drawing.Point(87, 380)
+        Me.Icon_resetrelationship.Location = New System.Drawing.Point(86, 345)
         Me.Icon_resetrelationship.Name = "Icon_resetrelationship"
         Me.Icon_resetrelationship.Size = New System.Drawing.Size(40, 40)
         Me.Icon_resetrelationship.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -3999,7 +4077,7 @@ Partial Class TL_SaveEditor
         Me.Check_resetitems.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetitems.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetitems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetitems.Location = New System.Drawing.Point(132, 340)
+        Me.Check_resetitems.Location = New System.Drawing.Point(132, 305)
         Me.Check_resetitems.Name = "Check_resetitems"
         Me.Check_resetitems.Size = New System.Drawing.Size(85, 23)
         Me.Check_resetitems.TabIndex = 70
@@ -4010,7 +4088,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_resetitems.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetitems.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_items
-        Me.Icon_resetitems.Location = New System.Drawing.Point(86, 331)
+        Me.Icon_resetitems.Location = New System.Drawing.Point(86, 296)
         Me.Icon_resetitems.Name = "Icon_resetitems"
         Me.Icon_resetitems.Size = New System.Drawing.Size(40, 40)
         Me.Icon_resetitems.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -4028,7 +4106,7 @@ Partial Class TL_SaveEditor
         Me.Check_resetnewsflash.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetnewsflash.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetnewsflash.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetnewsflash.Location = New System.Drawing.Point(132, 291)
+        Me.Check_resetnewsflash.Location = New System.Drawing.Point(132, 256)
         Me.Check_resetnewsflash.Name = "Check_resetnewsflash"
         Me.Check_resetnewsflash.Size = New System.Drawing.Size(103, 23)
         Me.Check_resetnewsflash.TabIndex = 68
@@ -4039,7 +4117,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_resetnewsflash.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetnewsflash.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_newsflash
-        Me.Icon_resetnewsflash.Location = New System.Drawing.Point(41, 290)
+        Me.Icon_resetnewsflash.Location = New System.Drawing.Point(40, 255)
         Me.Icon_resetnewsflash.Name = "Icon_resetnewsflash"
         Me.Icon_resetnewsflash.Size = New System.Drawing.Size(86, 25)
         Me.Icon_resetnewsflash.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -4057,7 +4135,7 @@ Partial Class TL_SaveEditor
         Me.Check_resetmiiapart.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetmiiapart.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetmiiapart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetmiiapart.Location = New System.Drawing.Point(132, 242)
+        Me.Check_resetmiiapart.Location = New System.Drawing.Point(132, 207)
         Me.Check_resetmiiapart.Name = "Check_resetmiiapart"
         Me.Check_resetmiiapart.Size = New System.Drawing.Size(116, 23)
         Me.Check_resetmiiapart.TabIndex = 66
@@ -4068,7 +4146,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_resetmiiapart.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetmiiapart.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_apartmii
-        Me.Icon_resetmiiapart.Location = New System.Drawing.Point(52, 241)
+        Me.Icon_resetmiiapart.Location = New System.Drawing.Point(51, 206)
         Me.Icon_resetmiiapart.Name = "Icon_resetmiiapart"
         Me.Icon_resetmiiapart.Size = New System.Drawing.Size(75, 25)
         Me.Icon_resetmiiapart.TabIndex = 65
@@ -4085,7 +4163,7 @@ Partial Class TL_SaveEditor
         Me.Check_resetstpspp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_resetstpspp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_resetstpspp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_resetstpspp.Location = New System.Drawing.Point(132, 193)
+        Me.Check_resetstpspp.Location = New System.Drawing.Point(132, 158)
         Me.Check_resetstpspp.Name = "Check_resetstpspp"
         Me.Check_resetstpspp.Size = New System.Drawing.Size(229, 23)
         Me.Check_resetstpspp.TabIndex = 3
@@ -4096,7 +4174,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_resetstpspp.BackColor = System.Drawing.Color.Transparent
         Me.Icon_resetstpspp.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.reset_stpspp
-        Me.Icon_resetstpspp.Location = New System.Drawing.Point(94, 192)
+        Me.Icon_resetstpspp.Location = New System.Drawing.Point(94, 157)
         Me.Icon_resetstpspp.Name = "Icon_resetstpspp"
         Me.Icon_resetstpspp.Size = New System.Drawing.Size(32, 25)
         Me.Icon_resetstpspp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -4114,7 +4192,7 @@ Partial Class TL_SaveEditor
         Me.Check_timetravel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
         Me.Check_timetravel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
         Me.Check_timetravel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Check_timetravel.Location = New System.Drawing.Point(132, 144)
+        Me.Check_timetravel.Location = New System.Drawing.Point(132, 109)
         Me.Check_timetravel.Name = "Check_timetravel"
         Me.Check_timetravel.Size = New System.Drawing.Size(155, 23)
         Me.Check_timetravel.TabIndex = 1
@@ -4125,7 +4203,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_timetravel.BackColor = System.Drawing.Color.Transparent
         Me.Icon_timetravel.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Time_travel
-        Me.Icon_timetravel.Location = New System.Drawing.Point(101, 143)
+        Me.Icon_timetravel.Location = New System.Drawing.Point(101, 108)
         Me.Icon_timetravel.Name = "Icon_timetravel"
         Me.Icon_timetravel.Size = New System.Drawing.Size(25, 25)
         Me.Icon_timetravel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -5013,7 +5091,6 @@ Partial Class TL_SaveEditor
         'Panel_itemsedit
         '
         Me.Panel_itemsedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_ft_items
-        Me.Panel_itemsedit.Controls.Add(Me.Panel29)
         Me.Panel_itemsedit.Controls.Add(Me.Panel6)
         Me.Panel_itemsedit.Controls.Add(Me.Panel7)
         Me.Panel_itemsedit.Controls.Add(Me.Panel12)
@@ -5032,15 +5109,27 @@ Partial Class TL_SaveEditor
         'Panel6
         '
         Me.Panel6.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel6.Controls.Add(Me.valu_itemsediticon_foods)
         Me.Panel6.Controls.Add(Me.Title_itemsedit_foods)
         Me.Panel6.Controls.Add(Me.PictureBox6)
         Me.Panel6.Controls.Add(Me.Check_delete_foods)
         Me.Panel6.Controls.Add(Me.Panel20)
         Me.Panel6.Controls.Add(Me.Icon_itemsedit_foods)
-        Me.Panel6.Location = New System.Drawing.Point(32, 32)
+        Me.Panel6.Location = New System.Drawing.Point(32, 39)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(200, 150)
         Me.Panel6.TabIndex = 18
+        '
+        'valu_itemsediticon_foods
+        '
+        Me.valu_itemsediticon_foods.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsediticon_foods.Location = New System.Drawing.Point(5, 60)
+        Me.valu_itemsediticon_foods.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsediticon_foods.Name = "valu_itemsediticon_foods"
+        Me.valu_itemsediticon_foods.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsediticon_foods.TabIndex = 74
+        Me.valu_itemsediticon_foods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsediticon_foods.Visible = False
         '
         'Title_itemsedit_foods
         '
@@ -5095,15 +5184,17 @@ Partial Class TL_SaveEditor
         '
         Me.valu_itemsedit_foods.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_itemsedit_foods.Location = New System.Drawing.Point(29, 3)
-        Me.valu_itemsedit_foods.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_foods.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_itemsedit_foods.Name = "valu_itemsedit_foods"
         Me.valu_itemsedit_foods.Size = New System.Drawing.Size(56, 16)
         Me.valu_itemsedit_foods.TabIndex = 1
         Me.valu_itemsedit_foods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsedit_foods.Value = New Decimal(New Integer() {99, 0, 0, 0})
         '
         'Icon_itemsedit_foods
         '
         Me.Icon_itemsedit_foods.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_foods.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemsedit_foods.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unfoods
         Me.Icon_itemsedit_foods.Location = New System.Drawing.Point(3, 3)
         Me.Icon_itemsedit_foods.Name = "Icon_itemsedit_foods"
@@ -5114,15 +5205,27 @@ Partial Class TL_SaveEditor
         'Panel7
         '
         Me.Panel7.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel7.Controls.Add(Me.valu_itemsediticon_clothes)
         Me.Panel7.Controls.Add(Me.Title_itemsedit_clothes)
         Me.Panel7.Controls.Add(Me.PictureBox7)
         Me.Panel7.Controls.Add(Me.Check_delete_clothes)
         Me.Panel7.Controls.Add(Me.Panel8)
         Me.Panel7.Controls.Add(Me.Icon_itemsedit_clothes)
-        Me.Panel7.Location = New System.Drawing.Point(238, 32)
+        Me.Panel7.Location = New System.Drawing.Point(238, 39)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(200, 150)
         Me.Panel7.TabIndex = 19
+        '
+        'valu_itemsediticon_clothes
+        '
+        Me.valu_itemsediticon_clothes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsediticon_clothes.Location = New System.Drawing.Point(5, 60)
+        Me.valu_itemsediticon_clothes.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsediticon_clothes.Name = "valu_itemsediticon_clothes"
+        Me.valu_itemsediticon_clothes.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsediticon_clothes.TabIndex = 75
+        Me.valu_itemsediticon_clothes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsediticon_clothes.Visible = False
         '
         'Title_itemsedit_clothes
         '
@@ -5177,15 +5280,17 @@ Partial Class TL_SaveEditor
         '
         Me.valu_itemsedit_clothes.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_itemsedit_clothes.Location = New System.Drawing.Point(29, 3)
-        Me.valu_itemsedit_clothes.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_clothes.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_itemsedit_clothes.Name = "valu_itemsedit_clothes"
         Me.valu_itemsedit_clothes.Size = New System.Drawing.Size(56, 16)
         Me.valu_itemsedit_clothes.TabIndex = 1
         Me.valu_itemsedit_clothes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsedit_clothes.Value = New Decimal(New Integer() {99, 0, 0, 0})
         '
         'Icon_itemsedit_clothes
         '
         Me.Icon_itemsedit_clothes.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_clothes.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemsedit_clothes.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unclothes
         Me.Icon_itemsedit_clothes.Location = New System.Drawing.Point(3, 3)
         Me.Icon_itemsedit_clothes.Name = "Icon_itemsedit_clothes"
@@ -5196,15 +5301,27 @@ Partial Class TL_SaveEditor
         'Panel12
         '
         Me.Panel12.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel12.Controls.Add(Me.valu_itemsediticon_ssclothes)
         Me.Panel12.Controls.Add(Me.Title_itemsedit_ssclothes)
         Me.Panel12.Controls.Add(Me.PictureBox9)
         Me.Panel12.Controls.Add(Me.Check_delete_ssclothes)
         Me.Panel12.Controls.Add(Me.Panel13)
         Me.Panel12.Controls.Add(Me.Icon_itemsedit_ssclothes)
-        Me.Panel12.Location = New System.Drawing.Point(444, 32)
+        Me.Panel12.Location = New System.Drawing.Point(444, 39)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(200, 150)
         Me.Panel12.TabIndex = 20
+        '
+        'valu_itemsediticon_ssclothes
+        '
+        Me.valu_itemsediticon_ssclothes.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsediticon_ssclothes.Location = New System.Drawing.Point(5, 60)
+        Me.valu_itemsediticon_ssclothes.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsediticon_ssclothes.Name = "valu_itemsediticon_ssclothes"
+        Me.valu_itemsediticon_ssclothes.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsediticon_ssclothes.TabIndex = 75
+        Me.valu_itemsediticon_ssclothes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsediticon_ssclothes.Visible = False
         '
         'Title_itemsedit_ssclothes
         '
@@ -5259,15 +5376,17 @@ Partial Class TL_SaveEditor
         '
         Me.valu_itemsedit_ssclothes.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_itemsedit_ssclothes.Location = New System.Drawing.Point(29, 3)
-        Me.valu_itemsedit_ssclothes.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_ssclothes.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_itemsedit_ssclothes.Name = "valu_itemsedit_ssclothes"
         Me.valu_itemsedit_ssclothes.Size = New System.Drawing.Size(56, 16)
         Me.valu_itemsedit_ssclothes.TabIndex = 1
         Me.valu_itemsedit_ssclothes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsedit_ssclothes.Value = New Decimal(New Integer() {99, 0, 0, 0})
         '
         'Icon_itemsedit_ssclothes
         '
         Me.Icon_itemsedit_ssclothes.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_ssclothes.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemsedit_ssclothes.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unclothesstsp
         Me.Icon_itemsedit_ssclothes.Location = New System.Drawing.Point(3, 3)
         Me.Icon_itemsedit_ssclothes.Name = "Icon_itemsedit_ssclothes"
@@ -5278,15 +5397,27 @@ Partial Class TL_SaveEditor
         'Panel15
         '
         Me.Panel15.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel15.Controls.Add(Me.valu_itemsediticon_hats)
         Me.Panel15.Controls.Add(Me.Title_itemsedit_hats)
         Me.Panel15.Controls.Add(Me.PictureBox11)
         Me.Panel15.Controls.Add(Me.Check_delete_hats)
         Me.Panel15.Controls.Add(Me.Panel16)
         Me.Panel15.Controls.Add(Me.Icon_itemsedit_hats)
-        Me.Panel15.Location = New System.Drawing.Point(32, 188)
+        Me.Panel15.Location = New System.Drawing.Point(32, 195)
         Me.Panel15.Name = "Panel15"
         Me.Panel15.Size = New System.Drawing.Size(200, 150)
         Me.Panel15.TabIndex = 21
+        '
+        'valu_itemsediticon_hats
+        '
+        Me.valu_itemsediticon_hats.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsediticon_hats.Location = New System.Drawing.Point(5, 60)
+        Me.valu_itemsediticon_hats.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsediticon_hats.Name = "valu_itemsediticon_hats"
+        Me.valu_itemsediticon_hats.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsediticon_hats.TabIndex = 75
+        Me.valu_itemsediticon_hats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsediticon_hats.Visible = False
         '
         'Title_itemsedit_hats
         '
@@ -5341,15 +5472,17 @@ Partial Class TL_SaveEditor
         '
         Me.valu_itemsedit_hats.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_itemsedit_hats.Location = New System.Drawing.Point(29, 3)
-        Me.valu_itemsedit_hats.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_hats.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_itemsedit_hats.Name = "valu_itemsedit_hats"
         Me.valu_itemsedit_hats.Size = New System.Drawing.Size(56, 16)
         Me.valu_itemsedit_hats.TabIndex = 1
         Me.valu_itemsedit_hats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsedit_hats.Value = New Decimal(New Integer() {99, 0, 0, 0})
         '
         'Icon_itemsedit_hats
         '
         Me.Icon_itemsedit_hats.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_hats.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemsedit_hats.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unhats
         Me.Icon_itemsedit_hats.Location = New System.Drawing.Point(3, 3)
         Me.Icon_itemsedit_hats.Name = "Icon_itemsedit_hats"
@@ -5360,15 +5493,27 @@ Partial Class TL_SaveEditor
         'Panel17
         '
         Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel17.Controls.Add(Me.valu_itemsediticon_sshats)
         Me.Panel17.Controls.Add(Me.Title_itemsedit_sshats)
         Me.Panel17.Controls.Add(Me.PictureBox13)
         Me.Panel17.Controls.Add(Me.Check_delete_sshats)
         Me.Panel17.Controls.Add(Me.Panel18)
         Me.Panel17.Controls.Add(Me.Icon_itemsedit_sshats)
-        Me.Panel17.Location = New System.Drawing.Point(238, 188)
+        Me.Panel17.Location = New System.Drawing.Point(238, 195)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(200, 150)
         Me.Panel17.TabIndex = 22
+        '
+        'valu_itemsediticon_sshats
+        '
+        Me.valu_itemsediticon_sshats.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsediticon_sshats.Location = New System.Drawing.Point(5, 60)
+        Me.valu_itemsediticon_sshats.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsediticon_sshats.Name = "valu_itemsediticon_sshats"
+        Me.valu_itemsediticon_sshats.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsediticon_sshats.TabIndex = 75
+        Me.valu_itemsediticon_sshats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsediticon_sshats.Visible = False
         '
         'Title_itemsedit_sshats
         '
@@ -5423,15 +5568,17 @@ Partial Class TL_SaveEditor
         '
         Me.valu_itemsedit_sshats.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_itemsedit_sshats.Location = New System.Drawing.Point(29, 3)
-        Me.valu_itemsedit_sshats.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_sshats.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_itemsedit_sshats.Name = "valu_itemsedit_sshats"
         Me.valu_itemsedit_sshats.Size = New System.Drawing.Size(56, 16)
         Me.valu_itemsedit_sshats.TabIndex = 1
         Me.valu_itemsedit_sshats.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsedit_sshats.Value = New Decimal(New Integer() {99, 0, 0, 0})
         '
         'Icon_itemsedit_sshats
         '
         Me.Icon_itemsedit_sshats.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_sshats.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemsedit_sshats.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unhatsstsp
         Me.Icon_itemsedit_sshats.Location = New System.Drawing.Point(3, 3)
         Me.Icon_itemsedit_sshats.Name = "Icon_itemsedit_sshats"
@@ -5442,15 +5589,27 @@ Partial Class TL_SaveEditor
         'Panel21
         '
         Me.Panel21.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel21.Controls.Add(Me.valu_itemsediticon_interiors)
         Me.Panel21.Controls.Add(Me.Title_itemsedit_interiors)
         Me.Panel21.Controls.Add(Me.PictureBox15)
         Me.Panel21.Controls.Add(Me.Check_delete_interiors)
         Me.Panel21.Controls.Add(Me.Panel22)
         Me.Panel21.Controls.Add(Me.Icon_itemsedit_interiors)
-        Me.Panel21.Location = New System.Drawing.Point(444, 188)
+        Me.Panel21.Location = New System.Drawing.Point(444, 195)
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(200, 150)
         Me.Panel21.TabIndex = 23
+        '
+        'valu_itemsediticon_interiors
+        '
+        Me.valu_itemsediticon_interiors.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsediticon_interiors.Location = New System.Drawing.Point(5, 60)
+        Me.valu_itemsediticon_interiors.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsediticon_interiors.Name = "valu_itemsediticon_interiors"
+        Me.valu_itemsediticon_interiors.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsediticon_interiors.TabIndex = 75
+        Me.valu_itemsediticon_interiors.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsediticon_interiors.Visible = False
         '
         'Title_itemsedit_interiors
         '
@@ -5505,15 +5664,17 @@ Partial Class TL_SaveEditor
         '
         Me.valu_itemsedit_interiors.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_itemsedit_interiors.Location = New System.Drawing.Point(29, 3)
-        Me.valu_itemsedit_interiors.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_interiors.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_itemsedit_interiors.Name = "valu_itemsedit_interiors"
         Me.valu_itemsedit_interiors.Size = New System.Drawing.Size(56, 16)
         Me.valu_itemsedit_interiors.TabIndex = 1
         Me.valu_itemsedit_interiors.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsedit_interiors.Value = New Decimal(New Integer() {99, 0, 0, 0})
         '
         'Icon_itemsedit_interiors
         '
         Me.Icon_itemsedit_interiors.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_interiors.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemsedit_interiors.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_uninteriors
         Me.Icon_itemsedit_interiors.Location = New System.Drawing.Point(3, 3)
         Me.Icon_itemsedit_interiors.Name = "Icon_itemsedit_interiors"
@@ -5524,15 +5685,27 @@ Partial Class TL_SaveEditor
         'Panel23
         '
         Me.Panel23.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel23.Controls.Add(Me.valu_itemsediticon_goodsitems)
         Me.Panel23.Controls.Add(Me.Title_itemsedit_goodsitems)
         Me.Panel23.Controls.Add(Me.PictureBox17)
         Me.Panel23.Controls.Add(Me.Check_delete_goodsitems)
         Me.Panel23.Controls.Add(Me.Panel24)
         Me.Panel23.Controls.Add(Me.Icon_itemsedit_goodsitems)
-        Me.Panel23.Location = New System.Drawing.Point(32, 344)
+        Me.Panel23.Location = New System.Drawing.Point(32, 351)
         Me.Panel23.Name = "Panel23"
         Me.Panel23.Size = New System.Drawing.Size(200, 150)
         Me.Panel23.TabIndex = 24
+        '
+        'valu_itemsediticon_goodsitems
+        '
+        Me.valu_itemsediticon_goodsitems.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsediticon_goodsitems.Location = New System.Drawing.Point(5, 60)
+        Me.valu_itemsediticon_goodsitems.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsediticon_goodsitems.Name = "valu_itemsediticon_goodsitems"
+        Me.valu_itemsediticon_goodsitems.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsediticon_goodsitems.TabIndex = 75
+        Me.valu_itemsediticon_goodsitems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsediticon_goodsitems.Visible = False
         '
         'Title_itemsedit_goodsitems
         '
@@ -5587,15 +5760,17 @@ Partial Class TL_SaveEditor
         '
         Me.valu_itemsedit_goodsitems.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_itemsedit_goodsitems.Location = New System.Drawing.Point(29, 3)
-        Me.valu_itemsedit_goodsitems.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_goodsitems.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_itemsedit_goodsitems.Name = "valu_itemsedit_goodsitems"
         Me.valu_itemsedit_goodsitems.Size = New System.Drawing.Size(56, 16)
         Me.valu_itemsedit_goodsitems.TabIndex = 1
         Me.valu_itemsedit_goodsitems.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsedit_goodsitems.Value = New Decimal(New Integer() {99, 0, 0, 0})
         '
         'Icon_itemsedit_goodsitems
         '
         Me.Icon_itemsedit_goodsitems.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_goodsitems.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemsedit_goodsitems.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_ungoods
         Me.Icon_itemsedit_goodsitems.Location = New System.Drawing.Point(3, 3)
         Me.Icon_itemsedit_goodsitems.Name = "Icon_itemsedit_goodsitems"
@@ -5606,15 +5781,27 @@ Partial Class TL_SaveEditor
         'Panel25
         '
         Me.Panel25.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel25.Controls.Add(Me.valu_itemsediticon_treasures)
         Me.Panel25.Controls.Add(Me.Title_itemsedit_treasures)
         Me.Panel25.Controls.Add(Me.PictureBox19)
         Me.Panel25.Controls.Add(Me.Check_delete_treasures)
         Me.Panel25.Controls.Add(Me.Panel26)
         Me.Panel25.Controls.Add(Me.Icon_itemsedit_treasures)
-        Me.Panel25.Location = New System.Drawing.Point(238, 344)
+        Me.Panel25.Location = New System.Drawing.Point(238, 351)
         Me.Panel25.Name = "Panel25"
         Me.Panel25.Size = New System.Drawing.Size(200, 150)
         Me.Panel25.TabIndex = 25
+        '
+        'valu_itemsediticon_treasures
+        '
+        Me.valu_itemsediticon_treasures.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsediticon_treasures.Location = New System.Drawing.Point(5, 60)
+        Me.valu_itemsediticon_treasures.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsediticon_treasures.Name = "valu_itemsediticon_treasures"
+        Me.valu_itemsediticon_treasures.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsediticon_treasures.TabIndex = 75
+        Me.valu_itemsediticon_treasures.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsediticon_treasures.Visible = False
         '
         'Title_itemsedit_treasures
         '
@@ -5669,15 +5856,17 @@ Partial Class TL_SaveEditor
         '
         Me.valu_itemsedit_treasures.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_itemsedit_treasures.Location = New System.Drawing.Point(29, 3)
-        Me.valu_itemsedit_treasures.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_treasures.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_itemsedit_treasures.Name = "valu_itemsedit_treasures"
         Me.valu_itemsedit_treasures.Size = New System.Drawing.Size(56, 16)
         Me.valu_itemsedit_treasures.TabIndex = 1
         Me.valu_itemsedit_treasures.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsedit_treasures.Value = New Decimal(New Integer() {99, 0, 0, 0})
         '
         'Icon_itemsedit_treasures
         '
         Me.Icon_itemsedit_treasures.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_treasures.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemsedit_treasures.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_untreasures
         Me.Icon_itemsedit_treasures.Location = New System.Drawing.Point(3, 3)
         Me.Icon_itemsedit_treasures.Name = "Icon_itemsedit_treasures"
@@ -5688,15 +5877,27 @@ Partial Class TL_SaveEditor
         'Panel27
         '
         Me.Panel27.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel27.Controls.Add(Me.valu_itemsediticon_spefoods)
         Me.Panel27.Controls.Add(Me.Title_itemsedit_spefoods)
         Me.Panel27.Controls.Add(Me.PictureBox21)
         Me.Panel27.Controls.Add(Me.Check_delete_spefoods)
         Me.Panel27.Controls.Add(Me.Panel28)
         Me.Panel27.Controls.Add(Me.Icon_itemsedit_spefoods)
-        Me.Panel27.Location = New System.Drawing.Point(444, 344)
+        Me.Panel27.Location = New System.Drawing.Point(444, 351)
         Me.Panel27.Name = "Panel27"
         Me.Panel27.Size = New System.Drawing.Size(200, 150)
         Me.Panel27.TabIndex = 26
+        '
+        'valu_itemsediticon_spefoods
+        '
+        Me.valu_itemsediticon_spefoods.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsediticon_spefoods.Location = New System.Drawing.Point(5, 60)
+        Me.valu_itemsediticon_spefoods.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsediticon_spefoods.Name = "valu_itemsediticon_spefoods"
+        Me.valu_itemsediticon_spefoods.Size = New System.Drawing.Size(56, 16)
+        Me.valu_itemsediticon_spefoods.TabIndex = 75
+        Me.valu_itemsediticon_spefoods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsediticon_spefoods.Visible = False
         '
         'Title_itemsedit_spefoods
         '
@@ -5751,15 +5952,17 @@ Partial Class TL_SaveEditor
         '
         Me.valu_itemsedit_spefoods.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_itemsedit_spefoods.Location = New System.Drawing.Point(29, 3)
-        Me.valu_itemsedit_spefoods.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemsedit_spefoods.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_itemsedit_spefoods.Name = "valu_itemsedit_spefoods"
         Me.valu_itemsedit_spefoods.Size = New System.Drawing.Size(56, 16)
         Me.valu_itemsedit_spefoods.TabIndex = 1
         Me.valu_itemsedit_spefoods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemsedit_spefoods.Value = New Decimal(New Integer() {99, 0, 0, 0})
         '
         'Icon_itemsedit_spefoods
         '
         Me.Icon_itemsedit_spefoods.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_itemsedit_spefoods.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemsedit_spefoods.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_unfoodsspe
         Me.Icon_itemsedit_spefoods.Location = New System.Drawing.Point(3, 3)
         Me.Icon_itemsedit_spefoods.Name = "Icon_itemsedit_spefoods"
@@ -6599,28 +6802,6 @@ Partial Class TL_SaveEditor
         Me.Icon_crthall_music.TabIndex = 92
         Me.Icon_crthall_music.TabStop = False
         '
-        'Panel29
-        '
-        Me.Panel29.BackColor = System.Drawing.Color.Transparent
-        Me.Panel29.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
-        Me.Panel29.Controls.Add(Me.Label3)
-        Me.Panel29.Location = New System.Drawing.Point(263, 501)
-        Me.Panel29.Name = "Panel29"
-        Me.Panel29.Size = New System.Drawing.Size(150, 32)
-        Me.Panel29.TabIndex = 88
-        '
-        'Label3
-        '
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(0, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(150, 32)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Save"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -6638,9 +6819,9 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_manual)
-        Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_repairsave)
         Me.Controls.Add(Me.Panel_concertedit)
+        Me.Controls.Add(Me.Panel_extras)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -6867,6 +7048,9 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_MiitopiaSE, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_extras.ResumeLayout(False)
         Me.Panel_extras.PerformLayout()
+        CType(Me.valu_setalltummy, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AdvH_setalltummy, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_setalltummy, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_resetrelationship, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_resetitems, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_resetnewsflash, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6899,46 +7083,55 @@ Partial Class TL_SaveEditor
         Me.Panel_restoresave.PerformLayout()
         Me.Panel_itemsedit.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
+        CType(Me.valu_itemsediticon_foods, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel20.ResumeLayout(False)
         CType(Me.valu_itemsedit_foods, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_itemsedit_foods, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
+        CType(Me.valu_itemsediticon_clothes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
         CType(Me.valu_itemsedit_clothes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_itemsedit_clothes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel12.ResumeLayout(False)
+        CType(Me.valu_itemsediticon_ssclothes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel13.ResumeLayout(False)
         CType(Me.valu_itemsedit_ssclothes, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_itemsedit_ssclothes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel15.ResumeLayout(False)
+        CType(Me.valu_itemsediticon_hats, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel16.ResumeLayout(False)
         CType(Me.valu_itemsedit_hats, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_itemsedit_hats, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel17.ResumeLayout(False)
+        CType(Me.valu_itemsediticon_sshats, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel18.ResumeLayout(False)
         CType(Me.valu_itemsedit_sshats, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_itemsedit_sshats, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel21.ResumeLayout(False)
+        CType(Me.valu_itemsediticon_interiors, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel22.ResumeLayout(False)
         CType(Me.valu_itemsedit_interiors, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_itemsedit_interiors, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel23.ResumeLayout(False)
+        CType(Me.valu_itemsediticon_goodsitems, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel24.ResumeLayout(False)
         CType(Me.valu_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel25.ResumeLayout(False)
+        CType(Me.valu_itemsediticon_treasures, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel26.ResumeLayout(False)
         CType(Me.valu_itemsedit_treasures, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_itemsedit_treasures, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel27.ResumeLayout(False)
+        CType(Me.valu_itemsediticon_spefoods, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel28.ResumeLayout(False)
         CType(Me.valu_itemsedit_spefoods, System.ComponentModel.ISupportInitialize).EndInit()
@@ -6998,7 +7191,6 @@ Partial Class TL_SaveEditor
         CType(Me.valu_pagh_2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_pagh_1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_crthall_music, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel29.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -7484,6 +7676,17 @@ Partial Class TL_SaveEditor
     Friend WithEvents Title_itemsedit_goodsitems As Label
     Friend WithEvents Title_itemsedit_treasures As Label
     Friend WithEvents Title_itemsedit_spefoods As Label
-    Friend WithEvents Panel29 As Panel
-    Friend WithEvents Label3 As Label
+    Friend WithEvents valu_setalltummy As NumericUpDown
+    Friend WithEvents AdvH_setalltummy As PictureBox
+    Friend WithEvents Check_setalltummy As CheckBox
+    Friend WithEvents Icon_setalltummy As PictureBox
+    Friend WithEvents valu_itemsediticon_foods As NumericUpDown
+    Friend WithEvents valu_itemsediticon_clothes As NumericUpDown
+    Friend WithEvents valu_itemsediticon_ssclothes As NumericUpDown
+    Friend WithEvents valu_itemsediticon_hats As NumericUpDown
+    Friend WithEvents valu_itemsediticon_sshats As NumericUpDown
+    Friend WithEvents valu_itemsediticon_interiors As NumericUpDown
+    Friend WithEvents valu_itemsediticon_goodsitems As NumericUpDown
+    Friend WithEvents valu_itemsediticon_treasures As NumericUpDown
+    Friend WithEvents valu_itemsediticon_spefoods As NumericUpDown
 End Class
