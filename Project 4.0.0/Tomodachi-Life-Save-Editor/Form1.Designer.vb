@@ -392,6 +392,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemsedit_clothes = New System.Windows.Forms.NumericUpDown()
         Me.Icon_itemsedit_clothes = New System.Windows.Forms.PictureBox()
         Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Check_available_ssclothes = New System.Windows.Forms.CheckBox()
         Me.valu_itemsediticon_ssclothes = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_ssclothes = New System.Windows.Forms.Label()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
@@ -408,6 +409,7 @@ Partial Class TL_SaveEditor
         Me.valu_itemsedit_hats = New System.Windows.Forms.NumericUpDown()
         Me.Icon_itemsedit_hats = New System.Windows.Forms.PictureBox()
         Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Check_available_sshats = New System.Windows.Forms.CheckBox()
         Me.valu_itemsediticon_sshats = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_sshats = New System.Windows.Forms.Label()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
@@ -5151,6 +5153,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox6.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox6.TabIndex = 72
         Me.PictureBox6.TabStop = False
+        Me.PictureBox6.Visible = False
         '
         'Check_delete_foods
         '
@@ -5247,6 +5250,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox7.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox7.TabIndex = 72
         Me.PictureBox7.TabStop = False
+        Me.PictureBox7.Visible = False
         '
         'Check_delete_clothes
         '
@@ -5301,6 +5305,7 @@ Partial Class TL_SaveEditor
         'Panel12
         '
         Me.Panel12.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel12.Controls.Add(Me.Check_available_ssclothes)
         Me.Panel12.Controls.Add(Me.valu_itemsediticon_ssclothes)
         Me.Panel12.Controls.Add(Me.Title_itemsedit_ssclothes)
         Me.Panel12.Controls.Add(Me.PictureBox9)
@@ -5311,6 +5316,24 @@ Partial Class TL_SaveEditor
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(200, 150)
         Me.Panel12.TabIndex = 20
+        '
+        'Check_available_ssclothes
+        '
+        Me.Check_available_ssclothes.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_available_ssclothes.BackColor = System.Drawing.Color.White
+        Me.Check_available_ssclothes.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_available_ssclothes.FlatAppearance.BorderSize = 0
+        Me.Check_available_ssclothes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_available_ssclothes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_available_ssclothes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_available_ssclothes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_available_ssclothes.Location = New System.Drawing.Point(8, 118)
+        Me.Check_available_ssclothes.Name = "Check_available_ssclothes"
+        Me.Check_available_ssclothes.Size = New System.Drawing.Size(152, 23)
+        Me.Check_available_ssclothes.TabIndex = 76
+        Me.Check_available_ssclothes.Text = "Available in shop"
+        Me.Check_available_ssclothes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_available_ssclothes.UseVisualStyleBackColor = False
         '
         'valu_itemsediticon_ssclothes
         '
@@ -5343,6 +5366,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox9.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox9.TabIndex = 72
         Me.PictureBox9.TabStop = False
+        Me.PictureBox9.Visible = False
         '
         'Check_delete_ssclothes
         '
@@ -5439,6 +5463,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox11.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox11.TabIndex = 72
         Me.PictureBox11.TabStop = False
+        Me.PictureBox11.Visible = False
         '
         'Check_delete_hats
         '
@@ -5493,6 +5518,7 @@ Partial Class TL_SaveEditor
         'Panel17
         '
         Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
+        Me.Panel17.Controls.Add(Me.Check_available_sshats)
         Me.Panel17.Controls.Add(Me.valu_itemsediticon_sshats)
         Me.Panel17.Controls.Add(Me.Title_itemsedit_sshats)
         Me.Panel17.Controls.Add(Me.PictureBox13)
@@ -5503,6 +5529,24 @@ Partial Class TL_SaveEditor
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(200, 150)
         Me.Panel17.TabIndex = 22
+        '
+        'Check_available_sshats
+        '
+        Me.Check_available_sshats.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_available_sshats.BackColor = System.Drawing.Color.White
+        Me.Check_available_sshats.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_available_sshats.FlatAppearance.BorderSize = 0
+        Me.Check_available_sshats.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_available_sshats.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_available_sshats.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_available_sshats.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_available_sshats.Location = New System.Drawing.Point(8, 118)
+        Me.Check_available_sshats.Name = "Check_available_sshats"
+        Me.Check_available_sshats.Size = New System.Drawing.Size(152, 23)
+        Me.Check_available_sshats.TabIndex = 77
+        Me.Check_available_sshats.Text = "Available in shop"
+        Me.Check_available_sshats.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_available_sshats.UseVisualStyleBackColor = False
         '
         'valu_itemsediticon_sshats
         '
@@ -5535,6 +5579,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox13.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox13.TabIndex = 72
         Me.PictureBox13.TabStop = False
+        Me.PictureBox13.Visible = False
         '
         'Check_delete_sshats
         '
@@ -5631,6 +5676,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox15.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox15.TabIndex = 72
         Me.PictureBox15.TabStop = False
+        Me.PictureBox15.Visible = False
         '
         'Check_delete_interiors
         '
@@ -5727,6 +5773,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox17.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox17.TabIndex = 72
         Me.PictureBox17.TabStop = False
+        Me.PictureBox17.Visible = False
         '
         'Check_delete_goodsitems
         '
@@ -5823,6 +5870,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox19.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox19.TabIndex = 72
         Me.PictureBox19.TabStop = False
+        Me.PictureBox19.Visible = False
         '
         'Check_delete_treasures
         '
@@ -5919,6 +5967,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox21.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox21.TabIndex = 72
         Me.PictureBox21.TabStop = False
+        Me.PictureBox21.Visible = False
         '
         'Check_delete_spefoods
         '
@@ -7689,4 +7738,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents valu_itemsediticon_goodsitems As NumericUpDown
     Friend WithEvents valu_itemsediticon_treasures As NumericUpDown
     Friend WithEvents valu_itemsediticon_spefoods As NumericUpDown
+    Friend WithEvents Check_available_ssclothes As CheckBox
+    Friend WithEvents Check_available_sshats As CheckBox
 End Class
