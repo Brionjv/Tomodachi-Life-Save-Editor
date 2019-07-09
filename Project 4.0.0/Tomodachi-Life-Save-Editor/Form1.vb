@@ -210,6 +210,26 @@ Public Class TL_SaveEditor
             Text_title_editsongs.Text = "Concert Hall"
             Text_save_editsongs.Text = "Save"
             Check_setalltummy.Text = "Set all Mii's tummy to :"
+            Title_itemsedit_clothes.Text = "Clothes"
+            Title_itemsedit_foods.Text = "Foods"
+            Title_itemsedit_goodsitems.Text = "Goods items"
+            Title_itemsedit_hats.Text = "Hats"
+            Title_itemsedit_interiors.Text = "Interiors"
+            Title_itemsedit_spefoods.Text = "Special foods"
+            Title_itemsedit_ssclothes.Text = "StreetPass / SpotPass" & vbNewLine & "clothes"
+            Title_itemsedit_sshats.Text = "StreetPass / SpotPass" & vbNewLine & "hats"
+            Title_itemsedit_treasures.Text = "Treasures"
+            Check_delete_clothes.Text = "Delete all"
+            Check_delete_foods.Text = "Delete all"
+            Check_delete_goodsitems.Text = "Delete all"
+            Check_delete_hats.Text = "Delete all"
+            Check_delete_interiors.Text = "Delete all"
+            Check_delete_spefoods.Text = "Delete all"
+            Check_delete_ssclothes.Text = "Delete all"
+            Check_delete_sshats.Text = "Delete all"
+            Check_delete_treasures.Text = "Delete all"
+            Check_available_ssclothes.Text = "Available in shop"
+            Check_available_sshats.Text = "Available in shop"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_menu_open.Text = "Ouvrir"
             Text_menu_save.Text = "Enregistrer"
@@ -255,6 +275,26 @@ Public Class TL_SaveEditor
             Text_title_editsongs.Text = "Salle de Concert"
             Text_save_editsongs.Text = "Enregistrer"
             Check_setalltummy.Text = "Mettre l'estomac des Mii :"
+            Title_itemsedit_clothes.Text = "Vêtements"
+            Title_itemsedit_foods.Text = "Nourritures"
+            Title_itemsedit_goodsitems.Text = "Objets divers"
+            Title_itemsedit_hats.Text = "Chapeaux"
+            Title_itemsedit_interiors.Text = "Intérieurs"
+            Title_itemsedit_spefoods.Text = "Produits spéciaux"
+            Title_itemsedit_ssclothes.Text = "Vêtements" & vbNewLine & "StreetPass / SpotPass"
+            Title_itemsedit_sshats.Text = "Chapeaux" & vbNewLine & "StreetPass / SpotPass"
+            Title_itemsedit_treasures.Text = "Trésors"
+            Check_delete_clothes.Text = "Tout supprimer"
+            Check_delete_foods.Text = "Tout supprimer"
+            Check_delete_goodsitems.Text = "Tout supprimer"
+            Check_delete_hats.Text = "Tout supprimer"
+            Check_delete_interiors.Text = "Tout supprimer"
+            Check_delete_spefoods.Text = "Tout supprimer"
+            Check_delete_ssclothes.Text = "Tout supprimer"
+            Check_delete_sshats.Text = "Tout supprimer"
+            Check_delete_treasures.Text = "Tout supprimer"
+            Check_available_ssclothes.Text = "Disponible au magasin"
+            Check_available_sshats.Text = "Disponible au magasin"
         End If
     End Sub
 
@@ -1701,6 +1741,15 @@ Public Class TL_SaveEditor
             AdvH_editsonglign.Visible = True
             AdvH_savesong.Visible = True
             AdvH_setalltummy.Visible = True
+            AdvH_itemsedit_clothes.Visible = True
+            AdvH_itemsedit_foods.Visible = True
+            AdvH_itemsedit_goodsitems.Visible = True
+            AdvH_itemsedit_hats.Visible = True
+            AdvH_itemsedit_interiors.Visible = True
+            AdvH_itemsedit_spefoods.Visible = True
+            AdvH_itemsedit_ssclothes.Visible = True
+            AdvH_itemsedit_sshats.Visible = True
+            AdvH_itemsedit_treasures.Visible = True
         ElseIf Setting_Advhelp.Checked = False Then
             Panel_Advhelp.Visible = False
             AdvH_islandname.Visible = False
@@ -1738,6 +1787,15 @@ Public Class TL_SaveEditor
             AdvH_editsonglign.Visible = False
             AdvH_savesong.Visible = False
             AdvH_setalltummy.Visible = False
+            AdvH_itemsedit_clothes.Visible = False
+            AdvH_itemsedit_foods.Visible = False
+            AdvH_itemsedit_goodsitems.Visible = False
+            AdvH_itemsedit_hats.Visible = False
+            AdvH_itemsedit_interiors.Visible = False
+            AdvH_itemsedit_spefoods.Visible = False
+            AdvH_itemsedit_ssclothes.Visible = False
+            AdvH_itemsedit_sshats.Visible = False
+            AdvH_itemsedit_treasures.Visible = False
         End If
     End Sub
 
@@ -11495,5 +11553,586 @@ Public Class TL_SaveEditor
             End If
         End If
     End Sub
+
+    Private Sub Icon_itemsedit_foods_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_itemsedit_foods.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to unlock foods by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour débloquer les nourritures par nombre"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_itemsedit_foods_MouseLeave(sender As Object, e As EventArgs) Handles Icon_itemsedit_foods.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_itemsedit_clothes_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_itemsedit_clothes.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to unlock clothes by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour débloquer les vêtements par nombre"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_itemsedit_clothes_MouseLeave(sender As Object, e As EventArgs) Handles Icon_itemsedit_clothes.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_itemsedit_ssclothes_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_itemsedit_ssclothes.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to unlock StreetPass / SpotPass clothes by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour débloquer les vêtements StreetPass / SpotPass par nombre"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_itemsedit_ssclothes_MouseLeave(sender As Object, e As EventArgs) Handles Icon_itemsedit_ssclothes.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_itemsedit_hats_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_itemsedit_hats.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to unlock hats by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour débloquer les chapeaux par nombre"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_itemsedit_hats_MouseLeave(sender As Object, e As EventArgs) Handles Icon_itemsedit_hats.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_itemsedit_sshats_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_itemsedit_sshats.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to unlock StreetPass / SpotPass hats by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour débloquer les chapeaux StreetPass / SpotPass par nombre"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_itemsedit_sshats_MouseLeave(sender As Object, e As EventArgs) Handles Icon_itemsedit_sshats.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_itemsedit_interiors_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_itemsedit_interiors.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to unlock interiors by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour débloquer les intérieurs par nombre"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_itemsedit_interiors_MouseLeave(sender As Object, e As EventArgs) Handles Icon_itemsedit_interiors.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_itemsedit_goodsitems_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_itemsedit_goodsitems.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to unlock goods items by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour débloquer les objets divers par nombre"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_itemsedit_goodsitems_MouseLeave(sender As Object, e As EventArgs) Handles Icon_itemsedit_goodsitems.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_itemsedit_treasures_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_itemsedit_treasures.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to unlock treasures by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour débloquer les trésors par nombre"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_itemsedit_treasures_MouseLeave(sender As Object, e As EventArgs) Handles Icon_itemsedit_treasures.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_itemsedit_spefoods_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_itemsedit_spefoods.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to unlock special foods by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l'orange pour débloquer les produits spéciaux par nombre"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Icon_itemsedit_spefoods_MouseLeave(sender As Object, e As EventArgs) Handles Icon_itemsedit_spefoods.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_delete_foods_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_delete_foods.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to delete all foods"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour supprimer toutes les nourritures"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_delete_foods_MouseLeave(sender As Object, e As EventArgs) Handles Check_delete_foods.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_delete_clothes_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_delete_clothes.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to delete all clothes"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour supprimer tout les vêtements"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_delete_clothes_MouseLeave(sender As Object, e As EventArgs) Handles Check_delete_clothes.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_delete_ssclothes_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_delete_ssclothes.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to delete all StreetPass / SpotPass clothes"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour supprimer tout les vêtements StreetPass / SpotPass"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_delete_ssclothes_MouseLeave(sender As Object, e As EventArgs) Handles Check_delete_ssclothes.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_delete_hats_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_delete_hats.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to delete all hats"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour supprimer tout les chapeaux"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_delete_hats_MouseLeave(sender As Object, e As EventArgs) Handles Check_delete_hats.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_delete_sshats_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_delete_sshats.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to delete all StreetPass / SpotPass hats"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour supprimer tout les chapeaux StreetPass / SpotPass"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_delete_sshats_MouseLeave(sender As Object, e As EventArgs) Handles Check_delete_sshats.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_delete_interiors_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_delete_interiors.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to delete all interiors"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour supprimer tout les intérieurs"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_delete_interiors_MouseLeave(sender As Object, e As EventArgs) Handles Check_delete_interiors.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_delete_goodsitems_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_delete_goodsitems.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to delete all goods items"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour supprimer tout les objets divers"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_delete_goodsitems_MouseLeave(sender As Object, e As EventArgs) Handles Check_delete_goodsitems.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_delete_treasures_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_delete_treasures.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to delete all treasures"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour supprimer tout les trésors"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_delete_treasures_MouseLeave(sender As Object, e As EventArgs) Handles Check_delete_treasures.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_delete_spefoods_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_delete_spefoods.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to delete all special foods"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour supprimer tout les produits spéciaux"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_delete_spefoods_MouseLeave(sender As Object, e As EventArgs) Handles Check_delete_spefoods.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_available_ssclothes_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_available_ssclothes.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to make all StreetPass / SpotPass clothes available in the shop"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour rendre disponible tout les vêtements StreetPass / SpotPass dans le magasin"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_available_ssclothes_MouseLeave(sender As Object, e As EventArgs) Handles Check_available_ssclothes.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_available_sshats_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_available_sshats.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Set as orange to make all StreetPass / SpotPass hats available in the shop"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Mettre à l’orange pour rendre disponible tout les chapeaux StreetPass / SpotPass dans le magasin"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_available_sshats_MouseLeave(sender As Object, e As EventArgs) Handles Check_available_sshats.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub AdvH_itemsedit_foods_Click(sender As Object, e As EventArgs) Handles AdvH_itemsedit_foods.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_foods.Location.X + Icon_itemsedit_foods.Location.X + (Icon_itemsedit_foods.Width / 2), Panel_itemsedit_foods.Location.Y + Icon_itemsedit_foods.Location.Y + (Icon_itemsedit_foods.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to unlock foods by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour débloquer les nourritures par nombre"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_foods.Location.X + Panel_bynumber_foods.Location.X + (Panel_bynumber_foods.Width / 2), Panel_itemsedit_foods.Location.Y + Panel_bynumber_foods.Location.Y + (Panel_bynumber_foods.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here number of foods unlocked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici le nombre de nourriture débloqué"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_foods.Location.X + Check_delete_foods.Location.X + (Check_delete_foods.Width / 2), Panel_itemsedit_foods.Location.Y + Check_delete_foods.Location.Y + (Check_delete_foods.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to delete all foods"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour supprimer toutes les nourritures"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_itemsedit_clothes_Click(sender As Object, e As EventArgs) Handles AdvH_itemsedit_clothes.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_clothes.Location.X + Icon_itemsedit_clothes.Location.X + (Icon_itemsedit_clothes.Width / 2), Panel_itemsedit_clothes.Location.Y + Icon_itemsedit_clothes.Location.Y + (Icon_itemsedit_clothes.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to unlock clothes by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour débloquer les vêtements par nombre"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 5
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_clothes.Location.X + Panel_bynumber_clothes.Location.X + (Panel_bynumber_clothes.Width / 2), Panel_itemsedit_clothes.Location.Y + Panel_bynumber_clothes.Location.Y + (Panel_bynumber_clothes.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here number of clothes unlocked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici le nombre de vêtement débloqué"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 5
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_clothes.Location.X + Check_delete_clothes.Location.X + (Check_delete_clothes.Width / 2), Panel_itemsedit_clothes.Location.Y + Check_delete_clothes.Location.Y + (Check_delete_clothes.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to delete all clothes"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour supprimer tout les vêtements"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 5
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_itemsedit_ssclothes_Click(sender As Object, e As EventArgs) Handles AdvH_itemsedit_ssclothes.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_ssclothes.Location.X + Icon_itemsedit_ssclothes.Location.X + (Icon_itemsedit_ssclothes.Width / 2), Panel_itemsedit_ssclothes.Location.Y + Icon_itemsedit_ssclothes.Location.Y + (Icon_itemsedit_ssclothes.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to unlock StreetPass / SpotPass clothes by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour débloquer les vêtements StreetPass / SpotPass par nombre"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 5
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_ssclothes.Location.X + Panel_bynumber_ssclothes.Location.X + (Panel_bynumber_ssclothes.Width / 2), Panel_itemsedit_ssclothes.Location.Y + Panel_bynumber_ssclothes.Location.Y + (Panel_bynumber_ssclothes.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here number of StreetPass / SpotPass clothes unlocked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici le nombre de vêtement StreetPass / SpotPass débloqué"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 5
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_ssclothes.Location.X + Check_delete_ssclothes.Location.X + (Check_delete_ssclothes.Width / 2), Panel_itemsedit_ssclothes.Location.Y + Check_delete_ssclothes.Location.Y + (Check_delete_ssclothes.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to delete all StreetPass / SpotPass clothes"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour supprimer tout les vêtements StreetPass / SpotPass"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 5
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_ssclothes.Location.X + Check_available_ssclothes.Location.X + (Check_available_ssclothes.Width / 2), Panel_itemsedit_ssclothes.Location.Y + Check_available_ssclothes.Location.Y + (Check_available_ssclothes.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to make available all StreetPass / SpotPass clothes in shop"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour rendre disponible tout les vêtements StreetPass / SpotPass dans le magasin"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 5
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_itemsedit_hats_Click(sender As Object, e As EventArgs) Handles AdvH_itemsedit_hats.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_hats.Location.X + Icon_itemsedit_hats.Location.X + (Icon_itemsedit_hats.Width / 2), Panel_itemsedit_hats.Location.Y + Icon_itemsedit_hats.Location.Y + (Icon_itemsedit_hats.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to unlock hats by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour débloquer les chapeaux par nombre"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 2
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_hats.Location.X + Panel_bynumber_hats.Location.X + (Panel_bynumber_hats.Width / 2), Panel_itemsedit_hats.Location.Y + Panel_bynumber_hats.Location.Y + (Panel_bynumber_hats.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here number of hats unlocked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici le nombre de chapeaux débloqué"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 2
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_hats.Location.X + Check_delete_hats.Location.X + (Check_delete_hats.Width / 2), Panel_itemsedit_hats.Location.Y + Check_delete_hats.Location.Y + (Check_delete_hats.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to delete all hats"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour supprimer tout les chapeaux"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 2
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_itemsedit_sshats_Click(sender As Object, e As EventArgs) Handles AdvH_itemsedit_sshats.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_sshats.Location.X + Icon_itemsedit_sshats.Location.X + (Icon_itemsedit_sshats.Width / 2), Panel_itemsedit_sshats.Location.Y + Icon_itemsedit_sshats.Location.Y + (Icon_itemsedit_sshats.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to unlock StreetPass / SpotPass hats by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour débloquer les chapeaux StreetPass / SpotPass par nombre"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 1
+        TLSE_dialog.Icon_reference.Location = New Point(393, 275)
+        TLSE_dialog.Icon_reference.Size = New Size(40, 40)
+        TLSE_dialog.Icon_reference.Visible = True
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_sshats.Location.X + Panel_bynumber_sshats.Location.X + (Panel_bynumber_sshats.Width / 2), Panel_itemsedit_sshats.Location.Y + Panel_bynumber_sshats.Location.Y + (Panel_bynumber_sshats.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here number of StreetPass / SpotPass hats unlocked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici le nombre de chapeaux StreetPass / SpotPass débloqué"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 1
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_sshats.Location.X + Check_delete_sshats.Location.X + (Check_delete_sshats.Width / 2), Panel_itemsedit_sshats.Location.Y + Check_delete_sshats.Location.Y + (Check_delete_sshats.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to delete all StreetPass / SpotPass hats"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour supprimer tout les chapeaux StreetPass / SpotPass"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 1
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_sshats.Location.X + Check_available_sshats.Location.X + (Check_available_sshats.Width / 2), Panel_itemsedit_sshats.Location.Y + Check_available_sshats.Location.Y + (Check_available_sshats.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to make available all StreetPass / SpotPass hats in shop"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour rendre disponible tout les chapeaux StreetPass / SpotPass dans le magasin"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 1
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_itemsedit_interiors_Click(sender As Object, e As EventArgs) Handles AdvH_itemsedit_interiors.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_interiors.Location.X + Icon_itemsedit_interiors.Location.X + (Icon_itemsedit_interiors.Width / 2), Panel_itemsedit_interiors.Location.Y + Icon_itemsedit_interiors.Location.Y + (Icon_itemsedit_interiors.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to unlock interiors by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour débloquer les intérieurs par nombre"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_interiors.Location.X + Panel_bynumber_interiors.Location.X + (Panel_bynumber_interiors.Width / 2), Panel_itemsedit_interiors.Location.Y + Panel_bynumber_interiors.Location.Y + (Panel_bynumber_interiors.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here number of interiors unlocked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici le nombre d'intérieurs débloqué"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_interiors.Location.X + Check_delete_interiors.Location.X + (Check_delete_interiors.Width / 2), Panel_itemsedit_interiors.Location.Y + Check_delete_interiors.Location.Y + (Check_delete_interiors.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to delete all interiors"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour supprimer tout les intérieurs"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_itemsedit_goodsitems_Click(sender As Object, e As EventArgs) Handles AdvH_itemsedit_goodsitems.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_goodsitems.Location.X + Icon_itemsedit_goodsitems.Location.X + (Icon_itemsedit_goodsitems.Width / 2), Panel_itemsedit_goodsitems.Location.Y + Icon_itemsedit_goodsitems.Location.Y + (Icon_itemsedit_goodsitems.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to unlock goods items by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour débloquer les objets divers par nombre"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_goodsitems.Location.X + Panel_bynumber_goodsitems.Location.X + (Panel_bynumber_goodsitems.Width / 2), Panel_itemsedit_goodsitems.Location.Y + Panel_bynumber_goodsitems.Location.Y + (Panel_bynumber_goodsitems.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here number of goods items unlocked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici le nombre d'objets divers débloqué"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_goodsitems.Location.X + Check_delete_goodsitems.Location.X + (Check_delete_goodsitems.Width / 2), Panel_itemsedit_goodsitems.Location.Y + Check_delete_goodsitems.Location.Y + (Check_delete_goodsitems.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to delete all goods items"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour supprimer tout les objets divers"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 4
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_itemsedit_treasures_Click(sender As Object, e As EventArgs) Handles AdvH_itemsedit_treasures.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_treasures.Location.X + Icon_itemsedit_treasures.Location.X + (Icon_itemsedit_treasures.Width / 2), Panel_itemsedit_treasures.Location.Y + Icon_itemsedit_treasures.Location.Y + (Icon_itemsedit_treasures.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to unlock treasures by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour débloquer les trésors par nombre"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 1
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_treasures.Location.X + Panel_bynumber_treasures.Location.X + (Panel_bynumber_treasures.Width / 2), Panel_itemsedit_treasures.Location.Y + Panel_bynumber_treasures.Location.Y + (Panel_bynumber_treasures.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here number of treasures unlocked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici le nombre de trésors débloqué"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 1
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_treasures.Location.X + Check_delete_treasures.Location.X + (Check_delete_treasures.Width / 2), Panel_itemsedit_treasures.Location.Y + Check_delete_treasures.Location.Y + (Check_delete_treasures.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to delete all treasures"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour supprimer tout les trésors"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 1
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Private Sub AdvH_itemsedit_spefoods_Click(sender As Object, e As EventArgs) Handles AdvH_itemsedit_spefoods.Click
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_spefoods.Location.X + Icon_itemsedit_spefoods.Location.X + (Icon_itemsedit_spefoods.Width / 2), Panel_itemsedit_spefoods.Location.Y + Icon_itemsedit_spefoods.Location.Y + (Icon_itemsedit_spefoods.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to unlock special foods by number"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour débloquer les produits spéciaux par nombre"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_spefoods.Location.X + Panel_bynumber_spefoods.Location.X + (Panel_bynumber_spefoods.Width / 2), Panel_itemsedit_spefoods.Location.Y + Panel_bynumber_spefoods.Location.Y + (Panel_bynumber_spefoods.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can edit here number of special foods unlocked"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez éditer ici le nombre de produits spéciaux débloqué"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+        TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_spefoods.Location.X + Check_delete_spefoods.Location.X + (Check_delete_spefoods.Width / 2), Panel_itemsedit_spefoods.Location.Y + Check_delete_spefoods.Location.Y + (Check_delete_spefoods.Height / 2))
+        TLSE_dialog.Icon_reference_panel.Image = My.Resources.TLSE_arrow_left
+        TLSE_dialog.Icon_reference_panel.Visible = True
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "You can set as orange to delete all special foods"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour supprimer tout les produits spéciaux"
+        End If
+        TLSE_dialog.valu_pandialogpos.Value = 3
+        TLSE_dialog.ShowDialog()
+    End Sub
+
     ' end items edit animation block
 End Class
