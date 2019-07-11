@@ -157,6 +157,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\bg_buttonmiiedit_selected.png" />
+    <None Include="Resources\bg_selectmii.png" />
+    <None Include="Resources\icon_menu_baby.png" />
+    <None Include="Resources\icon_menu_traveler.png" />
+    <None Include="Resources\icon_menu_mii.png" />
+    <None Include="Resources\bg_menumiiedit.png" />
+    <None Include="Resources\bg_buttonmiiedit.png" />
     <None Include="Resources\Icon_untreasures_act.png" />
     <None Include="Resources\Icon_uninteriors_act.png" />
     <None Include="Resources\Icon_unhatsstsp_act.png" />
