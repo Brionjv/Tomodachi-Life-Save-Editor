@@ -4698,7 +4698,7 @@ Partial Class TL_SaveEditor
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(518, 392)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = "- Fix error when writing Mii"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"- Fix error when a island address part is not read"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Changelog.Text = "- Fix error in island address" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version
@@ -4708,7 +4708,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 3.0.9"
+        Me.Text_TLSE_version.Text = "Version 3.1.0"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits

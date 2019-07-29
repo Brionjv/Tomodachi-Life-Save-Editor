@@ -11966,8 +11966,8 @@ Public Class TL_SaveEditor
             TLSE_dialog.Text_TLSE_dialog.Text = "Vous pouvez mettre à l'orange pour débloquer les chapeaux StreetPass / SpotPass par nombre"
         End If
         TLSE_dialog.valu_pandialogpos.Value = 1
-        TLSE_dialog.Icon_reference.Location = New Point(393, 275)
-        TLSE_dialog.Icon_reference.Size = New Size(40, 40)
+        TLSE_dialog.Icon_reference.Location = New Point(393, 294)
+        TLSE_dialog.Icon_reference.Size = New Size(42, 22)
         TLSE_dialog.Icon_reference.Visible = True
         TLSE_dialog.ShowDialog()
         TLSE_dialog.Icon_reference_panel.Location = New Point(Panel_itemsedit_sshats.Location.X + Panel_bynumber_sshats.Location.X + (Panel_bynumber_sshats.Width / 2), Panel_itemsedit_sshats.Location.Y + Panel_bynumber_sshats.Location.Y + (Panel_bynumber_sshats.Height / 2))
@@ -12133,6 +12133,19 @@ Public Class TL_SaveEditor
         TLSE_dialog.valu_pandialogpos.Value = 3
         TLSE_dialog.ShowDialog()
     End Sub
-
     ' end items edit animation block
+
+    'Mii edit block
+    Private Sub Text_savemii_Click(sender As Object, e As EventArgs) Handles Text_savemii.Click
+
+    End Sub
+
+    Private Sub Text_savemii_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_savemii.MouseMove
+        Button_savemii.BackgroundImage = My.Resources.button_save_orange
+    End Sub
+
+    Private Sub Text_savemii_MouseLeave(sender As Object, e As EventArgs) Handles Text_savemii.MouseLeave
+        Button_savemii.BackgroundImage = My.Resources.button_save_blue
+    End Sub
+    'end Mii edit block
 End Class

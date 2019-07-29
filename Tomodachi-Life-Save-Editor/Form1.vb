@@ -1881,13 +1881,13 @@ Public Class TL_SaveEditor
                 Reader.Position = &H10
                 valu_lastdatesave.Value = Reader.ReadUInt32
                 Reader.Position = &H20
-                valu_islandaddress_p1.Value = Reader.ReadInt32
+                valu_islandaddress_p1.Value = Reader.ReadUInt32
                 Reader.Position = &H24
-                valu_islandaddress_p2.Value = Reader.ReadInt32
+                valu_islandaddress_p2.Value = Reader.ReadUInt32
                 Reader.Position = &H28
-                valu_islandaddress_p3.Value = Reader.ReadInt32
+                valu_islandaddress_p3.Value = Reader.ReadUInt32
                 Reader.Position = &H2C
-                valu_islandaddress_p4.Value = Reader.ReadInt32
+                valu_islandaddress_p4.Value = Reader.ReadUInt32
             End If
             If Filever_text.Text = "KR" Then
                 Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
@@ -2026,13 +2026,13 @@ Public Class TL_SaveEditor
                 Reader.Position = &H10
                 valu_lastdatesave.Value = Reader.ReadUInt32
                 Reader.Position = &H20
-                valu_islandaddress_p1.Value = Reader.ReadInt32
+                valu_islandaddress_p1.Value = Reader.ReadUInt32
                 Reader.Position = &H24
-                valu_islandaddress_p2.Value = Reader.ReadInt32
+                valu_islandaddress_p2.Value = Reader.ReadUInt32
                 Reader.Position = &H28
-                valu_islandaddress_p3.Value = Reader.ReadInt32
+                valu_islandaddress_p3.Value = Reader.ReadUInt32
                 Reader.Position = &H2C
-                valu_islandaddress_p4.Value = Reader.ReadInt32
+                valu_islandaddress_p4.Value = Reader.ReadUInt32
             End If
             Text_menu_open.Visible = False
             Text_menu_save.Visible = True
