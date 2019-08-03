@@ -92,14 +92,14 @@ Partial Class TL_SaveEditor
         Me.Panel_done = New System.Windows.Forms.Panel()
         Me.Text_done = New System.Windows.Forms.Label()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
-        Me.Panel_addsymb = New System.Windows.Forms.Panel()
-        Me.Text_spesymb = New System.Windows.Forms.Label()
-        Me.Panel_spesymb_cancel = New System.Windows.Forms.Panel()
-        Me.Text_spesymb_cancel = New System.Windows.Forms.Label()
-        Me.Panel_spesymb_add = New System.Windows.Forms.Panel()
-        Me.Text_spesymb_add_pn = New System.Windows.Forms.Label()
-        Me.Text_spesymb_add_n = New System.Windows.Forms.Label()
-        Me.Select_spesymb = New System.Windows.Forms.ComboBox()
+        Me.Panel_addsymb_islandname = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_islandname = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_islandname_cancel = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_islandname_cancel = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_islandname_add = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_add_islandname_n = New System.Windows.Forms.Label()
+        Me.Text_spesymb_add_islandname_pn = New System.Windows.Forms.Label()
+        Me.Select_spesymb_islandname = New System.Windows.Forms.ComboBox()
         Me.Warning_islandname = New System.Windows.Forms.PictureBox()
         Me.Addsymbol_pronun_island = New System.Windows.Forms.PictureBox()
         Me.Addsymbol_islandname = New System.Windows.Forms.PictureBox()
@@ -433,22 +433,66 @@ Partial Class TL_SaveEditor
         Me.Text_datawrinkles = New System.Windows.Forms.TextBox()
         Me.Text_binarywrinkles = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.PictureBox35 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox36 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox32 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox33 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox31 = New System.Windows.Forms.PictureBox()
+        Me.Panel_edit_favcolor = New System.Windows.Forms.Panel()
+        Me.AdvH_editfavcolor = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_violet = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_black = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_yellow = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_blue = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_lightblue = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_brown = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_red = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_lightgreen = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_pink = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_white = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_orange = New System.Windows.Forms.PictureBox()
+        Me.Icon_editcolor_green = New System.Windows.Forms.PictureBox()
+        Me.Icon_mii_gender = New System.Windows.Forms.PictureBox()
+        Me.AdvH_miigender = New System.Windows.Forms.PictureBox()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.Select_mii_gender = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Panel_addsymb_nickname = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_nickname = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_nickname_cancel = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_nickname_cancel = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_nickname_add = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_add_nickname_n = New System.Windows.Forms.Label()
+        Me.Text_spesymb_add_nickname_pn = New System.Windows.Forms.Label()
+        Me.Select_spesymb_nickname = New System.Windows.Forms.ComboBox()
+        Me.Panel_addsymb_lastname = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_lastname = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_lastname_cancel = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_lastname_cancel = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_lastname_add = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_add_lastname_n = New System.Windows.Forms.Label()
+        Me.Text_spesymb_add_lastname_pn = New System.Windows.Forms.Label()
+        Me.Select_spesymb_lastname = New System.Windows.Forms.ComboBox()
+        Me.Panel_addsymb_firstname = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_firstname = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_firstname_cancel = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_firstname_cancel = New System.Windows.Forms.Label()
+        Me.Panel_spesymb_firstname_add = New System.Windows.Forms.Panel()
+        Me.Text_spesymb_add_firstname_n = New System.Windows.Forms.Label()
+        Me.Text_spesymb_add_firstname_pn = New System.Windows.Forms.Label()
+        Me.Select_spesymb_firstname = New System.Windows.Forms.ComboBox()
+        Me.Addsymbol_pronun_nickname = New System.Windows.Forms.PictureBox()
+        Me.Addsymbol_nickname = New System.Windows.Forms.PictureBox()
+        Me.Addsymbol_pronun_firstname = New System.Windows.Forms.PictureBox()
+        Me.Addsymbol_firstname = New System.Windows.Forms.PictureBox()
+        Me.Addsymbol_pronun_lastname = New System.Windows.Forms.PictureBox()
+        Me.Addsymbol_lastname = New System.Windows.Forms.PictureBox()
         Me.Panel17 = New System.Windows.Forms.Panel()
         Me.Text_valuesharing = New System.Windows.Forms.TextBox()
         Me.Select_sharing = New System.Windows.Forms.ComboBox()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
+        Me.AdvH_nickname = New System.Windows.Forms.PictureBox()
         Me.Text_datasharing = New System.Windows.Forms.TextBox()
         Me.Icon_growkid = New System.Windows.Forms.PictureBox()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.Panel_edit_nickname = New System.Windows.Forms.Panel()
+        Me.AdvH_nicknamepronun = New System.Windows.Forms.PictureBox()
+        Me.Panel_edit_pronun_nickname = New System.Windows.Forms.Panel()
         Me.Icon_valid_nickname = New System.Windows.Forms.PictureBox()
-        Me.Text_edit_nickname = New System.Windows.Forms.TextBox()
+        Me.Text_edit_pronun_nickname = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel41 = New System.Windows.Forms.Panel()
         Me.valu_copying = New System.Windows.Forms.NumericUpDown()
@@ -480,17 +524,17 @@ Partial Class TL_SaveEditor
         Me.Text_nickname = New System.Windows.Forms.TextBox()
         Me.Title_nickname = New System.Windows.Forms.Label()
         Me.Text_pronun_nickname = New System.Windows.Forms.Label()
-        Me.Panel_edit_lastname = New System.Windows.Forms.Panel()
+        Me.Panel_edit_pronun_lastname = New System.Windows.Forms.Panel()
         Me.Icon_valid_lastname = New System.Windows.Forms.PictureBox()
-        Me.Text_edit_lastname = New System.Windows.Forms.TextBox()
+        Me.Text_edit_pronun_lastname = New System.Windows.Forms.TextBox()
         Me.Icon_pronun_lastname = New System.Windows.Forms.PictureBox()
         Me.Panel_lastname = New System.Windows.Forms.Panel()
         Me.Text_lastname = New System.Windows.Forms.TextBox()
         Me.Title_lastname = New System.Windows.Forms.Label()
         Me.Text_pronun_lastname = New System.Windows.Forms.Label()
-        Me.Panel_edit_firstname = New System.Windows.Forms.Panel()
+        Me.Panel_edit_pronun_firstname = New System.Windows.Forms.Panel()
         Me.Icon_valid_firstname = New System.Windows.Forms.PictureBox()
-        Me.Text_edit_firstname = New System.Windows.Forms.TextBox()
+        Me.Text_edit_pronun_firstname = New System.Windows.Forms.TextBox()
         Me.Icon_pronun_firstname = New System.Windows.Forms.PictureBox()
         Me.Panel_firstname = New System.Windows.Forms.Panel()
         Me.Text_firstname = New System.Windows.Forms.TextBox()
@@ -503,18 +547,288 @@ Partial Class TL_SaveEditor
         Me.Title_favcolor = New System.Windows.Forms.Label()
         Me.Title_firstname = New System.Windows.Forms.Label()
         Me.Text_pronun_firstname = New System.Windows.Forms.Label()
+        Me.Text_favcolor = New System.Windows.Forms.TextBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.Select_allfav_US1 = New System.Windows.Forms.ComboBox()
+        Me.Panel_edit_gifs = New System.Windows.Forms.Panel()
+        Me.AdvH_editgifts = New System.Windows.Forms.PictureBox()
+        Me.Panel_gifs_0b00 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0b00 = New System.Windows.Forms.Label()
+        Me.Gifs7_0b00 = New System.Windows.Forms.Label()
+        Me.Gifs6_0b00 = New System.Windows.Forms.Label()
+        Me.Gifs5_0b00 = New System.Windows.Forms.Label()
+        Me.Gifs4_0b00 = New System.Windows.Forms.Label()
+        Me.Gifs3_0b00 = New System.Windows.Forms.Label()
+        Me.Gifs2_0b00 = New System.Windows.Forms.Label()
+        Me.Gifs1_0b00 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0800 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0800 = New System.Windows.Forms.Label()
+        Me.Gifs7_0800 = New System.Windows.Forms.Label()
+        Me.Gifs6_0800 = New System.Windows.Forms.Label()
+        Me.Gifs5_0800 = New System.Windows.Forms.Label()
+        Me.Gifs4_0800 = New System.Windows.Forms.Label()
+        Me.Gifs3_0800 = New System.Windows.Forms.Label()
+        Me.Gifs2_0800 = New System.Windows.Forms.Label()
+        Me.Gifs1_0800 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1b00 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1b00 = New System.Windows.Forms.Label()
+        Me.Gifs7_1b00 = New System.Windows.Forms.Label()
+        Me.Gifs6_1b00 = New System.Windows.Forms.Label()
+        Me.Gifs5_1b00 = New System.Windows.Forms.Label()
+        Me.Gifs4_1b00 = New System.Windows.Forms.Label()
+        Me.Gifs3_1b00 = New System.Windows.Forms.Label()
+        Me.Gifs2_1b00 = New System.Windows.Forms.Label()
+        Me.Gifs1_1b00 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0600 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0600 = New System.Windows.Forms.Label()
+        Me.Gifs7_0600 = New System.Windows.Forms.Label()
+        Me.Gifs6_0600 = New System.Windows.Forms.Label()
+        Me.Gifs5_0600 = New System.Windows.Forms.Label()
+        Me.Gifs4_0600 = New System.Windows.Forms.Label()
+        Me.Gifs3_0600 = New System.Windows.Forms.Label()
+        Me.Gifs2_0600 = New System.Windows.Forms.Label()
+        Me.Gifs1_0600 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1300 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1300 = New System.Windows.Forms.Label()
+        Me.Gifs7_1300 = New System.Windows.Forms.Label()
+        Me.Gifs6_1300 = New System.Windows.Forms.Label()
+        Me.Gifs5_1300 = New System.Windows.Forms.Label()
+        Me.Gifs4_1300 = New System.Windows.Forms.Label()
+        Me.Gifs3_1300 = New System.Windows.Forms.Label()
+        Me.Gifs2_1300 = New System.Windows.Forms.Label()
+        Me.Gifs1_1300 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0c00 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0c00 = New System.Windows.Forms.Label()
+        Me.Gifs7_0c00 = New System.Windows.Forms.Label()
+        Me.Gifs6_0c00 = New System.Windows.Forms.Label()
+        Me.Gifs5_0c00 = New System.Windows.Forms.Label()
+        Me.Gifs4_0c00 = New System.Windows.Forms.Label()
+        Me.Gifs3_0c00 = New System.Windows.Forms.Label()
+        Me.Gifs2_0c00 = New System.Windows.Forms.Label()
+        Me.Gifs1_0c00 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1900 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1900 = New System.Windows.Forms.Label()
+        Me.Gifs7_1900 = New System.Windows.Forms.Label()
+        Me.Gifs6_1900 = New System.Windows.Forms.Label()
+        Me.Gifs5_1900 = New System.Windows.Forms.Label()
+        Me.Gifs4_1900 = New System.Windows.Forms.Label()
+        Me.Gifs3_1900 = New System.Windows.Forms.Label()
+        Me.Gifs2_1900 = New System.Windows.Forms.Label()
+        Me.Gifs1_1900 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0a00 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0a00 = New System.Windows.Forms.Label()
+        Me.Gifs7_0a00 = New System.Windows.Forms.Label()
+        Me.Gifs6_0a00 = New System.Windows.Forms.Label()
+        Me.Gifs5_0a00 = New System.Windows.Forms.Label()
+        Me.Gifs4_0a00 = New System.Windows.Forms.Label()
+        Me.Gifs3_0a00 = New System.Windows.Forms.Label()
+        Me.Gifs2_0a00 = New System.Windows.Forms.Label()
+        Me.Gifs1_0a00 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1800 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1800 = New System.Windows.Forms.Label()
+        Me.Gifs7_1800 = New System.Windows.Forms.Label()
+        Me.Gifs6_1800 = New System.Windows.Forms.Label()
+        Me.Gifs5_1800 = New System.Windows.Forms.Label()
+        Me.Gifs4_1800 = New System.Windows.Forms.Label()
+        Me.Gifs3_1800 = New System.Windows.Forms.Label()
+        Me.Gifs2_1800 = New System.Windows.Forms.Label()
+        Me.Gifs1_1800 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_FFFF = New System.Windows.Forms.Panel()
+        Me.Gifs8_FFFF = New System.Windows.Forms.Label()
+        Me.Gifs7_FFFF = New System.Windows.Forms.Label()
+        Me.Gifs6_FFFF = New System.Windows.Forms.Label()
+        Me.Gifs5_FFFF = New System.Windows.Forms.Label()
+        Me.Gifs4_FFFF = New System.Windows.Forms.Label()
+        Me.Gifs3_FFFF = New System.Windows.Forms.Label()
+        Me.Gifs2_FFFF = New System.Windows.Forms.Label()
+        Me.Gifs1_FFFF = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1700 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1700 = New System.Windows.Forms.Label()
+        Me.Gifs7_1700 = New System.Windows.Forms.Label()
+        Me.Gifs6_1700 = New System.Windows.Forms.Label()
+        Me.Gifs5_1700 = New System.Windows.Forms.Label()
+        Me.Gifs4_1700 = New System.Windows.Forms.Label()
+        Me.Gifs3_1700 = New System.Windows.Forms.Label()
+        Me.Gifs2_1700 = New System.Windows.Forms.Label()
+        Me.Gifs1_1700 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0900 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0900 = New System.Windows.Forms.Label()
+        Me.Gifs7_0900 = New System.Windows.Forms.Label()
+        Me.Gifs6_0900 = New System.Windows.Forms.Label()
+        Me.Gifs5_0900 = New System.Windows.Forms.Label()
+        Me.Gifs4_0900 = New System.Windows.Forms.Label()
+        Me.Gifs3_0900 = New System.Windows.Forms.Label()
+        Me.Gifs2_0900 = New System.Windows.Forms.Label()
+        Me.Gifs1_0900 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1600 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1600 = New System.Windows.Forms.Label()
+        Me.Gifs7_1600 = New System.Windows.Forms.Label()
+        Me.Gifs6_1600 = New System.Windows.Forms.Label()
+        Me.Gifs5_1600 = New System.Windows.Forms.Label()
+        Me.Gifs4_1600 = New System.Windows.Forms.Label()
+        Me.Gifs3_1600 = New System.Windows.Forms.Label()
+        Me.Gifs2_1600 = New System.Windows.Forms.Label()
+        Me.Gifs1_1600 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0700 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0700 = New System.Windows.Forms.Label()
+        Me.Gifs7_0700 = New System.Windows.Forms.Label()
+        Me.Gifs6_0700 = New System.Windows.Forms.Label()
+        Me.Gifs5_0700 = New System.Windows.Forms.Label()
+        Me.Gifs4_0700 = New System.Windows.Forms.Label()
+        Me.Gifs3_0700 = New System.Windows.Forms.Label()
+        Me.Gifs2_0700 = New System.Windows.Forms.Label()
+        Me.Gifs1_0700 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1500 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1500 = New System.Windows.Forms.Label()
+        Me.Gifs7_1500 = New System.Windows.Forms.Label()
+        Me.Gifs6_1500 = New System.Windows.Forms.Label()
+        Me.Gifs5_1500 = New System.Windows.Forms.Label()
+        Me.Gifs4_1500 = New System.Windows.Forms.Label()
+        Me.Gifs3_1500 = New System.Windows.Forms.Label()
+        Me.Gifs2_1500 = New System.Windows.Forms.Label()
+        Me.Gifs1_1500 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1200 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1200 = New System.Windows.Forms.Label()
+        Me.Gifs7_1200 = New System.Windows.Forms.Label()
+        Me.Gifs6_1200 = New System.Windows.Forms.Label()
+        Me.Gifs5_1200 = New System.Windows.Forms.Label()
+        Me.Gifs4_1200 = New System.Windows.Forms.Label()
+        Me.Gifs3_1200 = New System.Windows.Forms.Label()
+        Me.Gifs2_1200 = New System.Windows.Forms.Label()
+        Me.Gifs1_1200 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1a00 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1a00 = New System.Windows.Forms.Label()
+        Me.Gifs7_1a00 = New System.Windows.Forms.Label()
+        Me.Gifs6_1a00 = New System.Windows.Forms.Label()
+        Me.Gifs5_1a00 = New System.Windows.Forms.Label()
+        Me.Gifs4_1a00 = New System.Windows.Forms.Label()
+        Me.Gifs3_1a00 = New System.Windows.Forms.Label()
+        Me.Gifs2_1a00 = New System.Windows.Forms.Label()
+        Me.Gifs1_1a00 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0500 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0500 = New System.Windows.Forms.Label()
+        Me.Gifs7_0500 = New System.Windows.Forms.Label()
+        Me.Gifs6_0500 = New System.Windows.Forms.Label()
+        Me.Gifs5_0500 = New System.Windows.Forms.Label()
+        Me.Gifs4_0500 = New System.Windows.Forms.Label()
+        Me.Gifs3_0500 = New System.Windows.Forms.Label()
+        Me.Gifs2_0500 = New System.Windows.Forms.Label()
+        Me.Gifs1_0500 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1400 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1400 = New System.Windows.Forms.Label()
+        Me.Gifs7_1400 = New System.Windows.Forms.Label()
+        Me.Gifs6_1400 = New System.Windows.Forms.Label()
+        Me.Gifs5_1400 = New System.Windows.Forms.Label()
+        Me.Gifs4_1400 = New System.Windows.Forms.Label()
+        Me.Gifs3_1400 = New System.Windows.Forms.Label()
+        Me.Gifs2_1400 = New System.Windows.Forms.Label()
+        Me.Gifs1_1400 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0000 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0000 = New System.Windows.Forms.Label()
+        Me.Gifs7_0000 = New System.Windows.Forms.Label()
+        Me.Gifs6_0000 = New System.Windows.Forms.Label()
+        Me.Gifs5_0000 = New System.Windows.Forms.Label()
+        Me.Gifs4_0000 = New System.Windows.Forms.Label()
+        Me.Gifs3_0000 = New System.Windows.Forms.Label()
+        Me.Gifs2_0000 = New System.Windows.Forms.Label()
+        Me.Gifs1_0000 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1100 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1100 = New System.Windows.Forms.Label()
+        Me.Gifs7_1100 = New System.Windows.Forms.Label()
+        Me.Gifs6_1100 = New System.Windows.Forms.Label()
+        Me.Gifs5_1100 = New System.Windows.Forms.Label()
+        Me.Gifs4_1100 = New System.Windows.Forms.Label()
+        Me.Gifs3_1100 = New System.Windows.Forms.Label()
+        Me.Gifs2_1100 = New System.Windows.Forms.Label()
+        Me.Gifs1_1100 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0100 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0100 = New System.Windows.Forms.Label()
+        Me.Gifs7_0100 = New System.Windows.Forms.Label()
+        Me.Gifs6_0100 = New System.Windows.Forms.Label()
+        Me.Gifs5_0100 = New System.Windows.Forms.Label()
+        Me.Gifs4_0100 = New System.Windows.Forms.Label()
+        Me.Gifs3_0100 = New System.Windows.Forms.Label()
+        Me.Gifs2_0100 = New System.Windows.Forms.Label()
+        Me.Gifs1_0100 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_1000 = New System.Windows.Forms.Panel()
+        Me.Gifs8_1000 = New System.Windows.Forms.Label()
+        Me.Gifs7_1000 = New System.Windows.Forms.Label()
+        Me.Gifs6_1000 = New System.Windows.Forms.Label()
+        Me.Gifs5_1000 = New System.Windows.Forms.Label()
+        Me.Gifs4_1000 = New System.Windows.Forms.Label()
+        Me.Gifs3_1000 = New System.Windows.Forms.Label()
+        Me.Gifs2_1000 = New System.Windows.Forms.Label()
+        Me.Gifs1_1000 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0200 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0200 = New System.Windows.Forms.Label()
+        Me.Gifs7_0200 = New System.Windows.Forms.Label()
+        Me.Gifs6_0200 = New System.Windows.Forms.Label()
+        Me.Gifs5_0200 = New System.Windows.Forms.Label()
+        Me.Gifs4_0200 = New System.Windows.Forms.Label()
+        Me.Gifs3_0200 = New System.Windows.Forms.Label()
+        Me.Gifs2_0200 = New System.Windows.Forms.Label()
+        Me.Gifs1_0200 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0f00 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0f00 = New System.Windows.Forms.Label()
+        Me.Gifs7_0f00 = New System.Windows.Forms.Label()
+        Me.Gifs6_0f00 = New System.Windows.Forms.Label()
+        Me.Gifs5_0f00 = New System.Windows.Forms.Label()
+        Me.Gifs4_0f00 = New System.Windows.Forms.Label()
+        Me.Gifs3_0f00 = New System.Windows.Forms.Label()
+        Me.Gifs2_0f00 = New System.Windows.Forms.Label()
+        Me.Gifs1_0f00 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0300 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0300 = New System.Windows.Forms.Label()
+        Me.Gifs7_0300 = New System.Windows.Forms.Label()
+        Me.Gifs6_0300 = New System.Windows.Forms.Label()
+        Me.Gifs5_0300 = New System.Windows.Forms.Label()
+        Me.Gifs4_0300 = New System.Windows.Forms.Label()
+        Me.Gifs3_0300 = New System.Windows.Forms.Label()
+        Me.Gifs2_0300 = New System.Windows.Forms.Label()
+        Me.Gifs1_0300 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0e00 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0e00 = New System.Windows.Forms.Label()
+        Me.Gifs7_0e00 = New System.Windows.Forms.Label()
+        Me.Gifs6_0e00 = New System.Windows.Forms.Label()
+        Me.Gifs5_0e00 = New System.Windows.Forms.Label()
+        Me.Gifs4_0e00 = New System.Windows.Forms.Label()
+        Me.Gifs3_0e00 = New System.Windows.Forms.Label()
+        Me.Gifs2_0e00 = New System.Windows.Forms.Label()
+        Me.Gifs1_0e00 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0400 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0400 = New System.Windows.Forms.Label()
+        Me.Gifs7_0400 = New System.Windows.Forms.Label()
+        Me.Gifs6_0400 = New System.Windows.Forms.Label()
+        Me.Gifs5_0400 = New System.Windows.Forms.Label()
+        Me.Gifs4_0400 = New System.Windows.Forms.Label()
+        Me.Gifs3_0400 = New System.Windows.Forms.Label()
+        Me.Gifs2_0400 = New System.Windows.Forms.Label()
+        Me.Gifs1_0400 = New System.Windows.Forms.Label()
+        Me.Panel_gifs_0d00 = New System.Windows.Forms.Panel()
+        Me.Gifs8_0d00 = New System.Windows.Forms.Label()
+        Me.Gifs7_0d00 = New System.Windows.Forms.Label()
+        Me.Gifs6_0d00 = New System.Windows.Forms.Label()
+        Me.Gifs5_0d00 = New System.Windows.Forms.Label()
+        Me.Gifs4_0d00 = New System.Windows.Forms.Label()
+        Me.Gifs3_0d00 = New System.Windows.Forms.Label()
+        Me.Gifs2_0d00 = New System.Windows.Forms.Label()
+        Me.Gifs1_0d00 = New System.Windows.Forms.Label()
+        Me.AdvH_gifts = New System.Windows.Forms.PictureBox()
         Me.Panel_edit_fullness = New System.Windows.Forms.Panel()
         Me.Icon_edit_full_75 = New System.Windows.Forms.PictureBox()
         Me.Icon_edit_full_100 = New System.Windows.Forms.PictureBox()
         Me.Icon_edit_full_50 = New System.Windows.Forms.PictureBox()
         Me.Icon_edit_full_25 = New System.Windows.Forms.PictureBox()
         Me.Icon_edit_full_00 = New System.Windows.Forms.PictureBox()
+        Me.Icon_arrowexp_maxright = New System.Windows.Forms.PictureBox()
+        Me.Icon_arrowexp_maxleft = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.CheckBox27 = New System.Windows.Forms.CheckBox()
+        Me.Icon_arrowexp_left = New System.Windows.Forms.PictureBox()
+        Me.Icon_arrowexp_right = New System.Windows.Forms.PictureBox()
+        Me.Select_allfav_US1 = New System.Windows.Forms.ComboBox()
         Me.AdvH_worst = New System.Windows.Forms.PictureBox()
         Me.AdvH_fav = New System.Windows.Forms.PictureBox()
         Me.AdvH_allfav = New System.Windows.Forms.PictureBox()
-        Me.AdvH_gifs = New System.Windows.Forms.PictureBox()
         Me.AdvH_fullness = New System.Windows.Forms.PictureBox()
         Me.AdvH_experience = New System.Windows.Forms.PictureBox()
         Me.AdvH_miilevel = New System.Windows.Forms.PictureBox()
@@ -583,7 +897,6 @@ Partial Class TL_SaveEditor
         Me.valu_fullness = New System.Windows.Forms.NumericUpDown()
         Me.Text_fullness = New System.Windows.Forms.Label()
         Me.Icon_fullness = New System.Windows.Forms.PictureBox()
-        Me.valu_exp = New System.Windows.Forms.NumericUpDown()
         Me.Select_allfav_2 = New System.Windows.Forms.ComboBox()
         Me.valu_allfav_2 = New System.Windows.Forms.NumericUpDown()
         Me.Select_fav_3 = New System.Windows.Forms.ComboBox()
@@ -599,6 +912,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_noeat = New System.Windows.Forms.PictureBox()
         Me.Select_allfav_1 = New System.Windows.Forms.ComboBox()
         Me.valu_allfav_1 = New System.Windows.Forms.NumericUpDown()
+        Me.CheckBox26 = New System.Windows.Forms.CheckBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.AdvH_setallrelation = New System.Windows.Forms.PictureBox()
         Me.Panel28 = New System.Windows.Forms.Panel()
@@ -1022,35 +1336,6 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_29 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_30 = New System.Windows.Forms.ComboBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.Panel48 = New System.Windows.Forms.Panel()
-        Me.valu_ranking_pampered = New System.Windows.Forms.NumericUpDown()
-        Me.Panel49 = New System.Windows.Forms.Panel()
-        Me.valu_ranking_splurge = New System.Windows.Forms.NumericUpDown()
-        Me.AdvH_splurgerank = New System.Windows.Forms.PictureBox()
-        Me.AdvH_pamperedrank = New System.Windows.Forms.PictureBox()
-        Me.Title_ranking_splurge = New System.Windows.Forms.Label()
-        Me.Icon_ranking_splurge = New System.Windows.Forms.PictureBox()
-        Me.Title_ranking_pampered = New System.Windows.Forms.Label()
-        Me.Icon_ranking_pampered = New System.Windows.Forms.PictureBox()
-        Me.Panel45 = New System.Windows.Forms.Panel()
-        Me.valu_miihouse = New System.Windows.Forms.NumericUpDown()
-        Me.Select_miihouse = New System.Windows.Forms.ComboBox()
-        Me.AdvH_haircolor = New System.Windows.Forms.PictureBox()
-        Me.AdvH_interior = New System.Windows.Forms.PictureBox()
-        Me.AdvH_miihouse = New System.Windows.Forms.PictureBox()
-        Me.Title_miihouse = New System.Windows.Forms.Label()
-        Me.Icon_haircolor = New System.Windows.Forms.PictureBox()
-        Me.valu_haircolor = New System.Windows.Forms.NumericUpDown()
-        Me.Title_haircolor = New System.Windows.Forms.Label()
-        Me.Icon_miihouse = New System.Windows.Forms.PictureBox()
-        Me.valu_miiapart = New System.Windows.Forms.NumericUpDown()
-        Me.Text_miiapart = New System.Windows.Forms.Label()
-        Me.Icon_miiapart = New System.Windows.Forms.PictureBox()
-        Me.Panel44 = New System.Windows.Forms.Panel()
-        Me.valu_economy = New System.Windows.Forms.NumericUpDown()
-        Me.Title_miieconomy = New System.Windows.Forms.Label()
-        Me.AdvH_miieconomy = New System.Windows.Forms.PictureBox()
-        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
         Me.Panel_edit_haircolor = New System.Windows.Forms.Panel()
         Me.AdvH_edithaircolor = New System.Windows.Forms.PictureBox()
         Me.color_empty = New System.Windows.Forms.Label()
@@ -1087,6 +1372,35 @@ Partial Class TL_SaveEditor
         Me.color_3 = New System.Windows.Forms.PictureBox()
         Me.color_2 = New System.Windows.Forms.PictureBox()
         Me.color_1 = New System.Windows.Forms.PictureBox()
+        Me.Panel48 = New System.Windows.Forms.Panel()
+        Me.valu_ranking_pampered = New System.Windows.Forms.NumericUpDown()
+        Me.Panel49 = New System.Windows.Forms.Panel()
+        Me.valu_ranking_splurge = New System.Windows.Forms.NumericUpDown()
+        Me.AdvH_splurgerank = New System.Windows.Forms.PictureBox()
+        Me.AdvH_pamperedrank = New System.Windows.Forms.PictureBox()
+        Me.Title_ranking_splurge = New System.Windows.Forms.Label()
+        Me.Icon_ranking_splurge = New System.Windows.Forms.PictureBox()
+        Me.Title_ranking_pampered = New System.Windows.Forms.Label()
+        Me.Icon_ranking_pampered = New System.Windows.Forms.PictureBox()
+        Me.Panel45 = New System.Windows.Forms.Panel()
+        Me.valu_miihouse = New System.Windows.Forms.NumericUpDown()
+        Me.Select_miihouse = New System.Windows.Forms.ComboBox()
+        Me.AdvH_haircolor = New System.Windows.Forms.PictureBox()
+        Me.AdvH_interior = New System.Windows.Forms.PictureBox()
+        Me.AdvH_miihouse = New System.Windows.Forms.PictureBox()
+        Me.Title_miihouse = New System.Windows.Forms.Label()
+        Me.Icon_haircolor = New System.Windows.Forms.PictureBox()
+        Me.valu_haircolor = New System.Windows.Forms.NumericUpDown()
+        Me.Title_haircolor = New System.Windows.Forms.Label()
+        Me.Icon_miihouse = New System.Windows.Forms.PictureBox()
+        Me.valu_miiapart = New System.Windows.Forms.NumericUpDown()
+        Me.Text_miiapart = New System.Windows.Forms.Label()
+        Me.Icon_miiapart = New System.Windows.Forms.PictureBox()
+        Me.Panel44 = New System.Windows.Forms.Panel()
+        Me.valu_economy = New System.Windows.Forms.NumericUpDown()
+        Me.Title_miieconomy = New System.Windows.Forms.Label()
+        Me.AdvH_miieconomy = New System.Windows.Forms.PictureBox()
+        Me.PictureBox34 = New System.Windows.Forms.PictureBox()
         Me.Title_switch_interiors = New System.Windows.Forms.Label()
         Me.Title_switch_clothes = New System.Windows.Forms.Label()
         Me.Panel31 = New System.Windows.Forms.Panel()
@@ -1108,6 +1422,19 @@ Partial Class TL_SaveEditor
         Me.Icon_cathphrase = New System.Windows.Forms.PictureBox()
         Me.Icon_switch_hats = New System.Windows.Forms.PictureBox()
         Me.Icon_inventory = New System.Windows.Forms.PictureBox()
+        Me.Panel_mii_inventory = New System.Windows.Forms.Panel()
+        Me.AdvH_invgoodsitems = New System.Windows.Forms.PictureBox()
+        Me.AdvH_invspefoods = New System.Windows.Forms.PictureBox()
+        Me.AdvH_invinterior = New System.Windows.Forms.PictureBox()
+        Me.Icon_unlock_gooditems = New System.Windows.Forms.PictureBox()
+        Me.Icon_unlock_specialfoods = New System.Windows.Forms.PictureBox()
+        Me.Icon_unlock_interiors = New System.Windows.Forms.PictureBox()
+        Me.Panel38 = New System.Windows.Forms.Panel()
+        Me.Select_unlock_gooditems = New System.Windows.Forms.ComboBox()
+        Me.Panel39 = New System.Windows.Forms.Panel()
+        Me.Select_unlock_specialfoods = New System.Windows.Forms.ComboBox()
+        Me.Panel40 = New System.Windows.Forms.Panel()
+        Me.Select_unlock_interiors = New System.Windows.Forms.ComboBox()
         Me.Panel_mii_musics = New System.Windows.Forms.Panel()
         Me.AdvH_editmiimusic = New System.Windows.Forms.PictureBox()
         Me.AdvH_unlockmusic = New System.Windows.Forms.PictureBox()
@@ -1152,19 +1479,6 @@ Partial Class TL_SaveEditor
         Me.Icon_cathph_03 = New System.Windows.Forms.PictureBox()
         Me.Icon_cathph_02 = New System.Windows.Forms.PictureBox()
         Me.Icon_cathph_01 = New System.Windows.Forms.PictureBox()
-        Me.Panel_mii_inventory = New System.Windows.Forms.Panel()
-        Me.AdvH_invgoodsitems = New System.Windows.Forms.PictureBox()
-        Me.AdvH_invspefoods = New System.Windows.Forms.PictureBox()
-        Me.AdvH_invinterior = New System.Windows.Forms.PictureBox()
-        Me.Icon_unlock_gooditems = New System.Windows.Forms.PictureBox()
-        Me.Icon_unlock_specialfoods = New System.Windows.Forms.PictureBox()
-        Me.Icon_unlock_interiors = New System.Windows.Forms.PictureBox()
-        Me.Panel38 = New System.Windows.Forms.Panel()
-        Me.Select_unlock_gooditems = New System.Windows.Forms.ComboBox()
-        Me.Panel39 = New System.Windows.Forms.Panel()
-        Me.Select_unlock_specialfoods = New System.Windows.Forms.ComboBox()
-        Me.Panel40 = New System.Windows.Forms.Panel()
-        Me.Select_unlock_interiors = New System.Windows.Forms.ComboBox()
         Me.TextBox_fpath = New System.Windows.Forms.TextBox()
         Me.Timer_done = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_itemsedit = New System.Windows.Forms.Panel()
@@ -1328,7 +1642,9 @@ Partial Class TL_SaveEditor
         Me.Text_pagh_2 = New System.Windows.Forms.TextBox()
         Me.Text_pagh_1 = New System.Windows.Forms.TextBox()
         Me.Icon_crthall_music = New System.Windows.Forms.PictureBox()
-        Me.CheckBox26 = New System.Windows.Forms.CheckBox()
+        Me.Timer_arrowexp_right = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer_arrowexp_left = New System.Windows.Forms.Timer(Me.components)
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TLSE_header.SuspendLayout
@@ -1382,9 +1698,9 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_description, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_done.SuspendLayout
         Me.Panel_islandedit.SuspendLayout
-        Me.Panel_addsymb.SuspendLayout
-        Me.Panel_spesymb_cancel.SuspendLayout
-        Me.Panel_spesymb_add.SuspendLayout
+        Me.Panel_addsymb_islandname.SuspendLayout
+        Me.Panel_spesymb_islandname_cancel.SuspendLayout
+        Me.Panel_spesymb_islandname_add.SuspendLayout
         CType(Me.Warning_islandname, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Addsymbol_pronun_island, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Addsymbol_islandname, System.ComponentModel.ISupportInitialize).BeginInit
@@ -1600,17 +1916,44 @@ Partial Class TL_SaveEditor
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_faceshape, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabPage2.SuspendLayout
-        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_edit_favcolor.SuspendLayout
+        CType(Me.AdvH_editfavcolor, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_violet, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_black, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_yellow, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_blue, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_lightblue, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_brown, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_red, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_lightgreen, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_pink, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_white, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_orange, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editcolor_green, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_mii_gender, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_miigender, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel6.SuspendLayout
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_addsymb_nickname.SuspendLayout
+        Me.Panel_spesymb_nickname_cancel.SuspendLayout
+        Me.Panel_spesymb_nickname_add.SuspendLayout
+        Me.Panel_addsymb_lastname.SuspendLayout
+        Me.Panel_spesymb_lastname_cancel.SuspendLayout
+        Me.Panel_spesymb_lastname_add.SuspendLayout
+        Me.Panel_addsymb_firstname.SuspendLayout
+        Me.Panel_spesymb_firstname_cancel.SuspendLayout
+        Me.Panel_spesymb_firstname_add.SuspendLayout
+        CType(Me.Addsymbol_pronun_nickname, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Addsymbol_nickname, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Addsymbol_pronun_firstname, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Addsymbol_firstname, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Addsymbol_pronun_lastname, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Addsymbol_lastname, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel17.SuspendLayout
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_nickname, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_growkid, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel_edit_nickname.SuspendLayout
+        CType(Me.AdvH_nicknamepronun, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_edit_pronun_nickname.SuspendLayout
         CType(Me.Icon_valid_nickname, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel41.SuspendLayout
         CType(Me.valu_copying, System.ComponentModel.ISupportInitialize).BeginInit
@@ -1633,27 +1976,63 @@ Partial Class TL_SaveEditor
         CType(Me.valu_relationyou, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_pronun_nickname, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_nickname.SuspendLayout
-        Me.Panel_edit_lastname.SuspendLayout
+        Me.Panel_edit_pronun_lastname.SuspendLayout
         CType(Me.Icon_valid_lastname, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_pronun_lastname, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_lastname.SuspendLayout
-        Me.Panel_edit_firstname.SuspendLayout
+        Me.Panel_edit_pronun_firstname.SuspendLayout
         CType(Me.Icon_valid_firstname, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_pronun_firstname, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_firstname.SuspendLayout
         CType(Me.Icon_copying, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_sharing, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabPage3.SuspendLayout
+        Me.Panel_edit_gifs.SuspendLayout
+        CType(Me.AdvH_editgifts, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_gifs_0b00.SuspendLayout
+        Me.Panel_gifs_0800.SuspendLayout
+        Me.Panel_gifs_1b00.SuspendLayout
+        Me.Panel_gifs_0600.SuspendLayout
+        Me.Panel_gifs_1300.SuspendLayout
+        Me.Panel_gifs_0c00.SuspendLayout
+        Me.Panel_gifs_1900.SuspendLayout
+        Me.Panel_gifs_0a00.SuspendLayout
+        Me.Panel_gifs_1800.SuspendLayout
+        Me.Panel_gifs_FFFF.SuspendLayout
+        Me.Panel_gifs_1700.SuspendLayout
+        Me.Panel_gifs_0900.SuspendLayout
+        Me.Panel_gifs_1600.SuspendLayout
+        Me.Panel_gifs_0700.SuspendLayout
+        Me.Panel_gifs_1500.SuspendLayout
+        Me.Panel_gifs_1200.SuspendLayout
+        Me.Panel_gifs_1a00.SuspendLayout
+        Me.Panel_gifs_0500.SuspendLayout
+        Me.Panel_gifs_1400.SuspendLayout
+        Me.Panel_gifs_0000.SuspendLayout
+        Me.Panel_gifs_1100.SuspendLayout
+        Me.Panel_gifs_0100.SuspendLayout
+        Me.Panel_gifs_1000.SuspendLayout
+        Me.Panel_gifs_0200.SuspendLayout
+        Me.Panel_gifs_0f00.SuspendLayout
+        Me.Panel_gifs_0300.SuspendLayout
+        Me.Panel_gifs_0e00.SuspendLayout
+        Me.Panel_gifs_0400.SuspendLayout
+        Me.Panel_gifs_0d00.SuspendLayout
+        CType(Me.AdvH_gifts, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_edit_fullness.SuspendLayout
         CType(Me.Icon_edit_full_75, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_edit_full_100, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_edit_full_50, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_edit_full_25, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_edit_full_00, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_arrowexp_maxright, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_arrowexp_maxleft, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_arrowexp_left, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_arrowexp_right, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_worst, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_fav, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_allfav, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_gifs, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_fullness, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_experience, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_miilevel, System.ComponentModel.ISupportInitialize).BeginInit
@@ -1700,7 +2079,6 @@ Partial Class TL_SaveEditor
         CType(Me.valu_level, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_fullness, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_fullness, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_exp, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_allfav_2, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_fav_1, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_fav_2, System.ComponentModel.ISupportInitialize).BeginInit
@@ -1929,28 +2307,6 @@ Partial Class TL_SaveEditor
         CType(Me.valu_friend_rela_45, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_friend_rela_44, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabPage5.SuspendLayout
-        Me.Panel48.SuspendLayout
-        CType(Me.valu_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel49.SuspendLayout
-        CType(Me.valu_ranking_splurge, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_splurgerank, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_pamperedrank, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_ranking_splurge, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel45.SuspendLayout
-        CType(Me.valu_miihouse, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_haircolor, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_interior, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_miihouse, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_haircolor, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_haircolor, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_miihouse, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_miiapart, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_miiapart, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel44.SuspendLayout
-        CType(Me.valu_economy, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_miieconomy, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_edit_haircolor.SuspendLayout
         CType(Me.AdvH_edithaircolor, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_32, System.ComponentModel.ISupportInitialize).BeginInit
@@ -1985,6 +2341,28 @@ Partial Class TL_SaveEditor
         CType(Me.color_3, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_2, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_1, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel48.SuspendLayout
+        CType(Me.valu_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel49.SuspendLayout
+        CType(Me.valu_ranking_splurge, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_splurgerank, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_pamperedrank, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_ranking_splurge, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel45.SuspendLayout
+        CType(Me.valu_miihouse, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_haircolor, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_interior, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_miihouse, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_haircolor, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_haircolor, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_miihouse, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_miiapart, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_miiapart, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel44.SuspendLayout
+        CType(Me.valu_economy, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_miieconomy, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel31.SuspendLayout
         CType(Me.valu_switch_clothes, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel32.SuspendLayout
@@ -2003,6 +2381,16 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_cathphrase, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_switch_hats, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_inventory, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_mii_inventory.SuspendLayout
+        CType(Me.AdvH_invgoodsitems, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_invspefoods, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_invinterior, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_unlock_gooditems, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_unlock_specialfoods, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_unlock_interiors, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel38.SuspendLayout
+        Me.Panel39.SuspendLayout
+        Me.Panel40.SuspendLayout
         Me.Panel_mii_musics.SuspendLayout
         CType(Me.AdvH_editmiimusic, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_unlockmusic, System.ComponentModel.ISupportInitialize).BeginInit
@@ -2031,16 +2419,6 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel_mii_inventory.SuspendLayout
-        CType(Me.AdvH_invgoodsitems, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_invspefoods, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.AdvH_invinterior, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_unlock_gooditems, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_unlock_specialfoods, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_unlock_interiors, System.ComponentModel.ISupportInitialize).BeginInit
-        Me.Panel38.SuspendLayout
-        Me.Panel39.SuspendLayout
-        Me.Panel40.SuspendLayout
         Me.Panel_itemsedit.SuspendLayout
         Me.Panel50.SuspendLayout
         Me.Panel51.SuspendLayout
@@ -2996,7 +3374,7 @@ Partial Class TL_SaveEditor
         'Panel_islandedit
         '
         Me.Panel_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
-        Me.Panel_islandedit.Controls.Add(Me.Panel_addsymb)
+        Me.Panel_islandedit.Controls.Add(Me.Panel_addsymb_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Warning_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Addsymbol_pronun_island)
         Me.Panel_islandedit.Controls.Add(Me.Addsymbol_islandname)
@@ -3061,112 +3439,112 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Size = New System.Drawing.Size(676, 540)
         Me.Panel_islandedit.TabIndex = 30
         '
-        'Panel_addsymb
+        'Panel_addsymb_islandname
         '
-        Me.Panel_addsymb.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_addsymb.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex4
-        Me.Panel_addsymb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_addsymb.Controls.Add(Me.Text_spesymb)
-        Me.Panel_addsymb.Controls.Add(Me.Panel_spesymb_cancel)
-        Me.Panel_addsymb.Controls.Add(Me.Panel_spesymb_add)
-        Me.Panel_addsymb.Controls.Add(Me.Select_spesymb)
-        Me.Panel_addsymb.Location = New System.Drawing.Point(26, 27)
-        Me.Panel_addsymb.Name = "Panel_addsymb"
-        Me.Panel_addsymb.Size = New System.Drawing.Size(201, 46)
-        Me.Panel_addsymb.TabIndex = 92
-        Me.Panel_addsymb.Visible = False
+        Me.Panel_addsymb_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_addsymb_islandname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex4
+        Me.Panel_addsymb_islandname.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Text_spesymb_islandname)
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Panel_spesymb_islandname_cancel)
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Panel_spesymb_islandname_add)
+        Me.Panel_addsymb_islandname.Controls.Add(Me.Select_spesymb_islandname)
+        Me.Panel_addsymb_islandname.Location = New System.Drawing.Point(26, 27)
+        Me.Panel_addsymb_islandname.Name = "Panel_addsymb_islandname"
+        Me.Panel_addsymb_islandname.Size = New System.Drawing.Size(201, 46)
+        Me.Panel_addsymb_islandname.TabIndex = 92
+        Me.Panel_addsymb_islandname.Visible = False
         '
-        'Text_spesymb
+        'Text_spesymb_islandname
         '
-        Me.Text_spesymb.AutoSize = True
-        Me.Text_spesymb.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb.Location = New System.Drawing.Point(18, 5)
-        Me.Text_spesymb.Name = "Text_spesymb"
-        Me.Text_spesymb.Size = New System.Drawing.Size(14, 13)
-        Me.Text_spesymb.TabIndex = 93
-        Me.Text_spesymb.Text = "T"
-        Me.Text_spesymb.Visible = False
+        Me.Text_spesymb_islandname.AutoSize = True
+        Me.Text_spesymb_islandname.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_islandname.Location = New System.Drawing.Point(18, 5)
+        Me.Text_spesymb_islandname.Name = "Text_spesymb_islandname"
+        Me.Text_spesymb_islandname.Size = New System.Drawing.Size(14, 13)
+        Me.Text_spesymb_islandname.TabIndex = 93
+        Me.Text_spesymb_islandname.Text = "T"
+        Me.Text_spesymb_islandname.Visible = False
         '
-        'Panel_spesymb_cancel
+        'Panel_spesymb_islandname_cancel
         '
-        Me.Panel_spesymb_cancel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
-        Me.Panel_spesymb_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_spesymb_cancel.Controls.Add(Me.Text_spesymb_cancel)
-        Me.Panel_spesymb_cancel.Location = New System.Drawing.Point(110, 23)
-        Me.Panel_spesymb_cancel.Name = "Panel_spesymb_cancel"
-        Me.Panel_spesymb_cancel.Size = New System.Drawing.Size(78, 18)
-        Me.Panel_spesymb_cancel.TabIndex = 94
+        Me.Panel_spesymb_islandname_cancel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_islandname_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_islandname_cancel.Controls.Add(Me.Text_spesymb_islandname_cancel)
+        Me.Panel_spesymb_islandname_cancel.Location = New System.Drawing.Point(110, 23)
+        Me.Panel_spesymb_islandname_cancel.Name = "Panel_spesymb_islandname_cancel"
+        Me.Panel_spesymb_islandname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_islandname_cancel.TabIndex = 94
         '
-        'Text_spesymb_cancel
+        'Text_spesymb_islandname_cancel
         '
-        Me.Text_spesymb_cancel.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb_cancel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_spesymb_cancel.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_spesymb_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_spesymb_cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_spesymb_cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Text_spesymb_cancel.ImageKey = "(aucun)"
-        Me.Text_spesymb_cancel.Location = New System.Drawing.Point(0, 0)
-        Me.Text_spesymb_cancel.Name = "Text_spesymb_cancel"
-        Me.Text_spesymb_cancel.Size = New System.Drawing.Size(78, 18)
-        Me.Text_spesymb_cancel.TabIndex = 5
-        Me.Text_spesymb_cancel.Text = "Cancel"
-        Me.Text_spesymb_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_spesymb_islandname_cancel.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_islandname_cancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_islandname_cancel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_islandname_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_islandname_cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_islandname_cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_islandname_cancel.ImageKey = "(aucun)"
+        Me.Text_spesymb_islandname_cancel.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_islandname_cancel.Name = "Text_spesymb_islandname_cancel"
+        Me.Text_spesymb_islandname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_islandname_cancel.TabIndex = 5
+        Me.Text_spesymb_islandname_cancel.Text = "Cancel"
+        Me.Text_spesymb_islandname_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Panel_spesymb_add
+        'Panel_spesymb_islandname_add
         '
-        Me.Panel_spesymb_add.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
-        Me.Panel_spesymb_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel_spesymb_add.Controls.Add(Me.Text_spesymb_add_pn)
-        Me.Panel_spesymb_add.Controls.Add(Me.Text_spesymb_add_n)
-        Me.Panel_spesymb_add.Location = New System.Drawing.Point(12, 23)
-        Me.Panel_spesymb_add.Name = "Panel_spesymb_add"
-        Me.Panel_spesymb_add.Size = New System.Drawing.Size(78, 18)
-        Me.Panel_spesymb_add.TabIndex = 93
+        Me.Panel_spesymb_islandname_add.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_islandname_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_islandname_add.Controls.Add(Me.Text_spesymb_add_islandname_n)
+        Me.Panel_spesymb_islandname_add.Controls.Add(Me.Text_spesymb_add_islandname_pn)
+        Me.Panel_spesymb_islandname_add.Location = New System.Drawing.Point(12, 23)
+        Me.Panel_spesymb_islandname_add.Name = "Panel_spesymb_islandname_add"
+        Me.Panel_spesymb_islandname_add.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_islandname_add.TabIndex = 93
         '
-        'Text_spesymb_add_pn
+        'Text_spesymb_add_islandname_n
         '
-        Me.Text_spesymb_add_pn.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb_add_pn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_spesymb_add_pn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_spesymb_add_pn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_spesymb_add_pn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_spesymb_add_pn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Text_spesymb_add_pn.ImageKey = "(aucun)"
-        Me.Text_spesymb_add_pn.Location = New System.Drawing.Point(0, 0)
-        Me.Text_spesymb_add_pn.Name = "Text_spesymb_add_pn"
-        Me.Text_spesymb_add_pn.Size = New System.Drawing.Size(78, 18)
-        Me.Text_spesymb_add_pn.TabIndex = 4
-        Me.Text_spesymb_add_pn.Text = "Add"
-        Me.Text_spesymb_add_pn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_spesymb_add_islandname_n.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_islandname_n.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_islandname_n.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_islandname_n.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_islandname_n.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_islandname_n.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_islandname_n.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_islandname_n.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_islandname_n.Name = "Text_spesymb_add_islandname_n"
+        Me.Text_spesymb_add_islandname_n.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_islandname_n.TabIndex = 3
+        Me.Text_spesymb_add_islandname_n.Text = "Add"
+        Me.Text_spesymb_add_islandname_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Text_spesymb_add_n
+        'Text_spesymb_add_islandname_pn
         '
-        Me.Text_spesymb_add_n.BackColor = System.Drawing.Color.Transparent
-        Me.Text_spesymb_add_n.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_spesymb_add_n.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_spesymb_add_n.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_spesymb_add_n.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_spesymb_add_n.ImageAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Text_spesymb_add_n.ImageKey = "(aucun)"
-        Me.Text_spesymb_add_n.Location = New System.Drawing.Point(0, 0)
-        Me.Text_spesymb_add_n.Name = "Text_spesymb_add_n"
-        Me.Text_spesymb_add_n.Size = New System.Drawing.Size(78, 18)
-        Me.Text_spesymb_add_n.TabIndex = 3
-        Me.Text_spesymb_add_n.Text = "Add"
-        Me.Text_spesymb_add_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_spesymb_add_islandname_pn.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_islandname_pn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_islandname_pn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_islandname_pn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_islandname_pn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_islandname_pn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_islandname_pn.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_islandname_pn.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_islandname_pn.Name = "Text_spesymb_add_islandname_pn"
+        Me.Text_spesymb_add_islandname_pn.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_islandname_pn.TabIndex = 4
+        Me.Text_spesymb_add_islandname_pn.Text = "Add"
+        Me.Text_spesymb_add_islandname_pn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Select_spesymb
+        'Select_spesymb_islandname
         '
-        Me.Select_spesymb.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Select_spesymb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_spesymb.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_spesymb.ItemHeight = 13
-        Me.Select_spesymb.Items.AddRange(New Object() {"NDS - A Button", "NDS - B Button", "NDS - X Button", "NDS - Y Button", "NDS - L Button", "NDS - R Button", "NDS - D-pad", "NDS - Touch Screen Calibration Icon", "DSi/3DS - Touch Screen Calibration Icon", "DSi - Camera Icon", "3DS - Circle Pad", "3DS - D-pad Up", "3DS - D-pad Down", "3DS - D-pad Left", "3DS - D-pad Right", "3DS - D-pad Up & Down", "3DS - D-pad Left & Right", "3DS - Power Button", "3DS - Video Icon", "3DS - Turning Arrow", "3DS - HOME Menu", "3DS - Pedometer", "3DS - Play Coin", "3DS- Close Button", "3DS - Alt. Close Button", "Pic.Chat - Happy Face", "Pic.Chat - Angry Face", "Pic.Chat - Sad Face", "Pic.Chat - Sleepy Face", "Pic.Chat - Sun", "Pic.Chat - Cloud", "Pic.Chat - Umbrella", "Pic.Chat - Snowman", "Pic.Chat - Exclamation Mark", "Pic.Chat - Question Mark", "Pic.Chat - Envelope", "Pic.Chat - Cellphone", "Pic.Chat - Clock", "Pic.Chat - Spade", "Pic.Chat - Diamond", "Pic.Chat - Heart", "Pic.Chat - Clubs", "Pic.Chat - Right Arrow", "Pic.Chat - Left Arrow", "Pic.Chat - Up Arrow", "Pic.Chat - Down Arrow", "Pic.Chat - Box with X inside", "Pic.Chat - Loading Squares 1", "Pic.Chat - Loading Squares 2", "Pic.Chat - Loading Squares 3", "Pic.Chat - Loading Squares 4", "Pic.Chat - Loading Squares 5", "Pic.Chat - Loading Squares 6", "Pic.Chat - Loading Squares 7", "Pic.Chat - Loading Squares 8", "Pic.Chat - Cross", "Pic.Chat - Chat Room A", "Pic.Chat - Chat Room B", "Pic.Chat - Chat Room C", "Pic.Chat - Chat Room D", "Pic.Chat - DS Auto Mode Icon", "Pic.Chat - DS Manual Mode Icon", "Pic.Chat - P in PictoChat Logo", "Pic.Chat - I in PictoChat Logo", "Pic.Chat - C in PictoChat Logo", "Pic.Chat - T in PictoChat Logo", "Pic.Chat - H in PictoChat Logo", "Pic.Chat - A in PictoChat Logo", "Pic.Chat - Small Inverted Cross", "Pic.Chat - Large Inverted Cross", "Wii - Wii Logo", "Wii - Wii Remote A Button", "Wii - Wii Remote B Button", "Wii - D-pad", "Wii - Home Button", "Wii - Plus Button", "Wii - Minus Button", "Wii - 1 Button", "Wii - 2 Button", "Wii - Power Button", "Wii - Analog Stick", "Wii - Nunchuk C Button", "Wii - Nunchuk Z Button", "Wii - Left Analog Stick", "Wii - Right Analog Stick", "Wii - Classic Controller A Button", "Wii - Classic Controller B Button", "Wii - Classic Controller X Button", "Wii - Classic Controller Y Button", "Wii - Classic Controller L Button", "Wii - Classic Controller R Button", "Wii - Classic Controller ZL Button", "Wii - Classic Controller ZR Button", "Wii - Enter Key", "Wii - Space Key", "Wii - Wii Remote Pointer", "Wii - Wii Remote Pointer 1", "Wii - Wii Remote Pointer 2", "Wii - Wii Remote Pointer 3", "Wii - Wii Remote Pointer 4", "Wii - Wii Remote Pointer Grabbing", "Wii - Wii Remote Pointer Grabbing 1", "Wii - Wii Remote Pointer Grabbing 2", "Wii - Wii Remote Pointer Grabbing 3", "Wii - Wii Remote Pointer Grabbing 4", "Wii - Wii Remote Pointer Open", "Wii - Wii Remote Pointer Open 1", "Wii - Wii Remote Pointer Open 2", "Wii - Wii Remote Pointer Open 3", "Wii - Wii Remote Pointer Open 4", "Wii - Inverted Question Mark", "Wii - Superscript er", "Wii - Superscript re", "Wii - Superscript e"})
-        Me.Select_spesymb.Location = New System.Drawing.Point(11, 1)
-        Me.Select_spesymb.Name = "Select_spesymb"
-        Me.Select_spesymb.Size = New System.Drawing.Size(178, 21)
-        Me.Select_spesymb.TabIndex = 0
+        Me.Select_spesymb_islandname.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Select_spesymb_islandname.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_spesymb_islandname.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_spesymb_islandname.ItemHeight = 13
+        Me.Select_spesymb_islandname.Items.AddRange(New Object() {"NDS - A Button", "NDS - B Button", "NDS - X Button", "NDS - Y Button", "NDS - L Button", "NDS - R Button", "NDS - D-pad", "NDS - Touch Screen Calibration Icon", "DSi/3DS - Touch Screen Calibration Icon", "DSi - Camera Icon", "3DS - Circle Pad", "3DS - D-pad Up", "3DS - D-pad Down", "3DS - D-pad Left", "3DS - D-pad Right", "3DS - D-pad Up & Down", "3DS - D-pad Left & Right", "3DS - Power Button", "3DS - Video Icon", "3DS - Turning Arrow", "3DS - HOME Menu", "3DS - Pedometer", "3DS - Play Coin", "3DS- Close Button", "3DS - Alt. Close Button", "Pic.Chat - Happy Face", "Pic.Chat - Angry Face", "Pic.Chat - Sad Face", "Pic.Chat - Sleepy Face", "Pic.Chat - Sun", "Pic.Chat - Cloud", "Pic.Chat - Umbrella", "Pic.Chat - Snowman", "Pic.Chat - Exclamation Mark", "Pic.Chat - Question Mark", "Pic.Chat - Envelope", "Pic.Chat - Cellphone", "Pic.Chat - Clock", "Pic.Chat - Spade", "Pic.Chat - Diamond", "Pic.Chat - Heart", "Pic.Chat - Clubs", "Pic.Chat - Right Arrow", "Pic.Chat - Left Arrow", "Pic.Chat - Up Arrow", "Pic.Chat - Down Arrow", "Pic.Chat - Box with X inside", "Pic.Chat - Loading Squares 1", "Pic.Chat - Loading Squares 2", "Pic.Chat - Loading Squares 3", "Pic.Chat - Loading Squares 4", "Pic.Chat - Loading Squares 5", "Pic.Chat - Loading Squares 6", "Pic.Chat - Loading Squares 7", "Pic.Chat - Loading Squares 8", "Pic.Chat - Cross", "Pic.Chat - Chat Room A", "Pic.Chat - Chat Room B", "Pic.Chat - Chat Room C", "Pic.Chat - Chat Room D", "Pic.Chat - DS Auto Mode Icon", "Pic.Chat - DS Manual Mode Icon", "Pic.Chat - P in PictoChat Logo", "Pic.Chat - I in PictoChat Logo", "Pic.Chat - C in PictoChat Logo", "Pic.Chat - T in PictoChat Logo", "Pic.Chat - H in PictoChat Logo", "Pic.Chat - A in PictoChat Logo", "Pic.Chat - Small Inverted Cross", "Pic.Chat - Large Inverted Cross", "Wii - Wii Logo", "Wii - Wii Remote A Button", "Wii - Wii Remote B Button", "Wii - D-pad", "Wii - Home Button", "Wii - Plus Button", "Wii - Minus Button", "Wii - 1 Button", "Wii - 2 Button", "Wii - Power Button", "Wii - Analog Stick", "Wii - Nunchuk C Button", "Wii - Nunchuk Z Button", "Wii - Left Analog Stick", "Wii - Right Analog Stick", "Wii - Classic Controller A Button", "Wii - Classic Controller B Button", "Wii - Classic Controller X Button", "Wii - Classic Controller Y Button", "Wii - Classic Controller L Button", "Wii - Classic Controller R Button", "Wii - Classic Controller ZL Button", "Wii - Classic Controller ZR Button", "Wii - Enter Key", "Wii - Space Key", "Wii - Wii Remote Pointer", "Wii - Wii Remote Pointer 1", "Wii - Wii Remote Pointer 2", "Wii - Wii Remote Pointer 3", "Wii - Wii Remote Pointer 4", "Wii - Wii Remote Pointer Grabbing", "Wii - Wii Remote Pointer Grabbing 1", "Wii - Wii Remote Pointer Grabbing 2", "Wii - Wii Remote Pointer Grabbing 3", "Wii - Wii Remote Pointer Grabbing 4", "Wii - Wii Remote Pointer Open", "Wii - Wii Remote Pointer Open 1", "Wii - Wii Remote Pointer Open 2", "Wii - Wii Remote Pointer Open 3", "Wii - Wii Remote Pointer Open 4", "Wii - Inverted Question Mark", "Wii - Superscript er", "Wii - Superscript re", "Wii - Superscript e"})
+        Me.Select_spesymb_islandname.Location = New System.Drawing.Point(11, 1)
+        Me.Select_spesymb_islandname.Name = "Select_spesymb_islandname"
+        Me.Select_spesymb_islandname.Size = New System.Drawing.Size(178, 21)
+        Me.Select_spesymb_islandname.TabIndex = 0
         '
         'Warning_islandname
         '
@@ -6673,7 +7051,6 @@ Partial Class TL_SaveEditor
         'TextBox2
         '
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(2, 2)
         Me.TextBox2.MaxLength = 15
         Me.TextBox2.Name = "TextBox2"
@@ -6702,7 +7079,6 @@ Partial Class TL_SaveEditor
         'TextBox1
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Enabled = False
         Me.TextBox1.Location = New System.Drawing.Point(2, 2)
         Me.TextBox1.MaxLength = 15
         Me.TextBox1.Name = "TextBox1"
@@ -6734,9 +7110,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_wrinkles.BackColor = System.Drawing.SystemColors.Window
         Me.Select_wrinkles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_wrinkles.Enabled = False
         Me.Select_wrinkles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_wrinkles.FormattingEnabled = True
         Me.Select_wrinkles.Items.AddRange(New Object() {"Wrinkles 1", "Wrinkles 2", "Wrinkles 3", "Wrinkles 4", "Wrinkles 5", "Wrinkles 6", "Wrinkles 7", "Wrinkles 8", "Wrinkles 9", "Wrinkles 10", "Wrinkles 11", "Wrinkles 12"})
         Me.Select_wrinkles.Location = New System.Drawing.Point(2, 2)
         Me.Select_wrinkles.Name = "Select_wrinkles"
@@ -6798,7 +7172,6 @@ Partial Class TL_SaveEditor
         '
         Me.Select_makeup.BackColor = System.Drawing.SystemColors.Window
         Me.Select_makeup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_makeup.Enabled = False
         Me.Select_makeup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_makeup.FormattingEnabled = True
         Me.Select_makeup.Items.AddRange(New Object() {"Makeup 1", "Makeup 2", "Makeup 3", "Makeup 4", "Makeup 5", "Makeup 6", "Makeup 7", "Makeup 8", "Makeup 9", "Makeup 10", "Makeup 11", "Makeup 12"})
@@ -6862,6 +7235,7 @@ Partial Class TL_SaveEditor
         '
         'Panel_skincolor
         '
+        Me.Panel_skincolor.BackColor = System.Drawing.Color.Azure
         Me.Panel_skincolor.Controls.Add(Me.Text_skincolor)
         Me.Panel_skincolor.Controls.Add(Me.Icon_skincolor_6)
         Me.Panel_skincolor.Controls.Add(Me.Icon_skincolor_5)
@@ -6968,7 +7342,6 @@ Partial Class TL_SaveEditor
         '
         Me.Select_faceshape.BackColor = System.Drawing.SystemColors.Window
         Me.Select_faceshape.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_faceshape.Enabled = False
         Me.Select_faceshape.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_faceshape.FormattingEnabled = True
         Me.Select_faceshape.Items.AddRange(New Object() {"Face shape 1", "Face shape 2", "Face shape 3", "Face shape 4", "Face shape 5", "Face shape 6", "Face shape 7", "Face shape 8", "Face shape 9", "Face shape 10", "Face shape 11", "Face shape 12"})
@@ -7010,6 +7383,8 @@ Partial Class TL_SaveEditor
         '
         'Title_skincolor
         '
+        Me.Title_skincolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.skin_color_1
+        Me.Title_skincolor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Title_skincolor.Location = New System.Drawing.Point(144, 161)
         Me.Title_skincolor.Name = "Title_skincolor"
         Me.Title_skincolor.Size = New System.Drawing.Size(146, 13)
@@ -7061,18 +7436,26 @@ Partial Class TL_SaveEditor
         'TabPage2
         '
         Me.TabPage2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
-        Me.TabPage2.Controls.Add(Me.PictureBox35)
-        Me.TabPage2.Controls.Add(Me.PictureBox36)
-        Me.TabPage2.Controls.Add(Me.PictureBox32)
-        Me.TabPage2.Controls.Add(Me.PictureBox33)
-        Me.TabPage2.Controls.Add(Me.PictureBox26)
-        Me.TabPage2.Controls.Add(Me.PictureBox31)
+        Me.TabPage2.Controls.Add(Me.Panel_edit_favcolor)
+        Me.TabPage2.Controls.Add(Me.Icon_mii_gender)
+        Me.TabPage2.Controls.Add(Me.AdvH_miigender)
+        Me.TabPage2.Controls.Add(Me.Panel6)
+        Me.TabPage2.Controls.Add(Me.Label11)
+        Me.TabPage2.Controls.Add(Me.Panel_addsymb_nickname)
+        Me.TabPage2.Controls.Add(Me.Panel_addsymb_lastname)
+        Me.TabPage2.Controls.Add(Me.Panel_addsymb_firstname)
+        Me.TabPage2.Controls.Add(Me.Addsymbol_pronun_nickname)
+        Me.TabPage2.Controls.Add(Me.Addsymbol_nickname)
+        Me.TabPage2.Controls.Add(Me.Addsymbol_pronun_firstname)
+        Me.TabPage2.Controls.Add(Me.Addsymbol_firstname)
+        Me.TabPage2.Controls.Add(Me.Addsymbol_pronun_lastname)
+        Me.TabPage2.Controls.Add(Me.Addsymbol_lastname)
         Me.TabPage2.Controls.Add(Me.Panel17)
-        Me.TabPage2.Controls.Add(Me.PictureBox22)
+        Me.TabPage2.Controls.Add(Me.AdvH_nickname)
         Me.TabPage2.Controls.Add(Me.Text_datasharing)
         Me.TabPage2.Controls.Add(Me.Icon_growkid)
-        Me.TabPage2.Controls.Add(Me.PictureBox23)
-        Me.TabPage2.Controls.Add(Me.Panel_edit_nickname)
+        Me.TabPage2.Controls.Add(Me.AdvH_nicknamepronun)
+        Me.TabPage2.Controls.Add(Me.Panel_edit_pronun_nickname)
         Me.TabPage2.Controls.Add(Me.Label4)
         Me.TabPage2.Controls.Add(Me.Panel41)
         Me.TabPage2.Controls.Add(Me.AdvH_lastname)
@@ -7095,12 +7478,12 @@ Partial Class TL_SaveEditor
         Me.TabPage2.Controls.Add(Me.Panel_nickname)
         Me.TabPage2.Controls.Add(Me.Title_nickname)
         Me.TabPage2.Controls.Add(Me.Text_pronun_nickname)
-        Me.TabPage2.Controls.Add(Me.Panel_edit_lastname)
+        Me.TabPage2.Controls.Add(Me.Panel_edit_pronun_lastname)
         Me.TabPage2.Controls.Add(Me.Icon_pronun_lastname)
         Me.TabPage2.Controls.Add(Me.Panel_lastname)
         Me.TabPage2.Controls.Add(Me.Title_lastname)
         Me.TabPage2.Controls.Add(Me.Text_pronun_lastname)
-        Me.TabPage2.Controls.Add(Me.Panel_edit_firstname)
+        Me.TabPage2.Controls.Add(Me.Panel_edit_pronun_firstname)
         Me.TabPage2.Controls.Add(Me.Icon_pronun_firstname)
         Me.TabPage2.Controls.Add(Me.Panel_firstname)
         Me.TabPage2.Controls.Add(Me.Icon_copying)
@@ -7112,6 +7495,7 @@ Partial Class TL_SaveEditor
         Me.TabPage2.Controls.Add(Me.Title_favcolor)
         Me.TabPage2.Controls.Add(Me.Title_firstname)
         Me.TabPage2.Controls.Add(Me.Text_pronun_firstname)
+        Me.TabPage2.Controls.Add(Me.Text_favcolor)
         Me.TabPage2.ImageIndex = 2
         Me.TabPage2.Location = New System.Drawing.Point(25, 4)
         Me.TabPage2.Name = "TabPage2"
@@ -7121,90 +7505,627 @@ Partial Class TL_SaveEditor
         Me.TabPage2.ToolTipText = "Mii profile"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'PictureBox35
+        'Panel_edit_favcolor
         '
-        Me.PictureBox35.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox35.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox35.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
-        Me.PictureBox35.Location = New System.Drawing.Point(275, 262)
-        Me.PictureBox35.Name = "PictureBox35"
-        Me.PictureBox35.Size = New System.Drawing.Size(36, 25)
-        Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox35.TabIndex = 310
-        Me.PictureBox35.TabStop = False
-        Me.PictureBox35.Visible = False
+        Me.Panel_edit_favcolor.BackColor = System.Drawing.Color.Azure
+        Me.Panel_edit_favcolor.Controls.Add(Me.AdvH_editfavcolor)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_violet)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_black)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_yellow)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_blue)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_lightblue)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_brown)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_red)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_lightgreen)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_pink)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_white)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_orange)
+        Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_green)
+        Me.Panel_edit_favcolor.Location = New System.Drawing.Point(326, 226)
+        Me.Panel_edit_favcolor.Name = "Panel_edit_favcolor"
+        Me.Panel_edit_favcolor.Size = New System.Drawing.Size(201, 152)
+        Me.Panel_edit_favcolor.TabIndex = 318
+        Me.Panel_edit_favcolor.Visible = False
         '
-        'PictureBox36
+        'AdvH_editfavcolor
         '
-        Me.PictureBox36.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox36.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox36.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
-        Me.PictureBox36.Location = New System.Drawing.Point(275, 237)
-        Me.PictureBox36.Name = "PictureBox36"
-        Me.PictureBox36.Size = New System.Drawing.Size(36, 25)
-        Me.PictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox36.TabIndex = 309
-        Me.PictureBox36.TabStop = False
-        Me.PictureBox36.Visible = False
+        Me.AdvH_editfavcolor.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_editfavcolor.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_editfavcolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_editfavcolor.Location = New System.Drawing.Point(178, 130)
+        Me.AdvH_editfavcolor.Name = "AdvH_editfavcolor"
+        Me.AdvH_editfavcolor.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_editfavcolor.TabIndex = 294
+        Me.AdvH_editfavcolor.TabStop = False
+        Me.AdvH_editfavcolor.Visible = False
         '
-        'PictureBox32
+        'Icon_editcolor_violet
         '
-        Me.PictureBox32.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox32.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox32.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
-        Me.PictureBox32.Location = New System.Drawing.Point(274, 190)
-        Me.PictureBox32.Name = "PictureBox32"
-        Me.PictureBox32.Size = New System.Drawing.Size(36, 25)
-        Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox32.TabIndex = 308
-        Me.PictureBox32.TabStop = False
-        Me.PictureBox32.Visible = False
+        Me.Icon_editcolor_violet.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_violet.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_violet
+        Me.Icon_editcolor_violet.Location = New System.Drawing.Point(130, 76)
+        Me.Icon_editcolor_violet.Name = "Icon_editcolor_violet"
+        Me.Icon_editcolor_violet.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_violet.TabIndex = 281
+        Me.Icon_editcolor_violet.TabStop = False
         '
-        'PictureBox33
+        'Icon_editcolor_black
         '
-        Me.PictureBox33.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox33.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox33.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
-        Me.PictureBox33.Location = New System.Drawing.Point(274, 165)
-        Me.PictureBox33.Name = "PictureBox33"
-        Me.PictureBox33.Size = New System.Drawing.Size(36, 25)
-        Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox33.TabIndex = 307
-        Me.PictureBox33.TabStop = False
-        Me.PictureBox33.Visible = False
+        Me.Icon_editcolor_black.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_black.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_noir
+        Me.Icon_editcolor_black.Location = New System.Drawing.Point(130, 104)
+        Me.Icon_editcolor_black.Name = "Icon_editcolor_black"
+        Me.Icon_editcolor_black.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_black.TabIndex = 280
+        Me.Icon_editcolor_black.TabStop = False
         '
-        'PictureBox26
+        'Icon_editcolor_yellow
         '
-        Me.PictureBox26.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox26.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox26.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
-        Me.PictureBox26.Location = New System.Drawing.Point(482, 190)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(36, 25)
-        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox26.TabIndex = 306
-        Me.PictureBox26.TabStop = False
-        Me.PictureBox26.Visible = False
+        Me.Icon_editcolor_yellow.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_yellow.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_jaune
+        Me.Icon_editcolor_yellow.Location = New System.Drawing.Point(130, 20)
+        Me.Icon_editcolor_yellow.Name = "Icon_editcolor_yellow"
+        Me.Icon_editcolor_yellow.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_yellow.TabIndex = 279
+        Me.Icon_editcolor_yellow.TabStop = False
         '
-        'PictureBox31
+        'Icon_editcolor_blue
         '
-        Me.PictureBox31.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox31.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox31.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
-        Me.PictureBox31.Location = New System.Drawing.Point(482, 165)
-        Me.PictureBox31.Name = "PictureBox31"
-        Me.PictureBox31.Size = New System.Drawing.Size(36, 25)
-        Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox31.TabIndex = 305
-        Me.PictureBox31.TabStop = False
-        Me.PictureBox31.Visible = False
+        Me.Icon_editcolor_blue.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_blue.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_bleu
+        Me.Icon_editcolor_blue.Location = New System.Drawing.Point(130, 48)
+        Me.Icon_editcolor_blue.Name = "Icon_editcolor_blue"
+        Me.Icon_editcolor_blue.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_blue.TabIndex = 278
+        Me.Icon_editcolor_blue.TabStop = False
+        '
+        'Icon_editcolor_lightblue
+        '
+        Me.Icon_editcolor_lightblue.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_lightblue.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_bleuclair
+        Me.Icon_editcolor_lightblue.Location = New System.Drawing.Point(16, 76)
+        Me.Icon_editcolor_lightblue.Name = "Icon_editcolor_lightblue"
+        Me.Icon_editcolor_lightblue.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_lightblue.TabIndex = 277
+        Me.Icon_editcolor_lightblue.TabStop = False
+        '
+        'Icon_editcolor_brown
+        '
+        Me.Icon_editcolor_brown.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_brown.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_marron
+        Me.Icon_editcolor_brown.Location = New System.Drawing.Point(16, 104)
+        Me.Icon_editcolor_brown.Name = "Icon_editcolor_brown"
+        Me.Icon_editcolor_brown.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_brown.TabIndex = 276
+        Me.Icon_editcolor_brown.TabStop = False
+        '
+        'Icon_editcolor_red
+        '
+        Me.Icon_editcolor_red.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_red.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_rouge
+        Me.Icon_editcolor_red.Location = New System.Drawing.Point(16, 20)
+        Me.Icon_editcolor_red.Name = "Icon_editcolor_red"
+        Me.Icon_editcolor_red.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_red.TabIndex = 275
+        Me.Icon_editcolor_red.TabStop = False
+        '
+        'Icon_editcolor_lightgreen
+        '
+        Me.Icon_editcolor_lightgreen.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_lightgreen.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_vertclair
+        Me.Icon_editcolor_lightgreen.Location = New System.Drawing.Point(16, 48)
+        Me.Icon_editcolor_lightgreen.Name = "Icon_editcolor_lightgreen"
+        Me.Icon_editcolor_lightgreen.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_lightgreen.TabIndex = 274
+        Me.Icon_editcolor_lightgreen.TabStop = False
+        '
+        'Icon_editcolor_pink
+        '
+        Me.Icon_editcolor_pink.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_pink.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_rose
+        Me.Icon_editcolor_pink.Location = New System.Drawing.Point(73, 76)
+        Me.Icon_editcolor_pink.Name = "Icon_editcolor_pink"
+        Me.Icon_editcolor_pink.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_pink.TabIndex = 273
+        Me.Icon_editcolor_pink.TabStop = False
+        '
+        'Icon_editcolor_white
+        '
+        Me.Icon_editcolor_white.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_white.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_blanc
+        Me.Icon_editcolor_white.Location = New System.Drawing.Point(73, 104)
+        Me.Icon_editcolor_white.Name = "Icon_editcolor_white"
+        Me.Icon_editcolor_white.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_white.TabIndex = 272
+        Me.Icon_editcolor_white.TabStop = False
+        '
+        'Icon_editcolor_orange
+        '
+        Me.Icon_editcolor_orange.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_orange.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_orange
+        Me.Icon_editcolor_orange.Location = New System.Drawing.Point(73, 20)
+        Me.Icon_editcolor_orange.Name = "Icon_editcolor_orange"
+        Me.Icon_editcolor_orange.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_orange.TabIndex = 271
+        Me.Icon_editcolor_orange.TabStop = False
+        '
+        'Icon_editcolor_green
+        '
+        Me.Icon_editcolor_green.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editcolor_green.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color_vert
+        Me.Icon_editcolor_green.Location = New System.Drawing.Point(73, 48)
+        Me.Icon_editcolor_green.Name = "Icon_editcolor_green"
+        Me.Icon_editcolor_green.Size = New System.Drawing.Size(54, 26)
+        Me.Icon_editcolor_green.TabIndex = 270
+        Me.Icon_editcolor_green.TabStop = False
+        '
+        'Icon_mii_gender
+        '
+        Me.Icon_mii_gender.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_mii_malegender
+        Me.Icon_mii_gender.Location = New System.Drawing.Point(126, 314)
+        Me.Icon_mii_gender.Name = "Icon_mii_gender"
+        Me.Icon_mii_gender.Size = New System.Drawing.Size(15, 17)
+        Me.Icon_mii_gender.TabIndex = 315
+        Me.Icon_mii_gender.TabStop = False
+        '
+        'AdvH_miigender
+        '
+        Me.AdvH_miigender.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_miigender.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_miigender.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_miigender.Location = New System.Drawing.Point(247, 311)
+        Me.AdvH_miigender.Name = "AdvH_miigender"
+        Me.AdvH_miigender.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_miigender.TabIndex = 317
+        Me.AdvH_miigender.TabStop = False
+        Me.AdvH_miigender.Visible = False
+        '
+        'Panel6
+        '
+        Me.Panel6.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel6.Controls.Add(Me.NumericUpDown1)
+        Me.Panel6.Controls.Add(Me.Select_mii_gender)
+        Me.Panel6.Location = New System.Drawing.Point(143, 310)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(104, 25)
+        Me.Panel6.TabIndex = 316
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown1.Location = New System.Drawing.Point(4, 4)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(40, 16)
+        Me.NumericUpDown1.TabIndex = 131
+        Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown1.Visible = False
+        '
+        'Select_mii_gender
+        '
+        Me.Select_mii_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_mii_gender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_mii_gender.FormattingEnabled = True
+        Me.Select_mii_gender.Items.AddRange(New Object() {"Masculine", "Feminine"})
+        Me.Select_mii_gender.Location = New System.Drawing.Point(2, 2)
+        Me.Select_mii_gender.Name = "Select_mii_gender"
+        Me.Select_mii_gender.Size = New System.Drawing.Size(100, 21)
+        Me.Select_mii_gender.TabIndex = 128
+        '
+        'Label11
+        '
+        Me.Label11.Location = New System.Drawing.Point(143, 294)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(104, 13)
+        Me.Label11.TabIndex = 314
+        Me.Label11.Text = "Gender"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_addsymb_nickname
+        '
+        Me.Panel_addsymb_nickname.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_addsymb_nickname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex4
+        Me.Panel_addsymb_nickname.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_addsymb_nickname.Controls.Add(Me.Text_spesymb_nickname)
+        Me.Panel_addsymb_nickname.Controls.Add(Me.Panel_spesymb_nickname_cancel)
+        Me.Panel_addsymb_nickname.Controls.Add(Me.Panel_spesymb_nickname_add)
+        Me.Panel_addsymb_nickname.Controls.Add(Me.Select_spesymb_nickname)
+        Me.Panel_addsymb_nickname.Location = New System.Drawing.Point(74, 239)
+        Me.Panel_addsymb_nickname.Name = "Panel_addsymb_nickname"
+        Me.Panel_addsymb_nickname.Size = New System.Drawing.Size(201, 46)
+        Me.Panel_addsymb_nickname.TabIndex = 313
+        Me.Panel_addsymb_nickname.Visible = False
+        '
+        'Text_spesymb_nickname
+        '
+        Me.Text_spesymb_nickname.AutoSize = True
+        Me.Text_spesymb_nickname.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_nickname.Location = New System.Drawing.Point(18, 5)
+        Me.Text_spesymb_nickname.Name = "Text_spesymb_nickname"
+        Me.Text_spesymb_nickname.Size = New System.Drawing.Size(14, 13)
+        Me.Text_spesymb_nickname.TabIndex = 93
+        Me.Text_spesymb_nickname.Text = "T"
+        Me.Text_spesymb_nickname.Visible = False
+        '
+        'Panel_spesymb_nickname_cancel
+        '
+        Me.Panel_spesymb_nickname_cancel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_nickname_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_nickname_cancel.Controls.Add(Me.Text_spesymb_nickname_cancel)
+        Me.Panel_spesymb_nickname_cancel.Location = New System.Drawing.Point(110, 23)
+        Me.Panel_spesymb_nickname_cancel.Name = "Panel_spesymb_nickname_cancel"
+        Me.Panel_spesymb_nickname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_nickname_cancel.TabIndex = 94
+        '
+        'Text_spesymb_nickname_cancel
+        '
+        Me.Text_spesymb_nickname_cancel.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_nickname_cancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_nickname_cancel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_nickname_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_nickname_cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_nickname_cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_nickname_cancel.ImageKey = "(aucun)"
+        Me.Text_spesymb_nickname_cancel.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_nickname_cancel.Name = "Text_spesymb_nickname_cancel"
+        Me.Text_spesymb_nickname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_nickname_cancel.TabIndex = 5
+        Me.Text_spesymb_nickname_cancel.Text = "Cancel"
+        Me.Text_spesymb_nickname_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_spesymb_nickname_add
+        '
+        Me.Panel_spesymb_nickname_add.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_nickname_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_nickname_add.Controls.Add(Me.Text_spesymb_add_nickname_n)
+        Me.Panel_spesymb_nickname_add.Controls.Add(Me.Text_spesymb_add_nickname_pn)
+        Me.Panel_spesymb_nickname_add.Location = New System.Drawing.Point(12, 23)
+        Me.Panel_spesymb_nickname_add.Name = "Panel_spesymb_nickname_add"
+        Me.Panel_spesymb_nickname_add.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_nickname_add.TabIndex = 93
+        '
+        'Text_spesymb_add_nickname_n
+        '
+        Me.Text_spesymb_add_nickname_n.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_nickname_n.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_nickname_n.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_nickname_n.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_nickname_n.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_nickname_n.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_nickname_n.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_nickname_n.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_nickname_n.Name = "Text_spesymb_add_nickname_n"
+        Me.Text_spesymb_add_nickname_n.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_nickname_n.TabIndex = 3
+        Me.Text_spesymb_add_nickname_n.Text = "Add"
+        Me.Text_spesymb_add_nickname_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_spesymb_add_nickname_pn
+        '
+        Me.Text_spesymb_add_nickname_pn.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_nickname_pn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_nickname_pn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_nickname_pn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_nickname_pn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_nickname_pn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_nickname_pn.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_nickname_pn.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_nickname_pn.Name = "Text_spesymb_add_nickname_pn"
+        Me.Text_spesymb_add_nickname_pn.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_nickname_pn.TabIndex = 4
+        Me.Text_spesymb_add_nickname_pn.Text = "Add"
+        Me.Text_spesymb_add_nickname_pn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_spesymb_nickname
+        '
+        Me.Select_spesymb_nickname.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Select_spesymb_nickname.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_spesymb_nickname.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_spesymb_nickname.ItemHeight = 13
+        Me.Select_spesymb_nickname.Items.AddRange(New Object() {"NDS - A Button", "NDS - B Button", "NDS - X Button", "NDS - Y Button", "NDS - L Button", "NDS - R Button", "NDS - D-pad", "NDS - Touch Screen Calibration Icon", "DSi/3DS - Touch Screen Calibration Icon", "DSi - Camera Icon", "3DS - Circle Pad", "3DS - D-pad Up", "3DS - D-pad Down", "3DS - D-pad Left", "3DS - D-pad Right", "3DS - D-pad Up & Down", "3DS - D-pad Left & Right", "3DS - Power Button", "3DS - Video Icon", "3DS - Turning Arrow", "3DS - HOME Menu", "3DS - Pedometer", "3DS - Play Coin", "3DS- Close Button", "3DS - Alt. Close Button", "Pic.Chat - Happy Face", "Pic.Chat - Angry Face", "Pic.Chat - Sad Face", "Pic.Chat - Sleepy Face", "Pic.Chat - Sun", "Pic.Chat - Cloud", "Pic.Chat - Umbrella", "Pic.Chat - Snowman", "Pic.Chat - Exclamation Mark", "Pic.Chat - Question Mark", "Pic.Chat - Envelope", "Pic.Chat - Cellphone", "Pic.Chat - Clock", "Pic.Chat - Spade", "Pic.Chat - Diamond", "Pic.Chat - Heart", "Pic.Chat - Clubs", "Pic.Chat - Right Arrow", "Pic.Chat - Left Arrow", "Pic.Chat - Up Arrow", "Pic.Chat - Down Arrow", "Pic.Chat - Box with X inside", "Pic.Chat - Loading Squares 1", "Pic.Chat - Loading Squares 2", "Pic.Chat - Loading Squares 3", "Pic.Chat - Loading Squares 4", "Pic.Chat - Loading Squares 5", "Pic.Chat - Loading Squares 6", "Pic.Chat - Loading Squares 7", "Pic.Chat - Loading Squares 8", "Pic.Chat - Cross", "Pic.Chat - Chat Room A", "Pic.Chat - Chat Room B", "Pic.Chat - Chat Room C", "Pic.Chat - Chat Room D", "Pic.Chat - DS Auto Mode Icon", "Pic.Chat - DS Manual Mode Icon", "Pic.Chat - P in PictoChat Logo", "Pic.Chat - I in PictoChat Logo", "Pic.Chat - C in PictoChat Logo", "Pic.Chat - T in PictoChat Logo", "Pic.Chat - H in PictoChat Logo", "Pic.Chat - A in PictoChat Logo", "Pic.Chat - Small Inverted Cross", "Pic.Chat - Large Inverted Cross", "Wii - Wii Logo", "Wii - Wii Remote A Button", "Wii - Wii Remote B Button", "Wii - D-pad", "Wii - Home Button", "Wii - Plus Button", "Wii - Minus Button", "Wii - 1 Button", "Wii - 2 Button", "Wii - Power Button", "Wii - Analog Stick", "Wii - Nunchuk C Button", "Wii - Nunchuk Z Button", "Wii - Left Analog Stick", "Wii - Right Analog Stick", "Wii - Classic Controller A Button", "Wii - Classic Controller B Button", "Wii - Classic Controller X Button", "Wii - Classic Controller Y Button", "Wii - Classic Controller L Button", "Wii - Classic Controller R Button", "Wii - Classic Controller ZL Button", "Wii - Classic Controller ZR Button", "Wii - Enter Key", "Wii - Space Key", "Wii - Wii Remote Pointer", "Wii - Wii Remote Pointer 1", "Wii - Wii Remote Pointer 2", "Wii - Wii Remote Pointer 3", "Wii - Wii Remote Pointer 4", "Wii - Wii Remote Pointer Grabbing", "Wii - Wii Remote Pointer Grabbing 1", "Wii - Wii Remote Pointer Grabbing 2", "Wii - Wii Remote Pointer Grabbing 3", "Wii - Wii Remote Pointer Grabbing 4", "Wii - Wii Remote Pointer Open", "Wii - Wii Remote Pointer Open 1", "Wii - Wii Remote Pointer Open 2", "Wii - Wii Remote Pointer Open 3", "Wii - Wii Remote Pointer Open 4", "Wii - Inverted Question Mark", "Wii - Superscript er", "Wii - Superscript re", "Wii - Superscript e"})
+        Me.Select_spesymb_nickname.Location = New System.Drawing.Point(11, 1)
+        Me.Select_spesymb_nickname.Name = "Select_spesymb_nickname"
+        Me.Select_spesymb_nickname.Size = New System.Drawing.Size(178, 21)
+        Me.Select_spesymb_nickname.TabIndex = 0
+        '
+        'Panel_addsymb_lastname
+        '
+        Me.Panel_addsymb_lastname.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_addsymb_lastname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex4
+        Me.Panel_addsymb_lastname.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_addsymb_lastname.Controls.Add(Me.Text_spesymb_lastname)
+        Me.Panel_addsymb_lastname.Controls.Add(Me.Panel_spesymb_lastname_cancel)
+        Me.Panel_addsymb_lastname.Controls.Add(Me.Panel_spesymb_lastname_add)
+        Me.Panel_addsymb_lastname.Controls.Add(Me.Select_spesymb_lastname)
+        Me.Panel_addsymb_lastname.Location = New System.Drawing.Point(310, 167)
+        Me.Panel_addsymb_lastname.Name = "Panel_addsymb_lastname"
+        Me.Panel_addsymb_lastname.Size = New System.Drawing.Size(201, 46)
+        Me.Panel_addsymb_lastname.TabIndex = 312
+        Me.Panel_addsymb_lastname.Visible = False
+        '
+        'Text_spesymb_lastname
+        '
+        Me.Text_spesymb_lastname.AutoSize = True
+        Me.Text_spesymb_lastname.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_lastname.Location = New System.Drawing.Point(18, 5)
+        Me.Text_spesymb_lastname.Name = "Text_spesymb_lastname"
+        Me.Text_spesymb_lastname.Size = New System.Drawing.Size(14, 13)
+        Me.Text_spesymb_lastname.TabIndex = 93
+        Me.Text_spesymb_lastname.Text = "T"
+        Me.Text_spesymb_lastname.Visible = False
+        '
+        'Panel_spesymb_lastname_cancel
+        '
+        Me.Panel_spesymb_lastname_cancel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_lastname_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_lastname_cancel.Controls.Add(Me.Text_spesymb_lastname_cancel)
+        Me.Panel_spesymb_lastname_cancel.Location = New System.Drawing.Point(110, 23)
+        Me.Panel_spesymb_lastname_cancel.Name = "Panel_spesymb_lastname_cancel"
+        Me.Panel_spesymb_lastname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_lastname_cancel.TabIndex = 94
+        '
+        'Text_spesymb_lastname_cancel
+        '
+        Me.Text_spesymb_lastname_cancel.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_lastname_cancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_lastname_cancel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_lastname_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_lastname_cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_lastname_cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_lastname_cancel.ImageKey = "(aucun)"
+        Me.Text_spesymb_lastname_cancel.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_lastname_cancel.Name = "Text_spesymb_lastname_cancel"
+        Me.Text_spesymb_lastname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_lastname_cancel.TabIndex = 5
+        Me.Text_spesymb_lastname_cancel.Text = "Cancel"
+        Me.Text_spesymb_lastname_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_spesymb_lastname_add
+        '
+        Me.Panel_spesymb_lastname_add.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_lastname_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_lastname_add.Controls.Add(Me.Text_spesymb_add_lastname_n)
+        Me.Panel_spesymb_lastname_add.Controls.Add(Me.Text_spesymb_add_lastname_pn)
+        Me.Panel_spesymb_lastname_add.Location = New System.Drawing.Point(12, 23)
+        Me.Panel_spesymb_lastname_add.Name = "Panel_spesymb_lastname_add"
+        Me.Panel_spesymb_lastname_add.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_lastname_add.TabIndex = 93
+        '
+        'Text_spesymb_add_lastname_n
+        '
+        Me.Text_spesymb_add_lastname_n.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_lastname_n.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_lastname_n.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_lastname_n.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_lastname_n.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_lastname_n.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_lastname_n.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_lastname_n.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_lastname_n.Name = "Text_spesymb_add_lastname_n"
+        Me.Text_spesymb_add_lastname_n.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_lastname_n.TabIndex = 3
+        Me.Text_spesymb_add_lastname_n.Text = "Add"
+        Me.Text_spesymb_add_lastname_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_spesymb_add_lastname_pn
+        '
+        Me.Text_spesymb_add_lastname_pn.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_lastname_pn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_lastname_pn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_lastname_pn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_lastname_pn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_lastname_pn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_lastname_pn.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_lastname_pn.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_lastname_pn.Name = "Text_spesymb_add_lastname_pn"
+        Me.Text_spesymb_add_lastname_pn.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_lastname_pn.TabIndex = 4
+        Me.Text_spesymb_add_lastname_pn.Text = "Add"
+        Me.Text_spesymb_add_lastname_pn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_spesymb_lastname
+        '
+        Me.Select_spesymb_lastname.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Select_spesymb_lastname.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_spesymb_lastname.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_spesymb_lastname.ItemHeight = 13
+        Me.Select_spesymb_lastname.Items.AddRange(New Object() {"NDS - A Button", "NDS - B Button", "NDS - X Button", "NDS - Y Button", "NDS - L Button", "NDS - R Button", "NDS - D-pad", "NDS - Touch Screen Calibration Icon", "DSi/3DS - Touch Screen Calibration Icon", "DSi - Camera Icon", "3DS - Circle Pad", "3DS - D-pad Up", "3DS - D-pad Down", "3DS - D-pad Left", "3DS - D-pad Right", "3DS - D-pad Up & Down", "3DS - D-pad Left & Right", "3DS - Power Button", "3DS - Video Icon", "3DS - Turning Arrow", "3DS - HOME Menu", "3DS - Pedometer", "3DS - Play Coin", "3DS- Close Button", "3DS - Alt. Close Button", "Pic.Chat - Happy Face", "Pic.Chat - Angry Face", "Pic.Chat - Sad Face", "Pic.Chat - Sleepy Face", "Pic.Chat - Sun", "Pic.Chat - Cloud", "Pic.Chat - Umbrella", "Pic.Chat - Snowman", "Pic.Chat - Exclamation Mark", "Pic.Chat - Question Mark", "Pic.Chat - Envelope", "Pic.Chat - Cellphone", "Pic.Chat - Clock", "Pic.Chat - Spade", "Pic.Chat - Diamond", "Pic.Chat - Heart", "Pic.Chat - Clubs", "Pic.Chat - Right Arrow", "Pic.Chat - Left Arrow", "Pic.Chat - Up Arrow", "Pic.Chat - Down Arrow", "Pic.Chat - Box with X inside", "Pic.Chat - Loading Squares 1", "Pic.Chat - Loading Squares 2", "Pic.Chat - Loading Squares 3", "Pic.Chat - Loading Squares 4", "Pic.Chat - Loading Squares 5", "Pic.Chat - Loading Squares 6", "Pic.Chat - Loading Squares 7", "Pic.Chat - Loading Squares 8", "Pic.Chat - Cross", "Pic.Chat - Chat Room A", "Pic.Chat - Chat Room B", "Pic.Chat - Chat Room C", "Pic.Chat - Chat Room D", "Pic.Chat - DS Auto Mode Icon", "Pic.Chat - DS Manual Mode Icon", "Pic.Chat - P in PictoChat Logo", "Pic.Chat - I in PictoChat Logo", "Pic.Chat - C in PictoChat Logo", "Pic.Chat - T in PictoChat Logo", "Pic.Chat - H in PictoChat Logo", "Pic.Chat - A in PictoChat Logo", "Pic.Chat - Small Inverted Cross", "Pic.Chat - Large Inverted Cross", "Wii - Wii Logo", "Wii - Wii Remote A Button", "Wii - Wii Remote B Button", "Wii - D-pad", "Wii - Home Button", "Wii - Plus Button", "Wii - Minus Button", "Wii - 1 Button", "Wii - 2 Button", "Wii - Power Button", "Wii - Analog Stick", "Wii - Nunchuk C Button", "Wii - Nunchuk Z Button", "Wii - Left Analog Stick", "Wii - Right Analog Stick", "Wii - Classic Controller A Button", "Wii - Classic Controller B Button", "Wii - Classic Controller X Button", "Wii - Classic Controller Y Button", "Wii - Classic Controller L Button", "Wii - Classic Controller R Button", "Wii - Classic Controller ZL Button", "Wii - Classic Controller ZR Button", "Wii - Enter Key", "Wii - Space Key", "Wii - Wii Remote Pointer", "Wii - Wii Remote Pointer 1", "Wii - Wii Remote Pointer 2", "Wii - Wii Remote Pointer 3", "Wii - Wii Remote Pointer 4", "Wii - Wii Remote Pointer Grabbing", "Wii - Wii Remote Pointer Grabbing 1", "Wii - Wii Remote Pointer Grabbing 2", "Wii - Wii Remote Pointer Grabbing 3", "Wii - Wii Remote Pointer Grabbing 4", "Wii - Wii Remote Pointer Open", "Wii - Wii Remote Pointer Open 1", "Wii - Wii Remote Pointer Open 2", "Wii - Wii Remote Pointer Open 3", "Wii - Wii Remote Pointer Open 4", "Wii - Inverted Question Mark", "Wii - Superscript er", "Wii - Superscript re", "Wii - Superscript e"})
+        Me.Select_spesymb_lastname.Location = New System.Drawing.Point(11, 1)
+        Me.Select_spesymb_lastname.Name = "Select_spesymb_lastname"
+        Me.Select_spesymb_lastname.Size = New System.Drawing.Size(178, 21)
+        Me.Select_spesymb_lastname.TabIndex = 0
+        '
+        'Panel_addsymb_firstname
+        '
+        Me.Panel_addsymb_firstname.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_addsymb_firstname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex4
+        Me.Panel_addsymb_firstname.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_addsymb_firstname.Controls.Add(Me.Text_spesymb_firstname)
+        Me.Panel_addsymb_firstname.Controls.Add(Me.Panel_spesymb_firstname_cancel)
+        Me.Panel_addsymb_firstname.Controls.Add(Me.Panel_spesymb_firstname_add)
+        Me.Panel_addsymb_firstname.Controls.Add(Me.Select_spesymb_firstname)
+        Me.Panel_addsymb_firstname.Location = New System.Drawing.Point(73, 167)
+        Me.Panel_addsymb_firstname.Name = "Panel_addsymb_firstname"
+        Me.Panel_addsymb_firstname.Size = New System.Drawing.Size(201, 46)
+        Me.Panel_addsymb_firstname.TabIndex = 311
+        Me.Panel_addsymb_firstname.Visible = False
+        '
+        'Text_spesymb_firstname
+        '
+        Me.Text_spesymb_firstname.AutoSize = True
+        Me.Text_spesymb_firstname.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_firstname.Location = New System.Drawing.Point(18, 5)
+        Me.Text_spesymb_firstname.Name = "Text_spesymb_firstname"
+        Me.Text_spesymb_firstname.Size = New System.Drawing.Size(14, 13)
+        Me.Text_spesymb_firstname.TabIndex = 93
+        Me.Text_spesymb_firstname.Text = "T"
+        Me.Text_spesymb_firstname.Visible = False
+        '
+        'Panel_spesymb_firstname_cancel
+        '
+        Me.Panel_spesymb_firstname_cancel.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_firstname_cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_firstname_cancel.Controls.Add(Me.Text_spesymb_firstname_cancel)
+        Me.Panel_spesymb_firstname_cancel.Location = New System.Drawing.Point(110, 23)
+        Me.Panel_spesymb_firstname_cancel.Name = "Panel_spesymb_firstname_cancel"
+        Me.Panel_spesymb_firstname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_firstname_cancel.TabIndex = 94
+        '
+        'Text_spesymb_firstname_cancel
+        '
+        Me.Text_spesymb_firstname_cancel.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_firstname_cancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_firstname_cancel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_firstname_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_firstname_cancel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_firstname_cancel.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_firstname_cancel.ImageKey = "(aucun)"
+        Me.Text_spesymb_firstname_cancel.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_firstname_cancel.Name = "Text_spesymb_firstname_cancel"
+        Me.Text_spesymb_firstname_cancel.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_firstname_cancel.TabIndex = 5
+        Me.Text_spesymb_firstname_cancel.Text = "Cancel"
+        Me.Text_spesymb_firstname_cancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_spesymb_firstname_add
+        '
+        Me.Panel_spesymb_firstname_add.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel_spesymb_firstname_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel_spesymb_firstname_add.Controls.Add(Me.Text_spesymb_add_firstname_n)
+        Me.Panel_spesymb_firstname_add.Controls.Add(Me.Text_spesymb_add_firstname_pn)
+        Me.Panel_spesymb_firstname_add.Location = New System.Drawing.Point(12, 23)
+        Me.Panel_spesymb_firstname_add.Name = "Panel_spesymb_firstname_add"
+        Me.Panel_spesymb_firstname_add.Size = New System.Drawing.Size(78, 18)
+        Me.Panel_spesymb_firstname_add.TabIndex = 93
+        '
+        'Text_spesymb_add_firstname_n
+        '
+        Me.Text_spesymb_add_firstname_n.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_firstname_n.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_firstname_n.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_firstname_n.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_firstname_n.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_firstname_n.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_firstname_n.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_firstname_n.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_firstname_n.Name = "Text_spesymb_add_firstname_n"
+        Me.Text_spesymb_add_firstname_n.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_firstname_n.TabIndex = 3
+        Me.Text_spesymb_add_firstname_n.Text = "Add"
+        Me.Text_spesymb_add_firstname_n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_spesymb_add_firstname_pn
+        '
+        Me.Text_spesymb_add_firstname_pn.BackColor = System.Drawing.Color.Transparent
+        Me.Text_spesymb_add_firstname_pn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_spesymb_add_firstname_pn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_spesymb_add_firstname_pn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_spesymb_add_firstname_pn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_spesymb_add_firstname_pn.ImageAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Text_spesymb_add_firstname_pn.ImageKey = "(aucun)"
+        Me.Text_spesymb_add_firstname_pn.Location = New System.Drawing.Point(0, 0)
+        Me.Text_spesymb_add_firstname_pn.Name = "Text_spesymb_add_firstname_pn"
+        Me.Text_spesymb_add_firstname_pn.Size = New System.Drawing.Size(78, 18)
+        Me.Text_spesymb_add_firstname_pn.TabIndex = 4
+        Me.Text_spesymb_add_firstname_pn.Text = "Add"
+        Me.Text_spesymb_add_firstname_pn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_spesymb_firstname
+        '
+        Me.Select_spesymb_firstname.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.Select_spesymb_firstname.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_spesymb_firstname.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_spesymb_firstname.ItemHeight = 13
+        Me.Select_spesymb_firstname.Items.AddRange(New Object() {"NDS - A Button", "NDS - B Button", "NDS - X Button", "NDS - Y Button", "NDS - L Button", "NDS - R Button", "NDS - D-pad", "NDS - Touch Screen Calibration Icon", "DSi/3DS - Touch Screen Calibration Icon", "DSi - Camera Icon", "3DS - Circle Pad", "3DS - D-pad Up", "3DS - D-pad Down", "3DS - D-pad Left", "3DS - D-pad Right", "3DS - D-pad Up & Down", "3DS - D-pad Left & Right", "3DS - Power Button", "3DS - Video Icon", "3DS - Turning Arrow", "3DS - HOME Menu", "3DS - Pedometer", "3DS - Play Coin", "3DS- Close Button", "3DS - Alt. Close Button", "Pic.Chat - Happy Face", "Pic.Chat - Angry Face", "Pic.Chat - Sad Face", "Pic.Chat - Sleepy Face", "Pic.Chat - Sun", "Pic.Chat - Cloud", "Pic.Chat - Umbrella", "Pic.Chat - Snowman", "Pic.Chat - Exclamation Mark", "Pic.Chat - Question Mark", "Pic.Chat - Envelope", "Pic.Chat - Cellphone", "Pic.Chat - Clock", "Pic.Chat - Spade", "Pic.Chat - Diamond", "Pic.Chat - Heart", "Pic.Chat - Clubs", "Pic.Chat - Right Arrow", "Pic.Chat - Left Arrow", "Pic.Chat - Up Arrow", "Pic.Chat - Down Arrow", "Pic.Chat - Box with X inside", "Pic.Chat - Loading Squares 1", "Pic.Chat - Loading Squares 2", "Pic.Chat - Loading Squares 3", "Pic.Chat - Loading Squares 4", "Pic.Chat - Loading Squares 5", "Pic.Chat - Loading Squares 6", "Pic.Chat - Loading Squares 7", "Pic.Chat - Loading Squares 8", "Pic.Chat - Cross", "Pic.Chat - Chat Room A", "Pic.Chat - Chat Room B", "Pic.Chat - Chat Room C", "Pic.Chat - Chat Room D", "Pic.Chat - DS Auto Mode Icon", "Pic.Chat - DS Manual Mode Icon", "Pic.Chat - P in PictoChat Logo", "Pic.Chat - I in PictoChat Logo", "Pic.Chat - C in PictoChat Logo", "Pic.Chat - T in PictoChat Logo", "Pic.Chat - H in PictoChat Logo", "Pic.Chat - A in PictoChat Logo", "Pic.Chat - Small Inverted Cross", "Pic.Chat - Large Inverted Cross", "Wii - Wii Logo", "Wii - Wii Remote A Button", "Wii - Wii Remote B Button", "Wii - D-pad", "Wii - Home Button", "Wii - Plus Button", "Wii - Minus Button", "Wii - 1 Button", "Wii - 2 Button", "Wii - Power Button", "Wii - Analog Stick", "Wii - Nunchuk C Button", "Wii - Nunchuk Z Button", "Wii - Left Analog Stick", "Wii - Right Analog Stick", "Wii - Classic Controller A Button", "Wii - Classic Controller B Button", "Wii - Classic Controller X Button", "Wii - Classic Controller Y Button", "Wii - Classic Controller L Button", "Wii - Classic Controller R Button", "Wii - Classic Controller ZL Button", "Wii - Classic Controller ZR Button", "Wii - Enter Key", "Wii - Space Key", "Wii - Wii Remote Pointer", "Wii - Wii Remote Pointer 1", "Wii - Wii Remote Pointer 2", "Wii - Wii Remote Pointer 3", "Wii - Wii Remote Pointer 4", "Wii - Wii Remote Pointer Grabbing", "Wii - Wii Remote Pointer Grabbing 1", "Wii - Wii Remote Pointer Grabbing 2", "Wii - Wii Remote Pointer Grabbing 3", "Wii - Wii Remote Pointer Grabbing 4", "Wii - Wii Remote Pointer Open", "Wii - Wii Remote Pointer Open 1", "Wii - Wii Remote Pointer Open 2", "Wii - Wii Remote Pointer Open 3", "Wii - Wii Remote Pointer Open 4", "Wii - Inverted Question Mark", "Wii - Superscript er", "Wii - Superscript re", "Wii - Superscript e"})
+        Me.Select_spesymb_firstname.Location = New System.Drawing.Point(11, 1)
+        Me.Select_spesymb_firstname.Name = "Select_spesymb_firstname"
+        Me.Select_spesymb_firstname.Size = New System.Drawing.Size(178, 21)
+        Me.Select_spesymb_firstname.TabIndex = 0
+        '
+        'Addsymbol_pronun_nickname
+        '
+        Me.Addsymbol_pronun_nickname.BackColor = System.Drawing.Color.Transparent
+        Me.Addsymbol_pronun_nickname.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Addsymbol_pronun_nickname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
+        Me.Addsymbol_pronun_nickname.Location = New System.Drawing.Point(275, 262)
+        Me.Addsymbol_pronun_nickname.Name = "Addsymbol_pronun_nickname"
+        Me.Addsymbol_pronun_nickname.Size = New System.Drawing.Size(36, 25)
+        Me.Addsymbol_pronun_nickname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Addsymbol_pronun_nickname.TabIndex = 310
+        Me.Addsymbol_pronun_nickname.TabStop = False
+        Me.Addsymbol_pronun_nickname.Visible = False
+        '
+        'Addsymbol_nickname
+        '
+        Me.Addsymbol_nickname.BackColor = System.Drawing.Color.Transparent
+        Me.Addsymbol_nickname.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Addsymbol_nickname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
+        Me.Addsymbol_nickname.Location = New System.Drawing.Point(275, 237)
+        Me.Addsymbol_nickname.Name = "Addsymbol_nickname"
+        Me.Addsymbol_nickname.Size = New System.Drawing.Size(36, 25)
+        Me.Addsymbol_nickname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Addsymbol_nickname.TabIndex = 309
+        Me.Addsymbol_nickname.TabStop = False
+        Me.Addsymbol_nickname.Visible = False
+        '
+        'Addsymbol_pronun_firstname
+        '
+        Me.Addsymbol_pronun_firstname.BackColor = System.Drawing.Color.Transparent
+        Me.Addsymbol_pronun_firstname.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Addsymbol_pronun_firstname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
+        Me.Addsymbol_pronun_firstname.Location = New System.Drawing.Point(274, 190)
+        Me.Addsymbol_pronun_firstname.Name = "Addsymbol_pronun_firstname"
+        Me.Addsymbol_pronun_firstname.Size = New System.Drawing.Size(36, 25)
+        Me.Addsymbol_pronun_firstname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Addsymbol_pronun_firstname.TabIndex = 308
+        Me.Addsymbol_pronun_firstname.TabStop = False
+        Me.Addsymbol_pronun_firstname.Visible = False
+        '
+        'Addsymbol_firstname
+        '
+        Me.Addsymbol_firstname.BackColor = System.Drawing.Color.Transparent
+        Me.Addsymbol_firstname.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Addsymbol_firstname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
+        Me.Addsymbol_firstname.Location = New System.Drawing.Point(274, 165)
+        Me.Addsymbol_firstname.Name = "Addsymbol_firstname"
+        Me.Addsymbol_firstname.Size = New System.Drawing.Size(36, 25)
+        Me.Addsymbol_firstname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Addsymbol_firstname.TabIndex = 307
+        Me.Addsymbol_firstname.TabStop = False
+        Me.Addsymbol_firstname.Visible = False
+        '
+        'Addsymbol_pronun_lastname
+        '
+        Me.Addsymbol_pronun_lastname.BackColor = System.Drawing.Color.Transparent
+        Me.Addsymbol_pronun_lastname.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Addsymbol_pronun_lastname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
+        Me.Addsymbol_pronun_lastname.Location = New System.Drawing.Point(511, 190)
+        Me.Addsymbol_pronun_lastname.Name = "Addsymbol_pronun_lastname"
+        Me.Addsymbol_pronun_lastname.Size = New System.Drawing.Size(36, 25)
+        Me.Addsymbol_pronun_lastname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Addsymbol_pronun_lastname.TabIndex = 306
+        Me.Addsymbol_pronun_lastname.TabStop = False
+        Me.Addsymbol_pronun_lastname.Visible = False
+        '
+        'Addsymbol_lastname
+        '
+        Me.Addsymbol_lastname.BackColor = System.Drawing.Color.Transparent
+        Me.Addsymbol_lastname.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Addsymbol_lastname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.button_addspecarac
+        Me.Addsymbol_lastname.Location = New System.Drawing.Point(511, 165)
+        Me.Addsymbol_lastname.Name = "Addsymbol_lastname"
+        Me.Addsymbol_lastname.Size = New System.Drawing.Size(36, 25)
+        Me.Addsymbol_lastname.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Addsymbol_lastname.TabIndex = 305
+        Me.Addsymbol_lastname.TabStop = False
+        Me.Addsymbol_lastname.Visible = False
         '
         'Panel17
         '
         Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel17.Controls.Add(Me.Text_valuesharing)
         Me.Panel17.Controls.Add(Me.Select_sharing)
-        Me.Panel17.Location = New System.Drawing.Point(180, 116)
+        Me.Panel17.Location = New System.Drawing.Point(180, 111)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(118, 25)
         Me.Panel17.TabIndex = 304
@@ -7223,7 +8144,6 @@ Partial Class TL_SaveEditor
         '
         Me.Select_sharing.BackColor = System.Drawing.SystemColors.Window
         Me.Select_sharing.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_sharing.Enabled = False
         Me.Select_sharing.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_sharing.FormattingEnabled = True
         Me.Select_sharing.Items.AddRange(New Object() {"On", "Off"})
@@ -7232,23 +8152,23 @@ Partial Class TL_SaveEditor
         Me.Select_sharing.Size = New System.Drawing.Size(114, 21)
         Me.Select_sharing.TabIndex = 112
         '
-        'PictureBox22
+        'AdvH_nickname
         '
-        Me.PictureBox22.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox22.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox22.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.PictureBox22.Location = New System.Drawing.Point(252, 240)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(23, 22)
-        Me.PictureBox22.TabIndex = 303
-        Me.PictureBox22.TabStop = False
-        Me.PictureBox22.Visible = False
+        Me.AdvH_nickname.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_nickname.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_nickname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_nickname.Location = New System.Drawing.Point(252, 240)
+        Me.AdvH_nickname.Name = "AdvH_nickname"
+        Me.AdvH_nickname.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_nickname.TabIndex = 303
+        Me.AdvH_nickname.TabStop = False
+        Me.AdvH_nickname.Visible = False
         '
         'Text_datasharing
         '
         Me.Text_datasharing.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Text_datasharing.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.Text_datasharing.Location = New System.Drawing.Point(164, 122)
+        Me.Text_datasharing.Location = New System.Drawing.Point(164, 117)
         Me.Text_datasharing.Name = "Text_datasharing"
         Me.Text_datasharing.Size = New System.Drawing.Size(100, 13)
         Me.Text_datasharing.TabIndex = 261
@@ -7258,34 +8178,34 @@ Partial Class TL_SaveEditor
         'Icon_growkid
         '
         Me.Icon_growkid.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_kid
-        Me.Icon_growkid.Location = New System.Drawing.Point(141, 311)
+        Me.Icon_growkid.Location = New System.Drawing.Point(326, 311)
         Me.Icon_growkid.Name = "Icon_growkid"
         Me.Icon_growkid.Size = New System.Drawing.Size(28, 22)
         Me.Icon_growkid.TabIndex = 285
         Me.Icon_growkid.TabStop = False
         '
-        'PictureBox23
+        'AdvH_nicknamepronun
         '
-        Me.PictureBox23.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox23.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox23.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.PictureBox23.Location = New System.Drawing.Point(252, 262)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(23, 22)
-        Me.PictureBox23.TabIndex = 302
-        Me.PictureBox23.TabStop = False
-        Me.PictureBox23.Visible = False
+        Me.AdvH_nicknamepronun.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_nicknamepronun.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_nicknamepronun.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_nicknamepronun.Location = New System.Drawing.Point(252, 262)
+        Me.AdvH_nicknamepronun.Name = "AdvH_nicknamepronun"
+        Me.AdvH_nicknamepronun.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_nicknamepronun.TabIndex = 302
+        Me.AdvH_nicknamepronun.TabStop = False
+        Me.AdvH_nicknamepronun.Visible = False
         '
-        'Panel_edit_nickname
+        'Panel_edit_pronun_nickname
         '
-        Me.Panel_edit_nickname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_edit_nickname.Controls.Add(Me.Icon_valid_nickname)
-        Me.Panel_edit_nickname.Controls.Add(Me.Text_edit_nickname)
-        Me.Panel_edit_nickname.Location = New System.Drawing.Point(126, 264)
-        Me.Panel_edit_nickname.Name = "Panel_edit_nickname"
-        Me.Panel_edit_nickname.Size = New System.Drawing.Size(125, 17)
-        Me.Panel_edit_nickname.TabIndex = 301
-        Me.Panel_edit_nickname.Visible = False
+        Me.Panel_edit_pronun_nickname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_edit_pronun_nickname.Controls.Add(Me.Icon_valid_nickname)
+        Me.Panel_edit_pronun_nickname.Controls.Add(Me.Text_edit_pronun_nickname)
+        Me.Panel_edit_pronun_nickname.Location = New System.Drawing.Point(126, 264)
+        Me.Panel_edit_pronun_nickname.Name = "Panel_edit_pronun_nickname"
+        Me.Panel_edit_pronun_nickname.Size = New System.Drawing.Size(125, 17)
+        Me.Panel_edit_pronun_nickname.TabIndex = 301
+        Me.Panel_edit_pronun_nickname.Visible = False
         '
         'Icon_valid_nickname
         '
@@ -7299,15 +8219,15 @@ Partial Class TL_SaveEditor
         Me.Icon_valid_nickname.TabIndex = 8
         Me.Icon_valid_nickname.TabStop = False
         '
-        'Text_edit_nickname
+        'Text_edit_pronun_nickname
         '
-        Me.Text_edit_nickname.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_edit_nickname.Location = New System.Drawing.Point(2, 2)
-        Me.Text_edit_nickname.MaxLength = 20
-        Me.Text_edit_nickname.Name = "Text_edit_nickname"
-        Me.Text_edit_nickname.Size = New System.Drawing.Size(102, 13)
-        Me.Text_edit_nickname.TabIndex = 7
-        Me.Text_edit_nickname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_edit_pronun_nickname.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_edit_pronun_nickname.Location = New System.Drawing.Point(2, 2)
+        Me.Text_edit_pronun_nickname.MaxLength = 20
+        Me.Text_edit_pronun_nickname.Name = "Text_edit_pronun_nickname"
+        Me.Text_edit_pronun_nickname.Size = New System.Drawing.Size(102, 13)
+        Me.Text_edit_pronun_nickname.TabIndex = 7
+        Me.Text_edit_pronun_nickname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label4
         '
@@ -7325,7 +8245,7 @@ Partial Class TL_SaveEditor
         Me.Panel41.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel41.Controls.Add(Me.valu_copying)
         Me.Panel41.Controls.Add(Me.Select_copying)
-        Me.Panel41.Location = New System.Drawing.Point(344, 116)
+        Me.Panel41.Location = New System.Drawing.Point(344, 111)
         Me.Panel41.Name = "Panel41"
         Me.Panel41.Size = New System.Drawing.Size(118, 25)
         Me.Panel41.TabIndex = 299
@@ -7346,7 +8266,6 @@ Partial Class TL_SaveEditor
         '
         Me.Select_copying.BackColor = System.Drawing.SystemColors.Window
         Me.Select_copying.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_copying.Enabled = False
         Me.Select_copying.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_copying.FormattingEnabled = True
         Me.Select_copying.Items.AddRange(New Object() {"Don't allow", "Allow"})
@@ -7360,7 +8279,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_lastname.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_lastname.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_lastname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_lastname.Location = New System.Drawing.Point(459, 168)
+        Me.AdvH_lastname.Location = New System.Drawing.Point(488, 168)
         Me.AdvH_lastname.Name = "AdvH_lastname"
         Me.AdvH_lastname.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_lastname.TabIndex = 298
@@ -7372,7 +8291,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_lastnamepronun.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_lastnamepronun.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_lastnamepronun.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_lastnamepronun.Location = New System.Drawing.Point(459, 190)
+        Me.AdvH_lastnamepronun.Location = New System.Drawing.Point(488, 190)
         Me.AdvH_lastnamepronun.Name = "AdvH_lastnamepronun"
         Me.AdvH_lastnamepronun.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_lastnamepronun.TabIndex = 297
@@ -7408,7 +8327,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_grownkid.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_grownkid.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_grownkid.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_grownkid.Location = New System.Drawing.Point(276, 311)
+        Me.AdvH_grownkid.Location = New System.Drawing.Point(459, 311)
         Me.AdvH_grownkid.Name = "AdvH_grownkid"
         Me.AdvH_grownkid.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_grownkid.TabIndex = 294
@@ -7420,7 +8339,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_copying.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_copying.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_copying.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_copying.Location = New System.Drawing.Point(462, 117)
+        Me.AdvH_copying.Location = New System.Drawing.Point(462, 112)
         Me.AdvH_copying.Name = "AdvH_copying"
         Me.AdvH_copying.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_copying.TabIndex = 293
@@ -7432,7 +8351,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_sharing.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_sharing.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_sharing.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_sharing.Location = New System.Drawing.Point(298, 117)
+        Me.AdvH_sharing.Location = New System.Drawing.Point(298, 112)
         Me.AdvH_sharing.Name = "AdvH_sharing"
         Me.AdvH_sharing.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_sharing.TabIndex = 292
@@ -7444,7 +8363,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_favcolor.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_favcolor.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_favcolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_favcolor.Location = New System.Drawing.Point(412, 247)
+        Me.AdvH_favcolor.Location = New System.Drawing.Point(429, 245)
         Me.AdvH_favcolor.Name = "AdvH_favcolor"
         Me.AdvH_favcolor.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_favcolor.TabIndex = 291
@@ -7456,7 +8375,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_relarealtoyou.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_relarealtoyou.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_relarealtoyou.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_relarealtoyou.Location = New System.Drawing.Point(463, 311)
+        Me.AdvH_relarealtoyou.Location = New System.Drawing.Point(270, 383)
         Me.AdvH_relarealtoyou.Name = "AdvH_relarealtoyou"
         Me.AdvH_relarealtoyou.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_relarealtoyou.TabIndex = 290
@@ -7468,7 +8387,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_creator.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_creator.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_creator.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_creator.Location = New System.Drawing.Point(364, 376)
+        Me.AdvH_creator.Location = New System.Drawing.Point(442, 379)
         Me.AdvH_creator.Name = "AdvH_creator"
         Me.AdvH_creator.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_creator.TabIndex = 289
@@ -7478,7 +8397,7 @@ Partial Class TL_SaveEditor
         'valu_favcolor
         '
         Me.valu_favcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_favcolor.Location = New System.Drawing.Point(359, 253)
+        Me.valu_favcolor.Location = New System.Drawing.Point(376, 251)
         Me.valu_favcolor.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_favcolor.Name = "valu_favcolor"
         Me.valu_favcolor.Size = New System.Drawing.Size(37, 16)
@@ -7488,9 +8407,9 @@ Partial Class TL_SaveEditor
         '
         'Icon_favcolor
         '
-        Me.Icon_favcolor.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Icon_favcolor.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_favcolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.color
-        Me.Icon_favcolor.Location = New System.Drawing.Point(358, 243)
+        Me.Icon_favcolor.Location = New System.Drawing.Point(375, 243)
         Me.Icon_favcolor.Name = "Icon_favcolor"
         Me.Icon_favcolor.Size = New System.Drawing.Size(54, 26)
         Me.Icon_favcolor.TabIndex = 268
@@ -7500,7 +8419,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel18.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel18.Controls.Add(Me.Text_creator)
-        Me.Panel18.Location = New System.Drawing.Point(260, 379)
+        Me.Panel18.Location = New System.Drawing.Point(338, 382)
         Me.Panel18.Name = "Panel18"
         Me.Panel18.Size = New System.Drawing.Size(104, 17)
         Me.Panel18.TabIndex = 288
@@ -7522,7 +8441,7 @@ Partial Class TL_SaveEditor
         Me.Title_creator.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Title_creator.ImageIndex = 0
         Me.Title_creator.ImageList = Me.ImageList_Miiedit
-        Me.Title_creator.Location = New System.Drawing.Point(251, 360)
+        Me.Title_creator.Location = New System.Drawing.Point(329, 363)
         Me.Title_creator.Name = "Title_creator"
         Me.Title_creator.Size = New System.Drawing.Size(123, 16)
         Me.Title_creator.TabIndex = 287
@@ -7545,7 +8464,7 @@ Partial Class TL_SaveEditor
         Me.Panel20.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel20.Controls.Add(Me.valu_growkid)
         Me.Panel20.Controls.Add(Me.Select_growkid)
-        Me.Panel20.Location = New System.Drawing.Point(172, 310)
+        Me.Panel20.Location = New System.Drawing.Point(355, 310)
         Me.Panel20.Name = "Panel20"
         Me.Panel20.Size = New System.Drawing.Size(104, 25)
         Me.Panel20.TabIndex = 286
@@ -7577,7 +8496,7 @@ Partial Class TL_SaveEditor
         Me.Panel21.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel21.Controls.Add(Me.valu_relationyou)
         Me.Panel21.Controls.Add(Me.Select_relationyou)
-        Me.Panel21.Location = New System.Drawing.Point(345, 310)
+        Me.Panel21.Location = New System.Drawing.Point(152, 382)
         Me.Panel21.Name = "Panel21"
         Me.Panel21.Size = New System.Drawing.Size(118, 25)
         Me.Panel21.TabIndex = 285
@@ -7657,16 +8576,16 @@ Partial Class TL_SaveEditor
         Me.Text_pronun_nickname.TabIndex = 282
         Me.Text_pronun_nickname.Visible = False
         '
-        'Panel_edit_lastname
+        'Panel_edit_pronun_lastname
         '
-        Me.Panel_edit_lastname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_edit_lastname.Controls.Add(Me.Icon_valid_lastname)
-        Me.Panel_edit_lastname.Controls.Add(Me.Text_edit_lastname)
-        Me.Panel_edit_lastname.Location = New System.Drawing.Point(333, 192)
-        Me.Panel_edit_lastname.Name = "Panel_edit_lastname"
-        Me.Panel_edit_lastname.Size = New System.Drawing.Size(125, 17)
-        Me.Panel_edit_lastname.TabIndex = 280
-        Me.Panel_edit_lastname.Visible = False
+        Me.Panel_edit_pronun_lastname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_edit_pronun_lastname.Controls.Add(Me.Icon_valid_lastname)
+        Me.Panel_edit_pronun_lastname.Controls.Add(Me.Text_edit_pronun_lastname)
+        Me.Panel_edit_pronun_lastname.Location = New System.Drawing.Point(362, 192)
+        Me.Panel_edit_pronun_lastname.Name = "Panel_edit_pronun_lastname"
+        Me.Panel_edit_pronun_lastname.Size = New System.Drawing.Size(125, 17)
+        Me.Panel_edit_pronun_lastname.TabIndex = 280
+        Me.Panel_edit_pronun_lastname.Visible = False
         '
         'Icon_valid_lastname
         '
@@ -7680,22 +8599,22 @@ Partial Class TL_SaveEditor
         Me.Icon_valid_lastname.TabIndex = 8
         Me.Icon_valid_lastname.TabStop = False
         '
-        'Text_edit_lastname
+        'Text_edit_pronun_lastname
         '
-        Me.Text_edit_lastname.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_edit_lastname.Location = New System.Drawing.Point(2, 2)
-        Me.Text_edit_lastname.MaxLength = 30
-        Me.Text_edit_lastname.Name = "Text_edit_lastname"
-        Me.Text_edit_lastname.Size = New System.Drawing.Size(102, 13)
-        Me.Text_edit_lastname.TabIndex = 7
-        Me.Text_edit_lastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_edit_pronun_lastname.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_edit_pronun_lastname.Location = New System.Drawing.Point(2, 2)
+        Me.Text_edit_pronun_lastname.MaxLength = 30
+        Me.Text_edit_pronun_lastname.Name = "Text_edit_pronun_lastname"
+        Me.Text_edit_pronun_lastname.Size = New System.Drawing.Size(102, 13)
+        Me.Text_edit_pronun_lastname.TabIndex = 7
+        Me.Text_edit_pronun_lastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Icon_pronun_lastname
         '
         Me.Icon_pronun_lastname.BackColor = System.Drawing.Color.Transparent
         Me.Icon_pronun_lastname.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_pronun_lastname.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_pronunciation
-        Me.Icon_pronun_lastname.Location = New System.Drawing.Point(437, 168)
+        Me.Icon_pronun_lastname.Location = New System.Drawing.Point(466, 168)
         Me.Icon_pronun_lastname.Name = "Icon_pronun_lastname"
         Me.Icon_pronun_lastname.Size = New System.Drawing.Size(22, 22)
         Me.Icon_pronun_lastname.TabIndex = 279
@@ -7705,7 +8624,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel_lastname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel_lastname.Controls.Add(Me.Text_lastname)
-        Me.Panel_lastname.Location = New System.Drawing.Point(333, 171)
+        Me.Panel_lastname.Location = New System.Drawing.Point(362, 171)
         Me.Panel_lastname.Name = "Panel_lastname"
         Me.Panel_lastname.Size = New System.Drawing.Size(104, 17)
         Me.Panel_lastname.TabIndex = 278
@@ -7723,7 +8642,7 @@ Partial Class TL_SaveEditor
         'Title_lastname
         '
         Me.Title_lastname.BackColor = System.Drawing.Color.Transparent
-        Me.Title_lastname.Location = New System.Drawing.Point(333, 155)
+        Me.Title_lastname.Location = New System.Drawing.Point(362, 155)
         Me.Title_lastname.Name = "Title_lastname"
         Me.Title_lastname.Size = New System.Drawing.Size(104, 13)
         Me.Title_lastname.TabIndex = 276
@@ -7735,22 +8654,22 @@ Partial Class TL_SaveEditor
         Me.Text_pronun_lastname.AutoSize = True
         Me.Text_pronun_lastname.BackColor = System.Drawing.Color.White
         Me.Text_pronun_lastname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Text_pronun_lastname.Location = New System.Drawing.Point(344, 192)
+        Me.Text_pronun_lastname.Location = New System.Drawing.Point(362, 192)
         Me.Text_pronun_lastname.Name = "Text_pronun_lastname"
         Me.Text_pronun_lastname.Size = New System.Drawing.Size(2, 15)
         Me.Text_pronun_lastname.TabIndex = 277
         Me.Text_pronun_lastname.Visible = False
         '
-        'Panel_edit_firstname
+        'Panel_edit_pronun_firstname
         '
-        Me.Panel_edit_firstname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_edit_firstname.Controls.Add(Me.Icon_valid_firstname)
-        Me.Panel_edit_firstname.Controls.Add(Me.Text_edit_firstname)
-        Me.Panel_edit_firstname.Location = New System.Drawing.Point(125, 192)
-        Me.Panel_edit_firstname.Name = "Panel_edit_firstname"
-        Me.Panel_edit_firstname.Size = New System.Drawing.Size(125, 17)
-        Me.Panel_edit_firstname.TabIndex = 275
-        Me.Panel_edit_firstname.Visible = False
+        Me.Panel_edit_pronun_firstname.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_edit_pronun_firstname.Controls.Add(Me.Icon_valid_firstname)
+        Me.Panel_edit_pronun_firstname.Controls.Add(Me.Text_edit_pronun_firstname)
+        Me.Panel_edit_pronun_firstname.Location = New System.Drawing.Point(125, 192)
+        Me.Panel_edit_pronun_firstname.Name = "Panel_edit_pronun_firstname"
+        Me.Panel_edit_pronun_firstname.Size = New System.Drawing.Size(125, 17)
+        Me.Panel_edit_pronun_firstname.TabIndex = 275
+        Me.Panel_edit_pronun_firstname.Visible = False
         '
         'Icon_valid_firstname
         '
@@ -7764,15 +8683,15 @@ Partial Class TL_SaveEditor
         Me.Icon_valid_firstname.TabIndex = 8
         Me.Icon_valid_firstname.TabStop = False
         '
-        'Text_edit_firstname
+        'Text_edit_pronun_firstname
         '
-        Me.Text_edit_firstname.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_edit_firstname.Location = New System.Drawing.Point(2, 2)
-        Me.Text_edit_firstname.MaxLength = 30
-        Me.Text_edit_firstname.Name = "Text_edit_firstname"
-        Me.Text_edit_firstname.Size = New System.Drawing.Size(102, 13)
-        Me.Text_edit_firstname.TabIndex = 7
-        Me.Text_edit_firstname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_edit_pronun_firstname.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_edit_pronun_firstname.Location = New System.Drawing.Point(2, 2)
+        Me.Text_edit_pronun_firstname.MaxLength = 30
+        Me.Text_edit_pronun_firstname.Name = "Text_edit_pronun_firstname"
+        Me.Text_edit_pronun_firstname.Size = New System.Drawing.Size(102, 13)
+        Me.Text_edit_pronun_firstname.TabIndex = 7
+        Me.Text_edit_pronun_firstname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Icon_pronun_firstname
         '
@@ -7807,7 +8726,7 @@ Partial Class TL_SaveEditor
         'Icon_copying
         '
         Me.Icon_copying.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_copying
-        Me.Icon_copying.Location = New System.Drawing.Point(325, 95)
+        Me.Icon_copying.Location = New System.Drawing.Point(325, 90)
         Me.Icon_copying.Name = "Icon_copying"
         Me.Icon_copying.Size = New System.Drawing.Size(20, 20)
         Me.Icon_copying.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -7817,7 +8736,7 @@ Partial Class TL_SaveEditor
         'Icon_sharing
         '
         Me.Icon_sharing.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_sharing
-        Me.Icon_sharing.Location = New System.Drawing.Point(162, 95)
+        Me.Icon_sharing.Location = New System.Drawing.Point(162, 90)
         Me.Icon_sharing.Name = "Icon_sharing"
         Me.Icon_sharing.Size = New System.Drawing.Size(20, 20)
         Me.Icon_sharing.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -7826,7 +8745,7 @@ Partial Class TL_SaveEditor
         '
         'Title_relationyou
         '
-        Me.Title_relationyou.Location = New System.Drawing.Point(327, 294)
+        Me.Title_relationyou.Location = New System.Drawing.Point(134, 366)
         Me.Title_relationyou.Name = "Title_relationyou"
         Me.Title_relationyou.Size = New System.Drawing.Size(144, 13)
         Me.Title_relationyou.TabIndex = 269
@@ -7835,7 +8754,7 @@ Partial Class TL_SaveEditor
         '
         'Title_copying
         '
-        Me.Title_copying.Location = New System.Drawing.Point(345, 99)
+        Me.Title_copying.Location = New System.Drawing.Point(345, 94)
         Me.Title_copying.Name = "Title_copying"
         Me.Title_copying.Size = New System.Drawing.Size(118, 13)
         Me.Title_copying.TabIndex = 267
@@ -7844,7 +8763,7 @@ Partial Class TL_SaveEditor
         '
         'Title_sharing
         '
-        Me.Title_sharing.Location = New System.Drawing.Point(182, 99)
+        Me.Title_sharing.Location = New System.Drawing.Point(182, 94)
         Me.Title_sharing.Name = "Title_sharing"
         Me.Title_sharing.Size = New System.Drawing.Size(114, 13)
         Me.Title_sharing.TabIndex = 266
@@ -7853,7 +8772,7 @@ Partial Class TL_SaveEditor
         '
         'Title_growkid
         '
-        Me.Title_growkid.Location = New System.Drawing.Point(162, 294)
+        Me.Title_growkid.Location = New System.Drawing.Point(345, 294)
         Me.Title_growkid.Name = "Title_growkid"
         Me.Title_growkid.Size = New System.Drawing.Size(128, 13)
         Me.Title_growkid.TabIndex = 265
@@ -7862,7 +8781,7 @@ Partial Class TL_SaveEditor
         '
         'Title_favcolor
         '
-        Me.Title_favcolor.Location = New System.Drawing.Point(337, 227)
+        Me.Title_favcolor.Location = New System.Drawing.Point(354, 227)
         Me.Title_favcolor.Name = "Title_favcolor"
         Me.Title_favcolor.Size = New System.Drawing.Size(96, 13)
         Me.Title_favcolor.TabIndex = 264
@@ -7890,15 +8809,33 @@ Partial Class TL_SaveEditor
         Me.Text_pronun_firstname.TabIndex = 263
         Me.Text_pronun_firstname.Visible = False
         '
+        'Text_favcolor
+        '
+        Me.Text_favcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_favcolor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.Text_favcolor.Location = New System.Drawing.Point(353, 250)
+        Me.Text_favcolor.Name = "Text_favcolor"
+        Me.Text_favcolor.Size = New System.Drawing.Size(74, 13)
+        Me.Text_favcolor.TabIndex = 319
+        Me.Text_favcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_favcolor.Visible = False
+        '
         'TabPage3
         '
         Me.TabPage3.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
-        Me.TabPage3.Controls.Add(Me.Select_allfav_US1)
+        Me.TabPage3.Controls.Add(Me.Panel_edit_gifs)
+        Me.TabPage3.Controls.Add(Me.AdvH_gifts)
         Me.TabPage3.Controls.Add(Me.Panel_edit_fullness)
+        Me.TabPage3.Controls.Add(Me.Icon_arrowexp_maxright)
+        Me.TabPage3.Controls.Add(Me.Icon_arrowexp_maxleft)
+        Me.TabPage3.Controls.Add(Me.PictureBox12)
+        Me.TabPage3.Controls.Add(Me.CheckBox27)
+        Me.TabPage3.Controls.Add(Me.Icon_arrowexp_left)
+        Me.TabPage3.Controls.Add(Me.Icon_arrowexp_right)
+        Me.TabPage3.Controls.Add(Me.Select_allfav_US1)
         Me.TabPage3.Controls.Add(Me.AdvH_worst)
         Me.TabPage3.Controls.Add(Me.AdvH_fav)
         Me.TabPage3.Controls.Add(Me.AdvH_allfav)
-        Me.TabPage3.Controls.Add(Me.AdvH_gifs)
         Me.TabPage3.Controls.Add(Me.AdvH_fullness)
         Me.TabPage3.Controls.Add(Me.AdvH_experience)
         Me.TabPage3.Controls.Add(Me.AdvH_miilevel)
@@ -7937,7 +8874,6 @@ Partial Class TL_SaveEditor
         Me.TabPage3.Controls.Add(Me.valu_fullness)
         Me.TabPage3.Controls.Add(Me.Text_fullness)
         Me.TabPage3.Controls.Add(Me.Icon_fullness)
-        Me.TabPage3.Controls.Add(Me.valu_exp)
         Me.TabPage3.Controls.Add(Me.Select_allfav_2)
         Me.TabPage3.Controls.Add(Me.valu_allfav_2)
         Me.TabPage3.Controls.Add(Me.Select_fav_3)
@@ -7962,25 +8898,4022 @@ Partial Class TL_SaveEditor
         Me.TabPage3.ToolTipText = "Mii status"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
-        'Select_allfav_US1
+        'Panel_edit_gifs
         '
-        Me.Select_allfav_US1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_allfav_US1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_allfav_US1.FormattingEnabled = True
-        Me.Select_allfav_US1.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
-        Me.Select_allfav_US1.Location = New System.Drawing.Point(135, 93)
-        Me.Select_allfav_US1.Name = "Select_allfav_US1"
-        Me.Select_allfav_US1.Size = New System.Drawing.Size(167, 21)
-        Me.Select_allfav_US1.TabIndex = 312
+        Me.Panel_edit_gifs.BackColor = System.Drawing.Color.Azure
+        Me.Panel_edit_gifs.Controls.Add(Me.AdvH_editgifts)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0b00)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0800)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1b00)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0600)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1300)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0c00)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1900)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0a00)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1800)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_FFFF)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1700)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0900)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1600)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0700)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1500)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1200)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1a00)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0500)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1400)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0000)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1100)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0100)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_1000)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0200)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0f00)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0300)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0e00)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0400)
+        Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0d00)
+        Me.Panel_edit_gifs.Location = New System.Drawing.Point(436, 189)
+        Me.Panel_edit_gifs.Name = "Panel_edit_gifs"
+        Me.Panel_edit_gifs.Size = New System.Drawing.Size(160, 167)
+        Me.Panel_edit_gifs.TabIndex = 379
+        Me.Panel_edit_gifs.Visible = False
+        '
+        'AdvH_editgifts
+        '
+        Me.AdvH_editgifts.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_editgifts.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_editgifts.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_editgifts.Location = New System.Drawing.Point(133, 141)
+        Me.AdvH_editgifts.Name = "AdvH_editgifts"
+        Me.AdvH_editgifts.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_editgifts.TabIndex = 379
+        Me.AdvH_editgifts.TabStop = False
+        Me.AdvH_editgifts.Visible = False
+        '
+        'Panel_gifs_0b00
+        '
+        Me.Panel_gifs_0b00.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0b00
+        Me.Panel_gifs_0b00.Controls.Add(Me.Gifs8_0b00)
+        Me.Panel_gifs_0b00.Controls.Add(Me.Gifs7_0b00)
+        Me.Panel_gifs_0b00.Controls.Add(Me.Gifs6_0b00)
+        Me.Panel_gifs_0b00.Controls.Add(Me.Gifs5_0b00)
+        Me.Panel_gifs_0b00.Controls.Add(Me.Gifs4_0b00)
+        Me.Panel_gifs_0b00.Controls.Add(Me.Gifs3_0b00)
+        Me.Panel_gifs_0b00.Controls.Add(Me.Gifs2_0b00)
+        Me.Panel_gifs_0b00.Controls.Add(Me.Gifs1_0b00)
+        Me.Panel_gifs_0b00.Location = New System.Drawing.Point(65, 56)
+        Me.Panel_gifs_0b00.Name = "Panel_gifs_0b00"
+        Me.Panel_gifs_0b00.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0b00.TabIndex = 358
+        '
+        'Gifs8_0b00
+        '
+        Me.Gifs8_0b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0b00.ImageKey = "(aucun)"
+        Me.Gifs8_0b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0b00.Name = "Gifs8_0b00"
+        Me.Gifs8_0b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0b00.TabIndex = 12
+        Me.Gifs8_0b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0b00.Visible = False
+        '
+        'Gifs7_0b00
+        '
+        Me.Gifs7_0b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0b00.ImageKey = "(aucun)"
+        Me.Gifs7_0b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0b00.Name = "Gifs7_0b00"
+        Me.Gifs7_0b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0b00.TabIndex = 11
+        Me.Gifs7_0b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0b00.Visible = False
+        '
+        'Gifs6_0b00
+        '
+        Me.Gifs6_0b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0b00.ImageKey = "(aucun)"
+        Me.Gifs6_0b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0b00.Name = "Gifs6_0b00"
+        Me.Gifs6_0b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0b00.TabIndex = 10
+        Me.Gifs6_0b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0b00.Visible = False
+        '
+        'Gifs5_0b00
+        '
+        Me.Gifs5_0b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0b00.ImageKey = "(aucun)"
+        Me.Gifs5_0b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0b00.Name = "Gifs5_0b00"
+        Me.Gifs5_0b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0b00.TabIndex = 9
+        Me.Gifs5_0b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0b00.Visible = False
+        '
+        'Gifs4_0b00
+        '
+        Me.Gifs4_0b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0b00.ImageKey = "(aucun)"
+        Me.Gifs4_0b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0b00.Name = "Gifs4_0b00"
+        Me.Gifs4_0b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0b00.TabIndex = 8
+        Me.Gifs4_0b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0b00.Visible = False
+        '
+        'Gifs3_0b00
+        '
+        Me.Gifs3_0b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0b00.ImageKey = "(aucun)"
+        Me.Gifs3_0b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0b00.Name = "Gifs3_0b00"
+        Me.Gifs3_0b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0b00.TabIndex = 7
+        Me.Gifs3_0b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0b00.Visible = False
+        '
+        'Gifs2_0b00
+        '
+        Me.Gifs2_0b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0b00.ImageKey = "(aucun)"
+        Me.Gifs2_0b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0b00.Name = "Gifs2_0b00"
+        Me.Gifs2_0b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0b00.TabIndex = 6
+        Me.Gifs2_0b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0b00.Visible = False
+        '
+        'Gifs1_0b00
+        '
+        Me.Gifs1_0b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0b00.ImageKey = "(aucun)"
+        Me.Gifs1_0b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0b00.Name = "Gifs1_0b00"
+        Me.Gifs1_0b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0b00.TabIndex = 5
+        Me.Gifs1_0b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0b00.Visible = False
+        '
+        'Panel_gifs_0800
+        '
+        Me.Panel_gifs_0800.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0800
+        Me.Panel_gifs_0800.Controls.Add(Me.Gifs8_0800)
+        Me.Panel_gifs_0800.Controls.Add(Me.Gifs7_0800)
+        Me.Panel_gifs_0800.Controls.Add(Me.Gifs6_0800)
+        Me.Panel_gifs_0800.Controls.Add(Me.Gifs5_0800)
+        Me.Panel_gifs_0800.Controls.Add(Me.Gifs4_0800)
+        Me.Panel_gifs_0800.Controls.Add(Me.Gifs3_0800)
+        Me.Panel_gifs_0800.Controls.Add(Me.Gifs2_0800)
+        Me.Panel_gifs_0800.Controls.Add(Me.Gifs1_0800)
+        Me.Panel_gifs_0800.Location = New System.Drawing.Point(127, 29)
+        Me.Panel_gifs_0800.Name = "Panel_gifs_0800"
+        Me.Panel_gifs_0800.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0800.TabIndex = 350
+        '
+        'Gifs8_0800
+        '
+        Me.Gifs8_0800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0800.ImageKey = "(aucun)"
+        Me.Gifs8_0800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0800.Name = "Gifs8_0800"
+        Me.Gifs8_0800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0800.TabIndex = 12
+        Me.Gifs8_0800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0800.Visible = False
+        '
+        'Gifs7_0800
+        '
+        Me.Gifs7_0800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0800.ImageKey = "(aucun)"
+        Me.Gifs7_0800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0800.Name = "Gifs7_0800"
+        Me.Gifs7_0800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0800.TabIndex = 11
+        Me.Gifs7_0800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0800.Visible = False
+        '
+        'Gifs6_0800
+        '
+        Me.Gifs6_0800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0800.ImageKey = "(aucun)"
+        Me.Gifs6_0800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0800.Name = "Gifs6_0800"
+        Me.Gifs6_0800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0800.TabIndex = 10
+        Me.Gifs6_0800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0800.Visible = False
+        '
+        'Gifs5_0800
+        '
+        Me.Gifs5_0800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0800.ImageKey = "(aucun)"
+        Me.Gifs5_0800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0800.Name = "Gifs5_0800"
+        Me.Gifs5_0800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0800.TabIndex = 9
+        Me.Gifs5_0800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0800.Visible = False
+        '
+        'Gifs4_0800
+        '
+        Me.Gifs4_0800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0800.ImageKey = "(aucun)"
+        Me.Gifs4_0800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0800.Name = "Gifs4_0800"
+        Me.Gifs4_0800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0800.TabIndex = 8
+        Me.Gifs4_0800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0800.Visible = False
+        '
+        'Gifs3_0800
+        '
+        Me.Gifs3_0800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0800.ImageKey = "(aucun)"
+        Me.Gifs3_0800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0800.Name = "Gifs3_0800"
+        Me.Gifs3_0800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0800.TabIndex = 7
+        Me.Gifs3_0800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0800.Visible = False
+        '
+        'Gifs2_0800
+        '
+        Me.Gifs2_0800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0800.ImageKey = "(aucun)"
+        Me.Gifs2_0800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0800.Name = "Gifs2_0800"
+        Me.Gifs2_0800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0800.TabIndex = 6
+        Me.Gifs2_0800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0800.Visible = False
+        '
+        'Gifs1_0800
+        '
+        Me.Gifs1_0800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0800.ImageKey = "(aucun)"
+        Me.Gifs1_0800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0800.Name = "Gifs1_0800"
+        Me.Gifs1_0800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0800.TabIndex = 5
+        Me.Gifs1_0800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0800.Visible = False
+        '
+        'Panel_gifs_1b00
+        '
+        Me.Panel_gifs_1b00.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1b00
+        Me.Panel_gifs_1b00.Controls.Add(Me.Gifs8_1b00)
+        Me.Panel_gifs_1b00.Controls.Add(Me.Gifs7_1b00)
+        Me.Panel_gifs_1b00.Controls.Add(Me.Gifs6_1b00)
+        Me.Panel_gifs_1b00.Controls.Add(Me.Gifs5_1b00)
+        Me.Panel_gifs_1b00.Controls.Add(Me.Gifs4_1b00)
+        Me.Panel_gifs_1b00.Controls.Add(Me.Gifs3_1b00)
+        Me.Panel_gifs_1b00.Controls.Add(Me.Gifs2_1b00)
+        Me.Panel_gifs_1b00.Controls.Add(Me.Gifs1_1b00)
+        Me.Panel_gifs_1b00.Location = New System.Drawing.Point(96, 137)
+        Me.Panel_gifs_1b00.Name = "Panel_gifs_1b00"
+        Me.Panel_gifs_1b00.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1b00.TabIndex = 378
+        '
+        'Gifs8_1b00
+        '
+        Me.Gifs8_1b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1b00.ImageKey = "(aucun)"
+        Me.Gifs8_1b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1b00.Name = "Gifs8_1b00"
+        Me.Gifs8_1b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1b00.TabIndex = 12
+        Me.Gifs8_1b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1b00.Visible = False
+        '
+        'Gifs7_1b00
+        '
+        Me.Gifs7_1b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1b00.ImageKey = "(aucun)"
+        Me.Gifs7_1b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1b00.Name = "Gifs7_1b00"
+        Me.Gifs7_1b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1b00.TabIndex = 11
+        Me.Gifs7_1b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1b00.Visible = False
+        '
+        'Gifs6_1b00
+        '
+        Me.Gifs6_1b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1b00.ImageKey = "(aucun)"
+        Me.Gifs6_1b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1b00.Name = "Gifs6_1b00"
+        Me.Gifs6_1b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1b00.TabIndex = 10
+        Me.Gifs6_1b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1b00.Visible = False
+        '
+        'Gifs5_1b00
+        '
+        Me.Gifs5_1b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1b00.ImageKey = "(aucun)"
+        Me.Gifs5_1b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1b00.Name = "Gifs5_1b00"
+        Me.Gifs5_1b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1b00.TabIndex = 9
+        Me.Gifs5_1b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1b00.Visible = False
+        '
+        'Gifs4_1b00
+        '
+        Me.Gifs4_1b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1b00.ImageKey = "(aucun)"
+        Me.Gifs4_1b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1b00.Name = "Gifs4_1b00"
+        Me.Gifs4_1b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1b00.TabIndex = 8
+        Me.Gifs4_1b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1b00.Visible = False
+        '
+        'Gifs3_1b00
+        '
+        Me.Gifs3_1b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1b00.ImageKey = "(aucun)"
+        Me.Gifs3_1b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1b00.Name = "Gifs3_1b00"
+        Me.Gifs3_1b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1b00.TabIndex = 7
+        Me.Gifs3_1b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1b00.Visible = False
+        '
+        'Gifs2_1b00
+        '
+        Me.Gifs2_1b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1b00.ImageKey = "(aucun)"
+        Me.Gifs2_1b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1b00.Name = "Gifs2_1b00"
+        Me.Gifs2_1b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1b00.TabIndex = 6
+        Me.Gifs2_1b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1b00.Visible = False
+        '
+        'Gifs1_1b00
+        '
+        Me.Gifs1_1b00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1b00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1b00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1b00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1b00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1b00.ImageKey = "(aucun)"
+        Me.Gifs1_1b00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1b00.Name = "Gifs1_1b00"
+        Me.Gifs1_1b00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1b00.TabIndex = 5
+        Me.Gifs1_1b00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1b00.Visible = False
+        '
+        'Panel_gifs_0600
+        '
+        Me.Panel_gifs_0600.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0600
+        Me.Panel_gifs_0600.Controls.Add(Me.Gifs8_0600)
+        Me.Panel_gifs_0600.Controls.Add(Me.Gifs7_0600)
+        Me.Panel_gifs_0600.Controls.Add(Me.Gifs6_0600)
+        Me.Panel_gifs_0600.Controls.Add(Me.Gifs5_0600)
+        Me.Panel_gifs_0600.Controls.Add(Me.Gifs4_0600)
+        Me.Panel_gifs_0600.Controls.Add(Me.Gifs3_0600)
+        Me.Panel_gifs_0600.Controls.Add(Me.Gifs2_0600)
+        Me.Panel_gifs_0600.Controls.Add(Me.Gifs1_0600)
+        Me.Panel_gifs_0600.Location = New System.Drawing.Point(65, 29)
+        Me.Panel_gifs_0600.Name = "Panel_gifs_0600"
+        Me.Panel_gifs_0600.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0600.TabIndex = 351
+        '
+        'Gifs8_0600
+        '
+        Me.Gifs8_0600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0600.ImageKey = "(aucun)"
+        Me.Gifs8_0600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0600.Name = "Gifs8_0600"
+        Me.Gifs8_0600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0600.TabIndex = 12
+        Me.Gifs8_0600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0600.Visible = False
+        '
+        'Gifs7_0600
+        '
+        Me.Gifs7_0600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0600.ImageKey = "(aucun)"
+        Me.Gifs7_0600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0600.Name = "Gifs7_0600"
+        Me.Gifs7_0600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0600.TabIndex = 11
+        Me.Gifs7_0600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0600.Visible = False
+        '
+        'Gifs6_0600
+        '
+        Me.Gifs6_0600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0600.ImageKey = "(aucun)"
+        Me.Gifs6_0600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0600.Name = "Gifs6_0600"
+        Me.Gifs6_0600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0600.TabIndex = 10
+        Me.Gifs6_0600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0600.Visible = False
+        '
+        'Gifs5_0600
+        '
+        Me.Gifs5_0600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0600.ImageKey = "(aucun)"
+        Me.Gifs5_0600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0600.Name = "Gifs5_0600"
+        Me.Gifs5_0600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0600.TabIndex = 9
+        Me.Gifs5_0600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0600.Visible = False
+        '
+        'Gifs4_0600
+        '
+        Me.Gifs4_0600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0600.ImageKey = "(aucun)"
+        Me.Gifs4_0600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0600.Name = "Gifs4_0600"
+        Me.Gifs4_0600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0600.TabIndex = 8
+        Me.Gifs4_0600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0600.Visible = False
+        '
+        'Gifs3_0600
+        '
+        Me.Gifs3_0600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0600.ImageKey = "(aucun)"
+        Me.Gifs3_0600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0600.Name = "Gifs3_0600"
+        Me.Gifs3_0600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0600.TabIndex = 7
+        Me.Gifs3_0600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0600.Visible = False
+        '
+        'Gifs2_0600
+        '
+        Me.Gifs2_0600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0600.ImageKey = "(aucun)"
+        Me.Gifs2_0600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0600.Name = "Gifs2_0600"
+        Me.Gifs2_0600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0600.TabIndex = 6
+        Me.Gifs2_0600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0600.Visible = False
+        '
+        'Gifs1_0600
+        '
+        Me.Gifs1_0600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0600.ImageKey = "(aucun)"
+        Me.Gifs1_0600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0600.Name = "Gifs1_0600"
+        Me.Gifs1_0600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0600.TabIndex = 5
+        Me.Gifs1_0600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0600.Visible = False
+        '
+        'Panel_gifs_1300
+        '
+        Me.Panel_gifs_1300.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1300
+        Me.Panel_gifs_1300.Controls.Add(Me.Gifs8_1300)
+        Me.Panel_gifs_1300.Controls.Add(Me.Gifs7_1300)
+        Me.Panel_gifs_1300.Controls.Add(Me.Gifs6_1300)
+        Me.Panel_gifs_1300.Controls.Add(Me.Gifs5_1300)
+        Me.Panel_gifs_1300.Controls.Add(Me.Gifs4_1300)
+        Me.Panel_gifs_1300.Controls.Add(Me.Gifs3_1300)
+        Me.Panel_gifs_1300.Controls.Add(Me.Gifs2_1300)
+        Me.Panel_gifs_1300.Controls.Add(Me.Gifs1_1300)
+        Me.Panel_gifs_1300.Location = New System.Drawing.Point(3, 110)
+        Me.Panel_gifs_1300.Name = "Panel_gifs_1300"
+        Me.Panel_gifs_1300.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1300.TabIndex = 377
+        '
+        'Gifs8_1300
+        '
+        Me.Gifs8_1300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1300.ImageKey = "(aucun)"
+        Me.Gifs8_1300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1300.Name = "Gifs8_1300"
+        Me.Gifs8_1300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1300.TabIndex = 12
+        Me.Gifs8_1300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1300.Visible = False
+        '
+        'Gifs7_1300
+        '
+        Me.Gifs7_1300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1300.ImageKey = "(aucun)"
+        Me.Gifs7_1300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1300.Name = "Gifs7_1300"
+        Me.Gifs7_1300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1300.TabIndex = 11
+        Me.Gifs7_1300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1300.Visible = False
+        '
+        'Gifs6_1300
+        '
+        Me.Gifs6_1300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1300.ImageKey = "(aucun)"
+        Me.Gifs6_1300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1300.Name = "Gifs6_1300"
+        Me.Gifs6_1300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1300.TabIndex = 10
+        Me.Gifs6_1300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1300.Visible = False
+        '
+        'Gifs5_1300
+        '
+        Me.Gifs5_1300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1300.ImageKey = "(aucun)"
+        Me.Gifs5_1300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1300.Name = "Gifs5_1300"
+        Me.Gifs5_1300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1300.TabIndex = 9
+        Me.Gifs5_1300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1300.Visible = False
+        '
+        'Gifs4_1300
+        '
+        Me.Gifs4_1300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1300.ImageKey = "(aucun)"
+        Me.Gifs4_1300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1300.Name = "Gifs4_1300"
+        Me.Gifs4_1300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1300.TabIndex = 8
+        Me.Gifs4_1300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1300.Visible = False
+        '
+        'Gifs3_1300
+        '
+        Me.Gifs3_1300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1300.ImageKey = "(aucun)"
+        Me.Gifs3_1300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1300.Name = "Gifs3_1300"
+        Me.Gifs3_1300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1300.TabIndex = 7
+        Me.Gifs3_1300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1300.Visible = False
+        '
+        'Gifs2_1300
+        '
+        Me.Gifs2_1300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1300.ImageKey = "(aucun)"
+        Me.Gifs2_1300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1300.Name = "Gifs2_1300"
+        Me.Gifs2_1300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1300.TabIndex = 6
+        Me.Gifs2_1300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1300.Visible = False
+        '
+        'Gifs1_1300
+        '
+        Me.Gifs1_1300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1300.ImageKey = "(aucun)"
+        Me.Gifs1_1300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1300.Name = "Gifs1_1300"
+        Me.Gifs1_1300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1300.TabIndex = 5
+        Me.Gifs1_1300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1300.Visible = False
+        '
+        'Panel_gifs_0c00
+        '
+        Me.Panel_gifs_0c00.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0c00
+        Me.Panel_gifs_0c00.Controls.Add(Me.Gifs8_0c00)
+        Me.Panel_gifs_0c00.Controls.Add(Me.Gifs7_0c00)
+        Me.Panel_gifs_0c00.Controls.Add(Me.Gifs6_0c00)
+        Me.Panel_gifs_0c00.Controls.Add(Me.Gifs5_0c00)
+        Me.Panel_gifs_0c00.Controls.Add(Me.Gifs4_0c00)
+        Me.Panel_gifs_0c00.Controls.Add(Me.Gifs3_0c00)
+        Me.Panel_gifs_0c00.Controls.Add(Me.Gifs2_0c00)
+        Me.Panel_gifs_0c00.Controls.Add(Me.Gifs1_0c00)
+        Me.Panel_gifs_0c00.Location = New System.Drawing.Point(96, 56)
+        Me.Panel_gifs_0c00.Name = "Panel_gifs_0c00"
+        Me.Panel_gifs_0c00.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0c00.TabIndex = 352
+        '
+        'Gifs8_0c00
+        '
+        Me.Gifs8_0c00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0c00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0c00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0c00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0c00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0c00.ImageKey = "(aucun)"
+        Me.Gifs8_0c00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0c00.Name = "Gifs8_0c00"
+        Me.Gifs8_0c00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0c00.TabIndex = 12
+        Me.Gifs8_0c00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0c00.Visible = False
+        '
+        'Gifs7_0c00
+        '
+        Me.Gifs7_0c00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0c00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0c00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0c00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0c00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0c00.ImageKey = "(aucun)"
+        Me.Gifs7_0c00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0c00.Name = "Gifs7_0c00"
+        Me.Gifs7_0c00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0c00.TabIndex = 11
+        Me.Gifs7_0c00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0c00.Visible = False
+        '
+        'Gifs6_0c00
+        '
+        Me.Gifs6_0c00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0c00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0c00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0c00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0c00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0c00.ImageKey = "(aucun)"
+        Me.Gifs6_0c00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0c00.Name = "Gifs6_0c00"
+        Me.Gifs6_0c00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0c00.TabIndex = 10
+        Me.Gifs6_0c00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0c00.Visible = False
+        '
+        'Gifs5_0c00
+        '
+        Me.Gifs5_0c00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0c00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0c00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0c00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0c00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0c00.ImageKey = "(aucun)"
+        Me.Gifs5_0c00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0c00.Name = "Gifs5_0c00"
+        Me.Gifs5_0c00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0c00.TabIndex = 9
+        Me.Gifs5_0c00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0c00.Visible = False
+        '
+        'Gifs4_0c00
+        '
+        Me.Gifs4_0c00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0c00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0c00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0c00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0c00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0c00.ImageKey = "(aucun)"
+        Me.Gifs4_0c00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0c00.Name = "Gifs4_0c00"
+        Me.Gifs4_0c00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0c00.TabIndex = 8
+        Me.Gifs4_0c00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0c00.Visible = False
+        '
+        'Gifs3_0c00
+        '
+        Me.Gifs3_0c00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0c00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0c00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0c00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0c00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0c00.ImageKey = "(aucun)"
+        Me.Gifs3_0c00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0c00.Name = "Gifs3_0c00"
+        Me.Gifs3_0c00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0c00.TabIndex = 7
+        Me.Gifs3_0c00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0c00.Visible = False
+        '
+        'Gifs2_0c00
+        '
+        Me.Gifs2_0c00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0c00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0c00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0c00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0c00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0c00.ImageKey = "(aucun)"
+        Me.Gifs2_0c00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0c00.Name = "Gifs2_0c00"
+        Me.Gifs2_0c00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0c00.TabIndex = 6
+        Me.Gifs2_0c00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0c00.Visible = False
+        '
+        'Gifs1_0c00
+        '
+        Me.Gifs1_0c00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0c00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0c00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0c00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0c00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0c00.ImageKey = "(aucun)"
+        Me.Gifs1_0c00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0c00.Name = "Gifs1_0c00"
+        Me.Gifs1_0c00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0c00.TabIndex = 5
+        Me.Gifs1_0c00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0c00.Visible = False
+        '
+        'Panel_gifs_1900
+        '
+        Me.Panel_gifs_1900.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1900
+        Me.Panel_gifs_1900.Controls.Add(Me.Gifs8_1900)
+        Me.Panel_gifs_1900.Controls.Add(Me.Gifs7_1900)
+        Me.Panel_gifs_1900.Controls.Add(Me.Gifs6_1900)
+        Me.Panel_gifs_1900.Controls.Add(Me.Gifs5_1900)
+        Me.Panel_gifs_1900.Controls.Add(Me.Gifs4_1900)
+        Me.Panel_gifs_1900.Controls.Add(Me.Gifs3_1900)
+        Me.Panel_gifs_1900.Controls.Add(Me.Gifs2_1900)
+        Me.Panel_gifs_1900.Controls.Add(Me.Gifs1_1900)
+        Me.Panel_gifs_1900.Location = New System.Drawing.Point(34, 137)
+        Me.Panel_gifs_1900.Name = "Panel_gifs_1900"
+        Me.Panel_gifs_1900.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1900.TabIndex = 376
+        '
+        'Gifs8_1900
+        '
+        Me.Gifs8_1900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1900.ImageKey = "(aucun)"
+        Me.Gifs8_1900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1900.Name = "Gifs8_1900"
+        Me.Gifs8_1900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1900.TabIndex = 12
+        Me.Gifs8_1900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1900.Visible = False
+        '
+        'Gifs7_1900
+        '
+        Me.Gifs7_1900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1900.ImageKey = "(aucun)"
+        Me.Gifs7_1900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1900.Name = "Gifs7_1900"
+        Me.Gifs7_1900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1900.TabIndex = 11
+        Me.Gifs7_1900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1900.Visible = False
+        '
+        'Gifs6_1900
+        '
+        Me.Gifs6_1900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1900.ImageKey = "(aucun)"
+        Me.Gifs6_1900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1900.Name = "Gifs6_1900"
+        Me.Gifs6_1900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1900.TabIndex = 10
+        Me.Gifs6_1900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1900.Visible = False
+        '
+        'Gifs5_1900
+        '
+        Me.Gifs5_1900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1900.ImageKey = "(aucun)"
+        Me.Gifs5_1900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1900.Name = "Gifs5_1900"
+        Me.Gifs5_1900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1900.TabIndex = 9
+        Me.Gifs5_1900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1900.Visible = False
+        '
+        'Gifs4_1900
+        '
+        Me.Gifs4_1900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1900.ImageKey = "(aucun)"
+        Me.Gifs4_1900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1900.Name = "Gifs4_1900"
+        Me.Gifs4_1900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1900.TabIndex = 8
+        Me.Gifs4_1900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1900.Visible = False
+        '
+        'Gifs3_1900
+        '
+        Me.Gifs3_1900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1900.ImageKey = "(aucun)"
+        Me.Gifs3_1900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1900.Name = "Gifs3_1900"
+        Me.Gifs3_1900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1900.TabIndex = 7
+        Me.Gifs3_1900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1900.Visible = False
+        '
+        'Gifs2_1900
+        '
+        Me.Gifs2_1900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1900.ImageKey = "(aucun)"
+        Me.Gifs2_1900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1900.Name = "Gifs2_1900"
+        Me.Gifs2_1900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1900.TabIndex = 6
+        Me.Gifs2_1900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1900.Visible = False
+        '
+        'Gifs1_1900
+        '
+        Me.Gifs1_1900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1900.ImageKey = "(aucun)"
+        Me.Gifs1_1900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1900.Name = "Gifs1_1900"
+        Me.Gifs1_1900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1900.TabIndex = 5
+        Me.Gifs1_1900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1900.Visible = False
+        '
+        'Panel_gifs_0a00
+        '
+        Me.Panel_gifs_0a00.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0a00
+        Me.Panel_gifs_0a00.Controls.Add(Me.Gifs8_0a00)
+        Me.Panel_gifs_0a00.Controls.Add(Me.Gifs7_0a00)
+        Me.Panel_gifs_0a00.Controls.Add(Me.Gifs6_0a00)
+        Me.Panel_gifs_0a00.Controls.Add(Me.Gifs5_0a00)
+        Me.Panel_gifs_0a00.Controls.Add(Me.Gifs4_0a00)
+        Me.Panel_gifs_0a00.Controls.Add(Me.Gifs3_0a00)
+        Me.Panel_gifs_0a00.Controls.Add(Me.Gifs2_0a00)
+        Me.Panel_gifs_0a00.Controls.Add(Me.Gifs1_0a00)
+        Me.Panel_gifs_0a00.Location = New System.Drawing.Point(34, 56)
+        Me.Panel_gifs_0a00.Name = "Panel_gifs_0a00"
+        Me.Panel_gifs_0a00.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0a00.TabIndex = 353
+        '
+        'Gifs8_0a00
+        '
+        Me.Gifs8_0a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0a00.ImageKey = "(aucun)"
+        Me.Gifs8_0a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0a00.Name = "Gifs8_0a00"
+        Me.Gifs8_0a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0a00.TabIndex = 12
+        Me.Gifs8_0a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0a00.Visible = False
+        '
+        'Gifs7_0a00
+        '
+        Me.Gifs7_0a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0a00.ImageKey = "(aucun)"
+        Me.Gifs7_0a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0a00.Name = "Gifs7_0a00"
+        Me.Gifs7_0a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0a00.TabIndex = 11
+        Me.Gifs7_0a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0a00.Visible = False
+        '
+        'Gifs6_0a00
+        '
+        Me.Gifs6_0a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0a00.ImageKey = "(aucun)"
+        Me.Gifs6_0a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0a00.Name = "Gifs6_0a00"
+        Me.Gifs6_0a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0a00.TabIndex = 10
+        Me.Gifs6_0a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0a00.Visible = False
+        '
+        'Gifs5_0a00
+        '
+        Me.Gifs5_0a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0a00.ImageKey = "(aucun)"
+        Me.Gifs5_0a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0a00.Name = "Gifs5_0a00"
+        Me.Gifs5_0a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0a00.TabIndex = 9
+        Me.Gifs5_0a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0a00.Visible = False
+        '
+        'Gifs4_0a00
+        '
+        Me.Gifs4_0a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0a00.ImageKey = "(aucun)"
+        Me.Gifs4_0a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0a00.Name = "Gifs4_0a00"
+        Me.Gifs4_0a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0a00.TabIndex = 8
+        Me.Gifs4_0a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0a00.Visible = False
+        '
+        'Gifs3_0a00
+        '
+        Me.Gifs3_0a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0a00.ImageKey = "(aucun)"
+        Me.Gifs3_0a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0a00.Name = "Gifs3_0a00"
+        Me.Gifs3_0a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0a00.TabIndex = 7
+        Me.Gifs3_0a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0a00.Visible = False
+        '
+        'Gifs2_0a00
+        '
+        Me.Gifs2_0a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0a00.ImageKey = "(aucun)"
+        Me.Gifs2_0a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0a00.Name = "Gifs2_0a00"
+        Me.Gifs2_0a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0a00.TabIndex = 6
+        Me.Gifs2_0a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0a00.Visible = False
+        '
+        'Gifs1_0a00
+        '
+        Me.Gifs1_0a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0a00.ImageKey = "(aucun)"
+        Me.Gifs1_0a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0a00.Name = "Gifs1_0a00"
+        Me.Gifs1_0a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0a00.TabIndex = 5
+        Me.Gifs1_0a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0a00.Visible = False
+        '
+        'Panel_gifs_1800
+        '
+        Me.Panel_gifs_1800.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1800
+        Me.Panel_gifs_1800.Controls.Add(Me.Gifs8_1800)
+        Me.Panel_gifs_1800.Controls.Add(Me.Gifs7_1800)
+        Me.Panel_gifs_1800.Controls.Add(Me.Gifs6_1800)
+        Me.Panel_gifs_1800.Controls.Add(Me.Gifs5_1800)
+        Me.Panel_gifs_1800.Controls.Add(Me.Gifs4_1800)
+        Me.Panel_gifs_1800.Controls.Add(Me.Gifs3_1800)
+        Me.Panel_gifs_1800.Controls.Add(Me.Gifs2_1800)
+        Me.Panel_gifs_1800.Controls.Add(Me.Gifs1_1800)
+        Me.Panel_gifs_1800.Location = New System.Drawing.Point(3, 137)
+        Me.Panel_gifs_1800.Name = "Panel_gifs_1800"
+        Me.Panel_gifs_1800.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1800.TabIndex = 375
+        '
+        'Gifs8_1800
+        '
+        Me.Gifs8_1800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1800.ImageKey = "(aucun)"
+        Me.Gifs8_1800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1800.Name = "Gifs8_1800"
+        Me.Gifs8_1800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1800.TabIndex = 12
+        Me.Gifs8_1800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1800.Visible = False
+        '
+        'Gifs7_1800
+        '
+        Me.Gifs7_1800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1800.ImageKey = "(aucun)"
+        Me.Gifs7_1800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1800.Name = "Gifs7_1800"
+        Me.Gifs7_1800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1800.TabIndex = 11
+        Me.Gifs7_1800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1800.Visible = False
+        '
+        'Gifs6_1800
+        '
+        Me.Gifs6_1800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1800.ImageKey = "(aucun)"
+        Me.Gifs6_1800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1800.Name = "Gifs6_1800"
+        Me.Gifs6_1800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1800.TabIndex = 10
+        Me.Gifs6_1800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1800.Visible = False
+        '
+        'Gifs5_1800
+        '
+        Me.Gifs5_1800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1800.ImageKey = "(aucun)"
+        Me.Gifs5_1800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1800.Name = "Gifs5_1800"
+        Me.Gifs5_1800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1800.TabIndex = 9
+        Me.Gifs5_1800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1800.Visible = False
+        '
+        'Gifs4_1800
+        '
+        Me.Gifs4_1800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1800.ImageKey = "(aucun)"
+        Me.Gifs4_1800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1800.Name = "Gifs4_1800"
+        Me.Gifs4_1800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1800.TabIndex = 8
+        Me.Gifs4_1800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1800.Visible = False
+        '
+        'Gifs3_1800
+        '
+        Me.Gifs3_1800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1800.ImageKey = "(aucun)"
+        Me.Gifs3_1800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1800.Name = "Gifs3_1800"
+        Me.Gifs3_1800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1800.TabIndex = 7
+        Me.Gifs3_1800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1800.Visible = False
+        '
+        'Gifs2_1800
+        '
+        Me.Gifs2_1800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1800.ImageKey = "(aucun)"
+        Me.Gifs2_1800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1800.Name = "Gifs2_1800"
+        Me.Gifs2_1800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1800.TabIndex = 6
+        Me.Gifs2_1800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1800.Visible = False
+        '
+        'Gifs1_1800
+        '
+        Me.Gifs1_1800.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1800.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1800.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1800.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1800.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1800.ImageKey = "(aucun)"
+        Me.Gifs1_1800.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1800.Name = "Gifs1_1800"
+        Me.Gifs1_1800.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1800.TabIndex = 5
+        Me.Gifs1_1800.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1800.Visible = False
+        '
+        'Panel_gifs_FFFF
+        '
+        Me.Panel_gifs_FFFF.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_FFFF
+        Me.Panel_gifs_FFFF.Controls.Add(Me.Gifs8_FFFF)
+        Me.Panel_gifs_FFFF.Controls.Add(Me.Gifs7_FFFF)
+        Me.Panel_gifs_FFFF.Controls.Add(Me.Gifs6_FFFF)
+        Me.Panel_gifs_FFFF.Controls.Add(Me.Gifs5_FFFF)
+        Me.Panel_gifs_FFFF.Controls.Add(Me.Gifs4_FFFF)
+        Me.Panel_gifs_FFFF.Controls.Add(Me.Gifs3_FFFF)
+        Me.Panel_gifs_FFFF.Controls.Add(Me.Gifs2_FFFF)
+        Me.Panel_gifs_FFFF.Controls.Add(Me.Gifs1_FFFF)
+        Me.Panel_gifs_FFFF.Location = New System.Drawing.Point(3, 2)
+        Me.Panel_gifs_FFFF.Name = "Panel_gifs_FFFF"
+        Me.Panel_gifs_FFFF.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_FFFF.TabIndex = 354
+        '
+        'Gifs8_FFFF
+        '
+        Me.Gifs8_FFFF.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_FFFF.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_FFFF.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_FFFF.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_FFFF.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_FFFF.ImageKey = "(aucun)"
+        Me.Gifs8_FFFF.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_FFFF.Name = "Gifs8_FFFF"
+        Me.Gifs8_FFFF.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_FFFF.TabIndex = 10
+        Me.Gifs8_FFFF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_FFFF.Visible = False
+        '
+        'Gifs7_FFFF
+        '
+        Me.Gifs7_FFFF.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_FFFF.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_FFFF.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_FFFF.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_FFFF.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_FFFF.ImageKey = "(aucun)"
+        Me.Gifs7_FFFF.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_FFFF.Name = "Gifs7_FFFF"
+        Me.Gifs7_FFFF.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_FFFF.TabIndex = 9
+        Me.Gifs7_FFFF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_FFFF.Visible = False
+        '
+        'Gifs6_FFFF
+        '
+        Me.Gifs6_FFFF.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_FFFF.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_FFFF.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_FFFF.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_FFFF.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_FFFF.ImageKey = "(aucun)"
+        Me.Gifs6_FFFF.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_FFFF.Name = "Gifs6_FFFF"
+        Me.Gifs6_FFFF.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_FFFF.TabIndex = 8
+        Me.Gifs6_FFFF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_FFFF.Visible = False
+        '
+        'Gifs5_FFFF
+        '
+        Me.Gifs5_FFFF.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_FFFF.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_FFFF.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_FFFF.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_FFFF.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_FFFF.ImageKey = "(aucun)"
+        Me.Gifs5_FFFF.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_FFFF.Name = "Gifs5_FFFF"
+        Me.Gifs5_FFFF.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_FFFF.TabIndex = 7
+        Me.Gifs5_FFFF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_FFFF.Visible = False
+        '
+        'Gifs4_FFFF
+        '
+        Me.Gifs4_FFFF.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_FFFF.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_FFFF.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_FFFF.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_FFFF.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_FFFF.ImageKey = "(aucun)"
+        Me.Gifs4_FFFF.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_FFFF.Name = "Gifs4_FFFF"
+        Me.Gifs4_FFFF.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_FFFF.TabIndex = 6
+        Me.Gifs4_FFFF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_FFFF.Visible = False
+        '
+        'Gifs3_FFFF
+        '
+        Me.Gifs3_FFFF.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_FFFF.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_FFFF.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_FFFF.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_FFFF.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_FFFF.ImageKey = "(aucun)"
+        Me.Gifs3_FFFF.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_FFFF.Name = "Gifs3_FFFF"
+        Me.Gifs3_FFFF.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_FFFF.TabIndex = 5
+        Me.Gifs3_FFFF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_FFFF.Visible = False
+        '
+        'Gifs2_FFFF
+        '
+        Me.Gifs2_FFFF.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_FFFF.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_FFFF.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_FFFF.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_FFFF.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_FFFF.ImageKey = "(aucun)"
+        Me.Gifs2_FFFF.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_FFFF.Name = "Gifs2_FFFF"
+        Me.Gifs2_FFFF.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_FFFF.TabIndex = 4
+        Me.Gifs2_FFFF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_FFFF.Visible = False
+        '
+        'Gifs1_FFFF
+        '
+        Me.Gifs1_FFFF.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_FFFF.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_FFFF.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_FFFF.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_FFFF.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_FFFF.ImageKey = "(aucun)"
+        Me.Gifs1_FFFF.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_FFFF.Name = "Gifs1_FFFF"
+        Me.Gifs1_FFFF.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_FFFF.TabIndex = 3
+        Me.Gifs1_FFFF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_FFFF.Visible = False
+        '
+        'Panel_gifs_1700
+        '
+        Me.Panel_gifs_1700.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1700
+        Me.Panel_gifs_1700.Controls.Add(Me.Gifs8_1700)
+        Me.Panel_gifs_1700.Controls.Add(Me.Gifs7_1700)
+        Me.Panel_gifs_1700.Controls.Add(Me.Gifs6_1700)
+        Me.Panel_gifs_1700.Controls.Add(Me.Gifs5_1700)
+        Me.Panel_gifs_1700.Controls.Add(Me.Gifs4_1700)
+        Me.Panel_gifs_1700.Controls.Add(Me.Gifs3_1700)
+        Me.Panel_gifs_1700.Controls.Add(Me.Gifs2_1700)
+        Me.Panel_gifs_1700.Controls.Add(Me.Gifs1_1700)
+        Me.Panel_gifs_1700.Location = New System.Drawing.Point(127, 110)
+        Me.Panel_gifs_1700.Name = "Panel_gifs_1700"
+        Me.Panel_gifs_1700.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1700.TabIndex = 374
+        '
+        'Gifs8_1700
+        '
+        Me.Gifs8_1700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1700.ImageKey = "(aucun)"
+        Me.Gifs8_1700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1700.Name = "Gifs8_1700"
+        Me.Gifs8_1700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1700.TabIndex = 12
+        Me.Gifs8_1700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1700.Visible = False
+        '
+        'Gifs7_1700
+        '
+        Me.Gifs7_1700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1700.ImageKey = "(aucun)"
+        Me.Gifs7_1700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1700.Name = "Gifs7_1700"
+        Me.Gifs7_1700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1700.TabIndex = 11
+        Me.Gifs7_1700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1700.Visible = False
+        '
+        'Gifs6_1700
+        '
+        Me.Gifs6_1700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1700.ImageKey = "(aucun)"
+        Me.Gifs6_1700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1700.Name = "Gifs6_1700"
+        Me.Gifs6_1700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1700.TabIndex = 10
+        Me.Gifs6_1700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1700.Visible = False
+        '
+        'Gifs5_1700
+        '
+        Me.Gifs5_1700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1700.ImageKey = "(aucun)"
+        Me.Gifs5_1700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1700.Name = "Gifs5_1700"
+        Me.Gifs5_1700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1700.TabIndex = 9
+        Me.Gifs5_1700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1700.Visible = False
+        '
+        'Gifs4_1700
+        '
+        Me.Gifs4_1700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1700.ImageKey = "(aucun)"
+        Me.Gifs4_1700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1700.Name = "Gifs4_1700"
+        Me.Gifs4_1700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1700.TabIndex = 8
+        Me.Gifs4_1700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1700.Visible = False
+        '
+        'Gifs3_1700
+        '
+        Me.Gifs3_1700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1700.ImageKey = "(aucun)"
+        Me.Gifs3_1700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1700.Name = "Gifs3_1700"
+        Me.Gifs3_1700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1700.TabIndex = 7
+        Me.Gifs3_1700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1700.Visible = False
+        '
+        'Gifs2_1700
+        '
+        Me.Gifs2_1700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1700.ImageKey = "(aucun)"
+        Me.Gifs2_1700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1700.Name = "Gifs2_1700"
+        Me.Gifs2_1700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1700.TabIndex = 6
+        Me.Gifs2_1700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1700.Visible = False
+        '
+        'Gifs1_1700
+        '
+        Me.Gifs1_1700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1700.ImageKey = "(aucun)"
+        Me.Gifs1_1700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1700.Name = "Gifs1_1700"
+        Me.Gifs1_1700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1700.TabIndex = 5
+        Me.Gifs1_1700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1700.Visible = False
+        '
+        'Panel_gifs_0900
+        '
+        Me.Panel_gifs_0900.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0900
+        Me.Panel_gifs_0900.Controls.Add(Me.Gifs8_0900)
+        Me.Panel_gifs_0900.Controls.Add(Me.Gifs7_0900)
+        Me.Panel_gifs_0900.Controls.Add(Me.Gifs6_0900)
+        Me.Panel_gifs_0900.Controls.Add(Me.Gifs5_0900)
+        Me.Panel_gifs_0900.Controls.Add(Me.Gifs4_0900)
+        Me.Panel_gifs_0900.Controls.Add(Me.Gifs3_0900)
+        Me.Panel_gifs_0900.Controls.Add(Me.Gifs2_0900)
+        Me.Panel_gifs_0900.Controls.Add(Me.Gifs1_0900)
+        Me.Panel_gifs_0900.Location = New System.Drawing.Point(3, 56)
+        Me.Panel_gifs_0900.Name = "Panel_gifs_0900"
+        Me.Panel_gifs_0900.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0900.TabIndex = 355
+        '
+        'Gifs8_0900
+        '
+        Me.Gifs8_0900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0900.ImageKey = "(aucun)"
+        Me.Gifs8_0900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0900.Name = "Gifs8_0900"
+        Me.Gifs8_0900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0900.TabIndex = 12
+        Me.Gifs8_0900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0900.Visible = False
+        '
+        'Gifs7_0900
+        '
+        Me.Gifs7_0900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0900.ImageKey = "(aucun)"
+        Me.Gifs7_0900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0900.Name = "Gifs7_0900"
+        Me.Gifs7_0900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0900.TabIndex = 11
+        Me.Gifs7_0900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0900.Visible = False
+        '
+        'Gifs6_0900
+        '
+        Me.Gifs6_0900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0900.ImageKey = "(aucun)"
+        Me.Gifs6_0900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0900.Name = "Gifs6_0900"
+        Me.Gifs6_0900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0900.TabIndex = 10
+        Me.Gifs6_0900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0900.Visible = False
+        '
+        'Gifs5_0900
+        '
+        Me.Gifs5_0900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0900.ImageKey = "(aucun)"
+        Me.Gifs5_0900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0900.Name = "Gifs5_0900"
+        Me.Gifs5_0900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0900.TabIndex = 9
+        Me.Gifs5_0900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0900.Visible = False
+        '
+        'Gifs4_0900
+        '
+        Me.Gifs4_0900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0900.ImageKey = "(aucun)"
+        Me.Gifs4_0900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0900.Name = "Gifs4_0900"
+        Me.Gifs4_0900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0900.TabIndex = 8
+        Me.Gifs4_0900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0900.Visible = False
+        '
+        'Gifs3_0900
+        '
+        Me.Gifs3_0900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0900.ImageKey = "(aucun)"
+        Me.Gifs3_0900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0900.Name = "Gifs3_0900"
+        Me.Gifs3_0900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0900.TabIndex = 7
+        Me.Gifs3_0900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0900.Visible = False
+        '
+        'Gifs2_0900
+        '
+        Me.Gifs2_0900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0900.ImageKey = "(aucun)"
+        Me.Gifs2_0900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0900.Name = "Gifs2_0900"
+        Me.Gifs2_0900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0900.TabIndex = 6
+        Me.Gifs2_0900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0900.Visible = False
+        '
+        'Gifs1_0900
+        '
+        Me.Gifs1_0900.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0900.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0900.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0900.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0900.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0900.ImageKey = "(aucun)"
+        Me.Gifs1_0900.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0900.Name = "Gifs1_0900"
+        Me.Gifs1_0900.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0900.TabIndex = 5
+        Me.Gifs1_0900.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0900.Visible = False
+        '
+        'Panel_gifs_1600
+        '
+        Me.Panel_gifs_1600.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1600
+        Me.Panel_gifs_1600.Controls.Add(Me.Gifs8_1600)
+        Me.Panel_gifs_1600.Controls.Add(Me.Gifs7_1600)
+        Me.Panel_gifs_1600.Controls.Add(Me.Gifs6_1600)
+        Me.Panel_gifs_1600.Controls.Add(Me.Gifs5_1600)
+        Me.Panel_gifs_1600.Controls.Add(Me.Gifs4_1600)
+        Me.Panel_gifs_1600.Controls.Add(Me.Gifs3_1600)
+        Me.Panel_gifs_1600.Controls.Add(Me.Gifs2_1600)
+        Me.Panel_gifs_1600.Controls.Add(Me.Gifs1_1600)
+        Me.Panel_gifs_1600.Location = New System.Drawing.Point(96, 110)
+        Me.Panel_gifs_1600.Name = "Panel_gifs_1600"
+        Me.Panel_gifs_1600.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1600.TabIndex = 373
+        '
+        'Gifs8_1600
+        '
+        Me.Gifs8_1600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1600.ImageKey = "(aucun)"
+        Me.Gifs8_1600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1600.Name = "Gifs8_1600"
+        Me.Gifs8_1600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1600.TabIndex = 12
+        Me.Gifs8_1600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1600.Visible = False
+        '
+        'Gifs7_1600
+        '
+        Me.Gifs7_1600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1600.ImageKey = "(aucun)"
+        Me.Gifs7_1600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1600.Name = "Gifs7_1600"
+        Me.Gifs7_1600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1600.TabIndex = 11
+        Me.Gifs7_1600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1600.Visible = False
+        '
+        'Gifs6_1600
+        '
+        Me.Gifs6_1600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1600.ImageKey = "(aucun)"
+        Me.Gifs6_1600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1600.Name = "Gifs6_1600"
+        Me.Gifs6_1600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1600.TabIndex = 10
+        Me.Gifs6_1600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1600.Visible = False
+        '
+        'Gifs5_1600
+        '
+        Me.Gifs5_1600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1600.ImageKey = "(aucun)"
+        Me.Gifs5_1600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1600.Name = "Gifs5_1600"
+        Me.Gifs5_1600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1600.TabIndex = 9
+        Me.Gifs5_1600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1600.Visible = False
+        '
+        'Gifs4_1600
+        '
+        Me.Gifs4_1600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1600.ImageKey = "(aucun)"
+        Me.Gifs4_1600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1600.Name = "Gifs4_1600"
+        Me.Gifs4_1600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1600.TabIndex = 8
+        Me.Gifs4_1600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1600.Visible = False
+        '
+        'Gifs3_1600
+        '
+        Me.Gifs3_1600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1600.ImageKey = "(aucun)"
+        Me.Gifs3_1600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1600.Name = "Gifs3_1600"
+        Me.Gifs3_1600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1600.TabIndex = 7
+        Me.Gifs3_1600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1600.Visible = False
+        '
+        'Gifs2_1600
+        '
+        Me.Gifs2_1600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1600.ImageKey = "(aucun)"
+        Me.Gifs2_1600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1600.Name = "Gifs2_1600"
+        Me.Gifs2_1600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1600.TabIndex = 6
+        Me.Gifs2_1600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1600.Visible = False
+        '
+        'Gifs1_1600
+        '
+        Me.Gifs1_1600.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1600.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1600.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1600.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1600.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1600.ImageKey = "(aucun)"
+        Me.Gifs1_1600.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1600.Name = "Gifs1_1600"
+        Me.Gifs1_1600.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1600.TabIndex = 5
+        Me.Gifs1_1600.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1600.Visible = False
+        '
+        'Panel_gifs_0700
+        '
+        Me.Panel_gifs_0700.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0700
+        Me.Panel_gifs_0700.Controls.Add(Me.Gifs8_0700)
+        Me.Panel_gifs_0700.Controls.Add(Me.Gifs7_0700)
+        Me.Panel_gifs_0700.Controls.Add(Me.Gifs6_0700)
+        Me.Panel_gifs_0700.Controls.Add(Me.Gifs5_0700)
+        Me.Panel_gifs_0700.Controls.Add(Me.Gifs4_0700)
+        Me.Panel_gifs_0700.Controls.Add(Me.Gifs3_0700)
+        Me.Panel_gifs_0700.Controls.Add(Me.Gifs2_0700)
+        Me.Panel_gifs_0700.Controls.Add(Me.Gifs1_0700)
+        Me.Panel_gifs_0700.Location = New System.Drawing.Point(96, 29)
+        Me.Panel_gifs_0700.Name = "Panel_gifs_0700"
+        Me.Panel_gifs_0700.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0700.TabIndex = 356
+        '
+        'Gifs8_0700
+        '
+        Me.Gifs8_0700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0700.ImageKey = "(aucun)"
+        Me.Gifs8_0700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0700.Name = "Gifs8_0700"
+        Me.Gifs8_0700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0700.TabIndex = 12
+        Me.Gifs8_0700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0700.Visible = False
+        '
+        'Gifs7_0700
+        '
+        Me.Gifs7_0700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0700.ImageKey = "(aucun)"
+        Me.Gifs7_0700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0700.Name = "Gifs7_0700"
+        Me.Gifs7_0700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0700.TabIndex = 11
+        Me.Gifs7_0700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0700.Visible = False
+        '
+        'Gifs6_0700
+        '
+        Me.Gifs6_0700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0700.ImageKey = "(aucun)"
+        Me.Gifs6_0700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0700.Name = "Gifs6_0700"
+        Me.Gifs6_0700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0700.TabIndex = 10
+        Me.Gifs6_0700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0700.Visible = False
+        '
+        'Gifs5_0700
+        '
+        Me.Gifs5_0700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0700.ImageKey = "(aucun)"
+        Me.Gifs5_0700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0700.Name = "Gifs5_0700"
+        Me.Gifs5_0700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0700.TabIndex = 9
+        Me.Gifs5_0700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0700.Visible = False
+        '
+        'Gifs4_0700
+        '
+        Me.Gifs4_0700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0700.ImageKey = "(aucun)"
+        Me.Gifs4_0700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0700.Name = "Gifs4_0700"
+        Me.Gifs4_0700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0700.TabIndex = 8
+        Me.Gifs4_0700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0700.Visible = False
+        '
+        'Gifs3_0700
+        '
+        Me.Gifs3_0700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0700.ImageKey = "(aucun)"
+        Me.Gifs3_0700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0700.Name = "Gifs3_0700"
+        Me.Gifs3_0700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0700.TabIndex = 7
+        Me.Gifs3_0700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0700.Visible = False
+        '
+        'Gifs2_0700
+        '
+        Me.Gifs2_0700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0700.ImageKey = "(aucun)"
+        Me.Gifs2_0700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0700.Name = "Gifs2_0700"
+        Me.Gifs2_0700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0700.TabIndex = 6
+        Me.Gifs2_0700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0700.Visible = False
+        '
+        'Gifs1_0700
+        '
+        Me.Gifs1_0700.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0700.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0700.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0700.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0700.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0700.ImageKey = "(aucun)"
+        Me.Gifs1_0700.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0700.Name = "Gifs1_0700"
+        Me.Gifs1_0700.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0700.TabIndex = 5
+        Me.Gifs1_0700.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0700.Visible = False
+        '
+        'Panel_gifs_1500
+        '
+        Me.Panel_gifs_1500.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1500
+        Me.Panel_gifs_1500.Controls.Add(Me.Gifs8_1500)
+        Me.Panel_gifs_1500.Controls.Add(Me.Gifs7_1500)
+        Me.Panel_gifs_1500.Controls.Add(Me.Gifs6_1500)
+        Me.Panel_gifs_1500.Controls.Add(Me.Gifs5_1500)
+        Me.Panel_gifs_1500.Controls.Add(Me.Gifs4_1500)
+        Me.Panel_gifs_1500.Controls.Add(Me.Gifs3_1500)
+        Me.Panel_gifs_1500.Controls.Add(Me.Gifs2_1500)
+        Me.Panel_gifs_1500.Controls.Add(Me.Gifs1_1500)
+        Me.Panel_gifs_1500.Location = New System.Drawing.Point(65, 110)
+        Me.Panel_gifs_1500.Name = "Panel_gifs_1500"
+        Me.Panel_gifs_1500.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1500.TabIndex = 372
+        '
+        'Gifs8_1500
+        '
+        Me.Gifs8_1500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1500.ImageKey = "(aucun)"
+        Me.Gifs8_1500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1500.Name = "Gifs8_1500"
+        Me.Gifs8_1500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1500.TabIndex = 12
+        Me.Gifs8_1500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1500.Visible = False
+        '
+        'Gifs7_1500
+        '
+        Me.Gifs7_1500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1500.ImageKey = "(aucun)"
+        Me.Gifs7_1500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1500.Name = "Gifs7_1500"
+        Me.Gifs7_1500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1500.TabIndex = 11
+        Me.Gifs7_1500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1500.Visible = False
+        '
+        'Gifs6_1500
+        '
+        Me.Gifs6_1500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1500.ImageKey = "(aucun)"
+        Me.Gifs6_1500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1500.Name = "Gifs6_1500"
+        Me.Gifs6_1500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1500.TabIndex = 10
+        Me.Gifs6_1500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1500.Visible = False
+        '
+        'Gifs5_1500
+        '
+        Me.Gifs5_1500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1500.ImageKey = "(aucun)"
+        Me.Gifs5_1500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1500.Name = "Gifs5_1500"
+        Me.Gifs5_1500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1500.TabIndex = 9
+        Me.Gifs5_1500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1500.Visible = False
+        '
+        'Gifs4_1500
+        '
+        Me.Gifs4_1500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1500.ImageKey = "(aucun)"
+        Me.Gifs4_1500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1500.Name = "Gifs4_1500"
+        Me.Gifs4_1500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1500.TabIndex = 8
+        Me.Gifs4_1500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1500.Visible = False
+        '
+        'Gifs3_1500
+        '
+        Me.Gifs3_1500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1500.ImageKey = "(aucun)"
+        Me.Gifs3_1500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1500.Name = "Gifs3_1500"
+        Me.Gifs3_1500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1500.TabIndex = 7
+        Me.Gifs3_1500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1500.Visible = False
+        '
+        'Gifs2_1500
+        '
+        Me.Gifs2_1500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1500.ImageKey = "(aucun)"
+        Me.Gifs2_1500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1500.Name = "Gifs2_1500"
+        Me.Gifs2_1500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1500.TabIndex = 6
+        Me.Gifs2_1500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1500.Visible = False
+        '
+        'Gifs1_1500
+        '
+        Me.Gifs1_1500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1500.ImageKey = "(aucun)"
+        Me.Gifs1_1500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1500.Name = "Gifs1_1500"
+        Me.Gifs1_1500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1500.TabIndex = 5
+        Me.Gifs1_1500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1500.Visible = False
+        '
+        'Panel_gifs_1200
+        '
+        Me.Panel_gifs_1200.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1200
+        Me.Panel_gifs_1200.Controls.Add(Me.Gifs8_1200)
+        Me.Panel_gifs_1200.Controls.Add(Me.Gifs7_1200)
+        Me.Panel_gifs_1200.Controls.Add(Me.Gifs6_1200)
+        Me.Panel_gifs_1200.Controls.Add(Me.Gifs5_1200)
+        Me.Panel_gifs_1200.Controls.Add(Me.Gifs4_1200)
+        Me.Panel_gifs_1200.Controls.Add(Me.Gifs3_1200)
+        Me.Panel_gifs_1200.Controls.Add(Me.Gifs2_1200)
+        Me.Panel_gifs_1200.Controls.Add(Me.Gifs1_1200)
+        Me.Panel_gifs_1200.Location = New System.Drawing.Point(127, 83)
+        Me.Panel_gifs_1200.Name = "Panel_gifs_1200"
+        Me.Panel_gifs_1200.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1200.TabIndex = 357
+        '
+        'Gifs8_1200
+        '
+        Me.Gifs8_1200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1200.ImageKey = "(aucun)"
+        Me.Gifs8_1200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1200.Name = "Gifs8_1200"
+        Me.Gifs8_1200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1200.TabIndex = 12
+        Me.Gifs8_1200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1200.Visible = False
+        '
+        'Gifs7_1200
+        '
+        Me.Gifs7_1200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1200.ImageKey = "(aucun)"
+        Me.Gifs7_1200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1200.Name = "Gifs7_1200"
+        Me.Gifs7_1200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1200.TabIndex = 11
+        Me.Gifs7_1200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1200.Visible = False
+        '
+        'Gifs6_1200
+        '
+        Me.Gifs6_1200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1200.ImageKey = "(aucun)"
+        Me.Gifs6_1200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1200.Name = "Gifs6_1200"
+        Me.Gifs6_1200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1200.TabIndex = 10
+        Me.Gifs6_1200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1200.Visible = False
+        '
+        'Gifs5_1200
+        '
+        Me.Gifs5_1200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1200.ImageKey = "(aucun)"
+        Me.Gifs5_1200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1200.Name = "Gifs5_1200"
+        Me.Gifs5_1200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1200.TabIndex = 9
+        Me.Gifs5_1200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1200.Visible = False
+        '
+        'Gifs4_1200
+        '
+        Me.Gifs4_1200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1200.ImageKey = "(aucun)"
+        Me.Gifs4_1200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1200.Name = "Gifs4_1200"
+        Me.Gifs4_1200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1200.TabIndex = 8
+        Me.Gifs4_1200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1200.Visible = False
+        '
+        'Gifs3_1200
+        '
+        Me.Gifs3_1200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1200.ImageKey = "(aucun)"
+        Me.Gifs3_1200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1200.Name = "Gifs3_1200"
+        Me.Gifs3_1200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1200.TabIndex = 7
+        Me.Gifs3_1200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1200.Visible = False
+        '
+        'Gifs2_1200
+        '
+        Me.Gifs2_1200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1200.ImageKey = "(aucun)"
+        Me.Gifs2_1200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1200.Name = "Gifs2_1200"
+        Me.Gifs2_1200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1200.TabIndex = 6
+        Me.Gifs2_1200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1200.Visible = False
+        '
+        'Gifs1_1200
+        '
+        Me.Gifs1_1200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1200.ImageKey = "(aucun)"
+        Me.Gifs1_1200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1200.Name = "Gifs1_1200"
+        Me.Gifs1_1200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1200.TabIndex = 5
+        Me.Gifs1_1200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1200.Visible = False
+        '
+        'Panel_gifs_1a00
+        '
+        Me.Panel_gifs_1a00.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1a00
+        Me.Panel_gifs_1a00.Controls.Add(Me.Gifs8_1a00)
+        Me.Panel_gifs_1a00.Controls.Add(Me.Gifs7_1a00)
+        Me.Panel_gifs_1a00.Controls.Add(Me.Gifs6_1a00)
+        Me.Panel_gifs_1a00.Controls.Add(Me.Gifs5_1a00)
+        Me.Panel_gifs_1a00.Controls.Add(Me.Gifs4_1a00)
+        Me.Panel_gifs_1a00.Controls.Add(Me.Gifs3_1a00)
+        Me.Panel_gifs_1a00.Controls.Add(Me.Gifs2_1a00)
+        Me.Panel_gifs_1a00.Controls.Add(Me.Gifs1_1a00)
+        Me.Panel_gifs_1a00.Location = New System.Drawing.Point(65, 137)
+        Me.Panel_gifs_1a00.Name = "Panel_gifs_1a00"
+        Me.Panel_gifs_1a00.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1a00.TabIndex = 371
+        '
+        'Gifs8_1a00
+        '
+        Me.Gifs8_1a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1a00.ImageKey = "(aucun)"
+        Me.Gifs8_1a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1a00.Name = "Gifs8_1a00"
+        Me.Gifs8_1a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1a00.TabIndex = 12
+        Me.Gifs8_1a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1a00.Visible = False
+        '
+        'Gifs7_1a00
+        '
+        Me.Gifs7_1a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1a00.ImageKey = "(aucun)"
+        Me.Gifs7_1a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1a00.Name = "Gifs7_1a00"
+        Me.Gifs7_1a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1a00.TabIndex = 11
+        Me.Gifs7_1a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1a00.Visible = False
+        '
+        'Gifs6_1a00
+        '
+        Me.Gifs6_1a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1a00.ImageKey = "(aucun)"
+        Me.Gifs6_1a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1a00.Name = "Gifs6_1a00"
+        Me.Gifs6_1a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1a00.TabIndex = 10
+        Me.Gifs6_1a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1a00.Visible = False
+        '
+        'Gifs5_1a00
+        '
+        Me.Gifs5_1a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1a00.ImageKey = "(aucun)"
+        Me.Gifs5_1a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1a00.Name = "Gifs5_1a00"
+        Me.Gifs5_1a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1a00.TabIndex = 9
+        Me.Gifs5_1a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1a00.Visible = False
+        '
+        'Gifs4_1a00
+        '
+        Me.Gifs4_1a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1a00.ImageKey = "(aucun)"
+        Me.Gifs4_1a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1a00.Name = "Gifs4_1a00"
+        Me.Gifs4_1a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1a00.TabIndex = 8
+        Me.Gifs4_1a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1a00.Visible = False
+        '
+        'Gifs3_1a00
+        '
+        Me.Gifs3_1a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1a00.ImageKey = "(aucun)"
+        Me.Gifs3_1a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1a00.Name = "Gifs3_1a00"
+        Me.Gifs3_1a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1a00.TabIndex = 7
+        Me.Gifs3_1a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1a00.Visible = False
+        '
+        'Gifs2_1a00
+        '
+        Me.Gifs2_1a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1a00.ImageKey = "(aucun)"
+        Me.Gifs2_1a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1a00.Name = "Gifs2_1a00"
+        Me.Gifs2_1a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1a00.TabIndex = 6
+        Me.Gifs2_1a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1a00.Visible = False
+        '
+        'Gifs1_1a00
+        '
+        Me.Gifs1_1a00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1a00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1a00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1a00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1a00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1a00.ImageKey = "(aucun)"
+        Me.Gifs1_1a00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1a00.Name = "Gifs1_1a00"
+        Me.Gifs1_1a00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1a00.TabIndex = 5
+        Me.Gifs1_1a00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1a00.Visible = False
+        '
+        'Panel_gifs_0500
+        '
+        Me.Panel_gifs_0500.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0500
+        Me.Panel_gifs_0500.Controls.Add(Me.Gifs8_0500)
+        Me.Panel_gifs_0500.Controls.Add(Me.Gifs7_0500)
+        Me.Panel_gifs_0500.Controls.Add(Me.Gifs6_0500)
+        Me.Panel_gifs_0500.Controls.Add(Me.Gifs5_0500)
+        Me.Panel_gifs_0500.Controls.Add(Me.Gifs4_0500)
+        Me.Panel_gifs_0500.Controls.Add(Me.Gifs3_0500)
+        Me.Panel_gifs_0500.Controls.Add(Me.Gifs2_0500)
+        Me.Panel_gifs_0500.Controls.Add(Me.Gifs1_0500)
+        Me.Panel_gifs_0500.Location = New System.Drawing.Point(34, 29)
+        Me.Panel_gifs_0500.Name = "Panel_gifs_0500"
+        Me.Panel_gifs_0500.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0500.TabIndex = 359
+        '
+        'Gifs8_0500
+        '
+        Me.Gifs8_0500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0500.ImageKey = "(aucun)"
+        Me.Gifs8_0500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0500.Name = "Gifs8_0500"
+        Me.Gifs8_0500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0500.TabIndex = 12
+        Me.Gifs8_0500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0500.Visible = False
+        '
+        'Gifs7_0500
+        '
+        Me.Gifs7_0500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0500.ImageKey = "(aucun)"
+        Me.Gifs7_0500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0500.Name = "Gifs7_0500"
+        Me.Gifs7_0500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0500.TabIndex = 11
+        Me.Gifs7_0500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0500.Visible = False
+        '
+        'Gifs6_0500
+        '
+        Me.Gifs6_0500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0500.ImageKey = "(aucun)"
+        Me.Gifs6_0500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0500.Name = "Gifs6_0500"
+        Me.Gifs6_0500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0500.TabIndex = 10
+        Me.Gifs6_0500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0500.Visible = False
+        '
+        'Gifs5_0500
+        '
+        Me.Gifs5_0500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0500.ImageKey = "(aucun)"
+        Me.Gifs5_0500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0500.Name = "Gifs5_0500"
+        Me.Gifs5_0500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0500.TabIndex = 9
+        Me.Gifs5_0500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0500.Visible = False
+        '
+        'Gifs4_0500
+        '
+        Me.Gifs4_0500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0500.ImageKey = "(aucun)"
+        Me.Gifs4_0500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0500.Name = "Gifs4_0500"
+        Me.Gifs4_0500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0500.TabIndex = 8
+        Me.Gifs4_0500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0500.Visible = False
+        '
+        'Gifs3_0500
+        '
+        Me.Gifs3_0500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0500.ImageKey = "(aucun)"
+        Me.Gifs3_0500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0500.Name = "Gifs3_0500"
+        Me.Gifs3_0500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0500.TabIndex = 7
+        Me.Gifs3_0500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0500.Visible = False
+        '
+        'Gifs2_0500
+        '
+        Me.Gifs2_0500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0500.ImageKey = "(aucun)"
+        Me.Gifs2_0500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0500.Name = "Gifs2_0500"
+        Me.Gifs2_0500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0500.TabIndex = 6
+        Me.Gifs2_0500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0500.Visible = False
+        '
+        'Gifs1_0500
+        '
+        Me.Gifs1_0500.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0500.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0500.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0500.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0500.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0500.ImageKey = "(aucun)"
+        Me.Gifs1_0500.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0500.Name = "Gifs1_0500"
+        Me.Gifs1_0500.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0500.TabIndex = 5
+        Me.Gifs1_0500.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0500.Visible = False
+        '
+        'Panel_gifs_1400
+        '
+        Me.Panel_gifs_1400.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1400
+        Me.Panel_gifs_1400.Controls.Add(Me.Gifs8_1400)
+        Me.Panel_gifs_1400.Controls.Add(Me.Gifs7_1400)
+        Me.Panel_gifs_1400.Controls.Add(Me.Gifs6_1400)
+        Me.Panel_gifs_1400.Controls.Add(Me.Gifs5_1400)
+        Me.Panel_gifs_1400.Controls.Add(Me.Gifs4_1400)
+        Me.Panel_gifs_1400.Controls.Add(Me.Gifs3_1400)
+        Me.Panel_gifs_1400.Controls.Add(Me.Gifs2_1400)
+        Me.Panel_gifs_1400.Controls.Add(Me.Gifs1_1400)
+        Me.Panel_gifs_1400.Location = New System.Drawing.Point(34, 110)
+        Me.Panel_gifs_1400.Name = "Panel_gifs_1400"
+        Me.Panel_gifs_1400.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1400.TabIndex = 370
+        '
+        'Gifs8_1400
+        '
+        Me.Gifs8_1400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1400.ImageKey = "(aucun)"
+        Me.Gifs8_1400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1400.Name = "Gifs8_1400"
+        Me.Gifs8_1400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1400.TabIndex = 12
+        Me.Gifs8_1400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1400.Visible = False
+        '
+        'Gifs7_1400
+        '
+        Me.Gifs7_1400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1400.ImageKey = "(aucun)"
+        Me.Gifs7_1400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1400.Name = "Gifs7_1400"
+        Me.Gifs7_1400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1400.TabIndex = 11
+        Me.Gifs7_1400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1400.Visible = False
+        '
+        'Gifs6_1400
+        '
+        Me.Gifs6_1400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1400.ImageKey = "(aucun)"
+        Me.Gifs6_1400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1400.Name = "Gifs6_1400"
+        Me.Gifs6_1400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1400.TabIndex = 10
+        Me.Gifs6_1400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1400.Visible = False
+        '
+        'Gifs5_1400
+        '
+        Me.Gifs5_1400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1400.ImageKey = "(aucun)"
+        Me.Gifs5_1400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1400.Name = "Gifs5_1400"
+        Me.Gifs5_1400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1400.TabIndex = 9
+        Me.Gifs5_1400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1400.Visible = False
+        '
+        'Gifs4_1400
+        '
+        Me.Gifs4_1400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1400.ImageKey = "(aucun)"
+        Me.Gifs4_1400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1400.Name = "Gifs4_1400"
+        Me.Gifs4_1400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1400.TabIndex = 8
+        Me.Gifs4_1400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1400.Visible = False
+        '
+        'Gifs3_1400
+        '
+        Me.Gifs3_1400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1400.ImageKey = "(aucun)"
+        Me.Gifs3_1400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1400.Name = "Gifs3_1400"
+        Me.Gifs3_1400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1400.TabIndex = 7
+        Me.Gifs3_1400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1400.Visible = False
+        '
+        'Gifs2_1400
+        '
+        Me.Gifs2_1400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1400.ImageKey = "(aucun)"
+        Me.Gifs2_1400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1400.Name = "Gifs2_1400"
+        Me.Gifs2_1400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1400.TabIndex = 6
+        Me.Gifs2_1400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1400.Visible = False
+        '
+        'Gifs1_1400
+        '
+        Me.Gifs1_1400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1400.ImageKey = "(aucun)"
+        Me.Gifs1_1400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1400.Name = "Gifs1_1400"
+        Me.Gifs1_1400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1400.TabIndex = 5
+        Me.Gifs1_1400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1400.Visible = False
+        '
+        'Panel_gifs_0000
+        '
+        Me.Panel_gifs_0000.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0000
+        Me.Panel_gifs_0000.Controls.Add(Me.Gifs8_0000)
+        Me.Panel_gifs_0000.Controls.Add(Me.Gifs7_0000)
+        Me.Panel_gifs_0000.Controls.Add(Me.Gifs6_0000)
+        Me.Panel_gifs_0000.Controls.Add(Me.Gifs5_0000)
+        Me.Panel_gifs_0000.Controls.Add(Me.Gifs4_0000)
+        Me.Panel_gifs_0000.Controls.Add(Me.Gifs3_0000)
+        Me.Panel_gifs_0000.Controls.Add(Me.Gifs2_0000)
+        Me.Panel_gifs_0000.Controls.Add(Me.Gifs1_0000)
+        Me.Panel_gifs_0000.Location = New System.Drawing.Point(34, 2)
+        Me.Panel_gifs_0000.Name = "Panel_gifs_0000"
+        Me.Panel_gifs_0000.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0000.TabIndex = 360
+        '
+        'Gifs8_0000
+        '
+        Me.Gifs8_0000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0000.ImageKey = "(aucun)"
+        Me.Gifs8_0000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0000.Name = "Gifs8_0000"
+        Me.Gifs8_0000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0000.TabIndex = 11
+        Me.Gifs8_0000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0000.Visible = False
+        '
+        'Gifs7_0000
+        '
+        Me.Gifs7_0000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0000.ImageKey = "(aucun)"
+        Me.Gifs7_0000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0000.Name = "Gifs7_0000"
+        Me.Gifs7_0000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0000.TabIndex = 10
+        Me.Gifs7_0000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0000.Visible = False
+        '
+        'Gifs6_0000
+        '
+        Me.Gifs6_0000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0000.ImageKey = "(aucun)"
+        Me.Gifs6_0000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0000.Name = "Gifs6_0000"
+        Me.Gifs6_0000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0000.TabIndex = 9
+        Me.Gifs6_0000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0000.Visible = False
+        '
+        'Gifs5_0000
+        '
+        Me.Gifs5_0000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0000.ImageKey = "(aucun)"
+        Me.Gifs5_0000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0000.Name = "Gifs5_0000"
+        Me.Gifs5_0000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0000.TabIndex = 8
+        Me.Gifs5_0000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0000.Visible = False
+        '
+        'Gifs4_0000
+        '
+        Me.Gifs4_0000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0000.ImageKey = "(aucun)"
+        Me.Gifs4_0000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0000.Name = "Gifs4_0000"
+        Me.Gifs4_0000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0000.TabIndex = 7
+        Me.Gifs4_0000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0000.Visible = False
+        '
+        'Gifs3_0000
+        '
+        Me.Gifs3_0000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0000.ImageKey = "(aucun)"
+        Me.Gifs3_0000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0000.Name = "Gifs3_0000"
+        Me.Gifs3_0000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0000.TabIndex = 6
+        Me.Gifs3_0000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0000.Visible = False
+        '
+        'Gifs2_0000
+        '
+        Me.Gifs2_0000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0000.ImageKey = "(aucun)"
+        Me.Gifs2_0000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0000.Name = "Gifs2_0000"
+        Me.Gifs2_0000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0000.TabIndex = 5
+        Me.Gifs2_0000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0000.Visible = False
+        '
+        'Gifs1_0000
+        '
+        Me.Gifs1_0000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0000.ImageKey = "(aucun)"
+        Me.Gifs1_0000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0000.Name = "Gifs1_0000"
+        Me.Gifs1_0000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0000.TabIndex = 4
+        Me.Gifs1_0000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0000.Visible = False
+        '
+        'Panel_gifs_1100
+        '
+        Me.Panel_gifs_1100.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1100
+        Me.Panel_gifs_1100.Controls.Add(Me.Gifs8_1100)
+        Me.Panel_gifs_1100.Controls.Add(Me.Gifs7_1100)
+        Me.Panel_gifs_1100.Controls.Add(Me.Gifs6_1100)
+        Me.Panel_gifs_1100.Controls.Add(Me.Gifs5_1100)
+        Me.Panel_gifs_1100.Controls.Add(Me.Gifs4_1100)
+        Me.Panel_gifs_1100.Controls.Add(Me.Gifs3_1100)
+        Me.Panel_gifs_1100.Controls.Add(Me.Gifs2_1100)
+        Me.Panel_gifs_1100.Controls.Add(Me.Gifs1_1100)
+        Me.Panel_gifs_1100.Location = New System.Drawing.Point(96, 83)
+        Me.Panel_gifs_1100.Name = "Panel_gifs_1100"
+        Me.Panel_gifs_1100.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1100.TabIndex = 369
+        '
+        'Gifs8_1100
+        '
+        Me.Gifs8_1100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1100.ImageKey = "(aucun)"
+        Me.Gifs8_1100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1100.Name = "Gifs8_1100"
+        Me.Gifs8_1100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1100.TabIndex = 12
+        Me.Gifs8_1100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1100.Visible = False
+        '
+        'Gifs7_1100
+        '
+        Me.Gifs7_1100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1100.ImageKey = "(aucun)"
+        Me.Gifs7_1100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1100.Name = "Gifs7_1100"
+        Me.Gifs7_1100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1100.TabIndex = 11
+        Me.Gifs7_1100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1100.Visible = False
+        '
+        'Gifs6_1100
+        '
+        Me.Gifs6_1100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1100.ImageKey = "(aucun)"
+        Me.Gifs6_1100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1100.Name = "Gifs6_1100"
+        Me.Gifs6_1100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1100.TabIndex = 10
+        Me.Gifs6_1100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1100.Visible = False
+        '
+        'Gifs5_1100
+        '
+        Me.Gifs5_1100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1100.ImageKey = "(aucun)"
+        Me.Gifs5_1100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1100.Name = "Gifs5_1100"
+        Me.Gifs5_1100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1100.TabIndex = 9
+        Me.Gifs5_1100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1100.Visible = False
+        '
+        'Gifs4_1100
+        '
+        Me.Gifs4_1100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1100.ImageKey = "(aucun)"
+        Me.Gifs4_1100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1100.Name = "Gifs4_1100"
+        Me.Gifs4_1100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1100.TabIndex = 8
+        Me.Gifs4_1100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1100.Visible = False
+        '
+        'Gifs3_1100
+        '
+        Me.Gifs3_1100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1100.ImageKey = "(aucun)"
+        Me.Gifs3_1100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1100.Name = "Gifs3_1100"
+        Me.Gifs3_1100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1100.TabIndex = 7
+        Me.Gifs3_1100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1100.Visible = False
+        '
+        'Gifs2_1100
+        '
+        Me.Gifs2_1100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1100.ImageKey = "(aucun)"
+        Me.Gifs2_1100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1100.Name = "Gifs2_1100"
+        Me.Gifs2_1100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1100.TabIndex = 6
+        Me.Gifs2_1100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1100.Visible = False
+        '
+        'Gifs1_1100
+        '
+        Me.Gifs1_1100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1100.ImageKey = "(aucun)"
+        Me.Gifs1_1100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1100.Name = "Gifs1_1100"
+        Me.Gifs1_1100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1100.TabIndex = 5
+        Me.Gifs1_1100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1100.Visible = False
+        '
+        'Panel_gifs_0100
+        '
+        Me.Panel_gifs_0100.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0100
+        Me.Panel_gifs_0100.Controls.Add(Me.Gifs8_0100)
+        Me.Panel_gifs_0100.Controls.Add(Me.Gifs7_0100)
+        Me.Panel_gifs_0100.Controls.Add(Me.Gifs6_0100)
+        Me.Panel_gifs_0100.Controls.Add(Me.Gifs5_0100)
+        Me.Panel_gifs_0100.Controls.Add(Me.Gifs4_0100)
+        Me.Panel_gifs_0100.Controls.Add(Me.Gifs3_0100)
+        Me.Panel_gifs_0100.Controls.Add(Me.Gifs2_0100)
+        Me.Panel_gifs_0100.Controls.Add(Me.Gifs1_0100)
+        Me.Panel_gifs_0100.Location = New System.Drawing.Point(65, 2)
+        Me.Panel_gifs_0100.Name = "Panel_gifs_0100"
+        Me.Panel_gifs_0100.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0100.TabIndex = 361
+        '
+        'Gifs8_0100
+        '
+        Me.Gifs8_0100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0100.ImageKey = "(aucun)"
+        Me.Gifs8_0100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0100.Name = "Gifs8_0100"
+        Me.Gifs8_0100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0100.TabIndex = 12
+        Me.Gifs8_0100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0100.Visible = False
+        '
+        'Gifs7_0100
+        '
+        Me.Gifs7_0100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0100.ImageKey = "(aucun)"
+        Me.Gifs7_0100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0100.Name = "Gifs7_0100"
+        Me.Gifs7_0100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0100.TabIndex = 11
+        Me.Gifs7_0100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0100.Visible = False
+        '
+        'Gifs6_0100
+        '
+        Me.Gifs6_0100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0100.ImageKey = "(aucun)"
+        Me.Gifs6_0100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0100.Name = "Gifs6_0100"
+        Me.Gifs6_0100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0100.TabIndex = 10
+        Me.Gifs6_0100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0100.Visible = False
+        '
+        'Gifs5_0100
+        '
+        Me.Gifs5_0100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0100.ImageKey = "(aucun)"
+        Me.Gifs5_0100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0100.Name = "Gifs5_0100"
+        Me.Gifs5_0100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0100.TabIndex = 9
+        Me.Gifs5_0100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0100.Visible = False
+        '
+        'Gifs4_0100
+        '
+        Me.Gifs4_0100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0100.ImageKey = "(aucun)"
+        Me.Gifs4_0100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0100.Name = "Gifs4_0100"
+        Me.Gifs4_0100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0100.TabIndex = 8
+        Me.Gifs4_0100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0100.Visible = False
+        '
+        'Gifs3_0100
+        '
+        Me.Gifs3_0100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0100.ImageKey = "(aucun)"
+        Me.Gifs3_0100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0100.Name = "Gifs3_0100"
+        Me.Gifs3_0100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0100.TabIndex = 7
+        Me.Gifs3_0100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0100.Visible = False
+        '
+        'Gifs2_0100
+        '
+        Me.Gifs2_0100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0100.ImageKey = "(aucun)"
+        Me.Gifs2_0100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0100.Name = "Gifs2_0100"
+        Me.Gifs2_0100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0100.TabIndex = 6
+        Me.Gifs2_0100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0100.Visible = False
+        '
+        'Gifs1_0100
+        '
+        Me.Gifs1_0100.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0100.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0100.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0100.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0100.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0100.ImageKey = "(aucun)"
+        Me.Gifs1_0100.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0100.Name = "Gifs1_0100"
+        Me.Gifs1_0100.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0100.TabIndex = 5
+        Me.Gifs1_0100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0100.Visible = False
+        '
+        'Panel_gifs_1000
+        '
+        Me.Panel_gifs_1000.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_1000
+        Me.Panel_gifs_1000.Controls.Add(Me.Gifs8_1000)
+        Me.Panel_gifs_1000.Controls.Add(Me.Gifs7_1000)
+        Me.Panel_gifs_1000.Controls.Add(Me.Gifs6_1000)
+        Me.Panel_gifs_1000.Controls.Add(Me.Gifs5_1000)
+        Me.Panel_gifs_1000.Controls.Add(Me.Gifs4_1000)
+        Me.Panel_gifs_1000.Controls.Add(Me.Gifs3_1000)
+        Me.Panel_gifs_1000.Controls.Add(Me.Gifs2_1000)
+        Me.Panel_gifs_1000.Controls.Add(Me.Gifs1_1000)
+        Me.Panel_gifs_1000.Location = New System.Drawing.Point(65, 83)
+        Me.Panel_gifs_1000.Name = "Panel_gifs_1000"
+        Me.Panel_gifs_1000.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_1000.TabIndex = 368
+        '
+        'Gifs8_1000
+        '
+        Me.Gifs8_1000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_1000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_1000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_1000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_1000.ImageKey = "(aucun)"
+        Me.Gifs8_1000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_1000.Name = "Gifs8_1000"
+        Me.Gifs8_1000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_1000.TabIndex = 12
+        Me.Gifs8_1000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_1000.Visible = False
+        '
+        'Gifs7_1000
+        '
+        Me.Gifs7_1000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_1000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_1000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_1000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_1000.ImageKey = "(aucun)"
+        Me.Gifs7_1000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_1000.Name = "Gifs7_1000"
+        Me.Gifs7_1000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_1000.TabIndex = 11
+        Me.Gifs7_1000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_1000.Visible = False
+        '
+        'Gifs6_1000
+        '
+        Me.Gifs6_1000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_1000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_1000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_1000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_1000.ImageKey = "(aucun)"
+        Me.Gifs6_1000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_1000.Name = "Gifs6_1000"
+        Me.Gifs6_1000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_1000.TabIndex = 10
+        Me.Gifs6_1000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_1000.Visible = False
+        '
+        'Gifs5_1000
+        '
+        Me.Gifs5_1000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_1000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_1000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_1000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_1000.ImageKey = "(aucun)"
+        Me.Gifs5_1000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_1000.Name = "Gifs5_1000"
+        Me.Gifs5_1000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_1000.TabIndex = 9
+        Me.Gifs5_1000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_1000.Visible = False
+        '
+        'Gifs4_1000
+        '
+        Me.Gifs4_1000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_1000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_1000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_1000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_1000.ImageKey = "(aucun)"
+        Me.Gifs4_1000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_1000.Name = "Gifs4_1000"
+        Me.Gifs4_1000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_1000.TabIndex = 8
+        Me.Gifs4_1000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_1000.Visible = False
+        '
+        'Gifs3_1000
+        '
+        Me.Gifs3_1000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_1000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_1000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_1000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_1000.ImageKey = "(aucun)"
+        Me.Gifs3_1000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_1000.Name = "Gifs3_1000"
+        Me.Gifs3_1000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_1000.TabIndex = 7
+        Me.Gifs3_1000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_1000.Visible = False
+        '
+        'Gifs2_1000
+        '
+        Me.Gifs2_1000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_1000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_1000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_1000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_1000.ImageKey = "(aucun)"
+        Me.Gifs2_1000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_1000.Name = "Gifs2_1000"
+        Me.Gifs2_1000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_1000.TabIndex = 6
+        Me.Gifs2_1000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_1000.Visible = False
+        '
+        'Gifs1_1000
+        '
+        Me.Gifs1_1000.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_1000.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_1000.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_1000.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_1000.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_1000.ImageKey = "(aucun)"
+        Me.Gifs1_1000.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_1000.Name = "Gifs1_1000"
+        Me.Gifs1_1000.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_1000.TabIndex = 5
+        Me.Gifs1_1000.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_1000.Visible = False
+        '
+        'Panel_gifs_0200
+        '
+        Me.Panel_gifs_0200.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0200
+        Me.Panel_gifs_0200.Controls.Add(Me.Gifs8_0200)
+        Me.Panel_gifs_0200.Controls.Add(Me.Gifs7_0200)
+        Me.Panel_gifs_0200.Controls.Add(Me.Gifs6_0200)
+        Me.Panel_gifs_0200.Controls.Add(Me.Gifs5_0200)
+        Me.Panel_gifs_0200.Controls.Add(Me.Gifs4_0200)
+        Me.Panel_gifs_0200.Controls.Add(Me.Gifs3_0200)
+        Me.Panel_gifs_0200.Controls.Add(Me.Gifs2_0200)
+        Me.Panel_gifs_0200.Controls.Add(Me.Gifs1_0200)
+        Me.Panel_gifs_0200.Location = New System.Drawing.Point(96, 2)
+        Me.Panel_gifs_0200.Name = "Panel_gifs_0200"
+        Me.Panel_gifs_0200.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0200.TabIndex = 362
+        '
+        'Gifs8_0200
+        '
+        Me.Gifs8_0200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0200.ImageKey = "(aucun)"
+        Me.Gifs8_0200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0200.Name = "Gifs8_0200"
+        Me.Gifs8_0200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0200.TabIndex = 12
+        Me.Gifs8_0200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0200.Visible = False
+        '
+        'Gifs7_0200
+        '
+        Me.Gifs7_0200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0200.ImageKey = "(aucun)"
+        Me.Gifs7_0200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0200.Name = "Gifs7_0200"
+        Me.Gifs7_0200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0200.TabIndex = 11
+        Me.Gifs7_0200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0200.Visible = False
+        '
+        'Gifs6_0200
+        '
+        Me.Gifs6_0200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0200.ImageKey = "(aucun)"
+        Me.Gifs6_0200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0200.Name = "Gifs6_0200"
+        Me.Gifs6_0200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0200.TabIndex = 10
+        Me.Gifs6_0200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0200.Visible = False
+        '
+        'Gifs5_0200
+        '
+        Me.Gifs5_0200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0200.ImageKey = "(aucun)"
+        Me.Gifs5_0200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0200.Name = "Gifs5_0200"
+        Me.Gifs5_0200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0200.TabIndex = 9
+        Me.Gifs5_0200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0200.Visible = False
+        '
+        'Gifs4_0200
+        '
+        Me.Gifs4_0200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0200.ImageKey = "(aucun)"
+        Me.Gifs4_0200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0200.Name = "Gifs4_0200"
+        Me.Gifs4_0200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0200.TabIndex = 8
+        Me.Gifs4_0200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0200.Visible = False
+        '
+        'Gifs3_0200
+        '
+        Me.Gifs3_0200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0200.ImageKey = "(aucun)"
+        Me.Gifs3_0200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0200.Name = "Gifs3_0200"
+        Me.Gifs3_0200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0200.TabIndex = 7
+        Me.Gifs3_0200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0200.Visible = False
+        '
+        'Gifs2_0200
+        '
+        Me.Gifs2_0200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0200.ImageKey = "(aucun)"
+        Me.Gifs2_0200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0200.Name = "Gifs2_0200"
+        Me.Gifs2_0200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0200.TabIndex = 6
+        Me.Gifs2_0200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0200.Visible = False
+        '
+        'Gifs1_0200
+        '
+        Me.Gifs1_0200.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0200.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0200.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0200.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0200.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0200.ImageKey = "(aucun)"
+        Me.Gifs1_0200.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0200.Name = "Gifs1_0200"
+        Me.Gifs1_0200.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0200.TabIndex = 5
+        Me.Gifs1_0200.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0200.Visible = False
+        '
+        'Panel_gifs_0f00
+        '
+        Me.Panel_gifs_0f00.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0f00
+        Me.Panel_gifs_0f00.Controls.Add(Me.Gifs8_0f00)
+        Me.Panel_gifs_0f00.Controls.Add(Me.Gifs7_0f00)
+        Me.Panel_gifs_0f00.Controls.Add(Me.Gifs6_0f00)
+        Me.Panel_gifs_0f00.Controls.Add(Me.Gifs5_0f00)
+        Me.Panel_gifs_0f00.Controls.Add(Me.Gifs4_0f00)
+        Me.Panel_gifs_0f00.Controls.Add(Me.Gifs3_0f00)
+        Me.Panel_gifs_0f00.Controls.Add(Me.Gifs2_0f00)
+        Me.Panel_gifs_0f00.Controls.Add(Me.Gifs1_0f00)
+        Me.Panel_gifs_0f00.Location = New System.Drawing.Point(34, 83)
+        Me.Panel_gifs_0f00.Name = "Panel_gifs_0f00"
+        Me.Panel_gifs_0f00.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0f00.TabIndex = 367
+        '
+        'Gifs8_0f00
+        '
+        Me.Gifs8_0f00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0f00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0f00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0f00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0f00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0f00.ImageKey = "(aucun)"
+        Me.Gifs8_0f00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0f00.Name = "Gifs8_0f00"
+        Me.Gifs8_0f00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0f00.TabIndex = 12
+        Me.Gifs8_0f00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0f00.Visible = False
+        '
+        'Gifs7_0f00
+        '
+        Me.Gifs7_0f00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0f00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0f00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0f00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0f00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0f00.ImageKey = "(aucun)"
+        Me.Gifs7_0f00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0f00.Name = "Gifs7_0f00"
+        Me.Gifs7_0f00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0f00.TabIndex = 11
+        Me.Gifs7_0f00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0f00.Visible = False
+        '
+        'Gifs6_0f00
+        '
+        Me.Gifs6_0f00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0f00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0f00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0f00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0f00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0f00.ImageKey = "(aucun)"
+        Me.Gifs6_0f00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0f00.Name = "Gifs6_0f00"
+        Me.Gifs6_0f00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0f00.TabIndex = 10
+        Me.Gifs6_0f00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0f00.Visible = False
+        '
+        'Gifs5_0f00
+        '
+        Me.Gifs5_0f00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0f00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0f00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0f00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0f00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0f00.ImageKey = "(aucun)"
+        Me.Gifs5_0f00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0f00.Name = "Gifs5_0f00"
+        Me.Gifs5_0f00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0f00.TabIndex = 9
+        Me.Gifs5_0f00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0f00.Visible = False
+        '
+        'Gifs4_0f00
+        '
+        Me.Gifs4_0f00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0f00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0f00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0f00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0f00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0f00.ImageKey = "(aucun)"
+        Me.Gifs4_0f00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0f00.Name = "Gifs4_0f00"
+        Me.Gifs4_0f00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0f00.TabIndex = 8
+        Me.Gifs4_0f00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0f00.Visible = False
+        '
+        'Gifs3_0f00
+        '
+        Me.Gifs3_0f00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0f00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0f00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0f00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0f00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0f00.ImageKey = "(aucun)"
+        Me.Gifs3_0f00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0f00.Name = "Gifs3_0f00"
+        Me.Gifs3_0f00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0f00.TabIndex = 7
+        Me.Gifs3_0f00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0f00.Visible = False
+        '
+        'Gifs2_0f00
+        '
+        Me.Gifs2_0f00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0f00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0f00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0f00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0f00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0f00.ImageKey = "(aucun)"
+        Me.Gifs2_0f00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0f00.Name = "Gifs2_0f00"
+        Me.Gifs2_0f00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0f00.TabIndex = 6
+        Me.Gifs2_0f00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0f00.Visible = False
+        '
+        'Gifs1_0f00
+        '
+        Me.Gifs1_0f00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0f00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0f00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0f00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0f00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0f00.ImageKey = "(aucun)"
+        Me.Gifs1_0f00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0f00.Name = "Gifs1_0f00"
+        Me.Gifs1_0f00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0f00.TabIndex = 5
+        Me.Gifs1_0f00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0f00.Visible = False
+        '
+        'Panel_gifs_0300
+        '
+        Me.Panel_gifs_0300.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0300
+        Me.Panel_gifs_0300.Controls.Add(Me.Gifs8_0300)
+        Me.Panel_gifs_0300.Controls.Add(Me.Gifs7_0300)
+        Me.Panel_gifs_0300.Controls.Add(Me.Gifs6_0300)
+        Me.Panel_gifs_0300.Controls.Add(Me.Gifs5_0300)
+        Me.Panel_gifs_0300.Controls.Add(Me.Gifs4_0300)
+        Me.Panel_gifs_0300.Controls.Add(Me.Gifs3_0300)
+        Me.Panel_gifs_0300.Controls.Add(Me.Gifs2_0300)
+        Me.Panel_gifs_0300.Controls.Add(Me.Gifs1_0300)
+        Me.Panel_gifs_0300.Location = New System.Drawing.Point(127, 2)
+        Me.Panel_gifs_0300.Name = "Panel_gifs_0300"
+        Me.Panel_gifs_0300.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0300.TabIndex = 363
+        '
+        'Gifs8_0300
+        '
+        Me.Gifs8_0300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0300.ImageKey = "(aucun)"
+        Me.Gifs8_0300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0300.Name = "Gifs8_0300"
+        Me.Gifs8_0300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0300.TabIndex = 12
+        Me.Gifs8_0300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0300.Visible = False
+        '
+        'Gifs7_0300
+        '
+        Me.Gifs7_0300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0300.ImageKey = "(aucun)"
+        Me.Gifs7_0300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0300.Name = "Gifs7_0300"
+        Me.Gifs7_0300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0300.TabIndex = 11
+        Me.Gifs7_0300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0300.Visible = False
+        '
+        'Gifs6_0300
+        '
+        Me.Gifs6_0300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0300.ImageKey = "(aucun)"
+        Me.Gifs6_0300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0300.Name = "Gifs6_0300"
+        Me.Gifs6_0300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0300.TabIndex = 10
+        Me.Gifs6_0300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0300.Visible = False
+        '
+        'Gifs5_0300
+        '
+        Me.Gifs5_0300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0300.ImageKey = "(aucun)"
+        Me.Gifs5_0300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0300.Name = "Gifs5_0300"
+        Me.Gifs5_0300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0300.TabIndex = 9
+        Me.Gifs5_0300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0300.Visible = False
+        '
+        'Gifs4_0300
+        '
+        Me.Gifs4_0300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0300.ImageKey = "(aucun)"
+        Me.Gifs4_0300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0300.Name = "Gifs4_0300"
+        Me.Gifs4_0300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0300.TabIndex = 8
+        Me.Gifs4_0300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0300.Visible = False
+        '
+        'Gifs3_0300
+        '
+        Me.Gifs3_0300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0300.ImageKey = "(aucun)"
+        Me.Gifs3_0300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0300.Name = "Gifs3_0300"
+        Me.Gifs3_0300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0300.TabIndex = 7
+        Me.Gifs3_0300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0300.Visible = False
+        '
+        'Gifs2_0300
+        '
+        Me.Gifs2_0300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0300.ImageKey = "(aucun)"
+        Me.Gifs2_0300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0300.Name = "Gifs2_0300"
+        Me.Gifs2_0300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0300.TabIndex = 6
+        Me.Gifs2_0300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0300.Visible = False
+        '
+        'Gifs1_0300
+        '
+        Me.Gifs1_0300.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0300.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0300.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0300.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0300.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0300.ImageKey = "(aucun)"
+        Me.Gifs1_0300.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0300.Name = "Gifs1_0300"
+        Me.Gifs1_0300.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0300.TabIndex = 5
+        Me.Gifs1_0300.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0300.Visible = False
+        '
+        'Panel_gifs_0e00
+        '
+        Me.Panel_gifs_0e00.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0e00
+        Me.Panel_gifs_0e00.Controls.Add(Me.Gifs8_0e00)
+        Me.Panel_gifs_0e00.Controls.Add(Me.Gifs7_0e00)
+        Me.Panel_gifs_0e00.Controls.Add(Me.Gifs6_0e00)
+        Me.Panel_gifs_0e00.Controls.Add(Me.Gifs5_0e00)
+        Me.Panel_gifs_0e00.Controls.Add(Me.Gifs4_0e00)
+        Me.Panel_gifs_0e00.Controls.Add(Me.Gifs3_0e00)
+        Me.Panel_gifs_0e00.Controls.Add(Me.Gifs2_0e00)
+        Me.Panel_gifs_0e00.Controls.Add(Me.Gifs1_0e00)
+        Me.Panel_gifs_0e00.Location = New System.Drawing.Point(3, 83)
+        Me.Panel_gifs_0e00.Name = "Panel_gifs_0e00"
+        Me.Panel_gifs_0e00.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0e00.TabIndex = 366
+        '
+        'Gifs8_0e00
+        '
+        Me.Gifs8_0e00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0e00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0e00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0e00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0e00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0e00.ImageKey = "(aucun)"
+        Me.Gifs8_0e00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0e00.Name = "Gifs8_0e00"
+        Me.Gifs8_0e00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0e00.TabIndex = 12
+        Me.Gifs8_0e00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0e00.Visible = False
+        '
+        'Gifs7_0e00
+        '
+        Me.Gifs7_0e00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0e00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0e00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0e00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0e00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0e00.ImageKey = "(aucun)"
+        Me.Gifs7_0e00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0e00.Name = "Gifs7_0e00"
+        Me.Gifs7_0e00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0e00.TabIndex = 11
+        Me.Gifs7_0e00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0e00.Visible = False
+        '
+        'Gifs6_0e00
+        '
+        Me.Gifs6_0e00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0e00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0e00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0e00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0e00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0e00.ImageKey = "(aucun)"
+        Me.Gifs6_0e00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0e00.Name = "Gifs6_0e00"
+        Me.Gifs6_0e00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0e00.TabIndex = 10
+        Me.Gifs6_0e00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0e00.Visible = False
+        '
+        'Gifs5_0e00
+        '
+        Me.Gifs5_0e00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0e00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0e00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0e00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0e00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0e00.ImageKey = "(aucun)"
+        Me.Gifs5_0e00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0e00.Name = "Gifs5_0e00"
+        Me.Gifs5_0e00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0e00.TabIndex = 9
+        Me.Gifs5_0e00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0e00.Visible = False
+        '
+        'Gifs4_0e00
+        '
+        Me.Gifs4_0e00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0e00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0e00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0e00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0e00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0e00.ImageKey = "(aucun)"
+        Me.Gifs4_0e00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0e00.Name = "Gifs4_0e00"
+        Me.Gifs4_0e00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0e00.TabIndex = 8
+        Me.Gifs4_0e00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0e00.Visible = False
+        '
+        'Gifs3_0e00
+        '
+        Me.Gifs3_0e00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0e00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0e00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0e00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0e00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0e00.ImageKey = "(aucun)"
+        Me.Gifs3_0e00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0e00.Name = "Gifs3_0e00"
+        Me.Gifs3_0e00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0e00.TabIndex = 7
+        Me.Gifs3_0e00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0e00.Visible = False
+        '
+        'Gifs2_0e00
+        '
+        Me.Gifs2_0e00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0e00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0e00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0e00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0e00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0e00.ImageKey = "(aucun)"
+        Me.Gifs2_0e00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0e00.Name = "Gifs2_0e00"
+        Me.Gifs2_0e00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0e00.TabIndex = 6
+        Me.Gifs2_0e00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0e00.Visible = False
+        '
+        'Gifs1_0e00
+        '
+        Me.Gifs1_0e00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0e00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0e00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0e00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0e00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0e00.ImageKey = "(aucun)"
+        Me.Gifs1_0e00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0e00.Name = "Gifs1_0e00"
+        Me.Gifs1_0e00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0e00.TabIndex = 5
+        Me.Gifs1_0e00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0e00.Visible = False
+        '
+        'Panel_gifs_0400
+        '
+        Me.Panel_gifs_0400.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0400
+        Me.Panel_gifs_0400.Controls.Add(Me.Gifs8_0400)
+        Me.Panel_gifs_0400.Controls.Add(Me.Gifs7_0400)
+        Me.Panel_gifs_0400.Controls.Add(Me.Gifs6_0400)
+        Me.Panel_gifs_0400.Controls.Add(Me.Gifs5_0400)
+        Me.Panel_gifs_0400.Controls.Add(Me.Gifs4_0400)
+        Me.Panel_gifs_0400.Controls.Add(Me.Gifs3_0400)
+        Me.Panel_gifs_0400.Controls.Add(Me.Gifs2_0400)
+        Me.Panel_gifs_0400.Controls.Add(Me.Gifs1_0400)
+        Me.Panel_gifs_0400.Location = New System.Drawing.Point(3, 29)
+        Me.Panel_gifs_0400.Name = "Panel_gifs_0400"
+        Me.Panel_gifs_0400.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0400.TabIndex = 364
+        '
+        'Gifs8_0400
+        '
+        Me.Gifs8_0400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0400.ImageKey = "(aucun)"
+        Me.Gifs8_0400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0400.Name = "Gifs8_0400"
+        Me.Gifs8_0400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0400.TabIndex = 12
+        Me.Gifs8_0400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0400.Visible = False
+        '
+        'Gifs7_0400
+        '
+        Me.Gifs7_0400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0400.ImageKey = "(aucun)"
+        Me.Gifs7_0400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0400.Name = "Gifs7_0400"
+        Me.Gifs7_0400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0400.TabIndex = 11
+        Me.Gifs7_0400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0400.Visible = False
+        '
+        'Gifs6_0400
+        '
+        Me.Gifs6_0400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0400.ImageKey = "(aucun)"
+        Me.Gifs6_0400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0400.Name = "Gifs6_0400"
+        Me.Gifs6_0400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0400.TabIndex = 10
+        Me.Gifs6_0400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0400.Visible = False
+        '
+        'Gifs5_0400
+        '
+        Me.Gifs5_0400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0400.ImageKey = "(aucun)"
+        Me.Gifs5_0400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0400.Name = "Gifs5_0400"
+        Me.Gifs5_0400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0400.TabIndex = 9
+        Me.Gifs5_0400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0400.Visible = False
+        '
+        'Gifs4_0400
+        '
+        Me.Gifs4_0400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0400.ImageKey = "(aucun)"
+        Me.Gifs4_0400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0400.Name = "Gifs4_0400"
+        Me.Gifs4_0400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0400.TabIndex = 8
+        Me.Gifs4_0400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0400.Visible = False
+        '
+        'Gifs3_0400
+        '
+        Me.Gifs3_0400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0400.ImageKey = "(aucun)"
+        Me.Gifs3_0400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0400.Name = "Gifs3_0400"
+        Me.Gifs3_0400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0400.TabIndex = 7
+        Me.Gifs3_0400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0400.Visible = False
+        '
+        'Gifs2_0400
+        '
+        Me.Gifs2_0400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0400.ImageKey = "(aucun)"
+        Me.Gifs2_0400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0400.Name = "Gifs2_0400"
+        Me.Gifs2_0400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0400.TabIndex = 6
+        Me.Gifs2_0400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0400.Visible = False
+        '
+        'Gifs1_0400
+        '
+        Me.Gifs1_0400.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0400.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0400.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0400.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0400.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0400.ImageKey = "(aucun)"
+        Me.Gifs1_0400.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0400.Name = "Gifs1_0400"
+        Me.Gifs1_0400.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0400.TabIndex = 5
+        Me.Gifs1_0400.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0400.Visible = False
+        '
+        'Panel_gifs_0d00
+        '
+        Me.Panel_gifs_0d00.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_0d00
+        Me.Panel_gifs_0d00.Controls.Add(Me.Gifs8_0d00)
+        Me.Panel_gifs_0d00.Controls.Add(Me.Gifs7_0d00)
+        Me.Panel_gifs_0d00.Controls.Add(Me.Gifs6_0d00)
+        Me.Panel_gifs_0d00.Controls.Add(Me.Gifs5_0d00)
+        Me.Panel_gifs_0d00.Controls.Add(Me.Gifs4_0d00)
+        Me.Panel_gifs_0d00.Controls.Add(Me.Gifs3_0d00)
+        Me.Panel_gifs_0d00.Controls.Add(Me.Gifs2_0d00)
+        Me.Panel_gifs_0d00.Controls.Add(Me.Gifs1_0d00)
+        Me.Panel_gifs_0d00.Location = New System.Drawing.Point(127, 56)
+        Me.Panel_gifs_0d00.Name = "Panel_gifs_0d00"
+        Me.Panel_gifs_0d00.Size = New System.Drawing.Size(31, 27)
+        Me.Panel_gifs_0d00.TabIndex = 365
+        '
+        'Gifs8_0d00
+        '
+        Me.Gifs8_0d00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs8_0d00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs8_0d00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs8_0d00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs8_0d00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs8_0d00.ImageKey = "(aucun)"
+        Me.Gifs8_0d00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs8_0d00.Name = "Gifs8_0d00"
+        Me.Gifs8_0d00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs8_0d00.TabIndex = 12
+        Me.Gifs8_0d00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs8_0d00.Visible = False
+        '
+        'Gifs7_0d00
+        '
+        Me.Gifs7_0d00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs7_0d00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs7_0d00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs7_0d00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs7_0d00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs7_0d00.ImageKey = "(aucun)"
+        Me.Gifs7_0d00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs7_0d00.Name = "Gifs7_0d00"
+        Me.Gifs7_0d00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs7_0d00.TabIndex = 11
+        Me.Gifs7_0d00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs7_0d00.Visible = False
+        '
+        'Gifs6_0d00
+        '
+        Me.Gifs6_0d00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs6_0d00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs6_0d00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs6_0d00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs6_0d00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs6_0d00.ImageKey = "(aucun)"
+        Me.Gifs6_0d00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs6_0d00.Name = "Gifs6_0d00"
+        Me.Gifs6_0d00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs6_0d00.TabIndex = 10
+        Me.Gifs6_0d00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs6_0d00.Visible = False
+        '
+        'Gifs5_0d00
+        '
+        Me.Gifs5_0d00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs5_0d00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs5_0d00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs5_0d00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs5_0d00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs5_0d00.ImageKey = "(aucun)"
+        Me.Gifs5_0d00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs5_0d00.Name = "Gifs5_0d00"
+        Me.Gifs5_0d00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs5_0d00.TabIndex = 9
+        Me.Gifs5_0d00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs5_0d00.Visible = False
+        '
+        'Gifs4_0d00
+        '
+        Me.Gifs4_0d00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs4_0d00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs4_0d00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs4_0d00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs4_0d00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs4_0d00.ImageKey = "(aucun)"
+        Me.Gifs4_0d00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs4_0d00.Name = "Gifs4_0d00"
+        Me.Gifs4_0d00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs4_0d00.TabIndex = 8
+        Me.Gifs4_0d00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs4_0d00.Visible = False
+        '
+        'Gifs3_0d00
+        '
+        Me.Gifs3_0d00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs3_0d00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs3_0d00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs3_0d00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs3_0d00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs3_0d00.ImageKey = "(aucun)"
+        Me.Gifs3_0d00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs3_0d00.Name = "Gifs3_0d00"
+        Me.Gifs3_0d00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs3_0d00.TabIndex = 7
+        Me.Gifs3_0d00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs3_0d00.Visible = False
+        '
+        'Gifs2_0d00
+        '
+        Me.Gifs2_0d00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs2_0d00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs2_0d00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs2_0d00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs2_0d00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs2_0d00.ImageKey = "(aucun)"
+        Me.Gifs2_0d00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs2_0d00.Name = "Gifs2_0d00"
+        Me.Gifs2_0d00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs2_0d00.TabIndex = 6
+        Me.Gifs2_0d00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs2_0d00.Visible = False
+        '
+        'Gifs1_0d00
+        '
+        Me.Gifs1_0d00.BackColor = System.Drawing.Color.Transparent
+        Me.Gifs1_0d00.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Gifs1_0d00.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Gifs1_0d00.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Gifs1_0d00.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Gifs1_0d00.ImageKey = "(aucun)"
+        Me.Gifs1_0d00.Location = New System.Drawing.Point(0, 0)
+        Me.Gifs1_0d00.Name = "Gifs1_0d00"
+        Me.Gifs1_0d00.Size = New System.Drawing.Size(31, 27)
+        Me.Gifs1_0d00.TabIndex = 5
+        Me.Gifs1_0d00.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Gifs1_0d00.Visible = False
+        '
+        'AdvH_gifts
+        '
+        Me.AdvH_gifts.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_gifts.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_gifts.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_gifts.Location = New System.Drawing.Point(587, 228)
+        Me.AdvH_gifts.Name = "AdvH_gifts"
+        Me.AdvH_gifts.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_gifts.TabIndex = 308
+        Me.AdvH_gifts.TabStop = False
+        Me.AdvH_gifts.Visible = False
         '
         'Panel_edit_fullness
         '
+        Me.Panel_edit_fullness.BackColor = System.Drawing.Color.Azure
         Me.Panel_edit_fullness.Controls.Add(Me.Icon_edit_full_75)
         Me.Panel_edit_fullness.Controls.Add(Me.Icon_edit_full_100)
         Me.Panel_edit_fullness.Controls.Add(Me.Icon_edit_full_50)
         Me.Panel_edit_fullness.Controls.Add(Me.Icon_edit_full_25)
         Me.Panel_edit_fullness.Controls.Add(Me.Icon_edit_full_00)
-        Me.Panel_edit_fullness.Location = New System.Drawing.Point(428, 91)
+        Me.Panel_edit_fullness.Location = New System.Drawing.Point(439, 76)
         Me.Panel_edit_fullness.Name = "Panel_edit_fullness"
         Me.Panel_edit_fullness.Size = New System.Drawing.Size(180, 110)
         Me.Panel_edit_fullness.TabIndex = 286
@@ -8041,6 +12974,87 @@ Partial Class TL_SaveEditor
         Me.Icon_edit_full_00.TabIndex = 110
         Me.Icon_edit_full_00.TabStop = False
         '
+        'Icon_arrowexp_maxright
+        '
+        Me.Icon_arrowexp_maxright.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_arrowexp_maxright.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_arrowexp_maxright
+        Me.Icon_arrowexp_maxright.Location = New System.Drawing.Point(570, 50)
+        Me.Icon_arrowexp_maxright.Name = "Icon_arrowexp_maxright"
+        Me.Icon_arrowexp_maxright.Size = New System.Drawing.Size(14, 22)
+        Me.Icon_arrowexp_maxright.TabIndex = 320
+        Me.Icon_arrowexp_maxright.TabStop = False
+        '
+        'Icon_arrowexp_maxleft
+        '
+        Me.Icon_arrowexp_maxleft.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_arrowexp_maxleft.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_arrowexp_maxleft
+        Me.Icon_arrowexp_maxleft.Location = New System.Drawing.Point(363, 50)
+        Me.Icon_arrowexp_maxleft.Name = "Icon_arrowexp_maxleft"
+        Me.Icon_arrowexp_maxleft.Size = New System.Drawing.Size(14, 22)
+        Me.Icon_arrowexp_maxleft.TabIndex = 319
+        Me.Icon_arrowexp_maxleft.TabStop = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox12.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox12.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox12.Location = New System.Drawing.Point(356, 132)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox12.TabIndex = 317
+        Me.PictureBox12.TabStop = False
+        Me.PictureBox12.Visible = False
+        '
+        'CheckBox27
+        '
+        Me.CheckBox27.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox27.AutoSize = True
+        Me.CheckBox27.BackColor = System.Drawing.Color.White
+        Me.CheckBox27.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox27.FlatAppearance.BorderSize = 0
+        Me.CheckBox27.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.CheckBox27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.CheckBox27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.CheckBox27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox27.Location = New System.Drawing.Point(380, 132)
+        Me.CheckBox27.Name = "CheckBox27"
+        Me.CheckBox27.Size = New System.Drawing.Size(147, 23)
+        Me.CheckBox27.TabIndex = 318
+        Me.CheckBox27.Text = "He never have to eat again"
+        Me.CheckBox27.UseVisualStyleBackColor = False
+        '
+        'Icon_arrowexp_left
+        '
+        Me.Icon_arrowexp_left.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_arrowexp_left.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_arrowexp_left
+        Me.Icon_arrowexp_left.Location = New System.Drawing.Point(380, 50)
+        Me.Icon_arrowexp_left.Name = "Icon_arrowexp_left"
+        Me.Icon_arrowexp_left.Size = New System.Drawing.Size(11, 22)
+        Me.Icon_arrowexp_left.TabIndex = 316
+        Me.Icon_arrowexp_left.TabStop = False
+        '
+        'Icon_arrowexp_right
+        '
+        Me.Icon_arrowexp_right.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_arrowexp_right.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_arrowexp_right
+        Me.Icon_arrowexp_right.Location = New System.Drawing.Point(556, 50)
+        Me.Icon_arrowexp_right.Name = "Icon_arrowexp_right"
+        Me.Icon_arrowexp_right.Size = New System.Drawing.Size(11, 22)
+        Me.Icon_arrowexp_right.TabIndex = 315
+        Me.Icon_arrowexp_right.TabStop = False
+        '
+        'Select_allfav_US1
+        '
+        Me.Select_allfav_US1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_allfav_US1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_allfav_US1.FormattingEnabled = True
+        Me.Select_allfav_US1.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
+        Me.Select_allfav_US1.Location = New System.Drawing.Point(135, 93)
+        Me.Select_allfav_US1.Name = "Select_allfav_US1"
+        Me.Select_allfav_US1.Size = New System.Drawing.Size(167, 21)
+        Me.Select_allfav_US1.TabIndex = 312
+        '
         'AdvH_worst
         '
         Me.AdvH_worst.BackColor = System.Drawing.Color.Transparent
@@ -8077,18 +13091,6 @@ Partial Class TL_SaveEditor
         Me.AdvH_allfav.TabStop = False
         Me.AdvH_allfav.Visible = False
         '
-        'AdvH_gifs
-        '
-        Me.AdvH_gifs.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_gifs.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_gifs.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_gifs.Location = New System.Drawing.Point(546, 227)
-        Me.AdvH_gifs.Name = "AdvH_gifs"
-        Me.AdvH_gifs.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_gifs.TabIndex = 308
-        Me.AdvH_gifs.TabStop = False
-        Me.AdvH_gifs.Visible = False
-        '
         'AdvH_fullness
         '
         Me.AdvH_fullness.BackColor = System.Drawing.Color.Transparent
@@ -8106,7 +13108,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_experience.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_experience.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_experience.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_experience.Location = New System.Drawing.Point(546, 51)
+        Me.AdvH_experience.Location = New System.Drawing.Point(587, 51)
         Me.AdvH_experience.Name = "AdvH_experience"
         Me.AdvH_experience.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_experience.TabIndex = 305
@@ -8118,7 +13120,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_miilevel.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_miilevel.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_miilevel.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_miilevel.Location = New System.Drawing.Point(340, 51)
+        Me.AdvH_miilevel.Location = New System.Drawing.Point(328, 51)
         Me.AdvH_miilevel.Name = "AdvH_miilevel"
         Me.AdvH_miilevel.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_miilevel.TabIndex = 304
@@ -8207,7 +13209,7 @@ Partial Class TL_SaveEditor
         'valu_chkfullness
         '
         Me.valu_chkfullness.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_chkfullness.Location = New System.Drawing.Point(380, 132)
+        Me.valu_chkfullness.Location = New System.Drawing.Point(379, 156)
         Me.valu_chkfullness.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_chkfullness.Name = "valu_chkfullness"
         Me.valu_chkfullness.Size = New System.Drawing.Size(38, 16)
@@ -8218,7 +13220,7 @@ Partial Class TL_SaveEditor
         'valu_experience
         '
         Me.valu_experience.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_experience.Location = New System.Drawing.Point(372, 54)
+        Me.valu_experience.Location = New System.Drawing.Point(397, 54)
         Me.valu_experience.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_experience.Name = "valu_experience"
         Me.valu_experience.Size = New System.Drawing.Size(40, 16)
@@ -8228,8 +13230,10 @@ Partial Class TL_SaveEditor
         '
         'valu_itemmii_8
         '
+        Me.valu_itemmii_8.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_itemmii_8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_8.Location = New System.Drawing.Point(502, 252)
+        Me.valu_itemmii_8.Hexadecimal = True
+        Me.valu_itemmii_8.Location = New System.Drawing.Point(541, 238)
         Me.valu_itemmii_8.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_8.Name = "valu_itemmii_8"
         Me.valu_itemmii_8.Size = New System.Drawing.Size(40, 16)
@@ -8239,8 +13243,10 @@ Partial Class TL_SaveEditor
         '
         'valu_itemmii_7
         '
+        Me.valu_itemmii_7.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_itemmii_7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_7.Location = New System.Drawing.Point(468, 252)
+        Me.valu_itemmii_7.Hexadecimal = True
+        Me.valu_itemmii_7.Location = New System.Drawing.Point(507, 238)
         Me.valu_itemmii_7.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_7.Name = "valu_itemmii_7"
         Me.valu_itemmii_7.Size = New System.Drawing.Size(40, 16)
@@ -8250,8 +13256,10 @@ Partial Class TL_SaveEditor
         '
         'valu_itemmii_6
         '
+        Me.valu_itemmii_6.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_itemmii_6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_6.Location = New System.Drawing.Point(434, 252)
+        Me.valu_itemmii_6.Hexadecimal = True
+        Me.valu_itemmii_6.Location = New System.Drawing.Point(473, 238)
         Me.valu_itemmii_6.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_6.Name = "valu_itemmii_6"
         Me.valu_itemmii_6.Size = New System.Drawing.Size(40, 16)
@@ -8261,8 +13269,10 @@ Partial Class TL_SaveEditor
         '
         'valu_itemmii_5
         '
+        Me.valu_itemmii_5.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_itemmii_5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_5.Location = New System.Drawing.Point(400, 252)
+        Me.valu_itemmii_5.Hexadecimal = True
+        Me.valu_itemmii_5.Location = New System.Drawing.Point(439, 238)
         Me.valu_itemmii_5.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_5.Name = "valu_itemmii_5"
         Me.valu_itemmii_5.Size = New System.Drawing.Size(40, 16)
@@ -8293,7 +13303,7 @@ Partial Class TL_SaveEditor
         Me.Panel22.Controls.Add(Me.Panel_target1)
         Me.Panel22.Controls.Add(Me.Panel27)
         Me.Panel22.Controls.Add(Me.Panel_target1_foods)
-        Me.Panel22.Location = New System.Drawing.Point(8, 334)
+        Me.Panel22.Location = New System.Drawing.Point(8, 359)
         Me.Panel22.Name = "Panel22"
         Me.Panel22.Size = New System.Drawing.Size(631, 109)
         Me.Panel22.TabIndex = 287
@@ -8324,6 +13334,7 @@ Partial Class TL_SaveEditor
         '
         'valu_interacunknow
         '
+        Me.valu_interacunknow.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_interacunknow.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_interacunknow.Hexadecimal = True
         Me.valu_interacunknow.Location = New System.Drawing.Point(158, 49)
@@ -8336,6 +13347,7 @@ Partial Class TL_SaveEditor
         '
         'valu_enddateinterac
         '
+        Me.valu_enddateinterac.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_enddateinterac.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_enddateinterac.Hexadecimal = True
         Me.valu_enddateinterac.Location = New System.Drawing.Point(35, 49)
@@ -8582,6 +13594,7 @@ Partial Class TL_SaveEditor
         '
         'valu_interaction
         '
+        Me.valu_interaction.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_interaction.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_interaction.Hexadecimal = True
         Me.valu_interaction.Location = New System.Drawing.Point(104, 4)
@@ -8648,8 +13661,10 @@ Partial Class TL_SaveEditor
         '
         'valu_itemmii_1
         '
+        Me.valu_itemmii_1.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_itemmii_1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_1.Location = New System.Drawing.Point(397, 218)
+        Me.valu_itemmii_1.Hexadecimal = True
+        Me.valu_itemmii_1.Location = New System.Drawing.Point(436, 204)
         Me.valu_itemmii_1.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_1.Name = "valu_itemmii_1"
         Me.valu_itemmii_1.Size = New System.Drawing.Size(40, 16)
@@ -8659,8 +13674,10 @@ Partial Class TL_SaveEditor
         '
         'valu_itemmii_4
         '
+        Me.valu_itemmii_4.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_itemmii_4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_4.Location = New System.Drawing.Point(507, 218)
+        Me.valu_itemmii_4.Hexadecimal = True
+        Me.valu_itemmii_4.Location = New System.Drawing.Point(546, 204)
         Me.valu_itemmii_4.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_4.Name = "valu_itemmii_4"
         Me.valu_itemmii_4.Size = New System.Drawing.Size(40, 16)
@@ -8670,8 +13687,10 @@ Partial Class TL_SaveEditor
         '
         'valu_itemmii_2
         '
+        Me.valu_itemmii_2.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_itemmii_2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_2.Location = New System.Drawing.Point(434, 218)
+        Me.valu_itemmii_2.Hexadecimal = True
+        Me.valu_itemmii_2.Location = New System.Drawing.Point(473, 204)
         Me.valu_itemmii_2.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_2.Name = "valu_itemmii_2"
         Me.valu_itemmii_2.Size = New System.Drawing.Size(40, 16)
@@ -8681,8 +13700,10 @@ Partial Class TL_SaveEditor
         '
         'valu_itemmii_3
         '
+        Me.valu_itemmii_3.BackColor = System.Drawing.Color.AliceBlue
         Me.valu_itemmii_3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemmii_3.Location = New System.Drawing.Point(473, 218)
+        Me.valu_itemmii_3.Hexadecimal = True
+        Me.valu_itemmii_3.Location = New System.Drawing.Point(512, 204)
         Me.valu_itemmii_3.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_itemmii_3.Name = "valu_itemmii_3"
         Me.valu_itemmii_3.Size = New System.Drawing.Size(40, 16)
@@ -8695,7 +13716,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_4.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_FFFF
-        Me.Icon_itemmii_4.Location = New System.Drawing.Point(511, 207)
+        Me.Icon_itemmii_4.Location = New System.Drawing.Point(550, 193)
         Me.Icon_itemmii_4.Name = "Icon_itemmii_4"
         Me.Icon_itemmii_4.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_4.TabIndex = 254
@@ -8706,7 +13727,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_5.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_FFFF
-        Me.Icon_itemmii_5.Location = New System.Drawing.Point(409, 241)
+        Me.Icon_itemmii_5.Location = New System.Drawing.Point(448, 227)
         Me.Icon_itemmii_5.Name = "Icon_itemmii_5"
         Me.Icon_itemmii_5.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_5.TabIndex = 255
@@ -8727,7 +13748,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_6.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_FFFF
-        Me.Icon_itemmii_6.Location = New System.Drawing.Point(443, 241)
+        Me.Icon_itemmii_6.Location = New System.Drawing.Point(482, 227)
         Me.Icon_itemmii_6.Name = "Icon_itemmii_6"
         Me.Icon_itemmii_6.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_6.TabIndex = 256
@@ -8748,7 +13769,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_7.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_7.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_FFFF
-        Me.Icon_itemmii_7.Location = New System.Drawing.Point(477, 241)
+        Me.Icon_itemmii_7.Location = New System.Drawing.Point(516, 227)
         Me.Icon_itemmii_7.Name = "Icon_itemmii_7"
         Me.Icon_itemmii_7.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_7.TabIndex = 257
@@ -8769,7 +13790,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_8.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_8.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_FFFF
-        Me.Icon_itemmii_8.Location = New System.Drawing.Point(511, 241)
+        Me.Icon_itemmii_8.Location = New System.Drawing.Point(550, 227)
         Me.Icon_itemmii_8.Name = "Icon_itemmii_8"
         Me.Icon_itemmii_8.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_8.TabIndex = 258
@@ -8780,7 +13801,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_3.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_FFFF
-        Me.Icon_itemmii_3.Location = New System.Drawing.Point(477, 207)
+        Me.Icon_itemmii_3.Location = New System.Drawing.Point(516, 193)
         Me.Icon_itemmii_3.Name = "Icon_itemmii_3"
         Me.Icon_itemmii_3.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_3.TabIndex = 253
@@ -8791,7 +13812,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_2.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_FFFF
-        Me.Icon_itemmii_2.Location = New System.Drawing.Point(443, 207)
+        Me.Icon_itemmii_2.Location = New System.Drawing.Point(482, 193)
         Me.Icon_itemmii_2.Name = "Icon_itemmii_2"
         Me.Icon_itemmii_2.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_2.TabIndex = 252
@@ -8801,7 +13822,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_level.AutoSize = True
         Me.Text_level.BackColor = System.Drawing.Color.Transparent
-        Me.Text_level.Location = New System.Drawing.Point(272, 56)
+        Me.Text_level.Location = New System.Drawing.Point(260, 56)
         Me.Text_level.Name = "Text_level"
         Me.Text_level.Size = New System.Drawing.Size(22, 13)
         Me.Text_level.TabIndex = 268
@@ -8812,7 +13833,7 @@ Partial Class TL_SaveEditor
         Me.Icon_itemmii_1.BackColor = System.Drawing.Color.Transparent
         Me.Icon_itemmii_1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_itemmii_1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.gif_FFFF
-        Me.Icon_itemmii_1.Location = New System.Drawing.Point(409, 207)
+        Me.Icon_itemmii_1.Location = New System.Drawing.Point(448, 193)
         Me.Icon_itemmii_1.Name = "Icon_itemmii_1"
         Me.Icon_itemmii_1.Size = New System.Drawing.Size(31, 27)
         Me.Icon_itemmii_1.TabIndex = 251
@@ -8823,7 +13844,7 @@ Partial Class TL_SaveEditor
         Me.Icon_experience.BackColor = System.Drawing.Color.Transparent
         Me.Icon_experience.Cursor = System.Windows.Forms.Cursors.Default
         Me.Icon_experience.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.exp0
-        Me.Icon_experience.Location = New System.Drawing.Point(370, 51)
+        Me.Icon_experience.Location = New System.Drawing.Point(394, 51)
         Me.Icon_experience.Name = "Icon_experience"
         Me.Icon_experience.Size = New System.Drawing.Size(159, 22)
         Me.Icon_experience.TabIndex = 269
@@ -8832,7 +13853,7 @@ Partial Class TL_SaveEditor
         'valu_level
         '
         Me.valu_level.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_level.Location = New System.Drawing.Point(300, 54)
+        Me.valu_level.Location = New System.Drawing.Point(288, 54)
         Me.valu_level.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_level.Name = "valu_level"
         Me.valu_level.Size = New System.Drawing.Size(40, 16)
@@ -8868,15 +13889,6 @@ Partial Class TL_SaveEditor
         Me.Icon_fullness.Size = New System.Drawing.Size(55, 50)
         Me.Icon_fullness.TabIndex = 271
         Me.Icon_fullness.TabStop = False
-        '
-        'valu_exp
-        '
-        Me.valu_exp.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_exp.Location = New System.Drawing.Point(505, 54)
-        Me.valu_exp.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.valu_exp.Name = "valu_exp"
-        Me.valu_exp.Size = New System.Drawing.Size(40, 16)
-        Me.valu_exp.TabIndex = 273
         '
         'Select_allfav_2
         '
@@ -9015,7 +14027,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_noeat.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_noeat.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_noeat.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_noeat.Location = New System.Drawing.Point(421, 129)
+        Me.AdvH_noeat.Location = New System.Drawing.Point(356, 105)
         Me.AdvH_noeat.Name = "AdvH_noeat"
         Me.AdvH_noeat.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_noeat.TabIndex = 307
@@ -9044,9 +14056,28 @@ Partial Class TL_SaveEditor
         Me.valu_allfav_1.TabIndex = 278
         Me.valu_allfav_1.Value = New Decimal(New Integer() {65535, 0, 0, 0})
         '
+        'CheckBox26
+        '
+        Me.CheckBox26.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox26.AutoSize = True
+        Me.CheckBox26.BackColor = System.Drawing.Color.White
+        Me.CheckBox26.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox26.FlatAppearance.BorderSize = 0
+        Me.CheckBox26.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.CheckBox26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.CheckBox26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.CheckBox26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox26.Location = New System.Drawing.Point(380, 105)
+        Me.CheckBox26.Name = "CheckBox26"
+        Me.CheckBox26.Size = New System.Drawing.Size(77, 23)
+        Me.CheckBox26.TabIndex = 314
+        Me.CheckBox26.Text = "He didn't eat"
+        Me.CheckBox26.UseVisualStyleBackColor = False
+        '
         'TabPage4
         '
         Me.TabPage4.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
+        Me.TabPage4.Controls.Add(Me.ComboBox1)
         Me.TabPage4.Controls.Add(Me.AdvH_setallrelation)
         Me.TabPage4.Controls.Add(Me.Panel28)
         Me.TabPage4.Controls.Add(Me.AdvH_setallfriends)
@@ -13897,6 +18928,7 @@ Partial Class TL_SaveEditor
         'TabPage5
         '
         Me.TabPage5.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.TabPage5.Controls.Add(Me.Panel_edit_haircolor)
         Me.TabPage5.Controls.Add(Me.Panel48)
         Me.TabPage5.Controls.Add(Me.Panel49)
         Me.TabPage5.Controls.Add(Me.AdvH_splurgerank)
@@ -13921,7 +18953,6 @@ Partial Class TL_SaveEditor
         Me.TabPage5.Controls.Add(Me.Title_miieconomy)
         Me.TabPage5.Controls.Add(Me.AdvH_miieconomy)
         Me.TabPage5.Controls.Add(Me.PictureBox34)
-        Me.TabPage5.Controls.Add(Me.Panel_edit_haircolor)
         Me.TabPage5.Controls.Add(Me.Title_switch_interiors)
         Me.TabPage5.Controls.Add(Me.Title_switch_clothes)
         Me.TabPage5.Controls.Add(Me.Panel31)
@@ -13940,9 +18971,9 @@ Partial Class TL_SaveEditor
         Me.TabPage5.Controls.Add(Me.Icon_cathphrase)
         Me.TabPage5.Controls.Add(Me.Icon_switch_hats)
         Me.TabPage5.Controls.Add(Me.Icon_inventory)
+        Me.TabPage5.Controls.Add(Me.Panel_mii_inventory)
         Me.TabPage5.Controls.Add(Me.Panel_mii_musics)
         Me.TabPage5.Controls.Add(Me.Panel_cathphrase)
-        Me.TabPage5.Controls.Add(Me.Panel_mii_inventory)
         Me.TabPage5.ImageKey = "icon_mii_equip.png"
         Me.TabPage5.Location = New System.Drawing.Point(25, 4)
         Me.TabPage5.Name = "TabPage5"
@@ -13950,306 +18981,6 @@ Partial Class TL_SaveEditor
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.ToolTipText = "Mii equipment and inventory"
         Me.TabPage5.UseVisualStyleBackColor = True
-        '
-        'Panel48
-        '
-        Me.Panel48.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel48.Controls.Add(Me.valu_ranking_pampered)
-        Me.Panel48.Location = New System.Drawing.Point(486, 264)
-        Me.Panel48.Name = "Panel48"
-        Me.Panel48.Size = New System.Drawing.Size(97, 20)
-        Me.Panel48.TabIndex = 294
-        '
-        'valu_ranking_pampered
-        '
-        Me.valu_ranking_pampered.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_ranking_pampered.Location = New System.Drawing.Point(2, 2)
-        Me.valu_ranking_pampered.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
-        Me.valu_ranking_pampered.Name = "valu_ranking_pampered"
-        Me.valu_ranking_pampered.Size = New System.Drawing.Size(93, 16)
-        Me.valu_ranking_pampered.TabIndex = 8
-        Me.valu_ranking_pampered.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_ranking_pampered.ThousandsSeparator = True
-        '
-        'Panel49
-        '
-        Me.Panel49.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel49.Controls.Add(Me.valu_ranking_splurge)
-        Me.Panel49.Location = New System.Drawing.Point(486, 354)
-        Me.Panel49.Name = "Panel49"
-        Me.Panel49.Size = New System.Drawing.Size(97, 20)
-        Me.Panel49.TabIndex = 293
-        '
-        'valu_ranking_splurge
-        '
-        Me.valu_ranking_splurge.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_ranking_splurge.Location = New System.Drawing.Point(2, 2)
-        Me.valu_ranking_splurge.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
-        Me.valu_ranking_splurge.Name = "valu_ranking_splurge"
-        Me.valu_ranking_splurge.Size = New System.Drawing.Size(93, 16)
-        Me.valu_ranking_splurge.TabIndex = 11
-        Me.valu_ranking_splurge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_ranking_splurge.ThousandsSeparator = True
-        '
-        'AdvH_splurgerank
-        '
-        Me.AdvH_splurgerank.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_splurgerank.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_splurgerank.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_splurgerank.Location = New System.Drawing.Point(585, 352)
-        Me.AdvH_splurgerank.Name = "AdvH_splurgerank"
-        Me.AdvH_splurgerank.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_splurgerank.TabIndex = 292
-        Me.AdvH_splurgerank.TabStop = False
-        Me.AdvH_splurgerank.Visible = False
-        '
-        'AdvH_pamperedrank
-        '
-        Me.AdvH_pamperedrank.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_pamperedrank.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_pamperedrank.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_pamperedrank.Location = New System.Drawing.Point(585, 262)
-        Me.AdvH_pamperedrank.Name = "AdvH_pamperedrank"
-        Me.AdvH_pamperedrank.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_pamperedrank.TabIndex = 291
-        Me.AdvH_pamperedrank.TabStop = False
-        Me.AdvH_pamperedrank.Visible = False
-        '
-        'Title_ranking_splurge
-        '
-        Me.Title_ranking_splurge.BackColor = System.Drawing.Color.Transparent
-        Me.Title_ranking_splurge.Location = New System.Drawing.Point(486, 325)
-        Me.Title_ranking_splurge.Name = "Title_ranking_splurge"
-        Me.Title_ranking_splurge.Size = New System.Drawing.Size(93, 13)
-        Me.Title_ranking_splurge.TabIndex = 290
-        Me.Title_ranking_splurge.Text = "Splurge ranking"
-        Me.Title_ranking_splurge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Icon_ranking_splurge
-        '
-        Me.Icon_ranking_splurge.Image = CType(resources.GetObject("Icon_ranking_splurge.Image"), System.Drawing.Image)
-        Me.Icon_ranking_splurge.Location = New System.Drawing.Point(430, 316)
-        Me.Icon_ranking_splurge.Name = "Icon_ranking_splurge"
-        Me.Icon_ranking_splurge.Size = New System.Drawing.Size(50, 64)
-        Me.Icon_ranking_splurge.TabIndex = 289
-        Me.Icon_ranking_splurge.TabStop = False
-        '
-        'Title_ranking_pampered
-        '
-        Me.Title_ranking_pampered.BackColor = System.Drawing.Color.Transparent
-        Me.Title_ranking_pampered.Location = New System.Drawing.Point(486, 235)
-        Me.Title_ranking_pampered.Name = "Title_ranking_pampered"
-        Me.Title_ranking_pampered.Size = New System.Drawing.Size(93, 13)
-        Me.Title_ranking_pampered.TabIndex = 288
-        Me.Title_ranking_pampered.Text = "Pampered ranking"
-        Me.Title_ranking_pampered.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Icon_ranking_pampered
-        '
-        Me.Icon_ranking_pampered.Image = CType(resources.GetObject("Icon_ranking_pampered.Image"), System.Drawing.Image)
-        Me.Icon_ranking_pampered.Location = New System.Drawing.Point(430, 226)
-        Me.Icon_ranking_pampered.Name = "Icon_ranking_pampered"
-        Me.Icon_ranking_pampered.Size = New System.Drawing.Size(50, 64)
-        Me.Icon_ranking_pampered.TabIndex = 287
-        Me.Icon_ranking_pampered.TabStop = False
-        '
-        'Panel45
-        '
-        Me.Panel45.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel45.Controls.Add(Me.valu_miihouse)
-        Me.Panel45.Controls.Add(Me.Select_miihouse)
-        Me.Panel45.Location = New System.Drawing.Point(293, 122)
-        Me.Panel45.Name = "Panel45"
-        Me.Panel45.Size = New System.Drawing.Size(138, 25)
-        Me.Panel45.TabIndex = 286
-        '
-        'valu_miihouse
-        '
-        Me.valu_miihouse.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_miihouse.Location = New System.Drawing.Point(52, 4)
-        Me.valu_miihouse.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_miihouse.Name = "valu_miihouse"
-        Me.valu_miihouse.Size = New System.Drawing.Size(35, 16)
-        Me.valu_miihouse.TabIndex = 179
-        Me.valu_miihouse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_miihouse.Visible = False
-        '
-        'Select_miihouse
-        '
-        Me.Select_miihouse.BackColor = System.Drawing.SystemColors.Window
-        Me.Select_miihouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_miihouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_miihouse.FormattingEnabled = True
-        Me.Select_miihouse.IntegralHeight = False
-        Me.Select_miihouse.Items.AddRange(New Object() {"Mii House 1 / None", "Mii House 2", "Mii House 3", "Mii House 4", "Mii House 5", "Mii House 6", "Mii House 7", "Mii House 8", "Mii House 9", "Mii House 10", "Mii House 11", "Mii House 12", "Mii House 13", "Mii House 14", "Mii House 15", "Mii House 16", "Mii House 17", "Mii House 18", "Mii House 19", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "20", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "21", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "22", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "23", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "24", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "25", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "26", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "27", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "28", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "29", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "30", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "31", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "32", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "33", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "34", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "35", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "36", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "37", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "38", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "39", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "40", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "41", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "42", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "43", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "44", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "45", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "46", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "47", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "48", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "49", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "50"})
-        Me.Select_miihouse.Location = New System.Drawing.Point(2, 2)
-        Me.Select_miihouse.Name = "Select_miihouse"
-        Me.Select_miihouse.Size = New System.Drawing.Size(134, 21)
-        Me.Select_miihouse.TabIndex = 207
-        '
-        'AdvH_haircolor
-        '
-        Me.AdvH_haircolor.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_haircolor.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_haircolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_haircolor.Location = New System.Drawing.Point(516, 71)
-        Me.AdvH_haircolor.Name = "AdvH_haircolor"
-        Me.AdvH_haircolor.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_haircolor.TabIndex = 285
-        Me.AdvH_haircolor.TabStop = False
-        Me.AdvH_haircolor.Visible = False
-        '
-        'AdvH_interior
-        '
-        Me.AdvH_interior.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_interior.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_interior.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_interior.Location = New System.Drawing.Point(463, 117)
-        Me.AdvH_interior.Name = "AdvH_interior"
-        Me.AdvH_interior.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_interior.TabIndex = 284
-        Me.AdvH_interior.TabStop = False
-        Me.AdvH_interior.Visible = False
-        '
-        'AdvH_miihouse
-        '
-        Me.AdvH_miihouse.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_miihouse.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_miihouse.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_miihouse.Location = New System.Drawing.Point(382, 100)
-        Me.AdvH_miihouse.Name = "AdvH_miihouse"
-        Me.AdvH_miihouse.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_miihouse.TabIndex = 283
-        Me.AdvH_miihouse.TabStop = False
-        Me.AdvH_miihouse.Visible = False
-        '
-        'Title_miihouse
-        '
-        Me.Title_miihouse.Location = New System.Drawing.Point(327, 63)
-        Me.Title_miihouse.Name = "Title_miihouse"
-        Me.Title_miihouse.Size = New System.Drawing.Size(71, 13)
-        Me.Title_miihouse.TabIndex = 282
-        Me.Title_miihouse.Text = "Mii house"
-        Me.Title_miihouse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Icon_haircolor
-        '
-        Me.Icon_haircolor.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_haircolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.HCdefault
-        Me.Icon_haircolor.Location = New System.Drawing.Point(491, 70)
-        Me.Icon_haircolor.Name = "Icon_haircolor"
-        Me.Icon_haircolor.Size = New System.Drawing.Size(24, 24)
-        Me.Icon_haircolor.TabIndex = 280
-        Me.Icon_haircolor.TabStop = False
-        '
-        'valu_haircolor
-        '
-        Me.valu_haircolor.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_haircolor.Location = New System.Drawing.Point(457, 75)
-        Me.valu_haircolor.Maximum = New Decimal(New Integer() {191, 0, 0, 0})
-        Me.valu_haircolor.Name = "valu_haircolor"
-        Me.valu_haircolor.Size = New System.Drawing.Size(35, 16)
-        Me.valu_haircolor.TabIndex = 281
-        Me.valu_haircolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_haircolor.Visible = False
-        '
-        'Title_haircolor
-        '
-        Me.Title_haircolor.Location = New System.Drawing.Point(450, 54)
-        Me.Title_haircolor.Name = "Title_haircolor"
-        Me.Title_haircolor.Size = New System.Drawing.Size(104, 13)
-        Me.Title_haircolor.TabIndex = 279
-        Me.Title_haircolor.Text = "Hair color"
-        Me.Title_haircolor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Icon_miihouse
-        '
-        Me.Icon_miihouse.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_mii_house
-        Me.Icon_miihouse.Location = New System.Drawing.Point(342, 79)
-        Me.Icon_miihouse.Name = "Icon_miihouse"
-        Me.Icon_miihouse.Size = New System.Drawing.Size(40, 43)
-        Me.Icon_miihouse.TabIndex = 278
-        Me.Icon_miihouse.TabStop = False
-        '
-        'valu_miiapart
-        '
-        Me.valu_miiapart.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_miiapart.Location = New System.Drawing.Point(508, 123)
-        Me.valu_miiapart.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_miiapart.Name = "valu_miiapart"
-        Me.valu_miiapart.Size = New System.Drawing.Size(35, 16)
-        Me.valu_miiapart.TabIndex = 277
-        Me.valu_miiapart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_miiapart.Value = New Decimal(New Integer() {100, 0, 0, 0})
-        Me.valu_miiapart.Visible = False
-        '
-        'Text_miiapart
-        '
-        Me.Text_miiapart.Location = New System.Drawing.Point(466, 140)
-        Me.Text_miiapart.Name = "Text_miiapart"
-        Me.Text_miiapart.Size = New System.Drawing.Size(77, 14)
-        Me.Text_miiapart.TabIndex = 276
-        Me.Text_miiapart.Text = "app.101"
-        Me.Text_miiapart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Icon_miiapart
-        '
-        Me.Icon_miiapart.Image = CType(resources.GetObject("Icon_miiapart.Image"), System.Drawing.Image)
-        Me.Icon_miiapart.Location = New System.Drawing.Point(486, 114)
-        Me.Icon_miiapart.Name = "Icon_miiapart"
-        Me.Icon_miiapart.Size = New System.Drawing.Size(32, 25)
-        Me.Icon_miiapart.TabIndex = 275
-        Me.Icon_miiapart.TabStop = False
-        '
-        'Panel44
-        '
-        Me.Panel44.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel44.Controls.Add(Me.valu_economy)
-        Me.Panel44.Location = New System.Drawing.Point(477, 446)
-        Me.Panel44.Name = "Panel44"
-        Me.Panel44.Size = New System.Drawing.Size(76, 20)
-        Me.Panel44.TabIndex = 274
-        '
-        'valu_economy
-        '
-        Me.valu_economy.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_economy.Location = New System.Drawing.Point(2, 2)
-        Me.valu_economy.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
-        Me.valu_economy.Name = "valu_economy"
-        Me.valu_economy.Size = New System.Drawing.Size(72, 16)
-        Me.valu_economy.TabIndex = 112
-        Me.valu_economy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Title_miieconomy
-        '
-        Me.Title_miieconomy.Location = New System.Drawing.Point(453, 429)
-        Me.Title_miieconomy.Name = "Title_miieconomy"
-        Me.Title_miieconomy.Size = New System.Drawing.Size(122, 13)
-        Me.Title_miieconomy.TabIndex = 273
-        Me.Title_miieconomy.Text = "Mii economy"
-        Me.Title_miieconomy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AdvH_miieconomy
-        '
-        Me.AdvH_miieconomy.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_miieconomy.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_miieconomy.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_miieconomy.Location = New System.Drawing.Point(553, 445)
-        Me.AdvH_miieconomy.Name = "AdvH_miieconomy"
-        Me.AdvH_miieconomy.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_miieconomy.TabIndex = 272
-        Me.AdvH_miieconomy.TabStop = False
-        Me.AdvH_miieconomy.Visible = False
-        '
-        'PictureBox34
-        '
-        Me.PictureBox34.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox34.Image = CType(resources.GetObject("PictureBox34.Image"), System.Drawing.Image)
-        Me.PictureBox34.Location = New System.Drawing.Point(454, 445)
-        Me.PictureBox34.Name = "PictureBox34"
-        Me.PictureBox34.Size = New System.Drawing.Size(23, 23)
-        Me.PictureBox34.TabIndex = 271
-        Me.PictureBox34.TabStop = False
         '
         'Panel_edit_haircolor
         '
@@ -14290,7 +19021,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_haircolor.Controls.Add(Me.color_2)
         Me.Panel_edit_haircolor.Controls.Add(Me.color_1)
         Me.Panel_edit_haircolor.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Panel_edit_haircolor.Location = New System.Drawing.Point(217, 334)
+        Me.Panel_edit_haircolor.Location = New System.Drawing.Point(435, 30)
         Me.Panel_edit_haircolor.Name = "Panel_edit_haircolor"
         Me.Panel_edit_haircolor.Size = New System.Drawing.Size(201, 150)
         Me.Panel_edit_haircolor.TabIndex = 270
@@ -14617,6 +19348,308 @@ Partial Class TL_SaveEditor
         Me.color_1.TabIndex = 0
         Me.color_1.TabStop = False
         '
+        'Panel48
+        '
+        Me.Panel48.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel48.Controls.Add(Me.valu_ranking_pampered)
+        Me.Panel48.Location = New System.Drawing.Point(486, 264)
+        Me.Panel48.Name = "Panel48"
+        Me.Panel48.Size = New System.Drawing.Size(97, 20)
+        Me.Panel48.TabIndex = 294
+        '
+        'valu_ranking_pampered
+        '
+        Me.valu_ranking_pampered.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_ranking_pampered.Location = New System.Drawing.Point(2, 2)
+        Me.valu_ranking_pampered.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
+        Me.valu_ranking_pampered.Name = "valu_ranking_pampered"
+        Me.valu_ranking_pampered.Size = New System.Drawing.Size(93, 16)
+        Me.valu_ranking_pampered.TabIndex = 8
+        Me.valu_ranking_pampered.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_ranking_pampered.ThousandsSeparator = True
+        '
+        'Panel49
+        '
+        Me.Panel49.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel49.Controls.Add(Me.valu_ranking_splurge)
+        Me.Panel49.Location = New System.Drawing.Point(486, 354)
+        Me.Panel49.Name = "Panel49"
+        Me.Panel49.Size = New System.Drawing.Size(97, 20)
+        Me.Panel49.TabIndex = 293
+        '
+        'valu_ranking_splurge
+        '
+        Me.valu_ranking_splurge.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_ranking_splurge.Location = New System.Drawing.Point(2, 2)
+        Me.valu_ranking_splurge.Maximum = New Decimal(New Integer() {99999999, 0, 0, 0})
+        Me.valu_ranking_splurge.Name = "valu_ranking_splurge"
+        Me.valu_ranking_splurge.Size = New System.Drawing.Size(93, 16)
+        Me.valu_ranking_splurge.TabIndex = 11
+        Me.valu_ranking_splurge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_ranking_splurge.ThousandsSeparator = True
+        '
+        'AdvH_splurgerank
+        '
+        Me.AdvH_splurgerank.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_splurgerank.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_splurgerank.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_splurgerank.Location = New System.Drawing.Point(585, 352)
+        Me.AdvH_splurgerank.Name = "AdvH_splurgerank"
+        Me.AdvH_splurgerank.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_splurgerank.TabIndex = 292
+        Me.AdvH_splurgerank.TabStop = False
+        Me.AdvH_splurgerank.Visible = False
+        '
+        'AdvH_pamperedrank
+        '
+        Me.AdvH_pamperedrank.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_pamperedrank.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_pamperedrank.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_pamperedrank.Location = New System.Drawing.Point(585, 262)
+        Me.AdvH_pamperedrank.Name = "AdvH_pamperedrank"
+        Me.AdvH_pamperedrank.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_pamperedrank.TabIndex = 291
+        Me.AdvH_pamperedrank.TabStop = False
+        Me.AdvH_pamperedrank.Visible = False
+        '
+        'Title_ranking_splurge
+        '
+        Me.Title_ranking_splurge.BackColor = System.Drawing.Color.Transparent
+        Me.Title_ranking_splurge.Location = New System.Drawing.Point(486, 325)
+        Me.Title_ranking_splurge.Name = "Title_ranking_splurge"
+        Me.Title_ranking_splurge.Size = New System.Drawing.Size(93, 13)
+        Me.Title_ranking_splurge.TabIndex = 290
+        Me.Title_ranking_splurge.Text = "Splurge ranking"
+        Me.Title_ranking_splurge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Icon_ranking_splurge
+        '
+        Me.Icon_ranking_splurge.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_ranking_splurge.Image = CType(resources.GetObject("Icon_ranking_splurge.Image"), System.Drawing.Image)
+        Me.Icon_ranking_splurge.Location = New System.Drawing.Point(430, 316)
+        Me.Icon_ranking_splurge.Name = "Icon_ranking_splurge"
+        Me.Icon_ranking_splurge.Size = New System.Drawing.Size(50, 64)
+        Me.Icon_ranking_splurge.TabIndex = 289
+        Me.Icon_ranking_splurge.TabStop = False
+        '
+        'Title_ranking_pampered
+        '
+        Me.Title_ranking_pampered.BackColor = System.Drawing.Color.Transparent
+        Me.Title_ranking_pampered.Location = New System.Drawing.Point(486, 235)
+        Me.Title_ranking_pampered.Name = "Title_ranking_pampered"
+        Me.Title_ranking_pampered.Size = New System.Drawing.Size(93, 13)
+        Me.Title_ranking_pampered.TabIndex = 288
+        Me.Title_ranking_pampered.Text = "Pampered ranking"
+        Me.Title_ranking_pampered.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Icon_ranking_pampered
+        '
+        Me.Icon_ranking_pampered.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_ranking_pampered.Image = CType(resources.GetObject("Icon_ranking_pampered.Image"), System.Drawing.Image)
+        Me.Icon_ranking_pampered.Location = New System.Drawing.Point(430, 226)
+        Me.Icon_ranking_pampered.Name = "Icon_ranking_pampered"
+        Me.Icon_ranking_pampered.Size = New System.Drawing.Size(50, 64)
+        Me.Icon_ranking_pampered.TabIndex = 287
+        Me.Icon_ranking_pampered.TabStop = False
+        '
+        'Panel45
+        '
+        Me.Panel45.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel45.Controls.Add(Me.valu_miihouse)
+        Me.Panel45.Controls.Add(Me.Select_miihouse)
+        Me.Panel45.Location = New System.Drawing.Point(293, 122)
+        Me.Panel45.Name = "Panel45"
+        Me.Panel45.Size = New System.Drawing.Size(138, 25)
+        Me.Panel45.TabIndex = 286
+        '
+        'valu_miihouse
+        '
+        Me.valu_miihouse.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_miihouse.Location = New System.Drawing.Point(52, 4)
+        Me.valu_miihouse.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_miihouse.Name = "valu_miihouse"
+        Me.valu_miihouse.Size = New System.Drawing.Size(35, 16)
+        Me.valu_miihouse.TabIndex = 179
+        Me.valu_miihouse.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_miihouse.Visible = False
+        '
+        'Select_miihouse
+        '
+        Me.Select_miihouse.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_miihouse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_miihouse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_miihouse.FormattingEnabled = True
+        Me.Select_miihouse.IntegralHeight = False
+        Me.Select_miihouse.Items.AddRange(New Object() {"Mii House 1 / None", "Mii House 2", "Mii House 3", "Mii House 4", "Mii House 5", "Mii House 6", "Mii House 7", "Mii House 8", "Mii House 9", "Mii House 10", "Mii House 11", "Mii House 12", "Mii House 13", "Mii House 14", "Mii House 15", "Mii House 16", "Mii House 17", "Mii House 18", "Mii House 19", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "20", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "21", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "22", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "23", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "24", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "25", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "26", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "27", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "28", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "29", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "30", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "31", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "32", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "33", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "34", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "35", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "36", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "37", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "38", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "39", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "40", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "41", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "42", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "43", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "44", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "45", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "46", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "47", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "48", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "49", "Mii house " & Global.Microsoft.VisualBasic.ChrW(9) & "50"})
+        Me.Select_miihouse.Location = New System.Drawing.Point(2, 2)
+        Me.Select_miihouse.Name = "Select_miihouse"
+        Me.Select_miihouse.Size = New System.Drawing.Size(134, 21)
+        Me.Select_miihouse.TabIndex = 207
+        '
+        'AdvH_haircolor
+        '
+        Me.AdvH_haircolor.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_haircolor.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_haircolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_haircolor.Location = New System.Drawing.Point(516, 71)
+        Me.AdvH_haircolor.Name = "AdvH_haircolor"
+        Me.AdvH_haircolor.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_haircolor.TabIndex = 285
+        Me.AdvH_haircolor.TabStop = False
+        Me.AdvH_haircolor.Visible = False
+        '
+        'AdvH_interior
+        '
+        Me.AdvH_interior.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_interior.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_interior.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_interior.Location = New System.Drawing.Point(463, 117)
+        Me.AdvH_interior.Name = "AdvH_interior"
+        Me.AdvH_interior.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_interior.TabIndex = 284
+        Me.AdvH_interior.TabStop = False
+        Me.AdvH_interior.Visible = False
+        '
+        'AdvH_miihouse
+        '
+        Me.AdvH_miihouse.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_miihouse.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_miihouse.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_miihouse.Location = New System.Drawing.Point(382, 100)
+        Me.AdvH_miihouse.Name = "AdvH_miihouse"
+        Me.AdvH_miihouse.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_miihouse.TabIndex = 283
+        Me.AdvH_miihouse.TabStop = False
+        Me.AdvH_miihouse.Visible = False
+        '
+        'Title_miihouse
+        '
+        Me.Title_miihouse.Location = New System.Drawing.Point(327, 63)
+        Me.Title_miihouse.Name = "Title_miihouse"
+        Me.Title_miihouse.Size = New System.Drawing.Size(71, 13)
+        Me.Title_miihouse.TabIndex = 282
+        Me.Title_miihouse.Text = "Mii house"
+        Me.Title_miihouse.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Icon_haircolor
+        '
+        Me.Icon_haircolor.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_haircolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.HCdefault
+        Me.Icon_haircolor.Location = New System.Drawing.Point(491, 70)
+        Me.Icon_haircolor.Name = "Icon_haircolor"
+        Me.Icon_haircolor.Size = New System.Drawing.Size(24, 24)
+        Me.Icon_haircolor.TabIndex = 280
+        Me.Icon_haircolor.TabStop = False
+        '
+        'valu_haircolor
+        '
+        Me.valu_haircolor.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_haircolor.Location = New System.Drawing.Point(457, 75)
+        Me.valu_haircolor.Maximum = New Decimal(New Integer() {191, 0, 0, 0})
+        Me.valu_haircolor.Name = "valu_haircolor"
+        Me.valu_haircolor.Size = New System.Drawing.Size(35, 16)
+        Me.valu_haircolor.TabIndex = 281
+        Me.valu_haircolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_haircolor.Visible = False
+        '
+        'Title_haircolor
+        '
+        Me.Title_haircolor.Location = New System.Drawing.Point(450, 54)
+        Me.Title_haircolor.Name = "Title_haircolor"
+        Me.Title_haircolor.Size = New System.Drawing.Size(104, 13)
+        Me.Title_haircolor.TabIndex = 279
+        Me.Title_haircolor.Text = "Hair color"
+        Me.Title_haircolor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Icon_miihouse
+        '
+        Me.Icon_miihouse.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_mii_house
+        Me.Icon_miihouse.Location = New System.Drawing.Point(342, 79)
+        Me.Icon_miihouse.Name = "Icon_miihouse"
+        Me.Icon_miihouse.Size = New System.Drawing.Size(40, 43)
+        Me.Icon_miihouse.TabIndex = 278
+        Me.Icon_miihouse.TabStop = False
+        '
+        'valu_miiapart
+        '
+        Me.valu_miiapart.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_miiapart.Location = New System.Drawing.Point(508, 123)
+        Me.valu_miiapart.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_miiapart.Name = "valu_miiapart"
+        Me.valu_miiapart.Size = New System.Drawing.Size(35, 16)
+        Me.valu_miiapart.TabIndex = 277
+        Me.valu_miiapart.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_miiapart.Value = New Decimal(New Integer() {100, 0, 0, 0})
+        Me.valu_miiapart.Visible = False
+        '
+        'Text_miiapart
+        '
+        Me.Text_miiapart.Location = New System.Drawing.Point(466, 140)
+        Me.Text_miiapart.Name = "Text_miiapart"
+        Me.Text_miiapart.Size = New System.Drawing.Size(77, 14)
+        Me.Text_miiapart.TabIndex = 276
+        Me.Text_miiapart.Text = "app.101"
+        Me.Text_miiapart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Icon_miiapart
+        '
+        Me.Icon_miiapart.Image = CType(resources.GetObject("Icon_miiapart.Image"), System.Drawing.Image)
+        Me.Icon_miiapart.Location = New System.Drawing.Point(486, 114)
+        Me.Icon_miiapart.Name = "Icon_miiapart"
+        Me.Icon_miiapart.Size = New System.Drawing.Size(32, 25)
+        Me.Icon_miiapart.TabIndex = 275
+        Me.Icon_miiapart.TabStop = False
+        '
+        'Panel44
+        '
+        Me.Panel44.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel44.Controls.Add(Me.valu_economy)
+        Me.Panel44.Location = New System.Drawing.Point(477, 446)
+        Me.Panel44.Name = "Panel44"
+        Me.Panel44.Size = New System.Drawing.Size(76, 20)
+        Me.Panel44.TabIndex = 274
+        '
+        'valu_economy
+        '
+        Me.valu_economy.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_economy.Location = New System.Drawing.Point(2, 2)
+        Me.valu_economy.Maximum = New Decimal(New Integer() {999999, 0, 0, 0})
+        Me.valu_economy.Name = "valu_economy"
+        Me.valu_economy.Size = New System.Drawing.Size(72, 16)
+        Me.valu_economy.TabIndex = 112
+        Me.valu_economy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Title_miieconomy
+        '
+        Me.Title_miieconomy.Location = New System.Drawing.Point(453, 429)
+        Me.Title_miieconomy.Name = "Title_miieconomy"
+        Me.Title_miieconomy.Size = New System.Drawing.Size(122, 13)
+        Me.Title_miieconomy.TabIndex = 273
+        Me.Title_miieconomy.Text = "Mii economy"
+        Me.Title_miieconomy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AdvH_miieconomy
+        '
+        Me.AdvH_miieconomy.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_miieconomy.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_miieconomy.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_miieconomy.Location = New System.Drawing.Point(553, 445)
+        Me.AdvH_miieconomy.Name = "AdvH_miieconomy"
+        Me.AdvH_miieconomy.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_miieconomy.TabIndex = 272
+        Me.AdvH_miieconomy.TabStop = False
+        Me.AdvH_miieconomy.Visible = False
+        '
+        'PictureBox34
+        '
+        Me.PictureBox34.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox34.Image = CType(resources.GetObject("PictureBox34.Image"), System.Drawing.Image)
+        Me.PictureBox34.Location = New System.Drawing.Point(454, 445)
+        Me.PictureBox34.Name = "PictureBox34"
+        Me.PictureBox34.Size = New System.Drawing.Size(23, 23)
+        Me.PictureBox34.TabIndex = 271
+        Me.PictureBox34.TabStop = False
+        '
         'Title_switch_interiors
         '
         Me.Title_switch_interiors.Location = New System.Drawing.Point(37, 423)
@@ -14830,492 +19863,6 @@ Partial Class TL_SaveEditor
         Me.Icon_inventory.TabIndex = 249
         Me.Icon_inventory.TabStop = False
         '
-        'Panel_mii_musics
-        '
-        Me.Panel_mii_musics.BackColor = System.Drawing.Color.Azure
-        Me.Panel_mii_musics.Controls.Add(Me.AdvH_editmiimusic)
-        Me.Panel_mii_musics.Controls.Add(Me.AdvH_unlockmusic)
-        Me.Panel_mii_musics.Controls.Add(Me.valu_selected_music)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_musical)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_techno)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_opera)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_ballad)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_rap)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_rockroll)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_pop)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_metal)
-        Me.Panel_mii_musics.Controls.Add(Me.Fea_unlock_music)
-        Me.Panel_mii_musics.Location = New System.Drawing.Point(12, 61)
-        Me.Panel_mii_musics.Name = "Panel_mii_musics"
-        Me.Panel_mii_musics.Size = New System.Drawing.Size(210, 202)
-        Me.Panel_mii_musics.TabIndex = 253
-        Me.Panel_mii_musics.Visible = False
-        '
-        'AdvH_editmiimusic
-        '
-        Me.AdvH_editmiimusic.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_editmiimusic.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_editmiimusic.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_editmiimusic.Location = New System.Drawing.Point(185, 178)
-        Me.AdvH_editmiimusic.Name = "AdvH_editmiimusic"
-        Me.AdvH_editmiimusic.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_editmiimusic.TabIndex = 192
-        Me.AdvH_editmiimusic.TabStop = False
-        Me.AdvH_editmiimusic.Visible = False
-        '
-        'AdvH_unlockmusic
-        '
-        Me.AdvH_unlockmusic.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_unlockmusic.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_unlockmusic.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_unlockmusic.Location = New System.Drawing.Point(183, 9)
-        Me.AdvH_unlockmusic.Name = "AdvH_unlockmusic"
-        Me.AdvH_unlockmusic.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_unlockmusic.TabIndex = 191
-        Me.AdvH_unlockmusic.TabStop = False
-        Me.AdvH_unlockmusic.Visible = False
-        '
-        'valu_selected_music
-        '
-        Me.valu_selected_music.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_selected_music.Location = New System.Drawing.Point(6, 182)
-        Me.valu_selected_music.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_selected_music.Name = "valu_selected_music"
-        Me.valu_selected_music.Size = New System.Drawing.Size(35, 16)
-        Me.valu_selected_music.TabIndex = 190
-        Me.valu_selected_music.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_selected_music.Visible = False
-        '
-        'Fea_musics_musical
-        '
-        Me.Fea_musics_musical.BackgroundImage = CType(resources.GetObject("Fea_musics_musical.BackgroundImage"), System.Drawing.Image)
-        Me.Fea_musics_musical.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_musical.Controls.Add(Me.Text_edit_musical)
-        Me.Fea_musics_musical.Location = New System.Drawing.Point(107, 149)
-        Me.Fea_musics_musical.Name = "Fea_musics_musical"
-        Me.Fea_musics_musical.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_musical.TabIndex = 188
-        '
-        'Text_edit_musical
-        '
-        Me.Text_edit_musical.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_musical.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_musical.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_musical.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_musical.Name = "Text_edit_musical"
-        Me.Text_edit_musical.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_musical.TabIndex = 1
-        Me.Text_edit_musical.Text = "Musical"
-        Me.Text_edit_musical.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_techno
-        '
-        Me.Fea_musics_techno.BackgroundImage = CType(resources.GetObject("Fea_musics_techno.BackgroundImage"), System.Drawing.Image)
-        Me.Fea_musics_techno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_techno.Controls.Add(Me.Text_edit_techno)
-        Me.Fea_musics_techno.Location = New System.Drawing.Point(3, 149)
-        Me.Fea_musics_techno.Name = "Fea_musics_techno"
-        Me.Fea_musics_techno.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_techno.TabIndex = 187
-        '
-        'Text_edit_techno
-        '
-        Me.Text_edit_techno.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_techno.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_techno.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_techno.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_techno.Name = "Text_edit_techno"
-        Me.Text_edit_techno.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_techno.TabIndex = 1
-        Me.Text_edit_techno.Text = "Techno"
-        Me.Text_edit_techno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_opera
-        '
-        Me.Fea_musics_opera.BackgroundImage = CType(resources.GetObject("Fea_musics_opera.BackgroundImage"), System.Drawing.Image)
-        Me.Fea_musics_opera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_opera.Controls.Add(Me.Text_edit_opera)
-        Me.Fea_musics_opera.Location = New System.Drawing.Point(107, 118)
-        Me.Fea_musics_opera.Name = "Fea_musics_opera"
-        Me.Fea_musics_opera.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_opera.TabIndex = 186
-        '
-        'Text_edit_opera
-        '
-        Me.Text_edit_opera.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_opera.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_opera.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_opera.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_opera.Name = "Text_edit_opera"
-        Me.Text_edit_opera.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_opera.TabIndex = 1
-        Me.Text_edit_opera.Text = "Opera"
-        Me.Text_edit_opera.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_ballad
-        '
-        Me.Fea_musics_ballad.BackgroundImage = CType(resources.GetObject("Fea_musics_ballad.BackgroundImage"), System.Drawing.Image)
-        Me.Fea_musics_ballad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_ballad.Controls.Add(Me.Text_edit_ballad)
-        Me.Fea_musics_ballad.Location = New System.Drawing.Point(3, 118)
-        Me.Fea_musics_ballad.Name = "Fea_musics_ballad"
-        Me.Fea_musics_ballad.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_ballad.TabIndex = 185
-        '
-        'Text_edit_ballad
-        '
-        Me.Text_edit_ballad.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_ballad.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_ballad.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_ballad.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_ballad.Name = "Text_edit_ballad"
-        Me.Text_edit_ballad.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_ballad.TabIndex = 1
-        Me.Text_edit_ballad.Text = "Ballad"
-        Me.Text_edit_ballad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_rap
-        '
-        Me.Fea_musics_rap.BackgroundImage = CType(resources.GetObject("Fea_musics_rap.BackgroundImage"), System.Drawing.Image)
-        Me.Fea_musics_rap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_rap.Controls.Add(Me.Text_edit_rap)
-        Me.Fea_musics_rap.Location = New System.Drawing.Point(107, 87)
-        Me.Fea_musics_rap.Name = "Fea_musics_rap"
-        Me.Fea_musics_rap.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_rap.TabIndex = 184
-        '
-        'Text_edit_rap
-        '
-        Me.Text_edit_rap.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_rap.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_rap.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_rap.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_rap.Name = "Text_edit_rap"
-        Me.Text_edit_rap.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_rap.TabIndex = 1
-        Me.Text_edit_rap.Text = "Rap"
-        Me.Text_edit_rap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_rockroll
-        '
-        Me.Fea_musics_rockroll.BackgroundImage = CType(resources.GetObject("Fea_musics_rockroll.BackgroundImage"), System.Drawing.Image)
-        Me.Fea_musics_rockroll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_rockroll.Controls.Add(Me.Text_edit_rockroll)
-        Me.Fea_musics_rockroll.Location = New System.Drawing.Point(3, 87)
-        Me.Fea_musics_rockroll.Name = "Fea_musics_rockroll"
-        Me.Fea_musics_rockroll.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_rockroll.TabIndex = 183
-        '
-        'Text_edit_rockroll
-        '
-        Me.Text_edit_rockroll.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_rockroll.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_rockroll.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_rockroll.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_rockroll.Name = "Text_edit_rockroll"
-        Me.Text_edit_rockroll.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_rockroll.TabIndex = 1
-        Me.Text_edit_rockroll.Text = "Rock' n' Roll"
-        Me.Text_edit_rockroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_pop
-        '
-        Me.Fea_musics_pop.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
-        Me.Fea_musics_pop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_pop.Controls.Add(Me.Text_edit_pop)
-        Me.Fea_musics_pop.Location = New System.Drawing.Point(107, 56)
-        Me.Fea_musics_pop.Name = "Fea_musics_pop"
-        Me.Fea_musics_pop.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_pop.TabIndex = 182
-        '
-        'Text_edit_pop
-        '
-        Me.Text_edit_pop.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_pop.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_pop.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_pop.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_pop.Name = "Text_edit_pop"
-        Me.Text_edit_pop.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_pop.TabIndex = 1
-        Me.Text_edit_pop.Text = "Pop"
-        Me.Text_edit_pop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_musics_metal
-        '
-        Me.Fea_musics_metal.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
-        Me.Fea_musics_metal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
-        Me.Fea_musics_metal.Controls.Add(Me.Text_edit_metal)
-        Me.Fea_musics_metal.Location = New System.Drawing.Point(3, 56)
-        Me.Fea_musics_metal.Name = "Fea_musics_metal"
-        Me.Fea_musics_metal.Size = New System.Drawing.Size(100, 31)
-        Me.Fea_musics_metal.TabIndex = 181
-        '
-        'Text_edit_metal
-        '
-        Me.Text_edit_metal.BackColor = System.Drawing.Color.Transparent
-        Me.Text_edit_metal.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_edit_metal.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_edit_metal.Location = New System.Drawing.Point(0, 0)
-        Me.Text_edit_metal.Name = "Text_edit_metal"
-        Me.Text_edit_metal.Size = New System.Drawing.Size(100, 31)
-        Me.Text_edit_metal.TabIndex = 0
-        Me.Text_edit_metal.Text = "Metal"
-        Me.Text_edit_metal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Fea_unlock_music
-        '
-        Me.Fea_unlock_music.BackColor = System.Drawing.Color.Transparent
-        Me.Fea_unlock_music.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
-        Me.Fea_unlock_music.Controls.Add(Me.valu_allmusic)
-        Me.Fea_unlock_music.Controls.Add(Me.Text_unlock_music)
-        Me.Fea_unlock_music.Location = New System.Drawing.Point(30, 4)
-        Me.Fea_unlock_music.Name = "Fea_unlock_music"
-        Me.Fea_unlock_music.Size = New System.Drawing.Size(150, 32)
-        Me.Fea_unlock_music.TabIndex = 0
-        '
-        'valu_allmusic
-        '
-        Me.valu_allmusic.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_allmusic.Location = New System.Drawing.Point(112, 14)
-        Me.valu_allmusic.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_allmusic.Name = "valu_allmusic"
-        Me.valu_allmusic.Size = New System.Drawing.Size(35, 16)
-        Me.valu_allmusic.TabIndex = 189
-        Me.valu_allmusic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_allmusic.Visible = False
-        '
-        'Text_unlock_music
-        '
-        Me.Text_unlock_music.BackColor = System.Drawing.Color.Transparent
-        Me.Text_unlock_music.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_unlock_music.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_unlock_music.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_unlock_music.Location = New System.Drawing.Point(0, 0)
-        Me.Text_unlock_music.Name = "Text_unlock_music"
-        Me.Text_unlock_music.Size = New System.Drawing.Size(150, 32)
-        Me.Text_unlock_music.TabIndex = 0
-        Me.Text_unlock_music.Text = "Unlock all"
-        Me.Text_unlock_music.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel_cathphrase
-        '
-        Me.Panel_cathphrase.BackColor = System.Drawing.Color.Azure
-        Me.Panel_cathphrase.Controls.Add(Me.AdvH_editcathphrase)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J1)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J2)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_05)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_04)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_03)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_02)
-        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_01)
-        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_05)
-        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_04)
-        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_03)
-        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_02)
-        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_01)
-        Me.Panel_cathphrase.Location = New System.Drawing.Point(12, 61)
-        Me.Panel_cathphrase.Name = "Panel_cathphrase"
-        Me.Panel_cathphrase.Size = New System.Drawing.Size(210, 224)
-        Me.Panel_cathphrase.TabIndex = 252
-        Me.Panel_cathphrase.Visible = False
-        '
-        'AdvH_editcathphrase
-        '
-        Me.AdvH_editcathphrase.BackColor = System.Drawing.Color.Transparent
-        Me.AdvH_editcathphrase.Cursor = System.Windows.Forms.Cursors.Help
-        Me.AdvH_editcathphrase.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_editcathphrase.Location = New System.Drawing.Point(2, 0)
-        Me.AdvH_editcathphrase.Name = "AdvH_editcathphrase"
-        Me.AdvH_editcathphrase.Size = New System.Drawing.Size(23, 22)
-        Me.AdvH_editcathphrase.TabIndex = 185
-        Me.AdvH_editcathphrase.TabStop = False
-        Me.AdvH_editcathphrase.Visible = False
-        '
-        'Panel_cathph_J1
-        '
-        Me.Panel_cathph_J1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_J1.Controls.Add(Me.Text_cathph_J1)
-        Me.Panel_cathph_J1.Location = New System.Drawing.Point(50, 10)
-        Me.Panel_cathph_J1.Name = "Panel_cathph_J1"
-        Me.Panel_cathph_J1.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_J1.TabIndex = 184
-        Me.Panel_cathph_J1.Visible = False
-        '
-        'Text_cathph_J1
-        '
-        Me.Text_cathph_J1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_J1.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_J1.MaxLength = 4
-        Me.Text_cathph_J1.Name = "Text_cathph_J1"
-        Me.Text_cathph_J1.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_J1.TabIndex = 166
-        Me.Text_cathph_J1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_J2
-        '
-        Me.Panel_cathph_J2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_J2.Controls.Add(Me.Text_cathph_J2)
-        Me.Panel_cathph_J2.Location = New System.Drawing.Point(50, 44)
-        Me.Panel_cathph_J2.Name = "Panel_cathph_J2"
-        Me.Panel_cathph_J2.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_J2.TabIndex = 183
-        Me.Panel_cathph_J2.Visible = False
-        '
-        'Text_cathph_J2
-        '
-        Me.Text_cathph_J2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_J2.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_J2.MaxLength = 16
-        Me.Text_cathph_J2.Name = "Text_cathph_J2"
-        Me.Text_cathph_J2.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_J2.TabIndex = 166
-        Me.Text_cathph_J2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_05
-        '
-        Me.Panel_cathph_05.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_05.Controls.Add(Me.Text_cathph_05)
-        Me.Panel_cathph_05.Location = New System.Drawing.Point(50, 189)
-        Me.Panel_cathph_05.Name = "Panel_cathph_05"
-        Me.Panel_cathph_05.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_05.TabIndex = 182
-        '
-        'Text_cathph_05
-        '
-        Me.Text_cathph_05.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_05.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_05.MaxLength = 16
-        Me.Text_cathph_05.Name = "Text_cathph_05"
-        Me.Text_cathph_05.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_05.TabIndex = 166
-        Me.Text_cathph_05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_04
-        '
-        Me.Panel_cathph_04.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_04.Controls.Add(Me.Text_cathph_04)
-        Me.Panel_cathph_04.Location = New System.Drawing.Point(50, 152)
-        Me.Panel_cathph_04.Name = "Panel_cathph_04"
-        Me.Panel_cathph_04.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_04.TabIndex = 181
-        '
-        'Text_cathph_04
-        '
-        Me.Text_cathph_04.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_04.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_04.MaxLength = 16
-        Me.Text_cathph_04.Name = "Text_cathph_04"
-        Me.Text_cathph_04.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_04.TabIndex = 166
-        Me.Text_cathph_04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_03
-        '
-        Me.Panel_cathph_03.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_03.Controls.Add(Me.Text_cathph_03)
-        Me.Panel_cathph_03.Location = New System.Drawing.Point(50, 114)
-        Me.Panel_cathph_03.Name = "Panel_cathph_03"
-        Me.Panel_cathph_03.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_03.TabIndex = 180
-        '
-        'Text_cathph_03
-        '
-        Me.Text_cathph_03.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_03.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_03.MaxLength = 16
-        Me.Text_cathph_03.Name = "Text_cathph_03"
-        Me.Text_cathph_03.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_03.TabIndex = 166
-        Me.Text_cathph_03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_02
-        '
-        Me.Panel_cathph_02.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_02.Controls.Add(Me.Text_cathph_02)
-        Me.Panel_cathph_02.Location = New System.Drawing.Point(50, 78)
-        Me.Panel_cathph_02.Name = "Panel_cathph_02"
-        Me.Panel_cathph_02.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_02.TabIndex = 179
-        '
-        'Text_cathph_02
-        '
-        Me.Text_cathph_02.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_02.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_02.MaxLength = 16
-        Me.Text_cathph_02.Name = "Text_cathph_02"
-        Me.Text_cathph_02.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_02.TabIndex = 166
-        Me.Text_cathph_02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Panel_cathph_01
-        '
-        Me.Panel_cathph_01.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel_cathph_01.Controls.Add(Me.Text_cathph_01)
-        Me.Panel_cathph_01.Location = New System.Drawing.Point(50, 27)
-        Me.Panel_cathph_01.Name = "Panel_cathph_01"
-        Me.Panel_cathph_01.Size = New System.Drawing.Size(134, 17)
-        Me.Panel_cathph_01.TabIndex = 178
-        '
-        'Text_cathph_01
-        '
-        Me.Text_cathph_01.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_cathph_01.Location = New System.Drawing.Point(2, 2)
-        Me.Text_cathph_01.MaxLength = 16
-        Me.Text_cathph_01.Name = "Text_cathph_01"
-        Me.Text_cathph_01.Size = New System.Drawing.Size(130, 13)
-        Me.Text_cathph_01.TabIndex = 166
-        Me.Text_cathph_01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Icon_cathph_05
-        '
-        Me.Icon_cathph_05.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_05.Image = CType(resources.GetObject("Icon_cathph_05.Image"), System.Drawing.Image)
-        Me.Icon_cathph_05.Location = New System.Drawing.Point(17, 182)
-        Me.Icon_cathph_05.Name = "Icon_cathph_05"
-        Me.Icon_cathph_05.Size = New System.Drawing.Size(33, 34)
-        Me.Icon_cathph_05.TabIndex = 175
-        Me.Icon_cathph_05.TabStop = False
-        '
-        'Icon_cathph_04
-        '
-        Me.Icon_cathph_04.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_04.Image = CType(resources.GetObject("Icon_cathph_04.Image"), System.Drawing.Image)
-        Me.Icon_cathph_04.Location = New System.Drawing.Point(26, 149)
-        Me.Icon_cathph_04.Name = "Icon_cathph_04"
-        Me.Icon_cathph_04.Size = New System.Drawing.Size(24, 24)
-        Me.Icon_cathph_04.TabIndex = 174
-        Me.Icon_cathph_04.TabStop = False
-        '
-        'Icon_cathph_03
-        '
-        Me.Icon_cathph_03.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_03.Image = CType(resources.GetObject("Icon_cathph_03.Image"), System.Drawing.Image)
-        Me.Icon_cathph_03.Location = New System.Drawing.Point(26, 110)
-        Me.Icon_cathph_03.Name = "Icon_cathph_03"
-        Me.Icon_cathph_03.Size = New System.Drawing.Size(24, 24)
-        Me.Icon_cathph_03.TabIndex = 173
-        Me.Icon_cathph_03.TabStop = False
-        '
-        'Icon_cathph_02
-        '
-        Me.Icon_cathph_02.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_02.Image = CType(resources.GetObject("Icon_cathph_02.Image"), System.Drawing.Image)
-        Me.Icon_cathph_02.Location = New System.Drawing.Point(26, 74)
-        Me.Icon_cathph_02.Name = "Icon_cathph_02"
-        Me.Icon_cathph_02.Size = New System.Drawing.Size(24, 24)
-        Me.Icon_cathph_02.TabIndex = 172
-        Me.Icon_cathph_02.TabStop = False
-        '
-        'Icon_cathph_01
-        '
-        Me.Icon_cathph_01.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_cathph_01.Image = CType(resources.GetObject("Icon_cathph_01.Image"), System.Drawing.Image)
-        Me.Icon_cathph_01.Location = New System.Drawing.Point(11, 22)
-        Me.Icon_cathph_01.Name = "Icon_cathph_01"
-        Me.Icon_cathph_01.Size = New System.Drawing.Size(39, 25)
-        Me.Icon_cathph_01.TabIndex = 171
-        Me.Icon_cathph_01.TabStop = False
-        '
         'Panel_mii_inventory
         '
         Me.Panel_mii_inventory.BackColor = System.Drawing.Color.Azure
@@ -15460,6 +20007,492 @@ Partial Class TL_SaveEditor
         Me.Select_unlock_interiors.Name = "Select_unlock_interiors"
         Me.Select_unlock_interiors.Size = New System.Drawing.Size(104, 21)
         Me.Select_unlock_interiors.TabIndex = 112
+        '
+        'Panel_mii_musics
+        '
+        Me.Panel_mii_musics.BackColor = System.Drawing.Color.Azure
+        Me.Panel_mii_musics.Controls.Add(Me.AdvH_editmiimusic)
+        Me.Panel_mii_musics.Controls.Add(Me.AdvH_unlockmusic)
+        Me.Panel_mii_musics.Controls.Add(Me.valu_selected_music)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_musical)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_techno)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_opera)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_ballad)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_rap)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_rockroll)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_pop)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_musics_metal)
+        Me.Panel_mii_musics.Controls.Add(Me.Fea_unlock_music)
+        Me.Panel_mii_musics.Location = New System.Drawing.Point(12, 61)
+        Me.Panel_mii_musics.Name = "Panel_mii_musics"
+        Me.Panel_mii_musics.Size = New System.Drawing.Size(210, 271)
+        Me.Panel_mii_musics.TabIndex = 253
+        Me.Panel_mii_musics.Visible = False
+        '
+        'AdvH_editmiimusic
+        '
+        Me.AdvH_editmiimusic.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_editmiimusic.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_editmiimusic.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_editmiimusic.Location = New System.Drawing.Point(184, 245)
+        Me.AdvH_editmiimusic.Name = "AdvH_editmiimusic"
+        Me.AdvH_editmiimusic.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_editmiimusic.TabIndex = 192
+        Me.AdvH_editmiimusic.TabStop = False
+        Me.AdvH_editmiimusic.Visible = False
+        '
+        'AdvH_unlockmusic
+        '
+        Me.AdvH_unlockmusic.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_unlockmusic.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_unlockmusic.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_unlockmusic.Location = New System.Drawing.Point(183, 38)
+        Me.AdvH_unlockmusic.Name = "AdvH_unlockmusic"
+        Me.AdvH_unlockmusic.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_unlockmusic.TabIndex = 191
+        Me.AdvH_unlockmusic.TabStop = False
+        Me.AdvH_unlockmusic.Visible = False
+        '
+        'valu_selected_music
+        '
+        Me.valu_selected_music.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_selected_music.Location = New System.Drawing.Point(3, 242)
+        Me.valu_selected_music.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_selected_music.Name = "valu_selected_music"
+        Me.valu_selected_music.Size = New System.Drawing.Size(35, 16)
+        Me.valu_selected_music.TabIndex = 190
+        Me.valu_selected_music.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_selected_music.Visible = False
+        '
+        'Fea_musics_musical
+        '
+        Me.Fea_musics_musical.BackgroundImage = CType(resources.GetObject("Fea_musics_musical.BackgroundImage"), System.Drawing.Image)
+        Me.Fea_musics_musical.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_musical.Controls.Add(Me.Text_edit_musical)
+        Me.Fea_musics_musical.Location = New System.Drawing.Point(107, 207)
+        Me.Fea_musics_musical.Name = "Fea_musics_musical"
+        Me.Fea_musics_musical.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_musical.TabIndex = 188
+        '
+        'Text_edit_musical
+        '
+        Me.Text_edit_musical.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_musical.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_musical.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_musical.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_musical.Name = "Text_edit_musical"
+        Me.Text_edit_musical.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_musical.TabIndex = 1
+        Me.Text_edit_musical.Text = "Musical"
+        Me.Text_edit_musical.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_techno
+        '
+        Me.Fea_musics_techno.BackgroundImage = CType(resources.GetObject("Fea_musics_techno.BackgroundImage"), System.Drawing.Image)
+        Me.Fea_musics_techno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_techno.Controls.Add(Me.Text_edit_techno)
+        Me.Fea_musics_techno.Location = New System.Drawing.Point(3, 207)
+        Me.Fea_musics_techno.Name = "Fea_musics_techno"
+        Me.Fea_musics_techno.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_techno.TabIndex = 187
+        '
+        'Text_edit_techno
+        '
+        Me.Text_edit_techno.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_techno.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_techno.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_techno.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_techno.Name = "Text_edit_techno"
+        Me.Text_edit_techno.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_techno.TabIndex = 1
+        Me.Text_edit_techno.Text = "Techno"
+        Me.Text_edit_techno.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_opera
+        '
+        Me.Fea_musics_opera.BackgroundImage = CType(resources.GetObject("Fea_musics_opera.BackgroundImage"), System.Drawing.Image)
+        Me.Fea_musics_opera.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_opera.Controls.Add(Me.Text_edit_opera)
+        Me.Fea_musics_opera.Location = New System.Drawing.Point(107, 168)
+        Me.Fea_musics_opera.Name = "Fea_musics_opera"
+        Me.Fea_musics_opera.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_opera.TabIndex = 186
+        '
+        'Text_edit_opera
+        '
+        Me.Text_edit_opera.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_opera.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_opera.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_opera.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_opera.Name = "Text_edit_opera"
+        Me.Text_edit_opera.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_opera.TabIndex = 1
+        Me.Text_edit_opera.Text = "Opera"
+        Me.Text_edit_opera.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_ballad
+        '
+        Me.Fea_musics_ballad.BackgroundImage = CType(resources.GetObject("Fea_musics_ballad.BackgroundImage"), System.Drawing.Image)
+        Me.Fea_musics_ballad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_ballad.Controls.Add(Me.Text_edit_ballad)
+        Me.Fea_musics_ballad.Location = New System.Drawing.Point(3, 168)
+        Me.Fea_musics_ballad.Name = "Fea_musics_ballad"
+        Me.Fea_musics_ballad.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_ballad.TabIndex = 185
+        '
+        'Text_edit_ballad
+        '
+        Me.Text_edit_ballad.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_ballad.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_ballad.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_ballad.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_ballad.Name = "Text_edit_ballad"
+        Me.Text_edit_ballad.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_ballad.TabIndex = 1
+        Me.Text_edit_ballad.Text = "Ballad"
+        Me.Text_edit_ballad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_rap
+        '
+        Me.Fea_musics_rap.BackgroundImage = CType(resources.GetObject("Fea_musics_rap.BackgroundImage"), System.Drawing.Image)
+        Me.Fea_musics_rap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_rap.Controls.Add(Me.Text_edit_rap)
+        Me.Fea_musics_rap.Location = New System.Drawing.Point(107, 129)
+        Me.Fea_musics_rap.Name = "Fea_musics_rap"
+        Me.Fea_musics_rap.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_rap.TabIndex = 184
+        '
+        'Text_edit_rap
+        '
+        Me.Text_edit_rap.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_rap.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_rap.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_rap.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_rap.Name = "Text_edit_rap"
+        Me.Text_edit_rap.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_rap.TabIndex = 1
+        Me.Text_edit_rap.Text = "Rap"
+        Me.Text_edit_rap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_rockroll
+        '
+        Me.Fea_musics_rockroll.BackgroundImage = CType(resources.GetObject("Fea_musics_rockroll.BackgroundImage"), System.Drawing.Image)
+        Me.Fea_musics_rockroll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_rockroll.Controls.Add(Me.Text_edit_rockroll)
+        Me.Fea_musics_rockroll.Location = New System.Drawing.Point(3, 129)
+        Me.Fea_musics_rockroll.Name = "Fea_musics_rockroll"
+        Me.Fea_musics_rockroll.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_rockroll.TabIndex = 183
+        '
+        'Text_edit_rockroll
+        '
+        Me.Text_edit_rockroll.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_rockroll.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_rockroll.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_rockroll.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_rockroll.Name = "Text_edit_rockroll"
+        Me.Text_edit_rockroll.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_rockroll.TabIndex = 1
+        Me.Text_edit_rockroll.Text = "Rock' n' Roll"
+        Me.Text_edit_rockroll.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_pop
+        '
+        Me.Fea_musics_pop.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
+        Me.Fea_musics_pop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_pop.Controls.Add(Me.Text_edit_pop)
+        Me.Fea_musics_pop.Location = New System.Drawing.Point(107, 90)
+        Me.Fea_musics_pop.Name = "Fea_musics_pop"
+        Me.Fea_musics_pop.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_pop.TabIndex = 182
+        '
+        'Text_edit_pop
+        '
+        Me.Text_edit_pop.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_pop.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_pop.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_pop.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_pop.Name = "Text_edit_pop"
+        Me.Text_edit_pop.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_pop.TabIndex = 1
+        Me.Text_edit_pop.Text = "Pop"
+        Me.Text_edit_pop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_musics_metal
+        '
+        Me.Fea_musics_metal.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_panel_music
+        Me.Fea_musics_metal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Fea_musics_metal.Controls.Add(Me.Text_edit_metal)
+        Me.Fea_musics_metal.Location = New System.Drawing.Point(3, 90)
+        Me.Fea_musics_metal.Name = "Fea_musics_metal"
+        Me.Fea_musics_metal.Size = New System.Drawing.Size(100, 31)
+        Me.Fea_musics_metal.TabIndex = 181
+        '
+        'Text_edit_metal
+        '
+        Me.Text_edit_metal.BackColor = System.Drawing.Color.Transparent
+        Me.Text_edit_metal.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_edit_metal.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_edit_metal.Location = New System.Drawing.Point(0, 0)
+        Me.Text_edit_metal.Name = "Text_edit_metal"
+        Me.Text_edit_metal.Size = New System.Drawing.Size(100, 31)
+        Me.Text_edit_metal.TabIndex = 0
+        Me.Text_edit_metal.Text = "Metal"
+        Me.Text_edit_metal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_unlock_music
+        '
+        Me.Fea_unlock_music.BackColor = System.Drawing.Color.Transparent
+        Me.Fea_unlock_music.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Fea_unlock_music.Controls.Add(Me.valu_allmusic)
+        Me.Fea_unlock_music.Controls.Add(Me.Text_unlock_music)
+        Me.Fea_unlock_music.Location = New System.Drawing.Point(30, 33)
+        Me.Fea_unlock_music.Name = "Fea_unlock_music"
+        Me.Fea_unlock_music.Size = New System.Drawing.Size(150, 32)
+        Me.Fea_unlock_music.TabIndex = 0
+        '
+        'valu_allmusic
+        '
+        Me.valu_allmusic.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_allmusic.Location = New System.Drawing.Point(112, 14)
+        Me.valu_allmusic.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_allmusic.Name = "valu_allmusic"
+        Me.valu_allmusic.Size = New System.Drawing.Size(35, 16)
+        Me.valu_allmusic.TabIndex = 189
+        Me.valu_allmusic.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_allmusic.Visible = False
+        '
+        'Text_unlock_music
+        '
+        Me.Text_unlock_music.BackColor = System.Drawing.Color.Transparent
+        Me.Text_unlock_music.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_unlock_music.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_unlock_music.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_unlock_music.Location = New System.Drawing.Point(0, 0)
+        Me.Text_unlock_music.Name = "Text_unlock_music"
+        Me.Text_unlock_music.Size = New System.Drawing.Size(150, 32)
+        Me.Text_unlock_music.TabIndex = 0
+        Me.Text_unlock_music.Text = "Unlock all"
+        Me.Text_unlock_music.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_cathphrase
+        '
+        Me.Panel_cathphrase.BackColor = System.Drawing.Color.Azure
+        Me.Panel_cathphrase.Controls.Add(Me.AdvH_editcathphrase)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J1)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_J2)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_05)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_04)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_03)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_02)
+        Me.Panel_cathphrase.Controls.Add(Me.Panel_cathph_01)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_05)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_04)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_03)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_02)
+        Me.Panel_cathphrase.Controls.Add(Me.Icon_cathph_01)
+        Me.Panel_cathphrase.Location = New System.Drawing.Point(12, 61)
+        Me.Panel_cathphrase.Name = "Panel_cathphrase"
+        Me.Panel_cathphrase.Size = New System.Drawing.Size(210, 271)
+        Me.Panel_cathphrase.TabIndex = 252
+        Me.Panel_cathphrase.Visible = False
+        '
+        'AdvH_editcathphrase
+        '
+        Me.AdvH_editcathphrase.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_editcathphrase.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_editcathphrase.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_editcathphrase.Location = New System.Drawing.Point(2, 0)
+        Me.AdvH_editcathphrase.Name = "AdvH_editcathphrase"
+        Me.AdvH_editcathphrase.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_editcathphrase.TabIndex = 185
+        Me.AdvH_editcathphrase.TabStop = False
+        Me.AdvH_editcathphrase.Visible = False
+        '
+        'Panel_cathph_J1
+        '
+        Me.Panel_cathph_J1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_J1.Controls.Add(Me.Text_cathph_J1)
+        Me.Panel_cathph_J1.Location = New System.Drawing.Point(50, 32)
+        Me.Panel_cathph_J1.Name = "Panel_cathph_J1"
+        Me.Panel_cathph_J1.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_J1.TabIndex = 184
+        Me.Panel_cathph_J1.Visible = False
+        '
+        'Text_cathph_J1
+        '
+        Me.Text_cathph_J1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_J1.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_J1.MaxLength = 4
+        Me.Text_cathph_J1.Name = "Text_cathph_J1"
+        Me.Text_cathph_J1.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_J1.TabIndex = 166
+        Me.Text_cathph_J1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_J2
+        '
+        Me.Panel_cathph_J2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_J2.Controls.Add(Me.Text_cathph_J2)
+        Me.Panel_cathph_J2.Location = New System.Drawing.Point(50, 66)
+        Me.Panel_cathph_J2.Name = "Panel_cathph_J2"
+        Me.Panel_cathph_J2.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_J2.TabIndex = 183
+        Me.Panel_cathph_J2.Visible = False
+        '
+        'Text_cathph_J2
+        '
+        Me.Text_cathph_J2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_J2.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_J2.MaxLength = 16
+        Me.Text_cathph_J2.Name = "Text_cathph_J2"
+        Me.Text_cathph_J2.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_J2.TabIndex = 166
+        Me.Text_cathph_J2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_05
+        '
+        Me.Panel_cathph_05.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_05.Controls.Add(Me.Text_cathph_05)
+        Me.Panel_cathph_05.Location = New System.Drawing.Point(50, 211)
+        Me.Panel_cathph_05.Name = "Panel_cathph_05"
+        Me.Panel_cathph_05.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_05.TabIndex = 182
+        '
+        'Text_cathph_05
+        '
+        Me.Text_cathph_05.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_05.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_05.MaxLength = 16
+        Me.Text_cathph_05.Name = "Text_cathph_05"
+        Me.Text_cathph_05.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_05.TabIndex = 166
+        Me.Text_cathph_05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_04
+        '
+        Me.Panel_cathph_04.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_04.Controls.Add(Me.Text_cathph_04)
+        Me.Panel_cathph_04.Location = New System.Drawing.Point(50, 174)
+        Me.Panel_cathph_04.Name = "Panel_cathph_04"
+        Me.Panel_cathph_04.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_04.TabIndex = 181
+        '
+        'Text_cathph_04
+        '
+        Me.Text_cathph_04.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_04.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_04.MaxLength = 16
+        Me.Text_cathph_04.Name = "Text_cathph_04"
+        Me.Text_cathph_04.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_04.TabIndex = 166
+        Me.Text_cathph_04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_03
+        '
+        Me.Panel_cathph_03.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_03.Controls.Add(Me.Text_cathph_03)
+        Me.Panel_cathph_03.Location = New System.Drawing.Point(50, 136)
+        Me.Panel_cathph_03.Name = "Panel_cathph_03"
+        Me.Panel_cathph_03.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_03.TabIndex = 180
+        '
+        'Text_cathph_03
+        '
+        Me.Text_cathph_03.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_03.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_03.MaxLength = 16
+        Me.Text_cathph_03.Name = "Text_cathph_03"
+        Me.Text_cathph_03.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_03.TabIndex = 166
+        Me.Text_cathph_03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_02
+        '
+        Me.Panel_cathph_02.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_02.Controls.Add(Me.Text_cathph_02)
+        Me.Panel_cathph_02.Location = New System.Drawing.Point(50, 100)
+        Me.Panel_cathph_02.Name = "Panel_cathph_02"
+        Me.Panel_cathph_02.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_02.TabIndex = 179
+        '
+        'Text_cathph_02
+        '
+        Me.Text_cathph_02.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_02.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_02.MaxLength = 16
+        Me.Text_cathph_02.Name = "Text_cathph_02"
+        Me.Text_cathph_02.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_02.TabIndex = 166
+        Me.Text_cathph_02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel_cathph_01
+        '
+        Me.Panel_cathph_01.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_cathph_01.Controls.Add(Me.Text_cathph_01)
+        Me.Panel_cathph_01.Location = New System.Drawing.Point(50, 49)
+        Me.Panel_cathph_01.Name = "Panel_cathph_01"
+        Me.Panel_cathph_01.Size = New System.Drawing.Size(134, 17)
+        Me.Panel_cathph_01.TabIndex = 178
+        '
+        'Text_cathph_01
+        '
+        Me.Text_cathph_01.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_cathph_01.Location = New System.Drawing.Point(2, 2)
+        Me.Text_cathph_01.MaxLength = 16
+        Me.Text_cathph_01.Name = "Text_cathph_01"
+        Me.Text_cathph_01.Size = New System.Drawing.Size(130, 13)
+        Me.Text_cathph_01.TabIndex = 166
+        Me.Text_cathph_01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_cathph_05
+        '
+        Me.Icon_cathph_05.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_05.Image = CType(resources.GetObject("Icon_cathph_05.Image"), System.Drawing.Image)
+        Me.Icon_cathph_05.Location = New System.Drawing.Point(17, 204)
+        Me.Icon_cathph_05.Name = "Icon_cathph_05"
+        Me.Icon_cathph_05.Size = New System.Drawing.Size(33, 34)
+        Me.Icon_cathph_05.TabIndex = 175
+        Me.Icon_cathph_05.TabStop = False
+        '
+        'Icon_cathph_04
+        '
+        Me.Icon_cathph_04.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_04.Image = CType(resources.GetObject("Icon_cathph_04.Image"), System.Drawing.Image)
+        Me.Icon_cathph_04.Location = New System.Drawing.Point(26, 171)
+        Me.Icon_cathph_04.Name = "Icon_cathph_04"
+        Me.Icon_cathph_04.Size = New System.Drawing.Size(24, 24)
+        Me.Icon_cathph_04.TabIndex = 174
+        Me.Icon_cathph_04.TabStop = False
+        '
+        'Icon_cathph_03
+        '
+        Me.Icon_cathph_03.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_03.Image = CType(resources.GetObject("Icon_cathph_03.Image"), System.Drawing.Image)
+        Me.Icon_cathph_03.Location = New System.Drawing.Point(26, 132)
+        Me.Icon_cathph_03.Name = "Icon_cathph_03"
+        Me.Icon_cathph_03.Size = New System.Drawing.Size(24, 24)
+        Me.Icon_cathph_03.TabIndex = 173
+        Me.Icon_cathph_03.TabStop = False
+        '
+        'Icon_cathph_02
+        '
+        Me.Icon_cathph_02.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_02.Image = CType(resources.GetObject("Icon_cathph_02.Image"), System.Drawing.Image)
+        Me.Icon_cathph_02.Location = New System.Drawing.Point(26, 96)
+        Me.Icon_cathph_02.Name = "Icon_cathph_02"
+        Me.Icon_cathph_02.Size = New System.Drawing.Size(24, 24)
+        Me.Icon_cathph_02.TabIndex = 172
+        Me.Icon_cathph_02.TabStop = False
+        '
+        'Icon_cathph_01
+        '
+        Me.Icon_cathph_01.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_cathph_01.Image = CType(resources.GetObject("Icon_cathph_01.Image"), System.Drawing.Image)
+        Me.Icon_cathph_01.Location = New System.Drawing.Point(11, 44)
+        Me.Icon_cathph_01.Name = "Icon_cathph_01"
+        Me.Icon_cathph_01.Size = New System.Drawing.Size(39, 25)
+        Me.Icon_cathph_01.TabIndex = 171
+        Me.Icon_cathph_01.TabStop = False
         '
         'TextBox_fpath
         '
@@ -17438,23 +22471,25 @@ Partial Class TL_SaveEditor
         Me.Icon_crthall_music.TabIndex = 92
         Me.Icon_crthall_music.TabStop = False
         '
-        'CheckBox26
+        'Timer_arrowexp_right
         '
-        Me.CheckBox26.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox26.AutoSize = True
-        Me.CheckBox26.BackColor = System.Drawing.Color.White
-        Me.CheckBox26.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox26.FlatAppearance.BorderSize = 0
-        Me.CheckBox26.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.CheckBox26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.CheckBox26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox26.Location = New System.Drawing.Point(380, 104)
-        Me.CheckBox26.Name = "CheckBox26"
-        Me.CheckBox26.Size = New System.Drawing.Size(77, 23)
-        Me.CheckBox26.TabIndex = 314
-        Me.CheckBox26.Text = "He didn't eat"
-        Me.CheckBox26.UseVisualStyleBackColor = False
+        Me.Timer_arrowexp_right.Interval = 20
+        '
+        'Timer_arrowexp_left
+        '
+        Me.Timer_arrowexp_left.Interval = 20
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.SystemColors.Window
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Never want to see again..."})
+        Me.ComboBox1.Location = New System.Drawing.Point(234, 459)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(154, 21)
+        Me.ComboBox1.TabIndex = 223
         '
         'TL_SaveEditor
         '
@@ -17474,8 +22509,8 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_concertedit)
         Me.Controls.Add(Me.Panel_repairsave)
         Me.Controls.Add(Me.Panel_itemsedit)
-        Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
+        Me.Controls.Add(Me.Panel_islandedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -17535,10 +22570,10 @@ Partial Class TL_SaveEditor
         Me.Panel_done.ResumeLayout(False)
         Me.Panel_islandedit.ResumeLayout(False)
         Me.Panel_islandedit.PerformLayout
-        Me.Panel_addsymb.ResumeLayout(False)
-        Me.Panel_addsymb.PerformLayout
-        Me.Panel_spesymb_cancel.ResumeLayout(False)
-        Me.Panel_spesymb_add.ResumeLayout(False)
+        Me.Panel_addsymb_islandname.ResumeLayout(False)
+        Me.Panel_addsymb_islandname.PerformLayout
+        Me.Panel_spesymb_islandname_cancel.ResumeLayout(False)
+        Me.Panel_spesymb_islandname_add.ResumeLayout(False)
         CType(Me.Warning_islandname, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Addsymbol_pronun_island, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Addsymbol_islandname, System.ComponentModel.ISupportInitialize).EndInit
@@ -17779,19 +22814,49 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_faceshape, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout
-        CType(Me.PictureBox35, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox36, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox32, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox33, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox31, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_edit_favcolor.ResumeLayout(False)
+        CType(Me.AdvH_editfavcolor, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_violet, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_black, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_yellow, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_blue, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_lightblue, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_brown, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_red, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_lightgreen, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_pink, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_white, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_orange, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editcolor_green, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_mii_gender, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_miigender, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel6.ResumeLayout(False)
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_addsymb_nickname.ResumeLayout(False)
+        Me.Panel_addsymb_nickname.PerformLayout
+        Me.Panel_spesymb_nickname_cancel.ResumeLayout(False)
+        Me.Panel_spesymb_nickname_add.ResumeLayout(False)
+        Me.Panel_addsymb_lastname.ResumeLayout(False)
+        Me.Panel_addsymb_lastname.PerformLayout
+        Me.Panel_spesymb_lastname_cancel.ResumeLayout(False)
+        Me.Panel_spesymb_lastname_add.ResumeLayout(False)
+        Me.Panel_addsymb_firstname.ResumeLayout(False)
+        Me.Panel_addsymb_firstname.PerformLayout
+        Me.Panel_spesymb_firstname_cancel.ResumeLayout(False)
+        Me.Panel_spesymb_firstname_add.ResumeLayout(False)
+        CType(Me.Addsymbol_pronun_nickname, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Addsymbol_nickname, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Addsymbol_pronun_firstname, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Addsymbol_firstname, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Addsymbol_pronun_lastname, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Addsymbol_lastname, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel17.ResumeLayout(False)
         Me.Panel17.PerformLayout
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_nickname, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_growkid, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel_edit_nickname.ResumeLayout(False)
-        Me.Panel_edit_nickname.PerformLayout
+        CType(Me.AdvH_nicknamepronun, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_edit_pronun_nickname.ResumeLayout(False)
+        Me.Panel_edit_pronun_nickname.PerformLayout
         CType(Me.Icon_valid_nickname, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel41.ResumeLayout(False)
         CType(Me.valu_copying, System.ComponentModel.ISupportInitialize).EndInit
@@ -17816,14 +22881,14 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_pronun_nickname, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_nickname.ResumeLayout(False)
         Me.Panel_nickname.PerformLayout
-        Me.Panel_edit_lastname.ResumeLayout(False)
-        Me.Panel_edit_lastname.PerformLayout
+        Me.Panel_edit_pronun_lastname.ResumeLayout(False)
+        Me.Panel_edit_pronun_lastname.PerformLayout
         CType(Me.Icon_valid_lastname, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_pronun_lastname, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_lastname.ResumeLayout(False)
         Me.Panel_lastname.PerformLayout
-        Me.Panel_edit_firstname.ResumeLayout(False)
-        Me.Panel_edit_firstname.PerformLayout
+        Me.Panel_edit_pronun_firstname.ResumeLayout(False)
+        Me.Panel_edit_pronun_firstname.PerformLayout
         CType(Me.Icon_valid_firstname, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_pronun_firstname, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_firstname.ResumeLayout(False)
@@ -17832,16 +22897,52 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_sharing, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout
+        Me.Panel_edit_gifs.ResumeLayout(False)
+        CType(Me.AdvH_editgifts, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_gifs_0b00.ResumeLayout(False)
+        Me.Panel_gifs_0800.ResumeLayout(False)
+        Me.Panel_gifs_1b00.ResumeLayout(False)
+        Me.Panel_gifs_0600.ResumeLayout(False)
+        Me.Panel_gifs_1300.ResumeLayout(False)
+        Me.Panel_gifs_0c00.ResumeLayout(False)
+        Me.Panel_gifs_1900.ResumeLayout(False)
+        Me.Panel_gifs_0a00.ResumeLayout(False)
+        Me.Panel_gifs_1800.ResumeLayout(False)
+        Me.Panel_gifs_FFFF.ResumeLayout(False)
+        Me.Panel_gifs_1700.ResumeLayout(False)
+        Me.Panel_gifs_0900.ResumeLayout(False)
+        Me.Panel_gifs_1600.ResumeLayout(False)
+        Me.Panel_gifs_0700.ResumeLayout(False)
+        Me.Panel_gifs_1500.ResumeLayout(False)
+        Me.Panel_gifs_1200.ResumeLayout(False)
+        Me.Panel_gifs_1a00.ResumeLayout(False)
+        Me.Panel_gifs_0500.ResumeLayout(False)
+        Me.Panel_gifs_1400.ResumeLayout(False)
+        Me.Panel_gifs_0000.ResumeLayout(False)
+        Me.Panel_gifs_1100.ResumeLayout(False)
+        Me.Panel_gifs_0100.ResumeLayout(False)
+        Me.Panel_gifs_1000.ResumeLayout(False)
+        Me.Panel_gifs_0200.ResumeLayout(False)
+        Me.Panel_gifs_0f00.ResumeLayout(False)
+        Me.Panel_gifs_0300.ResumeLayout(False)
+        Me.Panel_gifs_0e00.ResumeLayout(False)
+        Me.Panel_gifs_0400.ResumeLayout(False)
+        Me.Panel_gifs_0d00.ResumeLayout(False)
+        CType(Me.AdvH_gifts, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_edit_fullness.ResumeLayout(False)
         CType(Me.Icon_edit_full_75, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_edit_full_100, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_edit_full_50, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_edit_full_25, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_edit_full_00, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_arrowexp_maxright, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_arrowexp_maxleft, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_arrowexp_left, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_arrowexp_right, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_worst, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_fav, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_allfav, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_gifs, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_fullness, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_experience, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_miilevel, System.ComponentModel.ISupportInitialize).EndInit
@@ -17888,7 +22989,6 @@ Partial Class TL_SaveEditor
         CType(Me.valu_level, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_fullness, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_fullness, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_exp, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_allfav_2, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_fav_1, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_fav_2, System.ComponentModel.ISupportInitialize).EndInit
@@ -18117,28 +23217,6 @@ Partial Class TL_SaveEditor
         CType(Me.valu_friend_rela_45, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_friend_rela_44, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabPage5.ResumeLayout(False)
-        Me.Panel48.ResumeLayout(False)
-        CType(Me.valu_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel49.ResumeLayout(False)
-        CType(Me.valu_ranking_splurge, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_splurgerank, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_pamperedrank, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_ranking_splurge, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel45.ResumeLayout(False)
-        CType(Me.valu_miihouse, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_haircolor, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_interior, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_miihouse, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_haircolor, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_haircolor, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_miihouse, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_miiapart, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_miiapart, System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel44.ResumeLayout(False)
-        CType(Me.valu_economy, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_miieconomy, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_edit_haircolor.ResumeLayout(False)
         Me.Panel_edit_haircolor.PerformLayout
         CType(Me.AdvH_edithaircolor, System.ComponentModel.ISupportInitialize).EndInit
@@ -18174,6 +23252,28 @@ Partial Class TL_SaveEditor
         CType(Me.color_3, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.color_2, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.color_1, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel48.ResumeLayout(False)
+        CType(Me.valu_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel49.ResumeLayout(False)
+        CType(Me.valu_ranking_splurge, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_splurgerank, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_pamperedrank, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_ranking_splurge, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_ranking_pampered, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel45.ResumeLayout(False)
+        CType(Me.valu_miihouse, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_haircolor, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_interior, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_miihouse, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_haircolor, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_haircolor, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_miihouse, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_miiapart, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_miiapart, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel44.ResumeLayout(False)
+        CType(Me.valu_economy, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_miieconomy, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox34, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel31.ResumeLayout(False)
         CType(Me.valu_switch_clothes, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel32.ResumeLayout(False)
@@ -18192,6 +23292,16 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_cathphrase, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_switch_hats, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_inventory, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_mii_inventory.ResumeLayout(False)
+        CType(Me.AdvH_invgoodsitems, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_invspefoods, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_invinterior, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_unlock_gooditems, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_unlock_specialfoods, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_unlock_interiors, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel38.ResumeLayout(False)
+        Me.Panel39.ResumeLayout(False)
+        Me.Panel40.ResumeLayout(False)
         Me.Panel_mii_musics.ResumeLayout(False)
         CType(Me.AdvH_editmiimusic, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_unlockmusic, System.ComponentModel.ISupportInitialize).EndInit
@@ -18227,16 +23337,6 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_cathph_03, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_cathph_02, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_cathph_01, System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel_mii_inventory.ResumeLayout(False)
-        CType(Me.AdvH_invgoodsitems, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_invspefoods, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.AdvH_invinterior, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_unlock_gooditems, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_unlock_specialfoods, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_unlock_interiors, System.ComponentModel.ISupportInitialize).EndInit
-        Me.Panel38.ResumeLayout(False)
-        Me.Panel39.ResumeLayout(False)
-        Me.Panel40.ResumeLayout(False)
         Me.Panel_itemsedit.ResumeLayout(False)
         Me.Panel50.ResumeLayout(False)
         Me.Panel51.ResumeLayout(False)
@@ -18674,14 +23774,14 @@ Partial Class TL_SaveEditor
     Friend WithEvents Panel_miiedit As Panel
     Friend WithEvents Addsymbol_islandname As PictureBox
     Friend WithEvents Addsymbol_pronun_island As PictureBox
-    Friend WithEvents Panel_addsymb As Panel
-    Friend WithEvents Panel_spesymb_cancel As Panel
-    Friend WithEvents Panel_spesymb_add As Panel
-    Friend WithEvents Select_spesymb As ComboBox
-    Friend WithEvents Text_spesymb_add_n As Label
-    Friend WithEvents Text_spesymb_cancel As Label
-    Friend WithEvents Text_spesymb_add_pn As Label
-    Friend WithEvents Text_spesymb As Label
+    Friend WithEvents Panel_addsymb_islandname As Panel
+    Friend WithEvents Panel_spesymb_islandname_cancel As Panel
+    Friend WithEvents Panel_spesymb_islandname_add As Panel
+    Friend WithEvents Select_spesymb_islandname As ComboBox
+    Friend WithEvents Text_spesymb_add_islandname_n As Label
+    Friend WithEvents Text_spesymb_islandname_cancel As Label
+    Friend WithEvents Text_spesymb_add_islandname_pn As Label
+    Friend WithEvents Text_spesymb_islandname As Label
     Friend WithEvents Warning_islandname As PictureBox
     Friend WithEvents Panel_bgmusic As Panel
     Friend WithEvents Icon_bgmusic As PictureBox
@@ -18934,12 +24034,12 @@ Partial Class TL_SaveEditor
     Friend WithEvents Panel17 As Panel
     Friend WithEvents Text_valuesharing As TextBox
     Friend WithEvents Select_sharing As ComboBox
-    Friend WithEvents PictureBox22 As PictureBox
+    Friend WithEvents AdvH_nickname As PictureBox
     Friend WithEvents Text_datasharing As TextBox
-    Friend WithEvents PictureBox23 As PictureBox
-    Friend WithEvents Panel_edit_nickname As Panel
+    Friend WithEvents AdvH_nicknamepronun As PictureBox
+    Friend WithEvents Panel_edit_pronun_nickname As Panel
     Friend WithEvents Icon_valid_nickname As PictureBox
-    Friend WithEvents Text_edit_nickname As TextBox
+    Friend WithEvents Text_edit_pronun_nickname As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Panel41 As Panel
     Friend WithEvents valu_copying As NumericUpDown
@@ -18970,17 +24070,17 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_nickname As TextBox
     Friend WithEvents Title_nickname As Label
     Friend WithEvents Text_pronun_nickname As Label
-    Friend WithEvents Panel_edit_lastname As Panel
+    Friend WithEvents Panel_edit_pronun_lastname As Panel
     Friend WithEvents Icon_valid_lastname As PictureBox
-    Friend WithEvents Text_edit_lastname As TextBox
+    Friend WithEvents Text_edit_pronun_lastname As TextBox
     Friend WithEvents Icon_pronun_lastname As PictureBox
     Friend WithEvents Panel_lastname As Panel
     Friend WithEvents Text_lastname As TextBox
     Friend WithEvents Title_lastname As Label
     Friend WithEvents Text_pronun_lastname As Label
-    Friend WithEvents Panel_edit_firstname As Panel
+    Friend WithEvents Panel_edit_pronun_firstname As Panel
     Friend WithEvents Icon_valid_firstname As PictureBox
-    Friend WithEvents Text_edit_firstname As TextBox
+    Friend WithEvents Text_edit_pronun_firstname As TextBox
     Friend WithEvents Icon_pronun_firstname As PictureBox
     Friend WithEvents Panel_firstname As Panel
     Friend WithEvents Text_firstname As TextBox
@@ -19002,7 +24102,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents AdvH_worst As PictureBox
     Friend WithEvents AdvH_fav As PictureBox
     Friend WithEvents AdvH_allfav As PictureBox
-    Friend WithEvents AdvH_gifs As PictureBox
+    Friend WithEvents AdvH_gifts As PictureBox
     Friend WithEvents AdvH_fullness As PictureBox
     Friend WithEvents AdvH_experience As PictureBox
     Friend WithEvents AdvH_miilevel As PictureBox
@@ -19072,7 +24172,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents valu_fullness As NumericUpDown
     Friend WithEvents Text_fullness As Label
     Friend WithEvents Icon_fullness As PictureBox
-    Friend WithEvents valu_exp As NumericUpDown
     Friend WithEvents Select_allfav_2 As ComboBox
     Friend WithEvents valu_allfav_2 As NumericUpDown
     Friend WithEvents Select_fav_3 As ComboBox
@@ -19660,15 +24759,332 @@ Partial Class TL_SaveEditor
     Friend WithEvents Panel52 As Panel
     Friend WithEvents PictureBox30 As PictureBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents PictureBox35 As PictureBox
-    Friend WithEvents PictureBox36 As PictureBox
-    Friend WithEvents PictureBox32 As PictureBox
-    Friend WithEvents PictureBox33 As PictureBox
-    Friend WithEvents PictureBox26 As PictureBox
-    Friend WithEvents PictureBox31 As PictureBox
+    Friend WithEvents Addsymbol_pronun_nickname As PictureBox
+    Friend WithEvents Addsymbol_nickname As PictureBox
+    Friend WithEvents Addsymbol_pronun_firstname As PictureBox
+    Friend WithEvents Addsymbol_firstname As PictureBox
+    Friend WithEvents Addsymbol_pronun_lastname As PictureBox
+    Friend WithEvents Addsymbol_lastname As PictureBox
     Friend WithEvents Icon_edit_full_75 As PictureBox
     Friend WithEvents Panel_savemii As Panel
     Friend WithEvents Button_savemii As Panel
     Friend WithEvents Text_savemii As Label
     Friend WithEvents CheckBox26 As CheckBox
+    Friend WithEvents Panel_addsymb_nickname As Panel
+    Friend WithEvents Text_spesymb_nickname As Label
+    Friend WithEvents Panel_spesymb_nickname_cancel As Panel
+    Friend WithEvents Text_spesymb_nickname_cancel As Label
+    Friend WithEvents Panel_spesymb_nickname_add As Panel
+    Friend WithEvents Text_spesymb_add_nickname_pn As Label
+    Friend WithEvents Text_spesymb_add_nickname_n As Label
+    Friend WithEvents Select_spesymb_nickname As ComboBox
+    Friend WithEvents Panel_addsymb_lastname As Panel
+    Friend WithEvents Text_spesymb_lastname As Label
+    Friend WithEvents Panel_spesymb_lastname_cancel As Panel
+    Friend WithEvents Text_spesymb_lastname_cancel As Label
+    Friend WithEvents Panel_spesymb_lastname_add As Panel
+    Friend WithEvents Text_spesymb_add_lastname_pn As Label
+    Friend WithEvents Text_spesymb_add_lastname_n As Label
+    Friend WithEvents Select_spesymb_lastname As ComboBox
+    Friend WithEvents Panel_addsymb_firstname As Panel
+    Friend WithEvents Text_spesymb_firstname As Label
+    Friend WithEvents Panel_spesymb_firstname_cancel As Panel
+    Friend WithEvents Text_spesymb_firstname_cancel As Label
+    Friend WithEvents Panel_spesymb_firstname_add As Panel
+    Friend WithEvents Text_spesymb_add_firstname_pn As Label
+    Friend WithEvents Text_spesymb_add_firstname_n As Label
+    Friend WithEvents Select_spesymb_firstname As ComboBox
+    Friend WithEvents Icon_mii_gender As PictureBox
+    Friend WithEvents AdvH_miigender As PictureBox
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents Select_mii_gender As ComboBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Panel_edit_favcolor As Panel
+    Friend WithEvents AdvH_editfavcolor As PictureBox
+    Friend WithEvents Icon_editcolor_violet As PictureBox
+    Friend WithEvents Icon_editcolor_black As PictureBox
+    Friend WithEvents Icon_editcolor_yellow As PictureBox
+    Friend WithEvents Icon_editcolor_blue As PictureBox
+    Friend WithEvents Icon_editcolor_lightblue As PictureBox
+    Friend WithEvents Icon_editcolor_brown As PictureBox
+    Friend WithEvents Icon_editcolor_red As PictureBox
+    Friend WithEvents Icon_editcolor_lightgreen As PictureBox
+    Friend WithEvents Icon_editcolor_pink As PictureBox
+    Friend WithEvents Icon_editcolor_white As PictureBox
+    Friend WithEvents Icon_editcolor_orange As PictureBox
+    Friend WithEvents Icon_editcolor_green As PictureBox
+    Friend WithEvents Text_favcolor As TextBox
+    Friend WithEvents Icon_arrowexp_left As PictureBox
+    Friend WithEvents Icon_arrowexp_right As PictureBox
+    Friend WithEvents Timer_arrowexp_right As Timer
+    Friend WithEvents Timer_arrowexp_left As Timer
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents CheckBox27 As CheckBox
+    Friend WithEvents Icon_arrowexp_maxright As PictureBox
+    Friend WithEvents Icon_arrowexp_maxleft As PictureBox
+    Friend WithEvents Panel_gifs_1b00 As Panel
+    Friend WithEvents Panel_gifs_1300 As Panel
+    Friend WithEvents Panel_gifs_1900 As Panel
+    Friend WithEvents Panel_gifs_1800 As Panel
+    Friend WithEvents Panel_gifs_1700 As Panel
+    Friend WithEvents Panel_gifs_1600 As Panel
+    Friend WithEvents Panel_gifs_1500 As Panel
+    Friend WithEvents Panel_gifs_1a00 As Panel
+    Friend WithEvents Panel_gifs_1400 As Panel
+    Friend WithEvents Panel_gifs_1100 As Panel
+    Friend WithEvents Panel_gifs_1000 As Panel
+    Friend WithEvents Panel_gifs_0f00 As Panel
+    Friend WithEvents Panel_gifs_0e00 As Panel
+    Friend WithEvents Panel_gifs_0d00 As Panel
+    Friend WithEvents Panel_gifs_0400 As Panel
+    Friend WithEvents Panel_gifs_0300 As Panel
+    Friend WithEvents Panel_gifs_0200 As Panel
+    Friend WithEvents Panel_gifs_0100 As Panel
+    Friend WithEvents Panel_gifs_0000 As Panel
+    Friend WithEvents Panel_gifs_0500 As Panel
+    Friend WithEvents Panel_gifs_0b00 As Panel
+    Friend WithEvents Panel_gifs_1200 As Panel
+    Friend WithEvents Panel_gifs_0700 As Panel
+    Friend WithEvents Panel_gifs_0900 As Panel
+    Friend WithEvents Panel_gifs_FFFF As Panel
+    Friend WithEvents Panel_gifs_0a00 As Panel
+    Friend WithEvents Panel_gifs_0c00 As Panel
+    Friend WithEvents Panel_gifs_0600 As Panel
+    Friend WithEvents Panel_gifs_0800 As Panel
+    Friend WithEvents Gifs1_0000 As Label
+    Friend WithEvents Gifs1_FFFF As Label
+    Friend WithEvents Gifs1_1b00 As Label
+    Friend WithEvents Gifs1_1300 As Label
+    Friend WithEvents Gifs1_1900 As Label
+    Friend WithEvents Gifs1_1800 As Label
+    Friend WithEvents Gifs1_1700 As Label
+    Friend WithEvents Gifs1_1600 As Label
+    Friend WithEvents Gifs1_1500 As Label
+    Friend WithEvents Gifs1_1a00 As Label
+    Friend WithEvents Gifs1_1400 As Label
+    Friend WithEvents Gifs1_1100 As Label
+    Friend WithEvents Gifs1_1000 As Label
+    Friend WithEvents Gifs1_0f00 As Label
+    Friend WithEvents Gifs1_0e00 As Label
+    Friend WithEvents Gifs1_0d00 As Label
+    Friend WithEvents Gifs1_0400 As Label
+    Friend WithEvents Gifs1_0300 As Label
+    Friend WithEvents Gifs1_0200 As Label
+    Friend WithEvents Gifs1_0100 As Label
+    Friend WithEvents Gifs1_0500 As Label
+    Friend WithEvents Gifs1_0b00 As Label
+    Friend WithEvents Gifs1_1200 As Label
+    Friend WithEvents Gifs1_0700 As Label
+    Friend WithEvents Gifs1_0900 As Label
+    Friend WithEvents Gifs1_0a00 As Label
+    Friend WithEvents Gifs1_0c00 As Label
+    Friend WithEvents Gifs1_0600 As Label
+    Friend WithEvents Gifs1_0800 As Label
+    Friend WithEvents Gifs3_1b00 As Label
+    Friend WithEvents Gifs2_1b00 As Label
+    Friend WithEvents Gifs3_1300 As Label
+    Friend WithEvents Gifs2_1300 As Label
+    Friend WithEvents Gifs3_1900 As Label
+    Friend WithEvents Gifs2_1900 As Label
+    Friend WithEvents Gifs3_1800 As Label
+    Friend WithEvents Gifs2_1800 As Label
+    Friend WithEvents Gifs3_1700 As Label
+    Friend WithEvents Gifs2_1700 As Label
+    Friend WithEvents Gifs3_1600 As Label
+    Friend WithEvents Gifs2_1600 As Label
+    Friend WithEvents Gifs3_1500 As Label
+    Friend WithEvents Gifs2_1500 As Label
+    Friend WithEvents Gifs3_1a00 As Label
+    Friend WithEvents Gifs2_1a00 As Label
+    Friend WithEvents Gifs3_1400 As Label
+    Friend WithEvents Gifs2_1400 As Label
+    Friend WithEvents Gifs3_1100 As Label
+    Friend WithEvents Gifs2_1100 As Label
+    Friend WithEvents Gifs3_1000 As Label
+    Friend WithEvents Gifs2_1000 As Label
+    Friend WithEvents Gifs3_0f00 As Label
+    Friend WithEvents Gifs2_0f00 As Label
+    Friend WithEvents Gifs3_0e00 As Label
+    Friend WithEvents Gifs2_0e00 As Label
+    Friend WithEvents Gifs3_0d00 As Label
+    Friend WithEvents Gifs2_0d00 As Label
+    Friend WithEvents Gifs3_0400 As Label
+    Friend WithEvents Gifs2_0400 As Label
+    Friend WithEvents Gifs3_0300 As Label
+    Friend WithEvents Gifs2_0300 As Label
+    Friend WithEvents Gifs3_0200 As Label
+    Friend WithEvents Gifs2_0200 As Label
+    Friend WithEvents Gifs3_0100 As Label
+    Friend WithEvents Gifs2_0100 As Label
+    Friend WithEvents Gifs3_0000 As Label
+    Friend WithEvents Gifs2_0000 As Label
+    Friend WithEvents Gifs3_0500 As Label
+    Friend WithEvents Gifs2_0500 As Label
+    Friend WithEvents Gifs3_0b00 As Label
+    Friend WithEvents Gifs2_0b00 As Label
+    Friend WithEvents Gifs3_1200 As Label
+    Friend WithEvents Gifs2_1200 As Label
+    Friend WithEvents Gifs3_0700 As Label
+    Friend WithEvents Gifs2_0700 As Label
+    Friend WithEvents Gifs3_0900 As Label
+    Friend WithEvents Gifs2_0900 As Label
+    Friend WithEvents Gifs3_FFFF As Label
+    Friend WithEvents Gifs2_FFFF As Label
+    Friend WithEvents Gifs3_0a00 As Label
+    Friend WithEvents Gifs2_0a00 As Label
+    Friend WithEvents Gifs3_0c00 As Label
+    Friend WithEvents Gifs2_0c00 As Label
+    Friend WithEvents Gifs3_0600 As Label
+    Friend WithEvents Gifs2_0600 As Label
+    Friend WithEvents Gifs3_0800 As Label
+    Friend WithEvents Gifs2_0800 As Label
+    Friend WithEvents Gifs5_1b00 As Label
+    Friend WithEvents Gifs4_1b00 As Label
+    Friend WithEvents Gifs5_1300 As Label
+    Friend WithEvents Gifs4_1300 As Label
+    Friend WithEvents Gifs5_1900 As Label
+    Friend WithEvents Gifs4_1900 As Label
+    Friend WithEvents Gifs5_1800 As Label
+    Friend WithEvents Gifs4_1800 As Label
+    Friend WithEvents Gifs5_1700 As Label
+    Friend WithEvents Gifs4_1700 As Label
+    Friend WithEvents Gifs5_1600 As Label
+    Friend WithEvents Gifs4_1600 As Label
+    Friend WithEvents Gifs5_1500 As Label
+    Friend WithEvents Gifs4_1500 As Label
+    Friend WithEvents Gifs5_1a00 As Label
+    Friend WithEvents Gifs4_1a00 As Label
+    Friend WithEvents Gifs5_1400 As Label
+    Friend WithEvents Gifs4_1400 As Label
+    Friend WithEvents Gifs5_1100 As Label
+    Friend WithEvents Gifs4_1100 As Label
+    Friend WithEvents Gifs5_1000 As Label
+    Friend WithEvents Gifs4_1000 As Label
+    Friend WithEvents Gifs5_0f00 As Label
+    Friend WithEvents Gifs4_0f00 As Label
+    Friend WithEvents Gifs5_0e00 As Label
+    Friend WithEvents Gifs4_0e00 As Label
+    Friend WithEvents Gifs5_0d00 As Label
+    Friend WithEvents Gifs4_0d00 As Label
+    Friend WithEvents Gifs5_0400 As Label
+    Friend WithEvents Gifs4_0400 As Label
+    Friend WithEvents Gifs5_0300 As Label
+    Friend WithEvents Gifs4_0300 As Label
+    Friend WithEvents Gifs5_0200 As Label
+    Friend WithEvents Gifs4_0200 As Label
+    Friend WithEvents Gifs5_0100 As Label
+    Friend WithEvents Gifs4_0100 As Label
+    Friend WithEvents Gifs5_0000 As Label
+    Friend WithEvents Gifs4_0000 As Label
+    Friend WithEvents Gifs5_0500 As Label
+    Friend WithEvents Gifs4_0500 As Label
+    Friend WithEvents Gifs5_0b00 As Label
+    Friend WithEvents Gifs4_0b00 As Label
+    Friend WithEvents Gifs5_1200 As Label
+    Friend WithEvents Gifs4_1200 As Label
+    Friend WithEvents Gifs5_0700 As Label
+    Friend WithEvents Gifs4_0700 As Label
+    Friend WithEvents Gifs5_0900 As Label
+    Friend WithEvents Gifs4_0900 As Label
+    Friend WithEvents Gifs5_FFFF As Label
+    Friend WithEvents Gifs4_FFFF As Label
+    Friend WithEvents Gifs5_0a00 As Label
+    Friend WithEvents Gifs4_0a00 As Label
+    Friend WithEvents Gifs5_0c00 As Label
+    Friend WithEvents Gifs4_0c00 As Label
+    Friend WithEvents Gifs5_0600 As Label
+    Friend WithEvents Gifs4_0600 As Label
+    Friend WithEvents Gifs5_0800 As Label
+    Friend WithEvents Gifs4_0800 As Label
+    Friend WithEvents Gifs6_1b00 As Label
+    Friend WithEvents Gifs6_1300 As Label
+    Friend WithEvents Gifs6_1900 As Label
+    Friend WithEvents Gifs6_1800 As Label
+    Friend WithEvents Gifs6_1700 As Label
+    Friend WithEvents Gifs6_1600 As Label
+    Friend WithEvents Gifs6_1500 As Label
+    Friend WithEvents Gifs6_1a00 As Label
+    Friend WithEvents Gifs6_1400 As Label
+    Friend WithEvents Gifs6_1100 As Label
+    Friend WithEvents Gifs6_1000 As Label
+    Friend WithEvents Gifs6_0f00 As Label
+    Friend WithEvents Gifs6_0e00 As Label
+    Friend WithEvents Gifs6_0d00 As Label
+    Friend WithEvents Gifs6_0400 As Label
+    Friend WithEvents Gifs6_0300 As Label
+    Friend WithEvents Gifs6_0200 As Label
+    Friend WithEvents Gifs6_0100 As Label
+    Friend WithEvents Gifs6_0000 As Label
+    Friend WithEvents Gifs6_0500 As Label
+    Friend WithEvents Gifs6_0b00 As Label
+    Friend WithEvents Gifs6_1200 As Label
+    Friend WithEvents Gifs6_0700 As Label
+    Friend WithEvents Gifs6_0900 As Label
+    Friend WithEvents Gifs6_FFFF As Label
+    Friend WithEvents Gifs6_0a00 As Label
+    Friend WithEvents Gifs6_0c00 As Label
+    Friend WithEvents Gifs6_0600 As Label
+    Friend WithEvents Gifs6_0800 As Label
+    Friend WithEvents Gifs7_FFFF As Label
+    Friend WithEvents Panel_edit_gifs As Panel
+    Friend WithEvents AdvH_editgifts As PictureBox
+    Friend WithEvents Gifs8_0b00 As Label
+    Friend WithEvents Gifs7_0b00 As Label
+    Friend WithEvents Gifs8_0800 As Label
+    Friend WithEvents Gifs7_0800 As Label
+    Friend WithEvents Gifs8_1b00 As Label
+    Friend WithEvents Gifs7_1b00 As Label
+    Friend WithEvents Gifs8_0600 As Label
+    Friend WithEvents Gifs7_0600 As Label
+    Friend WithEvents Gifs8_1300 As Label
+    Friend WithEvents Gifs7_1300 As Label
+    Friend WithEvents Gifs8_0c00 As Label
+    Friend WithEvents Gifs7_0c00 As Label
+    Friend WithEvents Gifs8_1900 As Label
+    Friend WithEvents Gifs7_1900 As Label
+    Friend WithEvents Gifs8_0a00 As Label
+    Friend WithEvents Gifs7_0a00 As Label
+    Friend WithEvents Gifs8_1800 As Label
+    Friend WithEvents Gifs7_1800 As Label
+    Friend WithEvents Gifs8_FFFF As Label
+    Friend WithEvents Gifs8_1700 As Label
+    Friend WithEvents Gifs7_1700 As Label
+    Friend WithEvents Gifs8_0900 As Label
+    Friend WithEvents Gifs7_0900 As Label
+    Friend WithEvents Gifs8_1600 As Label
+    Friend WithEvents Gifs7_1600 As Label
+    Friend WithEvents Gifs8_0700 As Label
+    Friend WithEvents Gifs7_0700 As Label
+    Friend WithEvents Gifs8_1500 As Label
+    Friend WithEvents Gifs7_1500 As Label
+    Friend WithEvents Gifs8_1200 As Label
+    Friend WithEvents Gifs7_1200 As Label
+    Friend WithEvents Gifs8_1a00 As Label
+    Friend WithEvents Gifs7_1a00 As Label
+    Friend WithEvents Gifs8_0500 As Label
+    Friend WithEvents Gifs7_0500 As Label
+    Friend WithEvents Gifs8_1400 As Label
+    Friend WithEvents Gifs7_1400 As Label
+    Friend WithEvents Gifs8_0000 As Label
+    Friend WithEvents Gifs7_0000 As Label
+    Friend WithEvents Gifs8_1100 As Label
+    Friend WithEvents Gifs7_1100 As Label
+    Friend WithEvents Gifs8_0100 As Label
+    Friend WithEvents Gifs7_0100 As Label
+    Friend WithEvents Gifs8_1000 As Label
+    Friend WithEvents Gifs7_1000 As Label
+    Friend WithEvents Gifs8_0200 As Label
+    Friend WithEvents Gifs7_0200 As Label
+    Friend WithEvents Gifs8_0f00 As Label
+    Friend WithEvents Gifs7_0f00 As Label
+    Friend WithEvents Gifs8_0300 As Label
+    Friend WithEvents Gifs7_0300 As Label
+    Friend WithEvents Gifs8_0e00 As Label
+    Friend WithEvents Gifs7_0e00 As Label
+    Friend WithEvents Gifs8_0400 As Label
+    Friend WithEvents Gifs7_0400 As Label
+    Friend WithEvents Gifs8_0d00 As Label
+    Friend WithEvents Gifs7_0d00 As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

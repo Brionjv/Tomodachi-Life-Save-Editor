@@ -63,6 +63,66 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property apartment_black() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_black", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property apartment_blue() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_blue", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property apartment_blue_j() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_blue_j", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property apartment_orange() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_orange", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property apartment_phone() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_phone", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property apartment_pink() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apartment_pink", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property appart() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("appart", resourceCulture)
@@ -2723,6 +2783,86 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property icon_arrowexp_left() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_arrowexp_left", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_arrowexp_lefton() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_arrowexp_lefton", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_arrowexp_maxleft() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_arrowexp_maxleft", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_arrowexp_maxlefton() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_arrowexp_maxlefton", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_arrowexp_maxright() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_arrowexp_maxright", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_arrowexp_maxrighton() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_arrowexp_maxrighton", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_arrowexp_right() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_arrowexp_right", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_arrowexp_righton() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_arrowexp_righton", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property icon_badvh() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icon_badvh", resourceCulture)
@@ -3083,6 +3223,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property icon_mii_femalegender() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_mii_femalegender", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property icon_mii_house() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icon_mii_house", resourceCulture)
@@ -3096,6 +3246,16 @@ Namespace My.Resources
         Public ReadOnly Property icon_mii_inventory() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icon_mii_inventory", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_mii_malegender() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_mii_malegender", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -3133,9 +3293,29 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property icon_navi_leftact() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_navi_leftact", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property icon_navi_right() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icon_navi_right", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_navi_rightact() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_navi_rightact", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

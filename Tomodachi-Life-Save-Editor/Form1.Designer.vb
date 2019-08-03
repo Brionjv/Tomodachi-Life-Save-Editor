@@ -619,7 +619,6 @@ Partial Class TL_SaveEditor
         Me.valu_level = New System.Windows.Forms.NumericUpDown()
         Me.valu_fullness = New System.Windows.Forms.NumericUpDown()
         Me.Text_fullness = New System.Windows.Forms.Label()
-        Me.Check_fullness = New System.Windows.Forms.RadioButton()
         Me.Icon_fullness = New System.Windows.Forms.PictureBox()
         Me.valu_exp = New System.Windows.Forms.NumericUpDown()
         Me.Select_allfav_2 = New System.Windows.Forms.ComboBox()
@@ -638,6 +637,7 @@ Partial Class TL_SaveEditor
         Me.Text_danger_interaction = New System.Windows.Forms.Label()
         Me.Select_allfav_1 = New System.Windows.Forms.ComboBox()
         Me.valu_allfav_1 = New System.Windows.Forms.NumericUpDown()
+        Me.Check_fullness = New System.Windows.Forms.CheckBox()
         Me.Tab_mii_friendlist = New System.Windows.Forms.TabPage()
         Me.AdvH_setallrelation = New System.Windows.Forms.PictureBox()
         Me.Panel18 = New System.Windows.Forms.Panel()
@@ -4698,7 +4698,7 @@ Partial Class TL_SaveEditor
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(518, 392)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = "- Fix error in island address" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Changelog.Text = "- Fix error in target Mii (Japanese version)"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"- Update ''He didn't eat'' feature"
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version
@@ -4708,7 +4708,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 3.1.0"
+        Me.Text_TLSE_version.Text = "Version 3.1.1"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7629,7 +7629,6 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Controls.Add(Me.valu_level)
         Me.Tab_mii_status.Controls.Add(Me.valu_fullness)
         Me.Tab_mii_status.Controls.Add(Me.Text_fullness)
-        Me.Tab_mii_status.Controls.Add(Me.Check_fullness)
         Me.Tab_mii_status.Controls.Add(Me.Icon_fullness)
         Me.Tab_mii_status.Controls.Add(Me.valu_exp)
         Me.Tab_mii_status.Controls.Add(Me.Select_allfav_2)
@@ -7648,6 +7647,7 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_status.Controls.Add(Me.Text_danger_interaction)
         Me.Tab_mii_status.Controls.Add(Me.Select_allfav_1)
         Me.Tab_mii_status.Controls.Add(Me.valu_allfav_1)
+        Me.Tab_mii_status.Controls.Add(Me.Check_fullness)
         Me.Tab_mii_status.ImageIndex = 2
         Me.Tab_mii_status.Location = New System.Drawing.Point(4, 23)
         Me.Tab_mii_status.Name = "Tab_mii_status"
@@ -8719,18 +8719,6 @@ Partial Class TL_SaveEditor
         Me.Text_fullness.TabIndex = 108
         Me.Text_fullness.Text = "Fullness"
         '
-        'Check_fullness
-        '
-        Me.Check_fullness.AutoSize = true
-        Me.Check_fullness.BackColor = System.Drawing.Color.Transparent
-        Me.Check_fullness.Location = New System.Drawing.Point(374, 65)
-        Me.Check_fullness.Name = "Check_fullness"
-        Me.Check_fullness.Size = New System.Drawing.Size(85, 17)
-        Me.Check_fullness.TabIndex = 111
-        Me.Check_fullness.TabStop = true
-        Me.Check_fullness.Text = "He didn't eat"
-        Me.Check_fullness.UseVisualStyleBackColor = false
-        '
         'Icon_fullness
         '
         Me.Icon_fullness.BackColor = System.Drawing.Color.Transparent
@@ -8927,6 +8915,16 @@ Partial Class TL_SaveEditor
         Me.valu_allfav_1.Size = New System.Drawing.Size(167, 16)
         Me.valu_allfav_1.TabIndex = 121
         Me.valu_allfav_1.Value = New Decimal(New Integer() {65535, 0, 0, 0})
+        '
+        'Check_fullness
+        '
+        Me.Check_fullness.AutoSize = true
+        Me.Check_fullness.Location = New System.Drawing.Point(374, 65)
+        Me.Check_fullness.Name = "Check_fullness"
+        Me.Check_fullness.Size = New System.Drawing.Size(86, 17)
+        Me.Check_fullness.TabIndex = 251
+        Me.Check_fullness.Text = "He didn't eat"
+        Me.Check_fullness.UseVisualStyleBackColor = true
         '
         'Tab_mii_friendlist
         '
@@ -14283,8 +14281,8 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_extras)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.Panel_islandedit)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -15331,7 +15329,6 @@ End Sub
     Friend WithEvents Icon_itemmii_1 As System.Windows.Forms.PictureBox
     Friend WithEvents valu_fullness As System.Windows.Forms.NumericUpDown
     Friend WithEvents Text_fullness As System.Windows.Forms.Label
-    Friend WithEvents Check_fullness As System.Windows.Forms.RadioButton
     Friend WithEvents PictureBox34 As System.Windows.Forms.PictureBox
     Friend WithEvents valu_economy As System.Windows.Forms.NumericUpDown
     Friend WithEvents Icon_fullness As System.Windows.Forms.PictureBox
@@ -16110,5 +16107,6 @@ End Sub
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents Check_fullness As System.Windows.Forms.CheckBox
 
 End Class

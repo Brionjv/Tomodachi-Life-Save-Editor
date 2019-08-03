@@ -157,6 +157,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\apartment_pink.png" />
+    <None Include="Resources\apartment_phone.png" />
+    <None Include="Resources\apartment_orange.png" />
+    <None Include="Resources\apartment_blue_j.png" />
+    <None Include="Resources\apartment_blue.png" />
+    <None Include="Resources\apartment_black.png" />
+    <None Include="Resources\icon_navi_rightact.png" />
+    <None Include="Resources\icon_navi_leftact.png" />
+    <None Include="Resources\icon_arrowexp_maxrighton.png" />
+    <None Include="Resources\icon_arrowexp_maxright.png" />
+    <None Include="Resources\icon_arrowexp_maxlefton.png" />
+    <None Include="Resources\icon_arrowexp_maxleft.png" />
+    <None Include="Resources\icon_arrowexp_righton.png" />
+    <None Include="Resources\icon_arrowexp_lefton.png" />
+    <None Include="Resources\icon_arrowexp_right.png" />
+    <None Include="Resources\icon_arrowexp_left.png" />
+    <None Include="Resources\icon_mii_malegender.png" />
+    <None Include="Resources\icon_mii_femalegender.png" />
     <None Include="Resources\button_save_orange.png" />
     <None Include="Resources\button_save_blue.png" />
     <None Include="Resources\icon_panel_music.png" />
