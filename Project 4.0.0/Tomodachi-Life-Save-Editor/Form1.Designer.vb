@@ -91,6 +91,7 @@ Partial Class TL_SaveEditor
         Me.Icon_description = New System.Windows.Forms.PictureBox()
         Me.Panel_done = New System.Windows.Forms.Panel()
         Me.Text_done = New System.Windows.Forms.Label()
+        Me.Text_editing_mii = New System.Windows.Forms.Label()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
         Me.Panel_addsymb_islandname = New System.Windows.Forms.Panel()
         Me.Text_spesymb_islandname = New System.Windows.Forms.Label()
@@ -487,7 +488,6 @@ Partial Class TL_SaveEditor
         Me.Text_valuesharing = New System.Windows.Forms.TextBox()
         Me.Select_sharing = New System.Windows.Forms.ComboBox()
         Me.AdvH_nickname = New System.Windows.Forms.PictureBox()
-        Me.Text_datasharing = New System.Windows.Forms.TextBox()
         Me.Icon_growkid = New System.Windows.Forms.PictureBox()
         Me.AdvH_nicknamepronun = New System.Windows.Forms.PictureBox()
         Me.Panel_edit_pronun_nickname = New System.Windows.Forms.Panel()
@@ -548,6 +548,7 @@ Partial Class TL_SaveEditor
         Me.Title_firstname = New System.Windows.Forms.Label()
         Me.Text_pronun_firstname = New System.Windows.Forms.Label()
         Me.Text_favcolor = New System.Windows.Forms.TextBox()
+        Me.Text_datasharing = New System.Windows.Forms.TextBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.Panel_edit_gifs = New System.Windows.Forms.Panel()
         Me.AdvH_editgifts = New System.Windows.Forms.PictureBox()
@@ -914,6 +915,7 @@ Partial Class TL_SaveEditor
         Me.valu_allfav_1 = New System.Windows.Forms.NumericUpDown()
         Me.CheckBox26 = New System.Windows.Forms.CheckBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.AdvH_setallrelation = New System.Windows.Forms.PictureBox()
         Me.Panel28 = New System.Windows.Forms.Panel()
         Me.select_setallrelation = New System.Windows.Forms.ComboBox()
@@ -1336,6 +1338,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_29 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_30 = New System.Windows.Forms.ComboBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.Panel_edit_haircolor = New System.Windows.Forms.Panel()
         Me.AdvH_edithaircolor = New System.Windows.Forms.PictureBox()
         Me.color_empty = New System.Windows.Forms.Label()
@@ -1644,7 +1647,7 @@ Partial Class TL_SaveEditor
         Me.Icon_crthall_music = New System.Windows.Forms.PictureBox()
         Me.Timer_arrowexp_right = New System.Windows.Forms.Timer(Me.components)
         Me.Timer_arrowexp_left = New System.Windows.Forms.Timer(Me.components)
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label12 = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TLSE_header.SuspendLayout
@@ -2307,6 +2310,7 @@ Partial Class TL_SaveEditor
         CType(Me.valu_friend_rela_45, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_friend_rela_44, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabPage5.SuspendLayout
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_edit_haircolor.SuspendLayout
         CType(Me.AdvH_edithaircolor, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_32, System.ComponentModel.ISupportInitialize).BeginInit
@@ -2573,6 +2577,7 @@ Partial Class TL_SaveEditor
         'TLSE_header
         '
         Me.TLSE_header.BackColor = System.Drawing.Color.White
+        Me.TLSE_header.Controls.Add(Me.Label12)
         Me.TLSE_header.Controls.Add(Me.Panel_menubar)
         Me.TLSE_header.Controls.Add(Me.Minimizebutton)
         Me.TLSE_header.Controls.Add(Me.TLSE_title)
@@ -3235,6 +3240,7 @@ Partial Class TL_SaveEditor
         Me.Menu_panel.Controls.Add(Me.Menu_islandedit)
         Me.Menu_panel.Controls.Add(Me.Menu_settings)
         Me.Menu_panel.Controls.Add(Me.Panel_done)
+        Me.Menu_panel.Controls.Add(Me.Text_editing_mii)
         Me.Menu_panel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Menu_panel.Location = New System.Drawing.Point(0, 75)
         Me.Menu_panel.Name = "Menu_panel"
@@ -3370,6 +3376,18 @@ Partial Class TL_SaveEditor
         Me.Text_done.TabIndex = 0
         Me.Text_done.Text = "It's done !"
         Me.Text_done.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_editing_mii
+        '
+        Me.Text_editing_mii.BackColor = System.Drawing.Color.Transparent
+        Me.Text_editing_mii.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Text_editing_mii.Location = New System.Drawing.Point(0, 498)
+        Me.Text_editing_mii.Name = "Text_editing_mii"
+        Me.Text_editing_mii.Size = New System.Drawing.Size(150, 23)
+        Me.Text_editing_mii.TabIndex = 294
+        Me.Text_editing_mii.Text = "editing ..."
+        Me.Text_editing_mii.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_editing_mii.Visible = False
         '
         'Panel_islandedit
         '
@@ -5423,7 +5441,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0"
+        Me.Text_TLSE_version.Text = "Version 4.0.0 Alpha"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7383,7 +7401,6 @@ Partial Class TL_SaveEditor
         '
         'Title_skincolor
         '
-        Me.Title_skincolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.skin_color_1
         Me.Title_skincolor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Title_skincolor.Location = New System.Drawing.Point(144, 161)
         Me.Title_skincolor.Name = "Title_skincolor"
@@ -7416,7 +7433,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_datawrinkles.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Text_datawrinkles.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.Text_datawrinkles.Location = New System.Drawing.Point(397, 250)
+        Me.Text_datawrinkles.Location = New System.Drawing.Point(407, 249)
         Me.Text_datawrinkles.Name = "Text_datawrinkles"
         Me.Text_datawrinkles.Size = New System.Drawing.Size(100, 13)
         Me.Text_datawrinkles.TabIndex = 274
@@ -7452,7 +7469,6 @@ Partial Class TL_SaveEditor
         Me.TabPage2.Controls.Add(Me.Addsymbol_lastname)
         Me.TabPage2.Controls.Add(Me.Panel17)
         Me.TabPage2.Controls.Add(Me.AdvH_nickname)
-        Me.TabPage2.Controls.Add(Me.Text_datasharing)
         Me.TabPage2.Controls.Add(Me.Icon_growkid)
         Me.TabPage2.Controls.Add(Me.AdvH_nicknamepronun)
         Me.TabPage2.Controls.Add(Me.Panel_edit_pronun_nickname)
@@ -7496,6 +7512,7 @@ Partial Class TL_SaveEditor
         Me.TabPage2.Controls.Add(Me.Title_firstname)
         Me.TabPage2.Controls.Add(Me.Text_pronun_firstname)
         Me.TabPage2.Controls.Add(Me.Text_favcolor)
+        Me.TabPage2.Controls.Add(Me.Text_datasharing)
         Me.TabPage2.ImageIndex = 2
         Me.TabPage2.Location = New System.Drawing.Point(25, 4)
         Me.TabPage2.Name = "TabPage2"
@@ -8164,17 +8181,6 @@ Partial Class TL_SaveEditor
         Me.AdvH_nickname.TabStop = False
         Me.AdvH_nickname.Visible = False
         '
-        'Text_datasharing
-        '
-        Me.Text_datasharing.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_datasharing.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.Text_datasharing.Location = New System.Drawing.Point(164, 117)
-        Me.Text_datasharing.Name = "Text_datasharing"
-        Me.Text_datasharing.Size = New System.Drawing.Size(100, 13)
-        Me.Text_datasharing.TabIndex = 261
-        Me.Text_datasharing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.Text_datasharing.Visible = False
-        '
         'Icon_growkid
         '
         Me.Icon_growkid.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_kid
@@ -8820,6 +8826,17 @@ Partial Class TL_SaveEditor
         Me.Text_favcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.Text_favcolor.Visible = False
         '
+        'Text_datasharing
+        '
+        Me.Text_datasharing.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_datasharing.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.Text_datasharing.Location = New System.Drawing.Point(163, 118)
+        Me.Text_datasharing.Name = "Text_datasharing"
+        Me.Text_datasharing.Size = New System.Drawing.Size(100, 13)
+        Me.Text_datasharing.TabIndex = 261
+        Me.Text_datasharing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_datasharing.Visible = False
+        '
         'TabPage3
         '
         Me.TabPage3.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
@@ -8931,7 +8948,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0e00)
         Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0400)
         Me.Panel_edit_gifs.Controls.Add(Me.Panel_gifs_0d00)
-        Me.Panel_edit_gifs.Location = New System.Drawing.Point(436, 189)
+        Me.Panel_edit_gifs.Location = New System.Drawing.Point(439, 189)
         Me.Panel_edit_gifs.Name = "Panel_edit_gifs"
         Me.Panel_edit_gifs.Size = New System.Drawing.Size(160, 167)
         Me.Panel_edit_gifs.TabIndex = 379
@@ -14097,6 +14114,18 @@ Partial Class TL_SaveEditor
         Me.TabPage4.ToolTipText = "Mii friend list"
         Me.TabPage4.UseVisualStyleBackColor = True
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.SystemColors.Window
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Never want to see again..."})
+        Me.ComboBox1.Location = New System.Drawing.Point(234, 459)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(154, 21)
+        Me.ComboBox1.TabIndex = 223
+        '
         'AdvH_setallrelation
         '
         Me.AdvH_setallrelation.BackColor = System.Drawing.Color.Transparent
@@ -18928,6 +18957,7 @@ Partial Class TL_SaveEditor
         'TabPage5
         '
         Me.TabPage5.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.TabPage5.Controls.Add(Me.PictureBox22)
         Me.TabPage5.Controls.Add(Me.Panel_edit_haircolor)
         Me.TabPage5.Controls.Add(Me.Panel48)
         Me.TabPage5.Controls.Add(Me.Panel49)
@@ -18981,6 +19011,18 @@ Partial Class TL_SaveEditor
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.ToolTipText = "Mii equipment and inventory"
         Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'PictureBox22
+        '
+        Me.PictureBox22.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox22.Image = CType(resources.GetObject("PictureBox22.Image"), System.Drawing.Image)
+        Me.PictureBox22.Location = New System.Drawing.Point(293, 102)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox22.TabIndex = 295
+        Me.PictureBox22.TabStop = False
+        Me.PictureBox22.Visible = False
         '
         'Panel_edit_haircolor
         '
@@ -22479,17 +22521,16 @@ Partial Class TL_SaveEditor
         '
         Me.Timer_arrowexp_left.Interval = 20
         '
-        'ComboBox1
+        'Label12
         '
-        Me.ComboBox1.BackColor = System.Drawing.SystemColors.Window
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Never want to see again..."})
-        Me.ComboBox1.Location = New System.Drawing.Point(234, 459)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(154, 21)
-        Me.ComboBox1.TabIndex = 223
+        Me.Label12.ForeColor = System.Drawing.Color.Red
+        Me.Label12.Location = New System.Drawing.Point(437, 35)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(239, 39)
+        Me.Label12.TabIndex = 268
+        Me.Label12.Text = "This is not the final version. If you have any suggestions or glitch, report them" &
+    " on Github or gbatemp.net page" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TL_SaveEditor
         '
@@ -22497,7 +22538,6 @@ Partial Class TL_SaveEditor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -22511,6 +22551,7 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_islandedit)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -23217,6 +23258,7 @@ Partial Class TL_SaveEditor
         CType(Me.valu_friend_rela_45, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_friend_rela_44, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabPage5.ResumeLayout(False)
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_edit_haircolor.ResumeLayout(False)
         Me.Panel_edit_haircolor.PerformLayout
         CType(Me.AdvH_edithaircolor, System.ComponentModel.ISupportInitialize).EndInit
@@ -25087,4 +25129,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents Gifs8_0d00 As Label
     Friend WithEvents Gifs7_0d00 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents PictureBox22 As PictureBox
+    Friend WithEvents Text_editing_mii As Label
+    Friend WithEvents Label12 As Label
 End Class

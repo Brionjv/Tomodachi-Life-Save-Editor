@@ -771,13 +771,13 @@ Public Class TL_SaveEditor
                     TLSE_logo.Visible = False
                     TLSE_logo_update.Visible = True
                     If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                        TLSE_dialog.Text_TLSE_dialog.Text = "An update is available" & vbNewLine & "click on Tomodachi Life Save Editor icon" & vbNewLine & "to download new version"
+                        TLSE_dialog.Text_TLSE_dialog.Text = "An update of version 4.0.0 is available" & vbNewLine & "click on Tomodachi Life Save Editor icon" & vbNewLine & "to download new version"
                         TLSE_dialog.Icon_reference.Location = New Point(10, 40)
                         TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
                         TLSE_dialog.ShowDialog()
                     End If
                     If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                        TLSE_dialog.Text_TLSE_dialog.Text = "Une mise à jour est disponible" & vbNewLine & "cliquez sur l'îcone de Tomodachi Life Save Editor" & vbNewLine & "pour télécharger la nouvelle version"
+                        TLSE_dialog.Text_TLSE_dialog.Text = "Une mise à jourde la version 4.0.0 est disponible" & vbNewLine & "cliquez sur l'îcone de Tomodachi Life Save Editor" & vbNewLine & "pour télécharger la nouvelle version"
                         TLSE_dialog.Icon_reference.Location = New Point(10, 40)
                         TLSE_dialog.Icon_reference.Image = My.Resources.TLSE_arrow
                         TLSE_dialog.ShowDialog()
