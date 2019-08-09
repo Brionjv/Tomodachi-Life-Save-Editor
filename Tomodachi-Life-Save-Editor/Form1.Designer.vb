@@ -285,10 +285,6 @@ Partial Class TL_SaveEditor
         Me.Text_editing_mii = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.Tab_mii_edit = New System.Windows.Forms.TabPage()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.Icon_editprofile = New System.Windows.Forms.PictureBox()
-        Me.Icon_editbodyface = New System.Windows.Forms.PictureBox()
         Me.Panel_edit_haircolor = New System.Windows.Forms.Panel()
         Me.AdvH_edithaircolor = New System.Windows.Forms.PictureBox()
         Me.color_empty = New System.Windows.Forms.Label()
@@ -325,6 +321,10 @@ Partial Class TL_SaveEditor
         Me.color_3 = New System.Windows.Forms.PictureBox()
         Me.color_2 = New System.Windows.Forms.PictureBox()
         Me.color_1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.Icon_editprofile = New System.Windows.Forms.PictureBox()
+        Me.Icon_editbodyface = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel40 = New System.Windows.Forms.Panel()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -594,6 +594,7 @@ Partial Class TL_SaveEditor
         Me.valu_target1 = New System.Windows.Forms.NumericUpDown()
         Me.Select_target1 = New System.Windows.Forms.ComboBox()
         Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Select_interaction_j = New System.Windows.Forms.ComboBox()
         Me.valu_interaction = New System.Windows.Forms.NumericUpDown()
         Me.Select_interaction = New System.Windows.Forms.ComboBox()
         Me.Panel_target1_foods = New System.Windows.Forms.Panel()
@@ -1320,10 +1321,6 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_savemii,System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabControl1.SuspendLayout
         Me.Tab_mii_edit.SuspendLayout
-        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_editprofile,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.Icon_editbodyface,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_edit_haircolor.SuspendLayout
         CType(Me.AdvH_edithaircolor,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_32,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1358,6 +1355,10 @@ Partial Class TL_SaveEditor
         CType(Me.color_3,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_2,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.color_1,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editprofile,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_editbodyface,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel40.SuspendLayout
         Me.Panel39.SuspendLayout
         Me.Panel31.SuspendLayout
@@ -3939,7 +3940,7 @@ Partial Class TL_SaveEditor
         '
         Me.TextBox_fpath.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.TextBox_fpath.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox_fpath.Location = New System.Drawing.Point(53, 61)
+        Me.TextBox_fpath.Location = New System.Drawing.Point(78, 61)
         Me.TextBox_fpath.Name = "TextBox_fpath"
         Me.TextBox_fpath.ReadOnly = true
         Me.TextBox_fpath.Size = New System.Drawing.Size(494, 13)
@@ -4698,7 +4699,8 @@ Partial Class TL_SaveEditor
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(518, 392)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = "This is version 3.1.1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Version 4.0.0 Alpha is include in zip folder"
+        Me.Changelog.Text = "This is version 3.1.2"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Version 4.0.0 Beta is include in zip folder"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Fix interacti"& _ 
+    "ons with japanese version (need some test but should work)"
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version
@@ -4708,7 +4710,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0 Alpha"
+        Me.Text_TLSE_version.Text = "Version 4.0.0 Beta"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -4902,11 +4904,11 @@ Partial Class TL_SaveEditor
         '
         Me.Tab_mii_edit.BackColor = System.Drawing.Color.Transparent
         Me.Tab_mii_edit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_edit
+        Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.PictureBox9)
         Me.Tab_mii_edit.Controls.Add(Me.PictureBox11)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_editprofile)
         Me.Tab_mii_edit.Controls.Add(Me.Icon_editbodyface)
-        Me.Tab_mii_edit.Controls.Add(Me.Panel_edit_haircolor)
         Me.Tab_mii_edit.Controls.Add(Me.Label3)
         Me.Tab_mii_edit.Controls.Add(Me.Panel40)
         Me.Tab_mii_edit.Controls.Add(Me.Label2)
@@ -4959,50 +4961,6 @@ Partial Class TL_SaveEditor
         Me.Tab_mii_edit.Size = New System.Drawing.Size(635, 479)
         Me.Tab_mii_edit.TabIndex = 0
         Me.Tab_mii_edit.Text = "Edit"
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox9.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.PictureBox9.Location = New System.Drawing.Point(500, 16)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(23, 22)
-        Me.PictureBox9.TabIndex = 265
-        Me.PictureBox9.TabStop = false
-        Me.PictureBox9.Visible = false
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox11.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.PictureBox11.Location = New System.Drawing.Point(433, 16)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(23, 22)
-        Me.PictureBox11.TabIndex = 264
-        Me.PictureBox11.TabStop = false
-        Me.PictureBox11.Visible = false
-        '
-        'Icon_editprofile
-        '
-        Me.Icon_editprofile.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_editprofile.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_editprofile
-        Me.Icon_editprofile.Location = New System.Drawing.Point(456, 8)
-        Me.Icon_editprofile.Name = "Icon_editprofile"
-        Me.Icon_editprofile.Size = New System.Drawing.Size(44, 30)
-        Me.Icon_editprofile.TabIndex = 263
-        Me.Icon_editprofile.TabStop = false
-        '
-        'Icon_editbodyface
-        '
-        Me.Icon_editbodyface.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_editbodyface.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_editfacebody
-        Me.Icon_editbodyface.Location = New System.Drawing.Point(389, 8)
-        Me.Icon_editbodyface.Name = "Icon_editbodyface"
-        Me.Icon_editbodyface.Size = New System.Drawing.Size(44, 30)
-        Me.Icon_editbodyface.TabIndex = 262
-        Me.Icon_editbodyface.TabStop = false
         '
         'Panel_edit_haircolor
         '
@@ -5369,6 +5327,50 @@ Partial Class TL_SaveEditor
         Me.color_1.Size = New System.Drawing.Size(17, 17)
         Me.color_1.TabIndex = 0
         Me.color_1.TabStop = false
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox9.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox9.Location = New System.Drawing.Point(500, 16)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox9.TabIndex = 265
+        Me.PictureBox9.TabStop = false
+        Me.PictureBox9.Visible = false
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox11.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox11.Location = New System.Drawing.Point(433, 16)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox11.TabIndex = 264
+        Me.PictureBox11.TabStop = false
+        Me.PictureBox11.Visible = false
+        '
+        'Icon_editprofile
+        '
+        Me.Icon_editprofile.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editprofile.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_editprofile
+        Me.Icon_editprofile.Location = New System.Drawing.Point(456, 8)
+        Me.Icon_editprofile.Name = "Icon_editprofile"
+        Me.Icon_editprofile.Size = New System.Drawing.Size(44, 30)
+        Me.Icon_editprofile.TabIndex = 263
+        Me.Icon_editprofile.TabStop = false
+        '
+        'Icon_editbodyface
+        '
+        Me.Icon_editbodyface.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_editbodyface.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_editfacebody
+        Me.Icon_editbodyface.Location = New System.Drawing.Point(389, 8)
+        Me.Icon_editbodyface.Name = "Icon_editbodyface"
+        Me.Icon_editbodyface.Size = New System.Drawing.Size(44, 30)
+        Me.Icon_editbodyface.TabIndex = 262
+        Me.Icon_editbodyface.TabStop = false
         '
         'Label3
         '
@@ -8434,12 +8436,35 @@ Partial Class TL_SaveEditor
         'Panel17
         '
         Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel17.Controls.Add(Me.Select_interaction_j)
         Me.Panel17.Controls.Add(Me.valu_interaction)
         Me.Panel17.Controls.Add(Me.Select_interaction)
         Me.Panel17.Location = New System.Drawing.Point(33, 21)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(441, 25)
         Me.Panel17.TabIndex = 159
+        '
+        'Select_interaction_j
+        '
+        Me.Select_interaction_j.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_interaction_j.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_interaction_j.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_interaction_j.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Select_interaction_j.FormattingEnabled = true
+        Me.Select_interaction_j.IntegralHeight = false
+        Me.Select_interaction_j.ItemHeight = 13
+        Me.Select_interaction_j.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like {foods}", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "_Would like to eat something but say nothing_", "_Would like to eat something but say nothing (1)_", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "_Would like to eat something but say nothing (2)_", "I'd like to eat something Korean", "I could eat anything !", "I'm starving (1)", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings "& _ 
+                "to ?", "_Show heart in windows but freeze_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you"& _ 
+                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me "& _ 
+                "?", "I think that I have something really special with {Mii}.  What do you thing about"& _ 
+                " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii"& _ 
+                "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories,"& _ 
+                " should I tell them more ?", "A mosquito got into my tent…", "I'm so famished I can hardly move…", "I've got a sore throat…", "I got a letter from someone to meet them on the roof… I don't know who wrote it… "& _ 
+                "Should I go ?", "I loss something very important", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?"})
+        Me.Select_interaction_j.Location = New System.Drawing.Point(2, 2)
+        Me.Select_interaction_j.Name = "Select_interaction_j"
+        Me.Select_interaction_j.Size = New System.Drawing.Size(437, 21)
+        Me.Select_interaction_j.TabIndex = 188
         '
         'valu_interaction
         '
@@ -14511,10 +14536,6 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_savemii,System.ComponentModel.ISupportInitialize).EndInit
         Me.TabControl1.ResumeLayout(false)
         Me.Tab_mii_edit.ResumeLayout(false)
-        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_editprofile,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.Icon_editbodyface,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_edit_haircolor.ResumeLayout(false)
         Me.Panel_edit_haircolor.PerformLayout
         CType(Me.AdvH_edithaircolor,System.ComponentModel.ISupportInitialize).EndInit
@@ -14550,6 +14571,10 @@ Partial Class TL_SaveEditor
         CType(Me.color_3,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.color_2,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.color_1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox9,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editprofile,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_editbodyface,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel40.ResumeLayout(false)
         Me.Panel40.PerformLayout
         Me.Panel39.ResumeLayout(false)
@@ -16108,5 +16133,6 @@ End Sub
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents Check_fullness As System.Windows.Forms.CheckBox
+    Friend WithEvents Select_interaction_j As System.Windows.Forms.ComboBox
 
 End Class

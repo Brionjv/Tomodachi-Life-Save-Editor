@@ -27,6 +27,7 @@ Partial Class TL_SaveEditor
         Me.TLSE_logo_update = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo = New System.Windows.Forms.PictureBox()
         Me.TLSE_header = New System.Windows.Forms.Panel()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel_menubar = New System.Windows.Forms.Panel()
         Me.Panel_bspesymb = New System.Windows.Forms.Panel()
         Me.Icon_bspesymb = New System.Windows.Forms.PictureBox()
@@ -451,7 +452,7 @@ Partial Class TL_SaveEditor
         Me.Icon_mii_gender = New System.Windows.Forms.PictureBox()
         Me.AdvH_miigender = New System.Windows.Forms.PictureBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.Text_mii_gender = New System.Windows.Forms.TextBox()
         Me.Select_mii_gender = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel_addsymb_nickname = New System.Windows.Forms.Panel()
@@ -823,7 +824,7 @@ Partial Class TL_SaveEditor
         Me.Icon_arrowexp_maxright = New System.Windows.Forms.PictureBox()
         Me.Icon_arrowexp_maxleft = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.CheckBox27 = New System.Windows.Forms.CheckBox()
+        Me.Check_tummy_infiniteeat = New System.Windows.Forms.CheckBox()
         Me.Icon_arrowexp_left = New System.Windows.Forms.PictureBox()
         Me.Icon_arrowexp_right = New System.Windows.Forms.PictureBox()
         Me.Select_allfav_US1 = New System.Windows.Forms.ComboBox()
@@ -840,7 +841,7 @@ Partial Class TL_SaveEditor
         Me.Select_fav_US2 = New System.Windows.Forms.ComboBox()
         Me.Select_fav_US1 = New System.Windows.Forms.ComboBox()
         Me.Select_allfav_US2 = New System.Windows.Forms.ComboBox()
-        Me.valu_chkfullness = New System.Windows.Forms.NumericUpDown()
+        Me.valu_chktummy = New System.Windows.Forms.NumericUpDown()
         Me.valu_experience = New System.Windows.Forms.NumericUpDown()
         Me.valu_itemmii_8 = New System.Windows.Forms.NumericUpDown()
         Me.valu_itemmii_7 = New System.Windows.Forms.NumericUpDown()
@@ -874,6 +875,7 @@ Partial Class TL_SaveEditor
         Me.Panel27 = New System.Windows.Forms.Panel()
         Me.valu_interaction = New System.Windows.Forms.NumericUpDown()
         Me.Select_interaction = New System.Windows.Forms.ComboBox()
+        Me.Select_interaction_j = New System.Windows.Forms.ComboBox()
         Me.Panel_target1_foods = New System.Windows.Forms.Panel()
         Me.Select_target1_foodUS = New System.Windows.Forms.ComboBox()
         Me.Select_target1_foodEU = New System.Windows.Forms.ComboBox()
@@ -913,9 +915,8 @@ Partial Class TL_SaveEditor
         Me.AdvH_noeat = New System.Windows.Forms.PictureBox()
         Me.Select_allfav_1 = New System.Windows.Forms.ComboBox()
         Me.valu_allfav_1 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox26 = New System.Windows.Forms.CheckBox()
+        Me.Check_tummy_noteat = New System.Windows.Forms.CheckBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.AdvH_setallrelation = New System.Windows.Forms.PictureBox()
         Me.Panel28 = New System.Windows.Forms.Panel()
         Me.select_setallrelation = New System.Windows.Forms.ComboBox()
@@ -1647,7 +1648,6 @@ Partial Class TL_SaveEditor
         Me.Icon_crthall_music = New System.Windows.Forms.PictureBox()
         Me.Timer_arrowexp_right = New System.Windows.Forms.Timer(Me.components)
         Me.Timer_arrowexp_left = New System.Windows.Forms.Timer(Me.components)
-        Me.Label12 = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TLSE_header.SuspendLayout
@@ -1936,7 +1936,6 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_mii_gender, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_miigender, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel6.SuspendLayout
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_addsymb_nickname.SuspendLayout
         Me.Panel_spesymb_nickname_cancel.SuspendLayout
         Me.Panel_spesymb_nickname_add.SuspendLayout
@@ -2039,7 +2038,7 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_fullness, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_experience, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_miilevel, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_chkfullness, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.valu_chktummy, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_experience, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_itemmii_8, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_itemmii_7, System.ComponentModel.ISupportInitialize).BeginInit
@@ -2588,6 +2587,17 @@ Partial Class TL_SaveEditor
         Me.TLSE_header.Name = "TLSE_header"
         Me.TLSE_header.Size = New System.Drawing.Size(680, 75)
         Me.TLSE_header.TabIndex = 26
+        '
+        'Label12
+        '
+        Me.Label12.ForeColor = System.Drawing.Color.Red
+        Me.Label12.Location = New System.Drawing.Point(437, 35)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(239, 39)
+        Me.Label12.TabIndex = 268
+        Me.Label12.Text = "This is not the final version. If you have any suggestions or glitch, report them" &
+    " on Github or gbatemp.net page" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel_menubar
         '
@@ -5441,7 +5451,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0 Alpha"
+        Me.Text_TLSE_version.Text = "Version 4.0.0 Beta"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7700,23 +7710,23 @@ Partial Class TL_SaveEditor
         'Panel6
         '
         Me.Panel6.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel6.Controls.Add(Me.NumericUpDown1)
+        Me.Panel6.Controls.Add(Me.Text_mii_gender)
         Me.Panel6.Controls.Add(Me.Select_mii_gender)
         Me.Panel6.Location = New System.Drawing.Point(143, 310)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(104, 25)
         Me.Panel6.TabIndex = 316
         '
-        'NumericUpDown1
+        'Text_mii_gender
         '
-        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown1.Location = New System.Drawing.Point(4, 4)
-        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(40, 16)
-        Me.NumericUpDown1.TabIndex = 131
-        Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown1.Visible = False
+        Me.Text_mii_gender.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_mii_gender.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.Text_mii_gender.Location = New System.Drawing.Point(3, 5)
+        Me.Text_mii_gender.Name = "Text_mii_gender"
+        Me.Text_mii_gender.Size = New System.Drawing.Size(48, 13)
+        Me.Text_mii_gender.TabIndex = 320
+        Me.Text_mii_gender.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_mii_gender.Visible = False
         '
         'Select_mii_gender
         '
@@ -8846,7 +8856,7 @@ Partial Class TL_SaveEditor
         Me.TabPage3.Controls.Add(Me.Icon_arrowexp_maxright)
         Me.TabPage3.Controls.Add(Me.Icon_arrowexp_maxleft)
         Me.TabPage3.Controls.Add(Me.PictureBox12)
-        Me.TabPage3.Controls.Add(Me.CheckBox27)
+        Me.TabPage3.Controls.Add(Me.Check_tummy_infiniteeat)
         Me.TabPage3.Controls.Add(Me.Icon_arrowexp_left)
         Me.TabPage3.Controls.Add(Me.Icon_arrowexp_right)
         Me.TabPage3.Controls.Add(Me.Select_allfav_US1)
@@ -8863,7 +8873,7 @@ Partial Class TL_SaveEditor
         Me.TabPage3.Controls.Add(Me.Select_fav_US2)
         Me.TabPage3.Controls.Add(Me.Select_fav_US1)
         Me.TabPage3.Controls.Add(Me.Select_allfav_US2)
-        Me.TabPage3.Controls.Add(Me.valu_chkfullness)
+        Me.TabPage3.Controls.Add(Me.valu_chktummy)
         Me.TabPage3.Controls.Add(Me.valu_experience)
         Me.TabPage3.Controls.Add(Me.valu_itemmii_8)
         Me.TabPage3.Controls.Add(Me.valu_itemmii_7)
@@ -8906,7 +8916,7 @@ Partial Class TL_SaveEditor
         Me.TabPage3.Controls.Add(Me.AdvH_noeat)
         Me.TabPage3.Controls.Add(Me.Select_allfav_1)
         Me.TabPage3.Controls.Add(Me.valu_allfav_1)
-        Me.TabPage3.Controls.Add(Me.CheckBox26)
+        Me.TabPage3.Controls.Add(Me.Check_tummy_noteat)
         Me.TabPage3.ImageIndex = 4
         Me.TabPage3.Location = New System.Drawing.Point(25, 4)
         Me.TabPage3.Name = "TabPage3"
@@ -12940,7 +12950,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_edit_full_75.BackColor = System.Drawing.Color.Transparent
         Me.Icon_edit_full_75.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_edit_full_75.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.fullness_50
+        Me.Icon_edit_full_75.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.fullness_75
         Me.Icon_edit_full_75.Location = New System.Drawing.Point(7, 56)
         Me.Icon_edit_full_75.Name = "Icon_edit_full_75"
         Me.Icon_edit_full_75.Size = New System.Drawing.Size(55, 50)
@@ -13023,23 +13033,23 @@ Partial Class TL_SaveEditor
         Me.PictureBox12.TabStop = False
         Me.PictureBox12.Visible = False
         '
-        'CheckBox27
+        'Check_tummy_infiniteeat
         '
-        Me.CheckBox27.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox27.AutoSize = True
-        Me.CheckBox27.BackColor = System.Drawing.Color.White
-        Me.CheckBox27.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox27.FlatAppearance.BorderSize = 0
-        Me.CheckBox27.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.CheckBox27.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox27.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.CheckBox27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox27.Location = New System.Drawing.Point(380, 132)
-        Me.CheckBox27.Name = "CheckBox27"
-        Me.CheckBox27.Size = New System.Drawing.Size(147, 23)
-        Me.CheckBox27.TabIndex = 318
-        Me.CheckBox27.Text = "He never have to eat again"
-        Me.CheckBox27.UseVisualStyleBackColor = False
+        Me.Check_tummy_infiniteeat.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_tummy_infiniteeat.AutoSize = True
+        Me.Check_tummy_infiniteeat.BackColor = System.Drawing.Color.White
+        Me.Check_tummy_infiniteeat.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_tummy_infiniteeat.FlatAppearance.BorderSize = 0
+        Me.Check_tummy_infiniteeat.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_tummy_infiniteeat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_tummy_infiniteeat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_tummy_infiniteeat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_tummy_infiniteeat.Location = New System.Drawing.Point(380, 132)
+        Me.Check_tummy_infiniteeat.Name = "Check_tummy_infiniteeat"
+        Me.Check_tummy_infiniteeat.Size = New System.Drawing.Size(147, 23)
+        Me.Check_tummy_infiniteeat.TabIndex = 318
+        Me.Check_tummy_infiniteeat.Text = "He never have to eat again"
+        Me.Check_tummy_infiniteeat.UseVisualStyleBackColor = False
         '
         'Icon_arrowexp_left
         '
@@ -13223,16 +13233,16 @@ Partial Class TL_SaveEditor
         Me.Select_allfav_US2.Size = New System.Drawing.Size(167, 21)
         Me.Select_allfav_US2.TabIndex = 297
         '
-        'valu_chkfullness
+        'valu_chktummy
         '
-        Me.valu_chkfullness.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_chkfullness.Location = New System.Drawing.Point(379, 156)
-        Me.valu_chkfullness.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_chkfullness.Name = "valu_chkfullness"
-        Me.valu_chkfullness.Size = New System.Drawing.Size(38, 16)
-        Me.valu_chkfullness.TabIndex = 289
-        Me.valu_chkfullness.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_chkfullness.Visible = False
+        Me.valu_chktummy.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_chktummy.Location = New System.Drawing.Point(379, 156)
+        Me.valu_chktummy.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_chktummy.Name = "valu_chktummy"
+        Me.valu_chktummy.Size = New System.Drawing.Size(38, 16)
+        Me.valu_chktummy.TabIndex = 289
+        Me.valu_chktummy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_chktummy.Visible = False
         '
         'valu_experience
         '
@@ -13604,6 +13614,7 @@ Partial Class TL_SaveEditor
         Me.Panel27.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel27.Controls.Add(Me.valu_interaction)
         Me.Panel27.Controls.Add(Me.Select_interaction)
+        Me.Panel27.Controls.Add(Me.Select_interaction_j)
         Me.Panel27.Location = New System.Drawing.Point(33, 21)
         Me.Panel27.Name = "Panel27"
         Me.Panel27.Size = New System.Drawing.Size(441, 25)
@@ -13643,6 +13654,28 @@ Partial Class TL_SaveEditor
         Me.Select_interaction.Name = "Select_interaction"
         Me.Select_interaction.Size = New System.Drawing.Size(437, 21)
         Me.Select_interaction.TabIndex = 112
+        '
+        'Select_interaction_j
+        '
+        Me.Select_interaction_j.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_interaction_j.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_interaction_j.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_interaction_j.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Select_interaction_j.FormattingEnabled = True
+        Me.Select_interaction_j.IntegralHeight = False
+        Me.Select_interaction_j.ItemHeight = 13
+        Me.Select_interaction_j.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like {foods}", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "_Would like to eat something but say nothing_", "_Would like to eat something but say nothing (1)_", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "_Would like to eat something but say nothing (2)_", "I'd like to eat something Korean", "I could eat anything !", "I'm starving (1)", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings " &
+                "to ?", "_Show heart in windows but freeze_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you" &
+                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me " &
+                "?", "I think that I have something really special with {Mii}.  What do you thing about" &
+                " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii" &
+                "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories," &
+                " should I tell them more ?", "A mosquito got into my tent…", "I'm so famished I can hardly move…", "I've got a sore throat…", "I got a letter from someone to meet them on the roof… I don't know who wrote it… " &
+                "Should I go ?", "I loss something very important", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?"})
+        Me.Select_interaction_j.Location = New System.Drawing.Point(2, 2)
+        Me.Select_interaction_j.Name = "Select_interaction_j"
+        Me.Select_interaction_j.Size = New System.Drawing.Size(437, 21)
+        Me.Select_interaction_j.TabIndex = 188
         '
         'Panel_target1_foods
         '
@@ -14073,28 +14106,27 @@ Partial Class TL_SaveEditor
         Me.valu_allfav_1.TabIndex = 278
         Me.valu_allfav_1.Value = New Decimal(New Integer() {65535, 0, 0, 0})
         '
-        'CheckBox26
+        'Check_tummy_noteat
         '
-        Me.CheckBox26.Appearance = System.Windows.Forms.Appearance.Button
-        Me.CheckBox26.AutoSize = True
-        Me.CheckBox26.BackColor = System.Drawing.Color.White
-        Me.CheckBox26.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.CheckBox26.FlatAppearance.BorderSize = 0
-        Me.CheckBox26.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
-        Me.CheckBox26.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.CheckBox26.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.CheckBox26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CheckBox26.Location = New System.Drawing.Point(380, 105)
-        Me.CheckBox26.Name = "CheckBox26"
-        Me.CheckBox26.Size = New System.Drawing.Size(77, 23)
-        Me.CheckBox26.TabIndex = 314
-        Me.CheckBox26.Text = "He didn't eat"
-        Me.CheckBox26.UseVisualStyleBackColor = False
+        Me.Check_tummy_noteat.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_tummy_noteat.AutoSize = True
+        Me.Check_tummy_noteat.BackColor = System.Drawing.Color.White
+        Me.Check_tummy_noteat.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_tummy_noteat.FlatAppearance.BorderSize = 0
+        Me.Check_tummy_noteat.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_tummy_noteat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_tummy_noteat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_tummy_noteat.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_tummy_noteat.Location = New System.Drawing.Point(380, 105)
+        Me.Check_tummy_noteat.Name = "Check_tummy_noteat"
+        Me.Check_tummy_noteat.Size = New System.Drawing.Size(77, 23)
+        Me.Check_tummy_noteat.TabIndex = 314
+        Me.Check_tummy_noteat.Text = "He didn't eat"
+        Me.Check_tummy_noteat.UseVisualStyleBackColor = False
         '
         'TabPage4
         '
         Me.TabPage4.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
-        Me.TabPage4.Controls.Add(Me.ComboBox1)
         Me.TabPage4.Controls.Add(Me.AdvH_setallrelation)
         Me.TabPage4.Controls.Add(Me.Panel28)
         Me.TabPage4.Controls.Add(Me.AdvH_setallfriends)
@@ -14113,18 +14145,6 @@ Partial Class TL_SaveEditor
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.ToolTipText = "Mii friend list"
         Me.TabPage4.UseVisualStyleBackColor = True
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.BackColor = System.Drawing.SystemColors.Window
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Never want to see again..."})
-        Me.ComboBox1.Location = New System.Drawing.Point(234, 459)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(154, 21)
-        Me.ComboBox1.TabIndex = 223
         '
         'AdvH_setallrelation
         '
@@ -19022,7 +19042,6 @@ Partial Class TL_SaveEditor
         Me.PictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox22.TabIndex = 295
         Me.PictureBox22.TabStop = False
-        Me.PictureBox22.Visible = False
         '
         'Panel_edit_haircolor
         '
@@ -22521,17 +22540,6 @@ Partial Class TL_SaveEditor
         '
         Me.Timer_arrowexp_left.Interval = 20
         '
-        'Label12
-        '
-        Me.Label12.ForeColor = System.Drawing.Color.Red
-        Me.Label12.Location = New System.Drawing.Point(437, 35)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(239, 39)
-        Me.Label12.TabIndex = 268
-        Me.Label12.Text = "This is not the final version. If you have any suggestions or glitch, report them" &
-    " on Github or gbatemp.net page" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -22872,7 +22880,7 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_mii_gender, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_miigender, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel6.ResumeLayout(False)
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel6.PerformLayout
         Me.Panel_addsymb_nickname.ResumeLayout(False)
         Me.Panel_addsymb_nickname.PerformLayout
         Me.Panel_spesymb_nickname_cancel.ResumeLayout(False)
@@ -22987,7 +22995,7 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_fullness, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_experience, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_miilevel, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_chkfullness, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.valu_chktummy, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_experience, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_itemmii_8, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_itemmii_7, System.ComponentModel.ISupportInitialize).EndInit
@@ -24155,7 +24163,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents Select_fav_US2 As ComboBox
     Friend WithEvents Select_fav_US1 As ComboBox
     Friend WithEvents Select_allfav_US2 As ComboBox
-    Friend WithEvents valu_chkfullness As NumericUpDown
+    Friend WithEvents valu_chktummy As NumericUpDown
     Friend WithEvents valu_experience As NumericUpDown
     Friend WithEvents valu_itemmii_8 As NumericUpDown
     Friend WithEvents Icon_growkid As PictureBox
@@ -24811,7 +24819,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents Panel_savemii As Panel
     Friend WithEvents Button_savemii As Panel
     Friend WithEvents Text_savemii As Label
-    Friend WithEvents CheckBox26 As CheckBox
+    Friend WithEvents Check_tummy_noteat As CheckBox
     Friend WithEvents Panel_addsymb_nickname As Panel
     Friend WithEvents Text_spesymb_nickname As Label
     Friend WithEvents Panel_spesymb_nickname_cancel As Panel
@@ -24839,7 +24847,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents Icon_mii_gender As PictureBox
     Friend WithEvents AdvH_miigender As PictureBox
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents Select_mii_gender As ComboBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Panel_edit_favcolor As Panel
@@ -24862,7 +24869,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents Timer_arrowexp_right As Timer
     Friend WithEvents Timer_arrowexp_left As Timer
     Friend WithEvents PictureBox12 As PictureBox
-    Friend WithEvents CheckBox27 As CheckBox
+    Friend WithEvents Check_tummy_infiniteeat As CheckBox
     Friend WithEvents Icon_arrowexp_maxright As PictureBox
     Friend WithEvents Icon_arrowexp_maxleft As PictureBox
     Friend WithEvents Panel_gifs_1b00 As Panel
@@ -25128,8 +25135,9 @@ Partial Class TL_SaveEditor
     Friend WithEvents Gifs7_0400 As Label
     Friend WithEvents Gifs8_0d00 As Label
     Friend WithEvents Gifs7_0d00 As Label
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents PictureBox22 As PictureBox
     Friend WithEvents Text_editing_mii As Label
     Friend WithEvents Label12 As Label
+    Friend WithEvents Text_mii_gender As TextBox
+    Friend WithEvents Select_interaction_j As ComboBox
 End Class

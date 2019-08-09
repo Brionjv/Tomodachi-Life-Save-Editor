@@ -99,7 +99,7 @@ Public Class TL_SaveEditor
         My.Settings.Parasetting_language = Select_language.SelectedItem
         My.Settings.Parasetting_music = Setting_music.Checked
         My.Settings.Parasetting_musicsel = Select_music.SelectedItem
-        'My.Settings.Parasetting_foodslang = Select_foods_language.SelectedItem
+        My.Settings.Parasetting_foodslang = Select_foods_language.SelectedItem
         My.Settings.Parasetting_advH = Setting_Advhelp.Checked
         My.Settings.Parasetting_specharc3ds = Setting_spesymb.Checked
     End Sub
@@ -110,6 +110,13 @@ Public Class TL_SaveEditor
         Select_spesymb_lastname.SelectedItem = Select_spesymb_lastname.Items.Item(0)
         Select_spesymb_nickname.SelectedItem = Select_spesymb_nickname.Items.Item(0)
         Select_music.SelectedItem = Select_music.Items.Item(0)
+        Select_language.SelectedItem = Select_language.Items.Item(0)
+        Select_foods_language.SelectedItem = Select_foods_language.Items.Item(0)
+        select_setallrelation.SelectedItem = select_setallrelation.Items.Item(0)
+        Select_miihouse.SelectedItem = Select_miihouse.Items.Item(0)
+        Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(0)
+        Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
+        Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
         Try
             Setting_ckupdate.Checked = My.Settings.Parasetting_ckupdate
             Setting_filepath.Checked = My.Settings.Parasetting_filepath
@@ -319,6 +326,8 @@ Public Class TL_SaveEditor
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
             Menu_concertedit.Visible = True
+            Select_interaction.Visible = True
+            Select_interaction_j.Visible = False
         ElseIf Filever_text.Text = "EU" Then
             TLSE_logo.Image = My.Resources.logo_EU
             TLSE_logo_update.Image = My.Resources.logo_EU_update
@@ -328,6 +337,8 @@ Public Class TL_SaveEditor
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
             Menu_concertedit.Visible = True
+            Select_interaction.Visible = True
+            Select_interaction_j.Visible = False
         ElseIf Filever_text.Text = "JP" Then
             TLSE_logo.Image = My.Resources.logo_JP
             TLSE_logo_update.Image = My.Resources.logo_JP_update
@@ -337,6 +348,8 @@ Public Class TL_SaveEditor
             Icon_tour.Enabled = False
             Icon_part.Enabled = False
             Menu_concertedit.Visible = False
+            Select_interaction.Visible = False
+            Select_interaction_j.Visible = True
         ElseIf Filever_text.Text = "KR" Then
             TLSE_logo.Image = My.Resources.logo_KR
             TLSE_logo_update.Image = My.Resources.logo_KR_update
@@ -346,6 +359,8 @@ Public Class TL_SaveEditor
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
             Menu_concertedit.Visible = False
+            Select_interaction.Visible = True
+            Select_interaction_j.Visible = False
         ElseIf Filever_text.Text = "" Then
             TLSE_logo.Image = My.Resources.logo_US
             TLSE_logo_update.Image = My.Resources.logo_US_update
@@ -355,6 +370,8 @@ Public Class TL_SaveEditor
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
             Menu_concertedit.Visible = True
+            Select_interaction.Visible = True
+            Select_interaction_j.Visible = False
         End If
     End Sub
     'end form setting
@@ -23351,6 +23368,1223 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
+    Private Sub Select_interaction_j__SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_interaction_j.SelectedIndexChanged
+        Danger_interaction.Visible = False
+        valu_target1.Enabled = False
+        valu_target2.Enabled = False
+        Select_target1.Visible = False
+        Select_target2.Visible = False
+        valu_target1.Visible = True
+        valu_target2.Visible = True
+        Icon_interaction.Visible = True
+        Select_interaction_j.Visible = True
+        Panel_target1.Visible = True
+        Panel_target1_foods.Visible = False
+        If Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(0) Then
+            valu_enddateinterac.Value = 0
+            valu_interaction.Value = 0
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            valu_target2.Enabled = True
+            Icon_interaction.Visible = False
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(1) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H109
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(2) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H10A
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+            If Filever_text.Text = "US" Then
+                Panel_target1.Visible = False
+                Panel_target1_foods.Visible = True
+                Select_target1_foodEU.Visible = False
+                Select_target1_foodUS.Visible = True
+            ElseIf Filever_text.Text = "EU" Then
+                Panel_target1.Visible = False
+                Panel_target1_foods.Visible = True
+                Select_target1_foodEU.Visible = True
+                Select_target1_foodUS.Visible = False
+            End If
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(3) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H10B
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(4) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H10C
+            valu_interacunknow.Value = &HC01
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(5) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H10D
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(6) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H10E
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(7) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H10F
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(8) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H110
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(9) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H111
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(10) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H112
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(11) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H113
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(12) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H114
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(13) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H115
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(14) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H116
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(15) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H117
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(16) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H118
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(17) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H119
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(18) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H11A
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(19) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H11B
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(20) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H11C
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(21) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H11D
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(22) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H11E
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(23) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H11F
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(24) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H120
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(25) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H121
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(26) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H122
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(27) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H123
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(28) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H124
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(29) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H125
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(30) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H126
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(31) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H127
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(32) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H128
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(33) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H129
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(34) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H12A
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(35) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H12B
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(36) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H12C
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(37) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H12D
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(38) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H12E
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(39) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H12F
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(40) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H130
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(41) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H131
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(42) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H132
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(43) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H133
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(44) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H134
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(45) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H135
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(46) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H136
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(47) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H137
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(48) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H138
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(49) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H139
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(50) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H13A
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(51) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H13B
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(52) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H13C
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(53) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H13D
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(54) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H13E
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(55) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H13F
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(56) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H140
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(57) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H141
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(58) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H142
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(59) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H143
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(60) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H144
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(61) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H145
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(62) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H146
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(63) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H147
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(64) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H148
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(65) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H149
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(66) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H14A
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(67) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H14B
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(68) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H14C
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(69) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H14D
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(70) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H14E
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(71) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H14F
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(72) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H150
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(73) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H151
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(74) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H152
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(75) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H153
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(76) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H155
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_pink
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(77) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H156
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(78) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H157
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 0
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            valu_target2.Enabled = True
+            valu_target2.Visible = False
+            Select_target2.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(79) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H158
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 0
+            Icon_interaction.Image = My.Resources.apartment_pink
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            valu_target2.Enabled = True
+            valu_target2.Visible = False
+            Select_target2.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(80) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H159
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 0
+            Icon_interaction.Image = My.Resources.apartment_pink
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            valu_target2.Enabled = True
+            valu_target2.Visible = False
+            Select_target2.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(81) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H15A
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_pink
+            valu_target1.Enabled = True
+            valu_target2.Enabled = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(82) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H15C
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(83) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H15D
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_pink
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(84) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H15E
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_pink
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(85) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H15F
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_phone
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(86) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H160
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_phone
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(87) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H161
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(88) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H162
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(89) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H163
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 0
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            valu_target2.Enabled = True
+            valu_target2.Visible = False
+            Select_target2.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(90) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H164
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(91) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H166
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Visible = False
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(92) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H167
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Visible = False
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(93) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H168
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_blue
+            If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(94) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H169
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_blue
+            If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(95) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H16A
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_blue
+            If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(96) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H16B
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_blue
+            If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(97) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H16C
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_blue
+            If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(98) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H16D
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_blue
+            If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(99) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H16E
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_blue
+            If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(100) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H16F
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_blue
+            If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+                Icon_interaction.Image = My.Resources.apartment_blue_j
+            End If
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(101) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H170
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(102) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H171
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(103) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H172
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(104) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H173
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(105) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H174
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(106) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H175
+            valu_interacunknow.Value = &HC01
+            valu_target1.Value = 5
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(107) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H176
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 2
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(108) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H177
+            valu_interacunknow.Value = &HC03
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(109) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H178
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(110) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H17A
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(111) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H17B
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 1
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(112) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H17C
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(113) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H17D
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(114) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H17E
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(115) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H17F
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(116) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H180
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(117) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H181
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(118) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H182
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(119) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H183
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_orange
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(120) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H184
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(121) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H185
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(122) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H186
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(123) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H187
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Icon_interaction.Visible = False
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(124) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H188
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Icon_interaction.Visible = False
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(125) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H189
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Icon_interaction.Visible = False
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(126) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H18A
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Icon_interaction.Visible = False
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(127) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H18B
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Icon_interaction.Visible = False
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(128) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H18C
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Icon_interaction.Visible = False
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(129) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H18D
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Icon_interaction.Visible = False
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(130) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H18E
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Icon_interaction.Visible = False
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(131) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H18F
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            valu_target1.Enabled = True
+            Icon_interaction.Visible = False
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(132) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H190
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(133) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H191
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+            valu_target2.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(134) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H194
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(135) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H195
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(136) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H196
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(137) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H197
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 0
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+            valu_target1.Enabled = True
+            valu_target1.Visible = False
+            Select_target1.Visible = True
+            Danger_interaction.Visible = True
+        ElseIf Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(138) Then
+            valu_enddateinterac.Value = valu_lastdatesave.Value + &H10000
+            valu_interaction.Value = &H198
+            valu_interacunknow.Value = &H900
+            valu_target1.Value = 65535
+            valu_target2.Value = 65535
+            Icon_interaction.Image = My.Resources.apartment_black
+        End If
+    End Sub
+
     Private Sub valu_interaction_ValueChanged(sender As Object, e As EventArgs) Handles valu_interaction.ValueChanged
         If valu_interaction.Value = &H0 Then
             Select_interaction.SelectedItem = Select_interaction.Items.Item(0)
@@ -23630,6 +24864,285 @@ Public Class TL_SaveEditor
             Select_interaction.SelectedItem = Select_interaction.Items.Item(137)
         ElseIf valu_interaction.Value = &H18F Then
             Select_interaction.SelectedItem = Select_interaction.Items.Item(138)
+        End If
+        If valu_interaction.Value = &H0 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(0)
+        ElseIf valu_interaction.Value = &H109 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(1)
+        ElseIf valu_interaction.Value = &H10A Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(2)
+        ElseIf valu_interaction.Value = &H10B Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(3)
+        ElseIf valu_interaction.Value = &H10C Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(4)
+        ElseIf valu_interaction.Value = &H10D Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(5)
+        ElseIf valu_interaction.Value = &H10E Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(6)
+        ElseIf valu_interaction.Value = &H10F Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(7)
+        ElseIf valu_interaction.Value = &H110 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(8)
+        ElseIf valu_interaction.Value = &H111 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(9)
+        ElseIf valu_interaction.Value = &H112 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(10)
+        ElseIf valu_interaction.Value = &H113 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(11)
+        ElseIf valu_interaction.Value = &H114 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(12)
+        ElseIf valu_interaction.Value = &H115 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(13)
+        ElseIf valu_interaction.Value = &H116 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(14)
+        ElseIf valu_interaction.Value = &H117 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(15)
+        ElseIf valu_interaction.Value = &H118 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(16)
+        ElseIf valu_interaction.Value = &H119 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(17)
+        ElseIf valu_interaction.Value = &H11A Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(18)
+        ElseIf valu_interaction.Value = &H11B Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(19)
+        ElseIf valu_interaction.Value = &H11C Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(20)
+        ElseIf valu_interaction.Value = &H11D Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(21)
+        ElseIf valu_interaction.Value = &H11E Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(22)
+        ElseIf valu_interaction.Value = &H11F Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(23)
+        ElseIf valu_interaction.Value = &H120 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(24)
+        ElseIf valu_interaction.Value = &H121 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(25)
+        ElseIf valu_interaction.Value = &H122 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(26)
+        ElseIf valu_interaction.Value = &H123 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(27)
+        ElseIf valu_interaction.Value = &H124 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(28)
+        ElseIf valu_interaction.Value = &H125 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(29)
+        ElseIf valu_interaction.Value = &H126 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(30)
+        ElseIf valu_interaction.Value = &H127 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(31)
+        ElseIf valu_interaction.Value = &H128 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(32)
+        ElseIf valu_interaction.Value = &H129 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(33)
+        ElseIf valu_interaction.Value = &H12A Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(34)
+        ElseIf valu_interaction.Value = &H12B Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(35)
+        ElseIf valu_interaction.Value = &H12C Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(36)
+        ElseIf valu_interaction.Value = &H12D Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(37)
+        ElseIf valu_interaction.Value = &H12E Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(38)
+        ElseIf valu_interaction.Value = &H12F Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(39)
+        ElseIf valu_interaction.Value = &H130 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(40)
+        ElseIf valu_interaction.Value = &H131 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(41)
+        ElseIf valu_interaction.Value = &H132 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(42)
+        ElseIf valu_interaction.Value = &H133 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(43)
+        ElseIf valu_interaction.Value = &H134 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(44)
+        ElseIf valu_interaction.Value = &H135 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(45)
+        ElseIf valu_interaction.Value = &H136 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(46)
+        ElseIf valu_interaction.Value = &H137 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(47)
+        ElseIf valu_interaction.Value = &H138 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(48)
+        ElseIf valu_interaction.Value = &H139 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(49)
+        ElseIf valu_interaction.Value = &H13A Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(50)
+        ElseIf valu_interaction.Value = &H13B Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(51)
+        ElseIf valu_interaction.Value = &H13C Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(52)
+        ElseIf valu_interaction.Value = &H13D Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(53)
+        ElseIf valu_interaction.Value = &H13E Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(54)
+        ElseIf valu_interaction.Value = &H13F Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(55)
+        ElseIf valu_interaction.Value = &H140 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(56)
+        ElseIf valu_interaction.Value = &H141 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(57)
+        ElseIf valu_interaction.Value = &H142 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(58)
+        ElseIf valu_interaction.Value = &H143 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(59)
+        ElseIf valu_interaction.Value = &H144 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(60)
+        ElseIf valu_interaction.Value = &H145 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(61)
+        ElseIf valu_interaction.Value = &H146 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(62)
+        ElseIf valu_interaction.Value = &H147 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(63)
+        ElseIf valu_interaction.Value = &H148 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(64)
+        ElseIf valu_interaction.Value = &H149 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(65)
+        ElseIf valu_interaction.Value = &H14A Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(66)
+        ElseIf valu_interaction.Value = &H14B Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(67)
+        ElseIf valu_interaction.Value = &H14C Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(68)
+        ElseIf valu_interaction.Value = &H14D Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(69)
+        ElseIf valu_interaction.Value = &H14E Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(70)
+        ElseIf valu_interaction.Value = &H14F Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(71)
+        ElseIf valu_interaction.Value = &H150 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(72)
+        ElseIf valu_interaction.Value = &H151 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(73)
+        ElseIf valu_interaction.Value = &H152 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(74)
+        ElseIf valu_interaction.Value = &H153 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(75)
+        ElseIf valu_interaction.Value = &H155 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(76)
+        ElseIf valu_interaction.Value = &H156 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(77)
+        ElseIf valu_interaction.Value = &H157 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(78)
+        ElseIf valu_interaction.Value = &H158 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(79)
+        ElseIf valu_interaction.Value = &H159 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(80)
+        ElseIf valu_interaction.Value = &H15A Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(81)
+        ElseIf valu_interaction.Value = &H15C Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(82)
+        ElseIf valu_interaction.Value = &H15D Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(83)
+        ElseIf valu_interaction.Value = &H15E Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(84)
+        ElseIf valu_interaction.Value = &H15F Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(85)
+        ElseIf valu_interaction.Value = &H160 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(86)
+        ElseIf valu_interaction.Value = &H161 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(87)
+        ElseIf valu_interaction.Value = &H162 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(88)
+        ElseIf valu_interaction.Value = &H163 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(89)
+        ElseIf valu_interaction.Value = &H164 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(90)
+        ElseIf valu_interaction.Value = &H166 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(91)
+        ElseIf valu_interaction.Value = &H167 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(92)
+        ElseIf valu_interaction.Value = &H168 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(93)
+        ElseIf valu_interaction.Value = &H169 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(94)
+        ElseIf valu_interaction.Value = &H16A Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(95)
+        ElseIf valu_interaction.Value = &H16B Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(96)
+        ElseIf valu_interaction.Value = &H16C Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(97)
+        ElseIf valu_interaction.Value = &H16D Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(98)
+        ElseIf valu_interaction.Value = &H16E Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(99)
+        ElseIf valu_interaction.Value = &H16F Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(100)
+        ElseIf valu_interaction.Value = &H170 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(101)
+        ElseIf valu_interaction.Value = &H171 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(102)
+        ElseIf valu_interaction.Value = &H172 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(103)
+        ElseIf valu_interaction.Value = &H173 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(104)
+        ElseIf valu_interaction.Value = &H174 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(105)
+        ElseIf valu_interaction.Value = &H175 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(106)
+        ElseIf valu_interaction.Value = &H176 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(107)
+        ElseIf valu_interaction.Value = &H177 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(108)
+        ElseIf valu_interaction.Value = &H178 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(109)
+        ElseIf valu_interaction.Value = &H17A Then 'warning +2 
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(110)
+        ElseIf valu_interaction.Value = &H17B Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(111)
+        ElseIf valu_interaction.Value = &H17C Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(112)
+        ElseIf valu_interaction.Value = &H17D Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(113)
+        ElseIf valu_interaction.Value = &H17E Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(114)
+        ElseIf valu_interaction.Value = &H17F Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(115)
+        ElseIf valu_interaction.Value = &H180 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(116)
+        ElseIf valu_interaction.Value = &H181 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(117)
+        ElseIf valu_interaction.Value = &H182 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(118)
+        ElseIf valu_interaction.Value = &H183 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(119)
+        ElseIf valu_interaction.Value = &H184 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(120)
+        ElseIf valu_interaction.Value = &H185 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(121)
+        ElseIf valu_interaction.Value = &H186 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(122)
+        ElseIf valu_interaction.Value = &H187 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(123)
+        ElseIf valu_interaction.Value = &H188 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(124)
+        ElseIf valu_interaction.Value = &H189 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(125)
+        ElseIf valu_interaction.Value = &H18A Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(126)
+        ElseIf valu_interaction.Value = &H18B Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(127)
+        ElseIf valu_interaction.Value = &H18C Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(128)
+        ElseIf valu_interaction.Value = &H18D Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(129)
+        ElseIf valu_interaction.Value = &H18E Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(130)
+        ElseIf valu_interaction.Value = &H18F Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(131)
+        ElseIf valu_interaction.Value = &H190 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(132)
+        ElseIf valu_interaction.Value = &H191 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(133)
+        ElseIf valu_interaction.Value = &H194 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(134)
+        ElseIf valu_interaction.Value = &H195 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(135)
+        ElseIf valu_interaction.Value = &H196 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(136)
+        ElseIf valu_interaction.Value = &H197 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(137)
+        ElseIf valu_interaction.Value = &H198 Then
+            Select_interaction_j.SelectedItem = Select_interaction_j.Items.Item(138)
         End If
     End Sub
 
@@ -44455,6 +45968,460 @@ Public Class TL_SaveEditor
             Select_worst_US2.SelectedItem = Select_worst_US2.Items.Item(231)
         End If
     End Sub
+
+    Private Sub Text_mii_gender_TextChanged(sender As Object, e As EventArgs) Handles Text_mii_gender.TextChanged
+        If Text_mii_gender.Text = "0" Then
+            Select_mii_gender.SelectedItem = Select_mii_gender.Items.Item(0)
+            Icon_mii_gender.Image = My.Resources.icon_mii_malegender
+        ElseIf Text_mii_gender.Text = "1" Then
+            Select_mii_gender.SelectedItem = Select_mii_gender.Items.Item(1)
+            Icon_mii_gender.Image = My.Resources.icon_mii_femalegender
+        End If
+    End Sub
+
+    Private Sub Select_mii_gender_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_mii_gender.SelectedIndexChanged
+        If Select_mii_gender.SelectedItem = Select_mii_gender.Items.Item(0) Then
+            Text_mii_gender.Text = "0"
+        ElseIf Select_mii_gender.SelectedItem = Select_mii_gender.Items.Item(1) Then
+            Text_mii_gender.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_relationyou_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_relationyou.SelectedIndexChanged
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(0) Then
+            valu_relationyou.Value = 4
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(1) Then
+            valu_relationyou.Value = 0
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(2) Then
+            valu_relationyou.Value = 6
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(3) Then
+            valu_relationyou.Value = 3
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(4) Then
+            valu_relationyou.Value = 1
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(5) Then
+            valu_relationyou.Value = 5
+        End If
+        If Select_relationyou.SelectedItem = Select_relationyou.Items.Item(6) Then
+            valu_relationyou.Value = 2
+        End If
+    End Sub
+
+    Private Sub valu_relationyou_ValueChanged(sender As Object, e As EventArgs) Handles valu_relationyou.ValueChanged
+        If valu_relationyou.Value = 0 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(1)
+        End If
+        If valu_relationyou.Value = 1 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(4)
+        End If
+        If valu_relationyou.Value = 2 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(6)
+        End If
+        If valu_relationyou.Value = 3 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(3)
+        End If
+        If valu_relationyou.Value = 4 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(0)
+        End If
+        If valu_relationyou.Value = 5 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(5)
+        End If
+        If valu_relationyou.Value = 6 Then
+            Select_relationyou.SelectedItem = Select_relationyou.Items.Item(2)
+        End If
+    End Sub
+
+    Private Sub Check_tummy_noteat_CheckedChanged(sender As Object, e As EventArgs) Handles Check_tummy_noteat.CheckedChanged
+        If Check_tummy_noteat.Checked = True Then
+            valu_fullness.Value = 0
+            valu_chktummy.Value = 0
+            Icon_fullness.Enabled = False
+            Check_tummy_infiniteeat.Enabled = False
+        Else
+            Icon_fullness.Enabled = True
+            Check_tummy_infiniteeat.Enabled = True
+        End If
+    End Sub
+
+    Private Sub Check_tummy_infiniteeat_CheckedChanged(sender As Object, e As EventArgs) Handles Check_tummy_infiniteeat.CheckedChanged
+        If Check_tummy_infiniteeat.Checked = True Then
+            valu_fullness.Value = 100
+            valu_chktummy.Value = 255
+            Icon_fullness.Enabled = False
+            Check_tummy_noteat.Enabled = False
+        Else
+            Icon_fullness.Enabled = True
+            Check_tummy_noteat.Enabled = True
+        End If
+    End Sub
+
+    Private Sub Icon_bakinteraction_Click(sender As Object, e As EventArgs) Handles Icon_bakinteraction.Click
+        Try
+            Dim SaveFileDialog1 As New SaveFileDialog
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                SaveFileDialog1.Filter = "Text file|*.txt"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                SaveFileDialog1.Filter = "Fichier texte|*.txt"
+            End If
+            SaveFileDialog1.FileName = "Interaction_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
+            If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+                Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                Writer.Write("Mii : " & Text_nickname.Text)
+                Writer.Write(vbNewLine & "Fullness : " & valu_fullness.Value)
+                Writer.Write(vbNewLine & "Grown-up/Kid : " & Select_growkid.SelectedItem)
+                Writer.Write(vbNewLine & "Relation to real you : " & Select_relationyou.SelectedItem)
+                Writer.Write(vbNewLine & "Interaction (value) : " & valu_interaction.Text)
+                Writer.Write(vbNewLine & "Target 1 : " & valu_target1.Value)
+                Writer.Write(vbNewLine & "Target 2 : " & valu_target2.Value)
+                Writer.Write(vbNewLine & "Emotions : " & Select_emotions.SelectedItem)
+                Writer.Write(vbNewLine & "--- Friend list : ---")
+                Writer.Write(vbNewLine & Text_friendmii_1.Text & " : " & Select_friend_rela_1.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_2.Text & " : " & Select_friend_rela_2.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_3.Text & " : " & Select_friend_rela_3.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_4.Text & " : " & Select_friend_rela_4.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_5.Text & " : " & Select_friend_rela_5.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_6.Text & " : " & Select_friend_rela_6.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_7.Text & " : " & Select_friend_rela_7.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_8.Text & " : " & Select_friend_rela_8.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_9.Text & " : " & Select_friend_rela_9.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_10.Text & " : " & Select_friend_rela_10.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_11.Text & " : " & Select_friend_rela_11.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_12.Text & " : " & Select_friend_rela_12.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_13.Text & " : " & Select_friend_rela_13.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_14.Text & " : " & Select_friend_rela_14.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_15.Text & " : " & Select_friend_rela_15.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_16.Text & " : " & Select_friend_rela_16.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_17.Text & " : " & Select_friend_rela_17.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_18.Text & " : " & Select_friend_rela_18.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_19.Text & " : " & Select_friend_rela_19.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_20.Text & " : " & Select_friend_rela_20.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_21.Text & " : " & Select_friend_rela_21.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_22.Text & " : " & Select_friend_rela_22.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_23.Text & " : " & Select_friend_rela_23.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_24.Text & " : " & Select_friend_rela_24.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_25.Text & " : " & Select_friend_rela_25.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_26.Text & " : " & Select_friend_rela_26.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_27.Text & " : " & Select_friend_rela_27.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_28.Text & " : " & Select_friend_rela_28.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_29.Text & " : " & Select_friend_rela_29.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_30.Text & " : " & Select_friend_rela_30.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_31.Text & " : " & Select_friend_rela_31.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_32.Text & " : " & Select_friend_rela_32.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_33.Text & " : " & Select_friend_rela_33.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_34.Text & " : " & Select_friend_rela_34.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_35.Text & " : " & Select_friend_rela_35.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_36.Text & " : " & Select_friend_rela_36.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_37.Text & " : " & Select_friend_rela_37.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_38.Text & " : " & Select_friend_rela_38.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_39.Text & " : " & Select_friend_rela_39.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_40.Text & " : " & Select_friend_rela_40.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_41.Text & " : " & Select_friend_rela_41.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_42.Text & " : " & Select_friend_rela_42.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_43.Text & " : " & Select_friend_rela_43.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_44.Text & " : " & Select_friend_rela_44.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_45.Text & " : " & Select_friend_rela_45.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_46.Text & " : " & Select_friend_rela_46.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_47.Text & " : " & Select_friend_rela_47.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_48.Text & " : " & Select_friend_rela_48.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_49.Text & " : " & Select_friend_rela_49.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_50.Text & " : " & Select_friend_rela_50.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_51.Text & " : " & Select_friend_rela_51.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_52.Text & " : " & Select_friend_rela_52.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_53.Text & " : " & Select_friend_rela_53.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_54.Text & " : " & Select_friend_rela_54.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_55.Text & " : " & Select_friend_rela_55.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_56.Text & " : " & Select_friend_rela_56.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_57.Text & " : " & Select_friend_rela_57.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_58.Text & " : " & Select_friend_rela_58.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_59.Text & " : " & Select_friend_rela_59.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_60.Text & " : " & Select_friend_rela_60.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_61.Text & " : " & Select_friend_rela_61.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_62.Text & " : " & Select_friend_rela_62.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_63.Text & " : " & Select_friend_rela_63.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_64.Text & " : " & Select_friend_rela_64.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_65.Text & " : " & Select_friend_rela_65.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_66.Text & " : " & Select_friend_rela_66.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_67.Text & " : " & Select_friend_rela_67.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_68.Text & " : " & Select_friend_rela_68.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_69.Text & " : " & Select_friend_rela_69.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_70.Text & " : " & Select_friend_rela_70.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_71.Text & " : " & Select_friend_rela_71.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_72.Text & " : " & Select_friend_rela_72.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_73.Text & " : " & Select_friend_rela_73.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_74.Text & " : " & Select_friend_rela_74.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_75.Text & " : " & Select_friend_rela_75.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_76.Text & " : " & Select_friend_rela_76.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_77.Text & " : " & Select_friend_rela_77.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_78.Text & " : " & Select_friend_rela_78.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_79.Text & " : " & Select_friend_rela_79.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_80.Text & " : " & Select_friend_rela_80.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_81.Text & " : " & Select_friend_rela_81.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_82.Text & " : " & Select_friend_rela_82.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_83.Text & " : " & Select_friend_rela_83.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_84.Text & " : " & Select_friend_rela_84.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_85.Text & " : " & Select_friend_rela_85.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_86.Text & " : " & Select_friend_rela_86.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_87.Text & " : " & Select_friend_rela_87.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_88.Text & " : " & Select_friend_rela_88.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_89.Text & " : " & Select_friend_rela_89.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_90.Text & " : " & Select_friend_rela_90.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_91.Text & " : " & Select_friend_rela_91.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_92.Text & " : " & Select_friend_rela_92.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_93.Text & " : " & Select_friend_rela_93.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_94.Text & " : " & Select_friend_rela_94.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_95.Text & " : " & Select_friend_rela_95.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_96.Text & " : " & Select_friend_rela_96.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_97.Text & " : " & Select_friend_rela_97.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_98.Text & " : " & Select_friend_rela_98.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_99.Text & " : " & Select_friend_rela_99.SelectedItem)
+                Writer.Write(vbNewLine & Text_friendmii_100.Text & " : " & Select_friend_rela_100.SelectedItem)
+                Writer.Close()
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "This Interaction has been successfully extracted"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Cette interaction a été extraite avec succès"
+                    TLSE_dialog.ShowDialog()
+                End If
+            End If
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "An error has occurred" & vbNewLine & "retry or report this issue"
+                TLSE_dialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Une erreur est survenue" & vbNewLine & "réessayez ou signalez cette erreur"
+                TLSE_dialog.ShowDialog()
+            End If
+        End Try
+    End Sub
+
+    Private Sub Icon_bakinteraction_MouseLeave(sender As Object, e As EventArgs) Handles Icon_bakinteraction.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Icon_bakinteraction_MouseMove(sender As Object, e As EventArgs) Handles Icon_bakinteraction.MouseMove
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_description.Text = "Click to extract an interaction"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_description.Text = "Cliquez pour extraire une interaction"
+        End If
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Select_miihouse_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_miihouse.SelectedIndexChanged
+        If Select_miihouse.SelectedItem = Select_miihouse.Items.Item(0) Then
+            valu_miihouse.Value = 0
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(1) Then
+            valu_miihouse.Value = 1
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(2) Then
+            valu_miihouse.Value = 2
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(3) Then
+            valu_miihouse.Value = 3
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(4) Then
+            valu_miihouse.Value = 4
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(5) Then
+            valu_miihouse.Value = 5
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(6) Then
+            valu_miihouse.Value = 6
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(7) Then
+            valu_miihouse.Value = 7
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(8) Then
+            valu_miihouse.Value = 8
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(9) Then
+            valu_miihouse.Value = 9
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(10) Then
+            valu_miihouse.Value = 10
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(11) Then
+            valu_miihouse.Value = 11
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(12) Then
+            valu_miihouse.Value = 12
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(13) Then
+            valu_miihouse.Value = 13
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(14) Then
+            valu_miihouse.Value = 14
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(15) Then
+            valu_miihouse.Value = 15
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(16) Then
+            valu_miihouse.Value = 16
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(17) Then
+            valu_miihouse.Value = 17
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(18) Then
+            valu_miihouse.Value = 18
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(19) Then
+            valu_miihouse.Value = 19
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(20) Then
+            valu_miihouse.Value = 20
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(21) Then
+            valu_miihouse.Value = 21
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(22) Then
+            valu_miihouse.Value = 22
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(23) Then
+            valu_miihouse.Value = 23
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(24) Then
+            valu_miihouse.Value = 24
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(25) Then
+            valu_miihouse.Value = 25
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(26) Then
+            valu_miihouse.Value = 26
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(27) Then
+            valu_miihouse.Value = 27
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(28) Then
+            valu_miihouse.Value = 28
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(29) Then
+            valu_miihouse.Value = 29
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(30) Then
+            valu_miihouse.Value = 30
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(31) Then
+            valu_miihouse.Value = 31
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(32) Then
+            valu_miihouse.Value = 32
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(33) Then
+            valu_miihouse.Value = 33
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(34) Then
+            valu_miihouse.Value = 34
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(35) Then
+            valu_miihouse.Value = 35
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(36) Then
+            valu_miihouse.Value = 36
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(37) Then
+            valu_miihouse.Value = 37
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(38) Then
+            valu_miihouse.Value = 38
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(39) Then
+            valu_miihouse.Value = 39
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(40) Then
+            valu_miihouse.Value = 40
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(41) Then
+            valu_miihouse.Value = 41
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(42) Then
+            valu_miihouse.Value = 42
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(43) Then
+            valu_miihouse.Value = 43
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(44) Then
+            valu_miihouse.Value = 44
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(45) Then
+            valu_miihouse.Value = 45
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(46) Then
+            valu_miihouse.Value = 46
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(47) Then
+            valu_miihouse.Value = 47
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(48) Then
+            valu_miihouse.Value = 48
+        ElseIf Select_miihouse.SelectedItem = Select_miihouse.Items.Item(49) Then
+            valu_miihouse.Value = 49
+        End If
+    End Sub
+
+    Private Sub valu_miihouse_ValueChanged(sender As Object, e As EventArgs) Handles valu_miihouse.ValueChanged
+        If valu_miihouse.Value = 0 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(0)
+        ElseIf valu_miihouse.Value = 1 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(1)
+        ElseIf valu_miihouse.Value = 2 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(2)
+        ElseIf valu_miihouse.Value = 3 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(3)
+        ElseIf valu_miihouse.Value = 4 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(4)
+        ElseIf valu_miihouse.Value = 5 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(5)
+        ElseIf valu_miihouse.Value = 6 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(6)
+        ElseIf valu_miihouse.Value = 7 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(7)
+        ElseIf valu_miihouse.Value = 8 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(8)
+        ElseIf valu_miihouse.Value = 9 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(9)
+        ElseIf valu_miihouse.Value = 10 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(10)
+        ElseIf valu_miihouse.Value = 11 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(11)
+        ElseIf valu_miihouse.Value = 12 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(12)
+        ElseIf valu_miihouse.Value = 13 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(13)
+        ElseIf valu_miihouse.Value = 14 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(14)
+        ElseIf valu_miihouse.Value = 15 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(15)
+        ElseIf valu_miihouse.Value = 16 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(16)
+        ElseIf valu_miihouse.Value = 17 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(17)
+        ElseIf valu_miihouse.Value = 18 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(18)
+        ElseIf valu_miihouse.Value = 19 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(19)
+        ElseIf valu_miihouse.Value = 20 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(20)
+        ElseIf valu_miihouse.Value = 21 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(21)
+        ElseIf valu_miihouse.Value = 22 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(22)
+        ElseIf valu_miihouse.Value = 23 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(23)
+        ElseIf valu_miihouse.Value = 24 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(24)
+        ElseIf valu_miihouse.Value = 25 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(25)
+        ElseIf valu_miihouse.Value = 26 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(26)
+        ElseIf valu_miihouse.Value = 27 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(27)
+        ElseIf valu_miihouse.Value = 28 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(28)
+        ElseIf valu_miihouse.Value = 29 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(29)
+        ElseIf valu_miihouse.Value = 30 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(30)
+        ElseIf valu_miihouse.Value = 31 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(31)
+        ElseIf valu_miihouse.Value = 32 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(32)
+        ElseIf valu_miihouse.Value = 33 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(33)
+        ElseIf valu_miihouse.Value = 34 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(34)
+        ElseIf valu_miihouse.Value = 35 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(35)
+        ElseIf valu_miihouse.Value = 36 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(36)
+        ElseIf valu_miihouse.Value = 37 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(37)
+        ElseIf valu_miihouse.Value = 38 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(38)
+        ElseIf valu_miihouse.Value = 39 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(39)
+        ElseIf valu_miihouse.Value = 40 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(40)
+        ElseIf valu_miihouse.Value = 41 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(41)
+        ElseIf valu_miihouse.Value = 42 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(42)
+        ElseIf valu_miihouse.Value = 43 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(43)
+        ElseIf valu_miihouse.Value = 44 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(44)
+        ElseIf valu_miihouse.Value = 45 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(45)
+        ElseIf valu_miihouse.Value = 46 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(46)
+        ElseIf valu_miihouse.Value = 47 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(47)
+        ElseIf valu_miihouse.Value = 48 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(48)
+        ElseIf valu_miihouse.Value = 49 Then
+            Select_miihouse.SelectedItem = Select_miihouse.Items.Item(49)
+        End If
+    End Sub
+
 
     'end Mii edit block
 End Class
