@@ -1,6 +1,7 @@
 ﻿Imports PackageIO
 Imports System.IO
 Imports System.Net
+Imports System
 
 Public Class TL_SaveEditor
     Private IsFormBeingDragged As Boolean = False
@@ -12447,7 +12448,8 @@ Public Class TL_SaveEditor
         Mergebinaryfavcolor()
         Mergebinarysharing()
         Mergebinarywrinkles()
-        Writemii()
+        'Writemii()
+        writex()
     End Sub
 
     Private Sub Text_savemii_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_savemii.MouseMove
@@ -50100,5 +50102,20 @@ Public Class TL_SaveEditor
             End If
         End Try
     End Sub
+
+    Public Sub writex()
+        Dim xs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+        'write HEX
+        xs.Position = couleur
+        For j As Integer = 0 To Text_datafavcolor.Text.Length - 1 Step 2
+            xs.WriteByte(CByte(Conversion.Val("&H" & Text_datafavcolor.Text.Substring(j, 2))))
+        Next
+        'end write HEX
+        'write binary feature without convert to decimal
+        Dim Writer As New BinaryWriter(xs)
+        xs.Close()
+        Writer.Close()
+    End Sub
+
     'end Mii edit block
 End Class
