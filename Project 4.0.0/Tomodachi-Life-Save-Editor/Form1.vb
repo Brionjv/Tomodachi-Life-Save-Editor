@@ -12448,8 +12448,8 @@ Public Class TL_SaveEditor
         Mergebinaryfavcolor()
         Mergebinarysharing()
         Mergebinarywrinkles()
-        'Writemii()
-        writex()
+        Writemii()
+        Writebinary()
     End Sub
 
     Private Sub Text_savemii_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_savemii.MouseMove
@@ -25425,11 +25425,10 @@ Public Class TL_SaveEditor
 
     Private Sub Text_datasharing_TextChanged(sender As Object, e As EventArgs) Handles Text_datasharing.TextChanged
         Try
-            Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(Text_datasharing.Text, 16)) 'sharing hex to binary
+            Dim valconvert As Integer = Integer.Parse(Convert.ToUInt32(Text_datasharing.Text, 16)) 'sharing hex to binary
             Dim valout As String
-            valout = Convert.ToString(Convert.ToInt32(valconvert), 2)
+            valout = Convert.ToString(Convert.ToUInt32(valconvert), 2)
             Text_binarysharing.Text = valout.PadLeft(8, "0")
-            valu_datasharing.Value = CUInt("&H" & Text_datasharing.Text.Trim) 'convert to decimal to write
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 TLSE_dialog.Text_TLSE_dialog.Text = "Error..." & vbNewLine & "Failed to convert hex to binary (sharing)"
@@ -25442,10 +25441,11 @@ Public Class TL_SaveEditor
 
     Private Sub Text_binarysharing_TextChanged(sender As Object, e As EventArgs) Handles Text_binarysharing.TextChanged
         Try
-            Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(Text_binarysharing.Text, 2)) 'sharing binary to hex
+            Dim valconvert As Integer = Integer.Parse(Convert.ToUInt32(Text_binarysharing.Text, 2)) 'sharing binary to hex
             Dim valout As String
-            valout = Convert.ToString(Convert.ToInt32(valconvert), 16)
+            valout = Convert.ToString(Convert.ToUInt32(valconvert), 16)
             Text_datasharing.Text = valout
+            Text_datasharing.Text = valout.PadLeft(2, "0")
             Text_valuesharing.Text = Text_binarysharing.Text.Substring(7, 1) 'update binary features
             Text_faceshape.Text = Text_binarysharing.Text.Substring(3, 4)
             Text_skincolor.Text = Text_binarysharing.Text.Substring(0, 3)
@@ -25474,9 +25474,9 @@ Public Class TL_SaveEditor
 
     Private Sub Text_datawrinkles_TextChanged(sender As Object, e As EventArgs) Handles Text_datawrinkles.TextChanged
         Try
-            Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(Text_datawrinkles.Text, 16)) 'sharing hex to binary
+            Dim valconvert As Integer = Integer.Parse(Convert.ToUInt32(Text_datawrinkles.Text, 16)) 'sharing hex to binary
             Dim valout As String
-            valout = Convert.ToString(Convert.ToInt32(valconvert), 2)
+            valout = Convert.ToString(Convert.ToUInt32(valconvert), 2)
             Text_binarywrinkles.Text = valout.PadLeft(8, "0")
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
@@ -25490,10 +25490,11 @@ Public Class TL_SaveEditor
 
     Private Sub Text_binarywrinkles_TextChanged(sender As Object, e As EventArgs) Handles Text_binarywrinkles.TextChanged
         Try
-            Dim valconvert As Integer = Integer.Parse(Convert.ToInt32(Text_binarywrinkles.Text, 2)) 'sharing binary to hex
+            Dim valconvert As Integer = Integer.Parse(Convert.ToUInt32(Text_binarywrinkles.Text, 2)) 'sharing binary to hex
             Dim valout As String
-            valout = Convert.ToString(Convert.ToInt32(valconvert), 16)
+            valout = Convert.ToString(Convert.ToUInt32(valconvert), 16)
             Text_datawrinkles.Text = valout
+            Text_datawrinkles.Text = valout.PadLeft(2, "0")
             Text_wrinkles.Text = Text_binarywrinkles.Text.Substring(4, 4) 'update binary features
             Text_makeup.Text = Text_binarywrinkles.Text.Substring(0, 4)
         Catch ex As Exception
@@ -48161,36 +48162,50 @@ Public Class TL_SaveEditor
                 AccessMiilist = &H1C8A
                 Accessfriendlist = Miifriendr
                 Accessrelalist = Miifriendr + &H64
+                Reader.Position = &H1C70 + Accessmii
+                Text_Mii.Text = Reader.ReadHexString(&H5E)
+                Reader.Position = &H1C71 + Accessmii
+                copy = Reader.Position
+                valu_copying.Value = Reader.ReadByte
+                Reader.Position = &H1C88 + Accessmii
+                couleur = Reader.Position
+                Text_datafavcolor.Text = Reader.ReadHexString(2)
+                Reader.Position = &H1C8A + Accessmii
+                Nickname = Reader.Position
+                Text_nickname.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1CA0 + Accessmii
+                sharing = Reader.Position
+                Text_datasharing.Text = Reader.ReadHexString(1)
+                Reader.Position = &H1CA1 + Accessmii
+                wrinkmake = Reader.Position
+                Text_datawrinkles.Text = Reader.ReadHexString(1)
+                Reader.Position = &H1CA2 + Accessmii
+                hairstyle = Reader.Position
+                valu_hairstyle.Value = Reader.ReadByte
+                Reader.Position = &H1CB8 + Accessmii
+                Creator = Reader.Position
+                Text_creator.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1CCE + Accessmii
+                crcxmodem = Reader.Position
+                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
                 Reader.Position = &H1CD0 + Accessmii
                 Firstname = Reader.Position
                 Text_firstname.Text = Reader.ReadUnicodeString(15)
                 Reader.Position = &H1CF0 + Accessmii
                 Lastname = Reader.Position
                 Text_lastname.Text = Reader.ReadUnicodeString(15)
-                Reader.Position = &H1C8A + Accessmii
-                Nickname = Reader.Position
-                Text_nickname.Text = Reader.ReadUnicodeString(10)
-                Reader.Position = &H1F23 + Accessmii
-                Miilevel = Reader.Position
-                valu_level.Value = Reader.ReadByte
-                Reader.Position = &H1E92 + Accessmii
-                Pronunfirstname = Reader.Position
-                Text_pronun_firstname.Text = Reader.ReadUnicodeString(30)
-                Reader.Position = &H1ED4 + Accessmii
-                Pronunlastname = Reader.Position
-                Text_pronun_lastname.Text = Reader.ReadUnicodeString(30)
-                Reader.Position = &H1E50 + Accessmii
-                Pronunnickname = Reader.Position
-                Text_pronun_nickname.Text = Reader.ReadUnicodeString(20)
-                Reader.Position = &H1F2D + Accessmii
-                Relationyou = Reader.Position
-                valu_relationyou.Value = Reader.ReadByte
-                Reader.Position = &H1CB8 + Accessmii
-                Creator = Reader.Position
-                Text_creator.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1D13 + Accessmii
+                Haircolor = Reader.Position
+                valu_haircolor.Value = Reader.ReadByte
                 Reader.Position = &H1D20 + Accessmii
                 bull1 = Reader.Position
                 Text_cathph_01.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1D42 + Accessmii
+                Equclothes = Reader.Position
+                valu_switch_clothes.Value = Reader.ReadUInt16
+                Reader.Position = &H1D44 + Accessmii
+                Equhats = Reader.Position
+                valu_switch_hats.Value = Reader.ReadUInt16
                 Reader.Position = &H1DC4 + Accessmii
                 bull2 = Reader.Position
                 Text_cathph_02.Text = Reader.ReadUnicodeString(16)
@@ -48203,6 +48218,44 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1E2A + Accessmii
                 bull5 = Reader.Position
                 Text_cathph_05.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1E50 + Accessmii
+                Pronunnickname = Reader.Position
+                Text_pronun_nickname.Text = Reader.ReadUnicodeString(20)
+                Reader.Position = &H1E92 + Accessmii
+                Pronunfirstname = Reader.Position
+                Text_pronun_firstname.Text = Reader.ReadUnicodeString(30)
+                Reader.Position = &H1ED4 + Accessmii
+                Pronunlastname = Reader.Position
+                Text_pronun_lastname.Text = Reader.ReadUnicodeString(30)
+                Reader.Position = &H1F20 + Accessmii
+                Equinteriors = Reader.Position
+                valu_switch_interiors.Value = Reader.ReadUInt16
+                Reader.Position = &H1F22 + Accessmii
+                experience = Reader.Position
+                valu_experience.Value = Reader.ReadByte
+                Reader.Position = &H1F23 + Accessmii
+                Miilevel = Reader.Position
+                valu_level.Value = Reader.ReadByte
+                Reader.Position = &H1F24 + Accessmii
+                Pampered = Reader.Position
+                valu_ranking_pampered.Value = Reader.ReadUInt32
+                Reader.Position = &H1F28 + Accessmii
+                econom = Reader.Position
+                valu_economy.Value = Reader.ReadUInt32
+                Reader.Position = &H1F2C + Accessmii
+                Emotions = Reader.Position
+                valu_emotions.Value = Reader.ReadByte
+                Reader.Position = &H1F2D + Accessmii
+                Relationyou = Reader.Position
+                valu_relationyou.Value = Reader.ReadByte
+                Reader.Position = &H1F50 + Accessmii
+                objdiv = Reader.Position 'all goods items inventory
+                Reader.Position = &H1F59 + Accessmii
+                interieur = Reader.Position 'all interiors inventory
+                Reader.Position = &H1F64 + Accessmii
+                interieur1 = Reader.Position 'all interiors inventory
+                Reader.Position = &H1F68 + Accessmii
+                Sfoods = Reader.Position 'all special foods inventory
                 Reader.Position = &H2258 + Accessmii
                 objet1 = Reader.Position
                 valu_itemmii_1.Value = Reader.ReadUInt16
@@ -48227,32 +48280,24 @@ Public Class TL_SaveEditor
                 Reader.Position = &H2266 + Accessmii
                 objet8 = Reader.Position
                 valu_itemmii_8.Value = Reader.ReadUInt16
-                Reader.Position = &H1F22 + Accessmii
-                experience = Reader.Position
-                valu_experience.Value = Reader.ReadByte
-                Reader.Position = &H1F28 + Accessmii
-                econom = Reader.Position
-                valu_economy.Value = Reader.ReadUInt32
                 Reader.Position = &H2272 + Accessmii
                 eat = Reader.Position
                 valu_chktummy.Value = Reader.ReadByte
                 Reader.Position = &H2293 + Accessmii
                 fullness = Reader.Position
                 valu_fullness.Value = Reader.ReadByte
-                Reader.Position = &H1F59 + Accessmii
-                interieur = Reader.Position 'all interiors inventory
-                Reader.Position = &H1F64 + Accessmii
-                interieur1 = Reader.Position 'all interiors inventory
-                Reader.Position = &H1F68 + Accessmii
-                Sfoods = Reader.Position 'all special foods inventory
-                Reader.Position = &H1F50 + Accessmii
-                objdiv = Reader.Position 'all goods items inventory
                 Reader.Position = &H2298 + Accessmii
                 alltime = Reader.Position
                 valu_allfav_1.Value = Reader.ReadUInt16
+                Reader.Position = &H229A + Accessmii
+                worst2 = Reader.Position
+                valu_worst_2.Value = Reader.ReadUInt16
                 Reader.Position = &H229C + Accessmii
                 alltime2 = Reader.Position
                 valu_allfav_2.Value = Reader.ReadUInt16
+                Reader.Position = &H229E + Accessmii
+                worst = Reader.Position
+                valu_worst_1.Value = Reader.ReadUInt16
                 Reader.Position = &H22A0 + Accessmii
                 fav = Reader.Position
                 valu_fav_1.Value = Reader.ReadUInt16
@@ -48262,82 +48307,38 @@ Public Class TL_SaveEditor
                 Reader.Position = &H22A4 + Accessmii
                 fav3 = Reader.Position
                 valu_fav_3.Value = Reader.ReadUInt16
-                Reader.Position = &H229E + Accessmii
-                worst = Reader.Position
-                valu_worst_1.Value = Reader.ReadUInt16
-                Reader.Position = &H229A + Accessmii
-                worst2 = Reader.Position
-                valu_worst_2.Value = Reader.ReadUInt16
-                Reader.Position = &H1C71 + Accessmii
-                copy = Reader.Position
-                valu_copying.Value = Reader.ReadByte
-                Reader.Position = &H1CA0 + Accessmii
-                sharing = Reader.Position
-                Text_datasharing.Text = Reader.ReadHexString(1)
-                Reader.Position = &H1C88 + Accessmii
-                couleur = Reader.Position
-                Text_datafavcolor.Text = Reader.ReadHexString(2)
-                Reader.Position = &H22AE + Accessmii
-                grownkid = Reader.Position
-                valu_growkid.Value = Reader.ReadByte
-                Reader.Position = &H22A8 + Accessmii
-                apartment = Reader.Position
-                valu_miiapart.Value = Reader.ReadByte
-                Reader.Position = &H22B0 + Accessmii
-                Splurge = Reader.Position
-                valu_ranking_splurge.Value = Reader.ReadUInt32
-                Reader.Position = &H1F24 + Accessmii
-                Pampered = Reader.Position
-                valu_ranking_pampered.Value = Reader.ReadUInt32
-                Reader.Position = &H299F0 + Accessfriends 'Mii friendlist
-                Miifriendr = Reader.Position
-                Reader.Position = &H1D13 + Accessmii
-                Haircolor = Reader.Position
-                valu_haircolor.Value = Reader.ReadByte
-                Reader.Position = &H22A9 + Accessmii
-                House = Reader.Position
-                valu_miihouse.Value = Reader.ReadByte
                 Reader.Position = &H22A6 + Accessmii
                 Miimusic = Reader.Position
                 valu_allmusic.Value = Reader.ReadByte
+                Reader.Position = &H22A8 + Accessmii
+                apartment = Reader.Position
+                valu_miiapart.Value = Reader.ReadByte
+                Reader.Position = &H22A9 + Accessmii
+                House = Reader.Position
+                valu_miihouse.Value = Reader.ReadByte
+                Reader.Position = &H22AE + Accessmii
+                grownkid = Reader.Position
+                valu_growkid.Value = Reader.ReadByte
+                Reader.Position = &H22B0 + Accessmii
+                Splurge = Reader.Position
+                valu_ranking_splurge.Value = Reader.ReadUInt32
+                Reader.Position = &H299F0 + Accessfriends 'Mii friendlist
+                Miifriendr = Reader.Position
+                Reader.Position = &H29AB8 + Accessfriends 'Mii friendlist
+                Enddateinterac = Reader.Position
+                valu_enddateinterac.Value = Reader.ReadUInt32
                 Reader.Position = &H29AC0 + Accessfriends 'Mii friendlist
                 Miiinteraction = Reader.Position
                 valu_interaction.Value = Reader.ReadUInt16
                 Reader.Position = &H29AC2 + Accessfriends 'Mii friendlist
                 Interacunknow = Reader.Position
                 valu_interacunknow.Value = Reader.ReadUInt16
-                Reader.Position = &H29AB8 + Accessfriends 'Mii friendlist
-                Enddateinterac = Reader.Position
-                valu_enddateinterac.Value = Reader.ReadUInt32
                 Reader.Position = &H29AC4 + Accessfriends  'Mii friendlist
                 Miitarget1 = Reader.Position
                 valu_target1.Value = Reader.ReadUInt16
                 Reader.Position = &H29AC6 + Accessfriends  'Mii friendlist
                 Miitarget2 = Reader.Position
                 valu_target2.Value = Reader.ReadUInt16
-                Reader.Position = &H1F2C + Accessmii
-                Emotions = Reader.Position
-                valu_emotions.Value = Reader.ReadByte
-                Reader.Position = &H1D42 + Accessmii
-                Equclothes = Reader.Position
-                valu_switch_clothes.Value = Reader.ReadUInt16
-                Reader.Position = &H1D44 + Accessmii
-                Equhats = Reader.Position
-                valu_switch_hats.Value = Reader.ReadUInt16
-                Reader.Position = &H1F20 + Accessmii
-                Equinteriors = Reader.Position
-                valu_switch_interiors.Value = Reader.ReadUInt16
-                Reader.Position = &H1C70 + Accessmii
-                Text_Mii.Text = Reader.ReadHexString(&H5E)
-                Reader.Position = &H1CCE + Accessmii
-                crcxmodem = Reader.Position
-                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
-                Reader.Position = &H1CA1 + Accessmii
-                wrinkmake = Reader.Position
-                Text_datawrinkles.Text = Reader.ReadHexString(1)
-                Reader.Position = &H1CA2 + Accessmii
-                hairstyle = Reader.Position
-                valu_hairstyle.Value = Reader.ReadByte
             ElseIf Filever_text.Text = "JP" Then
                 AccessMiilist = &H1C5A
                 Accessfriendlist = Miifriendr
@@ -49845,7 +49846,7 @@ Public Class TL_SaveEditor
             Dim valconvert As Integer = Integer.Parse(Convert.ToUInt32(Text_binaryfavcolor.Text, 2)) 'favcolor binary to hex
             Dim valout As String
             valout = Convert.ToString(Convert.ToUInt32(valconvert), 16)
-            Text_datafavcolor.Text = valout
+            Text_datafavcolor.Text = valout.PadLeft(4, "0")
             Text_favcolor.Text = Text_binaryfavcolor.Text.Substring(10, 4) 'update binary features
             Text_mii_gender.Text = Text_binaryfavcolor.Text.Substring(7, 1)
             Text_unknowfavcolor1.Text = Text_binaryfavcolor.Text.Substring(0, 7)
@@ -49875,13 +49876,6 @@ Public Class TL_SaveEditor
     End Sub
 
     Public Sub Writemii()
-        Dim Ws As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
-        'Writer.Position = sharing
-        'Writer.WriteHexString(Text_datasharing.Text)
-        'Ws.Position = wrinkmake
-        'Ws.WriteHexString(Text_datawrinkles.Text)
-        Ws.Flush()
-        Ws.Close()
         Try
             Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
             For i As Integer = 0 To 29
@@ -50061,8 +50055,6 @@ Public Class TL_SaveEditor
             Writer.Flush()
             Writer.Close()
             Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
-            fs.Position = sharing
-            fs.WriteByte(valu_datasharing.Value)
             fs.Position = Miilevel
             fs.WriteByte(valu_level.Value)
             fs.Position = Relationyou
@@ -50103,18 +50095,24 @@ Public Class TL_SaveEditor
         End Try
     End Sub
 
-    Public Sub writex()
+    Public Sub Writebinary()
         Dim xs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
         'write HEX
         xs.Position = couleur
         For j As Integer = 0 To Text_datafavcolor.Text.Length - 1 Step 2
             xs.WriteByte(CByte(Conversion.Val("&H" & Text_datafavcolor.Text.Substring(j, 2))))
         Next
+        xs.Position = sharing
+        For j As Integer = 0 To Text_datasharing.Text.Length - 1 Step 2
+            xs.WriteByte(CByte(Conversion.Val("&H" & Text_datasharing.Text.Substring(j, 2))))
+        Next
+        xs.Position = wrinkmake
+        For j As Integer = 0 To Text_datawrinkles.Text.Length - 1 Step 2
+            xs.WriteByte(CByte(Conversion.Val("&H" & Text_datawrinkles.Text.Substring(j, 2))))
+        Next
         'end write HEX
         'write binary feature without convert to decimal
-        Dim Writer As New BinaryWriter(xs)
         xs.Close()
-        Writer.Close()
     End Sub
 
     'end Mii edit block

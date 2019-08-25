@@ -439,7 +439,6 @@ Partial Class TL_SaveEditor
         Me.Text_datawrinkles = New System.Windows.Forms.TextBox()
         Me.Text_binarywrinkles = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.valu_datasharing = New System.Windows.Forms.NumericUpDown()
         Me.valu_favcolor = New System.Windows.Forms.NumericUpDown()
         Me.Text_unknowfavcolor3 = New System.Windows.Forms.TextBox()
         Me.Text_unknowfavcolor2 = New System.Windows.Forms.TextBox()
@@ -1933,7 +1932,6 @@ Partial Class TL_SaveEditor
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_faceshape, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabPage2.SuspendLayout
-        CType(Me.valu_datasharing, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_favcolor, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_edit_favcolor.SuspendLayout
         CType(Me.AdvH_editfavcolor, System.ComponentModel.ISupportInitialize).BeginInit
@@ -7042,8 +7040,8 @@ Partial Class TL_SaveEditor
         Me.TabPage1.Controls.Add(Me.Title_faceshape)
         Me.TabPage1.Controls.Add(Me.Title_skincolor)
         Me.TabPage1.Controls.Add(Me.Text_binarysharing)
-        Me.TabPage1.Controls.Add(Me.Text_datawrinkles)
         Me.TabPage1.Controls.Add(Me.Text_binarywrinkles)
+        Me.TabPage1.Controls.Add(Me.Text_datawrinkles)
         Me.TabPage1.ImageIndex = 1
         Me.TabPage1.Location = New System.Drawing.Point(25, 4)
         Me.TabPage1.Name = "TabPage1"
@@ -7521,7 +7519,6 @@ Partial Class TL_SaveEditor
         'TabPage2
         '
         Me.TabPage2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
-        Me.TabPage2.Controls.Add(Me.valu_datasharing)
         Me.TabPage2.Controls.Add(Me.valu_favcolor)
         Me.TabPage2.Controls.Add(Me.Text_unknowfavcolor3)
         Me.TabPage2.Controls.Add(Me.Text_unknowfavcolor2)
@@ -7595,14 +7592,6 @@ Partial Class TL_SaveEditor
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.ToolTipText = "Mii profile"
         Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'valu_datasharing
-        '
-        Me.valu_datasharing.Location = New System.Drawing.Point(77, 97)
-        Me.valu_datasharing.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
-        Me.valu_datasharing.Name = "valu_datasharing"
-        Me.valu_datasharing.Size = New System.Drawing.Size(57, 20)
-        Me.valu_datasharing.TabIndex = 326
         '
         'valu_favcolor
         '
@@ -8960,6 +8949,7 @@ Partial Class TL_SaveEditor
         Me.Text_datasharing.Size = New System.Drawing.Size(100, 13)
         Me.Text_datasharing.TabIndex = 261
         Me.Text_datasharing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_datasharing.Visible = False
         '
         'TabPage3
         '
@@ -22981,7 +22971,6 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_faceshape, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout
-        CType(Me.valu_datasharing, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_favcolor, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_edit_favcolor.ResumeLayout(False)
         CType(Me.AdvH_editfavcolor, System.ComponentModel.ISupportInitialize).EndInit
@@ -25268,5 +25257,4 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_unknowfavcolor1 As TextBox
     Friend WithEvents Text_unknowfavcolor3 As TextBox
     Friend WithEvents valu_favcolor As NumericUpDown
-    Friend WithEvents valu_datasharing As NumericUpDown
 End Class
