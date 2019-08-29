@@ -359,7 +359,8 @@ Public Class TL_SaveEditor
     Dim Friendrela_99 As String
     Dim Friendmii_100 As String
     Dim Friendrela_100 As String
-    Dim ascr As String
+    Dim MiisysID As String
+    Dim TLMiisysID As String
 
     'form setting
     Private Sub TL_SaveEditor_FormClosing(sender As Object, e As EventArgs) Handles MyBase.FormClosing
@@ -2686,6 +2687,16 @@ Public Class TL_SaveEditor
 
     Public Sub ReadsavedataArc()
         Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+        Try
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
+                Reader.Position = &H299E8 'Mii 100 registered
+                valu_lastmii.Value = Reader.ReadByte
+            ElseIf Filever_text.Text = "JP" Then
+                Reader.Position = &H24878 'Mii 100 registered
+                valu_lastmii.Value = Reader.ReadByte
+            End If
+        Catch ex As Exception
+        End Try
         Try
             Reader.Position = Money
             valu_money.Value = Reader.ReadUInt32
@@ -12445,11 +12456,28 @@ Public Class TL_SaveEditor
 
     'Mii edit block
     Private Sub Text_savemii_Click(sender As Object, e As EventArgs) Handles Text_savemii.Click
-        Mergebinaryfavcolor()
-        Mergebinarysharing()
-        Mergebinarywrinkles()
-        Writemii()
-        Writebinary()
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Do you want save all changes on this Mii ?" & vbNewLine & "Sometime some features are not save, if that's the case retry"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Voulez-vous enregistrer tout les changements sur ce Mii ?" & vbNewLine & "Quelque fois certaines fonctionnalités ne sont pas enregistrer, si c'est la cas réessayez"
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.Cancel_Button.Text = "Annuler"
+            TLSE_dialog.ShowDialog()
+        End If
+        If TLSE_dialog.DialogResult = Windows.Forms.DialogResult.OK Then
+            Mergebinaryfavcolor()
+            Mergebinarysharing()
+            Mergebinarywrinkles()
+            Writemii()
+            Writebinary()
+            readmiidata()
+            XmodemMii()
+        End If
     End Sub
 
     Private Sub Text_savemii_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_savemii.MouseMove
@@ -25553,6 +25581,14 @@ Public Class TL_SaveEditor
         End If
         If valu_copying.Value = 1 Then
             Select_copying.SelectedItem = Select_copying.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Select_copying_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_copying.SelectedIndexChanged
+        If Select_copying.SelectedItem = Select_copying.Items.Item(0) Then
+            valu_copying.Value = 0
+        ElseIf Select_copying.SelectedItem = Select_copying.Items.Item(1) Then
+            valu_copying.Value = 1
         End If
     End Sub
 
@@ -48167,6 +48203,9 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1C71 + Accessmii
                 copy = Reader.Position
                 valu_copying.Value = Reader.ReadByte
+                Reader.Position = &H1C74 + Accessmii
+                MiisysID = Reader.Position
+                Text_MiisysID.Text = Reader.ReadHexString(8)
                 Reader.Position = &H1C88 + Accessmii
                 couleur = Reader.Position
                 Text_datafavcolor.Text = Reader.ReadHexString(2)
@@ -48206,6 +48245,9 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1D44 + Accessmii
                 Equhats = Reader.Position
                 valu_switch_hats.Value = Reader.ReadUInt16
+                Reader.Position = &H1D68 + Accessmii
+                TLMiisysID = Reader.Position
+                Text_TLMiisysID.Text = Reader.ReadHexString(8)
                 Reader.Position = &H1DC4 + Accessmii
                 bull2 = Reader.Position
                 Text_cathph_02.Text = Reader.ReadUnicodeString(16)
@@ -48340,33 +48382,50 @@ Public Class TL_SaveEditor
                 Miitarget2 = Reader.Position
                 valu_target2.Value = Reader.ReadUInt16
             ElseIf Filever_text.Text = "JP" Then
-                AccessMiilist = &H1C5A
+                Accessmiilist = &H1C5A
                 Accessfriendlist = Miifriendr
                 Accessrelalist = Miifriendr + &H64
+                Reader.Position = &H1C40 + Accessmii
+                Text_Mii.Text = Reader.ReadHexString(&H5E)
+                Reader.Position = &H1C41 + Accessmii
+                copy = Reader.Position
+                valu_copying.Value = Reader.ReadByte
+                Reader.Position = &H1C58 + Accessmii
+                couleur = Reader.Position
+                Text_datafavcolor.Text = Reader.ReadHexString(2)
+                Reader.Position = &H1C5A + Accessmii
+                Nickname = Reader.Position
+                Text_nickname.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C70 + Accessmii
+                sharing = Reader.Position
+                Text_datasharing.Text = Reader.ReadHexString(1)
+                Reader.Position = &H1C88 + Accessmii
+                Creator = Reader.Position
+                Text_creator.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1C9E + Accessmii
+                crcxmodem = Reader.Position
+                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
                 Reader.Position = &H1CA0 + Accessmii
                 Firstname = Reader.Position
                 Text_firstname.Text = Reader.ReadUnicodeString(15)
                 Reader.Position = &H1CC0 + Accessmii
                 Lastname = Reader.Position
                 Text_lastname.Text = Reader.ReadUnicodeString(15)
-                Reader.Position = &H1C5A + Accessmii
-                Nickname = Reader.Position
-                Text_nickname.Text = Reader.ReadUnicodeString(10)
-                Reader.Position = &H1E23 + Accessmii
-                Miilevel = Reader.Position
-                valu_level.Value = Reader.ReadByte
-                Reader.Position = &H1E2D + Accessmii
-                Relationyou = Reader.Position
-                valu_relationyou.Value = Reader.ReadByte
-                Reader.Position = &H1C88 + Accessmii
-                Creator = Reader.Position
-                Text_creator.Text = Reader.ReadUnicodeString(10)
+                Reader.Position = &H1CE3 + Accessmii
+                Haircolor = Reader.Position
+                valu_haircolor.Value = Reader.ReadByte
                 Reader.Position = &H1CE4 + Accessmii
                 bullj1 = Reader.Position
                 Text_cathph_J1.Text = Reader.ReadUnicodeString(4)
                 Reader.Position = &H1CF0 + Accessmii
                 bullj2 = Reader.Position
                 Text_cathph_J2.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1D12 + Accessmii
+                Equclothes = Reader.Position
+                valu_switch_clothes.Value = Reader.ReadUInt16
+                Reader.Position = &H1D14 + Accessmii
+                Equhats = Reader.Position
+                valu_switch_hats.Value = Reader.ReadUInt16
                 Reader.Position = &H1D94 + Accessmii
                 bull2 = Reader.Position
                 Text_cathph_02.Text = Reader.ReadUnicodeString(16)
@@ -48379,6 +48438,35 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1DFA + Accessmii
                 bull5 = Reader.Position
                 Text_cathph_05.Text = Reader.ReadUnicodeString(16)
+                Reader.Position = &H1E20 + Accessmii
+                Equinteriors = Reader.Position
+                valu_switch_interiors.Value = Reader.ReadUInt16
+                Reader.Position = &H1E22 + Accessmii
+                experience = Reader.Position
+                valu_experience.Value = Reader.ReadByte
+                Reader.Position = &H1E23 + Accessmii
+                Miilevel = Reader.Position
+                valu_level.Value = Reader.ReadByte
+                Reader.Position = &H1E24 + Accessmii
+                Pampered = Reader.Position
+                valu_ranking_pampered.Value = Reader.ReadUInt32
+                Reader.Position = &H1E28 + Accessmii
+                econom = Reader.Position
+                valu_economy.Value = Reader.ReadUInt32
+                Reader.Position = &H1E2C + Accessmii
+                Emotions = Reader.Position
+                valu_emotions.Value = Reader.ReadByte
+                Reader.Position = &H1E2D + Accessmii
+                Relationyou = Reader.Position
+                valu_relationyou.Value = Reader.ReadByte
+                Reader.Position = &H1E50 + Accessmii
+                objdiv = Reader.Position 'all goods items inventory
+                Reader.Position = &H1E59 + Accessmii
+                interieur = Reader.Position 'all interiors inventory
+                Reader.Position = &H1E64 + Accessmii
+                interieur1 = Reader.Position 'all interiors1 inventory
+                Reader.Position = &H1E68 + Accessmii
+                Sfoods = Reader.Position 'all special foods inventory
                 Reader.Position = &H2158 + Accessmii
                 objet1 = Reader.Position
                 valu_itemmii_1.Value = Reader.ReadUInt16
@@ -48403,32 +48491,24 @@ Public Class TL_SaveEditor
                 Reader.Position = &H2166 + Accessmii
                 objet8 = Reader.Position
                 valu_itemmii_8.Value = Reader.ReadUInt16
-                Reader.Position = &H1E22 + Accessmii
-                experience = Reader.Position
-                valu_experience.Value = Reader.ReadByte
-                Reader.Position = &H1E28 + Accessmii
-                econom = Reader.Position
-                valu_economy.Value = Reader.ReadUInt32
                 Reader.Position = &H2172 + Accessmii
                 eat = Reader.Position
                 valu_chktummy.Value = Reader.ReadByte
                 Reader.Position = &H2193 + Accessmii
                 fullness = Reader.Position
                 valu_fullness.Value = Reader.ReadByte
-                Reader.Position = &H1E59 + Accessmii
-                interieur = Reader.Position 'all interiors inventory
-                Reader.Position = &H1E64 + Accessmii
-                interieur1 = Reader.Position 'all interiors1 inventory
-                Reader.Position = &H1E68 + Accessmii
-                Sfoods = Reader.Position 'all special foods inventory
-                Reader.Position = &H1E50 + Accessmii
-                objdiv = Reader.Position 'all goods items inventory
                 Reader.Position = &H2198 + Accessmii
                 alltime = Reader.Position
                 valu_allfav_1.Value = Reader.ReadUInt16
+                Reader.Position = &H219A + Accessmii
+                worst2 = Reader.Position
+                valu_worst_2.Value = Reader.ReadUInt16
                 Reader.Position = &H219C + Accessmii
                 alltime2 = Reader.Position
                 valu_allfav_2.Value = Reader.ReadUInt16
+                Reader.Position = &H219E + Accessmii
+                worst = Reader.Position
+                valu_worst_1.Value = Reader.ReadUInt16
                 Reader.Position = &H21A0 + Accessmii
                 fav = Reader.Position
                 valu_fav_1.Value = Reader.ReadUInt16
@@ -48438,44 +48518,23 @@ Public Class TL_SaveEditor
                 Reader.Position = &H21A4 + Accessmii
                 fav3 = Reader.Position
                 valu_fav_3.Value = Reader.ReadUInt16
-                Reader.Position = &H219E + Accessmii
-                worst = Reader.Position
-                valu_worst_1.Value = Reader.ReadUInt16
-                Reader.Position = &H219A + Accessmii
-                worst2 = Reader.Position
-                valu_worst_2.Value = Reader.ReadUInt16
-                Reader.Position = &H1C41 + Accessmii
-                copy = Reader.Position
-                valu_copying.Value = Reader.ReadByte
-                Reader.Position = &H1C70 + Accessmii
-                sharing = Reader.Position
-                Text_datasharing.Text = Reader.ReadHexString(1)
-                Reader.Position = &H1C58 + Accessmii
-                couleur = Reader.Position
-                Text_datafavcolor.Text = Reader.ReadHexString(2)
-                Reader.Position = &H21AE + Accessmii
-                grownkid = Reader.Position
-                valu_growkid.Value = Reader.ReadByte
-                Reader.Position = &H21A8 + Accessmii
-                apartment = Reader.Position
-                valu_miiapart.Value = Reader.ReadByte
-                Reader.Position = &H21B0 + Accessmii
-                Splurge = Reader.Position
-                valu_ranking_splurge.Value = Reader.ReadUInt32
-                Reader.Position = &H1E24 + Accessmii
-                Pampered = Reader.Position
-                valu_ranking_pampered.Value = Reader.ReadUInt32
-                Reader.Position = &H24880 + Accessfriends 'Mii friendlist
-                Miifriendr = Reader.Position
-                Reader.Position = &H1CE3 + Accessmii
-                Haircolor = Reader.Position
-                valu_haircolor.Value = Reader.ReadByte
-                Reader.Position = &H21A9 + Accessmii
-                House = Reader.Position
-                valu_miihouse.Value = Reader.ReadByte
                 Reader.Position = &H21A6 + Accessmii
                 Miimusic = Reader.Position
                 valu_allmusic.Value = Reader.ReadByte
+                Reader.Position = &H21A8 + Accessmii
+                apartment = Reader.Position
+                valu_miiapart.Value = Reader.ReadByte
+                Reader.Position = &H21A9 + Accessmii
+                House = Reader.Position
+                valu_miihouse.Value = Reader.ReadByte
+                Reader.Position = &H21AE + Accessmii
+                grownkid = Reader.Position
+                valu_growkid.Value = Reader.ReadByte
+                Reader.Position = &H21B0 + Accessmii
+                Splurge = Reader.Position
+                valu_ranking_splurge.Value = Reader.ReadUInt32
+                Reader.Position = &H24880 + Accessfriends 'Mii friendlist
+                Miifriendr = Reader.Position
                 Reader.Position = &H24950 + Accessfriends 'Mii friendlist
                 Miiinteraction = Reader.Position
                 valu_interaction.Value = Reader.ReadUInt16
@@ -48491,23 +48550,6 @@ Public Class TL_SaveEditor
                 Reader.Position = &H24956 + Accessfriends  'Mii friendlist
                 Miitarget2 = Reader.Position
                 valu_target2.Value = Reader.ReadUInt16
-                Reader.Position = &H1E2C + Accessmii
-                Emotions = Reader.Position
-                valu_emotions.Value = Reader.ReadByte
-                Reader.Position = &H1D12 + Accessmii
-                Equclothes = Reader.Position
-                valu_switch_clothes.Value = Reader.ReadUInt16
-                Reader.Position = &H1D14 + Accessmii
-                Equhats = Reader.Position
-                valu_switch_hats.Value = Reader.ReadUInt16
-                Reader.Position = &H1E20 + Accessmii
-                Equinteriors = Reader.Position
-                valu_switch_interiors.Value = Reader.ReadUInt16
-                Reader.Position = &H1C40 + Accessmii
-                Text_Mii.Text = Reader.ReadHexString(&H5E)
-                Reader.Position = &H1C9E + Accessmii
-                crcxmodem = Reader.Position
-                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
             End If
             readfriendlist()
         Catch ex As Exception
@@ -49830,7 +49872,6 @@ Public Class TL_SaveEditor
             Dim valout As String
             valout = Convert.ToString(Convert.ToUInt32(valconvert), 2)
             Text_binaryfavcolor.Text = valout.PadLeft(16, "0")
-            valu_favcolor.Value = CUInt("&H" & Text_datafavcolor.Text.Trim) 'convert to decimal to write
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                 TLSE_dialog.Text_TLSE_dialog.Text = "Error..." & vbNewLine & "Failed to convert hex to binary (favorite color)"
@@ -49932,8 +49973,6 @@ Public Class TL_SaveEditor
             Writer.WriteUInt16(valu_worst_1.Value)
             Writer.Position = worst2
             Writer.WriteUInt16(valu_worst_2.Value)
-            Writer.Position = couleur
-            Writer.WriteUInt16(valu_favcolor.Value)
             For i As Integer = 0 To 31
                 Writer.Position = bull2 + i
                 Writer.WriteInt8(0)
@@ -50079,8 +50118,8 @@ Public Class TL_SaveEditor
             fs.WriteByte(valu_copying.Value)
             fs.Position = hairstyle
             fs.WriteByte(valu_hairstyle.Value)
-            'writefriendlist()
-            'Patchfrienlist()
+            writefriendlist()
+            Patchfrienlist()
             done()
             fs.Close()
         Catch ex As Exception
@@ -50110,10 +50149,773 @@ Public Class TL_SaveEditor
         For j As Integer = 0 To Text_datawrinkles.Text.Length - 1 Step 2
             xs.WriteByte(CByte(Conversion.Val("&H" & Text_datawrinkles.Text.Substring(j, 2))))
         Next
+        xs.Position = MiisysID
+        For j As Integer = 0 To Text_MiisysID.Text.Length - 1 Step 2
+            xs.WriteByte(CByte(Conversion.Val("&H" & Text_MiisysID.Text.Substring(j, 2))))
+        Next
+        xs.Position = TLMiisysID
+        For j As Integer = 0 To Text_TLMiisysID.Text.Length - 1 Step 2
+            xs.WriteByte(CByte(Conversion.Val("&H" & Text_TLMiisysID.Text.Substring(j, 2))))
+        Next
         'end write HEX
         'write binary feature without convert to decimal
         xs.Close()
     End Sub
 
+    Public Sub XmodemMii()
+        Dim crc As Integer = &H0 ' Starting value 
+        Dim Polynom As Integer = &H1021 ' As in X^16 + X^12 + X^5 + 1 
+        Dim bit As Boolean
+        Dim c15 As Boolean
+        Dim i As Integer
+        Dim str As String = Text_Mii.Text
+        Dim ctr = PackageIO.Conversions.HexToByteArray(str)
+        Dim bytes As Byte() = ctr
+
+        ' Calculate the CRC: 
+        For Each b As Byte In bytes
+            For i = 0 To 7
+                bit = ((b >> (7 - i) And 1)) '= 1) 
+                c15 = ((crc >> 15 And 1)) '= 1) 
+                crc <<= 1
+                If c15 Xor bit Then
+                    crc = crc Xor Polynom
+                End If
+            Next
+        Next
+
+        crc = crc And &HFFFF
+
+        valu_crcxmodem.Value = crc
+        Try
+            Dim Writecrc As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            Writecrc.Position = crcxmodem
+            For j As Integer = 0 To valu_crcxmodem.Text.Length - 1 Step 2
+                Writecrc.WriteByte(CByte(Conversion.Val("&H" & valu_crcxmodem.Text.Substring(j, 2))))
+            Next
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to fix checksum, please report this issue"
+                TLSE_dialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La correction du checksum a échoué, veuillez signaler cet erreur"
+                TLSE_dialog.ShowDialog()
+            End If
+        End Try
+        Return
+    End Sub
+
+    Public Sub readmiidata()
+        Try
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
+                Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+                Reader.Position = &H1C70 + Accessmii
+                Text_Mii.Text = Reader.ReadHexString(&H5E)
+                Reader.Position = &H1CCE + Accessmii
+                crcxmodem = Reader.Position
+                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
+            End If
+
+            If Filever_text.Text = "JP" Then
+                Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+                Reader.Position = &H1C40 + Accessmii
+                Text_Mii.Text = Reader.ReadHexString(&H5E)
+                Reader.Position = &H1C9E + Accessmii
+                crcxmodem = Reader.Position
+                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
+            End If
+            done()
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Public Sub Patchfrienlist()
+        Try
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
+                fs.Position = &H29A54 + Patchmii
+                fs.WriteByte(valu_selfriend_rela_1.Value)
+                fs.Position = &H29A54 + &H100 + Patchmii
+                fs.WriteByte(valu_selfriend_rela_2.Value)
+                fs.Position = &H29A54 + (&H100 * 2) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_3.Value)
+                fs.Position = &H29A54 + (&H100 * 3) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_4.Value)
+                fs.Position = &H29A54 + (&H100 * 4) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_5.Value)
+                fs.Position = &H29A54 + (&H100 * 5) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_6.Value)
+                fs.Position = &H29A54 + (&H100 * 6) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_7.Value)
+                fs.Position = &H29A54 + (&H100 * 7) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_8.Value)
+                fs.Position = &H29A54 + (&H100 * 8) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_9.Value)
+                fs.Position = &H29A54 + (&H100 * 9) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_10.Value)
+                fs.Position = &H29A54 + (&H100 * 10) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_11.Value)
+                fs.Position = &H29A54 + (&H100 * 11) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_12.Value)
+                fs.Position = &H29A54 + (&H100 * 12) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_13.Value)
+                fs.Position = &H29A54 + (&H100 * 13) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_14.Value)
+                fs.Position = &H29A54 + (&H100 * 14) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_15.Value)
+                fs.Position = &H29A54 + (&H100 * 15) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_16.Value)
+                fs.Position = &H29A54 + (&H100 * 16) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_17.Value)
+                fs.Position = &H29A54 + (&H100 * 17) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_18.Value)
+                fs.Position = &H29A54 + (&H100 * 18) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_19.Value)
+                fs.Position = &H29A54 + (&H100 * 19) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_20.Value)
+                fs.Position = &H29A54 + (&H100 * 20) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_21.Value)
+                fs.Position = &H29A54 + (&H100 * 21) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_22.Value)
+                fs.Position = &H29A54 + (&H100 * 22) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_23.Value)
+                fs.Position = &H29A54 + (&H100 * 23) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_24.Value)
+                fs.Position = &H29A54 + (&H100 * 24) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_25.Value)
+                fs.Position = &H29A54 + (&H100 * 25) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_26.Value)
+                fs.Position = &H29A54 + (&H100 * 26) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_27.Value)
+                fs.Position = &H29A54 + (&H100 * 27) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_28.Value)
+                fs.Position = &H29A54 + (&H100 * 28) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_29.Value)
+                fs.Position = &H29A54 + (&H100 * 29) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_30.Value)
+                fs.Position = &H29A54 + (&H100 * 30) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_31.Value)
+                fs.Position = &H29A54 + (&H100 * 31) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_32.Value)
+                fs.Position = &H29A54 + (&H100 * 32) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_33.Value)
+                fs.Position = &H29A54 + (&H100 * 33) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_34.Value)
+                fs.Position = &H29A54 + (&H100 * 34) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_35.Value)
+                fs.Position = &H29A54 + (&H100 * 35) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_36.Value)
+                fs.Position = &H29A54 + (&H100 * 36) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_37.Value)
+                fs.Position = &H29A54 + (&H100 * 37) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_38.Value)
+                fs.Position = &H29A54 + (&H100 * 38) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_39.Value)
+                fs.Position = &H29A54 + (&H100 * 39) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_40.Value)
+                fs.Position = &H29A54 + (&H100 * 40) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_41.Value)
+                fs.Position = &H29A54 + (&H100 * 41) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_42.Value)
+                fs.Position = &H29A54 + (&H100 * 42) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_43.Value)
+                fs.Position = &H29A54 + (&H100 * 43) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_44.Value)
+                fs.Position = &H29A54 + (&H100 * 44) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_45.Value)
+                fs.Position = &H29A54 + (&H100 * 45) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_46.Value)
+                fs.Position = &H29A54 + (&H100 * 46) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_47.Value)
+                fs.Position = &H29A54 + (&H100 * 47) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_48.Value)
+                fs.Position = &H29A54 + (&H100 * 48) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_49.Value)
+                fs.Position = &H29A54 + (&H100 * 49) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_50.Value)
+                fs.Position = &H29A54 + (&H100 * 50) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_51.Value)
+                fs.Position = &H29A54 + (&H100 * 51) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_52.Value)
+                fs.Position = &H29A54 + (&H100 * 52) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_53.Value)
+                fs.Position = &H29A54 + (&H100 * 53) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_54.Value)
+                fs.Position = &H29A54 + (&H100 * 54) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_55.Value)
+                fs.Position = &H29A54 + (&H100 * 55) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_56.Value)
+                fs.Position = &H29A54 + (&H100 * 56) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_57.Value)
+                fs.Position = &H29A54 + (&H100 * 57) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_58.Value)
+                fs.Position = &H29A54 + (&H100 * 58) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_59.Value)
+                fs.Position = &H29A54 + (&H100 * 59) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_60.Value)
+                fs.Position = &H29A54 + (&H100 * 60) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_61.Value)
+                fs.Position = &H29A54 + (&H100 * 61) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_62.Value)
+                fs.Position = &H29A54 + (&H100 * 62) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_63.Value)
+                fs.Position = &H29A54 + (&H100 * 63) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_64.Value)
+                fs.Position = &H29A54 + (&H100 * 64) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_65.Value)
+                fs.Position = &H29A54 + (&H100 * 65) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_66.Value)
+                fs.Position = &H29A54 + (&H100 * 66) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_67.Value)
+                fs.Position = &H29A54 + (&H100 * 67) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_68.Value)
+                fs.Position = &H29A54 + (&H100 * 68) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_69.Value)
+                fs.Position = &H29A54 + (&H100 * 69) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_70.Value)
+                fs.Position = &H29A54 + (&H100 * 70) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_71.Value)
+                fs.Position = &H29A54 + (&H100 * 71) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_72.Value)
+                fs.Position = &H29A54 + (&H100 * 72) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_73.Value)
+                fs.Position = &H29A54 + (&H100 * 73) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_74.Value)
+                fs.Position = &H29A54 + (&H100 * 74) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_75.Value)
+                fs.Position = &H29A54 + (&H100 * 75) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_76.Value)
+                fs.Position = &H29A54 + (&H100 * 76) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_77.Value)
+                fs.Position = &H29A54 + (&H100 * 77) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_78.Value)
+                fs.Position = &H29A54 + (&H100 * 78) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_79.Value)
+                fs.Position = &H29A54 + (&H100 * 79) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_80.Value)
+                fs.Position = &H29A54 + (&H100 * 80) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_81.Value)
+                fs.Position = &H29A54 + (&H100 * 81) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_82.Value)
+                fs.Position = &H29A54 + (&H100 * 82) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_83.Value)
+                fs.Position = &H29A54 + (&H100 * 83) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_84.Value)
+                fs.Position = &H29A54 + (&H100 * 84) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_85.Value)
+                fs.Position = &H29A54 + (&H100 * 85) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_86.Value)
+                fs.Position = &H29A54 + (&H100 * 86) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_87.Value)
+                fs.Position = &H29A54 + (&H100 * 87) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_88.Value)
+                fs.Position = &H29A54 + (&H100 * 88) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_89.Value)
+                fs.Position = &H29A54 + (&H100 * 89) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_90.Value)
+                fs.Position = &H29A54 + (&H100 * 90) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_91.Value)
+                fs.Position = &H29A54 + (&H100 * 91) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_92.Value)
+                fs.Position = &H29A54 + (&H100 * 92) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_93.Value)
+                fs.Position = &H29A54 + (&H100 * 93) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_94.Value)
+                fs.Position = &H29A54 + (&H100 * 94) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_95.Value)
+                fs.Position = &H29A54 + (&H100 * 95) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_96.Value)
+                fs.Position = &H29A54 + (&H100 * 96) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_97.Value)
+                fs.Position = &H29A54 + (&H100 * 97) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_98.Value)
+                fs.Position = &H29A54 + (&H100 * 98) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_99.Value)
+                fs.Position = &H29A54 + (&H100 * 99) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_100.Value)
+            End If
+            If Filever_text.Text = "JP" Then
+                fs.Position = &H248E4 + Patchmii
+                fs.WriteByte(valu_selfriend_rela_1.Value)
+                fs.Position = &H248E4 + &H100 + Patchmii
+                fs.WriteByte(valu_selfriend_rela_2.Value)
+                fs.Position = &H248E4 + (&H100 * 2) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_3.Value)
+                fs.Position = &H248E4 + (&H100 * 3) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_4.Value)
+                fs.Position = &H248E4 + (&H100 * 4) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_5.Value)
+                fs.Position = &H248E4 + (&H100 * 5) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_6.Value)
+                fs.Position = &H248E4 + (&H100 * 6) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_7.Value)
+                fs.Position = &H248E4 + (&H100 * 7) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_8.Value)
+                fs.Position = &H248E4 + (&H100 * 8) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_9.Value)
+                fs.Position = &H248E4 + (&H100 * 9) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_10.Value)
+                fs.Position = &H248E4 + (&H100 * 10) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_11.Value)
+                fs.Position = &H248E4 + (&H100 * 11) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_12.Value)
+                fs.Position = &H248E4 + (&H100 * 12) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_13.Value)
+                fs.Position = &H248E4 + (&H100 * 13) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_14.Value)
+                fs.Position = &H248E4 + (&H100 * 14) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_15.Value)
+                fs.Position = &H248E4 + (&H100 * 15) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_16.Value)
+                fs.Position = &H248E4 + (&H100 * 16) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_17.Value)
+                fs.Position = &H248E4 + (&H100 * 17) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_18.Value)
+                fs.Position = &H248E4 + (&H100 * 18) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_19.Value)
+                fs.Position = &H248E4 + (&H100 * 19) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_20.Value)
+                fs.Position = &H248E4 + (&H100 * 20) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_21.Value)
+                fs.Position = &H248E4 + (&H100 * 21) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_22.Value)
+                fs.Position = &H248E4 + (&H100 * 22) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_23.Value)
+                fs.Position = &H248E4 + (&H100 * 23) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_24.Value)
+                fs.Position = &H248E4 + (&H100 * 24) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_25.Value)
+                fs.Position = &H248E4 + (&H100 * 25) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_26.Value)
+                fs.Position = &H248E4 + (&H100 * 26) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_27.Value)
+                fs.Position = &H248E4 + (&H100 * 27) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_28.Value)
+                fs.Position = &H248E4 + (&H100 * 28) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_29.Value)
+                fs.Position = &H248E4 + (&H100 * 29) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_30.Value)
+                fs.Position = &H248E4 + (&H100 * 30) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_31.Value)
+                fs.Position = &H248E4 + (&H100 * 31) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_32.Value)
+                fs.Position = &H248E4 + (&H100 * 32) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_33.Value)
+                fs.Position = &H248E4 + (&H100 * 33) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_34.Value)
+                fs.Position = &H248E4 + (&H100 * 34) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_35.Value)
+                fs.Position = &H248E4 + (&H100 * 35) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_36.Value)
+                fs.Position = &H248E4 + (&H100 * 36) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_37.Value)
+                fs.Position = &H248E4 + (&H100 * 37) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_38.Value)
+                fs.Position = &H248E4 + (&H100 * 38) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_39.Value)
+                fs.Position = &H248E4 + (&H100 * 39) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_40.Value)
+                fs.Position = &H248E4 + (&H100 * 40) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_41.Value)
+                fs.Position = &H248E4 + (&H100 * 41) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_42.Value)
+                fs.Position = &H248E4 + (&H100 * 42) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_43.Value)
+                fs.Position = &H248E4 + (&H100 * 43) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_44.Value)
+                fs.Position = &H248E4 + (&H100 * 44) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_45.Value)
+                fs.Position = &H248E4 + (&H100 * 45) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_46.Value)
+                fs.Position = &H248E4 + (&H100 * 46) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_47.Value)
+                fs.Position = &H248E4 + (&H100 * 47) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_48.Value)
+                fs.Position = &H248E4 + (&H100 * 48) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_49.Value)
+                fs.Position = &H248E4 + (&H100 * 49) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_50.Value)
+                fs.Position = &H248E4 + (&H100 * 50) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_51.Value)
+                fs.Position = &H248E4 + (&H100 * 51) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_52.Value)
+                fs.Position = &H248E4 + (&H100 * 52) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_53.Value)
+                fs.Position = &H248E4 + (&H100 * 53) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_54.Value)
+                fs.Position = &H248E4 + (&H100 * 54) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_55.Value)
+                fs.Position = &H248E4 + (&H100 * 55) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_56.Value)
+                fs.Position = &H248E4 + (&H100 * 56) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_57.Value)
+                fs.Position = &H248E4 + (&H100 * 57) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_58.Value)
+                fs.Position = &H248E4 + (&H100 * 58) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_59.Value)
+                fs.Position = &H248E4 + (&H100 * 59) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_60.Value)
+                fs.Position = &H248E4 + (&H100 * 60) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_61.Value)
+                fs.Position = &H248E4 + (&H100 * 61) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_62.Value)
+                fs.Position = &H248E4 + (&H100 * 62) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_63.Value)
+                fs.Position = &H248E4 + (&H100 * 63) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_64.Value)
+                fs.Position = &H248E4 + (&H100 * 64) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_65.Value)
+                fs.Position = &H248E4 + (&H100 * 65) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_66.Value)
+                fs.Position = &H248E4 + (&H100 * 66) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_67.Value)
+                fs.Position = &H248E4 + (&H100 * 67) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_68.Value)
+                fs.Position = &H248E4 + (&H100 * 68) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_69.Value)
+                fs.Position = &H248E4 + (&H100 * 69) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_70.Value)
+                fs.Position = &H248E4 + (&H100 * 70) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_71.Value)
+                fs.Position = &H248E4 + (&H100 * 71) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_72.Value)
+                fs.Position = &H248E4 + (&H100 * 72) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_73.Value)
+                fs.Position = &H248E4 + (&H100 * 73) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_74.Value)
+                fs.Position = &H248E4 + (&H100 * 74) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_75.Value)
+                fs.Position = &H248E4 + (&H100 * 75) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_76.Value)
+                fs.Position = &H248E4 + (&H100 * 76) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_77.Value)
+                fs.Position = &H248E4 + (&H100 * 77) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_78.Value)
+                fs.Position = &H248E4 + (&H100 * 78) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_79.Value)
+                fs.Position = &H248E4 + (&H100 * 79) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_80.Value)
+                fs.Position = &H248E4 + (&H100 * 80) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_81.Value)
+                fs.Position = &H248E4 + (&H100 * 81) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_82.Value)
+                fs.Position = &H248E4 + (&H100 * 82) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_83.Value)
+                fs.Position = &H248E4 + (&H100 * 83) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_84.Value)
+                fs.Position = &H248E4 + (&H100 * 84) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_85.Value)
+                fs.Position = &H248E4 + (&H100 * 85) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_86.Value)
+                fs.Position = &H248E4 + (&H100 * 86) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_87.Value)
+                fs.Position = &H248E4 + (&H100 * 87) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_88.Value)
+                fs.Position = &H248E4 + (&H100 * 88) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_89.Value)
+                fs.Position = &H248E4 + (&H100 * 89) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_90.Value)
+                fs.Position = &H248E4 + (&H100 * 90) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_91.Value)
+                fs.Position = &H248E4 + (&H100 * 91) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_92.Value)
+                fs.Position = &H248E4 + (&H100 * 92) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_93.Value)
+                fs.Position = &H248E4 + (&H100 * 93) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_94.Value)
+                fs.Position = &H248E4 + (&H100 * 94) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_95.Value)
+                fs.Position = &H248E4 + (&H100 * 95) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_96.Value)
+                fs.Position = &H248E4 + (&H100 * 96) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_97.Value)
+                fs.Position = &H248E4 + (&H100 * 97) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_98.Value)
+                fs.Position = &H248E4 + (&H100 * 98) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_99.Value)
+                fs.Position = &H248E4 + (&H100 * 99) + Patchmii
+                fs.WriteByte(valu_selfriend_rela_100.Value)
+            End If
+            fs.Close()
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Public Sub writefriendlist()
+        Try
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            fs.Position = Friendmii_1
+            fs.WriteByte(valu_friend_rela_1.Value)
+            fs.Position = Friendrela_1
+            fs.WriteByte(valu_selfriend_rela_1.Value)
+            fs.Position = Friendmii_2
+            fs.WriteByte(valu_friend_rela_2.Value)
+            fs.Position = Friendrela_2
+            fs.WriteByte(valu_selfriend_rela_2.Value)
+            fs.Position = Friendmii_3
+            fs.WriteByte(valu_friend_rela_3.Value)
+            fs.Position = Friendrela_3
+            fs.WriteByte(valu_selfriend_rela_3.Value)
+            fs.Position = Friendmii_4
+            fs.WriteByte(valu_friend_rela_4.Value)
+            fs.Position = Friendrela_4
+            fs.WriteByte(valu_selfriend_rela_4.Value)
+            fs.Position = Friendmii_5
+            fs.WriteByte(valu_friend_rela_5.Value)
+            fs.Position = Friendrela_5
+            fs.WriteByte(valu_selfriend_rela_5.Value)
+            fs.Position = Friendmii_6
+            fs.WriteByte(valu_friend_rela_6.Value)
+            fs.Position = Friendrela_6
+            fs.WriteByte(valu_selfriend_rela_6.Value)
+            fs.Position = Friendmii_7
+            fs.WriteByte(valu_friend_rela_7.Value)
+            fs.Position = Friendrela_7
+            fs.WriteByte(valu_selfriend_rela_7.Value)
+            fs.Position = Friendmii_8
+            fs.WriteByte(valu_friend_rela_8.Value)
+            fs.Position = Friendrela_8
+            fs.WriteByte(valu_selfriend_rela_8.Value)
+            fs.Position = Friendmii_9
+            fs.WriteByte(valu_friend_rela_9.Value)
+            fs.Position = Friendrela_9
+            fs.WriteByte(valu_selfriend_rela_9.Value)
+            fs.Position = Friendmii_10
+            fs.WriteByte(valu_friend_rela_10.Value)
+            fs.Position = Friendrela_10
+            fs.WriteByte(valu_selfriend_rela_10.Value)
+            fs.Position = Friendmii_11
+            fs.WriteByte(valu_friend_rela_11.Value)
+            fs.Position = Friendrela_11
+            fs.WriteByte(valu_selfriend_rela_11.Value)
+            fs.Position = Friendmii_12
+            fs.WriteByte(valu_friend_rela_12.Value)
+            fs.Position = Friendrela_12
+            fs.WriteByte(valu_selfriend_rela_12.Value)
+            fs.Position = Friendmii_13
+            fs.WriteByte(valu_friend_rela_13.Value)
+            fs.Position = Friendrela_13
+            fs.WriteByte(valu_selfriend_rela_13.Value)
+            fs.Position = Friendmii_14
+            fs.WriteByte(valu_friend_rela_14.Value)
+            fs.Position = Friendrela_14
+            fs.WriteByte(valu_selfriend_rela_14.Value)
+            fs.Position = Friendmii_15
+            fs.WriteByte(valu_friend_rela_15.Value)
+            fs.Position = Friendrela_15
+            fs.WriteByte(valu_selfriend_rela_15.Value)
+            fs.Position = Friendmii_16
+            fs.WriteByte(valu_friend_rela_16.Value)
+            fs.Position = Friendrela_16
+            fs.WriteByte(valu_selfriend_rela_16.Value)
+            fs.Position = Friendmii_17
+            fs.WriteByte(valu_friend_rela_17.Value)
+            fs.Position = Friendrela_17
+            fs.WriteByte(valu_selfriend_rela_17.Value)
+            fs.Position = Friendmii_18
+            fs.WriteByte(valu_friend_rela_18.Value)
+            fs.Position = Friendrela_18
+            fs.WriteByte(valu_selfriend_rela_18.Value)
+            fs.Position = Friendmii_19
+            fs.WriteByte(valu_friend_rela_19.Value)
+            fs.Position = Friendrela_19
+            fs.WriteByte(valu_selfriend_rela_19.Value)
+            fs.Position = Friendmii_20
+            fs.WriteByte(valu_friend_rela_20.Value)
+            fs.Position = Friendrela_20
+            fs.WriteByte(valu_selfriend_rela_20.Value)
+            fs.Position = Friendmii_21
+            fs.WriteByte(valu_friend_rela_21.Value)
+            fs.Position = Friendrela_21
+            fs.WriteByte(valu_selfriend_rela_21.Value)
+            fs.Position = Friendmii_22
+            fs.WriteByte(valu_friend_rela_22.Value)
+            fs.Position = Friendrela_22
+            fs.WriteByte(valu_selfriend_rela_22.Value)
+            fs.Position = Friendmii_23
+            fs.WriteByte(valu_friend_rela_23.Value)
+            fs.Position = Friendrela_23
+            fs.WriteByte(valu_selfriend_rela_23.Value)
+            fs.Position = Friendmii_24
+            fs.WriteByte(valu_friend_rela_24.Value)
+            fs.Position = Friendrela_24
+            fs.WriteByte(valu_selfriend_rela_24.Value)
+            fs.Position = Friendmii_25
+            fs.WriteByte(valu_friend_rela_25.Value)
+            fs.Position = Friendrela_25
+            fs.WriteByte(valu_selfriend_rela_25.Value)
+            fs.Position = Friendmii_26
+            fs.WriteByte(valu_friend_rela_26.Value)
+            fs.Position = Friendrela_26
+            fs.WriteByte(valu_selfriend_rela_26.Value)
+            fs.Position = Friendmii_27
+            fs.WriteByte(valu_friend_rela_27.Value)
+            fs.Position = Friendrela_27
+            fs.WriteByte(valu_selfriend_rela_27.Value)
+            fs.Position = Friendmii_28
+            fs.WriteByte(valu_friend_rela_28.Value)
+            fs.Position = Friendrela_28
+            fs.WriteByte(valu_selfriend_rela_28.Value)
+            fs.Position = Friendmii_29
+            fs.WriteByte(valu_friend_rela_29.Value)
+            fs.Position = Friendrela_29
+            fs.WriteByte(valu_selfriend_rela_29.Value)
+            fs.Position = Friendmii_30
+            fs.WriteByte(valu_friend_rela_30.Value)
+            fs.Position = Friendrela_30
+            fs.WriteByte(valu_selfriend_rela_30.Value)
+            fs.Position = Friendrela_31
+            fs.WriteByte(valu_selfriend_rela_31.Value)
+            fs.Position = Friendrela_32
+            fs.WriteByte(valu_selfriend_rela_32.Value)
+            fs.Position = Friendrela_33
+            fs.WriteByte(valu_selfriend_rela_33.Value)
+            fs.Position = Friendrela_34
+            fs.WriteByte(valu_selfriend_rela_34.Value)
+            fs.Position = Friendrela_35
+            fs.WriteByte(valu_selfriend_rela_35.Value)
+            fs.Position = Friendrela_36
+            fs.WriteByte(valu_selfriend_rela_36.Value)
+            fs.Position = Friendrela_37
+            fs.WriteByte(valu_selfriend_rela_37.Value)
+            fs.Position = Friendrela_38
+            fs.WriteByte(valu_selfriend_rela_38.Value)
+            fs.Position = Friendrela_39
+            fs.WriteByte(valu_selfriend_rela_39.Value)
+            fs.Position = Friendrela_40
+            fs.WriteByte(valu_selfriend_rela_40.Value)
+            fs.Position = Friendrela_41
+            fs.WriteByte(valu_selfriend_rela_41.Value)
+            fs.Position = Friendrela_42
+            fs.WriteByte(valu_selfriend_rela_42.Value)
+            fs.Position = Friendrela_43
+            fs.WriteByte(valu_selfriend_rela_43.Value)
+            fs.Position = Friendrela_44
+            fs.WriteByte(valu_selfriend_rela_44.Value)
+            fs.Position = Friendrela_45
+            fs.WriteByte(valu_selfriend_rela_45.Value)
+            fs.Position = Friendrela_46
+            fs.WriteByte(valu_selfriend_rela_46.Value)
+            fs.Position = Friendrela_47
+            fs.WriteByte(valu_selfriend_rela_47.Value)
+            fs.Position = Friendrela_48
+            fs.WriteByte(valu_selfriend_rela_48.Value)
+            fs.Position = Friendrela_49
+            fs.WriteByte(valu_selfriend_rela_49.Value)
+            fs.Position = Friendrela_50
+            fs.WriteByte(valu_selfriend_rela_50.Value)
+            fs.Position = Friendrela_51
+            fs.WriteByte(valu_selfriend_rela_51.Value)
+            fs.Position = Friendrela_52
+            fs.WriteByte(valu_selfriend_rela_52.Value)
+            fs.Position = Friendrela_53
+            fs.WriteByte(valu_selfriend_rela_53.Value)
+            fs.Position = Friendrela_54
+            fs.WriteByte(valu_selfriend_rela_54.Value)
+            fs.Position = Friendrela_55
+            fs.WriteByte(valu_selfriend_rela_55.Value)
+            fs.Position = Friendrela_56
+            fs.WriteByte(valu_selfriend_rela_56.Value)
+            fs.Position = Friendrela_57
+            fs.WriteByte(valu_selfriend_rela_57.Value)
+            fs.Position = Friendrela_58
+            fs.WriteByte(valu_selfriend_rela_58.Value)
+            fs.Position = Friendrela_59
+            fs.WriteByte(valu_selfriend_rela_59.Value)
+            fs.Position = Friendrela_60
+            fs.WriteByte(valu_selfriend_rela_60.Value)
+            fs.Position = Friendrela_61
+            fs.WriteByte(valu_selfriend_rela_61.Value)
+            fs.Position = Friendrela_62
+            fs.WriteByte(valu_selfriend_rela_62.Value)
+            fs.Position = Friendrela_63
+            fs.WriteByte(valu_selfriend_rela_63.Value)
+            fs.Position = Friendrela_64
+            fs.WriteByte(valu_selfriend_rela_64.Value)
+            fs.Position = Friendrela_65
+            fs.WriteByte(valu_selfriend_rela_65.Value)
+            fs.Position = Friendrela_66
+            fs.WriteByte(valu_selfriend_rela_66.Value)
+            fs.Position = Friendrela_67
+            fs.WriteByte(valu_selfriend_rela_67.Value)
+            fs.Position = Friendrela_68
+            fs.WriteByte(valu_selfriend_rela_68.Value)
+            fs.Position = Friendrela_69
+            fs.WriteByte(valu_selfriend_rela_69.Value)
+            fs.Position = Friendrela_70
+            fs.WriteByte(valu_selfriend_rela_70.Value)
+            fs.Position = Friendrela_71
+            fs.WriteByte(valu_selfriend_rela_71.Value)
+            fs.Position = Friendrela_72
+            fs.WriteByte(valu_selfriend_rela_72.Value)
+            fs.Position = Friendrela_73
+            fs.WriteByte(valu_selfriend_rela_73.Value)
+            fs.Position = Friendrela_74
+            fs.WriteByte(valu_selfriend_rela_74.Value)
+            fs.Position = Friendrela_75
+            fs.WriteByte(valu_selfriend_rela_75.Value)
+            fs.Position = Friendrela_76
+            fs.WriteByte(valu_selfriend_rela_76.Value)
+            fs.Position = Friendrela_77
+            fs.WriteByte(valu_selfriend_rela_77.Value)
+            fs.Position = Friendrela_78
+            fs.WriteByte(valu_selfriend_rela_78.Value)
+            fs.Position = Friendrela_79
+            fs.WriteByte(valu_selfriend_rela_79.Value)
+            fs.Position = Friendrela_80
+            fs.WriteByte(valu_selfriend_rela_80.Value)
+            fs.Position = Friendrela_81
+            fs.WriteByte(valu_selfriend_rela_81.Value)
+            fs.Position = Friendrela_82
+            fs.WriteByte(valu_selfriend_rela_82.Value)
+            fs.Position = Friendrela_83
+            fs.WriteByte(valu_selfriend_rela_83.Value)
+            fs.Position = Friendrela_84
+            fs.WriteByte(valu_selfriend_rela_84.Value)
+            fs.Position = Friendrela_85
+            fs.WriteByte(valu_selfriend_rela_85.Value)
+            fs.Position = Friendrela_86
+            fs.WriteByte(valu_selfriend_rela_86.Value)
+            fs.Position = Friendrela_87
+            fs.WriteByte(valu_selfriend_rela_87.Value)
+            fs.Position = Friendrela_88
+            fs.WriteByte(valu_selfriend_rela_88.Value)
+            fs.Position = Friendrela_89
+            fs.WriteByte(valu_selfriend_rela_89.Value)
+            fs.Position = Friendrela_90
+            fs.WriteByte(valu_selfriend_rela_90.Value)
+            fs.Position = Friendrela_91
+            fs.WriteByte(valu_selfriend_rela_91.Value)
+            fs.Position = Friendrela_92
+            fs.WriteByte(valu_selfriend_rela_92.Value)
+            fs.Position = Friendrela_93
+            fs.WriteByte(valu_selfriend_rela_93.Value)
+            fs.Position = Friendrela_94
+            fs.WriteByte(valu_selfriend_rela_94.Value)
+            fs.Position = Friendrela_95
+            fs.WriteByte(valu_selfriend_rela_95.Value)
+            fs.Position = Friendrela_96
+            fs.WriteByte(valu_selfriend_rela_96.Value)
+            fs.Position = Friendrela_97
+            fs.WriteByte(valu_selfriend_rela_97.Value)
+            fs.Position = Friendrela_98
+            fs.WriteByte(valu_selfriend_rela_98.Value)
+            fs.Position = Friendrela_99
+            fs.WriteByte(valu_selfriend_rela_99.Value)
+            fs.Position = Friendrela_100
+            fs.WriteByte(valu_selfriend_rela_100.Value)
+            fs.Close()
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub valu_lastmii_ValueChanged(sender As Object, e As EventArgs) Handles valu_lastmii.ValueChanged
+        If valu_lastmii.Value = 1 Then
+            Button_setallrelation.Enabled = True
+        Else
+            Button_setallrelation.Enabled = False
+        End If
+    End Sub
     'end Mii edit block
 End Class

@@ -94,6 +94,7 @@ Partial Class TL_SaveEditor
         Me.Text_done = New System.Windows.Forms.Label()
         Me.Text_editing_mii = New System.Windows.Forms.Label()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
+        Me.valu_lastmii = New System.Windows.Forms.NumericUpDown()
         Me.Panel_addsymb_islandname = New System.Windows.Forms.Panel()
         Me.Text_spesymb_islandname = New System.Windows.Forms.Label()
         Me.Panel_spesymb_islandname_cancel = New System.Windows.Forms.Panel()
@@ -395,18 +396,18 @@ Partial Class TL_SaveEditor
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.valu_hairstyle = New System.Windows.Forms.NumericUpDown()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Select_hairstyle = New System.Windows.Forms.ComboBox()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.Icon_hairstyle = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.valu_crcxmodem = New System.Windows.Forms.NumericUpDown()
         Me.Text_Mii = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel46 = New System.Windows.Forms.Panel()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Text_TLMiisysID = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel47 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Text_MiisysID = New System.Windows.Forms.TextBox()
         Me.Panel43 = New System.Windows.Forms.Panel()
         Me.Text_wrinkles = New System.Windows.Forms.TextBox()
         Me.Select_wrinkles = New System.Windows.Forms.ComboBox()
@@ -436,15 +437,9 @@ Partial Class TL_SaveEditor
         Me.Title_faceshape = New System.Windows.Forms.Label()
         Me.Title_skincolor = New System.Windows.Forms.Label()
         Me.Text_binarysharing = New System.Windows.Forms.TextBox()
-        Me.Text_datawrinkles = New System.Windows.Forms.TextBox()
         Me.Text_binarywrinkles = New System.Windows.Forms.TextBox()
+        Me.Text_datawrinkles = New System.Windows.Forms.TextBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.valu_favcolor = New System.Windows.Forms.NumericUpDown()
-        Me.Text_unknowfavcolor3 = New System.Windows.Forms.TextBox()
-        Me.Text_unknowfavcolor2 = New System.Windows.Forms.TextBox()
-        Me.Text_unknowfavcolor1 = New System.Windows.Forms.TextBox()
-        Me.Text_binaryfavcolor = New System.Windows.Forms.TextBox()
-        Me.Text_favcolor = New System.Windows.Forms.TextBox()
         Me.Panel_edit_favcolor = New System.Windows.Forms.Panel()
         Me.AdvH_editfavcolor = New System.Windows.Forms.PictureBox()
         Me.Icon_editcolor_violet = New System.Windows.Forms.PictureBox()
@@ -459,6 +454,11 @@ Partial Class TL_SaveEditor
         Me.Icon_editcolor_white = New System.Windows.Forms.PictureBox()
         Me.Icon_editcolor_orange = New System.Windows.Forms.PictureBox()
         Me.Icon_editcolor_green = New System.Windows.Forms.PictureBox()
+        Me.Text_unknowfavcolor3 = New System.Windows.Forms.TextBox()
+        Me.Text_unknowfavcolor2 = New System.Windows.Forms.TextBox()
+        Me.Text_unknowfavcolor1 = New System.Windows.Forms.TextBox()
+        Me.Text_binaryfavcolor = New System.Windows.Forms.TextBox()
+        Me.Text_favcolor = New System.Windows.Forms.TextBox()
         Me.Text_datafavcolor = New System.Windows.Forms.TextBox()
         Me.Icon_mii_gender = New System.Windows.Forms.PictureBox()
         Me.AdvH_miigender = New System.Windows.Forms.PictureBox()
@@ -1710,6 +1710,7 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_description, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_done.SuspendLayout
         Me.Panel_islandedit.SuspendLayout
+        CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_addsymb_islandname.SuspendLayout
         Me.Panel_spesymb_islandname_cancel.SuspendLayout
         Me.Panel_spesymb_islandname_add.SuspendLayout
@@ -1910,7 +1911,7 @@ Partial Class TL_SaveEditor
         Me.Panel12.SuspendLayout
         CType(Me.valu_hairstyle, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_hairstyle, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_crcxmodem, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel46.SuspendLayout
         Me.Panel47.SuspendLayout
@@ -1932,7 +1933,6 @@ Partial Class TL_SaveEditor
         CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_faceshape, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TabPage2.SuspendLayout
-        CType(Me.valu_favcolor, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_edit_favcolor.SuspendLayout
         CType(Me.AdvH_editfavcolor, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_editcolor_violet, System.ComponentModel.ISupportInitialize).BeginInit
@@ -3415,6 +3415,7 @@ Partial Class TL_SaveEditor
         'Panel_islandedit
         '
         Me.Panel_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_islandedit.Controls.Add(Me.valu_lastmii)
         Me.Panel_islandedit.Controls.Add(Me.Panel_addsymb_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Warning_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Addsymbol_pronun_island)
@@ -3479,6 +3480,16 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Name = "Panel_islandedit"
         Me.Panel_islandedit.Size = New System.Drawing.Size(676, 540)
         Me.Panel_islandedit.TabIndex = 30
+        '
+        'valu_lastmii
+        '
+        Me.valu_lastmii.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_lastmii.Location = New System.Drawing.Point(615, 522)
+        Me.valu_lastmii.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_lastmii.Name = "valu_lastmii"
+        Me.valu_lastmii.Size = New System.Drawing.Size(58, 16)
+        Me.valu_lastmii.TabIndex = 230
+        Me.valu_lastmii.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel_addsymb_islandname
         '
@@ -7016,7 +7027,7 @@ Partial Class TL_SaveEditor
         Me.TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), System.Drawing.Image)
         Me.TabPage1.Controls.Add(Me.Panel12)
         Me.TabPage1.Controls.Add(Me.PictureBox23)
-        Me.TabPage1.Controls.Add(Me.PictureBox26)
+        Me.TabPage1.Controls.Add(Me.Icon_hairstyle)
         Me.TabPage1.Controls.Add(Me.Label13)
         Me.TabPage1.Controls.Add(Me.valu_crcxmodem)
         Me.TabPage1.Controls.Add(Me.Text_Mii)
@@ -7055,7 +7066,7 @@ Partial Class TL_SaveEditor
         '
         Me.Panel12.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel12.Controls.Add(Me.valu_hairstyle)
-        Me.Panel12.Controls.Add(Me.ComboBox1)
+        Me.Panel12.Controls.Add(Me.Select_hairstyle)
         Me.Panel12.Location = New System.Drawing.Point(180, 301)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(118, 25)
@@ -7071,18 +7082,18 @@ Partial Class TL_SaveEditor
         Me.valu_hairstyle.TabIndex = 294
         Me.valu_hairstyle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'ComboBox1
+        'Select_hairstyle
         '
-        Me.ComboBox1.BackColor = System.Drawing.SystemColors.Window
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.Enabled = False
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Hair style 1", "Hair style 2", "Hair style 3", "Hair style 4", "Hair style 5", "Hair style 6", "Hair style 7", "Hair style 8", "Hair style 9", "Hair style 10", "Hair style 11", "Hair style 12", "Hair style 13", "Hair style 14", "Hair style 15", "Hair style 16", "Hair style 17", "Hair style 18", "Hair style 19", "Hair style 20", "Hair style 21", "Hair style 22", "Hair style 23", "Hair style 24", "Hair style 25", "Hair style 26", "Hair style 27", "Hair style 28", "Hair style 29", "Hair style 30", "Hair style 31", "Hair style 32", "Hair style 33", "Hair style 34", "Hair style 35", "Hair style 36", "Hair style 37", "Hair style 38", "Hair style 39", "Hair style 40", "Hair style 41", "Hair style 42", "Hair style 43", "Hair style 44", "Hair style 45", "Hair style 46", "Hair style 47", "Hair style 48", "Hair style 49", "Hair style 50", "Hair style 51", "Hair style 52", "Hair style 53", "Hair style 54", "Hair style 55", "Hair style 56", "Hair style 57", "Hair style 58", "Hair style 59", "Hair style 60", "Hair style 61", "Hair style 62", "Hair style 63", "Hair style 64", "Hair style 65", "Hair style 66", "Hair style 67", "Hair style 68", "Hair style 69", "Hair style 70", "Hair style 71", "Hair style 72", "Hair style 73", "Hair style 74", "Hair style 75", "Hair style 76", "Hair style 77", "Hair style 78", "Hair style 79", "Hair style 80", "Hair style 81", "Hair style 82", "Hair style 83", "Hair style 84", "Hair style 85", "Hair style 86", "Hair style 87", "Hair style 88", "Hair style 89", "Hair style 90", "Hair style 91", "Hair style 92", "Hair style 93", "Hair style 94", "Hair style 95", "Hair style 96", "Hair style 97", "Hair style 98", "Hair style 99", "Hair style 100", "Hair style 101", "Hair style 102", "Hair style 103", "Hair style 104", "Hair style 105", "Hair style 106", "Hair style 107", "Hair style 108", "Hair style 109", "Hair style 110", "Hair style 111", "Hair style 112", "Hair style 113", "Hair style 114", "Hair style 115", "Hair style 116", "Hair style 117", "Hair style 118", "Hair style 119", "Hair style 120", "Hair style 121", "Hair style 122", "Hair style 123", "Hair style 124", "Hair style 125", "Hair style 126", "Hair style 127", "Hair style 128", "Hair style 129", "Hair style 130", "Hair style 131", "Hair style 132"})
-        Me.ComboBox1.Location = New System.Drawing.Point(2, 2)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(114, 21)
-        Me.ComboBox1.TabIndex = 113
+        Me.Select_hairstyle.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_hairstyle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_hairstyle.Enabled = False
+        Me.Select_hairstyle.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_hairstyle.FormattingEnabled = True
+        Me.Select_hairstyle.Items.AddRange(New Object() {"Hair style 1", "Hair style 2", "Hair style 3", "Hair style 4", "Hair style 5", "Hair style 6", "Hair style 7", "Hair style 8", "Hair style 9", "Hair style 10", "Hair style 11", "Hair style 12", "Hair style 13", "Hair style 14", "Hair style 15", "Hair style 16", "Hair style 17", "Hair style 18", "Hair style 19", "Hair style 20", "Hair style 21", "Hair style 22", "Hair style 23", "Hair style 24", "Hair style 25", "Hair style 26", "Hair style 27", "Hair style 28", "Hair style 29", "Hair style 30", "Hair style 31", "Hair style 32", "Hair style 33", "Hair style 34", "Hair style 35", "Hair style 36", "Hair style 37", "Hair style 38", "Hair style 39", "Hair style 40", "Hair style 41", "Hair style 42", "Hair style 43", "Hair style 44", "Hair style 45", "Hair style 46", "Hair style 47", "Hair style 48", "Hair style 49", "Hair style 50", "Hair style 51", "Hair style 52", "Hair style 53", "Hair style 54", "Hair style 55", "Hair style 56", "Hair style 57", "Hair style 58", "Hair style 59", "Hair style 60", "Hair style 61", "Hair style 62", "Hair style 63", "Hair style 64", "Hair style 65", "Hair style 66", "Hair style 67", "Hair style 68", "Hair style 69", "Hair style 70", "Hair style 71", "Hair style 72", "Hair style 73", "Hair style 74", "Hair style 75", "Hair style 76", "Hair style 77", "Hair style 78", "Hair style 79", "Hair style 80", "Hair style 81", "Hair style 82", "Hair style 83", "Hair style 84", "Hair style 85", "Hair style 86", "Hair style 87", "Hair style 88", "Hair style 89", "Hair style 90", "Hair style 91", "Hair style 92", "Hair style 93", "Hair style 94", "Hair style 95", "Hair style 96", "Hair style 97", "Hair style 98", "Hair style 99", "Hair style 100", "Hair style 101", "Hair style 102", "Hair style 103", "Hair style 104", "Hair style 105", "Hair style 106", "Hair style 107", "Hair style 108", "Hair style 109", "Hair style 110", "Hair style 111", "Hair style 112", "Hair style 113", "Hair style 114", "Hair style 115", "Hair style 116", "Hair style 117", "Hair style 118", "Hair style 119", "Hair style 120", "Hair style 121", "Hair style 122", "Hair style 123", "Hair style 124", "Hair style 125", "Hair style 126", "Hair style 127", "Hair style 128", "Hair style 129", "Hair style 130", "Hair style 131", "Hair style 132"})
+        Me.Select_hairstyle.Location = New System.Drawing.Point(2, 2)
+        Me.Select_hairstyle.Name = "Select_hairstyle"
+        Me.Select_hairstyle.Size = New System.Drawing.Size(114, 21)
+        Me.Select_hairstyle.TabIndex = 113
         '
         'PictureBox23
         '
@@ -7096,15 +7107,15 @@ Partial Class TL_SaveEditor
         Me.PictureBox23.TabStop = False
         Me.PictureBox23.Visible = False
         '
-        'PictureBox26
+        'Icon_hairstyle
         '
-        Me.PictureBox26.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.wrinkles_1
-        Me.PictureBox26.Location = New System.Drawing.Point(141, 298)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(38, 31)
-        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox26.TabIndex = 296
-        Me.PictureBox26.TabStop = False
+        Me.Icon_hairstyle.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.wrinkles_1
+        Me.Icon_hairstyle.Location = New System.Drawing.Point(141, 298)
+        Me.Icon_hairstyle.Name = "Icon_hairstyle"
+        Me.Icon_hairstyle.Size = New System.Drawing.Size(38, 31)
+        Me.Icon_hairstyle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_hairstyle.TabIndex = 296
+        Me.Icon_hairstyle.TabStop = False
         '
         'Label13
         '
@@ -7149,21 +7160,21 @@ Partial Class TL_SaveEditor
         'Panel46
         '
         Me.Panel46.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel46.Controls.Add(Me.TextBox2)
+        Me.Panel46.Controls.Add(Me.Text_TLMiisysID)
         Me.Panel46.Location = New System.Drawing.Point(352, 353)
         Me.Panel46.Name = "Panel46"
         Me.Panel46.Size = New System.Drawing.Size(126, 17)
         Me.Panel46.TabIndex = 290
         '
-        'TextBox2
+        'Text_TLMiisysID
         '
-        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Location = New System.Drawing.Point(2, 2)
-        Me.TextBox2.MaxLength = 15
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(122, 13)
-        Me.TextBox2.TabIndex = 101
-        Me.TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_TLMiisysID.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_TLMiisysID.Location = New System.Drawing.Point(2, 2)
+        Me.Text_TLMiisysID.MaxLength = 16
+        Me.Text_TLMiisysID.Name = "Text_TLMiisysID"
+        Me.Text_TLMiisysID.Size = New System.Drawing.Size(122, 13)
+        Me.Text_TLMiisysID.TabIndex = 101
+        Me.Text_TLMiisysID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label5
         '
@@ -7177,21 +7188,21 @@ Partial Class TL_SaveEditor
         'Panel47
         '
         Me.Panel47.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel47.Controls.Add(Me.TextBox1)
+        Me.Panel47.Controls.Add(Me.Text_MiisysID)
         Me.Panel47.Location = New System.Drawing.Point(350, 298)
         Me.Panel47.Name = "Panel47"
         Me.Panel47.Size = New System.Drawing.Size(126, 17)
         Me.Panel47.TabIndex = 288
         '
-        'TextBox1
+        'Text_MiisysID
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(2, 2)
-        Me.TextBox1.MaxLength = 15
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(122, 13)
-        Me.TextBox1.TabIndex = 101
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_MiisysID.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_MiisysID.Location = New System.Drawing.Point(2, 2)
+        Me.Text_MiisysID.MaxLength = 16
+        Me.Text_MiisysID.Name = "Text_MiisysID"
+        Me.Text_MiisysID.Size = New System.Drawing.Size(122, 13)
+        Me.Text_MiisysID.TabIndex = 101
+        Me.Text_MiisysID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel43
         '
@@ -7353,6 +7364,7 @@ Partial Class TL_SaveEditor
         Me.Text_skincolor.Size = New System.Drawing.Size(35, 13)
         Me.Text_skincolor.TabIndex = 84
         Me.Text_skincolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_skincolor.Visible = False
         '
         'Icon_skincolor_6
         '
@@ -7432,6 +7444,7 @@ Partial Class TL_SaveEditor
         Me.Text_faceshape.Size = New System.Drawing.Size(60, 13)
         Me.Text_faceshape.TabIndex = 85
         Me.Text_faceshape.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_faceshape.Visible = False
         '
         'Select_faceshape
         '
@@ -7494,6 +7507,17 @@ Partial Class TL_SaveEditor
         Me.Text_binarysharing.Size = New System.Drawing.Size(164, 13)
         Me.Text_binarysharing.TabIndex = 268
         Me.Text_binarysharing.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_binarysharing.Visible = False
+        '
+        'Text_binarywrinkles
+        '
+        Me.Text_binarywrinkles.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_binarywrinkles.Location = New System.Drawing.Point(160, 139)
+        Me.Text_binarywrinkles.Name = "Text_binarywrinkles"
+        Me.Text_binarywrinkles.Size = New System.Drawing.Size(164, 13)
+        Me.Text_binarywrinkles.TabIndex = 272
+        Me.Text_binarywrinkles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_binarywrinkles.Visible = False
         '
         'Text_datawrinkles
         '
@@ -7506,26 +7530,15 @@ Partial Class TL_SaveEditor
         Me.Text_datawrinkles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.Text_datawrinkles.Visible = False
         '
-        'Text_binarywrinkles
-        '
-        Me.Text_binarywrinkles.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_binarywrinkles.Location = New System.Drawing.Point(160, 139)
-        Me.Text_binarywrinkles.Name = "Text_binarywrinkles"
-        Me.Text_binarywrinkles.Size = New System.Drawing.Size(164, 13)
-        Me.Text_binarywrinkles.TabIndex = 272
-        Me.Text_binarywrinkles.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.Text_binarywrinkles.Visible = False
-        '
         'TabPage2
         '
         Me.TabPage2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
-        Me.TabPage2.Controls.Add(Me.valu_favcolor)
+        Me.TabPage2.Controls.Add(Me.Panel_edit_favcolor)
         Me.TabPage2.Controls.Add(Me.Text_unknowfavcolor3)
         Me.TabPage2.Controls.Add(Me.Text_unknowfavcolor2)
         Me.TabPage2.Controls.Add(Me.Text_unknowfavcolor1)
         Me.TabPage2.Controls.Add(Me.Text_binaryfavcolor)
         Me.TabPage2.Controls.Add(Me.Text_favcolor)
-        Me.TabPage2.Controls.Add(Me.Panel_edit_favcolor)
         Me.TabPage2.Controls.Add(Me.Text_datafavcolor)
         Me.TabPage2.Controls.Add(Me.Icon_mii_gender)
         Me.TabPage2.Controls.Add(Me.AdvH_miigender)
@@ -7593,63 +7606,6 @@ Partial Class TL_SaveEditor
         Me.TabPage2.ToolTipText = "Mii profile"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
-        'valu_favcolor
-        '
-        Me.valu_favcolor.Location = New System.Drawing.Point(518, 237)
-        Me.valu_favcolor.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_favcolor.Name = "valu_favcolor"
-        Me.valu_favcolor.Size = New System.Drawing.Size(120, 20)
-        Me.valu_favcolor.TabIndex = 325
-        '
-        'Text_unknowfavcolor3
-        '
-        Me.Text_unknowfavcolor3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_unknowfavcolor3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.Text_unknowfavcolor3.Location = New System.Drawing.Point(595, 291)
-        Me.Text_unknowfavcolor3.Name = "Text_unknowfavcolor3"
-        Me.Text_unknowfavcolor3.Size = New System.Drawing.Size(47, 13)
-        Me.Text_unknowfavcolor3.TabIndex = 324
-        Me.Text_unknowfavcolor3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Text_unknowfavcolor2
-        '
-        Me.Text_unknowfavcolor2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_unknowfavcolor2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.Text_unknowfavcolor2.Location = New System.Drawing.Point(542, 291)
-        Me.Text_unknowfavcolor2.Name = "Text_unknowfavcolor2"
-        Me.Text_unknowfavcolor2.Size = New System.Drawing.Size(47, 13)
-        Me.Text_unknowfavcolor2.TabIndex = 323
-        Me.Text_unknowfavcolor2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Text_unknowfavcolor1
-        '
-        Me.Text_unknowfavcolor1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_unknowfavcolor1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.Text_unknowfavcolor1.Location = New System.Drawing.Point(489, 291)
-        Me.Text_unknowfavcolor1.Name = "Text_unknowfavcolor1"
-        Me.Text_unknowfavcolor1.Size = New System.Drawing.Size(47, 13)
-        Me.Text_unknowfavcolor1.TabIndex = 322
-        Me.Text_unknowfavcolor1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Text_binaryfavcolor
-        '
-        Me.Text_binaryfavcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_binaryfavcolor.Location = New System.Drawing.Point(405, 272)
-        Me.Text_binaryfavcolor.Name = "Text_binaryfavcolor"
-        Me.Text_binaryfavcolor.Size = New System.Drawing.Size(164, 13)
-        Me.Text_binaryfavcolor.TabIndex = 321
-        Me.Text_binaryfavcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Text_favcolor
-        '
-        Me.Text_favcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_favcolor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.Text_favcolor.Location = New System.Drawing.Point(378, 254)
-        Me.Text_favcolor.Name = "Text_favcolor"
-        Me.Text_favcolor.Size = New System.Drawing.Size(42, 13)
-        Me.Text_favcolor.TabIndex = 319
-        Me.Text_favcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'Panel_edit_favcolor
         '
         Me.Panel_edit_favcolor.BackColor = System.Drawing.Color.Azure
@@ -7666,7 +7622,7 @@ Partial Class TL_SaveEditor
         Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_white)
         Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_orange)
         Me.Panel_edit_favcolor.Controls.Add(Me.Icon_editcolor_green)
-        Me.Panel_edit_favcolor.Location = New System.Drawing.Point(6, 337)
+        Me.Panel_edit_favcolor.Location = New System.Drawing.Point(346, 226)
         Me.Panel_edit_favcolor.Name = "Panel_edit_favcolor"
         Me.Panel_edit_favcolor.Size = New System.Drawing.Size(201, 152)
         Me.Panel_edit_favcolor.TabIndex = 318
@@ -7804,6 +7760,60 @@ Partial Class TL_SaveEditor
         Me.Icon_editcolor_green.TabIndex = 270
         Me.Icon_editcolor_green.TabStop = False
         '
+        'Text_unknowfavcolor3
+        '
+        Me.Text_unknowfavcolor3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_unknowfavcolor3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.Text_unknowfavcolor3.Location = New System.Drawing.Point(595, 291)
+        Me.Text_unknowfavcolor3.Name = "Text_unknowfavcolor3"
+        Me.Text_unknowfavcolor3.Size = New System.Drawing.Size(47, 13)
+        Me.Text_unknowfavcolor3.TabIndex = 324
+        Me.Text_unknowfavcolor3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_unknowfavcolor3.Visible = False
+        '
+        'Text_unknowfavcolor2
+        '
+        Me.Text_unknowfavcolor2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_unknowfavcolor2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.Text_unknowfavcolor2.Location = New System.Drawing.Point(542, 291)
+        Me.Text_unknowfavcolor2.Name = "Text_unknowfavcolor2"
+        Me.Text_unknowfavcolor2.Size = New System.Drawing.Size(47, 13)
+        Me.Text_unknowfavcolor2.TabIndex = 323
+        Me.Text_unknowfavcolor2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_unknowfavcolor2.Visible = False
+        '
+        'Text_unknowfavcolor1
+        '
+        Me.Text_unknowfavcolor1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_unknowfavcolor1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.Text_unknowfavcolor1.Location = New System.Drawing.Point(489, 291)
+        Me.Text_unknowfavcolor1.Name = "Text_unknowfavcolor1"
+        Me.Text_unknowfavcolor1.Size = New System.Drawing.Size(47, 13)
+        Me.Text_unknowfavcolor1.TabIndex = 322
+        Me.Text_unknowfavcolor1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_unknowfavcolor1.Visible = False
+        '
+        'Text_binaryfavcolor
+        '
+        Me.Text_binaryfavcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_binaryfavcolor.Location = New System.Drawing.Point(405, 272)
+        Me.Text_binaryfavcolor.Name = "Text_binaryfavcolor"
+        Me.Text_binaryfavcolor.Size = New System.Drawing.Size(164, 13)
+        Me.Text_binaryfavcolor.TabIndex = 321
+        Me.Text_binaryfavcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_binaryfavcolor.Visible = False
+        '
+        'Text_favcolor
+        '
+        Me.Text_favcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_favcolor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.Text_favcolor.Location = New System.Drawing.Point(378, 254)
+        Me.Text_favcolor.Name = "Text_favcolor"
+        Me.Text_favcolor.Size = New System.Drawing.Size(42, 13)
+        Me.Text_favcolor.TabIndex = 319
+        Me.Text_favcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_favcolor.Visible = False
+        '
         'Text_datafavcolor
         '
         Me.Text_datafavcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -7813,6 +7823,7 @@ Partial Class TL_SaveEditor
         Me.Text_datafavcolor.Size = New System.Drawing.Size(47, 13)
         Me.Text_datafavcolor.TabIndex = 320
         Me.Text_datafavcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_datafavcolor.Visible = False
         '
         'Icon_mii_gender
         '
@@ -8401,8 +8412,6 @@ Partial Class TL_SaveEditor
         Me.valu_copying.Size = New System.Drawing.Size(38, 16)
         Me.valu_copying.TabIndex = 130
         Me.valu_copying.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_copying.Value = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.valu_copying.Visible = False
         '
         'Select_copying
         '
@@ -13763,6 +13772,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_interaction_j.BackColor = System.Drawing.SystemColors.Window
         Me.Select_interaction_j.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_interaction_j.Enabled = False
         Me.Select_interaction_j.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_interaction_j.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Select_interaction_j.FormattingEnabled = True
@@ -14289,6 +14299,7 @@ Partial Class TL_SaveEditor
         '
         Me.Button_setallrelation.BackColor = System.Drawing.Color.White
         Me.Button_setallrelation.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button_setallrelation.Enabled = False
         Me.Button_setallrelation.FlatAppearance.BorderSize = 0
         Me.Button_setallrelation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange
         Me.Button_setallrelation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Bisque
@@ -22650,7 +22661,6 @@ Partial Class TL_SaveEditor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -22664,6 +22674,7 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_islandedit)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -22723,6 +22734,7 @@ Partial Class TL_SaveEditor
         Me.Panel_done.ResumeLayout(False)
         Me.Panel_islandedit.ResumeLayout(False)
         Me.Panel_islandedit.PerformLayout
+        CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_addsymb_islandname.ResumeLayout(False)
         Me.Panel_addsymb_islandname.PerformLayout
         Me.Panel_spesymb_islandname_cancel.ResumeLayout(False)
@@ -22942,7 +22954,7 @@ Partial Class TL_SaveEditor
         Me.Panel12.ResumeLayout(False)
         CType(Me.valu_hairstyle, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_hairstyle, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_crcxmodem, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel46.ResumeLayout(False)
         Me.Panel46.PerformLayout
@@ -22971,7 +22983,6 @@ Partial Class TL_SaveEditor
         CType(Me.Icon_faceshape, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout
-        CType(Me.valu_favcolor, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_edit_favcolor.ResumeLayout(False)
         CType(Me.AdvH_editfavcolor, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_editcolor_violet, System.ComponentModel.ISupportInitialize).EndInit
@@ -24152,10 +24163,10 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_Mii As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel46 As Panel
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Text_TLMiisysID As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel47 As Panel
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Text_MiisysID As TextBox
     Friend WithEvents Panel43 As Panel
     Friend WithEvents Text_wrinkles As TextBox
     Friend WithEvents Select_wrinkles As ComboBox
@@ -25247,14 +25258,14 @@ Partial Class TL_SaveEditor
     Friend WithEvents Select_interaction_j As ComboBox
     Friend WithEvents Panel12 As Panel
     Friend WithEvents valu_hairstyle As NumericUpDown
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Select_hairstyle As ComboBox
     Friend WithEvents PictureBox23 As PictureBox
-    Friend WithEvents PictureBox26 As PictureBox
+    Friend WithEvents Icon_hairstyle As PictureBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Text_datafavcolor As TextBox
     Friend WithEvents Text_binaryfavcolor As TextBox
     Friend WithEvents Text_unknowfavcolor2 As TextBox
     Friend WithEvents Text_unknowfavcolor1 As TextBox
     Friend WithEvents Text_unknowfavcolor3 As TextBox
-    Friend WithEvents valu_favcolor As NumericUpDown
+    Friend WithEvents valu_lastmii As NumericUpDown
 End Class
