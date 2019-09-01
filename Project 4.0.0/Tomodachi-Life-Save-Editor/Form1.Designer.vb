@@ -394,13 +394,13 @@ Partial Class TL_SaveEditor
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TabControl_Mii = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Text_crcxmodem = New System.Windows.Forms.TextBox()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.valu_hairstyle = New System.Windows.Forms.NumericUpDown()
         Me.Select_hairstyle = New System.Windows.Forms.ComboBox()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
         Me.Icon_hairstyle = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.valu_crcxmodem = New System.Windows.Forms.NumericUpDown()
         Me.Text_Mii = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel46 = New System.Windows.Forms.Panel()
@@ -1348,6 +1348,7 @@ Partial Class TL_SaveEditor
         Me.Select_friend_rela_29 = New System.Windows.Forms.ComboBox()
         Me.Select_friend_rela_30 = New System.Windows.Forms.ComboBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.Textval_economy = New System.Windows.Forms.TextBox()
         Me.Panel_edit_haircolor = New System.Windows.Forms.Panel()
         Me.AdvH_edithaircolor = New System.Windows.Forms.PictureBox()
         Me.color_empty = New System.Windows.Forms.Label()
@@ -1912,7 +1913,6 @@ Partial Class TL_SaveEditor
         CType(Me.valu_hairstyle, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_hairstyle, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.valu_crcxmodem, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel46.SuspendLayout
         Me.Panel47.SuspendLayout
         Me.Panel43.SuspendLayout
@@ -3490,6 +3490,8 @@ Partial Class TL_SaveEditor
         Me.valu_lastmii.Size = New System.Drawing.Size(58, 16)
         Me.valu_lastmii.TabIndex = 230
         Me.valu_lastmii.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_lastmii.Value = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_lastmii.Visible = False
         '
         'Panel_addsymb_islandname
         '
@@ -5475,7 +5477,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0 Gamma"
+        Me.Text_TLSE_version.Text = "Version 4.0.0 Delta"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7025,11 +7027,11 @@ Partial Class TL_SaveEditor
         'TabPage1
         '
         Me.TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage1.Controls.Add(Me.Text_crcxmodem)
         Me.TabPage1.Controls.Add(Me.Panel12)
         Me.TabPage1.Controls.Add(Me.PictureBox23)
         Me.TabPage1.Controls.Add(Me.Icon_hairstyle)
         Me.TabPage1.Controls.Add(Me.Label13)
-        Me.TabPage1.Controls.Add(Me.valu_crcxmodem)
         Me.TabPage1.Controls.Add(Me.Text_Mii)
         Me.TabPage1.Controls.Add(Me.Label3)
         Me.TabPage1.Controls.Add(Me.Panel46)
@@ -7061,6 +7063,15 @@ Partial Class TL_SaveEditor
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.ToolTipText = "Mii face and body"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Text_crcxmodem
+        '
+        Me.Text_crcxmodem.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_crcxmodem.Location = New System.Drawing.Point(552, 139)
+        Me.Text_crcxmodem.Name = "Text_crcxmodem"
+        Me.Text_crcxmodem.Size = New System.Drawing.Size(89, 13)
+        Me.Text_crcxmodem.TabIndex = 299
+        Me.Text_crcxmodem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel12
         '
@@ -7126,18 +7137,6 @@ Partial Class TL_SaveEditor
         Me.Label13.Text = "Hair style"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'valu_crcxmodem
-        '
-        Me.valu_crcxmodem.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_crcxmodem.Hexadecimal = True
-        Me.valu_crcxmodem.Location = New System.Drawing.Point(550, 139)
-        Me.valu_crcxmodem.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_crcxmodem.Name = "valu_crcxmodem"
-        Me.valu_crcxmodem.Size = New System.Drawing.Size(91, 16)
-        Me.valu_crcxmodem.TabIndex = 293
-        Me.valu_crcxmodem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_crcxmodem.Visible = False
-        '
         'Text_Mii
         '
         Me.Text_Mii.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -7146,7 +7145,6 @@ Partial Class TL_SaveEditor
         Me.Text_Mii.Name = "Text_Mii"
         Me.Text_Mii.Size = New System.Drawing.Size(297, 104)
         Me.Text_Mii.TabIndex = 292
-        Me.Text_Mii.Visible = False
         '
         'Label3
         '
@@ -13744,7 +13742,6 @@ Partial Class TL_SaveEditor
         Me.valu_interaction.Size = New System.Drawing.Size(86, 16)
         Me.valu_interaction.TabIndex = 187
         Me.valu_interaction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_interaction.Visible = False
         '
         'Select_interaction
         '
@@ -13790,6 +13787,7 @@ Partial Class TL_SaveEditor
         Me.Select_interaction_j.Name = "Select_interaction_j"
         Me.Select_interaction_j.Size = New System.Drawing.Size(437, 21)
         Me.Select_interaction_j.TabIndex = 188
+        Me.Select_interaction_j.Visible = False
         '
         'Panel_target1_foods
         '
@@ -14299,7 +14297,6 @@ Partial Class TL_SaveEditor
         '
         Me.Button_setallrelation.BackColor = System.Drawing.Color.White
         Me.Button_setallrelation.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button_setallrelation.Enabled = False
         Me.Button_setallrelation.FlatAppearance.BorderSize = 0
         Me.Button_setallrelation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange
         Me.Button_setallrelation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Bisque
@@ -19092,6 +19089,7 @@ Partial Class TL_SaveEditor
         'TabPage5
         '
         Me.TabPage5.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.TabPage5.Controls.Add(Me.Textval_economy)
         Me.TabPage5.Controls.Add(Me.Panel_edit_haircolor)
         Me.TabPage5.Controls.Add(Me.PictureBox22)
         Me.TabPage5.Controls.Add(Me.Panel48)
@@ -19146,6 +19144,15 @@ Partial Class TL_SaveEditor
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.ToolTipText = "Mii equipment and inventory"
         Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'Textval_economy
+        '
+        Me.Textval_economy.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Textval_economy.Location = New System.Drawing.Point(476, 417)
+        Me.Textval_economy.Name = "Textval_economy"
+        Me.Textval_economy.Size = New System.Drawing.Size(71, 13)
+        Me.Textval_economy.TabIndex = 296
+        Me.Textval_economy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Panel_edit_haircolor
         '
@@ -20730,7 +20737,7 @@ Partial Class TL_SaveEditor
         '
         Me.PictureBox29.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox29.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox29.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_mii
+        Me.PictureBox29.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_menu_items
         Me.PictureBox29.Location = New System.Drawing.Point(1, 2)
         Me.PictureBox29.Name = "PictureBox29"
         Me.PictureBox29.Size = New System.Drawing.Size(25, 25)
@@ -20766,7 +20773,7 @@ Partial Class TL_SaveEditor
         '
         Me.PictureBox30.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox30.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox30.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_traveler
+        Me.PictureBox30.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_menu_exitems
         Me.PictureBox30.Location = New System.Drawing.Point(1, 2)
         Me.PictureBox30.Name = "PictureBox30"
         Me.PictureBox30.Size = New System.Drawing.Size(25, 25)
@@ -22661,6 +22668,7 @@ Partial Class TL_SaveEditor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -22671,10 +22679,9 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.Panel_concertedit)
         Me.Controls.Add(Me.Panel_repairsave)
-        Me.Controls.Add(Me.Panel_itemsedit)
-        Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_islandedit)
-        Me.Controls.Add(Me.Panel_miiedit)
+        Me.Controls.Add(Me.Panel_extras)
+        Me.Controls.Add(Me.Panel_itemsedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -22955,7 +22962,6 @@ Partial Class TL_SaveEditor
         CType(Me.valu_hairstyle, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_hairstyle, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.valu_crcxmodem, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel46.ResumeLayout(False)
         Me.Panel46.PerformLayout
         Me.Panel47.ResumeLayout(False)
@@ -23385,6 +23391,7 @@ Partial Class TL_SaveEditor
         CType(Me.valu_friend_rela_45, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_friend_rela_44, System.ComponentModel.ISupportInitialize).EndInit
         Me.TabPage5.ResumeLayout(False)
+        Me.TabPage5.PerformLayout
         Me.Panel_edit_haircolor.ResumeLayout(False)
         Me.Panel_edit_haircolor.PerformLayout
         CType(Me.AdvH_edithaircolor, System.ComponentModel.ISupportInitialize).EndInit
@@ -24159,7 +24166,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents TabControl_Mii As TabControl
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents valu_crcxmodem As NumericUpDown
     Friend WithEvents Text_Mii As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Panel46 As Panel
@@ -25268,4 +25274,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_unknowfavcolor1 As TextBox
     Friend WithEvents Text_unknowfavcolor3 As TextBox
     Friend WithEvents valu_lastmii As NumericUpDown
+    Friend WithEvents Textval_economy As TextBox
+    Friend WithEvents Text_crcxmodem As TextBox
 End Class

@@ -597,8 +597,9 @@ Public Class TL_SaveEditor
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
             Menu_concertedit.Visible = True
-            Select_interaction.Visible = True
-            Select_interaction_j.Visible = False
+            Select_interaction.Visible = False
+            'Select_interaction_j.Visible = False
+            valu_interaction.Visible = True
         ElseIf Filever_text.Text = "EU" Then
             TLSE_logo.Image = My.Resources.logo_EU
             TLSE_logo_update.Image = My.Resources.logo_EU_update
@@ -609,7 +610,8 @@ Public Class TL_SaveEditor
             Icon_part.Enabled = True
             Menu_concertedit.Visible = True
             Select_interaction.Visible = True
-            Select_interaction_j.Visible = False
+            'Select_interaction_j.Visible = False
+            'valu_interaction.Visible = False
         ElseIf Filever_text.Text = "JP" Then
             TLSE_logo.Image = My.Resources.logo_JP
             TLSE_logo_update.Image = My.Resources.logo_JP_update
@@ -620,7 +622,8 @@ Public Class TL_SaveEditor
             Icon_part.Enabled = False
             Menu_concertedit.Visible = False
             Select_interaction.Visible = False
-            Select_interaction_j.Visible = True
+            'Select_interaction_j.Visible = True
+            valu_interaction.Visible = True
         ElseIf Filever_text.Text = "KR" Then
             TLSE_logo.Image = My.Resources.logo_KR
             TLSE_logo_update.Image = My.Resources.logo_KR_update
@@ -630,8 +633,9 @@ Public Class TL_SaveEditor
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
             Menu_concertedit.Visible = False
-            Select_interaction.Visible = True
-            Select_interaction_j.Visible = False
+            Select_interaction.Visible = False
+            'Select_interaction_j.Visible = False
+            valu_interaction.Visible = True
         ElseIf Filever_text.Text = "" Then
             TLSE_logo.Image = My.Resources.logo_US
             TLSE_logo_update.Image = My.Resources.logo_US_update
@@ -641,8 +645,9 @@ Public Class TL_SaveEditor
             Icon_tour.Enabled = True
             Icon_part.Enabled = True
             Menu_concertedit.Visible = True
-            Select_interaction.Visible = True
-            Select_interaction_j.Visible = False
+            Select_interaction.Visible = False
+            'Select_interaction_j.Visible = False
+            valu_interaction.Visible = True
         End If
     End Sub
     'end form setting
@@ -4238,6 +4243,20 @@ Public Class TL_SaveEditor
             Text_done.Text = "File saved !"
         ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
             Text_done.Text = "Fichier sauvegardé !"
+        End If
+    End Sub
+
+    Private Sub valu_lastmii_ValueChanged(sender As Object, e As EventArgs) Handles valu_lastmii.ValueChanged
+        If valu_lastmii.Value = 1 Then
+            Button_setallrelation.Enabled = True
+            Check_resetmiiapart.Enabled = True
+            Check_resetrelationship.Enabled = True
+            Check_setalltummy.Enabled = True
+        Else
+            Button_setallrelation.Enabled = False
+            Check_resetmiiapart.Enabled = False
+            Check_resetrelationship.Enabled = False
+            Check_setalltummy.Enabled = False
         End If
     End Sub
     'end save savedataArc
@@ -12473,7 +12492,7 @@ Public Class TL_SaveEditor
             Mergebinaryfavcolor()
             Mergebinarysharing()
             Mergebinarywrinkles()
-            Writemii()
+            'Writemii()
             Writebinary()
             readmiidata()
             XmodemMii()
@@ -46082,7 +46101,8 @@ Public Class TL_SaveEditor
             SaveFileDialog1.FileName = "Interaction_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
             If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
                 Dim Writer As New System.IO.StreamWriter(SaveFileDialog1.FileName)
-                Writer.Write("Mii : " & Text_nickname.Text)
+                Writer.Write("Save file region : " & Filever_text.Text)
+                Writer.Write(vbNewLine & "Mii : " & Text_nickname.Text)
                 Writer.Write(vbNewLine & "Fullness : " & valu_fullness.Value)
                 Writer.Write(vbNewLine & "Grown-up/Kid : " & Select_growkid.SelectedItem)
                 Writer.Write(vbNewLine & "Relation to real you : " & Select_relationyou.SelectedItem)
@@ -46566,7 +46586,9 @@ Public Class TL_SaveEditor
         Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(0)
         Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
         Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
-        Select_interaction.SelectedItem = Select_interaction.Items.Item(0)
+        If Filever_text.Text = "EU" Then
+            Select_interaction.SelectedItem = Select_interaction.Items.Item(0)
+        End If
         If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
             If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
                 Accessmii = &H0
@@ -48195,7 +48217,7 @@ Public Class TL_SaveEditor
         Try
             Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
             If Filever_text.Text = "US" Or Filever_text.Text = "EU" Or Filever_text.Text = "KR" Then
-                AccessMiilist = &H1C8A
+                Accessmiilist = &H1C8A
                 Accessfriendlist = Miifriendr
                 Accessrelalist = Miifriendr + &H64
                 Reader.Position = &H1C70 + Accessmii
@@ -48226,7 +48248,7 @@ Public Class TL_SaveEditor
                 Text_creator.Text = Reader.ReadUnicodeString(10)
                 Reader.Position = &H1CCE + Accessmii
                 crcxmodem = Reader.Position
-                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
+                Text_crcxmodem.Text = Reader.ReadHexString(2)
                 Reader.Position = &H1CD0 + Accessmii
                 Firstname = Reader.Position
                 Text_firstname.Text = Reader.ReadUnicodeString(15)
@@ -48404,7 +48426,7 @@ Public Class TL_SaveEditor
                 Text_creator.Text = Reader.ReadUnicodeString(10)
                 Reader.Position = &H1C9E + Accessmii
                 crcxmodem = Reader.Position
-                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
+                Text_crcxmodem.Text = Reader.ReadHexString(2)
                 Reader.Position = &H1CA0 + Accessmii
                 Firstname = Reader.Position
                 Text_firstname.Text = Reader.ReadUnicodeString(15)
@@ -48554,13 +48576,13 @@ Public Class TL_SaveEditor
             readfriendlist()
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read informations of this Mii, make sure you have opened a file or report this issue"
-                TLSE_dialog.ShowDialog()
-            End If
-            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture des informations de ce Mii a échoué, soyez sûr d'avoir ouvert un fichier ou signalez cet erreur"
-                TLSE_dialog.ShowDialog()
-            End If
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read informations of this Mii, make sure you have opened a file or report this issue"
+            TLSE_dialog.ShowDialog()
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "La lecture des informations de ce Mii a échoué, soyez sûr d'avoir ouvert un fichier ou signalez cet erreur"
+            TLSE_dialog.ShowDialog()
+        End If
         End Try
     End Sub
 
@@ -50135,6 +50157,7 @@ Public Class TL_SaveEditor
     End Sub
 
     Public Sub Writebinary()
+
         Dim xs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
         'write HEX
         xs.Position = couleur
@@ -50157,6 +50180,13 @@ Public Class TL_SaveEditor
         For j As Integer = 0 To Text_TLMiisysID.Text.Length - 1 Step 2
             xs.WriteByte(CByte(Conversion.Val("&H" & Text_TLMiisysID.Text.Substring(j, 2))))
         Next
+        '-----------------------------------------------
+        'try to write in hex without Package.IO but write in endian big...
+        'xs.Position = econom
+        'For j As Integer = 0 To Textval_economy.Text.Length - 1 Step 2
+        'xs.WriteByte(CByte(Conversion.Val("&H" & Textval_economy.Text.Substring(j, 2))))
+        'Next
+        '-----------------------------------------------
         'end write HEX
         'write binary feature without convert to decimal
         xs.Close()
@@ -50186,12 +50216,12 @@ Public Class TL_SaveEditor
 
         crc = crc And &HFFFF
 
-        valu_crcxmodem.Value = crc
+        Text_crcxmodem.Text = Hex(crc)
         Try
             Dim Writecrc As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
             Writecrc.Position = crcxmodem
-            For j As Integer = 0 To valu_crcxmodem.Text.Length - 1 Step 2
-                Writecrc.WriteByte(CByte(Conversion.Val("&H" & valu_crcxmodem.Text.Substring(j, 2))))
+            For j As Integer = 0 To Text_crcxmodem.Text.Length - 1 Step 2
+                Writecrc.WriteByte(CByte(Conversion.Val("&H" & Text_crcxmodem.Text.Substring(j, 2))))
             Next
         Catch ex As Exception
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
@@ -50214,7 +50244,7 @@ Public Class TL_SaveEditor
                 Text_Mii.Text = Reader.ReadHexString(&H5E)
                 Reader.Position = &H1CCE + Accessmii
                 crcxmodem = Reader.Position
-                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
+                Text_crcxmodem.Text = Reader.ReadHexString(2)
             End If
 
             If Filever_text.Text = "JP" Then
@@ -50223,7 +50253,7 @@ Public Class TL_SaveEditor
                 Text_Mii.Text = Reader.ReadHexString(&H5E)
                 Reader.Position = &H1C9E + Accessmii
                 crcxmodem = Reader.Position
-                valu_crcxmodem.Value = Reader.ReadUInt16(Endian.Big)
+                Text_crcxmodem.Text = Reader.ReadHexString(2)
             End If
             done()
         Catch ex As Exception
@@ -50910,12 +50940,19 @@ Public Class TL_SaveEditor
         End Try
     End Sub
 
-    Private Sub valu_lastmii_ValueChanged(sender As Object, e As EventArgs) Handles valu_lastmii.ValueChanged
-        If valu_lastmii.Value = 1 Then
-            Button_setallrelation.Enabled = True
-        Else
-            Button_setallrelation.Enabled = False
-        End If
+    Private Sub valu_economy_ValueChanged(sender As Object, e As EventArgs) Handles valu_economy.ValueChanged
+        Textval_economy.Text = Hex(valu_economy.Value).PadLeft(8, "0")
     End Sub
+
+    Private Sub PictureBox34_Click(sender As Object, e As EventArgs) Handles PictureBox34.Click
+
+        Textval_economy.Text = Textval_economy.Text.Reverse.ToArray
+
+    End Sub
+
+    Private Sub Text_crcxmodem_TextChanged(sender As Object, e As EventArgs) Handles Text_crcxmodem.TextChanged
+        Text_crcxmodem.Text = Text_crcxmodem.Text.PadLeft(4, "0")
+    End Sub
+
     'end Mii edit block
 End Class

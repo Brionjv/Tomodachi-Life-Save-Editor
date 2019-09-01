@@ -330,6 +330,7 @@ Public Class TL_SaveEditor
     Dim Interacunknow As String
     Dim crcxmodem As String
     Dim wrinkmake As String
+    Dim hairstyle As String
 
     Private Sub hidepanels()
         Panel_islandedit.Visible = False
@@ -564,6 +565,7 @@ Public Class TL_SaveEditor
             Fea_edit_concert.Enabled = True
             Select_interaction.Visible = True
             Select_interaction_j.Visible = False
+            valu_interaction.Visible = False
         ElseIf Filever_text.Text = "EU" Then
             Filever_text.Text = "JP"
             TLSE_logo.Image = My.Resources.logo_JP
@@ -609,7 +611,8 @@ Public Class TL_SaveEditor
             Fea_edit_travelers.Enabled = False
             Fea_edit_concert.Enabled = False
             Select_interaction.Visible = False
-            Select_interaction_j.Visible = True
+            Select_interaction_j.Visible = False
+            valu_interaction.Visible = True
         ElseIf Filever_text.Text = "JP" Then
             Filever_text.Text = "KR"
             TLSE_logo.Image = My.Resources.logo_KR
@@ -656,6 +659,7 @@ Public Class TL_SaveEditor
             Fea_edit_concert.Enabled = False
             Select_interaction.Visible = True
             Select_interaction_j.Visible = False
+            valu_interaction.Visible = True
         ElseIf Filever_text.Text = "KR" Then
             Filever_text.Text = "US"
             TLSE_logo.Image = My.Resources.logo_US
@@ -700,8 +704,9 @@ Public Class TL_SaveEditor
             Select_foods_language.Visible = False
             Fea_edit_travelers.Enabled = True
             Fea_edit_concert.Enabled = True
-            Select_interaction.Visible = True
+            Select_interaction.Visible = False
             Select_interaction_j.Visible = False
+            valu_interaction.Visible = True
         ElseIf Filever_text.Text = "" Then
             Filever_text.Text = "US"
             TLSE_logo.Image = My.Resources.logo_US
@@ -746,8 +751,9 @@ Public Class TL_SaveEditor
             Select_foods_language.Visible = False
             Fea_edit_travelers.Enabled = True
             Fea_edit_concert.Enabled = True
-            Select_interaction.Visible = True
+            Select_interaction.Visible = False
             Select_interaction_j.Visible = False
+            valu_interaction.Visible = True
         End If
         Icon_changelog.Image = TLSE_logo.Image
     End Sub
@@ -3485,6 +3491,9 @@ Public Class TL_SaveEditor
                 Reader.Position = &H1CA1 + Accessmii
                 wrinkmake = Reader.Position
                 Text_datawrinkles.Text = Reader.ReadHexString(1)
+                Reader.Position = &H1CA2 + Accessmii
+                hairstyle = Reader.Position
+                valu_hairstyle.Value = Reader.ReadByte
             End If
 
             If Filever_text.Text = "JP" Then
@@ -3899,6 +3908,8 @@ Public Class TL_SaveEditor
             fs.WriteByte(valu_emotions.Value)
             fs.Position = copy
             fs.WriteByte(valu_copying.Value)
+            fs.Position = hairstyle
+            fs.WriteByte(valu_hairstyle.Value)
             writefriendlist()
             Patchfrienlist()
             done()
@@ -9719,6 +9730,7 @@ Public Class TL_SaveEditor
         Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
         Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
         Select_interaction.SelectedItem = Select_interaction.Items.Item(0)
+        Select_interaction_j.SelectedItem = Select_interaction.Items.Item(0)
         Select_emotions.SelectedItem = Select_emotions.Items.Item(0)
         Check_fullness.Checked = False
         Select_growkid.SelectedItem = Select_growkid.Items.Item(0)

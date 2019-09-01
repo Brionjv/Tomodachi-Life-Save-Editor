@@ -430,6 +430,13 @@ Partial Class TL_SaveEditor
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.Select_unlock_interiors = New System.Windows.Forms.ComboBox()
         Me.Panel_bodyface = New System.Windows.Forms.Panel()
+        Me.valu_hairstyle = New System.Windows.Forms.NumericUpDown()
+        Me.Panel44 = New System.Windows.Forms.Panel()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Panel43 = New System.Windows.Forms.Panel()
         Me.Text_wrinkles = New System.Windows.Forms.TextBox()
         Me.Select_wrinkles = New System.Windows.Forms.ComboBox()
@@ -594,9 +601,9 @@ Partial Class TL_SaveEditor
         Me.valu_target1 = New System.Windows.Forms.NumericUpDown()
         Me.Select_target1 = New System.Windows.Forms.ComboBox()
         Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.Select_interaction_j = New System.Windows.Forms.ComboBox()
         Me.valu_interaction = New System.Windows.Forms.NumericUpDown()
         Me.Select_interaction = New System.Windows.Forms.ComboBox()
+        Me.Select_interaction_j = New System.Windows.Forms.ComboBox()
         Me.Panel_target1_foods = New System.Windows.Forms.Panel()
         Me.Select_target1_foodUS = New System.Windows.Forms.ComboBox()
         Me.Select_target1_foodEU = New System.Windows.Forms.ComboBox()
@@ -1433,6 +1440,10 @@ Partial Class TL_SaveEditor
         Me.Panel26.SuspendLayout
         Me.Panel13.SuspendLayout
         Me.Panel_bodyface.SuspendLayout
+        CType(Me.valu_hairstyle,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel44.SuspendLayout
+        CType(Me.PictureBox12,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel43.SuspendLayout
         CType(Me.PictureBox18,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_wrinkles,System.ComponentModel.ISupportInitialize).BeginInit
@@ -4699,8 +4710,8 @@ Partial Class TL_SaveEditor
         Me.Changelog.Name = "Changelog"
         Me.Changelog.Size = New System.Drawing.Size(518, 392)
         Me.Changelog.TabIndex = 1
-        Me.Changelog.Text = "This is version 3.1.2"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Version 4.0.0 Beta is include in zip folder"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"Fix interacti"& _ 
-    "ons with japanese version (need some test but should work)"
+        Me.Changelog.Text = "This is version 3.1.2" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "This version is last stable" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Fix interactions with japanes" & _
+    "e version (need some test but should work)"
         Me.Changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_TLSE_version
@@ -4710,7 +4721,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0 Beta"
+        Me.Text_TLSE_version.Text = "Version 4.0.0 Delta"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -6486,6 +6497,12 @@ Partial Class TL_SaveEditor
         'Panel_bodyface
         '
         Me.Panel_bodyface.BackColor = System.Drawing.Color.Azure
+        Me.Panel_bodyface.Controls.Add(Me.valu_hairstyle)
+        Me.Panel_bodyface.Controls.Add(Me.Panel44)
+        Me.Panel_bodyface.Controls.Add(Me.PictureBox12)
+        Me.Panel_bodyface.Controls.Add(Me.PictureBox13)
+        Me.Panel_bodyface.Controls.Add(Me.Label8)
+        Me.Panel_bodyface.Controls.Add(Me.TextBox8)
         Me.Panel_bodyface.Controls.Add(Me.Panel43)
         Me.Panel_bodyface.Controls.Add(Me.PictureBox18)
         Me.Panel_bodyface.Controls.Add(Me.Icon_wrinkles)
@@ -6511,6 +6528,80 @@ Partial Class TL_SaveEditor
         Me.Panel_bodyface.Size = New System.Drawing.Size(367, 312)
         Me.Panel_bodyface.TabIndex = 261
         Me.Panel_bodyface.Visible = false
+        '
+        'valu_hairstyle
+        '
+        Me.valu_hairstyle.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_hairstyle.Location = New System.Drawing.Point(42, 191)
+        Me.valu_hairstyle.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_hairstyle.Name = "valu_hairstyle"
+        Me.valu_hairstyle.Size = New System.Drawing.Size(44, 16)
+        Me.valu_hairstyle.TabIndex = 113
+        Me.valu_hairstyle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel44
+        '
+        Me.Panel44.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel44.Controls.Add(Me.ComboBox1)
+        Me.Panel44.Location = New System.Drawing.Point(42, 164)
+        Me.Panel44.Name = "Panel44"
+        Me.Panel44.Size = New System.Drawing.Size(118, 25)
+        Me.Panel44.TabIndex = 272
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.SystemColors.Window
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.Enabled = false
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.FormattingEnabled = true
+        Me.ComboBox1.Items.AddRange(New Object() {"Wrinkles 1", "Wrinkles 2", "Wrinkles 3", "Wrinkles 4", "Wrinkles 5", "Wrinkles 6", "Wrinkles 7", "Wrinkles 8", "Wrinkles 9", "Wrinkles 10", "Wrinkles 11", "Wrinkles 12"})
+        Me.ComboBox1.Location = New System.Drawing.Point(2, 2)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(114, 21)
+        Me.ComboBox1.TabIndex = 112
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox12.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox12.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.PictureBox12.Location = New System.Drawing.Point(160, 165)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox12.TabIndex = 271
+        Me.PictureBox12.TabStop = false
+        Me.PictureBox12.Visible = false
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.wrinkles_1
+        Me.PictureBox13.Location = New System.Drawing.Point(3, 161)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(38, 31)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox13.TabIndex = 270
+        Me.PictureBox13.TabStop = false
+        '
+        'Label8
+        '
+        Me.Label8.Location = New System.Drawing.Point(1, 145)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(160, 13)
+        Me.Label8.TabIndex = 269
+        Me.Label8.Text = "Hair style"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TextBox8
+        '
+        Me.TextBox8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.TextBox8.Location = New System.Drawing.Point(78, 176)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(100, 13)
+        Me.TextBox8.TabIndex = 268
+        Me.TextBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TextBox8.Visible = false
         '
         'Panel43
         '
@@ -8436,35 +8527,13 @@ Partial Class TL_SaveEditor
         'Panel17
         '
         Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel17.Controls.Add(Me.Select_interaction_j)
         Me.Panel17.Controls.Add(Me.valu_interaction)
         Me.Panel17.Controls.Add(Me.Select_interaction)
+        Me.Panel17.Controls.Add(Me.Select_interaction_j)
         Me.Panel17.Location = New System.Drawing.Point(33, 21)
         Me.Panel17.Name = "Panel17"
         Me.Panel17.Size = New System.Drawing.Size(441, 25)
         Me.Panel17.TabIndex = 159
-        '
-        'Select_interaction_j
-        '
-        Me.Select_interaction_j.BackColor = System.Drawing.SystemColors.Window
-        Me.Select_interaction_j.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_interaction_j.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_interaction_j.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Select_interaction_j.FormattingEnabled = true
-        Me.Select_interaction_j.IntegralHeight = false
-        Me.Select_interaction_j.ItemHeight = 13
-        Me.Select_interaction_j.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like {foods}", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "_Would like to eat something but say nothing_", "_Would like to eat something but say nothing (1)_", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "_Would like to eat something but say nothing (2)_", "I'd like to eat something Korean", "I could eat anything !", "I'm starving (1)", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings "& _ 
-                "to ?", "_Show heart in windows but freeze_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you"& _ 
-                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me "& _ 
-                "?", "I think that I have something really special with {Mii}.  What do you thing about"& _ 
-                " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii"& _ 
-                "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories,"& _ 
-                " should I tell them more ?", "A mosquito got into my tent…", "I'm so famished I can hardly move…", "I've got a sore throat…", "I got a letter from someone to meet them on the roof… I don't know who wrote it… "& _ 
-                "Should I go ?", "I loss something very important", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?"})
-        Me.Select_interaction_j.Location = New System.Drawing.Point(2, 2)
-        Me.Select_interaction_j.Name = "Select_interaction_j"
-        Me.Select_interaction_j.Size = New System.Drawing.Size(437, 21)
-        Me.Select_interaction_j.TabIndex = 188
         '
         'valu_interaction
         '
@@ -8499,6 +8568,28 @@ Partial Class TL_SaveEditor
         Me.Select_interaction.Name = "Select_interaction"
         Me.Select_interaction.Size = New System.Drawing.Size(437, 21)
         Me.Select_interaction.TabIndex = 112
+        '
+        'Select_interaction_j
+        '
+        Me.Select_interaction_j.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_interaction_j.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_interaction_j.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_interaction_j.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Select_interaction_j.FormattingEnabled = true
+        Me.Select_interaction_j.IntegralHeight = false
+        Me.Select_interaction_j.ItemHeight = 13
+        Me.Select_interaction_j.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like {foods}", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "_Would like to eat something but say nothing_", "_Would like to eat something but say nothing (1)_", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "_Would like to eat something but say nothing (2)_", "I'd like to eat something Korean", "I could eat anything !", "I'm starving (1)", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings "& _ 
+                "to ?", "_Show heart in windows but freeze_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you"& _ 
+                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me "& _ 
+                "?", "I think that I have something really special with {Mii}.  What do you thing about"& _ 
+                " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii"& _ 
+                "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories,"& _ 
+                " should I tell them more ?", "A mosquito got into my tent…", "I'm so famished I can hardly move…", "I've got a sore throat…", "I got a letter from someone to meet them on the roof… I don't know who wrote it… "& _ 
+                "Should I go ?", "I loss something very important", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?"})
+        Me.Select_interaction_j.Location = New System.Drawing.Point(2, 2)
+        Me.Select_interaction_j.Name = "Select_interaction_j"
+        Me.Select_interaction_j.Size = New System.Drawing.Size(437, 21)
+        Me.Select_interaction_j.TabIndex = 188
         '
         'Panel_target1_foods
         '
@@ -14659,6 +14750,10 @@ Partial Class TL_SaveEditor
         Me.Panel13.ResumeLayout(false)
         Me.Panel_bodyface.ResumeLayout(false)
         Me.Panel_bodyface.PerformLayout
+        CType(Me.valu_hairstyle,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel44.ResumeLayout(false)
+        CType(Me.PictureBox12,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel43.ResumeLayout(false)
         Me.Panel43.PerformLayout
         CType(Me.PictureBox18,System.ComponentModel.ISupportInitialize).EndInit
@@ -16134,5 +16229,12 @@ End Sub
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents Check_fullness As System.Windows.Forms.CheckBox
     Friend WithEvents Select_interaction_j As System.Windows.Forms.ComboBox
+    Friend WithEvents valu_hairstyle As System.Windows.Forms.NumericUpDown
+    Friend WithEvents Panel44 As System.Windows.Forms.Panel
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents PictureBox12 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox13 As System.Windows.Forms.PictureBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
 
 End Class
