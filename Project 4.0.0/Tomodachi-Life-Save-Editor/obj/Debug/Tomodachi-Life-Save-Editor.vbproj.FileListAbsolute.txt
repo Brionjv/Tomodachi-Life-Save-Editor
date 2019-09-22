@@ -2,14 +2,13 @@ C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Edito
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\bin\Debug\Tomodachi-Life-Save-Editor.exe
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\bin\Debug\Tomodachi-Life-Save-Editor.pdb
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\bin\Debug\Tomodachi-Life-Save-Editor.xml
+C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\bin\Debug\PackageIO.dll
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.TL_SaveEditor.resources
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.Resources.resources
+C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_dialog.resources
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbproj.GenerateResource.cache
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbproj.CoreCompileInputs.cache
+C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbproj.CopyComplete
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.exe
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.xml
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.pdb
-C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\bin\Debug\PackageIO.dll
-C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbproj.CopyComplete
-C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_dialog.resources
-C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbprojAssemblyReference.cache

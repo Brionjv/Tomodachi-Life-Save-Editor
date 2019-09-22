@@ -388,6 +388,7 @@ Public Class TL_SaveEditor
         Select_unlock_gooditems.SelectedItem = Select_unlock_gooditems.Items.Item(0)
         Select_unlock_interiors.SelectedItem = Select_unlock_interiors.Items.Item(0)
         Select_unlock_specialfoods.SelectedItem = Select_unlock_specialfoods.Items.Item(0)
+
         Try
             Setting_ckupdate.Checked = My.Settings.Parasetting_ckupdate
             Setting_filepath.Checked = My.Settings.Parasetting_filepath
@@ -10966,796 +10967,284 @@ Public Class TL_SaveEditor
             If Filever_text.Text = "EU" Then
                 Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
                 For i As Integer = 0 To 7
-                    fs.Position = &H60 + i
+                    fs.Position = &HFF8 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &HC8 + i
+                    fs.Position = &H1020 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 7
+                    fs.Position = &H1088 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 5
+                    fs.Position = &H1178 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 15
-                    fs.Position = &H100 + i
+                    fs.Position = &H11B0 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H138 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H160 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H180 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H190 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H1D8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H250 + i
+                    fs.Position = &H11F0 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 15
-                    fs.Position = &H280 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &H2B8 + i
+                    fs.Position = &H1228 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H2F0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &H328 + i
+                    fs.Position = &H1270 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H60 + i
+                    fs.Position = &H12C8 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H460 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H478 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &H490 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H500 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H518 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &H5A0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H5B8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H650 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H660 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &H6E0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H720 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &H7A0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H7B8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H848 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H868 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H8E0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H8F0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H918 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H968 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H988 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H9B0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H9C0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H9F8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HA08 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HA38 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 31
-                    fs.Position = &HA70 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &HAF8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &HB08 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HB68 + i
+                    fs.Position = &H12D8 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 6
-                    fs.Position = &HCA0 + i
+                    fs.Position = &H12F0 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 6
+                    fs.Position = &H12F8 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &HD28 + i
+                    fs.Position = &H1300 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HE18 + i
+                For i As Integer = 0 To 6
+                    fs.Position = &H1358 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 5
+                    fs.Position = &H1378 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 3
+                    fs.Position = &H1440 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 5
+                    fs.Position = &H1458 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 6
+                    fs.Position = &H1578 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
             End If
             If Filever_text.Text = "US" Then
                 Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
                 For i As Integer = 0 To 7
-                    fs.Position = &H40 + i
+                    fs.Position = &H1020 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H80 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                fs.Position = &HC8
-                fs.WriteByte(valu_itemsedit_sshats.Value)
-                fs.Position = &HC9
-                fs.WriteByte(valu_itemsedit_sshats.Value)
-                For i As Integer = 0 To 7
-                    fs.Position = &HD0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H108 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H168 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H188 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H198 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H1E0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H258 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &H288 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H2C8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H2D8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H308 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H480 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &H498 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H4C0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H4F8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H508 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H520 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H538 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H568 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &H5A0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H5B8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H660 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H670 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &H6F0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H730 + i
+                    fs.Position = &H1080 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 5
-                    fs.Position = &H7B0 + i
+                    fs.Position = &H1180 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H7B8 + i
+                    fs.Position = &H11F0 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H7D0 + i
+                    fs.Position = &H1228 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H860 + i
+                    fs.Position = &H12C8 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H880 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H8F0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H900 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H928 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H978 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H998 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H9C0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H9D0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HA00 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HA10 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HA40 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 31
-                    fs.Position = &HA78 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &HB00 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &HB10 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HB70 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &HD88 + i
+                    fs.Position = &H12D8 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 6
-                    fs.Position = &HDA8 + i
+                    fs.Position = &H12F0 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 6
+                    fs.Position = &H12F8 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 6
+                    fs.Position = &H1358 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 5
+                    fs.Position = &H1378 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 5
+                    fs.Position = &H13C0 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 3
+                    fs.Position = &H1440 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &HDD8 + i
+                    fs.Position = &H1468 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 6
+                    fs.Position = &H1578 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 6
+                    fs.Position = &H1588 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 6
+                    fs.Position = &H1668 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
             End If
             If Filever_text.Text = "JP" Then
                 Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
-                For i As Integer = 0 To 15
-                    fs.Position = &H80 + i
+                For i As Integer = 0 To 7
+                    fs.Position = &H1020 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &HE0 + i
+                    fs.Position = &H1088 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 5
+                    fs.Position = &H1168 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 5
+                    fs.Position = &H1190 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H120 + i
+                    fs.Position = &H1208 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H180 + i
+                    fs.Position = &H1240 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H1B0 + i
+                    fs.Position = &H12E0 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H1F8 + i
+                    fs.Position = &H12F0 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 6
+                    fs.Position = &H1308 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H270 + i
+                    fs.Position = &H1310 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
-                For i As Integer = 0 To 15
-                    fs.Position = &H2A0 + i
+                For i As Integer = 0 To 5
+                    fs.Position = &H1330 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H2E8 + i
+                For i As Integer = 0 To 5
+                    fs.Position = &H1390 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H2F8 + i
+                For i As Integer = 0 To 3
+                    fs.Position = &H1458 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H328 + i
+                For i As Integer = 0 To 5
+                    fs.Position = &H1580 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H4C0 + i
+                For i As Integer = 0 To 6
+                    fs.Position = &H1598 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 4
-                    fs.Position = &H4D8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H550 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H568 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H5B0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H5D0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &H608 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H620 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 5
-                    fs.Position = &H680 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 5
-                    fs.Position = &H688 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 5
-                    fs.Position = &H690 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 5
-                    fs.Position = &H698 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H6D0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H6E0 + i
+                    fs.Position = &H15A0 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 15
-                    fs.Position = &H760 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &H7A0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 5
-                    fs.Position = &H828 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H830 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H848 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H8D8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H8F8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H970 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H980 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H990 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H9B8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HA08 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HA28 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HA58 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HA68 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HAA0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HAB0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HAE0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 31
-                    fs.Position = &HB18 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &HBA0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &HBB0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HC10 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HC78 + i
+                    fs.Position = &H15F8 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
             End If
             If Filever_text.Text = "KR" Then
                 Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
                 For i As Integer = 0 To 7
-                    fs.Position = &HC8 + i
+                    fs.Position = &H1020 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H100 + i
+                    fs.Position = &H1070 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 5
+                    fs.Position = &H1158 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H160 + i
+                    fs.Position = &H11B0 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H180 + i
+                    fs.Position = &H11E8 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H190 + i
+                    fs.Position = &H1280 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H1D8 + i
+                    fs.Position = &H1290 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 6
+                    fs.Position = &H12A8 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 7
-                    fs.Position = &H250 + i
+                    fs.Position = &H12B0 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
-                For i As Integer = 0 To 15
-                    fs.Position = &H280 + i
+                For i As Integer = 0 To 5
+                    fs.Position = &H12D0 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H2B8 + i
+                For i As Integer = 0 To 6
+                    fs.Position = &H12D8 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H2C8 + i
+                For i As Integer = 0 To 5
+                    fs.Position = &H1330 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H2F8 + i
+                For i As Integer = 0 To 5
+                    fs.Position = &H1378 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 3
+                    fs.Position = &H13F0 + i
+                    fs.WriteByte(valu_itemsedit_sshats.Value)
+                Next
+                For i As Integer = 0 To 6
+                    fs.Position = &H1528 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
                 For i As Integer = 0 To 4
-                    fs.Position = &H330 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H460 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &H478 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H4E0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H4F8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H518 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H530 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &H568 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H580 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 5
-                    fs.Position = &H5C8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 5
-                    fs.Position = &H5D0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 5
-                    fs.Position = &H5D8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 5
-                    fs.Position = &H5E0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H618 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H628 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &H6A8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H6E8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 5
-                    fs.Position = &H770 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H778 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H790 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H820 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H840 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H8C0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H8D0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H8F8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H948 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H968 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H998 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H9A8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H9D8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &H9E8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HA18 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 31
-                    fs.Position = &HA50 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HAC0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 4
-                    fs.Position = &HAD8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 15
-                    fs.Position = &HAE8 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HB48 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HB78 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HBB0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HDF0 + i
-                    fs.WriteByte(valu_itemsedit_sshats.Value)
-                Next
-                For i As Integer = 0 To 7
-                    fs.Position = &HE50 + i
+                    fs.Position = &H1530 + i
                     fs.WriteByte(valu_itemsedit_sshats.Value)
                 Next
             End If
@@ -17391,6 +16880,7 @@ Public Class TL_SaveEditor
         ElseIf valu_selfriend_rela_1.Value = 12 Then
             Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9)
         End If
+        Namerelavalu()
     End Sub
 
     Private Sub valu_selfriend_rela_2_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_2.ValueChanged
@@ -17969,7 +17459,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_26_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_26_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_26.ValueChanged
         If valu_selfriend_rela_26.Value = 0 Then
             Select_friend_rela_26.SelectedItem = Select_friend_rela_26.Items.Item(0)
         ElseIf valu_selfriend_rela_26.Value = 1 Then
@@ -17993,7 +17483,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_27_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_27_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_27.ValueChanged
         If valu_selfriend_rela_27.Value = 0 Then
             Select_friend_rela_27.SelectedItem = Select_friend_rela_27.Items.Item(0)
         ElseIf valu_selfriend_rela_27.Value = 1 Then
@@ -18017,7 +17507,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_28_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_28_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_28.ValueChanged
         If valu_selfriend_rela_28.Value = 0 Then
             Select_friend_rela_28.SelectedItem = Select_friend_rela_28.Items.Item(0)
         ElseIf valu_selfriend_rela_28.Value = 1 Then
@@ -18041,7 +17531,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_29_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_29_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_29.ValueChanged
         If valu_selfriend_rela_29.Value = 0 Then
             Select_friend_rela_29.SelectedItem = Select_friend_rela_29.Items.Item(0)
         ElseIf valu_selfriend_rela_29.Value = 1 Then
@@ -18065,7 +17555,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_30_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_30_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_30.ValueChanged
         If valu_selfriend_rela_30.Value = 0 Then
             Select_friend_rela_30.SelectedItem = Select_friend_rela_30.Items.Item(0)
         ElseIf valu_selfriend_rela_30.Value = 1 Then
@@ -18089,7 +17579,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_31_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_31_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_31.ValueChanged
         If valu_selfriend_rela_31.Value = 0 Then
             Select_friend_rela_31.SelectedItem = Select_friend_rela_31.Items.Item(0)
         ElseIf valu_selfriend_rela_31.Value = 1 Then
@@ -18113,7 +17603,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_32_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_32_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_32.ValueChanged
         If valu_selfriend_rela_32.Value = 0 Then
             Select_friend_rela_32.SelectedItem = Select_friend_rela_32.Items.Item(0)
         ElseIf valu_selfriend_rela_32.Value = 1 Then
@@ -18137,7 +17627,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_33_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_33_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_33.ValueChanged
         If valu_selfriend_rela_33.Value = 0 Then
             Select_friend_rela_33.SelectedItem = Select_friend_rela_33.Items.Item(0)
         ElseIf valu_selfriend_rela_33.Value = 1 Then
@@ -18161,7 +17651,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_34_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_34_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_34.ValueChanged
         If valu_selfriend_rela_34.Value = 0 Then
             Select_friend_rela_34.SelectedItem = Select_friend_rela_34.Items.Item(0)
         ElseIf valu_selfriend_rela_34.Value = 1 Then
@@ -18185,7 +17675,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_35_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_35_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_35.ValueChanged
         If valu_selfriend_rela_35.Value = 0 Then
             Select_friend_rela_35.SelectedItem = Select_friend_rela_35.Items.Item(0)
         ElseIf valu_selfriend_rela_35.Value = 1 Then
@@ -18209,7 +17699,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_36_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_36_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_36.ValueChanged
         If valu_selfriend_rela_36.Value = 0 Then
             Select_friend_rela_36.SelectedItem = Select_friend_rela_36.Items.Item(0)
         ElseIf valu_selfriend_rela_36.Value = 1 Then
@@ -18233,7 +17723,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_37_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_37_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_37.ValueChanged
         If valu_selfriend_rela_37.Value = 0 Then
             Select_friend_rela_37.SelectedItem = Select_friend_rela_37.Items.Item(0)
         ElseIf valu_selfriend_rela_37.Value = 1 Then
@@ -18257,7 +17747,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_38_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_38_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_38.ValueChanged
         If valu_selfriend_rela_38.Value = 0 Then
             Select_friend_rela_38.SelectedItem = Select_friend_rela_38.Items.Item(0)
         ElseIf valu_selfriend_rela_38.Value = 1 Then
@@ -18281,7 +17771,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_39_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_39_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_39.ValueChanged
         If valu_selfriend_rela_39.Value = 0 Then
             Select_friend_rela_39.SelectedItem = Select_friend_rela_39.Items.Item(0)
         ElseIf valu_selfriend_rela_39.Value = 1 Then
@@ -18305,7 +17795,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_40_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_40_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_40.ValueChanged
         If valu_selfriend_rela_40.Value = 0 Then
             Select_friend_rela_40.SelectedItem = Select_friend_rela_40.Items.Item(0)
         ElseIf valu_selfriend_rela_40.Value = 1 Then
@@ -18329,7 +17819,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_41_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_41_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_41.ValueChanged
         If valu_selfriend_rela_41.Value = 0 Then
             Select_friend_rela_41.SelectedItem = Select_friend_rela_41.Items.Item(0)
         ElseIf valu_selfriend_rela_41.Value = 1 Then
@@ -18353,7 +17843,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_42_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_42_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_42.ValueChanged
         If valu_selfriend_rela_42.Value = 0 Then
             Select_friend_rela_42.SelectedItem = Select_friend_rela_42.Items.Item(0)
         ElseIf valu_selfriend_rela_42.Value = 1 Then
@@ -18377,7 +17867,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_43_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_43_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_43.ValueChanged
         If valu_selfriend_rela_43.Value = 0 Then
             Select_friend_rela_43.SelectedItem = Select_friend_rela_43.Items.Item(0)
         ElseIf valu_selfriend_rela_43.Value = 1 Then
@@ -18401,7 +17891,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_44_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_44_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_44.ValueChanged
         If valu_selfriend_rela_44.Value = 0 Then
             Select_friend_rela_44.SelectedItem = Select_friend_rela_44.Items.Item(0)
         ElseIf valu_selfriend_rela_44.Value = 1 Then
@@ -18425,7 +17915,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_45_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_45_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_45.ValueChanged
         If valu_selfriend_rela_45.Value = 0 Then
             Select_friend_rela_45.SelectedItem = Select_friend_rela_45.Items.Item(0)
         ElseIf valu_selfriend_rela_45.Value = 1 Then
@@ -18449,7 +17939,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_46_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_46_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_46.ValueChanged
         If valu_selfriend_rela_46.Value = 0 Then
             Select_friend_rela_46.SelectedItem = Select_friend_rela_46.Items.Item(0)
         ElseIf valu_selfriend_rela_46.Value = 1 Then
@@ -18473,7 +17963,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_47_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_47_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_47.ValueChanged
         If valu_selfriend_rela_47.Value = 0 Then
             Select_friend_rela_47.SelectedItem = Select_friend_rela_47.Items.Item(0)
         ElseIf valu_selfriend_rela_47.Value = 1 Then
@@ -18497,7 +17987,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_48_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_48_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_48.ValueChanged
         If valu_selfriend_rela_48.Value = 0 Then
             Select_friend_rela_48.SelectedItem = Select_friend_rela_48.Items.Item(0)
         ElseIf valu_selfriend_rela_48.Value = 1 Then
@@ -18521,7 +18011,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_49_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_49_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_49.ValueChanged
         If valu_selfriend_rela_49.Value = 0 Then
             Select_friend_rela_49.SelectedItem = Select_friend_rela_49.Items.Item(0)
         ElseIf valu_selfriend_rela_49.Value = 1 Then
@@ -18545,7 +18035,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_50_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_50_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_50.ValueChanged
         If valu_selfriend_rela_50.Value = 0 Then
             Select_friend_rela_50.SelectedItem = Select_friend_rela_50.Items.Item(0)
         ElseIf valu_selfriend_rela_50.Value = 1 Then
@@ -18569,7 +18059,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_51_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_51_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_51.ValueChanged
         If valu_selfriend_rela_51.Value = 0 Then
             Select_friend_rela_51.SelectedItem = Select_friend_rela_51.Items.Item(0)
         ElseIf valu_selfriend_rela_51.Value = 1 Then
@@ -18593,7 +18083,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_52_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_52_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_52.ValueChanged
         If valu_selfriend_rela_52.Value = 0 Then
             Select_friend_rela_52.SelectedItem = Select_friend_rela_52.Items.Item(0)
         ElseIf valu_selfriend_rela_52.Value = 1 Then
@@ -18617,7 +18107,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_53_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_53_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_53.ValueChanged
         If valu_selfriend_rela_53.Value = 0 Then
             Select_friend_rela_53.SelectedItem = Select_friend_rela_53.Items.Item(0)
         ElseIf valu_selfriend_rela_53.Value = 1 Then
@@ -18641,7 +18131,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_54_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_54_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_54.ValueChanged
         If valu_selfriend_rela_54.Value = 0 Then
             Select_friend_rela_54.SelectedItem = Select_friend_rela_54.Items.Item(0)
         ElseIf valu_selfriend_rela_54.Value = 1 Then
@@ -18665,7 +18155,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_55_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_55_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_55.ValueChanged
         If valu_selfriend_rela_55.Value = 0 Then
             Select_friend_rela_55.SelectedItem = Select_friend_rela_55.Items.Item(0)
         ElseIf valu_selfriend_rela_55.Value = 1 Then
@@ -18689,7 +18179,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_56_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_56_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_56.ValueChanged
         If valu_selfriend_rela_56.Value = 0 Then
             Select_friend_rela_56.SelectedItem = Select_friend_rela_56.Items.Item(0)
         ElseIf valu_selfriend_rela_56.Value = 1 Then
@@ -18713,7 +18203,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_57_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_57_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_57.ValueChanged
         If valu_selfriend_rela_57.Value = 0 Then
             Select_friend_rela_57.SelectedItem = Select_friend_rela_57.Items.Item(0)
         ElseIf valu_selfriend_rela_57.Value = 1 Then
@@ -18737,7 +18227,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_58_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_58_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_58.ValueChanged
         If valu_selfriend_rela_58.Value = 0 Then
             Select_friend_rela_58.SelectedItem = Select_friend_rela_58.Items.Item(0)
         ElseIf valu_selfriend_rela_58.Value = 1 Then
@@ -18761,7 +18251,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_59_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_59_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_59.ValueChanged
         If valu_selfriend_rela_59.Value = 0 Then
             Select_friend_rela_59.SelectedItem = Select_friend_rela_59.Items.Item(0)
         ElseIf valu_selfriend_rela_59.Value = 1 Then
@@ -18785,7 +18275,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_60_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_60_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_60.ValueChanged
         If valu_selfriend_rela_60.Value = 0 Then
             Select_friend_rela_60.SelectedItem = Select_friend_rela_60.Items.Item(0)
         ElseIf valu_selfriend_rela_60.Value = 1 Then
@@ -18809,7 +18299,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_61_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_61_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_61.ValueChanged
         If valu_selfriend_rela_61.Value = 0 Then
             Select_friend_rela_61.SelectedItem = Select_friend_rela_61.Items.Item(0)
         ElseIf valu_selfriend_rela_61.Value = 1 Then
@@ -18833,7 +18323,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_62_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_62_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_62.ValueChanged
         If valu_selfriend_rela_62.Value = 0 Then
             Select_friend_rela_62.SelectedItem = Select_friend_rela_62.Items.Item(0)
         ElseIf valu_selfriend_rela_62.Value = 1 Then
@@ -18857,7 +18347,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_63_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_63_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_63.ValueChanged
         If valu_selfriend_rela_63.Value = 0 Then
             Select_friend_rela_63.SelectedItem = Select_friend_rela_63.Items.Item(0)
         ElseIf valu_selfriend_rela_63.Value = 1 Then
@@ -18881,7 +18371,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_64_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_64_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_64.ValueChanged
         If valu_selfriend_rela_64.Value = 0 Then
             Select_friend_rela_64.SelectedItem = Select_friend_rela_64.Items.Item(0)
         ElseIf valu_selfriend_rela_64.Value = 1 Then
@@ -18905,7 +18395,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_65_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_65_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_65.ValueChanged
         If valu_selfriend_rela_65.Value = 0 Then
             Select_friend_rela_65.SelectedItem = Select_friend_rela_65.Items.Item(0)
         ElseIf valu_selfriend_rela_65.Value = 1 Then
@@ -18929,7 +18419,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_66_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_66_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_66.ValueChanged
         If valu_selfriend_rela_66.Value = 0 Then
             Select_friend_rela_66.SelectedItem = Select_friend_rela_66.Items.Item(0)
         ElseIf valu_selfriend_rela_66.Value = 1 Then
@@ -18953,7 +18443,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_67_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_67_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_67.ValueChanged
         If valu_selfriend_rela_67.Value = 0 Then
             Select_friend_rela_67.SelectedItem = Select_friend_rela_67.Items.Item(0)
         ElseIf valu_selfriend_rela_67.Value = 1 Then
@@ -18977,7 +18467,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_68_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_68_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_68.ValueChanged
         If valu_selfriend_rela_68.Value = 0 Then
             Select_friend_rela_68.SelectedItem = Select_friend_rela_68.Items.Item(0)
         ElseIf valu_selfriend_rela_68.Value = 1 Then
@@ -19001,7 +18491,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_69_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_69_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_69.ValueChanged
         If valu_selfriend_rela_69.Value = 0 Then
             Select_friend_rela_69.SelectedItem = Select_friend_rela_69.Items.Item(0)
         ElseIf valu_selfriend_rela_69.Value = 1 Then
@@ -19025,7 +18515,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_70_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_70_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_70.ValueChanged
         If valu_selfriend_rela_70.Value = 0 Then
             Select_friend_rela_70.SelectedItem = Select_friend_rela_70.Items.Item(0)
         ElseIf valu_selfriend_rela_70.Value = 1 Then
@@ -19049,7 +18539,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_71_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_71_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_71.ValueChanged
         If valu_selfriend_rela_71.Value = 0 Then
             Select_friend_rela_71.SelectedItem = Select_friend_rela_71.Items.Item(0)
         ElseIf valu_selfriend_rela_71.Value = 1 Then
@@ -19073,7 +18563,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_72_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_72_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_72.ValueChanged
         If valu_selfriend_rela_72.Value = 0 Then
             Select_friend_rela_72.SelectedItem = Select_friend_rela_72.Items.Item(0)
         ElseIf valu_selfriend_rela_72.Value = 1 Then
@@ -19097,7 +18587,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_73_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_73_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_73.ValueChanged
         If valu_selfriend_rela_73.Value = 0 Then
             Select_friend_rela_73.SelectedItem = Select_friend_rela_73.Items.Item(0)
         ElseIf valu_selfriend_rela_73.Value = 1 Then
@@ -19121,7 +18611,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_74_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_74_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_74.ValueChanged
         If valu_selfriend_rela_74.Value = 0 Then
             Select_friend_rela_74.SelectedItem = Select_friend_rela_74.Items.Item(0)
         ElseIf valu_selfriend_rela_74.Value = 1 Then
@@ -19145,7 +18635,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_75_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_75_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_75.ValueChanged
         If valu_selfriend_rela_75.Value = 0 Then
             Select_friend_rela_75.SelectedItem = Select_friend_rela_75.Items.Item(0)
         ElseIf valu_selfriend_rela_75.Value = 1 Then
@@ -19169,7 +18659,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_76_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_76_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_76.ValueChanged
         If valu_selfriend_rela_76.Value = 0 Then
             Select_friend_rela_76.SelectedItem = Select_friend_rela_76.Items.Item(0)
         ElseIf valu_selfriend_rela_76.Value = 1 Then
@@ -19193,7 +18683,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_77_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_77_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_77.ValueChanged
         If valu_selfriend_rela_77.Value = 0 Then
             Select_friend_rela_77.SelectedItem = Select_friend_rela_77.Items.Item(0)
         ElseIf valu_selfriend_rela_77.Value = 1 Then
@@ -19217,7 +18707,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_78_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_78_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_78.ValueChanged
         If valu_selfriend_rela_78.Value = 0 Then
             Select_friend_rela_78.SelectedItem = Select_friend_rela_78.Items.Item(0)
         ElseIf valu_selfriend_rela_78.Value = 1 Then
@@ -19241,7 +18731,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_79_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_79_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_79.ValueChanged
         If valu_selfriend_rela_79.Value = 0 Then
             Select_friend_rela_79.SelectedItem = Select_friend_rela_79.Items.Item(0)
         ElseIf valu_selfriend_rela_79.Value = 1 Then
@@ -19265,7 +18755,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_80_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_80_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_80.ValueChanged
         If valu_selfriend_rela_80.Value = 0 Then
             Select_friend_rela_80.SelectedItem = Select_friend_rela_80.Items.Item(0)
         ElseIf valu_selfriend_rela_80.Value = 1 Then
@@ -19289,7 +18779,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_81_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_81_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_81.ValueChanged
         If valu_selfriend_rela_81.Value = 0 Then
             Select_friend_rela_81.SelectedItem = Select_friend_rela_81.Items.Item(0)
         ElseIf valu_selfriend_rela_81.Value = 1 Then
@@ -19313,7 +18803,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_82_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_82_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_82.ValueChanged
         If valu_selfriend_rela_82.Value = 0 Then
             Select_friend_rela_82.SelectedItem = Select_friend_rela_82.Items.Item(0)
         ElseIf valu_selfriend_rela_82.Value = 1 Then
@@ -19337,7 +18827,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_83_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_83_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_83.ValueChanged
         If valu_selfriend_rela_83.Value = 0 Then
             Select_friend_rela_83.SelectedItem = Select_friend_rela_83.Items.Item(0)
         ElseIf valu_selfriend_rela_83.Value = 1 Then
@@ -19361,7 +18851,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_84_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_84_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_84.ValueChanged
         If valu_selfriend_rela_84.Value = 0 Then
             Select_friend_rela_84.SelectedItem = Select_friend_rela_84.Items.Item(0)
         ElseIf valu_selfriend_rela_84.Value = 1 Then
@@ -19385,7 +18875,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_85_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_85_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_85.ValueChanged
         If valu_selfriend_rela_85.Value = 0 Then
             Select_friend_rela_85.SelectedItem = Select_friend_rela_85.Items.Item(0)
         ElseIf valu_selfriend_rela_85.Value = 1 Then
@@ -19409,7 +18899,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_86_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_86_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_86.ValueChanged
         If valu_selfriend_rela_86.Value = 0 Then
             Select_friend_rela_86.SelectedItem = Select_friend_rela_86.Items.Item(0)
         ElseIf valu_selfriend_rela_86.Value = 1 Then
@@ -19433,7 +18923,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_87_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_87_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_87.ValueChanged
         If valu_selfriend_rela_87.Value = 0 Then
             Select_friend_rela_87.SelectedItem = Select_friend_rela_87.Items.Item(0)
         ElseIf valu_selfriend_rela_87.Value = 1 Then
@@ -19457,7 +18947,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_88_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_88_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_88.ValueChanged
         If valu_selfriend_rela_88.Value = 0 Then
             Select_friend_rela_88.SelectedItem = Select_friend_rela_88.Items.Item(0)
         ElseIf valu_selfriend_rela_88.Value = 1 Then
@@ -19481,7 +18971,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_89_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_89_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_89.ValueChanged
         If valu_selfriend_rela_89.Value = 0 Then
             Select_friend_rela_89.SelectedItem = Select_friend_rela_89.Items.Item(0)
         ElseIf valu_selfriend_rela_89.Value = 1 Then
@@ -19505,7 +18995,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_90_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_90_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_90.ValueChanged
         If valu_selfriend_rela_90.Value = 0 Then
             Select_friend_rela_90.SelectedItem = Select_friend_rela_90.Items.Item(0)
         ElseIf valu_selfriend_rela_90.Value = 1 Then
@@ -19529,7 +19019,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_91_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_91_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_91.ValueChanged
         If valu_selfriend_rela_91.Value = 0 Then
             Select_friend_rela_91.SelectedItem = Select_friend_rela_91.Items.Item(0)
         ElseIf valu_selfriend_rela_91.Value = 1 Then
@@ -19553,7 +19043,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_92_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_92_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_92.ValueChanged
         If valu_selfriend_rela_92.Value = 0 Then
             Select_friend_rela_92.SelectedItem = Select_friend_rela_92.Items.Item(0)
         ElseIf valu_selfriend_rela_92.Value = 1 Then
@@ -19577,7 +19067,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_93_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_93_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_93.ValueChanged
         If valu_selfriend_rela_93.Value = 0 Then
             Select_friend_rela_93.SelectedItem = Select_friend_rela_93.Items.Item(0)
         ElseIf valu_selfriend_rela_93.Value = 1 Then
@@ -19601,7 +19091,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_94_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_94_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_94.ValueChanged
         If valu_selfriend_rela_94.Value = 0 Then
             Select_friend_rela_94.SelectedItem = Select_friend_rela_94.Items.Item(0)
         ElseIf valu_selfriend_rela_94.Value = 1 Then
@@ -19625,7 +19115,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_95_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_95_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_95.ValueChanged
         If valu_selfriend_rela_95.Value = 0 Then
             Select_friend_rela_95.SelectedItem = Select_friend_rela_95.Items.Item(0)
         ElseIf valu_selfriend_rela_95.Value = 1 Then
@@ -19649,7 +19139,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_96_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_96_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_96.ValueChanged
         If valu_selfriend_rela_96.Value = 0 Then
             Select_friend_rela_96.SelectedItem = Select_friend_rela_96.Items.Item(0)
         ElseIf valu_selfriend_rela_96.Value = 1 Then
@@ -19673,7 +19163,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_97_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_97_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_97.ValueChanged
         If valu_selfriend_rela_97.Value = 0 Then
             Select_friend_rela_97.SelectedItem = Select_friend_rela_97.Items.Item(0)
         ElseIf valu_selfriend_rela_97.Value = 1 Then
@@ -19697,7 +19187,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_98_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_98_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_98.ValueChanged
         If valu_selfriend_rela_98.Value = 0 Then
             Select_friend_rela_98.SelectedItem = Select_friend_rela_98.Items.Item(0)
         ElseIf valu_selfriend_rela_98.Value = 1 Then
@@ -19721,7 +19211,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_99_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_99_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_99.ValueChanged
         If valu_selfriend_rela_99.Value = 0 Then
             Select_friend_rela_99.SelectedItem = Select_friend_rela_99.Items.Item(0)
         ElseIf valu_selfriend_rela_99.Value = 1 Then
@@ -19745,7 +19235,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub valu_selfriend_rela_100_ValueChanged(sender As Object, e As EventArgs) 
+    Private Sub valu_selfriend_rela_100_ValueChanged(sender As Object, e As EventArgs) Handles valu_selfriend_rela_100.ValueChanged
         If valu_selfriend_rela_100.Value = 0 Then
             Select_friend_rela_100.SelectedItem = Select_friend_rela_100.Items.Item(0)
         ElseIf valu_selfriend_rela_100.Value = 1 Then
@@ -20369,7 +19859,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_26_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_26_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_26.SelectedIndexChanged
         If Select_friend_rela_26.SelectedItem = Select_friend_rela_26.Items.Item(0) Then
             valu_selfriend_rela_26.Value = 0
         ElseIf Select_friend_rela_26.SelectedItem = Select_friend_rela_26.Items.Item(1) Then
@@ -20393,7 +19883,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_27_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_27_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_27.SelectedIndexChanged
         If Select_friend_rela_27.SelectedItem = Select_friend_rela_27.Items.Item(0) Then
             valu_selfriend_rela_27.Value = 0
         ElseIf Select_friend_rela_27.SelectedItem = Select_friend_rela_27.Items.Item(1) Then
@@ -20417,7 +19907,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_28_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_28_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_28.SelectedIndexChanged
         If Select_friend_rela_28.SelectedItem = Select_friend_rela_28.Items.Item(0) Then
             valu_selfriend_rela_28.Value = 0
         ElseIf Select_friend_rela_28.SelectedItem = Select_friend_rela_28.Items.Item(1) Then
@@ -20441,7 +19931,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_29_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_29_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_29.SelectedIndexChanged
         If Select_friend_rela_29.SelectedItem = Select_friend_rela_29.Items.Item(0) Then
             valu_selfriend_rela_29.Value = 0
         ElseIf Select_friend_rela_29.SelectedItem = Select_friend_rela_29.Items.Item(1) Then
@@ -20465,7 +19955,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_30_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_30_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_30.SelectedIndexChanged
         If Select_friend_rela_30.SelectedItem = Select_friend_rela_30.Items.Item(0) Then
             valu_selfriend_rela_30.Value = 0
         ElseIf Select_friend_rela_30.SelectedItem = Select_friend_rela_30.Items.Item(1) Then
@@ -20489,7 +19979,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_31_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_31_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_31.SelectedIndexChanged
         If Select_friend_rela_31.SelectedItem = Select_friend_rela_31.Items.Item(0) Then
             valu_selfriend_rela_31.Value = 0
         ElseIf Select_friend_rela_31.SelectedItem = Select_friend_rela_31.Items.Item(1) Then
@@ -20513,7 +20003,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_32_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_32_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_32.SelectedIndexChanged
         If Select_friend_rela_32.SelectedItem = Select_friend_rela_32.Items.Item(0) Then
             valu_selfriend_rela_32.Value = 0
         ElseIf Select_friend_rela_32.SelectedItem = Select_friend_rela_32.Items.Item(1) Then
@@ -20537,7 +20027,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_33_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_33_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_33.SelectedIndexChanged
         If Select_friend_rela_33.SelectedItem = Select_friend_rela_33.Items.Item(0) Then
             valu_selfriend_rela_33.Value = 0
         ElseIf Select_friend_rela_33.SelectedItem = Select_friend_rela_33.Items.Item(1) Then
@@ -20561,7 +20051,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_34_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_34_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_34.SelectedIndexChanged
         If Select_friend_rela_34.SelectedItem = Select_friend_rela_34.Items.Item(0) Then
             valu_selfriend_rela_34.Value = 0
         ElseIf Select_friend_rela_34.SelectedItem = Select_friend_rela_34.Items.Item(1) Then
@@ -20585,7 +20075,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_35_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_35_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_35.SelectedIndexChanged
         If Select_friend_rela_35.SelectedItem = Select_friend_rela_35.Items.Item(0) Then
             valu_selfriend_rela_35.Value = 0
         ElseIf Select_friend_rela_35.SelectedItem = Select_friend_rela_35.Items.Item(1) Then
@@ -20609,7 +20099,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_36_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_36_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_36.SelectedIndexChanged
         If Select_friend_rela_36.SelectedItem = Select_friend_rela_36.Items.Item(0) Then
             valu_selfriend_rela_36.Value = 0
         ElseIf Select_friend_rela_36.SelectedItem = Select_friend_rela_36.Items.Item(1) Then
@@ -20633,7 +20123,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_37_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_37_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_37.SelectedIndexChanged
         If Select_friend_rela_37.SelectedItem = Select_friend_rela_37.Items.Item(0) Then
             valu_selfriend_rela_37.Value = 0
         ElseIf Select_friend_rela_37.SelectedItem = Select_friend_rela_37.Items.Item(1) Then
@@ -20657,7 +20147,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_38_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_38_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_38.SelectedIndexChanged
         If Select_friend_rela_38.SelectedItem = Select_friend_rela_38.Items.Item(0) Then
             valu_selfriend_rela_38.Value = 0
         ElseIf Select_friend_rela_38.SelectedItem = Select_friend_rela_38.Items.Item(1) Then
@@ -20681,7 +20171,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_39_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_39_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_39.SelectedIndexChanged
         If Select_friend_rela_39.SelectedItem = Select_friend_rela_39.Items.Item(0) Then
             valu_selfriend_rela_39.Value = 0
         ElseIf Select_friend_rela_39.SelectedItem = Select_friend_rela_39.Items.Item(1) Then
@@ -20705,7 +20195,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_40_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_40_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_40.SelectedIndexChanged
         If Select_friend_rela_40.SelectedItem = Select_friend_rela_40.Items.Item(0) Then
             valu_selfriend_rela_40.Value = 0
         ElseIf Select_friend_rela_40.SelectedItem = Select_friend_rela_40.Items.Item(1) Then
@@ -20729,7 +20219,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_41_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_41_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_41.SelectedIndexChanged
         If Select_friend_rela_41.SelectedItem = Select_friend_rela_41.Items.Item(0) Then
             valu_selfriend_rela_41.Value = 0
         ElseIf Select_friend_rela_41.SelectedItem = Select_friend_rela_41.Items.Item(1) Then
@@ -20753,7 +20243,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_42_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_42_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_42.SelectedIndexChanged
         If Select_friend_rela_42.SelectedItem = Select_friend_rela_42.Items.Item(0) Then
             valu_selfriend_rela_42.Value = 0
         ElseIf Select_friend_rela_42.SelectedItem = Select_friend_rela_42.Items.Item(1) Then
@@ -20777,7 +20267,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_43_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_43_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_43.SelectedIndexChanged
         If Select_friend_rela_43.SelectedItem = Select_friend_rela_43.Items.Item(0) Then
             valu_selfriend_rela_43.Value = 0
         ElseIf Select_friend_rela_43.SelectedItem = Select_friend_rela_43.Items.Item(1) Then
@@ -20801,7 +20291,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_44_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_44_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_44.SelectedIndexChanged
         If Select_friend_rela_44.SelectedItem = Select_friend_rela_44.Items.Item(0) Then
             valu_selfriend_rela_44.Value = 0
         ElseIf Select_friend_rela_44.SelectedItem = Select_friend_rela_44.Items.Item(1) Then
@@ -20825,7 +20315,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_45_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_45_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_45.SelectedIndexChanged
         If Select_friend_rela_45.SelectedItem = Select_friend_rela_45.Items.Item(0) Then
             valu_selfriend_rela_45.Value = 0
         ElseIf Select_friend_rela_45.SelectedItem = Select_friend_rela_45.Items.Item(1) Then
@@ -20849,7 +20339,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_46_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_46_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_46.SelectedIndexChanged
         If Select_friend_rela_46.SelectedItem = Select_friend_rela_46.Items.Item(0) Then
             valu_selfriend_rela_46.Value = 0
         ElseIf Select_friend_rela_46.SelectedItem = Select_friend_rela_46.Items.Item(1) Then
@@ -20873,7 +20363,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_47_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_47_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_47.SelectedIndexChanged
         If Select_friend_rela_47.SelectedItem = Select_friend_rela_47.Items.Item(0) Then
             valu_selfriend_rela_47.Value = 0
         ElseIf Select_friend_rela_47.SelectedItem = Select_friend_rela_47.Items.Item(1) Then
@@ -20897,7 +20387,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_48_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_48_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_48.SelectedIndexChanged
         If Select_friend_rela_48.SelectedItem = Select_friend_rela_48.Items.Item(0) Then
             valu_selfriend_rela_48.Value = 0
         ElseIf Select_friend_rela_48.SelectedItem = Select_friend_rela_48.Items.Item(1) Then
@@ -20921,7 +20411,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_49_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_49_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_49.SelectedIndexChanged
         If Select_friend_rela_49.SelectedItem = Select_friend_rela_49.Items.Item(0) Then
             valu_selfriend_rela_49.Value = 0
         ElseIf Select_friend_rela_49.SelectedItem = Select_friend_rela_49.Items.Item(1) Then
@@ -20945,7 +20435,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_50_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_50_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_50.SelectedIndexChanged
         If Select_friend_rela_50.SelectedItem = Select_friend_rela_50.Items.Item(0) Then
             valu_selfriend_rela_50.Value = 0
         ElseIf Select_friend_rela_50.SelectedItem = Select_friend_rela_50.Items.Item(1) Then
@@ -20969,7 +20459,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_51_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_51_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_51.SelectedIndexChanged
         If Select_friend_rela_51.SelectedItem = Select_friend_rela_51.Items.Item(0) Then
             valu_selfriend_rela_51.Value = 0
         ElseIf Select_friend_rela_51.SelectedItem = Select_friend_rela_51.Items.Item(1) Then
@@ -20993,7 +20483,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_52_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_52_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_52.SelectedIndexChanged
         If Select_friend_rela_52.SelectedItem = Select_friend_rela_52.Items.Item(0) Then
             valu_selfriend_rela_52.Value = 0
         ElseIf Select_friend_rela_52.SelectedItem = Select_friend_rela_52.Items.Item(1) Then
@@ -21017,7 +20507,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_53_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_53_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_53.SelectedIndexChanged
         If Select_friend_rela_53.SelectedItem = Select_friend_rela_53.Items.Item(0) Then
             valu_selfriend_rela_53.Value = 0
         ElseIf Select_friend_rela_53.SelectedItem = Select_friend_rela_53.Items.Item(1) Then
@@ -21041,7 +20531,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_54_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_54_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_54.SelectedIndexChanged
         If Select_friend_rela_54.SelectedItem = Select_friend_rela_54.Items.Item(0) Then
             valu_selfriend_rela_54.Value = 0
         ElseIf Select_friend_rela_54.SelectedItem = Select_friend_rela_54.Items.Item(1) Then
@@ -21065,7 +20555,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_55_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_55_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_55.SelectedIndexChanged
         If Select_friend_rela_55.SelectedItem = Select_friend_rela_55.Items.Item(0) Then
             valu_selfriend_rela_55.Value = 0
         ElseIf Select_friend_rela_55.SelectedItem = Select_friend_rela_55.Items.Item(1) Then
@@ -21089,7 +20579,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_56_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_56_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_56.SelectedIndexChanged
         If Select_friend_rela_56.SelectedItem = Select_friend_rela_56.Items.Item(0) Then
             valu_selfriend_rela_56.Value = 0
         ElseIf Select_friend_rela_56.SelectedItem = Select_friend_rela_56.Items.Item(1) Then
@@ -21113,7 +20603,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_57_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_57_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_57.SelectedIndexChanged
         If Select_friend_rela_57.SelectedItem = Select_friend_rela_57.Items.Item(0) Then
             valu_selfriend_rela_57.Value = 0
         ElseIf Select_friend_rela_57.SelectedItem = Select_friend_rela_57.Items.Item(1) Then
@@ -21137,7 +20627,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_58_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_58_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_58.SelectedIndexChanged
         If Select_friend_rela_58.SelectedItem = Select_friend_rela_58.Items.Item(0) Then
             valu_selfriend_rela_58.Value = 0
         ElseIf Select_friend_rela_58.SelectedItem = Select_friend_rela_58.Items.Item(1) Then
@@ -21161,7 +20651,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_59_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_59_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_59.SelectedIndexChanged
         If Select_friend_rela_59.SelectedItem = Select_friend_rela_59.Items.Item(0) Then
             valu_selfriend_rela_59.Value = 0
         ElseIf Select_friend_rela_59.SelectedItem = Select_friend_rela_59.Items.Item(1) Then
@@ -21185,7 +20675,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_60_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_60_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_60.SelectedIndexChanged
         If Select_friend_rela_60.SelectedItem = Select_friend_rela_60.Items.Item(0) Then
             valu_selfriend_rela_60.Value = 0
         ElseIf Select_friend_rela_60.SelectedItem = Select_friend_rela_60.Items.Item(1) Then
@@ -21209,7 +20699,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_61_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_61_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_61.SelectedIndexChanged
         If Select_friend_rela_61.SelectedItem = Select_friend_rela_61.Items.Item(0) Then
             valu_selfriend_rela_61.Value = 0
         ElseIf Select_friend_rela_61.SelectedItem = Select_friend_rela_61.Items.Item(1) Then
@@ -21233,7 +20723,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_62_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_62_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_62.SelectedIndexChanged
         If Select_friend_rela_62.SelectedItem = Select_friend_rela_62.Items.Item(0) Then
             valu_selfriend_rela_62.Value = 0
         ElseIf Select_friend_rela_62.SelectedItem = Select_friend_rela_62.Items.Item(1) Then
@@ -21257,7 +20747,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_63_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_63_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_63.SelectedIndexChanged
         If Select_friend_rela_63.SelectedItem = Select_friend_rela_63.Items.Item(0) Then
             valu_selfriend_rela_63.Value = 0
         ElseIf Select_friend_rela_63.SelectedItem = Select_friend_rela_63.Items.Item(1) Then
@@ -21281,7 +20771,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_64_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_64_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_64.SelectedIndexChanged
         If Select_friend_rela_64.SelectedItem = Select_friend_rela_64.Items.Item(0) Then
             valu_selfriend_rela_64.Value = 0
         ElseIf Select_friend_rela_64.SelectedItem = Select_friend_rela_64.Items.Item(1) Then
@@ -21305,7 +20795,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_65_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_65_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_65.SelectedIndexChanged
         If Select_friend_rela_65.SelectedItem = Select_friend_rela_65.Items.Item(0) Then
             valu_selfriend_rela_65.Value = 0
         ElseIf Select_friend_rela_65.SelectedItem = Select_friend_rela_65.Items.Item(1) Then
@@ -21329,7 +20819,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_66_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_66_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_66.SelectedIndexChanged
         If Select_friend_rela_66.SelectedItem = Select_friend_rela_66.Items.Item(0) Then
             valu_selfriend_rela_66.Value = 0
         ElseIf Select_friend_rela_66.SelectedItem = Select_friend_rela_66.Items.Item(1) Then
@@ -21353,7 +20843,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_67_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_67_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_67.SelectedIndexChanged
         If Select_friend_rela_67.SelectedItem = Select_friend_rela_67.Items.Item(0) Then
             valu_selfriend_rela_67.Value = 0
         ElseIf Select_friend_rela_67.SelectedItem = Select_friend_rela_67.Items.Item(1) Then
@@ -21377,7 +20867,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_68_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_68_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_68.SelectedIndexChanged
         If Select_friend_rela_68.SelectedItem = Select_friend_rela_68.Items.Item(0) Then
             valu_selfriend_rela_68.Value = 0
         ElseIf Select_friend_rela_68.SelectedItem = Select_friend_rela_68.Items.Item(1) Then
@@ -21401,7 +20891,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_69_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_69_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_69.SelectedIndexChanged
         If Select_friend_rela_69.SelectedItem = Select_friend_rela_69.Items.Item(0) Then
             valu_selfriend_rela_69.Value = 0
         ElseIf Select_friend_rela_69.SelectedItem = Select_friend_rela_69.Items.Item(1) Then
@@ -21425,7 +20915,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_70_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_70_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_70.SelectedIndexChanged
         If Select_friend_rela_70.SelectedItem = Select_friend_rela_70.Items.Item(0) Then
             valu_selfriend_rela_70.Value = 0
         ElseIf Select_friend_rela_70.SelectedItem = Select_friend_rela_70.Items.Item(1) Then
@@ -21449,7 +20939,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_71_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_71_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_71.SelectedIndexChanged
         If Select_friend_rela_71.SelectedItem = Select_friend_rela_71.Items.Item(0) Then
             valu_selfriend_rela_71.Value = 0
         ElseIf Select_friend_rela_71.SelectedItem = Select_friend_rela_71.Items.Item(1) Then
@@ -21473,7 +20963,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_72_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_72_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_72.SelectedIndexChanged
         If Select_friend_rela_72.SelectedItem = Select_friend_rela_72.Items.Item(0) Then
             valu_selfriend_rela_72.Value = 0
         ElseIf Select_friend_rela_72.SelectedItem = Select_friend_rela_72.Items.Item(1) Then
@@ -21497,7 +20987,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_73_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_73_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_73.SelectedIndexChanged
         If Select_friend_rela_73.SelectedItem = Select_friend_rela_73.Items.Item(0) Then
             valu_selfriend_rela_73.Value = 0
         ElseIf Select_friend_rela_73.SelectedItem = Select_friend_rela_73.Items.Item(1) Then
@@ -21521,7 +21011,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_74_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_74_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_74.SelectedIndexChanged
         If Select_friend_rela_74.SelectedItem = Select_friend_rela_74.Items.Item(0) Then
             valu_selfriend_rela_74.Value = 0
         ElseIf Select_friend_rela_74.SelectedItem = Select_friend_rela_74.Items.Item(1) Then
@@ -21545,7 +21035,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_75_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_75_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_75.SelectedIndexChanged
         If Select_friend_rela_75.SelectedItem = Select_friend_rela_75.Items.Item(0) Then
             valu_selfriend_rela_75.Value = 0
         ElseIf Select_friend_rela_75.SelectedItem = Select_friend_rela_75.Items.Item(1) Then
@@ -21569,7 +21059,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_76_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_76_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_76.SelectedIndexChanged
         If Select_friend_rela_76.SelectedItem = Select_friend_rela_76.Items.Item(0) Then
             valu_selfriend_rela_76.Value = 0
         ElseIf Select_friend_rela_76.SelectedItem = Select_friend_rela_76.Items.Item(1) Then
@@ -21593,7 +21083,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_77_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_77_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_77.SelectedIndexChanged
         If Select_friend_rela_77.SelectedItem = Select_friend_rela_77.Items.Item(0) Then
             valu_selfriend_rela_77.Value = 0
         ElseIf Select_friend_rela_77.SelectedItem = Select_friend_rela_77.Items.Item(1) Then
@@ -21617,7 +21107,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_78_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_78_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_78.SelectedIndexChanged
         If Select_friend_rela_78.SelectedItem = Select_friend_rela_78.Items.Item(0) Then
             valu_selfriend_rela_78.Value = 0
         ElseIf Select_friend_rela_78.SelectedItem = Select_friend_rela_78.Items.Item(1) Then
@@ -21641,7 +21131,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_79_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_79_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_79.SelectedIndexChanged
         If Select_friend_rela_79.SelectedItem = Select_friend_rela_79.Items.Item(0) Then
             valu_selfriend_rela_79.Value = 0
         ElseIf Select_friend_rela_79.SelectedItem = Select_friend_rela_79.Items.Item(1) Then
@@ -21665,7 +21155,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_80_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_80_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_80.SelectedIndexChanged
         If Select_friend_rela_80.SelectedItem = Select_friend_rela_80.Items.Item(0) Then
             valu_selfriend_rela_80.Value = 0
         ElseIf Select_friend_rela_80.SelectedItem = Select_friend_rela_80.Items.Item(1) Then
@@ -21689,7 +21179,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_81_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_81_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_81.SelectedIndexChanged
         If Select_friend_rela_81.SelectedItem = Select_friend_rela_81.Items.Item(0) Then
             valu_selfriend_rela_81.Value = 0
         ElseIf Select_friend_rela_81.SelectedItem = Select_friend_rela_81.Items.Item(1) Then
@@ -21713,7 +21203,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_82_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_82_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_82.SelectedIndexChanged
         If Select_friend_rela_82.SelectedItem = Select_friend_rela_82.Items.Item(0) Then
             valu_selfriend_rela_82.Value = 0
         ElseIf Select_friend_rela_82.SelectedItem = Select_friend_rela_82.Items.Item(1) Then
@@ -21737,7 +21227,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_83_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_83_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_83.SelectedIndexChanged
         If Select_friend_rela_83.SelectedItem = Select_friend_rela_83.Items.Item(0) Then
             valu_selfriend_rela_83.Value = 0
         ElseIf Select_friend_rela_83.SelectedItem = Select_friend_rela_83.Items.Item(1) Then
@@ -21761,7 +21251,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_84_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_84_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_84.SelectedIndexChanged
         If Select_friend_rela_84.SelectedItem = Select_friend_rela_84.Items.Item(0) Then
             valu_selfriend_rela_84.Value = 0
         ElseIf Select_friend_rela_84.SelectedItem = Select_friend_rela_84.Items.Item(1) Then
@@ -21785,7 +21275,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_85_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_85_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_85.SelectedIndexChanged
         If Select_friend_rela_85.SelectedItem = Select_friend_rela_85.Items.Item(0) Then
             valu_selfriend_rela_85.Value = 0
         ElseIf Select_friend_rela_85.SelectedItem = Select_friend_rela_85.Items.Item(1) Then
@@ -21809,7 +21299,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_86_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_86_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_86.SelectedIndexChanged
         If Select_friend_rela_86.SelectedItem = Select_friend_rela_86.Items.Item(0) Then
             valu_selfriend_rela_86.Value = 0
         ElseIf Select_friend_rela_86.SelectedItem = Select_friend_rela_86.Items.Item(1) Then
@@ -21833,7 +21323,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_87_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_87_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_87.SelectedIndexChanged
         If Select_friend_rela_87.SelectedItem = Select_friend_rela_87.Items.Item(0) Then
             valu_selfriend_rela_87.Value = 0
         ElseIf Select_friend_rela_87.SelectedItem = Select_friend_rela_87.Items.Item(1) Then
@@ -21857,7 +21347,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_88_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_88_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_88.SelectedIndexChanged
         If Select_friend_rela_88.SelectedItem = Select_friend_rela_88.Items.Item(0) Then
             valu_selfriend_rela_88.Value = 0
         ElseIf Select_friend_rela_88.SelectedItem = Select_friend_rela_88.Items.Item(1) Then
@@ -21881,7 +21371,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_89_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_89_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_89.SelectedIndexChanged
         If Select_friend_rela_89.SelectedItem = Select_friend_rela_89.Items.Item(0) Then
             valu_selfriend_rela_89.Value = 0
         ElseIf Select_friend_rela_89.SelectedItem = Select_friend_rela_89.Items.Item(1) Then
@@ -21905,7 +21395,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_90_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_90_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_90.SelectedIndexChanged
         If Select_friend_rela_90.SelectedItem = Select_friend_rela_90.Items.Item(0) Then
             valu_selfriend_rela_90.Value = 0
         ElseIf Select_friend_rela_90.SelectedItem = Select_friend_rela_90.Items.Item(1) Then
@@ -21929,7 +21419,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_91_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_91_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_91.SelectedIndexChanged
         If Select_friend_rela_91.SelectedItem = Select_friend_rela_91.Items.Item(0) Then
             valu_selfriend_rela_91.Value = 0
         ElseIf Select_friend_rela_91.SelectedItem = Select_friend_rela_91.Items.Item(1) Then
@@ -21953,7 +21443,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_92_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_92_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_92.SelectedIndexChanged
         If Select_friend_rela_92.SelectedItem = Select_friend_rela_92.Items.Item(0) Then
             valu_selfriend_rela_92.Value = 0
         ElseIf Select_friend_rela_92.SelectedItem = Select_friend_rela_92.Items.Item(1) Then
@@ -21977,7 +21467,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_93_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_93_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_93.SelectedIndexChanged
         If Select_friend_rela_93.SelectedItem = Select_friend_rela_93.Items.Item(0) Then
             valu_selfriend_rela_93.Value = 0
         ElseIf Select_friend_rela_93.SelectedItem = Select_friend_rela_93.Items.Item(1) Then
@@ -22001,7 +21491,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_94_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_94_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_94.SelectedIndexChanged
         If Select_friend_rela_94.SelectedItem = Select_friend_rela_94.Items.Item(0) Then
             valu_selfriend_rela_94.Value = 0
         ElseIf Select_friend_rela_94.SelectedItem = Select_friend_rela_94.Items.Item(1) Then
@@ -22025,7 +21515,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_95_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_95_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_95.SelectedIndexChanged
         If Select_friend_rela_95.SelectedItem = Select_friend_rela_95.Items.Item(0) Then
             valu_selfriend_rela_95.Value = 0
         ElseIf Select_friend_rela_95.SelectedItem = Select_friend_rela_95.Items.Item(1) Then
@@ -22049,7 +21539,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_96_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_96_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_96.SelectedIndexChanged
         If Select_friend_rela_96.SelectedItem = Select_friend_rela_96.Items.Item(0) Then
             valu_selfriend_rela_96.Value = 0
         ElseIf Select_friend_rela_96.SelectedItem = Select_friend_rela_96.Items.Item(1) Then
@@ -22073,7 +21563,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_97_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_97_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_97.SelectedIndexChanged
         If Select_friend_rela_97.SelectedItem = Select_friend_rela_97.Items.Item(0) Then
             valu_selfriend_rela_97.Value = 0
         ElseIf Select_friend_rela_97.SelectedItem = Select_friend_rela_97.Items.Item(1) Then
@@ -22097,7 +21587,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_98_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_98_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_98.SelectedIndexChanged
         If Select_friend_rela_98.SelectedItem = Select_friend_rela_98.Items.Item(0) Then
             valu_selfriend_rela_98.Value = 0
         ElseIf Select_friend_rela_98.SelectedItem = Select_friend_rela_98.Items.Item(1) Then
@@ -22121,7 +21611,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_99_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_99_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_99.SelectedIndexChanged
         If Select_friend_rela_99.SelectedItem = Select_friend_rela_99.Items.Item(0) Then
             valu_selfriend_rela_99.Value = 0
         ElseIf Select_friend_rela_99.SelectedItem = Select_friend_rela_99.Items.Item(1) Then
@@ -22145,7 +21635,7 @@ Public Class TL_SaveEditor
         End If
     End Sub
 
-    Private Sub Select_friend_rela_100_SelectedIndexChanged(sender As Object, e As EventArgs) 
+    Private Sub Select_friend_rela_100_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_friend_rela_100.SelectedIndexChanged
         If Select_friend_rela_100.SelectedItem = Select_friend_rela_100.Items.Item(0) Then
             valu_selfriend_rela_100.Value = 0
         ElseIf Select_friend_rela_100.SelectedItem = Select_friend_rela_100.Items.Item(1) Then
@@ -50419,196 +49909,951 @@ Public Class TL_SaveEditor
                     Text_valfriend_1.Text = "Meilleur(e) ami(e) ?"
                 End If
             End If
-
-            If 10 < valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+            If valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Unknow"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Inconnu"
                 End If
-            ElseIf 10 < valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Not much fun..."
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Pas très sympa"
                 End If
-            ElseIf 10 < valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Slightly unhappy"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Un peu pénible"
                 End If
-            ElseIf 10 < valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Just want to forget..."
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "À oublier"
                 End If
-            ElseIf 10 < valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Slightly unhappy"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Légère insatisfaction"
                 End If
-            ElseIf 10 < valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Just want to forget..."
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "À oublier"
                 End If
-            ElseIf 10 < valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Slightly strained"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Légère insatisfaction"
                 End If
-            ElseIf 10 < valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Slightly strained"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Un peu pénible"
                 End If
-            ElseIf 10 < valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Not much fun ?"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Pas très sympa ?"
                 End If
-            ElseIf 10 < valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Trust a little"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Pas très fiable"
                 End If
             End If
-
-            If 40 < valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+            If valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Unknow"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Inconnu"
                 End If
-            ElseIf 40 < valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Mostly fun"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Plutôt sympa"
                 End If
-            ElseIf 40 < valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Only just in love"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Amour mesuré"
                 End If
-            ElseIf 40 < valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Painful"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Souvenirs douloureux"
                 End If
-            ElseIf 40 < valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Fairly happy"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Bonheur mitigé"
                 End If
-            ElseIf 40 < valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Painful"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Souvenirs douloureux"
                 End If
-            ElseIf 40 < valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Fairly happy"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Bonheur mitigé"
                 End If
-            ElseIf 40 < valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Fairly happy"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Passable"
                 End If
-            ElseIf 40 < valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Mostly fun ?"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Plutôt sympa ?"
                 End If
-            ElseIf 40 < valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Fairly trustworthy"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Moyennement fiable"
                 End If
             End If
-
-            If 80 < valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+            If valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Unknow"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Inconnu"
                 End If
-            ElseIf 80 < valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Fun"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Sympa"
                 End If
-            ElseIf 80 < valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "In love"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Amour sincère"
                 End If
-            ElseIf 80 < valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Sad"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Souvenirs tristes"
                 End If
-            ElseIf 80 < valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Happy"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Bonheur"
                 End If
-            ElseIf 80 < valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Sad"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Souvenirs tristes"
                 End If
-            ElseIf 80 < valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Happy"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Bonheur"
                 End If
-            ElseIf 80 < valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Happy"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Agréable"
                 End If
-            ElseIf 80 < valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Fun ?"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Sympa ?"
                 End If
-            ElseIf 80 < valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     Text_valfriend_1.Text = "Trustworthy"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     Text_valfriend_1.Text = "Fiable"
                 End If
             End If
-
+            If valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Unknow"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Inconnu"
+                End If
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "A lot of fun"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Vraiment sympa"
+                End If
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Very much in love"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Grand amour"
+                End If
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Wounds have healed"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Blessures évanouies"
+                End If
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Very happy"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Grand bonheur"
+                End If
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Wounds have healed"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Blessures évanouies"
+                End If
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Very happy"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Grand bonheur"
+                End If
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Very happy"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Super"
+                End If
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "A lot of fun ?"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Vraiment sympa ?"
+                End If
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Trust a lot"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Très fiable"
+                End If
+            End If
+            If valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Unknow"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Inconnu"
+                End If
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Great fun"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Très sympa"
+                End If
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Completely in love"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Amour fou"
+                End If
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Good memories"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Bons souvenirs"
+                End If
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Completely happy"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Bonheur immense"
+                End If
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Good memories"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Bons souvenirs"
+                End If
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Completely happy"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Bonheur immense"
+                End If
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Completely happy"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Formidable"
+                End If
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Great fun ?"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Très sympa ?"
+                End If
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Trust completely"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Absolument fiable"
+                End If
+            End If
+            If valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Unknow"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Inconnu"
+                End If
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Most enjoyable"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Super sympa"
+                End If
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Want to get married"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Veut l'épouser"
+                End If
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Can still be friends ?"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Amitié possible"
+                End If
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "One in a million"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Irremplaçable"
+                End If
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Can still be friends ?"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Amitié possible"
+                End If
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "One in a million"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Irremplaçable"
+                End If
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "One in a million"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Unique au monde"
+                End If
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Trustworthy ?"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Digne de confiance ?"
+                End If
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    Text_valfriend_1.Text = "Best friend forever"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    Text_valfriend_1.Text = "Irremplaçable"
+                End If
+            End If
+            If valu_friend_rela_1.Value <= 10 Then
+                Text_valfriend_1.ForeColor = Color.Blue
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 Then
+                Text_valfriend_1.ForeColor = Color.Purple
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 Then
+                Text_valfriend_1.ForeColor = Color.DarkOrange
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 Then
+                Text_valfriend_1.ForeColor = Color.Orange
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 Then
+                Text_valfriend_1.ForeColor = Color.LimeGreen
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 Then
+                Text_valfriend_1.ForeColor = Color.Green
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 Then
+                Text_valfriend_1.ForeColor = Color.DarkGreen
+            End If
         ElseIf Filever_text.Text = "US" Then
-
+            If valu_friend_rela_1.Value <= 10 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+                Text_valfriend_1.Text = "Unknow"
+            ElseIf valu_friend_rela_1.Value <= 10 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                Text_valfriend_1.Text = "Not getting along"
+            ElseIf valu_friend_rela_1.Value <= 10 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+                Text_valfriend_1.Text = "Not getting along"
+            ElseIf valu_friend_rela_1.Value <= 10 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+                Text_valfriend_1.Text = "Want to forget"
+            ElseIf valu_friend_rela_1.Value <= 10 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+                Text_valfriend_1.Text = "Not getting along"
+            ElseIf valu_friend_rela_1.Value <= 10 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+                Text_valfriend_1.Text = "Want to forget"
+            ElseIf valu_friend_rela_1.Value <= 10 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+                Text_valfriend_1.Text = "Not getting along"
+            ElseIf valu_friend_rela_1.Value <= 10 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+                Text_valfriend_1.Text = "Not getting along"
+            ElseIf valu_friend_rela_1.Value <= 10 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+                Text_valfriend_1.Text = "Not getting along ?"
+            ElseIf valu_friend_rela_1.Value <= 10 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+                Text_valfriend_1.Text = "Not getting along"
+            End If
+            If valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+                Text_valfriend_1.Text = "Unknow"
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                Text_valfriend_1.Text = "Kinda getting along"
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+                Text_valfriend_1.Text = "Kinda getting along"
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+                Text_valfriend_1.Text = "Try to avoid"
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+                Text_valfriend_1.Text = "Kinda getting along"
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+                Text_valfriend_1.Text = "Try to avoid"
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+                Text_valfriend_1.Text = "Kinda getting along"
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+                Text_valfriend_1.Text = "Kinda getting along"
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+                Text_valfriend_1.Text = "Kinda getting along ?"
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+                Text_valfriend_1.Text = "Kinda getting along"
+            End If
+            If valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+                Text_valfriend_1.Text = "Unknow"
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                Text_valfriend_1.Text = "Getting along OK"
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+                Text_valfriend_1.Text = "Getting along OK"
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+                Text_valfriend_1.Text = "Not speaking"
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+                Text_valfriend_1.Text = "Getting along OK"
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+                Text_valfriend_1.Text = "Not speaking"
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+                Text_valfriend_1.Text = "Getting along OK"
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+                Text_valfriend_1.Text = "Getting along OK"
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+                Text_valfriend_1.Text = "Getting along OK ?"
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+                Text_valfriend_1.Text = "Getting along OK"
+            End If
+            If valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+                Text_valfriend_1.Text = "Unknow"
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                Text_valfriend_1.Text = "Good pal"
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+                Text_valfriend_1.Text = "Very much in love"
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+                Text_valfriend_1.Text = "No hard feelings"
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+                Text_valfriend_1.Text = "Very happy"
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+                Text_valfriend_1.Text = "No hard feelings"
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+                Text_valfriend_1.Text = "Good pal"
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+                Text_valfriend_1.Text = "Good pal"
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+                Text_valfriend_1.Text = "Good pal ?"
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+                Text_valfriend_1.Text = "Trustworthy"
+            End If
+            If valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+                Text_valfriend_1.Text = "Unknow"
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                Text_valfriend_1.Text = "Great pal"
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+                Text_valfriend_1.Text = "Totally in love"
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+                Text_valfriend_1.Text = "For the best"
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+                Text_valfriend_1.Text = "Totally happy"
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+                Text_valfriend_1.Text = "For the best"
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+                Text_valfriend_1.Text = "Great pal"
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+                Text_valfriend_1.Text = "Great pal"
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+                Text_valfriend_1.Text = "Great pal ?"
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+                Text_valfriend_1.Text = "Trust completely"
+            End If
+            If valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+                Text_valfriend_1.Text = "Unknow"
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                Text_valfriend_1.Text = "Good buddy"
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+                Text_valfriend_1.Text = "Super in love"
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+                Text_valfriend_1.Text = "Great memories"
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+                Text_valfriend_1.Text = "Super happy"
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+                Text_valfriend_1.Text = "Great memories"
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+                Text_valfriend_1.Text = "Good buddy"
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+                Text_valfriend_1.Text = "Good buddy"
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+                Text_valfriend_1.Text = "Good buddy ?"
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+                Text_valfriend_1.Text = "Bestie"
+            End If
+            If valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
+                Text_valfriend_1.Text = "Unknow"
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                Text_valfriend_1.Text = "Best bud"
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
+                Text_valfriend_1.Text = "Let's get married !"
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(3) Then
+                Text_valfriend_1.Text = "Still friends"
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(4) Then
+                Text_valfriend_1.Text = "Soul mate"
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(5) Then
+                Text_valfriend_1.Text = "Still friends"
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(6) Then
+                Text_valfriend_1.Text = "Best bud"
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(7) Then
+                Text_valfriend_1.Text = "Best bud"
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(8) Then
+                Text_valfriend_1.Text = "Best bud ?"
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 And Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(9) Then
+                Text_valfriend_1.Text = "Best friend forever"
+            End If
+            If valu_friend_rela_1.Value <= 10 Then
+                Text_valfriend_1.ForeColor = Color.Blue
+            ElseIf valu_friend_rela_1.Value > 10 And valu_friend_rela_1.Value <= 40 Then
+                Text_valfriend_1.ForeColor = Color.Purple
+            ElseIf valu_friend_rela_1.Value > 40 And valu_friend_rela_1.Value <= 80 Then
+                Text_valfriend_1.ForeColor = Color.DarkOrange
+            ElseIf valu_friend_rela_1.Value > 80 And valu_friend_rela_1.Value <= 119 Then
+                Text_valfriend_1.ForeColor = Color.Orange
+            ElseIf valu_friend_rela_1.Value > 119 And valu_friend_rela_1.Value <= 159 Then
+                Text_valfriend_1.ForeColor = Color.LimeGreen
+            ElseIf valu_friend_rela_1.Value > 159 And valu_friend_rela_1.Value <= 189 Then
+                Text_valfriend_1.ForeColor = Color.Green
+            ElseIf valu_friend_rela_1.Value > 189 And valu_friend_rela_1.Value <= 200 Then
+                Text_valfriend_1.ForeColor = Color.DarkGreen
+            End If
         End If
+    End Sub
+
+    Private Sub valu_friend_rela_1_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_1.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_2_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_2.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_3_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_3.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_4_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_4.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_5_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_5.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_6_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_6.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_7_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_7.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_8_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_8.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_9_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_9.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_10_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_10.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_11_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_11.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_12_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_12.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_13_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_13.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_14_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_14.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_15_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_15.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_16_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_16.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_17_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_17.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_18_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_18.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_19_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_19.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_20_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_20.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_21_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_21.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_22_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_22.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_23_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_23.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_24_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_24.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_25_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_25.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_26_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_26.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_27_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_27.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_28_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_28.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_29_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_29.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_30_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_30.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_31_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_31.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_32_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_32.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_33_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_33.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_34_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_34.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_35_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_35.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_36_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_36.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_37_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_37.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_38_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_38.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_39_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_39.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_40_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_40.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_41_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_41.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_42_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_42.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_43_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_43.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_44_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_44.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_45_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_45.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_46_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_46.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_47_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_47.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_48_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_48.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_49_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_49.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_50_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_50.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_51_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_51.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_52_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_52.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_53_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_53.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_54_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_54.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_55_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_55.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_56_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_56.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_57_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_57.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_58_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_58.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_59_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_59.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_60_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_60.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_61_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_61.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_62_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_62.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_63_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_63.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_64_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_64.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_65_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_65.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_66_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_66.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_67_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_67.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_68_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_68.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_69_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_69.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_70_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_70.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_71_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_71.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_72_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_72.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_73_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_73.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_74_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_74.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_75_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_75.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_76_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_76.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_77_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_77.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_78_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_78.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_79_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_79.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_80_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_80.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_81_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_81.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_82_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_82.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_83_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_83.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_84_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_84.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_85_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_85.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_86_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_86.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_87_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_87.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_88_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_88.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_89_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_89.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_90_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_90.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_91_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_91.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_92_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_92.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_93_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_93.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_94_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_94.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_95_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_95.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_96_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_96.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_97_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_97.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_98_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_98.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_99_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_99.ValueChanged
+        Namerelavalu()
+    End Sub
+
+    Private Sub valu_friend_rela_100_ValueChanged(sender As Object, e As EventArgs) Handles valu_friend_rela_100.ValueChanged
+        Namerelavalu()
     End Sub
 
     'end Mii edit block
