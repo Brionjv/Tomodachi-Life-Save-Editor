@@ -107,6 +107,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Miimusic_edit.Designer.vb">
+      <DependentUpon>Miimusic_edit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Miimusic_edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -133,6 +139,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Miimusic_edit.resx">
+      <DependentUpon>Miimusic_edit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -158,6 +167,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\Icon_newissue.gif" />
+    <None Include="Resources\Icon_menu_unactive.png" />
+    <None Include="Resources\Icon_menu_active.png" />
     <None Include="Resources\Icon_menu_items.png" />
     <None Include="Resources\Icon_menu_exitems.png" />
     <None Include="Resources\apartment_pink.png" />
