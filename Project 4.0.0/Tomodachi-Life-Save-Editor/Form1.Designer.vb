@@ -288,7 +288,6 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version = New System.Windows.Forms.Label()
         Me.Settings_credits = New System.Windows.Forms.TabPage()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Icon_TLSE_gbt = New System.Windows.Forms.PictureBox()
         Me.Icon_TLSE_git = New System.Windows.Forms.PictureBox()
         Me.Icon_MarioPartyITSE = New System.Windows.Forms.PictureBox()
@@ -1790,6 +1789,8 @@ Partial Class TL_SaveEditor
         Me.Icon_crthall_music = New System.Windows.Forms.PictureBox()
         Me.Timer_arrowexp_right = New System.Windows.Forms.Timer(Me.components)
         Me.Timer_arrowexp_left = New System.Windows.Forms.Timer(Me.components)
+        Me.Settings_links = New System.Windows.Forms.TabPage()
+        Me.Label16 = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TLSE_header.SuspendLayout
@@ -1992,7 +1993,6 @@ Partial Class TL_SaveEditor
         Me.Group_changelog.SuspendLayout
         CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Settings_credits.SuspendLayout
-        Me.Panel11.SuspendLayout
         CType(Me.Icon_TLSE_gbt, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_TLSE_git, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_MarioPartyITSE, System.ComponentModel.ISupportInitialize).BeginInit
@@ -2705,6 +2705,7 @@ Partial Class TL_SaveEditor
         CType(Me.valu_pagh_2, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_pagh_1, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_crthall_music, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Settings_links.SuspendLayout
         Me.SuspendLayout
         '
         'TLSE_logo_update
@@ -5549,6 +5550,7 @@ Partial Class TL_SaveEditor
         Me.TabControl_settings.Controls.Add(Me.Settings_settings)
         Me.TabControl_settings.Controls.Add(Me.Settings_changelog)
         Me.TabControl_settings.Controls.Add(Me.Settings_credits)
+        Me.TabControl_settings.Controls.Add(Me.Settings_links)
         Me.TabControl_settings.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl_settings.Location = New System.Drawing.Point(0, 0)
         Me.TabControl_settings.Multiline = True
@@ -5802,14 +5804,13 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0 Iota"
+        Me.Text_TLSE_version.Text = "Version 4.0.0 Kappa"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
         '
         Me.Settings_credits.BackgroundImage = CType(resources.GetObject("Settings_credits.BackgroundImage"), System.Drawing.Image)
         Me.Settings_credits.Controls.Add(Me.Label2)
-        Me.Settings_credits.Controls.Add(Me.Panel11)
         Me.Settings_credits.Location = New System.Drawing.Point(4, 4)
         Me.Settings_credits.Name = "Settings_credits"
         Me.Settings_credits.Size = New System.Drawing.Size(668, 514)
@@ -5819,35 +5820,19 @@ Partial Class TL_SaveEditor
         '
         'Label2
         '
-        Me.Label2.Location = New System.Drawing.Point(4, 5)
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Label2.Location = New System.Drawing.Point(0, 8)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(600, 506)
+        Me.Label2.Size = New System.Drawing.Size(668, 506)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = resources.GetString("Label2.Text")
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Panel11
-        '
-        Me.Panel11.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
-        Me.Panel11.Controls.Add(Me.Icon_TLSE_gbt)
-        Me.Panel11.Controls.Add(Me.Icon_TLSE_git)
-        Me.Panel11.Controls.Add(Me.Icon_MarioPartyITSE)
-        Me.Panel11.Controls.Add(Me.Icon_PaparMarioSSSE)
-        Me.Panel11.Controls.Add(Me.Icon_nintendogscatSE)
-        Me.Panel11.Controls.Add(Me.Icon_IronfallISE)
-        Me.Panel11.Controls.Add(Me.Icon_ChibiRoboZLSE)
-        Me.Panel11.Controls.Add(Me.Icon_3dsSEL)
-        Me.Panel11.Controls.Add(Me.Icon_MiitopiaSE)
-        Me.Panel11.Location = New System.Drawing.Point(608, 1)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(60, 513)
-        Me.Panel11.TabIndex = 0
         '
         'Icon_TLSE_gbt
         '
         Me.Icon_TLSE_gbt.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_TLSE_gbt.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_gbtpage
-        Me.Icon_TLSE_gbt.Location = New System.Drawing.Point(31, 36)
+        Me.Icon_TLSE_gbt.Location = New System.Drawing.Point(348, 193)
         Me.Icon_TLSE_gbt.Name = "Icon_TLSE_gbt"
         Me.Icon_TLSE_gbt.Size = New System.Drawing.Size(28, 28)
         Me.Icon_TLSE_gbt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -5858,7 +5843,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_TLSE_git.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_TLSE_git.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_gitpage
-        Me.Icon_TLSE_git.Location = New System.Drawing.Point(1, 36)
+        Me.Icon_TLSE_git.Location = New System.Drawing.Point(291, 193)
         Me.Icon_TLSE_git.Name = "Icon_TLSE_git"
         Me.Icon_TLSE_git.Size = New System.Drawing.Size(28, 28)
         Me.Icon_TLSE_git.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -5869,7 +5854,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_MarioPartyITSE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_MarioPartyITSE.Image = CType(resources.GetObject("Icon_MarioPartyITSE.Image"), System.Drawing.Image)
-        Me.Icon_MarioPartyITSE.Location = New System.Drawing.Point(7, 342)
+        Me.Icon_MarioPartyITSE.Location = New System.Drawing.Point(347, 264)
         Me.Icon_MarioPartyITSE.Name = "Icon_MarioPartyITSE"
         Me.Icon_MarioPartyITSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_MarioPartyITSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -5880,7 +5865,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_PaparMarioSSSE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_PaparMarioSSSE.Image = CType(resources.GetObject("Icon_PaparMarioSSSE.Image"), System.Drawing.Image)
-        Me.Icon_PaparMarioSSSE.Location = New System.Drawing.Point(7, 180)
+        Me.Icon_PaparMarioSSSE.Location = New System.Drawing.Point(272, 105)
         Me.Icon_PaparMarioSSSE.Name = "Icon_PaparMarioSSSE"
         Me.Icon_PaparMarioSSSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_PaparMarioSSSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -5891,7 +5876,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_nintendogscatSE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_nintendogscatSE.Image = CType(resources.GetObject("Icon_nintendogscatSE.Image"), System.Drawing.Image)
-        Me.Icon_nintendogscatSE.Location = New System.Drawing.Point(7, 288)
+        Me.Icon_nintendogscatSE.Location = New System.Drawing.Point(272, 264)
         Me.Icon_nintendogscatSE.Name = "Icon_nintendogscatSE"
         Me.Icon_nintendogscatSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_nintendogscatSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -5902,7 +5887,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_IronfallISE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_IronfallISE.Image = CType(resources.GetObject("Icon_IronfallISE.Image"), System.Drawing.Image)
-        Me.Icon_IronfallISE.Location = New System.Drawing.Point(7, 234)
+        Me.Icon_IronfallISE.Location = New System.Drawing.Point(347, 105)
         Me.Icon_IronfallISE.Name = "Icon_IronfallISE"
         Me.Icon_IronfallISE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_IronfallISE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -5913,7 +5898,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_ChibiRoboZLSE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_ChibiRoboZLSE.Image = CType(resources.GetObject("Icon_ChibiRoboZLSE.Image"), System.Drawing.Image)
-        Me.Icon_ChibiRoboZLSE.Location = New System.Drawing.Point(7, 126)
+        Me.Icon_ChibiRoboZLSE.Location = New System.Drawing.Point(444, 183)
         Me.Icon_ChibiRoboZLSE.Name = "Icon_ChibiRoboZLSE"
         Me.Icon_ChibiRoboZLSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_ChibiRoboZLSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -5924,7 +5909,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_3dsSEL.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_3dsSEL.Image = CType(resources.GetObject("Icon_3dsSEL.Image"), System.Drawing.Image)
-        Me.Icon_3dsSEL.Location = New System.Drawing.Point(7, 396)
+        Me.Icon_3dsSEL.Location = New System.Drawing.Point(308, 361)
         Me.Icon_3dsSEL.Name = "Icon_3dsSEL"
         Me.Icon_3dsSEL.Size = New System.Drawing.Size(48, 48)
         Me.Icon_3dsSEL.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -5935,7 +5920,7 @@ Partial Class TL_SaveEditor
         '
         Me.Icon_MiitopiaSE.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_MiitopiaSE.Image = CType(resources.GetObject("Icon_MiitopiaSE.Image"), System.Drawing.Image)
-        Me.Icon_MiitopiaSE.Location = New System.Drawing.Point(7, 72)
+        Me.Icon_MiitopiaSE.Location = New System.Drawing.Point(176, 183)
         Me.Icon_MiitopiaSE.Name = "Icon_MiitopiaSE"
         Me.Icon_MiitopiaSE.Size = New System.Drawing.Size(48, 48)
         Me.Icon_MiitopiaSE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -24784,6 +24769,35 @@ Partial Class TL_SaveEditor
         '
         Me.Timer_arrowexp_left.Interval = 20
         '
+        'Settings_links
+        '
+        Me.Settings_links.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Settings_links.Controls.Add(Me.Label16)
+        Me.Settings_links.Controls.Add(Me.Icon_TLSE_gbt)
+        Me.Settings_links.Controls.Add(Me.Icon_TLSE_git)
+        Me.Settings_links.Controls.Add(Me.Icon_MarioPartyITSE)
+        Me.Settings_links.Controls.Add(Me.Icon_MiitopiaSE)
+        Me.Settings_links.Controls.Add(Me.Icon_PaparMarioSSSE)
+        Me.Settings_links.Controls.Add(Me.Icon_3dsSEL)
+        Me.Settings_links.Controls.Add(Me.Icon_nintendogscatSE)
+        Me.Settings_links.Controls.Add(Me.Icon_ChibiRoboZLSE)
+        Me.Settings_links.Controls.Add(Me.Icon_IronfallISE)
+        Me.Settings_links.Location = New System.Drawing.Point(4, 4)
+        Me.Settings_links.Name = "Settings_links"
+        Me.Settings_links.Size = New System.Drawing.Size(668, 514)
+        Me.Settings_links.TabIndex = 3
+        Me.Settings_links.Text = "Links"
+        Me.Settings_links.UseVisualStyleBackColor = True
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(492, 435)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(14, 13)
+        Me.Label16.TabIndex = 10
+        Me.Label16.Text = "Z"
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -24800,10 +24814,10 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.Panel_concertedit)
         Me.Controls.Add(Me.Panel_extras)
-        Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.Panel_repairsave)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_miiedit)
+        Me.Controls.Add(Me.Panel_itemsedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -25024,7 +25038,6 @@ Partial Class TL_SaveEditor
         Me.Group_changelog.ResumeLayout(False)
         CType(Me.Icon_changelog, System.ComponentModel.ISupportInitialize).EndInit
         Me.Settings_credits.ResumeLayout(False)
-        Me.Panel11.ResumeLayout(False)
         CType(Me.Icon_TLSE_gbt, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_TLSE_git, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_MarioPartyITSE, System.ComponentModel.ISupportInitialize).EndInit
@@ -25779,6 +25792,8 @@ Partial Class TL_SaveEditor
         CType(Me.valu_pagh_2, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_pagh_1, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_crthall_music, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Settings_links.ResumeLayout(False)
+        Me.Settings_links.PerformLayout
         Me.ResumeLayout(False)
         Me.PerformLayout
 
@@ -25987,7 +26002,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_TLSE_version As Label
     Friend WithEvents Settings_credits As TabPage
     Friend WithEvents Label2 As Label
-    Friend WithEvents Panel11 As Panel
     Friend WithEvents Icon_MarioPartyITSE As PictureBox
     Friend WithEvents Icon_PaparMarioSSSE As PictureBox
     Friend WithEvents Icon_nintendogscatSE As PictureBox
@@ -27550,4 +27564,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents Panelmenu_menu As Panel
     Friend WithEvents Panelmenu_issues As Panel
     Friend WithEvents Text_TLSE_issues As Label
+    Friend WithEvents Settings_links As TabPage
+    Friend WithEvents Label16 As Label
 End Class
