@@ -1,2 +1,5 @@
 Warning : A version of Checkpoint can cause some troubles see issue #36
 -> How to fix : Use JK's save manager
+
+USA interaction list is same than EUR
+-> If interaction not show in windows, set target 1 or need other conditions
