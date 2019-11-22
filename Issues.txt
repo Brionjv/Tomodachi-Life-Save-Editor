@@ -1,5 +1,6 @@
-Warning : A version of Checkpoint can cause some troubles see issue #36
--> How to fix : Use JK's save manager
+Warning : A version of Checkpoint and JK's Save Manager can cause some troubles see issue #36
+-> How to fix : Test with JK's save manager or Checkpoint
+If not working contact developper of these tools
 
 USA interaction list is same than EUR
 -> If interaction not show in windows, set target 1 or need other conditions
