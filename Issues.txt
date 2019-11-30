@@ -3,4 +3,4 @@ Warning : A version of Checkpoint and JK's Save Manager can cause some troubles 
 If not working contact developper of these tools
 
 USA interaction list is same than EUR
--> If interaction not show in windows, set target 1 or need other conditions
+-> Some interactions can not work properly, this feature will be rewrite on next updates
