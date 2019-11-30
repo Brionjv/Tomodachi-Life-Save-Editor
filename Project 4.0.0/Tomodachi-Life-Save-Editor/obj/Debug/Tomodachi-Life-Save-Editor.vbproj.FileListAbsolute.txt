@@ -13,3 +13,4 @@ C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Edito
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.xml
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.pdb
 C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.Miimusic_edit.resources
+C:\Users\brice\source\repos\Tomodachi-Life-Save-Editor\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbprojAssemblyReference.cache
