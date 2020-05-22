@@ -115,6 +115,8 @@ Partial Class TL_SaveEditor
         Me.PictureBox41 = New System.Windows.Forms.PictureBox()
         Me.PictureBox40 = New System.Windows.Forms.PictureBox()
         Me.Panel_islandedit = New System.Windows.Forms.Panel()
+        Me.Icon_miidetected = New System.Windows.Forms.PictureBox()
+        Me.Text_miidetected = New System.Windows.Forms.Label()
         Me.Panel_islandaddress = New System.Windows.Forms.Panel()
         Me.Text_islandaddress = New System.Windows.Forms.TextBox()
         Me.valu_lastmii = New System.Windows.Forms.NumericUpDown()
@@ -1862,6 +1864,7 @@ Partial Class TL_SaveEditor
         CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_islandedit.SuspendLayout
+        CType(Me.Icon_miidetected, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_islandaddress.SuspendLayout
         CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_addsymb_islandname.SuspendLayout
@@ -3819,6 +3822,8 @@ Partial Class TL_SaveEditor
         'Panel_islandedit
         '
         Me.Panel_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_panel
+        Me.Panel_islandedit.Controls.Add(Me.Icon_miidetected)
+        Me.Panel_islandedit.Controls.Add(Me.Text_miidetected)
         Me.Panel_islandedit.Controls.Add(Me.Panel_islandaddress)
         Me.Panel_islandedit.Controls.Add(Me.valu_lastmii)
         Me.Panel_islandedit.Controls.Add(Me.Panel_addsymb_islandname)
@@ -3882,6 +3887,30 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Size = New System.Drawing.Size(676, 540)
         Me.Panel_islandedit.TabIndex = 30
         '
+        'Icon_miidetected
+        '
+        Me.Icon_miidetected.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_miidetected.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Icon_miidetected.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Icon_miidetected.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_mii
+        Me.Icon_miidetected.Location = New System.Drawing.Point(574, 503)
+        Me.Icon_miidetected.Name = "Icon_miidetected"
+        Me.Icon_miidetected.Size = New System.Drawing.Size(30, 30)
+        Me.Icon_miidetected.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_miidetected.TabIndex = 305
+        Me.Icon_miidetected.TabStop = False
+        '
+        'Text_miidetected
+        '
+        Me.Text_miidetected.AutoSize = True
+        Me.Text_miidetected.BackColor = System.Drawing.Color.Transparent
+        Me.Text_miidetected.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_miidetected.Location = New System.Drawing.Point(607, 510)
+        Me.Text_miidetected.Name = "Text_miidetected"
+        Me.Text_miidetected.Size = New System.Drawing.Size(33, 16)
+        Me.Text_miidetected.TabIndex = 304
+        Me.Text_miidetected.Text = "X  0"
+        '
         'Panel_islandaddress
         '
         Me.Panel_islandaddress.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
@@ -3911,7 +3940,6 @@ Partial Class TL_SaveEditor
         Me.valu_lastmii.Size = New System.Drawing.Size(58, 16)
         Me.valu_lastmii.TabIndex = 230
         Me.valu_lastmii.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_lastmii.Value = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_lastmii.Visible = False
         '
         'Panel_addsymb_islandname
@@ -14435,6 +14463,7 @@ Partial Class TL_SaveEditor
         Me.infobubble_target2.Name = "infobubble_target2"
         Me.infobubble_target2.Size = New System.Drawing.Size(386, 31)
         Me.infobubble_target2.TabIndex = 277
+        Me.infobubble_target2.Visible = False
         '
         'Text_infobubble_target2
         '
@@ -14456,6 +14485,7 @@ Partial Class TL_SaveEditor
         Me.infobubble_target1.Name = "infobubble_target1"
         Me.infobubble_target1.Size = New System.Drawing.Size(386, 31)
         Me.infobubble_target1.TabIndex = 277
+        Me.infobubble_target1.Visible = False
         '
         'Text_infobubble_target1
         '
@@ -14477,6 +14507,7 @@ Partial Class TL_SaveEditor
         Me.infobubble_interaction.Name = "infobubble_interaction"
         Me.infobubble_interaction.Size = New System.Drawing.Size(386, 31)
         Me.infobubble_interaction.TabIndex = 276
+        Me.infobubble_interaction.Visible = False
         '
         'Text_infobubble_interaction
         '
@@ -24920,10 +24951,10 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.Panel_concertedit)
-        Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_repairsave)
-        Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_itemsedit)
+        Me.Controls.Add(Me.Panel_islandedit)
+        Me.Controls.Add(Me.Panel_extras)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -24994,6 +25025,7 @@ Partial Class TL_SaveEditor
         CType(Me.PictureBox40, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_islandedit.ResumeLayout(False)
         Me.Panel_islandedit.PerformLayout
+        CType(Me.Icon_miidetected, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_islandaddress.ResumeLayout(False)
         Me.Panel_islandaddress.PerformLayout
         CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).EndInit
@@ -27684,4 +27716,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_infobubble_target2 As Label
     Friend WithEvents Text_infobubble_target1 As Label
     Friend WithEvents Text_infobubble_interaction As Label
+    Friend WithEvents Text_miidetected As Label
+    Friend WithEvents Icon_miidetected As PictureBox
 End Class
