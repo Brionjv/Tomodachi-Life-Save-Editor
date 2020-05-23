@@ -967,7 +967,6 @@ Partial Class TL_SaveEditor
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.AdvH_setallrelation = New System.Windows.Forms.PictureBox()
         Me.Panel28 = New System.Windows.Forms.Panel()
-        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
         Me.Select_setallrelation = New System.Windows.Forms.ComboBox()
         Me.Button_setallrelation = New System.Windows.Forms.Button()
         Me.AdvH_setallfriends = New System.Windows.Forms.PictureBox()
@@ -2266,7 +2265,6 @@ Partial Class TL_SaveEditor
         Me.TabPage4.SuspendLayout
         CType(Me.AdvH_setallrelation, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel28.SuspendLayout
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_setallfriends, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_friendlist, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).BeginInit
@@ -14896,24 +14894,12 @@ Partial Class TL_SaveEditor
         '
         Me.Panel28.BackColor = System.Drawing.Color.Transparent
         Me.Panel28.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
-        Me.Panel28.Controls.Add(Me.PictureBox26)
         Me.Panel28.Controls.Add(Me.Select_setallrelation)
         Me.Panel28.Controls.Add(Me.Button_setallrelation)
         Me.Panel28.Location = New System.Drawing.Point(444, 435)
         Me.Panel28.Name = "Panel28"
         Me.Panel28.Size = New System.Drawing.Size(144, 51)
         Me.Panel28.TabIndex = 244
-        '
-        'PictureBox26
-        '
-        Me.PictureBox26.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox26.Image = CType(resources.GetObject("PictureBox26.Image"), System.Drawing.Image)
-        Me.PictureBox26.Location = New System.Drawing.Point(1, 1)
-        Me.PictureBox26.Name = "PictureBox26"
-        Me.PictureBox26.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox26.TabIndex = 250
-        Me.PictureBox26.TabStop = False
         '
         'Select_setallrelation
         '
@@ -25470,7 +25456,6 @@ Partial Class TL_SaveEditor
         Me.TabPage4.ResumeLayout(False)
         CType(Me.AdvH_setallrelation, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel28.ResumeLayout(False)
-        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_setallfriends, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_friendlist, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox27, System.ComponentModel.ISupportInitialize).EndInit
@@ -27264,7 +27249,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents valu_lastmii As NumericUpDown
     Friend WithEvents Textval_economy As TextBox
     Friend WithEvents Text_crcxmodem As TextBox
-    Friend WithEvents PictureBox26 As PictureBox
     Friend WithEvents Text_valfriend_1 As Label
     Friend WithEvents Text_valfriend_6 As Label
     Friend WithEvents Text_valfriend_11 As Label
