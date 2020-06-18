@@ -1639,6 +1639,7 @@ Partial Class TL_SaveEditor
         Me.TextBox_fpath = New System.Windows.Forms.TextBox()
         Me.Timer_done = New System.Windows.Forms.Timer(Me.components)
         Me.Panel_itemsedit = New System.Windows.Forms.Panel()
+        Me.Label16 = New System.Windows.Forms.Label()
         Me.Panel50 = New System.Windows.Forms.Panel()
         Me.Panel51 = New System.Windows.Forms.Panel()
         Me.PictureBox29 = New System.Windows.Forms.PictureBox()
@@ -22979,6 +22980,7 @@ Partial Class TL_SaveEditor
         'Panel_itemsedit
         '
         Me.Panel_itemsedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_ft_items
+        Me.Panel_itemsedit.Controls.Add(Me.Label16)
         Me.Panel_itemsedit.Controls.Add(Me.Panel50)
         Me.Panel_itemsedit.Controls.Add(Me.Panel_itemsedit_foods)
         Me.Panel_itemsedit.Controls.Add(Me.Panel_itemsedit_clothes)
@@ -22994,6 +22996,18 @@ Partial Class TL_SaveEditor
         Me.Panel_itemsedit.Size = New System.Drawing.Size(676, 540)
         Me.Panel_itemsedit.TabIndex = 97
         Me.Panel_itemsedit.Visible = False
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.ForeColor = System.Drawing.Color.Red
+        Me.Label16.Location = New System.Drawing.Point(147, 39)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(382, 13)
+        Me.Label16.TabIndex = 28
+        Me.Label16.Text = "If you used these features, all of your corresponding inventories will be overwri" &
+    "te"
         '
         'Panel50
         '
@@ -23834,7 +23848,6 @@ Partial Class TL_SaveEditor
         Me.PictureBox17.Size = New System.Drawing.Size(30, 30)
         Me.PictureBox17.TabIndex = 72
         Me.PictureBox17.TabStop = False
-        Me.PictureBox17.Visible = False
         '
         'Check_delete_goodsitems
         '
@@ -24952,6 +24965,7 @@ Partial Class TL_SaveEditor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
+        Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -24962,7 +24976,6 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.Panel_concertedit)
         Me.Controls.Add(Me.Panel_repairsave)
-        Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_miiedit)
@@ -25823,6 +25836,7 @@ Partial Class TL_SaveEditor
         Me.Fea_unlock_music.ResumeLayout(False)
         CType(Me.valu_allmusic, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_itemsedit.ResumeLayout(False)
+        Me.Panel_itemsedit.PerformLayout
         Me.Panel50.ResumeLayout(False)
         Me.Panel51.ResumeLayout(False)
         CType(Me.PictureBox29, System.ComponentModel.ISupportInitialize).EndInit
@@ -27728,4 +27742,5 @@ Partial Class TL_SaveEditor
     Friend WithEvents Text_miidetected As Label
     Friend WithEvents Icon_miidetected As PictureBox
     Friend WithEvents Select_Interaction_USA As ComboBox
+    Friend WithEvents Label16 As Label
 End Class

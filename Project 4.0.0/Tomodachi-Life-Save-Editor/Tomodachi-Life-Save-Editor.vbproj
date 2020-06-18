@@ -100,6 +100,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advanceitemsedit.Designer.vb">
+      <DependentUpon>Advanceitemsedit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Advanceitemsedit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Advanceitemsedit.resx">
+      <DependentUpon>Advanceitemsedit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +176,26 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\US_gooditems_06.png" />
+    <None Include="Resources\US_gooditems_02.png" />
+    <None Include="Resources\EU_gooditems_18.png" />
+    <None Include="Resources\EU_gooditems_17.png" />
+    <None Include="Resources\EU_gooditems_16.png" />
+    <None Include="Resources\EU_gooditems_15.png" />
+    <None Include="Resources\EU_gooditems_14.png" />
+    <None Include="Resources\EU_gooditems_13.png" />
+    <None Include="Resources\EU_gooditems_12.png" />
+    <None Include="Resources\EU_gooditems_11.png" />
+    <None Include="Resources\EU_gooditems_10.png" />
+    <None Include="Resources\EU_gooditems_09.png" />
+    <None Include="Resources\EU_gooditems_08.png" />
+    <None Include="Resources\EU_gooditems_07.png" />
+    <None Include="Resources\EU_gooditems_06.png" />
+    <None Include="Resources\EU_gooditems_05.png" />
+    <None Include="Resources\EU_gooditems_04.png" />
+    <None Include="Resources\EU_gooditems_03.png" />
+    <None Include="Resources\EU_gooditems_02.png" />
+    <None Include="Resources\EU_gooditems_01.png" />
     <None Include="Resources\Icon_newissue.gif" />
     <None Include="Resources\Icon_menu_unactive.png" />
     <None Include="Resources\Icon_menu_active.png" />
