@@ -115,6 +115,21 @@ Partial Class Advanceitemsedit
         Me.CheckBox34 = New System.Windows.Forms.CheckBox()
         Me.Panel19 = New System.Windows.Forms.Panel()
         Me.valu_itemsedit_foods = New System.Windows.Forms.NumericUpDown()
+        Me.Filever_text = New System.Windows.Forms.Label()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.AdvH_itemsedit_foods = New System.Windows.Forms.PictureBox()
+        Me.Check_timetravel = New System.Windows.Forms.CheckBox()
+        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.CheckBox35 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox36 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox37 = New System.Windows.Forms.CheckBox()
+        Me.NumericUpDown18 = New System.Windows.Forms.NumericUpDown()
+        Me.Panel22 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown19 = New System.Windows.Forms.NumericUpDown()
+        Me.CheckBox38 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox39 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox40 = New System.Windows.Forms.CheckBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.valu_goodi_1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -153,6 +168,12 @@ Partial Class Advanceitemsedit
         CType(Me.NumericUpDown17, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel19.SuspendLayout()
         CType(Me.valu_itemsedit_foods, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel20.SuspendLayout()
+        CType(Me.AdvH_itemsedit_foods, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel21.SuspendLayout()
+        CType(Me.NumericUpDown18, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel22.SuspendLayout()
+        CType(Me.NumericUpDown19, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'valu_goodi_1
@@ -169,7 +190,7 @@ Partial Class Advanceitemsedit
         '
         Me.Check_NA_goodi_1.Appearance = System.Windows.Forms.Appearance.Button
         Me.Check_NA_goodi_1.BackColor = System.Drawing.Color.Transparent
-        Me.Check_NA_goodi_1.BackgroundImage = CType(resources.GetObject("Check_NA_goodi_1.BackgroundImage"), System.Drawing.Image)
+        Me.Check_NA_goodi_1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_deleted
         Me.Check_NA_goodi_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Check_NA_goodi_1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Check_NA_goodi_1.FlatAppearance.BorderSize = 0
@@ -187,7 +208,7 @@ Partial Class Advanceitemsedit
         '
         Me.Check_available_goodi_1.Appearance = System.Windows.Forms.Appearance.Button
         Me.Check_available_goodi_1.BackColor = System.Drawing.Color.Transparent
-        Me.Check_available_goodi_1.BackgroundImage = CType(resources.GetObject("Check_available_goodi_1.BackgroundImage"), System.Drawing.Image)
+        Me.Check_available_goodi_1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_availableshop
         Me.Check_available_goodi_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Check_available_goodi_1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Check_available_goodi_1.FlatAppearance.BorderSize = 0
@@ -1444,12 +1465,234 @@ Partial Class Advanceitemsedit
         'valu_itemsedit_foods
         '
         Me.valu_itemsedit_foods.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_itemsedit_foods.Location = New System.Drawing.Point(12, 612)
+        Me.valu_itemsedit_foods.Location = New System.Drawing.Point(12, 631)
         Me.valu_itemsedit_foods.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_itemsedit_foods.Name = "valu_itemsedit_foods"
         Me.valu_itemsedit_foods.Size = New System.Drawing.Size(56, 16)
         Me.valu_itemsedit_foods.TabIndex = 342
         Me.valu_itemsedit_foods.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Filever_text
+        '
+        Me.Filever_text.BackColor = System.Drawing.Color.Transparent
+        Me.Filever_text.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Filever_text.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Filever_text.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Filever_text.Location = New System.Drawing.Point(0, 0)
+        Me.Filever_text.Name = "Filever_text"
+        Me.Filever_text.Size = New System.Drawing.Size(34, 34)
+        Me.Filever_text.TabIndex = 343
+        Me.Filever_text.Text = "EU"
+        Me.Filever_text.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel20
+        '
+        Me.Panel20.BackColor = System.Drawing.Color.Transparent
+        Me.Panel20.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
+        Me.Panel20.Controls.Add(Me.Filever_text)
+        Me.Panel20.Location = New System.Drawing.Point(12, 594)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(34, 34)
+        Me.Panel20.TabIndex = 344
+        '
+        'AdvH_itemsedit_foods
+        '
+        Me.AdvH_itemsedit_foods.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_itemsedit_foods.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_itemsedit_foods.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
+        Me.AdvH_itemsedit_foods.Location = New System.Drawing.Point(1178, 641)
+        Me.AdvH_itemsedit_foods.Name = "AdvH_itemsedit_foods"
+        Me.AdvH_itemsedit_foods.Size = New System.Drawing.Size(23, 22)
+        Me.AdvH_itemsedit_foods.TabIndex = 345
+        Me.AdvH_itemsedit_foods.TabStop = False
+        Me.AdvH_itemsedit_foods.Visible = False
+        '
+        'Check_timetravel
+        '
+        Me.Check_timetravel.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_timetravel.BackColor = System.Drawing.Color.White
+        Me.Check_timetravel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_timetravel.FlatAppearance.BorderSize = 0
+        Me.Check_timetravel.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_timetravel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_timetravel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_timetravel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_timetravel.Location = New System.Drawing.Point(4, 12)
+        Me.Check_timetravel.Name = "Check_timetravel"
+        Me.Check_timetravel.Size = New System.Drawing.Size(122, 23)
+        Me.Check_timetravel.TabIndex = 347
+        Me.Check_timetravel.Text = "Set all items clicked to"
+        Me.Check_timetravel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_timetravel.UseVisualStyleBackColor = False
+        '
+        'Panel21
+        '
+        Me.Panel21.BackColor = System.Drawing.Color.Transparent
+        Me.Panel21.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
+        Me.Panel21.Controls.Add(Me.NumericUpDown18)
+        Me.Panel21.Controls.Add(Me.CheckBox37)
+        Me.Panel21.Controls.Add(Me.CheckBox36)
+        Me.Panel21.Controls.Add(Me.CheckBox35)
+        Me.Panel21.Controls.Add(Me.Check_timetravel)
+        Me.Panel21.Location = New System.Drawing.Point(231, 594)
+        Me.Panel21.Name = "Panel21"
+        Me.Panel21.Size = New System.Drawing.Size(260, 47)
+        Me.Panel21.TabIndex = 348
+        '
+        'CheckBox35
+        '
+        Me.CheckBox35.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox35.BackColor = System.Drawing.Color.White
+        Me.CheckBox35.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_availableshop
+        Me.CheckBox35.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CheckBox35.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox35.FlatAppearance.BorderSize = 0
+        Me.CheckBox35.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.CheckBox35.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.CheckBox35.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.CheckBox35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox35.Location = New System.Drawing.Point(130, 12)
+        Me.CheckBox35.Name = "CheckBox35"
+        Me.CheckBox35.Size = New System.Drawing.Size(23, 23)
+        Me.CheckBox35.TabIndex = 348
+        Me.CheckBox35.UseVisualStyleBackColor = False
+        '
+        'CheckBox36
+        '
+        Me.CheckBox36.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox36.BackColor = System.Drawing.Color.White
+        Me.CheckBox36.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_deleted
+        Me.CheckBox36.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CheckBox36.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox36.FlatAppearance.BorderSize = 0
+        Me.CheckBox36.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.CheckBox36.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.CheckBox36.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.CheckBox36.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox36.Location = New System.Drawing.Point(157, 12)
+        Me.CheckBox36.Name = "CheckBox36"
+        Me.CheckBox36.Size = New System.Drawing.Size(23, 23)
+        Me.CheckBox36.TabIndex = 349
+        Me.CheckBox36.UseVisualStyleBackColor = False
+        '
+        'CheckBox37
+        '
+        Me.CheckBox37.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox37.BackColor = System.Drawing.Color.White
+        Me.CheckBox37.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CheckBox37.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox37.FlatAppearance.BorderSize = 0
+        Me.CheckBox37.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.CheckBox37.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.CheckBox37.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.CheckBox37.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox37.Location = New System.Drawing.Point(184, 12)
+        Me.CheckBox37.Name = "CheckBox37"
+        Me.CheckBox37.Size = New System.Drawing.Size(72, 23)
+        Me.CheckBox37.TabIndex = 350
+        Me.CheckBox37.UseVisualStyleBackColor = False
+        '
+        'NumericUpDown18
+        '
+        Me.NumericUpDown18.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown18.Location = New System.Drawing.Point(209, 16)
+        Me.NumericUpDown18.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.NumericUpDown18.Name = "NumericUpDown18"
+        Me.NumericUpDown18.Size = New System.Drawing.Size(44, 16)
+        Me.NumericUpDown18.TabIndex = 351
+        Me.NumericUpDown18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel22
+        '
+        Me.Panel22.BackColor = System.Drawing.Color.Transparent
+        Me.Panel22.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_menu
+        Me.Panel22.Controls.Add(Me.Button1)
+        Me.Panel22.Controls.Add(Me.NumericUpDown19)
+        Me.Panel22.Controls.Add(Me.CheckBox38)
+        Me.Panel22.Controls.Add(Me.CheckBox39)
+        Me.Panel22.Controls.Add(Me.CheckBox40)
+        Me.Panel22.Location = New System.Drawing.Point(668, 594)
+        Me.Panel22.Name = "Panel22"
+        Me.Panel22.Size = New System.Drawing.Size(260, 47)
+        Me.Panel22.TabIndex = 349
+        '
+        'NumericUpDown19
+        '
+        Me.NumericUpDown19.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown19.Location = New System.Drawing.Point(209, 16)
+        Me.NumericUpDown19.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.NumericUpDown19.Name = "NumericUpDown19"
+        Me.NumericUpDown19.Size = New System.Drawing.Size(44, 16)
+        Me.NumericUpDown19.TabIndex = 351
+        Me.NumericUpDown19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'CheckBox38
+        '
+        Me.CheckBox38.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox38.BackColor = System.Drawing.Color.White
+        Me.CheckBox38.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CheckBox38.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox38.FlatAppearance.BorderSize = 0
+        Me.CheckBox38.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.CheckBox38.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.CheckBox38.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.CheckBox38.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox38.Location = New System.Drawing.Point(184, 12)
+        Me.CheckBox38.Name = "CheckBox38"
+        Me.CheckBox38.Size = New System.Drawing.Size(72, 23)
+        Me.CheckBox38.TabIndex = 350
+        Me.CheckBox38.UseVisualStyleBackColor = False
+        '
+        'CheckBox39
+        '
+        Me.CheckBox39.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox39.BackColor = System.Drawing.Color.White
+        Me.CheckBox39.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_deleted
+        Me.CheckBox39.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CheckBox39.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox39.FlatAppearance.BorderSize = 0
+        Me.CheckBox39.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.CheckBox39.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.CheckBox39.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.CheckBox39.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox39.Location = New System.Drawing.Point(157, 12)
+        Me.CheckBox39.Name = "CheckBox39"
+        Me.CheckBox39.Size = New System.Drawing.Size(23, 23)
+        Me.CheckBox39.TabIndex = 349
+        Me.CheckBox39.UseVisualStyleBackColor = False
+        '
+        'CheckBox40
+        '
+        Me.CheckBox40.Appearance = System.Windows.Forms.Appearance.Button
+        Me.CheckBox40.BackColor = System.Drawing.Color.White
+        Me.CheckBox40.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_availableshop
+        Me.CheckBox40.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.CheckBox40.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.CheckBox40.FlatAppearance.BorderSize = 0
+        Me.CheckBox40.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.CheckBox40.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.CheckBox40.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.CheckBox40.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CheckBox40.Location = New System.Drawing.Point(130, 12)
+        Me.CheckBox40.Name = "CheckBox40"
+        Me.CheckBox40.Size = New System.Drawing.Size(23, 23)
+        Me.CheckBox40.TabIndex = 348
+        Me.CheckBox40.UseVisualStyleBackColor = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Orange
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(4, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(122, 23)
+        Me.Button1.TabIndex = 350
+        Me.Button1.Text = "Set all to"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Advanceitemsedit
         '
@@ -1458,6 +1701,10 @@ Partial Class Advanceitemsedit
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
         Me.ClientSize = New System.Drawing.Size(1202, 664)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Panel22)
+        Me.Controls.Add(Me.Panel21)
+        Me.Controls.Add(Me.AdvH_itemsedit_foods)
+        Me.Controls.Add(Me.Panel20)
         Me.Controls.Add(Me.valu_itemsedit_foods)
         Me.Controls.Add(Me.Panel19)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -1521,6 +1768,12 @@ Partial Class Advanceitemsedit
         CType(Me.NumericUpDown17, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel19.ResumeLayout(False)
         CType(Me.valu_itemsedit_foods, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel20.ResumeLayout(False)
+        CType(Me.AdvH_itemsedit_foods, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel21.ResumeLayout(False)
+        CType(Me.NumericUpDown18, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel22.ResumeLayout(False)
+        CType(Me.NumericUpDown19, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1616,4 +1869,19 @@ Partial Class Advanceitemsedit
     Friend WithEvents CheckBox34 As CheckBox
     Friend WithEvents Panel19 As Panel
     Friend WithEvents valu_itemsedit_foods As NumericUpDown
+    Friend WithEvents Filever_text As Label
+    Friend WithEvents Panel20 As Panel
+    Friend WithEvents AdvH_itemsedit_foods As PictureBox
+    Friend WithEvents Check_timetravel As CheckBox
+    Friend WithEvents Panel21 As Panel
+    Friend WithEvents CheckBox35 As CheckBox
+    Friend WithEvents NumericUpDown18 As NumericUpDown
+    Friend WithEvents CheckBox37 As CheckBox
+    Friend WithEvents CheckBox36 As CheckBox
+    Friend WithEvents Panel22 As Panel
+    Friend WithEvents NumericUpDown19 As NumericUpDown
+    Friend WithEvents CheckBox38 As CheckBox
+    Friend WithEvents CheckBox39 As CheckBox
+    Friend WithEvents CheckBox40 As CheckBox
+    Friend WithEvents Button1 As Button
 End Class

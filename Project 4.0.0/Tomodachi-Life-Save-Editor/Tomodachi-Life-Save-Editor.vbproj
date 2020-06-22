@@ -176,6 +176,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_deleted.png" />
+    <None Include="Resources\icon_availableshop.png" />
     <None Include="Resources\US_gooditems_06.png" />
     <None Include="Resources\US_gooditems_02.png" />
     <None Include="Resources\EU_gooditems_18.png" />
