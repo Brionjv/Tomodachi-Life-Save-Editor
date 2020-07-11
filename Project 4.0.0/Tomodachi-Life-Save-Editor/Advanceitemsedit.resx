@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CheckBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -127,7 +127,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -146,7 +146,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -155,7 +155,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -174,7 +174,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -183,7 +183,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -202,7 +202,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -211,7 +211,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -230,7 +230,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -239,7 +239,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox10.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -258,7 +258,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox11.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -267,7 +267,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox12.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -286,7 +286,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox13.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -295,7 +295,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox14.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -314,7 +314,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox15.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_10.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -323,7 +323,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox16.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_10.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -342,7 +342,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox17.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -351,7 +351,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox18.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -370,7 +370,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox19.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_16.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -379,7 +379,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox20.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_16.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -398,7 +398,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_15.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -407,7 +407,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox22.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_15.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -426,7 +426,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox23.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_14.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -435,7 +435,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox24.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_14.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -454,7 +454,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox25.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_13.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -463,7 +463,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox26.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_13.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -482,7 +482,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox27.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_12.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -491,7 +491,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox28.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_12.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -510,7 +510,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox29.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_11.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -519,7 +519,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox30.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_11.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -538,7 +538,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox31.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_18.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -547,7 +547,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox32.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_18.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E
@@ -566,7 +566,7 @@
         Ii/FYqiuUGEt8AdCKvPzYqMJeOPVrMMvFZch5z14vroKPetCjL/cxhEk5pPOtgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox33.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_available_goodi_17.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAALdJREFUSEu1zVEWwiAMRFG24rZcjTvHk9pBOjxpxfhxawyTpNRa/w6b2bCZDZsZ
@@ -575,7 +575,7 @@
         nrsCm5JxIGAzGzazYTNXLU/JeV1DfAlSjwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CheckBox34.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Check_NA_goodi_17.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         wwAADsMBx2+oZAAAAyRJREFUSEuNVjtLI1EYHTWJjxij8REVdbUIiAa08IHl2ghWohaCIPgzfGGnjb9E

@@ -20,6 +20,7 @@ D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodac
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\bin\Debug\Tomodachi-Life-Save-Editor.xml
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\bin\Debug\PackageIO.dll
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbprojAssemblyReference.cache
+D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.Advanceitemsedit.resources
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.TL_SaveEditor.resources
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.Miimusic_edit.resources
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.Resources.resources
@@ -30,4 +31,3 @@ D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodac
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.exe
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.xml
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.pdb
-D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.Advanceitemsedit.resources
