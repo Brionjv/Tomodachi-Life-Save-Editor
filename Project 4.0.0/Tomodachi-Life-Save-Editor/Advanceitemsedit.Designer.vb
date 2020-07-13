@@ -1504,7 +1504,7 @@ Partial Class Advanceitemsedit
         Me.AdvH_itemsedit_foods.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_itemsedit_foods.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_itemsedit_foods.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_advhelp
-        Me.AdvH_itemsedit_foods.Location = New System.Drawing.Point(1178, 641)
+        Me.AdvH_itemsedit_foods.Location = New System.Drawing.Point(1, 641)
         Me.AdvH_itemsedit_foods.Name = "AdvH_itemsedit_foods"
         Me.AdvH_itemsedit_foods.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_itemsedit_foods.TabIndex = 345

@@ -1,4 +1,26 @@
-﻿Public Class Advanceitemsedit
+﻿Imports PackageIO
+Imports System.Net
+Public Class Advanceitemsedit
+    Dim savedataArc As String
+    Dim Goodsitems1 As String
+    Dim Goodsitems2 As String
+    Dim Goodsitems3 As String
+    Dim Goodsitems4 As String
+    Dim Goodsitems5 As String
+    Dim Goodsitems6 As String
+    Dim Goodsitems7 As String
+    Dim Goodsitems8 As String
+    Dim Goodsitems9 As String
+    Dim Goodsitems10 As String
+    Dim Goodsitems11 As String
+    Dim Goodsitems12 As String
+    Dim Goodsitems13 As String
+    Dim Goodsitems14 As String
+    Dim Goodsitems15 As String
+    Dim Goodsitems16 As String
+    Dim Goodsitems17 As String
+    Dim Goodsitems18 As String
+
     Private Sub Fea_setallto_Click(sender As Object, e As EventArgs) Handles Fea_setallto.Click
         'goodsitems
         If Panel_gooditems.Visible = True Then
@@ -1326,5 +1348,80 @@
             Check_setclick_unavailable.Enabled = True
             Check_setclick_available.Enabled = True
         End If
+    End Sub
+
+    Public Sub savefileregion()
+        'goodsitems
+        Goodsitems1 = &H18F0
+        Goodsitems2 = &H18F1
+        Goodsitems3 = &H18F2
+        Goodsitems4 = &H18F3
+        Goodsitems5 = &H18F4
+        Goodsitems6 = &H18F5
+        Goodsitems7 = &H18F6
+        Goodsitems8 = &H18F7
+        Goodsitems9 = &H18F8
+        Goodsitems10 = &H18F9
+        Goodsitems11 = &H18FA
+        Goodsitems12 = &H18FB
+        Goodsitems13 = &H18FC
+        Goodsitems14 = &H18FD
+        Goodsitems15 = &H18FE
+        Goodsitems16 = &H18FF
+        Goodsitems17 = &H1900
+        If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
+            Goodsitems18 = &H1901
+        End If
+        'end goodsitems
+    End Sub
+
+    Public Sub Readgoodsitems()
+        Try
+            Dim Reader As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+            Reader.Position = Goodsitems1
+            valu_goodi_1.Value = Reader.ReadByte
+            Reader.Position = Goodsitems2
+            valu_goodi_2.Value = Reader.ReadByte
+            Reader.Position = Goodsitems3
+            valu_goodi_3.Value = Reader.ReadByte
+            Reader.Position = Goodsitems4
+            valu_goodi_4.Value = Reader.ReadByte
+            Reader.Position = Goodsitems5
+            valu_goodi_5.Value = Reader.ReadByte
+            Reader.Position = Goodsitems6
+            valu_goodi_6.Value = Reader.ReadByte
+            Reader.Position = Goodsitems7
+            valu_goodi_7.Value = Reader.ReadByte
+            Reader.Position = Goodsitems8
+            valu_goodi_8.Value = Reader.ReadByte
+            Reader.Position = Goodsitems9
+            valu_goodi_9.Value = Reader.ReadByte
+            Reader.Position = Goodsitems10
+            valu_goodi_10.Value = Reader.ReadByte
+            Reader.Position = Goodsitems11
+            valu_goodi_11.Value = Reader.ReadByte
+            Reader.Position = Goodsitems12
+            valu_goodi_12.Value = Reader.ReadByte
+            Reader.Position = Goodsitems13
+            valu_goodi_13.Value = Reader.ReadByte
+            Reader.Position = Goodsitems14
+            valu_goodi_14.Value = Reader.ReadByte
+            Reader.Position = Goodsitems15
+            valu_goodi_15.Value = Reader.ReadByte
+            Reader.Position = Goodsitems16
+            valu_goodi_16.Value = Reader.ReadByte
+            Reader.Position = Goodsitems17
+            valu_goodi_17.Value = Reader.ReadByte
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
+                Reader.Position = Goodsitems18
+                valu_goodi_18.Value = Reader.ReadByte
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Private Sub Advanceitemsedit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        savedataArc = TL_SaveEditor.TextBox_fpath.Text
     End Sub
 End Class
