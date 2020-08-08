@@ -22,6 +22,7 @@ Partial Class Advanceitemsedit
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Advanceitemsedit))
         Me.valu_goodi_1 = New System.Windows.Forms.NumericUpDown()
         Me.Check_NA_goodi_1 = New System.Windows.Forms.CheckBox()
@@ -134,6 +135,9 @@ Partial Class Advanceitemsedit
         Me.Check_setall_valu = New System.Windows.Forms.CheckBox()
         Me.Check_setall_unavailable = New System.Windows.Forms.CheckBox()
         Me.Check_setall_available = New System.Windows.Forms.CheckBox()
+        Me.Icon_closeadvitemsedit = New System.Windows.Forms.PictureBox()
+        Me.Icon_saveadvitemsedit = New System.Windows.Forms.PictureBox()
+        Me.Lapstime = New System.Windows.Forms.Timer(Me.components)
         CType(Me.valu_goodi_1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_goodi_1.SuspendLayout()
         Me.Panel_goodi_2.SuspendLayout()
@@ -178,6 +182,8 @@ Partial Class Advanceitemsedit
         CType(Me.valu_setclick, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel22.SuspendLayout()
         CType(Me.valu_setall, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_closeadvitemsedit, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_saveadvitemsedit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'valu_goodi_1
@@ -1750,6 +1756,28 @@ Partial Class Advanceitemsedit
         Me.Check_setall_available.TabIndex = 348
         Me.Check_setall_available.UseVisualStyleBackColor = False
         '
+        'Icon_closeadvitemsedit
+        '
+        Me.Icon_closeadvitemsedit.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_closeadvitemsedit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_closeadvitemsedit.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_return2
+        Me.Icon_closeadvitemsedit.Location = New System.Drawing.Point(1161, 633)
+        Me.Icon_closeadvitemsedit.Name = "Icon_closeadvitemsedit"
+        Me.Icon_closeadvitemsedit.Size = New System.Drawing.Size(40, 30)
+        Me.Icon_closeadvitemsedit.TabIndex = 350
+        Me.Icon_closeadvitemsedit.TabStop = False
+        '
+        'Icon_saveadvitemsedit
+        '
+        Me.Icon_saveadvitemsedit.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_saveadvitemsedit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_saveadvitemsedit.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_validsave2
+        Me.Icon_saveadvitemsedit.Location = New System.Drawing.Point(1115, 633)
+        Me.Icon_saveadvitemsedit.Name = "Icon_saveadvitemsedit"
+        Me.Icon_saveadvitemsedit.Size = New System.Drawing.Size(40, 30)
+        Me.Icon_saveadvitemsedit.TabIndex = 351
+        Me.Icon_saveadvitemsedit.TabStop = False
+        '
         'Advanceitemsedit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1757,6 +1785,8 @@ Partial Class Advanceitemsedit
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_itemspanel
         Me.ClientSize = New System.Drawing.Size(1202, 664)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Icon_saveadvitemsedit)
+        Me.Controls.Add(Me.Icon_closeadvitemsedit)
         Me.Controls.Add(Me.Panel22)
         Me.Controls.Add(Me.Panel21)
         Me.Controls.Add(Me.AdvH_itemsedit_foods)
@@ -1830,6 +1860,8 @@ Partial Class Advanceitemsedit
         CType(Me.valu_setclick, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel22.ResumeLayout(False)
         CType(Me.valu_setall, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_closeadvitemsedit, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_saveadvitemsedit, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1944,4 +1976,7 @@ Partial Class Advanceitemsedit
     Friend WithEvents Label19 As Label
     Friend WithEvents Label21 As Label
     Friend WithEvents Label22 As Label
+    Friend WithEvents Icon_closeadvitemsedit As PictureBox
+    Friend WithEvents Icon_saveadvitemsedit As PictureBox
+    Friend WithEvents Lapstime As Timer
 End Class

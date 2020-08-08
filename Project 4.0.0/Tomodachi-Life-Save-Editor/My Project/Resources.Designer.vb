@@ -3613,6 +3613,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Public ReadOnly Property icon_return2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_return2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Public ReadOnly Property icon_sharing() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icon_sharing", resourceCulture)
@@ -3846,6 +3856,16 @@ Namespace My.Resources
         Public ReadOnly Property Icon_untreasures_act() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Icon_untreasures_act", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Public ReadOnly Property icon_validsave2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_validsave2", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

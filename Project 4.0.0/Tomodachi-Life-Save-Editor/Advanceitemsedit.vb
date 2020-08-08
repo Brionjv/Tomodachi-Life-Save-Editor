@@ -1,5 +1,6 @@
 ﻿Imports PackageIO
 Imports System.Net
+Imports System.IO
 Public Class Advanceitemsedit
     Dim savedataArc As String
     Dim Goodsitems1 As String
@@ -1372,6 +1373,14 @@ Public Class Advanceitemsedit
         If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
             Goodsitems18 = &H1901
         End If
+        If Filever_text.Text = "EU" Then
+            Panel_goodi_2.BackgroundImage = My.Resources.EU_gooditems_02
+            Panel_goodi_6.BackgroundImage = My.Resources.EU_gooditems_06
+        End If
+        If Filever_text.Text = "US" Then
+            Panel_goodi_2.BackgroundImage = My.Resources.US_gooditems_02
+            Panel_goodi_6.BackgroundImage = My.Resources.US_gooditems_06
+        End If
         'end goodsitems
     End Sub
 
@@ -1423,5 +1432,72 @@ Public Class Advanceitemsedit
 
     Private Sub Advanceitemsedit_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         savedataArc = TL_SaveEditor.TextBox_fpath.Text
+        Filever_text.Text = TL_SaveEditor.Filever_text.Text
+        savefileregion()
+    End Sub
+
+    Private Sub Advanceitemsedit_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        Readgoodsitems()
+    End Sub
+
+    Private Sub Icon_closeadvitemsedit_Click(sender As Object, e As EventArgs) Handles Icon_closeadvitemsedit.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Icon_saveadvitemsedit_Click(sender As Object, e As EventArgs) Handles Icon_saveadvitemsedit.Click
+        Savegoodsitems()
+        Savegoodsitems()
+        If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Items changes has been saved"
+        ElseIf TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "L'édition des objets a été sauvegardé"
+        End If
+        TLSE_dialog.ShowDialog()
+    End Sub
+
+    Public Sub Savegoodsitems()
+        Try
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            fs.Position = Goodsitems1
+            fs.WriteByte(valu_goodi_1.Value)
+            fs.Position = Goodsitems2
+            fs.WriteByte(valu_goodi_2.Value)
+            fs.Position = Goodsitems3
+            fs.WriteByte(valu_goodi_3.Value)
+            fs.Position = Goodsitems4
+            fs.WriteByte(valu_goodi_4.Value)
+            fs.Position = Goodsitems5
+            fs.WriteByte(valu_goodi_5.Value)
+            fs.Position = Goodsitems6
+            fs.WriteByte(valu_goodi_6.Value)
+            fs.Position = Goodsitems7
+            fs.WriteByte(valu_goodi_7.Value)
+            fs.Position = Goodsitems8
+            fs.WriteByte(valu_goodi_8.Value)
+            fs.Position = Goodsitems9
+            fs.WriteByte(valu_goodi_9.Value)
+            fs.Position = Goodsitems10
+            fs.WriteByte(valu_goodi_10.Value)
+            fs.Position = Goodsitems11
+            fs.WriteByte(valu_goodi_11.Value)
+            fs.Position = Goodsitems12
+            fs.WriteByte(valu_goodi_12.Value)
+            fs.Position = Goodsitems13
+            fs.WriteByte(valu_goodi_13.Value)
+            fs.Position = Goodsitems14
+            fs.WriteByte(valu_goodi_14.Value)
+            fs.Position = Goodsitems15
+            fs.WriteByte(valu_goodi_15.Value)
+            fs.Position = Goodsitems16
+            fs.WriteByte(valu_goodi_16.Value)
+            fs.Position = Goodsitems17
+            fs.WriteByte(valu_goodi_17.Value)
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Then
+                fs.Position = Goodsitems18
+                fs.WriteByte(valu_goodi_18.Value)
+            End If
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class
