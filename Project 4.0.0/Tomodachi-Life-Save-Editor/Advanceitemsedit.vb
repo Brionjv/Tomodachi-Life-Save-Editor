@@ -1445,14 +1445,19 @@ Public Class Advanceitemsedit
     End Sub
 
     Private Sub Icon_saveadvitemsedit_Click(sender As Object, e As EventArgs) Handles Icon_saveadvitemsedit.Click
-        Savegoodsitems()
-        Savegoodsitems()
-        If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "Items changes has been saved"
-        ElseIf TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
-            TLSE_dialog.Text_TLSE_dialog.Text = "L'édition des objets a été sauvegardé"
-        End If
-        TLSE_dialog.ShowDialog()
+        Try
+            Savegoodsitems()
+            Lapstimesave.Start()
+            If TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Items changes has been saved"
+            ElseIf TL_SaveEditor.Select_language.SelectedItem = TL_SaveEditor.Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "L'édition des objets a été sauvegardé"
+            End If
+            TLSE_dialog.ShowDialog()
+        Catch ex As Exception
+
+        End Try
+
     End Sub
 
     Public Sub Savegoodsitems()
@@ -1499,5 +1504,10 @@ Public Class Advanceitemsedit
         Catch ex As Exception
 
         End Try
+    End Sub
+
+    Private Sub Lapstimesave_Tick(sender As Object, e As EventArgs) Handles Lapstimesave.Tick
+        Lapstimesave.Stop()
+        Savegoodsitems()
     End Sub
 End Class

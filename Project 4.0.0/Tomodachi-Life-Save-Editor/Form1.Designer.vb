@@ -959,8 +959,8 @@ Partial Class TL_SaveEditor
         Me.valu_target1 = New System.Windows.Forms.NumericUpDown()
         Me.Select_target1 = New System.Windows.Forms.ComboBox()
         Me.Panel27 = New System.Windows.Forms.Panel()
-        Me.Select_Interaction_USA = New System.Windows.Forms.ComboBox()
         Me.valu_interaction = New System.Windows.Forms.NumericUpDown()
+        Me.Select_Interaction_USA = New System.Windows.Forms.ComboBox()
         Me.Select_interaction = New System.Windows.Forms.ComboBox()
         Me.Panel_target1_foods = New System.Windows.Forms.Panel()
         Me.Select_target1_foodUS = New System.Windows.Forms.ComboBox()
@@ -1707,7 +1707,7 @@ Partial Class TL_SaveEditor
         Me.AdvH_itemsedit_goodsitems = New System.Windows.Forms.PictureBox()
         Me.valu_itemsediticon_goodsitems = New System.Windows.Forms.NumericUpDown()
         Me.Title_itemsedit_goodsitems = New System.Windows.Forms.Label()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.Icon_advedit_goodsitems = New System.Windows.Forms.PictureBox()
         Me.Check_delete_goodsitems = New System.Windows.Forms.CheckBox()
         Me.Panel_bynumber_goodsitems = New System.Windows.Forms.Panel()
         Me.valu_itemsedit_goodsitems = New System.Windows.Forms.NumericUpDown()
@@ -2650,7 +2650,7 @@ Partial Class TL_SaveEditor
         Me.Panel_itemsedit_goodsitems.SuspendLayout
         CType(Me.AdvH_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_itemsediticon_goodsitems, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Icon_advedit_goodsitems, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_bynumber_goodsitems.SuspendLayout
         CType(Me.valu_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Icon_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).BeginInit
@@ -5844,7 +5844,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0 Mu"
+        Me.Text_TLSE_version.Text = "Version 4.0.0 Nu"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -14784,36 +14784,13 @@ Partial Class TL_SaveEditor
         'Panel27
         '
         Me.Panel27.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel27.Controls.Add(Me.Select_Interaction_USA)
         Me.Panel27.Controls.Add(Me.valu_interaction)
+        Me.Panel27.Controls.Add(Me.Select_Interaction_USA)
         Me.Panel27.Controls.Add(Me.Select_interaction)
         Me.Panel27.Location = New System.Drawing.Point(3, 24)
         Me.Panel27.Name = "Panel27"
         Me.Panel27.Size = New System.Drawing.Size(441, 25)
         Me.Panel27.TabIndex = 159
-        '
-        'Select_Interaction_USA
-        '
-        Me.Select_Interaction_USA.BackColor = System.Drawing.SystemColors.Window
-        Me.Select_Interaction_USA.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Select_Interaction_USA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_Interaction_USA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_Interaction_USA.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Select_Interaction_USA.FormattingEnabled = True
-        Me.Select_Interaction_USA.IntegralHeight = False
-        Me.Select_Interaction_USA.ItemHeight = 13
-        Me.Select_Interaction_USA.Items.AddRange(New Object() {"Nothing", "I'm hungry!", "I'd like {foods}", "I want some dessert", "I'm thirsty", "I'd like to eat something sweet", "I'd love something spicy to eat", "I wanna eat something salty", "I want to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat somthing warm and comforting", "I'm craving some sweets", "I'd like to eat some fruit", "I want some veggies!", "I'm hungry for something with rice", "I feel like eating something with bread", "I'd like to eat something meaty", "I'm craving some seafood", "I want to eat something with eggs", "I feel like eating some Japanese food", "I want some American food", "I'm in the mood for some Chinese food", "I could go for some Italian food", "I'm hungry for some noodles", "I'd love to eat something fancy", "I want some American food (1)", "I'd love some Asian food", "Want to eat something but say nothing", "Want to eat something but say nothing", "Want to eat something but say nothing", "Want to eat something but say nothing", "I'm really craving some junk food", "Want to eat something but say nothing (1)", "I need to eat something ! ANYTHING !", "I'm starving !", "I'm super hungry", "I sure am hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (something spicy)", "I'd like some new clothes (something cool factor)", "I'd like some new clothes (something frumpy)", "I'd like some new clothes (something unique)", "I'd like some new clothes (something modest)", "I'd like some new clothes (flowing garment)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (playing sport)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'd like a plain-looking hat", "I need a formal hat", "I could use a casual-looking hat", "I'd love a really cute hat", "I want a cool hat", "I want an ugly hat", "I'd like a really unique hat", "I could use a plain and modest hat", "I need a hat I can wear when playing sports", "I want something new  to decorate my head with", "I want something cute I can wear on my head", "I want something weird I can wear on my head", "I'd like some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my apartment", "I want to be friends with {Mii}", "I heard {Mii} want to be friends", "I'd like to introduce {Mii} to somebody… How about {Mii} ?", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings " &
-                "to ?", "_Show heart in windows but freeze_", "_No correspondence ?_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "_Won't make up with friend in conflict_", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you" &
-                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "_No correspondence ?_2", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me " &
-                "?", "I think that I have something really special with {Mii}.  What do you thing about" &
-                " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii" &
-                "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories," &
-                " should I tell them more ?", "A mosquito got into my tent…", "I'm so famished I can hardly move…", "I've got a sore throat…", "I got a letter from someone to meet them on the roof… I don't know who wrote it… " &
-                "Should I go ?", "I loss something very important", "_No correspondence ?_3", "_No correspondence ?_4", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?"})
-        Me.Select_Interaction_USA.Location = New System.Drawing.Point(2, 2)
-        Me.Select_Interaction_USA.Name = "Select_Interaction_USA"
-        Me.Select_Interaction_USA.Size = New System.Drawing.Size(437, 21)
-        Me.Select_Interaction_USA.TabIndex = 188
         '
         'valu_interaction
         '
@@ -14827,6 +14804,29 @@ Partial Class TL_SaveEditor
         Me.valu_interaction.TabIndex = 187
         Me.valu_interaction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'Select_Interaction_USA
+        '
+        Me.Select_Interaction_USA.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_Interaction_USA.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_Interaction_USA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_Interaction_USA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_Interaction_USA.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Select_Interaction_USA.FormattingEnabled = True
+        Me.Select_Interaction_USA.IntegralHeight = False
+        Me.Select_Interaction_USA.ItemHeight = 13
+        Me.Select_Interaction_USA.Items.AddRange(New Object() {"Nothing", "I'm hungry!", "I'd like {foods}", "I want some dessert", "I'm thirsty", "I'd like to eat something sweet", "I'd love something spicy to eat", "I wanna eat something salty", "I want to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat somthing warm and comforting", "I'm craving some sweets", "I'd like to eat some fruit", "I want some veggies!", "I'm hungry for something with rice", "I feel like eating something with bread", "I'd like to eat something meaty", "I'm craving some seafood", "I want to eat something with eggs", "I feel like eating some Japanese food", "I want some American food", "I'm in the mood for some Chinese food", "I could go for some Italian food", "I'm hungry for some noodles", "I'd love to eat something fancy", "I want some American food (1)", "I'd love some Asian food", "Want to eat something but say nothing", "Want to eat something but say nothing", "Want to eat something but say nothing", "Want to eat something but say nothing", "I'm really craving some junk food", "Want to eat something but say nothing (1)", "I need to eat something ! ANYTHING !", "I'm starving !", "I'm super hungry", "I sure am hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (something spicy)", "I'd like some new clothes (something cool factor)", "I'd like some new clothes (something frumpy)", "I'd like some new clothes (something unique)", "I'd like some new clothes (something modest)", "I'd like some new clothes (flowing garment)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (playing sport)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'd like a plain-looking hat", "I need a formal hat", "I could use a casual-looking hat", "I'd love a really cute hat", "I want a cool hat", "I want an ugly hat", "I'd like a really unique hat", "I could use a plain and modest hat", "I need a hat I can wear when playing sports", "I want something new  to decorate my head with", "I want something cute I can wear on my head", "I want something weird I can wear on my head", "I'd like some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my apartment", "I want to be friends with {Mii}", "I heard {Mii} want to be friends", "I'd like to introduce {Mii} to somebody… How about {Mii} ?", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings " &
+                "to ?", "_Show heart in windows but freeze_", "_No correspondence ?_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "_Won't make up with friend in conflict_", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you" &
+                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "Wants to go on a trip with someone", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me " &
+                "?", "I think that I have something really special with {Mii}.  What do you thing about" &
+                " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii" &
+                "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories," &
+                " should I tell them more ?", "A mosquito got into my tent…", "I'm so famished I can hardly move…", "I've got a sore throat…", "I got a letter from someone to meet them on the roof… I don't know who wrote it… " &
+                "Should I go ?", "I loss something very important", "_No correspondence ?_3", "_No correspondence ?_4", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?"})
+        Me.Select_Interaction_USA.Location = New System.Drawing.Point(2, 2)
+        Me.Select_Interaction_USA.Name = "Select_Interaction_USA"
+        Me.Select_Interaction_USA.Size = New System.Drawing.Size(437, 21)
+        Me.Select_Interaction_USA.TabIndex = 188
+        '
         'Select_interaction
         '
         Me.Select_interaction.BackColor = System.Drawing.SystemColors.Window
@@ -14839,7 +14839,7 @@ Partial Class TL_SaveEditor
         Me.Select_interaction.ItemHeight = 13
         Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like {foods}", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "Would like to eat something but say nothing", "Would like to eat something but say nothing (1)", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "Would like to eat something but say nothing (2)", "I'd like to eat something Korean", "I could eat anything !", "I'm starving (1)", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I'd like to introduce {Mii} to somebody… How about {Mii} ?", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings " &
                 "to ?", "_Show heart in windows but freeze_", "_No correspondence ?_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "_Won't make up with friend in conflict_", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you" &
-                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "_No correspondence ?_2", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me " &
+                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "Wants to go on a trip with someone", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me " &
                 "?", "I think that I have something really special with {Mii}.  What do you thing about" &
                 " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii" &
                 "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories," &
@@ -23796,7 +23796,7 @@ Partial Class TL_SaveEditor
         Me.Panel_itemsedit_goodsitems.Controls.Add(Me.AdvH_itemsedit_goodsitems)
         Me.Panel_itemsedit_goodsitems.Controls.Add(Me.valu_itemsediticon_goodsitems)
         Me.Panel_itemsedit_goodsitems.Controls.Add(Me.Title_itemsedit_goodsitems)
-        Me.Panel_itemsedit_goodsitems.Controls.Add(Me.PictureBox17)
+        Me.Panel_itemsedit_goodsitems.Controls.Add(Me.Icon_advedit_goodsitems)
         Me.Panel_itemsedit_goodsitems.Controls.Add(Me.Check_delete_goodsitems)
         Me.Panel_itemsedit_goodsitems.Controls.Add(Me.Panel_bynumber_goodsitems)
         Me.Panel_itemsedit_goodsitems.Controls.Add(Me.Icon_itemsedit_goodsitems)
@@ -23838,16 +23838,16 @@ Partial Class TL_SaveEditor
         Me.Title_itemsedit_goodsitems.Text = "Goods items"
         Me.Title_itemsedit_goodsitems.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox17
+        'Icon_advedit_goodsitems
         '
-        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox17.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox17.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
-        Me.PictureBox17.Location = New System.Drawing.Point(167, 117)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox17.TabIndex = 72
-        Me.PictureBox17.TabStop = False
+        Me.Icon_advedit_goodsitems.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_advedit_goodsitems.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_advedit_goodsitems.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_advedititems
+        Me.Icon_advedit_goodsitems.Location = New System.Drawing.Point(167, 117)
+        Me.Icon_advedit_goodsitems.Name = "Icon_advedit_goodsitems"
+        Me.Icon_advedit_goodsitems.Size = New System.Drawing.Size(30, 30)
+        Me.Icon_advedit_goodsitems.TabIndex = 72
+        Me.Icon_advedit_goodsitems.TabStop = False
         '
         'Check_delete_goodsitems
         '
@@ -24965,6 +24965,7 @@ Partial Class TL_SaveEditor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
+        Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -24976,9 +24977,8 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_concertedit)
         Me.Controls.Add(Me.Panel_repairsave)
         Me.Controls.Add(Me.Panel_islandedit)
-        Me.Controls.Add(Me.Panel_itemsedit)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.Panel_extras)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"
@@ -25887,7 +25887,7 @@ Partial Class TL_SaveEditor
         Me.Panel_itemsedit_goodsitems.ResumeLayout(False)
         CType(Me.AdvH_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_itemsediticon_goodsitems, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Icon_advedit_goodsitems, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_bynumber_goodsitems.ResumeLayout(False)
         CType(Me.valu_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Icon_itemsedit_goodsitems, System.ComponentModel.ISupportInitialize).EndInit
@@ -26410,7 +26410,7 @@ Partial Class TL_SaveEditor
     Friend WithEvents valu_itemsedit_interiors As NumericUpDown
     Friend WithEvents Icon_itemsedit_interiors As PictureBox
     Friend WithEvents Panel_itemsedit_goodsitems As Panel
-    Friend WithEvents PictureBox17 As PictureBox
+    Friend WithEvents Icon_advedit_goodsitems As PictureBox
     Friend WithEvents Check_delete_goodsitems As CheckBox
     Friend WithEvents Panel_bynumber_goodsitems As Panel
     Friend WithEvents valu_itemsedit_goodsitems As NumericUpDown

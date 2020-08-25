@@ -137,7 +137,7 @@ Partial Class Advanceitemsedit
         Me.Check_setall_available = New System.Windows.Forms.CheckBox()
         Me.Icon_closeadvitemsedit = New System.Windows.Forms.PictureBox()
         Me.Icon_saveadvitemsedit = New System.Windows.Forms.PictureBox()
-        Me.Lapstime = New System.Windows.Forms.Timer(Me.components)
+        Me.Lapstimesave = New System.Windows.Forms.Timer(Me.components)
         CType(Me.valu_goodi_1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_goodi_1.SuspendLayout()
         Me.Panel_goodi_2.SuspendLayout()
@@ -1778,6 +1778,10 @@ Partial Class Advanceitemsedit
         Me.Icon_saveadvitemsedit.TabIndex = 351
         Me.Icon_saveadvitemsedit.TabStop = False
         '
+        'Lapstimesave
+        '
+        Me.Lapstimesave.Interval = 1000
+        '
         'Advanceitemsedit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1978,5 +1982,5 @@ Partial Class Advanceitemsedit
     Friend WithEvents Label22 As Label
     Friend WithEvents Icon_closeadvitemsedit As PictureBox
     Friend WithEvents Icon_saveadvitemsedit As PictureBox
-    Friend WithEvents Lapstime As Timer
+    Friend WithEvents Lapstimesave As Timer
 End Class
