@@ -5844,7 +5844,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0 Nu"
+        Me.Text_TLSE_version.Text = "Version 4.0.0 Xi"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7325,6 +7325,7 @@ Partial Class TL_SaveEditor
         Me.Panel15.Name = "Panel15"
         Me.Panel15.Size = New System.Drawing.Size(104, 29)
         Me.Panel15.TabIndex = 4
+        Me.Panel15.Visible = False
         '
         'PictureBox8
         '
@@ -7361,6 +7362,7 @@ Partial Class TL_SaveEditor
         Me.Panel16.Name = "Panel16"
         Me.Panel16.Size = New System.Drawing.Size(104, 29)
         Me.Panel16.TabIndex = 5
+        Me.Panel16.Visible = False
         '
         'PictureBox10
         '
@@ -23066,6 +23068,7 @@ Partial Class TL_SaveEditor
         Me.Panel52.Name = "Panel52"
         Me.Panel52.Size = New System.Drawing.Size(104, 29)
         Me.Panel52.TabIndex = 4
+        Me.Panel52.Visible = False
         '
         'PictureBox30
         '
@@ -24965,7 +24968,6 @@ Partial Class TL_SaveEditor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
-        Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -24978,6 +24980,7 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_repairsave)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
+        Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
