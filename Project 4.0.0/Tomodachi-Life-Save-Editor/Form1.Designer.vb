@@ -3054,10 +3054,10 @@ Partial Class TL_SaveEditor
         '
         'TLSE_title
         '
-        Me.TLSE_title.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.TLSE_title
-        Me.TLSE_title.Location = New System.Drawing.Point(76, 8)
+        Me.TLSE_title.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tlse_title_ex
+        Me.TLSE_title.Location = New System.Drawing.Point(67, 3)
         Me.TLSE_title.Name = "TLSE_title"
-        Me.TLSE_title.Size = New System.Drawing.Size(443, 22)
+        Me.TLSE_title.Size = New System.Drawing.Size(465, 32)
         Me.TLSE_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.TLSE_title.TabIndex = 3
         Me.TLSE_title.TabStop = False
@@ -5844,7 +5844,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0 Xi"
+        Me.Text_TLSE_version.Text = "Version 4.0.0 Omicron"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits

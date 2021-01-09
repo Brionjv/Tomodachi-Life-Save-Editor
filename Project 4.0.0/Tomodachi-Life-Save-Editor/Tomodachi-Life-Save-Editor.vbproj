@@ -176,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\tlse_title_ex.gif" />
     <None Include="Resources\icon_validsave2.png" />
     <None Include="Resources\icon_return2.png" />
     <None Include="Resources\icon_deleted.png" />
