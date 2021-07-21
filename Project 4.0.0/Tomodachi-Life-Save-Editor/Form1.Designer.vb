@@ -2735,7 +2735,6 @@ Partial Class TL_SaveEditor
         Me.TLSE_logo_update.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.TLSE_logo_update.TabIndex = 28
         Me.TLSE_logo_update.TabStop = False
-        Me.TLSE_logo_update.Visible = False
         '
         'TLSE_logo
         '

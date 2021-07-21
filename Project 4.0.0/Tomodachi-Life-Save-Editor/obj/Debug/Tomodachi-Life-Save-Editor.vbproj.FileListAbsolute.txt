@@ -30,3 +30,4 @@ D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodac
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.exe
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.xml
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.pdb
+D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbprojAssemblyReference.cache

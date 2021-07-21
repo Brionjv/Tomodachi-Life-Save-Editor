@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22A4E1E5-B145-47F1-86D7-C10ECC91A02A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Tomodachi_Life_Save_Editor.My.MyApplication</StartupObject>
+    <RootNamespace>Tomodachi_Life_Save_Editor</RootNamespace>
+    <AssemblyName>Tomodachi Life Save Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Tomodachi Life Save Editor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Tomodachi Life Save Editor.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon Tomodachi.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_hub.Designer.vb">
+      <DependentUpon>TLSE_hub.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_hub.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TLSE_loading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TLSE_loading.Designer.vb">
+      <DependentUpon>TLSE_loading.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TLSE_settings.Designer.vb">
+      <DependentUpon>TLSE_settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TLSE_hub.resx">
+      <DependentUpon>TLSE_hub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_loading.resx">
+      <DependentUpon>TLSE_loading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_settings.resx">
+      <DependentUpon>TLSE_settings.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_US.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_EU.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_JP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_KR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_red_tl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_tl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tlse_title_ex.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_babyedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_concertedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_extras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_islandedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_itemsedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_manual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_miiedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_miimanagement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_repairsave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bbl_travelersedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_islandmenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_miimenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_tlsemenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_menumiiedit_relainterac.png" />
+    <None Include="Resources\bbl_relationship_act.png" />
+    <None Include="Resources\bbl_relationship.png" />
+    <None Include="Resources\bbl_interaction_act.png" />
+    <None Include="Resources\bbl_interaction.png" />
+    <None Include="Resources\tab_miiedit1.png" />
+    <None Include="Resources\tab_miiedit_base1.png" />
+    <None Include="Resources\icon_menu_on.png" />
+    <None Include="Resources\icon_menu_off.png" />
+    <None Include="Resources\menu_settings_on.png" />
+    <None Include="Resources\menu_settings_off.png" />
+    <None Include="Resources\icon_bsymb.png" />
+    <None Include="Resources\icon_bnoupdate.png" />
+    <None Include="Resources\icon_bhidden.png" />
+    <None Include="Resources\icon_bgmusic.png" />
+    <None Include="Resources\icon_bfilepath.png" />
+    <None Include="Resources\icon_badvh.png" />
+    <None Include="Resources\buttontop_single_act.png" />
+    <None Include="Resources\buttontop_single.png" />
+    <None Include="Resources\buttontop_largex4.png" />
+    <None Include="Resources\buttontop_largex2_act.png" />
+    <None Include="Resources\buttontop_largex2.png" />
+    <None Include="Resources\bbl_travelersedit_act.png" />
+    <None Include="Resources\bbl_settings_act.png" />
+    <None Include="Resources\bbl_repairsave_act.png" />
+    <None Include="Resources\bbl_miimanagement_act.png" />
+    <None Include="Resources\bbl_miiedit_act.png" />
+    <None Include="Resources\bbl_manual_act.png" />
+    <None Include="Resources\bbl_itemsedit_act.png" />
+    <None Include="Resources\bbl_islandedit_act.png" />
+    <None Include="Resources\bbl_extras_act.png" />
+    <None Include="Resources\bbl_concertedit_act.png" />
+    <None Include="Resources\bbl_babyedit_act.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

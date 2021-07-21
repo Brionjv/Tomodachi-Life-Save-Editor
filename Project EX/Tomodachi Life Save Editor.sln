@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Tomodachi Life Save Editor", "Tomodachi Life Save Editor\Tomodachi Life Save Editor.vbproj", "{22A4E1E5-B145-47F1-86D7-C10ECC91A02A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22A4E1E5-B145-47F1-86D7-C10ECC91A02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22A4E1E5-B145-47F1-86D7-C10ECC91A02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22A4E1E5-B145-47F1-86D7-C10ECC91A02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22A4E1E5-B145-47F1-86D7-C10ECC91A02A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E5F3B2D-4B3C-4DE4-9779-6F9249C150D7}
+	EndGlobalSection
+EndGlobal
