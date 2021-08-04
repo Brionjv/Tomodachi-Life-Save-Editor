@@ -197,7 +197,8 @@
     End Sub
 
     Private Sub Text_menu_relationships_Click(sender As Object, e As EventArgs) Handles Text_menu_relationships.Click
-
+        TLSE_relationships.Show()
+        Me.Close()
     End Sub
 
     Private Sub Text_menu_relationships_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_relationships.MouseMove

@@ -863,8 +863,8 @@ Partial Class TLSE_settings
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(830, 723)
-        Me.Controls.Add(Me.Settings_credits)
         Me.Controls.Add(Me.Icon_menu)
+        Me.Controls.Add(Me.Settings_credits)
         Me.Controls.Add(Me.Menu_links)
         Me.Controls.Add(Me.Menu_credits)
         Me.Controls.Add(Me.Menu_changelog)
