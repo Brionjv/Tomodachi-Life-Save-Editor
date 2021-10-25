@@ -1,0 +1,17 @@
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\bin\Release\Tomodachi Life Save Editor.exe.config
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\bin\Release\Tomodachi Life Save Editor.exe
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\bin\Release\Tomodachi Life Save Editor.pdb
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\bin\Release\Tomodachi Life Save Editor.xml
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\bin\Release\PackageIO.dll
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.vbproj.AssemblyReference.cache
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_hub.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_loading.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.Resources.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_relationships.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_settings.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.vbproj.GenerateResource.cache
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.vbproj.CoreCompileInputs.cache
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.vbproj.CopyComplete
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.exe
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.xml
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.pdb

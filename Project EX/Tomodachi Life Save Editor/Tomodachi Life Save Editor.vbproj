@@ -51,6 +51,9 @@
     <ApplicationIcon>Icon Tomodachi.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PackageIO">
+      <HintPath>.\PackageIO.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -221,6 +224,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\bg_description.png" />
+    <None Include="Resources\Icon_AdvH.png" />
     <None Include="Resources\icon_menu_mii.png" />
     <None Include="Resources\bg_selectmii.png" />
     <None Include="Resources\icon_navi_rightact.png" />
@@ -261,6 +266,9 @@
     <None Include="Resources\bbl_extras_act.png" />
     <None Include="Resources\bbl_concertedit_act.png" />
     <None Include="Resources\bbl_babyedit_act.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

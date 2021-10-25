@@ -231,4 +231,77 @@
         TLSE_menu_Miiedition.Visible = False
     End Sub
 
+    Private Sub TLSE_hub_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Try
+            Setting_Advhelp.Checked = My.Settings.Para_AdvH
+            Setting_ckupdate.Checked = My.Settings.Para_chkupdate
+            Setting_hidden.Checked = My.Settings.Para_hidden
+            Setting_music.Checked = My.Settings.Para_music
+            Setting_filepath.Checked = My.Settings.Para_path
+            Setting_spesymb.Checked = My.Settings.Para_spesymb
+            Select_language.SelectedItem = My.Settings.Para_language
+            Select_music.SelectedItem = My.Settings.Para_selmusic
+        Catch ex As Exception
+        End Try
+        TLSE_language()
+    End Sub
+
+    Public Sub TLSE_language()
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            Text_menu_open.Text = "Open"
+            Title_filever.Text = "Save file region :"
+            Text_menu_travelersedit.Text = "Travelers edition" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Edit travelers in your island"
+            Text_menu_extras.Text = "Extras" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit your island configurations"
+            Text_menu_babiesedit.Text = "Babies edition" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit babies In your island"
+            Text_menu_miiedit.Text = "Mii edition" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit Mii In your island"
+            Text_menu_islandedit.Text = "Island edition" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit your island informations"
+            Text_menu_miimanagement.Text = "Mii management" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Import And export Mii in your island"
+            Text_menu_itemsedit.Text = "Items edition" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Edit items in your inventory or in shops"
+            Text_menu_concertedit.Text = "Concerts edition" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit concerts your island"
+            Text_menu_settings.Text = "Settings" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Access to Tomodachi Life Save Editor settings"
+            Text_menu_manual.Text = "Manual" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Access to Tomodachi Life Save Editor manual"
+            Text_menu_repairsave.Text = "Repair save" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Repair your save file"
+            Text_menu_relationships.Text = "Relationships" & vbNewLine & "__________________" & vbNewLine & vbNewLine & "Edit Mii 's relationships"
+            Text_menu_interactions.Text = "Interactions" & vbNewLine & "__________________" & vbNewLine & vbNewLine & "Edit Mii 's interactions"
+            Menuflow_text_miiediton.Text = "Mii edition"
+        End If
+        If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            Text_menu_open.Text = "Ouvrir"
+            Title_filever.Text = "Région de la" & vbNewLine & "sauvegarde :"
+            Text_menu_travelersedit.Text = "Édition voyageurs" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Éditer les voyageurs de votre île"
+            Text_menu_extras.Text = "Extras" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Éditer les configurations de votre île"
+            Text_menu_babiesedit.Text = "Édition bébés" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Éditer les bébés de votre île"
+            Text_menu_miiedit.Text = "Édition Mii" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Éditer les Mii de votre île"
+            Text_menu_islandedit.Text = "Édition île" & vbNewLine & "__________________" & vbNewLine & vbNewLine & "Éditer les informations de votre île"
+            Text_menu_miimanagement.Text = "Management Mii" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Importer et exporter les Mii de votre île"
+            Text_menu_itemsedit.Text = "Édition objets" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Éditer les objets dans votre inventaire ou dans les magasins"
+            Text_menu_concertedit.Text = "Édition concerts" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Éditer les concerts dans votre île"
+            Text_menu_settings.Text = "Paramètres" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Accéder aux paramètres de Tomodachi Life Save Editor"
+            Text_menu_manual.Text = "Manuel" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Accéder au manuel de Tomodachi Life Save Editor"
+            Text_menu_repairsave.Text = "Réparation sauvegarde" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Réparer votre fichier de sauvegarde"
+            Text_menu_relationships.Text = "Relations" & vbNewLine & "__________________" & vbNewLine & vbNewLine & "Éditer les relations des Mii"
+            Text_menu_interactions.Text = "Intéractions" & vbNewLine & "__________________" & vbNewLine & vbNewLine & "Éditer les intéractions des Mii"
+            Menuflow_text_miiediton.Text = "Édition Mii"
+        End If
+    End Sub
+
+    Private Sub Setting_ckupdate_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_ckupdate.CheckedChanged
+        If Setting_ckupdate.Checked = True Then
+            Panel_chkupdate.Visible = True
+        End If
+        If Setting_ckupdate.Checked = False Then
+            Panel_chkupdate.Visible = False
+        End If
+    End Sub
+
+    Private Sub Setting_filepath_CheckedChanged(sender As Object, e As EventArgs) Handles Setting_filepath.CheckedChanged
+        If Setting_filepath.Checked = True Then
+            TLSE_filepath.Visible = True
+            Panel_filepath.Visible = True
+        End If
+        If Setting_filepath.Checked = False Then
+            TLSE_filepath.Visible = False
+            Panel_filepath.Visible = False
+        End If
+    End Sub
 End Class

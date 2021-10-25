@@ -14402,6 +14402,7 @@ Partial Class TL_SaveEditor
         'Fea_interaction
         '
         Me.Fea_interaction.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_apartment
+        Me.Fea_interaction.Controls.Add(Me.valu_interaction)
         Me.Fea_interaction.Controls.Add(Me.AdvH_target2)
         Me.Fea_interaction.Controls.Add(Me.ComboBox1)
         Me.Fea_interaction.Controls.Add(Me.infobubble_target2)
@@ -14785,7 +14786,6 @@ Partial Class TL_SaveEditor
         'Panel27
         '
         Me.Panel27.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
-        Me.Panel27.Controls.Add(Me.valu_interaction)
         Me.Panel27.Controls.Add(Me.Select_Interaction_USA)
         Me.Panel27.Controls.Add(Me.Select_interaction)
         Me.Panel27.Location = New System.Drawing.Point(3, 24)
@@ -14798,7 +14798,7 @@ Partial Class TL_SaveEditor
         Me.valu_interaction.BackColor = System.Drawing.Color.LightCyan
         Me.valu_interaction.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_interaction.Hexadecimal = True
-        Me.valu_interaction.Location = New System.Drawing.Point(104, 4)
+        Me.valu_interaction.Location = New System.Drawing.Point(56, 5)
         Me.valu_interaction.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_interaction.Name = "valu_interaction"
         Me.valu_interaction.Size = New System.Drawing.Size(86, 16)
@@ -24967,6 +24967,7 @@ Partial Class TL_SaveEditor
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tomo_bg
         Me.ClientSize = New System.Drawing.Size(830, 650)
+        Me.Controls.Add(Me.Panel_miiedit)
         Me.Controls.Add(Me.TextBox_fpath)
         Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Menu_panel)
@@ -24980,7 +24981,6 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_itemsedit)
-        Me.Controls.Add(Me.Panel_miiedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"

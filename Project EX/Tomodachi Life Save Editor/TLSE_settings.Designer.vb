@@ -27,31 +27,39 @@ Partial Class TLSE_settings
         Me.Minimizebutton = New System.Windows.Forms.PictureBox()
         Me.Closebutton = New System.Windows.Forms.PictureBox()
         Me.Settings_settings = New System.Windows.Forms.Panel()
-        Me.Setting_spesymb = New System.Windows.Forms.CheckBox()
-        Me.Setting_Advhelp = New System.Windows.Forms.CheckBox()
+        Me.Settings_spesymb = New System.Windows.Forms.CheckBox()
+        Me.Settings_Advhelp = New System.Windows.Forms.CheckBox()
         Me.Text_language = New System.Windows.Forms.Label()
-        Me.Setting_ckupdate = New System.Windows.Forms.CheckBox()
-        Me.Select_language = New System.Windows.Forms.ComboBox()
-        Me.Setting_filepath = New System.Windows.Forms.CheckBox()
-        Me.Setting_hidden = New System.Windows.Forms.CheckBox()
-        Me.Select_music = New System.Windows.Forms.ComboBox()
-        Me.Setting_music = New System.Windows.Forms.CheckBox()
+        Me.Settings_ckupdate = New System.Windows.Forms.CheckBox()
+        Me.Selects_language = New System.Windows.Forms.ComboBox()
+        Me.Settings_filepath = New System.Windows.Forms.CheckBox()
+        Me.Settings_hidden = New System.Windows.Forms.CheckBox()
+        Me.Selects_music = New System.Windows.Forms.ComboBox()
+        Me.Settings_music = New System.Windows.Forms.CheckBox()
         Me.TLSE_logo_update = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo = New System.Windows.Forms.PictureBox()
         Me.TLSE_title = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TLSE_header = New System.Windows.Forms.Panel()
+        Me.Select_language = New System.Windows.Forms.ComboBox()
         Me.Panel_bspesymb = New System.Windows.Forms.Panel()
+        Me.Setting_spesymb = New System.Windows.Forms.CheckBox()
         Me.Icon_bspesymb = New System.Windows.Forms.PictureBox()
         Me.Panel_Advhelp = New System.Windows.Forms.Panel()
+        Me.Setting_Advhelp = New System.Windows.Forms.CheckBox()
         Me.Icon_Advhelp = New System.Windows.Forms.PictureBox()
         Me.Panel_chkupdate = New System.Windows.Forms.Panel()
+        Me.Setting_ckupdate = New System.Windows.Forms.CheckBox()
         Me.Icon_chkupdate = New System.Windows.Forms.PictureBox()
         Me.Panel_filepath = New System.Windows.Forms.Panel()
+        Me.Setting_filepath = New System.Windows.Forms.CheckBox()
         Me.Icon_filepath = New System.Windows.Forms.PictureBox()
         Me.Panel_hiddenthings = New System.Windows.Forms.Panel()
+        Me.Setting_hidden = New System.Windows.Forms.CheckBox()
         Me.Icon_hiddenthings = New System.Windows.Forms.PictureBox()
         Me.Panel_bgmusic = New System.Windows.Forms.Panel()
+        Me.Select_music = New System.Windows.Forms.ComboBox()
+        Me.Setting_music = New System.Windows.Forms.CheckBox()
         Me.Icon_bgmusic = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Filever_text = New System.Windows.Forms.Label()
@@ -82,6 +90,9 @@ Partial Class TLSE_settings
         Me.Icon_nintendogscatSE = New System.Windows.Forms.PictureBox()
         Me.Icon_ChibiRoboZLSE = New System.Windows.Forms.PictureBox()
         Me.Icon_IronfallISE = New System.Windows.Forms.PictureBox()
+        Me.Panel_description = New System.Windows.Forms.Panel()
+        Me.Text_description = New System.Windows.Forms.Label()
+        Me.TLSE_filepath = New System.Windows.Forms.TextBox()
         CType(Me.Minimizebutton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Settings_settings.SuspendLayout()
@@ -120,6 +131,7 @@ Partial Class TLSE_settings
         CType(Me.Icon_nintendogscatSE, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_ChibiRoboZLSE, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_IronfallISE, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_description.SuspendLayout()
         Me.SuspendLayout()
         '
         'Minimizebutton
@@ -150,57 +162,57 @@ Partial Class TLSE_settings
         '
         Me.Settings_settings.BackColor = System.Drawing.Color.Transparent
         Me.Settings_settings.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Settings_settings.Controls.Add(Me.Setting_spesymb)
-        Me.Settings_settings.Controls.Add(Me.Setting_Advhelp)
+        Me.Settings_settings.Controls.Add(Me.Settings_spesymb)
+        Me.Settings_settings.Controls.Add(Me.Settings_Advhelp)
         Me.Settings_settings.Controls.Add(Me.Text_language)
-        Me.Settings_settings.Controls.Add(Me.Setting_ckupdate)
-        Me.Settings_settings.Controls.Add(Me.Select_language)
-        Me.Settings_settings.Controls.Add(Me.Setting_filepath)
-        Me.Settings_settings.Controls.Add(Me.Setting_hidden)
-        Me.Settings_settings.Controls.Add(Me.Select_music)
-        Me.Settings_settings.Controls.Add(Me.Setting_music)
+        Me.Settings_settings.Controls.Add(Me.Settings_ckupdate)
+        Me.Settings_settings.Controls.Add(Me.Selects_language)
+        Me.Settings_settings.Controls.Add(Me.Settings_filepath)
+        Me.Settings_settings.Controls.Add(Me.Settings_hidden)
+        Me.Settings_settings.Controls.Add(Me.Selects_music)
+        Me.Settings_settings.Controls.Add(Me.Settings_music)
         Me.Settings_settings.Location = New System.Drawing.Point(12, 122)
         Me.Settings_settings.Name = "Settings_settings"
         Me.Settings_settings.Size = New System.Drawing.Size(806, 591)
         Me.Settings_settings.TabIndex = 36
         '
-        'Setting_spesymb
+        'Settings_spesymb
         '
-        Me.Setting_spesymb.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Setting_spesymb.BackColor = System.Drawing.Color.White
-        Me.Setting_spesymb.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Setting_spesymb.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_spesymb.FlatAppearance.BorderSize = 2
-        Me.Setting_spesymb.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_spesymb.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_spesymb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
-        Me.Setting_spesymb.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Setting_spesymb.Location = New System.Drawing.Point(231, 423)
-        Me.Setting_spesymb.Name = "Setting_spesymb"
-        Me.Setting_spesymb.Size = New System.Drawing.Size(300, 32)
-        Me.Setting_spesymb.TabIndex = 1
-        Me.Setting_spesymb.Text = "Active special symbol"
-        Me.Setting_spesymb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Setting_spesymb.UseVisualStyleBackColor = False
+        Me.Settings_spesymb.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Settings_spesymb.BackColor = System.Drawing.Color.White
+        Me.Settings_spesymb.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Settings_spesymb.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_spesymb.FlatAppearance.BorderSize = 2
+        Me.Settings_spesymb.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_spesymb.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_spesymb.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.Settings_spesymb.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Settings_spesymb.Location = New System.Drawing.Point(231, 423)
+        Me.Settings_spesymb.Name = "Settings_spesymb"
+        Me.Settings_spesymb.Size = New System.Drawing.Size(300, 32)
+        Me.Settings_spesymb.TabIndex = 1
+        Me.Settings_spesymb.Text = "Active special symbol"
+        Me.Settings_spesymb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Settings_spesymb.UseVisualStyleBackColor = False
         '
-        'Setting_Advhelp
+        'Settings_Advhelp
         '
-        Me.Setting_Advhelp.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Setting_Advhelp.BackColor = System.Drawing.Color.White
-        Me.Setting_Advhelp.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Setting_Advhelp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_Advhelp.FlatAppearance.BorderSize = 2
-        Me.Setting_Advhelp.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_Advhelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_Advhelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
-        Me.Setting_Advhelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Setting_Advhelp.Location = New System.Drawing.Point(231, 365)
-        Me.Setting_Advhelp.Name = "Setting_Advhelp"
-        Me.Setting_Advhelp.Size = New System.Drawing.Size(300, 32)
-        Me.Setting_Advhelp.TabIndex = 1
-        Me.Setting_Advhelp.Text = "Show advance help"
-        Me.Setting_Advhelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Setting_Advhelp.UseVisualStyleBackColor = False
+        Me.Settings_Advhelp.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Settings_Advhelp.BackColor = System.Drawing.Color.White
+        Me.Settings_Advhelp.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Settings_Advhelp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_Advhelp.FlatAppearance.BorderSize = 2
+        Me.Settings_Advhelp.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_Advhelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_Advhelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.Settings_Advhelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Settings_Advhelp.Location = New System.Drawing.Point(231, 365)
+        Me.Settings_Advhelp.Name = "Settings_Advhelp"
+        Me.Settings_Advhelp.Size = New System.Drawing.Size(300, 32)
+        Me.Settings_Advhelp.TabIndex = 1
+        Me.Settings_Advhelp.Text = "Show advance help"
+        Me.Settings_Advhelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Settings_Advhelp.UseVisualStyleBackColor = False
         '
         'Text_language
         '
@@ -212,107 +224,107 @@ Partial Class TLSE_settings
         Me.Text_language.Text = "Language :"
         Me.Text_language.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Setting_ckupdate
+        'Settings_ckupdate
         '
-        Me.Setting_ckupdate.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Setting_ckupdate.BackColor = System.Drawing.Color.White
-        Me.Setting_ckupdate.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Setting_ckupdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_ckupdate.FlatAppearance.BorderSize = 2
-        Me.Setting_ckupdate.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_ckupdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_ckupdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
-        Me.Setting_ckupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Setting_ckupdate.Location = New System.Drawing.Point(231, 307)
-        Me.Setting_ckupdate.Name = "Setting_ckupdate"
-        Me.Setting_ckupdate.Size = New System.Drawing.Size(300, 32)
-        Me.Setting_ckupdate.TabIndex = 2
-        Me.Setting_ckupdate.Text = "Unactive check updates"
-        Me.Setting_ckupdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Setting_ckupdate.UseVisualStyleBackColor = False
+        Me.Settings_ckupdate.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Settings_ckupdate.BackColor = System.Drawing.Color.White
+        Me.Settings_ckupdate.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Settings_ckupdate.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_ckupdate.FlatAppearance.BorderSize = 2
+        Me.Settings_ckupdate.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_ckupdate.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_ckupdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.Settings_ckupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Settings_ckupdate.Location = New System.Drawing.Point(231, 307)
+        Me.Settings_ckupdate.Name = "Settings_ckupdate"
+        Me.Settings_ckupdate.Size = New System.Drawing.Size(300, 32)
+        Me.Settings_ckupdate.TabIndex = 2
+        Me.Settings_ckupdate.Text = "Unactive check updates"
+        Me.Settings_ckupdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Settings_ckupdate.UseVisualStyleBackColor = False
         '
-        'Select_language
+        'Selects_language
         '
-        Me.Select_language.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Select_language.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Select_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_language.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_language.FormattingEnabled = True
-        Me.Select_language.Items.AddRange(New Object() {"ENG", "FRA"})
-        Me.Select_language.Location = New System.Drawing.Point(106, 31)
-        Me.Select_language.Name = "Select_language"
-        Me.Select_language.Size = New System.Drawing.Size(51, 21)
-        Me.Select_language.TabIndex = 4
+        Me.Selects_language.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Selects_language.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Selects_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Selects_language.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Selects_language.FormattingEnabled = True
+        Me.Selects_language.Items.AddRange(New Object() {"ENG", "FRA"})
+        Me.Selects_language.Location = New System.Drawing.Point(106, 31)
+        Me.Selects_language.Name = "Selects_language"
+        Me.Selects_language.Size = New System.Drawing.Size(51, 21)
+        Me.Selects_language.TabIndex = 4
         '
-        'Setting_filepath
+        'Settings_filepath
         '
-        Me.Setting_filepath.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Setting_filepath.BackColor = System.Drawing.Color.White
-        Me.Setting_filepath.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Setting_filepath.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_filepath.FlatAppearance.BorderSize = 2
-        Me.Setting_filepath.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_filepath.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_filepath.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
-        Me.Setting_filepath.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Setting_filepath.Location = New System.Drawing.Point(231, 249)
-        Me.Setting_filepath.Name = "Setting_filepath"
-        Me.Setting_filepath.Size = New System.Drawing.Size(300, 32)
-        Me.Setting_filepath.TabIndex = 2
-        Me.Setting_filepath.Text = "Show file path"
-        Me.Setting_filepath.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Setting_filepath.UseVisualStyleBackColor = False
+        Me.Settings_filepath.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Settings_filepath.BackColor = System.Drawing.Color.White
+        Me.Settings_filepath.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Settings_filepath.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_filepath.FlatAppearance.BorderSize = 2
+        Me.Settings_filepath.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_filepath.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_filepath.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.Settings_filepath.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Settings_filepath.Location = New System.Drawing.Point(231, 249)
+        Me.Settings_filepath.Name = "Settings_filepath"
+        Me.Settings_filepath.Size = New System.Drawing.Size(300, 32)
+        Me.Settings_filepath.TabIndex = 2
+        Me.Settings_filepath.Text = "Show file path"
+        Me.Settings_filepath.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Settings_filepath.UseVisualStyleBackColor = False
         '
-        'Setting_hidden
+        'Settings_hidden
         '
-        Me.Setting_hidden.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Setting_hidden.BackColor = System.Drawing.Color.White
-        Me.Setting_hidden.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Setting_hidden.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_hidden.FlatAppearance.BorderSize = 2
-        Me.Setting_hidden.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_hidden.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_hidden.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
-        Me.Setting_hidden.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Setting_hidden.Location = New System.Drawing.Point(231, 191)
-        Me.Setting_hidden.Name = "Setting_hidden"
-        Me.Setting_hidden.Size = New System.Drawing.Size(300, 32)
-        Me.Setting_hidden.TabIndex = 1
-        Me.Setting_hidden.Text = "Show hidden things"
-        Me.Setting_hidden.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Setting_hidden.UseVisualStyleBackColor = False
+        Me.Settings_hidden.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Settings_hidden.BackColor = System.Drawing.Color.White
+        Me.Settings_hidden.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Settings_hidden.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_hidden.FlatAppearance.BorderSize = 2
+        Me.Settings_hidden.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_hidden.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_hidden.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.Settings_hidden.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Settings_hidden.Location = New System.Drawing.Point(231, 191)
+        Me.Settings_hidden.Name = "Settings_hidden"
+        Me.Settings_hidden.Size = New System.Drawing.Size(300, 32)
+        Me.Settings_hidden.TabIndex = 1
+        Me.Settings_hidden.Text = "Show hidden things"
+        Me.Settings_hidden.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Settings_hidden.UseVisualStyleBackColor = False
         '
-        'Select_music
+        'Selects_music
         '
-        Me.Select_music.BackColor = System.Drawing.Color.White
-        Me.Select_music.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Select_music.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_music.FormattingEnabled = True
-        Me.Select_music.Items.AddRange(New Object() {"1", "2", "3"})
-        Me.Select_music.Location = New System.Drawing.Point(535, 140)
-        Me.Select_music.Name = "Select_music"
-        Me.Select_music.Size = New System.Drawing.Size(41, 21)
-        Me.Select_music.TabIndex = 1
+        Me.Selects_music.BackColor = System.Drawing.Color.White
+        Me.Selects_music.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Selects_music.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Selects_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Selects_music.FormattingEnabled = True
+        Me.Selects_music.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.Selects_music.Location = New System.Drawing.Point(535, 140)
+        Me.Selects_music.Name = "Selects_music"
+        Me.Selects_music.Size = New System.Drawing.Size(41, 21)
+        Me.Selects_music.TabIndex = 1
         '
-        'Setting_music
+        'Settings_music
         '
-        Me.Setting_music.Appearance = System.Windows.Forms.Appearance.Button
-        Me.Setting_music.BackColor = System.Drawing.Color.White
-        Me.Setting_music.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Setting_music.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_music.FlatAppearance.BorderSize = 2
-        Me.Setting_music.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_music.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Setting_music.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
-        Me.Setting_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Setting_music.Location = New System.Drawing.Point(231, 135)
-        Me.Setting_music.Name = "Setting_music"
-        Me.Setting_music.Size = New System.Drawing.Size(300, 30)
-        Me.Setting_music.TabIndex = 0
-        Me.Setting_music.Text = "Active background music"
-        Me.Setting_music.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.Setting_music.UseVisualStyleBackColor = False
+        Me.Settings_music.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Settings_music.BackColor = System.Drawing.Color.White
+        Me.Settings_music.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Settings_music.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_music.FlatAppearance.BorderSize = 2
+        Me.Settings_music.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_music.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Settings_music.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkOrange
+        Me.Settings_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Settings_music.Location = New System.Drawing.Point(231, 135)
+        Me.Settings_music.Name = "Settings_music"
+        Me.Settings_music.Size = New System.Drawing.Size(300, 30)
+        Me.Settings_music.TabIndex = 0
+        Me.Settings_music.Text = "Active background music"
+        Me.Settings_music.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Settings_music.UseVisualStyleBackColor = False
         '
         'TLSE_logo_update
         '
@@ -354,6 +366,8 @@ Partial Class TLSE_settings
         'TLSE_header
         '
         Me.TLSE_header.BackColor = System.Drawing.Color.White
+        Me.TLSE_header.Controls.Add(Me.TLSE_filepath)
+        Me.TLSE_header.Controls.Add(Me.Select_language)
         Me.TLSE_header.Controls.Add(Me.Panel_bspesymb)
         Me.TLSE_header.Controls.Add(Me.Panel_Advhelp)
         Me.TLSE_header.Controls.Add(Me.Panel_chkupdate)
@@ -372,9 +386,24 @@ Partial Class TLSE_settings
         Me.TLSE_header.Size = New System.Drawing.Size(680, 75)
         Me.TLSE_header.TabIndex = 33
         '
+        'Select_language
+        '
+        Me.Select_language.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Select_language.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_language.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_language.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_language.FormattingEnabled = True
+        Me.Select_language.Items.AddRange(New Object() {"ENG", "FRA"})
+        Me.Select_language.Location = New System.Drawing.Point(440, 40)
+        Me.Select_language.Name = "Select_language"
+        Me.Select_language.Size = New System.Drawing.Size(51, 21)
+        Me.Select_language.TabIndex = 16
+        Me.Select_language.Visible = False
+        '
         'Panel_bspesymb
         '
         Me.Panel_bspesymb.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_bspesymb.Controls.Add(Me.Setting_spesymb)
         Me.Panel_bspesymb.Controls.Add(Me.Icon_bspesymb)
         Me.Panel_bspesymb.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel_bspesymb.Location = New System.Drawing.Point(401, 38)
@@ -382,6 +411,16 @@ Partial Class TLSE_settings
         Me.Panel_bspesymb.Size = New System.Drawing.Size(34, 34)
         Me.Panel_bspesymb.TabIndex = 15
         Me.Panel_bspesymb.Visible = False
+        '
+        'Setting_spesymb
+        '
+        Me.Setting_spesymb.AutoSize = True
+        Me.Setting_spesymb.Location = New System.Drawing.Point(0, 20)
+        Me.Setting_spesymb.Name = "Setting_spesymb"
+        Me.Setting_spesymb.Size = New System.Drawing.Size(15, 14)
+        Me.Setting_spesymb.TabIndex = 6
+        Me.Setting_spesymb.UseVisualStyleBackColor = True
+        Me.Setting_spesymb.Visible = False
         '
         'Icon_bspesymb
         '
@@ -400,6 +439,7 @@ Partial Class TLSE_settings
         'Panel_Advhelp
         '
         Me.Panel_Advhelp.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_Advhelp.Controls.Add(Me.Setting_Advhelp)
         Me.Panel_Advhelp.Controls.Add(Me.Icon_Advhelp)
         Me.Panel_Advhelp.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel_Advhelp.Location = New System.Drawing.Point(364, 38)
@@ -407,6 +447,16 @@ Partial Class TLSE_settings
         Me.Panel_Advhelp.Size = New System.Drawing.Size(34, 34)
         Me.Panel_Advhelp.TabIndex = 14
         Me.Panel_Advhelp.Visible = False
+        '
+        'Setting_Advhelp
+        '
+        Me.Setting_Advhelp.AutoSize = True
+        Me.Setting_Advhelp.Location = New System.Drawing.Point(0, 20)
+        Me.Setting_Advhelp.Name = "Setting_Advhelp"
+        Me.Setting_Advhelp.Size = New System.Drawing.Size(15, 14)
+        Me.Setting_Advhelp.TabIndex = 6
+        Me.Setting_Advhelp.UseVisualStyleBackColor = True
+        Me.Setting_Advhelp.Visible = False
         '
         'Icon_Advhelp
         '
@@ -425,6 +475,7 @@ Partial Class TLSE_settings
         'Panel_chkupdate
         '
         Me.Panel_chkupdate.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_chkupdate.Controls.Add(Me.Setting_ckupdate)
         Me.Panel_chkupdate.Controls.Add(Me.Icon_chkupdate)
         Me.Panel_chkupdate.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel_chkupdate.Location = New System.Drawing.Point(327, 38)
@@ -432,6 +483,16 @@ Partial Class TLSE_settings
         Me.Panel_chkupdate.Size = New System.Drawing.Size(34, 34)
         Me.Panel_chkupdate.TabIndex = 13
         Me.Panel_chkupdate.Visible = False
+        '
+        'Setting_ckupdate
+        '
+        Me.Setting_ckupdate.AutoSize = True
+        Me.Setting_ckupdate.Location = New System.Drawing.Point(0, 20)
+        Me.Setting_ckupdate.Name = "Setting_ckupdate"
+        Me.Setting_ckupdate.Size = New System.Drawing.Size(15, 14)
+        Me.Setting_ckupdate.TabIndex = 6
+        Me.Setting_ckupdate.UseVisualStyleBackColor = True
+        Me.Setting_ckupdate.Visible = False
         '
         'Icon_chkupdate
         '
@@ -450,13 +511,24 @@ Partial Class TLSE_settings
         'Panel_filepath
         '
         Me.Panel_filepath.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_filepath.Controls.Add(Me.Setting_filepath)
         Me.Panel_filepath.Controls.Add(Me.Icon_filepath)
-        Me.Panel_filepath.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel_filepath.Cursor = System.Windows.Forms.Cursors.Default
         Me.Panel_filepath.Location = New System.Drawing.Point(290, 38)
         Me.Panel_filepath.Name = "Panel_filepath"
         Me.Panel_filepath.Size = New System.Drawing.Size(34, 34)
         Me.Panel_filepath.TabIndex = 12
         Me.Panel_filepath.Visible = False
+        '
+        'Setting_filepath
+        '
+        Me.Setting_filepath.AutoSize = True
+        Me.Setting_filepath.Location = New System.Drawing.Point(0, 20)
+        Me.Setting_filepath.Name = "Setting_filepath"
+        Me.Setting_filepath.Size = New System.Drawing.Size(15, 14)
+        Me.Setting_filepath.TabIndex = 6
+        Me.Setting_filepath.UseVisualStyleBackColor = True
+        Me.Setting_filepath.Visible = False
         '
         'Icon_filepath
         '
@@ -475,6 +547,7 @@ Partial Class TLSE_settings
         'Panel_hiddenthings
         '
         Me.Panel_hiddenthings.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_hiddenthings.Controls.Add(Me.Setting_hidden)
         Me.Panel_hiddenthings.Controls.Add(Me.Icon_hiddenthings)
         Me.Panel_hiddenthings.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel_hiddenthings.Location = New System.Drawing.Point(253, 38)
@@ -482,6 +555,16 @@ Partial Class TLSE_settings
         Me.Panel_hiddenthings.Size = New System.Drawing.Size(34, 34)
         Me.Panel_hiddenthings.TabIndex = 11
         Me.Panel_hiddenthings.Visible = False
+        '
+        'Setting_hidden
+        '
+        Me.Setting_hidden.AutoSize = True
+        Me.Setting_hidden.Location = New System.Drawing.Point(0, 20)
+        Me.Setting_hidden.Name = "Setting_hidden"
+        Me.Setting_hidden.Size = New System.Drawing.Size(15, 14)
+        Me.Setting_hidden.TabIndex = 6
+        Me.Setting_hidden.UseVisualStyleBackColor = True
+        Me.Setting_hidden.Visible = False
         '
         'Icon_hiddenthings
         '
@@ -500,6 +583,8 @@ Partial Class TLSE_settings
         'Panel_bgmusic
         '
         Me.Panel_bgmusic.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_single
+        Me.Panel_bgmusic.Controls.Add(Me.Select_music)
+        Me.Panel_bgmusic.Controls.Add(Me.Setting_music)
         Me.Panel_bgmusic.Controls.Add(Me.Icon_bgmusic)
         Me.Panel_bgmusic.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Panel_bgmusic.Location = New System.Drawing.Point(216, 38)
@@ -507,6 +592,30 @@ Partial Class TLSE_settings
         Me.Panel_bgmusic.Size = New System.Drawing.Size(34, 34)
         Me.Panel_bgmusic.TabIndex = 10
         Me.Panel_bgmusic.Visible = False
+        '
+        'Select_music
+        '
+        Me.Select_music.BackColor = System.Drawing.Color.White
+        Me.Select_music.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_music.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_music.FormattingEnabled = True
+        Me.Select_music.Items.AddRange(New Object() {"1", "2", "3"})
+        Me.Select_music.Location = New System.Drawing.Point(0, 13)
+        Me.Select_music.Name = "Select_music"
+        Me.Select_music.Size = New System.Drawing.Size(31, 21)
+        Me.Select_music.TabIndex = 5
+        Me.Select_music.Visible = False
+        '
+        'Setting_music
+        '
+        Me.Setting_music.AutoSize = True
+        Me.Setting_music.Location = New System.Drawing.Point(0, 0)
+        Me.Setting_music.Name = "Setting_music"
+        Me.Setting_music.Size = New System.Drawing.Size(15, 14)
+        Me.Setting_music.TabIndex = 16
+        Me.Setting_music.UseVisualStyleBackColor = True
+        Me.Setting_music.Visible = False
         '
         'Icon_bgmusic
         '
@@ -857,14 +966,49 @@ Partial Class TLSE_settings
         Me.Icon_IronfallISE.TabIndex = 14
         Me.Icon_IronfallISE.TabStop = False
         '
+        'Panel_description
+        '
+        Me.Panel_description.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_description.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_description
+        Me.Panel_description.Controls.Add(Me.Text_description)
+        Me.Panel_description.Location = New System.Drawing.Point(0, 691)
+        Me.Panel_description.Name = "Panel_description"
+        Me.Panel_description.Size = New System.Drawing.Size(830, 30)
+        Me.Panel_description.TabIndex = 91
+        Me.Panel_description.Visible = False
+        '
+        'Text_description
+        '
+        Me.Text_description.BackColor = System.Drawing.Color.Transparent
+        Me.Text_description.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Text_description.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_description.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_description.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Text_description.Location = New System.Drawing.Point(0, 0)
+        Me.Text_description.Name = "Text_description"
+        Me.Text_description.Size = New System.Drawing.Size(830, 30)
+        Me.Text_description.TabIndex = 0
+        Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TLSE_filepath
+        '
+        Me.TLSE_filepath.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TLSE_filepath.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TLSE_filepath.Location = New System.Drawing.Point(441, 57)
+        Me.TLSE_filepath.Name = "TLSE_filepath"
+        Me.TLSE_filepath.ReadOnly = True
+        Me.TLSE_filepath.Size = New System.Drawing.Size(233, 13)
+        Me.TLSE_filepath.TabIndex = 19
+        Me.TLSE_filepath.Visible = False
+        '
         'TLSE_settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(830, 723)
+        Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Icon_menu)
-        Me.Controls.Add(Me.Settings_credits)
         Me.Controls.Add(Me.Menu_links)
         Me.Controls.Add(Me.Menu_credits)
         Me.Controls.Add(Me.Menu_changelog)
@@ -872,8 +1016,9 @@ Partial Class TLSE_settings
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
-        Me.Controls.Add(Me.Settings_changelog)
         Me.Controls.Add(Me.Settings_settings)
+        Me.Controls.Add(Me.Settings_credits)
+        Me.Controls.Add(Me.Settings_changelog)
         Me.Controls.Add(Me.Settings_links)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -887,17 +1032,24 @@ Partial Class TLSE_settings
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TLSE_header.ResumeLayout(False)
+        Me.TLSE_header.PerformLayout()
         Me.Panel_bspesymb.ResumeLayout(False)
+        Me.Panel_bspesymb.PerformLayout()
         CType(Me.Icon_bspesymb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_Advhelp.ResumeLayout(False)
+        Me.Panel_Advhelp.PerformLayout()
         CType(Me.Icon_Advhelp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_chkupdate.ResumeLayout(False)
+        Me.Panel_chkupdate.PerformLayout()
         CType(Me.Icon_chkupdate, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_filepath.ResumeLayout(False)
+        Me.Panel_filepath.PerformLayout()
         CType(Me.Icon_filepath, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_hiddenthings.ResumeLayout(False)
+        Me.Panel_hiddenthings.PerformLayout()
         CType(Me.Icon_hiddenthings, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_bgmusic.ResumeLayout(False)
+        Me.Panel_bgmusic.PerformLayout()
         CType(Me.Icon_bgmusic, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel_menu_opensave.ResumeLayout(False)
@@ -919,6 +1071,7 @@ Partial Class TLSE_settings
         CType(Me.Icon_nintendogscatSE, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_ChibiRoboZLSE, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_IronfallISE, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_description.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -957,15 +1110,15 @@ Partial Class TLSE_settings
     Friend WithEvents Menu_links As Panel
     Friend WithEvents Menu_text_links As Label
     Friend WithEvents Icon_menu As PictureBox
-    Friend WithEvents Setting_spesymb As CheckBox
-    Friend WithEvents Setting_music As CheckBox
-    Friend WithEvents Setting_Advhelp As CheckBox
-    Friend WithEvents Setting_ckupdate As CheckBox
+    Friend WithEvents Settings_spesymb As CheckBox
+    Friend WithEvents Settings_music As CheckBox
+    Friend WithEvents Settings_Advhelp As CheckBox
+    Friend WithEvents Settings_ckupdate As CheckBox
     Friend WithEvents Text_language As Label
-    Friend WithEvents Select_language As ComboBox
-    Friend WithEvents Setting_filepath As CheckBox
-    Friend WithEvents Setting_hidden As CheckBox
-    Friend WithEvents Select_music As ComboBox
+    Friend WithEvents Selects_language As ComboBox
+    Friend WithEvents Settings_filepath As CheckBox
+    Friend WithEvents Settings_hidden As CheckBox
+    Friend WithEvents Selects_music As ComboBox
     Friend WithEvents Settings_changelog As Panel
     Friend WithEvents Text_changelog As Label
     Friend WithEvents Settings_credits As Panel
@@ -981,4 +1134,15 @@ Partial Class TLSE_settings
     Friend WithEvents Icon_nintendogscatSE As PictureBox
     Friend WithEvents Icon_ChibiRoboZLSE As PictureBox
     Friend WithEvents Icon_IronfallISE As PictureBox
+    Friend WithEvents Setting_spesymb As CheckBox
+    Friend WithEvents Setting_Advhelp As CheckBox
+    Friend WithEvents Setting_ckupdate As CheckBox
+    Friend WithEvents Setting_filepath As CheckBox
+    Friend WithEvents Setting_hidden As CheckBox
+    Friend WithEvents Setting_music As CheckBox
+    Friend WithEvents Select_music As ComboBox
+    Friend WithEvents Select_language As ComboBox
+    Friend WithEvents Panel_description As Panel
+    Friend WithEvents Text_description As Label
+    Friend WithEvents TLSE_filepath As TextBox
 End Class
