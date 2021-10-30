@@ -24,6 +24,7 @@ Partial Class TLSE_dialog
     Private Sub InitializeComponent()
         Me.valu_pandialogpos = New System.Windows.Forms.NumericUpDown()
         Me.Panel_tlse = New System.Windows.Forms.Panel()
+        Me.Icon_reference_panel = New System.Windows.Forms.PictureBox()
         Me.Icon_reference = New System.Windows.Forms.PictureBox()
         Me.Panel_dialog = New System.Windows.Forms.Panel()
         Me.Text_TLSE_dialog = New System.Windows.Forms.Label()
@@ -31,14 +32,13 @@ Partial Class TLSE_dialog
         Me.Cancel_Button = New System.Windows.Forms.Label()
         Me.Panel_OK = New System.Windows.Forms.Panel()
         Me.OK_Button = New System.Windows.Forms.Label()
-        Me.Icon_reference_panel = New System.Windows.Forms.PictureBox()
         CType(Me.valu_pandialogpos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_tlse.SuspendLayout()
+        CType(Me.Icon_reference_panel, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_reference, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_dialog.SuspendLayout()
         Me.Panel_Cancel.SuspendLayout()
         Me.Panel_OK.SuspendLayout()
-        CType(Me.Icon_reference_panel, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'valu_pandialogpos
@@ -57,6 +57,17 @@ Partial Class TLSE_dialog
         Me.Panel_tlse.Name = "Panel_tlse"
         Me.Panel_tlse.Size = New System.Drawing.Size(676, 540)
         Me.Panel_tlse.TabIndex = 98
+        '
+        'Icon_reference_panel
+        '
+        Me.Icon_reference_panel.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_reference_panel.Location = New System.Drawing.Point(18, 17)
+        Me.Icon_reference_panel.Name = "Icon_reference_panel"
+        Me.Icon_reference_panel.Size = New System.Drawing.Size(54, 50)
+        Me.Icon_reference_panel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Icon_reference_panel.TabIndex = 8
+        Me.Icon_reference_panel.TabStop = False
+        Me.Icon_reference_panel.Visible = False
         '
         'Icon_reference
         '
@@ -143,17 +154,6 @@ Partial Class TLSE_dialog
         Me.OK_Button.Text = "OK"
         Me.OK_Button.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Icon_reference_panel
-        '
-        Me.Icon_reference_panel.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_reference_panel.Location = New System.Drawing.Point(18, 17)
-        Me.Icon_reference_panel.Name = "Icon_reference_panel"
-        Me.Icon_reference_panel.Size = New System.Drawing.Size(54, 50)
-        Me.Icon_reference_panel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.Icon_reference_panel.TabIndex = 8
-        Me.Icon_reference_panel.TabStop = False
-        Me.Icon_reference_panel.Visible = False
-        '
         'TLSE_dialog
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -170,14 +170,15 @@ Partial Class TLSE_dialog
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "TLSE_dialog"
+        Me.TransparencyKey = System.Drawing.SystemColors.Control
         CType(Me.valu_pandialogpos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_tlse.ResumeLayout(False)
         Me.Panel_tlse.PerformLayout()
+        CType(Me.Icon_reference_panel, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_reference, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_dialog.ResumeLayout(False)
         Me.Panel_Cancel.ResumeLayout(False)
         Me.Panel_OK.ResumeLayout(False)
-        CType(Me.Icon_reference_panel, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

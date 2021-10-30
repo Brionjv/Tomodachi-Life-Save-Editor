@@ -7445,10 +7445,8 @@ Partial Class TLSE_relationships
         Me.TLSE_filepath.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TLSE_filepath.Location = New System.Drawing.Point(439, 57)
         Me.TLSE_filepath.Name = "TLSE_filepath"
-        Me.TLSE_filepath.ReadOnly = True
         Me.TLSE_filepath.Size = New System.Drawing.Size(356, 13)
         Me.TLSE_filepath.TabIndex = 19
-        Me.TLSE_filepath.Visible = False
         '
         'Select_language
         '

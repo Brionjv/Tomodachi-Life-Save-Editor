@@ -304,4 +304,52 @@
             Panel_filepath.Visible = False
         End If
     End Sub
+
+    Private Sub Text_menu_open_Click(sender As Object, e As EventArgs) Handles Text_menu_open.Click
+        Try
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Tomodachi Life Save Editor will make a backup of your save file in case" & vbNewLine & "If you are troubles, you can restore your older save file in 'Backup' folder in save editor location"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Tomodachi Life Save Editor va faire une copie de votre sauvegarde au cas où" & vbNewLine & "Si vous avez un problème, vous pouvez restaurer votre ancien fichier de sauvegarde dans le dossier 'Backup' à l'emplacement de l'éditeur de sauvegarde"
+            End If
+            TLSE_dialog.ShowDialog()
+            Dim open As New OpenFileDialog
+            open.Filter = "Text files|*.txt"
+            open.Title = "Open save savedataArc.txt"
+            open.ShowDialog()
+            savedataArc = open.FileName
+            If FileLen(savedataArc) = &H1E4C98 Then
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "EUR or USA save file detected" & vbNewLine & "Choose a save file region corresponding to your game region"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Sauvegarde EUR ou USA détecté" & vbNewLine & "Choisissez une région de sauvegarde correspondant à la région de votre jeux"
+                End If
+                TLSE_dialog.Panel_Cancel.Visible = True
+                TLSE_dialog.Panel_OK.Visible = True
+                TLSE_dialog.OK_Button.Text = "EUR"
+                TLSE_dialog.Cancel_Button.Text = "USA"
+                TLSE_dialog.ShowDialog()
+                If TLSE_dialog.DialogResult = DialogResult.OK Then
+                    Filever_text.Text = "EU"
+                ElseIf TLSE_dialog.DialogResult = DialogResult.Cancel Then
+                    Filever_text.Text = "US"
+                End If
+            ElseIf FileLen(savedataArc) = &H1F0048 Then
+                Filever_text.Text = "KR"
+
+            ElseIf FileLen(savedataArc) = &H14BD68 Then
+                Filever_text.Text = "JP"
+            Else
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Invalid Tomodachi Life save file"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Sauvegarde de Tomodachi Life invalide"
+                End If
+                TLSE_dialog.ShowDialog()
+                Filever_text.Text = ""
+            End If
+            TLSE_filepath.Text = savedataArc
+        Catch ex As Exception
+        End Try
+    End Sub
 End Class

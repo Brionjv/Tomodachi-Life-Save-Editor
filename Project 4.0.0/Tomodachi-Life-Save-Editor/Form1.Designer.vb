@@ -927,6 +927,7 @@ Partial Class TL_SaveEditor
         Me.valu_allfav_1 = New System.Windows.Forms.NumericUpDown()
         Me.Check_tummy_noteat = New System.Windows.Forms.CheckBox()
         Me.Fea_interaction = New System.Windows.Forms.Panel()
+        Me.valu_interaction = New System.Windows.Forms.NumericUpDown()
         Me.AdvH_target2 = New System.Windows.Forms.PictureBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.infobubble_target2 = New System.Windows.Forms.Panel()
@@ -959,7 +960,6 @@ Partial Class TL_SaveEditor
         Me.valu_target1 = New System.Windows.Forms.NumericUpDown()
         Me.Select_target1 = New System.Windows.Forms.ComboBox()
         Me.Panel27 = New System.Windows.Forms.Panel()
-        Me.valu_interaction = New System.Windows.Forms.NumericUpDown()
         Me.Select_Interaction_USA = New System.Windows.Forms.ComboBox()
         Me.Select_interaction = New System.Windows.Forms.ComboBox()
         Me.Panel_target1_foods = New System.Windows.Forms.Panel()
@@ -2241,6 +2241,7 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_noeat, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_allfav_1, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Fea_interaction.SuspendLayout
+        CType(Me.valu_interaction, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_target2, System.ComponentModel.ISupportInitialize).BeginInit
         Me.infobubble_target2.SuspendLayout
         Me.infobubble_target1.SuspendLayout
@@ -2262,7 +2263,6 @@ Partial Class TL_SaveEditor
         Me.Panel_target1.SuspendLayout
         CType(Me.valu_target1, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel27.SuspendLayout
-        CType(Me.valu_interaction, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel_target1_foods.SuspendLayout
         Me.TabPage4.SuspendLayout
         CType(Me.AdvH_setallrelation, System.ComponentModel.ISupportInitialize).BeginInit
@@ -2979,8 +2979,8 @@ Partial Class TL_SaveEditor
         Me.Panel_menu_opensave.BackColor = System.Drawing.Color.Transparent
         Me.Panel_menu_opensave.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex2
         Me.Panel_menu_opensave.Controls.Add(Me.PictureBox1)
-        Me.Panel_menu_opensave.Controls.Add(Me.Text_menu_save)
         Me.Panel_menu_opensave.Controls.Add(Me.Text_menu_open)
+        Me.Panel_menu_opensave.Controls.Add(Me.Text_menu_save)
         Me.Panel_menu_opensave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Panel_menu_opensave.Location = New System.Drawing.Point(0, 0)
         Me.Panel_menu_opensave.Name = "Panel_menu_opensave"
@@ -14432,6 +14432,18 @@ Partial Class TL_SaveEditor
         Me.Fea_interaction.Size = New System.Drawing.Size(448, 240)
         Me.Fea_interaction.TabIndex = 287
         '
+        'valu_interaction
+        '
+        Me.valu_interaction.BackColor = System.Drawing.Color.LightCyan
+        Me.valu_interaction.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interaction.Hexadecimal = True
+        Me.valu_interaction.Location = New System.Drawing.Point(56, 5)
+        Me.valu_interaction.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_interaction.Name = "valu_interaction"
+        Me.valu_interaction.Size = New System.Drawing.Size(86, 16)
+        Me.valu_interaction.TabIndex = 187
+        Me.valu_interaction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'AdvH_target2
         '
         Me.AdvH_target2.BackColor = System.Drawing.Color.Transparent
@@ -14792,18 +14804,6 @@ Partial Class TL_SaveEditor
         Me.Panel27.Name = "Panel27"
         Me.Panel27.Size = New System.Drawing.Size(441, 25)
         Me.Panel27.TabIndex = 159
-        '
-        'valu_interaction
-        '
-        Me.valu_interaction.BackColor = System.Drawing.Color.LightCyan
-        Me.valu_interaction.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_interaction.Hexadecimal = True
-        Me.valu_interaction.Location = New System.Drawing.Point(56, 5)
-        Me.valu_interaction.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
-        Me.valu_interaction.Name = "valu_interaction"
-        Me.valu_interaction.Size = New System.Drawing.Size(86, 16)
-        Me.valu_interaction.TabIndex = 187
-        Me.valu_interaction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Select_Interaction_USA
         '
@@ -25470,6 +25470,7 @@ Partial Class TL_SaveEditor
         CType(Me.AdvH_noeat, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_allfav_1, System.ComponentModel.ISupportInitialize).EndInit
         Me.Fea_interaction.ResumeLayout(False)
+        CType(Me.valu_interaction, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_target2, System.ComponentModel.ISupportInitialize).EndInit
         Me.infobubble_target2.ResumeLayout(False)
         Me.infobubble_target1.ResumeLayout(False)
@@ -25491,7 +25492,6 @@ Partial Class TL_SaveEditor
         Me.Panel_target1.ResumeLayout(False)
         CType(Me.valu_target1, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel27.ResumeLayout(False)
-        CType(Me.valu_interaction, System.ComponentModel.ISupportInitialize).EndInit
         Me.Panel_target1_foods.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
         CType(Me.AdvH_setallrelation, System.ComponentModel.ISupportInitialize).EndInit
