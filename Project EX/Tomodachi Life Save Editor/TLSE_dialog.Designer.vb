@@ -53,7 +53,7 @@ Partial Class TLSE_dialog
         '
         Me.Panel_tlse.BackColor = System.Drawing.Color.Transparent
         Me.Panel_tlse.Controls.Add(Me.Icon_reference_panel)
-        Me.Panel_tlse.Location = New System.Drawing.Point(144, 33)
+        Me.Panel_tlse.Location = New System.Drawing.Point(106, 33)
         Me.Panel_tlse.Name = "Panel_tlse"
         Me.Panel_tlse.Size = New System.Drawing.Size(676, 540)
         Me.Panel_tlse.TabIndex = 98
@@ -72,7 +72,7 @@ Partial Class TLSE_dialog
         'Icon_reference
         '
         Me.Icon_reference.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_reference.Location = New System.Drawing.Point(84, 124)
+        Me.Icon_reference.Location = New System.Drawing.Point(38, 50)
         Me.Icon_reference.Name = "Icon_reference"
         Me.Icon_reference.Size = New System.Drawing.Size(54, 50)
         Me.Icon_reference.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -168,7 +168,7 @@ Partial Class TLSE_dialog
         Me.MinimizeBox = False
         Me.Name = "TLSE_dialog"
         Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TLSE_dialog"
         Me.TransparencyKey = System.Drawing.SystemColors.Control
         CType(Me.valu_pandialogpos, System.ComponentModel.ISupportInitialize).EndInit()
