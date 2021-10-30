@@ -84,6 +84,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="TLSE_dialog.Designer.vb">
+      <DependentUpon>TLSE_dialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_dialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_hub.Designer.vb">
       <DependentUpon>TLSE_hub.vb</DependentUpon>
     </Compile>
@@ -122,6 +128,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="TLSE_dialog.resx">
+      <DependentUpon>TLSE_dialog.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TLSE_hub.resx">
       <DependentUpon>TLSE_hub.vb</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +233,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\bg_dialog.png" />
+    <None Include="Resources\bg_buttons_large.png" />
     <None Include="Resources\bg_description.png" />
     <None Include="Resources\Icon_AdvH.png" />
     <None Include="Resources\icon_menu_mii.png" />
