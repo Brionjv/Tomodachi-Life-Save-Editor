@@ -452,6 +452,7 @@ Partial Class TLSE_hub
         '
         'Icon_relainterac
         '
+        Me.Icon_relainterac.BackColor = System.Drawing.Color.Transparent
         Me.Icon_relainterac.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menumiiedit_relainterac
         Me.Icon_relainterac.Location = New System.Drawing.Point(296, 113)
         Me.Icon_relainterac.Name = "Icon_relainterac"
