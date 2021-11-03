@@ -80,6 +80,8 @@
         My.Settings.Para_language = Selects_language.SelectedItem
         My.Settings.Para_selmusic = Selects_music.SelectedItem
         TLSE_hub.Show()
+        TLSE_hub.Filever_text.Text = Filever_text.Text
+        TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
         Me.Close()
     End Sub
     'end form menu

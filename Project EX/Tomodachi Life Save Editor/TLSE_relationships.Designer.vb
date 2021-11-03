@@ -1109,6 +1109,7 @@ Partial Class TLSE_relationships
         Me.valu_friend_rela_1.Size = New System.Drawing.Size(43, 16)
         Me.valu_friend_rela_1.TabIndex = 29
         Me.valu_friend_rela_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_friend_rela_1.Visible = False
         '
         'valu_friend_rela_2
         '

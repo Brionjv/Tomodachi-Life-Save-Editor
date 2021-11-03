@@ -165,6 +165,8 @@
 
     Private Sub Text_menu_settings_Click(sender As Object, e As EventArgs) Handles Text_menu_settings.Click
         TLSE_settings.Show()
+        TLSE_settings.Filever_text.Text = Filever_text.Text
+        TLSE_settings.TLSE_filepath.Text = TLSE_filepath.Text
         Me.Close()
     End Sub
 
