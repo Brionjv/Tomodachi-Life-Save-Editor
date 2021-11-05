@@ -41,6 +41,7 @@ Partial Class TLSE_settings
         Me.TLSE_title = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TLSE_header = New System.Windows.Forms.Panel()
+        Me.TLSE_filepath = New System.Windows.Forms.TextBox()
         Me.Select_language = New System.Windows.Forms.ComboBox()
         Me.Panel_bspesymb = New System.Windows.Forms.Panel()
         Me.Setting_spesymb = New System.Windows.Forms.CheckBox()
@@ -92,7 +93,6 @@ Partial Class TLSE_settings
         Me.Icon_IronfallISE = New System.Windows.Forms.PictureBox()
         Me.Panel_description = New System.Windows.Forms.Panel()
         Me.Text_description = New System.Windows.Forms.Label()
-        Me.TLSE_filepath = New System.Windows.Forms.TextBox()
         CType(Me.Minimizebutton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Settings_settings.SuspendLayout()
@@ -331,7 +331,7 @@ Partial Class TLSE_settings
         Me.TLSE_logo_update.BackColor = System.Drawing.Color.White
         Me.TLSE_logo_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.TLSE_logo_update.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.TLSE_logo_update.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.logo_US
+        Me.TLSE_logo_update.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.logo_US_update
         Me.TLSE_logo_update.Location = New System.Drawing.Point(0, 0)
         Me.TLSE_logo_update.Name = "TLSE_logo_update"
         Me.TLSE_logo_update.Size = New System.Drawing.Size(150, 75)
@@ -385,6 +385,17 @@ Partial Class TLSE_settings
         Me.TLSE_header.Name = "TLSE_header"
         Me.TLSE_header.Size = New System.Drawing.Size(680, 75)
         Me.TLSE_header.TabIndex = 33
+        '
+        'TLSE_filepath
+        '
+        Me.TLSE_filepath.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TLSE_filepath.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TLSE_filepath.Location = New System.Drawing.Point(441, 57)
+        Me.TLSE_filepath.Name = "TLSE_filepath"
+        Me.TLSE_filepath.ReadOnly = True
+        Me.TLSE_filepath.Size = New System.Drawing.Size(233, 13)
+        Me.TLSE_filepath.TabIndex = 19
+        Me.TLSE_filepath.Visible = False
         '
         'Select_language
         '
@@ -989,17 +1000,6 @@ Partial Class TLSE_settings
         Me.Text_description.Size = New System.Drawing.Size(830, 30)
         Me.Text_description.TabIndex = 0
         Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'TLSE_filepath
-        '
-        Me.TLSE_filepath.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TLSE_filepath.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TLSE_filepath.Location = New System.Drawing.Point(441, 57)
-        Me.TLSE_filepath.Name = "TLSE_filepath"
-        Me.TLSE_filepath.ReadOnly = True
-        Me.TLSE_filepath.Size = New System.Drawing.Size(233, 13)
-        Me.TLSE_filepath.TabIndex = 19
-        Me.TLSE_filepath.Visible = False
         '
         'TLSE_settings
         '

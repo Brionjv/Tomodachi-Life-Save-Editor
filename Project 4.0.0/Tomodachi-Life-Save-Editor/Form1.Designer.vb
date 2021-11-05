@@ -46,9 +46,9 @@ Partial Class TL_SaveEditor
         Me.Title_filever = New System.Windows.Forms.Label()
         Me.Panel_menu_opensave = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Text_menu_open = New System.Windows.Forms.Label()
         Me.Text_menu_save = New System.Windows.Forms.Label()
         Me.ImageList_menusave = New System.Windows.Forms.ImageList(Me.components)
-        Me.Text_menu_open = New System.Windows.Forms.Label()
         Me.Minimizebutton = New System.Windows.Forms.PictureBox()
         Me.TLSE_title = New System.Windows.Forms.PictureBox()
         Me.Closebutton = New System.Windows.Forms.PictureBox()
@@ -2772,8 +2772,8 @@ Partial Class TL_SaveEditor
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(239, 39)
         Me.Label12.TabIndex = 268
-        Me.Label12.Text = "This is not the final version. If you have any suggestions or glitch, report them" &
-    " on Github or gbatemp.net page (See links in settings)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label12.Text = "Final version is EX-version. To save friend list features use EX-versions include" &
+    "d"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel_menubar
@@ -3000,6 +3000,21 @@ Partial Class TL_SaveEditor
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
+        'Text_menu_open
+        '
+        Me.Text_menu_open.BackColor = System.Drawing.Color.Transparent
+        Me.Text_menu_open.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_open.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_menu_open.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_menu_open.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_menu_open.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Text_menu_open.Location = New System.Drawing.Point(0, 0)
+        Me.Text_menu_open.Name = "Text_menu_open"
+        Me.Text_menu_open.Size = New System.Drawing.Size(69, 34)
+        Me.Text_menu_open.TabIndex = 3
+        Me.Text_menu_open.Text = "Open"
+        Me.Text_menu_open.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Text_menu_save
         '
         Me.Text_menu_save.BackColor = System.Drawing.Color.Transparent
@@ -3023,21 +3038,6 @@ Partial Class TL_SaveEditor
         Me.ImageList_menusave.ImageStream = CType(resources.GetObject("ImageList_menusave.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList_menusave.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList_menusave.Images.SetKeyName(0, "icon_menusave.png")
-        '
-        'Text_menu_open
-        '
-        Me.Text_menu_open.BackColor = System.Drawing.Color.Transparent
-        Me.Text_menu_open.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_menu_open.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_menu_open.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_menu_open.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_menu_open.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Text_menu_open.Location = New System.Drawing.Point(0, 0)
-        Me.Text_menu_open.Name = "Text_menu_open"
-        Me.Text_menu_open.Size = New System.Drawing.Size(69, 34)
-        Me.Text_menu_open.TabIndex = 3
-        Me.Text_menu_open.Text = "Open"
-        Me.Text_menu_open.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Minimizebutton
         '
@@ -5843,7 +5843,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0 Omicron"
+        Me.Text_TLSE_version.Text = "Version 4.0.0"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -24974,13 +24974,13 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
-        Me.Controls.Add(Me.Panel_settings)
         Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.Panel_concertedit)
         Me.Controls.Add(Me.Panel_repairsave)
         Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_itemsedit)
+        Me.Controls.Add(Me.Panel_settings)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"

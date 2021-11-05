@@ -26,7 +26,6 @@ D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodac
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_dialog.resources
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbproj.GenerateResource.cache
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbproj.CoreCompileInputs.cache
-D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.vbproj.CopyComplete
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.exe
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.xml
 D:\Users\brice\Documents\Github\Tomodachi-Life-Save-Editor\Project 4.0.0\Tomodachi-Life-Save-Editor\obj\Debug\Tomodachi-Life-Save-Editor.pdb

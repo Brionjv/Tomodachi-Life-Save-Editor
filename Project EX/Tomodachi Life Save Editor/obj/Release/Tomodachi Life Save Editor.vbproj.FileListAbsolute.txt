@@ -11,7 +11,7 @@ C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Edito
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_settings.resources
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.vbproj.GenerateResource.cache
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.vbproj.CoreCompileInputs.cache
-C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.vbproj.CopyComplete
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.exe
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.xml
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.pdb
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_dialog.resources

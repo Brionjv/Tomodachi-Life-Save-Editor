@@ -233,6 +233,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\logo_US_update.gif" />
     <None Include="Resources\bg_dialog.png" />
     <None Include="Resources\bg_buttons_large.png" />
     <None Include="Resources\bg_description.png" />

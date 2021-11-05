@@ -144,7 +144,7 @@ Partial Class TLSE_hub
         Me.TLSE_logo_update.BackColor = System.Drawing.Color.White
         Me.TLSE_logo_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.TLSE_logo_update.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.TLSE_logo_update.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.logo_US
+        Me.TLSE_logo_update.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.logo_US_update
         Me.TLSE_logo_update.Location = New System.Drawing.Point(0, 0)
         Me.TLSE_logo_update.Name = "TLSE_logo_update"
         Me.TLSE_logo_update.Size = New System.Drawing.Size(150, 75)

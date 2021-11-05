@@ -79,6 +79,9 @@
         My.Settings.Para_spesymb = Settings_spesymb.Checked
         My.Settings.Para_language = Selects_language.SelectedItem
         My.Settings.Para_selmusic = Selects_music.SelectedItem
+        If TLSE_logo_update.Visible = True Then
+            TLSE_hub.TLSE_logo_update.Visible = True
+        End If
         TLSE_hub.Show()
         TLSE_hub.Filever_text.Text = Filever_text.Text
         TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text

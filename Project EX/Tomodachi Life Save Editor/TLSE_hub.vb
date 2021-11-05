@@ -1,4 +1,7 @@
-﻿Public Class TLSE_hub
+﻿Imports System.IO
+Imports System.Net
+Imports System
+Public Class TLSE_hub
     Private IsFormBeingDragged As Boolean = False
     Private MousedwnX As Integer
     Private MousedwnY As Integer
@@ -164,6 +167,9 @@
     End Sub
 
     Private Sub Text_menu_settings_Click(sender As Object, e As EventArgs) Handles Text_menu_settings.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_settings.TLSE_logo_update.Visible = True
+        End If
         TLSE_settings.Show()
         TLSE_settings.Filever_text.Text = Filever_text.Text
         TLSE_settings.TLSE_filepath.Text = TLSE_filepath.Text
@@ -199,6 +205,9 @@
     End Sub
 
     Private Sub Text_menu_relationships_Click(sender As Object, e As EventArgs) Handles Text_menu_relationships.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_relationships.TLSE_logo_update.Visible = True
+        End If
         TLSE_relationships.Show()
         Me.Close()
     End Sub
@@ -351,7 +360,76 @@
                 Filever_text.Text = ""
             End If
             TLSE_filepath.Text = savedataArc
+            Makebackup()
         Catch ex As Exception
         End Try
+    End Sub
+
+    Public Sub Makebackup()
+        Try
+            If Filever_text.Text = "US" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\Backup\USA\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+            If Filever_text.Text = "EU" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\Backup\EUR\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+            If Filever_text.Text = "JP" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\Backup\JPN\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+            If Filever_text.Text = "KR" Then
+                My.Computer.FileSystem.CopyFile(
+                          savedataArc,
+                        applicationpath & "\Backup\KOR\" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute & "\savedataArc.txt")
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Public Sub Checkupdates()
+        If Setting_ckupdate.Checked = False Then
+            Try
+                Dim MAJ As New WebClient
+                Dim lastupdate As String = MAJ.DownloadString("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/Version_EX.txt")
+                If TLSE_version.Text = lastupdate Then
+                    TLSE_logo.Visible = True
+                    TLSE_logo_update.Visible = False
+                Else
+                    TLSE_logo.Visible = False
+                    TLSE_logo_update.Visible = True
+                    If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                        TLSE_dialog.Text_TLSE_dialog.Text = "An update is available" & vbNewLine & vbNewLine & "Click on Tomodachi Life Save Editor icon" & vbNewLine & "to download new version"
+                        TLSE_dialog.ShowDialog()
+                    End If
+                    If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                        TLSE_dialog.Text_TLSE_dialog.Text = "Une mise à jour est disponible" & vbNewLine & vbNewLine & "Cliquez sur l'îcone de Tomodachi Life Save Editor" & vbNewLine & "pour télécharger la nouvelle version"
+                        TLSE_dialog.ShowDialog()
+                    End If
+                End If
+
+            Catch ex As Exception
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "An error has occurred when checking updates" & vbNewLine & "Check if you are connected to internet"
+                    TLSE_dialog.ShowDialog()
+                End If
+                If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Une erreur est survenue lors de la vérification des mises à jour" & vbNewLine & "Vérifiez que vous êtes connecté à internet"
+                    TLSE_dialog.ShowDialog()
+                End If
+            End Try
+        End If
+    End Sub
+
+    Private Sub TLSE_hub_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        If TLSE_logo_update.Visible = False Then
+            If Setting_ckupdate.Checked = False Then
+                Checkupdates()
+            End If
+        End If
     End Sub
 End Class
