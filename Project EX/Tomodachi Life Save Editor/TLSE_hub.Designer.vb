@@ -238,7 +238,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_manual
         '
-        Me.Text_menu_manual.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_manual.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_manual.ForeColor = System.Drawing.Color.White
         Me.Text_menu_manual.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_manual.Name = "Text_menu_manual"
@@ -258,7 +258,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_repairsave
         '
-        Me.Text_menu_repairsave.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_repairsave.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_repairsave.ForeColor = System.Drawing.Color.Black
         Me.Text_menu_repairsave.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_repairsave.Name = "Text_menu_repairsave"
@@ -278,7 +278,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_itemsedit
         '
-        Me.Text_menu_itemsedit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_itemsedit.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_itemsedit.ForeColor = System.Drawing.Color.White
         Me.Text_menu_itemsedit.Location = New System.Drawing.Point(9, 10)
         Me.Text_menu_itemsedit.Name = "Text_menu_itemsedit"
@@ -298,7 +298,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_concertedit
         '
-        Me.Text_menu_concertedit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_concertedit.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_concertedit.ForeColor = System.Drawing.Color.Black
         Me.Text_menu_concertedit.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_concertedit.Name = "Text_menu_concertedit"
@@ -318,7 +318,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_islandedit
         '
-        Me.Text_menu_islandedit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_islandedit.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_islandedit.ForeColor = System.Drawing.Color.White
         Me.Text_menu_islandedit.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_islandedit.Name = "Text_menu_islandedit"
@@ -338,7 +338,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_extras
         '
-        Me.Text_menu_extras.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_extras.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_extras.ForeColor = System.Drawing.Color.White
         Me.Text_menu_extras.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_extras.Name = "Text_menu_extras"
@@ -358,7 +358,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_miimanagement
         '
-        Me.Text_menu_miimanagement.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_miimanagement.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_miimanagement.ForeColor = System.Drawing.Color.White
         Me.Text_menu_miimanagement.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_miimanagement.Name = "Text_menu_miimanagement"
@@ -398,7 +398,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_travelersedit
         '
-        Me.Text_menu_travelersedit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_travelersedit.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_travelersedit.ForeColor = System.Drawing.Color.White
         Me.Text_menu_travelersedit.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_travelersedit.Name = "Text_menu_travelersedit"
@@ -427,7 +427,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_babiesedit
         '
-        Me.Text_menu_babiesedit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_babiesedit.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_babiesedit.ForeColor = System.Drawing.Color.White
         Me.Text_menu_babiesedit.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_babiesedit.Name = "Text_menu_babiesedit"
@@ -464,6 +464,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_interactions.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_interaction
         Me.Menu_interactions.Controls.Add(Me.Text_menu_interactions)
+        Me.Menu_interactions.Cursor = System.Windows.Forms.Cursors.Default
         Me.Menu_interactions.Location = New System.Drawing.Point(200, 207)
         Me.Menu_interactions.Name = "Menu_interactions"
         Me.Menu_interactions.Size = New System.Drawing.Size(156, 126)
@@ -471,7 +472,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_interactions
         '
-        Me.Text_menu_interactions.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_interactions.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_interactions.ForeColor = System.Drawing.Color.White
         Me.Text_menu_interactions.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_interactions.Name = "Text_menu_interactions"
@@ -557,7 +558,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.0.0"
+        Me.TLSE_version.Text = "Version EX-1.0.1"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header

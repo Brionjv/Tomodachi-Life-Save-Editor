@@ -2979,8 +2979,8 @@ Partial Class TL_SaveEditor
         Me.Panel_menu_opensave.BackColor = System.Drawing.Color.Transparent
         Me.Panel_menu_opensave.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.buttontop_largex2
         Me.Panel_menu_opensave.Controls.Add(Me.PictureBox1)
-        Me.Panel_menu_opensave.Controls.Add(Me.Text_menu_open)
         Me.Panel_menu_opensave.Controls.Add(Me.Text_menu_save)
+        Me.Panel_menu_opensave.Controls.Add(Me.Text_menu_open)
         Me.Panel_menu_opensave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Panel_menu_opensave.Location = New System.Drawing.Point(0, 0)
         Me.Panel_menu_opensave.Name = "Panel_menu_opensave"
@@ -5843,7 +5843,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.0"
+        Me.Text_TLSE_version.Text = "Version 4.0.1"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
