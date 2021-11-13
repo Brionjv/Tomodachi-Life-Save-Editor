@@ -96,6 +96,12 @@
     <Compile Include="TLSE_hub.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_Jrelationships.Designer.vb">
+      <DependentUpon>TLSE_Jrelationships.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_Jrelationships.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_loading.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_hub.resx">
       <DependentUpon>TLSE_hub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_Jrelationships.resx">
+      <DependentUpon>TLSE_Jrelationships.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_loading.resx">
       <DependentUpon>TLSE_loading.vb</DependentUpon>
