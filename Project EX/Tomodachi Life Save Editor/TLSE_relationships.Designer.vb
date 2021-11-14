@@ -1602,7 +1602,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_7.FormattingEnabled = True
-        Me.Select_friend_rela_7.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_7.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_7.Location = New System.Drawing.Point(152, 135)
         Me.Select_friend_rela_7.Name = "Select_friend_rela_7"
         Me.Select_friend_rela_7.Size = New System.Drawing.Size(87, 21)
@@ -1625,7 +1625,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_8.FormattingEnabled = True
-        Me.Select_friend_rela_8.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_8.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_8.Location = New System.Drawing.Point(248, 135)
         Me.Select_friend_rela_8.Name = "Select_friend_rela_8"
         Me.Select_friend_rela_8.Size = New System.Drawing.Size(87, 21)
@@ -1637,7 +1637,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_9.FormattingEnabled = True
-        Me.Select_friend_rela_9.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_9.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_9.Location = New System.Drawing.Point(344, 135)
         Me.Select_friend_rela_9.Name = "Select_friend_rela_9"
         Me.Select_friend_rela_9.Size = New System.Drawing.Size(87, 21)
@@ -1649,7 +1649,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_10.FormattingEnabled = True
-        Me.Select_friend_rela_10.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_10.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_10.Location = New System.Drawing.Point(442, 135)
         Me.Select_friend_rela_10.Name = "Select_friend_rela_10"
         Me.Select_friend_rela_10.Size = New System.Drawing.Size(87, 21)
@@ -1661,7 +1661,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_11.FormattingEnabled = True
-        Me.Select_friend_rela_11.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_11.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_11.Location = New System.Drawing.Point(56, 215)
         Me.Select_friend_rela_11.Name = "Select_friend_rela_11"
         Me.Select_friend_rela_11.Size = New System.Drawing.Size(87, 21)
@@ -1673,7 +1673,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_25.FormattingEnabled = True
-        Me.Select_friend_rela_25.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_25.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_25.Location = New System.Drawing.Point(442, 375)
         Me.Select_friend_rela_25.Name = "Select_friend_rela_25"
         Me.Select_friend_rela_25.Size = New System.Drawing.Size(87, 21)
@@ -1685,7 +1685,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_12.FormattingEnabled = True
-        Me.Select_friend_rela_12.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_12.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_12.Location = New System.Drawing.Point(152, 215)
         Me.Select_friend_rela_12.Name = "Select_friend_rela_12"
         Me.Select_friend_rela_12.Size = New System.Drawing.Size(87, 21)
@@ -1739,7 +1739,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_24.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_24.FormattingEnabled = True
-        Me.Select_friend_rela_24.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_24.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_24.Location = New System.Drawing.Point(344, 375)
         Me.Select_friend_rela_24.Name = "Select_friend_rela_24"
         Me.Select_friend_rela_24.Size = New System.Drawing.Size(87, 21)
@@ -1762,7 +1762,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_23.FormattingEnabled = True
-        Me.Select_friend_rela_23.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_23.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_23.Location = New System.Drawing.Point(248, 375)
         Me.Select_friend_rela_23.Name = "Select_friend_rela_23"
         Me.Select_friend_rela_23.Size = New System.Drawing.Size(87, 21)
@@ -1785,7 +1785,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_22.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_22.FormattingEnabled = True
-        Me.Select_friend_rela_22.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_22.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_22.Location = New System.Drawing.Point(152, 375)
         Me.Select_friend_rela_22.Name = "Select_friend_rela_22"
         Me.Select_friend_rela_22.Size = New System.Drawing.Size(87, 21)
@@ -1808,7 +1808,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_21.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_21.FormattingEnabled = True
-        Me.Select_friend_rela_21.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_21.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_21.Location = New System.Drawing.Point(56, 375)
         Me.Select_friend_rela_21.Name = "Select_friend_rela_21"
         Me.Select_friend_rela_21.Size = New System.Drawing.Size(87, 21)
@@ -1831,7 +1831,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_20.FormattingEnabled = True
-        Me.Select_friend_rela_20.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_20.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_20.Location = New System.Drawing.Point(442, 295)
         Me.Select_friend_rela_20.Name = "Select_friend_rela_20"
         Me.Select_friend_rela_20.Size = New System.Drawing.Size(87, 21)
@@ -1852,7 +1852,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_19.FormattingEnabled = True
-        Me.Select_friend_rela_19.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_19.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_19.Location = New System.Drawing.Point(344, 295)
         Me.Select_friend_rela_19.Name = "Select_friend_rela_19"
         Me.Select_friend_rela_19.Size = New System.Drawing.Size(87, 21)
@@ -1954,7 +1954,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_13.FormattingEnabled = True
-        Me.Select_friend_rela_13.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_13.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_13.Location = New System.Drawing.Point(248, 215)
         Me.Select_friend_rela_13.Name = "Select_friend_rela_13"
         Me.Select_friend_rela_13.Size = New System.Drawing.Size(87, 21)
@@ -1975,7 +1975,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_14.FormattingEnabled = True
-        Me.Select_friend_rela_14.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_14.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_14.Location = New System.Drawing.Point(344, 215)
         Me.Select_friend_rela_14.Name = "Select_friend_rela_14"
         Me.Select_friend_rela_14.Size = New System.Drawing.Size(87, 21)
@@ -1998,7 +1998,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_15.FormattingEnabled = True
-        Me.Select_friend_rela_15.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_15.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_15.Location = New System.Drawing.Point(442, 215)
         Me.Select_friend_rela_15.Name = "Select_friend_rela_15"
         Me.Select_friend_rela_15.Size = New System.Drawing.Size(87, 21)
@@ -2021,7 +2021,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_16.FormattingEnabled = True
-        Me.Select_friend_rela_16.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_16.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_16.Location = New System.Drawing.Point(56, 295)
         Me.Select_friend_rela_16.Name = "Select_friend_rela_16"
         Me.Select_friend_rela_16.Size = New System.Drawing.Size(87, 21)
@@ -2044,7 +2044,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_17.FormattingEnabled = True
-        Me.Select_friend_rela_17.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_17.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_17.Location = New System.Drawing.Point(152, 295)
         Me.Select_friend_rela_17.Name = "Select_friend_rela_17"
         Me.Select_friend_rela_17.Size = New System.Drawing.Size(87, 21)
@@ -2067,7 +2067,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_18.FormattingEnabled = True
-        Me.Select_friend_rela_18.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_18.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_18.Location = New System.Drawing.Point(248, 295)
         Me.Select_friend_rela_18.Name = "Select_friend_rela_18"
         Me.Select_friend_rela_18.Size = New System.Drawing.Size(87, 21)
@@ -2101,7 +2101,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_6.FormattingEnabled = True
-        Me.Select_friend_rela_6.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_6.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_6.Location = New System.Drawing.Point(56, 135)
         Me.Select_friend_rela_6.Name = "Select_friend_rela_6"
         Me.Select_friend_rela_6.Size = New System.Drawing.Size(87, 21)
@@ -2113,7 +2113,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_1.FormattingEnabled = True
-        Me.Select_friend_rela_1.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_1.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_1.Location = New System.Drawing.Point(56, 55)
         Me.Select_friend_rela_1.Name = "Select_friend_rela_1"
         Me.Select_friend_rela_1.Size = New System.Drawing.Size(87, 21)
@@ -2125,7 +2125,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_2.FormattingEnabled = True
-        Me.Select_friend_rela_2.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_2.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_2.Location = New System.Drawing.Point(152, 55)
         Me.Select_friend_rela_2.Name = "Select_friend_rela_2"
         Me.Select_friend_rela_2.Size = New System.Drawing.Size(87, 21)
@@ -2137,7 +2137,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_3.FormattingEnabled = True
-        Me.Select_friend_rela_3.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_3.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_3.Location = New System.Drawing.Point(248, 55)
         Me.Select_friend_rela_3.Name = "Select_friend_rela_3"
         Me.Select_friend_rela_3.Size = New System.Drawing.Size(87, 21)
@@ -2149,7 +2149,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_4.FormattingEnabled = True
-        Me.Select_friend_rela_4.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_4.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_4.Location = New System.Drawing.Point(344, 55)
         Me.Select_friend_rela_4.Name = "Select_friend_rela_4"
         Me.Select_friend_rela_4.Size = New System.Drawing.Size(87, 21)
@@ -2161,7 +2161,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_5.FormattingEnabled = True
-        Me.Select_friend_rela_5.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_5.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_5.Location = New System.Drawing.Point(442, 55)
         Me.Select_friend_rela_5.Name = "Select_friend_rela_5"
         Me.Select_friend_rela_5.Size = New System.Drawing.Size(87, 21)
@@ -2178,7 +2178,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_1.Name = "Text_valfriend_1"
         Me.Text_valfriend_1.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_1.TabIndex = 255
-        Me.Text_valfriend_1.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_1.Text = "???"
         Me.Text_valfriend_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_6
@@ -2192,7 +2192,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_6.Name = "Text_valfriend_6"
         Me.Text_valfriend_6.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_6.TabIndex = 256
-        Me.Text_valfriend_6.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_6.Text = "???"
         Me.Text_valfriend_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_11
@@ -2206,7 +2206,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_11.Name = "Text_valfriend_11"
         Me.Text_valfriend_11.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_11.TabIndex = 257
-        Me.Text_valfriend_11.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_11.Text = "???"
         Me.Text_valfriend_11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_16
@@ -2220,7 +2220,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_16.Name = "Text_valfriend_16"
         Me.Text_valfriend_16.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_16.TabIndex = 258
-        Me.Text_valfriend_16.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_16.Text = "???"
         Me.Text_valfriend_16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_21
@@ -2234,7 +2234,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_21.Name = "Text_valfriend_21"
         Me.Text_valfriend_21.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_21.TabIndex = 259
-        Me.Text_valfriend_21.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_21.Text = "???"
         Me.Text_valfriend_21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_2
@@ -2248,7 +2248,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_2.Name = "Text_valfriend_2"
         Me.Text_valfriend_2.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_2.TabIndex = 260
-        Me.Text_valfriend_2.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_2.Text = "???"
         Me.Text_valfriend_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_7
@@ -2262,7 +2262,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_7.Name = "Text_valfriend_7"
         Me.Text_valfriend_7.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_7.TabIndex = 261
-        Me.Text_valfriend_7.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_7.Text = "???"
         Me.Text_valfriend_7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_12
@@ -2276,7 +2276,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_12.Name = "Text_valfriend_12"
         Me.Text_valfriend_12.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_12.TabIndex = 262
-        Me.Text_valfriend_12.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_12.Text = "???"
         Me.Text_valfriend_12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_17
@@ -2290,7 +2290,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_17.Name = "Text_valfriend_17"
         Me.Text_valfriend_17.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_17.TabIndex = 263
-        Me.Text_valfriend_17.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_17.Text = "???"
         Me.Text_valfriend_17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_22
@@ -2304,7 +2304,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_22.Name = "Text_valfriend_22"
         Me.Text_valfriend_22.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_22.TabIndex = 264
-        Me.Text_valfriend_22.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_22.Text = "???"
         Me.Text_valfriend_22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_5
@@ -2318,7 +2318,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_5.Name = "Text_valfriend_5"
         Me.Text_valfriend_5.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_5.TabIndex = 275
-        Me.Text_valfriend_5.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_5.Text = "???"
         Me.Text_valfriend_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_10
@@ -2332,7 +2332,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_10.Name = "Text_valfriend_10"
         Me.Text_valfriend_10.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_10.TabIndex = 276
-        Me.Text_valfriend_10.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_10.Text = "???"
         Me.Text_valfriend_10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_15
@@ -2346,7 +2346,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_15.Name = "Text_valfriend_15"
         Me.Text_valfriend_15.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_15.TabIndex = 277
-        Me.Text_valfriend_15.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_15.Text = "???"
         Me.Text_valfriend_15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_20
@@ -2360,7 +2360,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_20.Name = "Text_valfriend_20"
         Me.Text_valfriend_20.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_20.TabIndex = 278
-        Me.Text_valfriend_20.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_20.Text = "???"
         Me.Text_valfriend_20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_25
@@ -2374,7 +2374,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_25.Name = "Text_valfriend_25"
         Me.Text_valfriend_25.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_25.TabIndex = 279
-        Me.Text_valfriend_25.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_25.Text = "???"
         Me.Text_valfriend_25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_4
@@ -2388,7 +2388,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_4.Name = "Text_valfriend_4"
         Me.Text_valfriend_4.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_4.TabIndex = 270
-        Me.Text_valfriend_4.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_4.Text = "???"
         Me.Text_valfriend_4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_9
@@ -2402,7 +2402,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_9.Name = "Text_valfriend_9"
         Me.Text_valfriend_9.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_9.TabIndex = 271
-        Me.Text_valfriend_9.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_9.Text = "???"
         Me.Text_valfriend_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_14
@@ -2416,7 +2416,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_14.Name = "Text_valfriend_14"
         Me.Text_valfriend_14.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_14.TabIndex = 272
-        Me.Text_valfriend_14.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_14.Text = "???"
         Me.Text_valfriend_14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_19
@@ -2430,7 +2430,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_19.Name = "Text_valfriend_19"
         Me.Text_valfriend_19.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_19.TabIndex = 273
-        Me.Text_valfriend_19.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_19.Text = "???"
         Me.Text_valfriend_19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_24
@@ -2444,7 +2444,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_24.Name = "Text_valfriend_24"
         Me.Text_valfriend_24.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_24.TabIndex = 274
-        Me.Text_valfriend_24.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_24.Text = "???"
         Me.Text_valfriend_24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_3
@@ -2458,7 +2458,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_3.Name = "Text_valfriend_3"
         Me.Text_valfriend_3.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_3.TabIndex = 265
-        Me.Text_valfriend_3.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_3.Text = "???"
         Me.Text_valfriend_3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_8
@@ -2472,7 +2472,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_8.Name = "Text_valfriend_8"
         Me.Text_valfriend_8.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_8.TabIndex = 266
-        Me.Text_valfriend_8.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_8.Text = "???"
         Me.Text_valfriend_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_13
@@ -2486,7 +2486,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_13.Name = "Text_valfriend_13"
         Me.Text_valfriend_13.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_13.TabIndex = 267
-        Me.Text_valfriend_13.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_13.Text = "???"
         Me.Text_valfriend_13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_18
@@ -2500,7 +2500,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_18.Name = "Text_valfriend_18"
         Me.Text_valfriend_18.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_18.TabIndex = 268
-        Me.Text_valfriend_18.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_18.Text = "???"
         Me.Text_valfriend_18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_23
@@ -2514,7 +2514,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_23.Name = "Text_valfriend_23"
         Me.Text_valfriend_23.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_23.TabIndex = 269
-        Me.Text_valfriend_23.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_23.Text = "???"
         Me.Text_valfriend_23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel_friendlist_4
@@ -3162,7 +3162,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_82.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_82.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_82.FormattingEnabled = True
-        Me.Select_friend_rela_82.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_82.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_82.Location = New System.Drawing.Point(152, 135)
         Me.Select_friend_rela_82.Name = "Select_friend_rela_82"
         Me.Select_friend_rela_82.Size = New System.Drawing.Size(87, 21)
@@ -3185,7 +3185,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_83.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_83.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_83.FormattingEnabled = True
-        Me.Select_friend_rela_83.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_83.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_83.Location = New System.Drawing.Point(248, 135)
         Me.Select_friend_rela_83.Name = "Select_friend_rela_83"
         Me.Select_friend_rela_83.Size = New System.Drawing.Size(87, 21)
@@ -3197,7 +3197,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_84.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_84.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_84.FormattingEnabled = True
-        Me.Select_friend_rela_84.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_84.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_84.Location = New System.Drawing.Point(344, 135)
         Me.Select_friend_rela_84.Name = "Select_friend_rela_84"
         Me.Select_friend_rela_84.Size = New System.Drawing.Size(87, 21)
@@ -3209,7 +3209,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_85.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_85.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_85.FormattingEnabled = True
-        Me.Select_friend_rela_85.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_85.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_85.Location = New System.Drawing.Point(442, 135)
         Me.Select_friend_rela_85.Name = "Select_friend_rela_85"
         Me.Select_friend_rela_85.Size = New System.Drawing.Size(87, 21)
@@ -3221,7 +3221,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_86.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_86.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_86.FormattingEnabled = True
-        Me.Select_friend_rela_86.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_86.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_86.Location = New System.Drawing.Point(56, 215)
         Me.Select_friend_rela_86.Name = "Select_friend_rela_86"
         Me.Select_friend_rela_86.Size = New System.Drawing.Size(87, 21)
@@ -3233,7 +3233,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_100.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_100.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_100.FormattingEnabled = True
-        Me.Select_friend_rela_100.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_100.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_100.Location = New System.Drawing.Point(442, 375)
         Me.Select_friend_rela_100.Name = "Select_friend_rela_100"
         Me.Select_friend_rela_100.Size = New System.Drawing.Size(87, 21)
@@ -3245,7 +3245,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_87.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_87.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_87.FormattingEnabled = True
-        Me.Select_friend_rela_87.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_87.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_87.Location = New System.Drawing.Point(152, 215)
         Me.Select_friend_rela_87.Name = "Select_friend_rela_87"
         Me.Select_friend_rela_87.Size = New System.Drawing.Size(87, 21)
@@ -3299,7 +3299,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_99.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_99.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_99.FormattingEnabled = True
-        Me.Select_friend_rela_99.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_99.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_99.Location = New System.Drawing.Point(344, 375)
         Me.Select_friend_rela_99.Name = "Select_friend_rela_99"
         Me.Select_friend_rela_99.Size = New System.Drawing.Size(87, 21)
@@ -3322,7 +3322,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_98.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_98.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_98.FormattingEnabled = True
-        Me.Select_friend_rela_98.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_98.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_98.Location = New System.Drawing.Point(248, 375)
         Me.Select_friend_rela_98.Name = "Select_friend_rela_98"
         Me.Select_friend_rela_98.Size = New System.Drawing.Size(87, 21)
@@ -3345,7 +3345,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_97.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_97.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_97.FormattingEnabled = True
-        Me.Select_friend_rela_97.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_97.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_97.Location = New System.Drawing.Point(152, 375)
         Me.Select_friend_rela_97.Name = "Select_friend_rela_97"
         Me.Select_friend_rela_97.Size = New System.Drawing.Size(87, 21)
@@ -3368,7 +3368,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_96.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_96.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_96.FormattingEnabled = True
-        Me.Select_friend_rela_96.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_96.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_96.Location = New System.Drawing.Point(56, 375)
         Me.Select_friend_rela_96.Name = "Select_friend_rela_96"
         Me.Select_friend_rela_96.Size = New System.Drawing.Size(87, 21)
@@ -3391,7 +3391,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_95.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_95.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_95.FormattingEnabled = True
-        Me.Select_friend_rela_95.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_95.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_95.Location = New System.Drawing.Point(442, 295)
         Me.Select_friend_rela_95.Name = "Select_friend_rela_95"
         Me.Select_friend_rela_95.Size = New System.Drawing.Size(87, 21)
@@ -3412,7 +3412,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_94.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_94.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_94.FormattingEnabled = True
-        Me.Select_friend_rela_94.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_94.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_94.Location = New System.Drawing.Point(344, 295)
         Me.Select_friend_rela_94.Name = "Select_friend_rela_94"
         Me.Select_friend_rela_94.Size = New System.Drawing.Size(87, 21)
@@ -3514,7 +3514,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_88.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_88.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_88.FormattingEnabled = True
-        Me.Select_friend_rela_88.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_88.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_88.Location = New System.Drawing.Point(248, 215)
         Me.Select_friend_rela_88.Name = "Select_friend_rela_88"
         Me.Select_friend_rela_88.Size = New System.Drawing.Size(87, 21)
@@ -3535,7 +3535,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_89.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_89.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_89.FormattingEnabled = True
-        Me.Select_friend_rela_89.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_89.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_89.Location = New System.Drawing.Point(344, 215)
         Me.Select_friend_rela_89.Name = "Select_friend_rela_89"
         Me.Select_friend_rela_89.Size = New System.Drawing.Size(87, 21)
@@ -3558,7 +3558,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_90.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_90.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_90.FormattingEnabled = True
-        Me.Select_friend_rela_90.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_90.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_90.Location = New System.Drawing.Point(442, 215)
         Me.Select_friend_rela_90.Name = "Select_friend_rela_90"
         Me.Select_friend_rela_90.Size = New System.Drawing.Size(87, 21)
@@ -3581,7 +3581,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_91.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_91.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_91.FormattingEnabled = True
-        Me.Select_friend_rela_91.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_91.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_91.Location = New System.Drawing.Point(56, 295)
         Me.Select_friend_rela_91.Name = "Select_friend_rela_91"
         Me.Select_friend_rela_91.Size = New System.Drawing.Size(87, 21)
@@ -3604,7 +3604,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_92.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_92.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_92.FormattingEnabled = True
-        Me.Select_friend_rela_92.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_92.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_92.Location = New System.Drawing.Point(152, 295)
         Me.Select_friend_rela_92.Name = "Select_friend_rela_92"
         Me.Select_friend_rela_92.Size = New System.Drawing.Size(87, 21)
@@ -3627,7 +3627,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_93.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_93.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_93.FormattingEnabled = True
-        Me.Select_friend_rela_93.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_93.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_93.Location = New System.Drawing.Point(248, 295)
         Me.Select_friend_rela_93.Name = "Select_friend_rela_93"
         Me.Select_friend_rela_93.Size = New System.Drawing.Size(87, 21)
@@ -3661,7 +3661,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_81.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_81.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_81.FormattingEnabled = True
-        Me.Select_friend_rela_81.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_81.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_81.Location = New System.Drawing.Point(56, 135)
         Me.Select_friend_rela_81.Name = "Select_friend_rela_81"
         Me.Select_friend_rela_81.Size = New System.Drawing.Size(87, 21)
@@ -3673,7 +3673,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_76.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_76.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_76.FormattingEnabled = True
-        Me.Select_friend_rela_76.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_76.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_76.Location = New System.Drawing.Point(56, 55)
         Me.Select_friend_rela_76.Name = "Select_friend_rela_76"
         Me.Select_friend_rela_76.Size = New System.Drawing.Size(87, 21)
@@ -3685,7 +3685,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_77.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_77.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_77.FormattingEnabled = True
-        Me.Select_friend_rela_77.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_77.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_77.Location = New System.Drawing.Point(152, 55)
         Me.Select_friend_rela_77.Name = "Select_friend_rela_77"
         Me.Select_friend_rela_77.Size = New System.Drawing.Size(87, 21)
@@ -3697,7 +3697,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_78.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_78.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_78.FormattingEnabled = True
-        Me.Select_friend_rela_78.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_78.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_78.Location = New System.Drawing.Point(248, 55)
         Me.Select_friend_rela_78.Name = "Select_friend_rela_78"
         Me.Select_friend_rela_78.Size = New System.Drawing.Size(87, 21)
@@ -3709,7 +3709,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_79.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_79.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_79.FormattingEnabled = True
-        Me.Select_friend_rela_79.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_79.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_79.Location = New System.Drawing.Point(344, 55)
         Me.Select_friend_rela_79.Name = "Select_friend_rela_79"
         Me.Select_friend_rela_79.Size = New System.Drawing.Size(87, 21)
@@ -3721,7 +3721,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_80.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_80.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_80.FormattingEnabled = True
-        Me.Select_friend_rela_80.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_80.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_80.Location = New System.Drawing.Point(442, 55)
         Me.Select_friend_rela_80.Name = "Select_friend_rela_80"
         Me.Select_friend_rela_80.Size = New System.Drawing.Size(87, 21)
@@ -3738,7 +3738,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_76.Name = "Text_valfriend_76"
         Me.Text_valfriend_76.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_76.TabIndex = 380
-        Me.Text_valfriend_76.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_76.Text = "???"
         Me.Text_valfriend_76.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_81
@@ -3752,7 +3752,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_81.Name = "Text_valfriend_81"
         Me.Text_valfriend_81.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_81.TabIndex = 381
-        Me.Text_valfriend_81.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_81.Text = "???"
         Me.Text_valfriend_81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_86
@@ -3766,7 +3766,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_86.Name = "Text_valfriend_86"
         Me.Text_valfriend_86.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_86.TabIndex = 382
-        Me.Text_valfriend_86.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_86.Text = "???"
         Me.Text_valfriend_86.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_91
@@ -3780,7 +3780,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_91.Name = "Text_valfriend_91"
         Me.Text_valfriend_91.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_91.TabIndex = 383
-        Me.Text_valfriend_91.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_91.Text = "???"
         Me.Text_valfriend_91.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_96
@@ -3794,7 +3794,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_96.Name = "Text_valfriend_96"
         Me.Text_valfriend_96.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_96.TabIndex = 384
-        Me.Text_valfriend_96.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_96.Text = "???"
         Me.Text_valfriend_96.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_77
@@ -3808,7 +3808,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_77.Name = "Text_valfriend_77"
         Me.Text_valfriend_77.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_77.TabIndex = 385
-        Me.Text_valfriend_77.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_77.Text = "???"
         Me.Text_valfriend_77.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_82
@@ -3822,7 +3822,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_82.Name = "Text_valfriend_82"
         Me.Text_valfriend_82.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_82.TabIndex = 386
-        Me.Text_valfriend_82.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_82.Text = "???"
         Me.Text_valfriend_82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_87
@@ -3836,7 +3836,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_87.Name = "Text_valfriend_87"
         Me.Text_valfriend_87.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_87.TabIndex = 387
-        Me.Text_valfriend_87.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_87.Text = "???"
         Me.Text_valfriend_87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_92
@@ -3850,7 +3850,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_92.Name = "Text_valfriend_92"
         Me.Text_valfriend_92.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_92.TabIndex = 388
-        Me.Text_valfriend_92.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_92.Text = "???"
         Me.Text_valfriend_92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_97
@@ -3864,7 +3864,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_97.Name = "Text_valfriend_97"
         Me.Text_valfriend_97.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_97.TabIndex = 389
-        Me.Text_valfriend_97.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_97.Text = "???"
         Me.Text_valfriend_97.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_80
@@ -3878,7 +3878,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_80.Name = "Text_valfriend_80"
         Me.Text_valfriend_80.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_80.TabIndex = 400
-        Me.Text_valfriend_80.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_80.Text = "???"
         Me.Text_valfriend_80.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_85
@@ -3892,7 +3892,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_85.Name = "Text_valfriend_85"
         Me.Text_valfriend_85.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_85.TabIndex = 401
-        Me.Text_valfriend_85.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_85.Text = "???"
         Me.Text_valfriend_85.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_90
@@ -3906,7 +3906,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_90.Name = "Text_valfriend_90"
         Me.Text_valfriend_90.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_90.TabIndex = 402
-        Me.Text_valfriend_90.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_90.Text = "???"
         Me.Text_valfriend_90.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_95
@@ -3920,7 +3920,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_95.Name = "Text_valfriend_95"
         Me.Text_valfriend_95.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_95.TabIndex = 403
-        Me.Text_valfriend_95.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_95.Text = "???"
         Me.Text_valfriend_95.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_100
@@ -3934,7 +3934,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_100.Name = "Text_valfriend_100"
         Me.Text_valfriend_100.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_100.TabIndex = 404
-        Me.Text_valfriend_100.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_100.Text = "???"
         Me.Text_valfriend_100.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_79
@@ -3948,7 +3948,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_79.Name = "Text_valfriend_79"
         Me.Text_valfriend_79.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_79.TabIndex = 395
-        Me.Text_valfriend_79.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_79.Text = "???"
         Me.Text_valfriend_79.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_84
@@ -3962,7 +3962,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_84.Name = "Text_valfriend_84"
         Me.Text_valfriend_84.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_84.TabIndex = 396
-        Me.Text_valfriend_84.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_84.Text = "???"
         Me.Text_valfriend_84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_89
@@ -3976,7 +3976,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_89.Name = "Text_valfriend_89"
         Me.Text_valfriend_89.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_89.TabIndex = 397
-        Me.Text_valfriend_89.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_89.Text = "???"
         Me.Text_valfriend_89.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_94
@@ -3990,7 +3990,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_94.Name = "Text_valfriend_94"
         Me.Text_valfriend_94.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_94.TabIndex = 398
-        Me.Text_valfriend_94.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_94.Text = "???"
         Me.Text_valfriend_94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_99
@@ -4004,7 +4004,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_99.Name = "Text_valfriend_99"
         Me.Text_valfriend_99.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_99.TabIndex = 399
-        Me.Text_valfriend_99.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_99.Text = "???"
         Me.Text_valfriend_99.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_78
@@ -4018,7 +4018,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_78.Name = "Text_valfriend_78"
         Me.Text_valfriend_78.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_78.TabIndex = 390
-        Me.Text_valfriend_78.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_78.Text = "???"
         Me.Text_valfriend_78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_83
@@ -4032,7 +4032,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_83.Name = "Text_valfriend_83"
         Me.Text_valfriend_83.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_83.TabIndex = 391
-        Me.Text_valfriend_83.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_83.Text = "???"
         Me.Text_valfriend_83.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_88
@@ -4046,7 +4046,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_88.Name = "Text_valfriend_88"
         Me.Text_valfriend_88.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_88.TabIndex = 392
-        Me.Text_valfriend_88.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_88.Text = "???"
         Me.Text_valfriend_88.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_93
@@ -4060,7 +4060,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_93.Name = "Text_valfriend_93"
         Me.Text_valfriend_93.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_93.TabIndex = 393
-        Me.Text_valfriend_93.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_93.Text = "???"
         Me.Text_valfriend_93.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_98
@@ -4074,7 +4074,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_98.Name = "Text_valfriend_98"
         Me.Text_valfriend_98.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_98.TabIndex = 394
-        Me.Text_valfriend_98.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_98.Text = "???"
         Me.Text_valfriend_98.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panfriends4_arrow_left
@@ -4733,7 +4733,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_57.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_57.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_57.FormattingEnabled = True
-        Me.Select_friend_rela_57.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_57.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_57.Location = New System.Drawing.Point(152, 135)
         Me.Select_friend_rela_57.Name = "Select_friend_rela_57"
         Me.Select_friend_rela_57.Size = New System.Drawing.Size(87, 21)
@@ -4756,7 +4756,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_58.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_58.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_58.FormattingEnabled = True
-        Me.Select_friend_rela_58.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_58.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_58.Location = New System.Drawing.Point(248, 135)
         Me.Select_friend_rela_58.Name = "Select_friend_rela_58"
         Me.Select_friend_rela_58.Size = New System.Drawing.Size(87, 21)
@@ -4768,7 +4768,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_59.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_59.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_59.FormattingEnabled = True
-        Me.Select_friend_rela_59.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_59.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_59.Location = New System.Drawing.Point(344, 135)
         Me.Select_friend_rela_59.Name = "Select_friend_rela_59"
         Me.Select_friend_rela_59.Size = New System.Drawing.Size(87, 21)
@@ -4780,7 +4780,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_60.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_60.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_60.FormattingEnabled = True
-        Me.Select_friend_rela_60.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_60.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_60.Location = New System.Drawing.Point(442, 135)
         Me.Select_friend_rela_60.Name = "Select_friend_rela_60"
         Me.Select_friend_rela_60.Size = New System.Drawing.Size(87, 21)
@@ -4792,7 +4792,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_61.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_61.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_61.FormattingEnabled = True
-        Me.Select_friend_rela_61.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_61.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_61.Location = New System.Drawing.Point(56, 215)
         Me.Select_friend_rela_61.Name = "Select_friend_rela_61"
         Me.Select_friend_rela_61.Size = New System.Drawing.Size(87, 21)
@@ -4804,7 +4804,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_75.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_75.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_75.FormattingEnabled = True
-        Me.Select_friend_rela_75.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_75.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_75.Location = New System.Drawing.Point(442, 375)
         Me.Select_friend_rela_75.Name = "Select_friend_rela_75"
         Me.Select_friend_rela_75.Size = New System.Drawing.Size(87, 21)
@@ -4816,7 +4816,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_62.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_62.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_62.FormattingEnabled = True
-        Me.Select_friend_rela_62.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_62.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_62.Location = New System.Drawing.Point(152, 215)
         Me.Select_friend_rela_62.Name = "Select_friend_rela_62"
         Me.Select_friend_rela_62.Size = New System.Drawing.Size(87, 21)
@@ -4870,7 +4870,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_74.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_74.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_74.FormattingEnabled = True
-        Me.Select_friend_rela_74.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_74.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_74.Location = New System.Drawing.Point(344, 375)
         Me.Select_friend_rela_74.Name = "Select_friend_rela_74"
         Me.Select_friend_rela_74.Size = New System.Drawing.Size(87, 21)
@@ -4893,7 +4893,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_73.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_73.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_73.FormattingEnabled = True
-        Me.Select_friend_rela_73.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_73.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_73.Location = New System.Drawing.Point(248, 375)
         Me.Select_friend_rela_73.Name = "Select_friend_rela_73"
         Me.Select_friend_rela_73.Size = New System.Drawing.Size(87, 21)
@@ -4916,7 +4916,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_72.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_72.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_72.FormattingEnabled = True
-        Me.Select_friend_rela_72.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_72.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_72.Location = New System.Drawing.Point(152, 375)
         Me.Select_friend_rela_72.Name = "Select_friend_rela_72"
         Me.Select_friend_rela_72.Size = New System.Drawing.Size(87, 21)
@@ -4939,7 +4939,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_71.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_71.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_71.FormattingEnabled = True
-        Me.Select_friend_rela_71.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_71.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_71.Location = New System.Drawing.Point(56, 375)
         Me.Select_friend_rela_71.Name = "Select_friend_rela_71"
         Me.Select_friend_rela_71.Size = New System.Drawing.Size(87, 21)
@@ -4962,7 +4962,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_70.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_70.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_70.FormattingEnabled = True
-        Me.Select_friend_rela_70.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_70.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_70.Location = New System.Drawing.Point(442, 295)
         Me.Select_friend_rela_70.Name = "Select_friend_rela_70"
         Me.Select_friend_rela_70.Size = New System.Drawing.Size(87, 21)
@@ -4983,7 +4983,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_69.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_69.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_69.FormattingEnabled = True
-        Me.Select_friend_rela_69.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_69.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_69.Location = New System.Drawing.Point(344, 295)
         Me.Select_friend_rela_69.Name = "Select_friend_rela_69"
         Me.Select_friend_rela_69.Size = New System.Drawing.Size(87, 21)
@@ -5085,7 +5085,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_63.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_63.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_63.FormattingEnabled = True
-        Me.Select_friend_rela_63.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_63.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_63.Location = New System.Drawing.Point(248, 215)
         Me.Select_friend_rela_63.Name = "Select_friend_rela_63"
         Me.Select_friend_rela_63.Size = New System.Drawing.Size(87, 21)
@@ -5106,7 +5106,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_64.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_64.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_64.FormattingEnabled = True
-        Me.Select_friend_rela_64.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_64.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_64.Location = New System.Drawing.Point(344, 215)
         Me.Select_friend_rela_64.Name = "Select_friend_rela_64"
         Me.Select_friend_rela_64.Size = New System.Drawing.Size(87, 21)
@@ -5129,7 +5129,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_65.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_65.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_65.FormattingEnabled = True
-        Me.Select_friend_rela_65.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_65.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_65.Location = New System.Drawing.Point(442, 215)
         Me.Select_friend_rela_65.Name = "Select_friend_rela_65"
         Me.Select_friend_rela_65.Size = New System.Drawing.Size(87, 21)
@@ -5152,7 +5152,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_66.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_66.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_66.FormattingEnabled = True
-        Me.Select_friend_rela_66.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_66.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_66.Location = New System.Drawing.Point(56, 295)
         Me.Select_friend_rela_66.Name = "Select_friend_rela_66"
         Me.Select_friend_rela_66.Size = New System.Drawing.Size(87, 21)
@@ -5175,7 +5175,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_67.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_67.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_67.FormattingEnabled = True
-        Me.Select_friend_rela_67.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_67.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_67.Location = New System.Drawing.Point(152, 295)
         Me.Select_friend_rela_67.Name = "Select_friend_rela_67"
         Me.Select_friend_rela_67.Size = New System.Drawing.Size(87, 21)
@@ -5198,7 +5198,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_68.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_68.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_68.FormattingEnabled = True
-        Me.Select_friend_rela_68.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_68.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_68.Location = New System.Drawing.Point(248, 295)
         Me.Select_friend_rela_68.Name = "Select_friend_rela_68"
         Me.Select_friend_rela_68.Size = New System.Drawing.Size(87, 21)
@@ -5232,7 +5232,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_56.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_56.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_56.FormattingEnabled = True
-        Me.Select_friend_rela_56.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_56.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_56.Location = New System.Drawing.Point(56, 135)
         Me.Select_friend_rela_56.Name = "Select_friend_rela_56"
         Me.Select_friend_rela_56.Size = New System.Drawing.Size(87, 21)
@@ -5244,7 +5244,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_51.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_51.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_51.FormattingEnabled = True
-        Me.Select_friend_rela_51.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_51.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_51.Location = New System.Drawing.Point(56, 55)
         Me.Select_friend_rela_51.Name = "Select_friend_rela_51"
         Me.Select_friend_rela_51.Size = New System.Drawing.Size(87, 21)
@@ -5256,7 +5256,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_52.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_52.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_52.FormattingEnabled = True
-        Me.Select_friend_rela_52.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_52.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_52.Location = New System.Drawing.Point(152, 55)
         Me.Select_friend_rela_52.Name = "Select_friend_rela_52"
         Me.Select_friend_rela_52.Size = New System.Drawing.Size(87, 21)
@@ -5268,7 +5268,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_53.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_53.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_53.FormattingEnabled = True
-        Me.Select_friend_rela_53.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_53.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_53.Location = New System.Drawing.Point(248, 55)
         Me.Select_friend_rela_53.Name = "Select_friend_rela_53"
         Me.Select_friend_rela_53.Size = New System.Drawing.Size(87, 21)
@@ -5280,7 +5280,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_54.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_54.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_54.FormattingEnabled = True
-        Me.Select_friend_rela_54.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_54.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_54.Location = New System.Drawing.Point(344, 55)
         Me.Select_friend_rela_54.Name = "Select_friend_rela_54"
         Me.Select_friend_rela_54.Size = New System.Drawing.Size(87, 21)
@@ -5292,7 +5292,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_55.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_55.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_55.FormattingEnabled = True
-        Me.Select_friend_rela_55.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_55.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_55.Location = New System.Drawing.Point(442, 55)
         Me.Select_friend_rela_55.Name = "Select_friend_rela_55"
         Me.Select_friend_rela_55.Size = New System.Drawing.Size(87, 21)
@@ -5309,7 +5309,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_51.Name = "Text_valfriend_51"
         Me.Text_valfriend_51.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_51.TabIndex = 380
-        Me.Text_valfriend_51.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_51.Text = "???"
         Me.Text_valfriend_51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_56
@@ -5323,7 +5323,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_56.Name = "Text_valfriend_56"
         Me.Text_valfriend_56.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_56.TabIndex = 381
-        Me.Text_valfriend_56.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_56.Text = "???"
         Me.Text_valfriend_56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_61
@@ -5337,7 +5337,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_61.Name = "Text_valfriend_61"
         Me.Text_valfriend_61.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_61.TabIndex = 382
-        Me.Text_valfriend_61.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_61.Text = "???"
         Me.Text_valfriend_61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_66
@@ -5351,7 +5351,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_66.Name = "Text_valfriend_66"
         Me.Text_valfriend_66.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_66.TabIndex = 383
-        Me.Text_valfriend_66.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_66.Text = "???"
         Me.Text_valfriend_66.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_71
@@ -5365,7 +5365,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_71.Name = "Text_valfriend_71"
         Me.Text_valfriend_71.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_71.TabIndex = 384
-        Me.Text_valfriend_71.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_71.Text = "???"
         Me.Text_valfriend_71.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_52
@@ -5379,7 +5379,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_52.Name = "Text_valfriend_52"
         Me.Text_valfriend_52.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_52.TabIndex = 385
-        Me.Text_valfriend_52.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_52.Text = "???"
         Me.Text_valfriend_52.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_57
@@ -5393,7 +5393,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_57.Name = "Text_valfriend_57"
         Me.Text_valfriend_57.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_57.TabIndex = 386
-        Me.Text_valfriend_57.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_57.Text = "???"
         Me.Text_valfriend_57.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_62
@@ -5407,7 +5407,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_62.Name = "Text_valfriend_62"
         Me.Text_valfriend_62.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_62.TabIndex = 387
-        Me.Text_valfriend_62.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_62.Text = "???"
         Me.Text_valfriend_62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_67
@@ -5421,7 +5421,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_67.Name = "Text_valfriend_67"
         Me.Text_valfriend_67.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_67.TabIndex = 388
-        Me.Text_valfriend_67.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_67.Text = "???"
         Me.Text_valfriend_67.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_72
@@ -5435,7 +5435,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_72.Name = "Text_valfriend_72"
         Me.Text_valfriend_72.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_72.TabIndex = 389
-        Me.Text_valfriend_72.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_72.Text = "???"
         Me.Text_valfriend_72.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_55
@@ -5449,7 +5449,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_55.Name = "Text_valfriend_55"
         Me.Text_valfriend_55.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_55.TabIndex = 400
-        Me.Text_valfriend_55.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_55.Text = "???"
         Me.Text_valfriend_55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_60
@@ -5463,7 +5463,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_60.Name = "Text_valfriend_60"
         Me.Text_valfriend_60.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_60.TabIndex = 401
-        Me.Text_valfriend_60.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_60.Text = "???"
         Me.Text_valfriend_60.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_65
@@ -5477,7 +5477,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_65.Name = "Text_valfriend_65"
         Me.Text_valfriend_65.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_65.TabIndex = 402
-        Me.Text_valfriend_65.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_65.Text = "???"
         Me.Text_valfriend_65.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_70
@@ -5491,7 +5491,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_70.Name = "Text_valfriend_70"
         Me.Text_valfriend_70.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_70.TabIndex = 403
-        Me.Text_valfriend_70.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_70.Text = "???"
         Me.Text_valfriend_70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_75
@@ -5505,7 +5505,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_75.Name = "Text_valfriend_75"
         Me.Text_valfriend_75.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_75.TabIndex = 404
-        Me.Text_valfriend_75.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_75.Text = "???"
         Me.Text_valfriend_75.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_54
@@ -5519,7 +5519,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_54.Name = "Text_valfriend_54"
         Me.Text_valfriend_54.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_54.TabIndex = 395
-        Me.Text_valfriend_54.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_54.Text = "???"
         Me.Text_valfriend_54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_59
@@ -5533,7 +5533,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_59.Name = "Text_valfriend_59"
         Me.Text_valfriend_59.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_59.TabIndex = 396
-        Me.Text_valfriend_59.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_59.Text = "???"
         Me.Text_valfriend_59.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_64
@@ -5547,7 +5547,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_64.Name = "Text_valfriend_64"
         Me.Text_valfriend_64.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_64.TabIndex = 397
-        Me.Text_valfriend_64.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_64.Text = "???"
         Me.Text_valfriend_64.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_69
@@ -5561,7 +5561,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_69.Name = "Text_valfriend_69"
         Me.Text_valfriend_69.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_69.TabIndex = 398
-        Me.Text_valfriend_69.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_69.Text = "???"
         Me.Text_valfriend_69.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_74
@@ -5575,7 +5575,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_74.Name = "Text_valfriend_74"
         Me.Text_valfriend_74.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_74.TabIndex = 399
-        Me.Text_valfriend_74.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_74.Text = "???"
         Me.Text_valfriend_74.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_53
@@ -5589,7 +5589,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_53.Name = "Text_valfriend_53"
         Me.Text_valfriend_53.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_53.TabIndex = 390
-        Me.Text_valfriend_53.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_53.Text = "???"
         Me.Text_valfriend_53.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_58
@@ -5603,7 +5603,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_58.Name = "Text_valfriend_58"
         Me.Text_valfriend_58.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_58.TabIndex = 391
-        Me.Text_valfriend_58.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_58.Text = "???"
         Me.Text_valfriend_58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_63
@@ -5617,7 +5617,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_63.Name = "Text_valfriend_63"
         Me.Text_valfriend_63.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_63.TabIndex = 392
-        Me.Text_valfriend_63.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_63.Text = "???"
         Me.Text_valfriend_63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_68
@@ -5631,7 +5631,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_68.Name = "Text_valfriend_68"
         Me.Text_valfriend_68.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_68.TabIndex = 393
-        Me.Text_valfriend_68.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_68.Text = "???"
         Me.Text_valfriend_68.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_73
@@ -5645,7 +5645,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_73.Name = "Text_valfriend_73"
         Me.Text_valfriend_73.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_73.TabIndex = 394
-        Me.Text_valfriend_73.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_73.Text = "???"
         Me.Text_valfriend_73.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panfriends3_arrow_right
@@ -6314,7 +6314,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_32.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_32.FormattingEnabled = True
-        Me.Select_friend_rela_32.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_32.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_32.Location = New System.Drawing.Point(152, 135)
         Me.Select_friend_rela_32.Name = "Select_friend_rela_32"
         Me.Select_friend_rela_32.Size = New System.Drawing.Size(87, 21)
@@ -6337,7 +6337,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_33.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_33.FormattingEnabled = True
-        Me.Select_friend_rela_33.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_33.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_33.Location = New System.Drawing.Point(248, 135)
         Me.Select_friend_rela_33.Name = "Select_friend_rela_33"
         Me.Select_friend_rela_33.Size = New System.Drawing.Size(87, 21)
@@ -6349,7 +6349,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_34.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_34.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_34.FormattingEnabled = True
-        Me.Select_friend_rela_34.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_34.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_34.Location = New System.Drawing.Point(344, 135)
         Me.Select_friend_rela_34.Name = "Select_friend_rela_34"
         Me.Select_friend_rela_34.Size = New System.Drawing.Size(87, 21)
@@ -6361,7 +6361,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_35.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_35.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_35.FormattingEnabled = True
-        Me.Select_friend_rela_35.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_35.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_35.Location = New System.Drawing.Point(442, 135)
         Me.Select_friend_rela_35.Name = "Select_friend_rela_35"
         Me.Select_friend_rela_35.Size = New System.Drawing.Size(87, 21)
@@ -6373,7 +6373,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_36.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_36.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_36.FormattingEnabled = True
-        Me.Select_friend_rela_36.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_36.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_36.Location = New System.Drawing.Point(56, 215)
         Me.Select_friend_rela_36.Name = "Select_friend_rela_36"
         Me.Select_friend_rela_36.Size = New System.Drawing.Size(87, 21)
@@ -6385,7 +6385,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_50.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_50.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_50.FormattingEnabled = True
-        Me.Select_friend_rela_50.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_50.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_50.Location = New System.Drawing.Point(442, 375)
         Me.Select_friend_rela_50.Name = "Select_friend_rela_50"
         Me.Select_friend_rela_50.Size = New System.Drawing.Size(87, 21)
@@ -6397,7 +6397,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_37.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_37.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_37.FormattingEnabled = True
-        Me.Select_friend_rela_37.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_37.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_37.Location = New System.Drawing.Point(152, 215)
         Me.Select_friend_rela_37.Name = "Select_friend_rela_37"
         Me.Select_friend_rela_37.Size = New System.Drawing.Size(87, 21)
@@ -6451,7 +6451,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_49.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_49.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_49.FormattingEnabled = True
-        Me.Select_friend_rela_49.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_49.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_49.Location = New System.Drawing.Point(344, 375)
         Me.Select_friend_rela_49.Name = "Select_friend_rela_49"
         Me.Select_friend_rela_49.Size = New System.Drawing.Size(87, 21)
@@ -6474,7 +6474,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_48.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_48.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_48.FormattingEnabled = True
-        Me.Select_friend_rela_48.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_48.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_48.Location = New System.Drawing.Point(248, 375)
         Me.Select_friend_rela_48.Name = "Select_friend_rela_48"
         Me.Select_friend_rela_48.Size = New System.Drawing.Size(87, 21)
@@ -6497,7 +6497,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_47.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_47.FormattingEnabled = True
-        Me.Select_friend_rela_47.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_47.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_47.Location = New System.Drawing.Point(152, 375)
         Me.Select_friend_rela_47.Name = "Select_friend_rela_47"
         Me.Select_friend_rela_47.Size = New System.Drawing.Size(87, 21)
@@ -6520,7 +6520,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_46.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_46.FormattingEnabled = True
-        Me.Select_friend_rela_46.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_46.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_46.Location = New System.Drawing.Point(56, 375)
         Me.Select_friend_rela_46.Name = "Select_friend_rela_46"
         Me.Select_friend_rela_46.Size = New System.Drawing.Size(87, 21)
@@ -6543,7 +6543,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_45.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_45.FormattingEnabled = True
-        Me.Select_friend_rela_45.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_45.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_45.Location = New System.Drawing.Point(442, 295)
         Me.Select_friend_rela_45.Name = "Select_friend_rela_45"
         Me.Select_friend_rela_45.Size = New System.Drawing.Size(87, 21)
@@ -6564,7 +6564,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_44.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_44.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_44.FormattingEnabled = True
-        Me.Select_friend_rela_44.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_44.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_44.Location = New System.Drawing.Point(344, 295)
         Me.Select_friend_rela_44.Name = "Select_friend_rela_44"
         Me.Select_friend_rela_44.Size = New System.Drawing.Size(87, 21)
@@ -6666,7 +6666,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_38.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_38.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_38.FormattingEnabled = True
-        Me.Select_friend_rela_38.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_38.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_38.Location = New System.Drawing.Point(248, 215)
         Me.Select_friend_rela_38.Name = "Select_friend_rela_38"
         Me.Select_friend_rela_38.Size = New System.Drawing.Size(87, 21)
@@ -6687,7 +6687,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_39.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_39.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_39.FormattingEnabled = True
-        Me.Select_friend_rela_39.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_39.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_39.Location = New System.Drawing.Point(344, 215)
         Me.Select_friend_rela_39.Name = "Select_friend_rela_39"
         Me.Select_friend_rela_39.Size = New System.Drawing.Size(87, 21)
@@ -6710,7 +6710,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_40.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_40.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_40.FormattingEnabled = True
-        Me.Select_friend_rela_40.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_40.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_40.Location = New System.Drawing.Point(442, 215)
         Me.Select_friend_rela_40.Name = "Select_friend_rela_40"
         Me.Select_friend_rela_40.Size = New System.Drawing.Size(87, 21)
@@ -6733,7 +6733,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_41.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_41.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_41.FormattingEnabled = True
-        Me.Select_friend_rela_41.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_41.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_41.Location = New System.Drawing.Point(56, 295)
         Me.Select_friend_rela_41.Name = "Select_friend_rela_41"
         Me.Select_friend_rela_41.Size = New System.Drawing.Size(87, 21)
@@ -6756,7 +6756,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_42.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_42.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_42.FormattingEnabled = True
-        Me.Select_friend_rela_42.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_42.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_42.Location = New System.Drawing.Point(152, 295)
         Me.Select_friend_rela_42.Name = "Select_friend_rela_42"
         Me.Select_friend_rela_42.Size = New System.Drawing.Size(87, 21)
@@ -6779,7 +6779,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_43.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_43.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_43.FormattingEnabled = True
-        Me.Select_friend_rela_43.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_43.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_43.Location = New System.Drawing.Point(248, 295)
         Me.Select_friend_rela_43.Name = "Select_friend_rela_43"
         Me.Select_friend_rela_43.Size = New System.Drawing.Size(87, 21)
@@ -6813,7 +6813,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_31.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_31.FormattingEnabled = True
-        Me.Select_friend_rela_31.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_31.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_31.Location = New System.Drawing.Point(56, 135)
         Me.Select_friend_rela_31.Name = "Select_friend_rela_31"
         Me.Select_friend_rela_31.Size = New System.Drawing.Size(87, 21)
@@ -6825,7 +6825,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_26.FormattingEnabled = True
-        Me.Select_friend_rela_26.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_26.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_26.Location = New System.Drawing.Point(56, 55)
         Me.Select_friend_rela_26.Name = "Select_friend_rela_26"
         Me.Select_friend_rela_26.Size = New System.Drawing.Size(87, 21)
@@ -6837,7 +6837,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_27.FormattingEnabled = True
-        Me.Select_friend_rela_27.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_27.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_27.Location = New System.Drawing.Point(152, 55)
         Me.Select_friend_rela_27.Name = "Select_friend_rela_27"
         Me.Select_friend_rela_27.Size = New System.Drawing.Size(87, 21)
@@ -6849,7 +6849,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_28.FormattingEnabled = True
-        Me.Select_friend_rela_28.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_28.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_28.Location = New System.Drawing.Point(248, 55)
         Me.Select_friend_rela_28.Name = "Select_friend_rela_28"
         Me.Select_friend_rela_28.Size = New System.Drawing.Size(87, 21)
@@ -6861,7 +6861,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_29.FormattingEnabled = True
-        Me.Select_friend_rela_29.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_29.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_29.Location = New System.Drawing.Point(344, 55)
         Me.Select_friend_rela_29.Name = "Select_friend_rela_29"
         Me.Select_friend_rela_29.Size = New System.Drawing.Size(87, 21)
@@ -6873,7 +6873,7 @@ Partial Class TLSE_relationships
         Me.Select_friend_rela_30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.Select_friend_rela_30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_friend_rela_30.FormattingEnabled = True
-        Me.Select_friend_rela_30.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Ex-spouse", "Parent", "Sibling", "Friend (in conflict)", "Best friend"})
+        Me.Select_friend_rela_30.Items.AddRange(New Object() {"Unknow", "Friend", "Lover", "Ex", "Spouse", "Spouse (1)", "Ex-spouse", "Parent/Child", "Sibling", "Friend (in conflict)", "Lover (in conflict)", "Spouse (in conflict)", "Best friend"})
         Me.Select_friend_rela_30.Location = New System.Drawing.Point(442, 55)
         Me.Select_friend_rela_30.Name = "Select_friend_rela_30"
         Me.Select_friend_rela_30.Size = New System.Drawing.Size(87, 21)
@@ -6890,7 +6890,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_26.Name = "Text_valfriend_26"
         Me.Text_valfriend_26.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_26.TabIndex = 380
-        Me.Text_valfriend_26.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_26.Text = "???"
         Me.Text_valfriend_26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_31
@@ -6904,7 +6904,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_31.Name = "Text_valfriend_31"
         Me.Text_valfriend_31.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_31.TabIndex = 381
-        Me.Text_valfriend_31.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_31.Text = "???"
         Me.Text_valfriend_31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_36
@@ -6918,7 +6918,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_36.Name = "Text_valfriend_36"
         Me.Text_valfriend_36.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_36.TabIndex = 382
-        Me.Text_valfriend_36.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_36.Text = "???"
         Me.Text_valfriend_36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_41
@@ -6932,7 +6932,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_41.Name = "Text_valfriend_41"
         Me.Text_valfriend_41.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_41.TabIndex = 383
-        Me.Text_valfriend_41.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_41.Text = "???"
         Me.Text_valfriend_41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_46
@@ -6946,7 +6946,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_46.Name = "Text_valfriend_46"
         Me.Text_valfriend_46.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_46.TabIndex = 384
-        Me.Text_valfriend_46.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_46.Text = "???"
         Me.Text_valfriend_46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_27
@@ -6960,7 +6960,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_27.Name = "Text_valfriend_27"
         Me.Text_valfriend_27.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_27.TabIndex = 385
-        Me.Text_valfriend_27.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_27.Text = "???"
         Me.Text_valfriend_27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_32
@@ -6974,7 +6974,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_32.Name = "Text_valfriend_32"
         Me.Text_valfriend_32.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_32.TabIndex = 386
-        Me.Text_valfriend_32.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_32.Text = "???"
         Me.Text_valfriend_32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_37
@@ -6988,7 +6988,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_37.Name = "Text_valfriend_37"
         Me.Text_valfriend_37.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_37.TabIndex = 387
-        Me.Text_valfriend_37.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_37.Text = "???"
         Me.Text_valfriend_37.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_42
@@ -7002,7 +7002,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_42.Name = "Text_valfriend_42"
         Me.Text_valfriend_42.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_42.TabIndex = 388
-        Me.Text_valfriend_42.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_42.Text = "???"
         Me.Text_valfriend_42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_47
@@ -7016,7 +7016,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_47.Name = "Text_valfriend_47"
         Me.Text_valfriend_47.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_47.TabIndex = 389
-        Me.Text_valfriend_47.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_47.Text = "???"
         Me.Text_valfriend_47.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_30
@@ -7030,7 +7030,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_30.Name = "Text_valfriend_30"
         Me.Text_valfriend_30.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_30.TabIndex = 400
-        Me.Text_valfriend_30.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_30.Text = "???"
         Me.Text_valfriend_30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_35
@@ -7044,7 +7044,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_35.Name = "Text_valfriend_35"
         Me.Text_valfriend_35.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_35.TabIndex = 401
-        Me.Text_valfriend_35.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_35.Text = "???"
         Me.Text_valfriend_35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_40
@@ -7058,7 +7058,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_40.Name = "Text_valfriend_40"
         Me.Text_valfriend_40.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_40.TabIndex = 402
-        Me.Text_valfriend_40.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_40.Text = "???"
         Me.Text_valfriend_40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_45
@@ -7072,7 +7072,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_45.Name = "Text_valfriend_45"
         Me.Text_valfriend_45.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_45.TabIndex = 403
-        Me.Text_valfriend_45.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_45.Text = "???"
         Me.Text_valfriend_45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_50
@@ -7086,7 +7086,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_50.Name = "Text_valfriend_50"
         Me.Text_valfriend_50.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_50.TabIndex = 404
-        Me.Text_valfriend_50.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_50.Text = "???"
         Me.Text_valfriend_50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_29
@@ -7100,7 +7100,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_29.Name = "Text_valfriend_29"
         Me.Text_valfriend_29.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_29.TabIndex = 395
-        Me.Text_valfriend_29.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_29.Text = "???"
         Me.Text_valfriend_29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_34
@@ -7114,7 +7114,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_34.Name = "Text_valfriend_34"
         Me.Text_valfriend_34.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_34.TabIndex = 396
-        Me.Text_valfriend_34.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_34.Text = "???"
         Me.Text_valfriend_34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_39
@@ -7128,7 +7128,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_39.Name = "Text_valfriend_39"
         Me.Text_valfriend_39.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_39.TabIndex = 397
-        Me.Text_valfriend_39.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_39.Text = "???"
         Me.Text_valfriend_39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_44
@@ -7142,7 +7142,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_44.Name = "Text_valfriend_44"
         Me.Text_valfriend_44.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_44.TabIndex = 398
-        Me.Text_valfriend_44.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_44.Text = "???"
         Me.Text_valfriend_44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_49
@@ -7156,7 +7156,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_49.Name = "Text_valfriend_49"
         Me.Text_valfriend_49.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_49.TabIndex = 399
-        Me.Text_valfriend_49.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_49.Text = "???"
         Me.Text_valfriend_49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_28
@@ -7170,7 +7170,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_28.Name = "Text_valfriend_28"
         Me.Text_valfriend_28.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_28.TabIndex = 390
-        Me.Text_valfriend_28.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_28.Text = "???"
         Me.Text_valfriend_28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_33
@@ -7184,7 +7184,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_33.Name = "Text_valfriend_33"
         Me.Text_valfriend_33.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_33.TabIndex = 391
-        Me.Text_valfriend_33.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_33.Text = "???"
         Me.Text_valfriend_33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_38
@@ -7198,7 +7198,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_38.Name = "Text_valfriend_38"
         Me.Text_valfriend_38.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_38.TabIndex = 392
-        Me.Text_valfriend_38.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_38.Text = "???"
         Me.Text_valfriend_38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_43
@@ -7212,7 +7212,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_43.Name = "Text_valfriend_43"
         Me.Text_valfriend_43.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_43.TabIndex = 393
-        Me.Text_valfriend_43.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_43.Text = "???"
         Me.Text_valfriend_43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_valfriend_48
@@ -7226,7 +7226,7 @@ Partial Class TLSE_relationships
         Me.Text_valfriend_48.Name = "Text_valfriend_48"
         Me.Text_valfriend_48.Size = New System.Drawing.Size(87, 30)
         Me.Text_valfriend_48.TabIndex = 394
-        Me.Text_valfriend_48.Text = "&é""'(-è_çà)"
+        Me.Text_valfriend_48.Text = "???"
         Me.Text_valfriend_48.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panfriends2_arrow_right

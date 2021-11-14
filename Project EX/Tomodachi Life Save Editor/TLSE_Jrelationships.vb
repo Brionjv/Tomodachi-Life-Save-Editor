@@ -47746,9 +47746,9 @@ Public Class TLSE_Jrelationships
             Case 11 To 40
                 Text_valfriend_1.ForeColor = Color.LightSeaGreen
                 If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
-                        Text_valfriend_1.Text = "わからない"
-                    End If
-                    If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                    Text_valfriend_1.Text = "わからない"
+                End If
+                If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
                     Text_valfriend_1.Text = "ちょっと不満"
                 End If
                 If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
@@ -47778,9 +47778,9 @@ Public Class TLSE_Jrelationships
             Case 41 To 80
                 Text_valfriend_1.ForeColor = Color.DarkGreen
                 If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
-                        Text_valfriend_1.Text = "わからない"
-                    End If
-                    If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                    Text_valfriend_1.Text = "わからない"
+                End If
+                If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
                     Text_valfriend_1.Text = "まあ楽しい"
                 End If
                 If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
@@ -47810,9 +47810,9 @@ Public Class TLSE_Jrelationships
             Case 81 To 119
                 Text_valfriend_1.ForeColor = Color.Green
                 If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
-                        Text_valfriend_1.Text = "わからない"
-                    End If
-                    If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                    Text_valfriend_1.Text = "わからない"
+                End If
+                If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
                     Text_valfriend_1.Text = "楽しい"
                 End If
                 If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
@@ -47842,9 +47842,9 @@ Public Class TLSE_Jrelationships
             Case 120 To 159
                 Text_valfriend_1.ForeColor = Color.Orange
                 If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(0) Then
-                        Text_valfriend_1.Text = "わからない"
-                    End If
-                    If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
+                    Text_valfriend_1.Text = "わからない"
+                End If
+                If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(1) Then
                     Text_valfriend_1.Text = "かなり楽しい"
                 End If
                 If Select_friend_rela_1.SelectedItem = Select_friend_rela_1.Items.Item(2) Then
