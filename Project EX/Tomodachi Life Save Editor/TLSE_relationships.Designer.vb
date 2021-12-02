@@ -33,7 +33,7 @@ Partial Class TLSE_relationships
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Menu_text_relationships = New System.Windows.Forms.Label()
         Me.Panel_friendlist_1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.AdvH_relations = New System.Windows.Forms.PictureBox()
         Me.Panfriends1_arrow_right = New System.Windows.Forms.PictureBox()
         Me.Text_friendmii_1 = New System.Windows.Forms.Label()
         Me.valu_friend_rela_1 = New System.Windows.Forms.NumericUpDown()
@@ -588,8 +588,8 @@ Partial Class TLSE_relationships
         Me.Minimizebutton = New System.Windows.Forms.PictureBox()
         Me.TLSE_title = New System.Windows.Forms.PictureBox()
         Me.Closebutton = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.AdvH_relastatus = New System.Windows.Forms.PictureBox()
+        Me.AdvH_amountrela = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit
@@ -598,7 +598,7 @@ Partial Class TLSE_relationships
         Me.Menu_miiedition.SuspendLayout
         Me.Panel1.SuspendLayout
         Me.Panel_friendlist_1.SuspendLayout
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_relations, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Panfriends1_arrow_right, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_friend_rela_1, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.valu_friend_rela_2, System.ComponentModel.ISupportInitialize).BeginInit
@@ -834,8 +834,8 @@ Partial Class TLSE_relationships
         CType(Me.Minimizebutton, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_relastatus, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.AdvH_amountrela, System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'TLSE_logo_update
@@ -938,7 +938,7 @@ Partial Class TLSE_relationships
         'Panel_friendlist_1
         '
         Me.Panel_friendlist_1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_friendlist_1.Controls.Add(Me.PictureBox1)
+        Me.Panel_friendlist_1.Controls.Add(Me.AdvH_relations)
         Me.Panel_friendlist_1.Controls.Add(Me.Panfriends1_arrow_right)
         Me.Panel_friendlist_1.Controls.Add(Me.Text_friendmii_1)
         Me.Panel_friendlist_1.Controls.Add(Me.valu_friend_rela_1)
@@ -1070,17 +1070,16 @@ Partial Class TLSE_relationships
         Me.Panel_friendlist_1.Size = New System.Drawing.Size(585, 402)
         Me.Panel_friendlist_1.TabIndex = 250
         '
-        'PictureBox1
+        'AdvH_relations
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox1.Location = New System.Drawing.Point(557, 371)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox1.TabIndex = 309
-        Me.PictureBox1.TabStop = False
-        Me.PictureBox1.Visible = False
+        Me.AdvH_relations.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_relations.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_relations.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
+        Me.AdvH_relations.Location = New System.Drawing.Point(557, 371)
+        Me.AdvH_relations.Name = "AdvH_relations"
+        Me.AdvH_relations.Size = New System.Drawing.Size(25, 25)
+        Me.AdvH_relations.TabIndex = 309
+        Me.AdvH_relations.TabStop = False
         '
         'Panfriends1_arrow_right
         '
@@ -7789,29 +7788,29 @@ Partial Class TLSE_relationships
         Me.Closebutton.TabIndex = 2
         Me.Closebutton.TabStop = False
         '
-        'PictureBox2
+        'AdvH_relastatus
         '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 449)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox2.TabIndex = 310
-        Me.PictureBox2.TabStop = False
-        Me.PictureBox2.Visible = False
+        Me.AdvH_relastatus.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_relastatus.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_relastatus.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
+        Me.AdvH_relastatus.Location = New System.Drawing.Point(0, 449)
+        Me.AdvH_relastatus.Name = "AdvH_relastatus"
+        Me.AdvH_relastatus.Size = New System.Drawing.Size(25, 25)
+        Me.AdvH_relastatus.TabIndex = 310
+        Me.AdvH_relastatus.TabStop = False
+        Me.AdvH_relastatus.Visible = False
         '
-        'PictureBox3
+        'AdvH_amountrela
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox3.Location = New System.Drawing.Point(0, 311)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(25, 25)
-        Me.PictureBox3.TabIndex = 311
-        Me.PictureBox3.TabStop = False
-        Me.PictureBox3.Visible = False
+        Me.AdvH_amountrela.BackColor = System.Drawing.Color.Transparent
+        Me.AdvH_amountrela.Cursor = System.Windows.Forms.Cursors.Help
+        Me.AdvH_amountrela.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
+        Me.AdvH_amountrela.Location = New System.Drawing.Point(0, 311)
+        Me.AdvH_amountrela.Name = "AdvH_amountrela"
+        Me.AdvH_amountrela.Size = New System.Drawing.Size(25, 25)
+        Me.AdvH_amountrela.TabIndex = 311
+        Me.AdvH_amountrela.TabStop = False
+        Me.AdvH_amountrela.Visible = False
         '
         'Label1
         '
@@ -7831,8 +7830,8 @@ Partial Class TLSE_relationships
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_friendship
         Me.ClientSize = New System.Drawing.Size(950, 647)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.AdvH_amountrela)
+        Me.Controls.Add(Me.AdvH_relastatus)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.Icon_miidetected)
         Me.Controls.Add(Me.Text_miidetected)
@@ -7861,7 +7860,7 @@ Partial Class TLSE_relationships
         Me.Menu_miiedition.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel_friendlist_1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_relations, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Panfriends1_arrow_right, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_friend_rela_1, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.valu_friend_rela_2, System.ComponentModel.ISupportInitialize).EndInit
@@ -8104,8 +8103,8 @@ Partial Class TLSE_relationships
         CType(Me.Minimizebutton, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_relastatus, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.AdvH_amountrela, System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(False)
         Me.PerformLayout
 
@@ -8671,9 +8670,9 @@ Partial Class TLSE_relationships
     Friend WithEvents Minimizebutton As PictureBox
     Friend WithEvents TLSE_title As PictureBox
     Friend WithEvents Closebutton As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents AdvH_relations As PictureBox
+    Friend WithEvents AdvH_relastatus As PictureBox
+    Friend WithEvents AdvH_amountrela As PictureBox
     Friend WithEvents Select_music As ComboBox
     Friend WithEvents Select_language As ComboBox
     Friend WithEvents TLSE_filepath As TextBox

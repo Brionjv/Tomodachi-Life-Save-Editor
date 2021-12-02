@@ -206,12 +206,11 @@ Public Class TLSE_hub
 
     Private Sub Text_menu_relationships_Click(sender As Object, e As EventArgs) Handles Text_menu_relationships.Click
         If Filever_text.Text = "JP" Then
-            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
-                TLSE_dialog.Text_TLSE_dialog.Text = "Editing relationships is not available in your game region"
-            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
-                TLSE_dialog.Text_TLSE_dialog.Text = "L'édition des relations n'est pas disponible dans la region de votre jeux"
+            If TLSE_logo_update.Visible = True Then
+                TLSE_Jrelationships.TLSE_logo_update.Visible = True
             End If
-            TLSE_dialog.ShowDialog()
+            TLSE_Jrelationships.Show()
+            Me.Close()
         Else
             If TLSE_logo_update.Visible = True Then
                 TLSE_relationships.TLSE_logo_update.Visible = True
