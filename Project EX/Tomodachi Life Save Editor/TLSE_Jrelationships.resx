@@ -120,7 +120,7 @@
   <data name="Label1.Text" xml:space="preserve">
     <value>Warning : Miis can't have more than one special someone or best friend
 If you edit a relationship to spouse make sure target Miis have same Mii house (default is 1) and an other couples don't have same Mii house, same sex couples can cause some troubles
-To edit relationship make sure you are understand Tomodachi Life mecanics or your save file will be corrupted
+To edit relationship make sure you are understand Tomodachi Life mechanics or your save file will be corrupted
 If your save file is corrupted after editing, restore an older save file in "Backup" folder in Tomodachi Life save editor location</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />

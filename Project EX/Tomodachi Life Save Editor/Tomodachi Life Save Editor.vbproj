@@ -120,6 +120,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="TLSE_relamechanics.Designer.vb">
+      <DependentUpon>TLSE_relamechanics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_relamechanics.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_relationships.Designer.vb">
       <DependentUpon>TLSE_relationships.vb</DependentUpon>
     </Compile>
@@ -151,6 +157,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_relamechanics.resx">
+      <DependentUpon>TLSE_relamechanics.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_relationships.resx">
       <DependentUpon>TLSE_relationships.vb</DependentUpon>
@@ -242,6 +251,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_meca_unknow.png" />
+    <None Include="Resources\icon_meca_spouse.png" />
+    <None Include="Resources\icon_meca_sibling.png" />
+    <None Include="Resources\icon_meca_parentchild.png" />
+    <None Include="Resources\icon_meca_lover.png" />
+    <None Include="Resources\icon_meca_inconflict.png" />
+    <None Include="Resources\icon_meca_friends.png" />
+    <None Include="Resources\icon_meca_ex.png" />
+    <None Include="Resources\bg_relamechanics.png" />
+    <None Include="Resources\icon_accessrelameca.png" />
     <None Include="Resources\logo_US_update.gif" />
     <None Include="Resources\bg_dialog.png" />
     <None Include="Resources\bg_buttons_large.png" />

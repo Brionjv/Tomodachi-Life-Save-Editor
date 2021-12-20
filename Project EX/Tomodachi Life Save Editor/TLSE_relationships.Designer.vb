@@ -591,6 +591,8 @@ Partial Class TLSE_relationships
         Me.AdvH_relastatus = New System.Windows.Forms.PictureBox()
         Me.AdvH_amountrela = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel_relamechanics = New System.Windows.Forms.Panel()
+        Me.text_relamechanics = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Menu_flow.SuspendLayout
@@ -836,6 +838,7 @@ Partial Class TLSE_relationships
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_relastatus, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.AdvH_amountrela, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel_relamechanics.SuspendLayout
         Me.SuspendLayout
         '
         'TLSE_logo_update
@@ -7823,12 +7826,34 @@ Partial Class TLSE_relationships
         Me.Label1.Text = resources.GetString("Label1.Text")
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Panel_relamechanics
+        '
+        Me.Panel_relamechanics.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_relamechanics.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_accessrelameca
+        Me.Panel_relamechanics.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel_relamechanics.Controls.Add(Me.text_relamechanics)
+        Me.Panel_relamechanics.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel_relamechanics.Location = New System.Drawing.Point(790, 476)
+        Me.Panel_relamechanics.Name = "Panel_relamechanics"
+        Me.Panel_relamechanics.Size = New System.Drawing.Size(114, 110)
+        Me.Panel_relamechanics.TabIndex = 334
+        '
+        'text_relamechanics
+        '
+        Me.text_relamechanics.Location = New System.Drawing.Point(17, 30)
+        Me.text_relamechanics.Name = "text_relamechanics"
+        Me.text_relamechanics.Size = New System.Drawing.Size(80, 50)
+        Me.text_relamechanics.TabIndex = 1
+        Me.text_relamechanics.Text = "Relationships mechanics"
+        Me.text_relamechanics.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TLSE_relationships
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_friendship
         Me.ClientSize = New System.Drawing.Size(950, 647)
+        Me.Controls.Add(Me.Panel_relamechanics)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.AdvH_amountrela)
         Me.Controls.Add(Me.AdvH_relastatus)
@@ -8105,6 +8130,7 @@ Partial Class TLSE_relationships
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_relastatus, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.AdvH_amountrela, System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel_relamechanics.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout
 
@@ -8677,4 +8703,6 @@ Partial Class TLSE_relationships
     Friend WithEvents Select_language As ComboBox
     Friend WithEvents TLSE_filepath As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Panel_relamechanics As Panel
+    Friend WithEvents text_relamechanics As Label
 End Class
