@@ -251,6 +251,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_meca_bestfriends.png" />
     <None Include="Resources\icon_meca_unknow.png" />
     <None Include="Resources\icon_meca_spouse.png" />
     <None Include="Resources\icon_meca_sibling.png" />

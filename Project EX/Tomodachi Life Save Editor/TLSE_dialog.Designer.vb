@@ -22,6 +22,7 @@ Partial Class TLSE_dialog
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TLSE_dialog))
         Me.valu_pandialogpos = New System.Windows.Forms.NumericUpDown()
         Me.Panel_tlse = New System.Windows.Forms.Panel()
         Me.Icon_reference_panel = New System.Windows.Forms.PictureBox()
@@ -164,10 +165,10 @@ Partial Class TLSE_dialog
         Me.Controls.Add(Me.Panel_dialog)
         Me.Controls.Add(Me.Panel_tlse)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "TLSE_dialog"
-        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TLSE_dialog"
         Me.TransparencyKey = System.Drawing.SystemColors.Control
