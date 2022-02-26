@@ -18,3 +18,4 @@ C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Edito
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_Jrelationships.resources
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi Life Save Editor.vbproj.CopyComplete
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_relamechanics.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_miimanagement.resources

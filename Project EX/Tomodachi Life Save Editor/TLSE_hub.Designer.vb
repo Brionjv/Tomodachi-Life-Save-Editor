@@ -95,6 +95,17 @@ Partial Class TLSE_hub
         Me.Minimizebutton = New System.Windows.Forms.PictureBox()
         Me.TLSE_title = New System.Windows.Forms.PictureBox()
         Me.Closebutton = New System.Windows.Forms.PictureBox()
+        Me.TLSE_menu_Itemsedition = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Menu_itemsprovenance = New System.Windows.Forms.Panel()
+        Me.Text_menu_itemsprovenance = New System.Windows.Forms.Label()
+        Me.Menu_items = New System.Windows.Forms.Panel()
+        Me.Text_menu_items = New System.Windows.Forms.Label()
+        Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Icon_menu_itemsedit = New System.Windows.Forms.PictureBox()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Menuflow_text_itemsedition = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu.SuspendLayout()
@@ -137,6 +148,13 @@ Partial Class TLSE_hub
         CType(Me.Minimizebutton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TLSE_menu_Itemsedition.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Menu_itemsprovenance.SuspendLayout()
+        Me.Menu_items.SuspendLayout()
+        Me.FlowLayoutPanel1.SuspendLayout()
+        CType(Me.Icon_menu_itemsedit, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel8.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -278,7 +296,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_itemsedit
         '
-        Me.Text_menu_itemsedit.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_itemsedit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_itemsedit.ForeColor = System.Drawing.Color.White
         Me.Text_menu_itemsedit.Location = New System.Drawing.Point(9, 10)
         Me.Text_menu_itemsedit.Name = "Text_menu_itemsedit"
@@ -358,7 +376,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_miimanagement
         '
-        Me.Text_menu_miimanagement.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_miimanagement.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_miimanagement.ForeColor = System.Drawing.Color.White
         Me.Text_menu_miimanagement.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_miimanagement.Name = "Text_menu_miimanagement"
@@ -558,7 +576,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.0.4"
+        Me.TLSE_version.Text = "Version EX-1.0.5"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -937,6 +955,121 @@ Partial Class TLSE_hub
         Me.Closebutton.TabIndex = 2
         Me.Closebutton.TabStop = False
         '
+        'TLSE_menu_Itemsedition
+        '
+        Me.TLSE_menu_Itemsedition.BackColor = System.Drawing.Color.Transparent
+        Me.TLSE_menu_Itemsedition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_Itemsedition.Controls.Add(Me.PictureBox1)
+        Me.TLSE_menu_Itemsedition.Controls.Add(Me.Menu_itemsprovenance)
+        Me.TLSE_menu_Itemsedition.Controls.Add(Me.Menu_items)
+        Me.TLSE_menu_Itemsedition.Controls.Add(Me.FlowLayoutPanel1)
+        Me.TLSE_menu_Itemsedition.Location = New System.Drawing.Point(12, 81)
+        Me.TLSE_menu_Itemsedition.Name = "TLSE_menu_Itemsedition"
+        Me.TLSE_menu_Itemsedition.Size = New System.Drawing.Size(807, 632)
+        Me.TLSE_menu_Itemsedition.TabIndex = 36
+        Me.TLSE_menu_Itemsedition.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menuitemsedit_items
+        Me.PictureBox1.Location = New System.Drawing.Point(367, 248)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(75, 85)
+        Me.PictureBox1.TabIndex = 9
+        Me.PictureBox1.TabStop = False
+        '
+        'Menu_itemsprovenance
+        '
+        Me.Menu_itemsprovenance.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_itemsprovenance
+        Me.Menu_itemsprovenance.Controls.Add(Me.Text_menu_itemsprovenance)
+        Me.Menu_itemsprovenance.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menu_itemsprovenance.Location = New System.Drawing.Point(448, 248)
+        Me.Menu_itemsprovenance.Name = "Menu_itemsprovenance"
+        Me.Menu_itemsprovenance.Size = New System.Drawing.Size(122, 199)
+        Me.Menu_itemsprovenance.TabIndex = 8
+        '
+        'Text_menu_itemsprovenance
+        '
+        Me.Text_menu_itemsprovenance.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_itemsprovenance.ForeColor = System.Drawing.Color.Black
+        Me.Text_menu_itemsprovenance.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_itemsprovenance.Name = "Text_menu_itemsprovenance"
+        Me.Text_menu_itemsprovenance.Size = New System.Drawing.Size(103, 181)
+        Me.Text_menu_itemsprovenance.TabIndex = 2
+        Me.Text_menu_itemsprovenance.Text = "Items provenance" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "______________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit items come from  ""name"" island"
+        Me.Text_menu_itemsprovenance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_items
+        '
+        Me.Menu_items.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_items
+        Me.Menu_items.Controls.Add(Me.Text_menu_items)
+        Me.Menu_items.Location = New System.Drawing.Point(367, 120)
+        Me.Menu_items.Name = "Menu_items"
+        Me.Menu_items.Size = New System.Drawing.Size(199, 122)
+        Me.Menu_items.TabIndex = 7
+        '
+        'Text_menu_items
+        '
+        Me.Text_menu_items.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_items.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_items.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_items.Name = "Text_menu_items"
+        Me.Text_menu_items.Size = New System.Drawing.Size(184, 108)
+        Me.Text_menu_items.TabIndex = 2
+        Me.Text_menu_items.Text = "Items" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit Items in shops or inventory"
+        Me.Text_menu_items.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'FlowLayoutPanel1
+        '
+        Me.FlowLayoutPanel1.AutoSize = True
+        Me.FlowLayoutPanel1.Controls.Add(Me.Icon_menu_itemsedit)
+        Me.FlowLayoutPanel1.Controls.Add(Me.Panel7)
+        Me.FlowLayoutPanel1.Controls.Add(Me.Panel8)
+        Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(807, 57)
+        Me.FlowLayoutPanel1.TabIndex = 2
+        '
+        'Icon_menu_itemsedit
+        '
+        Me.Icon_menu_itemsedit.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_menu_itemsedit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_menu_itemsedit.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_off
+        Me.Icon_menu_itemsedit.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_menu_itemsedit.Name = "Icon_menu_itemsedit"
+        Me.Icon_menu_itemsedit.Size = New System.Drawing.Size(61, 51)
+        Me.Icon_menu_itemsedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_menu_itemsedit.TabIndex = 42
+        Me.Icon_menu_itemsedit.TabStop = False
+        '
+        'Panel7
+        '
+        Me.Panel7.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_itemsedit_base
+        Me.Panel7.Location = New System.Drawing.Point(70, 3)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(45, 50)
+        Me.Panel7.TabIndex = 2
+        '
+        'Panel8
+        '
+        Me.Panel8.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_itemsedit
+        Me.Panel8.Controls.Add(Me.Menuflow_text_itemsedition)
+        Me.Panel8.Location = New System.Drawing.Point(121, 3)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(120, 50)
+        Me.Panel8.TabIndex = 3
+        '
+        'Menuflow_text_itemsedition
+        '
+        Me.Menuflow_text_itemsedition.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Menuflow_text_itemsedition.Location = New System.Drawing.Point(20, 0)
+        Me.Menuflow_text_itemsedition.Name = "Menuflow_text_itemsedition"
+        Me.Menuflow_text_itemsedition.Size = New System.Drawing.Size(80, 50)
+        Me.Menuflow_text_itemsedition.TabIndex = 0
+        Me.Menuflow_text_itemsedition.Text = "Items edition"
+        Me.Menuflow_text_itemsedition.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TLSE_hub
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -947,8 +1080,9 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
-        Me.Controls.Add(Me.TLSE_menu)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
+        Me.Controls.Add(Me.TLSE_menu_Itemsedition)
+        Me.Controls.Add(Me.TLSE_menu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"
@@ -1004,6 +1138,14 @@ Partial Class TLSE_hub
         CType(Me.Minimizebutton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TLSE_title, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TLSE_menu_Itemsedition.ResumeLayout(False)
+        Me.TLSE_menu_Itemsedition.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Menu_itemsprovenance.ResumeLayout(False)
+        Me.Menu_items.ResumeLayout(False)
+        Me.FlowLayoutPanel1.ResumeLayout(False)
+        CType(Me.Icon_menu_itemsedit, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel8.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1078,4 +1220,15 @@ Partial Class TLSE_hub
     Friend WithEvents Select_music As ComboBox
     Friend WithEvents Select_language As ComboBox
     Friend WithEvents TLSE_filepath As TextBox
+    Friend WithEvents TLSE_menu_Itemsedition As Panel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Menu_itemsprovenance As Panel
+    Friend WithEvents Text_menu_itemsprovenance As Label
+    Friend WithEvents Menu_items As Panel
+    Friend WithEvents Text_menu_items As Label
+    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
+    Friend WithEvents Icon_menu_itemsedit As PictureBox
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents Menuflow_text_itemsedition As Label
 End Class

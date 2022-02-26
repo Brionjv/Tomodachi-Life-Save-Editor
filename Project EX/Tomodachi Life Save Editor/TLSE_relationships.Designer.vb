@@ -895,7 +895,7 @@ Partial Class TLSE_relationships
         '
         'Panel5
         '
-        Me.Panel5.BackgroundImage = CType(resources.GetObject("Panel5.BackgroundImage"), System.Drawing.Image)
+        Me.Panel5.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_miiedit_base
         Me.Panel5.Location = New System.Drawing.Point(70, 3)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(45, 50)
@@ -903,7 +903,7 @@ Partial Class TLSE_relationships
         '
         'Menu_miiedition
         '
-        Me.Menu_miiedition.BackgroundImage = CType(resources.GetObject("Menu_miiedition.BackgroundImage"), System.Drawing.Image)
+        Me.Menu_miiedition.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_miiedit
         Me.Menu_miiedition.Controls.Add(Me.Menu_text_miiedition)
         Me.Menu_miiedition.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Menu_miiedition.Location = New System.Drawing.Point(121, 3)
@@ -922,7 +922,7 @@ Partial Class TLSE_relationships
         '
         'Panel1
         '
-        Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
+        Me.Panel1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_miiedit
         Me.Panel1.Controls.Add(Me.Menu_text_relationships)
         Me.Panel1.Location = New System.Drawing.Point(247, 3)
         Me.Panel1.Name = "Panel1"

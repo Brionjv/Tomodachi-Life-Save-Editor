@@ -106,7 +106,8 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_itemsedit_Click(sender As Object, e As EventArgs) Handles Text_menu_itemsedit.Click
-
+        Hidemenu()
+        TLSE_menu_Itemsedition.Visible = True
     End Sub
 
     Private Sub Text_menu_itemsedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_itemsedit.MouseMove
@@ -143,7 +144,11 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_miimanagement_Click(sender As Object, e As EventArgs) Handles Text_menu_miimanagement.Click
-
+        If TLSE_logo_update.Visible = True Then
+            TLSE_miimanagement.TLSE_logo_update.Visible = True
+        End If
+        TLSE_miimanagement.Show()
+        Me.Close()
     End Sub
 
     Private Sub Text_menu_miimanagement_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_miimanagement.MouseMove
@@ -245,9 +250,47 @@ Public Class TLSE_hub
         TLSE_menu.Visible = True
     End Sub
 
+    Private Sub Icon_menu_itemsedit_Click(sender As Object, e As EventArgs) Handles Icon_menu_itemsedit.Click
+        Hidemenu()
+        TLSE_menu.Visible = True
+    End Sub
+
+    Private Sub Icon_menu_itemsedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_menu_itemsedit.MouseMove
+        Icon_menu_itemsedit.Image = My.Resources.icon_menu_on
+    End Sub
+
+    Private Sub Icon_menu_itemsedit_MouseLeave(sender As Object, e As EventArgs) Handles Icon_menu_itemsedit.MouseLeave
+        Icon_menu_itemsedit.Image = My.Resources.icon_menu_off
+    End Sub
+
+    Private Sub Text_menu_items_Click(sender As Object, e As EventArgs) Handles Text_menu_items.Click
+
+    End Sub
+
+    Private Sub Text_menu_items_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_items.MouseMove
+        Menu_items.BackgroundImage = My.Resources.bbl_items_act
+    End Sub
+
+    Private Sub Text_menu_items_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_items.MouseLeave
+        Menu_items.BackgroundImage = My.Resources.bbl_items
+    End Sub
+
+    Private Sub Text_menu_itemsprovenance_Click(sender As Object, e As EventArgs) Handles Text_menu_itemsprovenance.Click
+
+    End Sub
+
+    Private Sub Text_menu_itemsprovenance_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_itemsprovenance.MouseMove
+        Menu_itemsprovenance.BackgroundImage = My.Resources.bbl_itemsprovenance_act
+    End Sub
+
+    Private Sub Text_menu_itemsprovenance_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_itemsprovenance.MouseLeave
+        Menu_itemsprovenance.BackgroundImage = My.Resources.bbl_itemsprovenance
+    End Sub
+
     Public Sub Hidemenu()
         TLSE_menu.Visible = False
         TLSE_menu_Miiedition.Visible = False
+        TLSE_menu_Itemsedition.Visible = False
     End Sub
 
     Private Sub TLSE_hub_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -271,10 +314,10 @@ Public Class TLSE_hub
             Title_filever.Text = "Save file region :"
             Text_menu_travelersedit.Text = "Travelers edition" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Edit travelers in your island"
             Text_menu_extras.Text = "Extras" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit your island configurations"
-            Text_menu_babiesedit.Text = "Babies edition" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit babies In your island"
-            Text_menu_miiedit.Text = "Mii edition" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit Mii In your island"
+            Text_menu_babiesedit.Text = "Babies edition" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit babies in your island"
+            Text_menu_miiedit.Text = "Mii edition" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit Mii in your island"
             Text_menu_islandedit.Text = "Island edition" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit your island informations"
-            Text_menu_miimanagement.Text = "Mii management" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Import And export Mii in your island"
+            Text_menu_miimanagement.Text = "Mii management" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Import and export Mii in your island"
             Text_menu_itemsedit.Text = "Items edition" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Edit items in your inventory or in shops"
             Text_menu_concertedit.Text = "Concerts edition" & vbNewLine & "_____________" & vbNewLine & vbNewLine & "Edit concerts your island"
             Text_menu_settings.Text = "Settings" & vbNewLine & "____________________" & vbNewLine & vbNewLine & "Access to Tomodachi Life Save Editor settings"
@@ -440,4 +483,6 @@ Public Class TLSE_hub
             End If
         End If
     End Sub
+
+
 End Class
