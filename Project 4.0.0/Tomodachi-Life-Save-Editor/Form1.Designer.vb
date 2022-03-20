@@ -46,9 +46,9 @@ Partial Class TL_SaveEditor
         Me.Title_filever = New System.Windows.Forms.Label()
         Me.Panel_menu_opensave = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Text_menu_open = New System.Windows.Forms.Label()
         Me.Text_menu_save = New System.Windows.Forms.Label()
         Me.ImageList_menusave = New System.Windows.Forms.ImageList(Me.components)
+        Me.Text_menu_open = New System.Windows.Forms.Label()
         Me.Minimizebutton = New System.Windows.Forms.PictureBox()
         Me.TLSE_title = New System.Windows.Forms.PictureBox()
         Me.Closebutton = New System.Windows.Forms.PictureBox()
@@ -1802,6 +1802,8 @@ Partial Class TL_SaveEditor
         Me.Icon_crthall_music = New System.Windows.Forms.PictureBox()
         Me.Timer_arrowexp_right = New System.Windows.Forms.Timer(Me.components)
         Me.Timer_arrowexp_left = New System.Windows.Forms.Timer(Me.components)
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TLSE_header.SuspendLayout
@@ -3000,21 +3002,6 @@ Partial Class TL_SaveEditor
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
-        'Text_menu_open
-        '
-        Me.Text_menu_open.BackColor = System.Drawing.Color.Transparent
-        Me.Text_menu_open.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Text_menu_open.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_menu_open.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_menu_open.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Text_menu_open.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Text_menu_open.Location = New System.Drawing.Point(0, 0)
-        Me.Text_menu_open.Name = "Text_menu_open"
-        Me.Text_menu_open.Size = New System.Drawing.Size(69, 34)
-        Me.Text_menu_open.TabIndex = 3
-        Me.Text_menu_open.Text = "Open"
-        Me.Text_menu_open.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Text_menu_save
         '
         Me.Text_menu_save.BackColor = System.Drawing.Color.Transparent
@@ -3038,6 +3025,21 @@ Partial Class TL_SaveEditor
         Me.ImageList_menusave.ImageStream = CType(resources.GetObject("ImageList_menusave.ImageStream"), System.Windows.Forms.ImageListStreamer)
         Me.ImageList_menusave.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList_menusave.Images.SetKeyName(0, "icon_menusave.png")
+        '
+        'Text_menu_open
+        '
+        Me.Text_menu_open.BackColor = System.Drawing.Color.Transparent
+        Me.Text_menu_open.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_open.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_menu_open.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_menu_open.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Text_menu_open.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Text_menu_open.Location = New System.Drawing.Point(0, 0)
+        Me.Text_menu_open.Name = "Text_menu_open"
+        Me.Text_menu_open.Size = New System.Drawing.Size(69, 34)
+        Me.Text_menu_open.TabIndex = 3
+        Me.Text_menu_open.Text = "Open"
+        Me.Text_menu_open.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Minimizebutton
         '
@@ -5843,7 +5845,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.1"
+        Me.Text_TLSE_version.Text = "Version 4.0.2"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7408,6 +7410,7 @@ Partial Class TL_SaveEditor
         'TabPage1
         '
         Me.TabPage1.BackgroundImage = CType(resources.GetObject("TabPage1.BackgroundImage"), System.Drawing.Image)
+        Me.TabPage1.Controls.Add(Me.Label18)
         Me.TabPage1.Controls.Add(Me.PictureBox39)
         Me.TabPage1.Controls.Add(Me.PictureBox38)
         Me.TabPage1.Controls.Add(Me.PictureBox37)
@@ -7538,6 +7541,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_actualIsld.BackColor = System.Drawing.Color.MistyRose
         Me.Text_actualIsld.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_actualIsld.Enabled = False
         Me.Text_actualIsld.Location = New System.Drawing.Point(2, 2)
         Me.Text_actualIsld.MaxLength = 32
         Me.Text_actualIsld.Name = "Text_actualIsld"
@@ -7578,6 +7582,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_originisld.BackColor = System.Drawing.Color.MistyRose
         Me.Text_originisld.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_originisld.Enabled = False
         Me.Text_originisld.Location = New System.Drawing.Point(2, 2)
         Me.Text_originisld.MaxLength = 32
         Me.Text_originisld.Name = "Text_originisld"
@@ -7632,6 +7637,7 @@ Partial Class TL_SaveEditor
         'valu_hairstyle
         '
         Me.valu_hairstyle.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_hairstyle.Enabled = False
         Me.valu_hairstyle.Location = New System.Drawing.Point(2, 4)
         Me.valu_hairstyle.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_hairstyle.Name = "valu_hairstyle"
@@ -7715,6 +7721,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_TLMiisysID.BackColor = System.Drawing.Color.MistyRose
         Me.Text_TLMiisysID.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_TLMiisysID.Enabled = False
         Me.Text_TLMiisysID.Location = New System.Drawing.Point(2, 2)
         Me.Text_TLMiisysID.MaxLength = 16
         Me.Text_TLMiisysID.Name = "Text_TLMiisysID"
@@ -7744,6 +7751,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_MiisysID.BackColor = System.Drawing.Color.MistyRose
         Me.Text_MiisysID.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_MiisysID.Enabled = False
         Me.Text_MiisysID.Location = New System.Drawing.Point(2, 2)
         Me.Text_MiisysID.MaxLength = 16
         Me.Text_MiisysID.Name = "Text_MiisysID"
@@ -7775,6 +7783,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_wrinkles.BackColor = System.Drawing.SystemColors.Window
         Me.Select_wrinkles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_wrinkles.Enabled = False
         Me.Select_wrinkles.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_wrinkles.Items.AddRange(New Object() {"Wrinkles 1", "Wrinkles 2", "Wrinkles 3", "Wrinkles 4", "Wrinkles 5", "Wrinkles 6", "Wrinkles 7", "Wrinkles 8", "Wrinkles 9", "Wrinkles 10", "Wrinkles 11", "Wrinkles 12"})
         Me.Select_wrinkles.Location = New System.Drawing.Point(2, 2)
@@ -7837,6 +7846,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_makeup.BackColor = System.Drawing.SystemColors.Window
         Me.Select_makeup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_makeup.Enabled = False
         Me.Select_makeup.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_makeup.FormattingEnabled = True
         Me.Select_makeup.Items.AddRange(New Object() {"Makeup 1", "Makeup 2", "Makeup 3", "Makeup 4", "Makeup 5", "Makeup 6", "Makeup 7", "Makeup 8", "Makeup 9", "Makeup 10", "Makeup 11", "Makeup 12"})
@@ -7898,6 +7908,7 @@ Partial Class TL_SaveEditor
         Me.Panel_skincolor.Controls.Add(Me.Icon_skincolor_3)
         Me.Panel_skincolor.Controls.Add(Me.Icon_skincolor_2)
         Me.Panel_skincolor.Controls.Add(Me.Icon_skincolor_1)
+        Me.Panel_skincolor.Enabled = False
         Me.Panel_skincolor.Location = New System.Drawing.Point(144, 180)
         Me.Panel_skincolor.Name = "Panel_skincolor"
         Me.Panel_skincolor.Size = New System.Drawing.Size(146, 25)
@@ -7997,6 +8008,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_faceshape.BackColor = System.Drawing.SystemColors.Window
         Me.Select_faceshape.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_faceshape.Enabled = False
         Me.Select_faceshape.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_faceshape.FormattingEnabled = True
         Me.Select_faceshape.Items.AddRange(New Object() {"Face shape 1", "Face shape 2", "Face shape 3", "Face shape 4", "Face shape 5", "Face shape 6", "Face shape 7", "Face shape 8", "Face shape 9", "Face shape 10", "Face shape 11", "Face shape 12"})
@@ -8417,6 +8429,7 @@ Partial Class TL_SaveEditor
         'Select_mii_gender
         '
         Me.Select_mii_gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_mii_gender.Enabled = False
         Me.Select_mii_gender.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_mii_gender.FormattingEnabled = True
         Me.Select_mii_gender.Items.AddRange(New Object() {"Masculine", "Feminine"})
@@ -8857,6 +8870,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_sharing.BackColor = System.Drawing.SystemColors.Window
         Me.Select_sharing.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_sharing.Enabled = False
         Me.Select_sharing.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_sharing.FormattingEnabled = True
         Me.Select_sharing.Items.AddRange(New Object() {"On", "Off"})
@@ -8967,6 +8981,7 @@ Partial Class TL_SaveEditor
         '
         Me.Select_copying.BackColor = System.Drawing.SystemColors.Window
         Me.Select_copying.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_copying.Enabled = False
         Me.Select_copying.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_copying.FormattingEnabled = True
         Me.Select_copying.Items.AddRange(New Object() {"Don't allow", "Allow"})
@@ -9118,6 +9133,7 @@ Partial Class TL_SaveEditor
         '
         Me.Text_creator.BackColor = System.Drawing.SystemColors.Window
         Me.Text_creator.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_creator.Enabled = False
         Me.Text_creator.Location = New System.Drawing.Point(2, 2)
         Me.Text_creator.MaxLength = 10
         Me.Text_creator.Name = "Text_creator"
@@ -14886,6 +14902,7 @@ Partial Class TL_SaveEditor
         'TabPage4
         '
         Me.TabPage4.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_mii_status
+        Me.TabPage4.Controls.Add(Me.Label17)
         Me.TabPage4.Controls.Add(Me.AdvH_setallrelation)
         Me.TabPage4.Controls.Add(Me.Panel28)
         Me.TabPage4.Controls.Add(Me.AdvH_setallfriends)
@@ -24961,6 +24978,29 @@ Partial Class TL_SaveEditor
         '
         Me.Timer_arrowexp_left.Interval = 20
         '
+        'Label17
+        '
+        Me.Label17.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Label17.ForeColor = System.Drawing.Color.Red
+        Me.Label17.Location = New System.Drawing.Point(4, 3)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(338, 19)
+        Me.Label17.TabIndex = 269
+        Me.Label17.Text = "Section unactivated, use EX-version included"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label18
+        '
+        Me.Label18.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Label18.ForeColor = System.Drawing.Color.Red
+        Me.Label18.Location = New System.Drawing.Point(6, 4)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(338, 87)
+        Me.Label18.TabIndex = 312
+        Me.Label18.Text = "Binary features unactivated, can corrupted save file if crc is not fixed correctl" &
+    "y" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(need to be transfert to a special section to fix save error [in some case])"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TL_SaveEditor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -27745,4 +27785,6 @@ Partial Class TL_SaveEditor
     Friend WithEvents Icon_miidetected As PictureBox
     Friend WithEvents Select_Interaction_USA As ComboBox
     Friend WithEvents Label16 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Label17 As Label
 End Class

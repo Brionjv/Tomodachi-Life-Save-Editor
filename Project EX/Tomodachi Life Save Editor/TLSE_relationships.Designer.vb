@@ -7394,6 +7394,7 @@ Partial Class TLSE_relationships
         Me.valu_lastmii.Size = New System.Drawing.Size(58, 16)
         Me.valu_lastmii.TabIndex = 260
         Me.valu_lastmii.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_lastmii.Visible = False
         '
         'Icon_miidetected
         '

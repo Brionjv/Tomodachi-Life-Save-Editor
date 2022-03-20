@@ -68,6 +68,27 @@ Partial Class TLSE_miimanagement
         Me.Panel_restore = New System.Windows.Forms.Panel()
         Me.Text_restore = New System.Windows.Forms.Label()
         Me.Panel_management_extract = New System.Windows.Forms.Panel()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Select_fea_management = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel_extract_Mii = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Text_extractmii = New System.Windows.Forms.Label()
+        Me.Text_extract_Mii = New System.Windows.Forms.TextBox()
+        Me.Panel_selectmii = New System.Windows.Forms.Panel()
+        Me.Select_mii = New System.Windows.Forms.ComboBox()
+        Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.Icon_selectmii = New System.Windows.Forms.PictureBox()
+        Me.Panel_extract_allmii = New System.Windows.Forms.Panel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Text_extract_allMii = New System.Windows.Forms.TextBox()
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Icon_menu_extract = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -75,7 +96,12 @@ Partial Class TLSE_miimanagement
         Me.Menu_text_ext_miimanagement = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Menu_text_ext_extract = New System.Windows.Forms.Label()
+        Me.valu_lastmii = New System.Windows.Forms.NumericUpDown()
+        Me.Icon_miidetected = New System.Windows.Forms.PictureBox()
+        Me.Text_miidetected = New System.Windows.Forms.Label()
         Me.Panel_management_restore = New System.Windows.Forms.Panel()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Icon_menu_restore = New System.Windows.Forms.PictureBox()
         Me.Panel3 = New System.Windows.Forms.Panel()
@@ -83,10 +109,7 @@ Partial Class TLSE_miimanagement
         Me.Menu_text_res_miimanagement = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Menu_text_res_restore = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Text_note_fea_management = New System.Windows.Forms.Label()
         Me.TLSE_header.SuspendLayout()
         Me.Panel_bspesymb.SuspendLayout()
         CType(Me.Icon_bspesymb, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,10 +138,24 @@ Partial Class TLSE_miimanagement
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_restore.SuspendLayout()
         Me.Panel_management_extract.SuspendLayout()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        Me.Panel_extract_Mii.SuspendLayout()
+        Me.Panel10.SuspendLayout()
+        Me.Panel_selectmii.SuspendLayout()
+        Me.Panel7.SuspendLayout()
+        CType(Me.Icon_selectmii, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_extract_allmii.SuspendLayout()
+        Me.Panel11.SuspendLayout()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu_extract, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menuflow_ext_miimanagement.SuspendLayout()
         Me.Panel8.SuspendLayout()
+        CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_miidetected, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_management_restore.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
         CType(Me.Icon_menu_restore, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -668,14 +705,251 @@ Partial Class TLSE_miimanagement
         'Panel_management_extract
         '
         Me.Panel_management_extract.BackColor = System.Drawing.Color.Transparent
-        Me.Panel_management_extract.Controls.Add(Me.ComboBox2)
-        Me.Panel_management_extract.Controls.Add(Me.Label2)
+        Me.Panel_management_extract.Controls.Add(Me.NumericUpDown2)
+        Me.Panel_management_extract.Controls.Add(Me.PictureBox3)
+        Me.Panel_management_extract.Controls.Add(Me.Label4)
+        Me.Panel_management_extract.Controls.Add(Me.NumericUpDown1)
+        Me.Panel_management_extract.Controls.Add(Me.PictureBox2)
+        Me.Panel_management_extract.Controls.Add(Me.Label3)
+        Me.Panel_management_extract.Controls.Add(Me.Panel1)
         Me.Panel_management_extract.Controls.Add(Me.FlowLayoutPanel1)
+        Me.Panel_management_extract.Controls.Add(Me.valu_lastmii)
+        Me.Panel_management_extract.Controls.Add(Me.Icon_miidetected)
+        Me.Panel_management_extract.Controls.Add(Me.Text_miidetected)
         Me.Panel_management_extract.Location = New System.Drawing.Point(0, 77)
         Me.Panel_management_extract.Name = "Panel_management_extract"
         Me.Panel_management_extract.Size = New System.Drawing.Size(830, 400)
         Me.Panel_management_extract.TabIndex = 42
         Me.Panel_management_extract.Visible = False
+        '
+        'NumericUpDown2
+        '
+        Me.NumericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown2.Location = New System.Drawing.Point(578, 66)
+        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.Size = New System.Drawing.Size(58, 16)
+        Me.NumericUpDown2.TabIndex = 314
+        Me.NumericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown2.Visible = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_mii
+        Me.PictureBox3.Location = New System.Drawing.Point(497, 59)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox3.TabIndex = 316
+        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(530, 66)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(33, 16)
+        Me.Label4.TabIndex = 315
+        Me.Label4.Text = "X  0"
+        Me.Label4.Visible = False
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown1.Location = New System.Drawing.Point(427, 66)
+        Me.NumericUpDown1.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(58, 16)
+        Me.NumericUpDown1.TabIndex = 311
+        Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown1.Visible = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_mii
+        Me.PictureBox2.Location = New System.Drawing.Point(346, 59)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox2.TabIndex = 313
+        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(379, 66)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(33, 16)
+        Me.Label3.TabIndex = 312
+        Me.Label3.Text = "X  0"
+        Me.Label3.Visible = False
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.Text_note_fea_management)
+        Me.Panel1.Controls.Add(Me.Select_fea_management)
+        Me.Panel1.Controls.Add(Me.Label2)
+        Me.Panel1.Controls.Add(Me.Panel_extract_Mii)
+        Me.Panel1.Controls.Add(Me.Panel_extract_allmii)
+        Me.Panel1.Location = New System.Drawing.Point(2, 91)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(826, 309)
+        Me.Panel1.TabIndex = 44
+        '
+        'Select_fea_management
+        '
+        Me.Select_fea_management.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_fea_management.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_fea_management.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_fea_management.FormattingEnabled = True
+        Me.Select_fea_management.Items.AddRange(New Object() {"Miis in your island", "All Miis in your island (full)", "Travelers", "Travelers (full)", "Miis met via StreetPass", "Miis met via StreetPass (full)"})
+        Me.Select_fea_management.Location = New System.Drawing.Point(192, 7)
+        Me.Select_fea_management.Name = "Select_fea_management"
+        Me.Select_fea_management.Size = New System.Drawing.Size(206, 21)
+        Me.Select_fea_management.TabIndex = 43
+        '
+        'Label2
+        '
+        Me.Label2.Location = New System.Drawing.Point(0, 7)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(186, 21)
+        Me.Label2.TabIndex = 42
+        Me.Label2.Text = "Extract Mii from : "
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'Panel_extract_Mii
+        '
+        Me.Panel_extract_Mii.Controls.Add(Me.Panel10)
+        Me.Panel_extract_Mii.Controls.Add(Me.Text_extract_Mii)
+        Me.Panel_extract_Mii.Controls.Add(Me.Panel_selectmii)
+        Me.Panel_extract_Mii.Location = New System.Drawing.Point(16, 35)
+        Me.Panel_extract_Mii.Name = "Panel_extract_Mii"
+        Me.Panel_extract_Mii.Size = New System.Drawing.Size(795, 262)
+        Me.Panel_extract_Mii.TabIndex = 311
+        '
+        'Panel10
+        '
+        Me.Panel10.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel10.Controls.Add(Me.Text_extractmii)
+        Me.Panel10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel10.Location = New System.Drawing.Point(343, 215)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(150, 32)
+        Me.Panel10.TabIndex = 312
+        '
+        'Text_extractmii
+        '
+        Me.Text_extractmii.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Text_extractmii.Location = New System.Drawing.Point(0, 0)
+        Me.Text_extractmii.Name = "Text_extractmii"
+        Me.Text_extractmii.Size = New System.Drawing.Size(150, 32)
+        Me.Text_extractmii.TabIndex = 1
+        Me.Text_extractmii.Text = "Extract"
+        Me.Text_extractmii.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_extract_Mii
+        '
+        Me.Text_extract_Mii.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_extract_Mii.Location = New System.Drawing.Point(523, 16)
+        Me.Text_extract_Mii.MaxLength = 99999999
+        Me.Text_extract_Mii.Multiline = True
+        Me.Text_extract_Mii.Name = "Text_extract_Mii"
+        Me.Text_extract_Mii.ReadOnly = True
+        Me.Text_extract_Mii.Size = New System.Drawing.Size(253, 231)
+        Me.Text_extract_Mii.TabIndex = 311
+        '
+        'Panel_selectmii
+        '
+        Me.Panel_selectmii.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_selectmii.Controls.Add(Me.Select_mii)
+        Me.Panel_selectmii.Controls.Add(Me.Panel7)
+        Me.Panel_selectmii.Location = New System.Drawing.Point(24, 12)
+        Me.Panel_selectmii.Name = "Panel_selectmii"
+        Me.Panel_selectmii.Size = New System.Drawing.Size(148, 64)
+        Me.Panel_selectmii.TabIndex = 255
+        '
+        'Select_mii
+        '
+        Me.Select_mii.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_mii.DisplayMember = "0"
+        Me.Select_mii.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_mii.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_mii.FormattingEnabled = True
+        Me.Select_mii.Items.AddRange(New Object() {"Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
+        Me.Select_mii.Location = New System.Drawing.Point(31, 22)
+        Me.Select_mii.Name = "Select_mii"
+        Me.Select_mii.Size = New System.Drawing.Size(115, 21)
+        Me.Select_mii.TabIndex = 1
+        '
+        'Panel7
+        '
+        Me.Panel7.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_selectmii
+        Me.Panel7.Controls.Add(Me.Icon_selectmii)
+        Me.Panel7.Location = New System.Drawing.Point(5, 13)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(65, 38)
+        Me.Panel7.TabIndex = 0
+        '
+        'Icon_selectmii
+        '
+        Me.Icon_selectmii.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_mii
+        Me.Icon_selectmii.Location = New System.Drawing.Point(-1, 7)
+        Me.Icon_selectmii.Name = "Icon_selectmii"
+        Me.Icon_selectmii.Size = New System.Drawing.Size(25, 25)
+        Me.Icon_selectmii.TabIndex = 0
+        Me.Icon_selectmii.TabStop = False
+        '
+        'Panel_extract_allmii
+        '
+        Me.Panel_extract_allmii.Controls.Add(Me.Panel11)
+        Me.Panel_extract_allmii.Controls.Add(Me.Text_extract_allMii)
+        Me.Panel_extract_allmii.Location = New System.Drawing.Point(16, 35)
+        Me.Panel_extract_allmii.Name = "Panel_extract_allmii"
+        Me.Panel_extract_allmii.Size = New System.Drawing.Size(795, 262)
+        Me.Panel_extract_allmii.TabIndex = 312
+        '
+        'Panel11
+        '
+        Me.Panel11.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_buttons_large
+        Me.Panel11.Controls.Add(Me.Label5)
+        Me.Panel11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel11.Location = New System.Drawing.Point(343, 215)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(150, 32)
+        Me.Panel11.TabIndex = 312
+        '
+        'Label5
+        '
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label5.Location = New System.Drawing.Point(0, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(150, 32)
+        Me.Label5.TabIndex = 1
+        Me.Label5.Text = "Extract"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_extract_allMii
+        '
+        Me.Text_extract_allMii.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_extract_allMii.Location = New System.Drawing.Point(523, 16)
+        Me.Text_extract_allMii.MaxLength = 99999999
+        Me.Text_extract_allMii.Multiline = True
+        Me.Text_extract_allMii.Name = "Text_extract_allMii"
+        Me.Text_extract_allMii.ReadOnly = True
+        Me.Text_extract_allMii.Size = New System.Drawing.Size(253, 231)
+        Me.Text_extract_allMii.TabIndex = 311
         '
         'FlowLayoutPanel1
         '
@@ -750,6 +1024,41 @@ Partial Class TLSE_miimanagement
         Me.Menu_text_ext_extract.Text = "Extract"
         Me.Menu_text_ext_extract.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'valu_lastmii
+        '
+        Me.valu_lastmii.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_lastmii.Location = New System.Drawing.Point(276, 66)
+        Me.valu_lastmii.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_lastmii.Name = "valu_lastmii"
+        Me.valu_lastmii.Size = New System.Drawing.Size(58, 16)
+        Me.valu_lastmii.TabIndex = 308
+        Me.valu_lastmii.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_lastmii.Visible = False
+        '
+        'Icon_miidetected
+        '
+        Me.Icon_miidetected.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_miidetected.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Icon_miidetected.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Icon_miidetected.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_mii
+        Me.Icon_miidetected.Location = New System.Drawing.Point(195, 59)
+        Me.Icon_miidetected.Name = "Icon_miidetected"
+        Me.Icon_miidetected.Size = New System.Drawing.Size(30, 30)
+        Me.Icon_miidetected.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_miidetected.TabIndex = 310
+        Me.Icon_miidetected.TabStop = False
+        '
+        'Text_miidetected
+        '
+        Me.Text_miidetected.AutoSize = True
+        Me.Text_miidetected.BackColor = System.Drawing.Color.Transparent
+        Me.Text_miidetected.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_miidetected.Location = New System.Drawing.Point(228, 66)
+        Me.Text_miidetected.Name = "Text_miidetected"
+        Me.Text_miidetected.Size = New System.Drawing.Size(33, 16)
+        Me.Text_miidetected.TabIndex = 309
+        Me.Text_miidetected.Text = "X  0"
+        '
         'Panel_management_restore
         '
         Me.Panel_management_restore.BackColor = System.Drawing.Color.Transparent
@@ -761,6 +1070,27 @@ Partial Class TLSE_miimanagement
         Me.Panel_management_restore.Size = New System.Drawing.Size(830, 400)
         Me.Panel_management_restore.TabIndex = 43
         Me.Panel_management_restore.Visible = False
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Miis in your island", "Travelers", "Miis met via StreetPass", "Travelers (full)", "Miis met via StreetPass (full)"})
+        Me.ComboBox1.Location = New System.Drawing.Point(204, 63)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(206, 21)
+        Me.ComboBox1.TabIndex = 41
+        '
+        'Label1
+        '
+        Me.Label1.Location = New System.Drawing.Point(12, 63)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(186, 21)
+        Me.Label1.TabIndex = 40
+        Me.Label1.Text = "Restore Mii from : "
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'FlowLayoutPanel2
         '
@@ -835,47 +1165,14 @@ Partial Class TLSE_miimanagement
         Me.Menu_text_res_restore.Text = "Restore"
         Me.Menu_text_res_restore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label1
+        'Text_note_fea_management
         '
-        Me.Label1.Location = New System.Drawing.Point(12, 63)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(186, 21)
-        Me.Label1.TabIndex = 40
-        Me.Label1.Text = "Restore Mii from : "
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Miis in your island", "Travelers", "Miis met via StreetPass", "Travelers (full)", "Miis met via StreetPass (full)"})
-        Me.ComboBox1.Location = New System.Drawing.Point(204, 63)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(206, 21)
-        Me.ComboBox1.TabIndex = 41
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Miis in your island", "Travelers", "Miis met via StreetPass", "Travelers (full)", "Miis met via StreetPass (full)"})
-        Me.ComboBox2.Location = New System.Drawing.Point(195, 63)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(206, 21)
-        Me.ComboBox2.TabIndex = 43
-        '
-        'Label2
-        '
-        Me.Label2.Location = New System.Drawing.Point(3, 63)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(186, 21)
-        Me.Label2.TabIndex = 42
-        Me.Label2.Text = "Extract Mii from : "
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.Text_note_fea_management.ForeColor = System.Drawing.Color.Red
+        Me.Text_note_fea_management.Location = New System.Drawing.Point(404, 7)
+        Me.Text_note_fea_management.Name = "Text_note_fea_management"
+        Me.Text_note_fea_management.Size = New System.Drawing.Size(407, 21)
+        Me.Text_note_fea_management.TabIndex = 313
+        Me.Text_note_fea_management.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TLSE_miimanagement
         '
@@ -931,10 +1228,26 @@ Partial Class TLSE_miimanagement
         Me.Panel_restore.ResumeLayout(False)
         Me.Panel_management_extract.ResumeLayout(False)
         Me.Panel_management_extract.PerformLayout()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel_extract_Mii.ResumeLayout(False)
+        Me.Panel_extract_Mii.PerformLayout()
+        Me.Panel10.ResumeLayout(False)
+        Me.Panel_selectmii.ResumeLayout(False)
+        Me.Panel7.ResumeLayout(False)
+        CType(Me.Icon_selectmii, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_extract_allmii.ResumeLayout(False)
+        Me.Panel_extract_allmii.PerformLayout()
+        Me.Panel11.ResumeLayout(False)
         Me.FlowLayoutPanel1.ResumeLayout(False)
         CType(Me.Icon_menu_extract, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menuflow_ext_miimanagement.ResumeLayout(False)
         Me.Panel8.ResumeLayout(False)
+        CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_miidetected, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_management_restore.ResumeLayout(False)
         Me.Panel_management_restore.PerformLayout()
         Me.FlowLayoutPanel2.ResumeLayout(False)
@@ -1005,8 +1318,31 @@ Partial Class TLSE_miimanagement
     Friend WithEvents Menu_text_res_miimanagement As Label
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Menu_text_res_restore As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Select_fea_management As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel_selectmii As Panel
+    Friend WithEvents Select_mii As ComboBox
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Icon_selectmii As PictureBox
+    Friend WithEvents Icon_miidetected As PictureBox
+    Friend WithEvents Text_miidetected As Label
+    Friend WithEvents valu_lastmii As NumericUpDown
+    Friend WithEvents Panel_extract_Mii As Panel
+    Friend WithEvents Text_extract_Mii As TextBox
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents Text_extractmii As Label
+    Friend WithEvents NumericUpDown2 As NumericUpDown
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Panel_extract_allmii As Panel
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Text_extract_allMii As TextBox
+    Friend WithEvents Text_note_fea_management As Label
 End Class
