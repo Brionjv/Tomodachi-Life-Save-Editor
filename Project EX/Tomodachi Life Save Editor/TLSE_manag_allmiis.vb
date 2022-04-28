@@ -11,6 +11,7 @@ Public Class TLSE_manag_allmiis
     Dim savedataArc As String
     Dim Mii_1 As String
     Dim Miidetected As String
+    Dim TLAMII As String
 
     Private Sub Closebutton_Click(sender As Object, e As EventArgs) Handles Closebutton.Click
         Me.Close()
@@ -546,7 +547,7 @@ Public Class TLSE_manag_allmiis
         Try
             Dim SaveFileDialog1 As New SaveFileDialog
             SaveFileDialog1.Filter = "Tomodachi Life All Mii|*.TLAMii"
-            SaveFileDialog1.FileName = "All Miis" & "_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
+            SaveFileDialog1.FileName = "All Miis(" & Filever_text.Text & ")" & "_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
             If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
                 Dim Writer1 As New System.IO.StreamWriter(SaveFileDialog1.FileName)
                 Writer1.Close()
@@ -557,6 +558,116 @@ Public Class TLSE_manag_allmiis
             End If
         Catch ex As Exception
             TLSE_dialog.Text_TLSE_dialog.Text = "Miis extraction has failed, retry or report this issue" & vbNewLine & "Make sure you have opened a save file"
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
+
+    Private Sub Menu_text_ext_miimanagement_Click(sender As Object, e As EventArgs) Handles Menu_text_ext_miimanagement.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_hub.TLSE_logo_update.Visible = True
+        End If
+        TLSE_hub.Show()
+        TLSE_hub.Filever_text.Text = Filever_text.Text
+        TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+        TLSE_hub.TLSE_menu.Visible = False
+        TLSE_hub.TLSE_menu_miimanagement.Visible = True
+        Me.Close()
+    End Sub
+
+    Private Sub Text_restore_Click(sender As Object, e As EventArgs) Handles Text_restore.Click
+        Try
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "All miis in your save file will be replace by all miis in .TLAMII file" & vbNewLine & "Do you want continue ?"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Tous vos Mii vont être remplacer par les Mii du fichier .TLAMII" & vbNewLine & "Voulez vous continuer ?"
+            End If
+            TLSE_dialog.Panel_Cancel.Visible = True
+            TLSE_dialog.Panel_OK.Visible = True
+            TLSE_dialog.ShowDialog()
+            If TLSE_dialog.DialogResult = DialogResult.OK Then
+                Dim open As New OpenFileDialog
+                open.Filter = "Tomodachi Life All Miis|*.TLAMII"
+                open.Title = "Open a Tomodachi Life all Miis file"
+                open.ShowDialog()
+                TLAMII = open.FileName
+                If FileLen(TLAMII) = &H27D80 Then
+                    If Filever_text.Text = "JP" Then
+                        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                            TLSE_dialog.Text_TLSE_dialog.Text = "Invalid .TLAMII file, choose a .TLAMII file corresponding to your save file region or a valid file"
+                        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                            TLSE_dialog.Text_TLSE_dialog.Text = "Fichier .TLAMII invalide, choisissez un fichier .TLAMII correspondant à la même région de votre sauvagarde"
+                        End If
+                        TLSE_dialog.ShowDialog()
+                    Else
+                        ReadTLAMII()
+                        WriteTLAMII()
+                    End If
+                End If
+                If FileLen(TLAMII) = &H22C40 Then
+                    If Filever_text.Text = "JP" Then
+                        ReadTLAMII()
+                        WriteTLAMII()
+                    Else
+                        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                            TLSE_dialog.Text_TLSE_dialog.Text = "Invalid .TLAMII file, choose a .TLAMII file corresponding to your save file region or a valid file"
+                        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                            TLSE_dialog.Text_TLSE_dialog.Text = "Fichier .TLAMII invalide, choisissez un fichier .TLAMII correspondant à la même région de votre sauvagarde"
+                        End If
+                        TLSE_dialog.ShowDialog()
+                    End If
+                End If
+            End If
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Public Sub ReadTLAMII()
+        Try
+            Dim ReadMiiData As New PackageIO.Reader(TLAMII, PackageIO.Endian.Little)
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                ReadMiiData.Position = &H0
+                Text_restore_allMii.Text = ReadMiiData.ReadHexString(&H27D80)
+            End If
+            If Filever_text.Text = "JP" Then
+                ReadMiiData.Position = &H0
+                Text_restore_allMii.Text = ReadMiiData.ReadHexString(&H22C40)
+            End If
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read this file, report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Échec de la lecture de ce fichier, signalez cette erreur"
+            End If
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
+
+    Public Sub WriteTLAMII()
+        Try
+            If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
+                Mii_1 = &H1C70
+            End If
+            If Filever_text.Text = "JP" Then
+                Mii_1 = &H1C40
+            End If
+            Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+            Writer.Position = Mii_1
+            Writer.WriteHexString(Text_restore_allMii.Text)
+            TLSE_dialog.Text_TLSE_dialog.Text = "All Miis has been successfully replaced" & vbNewLine & "You will back to main menu"
+            TLSE_dialog.ShowDialog()
+            If TLSE_logo_update.Visible = True Then
+                TLSE_hub.TLSE_logo_update.Visible = True
+            End If
+            TLSE_hub.Show()
+            TLSE_hub.Filever_text.Text = Filever_text.Text
+            TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+            Me.Close()
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to replace all miis, report this issue"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Le remplacement des Mii a échoué, signalez cette erreur"
+            End If
             TLSE_dialog.ShowDialog()
         End Try
     End Sub

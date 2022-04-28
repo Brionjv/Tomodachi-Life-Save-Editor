@@ -127,11 +127,17 @@
   <data name="close_red_tl" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close_red_tl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bbl_manag_allmii" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_manag_allmii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon_bnoupdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_bnoupdate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bbl_travelersedit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbl_travelersedit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bbl_repairsave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_repairsave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="buttontop_largex2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\buttontop_largex2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,20 +148,14 @@
   <data name="logo_EU" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_EU.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bbl_miimanagement_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_miimanagement_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bbl_travelersedit_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_travelersedit_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="bbl_islandedit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbl_islandedit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bbl_miimanagement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_miimanagement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon_accessrelameca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_accessrelameca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bbl_extras" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_extras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_menu_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_menu_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,17 +166,14 @@
   <data name="bbl_extras_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbl_extras_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bbl_interaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_interaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bg_selectmii" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg_selectmii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_meca_inconflict" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_meca_inconflict.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bbl_items" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbl_items.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tlse_title_ex" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tlse_title_ex.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bbl_manag_mii" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_manag_mii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_badvh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_badvh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,20 +187,14 @@
   <data name="icon_bsymb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_bsymb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_menumiiedit_relainterac" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_menumiiedit_relainterac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="fea_extractrestore" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fea_extractrestore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_miimenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_miimenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_menu_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_menu_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close_tl" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\close_tl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bbl_interaction" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_interaction.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bbl_concertedit_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbl_concertedit_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,8 +211,8 @@
   <data name="icon_navi_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_navi_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bbl_manual_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_manual_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_menu_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_menu_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tab_miimanagement_base" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tab_miimanagement_base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,11 +226,14 @@
   <data name="Icon_AdvH" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon_AdvH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon_meca_lover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_meca_lover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon_meca_sibling" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_meca_sibling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg_buttons_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg_buttons_large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bbl_manag_allmii_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_manag_allmii_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_meca_ex" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_meca_ex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,6 +265,12 @@
   <data name="icon_bhidden" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_bhidden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon_travelers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_travelers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_meca_spouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_meca_spouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon_meca_parentchild" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_meca_parentchild.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -286,8 +286,11 @@
   <data name="icon_meca_bestfriends" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_meca_bestfriends.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bbl_miimanagement" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_miimanagement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tlse_title_ex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tlse_title_ex.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bbl_manag_mii_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_manag_mii_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bbl_interaction_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbl_interaction_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -295,20 +298,20 @@
   <data name="tab_miiedit_base" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tab_miiedit_base1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buttontop_single_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buttontop_single_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logo_US" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_US.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bbl_repairsave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_repairsave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bbl_travelersedit_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_travelersedit_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_menu_mii" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_menu_mii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_meca_friends" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_meca_friends.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_miimanagement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_miimanagement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_navi_leftact" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_navi_leftact.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -322,11 +325,14 @@
   <data name="icon_tlsemenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_tlsemenu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_miimanagement" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_miimanagement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bbl_extras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_extras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_meca_lover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_meca_lover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="buttontop_largex2_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttontop_largex2_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg_buttons_large" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_buttons_large.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bbl_itemsprovenance" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbl_itemsprovenance.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -334,8 +340,11 @@
   <data name="menu_settings_on" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu_settings_on.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_meca_inconflict" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_meca_inconflict.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bbl_miimanagement_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_miimanagement_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bbl_islandedit_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_islandedit_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bg_dialog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg_dialog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,17 +361,17 @@
   <data name="bbl_relationship_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbl_relationship_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bbl_islandedit_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_islandedit_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="buttontop_single_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttontop_single_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg_relamechanics" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg_relamechanics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_menumiiedit_relainterac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_menumiiedit_relainterac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_navi_rightact" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_navi_rightact.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_travelers" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_travelers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bg_relamechanics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_relamechanics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bbl_itemsedit_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbl_itemsedit_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -382,11 +391,11 @@
   <data name="icon_navi_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_navi_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="buttontop_largex2_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\buttontop_largex2_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bbl_manual_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bbl_manual_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icon_meca_spouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon_meca_spouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bg_selectmii" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg_selectmii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tab_itemsedit_base" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tab_itemsedit_base.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -394,19 +403,13 @@
   <data name="bbl_concertedit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bbl_concertedit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="close_tl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close_tl.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon_bfilepath" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_bfilepath.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bbl_manag_allmii" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_manag_allmii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bbl_manag_allmii_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_manag_allmii_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bbl_manag_mii" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_manag_mii.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bbl_manag_mii_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bbl_manag_mii_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_issue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_issue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -1027,7 +1027,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_items
         '
-        Me.Text_menu_items.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_items.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_items.ForeColor = System.Drawing.Color.White
         Me.Text_menu_items.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_items.Name = "Text_menu_items"
@@ -1195,7 +1195,6 @@ Partial Class TLSE_hub
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(830, 730)
-        Me.Controls.Add(Me.TLSE_menu_miimanagement)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
@@ -1203,6 +1202,7 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_menu)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
+        Me.Controls.Add(Me.TLSE_menu_miimanagement)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"

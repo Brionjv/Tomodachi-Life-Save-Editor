@@ -269,6 +269,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_issue.png" />
     <None Include="Resources\bbl_manag_mii_act.png" />
     <None Include="Resources\bbl_manag_mii.png" />
     <None Include="Resources\bbl_manag_allmii_act.png" />

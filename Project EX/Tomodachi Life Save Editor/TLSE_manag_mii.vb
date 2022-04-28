@@ -110,6 +110,7 @@ Public Class TLSE_manag_mii
     Dim Mii_99 As String
     Dim Mii_100 As String
     Dim Miidetected As String
+    Dim TLMII As String
 
     Private Sub Closebutton_Click(sender As Object, e As EventArgs) Handles Closebutton.Click
         Me.Close()
@@ -420,7 +421,7 @@ Public Class TLSE_manag_mii
         Try
             Dim SaveFileDialog1 As New SaveFileDialog
             SaveFileDialog1.Filter = "Tomodachi Life Mii|*.TLMii"
-            SaveFileDialog1.FileName = Select_mii.Text & "_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
+            SaveFileDialog1.FileName = Select_mii.Text.Replace(":", "") & "_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
             If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
                 Dim Writer1 As New System.IO.StreamWriter(SaveFileDialog1.FileName)
                 Writer1.Close()
@@ -1477,4 +1478,458 @@ Public Class TLSE_manag_mii
             Mii_100 = &H242F0
         End If
     End Sub
+
+    Private Sub Menu_text_miimanagement_Click(sender As Object, e As EventArgs) Handles Menu_text_miimanagement.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_hub.TLSE_logo_update.Visible = True
+        End If
+        TLSE_hub.Show()
+        TLSE_hub.Filever_text.Text = Filever_text.Text
+        TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+        TLSE_hub.TLSE_menu.Visible = False
+        TLSE_hub.TLSE_menu_miimanagement.Visible = True
+        Me.Close()
+    End Sub
+
+    Private Sub Text_restoremii_Click(sender As Object, e As EventArgs) Handles Text_restoremii.Click
+        If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This Mii will be replace (only appareance)" & vbNewLine & "Do you want continue ?"
+        ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "Ce mii va être remplacé (uniquement l'apparence)" & vbNewLine & "Voulez vous continuer ?"
+        End If
+        TLSE_dialog.Panel_Cancel.Visible = True
+        TLSE_dialog.Panel_OK.Visible = True
+        TLSE_dialog.ShowDialog()
+        If TLSE_dialog.DialogResult = DialogResult.OK Then
+            Dim open As New OpenFileDialog
+            open.Filter = "Tomodachi Life Mii|*.TLMII"
+            open.Title = "Open compatible files"
+            open.ShowDialog()
+            TLMII = open.FileName
+            ReadTLMii()
+            RestoreMii()
+        End If
+    End Sub
+
+    Public Sub ReadTLMii()
+        Try
+            Dim ReadTLMii As New PackageIO.Reader(TLMII, PackageIO.Endian.Little)
+            ReadTLMii.Position = &H0
+            Text_restore_Mii.Text = ReadTLMii.ReadHexString(&H60)
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read a Mii in this file"
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
+    Public Sub RestoreMii()
+        Try
+            Dim WriteMii As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+            If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
+                WriteMii.Position = Mii_1
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
+                WriteMii.Position = Mii_2
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
+                WriteMii.Position = Mii_3
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
+                WriteMii.Position = Mii_4
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
+                WriteMii.Position = Mii_5
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
+                WriteMii.Position = Mii_6
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
+                WriteMii.Position = Mii_7
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
+                WriteMii.Position = Mii_8
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
+                WriteMii.Position = Mii_9
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
+                WriteMii.Position = Mii_10
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
+                WriteMii.Position = Mii_11
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
+                WriteMii.Position = Mii_12
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
+                WriteMii.Position = Mii_13
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
+                WriteMii.Position = Mii_14
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
+                WriteMii.Position = Mii_15
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
+                WriteMii.Position = Mii_16
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
+                WriteMii.Position = Mii_17
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
+                WriteMii.Position = Mii_18
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
+                WriteMii.Position = Mii_19
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
+                WriteMii.Position = Mii_20
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
+                WriteMii.Position = Mii_21
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
+                WriteMii.Position = Mii_22
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
+                WriteMii.Position = Mii_23
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
+                WriteMii.Position = Mii_24
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
+                WriteMii.Position = Mii_25
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
+                WriteMii.Position = Mii_26
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
+                WriteMii.Position = Mii_27
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
+                WriteMii.Position = Mii_28
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
+                WriteMii.Position = Mii_29
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
+                WriteMii.Position = Mii_30
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
+                WriteMii.Position = Mii_31
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
+                WriteMii.Position = Mii_32
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
+                WriteMii.Position = Mii_33
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
+                WriteMii.Position = Mii_34
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
+                WriteMii.Position = Mii_35
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
+                WriteMii.Position = Mii_36
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
+                WriteMii.Position = Mii_37
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
+                WriteMii.Position = Mii_38
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
+                WriteMii.Position = Mii_39
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
+                WriteMii.Position = Mii_40
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
+                WriteMii.Position = Mii_41
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
+                WriteMii.Position = Mii_42
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
+                WriteMii.Position = Mii_43
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
+                WriteMii.Position = Mii_44
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
+                WriteMii.Position = Mii_45
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
+                WriteMii.Position = Mii_46
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
+                WriteMii.Position = Mii_47
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
+                WriteMii.Position = Mii_48
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
+                WriteMii.Position = Mii_49
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
+                WriteMii.Position = Mii_50
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(50) Then
+                WriteMii.Position = Mii_51
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(51) Then
+                WriteMii.Position = Mii_52
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(52) Then
+                WriteMii.Position = Mii_53
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(53) Then
+                WriteMii.Position = Mii_54
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(54) Then
+                WriteMii.Position = Mii_55
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(55) Then
+                WriteMii.Position = Mii_56
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(56) Then
+                WriteMii.Position = Mii_57
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(57) Then
+                WriteMii.Position = Mii_58
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(58) Then
+                WriteMii.Position = Mii_59
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(59) Then
+                WriteMii.Position = Mii_60
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(60) Then
+                WriteMii.Position = Mii_61
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(61) Then
+                WriteMii.Position = Mii_62
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(62) Then
+                WriteMii.Position = Mii_63
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(63) Then
+                WriteMii.Position = Mii_64
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(64) Then
+                WriteMii.Position = Mii_65
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(65) Then
+                WriteMii.Position = Mii_66
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(66) Then
+                WriteMii.Position = Mii_67
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(67) Then
+                WriteMii.Position = Mii_68
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(68) Then
+                WriteMii.Position = Mii_69
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(69) Then
+                WriteMii.Position = Mii_70
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(70) Then
+                WriteMii.Position = Mii_71
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(71) Then
+                WriteMii.Position = Mii_72
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(72) Then
+                WriteMii.Position = Mii_73
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(73) Then
+                WriteMii.Position = Mii_74
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(74) Then
+                WriteMii.Position = Mii_75
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(75) Then
+                WriteMii.Position = Mii_76
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(76) Then
+                WriteMii.Position = Mii_77
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(77) Then
+                WriteMii.Position = Mii_78
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(78) Then
+                WriteMii.Position = Mii_79
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(79) Then
+                WriteMii.Position = Mii_80
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(80) Then
+                WriteMii.Position = Mii_81
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(81) Then
+                WriteMii.Position = Mii_82
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(82) Then
+                WriteMii.Position = Mii_83
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(83) Then
+                WriteMii.Position = Mii_84
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(84) Then
+                WriteMii.Position = Mii_85
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(85) Then
+                WriteMii.Position = Mii_86
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(86) Then
+                WriteMii.Position = Mii_87
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(87) Then
+                WriteMii.Position = Mii_88
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(88) Then
+                WriteMii.Position = Mii_89
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(89) Then
+                WriteMii.Position = Mii_90
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(90) Then
+                WriteMii.Position = Mii_91
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(91) Then
+                WriteMii.Position = Mii_92
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(92) Then
+                WriteMii.Position = Mii_93
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(93) Then
+                WriteMii.Position = Mii_94
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(94) Then
+                WriteMii.Position = Mii_95
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(95) Then
+                WriteMii.Position = Mii_96
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(96) Then
+                WriteMii.Position = Mii_97
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(97) Then
+                WriteMii.Position = Mii_98
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(98) Then
+                WriteMii.Position = Mii_99
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            If Select_mii.SelectedItem = Select_mii.Items.Item(99) Then
+                WriteMii.Position = Mii_100
+                WriteMii.WriteHexString(Text_restore_Mii.Text)
+            End If
+            TLSE_dialog.Text_TLSE_dialog.Text = "This Mii has been successfully replace" & vbNewLine & "You need to rename this Mii in Tomodachi Life or in Tomodachi Life Save Editor"
+            TLSE_dialog.ShowDialog()
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to replace this Mii"
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
+
 End Class
