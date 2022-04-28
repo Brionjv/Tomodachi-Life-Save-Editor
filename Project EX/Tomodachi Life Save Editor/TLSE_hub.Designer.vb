@@ -106,6 +106,16 @@ Partial Class TLSE_hub
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Menuflow_text_itemsedition = New System.Windows.Forms.Label()
+        Me.TLSE_menu_miimanagement = New System.Windows.Forms.Panel()
+        Me.Menu_mii = New System.Windows.Forms.Panel()
+        Me.Text_menu_mii = New System.Windows.Forms.Label()
+        Me.Menu_allmiis = New System.Windows.Forms.Panel()
+        Me.Text_menu_allmiis = New System.Windows.Forms.Label()
+        Me.FlowLayoutPanel2 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Icon_menu_miimanagement = New System.Windows.Forms.PictureBox()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.Menuflow_text_miimanagement = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu.SuspendLayout()
@@ -155,6 +165,12 @@ Partial Class TLSE_hub
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu_itemsedit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
+        Me.TLSE_menu_miimanagement.SuspendLayout()
+        Me.Menu_mii.SuspendLayout()
+        Me.Menu_allmiis.SuspendLayout()
+        Me.FlowLayoutPanel2.SuspendLayout()
+        CType(Me.Icon_menu_miimanagement, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel10.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -1070,12 +1086,116 @@ Partial Class TLSE_hub
         Me.Menuflow_text_itemsedition.Text = "Items edition"
         Me.Menuflow_text_itemsedition.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'TLSE_menu_miimanagement
+        '
+        Me.TLSE_menu_miimanagement.BackColor = System.Drawing.Color.Transparent
+        Me.TLSE_menu_miimanagement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_miimanagement.Controls.Add(Me.Menu_mii)
+        Me.TLSE_menu_miimanagement.Controls.Add(Me.Menu_allmiis)
+        Me.TLSE_menu_miimanagement.Controls.Add(Me.FlowLayoutPanel2)
+        Me.TLSE_menu_miimanagement.Location = New System.Drawing.Point(12, 81)
+        Me.TLSE_menu_miimanagement.Name = "TLSE_menu_miimanagement"
+        Me.TLSE_menu_miimanagement.Size = New System.Drawing.Size(807, 632)
+        Me.TLSE_menu_miimanagement.TabIndex = 37
+        Me.TLSE_menu_miimanagement.Visible = False
+        '
+        'Menu_mii
+        '
+        Me.Menu_mii.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_manag_mii
+        Me.Menu_mii.Controls.Add(Me.Text_menu_mii)
+        Me.Menu_mii.Location = New System.Drawing.Point(300, 239)
+        Me.Menu_mii.Name = "Menu_mii"
+        Me.Menu_mii.Size = New System.Drawing.Size(199, 122)
+        Me.Menu_mii.TabIndex = 8
+        '
+        'Text_menu_mii
+        '
+        Me.Text_menu_mii.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_mii.ForeColor = System.Drawing.Color.Black
+        Me.Text_menu_mii.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_mii.Name = "Text_menu_mii"
+        Me.Text_menu_mii.Size = New System.Drawing.Size(184, 108)
+        Me.Text_menu_mii.TabIndex = 2
+        Me.Text_menu_mii.Text = "Mii" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Export or Import a Mii in your save file"
+        Me.Text_menu_mii.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_allmiis
+        '
+        Me.Menu_allmiis.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_manag_allmii
+        Me.Menu_allmiis.Controls.Add(Me.Text_menu_allmiis)
+        Me.Menu_allmiis.Location = New System.Drawing.Point(79, 113)
+        Me.Menu_allmiis.Name = "Menu_allmiis"
+        Me.Menu_allmiis.Size = New System.Drawing.Size(199, 122)
+        Me.Menu_allmiis.TabIndex = 7
+        '
+        'Text_menu_allmiis
+        '
+        Me.Text_menu_allmiis.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_allmiis.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_allmiis.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_allmiis.Name = "Text_menu_allmiis"
+        Me.Text_menu_allmiis.Size = New System.Drawing.Size(184, 108)
+        Me.Text_menu_allmiis.TabIndex = 2
+        Me.Text_menu_allmiis.Text = "All Miis" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Export or Import all Miis in your save file"
+        Me.Text_menu_allmiis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'FlowLayoutPanel2
+        '
+        Me.FlowLayoutPanel2.AutoSize = True
+        Me.FlowLayoutPanel2.Controls.Add(Me.Icon_menu_miimanagement)
+        Me.FlowLayoutPanel2.Controls.Add(Me.Panel9)
+        Me.FlowLayoutPanel2.Controls.Add(Me.Panel10)
+        Me.FlowLayoutPanel2.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel2.Name = "FlowLayoutPanel2"
+        Me.FlowLayoutPanel2.Size = New System.Drawing.Size(807, 57)
+        Me.FlowLayoutPanel2.TabIndex = 2
+        '
+        'Icon_menu_miimanagement
+        '
+        Me.Icon_menu_miimanagement.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_menu_miimanagement.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_menu_miimanagement.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_off
+        Me.Icon_menu_miimanagement.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_menu_miimanagement.Name = "Icon_menu_miimanagement"
+        Me.Icon_menu_miimanagement.Size = New System.Drawing.Size(61, 51)
+        Me.Icon_menu_miimanagement.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_menu_miimanagement.TabIndex = 42
+        Me.Icon_menu_miimanagement.TabStop = False
+        '
+        'Panel9
+        '
+        Me.Panel9.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_miimanagement_base
+        Me.Panel9.Location = New System.Drawing.Point(70, 3)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(45, 50)
+        Me.Panel9.TabIndex = 2
+        '
+        'Panel10
+        '
+        Me.Panel10.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_miimanagement
+        Me.Panel10.Controls.Add(Me.Menuflow_text_miimanagement)
+        Me.Panel10.Location = New System.Drawing.Point(121, 3)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(120, 50)
+        Me.Panel10.TabIndex = 3
+        '
+        'Menuflow_text_miimanagement
+        '
+        Me.Menuflow_text_miimanagement.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Menuflow_text_miimanagement.Location = New System.Drawing.Point(20, 0)
+        Me.Menuflow_text_miimanagement.Name = "Menuflow_text_miimanagement"
+        Me.Menuflow_text_miimanagement.Size = New System.Drawing.Size(80, 50)
+        Me.Menuflow_text_miimanagement.TabIndex = 0
+        Me.Menuflow_text_miimanagement.Text = "Mii management"
+        Me.Menuflow_text_miimanagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TLSE_hub
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(830, 730)
+        Me.Controls.Add(Me.TLSE_menu_miimanagement)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
@@ -1146,6 +1266,13 @@ Partial Class TLSE_hub
         Me.FlowLayoutPanel1.ResumeLayout(False)
         CType(Me.Icon_menu_itemsedit, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
+        Me.TLSE_menu_miimanagement.ResumeLayout(False)
+        Me.TLSE_menu_miimanagement.PerformLayout()
+        Me.Menu_mii.ResumeLayout(False)
+        Me.Menu_allmiis.ResumeLayout(False)
+        Me.FlowLayoutPanel2.ResumeLayout(False)
+        CType(Me.Icon_menu_miimanagement, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel10.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1231,4 +1358,14 @@ Partial Class TLSE_hub
     Friend WithEvents Panel7 As Panel
     Friend WithEvents Panel8 As Panel
     Friend WithEvents Menuflow_text_itemsedition As Label
+    Friend WithEvents TLSE_menu_miimanagement As Panel
+    Friend WithEvents Menu_allmiis As Panel
+    Friend WithEvents Text_menu_allmiis As Label
+    Friend WithEvents FlowLayoutPanel2 As FlowLayoutPanel
+    Friend WithEvents Icon_menu_miimanagement As PictureBox
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents Menuflow_text_miimanagement As Label
+    Friend WithEvents Menu_mii As Panel
+    Friend WithEvents Text_menu_mii As Label
 End Class

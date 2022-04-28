@@ -144,11 +144,8 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_miimanagement_Click(sender As Object, e As EventArgs) Handles Text_menu_miimanagement.Click
-        If TLSE_logo_update.Visible = True Then
-            TLSE_miimanagement.TLSE_logo_update.Visible = True
-        End If
-        TLSE_miimanagement.Show()
-        Me.Close()
+        Hidemenu()
+        TLSE_menu_miimanagement.Visible = True
     End Sub
 
     Private Sub Text_menu_miimanagement_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_miimanagement.MouseMove
@@ -287,10 +284,56 @@ Public Class TLSE_hub
         Menu_itemsprovenance.BackgroundImage = My.Resources.bbl_itemsprovenance
     End Sub
 
+    Private Sub Icon_menu_miimanagement_Click(sender As Object, e As EventArgs) Handles Icon_menu_miimanagement.Click
+        Hidemenu()
+        TLSE_menu.Visible = True
+    End Sub
+
+    Private Sub Icon_menu_miimanagement_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_menu_miimanagement.MouseMove
+        Icon_menu_miimanagement.Image = My.Resources.icon_menu_on
+    End Sub
+
+    Private Sub Icon_menu_miimanagement_MouseLeave(sender As Object, e As EventArgs) Handles Icon_menu_miimanagement.MouseLeave
+        Icon_menu_miimanagement.Image = My.Resources.icon_menu_off
+    End Sub
+
+    Private Sub Text_menu_allmiis_Click(sender As Object, e As EventArgs) Handles Text_menu_allmiis.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_manag_allmiis.TLSE_logo_update.Visible = True
+        End If
+        TLSE_manag_allmiis.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_allmiis_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_allmiis.MouseMove
+        Menu_allmiis.BackgroundImage = My.Resources.bbl_manag_allmii_act
+    End Sub
+
+    Private Sub Text_menu_allmiis_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_allmiis.MouseLeave
+        Menu_allmiis.BackgroundImage = My.Resources.bbl_manag_allmii
+    End Sub
+
+    Private Sub Text_menu_mii_Click(sender As Object, e As EventArgs) Handles Text_menu_mii.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_manag_allmiis.TLSE_logo_update.Visible = True
+        End If
+        TLSE_manag_mii.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_mii_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_mii.MouseMove
+        Menu_mii.BackgroundImage = My.Resources.bbl_manag_mii_act
+    End Sub
+
+    Private Sub Text_menu_lmii_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_mii.MouseLeave
+        Menu_mii.BackgroundImage = My.Resources.bbl_manag_mii
+    End Sub
+
     Public Sub Hidemenu()
         TLSE_menu.Visible = False
         TLSE_menu_Miiedition.Visible = False
         TLSE_menu_Itemsedition.Visible = False
+        TLSE_menu_miimanagement.Visible = False
     End Sub
 
     Private Sub TLSE_hub_Load(sender As Object, e As EventArgs) Handles MyBase.Load

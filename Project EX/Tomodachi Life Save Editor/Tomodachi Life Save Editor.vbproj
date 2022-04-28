@@ -120,10 +120,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="TLSE_miimanagement.Designer.vb">
-      <DependentUpon>TLSE_miimanagement.vb</DependentUpon>
+    <Compile Include="TLSE_manag_allmiis.Designer.vb">
+      <DependentUpon>TLSE_manag_allmiis.vb</DependentUpon>
     </Compile>
-    <Compile Include="TLSE_miimanagement.vb">
+    <Compile Include="TLSE_manag_allmiis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TLSE_manag_mii.Designer.vb">
+      <DependentUpon>TLSE_manag_mii.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_manag_mii.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TLSE_relamechanics.Designer.vb">
@@ -164,8 +170,11 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="TLSE_miimanagement.resx">
-      <DependentUpon>TLSE_miimanagement.vb</DependentUpon>
+    <EmbeddedResource Include="TLSE_manag_allmiis.resx">
+      <DependentUpon>TLSE_manag_allmiis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_manag_mii.resx">
+      <DependentUpon>TLSE_manag_mii.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_relamechanics.resx">
       <DependentUpon>TLSE_relamechanics.vb</DependentUpon>
@@ -260,6 +269,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\bbl_manag_mii_act.png" />
+    <None Include="Resources\bbl_manag_mii.png" />
+    <None Include="Resources\bbl_manag_allmii_act.png" />
+    <None Include="Resources\bbl_manag_allmii.png" />
+    <None Include="Resources\icon_travelers.png" />
+    <None Include="Resources\icon_baby.png" />
     <None Include="Resources\icon_miimanagement.png" />
     <None Include="Resources\fea_extractrestore.png" />
     <None Include="Resources\icon_menuitemsedit_items.png" />
