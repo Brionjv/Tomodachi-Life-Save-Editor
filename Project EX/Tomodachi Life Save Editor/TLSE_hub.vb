@@ -70,7 +70,20 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_concertedit_Click(sender As Object, e As EventArgs) Handles Text_menu_concertedit.Click
-
+        If Filever_text.Text = "JP" Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "This feature is not available in your region"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Cette fonctionnalité n'est pas disponible dans votre région"
+            End If
+            TLSE_dialog.ShowDialog()
+        Else
+            If TLSE_logo_update.Visible = True Then
+                TLSE_concertedit.TLSE_logo_update.Visible = True
+            End If
+            TLSE_concertedit.Show()
+            Me.Close()
+        End If
     End Sub
 
     Private Sub Text_menu_concertedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_concertedit.MouseMove
@@ -260,18 +273,6 @@ Public Class TLSE_hub
         Icon_menu_itemsedit.Image = My.Resources.icon_menu_off
     End Sub
 
-    Private Sub Text_menu_items_Click(sender As Object, e As EventArgs) Handles Text_menu_items.Click
-
-    End Sub
-
-    Private Sub Text_menu_items_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_items.MouseMove
-        Menu_items.BackgroundImage = My.Resources.bbl_items_act
-    End Sub
-
-    Private Sub Text_menu_items_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_items.MouseLeave
-        Menu_items.BackgroundImage = My.Resources.bbl_items
-    End Sub
-
     Private Sub Text_menu_itemsprovenance_Click(sender As Object, e As EventArgs) Handles Text_menu_itemsprovenance.Click
 
     End Sub
@@ -315,7 +316,7 @@ Public Class TLSE_hub
 
     Private Sub Text_menu_mii_Click(sender As Object, e As EventArgs) Handles Text_menu_mii.Click
         If TLSE_logo_update.Visible = True Then
-            TLSE_manag_allmiis.TLSE_logo_update.Visible = True
+            TLSE_manag_mii.TLSE_logo_update.Visible = True
         End If
         TLSE_manag_mii.Show()
         Me.Close()
@@ -325,8 +326,24 @@ Public Class TLSE_hub
         Menu_mii.BackgroundImage = My.Resources.bbl_manag_mii_act
     End Sub
 
-    Private Sub Text_menu_lmii_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_mii.MouseLeave
+    Private Sub Text_menu_mii_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_mii.MouseLeave
         Menu_mii.BackgroundImage = My.Resources.bbl_manag_mii
+    End Sub
+
+    Private Sub Text_menu_items_Click(sender As Object, e As EventArgs) Handles Text_menu_items.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_itemsedit.TLSE_logo_update.Visible = True
+        End If
+        TLSE_itemsedit.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_items_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_items.MouseMove
+        Menu_items.BackgroundImage = My.Resources.bbl_items_act
+    End Sub
+
+    Private Sub Text_menu_litems_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_items.MouseLeave
+        Menu_items.BackgroundImage = My.Resources.bbl_items
     End Sub
 
     Public Sub Hidemenu()
@@ -527,4 +544,7 @@ Public Class TLSE_hub
         End If
     End Sub
 
+    Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
+        Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
+    End Sub
 End Class

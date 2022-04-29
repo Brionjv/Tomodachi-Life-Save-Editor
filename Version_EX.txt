@@ -1,1 +1,1 @@
-Version EX-1.0.5
+Version EX-1.0.6

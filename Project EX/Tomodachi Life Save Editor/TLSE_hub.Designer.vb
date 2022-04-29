@@ -332,7 +332,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_concertedit
         '
-        Me.Text_menu_concertedit.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_concertedit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_concertedit.ForeColor = System.Drawing.Color.Black
         Me.Text_menu_concertedit.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_concertedit.Name = "Text_menu_concertedit"
@@ -592,7 +592,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.0.5"
+        Me.TLSE_version.Text = "Version EX-1.0.6"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1027,7 +1027,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_items
         '
-        Me.Text_menu_items.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_items.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_items.ForeColor = System.Drawing.Color.White
         Me.Text_menu_items.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_items.Name = "Text_menu_items"

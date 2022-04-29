@@ -84,6 +84,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="TLSE_concertedit.Designer.vb">
+      <DependentUpon>TLSE_concertedit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_concertedit.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_dialog.Designer.vb">
       <DependentUpon>TLSE_dialog.vb</DependentUpon>
     </Compile>
@@ -94,6 +100,12 @@
       <DependentUpon>TLSE_hub.vb</DependentUpon>
     </Compile>
     <Compile Include="TLSE_hub.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TLSE_itemsedit.Designer.vb">
+      <DependentUpon>TLSE_itemsedit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_itemsedit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TLSE_Jrelationships.Designer.vb">
@@ -152,11 +164,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="TLSE_concertedit.resx">
+      <DependentUpon>TLSE_concertedit.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TLSE_dialog.resx">
       <DependentUpon>TLSE_dialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_hub.resx">
       <DependentUpon>TLSE_hub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_itemsedit.resx">
+      <DependentUpon>TLSE_itemsedit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_Jrelationships.resx">
       <DependentUpon>TLSE_Jrelationships.vb</DependentUpon>
@@ -269,6 +287,40 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\tab_concertedit.png" />
+    <None Include="Resources\tab_concertedit_base.png" />
+    <None Include="Resources\icon_plus.png" />
+    <None Include="Resources\icon_minus.png" />
+    <None Include="Resources\icon_crthall_techno.png" />
+    <None Include="Resources\icon_crthall_rockroll.png" />
+    <None Include="Resources\icon_crthall_rap.png" />
+    <None Include="Resources\icon_crthall_pop.png" />
+    <None Include="Resources\icon_crthall_opera.png" />
+    <None Include="Resources\icon_crthall_musical.png" />
+    <None Include="Resources\icon_crthall_metal.png" />
+    <None Include="Resources\icon_crthall_ballad.png" />
+    <None Include="Resources\bg_concert.png" />
+    <None Include="Resources\bg_ft_items.png" />
+    <None Include="Resources\Icon_untreasures_act.png" />
+    <None Include="Resources\Icon_untreasures.png" />
+    <None Include="Resources\Icon_uninteriors_act.png" />
+    <None Include="Resources\Icon_uninteriors.png" />
+    <None Include="Resources\Icon_unhatsstsp_act.png" />
+    <None Include="Resources\Icon_unhatsstsp.png" />
+    <None Include="Resources\Icon_unhats_act.png" />
+    <None Include="Resources\Icon_unhats.png" />
+    <None Include="Resources\Icon_ungoods_act.png" />
+    <None Include="Resources\Icon_ungoods.png" />
+    <None Include="Resources\Icon_unfoodsspe_act.png" />
+    <None Include="Resources\Icon_unfoodsspe.png" />
+    <None Include="Resources\Icon_unfoods_act.png" />
+    <None Include="Resources\Icon_unfoods.png" />
+    <None Include="Resources\Icon_unclothesstsp_act.png" />
+    <None Include="Resources\Icon_unclothesstsp.png" />
+    <None Include="Resources\Icon_unclothes_act.png" />
+    <None Include="Resources\Icon_unclothes.png" />
+    <None Include="Resources\icon_advedititems.png" />
+    <None Include="Resources\bg_itemspanel.png" />
     <None Include="Resources\icon_issue.png" />
     <None Include="Resources\bbl_manag_mii_act.png" />
     <None Include="Resources\bbl_manag_mii.png" />
