@@ -22,3 +22,5 @@ C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Edito
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi Life Save Editor.vbproj.AssemblyReference.cache
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_itemsedit.resources
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_concertedit.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_repairsave.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Debug\Tomodachi_Life_Save_Editor.TLSE_extras.resources

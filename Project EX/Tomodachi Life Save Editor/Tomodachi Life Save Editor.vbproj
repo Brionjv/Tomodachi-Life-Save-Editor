@@ -96,6 +96,12 @@
     <Compile Include="TLSE_dialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_extras.Designer.vb">
+      <DependentUpon>TLSE_extras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_extras.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_hub.Designer.vb">
       <DependentUpon>TLSE_hub.vb</DependentUpon>
     </Compile>
@@ -156,6 +162,12 @@
     <Compile Include="TLSE_relationships.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_repairsave.Designer.vb">
+      <DependentUpon>TLSE_repairsave.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_repairsave.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_settings.Designer.vb">
       <DependentUpon>TLSE_settings.vb</DependentUpon>
     </Compile>
@@ -169,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_dialog.resx">
       <DependentUpon>TLSE_dialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_extras.resx">
+      <DependentUpon>TLSE_extras.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_hub.resx">
       <DependentUpon>TLSE_hub.vb</DependentUpon>
@@ -199,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_relationships.resx">
       <DependentUpon>TLSE_relationships.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_repairsave.resx">
+      <DependentUpon>TLSE_repairsave.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_settings.resx">
       <DependentUpon>TLSE_settings.vb</DependentUpon>
@@ -287,6 +305,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\Time_travel.gif" />
+    <None Include="Resources\reset_stpspp.gif" />
+    <None Include="Resources\reset_relationship.gif" />
+    <None Include="Resources\reset_newsflash.gif" />
+    <None Include="Resources\reset_items.gif" />
+    <None Include="Resources\reset_apartmii.gif" />
+    <None Include="Resources\icon_checktummy_full.png" />
+    <None Include="Resources\icon_checktummy_empty.png" />
+    <None Include="Resources\bg_extras.png" />
+    <None Include="Resources\tab_extras_base.png" />
+    <None Include="Resources\tab_extras.png" />
+    <None Include="Resources\icon_fixheader.gif" />
+    <None Include="Resources\bg_repairsave.png" />
+    <None Include="Resources\tab_repairsave_base.png" />
+    <None Include="Resources\tab_repairsave.png" />
     <None Include="Resources\tab_concertedit.png" />
     <None Include="Resources\tab_concertedit_base.png" />
     <None Include="Resources\icon_plus.png" />

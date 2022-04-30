@@ -95,7 +95,11 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_extras_Click(sender As Object, e As EventArgs) Handles Text_menu_extras.Click
-
+        If TLSE_logo_update.Visible = True Then
+            TLSE_extras.TLSE_logo_update.Visible = True
+        End If
+        TLSE_extras.Show()
+        Me.Close()
     End Sub
 
     Private Sub Text_menu_extras_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_extras.MouseMove
@@ -170,7 +174,11 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_repairsave_Click(sender As Object, e As EventArgs) Handles Text_menu_repairsave.Click
-
+        If TLSE_logo_update.Visible = True Then
+            TLSE_repairsave.TLSE_logo_update.Visible = True
+        End If
+        TLSE_repairsave.Show()
+        Me.Close()
     End Sub
 
     Private Sub Text_menu_repairsave_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_repairsave.MouseMove

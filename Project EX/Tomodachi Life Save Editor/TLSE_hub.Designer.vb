@@ -292,7 +292,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_repairsave
         '
-        Me.Text_menu_repairsave.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_repairsave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_repairsave.ForeColor = System.Drawing.Color.Black
         Me.Text_menu_repairsave.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_repairsave.Name = "Text_menu_repairsave"
@@ -372,7 +372,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_extras
         '
-        Me.Text_menu_extras.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_extras.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_extras.ForeColor = System.Drawing.Color.White
         Me.Text_menu_extras.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_extras.Name = "Text_menu_extras"
@@ -592,7 +592,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.0.6"
+        Me.TLSE_version.Text = "Version EX-1.0.7"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header

@@ -94,6 +94,10 @@ Public Class TLSE_itemsedit
         savedataArc = TLSE_filepath.Text
     End Sub
 
+    Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
+        Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
+    End Sub
+
     Private Sub Menuflow_text_itemsedition_Click(sender As Object, e As EventArgs) Handles Menuflow_text_itemsedition.Click
         If TLSE_logo_update.Visible = True Then
             TLSE_hub.TLSE_logo_update.Visible = True

@@ -54,6 +54,7 @@ Partial Class TLSE_concertedit
         Me.Filever_text = New System.Windows.Forms.Label()
         Me.Title_filever = New System.Windows.Forms.Label()
         Me.Panel_menu_opensave = New System.Windows.Forms.Panel()
+        Me.Text_save_editsongs = New System.Windows.Forms.Label()
         Me.Minimizebutton = New System.Windows.Forms.PictureBox()
         Me.TLSE_title = New System.Windows.Forms.PictureBox()
         Me.Closebutton = New System.Windows.Forms.PictureBox()
@@ -90,7 +91,6 @@ Partial Class TLSE_concertedit
         Me.AdvH_typesong = New System.Windows.Forms.PictureBox()
         Me.AdvH_selectsongs = New System.Windows.Forms.PictureBox()
         Me.AdvH_titlesong = New System.Windows.Forms.PictureBox()
-        Me.Text_save_editsongs = New System.Windows.Forms.Label()
         Me.Panel_title = New System.Windows.Forms.Panel()
         Me.Text_title_editsongs = New System.Windows.Forms.Label()
         Me.Icon_title_2 = New System.Windows.Forms.PictureBox()
@@ -582,12 +582,24 @@ Partial Class TLSE_concertedit
         Me.Panel_menu_opensave.Size = New System.Drawing.Size(69, 34)
         Me.Panel_menu_opensave.TabIndex = 8
         '
+        'Text_save_editsongs
+        '
+        Me.Text_save_editsongs.BackColor = System.Drawing.Color.Transparent
+        Me.Text_save_editsongs.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_save_editsongs.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_save_editsongs.Location = New System.Drawing.Point(0, 0)
+        Me.Text_save_editsongs.Name = "Text_save_editsongs"
+        Me.Text_save_editsongs.Size = New System.Drawing.Size(69, 34)
+        Me.Text_save_editsongs.TabIndex = 0
+        Me.Text_save_editsongs.Text = "Save"
+        Me.Text_save_editsongs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Minimizebutton
         '
         Me.Minimizebutton.BackColor = System.Drawing.Color.Transparent
         Me.Minimizebutton.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Minimizebutton.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.minimize
-        Me.Minimizebutton.Location = New System.Drawing.Point(556, 0)
+        Me.Minimizebutton.Location = New System.Drawing.Point(559, 0)
         Me.Minimizebutton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Minimizebutton.Name = "Minimizebutton"
         Me.Minimizebutton.Size = New System.Drawing.Size(45, 35)
@@ -609,7 +621,7 @@ Partial Class TLSE_concertedit
         Me.Closebutton.BackColor = System.Drawing.Color.Transparent
         Me.Closebutton.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Closebutton.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.close_tl
-        Me.Closebutton.Location = New System.Drawing.Point(601, 0)
+        Me.Closebutton.Location = New System.Drawing.Point(604, 0)
         Me.Closebutton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Closebutton.Name = "Closebutton"
         Me.Closebutton.Size = New System.Drawing.Size(45, 35)
@@ -987,18 +999,6 @@ Partial Class TLSE_concertedit
         Me.AdvH_titlesong.TabIndex = 126
         Me.AdvH_titlesong.TabStop = False
         Me.AdvH_titlesong.Visible = False
-        '
-        'Text_save_editsongs
-        '
-        Me.Text_save_editsongs.BackColor = System.Drawing.Color.Transparent
-        Me.Text_save_editsongs.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Text_save_editsongs.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Text_save_editsongs.Location = New System.Drawing.Point(0, 0)
-        Me.Text_save_editsongs.Name = "Text_save_editsongs"
-        Me.Text_save_editsongs.Size = New System.Drawing.Size(69, 34)
-        Me.Text_save_editsongs.TabIndex = 0
-        Me.Text_save_editsongs.Text = "Save"
-        Me.Text_save_editsongs.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel_title
         '

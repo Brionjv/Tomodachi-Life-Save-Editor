@@ -198,6 +198,10 @@ Public Class TLSE_manag_mii
         Readmiiname()
     End Sub
 
+    Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
+        Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
+    End Sub
+
     Private Sub TLSE_miimanagement_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         DetectMiiregistered()
     End Sub

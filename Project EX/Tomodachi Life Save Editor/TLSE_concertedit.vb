@@ -123,6 +123,10 @@ Public Class TLSE_concertedit
         savedataArc = TLSE_filepath.Text
     End Sub
 
+    Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
+        Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
+    End Sub
+
     Private Sub Select_songs_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_songs.SelectedIndexChanged
         If Select_songs.SelectedItem = Select_songs.Items.Item(0) Then
             Accesspagh = &H0

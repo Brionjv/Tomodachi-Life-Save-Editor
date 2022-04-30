@@ -1604,7 +1604,7 @@ Partial Class TLSE_itemsedit
         Me.Minimizebutton.BackColor = System.Drawing.Color.Transparent
         Me.Minimizebutton.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Minimizebutton.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.minimize
-        Me.Minimizebutton.Location = New System.Drawing.Point(556, 0)
+        Me.Minimizebutton.Location = New System.Drawing.Point(559, 0)
         Me.Minimizebutton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Minimizebutton.Name = "Minimizebutton"
         Me.Minimizebutton.Size = New System.Drawing.Size(45, 35)
@@ -1626,7 +1626,7 @@ Partial Class TLSE_itemsedit
         Me.Closebutton.BackColor = System.Drawing.Color.Transparent
         Me.Closebutton.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Closebutton.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.close_tl
-        Me.Closebutton.Location = New System.Drawing.Point(601, 0)
+        Me.Closebutton.Location = New System.Drawing.Point(604, 0)
         Me.Closebutton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Closebutton.Name = "Closebutton"
         Me.Closebutton.Size = New System.Drawing.Size(45, 35)

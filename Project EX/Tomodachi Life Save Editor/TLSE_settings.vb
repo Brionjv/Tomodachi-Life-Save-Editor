@@ -61,6 +61,10 @@
     End Sub
     'end form settings
 
+    Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
+        Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
+    End Sub
+
     'form menu
     Private Sub Icon_menu_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_menu.MouseMove
         Icon_menu.Image = My.Resources.icon_menu_on

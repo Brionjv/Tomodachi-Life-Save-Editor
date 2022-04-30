@@ -102,6 +102,10 @@ Public Class TLSE_manag_allmiis
         savedataArc = TLSE_filepath.Text
     End Sub
 
+    Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
+        Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
+    End Sub
+
     Public Sub ReadAllMii()
         If Filever_text.Text = "EU" Or Filever_text.Text = "US" Or Filever_text.Text = "KR" Then
             Mii_1 = &H1C70
