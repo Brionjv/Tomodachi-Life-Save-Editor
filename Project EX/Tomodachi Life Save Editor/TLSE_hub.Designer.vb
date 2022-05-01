@@ -592,7 +592,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.0.7"
+        Me.TLSE_version.Text = "Version EX-1.0.8"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
