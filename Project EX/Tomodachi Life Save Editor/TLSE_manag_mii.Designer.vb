@@ -61,6 +61,8 @@ Partial Class TLSE_manag_mii
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.Menu_miiedition = New System.Windows.Forms.Panel()
         Me.Menu_text_miimanagement = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel_management = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -78,8 +80,6 @@ Partial Class TLSE_manag_mii
         Me.Select_mii = New System.Windows.Forms.ComboBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Icon_selectmii = New System.Windows.Forms.PictureBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.TLSE_header.SuspendLayout()
         Me.Panel_bspesymb.SuspendLayout()
         CType(Me.Icon_bspesymb, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -103,6 +103,7 @@ Partial Class TLSE_manag_mii
         Me.Menu_flow.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_miiedition.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.Panel_management.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_lastmii, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -113,7 +114,6 @@ Partial Class TLSE_manag_mii
         Me.Panel_selectmii.SuspendLayout()
         Me.Panel7.SuspendLayout()
         CType(Me.Icon_selectmii, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_header
@@ -591,6 +591,27 @@ Partial Class TLSE_manag_mii
         Me.Menu_text_miimanagement.Text = "Mii management"
         Me.Menu_text_miimanagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Panel3
+        '
+        Me.Panel3.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_miimanagement
+        Me.Panel3.Controls.Add(Me.Label2)
+        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel3.Location = New System.Drawing.Point(247, 3)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(120, 50)
+        Me.Panel3.TabIndex = 43
+        '
+        'Label2
+        '
+        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label2.Location = New System.Drawing.Point(20, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(80, 50)
+        Me.Label2.TabIndex = 0
+        Me.Label2.Text = "Mii"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Label1
         '
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
@@ -741,9 +762,9 @@ Partial Class TLSE_manag_mii
         Me.Panel_selectmii.BackColor = System.Drawing.Color.Transparent
         Me.Panel_selectmii.Controls.Add(Me.Select_mii)
         Me.Panel_selectmii.Controls.Add(Me.Panel7)
-        Me.Panel_selectmii.Location = New System.Drawing.Point(24, 12)
+        Me.Panel_selectmii.Location = New System.Drawing.Point(7, 12)
         Me.Panel_selectmii.Name = "Panel_selectmii"
-        Me.Panel_selectmii.Size = New System.Drawing.Size(148, 64)
+        Me.Panel_selectmii.Size = New System.Drawing.Size(163, 64)
         Me.Panel_selectmii.TabIndex = 255
         '
         'Select_mii
@@ -756,7 +777,7 @@ Partial Class TLSE_manag_mii
         Me.Select_mii.Items.AddRange(New Object() {"Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
         Me.Select_mii.Location = New System.Drawing.Point(31, 22)
         Me.Select_mii.Name = "Select_mii"
-        Me.Select_mii.Size = New System.Drawing.Size(115, 21)
+        Me.Select_mii.Size = New System.Drawing.Size(129, 21)
         Me.Select_mii.TabIndex = 1
         '
         'Panel7
@@ -776,27 +797,6 @@ Partial Class TLSE_manag_mii
         Me.Icon_selectmii.Size = New System.Drawing.Size(25, 25)
         Me.Icon_selectmii.TabIndex = 0
         Me.Icon_selectmii.TabStop = False
-        '
-        'Panel3
-        '
-        Me.Panel3.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_miimanagement
-        Me.Panel3.Controls.Add(Me.Label2)
-        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Panel3.Location = New System.Drawing.Point(247, 3)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(120, 50)
-        Me.Panel3.TabIndex = 43
-        '
-        'Label2
-        '
-        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(20, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(80, 50)
-        Me.Label2.TabIndex = 0
-        Me.Label2.Text = "Mii"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TLSE_manag_mii
         '
@@ -843,6 +843,7 @@ Partial Class TLSE_manag_mii
         Me.Menu_flow.ResumeLayout(False)
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_miiedition.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
         Me.Panel_management.ResumeLayout(False)
         Me.Panel_management.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -855,7 +856,6 @@ Partial Class TLSE_manag_mii
         Me.Panel_selectmii.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         CType(Me.Icon_selectmii, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

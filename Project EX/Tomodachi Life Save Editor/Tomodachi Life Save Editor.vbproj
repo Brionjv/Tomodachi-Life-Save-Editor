@@ -150,6 +150,12 @@
     <Compile Include="TLSE_manag_mii.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_manag_travelers.Designer.vb">
+      <DependentUpon>TLSE_manag_travelers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_manag_travelers.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_relamechanics.Designer.vb">
       <DependentUpon>TLSE_relamechanics.vb</DependentUpon>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_manag_mii.resx">
       <DependentUpon>TLSE_manag_mii.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_manag_travelers.resx">
+      <DependentUpon>TLSE_manag_travelers.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_relamechanics.resx">
       <DependentUpon>TLSE_relamechanics.vb</DependentUpon>
@@ -305,6 +314,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\bbl_manag_travelers_act.png" />
+    <None Include="Resources\bbl_manag_travelers.png" />
     <None Include="Resources\Time_travel.gif" />
     <None Include="Resources\reset_stpspp.gif" />
     <None Include="Resources\reset_relationship.gif" />

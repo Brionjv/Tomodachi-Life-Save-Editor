@@ -354,6 +354,22 @@ Public Class TLSE_hub
         Menu_items.BackgroundImage = My.Resources.bbl_items
     End Sub
 
+    Private Sub Text_menu_travelers_Click(sender As Object, e As EventArgs) Handles Text_menu_travelers.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_manag_travelers.TLSE_logo_update.Visible = True
+        End If
+        TLSE_manag_travelers.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_travelers_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_travelers.MouseMove
+        Menu_travelers.BackgroundImage = My.Resources.bbl_manag_travelers_act
+    End Sub
+
+    Private Sub Text_menu_travelers_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_travelers.MouseLeave
+        Menu_travelers.BackgroundImage = My.Resources.bbl_manag_travelers
+    End Sub
+
     Public Sub Hidemenu()
         TLSE_menu.Visible = False
         TLSE_menu_Miiedition.Visible = False

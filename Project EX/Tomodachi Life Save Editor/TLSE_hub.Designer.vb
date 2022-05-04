@@ -107,6 +107,8 @@ Partial Class TLSE_hub
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Menuflow_text_itemsedition = New System.Windows.Forms.Label()
         Me.TLSE_menu_miimanagement = New System.Windows.Forms.Panel()
+        Me.Menu_travelers = New System.Windows.Forms.Panel()
+        Me.Text_menu_travelers = New System.Windows.Forms.Label()
         Me.Menu_mii = New System.Windows.Forms.Panel()
         Me.Text_menu_mii = New System.Windows.Forms.Label()
         Me.Menu_allmiis = New System.Windows.Forms.Panel()
@@ -166,6 +168,7 @@ Partial Class TLSE_hub
         CType(Me.Icon_menu_itemsedit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
         Me.TLSE_menu_miimanagement.SuspendLayout()
+        Me.Menu_travelers.SuspendLayout()
         Me.Menu_mii.SuspendLayout()
         Me.Menu_allmiis.SuspendLayout()
         Me.FlowLayoutPanel2.SuspendLayout()
@@ -592,7 +595,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.0.8"
+        Me.TLSE_version.Text = "Version EX-1.0.9"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1090,6 +1093,7 @@ Partial Class TLSE_hub
         '
         Me.TLSE_menu_miimanagement.BackColor = System.Drawing.Color.Transparent
         Me.TLSE_menu_miimanagement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_miimanagement.Controls.Add(Me.Menu_travelers)
         Me.TLSE_menu_miimanagement.Controls.Add(Me.Menu_mii)
         Me.TLSE_menu_miimanagement.Controls.Add(Me.Menu_allmiis)
         Me.TLSE_menu_miimanagement.Controls.Add(Me.FlowLayoutPanel2)
@@ -1098,6 +1102,26 @@ Partial Class TLSE_hub
         Me.TLSE_menu_miimanagement.Size = New System.Drawing.Size(807, 632)
         Me.TLSE_menu_miimanagement.TabIndex = 37
         Me.TLSE_menu_miimanagement.Visible = False
+        '
+        'Menu_travelers
+        '
+        Me.Menu_travelers.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_manag_travelers
+        Me.Menu_travelers.Controls.Add(Me.Text_menu_travelers)
+        Me.Menu_travelers.Location = New System.Drawing.Point(521, 381)
+        Me.Menu_travelers.Name = "Menu_travelers"
+        Me.Menu_travelers.Size = New System.Drawing.Size(199, 122)
+        Me.Menu_travelers.TabIndex = 9
+        '
+        'Text_menu_travelers
+        '
+        Me.Text_menu_travelers.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_travelers.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_travelers.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_travelers.Name = "Text_menu_travelers"
+        Me.Text_menu_travelers.Size = New System.Drawing.Size(184, 108)
+        Me.Text_menu_travelers.TabIndex = 2
+        Me.Text_menu_travelers.Text = "Travelers" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Export or Import travelers in your save file"
+        Me.Text_menu_travelers.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_mii
         '
@@ -1199,10 +1223,10 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.TLSE_menu_miimanagement)
         Me.Controls.Add(Me.TLSE_menu)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
-        Me.Controls.Add(Me.TLSE_menu_miimanagement)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"
@@ -1268,6 +1292,7 @@ Partial Class TLSE_hub
         Me.Panel8.ResumeLayout(False)
         Me.TLSE_menu_miimanagement.ResumeLayout(False)
         Me.TLSE_menu_miimanagement.PerformLayout()
+        Me.Menu_travelers.ResumeLayout(False)
         Me.Menu_mii.ResumeLayout(False)
         Me.Menu_allmiis.ResumeLayout(False)
         Me.FlowLayoutPanel2.ResumeLayout(False)
@@ -1368,4 +1393,6 @@ Partial Class TLSE_hub
     Friend WithEvents Menuflow_text_miimanagement As Label
     Friend WithEvents Menu_mii As Panel
     Friend WithEvents Text_menu_mii As Label
+    Friend WithEvents Menu_travelers As Panel
+    Friend WithEvents Text_menu_travelers As Label
 End Class
