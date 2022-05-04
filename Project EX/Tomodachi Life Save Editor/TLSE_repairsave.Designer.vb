@@ -65,6 +65,9 @@ Partial Class TLSE_repairsave
         Me.AdvH_header = New System.Windows.Forms.PictureBox()
         Me.Title_header = New System.Windows.Forms.Label()
         Me.Text_header = New System.Windows.Forms.TextBox()
+        Me.Check_deletetravelersdata = New System.Windows.Forms.CheckBox()
+        Me.Text_deletetravelersdata = New System.Windows.Forms.TextBox()
+        Me.Text_deletejtravelersdata = New System.Windows.Forms.TextBox()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -607,12 +610,53 @@ Partial Class TLSE_repairsave
         Me.Text_header.TabIndex = 197
         Me.Text_header.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
+        'Check_deletetravelersdata
+        '
+        Me.Check_deletetravelersdata.Appearance = System.Windows.Forms.Appearance.Button
+        Me.Check_deletetravelersdata.BackColor = System.Drawing.Color.White
+        Me.Check_deletetravelersdata.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Check_deletetravelersdata.FlatAppearance.BorderSize = 0
+        Me.Check_deletetravelersdata.FlatAppearance.CheckedBackColor = System.Drawing.Color.Orange
+        Me.Check_deletetravelersdata.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Check_deletetravelersdata.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Check_deletetravelersdata.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Check_deletetravelersdata.Location = New System.Drawing.Point(270, 316)
+        Me.Check_deletetravelersdata.Name = "Check_deletetravelersdata"
+        Me.Check_deletetravelersdata.Size = New System.Drawing.Size(256, 23)
+        Me.Check_deletetravelersdata.TabIndex = 201
+        Me.Check_deletetravelersdata.Text = "Delete all travelers data"
+        Me.Check_deletetravelersdata.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Check_deletetravelersdata.UseVisualStyleBackColor = False
+        '
+        'Text_deletetravelersdata
+        '
+        Me.Text_deletetravelersdata.Location = New System.Drawing.Point(89, 317)
+        Me.Text_deletetravelersdata.MaxLength = 999999999
+        Me.Text_deletetravelersdata.Name = "Text_deletetravelersdata"
+        Me.Text_deletetravelersdata.Size = New System.Drawing.Size(175, 20)
+        Me.Text_deletetravelersdata.TabIndex = 202
+        Me.Text_deletetravelersdata.Text = resources.GetString("Text_deletetravelersdata.Text")
+        Me.Text_deletetravelersdata.Visible = False
+        '
+        'Text_deletejtravelersdata
+        '
+        Me.Text_deletejtravelersdata.Location = New System.Drawing.Point(89, 343)
+        Me.Text_deletejtravelersdata.MaxLength = 999999999
+        Me.Text_deletejtravelersdata.Name = "Text_deletejtravelersdata"
+        Me.Text_deletejtravelersdata.Size = New System.Drawing.Size(175, 20)
+        Me.Text_deletejtravelersdata.TabIndex = 203
+        Me.Text_deletejtravelersdata.Text = resources.GetString("Text_deletejtravelersdata.Text")
+        Me.Text_deletejtravelersdata.Visible = False
+        '
         'TLSE_repairsave
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_repairsave
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Text_deletejtravelersdata)
+        Me.Controls.Add(Me.Text_deletetravelersdata)
+        Me.Controls.Add(Me.Check_deletetravelersdata)
         Me.Controls.Add(Me.Icon_header)
         Me.Controls.Add(Me.AdvH_header)
         Me.Controls.Add(Me.Title_header)
@@ -706,4 +750,7 @@ Partial Class TLSE_repairsave
     Friend WithEvents AdvH_header As PictureBox
     Friend WithEvents Title_header As Label
     Friend WithEvents Text_header As TextBox
+    Friend WithEvents Check_deletetravelersdata As CheckBox
+    Friend WithEvents Text_deletetravelersdata As TextBox
+    Friend WithEvents Text_deletejtravelersdata As TextBox
 End Class

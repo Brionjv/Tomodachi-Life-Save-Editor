@@ -359,12 +359,238 @@ Public Class TLSE_repairsave
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     TLSE_dialog.Text_TLSE_dialog.Text = "Les valeurs inconnues ont été corrigée"
                 End If
+                TLSE_dialog.ShowDialog()
             Catch ex As Exception
                 If Select_language.SelectedItem = Select_language.Items.Item(0) Then
                     TLSE_dialog.Text_TLSE_dialog.Text = "Failed to fix unknow values"
                 ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
                     TLSE_dialog.Text_TLSE_dialog.Text = "La correction des valeurs inconnues a échoué"
                 End If
+                TLSE_dialog.ShowDialog()
+            End Try
+        End If
+    End Sub
+
+    Private Sub Check_deletetravelersdata_CheckedChanged(sender As Object, e As EventArgs) Handles Check_deletetravelersdata.CheckedChanged
+        If Check_deletetravelersdata.Checked = True Then
+            Try
+                Dim Writer As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+                If Filever_text.Text = "JP" Then
+                    Writer.Position = &H316D0
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H32228
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H32D80
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H338D8
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H34430
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H34F88
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H35AE0
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H36638
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H37190
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H37CE8
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H38840
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H39398
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H39EF0
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H3AA48
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H3B5A0
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H3C0F8
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H3CC50
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H3D7A8
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H3E300
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H3EE58
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H3F9B0
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H40508
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H41060
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H41BB8
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H42710
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H43268
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H43DC0
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H44918
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H45470
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H45FC8
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H46B20
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H47678
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H481D0
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H48D28
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H49880
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H4A3D8
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H4AF30
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H4BA88
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H4C5E0
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H4D138
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H4DC90
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H4E7E8
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H4F340
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H4FE98
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H509F0
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H51548
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H520A0
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H52BF8
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H53750
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                    Writer.Position = &H542A8
+                    Writer.WriteHexString(Text_deletejtravelersdata.Text)
+                Else
+                    Writer.Position = &H390E0
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H39D08
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H3A930
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H3B558
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H3C180
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H3CDA8
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H3D9D0
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H3E5F8
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H3F220
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H3FE48
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H40A70
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H41698
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H422C0
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H42EE8
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H43B10
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H44738
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H45360
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H45F88
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H46BB0
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H477D8
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H48400
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H49028
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H49C50
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H4A878
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H4B4A0
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H4C0C8
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H4CCF0
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H4D918
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H4E540
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H4F168
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H4FD90
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H509B8
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H515E0
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H52208
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H52E30
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H53A58
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H54680
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H552A8
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H55ED0
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H56AF8
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H57720
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H58348
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H58F70
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H59B98
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H5A7C0
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H5B3E8
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H5C010
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H5CC38
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H5D860
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                    Writer.Position = &H5E488
+                    Writer.WriteHexString(Text_deletetravelersdata.Text)
+                End If
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Travelers data has been delete"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Les données des voyageurs ont été supprimés"
+                End If
+                TLSE_dialog.ShowDialog()
+            Catch ex As Exception
+                If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "Failed to delete travelers data"
+                ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                    TLSE_dialog.Text_TLSE_dialog.Text = "La suppression des données des voyageurs a échoué"
+                End If
+                TLSE_dialog.ShowDialog()
             End Try
         End If
     End Sub

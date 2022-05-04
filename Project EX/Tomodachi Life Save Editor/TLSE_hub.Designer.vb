@@ -595,7 +595,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.0.9"
+        Me.TLSE_version.Text = "Version EX-1.1.0"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1223,10 +1223,10 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
-        Me.Controls.Add(Me.TLSE_menu_miimanagement)
         Me.Controls.Add(Me.TLSE_menu)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
+        Me.Controls.Add(Me.TLSE_menu_miimanagement)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"

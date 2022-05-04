@@ -22,6 +22,7 @@ Partial Class TLSE_manag_travelers
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TLSE_manag_travelers))
         Me.TLSE_header = New System.Windows.Forms.Panel()
         Me.TLSE_filepath = New System.Windows.Forms.TextBox()
         Me.Select_language = New System.Windows.Forms.ComboBox()
@@ -766,6 +767,7 @@ Partial Class TLSE_manag_travelers
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_manag_travelers"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TLSE_manag_travelers"

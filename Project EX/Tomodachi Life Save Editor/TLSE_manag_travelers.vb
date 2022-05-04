@@ -394,206 +394,410 @@ Public Class TLSE_manag_travelers
         Settravelers()
         Try
             Dim ReadMiiData As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
-            If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
-                ReadMiiData.Position = Traveler_1
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+            If Filever_text.Text = "JP" Then
+                If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
+                    ReadMiiData.Position = Traveler_1
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
+                    ReadMiiData.Position = Traveler_2
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
+                    ReadMiiData.Position = Traveler_3
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
+                    ReadMiiData.Position = Traveler_4
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
+                    ReadMiiData.Position = Traveler_5
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
+                    ReadMiiData.Position = Traveler_6
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
+                    ReadMiiData.Position = Traveler_7
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
+                    ReadMiiData.Position = Traveler_8
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
+                    ReadMiiData.Position = Traveler_9
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
+                    ReadMiiData.Position = Traveler_10
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
+                    ReadMiiData.Position = Traveler_11
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
+                    ReadMiiData.Position = Traveler_12
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
+                    ReadMiiData.Position = Traveler_13
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
+                    ReadMiiData.Position = Traveler_14
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
+                    ReadMiiData.Position = Traveler_15
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
+                    ReadMiiData.Position = Traveler_16
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
+                    ReadMiiData.Position = Traveler_17
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
+                    ReadMiiData.Position = Traveler_18
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
+                    ReadMiiData.Position = Traveler_19
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
+                    ReadMiiData.Position = Traveler_20
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
+                    ReadMiiData.Position = Traveler_21
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
+                    ReadMiiData.Position = Traveler_22
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
+                    ReadMiiData.Position = Traveler_23
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
+                    ReadMiiData.Position = Traveler_24
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
+                    ReadMiiData.Position = Traveler_25
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
+                    ReadMiiData.Position = Traveler_26
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
+                    ReadMiiData.Position = Traveler_27
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
+                    ReadMiiData.Position = Traveler_28
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
+                    ReadMiiData.Position = Traveler_29
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
+                    ReadMiiData.Position = Traveler_30
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
+                    ReadMiiData.Position = Traveler_31
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
+                    ReadMiiData.Position = Traveler_32
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
+                    ReadMiiData.Position = Traveler_33
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
+                    ReadMiiData.Position = Traveler_34
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
+                    ReadMiiData.Position = Traveler_35
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
+                    ReadMiiData.Position = Traveler_36
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
+                    ReadMiiData.Position = Traveler_37
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
+                    ReadMiiData.Position = Traveler_38
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
+                    ReadMiiData.Position = Traveler_39
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
+                    ReadMiiData.Position = Traveler_40
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
+                    ReadMiiData.Position = Traveler_41
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
+                    ReadMiiData.Position = Traveler_42
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
+                    ReadMiiData.Position = Traveler_43
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
+                    ReadMiiData.Position = Traveler_44
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
+                    ReadMiiData.Position = Traveler_45
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
+                    ReadMiiData.Position = Traveler_46
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
+                    ReadMiiData.Position = Traveler_47
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
+                    ReadMiiData.Position = Traveler_48
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
+                    ReadMiiData.Position = Traveler_49
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
+                    ReadMiiData.Position = Traveler_50
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HB58)
+                End If
+            Else
+                If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
+                    ReadMiiData.Position = Traveler_1
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
+                    ReadMiiData.Position = Traveler_2
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
+                    ReadMiiData.Position = Traveler_3
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
+                    ReadMiiData.Position = Traveler_4
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
+                    ReadMiiData.Position = Traveler_5
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
+                    ReadMiiData.Position = Traveler_6
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
+                    ReadMiiData.Position = Traveler_7
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
+                    ReadMiiData.Position = Traveler_8
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
+                    ReadMiiData.Position = Traveler_9
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
+                    ReadMiiData.Position = Traveler_10
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
+                    ReadMiiData.Position = Traveler_11
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
+                    ReadMiiData.Position = Traveler_12
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
+                    ReadMiiData.Position = Traveler_13
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
+                    ReadMiiData.Position = Traveler_14
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
+                    ReadMiiData.Position = Traveler_15
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
+                    ReadMiiData.Position = Traveler_16
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
+                    ReadMiiData.Position = Traveler_17
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
+                    ReadMiiData.Position = Traveler_18
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
+                    ReadMiiData.Position = Traveler_19
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
+                    ReadMiiData.Position = Traveler_20
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
+                    ReadMiiData.Position = Traveler_21
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
+                    ReadMiiData.Position = Traveler_22
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
+                    ReadMiiData.Position = Traveler_23
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
+                    ReadMiiData.Position = Traveler_24
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
+                    ReadMiiData.Position = Traveler_25
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
+                    ReadMiiData.Position = Traveler_26
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
+                    ReadMiiData.Position = Traveler_27
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
+                    ReadMiiData.Position = Traveler_28
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
+                    ReadMiiData.Position = Traveler_29
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
+                    ReadMiiData.Position = Traveler_30
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
+                    ReadMiiData.Position = Traveler_31
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
+                    ReadMiiData.Position = Traveler_32
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
+                    ReadMiiData.Position = Traveler_33
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
+                    ReadMiiData.Position = Traveler_34
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
+                    ReadMiiData.Position = Traveler_35
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
+                    ReadMiiData.Position = Traveler_36
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
+                    ReadMiiData.Position = Traveler_37
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
+                    ReadMiiData.Position = Traveler_38
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
+                    ReadMiiData.Position = Traveler_39
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
+                    ReadMiiData.Position = Traveler_40
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
+                    ReadMiiData.Position = Traveler_41
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
+                    ReadMiiData.Position = Traveler_42
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
+                    ReadMiiData.Position = Traveler_43
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
+                    ReadMiiData.Position = Traveler_44
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
+                    ReadMiiData.Position = Traveler_45
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
+                    ReadMiiData.Position = Traveler_46
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
+                    ReadMiiData.Position = Traveler_47
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
+                    ReadMiiData.Position = Traveler_48
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
+                    ReadMiiData.Position = Traveler_49
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
+                If Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
+                    ReadMiiData.Position = Traveler_50
+                    Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
+                End If
             End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
-                ReadMiiData.Position = Traveler_2
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
-                ReadMiiData.Position = Traveler_3
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
-                ReadMiiData.Position = Traveler_4
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
-                ReadMiiData.Position = Traveler_5
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
-                ReadMiiData.Position = Traveler_6
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
-                ReadMiiData.Position = Traveler_7
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
-                ReadMiiData.Position = Traveler_8
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
-                ReadMiiData.Position = Traveler_9
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
-                ReadMiiData.Position = Traveler_10
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
-                ReadMiiData.Position = Traveler_11
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
-                ReadMiiData.Position = Traveler_12
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
-                ReadMiiData.Position = Traveler_13
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
-                ReadMiiData.Position = Traveler_14
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
-                ReadMiiData.Position = Traveler_15
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
-                ReadMiiData.Position = Traveler_16
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
-                ReadMiiData.Position = Traveler_17
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
-                ReadMiiData.Position = Traveler_18
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
-                ReadMiiData.Position = Traveler_19
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
-                ReadMiiData.Position = Traveler_20
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
-                ReadMiiData.Position = Traveler_21
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
-                ReadMiiData.Position = Traveler_22
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
-                ReadMiiData.Position = Traveler_23
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
-                ReadMiiData.Position = Traveler_24
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
-                ReadMiiData.Position = Traveler_25
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
-                ReadMiiData.Position = Traveler_26
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
-                ReadMiiData.Position = Traveler_27
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
-                ReadMiiData.Position = Traveler_28
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
-                ReadMiiData.Position = Traveler_29
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
-                ReadMiiData.Position = Traveler_30
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
-                ReadMiiData.Position = Traveler_31
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
-                ReadMiiData.Position = Traveler_32
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
-                ReadMiiData.Position = Traveler_33
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
-                ReadMiiData.Position = Traveler_34
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
-                ReadMiiData.Position = Traveler_35
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
-                ReadMiiData.Position = Traveler_36
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
-                ReadMiiData.Position = Traveler_37
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
-                ReadMiiData.Position = Traveler_38
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
-                ReadMiiData.Position = Traveler_39
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
-                ReadMiiData.Position = Traveler_40
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
-                ReadMiiData.Position = Traveler_41
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
-                ReadMiiData.Position = Traveler_42
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
-                ReadMiiData.Position = Traveler_43
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
-                ReadMiiData.Position = Traveler_44
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
-                ReadMiiData.Position = Traveler_45
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
-                ReadMiiData.Position = Traveler_46
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
-                ReadMiiData.Position = Traveler_47
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
-                ReadMiiData.Position = Traveler_48
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
-                ReadMiiData.Position = Traveler_49
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
-            If Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
-                ReadMiiData.Position = Traveler_50
-                Text_extract_Mii.Text = ReadMiiData.ReadHexString(&HC28)
-            End If
+
         Catch ex As Exception
             TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read this Mii, retry or report this issue"
             TLSE_dialog.ShowDialog()
@@ -710,15 +914,28 @@ Public Class TLSE_manag_travelers
     Private Sub Text_extractmii_Click(sender As Object, e As EventArgs) Handles Text_extractmii.Click
         Try
             Dim SaveFileDialog1 As New SaveFileDialog
-            SaveFileDialog1.Filter = "Tomodachi Life Traveler|*.TLTRAVELER"
-            SaveFileDialog1.FileName = Select_mii.Text.Replace(":", "") & "_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
-            If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
-                Dim Writer1 As New System.IO.StreamWriter(SaveFileDialog1.FileName)
-                Writer1.Close()
-                Dim Writer As New PackageIO.Writer(SaveFileDialog1.FileName, PackageIO.Endian.Little)
-                Writer.WriteHexString(Text_extract_Mii.Text)
-                TLSE_dialog.Text_TLSE_dialog.Text = "This Traveler has been successfully extracted"
-                TLSE_dialog.ShowDialog()
+            If Filever_text.Text = "JP" Then
+                SaveFileDialog1.Filter = "Tomodachi Life JTraveler|*.TLJTRAVELER"
+                SaveFileDialog1.FileName = Select_mii.Text.Replace(":", "") & "_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
+                If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+                    Dim Writer1 As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                    Writer1.Close()
+                    Dim Writer As New PackageIO.Writer(SaveFileDialog1.FileName, PackageIO.Endian.Little)
+                    Writer.WriteHexString(Text_extract_Mii.Text)
+                    TLSE_dialog.Text_TLSE_dialog.Text = "This Traveler has been successfully extracted"
+                    TLSE_dialog.ShowDialog()
+                End If
+            Else
+                SaveFileDialog1.Filter = "Tomodachi Life Traveler|*.TLTRAVELER"
+                SaveFileDialog1.FileName = Select_mii.Text.Replace(":", "") & "_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
+                If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
+                    Dim Writer1 As New System.IO.StreamWriter(SaveFileDialog1.FileName)
+                    Writer1.Close()
+                    Dim Writer As New PackageIO.Writer(SaveFileDialog1.FileName, PackageIO.Endian.Little)
+                    Writer.WriteHexString(Text_extract_Mii.Text)
+                    TLSE_dialog.Text_TLSE_dialog.Text = "This Traveler has been successfully extracted"
+                    TLSE_dialog.ShowDialog()
+                End If
             End If
         Catch ex As Exception
             TLSE_dialog.Text_TLSE_dialog.Text = "Extraction of this Traveler has failed, retry or report this issue"
@@ -748,14 +965,22 @@ Public Class TLSE_manag_travelers
             TLSE_dialog.ShowDialog()
             Dim open As New OpenFileDialog
             If TLSE_dialog.DialogResult = DialogResult.OK Then
-                open.Filter = "Tomodachi Life traveler files|*.TLTRAVELER"
+                If Filever_text.Text = "JP" Then
+                    open.Filter = "Tomodachi Life jtraveler files|*.TLJTRAVELER"
+                Else
+                    open.Filter = "Tomodachi Life traveler files|*.TLTRAVELER"
+                End If
                 open.Title = "Open compatible files"
                 open.ShowDialog()
                 TLMII = open.FileName
                 ReadTLtraveler()
                 RestoreTraveler()
             ElseIf TLSE_dialog.DialogResult = DialogResult.Cancel Then
-                open.Filter = "Mii files|*.TLMII;*MIITOPIAMIIA"
+                If Filever_text.Text = "JP" Then
+                    open.Filter = "Mii files|*.TLMII;*MIITOPIAMIIA;*TLTRAVELER"
+                Else
+                    open.Filter = "Mii files|*.TLMII;*MIITOPIAMIIA;*TLJTRAVELER"
+                End If
                 open.Title = "Open compatible files"
                 open.ShowDialog()
                 TLMII = open.FileName
@@ -768,8 +993,13 @@ Public Class TLSE_manag_travelers
     Public Sub ReadTLtraveler()
         Try
             Dim ReadTLMii As New PackageIO.Reader(TLMII, PackageIO.Endian.Little)
-            ReadTLMii.Position = &H0
-            Text_restore_Mii.Text = ReadTLMii.ReadHexString(&HC28)
+            If Filever_text.Text = "JP" Then
+                ReadTLMii.Position = &H0
+                Text_restore_Mii.Text = ReadTLMii.ReadHexString(&HB58)
+            Else
+                ReadTLMii.Position = &H0
+                Text_restore_Mii.Text = ReadTLMii.ReadHexString(&HC28)
+            End If
         Catch ex As Exception
             TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read a Mii in this file"
             TLSE_dialog.ShowDialog()
@@ -795,202 +1025,552 @@ Public Class TLSE_manag_travelers
             If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
                 WriteMii.Position = Traveler_1
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_1 + &HB50)
+                    WriteMii.WriteHexString(&H1)
+                Else
+                    WriteMii.Position = (Traveler_1 + &HC20)
+                    WriteMii.WriteHexString(&H1)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
                 WriteMii.Position = Traveler_2
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_2 + &HB50)
+                    WriteMii.WriteHexString(&H2)
+                Else
+                    WriteMii.Position = (Traveler_2 + &HC20)
+                    WriteMii.WriteHexString(&H2)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
                 WriteMii.Position = Traveler_3
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_3 + &HB50)
+                    WriteMii.WriteHexString(&H3)
+                Else
+                    WriteMii.Position = (Traveler_3 + &HC20)
+                    WriteMii.WriteHexString(&H3)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
                 WriteMii.Position = Traveler_4
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_4 + &HB50)
+                    WriteMii.WriteHexString(&H4)
+                Else
+                    WriteMii.Position = (Traveler_4 + &HC20)
+                    WriteMii.WriteHexString(&H4)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
                 WriteMii.Position = Traveler_5
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_5 + &HB50)
+                    WriteMii.WriteHexString(&H5)
+                Else
+                    WriteMii.Position = (Traveler_5 + &HC20)
+                    WriteMii.WriteHexString(&H5)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
                 WriteMii.Position = Traveler_6
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_6 + &HB50)
+                    WriteMii.WriteHexString(&H6)
+                Else
+                    WriteMii.Position = (Traveler_6 + &HC20)
+                    WriteMii.WriteHexString(&H6)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
                 WriteMii.Position = Traveler_7
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_7 + &HB50)
+                    WriteMii.WriteHexString(&H7)
+                Else
+                    WriteMii.Position = (Traveler_7 + &HC20)
+                    WriteMii.WriteHexString(&H7)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
                 WriteMii.Position = Traveler_8
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_8 + &HB50)
+                    WriteMii.WriteHexString(&H8)
+                Else
+                    WriteMii.Position = (Traveler_8 + &HC20)
+                    WriteMii.WriteHexString(&H8)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
                 WriteMii.Position = Traveler_9
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_9 + &HB50)
+                    WriteMii.WriteHexString(&H9)
+                Else
+                    WriteMii.Position = (Traveler_9 + &HC20)
+                    WriteMii.WriteHexString(&H9)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
                 WriteMii.Position = Traveler_10
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_10 + &HB50)
+                    WriteMii.WriteHexString(&HA)
+                Else
+                    WriteMii.Position = (Traveler_10 + &HC20)
+                    WriteMii.WriteHexString(&HA)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
                 WriteMii.Position = Traveler_11
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_11 + &HB50)
+                    WriteMii.WriteHexString(&HB)
+                Else
+                    WriteMii.Position = (Traveler_11 + &HC20)
+                    WriteMii.WriteHexString(&HB)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
                 WriteMii.Position = Traveler_12
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_12 + &HB50)
+                    WriteMii.WriteHexString(&HC)
+                Else
+                    WriteMii.Position = (Traveler_12 + &HC20)
+                    WriteMii.WriteHexString(&HC)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
                 WriteMii.Position = Traveler_13
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_13 + &HB50)
+                    WriteMii.WriteHexString(&HD)
+                Else
+                    WriteMii.Position = (Traveler_13 + &HC20)
+                    WriteMii.WriteHexString(&HD)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
                 WriteMii.Position = Traveler_14
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_14 + &HB50)
+                    WriteMii.WriteHexString(&HE)
+                Else
+                    WriteMii.Position = (Traveler_14 + &HC20)
+                    WriteMii.WriteHexString(&HE)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
                 WriteMii.Position = Traveler_15
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_15 + &HB50)
+                    WriteMii.WriteHexString(&HF)
+                Else
+                    WriteMii.Position = (Traveler_15 + &HC20)
+                    WriteMii.WriteHexString(&HF)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
                 WriteMii.Position = Traveler_16
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_16 + &HB50)
+                    WriteMii.WriteHexString(&H10)
+                Else
+                    WriteMii.Position = (Traveler_16 + &HC20)
+                    WriteMii.WriteHexString(&H10)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
                 WriteMii.Position = Traveler_17
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_17 + &HB50)
+                    WriteMii.WriteHexString(&H11)
+                Else
+                    WriteMii.Position = (Traveler_17 + &HC20)
+                    WriteMii.WriteHexString(&H11)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
                 WriteMii.Position = Traveler_18
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_18 + &HB50)
+                    WriteMii.WriteHexString(&H12)
+                Else
+                    WriteMii.Position = (Traveler_18 + &HC20)
+                    WriteMii.WriteHexString(&H12)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
                 WriteMii.Position = Traveler_19
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_19 + &HB50)
+                    WriteMii.WriteHexString(&H13)
+                Else
+                    WriteMii.Position = (Traveler_19 + &HC20)
+                    WriteMii.WriteHexString(&H13)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
                 WriteMii.Position = Traveler_20
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_20 + &HB50)
+                    WriteMii.WriteHexString(&H14)
+                Else
+                    WriteMii.Position = (Traveler_20 + &HC20)
+                    WriteMii.WriteHexString(&H14)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
                 WriteMii.Position = Traveler_21
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_21 + &HB50)
+                    WriteMii.WriteHexString(&H15)
+                Else
+                    WriteMii.Position = (Traveler_21 + &HC20)
+                    WriteMii.WriteHexString(&H15)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
                 WriteMii.Position = Traveler_22
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_22 + &HB50)
+                    WriteMii.WriteHexString(&H16)
+                Else
+                    WriteMii.Position = (Traveler_22 + &HC20)
+                    WriteMii.WriteHexString(&H16)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
                 WriteMii.Position = Traveler_23
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_23 + &HB50)
+                    WriteMii.WriteHexString(&H17)
+                Else
+                    WriteMii.Position = (Traveler_23 + &HC20)
+                    WriteMii.WriteHexString(&H17)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
                 WriteMii.Position = Traveler_24
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_24 + &HB50)
+                    WriteMii.WriteHexString(&H18)
+                Else
+                    WriteMii.Position = (Traveler_24 + &HC20)
+                    WriteMii.WriteHexString(&H18)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
                 WriteMii.Position = Traveler_25
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_25 + &HB50)
+                    WriteMii.WriteHexString(&H19)
+                Else
+                    WriteMii.Position = (Traveler_25 + &HC20)
+                    WriteMii.WriteHexString(&H19)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
                 WriteMii.Position = Traveler_26
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_26 + &HB50)
+                    WriteMii.WriteHexString(&H1A)
+                Else
+                    WriteMii.Position = (Traveler_26 + &HC20)
+                    WriteMii.WriteHexString(&H1A)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
                 WriteMii.Position = Traveler_27
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_27 + &HB50)
+                    WriteMii.WriteHexString(&H1B)
+                Else
+                    WriteMii.Position = (Traveler_27 + &HC20)
+                    WriteMii.WriteHexString(&H1B)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
                 WriteMii.Position = Traveler_28
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_28 + &HB50)
+                    WriteMii.WriteHexString(&H1C)
+                Else
+                    WriteMii.Position = (Traveler_28 + &HC20)
+                    WriteMii.WriteHexString(&H1C)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
                 WriteMii.Position = Traveler_29
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_29 + &HB50)
+                    WriteMii.WriteHexString(&H1D)
+                Else
+                    WriteMii.Position = (Traveler_29 + &HC20)
+                    WriteMii.WriteHexString(&H1D)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
                 WriteMii.Position = Traveler_30
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_30 + &HB50)
+                    WriteMii.WriteHexString(&H1E)
+                Else
+                    WriteMii.Position = (Traveler_30 + &HC20)
+                    WriteMii.WriteHexString(&H1E)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
                 WriteMii.Position = Traveler_31
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_31 + &HB50)
+                    WriteMii.WriteHexString(&H1F)
+                Else
+                    WriteMii.Position = (Traveler_31 + &HC20)
+                    WriteMii.WriteHexString(&H1F)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
                 WriteMii.Position = Traveler_32
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_32 + &HB50)
+                    WriteMii.WriteHexString(&H20)
+                Else
+                    WriteMii.Position = (Traveler_32 + &HC20)
+                    WriteMii.WriteHexString(&H20)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
                 WriteMii.Position = Traveler_33
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_33 + &HB50)
+                    WriteMii.WriteHexString(&H21)
+                Else
+                    WriteMii.Position = (Traveler_33 + &HC20)
+                    WriteMii.WriteHexString(&H21)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
                 WriteMii.Position = Traveler_34
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_34 + &HB50)
+                    WriteMii.WriteHexString(&H22)
+                Else
+                    WriteMii.Position = (Traveler_34 + &HC20)
+                    WriteMii.WriteHexString(&H22)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
                 WriteMii.Position = Traveler_35
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_35 + &HB50)
+                    WriteMii.WriteHexString(&H23)
+                Else
+                    WriteMii.Position = (Traveler_35 + &HC20)
+                    WriteMii.WriteHexString(&H23)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
                 WriteMii.Position = Traveler_36
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_36 + &HB50)
+                    WriteMii.WriteHexString(&H24)
+                Else
+                    WriteMii.Position = (Traveler_36 + &HC20)
+                    WriteMii.WriteHexString(&H24)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
                 WriteMii.Position = Traveler_37
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_37 + &HB50)
+                    WriteMii.WriteHexString(&H25)
+                Else
+                    WriteMii.Position = (Traveler_37 + &HC20)
+                    WriteMii.WriteHexString(&H25)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
                 WriteMii.Position = Traveler_38
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_38 + &HB50)
+                    WriteMii.WriteHexString(&H26)
+                Else
+                    WriteMii.Position = (Traveler_38 + &HC20)
+                    WriteMii.WriteHexString(&H26)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
                 WriteMii.Position = Traveler_39
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_39 + &HB50)
+                    WriteMii.WriteHexString(&H27)
+                Else
+                    WriteMii.Position = (Traveler_39 + &HC20)
+                    WriteMii.WriteHexString(&H27)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
                 WriteMii.Position = Traveler_40
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_40 + &HB50)
+                    WriteMii.WriteHexString(&H28)
+                Else
+                    WriteMii.Position = (Traveler_40 + &HC20)
+                    WriteMii.WriteHexString(&H28)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
                 WriteMii.Position = Traveler_41
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_41 + &HB50)
+                    WriteMii.WriteHexString(&H29)
+                Else
+                    WriteMii.Position = (Traveler_41 + &HC20)
+                    WriteMii.WriteHexString(&H29)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
                 WriteMii.Position = Traveler_42
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_42 + &HB50)
+                    WriteMii.WriteHexString(&H2A)
+                Else
+                    WriteMii.Position = (Traveler_42 + &HC20)
+                    WriteMii.WriteHexString(&H2A)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
                 WriteMii.Position = Traveler_43
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_43 + &HB50)
+                    WriteMii.WriteHexString(&H2B)
+                Else
+                    WriteMii.Position = (Traveler_43 + &HC20)
+                    WriteMii.WriteHexString(&H2B)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
                 WriteMii.Position = Traveler_44
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_44 + &HB50)
+                    WriteMii.WriteHexString(&H2C)
+                Else
+                    WriteMii.Position = (Traveler_44 + &HC20)
+                    WriteMii.WriteHexString(&H2C)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
                 WriteMii.Position = Traveler_45
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_45 + &HB50)
+                    WriteMii.WriteHexString(&H2D)
+                Else
+                    WriteMii.Position = (Traveler_45 + &HC20)
+                    WriteMii.WriteHexString(&H2D)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
                 WriteMii.Position = Traveler_46
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_46 + &HB50)
+                    WriteMii.WriteHexString(&H2E)
+                Else
+                    WriteMii.Position = (Traveler_46 + &HC20)
+                    WriteMii.WriteHexString(&H2E)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
                 WriteMii.Position = Traveler_47
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_47 + &HB50)
+                    WriteMii.WriteHexString(&H2F)
+                Else
+                    WriteMii.Position = (Traveler_47 + &HC20)
+                    WriteMii.WriteHexString(&H2F)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
                 WriteMii.Position = Traveler_48
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_48 + &HB50)
+                    WriteMii.WriteHexString(&H30)
+                Else
+                    WriteMii.Position = (Traveler_48 + &HC20)
+                    WriteMii.WriteHexString(&H30)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
                 WriteMii.Position = Traveler_49
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_49 + &HB50)
+                    WriteMii.WriteHexString(&H31)
+                Else
+                    WriteMii.Position = (Traveler_49 + &HC20)
+                    WriteMii.WriteHexString(&H31)
+                End If
             End If
             If Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
                 WriteMii.Position = Traveler_50
                 WriteMii.WriteHexString(Text_restore_Mii.Text)
+                If Filever_text.Text = "JP" Then
+                    WriteMii.Position = (Traveler_50 + &HB50)
+                    WriteMii.WriteHexString(&H32)
+                Else
+                    WriteMii.Position = (Traveler_50 + &HC20)
+                    WriteMii.WriteHexString(&H32)
+                End If
             End If
             TLSE_dialog.Text_TLSE_dialog.Text = "This Traveler has been successfully replace"
             TLSE_dialog.ShowDialog()
