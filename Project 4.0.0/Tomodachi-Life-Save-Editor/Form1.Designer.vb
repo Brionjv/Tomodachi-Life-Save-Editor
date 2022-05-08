@@ -412,6 +412,7 @@ Partial Class TL_SaveEditor
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TabControl_Mii = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.PictureBox39 = New System.Windows.Forms.PictureBox()
         Me.PictureBox38 = New System.Windows.Forms.PictureBox()
         Me.PictureBox37 = New System.Windows.Forms.PictureBox()
@@ -966,6 +967,7 @@ Partial Class TL_SaveEditor
         Me.Select_target1_foodUS = New System.Windows.Forms.ComboBox()
         Me.Select_target1_foodEU = New System.Windows.Forms.ComboBox()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.AdvH_setallrelation = New System.Windows.Forms.PictureBox()
         Me.Panel28 = New System.Windows.Forms.Panel()
         Me.Select_setallrelation = New System.Windows.Forms.ComboBox()
@@ -1802,8 +1804,6 @@ Partial Class TL_SaveEditor
         Me.Icon_crthall_music = New System.Windows.Forms.PictureBox()
         Me.Timer_arrowexp_right = New System.Windows.Forms.Timer(Me.components)
         Me.Timer_arrowexp_left = New System.Windows.Forms.Timer(Me.components)
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit
         Me.TLSE_header.SuspendLayout
@@ -2774,8 +2774,7 @@ Partial Class TL_SaveEditor
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(239, 39)
         Me.Label12.TabIndex = 268
-        Me.Label12.Text = "Final version is EX-version. To save friend list features use EX-versions include" &
-    "d"
+        Me.Label12.Text = "Final version is EX-version. To use features locked use EX_version"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel_menubar
@@ -3177,6 +3176,7 @@ Partial Class TL_SaveEditor
         Me.Menu_extras.Controls.Add(Me.AdvH_extras)
         Me.Menu_extras.Controls.Add(Me.Menu_text_extras)
         Me.Menu_extras.Controls.Add(Me.Menu_icon_extras)
+        Me.Menu_extras.Enabled = False
         Me.Menu_extras.Location = New System.Drawing.Point(0, 122)
         Me.Menu_extras.Name = "Menu_extras"
         Me.Menu_extras.Size = New System.Drawing.Size(150, 34)
@@ -3225,6 +3225,7 @@ Partial Class TL_SaveEditor
         Me.Menu_itemsedit.Controls.Add(Me.AdvH_itemsedit)
         Me.Menu_itemsedit.Controls.Add(Me.Menu_text_itemsedit)
         Me.Menu_itemsedit.Controls.Add(Me.Menu_icon_itemsedit)
+        Me.Menu_itemsedit.Enabled = False
         Me.Menu_itemsedit.Location = New System.Drawing.Point(0, 82)
         Me.Menu_itemsedit.Name = "Menu_itemsedit"
         Me.Menu_itemsedit.Size = New System.Drawing.Size(150, 34)
@@ -3631,6 +3632,7 @@ Partial Class TL_SaveEditor
         Me.Menu_concertedit.Controls.Add(Me.PictureBox4)
         Me.Menu_concertedit.Controls.Add(Me.Menu_text_concertedit)
         Me.Menu_concertedit.Controls.Add(Me.Menu_icon_concertedit)
+        Me.Menu_concertedit.Enabled = False
         Me.Menu_concertedit.Location = New System.Drawing.Point(0, 203)
         Me.Menu_concertedit.Name = "Menu_concertedit"
         Me.Menu_concertedit.Size = New System.Drawing.Size(150, 34)
@@ -5845,7 +5847,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.2"
+        Me.Text_TLSE_version.Text = "Version 4.0.3"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7459,6 +7461,18 @@ Partial Class TL_SaveEditor
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.ToolTipText = "Mii face and body"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'Label18
+        '
+        Me.Label18.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Label18.ForeColor = System.Drawing.Color.Red
+        Me.Label18.Location = New System.Drawing.Point(6, 4)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(338, 87)
+        Me.Label18.TabIndex = 312
+        Me.Label18.Text = "Binary features unactivated, can corrupted save file if crc is not fixed correctl" &
+    "y" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(need to be transfert to a special section to fix save error [in some case])"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox39
         '
@@ -14921,6 +14935,17 @@ Partial Class TL_SaveEditor
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.ToolTipText = "Mii friend list"
         Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'Label17
+        '
+        Me.Label17.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Label17.ForeColor = System.Drawing.Color.Red
+        Me.Label17.Location = New System.Drawing.Point(4, 3)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(338, 19)
+        Me.Label17.TabIndex = 269
+        Me.Label17.Text = "Section unactivated, use EX-version included"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'AdvH_setallrelation
         '
@@ -24977,29 +25002,6 @@ Partial Class TL_SaveEditor
         'Timer_arrowexp_left
         '
         Me.Timer_arrowexp_left.Interval = 20
-        '
-        'Label17
-        '
-        Me.Label17.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label17.ForeColor = System.Drawing.Color.Red
-        Me.Label17.Location = New System.Drawing.Point(4, 3)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(338, 19)
-        Me.Label17.TabIndex = 269
-        Me.Label17.Text = "Section unactivated, use EX-version included"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label18
-        '
-        Me.Label18.Cursor = System.Windows.Forms.Cursors.Arrow
-        Me.Label18.ForeColor = System.Drawing.Color.Red
-        Me.Label18.Location = New System.Drawing.Point(6, 4)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(338, 87)
-        Me.Label18.TabIndex = 312
-        Me.Label18.Text = "Binary features unactivated, can corrupted save file if crc is not fixed correctl" &
-    "y" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(need to be transfert to a special section to fix save error [in some case])"
-        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TL_SaveEditor
         '
