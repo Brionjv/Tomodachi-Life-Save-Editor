@@ -180,6 +180,12 @@
     <Compile Include="TLSE_settings.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_travelers_status.Designer.vb">
+      <DependentUpon>TLSE_travelers_status.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_travelers_status.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="TLSE_concertedit.resx">
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_settings.resx">
       <DependentUpon>TLSE_settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_travelers_status.resx">
+      <DependentUpon>TLSE_travelers_status.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -314,6 +323,115 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_tent.png" />
+    <None Include="Resources\expt99.png" />
+    <None Include="Resources\expt98.png" />
+    <None Include="Resources\expt97.png" />
+    <None Include="Resources\expt96.png" />
+    <None Include="Resources\expt95.png" />
+    <None Include="Resources\expt94.png" />
+    <None Include="Resources\expt93.png" />
+    <None Include="Resources\expt92.png" />
+    <None Include="Resources\expt91.png" />
+    <None Include="Resources\expt90.png" />
+    <None Include="Resources\expt89.png" />
+    <None Include="Resources\expt88.png" />
+    <None Include="Resources\expt87.png" />
+    <None Include="Resources\expt86.png" />
+    <None Include="Resources\expt85.png" />
+    <None Include="Resources\expt84.png" />
+    <None Include="Resources\expt83.png" />
+    <None Include="Resources\expt82.png" />
+    <None Include="Resources\expt81.png" />
+    <None Include="Resources\expt80.png" />
+    <None Include="Resources\expt79.png" />
+    <None Include="Resources\expt78.png" />
+    <None Include="Resources\expt77.png" />
+    <None Include="Resources\expt76.png" />
+    <None Include="Resources\expt75.png" />
+    <None Include="Resources\expt74.png" />
+    <None Include="Resources\expt73.png" />
+    <None Include="Resources\expt72.png" />
+    <None Include="Resources\expt71.png" />
+    <None Include="Resources\expt70.png" />
+    <None Include="Resources\expt69.png" />
+    <None Include="Resources\expt68.png" />
+    <None Include="Resources\expt67.png" />
+    <None Include="Resources\expt66.png" />
+    <None Include="Resources\expt65.png" />
+    <None Include="Resources\expt64.png" />
+    <None Include="Resources\expt63.png" />
+    <None Include="Resources\expt62.png" />
+    <None Include="Resources\expt61.png" />
+    <None Include="Resources\expt60.png" />
+    <None Include="Resources\expt59.png" />
+    <None Include="Resources\expt58.png" />
+    <None Include="Resources\expt57.png" />
+    <None Include="Resources\expt56.png" />
+    <None Include="Resources\expt55.png" />
+    <None Include="Resources\expt54.png" />
+    <None Include="Resources\expt53.png" />
+    <None Include="Resources\expt52.png" />
+    <None Include="Resources\expt51.png" />
+    <None Include="Resources\expt50.png" />
+    <None Include="Resources\expt49.png" />
+    <None Include="Resources\expt48.png" />
+    <None Include="Resources\expt47.png" />
+    <None Include="Resources\expt46.png" />
+    <None Include="Resources\expt45.png" />
+    <None Include="Resources\expt44.png" />
+    <None Include="Resources\expt43.png" />
+    <None Include="Resources\expt42.png" />
+    <None Include="Resources\expt41.png" />
+    <None Include="Resources\expt40.png" />
+    <None Include="Resources\expt39.png" />
+    <None Include="Resources\expt38.png" />
+    <None Include="Resources\expt37.png" />
+    <None Include="Resources\expt36.png" />
+    <None Include="Resources\expt35.png" />
+    <None Include="Resources\expt34.png" />
+    <None Include="Resources\expt33.png" />
+    <None Include="Resources\expt32.png" />
+    <None Include="Resources\expt31.png" />
+    <None Include="Resources\expt30.png" />
+    <None Include="Resources\expt29.png" />
+    <None Include="Resources\expt28.png" />
+    <None Include="Resources\expt27.png" />
+    <None Include="Resources\expt26.png" />
+    <None Include="Resources\expt25.png" />
+    <None Include="Resources\expt24.png" />
+    <None Include="Resources\expt23.png" />
+    <None Include="Resources\expt22.png" />
+    <None Include="Resources\expt21.png" />
+    <None Include="Resources\expt20.png" />
+    <None Include="Resources\expt19.png" />
+    <None Include="Resources\expt18.png" />
+    <None Include="Resources\expt17.png" />
+    <None Include="Resources\expt16.png" />
+    <None Include="Resources\expt15.png" />
+    <None Include="Resources\expt14.png" />
+    <None Include="Resources\expt13.png" />
+    <None Include="Resources\expt12.png" />
+    <None Include="Resources\expt11.png" />
+    <None Include="Resources\expt10.png" />
+    <None Include="Resources\expt9.png" />
+    <None Include="Resources\expt8.png" />
+    <None Include="Resources\expt7.png" />
+    <None Include="Resources\expt6.png" />
+    <None Include="Resources\expt5.png" />
+    <None Include="Resources\expt4.png" />
+    <None Include="Resources\expt3.png" />
+    <None Include="Resources\expt2.png" />
+    <None Include="Resources\expt1.png" />
+    <None Include="Resources\expt0.png" />
+    <None Include="Resources\bbl_travelers_status_act.png" />
+    <None Include="Resources\bbl_travelers_status.png" />
+    <None Include="Resources\bbl_travelers_interaction_act.png" />
+    <None Include="Resources\bbl_travelers_interaction.png" />
+    <None Include="Resources\icon_menu_travelerstent.png" />
+    <None Include="Resources\tab_travelersedit_base.png" />
+    <None Include="Resources\tab_travelersedit.png" />
+    <None Include="Resources\bg_travelers.png" />
     <None Include="Resources\bbl_manag_travelers_act.png" />
     <None Include="Resources\bbl_manag_travelers.png" />
     <None Include="Resources\Time_travel.gif" />

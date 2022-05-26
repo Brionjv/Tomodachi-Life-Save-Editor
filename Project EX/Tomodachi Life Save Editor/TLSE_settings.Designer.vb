@@ -819,9 +819,8 @@ Partial Class TLSE_settings
         Me.Text_changelog.Name = "Text_changelog"
         Me.Text_changelog.Size = New System.Drawing.Size(806, 591)
         Me.Text_changelog.TabIndex = 0
-        Me.Text_changelog.Text = "Version EX-1.0.0" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "---------------------------------------------------" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Tomoda" &
-    "chi Life Save Editor has been rewrite to fix errors in Mii edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Mii edition" &
-    " features will be separated)"
+        Me.Text_changelog.Text = "Version 5.0.0" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "---------------------------------------------------" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Tomodachi" &
+    " Life Save Editor has been rewrite to fix errors"
         Me.Text_changelog.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits

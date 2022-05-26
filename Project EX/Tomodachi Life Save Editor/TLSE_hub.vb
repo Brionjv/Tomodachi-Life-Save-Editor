@@ -208,7 +208,8 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_travelersedit_Click(sender As Object, e As EventArgs) Handles Text_menu_travelersedit.Click
-
+        Hidemenu()
+        TLSE_menu_travelersedit.Visible = True
     End Sub
 
     Private Sub Text_menu_travelersedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_travelersedit.MouseMove
@@ -306,6 +307,19 @@ Public Class TLSE_hub
         Icon_menu_miimanagement.Image = My.Resources.icon_menu_off
     End Sub
 
+    Private Sub Icon_menu_travelersedit_Click(sender As Object, e As EventArgs) Handles Icon_menu_travelersedit.Click
+        Hidemenu()
+        TLSE_menu.Visible = True
+    End Sub
+
+    Private Sub Icon_menu_travelersedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_menu_travelersedit.MouseMove
+        Icon_menu_travelersedit.Image = My.Resources.icon_menu_on
+    End Sub
+
+    Private Sub Icon_menu_travelersedit_MouseLeave(sender As Object, e As EventArgs) Handles Icon_menu_travelersedit.MouseLeave
+        Icon_menu_travelersedit.Image = My.Resources.icon_menu_off
+    End Sub
+
     Private Sub Text_menu_allmiis_Click(sender As Object, e As EventArgs) Handles Text_menu_allmiis.Click
         If TLSE_logo_update.Visible = True Then
             TLSE_manag_allmiis.TLSE_logo_update.Visible = True
@@ -361,7 +375,6 @@ Public Class TLSE_hub
         TLSE_manag_travelers.Show()
         Me.Close()
     End Sub
-
     Private Sub Text_menu_travelers_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_travelers.MouseMove
         Menu_travelers.BackgroundImage = My.Resources.bbl_manag_travelers_act
     End Sub
@@ -370,11 +383,27 @@ Public Class TLSE_hub
         Menu_travelers.BackgroundImage = My.Resources.bbl_manag_travelers
     End Sub
 
+    Private Sub Text_menu_travelersstatus_Click(sender As Object, e As EventArgs) Handles Text_menu_travelersstatus.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_travelers_status.TLSE_logo_update.Visible = True
+        End If
+        TLSE_travelers_status.Show()
+        Me.Close()
+    End Sub
+    Private Sub Text_menu_travelersstatus_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_travelersstatus.MouseMove
+        Menu_travelersstatus.BackgroundImage = My.Resources.bbl_travelers_status_act
+    End Sub
+
+    Private Sub Text_menu_travelersstatus_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_travelersstatus.MouseLeave
+        Menu_travelersstatus.BackgroundImage = My.Resources.bbl_travelers_status
+    End Sub
+
     Public Sub Hidemenu()
         TLSE_menu.Visible = False
         TLSE_menu_Miiedition.Visible = False
         TLSE_menu_Itemsedition.Visible = False
         TLSE_menu_miimanagement.Visible = False
+        TLSE_menu_travelersedit.Visible = False
     End Sub
 
     Private Sub TLSE_hub_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -571,4 +600,5 @@ Public Class TLSE_hub
     Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
         Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
     End Sub
+
 End Class

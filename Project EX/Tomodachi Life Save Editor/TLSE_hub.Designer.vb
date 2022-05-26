@@ -118,6 +118,17 @@ Partial Class TLSE_hub
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Menuflow_text_miimanagement = New System.Windows.Forms.Label()
+        Me.TLSE_menu_travelersedit = New System.Windows.Forms.Panel()
+        Me.Menu_travelersinteraction = New System.Windows.Forms.Panel()
+        Me.Text_menu_travelersinteraction = New System.Windows.Forms.Label()
+        Me.Menu_travelersstatus = New System.Windows.Forms.Panel()
+        Me.Text_menu_travelersstatus = New System.Windows.Forms.Label()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.FlowLayoutPanel3 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Icon_menu_travelersedit = New System.Windows.Forms.PictureBox()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Menuflow_text_travelersedit = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu.SuspendLayout()
@@ -174,6 +185,13 @@ Partial Class TLSE_hub
         Me.FlowLayoutPanel2.SuspendLayout()
         CType(Me.Icon_menu_miimanagement, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel10.SuspendLayout()
+        Me.TLSE_menu_travelersedit.SuspendLayout()
+        Me.Menu_travelersinteraction.SuspendLayout()
+        Me.Menu_travelersstatus.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.FlowLayoutPanel3.SuspendLayout()
+        CType(Me.Icon_menu_travelersedit, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel12.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -229,7 +247,7 @@ Partial Class TLSE_hub
         'Icon_islandmenu
         '
         Me.Icon_islandmenu.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_islandmenu
-        Me.Icon_islandmenu.Location = New System.Drawing.Point(498, 168)
+        Me.Icon_islandmenu.Location = New System.Drawing.Point(537, 168)
         Me.Icon_islandmenu.Name = "Icon_islandmenu"
         Me.Icon_islandmenu.Size = New System.Drawing.Size(113, 40)
         Me.Icon_islandmenu.TabIndex = 14
@@ -238,7 +256,7 @@ Partial Class TLSE_hub
         'Icon_tlsemenu
         '
         Me.Icon_tlsemenu.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_tlsemenu
-        Me.Icon_tlsemenu.Location = New System.Drawing.Point(356, 517)
+        Me.Icon_tlsemenu.Location = New System.Drawing.Point(355, 521)
         Me.Icon_tlsemenu.Name = "Icon_tlsemenu"
         Me.Icon_tlsemenu.Size = New System.Drawing.Size(80, 80)
         Me.Icon_tlsemenu.TabIndex = 13
@@ -248,7 +266,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_settings.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_settings
         Me.Menu_settings.Controls.Add(Me.Text_menu_settings)
-        Me.Menu_settings.Location = New System.Drawing.Point(488, 496)
+        Me.Menu_settings.Location = New System.Drawing.Point(439, 497)
         Me.Menu_settings.Name = "Menu_settings"
         Me.Menu_settings.Size = New System.Drawing.Size(232, 129)
         Me.Menu_settings.TabIndex = 12
@@ -268,7 +286,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_manual.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_manual
         Me.Menu_manual.Controls.Add(Me.Text_menu_manual)
-        Me.Menu_manual.Location = New System.Drawing.Point(81, 496)
+        Me.Menu_manual.Location = New System.Drawing.Point(119, 497)
         Me.Menu_manual.Name = "Menu_manual"
         Me.Menu_manual.Size = New System.Drawing.Size(232, 129)
         Me.Menu_manual.TabIndex = 11
@@ -288,7 +306,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_repairsave.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_repairsave
         Me.Menu_repairsave.Controls.Add(Me.Text_menu_repairsave)
-        Me.Menu_repairsave.Location = New System.Drawing.Point(370, 372)
+        Me.Menu_repairsave.Location = New System.Drawing.Point(364, 373)
         Me.Menu_repairsave.Name = "Menu_repairsave"
         Me.Menu_repairsave.Size = New System.Drawing.Size(199, 122)
         Me.Menu_repairsave.TabIndex = 10
@@ -308,7 +326,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_itemsedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_itemsedit
         Me.Menu_itemsedit.Controls.Add(Me.Text_menu_itemsedit)
-        Me.Menu_itemsedit.Location = New System.Drawing.Point(439, 238)
+        Me.Menu_itemsedit.Location = New System.Drawing.Point(441, 225)
         Me.Menu_itemsedit.Name = "Menu_itemsedit"
         Me.Menu_itemsedit.Size = New System.Drawing.Size(232, 129)
         Me.Menu_itemsedit.TabIndex = 9
@@ -328,7 +346,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_concertedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_concertedit
         Me.Menu_concertedit.Controls.Add(Me.Text_menu_concertedit)
-        Me.Menu_concertedit.Location = New System.Drawing.Point(673, 170)
+        Me.Menu_concertedit.Location = New System.Drawing.Point(676, 158)
         Me.Menu_concertedit.Name = "Menu_concertedit"
         Me.Menu_concertedit.Size = New System.Drawing.Size(122, 199)
         Me.Menu_concertedit.TabIndex = 8
@@ -348,7 +366,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_islandedit
         Me.Menu_islandedit.Controls.Add(Me.Text_menu_islandedit)
-        Me.Menu_islandedit.Location = New System.Drawing.Point(493, 39)
+        Me.Menu_islandedit.Location = New System.Drawing.Point(516, 27)
         Me.Menu_islandedit.Name = "Menu_islandedit"
         Me.Menu_islandedit.Size = New System.Drawing.Size(156, 126)
         Me.Menu_islandedit.TabIndex = 6
@@ -368,7 +386,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_extras
         Me.Menu_extras.Controls.Add(Me.Text_menu_extras)
-        Me.Menu_extras.Location = New System.Drawing.Point(361, 36)
+        Me.Menu_extras.Location = New System.Drawing.Point(389, 24)
         Me.Menu_extras.Name = "Menu_extras"
         Me.Menu_extras.Size = New System.Drawing.Size(122, 199)
         Me.Menu_extras.TabIndex = 5
@@ -388,7 +406,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_miimanagement.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miimanagement
         Me.Menu_miimanagement.Controls.Add(Me.Text_menu_miimanagement)
-        Me.Menu_miimanagement.Location = New System.Drawing.Point(148, 290)
+        Me.Menu_miimanagement.Location = New System.Drawing.Point(148, 289)
         Me.Menu_miimanagement.Name = "Menu_miimanagement"
         Me.Menu_miimanagement.Size = New System.Drawing.Size(199, 122)
         Me.Menu_miimanagement.TabIndex = 4
@@ -408,7 +426,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_miiedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miiedit
         Me.Menu_miiedit.Controls.Add(Me.Text_menu_miiedit)
-        Me.Menu_miiedit.Location = New System.Drawing.Point(215, 132)
+        Me.Menu_miiedit.Location = New System.Drawing.Point(214, 132)
         Me.Menu_miiedit.Name = "Menu_miiedit"
         Me.Menu_miiedit.Size = New System.Drawing.Size(126, 156)
         Me.Menu_miiedit.TabIndex = 3
@@ -435,7 +453,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_travelersedit
         '
-        Me.Text_menu_travelersedit.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_travelersedit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_travelersedit.ForeColor = System.Drawing.Color.White
         Me.Text_menu_travelersedit.Location = New System.Drawing.Point(9, 9)
         Me.Text_menu_travelersedit.Name = "Text_menu_travelersedit"
@@ -447,7 +465,7 @@ Partial Class TLSE_hub
         'Icon_miimenu
         '
         Me.Icon_miimenu.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_miimenu
-        Me.Icon_miimenu.Location = New System.Drawing.Point(142, 152)
+        Me.Icon_miimenu.Location = New System.Drawing.Point(146, 159)
         Me.Icon_miimenu.Name = "Icon_miimenu"
         Me.Icon_miimenu.Size = New System.Drawing.Size(62, 101)
         Me.Icon_miimenu.TabIndex = 1
@@ -595,7 +613,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.1.0"
+        Me.TLSE_version.Text = "Version EX-1.1.1"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1213,6 +1231,121 @@ Partial Class TLSE_hub
         Me.Menuflow_text_miimanagement.Text = "Mii management"
         Me.Menuflow_text_miimanagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'TLSE_menu_travelersedit
+        '
+        Me.TLSE_menu_travelersedit.BackColor = System.Drawing.Color.Transparent
+        Me.TLSE_menu_travelersedit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_travelersedit.Controls.Add(Me.Menu_travelersinteraction)
+        Me.TLSE_menu_travelersedit.Controls.Add(Me.Menu_travelersstatus)
+        Me.TLSE_menu_travelersedit.Controls.Add(Me.PictureBox2)
+        Me.TLSE_menu_travelersedit.Controls.Add(Me.FlowLayoutPanel3)
+        Me.TLSE_menu_travelersedit.Location = New System.Drawing.Point(12, 81)
+        Me.TLSE_menu_travelersedit.Name = "TLSE_menu_travelersedit"
+        Me.TLSE_menu_travelersedit.Size = New System.Drawing.Size(807, 632)
+        Me.TLSE_menu_travelersedit.TabIndex = 38
+        Me.TLSE_menu_travelersedit.Visible = False
+        '
+        'Menu_travelersinteraction
+        '
+        Me.Menu_travelersinteraction.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_travelers_interaction
+        Me.Menu_travelersinteraction.Controls.Add(Me.Text_menu_travelersinteraction)
+        Me.Menu_travelersinteraction.Location = New System.Drawing.Point(23, 158)
+        Me.Menu_travelersinteraction.Name = "Menu_travelersinteraction"
+        Me.Menu_travelersinteraction.Size = New System.Drawing.Size(129, 232)
+        Me.Menu_travelersinteraction.TabIndex = 11
+        '
+        'Text_menu_travelersinteraction
+        '
+        Me.Text_menu_travelersinteraction.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_travelersinteraction.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_travelersinteraction.Location = New System.Drawing.Point(9, 9)
+        Me.Text_menu_travelersinteraction.Name = "Text_menu_travelersinteraction"
+        Me.Text_menu_travelersinteraction.Size = New System.Drawing.Size(111, 214)
+        Me.Text_menu_travelersinteraction.TabIndex = 1
+        Me.Text_menu_travelersinteraction.Text = "Travelers interaction" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit travelers interaction in tents"
+        Me.Text_menu_travelersinteraction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_travelersstatus
+        '
+        Me.Menu_travelersstatus.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_travelers_status
+        Me.Menu_travelersstatus.Controls.Add(Me.Text_menu_travelersstatus)
+        Me.Menu_travelersstatus.Location = New System.Drawing.Point(153, 82)
+        Me.Menu_travelersstatus.Name = "Menu_travelersstatus"
+        Me.Menu_travelersstatus.Size = New System.Drawing.Size(156, 126)
+        Me.Menu_travelersstatus.TabIndex = 10
+        '
+        'Text_menu_travelersstatus
+        '
+        Me.Text_menu_travelersstatus.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_travelersstatus.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_travelersstatus.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_travelersstatus.Name = "Text_menu_travelersstatus"
+        Me.Text_menu_travelersstatus.Size = New System.Drawing.Size(138, 108)
+        Me.Text_menu_travelersstatus.TabIndex = 2
+        Me.Text_menu_travelersstatus.Text = "Travelers status" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit Travelers levels, tents, reuse trave" &
+    "lers..."
+        Me.Text_menu_travelersstatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_travelerstent
+        Me.PictureBox2.Location = New System.Drawing.Point(203, 233)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(56, 82)
+        Me.PictureBox2.TabIndex = 9
+        Me.PictureBox2.TabStop = False
+        '
+        'FlowLayoutPanel3
+        '
+        Me.FlowLayoutPanel3.AutoSize = True
+        Me.FlowLayoutPanel3.Controls.Add(Me.Icon_menu_travelersedit)
+        Me.FlowLayoutPanel3.Controls.Add(Me.Panel11)
+        Me.FlowLayoutPanel3.Controls.Add(Me.Panel12)
+        Me.FlowLayoutPanel3.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel3.Name = "FlowLayoutPanel3"
+        Me.FlowLayoutPanel3.Size = New System.Drawing.Size(807, 57)
+        Me.FlowLayoutPanel3.TabIndex = 2
+        '
+        'Icon_menu_travelersedit
+        '
+        Me.Icon_menu_travelersedit.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_menu_travelersedit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_menu_travelersedit.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_off
+        Me.Icon_menu_travelersedit.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_menu_travelersedit.Name = "Icon_menu_travelersedit"
+        Me.Icon_menu_travelersedit.Size = New System.Drawing.Size(61, 51)
+        Me.Icon_menu_travelersedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_menu_travelersedit.TabIndex = 42
+        Me.Icon_menu_travelersedit.TabStop = False
+        '
+        'Panel11
+        '
+        Me.Panel11.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_travelersedit_base
+        Me.Panel11.Location = New System.Drawing.Point(70, 3)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(45, 50)
+        Me.Panel11.TabIndex = 2
+        '
+        'Panel12
+        '
+        Me.Panel12.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_travelersedit
+        Me.Panel12.Controls.Add(Me.Menuflow_text_travelersedit)
+        Me.Panel12.Location = New System.Drawing.Point(121, 3)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(120, 50)
+        Me.Panel12.TabIndex = 3
+        '
+        'Menuflow_text_travelersedit
+        '
+        Me.Menuflow_text_travelersedit.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Menuflow_text_travelersedit.Location = New System.Drawing.Point(20, 0)
+        Me.Menuflow_text_travelersedit.Name = "Menuflow_text_travelersedit"
+        Me.Menuflow_text_travelersedit.Size = New System.Drawing.Size(80, 50)
+        Me.Menuflow_text_travelersedit.TabIndex = 0
+        Me.Menuflow_text_travelersedit.Text = "Travelers edition"
+        Me.Menuflow_text_travelersedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TLSE_hub
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1223,10 +1356,11 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
-        Me.Controls.Add(Me.TLSE_menu)
-        Me.Controls.Add(Me.TLSE_menu_Miiedition)
+        Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
+        Me.Controls.Add(Me.TLSE_menu)
+        Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"
@@ -1298,6 +1432,14 @@ Partial Class TLSE_hub
         Me.FlowLayoutPanel2.ResumeLayout(False)
         CType(Me.Icon_menu_miimanagement, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel10.ResumeLayout(False)
+        Me.TLSE_menu_travelersedit.ResumeLayout(False)
+        Me.TLSE_menu_travelersedit.PerformLayout()
+        Me.Menu_travelersinteraction.ResumeLayout(False)
+        Me.Menu_travelersstatus.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.FlowLayoutPanel3.ResumeLayout(False)
+        CType(Me.Icon_menu_travelersedit, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel12.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1395,4 +1537,15 @@ Partial Class TLSE_hub
     Friend WithEvents Text_menu_mii As Label
     Friend WithEvents Menu_travelers As Panel
     Friend WithEvents Text_menu_travelers As Label
+    Friend WithEvents TLSE_menu_travelersedit As Panel
+    Friend WithEvents Menu_travelersinteraction As Panel
+    Friend WithEvents Text_menu_travelersinteraction As Label
+    Friend WithEvents Menu_travelersstatus As Panel
+    Friend WithEvents Text_menu_travelersstatus As Label
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents FlowLayoutPanel3 As FlowLayoutPanel
+    Friend WithEvents Icon_menu_travelersedit As PictureBox
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents Menuflow_text_travelersedit As Label
 End Class
