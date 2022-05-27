@@ -22,6 +22,7 @@ Partial Class TLSE_travelers_status
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TLSE_travelers_status))
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Icon_menu = New System.Windows.Forms.PictureBox()
@@ -76,7 +77,6 @@ Partial Class TLSE_travelers_status
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Title_gratitude = New System.Windows.Forms.Label()
         Me.valu_level = New System.Windows.Forms.NumericUpDown()
-        Me.valu_happiness2 = New System.Windows.Forms.NumericUpDown()
         Me.Text_lastsavedate = New System.Windows.Forms.Label()
         Me.valu_lastsavedate = New System.Windows.Forms.NumericUpDown()
         Me.Title_lastdatesave = New System.Windows.Forms.Label()
@@ -93,35 +93,51 @@ Partial Class TLSE_travelers_status
         Me.Text_home = New System.Windows.Forms.Label()
         Me.Title_home = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button_pitchtent = New System.Windows.Forms.Button()
+        Me.Button_wandering = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Select_onisland = New System.Windows.Forms.ComboBox()
+        Me.Select_where = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Select_pitchtent = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Select_permissionpitch = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
+        Me.Select_departport = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.ComboBox6 = New System.Windows.Forms.ComboBox()
+        Me.Select_visibleport = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.ComboBox7 = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.ComboBox8 = New System.Windows.Forms.ComboBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ComboBox9 = New System.Windows.Forms.ComboBox()
+        Me.Select_justarrive = New System.Windows.Forms.ComboBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.ComboBox10 = New System.Windows.Forms.ComboBox()
+        Me.Select_startconversation = New System.Windows.Forms.ComboBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.ComboBox11 = New System.Windows.Forms.ComboBox()
+        Me.Select_wandering = New System.Windows.Forms.ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.ComboBox12 = New System.Windows.Forms.ComboBox()
+        Me.Select_newicon = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Text_travelermessage = New System.Windows.Forms.TextBox()
+        Me.Icon_arrowexp_maxleft = New System.Windows.Forms.PictureBox()
+        Me.Icon_arrowexp_left = New System.Windows.Forms.PictureBox()
+        Me.Icon_arrowexp_maxright = New System.Windows.Forms.PictureBox()
+        Me.Icon_arrowexp_right = New System.Windows.Forms.PictureBox()
+        Me.Timer_arrowexp_right = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer_arrowexp_left = New System.Windows.Forms.Timer(Me.components)
+        Me.valu_onisland = New System.Windows.Forms.NumericUpDown()
+        Me.valu_where = New System.Windows.Forms.NumericUpDown()
+        Me.valu_pitchtent = New System.Windows.Forms.NumericUpDown()
+        Me.valu_permissionpitch = New System.Windows.Forms.NumericUpDown()
+        Me.valu_departport = New System.Windows.Forms.NumericUpDown()
+        Me.valu_visibleport = New System.Windows.Forms.NumericUpDown()
+        Me.valu_newicon = New System.Windows.Forms.NumericUpDown()
+        Me.valu_wandering = New System.Windows.Forms.NumericUpDown()
+        Me.valu_startconversation = New System.Windows.Forms.NumericUpDown()
+        Me.valu_justarrive = New System.Windows.Forms.NumericUpDown()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -156,7 +172,6 @@ Partial Class TLSE_travelers_status
         Me.Panel5.SuspendLayout()
         Me.Panel6.SuspendLayout()
         CType(Me.valu_level, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.valu_happiness2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_lastsavedate, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_lastdatetraveler, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_tent, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -167,6 +182,20 @@ Partial Class TLSE_travelers_status
         Me.Panel9.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_arrowexp_maxleft, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_arrowexp_left, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_arrowexp_maxright, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_arrowexp_right, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_onisland, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_where, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_pitchtent, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_permissionpitch, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_departport, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_visibleport, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_newicon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_wandering, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_startconversation, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_justarrive, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -692,7 +721,7 @@ Partial Class TLSE_travelers_status
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox1.Location = New System.Drawing.Point(513, 194)
+        Me.PictureBox1.Location = New System.Drawing.Point(517, 194)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox1.TabIndex = 326
@@ -704,7 +733,7 @@ Partial Class TLSE_travelers_status
         Me.Icon_happiness.BackColor = System.Drawing.Color.Transparent
         Me.Icon_happiness.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Icon_happiness.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.expt0
-        Me.Icon_happiness.Location = New System.Drawing.Point(238, 194)
+        Me.Icon_happiness.Location = New System.Drawing.Point(228, 194)
         Me.Icon_happiness.Name = "Icon_happiness"
         Me.Icon_happiness.Size = New System.Drawing.Size(160, 22)
         Me.Icon_happiness.TabIndex = 318
@@ -715,7 +744,7 @@ Partial Class TLSE_travelers_status
         Me.PictureBox162.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox162.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox162.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox162.Location = New System.Drawing.Point(416, 194)
+        Me.PictureBox162.Location = New System.Drawing.Point(424, 194)
         Me.PictureBox162.Name = "PictureBox162"
         Me.PictureBox162.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox162.TabIndex = 325
@@ -726,7 +755,7 @@ Partial Class TLSE_travelers_status
         '
         Me.Text_level.AutoSize = True
         Me.Text_level.BackColor = System.Drawing.Color.Transparent
-        Me.Text_level.Location = New System.Drawing.Point(448, 196)
+        Me.Text_level.Location = New System.Drawing.Point(452, 196)
         Me.Text_level.Name = "Text_level"
         Me.Text_level.Size = New System.Drawing.Size(22, 13)
         Me.Text_level.TabIndex = 319
@@ -735,7 +764,7 @@ Partial Class TLSE_travelers_status
         'valu_happiness
         '
         Me.valu_happiness.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_happiness.Location = New System.Drawing.Point(241, 196)
+        Me.valu_happiness.Location = New System.Drawing.Point(231, 196)
         Me.valu_happiness.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_happiness.Name = "valu_happiness"
         Me.valu_happiness.Size = New System.Drawing.Size(33, 16)
@@ -746,7 +775,7 @@ Partial Class TLSE_travelers_status
         '
         Me.Panel5.BackgroundImage = CType(resources.GetObject("Panel5.BackgroundImage"), System.Drawing.Image)
         Me.Panel5.Controls.Add(Me.Title_happiness)
-        Me.Panel5.Location = New System.Drawing.Point(238, 179)
+        Me.Panel5.Location = New System.Drawing.Point(228, 179)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(118, 14)
         Me.Panel5.TabIndex = 320
@@ -766,7 +795,7 @@ Partial Class TLSE_travelers_status
         '
         Me.Panel6.BackgroundImage = CType(resources.GetObject("Panel6.BackgroundImage"), System.Drawing.Image)
         Me.Panel6.Controls.Add(Me.Title_gratitude)
-        Me.Panel6.Location = New System.Drawing.Point(445, 179)
+        Me.Panel6.Location = New System.Drawing.Point(449, 179)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(118, 14)
         Me.Panel6.TabIndex = 321
@@ -786,25 +815,16 @@ Partial Class TLSE_travelers_status
         '
         Me.valu_level.BackColor = System.Drawing.Color.White
         Me.valu_level.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_level.Location = New System.Drawing.Point(476, 195)
+        Me.valu_level.Location = New System.Drawing.Point(480, 195)
         Me.valu_level.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_level.Name = "valu_level"
         Me.valu_level.Size = New System.Drawing.Size(33, 16)
         Me.valu_level.TabIndex = 322
         '
-        'valu_happiness2
-        '
-        Me.valu_happiness2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_happiness2.Location = New System.Drawing.Point(380, 197)
-        Me.valu_happiness2.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
-        Me.valu_happiness2.Name = "valu_happiness2"
-        Me.valu_happiness2.Size = New System.Drawing.Size(33, 16)
-        Me.valu_happiness2.TabIndex = 323
-        '
         'Text_lastsavedate
         '
         Me.Text_lastsavedate.BackColor = System.Drawing.Color.Transparent
-        Me.Text_lastsavedate.Location = New System.Drawing.Point(461, 408)
+        Me.Text_lastsavedate.Location = New System.Drawing.Point(465, 408)
         Me.Text_lastsavedate.Name = "Text_lastsavedate"
         Me.Text_lastsavedate.Size = New System.Drawing.Size(180, 13)
         Me.Text_lastsavedate.TabIndex = 332
@@ -816,7 +836,7 @@ Partial Class TLSE_travelers_status
         Me.valu_lastsavedate.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_lastsavedate.Enabled = False
         Me.valu_lastsavedate.Hexadecimal = True
-        Me.valu_lastsavedate.Location = New System.Drawing.Point(491, 424)
+        Me.valu_lastsavedate.Location = New System.Drawing.Point(495, 424)
         Me.valu_lastsavedate.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.valu_lastsavedate.Name = "valu_lastsavedate"
         Me.valu_lastsavedate.ReadOnly = True
@@ -828,7 +848,7 @@ Partial Class TLSE_travelers_status
         'Title_lastdatesave
         '
         Me.Title_lastdatesave.BackColor = System.Drawing.Color.Transparent
-        Me.Title_lastdatesave.Location = New System.Drawing.Point(461, 448)
+        Me.Title_lastdatesave.Location = New System.Drawing.Point(465, 448)
         Me.Title_lastdatesave.Name = "Title_lastdatesave"
         Me.Title_lastdatesave.Size = New System.Drawing.Size(180, 13)
         Me.Title_lastdatesave.TabIndex = 330
@@ -840,7 +860,7 @@ Partial Class TLSE_travelers_status
         Me.valu_lastdatetraveler.BackColor = System.Drawing.Color.White
         Me.valu_lastdatetraveler.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_lastdatetraveler.Hexadecimal = True
-        Me.valu_lastdatetraveler.Location = New System.Drawing.Point(491, 464)
+        Me.valu_lastdatetraveler.Location = New System.Drawing.Point(495, 464)
         Me.valu_lastdatetraveler.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.valu_lastdatetraveler.Name = "valu_lastdatetraveler"
         Me.valu_lastdatetraveler.ReadOnly = True
@@ -853,7 +873,7 @@ Partial Class TLSE_travelers_status
         '
         Me.valu_tent.BackColor = System.Drawing.Color.White
         Me.valu_tent.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_tent.Location = New System.Drawing.Point(722, 187)
+        Me.valu_tent.Location = New System.Drawing.Point(726, 187)
         Me.valu_tent.Maximum = New Decimal(New Integer() {14, 0, 0, 0})
         Me.valu_tent.Name = "valu_tent"
         Me.valu_tent.Size = New System.Drawing.Size(47, 16)
@@ -864,7 +884,7 @@ Partial Class TLSE_travelers_status
         '
         Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox10.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_tent
-        Me.PictureBox10.Location = New System.Drawing.Point(655, 174)
+        Me.PictureBox10.Location = New System.Drawing.Point(659, 174)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(42, 42)
         Me.PictureBox10.TabIndex = 327
@@ -875,7 +895,7 @@ Partial Class TLSE_travelers_status
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox3.Location = New System.Drawing.Point(655, 249)
+        Me.PictureBox3.Location = New System.Drawing.Point(659, 249)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox3.TabIndex = 334
@@ -888,7 +908,7 @@ Partial Class TLSE_travelers_status
         Me.Panel4.BackgroundImage = CType(resources.GetObject("Panel4.BackgroundImage"), System.Drawing.Image)
         Me.Panel4.Controls.Add(Me.Text_region)
         Me.Panel4.Controls.Add(Me.Title_region)
-        Me.Panel4.Location = New System.Drawing.Point(445, 223)
+        Me.Panel4.Location = New System.Drawing.Point(449, 223)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(208, 48)
         Me.Panel4.TabIndex = 333
@@ -916,7 +936,7 @@ Partial Class TLSE_travelers_status
         '
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(699, 189)
+        Me.Label2.Location = New System.Drawing.Point(703, 189)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(20, 12)
         Me.Label2.TabIndex = 335
@@ -928,7 +948,7 @@ Partial Class TLSE_travelers_status
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox4.Location = New System.Drawing.Point(655, 303)
+        Me.PictureBox4.Location = New System.Drawing.Point(659, 303)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox4.TabIndex = 337
@@ -941,7 +961,7 @@ Partial Class TLSE_travelers_status
         Me.Panel9.BackgroundImage = CType(resources.GetObject("Panel9.BackgroundImage"), System.Drawing.Image)
         Me.Panel9.Controls.Add(Me.Text_home)
         Me.Panel9.Controls.Add(Me.Title_home)
-        Me.Panel9.Location = New System.Drawing.Point(445, 277)
+        Me.Panel9.Location = New System.Drawing.Point(449, 277)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(208, 48)
         Me.Panel9.TabIndex = 336
@@ -970,49 +990,48 @@ Partial Class TLSE_travelers_status
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox2.Location = New System.Drawing.Point(725, 163)
+        Me.PictureBox2.Location = New System.Drawing.Point(729, 163)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(23, 22)
+        Me.PictureBox2.Size = New System.Drawing.Size(24, 22)
         Me.PictureBox2.TabIndex = 340
         Me.PictureBox2.TabStop = False
-        Me.PictureBox2.Visible = False
         '
-        'Button1
+        'Button_pitchtent
         '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Location = New System.Drawing.Point(226, 140)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(180, 23)
-        Me.Button1.TabIndex = 341
-        Me.Button1.Text = "Has pitched a tent on the island"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.Button_pitchtent.BackColor = System.Drawing.Color.White
+        Me.Button_pitchtent.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button_pitchtent.FlatAppearance.BorderSize = 0
+        Me.Button_pitchtent.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button_pitchtent.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Button_pitchtent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button_pitchtent.Location = New System.Drawing.Point(226, 140)
+        Me.Button_pitchtent.Name = "Button_pitchtent"
+        Me.Button_pitchtent.Size = New System.Drawing.Size(180, 23)
+        Me.Button_pitchtent.TabIndex = 341
+        Me.Button_pitchtent.Text = "Has pitched a tent on the island"
+        Me.Button_pitchtent.UseVisualStyleBackColor = False
         '
-        'Button2
+        'Button_wandering
         '
-        Me.Button2.BackColor = System.Drawing.Color.White
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(425, 140)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(180, 23)
-        Me.Button2.TabIndex = 342
-        Me.Button2.Text = "Wandering around the island"
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.Button_wandering.BackColor = System.Drawing.Color.White
+        Me.Button_wandering.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button_wandering.FlatAppearance.BorderSize = 0
+        Me.Button_wandering.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White
+        Me.Button_wandering.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Orange
+        Me.Button_wandering.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button_wandering.Location = New System.Drawing.Point(425, 140)
+        Me.Button_wandering.Name = "Button_wandering"
+        Me.Button_wandering.Size = New System.Drawing.Size(180, 23)
+        Me.Button_wandering.TabIndex = 342
+        Me.Button_wandering.Text = "Wandering around the island"
+        Me.Button_wandering.UseVisualStyleBackColor = False
         '
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox5.Location = New System.Drawing.Point(771, 182)
+        Me.PictureBox5.Location = New System.Drawing.Point(775, 182)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox5.TabIndex = 343
@@ -1029,31 +1048,31 @@ Partial Class TLSE_travelers_status
         Me.Label3.Text = "On island ?"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ComboBox1
+        'Select_onisland
         '
-        Me.ComboBox1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox1.DisplayMember = "0"
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox1.Location = New System.Drawing.Point(68, 248)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(51, 21)
-        Me.ComboBox1.TabIndex = 345
+        Me.Select_onisland.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_onisland.DisplayMember = "0"
+        Me.Select_onisland.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_onisland.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_onisland.FormattingEnabled = True
+        Me.Select_onisland.Items.AddRange(New Object() {"No", "Yes"})
+        Me.Select_onisland.Location = New System.Drawing.Point(68, 248)
+        Me.Select_onisland.Name = "Select_onisland"
+        Me.Select_onisland.Size = New System.Drawing.Size(51, 21)
+        Me.Select_onisland.TabIndex = 345
         '
-        'ComboBox2
+        'Select_where
         '
-        Me.ComboBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox2.DisplayMember = "0"
-        Me.ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Amusement Park", "Beach", "Café", "Campground", "Fountain", "Observation Tower", "Park ", "Port", "Roof"})
-        Me.ComboBox2.Location = New System.Drawing.Point(26, 288)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(134, 21)
-        Me.ComboBox2.TabIndex = 347
+        Me.Select_where.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_where.DisplayMember = "0"
+        Me.Select_where.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_where.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_where.FormattingEnabled = True
+        Me.Select_where.Items.AddRange(New Object() {"Amusement Park", "Beach", "Café", "Campground", "Fountain", "Observation Tower", "Park ", "Port", "Roof"})
+        Me.Select_where.Location = New System.Drawing.Point(26, 288)
+        Me.Select_where.Name = "Select_where"
+        Me.Select_where.Size = New System.Drawing.Size(134, 21)
+        Me.Select_where.TabIndex = 347
         '
         'Label4
         '
@@ -1065,18 +1084,18 @@ Partial Class TLSE_travelers_status
         Me.Label4.Text = "Where ?"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ComboBox3
+        'Select_pitchtent
         '
-        Me.ComboBox3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox3.DisplayMember = "0"
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox3.Location = New System.Drawing.Point(68, 328)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(51, 21)
-        Me.ComboBox3.TabIndex = 349
+        Me.Select_pitchtent.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_pitchtent.DisplayMember = "0"
+        Me.Select_pitchtent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_pitchtent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_pitchtent.FormattingEnabled = True
+        Me.Select_pitchtent.Items.AddRange(New Object() {"No", "Yes"})
+        Me.Select_pitchtent.Location = New System.Drawing.Point(68, 328)
+        Me.Select_pitchtent.Name = "Select_pitchtent"
+        Me.Select_pitchtent.Size = New System.Drawing.Size(51, 21)
+        Me.Select_pitchtent.TabIndex = 349
         '
         'Label5
         '
@@ -1088,18 +1107,18 @@ Partial Class TLSE_travelers_status
         Me.Label5.Text = "Has pitched a tent on the island"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ComboBox4
+        'Select_permissionpitch
         '
-        Me.ComboBox4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox4.DisplayMember = "0"
-        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"Ask", "Accept", "Refuse"})
-        Me.ComboBox4.Location = New System.Drawing.Point(40, 368)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(106, 21)
-        Me.ComboBox4.TabIndex = 351
+        Me.Select_permissionpitch.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_permissionpitch.DisplayMember = "0"
+        Me.Select_permissionpitch.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_permissionpitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_permissionpitch.FormattingEnabled = True
+        Me.Select_permissionpitch.Items.AddRange(New Object() {"Ask", "Accept", "Refuse"})
+        Me.Select_permissionpitch.Location = New System.Drawing.Point(40, 368)
+        Me.Select_permissionpitch.Name = "Select_permissionpitch"
+        Me.Select_permissionpitch.Size = New System.Drawing.Size(106, 21)
+        Me.Select_permissionpitch.TabIndex = 351
         '
         'Label6
         '
@@ -1111,18 +1130,18 @@ Partial Class TLSE_travelers_status
         Me.Label6.Text = "Permission to pitch a tent"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ComboBox5
+        'Select_departport
         '
-        Me.ComboBox5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox5.DisplayMember = "0"
-        Me.ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox5.Location = New System.Drawing.Point(68, 408)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(51, 21)
-        Me.ComboBox5.TabIndex = 353
+        Me.Select_departport.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_departport.DisplayMember = "0"
+        Me.Select_departport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_departport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_departport.FormattingEnabled = True
+        Me.Select_departport.Items.AddRange(New Object() {"No", "Yes"})
+        Me.Select_departport.Location = New System.Drawing.Point(68, 408)
+        Me.Select_departport.Name = "Select_departport"
+        Me.Select_departport.Size = New System.Drawing.Size(51, 21)
+        Me.Select_departport.TabIndex = 353
         '
         'Label7
         '
@@ -1134,18 +1153,18 @@ Partial Class TLSE_travelers_status
         Me.Label7.Text = "Departure to the port ?"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ComboBox6
+        'Select_visibleport
         '
-        Me.ComboBox6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox6.DisplayMember = "0"
-        Me.ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox6.Location = New System.Drawing.Point(68, 448)
-        Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(51, 21)
-        Me.ComboBox6.TabIndex = 355
+        Me.Select_visibleport.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_visibleport.DisplayMember = "0"
+        Me.Select_visibleport.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_visibleport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_visibleport.FormattingEnabled = True
+        Me.Select_visibleport.Items.AddRange(New Object() {"No", "Yes"})
+        Me.Select_visibleport.Location = New System.Drawing.Point(68, 448)
+        Me.Select_visibleport.Name = "Select_visibleport"
+        Me.Select_visibleport.Size = New System.Drawing.Size(51, 21)
+        Me.Select_visibleport.TabIndex = 355
         '
         'Label8
         '
@@ -1207,18 +1226,18 @@ Partial Class TLSE_travelers_status
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label10.Visible = False
         '
-        'ComboBox9
+        'Select_justarrive
         '
-        Me.ComboBox9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox9.DisplayMember = "0"
-        Me.ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox9.Location = New System.Drawing.Point(283, 368)
-        Me.ComboBox9.Name = "ComboBox9"
-        Me.ComboBox9.Size = New System.Drawing.Size(51, 21)
-        Me.ComboBox9.TabIndex = 363
+        Me.Select_justarrive.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_justarrive.DisplayMember = "0"
+        Me.Select_justarrive.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_justarrive.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_justarrive.FormattingEnabled = True
+        Me.Select_justarrive.Items.AddRange(New Object() {"Yes", "No"})
+        Me.Select_justarrive.Location = New System.Drawing.Point(283, 368)
+        Me.Select_justarrive.Name = "Select_justarrive"
+        Me.Select_justarrive.Size = New System.Drawing.Size(51, 21)
+        Me.Select_justarrive.TabIndex = 363
         '
         'Label11
         '
@@ -1230,18 +1249,18 @@ Partial Class TLSE_travelers_status
         Me.Label11.Text = "Just arrived in port"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ComboBox10
+        'Select_startconversation
         '
-        Me.ComboBox10.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox10.DisplayMember = "0"
-        Me.ComboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox10.FormattingEnabled = True
-        Me.ComboBox10.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox10.Location = New System.Drawing.Point(283, 328)
-        Me.ComboBox10.Name = "ComboBox10"
-        Me.ComboBox10.Size = New System.Drawing.Size(51, 21)
-        Me.ComboBox10.TabIndex = 361
+        Me.Select_startconversation.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_startconversation.DisplayMember = "0"
+        Me.Select_startconversation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_startconversation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_startconversation.FormattingEnabled = True
+        Me.Select_startconversation.Items.AddRange(New Object() {"No", "Yes"})
+        Me.Select_startconversation.Location = New System.Drawing.Point(283, 328)
+        Me.Select_startconversation.Name = "Select_startconversation"
+        Me.Select_startconversation.Size = New System.Drawing.Size(51, 21)
+        Me.Select_startconversation.TabIndex = 361
         '
         'Label12
         '
@@ -1253,18 +1272,18 @@ Partial Class TLSE_travelers_status
         Me.Label12.Text = "Start a conversation"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ComboBox11
+        'Select_wandering
         '
-        Me.ComboBox11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox11.DisplayMember = "0"
-        Me.ComboBox11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox11.FormattingEnabled = True
-        Me.ComboBox11.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox11.Location = New System.Drawing.Point(283, 288)
-        Me.ComboBox11.Name = "ComboBox11"
-        Me.ComboBox11.Size = New System.Drawing.Size(51, 21)
-        Me.ComboBox11.TabIndex = 359
+        Me.Select_wandering.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_wandering.DisplayMember = "0"
+        Me.Select_wandering.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_wandering.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_wandering.FormattingEnabled = True
+        Me.Select_wandering.Items.AddRange(New Object() {"No", "Yes"})
+        Me.Select_wandering.Location = New System.Drawing.Point(283, 288)
+        Me.Select_wandering.Name = "Select_wandering"
+        Me.Select_wandering.Size = New System.Drawing.Size(51, 21)
+        Me.Select_wandering.TabIndex = 359
         '
         'Label13
         '
@@ -1276,18 +1295,18 @@ Partial Class TLSE_travelers_status
         Me.Label13.Text = "Wandering around the island"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'ComboBox12
+        'Select_newicon
         '
-        Me.ComboBox12.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.ComboBox12.DisplayMember = "0"
-        Me.ComboBox12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ComboBox12.FormattingEnabled = True
-        Me.ComboBox12.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox12.Location = New System.Drawing.Point(283, 248)
-        Me.ComboBox12.Name = "ComboBox12"
-        Me.ComboBox12.Size = New System.Drawing.Size(51, 21)
-        Me.ComboBox12.TabIndex = 357
+        Me.Select_newicon.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_newicon.DisplayMember = "0"
+        Me.Select_newicon.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_newicon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_newicon.FormattingEnabled = True
+        Me.Select_newicon.Items.AddRange(New Object() {"No", "Yes"})
+        Me.Select_newicon.Location = New System.Drawing.Point(283, 248)
+        Me.Select_newicon.Name = "Select_newicon"
+        Me.Select_newicon.Size = New System.Drawing.Size(51, 21)
+        Me.Select_newicon.TabIndex = 357
         '
         'Label14
         '
@@ -1302,22 +1321,174 @@ Partial Class TLSE_travelers_status
         'Label15
         '
         Me.Label15.BackColor = System.Drawing.Color.Transparent
-        Me.Label15.Location = New System.Drawing.Point(473, 336)
+        Me.Label15.Location = New System.Drawing.Point(477, 336)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(180, 13)
         Me.Label15.TabIndex = 368
         Me.Label15.Text = "Traveler's message"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'TextBox1
+        'Text_travelermessage
         '
-        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(473, 352)
-        Me.TextBox1.MaxLength = 10
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(180, 13)
-        Me.TextBox1.TabIndex = 369
-        Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.Text_travelermessage.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_travelermessage.Location = New System.Drawing.Point(477, 352)
+        Me.Text_travelermessage.MaxLength = 10
+        Me.Text_travelermessage.Name = "Text_travelermessage"
+        Me.Text_travelermessage.Size = New System.Drawing.Size(180, 13)
+        Me.Text_travelermessage.TabIndex = 369
+        Me.Text_travelermessage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Icon_arrowexp_maxleft
+        '
+        Me.Icon_arrowexp_maxleft.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_arrowexp_maxleft.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_arrowexp_maxleft.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_arrowexp_maxleft
+        Me.Icon_arrowexp_maxleft.Location = New System.Drawing.Point(197, 194)
+        Me.Icon_arrowexp_maxleft.Name = "Icon_arrowexp_maxleft"
+        Me.Icon_arrowexp_maxleft.Size = New System.Drawing.Size(14, 22)
+        Me.Icon_arrowexp_maxleft.TabIndex = 371
+        Me.Icon_arrowexp_maxleft.TabStop = False
+        '
+        'Icon_arrowexp_left
+        '
+        Me.Icon_arrowexp_left.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_arrowexp_left.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_arrowexp_left.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_arrowexp_left
+        Me.Icon_arrowexp_left.Location = New System.Drawing.Point(214, 194)
+        Me.Icon_arrowexp_left.Name = "Icon_arrowexp_left"
+        Me.Icon_arrowexp_left.Size = New System.Drawing.Size(11, 22)
+        Me.Icon_arrowexp_left.TabIndex = 370
+        Me.Icon_arrowexp_left.TabStop = False
+        '
+        'Icon_arrowexp_maxright
+        '
+        Me.Icon_arrowexp_maxright.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_arrowexp_maxright.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_arrowexp_maxright.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_arrowexp_maxright
+        Me.Icon_arrowexp_maxright.Location = New System.Drawing.Point(405, 194)
+        Me.Icon_arrowexp_maxright.Name = "Icon_arrowexp_maxright"
+        Me.Icon_arrowexp_maxright.Size = New System.Drawing.Size(14, 22)
+        Me.Icon_arrowexp_maxright.TabIndex = 373
+        Me.Icon_arrowexp_maxright.TabStop = False
+        '
+        'Icon_arrowexp_right
+        '
+        Me.Icon_arrowexp_right.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_arrowexp_right.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_arrowexp_right.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_arrowexp_right
+        Me.Icon_arrowexp_right.Location = New System.Drawing.Point(391, 194)
+        Me.Icon_arrowexp_right.Name = "Icon_arrowexp_right"
+        Me.Icon_arrowexp_right.Size = New System.Drawing.Size(11, 22)
+        Me.Icon_arrowexp_right.TabIndex = 372
+        Me.Icon_arrowexp_right.TabStop = False
+        '
+        'Timer_arrowexp_right
+        '
+        Me.Timer_arrowexp_right.Interval = 20
+        '
+        'Timer_arrowexp_left
+        '
+        Me.Timer_arrowexp_left.Interval = 20
+        '
+        'valu_onisland
+        '
+        Me.valu_onisland.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_onisland.Location = New System.Drawing.Point(68, 253)
+        Me.valu_onisland.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_onisland.Name = "valu_onisland"
+        Me.valu_onisland.Size = New System.Drawing.Size(33, 16)
+        Me.valu_onisland.TabIndex = 374
+        Me.valu_onisland.Visible = False
+        '
+        'valu_where
+        '
+        Me.valu_where.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_where.Location = New System.Drawing.Point(26, 293)
+        Me.valu_where.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_where.Name = "valu_where"
+        Me.valu_where.Size = New System.Drawing.Size(56, 16)
+        Me.valu_where.TabIndex = 375
+        Me.valu_where.Visible = False
+        '
+        'valu_pitchtent
+        '
+        Me.valu_pitchtent.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_pitchtent.Location = New System.Drawing.Point(68, 333)
+        Me.valu_pitchtent.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_pitchtent.Name = "valu_pitchtent"
+        Me.valu_pitchtent.Size = New System.Drawing.Size(33, 16)
+        Me.valu_pitchtent.TabIndex = 376
+        Me.valu_pitchtent.Visible = False
+        '
+        'valu_permissionpitch
+        '
+        Me.valu_permissionpitch.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_permissionpitch.Location = New System.Drawing.Point(40, 373)
+        Me.valu_permissionpitch.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_permissionpitch.Name = "valu_permissionpitch"
+        Me.valu_permissionpitch.Size = New System.Drawing.Size(33, 16)
+        Me.valu_permissionpitch.TabIndex = 377
+        Me.valu_permissionpitch.Visible = False
+        '
+        'valu_departport
+        '
+        Me.valu_departport.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_departport.Location = New System.Drawing.Point(68, 413)
+        Me.valu_departport.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_departport.Name = "valu_departport"
+        Me.valu_departport.Size = New System.Drawing.Size(33, 16)
+        Me.valu_departport.TabIndex = 378
+        Me.valu_departport.Visible = False
+        '
+        'valu_visibleport
+        '
+        Me.valu_visibleport.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_visibleport.Location = New System.Drawing.Point(68, 453)
+        Me.valu_visibleport.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_visibleport.Name = "valu_visibleport"
+        Me.valu_visibleport.Size = New System.Drawing.Size(33, 16)
+        Me.valu_visibleport.TabIndex = 379
+        Me.valu_visibleport.Visible = False
+        '
+        'valu_newicon
+        '
+        Me.valu_newicon.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_newicon.Location = New System.Drawing.Point(283, 253)
+        Me.valu_newicon.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_newicon.Name = "valu_newicon"
+        Me.valu_newicon.Size = New System.Drawing.Size(33, 16)
+        Me.valu_newicon.TabIndex = 380
+        Me.valu_newicon.Visible = False
+        '
+        'valu_wandering
+        '
+        Me.valu_wandering.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_wandering.Location = New System.Drawing.Point(283, 293)
+        Me.valu_wandering.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_wandering.Name = "valu_wandering"
+        Me.valu_wandering.Size = New System.Drawing.Size(33, 16)
+        Me.valu_wandering.TabIndex = 381
+        Me.valu_wandering.Visible = False
+        '
+        'valu_startconversation
+        '
+        Me.valu_startconversation.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_startconversation.Location = New System.Drawing.Point(283, 333)
+        Me.valu_startconversation.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_startconversation.Name = "valu_startconversation"
+        Me.valu_startconversation.Size = New System.Drawing.Size(33, 16)
+        Me.valu_startconversation.TabIndex = 382
+        Me.valu_startconversation.Visible = False
+        '
+        'valu_justarrive
+        '
+        Me.valu_justarrive.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_justarrive.Location = New System.Drawing.Point(283, 373)
+        Me.valu_justarrive.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
+        Me.valu_justarrive.Name = "valu_justarrive"
+        Me.valu_justarrive.Size = New System.Drawing.Size(33, 16)
+        Me.valu_justarrive.TabIndex = 383
+        Me.valu_justarrive.Visible = False
         '
         'TLSE_travelers_status
         '
@@ -1325,35 +1496,49 @@ Partial Class TLSE_travelers_status
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_travelers
         Me.ClientSize = New System.Drawing.Size(800, 498)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.valu_justarrive)
+        Me.Controls.Add(Me.valu_startconversation)
+        Me.Controls.Add(Me.valu_wandering)
+        Me.Controls.Add(Me.valu_newicon)
+        Me.Controls.Add(Me.valu_visibleport)
+        Me.Controls.Add(Me.valu_departport)
+        Me.Controls.Add(Me.valu_permissionpitch)
+        Me.Controls.Add(Me.valu_pitchtent)
+        Me.Controls.Add(Me.valu_where)
+        Me.Controls.Add(Me.valu_onisland)
+        Me.Controls.Add(Me.Icon_arrowexp_maxright)
+        Me.Controls.Add(Me.Icon_arrowexp_right)
+        Me.Controls.Add(Me.Icon_arrowexp_maxleft)
+        Me.Controls.Add(Me.Icon_arrowexp_left)
+        Me.Controls.Add(Me.Text_travelermessage)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.ComboBox7)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.ComboBox8)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.ComboBox9)
+        Me.Controls.Add(Me.Select_justarrive)
         Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.ComboBox10)
+        Me.Controls.Add(Me.Select_startconversation)
         Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.ComboBox11)
+        Me.Controls.Add(Me.Select_wandering)
         Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.ComboBox12)
+        Me.Controls.Add(Me.Select_newicon)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.ComboBox6)
+        Me.Controls.Add(Me.Select_visibleport)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.ComboBox5)
+        Me.Controls.Add(Me.Select_departport)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.ComboBox4)
+        Me.Controls.Add(Me.Select_permissionpitch)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.Select_pitchtent)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.Select_where)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Select_onisland)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Button_wandering)
+        Me.Controls.Add(Me.Button_pitchtent)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Panel9)
@@ -1367,19 +1552,18 @@ Partial Class TLSE_travelers_status
         Me.Controls.Add(Me.valu_tent)
         Me.Controls.Add(Me.PictureBox10)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Icon_happiness)
         Me.Controls.Add(Me.PictureBox162)
         Me.Controls.Add(Me.Text_level)
         Me.Controls.Add(Me.valu_happiness)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.valu_level)
-        Me.Controls.Add(Me.valu_happiness2)
         Me.Controls.Add(Me.Panel_selectmii)
         Me.Controls.Add(Me.FlowLayoutPanel1)
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.Icon_happiness)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_travelers_status"
@@ -1428,7 +1612,6 @@ Partial Class TLSE_travelers_status
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         CType(Me.valu_level, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.valu_happiness2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_lastsavedate, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_lastdatetraveler, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_tent, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1439,6 +1622,20 @@ Partial Class TLSE_travelers_status
         Me.Panel9.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_arrowexp_maxleft, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_arrowexp_left, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_arrowexp_maxright, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_arrowexp_right, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_onisland, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_where, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_pitchtent, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_permissionpitch, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_departport, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_visibleport, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_newicon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_wandering, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_startconversation, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_justarrive, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1497,7 +1694,6 @@ Partial Class TLSE_travelers_status
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Title_gratitude As Label
     Friend WithEvents valu_level As NumericUpDown
-    Friend WithEvents valu_happiness2 As NumericUpDown
     Friend WithEvents Text_lastsavedate As Label
     Friend WithEvents valu_lastsavedate As NumericUpDown
     Friend WithEvents Title_lastdatesave As Label
@@ -1514,33 +1710,49 @@ Partial Class TLSE_travelers_status
     Friend WithEvents Text_home As Label
     Friend WithEvents Title_home As Label
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Button_pitchtent As Button
+    Friend WithEvents Button_wandering As Button
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents Select_onisland As ComboBox
+    Friend WithEvents Select_where As ComboBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Select_pitchtent As ComboBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Select_permissionpitch As ComboBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents Select_departport As ComboBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents ComboBox6 As ComboBox
+    Friend WithEvents Select_visibleport As ComboBox
     Friend WithEvents Label8 As Label
     Friend WithEvents ComboBox7 As ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents ComboBox8 As ComboBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents ComboBox9 As ComboBox
+    Friend WithEvents Select_justarrive As ComboBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents ComboBox10 As ComboBox
+    Friend WithEvents Select_startconversation As ComboBox
     Friend WithEvents Label12 As Label
-    Friend WithEvents ComboBox11 As ComboBox
+    Friend WithEvents Select_wandering As ComboBox
     Friend WithEvents Label13 As Label
-    Friend WithEvents ComboBox12 As ComboBox
+    Friend WithEvents Select_newicon As ComboBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Text_travelermessage As TextBox
+    Friend WithEvents Icon_arrowexp_maxleft As PictureBox
+    Friend WithEvents Icon_arrowexp_left As PictureBox
+    Friend WithEvents Icon_arrowexp_maxright As PictureBox
+    Friend WithEvents Icon_arrowexp_right As PictureBox
+    Friend WithEvents Timer_arrowexp_right As Timer
+    Friend WithEvents Timer_arrowexp_left As Timer
+    Friend WithEvents valu_onisland As NumericUpDown
+    Friend WithEvents valu_where As NumericUpDown
+    Friend WithEvents valu_pitchtent As NumericUpDown
+    Friend WithEvents valu_permissionpitch As NumericUpDown
+    Friend WithEvents valu_departport As NumericUpDown
+    Friend WithEvents valu_visibleport As NumericUpDown
+    Friend WithEvents valu_newicon As NumericUpDown
+    Friend WithEvents valu_wandering As NumericUpDown
+    Friend WithEvents valu_startconversation As NumericUpDown
+    Friend WithEvents valu_justarrive As NumericUpDown
 End Class

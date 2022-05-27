@@ -323,6 +323,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_arrowexp_righton.png" />
+    <None Include="Resources\icon_arrowexp_right.png" />
+    <None Include="Resources\icon_arrowexp_maxrighton.png" />
+    <None Include="Resources\icon_arrowexp_maxright.png" />
+    <None Include="Resources\icon_arrowexp_maxlefton.png" />
+    <None Include="Resources\icon_arrowexp_maxleft.png" />
+    <None Include="Resources\icon_arrowexp_lefton.png" />
+    <None Include="Resources\icon_arrowexp_left.png" />
     <None Include="Resources\icon_tent.png" />
     <None Include="Resources\expt99.png" />
     <None Include="Resources\expt98.png" />
