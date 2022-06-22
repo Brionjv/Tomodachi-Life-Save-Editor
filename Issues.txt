@@ -4,3 +4,6 @@ If not working contact developper of these tools
 
 A bug in Mii edit has found : some features can't be write properly.
 -> How to fix : save changes on a Mii and close program / don't edit more than one Mii
+
+Corrupt save file when Mii edit is used when your Mii have an empty line in favorite foods
+-> How to fix : give foods (3 lines must have a food name)
