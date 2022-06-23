@@ -384,11 +384,20 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_travelersstatus_Click(sender As Object, e As EventArgs) Handles Text_menu_travelersstatus.Click
-        If TLSE_logo_update.Visible = True Then
-            TLSE_travelers_status.TLSE_logo_update.Visible = True
+        If Filever_text.Text = "JP" Then
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "This feature is not available in your region"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Cette fonctionnalité n'est pas disponible dans votre région"
+            End If
+            TLSE_dialog.ShowDialog()
+        Else
+            If TLSE_logo_update.Visible = True Then
+                TLSE_travelers_status.TLSE_logo_update.Visible = True
+            End If
+            TLSE_travelers_status.Show()
+            Me.Close()
         End If
-        TLSE_travelers_status.Show()
-        Me.Close()
     End Sub
     Private Sub Text_menu_travelersstatus_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_travelersstatus.MouseMove
         Menu_travelersstatus.BackgroundImage = My.Resources.bbl_travelers_status_act
@@ -415,6 +424,9 @@ Public Class TLSE_hub
             Setting_filepath.Checked = My.Settings.Para_path
             Setting_spesymb.Checked = My.Settings.Para_spesymb
             Select_language.SelectedItem = My.Settings.Para_language
+            If My.Settings.Para_language = Nothing Then
+                Select_language.SelectedItem = Select_language.Items.Item(0)
+            End If
             Select_music.SelectedItem = My.Settings.Para_selmusic
         Catch ex As Exception
         End Try

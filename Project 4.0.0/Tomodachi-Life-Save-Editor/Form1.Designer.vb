@@ -3080,6 +3080,7 @@ Partial Class TL_SaveEditor
         Me.Menu_manual.Controls.Add(Me.AdvH_manual)
         Me.Menu_manual.Controls.Add(Me.Menu_text_manual)
         Me.Menu_manual.Controls.Add(Me.Menu_icon_manual)
+        Me.Menu_manual.Enabled = False
         Me.Menu_manual.Location = New System.Drawing.Point(0, 298)
         Me.Menu_manual.Name = "Menu_manual"
         Me.Menu_manual.Size = New System.Drawing.Size(150, 34)
@@ -3128,6 +3129,7 @@ Partial Class TL_SaveEditor
         Me.Menu_Repair.Controls.Add(Me.AdvH_repairsave)
         Me.Menu_Repair.Controls.Add(Me.Menu_text_repair)
         Me.Menu_Repair.Controls.Add(Me.Menu_icon_repair)
+        Me.Menu_Repair.Enabled = False
         Me.Menu_Repair.Location = New System.Drawing.Point(0, 162)
         Me.Menu_Repair.Name = "Menu_Repair"
         Me.Menu_Repair.Size = New System.Drawing.Size(150, 34)
@@ -5847,7 +5849,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.3"
+        Me.Text_TLSE_version.Text = "Version 4.0.4"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits

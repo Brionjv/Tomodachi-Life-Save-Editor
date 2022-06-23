@@ -83,15 +83,7 @@ Partial Class TLSE_travelers_status
         Me.valu_lastdatetraveler = New System.Windows.Forms.NumericUpDown()
         Me.valu_tent = New System.Windows.Forms.NumericUpDown()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Text_region = New System.Windows.Forms.Label()
-        Me.Title_region = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Text_home = New System.Windows.Forms.Label()
-        Me.Title_home = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Button_pitchtent = New System.Windows.Forms.Button()
         Me.Button_wandering = New System.Windows.Forms.Button()
@@ -138,6 +130,9 @@ Partial Class TLSE_travelers_status
         Me.valu_wandering = New System.Windows.Forms.NumericUpDown()
         Me.valu_startconversation = New System.Windows.Forms.NumericUpDown()
         Me.valu_justarrive = New System.Windows.Forms.NumericUpDown()
+        Me.Text_travelersname = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -176,10 +171,6 @@ Partial Class TLSE_travelers_status
         CType(Me.valu_lastdatetraveler, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_tent, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel9.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_arrowexp_maxleft, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -206,6 +197,7 @@ Partial Class TLSE_travelers_status
         Me.FlowLayoutPanel1.Controls.Add(Me.Panel7)
         Me.FlowLayoutPanel1.Controls.Add(Me.Panel8)
         Me.FlowLayoutPanel1.Controls.Add(Me.Panel1)
+        Me.FlowLayoutPanel1.Controls.Add(Me.Label17)
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 77)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
         Me.FlowLayoutPanel1.Size = New System.Drawing.Size(800, 57)
@@ -596,7 +588,6 @@ Partial Class TLSE_travelers_status
         Me.Panel_menu_opensave.Name = "Panel_menu_opensave"
         Me.Panel_menu_opensave.Size = New System.Drawing.Size(69, 34)
         Me.Panel_menu_opensave.TabIndex = 8
-        Me.Panel_menu_opensave.Visible = False
         '
         'Text_menu_save
         '
@@ -773,6 +764,7 @@ Partial Class TLSE_travelers_status
         '
         'Panel5
         '
+        Me.Panel5.BackColor = System.Drawing.Color.Transparent
         Me.Panel5.BackgroundImage = CType(resources.GetObject("Panel5.BackgroundImage"), System.Drawing.Image)
         Me.Panel5.Controls.Add(Me.Title_happiness)
         Me.Panel5.Location = New System.Drawing.Point(228, 179)
@@ -793,6 +785,7 @@ Partial Class TLSE_travelers_status
         '
         'Panel6
         '
+        Me.Panel6.BackColor = System.Drawing.Color.Transparent
         Me.Panel6.BackgroundImage = CType(resources.GetObject("Panel6.BackgroundImage"), System.Drawing.Image)
         Me.Panel6.Controls.Add(Me.Title_gratitude)
         Me.Panel6.Location = New System.Drawing.Point(449, 179)
@@ -824,7 +817,7 @@ Partial Class TLSE_travelers_status
         'Text_lastsavedate
         '
         Me.Text_lastsavedate.BackColor = System.Drawing.Color.Transparent
-        Me.Text_lastsavedate.Location = New System.Drawing.Point(465, 408)
+        Me.Text_lastsavedate.Location = New System.Drawing.Point(465, 385)
         Me.Text_lastsavedate.Name = "Text_lastsavedate"
         Me.Text_lastsavedate.Size = New System.Drawing.Size(180, 13)
         Me.Text_lastsavedate.TabIndex = 332
@@ -836,7 +829,7 @@ Partial Class TLSE_travelers_status
         Me.valu_lastsavedate.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_lastsavedate.Enabled = False
         Me.valu_lastsavedate.Hexadecimal = True
-        Me.valu_lastsavedate.Location = New System.Drawing.Point(495, 424)
+        Me.valu_lastsavedate.Location = New System.Drawing.Point(495, 401)
         Me.valu_lastsavedate.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.valu_lastsavedate.Name = "valu_lastsavedate"
         Me.valu_lastsavedate.ReadOnly = True
@@ -848,7 +841,7 @@ Partial Class TLSE_travelers_status
         'Title_lastdatesave
         '
         Me.Title_lastdatesave.BackColor = System.Drawing.Color.Transparent
-        Me.Title_lastdatesave.Location = New System.Drawing.Point(465, 448)
+        Me.Title_lastdatesave.Location = New System.Drawing.Point(465, 425)
         Me.Title_lastdatesave.Name = "Title_lastdatesave"
         Me.Title_lastdatesave.Size = New System.Drawing.Size(180, 13)
         Me.Title_lastdatesave.TabIndex = 330
@@ -860,10 +853,9 @@ Partial Class TLSE_travelers_status
         Me.valu_lastdatetraveler.BackColor = System.Drawing.Color.White
         Me.valu_lastdatetraveler.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_lastdatetraveler.Hexadecimal = True
-        Me.valu_lastdatetraveler.Location = New System.Drawing.Point(495, 464)
+        Me.valu_lastdatetraveler.Location = New System.Drawing.Point(495, 441)
         Me.valu_lastdatetraveler.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.valu_lastdatetraveler.Name = "valu_lastdatetraveler"
-        Me.valu_lastdatetraveler.ReadOnly = True
         Me.valu_lastdatetraveler.Size = New System.Drawing.Size(120, 16)
         Me.valu_lastdatetraveler.TabIndex = 329
         Me.valu_lastdatetraveler.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -890,48 +882,6 @@ Partial Class TLSE_travelers_status
         Me.PictureBox10.TabIndex = 327
         Me.PictureBox10.TabStop = False
         '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox3.Location = New System.Drawing.Point(659, 249)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(23, 22)
-        Me.PictureBox3.TabIndex = 334
-        Me.PictureBox3.TabStop = False
-        Me.PictureBox3.Visible = False
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.Transparent
-        Me.Panel4.BackgroundImage = CType(resources.GetObject("Panel4.BackgroundImage"), System.Drawing.Image)
-        Me.Panel4.Controls.Add(Me.Text_region)
-        Me.Panel4.Controls.Add(Me.Title_region)
-        Me.Panel4.Location = New System.Drawing.Point(449, 223)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(208, 48)
-        Me.Panel4.TabIndex = 333
-        '
-        'Text_region
-        '
-        Me.Text_region.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Text_region.Location = New System.Drawing.Point(3, 30)
-        Me.Text_region.Name = "Text_region"
-        Me.Text_region.Size = New System.Drawing.Size(202, 15)
-        Me.Text_region.TabIndex = 1
-        Me.Text_region.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Title_region
-        '
-        Me.Title_region.ForeColor = System.Drawing.Color.White
-        Me.Title_region.Location = New System.Drawing.Point(3, 6)
-        Me.Title_region.Name = "Title_region"
-        Me.Title_region.Size = New System.Drawing.Size(202, 15)
-        Me.Title_region.TabIndex = 0
-        Me.Title_region.Text = "Region"
-        Me.Title_region.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.Transparent
@@ -943,48 +893,6 @@ Partial Class TLSE_travelers_status
         Me.Label2.Text = "N°"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox4.Location = New System.Drawing.Point(659, 303)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(23, 22)
-        Me.PictureBox4.TabIndex = 337
-        Me.PictureBox4.TabStop = False
-        Me.PictureBox4.Visible = False
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.Transparent
-        Me.Panel9.BackgroundImage = CType(resources.GetObject("Panel9.BackgroundImage"), System.Drawing.Image)
-        Me.Panel9.Controls.Add(Me.Text_home)
-        Me.Panel9.Controls.Add(Me.Title_home)
-        Me.Panel9.Location = New System.Drawing.Point(449, 277)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(208, 48)
-        Me.Panel9.TabIndex = 336
-        '
-        'Text_home
-        '
-        Me.Text_home.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Text_home.Location = New System.Drawing.Point(3, 30)
-        Me.Text_home.Name = "Text_home"
-        Me.Text_home.Size = New System.Drawing.Size(202, 15)
-        Me.Text_home.TabIndex = 2
-        Me.Text_home.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Title_home
-        '
-        Me.Title_home.ForeColor = System.Drawing.Color.White
-        Me.Title_home.Location = New System.Drawing.Point(3, 6)
-        Me.Title_home.Name = "Title_home"
-        Me.Title_home.Size = New System.Drawing.Size(202, 15)
-        Me.Title_home.TabIndex = 1
-        Me.Title_home.Text = "Home"
-        Me.Title_home.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
@@ -995,6 +903,7 @@ Partial Class TLSE_travelers_status
         Me.PictureBox2.Size = New System.Drawing.Size(24, 22)
         Me.PictureBox2.TabIndex = 340
         Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
         '
         'Button_pitchtent
         '
@@ -1041,7 +950,7 @@ Partial Class TLSE_travelers_status
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Location = New System.Drawing.Point(3, 232)
+        Me.Label3.Location = New System.Drawing.Point(3, 239)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(180, 13)
         Me.Label3.TabIndex = 344
@@ -1056,7 +965,7 @@ Partial Class TLSE_travelers_status
         Me.Select_onisland.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_onisland.FormattingEnabled = True
         Me.Select_onisland.Items.AddRange(New Object() {"No", "Yes"})
-        Me.Select_onisland.Location = New System.Drawing.Point(68, 248)
+        Me.Select_onisland.Location = New System.Drawing.Point(68, 255)
         Me.Select_onisland.Name = "Select_onisland"
         Me.Select_onisland.Size = New System.Drawing.Size(51, 21)
         Me.Select_onisland.TabIndex = 345
@@ -1066,10 +975,11 @@ Partial Class TLSE_travelers_status
         Me.Select_where.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Select_where.DisplayMember = "0"
         Me.Select_where.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_where.Enabled = False
         Me.Select_where.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_where.FormattingEnabled = True
         Me.Select_where.Items.AddRange(New Object() {"Amusement Park", "Beach", "Café", "Campground", "Fountain", "Observation Tower", "Park ", "Port", "Roof"})
-        Me.Select_where.Location = New System.Drawing.Point(26, 288)
+        Me.Select_where.Location = New System.Drawing.Point(26, 295)
         Me.Select_where.Name = "Select_where"
         Me.Select_where.Size = New System.Drawing.Size(134, 21)
         Me.Select_where.TabIndex = 347
@@ -1077,7 +987,7 @@ Partial Class TLSE_travelers_status
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Location = New System.Drawing.Point(3, 272)
+        Me.Label4.Location = New System.Drawing.Point(3, 279)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(180, 13)
         Me.Label4.TabIndex = 346
@@ -1092,7 +1002,7 @@ Partial Class TLSE_travelers_status
         Me.Select_pitchtent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_pitchtent.FormattingEnabled = True
         Me.Select_pitchtent.Items.AddRange(New Object() {"No", "Yes"})
-        Me.Select_pitchtent.Location = New System.Drawing.Point(68, 328)
+        Me.Select_pitchtent.Location = New System.Drawing.Point(68, 335)
         Me.Select_pitchtent.Name = "Select_pitchtent"
         Me.Select_pitchtent.Size = New System.Drawing.Size(51, 21)
         Me.Select_pitchtent.TabIndex = 349
@@ -1100,7 +1010,7 @@ Partial Class TLSE_travelers_status
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Location = New System.Drawing.Point(3, 312)
+        Me.Label5.Location = New System.Drawing.Point(3, 319)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(180, 13)
         Me.Label5.TabIndex = 348
@@ -1115,7 +1025,7 @@ Partial Class TLSE_travelers_status
         Me.Select_permissionpitch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_permissionpitch.FormattingEnabled = True
         Me.Select_permissionpitch.Items.AddRange(New Object() {"Ask", "Accept", "Refuse"})
-        Me.Select_permissionpitch.Location = New System.Drawing.Point(40, 368)
+        Me.Select_permissionpitch.Location = New System.Drawing.Point(40, 375)
         Me.Select_permissionpitch.Name = "Select_permissionpitch"
         Me.Select_permissionpitch.Size = New System.Drawing.Size(106, 21)
         Me.Select_permissionpitch.TabIndex = 351
@@ -1123,7 +1033,7 @@ Partial Class TLSE_travelers_status
         'Label6
         '
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Location = New System.Drawing.Point(3, 352)
+        Me.Label6.Location = New System.Drawing.Point(3, 359)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(180, 13)
         Me.Label6.TabIndex = 350
@@ -1138,7 +1048,7 @@ Partial Class TLSE_travelers_status
         Me.Select_departport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_departport.FormattingEnabled = True
         Me.Select_departport.Items.AddRange(New Object() {"No", "Yes"})
-        Me.Select_departport.Location = New System.Drawing.Point(68, 408)
+        Me.Select_departport.Location = New System.Drawing.Point(68, 415)
         Me.Select_departport.Name = "Select_departport"
         Me.Select_departport.Size = New System.Drawing.Size(51, 21)
         Me.Select_departport.TabIndex = 353
@@ -1146,7 +1056,7 @@ Partial Class TLSE_travelers_status
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Location = New System.Drawing.Point(3, 392)
+        Me.Label7.Location = New System.Drawing.Point(3, 399)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(180, 13)
         Me.Label7.TabIndex = 352
@@ -1161,7 +1071,7 @@ Partial Class TLSE_travelers_status
         Me.Select_visibleport.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_visibleport.FormattingEnabled = True
         Me.Select_visibleport.Items.AddRange(New Object() {"No", "Yes"})
-        Me.Select_visibleport.Location = New System.Drawing.Point(68, 448)
+        Me.Select_visibleport.Location = New System.Drawing.Point(68, 455)
         Me.Select_visibleport.Name = "Select_visibleport"
         Me.Select_visibleport.Size = New System.Drawing.Size(51, 21)
         Me.Select_visibleport.TabIndex = 355
@@ -1169,7 +1079,7 @@ Partial Class TLSE_travelers_status
         'Label8
         '
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Location = New System.Drawing.Point(3, 432)
+        Me.Label8.Location = New System.Drawing.Point(3, 439)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(180, 13)
         Me.Label8.TabIndex = 354
@@ -1184,7 +1094,7 @@ Partial Class TLSE_travelers_status
         Me.ComboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox7.FormattingEnabled = True
         Me.ComboBox7.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox7.Location = New System.Drawing.Point(283, 448)
+        Me.ComboBox7.Location = New System.Drawing.Point(283, 455)
         Me.ComboBox7.Name = "ComboBox7"
         Me.ComboBox7.Size = New System.Drawing.Size(51, 21)
         Me.ComboBox7.TabIndex = 367
@@ -1193,7 +1103,7 @@ Partial Class TLSE_travelers_status
         'Label9
         '
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Location = New System.Drawing.Point(218, 432)
+        Me.Label9.Location = New System.Drawing.Point(218, 439)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(180, 13)
         Me.Label9.TabIndex = 366
@@ -1209,7 +1119,7 @@ Partial Class TLSE_travelers_status
         Me.ComboBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ComboBox8.FormattingEnabled = True
         Me.ComboBox8.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox8.Location = New System.Drawing.Point(283, 408)
+        Me.ComboBox8.Location = New System.Drawing.Point(283, 415)
         Me.ComboBox8.Name = "ComboBox8"
         Me.ComboBox8.Size = New System.Drawing.Size(51, 21)
         Me.ComboBox8.TabIndex = 365
@@ -1218,7 +1128,7 @@ Partial Class TLSE_travelers_status
         'Label10
         '
         Me.Label10.BackColor = System.Drawing.Color.Transparent
-        Me.Label10.Location = New System.Drawing.Point(218, 392)
+        Me.Label10.Location = New System.Drawing.Point(218, 399)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(180, 13)
         Me.Label10.TabIndex = 364
@@ -1234,7 +1144,7 @@ Partial Class TLSE_travelers_status
         Me.Select_justarrive.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_justarrive.FormattingEnabled = True
         Me.Select_justarrive.Items.AddRange(New Object() {"Yes", "No"})
-        Me.Select_justarrive.Location = New System.Drawing.Point(283, 368)
+        Me.Select_justarrive.Location = New System.Drawing.Point(283, 375)
         Me.Select_justarrive.Name = "Select_justarrive"
         Me.Select_justarrive.Size = New System.Drawing.Size(51, 21)
         Me.Select_justarrive.TabIndex = 363
@@ -1242,7 +1152,7 @@ Partial Class TLSE_travelers_status
         'Label11
         '
         Me.Label11.BackColor = System.Drawing.Color.Transparent
-        Me.Label11.Location = New System.Drawing.Point(218, 352)
+        Me.Label11.Location = New System.Drawing.Point(218, 359)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(180, 13)
         Me.Label11.TabIndex = 362
@@ -1257,7 +1167,7 @@ Partial Class TLSE_travelers_status
         Me.Select_startconversation.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_startconversation.FormattingEnabled = True
         Me.Select_startconversation.Items.AddRange(New Object() {"No", "Yes"})
-        Me.Select_startconversation.Location = New System.Drawing.Point(283, 328)
+        Me.Select_startconversation.Location = New System.Drawing.Point(283, 335)
         Me.Select_startconversation.Name = "Select_startconversation"
         Me.Select_startconversation.Size = New System.Drawing.Size(51, 21)
         Me.Select_startconversation.TabIndex = 361
@@ -1265,7 +1175,7 @@ Partial Class TLSE_travelers_status
         'Label12
         '
         Me.Label12.BackColor = System.Drawing.Color.Transparent
-        Me.Label12.Location = New System.Drawing.Point(218, 312)
+        Me.Label12.Location = New System.Drawing.Point(218, 319)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(180, 13)
         Me.Label12.TabIndex = 360
@@ -1280,7 +1190,7 @@ Partial Class TLSE_travelers_status
         Me.Select_wandering.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_wandering.FormattingEnabled = True
         Me.Select_wandering.Items.AddRange(New Object() {"No", "Yes"})
-        Me.Select_wandering.Location = New System.Drawing.Point(283, 288)
+        Me.Select_wandering.Location = New System.Drawing.Point(283, 295)
         Me.Select_wandering.Name = "Select_wandering"
         Me.Select_wandering.Size = New System.Drawing.Size(51, 21)
         Me.Select_wandering.TabIndex = 359
@@ -1288,7 +1198,7 @@ Partial Class TLSE_travelers_status
         'Label13
         '
         Me.Label13.BackColor = System.Drawing.Color.Transparent
-        Me.Label13.Location = New System.Drawing.Point(218, 272)
+        Me.Label13.Location = New System.Drawing.Point(218, 279)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(180, 13)
         Me.Label13.TabIndex = 358
@@ -1303,7 +1213,7 @@ Partial Class TLSE_travelers_status
         Me.Select_newicon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_newicon.FormattingEnabled = True
         Me.Select_newicon.Items.AddRange(New Object() {"No", "Yes"})
-        Me.Select_newicon.Location = New System.Drawing.Point(283, 248)
+        Me.Select_newicon.Location = New System.Drawing.Point(283, 255)
         Me.Select_newicon.Name = "Select_newicon"
         Me.Select_newicon.Size = New System.Drawing.Size(51, 21)
         Me.Select_newicon.TabIndex = 357
@@ -1311,7 +1221,7 @@ Partial Class TLSE_travelers_status
         'Label14
         '
         Me.Label14.BackColor = System.Drawing.Color.Transparent
-        Me.Label14.Location = New System.Drawing.Point(218, 232)
+        Me.Label14.Location = New System.Drawing.Point(218, 239)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(180, 13)
         Me.Label14.TabIndex = 356
@@ -1321,7 +1231,7 @@ Partial Class TLSE_travelers_status
         'Label15
         '
         Me.Label15.BackColor = System.Drawing.Color.Transparent
-        Me.Label15.Location = New System.Drawing.Point(477, 336)
+        Me.Label15.Location = New System.Drawing.Point(477, 313)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(180, 13)
         Me.Label15.TabIndex = 368
@@ -1331,7 +1241,7 @@ Partial Class TLSE_travelers_status
         'Text_travelermessage
         '
         Me.Text_travelermessage.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Text_travelermessage.Location = New System.Drawing.Point(477, 352)
+        Me.Text_travelermessage.Location = New System.Drawing.Point(477, 329)
         Me.Text_travelermessage.MaxLength = 10
         Me.Text_travelermessage.Name = "Text_travelermessage"
         Me.Text_travelermessage.Size = New System.Drawing.Size(180, 13)
@@ -1393,7 +1303,7 @@ Partial Class TLSE_travelers_status
         'valu_onisland
         '
         Me.valu_onisland.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_onisland.Location = New System.Drawing.Point(68, 253)
+        Me.valu_onisland.Location = New System.Drawing.Point(68, 260)
         Me.valu_onisland.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_onisland.Name = "valu_onisland"
         Me.valu_onisland.Size = New System.Drawing.Size(33, 16)
@@ -1403,17 +1313,16 @@ Partial Class TLSE_travelers_status
         'valu_where
         '
         Me.valu_where.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_where.Location = New System.Drawing.Point(26, 293)
+        Me.valu_where.Location = New System.Drawing.Point(26, 300)
         Me.valu_where.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_where.Name = "valu_where"
         Me.valu_where.Size = New System.Drawing.Size(56, 16)
         Me.valu_where.TabIndex = 375
-        Me.valu_where.Visible = False
         '
         'valu_pitchtent
         '
         Me.valu_pitchtent.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_pitchtent.Location = New System.Drawing.Point(68, 333)
+        Me.valu_pitchtent.Location = New System.Drawing.Point(68, 340)
         Me.valu_pitchtent.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_pitchtent.Name = "valu_pitchtent"
         Me.valu_pitchtent.Size = New System.Drawing.Size(33, 16)
@@ -1423,7 +1332,7 @@ Partial Class TLSE_travelers_status
         'valu_permissionpitch
         '
         Me.valu_permissionpitch.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_permissionpitch.Location = New System.Drawing.Point(40, 373)
+        Me.valu_permissionpitch.Location = New System.Drawing.Point(40, 380)
         Me.valu_permissionpitch.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_permissionpitch.Name = "valu_permissionpitch"
         Me.valu_permissionpitch.Size = New System.Drawing.Size(33, 16)
@@ -1433,7 +1342,7 @@ Partial Class TLSE_travelers_status
         'valu_departport
         '
         Me.valu_departport.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_departport.Location = New System.Drawing.Point(68, 413)
+        Me.valu_departport.Location = New System.Drawing.Point(68, 420)
         Me.valu_departport.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_departport.Name = "valu_departport"
         Me.valu_departport.Size = New System.Drawing.Size(33, 16)
@@ -1443,7 +1352,7 @@ Partial Class TLSE_travelers_status
         'valu_visibleport
         '
         Me.valu_visibleport.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_visibleport.Location = New System.Drawing.Point(68, 453)
+        Me.valu_visibleport.Location = New System.Drawing.Point(68, 460)
         Me.valu_visibleport.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_visibleport.Name = "valu_visibleport"
         Me.valu_visibleport.Size = New System.Drawing.Size(33, 16)
@@ -1453,7 +1362,7 @@ Partial Class TLSE_travelers_status
         'valu_newicon
         '
         Me.valu_newicon.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_newicon.Location = New System.Drawing.Point(283, 253)
+        Me.valu_newicon.Location = New System.Drawing.Point(283, 260)
         Me.valu_newicon.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_newicon.Name = "valu_newicon"
         Me.valu_newicon.Size = New System.Drawing.Size(33, 16)
@@ -1463,7 +1372,7 @@ Partial Class TLSE_travelers_status
         'valu_wandering
         '
         Me.valu_wandering.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_wandering.Location = New System.Drawing.Point(283, 293)
+        Me.valu_wandering.Location = New System.Drawing.Point(283, 300)
         Me.valu_wandering.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_wandering.Name = "valu_wandering"
         Me.valu_wandering.Size = New System.Drawing.Size(33, 16)
@@ -1473,7 +1382,7 @@ Partial Class TLSE_travelers_status
         'valu_startconversation
         '
         Me.valu_startconversation.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_startconversation.Location = New System.Drawing.Point(283, 333)
+        Me.valu_startconversation.Location = New System.Drawing.Point(283, 340)
         Me.valu_startconversation.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_startconversation.Name = "valu_startconversation"
         Me.valu_startconversation.Size = New System.Drawing.Size(33, 16)
@@ -1483,12 +1392,45 @@ Partial Class TLSE_travelers_status
         'valu_justarrive
         '
         Me.valu_justarrive.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_justarrive.Location = New System.Drawing.Point(283, 373)
+        Me.valu_justarrive.Location = New System.Drawing.Point(283, 380)
         Me.valu_justarrive.Maximum = New Decimal(New Integer() {99, 0, 0, 0})
         Me.valu_justarrive.Name = "valu_justarrive"
         Me.valu_justarrive.Size = New System.Drawing.Size(33, 16)
         Me.valu_justarrive.TabIndex = 383
         Me.valu_justarrive.Visible = False
+        '
+        'Text_travelersname
+        '
+        Me.Text_travelersname.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Text_travelersname.Location = New System.Drawing.Point(477, 253)
+        Me.Text_travelersname.MaxLength = 10
+        Me.Text_travelersname.Name = "Text_travelersname"
+        Me.Text_travelersname.Size = New System.Drawing.Size(180, 13)
+        Me.Text_travelersname.TabIndex = 385
+        Me.Text_travelersname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label16
+        '
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Location = New System.Drawing.Point(477, 237)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(180, 13)
+        Me.Label16.TabIndex = 384
+        Me.Label16.Text = "Traveler's name"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label17
+        '
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.ForeColor = System.Drawing.Color.Red
+        Me.Label17.Location = New System.Drawing.Point(373, 0)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(415, 54)
+        Me.Label17.TabIndex = 357
+        Me.Label17.Text = "You can only have 15 Miis at same time in your island" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Make sure your Miis don't " &
+    "have same tent place " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Don't set all Miis in same location (''Where'' feature)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) &
+    "or save file will be corrupted"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TLSE_travelers_status
         '
@@ -1496,6 +1438,8 @@ Partial Class TLSE_travelers_status
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_travelers
         Me.ClientSize = New System.Drawing.Size(800, 498)
+        Me.Controls.Add(Me.Text_travelersname)
+        Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.valu_justarrive)
         Me.Controls.Add(Me.valu_startconversation)
         Me.Controls.Add(Me.valu_wandering)
@@ -1540,11 +1484,7 @@ Partial Class TLSE_travelers_status
         Me.Controls.Add(Me.Button_wandering)
         Me.Controls.Add(Me.Button_pitchtent)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Text_lastsavedate)
         Me.Controls.Add(Me.valu_lastsavedate)
         Me.Controls.Add(Me.Title_lastdatesave)
@@ -1616,10 +1556,6 @@ Partial Class TLSE_travelers_status
         CType(Me.valu_lastdatetraveler, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_tent, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel4.ResumeLayout(False)
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel9.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_arrowexp_maxleft, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1700,15 +1636,7 @@ Partial Class TLSE_travelers_status
     Friend WithEvents valu_lastdatetraveler As NumericUpDown
     Friend WithEvents valu_tent As NumericUpDown
     Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Text_region As Label
-    Friend WithEvents Title_region As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents Text_home As Label
-    Friend WithEvents Title_home As Label
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Button_pitchtent As Button
     Friend WithEvents Button_wandering As Button
@@ -1755,4 +1683,7 @@ Partial Class TLSE_travelers_status
     Friend WithEvents valu_wandering As NumericUpDown
     Friend WithEvents valu_startconversation As NumericUpDown
     Friend WithEvents valu_justarrive As NumericUpDown
+    Friend WithEvents Text_travelersname As TextBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
 End Class

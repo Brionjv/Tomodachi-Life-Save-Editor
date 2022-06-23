@@ -25,3 +25,4 @@ C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Edito
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_repairsave.resources
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi Life Save Editor.vbproj.AssemblyReference.cache
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_manag_travelers.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_travelers_status.resources
