@@ -977,9 +977,9 @@ Public Class TLSE_manag_travelers
                 RestoreTraveler()
             ElseIf TLSE_dialog.DialogResult = DialogResult.Cancel Then
                 If Filever_text.Text = "JP" Then
-                    open.Filter = "Mii files|*.TLMII;*MIITOPIAMIIA;*TLTRAVELER"
+                    open.Filter = "Mii files|*.TLMII;*MIITOPIAMIIA;*TLTRAVELER;*MII"
                 Else
-                    open.Filter = "Mii files|*.TLMII;*MIITOPIAMIIA;*TLJTRAVELER"
+                    open.Filter = "Mii files|*.TLMII;*MIITOPIAMIIA;*TLJTRAVELER;*MII"
                 End If
                 open.Title = "Open compatible files"
                 open.ShowDialog()

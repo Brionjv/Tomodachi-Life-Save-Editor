@@ -1709,7 +1709,7 @@ Public Class TLSE_manag_mii
         TLSE_dialog.ShowDialog()
         If TLSE_dialog.DialogResult = DialogResult.OK Then
             Dim open As New OpenFileDialog
-            open.Filter = "Mii files|*.TLMII;*MIITOPIAMIIA;*TLTRAVELER"
+            open.Filter = "Mii files|*.TLMII;*MIITOPIAMIIA;*TLTRAVELER;*MII"
             open.Title = "Open compatible files"
             open.ShowDialog()
             TLMII = open.FileName

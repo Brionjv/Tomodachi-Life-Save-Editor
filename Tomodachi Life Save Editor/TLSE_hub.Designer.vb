@@ -27,6 +27,13 @@ Partial Class TLSE_hub
         Me.TLSE_logo_update = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo = New System.Windows.Forms.PictureBox()
         Me.TLSE_menu = New System.Windows.Forms.Panel()
+        Me.Menu_babiesedit = New System.Windows.Forms.Panel()
+        Me.Text_menu_babiesedit = New System.Windows.Forms.Label()
+        Me.Menu_datasmanagement = New System.Windows.Forms.Panel()
+        Me.Text_menu_datasmanagement = New System.Windows.Forms.Label()
+        Me.Menu_datasedit = New System.Windows.Forms.Panel()
+        Me.Text_menu_datasedit = New System.Windows.Forms.Label()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Icon_islandmenu = New System.Windows.Forms.PictureBox()
         Me.Icon_tlsemenu = New System.Windows.Forms.PictureBox()
         Me.Menu_settings = New System.Windows.Forms.Panel()
@@ -50,8 +57,6 @@ Partial Class TLSE_hub
         Me.Menu_travelersedit = New System.Windows.Forms.Panel()
         Me.Text_menu_travelersedit = New System.Windows.Forms.Label()
         Me.Icon_miimenu = New System.Windows.Forms.PictureBox()
-        Me.Menu_babiesedit = New System.Windows.Forms.Panel()
-        Me.Text_menu_babiesedit = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TLSE_menu_Miiedition = New System.Windows.Forms.Panel()
         Me.Icon_relainterac = New System.Windows.Forms.PictureBox()
@@ -129,9 +134,29 @@ Partial Class TLSE_hub
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Menuflow_text_travelersedit = New System.Windows.Forms.Label()
+        Me.FlowLayoutPanel4 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Icon_menu_islandedit = New System.Windows.Forms.PictureBox()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.Menuflow_text_islandedit = New System.Windows.Forms.Label()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TLSE_menu_islandedit = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu.SuspendLayout()
+        Me.Menu_babiesedit.SuspendLayout()
+        Me.Menu_datasmanagement.SuspendLayout()
+        Me.Menu_datasedit.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_islandmenu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_tlsemenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_settings.SuspendLayout()
@@ -145,7 +170,6 @@ Partial Class TLSE_hub
         Me.Menu_miiedit.SuspendLayout()
         Me.Menu_travelersedit.SuspendLayout()
         CType(Me.Icon_miimenu, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Menu_babiesedit.SuspendLayout()
         Me.TLSE_menu_Miiedition.SuspendLayout()
         CType(Me.Icon_relainterac, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_interactions.SuspendLayout()
@@ -192,6 +216,16 @@ Partial Class TLSE_hub
         Me.FlowLayoutPanel3.SuspendLayout()
         CType(Me.Icon_menu_travelersedit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel12.SuspendLayout()
+        Me.FlowLayoutPanel4.SuspendLayout()
+        CType(Me.Icon_menu_islandedit, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel14.SuspendLayout()
+        Me.Panel6.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel16.SuspendLayout()
+        Me.TLSE_menu_islandedit.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -225,6 +259,10 @@ Partial Class TLSE_hub
         '
         Me.TLSE_menu.BackColor = System.Drawing.Color.Transparent
         Me.TLSE_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu.Controls.Add(Me.Menu_babiesedit)
+        Me.TLSE_menu.Controls.Add(Me.Menu_datasmanagement)
+        Me.TLSE_menu.Controls.Add(Me.Menu_datasedit)
+        Me.TLSE_menu.Controls.Add(Me.PictureBox5)
         Me.TLSE_menu.Controls.Add(Me.Icon_islandmenu)
         Me.TLSE_menu.Controls.Add(Me.Icon_tlsemenu)
         Me.TLSE_menu.Controls.Add(Me.Menu_settings)
@@ -238,16 +276,84 @@ Partial Class TLSE_hub
         Me.TLSE_menu.Controls.Add(Me.Menu_miiedit)
         Me.TLSE_menu.Controls.Add(Me.Menu_travelersedit)
         Me.TLSE_menu.Controls.Add(Me.Icon_miimenu)
-        Me.TLSE_menu.Controls.Add(Me.Menu_babiesedit)
         Me.TLSE_menu.Location = New System.Drawing.Point(12, 81)
         Me.TLSE_menu.Name = "TLSE_menu"
         Me.TLSE_menu.Size = New System.Drawing.Size(807, 632)
         Me.TLSE_menu.TabIndex = 32
         '
+        'Menu_babiesedit
+        '
+        Me.Menu_babiesedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_babyedit
+        Me.Menu_babiesedit.Controls.Add(Me.Text_menu_babiesedit)
+        Me.Menu_babiesedit.Location = New System.Drawing.Point(12, 43)
+        Me.Menu_babiesedit.Name = "Menu_babiesedit"
+        Me.Menu_babiesedit.Size = New System.Drawing.Size(122, 199)
+        Me.Menu_babiesedit.TabIndex = 18
+        '
+        'Text_menu_babiesedit
+        '
+        Me.Text_menu_babiesedit.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_babiesedit.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_babiesedit.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_babiesedit.Name = "Text_menu_babiesedit"
+        Me.Text_menu_babiesedit.Size = New System.Drawing.Size(104, 181)
+        Me.Text_menu_babiesedit.TabIndex = 2
+        Me.Text_menu_babiesedit.Text = "Babies edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit baby born in your island"
+        Me.Text_menu_babiesedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_datasmanagement
+        '
+        Me.Menu_datasmanagement.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_datasmanagement
+        Me.Menu_datasmanagement.Controls.Add(Me.Text_menu_datasmanagement)
+        Me.Menu_datasmanagement.Location = New System.Drawing.Point(14, 498)
+        Me.Menu_datasmanagement.Name = "Menu_datasmanagement"
+        Me.Menu_datasmanagement.Size = New System.Drawing.Size(199, 122)
+        Me.Menu_datasmanagement.TabIndex = 17
+        '
+        'Text_menu_datasmanagement
+        '
+        Me.Text_menu_datasmanagement.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_datasmanagement.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_datasmanagement.Location = New System.Drawing.Point(9, 9)
+        Me.Text_menu_datasmanagement.Name = "Text_menu_datasmanagement"
+        Me.Text_menu_datasmanagement.Size = New System.Drawing.Size(181, 104)
+        Me.Text_menu_datasmanagement.TabIndex = 1
+        Me.Text_menu_datasmanagement.Text = "Data management" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Import and export data from your island"
+        Me.Text_menu_datasmanagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_datasedit
+        '
+        Me.Menu_datasedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_datasedition
+        Me.Menu_datasedit.Controls.Add(Me.Text_menu_datasedit)
+        Me.Menu_datasedit.Location = New System.Drawing.Point(234, 293)
+        Me.Menu_datasedit.Name = "Menu_datasedit"
+        Me.Menu_datasedit.Size = New System.Drawing.Size(122, 199)
+        Me.Menu_datasedit.TabIndex = 16
+        '
+        'Text_menu_datasedit
+        '
+        Me.Text_menu_datasedit.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_datasedit.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_datasedit.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_datasedit.Name = "Text_menu_datasedit"
+        Me.Text_menu_datasedit.Size = New System.Drawing.Size(104, 181)
+        Me.Text_menu_datasedit.TabIndex = 2
+        Me.Text_menu_datasedit.Text = "Data edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit data from your island"
+        Me.Text_menu_datasedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_datasmenu
+        Me.PictureBox5.Location = New System.Drawing.Point(137, 425)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(89, 67)
+        Me.PictureBox5.TabIndex = 15
+        Me.PictureBox5.TabStop = False
+        '
         'Icon_islandmenu
         '
         Me.Icon_islandmenu.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_islandmenu
-        Me.Icon_islandmenu.Location = New System.Drawing.Point(537, 168)
+        Me.Icon_islandmenu.Location = New System.Drawing.Point(537, 150)
         Me.Icon_islandmenu.Name = "Icon_islandmenu"
         Me.Icon_islandmenu.Size = New System.Drawing.Size(113, 40)
         Me.Icon_islandmenu.TabIndex = 14
@@ -256,7 +362,7 @@ Partial Class TLSE_hub
         'Icon_tlsemenu
         '
         Me.Icon_tlsemenu.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_tlsemenu
-        Me.Icon_tlsemenu.Location = New System.Drawing.Point(355, 521)
+        Me.Icon_tlsemenu.Location = New System.Drawing.Point(486, 521)
         Me.Icon_tlsemenu.Name = "Icon_tlsemenu"
         Me.Icon_tlsemenu.Size = New System.Drawing.Size(80, 80)
         Me.Icon_tlsemenu.TabIndex = 13
@@ -266,7 +372,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_settings.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_settings
         Me.Menu_settings.Controls.Add(Me.Text_menu_settings)
-        Me.Menu_settings.Location = New System.Drawing.Point(439, 497)
+        Me.Menu_settings.Location = New System.Drawing.Point(570, 497)
         Me.Menu_settings.Name = "Menu_settings"
         Me.Menu_settings.Size = New System.Drawing.Size(232, 129)
         Me.Menu_settings.TabIndex = 12
@@ -279,14 +385,15 @@ Partial Class TLSE_hub
         Me.Text_menu_settings.Name = "Text_menu_settings"
         Me.Text_menu_settings.Size = New System.Drawing.Size(214, 111)
         Me.Text_menu_settings.TabIndex = 4
-        Me.Text_menu_settings.Text = "Settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Access to Tomodachi Life Save Editor settings"
+        Me.Text_menu_settings.Text = "Settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Changes save editor language, show hidden thing" &
+    "s, show advance help, access to links of other save editor"
         Me.Text_menu_settings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_manual
         '
         Me.Menu_manual.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_manual
         Me.Menu_manual.Controls.Add(Me.Text_menu_manual)
-        Me.Menu_manual.Location = New System.Drawing.Point(119, 497)
+        Me.Menu_manual.Location = New System.Drawing.Point(250, 497)
         Me.Menu_manual.Name = "Menu_manual"
         Me.Menu_manual.Size = New System.Drawing.Size(232, 129)
         Me.Menu_manual.TabIndex = 11
@@ -299,14 +406,15 @@ Partial Class TLSE_hub
         Me.Text_menu_manual.Name = "Text_menu_manual"
         Me.Text_menu_manual.Size = New System.Drawing.Size(214, 111)
         Me.Text_menu_manual.TabIndex = 3
-        Me.Text_menu_manual.Text = "Manual" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Access to Tomodachi Life Save Editor manual"
+        Me.Text_menu_manual.Text = "Manual" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Show how to use this save editor, use compatible " &
+    "files"
         Me.Text_menu_manual.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_repairsave
         '
         Me.Menu_repairsave.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_repairsave
         Me.Menu_repairsave.Controls.Add(Me.Text_menu_repairsave)
-        Me.Menu_repairsave.Location = New System.Drawing.Point(364, 373)
+        Me.Menu_repairsave.Location = New System.Drawing.Point(495, 373)
         Me.Menu_repairsave.Name = "Menu_repairsave"
         Me.Menu_repairsave.Size = New System.Drawing.Size(199, 122)
         Me.Menu_repairsave.TabIndex = 10
@@ -319,14 +427,15 @@ Partial Class TLSE_hub
         Me.Text_menu_repairsave.Name = "Text_menu_repairsave"
         Me.Text_menu_repairsave.Size = New System.Drawing.Size(181, 104)
         Me.Text_menu_repairsave.TabIndex = 2
-        Me.Text_menu_repairsave.Text = "Repair save" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Repair your save file"
+        Me.Text_menu_repairsave.Text = "Repair save" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Repair and reset some part of your save file" &
+    ""
         Me.Text_menu_repairsave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_itemsedit
         '
         Me.Menu_itemsedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_itemsedit
         Me.Menu_itemsedit.Controls.Add(Me.Text_menu_itemsedit)
-        Me.Menu_itemsedit.Location = New System.Drawing.Point(441, 225)
+        Me.Menu_itemsedit.Location = New System.Drawing.Point(441, 207)
         Me.Menu_itemsedit.Name = "Menu_itemsedit"
         Me.Menu_itemsedit.Size = New System.Drawing.Size(232, 129)
         Me.Menu_itemsedit.TabIndex = 9
@@ -339,14 +448,15 @@ Partial Class TLSE_hub
         Me.Text_menu_itemsedit.Name = "Text_menu_itemsedit"
         Me.Text_menu_itemsedit.Size = New System.Drawing.Size(214, 111)
         Me.Text_menu_itemsedit.TabIndex = 2
-        Me.Text_menu_itemsedit.Text = "Items edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit items in your inventory or in shops"
+        Me.Text_menu_itemsedit.Text = "Items edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit items in your inventory or in shops, " &
+    "edit items provenance"
         Me.Text_menu_itemsedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_concertedit
         '
         Me.Menu_concertedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_concertedit
         Me.Menu_concertedit.Controls.Add(Me.Text_menu_concertedit)
-        Me.Menu_concertedit.Location = New System.Drawing.Point(676, 158)
+        Me.Menu_concertedit.Location = New System.Drawing.Point(676, 140)
         Me.Menu_concertedit.Name = "Menu_concertedit"
         Me.Menu_concertedit.Size = New System.Drawing.Size(122, 199)
         Me.Menu_concertedit.TabIndex = 8
@@ -359,34 +469,35 @@ Partial Class TLSE_hub
         Me.Text_menu_concertedit.Name = "Text_menu_concertedit"
         Me.Text_menu_concertedit.Size = New System.Drawing.Size(104, 181)
         Me.Text_menu_concertedit.TabIndex = 3
-        Me.Text_menu_concertedit.Text = "Concerts edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit concert in your island"
+        Me.Text_menu_concertedit.Text = "Concerts edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit concert in groups of your island"
         Me.Text_menu_concertedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_islandedit
         '
         Me.Menu_islandedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_islandedit
         Me.Menu_islandedit.Controls.Add(Me.Text_menu_islandedit)
-        Me.Menu_islandedit.Location = New System.Drawing.Point(516, 27)
+        Me.Menu_islandedit.Location = New System.Drawing.Point(516, 9)
         Me.Menu_islandedit.Name = "Menu_islandedit"
         Me.Menu_islandedit.Size = New System.Drawing.Size(156, 126)
         Me.Menu_islandedit.TabIndex = 6
         '
         'Text_menu_islandedit
         '
-        Me.Text_menu_islandedit.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_islandedit.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_islandedit.ForeColor = System.Drawing.Color.White
         Me.Text_menu_islandedit.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_islandedit.Name = "Text_menu_islandedit"
         Me.Text_menu_islandedit.Size = New System.Drawing.Size(138, 108)
         Me.Text_menu_islandedit.TabIndex = 2
-        Me.Text_menu_islandedit.Text = "Island edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit your island informations"
+        Me.Text_menu_islandedit.Text = "Island edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit your island informations, save file se" &
+    "ttings"
         Me.Text_menu_islandedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_extras
         '
         Me.Menu_extras.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_extras
         Me.Menu_extras.Controls.Add(Me.Text_menu_extras)
-        Me.Menu_extras.Location = New System.Drawing.Point(389, 24)
+        Me.Menu_extras.Location = New System.Drawing.Point(389, 6)
         Me.Menu_extras.Name = "Menu_extras"
         Me.Menu_extras.Size = New System.Drawing.Size(122, 199)
         Me.Menu_extras.TabIndex = 5
@@ -399,14 +510,15 @@ Partial Class TLSE_hub
         Me.Text_menu_extras.Name = "Text_menu_extras"
         Me.Text_menu_extras.Size = New System.Drawing.Size(104, 181)
         Me.Text_menu_extras.TabIndex = 2
-        Me.Text_menu_extras.Text = "Extras" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit your island configurations"
+        Me.Text_menu_extras.Text = "Extras" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Reset Streetpass / Spotpass, Mii apartments, news flash," &
+    " relationships"
         Me.Text_menu_extras.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_miimanagement
         '
         Me.Menu_miimanagement.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miimanagement
         Me.Menu_miimanagement.Controls.Add(Me.Text_menu_miimanagement)
-        Me.Menu_miimanagement.Location = New System.Drawing.Point(148, 289)
+        Me.Menu_miimanagement.Location = New System.Drawing.Point(5, 263)
         Me.Menu_miimanagement.Name = "Menu_miimanagement"
         Me.Menu_miimanagement.Size = New System.Drawing.Size(199, 122)
         Me.Menu_miimanagement.TabIndex = 4
@@ -419,14 +531,14 @@ Partial Class TLSE_hub
         Me.Text_menu_miimanagement.Name = "Text_menu_miimanagement"
         Me.Text_menu_miimanagement.Size = New System.Drawing.Size(181, 104)
         Me.Text_menu_miimanagement.TabIndex = 1
-        Me.Text_menu_miimanagement.Text = "Mii management" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Import and export Mii in your island"
+        Me.Text_menu_miimanagement.Text = "Mii management" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Import and export Mii from your island"
         Me.Text_menu_miimanagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_miiedit
         '
         Me.Menu_miiedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miiedit
         Me.Menu_miiedit.Controls.Add(Me.Text_menu_miiedit)
-        Me.Menu_miiedit.Location = New System.Drawing.Point(214, 132)
+        Me.Menu_miiedit.Location = New System.Drawing.Point(208, 129)
         Me.Menu_miiedit.Name = "Menu_miiedit"
         Me.Menu_miiedit.Size = New System.Drawing.Size(126, 156)
         Me.Menu_miiedit.TabIndex = 3
@@ -439,14 +551,14 @@ Partial Class TLSE_hub
         Me.Text_menu_miiedit.Name = "Text_menu_miiedit"
         Me.Text_menu_miiedit.Size = New System.Drawing.Size(108, 138)
         Me.Text_menu_miiedit.TabIndex = 1
-        Me.Text_menu_miiedit.Text = "Mii edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit Mii in your island"
+        Me.Text_menu_miiedit.Text = "Mii edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit relationships, interactions, characters"
         Me.Text_menu_miiedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_travelersedit
         '
         Me.Menu_travelersedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_travelersedit
         Me.Menu_travelersedit.Controls.Add(Me.Text_menu_travelersedit)
-        Me.Menu_travelersedit.Location = New System.Drawing.Point(148, 8)
+        Me.Menu_travelersedit.Location = New System.Drawing.Point(142, 5)
         Me.Menu_travelersedit.Name = "Menu_travelersedit"
         Me.Menu_travelersedit.Size = New System.Drawing.Size(199, 122)
         Me.Menu_travelersedit.TabIndex = 2
@@ -459,37 +571,18 @@ Partial Class TLSE_hub
         Me.Text_menu_travelersedit.Name = "Text_menu_travelersedit"
         Me.Text_menu_travelersedit.Size = New System.Drawing.Size(181, 104)
         Me.Text_menu_travelersedit.TabIndex = 0
-        Me.Text_menu_travelersedit.Text = "Travelers edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit travelers in your island"
+        Me.Text_menu_travelersedit.Text = "Travelers edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit travelers happiness, level, tent " &
+    "place, allow Miis to return to the island"
         Me.Text_menu_travelersedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Icon_miimenu
         '
         Me.Icon_miimenu.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_miimenu
-        Me.Icon_miimenu.Location = New System.Drawing.Point(146, 159)
+        Me.Icon_miimenu.Location = New System.Drawing.Point(140, 156)
         Me.Icon_miimenu.Name = "Icon_miimenu"
         Me.Icon_miimenu.Size = New System.Drawing.Size(62, 101)
         Me.Icon_miimenu.TabIndex = 1
         Me.Icon_miimenu.TabStop = False
-        '
-        'Menu_babiesedit
-        '
-        Me.Menu_babiesedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_babyedit
-        Me.Menu_babiesedit.Controls.Add(Me.Text_menu_babiesedit)
-        Me.Menu_babiesedit.Location = New System.Drawing.Point(11, 95)
-        Me.Menu_babiesedit.Name = "Menu_babiesedit"
-        Me.Menu_babiesedit.Size = New System.Drawing.Size(129, 232)
-        Me.Menu_babiesedit.TabIndex = 0
-        '
-        'Text_menu_babiesedit
-        '
-        Me.Text_menu_babiesedit.Cursor = System.Windows.Forms.Cursors.No
-        Me.Text_menu_babiesedit.ForeColor = System.Drawing.Color.White
-        Me.Text_menu_babiesedit.Location = New System.Drawing.Point(9, 9)
-        Me.Text_menu_babiesedit.Name = "Text_menu_babiesedit"
-        Me.Text_menu_babiesedit.Size = New System.Drawing.Size(111, 214)
-        Me.Text_menu_babiesedit.TabIndex = 1
-        Me.Text_menu_babiesedit.Text = "Babies edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit babies in your island"
-        Me.Text_menu_babiesedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TLSE_menu_Miiedition
         '
@@ -613,7 +706,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.1.1"
+        Me.TLSE_version.Text = "Version EX-1.1.2"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1346,6 +1439,171 @@ Partial Class TLSE_hub
         Me.Menuflow_text_travelersedit.Text = "Travelers edition"
         Me.Menuflow_text_travelersedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'FlowLayoutPanel4
+        '
+        Me.FlowLayoutPanel4.AutoSize = True
+        Me.FlowLayoutPanel4.Controls.Add(Me.Icon_menu_islandedit)
+        Me.FlowLayoutPanel4.Controls.Add(Me.Panel13)
+        Me.FlowLayoutPanel4.Controls.Add(Me.Panel14)
+        Me.FlowLayoutPanel4.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel4.Name = "FlowLayoutPanel4"
+        Me.FlowLayoutPanel4.Size = New System.Drawing.Size(807, 57)
+        Me.FlowLayoutPanel4.TabIndex = 2
+        '
+        'Icon_menu_islandedit
+        '
+        Me.Icon_menu_islandedit.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_menu_islandedit.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_menu_islandedit.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_off
+        Me.Icon_menu_islandedit.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_menu_islandedit.Name = "Icon_menu_islandedit"
+        Me.Icon_menu_islandedit.Size = New System.Drawing.Size(61, 51)
+        Me.Icon_menu_islandedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_menu_islandedit.TabIndex = 42
+        Me.Icon_menu_islandedit.TabStop = False
+        '
+        'Panel13
+        '
+        Me.Panel13.BackgroundImage = CType(resources.GetObject("Panel13.BackgroundImage"), System.Drawing.Image)
+        Me.Panel13.Location = New System.Drawing.Point(70, 3)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(45, 50)
+        Me.Panel13.TabIndex = 2
+        '
+        'Panel14
+        '
+        Me.Panel14.BackgroundImage = CType(resources.GetObject("Panel14.BackgroundImage"), System.Drawing.Image)
+        Me.Panel14.Controls.Add(Me.Menuflow_text_islandedit)
+        Me.Panel14.Location = New System.Drawing.Point(121, 3)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(120, 50)
+        Me.Panel14.TabIndex = 3
+        '
+        'Menuflow_text_islandedit
+        '
+        Me.Menuflow_text_islandedit.Location = New System.Drawing.Point(20, 0)
+        Me.Menuflow_text_islandedit.Name = "Menuflow_text_islandedit"
+        Me.Menuflow_text_islandedit.Size = New System.Drawing.Size(80, 50)
+        Me.Menuflow_text_islandedit.TabIndex = 0
+        Me.Menuflow_text_islandedit.Text = "Island edition"
+        Me.Menuflow_text_islandedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel6
+        '
+        Me.Panel6.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_islandsettings
+        Me.Panel6.Controls.Add(Me.Label2)
+        Me.Panel6.Location = New System.Drawing.Point(3, 191)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(156, 126)
+        Me.Panel6.TabIndex = 7
+        '
+        'Label2
+        '
+        Me.Label2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(9, 8)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(138, 108)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Island settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit island settings"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel3
+        '
+        Me.Panel3.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_islandconfig
+        Me.Panel3.Controls.Add(Me.Label1)
+        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel3.Location = New System.Drawing.Point(55, 59)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(156, 126)
+        Me.Panel3.TabIndex = 8
+        '
+        'Label1
+        '
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.No
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(9, 8)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(138, 108)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Island configurations" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit island configurations"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Location = New System.Drawing.Point(165, 191)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(94, 76)
+        Me.PictureBox3.TabIndex = 9
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Location = New System.Drawing.Point(484, 521)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(80, 80)
+        Me.PictureBox4.TabIndex = 16
+        Me.PictureBox4.TabStop = False
+        '
+        'Panel16
+        '
+        Me.Panel16.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_islandinfo
+        Me.Panel16.Controls.Add(Me.Label5)
+        Me.Panel16.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Panel16.Location = New System.Drawing.Point(216, 59)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(156, 126)
+        Me.Panel16.TabIndex = 17
+        '
+        'Label5
+        '
+        Me.Label5.Cursor = System.Windows.Forms.Cursors.No
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(9, 8)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(138, 108)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Island informations" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit island informations"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'TLSE_menu_islandedit
+        '
+        Me.TLSE_menu_islandedit.BackColor = System.Drawing.Color.Transparent
+        Me.TLSE_menu_islandedit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_islandedit.Controls.Add(Me.Panel1)
+        Me.TLSE_menu_islandedit.Controls.Add(Me.Panel16)
+        Me.TLSE_menu_islandedit.Controls.Add(Me.PictureBox4)
+        Me.TLSE_menu_islandedit.Controls.Add(Me.PictureBox3)
+        Me.TLSE_menu_islandedit.Controls.Add(Me.Panel3)
+        Me.TLSE_menu_islandedit.Controls.Add(Me.Panel6)
+        Me.TLSE_menu_islandedit.Controls.Add(Me.FlowLayoutPanel4)
+        Me.TLSE_menu_islandedit.Location = New System.Drawing.Point(12, 81)
+        Me.TLSE_menu_islandedit.Name = "TLSE_menu_islandedit"
+        Me.TLSE_menu_islandedit.Size = New System.Drawing.Size(807, 632)
+        Me.TLSE_menu_islandedit.TabIndex = 39
+        Me.TLSE_menu_islandedit.Visible = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_savefilesettings
+        Me.Panel1.Controls.Add(Me.Label3)
+        Me.Panel1.Location = New System.Drawing.Point(570, 507)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(199, 122)
+        Me.Panel1.TabIndex = 18
+        '
+        'Label3
+        '
+        Me.Label3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.Location = New System.Drawing.Point(9, 8)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(184, 108)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Save file settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit settings of your save file"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TLSE_hub
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1356,11 +1614,12 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.TLSE_menu)
+        Me.Controls.Add(Me.TLSE_menu_islandedit)
+        Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
-        Me.Controls.Add(Me.TLSE_menu)
-        Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"
@@ -1369,6 +1628,10 @@ Partial Class TLSE_hub
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TLSE_menu.ResumeLayout(False)
+        Me.Menu_babiesedit.ResumeLayout(False)
+        Me.Menu_datasmanagement.ResumeLayout(False)
+        Me.Menu_datasedit.ResumeLayout(False)
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_islandmenu, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_tlsemenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_settings.ResumeLayout(False)
@@ -1382,7 +1645,6 @@ Partial Class TLSE_hub
         Me.Menu_miiedit.ResumeLayout(False)
         Me.Menu_travelersedit.ResumeLayout(False)
         CType(Me.Icon_miimenu, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Menu_babiesedit.ResumeLayout(False)
         Me.TLSE_menu_Miiedition.ResumeLayout(False)
         Me.TLSE_menu_Miiedition.PerformLayout()
         CType(Me.Icon_relainterac, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1440,6 +1702,17 @@ Partial Class TLSE_hub
         Me.FlowLayoutPanel3.ResumeLayout(False)
         CType(Me.Icon_menu_travelersedit, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel12.ResumeLayout(False)
+        Me.FlowLayoutPanel4.ResumeLayout(False)
+        CType(Me.Icon_menu_islandedit, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel14.ResumeLayout(False)
+        Me.Panel6.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel16.ResumeLayout(False)
+        Me.TLSE_menu_islandedit.ResumeLayout(False)
+        Me.TLSE_menu_islandedit.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1458,11 +1731,9 @@ Partial Class TLSE_hub
     Friend WithEvents Menu_miiedit As Panel
     Friend WithEvents Menu_travelersedit As Panel
     Friend WithEvents Icon_miimenu As PictureBox
-    Friend WithEvents Menu_babiesedit As Panel
     Friend WithEvents Icon_islandmenu As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Text_menu_travelersedit As Label
-    Friend WithEvents Text_menu_babiesedit As Label
     Friend WithEvents Text_menu_miiedit As Label
     Friend WithEvents Text_menu_miimanagement As Label
     Friend WithEvents Text_menu_itemsedit As Label
@@ -1548,4 +1819,27 @@ Partial Class TLSE_hub
     Friend WithEvents Panel11 As Panel
     Friend WithEvents Panel12 As Panel
     Friend WithEvents Menuflow_text_travelersedit As Label
+    Friend WithEvents Menu_datasmanagement As Panel
+    Friend WithEvents Text_menu_datasmanagement As Label
+    Friend WithEvents Menu_datasedit As Panel
+    Friend WithEvents Text_menu_datasedit As Label
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Menu_babiesedit As Panel
+    Friend WithEvents Text_menu_babiesedit As Label
+    Friend WithEvents FlowLayoutPanel4 As FlowLayoutPanel
+    Friend WithEvents Icon_menu_islandedit As PictureBox
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents Panel14 As Panel
+    Friend WithEvents Menuflow_text_islandedit As Label
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Panel16 As Panel
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TLSE_menu_islandedit As Panel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label3 As Label
 End Class

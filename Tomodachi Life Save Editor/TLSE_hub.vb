@@ -69,6 +69,30 @@ Public Class TLSE_hub
         Menu_babiesedit.BackgroundImage = My.Resources.bbl_babyedit
     End Sub
 
+    Private Sub Text_menu_datasedit_Click(sender As Object, e As EventArgs) Handles Text_menu_datasedit.Click
+
+    End Sub
+
+    Private Sub Text_menu_datasedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_datasedit.MouseMove
+        Menu_datasedit.BackgroundImage = My.Resources.bbl_datasedition_act
+    End Sub
+
+    Private Sub Text_menu_datasedit_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_datasedit.MouseLeave
+        Menu_datasedit.BackgroundImage = My.Resources.bbl_datasedition
+    End Sub
+
+    Private Sub Text_menu_datasmanagement_Click(sender As Object, e As EventArgs) Handles Text_menu_datasmanagement.Click
+
+    End Sub
+
+    Private Sub Text_menu_datasmanagement_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_datasmanagement.MouseMove
+        Menu_datasmanagement.BackgroundImage = My.Resources.bbl_datasmanagement_act
+    End Sub
+
+    Private Sub Text_menu_datasmanagement_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_datasmanagement.MouseLeave
+        Menu_datasmanagement.BackgroundImage = My.Resources.bbl_datasmanagement
+    End Sub
+
     Private Sub Text_menu_concertedit_Click(sender As Object, e As EventArgs) Handles Text_menu_concertedit.Click
         If Filever_text.Text = "JP" Then
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
@@ -430,7 +454,7 @@ Public Class TLSE_hub
             Select_music.SelectedItem = My.Settings.Para_selmusic
         Catch ex As Exception
         End Try
-        TLSE_language()
+        'TLSE_language()
     End Sub
 
     Public Sub TLSE_language()

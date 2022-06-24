@@ -323,6 +323,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\bbl_savefilesettings_act.png" />
+    <None Include="Resources\bbl_savefilesettings.png" />
+    <None Include="Resources\bbl_islandsettings_act.png" />
+    <None Include="Resources\bbl_islandsettings.png" />
+    <None Include="Resources\bbl_islandinfo_act.png" />
+    <None Include="Resources\bbl_islandinfo.png" />
+    <None Include="Resources\bbl_islandconfig_act.png" />
+    <None Include="Resources\bbl_islandconfig.png" />
+    <None Include="Resources\icon_datasmenu.png" />
+    <None Include="Resources\bbl_datasmanagement_act.png" />
+    <None Include="Resources\bbl_datasmanagement.png" />
+    <None Include="Resources\bbl_datasedition_act.png" />
+    <None Include="Resources\bbl_datasedition.png" />
     <None Include="Resources\icon_arrowexp_righton.png" />
     <None Include="Resources\icon_arrowexp_right.png" />
     <None Include="Resources\icon_arrowexp_maxrighton.png" />

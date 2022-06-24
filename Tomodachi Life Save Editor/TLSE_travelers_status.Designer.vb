@@ -31,6 +31,7 @@ Partial Class TLSE_travelers_status
         Me.Menuflow_text_itemsedition = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.TLSE_header = New System.Windows.Forms.Panel()
         Me.TLSE_filepath = New System.Windows.Forms.TextBox()
         Me.Select_language = New System.Windows.Forms.ComboBox()
@@ -132,7 +133,6 @@ Partial Class TLSE_travelers_status
         Me.valu_justarrive = New System.Windows.Forms.NumericUpDown()
         Me.Text_travelersname = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -262,6 +262,19 @@ Partial Class TLSE_travelers_status
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Travelers status"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label17
+        '
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.ForeColor = System.Drawing.Color.Red
+        Me.Label17.Location = New System.Drawing.Point(373, 0)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(415, 54)
+        Me.Label17.TabIndex = 357
+        Me.Label17.Text = "You can only have 15 Miis at same time in your island" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Make sure your Miis don't " &
+    "have same tent place " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Don't set all Miis in same location (''Where'' feature)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) &
+    "or save file will be corrupted"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TLSE_header
         '
@@ -1418,19 +1431,6 @@ Partial Class TLSE_travelers_status
         Me.Label16.TabIndex = 384
         Me.Label16.Text = "Traveler's name"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label17
-        '
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.ForeColor = System.Drawing.Color.Red
-        Me.Label17.Location = New System.Drawing.Point(373, 0)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(415, 54)
-        Me.Label17.TabIndex = 357
-        Me.Label17.Text = "You can only have 15 Miis at same time in your island" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Make sure your Miis don't " &
-    "have same tent place " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Don't set all Miis in same location (''Where'' feature)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) &
-    "or save file will be corrupted"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TLSE_travelers_status
         '

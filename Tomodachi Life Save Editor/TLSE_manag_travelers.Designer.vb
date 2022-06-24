@@ -719,11 +719,9 @@ Partial Class TLSE_manag_travelers
         Me.Label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Label1.Location = New System.Drawing.Point(68, 141)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(750, 40)
+        Me.Label1.Size = New System.Drawing.Size(750, 58)
         Me.Label1.TabIndex = 320
-        Me.Label1.Text = "Warning, with other mii files than .TLTRAVELER files replace only an existing Mii" &
-    " or your save file will be corrupted" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You can only replace empty travelers by .T" &
-    "LTRAVERLER files"
+        Me.Label1.Text = resources.GetString("Label1.Text")
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PictureBox1

@@ -619,9 +619,10 @@ Partial Class TLSE_manag_mii
         Me.Label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Label1.Location = New System.Drawing.Point(174, 73)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(537, 23)
+        Me.Label1.Size = New System.Drawing.Size(537, 43)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Warning, replace only an existing Mii or your save file will be corrupted"
+        Me.Label1.Text = "Warning, replace only an existing Mii or your save file will be corrupted" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & ".mii f" &
+    "iles can now be used, be sure of its origin or your save file will be corrupted"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Panel_management
