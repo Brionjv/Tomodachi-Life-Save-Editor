@@ -135,7 +135,8 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_islandedit_Click(sender As Object, e As EventArgs) Handles Text_menu_islandedit.Click
-
+        Hidemenu()
+        TLSE_menu_islandedit.Visible = True
     End Sub
 
     Private Sub Text_menu_islandedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_islandedit.MouseMove
@@ -252,6 +253,22 @@ Public Class TLSE_hub
         Menu_interactions.BackgroundImage = My.Resources.bbl_interaction_act
     End Sub
 
+    Private Sub Text_menu_islandconfig_Click(sender As Object, e As EventArgs) Handles Text_menu_islandconfig.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_islandconfig.TLSE_logo_update.Visible = True
+        End If
+        TLSE_islandconfig.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_islandconfig_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_islandconfig.MouseMove
+        Menu_islandconfig.BackgroundImage = My.Resources.bbl_islandconfig_act
+    End Sub
+
+    Private Sub Text_menu_islandconfig_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_islandconfig.MouseLeave
+        Menu_islandconfig.BackgroundImage = My.Resources.bbl_islandconfig
+    End Sub
+
     Private Sub Text_menu_relationships_Click(sender As Object, e As EventArgs) Handles Text_menu_relationships.Click
         If Filever_text.Text = "JP" Then
             If TLSE_logo_update.Visible = True Then
@@ -289,6 +306,19 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Icon_menu_miiedit_Click(sender As Object, e As EventArgs) Handles Icon_menu_miiedit.Click
+        Hidemenu()
+        TLSE_menu.Visible = True
+    End Sub
+
+    Private Sub Icon_menu_islandedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_menu_islandedit.MouseMove
+        Icon_menu_islandedit.Image = My.Resources.icon_menu_on
+    End Sub
+
+    Private Sub Icon_menu_islandedit_MouseLeave(sender As Object, e As EventArgs) Handles Icon_menu_islandedit.MouseLeave
+        Icon_menu_islandedit.Image = My.Resources.icon_menu_off
+    End Sub
+
+    Private Sub Icon_menu_islandedit_Click(sender As Object, e As EventArgs) Handles Icon_menu_islandedit.Click
         Hidemenu()
         TLSE_menu.Visible = True
     End Sub
@@ -437,6 +467,7 @@ Public Class TLSE_hub
         TLSE_menu_Itemsedition.Visible = False
         TLSE_menu_miimanagement.Visible = False
         TLSE_menu_travelersedit.Visible = False
+        TLSE_menu_islandedit.Visible = False
     End Sub
 
     Private Sub TLSE_hub_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -636,5 +667,6 @@ Public Class TLSE_hub
     Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
         Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
     End Sub
+
 
 End Class

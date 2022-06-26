@@ -108,6 +108,12 @@
     <Compile Include="TLSE_hub.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_islandconfig.Designer.vb">
+      <DependentUpon>TLSE_islandconfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_islandconfig.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_itemsedit.Designer.vb">
       <DependentUpon>TLSE_itemsedit.vb</DependentUpon>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_hub.resx">
       <DependentUpon>TLSE_hub.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_islandconfig.resx">
+      <DependentUpon>TLSE_islandconfig.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_itemsedit.resx">
       <DependentUpon>TLSE_itemsedit.vb</DependentUpon>
@@ -323,6 +332,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_new_fra.gif" />
+    <None Include="Resources\icon_new_eng.gif" />
+    <None Include="Resources\iconbuilding_rooftop_on.png" />
+    <None Include="Resources\iconbuilding_rooftop_off.png" />
+    <None Include="Resources\bg_rankingboard.png" />
+    <None Include="Resources\bg_map.png" />
+    <None Include="Resources\bg_islandedit.png" />
+    <None Include="Resources\icon_islandedit_savefilesettings.png" />
+    <None Include="Resources\icon_islandedit_islandsettings.png" />
+    <None Include="Resources\tab_islandedit_base.png" />
+    <None Include="Resources\tab_islandedit.png" />
     <None Include="Resources\bbl_savefilesettings_act.png" />
     <None Include="Resources\bbl_savefilesettings.png" />
     <None Include="Resources\bbl_islandsettings_act.png" />
