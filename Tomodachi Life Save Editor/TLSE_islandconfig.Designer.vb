@@ -64,10 +64,79 @@ Partial Class TLSE_islandconfig
         Me.TLSE_logo = New System.Windows.Forms.PictureBox()
         Me.AdvH_islandbuild = New System.Windows.Forms.PictureBox()
         Me.Panel_islandbuilding = New System.Windows.Forms.Panel()
+        Me.icon_rooftop = New System.Windows.Forms.PictureBox()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown24 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.Panel26 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown23 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
+        Me.Panel25 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown22 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
+        Me.Panel24 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown21 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
+        Me.Panel23 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown20 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.Panel22 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown19 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
+        Me.Panel21 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown18 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
+        Me.Panel20 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown17 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.Panel19 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown16 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
+        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown15 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown14 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.Panel16 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown13 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.Panel15 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown12 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.Panel14 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown11 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown9 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown8 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown7 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.AdvH_eventfountain = New System.Windows.Forms.PictureBox()
         Me.AdvH_apartrenov = New System.Windows.Forms.PictureBox()
         Me.valu_eventfountain = New System.Windows.Forms.NumericUpDown()
-        Me.Icon_eventfountain = New System.Windows.Forms.PictureBox()
         Me.Title_eventfountain = New System.Windows.Forms.Label()
         Me.valu_appartrenov = New System.Windows.Forms.NumericUpDown()
         Me.Icon_appartrenov = New System.Windows.Forms.PictureBox()
@@ -97,78 +166,11 @@ Partial Class TLSE_islandconfig
         Me.Icon_rank_vitality = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.icon_rooftop = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown4 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown5 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown6 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown7 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown8 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown9 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.Panel13 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown10 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.Panel14 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown11 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.Panel15 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown12 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
-        Me.Panel16 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown13 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
-        Me.Panel17 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown14 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.Panel18 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown15 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.Panel19 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown16 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox17 = New System.Windows.Forms.PictureBox()
-        Me.Panel20 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown17 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox18 = New System.Windows.Forms.PictureBox()
-        Me.Panel21 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown18 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox19 = New System.Windows.Forms.PictureBox()
-        Me.Panel22 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown19 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox20 = New System.Windows.Forms.PictureBox()
-        Me.Panel23 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown20 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox21 = New System.Windows.Forms.PictureBox()
-        Me.Panel24 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown21 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox22 = New System.Windows.Forms.PictureBox()
-        Me.Panel25 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown22 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox23 = New System.Windows.Forms.PictureBox()
-        Me.Panel26 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown23 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox24 = New System.Windows.Forms.PictureBox()
-        Me.Panel27 = New System.Windows.Forms.Panel()
-        Me.NumericUpDown24 = New System.Windows.Forms.NumericUpDown()
-        Me.PictureBox25 = New System.Windows.Forms.PictureBox()
+        Me.Panel28 = New System.Windows.Forms.Panel()
+        Me.PictureBox26 = New System.Windows.Forms.PictureBox()
+        Me.Panel29 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -195,10 +197,79 @@ Partial Class TLSE_islandconfig
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_islandbuild, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel_islandbuilding.SuspendLayout()
+        CType(Me.icon_rooftop, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel3.SuspendLayout()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel27.SuspendLayout()
+        CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel26.SuspendLayout()
+        CType(Me.NumericUpDown23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel25.SuspendLayout()
+        CType(Me.NumericUpDown22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel24.SuspendLayout()
+        CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel23.SuspendLayout()
+        CType(Me.NumericUpDown20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel22.SuspendLayout()
+        CType(Me.NumericUpDown19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel21.SuspendLayout()
+        CType(Me.NumericUpDown18, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel20.SuspendLayout()
+        CType(Me.NumericUpDown17, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel19.SuspendLayout()
+        CType(Me.NumericUpDown16, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel18.SuspendLayout()
+        CType(Me.NumericUpDown15, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel17.SuspendLayout()
+        CType(Me.NumericUpDown14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel16.SuspendLayout()
+        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel15.SuspendLayout()
+        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel14.SuspendLayout()
+        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel13.SuspendLayout()
+        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel12.SuspendLayout()
+        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel11.SuspendLayout()
+        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel10.SuspendLayout()
+        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel9.SuspendLayout()
+        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel6.SuspendLayout()
+        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel5.SuspendLayout()
+        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel4.SuspendLayout()
+        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_apartrenov, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Icon_eventfountain, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_appartrenov, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_appartrenov, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_rankboard, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -225,77 +296,9 @@ Partial Class TLSE_islandconfig
         CType(Me.Icon_rank_vitality, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel29.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.icon_rooftop, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel4.SuspendLayout()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel5.SuspendLayout()
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel6.SuspendLayout()
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel9.SuspendLayout()
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel10.SuspendLayout()
-        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel11.SuspendLayout()
-        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel12.SuspendLayout()
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel13.SuspendLayout()
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel14.SuspendLayout()
-        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel15.SuspendLayout()
-        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel16.SuspendLayout()
-        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel17.SuspendLayout()
-        CType(Me.NumericUpDown14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel18.SuspendLayout()
-        CType(Me.NumericUpDown15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel19.SuspendLayout()
-        CType(Me.NumericUpDown16, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel20.SuspendLayout()
-        CType(Me.NumericUpDown17, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel21.SuspendLayout()
-        CType(Me.NumericUpDown18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel22.SuspendLayout()
-        CType(Me.NumericUpDown19, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel23.SuspendLayout()
-        CType(Me.NumericUpDown20, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel24.SuspendLayout()
-        CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel25.SuspendLayout()
-        CType(Me.NumericUpDown22, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel26.SuspendLayout()
-        CType(Me.NumericUpDown23, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel27.SuspendLayout()
-        CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -718,7 +721,7 @@ Partial Class TLSE_islandconfig
         Me.Minimizebutton.BackColor = System.Drawing.Color.Transparent
         Me.Minimizebutton.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Minimizebutton.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.minimize
-        Me.Minimizebutton.Location = New System.Drawing.Point(559, 0)
+        Me.Minimizebutton.Location = New System.Drawing.Point(560, 0)
         Me.Minimizebutton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Minimizebutton.Name = "Minimizebutton"
         Me.Minimizebutton.Size = New System.Drawing.Size(45, 35)
@@ -740,7 +743,7 @@ Partial Class TLSE_islandconfig
         Me.Closebutton.BackColor = System.Drawing.Color.Transparent
         Me.Closebutton.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Closebutton.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.close_tl
-        Me.Closebutton.Location = New System.Drawing.Point(604, 0)
+        Me.Closebutton.Location = New System.Drawing.Point(605, 0)
         Me.Closebutton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Closebutton.Name = "Closebutton"
         Me.Closebutton.Size = New System.Drawing.Size(45, 35)
@@ -780,7 +783,7 @@ Partial Class TLSE_islandconfig
         Me.AdvH_islandbuild.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_islandbuild.ErrorImage = Nothing
         Me.AdvH_islandbuild.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.AdvH_islandbuild.Location = New System.Drawing.Point(770, 413)
+        Me.AdvH_islandbuild.Location = New System.Drawing.Point(770, 370)
         Me.AdvH_islandbuild.Name = "AdvH_islandbuild"
         Me.AdvH_islandbuild.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_islandbuild.TabIndex = 322
@@ -792,6 +795,7 @@ Partial Class TLSE_islandconfig
         Me.Panel_islandbuilding.BackColor = System.Drawing.Color.Orange
         Me.Panel_islandbuilding.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_map
         Me.Panel_islandbuilding.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel_islandbuilding.Controls.Add(Me.icon_rooftop)
         Me.Panel_islandbuilding.Controls.Add(Me.Panel3)
         Me.Panel_islandbuilding.Controls.Add(Me.Panel27)
         Me.Panel_islandbuilding.Controls.Add(Me.Panel26)
@@ -815,17 +819,834 @@ Partial Class TLSE_islandconfig
         Me.Panel_islandbuilding.Controls.Add(Me.Panel6)
         Me.Panel_islandbuilding.Controls.Add(Me.Panel5)
         Me.Panel_islandbuilding.Controls.Add(Me.Panel4)
-        Me.Panel_islandbuilding.Location = New System.Drawing.Point(440, 185)
+        Me.Panel_islandbuilding.Location = New System.Drawing.Point(440, 142)
         Me.Panel_islandbuilding.Name = "Panel_islandbuilding"
         Me.Panel_islandbuilding.Size = New System.Drawing.Size(330, 250)
         Me.Panel_islandbuilding.TabIndex = 321
+        '
+        'icon_rooftop
+        '
+        Me.icon_rooftop.BackColor = System.Drawing.Color.Transparent
+        Me.icon_rooftop.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.icon_rooftop.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_rooftop_off
+        Me.icon_rooftop.Location = New System.Drawing.Point(94, 7)
+        Me.icon_rooftop.Name = "icon_rooftop"
+        Me.icon_rooftop.Size = New System.Drawing.Size(46, 40)
+        Me.icon_rooftop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.icon_rooftop.TabIndex = 337
+        Me.icon_rooftop.TabStop = False
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Transparent
+        Me.Panel3.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_miiapartment_off
+        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel3.Controls.Add(Me.NumericUpDown2)
+        Me.Panel3.Controls.Add(Me.PictureBox3)
+        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel3.Location = New System.Drawing.Point(85, 47)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(64, 59)
+        Me.Panel3.TabIndex = 338
+        '
+        'NumericUpDown2
+        '
+        Me.NumericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown2.Location = New System.Drawing.Point(1, 42)
+        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown2.TabIndex = 339
+        Me.NumericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown2.Visible = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox3.Location = New System.Drawing.Point(13, 1)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox3.TabIndex = 338
+        Me.PictureBox3.TabStop = False
+        '
+        'Panel27
+        '
+        Me.Panel27.BackColor = System.Drawing.Color.Transparent
+        Me.Panel27.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_miinews_off
+        Me.Panel27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel27.Controls.Add(Me.NumericUpDown24)
+        Me.Panel27.Controls.Add(Me.PictureBox25)
+        Me.Panel27.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel27.Location = New System.Drawing.Point(279, 16)
+        Me.Panel27.Name = "Panel27"
+        Me.Panel27.Size = New System.Drawing.Size(44, 58)
+        Me.Panel27.TabIndex = 360
+        '
+        'NumericUpDown24
+        '
+        Me.NumericUpDown24.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown24.Location = New System.Drawing.Point(1, 41)
+        Me.NumericUpDown24.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown24.Name = "NumericUpDown24"
+        Me.NumericUpDown24.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown24.TabIndex = 339
+        Me.NumericUpDown24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown24.Visible = False
+        '
+        'PictureBox25
+        '
+        Me.PictureBox25.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox25.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox25.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox25.Location = New System.Drawing.Point(3, 1)
+        Me.PictureBox25.Name = "PictureBox25"
+        Me.PictureBox25.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox25.TabIndex = 338
+        Me.PictureBox25.TabStop = False
+        '
+        'Panel26
+        '
+        Me.Panel26.BackColor = System.Drawing.Color.Transparent
+        Me.Panel26.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_miihomes_off
+        Me.Panel26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel26.Controls.Add(Me.NumericUpDown23)
+        Me.Panel26.Controls.Add(Me.PictureBox24)
+        Me.Panel26.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel26.Location = New System.Drawing.Point(200, 58)
+        Me.Panel26.Name = "Panel26"
+        Me.Panel26.Size = New System.Drawing.Size(48, 48)
+        Me.Panel26.TabIndex = 359
+        '
+        'NumericUpDown23
+        '
+        Me.NumericUpDown23.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown23.Location = New System.Drawing.Point(1, 31)
+        Me.NumericUpDown23.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown23.Name = "NumericUpDown23"
+        Me.NumericUpDown23.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown23.TabIndex = 339
+        Me.NumericUpDown23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown23.Visible = False
+        '
+        'PictureBox24
+        '
+        Me.PictureBox24.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox24.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox24.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox24.Location = New System.Drawing.Point(5, 1)
+        Me.PictureBox24.Name = "PictureBox24"
+        Me.PictureBox24.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox24.TabIndex = 338
+        Me.PictureBox24.TabStop = False
+        '
+        'Panel25
+        '
+        Me.Panel25.BackColor = System.Drawing.Color.Transparent
+        Me.Panel25.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_townhall_off
+        Me.Panel25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel25.Controls.Add(Me.NumericUpDown22)
+        Me.Panel25.Controls.Add(Me.PictureBox23)
+        Me.Panel25.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel25.Location = New System.Drawing.Point(151, 58)
+        Me.Panel25.Name = "Panel25"
+        Me.Panel25.Size = New System.Drawing.Size(48, 48)
+        Me.Panel25.TabIndex = 358
+        '
+        'NumericUpDown22
+        '
+        Me.NumericUpDown22.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown22.Location = New System.Drawing.Point(1, 31)
+        Me.NumericUpDown22.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown22.Name = "NumericUpDown22"
+        Me.NumericUpDown22.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown22.TabIndex = 339
+        Me.NumericUpDown22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown22.Visible = False
+        '
+        'PictureBox23
+        '
+        Me.PictureBox23.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox23.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox23.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox23.Location = New System.Drawing.Point(5, 1)
+        Me.PictureBox23.Name = "PictureBox23"
+        Me.PictureBox23.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox23.TabIndex = 338
+        Me.PictureBox23.TabStop = False
+        '
+        'Panel24
+        '
+        Me.Panel24.BackColor = System.Drawing.Color.Transparent
+        Me.Panel24.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_plane_off
+        Me.Panel24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel24.Controls.Add(Me.NumericUpDown21)
+        Me.Panel24.Controls.Add(Me.PictureBox22)
+        Me.Panel24.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel24.Location = New System.Drawing.Point(269, 163)
+        Me.Panel24.Name = "Panel24"
+        Me.Panel24.Size = New System.Drawing.Size(42, 42)
+        Me.Panel24.TabIndex = 357
+        '
+        'NumericUpDown21
+        '
+        Me.NumericUpDown21.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown21.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown21.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown21.Name = "NumericUpDown21"
+        Me.NumericUpDown21.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown21.TabIndex = 339
+        Me.NumericUpDown21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown21.Visible = False
+        '
+        'PictureBox22
+        '
+        Me.PictureBox22.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox22.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox22.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox22.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox22.Name = "PictureBox22"
+        Me.PictureBox22.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox22.TabIndex = 338
+        Me.PictureBox22.TabStop = False
+        '
+        'Panel23
+        '
+        Me.Panel23.BackColor = System.Drawing.Color.Transparent
+        Me.Panel23.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_port_off
+        Me.Panel23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel23.Controls.Add(Me.NumericUpDown20)
+        Me.Panel23.Controls.Add(Me.PictureBox21)
+        Me.Panel23.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel23.Location = New System.Drawing.Point(213, 165)
+        Me.Panel23.Name = "Panel23"
+        Me.Panel23.Size = New System.Drawing.Size(42, 42)
+        Me.Panel23.TabIndex = 356
+        '
+        'NumericUpDown20
+        '
+        Me.NumericUpDown20.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown20.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown20.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown20.Name = "NumericUpDown20"
+        Me.NumericUpDown20.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown20.TabIndex = 339
+        Me.NumericUpDown20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown20.Visible = False
+        '
+        'PictureBox21
+        '
+        Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox21.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox21.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox21.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox21.Name = "PictureBox21"
+        Me.PictureBox21.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox21.TabIndex = 338
+        Me.PictureBox21.TabStop = False
+        '
+        'Panel22
+        '
+        Me.Panel22.BackColor = System.Drawing.Color.Transparent
+        Me.Panel22.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_campground_off
+        Me.Panel22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel22.Controls.Add(Me.NumericUpDown19)
+        Me.Panel22.Controls.Add(Me.PictureBox20)
+        Me.Panel22.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel22.Location = New System.Drawing.Point(145, 154)
+        Me.Panel22.Name = "Panel22"
+        Me.Panel22.Size = New System.Drawing.Size(42, 42)
+        Me.Panel22.TabIndex = 355
+        '
+        'NumericUpDown19
+        '
+        Me.NumericUpDown19.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown19.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown19.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown19.Name = "NumericUpDown19"
+        Me.NumericUpDown19.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown19.TabIndex = 339
+        Me.NumericUpDown19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown19.Visible = False
+        '
+        'PictureBox20
+        '
+        Me.PictureBox20.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox20.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox20.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox20.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox20.Name = "PictureBox20"
+        Me.PictureBox20.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox20.TabIndex = 338
+        Me.PictureBox20.TabStop = False
+        '
+        'Panel21
+        '
+        Me.Panel21.BackColor = System.Drawing.Color.Transparent
+        Me.Panel21.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_beach_off
+        Me.Panel21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel21.Controls.Add(Me.NumericUpDown18)
+        Me.Panel21.Controls.Add(Me.PictureBox19)
+        Me.Panel21.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel21.Location = New System.Drawing.Point(102, 169)
+        Me.Panel21.Name = "Panel21"
+        Me.Panel21.Size = New System.Drawing.Size(42, 42)
+        Me.Panel21.TabIndex = 354
+        '
+        'NumericUpDown18
+        '
+        Me.NumericUpDown18.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown18.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown18.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown18.Name = "NumericUpDown18"
+        Me.NumericUpDown18.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown18.TabIndex = 339
+        Me.NumericUpDown18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown18.Visible = False
+        '
+        'PictureBox19
+        '
+        Me.PictureBox19.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox19.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox19.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox19.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox19.Name = "PictureBox19"
+        Me.PictureBox19.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox19.TabIndex = 338
+        Me.PictureBox19.TabStop = False
+        '
+        'Panel20
+        '
+        Me.Panel20.BackColor = System.Drawing.Color.Transparent
+        Me.Panel20.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_importwear_off
+        Me.Panel20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel20.Controls.Add(Me.NumericUpDown17)
+        Me.Panel20.Controls.Add(Me.PictureBox18)
+        Me.Panel20.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel20.Location = New System.Drawing.Point(59, 155)
+        Me.Panel20.Name = "Panel20"
+        Me.Panel20.Size = New System.Drawing.Size(42, 42)
+        Me.Panel20.TabIndex = 353
+        '
+        'NumericUpDown17
+        '
+        Me.NumericUpDown17.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown17.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown17.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown17.Name = "NumericUpDown17"
+        Me.NumericUpDown17.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown17.TabIndex = 339
+        Me.NumericUpDown17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown17.Visible = False
+        '
+        'PictureBox18
+        '
+        Me.PictureBox18.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox18.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox18.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox18.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox18.Name = "PictureBox18"
+        Me.PictureBox18.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox18.TabIndex = 338
+        Me.PictureBox18.TabStop = False
+        '
+        'Panel19
+        '
+        Me.Panel19.BackColor = System.Drawing.Color.Transparent
+        Me.Panel19.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_foodmart_off
+        Me.Panel19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel19.Controls.Add(Me.NumericUpDown16)
+        Me.Panel19.Controls.Add(Me.PictureBox17)
+        Me.Panel19.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel19.Location = New System.Drawing.Point(15, 155)
+        Me.Panel19.Name = "Panel19"
+        Me.Panel19.Size = New System.Drawing.Size(42, 42)
+        Me.Panel19.TabIndex = 352
+        '
+        'NumericUpDown16
+        '
+        Me.NumericUpDown16.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown16.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown16.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown16.Name = "NumericUpDown16"
+        Me.NumericUpDown16.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown16.TabIndex = 339
+        Me.NumericUpDown16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown16.Visible = False
+        '
+        'PictureBox17
+        '
+        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox17.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox17.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox17.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox17.Name = "PictureBox17"
+        Me.PictureBox17.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox17.TabIndex = 338
+        Me.PictureBox17.TabStop = False
+        '
+        'Panel18
+        '
+        Me.Panel18.BackColor = System.Drawing.Color.Transparent
+        Me.Panel18.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_hatsshop_off
+        Me.Panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel18.Controls.Add(Me.NumericUpDown15)
+        Me.Panel18.Controls.Add(Me.PictureBox16)
+        Me.Panel18.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel18.Location = New System.Drawing.Point(20, 111)
+        Me.Panel18.Name = "Panel18"
+        Me.Panel18.Size = New System.Drawing.Size(42, 42)
+        Me.Panel18.TabIndex = 351
+        '
+        'NumericUpDown15
+        '
+        Me.NumericUpDown15.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown15.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown15.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown15.Name = "NumericUpDown15"
+        Me.NumericUpDown15.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown15.TabIndex = 339
+        Me.NumericUpDown15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown15.Visible = False
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox16.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox16.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox16.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox16.TabIndex = 338
+        Me.PictureBox16.TabStop = False
+        '
+        'Panel17
+        '
+        Me.Panel17.BackColor = System.Drawing.Color.Transparent
+        Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_fountain_off
+        Me.Panel17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel17.Controls.Add(Me.NumericUpDown14)
+        Me.Panel17.Controls.Add(Me.PictureBox15)
+        Me.Panel17.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel17.Location = New System.Drawing.Point(63, 111)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(42, 42)
+        Me.Panel17.TabIndex = 350
+        '
+        'NumericUpDown14
+        '
+        Me.NumericUpDown14.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown14.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown14.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown14.Name = "NumericUpDown14"
+        Me.NumericUpDown14.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown14.TabIndex = 339
+        Me.NumericUpDown14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown14.Visible = False
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox15.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox15.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox15.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox15.TabIndex = 338
+        Me.PictureBox15.TabStop = False
+        '
+        'Panel16
+        '
+        Me.Panel16.BackColor = System.Drawing.Color.Transparent
+        Me.Panel16.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_concerthall_off
+        Me.Panel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel16.Controls.Add(Me.NumericUpDown13)
+        Me.Panel16.Controls.Add(Me.PictureBox14)
+        Me.Panel16.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel16.Location = New System.Drawing.Point(105, 111)
+        Me.Panel16.Name = "Panel16"
+        Me.Panel16.Size = New System.Drawing.Size(42, 42)
+        Me.Panel16.TabIndex = 349
+        '
+        'NumericUpDown13
+        '
+        Me.NumericUpDown13.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown13.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown13.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown13.Name = "NumericUpDown13"
+        Me.NumericUpDown13.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown13.TabIndex = 339
+        Me.NumericUpDown13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown13.Visible = False
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox14.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox14.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox14.TabIndex = 338
+        Me.PictureBox14.TabStop = False
+        '
+        'Panel15
+        '
+        Me.Panel15.BackColor = System.Drawing.Color.Transparent
+        Me.Panel15.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_rankingboard_off
+        Me.Panel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel15.Controls.Add(Me.NumericUpDown12)
+        Me.Panel15.Controls.Add(Me.PictureBox13)
+        Me.Panel15.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel15.Location = New System.Drawing.Point(147, 111)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(42, 42)
+        Me.Panel15.TabIndex = 348
+        '
+        'NumericUpDown12
+        '
+        Me.NumericUpDown12.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown12.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown12.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown12.Name = "NumericUpDown12"
+        Me.NumericUpDown12.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown12.TabIndex = 339
+        Me.NumericUpDown12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown12.Visible = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox13.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox13.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox13.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox13.TabIndex = 338
+        Me.PictureBox13.TabStop = False
+        '
+        'Panel14
+        '
+        Me.Panel14.BackColor = System.Drawing.Color.Transparent
+        Me.Panel14.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_compatibilitytester_off
+        Me.Panel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel14.Controls.Add(Me.NumericUpDown11)
+        Me.Panel14.Controls.Add(Me.PictureBox12)
+        Me.Panel14.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel14.Location = New System.Drawing.Point(190, 116)
+        Me.Panel14.Name = "Panel14"
+        Me.Panel14.Size = New System.Drawing.Size(42, 42)
+        Me.Panel14.TabIndex = 347
+        '
+        'NumericUpDown11
+        '
+        Me.NumericUpDown11.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown11.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown11.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown11.Name = "NumericUpDown11"
+        Me.NumericUpDown11.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown11.TabIndex = 339
+        Me.NumericUpDown11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown11.Visible = False
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox12.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox12.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox12.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox12.TabIndex = 338
+        Me.PictureBox12.TabStop = False
+        '
+        'Panel13
+        '
+        Me.Panel13.BackColor = System.Drawing.Color.Transparent
+        Me.Panel13.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_photostudio_off
+        Me.Panel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel13.Controls.Add(Me.NumericUpDown10)
+        Me.Panel13.Controls.Add(Me.PictureBox11)
+        Me.Panel13.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel13.Location = New System.Drawing.Point(237, 111)
+        Me.Panel13.Name = "Panel13"
+        Me.Panel13.Size = New System.Drawing.Size(42, 42)
+        Me.Panel13.TabIndex = 346
+        '
+        'NumericUpDown10
+        '
+        Me.NumericUpDown10.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown10.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown10.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown10.Name = "NumericUpDown10"
+        Me.NumericUpDown10.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown10.TabIndex = 339
+        Me.NumericUpDown10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown10.Visible = False
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox11.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox11.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox11.TabIndex = 338
+        Me.PictureBox11.TabStop = False
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.Transparent
+        Me.Panel12.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_cafe_off
+        Me.Panel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel12.Controls.Add(Me.NumericUpDown9)
+        Me.Panel12.Controls.Add(Me.PictureBox10)
+        Me.Panel12.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel12.Location = New System.Drawing.Point(279, 119)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(42, 42)
+        Me.Panel12.TabIndex = 345
+        '
+        'NumericUpDown9
+        '
+        Me.NumericUpDown9.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown9.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown9.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown9.Name = "NumericUpDown9"
+        Me.NumericUpDown9.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown9.TabIndex = 339
+        Me.NumericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown9.Visible = False
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox10.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox10.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox10.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox10.TabIndex = 338
+        Me.PictureBox10.TabStop = False
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.Color.Transparent
+        Me.Panel11.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_amusementpark_off
+        Me.Panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel11.Controls.Add(Me.NumericUpDown8)
+        Me.Panel11.Controls.Add(Me.PictureBox9)
+        Me.Panel11.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel11.Location = New System.Drawing.Point(280, 76)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(42, 42)
+        Me.Panel11.TabIndex = 344
+        '
+        'NumericUpDown8
+        '
+        Me.NumericUpDown8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown8.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown8.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown8.Name = "NumericUpDown8"
+        Me.NumericUpDown8.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown8.TabIndex = 339
+        Me.NumericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown8.Visible = False
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox9.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox9.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox9.TabIndex = 338
+        Me.PictureBox9.TabStop = False
+        '
+        'Panel10
+        '
+        Me.Panel10.BackColor = System.Drawing.Color.Transparent
+        Me.Panel10.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_park_off
+        Me.Panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel10.Controls.Add(Me.NumericUpDown7)
+        Me.Panel10.Controls.Add(Me.PictureBox8)
+        Me.Panel10.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel10.Location = New System.Drawing.Point(237, 15)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(42, 42)
+        Me.Panel10.TabIndex = 343
+        '
+        'NumericUpDown7
+        '
+        Me.NumericUpDown7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown7.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown7.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown7.Name = "NumericUpDown7"
+        Me.NumericUpDown7.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown7.TabIndex = 339
+        Me.NumericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown7.Visible = False
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox8.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox8.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox8.TabIndex = 338
+        Me.PictureBox8.TabStop = False
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.Color.Transparent
+        Me.Panel9.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_tower_off
+        Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel9.Controls.Add(Me.NumericUpDown6)
+        Me.Panel9.Controls.Add(Me.PictureBox7)
+        Me.Panel9.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel9.Location = New System.Drawing.Point(195, 14)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(42, 42)
+        Me.Panel9.TabIndex = 342
+        '
+        'NumericUpDown6
+        '
+        Me.NumericUpDown6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown6.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown6.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown6.Name = "NumericUpDown6"
+        Me.NumericUpDown6.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown6.TabIndex = 339
+        Me.NumericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown6.Visible = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox7.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox7.TabIndex = 338
+        Me.PictureBox7.TabStop = False
+        '
+        'Panel6
+        '
+        Me.Panel6.BackColor = System.Drawing.Color.Transparent
+        Me.Panel6.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_interiorshop_off
+        Me.Panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel6.Controls.Add(Me.NumericUpDown5)
+        Me.Panel6.Controls.Add(Me.PictureBox6)
+        Me.Panel6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel6.Location = New System.Drawing.Point(152, 15)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(42, 42)
+        Me.Panel6.TabIndex = 341
+        '
+        'NumericUpDown5
+        '
+        Me.NumericUpDown5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown5.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown5.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown5.Name = "NumericUpDown5"
+        Me.NumericUpDown5.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown5.TabIndex = 339
+        Me.NumericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown5.Visible = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox6.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox6.TabIndex = 338
+        Me.PictureBox6.TabStop = False
+        '
+        'Panel5
+        '
+        Me.Panel5.BackColor = System.Drawing.Color.Transparent
+        Me.Panel5.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_pawnshop_off
+        Me.Panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel5.Controls.Add(Me.NumericUpDown4)
+        Me.Panel5.Controls.Add(Me.PictureBox5)
+        Me.Panel5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel5.Location = New System.Drawing.Point(14, 59)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(42, 42)
+        Me.Panel5.TabIndex = 340
+        '
+        'NumericUpDown4
+        '
+        Me.NumericUpDown4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown4.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown4.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown4.Name = "NumericUpDown4"
+        Me.NumericUpDown4.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown4.TabIndex = 339
+        Me.NumericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown4.Visible = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox5.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox5.TabIndex = 338
+        Me.PictureBox5.TabStop = False
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.Transparent
+        Me.Panel4.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_clothingshop_off
+        Me.Panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel4.Controls.Add(Me.NumericUpDown3)
+        Me.Panel4.Controls.Add(Me.PictureBox4)
+        Me.Panel4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel4.Location = New System.Drawing.Point(42, 15)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(42, 42)
+        Me.Panel4.TabIndex = 339
+        '
+        'NumericUpDown3
+        '
+        Me.NumericUpDown3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.NumericUpDown3.Location = New System.Drawing.Point(1, 25)
+        Me.NumericUpDown3.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
+        Me.NumericUpDown3.Name = "NumericUpDown3"
+        Me.NumericUpDown3.Size = New System.Drawing.Size(33, 16)
+        Me.NumericUpDown3.TabIndex = 339
+        Me.NumericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumericUpDown3.Visible = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Default
+        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
+        Me.PictureBox4.Location = New System.Drawing.Point(2, 1)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(38, 18)
+        Me.PictureBox4.TabIndex = 338
+        Me.PictureBox4.TabStop = False
         '
         'AdvH_eventfountain
         '
         Me.AdvH_eventfountain.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_eventfountain.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_eventfountain.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.AdvH_eventfountain.Location = New System.Drawing.Point(134, 318)
+        Me.AdvH_eventfountain.Location = New System.Drawing.Point(144, 402)
         Me.AdvH_eventfountain.Name = "AdvH_eventfountain"
         Me.AdvH_eventfountain.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_eventfountain.TabIndex = 330
@@ -837,7 +1658,7 @@ Partial Class TLSE_islandconfig
         Me.AdvH_apartrenov.BackColor = System.Drawing.Color.Transparent
         Me.AdvH_apartrenov.Cursor = System.Windows.Forms.Cursors.Help
         Me.AdvH_apartrenov.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.AdvH_apartrenov.Location = New System.Drawing.Point(303, 345)
+        Me.AdvH_apartrenov.Location = New System.Drawing.Point(315, 400)
         Me.AdvH_apartrenov.Name = "AdvH_apartrenov"
         Me.AdvH_apartrenov.Size = New System.Drawing.Size(23, 22)
         Me.AdvH_apartrenov.TabIndex = 329
@@ -849,7 +1670,7 @@ Partial Class TLSE_islandconfig
         Me.valu_eventfountain.BackColor = System.Drawing.Color.LightCyan
         Me.valu_eventfountain.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_eventfountain.Hexadecimal = True
-        Me.valu_eventfountain.Location = New System.Drawing.Point(70, 341)
+        Me.valu_eventfountain.Location = New System.Drawing.Point(83, 424)
         Me.valu_eventfountain.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.valu_eventfountain.Name = "valu_eventfountain"
         Me.valu_eventfountain.Size = New System.Drawing.Size(81, 16)
@@ -857,20 +1678,10 @@ Partial Class TLSE_islandconfig
         Me.valu_eventfountain.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.valu_eventfountain.Visible = False
         '
-        'Icon_eventfountain
-        '
-        Me.Icon_eventfountain.BackColor = System.Drawing.Color.Transparent
-        Me.Icon_eventfountain.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_eventfountain.Location = New System.Drawing.Point(87, 300)
-        Me.Icon_eventfountain.Name = "Icon_eventfountain"
-        Me.Icon_eventfountain.Size = New System.Drawing.Size(44, 57)
-        Me.Icon_eventfountain.TabIndex = 327
-        Me.Icon_eventfountain.TabStop = False
-        '
         'Title_eventfountain
         '
         Me.Title_eventfountain.BackColor = System.Drawing.Color.Transparent
-        Me.Title_eventfountain.Location = New System.Drawing.Point(31, 284)
+        Me.Title_eventfountain.Location = New System.Drawing.Point(45, 339)
         Me.Title_eventfountain.Name = "Title_eventfountain"
         Me.Title_eventfountain.Size = New System.Drawing.Size(156, 13)
         Me.Title_eventfountain.TabIndex = 326
@@ -880,7 +1691,7 @@ Partial Class TLSE_islandconfig
         'valu_appartrenov
         '
         Me.valu_appartrenov.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.valu_appartrenov.Location = New System.Drawing.Point(239, 370)
+        Me.valu_appartrenov.Location = New System.Drawing.Point(251, 425)
         Me.valu_appartrenov.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_appartrenov.Name = "valu_appartrenov"
         Me.valu_appartrenov.Size = New System.Drawing.Size(58, 16)
@@ -892,7 +1703,8 @@ Partial Class TLSE_islandconfig
         '
         Me.Icon_appartrenov.BackColor = System.Drawing.Color.Transparent
         Me.Icon_appartrenov.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_appartrenov.Location = New System.Drawing.Point(239, 298)
+        Me.Icon_appartrenov.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_appart_00
+        Me.Icon_appartrenov.Location = New System.Drawing.Point(251, 353)
         Me.Icon_appartrenov.Name = "Icon_appartrenov"
         Me.Icon_appartrenov.Size = New System.Drawing.Size(58, 88)
         Me.Icon_appartrenov.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
@@ -902,7 +1714,7 @@ Partial Class TLSE_islandconfig
         'Title_appartrenov
         '
         Me.Title_appartrenov.BackColor = System.Drawing.Color.Transparent
-        Me.Title_appartrenov.Location = New System.Drawing.Point(190, 284)
+        Me.Title_appartrenov.Location = New System.Drawing.Point(202, 339)
         Me.Title_appartrenov.Name = "Title_appartrenov"
         Me.Title_appartrenov.Size = New System.Drawing.Size(156, 13)
         Me.Title_appartrenov.TabIndex = 325
@@ -1168,7 +1980,7 @@ Partial Class TLSE_islandconfig
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.Icon_AdvH
-        Me.PictureBox1.Location = New System.Drawing.Point(403, 174)
+        Me.PictureBox1.Location = New System.Drawing.Point(593, 453)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(23, 22)
         Me.PictureBox1.TabIndex = 336
@@ -1180,803 +1992,68 @@ Partial Class TLSE_islandconfig
         Me.NumericUpDown1.BackColor = System.Drawing.Color.LightCyan
         Me.NumericUpDown1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.NumericUpDown1.Hexadecimal = True
-        Me.NumericUpDown1.Location = New System.Drawing.Point(306, 197)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(0, 0)
         Me.NumericUpDown1.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(81, 16)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(49, 16)
         Me.NumericUpDown1.TabIndex = 335
         Me.NumericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.NumericUpDown1.Visible = False
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.PictureBox2.Location = New System.Drawing.Point(285, 156)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(112, 57)
-        Me.PictureBox2.TabIndex = 334
-        Me.PictureBox2.TabStop = False
-        '
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(267, 140)
+        Me.Label2.Location = New System.Drawing.Point(-4, 30)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(156, 13)
         Me.Label2.TabIndex = 333
         Me.Label2.Text = "Network panel access"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'icon_rooftop
-        '
-        Me.icon_rooftop.BackColor = System.Drawing.Color.Transparent
-        Me.icon_rooftop.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.icon_rooftop.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_rooftop_off
-        Me.icon_rooftop.Location = New System.Drawing.Point(533, 136)
-        Me.icon_rooftop.Name = "icon_rooftop"
-        Me.icon_rooftop.Size = New System.Drawing.Size(56, 50)
-        Me.icon_rooftop.TabIndex = 337
-        Me.icon_rooftop.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox3.Location = New System.Drawing.Point(13, 1)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox3.TabIndex = 338
-        Me.PictureBox3.TabStop = False
-        '
-        'Panel3
-        '
-        Me.Panel3.BackColor = System.Drawing.Color.Transparent
-        Me.Panel3.Controls.Add(Me.NumericUpDown2)
-        Me.Panel3.Controls.Add(Me.PictureBox3)
-        Me.Panel3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel3.Location = New System.Drawing.Point(85, 47)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(64, 59)
-        Me.Panel3.TabIndex = 338
-        '
-        'NumericUpDown2
-        '
-        Me.NumericUpDown2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown2.Location = New System.Drawing.Point(1, 42)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown2.TabIndex = 339
-        Me.NumericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown2.Visible = False
-        '
-        'Panel4
-        '
-        Me.Panel4.BackColor = System.Drawing.Color.Transparent
-        Me.Panel4.Controls.Add(Me.NumericUpDown3)
-        Me.Panel4.Controls.Add(Me.PictureBox4)
-        Me.Panel4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel4.Location = New System.Drawing.Point(42, 15)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(42, 42)
-        Me.Panel4.TabIndex = 339
-        '
-        'NumericUpDown3
-        '
-        Me.NumericUpDown3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown3.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown3.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown3.TabIndex = 339
-        Me.NumericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown3.Visible = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox4.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox4.TabIndex = 338
-        Me.PictureBox4.TabStop = False
-        '
-        'Panel5
-        '
-        Me.Panel5.BackColor = System.Drawing.Color.Transparent
-        Me.Panel5.Controls.Add(Me.NumericUpDown4)
-        Me.Panel5.Controls.Add(Me.PictureBox5)
-        Me.Panel5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel5.Location = New System.Drawing.Point(14, 59)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(42, 42)
-        Me.Panel5.TabIndex = 340
-        '
-        'NumericUpDown4
-        '
-        Me.NumericUpDown4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown4.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown4.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown4.Name = "NumericUpDown4"
-        Me.NumericUpDown4.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown4.TabIndex = 339
-        Me.NumericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown4.Visible = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox5.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox5.TabIndex = 338
-        Me.PictureBox5.TabStop = False
-        '
-        'Panel6
-        '
-        Me.Panel6.BackColor = System.Drawing.Color.Transparent
-        Me.Panel6.Controls.Add(Me.NumericUpDown5)
-        Me.Panel6.Controls.Add(Me.PictureBox6)
-        Me.Panel6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel6.Location = New System.Drawing.Point(152, 15)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(42, 42)
-        Me.Panel6.TabIndex = 341
-        '
-        'NumericUpDown5
-        '
-        Me.NumericUpDown5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown5.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown5.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown5.Name = "NumericUpDown5"
-        Me.NumericUpDown5.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown5.TabIndex = 339
-        Me.NumericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown5.Visible = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox6.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox6.TabIndex = 338
-        Me.PictureBox6.TabStop = False
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.Color.Transparent
-        Me.Panel9.Controls.Add(Me.NumericUpDown6)
-        Me.Panel9.Controls.Add(Me.PictureBox7)
-        Me.Panel9.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel9.Location = New System.Drawing.Point(195, 14)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(42, 42)
-        Me.Panel9.TabIndex = 342
-        '
-        'NumericUpDown6
-        '
-        Me.NumericUpDown6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown6.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown6.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown6.Name = "NumericUpDown6"
-        Me.NumericUpDown6.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown6.TabIndex = 339
-        Me.NumericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown6.Visible = False
-        '
-        'PictureBox7
-        '
-        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox7.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox7.TabIndex = 338
-        Me.PictureBox7.TabStop = False
-        '
-        'Panel10
-        '
-        Me.Panel10.BackColor = System.Drawing.Color.Transparent
-        Me.Panel10.Controls.Add(Me.NumericUpDown7)
-        Me.Panel10.Controls.Add(Me.PictureBox8)
-        Me.Panel10.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel10.Location = New System.Drawing.Point(237, 15)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(42, 42)
-        Me.Panel10.TabIndex = 343
-        '
-        'NumericUpDown7
-        '
-        Me.NumericUpDown7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown7.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown7.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown7.Name = "NumericUpDown7"
-        Me.NumericUpDown7.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown7.TabIndex = 339
-        Me.NumericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown7.Visible = False
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox8.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox8.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox8.TabIndex = 338
-        Me.PictureBox8.TabStop = False
-        '
-        'Panel11
-        '
-        Me.Panel11.BackColor = System.Drawing.Color.Transparent
-        Me.Panel11.Controls.Add(Me.NumericUpDown8)
-        Me.Panel11.Controls.Add(Me.PictureBox9)
-        Me.Panel11.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel11.Location = New System.Drawing.Point(280, 76)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(42, 42)
-        Me.Panel11.TabIndex = 344
-        '
-        'NumericUpDown8
-        '
-        Me.NumericUpDown8.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown8.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown8.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown8.Name = "NumericUpDown8"
-        Me.NumericUpDown8.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown8.TabIndex = 339
-        Me.NumericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown8.Visible = False
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox9.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox9.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox9.TabIndex = 338
-        Me.PictureBox9.TabStop = False
-        '
-        'Panel12
-        '
-        Me.Panel12.BackColor = System.Drawing.Color.Transparent
-        Me.Panel12.Controls.Add(Me.NumericUpDown9)
-        Me.Panel12.Controls.Add(Me.PictureBox10)
-        Me.Panel12.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel12.Location = New System.Drawing.Point(279, 119)
-        Me.Panel12.Name = "Panel12"
-        Me.Panel12.Size = New System.Drawing.Size(42, 42)
-        Me.Panel12.TabIndex = 345
-        '
-        'NumericUpDown9
-        '
-        Me.NumericUpDown9.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown9.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown9.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown9.Name = "NumericUpDown9"
-        Me.NumericUpDown9.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown9.TabIndex = 339
-        Me.NumericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown9.Visible = False
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox10.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox10.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox10.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox10.TabIndex = 338
-        Me.PictureBox10.TabStop = False
-        '
-        'Panel13
-        '
-        Me.Panel13.BackColor = System.Drawing.Color.Transparent
-        Me.Panel13.Controls.Add(Me.NumericUpDown10)
-        Me.Panel13.Controls.Add(Me.PictureBox11)
-        Me.Panel13.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel13.Location = New System.Drawing.Point(237, 111)
-        Me.Panel13.Name = "Panel13"
-        Me.Panel13.Size = New System.Drawing.Size(42, 42)
-        Me.Panel13.TabIndex = 346
-        '
-        'NumericUpDown10
-        '
-        Me.NumericUpDown10.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown10.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown10.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown10.Name = "NumericUpDown10"
-        Me.NumericUpDown10.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown10.TabIndex = 339
-        Me.NumericUpDown10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown10.Visible = False
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox11.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox11.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox11.TabIndex = 338
-        Me.PictureBox11.TabStop = False
-        '
-        'Panel14
-        '
-        Me.Panel14.BackColor = System.Drawing.Color.Transparent
-        Me.Panel14.Controls.Add(Me.NumericUpDown11)
-        Me.Panel14.Controls.Add(Me.PictureBox12)
-        Me.Panel14.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel14.Location = New System.Drawing.Point(190, 116)
-        Me.Panel14.Name = "Panel14"
-        Me.Panel14.Size = New System.Drawing.Size(42, 42)
-        Me.Panel14.TabIndex = 347
-        '
-        'NumericUpDown11
-        '
-        Me.NumericUpDown11.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown11.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown11.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown11.Name = "NumericUpDown11"
-        Me.NumericUpDown11.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown11.TabIndex = 339
-        Me.NumericUpDown11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown11.Visible = False
-        '
-        'PictureBox12
-        '
-        Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox12.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox12.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox12.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox12.TabIndex = 338
-        Me.PictureBox12.TabStop = False
-        '
-        'Panel15
-        '
-        Me.Panel15.BackColor = System.Drawing.Color.Transparent
-        Me.Panel15.Controls.Add(Me.NumericUpDown12)
-        Me.Panel15.Controls.Add(Me.PictureBox13)
-        Me.Panel15.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel15.Location = New System.Drawing.Point(147, 111)
-        Me.Panel15.Name = "Panel15"
-        Me.Panel15.Size = New System.Drawing.Size(42, 42)
-        Me.Panel15.TabIndex = 348
-        '
-        'NumericUpDown12
-        '
-        Me.NumericUpDown12.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown12.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown12.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown12.Name = "NumericUpDown12"
-        Me.NumericUpDown12.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown12.TabIndex = 339
-        Me.NumericUpDown12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown12.Visible = False
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox13.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox13.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox13.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox13.TabIndex = 338
-        Me.PictureBox13.TabStop = False
-        '
-        'Panel16
-        '
-        Me.Panel16.BackColor = System.Drawing.Color.Transparent
-        Me.Panel16.Controls.Add(Me.NumericUpDown13)
-        Me.Panel16.Controls.Add(Me.PictureBox14)
-        Me.Panel16.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel16.Location = New System.Drawing.Point(105, 111)
-        Me.Panel16.Name = "Panel16"
-        Me.Panel16.Size = New System.Drawing.Size(42, 42)
-        Me.Panel16.TabIndex = 349
-        '
-        'NumericUpDown13
-        '
-        Me.NumericUpDown13.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown13.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown13.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown13.Name = "NumericUpDown13"
-        Me.NumericUpDown13.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown13.TabIndex = 339
-        Me.NumericUpDown13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown13.Visible = False
-        '
-        'PictureBox14
-        '
-        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox14.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox14.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox14.TabIndex = 338
-        Me.PictureBox14.TabStop = False
-        '
-        'Panel17
-        '
-        Me.Panel17.BackColor = System.Drawing.Color.Transparent
-        Me.Panel17.Controls.Add(Me.NumericUpDown14)
-        Me.Panel17.Controls.Add(Me.PictureBox15)
-        Me.Panel17.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel17.Location = New System.Drawing.Point(63, 111)
-        Me.Panel17.Name = "Panel17"
-        Me.Panel17.Size = New System.Drawing.Size(42, 42)
-        Me.Panel17.TabIndex = 350
-        '
-        'NumericUpDown14
-        '
-        Me.NumericUpDown14.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown14.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown14.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown14.Name = "NumericUpDown14"
-        Me.NumericUpDown14.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown14.TabIndex = 339
-        Me.NumericUpDown14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown14.Visible = False
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox15.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox15.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox15.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox15.TabIndex = 338
-        Me.PictureBox15.TabStop = False
-        '
-        'Panel18
-        '
-        Me.Panel18.BackColor = System.Drawing.Color.Transparent
-        Me.Panel18.Controls.Add(Me.NumericUpDown15)
-        Me.Panel18.Controls.Add(Me.PictureBox16)
-        Me.Panel18.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel18.Location = New System.Drawing.Point(20, 111)
-        Me.Panel18.Name = "Panel18"
-        Me.Panel18.Size = New System.Drawing.Size(42, 42)
-        Me.Panel18.TabIndex = 351
-        '
-        'NumericUpDown15
-        '
-        Me.NumericUpDown15.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown15.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown15.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown15.Name = "NumericUpDown15"
-        Me.NumericUpDown15.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown15.TabIndex = 339
-        Me.NumericUpDown15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown15.Visible = False
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox16.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox16.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox16.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox16.TabIndex = 338
-        Me.PictureBox16.TabStop = False
-        '
-        'Panel19
-        '
-        Me.Panel19.BackColor = System.Drawing.Color.Transparent
-        Me.Panel19.Controls.Add(Me.NumericUpDown16)
-        Me.Panel19.Controls.Add(Me.PictureBox17)
-        Me.Panel19.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel19.Location = New System.Drawing.Point(15, 155)
-        Me.Panel19.Name = "Panel19"
-        Me.Panel19.Size = New System.Drawing.Size(42, 42)
-        Me.Panel19.TabIndex = 352
-        '
-        'NumericUpDown16
-        '
-        Me.NumericUpDown16.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown16.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown16.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown16.Name = "NumericUpDown16"
-        Me.NumericUpDown16.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown16.TabIndex = 339
-        Me.NumericUpDown16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown16.Visible = False
-        '
-        'PictureBox17
-        '
-        Me.PictureBox17.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox17.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox17.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox17.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox17.TabIndex = 338
-        Me.PictureBox17.TabStop = False
-        '
-        'Panel20
-        '
-        Me.Panel20.BackColor = System.Drawing.Color.Transparent
-        Me.Panel20.Controls.Add(Me.NumericUpDown17)
-        Me.Panel20.Controls.Add(Me.PictureBox18)
-        Me.Panel20.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel20.Location = New System.Drawing.Point(59, 155)
-        Me.Panel20.Name = "Panel20"
-        Me.Panel20.Size = New System.Drawing.Size(42, 42)
-        Me.Panel20.TabIndex = 353
-        '
-        'NumericUpDown17
-        '
-        Me.NumericUpDown17.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown17.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown17.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown17.Name = "NumericUpDown17"
-        Me.NumericUpDown17.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown17.TabIndex = 339
-        Me.NumericUpDown17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown17.Visible = False
-        '
-        'PictureBox18
-        '
-        Me.PictureBox18.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox18.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox18.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox18.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox18.Name = "PictureBox18"
-        Me.PictureBox18.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox18.TabIndex = 338
-        Me.PictureBox18.TabStop = False
-        '
-        'Panel21
-        '
-        Me.Panel21.BackColor = System.Drawing.Color.Transparent
-        Me.Panel21.Controls.Add(Me.NumericUpDown18)
-        Me.Panel21.Controls.Add(Me.PictureBox19)
-        Me.Panel21.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel21.Location = New System.Drawing.Point(102, 169)
-        Me.Panel21.Name = "Panel21"
-        Me.Panel21.Size = New System.Drawing.Size(42, 42)
-        Me.Panel21.TabIndex = 354
-        '
-        'NumericUpDown18
-        '
-        Me.NumericUpDown18.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown18.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown18.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown18.Name = "NumericUpDown18"
-        Me.NumericUpDown18.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown18.TabIndex = 339
-        Me.NumericUpDown18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown18.Visible = False
-        '
-        'PictureBox19
-        '
-        Me.PictureBox19.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox19.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox19.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox19.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox19.TabIndex = 338
-        Me.PictureBox19.TabStop = False
-        '
-        'Panel22
-        '
-        Me.Panel22.BackColor = System.Drawing.Color.Transparent
-        Me.Panel22.Controls.Add(Me.NumericUpDown19)
-        Me.Panel22.Controls.Add(Me.PictureBox20)
-        Me.Panel22.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel22.Location = New System.Drawing.Point(145, 154)
-        Me.Panel22.Name = "Panel22"
-        Me.Panel22.Size = New System.Drawing.Size(42, 42)
-        Me.Panel22.TabIndex = 355
-        '
-        'NumericUpDown19
-        '
-        Me.NumericUpDown19.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown19.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown19.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown19.Name = "NumericUpDown19"
-        Me.NumericUpDown19.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown19.TabIndex = 339
-        Me.NumericUpDown19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown19.Visible = False
-        '
-        'PictureBox20
-        '
-        Me.PictureBox20.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox20.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox20.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox20.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox20.TabIndex = 338
-        Me.PictureBox20.TabStop = False
-        '
-        'Panel23
-        '
-        Me.Panel23.BackColor = System.Drawing.Color.Transparent
-        Me.Panel23.Controls.Add(Me.NumericUpDown20)
-        Me.Panel23.Controls.Add(Me.PictureBox21)
-        Me.Panel23.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel23.Location = New System.Drawing.Point(213, 165)
-        Me.Panel23.Name = "Panel23"
-        Me.Panel23.Size = New System.Drawing.Size(42, 42)
-        Me.Panel23.TabIndex = 356
-        '
-        'NumericUpDown20
-        '
-        Me.NumericUpDown20.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown20.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown20.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown20.Name = "NumericUpDown20"
-        Me.NumericUpDown20.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown20.TabIndex = 339
-        Me.NumericUpDown20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown20.Visible = False
-        '
-        'PictureBox21
-        '
-        Me.PictureBox21.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox21.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox21.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox21.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox21.Name = "PictureBox21"
-        Me.PictureBox21.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox21.TabIndex = 338
-        Me.PictureBox21.TabStop = False
-        '
-        'Panel24
-        '
-        Me.Panel24.BackColor = System.Drawing.Color.Transparent
-        Me.Panel24.Controls.Add(Me.NumericUpDown21)
-        Me.Panel24.Controls.Add(Me.PictureBox22)
-        Me.Panel24.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel24.Location = New System.Drawing.Point(269, 163)
-        Me.Panel24.Name = "Panel24"
-        Me.Panel24.Size = New System.Drawing.Size(42, 42)
-        Me.Panel24.TabIndex = 357
-        '
-        'NumericUpDown21
-        '
-        Me.NumericUpDown21.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown21.Location = New System.Drawing.Point(1, 25)
-        Me.NumericUpDown21.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown21.Name = "NumericUpDown21"
-        Me.NumericUpDown21.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown21.TabIndex = 339
-        Me.NumericUpDown21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown21.Visible = False
-        '
-        'PictureBox22
-        '
-        Me.PictureBox22.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox22.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox22.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox22.Location = New System.Drawing.Point(2, 1)
-        Me.PictureBox22.Name = "PictureBox22"
-        Me.PictureBox22.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox22.TabIndex = 338
-        Me.PictureBox22.TabStop = False
-        '
-        'Panel25
-        '
-        Me.Panel25.BackColor = System.Drawing.Color.Transparent
-        Me.Panel25.Controls.Add(Me.NumericUpDown22)
-        Me.Panel25.Controls.Add(Me.PictureBox23)
-        Me.Panel25.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel25.Location = New System.Drawing.Point(151, 58)
-        Me.Panel25.Name = "Panel25"
-        Me.Panel25.Size = New System.Drawing.Size(48, 48)
-        Me.Panel25.TabIndex = 358
-        '
-        'NumericUpDown22
-        '
-        Me.NumericUpDown22.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown22.Location = New System.Drawing.Point(1, 31)
-        Me.NumericUpDown22.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown22.Name = "NumericUpDown22"
-        Me.NumericUpDown22.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown22.TabIndex = 339
-        Me.NumericUpDown22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown22.Visible = False
-        '
-        'PictureBox23
-        '
-        Me.PictureBox23.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox23.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox23.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox23.Location = New System.Drawing.Point(5, 1)
-        Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox23.TabIndex = 338
-        Me.PictureBox23.TabStop = False
-        '
-        'Panel26
-        '
-        Me.Panel26.BackColor = System.Drawing.Color.Transparent
-        Me.Panel26.Controls.Add(Me.NumericUpDown23)
-        Me.Panel26.Controls.Add(Me.PictureBox24)
-        Me.Panel26.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel26.Location = New System.Drawing.Point(200, 58)
-        Me.Panel26.Name = "Panel26"
-        Me.Panel26.Size = New System.Drawing.Size(48, 48)
-        Me.Panel26.TabIndex = 359
-        '
-        'NumericUpDown23
-        '
-        Me.NumericUpDown23.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown23.Location = New System.Drawing.Point(1, 31)
-        Me.NumericUpDown23.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown23.Name = "NumericUpDown23"
-        Me.NumericUpDown23.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown23.TabIndex = 339
-        Me.NumericUpDown23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown23.Visible = False
-        '
-        'PictureBox24
-        '
-        Me.PictureBox24.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox24.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox24.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox24.Location = New System.Drawing.Point(5, 1)
-        Me.PictureBox24.Name = "PictureBox24"
-        Me.PictureBox24.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox24.TabIndex = 338
-        Me.PictureBox24.TabStop = False
-        '
-        'Panel27
-        '
-        Me.Panel27.BackColor = System.Drawing.Color.Transparent
-        Me.Panel27.Controls.Add(Me.NumericUpDown24)
-        Me.Panel27.Controls.Add(Me.PictureBox25)
-        Me.Panel27.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Panel27.Location = New System.Drawing.Point(279, 16)
-        Me.Panel27.Name = "Panel27"
-        Me.Panel27.Size = New System.Drawing.Size(44, 58)
-        Me.Panel27.TabIndex = 360
-        '
-        'NumericUpDown24
-        '
-        Me.NumericUpDown24.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.NumericUpDown24.Location = New System.Drawing.Point(1, 41)
-        Me.NumericUpDown24.Maximum = New Decimal(New Integer() {2, 0, 0, 0})
-        Me.NumericUpDown24.Name = "NumericUpDown24"
-        Me.NumericUpDown24.Size = New System.Drawing.Size(33, 16)
-        Me.NumericUpDown24.TabIndex = 339
-        Me.NumericUpDown24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.NumericUpDown24.Visible = False
-        '
-        'PictureBox25
-        '
-        Me.PictureBox25.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox25.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox25.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_new_eng
-        Me.PictureBox25.Location = New System.Drawing.Point(3, 1)
-        Me.PictureBox25.Name = "PictureBox25"
-        Me.PictureBox25.Size = New System.Drawing.Size(38, 18)
-        Me.PictureBox25.TabIndex = 338
-        Me.PictureBox25.TabStop = False
+        'Panel28
+        '
+        Me.Panel28.BackColor = System.Drawing.Color.Transparent
+        Me.Panel28.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.iconbuilding_fountain_on
+        Me.Panel28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel28.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel28.Location = New System.Drawing.Point(102, 381)
+        Me.Panel28.Name = "Panel28"
+        Me.Panel28.Size = New System.Drawing.Size(42, 42)
+        Me.Panel28.TabIndex = 351
+        '
+        'PictureBox26
+        '
+        Me.PictureBox26.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox26.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_event_eng
+        Me.PictureBox26.Location = New System.Drawing.Point(97, 356)
+        Me.PictureBox26.Name = "PictureBox26"
+        Me.PictureBox26.Size = New System.Drawing.Size(53, 28)
+        Me.PictureBox26.TabIndex = 352
+        Me.PictureBox26.TabStop = False
+        '
+        'Panel29
+        '
+        Me.Panel29.BackColor = System.Drawing.Color.Transparent
+        Me.Panel29.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_tlnetwork
+        Me.Panel29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.Panel29.Controls.Add(Me.NumericUpDown1)
+        Me.Panel29.Controls.Add(Me.Label2)
+        Me.Panel29.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Panel29.Location = New System.Drawing.Point(440, 425)
+        Me.Panel29.Name = "Panel29"
+        Me.Panel29.Size = New System.Drawing.Size(152, 50)
+        Me.Panel29.TabIndex = 353
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox2.Location = New System.Drawing.Point(592, 425)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox2.TabIndex = 354
+        Me.PictureBox2.TabStop = False
         '
         'TLSE_islandconfig
         '
@@ -1984,17 +2061,16 @@ Partial Class TLSE_islandconfig
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_islandedit
         Me.ClientSize = New System.Drawing.Size(800, 485)
-        Me.Controls.Add(Me.icon_rooftop)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Panel29)
+        Me.Controls.Add(Me.PictureBox26)
+        Me.Controls.Add(Me.Panel28)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.AdvH_rankboard)
         Me.Controls.Add(Me.Panel_rankboard)
         Me.Controls.Add(Me.AdvH_eventfountain)
         Me.Controls.Add(Me.AdvH_apartrenov)
         Me.Controls.Add(Me.valu_eventfountain)
-        Me.Controls.Add(Me.Icon_eventfountain)
         Me.Controls.Add(Me.Title_eventfountain)
         Me.Controls.Add(Me.valu_appartrenov)
         Me.Controls.Add(Me.Icon_appartrenov)
@@ -2043,10 +2119,79 @@ Partial Class TLSE_islandconfig
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_islandbuild, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel_islandbuilding.ResumeLayout(False)
+        CType(Me.icon_rooftop, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel3.ResumeLayout(False)
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel27.ResumeLayout(False)
+        CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel26.ResumeLayout(False)
+        CType(Me.NumericUpDown23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel25.ResumeLayout(False)
+        CType(Me.NumericUpDown22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel24.ResumeLayout(False)
+        CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel23.ResumeLayout(False)
+        CType(Me.NumericUpDown20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel22.ResumeLayout(False)
+        CType(Me.NumericUpDown19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel21.ResumeLayout(False)
+        CType(Me.NumericUpDown18, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel20.ResumeLayout(False)
+        CType(Me.NumericUpDown17, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel19.ResumeLayout(False)
+        CType(Me.NumericUpDown16, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel18.ResumeLayout(False)
+        CType(Me.NumericUpDown15, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel17.ResumeLayout(False)
+        CType(Me.NumericUpDown14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel16.ResumeLayout(False)
+        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel15.ResumeLayout(False)
+        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel14.ResumeLayout(False)
+        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel13.ResumeLayout(False)
+        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel12.ResumeLayout(False)
+        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel11.ResumeLayout(False)
+        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel10.ResumeLayout(False)
+        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel9.ResumeLayout(False)
+        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel6.ResumeLayout(False)
+        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel5.ResumeLayout(False)
+        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel4.ResumeLayout(False)
+        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_apartrenov, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Icon_eventfountain, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_appartrenov, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_appartrenov, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_rankboard, System.ComponentModel.ISupportInitialize).EndInit()
@@ -2073,77 +2218,9 @@ Partial Class TLSE_islandconfig
         CType(Me.Icon_rank_vitality, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox26, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel29.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.icon_rooftop, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel4.ResumeLayout(False)
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel5.ResumeLayout(False)
-        CType(Me.NumericUpDown4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel6.ResumeLayout(False)
-        CType(Me.NumericUpDown5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel9.ResumeLayout(False)
-        CType(Me.NumericUpDown6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel10.ResumeLayout(False)
-        CType(Me.NumericUpDown7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel11.ResumeLayout(False)
-        CType(Me.NumericUpDown8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel12.ResumeLayout(False)
-        CType(Me.NumericUpDown9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel13.ResumeLayout(False)
-        CType(Me.NumericUpDown10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel14.ResumeLayout(False)
-        CType(Me.NumericUpDown11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel15.ResumeLayout(False)
-        CType(Me.NumericUpDown12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel16.ResumeLayout(False)
-        CType(Me.NumericUpDown13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel17.ResumeLayout(False)
-        CType(Me.NumericUpDown14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel18.ResumeLayout(False)
-        CType(Me.NumericUpDown15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel19.ResumeLayout(False)
-        CType(Me.NumericUpDown16, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel20.ResumeLayout(False)
-        CType(Me.NumericUpDown17, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox18, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel21.ResumeLayout(False)
-        CType(Me.NumericUpDown18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox19, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel22.ResumeLayout(False)
-        CType(Me.NumericUpDown19, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox20, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel23.ResumeLayout(False)
-        CType(Me.NumericUpDown20, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox21, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel24.ResumeLayout(False)
-        CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox22, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel25.ResumeLayout(False)
-        CType(Me.NumericUpDown22, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox23, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel26.ResumeLayout(False)
-        CType(Me.NumericUpDown23, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox24, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel27.ResumeLayout(False)
-        CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox25, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -2193,7 +2270,6 @@ Partial Class TLSE_islandconfig
     Friend WithEvents AdvH_eventfountain As PictureBox
     Friend WithEvents AdvH_apartrenov As PictureBox
     Friend WithEvents valu_eventfountain As NumericUpDown
-    Friend WithEvents Icon_eventfountain As PictureBox
     Friend WithEvents Title_eventfountain As Label
     Friend WithEvents valu_appartrenov As NumericUpDown
     Friend WithEvents Icon_appartrenov As PictureBox
@@ -2223,7 +2299,6 @@ Partial Class TLSE_islandconfig
     Friend WithEvents Icon_rank_vitality As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents icon_rooftop As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
@@ -2295,4 +2370,8 @@ Partial Class TLSE_islandconfig
     Friend WithEvents Panel4 As Panel
     Friend WithEvents NumericUpDown3 As NumericUpDown
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Panel28 As Panel
+    Friend WithEvents PictureBox26 As PictureBox
+    Friend WithEvents Panel29 As Panel
+    Friend WithEvents PictureBox2 As PictureBox
 End Class
