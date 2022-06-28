@@ -27,6 +27,8 @@ Partial Class TLSE_hub
         Me.TLSE_logo_update = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo = New System.Windows.Forms.PictureBox()
         Me.TLSE_menu = New System.Windows.Forms.Panel()
+        Me.Menu_issueslegend = New System.Windows.Forms.Panel()
+        Me.Text_menu_issueslegend = New System.Windows.Forms.Label()
         Me.Menu_babiesedit = New System.Windows.Forms.Panel()
         Me.Text_menu_babiesedit = New System.Windows.Forms.Label()
         Me.Menu_datasmanagement = New System.Windows.Forms.Panel()
@@ -150,9 +152,11 @@ Partial Class TLSE_hub
         Me.TLSE_menu_islandedit = New System.Windows.Forms.Panel()
         Me.Menu_savefilesettings = New System.Windows.Forms.Panel()
         Me.Text_menu_savefilesettings = New System.Windows.Forms.Label()
+        Me.Icon_menu_issueslegend = New System.Windows.Forms.PictureBox()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu.SuspendLayout()
+        Me.Menu_issueslegend.SuspendLayout()
         Me.Menu_babiesedit.SuspendLayout()
         Me.Menu_datasmanagement.SuspendLayout()
         Me.Menu_datasedit.SuspendLayout()
@@ -226,6 +230,7 @@ Partial Class TLSE_hub
         Me.Menu_islandinfo.SuspendLayout()
         Me.TLSE_menu_islandedit.SuspendLayout()
         Me.Menu_savefilesettings.SuspendLayout()
+        CType(Me.Icon_menu_issueslegend, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -259,6 +264,7 @@ Partial Class TLSE_hub
         '
         Me.TLSE_menu.BackColor = System.Drawing.Color.Transparent
         Me.TLSE_menu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu.Controls.Add(Me.Menu_issueslegend)
         Me.TLSE_menu.Controls.Add(Me.Menu_babiesedit)
         Me.TLSE_menu.Controls.Add(Me.Menu_datasmanagement)
         Me.TLSE_menu.Controls.Add(Me.Menu_datasedit)
@@ -280,6 +286,27 @@ Partial Class TLSE_hub
         Me.TLSE_menu.Name = "TLSE_menu"
         Me.TLSE_menu.Size = New System.Drawing.Size(807, 632)
         Me.TLSE_menu.TabIndex = 32
+        '
+        'Menu_issueslegend
+        '
+        Me.Menu_issueslegend.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_issuelegend
+        Me.Menu_issueslegend.Controls.Add(Me.Text_menu_issueslegend)
+        Me.Menu_issueslegend.Controls.Add(Me.Icon_menu_issueslegend)
+        Me.Menu_issueslegend.Location = New System.Drawing.Point(399, 339)
+        Me.Menu_issueslegend.Name = "Menu_issueslegend"
+        Me.Menu_issueslegend.Size = New System.Drawing.Size(126, 156)
+        Me.Menu_issueslegend.TabIndex = 19
+        '
+        'Text_menu_issueslegend
+        '
+        Me.Text_menu_issueslegend.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_issueslegend.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_issueslegend.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_issueslegend.Name = "Text_menu_issueslegend"
+        Me.Text_menu_issueslegend.Size = New System.Drawing.Size(108, 138)
+        Me.Text_menu_issueslegend.TabIndex = 2
+        Me.Text_menu_issueslegend.Text = "Issues / Legends" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Check issues, features legends"
+        Me.Text_menu_issueslegend.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_babiesedit
         '
@@ -414,7 +441,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_repairsave.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_repairsave
         Me.Menu_repairsave.Controls.Add(Me.Text_menu_repairsave)
-        Me.Menu_repairsave.Location = New System.Drawing.Point(495, 373)
+        Me.Menu_repairsave.Location = New System.Drawing.Point(525, 373)
         Me.Menu_repairsave.Name = "Menu_repairsave"
         Me.Menu_repairsave.Size = New System.Drawing.Size(199, 122)
         Me.Menu_repairsave.TabIndex = 10
@@ -1606,6 +1633,17 @@ Partial Class TLSE_hub
         Me.Text_menu_savefilesettings.Text = "Save file settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit settings of your save file"
         Me.Text_menu_savefilesettings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Icon_menu_issueslegend
+        '
+        Me.Icon_menu_issueslegend.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Icon_menu_issueslegend.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_issuelegend_mov
+        Me.Icon_menu_issueslegend.Location = New System.Drawing.Point(0, 0)
+        Me.Icon_menu_issueslegend.Name = "Icon_menu_issueslegend"
+        Me.Icon_menu_issueslegend.Size = New System.Drawing.Size(126, 156)
+        Me.Icon_menu_issueslegend.TabIndex = 3
+        Me.Icon_menu_issueslegend.TabStop = False
+        Me.Icon_menu_issueslegend.Visible = False
+        '
         'TLSE_hub
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1616,12 +1654,12 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.TLSE_menu)
         Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
-        Me.Controls.Add(Me.TLSE_menu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"
@@ -1630,6 +1668,7 @@ Partial Class TLSE_hub
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TLSE_menu.ResumeLayout(False)
+        Me.Menu_issueslegend.ResumeLayout(False)
         Me.Menu_babiesedit.ResumeLayout(False)
         Me.Menu_datasmanagement.ResumeLayout(False)
         Me.Menu_datasedit.ResumeLayout(False)
@@ -1715,6 +1754,7 @@ Partial Class TLSE_hub
         Me.TLSE_menu_islandedit.ResumeLayout(False)
         Me.TLSE_menu_islandedit.PerformLayout()
         Me.Menu_savefilesettings.ResumeLayout(False)
+        CType(Me.Icon_menu_issueslegend, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1844,4 +1884,7 @@ Partial Class TLSE_hub
     Friend WithEvents TLSE_menu_islandedit As Panel
     Friend WithEvents Menu_savefilesettings As Panel
     Friend WithEvents Text_menu_savefilesettings As Label
+    Friend WithEvents Menu_issueslegend As Panel
+    Friend WithEvents Text_menu_issueslegend As Label
+    Friend WithEvents Icon_menu_issueslegend As PictureBox
 End Class

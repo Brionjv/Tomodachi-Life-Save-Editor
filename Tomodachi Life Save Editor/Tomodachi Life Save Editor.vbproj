@@ -332,6 +332,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\bbl_issuelegend_mov_act.gif" />
+    <None Include="Resources\bbl_issuelegend_mov.gif" />
+    <None Include="Resources\bbl_issuelegend_act.png" />
+    <None Include="Resources\bbl_issuelegend.png" />
+    <None Include="Resources\ranking_vitalityi.png" />
+    <None Include="Resources\ranking_vitality.png" />
+    <None Include="Resources\ranking_traveleri.png" />
+    <None Include="Resources\ranking_traveler.png" />
+    <None Include="Resources\ranking_splurgei.png" />
+    <None Include="Resources\ranking_splurge.png" />
+    <None Include="Resources\ranking_romancei.png" />
+    <None Include="Resources\ranking_romance.png" />
+    <None Include="Resources\ranking_popularityi.png" />
+    <None Include="Resources\ranking_popularity.png" />
+    <None Include="Resources\ranking_pamperedi.png" />
+    <None Include="Resources\ranking_pampered.png" />
+    <None Include="Resources\ranking_islandi.png" />
+    <None Include="Resources\ranking_island.png" />
+    <None Include="Resources\ranking_girlcharmi.png" />
+    <None Include="Resources\ranking_girlcharm.png" />
+    <None Include="Resources\ranking_friendshipi.png" />
+    <None Include="Resources\ranking_friendship.png" />
+    <None Include="Resources\ranking_boycharmi.png" />
+    <None Include="Resources\ranking_boycharm.png" />
+    <None Include="Resources\icon_newrankboard_fra.png" />
+    <None Include="Resources\icon_newrankboard_eng.png" />
     <None Include="Resources\bg_tlnetwork.png" />
     <None Include="Resources\icon_event_fra.gif" />
     <None Include="Resources\icon_event_eng.gif" />

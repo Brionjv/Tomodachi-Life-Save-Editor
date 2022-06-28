@@ -263,6 +263,46 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property bbl_issuelegend() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bbl_issuelegend", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bbl_issuelegend_act() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bbl_issuelegend_act", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bbl_issuelegend_mov() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bbl_issuelegend_mov", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bbl_issuelegend_mov_act() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bbl_issuelegend_mov_act", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property bbl_items() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("bbl_items", resourceCulture)
@@ -2473,6 +2513,26 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property icon_newrankboard_eng() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_newrankboard_eng", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icon_newrankboard_fra() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_newrankboard_fra", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property icon_plus() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icon_plus", resourceCulture)
@@ -3266,6 +3326,206 @@ Namespace My.Resources
         Friend ReadOnly Property minimize_gray() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("minimize_gray", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_boycharm() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_boycharm", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_boycharmi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_boycharmi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_friendship() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_friendship", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_friendshipi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_friendshipi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_girlcharm() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_girlcharm", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_girlcharmi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_girlcharmi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_island() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_island", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_islandi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_islandi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_pampered() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_pampered", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_pamperedi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_pamperedi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_popularity() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_popularity", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_popularityi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_popularityi", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_romance() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_romance", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_romancei() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_romancei", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_splurge() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_splurge", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_splurgei() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_splurgei", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_traveler() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_traveler", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_traveleri() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_traveleri", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_vitality() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_vitality", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property ranking_vitalityi() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("ranking_vitalityi", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
