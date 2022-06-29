@@ -662,11 +662,31 @@ Public Class TLSE_hub
                 Checkupdates()
             End If
         End If
+        'Checkissues()
     End Sub
 
     Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click
         Process.Start("https://github.com/Brionjv/Tomodachi-Life-Save-Editor/releases")
     End Sub
 
-
+    Public Sub Checkissues()
+        Try
+            Dim MAJ As New WebClient
+            Dim lastissues As String = MAJ.DownloadString("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/Issues.txt")
+            If text_issues.Text = lastissues Then
+                Icon_menu_issueslegend.Visible = False
+            Else
+                Icon_menu_issueslegend.Visible = True
+            End If
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "An error has occurred when checking know issues" & vbNewLine & "Check if you are connected to internet"
+                TLSE_dialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Une erreur est survenue lors de la vérification des problèmes connus" & vbNewLine & "Vérifiez que vous êtes connecté à internet"
+                TLSE_dialog.ShowDialog()
+            End If
+        End Try
+    End Sub
 End Class
