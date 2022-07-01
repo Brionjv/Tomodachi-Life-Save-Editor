@@ -9,6 +9,43 @@ Public Class TLSE_islandconfig
     Dim applicationpath = Application.StartupPath
     Dim AudioTomodachi As System.IO.UnmanagedMemoryStream
     Dim savedataArc As String
+    Dim Eventfountain As String
+    Dim allownetwork As String
+    Dim Appartrenov As String
+    Dim Rankvitality As String
+    Dim Rankpopularity As String
+    Dim Rankboycharm As String
+    Dim Rankgirlcharm As String
+    Dim Rankpampered As String
+    Dim Rankfriendship As String
+    Dim Rankromance As String
+    Dim Rankisland As String
+    Dim Ranktravelers As String
+    Dim Ranksplurge As String
+    Dim Miiapartment As String
+    Dim townhall As String
+    Dim Miinews As String
+    Dim Rankingboard As String
+    Dim clothingshop As String
+    Dim hatsshop As String
+    Dim foodmart As String
+    Dim interiorshop As String
+    Dim pawnshop As String
+    Dim importwear As String
+    Dim fountain As String
+    Dim Miihomes As String
+    Dim port As String
+    Dim campground As String
+    Dim concerthall As String
+    Dim compatibilitytester As String
+    Dim photostudio As String
+    Dim beach As String
+    Dim park As String
+    Dim cafe As String
+    Dim amusementpark As String
+    Dim tower As String
+    Dim plane As String
+    Dim network As String
 
     Private Sub Closebutton_Click(sender As Object, e As EventArgs) Handles Closebutton.Click
         Me.Close()
@@ -124,6 +161,122 @@ Public Class TLSE_islandconfig
             Fea_townhall.BackgroundImage = My.Resources.iconbuilding_emptyjbuildings_off
         Else
             icon_rooftop.Visible = False
+        End If
+        '-------------------------------------------------------------------------------------------
+        If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+            Eventfountain = &H1E4AF8
+            allownetwork = &H1E4BE3
+            Appartrenov = &H1E4C79
+            Rankvitality = &H1E4C3E
+            Rankpopularity = &H1E4C3F
+            Rankboycharm = &H1E4C42
+            Rankgirlcharm = &H1E4C43
+            Rankpampered = &H1E4C44
+            Rankfriendship = &H1E4C40
+            Rankromance = &H1E4C41
+            Rankisland = &H1E4C47
+            Ranktravelers = &H1E4C46
+            Ranksplurge = &H1E4C45
+            Miiapartment = &H1E4C20
+            townhall = &H1E4C21
+            Miinews = &H1E4C22
+            Rankingboard = &H1E4C23
+            clothingshop = &H1E4C24
+            hatsshop = &H1E4C25
+            foodmart = &H1E4C26
+            interiorshop = &H1E4C27
+            pawnshop = &H1E4C28
+            importwear = &H1E4C29
+            fountain = &H1E4C2A
+            Miihomes = &H1E4C2B
+            port = &H1E4C2C
+            campground = &H1E4C2D
+            concerthall = &H1E4C2E
+            compatibilitytester = &H1E4C2F
+            photostudio = &H1E4C30
+            beach = &H1E4C31
+            park = &H1E4C32
+            cafe = &H1E4C33
+            amusementpark = &H1E4C34
+            tower = &H1E4C35
+            plane = &H1E4C36
+            network = &H1E4C37
+        ElseIf Filever_text.Text = "JP" Then
+            Eventfountain = &H14BBE8
+            allownetwork = &H14BCD3
+            Appartrenov = &H14BD49
+            Rankvitality = &H14BD0E
+            Rankpopularity = &H14BD0F
+            Rankboycharm = &H14BD12
+            Rankgirlcharm = &H14BD13
+            Rankpampered = &H14BD14
+            Rankfriendship = &H14BD10
+            Rankromance = &H14BD11
+            Rankisland = &H14BD17
+            Ranktravelers = &H14BD16
+            Ranksplurge = &H14BD15
+            Miiapartment = &H14BCF0
+            townhall = &H14BCF1
+            Miinews = &H14BCF2
+            Rankingboard = &H14BCF3
+            clothingshop = &H14BCF4
+            hatsshop = &H14BCF5
+            foodmart = &H14BCF6
+            interiorshop = &H14BCF7
+            pawnshop = &H14BCF8
+            importwear = &H14BCF9
+            fountain = &H14BCFA
+            Miihomes = &H14BCFB
+            port = &H14BCFC
+            campground = &H14BCFD
+            concerthall = &H14BCFE
+            compatibilitytester = &H14BCFF
+            photostudio = &H14BD00
+            beach = &H14BD01
+            park = &H14BD02
+            cafe = &H14BD03
+            amusementpark = &H14BD04
+            tower = &H14BD05
+            plane = &H14BD06
+            network = &H14BD07
+        ElseIf Filever_text.Text = "KR" Then
+            Eventfountain = &H1EFEA8
+            allownetwork = &H1EFF93
+            Appartrenov = &H1F0029
+            Rankvitality = &H1EFFEE
+            Rankpopularity = &H1EFFEF
+            Rankboycharm = &H1EFFF2
+            Rankgirlcharm = &H1EFFF3
+            Rankpampered = &H1EFFF4
+            Rankfriendship = &H1EFFF0
+            Rankromance = &H1EFFF1
+            Rankisland = &H1EFFF7
+            Ranktravelers = &H1EFFF6
+            Ranksplurge = &H1EFFF5
+            Miiapartment = &H1EFFD0
+            townhall = &H1EFFD1
+            Miinews = &H1EFFD2
+            rankingboard = &H1EFFD3
+            clothingshop = &H1EFFD4
+            hatsshop = &H1EFFD5
+            foodmart = &H1EFFD6
+            interiorshop = &H1EFFD7
+            pawnshop = &H1EFFD8
+            importwear = &H1EFFD9
+            fountain = &H1EFFDA
+            Miihomes = &H1EFFDB
+            port = &H1EFFDC
+            campground = &H1EFFDD
+            concerthall = &H1EFFDE
+            compatibilitytester = &H1EFFDF
+            photostudio = &H1EFFE0
+            beach = &H1EFFE1
+            park = &H1EFFE2
+            cafe = &H1EFFE3
+            amusementpark = &H1EFFE4
+            tower = &H1EFFE5
+            plane = &H1EFFE6
+            network = &H1EFFE7
         End If
     End Sub
 
@@ -1043,4 +1196,195 @@ Public Class TLSE_islandconfig
         End If
     End Sub
 
+    Private Sub TLSE_islandconfig_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        Readislandconfig()
+    End Sub
+
+    Public Sub Readislandconfig()
+        Try
+            Dim Readdata As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+            Readdata.Position = allownetwork
+            valu_allownetwork.Value = Readdata.ReadByte
+            Readdata.Position = amusementpark
+            valu_amusementpark.Value = Readdata.ReadByte
+            Readdata.Position = Appartrenov
+            valu_appartrenov.Value = Readdata.ReadByte
+            Readdata.Position = beach
+            valu_beach.Value = Readdata.ReadByte
+            Readdata.Position = cafe
+            valu_cafe.Value = Readdata.ReadByte
+            Readdata.Position = campground
+            valu_campground.Value = Readdata.ReadByte
+            Readdata.Position = clothingshop
+            valu_clothingshop.Value = Readdata.ReadByte
+            Readdata.Position = compatibilitytester
+            valu_compatibilitytester.Value = Readdata.ReadByte
+            Readdata.Position = concerthall
+            valu_concerthall.Value = Readdata.ReadByte
+            Readdata.Position = Eventfountain
+            valu_eventfountain.Value = Readdata.ReadUInt32
+            Readdata.Position = foodmart
+            valu_foodmart.Value = Readdata.ReadByte
+            Readdata.Position = fountain
+            valu_fountain.Value = Readdata.ReadByte
+            Readdata.Position = hatsshop
+            valu_hatsshop.Value = Readdata.ReadByte
+            Readdata.Position = importwear
+            valu_importwear.Value = Readdata.ReadByte
+            Readdata.Position = interiorshop
+            valu_interiorshop.Value = Readdata.ReadByte
+            Readdata.Position = Miiapartment
+            valu_miiapartment.Value = Readdata.ReadByte
+            Readdata.Position = Miihomes
+            valu_miihomes.Value = Readdata.ReadByte
+            Readdata.Position = Miinews
+            valu_miinews.Value = Readdata.ReadByte
+            Readdata.Position = network
+            valu_network.Value = Readdata.ReadByte
+            Readdata.Position = park
+            valu_park.Value = Readdata.ReadByte
+            Readdata.Position = pawnshop
+            valu_pawnshop.Value = Readdata.ReadByte
+            Readdata.Position = photostudio
+            valu_photostudio.Value = Readdata.ReadByte
+            Readdata.Position = plane
+            valu_plane.Value = Readdata.ReadByte
+            Readdata.Position = port
+            valu_port.Value = Readdata.ReadByte
+            Readdata.Position = Rankboycharm
+            valu_boycharm.Value = Readdata.ReadByte
+            Readdata.Position = Rankfriendship
+            valu_friendship.Value = Readdata.ReadByte
+            Readdata.Position = Rankgirlcharm
+            valu_girlcharm.Value = Readdata.ReadByte
+            Readdata.Position = Rankingboard
+            valu_rankingboard.Value = Readdata.ReadByte
+            Readdata.Position = Rankisland
+            valu_island.Value = Readdata.ReadByte
+            Readdata.Position = Rankpampered
+            valu_pampered.Value = Readdata.ReadByte
+            Readdata.Position = Rankpopularity
+            valu_popularity.Value = Readdata.ReadByte
+            Readdata.Position = Rankromance
+            valu_romance.Value = Readdata.ReadByte
+            Readdata.Position = Ranksplurge
+            valu_splurge.Value = Readdata.ReadByte
+            Readdata.Position = Ranktravelers
+            valu_traveler.Value = Readdata.ReadByte
+            Readdata.Position = Rankvitality
+            valu_vitality.Value = Readdata.ReadByte
+            Readdata.Position = tower
+            valu_tower.Value = Readdata.ReadByte
+            Readdata.Position = townhall
+            valu_townhall.Value = Readdata.ReadByte
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read island configurations"
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
+
+    Private Sub valu_network_ValueChanged(sender As Object, e As EventArgs) Handles valu_network.ValueChanged
+        If valu_network.Value = 0 Then
+            Fea_network.BackgroundImage = My.Resources.bg_tlnetwork_off
+        ElseIf valu_network.Value = 1 Then
+            Fea_network.BackgroundImage = My.Resources.bg_tlnetwork
+        End If
+    End Sub
+
+    Private Sub Fea_network_Click(sender As Object, e As EventArgs) Handles Fea_network.Click
+        If valu_network.Value = 0 Then
+            valu_network.Value = 1
+        ElseIf valu_network.Value = 1 Then
+            valu_network.Value = 0
+        End If
+    End Sub
+
+    Private Sub Text_menu_save_Click(sender As Object, e As EventArgs)
+        Writeislandconfig()
+    End Sub
+
+    Public Sub Writeislandconfig()
+        Try
+            Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+            Writedata.Position = allownetwork
+            Writedata.WriteInt8(valu_allownetwork.Value)
+            Writedata.Position = amusementpark
+            Writedata.WriteInt8(valu_amusementpark.Value)
+            Writedata.Position = Appartrenov
+            Writedata.WriteInt8(valu_appartrenov.Value)
+            Writedata.Position = beach
+            Writedata.WriteInt8(valu_beach.Value)
+            Writedata.Position = cafe
+            Writedata.WriteInt8(valu_cafe.Value)
+            Writedata.Position = campground
+            Writedata.WriteInt8(valu_campground.Value)
+            Writedata.Position = clothingshop
+            Writedata.WriteInt8(valu_clothingshop.Value)
+            Writedata.Position = compatibilitytester
+            Writedata.WriteInt8(valu_compatibilitytester.Value)
+            Writedata.Position = concerthall
+            Writedata.WriteInt8(valu_concerthall.Value)
+            Writedata.Position = Eventfountain
+            Writedata.WriteUInt32(valu_eventfountain.Value)
+            Writedata.Position = foodmart
+            Writedata.WriteInt8(valu_foodmart.Value)
+            Writedata.Position = fountain
+            Writedata.WriteInt8(valu_fountain.Value)
+            Writedata.Position = hatsshop
+            Writedata.WriteInt8(valu_hatsshop.Value)
+            Writedata.Position = importwear
+            Writedata.WriteInt8(valu_importwear.Value)
+            Writedata.Position = interiorshop
+            Writedata.WriteInt8(valu_interiorshop.Value)
+            Writedata.Position = Miiapartment
+            Writedata.WriteInt8(valu_miiapartment.Value)
+            Writedata.Position = Miihomes
+            Writedata.WriteInt8(valu_miihomes.Value)
+            Writedata.Position = Miinews
+            Writedata.WriteInt8(valu_miinews.Value)
+            Writedata.Position = network
+            Writedata.WriteInt8(valu_network.Value)
+            Writedata.Position = park
+            Writedata.WriteInt8(valu_park.Value)
+            Writedata.Position = pawnshop
+            Writedata.WriteInt8(valu_pawnshop.Value)
+            Writedata.Position = photostudio
+            Writedata.WriteInt8(valu_photostudio.Value)
+            Writedata.Position = plane
+            Writedata.WriteInt8(valu_plane.Value)
+            Writedata.Position = port
+            Writedata.WriteInt8(valu_port.Value)
+            Writedata.Position = Rankboycharm
+            Writedata.WriteInt8(valu_boycharm.Value)
+            Writedata.Position = Rankfriendship
+            Writedata.WriteInt8(valu_friendship.Value)
+            Writedata.Position = Rankgirlcharm
+            Writedata.WriteInt8(valu_girlcharm.Value)
+            Writedata.Position = Rankingboard
+            Writedata.WriteInt8(valu_rankingboard.Value)
+            Writedata.Position = Rankisland
+            Writedata.WriteInt8(valu_island.Value)
+            Writedata.Position = Rankpampered
+            Writedata.WriteInt8(valu_pampered.Value)
+            Writedata.Position = Rankpopularity
+            Writedata.WriteInt8(valu_popularity.Value)
+            Writedata.Position = Rankromance
+            Writedata.WriteInt8(valu_romance.Value)
+            Writedata.Position = Ranksplurge
+            Writedata.WriteInt8(valu_splurge.Value)
+            Writedata.Position = Ranktravelers
+            Writedata.WriteInt8(valu_traveler.Value)
+            Writedata.Position = Rankvitality
+            Writedata.WriteInt8(valu_vitality.Value)
+            Writedata.Position = tower
+            Writedata.WriteInt8(valu_tower.Value)
+            Writedata.Position = townhall
+            Writedata.WriteInt8(valu_townhall.Value)
+            TLSE_dialog.Text_TLSE_dialog.Text = "Island configurations has been successfully edited"
+            TLSE_dialog.ShowDialog()
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to write island configurations"
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
 End Class

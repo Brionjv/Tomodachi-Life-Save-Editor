@@ -93,6 +93,21 @@ Public Class TLSE_hub
         Menu_datasmanagement.BackgroundImage = My.Resources.bbl_datasmanagement
     End Sub
 
+    Private Sub Text_menu_issueslegend_Click(sender As Object, e As EventArgs) Handles Text_menu_issueslegend.Click
+
+    End Sub
+
+    Private Sub Text_menu_issueslegend_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_issueslegend.MouseMove
+        Menu_issueslegend.BackgroundImage = My.Resources.bbl_issuelegend_act
+        Icon_menu_issueslegend.Image = My.Resources.bbl_issuelegend_mov_act
+    End Sub
+
+    Private Sub Text_menu_issueslegend_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_issueslegend.MouseLeave
+        Menu_issueslegend.BackgroundImage = My.Resources.bbl_issuelegend
+        Icon_menu_issueslegend.Image = My.Resources.bbl_issuelegend_mov
+    End Sub
+
+
     Private Sub Text_menu_concertedit_Click(sender As Object, e As EventArgs) Handles Text_menu_concertedit.Click
         If Filever_text.Text = "JP" Then
             If Select_language.SelectedItem = Select_language.Items.Item(0) Then
@@ -145,6 +160,22 @@ Public Class TLSE_hub
 
     Private Sub Text_menu_islandedit_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_islandedit.MouseLeave
         Menu_islandedit.BackgroundImage = My.Resources.bbl_islandedit
+    End Sub
+
+    Private Sub Text_menu_islandinfo_Click(sender As Object, e As EventArgs) Handles Text_menu_islandinfo.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_islandinfo.TLSE_logo_update.Visible = True
+        End If
+        TLSE_islandinfo.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_islandinfo_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_islandinfo.MouseMove
+        Menu_islandinfo.BackgroundImage = My.Resources.bbl_islandinfo_act
+    End Sub
+
+    Private Sub Text_menu_islandinfo_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_islandinfo.MouseLeave
+        Menu_islandinfo.BackgroundImage = My.Resources.bbl_islandinfo
     End Sub
 
     Private Sub Text_menu_itemsedit_Click(sender As Object, e As EventArgs) Handles Text_menu_itemsedit.Click

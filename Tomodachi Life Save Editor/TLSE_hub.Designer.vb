@@ -27,6 +27,7 @@ Partial Class TLSE_hub
         Me.TLSE_logo_update = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo = New System.Windows.Forms.PictureBox()
         Me.TLSE_menu = New System.Windows.Forms.Panel()
+        Me.text_issues = New System.Windows.Forms.Label()
         Me.Menu_issueslegend = New System.Windows.Forms.Panel()
         Me.Text_menu_issueslegend = New System.Windows.Forms.Label()
         Me.Icon_menu_issueslegend = New System.Windows.Forms.PictureBox()
@@ -153,7 +154,6 @@ Partial Class TLSE_hub
         Me.TLSE_menu_islandedit = New System.Windows.Forms.Panel()
         Me.Menu_savefilesettings = New System.Windows.Forms.Panel()
         Me.Text_menu_savefilesettings = New System.Windows.Forms.Label()
-        Me.text_issues = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu.SuspendLayout()
@@ -288,6 +288,15 @@ Partial Class TLSE_hub
         Me.TLSE_menu.Name = "TLSE_menu"
         Me.TLSE_menu.Size = New System.Drawing.Size(807, 632)
         Me.TLSE_menu.TabIndex = 32
+        '
+        'text_issues
+        '
+        Me.text_issues.Location = New System.Drawing.Point(675, 9)
+        Me.text_issues.Name = "text_issues"
+        Me.text_issues.Size = New System.Drawing.Size(127, 128)
+        Me.text_issues.TabIndex = 20
+        Me.text_issues.Text = "issues"
+        Me.text_issues.Visible = False
         '
         'Menu_issueslegend
         '
@@ -1645,15 +1654,6 @@ Partial Class TLSE_hub
         Me.Text_menu_savefilesettings.TabIndex = 2
         Me.Text_menu_savefilesettings.Text = "Save file settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit settings of your save file"
         Me.Text_menu_savefilesettings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'text_issues
-        '
-        Me.text_issues.Location = New System.Drawing.Point(675, 9)
-        Me.text_issues.Name = "text_issues"
-        Me.text_issues.Size = New System.Drawing.Size(127, 128)
-        Me.text_issues.TabIndex = 20
-        Me.text_issues.Text = "issues"
-        Me.text_issues.Visible = False
         '
         'TLSE_hub
         '
