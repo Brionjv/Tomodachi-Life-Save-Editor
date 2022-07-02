@@ -3327,6 +3327,7 @@ Partial Class TL_SaveEditor
         Me.Menu_islandedit.Controls.Add(Me.AdvH_islandedit)
         Me.Menu_islandedit.Controls.Add(Me.Menu_text_islandedit)
         Me.Menu_islandedit.Controls.Add(Me.Menu_icon_islandedit)
+        Me.Menu_islandedit.Enabled = False
         Me.Menu_islandedit.Location = New System.Drawing.Point(0, 2)
         Me.Menu_islandedit.Name = "Menu_islandedit"
         Me.Menu_islandedit.Size = New System.Drawing.Size(150, 34)
@@ -3831,7 +3832,6 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Controls.Add(Me.Text_miidetected)
         Me.Panel_islandedit.Controls.Add(Me.Panel_islandaddress)
         Me.Panel_islandedit.Controls.Add(Me.valu_lastmii)
-        Me.Panel_islandedit.Controls.Add(Me.Panel_addsymb_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Warning_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Addsymbol_pronun_island)
         Me.Panel_islandedit.Controls.Add(Me.Addsymbol_islandname)
@@ -3887,10 +3887,12 @@ Partial Class TL_SaveEditor
         Me.Panel_islandedit.Controls.Add(Me.Icon_pronun_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Icon_islandname)
         Me.Panel_islandedit.Controls.Add(Me.Panel_islandbuilding)
+        Me.Panel_islandedit.Controls.Add(Me.Panel_addsymb_islandname)
         Me.Panel_islandedit.Location = New System.Drawing.Point(152, 77)
         Me.Panel_islandedit.Name = "Panel_islandedit"
         Me.Panel_islandedit.Size = New System.Drawing.Size(676, 540)
         Me.Panel_islandedit.TabIndex = 30
+        Me.Panel_islandedit.Visible = False
         '
         'Icon_miidetected
         '
@@ -5849,7 +5851,7 @@ Partial Class TL_SaveEditor
         Me.Text_TLSE_version.Name = "Text_TLSE_version"
         Me.Text_TLSE_version.Size = New System.Drawing.Size(521, 13)
         Me.Text_TLSE_version.TabIndex = 0
-        Me.Text_TLSE_version.Text = "Version 4.0.4"
+        Me.Text_TLSE_version.Text = "Version 4.1.0"
         Me.Text_TLSE_version.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Settings_credits
@@ -7195,7 +7197,6 @@ Partial Class TL_SaveEditor
         Me.Panel_miiedit.Name = "Panel_miiedit"
         Me.Panel_miiedit.Size = New System.Drawing.Size(676, 540)
         Me.Panel_miiedit.TabIndex = 95
-        Me.Panel_miiedit.Visible = False
         '
         'Panel_savemii
         '
@@ -7534,6 +7535,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox35.TabIndex = 307
         Me.PictureBox35.TabStop = False
+        Me.PictureBox35.Visible = False
         '
         'Label15
         '
@@ -7543,6 +7545,7 @@ Partial Class TL_SaveEditor
         Me.Label15.TabIndex = 306
         Me.Label15.Text = "Actual island address"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label15.Visible = False
         '
         'Panel24
         '
@@ -7552,6 +7555,7 @@ Partial Class TL_SaveEditor
         Me.Panel24.Name = "Panel24"
         Me.Panel24.Size = New System.Drawing.Size(220, 17)
         Me.Panel24.TabIndex = 305
+        Me.Panel24.Visible = False
         '
         'Text_actualIsld
         '
@@ -7575,6 +7579,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox33.TabIndex = 304
         Me.PictureBox33.TabStop = False
+        Me.PictureBox33.Visible = False
         '
         'Label14
         '
@@ -7584,6 +7589,7 @@ Partial Class TL_SaveEditor
         Me.Label14.TabIndex = 303
         Me.Label14.Text = "Origin island address"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label14.Visible = False
         '
         'Panel23
         '
@@ -7593,6 +7599,7 @@ Partial Class TL_SaveEditor
         Me.Panel23.Name = "Panel23"
         Me.Panel23.Size = New System.Drawing.Size(220, 17)
         Me.Panel23.TabIndex = 302
+        Me.Panel23.Visible = False
         '
         'Text_originisld
         '
@@ -7616,6 +7623,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox32.TabIndex = 301
         Me.PictureBox32.TabStop = False
+        Me.PictureBox32.Visible = False
         '
         'PictureBox31
         '
@@ -7627,6 +7635,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox31.TabIndex = 300
         Me.PictureBox31.TabStop = False
+        Me.PictureBox31.Visible = False
         '
         'Text_crcxmodem
         '
@@ -7649,6 +7658,7 @@ Partial Class TL_SaveEditor
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(118, 25)
         Me.Panel12.TabIndex = 298
+        Me.Panel12.Visible = False
         '
         'valu_hairstyle
         '
@@ -7695,6 +7705,7 @@ Partial Class TL_SaveEditor
         Me.Icon_hairstyle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_hairstyle.TabIndex = 296
         Me.Icon_hairstyle.TabStop = False
+        Me.Icon_hairstyle.Visible = False
         '
         'Label13
         '
@@ -7704,6 +7715,7 @@ Partial Class TL_SaveEditor
         Me.Label13.TabIndex = 295
         Me.Label13.Text = "Hair style"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label13.Visible = False
         '
         'Text_Mii
         '
@@ -7723,6 +7735,7 @@ Partial Class TL_SaveEditor
         Me.Label3.TabIndex = 291
         Me.Label3.Text = "Tomodachi Life" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Mii system ID"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label3.Visible = False
         '
         'Panel46
         '
@@ -7732,6 +7745,7 @@ Partial Class TL_SaveEditor
         Me.Panel46.Name = "Panel46"
         Me.Panel46.Size = New System.Drawing.Size(126, 17)
         Me.Panel46.TabIndex = 290
+        Me.Panel46.Visible = False
         '
         'Text_TLMiisysID
         '
@@ -7753,6 +7767,7 @@ Partial Class TL_SaveEditor
         Me.Label5.TabIndex = 289
         Me.Label5.Text = "Mii system ID"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label5.Visible = False
         '
         'Panel47
         '
@@ -7762,6 +7777,7 @@ Partial Class TL_SaveEditor
         Me.Panel47.Name = "Panel47"
         Me.Panel47.Size = New System.Drawing.Size(126, 17)
         Me.Panel47.TabIndex = 288
+        Me.Panel47.Visible = False
         '
         'Text_MiisysID
         '
@@ -7784,6 +7800,7 @@ Partial Class TL_SaveEditor
         Me.Panel43.Name = "Panel43"
         Me.Panel43.Size = New System.Drawing.Size(118, 25)
         Me.Panel43.TabIndex = 287
+        Me.Panel43.Visible = False
         '
         'Text_wrinkles
         '
@@ -7828,6 +7845,7 @@ Partial Class TL_SaveEditor
         Me.Icon_wrinkles.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_wrinkles.TabIndex = 285
         Me.Icon_wrinkles.TabStop = False
+        Me.Icon_wrinkles.Visible = False
         '
         'Title_wrinkles
         '
@@ -7837,6 +7855,7 @@ Partial Class TL_SaveEditor
         Me.Title_wrinkles.TabIndex = 284
         Me.Title_wrinkles.Text = "Wrinkles"
         Me.Title_wrinkles.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Title_wrinkles.Visible = False
         '
         'Panel42
         '
@@ -7847,6 +7866,7 @@ Partial Class TL_SaveEditor
         Me.Panel42.Name = "Panel42"
         Me.Panel42.Size = New System.Drawing.Size(118, 25)
         Me.Panel42.TabIndex = 283
+        Me.Panel42.Visible = False
         '
         'Text_makeup
         '
@@ -7892,6 +7912,7 @@ Partial Class TL_SaveEditor
         Me.Icon_makeup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_makeup.TabIndex = 281
         Me.Icon_makeup.TabStop = False
+        Me.Icon_makeup.Visible = False
         '
         'Title_makeup
         '
@@ -7901,6 +7922,7 @@ Partial Class TL_SaveEditor
         Me.Title_makeup.TabIndex = 280
         Me.Title_makeup.Text = "Makeup"
         Me.Title_makeup.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Title_makeup.Visible = False
         '
         'PictureBox14
         '
@@ -7929,6 +7951,7 @@ Partial Class TL_SaveEditor
         Me.Panel_skincolor.Name = "Panel_skincolor"
         Me.Panel_skincolor.Size = New System.Drawing.Size(146, 25)
         Me.Panel_skincolor.TabIndex = 278
+        Me.Panel_skincolor.Visible = False
         '
         'Text_skincolor
         '
@@ -8009,6 +8032,7 @@ Partial Class TL_SaveEditor
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(118, 25)
         Me.Panel8.TabIndex = 277
+        Me.Panel8.Visible = False
         '
         'Text_faceshape
         '
@@ -8054,6 +8078,7 @@ Partial Class TL_SaveEditor
         Me.Icon_faceshape.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.Icon_faceshape.TabIndex = 273
         Me.Icon_faceshape.TabStop = False
+        Me.Icon_faceshape.Visible = False
         '
         'Title_faceshape
         '
@@ -8063,6 +8088,7 @@ Partial Class TL_SaveEditor
         Me.Title_faceshape.TabIndex = 269
         Me.Title_faceshape.Text = "Face shape"
         Me.Title_faceshape.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Title_faceshape.Visible = False
         '
         'Title_skincolor
         '
@@ -8073,6 +8099,7 @@ Partial Class TL_SaveEditor
         Me.Title_skincolor.TabIndex = 270
         Me.Title_skincolor.Text = "Skin color"
         Me.Title_skincolor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Title_skincolor.Visible = False
         '
         'Text_binarysharing
         '
@@ -14971,6 +14998,7 @@ Partial Class TL_SaveEditor
         Me.Panel28.Name = "Panel28"
         Me.Panel28.Size = New System.Drawing.Size(144, 51)
         Me.Panel28.TabIndex = 244
+        Me.Panel28.Visible = False
         '
         'Select_setallrelation
         '
@@ -15032,6 +15060,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox27.TabIndex = 239
         Me.PictureBox27.TabStop = False
+        Me.PictureBox27.Visible = False
         '
         'Panel29
         '
@@ -15043,6 +15072,7 @@ Partial Class TL_SaveEditor
         Me.Panel29.Name = "Panel29"
         Me.Panel29.Size = New System.Drawing.Size(144, 25)
         Me.Panel29.TabIndex = 237
+        Me.Panel29.Visible = False
         '
         'valu_setallfriends
         '
@@ -15079,6 +15109,7 @@ Partial Class TL_SaveEditor
         Me.PictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox28.TabIndex = 238
         Me.PictureBox28.TabStop = False
+        Me.PictureBox28.Visible = False
         '
         'Panel_friendlist_1
         '
@@ -15212,6 +15243,7 @@ Partial Class TL_SaveEditor
         Me.Panel_friendlist_1.Name = "Panel_friendlist_1"
         Me.Panel_friendlist_1.Size = New System.Drawing.Size(585, 402)
         Me.Panel_friendlist_1.TabIndex = 246
+        Me.Panel_friendlist_1.Visible = False
         '
         'Panfriends1_arrow_right
         '
@@ -25021,10 +25053,10 @@ Partial Class TL_SaveEditor
         Me.Controls.Add(Me.Panel_manual)
         Me.Controls.Add(Me.Panel_concertedit)
         Me.Controls.Add(Me.Panel_repairsave)
-        Me.Controls.Add(Me.Panel_islandedit)
         Me.Controls.Add(Me.Panel_extras)
         Me.Controls.Add(Me.Panel_itemsedit)
         Me.Controls.Add(Me.Panel_settings)
+        Me.Controls.Add(Me.Panel_islandedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TL_SaveEditor"

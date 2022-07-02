@@ -1548,7 +1548,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_islandsettings
         '
-        Me.Text_menu_islandsettings.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_islandsettings.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_islandsettings.ForeColor = System.Drawing.Color.White
         Me.Text_menu_islandsettings.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_islandsettings.Name = "Text_menu_islandsettings"
@@ -1646,7 +1646,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_savefilesettings
         '
-        Me.Text_menu_savefilesettings.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_savefilesettings.Cursor = System.Windows.Forms.Cursors.No
         Me.Text_menu_savefilesettings.ForeColor = System.Drawing.Color.Black
         Me.Text_menu_savefilesettings.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_savefilesettings.Name = "Text_menu_savefilesettings"
@@ -1665,12 +1665,12 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
-        Me.Controls.Add(Me.TLSE_menu)
         Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
+        Me.Controls.Add(Me.TLSE_menu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"

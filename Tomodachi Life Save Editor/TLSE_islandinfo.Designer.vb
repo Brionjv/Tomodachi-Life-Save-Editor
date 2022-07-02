@@ -123,6 +123,24 @@ Partial Class TLSE_islandinfo
         Me.Warning_islandaddress = New System.Windows.Forms.PictureBox()
         Me.AdvH_islandaddress = New System.Windows.Forms.PictureBox()
         Me.Title_islandaddress = New System.Windows.Forms.Label()
+        Me.Panel_description = New System.Windows.Forms.Panel()
+        Me.Text_description = New System.Windows.Forms.Label()
+        Me.valu_itemsent = New System.Windows.Forms.NumericUpDown()
+        Me.Select_itemsent = New System.Windows.Forms.ComboBox()
+        Me.Panel_itemcolor = New System.Windows.Forms.Panel()
+        Me.Icon_itemcolor_8 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemcolor_7 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemcolor_6 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemcolor_5 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemcolor_4 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemcolor_3 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemcolor_2 = New System.Windows.Forms.PictureBox()
+        Me.Icon_itemcolor_1 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Warning_itemsent = New System.Windows.Forms.PictureBox()
+        Me.Warning_itemcolor = New System.Windows.Forms.PictureBox()
+        Me.valu_itemcolor = New System.Windows.Forms.NumericUpDown()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -191,6 +209,20 @@ Partial Class TLSE_islandinfo
         Me.Panel_islandaddress.SuspendLayout()
         CType(Me.Warning_islandaddress, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_islandaddress, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_description.SuspendLayout()
+        CType(Me.valu_itemsent, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_itemcolor.SuspendLayout()
+        CType(Me.Icon_itemcolor_8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemcolor_7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemcolor_6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemcolor_5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemcolor_4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemcolor_3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemcolor_2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Icon_itemcolor_1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Warning_itemsent, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Warning_itemcolor, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_itemcolor, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -1343,12 +1375,228 @@ Partial Class TLSE_islandinfo
         Me.Title_islandaddress.Text = "Island's address"
         Me.Title_islandaddress.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Panel_description
+        '
+        Me.Panel_description.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_description.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_description
+        Me.Panel_description.Controls.Add(Me.Text_description)
+        Me.Panel_description.Location = New System.Drawing.Point(0, 502)
+        Me.Panel_description.Name = "Panel_description"
+        Me.Panel_description.Size = New System.Drawing.Size(800, 30)
+        Me.Panel_description.TabIndex = 367
+        Me.Panel_description.Visible = False
+        '
+        'Text_description
+        '
+        Me.Text_description.BackColor = System.Drawing.Color.Transparent
+        Me.Text_description.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Text_description.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_description.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_description.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Text_description.Location = New System.Drawing.Point(0, 0)
+        Me.Text_description.Name = "Text_description"
+        Me.Text_description.Size = New System.Drawing.Size(800, 30)
+        Me.Text_description.TabIndex = 0
+        Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'valu_itemsent
+        '
+        Me.valu_itemsent.BackColor = System.Drawing.Color.LightCyan
+        Me.valu_itemsent.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemsent.Hexadecimal = True
+        Me.valu_itemsent.Location = New System.Drawing.Point(360, 425)
+        Me.valu_itemsent.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_itemsent.Name = "valu_itemsent"
+        Me.valu_itemsent.Size = New System.Drawing.Size(58, 16)
+        Me.valu_itemsent.TabIndex = 368
+        Me.valu_itemsent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Select_itemsent
+        '
+        Me.Select_itemsent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_itemsent.Enabled = False
+        Me.Select_itemsent.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_itemsent.FormattingEnabled = True
+        Me.Select_itemsent.Location = New System.Drawing.Point(359, 421)
+        Me.Select_itemsent.Name = "Select_itemsent"
+        Me.Select_itemsent.Size = New System.Drawing.Size(170, 21)
+        Me.Select_itemsent.TabIndex = 369
+        '
+        'Panel_itemcolor
+        '
+        Me.Panel_itemcolor.BackColor = System.Drawing.Color.Azure
+        Me.Panel_itemcolor.Controls.Add(Me.Icon_itemcolor_8)
+        Me.Panel_itemcolor.Controls.Add(Me.Icon_itemcolor_7)
+        Me.Panel_itemcolor.Controls.Add(Me.Icon_itemcolor_6)
+        Me.Panel_itemcolor.Controls.Add(Me.Icon_itemcolor_5)
+        Me.Panel_itemcolor.Controls.Add(Me.Icon_itemcolor_4)
+        Me.Panel_itemcolor.Controls.Add(Me.Icon_itemcolor_3)
+        Me.Panel_itemcolor.Controls.Add(Me.Icon_itemcolor_2)
+        Me.Panel_itemcolor.Controls.Add(Me.Icon_itemcolor_1)
+        Me.Panel_itemcolor.Location = New System.Drawing.Point(578, 419)
+        Me.Panel_itemcolor.Name = "Panel_itemcolor"
+        Me.Panel_itemcolor.Size = New System.Drawing.Size(193, 25)
+        Me.Panel_itemcolor.TabIndex = 370
+        '
+        'Icon_itemcolor_8
+        '
+        Me.Icon_itemcolor_8.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemcolor_8.Image = CType(resources.GetObject("Icon_itemcolor_8.Image"), System.Drawing.Image)
+        Me.Icon_itemcolor_8.Location = New System.Drawing.Point(166, 2)
+        Me.Icon_itemcolor_8.Name = "Icon_itemcolor_8"
+        Me.Icon_itemcolor_8.Size = New System.Drawing.Size(21, 21)
+        Me.Icon_itemcolor_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_itemcolor_8.TabIndex = 7
+        Me.Icon_itemcolor_8.TabStop = False
+        '
+        'Icon_itemcolor_7
+        '
+        Me.Icon_itemcolor_7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemcolor_7.Image = CType(resources.GetObject("Icon_itemcolor_7.Image"), System.Drawing.Image)
+        Me.Icon_itemcolor_7.Location = New System.Drawing.Point(143, 2)
+        Me.Icon_itemcolor_7.Name = "Icon_itemcolor_7"
+        Me.Icon_itemcolor_7.Size = New System.Drawing.Size(21, 21)
+        Me.Icon_itemcolor_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_itemcolor_7.TabIndex = 6
+        Me.Icon_itemcolor_7.TabStop = False
+        '
+        'Icon_itemcolor_6
+        '
+        Me.Icon_itemcolor_6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemcolor_6.Image = CType(resources.GetObject("Icon_itemcolor_6.Image"), System.Drawing.Image)
+        Me.Icon_itemcolor_6.Location = New System.Drawing.Point(120, 2)
+        Me.Icon_itemcolor_6.Name = "Icon_itemcolor_6"
+        Me.Icon_itemcolor_6.Size = New System.Drawing.Size(21, 21)
+        Me.Icon_itemcolor_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_itemcolor_6.TabIndex = 5
+        Me.Icon_itemcolor_6.TabStop = False
+        '
+        'Icon_itemcolor_5
+        '
+        Me.Icon_itemcolor_5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemcolor_5.Image = CType(resources.GetObject("Icon_itemcolor_5.Image"), System.Drawing.Image)
+        Me.Icon_itemcolor_5.Location = New System.Drawing.Point(97, 2)
+        Me.Icon_itemcolor_5.Name = "Icon_itemcolor_5"
+        Me.Icon_itemcolor_5.Size = New System.Drawing.Size(21, 21)
+        Me.Icon_itemcolor_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_itemcolor_5.TabIndex = 4
+        Me.Icon_itemcolor_5.TabStop = False
+        '
+        'Icon_itemcolor_4
+        '
+        Me.Icon_itemcolor_4.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemcolor_4.Image = CType(resources.GetObject("Icon_itemcolor_4.Image"), System.Drawing.Image)
+        Me.Icon_itemcolor_4.Location = New System.Drawing.Point(74, 2)
+        Me.Icon_itemcolor_4.Name = "Icon_itemcolor_4"
+        Me.Icon_itemcolor_4.Size = New System.Drawing.Size(21, 21)
+        Me.Icon_itemcolor_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_itemcolor_4.TabIndex = 3
+        Me.Icon_itemcolor_4.TabStop = False
+        '
+        'Icon_itemcolor_3
+        '
+        Me.Icon_itemcolor_3.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemcolor_3.Image = CType(resources.GetObject("Icon_itemcolor_3.Image"), System.Drawing.Image)
+        Me.Icon_itemcolor_3.Location = New System.Drawing.Point(51, 2)
+        Me.Icon_itemcolor_3.Name = "Icon_itemcolor_3"
+        Me.Icon_itemcolor_3.Size = New System.Drawing.Size(21, 21)
+        Me.Icon_itemcolor_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_itemcolor_3.TabIndex = 2
+        Me.Icon_itemcolor_3.TabStop = False
+        '
+        'Icon_itemcolor_2
+        '
+        Me.Icon_itemcolor_2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemcolor_2.Image = CType(resources.GetObject("Icon_itemcolor_2.Image"), System.Drawing.Image)
+        Me.Icon_itemcolor_2.Location = New System.Drawing.Point(28, 2)
+        Me.Icon_itemcolor_2.Name = "Icon_itemcolor_2"
+        Me.Icon_itemcolor_2.Size = New System.Drawing.Size(21, 21)
+        Me.Icon_itemcolor_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_itemcolor_2.TabIndex = 1
+        Me.Icon_itemcolor_2.TabStop = False
+        '
+        'Icon_itemcolor_1
+        '
+        Me.Icon_itemcolor_1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_itemcolor_1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_colorvariation_empty
+        Me.Icon_itemcolor_1.Location = New System.Drawing.Point(5, 2)
+        Me.Icon_itemcolor_1.Name = "Icon_itemcolor_1"
+        Me.Icon_itemcolor_1.Size = New System.Drawing.Size(21, 21)
+        Me.Icon_itemcolor_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.Icon_itemcolor_1.TabIndex = 0
+        Me.Icon_itemcolor_1.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Location = New System.Drawing.Point(360, 404)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(156, 13)
+        Me.Label2.TabIndex = 371
+        Me.Label2.Text = "Item sent via Streetpass"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Location = New System.Drawing.Point(580, 404)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(156, 13)
+        Me.Label3.TabIndex = 372
+        Me.Label3.Text = "Item color"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Warning_itemsent
+        '
+        Me.Warning_itemsent.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_itemsent.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_itemsent.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
+        Me.Warning_itemsent.Location = New System.Drawing.Point(507, 397)
+        Me.Warning_itemsent.Name = "Warning_itemsent"
+        Me.Warning_itemsent.Size = New System.Drawing.Size(22, 24)
+        Me.Warning_itemsent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Warning_itemsent.TabIndex = 373
+        Me.Warning_itemsent.TabStop = False
+        '
+        'Warning_itemcolor
+        '
+        Me.Warning_itemcolor.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_itemcolor.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_itemcolor.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_2
+        Me.Warning_itemcolor.Location = New System.Drawing.Point(749, 396)
+        Me.Warning_itemcolor.Name = "Warning_itemcolor"
+        Me.Warning_itemcolor.Size = New System.Drawing.Size(22, 24)
+        Me.Warning_itemcolor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Warning_itemcolor.TabIndex = 374
+        Me.Warning_itemcolor.TabStop = False
+        '
+        'valu_itemcolor
+        '
+        Me.valu_itemcolor.BackColor = System.Drawing.Color.LightCyan
+        Me.valu_itemcolor.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_itemcolor.Hexadecimal = True
+        Me.valu_itemcolor.Location = New System.Drawing.Point(579, 444)
+        Me.valu_itemcolor.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_itemcolor.Name = "valu_itemcolor"
+        Me.valu_itemcolor.Size = New System.Drawing.Size(43, 16)
+        Me.valu_itemcolor.TabIndex = 375
+        Me.valu_itemcolor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_itemcolor.Visible = False
+        '
         'TLSE_islandinfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_islandedit
         Me.ClientSize = New System.Drawing.Size(800, 533)
+        Me.Controls.Add(Me.valu_itemcolor)
+        Me.Controls.Add(Me.Warning_itemcolor)
+        Me.Controls.Add(Me.Warning_itemsent)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Panel_itemcolor)
+        Me.Controls.Add(Me.valu_itemsent)
+        Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Panel_addsymb_islandname)
         Me.Controls.Add(Me.Panel_islandaddress)
         Me.Controls.Add(Me.Warning_islandaddress)
@@ -1395,6 +1643,7 @@ Partial Class TLSE_islandinfo
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.Select_itemsent)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_islandinfo"
@@ -1479,6 +1728,20 @@ Partial Class TLSE_islandinfo
         Me.Panel_islandaddress.PerformLayout()
         CType(Me.Warning_islandaddress, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_islandaddress, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_description.ResumeLayout(False)
+        CType(Me.valu_itemsent, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_itemcolor.ResumeLayout(False)
+        CType(Me.Icon_itemcolor_8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemcolor_7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemcolor_6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemcolor_5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemcolor_4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemcolor_3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemcolor_2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Icon_itemcolor_1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Warning_itemsent, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Warning_itemcolor, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_itemcolor, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1584,4 +1847,22 @@ Partial Class TLSE_islandinfo
     Friend WithEvents Warning_islandaddress As PictureBox
     Friend WithEvents AdvH_islandaddress As PictureBox
     Friend WithEvents Title_islandaddress As Label
+    Friend WithEvents Panel_description As Panel
+    Friend WithEvents Text_description As Label
+    Friend WithEvents valu_itemsent As NumericUpDown
+    Friend WithEvents Select_itemsent As ComboBox
+    Friend WithEvents Panel_itemcolor As Panel
+    Friend WithEvents Icon_itemcolor_8 As PictureBox
+    Friend WithEvents Icon_itemcolor_7 As PictureBox
+    Friend WithEvents Icon_itemcolor_6 As PictureBox
+    Friend WithEvents Icon_itemcolor_5 As PictureBox
+    Friend WithEvents Icon_itemcolor_4 As PictureBox
+    Friend WithEvents Icon_itemcolor_3 As PictureBox
+    Friend WithEvents Icon_itemcolor_2 As PictureBox
+    Friend WithEvents Icon_itemcolor_1 As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Warning_itemsent As PictureBox
+    Friend WithEvents Warning_itemcolor As PictureBox
+    Friend WithEvents valu_itemcolor As NumericUpDown
 End Class
