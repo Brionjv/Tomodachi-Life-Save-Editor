@@ -594,4 +594,22 @@ Public Class TLSE_repairsave
             End Try
         End If
     End Sub
+
+    Private Sub Check_fixunknow_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_fixunknow.MouseMove
+        Text_description.Text = "Click to fix ''Mii location ?'' when save file is corrupted"
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_fixunknow_MouseLeave(sender As Object, e As EventArgs) Handles Check_fixunknow.MouseLeave
+        Panel_description.Visible = False
+    End Sub
+
+    Private Sub Check_deletetravelersdata_MouseMove(sender As Object, e As MouseEventArgs) Handles Check_deletetravelersdata.MouseMove
+        Text_description.Text = "Click to delete all travelers in island when a wrong file is used"
+        Panel_description.Visible = True
+    End Sub
+
+    Private Sub Check_deletetravelersdata_MouseLeave(sender As Object, e As EventArgs) Handles Check_deletetravelersdata.MouseLeave
+        Panel_description.Visible = False
+    End Sub
 End Class

@@ -178,6 +178,22 @@ Public Class TLSE_hub
         Menu_islandinfo.BackgroundImage = My.Resources.bbl_islandinfo
     End Sub
 
+    Private Sub Text_menu_islandsettings_Click(sender As Object, e As EventArgs) Handles Text_menu_islandsettings.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_islandsettings.TLSE_logo_update.Visible = True
+        End If
+        TLSE_islandsettings.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_islandsettings_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_islandsettings.MouseMove
+        Menu_islandsettings.BackgroundImage = My.Resources.bbl_islandsettings_act
+    End Sub
+
+    Private Sub Text_menu_islandsettings_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_islandsettings.MouseLeave
+        Menu_islandsettings.BackgroundImage = My.Resources.bbl_islandsettings
+    End Sub
+
     Private Sub Text_menu_itemsedit_Click(sender As Object, e As EventArgs) Handles Text_menu_itemsedit.Click
         Hidemenu()
         TLSE_menu_Itemsedition.Visible = True

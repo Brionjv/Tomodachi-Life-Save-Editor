@@ -120,6 +120,12 @@
     <Compile Include="TLSE_islandconfig.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_islandsettings.Designer.vb">
+      <DependentUpon>TLSE_islandsettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_islandsettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_itemsedit.Designer.vb">
       <DependentUpon>TLSE_itemsedit.vb</DependentUpon>
     </Compile>
@@ -217,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_islandconfig.resx">
       <DependentUpon>TLSE_islandconfig.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_islandsettings.resx">
+      <DependentUpon>TLSE_islandsettings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_itemsedit.resx">
       <DependentUpon>TLSE_itemsedit.vb</DependentUpon>

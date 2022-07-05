@@ -755,7 +755,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.1.2"
+        Me.TLSE_version.Text = "Version EX-1.1.3"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1548,7 +1548,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_islandsettings
         '
-        Me.Text_menu_islandsettings.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_islandsettings.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_islandsettings.ForeColor = System.Drawing.Color.White
         Me.Text_menu_islandsettings.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_islandsettings.Name = "Text_menu_islandsettings"

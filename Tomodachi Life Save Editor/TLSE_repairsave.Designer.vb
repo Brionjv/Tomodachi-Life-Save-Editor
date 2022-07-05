@@ -68,6 +68,8 @@ Partial Class TLSE_repairsave
         Me.Check_deletetravelersdata = New System.Windows.Forms.CheckBox()
         Me.Text_deletetravelersdata = New System.Windows.Forms.TextBox()
         Me.Text_deletejtravelersdata = New System.Windows.Forms.TextBox()
+        Me.Panel_description = New System.Windows.Forms.Panel()
+        Me.Text_description = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -93,6 +95,7 @@ Partial Class TLSE_repairsave
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_header, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_header, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_description.SuspendLayout()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -648,12 +651,37 @@ Partial Class TLSE_repairsave
         Me.Text_deletejtravelersdata.Text = resources.GetString("Text_deletejtravelersdata.Text")
         Me.Text_deletejtravelersdata.Visible = False
         '
+        'Panel_description
+        '
+        Me.Panel_description.BackColor = System.Drawing.Color.Transparent
+        Me.Panel_description.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_description
+        Me.Panel_description.Controls.Add(Me.Text_description)
+        Me.Panel_description.Location = New System.Drawing.Point(0, 420)
+        Me.Panel_description.Name = "Panel_description"
+        Me.Panel_description.Size = New System.Drawing.Size(800, 30)
+        Me.Panel_description.TabIndex = 368
+        Me.Panel_description.Visible = False
+        '
+        'Text_description
+        '
+        Me.Text_description.BackColor = System.Drawing.Color.Transparent
+        Me.Text_description.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Text_description.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Text_description.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Text_description.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Text_description.Location = New System.Drawing.Point(0, 0)
+        Me.Text_description.Name = "Text_description"
+        Me.Text_description.Size = New System.Drawing.Size(800, 30)
+        Me.Text_description.TabIndex = 0
+        Me.Text_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TLSE_repairsave
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_repairsave
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Panel_description)
         Me.Controls.Add(Me.Text_deletejtravelersdata)
         Me.Controls.Add(Me.Text_deletetravelersdata)
         Me.Controls.Add(Me.Check_deletetravelersdata)
@@ -703,6 +731,7 @@ Partial Class TLSE_repairsave
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_header, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_header, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_description.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -753,4 +782,6 @@ Partial Class TLSE_repairsave
     Friend WithEvents Check_deletetravelersdata As CheckBox
     Friend WithEvents Text_deletetravelersdata As TextBox
     Friend WithEvents Text_deletejtravelersdata As TextBox
+    Friend WithEvents Panel_description As Panel
+    Friend WithEvents Text_description As Label
 End Class
