@@ -71,22 +71,68 @@ Partial Class TLSE_islandsettings
         Me.Select_streetpassactiv = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.valu_spotpassactiv = New System.Windows.Forms.NumericUpDown()
-        Me.Select_spotpassactiv = New System.Windows.Forms.ComboBox()
+        Me.Select_sa_unknow1 = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Select_unknow3 = New System.Windows.Forms.ComboBox()
+        Me.Select_bb_unknow3 = New System.Windows.Forms.ComboBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.valu_babiesborn = New System.Windows.Forms.NumericUpDown()
-        Me.Select_unknow2 = New System.Windows.Forms.ComboBox()
+        Me.Select_bb_unknow2 = New System.Windows.Forms.ComboBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Select_unknow1 = New System.Windows.Forms.ComboBox()
+        Me.Select_bb_unknow1 = New System.Windows.Forms.ComboBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.ConvertB_babiesborn = New System.Windows.Forms.TextBox()
+        Me.Binary_bb_unknow1 = New System.Windows.Forms.TextBox()
         Me.Binary_babiesborn = New System.Windows.Forms.TextBox()
-        Me.Binary_unknow1 = New System.Windows.Forms.TextBox()
-        Me.Binary_unknow3 = New System.Windows.Forms.TextBox()
-        Me.Binary_unknow2 = New System.Windows.Forms.TextBox()
+        Me.Binary_bb_unknow3 = New System.Windows.Forms.TextBox()
+        Me.Binary_bb_unknow2 = New System.Windows.Forms.TextBox()
+        Me.Binary_sa_unknow4 = New System.Windows.Forms.TextBox()
+        Me.Binary_sa_unknow3 = New System.Windows.Forms.TextBox()
+        Me.Binary_sa_unknow2 = New System.Windows.Forms.TextBox()
+        Me.Binary_sa_unknow1 = New System.Windows.Forms.TextBox()
+        Me.ConvertB_spotpassactiv = New System.Windows.Forms.TextBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Select_bb_unknow7 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Select_bb_unknow6 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Select_bb_unknow5 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Select_bb_unknow4 = New System.Windows.Forms.ComboBox()
+        Me.Binary_bb_unknow7 = New System.Windows.Forms.TextBox()
+        Me.Binary_bb_unknow6 = New System.Windows.Forms.TextBox()
+        Me.Binary_bb_unknow5 = New System.Windows.Forms.TextBox()
+        Me.Binary_bb_unknow4 = New System.Windows.Forms.TextBox()
+        Me.Binary_sa_unknow7 = New System.Windows.Forms.TextBox()
+        Me.Binary_spotpassactiv = New System.Windows.Forms.TextBox()
+        Me.Binary_sa_unknow6 = New System.Windows.Forms.TextBox()
+        Me.Binary_sa_unknow5 = New System.Windows.Forms.TextBox()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Select_sa_unknow3 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Select_sa_unknow6 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Select_sa_unknow7 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Select_spotpassactiv = New System.Windows.Forms.ComboBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Select_sa_unknow5 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Select_sa_unknow4 = New System.Windows.Forms.ComboBox()
+        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Select_sa_unknow2 = New System.Windows.Forms.ComboBox()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -119,6 +165,17 @@ Partial Class TLSE_islandsettings
         CType(Me.valu_babiesborn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -602,7 +659,7 @@ Partial Class TLSE_islandsettings
         Me.Warning_itemsent.BackColor = System.Drawing.Color.Transparent
         Me.Warning_itemsent.Cursor = System.Windows.Forms.Cursors.Help
         Me.Warning_itemsent.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.Warning_itemsent.Location = New System.Drawing.Point(207, 180)
+        Me.Warning_itemsent.Location = New System.Drawing.Point(719, 148)
         Me.Warning_itemsent.Name = "Warning_itemsent"
         Me.Warning_itemsent.Size = New System.Drawing.Size(24, 22)
         Me.Warning_itemsent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -612,7 +669,7 @@ Partial Class TLSE_islandsettings
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Location = New System.Drawing.Point(38, 174)
+        Me.Label2.Location = New System.Drawing.Point(556, 148)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(156, 13)
         Me.Label2.TabIndex = 376
@@ -625,7 +682,7 @@ Partial Class TLSE_islandsettings
         Me.Select_babiesborn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_babiesborn.FormattingEnabled = True
         Me.Select_babiesborn.Items.AddRange(New Object() {"Unactivated", "Activated"})
-        Me.Select_babiesborn.Location = New System.Drawing.Point(37, 191)
+        Me.Select_babiesborn.Location = New System.Drawing.Point(549, 165)
         Me.Select_babiesborn.Name = "Select_babiesborn"
         Me.Select_babiesborn.Size = New System.Drawing.Size(170, 21)
         Me.Select_babiesborn.TabIndex = 375
@@ -635,7 +692,7 @@ Partial Class TLSE_islandsettings
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox1.Location = New System.Drawing.Point(466, 180)
+        Me.PictureBox1.Location = New System.Drawing.Point(201, 148)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(24, 22)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -645,7 +702,7 @@ Partial Class TLSE_islandsettings
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Location = New System.Drawing.Point(297, 174)
+        Me.Label3.Location = New System.Drawing.Point(38, 148)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(156, 13)
         Me.Label3.TabIndex = 380
@@ -657,7 +714,7 @@ Partial Class TLSE_islandsettings
         Me.valu_streetpassactiv.BackColor = System.Drawing.Color.White
         Me.valu_streetpassactiv.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_streetpassactiv.Hexadecimal = True
-        Me.valu_streetpassactiv.Location = New System.Drawing.Point(297, 195)
+        Me.valu_streetpassactiv.Location = New System.Drawing.Point(87, 169)
         Me.valu_streetpassactiv.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_streetpassactiv.Name = "valu_streetpassactiv"
         Me.valu_streetpassactiv.Size = New System.Drawing.Size(58, 16)
@@ -671,7 +728,7 @@ Partial Class TLSE_islandsettings
         Me.Select_streetpassactiv.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Select_streetpassactiv.FormattingEnabled = True
         Me.Select_streetpassactiv.Items.AddRange(New Object() {"Unactivated", "Activated"})
-        Me.Select_streetpassactiv.Location = New System.Drawing.Point(296, 191)
+        Me.Select_streetpassactiv.Location = New System.Drawing.Point(31, 165)
         Me.Select_streetpassactiv.Name = "Select_streetpassactiv"
         Me.Select_streetpassactiv.Size = New System.Drawing.Size(170, 21)
         Me.Select_streetpassactiv.TabIndex = 379
@@ -679,64 +736,63 @@ Partial Class TLSE_islandsettings
         'Label4
         '
         Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Location = New System.Drawing.Point(556, 174)
+        Me.Label4.Location = New System.Drawing.Point(38, 349)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(156, 13)
         Me.Label4.TabIndex = 384
-        Me.Label4.Text = "SpotPass activation"
+        Me.Label4.Text = "??? (spotpass activation)"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'valu_spotpassactiv
         '
-        Me.valu_spotpassactiv.BackColor = System.Drawing.Color.White
+        Me.valu_spotpassactiv.BackColor = System.Drawing.Color.PeachPuff
         Me.valu_spotpassactiv.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_spotpassactiv.Hexadecimal = True
-        Me.valu_spotpassactiv.Location = New System.Drawing.Point(556, 195)
+        Me.valu_spotpassactiv.Location = New System.Drawing.Point(640, 527)
         Me.valu_spotpassactiv.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
         Me.valu_spotpassactiv.Name = "valu_spotpassactiv"
         Me.valu_spotpassactiv.Size = New System.Drawing.Size(58, 16)
         Me.valu_spotpassactiv.TabIndex = 382
         Me.valu_spotpassactiv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_spotpassactiv.Visible = False
         '
-        'Select_spotpassactiv
+        'Select_sa_unknow1
         '
-        Me.Select_spotpassactiv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_spotpassactiv.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_spotpassactiv.FormattingEnabled = True
-        Me.Select_spotpassactiv.Items.AddRange(New Object() {"Unactivated", "Activated"})
-        Me.Select_spotpassactiv.Location = New System.Drawing.Point(555, 191)
-        Me.Select_spotpassactiv.Name = "Select_spotpassactiv"
-        Me.Select_spotpassactiv.Size = New System.Drawing.Size(170, 21)
-        Me.Select_spotpassactiv.TabIndex = 383
+        Me.Select_sa_unknow1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_sa_unknow1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_sa_unknow1.FormattingEnabled = True
+        Me.Select_sa_unknow1.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_sa_unknow1.Location = New System.Drawing.Point(31, 366)
+        Me.Select_sa_unknow1.Name = "Select_sa_unknow1"
+        Me.Select_sa_unknow1.Size = New System.Drawing.Size(170, 21)
+        Me.Select_sa_unknow1.TabIndex = 383
         '
         'Label5
         '
         Me.Label5.BackColor = System.Drawing.Color.Transparent
-        Me.Label5.Location = New System.Drawing.Point(556, 241)
+        Me.Label5.Location = New System.Drawing.Point(297, 215)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(156, 13)
         Me.Label5.TabIndex = 395
-        Me.Label5.Text = "??? (2)"
+        Me.Label5.Text = "??? (2-babies born)"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Select_unknow3
+        'Select_bb_unknow3
         '
-        Me.Select_unknow3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_unknow3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_unknow3.FormattingEnabled = True
-        Me.Select_unknow3.Items.AddRange(New Object() {"Unactivated", "Activated"})
-        Me.Select_unknow3.Location = New System.Drawing.Point(555, 258)
-        Me.Select_unknow3.Name = "Select_unknow3"
-        Me.Select_unknow3.Size = New System.Drawing.Size(170, 21)
-        Me.Select_unknow3.TabIndex = 394
+        Me.Select_bb_unknow3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_bb_unknow3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_bb_unknow3.FormattingEnabled = True
+        Me.Select_bb_unknow3.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_bb_unknow3.Location = New System.Drawing.Point(290, 232)
+        Me.Select_bb_unknow3.Name = "Select_bb_unknow3"
+        Me.Select_bb_unknow3.Size = New System.Drawing.Size(170, 21)
+        Me.Select_bb_unknow3.TabIndex = 394
         '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox2.Location = New System.Drawing.Point(466, 247)
+        Me.PictureBox2.Location = New System.Drawing.Point(201, 215)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(24, 22)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -746,11 +802,11 @@ Partial Class TLSE_islandsettings
         'Label6
         '
         Me.Label6.BackColor = System.Drawing.Color.Transparent
-        Me.Label6.Location = New System.Drawing.Point(297, 241)
+        Me.Label6.Location = New System.Drawing.Point(38, 215)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(156, 13)
         Me.Label6.TabIndex = 391
-        Me.Label6.Text = "??? (1)"
+        Me.Label6.Text = "??? (1-babies born)"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'valu_babiesborn
@@ -758,31 +814,30 @@ Partial Class TLSE_islandsettings
         Me.valu_babiesborn.BackColor = System.Drawing.Color.PeachPuff
         Me.valu_babiesborn.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.valu_babiesborn.Hexadecimal = True
-        Me.valu_babiesborn.Location = New System.Drawing.Point(41, 302)
+        Me.valu_babiesborn.Location = New System.Drawing.Point(19, 527)
         Me.valu_babiesborn.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
         Me.valu_babiesborn.Name = "valu_babiesborn"
         Me.valu_babiesborn.Size = New System.Drawing.Size(58, 16)
         Me.valu_babiesborn.TabIndex = 389
         Me.valu_babiesborn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        Me.valu_babiesborn.Visible = False
         '
-        'Select_unknow2
+        'Select_bb_unknow2
         '
-        Me.Select_unknow2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_unknow2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_unknow2.FormattingEnabled = True
-        Me.Select_unknow2.Items.AddRange(New Object() {"Unactivated", "Activated"})
-        Me.Select_unknow2.Location = New System.Drawing.Point(296, 258)
-        Me.Select_unknow2.Name = "Select_unknow2"
-        Me.Select_unknow2.Size = New System.Drawing.Size(170, 21)
-        Me.Select_unknow2.TabIndex = 390
+        Me.Select_bb_unknow2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_bb_unknow2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_bb_unknow2.FormattingEnabled = True
+        Me.Select_bb_unknow2.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_bb_unknow2.Location = New System.Drawing.Point(31, 232)
+        Me.Select_bb_unknow2.Name = "Select_bb_unknow2"
+        Me.Select_bb_unknow2.Size = New System.Drawing.Size(170, 21)
+        Me.Select_bb_unknow2.TabIndex = 390
         '
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox3.Location = New System.Drawing.Point(207, 247)
+        Me.PictureBox3.Location = New System.Drawing.Point(460, 148)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(24, 22)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -792,30 +847,30 @@ Partial Class TLSE_islandsettings
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.Color.Transparent
-        Me.Label7.Location = New System.Drawing.Point(38, 241)
+        Me.Label7.Location = New System.Drawing.Point(297, 148)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(156, 13)
         Me.Label7.TabIndex = 387
-        Me.Label7.Text = "???"
+        Me.Label7.Text = "??? (babies born)"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Select_unknow1
+        'Select_bb_unknow1
         '
-        Me.Select_unknow1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Select_unknow1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Select_unknow1.FormattingEnabled = True
-        Me.Select_unknow1.Items.AddRange(New Object() {"Unactivated", "Activated"})
-        Me.Select_unknow1.Location = New System.Drawing.Point(37, 258)
-        Me.Select_unknow1.Name = "Select_unknow1"
-        Me.Select_unknow1.Size = New System.Drawing.Size(170, 21)
-        Me.Select_unknow1.TabIndex = 386
+        Me.Select_bb_unknow1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_bb_unknow1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_bb_unknow1.FormattingEnabled = True
+        Me.Select_bb_unknow1.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_bb_unknow1.Location = New System.Drawing.Point(290, 165)
+        Me.Select_bb_unknow1.Name = "Select_bb_unknow1"
+        Me.Select_bb_unknow1.Size = New System.Drawing.Size(170, 21)
+        Me.Select_bb_unknow1.TabIndex = 386
         '
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Help
         Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox4.Location = New System.Drawing.Point(725, 247)
+        Me.PictureBox4.Location = New System.Drawing.Point(460, 215)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(24, 22)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -825,72 +880,580 @@ Partial Class TLSE_islandsettings
         'ConvertB_babiesborn
         '
         Me.ConvertB_babiesborn.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.ConvertB_babiesborn.Location = New System.Drawing.Point(41, 324)
+        Me.ConvertB_babiesborn.Location = New System.Drawing.Point(19, 549)
         Me.ConvertB_babiesborn.Name = "ConvertB_babiesborn"
         Me.ConvertB_babiesborn.Size = New System.Drawing.Size(142, 13)
         Me.ConvertB_babiesborn.TabIndex = 397
-        Me.ConvertB_babiesborn.Visible = False
+        '
+        'Binary_bb_unknow1
+        '
+        Me.Binary_bb_unknow1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_bb_unknow1.Location = New System.Drawing.Point(19, 568)
+        Me.Binary_bb_unknow1.Name = "Binary_bb_unknow1"
+        Me.Binary_bb_unknow1.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_bb_unknow1.TabIndex = 398
         '
         'Binary_babiesborn
         '
         Me.Binary_babiesborn.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Binary_babiesborn.Location = New System.Drawing.Point(41, 343)
+        Me.Binary_babiesborn.Location = New System.Drawing.Point(56, 568)
         Me.Binary_babiesborn.Name = "Binary_babiesborn"
         Me.Binary_babiesborn.Size = New System.Drawing.Size(31, 13)
-        Me.Binary_babiesborn.TabIndex = 398
-        Me.Binary_babiesborn.Visible = False
+        Me.Binary_babiesborn.TabIndex = 399
         '
-        'Binary_unknow1
+        'Binary_bb_unknow3
         '
-        Me.Binary_unknow1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Binary_unknow1.Location = New System.Drawing.Point(78, 343)
-        Me.Binary_unknow1.Name = "Binary_unknow1"
-        Me.Binary_unknow1.Size = New System.Drawing.Size(31, 13)
-        Me.Binary_unknow1.TabIndex = 399
-        Me.Binary_unknow1.Visible = False
+        Me.Binary_bb_unknow3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_bb_unknow3.Location = New System.Drawing.Point(130, 568)
+        Me.Binary_bb_unknow3.Name = "Binary_bb_unknow3"
+        Me.Binary_bb_unknow3.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_bb_unknow3.TabIndex = 401
         '
-        'Binary_unknow3
+        'Binary_bb_unknow2
         '
-        Me.Binary_unknow3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Binary_unknow3.Location = New System.Drawing.Point(152, 343)
-        Me.Binary_unknow3.Name = "Binary_unknow3"
-        Me.Binary_unknow3.Size = New System.Drawing.Size(31, 13)
-        Me.Binary_unknow3.TabIndex = 401
-        Me.Binary_unknow3.Visible = False
+        Me.Binary_bb_unknow2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_bb_unknow2.Location = New System.Drawing.Point(93, 568)
+        Me.Binary_bb_unknow2.Name = "Binary_bb_unknow2"
+        Me.Binary_bb_unknow2.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_bb_unknow2.TabIndex = 400
         '
-        'Binary_unknow2
+        'Binary_sa_unknow4
         '
-        Me.Binary_unknow2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.Binary_unknow2.Location = New System.Drawing.Point(115, 343)
-        Me.Binary_unknow2.Name = "Binary_unknow2"
-        Me.Binary_unknow2.Size = New System.Drawing.Size(31, 13)
-        Me.Binary_unknow2.TabIndex = 400
-        Me.Binary_unknow2.Visible = False
+        Me.Binary_sa_unknow4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_sa_unknow4.Location = New System.Drawing.Point(751, 568)
+        Me.Binary_sa_unknow4.Name = "Binary_sa_unknow4"
+        Me.Binary_sa_unknow4.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_sa_unknow4.TabIndex = 407
+        '
+        'Binary_sa_unknow3
+        '
+        Me.Binary_sa_unknow3.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_sa_unknow3.Location = New System.Drawing.Point(714, 568)
+        Me.Binary_sa_unknow3.Name = "Binary_sa_unknow3"
+        Me.Binary_sa_unknow3.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_sa_unknow3.TabIndex = 406
+        '
+        'Binary_sa_unknow2
+        '
+        Me.Binary_sa_unknow2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_sa_unknow2.Location = New System.Drawing.Point(677, 568)
+        Me.Binary_sa_unknow2.Name = "Binary_sa_unknow2"
+        Me.Binary_sa_unknow2.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_sa_unknow2.TabIndex = 405
+        '
+        'Binary_sa_unknow1
+        '
+        Me.Binary_sa_unknow1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_sa_unknow1.Location = New System.Drawing.Point(640, 568)
+        Me.Binary_sa_unknow1.Name = "Binary_sa_unknow1"
+        Me.Binary_sa_unknow1.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_sa_unknow1.TabIndex = 404
+        '
+        'ConvertB_spotpassactiv
+        '
+        Me.ConvertB_spotpassactiv.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.ConvertB_spotpassactiv.Location = New System.Drawing.Point(640, 549)
+        Me.ConvertB_spotpassactiv.Name = "ConvertB_spotpassactiv"
+        Me.ConvertB_spotpassactiv.Size = New System.Drawing.Size(142, 13)
+        Me.ConvertB_spotpassactiv.TabIndex = 403
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox5.Location = New System.Drawing.Point(719, 282)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox5.TabIndex = 416
+        Me.PictureBox5.TabStop = False
+        '
+        'Label8
+        '
+        Me.Label8.BackColor = System.Drawing.Color.Transparent
+        Me.Label8.Location = New System.Drawing.Point(556, 282)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(156, 13)
+        Me.Label8.TabIndex = 415
+        Me.Label8.Text = "??? (6-babies born)"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_bb_unknow7
+        '
+        Me.Select_bb_unknow7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_bb_unknow7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_bb_unknow7.FormattingEnabled = True
+        Me.Select_bb_unknow7.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_bb_unknow7.Location = New System.Drawing.Point(549, 299)
+        Me.Select_bb_unknow7.Name = "Select_bb_unknow7"
+        Me.Select_bb_unknow7.Size = New System.Drawing.Size(170, 21)
+        Me.Select_bb_unknow7.TabIndex = 414
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox6.Location = New System.Drawing.Point(460, 282)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox6.TabIndex = 413
+        Me.PictureBox6.TabStop = False
+        '
+        'Label9
+        '
+        Me.Label9.BackColor = System.Drawing.Color.Transparent
+        Me.Label9.Location = New System.Drawing.Point(297, 282)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(156, 13)
+        Me.Label9.TabIndex = 412
+        Me.Label9.Text = "??? (5-babies born)"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_bb_unknow6
+        '
+        Me.Select_bb_unknow6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_bb_unknow6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_bb_unknow6.FormattingEnabled = True
+        Me.Select_bb_unknow6.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_bb_unknow6.Location = New System.Drawing.Point(290, 299)
+        Me.Select_bb_unknow6.Name = "Select_bb_unknow6"
+        Me.Select_bb_unknow6.Size = New System.Drawing.Size(170, 21)
+        Me.Select_bb_unknow6.TabIndex = 411
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox7.Location = New System.Drawing.Point(201, 282)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox7.TabIndex = 410
+        Me.PictureBox7.TabStop = False
+        '
+        'Label10
+        '
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
+        Me.Label10.Location = New System.Drawing.Point(38, 282)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(156, 13)
+        Me.Label10.TabIndex = 409
+        Me.Label10.Text = "??? (4-babies born)"
+        Me.Label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_bb_unknow5
+        '
+        Me.Select_bb_unknow5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_bb_unknow5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_bb_unknow5.FormattingEnabled = True
+        Me.Select_bb_unknow5.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_bb_unknow5.Location = New System.Drawing.Point(31, 299)
+        Me.Select_bb_unknow5.Name = "Select_bb_unknow5"
+        Me.Select_bb_unknow5.Size = New System.Drawing.Size(170, 21)
+        Me.Select_bb_unknow5.TabIndex = 408
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox8.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox8.Location = New System.Drawing.Point(719, 215)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox8.TabIndex = 419
+        Me.PictureBox8.TabStop = False
+        '
+        'Label11
+        '
+        Me.Label11.BackColor = System.Drawing.Color.Transparent
+        Me.Label11.Location = New System.Drawing.Point(556, 215)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(156, 13)
+        Me.Label11.TabIndex = 418
+        Me.Label11.Text = "??? (3-babies born)"
+        Me.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_bb_unknow4
+        '
+        Me.Select_bb_unknow4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_bb_unknow4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_bb_unknow4.FormattingEnabled = True
+        Me.Select_bb_unknow4.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_bb_unknow4.Location = New System.Drawing.Point(549, 232)
+        Me.Select_bb_unknow4.Name = "Select_bb_unknow4"
+        Me.Select_bb_unknow4.Size = New System.Drawing.Size(170, 21)
+        Me.Select_bb_unknow4.TabIndex = 417
+        '
+        'Binary_bb_unknow7
+        '
+        Me.Binary_bb_unknow7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_bb_unknow7.Location = New System.Drawing.Point(130, 587)
+        Me.Binary_bb_unknow7.Name = "Binary_bb_unknow7"
+        Me.Binary_bb_unknow7.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_bb_unknow7.TabIndex = 423
+        '
+        'Binary_bb_unknow6
+        '
+        Me.Binary_bb_unknow6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_bb_unknow6.Location = New System.Drawing.Point(93, 587)
+        Me.Binary_bb_unknow6.Name = "Binary_bb_unknow6"
+        Me.Binary_bb_unknow6.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_bb_unknow6.TabIndex = 422
+        '
+        'Binary_bb_unknow5
+        '
+        Me.Binary_bb_unknow5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_bb_unknow5.Location = New System.Drawing.Point(56, 587)
+        Me.Binary_bb_unknow5.Name = "Binary_bb_unknow5"
+        Me.Binary_bb_unknow5.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_bb_unknow5.TabIndex = 421
+        '
+        'Binary_bb_unknow4
+        '
+        Me.Binary_bb_unknow4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_bb_unknow4.Location = New System.Drawing.Point(19, 587)
+        Me.Binary_bb_unknow4.Name = "Binary_bb_unknow4"
+        Me.Binary_bb_unknow4.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_bb_unknow4.TabIndex = 420
+        '
+        'Binary_sa_unknow7
+        '
+        Me.Binary_sa_unknow7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_sa_unknow7.Location = New System.Drawing.Point(751, 587)
+        Me.Binary_sa_unknow7.Name = "Binary_sa_unknow7"
+        Me.Binary_sa_unknow7.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_sa_unknow7.TabIndex = 427
+        '
+        'Binary_spotpassactiv
+        '
+        Me.Binary_spotpassactiv.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_spotpassactiv.Location = New System.Drawing.Point(714, 587)
+        Me.Binary_spotpassactiv.Name = "Binary_spotpassactiv"
+        Me.Binary_spotpassactiv.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_spotpassactiv.TabIndex = 426
+        '
+        'Binary_sa_unknow6
+        '
+        Me.Binary_sa_unknow6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_sa_unknow6.Location = New System.Drawing.Point(677, 587)
+        Me.Binary_sa_unknow6.Name = "Binary_sa_unknow6"
+        Me.Binary_sa_unknow6.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_sa_unknow6.TabIndex = 425
+        '
+        'Binary_sa_unknow5
+        '
+        Me.Binary_sa_unknow5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.Binary_sa_unknow5.Location = New System.Drawing.Point(640, 587)
+        Me.Binary_sa_unknow5.Name = "Binary_sa_unknow5"
+        Me.Binary_sa_unknow5.Size = New System.Drawing.Size(31, 13)
+        Me.Binary_sa_unknow5.TabIndex = 424
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox9.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox9.Location = New System.Drawing.Point(719, 349)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox9.TabIndex = 445
+        Me.PictureBox9.TabStop = False
+        '
+        'Label12
+        '
+        Me.Label12.BackColor = System.Drawing.Color.Transparent
+        Me.Label12.Location = New System.Drawing.Point(556, 349)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(156, 13)
+        Me.Label12.TabIndex = 444
+        Me.Label12.Text = "??? (2-spotpass activation)"
+        Me.Label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_sa_unknow3
+        '
+        Me.Select_sa_unknow3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_sa_unknow3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_sa_unknow3.FormattingEnabled = True
+        Me.Select_sa_unknow3.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_sa_unknow3.Location = New System.Drawing.Point(549, 366)
+        Me.Select_sa_unknow3.Name = "Select_sa_unknow3"
+        Me.Select_sa_unknow3.Size = New System.Drawing.Size(170, 21)
+        Me.Select_sa_unknow3.TabIndex = 443
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox10.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox10.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox10.Location = New System.Drawing.Point(719, 416)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox10.TabIndex = 442
+        Me.PictureBox10.TabStop = False
+        '
+        'Label13
+        '
+        Me.Label13.BackColor = System.Drawing.Color.Transparent
+        Me.Label13.Location = New System.Drawing.Point(556, 416)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(156, 13)
+        Me.Label13.TabIndex = 441
+        Me.Label13.Text = "??? (5-spotpass activation)"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_sa_unknow6
+        '
+        Me.Select_sa_unknow6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_sa_unknow6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_sa_unknow6.FormattingEnabled = True
+        Me.Select_sa_unknow6.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_sa_unknow6.Location = New System.Drawing.Point(549, 433)
+        Me.Select_sa_unknow6.Name = "Select_sa_unknow6"
+        Me.Select_sa_unknow6.Size = New System.Drawing.Size(170, 21)
+        Me.Select_sa_unknow6.TabIndex = 440
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox11.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox11.Location = New System.Drawing.Point(460, 483)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox11.TabIndex = 439
+        Me.PictureBox11.TabStop = False
+        '
+        'Label14
+        '
+        Me.Label14.BackColor = System.Drawing.Color.Transparent
+        Me.Label14.Location = New System.Drawing.Point(297, 483)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(156, 13)
+        Me.Label14.TabIndex = 438
+        Me.Label14.Text = "??? (6-spotpass activation)"
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_sa_unknow7
+        '
+        Me.Select_sa_unknow7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_sa_unknow7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_sa_unknow7.FormattingEnabled = True
+        Me.Select_sa_unknow7.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_sa_unknow7.Location = New System.Drawing.Point(290, 500)
+        Me.Select_sa_unknow7.Name = "Select_sa_unknow7"
+        Me.Select_sa_unknow7.Size = New System.Drawing.Size(170, 21)
+        Me.Select_sa_unknow7.TabIndex = 437
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox12.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox12.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox12.Location = New System.Drawing.Point(201, 349)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox12.TabIndex = 436
+        Me.PictureBox12.TabStop = False
+        '
+        'Label15
+        '
+        Me.Label15.BackColor = System.Drawing.Color.Transparent
+        Me.Label15.Location = New System.Drawing.Point(38, 483)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(156, 13)
+        Me.Label15.TabIndex = 435
+        Me.Label15.Text = "SpotPass activation"
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_spotpassactiv
+        '
+        Me.Select_spotpassactiv.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_spotpassactiv.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_spotpassactiv.FormattingEnabled = True
+        Me.Select_spotpassactiv.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_spotpassactiv.Location = New System.Drawing.Point(31, 500)
+        Me.Select_spotpassactiv.Name = "Select_spotpassactiv"
+        Me.Select_spotpassactiv.Size = New System.Drawing.Size(170, 21)
+        Me.Select_spotpassactiv.TabIndex = 434
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox13.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox13.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox13.Location = New System.Drawing.Point(460, 416)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox13.TabIndex = 433
+        Me.PictureBox13.TabStop = False
+        '
+        'Label16
+        '
+        Me.Label16.BackColor = System.Drawing.Color.Transparent
+        Me.Label16.Location = New System.Drawing.Point(297, 416)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(156, 13)
+        Me.Label16.TabIndex = 432
+        Me.Label16.Text = "??? (4-spotpass activation)"
+        Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_sa_unknow5
+        '
+        Me.Select_sa_unknow5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_sa_unknow5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_sa_unknow5.FormattingEnabled = True
+        Me.Select_sa_unknow5.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_sa_unknow5.Location = New System.Drawing.Point(290, 433)
+        Me.Select_sa_unknow5.Name = "Select_sa_unknow5"
+        Me.Select_sa_unknow5.Size = New System.Drawing.Size(170, 21)
+        Me.Select_sa_unknow5.TabIndex = 431
+        '
+        'PictureBox14
+        '
+        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox14.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox14.Location = New System.Drawing.Point(201, 416)
+        Me.PictureBox14.Name = "PictureBox14"
+        Me.PictureBox14.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox14.TabIndex = 430
+        Me.PictureBox14.TabStop = False
+        '
+        'Label17
+        '
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Location = New System.Drawing.Point(38, 416)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(156, 13)
+        Me.Label17.TabIndex = 429
+        Me.Label17.Text = "??? (3-spotpass activation)"
+        Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_sa_unknow4
+        '
+        Me.Select_sa_unknow4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_sa_unknow4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_sa_unknow4.FormattingEnabled = True
+        Me.Select_sa_unknow4.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_sa_unknow4.Location = New System.Drawing.Point(31, 433)
+        Me.Select_sa_unknow4.Name = "Select_sa_unknow4"
+        Me.Select_sa_unknow4.Size = New System.Drawing.Size(170, 21)
+        Me.Select_sa_unknow4.TabIndex = 428
+        '
+        'PictureBox15
+        '
+        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox15.Cursor = System.Windows.Forms.Cursors.Help
+        Me.PictureBox15.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.PictureBox15.Location = New System.Drawing.Point(460, 349)
+        Me.PictureBox15.Name = "PictureBox15"
+        Me.PictureBox15.Size = New System.Drawing.Size(24, 22)
+        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox15.TabIndex = 448
+        Me.PictureBox15.TabStop = False
+        '
+        'Label18
+        '
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.Location = New System.Drawing.Point(297, 349)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(156, 13)
+        Me.Label18.TabIndex = 447
+        Me.Label18.Text = "??? (1-spotpass activation)"
+        Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Select_sa_unknow2
+        '
+        Me.Select_sa_unknow2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_sa_unknow2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_sa_unknow2.FormattingEnabled = True
+        Me.Select_sa_unknow2.Items.AddRange(New Object() {"Unactivated", "Activated"})
+        Me.Select_sa_unknow2.Location = New System.Drawing.Point(290, 366)
+        Me.Select_sa_unknow2.Name = "Select_sa_unknow2"
+        Me.Select_sa_unknow2.Size = New System.Drawing.Size(170, 21)
+        Me.Select_sa_unknow2.TabIndex = 446
         '
         'TLSE_islandsettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_islandedit
-        Me.ClientSize = New System.Drawing.Size(800, 415)
-        Me.Controls.Add(Me.Binary_unknow3)
-        Me.Controls.Add(Me.Binary_unknow2)
-        Me.Controls.Add(Me.Binary_unknow1)
+        Me.ClientSize = New System.Drawing.Size(800, 617)
+        Me.Controls.Add(Me.PictureBox15)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Select_sa_unknow2)
+        Me.Controls.Add(Me.PictureBox9)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Select_sa_unknow3)
+        Me.Controls.Add(Me.PictureBox10)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Select_sa_unknow6)
+        Me.Controls.Add(Me.PictureBox11)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.Select_sa_unknow7)
+        Me.Controls.Add(Me.PictureBox12)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Select_spotpassactiv)
+        Me.Controls.Add(Me.PictureBox13)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Select_sa_unknow5)
+        Me.Controls.Add(Me.PictureBox14)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Select_sa_unknow4)
+        Me.Controls.Add(Me.Binary_sa_unknow7)
+        Me.Controls.Add(Me.Binary_spotpassactiv)
+        Me.Controls.Add(Me.Binary_sa_unknow6)
+        Me.Controls.Add(Me.Binary_sa_unknow5)
+        Me.Controls.Add(Me.Binary_bb_unknow7)
+        Me.Controls.Add(Me.Binary_bb_unknow6)
+        Me.Controls.Add(Me.Binary_bb_unknow5)
+        Me.Controls.Add(Me.Binary_bb_unknow4)
+        Me.Controls.Add(Me.PictureBox8)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Select_bb_unknow4)
+        Me.Controls.Add(Me.PictureBox5)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Select_bb_unknow7)
+        Me.Controls.Add(Me.PictureBox6)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Select_bb_unknow6)
+        Me.Controls.Add(Me.PictureBox7)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Select_bb_unknow5)
+        Me.Controls.Add(Me.Binary_sa_unknow4)
+        Me.Controls.Add(Me.Binary_sa_unknow3)
+        Me.Controls.Add(Me.Binary_sa_unknow2)
+        Me.Controls.Add(Me.Binary_sa_unknow1)
+        Me.Controls.Add(Me.ConvertB_spotpassactiv)
+        Me.Controls.Add(Me.Binary_bb_unknow3)
+        Me.Controls.Add(Me.Binary_bb_unknow2)
         Me.Controls.Add(Me.Binary_babiesborn)
+        Me.Controls.Add(Me.Binary_bb_unknow1)
         Me.Controls.Add(Me.ConvertB_babiesborn)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Select_unknow3)
+        Me.Controls.Add(Me.Select_bb_unknow3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.valu_babiesborn)
-        Me.Controls.Add(Me.Select_unknow2)
+        Me.Controls.Add(Me.Select_bb_unknow2)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Select_unknow1)
+        Me.Controls.Add(Me.Select_bb_unknow1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.valu_spotpassactiv)
-        Me.Controls.Add(Me.Select_spotpassactiv)
+        Me.Controls.Add(Me.Select_sa_unknow1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.valu_streetpassactiv)
@@ -946,6 +1509,17 @@ Partial Class TLSE_islandsettings
         CType(Me.valu_babiesborn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -999,20 +1573,66 @@ Partial Class TLSE_islandsettings
     Friend WithEvents Select_streetpassactiv As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents valu_spotpassactiv As NumericUpDown
-    Friend WithEvents Select_spotpassactiv As ComboBox
+    Friend WithEvents Select_sa_unknow1 As ComboBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Select_unknow3 As ComboBox
+    Friend WithEvents Select_bb_unknow3 As ComboBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label6 As Label
     Friend WithEvents valu_babiesborn As NumericUpDown
-    Friend WithEvents Select_unknow2 As ComboBox
+    Friend WithEvents Select_bb_unknow2 As ComboBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents Select_unknow1 As ComboBox
+    Friend WithEvents Select_bb_unknow1 As ComboBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents ConvertB_babiesborn As TextBox
+    Friend WithEvents Binary_bb_unknow1 As TextBox
     Friend WithEvents Binary_babiesborn As TextBox
-    Friend WithEvents Binary_unknow1 As TextBox
-    Friend WithEvents Binary_unknow3 As TextBox
-    Friend WithEvents Binary_unknow2 As TextBox
+    Friend WithEvents Binary_bb_unknow3 As TextBox
+    Friend WithEvents Binary_bb_unknow2 As TextBox
+    Friend WithEvents Binary_sa_unknow4 As TextBox
+    Friend WithEvents Binary_sa_unknow3 As TextBox
+    Friend WithEvents Binary_sa_unknow2 As TextBox
+    Friend WithEvents Binary_sa_unknow1 As TextBox
+    Friend WithEvents ConvertB_spotpassactiv As TextBox
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Select_bb_unknow7 As ComboBox
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Select_bb_unknow6 As ComboBox
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Select_bb_unknow5 As ComboBox
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Select_bb_unknow4 As ComboBox
+    Friend WithEvents Binary_bb_unknow7 As TextBox
+    Friend WithEvents Binary_bb_unknow6 As TextBox
+    Friend WithEvents Binary_bb_unknow5 As TextBox
+    Friend WithEvents Binary_bb_unknow4 As TextBox
+    Friend WithEvents Binary_sa_unknow7 As TextBox
+    Friend WithEvents Binary_spotpassactiv As TextBox
+    Friend WithEvents Binary_sa_unknow6 As TextBox
+    Friend WithEvents Binary_sa_unknow5 As TextBox
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Select_sa_unknow3 As ComboBox
+    Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Select_sa_unknow6 As ComboBox
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Select_sa_unknow7 As ComboBox
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Select_spotpassactiv As ComboBox
+    Friend WithEvents PictureBox13 As PictureBox
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Select_sa_unknow5 As ComboBox
+    Friend WithEvents PictureBox14 As PictureBox
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Select_sa_unknow4 As ComboBox
+    Friend WithEvents PictureBox15 As PictureBox
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Select_sa_unknow2 As ComboBox
 End Class

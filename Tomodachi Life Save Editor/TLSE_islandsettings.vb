@@ -101,10 +101,14 @@ Public Class TLSE_islandsettings
     Private Sub valu_babiesborn_ValueChanged(sender As Object, e As EventArgs) Handles valu_babiesborn.ValueChanged
         Try
             ConvertB_babiesborn.Text = Convert.ToString(Convert.ToUInt32(valu_babiesborn.Value), 2).PadLeft(8, "0")
-            Binary_babiesborn.Text = ConvertB_babiesborn.Text.Substring(0, 2)
-            Binary_unknow1.Text = ConvertB_babiesborn.Text.Substring(2, 2)
-            Binary_unknow2.Text = ConvertB_babiesborn.Text.Substring(4, 2)
-            Binary_unknow3.Text = ConvertB_babiesborn.Text.Substring(6, 2)
+            Binary_bb_unknow1.Text = ConvertB_babiesborn.Text.Substring(0, 1)
+            Binary_babiesborn.Text = ConvertB_babiesborn.Text.Substring(1, 1)
+            Binary_bb_unknow2.Text = ConvertB_babiesborn.Text.Substring(2, 1)
+            Binary_bb_unknow3.Text = ConvertB_babiesborn.Text.Substring(3, 1)
+            Binary_bb_unknow4.Text = ConvertB_babiesborn.Text.Substring(4, 1)
+            Binary_bb_unknow5.Text = ConvertB_babiesborn.Text.Substring(5, 1)
+            Binary_bb_unknow6.Text = ConvertB_babiesborn.Text.Substring(6, 1)
+            Binary_bb_unknow7.Text = ConvertB_babiesborn.Text.Substring(7, 1)
         Catch ex As Exception
             TLSE_dialog.Text_TLSE_dialog.Text = "Failed to convert babies born to binary"
             TLSE_dialog.ShowDialog()
@@ -122,78 +126,306 @@ Public Class TLSE_islandsettings
 
     Public Sub Mergebinarybabiesborn()
         Try
-            ConvertB_babiesborn.Text = Binary_babiesborn.Text + Binary_unknow1.Text + Binary_unknow2.Text + Binary_unknow3.Text 'merge binary features
+            ConvertB_babiesborn.Text = Binary_bb_unknow1.Text + Binary_babiesborn.Text + Binary_bb_unknow2.Text + Binary_bb_unknow3.Text + Binary_bb_unknow4.Text + Binary_bb_unknow5.Text + Binary_bb_unknow6.Text + Binary_bb_unknow7.Text 'merge binary features
         Catch ex As Exception
             TLSE_dialog.Text_TLSE_dialog.Text = "Failed to update convert binary babies born"
             TLSE_dialog.ShowDialog()
         End Try
     End Sub
 
+    Private Sub Binary_bb_unknow1_TextChanged(sender As Object, e As EventArgs) Handles Binary_bb_unknow1.TextChanged
+        If Binary_bb_unknow1.Text = "0" Then
+            Select_bb_unknow1.SelectedItem = Select_bb_unknow1.Items.Item(0)
+        ElseIf Binary_bb_unknow1.Text = "1" Then
+            Select_bb_unknow1.SelectedItem = Select_bb_unknow1.Items.Item(1)
+        End If
+    End Sub
+
     Private Sub Binary_babiesborn_TextChanged(sender As Object, e As EventArgs) Handles Binary_babiesborn.TextChanged
-        If Binary_babiesborn.Text = "00" Then
+        If Binary_babiesborn.Text = "0" Then
             Select_babiesborn.SelectedItem = Select_babiesborn.Items.Item(0)
-        ElseIf Binary_babiesborn.Text = "01" Then
+        ElseIf Binary_babiesborn.Text = "1" Then
             Select_babiesborn.SelectedItem = Select_babiesborn.Items.Item(1)
         End If
     End Sub
 
-    Private Sub Binary_unknow1_TextChanged(sender As Object, e As EventArgs) Handles Binary_unknow1.TextChanged
-        If Binary_unknow1.Text = "00" Then
-            Select_unknow1.SelectedItem = Select_unknow1.Items.Item(0)
-        ElseIf Binary_unknow1.Text = "01" Then
-            Select_unknow1.SelectedItem = Select_unknow1.Items.Item(1)
+    Private Sub Binary_bb_unknow2_TextChanged(sender As Object, e As EventArgs) Handles Binary_bb_unknow2.TextChanged
+        If Binary_bb_unknow2.Text = "0" Then
+            Select_bb_unknow2.SelectedItem = Select_bb_unknow2.Items.Item(0)
+        ElseIf Binary_bb_unknow2.Text = "1" Then
+            Select_bb_unknow2.SelectedItem = Select_bb_unknow2.Items.Item(1)
         End If
     End Sub
 
-    Private Sub Binary_unknow2_TextChanged(sender As Object, e As EventArgs) Handles Binary_unknow2.TextChanged
-        If Binary_unknow2.Text = "00" Then
-            Select_unknow2.SelectedItem = Select_unknow2.Items.Item(0)
-        ElseIf Binary_unknow2.Text = "01" Then
-            Select_unknow2.SelectedItem = Select_unknow2.Items.Item(1)
+    Private Sub Binary_bb_unknow3_TextChanged(sender As Object, e As EventArgs) Handles Binary_bb_unknow3.TextChanged
+        If Binary_bb_unknow3.Text = "0" Then
+            Select_bb_unknow3.SelectedItem = Select_bb_unknow3.Items.Item(0)
+        ElseIf Binary_bb_unknow3.Text = "1" Then
+            Select_bb_unknow3.SelectedItem = Select_bb_unknow3.Items.Item(1)
         End If
     End Sub
 
-    Private Sub Binary_unknow3_TextChanged(sender As Object, e As EventArgs) Handles Binary_unknow3.TextChanged
-        If Binary_unknow3.Text = "00" Then
-            Select_unknow3.SelectedItem = Select_unknow3.Items.Item(0)
-        ElseIf Binary_unknow3.Text = "01" Then
-            Select_unknow3.SelectedItem = Select_unknow3.Items.Item(1)
+    Private Sub Binary_bb_unknow4_TextChanged(sender As Object, e As EventArgs) Handles Binary_bb_unknow4.TextChanged
+        If Binary_bb_unknow4.Text = "0" Then
+            Select_bb_unknow4.SelectedItem = Select_bb_unknow4.Items.Item(0)
+        ElseIf Binary_bb_unknow4.Text = "1" Then
+            Select_bb_unknow4.SelectedItem = Select_bb_unknow4.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Binary_bb_unknow5_TextChanged(sender As Object, e As EventArgs) Handles Binary_bb_unknow5.TextChanged
+        If Binary_bb_unknow5.Text = "0" Then
+            Select_bb_unknow5.SelectedItem = Select_bb_unknow5.Items.Item(0)
+        ElseIf Binary_bb_unknow5.Text = "1" Then
+            Select_bb_unknow5.SelectedItem = Select_bb_unknow5.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Binary_bb_unknow6_TextChanged(sender As Object, e As EventArgs) Handles Binary_bb_unknow6.TextChanged
+        If Binary_bb_unknow6.Text = "0" Then
+            Select_bb_unknow6.SelectedItem = Select_bb_unknow6.Items.Item(0)
+        ElseIf Binary_bb_unknow6.Text = "1" Then
+            Select_bb_unknow6.SelectedItem = Select_bb_unknow6.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Binary_bb_unknow7_TextChanged(sender As Object, e As EventArgs) Handles Binary_bb_unknow7.TextChanged
+        If Binary_bb_unknow7.Text = "0" Then
+            Select_bb_unknow7.SelectedItem = Select_bb_unknow7.Items.Item(0)
+        ElseIf Binary_bb_unknow7.Text = "1" Then
+            Select_bb_unknow7.SelectedItem = Select_bb_unknow7.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub valu_spotpassactiv_ValueChanged(sender As Object, e As EventArgs) Handles valu_spotpassactiv.ValueChanged
+        Try
+            ConvertB_spotpassactiv.Text = Convert.ToString(Convert.ToUInt32(valu_spotpassactiv.Value), 2).PadLeft(8, "0")
+            Binary_sa_unknow1.Text = ConvertB_spotpassactiv.Text.Substring(0, 1)
+            Binary_sa_unknow2.Text = ConvertB_spotpassactiv.Text.Substring(1, 1)
+            Binary_sa_unknow3.Text = ConvertB_spotpassactiv.Text.Substring(2, 1)
+            Binary_sa_unknow4.Text = ConvertB_spotpassactiv.Text.Substring(3, 1)
+            Binary_sa_unknow5.Text = ConvertB_spotpassactiv.Text.Substring(4, 1)
+            Binary_sa_unknow6.Text = ConvertB_spotpassactiv.Text.Substring(5, 1)
+            Binary_spotpassactiv.Text = ConvertB_spotpassactiv.Text.Substring(6, 1)
+            Binary_sa_unknow7.Text = ConvertB_spotpassactiv.Text.Substring(7, 1)
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to convert spotpass activation to binary"
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
+
+    Private Sub ConvertB_spotpassactiv_TextChanged(sender As Object, e As EventArgs) Handles ConvertB_spotpassactiv.TextChanged
+        Try
+            valu_spotpassactiv.Value = Convert.ToUInt32(Convert.ToString(ConvertB_spotpassactiv.Text), 2)
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to convert binary spotpass activation hex"
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
+
+    Public Sub Mergebinaryspotpassactiv()
+        Try
+            ConvertB_spotpassactiv.Text = Binary_sa_unknow1.Text + Binary_sa_unknow2.Text + Binary_sa_unknow3.Text + Binary_sa_unknow4.Text + Binary_sa_unknow5.Text + Binary_sa_unknow6.Text + Binary_spotpassactiv.Text + Binary_sa_unknow7.Text 'merge binary features
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to update convert binary spotpass activation"
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
+
+    Private Sub Binary_sa_unknow1_TextChanged(sender As Object, e As EventArgs) Handles Binary_sa_unknow1.TextChanged
+        If Binary_sa_unknow1.Text = "0" Then
+            Select_sa_unknow1.SelectedItem = Select_sa_unknow1.Items.Item(0)
+        ElseIf Binary_sa_unknow1.Text = "1" Then
+            Select_sa_unknow1.SelectedItem = Select_sa_unknow1.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Binary_spotpassactiv_TextChanged(sender As Object, e As EventArgs) Handles Binary_spotpassactiv.TextChanged
+        If Binary_spotpassactiv.Text = "0" Then
+            Select_spotpassactiv.SelectedItem = Select_spotpassactiv.Items.Item(0)
+        ElseIf Binary_spotpassactiv.Text = "1" Then
+            Select_spotpassactiv.SelectedItem = Select_spotpassactiv.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Binary_sa_unknow2_TextChanged(sender As Object, e As EventArgs) Handles Binary_sa_unknow2.TextChanged
+        If Binary_sa_unknow2.Text = "0" Then
+            Select_sa_unknow2.SelectedItem = Select_sa_unknow2.Items.Item(0)
+        ElseIf Binary_sa_unknow2.Text = "1" Then
+            Select_sa_unknow2.SelectedItem = Select_sa_unknow2.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Binary_sa_unknow3_TextChanged(sender As Object, e As EventArgs) Handles Binary_sa_unknow3.TextChanged
+        If Binary_sa_unknow3.Text = "0" Then
+            Select_sa_unknow3.SelectedItem = Select_sa_unknow3.Items.Item(0)
+        ElseIf Binary_sa_unknow3.Text = "1" Then
+            Select_sa_unknow3.SelectedItem = Select_sa_unknow3.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Binary_sa_unknow4_TextChanged(sender As Object, e As EventArgs) Handles Binary_sa_unknow4.TextChanged
+        If Binary_sa_unknow4.Text = "0" Then
+            Select_sa_unknow4.SelectedItem = Select_sa_unknow4.Items.Item(0)
+        ElseIf Binary_sa_unknow4.Text = "1" Then
+            Select_sa_unknow4.SelectedItem = Select_sa_unknow4.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Binary_sa_unknow5_TextChanged(sender As Object, e As EventArgs) Handles Binary_sa_unknow5.TextChanged
+        If Binary_sa_unknow5.Text = "0" Then
+            Select_sa_unknow5.SelectedItem = Select_sa_unknow5.Items.Item(0)
+        ElseIf Binary_sa_unknow5.Text = "1" Then
+            Select_sa_unknow5.SelectedItem = Select_sa_unknow5.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Binary_sa_unknow6_TextChanged(sender As Object, e As EventArgs) Handles Binary_sa_unknow6.TextChanged
+        If Binary_sa_unknow6.Text = "0" Then
+            Select_sa_unknow6.SelectedItem = Select_sa_unknow6.Items.Item(0)
+        ElseIf Binary_sa_unknow6.Text = "1" Then
+            Select_sa_unknow6.SelectedItem = Select_sa_unknow6.Items.Item(1)
+        End If
+    End Sub
+
+    Private Sub Binary_sa_unknow7_TextChanged(sender As Object, e As EventArgs) Handles Binary_sa_unknow7.TextChanged
+        If Binary_sa_unknow7.Text = "0" Then
+            Select_sa_unknow7.SelectedItem = Select_sa_unknow7.Items.Item(0)
+        ElseIf Binary_sa_unknow7.Text = "1" Then
+            Select_sa_unknow7.SelectedItem = Select_sa_unknow7.Items.Item(1)
         End If
     End Sub
 
     Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
         Mergebinarybabiesborn()
+        Mergebinaryspotpassactiv()
     End Sub
 
     Private Sub Select_babiesborn_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_babiesborn.SelectedIndexChanged
         If Select_babiesborn.SelectedItem = Select_babiesborn.Items.Item(0) Then
-            Binary_babiesborn.Text = "00"
+            Binary_babiesborn.Text = "0"
         ElseIf Select_babiesborn.SelectedItem = Select_babiesborn.Items.Item(1) Then
-            Binary_babiesborn.Text = "01"
+            Binary_babiesborn.Text = "1"
         End If
     End Sub
 
-    Private Sub Select_unknow1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_unknow1.SelectedIndexChanged
-        If Select_unknow1.SelectedItem = Select_unknow1.Items.Item(0) Then
-            Binary_unknow1.Text = "00"
-        ElseIf Select_unknow1.SelectedItem = Select_unknow1.Items.Item(1) Then
-            Binary_unknow1.Text = "01"
+    Private Sub Select_bb_unknow1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_bb_unknow1.SelectedIndexChanged
+        If Select_bb_unknow1.SelectedItem = Select_bb_unknow1.Items.Item(0) Then
+            Binary_bb_unknow1.Text = "0"
+        ElseIf Select_bb_unknow1.SelectedItem = Select_bb_unknow1.Items.Item(1) Then
+            Binary_bb_unknow1.Text = "1"
         End If
     End Sub
 
-    Private Sub Select_unknow2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_unknow2.SelectedIndexChanged
-        If Select_unknow2.SelectedItem = Select_unknow2.Items.Item(0) Then
-            Binary_unknow2.Text = "00"
-        ElseIf Select_unknow2.SelectedItem = Select_unknow2.Items.Item(1) Then
-            Binary_unknow2.Text = "01"
+    Private Sub Select_bb_unknow2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_bb_unknow2.SelectedIndexChanged
+        If Select_bb_unknow2.SelectedItem = Select_bb_unknow2.Items.Item(0) Then
+            Binary_bb_unknow2.Text = "0"
+        ElseIf Select_bb_unknow2.SelectedItem = Select_bb_unknow2.Items.Item(1) Then
+            Binary_bb_unknow2.Text = "1"
         End If
     End Sub
 
-    Private Sub Select_unknow3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_unknow3.SelectedIndexChanged
-        If Select_unknow3.SelectedItem = Select_unknow3.Items.Item(0) Then
-            Binary_unknow3.Text = "00"
-        ElseIf Select_unknow3.SelectedItem = Select_unknow3.Items.Item(1) Then
-            Binary_unknow3.Text = "01"
+    Private Sub Select_bb_unknow3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_bb_unknow3.SelectedIndexChanged
+        If Select_bb_unknow3.SelectedItem = Select_bb_unknow3.Items.Item(0) Then
+            Binary_bb_unknow3.Text = "0"
+        ElseIf Select_bb_unknow3.SelectedItem = Select_bb_unknow3.Items.Item(1) Then
+            Binary_bb_unknow3.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_bb_unknow4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_bb_unknow4.SelectedIndexChanged
+        If Select_bb_unknow4.SelectedItem = Select_bb_unknow4.Items.Item(0) Then
+            Binary_bb_unknow4.Text = "0"
+        ElseIf Select_bb_unknow4.SelectedItem = Select_bb_unknow4.Items.Item(1) Then
+            Binary_bb_unknow4.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_bb_unknow5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_bb_unknow5.SelectedIndexChanged
+        If Select_bb_unknow5.SelectedItem = Select_bb_unknow5.Items.Item(0) Then
+            Binary_bb_unknow5.Text = "0"
+        ElseIf Select_bb_unknow5.SelectedItem = Select_bb_unknow5.Items.Item(1) Then
+            Binary_bb_unknow5.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_bb_unknow6_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_bb_unknow6.SelectedIndexChanged
+        If Select_bb_unknow6.SelectedItem = Select_bb_unknow6.Items.Item(0) Then
+            Binary_bb_unknow6.Text = "0"
+        ElseIf Select_bb_unknow6.SelectedItem = Select_bb_unknow6.Items.Item(1) Then
+            Binary_bb_unknow6.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_bb_unknow7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_bb_unknow7.SelectedIndexChanged
+        If Select_bb_unknow7.SelectedItem = Select_bb_unknow7.Items.Item(0) Then
+            Binary_bb_unknow7.Text = "0"
+        ElseIf Select_bb_unknow7.SelectedItem = Select_bb_unknow7.Items.Item(1) Then
+            Binary_bb_unknow7.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_spotpassactiv_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_spotpassactiv.SelectedIndexChanged
+        If Select_spotpassactiv.SelectedItem = Select_spotpassactiv.Items.Item(0) Then
+            Binary_spotpassactiv.Text = "0"
+        ElseIf Select_spotpassactiv.SelectedItem = Select_spotpassactiv.Items.Item(1) Then
+            Binary_spotpassactiv.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_sa_unknow1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_sa_unknow1.SelectedIndexChanged
+        If Select_sa_unknow1.SelectedItem = Select_sa_unknow1.Items.Item(0) Then
+            Binary_sa_unknow1.Text = "0"
+        ElseIf Select_sa_unknow1.SelectedItem = Select_sa_unknow1.Items.Item(1) Then
+            Binary_sa_unknow1.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_sa_unknow2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_sa_unknow2.SelectedIndexChanged
+        If Select_sa_unknow2.SelectedItem = Select_sa_unknow2.Items.Item(0) Then
+            Binary_sa_unknow2.Text = "0"
+        ElseIf Select_sa_unknow2.SelectedItem = Select_sa_unknow2.Items.Item(1) Then
+            Binary_sa_unknow2.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_sa_unknow3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_sa_unknow3.SelectedIndexChanged
+        If Select_sa_unknow3.SelectedItem = Select_sa_unknow3.Items.Item(0) Then
+            Binary_sa_unknow3.Text = "0"
+        ElseIf Select_sa_unknow3.SelectedItem = Select_sa_unknow3.Items.Item(1) Then
+            Binary_sa_unknow3.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_sa_unknow4_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_sa_unknow4.SelectedIndexChanged
+        If Select_sa_unknow4.SelectedItem = Select_sa_unknow4.Items.Item(0) Then
+            Binary_sa_unknow4.Text = "0"
+        ElseIf Select_sa_unknow4.SelectedItem = Select_sa_unknow4.Items.Item(1) Then
+            Binary_sa_unknow4.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_sa_unknow5_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_sa_unknow5.SelectedIndexChanged
+        If Select_sa_unknow5.SelectedItem = Select_sa_unknow5.Items.Item(0) Then
+            Binary_sa_unknow5.Text = "0"
+        ElseIf Select_sa_unknow5.SelectedItem = Select_sa_unknow5.Items.Item(1) Then
+            Binary_sa_unknow5.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_sa_unknow6_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_sa_unknow6.SelectedIndexChanged
+        If Select_sa_unknow6.SelectedItem = Select_sa_unknow6.Items.Item(0) Then
+            Binary_sa_unknow6.Text = "0"
+        ElseIf Select_sa_unknow6.SelectedItem = Select_sa_unknow6.Items.Item(1) Then
+            Binary_sa_unknow6.Text = "1"
+        End If
+    End Sub
+
+    Private Sub Select_sa_unknow7_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_sa_unknow7.SelectedIndexChanged
+        If Select_sa_unknow7.SelectedItem = Select_sa_unknow7.Items.Item(0) Then
+            Binary_sa_unknow7.Text = "0"
+        ElseIf Select_sa_unknow7.SelectedItem = Select_sa_unknow7.Items.Item(1) Then
+            Binary_sa_unknow7.Text = "1"
         End If
     End Sub
 
@@ -213,20 +445,5 @@ Public Class TLSE_islandsettings
         End If
     End Sub
 
-    Private Sub valu_spotpassactiv_ValueChanged(sender As Object, e As EventArgs) Handles valu_spotpassactiv.ValueChanged
-        If valu_spotpassactiv.Value = 0 Then
-            Select_spotpassactiv.SelectedItem = Select_spotpassactiv.Items.Item(0)
-        ElseIf valu_spotpassactiv.Value = 1 Then
-            Select_spotpassactiv.SelectedItem = Select_spotpassactiv.Items.Item(1)
-        End If
-    End Sub
-
-    Private Sub Select_spotpassactiv_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_spotpassactiv.SelectedIndexChanged
-        If Select_spotpassactiv.SelectedItem = Select_spotpassactiv.Items.Item(0) Then
-            valu_spotpassactiv.Value = 0
-        ElseIf Select_spotpassactiv.SelectedItem = Select_spotpassactiv.Items.Item(1) Then
-            valu_spotpassactiv.Value = 1
-        End If
-    End Sub
 
 End Class
