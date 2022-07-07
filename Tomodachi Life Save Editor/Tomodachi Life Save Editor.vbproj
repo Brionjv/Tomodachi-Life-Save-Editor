@@ -14,6 +14,21 @@
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -192,6 +207,12 @@
     <Compile Include="TLSE_repairsave.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_savefilesettings.Designer.vb">
+      <DependentUpon>TLSE_savefilesettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_savefilesettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_settings.Designer.vb">
       <DependentUpon>TLSE_settings.vb</DependentUpon>
     </Compile>
@@ -259,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_repairsave.resx">
       <DependentUpon>TLSE_repairsave.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_savefilesettings.resx">
+      <DependentUpon>TLSE_savefilesettings.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_settings.resx">
       <DependentUpon>TLSE_settings.vb</DependentUpon>
@@ -350,6 +374,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_sound_3.png" />
+    <None Include="Resources\icon_sound_2.png" />
+    <None Include="Resources\icon_sound_1.png" />
+    <None Include="Resources\icon_sound_0.png" />
+    <None Include="Resources\bg_button_sound_on.png" />
+    <None Include="Resources\bg_button_sound_off.png" />
+    <None Include="Resources\bg_button_plus_on.png" />
+    <None Include="Resources\bg_button_plus_off.png" />
+    <None Include="Resources\bg_button_minus_on.png" />
+    <None Include="Resources\bg_button_minus_off.png" />
     <None Include="Resources\icon_colorvariation_selected.png" />
     <None Include="Resources\icon_colorvariation_empty.png" />
     <None Include="Resources\bg_money.png" />
@@ -716,6 +750,18 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

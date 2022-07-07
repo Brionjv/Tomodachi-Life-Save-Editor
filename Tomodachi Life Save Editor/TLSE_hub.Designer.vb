@@ -1646,7 +1646,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_savefilesettings
         '
-        Me.Text_menu_savefilesettings.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_savefilesettings.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_savefilesettings.ForeColor = System.Drawing.Color.Black
         Me.Text_menu_savefilesettings.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_savefilesettings.Name = "Text_menu_savefilesettings"

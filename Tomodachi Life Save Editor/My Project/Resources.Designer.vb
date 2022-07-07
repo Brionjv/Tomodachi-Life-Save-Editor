@@ -623,6 +623,66 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property bg_button_minus_off() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_button_minus_off", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bg_button_minus_on() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_button_minus_on", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bg_button_plus_off() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_button_plus_off", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bg_button_plus_on() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_button_plus_on", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bg_button_sound_off() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_button_sound_off", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property bg_button_sound_on() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_button_sound_on", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property bg_buttons_large() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("bg_buttons_large", resourceCulture)
@@ -2646,6 +2706,46 @@ Namespace My.Resources
         Friend ReadOnly Property icon_pronunciation() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("icon_pronunciation", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icon_sound_0() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_sound_0", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icon_sound_1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_sound_1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icon_sound_2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_sound_2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property icon_sound_3() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("icon_sound_3", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

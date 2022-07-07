@@ -95,7 +95,7 @@ Public Class TLSE_islandsettings
         TLSE_filepath.Text = TLSE_hub.TLSE_filepath.Text
         Filever_text.Text = TLSE_hub.Filever_text.Text
         savedataArc = TLSE_filepath.Text
-        'Savefileregion()
+        Savefileregion()
     End Sub
 
     Private Sub valu_babiesborn_ValueChanged(sender As Object, e As EventArgs) Handles valu_babiesborn.ValueChanged
@@ -299,6 +299,21 @@ Public Class TLSE_islandsettings
     Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
         Mergebinarybabiesborn()
         Mergebinaryspotpassactiv()
+        Try
+            Dim fs As New FileStream(savedataArc, FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite)
+            fs.Position = babiesborn
+            fs.WriteByte(valu_babiesborn.Value)
+            fs.Position = streetpassactiv
+            fs.WriteByte(valu_streetpassactiv.Value)
+            fs.Position = spotpassactiv
+            fs.WriteByte(valu_spotpassactiv.Value)
+            fs.Flush()
+            TLSE_dialog.Text_TLSE_dialog.Text = "Island settings has been successfully edited"
+            TLSE_dialog.ShowDialog()
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to write island settings"
+            TLSE_dialog.ShowDialog()
+        End Try
     End Sub
 
     Private Sub Select_babiesborn_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_babiesborn.SelectedIndexChanged
@@ -445,5 +460,49 @@ Public Class TLSE_islandsettings
         End If
     End Sub
 
+    Public Sub Savefileregion()
+        If Filever_text.Text = "US" Or Filever_text.Text = "EU" Then
+            babiesborn = &H1E4C70
+            streetpassactiv = &H1E4BE2
+            spotpassactiv = &H1E4C71
+        ElseIf Filever_text.Text = "KR" Then
+            babiesborn = &H1F0020
+            streetpassactiv = &H1EFF92
+            spotpassactiv = &H1F0021
+        ElseIf Filever_text.Text = "JP" Then
+            babiesborn = &H14BD40
+            streetpassactiv = &H14BCD0
+            spotpassactiv = &H14BD41
+        End If
+    End Sub
 
+    Private Sub TLSE_islandsettings_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        Readislandsettings()
+    End Sub
+
+    Public Sub Readislandsettings()
+        Try
+            Dim Readdata As New PackageIO.Reader(savedataArc, PackageIO.Endian.Little)
+            Readdata.Position = babiesborn
+            valu_babiesborn.Value = Readdata.ReadByte
+            Readdata.Position = streetpassactiv
+            valu_streetpassactiv.Value = Readdata.ReadByte
+            Readdata.Position = spotpassactiv
+            valu_spotpassactiv.Value = Readdata.ReadByte
+        Catch ex As Exception
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Failed to read island settings"
+                TLSE_dialog.ShowDialog()
+            End If
+            If Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "La lecture des paramètres de l'île a échoué"
+                TLSE_dialog.ShowDialog()
+            End If
+        End Try
+    End Sub
+
+    Private Sub Warning_babiesborn_Click(sender As Object, e As EventArgs) Handles Warning_babiesborn.Click
+        TLSE_dialog.Text_TLSE_dialog.Text = "If babies born is unactivated, some interactions can't be used, can cause some troubles if a baby is on island"
+        TLSE_dialog.ShowDialog()
+    End Sub
 End Class

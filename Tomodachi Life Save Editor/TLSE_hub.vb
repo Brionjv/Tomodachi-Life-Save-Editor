@@ -194,6 +194,22 @@ Public Class TLSE_hub
         Menu_islandsettings.BackgroundImage = My.Resources.bbl_islandsettings
     End Sub
 
+    Private Sub Text_menu_savefilesettings_Click(sender As Object, e As EventArgs) Handles Text_menu_savefilesettings.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_savefilesettings.TLSE_logo_update.Visible = True
+        End If
+        TLSE_savefilesettings.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_savefilesettings_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_savefilesettings.MouseMove
+        Menu_savefilesettings.BackgroundImage = My.Resources.bbl_savefilesettings_act
+    End Sub
+
+    Private Sub Text_menu_savefilesettings_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_savefilesettings.MouseLeave
+        Menu_savefilesettings.BackgroundImage = My.Resources.bbl_savefilesettings
+    End Sub
+
     Private Sub Text_menu_itemsedit_Click(sender As Object, e As EventArgs) Handles Text_menu_itemsedit.Click
         Hidemenu()
         TLSE_menu_Itemsedition.Visible = True

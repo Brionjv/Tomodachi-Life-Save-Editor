@@ -62,10 +62,9 @@ Partial Class TLSE_islandsettings
         Me.Closebutton = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo_update = New System.Windows.Forms.PictureBox()
         Me.TLSE_logo = New System.Windows.Forms.PictureBox()
-        Me.Warning_itemsent = New System.Windows.Forms.PictureBox()
+        Me.Warning_babiesborn = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Select_babiesborn = New System.Windows.Forms.ComboBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.valu_streetpassactiv = New System.Windows.Forms.NumericUpDown()
         Me.Select_streetpassactiv = New System.Windows.Forms.ComboBox()
@@ -74,14 +73,11 @@ Partial Class TLSE_islandsettings
         Me.Select_sa_unknow1 = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Select_bb_unknow3 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.valu_babiesborn = New System.Windows.Forms.NumericUpDown()
         Me.Select_bb_unknow2 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Select_bb_unknow1 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.ConvertB_babiesborn = New System.Windows.Forms.TextBox()
         Me.Binary_bb_unknow1 = New System.Windows.Forms.TextBox()
         Me.Binary_babiesborn = New System.Windows.Forms.TextBox()
@@ -92,16 +88,12 @@ Partial Class TLSE_islandsettings
         Me.Binary_sa_unknow2 = New System.Windows.Forms.TextBox()
         Me.Binary_sa_unknow1 = New System.Windows.Forms.TextBox()
         Me.ConvertB_spotpassactiv = New System.Windows.Forms.TextBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Select_bb_unknow7 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Select_bb_unknow6 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Select_bb_unknow5 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Select_bb_unknow4 = New System.Windows.Forms.ComboBox()
         Me.Binary_bb_unknow7 = New System.Windows.Forms.TextBox()
@@ -112,25 +104,18 @@ Partial Class TLSE_islandsettings
         Me.Binary_spotpassactiv = New System.Windows.Forms.TextBox()
         Me.Binary_sa_unknow6 = New System.Windows.Forms.TextBox()
         Me.Binary_sa_unknow5 = New System.Windows.Forms.TextBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Select_sa_unknow3 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Select_sa_unknow6 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Select_sa_unknow7 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Select_spotpassactiv = New System.Windows.Forms.ComboBox()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Select_sa_unknow5 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Select_sa_unknow4 = New System.Windows.Forms.ComboBox()
-        Me.PictureBox15 = New System.Windows.Forms.PictureBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Select_sa_unknow2 = New System.Windows.Forms.ComboBox()
         Me.FlowLayoutPanel1.SuspendLayout()
@@ -157,25 +142,10 @@ Partial Class TLSE_islandsettings
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Warning_itemsent, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Warning_babiesborn, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_streetpassactiv, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_spotpassactiv, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_babiesborn, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -654,17 +624,17 @@ Partial Class TLSE_islandsettings
         Me.TLSE_logo.TabIndex = 325
         Me.TLSE_logo.TabStop = False
         '
-        'Warning_itemsent
+        'Warning_babiesborn
         '
-        Me.Warning_itemsent.BackColor = System.Drawing.Color.Transparent
-        Me.Warning_itemsent.Cursor = System.Windows.Forms.Cursors.Help
-        Me.Warning_itemsent.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.Warning_itemsent.Location = New System.Drawing.Point(719, 148)
-        Me.Warning_itemsent.Name = "Warning_itemsent"
-        Me.Warning_itemsent.Size = New System.Drawing.Size(24, 22)
-        Me.Warning_itemsent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.Warning_itemsent.TabIndex = 377
-        Me.Warning_itemsent.TabStop = False
+        Me.Warning_babiesborn.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_babiesborn.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_babiesborn.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
+        Me.Warning_babiesborn.Location = New System.Drawing.Point(719, 148)
+        Me.Warning_babiesborn.Name = "Warning_babiesborn"
+        Me.Warning_babiesborn.Size = New System.Drawing.Size(24, 22)
+        Me.Warning_babiesborn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Warning_babiesborn.TabIndex = 377
+        Me.Warning_babiesborn.TabStop = False
         '
         'Label2
         '
@@ -686,18 +656,6 @@ Partial Class TLSE_islandsettings
         Me.Select_babiesborn.Name = "Select_babiesborn"
         Me.Select_babiesborn.Size = New System.Drawing.Size(170, 21)
         Me.Select_babiesborn.TabIndex = 375
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox1.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox1.Location = New System.Drawing.Point(201, 148)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox1.TabIndex = 381
-        Me.PictureBox1.TabStop = False
         '
         'Label3
         '
@@ -754,6 +712,7 @@ Partial Class TLSE_islandsettings
         Me.valu_spotpassactiv.Size = New System.Drawing.Size(58, 16)
         Me.valu_spotpassactiv.TabIndex = 382
         Me.valu_spotpassactiv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_spotpassactiv.Visible = False
         '
         'Select_sa_unknow1
         '
@@ -787,18 +746,6 @@ Partial Class TLSE_islandsettings
         Me.Select_bb_unknow3.Size = New System.Drawing.Size(170, 21)
         Me.Select_bb_unknow3.TabIndex = 394
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox2.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox2.Location = New System.Drawing.Point(201, 215)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox2.TabIndex = 392
-        Me.PictureBox2.TabStop = False
-        '
         'Label6
         '
         Me.Label6.BackColor = System.Drawing.Color.Transparent
@@ -820,6 +767,7 @@ Partial Class TLSE_islandsettings
         Me.valu_babiesborn.Size = New System.Drawing.Size(58, 16)
         Me.valu_babiesborn.TabIndex = 389
         Me.valu_babiesborn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_babiesborn.Visible = False
         '
         'Select_bb_unknow2
         '
@@ -831,18 +779,6 @@ Partial Class TLSE_islandsettings
         Me.Select_bb_unknow2.Name = "Select_bb_unknow2"
         Me.Select_bb_unknow2.Size = New System.Drawing.Size(170, 21)
         Me.Select_bb_unknow2.TabIndex = 390
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox3.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox3.Location = New System.Drawing.Point(460, 148)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox3.TabIndex = 388
-        Me.PictureBox3.TabStop = False
         '
         'Label7
         '
@@ -865,18 +801,6 @@ Partial Class TLSE_islandsettings
         Me.Select_bb_unknow1.Size = New System.Drawing.Size(170, 21)
         Me.Select_bb_unknow1.TabIndex = 386
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox4.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox4.Location = New System.Drawing.Point(460, 215)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox4.TabIndex = 396
-        Me.PictureBox4.TabStop = False
-        '
         'ConvertB_babiesborn
         '
         Me.ConvertB_babiesborn.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -884,6 +808,7 @@ Partial Class TLSE_islandsettings
         Me.ConvertB_babiesborn.Name = "ConvertB_babiesborn"
         Me.ConvertB_babiesborn.Size = New System.Drawing.Size(142, 13)
         Me.ConvertB_babiesborn.TabIndex = 397
+        Me.ConvertB_babiesborn.Visible = False
         '
         'Binary_bb_unknow1
         '
@@ -892,6 +817,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_bb_unknow1.Name = "Binary_bb_unknow1"
         Me.Binary_bb_unknow1.Size = New System.Drawing.Size(31, 13)
         Me.Binary_bb_unknow1.TabIndex = 398
+        Me.Binary_bb_unknow1.Visible = False
         '
         'Binary_babiesborn
         '
@@ -900,6 +826,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_babiesborn.Name = "Binary_babiesborn"
         Me.Binary_babiesborn.Size = New System.Drawing.Size(31, 13)
         Me.Binary_babiesborn.TabIndex = 399
+        Me.Binary_babiesborn.Visible = False
         '
         'Binary_bb_unknow3
         '
@@ -908,6 +835,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_bb_unknow3.Name = "Binary_bb_unknow3"
         Me.Binary_bb_unknow3.Size = New System.Drawing.Size(31, 13)
         Me.Binary_bb_unknow3.TabIndex = 401
+        Me.Binary_bb_unknow3.Visible = False
         '
         'Binary_bb_unknow2
         '
@@ -916,6 +844,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_bb_unknow2.Name = "Binary_bb_unknow2"
         Me.Binary_bb_unknow2.Size = New System.Drawing.Size(31, 13)
         Me.Binary_bb_unknow2.TabIndex = 400
+        Me.Binary_bb_unknow2.Visible = False
         '
         'Binary_sa_unknow4
         '
@@ -924,6 +853,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_sa_unknow4.Name = "Binary_sa_unknow4"
         Me.Binary_sa_unknow4.Size = New System.Drawing.Size(31, 13)
         Me.Binary_sa_unknow4.TabIndex = 407
+        Me.Binary_sa_unknow4.Visible = False
         '
         'Binary_sa_unknow3
         '
@@ -932,6 +862,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_sa_unknow3.Name = "Binary_sa_unknow3"
         Me.Binary_sa_unknow3.Size = New System.Drawing.Size(31, 13)
         Me.Binary_sa_unknow3.TabIndex = 406
+        Me.Binary_sa_unknow3.Visible = False
         '
         'Binary_sa_unknow2
         '
@@ -940,6 +871,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_sa_unknow2.Name = "Binary_sa_unknow2"
         Me.Binary_sa_unknow2.Size = New System.Drawing.Size(31, 13)
         Me.Binary_sa_unknow2.TabIndex = 405
+        Me.Binary_sa_unknow2.Visible = False
         '
         'Binary_sa_unknow1
         '
@@ -948,6 +880,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_sa_unknow1.Name = "Binary_sa_unknow1"
         Me.Binary_sa_unknow1.Size = New System.Drawing.Size(31, 13)
         Me.Binary_sa_unknow1.TabIndex = 404
+        Me.Binary_sa_unknow1.Visible = False
         '
         'ConvertB_spotpassactiv
         '
@@ -956,18 +889,7 @@ Partial Class TLSE_islandsettings
         Me.ConvertB_spotpassactiv.Name = "ConvertB_spotpassactiv"
         Me.ConvertB_spotpassactiv.Size = New System.Drawing.Size(142, 13)
         Me.ConvertB_spotpassactiv.TabIndex = 403
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox5.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox5.Location = New System.Drawing.Point(719, 282)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox5.TabIndex = 416
-        Me.PictureBox5.TabStop = False
+        Me.ConvertB_spotpassactiv.Visible = False
         '
         'Label8
         '
@@ -990,18 +912,6 @@ Partial Class TLSE_islandsettings
         Me.Select_bb_unknow7.Size = New System.Drawing.Size(170, 21)
         Me.Select_bb_unknow7.TabIndex = 414
         '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox6.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox6.Location = New System.Drawing.Point(460, 282)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox6.TabIndex = 413
-        Me.PictureBox6.TabStop = False
-        '
         'Label9
         '
         Me.Label9.BackColor = System.Drawing.Color.Transparent
@@ -1023,18 +933,6 @@ Partial Class TLSE_islandsettings
         Me.Select_bb_unknow6.Size = New System.Drawing.Size(170, 21)
         Me.Select_bb_unknow6.TabIndex = 411
         '
-        'PictureBox7
-        '
-        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox7.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox7.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox7.Location = New System.Drawing.Point(201, 282)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox7.TabIndex = 410
-        Me.PictureBox7.TabStop = False
-        '
         'Label10
         '
         Me.Label10.BackColor = System.Drawing.Color.Transparent
@@ -1055,18 +953,6 @@ Partial Class TLSE_islandsettings
         Me.Select_bb_unknow5.Name = "Select_bb_unknow5"
         Me.Select_bb_unknow5.Size = New System.Drawing.Size(170, 21)
         Me.Select_bb_unknow5.TabIndex = 408
-        '
-        'PictureBox8
-        '
-        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox8.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox8.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox8.Location = New System.Drawing.Point(719, 215)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox8.TabIndex = 419
-        Me.PictureBox8.TabStop = False
         '
         'Label11
         '
@@ -1096,6 +982,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_bb_unknow7.Name = "Binary_bb_unknow7"
         Me.Binary_bb_unknow7.Size = New System.Drawing.Size(31, 13)
         Me.Binary_bb_unknow7.TabIndex = 423
+        Me.Binary_bb_unknow7.Visible = False
         '
         'Binary_bb_unknow6
         '
@@ -1104,6 +991,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_bb_unknow6.Name = "Binary_bb_unknow6"
         Me.Binary_bb_unknow6.Size = New System.Drawing.Size(31, 13)
         Me.Binary_bb_unknow6.TabIndex = 422
+        Me.Binary_bb_unknow6.Visible = False
         '
         'Binary_bb_unknow5
         '
@@ -1112,6 +1000,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_bb_unknow5.Name = "Binary_bb_unknow5"
         Me.Binary_bb_unknow5.Size = New System.Drawing.Size(31, 13)
         Me.Binary_bb_unknow5.TabIndex = 421
+        Me.Binary_bb_unknow5.Visible = False
         '
         'Binary_bb_unknow4
         '
@@ -1120,6 +1009,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_bb_unknow4.Name = "Binary_bb_unknow4"
         Me.Binary_bb_unknow4.Size = New System.Drawing.Size(31, 13)
         Me.Binary_bb_unknow4.TabIndex = 420
+        Me.Binary_bb_unknow4.Visible = False
         '
         'Binary_sa_unknow7
         '
@@ -1128,6 +1018,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_sa_unknow7.Name = "Binary_sa_unknow7"
         Me.Binary_sa_unknow7.Size = New System.Drawing.Size(31, 13)
         Me.Binary_sa_unknow7.TabIndex = 427
+        Me.Binary_sa_unknow7.Visible = False
         '
         'Binary_spotpassactiv
         '
@@ -1136,6 +1027,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_spotpassactiv.Name = "Binary_spotpassactiv"
         Me.Binary_spotpassactiv.Size = New System.Drawing.Size(31, 13)
         Me.Binary_spotpassactiv.TabIndex = 426
+        Me.Binary_spotpassactiv.Visible = False
         '
         'Binary_sa_unknow6
         '
@@ -1144,6 +1036,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_sa_unknow6.Name = "Binary_sa_unknow6"
         Me.Binary_sa_unknow6.Size = New System.Drawing.Size(31, 13)
         Me.Binary_sa_unknow6.TabIndex = 425
+        Me.Binary_sa_unknow6.Visible = False
         '
         'Binary_sa_unknow5
         '
@@ -1152,18 +1045,7 @@ Partial Class TLSE_islandsettings
         Me.Binary_sa_unknow5.Name = "Binary_sa_unknow5"
         Me.Binary_sa_unknow5.Size = New System.Drawing.Size(31, 13)
         Me.Binary_sa_unknow5.TabIndex = 424
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox9.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox9.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox9.Location = New System.Drawing.Point(719, 349)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox9.TabIndex = 445
-        Me.PictureBox9.TabStop = False
+        Me.Binary_sa_unknow5.Visible = False
         '
         'Label12
         '
@@ -1186,18 +1068,6 @@ Partial Class TLSE_islandsettings
         Me.Select_sa_unknow3.Size = New System.Drawing.Size(170, 21)
         Me.Select_sa_unknow3.TabIndex = 443
         '
-        'PictureBox10
-        '
-        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox10.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox10.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox10.Location = New System.Drawing.Point(719, 416)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox10.TabIndex = 442
-        Me.PictureBox10.TabStop = False
-        '
         'Label13
         '
         Me.Label13.BackColor = System.Drawing.Color.Transparent
@@ -1218,18 +1088,6 @@ Partial Class TLSE_islandsettings
         Me.Select_sa_unknow6.Name = "Select_sa_unknow6"
         Me.Select_sa_unknow6.Size = New System.Drawing.Size(170, 21)
         Me.Select_sa_unknow6.TabIndex = 440
-        '
-        'PictureBox11
-        '
-        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox11.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox11.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox11.Location = New System.Drawing.Point(460, 483)
-        Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox11.TabIndex = 439
-        Me.PictureBox11.TabStop = False
         '
         'Label14
         '
@@ -1252,18 +1110,6 @@ Partial Class TLSE_islandsettings
         Me.Select_sa_unknow7.Size = New System.Drawing.Size(170, 21)
         Me.Select_sa_unknow7.TabIndex = 437
         '
-        'PictureBox12
-        '
-        Me.PictureBox12.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox12.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox12.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox12.Location = New System.Drawing.Point(201, 349)
-        Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox12.TabIndex = 436
-        Me.PictureBox12.TabStop = False
-        '
         'Label15
         '
         Me.Label15.BackColor = System.Drawing.Color.Transparent
@@ -1284,18 +1130,6 @@ Partial Class TLSE_islandsettings
         Me.Select_spotpassactiv.Name = "Select_spotpassactiv"
         Me.Select_spotpassactiv.Size = New System.Drawing.Size(170, 21)
         Me.Select_spotpassactiv.TabIndex = 434
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox13.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox13.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox13.Location = New System.Drawing.Point(460, 416)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox13.TabIndex = 433
-        Me.PictureBox13.TabStop = False
         '
         'Label16
         '
@@ -1318,18 +1152,6 @@ Partial Class TLSE_islandsettings
         Me.Select_sa_unknow5.Size = New System.Drawing.Size(170, 21)
         Me.Select_sa_unknow5.TabIndex = 431
         '
-        'PictureBox14
-        '
-        Me.PictureBox14.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox14.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox14.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox14.Location = New System.Drawing.Point(201, 416)
-        Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox14.TabIndex = 430
-        Me.PictureBox14.TabStop = False
-        '
         'Label17
         '
         Me.Label17.BackColor = System.Drawing.Color.Transparent
@@ -1350,18 +1172,6 @@ Partial Class TLSE_islandsettings
         Me.Select_sa_unknow4.Name = "Select_sa_unknow4"
         Me.Select_sa_unknow4.Size = New System.Drawing.Size(170, 21)
         Me.Select_sa_unknow4.TabIndex = 428
-        '
-        'PictureBox15
-        '
-        Me.PictureBox15.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox15.Cursor = System.Windows.Forms.Cursors.Help
-        Me.PictureBox15.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue
-        Me.PictureBox15.Location = New System.Drawing.Point(460, 349)
-        Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(24, 22)
-        Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.PictureBox15.TabIndex = 448
-        Me.PictureBox15.TabStop = False
         '
         'Label18
         '
@@ -1390,25 +1200,18 @@ Partial Class TLSE_islandsettings
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_islandedit
         Me.ClientSize = New System.Drawing.Size(800, 617)
-        Me.Controls.Add(Me.PictureBox15)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Select_sa_unknow2)
-        Me.Controls.Add(Me.PictureBox9)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Select_sa_unknow3)
-        Me.Controls.Add(Me.PictureBox10)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Select_sa_unknow6)
-        Me.Controls.Add(Me.PictureBox11)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Select_sa_unknow7)
-        Me.Controls.Add(Me.PictureBox12)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Select_spotpassactiv)
-        Me.Controls.Add(Me.PictureBox13)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Select_sa_unknow5)
-        Me.Controls.Add(Me.PictureBox14)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Select_sa_unknow4)
         Me.Controls.Add(Me.Binary_sa_unknow7)
@@ -1419,16 +1222,12 @@ Partial Class TLSE_islandsettings
         Me.Controls.Add(Me.Binary_bb_unknow6)
         Me.Controls.Add(Me.Binary_bb_unknow5)
         Me.Controls.Add(Me.Binary_bb_unknow4)
-        Me.Controls.Add(Me.PictureBox8)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Select_bb_unknow4)
-        Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Select_bb_unknow7)
-        Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Select_bb_unknow6)
-        Me.Controls.Add(Me.PictureBox7)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Select_bb_unknow5)
         Me.Controls.Add(Me.Binary_sa_unknow4)
@@ -1441,24 +1240,20 @@ Partial Class TLSE_islandsettings
         Me.Controls.Add(Me.Binary_babiesborn)
         Me.Controls.Add(Me.Binary_bb_unknow1)
         Me.Controls.Add(Me.ConvertB_babiesborn)
-        Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Select_bb_unknow3)
-        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.valu_babiesborn)
         Me.Controls.Add(Me.Select_bb_unknow2)
-        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Select_bb_unknow1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.valu_spotpassactiv)
         Me.Controls.Add(Me.Select_sa_unknow1)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.valu_streetpassactiv)
         Me.Controls.Add(Me.Select_streetpassactiv)
-        Me.Controls.Add(Me.Warning_itemsent)
+        Me.Controls.Add(Me.Warning_babiesborn)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Select_babiesborn)
         Me.Controls.Add(Me.FlowLayoutPanel1)
@@ -1501,25 +1296,10 @@ Partial Class TLSE_islandsettings
         CType(Me.Closebutton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Warning_itemsent, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Warning_babiesborn, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_streetpassactiv, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_spotpassactiv, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_babiesborn, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox14, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1564,10 +1344,9 @@ Partial Class TLSE_islandsettings
     Friend WithEvents Closebutton As PictureBox
     Friend WithEvents TLSE_logo_update As PictureBox
     Friend WithEvents TLSE_logo As PictureBox
-    Friend WithEvents Warning_itemsent As PictureBox
+    Friend WithEvents Warning_babiesborn As PictureBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Select_babiesborn As ComboBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents valu_streetpassactiv As NumericUpDown
     Friend WithEvents Select_streetpassactiv As ComboBox
@@ -1576,14 +1355,11 @@ Partial Class TLSE_islandsettings
     Friend WithEvents Select_sa_unknow1 As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Select_bb_unknow3 As ComboBox
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label6 As Label
     Friend WithEvents valu_babiesborn As NumericUpDown
     Friend WithEvents Select_bb_unknow2 As ComboBox
-    Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Select_bb_unknow1 As ComboBox
-    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents ConvertB_babiesborn As TextBox
     Friend WithEvents Binary_bb_unknow1 As TextBox
     Friend WithEvents Binary_babiesborn As TextBox
@@ -1594,16 +1370,12 @@ Partial Class TLSE_islandsettings
     Friend WithEvents Binary_sa_unknow2 As TextBox
     Friend WithEvents Binary_sa_unknow1 As TextBox
     Friend WithEvents ConvertB_spotpassactiv As TextBox
-    Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Select_bb_unknow7 As ComboBox
-    Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Select_bb_unknow6 As ComboBox
-    Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Select_bb_unknow5 As ComboBox
-    Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Select_bb_unknow4 As ComboBox
     Friend WithEvents Binary_bb_unknow7 As TextBox
@@ -1614,25 +1386,18 @@ Partial Class TLSE_islandsettings
     Friend WithEvents Binary_spotpassactiv As TextBox
     Friend WithEvents Binary_sa_unknow6 As TextBox
     Friend WithEvents Binary_sa_unknow5 As TextBox
-    Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents Label12 As Label
     Friend WithEvents Select_sa_unknow3 As ComboBox
-    Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents Label13 As Label
     Friend WithEvents Select_sa_unknow6 As ComboBox
-    Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents Label14 As Label
     Friend WithEvents Select_sa_unknow7 As ComboBox
-    Friend WithEvents PictureBox12 As PictureBox
     Friend WithEvents Label15 As Label
     Friend WithEvents Select_spotpassactiv As ComboBox
-    Friend WithEvents PictureBox13 As PictureBox
     Friend WithEvents Label16 As Label
     Friend WithEvents Select_sa_unknow5 As ComboBox
-    Friend WithEvents PictureBox14 As PictureBox
     Friend WithEvents Label17 As Label
     Friend WithEvents Select_sa_unknow4 As ComboBox
-    Friend WithEvents PictureBox15 As PictureBox
     Friend WithEvents Label18 As Label
     Friend WithEvents Select_sa_unknow2 As ComboBox
 End Class
