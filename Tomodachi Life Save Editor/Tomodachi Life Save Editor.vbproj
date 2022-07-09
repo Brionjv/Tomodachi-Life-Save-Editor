@@ -374,6 +374,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_issue_3.png" />
     <None Include="Resources\icon_sound_3.png" />
     <None Include="Resources\icon_sound_2.png" />
     <None Include="Resources\icon_sound_1.png" />

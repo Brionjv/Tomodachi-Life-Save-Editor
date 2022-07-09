@@ -22,6 +22,7 @@ Partial Class TLSE_savefilesettings
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TLSE_savefilesettings))
         Me.FlowLayoutPanel1 = New System.Windows.Forms.FlowLayoutPanel()
         Me.Icon_menu = New System.Windows.Forms.PictureBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
@@ -95,6 +96,7 @@ Partial Class TLSE_savefilesettings
         Me.Title_consoleid = New System.Windows.Forms.Label()
         Me.Text_lastsavedate = New System.Windows.Forms.Label()
         Me.valu_lastsavedate = New System.Windows.Forms.NumericUpDown()
+        Me.Warning_lastsavedate = New System.Windows.Forms.PictureBox()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -143,6 +145,7 @@ Partial Class TLSE_savefilesettings
         CType(Me.Warning_consoleid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AdvH_consoleid, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.valu_lastsavedate, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Warning_lastsavedate, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -642,6 +645,7 @@ Partial Class TLSE_savefilesettings
         Me.valu_sound.Name = "valu_sound"
         Me.valu_sound.Size = New System.Drawing.Size(51, 16)
         Me.valu_sound.TabIndex = 373
+        Me.valu_sound.Visible = False
         '
         'Title_sound
         '
@@ -736,11 +740,12 @@ Partial Class TLSE_savefilesettings
         Me.valu_music.Name = "valu_music"
         Me.valu_music.Size = New System.Drawing.Size(51, 16)
         Me.valu_music.TabIndex = 374
+        Me.valu_music.Visible = False
         '
         'icon_plus_music
         '
         Me.icon_plus_music.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.icon_plus_music.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_button_plus_off
+        Me.icon_plus_music.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_button_plus_on
         Me.icon_plus_music.Location = New System.Drawing.Point(415, 7)
         Me.icon_plus_music.Name = "icon_plus_music"
         Me.icon_plus_music.Size = New System.Drawing.Size(32, 32)
@@ -796,11 +801,12 @@ Partial Class TLSE_savefilesettings
         Me.valu_soundeffects.Name = "valu_soundeffects"
         Me.valu_soundeffects.Size = New System.Drawing.Size(51, 16)
         Me.valu_soundeffects.TabIndex = 375
+        Me.valu_soundeffects.Visible = False
         '
         'icon_plus_soundeffects
         '
         Me.icon_plus_soundeffects.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.icon_plus_soundeffects.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_button_plus_off
+        Me.icon_plus_soundeffects.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_button_plus_on
         Me.icon_plus_soundeffects.Location = New System.Drawing.Point(415, 7)
         Me.icon_plus_soundeffects.Name = "icon_plus_soundeffects"
         Me.icon_plus_soundeffects.Size = New System.Drawing.Size(32, 32)
@@ -856,11 +862,12 @@ Partial Class TLSE_savefilesettings
         Me.valu_voice.Name = "valu_voice"
         Me.valu_voice.Size = New System.Drawing.Size(51, 16)
         Me.valu_voice.TabIndex = 375
+        Me.valu_voice.Visible = False
         '
         'icon_plus_voice
         '
         Me.icon_plus_voice.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.icon_plus_voice.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_button_plus_off
+        Me.icon_plus_voice.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_button_plus_on
         Me.icon_plus_voice.Location = New System.Drawing.Point(415, 7)
         Me.icon_plus_voice.Name = "icon_plus_voice"
         Me.icon_plus_voice.Size = New System.Drawing.Size(32, 32)
@@ -972,12 +979,25 @@ Partial Class TLSE_savefilesettings
         Me.valu_lastsavedate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.valu_lastsavedate.ThousandsSeparator = True
         '
+        'Warning_lastsavedate
+        '
+        Me.Warning_lastsavedate.BackColor = System.Drawing.Color.Transparent
+        Me.Warning_lastsavedate.Cursor = System.Windows.Forms.Cursors.Help
+        Me.Warning_lastsavedate.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_issue_3
+        Me.Warning_lastsavedate.Location = New System.Drawing.Point(709, 278)
+        Me.Warning_lastsavedate.Name = "Warning_lastsavedate"
+        Me.Warning_lastsavedate.Size = New System.Drawing.Size(24, 22)
+        Me.Warning_lastsavedate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.Warning_lastsavedate.TabIndex = 373
+        Me.Warning_lastsavedate.TabStop = False
+        '
         'TLSE_savefilesettings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_islandedit
         Me.ClientSize = New System.Drawing.Size(800, 396)
+        Me.Controls.Add(Me.Warning_lastsavedate)
         Me.Controls.Add(Me.Text_lastsavedate)
         Me.Controls.Add(Me.valu_lastsavedate)
         Me.Controls.Add(Me.Panel_islandaddress)
@@ -993,6 +1013,7 @@ Partial Class TLSE_savefilesettings
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_savefilesettings"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TLSE_savefilesettings"
@@ -1052,6 +1073,7 @@ Partial Class TLSE_savefilesettings
         CType(Me.Warning_consoleid, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AdvH_consoleid, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.valu_lastsavedate, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Warning_lastsavedate, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1130,4 +1152,5 @@ Partial Class TLSE_savefilesettings
     Friend WithEvents valu_music As NumericUpDown
     Friend WithEvents valu_soundeffects As NumericUpDown
     Friend WithEvents valu_voice As NumericUpDown
+    Friend WithEvents Warning_lastsavedate As PictureBox
 End Class

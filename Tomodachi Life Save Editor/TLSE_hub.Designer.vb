@@ -1554,7 +1554,8 @@ Partial Class TLSE_hub
         Me.Text_menu_islandsettings.Name = "Text_menu_islandsettings"
         Me.Text_menu_islandsettings.Size = New System.Drawing.Size(138, 108)
         Me.Text_menu_islandsettings.TabIndex = 2
-        Me.Text_menu_islandsettings.Text = "Island settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit island settings"
+        Me.Text_menu_islandsettings.Text = "Island settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Active or unactivate Streetpass, SpotPass," &
+    " babies born"
         Me.Text_menu_islandsettings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Menu_islandconfig
@@ -1575,7 +1576,8 @@ Partial Class TLSE_hub
         Me.Text_menu_islandconfig.Name = "Text_menu_islandconfig"
         Me.Text_menu_islandconfig.Size = New System.Drawing.Size(138, 108)
         Me.Text_menu_islandconfig.TabIndex = 2
-        Me.Text_menu_islandconfig.Text = "Island configurations" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit island configurations"
+        Me.Text_menu_islandconfig.Text = "Island configurations" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit island buildings, event fountai" &
+    "n, apartment renovation"
         Me.Text_menu_islandconfig.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox3
@@ -1615,7 +1617,8 @@ Partial Class TLSE_hub
         Me.Text_menu_islandinfo.Name = "Text_menu_islandinfo"
         Me.Text_menu_islandinfo.Size = New System.Drawing.Size(138, 108)
         Me.Text_menu_islandinfo.TabIndex = 2
-        Me.Text_menu_islandinfo.Text = "Island informations" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit island informations"
+        Me.Text_menu_islandinfo.Text = "Island informations" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit money, island name, item sent via" &
+    " StreetPass, problems solved..."
         Me.Text_menu_islandinfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TLSE_menu_islandedit
@@ -1652,7 +1655,8 @@ Partial Class TLSE_hub
         Me.Text_menu_savefilesettings.Name = "Text_menu_savefilesettings"
         Me.Text_menu_savefilesettings.Size = New System.Drawing.Size(184, 108)
         Me.Text_menu_savefilesettings.TabIndex = 2
-        Me.Text_menu_savefilesettings.Text = "Save file settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit settings of your save file"
+        Me.Text_menu_savefilesettings.Text = "Save file settings" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit sound settings, console ID, last s" &
+    "ave date"
         Me.Text_menu_savefilesettings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TLSE_hub
