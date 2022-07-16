@@ -627,7 +627,7 @@ Public Class TLSE_manag_mii
     Private Sub Text_extractmii_Click(sender As Object, e As EventArgs) Handles Text_extractmii.Click
         Try
             Dim SaveFileDialog1 As New SaveFileDialog
-            SaveFileDialog1.Filter = "Tomodachi Life Mii|*.TLMii"
+            SaveFileDialog1.Filter = "3DS Mii data files|*.cfsd"
             SaveFileDialog1.FileName = Select_mii.Text.Replace(":", "") & "_" & Today.Year & "_" & Today.Month & "_" & Today.Day & "_" & TimeOfDay.Hour & "h" & TimeOfDay.Minute
             If SaveFileDialog1.ShowDialog = Windows.Forms.DialogResult.OK Then
                 Dim Writer1 As New System.IO.StreamWriter(SaveFileDialog1.FileName)
@@ -1709,7 +1709,7 @@ Public Class TLSE_manag_mii
         TLSE_dialog.ShowDialog()
         If TLSE_dialog.DialogResult = DialogResult.OK Then
             Dim open As New OpenFileDialog
-            open.Filter = "Mii files|*.TLMII;*MIITOPIAMIIA;*TLTRAVELER;*MII"
+            open.Filter = "Mii files|*.CFSD;*MIITOPIAMIIA;*TLTRAVELER;*FFSD"
             open.Title = "Open compatible files"
             open.ShowDialog()
             TLMII = open.FileName

@@ -94,6 +94,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TLSE_interactions.Designer.vb">
+      <DependentUpon>TLSE_interactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_interactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_islandinfo.Designer.vb">
       <DependentUpon>TLSE_islandinfo.vb</DependentUpon>
     </Compile>
@@ -227,6 +233,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="TLSE_interactions.resx">
+      <DependentUpon>TLSE_interactions.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TLSE_islandinfo.resx">
       <DependentUpon>TLSE_islandinfo.vb</DependentUpon>
     </EmbeddedResource>
@@ -374,6 +383,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_interaction_tbluej.png" />
+    <None Include="Resources\icon_interaction_tblue.png" />
+    <None Include="Resources\icon_interaction_unknow.png" />
+    <None Include="Resources\icon_interaction_pink.png" />
+    <None Include="Resources\icon_interaction_phone.png" />
+    <None Include="Resources\icon_interaction_orange.png" />
+    <None Include="Resources\icon_interaction_none.png" />
+    <None Include="Resources\icon_interaction_bluej.png" />
+    <None Include="Resources\icon_interaction_blue.png" />
+    <None Include="Resources\icon_interaction_black.png" />
+    <None Include="Resources\bg_interactions.png" />
+    <None Include="Resources\bg_apartment.png" />
     <None Include="Resources\icon_issue_3.png" />
     <None Include="Resources\icon_sound_3.png" />
     <None Include="Resources\icon_sound_2.png" />

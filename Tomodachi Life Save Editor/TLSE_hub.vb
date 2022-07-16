@@ -309,7 +309,11 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_interactions_Click(sender As Object, e As EventArgs) Handles Text_menu_interactions.Click
-
+        If TLSE_logo_update.Visible = True Then
+            TLSE_interactions.TLSE_logo_update.Visible = True
+        End If
+        TLSE_interactions.Show()
+        Me.Close()
     End Sub
 
     Private Sub Text_menu_interactions_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_interactions.MouseMove
@@ -546,6 +550,7 @@ Public Class TLSE_hub
                 Select_language.SelectedItem = Select_language.Items.Item(0)
             End If
             Select_music.SelectedItem = My.Settings.Para_selmusic
+            text_issues.Text = My.Settings.Para_issue
         Catch ex As Exception
         End Try
         'TLSE_language()
@@ -689,7 +694,7 @@ Public Class TLSE_hub
         If Setting_ckupdate.Checked = False Then
             Try
                 Dim MAJ As New WebClient
-                Dim lastupdate As String = MAJ.DownloadString("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/Version_EX.txt")
+                Dim lastupdate As String = MAJ.DownloadString("https://raw.githubusercontent.com/Brionjv/Tomodachi-Life-Save-Editor/master/Version.txt")
                 If TLSE_version.Text = lastupdate Then
                     TLSE_logo.Visible = True
                     TLSE_logo_update.Visible = False
@@ -725,7 +730,7 @@ Public Class TLSE_hub
                 Checkupdates()
             End If
         End If
-        'Checkissues()
+        Checkissues()
     End Sub
 
     Private Sub TLSE_logo_update_Click(sender As Object, e As EventArgs) Handles TLSE_logo_update.Click

@@ -669,7 +669,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_interactions
         '
-        Me.Text_menu_interactions.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_interactions.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_interactions.ForeColor = System.Drawing.Color.White
         Me.Text_menu_interactions.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_interactions.Name = "Text_menu_interactions"
@@ -755,7 +755,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version EX-1.1.3"
+        Me.TLSE_version.Text = "Version 5.0.0"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1669,12 +1669,12 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
-        Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
         Me.Controls.Add(Me.TLSE_menu)
+        Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"

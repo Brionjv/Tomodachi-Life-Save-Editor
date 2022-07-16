@@ -149,6 +149,18 @@ Namespace My
                 Me("Para_selmusic") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property Para_issue() As String
+            Get
+                Return CType(Me("Para_issue"),String)
+            End Get
+            Set
+                Me("Para_issue") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
