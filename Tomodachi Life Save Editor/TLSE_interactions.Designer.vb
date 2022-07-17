@@ -30,6 +30,7 @@ Partial Class TLSE_interactions
         Me.Menuflow_text_itemsedition = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.TLSE_header = New System.Windows.Forms.Panel()
         Me.TLSE_filepath = New System.Windows.Forms.TextBox()
         Me.Select_language = New System.Windows.Forms.ComboBox()
@@ -268,7 +269,40 @@ Partial Class TLSE_interactions
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Icon_selectmii = New System.Windows.Forms.PictureBox()
         Me.Warning_miiapartment = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.valu_interaction = New System.Windows.Forms.NumericUpDown()
+        Me.Panel27 = New System.Windows.Forms.Panel()
+        Me.Select_interaction = New System.Windows.Forms.ComboBox()
+        Me.Select_Interaction_USA = New System.Windows.Forms.ComboBox()
+        Me.Text_lastsavedate = New System.Windows.Forms.Label()
+        Me.valu_lastsavedate = New System.Windows.Forms.NumericUpDown()
+        Me.infobubble_interaction = New System.Windows.Forms.Panel()
+        Me.Text_infobubble_interaction = New System.Windows.Forms.Label()
+        Me.Icon_interaction = New System.Windows.Forms.PictureBox()
+        Me.Title_emotions = New System.Windows.Forms.Label()
+        Me.Panel26 = New System.Windows.Forms.Panel()
+        Me.valu_emotions = New System.Windows.Forms.NumericUpDown()
+        Me.Select_emotions = New System.Windows.Forms.ComboBox()
+        Me.Title_target1 = New System.Windows.Forms.Label()
+        Me.Panel_target1 = New System.Windows.Forms.Panel()
+        Me.valu_target1 = New System.Windows.Forms.NumericUpDown()
+        Me.Select_target1 = New System.Windows.Forms.ComboBox()
+        Me.Panel_target1_foods = New System.Windows.Forms.Panel()
+        Me.Select_target1_foodUS = New System.Windows.Forms.ComboBox()
+        Me.Select_target1_foodEU = New System.Windows.Forms.ComboBox()
+        Me.Title_target2 = New System.Windows.Forms.Label()
+        Me.Panel_target2 = New System.Windows.Forms.Panel()
+        Me.valu_target2 = New System.Windows.Forms.NumericUpDown()
+        Me.Select_target2 = New System.Windows.Forms.ComboBox()
+        Me.infobubble_target1 = New System.Windows.Forms.Panel()
+        Me.Text_infobubble_target1 = New System.Windows.Forms.Label()
+        Me.infobubble_target2 = New System.Windows.Forms.Panel()
+        Me.Text_infobubble_target2 = New System.Windows.Forms.Label()
+        Me.Fea_interacconditions = New System.Windows.Forms.Panel()
+        Me.Title_interacconditions = New System.Windows.Forms.Label()
+        Me.Text_interacconditions = New System.Windows.Forms.Label()
+        Me.Title_interactionpattern = New System.Windows.Forms.Label()
+        Me.valu_enddateinterac = New System.Windows.Forms.NumericUpDown()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.FlowLayoutPanel1.SuspendLayout()
         CType(Me.Icon_menu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
@@ -498,6 +532,22 @@ Partial Class TLSE_interactions
         Me.Panel4.SuspendLayout()
         CType(Me.Icon_selectmii, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Warning_miiapartment, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.valu_interaction, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel27.SuspendLayout()
+        CType(Me.valu_lastsavedate, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.infobubble_interaction.SuspendLayout()
+        CType(Me.Icon_interaction, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel26.SuspendLayout()
+        CType(Me.valu_emotions, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_target1.SuspendLayout()
+        CType(Me.valu_target1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel_target1_foods.SuspendLayout()
+        Me.Panel_target2.SuspendLayout()
+        CType(Me.valu_target2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.infobubble_target1.SuspendLayout()
+        Me.infobubble_target2.SuspendLayout()
+        Me.Fea_interacconditions.SuspendLayout()
+        CType(Me.valu_enddateinterac, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'FlowLayoutPanel1
@@ -511,7 +561,7 @@ Partial Class TLSE_interactions
         Me.FlowLayoutPanel1.Controls.Add(Me.Label2)
         Me.FlowLayoutPanel1.Location = New System.Drawing.Point(0, 77)
         Me.FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(800, 57)
+        Me.FlowLayoutPanel1.Size = New System.Drawing.Size(950, 57)
         Me.FlowLayoutPanel1.TabIndex = 332
         '
         'Icon_menu
@@ -574,6 +624,17 @@ Partial Class TLSE_interactions
         Me.Label1.Text = "Interactions"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Label2
+        '
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.ForeColor = System.Drawing.Color.Red
+        Me.Label2.Location = New System.Drawing.Point(373, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(574, 53)
+        Me.Label2.TabIndex = 375
+        Me.Label2.Text = resources.GetString("Label2.Text")
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TLSE_header
         '
         Me.TLSE_header.BackColor = System.Drawing.Color.White
@@ -594,7 +655,7 @@ Partial Class TLSE_interactions
         Me.TLSE_header.Location = New System.Drawing.Point(150, 0)
         Me.TLSE_header.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.TLSE_header.Name = "TLSE_header"
-        Me.TLSE_header.Size = New System.Drawing.Size(650, 75)
+        Me.TLSE_header.Size = New System.Drawing.Size(800, 75)
         Me.TLSE_header.TabIndex = 331
         '
         'TLSE_filepath
@@ -604,7 +665,7 @@ Partial Class TLSE_interactions
         Me.TLSE_filepath.Location = New System.Drawing.Point(440, 57)
         Me.TLSE_filepath.Name = "TLSE_filepath"
         Me.TLSE_filepath.ReadOnly = True
-        Me.TLSE_filepath.Size = New System.Drawing.Size(161, 13)
+        Me.TLSE_filepath.Size = New System.Drawing.Size(357, 13)
         Me.TLSE_filepath.TabIndex = 18
         Me.TLSE_filepath.Visible = False
         '
@@ -921,7 +982,7 @@ Partial Class TLSE_interactions
         Me.Minimizebutton.BackColor = System.Drawing.Color.Transparent
         Me.Minimizebutton.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Minimizebutton.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.minimize
-        Me.Minimizebutton.Location = New System.Drawing.Point(560, 0)
+        Me.Minimizebutton.Location = New System.Drawing.Point(709, 0)
         Me.Minimizebutton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Minimizebutton.Name = "Minimizebutton"
         Me.Minimizebutton.Size = New System.Drawing.Size(45, 35)
@@ -931,7 +992,7 @@ Partial Class TLSE_interactions
         'TLSE_title
         '
         Me.TLSE_title.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tlse_title_ex
-        Me.TLSE_title.Location = New System.Drawing.Point(17, 3)
+        Me.TLSE_title.Location = New System.Drawing.Point(80, 3)
         Me.TLSE_title.Name = "TLSE_title"
         Me.TLSE_title.Size = New System.Drawing.Size(533, 32)
         Me.TLSE_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -943,7 +1004,7 @@ Partial Class TLSE_interactions
         Me.Closebutton.BackColor = System.Drawing.Color.Transparent
         Me.Closebutton.Cursor = System.Windows.Forms.Cursors.Arrow
         Me.Closebutton.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.close_tl
-        Me.Closebutton.Location = New System.Drawing.Point(605, 0)
+        Me.Closebutton.Location = New System.Drawing.Point(754, 0)
         Me.Closebutton.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Closebutton.Name = "Closebutton"
         Me.Closebutton.Size = New System.Drawing.Size(45, 35)
@@ -2339,7 +2400,7 @@ Partial Class TLSE_interactions
         'Icon_apartmentmii_95
         '
         Me.Icon_apartmentmii_95.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Icon_apartmentmii_95.Image = CType(resources.GetObject("Icon_apartmentmii_95.Image"), System.Drawing.Image)
+        Me.Icon_apartmentmii_95.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_interaction_none
         Me.Icon_apartmentmii_95.Location = New System.Drawing.Point(299, 53)
         Me.Icon_apartmentmii_95.Name = "Icon_apartmentmii_95"
         Me.Icon_apartmentmii_95.Size = New System.Drawing.Size(42, 34)
@@ -3291,7 +3352,7 @@ Partial Class TLSE_interactions
         Me.Panel_selectmii.BackColor = System.Drawing.Color.Transparent
         Me.Panel_selectmii.Controls.Add(Me.Select_mii)
         Me.Panel_selectmii.Controls.Add(Me.Panel4)
-        Me.Panel_selectmii.Location = New System.Drawing.Point(538, 140)
+        Me.Panel_selectmii.Location = New System.Drawing.Point(605, 140)
         Me.Panel_selectmii.Name = "Panel_selectmii"
         Me.Panel_selectmii.Size = New System.Drawing.Size(148, 64)
         Me.Panel_selectmii.TabIndex = 334
@@ -3339,25 +3400,429 @@ Partial Class TLSE_interactions
         Me.Warning_miiapartment.TabIndex = 374
         Me.Warning_miiapartment.TabStop = False
         '
-        'Label2
+        'valu_interaction
         '
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.ForeColor = System.Drawing.Color.Red
-        Me.Label2.Location = New System.Drawing.Point(373, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(415, 53)
-        Me.Label2.TabIndex = 375
-        Me.Label2.Text = "If interactions are not shown in Tomodachi Life :" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "- Conditions are not respected" &
-    " following your game region" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "- Unknow conditions (not listed) are not respected " &
-    "following your game region"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.valu_interaction.BackColor = System.Drawing.Color.LightCyan
+        Me.valu_interaction.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_interaction.Hexadecimal = True
+        Me.valu_interaction.Location = New System.Drawing.Point(425, 215)
+        Me.valu_interaction.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_interaction.Name = "valu_interaction"
+        Me.valu_interaction.Size = New System.Drawing.Size(86, 16)
+        Me.valu_interaction.TabIndex = 375
+        Me.valu_interaction.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Panel27
+        '
+        Me.Panel27.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel27.Controls.Add(Me.Select_interaction)
+        Me.Panel27.Controls.Add(Me.Select_Interaction_USA)
+        Me.Panel27.Location = New System.Drawing.Point(425, 233)
+        Me.Panel27.Name = "Panel27"
+        Me.Panel27.Size = New System.Drawing.Size(513, 25)
+        Me.Panel27.TabIndex = 376
+        '
+        'Select_interaction
+        '
+        Me.Select_interaction.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_interaction.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_interaction.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_interaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_interaction.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Select_interaction.FormattingEnabled = True
+        Me.Select_interaction.IntegralHeight = False
+        Me.Select_interaction.ItemHeight = 13
+        Me.Select_interaction.Items.AddRange(New Object() {"Nothing", "I'm starving", "I'd like {foods}", "I'd like some dessert", "I'm feeling thirsty", "I'd like to eat something sweet", "I'm in the mood for something spicy", "I wanna eat something salty", "I would like to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat something warm", "I've got  a craving for sweets", "I'd like to eat some fruit", "I want to eat some vegetables", "I'd like something with rice", "I feel like eating some bread", "I'd like to eat something meaty", "I have a craving for seefood", "I want some food with eggs", "I feel like eating Japanese food", "I feel like eating American food", "I feel like eating Chinese food", "I feel like eating Italian food", "I'm in the mood for noodles", "I'd love to eat something posh", "Would like to eat something but say nothing", "Would like to eat something but say nothing (1)", "I'd like to eat something British", "I'd like to eat something French", "I'd like to eat something German", "I'd like to eat something Spanish", "Would like to eat something but say nothing (2)", "I'd like to eat something Korean", "I could eat anything !", "I'm starving (1)", "I'm really hungry !", "I'm hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (they have to be HOT!)", "I'd like some new clothes (something stylish)", "I'd like some new clothes (frumpy could work...)", "I'd like some new clothes that are unique…", "I'd like some new clothes that are safe and plain…", "I'd like some new clothes (mood for a skirt)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (wear while doing sports)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'm after a plain-looking hat", "I need a formal hat", "I'd like a casual-looking hat", "I've got to have a cute hat", "I want a cool hat", "I'd like something ugly on my head", "I'd like something unique for my head", "I'd like to try on a hat that's plain and safe", "I need a hat I can use for sports", "I want something to wear on my head", "I need something cute for my head", "I'm after something strange to put on my head", "I need some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my room", "I want to be friends with {Mii}", "I heard that {Mii} wants to be friends", "I'd like to introduce {Mii} to somebody… How about {Mii} ?", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings " &
+                "to ?", "_Show heart in windows but freeze_", "_No correspondence ?_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "_Won't make up with friend in conflict_", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you" &
+                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "Wants to go on a trip with someone", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me " &
+                "?", "I think that I have something really special with {Mii}.  What do you thing about" &
+                " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii" &
+                "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories," &
+                " should I tell them more ?", "A mosquito got into my tent…", "I'm so famished I can hardly move…", "I've got a sore throat…", "I got a letter from someone to meet them on the roof… I don't know who wrote it… " &
+                "Should I go ?", "I loss something very important", "_No correspondence ?_3", "_No correspondence ?_4", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?", "???"})
+        Me.Select_interaction.Location = New System.Drawing.Point(2, 2)
+        Me.Select_interaction.Name = "Select_interaction"
+        Me.Select_interaction.Size = New System.Drawing.Size(509, 21)
+        Me.Select_interaction.TabIndex = 112
+        '
+        'Select_Interaction_USA
+        '
+        Me.Select_Interaction_USA.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_Interaction_USA.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_Interaction_USA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_Interaction_USA.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_Interaction_USA.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Select_Interaction_USA.FormattingEnabled = True
+        Me.Select_Interaction_USA.IntegralHeight = False
+        Me.Select_Interaction_USA.ItemHeight = 13
+        Me.Select_Interaction_USA.Items.AddRange(New Object() {"Nothing", "I'm hungry!", "I'd like {foods}", "I want some dessert", "I'm thirsty", "I'd like to eat something sweet", "I'd love something spicy to eat", "I wanna eat something salty", "I want to eat something sour", "I'm in the mood for some greasy food", "I'd like to eat something cold", "I'd like to eat somthing warm and comforting", "I'm craving some sweets", "I'd like to eat some fruit", "I want some veggies!", "I'm hungry for something with rice", "I feel like eating something with bread", "I'd like to eat something meaty", "I'm craving some seafood", "I want to eat something with eggs", "I feel like eating some Japanese food", "I want some American food", "I'm in the mood for some Chinese food", "I could go for some Italian food", "I'm hungry for some noodles", "I'd love to eat something fancy", "I want some American food (1)", "I'd love some Asian food", "Want to eat something but say nothing", "Want to eat something but say nothing", "Want to eat something but say nothing", "Want to eat something but say nothing", "I'm really craving some junk food", "Want to eat something but say nothing (1)", "I need to eat something ! ANYTHING !", "I'm starving !", "I'm super hungry", "I sure am hungry !", "I'd like some new clothes", "I want {clothes}", "I'd like some new clothes (something warm)", "I'd like some new clothes (something light)", "I'd like some new clothes (something flashy)", "I'd like some new clothes (something simple)", "I'd like some new clothes (something formal)", "I'd like some new clothes (something casual)", "I'd like some new clothes (something cute)", "I'd like some new clothes (something spicy)", "I'd like some new clothes (something cool factor)", "I'd like some new clothes (something frumpy)", "I'd like some new clothes (something unique)", "I'd like some new clothes (something modest)", "I'd like some new clothes (flowing garment)", "I'd like some new clothes (wear to work)", "I'd like some new clothes (playing sport)", "I'd like a new hat", "I'd like {hats}", "I could use a warm hat", "I'd like a flashy hat", "I'd like a plain-looking hat", "I need a formal hat", "I could use a casual-looking hat", "I'd love a really cute hat", "I want a cool hat", "I want an ugly hat", "I'd like a really unique hat", "I could use a plain and modest hat", "I need a hat I can wear when playing sports", "I want something new  to decorate my head with", "I want something cute I can wear on my head", "I want something weird I can wear on my head", "I'd like some kind of hair accessory", "I want a cute hair accessory", "I'd like a new look for my apartment", "I want to be friends with {Mii}", "I heard {Mii} want to be friends", "I'd like to introduce {Mii} to somebody… How about {Mii} ?", "I've got feelings for {Mii} I want to tell him", "I think {Mii} likes me. What do you think ?", "I think {Mii} needs a special someone... How about setting them up with {Mii}", "Why would {Mii} want me to go out with… {Mii}  ?", "I've got feelings for{Mii} and {Mii}. Who do you think I should tell my feelings " &
+                "to ?", "_Show heart in windows but freeze_", "_No correspondence ?_", "I'd like take {Mii} on a date. Where should we go ?", "I want to propose to {Mii}. Do you think I should ?", "I've been thinking about having a child with {Mii}…", "{Mii} and I have a baby", "{Baby} has been grown-up", "I had a fight with {Mii} ! I'm so mad !", "I had a huge fight with {Mii} and now I really, really mad !", "{Mii} had a fight with {Mii} and won't make up", "I don't want to fight with {Mii} any more.", "_Won't make up with friend in conflict_", "Target : I'll never be able to get those happy times back again", "Divorce and break target's heart", "Sad : love rejected", "{Mii} rejected me but I'm not going to give up ! I have to try again. What do you" &
+                " think ?", "I'll never be able to get those happy times back again", "I feel like I've got a big hole in my heart since we broke up", "I'm just not good enough…", "Life is tougher than I expected…", "I should look for someone new…", "I guess this was just meant to be", "I'm going to say {Cathphrase} when I happy. What do you think ?", "I'm going to say {Cathphrase} when I angry. What do you think ?", "What  should I say when I feel down ?", "I'm going to say {Cathphrase} when I'm worry. What do you think ?", "I'd like to have a disposable camera", "I want to take a bath", "I've got a cold…", "My tummy doesn't feel too good…", "I'd love to change my hair colour", "Wants to go on a trip with someone", "I wish I were older", "I wish I were younger", "Please look inside my tummy", "Look inside my head", "I want to sneeze but I can't …", "I don't really know anything about {Mii}. What do you thing about {Mii} and me ?", "I think I'm really good friends with {Mii}", "I think that {Mii} is a pretty good friend. What do you thing about {Mii} and me " &
+                "?", "I think that I have something really special with {Mii}.  What do you thing about" &
+                " {Mii} and me ?", "I think that {Mii} and I are a pretty close couple.  What do you thing about {Mii" &
+                "} and me ?", "What subject are you beast at, {You} lookalike ?", "I getting lonely here on this island, It'd be nice to have some company…", "I decided to donate some money to help improve this island. Go and have a look", "I'm starving (Travelers)", "I must be pretty stinky right now…", "My nose feels runny. I must be getting hay fever…", "I thought it tasted a bit funny at first. I shouldn't have eaten it…", "Thinking about home made me a bit homesick, but I'm OK…", "I made friends with somebody called {Mii}. {Mii} was so interested in my stories," &
+                " should I tell them more ?", "A mosquito got into my tent…", "I'm so famished I can hardly move…", "I've got a sore throat…", "I got a letter from someone to meet them on the roof… I don't know who wrote it… " &
+                "Should I go ?", "I loss something very important", "_No correspondence ?_3", "_No correspondence ?_4", "Hey… Actually… I need… ah… {money} as soon as possible !", "Thanks for your help the other day", "Check out my impression of {Mii}", "Do you want to hear something about my special someone ?", "Would you like to see a weird face that I've been practising ?"})
+        Me.Select_Interaction_USA.Location = New System.Drawing.Point(2, 2)
+        Me.Select_Interaction_USA.Name = "Select_Interaction_USA"
+        Me.Select_Interaction_USA.Size = New System.Drawing.Size(509, 21)
+        Me.Select_Interaction_USA.TabIndex = 188
+        '
+        'Text_lastsavedate
+        '
+        Me.Text_lastsavedate.BackColor = System.Drawing.Color.Transparent
+        Me.Text_lastsavedate.Location = New System.Drawing.Point(698, 304)
+        Me.Text_lastsavedate.Name = "Text_lastsavedate"
+        Me.Text_lastsavedate.Size = New System.Drawing.Size(180, 13)
+        Me.Text_lastsavedate.TabIndex = 378
+        Me.Text_lastsavedate.Text = "Last save date (in seconds)"
+        Me.Text_lastsavedate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'valu_lastsavedate
+        '
+        Me.valu_lastsavedate.BackColor = System.Drawing.Color.White
+        Me.valu_lastsavedate.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_lastsavedate.Enabled = False
+        Me.valu_lastsavedate.Hexadecimal = True
+        Me.valu_lastsavedate.Location = New System.Drawing.Point(728, 320)
+        Me.valu_lastsavedate.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
+        Me.valu_lastsavedate.Name = "valu_lastsavedate"
+        Me.valu_lastsavedate.ReadOnly = True
+        Me.valu_lastsavedate.Size = New System.Drawing.Size(120, 16)
+        Me.valu_lastsavedate.TabIndex = 377
+        Me.valu_lastsavedate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_lastsavedate.ThousandsSeparator = True
+        '
+        'infobubble_interaction
+        '
+        Me.infobubble_interaction.BackColor = System.Drawing.Color.Transparent
+        Me.infobubble_interaction.BackgroundImage = CType(resources.GetObject("infobubble_interaction.BackgroundImage"), System.Drawing.Image)
+        Me.infobubble_interaction.Controls.Add(Me.Text_infobubble_interaction)
+        Me.infobubble_interaction.Location = New System.Drawing.Point(473, 264)
+        Me.infobubble_interaction.Name = "infobubble_interaction"
+        Me.infobubble_interaction.Size = New System.Drawing.Size(386, 31)
+        Me.infobubble_interaction.TabIndex = 381
+        Me.infobubble_interaction.Visible = False
+        '
+        'Text_infobubble_interaction
+        '
+        Me.Text_infobubble_interaction.BackColor = System.Drawing.Color.Transparent
+        Me.Text_infobubble_interaction.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Text_infobubble_interaction.Location = New System.Drawing.Point(0, 6)
+        Me.Text_infobubble_interaction.Name = "Text_infobubble_interaction"
+        Me.Text_infobubble_interaction.Size = New System.Drawing.Size(386, 25)
+        Me.Text_infobubble_interaction.TabIndex = 167
+        Me.Text_infobubble_interaction.Text = "Select a 2 friends"
+        Me.Text_infobubble_interaction.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Icon_interaction
+        '
+        Me.Icon_interaction.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_interaction.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_interaction_none
+        Me.Icon_interaction.Location = New System.Drawing.Point(425, 262)
+        Me.Icon_interaction.Name = "Icon_interaction"
+        Me.Icon_interaction.Size = New System.Drawing.Size(42, 34)
+        Me.Icon_interaction.TabIndex = 380
+        Me.Icon_interaction.TabStop = False
+        '
+        'Title_emotions
+        '
+        Me.Title_emotions.BackColor = System.Drawing.Color.Transparent
+        Me.Title_emotions.ForeColor = System.Drawing.Color.Black
+        Me.Title_emotions.Location = New System.Drawing.Point(424, 640)
+        Me.Title_emotions.Name = "Title_emotions"
+        Me.Title_emotions.Size = New System.Drawing.Size(99, 13)
+        Me.Title_emotions.TabIndex = 383
+        Me.Title_emotions.Text = "Emotions"
+        Me.Title_emotions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel26
+        '
+        Me.Panel26.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel26.Controls.Add(Me.valu_emotions)
+        Me.Panel26.Controls.Add(Me.Select_emotions)
+        Me.Panel26.Location = New System.Drawing.Point(425, 656)
+        Me.Panel26.Name = "Panel26"
+        Me.Panel26.Size = New System.Drawing.Size(97, 25)
+        Me.Panel26.TabIndex = 382
+        '
+        'valu_emotions
+        '
+        Me.valu_emotions.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_emotions.Location = New System.Drawing.Point(41, 4)
+        Me.valu_emotions.Maximum = New Decimal(New Integer() {255, 0, 0, 0})
+        Me.valu_emotions.Name = "valu_emotions"
+        Me.valu_emotions.Size = New System.Drawing.Size(35, 16)
+        Me.valu_emotions.TabIndex = 185
+        Me.valu_emotions.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.valu_emotions.Visible = False
+        '
+        'Select_emotions
+        '
+        Me.Select_emotions.BackColor = System.Drawing.SystemColors.Window
+        Me.Select_emotions.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_emotions.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_emotions.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_emotions.FormattingEnabled = True
+        Me.Select_emotions.Items.AddRange(New Object() {"Normal", "Happy", "Angry", "Sad", "In love"})
+        Me.Select_emotions.Location = New System.Drawing.Point(2, 2)
+        Me.Select_emotions.Name = "Select_emotions"
+        Me.Select_emotions.Size = New System.Drawing.Size(93, 21)
+        Me.Select_emotions.TabIndex = 112
+        '
+        'Title_target1
+        '
+        Me.Title_target1.BackColor = System.Drawing.Color.Transparent
+        Me.Title_target1.ForeColor = System.Drawing.Color.Black
+        Me.Title_target1.Location = New System.Drawing.Point(425, 304)
+        Me.Title_target1.Name = "Title_target1"
+        Me.Title_target1.Size = New System.Drawing.Size(152, 13)
+        Me.Title_target1.TabIndex = 385
+        Me.Title_target1.Text = "Target 1"
+        Me.Title_target1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_target1
+        '
+        Me.Panel_target1.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_target1.Controls.Add(Me.valu_target1)
+        Me.Panel_target1.Controls.Add(Me.Select_target1)
+        Me.Panel_target1.Location = New System.Drawing.Point(425, 320)
+        Me.Panel_target1.Name = "Panel_target1"
+        Me.Panel_target1.Size = New System.Drawing.Size(150, 25)
+        Me.Panel_target1.TabIndex = 384
+        '
+        'valu_target1
+        '
+        Me.valu_target1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_target1.Location = New System.Drawing.Point(2, 4)
+        Me.valu_target1.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_target1.Name = "valu_target1"
+        Me.valu_target1.Size = New System.Drawing.Size(146, 16)
+        Me.valu_target1.TabIndex = 186
+        Me.valu_target1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Select_target1
+        '
+        Me.Select_target1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_target1.DisplayMember = "0"
+        Me.Select_target1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_target1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_target1.FormattingEnabled = True
+        Me.Select_target1.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
+        Me.Select_target1.Location = New System.Drawing.Point(2, 2)
+        Me.Select_target1.Name = "Select_target1"
+        Me.Select_target1.Size = New System.Drawing.Size(146, 21)
+        Me.Select_target1.TabIndex = 1
+        '
+        'Panel_target1_foods
+        '
+        Me.Panel_target1_foods.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_target1_foods.Controls.Add(Me.Select_target1_foodUS)
+        Me.Panel_target1_foods.Controls.Add(Me.Select_target1_foodEU)
+        Me.Panel_target1_foods.Location = New System.Drawing.Point(425, 320)
+        Me.Panel_target1_foods.Name = "Panel_target1_foods"
+        Me.Panel_target1_foods.Size = New System.Drawing.Size(150, 25)
+        Me.Panel_target1_foods.TabIndex = 386
+        '
+        'Select_target1_foodUS
+        '
+        Me.Select_target1_foodUS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_target1_foodUS.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_target1_foodUS.FormattingEnabled = True
+        Me.Select_target1_foodUS.Items.AddRange(New Object() {"Nothing", "Ice Cream Cone", "Green Juice", "Apple Pie", "Strawberry", "Sashimi", "Orange Juice", "Chocolate gateau", "Crab", "Moldy Bread", "Chewing Gum", "Fried Chicken", "Quiche", "Mushroom", "Kimchi", "Caviar", "Milk", "Pot Stickers", "Spoiled Milk", "Butter Cookie", "Gummy Candy", "Gratin", "Creamy Stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Tomato soup", "Rice", "Cherries", "Salad", "Sandwich", "Buttered Potato", "Cream Puff", "Strawberry Shortcake", "White Bread", "Watermelon", "Tap Water", "Steak", "Sweet and Sour Pork", "Sausage", "Soft Serve Ice cream", "Tacos", "Fried Rice", "Chocolate", "Chocolate Sundae", "Tempura", "Red chilli pepper", "Corn on the cob", "Doughnut", "Pork Bun", "Banana", "Banana Peel", "Fried Spring Rolls", "Cheeseburger", "Salisbury steak", "Pizza", "Cracker", "Grapes", "French Fries", "Flan", "Blue Cheese", "French Toast", "Lollipop", "Potato Chips", "Drumstick", "Macadamia Nuts", "Spaghetti", "Orange", "Fried Egg", "Peach", "Yakisoba", "Cooked Eggplant", "Hard-boiled egg", "Ramen", "Apple", "Meat and Potato Stew", "Tomato Juice", "Avocado", "Bacon", "Broccoli", "Calamari", "Roasted Chestnuts", "Cotton candy", "Cappuccino", "Coconut", "Corn flakes", "Birthday Cake", "Cheesecake", "Kiwi", "Lasagna", "Macaron", "Meatballs", "Melon", "Napoleon cake", "Muffin", "Raw Oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast Beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid ink spaghetti", "Tiramisu", "Candy Apple", "Truffle", "Roast Turkey", "Waffle", "Yogurt", "Gelatin Snack", "Soda", "Pancakes", "Instant Noodles", "Popcorn", "Durian", "Garlic", "Stuffed Cabbage Roll", "Protein Shake", "Tomato", "Apple Juice", "Mango", "Hot Dog", "Cheese", "Prosciutto", "Pineapple", "Salmon meuniere", "Chilli Prawns", "Peking Duck", "Octopus", "Green Pepper", "Stewed Beef", "Pot-au-feu", "Ruined Meal", "Yakitori", "Fresh Spring Rolls", "Onion Gratin Soup", "Celery", "Smoothie", "Espresso", "Honey", "Gyro", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast Chicken", "Spanish Omelet", "Biscuit", "Smoked Salmon", "Sunflower Seeds", "Chamomile Tea", "Hot chocolate", "Black Forest Gateau", "Prawn Salad", "Pork Cutlet", "Herring", "Licorice", "Mashed Potato", "Pasta pesto", "Danish Pastry", "Porridge", "Beef Jerky", "Brownie", "Carrot Cake", "Chicken Noodle Soup", "Cinnamon Roll", "Clam Chowder", "Coleslaw", "Corn Dog", "Eggnog", "Grits", "Hash browns", "Nachos", "Oatmeal", "Onion Rings", "PB&J", "Pumpkin pie", "Split-pea soup", "Baked beans", "Baked Potato", "Banana Split", "Bubble Tea", "Buffalo Wings", "Sardines", "Cherry Pie", "Chicken Pot Pie", "Elephant ear", "Frozen Yogurt", "Granola Parfait", "Grilled Cheese", "Hard Candy", "Ice-cream sandwich", "Key Lime Pie", "Macaroni and cheese", "Milkshake", "Oatmeal Cookie", "Red Velvet Cake", "S'more", "Spiced Apple Cider", "Stuffing", "Veggie Burger", "Yerba Mate", "Root-Beer Float", "String Cheese", "Brussel Sprouts", "Clotted Cream", "Gingerbread Cake", "Panini", "Fudge", "Fishcakes", "Fish Sticks", "Loco Moco", "Habanero", "Lobster", "Pickles", "Sports Drink", "Popcorn Shrimp", "Frozen Treat", "Fried Tofu", "Saltine Crackers", "Filet Mignon", "Fancy Cupcake", "Barbecue", "Candy corn", "Sushi"})
+        Me.Select_target1_foodUS.Location = New System.Drawing.Point(2, 2)
+        Me.Select_target1_foodUS.Name = "Select_target1_foodUS"
+        Me.Select_target1_foodUS.Size = New System.Drawing.Size(146, 21)
+        Me.Select_target1_foodUS.TabIndex = 252
+        '
+        'Select_target1_foodEU
+        '
+        Me.Select_target1_foodEU.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_target1_foodEU.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_target1_foodEU.FormattingEnabled = True
+        Me.Select_target1_foodEU.Items.AddRange(New Object() {"Nothing", "Apple pie", "Strawberry", "Prawn pilaf", "Green tea", "Omelette", "Orange juice", "Castella cake", "Chocolate gateau", "Mouldy bread", "Fried chicken", "Spaghetti carbonara", "Quiche", "Mushroom", "Caviar", "Milk", "Spoilt milk", "Gummy candy", "Gratin", "Creamy stew", "Crepe", "Grapefruit", "Croissant", "Tea", "Coffee", "Rice", "Croquettes", "Cherries", "Salad", "Sandwich", "Grilled marckerel", "Baked potato", "Strawberry shortcake", "White bread", "Watermelon", "Tap water", "Steak", "Sausage", "Soft serve ice cream", "Tacos", "Chocolate", "Chocolate sundae", "Red chilli pepper", "Tofu", "Corn on the cob", "Doughnut", "Banana", "Banana skin", "Spring rolls", "Cheeseburger", "Rissole", "Pizza", "Cracker", "Grapes", "French fries", "Creme caramel", "Blue cheese", "French toast", "Lollipop", "Crisps", "Drumstick", "Macadamia nuts", "Spaghetti bolognese", "Orange", "Fried egg", "Peach", "Cooked aubergine", "Hard-boiled egg", "Apple", "Meat and patato stew", "Tomato juice", "Avocado", "Bacon", "Broccoli", "Squid rings", "Roast chestnuts", "Candyfloss", "Cappuccino", "Coconut", "Corn flakes", "Birthday cake", "Cheesecake", "Kiwi", "Lasagne", "Macaron", "Meatballs", "Melon", "Custard slice", "Muffin", "Raw oyster", "Paella", "Space food", "Peanuts", "Pear", "Pretzel", "Risotto", "Roast beef", "Salami", "Escargot", "Spaghetti peperoncino", "Squid-ink spaghetti", "Tiramisu", "Toffee apple", "Truffle", "Roast turkey", "Waffle", "Yogurt", "Jelly", "Cola", "Pancakes", "Instant noodles", "Popcorn", "Garlic", "Stuffed cabbage roll", "Protein shake", "Tomato", "Apple juice", "Mango", "Hot dog", "Cheese", "Parma ham", "Pineapple", "Salmon meuniere", "Chilli prawns", "Peking duck", "Octopus", "Green pepper", "Stewed beef", "Handmade chocolate", "Pot-au-feu", "Ruined meal", "Barbecued meat", "Yakitori", "Onion gratin soup", "Celery", "Box of chocolates", "Smoothie", "Expresso", "Honey", "Doner kebab", "Lemonade", "Olives", "Polenta", "Ravioli", "Schnitzel", "Roast chicken", "Tortilla", "Scone", "Smoked salmon", "Sunflower seeds", "Chamomile tea", "Hot chocolate", "Black Forest gateau", "Prawn salad", "Pork cutlet", "Herring", "Liquorice", "Mashed potato", "Pasta pesto", "Danish pastry", "Porridge", "Brussels sprouts", "Clotted cream", "Gingerbread cake", "Panini", "Fudge", "Fishcakes", "Fried seafood", "Olivier salad", "Pain au chocolat", "Yule log", "Roast lamb", "English breakfast", "Marron", "Pandoro", "Panettone", "Beans on toast", "Cherimoya", "Bacalao", "Cornish pasty", "Turron", "Fried sardines", "Bundt cake", "Roast duck", "Hake fillet", "Natillas", "Custard pastry", "Rollmop herrings", "Ham and asparagus", "Baguette", "Borscht", "Cannoli", "Chilli con carne", "Chicken tikka masala", "Couscous", "Creme brulee", "Fish and chips", "Gazpacho", "Mozzarella salad", "Mussels", "Minestrone", "Panna cotta", "Beef bourguignon", "Marzipan fruit", "Gnocchi", "Greek salad", "Hummus", "Melanzane parmigiana", "Mince pie", "Rice pudding", "Sauerkraut", "Christmas pudding", "Souffle", "Churros", "Iberian ham", "Dates", "Mozzarella", "Pistachios", "Pork pie", "Walnuts", "Grated carrot", "Ratatouille", "Sparkling water", "Spinach", "Tapas", "Bread with chocolate spread", "Courgette", "Gherkins", "Saltimbocca", "Profiteroles", "Mint sweet", "Ice cream cone"})
+        Me.Select_target1_foodEU.Location = New System.Drawing.Point(2, 2)
+        Me.Select_target1_foodEU.Name = "Select_target1_foodEU"
+        Me.Select_target1_foodEU.Size = New System.Drawing.Size(146, 21)
+        Me.Select_target1_foodEU.TabIndex = 251
+        '
+        'Title_target2
+        '
+        Me.Title_target2.BackColor = System.Drawing.Color.Transparent
+        Me.Title_target2.ForeColor = System.Drawing.Color.Black
+        Me.Title_target2.Location = New System.Drawing.Point(425, 386)
+        Me.Title_target2.Name = "Title_target2"
+        Me.Title_target2.Size = New System.Drawing.Size(153, 13)
+        Me.Title_target2.TabIndex = 388
+        Me.Title_target2.Text = "Target 2"
+        Me.Title_target2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel_target2
+        '
+        Me.Panel_target2.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
+        Me.Panel_target2.Controls.Add(Me.valu_target2)
+        Me.Panel_target2.Controls.Add(Me.Select_target2)
+        Me.Panel_target2.Location = New System.Drawing.Point(425, 402)
+        Me.Panel_target2.Name = "Panel_target2"
+        Me.Panel_target2.Size = New System.Drawing.Size(150, 25)
+        Me.Panel_target2.TabIndex = 387
+        '
+        'valu_target2
+        '
+        Me.valu_target2.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_target2.Location = New System.Drawing.Point(2, 4)
+        Me.valu_target2.Maximum = New Decimal(New Integer() {65535, 0, 0, 0})
+        Me.valu_target2.Name = "valu_target2"
+        Me.valu_target2.Size = New System.Drawing.Size(146, 16)
+        Me.valu_target2.TabIndex = 186
+        Me.valu_target2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Select_target2
+        '
+        Me.Select_target2.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Select_target2.DisplayMember = "0"
+        Me.Select_target2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Select_target2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Select_target2.FormattingEnabled = True
+        Me.Select_target2.Items.AddRange(New Object() {"Nothing", "Mii 1", "Mii 2", "Mii 3", "Mii 4", "Mii 5", "Mii 6", "Mii 7", "Mii 8", "Mii 9", "Mii 10", "Mii 11", "Mii 12", "Mii 13", "Mii 14", "Mii 15", "Mii 16", "Mii 17", "Mii 18", "Mii 19", "Mii 20", "Mii 21", "Mii 22", "Mii 23", "Mii 24", "Mii 25", "Mii 26", "Mii 27", "Mii 28", "Mii 29", "Mii 30", "Mii 31", "Mii 32", "Mii 33", "Mii 34", "Mii 35", "Mii 36", "Mii 37", "Mii 38", "Mii 39", "Mii 40", "Mii 41", "Mii 42", "Mii 43", "Mii 44", "Mii 45", "Mii 46", "Mii 47", "Mii 48", "Mii 49", "Mii 50", "Mii 51", "Mii 52", "Mii 53", "Mii 54", "Mii 55", "Mii 56", "Mii 57", "Mii 58", "Mii 59", "Mii 60", "Mii 61", "Mii 62", "Mii 63", "Mii 64", "Mii 65", "Mii 66", "Mii 67", "Mii 68", "Mii 69", "Mii 70", "Mii 71", "Mii 72", "Mii 73", "Mii 74", "Mii 75", "Mii 76", "Mii 77", "Mii 78", "Mii 79", "Mii 80", "Mii 81", "Mii 82", "Mii 83", "Mii 84", "Mii 85", "Mii 86", "Mii 87", "Mii 88", "Mii 89", "Mii 90", "Mii 91", "Mii 92", "Mii 93", "Mii 94", "Mii 95", "Mii 96", "Mii 97", "Mii 98", "Mii 99", "Mii 100"})
+        Me.Select_target2.Location = New System.Drawing.Point(2, 2)
+        Me.Select_target2.Name = "Select_target2"
+        Me.Select_target2.Size = New System.Drawing.Size(146, 21)
+        Me.Select_target2.TabIndex = 1
+        '
+        'infobubble_target1
+        '
+        Me.infobubble_target1.BackColor = System.Drawing.Color.Transparent
+        Me.infobubble_target1.BackgroundImage = CType(resources.GetObject("infobubble_target1.BackgroundImage"), System.Drawing.Image)
+        Me.infobubble_target1.Controls.Add(Me.Text_infobubble_target1)
+        Me.infobubble_target1.Location = New System.Drawing.Point(473, 349)
+        Me.infobubble_target1.Name = "infobubble_target1"
+        Me.infobubble_target1.Size = New System.Drawing.Size(386, 31)
+        Me.infobubble_target1.TabIndex = 389
+        Me.infobubble_target1.Visible = False
+        '
+        'Text_infobubble_target1
+        '
+        Me.Text_infobubble_target1.BackColor = System.Drawing.Color.Transparent
+        Me.Text_infobubble_target1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Text_infobubble_target1.Location = New System.Drawing.Point(0, 6)
+        Me.Text_infobubble_target1.Name = "Text_infobubble_target1"
+        Me.Text_infobubble_target1.Size = New System.Drawing.Size(386, 25)
+        Me.Text_infobubble_target1.TabIndex = 168
+        Me.Text_infobubble_target1.Text = "Musn't have a special someone"
+        Me.Text_infobubble_target1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'infobubble_target2
+        '
+        Me.infobubble_target2.BackColor = System.Drawing.Color.Transparent
+        Me.infobubble_target2.BackgroundImage = CType(resources.GetObject("infobubble_target2.BackgroundImage"), System.Drawing.Image)
+        Me.infobubble_target2.Controls.Add(Me.Text_infobubble_target2)
+        Me.infobubble_target2.Location = New System.Drawing.Point(473, 433)
+        Me.infobubble_target2.Name = "infobubble_target2"
+        Me.infobubble_target2.Size = New System.Drawing.Size(386, 31)
+        Me.infobubble_target2.TabIndex = 390
+        Me.infobubble_target2.Visible = False
+        '
+        'Text_infobubble_target2
+        '
+        Me.Text_infobubble_target2.BackColor = System.Drawing.Color.Transparent
+        Me.Text_infobubble_target2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Text_infobubble_target2.Location = New System.Drawing.Point(0, 6)
+        Me.Text_infobubble_target2.Name = "Text_infobubble_target2"
+        Me.Text_infobubble_target2.Size = New System.Drawing.Size(386, 25)
+        Me.Text_infobubble_target2.TabIndex = 168
+        Me.Text_infobubble_target2.Text = "Must be target's 1 friends"
+        Me.Text_infobubble_target2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Fea_interacconditions
+        '
+        Me.Fea_interacconditions.BackColor = System.Drawing.Color.Transparent
+        Me.Fea_interacconditions.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_interacconditions
+        Me.Fea_interacconditions.Controls.Add(Me.Title_interacconditions)
+        Me.Fea_interacconditions.Controls.Add(Me.Text_interacconditions)
+        Me.Fea_interacconditions.Location = New System.Drawing.Point(455, 481)
+        Me.Fea_interacconditions.Name = "Fea_interacconditions"
+        Me.Fea_interacconditions.Size = New System.Drawing.Size(453, 152)
+        Me.Fea_interacconditions.TabIndex = 391
+        '
+        'Title_interacconditions
+        '
+        Me.Title_interacconditions.BackColor = System.Drawing.Color.Transparent
+        Me.Title_interacconditions.ForeColor = System.Drawing.Color.White
+        Me.Title_interacconditions.Location = New System.Drawing.Point(100, 3)
+        Me.Title_interacconditions.Name = "Title_interacconditions"
+        Me.Title_interacconditions.Size = New System.Drawing.Size(254, 16)
+        Me.Title_interacconditions.TabIndex = 384
+        Me.Title_interacconditions.Text = "This interaction don't show if :"
+        Me.Title_interacconditions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Text_interacconditions
+        '
+        Me.Text_interacconditions.BackColor = System.Drawing.Color.Transparent
+        Me.Text_interacconditions.Location = New System.Drawing.Point(5, 22)
+        Me.Text_interacconditions.Name = "Text_interacconditions"
+        Me.Text_interacconditions.Size = New System.Drawing.Size(443, 125)
+        Me.Text_interacconditions.TabIndex = 379
+        Me.Text_interacconditions.Text = "-"
+        Me.Text_interacconditions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Title_interactionpattern
+        '
+        Me.Title_interactionpattern.BackColor = System.Drawing.Color.Transparent
+        Me.Title_interactionpattern.ForeColor = System.Drawing.Color.Black
+        Me.Title_interactionpattern.Location = New System.Drawing.Point(425, 217)
+        Me.Title_interactionpattern.Name = "Title_interactionpattern"
+        Me.Title_interactionpattern.Size = New System.Drawing.Size(513, 13)
+        Me.Title_interactionpattern.TabIndex = 392
+        Me.Title_interactionpattern.Text = "Interaction pattern"
+        Me.Title_interactionpattern.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'valu_enddateinterac
+        '
+        Me.valu_enddateinterac.BackColor = System.Drawing.Color.LightCyan
+        Me.valu_enddateinterac.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.valu_enddateinterac.Hexadecimal = True
+        Me.valu_enddateinterac.Location = New System.Drawing.Point(728, 402)
+        Me.valu_enddateinterac.Maximum = New Decimal(New Integer() {-1, 0, 0, 0})
+        Me.valu_enddateinterac.Name = "valu_enddateinterac"
+        Me.valu_enddateinterac.Size = New System.Drawing.Size(120, 16)
+        Me.valu_enddateinterac.TabIndex = 393
+        Me.valu_enddateinterac.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label3
+        '
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Location = New System.Drawing.Point(698, 386)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(180, 13)
+        Me.Label3.TabIndex = 394
+        Me.Label3.Text = "End interaction date (in seconds)"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'TLSE_interactions
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_interactions
-        Me.ClientSize = New System.Drawing.Size(800, 720)
+        Me.ClientSize = New System.Drawing.Size(950, 688)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.valu_enddateinterac)
+        Me.Controls.Add(Me.Fea_interacconditions)
+        Me.Controls.Add(Me.infobubble_target2)
+        Me.Controls.Add(Me.infobubble_target1)
+        Me.Controls.Add(Me.Title_target2)
+        Me.Controls.Add(Me.Panel_target2)
+        Me.Controls.Add(Me.Title_target1)
+        Me.Controls.Add(Me.Panel_target1)
+        Me.Controls.Add(Me.Panel_target1_foods)
+        Me.Controls.Add(Me.Title_emotions)
+        Me.Controls.Add(Me.Panel26)
+        Me.Controls.Add(Me.infobubble_interaction)
+        Me.Controls.Add(Me.Icon_interaction)
+        Me.Controls.Add(Me.Text_lastsavedate)
+        Me.Controls.Add(Me.valu_lastsavedate)
+        Me.Controls.Add(Me.Panel27)
+        Me.Controls.Add(Me.valu_interaction)
         Me.Controls.Add(Me.Warning_miiapartment)
         Me.Controls.Add(Me.Panel_selectmii)
         Me.Controls.Add(Me.Panel3)
@@ -3365,6 +3830,7 @@ Partial Class TLSE_interactions
         Me.Controls.Add(Me.TLSE_header)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
+        Me.Controls.Add(Me.Title_interactionpattern)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_interactions"
@@ -3606,6 +4072,22 @@ Partial Class TLSE_interactions
         Me.Panel4.ResumeLayout(False)
         CType(Me.Icon_selectmii, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Warning_miiapartment, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.valu_interaction, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel27.ResumeLayout(False)
+        CType(Me.valu_lastsavedate, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.infobubble_interaction.ResumeLayout(False)
+        CType(Me.Icon_interaction, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel26.ResumeLayout(False)
+        CType(Me.valu_emotions, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_target1.ResumeLayout(False)
+        CType(Me.valu_target1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel_target1_foods.ResumeLayout(False)
+        Me.Panel_target2.ResumeLayout(False)
+        CType(Me.valu_target2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.infobubble_target1.ResumeLayout(False)
+        Me.infobubble_target2.ResumeLayout(False)
+        Me.Fea_interacconditions.ResumeLayout(False)
+        CType(Me.valu_enddateinterac, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -3857,4 +4339,38 @@ Partial Class TLSE_interactions
     Friend WithEvents valu_apartmentmii_98 As NumericUpDown
     Friend WithEvents valu_apartmentmii_97 As NumericUpDown
     Friend WithEvents Label2 As Label
+    Friend WithEvents valu_interaction As NumericUpDown
+    Friend WithEvents Panel27 As Panel
+    Friend WithEvents Select_Interaction_USA As ComboBox
+    Friend WithEvents Select_interaction As ComboBox
+    Friend WithEvents Text_lastsavedate As Label
+    Friend WithEvents valu_lastsavedate As NumericUpDown
+    Friend WithEvents infobubble_interaction As Panel
+    Friend WithEvents Text_infobubble_interaction As Label
+    Friend WithEvents Icon_interaction As PictureBox
+    Friend WithEvents Title_emotions As Label
+    Friend WithEvents Panel26 As Panel
+    Friend WithEvents valu_emotions As NumericUpDown
+    Friend WithEvents Select_emotions As ComboBox
+    Friend WithEvents Title_target1 As Label
+    Friend WithEvents Panel_target1 As Panel
+    Friend WithEvents valu_target1 As NumericUpDown
+    Friend WithEvents Select_target1 As ComboBox
+    Friend WithEvents Panel_target1_foods As Panel
+    Friend WithEvents Select_target1_foodUS As ComboBox
+    Friend WithEvents Select_target1_foodEU As ComboBox
+    Friend WithEvents Title_target2 As Label
+    Friend WithEvents Panel_target2 As Panel
+    Friend WithEvents valu_target2 As NumericUpDown
+    Friend WithEvents Select_target2 As ComboBox
+    Friend WithEvents infobubble_target1 As Panel
+    Friend WithEvents Text_infobubble_target1 As Label
+    Friend WithEvents infobubble_target2 As Panel
+    Friend WithEvents Text_infobubble_target2 As Label
+    Friend WithEvents Fea_interacconditions As Panel
+    Friend WithEvents Title_interacconditions As Label
+    Friend WithEvents Text_interacconditions As Label
+    Friend WithEvents Title_interactionpattern As Label
+    Friend WithEvents valu_enddateinterac As NumericUpDown
+    Friend WithEvents Label3 As Label
 End Class

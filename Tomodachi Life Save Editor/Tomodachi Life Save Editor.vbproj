@@ -383,6 +383,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\bg_interacconditions.png" />
     <None Include="Resources\icon_interaction_tbluej.png" />
     <None Include="Resources\icon_interaction_tblue.png" />
     <None Include="Resources\icon_interaction_unknow.png" />

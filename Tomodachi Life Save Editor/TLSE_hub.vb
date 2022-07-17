@@ -309,11 +309,16 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_interactions_Click(sender As Object, e As EventArgs) Handles Text_menu_interactions.Click
-        If TLSE_logo_update.Visible = True Then
-            TLSE_interactions.TLSE_logo_update.Visible = True
+        If Filever_text.Text = "JP" Or Filever_text.Text = "KR" Then
+            TLSE_dialog.Text_TLSE_dialog.Text = "This section is not available in your region game"
+            TLSE_dialog.ShowDialog()
+        Else
+            If TLSE_logo_update.Visible = True Then
+                TLSE_interactions.TLSE_logo_update.Visible = True
+            End If
+            TLSE_interactions.Show()
+            Me.Close()
         End If
-        TLSE_interactions.Show()
-        Me.Close()
     End Sub
 
     Private Sub Text_menu_interactions_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_interactions.MouseMove
