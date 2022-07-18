@@ -147,6 +147,12 @@
     <Compile Include="TLSE_islandsettings.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_issueslegends.Designer.vb">
+      <DependentUpon>TLSE_issueslegends.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_issueslegends.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_itemsedit.Designer.vb">
       <DependentUpon>TLSE_itemsedit.vb</DependentUpon>
     </Compile>
@@ -256,6 +262,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_islandsettings.resx">
       <DependentUpon>TLSE_islandsettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_issueslegends.resx">
+      <DependentUpon>TLSE_issueslegends.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_itemsedit.resx">
       <DependentUpon>TLSE_itemsedit.vb</DependentUpon>
@@ -383,6 +392,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\tab_issueslegends_base.png" />
+    <None Include="Resources\tab_issueslegends.png" />
+    <None Include="Resources\bg_issueslegends.png" />
     <None Include="Resources\bg_interacconditions.png" />
     <None Include="Resources\icon_interaction_tbluej.png" />
     <None Include="Resources\icon_interaction_tblue.png" />

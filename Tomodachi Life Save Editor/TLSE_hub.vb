@@ -94,7 +94,11 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_issueslegend_Click(sender As Object, e As EventArgs) Handles Text_menu_issueslegend.Click
-
+        If TLSE_logo_update.Visible = True Then
+            TLSE_issueslegends.TLSE_logo_update.Visible = True
+        End If
+        TLSE_issueslegends.Show()
+        Me.Close()
     End Sub
 
     Private Sub Text_menu_issueslegend_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_issueslegend.MouseMove
@@ -551,7 +555,7 @@ Public Class TLSE_hub
             Setting_filepath.Checked = My.Settings.Para_path
             Setting_spesymb.Checked = My.Settings.Para_spesymb
             Select_language.SelectedItem = My.Settings.Para_language
-            If My.Settings.Para_language = Nothing Then
+            If Select_language.SelectedItem = Nothing Then
                 Select_language.SelectedItem = Select_language.Items.Item(0)
             End If
             Select_music.SelectedItem = My.Settings.Para_selmusic
@@ -761,5 +765,9 @@ Public Class TLSE_hub
                 TLSE_dialog.ShowDialog()
             End If
         End Try
+    End Sub
+
+    Private Sub text_issues_Click(sender As Object, e As EventArgs) Handles text_issues.Click
+        My.Settings.Para_issue = Nothing
     End Sub
 End Class

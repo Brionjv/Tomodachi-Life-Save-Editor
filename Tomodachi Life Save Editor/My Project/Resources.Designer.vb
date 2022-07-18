@@ -793,6 +793,16 @@ Namespace My.Resources
         '''<summary>
         '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property bg_issueslegends() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_issueslegends", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property bg_itemspanel() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("bg_itemspanel", resourceCulture)
@@ -4026,6 +4036,26 @@ Namespace My.Resources
         Friend ReadOnly Property tab_islandedit_base() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("tab_islandedit_base", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property tab_issueslegends() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tab_issueslegends", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property tab_issueslegends_base() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("tab_issueslegends_base", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

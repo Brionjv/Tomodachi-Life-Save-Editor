@@ -8488,6 +8488,7 @@ Public Class TLSE_interactions
         Select_interaction.SelectedItem = Select_interaction.Items.Item(0)
         Select_target1.SelectedItem = Select_target1.Items.Item(0)
         Select_target2.SelectedItem = Select_target2.Items.Item(0)
+        Select_emotions.SelectedItem = Select_emotions.Items.Item(0)
         Readinteraction()
     End Sub
 
@@ -11183,10 +11184,1151 @@ Public Class TLSE_interactions
     End Sub
 
     Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
+        If Select_interaction.SelectedItem = Select_interaction.Items.Item(0) Then
+            valu_enddateinterac.Value = 0
+        Else
+            valu_enddateinterac.Value = valu_lastsavedate.Value + &H30000
+        End If
         Writeinteraction()
     End Sub
 
     Public Sub Writeinteraction()
+        Try
+            Dim Writedata As New PackageIO.Writer(savedataArc, PackageIO.Endian.Little)
+            If Select_mii.SelectedItem = Select_mii.Items.Item(0) Then
+                Writedata.Position = Emotion_1
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_1
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_1
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_1
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_1
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(1) Then
+                Writedata.Position = Emotion_2
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_2
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_2
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_2
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_2
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(2) Then
+                Writedata.Position = Emotion_3
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_3
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_3
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_3
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_3
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(3) Then
+                Writedata.Position = Emotion_4
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_4
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_4
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_4
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_4
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(4) Then
+                Writedata.Position = Emotion_5
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_5
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_5
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_5
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_5
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(5) Then
+                Writedata.Position = Emotion_6
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_6
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_6
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_6
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_6
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(6) Then
+                Writedata.Position = Emotion_7
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_7
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_7
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_7
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_7
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(7) Then
+                Writedata.Position = Emotion_8
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_8
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_8
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_8
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_8
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(8) Then
+                Writedata.Position = Emotion_9
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_9
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_9
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_9
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_9
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(9) Then
+                Writedata.Position = Emotion_10
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_10
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_10
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_10
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_10
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(10) Then
+                Writedata.Position = Emotion_11
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_11
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_11
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_11
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_11
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(11) Then
+                Writedata.Position = Emotion_12
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_12
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_12
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_12
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_12
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(12) Then
+                Writedata.Position = Emotion_13
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_13
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_13
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_13
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_13
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(13) Then
+                Writedata.Position = Emotion_14
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_14
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_14
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_14
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_14
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(14) Then
+                Writedata.Position = Emotion_15
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_15
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_15
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_15
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_15
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(15) Then
+                Writedata.Position = Emotion_16
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_16
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_16
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_16
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_16
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(16) Then
+                Writedata.Position = Emotion_17
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_17
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_17
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_17
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_17
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(17) Then
+                Writedata.Position = Emotion_18
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_18
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_18
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_18
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_18
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(18) Then
+                Writedata.Position = Emotion_19
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_19
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_19
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_19
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_19
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(19) Then
+                Writedata.Position = Emotion_20
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_20
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_20
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_20
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_20
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(20) Then
+                Writedata.Position = Emotion_21
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_21
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_21
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_21
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_21
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(21) Then
+                Writedata.Position = Emotion_22
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_22
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_22
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_22
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_22
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(22) Then
+                Writedata.Position = Emotion_23
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_23
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_23
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_23
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_23
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(23) Then
+                Writedata.Position = Emotion_24
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_24
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_24
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_24
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_24
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(24) Then
+                Writedata.Position = Emotion_25
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_25
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_25
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_25
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_25
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(25) Then
+                Writedata.Position = Emotion_26
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_26
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_26
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_26
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_26
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(26) Then
+                Writedata.Position = Emotion_27
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_27
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_27
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_27
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_27
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(27) Then
+                Writedata.Position = Emotion_28
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_28
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_28
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_28
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_28
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(28) Then
+                Writedata.Position = Emotion_29
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_29
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_29
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_29
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_29
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(29) Then
+                Writedata.Position = Emotion_30
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_30
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_30
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_30
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_30
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(30) Then
+                Writedata.Position = Emotion_31
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_31
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_31
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_31
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_31
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(31) Then
+                Writedata.Position = Emotion_32
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_32
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_32
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_32
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_32
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(32) Then
+                Writedata.Position = Emotion_33
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_33
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_33
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_33
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_33
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(33) Then
+                Writedata.Position = Emotion_34
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_34
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_34
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_34
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_34
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(34) Then
+                Writedata.Position = Emotion_35
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_35
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_35
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_35
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_35
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(35) Then
+                Writedata.Position = Emotion_36
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_36
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_36
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_36
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_36
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(36) Then
+                Writedata.Position = Emotion_37
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_37
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_37
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_37
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_37
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(37) Then
+                Writedata.Position = Emotion_38
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_38
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_38
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_38
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_38
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(38) Then
+                Writedata.Position = Emotion_39
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_39
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_39
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_39
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_39
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(39) Then
+                Writedata.Position = Emotion_40
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_40
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_40
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_40
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_40
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(40) Then
+                Writedata.Position = Emotion_41
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_41
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_41
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_41
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_41
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(41) Then
+                Writedata.Position = Emotion_42
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_42
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_42
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_42
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_42
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(42) Then
+                Writedata.Position = Emotion_43
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_43
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_43
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_43
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_43
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(43) Then
+                Writedata.Position = Emotion_44
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_44
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_44
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_44
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_44
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(44) Then
+                Writedata.Position = Emotion_45
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_45
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_45
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_45
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_45
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(45) Then
+                Writedata.Position = Emotion_46
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_46
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_46
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_46
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_46
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(46) Then
+                Writedata.Position = Emotion_47
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_47
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_47
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_47
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_47
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(47) Then
+                Writedata.Position = Emotion_48
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_48
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_48
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_48
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_48
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(48) Then
+                Writedata.Position = Emotion_49
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_49
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_49
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_49
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_49
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(49) Then
+                Writedata.Position = Emotion_50
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_50
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_50
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_50
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_50
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(50) Then
+                Writedata.Position = Emotion_51
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_51
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_51
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_51
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_51
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(51) Then
+                Writedata.Position = Emotion_52
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_52
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_52
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_52
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_52
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(52) Then
+                Writedata.Position = Emotion_53
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_53
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_53
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_53
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_53
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(53) Then
+                Writedata.Position = Emotion_54
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_54
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_54
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_54
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_54
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(54) Then
+                Writedata.Position = Emotion_55
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_55
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_55
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_55
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_55
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(55) Then
+                Writedata.Position = Emotion_56
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_56
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_56
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_56
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_56
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(56) Then
+                Writedata.Position = Emotion_57
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_57
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_57
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_57
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_57
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(57) Then
+                Writedata.Position = Emotion_58
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_58
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_58
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_58
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_58
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(58) Then
+                Writedata.Position = Emotion_59
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_59
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_59
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_59
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_59
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(59) Then
+                Writedata.Position = Emotion_60
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_60
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_60
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_60
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_60
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(60) Then
+                Writedata.Position = Emotion_61
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_61
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_61
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_61
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_61
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(61) Then
+                Writedata.Position = Emotion_62
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_62
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_62
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_62
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_62
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(62) Then
+                Writedata.Position = Emotion_63
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_63
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_63
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_63
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_63
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(63) Then
+                Writedata.Position = Emotion_64
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_64
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_64
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_64
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_64
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(64) Then
+                Writedata.Position = Emotion_65
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_65
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_65
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_65
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_65
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(65) Then
+                Writedata.Position = Emotion_66
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_66
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_66
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_66
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_66
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(66) Then
+                Writedata.Position = Emotion_67
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_67
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_67
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_67
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_67
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(67) Then
+                Writedata.Position = Emotion_68
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_68
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_68
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_68
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_68
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(68) Then
+                Writedata.Position = Emotion_69
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_69
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_69
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_69
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_69
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(69) Then
+                Writedata.Position = Emotion_70
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_70
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_70
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_70
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_70
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(70) Then
+                Writedata.Position = Emotion_71
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_71
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_71
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_71
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_71
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(71) Then
+                Writedata.Position = Emotion_72
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_72
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_72
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_72
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_72
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(72) Then
+                Writedata.Position = Emotion_73
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_73
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_73
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_73
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_73
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(73) Then
+                Writedata.Position = Emotion_74
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_74
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_74
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_74
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_74
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(74) Then
+                Writedata.Position = Emotion_75
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_75
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_75
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_75
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_75
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(75) Then
+                Writedata.Position = Emotion_76
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_76
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_76
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_76
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_76
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(76) Then
+                Writedata.Position = Emotion_77
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_77
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_77
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_77
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_77
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(77) Then
+                Writedata.Position = Emotion_78
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_78
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_78
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_78
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_78
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(78) Then
+                Writedata.Position = Emotion_79
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_79
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_79
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_79
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_79
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(79) Then
+                Writedata.Position = Emotion_80
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_80
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_80
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_80
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_80
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(80) Then
+                Writedata.Position = Emotion_81
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_81
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_81
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_81
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_81
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(81) Then
+                Writedata.Position = Emotion_82
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_82
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_82
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_82
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_82
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(82) Then
+                Writedata.Position = Emotion_83
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_83
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_83
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_83
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_83
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(83) Then
+                Writedata.Position = Emotion_84
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_84
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_84
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_84
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_84
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(84) Then
+                Writedata.Position = Emotion_85
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_85
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_85
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_85
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_85
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(85) Then
+                Writedata.Position = Emotion_86
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_86
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_86
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_86
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_86
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(86) Then
+                Writedata.Position = Emotion_87
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_87
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_87
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_87
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_87
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(87) Then
+                Writedata.Position = Emotion_88
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_88
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_88
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_88
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_88
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(88) Then
+                Writedata.Position = Emotion_89
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_89
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_89
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_89
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_89
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(89) Then
+                Writedata.Position = Emotion_90
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_90
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_90
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_90
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_90
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(90) Then
+                Writedata.Position = Emotion_91
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_91
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_91
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_91
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_91
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(91) Then
+                Writedata.Position = Emotion_92
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_92
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_92
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_92
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_92
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(92) Then
+                Writedata.Position = Emotion_93
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_93
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_93
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_93
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_93
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(93) Then
+                Writedata.Position = Emotion_94
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_94
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_94
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_94
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_94
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(94) Then
+                Writedata.Position = Emotion_95
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_95
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_95
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_95
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_95
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(95) Then
+                Writedata.Position = Emotion_96
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_96
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_96
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_96
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_96
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(96) Then
+                Writedata.Position = Emotion_97
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_97
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_97
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_97
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_97
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(97) Then
+                Writedata.Position = Emotion_98
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_98
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_98
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_98
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_98
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(98) Then
+                Writedata.Position = Emotion_99
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_99
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_99
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_99
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_99
+                Writedata.WriteUInt16(valu_target2.Value)
+            ElseIf Select_mii.SelectedItem = Select_mii.Items.Item(99) Then
+                Writedata.Position = Emotion_100
+                Writedata.WriteInt8(valu_emotions.Value)
+                Writedata.Position = Endinteraction_100
+                Writedata.WriteUInt32(valu_enddateinterac.Value)
+                Writedata.Position = Interaction_100
+                Writedata.WriteUInt16(valu_interaction.Value)
+                Writedata.Position = Target1_100
+                Writedata.WriteUInt16(valu_target1.Value)
+                Writedata.Position = Target2_100
+                Writedata.WriteUInt16(valu_target2.Value)
+            End If
+            TLSE_dialog.Text_TLSE_dialog.Text = "This interaction has been successfully edited"
+            TLSE_dialog.ShowDialog()
+        Catch ex As Exception
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to edit this interaction"
+            TLSE_dialog.ShowDialog()
+        End Try
+    End Sub
 
+    Private Sub valu_emotions_ValueChanged(sender As Object, e As EventArgs) Handles valu_emotions.ValueChanged
+        If valu_emotions.Value = 0 Then
+            Select_emotions.SelectedItem = Select_emotions.Items.Item(0)
+        ElseIf valu_emotions.Value = 1 Then
+            Select_emotions.SelectedItem = Select_emotions.Items.Item(1)
+        ElseIf valu_emotions.Value = 2 Then
+            Select_emotions.SelectedItem = Select_emotions.Items.Item(2)
+        ElseIf valu_emotions.Value = 3 Then
+            Select_emotions.SelectedItem = Select_emotions.Items.Item(3)
+        ElseIf valu_emotions.Value = 4 Then
+            Select_emotions.SelectedItem = Select_emotions.Items.Item(4)
+        End If
+    End Sub
+
+    Private Sub Select_emotions_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Select_emotions.SelectedIndexChanged
+        If Select_emotions.SelectedItem = Select_emotions.Items.Item(0) Then
+            valu_emotions.Value = 0
+        ElseIf Select_emotions.SelectedItem = Select_emotions.Items.Item(1) Then
+            valu_emotions.Value = 1
+        ElseIf Select_emotions.SelectedItem = Select_emotions.Items.Item(2) Then
+            valu_emotions.Value = 2
+        ElseIf Select_emotions.SelectedItem = Select_emotions.Items.Item(3) Then
+            valu_emotions.Value = 3
+        ElseIf Select_emotions.SelectedItem = Select_emotions.Items.Item(4) Then
+            valu_emotions.Value = 4
+        End If
     End Sub
 End Class

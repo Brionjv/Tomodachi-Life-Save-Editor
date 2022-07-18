@@ -30,3 +30,5 @@ C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Edito
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_islandinfo.resources
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_islandsettings.resources
 C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_savefilesettings.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_interactions.resources
+C:\Users\brice\source\repos\Tomodachi Life Save Editor\Tomodachi Life Save Editor\obj\Release\Tomodachi_Life_Save_Editor.TLSE_issueslegends.resources

@@ -310,7 +310,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_issueslegend
         '
-        Me.Text_menu_issueslegend.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_issueslegend.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_issueslegend.ForeColor = System.Drawing.Color.White
         Me.Text_menu_issueslegend.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_issueslegend.Name = "Text_menu_issueslegend"
