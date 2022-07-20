@@ -1002,7 +1002,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_1.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_1.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_1.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_1.Image = My.Resources.icon_interaction_pink
@@ -1031,7 +1031,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_2.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_2.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_2.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_2.Image = My.Resources.icon_interaction_pink
@@ -1060,7 +1060,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_3.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_3.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_3.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_3.Image = My.Resources.icon_interaction_pink
@@ -1089,7 +1089,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_4.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_4.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_4.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_4.Image = My.Resources.icon_interaction_pink
@@ -1118,7 +1118,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_5.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_5.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_5.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_5.Image = My.Resources.icon_interaction_pink
@@ -1147,7 +1147,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_6.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_6.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_6.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_6.Image = My.Resources.icon_interaction_pink
@@ -1176,7 +1176,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_7.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_7.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_7.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_7.Image = My.Resources.icon_interaction_pink
@@ -1205,7 +1205,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_8.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_8.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_8.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_8.Image = My.Resources.icon_interaction_pink
@@ -1234,7 +1234,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_9.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_9.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_9.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_9.Image = My.Resources.icon_interaction_pink
@@ -1263,7 +1263,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_10.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_10.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_10.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_10.Image = My.Resources.icon_interaction_pink
@@ -1292,7 +1292,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_11.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_11.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_11.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_11.Image = My.Resources.icon_interaction_pink
@@ -1321,7 +1321,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_12.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_12.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_12.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_12.Image = My.Resources.icon_interaction_pink
@@ -1350,7 +1350,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_13.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_13.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_13.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_13.Image = My.Resources.icon_interaction_pink
@@ -1379,7 +1379,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_14.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_14.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_14.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_14.Image = My.Resources.icon_interaction_pink
@@ -1408,7 +1408,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_15.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_15.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_15.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_15.Image = My.Resources.icon_interaction_pink
@@ -1437,7 +1437,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_16.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_16.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_16.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_16.Image = My.Resources.icon_interaction_pink
@@ -1466,7 +1466,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_17.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_17.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_17.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_17.Image = My.Resources.icon_interaction_pink
@@ -1495,7 +1495,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_18.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_18.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_18.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_18.Image = My.Resources.icon_interaction_pink
@@ -1524,7 +1524,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_19.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_19.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_19.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_19.Image = My.Resources.icon_interaction_pink
@@ -1553,7 +1553,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_20.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_20.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_20.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_20.Image = My.Resources.icon_interaction_pink
@@ -1582,7 +1582,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_21.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_21.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_21.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_21.Image = My.Resources.icon_interaction_pink
@@ -1611,7 +1611,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_22.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_22.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_22.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_22.Image = My.Resources.icon_interaction_pink
@@ -1640,7 +1640,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_23.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_23.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_23.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_23.Image = My.Resources.icon_interaction_pink
@@ -1669,7 +1669,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_24.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_24.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_24.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_24.Image = My.Resources.icon_interaction_pink
@@ -1698,7 +1698,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_25.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_25.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_25.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_25.Image = My.Resources.icon_interaction_pink
@@ -1727,7 +1727,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_26.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_26.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_26.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_26.Image = My.Resources.icon_interaction_pink
@@ -1756,7 +1756,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_27.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_27.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_27.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_27.Image = My.Resources.icon_interaction_pink
@@ -1785,7 +1785,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_28.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_28.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_28.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_28.Image = My.Resources.icon_interaction_pink
@@ -1814,7 +1814,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_29.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_29.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_29.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_29.Image = My.Resources.icon_interaction_pink
@@ -1843,7 +1843,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_30.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_30.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_30.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_30.Image = My.Resources.icon_interaction_pink
@@ -1872,7 +1872,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_31.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_31.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_31.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_31.Image = My.Resources.icon_interaction_pink
@@ -1901,7 +1901,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_32.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_32.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_32.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_32.Image = My.Resources.icon_interaction_pink
@@ -1930,7 +1930,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_33.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_33.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_33.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_33.Image = My.Resources.icon_interaction_pink
@@ -1959,7 +1959,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_34.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_34.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_34.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_34.Image = My.Resources.icon_interaction_pink
@@ -1988,7 +1988,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_35.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_35.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_35.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_35.Image = My.Resources.icon_interaction_pink
@@ -2017,7 +2017,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_36.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_36.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_36.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_36.Image = My.Resources.icon_interaction_pink
@@ -2046,7 +2046,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_37.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_37.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_37.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_37.Image = My.Resources.icon_interaction_pink
@@ -2075,7 +2075,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_38.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_38.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_38.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_38.Image = My.Resources.icon_interaction_pink
@@ -2104,7 +2104,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_39.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_39.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_39.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_39.Image = My.Resources.icon_interaction_pink
@@ -2133,7 +2133,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_40.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_40.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_40.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_40.Image = My.Resources.icon_interaction_pink
@@ -2162,7 +2162,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_41.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_41.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_41.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_41.Image = My.Resources.icon_interaction_pink
@@ -2191,7 +2191,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_42.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_42.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_42.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_42.Image = My.Resources.icon_interaction_pink
@@ -2220,7 +2220,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_43.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_43.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_43.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_43.Image = My.Resources.icon_interaction_pink
@@ -2249,7 +2249,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_44.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_44.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_44.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_44.Image = My.Resources.icon_interaction_pink
@@ -2278,7 +2278,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_45.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_45.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_45.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_45.Image = My.Resources.icon_interaction_pink
@@ -2307,7 +2307,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_46.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_46.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_46.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_46.Image = My.Resources.icon_interaction_pink
@@ -2336,7 +2336,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_47.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_47.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_47.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_47.Image = My.Resources.icon_interaction_pink
@@ -2365,7 +2365,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_48.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_48.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_48.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_48.Image = My.Resources.icon_interaction_pink
@@ -2394,7 +2394,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_49.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_49.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_49.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_49.Image = My.Resources.icon_interaction_pink
@@ -2423,7 +2423,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_50.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_50.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_50.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_50.Image = My.Resources.icon_interaction_pink
@@ -2452,7 +2452,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_51.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_51.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_51.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_51.Image = My.Resources.icon_interaction_pink
@@ -2481,7 +2481,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_52.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_52.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_52.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_52.Image = My.Resources.icon_interaction_pink
@@ -2510,7 +2510,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_53.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_53.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_53.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_53.Image = My.Resources.icon_interaction_pink
@@ -2539,7 +2539,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_54.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_54.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_54.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_54.Image = My.Resources.icon_interaction_pink
@@ -2568,7 +2568,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_55.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_55.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_55.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_55.Image = My.Resources.icon_interaction_pink
@@ -2597,7 +2597,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_56.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_56.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_56.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_56.Image = My.Resources.icon_interaction_pink
@@ -2626,7 +2626,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_57.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_57.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_57.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_57.Image = My.Resources.icon_interaction_pink
@@ -2655,7 +2655,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_58.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_58.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_58.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_58.Image = My.Resources.icon_interaction_pink
@@ -2684,7 +2684,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_59.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_59.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_59.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_59.Image = My.Resources.icon_interaction_pink
@@ -2713,7 +2713,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_60.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_60.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_60.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_60.Image = My.Resources.icon_interaction_pink
@@ -2742,7 +2742,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_61.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_61.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_61.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_61.Image = My.Resources.icon_interaction_pink
@@ -2771,7 +2771,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_62.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_62.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_62.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_62.Image = My.Resources.icon_interaction_pink
@@ -2800,7 +2800,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_63.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_63.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_63.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_63.Image = My.Resources.icon_interaction_pink
@@ -2829,7 +2829,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_64.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_64.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_64.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_64.Image = My.Resources.icon_interaction_pink
@@ -2858,7 +2858,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_65.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_65.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_65.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_65.Image = My.Resources.icon_interaction_pink
@@ -2887,7 +2887,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_66.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_66.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_66.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_66.Image = My.Resources.icon_interaction_pink
@@ -2916,7 +2916,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_67.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_67.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_67.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_67.Image = My.Resources.icon_interaction_pink
@@ -2945,7 +2945,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_68.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_68.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_68.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_68.Image = My.Resources.icon_interaction_pink
@@ -2974,7 +2974,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_69.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_69.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_69.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_69.Image = My.Resources.icon_interaction_pink
@@ -3003,7 +3003,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_70.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_70.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_70.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_70.Image = My.Resources.icon_interaction_pink
@@ -3032,7 +3032,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_71.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_71.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_71.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_71.Image = My.Resources.icon_interaction_pink
@@ -3061,7 +3061,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_72.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_72.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_72.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_72.Image = My.Resources.icon_interaction_pink
@@ -3090,7 +3090,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_73.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_73.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_73.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_73.Image = My.Resources.icon_interaction_pink
@@ -3119,7 +3119,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_74.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_74.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_74.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_74.Image = My.Resources.icon_interaction_pink
@@ -3148,7 +3148,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_75.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_75.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_75.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_75.Image = My.Resources.icon_interaction_pink
@@ -3177,7 +3177,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_76.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_76.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_76.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_76.Image = My.Resources.icon_interaction_pink
@@ -3206,7 +3206,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_77.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_77.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_77.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_77.Image = My.Resources.icon_interaction_pink
@@ -3235,7 +3235,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_78.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_78.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_78.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_78.Image = My.Resources.icon_interaction_pink
@@ -3264,7 +3264,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_79.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_79.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_79.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_79.Image = My.Resources.icon_interaction_pink
@@ -3293,7 +3293,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_80.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_80.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_80.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_80.Image = My.Resources.icon_interaction_pink
@@ -3322,7 +3322,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_81.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_81.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_81.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_81.Image = My.Resources.icon_interaction_pink
@@ -3351,7 +3351,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_82.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_82.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_82.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_82.Image = My.Resources.icon_interaction_pink
@@ -3380,7 +3380,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_83.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_83.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_83.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_83.Image = My.Resources.icon_interaction_pink
@@ -3409,7 +3409,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_84.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_84.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_84.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_84.Image = My.Resources.icon_interaction_pink
@@ -3438,7 +3438,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_85.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_85.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_85.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_85.Image = My.Resources.icon_interaction_pink
@@ -3467,7 +3467,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_86.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_86.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_86.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_86.Image = My.Resources.icon_interaction_pink
@@ -3496,7 +3496,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_87.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_87.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_87.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_87.Image = My.Resources.icon_interaction_pink
@@ -3525,7 +3525,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_88.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_88.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_88.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_88.Image = My.Resources.icon_interaction_pink
@@ -3554,7 +3554,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_89.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_89.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_89.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_89.Image = My.Resources.icon_interaction_pink
@@ -3583,7 +3583,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_90.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_90.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_90.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_90.Image = My.Resources.icon_interaction_pink
@@ -3612,7 +3612,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_91.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_91.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_91.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_91.Image = My.Resources.icon_interaction_pink
@@ -3641,7 +3641,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_92.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_92.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_92.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_92.Image = My.Resources.icon_interaction_pink
@@ -3670,7 +3670,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_93.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_93.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_93.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_93.Image = My.Resources.icon_interaction_pink
@@ -3699,7 +3699,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_94.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_94.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_94.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_94.Image = My.Resources.icon_interaction_pink
@@ -3728,7 +3728,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_95.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_95.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_95.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_95.Image = My.Resources.icon_interaction_pink
@@ -3757,7 +3757,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_96.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_96.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_96.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_96.Image = My.Resources.icon_interaction_pink
@@ -3786,7 +3786,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_97.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_97.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_97.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_97.Image = My.Resources.icon_interaction_pink
@@ -3815,7 +3815,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_98.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_98.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_98.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_98.Image = My.Resources.icon_interaction_pink
@@ -3844,7 +3844,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_99.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_99.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_99.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_99.Image = My.Resources.icon_interaction_pink
@@ -3873,7 +3873,7 @@ Public Class TLSE_interactions
         Select Case valu_apartmentmii_100.Value
             Case &H100 To &H148, &H167 To &H16F, &H171 To &H175, &H17B To &H17D, &H187, &H188, &H18B To &H18F
                 Icon_apartmentmii_100.Image = My.Resources.icon_interaction_black
-            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A
+            Case &H149 To &H14B, &H14D, &H14E, &H153, &H158 To &H15B, &H176 To &H17A, &H170
                 Icon_apartmentmii_100.Image = My.Resources.icon_interaction_orange
             Case &H14C, &H14F To &H151, &H154, &H155
                 Icon_apartmentmii_100.Image = My.Resources.icon_interaction_pink
@@ -5713,8 +5713,8 @@ Public Class TLSE_interactions
             valu_target2.Value = 65535
         ElseIf valu_interaction.Value = &H170 Then
             Select_interaction.SelectedItem = Select_interaction.Items.Item(113)
-            Icon_interaction.Image = Nothing
-            valu_target1.Value = 4
+            Icon_interaction.Image = My.Resources.icon_interaction_orange
+            valu_target1.Value = 2
             valu_target2.Value = 65535
             infobubble_target1.Visible = True
             infobubble_target2.Visible = True
@@ -11186,6 +11186,8 @@ Public Class TLSE_interactions
     Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
         If Select_interaction.SelectedItem = Select_interaction.Items.Item(0) Then
             valu_enddateinterac.Value = 0
+        ElseIf valu_interaction.Value = &H156 Then
+            valu_enddateinterac.Value = valu_lastsavedate.Value
         Else
             valu_enddateinterac.Value = valu_lastsavedate.Value + &H30000
         End If

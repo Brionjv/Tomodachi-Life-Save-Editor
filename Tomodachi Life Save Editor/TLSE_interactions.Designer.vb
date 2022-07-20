@@ -3529,7 +3529,7 @@ Partial Class TLSE_interactions
         '
         Me.Title_emotions.BackColor = System.Drawing.Color.Transparent
         Me.Title_emotions.ForeColor = System.Drawing.Color.Black
-        Me.Title_emotions.Location = New System.Drawing.Point(424, 640)
+        Me.Title_emotions.Location = New System.Drawing.Point(424, 475)
         Me.Title_emotions.Name = "Title_emotions"
         Me.Title_emotions.Size = New System.Drawing.Size(99, 13)
         Me.Title_emotions.TabIndex = 383
@@ -3541,7 +3541,7 @@ Partial Class TLSE_interactions
         Me.Panel26.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_orange
         Me.Panel26.Controls.Add(Me.valu_emotions)
         Me.Panel26.Controls.Add(Me.Select_emotions)
-        Me.Panel26.Location = New System.Drawing.Point(425, 656)
+        Me.Panel26.Location = New System.Drawing.Point(425, 491)
         Me.Panel26.Name = "Panel26"
         Me.Panel26.Size = New System.Drawing.Size(97, 25)
         Me.Panel26.TabIndex = 382
@@ -3740,7 +3740,7 @@ Partial Class TLSE_interactions
         Me.Fea_interacconditions.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bg_interacconditions
         Me.Fea_interacconditions.Controls.Add(Me.Title_interacconditions)
         Me.Fea_interacconditions.Controls.Add(Me.Text_interacconditions)
-        Me.Fea_interacconditions.Location = New System.Drawing.Point(455, 481)
+        Me.Fea_interacconditions.Location = New System.Drawing.Point(455, 526)
         Me.Fea_interacconditions.Name = "Fea_interacconditions"
         Me.Fea_interacconditions.Size = New System.Drawing.Size(453, 152)
         Me.Fea_interacconditions.TabIndex = 391

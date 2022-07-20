@@ -1299,7 +1299,7 @@ Public Class TLSE_islandconfig
         End If
     End Sub
 
-    Private Sub Text_menu_save_Click(sender As Object, e As EventArgs)
+    Private Sub Text_menu_save_Click(sender As Object, e As EventArgs) Handles Text_menu_save.Click
         Writeislandconfig()
     End Sub
 
