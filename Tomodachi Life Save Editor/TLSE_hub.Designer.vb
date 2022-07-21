@@ -35,8 +35,8 @@ Partial Class TLSE_hub
         Me.Text_menu_babiesedit = New System.Windows.Forms.Label()
         Me.Menu_datasmanagement = New System.Windows.Forms.Panel()
         Me.Text_menu_datasmanagement = New System.Windows.Forms.Label()
-        Me.Menu_datasedit = New System.Windows.Forms.Panel()
-        Me.Text_menu_datasedit = New System.Windows.Forms.Label()
+        Me.Menu_datacreation = New System.Windows.Forms.Panel()
+        Me.Text_menu_datacreation = New System.Windows.Forms.Label()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Icon_islandmenu = New System.Windows.Forms.PictureBox()
         Me.Icon_tlsemenu = New System.Windows.Forms.PictureBox()
@@ -154,6 +154,12 @@ Partial Class TLSE_hub
         Me.TLSE_menu_islandedit = New System.Windows.Forms.Panel()
         Me.Menu_savefilesettings = New System.Windows.Forms.Panel()
         Me.Text_menu_savefilesettings = New System.Windows.Forms.Label()
+        Me.TLSE_menu_datamanagement = New System.Windows.Forms.Panel()
+        Me.FlowLayoutPanel5 = New System.Windows.Forms.FlowLayoutPanel()
+        Me.Icon_menu_datamanagement = New System.Windows.Forms.PictureBox()
+        Me.Panel17 = New System.Windows.Forms.Panel()
+        Me.Panel18 = New System.Windows.Forms.Panel()
+        Me.Menuflow_text_datamanagement = New System.Windows.Forms.Label()
         CType(Me.TLSE_logo_update, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TLSE_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu.SuspendLayout()
@@ -161,7 +167,7 @@ Partial Class TLSE_hub
         CType(Me.Icon_menu_issueslegend, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_babiesedit.SuspendLayout()
         Me.Menu_datasmanagement.SuspendLayout()
-        Me.Menu_datasedit.SuspendLayout()
+        Me.Menu_datacreation.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_islandmenu, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_tlsemenu, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -232,6 +238,10 @@ Partial Class TLSE_hub
         Me.Menu_islandinfo.SuspendLayout()
         Me.TLSE_menu_islandedit.SuspendLayout()
         Me.Menu_savefilesettings.SuspendLayout()
+        Me.TLSE_menu_datamanagement.SuspendLayout()
+        Me.FlowLayoutPanel5.SuspendLayout()
+        CType(Me.Icon_menu_datamanagement, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel18.SuspendLayout()
         Me.SuspendLayout()
         '
         'TLSE_logo_update
@@ -269,7 +279,7 @@ Partial Class TLSE_hub
         Me.TLSE_menu.Controls.Add(Me.Menu_issueslegend)
         Me.TLSE_menu.Controls.Add(Me.Menu_babiesedit)
         Me.TLSE_menu.Controls.Add(Me.Menu_datasmanagement)
-        Me.TLSE_menu.Controls.Add(Me.Menu_datasedit)
+        Me.TLSE_menu.Controls.Add(Me.Menu_datacreation)
         Me.TLSE_menu.Controls.Add(Me.PictureBox5)
         Me.TLSE_menu.Controls.Add(Me.Icon_islandmenu)
         Me.TLSE_menu.Controls.Add(Me.Icon_tlsemenu)
@@ -370,25 +380,25 @@ Partial Class TLSE_hub
         Me.Text_menu_datasmanagement.Text = "Data management" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "____________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Import and export data from your island"
         Me.Text_menu_datasmanagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Menu_datasedit
+        'Menu_datacreation
         '
-        Me.Menu_datasedit.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_datasedition
-        Me.Menu_datasedit.Controls.Add(Me.Text_menu_datasedit)
-        Me.Menu_datasedit.Location = New System.Drawing.Point(234, 293)
-        Me.Menu_datasedit.Name = "Menu_datasedit"
-        Me.Menu_datasedit.Size = New System.Drawing.Size(122, 199)
-        Me.Menu_datasedit.TabIndex = 16
+        Me.Menu_datacreation.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_datasedition
+        Me.Menu_datacreation.Controls.Add(Me.Text_menu_datacreation)
+        Me.Menu_datacreation.Location = New System.Drawing.Point(234, 293)
+        Me.Menu_datacreation.Name = "Menu_datacreation"
+        Me.Menu_datacreation.Size = New System.Drawing.Size(122, 199)
+        Me.Menu_datacreation.TabIndex = 16
         '
-        'Text_menu_datasedit
+        'Text_menu_datacreation
         '
-        Me.Text_menu_datasedit.Cursor = System.Windows.Forms.Cursors.No
-        Me.Text_menu_datasedit.ForeColor = System.Drawing.Color.White
-        Me.Text_menu_datasedit.Location = New System.Drawing.Point(9, 8)
-        Me.Text_menu_datasedit.Name = "Text_menu_datasedit"
-        Me.Text_menu_datasedit.Size = New System.Drawing.Size(104, 181)
-        Me.Text_menu_datasedit.TabIndex = 2
-        Me.Text_menu_datasedit.Text = "Data edition" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit data from your island"
-        Me.Text_menu_datasedit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Text_menu_datacreation.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_datacreation.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_datacreation.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_datacreation.Name = "Text_menu_datacreation"
+        Me.Text_menu_datacreation.Size = New System.Drawing.Size(104, 181)
+        Me.Text_menu_datacreation.TabIndex = 2
+        Me.Text_menu_datacreation.Text = "Data creation" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "_____________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Create various data from empty file"
+        Me.Text_menu_datacreation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'PictureBox5
         '
@@ -755,7 +765,7 @@ Partial Class TLSE_hub
         Me.TLSE_version.Name = "TLSE_version"
         Me.TLSE_version.Size = New System.Drawing.Size(123, 15)
         Me.TLSE_version.TabIndex = 34
-        Me.TLSE_version.Text = "Version 5.0.1"
+        Me.TLSE_version.Text = "Version 5.0.2"
         Me.TLSE_version.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'TLSE_header
@@ -1170,7 +1180,7 @@ Partial Class TLSE_hub
         '
         'Text_menu_itemsprovenance
         '
-        Me.Text_menu_itemsprovenance.Cursor = System.Windows.Forms.Cursors.No
+        Me.Text_menu_itemsprovenance.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Text_menu_itemsprovenance.ForeColor = System.Drawing.Color.Black
         Me.Text_menu_itemsprovenance.Location = New System.Drawing.Point(9, 8)
         Me.Text_menu_itemsprovenance.Name = "Text_menu_itemsprovenance"
@@ -1659,6 +1669,67 @@ Partial Class TLSE_hub
     "ave date"
         Me.Text_menu_savefilesettings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'TLSE_menu_datamanagement
+        '
+        Me.TLSE_menu_datamanagement.BackColor = System.Drawing.Color.Transparent
+        Me.TLSE_menu_datamanagement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_datamanagement.Controls.Add(Me.FlowLayoutPanel5)
+        Me.TLSE_menu_datamanagement.Location = New System.Drawing.Point(12, 81)
+        Me.TLSE_menu_datamanagement.Name = "TLSE_menu_datamanagement"
+        Me.TLSE_menu_datamanagement.Size = New System.Drawing.Size(807, 632)
+        Me.TLSE_menu_datamanagement.TabIndex = 40
+        Me.TLSE_menu_datamanagement.Visible = False
+        '
+        'FlowLayoutPanel5
+        '
+        Me.FlowLayoutPanel5.AutoSize = True
+        Me.FlowLayoutPanel5.Controls.Add(Me.Icon_menu_datamanagement)
+        Me.FlowLayoutPanel5.Controls.Add(Me.Panel17)
+        Me.FlowLayoutPanel5.Controls.Add(Me.Panel18)
+        Me.FlowLayoutPanel5.Location = New System.Drawing.Point(0, 0)
+        Me.FlowLayoutPanel5.Name = "FlowLayoutPanel5"
+        Me.FlowLayoutPanel5.Size = New System.Drawing.Size(807, 57)
+        Me.FlowLayoutPanel5.TabIndex = 2
+        '
+        'Icon_menu_datamanagement
+        '
+        Me.Icon_menu_datamanagement.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_menu_datamanagement.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Icon_menu_datamanagement.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menu_off
+        Me.Icon_menu_datamanagement.Location = New System.Drawing.Point(3, 3)
+        Me.Icon_menu_datamanagement.Name = "Icon_menu_datamanagement"
+        Me.Icon_menu_datamanagement.Size = New System.Drawing.Size(61, 51)
+        Me.Icon_menu_datamanagement.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.Icon_menu_datamanagement.TabIndex = 42
+        Me.Icon_menu_datamanagement.TabStop = False
+        '
+        'Panel17
+        '
+        Me.Panel17.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_datamanagement_base
+        Me.Panel17.Location = New System.Drawing.Point(70, 3)
+        Me.Panel17.Name = "Panel17"
+        Me.Panel17.Size = New System.Drawing.Size(45, 50)
+        Me.Panel17.TabIndex = 2
+        '
+        'Panel18
+        '
+        Me.Panel18.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.tab_datamanagement
+        Me.Panel18.Controls.Add(Me.Menuflow_text_datamanagement)
+        Me.Panel18.Location = New System.Drawing.Point(121, 3)
+        Me.Panel18.Name = "Panel18"
+        Me.Panel18.Size = New System.Drawing.Size(120, 50)
+        Me.Panel18.TabIndex = 3
+        '
+        'Menuflow_text_datamanagement
+        '
+        Me.Menuflow_text_datamanagement.ForeColor = System.Drawing.Color.White
+        Me.Menuflow_text_datamanagement.Location = New System.Drawing.Point(20, 0)
+        Me.Menuflow_text_datamanagement.Name = "Menuflow_text_datamanagement"
+        Me.Menuflow_text_datamanagement.Size = New System.Drawing.Size(80, 50)
+        Me.Menuflow_text_datamanagement.TabIndex = 0
+        Me.Menuflow_text_datamanagement.Text = "Data management"
+        Me.Menuflow_text_datamanagement.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'TLSE_hub
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1670,6 +1741,7 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
         Me.Controls.Add(Me.TLSE_menu)
+        Me.Controls.Add(Me.TLSE_menu_datamanagement)
         Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
@@ -1687,7 +1759,7 @@ Partial Class TLSE_hub
         CType(Me.Icon_menu_issueslegend, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_babiesedit.ResumeLayout(False)
         Me.Menu_datasmanagement.ResumeLayout(False)
-        Me.Menu_datasedit.ResumeLayout(False)
+        Me.Menu_datacreation.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_islandmenu, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_tlsemenu, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1770,6 +1842,11 @@ Partial Class TLSE_hub
         Me.TLSE_menu_islandedit.ResumeLayout(False)
         Me.TLSE_menu_islandedit.PerformLayout()
         Me.Menu_savefilesettings.ResumeLayout(False)
+        Me.TLSE_menu_datamanagement.ResumeLayout(False)
+        Me.TLSE_menu_datamanagement.PerformLayout()
+        Me.FlowLayoutPanel5.ResumeLayout(False)
+        CType(Me.Icon_menu_datamanagement, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel18.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -1878,8 +1955,8 @@ Partial Class TLSE_hub
     Friend WithEvents Menuflow_text_travelersedit As Label
     Friend WithEvents Menu_datasmanagement As Panel
     Friend WithEvents Text_menu_datasmanagement As Label
-    Friend WithEvents Menu_datasedit As Panel
-    Friend WithEvents Text_menu_datasedit As Label
+    Friend WithEvents Menu_datacreation As Panel
+    Friend WithEvents Text_menu_datacreation As Label
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Menu_babiesedit As Panel
     Friend WithEvents Text_menu_babiesedit As Label
@@ -1903,4 +1980,10 @@ Partial Class TLSE_hub
     Friend WithEvents Text_menu_issueslegend As Label
     Friend WithEvents Icon_menu_issueslegend As PictureBox
     Friend WithEvents text_issues As Label
+    Friend WithEvents TLSE_menu_datamanagement As Panel
+    Friend WithEvents FlowLayoutPanel5 As FlowLayoutPanel
+    Friend WithEvents Icon_menu_datamanagement As PictureBox
+    Friend WithEvents Panel17 As Panel
+    Friend WithEvents Panel18 As Panel
+    Friend WithEvents Menuflow_text_datamanagement As Label
 End Class

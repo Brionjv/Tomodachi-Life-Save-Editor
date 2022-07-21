@@ -234,7 +234,7 @@ Partial Class TLSE_travelers_status
         '
         'Menuflow_text_itemsedition
         '
-        Me.Menuflow_text_itemsedition.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menuflow_text_itemsedition.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Menuflow_text_itemsedition.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Menuflow_text_itemsedition.Location = New System.Drawing.Point(20, 0)
         Me.Menuflow_text_itemsedition.Name = "Menuflow_text_itemsedition"

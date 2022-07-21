@@ -69,16 +69,16 @@ Public Class TLSE_hub
         Menu_babiesedit.BackgroundImage = My.Resources.bbl_babyedit
     End Sub
 
-    Private Sub Text_menu_datasedit_Click(sender As Object, e As EventArgs) Handles Text_menu_datasedit.Click
+    Private Sub Text_menu_datacreation_Click(sender As Object, e As EventArgs) Handles Text_menu_datacreation.Click
 
     End Sub
 
-    Private Sub Text_menu_datasedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_datasedit.MouseMove
-        Menu_datasedit.BackgroundImage = My.Resources.bbl_datasedition_act
+    Private Sub Text_menu_datacreation_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_datacreation.MouseMove
+        Menu_datacreation.BackgroundImage = My.Resources.bbl_datasedition_act
     End Sub
 
-    Private Sub Text_menu_datasedit_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_datasedit.MouseLeave
-        Menu_datasedit.BackgroundImage = My.Resources.bbl_datasedition
+    Private Sub Text_menu_datacreation_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_datacreation.MouseLeave
+        Menu_datacreation.BackgroundImage = My.Resources.bbl_datasedition
     End Sub
 
     Private Sub Text_menu_datasmanagement_Click(sender As Object, e As EventArgs) Handles Text_menu_datasmanagement.Click
@@ -413,7 +413,20 @@ Public Class TLSE_hub
     End Sub
 
     Private Sub Text_menu_itemsprovenance_Click(sender As Object, e As EventArgs) Handles Text_menu_itemsprovenance.Click
-
+        If Filever_text.Text = "EU" Then
+            If TLSE_logo_update.Visible = True Then
+                TLSE_itemsprovenance.TLSE_logo_update.Visible = True
+            End If
+            TLSE_itemsprovenance.Show()
+            Me.Close()
+        Else
+            If Select_language.SelectedItem = Select_language.Items.Item(0) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "This feature is not available in your region, see issue #31"
+            ElseIf Select_language.SelectedItem = Select_language.Items.Item(1) Then
+                TLSE_dialog.Text_TLSE_dialog.Text = "Cette fonctionnalité n'est pas disponible dans votre région, voir issue #31"
+            End If
+            TLSE_dialog.ShowDialog()
+        End If
     End Sub
 
     Private Sub Text_menu_itemsprovenance_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_itemsprovenance.MouseMove
@@ -544,6 +557,7 @@ Public Class TLSE_hub
         TLSE_menu_miimanagement.Visible = False
         TLSE_menu_travelersedit.Visible = False
         TLSE_menu_islandedit.Visible = False
+        TLSE_menu_datamanagement.Visible = False
     End Sub
 
     Private Sub TLSE_hub_Load(sender As Object, e As EventArgs) Handles MyBase.Load

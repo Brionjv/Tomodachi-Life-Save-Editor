@@ -595,13 +595,13 @@ Partial Class TLSE_interactions
         '
         'Menuflow_text_itemsedition
         '
-        Me.Menuflow_text_itemsedition.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menuflow_text_itemsedition.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Menuflow_text_itemsedition.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Menuflow_text_itemsedition.Location = New System.Drawing.Point(20, 0)
         Me.Menuflow_text_itemsedition.Name = "Menuflow_text_itemsedition"
         Me.Menuflow_text_itemsedition.Size = New System.Drawing.Size(80, 50)
         Me.Menuflow_text_itemsedition.TabIndex = 0
-        Me.Menuflow_text_itemsedition.Text = "Island edition"
+        Me.Menuflow_text_itemsedition.Text = "Mii edition"
         Me.Menuflow_text_itemsedition.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Panel1
@@ -3753,7 +3753,7 @@ Partial Class TLSE_interactions
         Me.Title_interacconditions.Name = "Title_interacconditions"
         Me.Title_interacconditions.Size = New System.Drawing.Size(254, 16)
         Me.Title_interacconditions.TabIndex = 384
-        Me.Title_interacconditions.Text = "This interaction don't show if :"
+        Me.Title_interacconditions.Text = "This interaction informations : "
         Me.Title_interacconditions.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Text_interacconditions

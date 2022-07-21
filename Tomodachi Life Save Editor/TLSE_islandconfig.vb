@@ -1387,4 +1387,16 @@ Public Class TLSE_islandconfig
             TLSE_dialog.ShowDialog()
         End Try
     End Sub
+
+    Private Sub Menuflow_text_itemsedition_Click(sender As Object, e As EventArgs) Handles Menuflow_text_itemsedition.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_hub.TLSE_logo_update.Visible = True
+        End If
+        TLSE_hub.Show()
+        TLSE_hub.Filever_text.Text = Filever_text.Text
+        TLSE_hub.TLSE_filepath.Text = TLSE_filepath.Text
+        TLSE_hub.TLSE_menu.Visible = False
+        TLSE_hub.TLSE_menu_islandedit.Visible = True
+        Me.Close()
+    End Sub
 End Class
