@@ -63,6 +63,11 @@ Partial Class TLSE_hub
         Me.Icon_miimenu = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.TLSE_menu_Miiedition = New System.Windows.Forms.Panel()
+        Me.Menu_miiprofile = New System.Windows.Forms.Panel()
+        Me.Text_menu_miiprofile = New System.Windows.Forms.Label()
+        Me.Menu_appareance = New System.Windows.Forms.Panel()
+        Me.Text_menu_appareance = New System.Windows.Forms.Label()
+        Me.Icon_phyappareance = New System.Windows.Forms.PictureBox()
         Me.Icon_relainterac = New System.Windows.Forms.PictureBox()
         Me.Menu_interactions = New System.Windows.Forms.Panel()
         Me.Text_menu_interactions = New System.Windows.Forms.Label()
@@ -183,6 +188,9 @@ Partial Class TLSE_hub
         Me.Menu_travelersedit.SuspendLayout()
         CType(Me.Icon_miimenu, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TLSE_menu_Miiedition.SuspendLayout()
+        Me.Menu_miiprofile.SuspendLayout()
+        Me.Menu_appareance.SuspendLayout()
+        CType(Me.Icon_phyappareance, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Icon_relainterac, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu_interactions.SuspendLayout()
         Me.Menu_relationships.SuspendLayout()
@@ -647,6 +655,9 @@ Partial Class TLSE_hub
         '
         Me.TLSE_menu_Miiedition.BackColor = System.Drawing.Color.Transparent
         Me.TLSE_menu_Miiedition.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_miiprofile)
+        Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_appareance)
+        Me.TLSE_menu_Miiedition.Controls.Add(Me.Icon_phyappareance)
         Me.TLSE_menu_Miiedition.Controls.Add(Me.Icon_relainterac)
         Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_interactions)
         Me.TLSE_menu_Miiedition.Controls.Add(Me.Menu_relationships)
@@ -657,11 +668,63 @@ Partial Class TLSE_hub
         Me.TLSE_menu_Miiedition.TabIndex = 33
         Me.TLSE_menu_Miiedition.Visible = False
         '
+        'Menu_miiprofile
+        '
+        Me.Menu_miiprofile.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_miiprofile
+        Me.Menu_miiprofile.Controls.Add(Me.Text_menu_miiprofile)
+        Me.Menu_miiprofile.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Menu_miiprofile.Location = New System.Drawing.Point(599, 501)
+        Me.Menu_miiprofile.Name = "Menu_miiprofile"
+        Me.Menu_miiprofile.Size = New System.Drawing.Size(156, 126)
+        Me.Menu_miiprofile.TabIndex = 12
+        '
+        'Text_menu_miiprofile
+        '
+        Me.Text_menu_miiprofile.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_miiprofile.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_miiprofile.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_miiprofile.Name = "Text_menu_miiprofile"
+        Me.Text_menu_miiprofile.Size = New System.Drawing.Size(138, 108)
+        Me.Text_menu_miiprofile.TabIndex = 2
+        Me.Text_menu_miiprofile.Text = "Mii profile" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit Mii name, favorite color, gender, creator" &
+    ", sharing, copying"
+        Me.Text_menu_miiprofile.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Menu_appareance
+        '
+        Me.Menu_appareance.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_appareance
+        Me.Menu_appareance.Controls.Add(Me.Text_menu_appareance)
+        Me.Menu_appareance.Location = New System.Drawing.Point(646, 369)
+        Me.Menu_appareance.Name = "Menu_appareance"
+        Me.Menu_appareance.Size = New System.Drawing.Size(156, 126)
+        Me.Menu_appareance.TabIndex = 11
+        '
+        'Text_menu_appareance
+        '
+        Me.Text_menu_appareance.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Text_menu_appareance.ForeColor = System.Drawing.Color.White
+        Me.Text_menu_appareance.Location = New System.Drawing.Point(9, 8)
+        Me.Text_menu_appareance.Name = "Text_menu_appareance"
+        Me.Text_menu_appareance.Size = New System.Drawing.Size(138, 108)
+        Me.Text_menu_appareance.TabIndex = 2
+        Me.Text_menu_appareance.Text = "Appareance" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "__________________" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Edit face and body"
+        Me.Text_menu_appareance.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Icon_phyappareance
+        '
+        Me.Icon_phyappareance.BackColor = System.Drawing.Color.Transparent
+        Me.Icon_phyappareance.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menumiiedit_phyappareance
+        Me.Icon_phyappareance.Location = New System.Drawing.Point(575, 415)
+        Me.Icon_phyappareance.Name = "Icon_phyappareance"
+        Me.Icon_phyappareance.Size = New System.Drawing.Size(65, 80)
+        Me.Icon_phyappareance.TabIndex = 10
+        Me.Icon_phyappareance.TabStop = False
+        '
         'Icon_relainterac
         '
         Me.Icon_relainterac.BackColor = System.Drawing.Color.Transparent
         Me.Icon_relainterac.Image = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.icon_menumiiedit_relainterac
-        Me.Icon_relainterac.Location = New System.Drawing.Point(296, 113)
+        Me.Icon_relainterac.Location = New System.Drawing.Point(165, 102)
         Me.Icon_relainterac.Name = "Icon_relainterac"
         Me.Icon_relainterac.Size = New System.Drawing.Size(75, 85)
         Me.Icon_relainterac.TabIndex = 9
@@ -672,7 +735,7 @@ Partial Class TLSE_hub
         Me.Menu_interactions.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_interaction
         Me.Menu_interactions.Controls.Add(Me.Text_menu_interactions)
         Me.Menu_interactions.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Menu_interactions.Location = New System.Drawing.Point(200, 207)
+        Me.Menu_interactions.Location = New System.Drawing.Point(55, 192)
         Me.Menu_interactions.Name = "Menu_interactions"
         Me.Menu_interactions.Size = New System.Drawing.Size(156, 126)
         Me.Menu_interactions.TabIndex = 8
@@ -692,7 +755,7 @@ Partial Class TLSE_hub
         '
         Me.Menu_relationships.BackgroundImage = Global.Tomodachi_Life_Save_Editor.My.Resources.Resources.bbl_relationship
         Me.Menu_relationships.Controls.Add(Me.Text_menu_relationships)
-        Me.Menu_relationships.Location = New System.Drawing.Point(131, 72)
+        Me.Menu_relationships.Location = New System.Drawing.Point(5, 61)
         Me.Menu_relationships.Name = "Menu_relationships"
         Me.Menu_relationships.Size = New System.Drawing.Size(156, 126)
         Me.Menu_relationships.TabIndex = 7
@@ -1740,13 +1803,13 @@ Partial Class TLSE_hub
         Me.Controls.Add(Me.TLSE_version)
         Me.Controls.Add(Me.TLSE_logo_update)
         Me.Controls.Add(Me.TLSE_logo)
-        Me.Controls.Add(Me.TLSE_menu)
-        Me.Controls.Add(Me.TLSE_menu_datamanagement)
-        Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.Controls.Add(Me.TLSE_menu_Miiedition)
         Me.Controls.Add(Me.TLSE_menu_travelersedit)
         Me.Controls.Add(Me.TLSE_menu_Itemsedition)
         Me.Controls.Add(Me.TLSE_menu_miimanagement)
+        Me.Controls.Add(Me.TLSE_menu)
+        Me.Controls.Add(Me.TLSE_menu_datamanagement)
+        Me.Controls.Add(Me.TLSE_menu_islandedit)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TLSE_hub"
@@ -1776,6 +1839,9 @@ Partial Class TLSE_hub
         CType(Me.Icon_miimenu, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TLSE_menu_Miiedition.ResumeLayout(False)
         Me.TLSE_menu_Miiedition.PerformLayout()
+        Me.Menu_miiprofile.ResumeLayout(False)
+        Me.Menu_appareance.ResumeLayout(False)
+        CType(Me.Icon_phyappareance, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Icon_relainterac, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu_interactions.ResumeLayout(False)
         Me.Menu_relationships.ResumeLayout(False)
@@ -1986,4 +2052,9 @@ Partial Class TLSE_hub
     Friend WithEvents Panel17 As Panel
     Friend WithEvents Panel18 As Panel
     Friend WithEvents Menuflow_text_datamanagement As Label
+    Friend WithEvents Icon_phyappareance As PictureBox
+    Friend WithEvents Menu_miiprofile As Panel
+    Friend WithEvents Text_menu_miiprofile As Label
+    Friend WithEvents Menu_appareance As Panel
+    Friend WithEvents Text_menu_appareance As Label
 End Class

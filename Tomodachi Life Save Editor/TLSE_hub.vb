@@ -329,6 +329,10 @@ Public Class TLSE_hub
         Menu_interactions.BackgroundImage = My.Resources.bbl_interaction_act
     End Sub
 
+    Private Sub Text_menu_interactions_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_interactions.MouseLeave
+        Menu_interactions.BackgroundImage = My.Resources.bbl_interaction
+    End Sub
+
     Private Sub Text_menu_islandconfig_Click(sender As Object, e As EventArgs) Handles Text_menu_islandconfig.Click
         If TLSE_logo_update.Visible = True Then
             TLSE_islandconfig.TLSE_logo_update.Visible = True
@@ -369,8 +373,36 @@ Public Class TLSE_hub
         Menu_relationships.BackgroundImage = My.Resources.bbl_relationship
     End Sub
 
-    Private Sub Text_menu_interactions_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_interactions.MouseLeave
-        Menu_interactions.BackgroundImage = My.Resources.bbl_interaction
+    Private Sub Text_menu_appareance_Click(sender As Object, e As EventArgs) Handles Text_menu_appareance.Click
+        'If TLSE_logo_update.Visible = True Then
+        'TLSE_appareance.TLSE_logo_update.Visible = True
+        'End If
+        'TLSE_appareance.Show()
+        ' Me.Close()
+    End Sub
+
+    Private Sub Text_menu_appareance_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_appareance.MouseMove
+        Menu_appareance.BackgroundImage = My.Resources.bbl_appareance_act
+    End Sub
+
+    Private Sub Text_menu_appareance_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_appareance.MouseLeave
+        Menu_appareance.BackgroundImage = My.Resources.bbl_appareance
+    End Sub
+
+    Private Sub Text_menu_miiprofile_Click(sender As Object, e As EventArgs) Handles Text_menu_miiprofile.Click
+        If TLSE_logo_update.Visible = True Then
+            TLSE_miiprofile.TLSE_logo_update.Visible = True
+        End If
+        TLSE_miiprofile.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Text_menu_miiprofile_MouseMove(sender As Object, e As MouseEventArgs) Handles Text_menu_miiprofile.MouseMove
+        Menu_miiprofile.BackgroundImage = My.Resources.bbl_miiprofile_act
+    End Sub
+
+    Private Sub Text_menu_miiprofile_MouseLeave(sender As Object, e As EventArgs) Handles Text_menu_miiprofile.MouseLeave
+        Menu_miiprofile.BackgroundImage = My.Resources.bbl_miiprofile
     End Sub
 
     Private Sub Icon_menu_miiedit_MouseMove(sender As Object, e As MouseEventArgs) Handles Icon_menu_miiedit.MouseMove

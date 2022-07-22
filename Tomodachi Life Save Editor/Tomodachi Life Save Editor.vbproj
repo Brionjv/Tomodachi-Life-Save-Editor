@@ -94,6 +94,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TLSE_crcxmodem.Designer.vb">
+      <DependentUpon>TLSE_crcxmodem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_crcxmodem.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_interactions.Designer.vb">
       <DependentUpon>TLSE_interactions.vb</DependentUpon>
     </Compile>
@@ -207,6 +213,12 @@
     <Compile Include="TLSE_manag_travelers.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TLSE_miiprofile.Designer.vb">
+      <DependentUpon>TLSE_miiprofile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TLSE_miiprofile.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TLSE_relamechanics.Designer.vb">
       <DependentUpon>TLSE_relamechanics.vb</DependentUpon>
     </Compile>
@@ -245,6 +257,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="TLSE_crcxmodem.resx">
+      <DependentUpon>TLSE_crcxmodem.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TLSE_interactions.resx">
       <DependentUpon>TLSE_interactions.vb</DependentUpon>
     </EmbeddedResource>
@@ -298,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_manag_travelers.resx">
       <DependentUpon>TLSE_manag_travelers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TLSE_miiprofile.resx">
+      <DependentUpon>TLSE_miiprofile.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TLSE_relamechanics.resx">
       <DependentUpon>TLSE_relamechanics.vb</DependentUpon>
@@ -401,6 +419,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon Tomodachi.ico" />
+    <None Include="Resources\icon_favcolor_yellow.png" />
+    <None Include="Resources\icon_favcolor_white.png" />
+    <None Include="Resources\icon_favcolor_red.png" />
+    <None Include="Resources\icon_favcolor_purple.png" />
+    <None Include="Resources\icon_favcolor_pink.png" />
+    <None Include="Resources\icon_favcolor_orange.png" />
+    <None Include="Resources\icon_favcolor_lightgreen.png" />
+    <None Include="Resources\icon_favcolor_lightblue.png" />
+    <None Include="Resources\icon_favcolor_green.png" />
+    <None Include="Resources\icon_favcolor_empty.png" />
+    <None Include="Resources\icon_favcolor_brown.png" />
+    <None Include="Resources\icon_favcolor_blue.png" />
+    <None Include="Resources\icon_favcolor_black.png" />
+    <None Include="Resources\icon_kid.png" />
+    <None Include="Resources\icon_grown_up.png" />
+    <None Include="Resources\icon_mii_malegender.png" />
+    <None Include="Resources\icon_mii_femalegender.png" />
+    <None Include="Resources\icon_copying.png" />
+    <None Include="Resources\icon_sharing.png" />
+    <None Include="Resources\bg_miiprofilebody.png" />
+    <None Include="Resources\bbl_miiprofile_act.png" />
+    <None Include="Resources\bbl_miiprofile.png" />
+    <None Include="Resources\bbl_appareance_act.png" />
+    <None Include="Resources\bbl_appareance.png" />
+    <None Include="Resources\icon_menumiiedit_phyappareance.png" />
     <None Include="Resources\tab_datamanagement_base.png" />
     <None Include="Resources\tab_datamanagement.png" />
     <None Include="Resources\tab_issueslegends_base.png" />

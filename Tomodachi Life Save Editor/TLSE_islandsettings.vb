@@ -119,7 +119,7 @@ Public Class TLSE_islandsettings
         Try
             valu_babiesborn.Value = Convert.ToUInt32(Convert.ToString(ConvertB_babiesborn.Text), 2)
         Catch ex As Exception
-            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to convert binary babies born hex"
+            TLSE_dialog.Text_TLSE_dialog.Text = "Failed to convert binary babies born to hex"
             TLSE_dialog.ShowDialog()
         End Try
     End Sub
